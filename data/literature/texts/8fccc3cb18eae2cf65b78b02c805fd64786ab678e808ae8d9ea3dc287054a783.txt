@@ -1,0 +1,970 @@
+Synergistic antibacterial platform based on chitosan-modified MnO2 
+nanozyme-loaded Lactobacillus rhamnosus for wound infection management
+Peng Liu a, Qiaoyu Li a, Yifan Chen a, Xiaowei Yue a, Fei Yang b,*, Yanzhao Yang a,*
+a Key Laboratory for Special Functional Aggregate Materials of the Education Ministry, School of Chemistry and Chemical Engineering, Shandong University, Jinan, 
+250100, Shandong, China
+b School of Pharmaceutical Sciences, Shandong University, Jinan, 250012, Shandong, China
+A R T I C L E  I N F O
+Keywords:
+CS-MnO₂ NPs
+Probiotic-nanozyme hybrid
+Lactobacillus rhamnosus
+Wound infection
+Synergistic antibacterial effect
+A B S T R A C T
+Skin wound infections caused by multidrug-resistant pathogens remain a significant clinical challenge due to the 
+increasing prevalence of antibiotic resistance. Chitosan-modified manganese dioxide nanoparticles (CS-MnO₂ 
+NPs) facilitate the generation of reactive oxygen species (ROS), acting as a nanozyme, while exhibiting inherent 
+biocompatibility; however, uncontrolled release of ROS can lead to tissue toxicity, thereby limiting their ther­
+apeutic utility. In this study, we present a biohybrid antibacterial platform (CS-MnO₂@LGG) developed by 
+anchoring CS-MnO₂ NPs onto the probiotic Lactobacillus rhamnosus GG (LGG). In this “bacteria-against-bacteria” 
+system, LGG secretes lactic acid and H₂O₂, creating a mildly acidic, oxidative microenvironment that precisely 
+modulates the catalytic activity of the nanozyme, while simultaneously inhibiting pathogens through nutrient 
+deprivation and ecological niche exclusion. In vitro studies demonstrated that CS-MnO₂@LGG achieved a syn­
+ergistic bactericidal effect of 99.60% against Escherichia coli (E. coil) and 99.45% against Staphylococcus aureus 
+(S. aureus), surpassing the efficacy of either component used alone. When incorporated into a hydrogel ointment, 
+the biohybrid maintained long-term LGG viability, supporting short-term localized antibacterial activity without 
+cytotoxicity. In vivo, CS-MnO₂@LGG effectively accelerated the healing of S. aureus-infected wounds through the 
+synergistic action of catalytic and probiotic effects, although its application may be limited in immunocom­
+promised individuals. Overall, this antibiotic-free strategy offers a safe and efficient approach for managing 
+wound infections.
+1. Introduction
+Bacterial infections caused by multidrug-resistant pathogens are an 
+escalating global health concern, often resulting in prolonged inflam­
+mation, impaired tissue regeneration, and high treatment failure rates 
+[1,2]. The declining efficacy of conventional antibiotics, primarily 
+attributed to bacterial defense mechanisms such as biofilm formation, 
+efflux pump activation, and adaptive resistance, has intensified the 
+search for alternative antimicrobial strategies [3,4]. In recent years, 
+various alternative approaches have been investigated, including the use 
+of antimicrobial peptides, metal-based nanomaterials, photodynamic 
+therapy, and bacteriophage treatment [5–7]. These modalities offer 
+distinct mechanisms of action that circumvent traditional drug- 
+resistance pathways, such as membrane disruption, catalytic reactive 
+oxygen species (ROS) generation, or bacterial lysis, and are often more 
+adaptable to the evolving complexity of infection microenvironments 
+[8].
+Nanozymes, nanomaterials with enzyme-like catalytic activity, have 
+emerged as promising antibacterial agents due to their structural 
+tunability, ROS-generating capacity, and biofilm penetration [9–13]. 
+Chitosan-modified manganese dioxide nanozymes (CS-MnO₂ NPs) 
+exhibit peroxidase- and oxidase-like activities that enable ROS-mediated 
+bacterial destruction. However, excessive or uncontrolled ROS release 
+can damage host tissues, and many nanozymes show limited adapt­
+ability to the dynamic microenvironments of infected wounds, restrict­
+ing clinical translation [14,15].
+Analogous to the role of maggot therapy in promoting wound healing 
+through necrotic tissue debridement and pathogen suppression, pro­
+biotics exert antibacterial effects by modulating the local micro­
+ecological balance and inhibiting the proliferation of pathogenic 
+microorganisms [16]. Inspired by natural symbiotic defense systems, 
+probiotics such as Lactobacillus rhamnosus (LGG) have emerged as potent 
+* Corresponding authors.
+E-mail addresses: yangfei@sdu.edu.cn (F. Yang), yzhyang@sdu.edu.cn (Y. Yang). 
+Contents lists available at ScienceDirect
+Chemical Engineering Journal
+journal homepage: www.elsevier.com/locate/cej
+https://doi.org/10.1016/j.cej.2026.176316
+Received 4 September 2025; Received in revised form 1 April 2026; Accepted 14 April 2026  
+Chemical Engineering Journal 537 (2026) 176316 
+Available online 15 April 2026 
+1385-8947/© 2026 Elsevier B.V. All rights are reserved, including those for text and data mining, AI training, and similar technologies. 
+
+living antimicrobials with the capacity to act synergistically with con­
+ventional therapies [17–19]. LGG stands out due to its strong epithelial 
+adhesion, lactic acid production, and controlled hydrogen peroxide 
+(H₂O₂) release [20], which collectively inhibit pathogens, disrupt 
+quorum sensing, and support wound healing through immune modula­
+tion [21]. Its antibacterial effects arise from lactic acid secretion, which 
+acidifies the microenvironment; H₂O₂ generation, which induces 
+oxidative stress; and competitive exclusion of pathogens through 
+nutrient and adhesion site competition [22–24]. Importantly, the ac­
+tivity of ROS-generating nanozymes can be modulated by the controlled 
+metabolic output of LGG. Through gradual H₂O₂ release and microen­
+vironment acidification, LGG enables on-demand activation of nano­
+zyme catalysis while preventing uncontrolled ROS bursts that could 
+cause tissue toxicity or nonspecific damage. This symbiotic interplay 
+establishes a bacteria-guided, self-regulating antibacterial system that 
+balances efficacy with safety, overcomes a key limitation of conven­
+tional high-activity nanozymes, and advances the ‘bacteria-against- 
+bacteria’ concept toward practical clinical application.
+The synergistic strategy involving nanozymes and probiotics has 
+been extensively explored in recent studies [21,25,26]. For example, Li 
+et al. prepared AgAu@CeO₂, which, when combined with Lactobacillus 
+reuteri, exhibits synergistic antibacterial effects through the photo­
+thermal properties and acid production of the probiotics [27]. Wei et al. 
+developed rGO@FeS₂ nanozymes that work synergistically with Lacto­
+bacillus to combat Candida [28]. Additionally, Chang et al. developed 
+multifunctional BL@DNA@Fe-Cur for the treatment of inflammatory 
+bowel disease [29]. Herein, we employ CS-MnO₂ NPs with enzyme-like 
+activity in combination with LGG, which produces acid and H₂O₂. Due to 
+the acid-resistant nature of LGG, it progressively enhances the enzyme- 
+like activity of CS-MnO₂ NPs while modulating the microenvironment, 
+thereby acute antibacterial effects and minimizing damage to sur­
+rounding healthy cells.
+In this study, we designed a dual-functional antibacterial strategy by 
+integrating catalytically active CS-MnO₂ NPs with LGG, forming a living 
+probiotic-nanozyme hybrid (CS-MnO₂@LGG), as illustrated in Scheme 
+1. In this construct, CS-MnO₂ NPs are stably anchored onto the nega­
+tively charged LGG surface via multiple noncovalent interactions, 
+including electrostatic attraction, hydrogen bonding, and hydrophobic 
+forces, resulting in a robust nano-bio interface. This configuration en­
+ables synergistic ROS generation through the catalytic activity of CS- 
+MnO₂ NPs and the metabolic function of LGG, which continuously 
+produces H₂O₂ and lactic acid to maintain a mildly oxidative and acidic 
+microenvironment. Furthermore, CS-MnO₂ NPs not only catalyze ROS 
+generation but also induce oxidative damage by depleting intracellular 
+glutathione (GSH), a key bacterial antioxidant defense molecule, 
+thereby sensitizing pathogens to oxidative stress [30]. This microenvi­
+ronment enhances nanozyme catalytic efficiency and overcomes the 
+inherent antibacterial limitations of LGG, resulting in direct growth in­
+hibition of pathogens. In vitro, CS-MnO₂@LGG exhibited potent syner­
+gistic antibacterial activity, achieving antibacterial efficiencies of 
+99.24% against Escherichia coli (E. coli) and 99.77% against Staphylo­
+coccus aureus (S. aureus). To facilitate translational application, the 
+antibacterial material was incorporated into a hydrogel-based topical 
+ointment, which enhanced wound adherence, moisture retention, and 
+handling convenience while maintaining the structural and functional 
+integrity of both components. The antibacterial performance of this 
+composite ointment was evaluated in a S. aureus-infected murine skin 
+wound model by examining bacterial morphological changes at the 
+microstructural level. This approach harnesses the complementary ad­
+vantages of living probiotics and inorganic nanozymes to improve acute 
+antibacterial efficacy, biosafety, and wound-regenerative capacity, of­
+fering a promising antibiotic-free strategy for infected wound manage­
+ment. Although significant antibacterial activity and biocompatibility 
+were demonstrated in vitro, further studies are warranted to address 
+challenges in stability, scalability, and safety before clinical translation.
+Scheme 1. (a) Schematic diagram of the synthesis of CS-MnO₂ NPs and CS-MnO₂@LGG. (b) The synergistic antibacterial mechanism of CS-MnO₂@LGG. (c) 
+Schematic diagram of enzyme-like activity catalysis demonstration.
+P. Liu et al.                                                                                                                                                                                                                                       
+Chemical Engineering Journal 537 (2026) 176316 
+2 
+
+2. Experimental section
+2.1. Preparation of CS-MnO₂ NPs and CS-MnO₂@LGG
+Add 50 mg of bovine serum albumin and 0.1 g of water-soluble 
+chitosan to a 100 mL solution of KMnO4 at a concentration of 2 mM. 
+Then, slowly add a 100 mL solution of MnCl2⋅4H2O at a concentration of 
+3 mM to the mixture at room temperature while continuously stirring 
+with a magnetic stirrer. Afterward, the brown precipitate impurities are 
+then separated from the solution by centrifugation. Finally, filter the 
+upper layer of the brown, clear liquid through a 0.22 μm membrane 
+filter. The CS-MnO₂ NPs solution was used at an approximate concen­
+tration of 2.5 mM (in terms of Mn atoms), based on precursor input.
+In the synthesis of CS-MnO₂@LGG, LGG was initially cultured in 
+DeMan, Rogosa, and Sharpe (MRS) medium, progressing from the late- 
+log phase to the stationary phase. The culture was then centrifuged at 
+3420 ×g for 5 min to collect the exponentially growing bacteria, which 
+were subsequently re-suspended in PBS buffer. A 5% (w/v) chitosan 
+solution was added to the bacterial suspension, and the mixture was 
+incubated at 37 ◦C for 20 min to facilitate the adherence of chitosan to 
+the bacterial surface, thereby forming a protective chitosan layer. A total 
+of 20% (v/v) CS-MnO₂ NPs were incorporated into the mixture and 
+stirred for 15 min to ensure uniform dispersion, specifically adding 2 mL 
+of the CS-MnO₂ NPs solution to 10 mL of the LGG solution with an op­
+tical density (OD) of 0.8. After centrifugation, the CS-MnO₂@LGG 
+complex was re-suspended in PBS buffer (0.1 M PBS, 10 mL) for sub­
+sequent applications. Meanwhile, the LGG unloaded with CS-MnO₂ NPs 
+was retained for the subsequent comparative experiments.
+2.2. Antibacterial effect of CS-MnO₂ NPs and CS-MnO₂@LGG composite
+The antibacterial efficacy of the CS-MnO₂ NPs composite was eval­
+uated using both a 96-well microplate assay and a colony counting 
+method. E. coli (ATCC 25922) and S. aureus (ATCC 29213) were first 
+inoculated into LB broth and cultured at 37 ◦C with shaking at 8 ×g for 
+24 h. After incubation, the bacterial cells were harvested by centrifu­
+gation, resuspended in sterile normal saline, and diluted to an initial 
+concentration of approximately 1 × 107 CFU/mL. A 20 μL bacterial 
+suspension was combined with 40 μL of CS-MnO₂ NPs solution at 
+varying concentrations and incubated at 37 ◦C with shaking for one 
+hour. Following incubation, 20 μL of the bacterial suspension was 
+transferred to 180 μL of pre-mixed LB medium and incubated in a 96- 
+well plate for 12 h to assess bacterial growth. Meanwhile, 20 μL of the 
+bacterial culture was evenly spread onto LB agar plates and incubated at 
+37 ◦C for 24 h, followed by further visual inspection to evaluate the 
+antibacterial activity of the CS-MnO₂ NPs.
+A 20 μL bacterial suspension containing E. coli or S. aureus was mixed 
+with 10–50 μL of the CS-MnO₂@LGG solution (OD = 0.8). The resulting 
+mixture was then diluted to a final volume of 200 μL using PBS and 
+incubated at 37 ◦C with shaking for 2 h. Simultaneously, 20 μL of the 
+incubated mixture was evenly spread onto MacConkey agar (MAC) or 
+Baird-Parker agar plates and cultured at 37 ◦C for 24 h (Initial anti­
+bacterial plate). In the meantime, 20 μL of the mixture was added to 180 
+μL of pre-mixed LB1/MRS1 medium in a 96-well plate and incubated for 
+an additional 24 h. The antibacterial activity was further quantified by 
+counting the number of CFUs. The specific procedure is as follows: after 
+culturing the mixture in a 96-well plate for 24 h, the contents of the wells 
+were centrifuged and diluted to an OD value of 0.1. After incubation, 20 
+μL aliquots were plated on selective agar plates to evaluate the final 
+antibacterial effect: MAC for E. coli and Baird-Parker agar for S. aureus 
+(Final antibacterial plate).
+2.3. In vitro cytotoxicity assay
+RS1 cells were seeded into 96-well plates and incubated overnight at 
+37 ◦C in a humidified incubator. The following day, treatment CS-MnO₂ 
+NPs at concentrations of 125, 250, and 500 μM were added to the wells, 
+and the cells were incubated for an additional 24 h. After treatment, the 
+cells were gently washed with phosphate-buffered saline (PBS), and a 
+Cell Counting Kit-8 was added to each well. The plates were then 
+incubated at 37 ◦C for 2 h to assess cell viability. Absorbance was 
+measured at 450 nm using a microplate reader. Cell viability (%) was 
+calculated using the formula: Cell viability (%) = (Aₜ / A₀) × 100, where 
+Aₜ is the absorbance of the treated group, and A₀ is the absorbance of the 
+untreated control group. Each experiment was performed in triplicate.
+2.4. Topical antibacterial ointment system
+This antibacterial ointment is centered around the active strain LGG, 
+which exhibits antibacterial properties in conjunction with CS-MnO₂ 
+NPs to exert a synergistic effect on inhibition. Supplemented with 0.5% 
+glucose and 0.1–0.2% yeast extract (10 mL, 0.1 M PBS), the formulation 
+provides metabolic substrates for lactic acid bacteria, thereby enhancing 
+their acid production and hydrogen peroxide capabilities. The base 
+consists of a mixture of 1–2% gelatin, 0.3–0.5% carbomer, and 2–5% 
+glycerin, creating a mild moisturizing colloidal environment charac­
+terized by good adhesion and sustained-release effects. The pH is 
+adjusted to 6.0–6.5 using sodium hydroxide and sodium lactate. To 
+prevent contamination from external bacteria, a very low concentration 
+(<0.05%) of potassium sorbate is added, and the sample is sterilized in 
+an autoclave at 121 ◦C for 20 min. Meanwhile, CS-MnO₂@LGG (adding 
+2 mL of the CS-MnO₂ NPs solution to 10 mL of LGG suspension with an 
+OD value of 0.8 and then centrifuging) was performed by adding the 
+aforementioned sterilized solution.
+2.5. In vivo antibacterial assessment
+The short-term antibacterial efficacy of probiotic-synergized nano­
+zymes based on CS-MnO₂@LGG was evaluated using a S. aureus-infected 
+wound model. Male mice (6–8 weeks old, 26–34 g) were used to 
+establish full-thickness dorsal skin wounds (0.5 × 0.5 cm). A total of 40 
+μL of an S. aureus suspension (1 × 106 CFU) was applied to each wound 
+and incubated for 24 h to establish infection. The mice were then 
+randomly assigned to four treatment groups: (I) PBS-treated control; (II) 
+ointment containing CS-MnO₂ NPs; (III) ointment containing LGG; (IV) 
+ointment formulated with CS-MnO₂@LGG (V); and (V) positive contrast 
+Mupirocin (2%). Wound area and body weight were monitored and 
+recorded daily. Hair around the wound area was trimmed as needed to 
+ensure consistent image acquisition. After 13 days of treatment, the mice 
+were euthanized, and wound tissues were harvested and fixed in 4% 
+paraformaldehyde for hematoxylin and eosin (H&E) staining. Each 
+experimental group included 6 mice. This sample size was based on 
+previously published murine infected wound models with comparable 
+endpoints and variability and was considered sufficient to detect inter­
+group differences while avoiding unnecessary animal use [31,32]. Prior 
+to treatment, animals were randomly numbered and assigned to groups 
+to minimize allocation bias. Wound healing progression was recorded 
+for all animals; representative images are presented, while quantitative 
+analyses were conducted using data from all mice. To further reduce 
+potential observer-related bias, wound area measurements were per­
+formed using predefined evaluation criteria under standardized image 
+acquisition and analysis procedures applied consistently across all 
+groups. Investigators involved in outcome assessment were blinded to 
+group allocation during data quantification. All animal experiments 
+were conducted in accordance with institutional guidelines for the care 
+and use of laboratory animals at Shandong University and were 
+approved by the Animal Ethics Committee of the School of Pharmacy, 
+Shandong University (Approval No. 20048).
+P. Liu et al.                                                                                                                                                                                                                                       
+Chemical Engineering Journal 537 (2026) 176316 
+3 
+
+3. Results and discussion
+3.1. Characterization of CS-MnO₂ NPs nanozyme and CS-MnO₂@LGG
+The synthesis of CS-MnO₂ NPs is schematically illustrated in Fig. 1a. 
+Nanoparticles were prepared via a one-step, room-temperature stirring 
+process, followed by filtration to yield a grey-brown liquid. X-ray 
+diffraction (XRD, Fig. 1b) displayed broad peaks between 20◦and 30◦, 
+indicative of an amorphous chitosan matrix, along with sharp reflections 
+at 36.7◦and 65.6◦corresponding to the (100) and (110) planes of MnO₂, 
+confirming the formation of a nanocrystalline phase [33]. Transmission 
+electron microscopy (TEM, Fig. 1c) revealed irregularly agglomerated 
+particles encapsulated by a low-contrast carbon shell derived from chi­
+tosan, in contrast to unmodified MnO₂ NPs, which formed aggregated 
+nanosheets with primary sizes of 40–50 nm (Fig. S1a, b). Elemental 
+mapping confirmed the presence of Mn, C, N, and O in CS-MnO₂ NPs and 
+demonstrated a uniform distribution of C and N surrounding Mn, indi­
+cating successful and homogeneous chitosan functionalization, as 
+illustrated in Fig. 1d. This is expected to improve dispersion stability and 
+interfacial biocompatibility. Fourier-transform infrared (FT-IR) spectra 
+further verified chitosan incorporation. Characteristic CS peaks were 
+observed at 3467 cm−1, assigned to –NH₂ and –OH stretching vibrations, 
+and at 2927 cm−1 and 2883 cm−1, attributed to –CH₃ and –CH₂/–CH 
+stretching [34]. The amide I (C=O) and amide II (N–H) bands appeared 
+at 1634 cm−1 and 1524 cm−1, respectively [35]. Additionally, while C- 
+O-C asymmetric stretching bands at 1162 cm−1 and 1073 cm−1 were 
+ascribed to pyranose sugar units [36]. Comparative analysis confirmed 
+that both CS and CS-MnO₂ NPs retained the characteristic chitosan ab­
+sorption peaks, indicating that functional groups remained intact during 
+synthesis. Collectively, these results confirm the successful synthesis of 
+CS-MnO₂ NPs with uniform chitosan coating, preserving bioactive 
+functional groups that enhance material biocompatibility and provide a 
+favorable interface for subsequent LGG immobilization.
+X-ray photoelectron spectroscopy (XPS) full survey spectra 
+confirmed the presence of Mn, O, N, and C elements in the CS-MnO₂ NPs, 
+in agreement with the EDS mapping results. The high-resolution Mn 2p 
+spectrum exhibited multiple oxidation states, as depicted in Fig. 1g. 
+Peaks at 640.9 eV and 652.4 eV correspond to Mn2+2p3/2 and 2p1/2, 
+respectively. Additional peaks at 642.4 eV and 653.1 eV are attributed to 
+Mn3+, while those at 646.6 eV and 654.1 eV indicate the presence of 
+Fig. 1. Synthetic route of CS-MnO₂ NPs (a), XRD pattern (b), TEM image (c), Elemental mapping image (d), Fourier transform infrared (FT-IR) spectra (e), XPS survey 
+spectrum (f), Mn 2p spectra (g), O 1 s spectra (h), C 1 s spectra (i) of CS-MnO₂ NPs.
+P. Liu et al.                                                                                                                                                                                                                                       
+Chemical Engineering Journal 537 (2026) 176316 
+4 
+
+Mn4+ [37], demonstrating the coexistence of mixed-valence Mn species 
+within the nanoparticles, which is beneficial for redox activity and 
+catalytic performance. The O 1 s spectrum could be deconvoluted into 
+two distinct components: a peak at 531.4 eV assigned to Mn–O bonds, 
+confirming the formation of MnOx structures, and a peak at 532.7 eV 
+corresponding to C––O groups, likely originating from the chitosan 
+matrix (Fig. 1h). The C 1 s spectrum of chitosan displayed three major 
+peaks at 284.8 eV (C–C/C–H), 286.1 eV (C–N), and 287.9 eV (C=O), 
+further validating the successful integration of chitosan with MnO₂ 
+(Fig. 1i). Collectively, these XPS results verify the formation of a chi­
+tosan-MnO₂ composite, in which the chitosan component imparts 
+excellent biocompatibility and provides a favorable interface for sub­
+sequent LGG loading.
+3.2. Characterization and properties of CS-MnO₂@LGG
+Lactic acid bacteria (LAB) encompass a diverse range of species, 
+among which LGG is notable for its high production of H₂O₂ and lactic 
+acid. This characteristic underlies its antibacterial efficacy and is 
+contingent upon its proliferation [38]. Consequently, we conducted a 
+detailed analysis of the metabolic pathways of LGG. Previous studies 
+have demonstrated that LGG exhibits inhibitory activity against skin 
+pathogens, particularly Staphylococcus aureus, and possesses adhesive 
+properties that facilitate wound colonization [39]. Accordingly, LGG 
+was selected as our model strain. Scanning electron microscopy (SEM) of 
+native LGG reveals elongated, rod-shaped cells, some of which are ar­
+ranged in short chains, with smooth surfaces that lack protrusions, as 
+illustrated in Fig. 2a. In contrast, SEM images of CS-MnO₂@LGG show 
+abundant irregular surface-bound particles or aggregates, while pre­
+serving the characteristic rod morphology and showing no evidence of 
+cell swelling (Fig. 2b), suggesting minimal morphological impact of 
+nanozyme loading. Energy-dispersive X-ray spectroscopy (EDS) map­
+ping confirms Mn presence on the bacterial surface, with an average Mn 
+content of 8.62% across three measurements, as depicted in Fig. 2c. The 
+antibacterial activity of CS-MnO₂@LGG primarily arises from two as­
+pects: first, the enzyme-mimicking properties of CS-MnO₂ NPs; second, 
+the proliferation capacity of LGG and the synergistic effects of its 
+metabolic products, particularly lactic acid and hydrogen peroxide, 
+which can be likened to an armed enhancement of LGG. We systemati­
+cally evaluated the impact of CS-MnO₂ NPs on LGG. Following nano­
+particle loading, transmission electron microscopy confirmed that LGG 
+retained normal binary fission (TEM, Fig. 2d). This approach signifi­
+cantly enhances the antibacterial effect against harmful bacteria by 
+combining a single LGG (probiotics) with nanozymes, thereby fully 
+leveraging the advantages of each component.
+To quantify tolerance, LGG was incubated in PBS containing CS- 
+MnO₂ NPs at concentrations up to 416 μM (20% v/v). As the CS-MnO₂ 
+NPs concentration increased to 416 μM, LGG viability declined to 
+approximately 72.35%, demonstrating substantial resistance to the 
+nanozymes (Fig. 2e). Notably, the chitosan coating mitigated the 
+Fig. 2. (a) SEM images of the LGG. (b, c) SEM and mapping images after co-incubation of CS-MnO₂ NPs and LGG (The element content is on the right). (d) TEM image 
+of LGG and CS-MnO₂@LGG (The schematic diagram illustrates the comparative bactericidal effects of normal LGG and CS-MnO₂ NPs). (e) The influence of CS-MnO₂ 
+NPs loading concentration on the survival rate of LGG. (f) Confocal laser scanning microscopy images of LGG with CS-MnO₂ NPs (416 μM). Scale bar: 20 μm. (g) Time 
+course of medium pH and bacterial growth concentration. The data are presented as the mean ± SD, n = 3 independent biological replicates (unit of analysis: an 
+independent bacterial culture). (h) Agar plate verification of H2O2 produced by LGG.
+P. Liu et al.                                                                                                                                                                                                                                       
+Chemical Engineering Journal 537 (2026) 176316 
+5 
+
+inhibitory effects of MnO₂ NPs on LGG growth. Visual observation of the 
+adsorption process revealed that within 10 min, the supernatant color 
+progressively lightened while precipitate accumulated, indicating rapid 
+particle binding (Fig. S2). To visually assess the impact of CS-MnO₂ NPs 
+on LGG viability, nanoparticle concentrations were incrementally 
+increased, and samples were imaged by laser scanning confocal micro­
+scopy (Fig. 2f). Even at 416 μM CS-MnO₂ NPs, the red fluorescence signal 
+indicative of compromised cell membranes remained significantly lower 
+than the green fluorescence signal associated with live bacteria. This 
+observation confirms the feasibility of the proposed approach. Produc­
+tion of lactic acid/acetic acid by LGG was assessed via pH monitoring of 
+MRS medium under standard culture conditions. Over 12h, the pH 
+decreased from 6.78 to 3.85 (Fig. 2g), concurrent with exponential 
+bacterial growth to 109 CFU/mL. H₂O₂ production was evaluated by 
+plating LGG on MRS agar supplemented with TMB and horseradish 
+peroxidase (HRP). After 24 h of incubation at 36 ◦C, colonies exhibited a 
+deep blue coloration, indicating that H₂O₂ produced by LGG oxidized 
+TMB in the presence of HRP (Fig. 2h). In contrast, both E. coli and 
+S. aureus remained colorless, indicating their inability to produce H₂O₂ 
+(Fig. S3). These findings confirm that LGG generates quantifiable H₂O₂ 
+under the conditions tested, underpinning its probiotic-mediated 
+oxidative antibacterial mechanism.
+Fig. 3. (a) UV–vis absorption spectra of CS-MnO₂ NPs + TMB in different buffer solutions at other times (250 μM of CS-MnO₂ NPs). (b) Effects of various species on 
+the oxidase-like CS-MnO₂ NPs catalyzed TMB reaction. (c) EPR spectra of CS-MnO₂ NPs after joining DMPO, TEMP, and H2O2 + DMPO. (d) TMB color development of 
+CS-MnO₂@LGG after different incubation times in MRS (100 μL MRS). (e) GSH color development experiment based on DTNB. (f) CS-MnO₂ NPs in a GSH depletion 
+test (CS-MnO₂ NPs 1.25 mM, GSH 600 μM). (g) Consumption of GSH by different concentrations of CS-MnO₂ NPs.
+P. Liu et al.                                                                                                                                                                                                                                       
+Chemical Engineering Journal 537 (2026) 176316 
+6 
+
+3.3. Oxidase-like and peroxidase-like activity of CS-MnO₂ NPs
+Oxidase-like catalytic activity of CS-MnO₂ NPs was evaluated using 
+TMB as the chromogenic probe and monitored by UV–visible spectros­
+copy. As illustrated in Fig. 3a, the CS-MnO2 NPs exhibit maximum ac­
+tivity in oxidizing TMB in a lactic acid‑sodium lactate buffer at a pH of 
+6.0. Furthermore, their oxidase-like performance is further enhanced in 
+a lower pH (3.0–8.0) acidic environment (Fig. S4). In consideration of 
+the subsequent antibacterial environment requirements, all buffers are 
+selected to have a pH value of 6.0. Wound environments typically pre­
+sent elevated pH due to bacterial colonization; however, LGG prolifer­
+ation and lactic acid secretion can acidify the local microenvironment, 
+simultaneously suppressing pathogens and augmenting nanozyme 
+catalysis. At 250 μM, CS-MnO₂ NPs effectively oxidized colorless TMB to 
+its blue oxidized form (oxTMB), as evidenced by the characteristic ab­
+sorption at 652 nm (Fig. 3b). Addition of low-dose H₂O₂ (5 μM) further 
+improved catalytic turnover. Comparable substrate oxidation was 
+observed with ABTS and OPD, as demonstrated in Fig. S5.
+To further elucidate the underlying catalytic mechanism, electron 
+paramagnetic resonance (EPR) spectroscopy was employed using spe­
+cific spin-trapping agents, 2,6-dimethylpyridine N-oxide (DMPO) and 
+2,2,6,6-Tetramethylpiperidine (TEMP), to detect ROS, particularly su­
+peroxide anions (O₂•-), singlet oxygen (1O2), and hydroxyl radicals 
+(⋅OH). As illustrated in Fig. 3c, distinct signals for O₂•- and 1O2 are 
+observable, alongside a characteristic quartet signal corresponding to 
+⋅OH, exhibiting an intensity ratio of 1:2:2:1. This observation confirms 
+the generation of these ROS during the catalytic process. Based on the 
+experimental results, we hypothesize that during the catalytic process, 
+the nanozyme CS-MnO₂ NPs can not only utilize their oxidase-like ac­
+tivity to decompose O₂ into O₂⋅−and 1O2 but also decompose H₂O₂ into 
+⋅OH through their peroxidase-like activity. When H₂O₂ is employed as a 
+substrate, CS-MnO₂ NPs exhibit significant peroxidase-like activity, 
+evidenced by a Km value of only 0.227 mM and a high Vmax value of 
+0.72*10−7 M/s (Fig. S6). This suggests that, in addition to their oxidase- 
+like activity (Km = 0.185 mM), the peroxidase-like enzymatic behavior 
+contributes to the formation of a synergistic enzyme system, thereby 
+enhancing the efficiency of catalytic reactions and further augmenting 
+the oxidase-like activity. The CS-MnO₂@LGG was first immersed in MRS 
+solution and allowed to react. Then, a buffer solution with pH 6.0 and 
+TMB chromogenic agent was added (Fig. 3d). As the incubation time 
+increased (10–40 min), the concentrations of by-products (lactic acid 
+and H₂O₂) gradually increased, enhancing the TMB color development 
+reaction, as expected. In a buffer solution with a higher concentration of 
+lactic acid (25 mM, pH 6.0), the intensity of the EPR signal (⋅OH) was 
+notably enhanced (compared to 5 mM, pH 7.0). Furthermore, the EPR 
+signal intensity of CS-MnO₂@LGG exhibited a marked increase after 
+incubation in MRS medium compared to its intensity before incubation 
+(Fig. S7).
+Fig. 4. (a) SEM images of E. coli and S. aureus subjected to various treatment conditions. CS-MnO₂ NPs (300 μM), H2O2 (80 μM). (b) Confocal laser scanning mi­
+croscopy images of S. aureus and E. coli under the same treatment conditions. (c) Antibacterial activity of CS-MnO₂ NPs at different concentrations against E. coli and 
+S. aureus. (d) Antibacterial effect of CS-MnO₂ NPs and 300 μM CS-MnO₂ NPs with different concentrations of H2O2 on E. coli and S. aureus. Data are mean ± SD (n = 3 
+biological replicates; unit of analysis: independent cultures per condition). (e) Digital photographs depicting S. aureus and E. coli colonies on agar plates after 
+exposure to different material treatments. (f) Photographs of S. aureus/LGG-infected wounds treated on days 1, 3, 5, 7, and 9.
+P. Liu et al.                                                                                                                                                                                                                                       
+Chemical Engineering Journal 537 (2026) 176316 
+7 
+
+Furthermore, as illustrated in Fig. 3e, the DTNB assay facilitates the 
+quantitative detection of GSH based on its characteristic absorbance at 
+412 nm, and the CS-MnO₂ NPs themselves do not interfere with the 
+chromogenic reaction [40]. Consequently, a standard calibration curve 
+was established for GSH at various concentrations (Fig. S8), and the 
+interaction between CS-MnO₂ NPs and GSH was systematically evalu­
+ated. The results indicate that CS-MnO₂ NPs can effectively oxidize GSH 
+and be reduced to Mn2+ under physiological conditions, demonstrating 
+significant capacity for GSH consumption. This reaction is accompanied 
+by a notable decrease in absorbance at 412 nm (Fig. 3f). Quantitative 
+analysis revealed that at an initial GSH concentration of 600 μM, 
+treatment with 62.5/100 μM CS-MnO₂ NPs for 30 min reduced the GSH 
+level to 513.65/427.51 μM, corresponding to a consumption rate of 
+13.65–28.74%, as evidenced by Fig. 3g. The reaction exhibited clear 
+dose dependency, significantly compromising the bacterial antioxidant 
+defense system. Moreover, the depletion of GSH may promote intra­
+cellular ROS accumulation, leading to membrane lipid peroxidation and 
+damage to biomacromolecules, thereby enhancing short-term antibac­
+terial efficacy [41].
+3.4. Antimicrobial test in vitro
+SEM imaging revealed treatment-induced structural alterations in 
+bacterial cell membranes, as illustrated in Fig. 4a. In the untreated 
+control group, E. coli displayed typical rod morphology with pilus- 
+covered surfaces, while S. aureus appeared as smooth spheres, and 
+LGG retained intact rods with complete membranes. Treatment with 
+H₂O₂ induced mild structural changes: the surfaces of E. coli became 
+rough, S. aureus exhibited minor shape irregularities, and LGG remained 
+largely intact. In the CS-MnO₂ NP group, nanoparticles adhered to all 
+three strains; E. coli showed slight distortion with localized collapse, 
+S. aureus surfaces were rough with blurred contours, while LGG dis­
+played no marked shrinkage or deformation, indicating partial mem­
+brane disruption. The combination of CS-MnO₂ NPs and H₂O₂ resulted in 
+the most severe damage: E. coli cells were deformed, collapsed, or 
+ruptured; S. aureus exhibited signs of disintegration; and LGG showed 
+mild wrinkling. Consistently, live/dead staining indicated the highest 
+TRITC red fluorescence for E. coli and S. aureus in the combination 
+group, confirming a synergistic antibacterial effect (Fig. 4b). 
+Fig. 5. (a) Antibacterial diagrams of the Stage I and Stage II. (b, c) SEM images of the antibacterial effects of different concentrations of CS-MnO₂@LGG against E. coli 
+in the first and second stages. (Blank Group: B.C. First-stage, I: LGG (10 μL); II: CS-MnO₂@LGG (10 μL); III: CS-MnO₂@LGG (50 μL). Second-stage, I″; II″; III"). (d) Plate 
+coating experiments against E. coli for LGG and CS-MnO₂@LGG at different volumes during Stage I and Stage II. (e) The data of E. coli in Stage I, II are presented as 
+bacterial counts expressed in log10(CFU/mL). Data are presented as the mean ± SD from n = 3 independent biological replicates (unit of analysis: an independent 
+bacterial culture per condition); for each replicate, triplicate plates were prepared and averaged to obtain one CFU value. Statistical analysis was performed using 
+one-way ANOVA followed by Tukey's multiple-comparisons test. *p < 0.05, **p < 0.01, ***p < 0.001. (f) Culture medium was collected and centrifuged after Stage II 
+of antibacterial treatment with CS-MnO₂@LGG against E. coli.
+P. Liu et al.                                                                                                                                                                                                                                       
+Chemical Engineering Journal 537 (2026) 176316 
+8 
+
+Antibacterial activity was quantified against E. coli and S. aureus using a 
+96-well plate assay in sodium lactate buffer (pH 6.0) (Fig. 4c). At a 
+concentration of 300 μM CS-MnO₂ NPs, bactericidal rates reached 
+32.59% and 31.85%, respectively. The addition of 80 μM H₂O₂- 
+mimicking LGG-derived peroxide significantly enhanced killing rates to 
+58.79% and 55.56% (Fig. 4d). Selective plating on MAC agar for E. coli 
+and Baird-Parker agar for S. aureus confirmed reduced colony numbers 
+in the combination group, while LGG did not grow on either medium 
+(Fig. S9). Additionally, similar trends were observed in the plate assay 
+shown in Fig. 4e (growth of E. coli and S. aureus under different treat­
+ment conditions), where the combination of CS-MnO₂ NPs and H₂O₂ 
+showed reduced bacterial growth, supporting its short-term antibacte­
+rial effect.
+Notably, this antibacterial strategy not only exhibits an immediate 
+short-term antibacterial effect but also allows LGG to continue prolif­
+erating in the novel LB culture medium. Through competitive inhibition 
+and the secretion of metabolites such as lactic acid and H₂O₂, LGG forms 
+a synergistic mechanism with CS-MnO₂ NPs, thereby achieving a sus­
+tained antibacterial effect within an acute treatment window. Initially, 
+we inoculated LGG into the skin wounds of mice to observe any occur­
+rences of infection, ulceration, or delayed wound healing. A standard­
+ized full-thickness circular wound (5 mm diameter) was created on the 
+dorsal skin of anesthetized mice. A comparative experiment was con­
+ducted in which 50 μL of LGG and S. aureus suspension (106 CFU/mL) 
+were locally applied to each wound, alongside sterile saline as a control, 
+as illustrated in Fig. 4f. Wounds were photographed daily under 
+consistent conditions to evaluate closure rate and inspected for clinical 
+signs of infection, including erythema, exudate, scabbing, and ulcera­
+tion. During the 7-day observation period, the results indicated that the 
+S. aureus infection group exhibited significant inflammatory responses 
+and tissue damage throughout the healing process, leading to delayed 
+wound healing. This section shows typical features of acute purulent 
+skin inflammation with folliculitis and perifollicular abscess formation 
+(Fig. S10). The lesions are predominantly neutrophilic, consistent with a 
+S. aureus-induced skin response. In contrast, the LGG treatment group 
+demonstrated milder inflammatory responses, with no abnormal 
+inflammation or ulcer formation, faster scab formation, and a signifi­
+cantly accelerated healing process. These findings confirm that topical 
+LGG is biocompatible and does not delay tissue repair, providing a basis 
+for subsequent nanozyme-loading safety studies.
+Acute antibacterial activity can be divided into two phases: anti­
+bacterial action in PBS (Stage I) and incubation in culture medium 
+(Stage II), as depicted in Fig. 5a. The synergistic antibacterial effect of 
+CS-MnO₂@LGG was evaluated through antibacterial experiments 
+against E. coli and S. aureus. As shown in Fig. 5b and c, during the Stage I 
+and Stage II of the experiment, the antibacterial effect of CS-MnO₂@LGG 
+on E. coli was difficult to observe clearly, which was attributed to the 
+small morphological differences between the two bacteria. In the MAC 
+medium, the number of colonies of E. coli can be counted (Fig. 5d). 
+Combined with the untreated E. coli plate in B.C., the results of the plate 
+coating experiment demonstrate that an increase in the volume of CS- 
+MnO₂@LGG to 50 μL leads to a gradual reduction in the number of E. coli 
+during both the initial and subsequent stages of antibacterial activity. 
+The antibacterial effect of CS-MnO₂@LGG is significantly enhanced 
+compared to the addition of only LGG. Under identical dosage condi­
+tions, the LGG group exhibited a reduction of 0.80-log10 reduction (95% 
+CI, 0.75–0.83; n = 3) during the subsequent antibacterial phase 
+compared to the control group, achieving a bactericidal efficiency of 
+84.32% (Fig. 5e). Following the addition of 50 μL of CS-MnO₂@LGG, a 
+reduction of 2.40-log10 reduction (95% CI, 2.18–2.59; n = 3) units was 
+observed during the Stage II compared to the control group, resulting in 
+a bactericidal rate of 99.60%. Notably, in Stage II, the centrifuged pre­
+cipitate from a single E. coli culture appeared light yellow (Fig. 5f). As 
+the volume of CS-MnO₂@LGG increased, the precipitate gradually 
+transitioned to white, indicating an upward trend that supports the 
+previously mentioned synergistic antibacterial effect.
+The antibacterial effect of CS-MnO₂@LGG against S. aureus was 
+particularly pronounced during Stage II. As illustrated in Fig. 6a and b, 
+increasing the usage volume of CS-MnO₂@LGG to 50 μL led to a gradual 
+decrease in the number of S. aureus, which ultimately disappeared 
+completely in Stage II. The Baird-Parker agar plate results show the 
+colony counts of S. aureus during Stage I and Stage II. In comparison to 
+the colony count of S. aureus in the B.C., following the addition of 50 μL 
+CS-MnO₂@LGG, in Stage II, the reduction increased to 2.32-log10 
+reduction (95% CI, 2.15–2.50; n = 3), resulting in a bactericidal rate of 
+99.45% (Fig. 6c), which is stronger than the LGG group. Similar to the 
+anti-E. coli group, the centrifugation precipitate from the single S. aureus 
+group was yellow. As the volume of CS-MnO₂@LGG increased, the 
+precipitate gradually turned white in Fig. 6d, indicating a clear trend 
+that reflects CS-MnO₂@LGG antibacterial efficacy. We verified the 
+growth of LGG in both MRS and the mixed medium LB1/MRS1, con­
+firming normal proliferation in LB1/MRS1. Similarly, E. coli and S. aureus 
+grew normally in both LB and LB1/MRS1. Absorbance measurements at 
+600 nm revealed that the growth of these pathogenic bacteria in the 
+mixed medium was 107.56–115.85% higher than in the single medium, 
+indicating that the mixed medium does not hinder bacterial growth 
+(Fig. S11a-c). Compared to other antibacterial materials (Table S1), 
+these antibacterial test results provide a theoretical basis for subsequent 
+experiments involving mouse wounds.
+To evaluate the antibacterial efficacy of CS-MnO₂@LGG against 
+antibiotic-resistant bacteria, we selected Methicillin-resistance Staphylo­
+coccus aureus (MRSA) as the representative pathogenic bacterium for our 
+study. As illustrated in Fig. S12a-b, MRSA was still abundant during 
+Stage I; however, in the second phase, SEM observations indicated that 
+MRSA had nearly completely disappeared. These findings were further 
+corroborated by Baird-Parker agar plate experiments (Fig. S12c-d). A 
+significant number of black MRSA colonies were observed in the control 
+group, while the samples treated with CS-MnO₂@LGG showed almost 
+complete disappearance in Stage II. The analysis of the plate colony 
+counts indicated that the survival rate of MRSA was 1.48%, as illustrated 
+in Fig. S12e, reflecting the antibacterial efficacy of CS-MnO₂@LGG.
+Fig. 6. (a) SEM images showing the antibacterial effects of CS-MnO₂@LGG at 
+different concentrations against S. aureus in Stage I and Stage II. (Stage I, I: LGG; 
+II: CS-MnO₂@LGG; III: CS-MnO₂@LGG. Stage II, I"; II"; III"). (b) Plate coating 
+experiments against S. aureus for LGG and CS-MnO₂@LGG at different volumes 
+during Stage I and Stage II. (c) Survival rates of S. aureus treated with LGG and 
+CS-MnO₂@LGG at different volumes during Stage I and II. Statistical analysis 
+was performed using one-way ANOVA followed by Tukey's multiple- 
+comparisons test for comparisons among multiple groups. Data are presented 
+as mean ± SD, with n = 3 independent biological replicates. *p < 0.05, **p <
+0.01, ***p < 0.001. (d) Culture medium was collected and centrifuged after 
+Stage II of antibacterial treatment with CS-MnO₂@LGG against S. aureus.
+P. Liu et al.                                                                                                                                                                                                                                       
+Chemical Engineering Journal 537 (2026) 176316 
+9 
+
+3.5. Accelerated in vivo wound healing by CS-MnO₂@LGG unguent
+Wound healing effects were compared between the experimental and 
+control groups. The CS-MnO₂@LGG hydrogel ointment was applied 
+uniformly to mouse dorsal wounds each morning and stored at −4 ◦C to 
+preserve both probiotic viability and nanozyme activity. As mentioned 
+above in Fig. 7a, the prepared CS-MnO₂@LGG ointment was uniformly 
+applied to the surface of the mouse wounds. This method is similar to 
+enhancing the antibacterial activity of LGG by arming it with nanozymes 
+and further improving its antimicrobial efficacy by leveraging the nu­
+merical advantage of LGG. Considering the morphological similarities 
+between E. coli and LGG, subsequent acute antibacterial experiments in 
+mice focused on S. aureus as the subject of investigation.
+Biocompatibility is essential for the antibacterial application of the 
+composite ointment. The in vitro hemocompatibility assay demon­
+strated that Triton-treated red blood cell supernatants exhibited a bright 
+red color, while those from CS-MnO₂@LGG (200 and 400 μL) remained 
+colorless and transparent (Fig. 7b). The OD545 values for CS-MnO₂@LGG 
+were significantly lower than those of the Triton group, with hemolysis 
+rates below 5%, which is within the safety threshold for antibacterial 
+materials. CCK-8 assays conducted on RS1 fibroblasts indicated no sig­
+nificant cytotoxicity after 24 h of exposure to CS-MnO₂ NPs, with cell 
+viability exceeding 93.42% even at 300 μM, comparable to PBS controls, 
+as illustrated in Fig. 7c. Live/dead staining corroborated these findings, 
+revealing predominant green fluorescence from viable cells (Fig. 7d). 
+The DCFH-DA assay showed that RS1 cells treated with CS-MnO₂ NPs 
+displayed a fluorescence profile similar to untreated cells, with no 
+detectable green signal for ROS generation, indicating minimal cyto­
+toxicity to normal cells (Fig. S13a, b). The prepared CS-MnO₂@LGG was 
+immersed in buffer solutions with different pH values, and the concen­
+tration of released Mn2+ in the supernatant was quantified by ICP-OES 
+(Fig. S14). The results showed that at pH 5.0, the concentration of 
+Mn2+ in the supernatant was 16.27 ppm, which is considered insuffi­
+cient to induce cytotoxic effects in normal cells [42]. Flow cytometry 
+analysis using Annexin V-FITC/PI staining showed low rates of apoptosis 
+and necrosis, with 97.64% of cells residing in the viable (Q4) quadrant 
+(Fig. 7e). In addition, the Limulus Amebocyte Lysate (LAL) assay showed 
+no coagulation for the supernatant of liquid CS-MnO₂@LGG after 
+overnight storage, suggesting a low endotoxin burden under the tested 
+conditions (Fig. S15a). Using a quantitative kinetic turbidimetric LAL 
+assay, the endotoxin level in the CS-MnO₂@LGG extract/supernatant 
+was approximately 0.043 EU/mL, which is below the safety limit (0.5 
+EU/mL) [43], indicating negligible endotoxin contamination under the 
+tested conditions (Fig. S15b, c). The CS-MnO₂@LGG ointment was 
+packaged in blank toothpaste tubes containing a stabilizing ointment 
+and stored at −4 ◦C. SEM imaging revealed a uniform film-forming 
+surface with a wrinkled morphology, likely resulting from gel drying 
+shrinkage (Fig. 7f). The viability of LGG remained approximately 
+83.65% after 15 days of storage (Fig. 7g; Fig. S16). In murine wounds 
+infected with S. aureus, the topical application of CS-MnO₂@LGG 
+reduced wound-surface pH from approximately 7.2 to 5.2 within 18 h 
+(Fig. 7h), indicating LGG colonization and the establishment of an 
+Fig. 7. (a) Schematic illustration of synergistic antibacterial therapy and wound healing promotion based on CS-MnO₂@LGG ointment. (b) Relative hemolysis ratios 
+of various concentrations of CS-MnO₂@LGG solutions and Triton X-100. Insets include the corresponding photographs. Data are expressed as mean ± SD, n = 3. (c) 
+Cell viability of RS1 cells treated with CS-MnO₂@LGG solutions (n = 4). (d) Staining of viable and dead cells of RS1 cells. (e) Flow cytometric analysis of HUVECs 
+treated with 200 μL CS-MnO₂@LGG solutions using Annexin V/PI double staining. (f) Physical image of the prepared CS-MnO₂@LGG composite ointment and the 
+SEM image of it applied on a silicon wafer. (g) Activity of LGG in the CS-MnO₂@LGG composite ointment varies over time. (n = 4 independent biological replicates 
+(unit of analysis: an independent bacterial culture). (h) Change in wound pH over time after application of CS-MnO₂@LGG composite ointment (n = 3 wounds from 3 
+independent mice).
+P. Liu et al.                                                                                                                                                                                                                                       
+Chemical Engineering Journal 537 (2026) 176316 
+10 
+
+antimicrobial acidic microenvironment. This acidification also enhances 
+the catalytic activity of CS@MnO₂ NPs, thereby improving bacterial 
+inhibition.
+The wound healing cascade comprises inflammatory (Days 0–3), 
+proliferative (Days 3–7), and healing (Days 7–10) stages (Fig. 8a). His­
+topathological evaluation was performed on S. aureus-infected rat 
+wounds treated with PBS, CS-MnO₂ NPs, LGG, or a CS-MnO₂@LGG 
+ointment (Fig. 8b). On Day 1, topical treatments were applied. By Day 3, 
+only minimal closure was observed in the PBS, CS-MnO₂ NPs, and LGG 
+groups. In contrast, the CS-MnO₂@LGG group exhibited faster healing, 
+showing a marked acceleration in wound contraction and achieving 
+near-complete closure by Day 10 (Fig. 8c). Bacterial culture of wound 
+exudates 24 h after treatment showed a substantial decrease in colony 
+formation for the CS-MnO₂@LGG group (Fig. S17). The CS-MnO₂@LGG 
+group achieved a wound-closure rate of 80.53% ± 1.31%, which was 
+comparable to the 2% Mupirocin positive-control group (83.87% ±
+1.60%) in Fig. 8d. Collectively, these findings indicate that CS- 
+MnO₂@LGG promotes wound healing to a degree comparable to the 
+clinical topical benchmark under the tested conditions. H&E studies 
+indicate that the treatment group CS-MnO₂@LGG exhibited a reduction 
+in the infiltration of inflammatory cells (blue arrow) compared to the 
+other groups, demonstrating a milder inflammatory response. The tissue 
+structure in this group was notably more organized, particularly in the 
+formation of new granulation tissue (black arrow), and a distinct 
+thickening (yellow arrow) can be observed in the epidermal layer of the 
+skin tissue, which suggests improved repair. The reduced infiltration of 
+inflammatory cells, coupled with the more orderly tissue structure, in­
+dicates that group CS-MnO₂@LGG may possess a greater advantage in 
+promoting skin healing and functional recovery (Fig. 8e and Table S2). 
+Body weight remained unchanged over 14 days (Fig. S18), suggesting no 
+systemic toxicity. Collectively, these findings are consistent with a po­
+tential synergistic contribution of CS-MnO₂ nanozyme-mediated 
+Fig. 8. (a) In vivo immunomodulatory effects of CS-MnO₂@LGG-based composite ointments on skin wound healing following infection by S. aureus. (b) Selected 
+images illustrating wound progression in rats receiving different treatments. (c) Corresponding wound traces of S.aureus-infected wounds with different treatments on 
+days 0, 3, 7, and 10, respectively. (d) Wound area over time for different treatments. (e) After 7 days, H&E spot cards of wound tissue in various treatment groups 
+were examined (The yellow arrows indicate the epidermal layer of skin tissue, the blue arrows indicate inflammatory cells, fibroblasts indicated by the green arrows, 
+and the black arrows indicate newly formed granulation tissue, n = 6).
+P. Liu et al.                                                                                                                                                                                                                                       
+Chemical Engineering Journal 537 (2026) 176316 
+11 
+
+antimicrobial ROS and LGG-derived lactic acid/H₂O₂/peptides, coupled 
+with LGG adhesion-mediated colonization and immune modulation, 
+thereby promoting bacterial clearance and tissue repair [44–46]. Given 
+the limited sample size and study design, these in vivo findings should be 
+considered exploratory. Under the conditions tested, the CS-MnO₂@LGG 
+composite ointment demonstrated promising effects in promoting 
+infected wound healing through a multifactorial mechanism, but these 
+observations require further validation and benchmarking against 
+standard-of-care therapies.
+3.6. Safety/contraindications explanation
+Although probiotics have been explored for in vivo applications, 
+additional validation is required before use in humans to address po­
+tential clinical safety concerns [47]. In particular, it is important to 
+confirm that the employed LGG can be effectively controlled by 
+commonly used clinical antibiotics, thereby defining a clear controlla­
+bility boundary in cases of unintended colonization, infection risk, or the 
+need for antimicrobial therapy [48]. The in vitro susceptibility panel 
+demonstrated that the LGG strain remained phenotypically susceptible 
+to a range of clinically relevant antibiotics, including penicillin, eryth­
+romycin, tetracycline, chloramphenicol, vancomycin, gentamicin, and 
+ciprofloxacin, supporting its antibiotic controllability as part of the 
+biosafety evaluation under the tested conditions (Table S3). In addition, 
+the in vivo persistence of LGG delivered via the CS-MnO₂@LGG com­
+posite ointment was evaluated in a murine wound model. Viable LGG 
+became nearly undetectable after 2–3 days post-application, indicating 
+transient local retention (Fig. S19). This limited persistence may reduce 
+prolonged bacterial exposure and associated safety concerns in the 
+wound microenvironment.
+Whole-genome sequencing was conducted to assess potential genetic 
+safety risks (Table S4). Although the LGG strain carried resistance genes 
+related to lincomycin and streptogramin A, in vitro susceptibility testing 
+confirmed its sensitivity to other commonly used clinical antibiotics. 
+Moreover, no canonical virulence factors associated with wound infec­
+tion, including hla, hysA, aur, sspA, icaA, and icaD [49,50], were 
+detected (Table S5). Collectively, these results indicate that the strain 
+poses a manageable risk of clinically relevant antimicrobial resistance 
+and supports its safety for further evaluation. These findings inform the 
+antibiotic controllability aspect of biosafety but should not replace a 
+comprehensive safety evaluation, particularly for high-risk populations. 
+Caution is recommended for individuals with severe immunocompro­
+mise, impaired mucosal barriers, or those with indwelling medical de­
+vices or critical illnesses. Importantly, this intervention is not intended 
+as a routine or standard practice, but rather as an exploratory strategy to 
+expand therapeutic options.
+4. Conclusion
+In summary, we developed a dual-functional biohybrid antibacterial 
+platform by integrating chitosan-functionalized CS-MnO₂ NPs with LGG, 
+forming a synergistic CS-MnO₂@LGG composite functional material. 
+This hybrid system effectively combines the catalytic activity of nano­
+zymes with the adaptive metabolic characteristics of probiotics. Spe­
+cifically, LGG actively secretes lactic acid and H₂O₂, generating a mildly 
+acidic and oxidative microenvironment, thus significantly enhancing 
+ROS production by the CS-MnO₂ NPs. Moreover, the CS-MnO₂ NPs 
+effectively deplete intracellular GSH, disrupting bacterial redox ho­
+meostasis and further intensifying oxidative stress, which together 
+contribute to short-term antibacterial activity. This integrated strategy 
+illustrates a novel “bacteria against bacteria” concept, where beneficial 
+microbes act as direct antagonists to pathogens and modulators of 
+nanozyme performance. In vitro assays demonstrated that CS- 
+MnO₂@LGG exhibited acute antibacterial activity, achieving inhibition 
+rates of 99.60% against E. coli and 99.45% against S. aureus. Potential 
+translational applications of this platform include hydrogel ointments 
+for chronic wound care, where it could provide effective short-term 
+antimicrobial activity. Notably, this work is positioned as a proof-of- 
+concept and should be regarded as an exploratory strategy rather than 
+a routine modality, without replacing standard wound care or conven­
+tional anti-infective therapy. Future challenges include scalability, reg­
+ulatory approval, and long-term safety and biocompatibility for clinical 
+adoption. Overall, this study presents a promising probiotics-driven 
+catalytic approach against multidrug-resistant infections and high­
+lights the potential of coupling microbial metabolism with nanozymes.
+CRediT authorship contribution statement
+Peng Liu: Writing – original draft, Investigation. Qiaoyu Li: Formal 
+analysis. Yifan Chen: Formal analysis. Xiaowei Yue: Software. Fei 
+Yang: Validation, Funding acquisition. Yanzhao Yang: Writing – re­
+view & editing, Project administration, Funding acquisition.
+Declaration of competing interest
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper.
+Acknowledgements
+This work was financially supported by the National Natural Science 
+Foundation of China (22478225) and the Guangdong Basic and Applied 
+Basic Research Foundation (2023A1515110420).
+Appendix A. Supplementary data
+Supplementary data to this article can be found online at https://doi. 
+org/10.1016/j.cej.2026.176316.
+Data availability
+Data will be made available on request.
+References
+[1] K.M. O’Connell, J.T. Hodgkinson, H.F. Sore, M. Welch, G.P. Salmond, D.R. Spring, 
+Combating multidrug-resistant bacteria: current strategies for the discovery of 
+novel antibacterials, Angew. Chem. Int. Ed. 52 (41) (2013) 10706–10733.
+[2] N.M. Aljamali, Z.H. Al-zubaidy, A.H. Enad, Bacterial infection and common 
+bacterial diseases: a review, Pharm. Nanotechnol. 3 (2021) 13–23.
+[3] Q. Xu, X. Hu, Y. Wang, Alternatives to conventional antibiotic therapy: potential 
+therapeutic strategies of combating antimicrobial-resistance and biofilm-related 
+infections, Mol. Biotechnol. 63 (2021) 1103–1124.
+[4] E. Christaki, M. Marcou, A. Tofarides, Antimicrobial resistance in bacteria: 
+mechanisms, evolution, and persistence, J. Mol. Evol. 88 (1) (2020) 26–40.
+[5] V. Cattoir, B. Felden, Future antibacterial strategies: from basic concepts to clinical 
+challenges, J. Infect. Dis. 220 (3) (2019) 350–360.
+[6] Y. Wang, Y. Yang, Y. Shi, H. Song, C. Yu, Antibiotic-free antibacterial strategies 
+enabled by nanomaterials: progress and perspectives, Adv. Mater. 32 (18) (2020) 
+1904106.
+[7] A. Le´on-Buitimea, C.R. Garza-C´ardenas, J.A. Garza-Cervantes, J.A. Lerma-Escalera, 
+J.R. Morones-Ramírez, The demand for new antibiotics: antimicrobial peptides, 
+nanoparticles, and combinatorial therapies as future strategies in antibacterial 
+agent design, Front. Microbiol. 11 (2020) 1669.
+[8] F. Vatansever, W.C. de Melo, P. Avci, D. Vecchio, M. Sadasivam, A. Gupta, 
+R. Chandran, M. Karimi, N.A. Parizotto, R. Yin, Antimicrobial strategies centered 
+around reactive oxygen species–bactericidal antibiotics, photodynamic therapy, 
+and beyond, FEMS Microbiol. Rev. 37 (6) (2013) 955–989.
+[9] H.A. Hemeg, Nanomaterials for alternative antibacterial therapy, Int. J. Nanomed. 
+(2017) 8211–8225.
+[10] M. Xie, M. Gao, Y. Yun, M. Malmsten, V.M. Rotello, R. Zboril, O. Akhavan, 
+A. Kraskouski, J. Amalraj, X. Cai, Antibacterial nanomaterials: mechanisms, 
+impacts on antimicrobial resistance and design principles, Angew. Chem. Int. Ed. 
+62 (17) (2023) e202217345.
+[11] X. Wang, X. Sun, T. Bu, Q. Wang, P. Jia, M. Dong, L. Wang, In situ fabrication of 
+metal-organic framework derived hybrid nanozymes for enhanced nanozyme- 
+photothermal therapy of bacteria-infected wounds, Compos. Part B Eng. 229 
+(2022) 109465.
+P. Liu et al.                                                                                                                                                                                                                                       
+Chemical Engineering Journal 537 (2026) 176316 
+12 
+
+[12] L. Mei, S. Zhu, Y. Liu, W. Yin, Z. Gu, Y. Zhao, An overview of the use of nanozymes 
+in antibacterial applications, Chem. Eng. J. 418 (2021) 129431.
+[13] L. Xie, H. Wu, Y. Li, L. Shi, Y. Liu, Recent development of nanozymes for combating 
+bacterial drug resistance: a review, Adv. Healthc. Mater. 14 (8) (2025) 2402659.
+[14] Z. He, Q. Xu, B. Newland, R. Foley, I. Lara-S´aez, J.F. Curtin, W. Wang, Reactive 
+oxygen species (ROS): utilizing injectable antioxidative hydrogels and ROS- 
+producing therapies to manage the double-edged sword, J. Mater. Chem. B 9 (32) 
+(2021) 6326–6346.
+[15] X. Yan, X. Li, P. Yu, L. Wang, Q. Zhao, Nanozymes as antibacterial agents: new 
+concerns in design and enhancement strategies, ChemBioChem 26 (1) (2025) 
+e202400677.
+[16] Y. Nigam, M.R. Wilson, Maggot Debridement, in: A complete guide to maggot 
+therapy: clinical practice, therapeutic principles, production, Distribution, and 
+Ethics, 2022, pp. 143–152.
+[17] D.M. Osama, W.F. Elkhatib, A.M. Tawfeik, M. Aboulwafa, N. Hassouna, 
+Antimicrobial, antibiofilm and immunomodulatory activities of Lactobacillus 
+rhamnosus and Lactobacillus gasseri against some bacterial pathogens, Int. J. 
+Biotechnol. Wellness Ind. 6 (1) (2017) 12–21.
+[18] M.I. Petrova, N.C. Imholz, T.L. Verhoeven, J. Balzarini, E.J. Van Damme, D. Schols, 
+J. Vanderleyden, S. Lebeer, Lectin-like molecules of Lactobacillus rhamnosus GG 
+inhibit pathogenic Escherichia coli and Salmonella biofilm formation, PLoS One 11 
+(8) (2016) e0161337.
+[19] L. Capurso, Thirty years of Lactobacillus rhamnosus GG: a review, J. Clin. 
+Gastroenterol. 53 (2019) S1–S41.
+[20] S. Lebeer, I. Claes, H.L. Tytgat, T.L. Verhoeven, E. Marien, I. von Ossowski, 
+J. Reunanen, A. Palva, W.M. de Vos, S.C. De Keersmaecker, Functional analysis of 
+Lactobacillus rhamnosus GG pili in relation to adhesion and immunomodulatory 
+interactions with intestinal epithelial cells, Appl. Environ. Microbiol. 78 (1) (2012) 
+185–193.
+[21] X. Cao, L. Jin, H. Yang, L. Yu, Q. Wang, M. Yu, Q. Guo, X. Chen, Z. Mao, Nanozyme- 
+enhanced probiotic metabolites targeting tissue-resident memory T cells for 
+inflammatory bowel disease therapy, Chem. Eng. J. 520 (2025) 165970.
+[22] H. Song, J. Zhang, J. Qu, J. Liu, P. Yin, G. Zhang, D. Shang, Lactobacillus 
+rhamnosus GG microcapsules inhibit Escherichia coli biofilm formation in 
+coculture, Biotechnol. Lett. 41 (2019) 1007–1014.
+[23] P. Ahmadi, M. Mahmoudi, H. Rafatpanah, Z. Rezaieyazdi, M. Ahmadi-Khorram, 
+Z. Javanmardi, N.S. Tabasi, S.A. Esmaeili, The impacts of Lactobacillus delbrueckii 
+and Lactobacillus rhamnosus to promote in vitro anti-inflammatory profile of RA- 
+macrophages, Food Sci. Nutr. 13 (3) (2025) e70068.
+[24] T. Cui, B. Li, Z. Lou, K. Yang, K. Yan, D. Ding, H. Ge, Oral administration of 
+nanozyme-armed probiotic Escherichia coli Nissle 1917 with ROS scavenging for 
+inflammatory bowel disease therapy, Chem. Eng. J. 519 (2025) 164949.
+[25] J. Zou, C. Xia, M. Yao, X. Pan, S. Zheng, Y. Lin, X. Zhao, Y. Wang, Y. Chen, M. Lan, 
+An anti-miR-301a and zinc coordination driven nanozyme loaded in nanoparticle 
+for oral therapy of inflammatory bowel disease based on colitis microenvironment 
+regulation, Chem. Eng. J. 511 (2025) 161997.
+[26] Y. Cai, J. Wu, L. Peng, J. Ren, J. Yang, S. Yang, W. Zuo, J. Yang, Antioxidative 
+nanozyme-fucoidan embedded nanoclay gel mediated mitochondrial energy 
+recovery and bile acid balance against ulcerative colitis, Chem. Eng. J. 522 (2025) 
+167765.
+[27] M. Li, Q. Ding, S. Hu, M. Qi, J. Sun, Y. Shi, B. Dong, K. Qian, X. Sun, Z. Cheng, 
+A triple-responsive nanozyme platform of AgAu-CeO2 heterojunction integrated 
+with probiotics for precision antibacterial therapy in periodontitis, Biomaterials 
+327 (2025) 123731.
+[28] G. Wei, Q. Liu, X. Wang, Z. Zhou, X. Zhao, W. Zhou, W. Liu, Y. Zhang, S. Liu, 
+C. Zhu, A probiotic nanozyme hydrogel regulates vaginal microenvironment for 
+Candida vaginitis therapy, Sci. Adv. 9 (20) (2023) eadg0949.
+[29] Y. Chang, K. Wang, M. Zhou, Y. Miao, X. Wu, Q. Chen, Y. Zhang, X. Zhu, D. Mao, 
+Y. Zhang, Bioencapsulation of probiotics with self-assembled DNA capsules for the 
+treatment of inflammatory bowel diseases, Chem. Eng. J. 499 (2024) 155527.
+[30] J.W.K. Ku, Y.-H. Gan, New roles for glutathione: modulators of bacterial virulence 
+and pathogenesis, Redox Biol. 44 (2021) 102012.
+[31] R. Zeng, Q. Zhong, R. Zhao, M. Qiu, Y. Peng, H. Guo, C. Sun, B. Zhang, X. Yan, 
+Y. Wang, Precise strain tuning of PtPdRhNi nanozyme boosts multi-pathogen and 
+multi-model antibacterial therapy, Adv. Mater. 38 (11) (2026) e18526.
+[32] X. Qi, X. Ge, X. Chen, E. Cai, Y. Xiang, H. Xu, Y. Li, Y. Lan, Y. Shi, H. Deng, An 
+immunoregulation hydrogel with controlled hyperthermia-augmented oxygenation 
+and ROS scavenging for treating diabetic foot ulcers, Adv. Funct. Mater. 34 (33) 
+(2024) 2400489.
+[33] E. Al-Harthy, M.A. Shaker, A.A. Yakout, Synergetic enhancement of copper and 
+manganese dioxide nanoparticles with the biobased chitosan-crosslinked-graphene 
+nanocomposite for potential adsorptive remediation of tetracycline antibiotics 
+from food samples, Mater. Today Commun. 47 (2025) 112930.
+[34] I. Amaral, P. Granja, M. Barbosa, Chemical modification of chitosan by 
+phosphorylation: an XPS, FT-IR and SEM study, J. Biomater. Sci. Polym. Ed. 16 
+(12) (2005) 1575–1593.
+[35] Y. Dong, C. Xu, J. Wang, M. Wang, Y. Wu, Y. Ruan, Determination of degree of 
+substitution for N-acylated chitosan using IR spectra, Sci. China Ser. B Chem. 44 
+(2001) 216–224.
+[36] F.S. Pereira, D.L. da Silva Agostini, A.E. Job, E.R.P. Gonz´alez, Thermal studies of 
+chitin–chitosan derivatives, J. Therm. Anal. Calorim. 114 (2013) 321–327.
+[37] W. Xu, W. Yang, Y. Dai, J. Fei, H. Fan, Y. Zheng, J. Hong, J. Liu, W. Zhu, X. Zhou, 
+Dual-mode fluorescence and colorimetric determination of acetylcholinesterase 
+accomplished by BSA-MnO2 QDs with oxidase-mimetic activity, Sens. Actuators B 
+382 (2023) 133503.
+[38] M. Papizadeh, H. Nahrevanian, M. Rohani, S.N. Hosseini, S.A. Shojaosadati, 
+Lactobacillus rhamnosus Gorbach-Goldin (GG): a top well-researched probiotic 
+strain, J. Med. Bacteriology 5 (5–6) (2016) 46–59.
+[39] C. El-Chami, R. Choudhury, W. Mohammedsaeed, A.J. McBain, V. Kainulainen, 
+S. Lebeer, R. Satokari, C.A. O’Neill, Multiple proteins of Lacticaseibacillus 
+rhamnosus GG are involved in the protection of keratinocytes from the toxic effects 
+of Staphylococcus aureus, Front. Microbiol. 13 (2022) 875542.
+[40] A.R. Araujo, M.L.M. Saraiva, J.L. Lima, Determination of total and oxidized 
+glutathione in human whole blood with a sequential injection analysis system, 
+Talanta 74 (5) (2008) 1511–1519.
+[41] J. Li, W. Yi, Y. Luo, K. Yang, L. He, C. Xu, L. Deng, D. He, GSH-depleting and H2O2- 
+self-supplying hybrid nanozymes for intensive catalytic antibacterial therapy by 
+photothermal-augmented co-catalysis, Acta Biomater. 155 (2023) 588–600.
+[42] E.P. Gray, C.L. Browning, C.A. Vaslet, K.D. Gion, A. Green, M. Liu, A.B. Kane, R. 
+H. Hurt, Chemical and colloidal dynamics of MnO2 nanosheets in biological media 
+relevant for nanosafety assessment, Small 16 (21) (2020) 2000303.
+[43] M.B. Gorbet, M.V. Sefton, Endotoxin: the uninvited guest, Biomaterials 26 (34) 
+(2005) 6811–6817.
+[44] A.B. Shah, S.H. Shim, Human microbiota peptides: important roles in human 
+health, Nat. Prod. Rep. 42 (1) (2025) 151–194.
+[45] J. Brandi, S. Cheri, M. Manfredi, C. Di Carlo, V. Vita Vanella, F. Federici, 
+E. Bombiero, A. Bazaj, E. Rizzi, L. Manna, Exploring the wound healing, anti- 
+inflammatory, anti-pathogenic and proteomic effects of lactic acid bacteria on 
+keratinocytes, Sci. Rep. 10 (1) (2020) 11572.
+[46] J.H. Jeong, C.Y. Lee, D.K. Chung, Probiotic lactic acid bacteria and skin health, 
+Crit. Rev. Food Sci. Nutr. 56 (14) (2016) 2331–2337.
+[47] S. Doron, D.R. Snydman, Risk and safety of probiotics, Clin. Infect. Dis. 60 (2015) 
+S129–S134.
+[48] M.E. Sanders, L.M. Akkermans, D. Haller, C. Hammerman, J.T. Heimbach, 
+G. H¨ormannsperger, G. Huys, Safety assessment of probiotics for human use, Gut 
+Microbes 1 (3) (2010) 164–185.
+[49] V. Silva, L. Almeida, V. Gaio, N. Cerca, V. Manageiro, M. Caniça, J.L. Capelo, 
+G. Igrejas, P. Poeta, Biofilm formation of multidrug-resistant MRSA strains isolated 
+from different types of human infections, Pathogens 10 (8) (2021) 970.
+[50] Q. Peng, X. Tang, W. Dong, N. Sun, W. Yuan, A review of biofilm formation of 
+Staphylococcus aureus and its regulation mechanism, Antibiotics 12 (1) (2022) 12.
+P. Liu et al.                                                                                                                                                                                                                                       
+Chemical Engineering Journal 537 (2026) 176316 
+13

@@ -1,0 +1,1046 @@
+Gold nanoparticle-loaded multifunctional Ti3C2Tx MXene nanosheets 
+fabricated by in situ reduction to effectively enhance their catalase-like 
+activity for tumor therapy
+Yuhao Guo a,b, Jinyu Wang a, Xiaomei Wu b, Qianqian Qiao b, Tao Liao a, Linwei Li b,  
+Ziqiang Xu b, Di-Wei Zheng c,d,**, Ying Kuang a,*, Wenqian Yu b,*, Cao Li a,b,***
+a Key Laboratory of Fermentation Engineering (Ministry of Education), Cooperative Innovation Center of Industrial Fermentation (Ministry of Education & Hubei 
+Province), National “111” Center for Cellular Regulation and Molecular Pharmaceutics, Glyn O. Phillips Hydrocolloid Research Centre at HBUT, School of Life and 
+Health Sciences, Hubei University of Technology, Wuhan 430068, PR China
+b Ministry-of-Education Key Laboratory for the Green Preparation and Application of Functional Materials, Hubei Key Laboratory of Polymer Materials, College of Health 
+Science and Engineering, School of Materials Science and Engineering, Hubei University, Wuhan 430062, PR China
+c State Key Laboratory of Biochemical Engineering, Institute of Process Engineering, Chinese Academy of Sciences, Beijing 100190, PR China
+d Key Laboratory of Biopharmaceutical Preparation and Delivery, Chinese Academy of Sciences, Beijing 100190, PR China
+A R T I C L E  I N F O
+Keywords:
+MXene
+In situ reduction
+Nanozyme
+Cascade enzyme system
+Combination therapy
+A B S T R A C T
+Designing novel, high-performance nanozymes is essential for developing biocatalytic therapeutics, a promising 
+therapeutic approach. In this work, gold nanoparticles (Au NPs)-loaded Ti3C2Tx MXene nanosheets (Ti3C2Tx-Au) 
+are prepared by in situ reduction and then modified with polyethylene glycol (PEG) to obtain a multifunctional 
+anticancer cascade enzyme system, Ti3C2Tx-Au-PEG (TANP). The photothermal properties of Ti3C2Tx in the near- 
+infrared (NIR) region allow for its use in photothermal therapy (PTT). The complexation of Au NPs with Ti3C2Tx 
+significantly enhances the catalase-like (CAT) activity of TANP, while incubating the glucose oxidase (GOx)- and 
+peroxidase (POD)-like properties of TANP. The strong CAT-like property of TANP allows it to decompose the 
+H2O2 overexpressed in cancer cells into O2, which alleviates hypoxia. It can also be used for glucose catabolism in 
+cancer cells, i.e., GOx-like induced starvation therapy. H2O2, one of the glucose degradation products, can be 
+supplied to TANP to generate O2 and POD-like induced reactive oxygen species (ROS) generation to kill cancer 
+cells. Density functional theory (DFT) calculations provide possible reasons for the enhanced CAT-like activity of 
+Ti3C2Tx-Au. Photothermal can enhance enzyme activity and can also be combined with biocatalytic therapy to 
+achieve good therapeutic effects.
+Introduction
+Enzymes are a class of biocatalysts that control many catalytic pro­
+cesses such as metabolism, nutrition, and energy conversion in organ­
+isms, and most reactions closely related to life processes are enzyme- 
+catalyzed reactions [1]. In cancer therapy, enzymes can be used as 
+therapeutic targets, tools, and biocatalytic drugs [2–4]. For example, 
+proteolysis-targeting chimera (PROTAC) protein degraders, which have 
+become very popular in recent years, use their special molecular struc­
+ture to bind target proteins to E3 ligase to degrade them [5,6]. Glucose 
+oxidase (GOx) effectively depleted glucose in cancer cells, providing an 
+approach to starvation therapy [7,8]. However, biocatalytic drugs based 
+on natural enzymes have been limited in their further research and 
+application by inherent defects such as poor stability, susceptibility to 
+degradation, immunogenicity, and lack of targeting [4,9]. As a result, 
+since the first report of horseradish peroxidase (HRP)-like activity of 
+* Corresponding authors.
+** Corresponding author at: State Key Laboratory of Biochemical Engineering, Institute of Process Engineering, Chinese Academy of Sciences, Beijing 100190, PR 
+China.
+*** Corresponding author at: Key Laboratory of Fermentation Engineering (Ministry of Education), Cooperative Innovation Center of Industrial Fermentation 
+(Ministry of Education & Hubei Province), National “111” Center for Cellular Regulation and Molecular Pharmaceutics, Glyn O. Phillips Hydrocolloid Research 
+Centre at HBUT, School of Life and Health Sciences, Hubei University of Technology, Wuhan 430068, PR China.
+E-mail addresses: dwzheng@ipe.ac.cn (D.-W. Zheng), lazywawa@163.com (Y. Kuang), wenqianyu@hubu.edu.cn (W. Yu), licao0415@163.com (C. Li). 
+Contents lists available at ScienceDirect
+Nano Today
+journal homepage: www.elsevier.com/locate/nanotoday
+https://doi.org/10.1016/j.nantod.2025.102848
+Received 28 January 2025; Received in revised form 22 May 2025; Accepted 26 June 2025  
+Nano Today 65 (2025) 102848 
+Available online 28 June 2025 
+1748-0132/© 2025 Elsevier Ltd. All rights are reserved, including those for text and data mining, AI training, and similar technologies. 
+
+Fe3O4 nanoparticles (NPs) by Yan et al. [10], researchers have focused 
+on discovering and developing novel enzyme mimics or nanozymes, and 
+several anticancer nanomedicines have been developed based on them 
+[11–13]. For example, nanozymes with peroxidase (POD)-like activity 
+can convert H2O2 that is overexpressed in the tumor microenvironment 
+(TME) into reactive oxygen species (ROS) such as hydroxyl radicals 
+(•OH), which have a strong oxidative capacity and can kill cancer cells 
+[14,15]. Catalase (CAT) mimetics, on the other hand, can reduce H2O2 
+to O2 to alleviate tumor hypoxia, thereby enhancing the efficacy of many 
+oxygen-dependent therapies [16,17]. In most cases, nanozymes are 
+multi-enzyme in nature and can also be combined with other natural 
+enzymes or enzyme mimics to form cascade enzyme systems, or in 
+combination with other therapies to more effectively counteract the 
+adverse effects of a particular TME on the treatment and enhance 
+therapeutic efficacy [18,19].
+Two-dimensional (2D) transition metal carbides, nitrides, and car­
+bonitrides (MXenes) are among today’s hottest materials and were 
+selected by the International Union of Pure and Applied Chemistry 
+(IUPAC) as one of the IUPAC’s 2024 Top Ten Emerging Technologies in 
+Chemistry [20]. MXenes have unique physicochemical properties 
+including a large specific surface area, flexibility, attractive ceramic 
+properties, and electrical conductivity [21,22], which make them 
+extensively researched in the fields of energy storage [23,24], environ­
+mental protection [25,26], catalysis [27,28], sensing [29,30], and 
+electromagnetic shielding and absorption [31,32]. In addition, recent 
+years have seen an increase in research efforts exploring the potential of 
+MXene in the field of biomedical applications [33–35]. Like many other 
+2D materials, such as graphene, black phosphorus, and 2D transition 
+metal sulfides, MXene has photothermal properties [36,37]. Therefore, 
+to our knowledge, the first time MXene was used in cancer therapy was 
+in 2017 when Shi’s group used Ti3C2Tx nanosheets for photothermal 
+therapy (PTT) [38,39]. This is one of the most important applications of 
+MXene in disease treatment [38–41]. Interestingly, transition metal el­
+ements such as Ti, V, and Nb are often found in lower valence states in 
+MXenes. For example, in the first MXene prepared, Ti3C2Tx, Ti is present 
+in + 2 and + 3 valences instead of + 4 [42,43]. Thus, MXenes tend to be 
+reductive. Combined with their 2D structures, the common MXenes 
+represented by Ti3C2Tx have good free-radical and ROS scavenging 
+abilities [44–46]. Ti3C2Tx, in particular, can decompose H2O2 into H2O 
+and O2, exhibiting CAT-like behavior [42,43]. Therefore, we proposed 
+the hypothesis that Ti3C2Tx MXene is a CAT mimetic and constructed 
+Ti3C2Tx nanosheets as the basis for a cascade enzyme system Ti3C2Tx-­
+GOx/DOX-PEG, which is loaded with both GOx and the anticancer drug 
+doxorubicin (DOX) [42,43]. The CAT-like properties of Ti3C2Tx enable it 
+to decompose the overexpressed H2O2 in TME to produce O2 and alle­
+viate hypoxia, thereby sensitizing DOX for chemotherapy. In addition, 
+O2 can also be supplied to GOx for use in starvation therapy. One of the 
+degradation products of glucose, H2O2, can in turn be supplied to 
+Ti3C2Tx. Combination therapy introduces a mild PTT of Ti3C2Tx at low 
+doses. Yang’s group also reported a thermoelectric heterojunction 
+named Pt-TiO2-x/Ti3C2Tx-PEG based on Ti3C2Tx, which utilizes its 
+CAT-like property to supply O2 to cancer cells, for the generation of 1O2 
+and •O2
+- by ultrasound and photo-thermoelectric catalysis, which 
+combine with PTT to kill cancer cells [47]. Zhang et al. precisely 
+anchored self-assembled S-Cu(I)-S sites to Ti3C2Tx to construct a nano­
+modulator that can trigger multiple tumor combination therapies via a 
+photothermal-enhanced cascade modulation pathway [48].
+However, although Ti3C2Tx MXene has CAT-like properties that can 
+alleviate hypoxia in the TME to a certain extent, its enzymatic activity is 
+weak, and its ability to remodel hypoxic TME is limited [42,43]. 
+Conversely, GOx, as a natural enzyme, has inherent defects such as poor 
+stability and susceptibility to inactivation, which make it subject to 
+many limitations when participating in the construction of anticancer 
+cascade enzyme systems [4,9]. As one of the first nanomaterials to be 
+systematically investigated, gold nanoparticles (Au NPs) or colloidal 
+gold have also been shown to possess multi-enzymatic activities, 
+including GOx- and POD-like activities [49,50]. As one of the precious 
+metals, gold is widely used in biodetection and anticancer fields due to 
+its excellent electrochemical properties and low biotoxicity [51,52]. 
+Therefore, replacing GOx with Au NPs to construct CAT/GOx-like 
+anticancer cascade enzyme systems in combination with Ti3C2Tx is a 
+possible approach that can overcome the inherent defects of GOx. And 
+compounding different conductors or semiconductors with very 
+different structures and catalytic activities is one of the ways to change 
+the catalytic ability of a material [53–55]. Therefore, we also expect that 
+compounding Au NPs with Ti3C2Tx will lead to more interesting 
+nanozymes.
+Due to the reducing nature of Ti3C2Tx, Zhang et al. recently reported 
+an in situ reduction method for depositing various metals such as Au, Pd, 
+Ag, and Pt on Ti3C2Tx [56]. We have independently discovered this 
+method and used it to prepare Au NPs-loaded Ti3C2Tx (Ti3C2Tx-Au) in 
+this work. The complexation of Au NPs with Ti3C2Tx imparts GOx- and 
+POD-like properties to Ti3C2Tx-Au. This enables the construction of a 
+CAT/GOx/POD-like cascade enzyme system. Introducing Au NPs 
+dramatically enhances the CAT-like activity of Ti3C2Tx. This could 
+effectively alleviate the adverse effects of hypoxia on the treatment. We 
+present a possible process of Ti3C2Tx-Au-catalyzed H2O2 decomposition 
+for oxygen production and a possible mechanism for its enhanced 
+CAT-like activity by Density functional theory (DFT) calculations, i.e., 
+Au NPs act as a bridge for electron transfer during the reaction. As 
+shown in Scheme 1, we further modified Ti3C2Tx-Au with polyethylene 
+glycol (PEG) to obtain Ti3C2Tx-Au-PEG (TANP), which is more suitable 
+for in vivo applications. Once TANP accumulates in the tumor and enters 
+the cancer cell through the Enhanced Permeability and Retention effect, 
+it can catalyze enhanced enzymatic cascade reactions inside the cell. The 
+reactions sustain glucose consumption and oxygen production to alle­
+viate hypoxia, and ROS production, which can also be enhanced by the 
+photothermal effect. As a result, TANP enables highly effective com­
+bined photothermal/biocatalytic therapy. This work is expected to 
+provide new ideas for developing novel multifunctional nanozymes with 
+anticancer activity.
+Results and discussion
+Preparation and characterization of TANP
+The nanoscale cascade enzyme system, TANP, was prepared from 
+bulk Ti3AlC2 ceramics (Scheme 1). First, monolayer Ti3C2Tx MXene with 
+surface terminal groups Tx (–OH, –F, and –O) was obtained by etching 
+the Al layer from the Ti3AlC2 with LiF and HCl, and then the obtained 
+Ti3C2Tx MXene dispersion was placed in an ice bath under N2 atmo­
+sphere, and the small-sized Ti3C2Tx MXene nanosheets were prepared 
+after sufficient ultrasonic treatment. The Ti3C2Tx MXene nanosheets 
+loaded with gold NPs (Ti3C2Tx-Au) were prepared by adding HAuCl4 to 
+the Ti3C2Tx dispersion under strong stirring, which utilized the reducing 
+property of Ti3C2Tx to reduce Au(III) and immobilize it on the surface in 
+the form of gold monomers. Ti3C2Tx and Ti3C2Tx-Au were further ami­
+nated to give Ti3C2Tx-NH2 and Ti3C2Tx-Au-NH2, which were then 
+modified with PEG to produce TNP and TANP, respectively. Trans­
+mission electron microscopy (TEM) and high-resolution TEM (HRTEM) 
+images shown in Fig. 1a-d indicate that the transverse sizes of Ti3C2Tx 
+and TNP nanosheets are hundreds of nanometers in size. To further 
+determine the 2D structure of Ti3C2Tx, we also obtained its atomic force 
+microscopy (AFM) image and measured its thickness to be a~1.3 nm 
+(Fig. 1e). The HRTEM and TEM images of Ti3C2Tx-Au and TANP are 
+shown in Fig. 1f and g, and Fig. 1i and j, respectively. The magnified 
+image (Fig. 1h) shows that the interplanar crystal spacing of the NPs is 
+consistent with the Au (100) crystal plane. Therefore, it can be assumed 
+that they are Au NPs. The presence and absence of the corresponding 
+elements in Ti3AlC2 and Ti3C2Tx were also confirmed by EDS (Fig. 1k 
+and l and Fig. S1).
+The hydrodynamic sizes of Ti3C2Tx MXene and TANP, as measured 
+Y. Guo et al.                                                                                                                                                                                                                                     
+Nano Today 65 (2025) 102848 
+2 
+
+by dynamic light scattering (DLS) were ~208.1 and 296.2 nm, respec­
+tively, with a polydispersity index (PDI) of 0.261 and 0.187 (Fig. 1m). 
+The zeta-potentials of the products at each stage are shown in Fig. 1n. 
+Due to the negative charge of the Au NP, the potential of Ti3C2Tx-Au 
+(~−29.9 mV) is slightly decreased compared to Ti3C2Tx (~−26.4 mV). 
+However, after amino modification, the potential of Ti3C2Tx-Au-NH2 
+increased to ~+ 11.6 mV. After protecting the nanosheets with PEG, the 
+potential of the obtained TANP decreased to ~−10.0 mV. Fig. 1o shows 
+the XRD patterns of Ti3C2Tx and Ti3C2Tx-Au. Compared with the XRD 
+pattern of Ti3AlC2 (Fig. S2a), the (104) peak at 2θ ≈38◦attributed to the 
+Al layer disappeared from the pattern of Ti3C2Tx. The spectrum of 
+Ti3C2Tx-Au also showed the peak of Au (PDF#04–0784). These results 
+indicate the successful preparation of Ti3C2Tx and Ti3C2Tx-Au.
+The Fourier transform infrared (FT-IR) spectra of Ti3AlC2 and the 
+nanosheets are shown in Fig. 1p. The spectra reveal the vibrational 
+peaks of the hydroxyl groups that were introduced during the prepara­
+tion of Ti3C2Tx (~3442 and 1597 cm−1). The Ti3C2Tx-Au-NH2, TNP, and 
+TANP spectra also show C–H asymmetric stretching peaks at 
+~2987–2884 cm−1 and N–H and C–N stretching vibrational peaks at 
+~3410 and 1180–1120 cm−1, which were introduced by APTES modi­
+fication. Following further PEG modification, peaks of –O– appeared 
+in the spectra of TNP and TANP at ~1398–1332 cm−1. The presence of 
+other peaks in the FT-IR spectra, including those from –NH and 
+Si–O–Si bonds, confirms that the Ti3C2Tx surface modification was 
+successful. Fig. 1q shows the TGA curves of Ti3C2Tx, Ti3C2Tx-Au, 
+Ti3C2Tx-Au-NH2, and TANP. The modification leads to an increase in the 
+organic content, which also leads to an increase in the thermal weight 
+loss of the nanosheets at elevated temperatures. The weight loss value of 
+Ti3C2Tx-Au increased from ~7.1 % to ~10.1 % for Ti3C2Tx at 600 ◦C, 
+which was due to the thermal decomposition of residual ascorbic acid 
+during the synthesis process [57]. Based on the calculations, the content 
+of –NH2 for Ti3C2Tx-Au-NH2 was ~6.2 wt%. At 600 ◦C, the weight loss 
+of TANP further increased to ~22.6 %. From the thermal weight loss 
+data, the PEG content can be calculated to be ~1.83 wt%. Fig. 1r and 
+Fig. S3 show the XPS spectra of the nanosheets before and after modi­
+fication. As the modification proceeds, the signal of Ti–C decreases, 
+while the signal of Ti–O increases, indicating an oxidation reaction. In 
+addition, Au and N signals appear in the spectra of TANP that were not 
+present in the spectra of Ti3C2Tx, and the binding energies of Ti and C 
+shift slightly. Compared to Ti3C2Tx, the intensity of Ti–C 2p3/2 in 
+Ti3C2Tx-Au decreased, indicating the decrease of Ti3C2Tx, which was 
+related to the oxidation of Ti3C2Tx (Fig. S3a and b). The presence of Au 
+4 f and N 1 s signals indicated successful gold loading and amino 
+modification, respectively (Fig. S3c and d). Compared to Ti3C2T­
+x-Au-NH2, the peak intensity of C–C in TANP was significantly 
+enhanced, indicating successful PEG coating (Fig. S3e and f).
+In addition, the stability of TANP in deionized (DI) water and an 
+RPMI 1640 medium containing 10 % fetal bovine serum (FBS) was 
+evaluated. After five days of immersion and shaking in the medium, the 
+particle size of TANP, as determined by DLS, was still ~200–300 nm 
+(Fig. S2b). The decrease in particle size may be related to nanoparticle 
+oxidation and structural disruption. This study confirmed that TANP 
+remains non-agglomerated in different media, making it suitable for 
+biological studies.
+Photothermal properties
+As shown in Fig. S4a, the Ti3C2Tx dispersions exhibit broad absorp­
+tion with the maximum absorption at ~772 nm. Following modifica­
+tion, the maximum absorption peaks of TNP (Fig. S4b) and TANP 
+(Fig. S4c) shift slightly toward the red. There is an obvious peak at 
+~600 nm for TANP compared to TNP, which should be the absorption of 
+the Au NPs. Absorbance at 808 nm increases linearly with increasing 
+Ti3C2Tx concentration (Fig. S4b and c). Using the Lambert-Beer law, the 
+extinction coefficients (ε) of TNP and TANP at 808 nm were calculated 
+to be ~23.7 (Fig. S4d) and 18.1 L•g−1•cm−1 (Fig. 2a), respectively 
+(calculated as Ti3C2Tx concentration). The partial oxidation of Ti3C2Tx 
+during Au NP modification may have affected its NIR light absorption. 
+Nevertheless, the results still indicate that TNP and TANP have photo­
+thermal potential in the NIR region.
+Next, the photothermal properties of TNP and TANP dispersions 
+were investigated under 808 nm laser irradiation. The photothermal 
+Scheme 1. Schematic diagram of the preparation of TANP and its mechanism of catalyzing cascade enzyme reaction and synergizing with PTT for cancer therapy in 
+cancer cells.
+Y. Guo et al.                                                                                                                                                                                                                                     
+Nano Today 65 (2025) 102848 
+3 
+
+Fig. 1. HRTEM images of (a) Ti3C2Tx, (c and d) TNP, (f) Ti3C2Tx-Au, and (i and j) TANP. TEM images of (b) Ti3C2Tx and (g) Ti3C2Tx-Au. h) Magnified HRTEM image 
+of a single Au NP. (e) AFM image of Ti3C2Tx. EDS mapping of (k) Ti3C2Tx and (l) Ti3C2Tx-Au. (m) Size distribution diagrams, (n) zeta-potentials, (o) XRD patterns, and 
+(q) TGA curves of Ti3C2Tx, Ti3C2Tx-Au, Ti3C2Tx-Au-NH2, and TANP. (p) FT-IR spectra of Ti3AlC2, Ti3C2Tx, Ti3C2Tx-Au, Ti3C2Tx-Au-NH2, TNP, and TANP. (r) XPS 
+patterns of Ti3C2Tx, Ti3C2Tx-Au, Ti3C2Tx-Au-NH2, and TANP.
+Y. Guo et al.                                                                                                                                                                                                                                     
+Nano Today 65 (2025) 102848 
+4 
+
+curves showed a concentration-dependent increase in temperature for 
+both dispersions, indicating that they can efficiently convert laser en­
+ergy into heat (Fig. S4e and Fig. 2b). After 15 min of irradiation, the 
+temperature of the TNP dispersion (50 μg•mL−1, calculated as Ti3C2Tx 
+concentration) increased by ~40.2 ◦C at a power density of 1.0 W•cm−2, 
+which was ~39.2 ◦C for TANP. We also investigated the photothermal 
+effect of both dispersions (50 μg•mL−1, calculated as Ti3C2Tx concen­
+tration) at different laser power densities. The results showed significant 
+power-dependent photothermal properties, with temperature increases 
+of ~48.7 and 44.8 ◦C for TNP and TANP, respectively, within 15 min 
+(Fig. S4f and Fig. 2c). Both dispersions were also exposed to the laser for 
+900 s, followed by 900 s without the laser to test their photothermal 
+cycling properties (Fig. S4g and Fig. 2d). There was no degradation in 
+performance over five on/off cycles, demonstrating their high photo­
+thermal stability.
+As shown in Fig. S4h and i and Fig. 2e and f, the systematic heat 
+transfer time constants (τs) at 808 nm were calculated to be ~318.3 and 
+349.3 s, respectively, for TNP and TANP, based on the linear time data of 
+the negative natural logarithm of the cooling cycle versus the driving 
+force temperature obtained from the cooling phase of the nanosheets. 
+The photothermal conversion efficiencies (η) at 808 nm were ~42.2 % 
+and 30.9 %, respectively. The photothermal efficiency decreased 
+slightly due to the oxidation of Ti3C2Tx caused by the growth of Au NPs 
+on its surface. These results also suggest that TANP has potential as a 
+PTT reagent.
+In vitro CAT-like activity
+First, the ability of TANP to decompose H2O2 was investigated using 
+a catalase assay kit. TNP without Au NPs was also used as a reference. 
+The kit provided H2O2 to oxidize the substrate under the catalytic action 
+of peroxidase, and the maximum absorbance of the product was 520 nm 
+[58]. As shown in Fig. 3a and Fig. S5a, the higher concentrations of 
+Ti3C2Tx result in lower absorbance at 520 nm. The corresponding ab­
+sorption spectra are shown in Fig. S6a and b. This indicates that Ti3C2Tx 
+can decompose H2O2, which is in line with previous reports [59], and 
+also shows that TANP can decompose more H2O2 than TNP at the same 
+Ti3C2Tx concentration.
+We further investigated the CAT-like activities of TNP and TANP. For 
+this purpose, we co-incubated different concentrations of TNP and TANP 
+(calculated as Ti3C2Tx concentration) with different concentrations of 
+H2O2 in PBS at pH 7.4 and measured the change in oxygen concentration 
+using a dissolved oxygen meter. As shown in Fig. S5b and Fig. 3b, both 
+TNP and TANP increased the O2 concentration in the dispersion. There 
+was a positive correlation between Ti3C2Tx concentration and the O2 
+concentration at a fixed H2O2 concentration (200 mM). This suggests 
+that both nanosheets are effective in converting H2O2 to O2, but TANP is 
+more effective. At a Ti3C2Tx concentration of 200 μg•mL−1, the change 
+in O2 concentration in the TNP dispersion was also ~2.4 μg•mL−1 
+within 450 s, which was ~10.4 μg•mL−1 in the TANP dispersion. 
+Fig. S5c and Fig. 3c also show that the change in O2 concentration in the 
+dispersion was positively correlated with the concentration of H2O2. 
+Similarly, TANP produced more oxygen than TNP at the same H2O2 
+concentration. The Michaelis-Menten curves (Fig. S5d and Fig. 3d) and 
+Lineweaver-Burk plots (Fig. S5e and Fig. 3e) show that both TNP and 
+TANP exhibit CAT-like behavior with optimized steady-state kinetics 
+using H2O2 as a substrate at pH 7.4 and 37 ◦C. The Michaelis-Menten 
+constants (Km) are ~2580 and 578 mM for TNP and TANP, respec­
+tively. And the maximum H2O2 degradation rate (Vmax) was ~6.17 and 
+4.28 mg•L−1•min−1 for TNP and TANP, respectively. The decrease in 
+the maximum reaction rate was due to the occupation of some active 
+sites by Au NPs. Upon binding to Au NPs, the CAT-like activity of TANP 
+was significantly enhanced compared to that of TNP.
+We also investigated the ability of TNP and TANP to decompose 
+H2O2 into oxygen at 42 ◦C, pH 7.4/5.5, and 37 ◦C, pH 5.5. At the same 
+concentration, both TNP and TANP exhibited stronger catalytic activity 
+at higher temperatures (Fig. S7a). Both TNP and TANP exhibited CAT- 
+like activity in a slightly acidic environment at pH 5.5; however, this 
+activity was weaker than that observed at pH 7.4 (Fig. S7b), which is 
+consistent with those reported for most CAT mimetics [16].
+We also investigated the oxygen-generating capacity of TNP and 
+TANP using H2O2 as a substrate with the oxygen probe [Ru(dpp)3]Cl2. 
+As shown in Fig. S8 and Fig. 3g, the fluorescence intensity of [Ru(dpp)3] 
+Cl2 (Ex ≈625 nm) decreased with the increasing TNP or TANP co-in­
+cubation time from 0 to 20 min at pH 7.4 in the presence of H2O2, 
+whereas there was no significant decrease in the fluorescence intensity 
+in the pure H2O2 and pure TANP groups. In the presence of H2O2, the 
+fluorescence intensity of TANP decreased more significantly than that of 
+Fig. 2. (a) Normalized absorbance intensity of aqueous TANP suspensions at λ = 808 nm at different concentrations. (b) Photothermal heating curves of aqueous 
+TANP suspensions at different concentrations (calculated as Ti3C2Tx concentration) under laser irradiation (1.0 W•cm−2) and (c) aqueous TANP suspensions (Ti3C2Tx 
+concentration of 50 μg•mL−1) under laser irradiation at different power densities. (d) Heating and cooling curve of an aqueous dispersion of TANP (Ti3C2Tx con­
+centration of 50 μg•mL−1) for five laser on-off cycles under laser irradiation (1.0 W•cm−2). (e and f) Calculation of the photothermal conversion efficiency of TANP at 
+808 nm. Laser wavelength: 808 nm. Units of concentration and power are μg•mL−1 and W•cm−2, respectively. T0 = 20 ◦C.
+Y. Guo et al.                                                                                                                                                                                                                                     
+Nano Today 65 (2025) 102848 
+5 
+
+(caption on next page)
+Y. Guo et al.                                                                                                                                                                                                                                     
+Nano Today 65 (2025) 102848 
+6 
+
+TNP during the same incubation period, again confirming that TANP has 
+a greater ability to scavenge H2O2 and produce O2 than TNP. Similar to 
+the results obtained with the dissolved oxygen meter, as shown in 
+Fig. S8e and f and Fig. 3h and i, the nanosheets produced O2 slightly 
+more efficiently at high temperatures (42 ◦C) than at low temperatures 
+(37 ◦C), and more efficiently at pH 7.4 than at pH 5.5. These results 
+suggest that TANP is superior to TNP in terms of oxygen production 
+regardless of changes in temperature or pH.
+To demonstrate that it is the special structure of TANP rather than 
+the simple addition of TNP to Au NPs that leads to their enhanced CAT- 
+like activity, we synthesized Au NPs of the same size as those grown on 
+TANP by conventional methods. Fig. S9a, b, and S9c show their TEM and 
+EDS images, respectively. Fig. S9d shows their UV-Vis spectra. The re­
+sults of the catalase kit (Fig. S9e), the UV-Vis spectra of the kit (Fig. S6c), 
+and the dissolved oxygen meter tests (Fig. S9f) show that the Au NPs 
+alone do not have a strong CAT-like activity, and the introduction of the 
+AuNPs alone will not significantly enhance the ability to decompose 
+H2O2 to produce oxygen.
+To elucidate the mechanism by which TANP exhibits stronger CAT- 
+like activity than TNP, we performed DFT calculations. To simplify the 
+process, we omitted PEG and used only Ti3C2Tx and Ti3C2Tx-Au for the 
+calculations. The Ti3C2Tx and Ti3C2Tx-Au models are shown in Fig. 3k 
+and l, respectively. First, we analyzed their energy distribution in the Z 
+coordinate direction (Fig. 3m and n). For Ti3C2Tx, the Fermi level is 
+0.86 eV, the work function is 4.21 eV, and the vacuum level is 5.07 eV. 
+In contrast, Ti3C2Tx-Au has a slightly higher Fermi level of 0.99 eV, a 
+work function of 3.95 eV, and a vacuum level of 4.94 eV. Comparing the 
+two, the Fermi level of Ti3C2Tx-Au increases after the introduction of Au 
+NPs, indicating a change in the electron-filling state. Meanwhile, the 
+lower work function of Ti3C2Tx-Au indicates improved electron escape 
+ability, which may be beneficial for electron transport.
+Furthermore, we compared the adsorption energies (Eabs) (Fig. 3o) 
+and charge differences (Fig. 3p-r) of different systems. The Eabs of 
+Ti3C2Tx (Ti) (−9.04 eV) and Ti3C2Tx-Au (Ti) (−8.50 eV) are high, while 
+the adsorption energy of Ti3C2Tx-Au (Au) (−2.86 eV) is significantly 
+lower. Since too strong adsorption is not conducive to the reaction and 
+leads to a higher energy barrier, the Ti3C2Tx-Au (Au) lowers the reaction 
+energy barrier by reducing the Eabs. Meanwhile, the charge difference 
+results showed that the charge of Ti3C2Tx-Au (Au) was redistributed, 
+affecting the adsorption and reaction behavior.
+Finally, we present the most probable reaction path of the CAT re­
+action (Fig. S10) and analyze the energy changes at three different re­
+action sites, Ti3C2Tx (Ti), Ti3C2Tx-Au (Ti), and Ti3C2Tx-Au (Au), in a 
+series of reaction steps by free energy changes. As shown in Fig. 3s, the 
+formation of O2 is the key step in determining the reaction rate in the 
+CAT-like reaction. The activation energies of Ti3C2Tx (Ti), Ti3C2Tx-Au 
+(Ti), and Ti3C2Tx-Au (Au) in this step are 12.71, 11.7, and 0.66 eV, 
+respectively. The significant difference in energy values indicates that 
+the free energy barrier in Ti3C2Tx-Au (Au) is much lower than that in 
+Ti3C2Tx-Au (Ti) and Ti3C2Tx (Ti), greatly improving the reaction kinetics 
+of the CAT-like reaction. Calculations show that the strong binding with 
+H2O2 affects the subsequent dissociation of the oxygen intermediate. 
+When the reaction site transfers from the Ti3C2Tx surface to the Au NPs, 
+the charge redistribution occurs, electron migration becomes easier, and 
+the energy required for the reaction greatly decreases, promoting the 
+rapid progress of the CAT-like reaction and improving its kinetics and 
+catalytic efficiency.
+In vitro GOx-like activity and enzymatic cascade reactions
+Au NPs exhibit GOx-like activity, catalyzing the formation of glu­
+conic acid and H2O2 from glucose in the presence of O2 [60]. We 
+investigated the ability of TANP to degrade glucose using a glucose 
+content kit at various temperatures and pH values, with TNP serving as 
+the control. As shown in Fig. 4a and S11, TNP does not affect the kit’s 
+absorbance at 510 nm. In contrast, the absorbance of the kit decreased 
+with increasing TANP concentration after TANP treatment. Increasing 
+temperature and decreasing pH enhance the GOx-like ability of TANP. 
+These results demonstrate that the introduction of Au NPs endows TNP 
+with GOx-like activity, enabling it to degrade glucose. This suggests that 
+TANP shows promise for starvation therapy.
+One of the products of GOx-catalyzed glucose degradation is glu­
+conic acid. Therefore, to further investigate the GOx-like behavior of 
+TANP, we measured the pH change of the TANP dispersion solution 
+(Ti3C2Tx concentration of 100 μg•mL−1) after co-incubation with 
+glucose. As shown in Fig. 4b, the pH of the TANP dispersion decreased 
+from 8.0 to 4.1 after 8 h at 37 ◦C, which also indicates that TANP has 
+good long-term stability and GOx-like activity.
+Since TANP has both CAT-like and GOx-like activities, we believe 
+that TANP should be able to form a GOx/CAT-like enzymatic cascade 
+system: 
+GOx-like: 2C6H12O2 + O2 → 2C6H12O7 + 2H2O2                             
+(1)
+CAT-like: 2H2O2 → 2H2O + O2                                                       
+(2)
+To verify this conjecture, a dissolved oxygen meter was used to 
+measure the change in O2 concentration in the TANP dispersion in the 
+presence of glucose only. As shown in Fig. 3f, the concentration of dis­
+solved oxygen in the dispersion slowly increased over time, indicating 
+that the enzymatic cascade reaction was successfully performed. Similar 
+results were obtained using the [Ru(dpp)3]Cl2 probe (Fig. S5f and 
+Fig. 3j).
+In most cases, the same nanozymes that catalyze the decomposition 
+of H2O2 will tend to exhibit CAT-like behavior in neutral and alkaline 
+environments and, due to H+, will tend to exhibit peroxidase (POD)-like 
+behavior in acidic conditions, catalyzing the decomposition of H2O2 to 
+ROS [16,61]. Fig. 4c, d, and Fig. S12 show the ability of TNP and TANP 
+to oxidize methylene blue (MB) at different pH values and temperatures 
+in the presence of H2O2. As shown in Fig. 4c, TNP did not significantly 
+degrade MB at pH 7.4 or 5.5. This suggests that TNP does not readily 
+decompose H2O2 to produce ROS. TANP, on the other hand, signifi­
+cantly degraded MB in the presence of H2O2 (Fig. 4d). Introducing Au 
+NPs conferred TANP POD-like activity. As temperature increased or pH 
+decreased, MB degradation increased. These results suggest that the 
+photothermal and weakly acidic environments within tumors and can­
+cer cells favor the TANP decomposition of H2O2 to produce ROS. 
+Therefore, TANP is more suitable for combined PTT for tumor treat­
+ment. The oxidation of o-phenylenediamine (OPD) also confirms the 
+formation of free radicals. As shown in Fig. 4e, the absorbance of 
+oxidized OPD (OPDox) at ~410 nm was gradually enhanced with 
+Fig. 3. Studies on the CAT-like activity of TANP and its mechanism: (a) Relative residue of H2O2, tested by a catalase kit. (b) Changes in oxygen concentration of 
+H2O2 solution (200 mM) co-incubated with different concentrations of TANP (calculated as Ti3C2Tx concentration) at 37 ◦C and pH 7.4. Unit: μg•mL−1. (c) Changes in 
+oxygen concentration of TANP suspensions (concentration of Ti3C2Tx of 50 μg•mL−1) co-incubated with different concentrations of H2O2 at 37 ◦C and pH 7.4. Unit: 
+mM. (d) Michaelis-Menten kinetic analysis and (e) Lineweaver-Burk plot of CAT-like activity of TANP with H2O2 as substrate. (f) Changes in oxygen concentration of 
+TANP suspension with glucose as substrate. Normalized fluorescence intensity of [Ru(dpp)3]Cl2 incubated with (g) different substances, with (h) TNP and (i) TANP 
+(concentration of Ti3C2Tx of 50 μg•mL−1) + H2O2 (20 mM) for 20 min at different temperatures and pH values, and (j) TANP (concentration of Ti3C2Tx of 
+100 μg•mL−1) + glucose (10 mM) for different times. The structural models of (k) Ti3C2Tx and (l) Ti3C2Tx-Au. Calculated work function of (m) Ti3C2Tx and (n) 
+Ti3C2Tx-Au. (o) Calculated adsorption energy of nanosheets on different sites. (p-r) Differential charge density maps. (s) The energy profile diagram of the most 
+favorable pathways for the reduction of H2O2 (CAT-like reaction) on Ti3C2Tx and different sites of Ti3C2Tx-Au, with the product marked in blue. (t) The atoms 
+involved in the calculation process.
+Y. Guo et al.                                                                                                                                                                                                                                     
+Nano Today 65 (2025) 102848 
+7 
+
+increasing TANP concentration in the presence of H2O2. As shown in 
+Fig. 4f, the electron paramagnetic resonance (EPR) spectra indicated 
+that TANP decomposed H2O2 to produce hydroxyl radicals (•OH). The 
+above experiments demonstrated that TANP possesses triple enzymatic 
+activities, especially the significantly enhanced CAT-like activity 
+compared with Ti3C2Tx, which solves the problem of the weak 
+oxygen-producing capacity of Ti3C2Tx and has good potential for anti­
+cancer applications.
+Intracellular enzymatic reaction studies
+Using a mouse breast cancer cell line (4T1) as a model, we further 
+investigated the ability of TNP and TANP to catalyze the decomposition 
+of H2O2 for oxygen production in cells using the [Ru(dpp)3]Cl2 kit. To 
+this end, we employed confocal laser scanning microscopy (CLSM) to 
+observe the cells after co-culturing 4T1 cells with TNP and TANP in the 
+presence of external H2O2 (100 μM). As shown in Fig. 5a, the red fluo­
+rescence intensity was lower in both the TNP and TANP groups than in 
+the Control group, though it was lower still in the TANP group. These 
+results suggest that both nanosheets exhibit CAT-like activity in cells to 
+catalyze oxygen production; however, TANP exhibits stronger enzyme 
+activity. After irradiation with an 808 nm laser, there was no significant 
+change in the intracellular fluorescence intensity in the Control + L 
+group. However, the intracellular red fluorescence intensity decreased 
+in all groups co-incubated with nanosheets. Previous experiments have 
+verified that warming enhances the CAT-like activity of nanosheets. 
+Therefore, we believe that the photothermal heat caused by laser irra­
+diation enhances the enzyme activity of the two nanosheets, enabling 
+them to better alleviate hypoxia. The TANP + L group was certainly the 
+most effective in alleviating hypoxia compared with the other groups.
+We also determined the changes in the relative concentration of 
+intracellular H2O2 after different treatments using an H2O2 kit. As shown 
+in Fig. 5b, the intracellular concentration of H2O2 in 4T1 cells co- 
+cultured with TNP and TANP (Ti3C2Tx concentration of 20 μg•mL−1) for 
+4 h decreased by ~11.8 % and 43.1 %, respectively, compared to the 
+Control group in the absence of irradiation. After laser irradiation, the 
+decreases were ~17.5 % and 52.2 %, respectively. In addition, the 
+concentration of H2O2 in the extracellular medium was also examined 
+using the same method, and the results followed the same trend as the 
+intracellular test results (Fig. 5c).
+Flow cytometry was further used to investigate the changes in 
+intracellular O2 concentration after 8 h of co-incubation of nanosheets 
+with 4T1 cells in the presence of additional H2O2 (100 μM). As shown in 
+Fig. 5d, the mean fluorescence intensity (MFI) of the cells in the TNP and 
+TANP groups decreased by ~40.1 and 65.5 %, respectively, similar to 
+the results of the kit test. The decrease in MFI was even greater under 
+808 nm laser irradiation. Flow cytometry images are shown in Fig. S13.
+Since hypoxia-inducible factor-1α (Hif-1α) expression in cells is 
+related to the degree of hypoxia [62] and heme oxygenase-1 (HO-1) 
+expression is related to the concentration of H2O2 [63], Western blotting 
+was used to evaluate Hif-1α and HO-1 expression in 4T1 cells under 
+different conditions. As shown in Fig. 5e and f, TNP had little effect on 
+the expression of Hif-1α and HO-1 after co-culture, possibly due to the 
+TNP’s weak CAT-like activity and the slow oxygen production rate at 37 
+◦C. In contrast, TANP significantly accelerated the decomposition of 
+H2O2 and alleviated the hypoxic environment. This reduced the 
+expression of Hif-1α by ~25.4 % and HO-1 by ~25.9 % compared to the 
+Control group. After laser irradiation, the CAT-like activity was further 
+enhanced. Compared with the Control group, Hif-1α and HO-1 expres­
+sion decreased by ~52.5 % and 47.5 %, respectively. The results of the 
+Western blot assay were consistent with those of the kit assay, indicating 
+that TANP is more effective than TNP at degrading H2O2 in cells and 
+alleviating the hypoxic environment.
+Changes in intracellular and extracellular glucose concentrations in 
+4T1 cells after different treatments were analyzed using a glucose assay 
+kit in the presence of additional H2O2 (100 μM). After 10 h of co-culture, 
+TANP significantly depleted intracellular and extracellular glucose 
+concentrations, with reductions of ~43.7 % and 29.2 %, respectively, 
+compared to the control (Fig. S14a and b). However, after 10 h of co- 
+culture with TNP, intracellular glucose levels did not decrease. These 
+results provide further evidence that the introduction of Au NPs 
+imparted GOx-like activity to TANP.
+We further investigated the effect of nanosheets on intracellular ROS 
+in 4T1 cells using DCFH-DA. As shown in Fig. S15, CLSM images 
+revealed that the green fluorescence intensity in the TNP group was 
+lower than in the Control group. However, the TANP group exhibited 
+significantly higher fluorescence intensity. The MFI in the TNP group 
+decreased by ~13.1 % compared with the Control group, whereas the 
+MFI in the TANP group increased by ~83.9 % (Fig. 5g). These results 
+suggest that Ti3C2Tx can scavenge some intracellular ROS, but its ability 
+Fig. 4. Studies of GOx- and POD-like activities: (a) The relative residue of glucose co-incubated with TNP or TANP, tested by a glucose test kit. (b) The pH changes in 
+TANP aqueous suspensions co-incubated with glucose (10 mM) at 37 ◦C. Relative residual of MB co-incubated with (c) TNP and (d) TANP in the presence of H2O2. (e) 
+Absorption changes of an OPD solution co-incubated with TANP at pH 5.5. Unit: μg•mL−1. (f) EPR spectra of •OH generated by H2O2, TNP + H2O2, and 
+TANP + H2O2.
+Y. Guo et al.                                                                                                                                                                                                                                     
+Nano Today 65 (2025) 102848 
+8 
+
+is not strong enough to counteract its generation by the PDO-like 
+property of TANP. The green fluorescence of the TNP + L group 
+increased slightly after laser irradiation, possibly due to hyperthermia- 
+induced membrane disruption, releasing ROS from the necrotic cells 
+[46,63,64]. The fluorescence intensity of the TANP + L group increased 
+significantly, with an MFI ~3-fold higher than that of the Control group. 
+This may be due to an increase in intracellular ROS caused by photo­
+thermia or because photothermia enhances the GOx- and POD-like ac­
+tivities of TANP.
+In vitro cytotoxicity studies
+The cytotoxicity of TNP and TANP in different environments was 
+evaluated using the standard MTT assay with 4T1 cells as a model. As 
+shown in Fig. 6a, TNP was not significantly toxic to 4T1 cells in a nor­
+moxic environment without 808 nm laser irradiation, while TANP 
+exhibited some cytotoxicity. Introducing PTT further enhanced the cell- 
+killing ability of both TNP and TANP. Similarly, cell viability in the 
+TANP + L group was lower than that in the TNP + L group. As shown in 
+Fig. 6b, TANP exhibited similar inhibitory effects on 4T1 cells in hypoxic 
+and normoxic environments, suggesting that hypoxia does not 
+Fig. 5. Studies on intracellular H2O2 and O2. (a) CLSM images of 4T1 cells after different treatments, red fluorescence is excited by [Ru(dpp)3]Cl2 labeling of 
+hypoxia. Scale bar: 50 μm. (b) Relative intracellular and (c) extracellular H2O2 concentration of 4T1 cells after treatments (Ti3C2Tx concentration of 20 μg•mL−1) 
+without or with laser irradiation for 5 min, determined by a microplate reader. (d) Relative MFI of [Ru(dpp)3]Cl2 of 4T1 cells after different treatments, determined 
+by flow cytometry. (e) Western blots of Hif-1α and HO-1 expression in 4T1 cells co-incubated with TNP or TANP with or without laser irradiation. (f) Relative 
+expression values of Hif-1α and HO-1 with β-actin as an internal reference. (g) Relative MFI of DCFH-DA of 4T1 cells after different treatments, determined by flow 
+cytometry. Laser wavelength: 808 nm, laser power: 1.0 W•cm−2.
+Y. Guo et al.                                                                                                                                                                                                                                     
+Nano Today 65 (2025) 102848 
+9 
+
+Fig. 6. The cytotoxicity of TANP. Cell viability of 4T1 cells co-incubated with TNP and TANP without or with laser irradiation for 5 min (+ L) in (a) normoxic or (b) 
+hypoxic environment. (c) Cell viability of L929 cells co-incubated with TNP and TANP without or with laser irradiation for 5 min in a normoxic environment. (d) 
+CLSM images of calcein-AM/PI double staining of 4T1 cells after different treatments. Scale bar: 100 μm. (e) Apoptosis rates of 4T1 cells co-incubated with culture 
+medium, TNP, and TANP in a hypoxic environment without or with laser irradiation for 5 min. Laser wavelength: 808 nm; laser power: 1.0 W•cm−2.
+Y. Guo et al.                                                                                                                                                                                                                                     
+Nano Today 65 (2025) 102848 
+10 
+
+significantly impact its cytotoxicity. We also examined the toxicity of Au 
+NPs as a control on 4T1 cells in both normoxic and hypoxic environ­
+ments (Fig. S16a). The results indicated that the cytotoxicity of Au NPs is 
+oxygen-dependent. These results suggest that it should be the multi- 
+enzymatic activities brought about by the introduction of Au NPs that 
+led to the killing of cancer cells by TANP. This includes alleviating 
+hypoxia and enhancing starvation treatment by the GOx/CAT-like 
+cascade enzyme system and the cytotoxicity brought about by the 
+Fig. 7. Transcriptional analysis of 4T1 cells treated with TANP + L by RNA sequencing. (a) Volcano plot of DEGs, the red dots represent the upregulated genes, and 
+the blue dots represent the down-regulated genes. (b) Heatmap visualization of the expression patterns of 1892 DEGs. (c) KEGG gene set enrichment analysis plot. (d) 
+GO gene set enrichment analysis plot. (e) Circos plot visualization of the subordination between five enriched pathways and 55 representative DEGs. (f) A KEGG 
+network diagram based on DEGs.
+Y. Guo et al.                                                                                                                                                                                                                                     
+Nano Today 65 (2025) 102848 
+11 
+
+POD-like property. In contrast, better 4T1 cell killing was obtained in 
+combination with PTT. In addition, the effect of incubation time on cell 
+activity was discussed. As shown in Fig. S16b and c, TNP was not toxic to 
+4T1 cells at any of the co-culture times from 24 to 72 h. However, at high 
+concentrations, cell viability decreased over time in co-cultured with 
+TANP.
+The toxicity of both TNP and TANP on normal cells was investigated 
+using mouse fibroblast (L929) cell lines as a model. As shown in Fig. 6c, 
+the TANP and TANP + L groups exhibited weaker inhibitory effects on 
+L929 cells than on 4T1 cells in a normoxic environment. Previous studies 
+have reported that normal cells have better heat resistance than cancer 
+cells [65] and that the H2O2 content in normal cells is lower than that in 
+tumor cells [66]. These factors may explain why TANP is less toxic to 
+normal cells. In addition, one advantage of PTT is its ability to precisely 
+irradiate the target area. Therefore, we believe that TANP enables more 
+precise treatment, resulting in less damage to normal tissues and cells.
+The above results demonstrate that TANP effectively alleviates 
+hypoxia. Under hypoxic conditions, CLSM images of 4T1 cells treated 
+with calcein-AM/propidium iodide (PI) exhibited a similar trend. The 
+red fluorescence representing dead cells was nearly absent in the images 
+of the TNP group, whereas it was most prominent in the images of the 
+TANP + L group (Fig. 6d). Similarly, flow cytometry detected the 
+mechanism of cell death in 4T1 cells using Annexin V-FITC/PI staining. 
+As shown in Fig. 6e, apoptosis, particularly late apoptosis (Q2), was the 
+primary cause of cell death. This trend of apoptotic cell death was 
+consistent with the results of the MTT assay. In a hypoxic environment, 
+the lowest apoptosis rate was observed in the TNP group, and the highest 
+apoptosis rate was observed in the TANP + L group. In short, the total 
+apoptosis rate of the TANP + L group in a hypoxic environment was Q2 
++ Q3 (early apoptosis) = 98.9 %, reflecting its good therapeutic effect.
+Since apoptosis is associated with mitochondrial dysfunction [67], 
+we used JC-1 staining to analyze changes in mitochondrial membrane 
+potential and determine if mitochondrial integrity was damaged in the 
+treated 4T1 cells. As shown in Fig. S17, little green fluorescence 
+appeared in the CLSM images of 4T1 cells after simultaneous incubation 
+with TNP in a hypoxic environment without irradiation, indicating that 
+TNP did not significantly damage mitochondria. Compared with the 
+Control and TNP groups, the other groups, especially those irradiated 
+with an 808 nm laser, showed stronger green fluorescence. This in­
+dicates a slight change in mitochondrial membrane potential. The 
+strongest green fluorescence was observed in the TANP + L group. This 
+indicates the most severe damage to mitochondria. These results are 
+consistent with those of the MTT assay.
+Gene expression analysis with RNA-seq
+RNA sequencing is an essential technique for uncovering the genetic 
+and molecular processes that control cellular functions. To gain further 
+insight into the biological effects of TANP on 4T1 cells under laser 
+irradiation, RNA-seq analysis was performed on both untreated (Con­
+trol) and TANP + L-treated cells. The results revealed 1892 differen­
+tially expressed genes (DEGs) in the TANP + L group compared to the 
+Control group. Of these DEGs, 379 were up-regulated (red dots), and 
+1513 were down-regulated (blue dots) (Fig. 7a). In addition, a heat map 
+was generated to illustrate the DEGs visually between the experimental 
+and Control groups (Fig. 7b). As shown in Fig. 7c, Kyoto Encyclopedia of 
+Genes and Genomes (KEGG) enrichment analysis revealed significant 
+alterations in ribosomal function, heat-related gene expression, and 
+metabolic pathways in the TANP + L group compared to the Control 
+group. Together with Gene Ontology (GO) enrichment analysis (Fig. 7d), 
+the TANP + L group exhibited significant alterations in biological pro­
+cesses, cellular components, and molecular functions. This indicates that 
+the cells were stimulated by photothermal heating and underwent the 
+process of cell necrosis and apoptosis. In addition, a Circos plot was used 
+to depict the hierarchical relationship between 55 selected DEGs and 
+their enriched pathways (Fig. 7e). This visualization method depicts the 
+association between DEGs and their corresponding pathways, illus­
+trating their hierarchical relationship. The KEGG network diagram more 
+directly represents the relationship between genes and pathways. 
+(Fig. 7f).
+In vivo therapy studies
+Whether or not hemolysis occurs is the first consideration when 
+nanoparticles are subjected to in vivo experiments. As shown in Fig. S18, 
+TNP and TANP induced little hemolysis at the concentration close to the 
+actual amount injected, suggesting that TNP and TANP are suitable for 
+subsequent in vivo experiments.
+We used 4T1 tumor-bearing BALB/c mice as a model for in vivo 
+studies and first investigated the photothermal effects of TNP and TANP 
+in vivo. Photothermal images of tumor-bearing mice were obtained by 
+irradiating the tumor site with an 808 nm laser (1.0 W•cm−2) 8 h after 
+injection of physiological saline (PS, Control), TNP, and TANP 
+(5 mg•kg−1 body weight of Ti3C2Tx) (Fig. 8a and b). The temperature 
+rise of tumors in the control group within 10 min was only 2.2 ± 1.1 ◦C, 
+while the temperature rise induced by TNP and TANP was 13.5 ± 2.8 
+and 14.2 ± 2.3 ◦C, respectively. This indicates that TNP and TANP can 
+achieve photothermia in mouse tumors.
+As shown in Fig. 8c, in the in vivo treatment experiments, the tumor- 
+bearing mice were randomly grouped and first injected intravenously. 
+The tumors in the laser irradiation group (+ L) were irradiated 8 h after 
+injection with 808 nm light at 1.0 W•cm−2 for 10 min. Injections and 
+light irradiation were performed on the first and third days. TNP and 
+TANP were injected at a dose of 5 mg•kg−1 body weight of Ti3C2Tx. 
+Changes in body weight (Fig. 8d) and tumor volume (Fig. 8e and f) were 
+recorded every two days during treatment, and the mice were sacrificed 
+after 14 days. As shown in Fig. 8e, tumor volume growth trends differed 
+among the groups of mice. On day 14, the tumor volumes of the Control 
++ L, TNP, TNP + L, TANP, and TANP + L groups were ~91.1 %, 
+111.5 %, 58.9 %, 79.1 %, and 23.1 % of the Control group’s volume, 
+respectively. After sacrificing the mice, we removed and photographed 
+the tumors (Fig. 8g) and weighed them (Fig. 8h). As shown in Fig. 8g, 
+only TANP inhibited tumor growth in the non-laser irradiated groups. 
+The average tumor weight in this group was reduced to ~74.6 % of the 
+Control group’s weight. These results suggest that the enzyme cascade 
+reaction has a therapeutic effect on tumors. Following laser irradiation, 
+TNP and TANP exhibited enhanced tumor inhibition. The average tumor 
+weight in these two groups decreased to ~57.1 % and 30.7 % of the 
+Control group, respectively. Although complete tumor elimination was 
+not achieved, inhibiting tumors by ~70 % after only two treatments 
+demonstrates the superior therapeutic efficacy of the TANP cascade of 
+nanozymes (CAT-, GOx-, and POD-like) combined with photothermal 
+therapy (PTT). Additionally, as shown in Fig. 8d, the TNP and TNP + L 
+groups exhibited a slight decrease in body weight during treatment, 
+potentially due to incomplete –NH2 reactions on the surface affecting 
+the mice. The mice in the other groups experienced a steady increase in 
+body weight, which reflects the biosafety of TANP to some extent.
+The extent of cell damage and necrosis was further determined using 
+hematoxylin-eosin (H&E) staining on tumor sections (Fig. 8i). The cells 
+in sections from the Control, Control + L, and TNP groups retained 
+normal morphology, while typical histological damage was observed in 
+the other groups. Hif-1α immunohistochemical labeling was used to 
+indicate the hypoxic status of the tumor tissue. The TANP + L group 
+exhibited the weakest green fluorescence, confirming its effectiveness in 
+alleviating the tumor’s hypoxic environment. As shown in the Ki67 
+immunohistochemical labeling images, the TANP + L group exhibited 
+the weakest green fluorescence, indicating a significant inhibitory effect 
+on tumor aggressiveness. A terminal deoxynucleotidyl transferase- 
+mediated dUTP nick-end labeling (TUNEL) assay showed that the 
+TANP + L group induced the highest level of apoptosis compared to the 
+other groups.
+To further investigate the biosafety of TANP, H&E staining of major 
+Y. Guo et al.                                                                                                                                                                                                                                     
+Nano Today 65 (2025) 102848 
+12 
+
+Fig. 8. In vivo therapy studies. (a) Photothermal images of 4T1 tumor-bearing BALB/c mice after intravenous injection of physiological saline (Control), TNP, or 
+TANP and laser irradiation for 10 min, and (b) the temperature rise curves of the tumors. (c) Duration of intravenous injection and laser irradiation for 10 min in 4T1 
+tumor-bearing BALB/c mice. (d) Weight change curves and (e) tumor growth curves of mice after different treatments. (f) The relative volume of tumors in different 
+groups. (g) Photograph and (h) weight of tumors after excision from each group. (i) H&E, Hif-1α, Ki67, and TUNEL staining images of tumor sections collected from 
+4T1 tumor-bearing BALB/c mice in different treatment groups. Scale bar: 100 μm. Laser wavelength: 808 nm, laser power: 1.0 W•cm−2.
+Y. Guo et al.                                                                                                                                                                                                                                     
+Nano Today 65 (2025) 102848 
+13 
+
+organs was performed. As shown in Fig. S19, no inflammatory lesions or 
+pathological changes were observed in any of the major organs in any 
+group. In addition, as shown in Fig. S20a-c, several clinically relevant 
+biochemical analyses (AST/CK/CKMB/LDH1 in the heart; BUN/CREA in 
+the kidney; and ALT/AST in the liver) were within normal ranges, 
+suggesting that TANP is not harmful to mice.
+We also examined the distribution of TNP and TANP in the major 
+organs of mice after 14 days of treatment. As shown in Fig. S20d and e, 
+we analyzed the major elements Ti and Au by ICP-OES. The results 
+showed that TNP and TANP were accumulated primarily in the livers 
+and spleens of the mice after 14 days, and a small amount was distrib­
+uted in other organs. Interestingly, the Au element was concentrated 
+primarily in the heart and spleen. This may be because the TANP is 
+enriched in other organs through blood circulation after degradation. 
+Compared to the total dose (200 μg), only a small amount of TANP 
+remained in the body.
+The spleen is an important immune organ that is closely related to 
+tumor growth and inhibition [68]. Therefore, we also weighed and 
+photographed the spleens of the mice (Fig. S20f and Fig. S21). Inter­
+estingly, the smaller the spleen and the lighter the weight, the better the 
+tumor suppression effect. Compared to the Control group, the spleens of 
+the TNP + L, TANP, and TANP + L groups were reduced by ~46.2 %, 
+32.3 %, and 66.2 %, respectively. This may be related to the altered 
+immune response in mice caused by tumor injury and necrosis.
+Conclusion
+In conclusion, we prepared the Ti3C2Tx MXene nanosheets loaded 
+with Au NPs, called Ti3C2Tx-Au, through in situ reduction. We then 
+further modified PEG to produce a multifunctional cascade enzyme 
+system called TANP. The Au NPs were prepared from chloroauric acid by 
+exploiting the reducing properties of Ti3C2Tx. The introduction of Au 
+NPs significantly enhanced the CAT-like activity of Ti3C2Tx and 
+endowed TANP with GOx- and POD-like properties. Thus, TANP can 
+form a CAT/GOx/POD-like cascade enzyme system. The CAT-like ac­
+tivity enables TANP to decompose the excess H2O2 found in cancer cells, 
+generating oxygen to alleviate hypoxia. O2 can also be supplied to 
+glucose catabolism, a GOx-like catalytic reaction, enhancing starvation 
+therapy and H2O2 generation. The POD-like property of TANP also al­
+lows it to decompose H2O2 to generate ROS, which can kill cancer cells. 
+The introduction of PTT of Ti3C2Tx MXene nanosheets enables more 
+precise light-controlled therapy, while the photothermal effect also en­
+hances the enzymatic activity of TANP. Thus, such a multifunctional 
+cascade enzyme system can enable efficient, precise cancer therapy.
+CRediT authorship contribution statement
+Ziqiang Xu: Funding acquisition. Di-Wei Zheng: Writing – review & 
+editing, Methodology. Tao Liao: Investigation. Linwei Li: Investigation. 
+Xiaomei Wu: Investigation. Qianqian Qiao: Investigation. Yuhao Guo: 
+Writing – original draft, Methodology, Investigation. Jinyu Wang: 
+Writing – original draft, Investigation. Cao Li: Writing – review & 
+editing, Methodology, Funding acquisition. Ying Kuang: Writing – re­
+view & editing, Methodology. Wenqian Yu: Funding acquisition.
+Declaration of Competing Interest
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper.
+Acknowledgments
+This study was financially supported by the National Natural Science 
+Foundation of China (51973053, 51773055, and 22073025) and the 
+Natural Science Foundation of Hubei Province (2024AFB540). We 
+appreciate the help of CESHIGO RESEARCH SERVICE (Chengdu, China) 
+on DFT computation.
+Appendix A. Supporting information
+Supplementary data associated with this article can be found in the 
+online version at doi:10.1016/j.nantod.2025.102848.
+Data availability
+Data will be made available on request.
+References
+[1] R.A. Sheldon, S. van Pelt, Enzyme immobilisation in biocatalysis: why, what and 
+how, Chem. Soc. Rev. 42 (2013) 6223–6235.
+[2] B.D. Wallace, H. Wang, K.T. Lane, J.E. Scott, J. Orans, J.S. Koo, M. Venkatesh, 
+C. Jobin, L.A. Yeh, S. Mani, Alleviating cancer drug toxicity by inhibiting a 
+bacterial enzyme, Science 330 (2010) 831–835.
+[3] T. Kodadek, Catalytic protein inhibitors, Angew. Chem. Int. Ed. 63 (2024) 
+e202316726.
+[4] R. Zhang, B. Jiang, K. Fan, L. Gao, X. Yan, Designing nanozymes for in vivo 
+applications, Nat. Rev. Bioeng. 2 (2024) 849–868.
+[5] M. B´ek´es, D.R. Langley, C.M. Crews, PROTAC targeted protein degraders: the past 
+is prologue, Nat. Rev. Drug Discov. 21 (2022) 181–200.
+[6] J.M. Tsai, R.P. Nowak, B.L. Ebert, E.S. Fischer, Targeted protein degradation: from 
+mechanisms to clinic, Nat. Rev. Mol. Cell. Biol. 25 (2024) 740–757.
+[7] L.-H. Fu, C. Qi, J. Lin, P. Huang, Catalytic chemistry of glucose oxidase in cancer 
+diagnosis and treatment, Chem. Soc. Rev. 47 (2018) 6454–6472.
+[8] S. Agrawal, G.K. Singh, S. Tiwari, Focused starvation of tumor cells using glucose 
+oxidase: a comprehensive review, Int. J. Biol. Macromol. 281 (2024) 136444.
+[9] S.N. Dean, K.B. Turner, I.L. Medintz, S.A. Walper, Targeting and delivery of 
+therapeutic enzymes, Ther. Deliv. 8 (2017) 577–595.
+[10] L. Gao, J. Zhuang, L. Nie, J. Zhang, Y. Zhang, N. Gu, T. Wang, J. Feng, D. Yang, 
+S. Perrett, X. Yan, Intrinsic peroxidase-like activity of ferromagnetic nanoparticles, 
+Nat. Nanotechnol. 2 (2007) 577–583.
+[11] J. Ju, Y. Chen, Z. Liu, C. Huang, Y. Li, D. Kong, W. Shen, S. Tang, Modification and 
+application of Fe3O4 nanozymes in analytical chemistry: a review, Chin. Chem. 
+Lett. 34 (2023) 107820.
+[12] J. Wu, X. Wang, Q. Wang, Z. Lou, S. Li, Y. Zhu, L. Qin, H. Wei, Nanomaterials with 
+enzyme-like characteristics (nanozymes): next-generation artificial enzymes (II), 
+Chem. Soc. Rev. 48 (2019) 1004–1076.
+[13] J. He, Y. Hou, Z. Zhang, J. Zhang, X. Yan, K. Fan, M. Liang, Carbon-based 
+nanozymes: how structure affects performance, Nano Biomed. Eng. 16 (2024) 
+28–47.
+[14] S. He, Q. Zheng, L. Ma, H. Shen, B. Zheng, Y. Zhang, H.-H. Deng, W. Chen, K. Fan, 
+Mucin-triggered osmium nanoclusters as protein-corona-like nanozymes with 
+photothermal-enhanced peroxidase-like activity for tumor-specific therapy, Nano 
+Lett. 24 (2024) 14337–14345.
+[15] Q. Yang, J. Liu, W. Cai, X. Liang, Z. Zhuang, T. Liao, F. Zhang, W. Hu, P. Liu, S. Fan, 
+W. Yu, B. Jiang, C. Li, D. Wang, Z. Xu, Non-heme iron single-atom nanozymes as 
+peroxidase mimics for tumor catalytic therapy, Nano Lett. 23 (2023) 8585–8592.
+[16] Z. Xing, L. Li, T. Liao, J. Wang, Y. Guo, Z. Xu, W. Yu, Y. Kuang, C. Li, 
+A multifunctional cascade enzyme system for enhanced starvation/chemodynamic 
+combination therapy against hypoxic tumors, J. Colloid Interf. Sci. 666 (2024) 
+244–258.
+[17] R. Zhang, Y. Shen, X. Zhou, J. Li, H. Zhao, Z. Zhang, J. Zhao, H. Jin, S. Guo, 
+H. Ding, G. Nie, Z. Zhang, Y. Wang, X. Yan, K. Fan, Hypoxia-tropic delivery of 
+nanozymes targeting transferrin receptor 1 for nasopharyngeal carcinoma 
+radiotherapy sensitization, Nat. Commun. 16 (2025) 890.
+[18] Y. Chen, Y. Liu, C. Guo, C. Yin, C. Xie, Q. Fan, Self-Amplified Competitive 
+Coordination of MnO2-Doped CeO2 Nanozyme for Synchronously Activated 
+Combination Therapy, Adv. Funct. Mater. 33 (2023) 2209927.
+[19] Z. Jiang, J. Li, G. Liu, Q. Qiu, J. Zhang, M. Hao, H. Ren, Y. Zhang, pH-sensitive 
+glucose oxidase and hemin coordination micelle for multi-enzyme cascade and 
+amplified cancer chemodynamic therapy, Small 40 (2024) 2407674.
+[20] F. Gomoll´on-Bel, IUPAC’s 2024 top ten emerging technologies in chemistry, Chem. 
+Int. 46 (2024) 8–16.
+[21] A. VahidMohammadi, J. Rosen, Y. Gogotsi, The world of two-dimensional carbides 
+and nitrides (MXenes), Science 372 (2021) eabf1581.
+[22] N. Gao, J. Zhao, X. Zhu, J. Xu, G. Ling, P. Zhang, Functional two-dimensional 
+MXenes as cancer theranostic agents, Acta Biomater. 154 (2022) 1–22.
+[23] M.R. Lukatskaya, O. Mashtalir, C.E. Ren, Y. Dall’Agnese, P. Rozier, P.L. Taberna, 
+M. Naguib, P. Simon, M.W. Barsoum, Y. Gogotsi, Cation intercalation and high 
+volumetric capacitance of two-dimensional titanium carbide, Science 341 (2013) 
+1502–1505.
+[24] X. Wang, T.S. Mathis, K. Li, Z. Lin, L. Vlcek, T. Torita, N.C. Osti, C. Hatter, 
+P. Urbankowski, A. Sarycheva, M. Tyagi, E. Mamontov, P. Simon, Y. Gogotsi, 
+Influences from solvents on charge storage in titanium carbide MXenes, Nat. 
+Energy 4 (2019) 241–248.
+Y. Guo et al.                                                                                                                                                                                                                                     
+Nano Today 65 (2025) 102848 
+14 
+
+[25] M. Ozkan, K.A.M. Quiros, J.M. Watkins, T.M. Nelson, N.D. Singh, M. Chowdhury, 
+T. Namboodiri, K.R. Talluri, E. Yuan, Curbing pollutant CO2 by using two- 
+dimensional MXenes and MBenes, Chem 10 (2024) 443–483.
+[26] K. Yang, Q. Dong, H. Liu, L. Wu, S. Zong, Z. Wang, A MXene hydrogel-based 
+versatile microrobot for controllable water pollution management, Adv. Sci. 10 
+(2024) 2309257.
+[27] W. Zeng, X. Ye, Y. Dong, Y. Zhang, C. Sun, T. Zhang, X. Guan, L. Guo, MXene for 
+photocatalysis and photothermal conversion: synthesis, physicochemical 
+properties, and applications, Coord. Chem. Rev. 508 (2024) 215753.
+[28] X. Pan, X. Yang, M. Yu, X. Lu, H. Kang, M.-Q. Yang, Q. Qian, X. Zhao, S. Liang, 
+Z. Bian, 2D MXenes polar catalysts for multi-renewable energy harvesting 
+applications, Nat. Commun. 14 (2023) 4183.
+[29] R. Qin, J. Nong, K. Wang, Y. Liu, S. Zhou, M. Hu, H. Zhao, G. Shan, Recent 
+advances in flexible pressure sensors based on MXene materials, Adv. Mater. 36 
+(2024) 2312761.
+[30] S. Lee, D.H. Ho, J. Jekal, S.Y. Cho, Y.J. Choi, S. Oh, Y.Y. Choi, T. Lee, K.-I. Jang, J. 
+H. Cho, Fabric-based lamina emergent MXene-based electrode for 
+electrophysiological monitoring, Nat. Commun. 15 (2024) 5974.
+[31] M. Han, D. Zhang, C.E. Shuck, B. McBride, T. Zhang, R.J. Wang, K. Shevchuk, 
+Y. Gogotsi, Electrochemically modulated interaction of MXenes with microwaves, 
+Nat. Nanotechnol. 18 (2023) 373–379.
+[32] Y. Sun, Y. Su, Z. Chai, L. Jiang, L. Heng, Flexible solid-liquid bi-continuous 
+electrically and thermally conductive nanocomposite for electromagnetic 
+interference shielding and heat dissipation, Nat. Commun. 15 (2024) 7290.
+[33] F. Gao, C. Xue, T. Zhang, L. Zhang, G.-Y. Zhu, C. Ou, Y.-Z. Zhang, X. Dong, MXene- 
+based functional platforms for tumor therapy, Adv. Mater. 35 (2023) 2302559.
+[34] J. Guo, X. Zhu, B. Liang, X. Gu, C. Wu, A. Li, W. Li, Application and recent progress 
+of MXene-based bioactive materials in wound management, Nano TransMed 4 
+(2025) 100079.
+[35] H. Guo, X. Chu, Y. Guo, J. Yang, Y. Jin, L. Zhou, Y. Peng, Q. Wang, F. Lu, B. Wang, 
+A water transfer printing method for contact lenses surface 2D MXene modification 
+to resist bacterial infection and inflammation, Sci. Adv. 10 (2024) eadl3262.
+[36] S. Liu, X. Pan, H. Liu, Two-dimensional nanomaterials for photothermal therapy, 
+Angew. Chem. Int. Ed. 59 (2020) 5890–5900.
+[37] J. Wu, Y. Zhang, J. Hu, Y. Yang, D. Jin, W. Liu, D. Huang, B. Jia, D.J. Moss, 2D 
+graphene oxide films expand functionality of photonic chips, Adv. Mater. 36 
+(2024) 2403659.
+[38] H. Lin, X. Wang, L. Yu, Y. Chen, J. Shi, Two-dimensional ultrathin MXene ceramic 
+nanosheets for photothermal conversion, Nano Lett. 17 (2017) 384–391.
+[39] H. Lin, S. Gao, C. Dai, Y. Chen, J. Shi, A two-dimensional biodegradable niobium 
+carbide (MXene) for photothermal tumor eradication in NIR-I and NIR-II 
+biowindows, J. Am. Chem. Soc. 139 (2017) 16235–16247.
+[40] R. Zhao, Y. Zhu, L. Feng, B. Liu, Y. Hu, H. Zhu, Z. Zhao, H. Ding, S. Gai, P. Yang, 
+Architecture of vanadium-based mxene dysregulating tumor redox homeostasis for 
+amplified nanozyme catalytic/photothermal therapy, Adv. Mater. 36 (2024) 
+2307115.
+[41] X. He, Y. Lv, Y. Lin, H. Yu, Y. Zhang, Y. Tong, C. Zhang, Platinum nanoparticles 
+regulated V2C MXene nanoplatforms with NIR-II enhanced nanozyme effect for 
+photothermal and chemodynamic anti-infective therapy, Adv. Mater. 36 (2024) 
+2400366.
+[42] Q. Qiao, J. Wang, K. Long, L. Li, J. Chen, Y. Guo, Z. Xu, Y. Kuang, T. Ji, C. Li, 
+A cascaded enzyme system based on the catalase-like activity of Ti3C2Tx MXene 
+nanosheets for the efficient combination cancer therapy, Nano Today 54 (2024) 
+102059.
+[43] Q. Qiao, J. Wang, B. Li, Y. Guo, T. Liao, Z. Xu, Y. Kuang, C. Li, Ti3C2Tx MXene 
+nanosheet-based drug delivery/cascaded enzyme system for combination cancer 
+therapy and anti-inflammation, Appl, Mater. Today 38 (2024) 102215.
+[44] W. Feng, X. Han, H. Hu, M. Chang, L. Ding, H. Xiang, Y. Chen, Y. Li, 2D vanadium 
+carbide MXenzyme to alleviate ROS-mediated inflammatory and 
+neurodegenerative diseases, Nat. Commun. 12 (2021) 2203.
+[45] T. Liao, Z. Chen, Y. Kuang, Z. Ren, W. Yu, W. Rao, L. Li, Y. Liu, Z. Xu, B. Jiang, 
+C. Li, Small-size Ti3C2Tx MXene nanosheets coated with metal-polyphenol 
+nanodots for enhanced cancer photothermal therapy and anti-inflammation, Acta 
+Biomater. 159 (2023) 312–323.
+[46] J. Liu, W. Lu, X. Lu, L. Zhang, H. Dong, Y. Li, Versatile Ti3C2Tx MXene for free- 
+radical scavenging, Nano Res. 15 (2022) 2558–2566.
+[47] Y. Zhu, Q. Hao, H. Zhu, R. Zhao, L. Feng, S. He, W. Wang, G. He, B. Liu, P. Yang, 
+Thermoelectric nanoheterojunction-mediated multiple energy conversion for 
+enhanced cancer therapy, ACS Nano 18 (2024) 34257–34271.
+[48] Y. Zhang, S. Ya, J. Huang, Y. Ju, X. Fang, X. Ouyang, Q. Zeng, X. Zhou, X. Yan, 
+G. Nie, K. Fan, B. Zhang, Spatial Isolation of Single Copper(I) Sites for Cascade 
+Enzyme-Like Catalysis and Simultaneous Ferroptosis/Cuproptosis Boosted 
+Immunotherapy, Exploration 5 (2025) 20240275.
+[49] J. Chen, Q. Ma, M. Li, D. Chao, L. Huang, W. Wu, Y. Fang, S. Dong, Glucose-oxidase 
+like catalytic mechanism of noble metal nanozymes, Nat. Commun. 12 (2021) 
+3375.
+[50] Q. Yao, L. Liu, Z. Cai, M. Meng, S. Luo, J. Gong, Visual and photoelectrochemical 
+analysis of antibiotic resistance genes enabled by surface-engineered ZIF-8@Au 
+cascade nanozymes, Biosens. Bioelectron. 261 (2024) 116470.
+[51] J.J. Li, D. Hartono, C.-N. Ong, B.-H. Bay, L.-Y.L. Yung, Autophagy and oxidative 
+stress associated with gold nanoparticles, Biomaterials 31 (2010) 5996–6003.
+[52] Y. Zhang, Y. Liu, Y. Lu, S. Gong, H. Haick, W. Cheng, Y. Wang, Tailor-made gold 
+nanomaterials for applications in soft bioelectronics and optoelectronics, Adv. 
+Mater. 36 (2024) 2405046.
+[53] Q. Qiao, Z. Liu, F. Hu, Z. Xu, Y. Kuang, C. Li, A Novel Ce─Mn heterojunction-based 
+multi-enzymatic nanozyme with cancer-specific enzymatic activity and 
+photothermal capacity for efficient tumor combination therapy, Adv. Funct. Mater. 
+35 (2025) 2414837.
+[54] X.-L. Song, L. Chen, J.-T. Ren, L.-J. Gao, Z.-Y. Yuan, Engineering of g-C3N4-based 
+composites for photocatalytic and electrocatalytic water splitting: recent progress, 
+challenges and perspective, Coord. Chem. Rev. 507 (2024) 215752.
+[55] Y. Absalan, M. Gholizadeh, E.-B. Kim, S. Ameen, Y. Wang, Y. Wang, H. He, Recent 
+progress on organic metal compound/MOF hybrids: from controllable synthesis to 
+potential catalytic applications, Coordin, Chem. Rev. 515 (2024) 215972.
+[56] Q. Zhang, J.-a Wang, Q. Yu, Q. Li, R. Fan, C. Li, Y. Fan, C. Zhao, W. Cheng, P. Ji, 
+J. Sheng, C. Zhang, S. Xie, G. Henkelman, H. Li, Metal/MXene composites via in 
+situ reduction, Nat. Synth. 4 (2025) 252–261.
+[57] J. Shi, Y. Liu, Z. Wang, C. Wang, Investigation of thermal decomposition of 
+ascorbic acid by TG-FTIR and thermal kinetics analysis, J. Pharm. Biomed. Anal. 77 
+(2013) 116–119.
+[58] X. Ye, L. Xia, H. Yang, J. Xu, T. Liu, L. Wang, S. Zhang, Y. Chen, D. Du, W. Feng, 
+Reactive oxygen/nitrogen species scavenging multi-enzyme mimetic ultrasmall 
+calcium hexacyanoferrate (III) nanozyme for hypertension remedy, Mater. Today 
+68 (2023) 148–163.
+[59] X. Zhao, L.-Y. Wang, J.-M. Li, L.-M. Peng, C.-Y. Tang, X.-J. Zha, K. Ke, M.-B. Yang, 
+B.-H. Su, W. Yang, Redox-mediated artificial non-enzymatic antioxidant mxene 
+nanoplatforms for acute kidney injury alleviation, Adv. Sci. 8 (2021) 2101498.
+[60] J. Chen, Q. Ma, M. Li, D. Chao, L. Huang, W. Wu, Y. Fang, S. Dong, Glucose-oxidase 
+like catalytic mechanism of noble metal nanozymes, Nat. Commun. 12 (2021) 
+3375.
+[61] D. Jana, D. Wang, A.K. Bindra, Y. Guo, J. Liu, Y. Zhao, Ultrasmall alloy nanozyme 
+for ultrasound- and near-infrared light-promoted tumor ablation, ACS Nano 15 
+(2021) 7774–7782.
+[62] Q. Wu, L. You, E. Nepovimova, Z. Heger, W. Wu, K. Kuca, V. Adam, Hypoxia- 
+inducible factors: master regulators of hypoxic tumor immune escape, J. Hematol. 
+Oncol. 15 (2022) 77.
+[63] S. Meiners, A. Ludwig, M. Lorenz, H. Dreger, G. Baumann, V. Stangl, K. Stangl, 
+Nontoxic proteasome inhibition activates a protective antioxidant defense response 
+in endothelial cells, Free Radic. Biol. Med. 40 (2006) 2232–2241.
+[64] C. Zhang, D.-W. Zheng, C.-X. Li, M.-Z. Zou, W.-Y. Yu, M.-D. Liu, S.-Y. Peng, Z.- 
+L. Zhong, X.-Z. Zhang, Hydrogen gas improves photothermal therapy of tumor and 
+restrains the relapse of distant dormant tumor, Biomaterials 223 (2019) 119472.
+[65] M. Watanabe, K. Suzuki, S. Kodama, T. Sugahara, Normal human cells at 
+confluence get heat resistance by efficient accumulation of HSP72 in nucleus, 
+Carcinogenesis 16 (1995) 2373–2380.
+[66] Z. Chu, J. Yang, W. Zheng, J. Sun, W. Wang, H. Qian, Recent advances on 
+modulation of H2O2 in tumor microenvironment for enhanced cancer therapeutic 
+efficacy, Coord. Chem. Rev. 481 (2023) 215049.
+[67] S. Dong, Y. Dong, T. Jia, S. Liu, J. Liu, D. Yang, F. He, S. Gai, P. Yang, J. Lin, GSH- 
+depleted nanozymes with hyperthermia-enhanced dual enzyme-mimic activities 
+for tumor nanocatalytic therapy, Adv. Mater. 32 (2020) 2002439.
+[68] Y.O. Alexandre, S.N. Mueller, Splenic stromal niches in homeostasis and immunity, 
+Nat. Rev. Immunol. 23 (2023) 705–719.
+Y. Guo et al.                                                                                                                                                                                                                                     
+Nano Today 65 (2025) 102848 
+15

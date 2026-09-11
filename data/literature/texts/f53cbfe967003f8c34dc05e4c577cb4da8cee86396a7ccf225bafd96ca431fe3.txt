@@ -1,0 +1,860 @@
+RESEARCH ARTICLE
+www.advancedscience.com
+Coordination Geometry Tuning in a Single-Atom Nanozyme
+to Mimic Metalloenzymes with Nonplanar Active Site
+Hyesung Lee, Changjoon Keum, Choah Kwon, Sangtae Kim, Youngdo Jeong,*
+and Sang-Yup Lee*
+Single-atom nanozymes (SAzymes) have been developed to mimic
+metalloenzymes by modulating their coordination environment. However, the
+impact of the coordination geometry at the metal center on the catalytic
+activity of the SAzymes, particularly those with nonplanar active site
+conﬁgurations, has been minimally explored. Here, the eﬀects of the
+geometric conﬁguration of the Zn–N4 active sites on the catalytic activity of
+the carbonic anhydrase (CA)-mimetic SAzymes are reported. CA-mimetic
+SAzymes with Zn–N4 active sites in tetrahedral, distorted tetrahedral, and
+square-planar conﬁgurations are prepared by simple temperature-controlled
+carbonization of ZIF-8. The SAzyme with the distorted tetrahedral Zn–N4
+conﬁguration displays superior catalytic CO2 hydration activity, attributed to
+increased Lewis acidity. Density functional theory (DFT) calculations reveal a
+pronounced Zn–OH aﬃnity and localized electron accumulation at the
+distorted tetrahedral Zn site. These results demonstrate the critical role of
+precise geometric tuning in enhancing SAzyme eﬃcacy and can be used to
+facilitate potential avenues for optimizing metal active centers in enzyme
+mimetics.
+H. Lee, S.-Y. Lee
+Department of Chemical and Biomolecular Engineering
+Yonsei University
+Seoul 03722, Republic of Korea
+E-mail: leessy@yonsei.ac.kr
+C.Keum,Y.Jeong
+CenterforAdvancedBiomolecularRecognition
+Biomedical Research Division
+Korea Instituteof ScienceandTechnology (KIST)
+Seoul 02792, Republic of Korea
+E-mail: zerodegree@kist.re.kr
+C.Kwon,S.Kim
+Department of NuclearEngineering andDepartment of Materials Science
+andEngineering
+Hanyang University
+Seoul 04763, Republic of Korea
+Y.Jeong
+Department of HY-KISTBio-convergence
+Hanyang University
+Seoul 04763, Republic of Korea
+The ORCID identiﬁcation number(s) for the author(s) of this article
+can be found under https://doi.org/10.1002/advs.202505733
+© 2025 The Author(s). Advanced Science published by Wiley-VCH
+GmbH. This is an open access article under the terms of the Creative
+Commons Attribution License, which permits use, distribution and
+reproduction in any medium, provided the original work is properly cited.
+DOI: 10.1002/advs.202505733
+1. Introduction
+Single-atom nanozymes (SAzymes) have
+gained attention as potential biomimetic
+catalysts, emulating the structural charac-
+teristics of metalloenzymes with the desired
+catalytic activity,[1–3] as well as bioorthogo-
+nal catalysts that do not occur in biological
+processes.[4,5] In particular, as cost-eﬀective
+alternatives to natural enzymes, SAzymes
+provide advantages in terms of produc-
+tion cost, designer capability, and high
+thermal and mechanical stability; thus,
+they are suitable for applications such as
+biosensing, therapeutics, environmental re-
+mediation, in vivo reactive oxygen species
+regulation,
+and
+biomedical
+ﬁelds.[6–11]
+Among
+various
+biomimetic
+SAzymes,
+those composed of nitrogen-coordinated
+metal atoms on carbonaceous supports
+(M–NC, M: metal) have been extensively
+studied due to their high similarity to M–
+NX sites in metalloenzymes.[1,12–14] These
+M–NC SAzymes have demonstrated unique enzyme-like cat-
+alytic activities similar to those of horseradish peroxidase (HRP),
+cytochrome P450, and catalase.[15–18] However, creating SAzymes
+with precisely tuned molecular architectures remains challeng-
+ing, and developing a reliable method to accurately reproduce
+the conﬁgurations of the enzyme active sites, which are con-
+structed by myriad combinations of amino acid sequences, is
+essential.
+Previous research has explored various strategies to mod-
+ulate the activity of M–NC SAzymes, including modiﬁcation
+of the atomic metal center and the local environment.[15,19,20]
+For instance, Jiao et al. demonstrated that the type of metal
+center signiﬁcantly aﬀects the catalytic hydroperoxidation ac-
+tivity of planar M–NX SAzymes.[21] Ji et al. enhanced the
+peroxidation kinetics through phosphorus substitution at the
+planar Fe–N3P site, highlighting the inﬂuence of coordinat-
+ing ligand properties on catalysis.[22] Additionally, Liu and col-
+leagues introduced an axial N ligand to the planar Fe–N4 ac-
+tive site, which imitated the penta-coordinated Fe center of
+HRP, and showed the eﬀect of the surrounding environment
+on SAzyme activity.[13] These M–N4 SAzymes, structured on car-
+bonaceous scaﬀolds with a square-planar coordination, mim-
+icking the active center conﬁguration of heme in heme en-
+zymes. These studies conﬁrm the essential role of the coor-
+dination environment in determining SAzyme activity. How-
+Adv. Sci. 2025, 12, e05733
+e05733 (1 of 10)
+© 2025 The Author(s). Advanced Science published by Wiley-VCH GmbH
+
+www.advancedsciencenews.com
+www.advancedscience.com
+Figure 1. Scheme of the coordination geometries of Zn–N4 in ZCT SAzymes controlled by the carbonization of ZIF-8. a) Structure of human CA showing a
+zinc active center that can convert carbon dioxide to bicarbonate and protons. b) Temperature-controlled pyrolysis of ZIF-8 to modulate the coordination
+geometry of Zn–N4 in ZCT SAzymes from tetrahedral to distorted tetrahedral and then to square planar structures to eﬀectively mimic the nonplanar
+structure of the active site in CA.
+ever, the eﬀect of nonplanar active site conﬁgurations on cat-
+alytic activity remains underexplored.[15,23] This gap highlights
+the pressing need to develop SAzymes with controlled geomet-
+ric conﬁgurations, with the aim of diversifying their catalytic
+functions.
+Carbonic anhydrase (CA) is a well-known metalloenzyme that
+plays a pivotal role in the reversible hydration of carbon diox-
+ide into bicarbonate ion (HCO3−), facilitating CO2 transport in
+biological systems. It also demonstrates eﬃcient esterase ac-
+tivity, making it a subject of signiﬁcant interest in various ap-
+plications, including biotechnology, large-scale CO2 sequestra-
+tion, biofuel production, and calcite synthesis.[24–28] Extensive
+X-ray crystallography studies have revealed that the active site
+of human CA features a Zn atom coordinated with three his-
+tidine imidazoles and a hydroxide in a distorted tetrahedral ge-
+ometry, characterized by nonstandard Zn─His bond angles and
+varying bond lengths.[29] This indicates that nature favors a dis-
+torted tetrahedral conﬁguration, which could guide the enhance-
+ment of the catalytic activity of CA-mimetic SAzymes by alter-
+ing the coordination geometry. In this study, we synthesized
+CA-mimetic SAzymes by carbonizing ZIF-8 at various temper-
+atures (ZCT), thereby controlling the coordination geometry of
+the Zn active site through pyrolysis (Figure 1). The resulting ZCT
+SAzymes featured multiple Zn–N4 active sites on N-doped car-
+bon supports. As the pyrolysis temperature increased, the coor-
+dination geometry of the Zn center transformed from tetrahe-
+dral to distorted tetrahedral and ultimately to square-planar. The
+ZCT SAzyme with the distorted tetrahedral conﬁguration exhib-
+ited enhanced Lewis acidity and hydrolysis activity. Density func-
+tional theory (DFT calculations conﬁrmed that the distorted co-
+ordination geometry leads to the localization of electron density,
+enhancing Lewis acidity and promoting the rate-determining de-
+protonation step of Zn–H2O to Zn–OH, thus facilitating CO2
+hydration.
+2. Results and Discussion
+2.1. Characterization of the ZCT SAzymes
+ZIF-8 is a well-known precursor for producing square-planar Zn–
+N4 single-atom catalysts, which are formed through the gradual
+transformation of its original tetrahedral Zn–N4 conﬁguration
+during pyrolysis at temperatures above 900 °C.[30,31] While the re-
+sulting Zn active sites in pyrolyzed ZIF-8 retain an additional N
+ligand compared to natural CAs, they nevertheless serve as suit-
+able models to explore the relationship between coordination ge-
+ometry and catalytic performance,[32–36] particularly for mimick-
+ing metalloenzymes with nonplanar active sites. The as-prepared
+ZIF-8 and ZCTs had a rhombic dodecahedral structure, as evident
+in the transmission electron microscopy (TEM) images (Figure
+S1, Supporting Information). The size (d = ∼60 nm) and polyhe-
+dral structure of ZIF-8 were preserved even after pyrolysis at 900
+°C. TEM-energy-dispersive X-ray spectroscopy (EDS) analysis
+conﬁrmed the even distribution of Zn atoms on the carbonaceous
+nanoparticles without crystalline Zn clusters, regardless of the
+pyrolysis temperature (Figure 2a; Figure S2, Supporting Informa-
+tion). Aberration-corrected high-angle annular dark-ﬁeld scan-
+ning TEM (HAADF-STEM) further revealed single Zn atoms
+in the ZC700 SAzyme, as indicated by the presence of isolated
+bright dots (marked by red circles) on the support (Figure 2b).
+The X-ray diﬀraction (XRD) patterns of the ZCT SAzymes dis-
+played two broad peaks corresponding to the (002) and (100) car-
+bon planes at 2𝜃= 26° and 44°, respectively (Figure 2c). These
+XRD patterns showed a contrast between the weakly crystalline
+nature of the N-doped carbon and the highly crystalline ZIF-8, in-
+dicating that the organized Zn-mIm coordination collapsed dur-
+ing thermal treatment. In addition, no sharp peaks associated
+with crystalline Zn0 particles or ZnO were observed; this result
+was consistent with the above TEM observations. Notably, acid
+Adv. Sci. 2025, 12, e05733
+e05733 (2 of 10)
+© 2025 The Author(s). Advanced Science published by Wiley-VCH GmbH
+ 21983844, 2025, 34, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202505733 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advancedscience.com
+Figure 2. Characterization of the ZCT SAzymes. a) TEM and atomic mapping images and b) HAADF-STEM image of ZC700. c) XRD patterns and d)
+FT-EXAFS spectra and best ﬁts in the R-space of ZIF-8 and ZCT SAzymes prepared at 600–900 °C. e) Wavelet-transformed EXAFS contour plots of Zn
+foil, ZIF-8, ZnPc, and ZC700.
+washing successfully removed the unstable crystalline Zn species
+detected from the non-acid-treated ZCTs (Figures S3 and S4, Sup-
+porting Information), while the Zn species remained in a single-
+atom state.[37,38] The pyrolysis process of ZIF-8 was examined us-
+ing thermogravimetric analysis (TGA) (Figure S5, Supporting In-
+formation). ZIF-8 exhibited good thermal stability up to 500 °C,
+with signiﬁcant mass decreases at 608 and 640 °C. These de-
+creases were attributed to the release of free methyl groups and
+CN−/HCN groups from imidazole rings, respectively.[37] The or-
+ganic linker molecule of mIm prevented the aggregation of the
+Zn ions, assisting the formation of single-atom Zn sites on N-
+doped carbon supports. The bond between Zn2+ and imidazole
+is the most stable among N-donor ligands, which may mini-
+mize Zn release during the pyrolysis process.[39,40] The Zn load-
+ings determined by inductively coupled plasma-optical emission
+spectroscopy (ICP‒OES) were 4.96, 5.41, 6.96, and 5.99 wt.% for
+ZC600, ZC700, ZC800, and ZC900, respectively. The Zn con-
+tent increased beyond 600 °C due to the enhanced loss of or-
+ganic mass but decreased at 900 °C as Zn evaporated at ≈906 °C.
+The N2 isotherms of ZIF-8 and the ZCTs were analyzed to deter-
+mine their porosity and Brunauer‒Emmett‒Teller (BET) surface
+area (Figure S6 and Table S1, Supporting Information). ZIF-8 ex-
+hibited a typical reversible type-I isotherm, which transitioned
+to type-II with a hysteresis loop attributed to capillary conden-
+sation after carbonization.[41,42] This result indicated signiﬁcant
+changes in the porous texture during the pyrolysis process. All
+samples exhibited high gas adsorption at p/p0 < 0.1, indicating a
+microporous structure. The surface area and pore volume signif-
+icantly decreased after the carbonization of ZIF-8. After thermal
+treatment, the microporous structure of ZIF-8, with a pore width
+of ∼1.1 nm, collapsed, and new micropores with pore sizes of 0.5
+nm and 1–2 nm were generated.
+The chemical composition of the ZCT was examined by X-ray
+photoelectron spectroscopy (XPS) (Figure S7 and Table S2, Sup-
+porting Information).[43,44] High-resolution C1s spectra showed
+that the carbon textures of ZCT included four distinct C species
+located at 284.6, 285.8 (± 0.1), 287.5 (± 0.1) and 288.8 (± 0.2)
+eV, attributed to C─C/C═C, C═N, C─N, and COOH bonds, re-
+Adv. Sci. 2025, 12, e05733
+e05733 (3 of 10)
+© 2025 The Author(s). Advanced Science published by Wiley-VCH GmbH
+ 21983844, 2025, 34, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202505733 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advancedscience.com
+spectively. The proportion of C═N bonds decreased as the car-
+bonization temperature increased due to the evaporation of ni-
+trogen. The deconvolution of the N 1s spectra revealed the pres-
+ence of four N species in ZCT: pyridinic N (398.3 ± 0.1 eV),
+pyrrolic N (400.0 ±0.1 eV), graphitic N (400.9 ± 0.1 eV), pyridine-
+N-oxide (402.5 ± 0.1 eV), and chemisorbed N-oxide (404.2 ± 0.1
+eV). For ZC600, pyridinic N and pyrrolic N were the dominant
+species, and the proportions of graphitic N and N-oxide species
+gradually increased with increasing pyrolysis temperature. High-
+resolution Zn 2p spectra of the ZCT samples revealed that the
+oxidation state of Zn was maintained at a divalent state (Figure
+S7g,h, Supporting Information). The slight peak shift of Zn 2p3/2
+from 1021.1 to 1021.4 eV with increasing carbonization temper-
+ature indicated a change in the coordination environment of the
+Zn species in ZCT.[45] The carbonaceous support of the ZCT
+SAzyme was further analyzed by Raman spectroscopy (Figure S8,
+Supporting Information). The spectra of ZCT SAzymes exhib-
+ited two broad D (∼1335 cm−1) and G (∼1587 cm−1) bands and
+featureless second-order bands (2D and G + D) between 2700
+and 3000 cm−1.[46] The D band is known as the disorder band
+or defect band, while the G band, known as graphitic band, is
+attributed to planar conﬁguration of sp2 carbon. The ID/IG ra-
+tios were 0.92, 1.05, 1.10, and 1.14 for ZC600, ZC700, ZC800,
+and ZC900, respectively. This result indicates that the defects in-
+crease with the increase of the carbonization temperature, pre-
+sumably because of the evaporation of N species resulting in
+defects on carbonaceous support.[47] At the same time, the por-
+tion of pyrrolic N decreases and graphitic N increases with the
+carbonization temperature (Figure S7j, Supporting Information).
+The lengths of C─N bonds of pyrrolic N and graphitic N are
+1.33–1.34 Å and 1.41 Å, respectively, while the in-plane C─C
+bond length is 1.42 Å.[48,49] The bigger diﬀerence of the bond
+length between C─N bond and C─C bond of pyrrolic N than
+that of graphitic N might induce compressive strain to the car-
+bonaceous matrix. Therefore, the geometry of the Zn-N4 active
+sites of ZCT SAzymes might undergo ﬂattening as the carboniza-
+tion temperature increases, distorting the original tetrahedral
+conﬁguration of ZIF-8. Meanwhile, in the ZC600 SAzyme, addi-
+tional bands of ─CH3 bending/C–N stretching and ring stretch-
+ing vibrations were observed at 1425 and 1510 cm−1, respectively.
+These peaks indicated that the methyl groups and ring structure
+of the N-containing carbon oligomers remained even after pyrol-
+ysis at these temperatures.[50,51] The remaining organic compo-
+nents were further conﬁrmed by FT-IR analysis (Figure S9, Sup-
+porting Information). The spectrum of ZIF-8 was consistent with
+that in previously reported literature.[52,53] After the pyrolysis of
+ZIF-8, the C-H bending peak at 1385 cm−1 from the methyl group
+was observed in ZC600, and this peak disappeared above 600 °C.
+Furthermore, the bands of the ═C─H and C─N bonds of ZIF-8
+at 1146 and 1177 cm−1 shifted to 1120 and 1144 cm−1, respec-
+tively, in ZC600 and ZC700 and disappeared in ZC800. The band
+corresponding to the C─H bond at 619 cm−1 also disappeared
+at 800 °C, indicating almost complete carbonization of the mIm
+ligands.
+X-ray absorption spectroscopy (XAS) analyses were further
+conducted to elucidate the state of the single-atom Zn on the car-
+bon support. The Fourier-transformed extended X-ray absorption
+ﬁne structure (FT-EXAFS) spectra of the ZCT samples and their
+best ﬁts revealed the coordination structure of the Zn species
+Table 1. Zn-EXAFS ﬁtting results of the ZIF-8 and ZCTs.
+Path
+Na)
+Distance [Å]
+Debye-Waller
+factor [Å2]
+R-factorb)
+ZIF-8
+Zn-N
+4.24(0.32)
+1.994(0.006)
+0.004(0.001)
+0.008
+Zn-C
+4.11(0.56)
+2.984(0.017)
+0.004(0.001)
+ZC600
+Zn–N
+4.31(0.39)
+2.046(0.009)
+0.007(0.002)
+0.010
+Zn–C
+1.83(0.47)
+3.009(0.028)
+0.002(0.001)
+ZC700
+Zn–N
+4.26(0.54)
+2.038(0.012)
+0.007(0.002)
+0.015
+Zn–C
+3.41(0.43)
+3.010(0.037)
+0.007(0.002)
+ZC800
+Zn–N
+4.46(0.26)
+2.034(0.005)
+0.009(0.001)
+0.004
+Zn–C
+1.18(0.25)
+2.977(0.021)
+0.002(0.001)
+ZC900
+Zn–N
+4.30(0.26)
+2.029(0.006)
+0.010(0.001)
+0.004
+Zn–C
+1.01(0.25)
+2.911(0.028)
+0.004(0.001)
+a)Coordination number;
+b)a measure of the mean square sum of the misﬁt at each
+data point. Fit range: 2.2 < k < 12 Å−1; 1 < R < 2.8 Å; Fit window: Hanning. The
+values in brackets indicate the error ranges.
+(Figure 2d). Two peaks in the FT-EXAFS spectra at 1.54 and 2.57
+Å were assigned to the Zn─N and Zn─C paths, respectively,
+while the Zn–Zn path was not observable. The ﬁtting results
+from Table 1 indicated that Zn existed in the Zn–N4 coordina-
+tion structure, showing that the Zn–N4 coordination remained
+after carbonization. Remarkably, the Zn─N bond length gradu-
+ally decreased from 2.046 to 2.029 Å as the carbonization tem-
+perature increased from 600 to 900 °C. Thus, the coordination
+structure could be precisely controlled at the atomic level by ad-
+justing the pyrolysis temperature. Wavelet-transformed EXAFS
+contour plots of ZC700 and Zn references (Zn foil, ZIF-8, and
+Zn-phthalocyanine (ZnPc)) further conﬁrmed the absence of a
+Zn–Zn path centered at k = ∼6.1 Å−1 and R + ΔR = ∼2.3 Å
+(Figure 2e; Figure S10, Supporting Information).
+Zn2+ has an electronic conﬁguration of [Ar]3d10. The ﬁlled d
+shell does not provide crystal ﬁeld stabilization of Zn2+. There-
+fore, the coordination geometry of Zn is determined by the lig-
+and environment.[54,55] In a given ligand system, the electronic
+structure of Zn–N4 is determined by the coordination geome-
+try. The X-ray absorption near-edge structure (XANES) spectrum
+is used to identify the detailed coordination geometry of Zn–
+N4 in the ZCT SAzymes because the XANES region provides K-
+absorption edge energy and 1s→4p electronic transition (Figure
+3a; Figure S11, Supporting Information).[56–58] The K-absorption
+edge energy of Zn was determined from the ﬁrst maximum of the
+1st derivative of the XANES spectrum. A Zn reference of ZnPc,
+with a square-planar coordination geometry, has the highest K-
+absorption edge energy at 9659.9 eV, while another reference of
+ZIF-8, with a well-deﬁned tetrahedral geometry, has a maximum
+at 9661.2 eV. Remarkably, the K-absorption edge energy of the
+ZCT SAzymes changed with respect to the carbonization temper-
+ature. Since ZnPc, ZIF-8, and ZCT have the same oxidation states
+of +2 and Zn–N4 coordination, the diﬀerence in the XANES spec-
+tra was caused by the variation in the coordination geometry. As
+shown in Figure 3a, the ﬁrst maximum of the 1st derivative of
+the XANES spectra of the ZCT SAzymes gradually shifted from
+the position of ZIF-8 to that of ZnPc with increasing temperature,
+showing the transformation of the coordination geometry. ZC600
+had a similar K-absorption edge energy to that of ZIF-8, indicat-
+Adv. Sci. 2025, 12, e05733
+e05733 (4 of 10)
+© 2025 The Author(s). Advanced Science published by Wiley-VCH GmbH
+ 21983844, 2025, 34, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202505733 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advancedscience.com
+Figure 3. Variations in the coordination geometry and acidity with increasing carbonization temperature. a) 1st derivatives of the Zn-XANES spectra of
+ZC600, ZC700, ZC800, ZC900 and Zn references (ZIF-8 and ZnPc) and b) NH3-TPD proﬁles of ZCT.
+ing that its coordination geometry did not signiﬁcantly deviate
+from the tetrahedral conﬁguration of ZIF-8. The K-absorption
+edge energy of ZC900 was 9660.4 eV, which was close to that
+of ZnPc with a square-planar conﬁguration. The K-absorption
+edge energy maxima of ZC700 and ZC800 were between those of
+the tetrahedral and square-planar conﬁgurations, indicating dis-
+torted tetrahedral Zn–N4 conﬁgurations. By considering both the
+EXAFS and XANES results, the distance and geometry of the Zn
+coordination with ligating N species were changed by modulat-
+ing the pyrolysis temperature. This could subsequently alter the
+electronic density distribution at the Zn center and neighboring
+ligands, aﬀecting the reactivity.[59,60]
+Since the distortion in the coordination geometry could ex-
+hibit strong Lewis acidity due to the facilitated formation of va-
+cant positions in the coordination sphere,[61] the Lewis acidity of
+ZCT SAzymes was examined as further evidence of the trans-
+formation in the coordination geometry. NH3-temperature pro-
+grammed desorption (NH3-TPD) was conducted to investigate
+the acidity of the ZCT SAzymes (Figure 3b; Figure S12, Support-
+ing Information). Two desorption peaks were identiﬁed from the
+deconvolution of the NH3-TPD proﬁle. The peak at lower tem-
+peratures was attributed to the presence of Lewis acidic sites, i.e.,
+Zn2+, while the other peak was caused by the presence of the
+Brønsted acid sites, such as protonated pyrrolic N groups in the
+N-doped carbon scaﬀold. The peak maxima of the Lewis acidic
+site were located at 163.0, 170.6, 165.2, and 159.9 °C for ZC600,
+ZC700, ZC800, and ZC900, respectively. Based on these NH3 des-
+orption temperatures, the acidities of the Zn centers were in the
+order of ZC700 > ZC800 > ZC600 (tetrahedral) > ZC900 (square-
+planar). This order of Lewis acidity indicated that ZC700 had the
+most distorted structure among the tested ZCT SAzymes, while
+ZC600 and ZC900 had more uncurled structures. Furthermore,
+since the Lewis acidity of the zinc ions is an important factor that
+promotes CO2 hydration by lowering the pKa of the Zn-bound
+water,[62,63] the ZC700 and ZC800 SAzymes with distorted tetra-
+hedral geometries are expected to be more advantageous for CO2
+hydration.
+2.2. Ab Initio Computations of the Catalytic Activity of ZCT
+Ab initio computations revealed that the catalytic activity was
+strongly inﬂuenced by the geometry of the Zn–N4 active center, as
+illustrated in Figure 4. To investigate the eﬀect of the coordination
+geometry on the CO2 hydration activity, we constructed model
+systems by combining Zn–N4, hydrogen-passivated graphene,
+and 1,10-phenanthroline (Figure 4a). The model systems exhib-
+ited speciﬁc dihedral angles of 20°, 40°, and 60° when rotat-
+ing 1,10-phenanthroline. These angles were selected to repre-
+sent the square planar (ZC900), distorted tetrahedral (ZC700 and
+ZC800), and tetrahedral (ZC600) geometries, respectively. The
+model systems served to explicitly study the eﬀect of the coor-
+dination geometry (dihedral angles) on the catalytic activity. The
+bond lengths of Zn─N were identical among all the model sys-
+tems, and all other atoms were allowed to fully relax.
+The rate-determining step in CO2 hydration catalyzed by CA
+is the deprotonation of Zn–H2O to form Zn–OH,[25,64] which de-
+pends on the acidity of the active center. Therefore, we calculated
+the OH−adsorption energy for each Zn–N4 geometry, which
+served as a measure of the acidity of the active center (Figure 4b;
+Adv. Sci. 2025, 12, e05733
+e05733 (5 of 10)
+© 2025 The Author(s). Advanced Science published by Wiley-VCH GmbH
+ 21983844, 2025, 34, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202505733 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advancedscience.com
+Figure 4. Computed catalytic activity of the ZCT SAzyme. a) Model systems of ZC600, ZC700/ZC800 and ZC900. The model systems exhibit dihedral
+angles of 60°, 40°, and 20° for ZC600, ZC700/ZC800, and ZC900, respectively. b) Computed OH−adsorption energies at pH 14 and c) Integrated crystal
+orbital Hamilton population (-iCOHP) under various the dihedral angles. d) Energy diagram of CO2 hydration as a function of the dihedral angle at pH
+14. The gray, blue, red, and white circles represent C, N, O, and H, respectively.
+Adv. Sci. 2025, 12, e05733
+e05733 (6 of 10)
+© 2025 The Author(s). Advanced Science published by Wiley-VCH GmbH
+ 21983844, 2025, 34, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202505733 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advancedscience.com
+Figure S13, Supporting Information). The distorted tetrahedral
+geometry with a dihedral angle of 40° showed the lowest adsorp-
+tion energy among the three geometries. The reduction of the
+adsorption energy in the distorted structure remained consistent
+even when a model system with a shorter Zn─N bond length
+was considered, aligning with the experimental results (Figure
+S14, Supporting Information). The tendency to have the lowest
+adsorption energy at an angle of 40° remained even at an elevated
+pH of 14, although the adsorption energy steadily decreased with
+pH (Figure S15, Supporting Information). Theaverage integrated
+crystal orbital Hamilton populations (-iCOHP) obtained by in-
+tegration of the COHP (Figure S16a, Supporting Information)
+represent the chemical bond strength between two atoms at the
+Fermi level by projecting precalculated plane wave functions to
+Slater-type orbitals. The -iCOHP for the spin-up and spin-down
+population pairs at the Fermi level were determined to be (0.356
+eV, 0.367 eV), (0.374 eV, 0.396 eV), and (0.360 eV, 0.329 eV) for the
+Zn–N4 geometries at the dihedral angles of 60°, 40°, and 20°, re-
+spectively (Figure 4c). The highest -iCOHP at the dihedral angle
+of 40° conﬁrmed the pronounced Zn–O aﬃnity in the distorted
+tetrahedral geometry. In addition, the average bond strengths be-
+tween Zn and each coordinating N atom in the Zn–N4 conﬁgu-
+rations, depending on the geometry, were consistently computed
+at 0.55 eV, as depicted in Figure S16b (Supporting Information).
+In Zn–N4 structures with dihedral angles of 20° and 40°, elec-
+trons locally accumulated in the region between Zn and O, as
+illustrated in Figure S17 (Supporting Information). However, at
+60°, the electrons were more widely distributed due to steric hin-
+drance, inhibiting the stabilization of OH−on the Zn center. The
+localized accumulation of electrons between Zn and O signiﬁed
+a strong bond, rationalizing the high OH−adsorption energy.
+The calculated energy diagram of the CO2 conversion reaction
+also exhibited diﬀerences according to the coordination geome-
+try of the Zn active center (Figure 4d). The H+ ion dissociates
+from H2O at the Zn active center, forming OH−. The free CO2
+molecule then reacts with the OH−on the Zn center, leading to
+the formation of HCO3* with minimal activation barriers of 0.02,
+0.01, and 0.04 eV for the 20°, 40°, and 60° model systems, respec-
+tively (Figure S18a, Supporting Information). The substitution of
+HCO3* with H2O further proceeds on the Zn center with activa-
+tion barriers of 1.1, 0.90, and 0.53 eV for the 20°, 40°, and 60° ge-
+ometries, respectively, subsequently generating HCO3−(Figure
+S18b, Supporting Information). Under the charge conservation
+condition applied in our simulations, the adsorbed bicarbonate
+species (HCO3
+*) on Zn is assumed to possess a negative charge,
+which indicates HCO3
+* on Zn and the free HCO3
+−have the same
+net charge. As expected, the rate-determining step involved the
+deprotonation of adsorbed H2O on Zn, with the computed reac-
+tion energies of 1.12, 0.94, and 1.23 eV corresponding to Zn–N4
+geometries at dihedral angles of 60°, 40°, and 20°, respectively
+(shadowed area in Figure 4d). This trend in the reaction energy
+of the rate-determining step aligns well with the computed OH−
+adsorption energy in Figure 4b. The deprotonation reaction en-
+ergy decreased with increasing pH, which aligned with the facili-
+tated CO2 hydration under basic conditions (Figure S19, Support-
+ing Information). The deviation in the order of H2O adsorption
+in Figure S20 (Supporting Information) from the deprotonation
+energy trend in Figure 4d explains the stability of OH−on Zn,
+highlighting the role of active site acidity in governing the dehy-
+drogenation reaction. These computational results suggest that
+modifying the acidity of the active center through coordination
+geometry tuning can enhance CO2 hydration activity by promot-
+ing the deprotonation of Zn-bound H2O.
+2.3. Catalytic Hydrolysis Activity of ZCT
+Similar to the active site of CA, the Zn center of ZCT exhibited
+hydrolytic activity, as demonstrated by the hydrolysis of p-NPA
+to p-NP (Figure 5a; Figure S21, Supporting Information).[65,66]
+All ZCT SAzymes hydrolyzed p-NPA, with ZC700 exhibiting the
+highest hydrolysis activity, showed marked increases in the p-NP
+production over time (Figure S22, Supporting Information). The
+activities of ZCT SAzymes followed the order of ZC700 > ZC800
+> ZC600 ≈ZC900.
+The enzyme-like activity of ZCT is well illustrated in the kinetic
+study of the p-NPA hydrolysis.[67,68] The Michaelis–Menten kinet-
+ics model was applied to describe the catalytic reaction. As illus-
+trated in Figure 5b and Figure S23 (Supporting Information), the
+Michaelis-Menten model ﬁts well to describe the reaction kinet-
+ics, verifying the enzyme-like behavior of ZCT. The catalytic ef-
+ﬁciencies (Kcat/Km) of ZCT SAzymes were calculated from their
+turnover number (Kcat) and Michaelis constant (KM), following
+the order of ZC700 > ZC800 > ZC600 > ZC900. The surface
+area-normalized catalytic eﬃciencies, excluding the surface area
+eﬀect, also followed a similar order (Figure 5c and Table S3, Sup-
+porting Information). The hydrolysis activity of ZCT SAzymes
+correlates with the trends in Lewis acidity determined earlier.
+In addition, the surface-normalized catalytic eﬃciency of ZC700
+was 2.38 times higher than that of ZIF-8, while its catalytic ef-
+ﬁciency was 5.43 times higher than that of ZnPc in our exper-
+imental condition, with ZIF-8 and ZnPc exhibiting Zn–N4 ge-
+ometries with dihedral angles of 90° and 0°, respectively (Figure
+S24 and Table S3, Supporting Information). These results were
+in agreement with the Lewis acidity of ZCT SAzymes investi-
+gated earlier by the NH3-TPD experiment and DFT calculations
+(Figures 3b and 4b). Given that p-NPA hydrolysis is an acid-
+catalyzed reaction,[63] the high Lewis acidity of ZC700, attributed
+to its distorted tetrahedral geometry, was responsible for its en-
+hanced hydrolysis, suggesting that tuning coordination geome-
+try is advantageous for improving catalytic activity, while the N
+species or the ID/IG ratio seems to have less impact (Figure S25,
+Supporting Information). The higher catalytic activity of ZC700
+was supported by other physicochemical properties. First, the pKa
+values of the water bound to Zn active sites in ZCT SAzymes
+were experimentally evaluated. The rate of p-NPA hydrolysis dra-
+matically increased with increasing pH (Figure S26, Supporting
+Information) and was attributed to the increase in pKa.[66,69,70]
+The calculated pKa of ZC700 (8.27) was lower than those of other
+ZCT SAzymes; thus, ZC700 was advantageous for the deprotona-
+tion of Zn–bound H2O to form nucleophilic Zn–OH (Figure 5d).
+The activation energy (Ea) of the ZCT SAzyme is another prop-
+erty indicative of its catalytic activity. Assuming a 1st-order reac-
+tion, the reaction rate constant (k) was determined from the ini-
+tial reaction rate at controlled temperatures (Figure 5e). ZC700
+had the lowest activation energy of 19.4 kJ mol−1, while other
+ZCT SAzymes had higher values in the order of ZC800 (21.5
+kJ mol−1) < ZC600 (24.6 kJ mol−1) < ZC900 (30.4 kJ mol−1).
+Adv. Sci. 2025, 12, e05733
+e05733 (7 of 10)
+© 2025 The Author(s). Advanced Science published by Wiley-VCH GmbH
+ 21983844, 2025, 34, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202505733 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advancedscience.com
+Figure 5. Catalytic hydrolysis activity and CO2 sequestration of the ZCT SAzyme. a) UV‒Vis absorbance spectra of p-nitrophenol (p-NP) produced by the
+catalytic hydrolysis of p-nitrophenyl acetate (p-NPA) using ZC700 SAzyme (1 mg mL−1). The gradual increase in the peak of p-NP (at 400 nm) indicates
+the catalytic activity of ZC700 SAzyme. b) The double reciprocal plot of the substrate-dependent kinetics of the ZCT SAzymes. c) Catalytic eﬃciencies
+(Kcat/Km) and catalytic eﬃciency/surface area (Kcat/Km ∙surface area) of ZCT SAzymes. d) pKa values of the ZCT SAzymes measured from the pH
+proﬁles of the p-NPA hydrolysis activity. e) Arrhenius plots and activation energies (Ea) of the ZCT SAzymes. f) Reusability test of the ZC700 catalyst for
+p-NPA hydrolysis. The normalized absorbance represents the measured absorbance of p-NP (at 400 nm) normalized to the absorbance of p-NP acquired
+from the 1st cycle of the catalytic reaction. g) Proﬁles of the pH decay representing the catalytic CO2 hydration activity of the ZCT SAzymes. h) Weights
+of the CaCO3 precipitates produced after CO2 hydration using the ZCT SAzymes. i) XRD proﬁle of the CaCO3 precipitates (inset: SEM images of CaCO3
+precipitates).
+This result indicates that the geometric conﬁguration plays a
+crucial role in determining the thermodynamic reaction barrier.
+The catalytic performance of ZC700 is compared with native en-
+zymes and their mimics in Table S4 (Supporting Information).
+Although ZC700 showed lower catalytic activity than the native
+CAs, the above results demonstrate that the catalytic activity of
+the enzyme-mimetic catalysts can be improved by the geometric
+tuning of the active site, which has been overlooked by previous
+research on enzyme-mimetics.
+The reusability of ZC700 SAzyme maintained 99% of its ini-
+tial activity even after ﬁve cycles of reuse (Figure 5f). Due to its
+maintenance of catalytic activity, the deterioration of the ZCT,
+such as the leakage of Zn from the N-doped carbon support,
+was considered to be negligible. XANES and EXAFS analyses of
+the used ZC700 were conducted to conﬁrm that the original ge-
+ometric structure of the Zn-N4 active site was maintained after
+the catalytic reactions (Figure S27, Supporting Information). The
+used ZC700 exhibited slightly reduced 1s→4p electronic transi-
+tion and slightly increased white line intensity, while maintaining
+the white line position. This indicates the coordination number
+increased, accompanying the slight position shift of the K-edge
+energy to higher energy.[71] FT-EXAFS analysis further revealed
+that the coordination number of Zn─N/O bond increased to 5.49
+after the reaction (Table S5, Supporting Information). The in-
+Adv. Sci. 2025, 12, e05733
+e05733 (8 of 10)
+© 2025 The Author(s). Advanced Science published by Wiley-VCH GmbH
+ 21983844, 2025, 34, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202505733 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advancedscience.com
+crease in the coordination number is presumably attributed to
+the addition of ─OH group to Zn–N4 active site after the cat-
+alytic reaction. Nevertheless, the results of the reuse test suggest
+that the original distorted tetrahedral geometry of Zn–N4 is main-
+tained under the reaction conditions.
+To demonstrate practical application, catalytic CO2 sequestra-
+tion by the ZCT SAzyme was conducted. First, the pH reduction
+of the CO2-saturated solution was monitored in the presence of
+ZCT SAzymes over time (Figure 5g). In accordance with p-NPA
+hydrolysis, ZC700 exhibited the fastest pH decay among all ZCT
+SAzymes and reached the lowest pH after 80 s of reaction. CO2
+sequestration was subsequently conducted via a reaction with
+Ca2+ ions to mineralize CaCO3. In agreement with the CO2 hy-
+dration results, the largest amount of CaCO3 calcite was precipi-
+tated from the ZC700-treated CO2 solution (Figure 5h). XRD and
+elemental analysis veriﬁed the high purity of the calcite structure
+(Figure 5i; Figure S28, Supporting Information).
+3. Conclusion
+In summary, based on the experimental data and DFT calcula-
+tions of the CA-mimetic Zn–N4 SAzymes, variations in their co-
+ordination geometries altered the electron density distribution,
+Lewis acidity, and subsequent hydrolysis activity of the Zn active
+center. These changes could be simply achieved by controlling the
+pyrolysis temperature during the SAzyme preparation. Among
+the Zn–N4 active sites with diﬀerent coordination geometries, the
+distorted tetrahedral geometry exhibited the highest catalytic ac-
+tivity. Its asymmetric coordination structure caused a localized
+electron density distribution, leading to enhanced Lewis acidity
+of the Zn center. The temperature-controlled pyrolysis of ZIF-
+8 showed a way to modulate the coordination geometry, along
+with the production of N-doped carbon support; this was diﬃ-
+cult to achieve with the SAzymes implanted in pretreated car-
+bon supports. Furthermore, the maintenance of enhanced cat-
+alytic activity even after repeated reactions indicated the outstand-
+ing stability of the single-atom catalyst. The reaction kinetics
+followed an enzymatic process; and due to the Lewis acidity of
+the active center and the underlying reaction mechanism, these
+SAzymes are promising CA mimic analogs with the potential to
+be extended as analogs of hydrolases, such as organophosphate
+hydrolase.[72] As one of the strategies to engineer the coordina-
+tion environment,[73,74] this approach of controlling the geomet-
+ric conﬁguration of metal active centers can provide the basis for
+a de novo methodological approach to develop a more eﬀective
+and extended series of natural enzyme mimics in the SAzyme
+ﬁeld for future industrial and biological applications.
+Supporting Information
+Supporting Information is available from the Wiley Online Library or from
+the author.
+Acknowledgements
+H.L., C.K., and C.K. contributed equally to this work. This research was sup-
+ported by a grant from the National Research Foundation of Korea, funded
+by the Ministry of Science and ICT (MSIT) (2021M3D3A1A01079478, S.-
+Y.L.) and the Korea Health Technology R&D Project through the Korea
+Health Industry Development Institute (KHIDI), funded by the Ministry of
+Health & Welfare, Republic of Korea (grant number: HI19C075300, C.K.).
+This research was also supported by the Basic Science Research Program
+through the National Research Foundation of Korea (NRF), funded by the
+Ministry of Science and ICT (MSIT) (RS-2023-NR076539, Y.J.). The com-
+putational resources from the KISTI Supercomputing Center are acknowl-
+edged through KSC-2022-CRE-0457.
+Conﬂict of Interest
+The authors declare no conﬂict of interest.
+Data Availability Statement
+The data that support the ﬁndings of this study are available in the sup-
+plementary material of this article.
+Keywords
+carbonic anhydrase, CO2, coordination geometry, hydrolysis, single-atom
+nanozyme
+Received: March 31, 2025
+Revised: May 26, 2025
+Published online: August 9, 2025
+[1] L. Jiao, H. Yan, Y. Wu, W. Gu, C. Zhu, D. Du, Y. Lin, Angew. Chem., Int.
+Ed. 2020, 59, 2565.
+[2] Y. Chen, P. Wang, H. Hao, J. Hong, H. Li, S. Ji, A. Li, R. Gao, J. Dong,
+X. Han, M. Liang, D. Wang, Y. Li, J. Am. Chem. Soc. 2021, 143, 18643.
+[3] W. Wu, L. Huang, E. Wang, S. Dong, Chem. Sci. 2020, 11, 9741.
+[4] F. Cao, L. Zhang, Y. You, L. Zheng, J. Ren, X. Qu, Angew. Chemie 2020,
+132, 5146.
+[5] M. Sun, X. Liu, Z. Liu, W. Zhang, G. Li, J. Ren, X. Qu, J. Am. Chem.
+Soc. 2024, 146, 8216.
+[6] A. Robert, B. Meunier, ACS Nano 2022, 16, 6956.
+[7] R. Geng, R. Chang, Q. Zou, G. Shen, T. Jiao, X. Yan, Small 2021, 17,
+2008114.
+[8] R. Zhang, B. Jiang, K. Fan, L. Gao, X. Yan, Nat. Rev. Bioeng. 2024, 2,
+849.
+[9] S. Shahraki, E. Vaziri, A. A. Saboury, K. Fan, Coord. Chem. Rev. 2024,
+517, 215937.
+[10] Y. Yu, Y. Zhang, Y. Wang, W. Chen, Z. Guo, N. Song, M. Liang, Nano
+Res. 2023, 16, 10763.
+[11] N. Song, Y. Yu, Y. Zhang, Z. Wang, Z. Guo, J. Zhang, C. Zhang, M.
+Liang, Adv. Mater. 2024, 36, 2210455.
+[12] B. Xu, H. Wang, W. Wang, L. Gao, S. Li, X. Pan, H. Wang, H. Yang, X.
+Meng, Q. Wu, L. Zheng, S. Chen, X. Shi, K. Fan, X. Yan, H. Liu, Angew.
+Chemie 2019, 131, 4965.
+[13] B. Xu, S. Li, L. Zheng, Y. Liu, A. Han, J. Zhang, Z. Huang, H. Xie, K.
+Fan, L. Gao, H. Liu, Adv. Mater. 2022, 34, 2107088.
+[14] S. Ding, Z. Lyu, L. Fang, T. Li, W. Zhu, S. Li, X. Li, J. Li, D. Du, Y. Lin,
+Small 2021, 17, 2100664.
+[15] R. Zhang, X. Yan, K. Fan, Accounts Mater. Res. 2021, 2, 534.
+[16] C. Keum, C. M. Hirschbiegel, S. Chakraborty, S. Jin, Y. Jeong, V. M.
+Rotello, Nano Converg. 2023, 10, 42.
+[17] Z. Guo, J. Hong, N. Song, M. Liang, Accounts Mater. Res. 2024, 5, 347.
+[18] Y. Chen, B. Jiang, H. Hao, H. Li, C. Qiu, X. Liang, Q. Qu, Z. Zhang,
+R. Gao, D. Duan, S. Ji, D. Wang, M. Liang, Angew. Chemie 2023, 135,
+202301879.
+Adv. Sci. 2025, 12, e05733
+e05733 (9 of 10)
+© 2025 The Author(s). Advanced Science published by Wiley-VCH GmbH
+ 21983844, 2025, 34, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202505733 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advancedscience.com
+[19] S. N. Natoli, J. F. Hartwig, Acc. Chem. Res. 2019, 52, 326.
+[20] H. Zhang, W. Tian, X. Duan, H. Sun, S. Liu, S. Wang, Adv. Mater. 2020,
+32, 1904037.
+[21] L. Jiao, J. Wu, H. Zhong, Y. Zhang, W. Xu, Y. Wu, Y. Chen, H. Yan, Q.
+Zhang, W. Gu, L. Gu, S. P. Beckman, L. Huang, C. Zhu, ACS Catal.
+2020, 10, 6422.
+[22] S. Ji, B. Jiang, H. Hao, Y. Chen, J. Dong, Y. Mao, Z. Zhang, R. Gao, W.
+Chen, R. Zhang, Q. Liang, H. Li, S. Liu, Y. Wang, Q. Zhang, L. Gu, D.
+Duan, M. Liang, D. Wang, X. Yan, Y. Li, Nat. Catal. 2021, 4, 407.
+[23] C. M. Rufo, Y. S. Moroz, O. V. Moroz, J. Stöhr, T. A. Smith, X. Hu, W.
+F. DeGrado, I. V. Korendovych, Nat. Chem. 2014, 6, 303.
+[24] P. Makam, S. S. R. K. C. Yamijala, K. Tao, L. J. W. Shimon, D. S.
+Eisenberg, M. R. Sawaya, B. M. Wong, E. Gazit, Nat. Catal. 2019, 2,
+977.
+[25] J. K. Kim, C. Lee, S. W. Lim, A. Adhikari, J. T. Andring, R. McKenna,
+C.-M. Ghim, C. U. Kim, Nat. Commun. 2020, 11, 4557.
+[26] C. Molina-Fernández, P. Luis, J. CO2 Util. 2021, 47, 101475.
+[27] S. Talekar, B. H. Jo, J. S. Dordick, J. Kim, Curr. Opin. Biotechnol. 2022,
+74, 230.
+[28] I. Iliuta, H. Rasouli, M. C. Iliuta, Chem. Eng. J. 2023, 455, 140625.
+[29] C. A. Behnke, I. Le Trong, J. W. Godden, E. A. Merritt, D. C. Teller,
+J. Bajorath, R. E. Stenkamp, Acta Crystallogr. Sect. D Biol. Crystallogr.
+2010, 66, 616.
+[30] C. Qiao, C. Wang, H. Luo, Y. Ma, X. Luo, S. Zhang, D. Huo, C. Hou,
+Small 2024, 20, 2402674.
+[31] W. Xu, R. Zeng, M. Rebarchik, A. Posada-Borbón, H. Li, C. J. Pollock,
+M. Mavrikakis, H. D. Abruña, J. Am. Chem. Soc. 2024, 146, 2593.
+[32] D. P. Linder, B. E. Baker, K. R. Rodgers, Phys. Chem. Chem. Phys. 2018,
+20, 24979.
+[33] X. Zhang, R. van Eldik, T. Koike, E. Kimura, Inorg. Chem. 1993, 32,
+5749.
+[34] X. Zhang, R. van Eldik, Inorg. Chem. 1995, 34, 5606.
+[35] S. H. Gellman, R. Petter, R. Breslow, J. Am. Chem. Soc. 1986, 108,
+2388.
+[36] T. Koike, E. Kimura, J. Am. Chem. Soc. 1991, 113, 8935.
+[37] S. Gadipelli, Z. X. Guo, ChemSusChem 2015, 8, 2123.
+[38] G. Srinivas, V. Krungleviciute, Z.-X. Guo, T. Yildirim, Energy Environ.
+Sci. 2014, 7, 335.
+[39] L. E. Kapinos, B. Song, H. Sigel, Inorganica Chim. Acta 1998, 280, 50.
+[40] R. J. Sundberg, R. B. Martin, Chem. Rev. 1974, 74, 471.
+[41] Y. Zhang, Y. Jia, M. Li, L. Hou, Sci. Rep. 2018, 8, 9597.
+[42] M. Thommes, K. Kaneko, A. V. Neimark, J. P. Olivier, F. Rodriguez-
+Reinoso, J. Rouquerol, K. S. W. Sing, Pure Appl. Chem. 2015, 87, 1051.
+[43] S. Maldonado, S. Morin, K. J. Stevenson, Carbon 2006, 44, 1429.
+[44] G. H. Major, N. Fairley, P. M. A. Sherwood, M. R. Linford, J. Terry, V.
+Fernandez, K. Artyushkova, J. Vac. Sci. Technol. A 2020, 38, 061203.
+[45] Q. Jin, C. Wang, Y. Guo, Y. Xiao, X. Tan, J. Chen, W. He, Y. Li, H. Cui,
+C. Wang, Adv. Sci. 2023, 10, 2302152.
+[46] L. G. Bulusheva, A. V. Okotrub, I. A. Kinloch, I. P. Asanov, A. G.
+Kurenya, A. G. Kudashov, X. Chen, H. Song, Phys. status solidi 2008,
+245, 1971.
+[47] H. Liu, Z. He, J. Li, S. Zhao, Chem. Eng. J. 2023, 451, 138597.
+[48] Y.-X. Yu, Phys. Chem. Chem. Phys. 2013, 15, 16819.
+[49] Z. Zafar, Z. H. Ni, X. Wu, Z. X. Shi, H. Y. Nan, J. Bai, L. T. Sun, Carbon
+2013, 61, 57.
+[50] S. Claramunt, A. Varea, D. López-Díaz, M. M. Velázquez, A. Cornet,
+A. Cirera, J. Phys. Chem. C 2015, 119, 10123.
+[51] M. Ayiania, E. Weiss-Hortala, M. Smith, J.-S. McEwen, M. Garcia-
+Perez, Carbon N. Y. 2020, 167, 559.
+[52] Y. Zhang, Y. Jia, L. Hou, RSC Adv. 2018, 8, 31471.
+[53] P. Cheng, Y. H. Hu, J. Phys. Chem. C 2014, 118, 21866.
+[54] J. Burgess, R. H. Prince, in Encyclopedia of Inorganic Chemistry, Wiley,
+Chichester, UK 2005.
+[55] N. Niklas, O. Walter, F. Hampel, R. Alsfasser, J. Chem. Soc. Dalt. Trans.
+2002, 3367.
+[56] O. McC Stepanic, J. Ward, J. E. Penner-Hahn, A. Deb, U. Bergmann,
+S. DeBeer, Inorg. Chem. 2020, 59, 13551.
+[57] F. Li, Y. Bu, G.-F. Han, H.-J. Noh, S.-J. Kim, I. Ahmad, Y. Lu, P. Zhang,
+H. Y. Jeong, Z. Fu, Q. Zhong, J.-B. Baek, Nat. Commun. 2019, 10,
+2623.
+[58] S. A. Thomas, B. Mishra, S. C. B. Myneni, J. Phys. Chem. Lett. 2019,
+10, 2585.
+[59] B. Mirabi, W. C. Poh, D. Armstrong, A. J. Lough, U. Fekl, Inorg. Chem.
+2020, 59, 2621.
+[60] L. Koziol, C. A. Valdez, S. E. Baker, E. Y. Lau, W. C. Floyd, S. E. Wong,
+J. H. Satcher, F. C. Lightstone, R. D. Aines, Inorg. Chem. 2012, 51,
+6803.
+[61] A. E. Platero-Prats, N. Snejko, M. Iglesias, Á. Monge, E. Gutiérrez-
+Puebla, Chem. –A Eur. J. 2013, 19, 15572.
+[62] B. C. Tripp, K. Smith, J. G. Ferry, J. Biol. Chem. 2001, 276, 48615.
+[63] H. J. Goren, M. Fridkin, Eur. J. Biochem. 1974, 41, 263.
+[64] R. Ma, G. F. Schuette, L. J. Broadbelt, Int. J. Chem. Kinet. 2014, 46,
+683.
+[65] C. Keum, M.-C. Kim, S.-Y. Lee, J. Mol. Catal. A Chem. 2015, 408, 69.
+[66] M.-C. Kim, S.-Y. Lee, Chem. –A Eur. J. 2014, 20, 17019.
+[67] J.-J. Zheng, F. Zhu, N. Song, F. Deng, Q. Chen, C. Chen, J. He, X. Gao,
+M. Liang, Nat. Protoc. 2024, 19, 3470.
+[68] B. Jiang, D. Duan, L. Gao, M. Zhou, K. Fan, Y. Tang, J. Xi, Y. Bi, Z. Tong,
+G. F. Gao, N. Xie, A. Tang, G. Nie, M. Liang, X. Yan, Nat. Protoc. 2018,
+13, 1506.
+[69] J. Chen, L. Huang, Q. Wang, W. Wu, H. Zhang, Y. Fang, S. Dong,
+Nanoscale 2019, 11, 5960.
+[70] M. Arifuzzaman, Y. Zhao, ACS Catal. 2018, 8, 8154
+[71] J. Hu, Q. Chen, H. Hu, X. Chen, F. Hu, Z. Yin, Sep. Purif. Technol. 2012,
+98, 308.
+[72] S. Li, Z. Zhou, Z. Tie, B. Wang, M. Ye, L. Du, R. Cui, W. Liu, C. Wan, Q.
+Liu, S. Zhao, Q. Wang, Y. Zhang, S. Zhang, H. Zhang, Y. Du, H. Wei,
+Nat. Commun. 2022, 13, 827.
+[73] D. Choi, H. Jung, J. Im, S. Y. Yi, S. Kim, D. Lee, S. Park, C. Lee, J. Kim,
+J. W. Han, J. Lee, Adv. Mater. 2024, 36, 2306602.
+[74] G. Li, H. Liu, T. Hu, F. Pu, J. Ren, X. Qu, J. Am. Chem. Soc. 2023, 145,
+16835.
+Adv. Sci. 2025, 12, e05733
+e05733 (10 of 10)
+© 2025 The Author(s). Advanced Science published by Wiley-VCH GmbH
+ 21983844, 2025, 34, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/advs.202505733 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

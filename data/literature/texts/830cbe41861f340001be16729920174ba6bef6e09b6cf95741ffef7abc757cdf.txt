@@ -1,0 +1,862 @@
+Visible-light-driven efficient dechlorination of bleaching wastewater by 
+modularly integrated Fe2O3@wastepaper-carbon photocatalytic panels
+Xin Yang a
+, Puming Zhang a, Xin Ma a, Qi Ming a, Lingxiang Zhao b, Xiaoyong Deng b,  
+Yingjun Wang a, Qingqing Guan c, Liang He a,*, Sheng Liang a,*, Chunhua Feng d, Yongming Luo a
+a Faculty of Chemical Engineering, Kunming University of Science and Technology, Kunming 650500, China
+b Faculty of Civil Engineering and Mechanics, Kunming University of Science and Technology, Kunming 650093, China
+c Key Laboratory of Oil and Gas Fine Chemicals of Ministry of Education, College of Chemical Engineering, Xinjiang University, Urumqi 830017, China
+d Key Lab of Pollution Control and Ecosystem Restoration in Industry Clusters, Ministry of Education, School of Environment and Energy, South China University of 
+Technology, Guangzhou 510006, China
+A R T I C L E  I N F O
+Keywords:
+Bleaching wastewater
+Photocatalysis
+Chlorophenols
+Dechlorination
+A B S T R A C T
+This study developed a visible-light-driven photocatalytic system for efficient dechlorination and detoxification 
+of bleaching wastewater, which primarily utilized wastepaper as the raw material. Under simulated natural light 
+conditions, the dechlorination rates achieved 98.3% for 4-CP and 94.4% for 2,4,6-TCP within 30 min, and real 
+pulp bleaching wastewater was dechlorinated by 97.3%. The system comprises an array formed by assembling 20 
+permeable carbon plates (4 cm × 4 cm × 2 mm) as unit modules, and wastewater is pumped to circulate over this 
+photocatalytic array. The carbon plates are modified with the semiconductor α-Fe2O3, and melamine was used as 
+a nitrogen source for N-doping, while melamine does not convert into g-C3N4 as usual under heating, because the 
+presence of cellulose introduces significant N-vacancies and O-substitutions into the structure. As a result, the 
+carbon plates exhibit N-doping, N-vacancies and O-substitutions on the N sites, possessing an extremely narrow 
+bandgap (Eg = 2.33 eV) and low work function. The formation of a Z-scheme heterojunction between the N- 
+doped carbon plate (NCP) and α-Fe2O3 resulted in the composite Fe2O3@NCP, which showed excellent photo­
+current response and high photogenerated electron yield. Based on the strong adsorption capacity of the carbon 
+plates for chlorophenol pollutants, as well as the targeted attack on C-Cl bonds by e−and •O2
+−generated in situ, a 
+synergistic effect achieves high electron utilization efficiency for selective dechlorination. The photocatalytic 
+system can be reused for 36 cycles, operating for 18 h while maintaining the dechlorination rate above 86.1%. 
+This treating system for bleaching effluent introduces no secondary pollution and involves no powdered catalysts 
+that are difficult to separate and recover, which can be extended to treat other organochlorine wastewater.
+1. Introduction
+Adsorbable organic halogens (AOCl), which are biologically toxic 
+and carcinogenic organic compounds, are commonly found in waste­
+water from the pulp industry, primarily generated during the pulp 
+bleaching process through the reaction between decomposition products 
+of chlorine dioxide (ClO2) (e.g., HClO) and lignin molecules [1–3]. 
+Currently, the industrial emission standard for AOCl is 12.0 ppm in 
+China. Due to the optimizations in bleaching technology, most leading 
+enterprises are able to meet this standard. However, when the emission 
+limits are further tightened in the future, companies will need to pri­
+oritize the removal of AOCl. The biological treatment systems in paper 
+mills exhibit limited efficiency in removing AOCl, owing to the micro­
+bial resistance imparted by the chlorine group (-Cl) in chlorinated 
+organic compounds such as chlorophenols (CPs) [4,5], which hinders 
+the biological degradation. Therefore, implementing physicochemical 
+dechlorination treatment for the bleaching wastewater represents a 
+critical strategy for reducing AOCl levels in the effluent of pulp industry.
+Physicochemical dechlorination technologies for CPs have garnered 
+widespread attention among environmental researchers. Targeting 
+either the cleavage of C-Cl bonds or the complete mineralization of 
+organic molecules [6], current approaches primarily fall into two cate­
+gories: advanced reduction and advanced oxidation. Advanced reduc­
+tion processes (ARP), particularly electrocatalytic reduction at the 
+* Corresponding author.
+E-mail addresses: heliang@kust.edu.cn (L. He), liangsheng@kust.edu.cn (S. Liang). 
+Contents lists available at ScienceDirect
+Applied Catalysis B: Environment and Energy
+journal homepage: www.elsevier.com/locate/apcatb
+https://doi.org/10.1016/j.apcatb.2026.126629
+Received 27 November 2025; Received in revised form 14 February 2026; Accepted 27 February 2026  
+Applied Catalysis B: Environment and Energy 391 (2026) 126629 
+Available online 2 March 2026 
+0926-3373/© 2026 Elsevier B.V. All rights are reserved, including those for text and data mining, AI training, and similar technologies. 
+
+cathode, have been extensively studied [7–10]. However, chlorine 
+evolution at the anode can rechlorinate organic intermediates, under­
+mining the dechlorination efficiency [11]. As a result, H-cell configu­
+rations equipped with a membrane separator between compartments 
+have become standard [12]. Yet, the high cost of proton-exchange 
+membranes and the associated energy consumption render electro­
+catalytic dechlorination economically challenging for practical imple­
+mentation. On the other hand, advanced oxidation processes (AOPs), 
+such as the Fenton system, are well-established and demonstrate 
+consistent performance [13]. The main limitation of AOPs lies in the 
+large volume of wastewater to be treated and a large number of electron 
+donor coexisting substances interfere with degradation, which requires 
+substantial amounts of oxidizing agents, leading to high operational 
+costs [14–16]. Photocatalysis driven by visible light offers a promising 
+alternative, visible light will not produce chlorine radicals, utilizing 
+solar energy and operating at low cost [17]. This technique shows great 
+potential for dechlorination. However, a major practical drawback of 
+current photocatalytic systems is the use of powdered catalysts, which 
+are difficult to recover from the treated water. Its dispersion and recy­
+cling not only increase the total energy consumption but also raises the 
+concerns about secondary pollution.
+To address these challenges, we developed a novel approach by 
+utilizing wastepaper from the paper industry with α-Fe2O3 to develop a 
+visible-light-responsive catalytic carbon plate for ARP. Furthermore, by 
+integrating multiple such plates, we constructed a water treatment de­
+vice resembling a solar photovoltaic panel, enabling deep reduction of 
+AOCl and rapid dechlorination of CPs in bleaching wastewater accom­
+panied by a significant decrease in aquatic microbial toxicity. The bulk 
+catalytic material exhibited stable performance over 6 h of continuous 
+operation, and its catalytic activity lifespan was extended to 18 h after 
+thermal regeneration. The outstanding dechlorination performance of 
+the catalyst stems from two main mechanisms: Firstly, the carbon matrix 
+enables efficient adsorption of CPs molecules [18,19], thereby promot­
+ing the utilization of photogenerated electrons and in-situ generated 
+reactive species; secondly, the surface nitrogen defects formed by the 
+incorporation of nitrogen into waste-paper-derived carbon can act as 
+electron traps within the carbon lattice and as adsorption sites for O2 
+[20,21]. Furthermore, the Z-scheme heterojunction formed between the 
+nitrogen-doped carbon plate (NCP) (NCP possesses a low work function 
+and narrow bandgap) and α-Fe2O3 enables the continuous replenish­
+ment of photogenerated h+ in the NCP by electrons from α-Fe2O3, 
+effectively suppressing the recombination of photogenerated h+ and e−
+pairs in the NCP. The chlorophenols adsorbed on the carbon plate are 
+subsequently attacked by e−and in-situ generated •O2
+−, facilitating the 
+cleavage of the C-Cl bond. And the high oxidative h+ of α-Fe2O3 domi­
+nated the further oxidizing degradation of the dechlorinated products. 
+Compared with conventional methods, this study features two primary 
+innovations. First, a scalable, waste-paper-derived carbon sheet array 
+reactor was developed, which achieves superior visible-light utilization 
+and stability over powder-based systems while eliminating the need for 
+complex catalyst recovery. Second, by engineering spontaneous N-va­
+cancies and O-substitution sites within the g-C3N4-like structure of NCP, 
+we effectively lowered the work function of NCP (n-type semiconductor 
+in the Z-scheme heterojunction), leading to a manifold increase in 
+photogenerated electron yield.
+In this work, a Z-scheme carbon-based bulk photocatalyst 
+Fe2O3@NCP was synthesized via a facile annealing process using 
+wastepaper and α-Fe2O3 as precursors. An assemblable and scalable 
+visible-light-driven water treatment system was established using a 
+modular array of these carbon-based units for the efficient dechlorina­
+tion of real pulp bleaching wastewater. Combining XPS, EPR, DFT cal­
+culations, etc., we demonstrate that N-vacancy and O-substitution 
+engineering optimizes the band structure, while the internal electric 
+field-driven Z-scheme pathway significantly enhances visible-light ab­
+sorption and carrier separation. In addition, comprehensive evaluations 
+involving bioassays, ECOSAR analysis for environmental assessments 
+confirm the effective detoxification of 4-chlorophenol and its in­
+termediates. This photocatalytic system’s outstanding and stable 
+dechlorination performance in actual bleaching wastewater offers 
+valuable technical references for advancing cleaner production pro­
+cesses in the paper industry.
+2. Experimental section
+2.1. Chemicals and materials
+The details of the chemicals used in this study are introduced in the 
+Supplementary Material with Text S1. All purchased reagents were used 
+without further purification. Deionized water with a conductivity of less 
+than 18.2 MΩ⋅cm was used in all experiments. The pulp bleaching 
+wastewater was collected from the bleaching section effluent of a pulp 
+and paper mill in Sichuan province of China, and the wastepaper was 
+collected from the office paper production workshop. The wastepaper 
+was repulped, washed, screened, and then used for the material 
+preparation.
+2.2. Preparation of α-Fe2O3, g-C3N4, CP, Fe2O3@NCP and NCP
+α-Fe2O3: α-Fe2O3 were prepared by simple hydrothermal method 
+[22].The detailed fabrication method is described in the Supplementary 
+Material with Text S2.
+g-C3N4: 2.0 g of melamine was placed in a crucible and heated to 600 
+◦C for 1.5 h at a heating rate of 2.5 ◦C min−1 in a muffle furnace. The 
+resulting yellow solids were ground into a powder for use.
+CP: The carbon plate was prepared by high-temperature annealing of 
+a cleaned wastepaper pulp. The detailed procedure is provided in the 
+Supplementary Material with Text S2.
+Fe2O3@NCP (Fig. S1a): Weigh 1.0 g of melamine and add it to the 
+ethanol solution containing 30.0 mg of α-Fe2O3. Stir until thoroughly 
+mixed, then added a measured amount of cleaned pulp and mixed uni­
+formly with a stirrer. The pulp suspension was poured into the mold for 
+filtering, and then dried in an oven at 60 ◦C for 12 h to obtain the pulp 
+block material. The pulp block material was heated from room tem­
+perature to 600 ◦C at 2.5 ◦C min−1 in N2 atmosphere in a muffle furnace, 
+and then kept at 600 ◦C for 1.5 h to prepare wastepaper-based photo­
+catalytic carbon material (We simply refer to this nitrogen-doped com­
+posite material containing α-Fe2O3 as Fe2O3@NCP).
+NCP: The nitrogen-doped carbon material prepared by melamine and 
+pulp without α-Fe2O3 is recorded as NCP.
+2.3. Characterization methods for the materials
+The detailed introduction for physical or spectral characterizations 
+of the materials is documented in the Supplementary Material with Text 
+S3.
+2.4. Photocatalytic experiments and analytical methods
+The experiment was carried out using a circulating flow system. 
+Based on the investigation of light intensity and the water temperature 
+(Fig. S2), the following optimal conditions were applied: 200 mW cm⁻2 
+with 200.0 mL of solution circulated at 25.0 ◦C using two peristaltic 
+pumps (BT100T-2J) at a total flow rate of 30.0 mL min⁻1. A 300 W xenon 
+lamp equipped with a 420 nm cutoff filter was positioned 15 cm above 
+the device. Samples were collected at regular intervals, each approxi­
+mately 1.0 mL in volume. Immediately collected via a filter membrane 
+(0.22 µm) into liquid chromatography vials, the samples were analyzed 
+using high-performance liquid chromatography (HPLC, Waters 2695) 
+equipped with a UV detector. The detection method of 2,4,6-TCP is 
+shown in the Supplementary Material with Text S5. The mass detection 
+was performed in negative ion mode. The mineralization rate of 4-CP 
+was determined using a total organic carbon (TOC) analyzer (TOC- 
+X. Yang et al.                                                                                                                                                                                                                                    
+Applied Catalysis B: Environment and Energy 391 (2026) 126629 
+2 
+
+VCPH, Shimadzu, Japan). The concentration of leached metals was 
+determined using inductively coupled plasma mass spectrometry (ICP- 
+MS, USA). The concentration of AOCl was detected with an AOX 
+analyzer (Mitsubishi, AOX-200), and an off-line ion chromatography 
+coupled with a conductivity detector was used for the [Cl−] detection. 
+[Cl−] was measured via ion chromatography (Thermo Scientific, 
+ICS5000 +), based on the increment of [Cl−] in the solution, the 
+dechlorination rate of chlorophenols was calculated; and dechlorination 
+efficiency of the real pulp bleaching wastewater was calculated based on 
+the measured decrease in AOCl.
+2.5. Theoretical simulation and calculation
+The methods of the DFT calculation are introduced in the 
+Fig. 1. (a) Photo of the visible-light-driven photocatalytic system. (b) Cycling experiments on Fe2O3@NCP for treating pulp bleaching wastewater. (c) Dechlorination 
+rate of 4-CP with coexisting anions and cations (10.0 mM) added. (d) Dechlorination rate of 4-CP with different pH in the Fe2O3@NCP photocatalytic system. (e) The 
+adsorption rate of 4-CP with the different materials in the dark. (f) The dechlorination rate of 4-CP by Fe2O3@NCP in the presence of scavengers for reactive species. 
+(g) EPR spectra of DMPO-OOH of the sample with Fe2O3@NCP. (h) The photocatalytic degradation pathways of 4-CP based on the mass analysis. Experimental 
+condition: λ > 420 nm, irradiation 30 min; V = 200.0 mL of wastewater was treated, temperature 25 ℃; [4-CP] = 15.0 mg L−1; [K2Cr2O7] = [EDTA-2Na] 
+= 20.0 mM, [CCl4] = 50.0 mM.
+Table 1 
+Analysis of the pulp bleaching wastewater before and after treatment. (300 W xenon lamp, λ > 420 nm, irradiation 30 min, V = 200.0 mL, temperature =25 ℃).
+Water samples
+AOCl 
+(mg L−1)
+Cl−
+(mg L−1)
+pH
+Dechlorination 
+(%)
+Typical Organic species
+Toxicity 
+(E coli. surviva)
+Bleaching 
+wastewater
+30.80
+600.62
+5.55
+/
+16.7%
+After photocataiytic 
+photodegradation
+0.83
+642.79
+7.08
+>97.3%
+71.8%
+X. Yang et al.                                                                                                                                                                                                                                    
+Applied Catalysis B: Environment and Energy 391 (2026) 126629 
+3 
+
+Supplementary Material with Text S6.
+3. Results and discussion
+3.1. Efficient dechlorination of pulp bleaching wastewater in the 
+photocatalytic system
+The removal rate of organochlorine reached 97.3% in 30 min 
+(Fig. 1a-b and Table 1), demonstrating the rapid and highly efficient 
+performance of the visible-light photocatalytic system in this study to 
+treat the actual pulp bleaching wastewater (P.B.W.). The acute toxicity 
+of bleaching wastewater was also significantly reduced after the pho­
+tocatalytic treatment, with the survival rate of E. coli soaring from 16.7% 
+to 71.8% (Table 1). The cycling durability of the materials in treating 
+real wastewater treatment is excellent. We conducted a continuous 
+operation lasting 6 h, during which fresh bleached wastewater was 
+added to the system every 30 min. The experimental results showed that 
+the dechlorination rate maintained exceeding 90.0% within 6 h 
+(Fig. 1b). After washing with anhydrous ethanol and drying at 200 ℃, 
+the dechlorination rate remained above 88.9% during a second 6-hour 
+cycle (Fig. S3a). In the third 6 h, the dechlorination rate merely 
+decreased from 91.1% to 86.1% as well (Fig. S3b). The cyclic stability of 
+Fe2O3@NCP is demonstrated by the preservation of its structural and 
+chemical integrity after repeated use, as verified by consistent charac­
+terization results (Fig. S4-S6). In addition, leaching of Fe ions from 
+Fe2O3 did not occur, which further confirmed the structural stability of 
+α-Fe2O3 in the material. Furthermore, the practical performance of the 
+photocatalytic system was evaluated under natural sunlight for the 
+treatment of bleaching wastewater, demonstrating its exceptional solar- 
+responsive activity and suitability (Fig. S7).
+The material synthesis route in this study was designed based on the 
+outstanding photocatalytic performance of Z-scheme α-Fe2O3/g-C3N4 
+heterojunction [22,23]. Pulp disintegrated from wastepaper was 
+employed as the self-supporting template precursor, with melamine 
+serving as a nitrogen source. During the heat treatment in an inert at­
+mosphere, the carbohydrates (i.e., cellulose) interfered with the for­
+mation process of g-C3N4, and synthesized Fe2O3@NCP with α-Fe2O3. 
+Fe2O3@NCP has distinct photocatalytic properties from those of typical 
+α-Fe2O3/g-C3N4 (discussed in Sections 3.3 and 3.4). Therefore, the 
+α-Fe2O3/g-C3N4@CP composite prepared by combining α-Fe2O3/g-C3N4 
+with CP was used as an important comparison for the dechlorination 
+performance (Fig. S1b and S8). The experimental results revealed that 
+α-Fe2O3/g-C3N4@CP achieved merely 75.4% and 67.5% of dechlorina­
+tion rates for 4-CP and the real bleaching wastewater within 30 min; 
+obviously, Fe2O3@NCP demonstrated a superior dechlorination per­
+formance. This phenomenon suggests that the semiconductor hetero­
+junction within Fe2O3@NCP may possess significantly enhanced 
+visible-light-harvesting capability and higher photoelectron generation 
+compared to α-Fe2O3/g-C3N4.
+It is worth noting that Fe2O3@NCP maintains excellent activity for 
+dichlorination in the presence of anions and cations such as Cl−, SO4
+2−, 
+PO4
+3−, Na+, Ca2+ and Mg2+ (as shown in Fig. 1c and Table S1). More­
+over, it exhibits a broad effective operating pH range, maintaining the 
+dechlorination rate higher than 85.0% within the pH range of 5.0−9.0 
+(Fig. 1d); when pH = 3.0, the dechlorination rate remains at 83.0%. The 
+pH range of 3.0−9.0 encompasses the acid-alkaline boundary (typically 
+pH = 3.5−6.0) of bleaching wastewater dominated by ClO2 in sulphate 
+pulp production [24], strongly supporting the application potential of 
+this system for the detoxification of real bleaching wastewater. The 
+studies successfully implementing visible-light photocatalytic systems 
+for practical water dechlorination remain relatively scarce, and this 
+work even demonstrates an advantage over the recent literature in terms 
+of time-efficiency or dechlorination depth for contaminants such as 4-CP 
+(Table S2).
+Fe2O3@NCP is a composite material with fibrous graphite carbon as 
+the framework, having a plate-like shape and excellent water 
+permeability. It is like a carbon-made filter membrane and has the 
+ability to adsorb organic substances in water. As demonstrated in Fig. 1e 
+and Fig. S9a, Fe2O3@NCP exhibits a high adsorption capacity for 4-CP 
+(73.0%) and 2,4,6-TCP (80.6%). It should be noted that the C-Cl 
+bonds in organics such as 4-CP exhibit stable chemical properties, and 
+visible light cannot directly induce dechlorination (Fig. S9b-c). The 
+dechlorination rate for Fe2O3@NCP on 4-CP reached 98.3% and on 
+2,4,6-TCP reached 94.4% (Fig. S9c and f), showing significantly 
+enhanced photocatalytic performance. In contrast, α-Fe2O3 or NCP alone 
+demonstrated poor photoactivity, achieving dechlorination rates of 
+6.0% and 22.0%, respectively. It should be noted that the removal ef­
+ficiency of 4-CP was 100.0%, which also confirmed that the adsorption 
+process played an important role in the treatment process.
+3.2. Dechlorination is based on an ARP with photoelectron and •O2
+−
+To understand the key reactive species governing the dechlorination 
+process, a series of reactive species scavenging experiments was con­
+ducted first. As shown in Fig. 1f, when CCl4 was added to scavenge •O2
+−, 
+the dechlorination efficiency of 4-chlorophenol was significantly 
+reduced. Similarly, adding excess K2Cr2O7 to quench the photo­
+generated e−
+also markedly diminished the dechlorination rate. 
+Conversely, quenching h+ exerted no substantial influence on dechlo­
+rination. This indicates that dechlorination is primarily a photoelectron- 
+dominated reduction process rather than a holes-dominated oxidative 
+degradation pathway. The EPR measurements revealed: •O2
+−capture via 
+DMPO in methanol and •OH capture via DMPO in water, which 
+demonstrated clear generation of •O2
+−in the system, while no discern­
+ible •OH was detected (Fig. 1g). The absence of •OH should be attrib­
+uted to substantially lower redox potential of Fe2O3-h+ than that of •OH 
+[25].
+This dechlorination process ultimately originates from the genera­
+tion of photoelectrons, but •O2
+−plays a significant role under natural 
+conditions. This is evident from the anaerobic and aerobic comparison: 
+with purging O2 in the solution, the degradation rate of 4-CP slightly 
+increased, achieving a 98.8% dechlorination rate within 25 min, sur­
+passing the 90.4% under anaerobic conditions with N2 purged in the 
+solution (Fig. S9h-i). The relatively high dechlorination efficiency 
+observed under anaerobic conditions corroborates the direct reduction 
+dechlorination process induced by photoelectron. This phenomenon, 
+distinct from conventional photocatalytic systems, stems from the 
+enrichment of chlorophenols by Fe2O3@NCP, enabling direct transfer 
+and migration of photoelectrons through the conductive carbon network 
+to attack C-Cl in the chlorophenols adsorbed.
+The photogenerated h+ did not induce dechlorination, but it might 
+have played an oxidation role, which was reflected in the further 
+oxidation degradation of the dechlorinated products. The intermediates 
+and products of the 4-CP degradation process were identified by LC-MS 
+(Fig. S10 and Table S3), and the possible degradation pathway of 4-CP 
+was described in Fig. 1h. It was demonstrated that 4-CP undergoes 
+reduction to phenol (P1, m/z = 93.0), then partial molecules are 
+oxidized by •O2
+−to form a phenoxy radical (PhO•), which is unstable 
+and further converts to p-benzoquinone (P2, m/z = 108.0). Subse­
+quently, these intermediates undergo ring-opening under attack •O2
+−or 
+h+ to form small-molecule fragments including fumaric acid (P3, m/ 
+z = 115.0), 4-hydroxybutyric acid (P4, m/z = 105.0), and crotonalde­
+hyde (P5, m/z = 70.9). These intermediates could be mineralized into 
+CO2 and H2O through the synergistic action of h⁺ and •O2
+−. The reduction 
+in biotoxicity of 4-CP after the photodegradation was assessed via mi­
+crobial toxicity assays. The results indicated that the biological inhibi­
+tion of Escherichia coli by 4-CP-treated water samples was significantly 
+reduced after photocatalytic treatment, with cell survival rates 
+increasing from 49.0% to 85.7% (Fig. S12). Furthermore, based on 
+quantitative structure-activity relationships, we employed the toxicity 
+assessment software tool ECOSAR to predict the potential ecotoxicity of 
+4-CP and its degradation intermediates towards three aquatic organisms 
+X. Yang et al.                                                                                                                                                                                                                                    
+Applied Catalysis B: Environment and Energy 391 (2026) 126629 
+4 
+
+(fish, daphnia, and green algae) at three different trophic levels (Fig. S13
+and Text S7). Results indicate that 4-CP exhibits lower Log (LC50), Log 
+(EC50) and Log (ChV) values than its degradation intermediates (e.g., 
+phenol, p-benzoquinone, fumaric acid) across all three organisms, 
+demonstrating significantly reduced acute and chronic toxicity after the 
+treatment.
+3.3. Structural analysis and photochemical properties of the materials
+To gain a deeper insight into the physical structure of Fe2O3@NCP 
+and its relationship with the visible-light photocatalytic activity, sys­
+tematic characterization tests were conducted on its morphological 
+features and photoelectrochemical properties. SEM images of 
+Fe2O3@NCP reveal that α-Fe2O3 has a uniform hexagonal nanosheet 
+structure attached to the smooth surface of N-doped carbon fibers 
+(Fig. 2a-d), while the typical g-C3N4 structure with porous network 
+characteristics (Fig. S14) was not seen in Fe2O3@NCP. Results of EDS- 
+mapping revealed the uniform distribution of C, N, O, and Fe elements 
+throughout Fe2O3@NCP (Fig. 2e-f and Fig. S15). HR-TEM images 
+(Fig. 2g-h) and the SAED results reveal lattice fringes with spacings of 
+0.25 nm and 0.29 nm, corresponding to the (311) and (220) crystal 
+planes of α-Fe2O3, respectively (Fig. 2i). N2 adsorption-desorption 
+measurements were conducted to evaluate the BET surface area and 
+pore size distribution of the prepared samples (Fig. S16 and Table S4). 
+The results indicated a significant increase in the BET specific surface 
+area of the Fe2O3@NCP composite (179.31 m2 g−1), substantially higher 
+than that of CP (110.46 m2 g−1), providing more abundant surface 
+adsorption sites. In addition, the relevant pore size distribution curves of 
+the samples showed that the material had mesoporous characteristics, 
+mesoporous structure can significantly increase the internal surface area 
+of photocatalysts, increasing the accessibility of active sites [26–28].
+The crystal structure and chemical composition of Fe2O3@NCP were 
+further analyzed by XRD and FT-IR. The XRD pattern (Fig. 3a) reveals 
+that the diffraction peaks of α-Fe2O3 correspond to those of the hematite 
+standard card (PDF No. 39–1346). Peaks corresponding to the (220) and 
+(311) crystal planes of α-Fe2O3 are discernible in the XRD pattern of 
+Fe2O3@NCP. No characteristic peaks were observed in Fe2O3@NCP at 
+13.1◦and 27.6◦, which correspond to the (100) interplanar stacking of 
+triazine units and the (002) interlayer stacking of g-C3N4 (PDF No. 
+87–1526) [29,30]. This indicates that during the formation of 
+Fe2O3@NCP, the presence of carbohydrate (i.e., cellulose) strongly 
+interfered with the conversion of melamine to g-C3N4, preventing the 
+formation of g-C3N4 with a complete crystal structure. Although the 
+crystal structure of g-C3N4 was not formed, its characteristic structure 
+still exists. As evidenced by the FT-IR spectrum (Fig. S17), Fe2O3@NCP 
+retained the signature chemical structures of g-C3N4: the broad peak at 
+3000−3400 cm−1 corresponds to N-H stretching vibrations [31]; the 
+series of peaks between 1237 and 1640 cm−1 originates from C-N and 
+C––N stretching vibrations in the heterocyclic compounds [23]; and the 
+sharp peak at 808 cm−1 stems from the characteristic vibration of the 
+triazine unit [32]. Additionally, the Fe2O3@NCP material exhibits Fe-O 
+peaks of α-Fe2O3 at 543 cm−1 and 469 cm−1 within the FT-IR spectrum, 
+indicating that its crystalline structure is retained [23].
+The full XPS spectrum (Fig. S18) revealed the elemental composition 
+and surface chemical states of Fe2O3@NCP. Characteristic peaks in the 
+C1 s spectrum of Fe2O3@NCP at 284.80, 285.88, and 289.63 eV are 
+attributed to C-C and C-O/N bonds in NCP, as well as sp2-hybridised 
+carbon within the N = C-N bonds (Fig. S19a). The O 1 s spectrum 
+(Fig. S19b) indicates the coexistence of surface-adsorbed α-Fe2O3 and 
+lattice oxygen from H2O (530.17, 531.85 eV), alongside surface hy­
+droxylation and C-O-C bonds (533.57 eV) [33], which is also reflected in 
+the FT-IR spectrum (Fig. S17). The N 1 s spectrum (Fig. 3b) exhibits four 
+characteristic peaks: sp²-hybridised N in C––N-C (398.27 eV), sp3-hy­
+bridised N in N-(C)3 (400.25 eV), Pyridine N (396.96 eV) and π excita­
+tion in the heterocycle (402.45 eV) [22,34]. The Fe 2p spectrum 
+(Fig. 3c) shows that Fe 2p3/2 is located at 710.76 and 723.96 eV, indi­
+cating the presence of Fe2+; Fe 2p1/2 at 713.65 and 727.15 eV is 
+attributed to Fe3+. The two satellite peaks at high binding energies 
+(labelled Sat. in Fig. 3c) are attributed to vibrational excitation of Fe3+
+[23,35]. Compared to the single component, the positive shift in Fe 2p 
+Fig. 2. (a) A photo of Fe2O3@NCP. (b) SEM image of NCP. (c-d) SEM images of Fe2O3@NCP. (e-f) Elemental mapping images (C, N, O, Fe) of Fe2O3@NCP. (g-i) TEM 
+image, HR-TEM image, and SAED image of Fe2O3@NCP.
+X. Yang et al.                                                                                                                                                                                                                                    
+Applied Catalysis B: Environment and Energy 391 (2026) 126629 
+5 
+
+binding energy and negative shift in N 1 s binding energy within 
+Fe2O3@NCP collectively reveal electrons transfer from α-Fe2O3 to the 
+interface on NCP, confirming the successful construction of the hetero­
+junction. Furthermore, synchrotron-based XANES and EXAFS spectra 
+(Fig. 3d-e) were employed to probe the chemical state and coordination 
+of Fe in Fe2O3@NCP. The absorption edge position suggests a positive 
+valence state for Fe, similar to α-Fe2O3. Beyond the Fe-O peak, a new 
+coordination feature was observed. Subsequent EXAFS fitting and 
+wavelet transform (WT) analysis (Fig. 3f-g, Fig. S20, Table S5) identified 
+this as the Fe-O/N bond, arising from the chemical coupling between 
+α-Fe2O3 and NCP. This provides unambiguous evidence for the forma­
+tion of heterojunction between α-Fe2O3 and NCP.
+The photocatalytic dechlorination capability of Fe2O3@NCP stems 
+from its superior photoelectrochemical properties and charge separation 
+efficiency. Photocurrent responses revealed that the photocurrent 
+response intensity of Fe2O3@NCP is significantly stronger than that of 
+α-Fe2O3 and NCP (Fig. 3h). Electrochemical impedance spectroscopy 
+(EIS, Fig. S21) further corroborates this, revealing that Fe2O3@NCP 
+exhibits the smallest semicircle diameter, which means its charge 
+transfer ability is significantly enhanced [36]. Steady-state photo­
+luminescence (PL, Fig. 3i) spectra showed that under 360 nm excitation, 
+Fe2O3@NCP exhibits a significant decrease in emission intensity 
+compared to NCP, indicating that the heterojunction formed by NCP and 
+α-Fe2O3 can effectively inhibit the recombination of photoexcited 
+electron-hole pairs.
+3.4. The enhanced photocatalysis due to N-vacancies and O-substitutions 
+optimizing the Z-scheme heterojunction
+The construction and characterization of heterojunctions in 
+Fe2O3@NCP are supported by the following experimental findings: First, 
+UV-Vis diffuse reflectance spectroscopy was employed to investigate the 
+optical properties of the materials (Fig. S22a, c), and the Kubelka-Munk 
+(Fig. S22b, d) function is transformed to determine the band gaps (Eg) of 
+α-Fe2O3, g-C3N4 and NCP to be 2.42, 2.73 and 2.33 eV, respectively. 
+Secondly, the Mott-Schottky plot (Fig. S22e) indicated that the samples 
+were n-type semiconductors, with flat-band potentials of −0.31 V, 
+−0.64 V and −0.69 V for α-Fe2O3, g-C3N4 and NCP, respectively (vs. Ag/ 
+AgCl, pH = 7.0). By applying the standard potential conversion equation 
+(ENHE = EAg/AgCl + 0.197 V) and considering that the conduction band 
+edge (ECB) of n-type semiconductors is typically ~0.1 eV more negative 
+than the flat-band potential [27,37], the conduction band positions of 
+α-Fe2O3, g-C3N4, and NCP were estimated to be −0.21 V, −0.54 V and 
+−0.59 V (vs. NHE), respectively; •O2
+−(E0 (O2/•O2
+−) = −0.33 V vs. NHE). 
+Fig. 3. (a) XRD patterns of different materials. (b-c) XPS spectra of α-Fe2O3, NCP and Fe2O3@NCP; b reveals N 1 s and c reveals Fe 2p, respectively. (d) Fe K-edge 
+XANES spectra and (e) Fourier transform (FT) of k3-weighted EXAFS spectra of the Fe foil, Fe2O3, FePc and Fe2O3@NCP; (f) EXAFS fitting curve of Fe2O3@NCP in R 
+space; (g) wavelet transform (WT) maps at the Fe K-edge for the Fe2O3@NCP. (h) Photocurrent responses of different samples. (i) Steady-state PL spectra of α-Fe2O3, 
+NCP and Fe2O3@NCP.
+X. Yang et al.                                                                                                                                                                                                                                    
+Applied Catalysis B: Environment and Energy 391 (2026) 126629 
+6 
+
+Subsequently, the valence band edges (EVB) were calculated using the 
+relation EVB = Eg + ECB, yielding values of 2.21 V, 2.19 V and 1.74 V (vs. 
+NHE) for α-Fe2O3, g-C3N4, and NCP, respectively; (•OH; E0 (•OH/H2O) 
+= 2.34−2.79 V vs. NHE) [22,38,39]. As confirmed by valence band XPS 
+spectra (Fig. S22f), the experimentally determined valence bands are 
+2.21 eV, 2.23 eV and 1.62 eV for α-Fe2O3, g-C3N4 and NCP, respectively, 
+which are in agreement with the above calculations. Collectively, these 
+results from band structure analysis and XPS characterization confirm 
+the formation of a Z-scheme heterojunction in Fe2O3@NCP. Based on the 
+comprehensive characterization and analysis, a schematic illustration of 
+the charge carrier transfer mechanism in the Z-scheme heterojunction 
+was established (Fig. 4a-b). Notably, the bandgap of NCP (Eg = 2.33 eV) 
+is significantly narrower than that of pristine g-C3N4 (Eg = 2.73 eV), 
+indicating the enhanced capability of Fe2O3@NCP for visible-light har­
+vest 
+[40,41]. 
+Upon 
+visible-light 
+irradiation, 
+photogenerated 
+electron-hole pairs are generated in both α-Fe2O3 and NCP. At the het­
+erojunction interface, electrons in the conduction band (CB) of α-Fe2O3 
+recombine with holes in the valence band (VB) of NCP through a direct 
+Z-scheme pathway. This process selectively preserves highly oxidative 
+h+ in the VB of α-Fe2O3 (2.21 V vs. NHE) and reductive electrons in the 
+CB of NCP, thereby promoting spatial separation of charge carriers.
+The significantly narrowed bandgap of NCP compared to g-C3N4 is 
+primarily attributed to the introduction of nitrogen vacancies (NVs) and 
+the substitution of N by O atoms within the C-N-C structure in NCP. This 
+mechanism substantially lowers the material’s work function (Φ), as 
+evidenced by EPR, oxygen XPS, and DFT simulations. Firstly, the EPR 
+signal at g = 2.003 reveals the presence of NVs in Fe2O3@NCP (Fig. 4d) 
+[42,43]; the formation of NVs is due to the effect of cellulose on the 
+heating conversion of melamine rather than the presence of α-Fe2O3, 
+because NCP exhibits even a stronger signal of NVs and CP also con­
+tained a small amount of NVs (Fig. S23); in contrast, g-C3N4 gave no 
+signal of NVs due to the perfect graphite-like structure. NVs induce 
+localized electron enrichment in the C-N-C network of NCP, effectively 
+acting as n-type dopants that elevate the Fermi level closer to the con­
+duction band [44]. Concurrently, NVs introduce defect energy levels 
+into the band structure, effectively narrowing the apparent bandgap and 
+consequently reducing the Φ of the material. On another hand, XPS full 
+spectra (Fig. 4e) reveal significant oxygen content in NCP compared to 
+g-C3N4, revealing the doping of oxygen. And the doping of oxygen 
+induced the substitutions of N by O atoms in the C-N-C structure, which 
+is supported by the high-resolution O 1 s spectrum of NCP (Fig. 4f), the 
+characteristic peaks observed at binding energies of 530.98, 532.66, and 
+533.88 eV are assigned to C––O, C-O-C, and C-O functional groups [45, 
+46]. The presence of the C-O-C structure confirmed the O-substitutions 
+on N sites, which introduced O 2p orbitals elevating the electron state 
+density near the Fermi level, thus decreasing the value of Φ [47–49].
+Fig. 4. (a-b) Schematic illustration of the Z-scheme charge carrier transfer process for α-Fe2O3/g-C3N4 and Fe2O3@NCP. (c) Calculated work functions for α-Fe2O3 
+(311). (d) EPR spectra of g-C3N4 and Fe2O3@NCP. (e) The XPS survey spectrum of g-C3N4 and NCP. (f) O 1s XPS spectra of NCP. (g-i) Calculated work functions for g- 
+C3N4 (002), the graphitic carbon nitride with NVs (GCNNVs) and graphitic carbon nitride with oxygen substitution (GCNC-O-C), respectively. The illustration represents 
+their respective cellular models. Φ, Ev, and EF represent the work function, vacuum energy level, and Fermi energy level under vacuum level, respectively.
+X. Yang et al.                                                                                                                                                                                                                                    
+Applied Catalysis B: Environment and Energy 391 (2026) 126629 
+7 
+
+These inferences have been verified by the DFT calculations. As 
+shown in Fig. 4c and g-i, the work functions (Φ) of α-Fe2O3 (311), 
+pristine g-C3N4 (002), the graphitic carbon nitride with NVs (GCNNVs) 
+and graphitic carbon nitride with O-substitutions (GCNC-O-C) are calcu­
+lated to be 7.08 eV, 4.61 eV, 4.48 eV and 3.92 eV, respectively. The 
+Fermi level of GCNC-O-C (-2.91 eV) and GCNNVs (-3.61 eV) are much 
+higher than that of α-Fe2O3 (-5.70 eV). When two phases are in intimate 
+contact to form a heterojunction, the difference in Fermi levels drives 
+the free electrons on the surface of NCP migrate from NCP to α-Fe2O3 
+until equilibrium is achieved, resulting in the formation of an internal 
+electric field at the heterojunction interface. This field promotes direc­
+tional migration of photogenerated carriers through the Z-scheme 
+transfer path, preserving e−and h+ with strong redox potentials.
+3.5. Summary for the mechanism in the photocatalytic dechlorination 
+system
+DFT calculations were conducted to analyze the Fukui index of 4-CP 
+and 2,4,6-TCP (Fig. S24), identifying C-Cl as the primary electrophilic 
+sites prone to the nucleophilic attack by e−and •O2
+−. 
+Based on the above, the reaction mechanism within the photo­
+catalytic system can be summarized as follows: As wastewater flows 
+through the permeable carbon plates, chlorophenols are adsorbed and 
+retained on the interface of Fe2O3@NCP. At this interface, N-vacancies 
+and O-substitutions modulation result in a lower work function of NCP, 
+which facilitates the generation of photoelectron under visible-light 
+excitation. Simultaneously, the photogenerated e−from α-Fe2O3 trans­
+fer to the valence band of NCP, recombining with its h+, and facilitating 
+the separation of e−and h+ in NCP. This preserves photoelectron within 
+NCP, which migrate through the carbon network to attack the adsorbed 
+chlorophenols, cleaving the C-Cl bond. Alternatively, these photo­
+generated e−can be transferred to O2 molecules that are adsorbed on the 
+interface, generating •O2
+−that can also mediate the breakage of the C-Cl 
+bond. Dechlorination reduces the chemical stability of the pollutant 
+molecules. Subsequently, the dechlorinated products continue to be 
+degraded into small organic molecules, CO2, and H2O by h+ and •O2
+−.
+4. Conclusion
+This work presents a modular and scalable visible-light-driven 
+wastewater-dechlorination 
+system, 
+which 
+is 
+constructed 
+with 
+wastepaper from the paper industry, enabling effective dechlorination 
+and detoxification of pulp bleaching wastewater. A permeable carbon 
+film with photocatalyst of Z-scheme heterojunction (i.e., Fe2O3@NCP) is 
+the photocatalytic unit. Fe2O3@NCP demonstrates not only a strong 
+adsorption capacity for chlorophenol pollutants, but also a significantly 
+enhanced visible-light responsiveness compared to α-Fe2O3/g-C3N4 (a 
+classical photocatalyst with Z-scheme heterojunction). The enhanced 
+photocatalytic performance is attributed to the concurrent introduction 
+of N-vacancies and O-substitutions at nitrogen sites, which synergisti­
+cally modulate the electronic structure of the C-N-C network, leading to 
+a reduced work function and a narrowed band gap. The visible-light- 
+driven advanced reduction for dechlorination was facilitated by the Z- 
+scheme heterojunction, proceeds through two primary pathways uti­
+lizing the effectively separated low-energy-barrier photogenerated e−: 
+Ddirect attack with reductive e−on the C-Cl of adsorbed pollutants, or 
+mediation by •O2
+−. The catalyst maintains over 86.1% dechlorination on 
+real bleaching wastewater after 18 h of operation, demonstrating 
+outstanding stability and promising for the practical application in the 
+remediation of pulp bleaching wastewater.
+Declaration of Competing Interest
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper.
+Acknowledgements
+We gratefully acknowledge financial support from the National 
+Natural Science Foundation of China (Grant No. 22576088, 52500037), 
+the 
+Yunnan 
+Fundamental 
+Research 
+Projects 
+(Grant 
+No. 
+202401BE070001–025), and the Yunnan Major Scientific and Techno­
+logical Projects (No. 202402AO370002).
+Appendix A. Supporting information
+Supplementary data associated with this article can be found in the 
+online version at doi:10.1016/j.apcatb.2026.126629.
+Fig. 5. Schematic diagram of the Z-scheme junction mechanism for the removal of 4-CP and 2,4,6-TCP by photochemical-promoted Fe2O3@NCP system.
+X. Yang et al.                                                                                                                                                                                                                                    
+Applied Catalysis B: Environment and Energy 391 (2026) 126629 
+8 
+
+Data availability
+Data will be made available on request.
+References
+[1] X. Liu, J. Mo, W. Wu, H. Song, S. Nie, Triboelectric pulsed direct-current enhanced 
+radical generation for efficient degradation of organic pollutants in wastewater, 
+Appl. Catal. B: Environ. 312 (2022) 121422, https://doi.org/10.1016/j. 
+apcatb.2022.121422.
+[2] S. Nie, S. Wang, C. Qin, S. Yao, J.F. Ebonka, X. Song, K. Li, Removal of hexenuronic 
+acid by xylanase to reduce adsorbable organic halides formation in chlorine 
+dioxide bleaching of bagasse pulp, Bioresour. Technol. 196 (2015) 413–417, 
+https://doi.org/10.1016/j.biortech.2015.07.115.
+[3] V. Roug´e, Y. Lee, U. von Gunten, S. Allard, Kinetic and mechanistic understanding 
+of chlorite oxidation during chlorination: Optimization of ClO2 pre-oxidation for 
+disinfection byproduct control, Water Res. 220 (2022) 118515, https://doi.org/ 
+10.1016/j.watres.2022.118515.
+[4] A.A. Babaei, M. Golshan, B. Kakavandi, A heterogeneous photocatalytic sulfate 
+radical-based oxidation process for efficient degradation of 4-chlorophenol using 
+TiO anchored on Fe oxides@carbon, Process Saf. Environ. Prot. 149 (2021) 35–47, 
+https://doi.org/10.1016/j.psep.2020.10.028.
+[5] X. Lv, K. Jiang, H. Wu, L. Ao, L. Hu, X. Li, F. Shen, L. Shi, F. Dong, G. Jiang, 
+Defective Layered Double Hydroxide Nanosheet Boosts Electrocatalytic 
+Hydrodechlorination Reaction on Supported Palladium Nanoparticles, ACS ES&T 
+Water 2 (2022) 1451–1460, https://doi.org/10.1021/acsestwater.2c00205.
+[6] L. Hu, L. Shi, F. Shen, Q. Tong, X. Lv, Y. Li, Z. Liu, L. Ao, X. Zhang, G. Jiang, La Hou, 
+Electrocatalytic hydrodechlorination system with antiscaling and anti-chlorine 
+poisoning features for salt-laden wastewater treatment, Water Res. 225 (2022) 
+119210, https://doi.org/10.1016/j.watres.2022.119210.
+[7] Y. Wang, Q.-Y. Wu, M.-Y. Lee, Y.-J. Nong, W.-L. Wang, J.E. Drewes, Efficient 
+Electrocatalytic Hydrodechlorination and Detoxification of Chlorophenols by 
+Palladium–Palladium Oxide Heterostructure, Environ. Sci. Technol. 58 (2024) 
+20739–20750, https://doi.org/10.1021/acs.est.4c07923.
+[8] J. Li, K. Kong, S. Ma, J. Ding, L. Wang, J.C. Crittenden, Exploring the synergistic 
+role of electron-rich Pd and electron-deficient Ni in promoting electrocatalytic 
+hydrodechlorination, Appl. Catal. B: Environ. 356 (2024) 124245, https://doi.org/ 
+10.1016/j.apcatb.2024.124245.
+[9] S. Ramakrishnan, S. Vijayapradeep, S.C. Selvaraj, J. Huang, S.C. Karthikeyan, 
+R. Gutru, N. Logeshwaran, T. Miyazaki, M. Mamlouk, D.J. Yoo, An efficient 
+cathode electrocatalyst for anion exchange membrane water electrolyzer, Carbon 
+220 (2024) 118816, https://doi.org/10.1016/j.carbon.2024.118816.
+[10] M.L. Frisch, T.N. Thanh, A. Arinchtein, L. Hager, J. Schmidt, S. Brückner, J. Kerres, 
+P. Strasser, Seawater Electrolysis Using All-PGM-Free Catalysts and Cell 
+Components in an Asymmetric Feed, ACS Energy Lett. 8 (2023) 2387–2394, 
+https://doi.org/10.1021/acsenergylett.3c00492.
+[11] R. Wei, S. Pei, Y. Yu, J. Zhang, Y. Liu, S. You, Water Flow-Driven Coupling Process 
+of Anodic Oxygen Evolution and Cathodic Oxygen Activation for Water 
+Decontamination and Prevention of Chlorinated Byproducts, Environ. Sci. Technol. 
+57 (2023) 17404–17414, https://doi.org/10.1021/acs.est.3c02256.
+[12] J. Zhang, C. Wang, S. Lu, S. Liu, P. Liang, H. Yi, M. Li, M. Jin, R. Wang, G. Jiang, 
+Reactant enrichment in yolk-shell structured Pd/TiN nanoreactors for boosting 
+electrocatalytic hydrodechlorination performance, Chem. Eng. J. 481 (2024) 
+148325, https://doi.org/10.1016/j.cej.2023.148325.
+[13] W. Sun, H. Zou, G. Liu, X. Guan, S. Wang, X. Duan, Engineered diatomic catalyst 
+empowered electro-Fenton processes for advanced water purification, J. Mater. 
+Chem. A 12 (2024) 26439–26456, https://doi.org/10.1039/d4ta04567j.
+[14] C. Zhou, Y. Guo, S. Du, M. Sui, Ultrafast Fenton-like reaction using a 
+peroxymonosulfate-mediated confined-Fe0 catalyst for the degradation of 
+sulfamethoxazole, Appl. Catal. B: Environ. 358 (2024) 124442, https://doi.org/ 
+10.1016/j.apcatb.2024.124442.
+[15] W. Xiao, A. Chen, M. Cheng, W. Xiong, Y. Liu, J. Wang, G. Wang, G. Zhang, L. Li, 
+H. Liu, Q. Shi, Mechanism insights into metal-organic framework-derived carbon 
+materials activating periodate for p-chlorophenol removal: The role of S and Fe co- 
+doping, Water Res. 268 (2025) 122735, https://doi.org/10.1016/j. 
+watres.2024.122735.
+[16] Y. Lee, D.L. Sedlak, U. von Gunten, Oxidative Water Treatment: The Track Ahead, 
+Environ. Sci. Technol. 57 (2023) 18391–18392, https://doi.org/10.1021/acs. 
+est.3c07785.
+[17] M.A. Khan, S. Mutahir, I. Shaheen, Y. Qunhui, M. Bououdina, M. Humayun, Recent 
+advances over the doped g-C3N4 in photocatalysis: A review, Coord. Chem. Rev. 
+522 (2025) 216227, https://doi.org/10.1016/j.ccr.2024.216227.
+[18] Y. Liu, B. Men, A. Hu, Q. You, G. Liao, D. Wang, Facile synthesis of graphene-based 
+hyper-cross-linked porous carbon composite with superior adsorption capability 
+for chlorophenols, J. Environ. Sci. 90 (2020) 395–407, https://doi.org/10.1016/j. 
+jes.2019.11.018.
+[19] Y. Liu, G. Gao, C.D. Vecitis, Prospects of an Electroactive Carbon Nanotube 
+Membrane toward Environmental Applications, Acc. Chem. Res. 53 (2020) 
+2892–2902, https://doi.org/10.1021/acs.accounts.0c00544.
+[20] T. Gan, J. Yang, D. Morris, X. Chu, P. Zhang, W. Zhang, Y. Zou, W. Yan, S.-H. Wei, 
+G. Liu, Electron donation of non-oxide supports boosts O2 activation on nano- 
+platinum catalysts, Nat, Commun 12 (2021) 1723–2041, https://doi.org/10.1038/ 
+s41467-021-22946-y.
+[21] H. Ali, Z. Ajmal, A.Y.A. Alzahrani, M.H. Al Mughram, A.M. Abu-Dief, R. Al-Faze, H. 
+M.A. Hassan, S.R. Al-Mhyawi, Y. Al-Hadeethi, Y. Orooji, S.R. Guo, A. Hayat, 
+Defect-driven innovations in photocatalysts: Pathways to enhanced photocatalytic 
+applications, InfoMat 7 (2025) e70040, https://doi.org/10.1002/inf2.70040.
+[22] L. Su, P. Wang, M. Li, Z. Zhao, Y. Li, S. Zhan, Synergistic enhancement of 
+photocatalytic molecular oxygen activation by nitrogen defect and interfacial 
+photoelectron transfer over Z-scheme α-Fe2O3/g-C3N4 heterojunction, Appl. Catal. 
+B: Environ. 335 (2023) 122890, https://doi.org/10.1016/j.apcatb.2023.122890.
+[23] Y. Geng, D. Chen, N. Li, Q. Xu, H. Li, J. He, J. Lu, Z-Scheme 2D/2D α-Fe2O3/g-C3N4 
+heterojunction for photocatalytic oxidation of nitric oxide, Appl. Catal. B: Environ. 
+280 (2021) 119409, https://doi.org/10.1016/j.apcatb.2020.119409.
+[24] X. Zhao, B. Liu, H. Xu, C. Qin, S. Yao, C. Liang, S. Wang, A clean high-concentration 
+chlorine dioxide bleaching process at room temperature facilitating the rapid 
+degradation of lignin and its kinetic, Int. J. Biol. Macromol. 311 (2025) 143966, 
+https://doi.org/10.1016/j.ijbiomac.2025.143966.
+[25] L. Li, C.-q Wu, D.-x Sun, N. Zhang, T. Huang, Y. Wang, Synthesis of magnetically 
+recyclable FeCeO nanocrystals with heterojunction between Fe2O3 and CeO2 via 
+one-step method toward efficient organic dyes degradation by activating 
+peroxymonosulfate, J. Clean. Prod. 483 (2024) 144293, https://doi.org/10.1016/j. 
+jclepro.2024.144293.
+[26] L. Zu, W. Zhang, L. Qu, L. Liu, W. Li, A. Yu, D. Zhao, Mesoporous Materials for 
+Electrochemical Energy Storage and Conversion, Adv. Energy Mater. 10 (2020) 
+2002152, https://doi.org/10.1002/aenm.202002152.
+[27] M. Cai, Y. Liu, K. Dong, X. Chen, S. Li, Floatable S-scheme Bi2WO6/C3N4/carbon 
+fiber cloth composite photocatalyst for efficient water decontamination, Chin. J. 
+Catal. 52 (2023) 239–251, https://doi.org/10.1016/s1872-2067(23)64496-1.
+[28] S. Li, M. Cai, C. Wang, Y. Liu, Ta3N5/CdS Core–Shell S-scheme Heterojunction 
+Nanofibers for Efficient Photocatalytic Removal of Antibiotic Tetracycline and Cr 
+(VI): Performance and Mechanism Insights, Adv. Fiber Mater. 5 (2023) 994–1007, 
+https://doi.org/10.1007/s42765-022-00253-5.
+[29] A. Thomas, A. Fischer, F. Goettmann, M. Antonietti, J.-O. Müller, R. Schl¨ogl, J. 
+M. Carlsson, Graphitic carbon nitride materials: variation of structure and 
+morphology and their use as metal-free catalysts, J. Mater. Chem. 18 (2008) 4893, 
+https://doi.org/10.1039/b800274f.
+[30] X. Zhang, P. Ma, C. Wang, L. Gan, X. Chen, P. Zhang, Y. Wang, H. Li, L. Wang, 
+X. Zhou, K. Zheng, Unraveling the dual defect sites in graphite carbon nitride for 
+ultra-high photocatalytic H2O2 evolution, Energy Environ. Sci. 15 (2022) 830–842, 
+https://doi.org/10.1039/d1ee02369a.
+[31] L. Qi, Y. Yang, Z. Yang, J. Qi, Y. Zhou, Z. Zhu, J. Li, Antifouling characteristics and 
+mechanisms in visible-light photocatalytic membrane bioreactor based on g-C3N4 
+modified membrane, Water Res. 268 (2025) 122581, https://doi.org/10.1016/j. 
+watres.2024.122581.
+[32] W. Yu, J. Chen, T. Shang, L. Chen, L. Gu, T. Peng, Direct Z-scheme g-C3N4/WO3 
+photocatalyst with atomically defined junction for H2 production, Appl. Catal. B: 
+Environ. 219 (2017) 693–704, https://doi.org/10.1016/j.apcatb.2017.08.018.
+[33] W. Chen, F. Wang, X. Hou, M. Li, L. Jia, X. Li, S. Li, X. Zhang, H. Wang, Z. Bian, 
+Efficient degradation of tetracycline contaminants by a flow-through Electro- 
+Fenton system: Carbon nanotube-encapsulated α-Fe2O3 under nanoconfinement, 
+Chem. Eng. J. 507 (2025) 160449, https://doi.org/10.1016/j.cej.2025.160449.
+[34] Z.-F. Lin, C.-K. Tsai, Y.S. Lai, T.-B. Nguyen, P. Venkatesan, R.-A. Doong, S-scheme 
+heterojunction of N-carbon dots/g-C3N4/MIL-101(Fe) photocatalytic membrane 
+for peroxymonosulfate-activated photodegradation of enrofloxacin, Chem. Eng. J. 
+522 (2025) 167477, https://doi.org/10.1016/j.cej.2025.167477.
+[35] S. Zhang, J. Wu, S. Yang, H. Li, Y. Li, M. Wang, X. Li, L. Wu, Round-the-clock 
+degradation of pharmaceutical pollutants by photocatalytic and catalytic 
+ozonation based on bifunctional MIL-100(Fe) catalyst, Water Res. 284 (2025) 
+124017, https://doi.org/10.1016/j.watres.2025.124017.
+[36] C. Jin, B. Han, C. Luo, J. Qin, Y. Liu, Z. Dai, Y. Sun, Z. Gan, C.-C. Wang, X. Zheng, 
+Z. Hu, Precise synthesis of Fe single-atom catalysts on montmorillonite/g-C3N4 
+heterostructures for highly efficient fenton-like degradation of organic pollutants, 
+Water Res. 287 (2025) 124420, https://doi.org/10.1016/j.watres.2025.124420.
+[37] X. Hu, Z. Zhang, P. Lu, Y. Zhou, Y. Zhou, Y. Bai, J. Yao, Cyano-deficient g-C3N4 for 
+round-the-clock photocatalytic degradation of tetracycline: Mechanism and 
+application prospect evaluation, Water Res. 260 (2024) 121936, https://doi.org/ 
+10.1016/j.watres.2024.121936.
+[38] Z. Jiang, W. Wan, H. Li, S. Yuan, H. Zhao, P.K. Wong, A Hierarchical Z‑Scheme 
+α-Fe2O3/g-C3N4 Hybrid for Enhanced Photocatalytic CO2 Reduction, Adv. Mater. 
+30 (2018) 1706108, https://doi.org/10.1002/adma.201706108.
+[39] H. Cai, Y. Niu, T. Guan, X. You, X. Ma, X. Zhang, Highly efficient charge carrier 
+separation in ZnO-NiFe2O4@biochar Z-scheme heterojunction mediated by 
+persistent free radicals for metronidazole degradation, Chem. Eng. J. 505 (2025) 
+159577, https://doi.org/10.1016/j.cej.2025.159577.
+[40] Q. Shao, Y. Ding, W. Liu, J. Guan, G. Meng, T. Kuang, D. Wang, Bandgap 
+Engineering on UiO–66 Metal-Organic Framework Derivatives for Solar-Driven 
+Seawater Desalination, Adv. Sci. 12 (2025) 2502989, https://doi.org/10.1002/ 
+advs.202502989.
+[41] C. Feng, M. Hu, J. Alharbi, M. Rueping, H. Zhang, Bridging Scales in Solar-Driven 
+Water Splitting: Pathways to System Integration, Adv. Mater. (2025) e06690, 
+https://doi.org/10.1002/adma.202506690.
+[42] W. Li, Z. Wei, K. Zhu, W. Wei, J. Yang, J. Jing, D.L. Phillips, Y. Zhu, Nitrogen-defect 
+induced trap states steering electron-hole migration in graphite carbon nitride, 
+Appl. Catal. B: Environ. 306 (2022) 121142, https://doi.org/10.1016/j. 
+apcatb.2022.121142.
+[43] P. Zhou, Y. Wang, X. Yan, Y. Gan, C. Xia, Y. Xu, M. Xie, Nitrogen-defect-modified g- 
+C3N4/BaFe12O19 S-scheme heterojunction photocatalyst with enhanced advanced 
+oxidation technology synergistic photothermal degradation ability of antibiotic: 
+X. Yang et al.                                                                                                                                                                                                                                    
+Applied Catalysis B: Environment and Energy 391 (2026) 126629 
+9 
+
+Insights into performance, electron transfer pathways and toxicity, Appl. Catal. B: 
+Environ. 343 (2024) 123485, https://doi.org/10.1016/j.apcatb.2023.123485.
+[44] L. Su, P. Wang, X. Ma, J. Wang, S. Zhan, Regulating Local Electron Density of Iron 
+Single Sites by Introducing Nitrogen Vacancies for Efficient Photo-Fenton Process, 
+Angew. Chem. Int. Ed. 60 (2021) 21261–21266, https://doi.org/10.1002/ 
+anie.202108937.
+[45] D. Lin, X. Lin, H. Li, H. Huang, H. Yang, J. Yang, B. Hu, F. Chen, X. Guo, X. Wang, 
+W. Yao, Ultrathin porous nitrogen-doped carbon nanosheets with rich defects for 
+efficient Cr(VI) reduction, Appl. Catal. B: Environ. 370 (2025) 125174, https://doi. 
+org/10.1016/j.apcatb.2025.125174.
+[46] X. Liu, Y. Zhao, J. Ma, Y. Zhang, H. Zhang, Z. Liu, Y. Liu, Defects mediate the active 
+N sites in N-doped carbon catalyst for efficiently catalyzing H2S to element sulfur, 
+Appl. Catal. BEnviron. 380 (2026) 125718, https://doi.org/10.1016/j. 
+apcatb.2025.125718.
+[47] Y. Zhao, L.X. Kang, Y.J. Wang, Y. Wu, G.Y. Xing, S.W. Li, J. Pan, N.W. Wang, Y. 
+T. Ren, Y. Wang, Y.C. Zhu, X.Q. Shi, M. Liu, X. Qiu, P.N. Liu, D.Y. Li, Engineering 
+Graphene Nanoribbons via Periodically Embedding Oxygen Atoms, Angew. Chem. 
+Int. Ed. 64 (2025) 1433–7851, https://doi.org/10.1002/anie.202500490.
+[48] J. Huang, D. Li, R. Li, Q. Zhang, T. Chen, H. Liu, Y. Liu, W. Lv, G. Liu, An efficient 
+metal-free phosphorus and oxygen co-doped g-C3N4 photocatalyst with enhanced 
+visible light photocatalytic activity for the degradation of fluoroquinolone 
+antibiotics, Chem. Eng. J. 374 (2019) 242–253, https://doi.org/10.1016/j. 
+cej.2019.05.175.
+[49] C. Liu, H. Huang, W. Cui, F. Dong, Y. Zhang, Band structure engineering and 
+efficient charge transport in oxygen substituted g-C3N4 for superior photocatalytic 
+hydrogen evolution, Appl. Catal. B: Environ. 230 (2018) 115–124, https://doi.org/ 
+10.1016/j.apcatb.2018.02.038.
+X. Yang et al.                                                                                                                                                                                                                                    
+Applied Catalysis B: Environment and Energy 391 (2026) 126629 
+10

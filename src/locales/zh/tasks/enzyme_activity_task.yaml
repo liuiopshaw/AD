@@ -1,0 +1,16 @@
+description: |
+  评估纳米材料的类酶催化活性，侧重三种类型：
+  - CAT-like（类过氧化氢酶）
+  - SOD-like（类超氧化物歧化酶）
+  - NADH oxidase-like（类NADH氧化酶）
+
+  评分维度（三维度）：
+  1. 活性强度（65%）——NADH-like 活性额外加分
+  2. 底物亲和性（25%）
+  3. 条件适用窗口（10%）
+
+  输出 JSON 格式评估报告。
+expected_output: |
+  JSON 格式的类酶活性评估报告，包含 activity_type、confidence、activity_level、
+  km_value、ad_therapeutic_relevance 字段。
+user_requirement_prefix: "需要评估类酶活性的纳米材料信息："

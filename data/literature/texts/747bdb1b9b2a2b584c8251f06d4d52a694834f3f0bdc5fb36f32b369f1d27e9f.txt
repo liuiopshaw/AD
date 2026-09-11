@@ -1,0 +1,1670 @@
+Rational Design of Dual-Functionalized
+Gd@C82 Nanoparticles to Relieve Neuronal
+Cytotoxicity in Alzheimer’s Disease via
+Inhibition of Aβ Aggregation
+Xiuhua Yin,# Hong Zhou,# Tiantian Cao,# Xiner Yang, Fei Meng, Xing Dai, Yifan Wang, Sijie Li,
+Wangsong Zhai, Zaixing Yang,* Ning Chen,* and Ruhong Zhou*
+Cite This: ACS Nano 2024, 18, 15416−15431
+Read Online
+ACCESS
+Metrics & More
+Article Recommendations
+*
+sı
+Supporting Information
+ABSTRACT: The accumulation of amyloid-β (Aβ) peptides is a major hallmark of
+Alzheimer’s disease (AD) and plays a crucial role in its pathogenesis. Particularly, the
+structured oligomeric species rich in β-sheet formations were implicated in neuronal
+organelle damage. Addressing this formidable challenge requires identifying
+candidates capable of inhibiting peptide aggregation or disaggregating preformed
+oligomers for effective antiaggregation-based AD therapy. Here, we present a dual-
+functional nanoinhibitor meticulously designed to target the aggregation driving
+force and amyloid fibril spatial structure. Leveraging the exceptional structural
+stability and facile tailoring capability of endohedral metallofullerene Gd@C82, we
+introduce desired hydrogen-binding sites and charged groups, which are abundant
+on its surface for specific designs. Impressively, these designs endow the resultant
+functionalized-Gd@C82 nanoparticles (f-Gd@C82 NPs) with high capability of
+redirecting peptide self-assembly toward disordered, off-pathway species, obstructing
+the early growth of protofibrils, and disaggregating the preformed well-ordered protofibrils or even mature Aβ fibrils. This
+results in considerable alleviation of Aβ peptide-induced neuronal cytotoxicity, rescuing neuronal death and synaptic loss in
+primary neuron models. Notably, these modifications significantly improved the dispersibility of f-Gd@C82 NPs, thus
+substantially enhancing its bioavailability. Moreover, f-Gd@C82 NPs demonstrate excellent cytocompatibility with various cell
+lines and possess the ability to penetrate the blood−brain barrier in mice. Large-scale molecular dynamics simulations
+illuminate the inhibition and disaggregation mechanisms. Our design successfully overcomes the limitations of other
+nanocandidates, which often overly rely on hydrophobic interactions or photothermal conversion properties, and offers a
+viable direction for developing anti-AD agents through the inhibition and even reversal of Aβ aggregation.
+KEYWORDS: Alzheimer’s disease, aggregation inhibitor, rational design, functionalized Gd@C82 nanoparticle, restore synaptic loss
+Alzheimer’s disease (AD) is a progressive neurodegenerative
+disease that accounts for 60−70% of senile dementia cases.1
+Despite the first AD case being reported in 1906,2 more than a
+century has passed and AD remains an urgent public health
+issue that has yet to be resolved.3,4 Currently, most available
+drugs only temporarily reduce symptoms, and there are very
+few therapies that can actually slow or halt the progression of
+AD.5−10 While the molecular mechanism of AD is not fully
+understood, mounting accrual of data from many preclinical
+and clinical studies has increasingly supported that the
+oligomerization and aggregation of amyloid-β (Aβ) peptides
+is a crucial initial step in the pathogenesis of the disease.11−13
+Aβ peptide aggregation can initiates the pathogenic cascade-
+including Tau pathology,14−17 inflammation,16,18,19 synaptic
+loss,11,20,21 neuronal dysfuction,11,20,22 and ultimately demen-
+tia. The ordered Aβ oligomeric species that form in the
+aggregation process (which are rich in β-sheet structure) are
+reported to be the most pathogenic, acting through complex
+toxic mechanisms.23−27 Extracellular Aβ oligomers can bind to
+cell membranes, causing perturbations or damages,28 and can
+also activate receptors on membranes (such as eNM-
+Received:
+September 14, 2023
+Revised:
+May 10, 2024
+Accepted:
+May 21, 2024
+Published: June 5, 2024
+Article
+www.acsnano.org
+© 2024 American Chemical Society
+15416
+https://doi.org/10.1021/acsnano.3c08823
+ACS Nano 2024, 18, 15416−15431
+Downloaded via OCEAN UNIV OF CHINA on August 13, 2024 at 08:33:40 (UTC).
+See https://pubs.acs.org/sharingguidelines for options on how to legitimately share published articles.
+
+DARs,29−31 α7 nAChR,32−34 and AMPA),35 disrupting signal
+transduction.36,37 Intracellular accumulation of Aβ oligomers
+can also trigger injuries to various organelles38 (such as
+mitochondrial dysfunction,39−42 trans-Golgi network disor-
+ders,43 endoplasmic reticulum stress,44,45 endosomes/lysoso-
+mal leakage,46−48 and macroautophagy)46,49 to promote
+disease progression. However, it is noteworthy that mature
+fibrils typically manifest minimal neuronal cytotoxic-
+ity.13,26,27,50,51 Interestingly, a lipid-chaperone hypothesis has
+recently been proposed by Sciacca et al.,51 introducing an
+additional element: free lipids. These lipids form a noncovalent
+complex with the protein, thereby facilitating the transfer of
+amyloidogenic proteins from the aqueous phase to the
+membrane bilayer. Consequently, this process may lead to
+severe cell membrane damage, thereby advancing our under-
+standing of the mechanisms underlying cell membrane
+perturbations or damages in AD. Therefore, a more effective
+therapeutic strategy for this devastating disease would be to
+synchronously inhibit Aβ peptide aggregation and disaggregate
+ordered toxic oligomers/mature fibers, that is, to reverse
+peptide aggregation.
+With tremendous efforts from both experimental and
+theoretical approaches, the mechanism of Aβ peptide
+aggregation and the atomic-level structural details of amyloid
+fibers have been largely decoded in recent years.50,52−67 These
+findings suggest that various interactions, including electro-
+static,52,57 van der Waals (vdW),62 and hydrophobic
+interactions,54,56,58 collectively drive the initial associations of
+peptides. Large conformational fluctuations then lead to the
+formation of successive and ordered intermainchain hydrogen
+bonds from dangling hydrogen-binding sites on the mainchains
+of peptides, ultimately directing the oligomers to convert into
+highly ordered, mature amyloid fibers.52 Structurally, mature
+Aβ amyloid fibers are built by multiple layers of β-sheets
+appearing in a cross-β-spine morphology, with the internal-
+facing side chains of adjacent β-sheets fully interdigitated to
+create a dry hydrophobic interface.64−66 This highly ordered
+and well-packed architecture confers the mature Aβ amyloid
+fiber with an extremely high thermodynamic stability. These
+fundamental micropictures provide illuminating guidelines for
+the rational design of AD-preventive or therapeutic agents, e.g.,
+to introduce as much disorder as possible to interrupt the early
+Aβ aggregation process or disaggregate the preformed
+protofibrils or even mature fibrils. However, despite these
+promising guidelines, there are still very few successful cases,
+with only two recently approved monoclonal antibodies by the
+Food and Drug Administration (FDA), e.g., aducanumab9 and
+lecanemab.10 Additionally, another antibody, donanemab, has
+shown positive results in a Phase III clinical study.68 It should
+be noted that the approval status of monoclonal antibodies by
+the FDA, but not by the European Medicines Agency,
+underscores significant concerns surrounding their side effects,
+as well as the criticisms voiced by the scientific commun-
+ity.69−72 This highlights the pressing need for enhanced
+strategies for AD management.
+Recent great advancements in nanoscience have demon-
+strated that nanomaterials (NMs) have the potential to serve
+as an ideal platform for reversing peptide aggregation due to
+their ability to offer a versatile design space that can effectively
+tackle every key link in the aggregation process. For example,
+graphene oxide (GO)-based nanosheets, due to their high
+hydrophobicity, can disrupt peptide side chains to form a
+highly ordered hydrophobic core during the aggregation
+process.73,74 Additionally, GO nanosheets can insert into
+mature fibers and extract peptides destructively.73 Further-
+more, due to their high near-infrared-ray (NIR) photothermal
+conversion property, GO nanosheets can disassemble their
+surface-attached mature Aβ fibers through thermal disrup-
+tion.75 Similarly, NIR irradiation can trigger g-C3N4 and other
+NPs to disassemble mature Aβ fibers.76,77 Despite these
+desired effects, these nanomaterials suffer from several
+disadvantages. The hydrophobic nature of GO nanosheets
+results in relatively poor water dispersibility, which can
+provoke acute cell membrane toxicity and other biotox-
+icities.78,79 In addition, the very limited tissue penetration
+depth and the incapability of NIR light beams to reach deep
+brain tissues mean that NIR-triggered disassembly of mature
+fibers may only have very moderate effects in treating AD.
+Furthermore, the consequent increase in brain temperature
+from this approach poses significant risks, necessitating
+cautious consideration for human application. Very recently,
+Yin et al.80 found that ultrasmall C3N nanodots inhibit Aβ
+peptide aggregation, alleviate neuron cytotoxicity, prevent
+neurite damage, and reduce global cerebral Aβ levels,
+particularly in plaques, restoring synaptic loss and ameliorating
+behavioral deficits in male APP/PS1 double transgenic AD
+mice.
+In this study, we chose an endohedral metallofullerene, Gd@
+C82, as the framework for our functionalized design for several
+reasons. First, its metal embedded structure imparts high
+structural stability and tailorability. Second, its high surface-to-
+volume ratio makes it possible to implement multiple
+functional groups. Moreover, its rigid and spherical structure
+enchants a natural steric effect, which can prevent the close
+association of peptides.81 Additionally, the biocompatibility of
+its analogues has been extensively evaluated in several
+biomedicine scenarios such as antitumor treatments.82−85 To
+achieve our goal, we have introduced various hydrogen-binding
+sites onto the surface of Gd@C82, which can competitively
+form hydrogen bonds with the mainchains of peptides. The
+charged groups were designed to block specific salt-bridge
+interactions between key residues, which play a crucial role in
+guiding the longitudinal and lateral growth of protofibrils to
+mature fibers. It is worth mentioning that this also significantly
+enhanced the dispersibility of Gd@C82 in water. The
+remaining sp2 regions on the surface of Gd@C82 can provide
+binding affinity to the hydrophobic or aromatic ring containing
+residues on the peptides. The resulting functionalized Gd@C82
+(f-Gd@C82 NPs) can not only inhibit the aggregation of Aβ
+peptides but also disassemble the protofibrils. As a result, the
+neuronal cytotoxicity of the Aβ peptides was considerably
+reduced. Furthermore, f-Gd@C82 NPs showed excellent
+cytocompatibility with various tested cell lines, including
+primary neurons, astrocytes, human neuroblastoma cells (sh-
+sy5y), and human umbilical vein endothelial cells (HUVECs).
+Strikingly, the successful implementation of hydrophilic f-Gd@
+C82 NPs overcomes the disadvantages of many other
+nanoinhibitors, in terms of relieving the neuronal cytotoxicity
+in AD via the introduction of as many disorders as possible to
+inhibit/reverse Aβ aggregation without any external stimulus,
+thus offering a feasible route for the rational design of AD
+prevention and remedy strategies based on NMs.
+RESULTS AND DISCUSSION
+Preparation and Characterization of f-Gd@C82 NPs.
+Utilizing a facile one-step reaction, multiple functional groups
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.3c08823
+ACS Nano 2024, 18, 15416−15431
+15417
+
+were successfully introduced onto the surface of the carbon
+cage of Gd@C82 to generate f-Gd@C82 NPs (more below on
+its molecular formula and structural model). The morphology
+and size of the synthesized f-Gd@C82 NPs were evaluated by
+using transmission electron microscopy (TEM) and atomic
+force microscopy (AFM). The analysis revealed the presence
+of spherical NPs with an average diameter of approximately 4.8
+± 0.9 nm, indicating excellent water dispersibility with the
+addition of those functional groups (as for comparison, Gd@
+C82(OH)22 are typically aggregated in water)83,86 (Figure
+1a,b). Subsequently, X-ray photoelectron spectroscopy (XPS)
+and Fourier transform infrared (FT-IR) spectra were used to
+characterize the structural, elemental composition, and surface
+state of the f-Gd@C82 NPs. The survey scan spectrum
+indicated that the f-Gd@C82 NPs contained carbon, nitrogen,
+and oxygen elements, with binding energies of 285.14, 401.11,
+and 532.14 eV, respectively (Figure S1 and Table S1). The C
+1s peaks at 284.61 286.37, and 288.50 eV were attributed to
+C−C (C = C), C−O (C−N), and C = O, respectively (Figure
+1c and Table S2). The N 1s peaks at 399.52, 401.42, and
+406.51 eV were assigned to −NH2, −NH3
++ (the partially
+protonated amino group), and −NO2, respectively (Figure 1d
+and Table S3). The Fourier transform infrared spectroscopy
+(FT-IR) spectrum further confirmed the presence of diverse
+functional groups in f-Gd@C82 NPs, including CO and O−
+H groups. Specifically, the broad peaks observed between 3600
+and 3000 cm−1 in the FT-IR spectrum (Figure 1e, black line)
+represented the stretching vibrations of O−H (around 3425
+cm−1) and N−H (around 3200 cm−1). The peaks observed at
+1600 and 1412 cm−1 indicated the stretching vibrations of C
+O and C−N, respectively. Moreover, the embedded Gd3+ ion
+induces polarization of the carbon cage and modifications of
+various functional groups, resulting in the f-Gd@C82 NPs
+being negatively charged (Figure S2). Based on these XPS
+spectra and deconvolution results (Tables S1−S4), the most
+probable molecular formula of f-Gd@C82 NPs was determined
+as Gd@C82O12(NH3)4(OH)17(NH2)2NO2, and a structural
+model was then constructed theoretically (Figure 1f; more in
+Method and Materials and Supplementary Methods).
+f-Gd@C82 NPs Inhibit Aβ Fibrillization and Disag-
+gregate Protofibrils. We investigated the effect of f-Gd@C82
+NPs on the aggregation of Aβ peptides. Our results, as
+Figure 1. Characterization of f-Gd@C82NPs. (a) TEM image of f-Gd@C82 NPs. Inset: the diameter distribution of f-Gd@C82 NPs; (b) AFM
+image of f-Gd@C82 NPs; (c) and (d) XPS spectra of f-Gd@C82 C 1s and N 1s binding energy; (e) FT-IR spectra of f-Gd@C82 NPs; (f)
+molecular model of f-Gd@C82 NPs (Gd@C82O12(NH3)4(OH)17(NH2)2NO2). The f-Gd@C82 is shown in CPK representation with the
+hydrogen, carbon, nitrogen, oxygen, and gadolinium atoms colored white, cyan, blue, red, and pink, respectively. Detailed descriptions of
+model building are shown in the Supplementary Methods section.
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.3c08823
+ACS Nano 2024, 18, 15416−15431
+15418
+
+indicated by Thioflavin T (ThT) fluorescence assays, showed
+that f-Gd@C82 NPs treatment inhibited the fibrillation of
+Aβ1−42 in a concentration-dependent manner. Specifically, after
+incubation with f-Gd@C82 NPs at 100, 200, and 400 μg/mL
+for 48 h, the relative ThT fluorescence intensity decreased by
+∼32.6%, ∼39.5%, and ∼64.2%, respectively (Figure 2a). Dot
+blot experiments supported this observation (Figure 2b).
+Furthermore, circular dichroism (CD) spectroscopy data
+showed that monomeric Aβ1−42 peptides were in an
+unstructured configuration initially, with a major negative
+peak between 200 and 210 nm (Figure 2c, black curve). After
+being assembled in phosphate-buffered saline (PBS) for 24 h,
+this peak disappeared and was replaced by a negative peak at
+∼220 nm (Figure 2c, red curve), indicating that Aβ1−42
+monomers transitioned from a random-coiled structure to an
+ordered β-sheet-rich structure. Estimation of the secondary
+structure content of Aβ1−42 peptides from CD spectroscopic
+data, calculated using the BeStSel (Beta Structure Selection)
+software,87 provided a more quantitative perspective (Table
+S5). The ordered antiparallel β-sheet content decreased from
+∼42.2% to ∼35.4% upon treatment with f-Gd@C82 NPs. In
+contrast, the summation of disordered turn and other
+structures increased from ∼57.7% to ∼64.7%. Treatment
+with f-Gd@C82 NPs prevented this conformational transition,
+redirecting aggregation-prone Aβ1−42 peptides self-assembly
+into some off-pathway assemblies (Figure 2c, blue curve).
+AFM (Figure 2d) and TEM (Figure S3) imaging further
+illustrated that, in the absence of f-Gd@C82 NPs, Aβ1−42
+Figure 2. The effects of f-Gd@C82NPs on Aβ1−42 fibrillization and fibril disaggregation. (a) ThT fluorescence kinetics of Aβ1−42 (50 μM)
+peptides treated without/with f-Gd@C82 NPs at different concentrations. Data are presented as mean ± s.d. (n = 3); (b) representative
+image of dot blot assay at various concentration points (0, 25, 50, 100, 200, and 400 μg/mL) with amyloid fibril-conformation specific
+antibody (mOC87); (c) CD spectroscopy of Aβ1−42 peptides (50 μM) after incubation without/with (400 μg/mL) f-Gd@C82 NPs, Aβ1−42
+monomers (0 h) was used as coil control; (d) morphology of Aβ1−42 peptides (50 μM) untreated/treated with f-Gd@C82 NPs after 48 h by
+AFM; (e) the ThT fluorescence kinetics of preformed Aβ1−42 fibrils after incubation with f-Gd@C82 NPs at different concentrations, values
+are presented as mean ± s.d. (n = 3); (f) representative dot blot assay images of Aβ1−42 fibrils treated without/with f-Gd@C82 NPs for 48 h
+detected with mOC87 antibody; (g) AFM image of Aβ1−42 fibrils treated without/with f-Gd@C82 NPs, after 48 h. Images of (b−g) are
+representative of three independent experiments with similar results.
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.3c08823
+ACS Nano 2024, 18, 15416−15431
+15419
+
+peptides aggregated into several hundreds of nanometers to
+micrometers long amyloid fibrils, with a width of ∼16 nm and
+a longitude thread pitch of ∼35 to ∼40 nm. In contrast, the f-
+Gd@C82 NPs intervention led to an irregular cluster
+morphology in the final Aβ1−42 aggregation samples,
+demonstrating the inhibitory effect of f-Gd@C82 NPs on the
+early aggregation of Aβ peptides to protofibrils. This effect was
+also observed for Aβ1−40 peptides (Figure S4). Moreover,
+considering that the concentration of Aβ in physiological
+conditions is estimated to fall within the low nanomolar to
+picomolar range, we extended our investigation to examine
+aggregation/antiaggregation phenomena at a lower peptide
+concentration of 5 μM, while modulating the concentration of
+f-Gd@C82 NPs to 12.5, 25, and 50 μg/mL, respectively (Figure
+S5). The outcomes reveal that under these experimental
+conditions, f-Gd@C82 NPs exhibit a dose- and time-dependent
+capacity to impede peptide aggregation (Figure S5). It is
+noteworthy that our decision to elevate the peptide
+concentration was guided by the imperative to expedite our
+research endeavors within the context of the protracted
+trajectory of AD. This strategic adjustment facilitated the
+attainment of desired outcomes within a compressed time
+frame.
+Astonishingly, f-Gd@C82 NPs exhibited an extraordinary
+ability to disaggregate Aβ1−42 fibrils. In the absence of f-Gd@
+C82 NPs, the ThT intensity of the preformed Aβ1−42 fibrils
+remained almost unchanged over time, indicating their high
+thermodynamic stability (Figure 2e, black curve). However,
+treatment with f-Gd@C82 NPs for 48 h resulted in a
+concentration-dependent decrease in ThT intensity, with
+reductions of ∼28.8%, ∼36.6%, and ∼48.8% observed when
+treated with f-Gd@C82 NPs at 100, 200, and 400 μg/mL,
+respectively. Dot blot assays further confirmed the disag-
+gregation effect of f-Gd@C82 NPs (Figure 2f). Visually, AFM
+(Figure 2g) imaging demonstrated that f-Gd@C82 NPs
+efficiently disaggregated the long, well-defined, ordered
+amyloid fibrils into small, amorphous peptide clusters. These
+data strongly suggest that f-Gd@C82 NPs can also reverse the
+Aβ peptide aggregation.
+The Molecular Mechanism of f-Gd@C82NPs Inhibit
+Aβ1−42 Aggregation and Perturb Protofibril. We further
+performed all-atom MD simulations to gain molecular insight
+i n t o
+t h e
+e ff e c t
+o f
+f - G d @ C 8 2
+N P s
+( G d @
+C82O12(NH3)4(OH)17(NH2)2NO2; see Figure 1f) on the
+aggregation of Aβ1−42 peptides (Figure 3a). Our results
+showed that, in the absence of f-Gd@C82 NPs, even two
+Aβ1−42 peptides (dimer) can rapidly self-assemble into β-sheet
+containing species as demonstrated by the time evolution of
+their secondary structure (Figures 3b and S6a). The secondary
+structure of residues was portioned according to dictionary of
+secondary structure in proteins (DSSP) definition.88 However,
+when treated with f-Gd@C82 NPs, the formation of β-sheet
+was significantly inhibited, with only a few residues temporarily
+forming the β-sheet structure in one of the three independent
+trajectories (run 1: from ∼700 to ∼850 ns, Figures 3b and
+S6b). Quantitatively, the β-sheet content dramatically
+decreased from ∼10.3 ± 4.4% to ∼0.0% with f-Gd@C82 NPs
+(Figure 3c). These findings strongly supported the notion that
+f-Gd@C82 NPs can effectively inhibit the early Aβ1−42
+dimerization and the subsequent protofibril formation, which
+typically possess a large quantity of β-sheet contents, consistent
+with our experimental results from various assays.
+Figure 3. MD simulations on the regulating role of f-Gd@C82NPs in Aβ1−42 aggregation. (a) The detailed illustration of the Aβ1−42-dimer + f-
+Gd@C82 system. Here, the two Aβ1−42 peptides are shown with New Cartoon colored blue and red, and the Cα atoms in the N-terminus are
+represented by yellow balls. Two f-Gd@C82 NPs are shown in CPK representation, and water box is shown in the blue transparent surface.
+(b) Changes in the secondary structures of Aβ1−42 peptides over 1 μs simulation time in the absence (left) and presence (right) of the f-Gd@
+C82 NPs (upper) and the snapshots from the trajectories at critical time points (lower). (c) Fractional secondary structure (coil, β-sheet, β-
+bridge, bend, turn, and helix) contents ratio of Aβ1−42-dimer in the absence and presence of f-Gd@C82 NPs. (d) Hydrogen bond numbers
+from f-Gd@C82 NPs to mainchain and side chain atoms in Aβ1−42, the typical snapshots are shown on the right. (e) Time evolution of the
+interaction energy between Aβ1−42 and f-Gd@C82 NPs. van der Waals (vdW) and electrostatic (elec) terms are shown in different colors; the
+total is the sum of these two values.
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.3c08823
+ACS Nano 2024, 18, 15416−15431
+15420
+
+To elucidate the detailed inhibitory mechanism of f-Gd@C82
+NPs on Aβ1−42 peptides aggregation, we then analyzed a typical
+trajectory of the f-Gd@C82 NPs + peptides system. f-Gd@C82
+NPs were quickly adsorbed onto the peptides at the early stage
+(<10 ns), driven by long-range electrostatic interactions
+(Figure 3d,e). After binding, f-Gd@C82 NPs formed numerous
+hydrogen bonds with the protrude side chains of peptides
+(∼15), while less with the interior mainchains (∼7) (Figure
+3d). Through several rounds of binding configuration
+adjustments, f-Gd@C82 NPs gradually formed more hydrogen
+bonds with peptide mainchains (increased to 11 after 820 ns,
+Figure 3d). Notably, the hydrogen-binding sites (including −
+NO2, −NH2, −NH3
++, −OH, and CO) were randomly
+distributed on the spherical surface of f-Gd@C82 NPs, resulting
+in highly “spatially disordered” hydrogen bonds (as compared
+to the inter/intramainchain hydrogen bonds in β-sheet
+structures) between f-Gd@C82 NPs and peptides (Figure
+3d). Furthermore, the attractive electrostatic interactions and
+salt-bridges formed by f-Gd@C82 NPs surficial groups with
+charged residues in peptides further enhanced their binding,
+while the steric effect of f-Gd@C82 NPs suppressed the
+association of peptides (Figure S7). Therefore, the robust
+aggregation inhibiting effects of f-Gd@C82 NPs can be mainly
+attributed to its strong capability to form highly stable
+disordered hydrogen-bond networks with all available hydro-
+gen-bonding sites in peptides, thus outcompeting the
+Figure 4. MD simulations on the interactions between f-Gd@C82NPs and protofibril. (a) The composition of the “Aβ1−42 protofibril
+(pentamer) + f-Gd@C82 NPs” simulation system. The backbone of Aβ1−42 protofibril is shown in New Cartoon representation (basic
+residues: blue; acidic residues: red; hydrophobic residues: white; hydrophilic residues: green). The f-Gd@C82 NPs are shown in a CPK
+representation. Sodium and chloride ions are displayed by green and pink spheres, and water was shown in the blue transparent surface. (b)
+Representative trajectory to show the dynamics of f-Gd@C82 NPs adsorbed onto the Aβ1−42 protofibril, the side chains are not shown for
+clarity. (c) The contact probability between f-Gd@C82 NPs and Aβ1−42 protofibril for the entire trajectory length (top), and the average
+contact probability of f-Gd@C82 NPs with 42 residues of Aβ1−42 protofibril (bottom). A residue was assigned to be in contact when any atom
+in the residue was within 0.5 nm of any atom of f-Gd@C82 NPs. (d) Top (left) and side (right) view of the atomic model showing the
+staggered arrangement of the nonplanar subunits. (e) Histograms of the RMSD, residue contact number, and solvent accessible surface area
+(SASA) of Aβ1−42 protofibril in the absence and presence of f-Gd@C82 NPs. (f) Several snapshots are taken from a 2500 ns representative
+MD simulation trajectory. (g) The nonbonded interaction energies (including vdW, elec, and their sum) between Aβ1−42 protofibril and f-
+Gd@C82 NPs as a function of simulation time.
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.3c08823
+ACS Nano 2024, 18, 15416−15431
+15421
+
+formation of successive and ordered inter/intramainchains
+hydrogen bonds by peptides themselves. The electrostatic
+interactions and steric effect also contributed to this effect. The
+observed antiaggregation behavior of f-Gd@C82 NPs and the
+underlying mechanisms remained consistent even in PBS-like
+environments (Table S6 and Figure S8a−c).
+Our ThT fluorescence assay and AFM imaging experiments
+demonstrated that f-Gd@C82 NPs can disaggregate Aβ1−42
+fibrils (Figure 2e−g). To unravel the underlying mechanism of
+this reversal of Aβ aggregation, we constructed an Aβ1−42
+protofibril (pentamer) and probed its interactions with f-Gd@
+C82 NPs (Figure 4a). F−Gd@C82 NPs were rapidly adsorbed
+onto the surface of protofibril via specific binding to charged
+residues, including Asp1, Arg5, Lys16, Lys28, and the
+deprotonated C-terminal −COO−groups (Figures 4b,c and
+S9). Meanwhile, they also formed a network of hydrogen
+bonds with the side chains and mainchains of the protofibril
+(Figure S10). Particularly noteworthy are the −OH and −C
+O groups, which are present in higher quantities on the Gd@
+C82 NPs and were found to form approximately 8−12 and 3−4
+hydrogen bonds with Aβ1−42 (Figure S11a), respectively.
+Additionally, the −NH3
++ groups not only participate in
+hydrogen bond formation but also engage in electrostatic
+attraction with negatively charged residues on the Aβ1−42
+protofibril, such as Asp7 (Figure S11b). This electrostatic
+interaction enhances the binding of f-Gd@C82 NPs to the
+protofibril, facilitating their interactions. Notably, these sites
+serve as crucial anchoring points for the elongation and lateral
+growth of protofibril to the mature fibril (Figure 4d).64 This
+microscopic picture illuminates how f-Gd@C82 NPs suppress
+the fast growth of seed protofibrils to mature fibrils (Figure
+2a). Additionally, f-Gd@C82 NPs induce extensive instability
+to the Aβ1−42 protofibril, as indicated by larger root-mean-
+square deviation (RMSD), less residual contact number, and
+larger SASA upon binding (Figure 4e). In PBS-like simulation
+environments, we also observed similar phenomena (Table S6
+and Figure S8d−f). Therefore, MD simulations illustrated that
+f-Gd@C82 NPs pull on the N-terminal of protofibril, disrupt its
+Figure 5. f-Gd@C82NPs relieve oAβ1−42-induced cytotoxicity on primary neuron. Cell viability of primary neurons after incubation with
+oAβ1−42, oAβ1−42 + f-Gd@C82 NPs, and f-Gd@C82 NPs measured by CCK-8 (a), LDH (b), and LIVE/DEAD assays (c and d, scale bar = 100
+μm). All values represent means ± s.d. (n = 3). n.s., not significant, * p < 0.05, ** p < 0.01, *** p < 0.001, *** p < 0.0001 vs Aβ1−42 group by
+one-way ANOVA. (e) Morphology of primary neurons treated with these conditions using SEM, scale bar = 50 μm. (f) Enlarged image of
+Figure 5e, scale bar = 20 μm.
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.3c08823
+ACS Nano 2024, 18, 15416−15431
+15422
+
+hydrophobic core formed by Ala2−Phe4−Leu34−Val36, and
+thus cause the misalignment and eventual opening of the N-
+terminus (Figure 4f). The nonbonded interaction analyses
+suggest that the electrostatic and vdW interactions collectively
+facilitate the entire destruction process (Figure 4g).
+Given the potential structural diversity inherent in oligomers
+or protofibrils, we extended our investigations by constructing
+an additional simulation system in which a pentameric
+oligomer was derived from the random coil conformation. A
+comprehensive summary of the detailed simulation parame-
+ters/models and the resulting outcomes pertaining to this
+system can be found in Table S7 and Figure S12a−c,
+respectively. As anticipated, the interaction of f-Gd@C82 NPs
+with the oligomer led to a discernible decrease in the level of
+formation of ordered β-sheet structures (reduced from 11.5 ±
+1.4 to 6.6 ± 0.6, as illustrated in Figure S12d). This
+phenomenon predominantly stems from electrostatic inter-
+actions, facilitating the specific binding of f-Gd@C82 to the
+exposed charged residues of the oligomer (depicted in Figure
+S12e,f). Consequently, it is evident that the observed effects
+and underlying mechanisms remain consistent, irrespective of
+the initial structural configuration.
+f-Gd@C82 NPs Relieve the Neurotoxicity of Aβ1−42
+Oligomers. Encouraged by the promising findings at the
+molecular level, we were motivated to investigate whether f-
+Gd@C82 NPs could effectively intervene in Aβ1−42-induced AD
+pathology in primary neurons. As soluble ordered Aβ1−42
+oligomers (oAβ1−42) formed during peptide aggregation are
+known to be the most toxic species to neurons,23,27,89 we
+examined the toxicity of oAβ1−42 generated with/without f-
+Gd@C82 NPs on neurons. First, soluble oAβ1−42 (25 μM) was
+prepared with varying concentrations of f-Gd@C82 NPs (0, 50,
+100, 200, and 400 μg/mL) following established protocols.19
+We then exposed primary neurons to these oAβ1−42 species for
+a duration of 24 h. Subsequently, the viability of the neurons
+subjected to the different treatments was assessed by using
+multiple methods.
+Initially, a comprehensive series of characterizations was
+undertaken to validate the formation of oligomers. Illustrated
+in Figure S13, the incorporation of acquired AFM images,
+silver-stained gel images, TEM images, and dot blot assay
+images collectively serves to corroborate the presence of
+oligomeric species. Subsequently, using a cell counting kit-8
+(CCK8) assay, we found that oAβ1−42 visibly decreased cell
+viability (∼55.7%) (Figure 5a). However, the cytotoxicity of
+oAβ1−42, when generated with f-Gd@C82 NPs, was greatly
+reduced, with 100 μg/mL being the optimal concentration for
+detoxification. This was confirmed by lactate dehydrogenase
+(LDH) release and LIVE/DEAD staining assays, which
+showed significant alleviation of oAβ1−42−induced cytotoxicity
+by f-Gd@C82 NPs in the primary neuron model (Figure 5b−
+d). We also found that f-Gd@C82 NPs exhibited mild
+cytotoxicity in primary neurons and other cells (including
+astrocytes, sh-sy5y and HUVECs) (Figure S14). Furthermore,
+we analyzed the neuronal morphology using scanning electron
+microscopy (SEM). Our results revealed that oAβ1−42
+treatment caused significant cellular body shrunk and dendrites
+loss, which is strongly associated with cognitive decline in
+AD.90−92 In contrast, f-Gd@C82 NPs exhibited a strong
+capability in reducing Aβ1−42-induced neuron injuries (Figure
+5f). These results strongly suggest that f-Gd@C82 NPs can
+effectively mitigate the cytotoxic effects of oAβ1−42 by
+inhibiting the aggregation of Aβ1−42 peptides and disassem-
+bling these oAβ1−42 into nontoxic or much less toxic species.
+Furthermore, f-Gd@C82 NPs themselves possess an excellent
+biocompatibility with all tested cell lines.
+In light of the potential implications surrounding the
+formation of oAβ1−42 in initiating the generation of reactive
+oxygen species (ROS), thereby potentially facilitating Aβ1−42-
+mediated neuronal cytotoxicity, we sought to investigate
+whether f-Gd@C82 NPs could mitigate the cellular oxidative
+stress induced by these oligomers (Figure S15). Employing the
+DCFH-DA staining method, we discerned a pronounced
+increase in the ROS levels within BV2 cells upon exposure to
+oAβ1−42. Upon administration of f-Gd@C82, a significant
+attenuation in ROS production was observed, underscoring the
+efficacy of these NPs in quelling oxidative stress. Importantly, it
+is noteworthy that f-Gd@C82 itself did not incite ROS
+generation in the cellular milieu. These findings present
+compelling evidence for the multifunctional potential of f-Gd@
+C82 NPs across diverse pathways.
+Furthermore, a plethora of literature has underscored the
+capacity of Aβ peptides to induce cell membrane leakage or
+damage through various putative mechanisms, including the
+proposed lipid-chaperone effect.28,51,93−99 In line with these
+insights, we embarked on an examination of sh-sy5y cell
+membrane morphology subsequent to exposure to oAβ1−42 (25
+μM), oAβ1−42 generated with f-Gd@C82 NPs, and f-Gd@C82
+NPs alone, utilizing SEM. Our SEM analysis unveiled that
+oAβ1−42 (25 μM) elicited considerable damage to sh-sy5y cell
+membranes, as evidenced by the emergence of numerous pores
+(Figure S16), consistent with the lipid-chaperone hypothesis in
+mediating cell membrane disruption.51 These structural
+perturbations in the membranes hold the potential to induce
+cell membrane leakage, thereby inducing neuronal cytotoxicity.
+Intriguingly, administration of f-Gd@C82 NPs showcased an
+attenuation of the detrimental effects on cell membrane
+integrity induced by oAβ1−42 (Figure S16). This observation
+underscores the promising protective attributes of f-Gd@C82
+NPs against Aβ-triggered membrane damage, thereby present-
+ing prospective neuroprotective advantages.
+Interestingly, we observed a notable accumulation of f-Gd@
+C82 NPs within lysosomes in the cellular uptake assays (Figure
+S17). Given that neurons are capable of internalizing some
+amount of Aβ via endocytosis, predominantly directing it to
+lysosomes within the cell,100,101 the presence of f-Gd@C82 NPs
+suggests its potential role in facilitating the intracellular
+degradation of Aβ fibrils.
+Following promising in vitro results, we endeavored to
+ascertain the ability of f-Gd@C82 NPs to traverse the blood−
+brain barrier (BBB) by utilizing Cy5-modified f-Gd@C82 NPs
+for fluorescence imaging. The peak fluorescence intensity was
+observed at 8 h postinjection, followed by a subsequent decline
+to undetectable levels after 24 h (Figure S18). This temporal
+pattern strongly suggests the rapid and efficacious BBB
+penetration of f-Gd@C82 NPs, thereby laying a critical
+groundwork for their prospective therapeutic utility in AD.
+Regrettably, the conduct of further in vivo investigations to
+evaluate the anti-AD efficacy of f-Gd@C82 NPs poses a
+considerable challenge due to the current insufficient yield of
+the drug, rendering it impractical to amass an adequate
+quantity of f-Gd@C82 NPs for large scale in vivo
+experimentation at the moment.80 Nonetheless, the successful
+deployment of this hydrophilic f-Gd@C82 NP circumvents the
+drawbacks associated with many other nanoinhibitors, thereby
+offering a promising avenue for alleviating neuronal cytotox-
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.3c08823
+ACS Nano 2024, 18, 15416−15431
+15423
+
+icity in AD by targeting a multitude of disorders to inhibit or
+reverse Aβ aggregation sans external stimuli. This advancement
+may herald a feasible paradigm for the rational design of
+strategies aimed at the prevention and treatment of AD
+through the utilization of nanomaterials.
+CONCLUSIONS
+Inspired by the aggregation mechanism of Aβ peptides and the
+architectural features of amyloid fibrils, we have rationally
+designed a dual-functional nanoinhibitor based on Gd@C82
+NPs, denoted as f-Gd@C82 NPs. Gd@C82 NPs are highly
+stable, easy to tailor, and possess a spherical structure, making
+them ideal candidates for this application. Our approach
+involves introducing abundant randomly distributed hydrogen-
+binding sites to the surface of f-Gd@C82 NPs. These groups
+can competitively form a highly stable disordered hydrogen-
+bond network with the mainchains and side chains of peptides,
+inhibiting the formation of ordered intermainchain hydrogen
+bonds of peptides. The spherical structure of f-Gd@C82 NPs
+provides an inherent steric effect that hinders the close
+association of peptides. Furthermore, the introduction of
+charged −NH3
++ groups shields the specific salt-bridge
+interactions between key residues on the peptides, which
+play an important role in guiding the longitudinal and lateral
+growth of protofibrils to mature fibrils. The remaining sp2
+regions on the surface of f-Gd@C82 NPs provide binding
+affinity to the hydrophobic or aromatic ring-containing
+residues on the peptides, further impeding the associations of
+side chains of peptides to form a hydrophobic core. As a result,
+the aggregation of the peptides is significantly suppressed.
+These interactions, including vdW, hydrophobic, hydrogen
+bonding, and electrostatic interactions, collectively endow f-
+Gd@C82 NPs with the capability of disaggregating protofibrils
+and mature Aβ fibrils, thereby largely alleviating the neuronal
+cytotoxicity of Aβ peptides. These functional modifications
+also significantly improved the water dispersibility of f-Gd@
+C82 NPs, resulting in ultrasmall diameters that closely resemble
+a single molecular size. This further enhances their
+bioavailability. Various cytotoxicity assessments suggest that
+f-Gd@C82 NPs exhibit decent cytocompatibility with all tested
+cell lines. Notably, f-Gd@C82 NPs demonstrate high efficacy in
+mitigating Aβ1−42-induced cellular oxidative stress and
+shielding cells from Aβ-triggered membrane damage, thereby
+offering promising neuroprotective benefits. Moreover, their
+rapid and effective penetration of the BBB establishes a critical
+foundation for their potential therapeutic application in AD.
+The designed f-Gd@C82 NPs overcomes the limitations of
+other dual-functional nanoinhibitors, such as GO-based
+nanosheets and g-C3N4, which rely on different mecha-
+nisms.73,75,76 For instance, the highly hydrophobic nature of
+GO nanosheets facilitates their ability to inhibit peptide
+aggregations and disassemble mature fibrils but also results in
+poor water dispersibility and acute cell membrane toxicity and
+other biotoxicities. Moreover, the reported NIR-triggered
+disassembly of mature fibrils on the surface of GO nanosheets
+and g-C3N4 may encounter obstacles due to the inability of
+NIR light beams to reach deep brain tissues. Therefore, the
+successful implementation of hydrophilic f-Gd@C82 NPs,
+independent of any external stimulus, to relieve neuronal
+cytotoxicity in AD through maximal induction of disorder to
+counteract Aβ aggregations may provide a promising direction
+for the design of AD management therapy based on the
+antiaggregation strategy.
+MATERIALS AND METHODS
+Preparation of Functionalized Gd@C82 Nanoparticles
+(f-Gd@C82 NPs). Endohedral metallofullerene Gd@C82 NPs
+was purchased from Xiamen Funano New Material Technol-
+ogy Company and was confirmed to be of 99% purity, and
+samples were dried under vacuum at 60 °C for 24 h (h) before
+the measurement. Chemicals and biological reagents were
+purchased from Sigma-Aldrich and Beijing Chemical Reagent
+(Beijing, China) and used as received. Milli-Q ultrapure water
+was used for all experiments.
+The functional groups onto Gd@C82 NPs were performed
+following a reported procedure102 by a one-step reaction under
+mild condition. Briefly, Gd@C82 NPs (5 mg) was added to 6
+mL of 30 wt % H2O2 and 4 mL of 18 wt % NH4OH. The
+mixtures were vigorously stirred at 50−55 °C under ambient
+conditions for 10 h. At the end of the reaction, the black
+suspension turned to a brown solution with slight insoluble.
+After filtration, the filtrate was added with 10 mL of ethanol,
+which was used as a poor solvent, to the concentrated solution
+(1 mL) to precipitate the solutes. The suspension was
+centrifuged at 10 000 rpm for 1 min, and the supernatant
+was discarded. The yellowish precipitate was washed twice
+with ethanol (10 mL) and dried under a vacuum at 50 °C
+overnight. The compound is stored at 4 °C and protected from
+light.
+f-Gd@C82 NPs Characterization. The morphology and
+size of f-Gd@C82 NPs were investigated by transmission
+electron microscopy (TEM, FEI Talos F200X). The Fourier
+transform infrared (FT-IR) spectra of the carbon particles were
+obtained with a Bruker Fourier Transform Infrared Spec-
+trometer (Hyperion). The X-ray photoelectron spectra (XPS)
+were measured by a KRATOS Axis ultra DLD X-ray
+photoelectron spectrometer. Atomic Force Microscopy
+(AFM) was carried out on Bruker (Icon).
+Aβ Aggregation Experiments. Aβ1−40/42 (NH2-
+D A E F R H D S G Y E V H H Q K L V F F A E D V G S N K -
+GAIIGLMVGGVV/IV-COOH) peptides were purchased from
+APeptide Co. Ltd. (Shanghai, China, ≥98% purity) and
+prepared according to protocols described elsewhere.103,104
+Briefly, lyophilized peptides were dissolved in 1,1,1,3,3,3-
+hexafluoro-2-propanol (HFIP, Sigma-Aldrich) to establish
+monomerization and randomization of structure.105,106 Before
+use, the peptide film was reconstituted at a concentration of 5
+mM in dimethyl sulfoxide (DMSO, Sigma-Aldrich), then
+diluted to 50 μM with phosphate-buffered saline (0.1 M PBS).
+Samples were incubated with or without varied concentrations
+of f-Gd@C82 NPs in a rotating mixer (300 rpm) at 37 °C.
+Thioflavine (ThT) Fluorescence Assay. Fibrillization of
+the Aβ1−40/42 peptides was detected by a characteristic increase
+in ThT fluorescence intensity reflecting the occurrence of β-
+strands.107 ThT fluorescence assay was performed as described
+previously108 with minor modifications. 35 μL aliquots of Aβ
+solution were mixed with 165 μL ThT (20 μM) in PBS. The
+fluorescence intensity of ThT was measured on a Synergy MX
+spectrofluorimeter (BioTek, USA) with excitation and
+emission wavelengths of 450 and 485 nm. The experiment
+was performed three times with each sample in duplicate.
+Dot Blot Analysis. Dot blot assays were carried out as
+described previously to probe the formation level of Aβ1−42
+amyloid mature fibers.109−111 After thermal denaturation at
+100 °C in sodium dodecyl sulfate (SDS) sample buffer,
+samples were applied to nitrocellulose membranes (Hybond
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.3c08823
+ACS Nano 2024, 18, 15416−15431
+15424
+
+ECL, GE Healthcare). The membranes were incubated with
+antiamyloid fibril antibody-conformation-specific (mOC87,
+1:8000, Abcam) antibodies overnight at 4 °C, respectively.
+The blots were washed and incubated with the donkey
+antirabbit-appropriate horseradish peroxidase (HRP)-conju-
+gated secondary antibody (1:5000, Jackson ImunoResearch) at
+room temperature for 2 h. After the samples were washed, the
+signals from Aβ aggregates were then visualized by enhanced
+chemiluminescence (ECL, Bio-Rad) solution.
+Circular Dichroism Spectroscopy (CDs). The secondary
+structures of Aβ1−42 conformers with or without f-Gd@C82
+NPs were evaluated using a Jasco 815 Spectrometer (1 mm
+path length cuvette) at 25 °C. Raw data were manipulated by
+smoothing, and the buffer spectrum was also measured and
+subtracted from the spectra of Aβ1−42 peptides. Monomic
+Aβ1−42 solutions were kept on ice for immediate use as a coil
+positive control.
+Primary Neuron Culture. Mouse primary neuron cultures
+were prepared from embryonic day 18 C57BL/6 mice as
+previously described.112 All animal procedures were in
+compliance with the policies of the Soochow University
+Animal Care and Use Committee (SUACUC). In brief,
+neurons were dissociated from cortex and cultured on poly-L-
+lysine-coated (0.1 mg/mL, sigma) dishes containing plating
+medium (neurobasal medium supplemented with 2% B-27, 1%
+P/S, 1% L-glutamine, and 0.25% glutaMax at 37 °C in 5% CO2
+). Plating medium was replaced by feeding medium (neuro-
+basal medium supplemented with 2% B27, 1% P/S/G, and 1%
+L-glutamine) the day after cell plating. Cells were used for
+experiments 8 days after seeding; in the meantime, half of
+culture medium was replaced with fresh medium every other
+day. This method resulted in cultures highly enriched with
+neurons (∼90% purity) with minimal astrocyte and microglial
+contamination. We performed morphometric characterization
+by SEM.
+Primary Astrocyte Culture. Primary astrocyte cultures
+were prepared from the cerebral cortex of 1- to 3-day-old
+C57BL/6J mice described previously.113 In brief, dissociated
+cortical cells were suspended in DMEM (Gibico, Life
+Technology) containing 25 mM glucose, 4 mM glutamine, 1
+mM sodium pyruvate, and 10% FBS and plated on PDL-coated
+75-cm2 flasks at a density of 6 × 105 cells cm−2. Microglial and
+monolayers of type 1 astrocytes were obtained 12−14 days
+after plating. Monolayers of type 1 astrocytes were obtained
+12−14 days after plating. Nonastrocytic cells were detached
+from the flasks by shaking and removed by changing the
+medium. Astrocytes were dissociated by trypsinization and
+then reseeded on an uncoated 96 wells plate. These cells were
+allowed to grow to 80−90% confluence before exposure to f-
+Gd@C82 NPs treatment.
+Preparation of Oligomeric Aβ1−42. oAβ1−42 prepared
+according to previously described.19 The obtained monomeric
+Aβ1−42 samples were resuspended in 5 mM DMSO, diluted to
+25 μM with neuron medium in the absence or presence of
+different concentrations of f-Gd@C82 NPs. After incubated for
+24 h at 4 °C, samples were added to neuron culture to
+detected cytotoxicity.
+Cell Viability and Cytotoxicity Assays. The cytotoxicity
+of f-Gd@C82 NPs was assessed by using a standard CCK-8
+assay (CK04, Dojindo). Primary mouse neurons, primary
+mouse astrocytes, sh-sy5y, and HUVECs were selected for the
+study. Briefly, cells in the logarithmic growth phase were
+seeded at a density of 5 × 103 cells per well in 96-well plates
+and cultured in complete DMEM containing 10% FBS and 1%
+penicillin/streptomycin. The cells were then cocultured with
+various concentrations of f-Gd@C82 NPs (0, 100, 200, and 400
+μg/mL) in serum-free DMEM until they reached approx-
+imately 80% confluence. After a 24 h incubation period, the
+cells were washed three times with PBS. Cytotoxicity of
+primary neurons cultured with oAβ1−42 generated with/
+without f-Gd@C82 NPs were determined using CCK-8, lactate
+dehydrogenase (LDH) cytotoxicity assay kit, and LIVE/DEAD
+Kit, following the manufacturer’s instructions.
+During the CCK-8 assay, the absorbance (optical density,
+OD) of cells in different groups was measured at 450 nm using
+a microplate reader (Bio-Tek Instruments, Synergy NEO,
+USA) to calculate the cell viability using the following
+equation:
+cell viability (%)
+((OD
+OD
+)/(OD
+OD
+))
+100%
+test
+blank
+control
+blank
+=
+×
+(1)
+where, ODtest refers to the absorbance of the cells exposed to
+the nanomaterial sample, ODcontrol refers to the absorbance of
+the control sample, and ODblank refers to the absorbance of the
+blank well.
+For the LDH assay, the cell viability was normalized to the
+high control, following the manufacturer’s instructions
+(Catalog # K311−400). Specifically, we utilized medium
+containing 1% Triton X-100 as the high control, where the cell
+membrane was completely compromised. The percentage of
+cytotoxicity was calculated using the formula:
+cytotoxicity (%)
+(test sample
+background control)
+/(high control
+background control)
+100%
+=
+×
+(2)
+Furthermore, the cell survival rate determined using the
+LIVE/DEAD assay was normalized according to the protocol
+outlined in a previous literature114 using the following
+equation:
+cell survival rate (%)
+living cells/(living cells
+dead cells)
+100%
+=
++
+×
+(3)
+normalized cell rate (%)
+cell survival rate of each group/cell survival rate of 
+control group
+100%
+=
+×
+(4)
+Scanning Electron Microscope (SEM). SEM was used to
+further investigate the morphology changes of the neurons.
+Briefly, the primary neurons were cultured on glass previously.
+After stimulation by oAβ (25 μM ± f-Gd@C82 NPs) for 24 h,
+neurons were washed with 0.1 M PBS and fixed with 2.5% (v/
+v) glutaraldehyde solution for 24 h at 4 °C. The fixed cells
+were washed with 0.1 M PBS for 3 times. Subsequently,
+gradient dehydration was performed by varying the concen-
+trations of ethanol solution (30%, 50%, 70%, 80%, 90%, 95%,
+and 100% for 10 min each). At last, neurons were dried in a
+vacuum oven, and the morphology of the samples was
+observed by a scanning electron microscope (Quanta 200
+FEG, FEI, USA).
+MD Simulation Model and Systems Setup. The
+theoretical model of f-Gd@C82 NPs was constructed according
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.3c08823
+ACS Nano 2024, 18, 15416−15431
+15425
+
+to the XPS spectra (Figures 1 and S1) and deconvolution
+results (Tables S1−S4). The most probable molecular formula
+of f-Gd@C82 NPs, Gd@C82O12(NH3)4(OH)17(NH2)2NO2,
+was first determined based on these spectrum and
+deconvolution results, and then a structural model was
+constructed using molecular modeling. More details on the
+parametrization of the f-Gd@C82 NPs can be found in
+Supplementary Methods and Table S8), and the computa-
+tional details for MD simulations can be found below within
+the Materials and Methods.
+Two different sets of simulation systems were prepared for
+the computational study: the first one was used to explore the
+effect of f-Gd@C82 NPs on amyloid self-aggregation of Aβ1−42
+peptides; the second one was for the investigation of whether f-
+Gd@C82 NPs disaggregate the structure of preformed amyloid
+fibrils. For the first set of simulations, we studied two
+configurations: one contains two separated peptides named
+the Aβ1−42-dimer and served as the control. The other one
+named the “Aβ1−42-dimer + f-Gd@C82” system also consists of
+two separated peptides but with the presence of two f-Gd@C82
+NPs. In the control system, two peptides were separated at
+least 1.5 nm from each other were solvated into a cubic water
+box (with a box size of 9.0 nm × 9.0 nm × 9.0 nm) containing
+23 274 water molecules. The setup protocol of the “Aβ1−42-
+dimer + f-Gd@C82” system is very similar to the control one,
+except with the random addition of two f-Gd@C82 molecules.
+Then, the Aβ-dimer + f-Gd@C82 complex was solvated into a
+cubic water box with the size of 9.0 × 9.0 × 9.0 nm, containing
+23 153 water molecules. In order to mimic the physiological
+conditions of the human body, both the control and “Aβ1−42-
+dimer + f-Gd@C82” simulation systems were neutralized, and
+0.15 mol/L NaCl was added, which gave the total of 71 214
+and 71 166 atoms. The detailed illustration of the initial system
+is shown in Figure 3a. The initial isolated Aβ1−42 used in our
+molecular dynamics simulation were obtained from the Protein
+Data Bank (PDB ID: 1Z0Q).115 This conformation was
+observed by NMR and described as an intermediate state
+between the α and β conformations of Aβ1−42. In the second
+set of simulations, two different protofibril systems were set up
+in the absence and presence of a group of 5 f-Gd@C82
+molecules (Figure 4a). Each system was named as the
+“Aβ1−42 protofibril (pentamer)” system and the “Aβ1−42
+protofibril (pentamer) + f-Gd@C82” system. Both protofibril
+(pentamer) systems were solvated into 10.0 nm × 10.0 nm ×
+10.0 nm water boxes, containing 31 487 and 31 118 water
+molecules, respectively. The initial model used for the fibril
+simulations was a portion of published protofibril structure
+(PDBID: 5OQV) obtained from cryo-EM.64
+MD Simulation Methods. All MD simulations were
+carried out with the GROMACS-4.6.6 software package,116
+together with the AMBER99SB-ILDN force field117 set in
+explicit TIP3P water solvent.118 Configurations were visually
+presented using the VMD software (v1.9.3).119,120 Following
+similar protocols used in previous studies,121,122 each solvated
+system was first minimized for 2,000 steps. Then, the systems
+were equilibrated for 2 ns at 310 K and 1 atm, by using the V-
+rescale thermostat123 and Parrinello−Rahman coupling
+methods124 with position restraints on all heavy atoms. During
+the production runs, the long-range electrostatic interactions
+were treated with the particle-mesh Ewald method,125 The
+short-ranged vdW interactions were treated with a cutoff of 1.2
+nm. All solute bonds were constrained to their equilibrium
+values using the LINCS algorithm,126 and water geometry was
+constrained by employing the SETTLE algorithm.127 Periodic
+boundary conditions were applied in all directions. For each
+type of system, three independent 1000 or 2500 ns trajectories
+were collected for analysis.
+Analysis. The secondary structure was calculated using the
+DSSP program.88 A hydrogen bond is defined when the
+separation between a donor and an acceptor is closer than 0.35
+nm and the donor−hydrogen−acceptor angle is larger than
+150°. The mean intermolecular hydrogen bonds formed
+between side chain/mainchain of Aβ1−42 and f-Gd@C82 NPs
+were computed by using the g_hbond program. The contact
+ratio between f-Gd@C82 NPs and Aβ1−42 fibril was counted in
+the same manner as in our previous studies121,122 when the
+distance between any heavy atom from a Aβ1−42 target residue
+and the f-Gd@C82 NPs is within 0.5 nm.
+Statistical Analysis. All results are expressed as mean ±
+standard deviation (sd) from at least three independent
+experiments. Statistical analyses were conducted using Graph-
+Pad PRISM (version 9.0). Data sets with only two
+independent groups were analyzed for statistical significance
+using unpaired, two-tailed Student’s t test. Data sets with more
+than two groups were analyzed using one-way ANOVA,
+followed by Bonferroni or Tukey post hoc test. All p values
+below or equal to 0.05 were considered significant. *p < 0.05,
+**p < 0.01, ***p < 0.001 and ****p < 0.0001.
+ASSOCIATED CONTENT
+*
+sı Supporting Information
+The Supporting Information is available free of charge at
+https://pubs.acs.org/doi/10.1021/acsnano.3c08823.
+Modeling process of f-Gd@C82 NPs; Agarose gel
+electrophoresis to detect the charged property of f-
+Gd@C82 NPs; XPS spectrum of f-Gd@C82 NPs; TEM
+images of the Aβ1−42 samples aggregated without/with f-
+Gd@C82 NPs; f-Gd@C82 NPs inhibit the aggregation of
+Aβ1−40 peptides in vitro; inhibition of Aβ1−42 peptide
+fibrillization by f-Gd@C82 NPs at low peptide
+concentration (5 μM) in vitro; ROS generation
+detection; Preparation of Cy5-conjugated f-Gd@C82
+NPs; in vitro cellular uptake; blood−brain barrier
+penetration study; MD simulations elucidating the role
+of f-Gd@C82 NPs in redirecting the aggregation of
+Aβ1−42 peptides; f-Gd@C82 NPs hinder the associations
+of specific regions in peptides that have high β-sheet
+formation tendency; MD simulations of f-Gd@C82 NPs
+inhibiting Aβ1−42 peptide aggregation and disrupting
+preformed protofibrils in phosphate-buffered saline
+(PBS)-like environments; kinetics of f-Gd@C82 NPs
+attacking a preformed Aβ1−42 protofibril; hydrogen-
+binding interactions between f-Gd@C82 NPs and a
+preformed Aβ1−42 protofibril; interactions between the
+introduced functional groups on the f-Gd@C82 NPs and
+Aβ1−42 protofibril; MD simulations depicting the
+interaction between f-Gd@C82 NPs and oAβ1−42
+obtained from the protein in random coil conformation;
+characterization of oAβ1−42 generated with or without f-
+Gd@C82 NPs; cytocompatibility of f-Gd@C82 NPs with
+neuron, astrocyte, sh-sy5y and HUVECs; f-Gd@C82
+NPs attenuate oAβ1−42-induced ROS generation; SEM
+images of sh-sy5y cells after treatment with oAβ/oAβ +
+f-Gd@C82 NPs/f-Gd@C82 NPs (24 h); cellular uptake
+behavior of f-Gd@C82 NPs; BBB permeability of Cy5-
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.3c08823
+ACS Nano 2024, 18, 15416−15431
+15426
+
+modified f-Gd@C82 NPs; the deconvolution result of f-
+Gd@C82 XPS spectra; the deconvolution result of f-
+Gd@C82 C 1s XPS spectra; the deconvolution result of
+f-Gd@C82 N 1s XPS spectra; the approximate number of
+functional groups determined by deconvolution of f-
+Gd@C82 NPs XPS spectra; estimated secondary
+structure content (%) of Aβ1−42 peptides; MD
+simulation details in PBS-like environments; MD
+simulation details for oAβ1−42 obtained from the protein
+in random coil conformation; atomic partial charges of
+Gd@C82O12(NH3)4 (OH)17(NH2)2NO2 NPs (PDF)
+AUTHOR INFORMATION
+Corresponding Authors
+Zaixing Yang −Institute of Quantitative Biology, Shanghai
+Institute for Advanced Study, College of Life Sciences,
+Zhejiang University, Hangzhou 310027, China; State Key
+Laboratory of Radiation Medicine and Protection, School for
+Radiological and Interdisciplinary Sciences (RAD-X),
+Soochow University, Suzhou 215123, China;
+orcid.org/
+0000-0003-3521-6867; Email: zxyang@suda.edu.cn
+Ning Chen −College of Chemistry, Chemical Engineering and
+Materials Science, Soochow University, Suzhou 215123,
+China;
+orcid.org/0000-0002-9405-6229;
+Email: chenning@suda.edu.cn
+Ruhong Zhou −Institute of Quantitative Biology, Shanghai
+Institute for Advanced Study, College of Life Sciences,
+Zhejiang University, Hangzhou 310027, China; Department
+of Chemistry, Columbia University, New York, New York
+10027, United States;
+orcid.org/0000-0001-8624-5591;
+Email: rhzhou@zju.edu.cn
+Authors
+Xiuhua Yin −Institute of Quantitative Biology, Shanghai
+Institute for Advanced Study, College of Life Sciences,
+Zhejiang University, Hangzhou 310027, China; State Key
+Laboratory of Radiation Medicine and Protection, School for
+Radiological and Interdisciplinary Sciences (RAD-X),
+Soochow University, Suzhou 215123, China
+Hong Zhou −Institute of Quantitative Biology, Shanghai
+Institute for Advanced Study, College of Life Sciences,
+Zhejiang University, Hangzhou 310027, China
+Tiantian Cao −College of Chemistry, Chemical Engineering
+and Materials Science, Soochow University, Suzhou 215123,
+China; Suzhou Institute of Trade and Commerce, Suzhou
+215009, China
+Xiner Yang −State Key Laboratory of Radiation Medicine and
+Protection, School for Radiological and Interdisciplinary
+Sciences (RAD-X), Soochow University, Suzhou 215123,
+China
+Fei Meng −State Key Laboratory of Radiation Medicine and
+Protection, School for Radiological and Interdisciplinary
+Sciences (RAD-X), Soochow University, Suzhou 215123,
+China
+Xing Dai −State Key Laboratory of Radiation Medicine and
+Protection, School for Radiological and Interdisciplinary
+Sciences (RAD-X), Soochow University, Suzhou 215123,
+China;
+orcid.org/0000-0003-0683-0753
+Yifan Wang −State Key Laboratory of Radiation Medicine
+and Protection, School for Radiological and Interdisciplinary
+Sciences (RAD-X), Soochow University, Suzhou 215123,
+China
+Sijie Li −State Key Laboratory of Radiation Medicine and
+Protection, School for Radiological and Interdisciplinary
+Sciences (RAD-X), Soochow University, Suzhou 215123,
+China
+Wangsong Zhai −State Key Laboratory of Radiation
+Medicine and Protection, School for Radiological and
+Interdisciplinary Sciences (RAD-X), Soochow University,
+Suzhou 215123, China
+Complete contact information is available at:
+https://pubs.acs.org/10.1021/acsnano.3c08823
+Author Contributions
+#X.Y., H.Z., and T.C. contributed equally. R.Z., N.C., and Z.Y.
+conceived and designed the research. T.C., X.Y. and N.C.
+synthesized the title material and characterization. X.Y., X.Y.,
+F.M., T.C., Y.W., S.L., and W.Z. carried out the molecular and
+cellular experiments and analyzed data. X.D. and H.Z.
+conducted molecular modelling for f-Gd@C82. H.Z. and Z.Y.
+performed MD simulations and data analysis. Z.Y., X.Y., N.C.
+and R.Z. cowrote the paper. All authors discussed and
+commented on the manuscript.
+Funding
+This work was partially supported by the National Key
+Research
+and
+Development
+Program
+of
+China
+(2021YFA1201201 and 2021YFF1200404), the National
+Natural Science Foundation of China (U1967217 and
+22176137), the National Independent Innovation Demon-
+stration Zone Shanghai Zhangjiang Major Projects
+(ZJZX2020014), the National Center of Technology In-
+novation for Biopharmaceuticals (NCTIB2022HS02010),
+Shanghai Artificial Intelligence Lab (P22KN00272), the
+Natural Science Foundation of the Jiangsu Higher Education
+Institutions of China (20KJA150010 and 22KJD430008), the
+Starry Night Science Fund at Shanghai Institute for Advanced
+Study of Zhejiang University (SN-ZJU-SIAS-003), and
+Zhejiang University Global Partnership Fund (188170 +
+194452409/004).
+Notes
+The authors declare no competing financial interest.
+ACKNOWLEDGMENTS
+We would like to thank D.B. for critical reading of the
+manuscript. We also thank S.L., X.M., and L.Z. for helpful
+discussions.
+REFERENCES
+(1) Gaugler, J.; James, B.; Johnson, T.; Reimer, J.; Solis, M.; Weuve,
+J.; Buckley, R. F.; Hohman, T. J. 2022 Alzheimer’s Disease Facts and
+Figures. Alzheimers Dement 2022, 18, 700−789.
+(2) Hippius, H.; Neundörfer, G. The Discovery of Alzheimer’s
+Disease. Dialogues Clin. Neurosci. 2003, 5, 101.
+(3) Knopman, D. S.; Amieva, H.; Petersen, R. C.; Chetelat, G.;
+Holtzman, D. M.; Hyman, B. T.; Nixon, R. A.; Jones, D. T. Alzheimer
+Disease. Nat. Rev. Dis. Primers 2021, 7, 33.
+(4) Long, J. M.; Holtzman, D. M. Alzheimer Disease: An Update on
+Pathobiology and Treatment Strategies. Cell 2019, 179, 312−339.
+(5) Cummings, J.; Aisen, P. S.; DuBois, B.; Frölich, L.; Jack, C. R.;
+Jones, R. W.; Morris, J. C.; Raskin, J.; Dowsett, S. A.; Scheltens, P.
+Drug Development in Alzheimer’s Disease: The Path to 2025.
+Alzheimer’s Res. Ther. 2016, 8, 39.
+(6) Lee, J. H.; Jeong, S. K.; Kim, B. C.; Park, K. W.; Dash, A.
+Donepezil Across the Spectrum of Alzheimer’s Disease: Dose
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.3c08823
+ACS Nano 2024, 18, 15416−15431
+15427
+
+Optimization and Clinical Relevance. Acta Neurol. Scand. 2015, 131,
+259−267.
+(7) Rubin, R. Recently Approved Alzheimer Drug Raises Questions
+That Might Never Be Answered. JAMA 2021, 326, 469−472.
+(8) Hsu, D.; Marshall, G. A. Primary and Secondary Prevention
+Trials in Alzheimer Disease: Looking Back, Moving Forward. Curr.
+Alzheimer Res. 2017, 14, 426−440.
+(9) Dhillon, S. Aducanumab: First Approval. Drugs 2021, 81, 1437−
+1443.
+(10) Van Dyck, C. H.; Swanson, C. J.; Aisen, P.; Bateman, R. J.;
+Chen, C.; Gee, M.; Kanekiyo, M.; Li, D.; Reyderman, L.; Cohen, S.;
+Froelich, L. Lecanemab in Early Alzheimer’s Disease. N. Engl. J. Med.
+2023, 388, 9−21.
+(11) Hardy, J.; Selkoe, D. J. The Amyloid Hypothesis of Alzheimer’s
+Disease: Progress and Problems on the Road to Therapeutics. Science
+2002, 297, 353−356.
+(12) Viola, K. L.; Klein, W. L. Amyloid β Oligomers in Alzheimer’s
+Disease Pathogenesis, Treatment, and Diagnosis. Acta Neuropathol.
+2015, 129, 183−206.
+(13) Selkoe, D. J.; Hardy, J. The Amyloid Hypothesis of Alzheimer’s
+Disease at 25 Years. EMBO Mol. Med. 2016, 8, 595−608.
+(14) Choi, S. H.; Kim, Y. H.; Hebisch, M.; Sliwinski, C.; Lee, S.;
+D’Avanzo, C.; Chen, H. C.; Hooli, B.; Asselin, C.; Muffat, J.; Klee, J.
+B.; Zhang, C.; Wainger, B. J.; Peitz, M.; Kovacs, D. M.; Woolf, C. J.;
+Wagner, S. L.; Tanzi, R. E.; Kim, D. Y. A Three-Dimensional Human
+Neural Cell Culture Model of Alzheimer’s Disease. Nature 2014, 515,
+274−293.
+(15) Bolmont, T.; Clavaguera, F.; Meyer-Luehmann, M.; Herzig, M.
+C.; Radde, R.; Staufenbiel, M.; Lewis, J.; Hutton, M.; Tolnay, M.;
+Jucker, M. Induction of Tau Pathology by Intracerebral Infusion of
+Amyloid-β-Containing Brain Extract and by Amyloid-β Deposition in
+App × Tau Transgenic Mice. Am. J. Pathol. 2007, 171, 2012−2020.
+(16) Ising, C.; Venegas, C.; Zhang, S. S.; Scheiblich, H.; Schmidt, S.
+V.; Vieira-Saecker, A.; Schwartz, S.; Albasset, S.; McManus, R. M.;
+Tejera, D.; Griep, A.; Santarelli, F.; Brosseron, F.; Opitz, S.; Stunden,
+J.; Merten, M.; Kayed, R.; Golenbock, D. T.; Blum, D.; Latz, E.; Buee,
+L. NLRP3 Inflammasome Activation Drives Tau Pathology. Nature
+2019, 575, 669−672.
+(17) Gotz, J.; Chen, F. V.; Van Dorpe, J.; Nitsch, R. Formation of
+Neurofibrillary Tangles in P301L Tau Transgenic Mice Induced by
+Aβ42 Fibrils. Science 2001, 293, 1491−1495.
+(18) Heneka, M. T.; Kummer, M. P.; Stutz, A.; Delekate, A.;
+Schwartz, S.; Vieira-Saecker, A.; Griep, A.; Axt, D.; Remus, A.; Tzeng,
+T. C.; Gelpi, E.; Halle, A.; Korte, M.; Latz, E.; Golenbock, D. T.
+NLRP3 Is Activated in Alzheimer’s Disease and Contributes to
+Pathology in APP/PS1Mice. Nature 2013, 493, 674−678.
+(19) Luči̅naitė, A.; McManus, R. M.; Jankunec, M.; Rácz, I.;
+Dansokho, C.; Dalgėdienė, I.; Schwartz, S.; Brosseron, F.; Heneka, M.
+T. Soluble Aβ Oligomers and Protofibrils Induce NLRP3 Inflamma-
+some Activation in Microglia. J. Neurochem. 2020, 155, 650−661.
+(20) Zott, B.; Simon, M. M.; Hong, W.; Unger, F.; Chen-Engerer,
+H.-J.; Frosch, M. P.; Sakmann, B.; Walsh, D. M.; Konnerth, A. A
+Vicious Cycle of β Amyloid−Dependent Neuronal Hyperactivation.
+Science 2019, 365, 559−565.
+(21) Tzioras, M.; McGeachan, R. I.; Durrant, C. S.; Spires-Jones, T.
+L. Synaptic Degeneration in Alzheimer Disease. Nat. Rev. Neurol.
+2023, 19, 19−38.
+(22) Palop, J. J.; Mucke, L. Amyloid−β−Induced Neuronal
+Dysfunction in Alzheimer’s Disease: From Synapses toward Neural
+Networks. Nat. Neurosci. 2010, 13, 812−818.
+(23) Benilova, I.; Karran, E.; De Strooper, B. The Toxic Aβ
+Oligomer and Alzheimer’s Disease: An Emperor in Need of Clothes.
+Nat. Neurosci. 2012, 15, 349−357.
+(24) De Strooper, B.; Karran, E. The Cellular Phase of Alzheimer’s
+Disease. Cell 2016, 164, 603−615.
+(25) Walsh, D. M.; Klyubin, I.; Fadeeva, J. V.; Cullen, W. K.; Anwyl,
+R.; Wolfe, M. S.; Rowan, M. J.; Selkoe, D. J. Naturally Secreted
+Oligomers of Amyloid β Protein Potently Inhibit Hippocampal Long-
+Term Potentiation in Vivo. Nature 2002, 416, 535−539.
+(26) Nguyen, P. H.; Ramamoorthy, A.; Sahoo, B. R.; Zheng, J.;
+Faller, P.; Straub, J. E.; Dominguez, L.; Shea, J.-E.; Dokholyan, N. V.;
+De Simone, A.; Ma, B.; Nussinov, R.; Najafi, S.; Ngo, S. T.; Loquet,
+A.; Chiricotto, M.; Ganguly, P.; McCarty, J.; Li, M. S.; Hall, C.; et al.
+Amyloid Oligomers: A Joint Experimental/Computational Perspec-
+tive on Alzheimer’s Disease, Parkinson’s Disease, Type Ii Diabetes,
+and Amyotrophic Lateral Sclerosis. Chem. Rev. 2021, 121, 2545−
+2647.
+(27) Sengupta, U.; Nilson, A. N.; Kayed, R. The Role of Amyloid-β
+Oligomers in Toxicity, Propagation, and Immunotherapy. eBiomedi-
+cine 2016, 6, 42−49.
+(28) Sciacca, M. F.; Kotler, S. A.; Brender, J. R.; Chen, J.; Lee, D. K.;
+Ramamoorthy, A. Two-Step Mechanism of Membrane Disruption by
+Aβ through Membrane Fragmentation and Pore Formation. Biophys.
+J. 2012, 103, 702−710.
+(29) Talantova, M.; Sanz-Blasco, S.; Zhang, X.; Xia, P.; Akhtar, M.
+W.; Okamoto, S.-I.; Dziewczapolski, G.; Nakamura, T.; Cao, G.; Pratt,
+A. E.; Kang, Y.-J.; et al. Aβ Induces Astrocytic Glutamate Release,
+Extrasynaptic Nmda Receptor Activation, and Synaptic Loss. Proc.
+Nat. Acad. Sci. U. S. A. 2013, 110, No. E2518−E2527.
+(30) Texidó, L.; Martín-Satué, M.; Alberdi, E.; Solsona, C.; Matute,
+C. Amyloid β Peptide Oligomers Directly Activate Nmda Receptors.
+Cell Calcium 2011, 49, 184−190.
+(31) Dore, K.; Carrico, Z.; Alfonso, S.; Marino, M.; Koymans, K.;
+Kessels, H. W.; Malinow, R. PSD-95 Protects Synapses from β-
+Amyloid. Cell Rep. 2021, 35, 109194.
+(32) Nagele, R.; D’andrea, M.; Anderson, W.; Wang, H. Intracellular
+Accumulation of β-Amyloid1−42 in Neurons Is Facilitated by the α7
+Nicotinic Acetylcholine Receptor in Alzheimer’s Disease. Neuroscience
+2002, 110, 199−211.
+(33) Cecon, E.; Dam, J.; Luka, M.; Gautier, C.; Chollet, A. M.;
+Delagrange, P.; Danober, L.; Jockers, R. Quantitative Assessment of
+Oligomeric Amyloid β Peptide Binding to α7 Nicotinic Receptor. Br.
+J. Pharmacol. 2019, 176, 3475−3488.
+(34) Stoiljkovic, M.; Kelley, C.; Hajós, G. P.; Nagy, D.; Koenig, G.;
+Leventhal, L.; Hajós, M. Hippocampal Network Dynamics in
+Response to α7 Nach Receptors Activation in Amyloid-β Over-
+producing Transgenic Mice. Neurobiol. Aging 2016, 45, 161−168.
+(35) Sanderson, J. L.; Freund, R. K.; Gorski, J. A.; Dell’acqua, M. L.
+β-Amyloid Disruption of LTP/LTD Balance Is Mediated by
+AKAP150-Anchored PKA and Calcineurin Regulation of Ca2+-
+Permeable AMPA Receptors. Cell Rep. 2021, 37, 109786.
+(36) Cai, W.; Li, L.; Sang, S.; Pan, X.; Zhong, C. Physiological Roles
+of β-Amyloid in Regulating Synaptic Function: Implications for AD
+Pathophysiology. Neurosci. Bull. 2023, 39, 1289−1308.
+(37) Um, J. W.; Nygaard, H. B.; Heiss, J. K.; Kostylev, M. A.; Stagi,
+M.; Vortmeyer, A.; Wisniewski, T.; Gunther, E. C.; Strittmatter, S. M.
+Alzheimer Amyloid-β Oligomer Bound to Postsynaptic Prion Protein
+Activates Fyn to Impair Neurons. Nat. Neurosci. 2012, 15, 1227−
+1235.
+(38) Umeda, T.; Ramser, E. M.; Yamashita, M.; Nakajima, K.; Mori,
+H.; Silverman, M. A.; Tomiyama, T. Intracellular Amyloid β
+Oligomers Impair Organelle Transport and Induce Dendritic Spine
+Loss in Primary Neurons. Acta Neuropathol. Com. 2015, 3, 51.
+(39) Du, H.; Guo, L.; Yan, S.; Sosunov, A. A.; McKhann, G. M.;
+ShiDu Yan, S. Early Deficits in Synaptic Mitochondria in an
+Alzheimer’s Disease Mouse Model. Proc. Nat. Acad. Sci. U. S. A.
+2010, 107, 18670−18675.
+(40) Manczak, M.; Anekonda, T. S.; Henson, E.; Park, B. S.; Quinn,
+J.; Reddy, P. H. Mitochondria Are a Direct Site of Aβ Accumulation
+in Alzheimer’s Disease Neurons: Implications for Free Radical
+Generation and Oxidative Damage in Disease Progression. Hum.
+Mol. Genet. 2006, 15, 1437−1449.
+(41) Woo, J.; Zhao, X.; Khan, H.; Penn, C.; Wang, X.; Joly-Amado,
+A.; Weeber, E.; Morgan, D.; Kang, D. Slingshot-Cofilin Activation
+Mediates Mitochondrial and Synaptic Dysfunction Via Aβ Ligation to
+β1-Integrin Conformers. Cell Death Differ. 2015, 22, 921−934.
+(42) Joshi, A. U.; Minhas, P. S.; Liddelow, S. A.; Haileselassie, B.;
+Andreasson, K. I.; Dorn, G. W.; Mochly-Rosen, D. Fragmented
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.3c08823
+ACS Nano 2024, 18, 15416−15431
+15428
+
+Mitochondria Released from Microglia Trigger A1 Astrocytic
+Response and Propagate Inflammatory Neurodegeneration. Nat.
+Neurosci. 2019, 22, 1635−1648.
+(43) Komura, H.; Kakio, S.; Sasahara, T.; Arai, Y.; Takino, N.; Sato,
+M.; Satomura, K.; Ohnishi, T.; Nabeshima, Y.-I.; Muramatsu, S.-I.;
+Kii, I.; et al. Alzheimer Aβ Assemblies Accumulate in Excitatory
+Neurons Upon Proteasome Inhibition and Kill Nearby NAKα3
+Neurons by Secretion. IScience 2019, 13, 452−477.
+(44) Xu, S.; Di, Z.; He, Y.; Wang, R.; Ma, Y.; Sun, R.; Li, J.; Wang,
+T.; Shen, Y.; Fang, S.; Feng, L.; et al. Mesencephalic Astrocyte-
+Derived Neurotrophic Factor (MANF) Protects against Aβ Toxicity
+Via Attenuating Aβ-Induced Endoplasmic Reticulum Stress. J.
+Neuroinflamm. 2019, 16, 35.
+(45) Hashimoto, S.; Saido, T. C. Critical Review: Involvement of
+Endoplasmic Reticulum Stress in the Aetiology of Alzheimer’s
+Disease. Open Biol. 2018, 8, 180024.
+(46) Sharoar, M. G.; Palko, S.; Ge, Y.; Saido, T. C.; Yan, R.
+Accumulation of Saposin in Dystrophic Neurites Is Linked to
+Impaired Lysosomal Functions in Alzheimer’s Disease Brains. Mol.
+Neurodegener. 2021, 16, 45.
+(47) D’Andrea, M. R.; Nagele, R. G.; Wang, H. Y.; Peterson, P. A.;
+Lee, D. H. S. Evidence That Neurones Accumulating Amyloid Can
+Undergo Lysis to Form Amyloid Plaques in Alzheimer’s Disease.
+Histopathology 2001, 38, 120−134.
+(48) Nackenoff, A. G.; Hohman, T. J.; Neuner, S. M.; Akers, C. S.;
+Weitzel, N. C.; Shostak, A.; Ferguson, S. M.; Mobley, B.; Bennett, D.
+A.; Schneider, J. A.; Jefferson, A. L. PLD3 Is a Neuronal Lysosomal
+Phospholipase D Associated with β-Amyloid Plaques and Cognitive
+Function in Alzheimer’s Disease. PloS Genet. 2021, 17, No. e1009406.
+(49) Yu, W. H.; Cuervo, A. M.; Kumar, A.; Peterhoff, C. M.;
+Schmidt, S. D.; Lee, J. H.; Mohan, P. S.; Mercken, M.; Farmery, M.
+R.; Tjernberg, L. O. Macroautophagya Novel β-Amyloid Peptide-
+Generating Pathway Activated in Alzheimer’s Disease. J. Cell Biol.
+2005, 171, 87−98.
+(50) Willbold, D.; Strodel, B.; Schröder, G. F.; Hoyer, W.; Heise, H.
+Amyloid-Type Protein Aggregation and Prion-Like Properties of
+Amyloids. Chem. Rev. 2021, 121, 8285−8307.
+(51) Sciacca, M. F.; Lolicato, F.; Tempra, C.; Scollo, F.; Sahoo, B.
+R.; Watson, M. D.; García-Viñuales, S.; Milardi, D.; Raudino, A.; Lee,
+J. C.; Ramamoorthy, A.; La Rosa, C. Lipid-Chaperone Hypothesis: A
+Common Molecular Mechanism of Membrane Disruption by
+Intrinsically Disordered Proteins. ACS Chem. Neurosci. 2020, 11,
+4336−4350.
+(52) Klimov, D. K.; Thirumalai, D. Dissecting the Assembly of
+Aβ16−22 Amyloid Peptides into Antiparallel β Sheets. Structure 2003,
+11, 295−307.
+(53) Thirumalai, D.; Klimov, D. K.; Dima, R. I. Emerging Ideas on
+the Molecular Basis of Protein and Peptide Aggregation. Curr. Opin.
+Struct. Biol. 2003, 13, 146−159.
+(54) Nguyen, P. H.; Li, M. S.; Stock, G.; Straub, J. E.; Thirumalai, D.
+Monomer Adds to Preformed Structured Oligomers of Aβ-Peptides
+by a Two-Stage Dock−Lock Mechanism. Proc. Nat. Acad. Sci. U. S. A.
+2007, 104, 111−116.
+(55) Baumketner, A.; Shea, J.-E. The Structure of the Alzheimer
+Amyloid β 10−35 Peptide Probed through Replica-Exchange
+Molecular Dynamics Simulations in Explicit Solvent. J. Mol. Biol.
+2007, 366, 275−285.
+(56) Esposito, L.; Pedone, C.; Vitagliano, L. Molecular Dynamics
+Analyses of Cross-β-Spine Steric Zipper Models: β-Sheet Twisting
+and Aggregation. Proc. Nat. Acad. Sci. U. S. A. 2006, 103, 11533−
+11538.
+(57) Yun, S.; Urbanc, B.; Cruz, L.; Bitan, G.; Teplow, D. B.; Stanley,
+H. E. Role of Electrostatic Interactions in Amyloid β-Protein (Aβ)
+Oligomer Formation: A Discrete Molecular Dynamics Study. Biophys.
+J. 2007, 92, 4064−4077.
+(58) Krone, M. G.; Hua, L.; Soto, P.; Zhou, R.; Berne, B. J.; Shea, J.-
+E. Role of Water in Mediating the Assembly of Alzheimer Amyloid-β
+Aβ16−22 Protofilaments. J. Am. Chem. Soc. 2008, 130, 11066−11072.
+(59) Shea, J.-E.; Urbanc, B. Insights into Aβ Aggregation: A
+Molecular Dynamics Perspective. Curr. Top. Med. Chem. 2013, 12,
+2596−2610.
+(60) Lührs, T.; Ritter, C.; Adrian, M.; Riek-Loher, D.; Bohrmann, B.;
+Döbeli, H.; Schubert, D.; Riek, R. 3D Structure of Alzheimer’s
+Amyloid-β1−42 Fibrils. Proc. Nat. Acad. Sci. U. S. A. 2005, 102, 17342−
+17347.
+(61) Schmidt, M.; Rohou, A.; Lasker, K.; Yadav, J. K.; Schiene-
+Fischer, C.; Fändrich, M.; Grigorieff, N. Peptide Dimer Structure in
+an Aβ1−42 Fibril Visualized with Cryo-Em. Proc. Nat. Acad. Sci. U. S. A.
+2015, 112, 11858−11863.
+(62) Xiao, Y.; Ma, B.; McElheny, D.; Parthasarathy, S.; Long, F.;
+Hoshi, M.; Nussinov, R.; Ishii, Y. Aβ1−42 Fibril Structure Illuminates
+Self-Recognition and Replication of Amyloid in Alzheimer’s Disease.
+Nat. Struct. Mol. Biol. 2015, 22, 499−505.
+(63) Colvin, M. T.; Silvers, R.; Ni, Q. Z.; Can, T. V.; Sergeyev, I.;
+Rosay, M.; Donovan, K. J.; Michael, B.; Wall, J.; Linse, S.; Griffin, R.
+G. Atomic Resolution Structure of Monomorphic Aβ42 Amyloid
+Fibrils. J. Am. Chem. Soc. 2016, 138, 9663−9674.
+(64) Gremer, L.; Schölzel, D.; Schenk, C.; Reinartz, E.; Labahn, J.;
+Ravelli, R. B. G.; Tusche, M.; Lopez-Iglesias, C.; Hoyer, W.; Heise,
+H.; Willbold, D.; Schröder, G. F. Fibril Structure of Amyloid-β(1−42)
+by Cryo−Electron Microscopy. Science 2017, 358, 116−119.
+(65) Sawaya, M. R.; Sambashivan, S.; Nelson, R.; Ivanova, M. I.;
+Sievers, S. A.; Apostol, M. I.; Thompson, M. J.; Balbirnie, M.;
+Wiltzius, J. J. W.; McFarlane, H. T.; Madsen, A. Ø.; Riekel, C.;
+Eisenberg, D. Atomic Structures of Amyloid Cross-β Spines Reveal
+Varied Steric Zippers. Nature 2007, 447, 453−457.
+(66) Nelson, R.; Sawaya, M. R.; Balbirnie, M.; Madsen, A. Ø.;
+Riekel, C.; Grothe, R.; Eisenberg, D. Structure of the Cross-β Spine of
+Amyloid-Like Fibrils. Nature 2005, 435, 773−778.
+(67) Thirumalai, D.; Reddy, G.; Straub, J. E. Role of Water in
+Protein Aggregation and Amyloid Polymorphism. Acc. Chem. Res.
+2012, 45, 83−92.
+(68) Sims, J. R.; Zimmer, J. A.; Evans, C. D.; Lu, M.; Ardayfio, P.;
+Sparks, J.; Wessels, A. M.; Shcherbinin, S.; Wang, H.; Monkul Nery, E.
+S.; Collins, E. C.; Solomon, P.; Salloway, S.; Apostolova, L. G.;
+Hansson, O.; Ritchie, C.; Brooks, D. A.; Mintun, M.; Skovronsky, D.
+M.; Investigators, T.-A. Donanemab in Early Symptomatic Alzheimer
+Disease: The TRAILBLAZER-ALZ 2 Randomized Clinical Trial.
+JAMA 2023, 330, 512−527.
+(69) Mullard, A. Controversial Alzheimer’s Drug Approval Could
+Affect Other Diseases. Nature 2021, 595, 162−163.
+(70) Elisabeth, M. Fda Approves Controversial Alzheimer’s Drug
+Despite Uncertainty over Effectiveness. BMJ 2021, 373, n1462.
+(71) Sebastian, W.; Richard, M.; Richard, M.; Carol, B. Aducanumab
+for Alzheimer’s Disease? BMJ 2021, 374, n1682.
+(72) Rabinovici, G. D. Controversy and Progress in Alzheimer’s
+Disease  FDA Approval of Aducanumab. N. Engl. J. Med. 2021, 385,
+771−774.
+(73) Yang, Z.; Ge, C.; Liu, J.; Chong, Y.; Gu, Z.; Jimenez-Cruz, C.
+A.; Chai, Z.; Zhou, R. Destruction of Amyloid Fibrils by Graphene
+through Penetration and Extraction of Peptides. Nanoscale 2015, 7,
+18725−18737.
+(74) Jin, Y.; Sun, Y.; Chen, Y.; Lei, J.; Wei, G. Molecular Dynamics
+Simulations Reveal the Mechanism of Graphene Oxide Nanosheet
+Inhibition of Aβ1−42 Peptide Aggregation. Phys. Chem. Chem. Phys.
+2019, 21, 10981−10991.
+(75) Li, M.; Yang, X.; Ren, J.; Qu, K.; Qu, X. Using Graphene Oxide
+High near-Infrared Absorbance for Photothermal Treatment of
+Alzheimer’s Disease. Adv. Mater. 2012, 24, 1722−1728.
+(76) Chung, Y. J.; Lee, B. I.; Ko, J. W.; Park, C. B. Photoactive G-
+C3n4 Nanosheets for Light-Induced Suppression of Alzheimer’s β-
+Amyloid Aggregation and Toxicity. Adv. Healthcare Mater. 2016, 5,
+1560−1565.
+(77) Geng, H.; Pan, Y.-c.; Zhang, R.; Gao, D.; Wang, Z.; Li, B.; Li,
+N.; Guo, D.; Xing, C. Binding to Amyloid-β Protein by Photothermal
+Blood-Brain Barrier-Penetrating Nanoparticles for Inhibition and
+Disaggregation of Fibrillation. Adv. Funct. Mater. 2021, 31, 2102953.
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.3c08823
+ACS Nano 2024, 18, 15416−15431
+15429
+
+(78) Tian, X.; Yang, Z.; Duan, G.; Wu, A.; Gu, Z.; Zhang, L.; Chen,
+C.; Chai, Z.; Ge, C.; Zhou, R. Graphene Oxide Nanosheets Retard
+Cellular Migration Via Disruption of Actin Cytoskeleton. Small 2017,
+13, 1602133.
+(79) Guo, Q.; Yang, Y.; Zhao, L.; Chen, J.; Duan, G.; Yang, Z.;
+Zhou, R. Graphene Oxide Toxicity in W1118 Flies. Sci. Total Environ.
+2022, 805, 150302.
+(80) Yin, X.; Zhou, H.; Zhang, M.; Su, J.; Wang, X.; Li, S.; Yang, Z.;
+Kang, Z.; Zhou, R. C3N Nanodots Inhibits Aβ Peptides Aggregation
+Pathogenic Path in Alzheimer’s Disease. Nat. Commun. 2023, 14,
+5718.
+(81) Popov, A. A.; Yang, S.; Dunsch, L. Endohedral Fullerenes.
+Chem. Rev. 2013, 113, 5989−6113.
+(82) Liu, Y.; Chen, C. Y.; Qian, P. X.; Lu, X. F.; Sun, B. Y.; Zhang,
+X.; Wang, L. M.; Gao, X. F.; Li, H.; Chen, Z. Y.; Tang, J. L.; Zhang,
+W. J.; Dong, J. Q.; Bai, R.; Lobie, P. E.; Wu, Q. F.; Liu, S. L.; Zhang,
+H. F.; Zhao, F.; Wicha, M. S.; et al. Gd-Metallofullerenol
+Nanomaterial as Non-Toxic Breast Cancer Stem Cell-Specific
+Inhibitor. Nat. Commun. 2015, 6, 5988.
+(83) Kang, S.-G.; Zhou, G.; Yang, P.; Liu, Y.; Sun, B.; Huynh, T.;
+Meng, H.; Zhao, L.; Xing, G.; Chen, C.; Zhao, Y.; Zhou, R. Molecular
+Mechanism of Pancreatic Tumor Metastasis Inhibition by Gd@
+C82(OH)22 and Its Implication for De Novo Design of Nanomedicine.
+Proc. Nat. Acad. Sci. U. S. A. 2012, 109, 15431−15436.
+(84) Li, L.; Zhen, M.; Wang, H.; Sun, Z.; Jia, W.; Zhao, Z.; Zhou, C.;
+Liu, S.; Wang, C.; Bai, C. Functional Gadofullerene Nanoparticles
+Trigger Robust Cancer Immunotherapy Based on Rebuilding an
+Immunosuppressive Tumor Microenvironment. Nano Lett. 2020, 20,
+4487−4496.
+(85) Horiguchi, Y.; Kudo, S.; Nagasaki, Y. Gd@C82 Metal-
+lofullerenes for Neutron Capture TherapyFullerene Solubilization
+by Poly(Ethylene Glycol)-Block-Poly(2-(N, N-Diethylamino)Ethyl
+Methacrylate) and Resultant Efficacy in Vitro. Sci. Technol. Adv. Mater.
+2011, 12, 044607.
+(86) Liu, J.; Kang, S.-G.; Wang, P.; Wang, Y.; Lv, X.; Liu, Y.; Wang,
+F.; Gu, Z.; Yang, Z.; Weber, J. K.; Tao, N.; Qin, Z.; Miao, Q.; Chen,
+C.; Zhou, R.; Zhao, Y. Molecular Mechanism of Gd@C82(OH)22
+Increasing Collagen Expression: Implication for Encaging Tumor.
+Biomaterials 2018, 152, 24−36.
+(87) Micsonai, A.; Moussong, É.; Wien, F.; Boros, E.; Vadászi, H.;
+Murvai, N.; Lee, Y.-H.; Molnár, T.; Réfrégiers, M.; Goto, Y.; Tantos,
+Á.; Kardos, J. Bestsel: Webserver for Secondary Structure and Fold
+Prediction for Protein Cd Spectroscopy. Nucleic Acids Res. 2022, 50,
+W90−W98.
+(88) Kabsch, W.; Sander, C. Dictionary of Protein Secondary
+Structure: Pattern Recognition of Hydrogen-Bonded and Geometrical
+Features. Biopolymers 1983, 22, 2577−2637.
+(89) Haass, C.; Selkoe, D. J. Soluble Protein Oligomers in
+Neurodegeneration: Lessons from the Alzheimer’s Amyloid β-
+Peptide. Nat. Rev. Mol. Cell Bio. 2007, 8, 101−112.
+(90) Mecca, A. P.; O’Dell, R. S.; Sharp, E. S.; Banks, E. R.; Bartlett,
+H. H.; Zhao, W.; Lipior, S.; Diepenbrock, N. G.; Chen, M. K.;
+Naganawa, M.; Toyonaga, T. Synaptic density and cognitive
+performance in Alzheimer’s disease: A PET imaging study with [11
+C]UCB-J. Alzheimers Dement 2022, 18, 2527−2536.
+(91) Sharp, E.; O’Dell, R.; Banks, E.; Bartlett, H.; Chen, M.-K.;
+Naganawa, M.; Toyonaga, T.; Harris, J.; Ni, G.; Zhao, W.; Nabulsi, N.
+Synaptic density is associated with cognitive performance in early
+Alzheimer’s disease: A PET imaging study with [11C]UCB-J. Am. J.
+Geriat. Psych. 2021, 29, SS119−S120.
+(92) Henstridge, C. M.; Sideris, D. I.; Carroll, E.; Rotariu, S.;
+Salomonsson, S.; Tzioras, M.; McKenzie, C.-A.; Smith, C.; von Arnim,
+C. A.; Ludolph, A. C.; Lulé, D. Synapse Loss in the Prefrontal Cortex
+Is Associated with Cognitive Decline in Amyotrophic Lateral
+Sclerosis. Acta Neuropathol. 2018, 135, 213−226.
+(93) Yasumoto, T.; Takamura, Y.; Tsuji, M.; Watanabe-Nakayama,
+T.; Imamura, K.; Inoue, H.; Nakamura, S.; Inoue, T.; Kimura, A.;
+Yano, S.; Nishijo, H.; Kiuchi, Y.; Teplow, D. B.; Ono, K. High
+Molecular Weight Amyloid β1−42 Oligomers Induce Neurotoxicity Via
+Plasma Membrane Damage. Faseb J. 2019, 33, 9220−9234.
+(94) Sciacca, M. F. M.; Tempra, C.; Scollo, F.; Milardi, D.; La Rosa,
+C. Amyloid Growth and Membrane Damage: Current Themes and
+Emerging Perspectives from Theory and Experiments on Aβ and
+HIAPP. Bba-Biomembranes 2018, 1860, 1625−1638.
+(95) Sepulveda, F. J.; Parodi, J.; Peoples, R. W.; Opazo, C.; Aguayo,
+L. G. Synaptotoxicity of Alzheimer Beta Amyloid Can Be Explained
+by Its Membrane Perforating Property. PLoS One 2010, 5,
+No. e11820.
+(96) Axelsen, P. H.; Komatsu, H.; Murray, I. V. J. Oxidative Stress
+and Cell Membranes in the Pathogenesis of Alzheimer’s Disease.
+Physiology 2011, 26, 54−69.
+(97) Fernandez-Perez, E. J.; Peters, C.; Aguayo, L. G. Membrane
+Damage Induced by Amyloid Beta and a Potential Link with
+Neuroinflammation. Curr. Pharm. Des. 2016, 22, 1295−1304.
+(98) Scollo, F.; Tempra, C.; Lolicato, F.; Sciacca, M. F. M.; Raudino,
+A.; Milardi, D.; La Rosa, C. Phospholipids Critical Micellar
+Concentrations Trigger Different Mechanisms of Intrinsically
+Disordered Proteins Interaction with Model Membranes. J. Phys.
+Chem. Lett. 2018, 9, 5125−5129.
+(99) La Rosa, C.; Scalisi, S.; Lolicato, F.; Pannuzzo, M.; Raudino, A.
+Lipid-Assisted Protein Transport: A Diffusion-Reaction Model
+Supported by Kinetic Experiments and Molecular Dynamics
+Simulations. J. Chem. Phys. 2016, 144, 184901.
+(100) Friedrich, R. P.; Tepper, K.; Rönicke, R.; Soom, M.;
+Westermann, M.; Reymann, K.; Kaether, C.; Fändrich, M. Mechanism
+of Amyloid Plaque Formation Suggests an Intracellular Basis of Aβ
+Pathogenicity. P. Natl. Acad. Sci. U. S. A. 2010, 107, 1942−1947.
+(101) Saavedra, L.; Mohamed, A.; Ma, V.; Kar, S.; de Chaves, E. P.
+Internalization of Beta-Amyloid Peptide by Primary Neurons in the
+Absence of Apolipoprotein E. J. Biol. Chem. 2007, 282, 35722−35732.
+(102) Armentero, M. T.; Sinforiani, E.; Ghezzi, C.; Bazzini, E.;
+Levandis, G.; Ambrosi, G.; Zangaglia, R.; Pacchetti, C.; Cereda, C.;
+Cova, E.; Basso, E.; Celi, D.; Martignoni, E.; Nappi, G.; Blandini, F.
+Peripheral Expression of Key Regulatory Kinases in Alzheimer’s
+Disease and Parkinson’s Disease. Neurobiol. Aging 2011, 32, 2142−
+2151.
+(103) Ferrer, I.; Rovira, M. B.; Guerra, M. L. S.; Rey, M. J.; Costa-
+Jussá, F. Neuropathology and Pathogenesis of Encephalitis Following
+Amyloid β Immunization in Alzheimer’s Disease. Brain Pathol. 2004,
+14, 11−20.
+(104) Bieschke, J.; Russ, J.; Friedrich, R. P.; Ehrnhoefer, D. E.;
+Wobst, H.; Neugebauer, K.; Wanker, E. E. EGCG Remodels Mature
+α-Synuclein and Amyloid-β Fibrils and Reduces Cellular Toxicity.
+Proc. Nat. Acad. Sci. U. S. A. 2010, 107, 7710−7715.
+(105) Chromy, B. A.; Nowak, R. J.; Lambert, M. P.; Viola, K. L.;
+Chang, L.; Velasco, P. T.; Jones, B. W.; Fernandez, S. J.; Lacor, P. N.;
+Horowitz, P.; Finch, C. E.; Krafft, G. A.; Klein, W. L. Self-Assembly of
+Aβ1−42 into Globular Neurotoxins. Biochemistry 2003, 42, 12749−
+12760.
+(106) Ryan, D. A.; Narrow, W. C.; Federoff, H. J.; Bowers, W. J. An
+Improved Method for Generating Consistent Soluble Amyloid-Beta
+Oligomer Preparations for in Vitro Neurotoxicity Studies. J. Neurosci.
+Meth. 2010, 190, 171−179.
+(107) Arad, E.; Green, H.; Jelinek, R.; Rapaport, H. Revisiting
+Thioflavin T (ThT) Fluorescence as a Marker of Protein Fibrillation
+−the Prominent Role of Electrostatic Interactions. J. Colloid Interface
+Sci. 2020, 573, 87−95.
+(108) Ehrnhoefer, D. E.; Bieschke, J.; Boeddrich, A.; Herbst, M.;
+Masino, L.; Lurz, R.; Engemann, S.; Pastore, A.; Wanker, E. E. EGCG
+Redirects Amyloidogenic Polypeptides into Unstructured, Off-Path-
+way Oligomers. Nat. Struct. Mol. Biol. 2008, 15, 558−566.
+(109) Kim, D.; Yoo, J. M.; Hwang, H.; Lee, J.; Lee, S. H.; Yun, S. P.;
+Park, M. J.; Lee, M.; Choi, S.; Kwon, S. H.; Kim, S.; Park, Y. J.;
+Kinoshita, M.; Lee, Y.-H.; Shin, S.; Paik, S. R.; Lee, S. J.; Lee, S.; et al.
+Graphene Quantum Dots Prevent α-Synucleinopathy in Parkinson’s
+Disease. Nat. Nanotechnol. 2018, 13, 812−818.
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.3c08823
+ACS Nano 2024, 18, 15416−15431
+15430
+
+(110) Kayed, R.; Head, E.; Sarsoza, F.; Saing, T.; Cotman, C. W.;
+Necula, M.; Margol, L.; Wu, J.; Breydo, L.; Thompson, J. L.; Rasool,
+S. Fibril Specific, Conformation Dependent Antibodies Recognize a
+Generic Epitope Common to Amyloid Fibrils and Fibrillar Oligomers
+That Is Absent in Prefibrillar Oligomers. Mol. Neurodegener. 2007, 2,
+18.
+(111) Hatami, A.; Albay, R.; Monjazeb, S.; Milton, S.; Glabe, C.
+Monoclonal Antibodies against Aβ42 Fibrils Distinguish Multiple
+Aggregation State Polymorphisms in Vitro and in Alzheimer Disease
+Brain. J. Biol. Chem. 2014, 289, 32131−32143.
+(112) Cao, L. J.; Zhang, D. M.; Chen, J. Y.; Qin, Y. Y.; Sheng, R.;
+Feng, X.; Chen, Z.; Ding, Y. Q.; Li, M.; Qin, Z. H. G6PD Plays a
+Neuroprotective Role in Brain Ischemia through Promoting Pentose
+Phosphate Pathway. Free Radic. Biol. Med. 2017, 112, 433−444.
+(113) Bezzi, P. Mitochondrial Biogenesis in Developing Astrocytes
+Regulates Astrocyte Maturation and Synapse Formation: Implication
+for 22q11 Deletion Syndrome. Glia 2021, 69, No. e74−e74.
+(114) Gong, Y.; Huang, A.; Guo, X.; Jia, Z.; Chen, X.; Zhu, X.; Xia,
+Y.; Liu, J.; Xu, Y.; Qin, X. Selenium-Core Nanozymes Dynamically
+Regulates Aβ & Neuroinflammation Circulation: Augmenting Repair
+of Nervous Damage. Chem. Eng. J. 2021, 418, 129345.
+(115) Tomaselli, S.; Esposito, V.; Vangone, P.; van Nuland, N. A.;
+Bonvin, A. M.; Guerrini, R.; Tancredi, T.; Temussi, P. A.; Picone, D.
+The α-to-β Conformational Transition of Alzheimer’s Aβ-(1−42)
+Peptide in Aqueous Media Is Reversible: A Step by Step
+Conformational Analysis Suggests the Location of β Conformation
+Seeding. ChemBiochem 2006, 7, 257−267.
+(116) Hess, B.; Kutzner, C.; van der Spoel, D.; Lindahl, E. Gromacs
+4: Algorithms for Highly Efficient, Load-Balanced, and Scalable
+Molecular Simulation. J. Chem. Theory Comput. 2008, 4, 435−447.
+(117) Lindorff-Larsen, K.; Piana, S.; Palmo, K.; Maragakis, P.;
+Klepeis, J. L.; Dror, R. O.; Shaw, D. E. Improved Side-Chain Torsion
+Potentials for the Amber ff99sb Protein Force Field. Proteins Struct.
+Funct. Bioinforma. 2010, 78, 1950−1958.
+(118) Jorgensen, W. L.; Chandrasekhar, J.; Madura, J. D.; Impey, R.
+W.; Klein, M. L. Comparison of Simple Potential Functions for
+Simulating Liquid Water. J. Chem. Phys. 1983, 79, 926−935.
+(119) Humphrey, W.; Dalke, A.; Schulten, K. Vmd: Visual
+Molecular Dynamics. J. Mol. Graph. 1996, 14, 33−38.
+(120) Wu, C.; Liu, S.; Zhang, S.; Yang, Z. Molcontroller: A VMD
+Graphical User Interface Featuring Molecule Manipulation. J. Chem.
+Inf. Model. 2020, 60, 5126−5131.
+(121) Zhou, H.; Yang, Z.; Tian, X.; Chen, L.; Lee, S.; Huynh, T.; Ge,
+C.; Zhou, R. Lanosterol Disrupts the Aggregation of Amyloid-β
+Peptides. ACS Chem. Neurosci. 2019, 10, 4051−4060.
+(122) Zhou, H.; Liu, S.; Shao, Q.; Ma, D.; Yang, Z.; Zhou, R.
+Mechanism by Which DHA Inhibits the Aggregation of KLVFFA
+Peptides: A Molecular Dynamics Study. J. Chem. Phys. 2018, 148,
+115102.
+(123) Bussi, G.; Donadio, D.; Parrinello, M. Canonical Sampling
+through Velocity Rescaling. J. Chem. Phys. 2007, 126, 014101.
+(124) Parrinello, M.; Rahman, A. Polymorphic Transitions in Single
+Crystals: A New Molecular Dynamics Method. J. Appl. Phys. 1981, 52,
+7182−7190.
+(125) Essmann, U.; Perera, L.; Berkowitz, M. L.; Darden, T.; Lee,
+H.; Pedersen, L. G. A Smooth Particle Mesh Ewald Method. J. Chem.
+Phys. 1995, 103, 8577−8593.
+(126) Hess, B.; Bekker, H.; Berendsen, H. J.; Fraaije, J. G. Lincs: A
+Linear Constraint Solver for Molecular Simulations. J. Comput. Chem.
+1997, 18, 1463−1472.
+(127) Miyamoto, S.; Kollman, P. A. Settle: An Analytical Version of
+the Shake and Rattle Algorithm for Rigid Water Models. J. Comput.
+Chem. 1992, 13, 952−962.
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.3c08823
+ACS Nano 2024, 18, 15416−15431
+15431

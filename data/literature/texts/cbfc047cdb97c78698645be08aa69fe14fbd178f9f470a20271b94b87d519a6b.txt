@@ -1,0 +1,1076 @@
+RESEARCH ARTICLE
+www.afm-journal.de
+Heteronuclear Single-Atom Nanozymes Overcome
+Radiotherapy Resistance via Synergistic Multi-Enzyme
+Activities
+Bowen Yang, Yiyin Mai, Hongyan Su, Ruonan Li, Ge Qiao, Jiannan Wu, Pingyu Zhang,
+Hanqing Chen, Tingting Wang, Guotao Yuan,* and Yue Pan*
+Single-atom nanozymes have revolutionized catalytic tumor therapy by
+maximizing atomic eﬃciency and enabling enzyme-mimetic reactive oxygen
+species (ROS) generation. Yet, their single active-site architecture imposes
+fundamental limitations on catalytic selectivity and intermediate adsorption–
+desorption kinetics. Here, a manganese/ruthenium dual-metal single-atom
+nanozyme (Mn/Ru BMSA) is reported that overcomes these constraints
+through synergistic metal interactions, exhibiting unprecedented multienzyme
+activities, including catalase, peroxidase, and superoxide dismutase. By
+leveraging tumor-overexpressed hydrogen peroxide, Mn/Ru BMSA simulta-
+neously alleviates hypoxia and produces cytotoxic hydroxyl radicals, creating
+a self-sustaining catalytic cycle that ampliﬁes ROS for radiotherapy synergy.
+Density functional theory calculations reveal that Mn coordination modulates
+the d-band center of Ru, optimizing electronic structure to enhance substrate
+activation. In radioresistant breast cancer models, Mn/Ru BMSA exhibits
+a synergistic triple-modal antitumor action: 1) sustained oxygen generation
+alleviates tumor hypoxia, 2) X-ray-enhanced ROS production ampliﬁes oxida-
+tive stress, and 3) hypoxia-inducible factor 1𝜶pathway inhibition suppresses
+cancer stem cell (CSC) stemness (as validated by transcriptomics). Patient-
+derived organoid assays demonstrated complete radioresistance reversal
+while maintaining exceptional biosafety. This work establishes Mn/Ru BMSA
+as a potential radiosensitizer that overcomes the limitations of conventional
+high-Z materials by targeting the hypoxia-CSC axis, providing a strategy for
+developing multi-functional nanozymes against treatment-resistant cancers.
+B. Yang, Y. Mai, H. Su, R. Li, G. Qiao, J. Wu, G. Yuan, Y. Pan
+Guangdong Provincial Key Laboratory of Malignant Tumor Epigenetics
+and Gene Regulation
+Guangdong-Hong Kong Joint Laboratory for RNA Medicine
+Medical Research Center
+Sun Yat-Sen Memorial Hospital
+Sun Yat-Sen University
+Guangzhou 510120, China
+E-mail: gtyuan@szu.edu.cn;panyue@mail.sysu.edu.cn
+P.Zhang,G.Yuan
+Collegeof Chemistry andEnvironmental Engineering
+Shenzhen University
+Shenzhen 518060,China
+The ORCID identiﬁcation number(s) for the author(s) of this article
+can be found under https://doi.org/10.1002/adfm.202527017
+DOI: 10.1002/adfm.202527017
+1. Introduction
+Single-atom nanozymes (SAzymes) have
+emerged as a promising class of cata-
+lysts in tumor therapy due to their ex-
+ceptional reactive oxygen species (ROS)
+generation capabilities, high atomic uti-
+lization eﬃciency, and enzyme-mimicking
+catalytic kinetics.[1–5] These nanomateri-
+als, characterized by well-deﬁned active
+sites, exhibit peroxidase (POD)- and oxi-
+dase (OXD)-like activities, enabling the con-
+version of endogenous hydrogen perox-
+ide (H2O2) and oxygen (O2) into cytotoxic
+ROS—such as superoxide anions (•O2
+−),
+singlet oxygen (1O2), and hydroxyl radicals
+(•OH)—within the tumor microenviron-
+ment (TME).[6–9] To date, various SAzymes
+incorporating diﬀerent metal centers (e.g.,
+Fe,[10] Mn,[11] Cu,[12] Co,[13] Pt,[14]) coordi-
+nated with nitrogen (N) ligands have been
+explored for anticancer applications. How-
+ever, conventional metal-N4 conﬁgurations
+often suﬀer from suboptimal substrate
+adsorption due to their symmetric elec-
+tron distribution.[13,15–17] In contrast, asym-
+metric coordination structures (e.g., Mn-
+N5
+[18] or Fe-N3PS[19]) or non-planar coordi-
+nation structures (e.g., 3D FeN4C-SOx)[20]
+H. Chen
+Department of Nutrition and Food Hygiene
+School of Public Health
+Capital Medical University
+Beijing 100069, China
+T. Wang
+Center for Molecular Imaging and Nuclear Medicine
+State Key Laboratory of Radiation Medicine and Protection
+School for Radiological and Interdisciplinary Sciences (RAD-X)
+Collaborative Innovation Center of Radiation Medicine of Jiangsu Higher
+Education Institutions
+Suzhou Medical College of Soochow University
+Suzhou 215123, China
+G. Yuan
+Department of Otolaryngology
+Longgang E.N.T. Hospital & Shenzhen Key Laboratory of E.N.T.
+Shenzhen 518116, China
+Adv. Funct. Mater. 2026, 36, e27017
+© 2025 Wiley-VCH GmbH
+e27017 (1 of 16)
+
+www.advancedsciencenews.com
+www.afm-journal.de
+demonstrate enhanced enzymatic activity owing to localized
+charge polarization at the metal sites. Despite these advances,
+a fundamental limitation of SAzymes stems from their single
+active-site architecture, which imposes an inherent trade-oﬀbe-
+tween the adsorption–desorption thermodynamics of reactive in-
+termediates and peak catalytic selectivity and eﬃciency.[21–23]
+Recent advances have led to the development of dual-atom
+nanozymes (DAzymes), which exploit synergistic interactions
+between adjacent metal sites to achieve enhanced catalytic per-
+formance. Unlike single-atom nanozymes (SAzymes), DAzymes
+preserve the advantages of atomic dispersion while enabling ad-
+ditional geometric and electronic modulation. The presence of
+two adjacent, yet diﬀerent, metal centers enables the precise and
+independent tuning of adsorption energies for diﬀerent inter-
+mediates at their respective sites. This conﬁguration oﬀers a vi-
+able and sophisticated strategy to circumvent the scaling relations
+and catalytic limitations inherent to single-atom architectures,
+thereby unlocking new opportunities for designing highly eﬃ-
+cient catalysts for complex reactions. Emerging DAzymes, such
+as FeCo/Fe–Co,[24] FeMn-NCe,[25] and Mo-Cu,[26] demonstrate
+superior catalytic activity by overcoming the inherent constraints
+of single-atom architectures. Notably, Lin et al. demonstrate that
+Mo-Cu diatomic sites not only synergistically enhance catalytic
+therapeutic eﬀects but also induce oxidative stress cascade ampli-
+ﬁcation through glutathione depletion and NADPH blockade.[26]
+Parallel work by Guo et al. on edge-rich Fe1Mn1–NCe achieves
+record nanozyme activity via d-band center tuning, where Mn co-
+ordination optimizes substrate adsorption to accelerate H2O2/O2
+activation.[27] While these advances highlight the promise of elec-
+tronic structure modulation, a critical question remains: Can we
+simultaneously amplify catalytic performance and overcome the
+multifactorial limitations of radiotherapy resistance?
+Radiotherapy remains a clinical mainstay for solid tumors, ex-
+erting its cytotoxic eﬀects through direct DNA damage and in-
+direct oxygen-dependent generation of ROS.[28–30] However, the
+aberrant vasculature and metabolic demands of tumors create
+severely hypoxic regions that undermine both mechanisms.[31]
+Hypoxia not only reduces radiolytic ROS yields but also activates
+hypoxia-inducible factor 1𝛼(HIF-1𝛼)-driven survival pathways in
+cancer stem cells (CSCs), enriching a therapy-resistant subpopu-
+lation responsible for tumor recurrence.[32,33] Current radiosen-
+sitization strategies using high-Z nanomaterials (e.g., Ru, Au,
+HfO2) enhance physical radiation dose deposition through pho-
+toelectric eﬀects, yet fail to address the biological resistance con-
+ferred by hypoxia and the toxicity of heavy metals.[28,34] These
+limitations are particularly acute in CSC-enriched niches, where
+a hypoxic environment promotes self-renewal. The resulting
+“hypoxia-CSC axis” creates a pernicious feedback loop: radiation
+kills oxygenated cells, selectively sparing hypoxic CSCs that re-
+populate the tumor.[35,36] Consequently, strategic disruption of
+the hypoxia-CSC axis now represents a transformative approach
+in precision radiotherapy, with engineered DAzymes emerging
+as uniquely capable therapeutic agents that simultaneously target
+both the biochemical and cellular mediators of radioresistance.
+In this study, we report a manganese-ruthenium dual-metal
+single-atom nanozyme (Mn/Ru BMSA) engineered to break the
+activity-limiting scaling relationships of single-atom nanozymes.
+This diatomic pair was speciﬁcally selected to leverage the dis-
+tinct catalytic tendencies of each metal, creating a synergistic sys-
+tem where each site independently and cooperatively manages
+a speciﬁc step in the catalytic cycle. The Mn/Ru BMSA eﬀec-
+tively alleviates tumor hypoxia by converting overexpressed H2O2
+into O2. Simultaneously, it catalyzes H2O2 decomposition into
+·OH, which synergizes with X-ray irradiation for enhanced ra-
+diotherapy. Moreover, its superoxide dismutase (SOD)-like activ-
+ity replenishes the tumor microenvironment with H2O2 and O2,
+thereby establishing a self-sustaining catalytic cycle that contin-
+uously ampliﬁes therapeutic eﬃcacy. Theoretical calculations re-
+veal that Mn modulates the d-band center of single-atom Ru, op-
+timizing electronic structure and boosting enzymatic activity. In
+radioresistant breast cancer models, Mn/Ru BMSA not only ame-
+liorated hypoxia but also suppressed cancer stemness, as demon-
+strated both in vitro and in vivo and further validated by transcrip-
+tomic sequencing (Scheme 1). Notably, Mn/Ru BMSA exhibited
+potent radiosensitizing eﬀects and successfully reversed radiore-
+sistance in patient-derived organoid (PDO) models. Our ﬁndings
+underscore Mn/Ru BMSA as a promising strategy to overcome
+radioresistance, providing a robust approach to enhance radio-
+therapy eﬃcacy in cancer treatment.
+2. Results and Discussion
+2.1. Characterization of the Mn/Ru BMSAs
+The procedure used for the synthesis of the Mn/Ru BMSAs is
+shown in Scheme 1. Mn/Ru BMSAs were synthesized by us-
+ing manganese and ruthenium ions as the source with subse-
+quent calcination to form Mn- and Ru-cointegrated nanoparti-
+cles. The morphology of the Mn/Ru BMSAs was characterized via
+transmission electron microscopy (TEM) (Figure 1a,b). The ZIF-
+8-derived mesoporous carbon nanozymes had a particle size of
+106.5 ± 1.4 nm by DLS measurement (Figure S1, Supporting In-
+formation). Furthermore, the DLS particle size measurements of
+Mn/Ru BMSAs dispersed in PBS, 50% FBS, and DMEM showed
+no signiﬁcant diﬀerences during the 35-day redispersion test, in-
+dicating excellent stability of the Mn/Ru BMSAs (Figure S2, Sup-
+porting Information). The amorphous carbon framework of the
+Mn/Ru samples and the atomic dispersion of the Mn and Ru
+atoms were detected via aberration-corrected atomic resolution
+high-angle annular dark-ﬁeld scanning transmission electron
+microscopy (HAADF-STEM) (Figure 1c,d). High-density bright
+dots were clearly observed throughout the carbon framework,
+with multiple atomic pairs (indicated by red boxes in Figure 1d)
+being distinctly identiﬁed, conﬁrming the formation of Mn/Ru
+bimetallic atomic sites. HAADF-STEM and elemental mapping
+(Figure 1e) revealed that C, N, Ru, and Mn were uniformly dis-
+tributed throughout the matrix of the Mn/Ru BMSAs. More-
+over, inductively coupled plasma‒optical emission spectrometry
+(ICP‒OES) analysis revealed a Mn content of 1.1 wt.% and a Ru
+content of 0.8 wt.%. The X-ray diﬀraction (XRD) (Figure 1f) pat-
+tern of the Mn/Ru BMSAs exhibited two broad peaks at 23.3°
+and 42.5°, corresponding to the (002) and (101) crystal facets of
+graphitic carbon,[37] respectively, and excluding the formation of
+Mn or Ru metal species. The Raman spectrum of the Mn/Ru
+BMSAs (Figure 1g) featured two characteristic peaks at 1331.5
+and 1583.2 cm−1, which were attributed to the D-band (sp3 dan-
+gling carbon) and G-band (in-plane sp2 carbon), respectively.[38]
+The N 1s X-ray photoelectron spectroscopy (XPS) spectrum of
+Adv. Funct. Mater. 2026, 36, e27017
+© 2025 Wiley-VCH GmbH
+e27017 (2 of 16)
+ 16163028, 2026, 28, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202527017 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Scheme 1. Schematic of Mn/Ru BMSA synthesis and its mechanism of radiosensitization.
+the Mn/Ru BMSAs (Figure 1h) was deconvoluted into four peaks
+at 398.5, 400.2, 401.9, and 404.1 eV, corresponding to pyridinic
+N, metal–N, pyrrolic N, and graphitic N, respectively.[39] Addi-
+tionally, analysis of N2 physical adsorption/desorption isotherms
+(Figure S3, Supporting Information) demonstrates a composite
+Type I/IV isotherm, signifying a hierarchical pore system. The
+sharp low-pressure uptake conﬁrms a microporous framework
+responsible for the high surface area (863.3 m2 g−1) with an av-
+erage pore diameter of 3.0 nm, while the high-pressure hystere-
+sis indicates well-deﬁned macropores that are expected to facil-
+itate mass transport, making this material particularly promis-
+ing for applications involving diﬀusion-limited processes, such
+as nanozymes.
+X-ray absorption ﬁne structure (XAFS) analysis was used to
+characterize the structure and coordination environment of Mn
+and Ru in Mn/Ru BMSAs. The X-ray absorption near-edge struc-
+ture (XANES) spectra at the Mn k-edge revealed that the ab-
+sorption edges were between Mn foil and Mn2O3 (Figure 2a
+and Figure S4, Supporting Information), indicating suggesting
+a roughly +1.4 valence state of Mn in the Mn/Ru BMSAs.[40] The
+k3-weighted Fourier transform (FT) of Mn K-edge EXAFS analy-
+sis (Figure 2b) revealed the coordination environment of the Mn
+species. The Mn/Ru BMSAs exhibited a primary peak at ≈1.6 Å,
+corresponding to the Mn–N bond in the ﬁrst coordination shell,
+without Mn–Mn peaks at 2.2 Å in R space, indicating atomic-
+level dispersion of Mn without cluster formation. To further iden-
+tify the coordination environment of Mn in Mn/Ru BMSAs, we
+performed XANES ﬁtting. The ﬁtting results indicated coordina-
+tion numbers of ≈4 for Mn (Figure 2c and Table S1, Support-
+ing Information). Similarly, the XAS spectra at the Ru k-edge
+were characterized. The XANES spectra (Figure 2d and Figure
+S5, Supporting Information) indicated that the average valence
+state of the Ru atoms in the Mn/Ru BMSAs is very close to +
+3.0. the FT-EXAFS spectra at the Ru K-edge (Figure 2e) showed a
+Adv. Funct. Mater. 2026, 36, e27017
+© 2025 Wiley-VCH GmbH
+e27017 (3 of 16)
+ 16163028, 2026, 28, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202527017 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 1. Characterization of the Mn/Ru BMSAs. a) TEM image, b) enlarged TEM image, c,d) aberration-corrected HAADF-STEM images, and e) HAADF-
+STEM image and corresponding EDX elemental map of the Mn/Ru BMSAs. f) XRD pattern, g) raman spectrum and h) N 1s XPS spectrum of Mn/Ru
+BMSAs.
+Ru–N peak at ≈1.5 Å, conﬁrming the atomic dispersion of the
+Ru species. The small peak at 2.3 Å indicates the presence of
+Ru-Mn heteronuclear single-atom pairs in the sample, which is
+consistent with the results from spherical aberration-corrected
+electron microscopy. The ﬁtting results indicated coordination
+numbers of ≈4 for Ru (Figure 2f and Table S1, Supporting Infor-
+mation). The Mn/Ru BMSA coordination information was more
+clearly characterized upon wavelet transform (WT) processing of
+the Mn and Ru K-edges. Figure 2g,h show that both main peaks
+appeared at ≈1.6 Å, corresponding to the Mn–N bond. As shown
+in Figure 2i,j, the main Ru–N peak appeared at ≈1.5 Å, which
+was also attributed to the Ru–N bond. These results collectively
+demonstrate the successful synthesis of the Mn/Ru bimetallic
+nanozymes on N-doped porous carbon.
+2.2. Enzymatic Activity and Catalytic Mechanism of the Mn/Ru
+BMSAs
+Capitalizing on the synergistic advantages of dual-metal sites
+and accelerated electron transfer in Mn/Ru BMSAs, we system-
+atically evaluated their multi-enzymatic cascade performance.
+Given the elevated H2O2 and hypoxia levels in tumor microen-
+vironments (TME), we ﬁrst assessed CAT-mimetic activity via
+H2O2-driven oxygen generation. Mn/Ru BMSAs induced a rapid
+increase in dissolved O2 from 8.12 to 27.34 mg L−1, whereas
+Ru SAs showed signiﬁcantly attenuated O2 production rates
+(Figure 3a). We next validated POD-like activity using 3,3′,5,5′-
+tetramethylbenzidine (TMB) as a probe. Nanozyme activity is
+critically pH-dependent; Mn/Ru BMSAs achieved maximal rel-
+ative activity at pH 4.4 (Figure 3b), mirroring the acidic TME.
+Under these conditions, Mn/Ru BMSAs + H2O2 elicited a pro-
+nounced absorption peak at 652 nm (Figure 3c), conﬁrming su-
+perior POD-mimetic eﬃciency. Notably, X-ray irradiation fur-
+ther ampliﬁed this catalytic activity. Electron spin resonance
+(ESR) with DMPO trapping revealed a characteristic 1:2:2:1 quar-
+tet signal, verifying •OH generation. Mn/Ru BMSAs produced
+stronger radical signals than Ru SAs, with further enhancement
+under X-ray exposure (Figure 3d), consistent with catalytic as-
+says. Quantitative analysis showed Mn/Ru BMSAs exhibited a
+POD-like activity of 40.02 U nmol−1(Ru)—2.7 × higher than
+Ru SAs (14.92 U nmol−1) (Figure 3e). Steady-state kinetics in-
+Adv. Funct. Mater. 2026, 36, e27017
+© 2025 Wiley-VCH GmbH
+e27017 (4 of 16)
+ 16163028, 2026, 28, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202527017 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 2. XAS spectra analysis of the Mn/Ru BMSAs. a) Mn k-edge XANES spectra, b) Mn k-edge Fourier-transformed EXAFS and c) EXAFS ﬁtting
+analysis of Mn center. d) Ru k-edge XANES spectra, e) Ru k-edge Fourier-transformed EXAFS and f) EXAFS ﬁtting analysis of Ru center and proposed
+coordination structure included as insets. g–j) Wavelet transform EXAFS contour plots of Mn foil, Ru foil and Mn/Ru BMSAs.
+dicated tighter H2O2 binding for Mn/Ru BMSAs (Michaelis–
+Menten constant, Km = 5.23 mm) versus Ru SAs (Km = 13.16 mm)
+(Figure 3f). A quantitative benchmarking against recent single-
+atom/diatomic nanozymes is provided in Table S2 (Support-
+ing Information), showing that Mn/Ru BMSAs rank among
+the top tier in POD mimetics based on Km, Vmax, and spe-
+ciﬁc activities (SA) under comparable conditions.[41–45] To ad-
+dress endogenous H2O2 scarcity in TME, we probed SOD-
+mimetic activity.[46] Mn/Ru BMSAs showed signiﬁcantly higher
+O2
+•−inhibition (89.9%) than Ru SAs (66.1%) (Figure 3g), at-
+tributable to dual-metal synergy. Long-term stability testing re-
+vealed 90% activity retention over 28 days (Figure 3h), under-
+scoring therapeutic applicability. Therefore, Mn/Ru BMSAs in-
+tegrate CAT-, POD-, and SOD-like activities with X-ray-enhanced
+eﬃcacy, oﬀering a potent platform for enzyme-mimetic therapy
+(Figure 3i).
+2.3. Catalytic Mechanism of the Mn/Ru BMSAs by DFT
+Calculation
+To gain insight into the reasons for the enhanced catalytic eﬃ-
+ciency of the Mn/Ru BMSAs, the electronic structures and reac-
+tion path mechanisms of the Ru SAs and Mn/Ru BMSAs were
+investigated via density functional theory (DFT) calculations. A
+comparative analysis of the calculated density of states (DOS)
+revealed that the d-band center was closer to the Fermi level in
+Mn/Ru BMSAs (−0.72 eV) than in Ru SAs (−0.81 eV) attributed
+to the introduction of Mn atoms (Figure 4a,b). The upshift in the
+d-band center implies that the interaction between the adsorbed
+substrate and the surface of the Mn/Ru BMSAs was strength-
+ened, thus facilitating the catalytic reaction (Figure 4c). The in-
+troduction of Mn led to a change in the charge of Ru (gain of
+electrons) according to diﬀerential charge analysis (Figure 4d),
+Adv. Funct. Mater. 2026, 36, e27017
+© 2025 Wiley-VCH GmbH
+e27017 (5 of 16)
+ 16163028, 2026, 28, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202527017 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 3. Enzymatic activities Mn/Ru BMSAs. a) CAT-like activity of Mn/Ru BMSAs and Ru SAs. b) Relative POD-like activity of Mn/Ru BMSAs under
+diﬀerent pH conditions. c) UV–vis absorption spectra of TMB oxidation under diﬀerent treatments at pH 4.4. d) ESR spectra of DMPO-trapped ·OH
+radicals under diﬀerent conditions. e) Speciﬁc activities (U μmol−1, Ru) of the Mn/Ru BMSAs and Ru SAs. One activity unit (U) is deﬁned as the amount
+of nanozyme that decomposes 1 μmol of H2O2 per min. f) Michaelis‒Menten curves of Mn/Ru BMSAs and Ru SAs with H2O2 as the substrate at pH
+4.4. Km is the Michaelis constant. g) SOD-like activity of Mn/Ru BMSAs and Ru SAs at varying concentrations. h) Long-term stability of nanozymes over
+28 days. i) Schematic illustration of multi-enzyme mimic activities of Mn/Ru BMSAs.
+further suggesting that dual atomic site interactions modulate
+the d-band electronic structure of Ru. The diﬀerence in charge
+density and Bader charge analysis indicated that 2OH* acquired
+more electrons and charge aggregation from the Mn/Ru BM-
+SAs, revealing that the Mn/Ru BMSAs possess a stronger aﬃn-
+ity for the intermediates (Figure 4e,f). Among multi-enzyme-
+mimicking nanomaterials, POD-like nanozymes have emerged
+as the most extensively studied class, with research spanning
+fundamental structure-activity relationships to detailed catalytic
+mechanisms, as well as their promising applications in tumor
+therapy. Notably, in systems exhibiting POD-like activity, H2O2
+adsorption in Mn/Ru BMSAs was found to be thermodynam-
+ically favorable. The adsorbed H2O2
+* was homogeneously split
+into two OH* moieties, one of which desorbed after protonation
+to form H2O*. The remaining OH* generated O2 and then des-
+orbed, returning the nanozyme to its initial state (Figure 4g).[27]
+The Gibbs free energies of the POD-like catalytic process on the
+Ru SAs and Mn/Ru BMSAs were further calculated with the reac-
+tion intermediates. The desorption energy of OH* on the Mn/Ru
+BMSAs is much lower than that on the Ru SAs, which is the
+reason for the superior POD-like activity of the Mn/Ru BMSAs
+(Figure 4h).
+Adv. Funct. Mater. 2026, 36, e27017
+© 2025 Wiley-VCH GmbH
+e27017 (6 of 16)
+ 16163028, 2026, 28, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202527017 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 4. DFT analysis of Mn/Ru BMSAs. DOS of a) Ru SAs and b) Mn/Ru BMSAs. c) Schematic illustration of the upshift of the d-band center by a
+synergistic interaction between metal atoms. d) Diﬀerential charge density of Mn/Ru BMSAs and H2O2 dissociated to 2OH* in e) Ru SAs and f) Mn/Ru
+BMSAs. The yellow and blue parts represent gaining and losing electrons, respectively. g) Schematic diagram of the enzymatic mechanism of Mn/Ru
+BMSAs. h) Free-energy diagrams of the enzymatic mechanisms of Ru SAs and Mn/Ru BMSAs.
+2.4. Mn/Ru BMSAs Promote Radiosensitization In Vitro
+Considering the signiﬁcant enzyme-like catalytic activity of the
+Mn/Ru BMSAs and their high-Z X-ray absorption properties, we
+next systematically investigated the in vitro therapeutic eﬀects of
+Mn/Ru BMSAs on MDA-MB-231 human breast cancer cells. Ef-
+fective uptake by tumor cells is crucial for maximizing the ther-
+apeutic eﬃcacy of the nanozyme. Therefore, confocal laser scan-
+ning microscopy (CLSM) was employed to observe the localiza-
+tion of Cy5.5-labeled Mn/Ru BMSAs in tumor cells. The par-
+tial colocalization of red (Mn/Ru BMSAs) and green (lysosomal
+tracker) ﬂuorescence indicated that the Mn/Ru BMSAs function
+within both lysosomes and the cytoplasm (Figure S6, Supporting
+Information). Human umbilical vein endothelial cells (HUVECs)
+were used as normal controls to study the speciﬁc toxicity of
+Mn/Ru BMSAs toward tumor cells. The results of the CCK-8 as-
+say demonstrated that the Mn/Ru BMSAs exhibited minimal tox-
+icity to normal cells even at high concentrations, conﬁrming their
+high biocompatibility (Figure S7, Supporting Information). Fur-
+thermore, the Mn/Ru BMSAs showed signiﬁcant toxicity toward
+MDA-MB-231 cells at a concentration of 75 μg mL−1, demon-
+strating their potent therapeutic eﬃcacy (Figure S8, Support-
+ing Information). Based on these results, Mn/Ru BMSAs were
+used at a constant concentration of 75 μg mL−1 for subsequent
+experiments.
+Even though radiotherapy is eﬀective in treating cancer and
+extending patient survival, primary and acquired radioresis-
+tance remain major clinical challenges for patients undergo-
+ing radiotherapy.[47] To mimic clinical radioresistance, we devel-
+oped a radioresistant breast cancer cell model. Radioresistant
+Adv. Funct. Mater. 2026, 36, e27017
+© 2025 Wiley-VCH GmbH
+e27017 (7 of 16)
+ 16163028, 2026, 28, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202527017 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 5. In vitro evaluation of the radiosensitizing eﬀects of the Mn/Ru BMSAs. a) Schematic of the establishment of radioresistant MDA-MB-231
+cells, including the PBS group (control, Group I) and diﬀerent treatment groups (Ru SAs, Group II; Mn/Ru BMSAs, Group III; X-ray, Group IV; Ru
+SAs+X-ray, Group V; and Mn/Ru BMSAs+X-ray, Group VI). b) Viability of MDA-MB-231RR cells treated with diﬀerent conditions. c) Clonogenic ability of
+MDA-MB-231RR cells. d) Quantitative analysis of colony formation. e) Images of ROS ﬂuorescence via a DCFH-DA staining assay (scale bar: 100 μm). f)
+Intracellular ROS levels via ﬂow cytometry. g) Mitochondrial membrane potential (MMP) detected by ﬂow cytometric analysis. h) Quantitative analysis
+of MMP. i) The levels of apoptosis via an Annexin V-FITC/PI assay and ﬂow cytometry. j) Quantitative analysis of apoptotic rates. k) 𝛾-H2AX protein
+expression. l) Quantitative analysis of 𝛾-H2AX protein level. m) 𝛾-H2AX foci formation (scale bar: 10 μm). n) Expression of apoptosis-related proteins. o)
+Quantitative analysis of apoptosis-related proteins of MDA-MB-231RR cells. The data are presented as the means ± SDs, n = 3. Statistical signiﬁcance
+was assessed by one-way ANOVA or Student’s t test. **p < 0.01, ***p < 0.001 and ns: no signiﬁcant diﬀerence.
+MDA-MB-231 (MDA-MB-231RR) cells were cultivated via the
+matrix irradiation method, and their radioresistance was con-
+ﬁrmed via radiosensitivity assays.[48] The process of constructing
+the cell lines is shown in Figure 5a. Compared with parent cells,
+MDA-MB-231RR cells appeared ﬂatter and more swollen and po-
+tentially formed more compact colonies (Figure S9, Supporting
+Information), which is consistent with their reduced migration
+and invasion potential (Figure S10, Supporting Information). Ad-
+ditionally, the proliferation rate of the MDA-MB-231RR cells was
+lower than that of the parent cells (Figure S11, Supporting Infor-
+mation), indicating the successful establishment of the radiore-
+sistant breast cancer cell model. Further investigation of the toxic-
+ity of Mn/Ru BMSAs toward MDA-MB-231RR cells revealed that
+75 μg mL−1 Mn/Ru BMSAs were cytotoxic, demonstrating their
+therapeutic potential against radioresistant tumors (Figure S12,
+Supporting Information).
+To evaluate the radiotherapy-enhancing eﬀects of the Mn/Ru
+BMSAs, we treated both MDA-MB-231 and MDA-MB-231RR
+cells with Mn/Ru BMSAs in combination with X-ray irradia-
+tion. A single dose of 4 Gy was selected for subsequent mech-
+anistic assays on the basis of clonogenic assays indicating the
+maximal separation in surviving fraction for detecting Mn/Ru
+Adv. Funct. Mater. 2026, 36, e27017
+© 2025 Wiley-VCH GmbH
+e27017 (8 of 16)
+ 16163028, 2026, 28, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202527017 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+BMSA-mediated radiosensitization in MDA-MB-231RR cells
+(Figure S13, Supporting Information). Consistent with this se-
+lection, the addition of X-rays further ampliﬁed the cytotoxic ef-
+fects of the Mn/Ru BMSAs in both cell lines (Figure 5b and
+Figure S14, Supporting Information). The colony formation as-
+say demonstrated that Mn/Ru BMSAs combined with X-ray ir-
+radiation signiﬁcantly inhibited MDA-MB-231 and MDA-MB-
+231RR cell colony formation (Figure 5c,d and Figure S15, Sup-
+porting Information). These results suggest that Mn/Ru BMSAs
+eﬀectively suppress the growth of both standard and radioresis-
+tant breast cancer cells under X-ray irradiation.
+Radiotherapy induces the generation of ROS through the ra-
+diolysis of cellular water and the activation of catalytic activity.[49]
+Here, we used 2,7-dichlorodihydroﬂuorescein diacetate (DCFH-
+DA) to assess ROS levels in MDA-MB-231 and MDA-MB-231RR
+cells in vitro. As shown in Figure S16 (Supporting Informa-
+tion), control MDA-MB-231 cells exhibited negligible ﬂuores-
+cence, indicating very low intracellular ROS levels. In contrast,
+green ﬂuorescence was observed in X-ray-treated MDA-MB-231
+cells, and the coadministration of Mn/Ru BMSAs and X-ray ir-
+radiation signiﬁcantly elevated the ROS levels. Conversely, X-
+ray treatment alone did not induce signiﬁcant ﬂuorescence in
+the MDA-MB-231RR cells, but the coadministration of Mn/Ru
+BMSAs and X-ray irradiation markedly increased the ROS lev-
+els in the MDA-MB-231RR cells (Figure 5e,f and Figure S17,
+Supporting Information), demonstrating that the Mn/Ru BM-
+SAs enhanced X-ray-induced ROS generation in both the MDA-
+MB-231 and the MDA-MB-231RR cells. Furthermore, to inves-
+tigate the impact of Mn/Ru BMSAs on mitochondrial function,
+we performed JC-1 staining to assess mitochondrial membrane
+potential (MMP) in MDA-MB-231 and MDA-MB-231RR cells.
+The control group of both cells exhibited strong red ﬂuores-
+cence with minimal green signal, indicating normal MMP. In
+MDA-MB-231 cells, X-ray irradiation alone caused a marked in-
+crease in green ﬂuorescence accompanied by decreased red ﬂu-
+orescence, demonstrating MMP collapse. This eﬀect was sub-
+stantially enhanced by Mn/Ru BMSAs co-treatment (Figure S18,
+Supporting Information). Notably, while X-ray alone failed to
+signiﬁcantly alter JC-1 ﬂuorescence in MDA-MB-231RR cells,
+the combination with Mn/Ru BMSAs induced a pronounced
+shift from red to green ﬂuorescence, conﬁrming that Mn/Ru
+BMSAs eﬀectively overcame radioresistance by disrupting mi-
+tochondrial function in both cell types (Figure 5g,h). Subse-
+quent ﬂow cytometric analysis after Annexin V and propidium
+iodide (PI) staining was used to quantify apoptotic MDA-MB-
+231 and MDA-MB-231RR cells. The results revealed that the
+apoptosis rate in the Mn/Ru BMSAs with the X-ray group was
+signiﬁcantly greater than that in the other groups (Figure 5i,j
+and Figure S19, Supporting Information). Consistently, Calcein-
+AM/PI staining revealed the most pronounced cell death in
+both MDA-MB-231 and MDA-MB-231RR cell lines following
+treatment with Mn/Ru BMSAs + X-ray irradiation, whereas the
+individual modalities alone had only modest eﬀects (Figures
+S20,S21, Supporting Information). Furthermore, Annexin V/PI
+ﬂow cytometry demonstrated that co-treatment with the ROS
+scavenger N-acetylcysteine (NAC) signiﬁcantly attenuated apop-
+tosis induced by Mn/Ru BMSAs + X-ray irradiation (Figure
+S22, Supporting Information), supporting a ROS-dependent
+mechanism.
+Ionizing radiation aﬀects tumor cells directly by transferring
+energy to DNA and indirectly by generating ROS through inter-
+actions with cellular water and other molecules, leading to DNA
+damage.[50] When intracellular DNA is damaged, H2AX is phos-
+phorylated to form 𝛾-H2AX, an easily detectable marker. To inves-
+tigate the extent of DNA damage, we employed Western blotting
+and immunoﬂuorescence to detect 𝛾-H2AX levels in MDA-MB-
+231 and MDA-MB-231RR cells. As shown in Figure S23 (Sup-
+porting Information), the control MDA-MB-231 cells exhibited
+minimal ﬂuorescence, indicating very low levels of 𝛾-H2AX. In
+contrast, green ﬂuorescent foci were observed in X-ray-treated
+MDA-MB-231 cells. Furthermore, the combination of Mn/Ru
+BMSAs and X-ray irradiation markedly increased 𝛾-H2AX lev-
+els. The Western blot results also revealed that Mn/Ru BMSAs
+combined with X-ray irradiation markedly elevated 𝛾-H2AX pro-
+tein levels in MDA-MB-231 cells. Conversely, X-ray treatment
+alone did not increase the 𝛾-H2AX protein levels in the MDA-MB-
+231RR cells, but the combination of Mn/Ru BMSAs and X-ray ir-
+radiation signiﬁcantly increased the 𝛾-H2AX levels (Figure 5k,l).
+In addition, Mn/Ru BMSAs combined with X-ray irradiation sig-
+niﬁcantly green ﬂuorescent foci in the MDA-MB-231RR cells
+(Figure 5m). These results indicate that Mn/Ru BMSAs increase
+radiotherapy-induced 𝛾-H2AX levels in both MDA-MB-231 and
+MDA-MB-231RR cells and thereby increase DNA damage follow-
+ing radiotherapy. Subsequently, Western blotting was performed
+to analyze several representative apoptosis-related proteins in
+MDA-MB-231 and MDA-MB-231RR cells to validate the intrinsic
+relationship between DNA damage and apoptosis (Figure 5n,o
+and Figure S24, Supporting Information). The results revealed
+that the combination of Mn/Ru BMSAs and X-ray irradiation sig-
+niﬁcantly increased the protein levels of Bax/Bcl-2 and cleaved
+caspase-3 in both MDA-MB-231 and MDA-MB-231RR cells, in-
+dicating that Mn/Ru BMSAs eﬀectively enhanced radiotherapy-
+induced DNA damage and induced apoptosis. These ﬁndings
+highlight the potential of using Mn/Ru BMSAs in combina-
+tion with X-ray irradiation to amplify radiotherapy-induced DNA
+damage and increase apoptosis in radiosensitive and radioresis-
+tant breast cancer cells, thereby increasing their sensitivity to ra-
+diotherapy and improving overall therapeutic outcomes.
+2.5. Mn/Ru BMSAs Alleviate Hypoxia and Inhibit Stemness to
+Reverse Radioresistance
+To investigate the potential antitumor mechanisms of the Mn/Ru
+BMSAs, transcriptomic analysis was conducted with Mn/Ru
+BMSAs-treated MDA-MB-231RR cells. Hierarchical clustering
+grouped the Mn/Ru BMSAs-treated samples together, showing
+consistency among the transcriptomic results and revealing the
+speciﬁc transcriptomic changes induced by Mn/Ru BMSAs treat-
+ment (Figure S25, Supporting Information). Principal compo-
+nent analysis further separated the treated samples from the
+untreated samples, highlighting the distinct transcriptomic dif-
+ferences induced by treatment and conﬁrming the consistency
+within each group (Figure S26, Supporting Information). A to-
+tal of 1246 diﬀerentially expressed genes (DEGs) were identi-
+ﬁed in the Mn/Ru BMSAs group, including 516 upregulated and
+730 downregulated genes (Figure 6a). Following DEG identiﬁ-
+cation, Gene Ontology (GO) and Kyoto Encyclopedia of Genes
+Adv. Funct. Mater. 2026, 36, e27017
+© 2025 Wiley-VCH GmbH
+e27017 (9 of 16)
+ 16163028, 2026, 28, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202527017 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 6. Eﬀects of Mn/Ru BMSAs on hypoxia and stemness. a) Volcano plot in Mn/Ru BMSA-treated MDA-MB-231RR cells compared with that in MDA-
+MB-231RR cells. b) GO and KEGG enrichment analysis of the DEGs. c) Chord diagram summarizing the GO pathways related to the hypoxia response
+and oxidative stress. d) Images of O2 ﬂuorescence in MDA-MB-231 and MDA-MB-231RR cells (scale bar: 100 μm). e) HIF-1𝛼protein expression. f)
+Quantitative analysis of HIF-1𝛼protein levels. g) The expression of stemness-related proteins. h) Quantitative analysis of stemness-related proteins. i)
+The mammosphere formation (scale bar: 200 μm). The data are presented as the means ± SDs, n = 3. Statistical signiﬁcance was assessed by one-way
+ANOVA or Student’s t test. *p < 0.05, **p < 0.01, and ***p < 0.001.
+and Genomes (KEGG) pathway enrichment analyses were con-
+ducted to elucidate the key signaling pathways associated with
+the DEGs (Figure 6b). KEGG analysis revealed enrichment of key
+signaling pathways, including the PI3K-AKT, mTOR, and RAS
+pathways, which are essential for maintaining tumor stemness
+and promoting survival under hypoxic conditions, in radioresis-
+tant breast cancer cells. Moreover, GO analysis revealed signiﬁ-
+cant enrichment of the DEGs in pathways related to hypoxia and
+stemness maintenance, suggesting that Mn/Ru BMSAs treat-
+ment may improve low-oxygen conditions within the radioresis-
+tant breast cancer tumor microenvironment cells (Figure 6c and
+Figure S27, Supporting Information). These ﬁndings indicate
+the potential role of Mn/Ru BMSAs in alleviating hypoxia and
+disrupting hypoxia-driven survival mechanisms. The heatmap il-
+lustrates the distinct diﬀerences in the transcriptomes between
+MDA-MB-231RR cells and Mn/Ru BMSAs-treated MDA-MB-
+231RR cells and highlights the signiﬁcant changes in gene ex-
+pression levels. Notably, genes associated with the hypoxia re-
+sponse and tumor stemness identiﬁed via GO analysis, such as
+HIF-1𝛼, VEGFA, and CDKN1B, are prominently represented, re-
+ﬂecting the potential of the Mn/Ru BMSAs to modulate pathways
+linked to hypoxia alleviation and stemness regulation (Figure
+S28, Supporting Information). Additionally, the gene set enrich-
+ment analysis (GSEA) results further corroborated the enrich-
+ment of genes associated with hypoxia- and stemness-associated
+pathways, reinforcing the hypothesis that Mn/Ru BMSAs treat-
+ment may eﬀectively modulate pathways involved in hypoxia
+adaptation and stemness within radioresistant cells (Figure S29,
+Supporting Information). While GO analysis suggests mod-
+ulation of hypoxia-related signaling, these observations could
+be further clariﬁed by targeted functional validation in future
+work.
+Through transcriptomic analysis revealing the potential
+mechanisms of Mn/Ru BMSAs in hypoxic responses, we
+Adv. Funct. Mater. 2026, 36, e27017
+© 2025 Wiley-VCH GmbH
+e27017 (10 of 16)
+ 16163028, 2026, 28, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202527017 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+further validated their regulatory eﬀect on HIF-1𝛼expression ex-
+perimentally, thus exploring their potential application in allevi-
+ating hypoxia within the tumor microenvironment. Hypoxia in
+the tumor microenvironment is a key factor contributing to ra-
+dioresistance and signiﬁcantly reduces the therapeutic eﬃcacy
+of treatments that rely on the oxygen-dependent mechanisms of
+ionizing radiation.[51] Therefore, leveraging the superior catalytic
+properties of Mn/Ru BMSAs to convert high concentrations of
+H2O2 within tumor cells into oxygen is an ideal strategy to in-
+crease radiosensitivity by ameliorating hypoxia. Given the signif-
+icant catalytic enzyme-like activity of the Mn/Ru BMSAs, we sys-
+tematically investigated their role in mitigating cellular hypoxia.
+The oxygen-sensitive probe [Ru(dpp3)]Cl2 was employed to mea-
+sure intracellular oxygen levels, as molecular oxygen quenches
+the photoluminescence of this probe. An increase in red ﬂuo-
+rescence indicates a decrease in the oxygen level, whereas the
+quenching of red ﬂuorescence indicates an increase in the oxygen
+level. As shown in Figure S30 (Supporting Information), Mn/Ru
+BMSAs signiﬁcantly improved the oxygen levels in MDA-MB-231
+cells under hypoxic conditions.
+The protein HIF-1𝛼is a critical hypoxia marker in tumors
+that can indicate the cellular hypoxic status. We subsequently as-
+sessed the ability of the Mn/Ru BMSAs to reduce HIF-1𝛼protein
+levels via Western blotting. The results demonstrated that the
+Mn/Ru BMSAs signiﬁcantly decreased HIF-1𝛼protein expres-
+sion in MDA-MB-231 cells under hypoxic conditions (Figure S31,
+Supporting Information). Additionally, as depicted in Figure 6d,
+MDA-MB-231RR cells presented signiﬁcantly greater hypoxia
+levels than did the parent cells, but hypoxia was markedly re-
+duced following treatment with the Mn/Ru BMSAs. Western blot
+analysis conﬁrmed that the protein expression of HIF-1𝛼in the
+MDA-MB-231RR cells was signiﬁcantly greater than that in the
+parental cells, but this phenomenon was reversed upon treat-
+ment with the Mn/Ru BMSAs (Figure 6e,f).
+Notably, the hypoxic tumor microenvironment drives the self-
+renewal of cancer stem cells (CSCs) and reinforces their stem-
+like properties. Mechanistically, under hypoxia, HIF-1𝛼upreg-
+ulates key stemness-associated transcription factors and signal-
+ing pathways that sustain CSC traits and contribute to radiore-
+sistance. CSC stemness was therefore evaluated using a panel
+of established markers, including surface antigens CD44, CD24,
+and ALDH, together with the core transcriptional regulators
+OCT4, SOX2, and NANOG, as well as functional mammosphere
+formation.[52,53] To investigate the impact of the Mn/Ru BMSAs
+on tumor stemness, we analyzed the expression of stemness-
+associated proteins via Western blotting. The results revealed that
+the expression of OCT4, SOX2, and NANOG was markedly in-
+creased in the MDA-MB-231RR cells compared with the parental
+cells, whereas the expression of these proteins was signiﬁcantly
+reduced following Mn/Ru BMSA intervention (Figure 6g,h). In
+the mammosphere formation assay, substantially more mam-
+mospheres formed from the MDA-MB-231RR cells than from
+the parental cells. In contrast, the increase in mammosphere
+formation was signiﬁcantly attenuated following treatment with
+the Mn/Ru BMSAs (Figure 6i and Figure S32, Supporting In-
+formation). Further investigation using ﬂow cytometry demon-
+strated that ALDH+ cells were elevated in MDA-MB-231RR rela-
+tive to parental MDA-MB-231 (Figure S33, Supporting Informa-
+tion). Upon treatment with Mn/Ru BMSAs, the ALDH+ fraction
+decreased in both lines, and CD44+/CD24−cells in MDA-MB-
+231RR were similarly reduced (Figure S34, Supporting Informa-
+tion), indicating reduced tumor stemness following Mn/Ru BM-
+SAs administration. These ﬁndings suggest that Mn/Ru BMSAs
+eﬀectively mitigate the hypoxic microenvironment in radioresis-
+tant breast cancer cells and inhibit tumor stemness to reverse
+radioresistance.
+2.6. Mn/Ru BMSAs Eﬀectively Reverse Radioresistance In Vivo
+Eﬀective
+tumor
+radiosensitization
+requires
+precise
+nanomedicine delivery to maximize therapeutic eﬃcacy while
+minimizing oﬀ-target eﬀects. The cyclic peptide Arg-Gly-Asp
+(cRGD) has emerged as a promising targeting ligand due to its
+high aﬃnity for integrins overexpressed on cancer cells.[54,55]
+To explore the enrichment of Mn/Ru BMSAs within tumors,
+Mn/Ru BMSAs were conjugated with DSPE-PEG-cRGD and
+the near-infrared ﬂuorescent dye DiR. Fluorescence imaging
+revealed a clear time-dependent accumulation of Mn/Ru BMSAs
+with cRGD in tumor tissues, with tumor signals gradually in-
+creasing and peaking at 24 h post-injection, while non-modiﬁed
+Mn/Ru BMSAs showed weaker and less speciﬁc distribution.
+Quantitative analysis further demonstrated signiﬁcantly en-
+hanced tumor ﬂuorescence intensity after cRGD modiﬁcation,
+conﬁrming the strong tumor homing ability (Figure S35, Sup-
+porting Information). Based on these results, the subsequent
+therapeutic irradiation was scheduled at the peak accumulation
+time point of 24 h, ensuring that the anti-tumor evaluation was
+performed under the optimal biodistribution conditions. Based
+on the demonstrated tumor-targeting eﬃciency, we proceeded to
+assess the therapeutic eﬃcacy of Mn/Ru BMSAs in overcoming
+radioresistance in vivo. The ability of the Mn/Ru BMSAs to
+reverse radioresistance was conﬁrmed in MDA-MB-231RR
+tumor-bearing mice. When tumor growth reached ≈100 mm3,
+the mice were randomly assigned to six groups for the following
+treatments: control (PBS), Ru SAs, Mn/Ru BMSAs, X-ray irradi-
+ation, Ru SAs + X-ray irradiation, and Mn/Ru BMSAs + X-ray
+irradiation. As illustrated in the treatment protocol (Figure 7a),
+the model mice received intravenous injections of Mn/Ru (5 mg
+kg−1) on days 0, 3, and 5 and underwent radiotherapy at a total
+dose of 6 Gy on days 1, 4, and 6. Consistent with the in vitro
+toxicity assessments in normal cells, no signiﬁcant change in
+body weight was observed across the various treatment groups
+during the treatment period, indicating that the Mn/Ru BMSAs
+had minimal toxicity (Figure 7b). During the treatment period,
+rapid tumor growth was observed in both the control and X-ray
+groups, indicating radioresistance. In contrast, tumors treated
+with the combination of Mn/Ru BMSAs and X-ray irradiation
+presented signiﬁcantly inhibited growth, indicating the signiﬁ-
+cant therapeutic potential of the Mn/Ru BMSAs in attenuating
+radioresistance. This ﬁnding was corroborated by representative
+tumor photographs (Figure 7c) and measurements of tumor vol-
+ume (Figure 7d), which aligned with the tumor weight ﬁndings
+(Figure 7e).
+Furthermore, tumor tissues and major organs harvested from
+the mice were assessed via hematoxylin and eosin (H&E) stain-
+ing. The results revealed a notable increase in damage to radiore-
+sistant tumor tissues in the Mn/Ru BMSAs + X-ray combined
+Adv. Funct. Mater. 2026, 36, e27017
+© 2025 Wiley-VCH GmbH
+e27017 (11 of 16)
+ 16163028, 2026, 28, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202527017 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 7. In vivo tumor radiotherapy. a) Schematic of the MDA-MB-231RR tumor-bearing nude mouse treatment protocol. b) Average body weights
+of the mice in the various treatment groups. c) Photographs of the tumors. d) Curves of mouse tumor volume growth. e) Average tumor weights in
+each group of mice. f) Representative TUNEL, HIF-1𝛼and NANOG immunoﬂuorescence images of tumor slices taken from mice receiving diﬀerent
+treatments (scale bar: 50 μm). The data are presented as the means ± SDs, n = 5. Statistical signiﬁcance was assessed by one-way ANOVA or Student’s
+t test. ***p < 0.001 and ns: no signiﬁcant diﬀerence.
+treatment group compared with the X-ray alone group. Addi-
+tionally, Ki67 and TUNEL staining revealed that the Mn/Ru BM-
+SAs with X-ray group had signiﬁcantly fewer proliferating cells
+and more apoptotic cells, indicating enhanced radiosensitivity
+(Figure 7f and Figure S36, Supporting Information). Moreover,
+the expression of HIF-1𝛼was suppressed in the Mn/Ru BMSAs-
+treated group compared with the control group, and the Mn/Ru
+BMSAs + X-ray group presented lower levels of NANOG, demon-
+strating the eﬃcacy of the Mn/Ru BMSAs in alleviating tumor hy-
+poxia and reducing cancer stemness to reverse radioresistance.
+To evaluate the potential in vivo toxicity of the Mn/Ru BMSAs,
+serum biochemical analyses were conducted to assess their liver
+and kidney toxicity. Markers of liver function (AST, TBIL, ALB),
+kidney function (CREA, UREA), and lipid levels (CHO) indicated
+Adv. Funct. Mater. 2026, 36, e27017
+© 2025 Wiley-VCH GmbH
+e27017 (12 of 16)
+ 16163028, 2026, 28, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202527017 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 8. Reversal of radioresistance in patient-derived TNBC organoids. a) Schematic of TNBC organoid establishment. b) H&E staining images and
+immunohistochemical staining for ER, PR, HER2, and Ki67 in the generated TNBC organoids (scale bar: 10 μm). c) 3D CLSM images showing the
+internalization of Cy5.5-labeled Mn/Ru BMSAs (scale bar: 10 μm). d) CLSM images of calcein AM (green) and PI (red) staining of TNBC organoids after
+Mn/Ru BMSA treatment and X-ray irradiation (scale bar: 50 μm).
+Adv. Funct. Mater. 2026, 36, e27017
+© 2025 Wiley-VCH GmbH
+e27017 (13 of 16)
+ 16163028, 2026, 28, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202527017 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+that the Mn/Ru BMSAs had negligible toxicity (Figure S37, Sup-
+porting Information). Similarly, no signiﬁcant histopathological
+abnormalities were observed in the main organs of the mice
+treated with the Mn/Ru BMSAs in combination with X-ray irra-
+diation (Figure S38, Supporting Information). These results in-
+dicate the excellent biosafety of the Mn/Ru BMSAs, which could
+greatly facilitate their translation to clinical applications.
+2.7. Mn/Ru BMSAs Enhance Radiosensitivity of Radioresistant
+PDOs
+The radioresistant nature of TNBC makes it particularly chal-
+lenging to treat, leading to overall survival rates that are lower
+than those for other breast cancer subtypes. Recently, PDOs have
+emerged as powerful preclinical models for studying TNBC, as
+PDOs replicate the histopathological and genetic features of the
+primary tumor, including its radioresistant characteristics.[56,57]
+In this study, we established PDOs from a TNBC patient and
+investigated the ablation eﬃcacy of the Mn/Ru BMSAs. The
+schematic in Figure 8a illustrates the construction process of
+the TNBC organoids, and bright-ﬁeld images conﬁrmed their
+successful formation (Figure S39, Supporting Information). Im-
+munoﬂuorescence staining for Ki-67, ER, PR, and HER2 in the
+generated TNBC organoids demonstrated that these organoids
+were indeed triple negative and that the marker proﬁle of the orig-
+inal tumor tissues was successfully replicated (Figure 8b). The
+distribution of the Mn/Ru BMSAs was observed via CLSM. In the
+TNBC PDOs, the Mn/Ru BMSAs were found in the cytoplasm,
+indicating their successful uptake by the organoids (Figure 8c).
+The viability assay indicated that exposure to 4 Gy of radiation
+alone had a minimal eﬀect on the viability of the TNBC PDOs,
+demonstrating their inherent radioresistance. In contrast, when
+treated with 75 μg mL−1 of Mn/Ru BMSAs, a signiﬁcant reduc-
+tion in PDO viability was observed upon the application of 4 Gy
+of radiation, suggesting that the Mn/Ru BMSAs eﬀectively en-
+hanced the radiosensitivity of the TNBC PDOs to reverse their
+radioresistance (Figure S40, Supporting Information). CLSM im-
+ages were taken of the TNBC PDOs after they were stained with
+calcein AM (green, live cells) and PI (red, dead cells). While the
+control, Mn/Ru BMSAs, and X-ray groups displayed minimal cell
+death, the combination of Mn/Ru BMSAs and X-ray treatment
+signiﬁcantly increased the red ﬂuorescence intensity, indicating
+enhanced cell death and improved radiosensitization (Figure 8d).
+Collectively, the Mn/Ru BMSAs successfully reversed the radiore-
+sistance of TNBC PODs by eﬀectively enhancing their radiosen-
+sitivity, demonstrating great potential as a radiosensitizer for
+TNBC treatment.
+3. Conclusion
+In summary, we designed a heteronuclear single-atom nanozyme
+with multienzyme activities via the pyrolysis of a MOF-based pre-
+cursor. Through the incorporation Mn ions modulates the cat-
+alytic activity of the Ru SA sites, Mn/Ru BMSA simultaneously
+alleviates hypoxia and produces cytotoxic hydroxyl radicals, creat-
+ing a self-sustaining catalytic cycle that ampliﬁes ROS for radio-
+therapy synergy. Especially, Mn/Ru BMSA exhibits higher POD-
+like catalytic eﬃciency (40.02 U nmol−1, Ru) than did the Ru SAs
+(14.92 U nmol−1, Ru). The calculated Km of H2O2 for Mn/Ru
+BMSAs and Ru SAs was 5.23 and 13.16 mm, respectively. More-
+over, the catalytic mechanism of the Mn/Ru BMSAs was elu-
+cidated via theoretical calculations, which revealed that Mn ad-
+justs the d-band center of Ru SAs from −0.81 to −0.72 eV, illus-
+trating the higher aﬃnity of Mn/Ru BMSAs for H2O2 than that
+of Ru SAs and thereby improving the catalytic performance. In
+both in vitro and in vivo radioresistant breast cancer mice mod-
+els, the Mn/Ru BMSAs eﬀectively catalyzed the amelioration of
+the hypoxic tumor microenvironment, downregulated HIF-1𝛼,
+and suppressed the expression of stemness markers (NANOG,
+SOX2, and OCT4). Additionally, the Mn/Ru BMSAs improved
+the therapeutic response of radioresistant organoid models to ra-
+diotherapy. These results establish the Mn/Ru BMSAs as a po-
+tent agent to reverse radioresistance and enhance radiotherapy
+eﬃcacy in breast cancer.
+Supporting Information
+Supporting Information is available from the Wiley Online Library or from
+the author.
+Acknowledgements
+The authors greatly acknowledge the ﬁnancial support from the National
+Natural Science Foundation of China (82171997, 32171370), Guangdong
+Basic and Applied Basic Research Foundation (2023B1515120073),
+Science
+and
+Technology
+Projects
+in
+Guangzhou
+(2025B01J3013,
+2025B03J0097,
+2023A03J0493), the
+Science
+and
+Technology
+Plan-
+ning Project of Guangdong Province (2023B1212060013), the Shenzhen
+Research Funding Program (JCYJ20230807154402004), and the Shenzhen
+Innovation of Science and Technology Commission (LGKCYLWS2023005).
+Conﬂict of Interest
+The authors declare no conﬂict of interest.
+Author Contributions
+B.Y. and Y.M. contributed equally to this work. B.Y., G.Y., and Y.P.: Designed
+the study. G.Y.: Performed most of the reactions and structural character-
+ization. B.Y. and Y.M.: Conducted the experiments. B.Y. and G.Y.: Wrote
+the paper. Y.P.: Supervised for the entire project and funded this study. All
+authors contributed to the overall scientiﬁc interpretation and edited the
+manuscript.
+Data Availability Statement
+The data that support the ﬁndings of this study are available from the
+corresponding author upon reasonable request.
+Keywords
+alleviate hypoxia, bimetallic nanozyme, breast cancer, radioresistance,
+radiotherapy
+Received: October 10, 2025
+Revised: November 17, 2025
+Published online: December 2, 2025
+Adv. Funct. Mater. 2026, 36, e27017
+© 2025 Wiley-VCH GmbH
+e27017 (14 of 16)
+ 16163028, 2026, 28, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202527017 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+[1] X. Shi, Z. Wen, Q. Gu, L. Jiao, H.-L. Jiang, H. Lv, H. Wang, J. Ding,
+M. P. Lyons, A. Chang, Z. Feng, S. Chen, Y. Lin, X. Xu, P. Du, W.
+Xu, M. Sun, Y. Li, B. Yang, T. Zhang, X. Wu, J. Lu, Nature 2025, 640,
+668.
+[2] S. Ji, B. Jiang, H. Hao, Y. Chen, J. Dong, Y. Mao, Z. Zhang, R. Gao,
+W. Chen, R. Zhang, Q. Liang, H. Li, S. Liu, Y. Wang, Q. Zhang, L.
+Gu, D. Duan, M. Liang, D. Wang, X. Yan, Y. Li, Nat. Catal. 2021, 4,
+407.
+[3] L. Huang, J. Chen, L. Gan, J. Wang, S. Dong, Sci. Adv. 2019, 5, aav5490.
+[4] X. T. Le, Y. S. Youn, Coord. Chem. Rev. 2025, 536, 216642.
+[5] N. Zhang, W. Ping, J. Xiang, S. Chu, D. Li, S. Ning, D. Zhu, W. Zeng,
+Q. Xu, Adv. Healthcare Mater. 2025, 14, 2401362.
+[6] X. Jia, E. Wang, J. Wang, Chem. Rev. 2025, 125, 2908.
+[7] X. Li, M. Long, Nat. Water 2025, 3, 140.
+[8] C. Peng, R. Pang, J. Li, E. Wang, Adv. Mater. 2024, 36, 2211724.
+[9] D. Zhu, H. Chen, C. Huang, G. Li, X. Wang, W. Jiang, K. Fan, Adv.
+Funct. Mater. 2022, 32, 2110268.
+[10] Q. Wang, X. Zhu, B. Yin, K. Yan, G. Qiu, X. Liang, R. Jia, J. Chen, X.
+Wang, Y. Wu, J. Liu, J. Zhong, K. Zhang, D. Wang, Adv. Funct. Mater.
+2024, 34, 2408141.
+[11] W. Qiao, J. Chen, H. Zhou, C. Hu, S. Dalangood, H. Li, D. Yang, Y.
+Yang, J. Gui, Adv. Sci. 2024, 11, 2305979.
+[12] X. Luo, Y. Zhou, K. Rao, J. Xiang, S. Ning, D. Zhu, G. Li, H. Chen,
+Small 2025, 21, 2411576.
+[13] Y. Chen, B. Jiang, H. Hao, H. Li, C. Qiu, X. Liang, Q. Qu, Z. Zhang, R.
+Gao, D. Duan, S. Ji, D. Wang, M. Liang, Angew. Chem., Int. Ed. 2023,
+62, 202301879.
+[14] J. Koppe, A. V. Yakimov, D. Gioﬀrè, M.-E. Usteri, T. Vosegaard, G.
+Pintacuda, A. Lesage, A. J. Pell, S. Mitchell, J. Pérez-Ramírez, C.
+Copéret, Nature 2025, 642, 613.
+[15] W. Qu, S. Tang, Z. Tang, T. Zhong, H. Zhao, S. Tian, D. Shu, C. He,
+Adv. Funct. Mater. 2024, 34, 2314187.
+[16] H. Fu, K. Li, C. Zhang, J. Zhang, J. Liu, X. Chen, G. Chen, Y. Sun, S. Li,
+L. Ling, ACS Nano 2023, 17, 13851.
+[17] L. Zhang, X. Yang, J. Lin, X. Li, X. Liu, B. Qiao, A. Wang, T. Zhang, Acc.
+Chem. Res. 2025, 58, 1878.
+[18] G. Yuan, B. Yang, P. Chen, L. Bai, G. Qiao, Z. Xu, Z. Cao, Q. Wang, L.
+Xie, Y. Lu, Y. Pan, ACS Nano 2024, 18, 27630.
+[19] Z. Shen, P. Wang, X. Li, M. Zhang, X. Shi, N. Lu, Chem. Eng. J. 2024,
+502, 157902.
+[20] G. Li, H. Liu, T. Hu, F. Pu, J. Ren, X. Qu, J. Am. Chem. Soc. 2023, 145,
+16835.
+[21] J. Wei, H. Tang, Y. Liu, G. Liu, L. Sheng, M. Fan, Y. Ma, Z. Zhang, J.
+Zeng, Angew. Chem., Int. Ed. 2024, 63, 202410520.
+[22] K. Zhu, H. Yang, G. Guo, Y. Wang, W. Tan, F. Ma, H. Zhang, S. Peng,
+ACS Catal. 2025, 15, 9563.
+[23] Z. Zhang, F. Li, S. Xi, L. Zheng, X. Wang, B. Du, X. Chi, Z. Chen, H.
+B. Yang, L. Zhang, D. Li, B. Liu, L. Li, P. Chen, Angew. Chem., Int. Ed.
+2025, 64, 202508651.
+[24] Y. Liu, R. Niu, R. Deng, S. Song, Y. Wang, H. Zhang, J. Am. Chem. Soc.
+2023, 145, 8965.
+[25] C. Jiang, M. Sun, Y. Wang, C. Dong, Y. Yu, G. Wang, Y. Lu, Z. Chen,
+Adv. Funct. Mater. 2025, 35, 2424599.
+[26] Z. Li, B. Ding, J. Li, H. Chen, J. Zhang, J. Tan, X. Ma, D. Han, P. a. Ma,
+J. Lin, Angew. Chem., Int. Ed. 2025, 64, 202413661.
+[27] R. Zeng, Q. Gao, L. Xiao, W. Wang, Y. Gu, H. Huang, Y. Tan, D. Tang,
+S. Guo, J. Am. Chem. Soc. 2024, 146, 10023.
+[28] J. Xie, L. Gong, S. Zhu, Y. Yong, Z. Gu, Y. Zhao, Adv. Mater. 2019, 31,
+1802244.
+[29] A. Piﬀkó, K. Yang, A. Panda, J. Heide, K. Tesak, C. Wen, K. Zawieracz,
+L. Wang, E. Z. Naccasha, J. Bugno, Y. Fu, D. Chen, L. Donle, E. Lengyel,
+D. G. Tilley, M. Mack, R. S. Rock, S. J. Chmura, E. E. Vokes, C. He, S.
+P. Pitroda, H. L. Liang, R. R. Weichselbaum, Nature 2025, 643, 810.
+[30] U. M. Cytlak, D. P. Dyer, J. Honeychurch, K. J. Williams, M. A. Travis,
+T. M. Illidge, Nat. Rev. Immunol. 2022, 22, 124.
+[31] Z. Chen, F. Han, Y. Du, H. Shi, W. Zhou, Signal Transduct. Target. Ther.
+2023, 8, 70.
+[32] W. Wang, H. Zheng, J. Jiang, Z. Li, D. Jiang, X. Shi, H. Wang, J. Jiang,
+Q. Xie, M. Gao, J. Chu, X. Cai, T. Xia, R. Li, Nat. Commun. 2022, 13,
+4495.
+[33] B. Keith, M. C. Simon, Cell 2007, 129, 465.
+[34] Y. Wang, H. Zhang, Y. Liu, M. H. Younis, W. Cai, W. Bu, Mater. Today
+2022, 57, 262.
+[35] Q. Wang, H. Cao, X. Hou, D. Wang, Z. Wang, Y. Shang, S. Zhang, J.
+Liu, C. Ren, J. Liu, Adv. Mater. 2023, 35, 2302916.
+[36] J. Han, M. Won, J. H. Kim, E. Jung, K. Min, P. Jangili, J. S. Kim, Chem.
+Soc. Rev. 2020, 49, 7856.
+[37] J. Li, H. Zhang, W. Samarakoon, W. Shan, D. A. Cullen, S. Karakalos,
+M. Chen, D. Gu, K. L. More, G. Wang, Z. Feng, Z. Wang, G. Wu, Angew.
+Chem., Int. Ed. 2019, 58, 18971.
+[38] T. Zhang, X. Han, H. Liu, M. Biset-Peiró, J. Li, X. Zhang, P. Tang, B.
+Yang, L. Zheng, J. R. Morante, J. Arbiol, Adv. Funct. Mater. 2022, 32,
+2111446.
+[39] Y. Zhao, J. Wan, C. Ling, Y. Wang, H. He, N. Yang, R. Wen, Q.
+Zhang, L. Gu, B. Yang, Z. Xiang, C. Chen, J. Wang, X. Wang, Y.
+Wang, H. Tao, X. Li, B. Liu, S. Zhang, D. Wang, Nature 2025, 644,
+668.
+[40] M. P. Browne, C. Domínguez, C. Kaplan, M. E. G. Lyons, E. Fonda, P.
+E. Colavita, ACS Appl. Energy Mater. 2023, 6, 8607.
+[41] J.-J. Zheng, F. Zhu, N. Song, F. Deng, Q. Chen, C. Chen, J. He, X. Gao,
+M. Liang, Nat. Protoc. 2024, 19, 3470.
+[42] C.-B. Ma, Y. Xu, L. Wu, Q. Wang, J.-J. Zheng, G. Ren, X. Wang, X.
+Gao, M. Zhou, M. Wang, H. Wei, Angew. Chem., Int. Ed. 2022, 61,
+202116170.
+[43] S. Zhong, Z. Zhang, Z. Wang, Q. Zhao, W. Chen, G. Chen, Z. Jiang,
+Q. Cai, L. Gong, Y. Lai, D. Wang, L. Li, J. Am. Chem. Soc. 2025, 147,
+15814.
+[44] Q. Wang, S. Liu, C. Li, Y. Huang, B. An, M. Wang, J. Qu, P. Wang, J.
+Xu, P. Ma, Angew. Chem., Int. Ed. 2025, 64, 202511471.
+[45] J. Ye, C. Li, J. Xu, S. Liu, J. Qu, Q. Wang, J. Cao, Y. Zhao, C. Li, P. Yang,
+Adv. Mater. 2025, 37, 2419673.
+[46] W. Gao, J. He, L. Chen, X. Meng, Y. Ma, L. Cheng, K. Tu, X. Gao, C.
+Liu, M. Zhang, K. Fan, D.-W. Pang, X. Yan, Nat. Commun. 2023, 14,
+160.
+[47] Y. Wu, Y. Song, R. Wang, T. Wang, Mol. Cancer 2023, 22, 96.
+[48] X. Bai, J. Ni, J. Beretov, V. C. Wasinger, S. Wang, Y. Zhu, P. Graham,
+Y. Li, Redox Biol. 2021, 43, 101993.
+[49] B. Lv, H. Zhang, X. Zheng, H. Wang, W. Ge, Y. Ren, Z. Tan, M. Zhang,
+Z. Tang, Y. Liu, L. Zhang, Y. Wu, X. Jiang, W. Bu, Nano Today 2020, 35,
+100988.
+[50] G. Lei, Y. Zhang, P. Koppula, X. Liu, J. Zhang, S. H. Lin, J. A. Ajani, Q.
+Xiao, Z. Liao, H. Wang, B. Gan, Cell Res. 2020, 30, 146.
+[51] R.-X. Huang, P.-K. Zhou, Signal Transduc. Target. Ther. 2020, 5,
+60.
+[52] Y. Yang, C. Chen, Q. Zuo, H. Lu, S. Salman, Y. Lyu, T. Y-T. Huang, E.
+E. Wicks, W. Jackson, E. Datan, R. Wang, Y. Wang, N. Le, Y. Zhu, W.
+Qin, G. L. Semenza, Sci. Adv. 2022, 8, abo5000.
+[53] L. E. Stevens, G. Peluﬀo, X. Qiu, D. Temko, A. Fassl, Z. Li, A. Trinh,
+M. Seehawer, B. Jovanovi´c, M. Aleˇckovi´c, C. M. Wilde, R. C. Geck, S.
+Shu, N. L. Kingston, N. W. Harper, V. Almendro, A. L. Pyke, S. B. Egri,
+M. Papanastasiou, K. Clement, N. Zhou, S. Walker, J. Salas, S. Y. Park,
+D. A. Frank, A. Meissner, J. D. Jaﬀe, P. Sicinski, A. Toker, F. Michor, et
+al., Cancer Res. 2023, 83, 264.
+Adv. Funct. Mater. 2026, 36, e27017
+© 2025 Wiley-VCH GmbH
+e27017 (15 of 16)
+ 16163028, 2026, 28, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202527017 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+[54] M. Ovais, S. Mukherjee, A. Pramanik, D. Das, A. Mukherjee, A. Raza,
+C. Chen, Adv. Mater. 2020, 32, 2000055.
+[55] L. Zhang, J. H., D. Buratto, P. Han, Z. Yang, R. Zhou, Aggregate 2024,
+5, 434.
+[56] F.
+Liu,
+D.
+Ma,
+Q.
+Liu,
+X.
+Qi,
+J.
+Clin.
+Oncol.
+2022,
+40,
+12625.
+[57] K. P. Guillen, M. Fujita, A. J. Butterﬁeld, S. D. Scherer, M. H. Bailey, Z.
+Chu, Y. S. DeRose, L. Zhao, E. Cortes-Sanchez, C.-H. Yang, J. Toner,
+G. Wang, Y. Qiao, X. Huang, J. A. Greenland, J. M. Vahrenkamp, D.
+H. Lum, R. E. Factor, E. W. Nelson, C. B. Matsen, J. M. Poretta, R.
+Rosenthal, A. C. Beck, S. S. Buys, C. Vaklavas, J. H. Ward, R. L. Jensen,
+K. B. Jones, Z. Li, S. Oesterreich, et al., Nat. Cancer 2022, 3, 232.
+Adv. Funct. Mater. 2026, 36, e27017
+© 2025 Wiley-VCH GmbH
+e27017 (16 of 16)
+ 16163028, 2026, 28, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202527017 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

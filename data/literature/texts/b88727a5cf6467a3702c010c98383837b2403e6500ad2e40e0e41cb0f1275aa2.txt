@@ -1,0 +1,1196 @@
+Surface-Engineered Nanoparticles Enhance
+the Peroxidase Activity of Heme-Containing
+Proteins
+Subrata Pandit,∇Atri Bhattacharya,∇Busra Ozguney,∇Seungheon Lee, Jeetain Mittal,
+and Devleena Samanta*
+Cite This: ACS Nano 2025, 19, 7117−7128
+Read Online
+ACCESS
+Metrics & More
+Article Recommendations
+*
+sı
+Supporting Information
+ABSTRACT: Enzymes interfaced with nanomaterials often lose
+more than 90% of their activity; yet, some nanomaterials have
+been shown to enhance enzyme activity. However, these
+findings are largely observational and lack clear and actionable
+design principles. Systematic studies are needed to develop
+nanomaterials that can control and tune enzyme activity. Given
+that enzyme−nanomaterial interactions are mediated by their
+surface functional groups, we hypothesized that engineering
+nanoparticle surfaces could allow for controlled tuning of the
+enzyme activity. In this study, we used peptide-functionalized
+gold nanoparticles (PGNPs) as a programmable platform to
+investigate how surface functionalization affects enzyme activity.
+By varying the peptide sequences, we examined the effects of
+charge, hydrophobicity, peptide length, and structure on the peroxidase activity of cytochrome C (Cyt C). Our results showed
+that carefully designed ligands can significantly enhance enzyme activity, exceeding 10-fold compared with the free enzyme.
+Molecular dynamics simulations provided insights into the molecular basis of these findings, revealing the preferred
+orientation of Cyt C upon adsorption and key interaction patterns between the enzyme and peptide ligands, thus bridging
+experimental results with a mechanistic understanding. Furthermore, PGNPs proved to be a versatile platform for boosting
+peroxidase activity of other heme-containing proteins such as lactoperoxidase, hemoglobin, and catalase by 13.4-, 3.9-, and 4.2-
+fold, respectively. This study highlights the potential of nanoparticle surface engineering to activate enzymes at interfaces in a
+tunable manner, offering a promising alternative to protein engineering for developing biocatalysts.
+KEYWORDS: surface engineering, gold nanoparticles, peptides, peroxidase, enzymes
+1. INTRODUCTION
+The global market value for enzymes is expected to reach
+around $20.4 billion by 2029, highlighting their significant role
+in biotechnological advancements.1 Enhancing enzyme activity
+could revolutionize various fields, making it a critical area of
+research. Typically, protein engineering techniques such as
+site-directed mutagenesis and directed evolution are used to
+design enzymes with higher specific activities.2−6 Although
+effective, these methods require sophisticated technology and a
+deep understanding of enzyme structures and functions,
+making them technically challenging and resource-intensive.
+An alternative approach involves integrating enzymes with
+nanomaterials to enhance their structural stability, extend their
+activity, and enable reuse.7−12 Despite these benefits,
+interfacing enzymes with nanomaterials often results in a
+considerable decrease in enzyme activity, sometimes with
+losses over 90%.13−15 However, several reports have
+demonstrated that pairing enzymes with certain nanomaterials
+can instead increase their activity.12,16−19 Various nanomateri-
+als, including metallic core nanoparticles (NPs),20,21 quantum
+dots,22−25 DNA-based and polymer-based nanostruc-
+tures,16,26−28 nanoporous materials,29−31 and carbon-based
+materials like nanotubes and graphene oxide,32,33 as well as
+nanogels,8 have proven effective in this capacity.
+Received:
+November 10, 2024
+Revised:
+January 26, 2025
+Accepted:
+January 28, 2025
+Published: February 11, 2025
+Article
+www.acsnano.org
+© 2025 American Chemical Society
+7117
+https://doi.org/10.1021/acsnano.4c16059
+ACS Nano 2025, 19, 7117−7128
+Downloaded via QINGDAO UNIV SCIENCE AND TECHNOLOGY on June 27, 2026 at 10:44:30 (UTC).
+See https://pubs.acs.org/sharingguidelines for options on how to legitimately share published articles.
+
+The activity enhancement is often attributed to the unique
+local environments that these nanomaterials create, which
+differ significantly from bulk environments and can affect
+enzyme behavior. For instance, electrostatic interactions
+between oppositely charged substrates and nanomaterials can
+increase the local substrate concentration at the NP−enzyme
+interface, potentially boosting enzyme activity. In an early
+study, Rotello et al. demonstrated a 3-fold increase in the
+apparent catalytic activity of chymotrypsin when immobilized
+on gold nanoparticles coated with positively charged ligands
+and paired with positively charged substrates.21 Similarly,
+enzymes associated with nanomaterials may experience
+different local pH, ionic strength, and hydrophobicity
+compared with their free counterparts. For example, Gang et
+al. observed that repositioning the glucose oxidase (GOx)
+enzyme on a DNA scaffold enhanced its activity, likely due to
+changes in the local polyanionic environment.16 A recent study
+by Schwartz et al. revealed a 50-fold increase in lipase activity
+when the enzyme was associated with random copolymer
+brushes on silica NPs, facilitated by π-stacking and π-cation
+interactions.17 Some studies have also examined detailed
+mechanisms of activity enhancement. For example, Medintz et
+al. showed that the increased activity of phosphotriesterase was
+due to accelerated enzyme−product dissociation, rather than
+changes in activation energy.24 Despite these promising
+findings, a comprehensive understanding of how nanomaterial
+properties affect enzyme activity remains elusive. Current
+research is primarily phenomenological, with a few exceptions,
+and specific design guidelines are still lacking. Systematic
+studies are needed to explore how variations in the
+nanomaterial properties influence enzyme activity. Given that
+enzyme-NP interactions are mediated by surface functional
+groups, we hypothesized that engineering NP surfaces with
+tailored ligands could provide a means of controlling and
+modulating enzyme activity.
+In this study, we explore how NP surface engineering can
+enhance the activity of heme-containing proteins. We chose
+heme-containing proteins because they serve as catalysts for a
+broad spectrum of biochemical transformations.34 One notable
+member of this family is cytochrome c (Cyt C), a
+Figure 1. (A) Scheme showing the interaction of enzymes with PGNPs and the consequent effect of this interaction on activity. (B) Cartoon
+structures of the representative peptides used to study the effects of charge, length, and branching on enzymatic activity. The sequences are
+written from N to C terminus from left to right. (C) Relative sizes of GNPs, enzymes, and the peptide EEGCGEE used in this study. Proteins
+shown in this figure correspond to crystal structures of Cyt C (PDB ID: 1HRC), Hb (PDB ID: 6BB5), LP (PDB ID: 3GC1), and Cat (PDB
+ID: 1TGU). (D) Relative sizes of representative peptides used in this study.
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.4c16059
+ACS Nano 2025, 19, 7117−7128
+7118
+
+mitochondrial protein that primarily takes part in the electron
+transport chain.35 During programmed cell death, Cyt C binds
+to anionic phospholipids called cardiolipins in the inner
+mitochondrial membrane, which induces peroxidase-like
+activity in this heme-containing protein.36−38 This interaction
+highlights how the local environment of the heme group can
+significantly influence enzymatic function. As electrostatic
+forces are known to be the key to these interactions, we
+hypothesized that engineering nanoparticle surfaces to mimic
+the charged cardiolipin environment could potentially enhance
+the peroxidase activity of Cyt C.
+We note that prior research has shown that Cyt C activity
+can be enhanced when it is interfaced with nanostructured
+materials. However, much of this research has focused on
+either encapsulating the enzyme within porous structures or
+covalently attaching it to nanomaterials.11,31,39 Encapsulation,
+while effective, can create diffusion barriers, and covalent
+conjugation often restricts Cyt C’s orientational flexibility,
+limiting its interaction with the surrounding materials.
+To overcome these challenges, we designed a system based
+on three key criteria: (1) it should be simple and highly
+modular, allowing for easy modification of surface groups; (2)
+it should minimize barriers to substrate diffusion; and (3) it
+should rely on noncovalent interactions between the enzyme
+and the nanomaterial. Noncovalent interactions were specifi-
+cally chosen to allow enzymes to naturally adopt the most
+favorable binding orientation based on the properties of the
+ligands.
+To satisfy these requirements, we selected peptide-function-
+alized gold nanoparticles (PGNPs) as a programmable
+nanomaterial platform (Figure 1). Gold NPs (GNPs) were
+chosen for their ease of synthesis and functionalization with
+thiolated ligands. Peptides were selected as ligands because
+their amino acid sequences can be systematically varied to
+adjust properties, such as charge, length, and hydrophobicity,
+allowing us to study their effects on enzyme activity. In this
+study, 24 different peptide sequences were modified onto
+GNPs (Table S1), and their impact on the peroxidase activity
+of Cyt C was investigated.
+Our findings show that these PGNPs significantly enhance
+the peroxidase activity of Cyt C by 10.4-fold. Remarkably, they
+also enhance the activity of other heme-containing proteins,
+including lactoperoxidase (LP) by 13.4-fold, hemoglobin (Hb)
+by 3.9-fold, and catalase (Cat) by 4.2-fold. Notably, this is the
+first report of nanomaterials enhancing the activity of LP, Hb,
+and Cat.
+2. RESULTS AND DISCUSSION
+2.1. Design Strategy for Engineering the Surfaces of
+PGNPs. To achieve our goal of generating nanomaterials that
+mimic the key interactions between Cyt C and cardiolipins, we
+focused on designing short amino acid sequences that replicate
+both electrostatic and hydrophobic interactions. We started
+with the sequence FEGC, which includes a hydrophobic amino
+acid phenylalanine (F) and a negatively charged amino acid,
+glutamic acid (E) to simulate the anionic properties of
+cardiolipins. Cysteine (C) was included to facilitate attachment
+to gold surfaces, and glycine (G) was added as a spacer. From
+this initial sequence, we created additional sequences
+consisting of 3 to 15 amino acids by modifying the F and E
+groups. These variations were designed to explore differences
+in the type, number, and position of charges, as well as
+sequence length and branching patterns (Figure S1). In some
+cases, we substituted glycine (G) with fluorescent amino acid
+tryptophan (W) to assist in characterizing peptide loading.
+2.2. Synthesis and Characterization of PGNPs. GNPs
+were synthesized via the reduction of chloroauric acid using
+sodium borohydride (Figure S2) following previously reported
+procedures.40 Peptides were synthesized via solid-phase
+chemistry using 9-fluorenylmethyloxycarbonyl (Fmoc)-pro-
+tected amino acids. A cysteine group was incorporated in all
+of the peptides to enable functionalization onto the GNP
+surfaces through gold−thiol interactions. Subsequently,
+PGNPs were prepared using a freezing-directed approach to
+obtain a high density of ligand functionalization on the GNP
+Figure 2. (A) UV−vis spectra for GNPs and PGNPs showing a minimal change in the absorbance peak at 510 nm after addition of the
+peptides. The insets show photographs of the GNPs and the PGNPs. (B) ζ-Potential values of GNPs and PGNPs. (C) TEM images and
+corresponding size distribution histograms for GNPs (top) and PGNPs (bottom).
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.4c16059
+ACS Nano 2025, 19, 7117−7128
+7119
+
+surfaces (Figure S3).41 For this, thiolated peptides were added
+to the as-synthesized GNPs. The resultant solution was
+sonicated, frozen under liquid nitrogen for 30 s, and
+subsequently thawed.
+GNPs and PGNPs were characterized by UV−vis spectros-
+copy, transmission electron microscopy (TEM), and electro-
+phoretic light scattering (ELS). GNPs have a characteristic
+plasmon resonance peak at 510 nm (Figure 2A). PGNPs
+comprising negatively charged peptides show similar optical
+properties (Figures 2A and S4), suggesting that the nano-
+particles do not aggregate postfunctionalization. The ζ-
+potential of the GNPs changes from −25.4 ± 3.2 to −37.2
+± 1.5 mV upon conjugation to the negatively charged peptides
+(Figure 2B). The fact that the nanoparticles do not aggregate
+post peptide functionalization is further corroborated via TEM
+images which show individual particles at an average diameter
+of 4.8 ± 0.8 and 4.5 ± 0.7 nm for GNPs and PGNPs,
+respectively (Figures 2C, S5, and S6).
+2.3. Factors Influencing Peroxidase Activity. To
+investigate how PGNPs affect Cyt C function, we examined
+the peroxidase activity of Cyt C in the presence and absence of
+these materials. Cyt C results in the breakdown of H2O2 which
+can then oxidize 3,3′,5,5′-tetramethylbenzidine (TMB) to
+form a blue product (Figure 3A). The formation of oxidized
+TMB can be monitored spectroscopically at 652 nm.
+Figure 3. (A) Scheme for the peroxidase-like activity of Cyt C and its effect on the TMB substrate. The blue compound is monitored
+spectroscopically at 652 nm in the activity assays. (B) 3D PDB structure of Cyt C (PDB ID: 1HRC) showing the asymmetric distribution of
+charge on its surface. (C) Absorbance generated from the interaction between TMB and Cyt C in the absence (blue) and presence (red) of
+PGNPs. (D) Effect of PGNPs with different types of overall charges on Cyt C activity; red: negative; yellow: positive. (E) Effect of the
+number of negative charges on Cyt C activity; light to dark transition indicates an increase in the number of negative charges on the
+peptides. (F) Effect of charge orientation on Cyt C activity; violet: negative charge oriented inside; red: negative charge oriented outside.
+(G) Effect of peptide length on Cyt C activity; dark to light transition indicates increase in the length of the peptide. (H) Effect of branching
+peptide structures on Cyt C activity; light: linear; dark: branched. Blue bars represent free Cyt C without PGNPs in (D−H). The
+enhancement factor is defined as the ratio of the absorbance observed in a TMB assay (at 652 nm) with Cyt C and a specific PGNP to that
+observed with Cyt C alone at the same time point (5 min). * indicates statistical significance at the 95% confidence level, while ** indicates
+statistical significance at the 90% confidence level, as determined by a one-tailed Student’s t test.
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.4c16059
+ACS Nano 2025, 19, 7117−7128
+7120
+
+A mixture of PGNPs (10 nM) and Cyt C (125 nM) was
+prepared in acetate buffer (pH 5; Figure S7). Absorbance was
+measured over time after the addition of 2 mM H2O2 and 1.5
+mM TMB. Cyt C contains an asymmetric distribution of
+charged residues on its surface (Figure 3B). At pH 5, the
+surface amino groups (e.g., lysines) are expected to be
+protonated. Therefore, we hypothesized that PGNPs with
+negatively charged peptides will interact with these positively
+charged residues. Conversely, PGNPs with positively charged
+peptides are expected to preferentially interact with negatively
+charged sites on the protein (e.g., glutamic acid, which carries a
+net negative charge at pH 5) (Figure 3B).
+We observed that PGNPs engineered to have negative
+surface charges can enhance the activity of Cyt C by up to
+10.4-fold (Figure 3C). This enhancement is due to the overall
+PGNP architecture as solutions containing identical concen-
+trations of peptides do not show any enhancement, and bare
+GNPs aggregate under the solution conditions used for
+monitoring enzyme activity (Figure S8). Importantly, PGNPs
+did not show any peroxidase activity on their own under the
+conditions tested (Figure S9).
+To further understand this effect, we next screened several
+peptides with different charges, branches, and lengths (Figure
+S10). Our results indicate that the type, number, and spatial
+distribution of charges on the peptides are crucial factors
+influencing the peroxidase activity of Cyt C. While PGNPs
+with negatively charged peptides enhance Cyt C activity (e.g.,
+FEEGC), those with positively charged peptides (e.g.,
+FHHGC) decrease it (Figure 3D). This differential effect is
+likely due to the orientation of Cyt C binding to PGNPs,
+where asymmetric charge distribution on the Cyt C surface
+may lead to binding with PGNP surfaces along different
+orientations (Figure 3B). Such binding variations can either
+expose or occlude Cyt C’s active site, thereby increasing or
+decreasing its enzymatic activity. Changing the identity of the
+amino acid residues while keeping the charge constant (e.g.,
+FEEGC vs FDDGC) does not significantly alter the magnitude
+of the enhancement seen. The number of negative charges also
+plays an important role in enhancing the peroxidase activity of
+Cyt C, with peptides containing a greater number of negative
+charges (e.g., GGGC vs FEGC vs EEGC) leading to higher
+enhancement (Figure 3E). Additionally, the position of the
+charged residues plays a role; PGNPs containing peptides with
+the same overall charge, having negative residues positioned on
+the outer surface facilitate slightly higher enhancement of Cyt
+C activity compared to those with negative charges oriented
+toward the interior of the nanoparticle (e.g., FEGCGEF vs
+EFGCGFE; Figure 3F).
+It is important to consider that the apparent enzymatic
+activity may vary based on the charge of the substrate used.
+Previous studies, such as those by Rotello et al., have
+demonstrated that α-chymotrypsin immobilized onto GNPs
+functionalized with negatively charged ligands exhibits lower
+activity in the presence of negatively charged substrates
+compared to positively charged substrates.21 These results
+are attributed to preferential accumulation or depletion of
+charged substrates near the charged nanoparticle-enzyme
+interface, owing to attractive or repulsive Coulombic
+interactions. To determine whether similar effects occur in
+our system, we tested two substrates with different charges:
+TMB, which is positively charged, and 2,2′-azinobis (3-
+ethylbenzothiazoline-6-sulfonic acid) (ABTS), which is neg-
+atively charged. Our results indicate that substrate charge
+significantly influences the enhancement of Cyt C enzymatic
+activity, with an enhancement factor of 10.4-fold for TMB and
+4.1-fold for ABTS (Figure S11). This supports the notion that
+negatively charged PGNPs facilitate the local accumulation of
+TMB at the nanoparticle-enzyme interface. However, the
+observed enhancement with ABTS suggests that the substrate
+charge alone does not fully account for the increased activity.
+We therefore posited that the unique microenvironment of the
+PGNPs may alter the enzyme structure, contributing to
+enhanced activity. This hypothesis is supported by circular
+dichroism experiments (vide infra).
+To further reinforce the fact that electrostatic interactions
+play a key role in our system, we conducted an activity assay
+using PGNPs with varying ratios of negatively and positively
+charged peptides (ranging from 100 to 20% negative charge).
+Our results indicate that increasing the proportion of positively
+charged ligands on the PGNP surfaces leads to a gradual
+decrease in enzymatic activity (Figure S12). This reduction is
+attributed to the decreased local concentration of electrostatic
+interactions between the protein and the nanoparticles.
+Additionally, we performed an activity assay in the presence
+of a positively charged small molecule, tetrabutylammonium
+bromide (TBA) at a concentration of 2.0 mM. We
+hypothesized that TBA would screen the negative charges on
+the PGNPs, lowering their ability to bind to the enzyme. As
+expected, the activity observed was lower in the presence of
+TBA (Figure S13). Control experiments confirmed that TBA
+alone does not alter the Cyt C activity. Similar results were
+obtained when 50−200 mM NaCl was used to screen the
+charges on the PGNPs (Figure S14). These experiments
+collectively show that electrostatic interactions play a dominant
+role in mediating the interactions between Cyt C and surface-
+engineered PGNPs.
+Another key parameter in determining the magnitude of the
+enhancement is the length of the peptide. Longer peptides with
+identical overall charges lead to smaller enhancement
+compared with their shorter counterparts (Figure 3G), likely
+due to a decrease in charge density.
+An interesting observation we made was that the shape of
+the ligand (linear vs branched) impacts the enzymatic activity
+(Figure 3H). Some branched ligands exhibit more than twice
+the activity of their linear counterparts (e.g., PGNPs with
+FEWC vs FEWCGEF). Even when the total charge per peptide
+is identical, branched ligands still show slightly higher activity
+(FEEWC vs FEWCGEF). By examining the peptide loadings
+(∼112, ∼81, and ∼68 peptides per GNP for FEWC, FEEWC,
+and FEWCGEF, respectively), we note that these differences
+are not merely due to overall NP charge; therefore, the
+branched structure does contribute to the enhancement. To
+understand these effects further, we experimentally investigated
+the binding affinity between these PGNPs and Cyt C and also
+performed molecular dynamics simulations (vide infra).
+Among the 24 different PGNPs tested in this study, PGNPs
+functionalized with the peptide EEGCGEE were found to yield
+maximum enhancement in the peroxidase activity of Cyt C
+(10.4-fold, Video S1). By fitting the Michaelis−Menten model
+to the enzyme kinetics data (Figure S15), we found that the
+kcat and KM of free Cyt C are 8.4 min−1 and 1.4 mM,
+respectively, whereas those of PGNP-bound Cyt C are 99
+min−1 and 11 mM, respectively. These results show an ∼12-
+fold increase in turnover number and an ∼8-fold decrease in
+substrate binding affinity when the enzymes are on nano-
+particle surfaces. The decrease in substrate binding affinity is
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.4c16059
+ACS Nano 2025, 19, 7117−7128
+7121
+
+consistent with previous reports and is likely due to the
+charged nanoparticle surface restricting the access of the
+substrate to the active site.19,24
+2.4. Investigating Interactions between PGNPs and
+Cyt C. We first performed a qualitative assessment of the
+binding between Cyt C and PGNPs via electrophoretic
+mobility shift assays (EMSA). EMSAs show that bare GNPs
+aggregate in the well and do not appreciably migrate through a
+0.7% agarose gel (Figures S16−S19). In contrast, PGNPs
+migrate through the gel to a larger extent due to their greater
+negative charge. The addition of Cyt C retards the migration
+(Figure 4A). These results are corroborated with ζ-potential
+measurements which show that the surface charge of PGNPs
+changes from −37.2 ± 1.5 to +0.6 ± 0.3 mV upon the addition
+of Cyt C in a concentration-dependent manner (Figure 4B).
+EMSA experiments indicate that PGNPs with branched
+peptides have a higher binding affinity to Cyt C compared
+to their linear counterparts (Figure S16), which can potentially
+explain the better performance of branched peptides. The
+binding strength between Cyt C and PGNPs functionalized
+with the best-performing peptide, EEGCGEE, was quantita-
+tively determined by using Stern−Volmer analysis (Figure
+S20). The dissociation constant (Kd) was found to be 13.6 nM.
+Following our binding experiments, we employed circular
+dichroism (CD) spectroscopy to investigate the structural
+changes in Cyt C upon interaction with the PGNPs (Figure
+4C). All of the controls including peptides, bare GNPs, and
+PGNPs show flat CD signals, indicating the absence of
+secondary structures in these components alone (Figure S21).
+The native Cyt C shows two minima with peaks around 208
+and 222 nm, indicating its α-helical structure that matches well
+with previously established reports.42,43 Upon interaction with
+PGNPs, we observed a change in the intensity and a slight shift
+in these peaks. This alteration suggests a decrease in the
+proportion of α-helices in Cyt C,44 possibly due to its
+interaction with the PGNPs. The CD data was further
+processed using the BeStSel algorithm to quantify the
+distribution of secondary structures in both cases.45 Indeed,
+our results (Figure S22) confirm a reduction in α-helices in
+Cyt C upon interaction with PGNPs, accompanied by an
+increase in the antiparallel β-sheet content. According to
+previously reported studies, this elevation in β-sheet structure
+is associated with conformational changes that increase the
+exposure of the heme region in Cyt C and enhance its
+peroxidase activity.37,46
+2.5. Computational Characterization of Cyt C
+Adsorption on PGNPs. While our experimental findings
+demonstrated varying degrees of enzymatic enhancement
+across different PGNPs, the molecular basis of these
+differences remained uncertain. We hypothesized that this
+activation may arise from distinct mechanisms: (1) strong
+adsorption of Cyt C on the peptide-functionalized surfaces,
+with varying interaction profiles that influence the protein’s
+orientation; (2) intermediate interactions at the peptide−
+protein interface that lead to distinct orientational preferences;
+or (3) subtle, nonadsorptive effects, such as long-range
+electrostatic interactions, that modulate Cyt C behavior
+without direct binding.
+To investigate these hypotheses, we conducted molecular
+dynamics (MD) simulations, focusing on the following aspects:
+(1) the propensity and nature of Cyt C adsorption on peptide-
+functionalized surfaces, (2) the molecular interactions
+governing the protein−surface interface when adsorption
+occurs, and (3) the resulting conformational preferences of
+Cyt C on different coatings. Through these simulations, we
+aimed to provide atomic-level insights into how peptide
+coatings potentially modulate Cyt C activity through varied
+molecular mechanisms.
+We selected three peptidesFEEGC, FEGCGEF, and
+EEGCGEEfrom the PGNPs designed in this study (Table
+S1). These peptides vary in terms of branching (i.e., the
+position of cysteine residues), length, polarity, and charge,
+representing the diversity of our peptide design strategy.
+Specifically, FEEGC is a linear peptide with two negative
+charges from its glutamic acid residues; FEGCGEF is longer
+and differs in branching; and EEGCGEE has the highest net
+negative charge among the selected peptides. As discussed
+earlier, these structural variations resulted in differing perform-
+ances of Cyt C activity in functionalizing gold nanoparticle
+experimental data. EEGCGEE proved most effective, followed
+by FEGCGEF and FEEGC, with the latter two showing
+comparable performance (Figure S10).
+To eliminate curvature effects on peptide orientation and
+packing, we simplified the geometry by modeling a flat gold
+surface, coating it with a capping density of 1 peptide/nm2 via
+harmonic distance restraints between the gold and sulfur atoms
+Figure 4. (A) Agarose gel showing the migration of PGNPs functionalized with the peptide EEGCGEE in the presence and absence of Cyt C.
+The gold box shows the aggregation of bare GNPs, the red box shows the band for PGNPs, and the blue box shows the point at which
+PGNPs are saturated with Cyt C and, therefore, do not migrate through the gel. Lane 1: Bare GNPs (100 nM); Lane 2: PGNPs (100 nM);
+Lane 3: PGNPs + 0.02 μM Cyt C; Lane 4: PGNPs + 0.04 μM Cyt C; Lane 5: PGNPs + 0.08 μM Cyt C; Lane 6: PGNPs + 0.16 μM Cyt C;
+Lane 7: PGNPs + 0.31 μM Cyt C; Lane 8: PGNPs + 0.63 μM Cyt C; Lane 9: PGNPs + 1.25 μM Cyt C; Lane 10: PGNPs + 2.5 μM Cyt C. (B)
+ζ-Potential values of GNPs, PGNPs, and PGNPs with increasing concentrations of Cyt C added to them. (C) CD spectra for Cyt C with and
+without PGNPs.
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.4c16059
+ACS Nano 2025, 19, 7117−7128
+7122
+
+of cysteines. We placed this coated surface at the bottom of the
+simulation box while positioning Cyt C in the middle, with
+additional padding in the z-direction to allow it to remain in
+bulk solution or adsorb onto the peptide-coated Au surface
+(Figure S23). We conducted triplicate simulations lasting 400
+ns for each construct to increase the robustness and reliability
+of the observed trends.
+First, we investigated the adsorption behavior of Cyt C on
+GNP surfaces coated with EEGCGEE, FEGCGEF, and
+FEEGC peptides. To assess adsorption strength and proximity,
+we analyzed the center of mass (CoM) distance between Cyt
+C and a reference Au atom in the z-direction (Figures 5A and
+S24). Our results revealed distinct adsorption profiles across
+the peptides. Cyt C demonstrated strong association with
+EEGCGEE-coated surfaces, whereas it maintained significantly
+greater distances from surfaces coated with FEGCGEF and
+FEEGC. Particularly for FEEGC-coated surfaces, Cyt C
+predominantly remained in the bulk solution, indicating
+minimal surface interaction. This variation suggests that
+peptide composition significantly influences Cyt C adsorption
+behavior, with EEGCGEE fostering stable binding while
+FEGCGEF and FEEGC allow limited surface association.
+These results are in agreement with experimental EMSA data
+(Figure S16).
+To further quantify Cyt C’s interactions with each
+functionalized surface, we analyzed the contacts formed
+between any heavy atoms of Cyt C and each peptide. As
+shown in Figure 5B, EEGCGEE consistently formed contacts
+with Cyt C across all simulation trajectories, suggesting that
+once adsorbed Cyt C is effectively retained by the EEGCGEE-
+functionalized surface. In contrast, interactions with FEGC-
+GEF and FEEGC peptides were less frequent and more
+transient, consistent with their weaker adsorption profiles,
+suggesting that these peptides may not provide sufficient
+anchoring for Cyt C, leading to a tendency for the protein to
+remain in the bulk solution (Figure S25).
+Building on our observation of distinct adsorption
+propensities and interaction dynamics, we further investigated
+how the amino acid sequence of the peptides influenced the
+orientation of Cyt C upon adsorption. To explore this, we
+constructed a two-dimensional map of the joint probability
+distribution of order parameters defining key tilt angles
+(Figures 5C, S25, and S26). Specifically, we analyzed two
+vectors: one defined by K9 and D51, capturing the relative
+orientation of the N-terminal α helix with respect to the 50′s
+helix, and another defined by K23 and K80, capturing the
+relative orientation of Ω-loop B with respect to Ω-loop D,
+which encapsulate the heme moiety. These tilt angles
+effectively represent the relative orientation of the two
+principal axes of the Cyt C surface, allowing us to characterize
+how the enzyme positions itself in the presence of PGNPs
+(Figure S27).
+Our analysis showed a distinct orientational preference for
+Cyt C on EEGCGEE-coated surfaces. On these surfaces, Cyt C
+exhibited a clear adsorption orientation, with the N- and C-
+terminal helices positioned toward the surface, while the N-
+terminal region of Ω-loop B was anchored, leaving the
+remaining portion of Ω-loop B and Ω-loop D exposed to the
+bulk solution (Figure 5D). This orientation preferentially
+exposes the flexible disordered loops of Cyt C, potentially
+contributing to the observed enhanced enzymatic efficiency.
+Figure 5. Conformational dynamics and interactions of Cyt C with PGNPs. (A) Adsorption propensity of Cyt C to PGNPs coated with
+EEGCGEE, FEGCGEF, or FEEGC peptides, quantified by the z-component of the center of mass (CoM) distance between Cyt C and the
+GNP surface. Lower distances indicate the closer proximity of Cyt C to the PGNP, while higher distances represent Cyt C moving away from
+the surface. Results show distinct favorable adsorption propensity to the EEGCGEE-PGNPs. (B) Contact frequency between Cyt C and
+surface peptides during triplicate 400 ns simulations for EEGCGEE-PGNPs. Contacts are defined between any heavy atoms of Cyt C and
+corresponding peptides within 0.6 nm. (C) Two-dimensional probability distribution of Cyt C conformations on EEGCGEE-PGNPs,
+represented by two tilt angles. The single highly populated basin indicates a preferred orientation of adsorbed Cyt C. (D) Left:
+Representative structures of the favored Cyt C orientation on EEGCGEE-PGNPs. Right: Residue-specific interaction propensities were
+averaged across triplicate runs. Error bars represent the standard error of the mean. Lysine residues show high interaction propensities,
+suggesting electrostatic driving forces in the adsorption process. Results elucidate molecular mechanisms of Cyt C adsorption on PGNPs,
+highlighting EEGCGEE as the most effective peptide coating and the role of surface chemistry in protein-nanoparticle interactions.
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.4c16059
+ACS Nano 2025, 19, 7117−7128
+7123
+
+Further contact analysis revealed that interactions between
+Cyt C and the EEGCGEE peptides were predominantly
+electrostatically driven. Key lysine (K) residues, including K8,
+K9, K23, K26, and K101, played crucial roles in these
+interactions, regardless of whether they were located in folded
+α helices or disordered regions (Figure 5D). This electrostatic-
+driven binding mechanism aligns with the higher negative
+charge of the EEGCGEE peptide compared with FEEGC and
+FEGCGEF.
+In contrast, on FEEGC and FEGCGEF-coated surfaces with
+lower adsorption propensities, Cyt C displayed a more
+dispersed orientation distribution, spending the majority of
+time in bulk solution and showing no specific orientational
+preference with respect to the z-direction (Figure S27). These
+weakly interacting cases thus served as controls, highlighting
+that the strong adsorption to EEGCGEE not only anchors Cyt
+C to the surface but also directs its orientation.
+In conclusion, our computational characterization of Cyt C
+adsorption on PGNPs provided valuable atomic-level insights
+into the interactions governing the enhanced activation
+observed experimentally. Surfaces coated with the EEGCGEE
+peptide, which demonstrated superior performance in
+enhancing the Cyt C activity, also exhibited the strongest
+and most consistent interactions with Cyt C in our simulations.
+This peptide facilitated stable adsorption and induced the
+specific orientation of Cyt C, establishing a foundation for
+future peptide design aimed at optimizing protein-nanoparticle
+interactions for enhanced functionality.
+2.6. Versatility of the PGNP Platform for Modulating
+Enzyme Activity. To assess the versatility of the PGNP
+platform, we investigated its effects on various heme-
+containing proteins capable of showing peroxidase activities.
+Specifically, we examined the peroxidase activities of LP, Hb,
+and Cat in the presence of PGNPs. These proteins were
+selected as they are commonly available, relatively low cost,
+and also have different sizes, biological functions, and
+isoelectric points (Figure 1C). All three proteins possess an
+overall positive charge at pH 5, the conditions under which the
+assays were performed.
+Our findings show that the presence of PGNPs function-
+alized with the peptide EEGCGEE enhances the catalytic
+activity of all three proteins, albeit to different extents (Figure
+6). EMSAs confirm that all proteins bind to PGNPs (Figures
+S17−S19). This is the first demonstration that surface-
+engineered nanoparticles can enhance the peroxidase activity
+of these proteins. These results indicate the broad potential of
+the PGNP platform in enhancing enzyme activity in a tunable
+manner, highlighting its versatility as a tool for modulating
+biochemical transformations.
+3. CONCLUSIONS
+This study demonstrates the potential of peptide-function-
+alized gold nanoparticles (PGNPs) as a powerful and versatile
+platform for enhancing enzyme activity, particularly for heme-
+containing proteins such as Cyt C, LP, Hb, and Cat. Through
+systematic surface engineering of PGNPs, we have shown that
+the activity of these enzymes can be significantly boosted by
+over 10-fold. Our findings reveal that specific peptide
+sequences on the nanoparticle surface can control enzyme
+activity through electrostatic interactions and alterations in
+enzyme conformation. The molecular-level insights provided in
+this study offer a deeper understanding of these interactions,
+particularly for Cyt C. The preferential exposure of the heme-
+encapsulating loops to the bulk solution when Cyt C is bound
+to functionalized surfaces could facilitate substrate access and
+product release, potentially explaining the observed increase in
+the enzymatic efficiency. These molecular-level findings not
+only corroborate the experimental results but also provide a
+rationale for the design principles of peptide-functionalized
+nanoparticles for optimal Cyt C binding and activation.
+Importantly, the PGNPs not only enhance activity but also
+do so in a tunable manner, depending on peptide charge,
+length, and branching. This tunability offers a new dimension
+in enzyme modulation, potentially providing a more accessible
+and flexible alternative to traditional protein engineering
+approaches.
+Moreover, this work underscores the crucial role of
+nanoparticle surface properties in shaping enzyme behavior
+at the nanoscale interface. The ability to modify the local
+microenvironment of enzymes with precisely engineered
+ligands opens new possibilities for the design of highly efficient
+biocatalysts. The versatility of this platform, demonstrated
+across multiple enzymes, suggests that PGNPs could be
+applied to enhance other important classes of enzymes,
+extending the impact of this approach into broader
+biotechnological and industrial applications.
+Additionally, this study has important implications for the
+field of protein coronas, as it shows that nanoparticle
+interactions can convert innocuous proteins, such as Hb, into
+species capable of causing oxidative damage. This finding
+emphasizes the need to carefully consider the potential risks
+associated with protein-nanoparticle interactions, particularly
+in therapeutic or diagnostic settings, where unintended
+activation of proteins could lead to adverse effects. Overall,
+this research paves the way for a new strategy in enzyme
+enhancement, where surface-engineered nanomaterials offer an
+innovative toolset for optimizing enzymatic functions while
+also contributing to our understanding of nanoparticle−
+protein interactions.
+Figure 6. Relative enhancement of (A) LP, (B) Hb, and (C) Cat in the presence (red lines) and absence (blue lines) of PGNPs.
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.4c16059
+ACS Nano 2025, 19, 7117−7128
+7124
+
+4. MATERIALS AND METHODS
+4.1. Synthesis, Purification, and Characterization of
+Peptides. 4.1.1. Synthesis and Purification. All of the peptides
+were synthesized in house using standard Fmoc-based chemistry.47 All
+of the necessary reagents and amino acids were purchased from
+Sigma-Aldrich. The synthesis was conducted on a 0.1 mmol scale
+using rink amide AM resin 100−200 mesh (Sigma-Aldrich, Cat. No.
+8551300005) as the solid support. For the addition of amino acids, at
+first, the resin was swollen in dimethylformamide (DMF) for 15 min,
+and then the DMF was washed out. Deprotection was performed
+using 20% piperidine in DMF for two cycles (5 min for the first cycle,
+15 min for the second cycle), followed by thorough washing with
+DMF (4−5 times) until the piperidine smell disappeared. Fmoc-
+amino acids (2.5 equiv) were then added to the activated resin, along
+with standard coupling reagents (2.5 equiv of HOBt (Sigma-Aldrich,
+Cat No. 157260-25G), 2.5 equiv of DIC (Sigma-Aldrich Cat No.
+D125407-5G)) in 3 mL of DMF. The reaction was run for 2 h at RT.
+Subsequently, Fmoc deprotection was performed as described earlier.
+The N-terminus was protected by acetylation using a 3 mL DCM
+solution containing 40 μL of acetic anhydride and 40 μL N, N,-
+diisopropylethylamine. Finally, the desired peptide sequences were
+cleaved from the resin surface using a cocktail solution of
+trifluoroacetic acid (TFA) (Sigma-Aldrich, Cat. No. 302031-100
+ML), H2O, and triisopropylsilane (TCI, Cat. No. T1533) in a ratio of
+95:2.5:2.5 (v/v). The mixture was incubated for 4 h with shaking at
+RT. The peptide was precipitated with ice-cold diethyl ether (Sigma-
+Aldrich, Cat No. 296082-1L) and collected by centrifugation at
+15,000 rpm for 2 min. This process was repeated 5 times to ensure
+proper collection of the peptide. The peptide was then lyophilized
+(Labconco, Fisher) and stored dry at 4 °C until further use.
+4.1.2. MALDI Characterization. MALDI-MS characterization of
+peptides was performed using MALDI-TOF MS-Autoflex maX,
+Bruker. 2′,6′-Dihydroxyacetophenone (DHAP) (Sigma-Aldrich, Cat.
+No. 37468-1G-F > 99.5% purity) was used as the matrix. The DHAP
+matrix was prepared as follows: 25 mg of DHAP was dissolved in 333
+μL of methanol (Sigma-Aldrich, Cat No. A452-4), and 111 μL of
+saturated ammonium citrate (Sigma-Aldrich, Cat No. 247561- 100G)
+was added dropwise to the solution (note: do not shake). On a
+MALDI plate, the sample and the matrix were added at a 1:1 ratio,
+resulting in a total volume of 2 μL. This sample was air-dried before
+being placed in the mass spectrometer.
+4.2. Synthesis of PGNPs. First, GNPs were synthesized via
+reduction of chloroauric acid with NaBH4 using established
+procedures.40 30 mL of Milli-Q water was taken in a 50 mL tube
+and 42 μL of HAuCl4 (Sigma-Aldrich, Cat. No. 520918-1G) from a
+100 mM stock in Milli-Q water was added to it. Under constant
+stirring, 420 μL of NaBH4 (Sigma-Aldrich, Cat. No. 452882-5G) was
+added from a 100 mM stock in Milli-Q water as well (10-fold excess
+wrt HAuCl4). The mixture started changing color and was allowed to
+stir for 5 min. It was then kept in the dark for 30 min and used in
+further experiments.
+For PGNP synthesis, to 1 mL of the above GNP solution was
+added 500-fold excess peptide (1 μL from 10 mM stock in DMSO).
+The mixture was sonicated for 30 s and placed in liquid nitrogen for
+30 s for freezing. It was then thawed at 37 °C for 2 min. Activity
+assays were carried out with this solution without further purification,
+unless otherwise mentioned.
+For PGNPs containing both negatively and positively charged
+peptides at varying ratios (100:0, 80:20, 60:40, 40:60, and 20:80),
+appropriate volumes of both peptides were added to the GNPs before
+freeze−thaw. The negatively and positively charged peptides chosen
+for this study were the peptide sequences FEEGC and FHHGC,
+respectively.
+PGNPs were characterized by using UV−vis spectroscopy,
+transmission electron microscopy (TEM), and dynamic light
+scattering (DLS) as described below.
+4.3. UV−Vis Characterization of PGNPs. GNPs and PGNPs
+were characterized by UV−vis spectroscopy. As-synthesized nano-
+particles (both GNPs and PGNPs) were placed in a 1 cm path length
+cuvette, and the absorbance was monitored between 300 and 800 nm
+using a Cary-60 UV−vis (Agilent) instrument. GNPs showed a
+characteristic plasmonic peak at 510 nm. PGNPs containing
+negatively charged peptides retained the peak at ∼510 nm, but
+those with positively charged peptides showed a prominent red shift
+in their spectra.
+4.4. Dynamic Light Scattering (DLS) and ζ-Potential
+Measurements. DLS experiments were conducted using a Malvern
+Zetasizer Nano instrument. Experiments were performed using 20 nM
+GNPs and EEGCGEE-PGNPs. ζ-Potential was also measured for
+GNP and PGNPs at 20 nM concentrations. To PGNPs, Cyt C was
+added at final concentrations ranging from 125 nM to 2 μM. Each
+experiment was repeated three times, and the average values are
+reported.
+4.5. Transmission Electron Microscopy (TEM). The surface
+morphology of the nanoparticles was studied using a (FEI Tecnai
+Transmission Electron Microscope (TEM)) at an accelerating voltage
+of 300 kV. The samples for TEM were obtained by plating 5 μL of
+GNPs or PGNPs onto UC A on Lacey Carbon 400 mesh Cu TEM
+grids (TED PELLA, Inc., Cat No. 080623 01824) and air drying it.
+4.6. Calculation of Peptide Loading onto GNPs. Peptide
+loading studies were carried out using 4 different tryptophan-labeled
+peptides (FEWC, FEEWC, FEGCWEF, EEGCWEE). To calculate
+the amount of peptide loaded onto the surface of the GNPs, the as-
+synthesized PGNPs were centrifuged (Eppendorf, Centrifuge 5425 R
+instrument) at 15,000 rpm using a 100 kDa spin Amicon filter for 5
+min. As a control, peptide solutions without GNPs, prepared at the
+same concentration in water, were also centrifuged under identical
+conditions. Following centrifugation, the filtrate was analyzed by
+measuring the UV−vis absorbance at 280 nm on a Cary-60 UV−vis
+(Agilent) instrument to detect tryptophan. Tryptophan concentration
+in the filtrate was calculated using Beer’s law with an extinction
+coefficient of 5600 M−1 cm−1. To account for nonspecific peptide
+adsorption to the filter membrane, absorbance from the peptide-only
+control was subtracted from the absorbance of the PGNP filtrate.
+4.7. Activity Assays. 4.7.1. TMB Assay. The enzymatic activities
+of Cyt C (Sigma-Aldrich, Cat No. C2506-50 mg), LP (Sigma-Aldrich,
+Cat No. L2005-1G), Hb (Sigma-Aldrich, Cat No. H7379-1G), and
+Cat (Sigma-Aldrich, Cat No. C9322-1G) were evaluated in the
+presence and absence of PGNPs under the following conditions:
+experiments were conducted in an acetate buffer solution (1X; 0.1 M)
+with a pH of 5, at 25 °C. In the assay, we individually added 125 nM
+Cyt C, 2 nM LP, 50 nM Hb, or 125 nM Cat, along with 10 nM
+functionalized PGNPs, to the acetate buffer. The enzyme activity was
+monitored by observing the oxidation of 3,3′,5,5′-tetramethylbenzi-
+dine (TMB) (Thermo Scientific, Cat No. 229990010) at a
+wavelength of 652 nm in the presence of hydrogen peroxide
+(H2O2) (Sigma-Aldrich, Cat No. 18304). TMB concentration was
+fixed at 1.5 mM for all of the assays. H2O2 was added at final
+concentrations of 2 mM for the Cyt C and Cat assays and 50 μM for
+the LP and Hb assays. All of the assays were performed using a plate
+reader (Agilent, BioTek Cytation 5 Imaging Multimode Reader), with
+absorbance measurements taken over a 30 min period.
+In charge screening experiments involving TBA, a final
+concentration of 2 mM TBA was maintained in the assay. In
+experiments involving NaCl, a final concentration of 50, 100, 150, or
+200 mM was maintained in the assay. In all cases, control experiments
+were performed to ensure that the addition of TBA or NaCl does not
+impact the peroxidase activity of Cyt C by itself.
+4.7.2. ABTS Assay. The enzymatic activity of Cyt C in the presence
+and absence of PGNPs was assessed under the following conditions:
+the experiments were conducted in an acetate buffer solution (1X; 0.1
+M) with a pH of 5, at a temperature of 25 °C. In the assay, we
+combined 125 nM Cyt C with 10 nM functionalized PGNPs in the
+acetate buffer. To monitor the enzyme’s activity, we observed the
+oxidation of 2,2′-azinobis (3-ethylbenzothiazoline-6-sulfonic acid)
+diammonium salt (ABTS) (Sigma-Aldrich, Cat No. 194430) at a
+wavelength of 415 nm in the presence of H2O2. ABTS and H2O2
+concentrations were fixed at 1.5 and 2 mM for the assay. The assays
+were carried out using a plate reader (Agilent, BioTek Cytation 5
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.4c16059
+ACS Nano 2025, 19, 7117−7128
+7125
+
+Imaging Multimode Reader), and absorbance measurements were
+taken over a time span of 30 min.
+4.8. Michaelis−Menten Kinetics Studies. The Michaelis−
+Menten kinetic model was used to monitor how the reaction rate
+changes for the peroxidase activity of Cyt C in the presence and
+absence of PGNPs. For this study, PGNPs functionalized with the
+peptide EEGCGEE were used. The enzyme concentration (Cyt C)
+was held constant at 125 nM, and the TMB concentration was fixed at
+1.5 mM, while the concentration of H2O2 was varied from 0 to 4 mM.
+These experiments were performed in acetate buffer (1X, 0.1 M) at
+pH 5 and 25 °C. The rate of TMB oxidation was determined by
+continuously monitoring the absorbance at 652 nm, indicative of the
+formation of the oxidized product, at 1 min intervals. The readings
+were carried out on a plate reader (Agilent, BioTek Cytation 5
+Imaging Multimode Reader). Each substrate concentration was tested
+three times with Cyt C, and similar assays were conducted with Cyt C
+in the presence of PGNPs (10 nM) under the same conditions. The
+reaction rates were obtained by analyzing the initial slopes of the
+activity curves corresponding to different substrate concentrations.
+Thereafter, KM and kcat values were determined from Lineweaver−
+Burk plots (see the SI for more details).
+4.9. Investigating Binding between PGNPs and Proteins.
+The binding of PGNPs to Cyt C, LP, Hb, and Cat was first
+investigated qualitatively using EMSAs. The samples were run on a
+0.7% agarose gel using 1X TAE buffer (40 mM Tris, 20 mM Acetate,
+and 1 mM EDTA). To prepare the 0.7% agarose gel, 0.21 g of agarose
+(Thermo Scientific, Cat. No. R049) was weighed and dissolved in 30
+mL of 1X TAE buffer. The solution was microwaved for 25−30 s until
+agarose was completely dissolved. After cooling, the solution was
+poured into a cast chamber (Thermo Scientific, Cat. No. B1A-BP)
+equipped with a 10-well comb and allowed to solidify. PGNPs were
+mixed with proteins in acetate buffer (1X, 0.1 M) at varying enzyme
+concentrations (0.02 μM to 2.5 μM) in PCR tubes. The final
+concentrations of both GNPs and PGNPs were 100 nM. After mixing
+the nanoparticles and enzymes, 2 μL of glycerol (Sigma, Cat. No.
+G5516) was added to each sample, followed by vortexing and
+spinning. Next, 10 μL of each prepared sample was loaded into the
+wells of the agarose gel. The gel was placed in a gel electrophoresis
+chamber (Thermo Scientific, Cat. No. B1A-BP), and a voltage of 120
+V was applied for 20 min. Finally, the gel was imaged using the
+ChemiDoc MP Imaging System (Bio-Rad) in the Fast Blast channel.
+We also quantitatively determined the binding affinity between the
+EEGCGEE-PGNPs using Stern−Volmer kinetics (details in SI).
+4.10. CD Spectroscopy. CD spectroscopy was used to study the
+structure of Cyt C in the presence and absence of PGNPs. CD spectra
+were monitored using a Jasco J-818 spectrophotometer with a 1 mm
+path length cuvette. 1X acetate buffer (0.1 M) at pH 5 was used as the
+solvent. The final concentrations of the materials in the cuvette were
+20, 10, 1.6, and 1.6 μM for Cyt C, peptides, GNPs, and PGNPs,
+respectively. Signal was monitored on the instrument in terms of raw
+ellipticity values in millidegrees (mdeg).
+4.11. Molecular Dynamics Simulations. The adsorption
+behavior and molecular interactions between Cyt C and PGNPs
+were investigated by using all-atom explicit solvent molecular
+dynamics (MD) simulations. Three distinct peptide coatings were
+examined: FEEGC, FEGCGEF, and EEGCGEE. Simulations were
+performed using GROMACS under isothermal−isobaric (NPT)
+conditions at 1 bar and 300 K.48 Each system was simulated in
+triplicate for 400 ns. The simulation setup included explicit water
+molecules, and Na+ and Cl−ions were introduced to maintain a salt
+concentration of 100 mM, along with additional counterions
+necessary for charge neutrality. Complete details of the simulation
+protocol, including surface preparation, force field parameters,
+equilibration procedures, and analysis methods, are provided in the
+Supporting Information. Molecular visualizations were rendered using
+Protein Imager.49
+ASSOCIATED CONTENT
+*
+sı Supporting Information
+The Supporting Information is available free of charge at
+https://pubs.acs.org/doi/10.1021/acsnano.4c16059.
+Sequences and structures of peptides used in this study;
+schemes and results for synthesis and UV−vis/TEM
+characterization of GNPs and PGNPs; additional activity
+assays to validate interactions between PGNPs and
+enzymes; Michaelis−Menten kinetic studies; EMSA
+assays showing binding between PGNPs and enzymes;
+Stern−Volmer kinetic studies; CD characterization of
+enzymes with and without PGNPs; and detailed
+methods and results for molecular dynamics simulations
+(PDF)
+Activity enhancement showing a video of the activity
+enhancement of Cyt C in the presence and absence of
+PGNPs (MP4)
+AUTHOR INFORMATION
+Corresponding Author
+Devleena Samanta −Department of Chemistry, The
+University of Texas at Austin, Austin, Texas 78712, United
+States; Livestrong Cancer Institutes, Dell Medical School,
+Austin, Texas 78712, United States; Texas Materials
+Institute, The University of Texas at Austin, Austin, Texas
+78712, United States;
+orcid.org/0000-0002-0647-7673;
+Email: dsamanta@utexas.edu
+Authors
+Subrata Pandit −Department of Chemistry, The University of
+Texas at Austin, Austin, Texas 78712, United States;
+orcid.org/0009-0000-3968-716X
+Atri Bhattacharya −Department of Chemistry, The University
+of Texas at Austin, Austin, Texas 78712, United States;
+orcid.org/0009-0009-5904-3711
+Busra Ozguney −Artie McFerrin Department of Chemical
+Engineering, Texas A&M University, College Station, Texas
+77843, United States;
+orcid.org/0000-0003-2025-0149
+Seungheon Lee −Department of Chemistry, The University of
+Texas at Austin, Austin, Texas 78712, United States;
+orcid.org/0000-0001-9631-4853
+Jeetain Mittal −Artie McFerrin Department of Chemical
+Engineering, Texas A&M University, College Station, Texas
+77843, United States; Department of Chemistry and
+Interdisciplinary Graduate Program in Genetics and
+Genomics, Texas A&M University, College Station, Texas
+77843, United States;
+orcid.org/0000-0002-9725-6402
+Complete contact information is available at:
+https://pubs.acs.org/10.1021/acsnano.4c16059
+Author Contributions
+∇S.B., A.B., and B.O. contributed equally to this work. S.P. and
+D.S. conceived of the study. Synthesis, characterization
+experiments, and enzymatic assays were performed by S.P.
+and A.B. S.L. performed CD and EMSA studies. Computa-
+tional work was carried out by B.O. and supervised by J.M.
+The manuscript was written through contributions of all
+authors. All authors have given approval to the final version of
+the manuscript.
+Funding
+This work was supported by start-up funds from The
+University of Texas at Austin, NSF CHE 2404334 from the
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.4c16059
+ACS Nano 2025, 19, 7117−7128
+7126
+
+National Science Foundation (NSF CSDM-B grant), and F-
+2209-20240404 grant from the Welch Foundation. J.M.
+acknowledges
+support
+from
+NIH/NIGMS
+grant
+R35GM153388.
+Notes
+The authors declare no competing financial interest.
+ACKNOWLEDGMENTS
+MALDI characterization of peptides was performed at the UT
+Austin Center for Biomedical Research Support Biological
+Mass Spectrometry Facility (RRID:SCR_021728). TEM was
+performed at the Center for Biomedical Research Support
+Microscopy
+and
+Imaging
+Facility
+at
+UT
+Austin
+(RRID:SCR_021756). Images have been created using
+BioRender.com. DLS was carried out at the Materials Analysis
+and Spectroscopy Facility at Texas Materials Institute. We
+thank the TTP (Targeted Therapeutic Drug Discovery
+Program) Core facility at the University of Texas at Austin
+for providing access to the J-815 CD spectrometer. The TTP
+core facility is supported by CPRIT (Cancer Prevention
+Research Institute of Texas) RP210088. J.M. acknowledges
+support from the Texas A&M High Performance Research
+Computing facility for providing advanced computing
+resources for atomistic MD simulations.
+ABBREVIATIONS
+GNPs:gold nanoparticles; PGNPs:peptide-functionalized gold
+nanoparticles; Cyt C:cytochrome c; LP:lactoperoxidase;
+Hb:hemoglobin; Cat:catalase; EMSA:electrophoretic mobility
+shift assay
+REFERENCES
+(1) Enzymes Market, Global Industry Size Forecast. https://www.
+marketsandmarkets.com/Market-Reports/enzyme-market-46202020.
+html (accessed Nov 5, 2024).
+(2) Otten, R.; Pádua, R. A. P.; Bunzel, H. A.; Nguyen, V.; Pitsawong,
+W.; Patterson, M.; Sui, S.; Perry, S. L.; Cohen, A. E.; Hilvert, D.; Kern,
+D. How Directed Evolution Reshapes the Energy Landscape in an
+Enzyme to Boost Catalysis. Science 2020, 370 (6523), 1442−1446.
+(3) Yang, K. K.; Wu, Z.; Arnold, F. H. Machine-Learning-Guided
+Directed Evolution for Protein Engineering. Nat. Methods 2019, 16
+(8), 687−694.
+(4) Zhang, B.; Xu, W.; Peng, L.; Li, Y.; Zhang, W.; Wang, Z. Nature-
+Inspired Interfacial Engineering for Energy Harvesting. Nat. Rev.
+Electr. Eng. 2024, 1 (4), 218−233.
+(5) Brannigan, J. A.; Wilkinson, A. J. Protein Engineering 20 Years
+On. Nat. Rev. Mol. Cell Biol. 2002, 3 (12), 964−970.
+(6) Hutchison, C. A.; Phillips, S.; Edgell, M. H.; Gillam, S.; Jahnke,
+P.; Smith, M. Mutagenesis at a Specific Position in a DNA Sequence.
+J. Biol. Chem. 1978, 253 (18), 6551−6560.
+(7) Jin, L.; Yang, K.; Yao, K.; Zhang, S.; Tao, H.; Lee, S.-T.; Liu, Z.;
+Peng, R. Functionalized Graphene Oxide in Enzyme Engineering: A
+Selective Modulator for Enzyme Activity and Thermostability. ACS
+Nano 2012, 6 (6), 4864−4875.
+(8) Knecht, L. D.; Ali, N.; Wei, Y.; Hilt, J. Z.; Daunert, S.
+Nanoparticle-Mediated Remote Control of Enzymatic Activity. ACS
+Nano 2012, 6 (10), 9079−9086.
+(9) Chen, G.; Huang, S.; Ma, X.; He, R.; Ouyang, G. Encapsulating
+and Stabilizing Enzymes Using Hydrogen-Bonded Organic Frame-
+works. Nat. Protoc. 2023, 18 (7), 2032−2050.
+(10) Xu, W.; Fu, Z.; Chen, G.; Wang, Z.; Jian, Y.; Zhang, Y.; Jiang,
+G.; Lu, D.; Wu, J.; Liu, Z. Graphene Oxide Enabled Long-Term
+Enzymatic Transesterification in an Anhydrous Gas Flux. Nat.
+Commun. 2019, 10 (1), No. 2684.
+(11) Le Ouay, B.; Minami, R.; Boruah, P. K.; Kunitomo, R.;
+Ohtsubo, Y.; Torikai, K.; Ohtani, R.; Sicard, C.; Ohba, M. Water-
+Soluble Ionic Metal−Organic Polyhedra as a Versatile Platform for
+Enzyme Bio-Immobilization. J. Am. Chem. Soc. 2023, 145 (22),
+11997−12006.
+(12) Bhattacharya, A.; Pandit, S.; Lee, S.; Ebrahimi, S.B.; Samanta,
+D. Modulating Enzyme Activity Using Engineered Nanomaterials.
+ChemBioChem 2024, No. e202400520.
+(13) Cha, S.-H.; Hong, J.; McGuffie, M.; Yeom, B.; VanEpps, J. S.;
+Kotov, N. A. Shape-Dependent Biomimetic Inhibition of Enzyme by
+Nanoparticles and Their Antibacterial Activity. ACS Nano 2015, 9
+(9), 9097−9105.
+(14) Fischer, N. O.; McIntosh, C. M.; Simard, J. M.; Rotello, V. M.
+Inhibition of Chymotrypsin through Surface Binding Using Nano-
+particle-Based Receptors. Proc. Natl. Acad. Sci. U.S.A. 2002, 99 (8),
+5018−5023.
+(15) De, M.; Chou, S. S.; Dravid, V. P. Graphene Oxide as an
+Enzyme Inhibitor: Modulation of Activity of α-Chymotrypsin. J. Am.
+Chem. Soc. 2011, 133 (44), 17524−17527.
+(16) Xiong, Y.; Huang, J.; Wang, S.-T.; Zafar, S.; Gang, O. Local
+Environment Affects the Activity of Enzymes on a 3D Molecular
+Scaffold. ACS Nano 2020, 14 (11), 14646−14654.
+(17) Sánchez-Morán, H.; Kaar, J. L.; Schwartz, D. K. Supra-
+Biological Performance of Immobilized Enzymes Enabled by
+Chaperone-like Specific Non-Covalent Interactions. Nat. Commun.
+2024, 15 (1), No. 2299.
+(18) Díaz, S. A.; Sen, S.; Boeneman Gemmill, K.; Brown, C. W.; Oh,
+E.; Susumu, K.; Stewart, M. H.; Breger, J. C.; Lasarte Aragonés, G.;
+Field, L. D.; Deschamps, J. R.; Král, P.; Medintz, I. L. Elucidating
+Surface Ligand-Dependent Kinetic Enhancement of Proteolytic
+Activity at Surface-Modified Quantum Dots. ACS Nano 2017, 11
+(6), 5884−5896.
+(19) Hooe, S. L.; Breger, J. C.; Medintz, I. L. Enhancing Enzymatic
+Activity with Nanoparticle Display −an Updated Compendium and
+Engineering Outlook. Mol. Syst. Des. Eng. 2024, 9 (7), 679−704.
+(20) Li, G.; Ma, P.; He, Y.; Zhang, Y.; Luo, Y.; Zhang, C.; Fan, H.
+Enzyme−Nanowire Mesocrystal Hybrid Materials with an Extremely
+High Biocatalytic Activity. Nano Lett. 2018, 18 (9), 5919−5926.
+(21) You, C.-C.; Agasti, S. S.; De, M.; Knapp, M. J.; Rotello, V. M.
+Modulation of the Catalytic Behavior of α-Chymotrypsin at
+Monolayer-Protected Nanoparticle Surfaces. J. Am. Chem. Soc. 2006,
+128 (45), 14612−14618.
+(22) Brown III, C. W.; Oh, E.; Hastman, D. A.; Walper, S. A.;
+Susumu, K.; Stewart, M. H.; Deschamps, J. R.; Medintz, I. L. Kinetic
+Enhancement of the Diffusion-Limited Enzyme Beta-Galactosidase
+When Displayed with Quantum Dots. RSC Adv. 2015, 5 (113),
+93089−93094.
+(23) Breger, J. C.; Vranish, J. N.; Oh, E.; Stewart, M. H.; Susumu, K.;
+Lasarte-Aragonés, G.; Ellis, G. A.; Walper, S. A.; Díaz, S. A.; Hooe, S.
+L.; Klein, W. P.; Thakur, M.; Ancona, M. G.; Medintz, I. L. Self
+Assembling Nanoparticle Enzyme Clusters Provide Access to
+Substrate Channeling in Multienzymatic Cascades. Nat. Commun.
+2023, 14 (1), No. 1757.
+(24) Breger, J. C.; Ancona, M. G.; Walper, S. A.; Oh, E.; Susumu, K.;
+Stewart, M. H.; Deschamps, J. R.; Medintz, I. L. Understanding How
+Nanoparticle Attachment Enhances Phosphotriesterase Kinetic
+Efficiency. ACS Nano 2015, 9 (8), 8491−8503.
+(25) Vranish, J. N.; Ancona, M. G.; Oh, E.; Susumu, K.; Lasarte
+Aragonés, G.; Breger, J. C.; Walper, S. A.; Medintz, I. L. Enhancing
+Coupled Enzymatic Activity by Colocalization on Nanoparticle
+Surfaces: Kinetic Evidence for Directed Channeling of Intermediates.
+ACS Nano 2018, 12 (8), 7911−7926.
+(26) Wilner, O. I.; Weizmann, Y.; Gill, R.; Lioubashevski, O.;
+Freeman, R.; Willner, I. Enzyme Cascades Activated on Topologically
+Programmed DNA Scaffolds. Nat. Nanotechnol. 2009, 4 (4), 249−
+254.
+(27) Chen, T.; Xu, Y.; Peng, Z.; Li, A.; Liu, J. Simultaneous
+Enhancement of Bioactivity and Stability of Laccase by Cu 2+ /PAA/
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.4c16059
+ACS Nano 2025, 19, 7117−7128
+7127
+
+PPEGA Matrix for Efficient Biosensing and Recyclable Decontami-
+nation of Pyrocatechol. Anal. Chem. 2017, 89 (3), 2065−2072.
+(28) Song, J.; Kahveci, D.; Chen, M.; Guo, Z.; Xie, E.; Xu, X.;
+Besenbacher, F.; Dong, M. Enhanced Catalytic Activity of Lipase
+Encapsulated in PCL Nanofibers. Langmuir 2012, 28 (14), 6157−
+6162.
+(29) Zhao, H.; Zhang, J.; Liu, Y.; Liu, X.; Ma, L.; Zhou, L.; Gao, J.;
+Liu, G.; Yue, X.; Jiang, Y. Molecular Engineering and Morphology
+Control of Covalent Organic Frameworks for Enhancing Activity of
+Metal-Enzyme Cascade Catalysis. Adv. Sci. 2024, 11 (25),
+No. 2400730.
+(30) Liang, J.; Ruan, J.; Njegic, B.; Rawal, A.; Scott, J.; Xu, J.; Boyer,
+C.; Liang, K. Insight into Bioactivity of In-situ Trapped Enzyme-
+Covalent-Organic Frameworks. Angew. Chem., Int. Ed. 2023, 62 (23),
+No. e202303001.
+(31) Chen, Y.; Jiménez-Ángeles, F.; Qiao, B.; Krzyaniak, M. D.; Sha,
+F.; Kato, S.; Gong, X.; Buru, C. T.; Chen, Z.; Zhang, X.; Gianneschi,
+N. C.; Wasielewski, M. R.; Olvera de la Cruz, M.; Farha, O. K.
+Insights into the Enhanced Catalytic Activity of Cytochrome c When
+Encapsulated in a Metal−Organic Framework. J. Am. Chem. Soc.
+2020, 142 (43), 18576−18582.
+(32) Wang, X.; Deng, K.; Wu, J.; Ma, Y.; Du, X.; Zhang, M.; Huang,
+H.; Liu, Y.; Kang, Z. Carbon Dots from d-Cysteine and Citric Acid
+Increase the Activity of the Enzyme Laccase. ACS Appl. Nano. Mater.
+2022, 5 (11), 16812−16820.
+(33) Li, K.; Wang, J.; He, Y.; Abdulrazaq, M. A.; Yan, Y. Carbon
+Nanotube-Lipase Hybrid Nanoflowers with Enhanced Enzyme
+Activity and Enantioselectivity. J. Biotechnol. 2018, 281, 87−98.
+(34) Poulos, T. L. Heme Enzyme Structure and Function. Chem.
+Rev. 2014, 114 (7), 3919−3962.
+(35) Bertini, I.; Cavallaro, G.; Rosato, A. Cytochrome c: Occurrence
+and Functions. Chem. Rev. 2006, 106 (1), 90−115.
+(36) Belikova, N. A.; Vladimirov, Y. A.; Osipov, A. N.; Kapralov, A.
+A.; Tyurin, V. A.; Potapovich, M. V.; Basova, L. V.; Peterson, J.;
+Kurnikov, I. V.; Kagan, V. E. Peroxidase Activity and Structural
+Transitions of Cytochrome c Bound to Cardiolipin-Containing
+Membranes. Biochemistry 2006, 45 (15), 4998−5009.
+(37) Hanske, J.; Toffey, J. R.; Morenz, A. M.; Bonilla, A. J.;
+Schiavoni, K. H.; Pletneva, E. V. Conformational Properties of
+Cardiolipin-Bound Cytochrome c. Proc. Natl. Acad. Sci. U.S.A. 2012,
+109 (1), 125−130.
+(38) Li, M.; Mandal, A.; Tyurin, V. A.; DeLucia, M.; Ahn, J.; Kagan,
+V. E.; van der Wel, P. C. A. Surface-Binding to Cardiolipin
+Nanodomains Triggers Cytochrome c Pro-Apoptotic Peroxidase
+Activity via Localized Dynamics. Structure 2019, 27 (5), 806−815.e4.
+(39) Zhu, J.; Zhang, Y.; Lu, D.; Zare, R. N.; Ge, J.; Liu, Z.
+Temperature-Responsive Enzyme−Polymer Nanoconjugates with
+Enhanced Catalytic Activities in Organic Media. Chem. Commun.
+2013, 49 (54), 6090.
+(40) Deraedt, C.; Salmon, L.; Gatard, S.; Ciganda, R.; Hernandez,
+R.; Ruiz, J.; Astruc, D. Sodium Borohydride Stabilizes Very Active
+Gold Nanoparticle Catalysts. Chem. Commun. 2014, 50 (91), 14194−
+14196.
+(41) Liu, B.; Liu, J. Freezing Directed Construction of Bio/Nano
+Interfaces: Reagentless Conjugation, Denser Spherical Nucleic Acids,
+and Better Nanoflares. J. Am. Chem. Soc. 2017, 139 (28), 9471−9474.
+(42) da Silva, R. T. P.; de Barros, H. R.; Fernandes, R. F.; Temperini,
+M. L. A.; Cordoba de Torresi, S. I. Cytochrome C with Peroxidase-
+like Activity Supported on Plasmonic AuNPs: Improved Stability and
+Enhanced Nanobioplasmonic Catalytic Conversion. ChemCatChem
+2023, 15 (4), No. e202201568.
+(43) Jain, A.; Trindade, G. F.; Hicks, J. M.; Potts, J. C.; Rahman, R.;
+Hague, R. J. M.; Amabilino, D. B.; Pérez-García, L.; Rawson, F. J.
+Modulating the Biological Function of Protein by Tailoring the
+Adsorption Orientation on Nanoparticles. J. Colloid Interface Sci.
+2021, 587, 150−161.
+(44) Tollefson, E. J.; Allen, C. R.; Chong, G.; Zhang, X.; Rozanov,
+N. D.; Bautista, A.; Cerda, J. J.; Pedersen, J. A.; Murphy, C. J.;
+Carlson, E. E.; Hernandez, R. Preferential Binding of Cytochrome c to
+Anionic Ligand-Coated Gold Nanoparticles: A Complementary
+Computational and Experimental Approach. ACS Nano 2019, 13
+(6), 6856−6866.
+(45) Micsonai, A.; Wien, F.; Kernya, L.; Lee, Y.-H.; Goto, Y.;
+Réfrégiers, M.; Kardos, J. Accurate Secondary Structure Prediction
+and Fold Recognition for Circular Dichroism Spectroscopy. Proc.
+Natl. Acad. Sci. U.S.A. 2015, 112 (24), E3095−E3103.
+(46) Balakrishnan, G.; Hu, Y.; Spiro, T. G. His26 Protonation in
+Cytochrome c Triggers Microsecond β-Sheet Formation and Heme
+Exposure: Implications for Apoptosis. J. Am. Chem. Soc. 2012, 134
+(46), 19061−19069.
+(47) Pandit, S.; Duchow, M.; Chao, W.; Capasso, A.; Samanta, D.
+DNA-Barcoded Plasmonic Nanostructures for Activity-Based Pro-
+tease Sensing. Angew. Chem., Int. Ed. 2024, 63 (2), No. e202310964.
+(48) Páll, S.; Zhmurov, A.; Bauer, P.; Abraham, M.; Lundborg, M.;
+Gray, A.; Hess, B.; Lindahl, E. Heterogeneous Parallelization and
+Acceleration of Molecular Dynamics Simulations in GROMACS. J.
+Chem. Phys. 2020, 153 (13), No. 134110.
+(49) Tomasello, G.; Armenia, I.; Molla, G. The Protein Imager: a
+full-featured online molecular viewer interface with server-side HQ-
+rendering capabilities. Bioinformatics 2020, 36 (9), 2909−2911.
+ACS Nano
+www.acsnano.org
+Article
+https://doi.org/10.1021/acsnano.4c16059
+ACS Nano 2025, 19, 7117−7128
+7128

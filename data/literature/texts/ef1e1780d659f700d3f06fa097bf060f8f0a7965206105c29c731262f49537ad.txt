@@ -1,0 +1,1559 @@
+RESEARCH ARTICLE
+www.afm-journal.de
+A Mitochondria-Targeted Biomimetic Nanocarrier Improves
+Oxygen Metabolism and Potentiates Chemo-Sonodynamic
+Antitumor Therapy
+Fang Zhang, Yong-Guo Hu, Xiao-Ling Lei, Ming-Yu Tian, Jia-Hua Zou,* Dong Zhou,
+Jing Yuan, Kai Cheng,* Jin-Xuan Fan,* and Yuan-Di Zhao*
+Sonodynamic therapy (SDT) exhibits high tissue penetration and negligible
+radiation damage to normal tissue, but it hampered by the limited oxygen
+in tumor, which can be potentiated via improving oxygen metabolism and
+increasing oxygen utilization eﬃciency. Herein, a multifunctional biomimetic
+nanocarrier (VI@R-T) is fabricated by encapsulating vanadium-based
+nanozyme (VOx) with dual enzyme activity and sonosensitizer indocyanine
+green (ICG) into the mitochondria-targeted erythrocyte vesicle. The nanocarrier
+can be targeted to the mitochondria, where the enzyme in red blood cell
+membrane catalyzed endogenous H2O2 to increase O2 content for
+alleviating hypoxia. Meanwhile, nanozyme exhibits the NADH oxidase
+(NOX) activity aﬀecting the nicotinamide adenine dinucleotide/ﬂavin
+adenine dinucleotide (NADH/FAD) balance in the cellular oxidative
+phosphorylation, which impairs the mitochondrial electron transport chain
+and reduces intracellular oxygen consumption, thereby signiﬁcantly improving
+tumor oxygen metabolism and the eﬃcacy of SDT. In addition, nanozyme also
+shows peroxide-like activity in tumor microenvironment (TME), and generates
+highly toxichydroxyl radical (OH) for ROS-amplifying oxidative stress.
+Deep-hypothermia potentiated 2D/3D autoﬂuorescence imaging also
+monitored the nanocarrier eﬀectively disrupt the balance of NADH/FAD in the
+tumor. This work provides anew approach for designing ROS-based
+biomimetic nanomedical platform for tumor hypoxia relief.
+1. Introduction
+Non-invasive sonodynamic therapy (SDT) is an anti-tumor ther-
+apeutic strategy based on reactive oxygen species (ROS), which
+F. Zhang, Y.-G. Hu, X.-L. Lei, M.-Y. Tian, J.-H. Zou, J. Yuan, K. Cheng,
+J.-X. Fan, Y.-D. Zhao
+Britton Chance Center for Biomedical Photonics at Wuhan National
+Laboratory for Optoelectronics – Hubei Bioinformatics & Molecular
+Imaging Key Laboratory
+Department of Biomedical Engineering
+College of Life Science and Technology
+Huazhong University of Science and Technology
+Wuhan, Hubei 430074, P. R. China
+E-mail: zoujiahua@hgyy.org.cn;chengkaicp@hust.edu.cn;
+jxfan@hust.edu.cn;zydi@mail.hust.edu.cn
+The ORCID identiﬁcation number(s) for the author(s) of this article
+can be found under https://doi.org/10.1002/adfm.202504404
+DOI: 10.1002/adfm.202504404
+uses ultrasound (US) as a stimulus source
+and activates the acoustic sensitizer to in-
+teract with surrounding oxygen and water
+molecule to produce highly cytotoxic ROS
+and induce tumor cell apoptosis.[1–3] Com-
+pared with traditional photodynamic ther-
+apy (PDT), SDT possesses the advantages
+of deeper penetration, higher safety, lower
+cost, and lesser radiation damage to nor-
+mal tissue, and it has a broad develop-
+ment prospect in cancer treatment.[4–6] Al-
+though the therapeutic advantages of SDT
+have been conﬁrmed in preclinical stud-
+ies of diversiﬁed cancer cell lines, tradi-
+tional ultrasound therapy still faces sev-
+eral challenges. For instance, conventional
+sonosensitizer (such as porphyrin deriva-
+tives) exhibits poor tumor speciﬁcity, and
+early clearance, the retention in the tu-
+mor is limited, leading to nonspeciﬁc ac-
+tivation and toxic side eﬀects.[7] The hy-
+poxic, acidic, and high interstitial pressure
+microenvironment of solid tumor reduces
+the generation eﬃciency of ROS, which
+weakens the therapeutic eﬀect. Addition-
+ally, the lack of real-time imaging guid-
+ance and eﬃcacy assessment technologies
+makes it diﬃcult to precisely control the timing of ultra-
+sound stimulation.[8] Thanks to the rapid development of
+nanomedicine, various nanomaterial has been prepared into
+nanocarrier of sosensitizers, with the assistance of imaging
+J.-H. Zou, D. Zhou
+Department of Oncology
+Huanggang Central Hospital of Yangtze University
+No.126 Qi’an Road, Huangzhou District, Huanggang City, Hubei
+438000, P. R. China
+J.-H. Zou, D. Zhou
+Hubei Clinical Medical Research Center of Esophageal and Gastric
+Malignancy
+Huanggang City, Hubei 438021, P. R. China
+J. Yuan, Y.-D. Zhao
+Key Laboratory of Biomedical Photonics (HUST)
+Ministry of Education
+Huazhong University of Science and Technology
+Wuhan, Hubei 430074, P. R. China
+Adv. Funct. Mater. 2025, 35, 2504404
+© 2025 Wiley-VCH GmbH
+2504404 (1 of 18)
+
+www.advancedsciencenews.com
+www.afm-journal.de
+guidance, the tumor-targeted accumulation of nanosensitizer
+also signiﬁcantly improved.[6] While hypoxia induce tumor cell
+metastasis and proliferation, seriously hindering the eﬃcacy of
+various oxygen-dependent therapies. SDT generates ROS by con-
+suming oxygen, and rapid oxygen consumption leads to aggra-
+vate hypoxia, then further inhibits the eﬃciency of SDT.[9–11] It
+has been extensively demonstrated that pre-existing tumor hy-
+poxia and hypoxia exacerbated by SDT further activate hypoxia-
+inducible factor 1𝛼expression (HIF-1𝛼), which can lead to drug-
+resistant resistance to ROS-based cancer therapy.[12] Although
+the strategy of enhancing oxygen delivery to tumor site and
+producing oxygen by catalyzing endogenous hydrogen perox-
+ide (H2O2) has been widely used to directly or indirectly in-
+crease oxygen content, reducing intracellular oxygen consump-
+tion will be another important way to fundamentally allevi-
+ate tumor hypoxia.[13,14] Mitochondria have attracted consider-
+able recognition to be one of the potential targets for cancer
+therapy.[15–18] As the organelle of energy metabolism in the center
+of the cell, plays an important site of intracellular aerobic respi-
+ration in the tumor cell, and closely related to intracellular en-
+dogenous oxygen consumption.[19,20] Therefore, reducing intra-
+cellular oxygen consumption to improve oxygen metabolism is
+of great signiﬁcance to improve the eﬃcacy of SDT in cancer
+therapy.
+To meet the biological energy requirement of rapid growth of
+the body, tumor cell exhibits various metabolic change and de-
+pendency compared with normal cell, such as increased aerobic
+glycolysis and oxidative phosphorylation.[21,22] During the oxida-
+tive phosphorylation metabolism, oxygen is consumed and ATP
+is produced by transferring electron to a series of large multi-
+subunit protein assemblies (complexes I to IV) in the inner mi-
+tochondrial membrane. Speciﬁcally, the reduced and oxidized
+forms of nicotinamide adenine dinucleotide (NADH/NAD+) in
+complex I are indispensable redox cofactors in the oxidative
+phosphorylation, providing the proton motive force required for
+the electron transport chain (ETC) through iterative oxidative
+shuttling of electrons between NADH and NAD+. This cellu-
+lar respiration provides constant source of energy for the sur-
+vival, proliferation and metastasis of cancer cell.[23–25] So far,
+many strategies based on the intervention of endogenous cel-
+lular oxygen consumption have been adopted for tumor ther-
+apy, including mitochondrial respiration inhibitor, enzyme in-
+hibition in metabolic pathway, and synthetic metabolite trans-
+porter blocking.[26–30] Therefore, it is a very interesting for tar-
+geting mitochondria and destroying the NADH/NAD+ cycle to
+impair the electron transport chain, thereby inhibiting mitochon-
+drial respiration and reducing ATP supply, and greatly reducing
+intracellular oxygen consumption and improving tumor oxygen
+metabolism, which addressing the fundamental problem of alle-
+viating tumor hypoxia and enhancing the oxygen dependent SDT
+therapy. However, for aggressive and fast-growing malignant tu-
+mor, it is diﬃcult to be cured by single SDT treatment. Therefore,
+it is necessary to combine SDT with other therapeutic methods,
+such as photodynamic therapy (PDT), chemotherapy, and chemo-
+dynamic therapy (CDT) to achieve better therapeutic eﬀect.[2,31–33]
+Chemodynamic therapy (CDT) is an emerging anti-tumor
+strategy that based on transition metal element in response to the
+tumor microenvironment (TME) by converting endogenous high
+concentration of H2O2 into highly toxic hydroxyl radical (∙OH),
+as the most active ROS, thereby enhancing intracellular oxidative
+stress.[34–36] Nanozyme typically has stronger intra-tumor accu-
+mulation eﬀect and exhibit higher catalytic therapeutic eﬃciency
+compared to conventional natural enzyme, which makes nanoen-
+zyme overcome the limitation of natural enzyme.[37] It also has
+great potential for application in tumor therapy due to its mimetic
+enzyme activities such as peroxidase (POD), oxidase (OXD), su-
+peroxide dismutase (SOD) and catalase (CAT).[38] In recent stud-
+ies, vanadium-based nanozyme with multivalent states have been
+favored by researchers due to their tunable redox activity and
+multiple mimetic enzyme catalytic activity.[39] Current research
+on vanadium-based nanozyme is mainly based on the POD and
+CAT mimetic enzyme activities for the detection of hydrogen per-
+oxide, glucose and glutathione by electrochemical sensing.[40–42]
+Despite great progress in developing vanadium-based nanozyme
+for practical application, the relatively poor catalytic activity in the
+dynamic physiological environment, severely limiting the poten-
+tial biological application of in vivo nanocatalysis. Hence, there
+is an urgent need to develop vanadium-based nanozyme with
+good biocompatibility and multiple simulated enzyme activities
+to cope with the complicated microenvironment in vivo.
+Herein, a multifunctional mitochondria-targeted biomimetic
+nanocarrier was designed for combined sonodynamic and
+chemodynamic therapy of breast cancer by delivering erythro-
+cyte membrane for producing in situ oxygen and vanadium-
+based nanoenzyme for reducing intracellular oxygen consump-
+tion to improv oxygen metabolism (Figure 1). In this design,
+the natural erythrocyte membrane (RBCM) was selected as the
+carrier, which was chemically modiﬁed and inserted into the
+mitochondria-targeted phospholipid DSPE-TPP, and encapsu-
+lated into vanadium-based nanozyme (VOx) with dual enzyme ac-
+tivity and sonosensitiser indocyanine green (ICG), and US with
+high depth of penetration was used as the stimulus source for
+ROS generation. The nanocarrier VI@R-T has many unique ad-
+vantages as a novel nanocarrier. a) ICG as a ﬂuorescent dye in
+the near-infrared (NIR) I-region, which could monitor the en-
+richment of VI@R-T at the tumor site via enhanced permeation
+retention eﬀect (EPR) by the long-duration ﬂuorescence imag-
+ing; b) the insertion of chemically modiﬁed phospholipid DSPE-
+TPP in VI@R-T gave the nanocarrier the ability to target the
+energy-supplying organelle mitochondria; c) erythrocyte mem-
+brane as the nanocarrier not only prolonged the blood circula-
+tion time in the body, but also catalyzed the production of oxy-
+gen from the high level of H2O2 in the TME by the internal
+natural enzyme system. And vanadium-based nanozyme with
+NADH oxidase (NOX) activity disrupted the NADH/NAD+ bal-
+ance and damaged the electron transport chain, then inhibited
+the mitochondria respiration and reduced the intracellular oxy-
+gen consumption, thus eﬀectively improving the metabolism of
+oxygen and alleviating tumor hypoxia for enhancing the SDT
+therapeutic eﬀect of nanocarrier; d) vanadium-based nanozyme
+(VOx) with POD mimetic enzyme activity could produce highly
+toxic hydroxyl radical in TME by Fenton-like reaction, thus sig-
+niﬁcantly increasing intracellular ROS level to improve the anti-
+tumor therapeutic eﬃciency of SDT combined with CDT. In vivo
+and in vitro experiments demonstrated that the mitochondria-
+targeted biomimetic nanocarrier VI@R-T enhanced the sonody-
+namic eﬃcacy by in situ oxygen generation at the tumor site and
+by reducing intracellular oxygen consumption, thus improving
+Adv. Funct. Mater. 2025, 35, 2504404
+© 2025 Wiley-VCH GmbH
+2504404 (2 of 18)
+ 16163028, 2025, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202504404 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 1. A) Schematic illustration of synthetic route of biomimetic nanocarrier VI@R-T and B) the detailed chemodynamic and sonodynamic therapy
+synergistic antitumor mechanism. VI@R-T is delivered to the tumor site via intravenous injection, and the mitochondria-targeted cascade reaction of
+RBC within VI@R-T decompose the endogenous H2O2 to increase O2 content, and vanadium-based nanozyme VOx with NOX oxidase activity consumes
+NADH and damage the electron transport chain to inhibit the mitochondria respiration. Subsequently, improving the intracellular oxygen metabolism
+and alleviating tumor hypoxia for enhancing the ICG of SDT therapeutic eﬀect. Meanwhile, vanadium-based nanozyme with POD mimetic enzyme
+activity triggers the production of self-expanding ROS through the Fenton reaction and facilitates tumor cell apoptosis.
+oxygen metabolism and inhibiting the growth of breast can-
+cer. This study provides a new idea of alleviating tumor hy-
+poxia and also oﬀers important research value for the de-
+velopment of safe and eﬃcient nanocarrier based on ROS
+therapy.
+2. Results and Discussion
+2.1. Synthesis and Characterization of VI@R-T Nanocarrier
+First, natural red blood cell membrane (RBCM) was extracted
+from whole blood of mice by traditional hypotonic treatment, and
+erythrocyte vesicle with uniform size was obtained by liposome
+extruder. Then, it was chemically modiﬁed and inserted into the
+coupled DSPE-TPP to obtain mitochondria-targeted red blood
+cell membrane, and the multifunctional biomimetic nanocarrier
+VI@R-T was constructed by loading vanadium-based nanozyme
+VOx and sonosensitiser ICG into the red blood cell membrane.
+The nanocarrier could be targeted to the energy-donating or-
+ganelle mitochondria, the red blood cell membrane catalyzed
+the decomposition of hydrogen peroxide for improving oxygen
+deﬁciency, the vanadium-based nanozyme VOx depleted NADH
+for impairing the electron transport chain and inhibiting mi-
+tochondrial respiration, thereby increasing oxygen metabolism
+and enhancing sonodynamic therapy of tumor. In the experi-
+ment, vanadium-based nanozyme VOx with multivalent state was
+ﬁrst prepared. Transmission electron microscopy (TEM) charac-
+terization revealed that the vanadium-based nanozyme was ho-
+mogeneous in size and well dispersed, with size of ≈5–10 nm
+(Figure 2A). After being encapsulated by red blood cell mem-
+brane, the nanocarrier contained several small nanoparticles,
+with size of ≈40–80 nm (Figure 2B,C). The result of protein
+gel electrophoresis experiment conﬁrmed that the protein band
+of erythrocyte membrane-encapsulated nanocarrier VI@R-T and
+puriﬁed erythrocyte membrane (RBCM) and erythrocyte mem-
+brane inserted with mitochondria-targeted phospholipid (R-TPP)
+was basically the same (Figure 2D), indicating that almost all pro-
+tein of the erythrocyte membrane was well preserved by the syn-
+thesized biomimetic nanocarrier. By comparing the hydrated par-
+ticle size before and after encapsulation, it could also be seen
+that the size of nanocarrier also increased from 82 to 104 nm,
+it might be due to the strong hydrophilicity of the erythrocyte
+membrane, resulting in the hydrated particle size was signif-
+icantly increased (Figure 2E). The loading eﬃciencies of VOx
+and ICG were 35.82±2.39%, 12.18±1.06%, respectively. Among
+them, the content of vanadium-based nanoenzyme VOx was de-
+termined by atomic absorption, loading rate of ICG was cal-
+culated according to the standard curve of ICG concentration
+and absorption value. In addition, the stability of the nanocar-
+rier VI@R-T was also evaluated. The result demonstrated that
+Adv. Funct. Mater. 2025, 35, 2504404
+© 2025 Wiley-VCH GmbH
+2504404 (3 of 18)
+ 16163028, 2025, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202504404 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 2. Characterization of nanocarrier. A) TEM of vanadium-based nanozyme VOx. B,C) TEM and magniﬁcation image of the nanocarrier VI@R-T.
+D) SDS-PAGE protein analysis of erythrocyte membrane, RBCM, R-TPP, and VI@R-T. E) The hydrated particle size of VOx, R-T, and VI@R-T. F) The
+absorption spectra of VOx, R-T, ICG, and VI@R-T. G) The infrared spectra of modiﬁed material before and after mitochondria-targeted phospholipid and
+H) high resolution XPS spectrum of V. I) The XPS spectrum of VI@R-T.
+the hydrated particle size of VI@R-T in water, PBS, NaCl,
+Dulbecco’s modiﬁed eagle medium (DMEM) and DMEM+10%
+serum did not show any signiﬁcant change, indicating that
+it had good stability in diﬀerent media (Figure S1, Sup-
+porting Information). The hydrated particle size and poly-
+dispersity coeﬃcient of VI@R-T stored in diﬀerent solution
+at 4 °C, 25 °C, and 37 °C were also measured with time.
+It was found that the hydrated particle size and PDI of
+the nanocarrier did not change signiﬁcantly within 5 days,
+indicating that the nanocarrier possessed excellent stability
+at diﬀerent temperature and media (Figure S2, Supporting
+Information).
+Then, the prepared nanocarrier was further characterized. The
+UV–vis absorption spectra showed that the nanocarrier VI@R-
+T had characteristic absorption peak of red blood cell mem-
+brane protein at 280 and 410 nm, and sonosensitizer indocya-
+nine green ICG at 780 nm, indicating that the successful encap-
+sulation of substance by the nanocarrier VI@R-T (Figure 2F).
+It revealed that the nanozyme exhibits absorption within ICG’s
+excitation/emission wavelength range, and the close proximity
+Adv. Funct. Mater. 2025, 35, 2504404
+© 2025 Wiley-VCH GmbH
+2504404 (4 of 18)
+ 16163028, 2025, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202504404 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+between the two substances upon co-encapsulation energy trans-
+fer could occur. The eﬀect of vanadium-based nanozyme en-
+capsulation on the ﬂuorescence property of ICG was inves-
+tigated by measuring the ﬂuorescence spectra of free ICG,
+nanocarrier loaded solely with ICG (I@R-T), and nanocarrier
+co-encapsulating both the VOx and ICG (VI@R-T). The quan-
+titative analysis revealed that the encapsulation of vanadium-
+based nanozyme with the sonosensitizer ICG resulted in 18%
+ﬂuorescence quenching (Figure S3, Supporting Information).
+In the synthesis of mitochondria-targeted phospholipid, DSPE-
+mPEG-NH2 with the amino group was linked to triphenylphos-
+phine (TPP) with the carboxyl group by coupling reaction. Fourier
+infrared spectroscopy (FTIR) appeared a stretching vibration
+of the amide II band of mPEG-TPP at 1550 cm−1, indicating
+that the amidation reaction between the carboxyl group of TPP
+and the amino group of DSPE-mPEG-NH2 successfully linked
+(Figure 2G). In order to investigate the mixed-valence property
+of V, the X-ray photoelectron spectroscopy (XPS) characteriza-
+tion of vanadium-based nanozyme VOx was carried out, and the
+result revealed that vanadium-based nanozyme consisted of V
+and O elements (Figure S4, Supporting Information); The high-
+resolution XPS spectrum demonstrated that V had four main
+peaks (Figure 2H), which were derived from V 2p2/3 and V 2p1/2,
+respectively. The peaks at 515.57 and 522.65 eV corresponded
+to V4+, and 516.97 and 524.13 eV corresponded to V5+, which
+accounted for ≈48.2% and 51.8%, indicating that the prepared
+vanadium-based nanozyme composed of with a mixed valence
+compound of V4+ and V5+.[43] Meanwhile, XPS characterization
+of the nanocarrier showed that VI@R-T consisted of Na, O, N, C,
+S, and P (Figure 2I; Figure S5, Supporting Information), which
+also further conﬁrmed the successful preparation of the nanocar-
+rier VI@R-T.
+2.2. In Vitro Enzyme Catalytic Property of VI@R-T Nanocarrier
+A large number of studies have shown that that insuﬃcient oxy-
+gen content in tumor greatly attenuates the eﬀect of sonody-
+namic therapy, whereas the tumor tissue has high concentra-
+tion of H2O2 and abundant catalase on the red cell membrane,
+which can catalyze the high level of H2O2 to produce oxygen
+for alleviating hypoxia.[16] The catalase activity by the commer-
+cial assay kit, and the results showed that both erythrocyte mem-
+brane vesicles and the biomimetic nanocarrier (VI@R-T) exhib-
+ited strong catalase-like activity (606.7 and 525.1 U mL−1, re-
+spectively, at equivalent membrane concentrations). The incor-
+poration of the payload material only caused a minor reduction
+in enzymatic activity, indicating that the catalase function re-
+mained well preserved in the ﬁnal nanocarrier system. There-
+fore, the ability of catalyzing the production of oxygen from H2O2
+by biomimetic nanocarrier VI@R-T was evaluated. The result
+showed that when only H2O2 was present in the system, the con-
+centration of dissolved oxygen was not changed (Figure 3A); and
+the concentration of dissolved oxygen also remained almost un-
+changed when the vanadium-based nanozyme VOx was added,
+suggesting that neither possessed the ability of producing oxy-
+gen; when the nanocarrier VI@R-T was present in the system
+without H2O2, the concentration of dissolved oxygen also did
+not change; However, once H2O2 was added to the nanocarrier
+VI@R-T, the concentration of dissolved oxygen increased rapidly
+and gradually reached stability with the extension of time, and
+the content of dissolved oxygen gradually increased with the in-
+crease of H2O2 concentration, showing an obvious concentration
+dependence (Figure 3B). Meanwhile, the eﬀect of pH on the cat-
+alytic activity of nanocarrier was also explored due to the weakly
+acidic microenvironment in tumor. The result conﬁrmed that af-
+ter the nanocarrier was stored in the weakly acidic environment
+for 3 h, the concentration of dissolved oxygen at pH 6.5 remained
+almost the same compared with that at pH 7.4 (Figure 3C), and
+there was no obvious change even after the storage time was pro-
+longed to 12 h (Figure S6, Supporting Information), indicating
+that the nanocarrier also possessed high enzyme catalytic activity
+in the weakly acidic tumor microenvironment.
+In our design, erythrocyte membrane acted as nanocarrier to
+encapsulate the mixed-valence vanadium-based nanozyme VOx
+and sonosensitiser indocyanine green ICG, in which vanadium
+as the transition metal element, has been shown to generate
+the hydroxyl radical ∙OH via the Fenton-like reaction in the pre-
+vious study.[42] Next, 3,3″,5,5″-tetramethylbenzidine (TMB) was
+used as an indicator to detect POD mimetic enzyme activity, in
+which TMB was oxidized to oxTMB by ∙OH with a character-
+istic absorption peak at 650 nm. Since ICG had a strong ab-
+sorption peak at 780 nm, nanocarrier V@R-T encapsulated with
+vanadium-based nanozyme VOx without ICG was selected to do
+the related experiment. Based on the diﬀerence of microenviron-
+ment between normal tissue and tumor tissue, the eﬀect of pH
+on the production of ∙OH was explored. It was found that the
+characteristic absorption peak was signiﬁcantly enhanced at pH
+6.5, however, this phenomenon did not occur in pH 7.4. This
+indicated that the nanocarrier only exhibited POD mimetic en-
+zyme activity under weakly acidic condition (Figure S7, Support-
+ing Information). Therefore, subsequent experiment was chosen
+to explore the inﬂuence of other condition on the production of
+∙OH in the weakly acidic environment. Meanwhile, it was also
+found that neither TMB nor H2O2 detected signiﬁcant character-
+istic absorption peak at 650 nm under weakly acidic condition,
+whereas signiﬁcant absorption appeared when H2O2 was added
+to V@R-T (Figure 3D), and the absorption peak exhibited the sig-
+niﬁcant concentration dependence, which was signiﬁcantly en-
+hanced with the increase of the nanocarrier and H2O2 concen-
+tration (Figure 3E,F), and also veriﬁed that the presence of mixed
+valence state of vanadium-based nanozyme supported the redox-
+active mimetic enzyme property.
+Despite the promising application of the nano-enzymatic
+mechanism of action, due to the short lifetime of ROS, it would
+be scavenged by the high level of reducing substance in can-
+cer cell during the ROS-based therapy, which greatly diminished
+therapeutic eﬀect. In this case, a complementary strategy was to
+interfere with tumor metabolism through enzyme-like catalytic
+processes. As two important coenzyme factors of the cell energy
+metabolism, NADH and NAD+ participate in many redox reac-
+tions in the body, and also provide the proton power for the elec-
+tron respiratory transport chain of mitochondria, and are also im-
+portant for producing ATP during the oxidative phosphorylation
+of tumor cell. And NADH, as a reducing substance can also clear
+ROS.[44] Since V@R-T exhibited excellent POD-mimicking en-
+zyme activity, it was further explored whether it could simulate
+NADH oxidase (NOX) activity to deplete NADH by absorption
+Adv. Funct. Mater. 2025, 35, 2504404
+© 2025 Wiley-VCH GmbH
+2504404 (5 of 18)
+ 16163028, 2025, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202504404 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 3. Characterization of catalytic property of nanocarrier. A) The concentration of dissolved oxygen produced by diﬀerent material after adding
+H2O2. B) The change of dissolved oxygen concentration after VI@R-T incubating with diﬀerent concentration of H2O2. C) The change of dissolved
+oxygen concentration after VI@R-T incubating with H2O2 at diﬀerent pH for 3 h. D) The absorption spectra of ∙OH produced by the nanocarrier V@R-T
+after reacting with H2O2. The absorption spectra of ∙OH produced by diﬀerent concentration of nanocarrier E) V@R-T and F) H2O2. The change of
+absorption spectra of the NADH depleted by nanocarrier G) V@R-T and H) R-T with time; the schematic of the dual enzyme activity of vanadium-based
+nanozyme I) VOx.
+spectroscopy. It was found that when the low concentration
+nanocarrier V@R-T (12.5 μg mL−1) was incubated with NADH,
+the absorption of NADH at 340 nm gradually decreased over
+time, while the absorption value of NAD+ at 280 nm gradually
+increased (Figure 3G). In addition, the higher the concentration
+of V@R-T nanocarrier, the change in absorption of NADH at
+340 nm is higher (Figure S8, Supporting Information). How-
+ever, the absorption spectrum of NADH in the R-T nanocar-
+rier system hardly changed (Figure 3H), excluding the inﬂuence
+of the nanocarrier itself on NADH depletion. This proved that
+vanadium-based nanozyme could deplete NADH through NOX
+mimicking enzyme activity, thus oxidizing NADH to NAD+. The
+above result indicated that the vanadium-based nanozyme VOx
+not only possessed POD mimetic enzyme activity to produce ∙OH
+through Fenton-like reaction, but also exhibited excellent NADH
+mimetic enzyme activity to consume NADH, thus decreasing the
+chance of ROS generated to be scavenged by reducing substance
+in tumor cell, and this kind of vanadium-based nanozyme with
+dual enzyme activity could undoubtedly signiﬁcantly improve the
+eﬀect of ROS-based treatment (Figure 3I).
+2.3. In Vitro Activity Study of VI@R-T Nanocarrier
+First, whether the nanocarrier could be eﬀectively taken up by
+tumor cell was investigated at the cellular level. The nanocar-
+rier VI@R-T was incubated with mouse breast cancer 4T1 cell
+for diﬀerent time and the ﬂuorescence intensity of ICG in the
+nanocarrier was analyzed by confocal ﬂuorescence imaging and
+ﬂow cytometry. It was observed that the red ﬂuorescence of
+ICG began to appear in the cytoplasm after 1 h of incuba-
+tion, and the intracellular red ﬂuorescence gradually increased
+Adv. Funct. Mater. 2025, 35, 2504404
+© 2025 Wiley-VCH GmbH
+2504404 (6 of 18)
+ 16163028, 2025, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202504404 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 4. Fluorescence imaging and ﬂow analysis of VI@R-T nanocarrier at the cellular level. A) Fluorescence imaging and B) ﬂow analysis of cellular
+uptake of nanocarrier after incubation for diﬀerent time. C) The confocal image of subcellular localization of VI@R and VI@R-T and corresponding
+ﬂuorescence quantitative analysis after 6 h incubation with cell. D) The statistic of Pearson’s correlation coeﬃcient analysis of intracellular ﬂuorescence
+intensity. E) The ﬂuorescence imaging and ﬂow analysis of intracellular ROS detected by DCFH-DA after 4T1 cell with diﬀerent treatment F) hemolysis
+assay of VI@R-T nanocarrier and the inset showed the cell smear micrograph of the nanocarrier incubated with red blood cell for 6 h.
+with the extension of incubation time, which also indicated that
+more and more nanocarrier entered the tumor cell through the
+endocytosis pathway (Figure 4A). The result of ﬂow cytometry
+was consistent with ﬂuorescence imaging and also demonstrated
+a time-dependent enhancement trend (Figure 4B). Compared
+with the control group, the intracellular relative ﬂuorescence
+intensity was ≈9.45% after incubation for 1 h, and increased
+to 55.85% when incubation time was extended to 6 h (Figure
+S9, Supporting Information). It has been reported that after the
+nanocarrier entering cell and being internalized, they were usu-
+ally transported to the endosome/lysosome and escaped through
+lysosome for subsequent intracellular targeting. Because of the
+Adv. Funct. Mater. 2025, 35, 2504404
+© 2025 Wiley-VCH GmbH
+2504404 (7 of 18)
+ 16163028, 2025, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202504404 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+negative charge of the cell and mitochondrial membrane, triph-
+enylphosphine (TPP), as a delocalized lipophilic cation, was used
+to mediate tumor drug to overcome the barrier of cell and mito-
+chondrial membrane and ﬁnally target mitochondria.[47] In the
+design of the nanocarrier, TPP was covalently linked to DSPE-
+mPEG-NH2 via the amidation reaction and embedded into the
+erythrocyte membrane, which endowed the nanocarrier with the
+ability of targeting to mitochondria. So, the unmodiﬁed TPP-
+targeted phospholipid nanocarrier VI@R and the modiﬁed TPP-
+targeted phospholipid nanocarrier VI@R-T were prepared to ex-
+plore whether TPP has the property of inducing the aggregation
+of nanocarrier in mitochondria. The internalization process of
+the two nanocarriers in cancer cell was observed by confocal ﬂu-
+orescence imaging, in which Mito Tracker Green labeled mito-
+chondria was shown in green, Hoechst 33 342 labeled nuclei
+was shown in blue, and ICG in the nanocarrier was shown in
+red ﬂuorescence. The result of co-localization ﬂuorescence imag-
+ing showed that the red ﬂuorescence of ICG in cancer cell in-
+cubated with the nanocarrier VI@R partially overlapped with
+mitochondrial green ﬂuorescence, but the red ﬂuorescence in
+cancer cell incubated with nanocarrier VI@R-T showed obvious
+overlap, and the color was also close to yellow, showing obvi-
+ous mitochondrial targeting ability (Figure 4C). The colocaliza-
+tion analysis of ﬂuorescence intensity of cell in the two groups
+also showed that Pearson’s correlation coeﬃcient of VI@R-T
+was 0.854, much higher than 0.459 of VI@R (Figure 4D), which
+veriﬁed that the nanocarrier modiﬁed with TPP phospholipid
+was able to speciﬁcally target to subcellular organelle mito-
+chondria. To further verify the targeting mechanism of mem-
+brane potential diﬀerence on mitochondria, we pre-treated cell
+with carbonyl cyanide 3-chlorophenylhydrazone (CCCP, 5 μm),
+which was an ionophobe that causes a rapid decline in mito-
+chondrial membrane potential. The result showed that after 6 h
+of co-incubation, the red ﬂuorescence (ICG) of CCCP+VI@R-
+T treatment group barely overlapped with the green ﬂuores-
+cence of mitochondria, and that Pearson’s correlation coeﬃcient
+of was 0.42, much lower than the cell not treated with CCCP.
+This further highlighted the signiﬁcance of the mitochondrial
+membrane potential in TPP targeting (Figure S10, Supporting
+Information).
+The main pathway of apoptosis induced by nanocarrier VI@R-
+T was ROS-based therapy, which involved the production of ∙OH
+by the vanadium-based nanozyme VOx through the Fenton-like
+reaction and singlet oxygen (1O2) by the sonodynamic eﬀect of
+ICG under ultrasonic stimulation. Then, DCFH-DA was used as
+an indicator to investigate the intracellular ROS production, in
+which non-ﬂuorescent DCFH-DA can be oxidized to with green
+ﬂuorescence DCF by intracellular ROS, and the more ROS gen-
+erated, the stronger intracellular green ﬂuorescence. After dif-
+ferent nanocarrier was incubated with cancer cell for 6 h, the
+ﬂuorescence imaging showed that very little green ﬂuorescence
+appeared in the blank control group and the ultrasound treated
+group due to the presence of endogenous ROS in the cancer cell,
+indicating that ultrasound treatment could not induce ROS pro-
+duction (Figure 4E). Some green ﬂuorescence appeared in the
+group incubated with V@R-T nanocarrier, which was due to the
+production of ∙OH by the vanadium-based nanozyme VOx via the
+Fenton-like reaction in response to TME. And the group incu-
+bated with I@R-T nanocarrier after ultrasonic treatment showed
+more obvious intracellular green ﬂuorescence compared with the
+V@R-T treatment group, which was attributed to the fact that
+the sonosensitizer I@R-T was swallowed into the cell and gen-
+erated ROS through the sonodynamic eﬀect, while the natural
+enzyme system of the erythrocyte membrane catalyzed the de-
+composition of high concentration of H2O2 to produce oxygen in
+tumor cell, thereby promoting the eﬀect of sonodynamic to prod-
+uct ROS. While the intracellular green ﬂuorescence intensity of
+cancer cell incubated with VI@R-T nanocarrier was signiﬁcantly
+enhanced with ultrasonic stimulation, which was due to the ef-
+fect of the superposition of two groups mentioned above. The in-
+tracellular production of ROS in each treatment group was also
+further assessed by ﬂow cytometry. The result showed that the rel-
+ative ﬂuorescence intensity of DCF in each group was basically
+consistent with the result of ﬂuorescence imaging, the intracellu-
+lar relative ﬂuorescence intensity after ultrasonic treatment was
+essentially indistinguishable from that of control group, whereas
+in the VI@R-T treatment group stimulated by ultrasound had
+the strongest relative ﬂuorescence intensity, which also indicated
+that the prepared nanosensitizer could eﬀectively generate ROS
+in cancer cell, providing a strong feasibility validation for ROS-
+based therapy. Meanwhile, the blood compatibility was important
+for biosafety evaluation, and the blood safety of nanocarrier was
+also evaluated through the hemolysis experiment of the nanocar-
+rier on red blood cell. The result showed that the hemolysis rate
+of the red blood cell was 100% in water, while it was 0 in PBS,
+which was due to the diﬀerence in osmotic pressure (Figure 4F).
+When the nanocarrier VI@R-T was incubated with red blood cell
+for 6 h and the concentration was as high as 1 mg mL−1, a slight
+hemolysis phenomenon occurred, and when the concentration
+of the nanocarrier was smaller, the hemolysis rate was also lower.
+Moreover, the cell smear made by incubating diﬀerent concentra-
+tion of nanocarrier with red blood cell observed by microscope,
+which showed that the morphology of erythrocyte was basically
+the same as that in the PBS treatment group, and the shape
+was keep relatively complete, whereas the red blood cell in water
+showed more fragmentation due to hemolysis. This also proved
+that the nanocarrier had good haemocompatibility with erythro-
+cyte, which provided a safety guarantee for the in vivo mouse
+test.
+Next, the biosafety of nanocarrier was further explored at
+the cellular level. The cytotoxicity of diﬀerent concentration of
+nanocarrier on mouse embryonic ﬁbroblast cell (3T3) and mouse
+ﬁbroblast cell (L929) was studied by standard MTT assay. It
+was found that even when the concentration of nanocarrier was
+as high as 100 μg mL−1, two kinds of cell had high cell sur-
+vival rates of 89.26% and 94.59%, respectively (Figure S11A,
+Supporting Information), indicating that the nanocarrier exhib-
+ited low toxicity and good biosafety to the normal cell. How-
+ever, when diﬀerent concentration of nanocarrier was incubated
+with mouse breast cancer 4T1 cell, the cytotoxicity result demon-
+strated that the cell survival rate decreased signiﬁcantly with the
+increase of nanocarrier concentration, showing an obvious con-
+centration dependence, and the cell survival rate was only 67.5%
+when the nanocarrier concentration reached 100 μg mL−1 (Figure
+5A). This was because the growth of tumor cell was more vig-
+orous than that of normal cell, and the weak acidic microen-
+vironment and relatively high H2O2 content in the tumor cell
+provided the necessary condition for the Fenton-like reaction of
+Adv. Funct. Mater. 2025, 35, 2504404
+© 2025 Wiley-VCH GmbH
+2504404 (8 of 18)
+ 16163028, 2025, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202504404 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 5. Therapeutic eﬀect and mitochondrial damage of VI@R-T nanocarrier on 4T1 cell. A) The cell viability of 4T1 cell with diﬀerent concentration of
+VI@R-T nanocarrier and ultrasonic treatment was determined by MTT assay. The relative level of intracellular B) NADH and C) ATP. D) The ﬂuorescence
+imaging of intracellular oxygen content under normal and anaerobic condition detected by ruthenium dichloride. E) The ﬂuorescence imaging of mito-
+chondrial membrane potential of 4T1 cell with diﬀerent treatment. F) Calcein-AM and PI staining of 4T1 cell with diﬀerent treatment for ﬂuorescence
+imaging, G) ﬂow cytometry and H) the proportion of diﬀerent cell types.
+vanadium-based nanozyme VOx to produce ∙OH, which was
+conducive to the chemodynamic therapy in cancer cell. In con-
+trast, the nanocarrier R-T without encapsulating any substance,
+showed good cytocompatibility to 4T1 cell, and the cell sur-
+vival rate was 98.4%, suggesting that the erythrocyte membrane
+nanocarrier had good safety and did not have any therapeutic ef-
+fect on cancer cell (Figure S11B, Supporting Information). When
+the incubation time of nanocarrier was extended to 24 h, the
+cell viability was signiﬁcantly reduced. And the IC50 of nanocar-
+rier by incubating 4T1 cells with varying concentrations for
+Adv. Funct. Mater. 2025, 35, 2504404
+© 2025 Wiley-VCH GmbH
+2504404 (9 of 18)
+ 16163028, 2025, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202504404 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+24 h was 33.93 μg mL−1 by MTT assay (Figure S12, Supporting
+Information).
+Subsequently, the therapeutic eﬀect of ultrasound-triggered
+SDT on cancer cell was also detected by MTT assay. The result
+demonstrated that after ultrasound stimulation, the cell viabil-
+ity of the control group was almost unaﬀected and still main-
+tained the high cell survival rate, however, the cell viability of
+the VI@R-T+US treatment group was signiﬁcantly decreased,
+and gradually declined with the increase of the nanocarrier con-
+centration (Figure 5A). When the concentration of nanocarrier
+was 25 μg mL−1, the cell survival rate decreased to 70.50%, show-
+ing a signiﬁcant diﬀerence compared with the cell in the non-
+ultrasound-treated group (p < 0.05). When the concentration of
+nanocarrier was 100 μg mL−1, the survival rate of ultrasound-
+stimulated cell was only 33.43%, which was even more signif-
+icantly diﬀerent from that of the non-ultrasound-treated group
+(p < 0.01), indicating that the eﬀect of sonodynamic combined
+with chemodynamic of nanocarrier was signiﬁcantly better than
+that of the single treatment group. In addition, Mitochondria
+act as the powerhouse of the cell, and oxidative phosphorylation
+was central to the glycolytic metabolism of tumor cell, in which
+electron was transferred to the transmembrane protein complex
+in the inner membrane of the mitochondria, that was the elec-
+tron transport chain (ETC). Therefore, continuous NADH/NAD+
+cycling was important for cell proliferation and biosynthesis.
+The relative content of intracellular NADH after incubation
+with the nanocarrier V@R-T encapsulated with vanadium-based
+nanozyme was detected using the NADH detection kit, and
+the result revealed that the intracellular NADH content gradu-
+ally declined with the increase of the nanocarrier concentration,
+which showed an obvious dose-dependence, suggesting that the
+nanocarrier treatment group seriously aﬀected the NADH/NAD+
+cycle, thus disturbing the cellular energy metabolism homeosta-
+sis (Figure 5B). In addition, the relative content of intracellular
+ATP was detected by the ATP detection kit, and found that the
+intracellular ATP produced by the nanocarrier treatment group
+was severely inhibited, and the decrease rate was as high as 60.3%
+when the concentration was 100 μg mL−1 compared with the con-
+trol group (Figure 5C). It was inferred that because endogenous
+NADH played a key role in the transmembrane proton translo-
+cation and proton dynamic required for ATP synthesis, once the
+NADH/NAD+ cycle was disrupted and then the electron trans-
+port chain was damaged, thereby reducing the mitochondrial
+membrane potential and ultimately leading to the inhibition of
+ATP synthesis.
+Then, whether the nanocarrier could eﬀectively alleviate hy-
+poxia in cancer cell was explored. During the experiment, the
+4T1 cell was treated with the anoxic mimicant deferriamine to
+simulate the anoxic environment of tumor, and [Ru(dpp)3]Cl2
+was used as an indicator to monitor intracellular oxygen content.
+The complex exhibited bright red ﬂuorescence, and the gener-
+ated oxygen would quench the red ﬂuorescence, that was, the
+higher the amount of intracellular oxygen, the weaker the red ﬂu-
+orescence. The result showed that cancer cell in the anoxic state
+showed bright red ﬂuorescence due to insuﬃcient oxygen con-
+tent, while the red ﬂuorescence of cell cultured in the normal
+state was signiﬁcantly weaker (Figure 5D). However, regardless of
+normal state or anaerobic state, when the cell was incubated with
+the same concentration of erythrocyte vesicle R-T, the intracellu-
+lar red ﬂuorescence was signiﬁcantly weaker compared with the
+control group. The ﬂuorescence intensity was weakened when
+the cell was incubated with the nanocarrier V@R-T encapsu-
+lated with vanadium-based nanozyme, which further suggested
+that vanadium-based nanozyme VOx cooperated with the erythro-
+cyte membrane to alleviate hypoxia. The possible reason was that
+vanadium-based nanozyme VOx disrupted NADH/NAD+ cycling
+and damaged mitochondrial electron transport chain, resulting
+in a decrease in ATP level, thereby inhibiting mitochondrial res-
+piration and reprograming oxygen metabolism in tumor cell. Fur-
+thermore, it had been reported that mitochondrial ETC function
+damage caused by NADH/NAD+ imbalance was generally con-
+sidered to be one of the important causes of cell dysfunction.[30]
+Therefore, mitochondrial membrane potential was detected us-
+ing the ﬂuorescent dye JC-1, which was sensitive to the mitochon-
+drial membrane potential. When the mitochondrial membrane
+potential decreased, the JC-1 dye changed from the red color of
+the JC-1 aggregate to the green color of the JC-1 monomer. The
+ﬂuorescence imaging result revealed that the cancer cell in the ul-
+trasound treatment group exhibited bright red ﬂuorescence and
+very weak green ﬂuorescence as in the control group (Figure 5E).
+However, when the nanocarrier VI@R-T was incubated with can-
+cer cell, the red ﬂuorescence was relatively weakened, while the
+green ﬂuorescence was slightly enhanced. And after the ultra-
+sonic stimulation was applied, the cell showed obvious green ﬂu-
+orescence and extremely weak red ﬂuorescence, suggesting that
+most mitochondria were in the state of depolarization, which also
+indicated that the nanocarrier could induce mitochondrial func-
+tion damage. Based on the above result, nanocarrier could eﬀec-
+tively promote mitochondrial damage. The double staining ﬂuo-
+rescence imaging of 4T1 cell using Calcein-AM and PI was per-
+formed with diﬀerent treatment to verify the synergistic thera-
+peutic eﬀect. In which, Calcein-AM could stain living cell with
+strong green ﬂuorescence, and PI could label dead cell with red
+ﬂuorescence. It was demonstrated that ultrasound-treated 4T1
+cell exhibited bright green ﬂuorescence without red ﬂuorescence
+as in the control group, indicating that ultrasound had almost
+no eﬀect on cancer cell. While in the VI@R-T treatment group,
+there was some red ﬂuorescence as well as green ﬂuorescence,
+which was due to the ∙OH induced apoptosis of cancer cell by
+the Fenton-like reaction of the nanocarrier VI@R-T. After ultra-
+sonic stimulation, there was a large amount of red ﬂuorescence
+and very little green ﬂuorescence in the cell, suggesting that the
+sonodynamic eﬀect of the nanocarrier signiﬁcantly promoted cell
+apoptosis, which also demonstrated that CDT combined with
+SDT could eﬀectively inhibit the growth of cancer cell (Figure 5F;
+Figure S13, Supporting Information). Furthermore, to quantita-
+tively study the apoptosis induced by the nanocarrier VI@R-T,
+4T1 cell was analyzed by Annexin V-FITC and PI ﬂow apoptosis
+staining. It could be seen that there was only very small amount
+of early apoptotic cell in the control group and the ultrasound
+treatment group, accounted for 2.61% and 5.90%, respectively
+(Figure 5G). Whereas the proportion of cell in early apoptosis
+state signiﬁcantly increased to 18.2% in the nanocarrier VI@R-T
+treatment group. And after ultrasonication stimulation, ≈50.1%
+of cell was in the early apoptosis and late apoptosis state. Analy-
+sis of the cell in apoptotic and necrotic state in each group also
+demonstrated that the proportion of synergistic treatment group
+was signiﬁcantly higher than that in the other treatment groups
+Adv. Funct. Mater. 2025, 35, 2504404
+© 2025 Wiley-VCH GmbH
+2504404 (10 of 18)
+ 16163028, 2025, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202504404 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+(Figure 5H). This was consistent with the result of the ﬂuores-
+cence imaging and cytotoxicity treatment, and also suggested that
+CDT combined with SDT could synergistically inhibit cancer cell
+growth.
+In addition, it had been extensively shown that most tumor-
+related death was caused by tumor metastasis, that was, the ad-
+hesion between primary tumor cell decreased, then progressively
+acquired greater invasiveness through direct inﬁltration and im-
+plantation of blood, lymphatic vessel or adjacent structure.[47]
+The migration of tumor cell was studied by cell scratching ex-
+periment. In detail, 4T1 cell was incubated with diﬀerent con-
+centration of nanocarrier VI@R-T, and the inhibitory eﬀect of
+nanocarrier on cell migration was investigated at 0, 8, 24, 36,
+and 48 h, respectively. The result showed that the scratched of
+untreated tumor cell was almost completely healed due to the
+strong proliferation ability of cancer cell. However, when the
+cancer cell was treated with the concentration of 12.5 μg mL−1
+nanocarrier VI@R-T, signiﬁcant inhibitory eﬀect on cell migra-
+tion at 8 h, and the inhibition of migration could be maintained
+until 48 h (Figure S14, Supporting Information). In addition, the
+migration inhibition also showed an obvious concentration de-
+pendence, with the increase of the concentration of nanocarrier
+VI@R-T, the migration inhibition of tumor cell was stronger, in-
+dicating that the prepared nanocarrier could eﬀectively inhibit
+the growth of cancer cell, which further veriﬁed the therapeu-
+tic eﬀect and laid a solid foundation for in vivo treatment of
+tumor.
+2.4. In Vivo Biosafety Evaluation of VI@R-T Nanocarrier
+The biosafety of nanocarrier plays a very important role in the in
+vivo treatment of mice, therefore, the in vivo safety of nanocar-
+rier was assessed by evaluating the blood routine and biochem-
+ical index analysis. The six-week-old female Balb/C mice were
+randomly divided into three groups (ﬁve mice in each group, 18–
+22 g), which were divided into the control group, single injection
+group (one injection of nanocarrier for one day), and multiple in-
+jection group (three times injection of nanocarrier for 30 days).
+The result of blood routine showed that the red blood cell (RBC),
+hemoglobin (HGB) and platelet (PLT) of mice in the single in-
+jection group and multiple injection group remained almost un-
+changed compared with the control group, indicating that the
+nanocarrier had good blood compatibility (Figure S15B–D, Sup-
+porting Information). The white blood cell (WBC) of the mice in
+the multiple injection group decreased slightly compared with
+the control group, which might be due to fact that the leuko-
+cyte resisted the interference of foreign substance in the body
+(Figure S15A, Supporting Information). Subsequently, liver and
+renal function indexes were also tested, in which alanine amino-
+transferase (ALT), albumin transaminase (AST) and serum alka-
+line phosphatase (ALP) were used to evaluate the liver function
+indexes (Figure S15E, Supporting Information), and blood urea
+nitrogen (BUN), creatinine (CR), and uric acid (UA) were used
+to evaluate the renal function indexes (Figure S15F–H, Support-
+ing Information). The result showed that compared with the con-
+trol group, these indexes were not signiﬁcantly diﬀerent and were
+within the normal reference range. In addition, at the end of the
+observation period, whether the nanocarrier had any eﬀect on the
+organ was also determined by the change of the organ index of
+the mice in each group. The result demonstrated that the organ
+index of mice in either the single injection group or the multiple
+injection group compared with the control group, and they were
+all within the normal reference range (Figure S15I–L, Supporting
+Information). Meanwhile, the result of H&E section of the organ
+of the mice in each group also showed no obvious tissue dam-
+age or pathological change in the heart, liver, spleen, lung and
+kidney tissue (Figure S15M, Supporting Information). Therefore,
+the result conﬁrmed that the synthesized nanocarrier exhibited
+excellent biocompatibility and could be further used for in vivo
+experiment in mice.
+2.5. In Vivo Imaging of the VI@R-T Nanocarrier
+The main reason for the poor eﬃcacy of the ROS-based ther-
+apy was the low penetration retention eﬀect at the tumor site.
+Therefore, in this work, the tumor retention eﬀect and bio-
+logical distribution of nanocarrier in the mouse subcutaneous
+breast cancer model were mainly studied (6 weeks, 18–22 g).
+In this experiment, indocyanine green (ICG) contained in the
+VI@R-T nanocarrier was selected as the ﬂuorescent imaging
+dye, which was a near-infrared I-region ﬂuorescent dye and
+an FDA-approved dye for in vivo application, with a deeper
+depth of penetration into living tissue than the cyanine dye.
+By comparing the ﬂuorescence imaging of mice at diﬀerent
+time with the free dye ICG and the nanocarrier VI@R-T, it was
+found that the ﬂuorescence signal was distributed throughout
+the whole body of the mice shortly after injection of the free
+drug ICG and disappeared rapidly with the prolongation of time
+(Figure 6A). However, the ﬂuorescence intensity of ICG at tu-
+mor site decreased signiﬁcantly after 24 h of injection. In con-
+trast, in the nanocarrier VI@R-T treatment group, the ﬂuores-
+cent signal was mainly enriched in the tumor site, and the ﬂu-
+orescence signal of ICG in the tumor was still unusually pro-
+nounced after 48 h of injection. This also indicated that com-
+pared with free ICG, the nanocarrier VI@R-T exhibited a longer
+metabolic cycle due to the long blood circulation time in vivo of
+the red blood membrane. Subsequently, the major organs such
+as heart, liver, spleen, lung, kidney and tumor were stripped from
+mice injected with free drug ICG and nanocarrier VI@R-T at 6
+and 12 h, and ﬂuorescence imaging of the organs were performed
+by IVIS imaging system (Figure S16A, Supporting Information).
+The result demonstrated that the ﬂuorescence signal in the free
+ICG group was mainly distributed in lung and tumor, while that
+in the VI@R-T group was mainly distributed in tumor. At 12 h,
+the ﬂuorescence signal in the VI@R-T group was signiﬁcantly
+stronger than that in the free ICG group, which further con-
+ﬁrmed that the nanocarrier VI@R-T had good tumor retention
+performance.
+It has been extensively demonstrated that glycolysis, as well as
+the classic Warburg eﬀect, had been traditionally considered as
+the main energy source of cancer cell, oxidative phosphorylation
+(OXPHOS) was still the main pathway for the synthesis of ATP
+for most cell. NADH/NAD+, as an essential redox cofactor, pro-
+vided proton power to the electron transport chain through itera-
+tive oxidation.[30] In the previous in vitro experiment, it had been
+veriﬁed that vanadium-based nanozyme VOx could eﬀectively
+Adv. Funct. Mater. 2025, 35, 2504404
+© 2025 Wiley-VCH GmbH
+2504404 (11 of 18)
+ 16163028, 2025, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202504404 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 6. Distribution study of VI@R-T nanocarrier in vivo. A) The ﬂuorescence imaging at diﬀerent time after injection of free ICG and nanocarrier
+VI@R-T into the tail vein of 4T1 tumor bearing mice. B) The 2D deep-hypothermia autoﬂuorescence imaging of NADH and FAD. C) The redox ratio of
+NADH/(NADH+FAD), and the corresponding area histogram of 4T1 tumor at diﬀerent time.
+deplete NADH, thereby altering the relative content of NADH
+at the tumor site and aﬀecting the NADH/FAD redox balance.
+In this study, the deep cryogenic two/three-dimensional ﬂuores-
+cence imaging system induced by liquid nitrogen was used to
+detect endogenous NADH/FAD autoﬂuorescence intensity as an
+indicator to monitor the state of cell energy metabolism. The
+two-dimensional and three-dimensional imaging results showed
+that NADH ﬂuorescence signal was strong and FAD signal was
+weak in the tumor tissue before injection of nanocarrier VI@R-
+T, indicating that the tumor site showed a strong reduction state
+(Figure 6B; Figure S16B, Supporting Information). While the ﬂu-
+orescence intensity of NADH gradually decreased with the ex-
+tension of the injection time, and the ﬂuorescence intensity of
+FAD gradually increased, and the distribution pattern of redox
+ratio was consistent with that of NADH ﬂuorescence intensity. At
+12 h, the ﬂuorescence signal of NADH was the weakest, the ﬂu-
+orescence signal of FAD was the strongest, and the ﬂuorescence
+signal of NADH/(NADH+FAD) was also the weakest, suggesting
+that the tumor tissue was in a strong oxidation state at this time.
+Meanwhile, the regional intensity analysis of NADH redox also
+further veriﬁed the variation trend of NADH content in tumor
+site over time (Figure 6C). It could also be seen from the his-
+togram analysis diagram of the representative region that with
+the prolongation of injection time, the NADH/(NADH+FAD)
+value gradually weakened, and the redox ratio also gradually de-
+creased. This also further veriﬁed that nanocarrier could accumu-
+late in the tumor for a long time from the tissue level and gradu-
+ally consume intracellular NADH, which in turn interfered with
+the energy metabolism at the tumor site.
+2.6. In Vivo Synergistic Antitumor Study of VI@R-T Nanocarrier
+To evaluate the synergistic anti-tumor eﬀect of the nanocarrier
+VI@R-T in vivo, a treatment strategy was designed for 4T1 sub-
+cutaneous breast cancer mice (6 weeks, 18–22 g) (Figure 7A). In
+the sonodynamic therapy, oxygen was the basis for ROS genera-
+tion, and severe hypoxia in solid tumor limited the eﬀect of sono-
+dynamic therapy. The tumor was stripped from mice with diﬀer-
+ent treatment, and the hypoxia status of the tumor site was ob-
+served by immunoﬂuorescence staining with hypoxia-inducible
+factor (HIF-1𝛼) antibody. It was found that compared with the
+control group injected with PBS, the red ﬂuorescence of HIF-
+1𝛼in the tumor of mice injected with the VI@R-T treatment
+group was signiﬁcantly reduced, which was due to the relatively
+high level of H2O2 in the tumor tissue compared with the nor-
+mal tissue, and the abundant catalase enzyme in erythrocyte
+membrane catalyzed oxygen production (Figure 7B). In addi-
+tion, the vanadium-based nanozyme VOx damaged mitochon-
+drial electron respiratory transport chain through the depletion of
+NADH, inhibited mitochondrial respiration and reprogrammed
+oxygen metabolism, and the two superimposed eﬀect synergis-
+tically alleviated the hypoxic state of the tumor site. After ultra-
+sound stimulation was applied at this time, the red ﬂuorescence
+Adv. Funct. Mater. 2025, 35, 2504404
+© 2025 Wiley-VCH GmbH
+2504404 (12 of 18)
+ 16163028, 2025, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202504404 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 7. In vivo antitumor therapy of VI@R-T nanocarrier. A) The schematic illustration of treatment process for tumor. B) The immunoﬂuorescence
+staining of oxygen content in tumor site of 4T1 tumor bearing mice with PBS and VI@R-T treatment with US. C) Change of body weight and D) tumor
+volume of 4T1 tumor bearing mice with diﬀerent treatment. E) Change of tumor volume in diﬀerent parallel treatment groups. F) Tumor quality analysis
+of 4T1 tumor bearing mice with diﬀerent treatment. G) The white light graph of tumor. H) H&E stained section and enlarged image of tumor in each
+group. I) TUNEL immunoﬂuorescence staining.
+Adv. Funct. Mater. 2025, 35, 2504404
+© 2025 Wiley-VCH GmbH
+2504404 (13 of 18)
+ 16163028, 2025, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202504404 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+intensity of HIF-1𝛼was weakened, which might be due to the ul-
+trasound treatment could enhance the local blood circulation of
+the tumor, thereby improving the ischemic and hypoxic state of
+the cancer cell. When the tumor volume of 4T1 tumor-bearing
+mice reached ≈75 mm3, they were randomly divided into ﬁve
+groups (n = 5) and subjected to diﬀerent treatments: (I) PBS,
+(II) PBS+US, (III) V@R-T, (IV) I@R-T+US, (V) VI@R-T+US;
+Previous studies in our laboratory have shown that the single
+treatment of SDT had limited eﬀect, so in vivo anti-tumor ex-
+periment, the nanocarrier was injected three times and ultra-
+sonic stimulation was applied to the tumor at 3 and 6 h accord-
+ing to the ﬂuorescence imaging.[16] During the experiment, the
+change of body weight and tumor volume were measured every
+other day in each group, and the tumor treatment eﬀect was com-
+prehensively evaluated. The result demonstrated that the body
+weight of the mice in each group did not show any signiﬁcant
+change during the observation period, suggesting that the in-
+jected nanocarrier and ultrasound stimulation did not cause any
+signiﬁcant damage to the mice (Figure 7C). The tumor volume
+of each treatment group showed that compared with the con-
+trol group, the tumor volume growth rate of the multiple ul-
+trasound treatment group was slower, which might be due to
+the fact that the local heat generated at the tumor site by mul-
+tiple ultrasound treatment suppressed the rapid growth of the
+tumor to a certain extent (Figure 7D,E). However, the growth
+rate of tumor volume in the V@R-T treatment group was even
+slower, and there was a signiﬁcant diﬀerence compared with the
+control group (p<0.01), which was due to the CDT eﬀect of the
+nanocarrier on the tumor site. After injection of I@R-T nanocar-
+rier and ultrasound stimulation, the tumor volume growth rate
+of mice slowed down during the treatment period, but the tu-
+mor volume continued to increase with the extension of time,
+which was due to the decomposition of hydrogen peroxide by
+natural enzyme of the erythrocyte membrane in the nanocar-
+rier alleviated oxygen deﬁciency and enhanced the eﬀect of son-
+odynamic therapy. However, the eﬀect of sonodynamic therapy
+in the treatment group was still limited, and the tumor growth
+could not be completely inhibited. While the VI@R-T+US treat-
+ment group had the best tumor inhibition eﬀect, and the tumor
+growth rate was slower than that of the single treatment group,
+which was because vanadium-based nanozyme synergistically al-
+leviated intratumor hypoxia and showed stronger sonodynamic
+eﬀect and CDT eﬀect in response to TME, and there was very sig-
+niﬁcant compared to CDT and SDT treatment group (p<0.001).
+At the end of the observation period, the quality analysis and
+white light map after stripping tumor of mice with diﬀerent treat-
+ment groups also showed that the therapeutic eﬀect of the syn-
+ergistic treatment group VI@R-T+US treatment group had the
+most excellent therapeutic eﬀect (Figure 7F,G). Meanwhile, the
+white light map of mice photographed at diﬀerent days in each
+group during the observation period further illustrated the eﬀec-
+tive therapeutic eﬀect of the nanocarrier (Figure S17, Supporting
+Information).
+In brief, the in vivo therapeutic evaluation analysis showed
+that the tumor volume inhibition rate of nanocarrier coated with
+vanadium-based nanozyme (V@R-T) was ≈33.9% (Figure 7),
+that of nanocarrier coated with sonosensitizer ICG (I@R-T) was
+≈47.5%, and that of nanocarrier coated with vanadium-based en-
+zyme and sonosensitizer ICG (VI@R-T) was ≈67.1%. The syn-
+ergistic eﬀect is slightly smaller than the additive eﬀect of the
+two alone. The analysis of the inhibition rate of the stripped
+tumor also showed that the tumor inhibition rate of V@R-
+T was 30.7%, that of I@R-T was 43.8%, and that of VI@R-
+T was 67%. Similarly, the nanocarrier coated with both sub-
+stances had slightly lower tumor inhibition than the additive ef-
+fect of both alone. These results indicate that while nanozyme
+encapsulation inevitably inﬂuences the sonodynamic therapeu-
+tic eﬃcacy, the combination therapy group still achieved signiﬁ-
+cantly higher tumor suppression than either monotherapy group
+(p<0.001).
+In addition, the H&E and TUNEL staining were also per-
+formed on tumor of mice in diﬀerent treatment groups to further
+explore the therapeutic eﬀect of nanocarrier. The result demon-
+strated that a small number of apoptotic cell also appeared in
+the ultrasound treatment group, which might be due to the
+local thermal eﬀect caused by multiple ultrasonic stimulation
+(Figure 7H). It was also observed that apoptotic cell was more
+pronounced in the V@R-T and I@R-T+US nanocarrier treat-
+ment groups, indicating that both chemodynamic and sonody-
+namic therapy alone had some therapeutic eﬀect at the initial
+stage of treatment, whereas the synergistic VI@R-T+US treat-
+ment group exhibited a large number of apoptotic tumor cell af-
+ter the nanocarrier was enriched to the tumor and stimulated by
+ultrasound. The TUNEL staining also further veriﬁed that the cell
+apoptosis was most obvious in the VI@R-T+US treatment group
+and showed strong green ﬂuorescence, which also indicated that
+chemodynamic cooperated with sonodynamic therapy showed
+the best therapeutic eﬀect (Figure 7I). In summary, the ef-
+fect of chemodynamic therapy combined with sonodynamic
+therapy was signiﬁcantly better than that of single ther-
+apy. The multifunctional nanocarrier VI@R-T showed excel-
+lent biocompatibility in mice and achieved good therapeu-
+tic eﬀect, providing a new idea for designing eﬀective strat-
+egy for alleviating tumor hypoxia and enhancing sonodynamic
+therapy.
+3. Conclusion
+In this paper, a mitochondria-targeted erythrocyte vesicle
+nanocarrier loaded with vanadium-based nanozyme VOx and
+sonosensitizer ICG was developed as a biomimetic nanoplatform
+for ROS-based therapy, which eﬀectively alleviated hypoxia of tu-
+mor and achieved an enhanced combination of CDT and SDT
+eﬀect for tumor. The nanocarrier was targeted to the energy sup-
+plying organelle mitochondria, while vanadium-based nanozyme
+with NOX mimetic enzyme activity depleted NADH, aﬀecting
+the intracellular NADH/FAD balance and damaging the electron
+transport chain, inhibiting mitochondrial respiration and thus
+reducing intracellular oxygen consumption. Meanwhile, erythro-
+cyte vesicle could also catalyze the decomposition of high level of
+H2O2 in the TME to produce oxygen, which synergistically allevi-
+ated the hypoxia in tumor for oxygen supply during the ultrason-
+odynamic therapy. In addition, vanadium-based nanozyme VOx
+also exhibited excellent POD mimic enzyme activity and gener-
+ated ∙OH through the Fenton-like reaction under weakly acidic
+condition, thus increased ROS level for synergistic tumor cell
+killing. In this work, change of relative content of NADH/FAD
+in tumor tissue was also monitored, and the nanocarrier could
+Adv. Funct. Mater. 2025, 35, 2504404
+© 2025 Wiley-VCH GmbH
+2504404 (14 of 18)
+ 16163028, 2025, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202504404 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+alleviate oxygen deﬁciency and improve oxygen metabolism in
+the tumor site, and achieved the purpose of enhancing SDT and
+CDT therapy.
+4. Experimental Section
+Materials:
+Vanadium pentoxide (V2O5), indocyanine green (ICG)
+were purchased from Shanghai Macklin Biochemical Co., LTD. Citrate,
+acetone, dimethyl sulfoxide (DMSO) and nitric acid were purchased from
+Sinopharm Chemical Reagent Co., LTD. 3,3′,5,5′-tetramethylbenzidine
+(TMB), reduced Coenzyme I (NADH), (3-propyl carboxylic) triphenyl
+phosphine bromide (TPP), thiazolium blue tetrazolium bromide (MTT)
+and sodium borohydride (NaBH4) were purchased from Sigma–Aldrich; 1,
+2-distearoyl-sn-glycero-3-phosphoethanolamine-N-PEG2000-NH2
+(DSPE-
+mPEG2000-NH2)
+was
+purchased
+from
+Xi’an
+Ruixi
+Biotechnology
+Co., LTD. Annexin V, FITC apoptosis detection kit was purchased
+from Tongren Chemical Research Institute (Dojindo Laboratories);
+Hoechst 33 342, Calcein-AM and PI staining, Mito-Tracker Green, 2,7-
+Dichlorodihydroﬂuorescein diacetate (DCFH-DA), NAD+/NADH assay
+kit, ATP assay kit, Mitochondrial membrane potential assay kit (JC-1) were
+purchased from Beyotime Biotechnology. All the reagents used in the
+experiment were all of analytical grade and used directly without further
+puriﬁcation. The water used was ultrapure water (18.2 mΩ∙cm) produced
+by Milli-Q system. Female Balb/C mice (6 weeks, 18–22 g) was purchased
+from Beijing Hua Fu Kang Biotechnology Co., Ltd.
+Characterizations:
+The morphology of nanocarrier was characterized
+by HT7700 transmission electron microscope (TEM) (Hitachi, Japan). The
+hydrated particle size and zeta potential of the nanocarrier were measured
+on Nano-ZS90 nanometer (Malvern, UK). The functional group of the ma-
+terial was measured by Vertex 70 type infrared spectrometer (Bruker, Ger-
+many). The absorption spectrum was recorded by UV-2550 UV–vis spec-
+trophotometer (Shimadzu, Japan). WED-100 ultrasonic treatment appara-
+tus (Welld, China) was used as the ultrasonic trigger source. The elemental
+composition of nanocarrier was analyzed by AXIS-ULTRA DLD-600 W X-ray
+photoelectron spectra (XPS) (Shimadzu, Japan). The ﬂuorescence imag-
+ing of cell was conducted on IX-71 and Ti-2 inverted ﬂuorescent micro-
+scope and FV3000 confocal microscope (Olympus, Japan). Flow cytometry
+apoptosis assay and quantitative analysis of ﬂuorescence were measured
+by Cyto Flex ﬂow cytometer (Beckman Coulter, USA). The in vivo ﬂuores-
+cence imaging was performed on AniView100 multi-mode animal in IVIS
+imaging system (BLT, China). The in vivo NADH/FAD deep-hypothermia
+ﬂuorescence detection system was constructed by the laboratory.[45]
+Preparation of VI@R-T. Synthesis of DSPE-mPEG2000-TPP:
+Covalent
+linkage between TPP and phospholipid: 5 mg (3-propanecarboxy)
+triphenylphosphonium bromide Triphenylphosphonium bromide (TPP),
+13.275 mg EDC and 8.25 mg NHS were activated in 2 mL of MES so-
+lution for 1 h. Then, NaOH was added to adjust the pH to 8, 16.25 mg
+DSPE-mPEG2000-NH2 was added and stirred for 12 h. The solution was
+transferred into a dialysis bag (Mw = 2000 Da) and dialyzed in ultrapure
+water for 2 days. Finally, the product was freeze-dried and stored at −20 °C
+for subsequent experiments.
+Extraction of erythrocyte membrane (RBCM). The traditional hypotonic
+method was used to extract RBCM. The speciﬁc steps were as follows: the
+whole blood from female Balb/C mice was centrifuged at 3500 rpm for
+5 min at 4 °C to remove the plasma, and washed three times with pre-
+cooled phosphate buﬀer solution (PBS), then lysed in hypotonic buﬀer
+(0.25×PBS) at 4 °C for 4 h and washed several times with pre-cooled PBS
+until the supernatant was clear and transparent. The collected red blood
+cell shadow was broken in the ultrasonic crusher (25 kHz, 100 W) and
+then suspended in PBS. Then, the solution was extruded by Avanti micro
+extruder (400 and 100 nm polycarbonate porous membrane) for 40 times
+to obtain uniform erythrocyte vesicle.
+Synthesis of R-TPP. Mitochondria-targeted phospholipid insertion into
+erythrocyte membrane: TPP-conjugated phospholipid (DSPE-mPEG2000-
+TPP) was embedded in erythrocyte membrane vesicle by a post-insertion
+method based on previous work.[46] The DSPE-mPEG2000-TPP was added
+to the erythrocyte vesicle and stirred at 4 °C for 4 h, and centrifuged
+at 11 000 rpm for 15 min, and washed twice with PBS to remove free
+DSPE-mPEG2000-TPP, resulting in DSPE-mPEG2000-TPP-modiﬁed erythro-
+cyte vesicle (R-T).
+Synthesis of vanadium-based nanoenzyme VOx. First, VOx was syn-
+thesised according to the references with slight modiﬁcations.[47] V2O5
+(0.073 m, 20 mL) and citrate (0.15 m, 10 mL) were added sequentially
+and stirred at room temperature, and NaBH4 (1.1 m, 10 mL) was injected
+into the solution quickly after mixing, and the color changed to brownish
+green. After stirring for 4 h, the product was centrifuged at 11 000 rpm for
+10 min to remove unreacted impurity, and then centrifuged at 11 000 rpm
+for 10 min with two times volume of acetone to remove the precipitate,
+and then centrifuged the precipitate with 2:1 acetone and ultrapure water
+for two times to obtain the vanadium-based nanozyme VOx.
+Synthesis of VI@R-T. 1 mL of TPP-modiﬁed erythrocyte vesicle (RBC-T)
+(1 mg mL−1), 0.5 mL of VOx nanozyme (2 mg mL−1), and 0.5 mL of ICG
+(1 mg mL−1) were mixed and stirred for 4 h at 4 °C, and then the solution
+was successively extruded through 400 and 100 nm polycarbonate porous
+membrane for 40 times by using Avanti micro-extruder and centrifuged for
+several time. After centrifugation with ultrapure water for several times, the
+supernatant was colorless to obtain VI@R-T, and then the centrifuged so-
+lution was collected and lyophilized and stored at 4 °C. The same method
+was used to obtain V@R-T and I@R-T.
+Stability of VI@R-T:
+VI@R-T was stored in ultrapure water, PBS, NaCl,
+DMEM, DMEM+10% FBS, and the hydrated particle size was determined.
+In addition, VI@R-T dispersed in ultra-pure water was placed at 4 °C,
+25 °C, and 37 °C, respectively, and its hydration particle size and poly-
+dispersion coeﬃcient (PDI) were determined at 0, 4, 8, 12, 24, 48, 72, 96,
+and 120 h to evaluate the long-term stability of VI@R-T nanocarrier.
+Evaluation of Oxygen Generation Capacity of H2O2 Catalyzed by VI@R-T
+Nanocarrier:
+JPB-607A portable dissolved oxygen meter was used to de-
+tect the oxygen content produced by nanocarrier. Nanocarrier VI@R-T was
+placed in 5 mL PBS and continuously deoxygenated by passing argon gas
+until the concentration of dissolved oxygen in the solution decreased to
+0 mg mL−1. The ability of the nanocarrier VI@R-T (25 μg mL−1) catalyzing
+H2O2 (1 mm) to produce oxygen was investigated under diﬀerent condi-
+tion. At the same time, the eﬀect of catalyzing diﬀerent concentration of
+H2O2 (0, 0.5, 1, 2.5, and 5 mm) and storage at neutral and weakly acidic
+condition (pH 7.4, pH 6.5) for 3 and 12 h on the oxygen generation of
+nanocarrier were also investigated.
+Enzyme Catalytic Activity of the Nanocarrier V@R-T:
+First, the UV–vis
+absorption spectrum of TMB was detected by the classical colorimet-
+ric method to determine whether V@R-T possessed POD mimetic en-
+zyme activity of producing ∙OH. In brief, V@R-T (25 μg mL−1) was im-
+mersed in phosphate buﬀer of pH 7.4 and pH 6.5. Then, H2O2 (1 mm)
+and TMB (50 μm) was added to determine the change of absorption in-
+tensity in diﬀerent groups. In addition, the production of ∙OH by dif-
+ferent concentration of V@R-T (25, 50, 75, 100, and 200 μg mL−1) and
+diﬀerent concentration of H2O2 (0.5, 1, 2.5, 4, and 5 mm) was also
+investigated.
+Next, the NOX mimetic enzyme activity of V@R-T was also assessed
+by UV–vis absorption spectroscopy. Brieﬂy, V@R-T (12.5 μg mL−1) was
+mixed with NADH (50 μg mL−1), in which the same concentration of R-
+T (12.5 μg mL−1) was selected as the control group, the change of ab-
+sorption intensity of the system was measured at diﬀerent time. Diﬀerent
+concentration of nanocarrier V@R-T (12.5, 25, 37.5, and 50 μg mL−1) was
+used to determine the absorption change at 340 nm.
+Cellular Uptake of the Nanocarrier VI@R-T:
+4T1 cell was inoculated
+into confocal dish for overnight culture. After removing the medium, 1 mL
+serum-free medium containing VI@R-T (50 μg mL−1, 18 μg VOx, and 6 μg
+ICG) was added and incubated for 1, 2, 4, and 6 h. The cell was washed
+three times with PBS and stained with DAPI for 10 min, then observed
+and photographed under laser confocal scanning microscopic imaging
+system. Meanwhile, 4T1 cell was inoculated into 6-well plate for overnight
+incubation, and after removing the medium, and 1 mL serum-free medium
+containing VI@R-T (50 μg mL−1) was added and incubated for 1, 2, 4, and
+6 h respectively, and then the 10 000 cells were collected and analyzed of
+ICG ﬂuorescence intensity by Cytoﬂex ﬂow cytometer.
+Adv. Funct. Mater. 2025, 35, 2504404
+© 2025 Wiley-VCH GmbH
+2504404 (15 of 18)
+ 16163028, 2025, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202504404 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Mitochondrial Colocalization Microscopic Imaging of the Nanocarrier
+VI@R-T:
+4T1 cell was inoculated into confocal dish for overnight culture.
+After removing the medium, 1 mL serum-free medium containing VI@R-T
+and VI@R (50 μg mL−1, 18 μg VOx, and 6 μg ICG) was added and incu-
+bated for 6 h. The cell was washed three times with PBS and stained with
+Mito-Tracker Green for 30 min, Hoechst 33 342 was stained for 10 min
+and then observed and photographed under laser confocal scanning mi-
+croscopic imaging system.
+Detection of Intracellular ROS by VI@R-T:
+Intracellular ROS was de-
+tected by DCFH-DA. 4T1 cell was inoculated into 6-well plate for overnight
+culture. After removing the medium, 1 mL serum-free medium containing
+the same concentration V@R-T, I@R-T, VI@R-T (50 μg mL−1, 18 μg VOx,
+and 6 μg ICG) was added and incubated for 6 h. After washing three times
+with PBS, serum-free medium with DCFH-DA (10 μm) was added and in-
+cubated for 30 min. Afterward, three groups of cells were treated with ul-
+trasonic wave (1.0 W cm−2) for 3 min, and then photographed under ﬂu-
+orescence microscope. Meanwhile, the cell was collected under the same
+condition and analyzed for the ﬂuorescence intensity of DCF in 10 000 cells
+by Cytoﬂex ﬂow cytometry.
+Hemolysis Study of VI@R-T:
+A total of 2 mL of fresh blood from 6-
+week-old female Balb/C mice was placed in EDTA k2 anticoagulant tube.
+After repeated cleaning and centrifugation with PBS, red blood cell was ob-
+tained and then resuspended in 10 mL of PBS. Diﬀerent concentration of
+VI@R-T (0.07, 0.13, 0.25, 0.5, and 1 mg mL−1) was added to equal amount
+of erythrocyte suspension, and the PBS and ultrapure water groups were
+set as negative and positive control groups, with three parallels in each
+group. After 1 and 6 h culture in 5% CO2 incubator, the supernatant was
+taken into 96-well plate and the absorption value at 570 nm was measured
+by microplate reader. Finally, cell precipitate of the ultrapure water group,
+PBS group and VI@R-T (0.5 and 0.07 mg mL−1) group were prepared into
+cell smear and the morphology of the erythrocyte was observed by micro-
+scope. All animal experiments were approved by the Animal Experimen-
+tal Ethics Committee of Huazhong University of Science and Technology
+(IACUC Number: 4208).
+The hemolysis rate (%) = (ODsample −ODPBS
+) ∕
+(ODwater −ODPBS) × 100%
+(1)
+In Vitro Cytotoxicity of Nanocarrier VI@R-T:
+The cell toxicity was de-
+termined by MTT assay. For normal cells, 3T3 and L929 cells of logarith-
+mic growth stage were inoculated into 96-well plate for overnight culture
+and then removed from the media. Five parallel samples were set in each
+group, and 200 μL serum-free medium containing diﬀerent concentration
+of VI@R-T (0, 6.25, 12.5, 25, 50, and 100 μg mL−1) was added and cultured
+for 12 h, the above medium was removed and cleaned three times with
+PBS, and each well was continued to be cultured with complete medium
+for 12 h. Afterward, 20 μL thiazolium blue (5 mg mL−1) was added and
+cultured for another 4 h, which was discarded and added 150 μL DMSO.
+Finally, the plate was shaken slowly for 20 min and the cell viability was de-
+termined by measuring the absorbance at 490 nm with microplate reader.
+Cell viability (%) = (experimental group −blank group) ∕
+(control group −blank group)
+(2)
+The toxicity of nanocarrier R-T on 4T1 cell was also calculated by the
+same assay.
+In Vitro Synergistic Therapy of Nanocarrier VI@R-T:
+The synergistic
+therapeutic eﬀect of VI@R-T on 4T1 cell was also determined by MTT
+assay. 4T1 cell was incubated with serum-free medium containing diﬀer-
+ent concentration of VI@R-T (0, 6.25, 12.5, 25, 50, and 100 μg mL−1) for
+6 h, washed with PBS for three times and treated with ultrasonic wave
+(1.0 W cm−2) for 3 min and the each well was cultured with the com-
+plete medium for 18 h. Afterward, 20 μL thiazolium blue (5 mg mL−1) was
+added and cultured for another 4 h, which was discarded and added 150 μL
+DMSO. Finally, the plate was shaken slowly for 20 min and the cell viability
+was determined by measuring the absorbance at 490 nm with microplate
+reader.
+Intracellular NADH Content Assay:
+4T1 cell was inoculated into 6-well
+plate for overnight culture. After removing the medium, 1 mL serum-
+free medium containing diﬀerent concentration of V@R-T (12.5, 25, and
+50 μg mL−1) was added and incubated for 6 h. After washing three times
+with PBS, and the relative NADH content was determine according to the
+NAD+/NADH assay kit.
+Intracellular ATP Content Assay:
+4T1 cell was inoculated into 6-well
+plate for overnight culture. After removing the medium, 1 mL serum-
+free medium containing diﬀerent concentration of V@R-T (12.5, 25, and
+50 μg mL−1) was added and incubated for 6 h. After washing three times
+with PBS, and the relative NADH content was determine according to the
+ATP assay kit.
+Intracellular Oxygen Content Detection:
+4T1 cell was inoculated into
+6-well plate for overnight culture. After removing the medium, 1 mL
+serum-free media containing the same concentration of R-T and V@R-T
+(50 μg mL−1, 18 μg VOx, and 6 μg ICG) was added and incubated for 6 h.
+Speciﬁcally, deferriamine (30 μm) was added and sealed with liquid wax to
+simulate intracellular anaerobic environment. After washing three times
+with PBS, serum-free medium with [Ru(dpp)3]Cl2 (30 μm) was added
+and incubated for 30 min, and then photographed under ﬂuorescence
+microscope.
+Fluorescence Imaging of Intracellular JC-1 Staining:
+Mitochondrial
+membrane potential was measured by Mitochondrial Membrane Poten-
+tial Detection Kit (JC-1). 4T1 cell was inoculated into 6-well plate and incu-
+bated overnight. After removing the medium, 1 mL of serum-free medium
+containing VI@R-T (50 μg mL−1, 18 μg VOx, and 6 μg ICG) was added
+and incubated for 6 h. After washing three times with PBS, the cell was
+treated with ultrasonic wave (1.0 W cm−2) for 3 min, and 1 mL JC-1 dye
+solution was added to each well and incubated for 20 min. Then, the cell
+was washed twice with JC-1 dye buﬀer and observed under ﬂuorescence
+microscope.
+Intracellular Dead and Alive Staining Analysis:
+4T1 cell was inoculated
+into 6-well plate and incubated overnight. After removing the medium,
+1 mL of serum-free medium containing VI@R-T (50 μg mL−1, 18 μg VOx,
+and 6 μg ICG) was added and incubated for 6 h. After washing three
+times with PBS, the two groups of cells were treated with ultrasonic wave
+(1.0 W cm−2) for 3 min, and then stained with Calcein-AM and PI staining
+solution for 5 min, and the staining solution was removed and cleaned
+with PBS for three times, then observed under ﬂuorescence microscope.
+For the ﬂow apoptosis experiment, Annexin V-FITC/PI apoptosis staining
+solution was added into each well successively under the same treatment
+condition for 15 min. After washing three times with PBS, 10 000 cells were
+quantiﬁcationally analyzed for apoptosis by ﬂow cytometer.
+Migration Inhibition Assay of 4T1 cell by VI@R-T:
+Before the cell was
+inoculated in 12-well plate, two parallel lines were drawn in the center of
+each hole at the bottom of the plate with a marker, and 4T1 cell was inoc-
+ulated in 12-well plate and cultured overnight, and the tip of the gun was
+scratched perpendicularly to the two parallel lines mentioned above with
+a ruler, and the scratches were kept consistent in each well. After wash-
+ing three times with PBS, 1 mL of complete medium containing VI@R-T
+(12.5, 25, and 37.5 μg mL−1) was added and photographed under the mi-
+croscope at 0, 8, 24, 36, and 48 h.
+In Vivo Toxicity Assay of VI@R-T:
+The 6-week-old female Balb/C mice
+were randomly divided into three groups: single tail vein injection group
+(injection with once nanocarrier and observation for one day), multiple tail
+vein injection group (injection with three times every three days for obser-
+vation 30 days) (2 mg mL−1) and control group (injection with PBS). At
+the end of the observation period, the mice in each group were weighed,
+then the mice were sacriﬁced and blood was collected for detection blood
+routine and blood biochemical indexes. At the same time, the heart, liver,
+spleen and lungs of each group of mice were stripped and weighed to cal-
+culate the organ index, and then ﬁxed with 4% paraformaldehyde, paraﬃn
+embedded, sliced and H&E staining was performed.
+Organ index = organ weight∕mouse weight × 100%
+(3)
+Adv. Funct. Mater. 2025, 35, 2504404
+© 2025 Wiley-VCH GmbH
+2504404 (16 of 18)
+ 16163028, 2025, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202504404 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+In Vivo Fluorescence Imaging of VI@R-T:
+6-week-old female Balb/C
+mice were subcutaneously inoculated with 4T1 cell (106) to construct
+the subcutaneous breast cancer tumor model. When the tumor volume
+reached ≈100 mm3, free drug ICG and VI@R-T (20 mg kg−1) containing
+equal amount of ICG were injected into the tumor-bearing mice through
+the tail vein, the in vivo ﬂuorescence imaging was performed continuously
+on anesthetized mice at diﬀerent time (0, 3, 6, 9, 12, 24, and 48 h) by IVIS
+imaging system. At 6 h and 12 h after injection of free drug ICG and VI@R-
+T, the mice were euthanized and the main organs and tumors were taken,
+washed several times with PBS, and then imaged by the IVIS ﬂuorescence
+imaging system. In addition, mice injected with nanocarrier for 0, 4, 8,
+and 12 h were taken to strip the tumors and quickly placed in liquid nitro-
+gen for NADH/FAD imaging in the deep cryogenic two/three-dimensional
+autoﬂuorescence imaging system built by the laboratory.
+In Vivo Synergistic Therapy of VI@R-T:
+6-week-old female Balb/C mice
+were inoculated with 4T1 cell. When the tumor volume reached ≈75 mm3,
+the tumor-bearing mice were randomly divided into 5 groups, respectively
+(I) PBS, (II) PBS+US, (III) V@R-T, (IV) I@R-T+US, (V) VI@R-T+US; Dif-
+ferent kind of nanocarrier (20 mg kg−1) was injected through the tail vein
+at day 0, 3 and 6 of the treatment period, and the tumor was stimulated by
+ultrasound (1 W cm−2 and 5 min) in groups II, IV, and V at 3 and 6 h after
+injection with nanocarrier. In addition, one mouse in each group was eu-
+thanized and the tumor was collected. After washed with PBS, the tumor
+was immersed in 4% paraformaldehyde and ﬁxed to make slices for H&E
+and TUNEL staining, respectively. Meanwhile, the weight and tumor vol-
+ume change of each group of mice were recorded by digital Vernier caliper
+and scale every two days. At day 14, the mice were euthanized, the tumors
+were stripped and weighed, and the tumor mass was calculated and pho-
+tographed.
+Statistical Analysis:
+At least three parallels were set in all experiments,
+and all statistics were calculated by two-tailed t-test (*p < 0.05, **p < 0.01,
+***p < 0.001).
+Supporting Information
+Supporting Information is available from the Wiley Online Library or from
+the author.
+Acknowledgements
+F.Z., and Y.-G.H. contributed equally to this work. This work was sup-
+ported by the National Natural Science Foundation of China (Grant Nos.
+62305121, 62375093), and the China Postdoctoral Science Foundation
+Funded Project (Grant No. 2023T160247), Technology Innovation Pro-
+gram of Hubei Province (2024BCB058), China Ageing Development Foun-
+dation - Elderly Navigation Program Research Fund (193). The authors
+also thank the Analytical and Testing Center (HUST), the Research Core
+Facilities for Life Science (HUST) for the help of measurement.
+Conﬂict of Interest
+The authors declare no conﬂict of interest.
+Data Availability Statement
+The data that support the fundings of this study are available from the
+corresponding author upon reasonable request.
+Keywords
+mitochondria-targeted, red blood cell membrane, sonodynamic therapy,
+tumor hypoxia relief, vanadium-based nanozyme
+Received: February 18, 2025
+Revised: April 8, 2025
+Published online: May 30, 2025
+[1] L. Sun, J. Zhou, T. Luo, J. Wang, L. Kang, Y. Wang, S. Luo, Z.
+Wang, Z. Zhou, J. Zhu, J. Yu, L. Yu, Z. Yan, Adv. Mater. 2022, 34,
+2109969.
+[2] Y. Zhao, S. Wang, Y. Ding, Z. Zhang, T. Huang, Y. Zhang, X. Wan, Z.
+L. Wang, L. Li, ACS Nano 2022, 16, 9304.
+[3] Y. Wang, F. Gong, Z. Han, H. Lei, Y. Zhou, S. Cheng, X. Yang, T. Wang,
+L. Wang, N. Yang, Z. Liu, L. Cheng, Angew. Chem., Int. Ed. 2023, 62,
+202215467.
+[4] P. Huang, X. Qian, Y. Chen, L. Yu, H. Lin, L. Wang, Y. Zhu, J. Shi, J.
+Am. Chem. Soc. 2017, 139, 1275.
+[5] D. W. Felsher, Nat. Rev. Cancer 2003, 3, 375.
+[6] H. Huang, Y. Zheng, M. Chang, J. Song, L. Xia, C. Wu, W. Jia, H. Ren,
+W. Feng, Y. Chen, Chem. Rev. 2024, 124, 8307.
+[7] M. Yang, X. Wang, M. Peng, F. Wang, S. Hou, R. Xing, A. Chen, Nano-
+Micro Lett. 2025, 17, 157.
+[8] S. Liang, X. Deng, P. Ma, Z. Cheng, J. Lin, Adv. Mater. 2020, 32,
+2003214.
+[9] Y. Zhou, Q. Li, Y. Wu, W. Zhang, L. Ding, C. Ji, P. Li, T. Chen, L. Feng,
+B. Z. Tang, X. Huang, Adv. Mater. 2024, 36, 2313953.
+[10] N. Yang, C. Cao, X. Lv, T. Zhang, J. Shao, X. Song, W. Wang, P. Chen,
+W. Huang, X. Dong, BMEMat 2023, 1, 12005.
+[11] Y. Zhu, X. Wang, L. Feng, R. Zhao, C. Yu, Y. Liu, Y. Xie, B. Liu, Y. Zhou,
+P. Yang, Nat. Commun. 2024, 15, 8696.
+[12] N. C. Denko, Nat. Rev. Cancer 2008, 8, 705.
+[13] C. Li, X. Yang, J. An, K. Cheng, X. Hou, X. Zhang, Y. Hu, B. Liu, Y. Zhao,
+Theranostics 2020, 10, 867.
+[14] D. Wang, H. Wu, S. Zeng, F. Phua, G. Yang, W. Q. Lim, L. Gu, C.
+Qian, H. Wang, Z. Guo, H. Chen, Y. Zhao, Nat. Commun. 2020, 11,
+357.
+[15] N. A. Bonekamp, B. Peter, H. S. Hillen, A. Felser, T. Bergbrede, A.
+Choidas, M. Horn, A. Unger, R. Di Lucrezia, I. Atanassov, X. Li,
+U. Koch, S. Menninger, J. Boros, P. Habenberger, P. Giavalisco, P.
+Cramer, M. S. Denzel, P. Nussbaumer, B. Klebl, M. Falkenberg, C. M.
+Gustafsson, N. G. Larsson, Nature 2020, 588, 712.
+[16] X. Guo, N. Yang, W. Ji, H. Zhang, X. Dong, Z. Zhou, L. Li, H. M. Shen,
+S. Q. Yao, W. Huang, Adv. Mater. 2021, 33, 2007778.
+[17] D. Wang, W. Wang, L. Fang, L. Qi, Y. Zhang, J. Liu, Y. Liang, H. Yang,
+M. Wang, X. Wei, R. Jiang, Y. Liu, W. Zhou, X. Fang, J. Am. Chem. Soc.
+2023, 145, 12861.
+[18] F. Tong, Y. Wang, Y. Xu, Y. Zhou, S. He, Y. Du, W. Yang, T. Lei, Y. Song,
+T. Gong, H. Gao, Nat. Commun. 2024, 15, 10382.
+[19] L. Jiang, S. Zhou, X. Zhang, C. Li, S. Ji, H. Mao, X. Jiang, Nat. Commun.
+2021, 12, 2390.
+[20] D. D. Newmeyer, S. F. Miller, Cell 2003, 112, 481.
+[21] S. Pal, A. Sharma, S. P. Mathew, B. G. Jaganathan, Front. Immunol.
+2022, 13, 955476.
+[22] H. Ding, J. Wei, L. Fang, L. Feng, S. Gai, F. He, L. Wu, Z. Rehman, P.
+Yang, Adv. Funct. Mater. 2024, 34, 2312429.
+[23] Y. Dong, S. Dong, C. Yu, J. Liu, S. Gai, Y. Xie, Z. Zhao, X. Qin, L. Feng,
+P. Yang, Y. Zhao, Sci. Adv. 2023, 9, adi9980.
+[24] Q. Wang, X. Li, Z. Cao, W. Feng, Y. Chen, D. Jiang, J. Am. Chem. Soc.
+2024, 146, 8228.
+[25] K. Liang, F. Nan, J. Wang, Y. Zhang, J. Li, X. Xue, T. Chen, Y. Hao, P.
+Wang, J. Ge, Small 2024, 20, 2311027.
+[26] R. Zhao, Y. Zhu, L. Feng, B. Liu, Y. Hu, H. Zhu, Z. Zhao, H. Ding, S.
+Gai, P. Yang, Adv. Mater. 2024, 36, 2307115.
+[27] K. Mouli, A. V. Liopo, E. A. McHugh, E. Underwood, J. Zhao, P. K.
+Dash, A. T. T. Vo, V. Malojirao, M. Hegde, J. M. Tour, P. J. Derry, T. A.
+Kent, Adv. Healthcare Mater. 2024, 14, 2401629.
+[28] J. Li, L. Xie, W. Sang, W. Li, G. Wang, J. Yan, Z. Zhang, H. Tian, Q. Fan,
+Y. Dai, Angew. Chem., Int. Ed. 2022, 61, 202200830.
+[29] J. Skoda, K. Borankova, P. J. Jansson, M. L. H. Huang, R. Veselska, D.
+R. Richardson, Pharmacol. Res. 2019, 139, 298.
+[30] I. Vercellino, L. A. Sazanov, Nat. Rev. Mol. Cell Biol. 2022, 23, 141.
+Adv. Funct. Mater. 2025, 35, 2504404
+© 2025 Wiley-VCH GmbH
+2504404 (17 of 18)
+ 16163028, 2025, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202504404 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+[31] S. Son, J. H. Kim, X. Wang, C. Zhang, S. A. Yoon, J. Shin, A. Sharma,
+M. H. Lee, L. Cheng, J. Wu, J. S. Kim, Chem. Soc. Rev. 2020, 49,
+3244.
+[32] M. Chang, M. Wang, M. Wang, M. Shu, B. Ding, C. Li, M. Pang, S.
+Cui, Z. Hou, J. Lin, Adv. Mater. 2019, 31, 1905271.
+[33] Z. Li, J. Han, L. Yu, X. Qian, H. Xing, H. Lin, M. Wu, T. Yang, Y. Chen,
+Adv. Funct. Mater. 2018, 28, 1800145.
+[34] X. Wang, X. Zhong, Z. Liu, L. Cheng, Nano Today 2020, 35,
+100946.
+[35] X. Fang, D. Yang, X. Wu, K. H. Lui, X. Li, W. S. Lo, C. Li, Y. Zhang, G.
+Nie, L. Jiang, Y. Gu, B. Zhang, W. T. Wong, Chem. Eng. J. 2023, 474,
+145675.
+[36] W. He, J. Wu, J. Liu, J. Li, Adv. Funct. Mater. 2024, 34, 2312116.
+[37] J. Wu, X. Wang, Q. Wang, Z. Lou, S. Li, Y. Zhu, L. Qin, H. Wei, Chem.
+Soc. Rev. 2019, 48, 1004.
+[38] Y. Zhu, R. Zhao, L. Feng, C. Wang, S. Dong, M. V. Zyuzin, A. Timin,
+N. Hu, B. Liu, P. Yang, ACS Nano 2023, 17, 6833.
+[39] Y. Huang, J. Ren, X. Qu, Chem. Rev. 2019, 119, 4357.
+[40] R. André, F. Natálio, M. Humanes, J. Leppin, K. Heinze, R. Wever, H.
+C. Schröder, W. E. G. Müller, W. Tremel, Adv. Funct. Mater. 2011, 21,
+501.
+[41] F. Natalio, R. André, A. F. Hartog, B. Stoll, K. P. Jochum, R. Wever, W.
+Tremel, Nat. Nanotechnol. 2012, 7, 530.
+[42] W. Ma, J. Liu, Y. Xin, X. Yang, R. Li, X. Ding, Y. Niu, Y. Xu, Microchem.
+J. 2020, 153, 104352.
+[43] A. Rakshit, M. Mukherjee, S. Chakraborty, Mater. Sci. Semicond. Pro-
+cess. 2018, 88, 127.
+[44] C. Liang, J. Xie, S. Luo, C. Huang, Q. Zhang, H. Huang, P. Zhang,
+Nat. Commun. 2021, 12, 5001.
+[45] K. Cheng, B. Liu, X. Zhang, R. Zhang, F. Zhang, G. Ashraf, G. Fan, M.
+Tian, X. Sun, J. Yuan, Y. Zhao, Nat. Commun. 2022, 13, 4567.
+[46] Z. Chai, D. Ran, L. Lu, C. Zhan, H. Ruan, X. Hu, C. Xie, K. Jiang, J. Li,
+J. Zhou, J. Wang, Y. Zhang, R. Fang, L. Zhang, W. Lu, ACS Nano 2019,
+13, 5591.
+[47] F. Mao, Y. Liu, L. Ma, L. Liu, A. Jiang, X. Zhai, J. Zhou, Biomaterials
+2019, 194, 94.
+Adv. Funct. Mater. 2025, 35, 2504404
+© 2025 Wiley-VCH GmbH
+2504404 (18 of 18)
+ 16163028, 2025, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202504404 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

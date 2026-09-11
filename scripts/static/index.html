@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nano-Bio Evaluator · TOA 编排</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, "Segoe UI", "Microsoft YaHei", "PingFang SC", sans-serif;
+    background: #ffffff; color: #1f2329; height: 100vh; display: flex; overflow: hidden;
+  }
+  /* ---------- 侧边栏 ---------- */
+  #sidebar {
+    width: 260px; min-width: 260px; background: #f7f7f8; border-right: 1px solid #e5e6eb;
+    display: flex; flex-direction: column; padding: 12px;
+  }
+  #new-chat {
+    width: 100%; padding: 10px; border: 1px solid #d9d9de; border-radius: 10px;
+    background: #fff; cursor: pointer; font-size: 14px; color: #1f2329;
+    display: flex; align-items: center; gap: 8px; transition: background .15s;
+  }
+  #new-chat:hover { background: #f0f0f3; }
+  #new-chat .plus { font-size: 16px; color: #4d6bfe; }
+  #session-list { flex: 1; overflow-y: auto; margin-top: 12px; }
+  .session-item {
+    padding: 9px 10px; border-radius: 8px; font-size: 13px; color: #4e5564;
+    cursor: pointer; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+    margin-bottom: 2px;
+  }
+  .session-item:hover { background: #ececee; }
+  .session-item.active { background: #e3e7fd; color: #1f2329; }
+  #llm-status {
+    padding: 10px; border-top: 1px solid #e5e6eb; font-size: 12px; color: #8a8f99;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .dot { width: 8px; height: 8px; border-radius: 50%; background: #c0c4cc; flex-shrink: 0; }
+  .dot.ok { background: #34a853; }
+  .dot.bad { background: #ea4335; }
+  /* ---------- 主区域 ---------- */
+  #main { flex: 1; display: flex; flex-direction: column; min-width: 0; }
+  #chat-flow { flex: 1; overflow-y: auto; padding: 24px 0; }
+  .wrap { max-width: 800px; margin: 0 auto; padding: 0 24px; }
+  #empty-hint { text-align: center; color: #8a8f99; margin-top: 18vh; }
+  #empty-hint h1 { font-size: 22px; font-weight: 600; color: #1f2329; margin-bottom: 8px; }
+  /* 用户气泡 */
+  .msg-user { display: flex; justify-content: flex-end; margin-bottom: 16px; }
+  .msg-user .bubble {
+    background: #e3e7fd; border-radius: 16px 16px 4px 16px; padding: 10px 14px;
+    max-width: 75%; font-size: 14px; line-height: 1.6; white-space: pre-wrap; word-break: break-word;
+  }
+  /* 助手区(卡片流) */
+  .msg-assistant { margin-bottom: 20px; }
+  .card {
+    border: 1px solid #e5e6eb; border-radius: 12px; margin-bottom: 10px;
+    background: #fff; overflow: hidden;
+  }
+  .card-head {
+    display: flex; align-items: center; gap: 8px; padding: 10px 14px;
+    cursor: pointer; user-select: none; font-size: 14px; font-weight: 500;
+  }
+  .card-head:hover { background: #fafafa; }
+  .card-head .arrow { font-size: 11px; color: #8a8f99; transition: transform .15s; }
+  .card.closed .arrow { transform: rotate(-90deg); }
+  .card.closed .card-body { display: none; }
+  .status-icon { width: 16px; height: 16px; flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center; }
+  .status-icon.pending { color: #c0c4cc; font-size: 13px; }
+  .status-icon.running {
+    border: 2px solid #e3e7fd; border-top-color: #4d6bfe; border-radius: 50%;
+    width: 14px; height: 14px; animation: spin .8s linear infinite;
+  }
+  .status-icon.done { color: #34a853; font-size: 14px; }
+  .status-icon.error { color: #ea4335; font-size: 14px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .card-title { flex: 1; }
+  .card-meta { font-size: 12px; color: #8a8f99; font-weight: 400; }
+  .card-body { border-top: 1px solid #f0f0f2; padding: 12px 14px; }
+  .card-body pre {
+    font-size: 12px; line-height: 1.6; white-space: pre-wrap; word-break: break-word;
+    font-family: Consolas, "Courier New", monospace; color: #4e5564;
+    max-height: 320px; overflow-y: auto;
+  }
+  /* 汇总卡片 Markdown */
+  .md { font-size: 14px; line-height: 1.7; }
+  .md h1, .md h2, .md h3 { margin: 12px 0 6px; font-weight: 600; }
+  .md h1 { font-size: 18px; } .md h2 { font-size: 16px; } .md h3 { font-size: 15px; }
+  .md ul { padding-left: 20px; margin: 6px 0; }
+  .md table { border-collapse: collapse; margin: 8px 0; font-size: 13px; }
+  .md th, .md td { border: 1px solid #e5e6eb; padding: 5px 10px; text-align: left; }
+  .md th { background: #f7f7f8; }
+  .md p { margin: 6px 0; }
+  /* 错误提示 */
+  .error-box {
+    background: #fef0f0; border: 1px solid #fde2e2; color: #d03030;
+    border-radius: 10px; padding: 10px 14px; font-size: 13px; margin-bottom: 12px;
+    white-space: pre-wrap; word-break: break-word;
+  }
+  .run-dir-note { font-size: 12px; color: #8a8f99; margin: 4px 0 16px; word-break: break-all; }
+  /* ---------- 输入区 ---------- */
+  #input-area { border-top: 1px solid #f0f0f2; padding: 14px 0 18px; }
+  #input-box {
+    max-width: 800px; margin: 0 auto; padding: 0 24px; display: flex; gap: 10px; align-items: flex-end;
+  }
+  #msg-input {
+    flex: 1; resize: none; border: 1px solid #d9d9de; border-radius: 14px;
+    padding: 12px 14px; font-size: 14px; line-height: 1.5; font-family: inherit;
+    max-height: 160px; outline: none; transition: border-color .15s;
+  }
+  #msg-input:focus { border-color: #4d6bfe; }
+  #send-btn {
+    width: 40px; height: 40px; border: none; border-radius: 50%; background: #4d6bfe;
+    color: #fff; font-size: 16px; cursor: pointer; flex-shrink: 0; transition: opacity .15s;
+  }
+  #send-btn:disabled { opacity: .4; cursor: not-allowed; }
+</style>
+</head>
+<body>
+  <aside id="sidebar">
+    <button id="new-chat"><span class="plus">＋</span> 新对话</button>
+    <div id="session-list"></div>
+    <div id="llm-status"><span class="dot" id="llm-dot"></span><span id="llm-text">LLM 服务器:检测中…</span></div>
+  </aside>
+  <main id="main">
+    <div id="chat-flow">
+      <div class="wrap">
+        <div id="empty-hint">
+          <h1>Nano-Bio Evaluator</h1>
+          <p>TOA 编排入口 —— 输入研究需求,将依次执行 任务规划 → 创意设计 → 抗菌/酶活/安全评估 → 机理分析 → 汇总报告</p>
+        </div>
+        <div id="messages"></div>
+      </div>
+    </div>
+    <div id="input-area">
+      <div id="input-box">
+        <textarea id="msg-input" rows="1" placeholder="输入研究需求,Enter 发送(Shift+Enter 换行)"></textarea>
+        <button id="send-btn" title="发送">↑</button>
+      </div>
+    </div>
+  </main>
+
+<script>
+(function () {
+  "use strict";
+
+  var AGENT_NAMES = {
+    cda: "创意设计师", apa: "抗菌评估", epa: "酶活评估",
+    bsa: "安全评估", mma: "机理分析", ca: "汇总报告"
+  };
+
+  var sessionId = null;
+  var generating = false;
+
+  var messagesEl = document.getElementById("messages");
+  var emptyHint = document.getElementById("empty-hint");
+  var inputEl = document.getElementById("msg-input");
+  var sendBtn = document.getElementById("send-btn");
+  var sessionListEl = document.getElementById("session-list");
+  var llmDot = document.getElementById("llm-dot");
+  var llmText = document.getElementById("llm-text");
+
+  // ---------- 工具 ----------
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text !== undefined) e.textContent = text;
+    return e;
+  }
+  function scrollBottom() {
+    var flow = document.getElementById("chat-flow");
+    flow.scrollTop = flow.scrollHeight;
+  }
+  function escapeHtml(s) {
+    return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+            .replace(/"/g, "&quot;");
+  }
+
+  // 简单 Markdown 渲染:标题 / 加粗 / 无序列表 / 表格(先转义 HTML)
+  function renderMarkdown(src) {
+    var lines = src.split("\n");
+    var html = [];
+    var i, inList = false, inTable = false;
+
+    function inline(s) {
+      return escapeHtml(s).replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+    }
+    function closeList() { if (inList) { html.push("</ul>"); inList = false; } }
+    function closeTable() { if (inTable) { html.push("</table>"); inTable = false; } }
+
+    for (i = 0; i < lines.length; i++) {
+      var line = lines[i];
+      var t = line.trim();
+      if (/^\|.+\|$/.test(t)) {
+        closeList();
+        var cells = t.replace(/^\|/, "").replace(/\|$/, "").split("|")
+                     .map(function (c) { return c.trim(); });
+        // 跳过分隔行 |---|---|
+        if (cells.every(function (c) { return /^:?-{2,}:?$/.test(c); })) continue;
+        if (!inTable) { html.push("<table>"); inTable = true; }
+        var isHead = i + 1 < lines.length &&
+          /^\|[\s:|-]+\|$/.test(lines[i + 1].trim());
+        var tag = isHead ? "th" : "td";
+        html.push("<tr>" + cells.map(function (c) {
+          return "<" + tag + ">" + inline(c) + "</" + tag + ">";
+        }).join("") + "</tr>");
+        continue;
+      }
+      closeTable();
+      var m;
+      if ((m = t.match(/^(#{1,3})\s+(.*)$/))) {
+        closeList();
+        var lv = m[1].length;
+        html.push("<h" + lv + ">" + inline(m[2]) + "</h" + lv + ">");
+      } else if ((m = t.match(/^[-*]\s+(.*)$/))) {
+        if (!inList) { html.push("<ul>"); inList = true; }
+        html.push("<li>" + inline(m[1]) + "</li>");
+      } else if (t === "") {
+        closeList();
+      } else {
+        closeList();
+        html.push("<p>" + inline(t) + "</p>");
+      }
+    }
+    closeList(); closeTable();
+    return html.join("");
+  }
+
+  // ---------- 卡片 ----------
+  function makeCard(title, meta) {
+    var card = el("div", "card");
+    var head = el("div", "card-head");
+    var icon = el("span", "status-icon pending", "○");
+    var titleEl = el("span", "card-title", title);
+    head.appendChild(icon);
+    head.appendChild(el("span", "arrow", "▼"));
+    head.appendChild(titleEl);
+    var metaEl = null;
+    if (meta !== undefined) {
+      metaEl = el("span", "card-meta", meta || "");
+      head.appendChild(metaEl);
+    }
+    var body = el("div", "card-body");
+    card.appendChild(head);
+    card.appendChild(body);
+    head.addEventListener("click", function () { card.classList.toggle("closed"); });
+    return {
+      root: card, body: body, icon: icon, meta: metaEl,
+      setStatus: function (st, metaText) {
+        icon.className = "status-icon " + st;
+        icon.textContent = st === "done" ? "✓" : st === "error" ? "✗"
+          : st === "pending" ? "○" : "";
+        if (metaText !== undefined && metaEl) metaEl.textContent = metaText;
+      }
+    };
+  }
+
+  // ---------- 编排一轮对话 ----------
+  function addUserMessage(text) {
+    var row = el("div", "msg-user");
+    row.appendChild(el("div", "bubble", text));
+    messagesEl.appendChild(row);
+  }
+
+  // 事件渲染器:实时 SSE 流与会话回放共用。
+  // agent_done 事件带 content 时,在卡片内展示该 agent 的原始输出。
+  function createRenderer(area) {
+    var agentCards = {};   // key: agent 或 agent#batch -> card
+    function agentKey(agent, batch) {
+      // 批量 agent(cda)按批次建卡;分块 agent(apa/epa/bsa/mma)合并为一张卡
+      return agent === "cda" ? agent + "#" + batch : agent;
+    }
+    function agentTitle(agent, batch) {
+      var name = AGENT_NAMES[agent] || agent;
+      return agent === "cda" ? name + " · 批次 " + batch : name;
+    }
+    function getAgentCard(agent, batch) {
+      var key = agentKey(agent, batch);
+      if (!agentCards[key]) {
+        agentCards[key] = makeCard(agentTitle(agent, batch), "");
+        agentCards[key].setStatus("running");
+        area.appendChild(agentCards[key].root);
+        scrollBottom();
+      }
+      return agentCards[key];
+    }
+    return function handleEvent(ev) {
+      if (ev.type === "plan") {
+        var planCard = makeCard("任务规划", "");
+        planCard.setStatus("done");
+        var pre = el("pre"); pre.textContent = ev.content;
+        planCard.body.appendChild(pre);
+        area.insertBefore(planCard.root, area.firstChild);
+      } else if (ev.type === "agent_start") {
+        getAgentCard(ev.agent, ev.batch);
+      } else if (ev.type === "agent_done") {
+        var card = getAgentCard(ev.agent, ev.batch);
+        card.setStatus("done", (ev.chars || 0) + " 字符");
+        if (ev.content) {
+          var cpre = el("pre"); cpre.textContent = ev.content;
+          card.body.appendChild(cpre);
+        }
+      } else if (ev.type === "summary") {
+        var summaryCard = makeCard("汇总报告", "");
+        summaryCard.setStatus("done");
+        var md = el("div", "md");
+        md.innerHTML = renderMarkdown(ev.content || "");
+        summaryCard.body.appendChild(md);
+        area.appendChild(summaryCard.root);
+      } else if (ev.type === "direct_answer") {
+        var acard = getAgentCard(ev.agent, 1);
+        acard.setStatus("done", "直接回答");
+        var amd = el("div", "md");
+        amd.innerHTML = renderMarkdown(ev.content || "");
+        acard.body.appendChild(amd);
+      } else if (ev.type === "done") {
+        var note = el("div", "run-dir-note", "原始输出已保存: " + ev.run_dir);
+        area.appendChild(note);
+      } else if (ev.type === "error") {
+        Object.keys(agentCards).forEach(function (k) {
+          var c = agentCards[k];
+          if (c.icon.className.indexOf("running") >= 0) c.setStatus("error");
+        });
+        area.appendChild(el("div", "error-box", "执行出错: " + ev.message));
+      }
+      scrollBottom();
+    };
+  }
+
+  function runOrchestrate(text) {
+    emptyHint.style.display = "none";
+    addUserMessage(text);
+    var area = el("div", "msg-assistant");
+    messagesEl.appendChild(area);
+    scrollBottom();
+    setGenerating(true);
+
+    var render = createRenderer(area);
+
+    fetch("/api/orchestrate", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message: text, session_id: sessionId || undefined })
+    }).then(function (resp) {
+      var sid = resp.headers.get("X-Session-Id");
+      if (sid && !sessionId) { sessionId = sid; refreshSessions(); }
+      if (!resp.ok) throw new Error("HTTP " + resp.status);
+      var reader = resp.body.getReader();
+      var decoder = new TextDecoder("utf-8");
+      var buf = "";
+
+      function handleEvent(ev) {
+        render(ev);
+        if (ev.type === "done") refreshSessions();
+      }
+
+      function pump() {
+        return reader.read().then(function (r) {
+          if (r.done) { setGenerating(false); return; }
+          buf += decoder.decode(r.value, { stream: true });
+          var idx;
+          while ((idx = buf.indexOf("\n\n")) >= 0) {
+            var block = buf.slice(0, idx);
+            buf = buf.slice(idx + 2);
+            block.split("\n").forEach(function (line) {
+              if (line.indexOf("data: ") === 0) {
+                try { handleEvent(JSON.parse(line.slice(6))); } catch (e) { /* 忽略坏行 */ }
+              }
+            });
+          }
+          return pump();
+        });
+      }
+      return pump();
+    }).catch(function (err) {
+      area.appendChild(el("div", "error-box", "请求失败: " + err.message));
+      setGenerating(false);
+      scrollBottom();
+    });
+  }
+
+  function setGenerating(on) {
+    generating = on;
+    sendBtn.disabled = on;
+    inputEl.disabled = on;
+    if (!on) inputEl.focus();
+  }
+
+  // ---------- 会话 ----------
+  function newChat() {
+    if (generating) return;
+    sessionId = null;
+    messagesEl.innerHTML = "";
+    emptyHint.style.display = "";
+    document.querySelectorAll(".session-item").forEach(function (e) {
+      e.classList.remove("active");
+    });
+    inputEl.focus();
+  }
+
+  function loadSession(id) {
+    if (generating) return;
+    fetch("/api/sessions/" + encodeURIComponent(id)).then(function (r) {
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      return r.json();
+    }).then(function (sess) {
+      sessionId = id;
+      messagesEl.innerHTML = "";
+      emptyHint.style.display = "none";
+      (sess.messages || []).forEach(function (m) {
+        if (m.role === "user") addUserMessage(m.content);
+      });
+      if (sess.events && sess.events.length) {
+        // 新格式:完整回放编排事件流(含各 agent 原始输出)
+        var area = el("div", "msg-assistant");
+        messagesEl.appendChild(area);
+        var render = createRenderer(area);
+        sess.events.forEach(render);
+      } else {
+        // 旧会话(无 events):只回放汇总/错误
+        (sess.messages || []).forEach(function (m) {
+          if (m.role !== "assistant") return;
+          var area = el("div", "msg-assistant");
+          if (m.status === "done") {
+            var card = makeCard("汇总报告", "");
+            card.setStatus("done");
+            var md = el("div", "md");
+            md.innerHTML = renderMarkdown(m.content || "");
+            card.body.appendChild(md);
+            area.appendChild(card.root);
+            if (m.run_dir) area.appendChild(el("div", "run-dir-note", "原始输出已保存: " + m.run_dir));
+          } else {
+            area.appendChild(el("div", "error-box", m.content));
+          }
+          messagesEl.appendChild(area);
+        });
+      }
+      document.querySelectorAll(".session-item").forEach(function (e) {
+        e.classList.toggle("active", e.dataset.sid === id);
+      });
+      scrollBottom();
+    }).catch(function () { /* 会话读取失败时静默 */ });
+  }
+
+  function refreshSessions() {
+    fetch("/api/sessions").then(function (r) { return r.json(); }).then(function (data) {
+      sessionListEl.innerHTML = "";
+      (data.sessions || []).forEach(function (s) {
+        var item = el("div", "session-item", s.title || s.session_id);
+        item.dataset.sid = s.session_id;
+        if (s.session_id === sessionId) item.classList.add("active");
+        item.addEventListener("click", function () { loadSession(s.session_id); });
+        sessionListEl.appendChild(item);
+      });
+    }).catch(function () { /* 忽略 */ });
+  }
+
+  // ---------- LLM 状态 ----------
+  function checkHealth() {
+    fetch("/api/health").then(function (r) { return r.json(); }).then(function (h) {
+      if (h.status === "ok") {
+        llmDot.className = "dot ok";
+        llmText.textContent = "LLM 服务器:在线 (" + h.llm_base + ")";
+      } else {
+        llmDot.className = "dot bad";
+        llmText.textContent = "LLM 服务器:离线 (" + h.llm_base + ")";
+      }
+    }).catch(function () {
+      llmDot.className = "dot bad";
+      llmText.textContent = "LLM 服务器:状态未知";
+    });
+  }
+
+  // ---------- 输入交互 ----------
+  function send() {
+    var text = inputEl.value.trim();
+    if (!text || generating) return;
+    inputEl.value = "";
+    inputEl.style.height = "auto";
+    runOrchestrate(text);
+  }
+  sendBtn.addEventListener("click", send);
+  inputEl.addEventListener("keydown", function (e) {
+    if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); send(); }
+  });
+  inputEl.addEventListener("input", function () {
+    inputEl.style.height = "auto";
+    inputEl.style.height = Math.min(inputEl.scrollHeight, 160) + "px";
+  });
+  document.getElementById("new-chat").addEventListener("click", newChat);
+
+  // ---------- 启动 ----------
+  refreshSessions();
+  checkHealth();
+  setInterval(checkHealth, 30000);
+})();
+</script>
+</body>
+</html>

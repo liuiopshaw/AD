@@ -1,0 +1,2832 @@
+Nature Reviews Materials | Volume 9 | August 2024 | 567–588
+567
+nature reviews materials
+https://doi.org/10.1038/s41578-024-00695-w
+Review article
+ Check for updates
+Precision drug delivery to the 
+central nervous system using 
+engineered nanoparticles
+Jingjing Gao1 
+, Ziting (Judy) Xia2, Swetharajan Gunasekar2, Christopher Jiang2, Jeffrey M. Karp2,3,4,5,6 
+ 
+& Nitin Joshi 
+  2,3 
+Abstract
+Development of novel therapies for central nervous system (CNS) 
+disorders has experienced a high failure rate in clinical trials owing to 
+unsatisfactory efficacy and adverse effects. One of the major reasons for 
+limited therapeutic efficacy is the poor penetration of drugs across the 
+blood–brain barrier. Despite the development of multiple drug delivery 
+platforms, the overall drug accumulation in the brain remains sub-
+optimal. Another critical but overlooked factor is achieving precision 
+delivery to a specific region and cell type in the brain. This specificity 
+is crucial because most neurological disorders exhibit region-specific 
+vulnerabilities. Multiple trials have failed owing to adverse CNS effects 
+induced by nonspecific drug targeting. In this Review, we highlight 
+the key regions and cell types that should be targeted in different 
+CNS diseases. We discuss how physiological barriers and disease-
+mediated changes in the blood–brain barrier and the overall brain can 
+impact the precision delivery of therapeutics via the systemic route. 
+We then perform a systematic analysis of the current state-of-the-
+art approaches developed to overcome these barriers and achieve 
+precision targeting at different levels. Finally, we discuss potential 
+approaches to accelerate the development of precision delivery 
+systems and outline the challenges and future research directions.
+Sections
+Introduction
+Selective vulnerabilities 
+in the CNS
+Barriers towards precision 
+delivery in the CNS
+Precision brain targeting at 
+different levels
+Conclusion and outlook
+1Department of Biomedical Engineering, Center for Bioactive Delivery, Institute for Applied Life Sciences, 
+University of Massachusetts, Amherst, MA, USA. 2Center for Nanomedicine, Department of Anesthesiology, 
+Perioperative and Pain Medicine, Brigham and Women’s Hospital, Boston, MA, USA. 3Harvard Medical School, 
+Boston, MA, USA. 4Harvard-MIT Program in Health Sciences and Technology, MIT, Cambridge, MA, USA. 
+5Harvard Stem Cell Institute, Cambridge, MA, USA. 6Broad Institute of MIT and Harvard, Cambridge, MA, USA.  
+ e-mail: jgao@umass.edu; jmkarp@bwh.harvard.edu; njoshi@bwh.harvard.edu
+
+Nature Reviews Materials | Volume 9 | August 2024 | 567–588
+568
+Review article
+necessitate precision delivery strategies. Next, we examine the physi-
+ological barriers that exist at different stages during the journey of 
+NPs to the brain via the systemic route, and how these barriers influ-
+ence NP-mediated precision delivery of therapeutics. We also discuss 
+how pathophysiological alterations to these barriers may impact NP 
+targeting. We then perform a systematic analysis of the current state-
+of-the-art approaches developed to overcome barriers at different 
+stages and achieve precision targeting at different levels, such as the 
+brain endothelium, across the BBB in the entire brain, specific brain 
+regions, or specific cell types in the brain. Finally, we discuss potential 
+avenues to expedite the development of precision delivery systems 
+and outline the challenges and future research directions that might 
+ultimately accelerate their clinical translatability.
+Selective vulnerabilities in the CNS
+The brain has a multifaceted architecture, wherein specific regions 
+govern distinct functions, rendering them susceptible to different 
+diseases. Selective vulnerabilities in neuroscience are mainly defined 
+based on end-pathology studies (such as investigations into struc-
+tural changes and neuronal losses, or immunostaining), which reflect 
+the specific regions or populations of cells that are affected by the 
+pathology of interest. Although a more fundamental understanding is 
+required to elucidate the molecular mechanisms underlying selective 
+cellular vulnerability, advances in single-cell profiling, spatial tran-
+scriptomics and pool screening with gene perturbations have shown 
+great promise in dissecting the involvement of specific regions and cell 
+types in the diseased brain10–12. For example, a complete mouse brain 
+was mapped through the BRAIN Initiative® programme, creating a 
+first-of-a-kind brain atlas that provides incredible insights into the struc-
+tural, chemical (neurotransmitters and neuropeptides), transcriptomic 
+and epigenetic profiles of neural cell types, bringing us closer to the 
+effective precision targeting of neuropathologies13.
+The CNS exhibits a complex tapestry of regional vulnerabilities 
+across a broad spectrum of neurological disorders (Fig. 1). For example, 
+cerebral palsy (CP), a common group of movement disorders in 
+children, is often categorized based on the anatomical sites of brain 
+lesions (that is, the cerebral cortex, pyramidal tract, extrapyramidal 
+system and cerebellum). The frontal lobes, vital for executive functions, 
+may bear the brunt of traumatic brain injuries (TBIs), whereas the 
+temporal lobes, critical for memory, become focal points in temporal 
+lobe epilepsy. Various subregions of the prefrontal cortex, includ-
+ing the medial prefrontal cortex, dorsolateral prefrontal cortex and 
+ventral prefrontal cortex, are associated with the cognitive decline 
+typically seen in neurodegenerative disorders. The prefrontal cortex, 
+with its dense bidirectional projections to thalamic, basal ganglia and 
+limbic structures, has a critical role in neuronal signalling, inflamma-
+tion and degeneration across various brain regions14,15. Notably, in 
+psychiatric disorders such as depression, emerging evidence points to 
+Introduction
+Drugs that target disorders of the central nervous system (CNS) face 
+greater challenges and a higher failure rate in clinical trials compared 
+to drugs targeting non-CNS conditions. This trend is particularly 
+pronounced in disease-modifying treatments for neurodegenerative 
+diseases. These failures primarily stem from unsatisfactory thera-
+peutic efficacy and the persistent threat of adverse effects within 
+the brain. Different routes of administration can be used for drug 
+delivery to the brain, such as intranasal delivery, intrathecal and 
+intracerebroventricular injections1,2, and systemic injection. Despite 
+accounting for only ~2% of the body weight, the brain receives 
+nearly 20% of the cardiac output, making systemic administration 
+the most widely applied delivery method for CNS therapeutics3 
+and, thus, in this Review, we focus solely on systemic drug delivery 
+to the brain. One well-known issue limiting the therapeutic efficacy 
+of systemically administered CNS drugs is the blood–brain barrier 
+(BBB) that blocks the entry of 99% administered small molecules 
+and biotherapeutics. Although ongoing efforts aim to overcome 
+the BBB to enhance systemic drug delivery to the brain, one chal-
+lenge remains in the form of nonspecific targeting within the brain 
+parenchyma, which continues to be a major factor contributing to 
+clinical failures4,5.
+When examining the current clinical landscape of CNS drug 
+development, biotherapeutics including monoclonal antibodies and 
+gene therapy dominate up to 90% of phase III clinical trials. However, 
+antibodies penetrate the brain at a mere 0.1–1% after intravenous 
+injection6,7, and despite being locally delivered, gene therapies suffer 
+from poor tissue and cell specificity. Moreover, the predominant use 
+of viral vectors for gene therapy has raised concerns regarding their 
+immunogenicity, neurotoxicity and high manufacturing costs8,9. Thus, 
+without a precision non-viral delivery system capable of maximizing 
+brain penetration and specifically targeting pathological regions and 
+cell types within the brain, the development of effective CNS therapies 
+will remain stagnant.
+In light of these challenges, nanoparticles (NPs) offer a beacon of 
+hope for advancing CNS drug delivery owing to their inherent advan-
+tages, including versatility for encapsulating both small molecules and 
+biotherapeutics, controlled release and targeted delivery. NP-based 
+delivery platforms are extremely versatile as they are composed of a 
+wide range of building blocks, ranging from lipids, synthetic polymers, 
+peptides and oligonucleotides to inorganic materials such as gold, 
+silica and iron. Although numerous NP systems have been designed to 
+enhance brain accumulation and targeting specificity, only a few have 
+progressed to clinical trials.
+In this Review, we aim to provide an authoritative and balanced 
+overview of different NP strategies to achieve precision delivery within 
+the CNS. We first highlight the pivotal regions and cell types in the 
+brain that are associated with different CNS diseases and therefore 
+Fig. 1 | Selective vulnerabilities of CNS diseases. a,b, The end-pathology 
+effects of central nervous system (CNS) diseases highlight their regional 
+(part a) and cellular (part b) vulnerabilities. c, A comprehensive summary 
+of the impacted brain regions and cell types associated with prevalent 
+neurodegenerative diseases, including Alzheimer disease, Parkinson 
+disease, Huntington disease, amyotrophic lateral sclerosis and multiple 
+sclerosis is presented. For instance, hippocampus and cholinergic neurons 
+are frequently affected regions and cell types in Alzheimer disease. Colours 
+indicated are with respect to the brain regions shown in part a. A, astrocyte; 
+BC, Betz cell; ChN, cholinergic neuron; CN, cortical neuron; CoN, corticostriatal 
+neuron; CPN, cortical projection neuron; dlPFC, dorsolateral prefrontal cortex; 
+DN, dopaminergic neuron; GMSN, GABAergic medium spiny neuron; HN, 
+histaminergic neuron; I, interneuron; M, microglia; MN, motor (upper, lower, 
+oculomotor) neuron; mPFC, medial prefrontal cortex; NN, noradrenergic 
+neuron; O, oligodendrocyte; OBN, olfactory bulb neuron; ON, orexin and 
+hypocretin neuron; PFC, prefrontal cortex; PgN, pigmented neuron; PrN, 
+preganglionic neuron; PN, pyramidal neuron; SN, serotonergic neuron;  
+SPN, striatal projection neuron; vPFC, ventral prefrontal cortex.
+
+Nature Reviews Materials | Volume 9 | August 2024 | 567–588
+569
+Review article
+region-specific aberrations in the prefrontal cortex and limbic system16. 
+Neurodegenerative diseases, such as Alzheimer disease (AD), Parkin-
+son disease (PD), amyotrophic lateral sclerosis (ALS) and multiple 
+sclerosis (MS), involve multiple distinct brain regions, often character-
+ized by region-specific neurodegeneration. For instance, PD primarily 
+affects hallmark regions such as the basal ganglia and substantia nigra, 
+resulting in impaired motor coordination and cognitive functioning. 
+During diagnosis, clinicians assess for loss of dopaminergic neurons by 
+dopamine transporter scans (DaTSCAN) or Lewy body accumulation 
+in multiple simultaneous brain regions, including the cranial nerves, 
+olfactory system, brainstem (including locus coeruleus, dorsal raphe) 
+and substantia nigra17. ALS impacts the spinal cord and primary motor 
+cortex, leading to critical impairments in voluntary muscle control 
+and certain executive functions18,19. Meanwhile, MS is characterized by 
+focal, demyelinating lesions in the white and grey matter of the CNS, 
+with distinct neurodegenerative patterns observed amongst different 
+brain regions20,21. Progressive neurodegenerative diseases such as 
+AD are characterized by the aggregation and spread of pathological 
+proteins in stereotypical patterns across multiple brain regions22. 
+Such regional distribution is often correlated with disease severity. 
+For instance, intracellular tau tangles are a pathological hallmark of AD 
+and are first seen in the entorhinal cortex (Braak stages I and II), then 
+M
+A
+O
+ChN
+DN
+PN
+NN
+SN
+MN
+CN
+PrN
+OBN
+PgN
+HN
+ON
+SPN
+CoN
+BC
+GMSN
+I
+CPN
+Alzheimer disease
+Aﬀected regions
+Aﬀected cell types
+Parkinson disease
+Huntington disease
+Amyotrophic lateral sclerosis
+Multiple sclerosis
+M, A, ChN, PN, PgN, NN, ON, HN
+M, A, DN, NN, SN, ChN, PN, CoN, OBN, PrN
+M, A, SPN, CN, GMSN, I
+M, A, MN, BC
+M, A, O, CPN
+Frontal cortex
+Temporal cortex
+Parietal cortex
+Occipital
+cortex
+Cerebellum
+Brain stem or spinal cord
+Precuneus/
+cuneus
+Corpus callosum
+Cingulate cortex
+Superior colliculus/
+periventricular region/
+substantia nigra
+Limbic system structures
+Nucleus accumbens
+Lateral entorhinal cortex
+Basal ganglia structures
+Subventricular zone
+Hypothalamus
+Thalamus
+PFC
+dlPFC
+mPFC vPFC
+Aﬀected brain regions
+a
+Aﬀected cell types
+b
+Example of CNS diseases
+c
+
+Nature Reviews Materials | Volume 9 | August 2024 | 567–588
+570
+Review article
+the hippocampus and thalamus (Braak stages III and IV), and finally 
+in the neocortex (Braak stages V and VI). This sequence is typically 
+synchronous with cognitive decline from mild cognitive impairment 
+(MCI) into severe dementia23.
+Selective vulnerabilities, however, extend beyond the confines of 
+brain regions and reach the cellular level, beginning with the vascular 
+components of the BBB (Fig. 1). Brain endothelial cells (BECs) are 
+vulnerable to inflammation in cerebral adrenoleukodystrophy (CALD)24 
+and to psychosis in schizophrenia25. The vulnerability of BECs has also 
+been well documented in AD pathology, alongside other vascular 
+cell populations such as smooth muscle cells, fibroblast-like cells 
+and pericytes26–28. Notably, pericytes have displayed heterogeneous 
+vulnerability among different brain regions in various pathological 
+conditions29. Moving further into the parenchyma, the varying vulner-
+ability of different neural cell types to stressors is strongly implicated in 
+the pathogenesis of various CNS disorders. For instance, degeneration 
+of dopaminergic neurons in the substantia nigra is usually associated 
+with PD and HD30–32, whereas degeneration in the hippocampus is 
+linked to AD33,34. Conversely, the degeneration of cholinergic neurons 
+in the basal forebrain is a hallmark characteristic of AD pathology35–37. 
+Substantial neuronal loss are exhibited by Purkinje neurons, integral 
+to movement coordination in the cerebellum, in several neurodegen-
+erative diseases such as ALS, AD and HD38–40. Notably, in PD, Purkinje 
+neuron axonal swelling is observed, a phenomenon common in other 
+disorders with cerebellar damage41. Additionally, interneurons, pivotal 
+for neuro-connectivity, govern the firing patterns of diverse cell types 
+within distinct brain subregions through mechanisms of excitation 
+and inhibition. Dysfunction of this neural cell type can be detrimental 
+to brain circuitry and is observed in neurodegenerative diseases. 
+For example, in ALS, the loss of multiple subtypes of interneurons 
+impairs the motor circuitry of a patient42.
+Most neurodegenerative disorders are also marked by the 
+involvement of astrocytes, microglia and oligodendrocytes, warranting 
+careful consideration of any vulnerability patterns that they might 
+exhibit. In PD mouse models, neuroglia, along with few vascular 
+cells, are selectively vulnerable to oxidative stress and mitochondrial 
+dysfunction43. Likewise, varying activity and susceptibility of glial cells 
+in the substantia nigra and ventral tegmental area (VTA) could influence 
+the vulnerability of dopaminergic neurons within these regions44. 
+Oligodendrocytes also appear to exhibit selective vulnerability to glu-
+tamate excitotoxicity45 and transient ischaemia46 and are often affected 
+more so than neurons by these same stressors. The vulnerability of 
+astrocytes and microglia to impaired glutamatergic transmission has 
+also been documented in psychiatric conditions such as treatment-
+resistant depression47. Lastly, neurons and neuroglia could be rendered 
+vulnerable to the cytotoxic effects elicited by T cells that accumulate 
+within the brain parenchyma in certain inflammatory pathological 
+conditions48. It is also important to appreciate that vulnerabilities 
+of cell populations in other pathologies, such as rare neurological 
+disorders49 and those of neuropsychiatric origins50, are just begin-
+ning to be comprehended, and future research will contribute to 
+their deeper understanding. Collectively, the fact that distinct CNS 
+diseases have region and cell-specific vulnerabilities underscore the 
+importance of developing precision delivery approaches to enhance 
+therapeutic efficacy.
+Barriers towards precision delivery in the CNS
+Intravenously administered nanomedicine typically needs to traverse 
+various barriers to reach the CNS. To perform a systematic analysis of 
+these physiological barriers that influence the precision delivery of 
+NPs, we classify the journey of NPs to the brain into four stages (Fig. 2). 
+In stage 1, NPs circulate through the vascular network and marginate 
+towards the brain endothelium to initiate particle-cell binding at the 
+BBB. Subsequently, stage 2 involves the penetration of NPs across 
+the BBB through either transcellular or paracellular transport pathways. 
+Stage 3 entails the transport of NPs through interstitial barriers and, 
+finally, Stage 4 describes cellular barriers towards targeted accumu-
+lation of NPs in specific cell types within the brain. Within each stage, 
+various biological and physical barriers act as roadblocks, leading to 
+short circulatory half-lives, accelerated degradation, off-target effects 
+and dampened therapeutic potential.
+Clearance from systemic circulation and margination (stage 1)
+After intravenous injection, NPs are distributed throughout the blood-
+stream. Around 25% of the blood is pumped from the heart towards 
+the brain51, and the rest towards other organs. The kidney and liver 
+are the two most prominent sites of blood filtration and clearance, 
+with the renal and hepatic blood flow reaching over 45% of the cardiac 
+output combined52,53. NPs of different sizes are removed from the 
+body via distinct clearance mechanisms while exhibiting preferential 
+biodistribution in different organs54. For instance, NPs with a size less 
+than 5–8 nm are rapidly cleared by kidneys at the glomerular filtration 
+units55,56, whereas medium-sized (20–150 nm) NPs tend to be cleared 
+by the reticuloendothelial system (RES) at the liver site54,57,58. Kupffer 
+cells, which are resident macrophages in the liver, are known for their 
+prominent phagocytic potential and along with endothelial cells, are 
+responsible for trapping up to 90% of NPs within the liver59–61. NPs larger 
+than 200 nm are more resilient to RES clearance and accumulate in the 
+liver, spleen and lung54,57,62.
+Another critical factor that governs the biodistribution of intra-
+venously injected NPs is the formation of protein corona, which is a 
+result of proteins that adsorb on the NPs from the bloodstream63,64. 
+The composition of protein corona strongly dictates the biological 
+identity of NPs and their ultimate fate in the body65. The intrinsic proper-
+ties of NPs, such as size, shape, core and surface properties can all affect 
+the adsorption patterns of various serum proteins66,67. For instance, 
+mass spectrometry-based proteomics have revealed widely diverse 
+protein corona composition isolated from liposomes68, quantum 
+dots69, metallic NPs70,71, silica NPs72, polymeric NPs or lipid NPs (LNPs)73. 
+The protein corona is especially detrimental to NPs that use an ‘active 
+targeting’ strategy, which is commonly used in brain-targeted delivery. 
+Ligands such as small molecules, peptides and antibody domains can be 
+engineered to the NP surface to increase their targetability to the brain. 
+However, the altered surface properties can further encourage corona 
+formation through charge-specific or intermolecular interactions74. As 
+the corona masks the targeting ligand, the tissue-homing efficiency of 
+NPs undergoes a substantial decline75,76. For instance, transferrin (TF)-
+modified PEGylated silica NPs incubated in fetal bovine serum were less 
+internalized and demonstrated less TF targeting specificity in transfer-
+rin receptor (TFR)-expressing tumour cells, whereas they exhibited 
+high TFR-mediated endocytosis in serum-free media or phosphate-
+buffered saline (PBS)75. Another obstacle posed by the protein corona 
+is immune system activation triggered by the interactions between NPs 
+and macrophages, which can cause inflammation and tissue damage74. 
+For instance, NPs larger than200 nm are at high risk of attracting com-
+plement component 3 (C3) to their protein corona and subsequently 
+activating an immunological response77–79. Nevertheless, not all NPs 
+attract protein corona formation, and strategies have been proposed 
+
+Nature Reviews Materials | Volume 9 | August 2024 | 567–588
+571
+Review article
+NP clearance from systemic circulation and their margination (stage 1)
+a
+Penetration across the BBB (stage 2)
+b
+Crossing the interstitial space and cellular uptake 
+and targeting (stages 3 and 4)
+c 
+ECM aﬀect
+NP diﬀusion 
+Neurotoxic debris 
+hinders NP diﬀusion
+A diseased BBB alters interstitial 
+flow rate and pressure, impacting 
+NP transport eﬀiciency
+Diseased physiology
+Endothelial cell shrinkage
+Normal physiology
+Transport
+proteins
+Increase in
+receptor expression
+Leaky BBB
+Protein corona
+NP injection
+Clearance
+Arterial vessel
+Glomerulus
+NPs <8 nm
+are cleared
+Liver sinusoids
+Margination barrier
+Margination is required for NP penetration and
+can be controlled by NP stiﬀness and shape
+Kupﬀer
+cells
+Endothelial
+cells
+Hepatic
+B cells
+Clearance
+20–150 nm
+RES system clearance
+Organ
+accumulation
+Immune cell uptake
+Renal clearance
+Lymphatic system
+clearance
+Cell membrane and
+endosome barriers
+Pericyte
+dissociation
+Pericyte
+Parenchyma
+Fig. 2 | Biological barriers to precision NPs en route to the brain. 
+To achieve central nervous system (CNS) delivery through intravenous 
+injection, nanoparticles (NPs) have to bypass distinct barriers in four 
+different stages during their journey to the brain. a, As NPs enter circulation, 
+they undergo clearance through two distinct pathways: the renal system 
+and reticuloendothelial system (RES). Simultaneously, serum proteins in 
+circulation absorb onto NPs, forming protein coronas, leading to immune cell 
+uptake and NP removal. However, if NPs are larger than 200 nm, they will resist 
+RES clearance, leading to accumulation in the liver, lung and spleen. Beyond 
+systemic clearances, particles must undergo margination towards endothelial 
+cells to ensure successful entry into the targeted regions. b, Endothelial cells 
+with tight junctions, along with other cell types, make up the blood–brain 
+barrier (BBB), acting as a protective barrier against NP entry into the brain 
+parenchyma. Even if NPs manage to bypass this layer, the lymphatic system 
+and efflux transporters efficiently remove them. Furthermore, under diseased 
+conditions, the integrity of the barrier may be compromised, resulting in a 
+leaky BBB, altered receptor expression, endothelial cell shrinkage and pericyte 
+dissociation — all of which can collectively impact BBB permeability. c, Finally, 
+beyond the BBB, interstitial barriers such as the extracellular matrix (ECM), 
+neurotoxic debris and variations in interstitial flow rate and pressure affect 
+NP diffusion, presenting a challenge to their transport efficiency. In addition, 
+cellular barriers, including the cell membrane and endosome, can further 
+impede NP entry.
+
+Nature Reviews Materials | Volume 9 | August 2024 | 567–588
+572
+Review article
+to circumvent corona formation. For instance, the surface affinity of 
+gold NPs to serum proteins can be reduced by glutathione coating or 
+surface functionalization with lysine and cysteine80. Synthetic polymer 
+conjugates (such as amphiphilic N-(2-hydroxypropyl)methacrylamide 
+(HPMA) copolymer) can also provide NPs an ‘invisibility cloak’ against 
+serum proteins by minimizing their nonspecific interactions with the 
+particle surface81.
+To target the brain endothelium or penetrate across the BBB, NPs 
+also need to undergo margination. Margination dynamics encompass 
+the lateral movement of NPs away from the vessel core, wherein most 
+red blood cells (RBCs) accumulate, and towards the endothelial surface. 
+This migration towards the vessel walls constitutes the initiating event 
+of extravasation82,83. Although all NPs eventually reach vessel walls, 
+the propensity of margination largely depends on the physiochemical 
+characteristics of the NPs, primarily shape and deformability82. 
+For instance, spherical particles tend to marginate slightly better than 
+their flatter, ellipsoidal counterparts82. Nevertheless, non-spherical 
+NPs adhere to vessel walls more efficiently, as they experience a lower 
+drag force compared to spherical particles of the same volume82,84. 
+In addition, collision between a stiff and soft particle in suspension 
+(such as in the blood) results in a greater displacement of the stiff 
+particle towards the wall region, which drives the initial step of margina-
+tion85. Our understanding of margination dynamics comes mainly from 
+in vitro studies, and more detailed in vivo studies should be conducted 
+to validate these findings. In addition, a deeper understanding of 
+margination dynamics could be helpful to maximize the interactions 
+between the NPs and the endothelium. Overall, various factors collec-
+tively contribute to limited brain delivery of systemically administered 
+NPs, which emphasizes the importance of tailoring NP design to extend 
+circulation time and minimize their nonspecific biodistribution.
+Penetration across the BBB (stage 2)
+The BBB is the most direct circulatory entry into the brain paren-
+chyma, thus making it the main focus of brain-related drug delivery 
+studies86. Nevertheless, the anatomical layout of the BBB also acts as 
+a major impediment for NPs to access the brain. Briefly, the BBB con-
+sists of a monolayer of non-fenestrated endothelial cells connected 
+by tight junctions and wrapped around by basal lamina in which peri-
+cytes and astrocytic end feet are embedded to maintain structural 
+integrity87. The unique cellular arrangement of the BBB enables it to 
+exert tight regulation over the influx and efflux of materials across 
+the brain. Further, the BECs are specialized to have reduced pinocytic 
+activity, transcellular vesicle trafficking and pore formation, greatly 
+limiting both paracellular and transcellular transport of materials88. 
+Although small molecules (molecular weight (MW) < 400 Da) can pas-
+sively diffuse across the BBB, NPs must rely on transcytosis to gain entry. 
+Brain endothelium intrinsically has multiple transcytosis mechanisms, 
+including carrier-mediated, adsorptive-mediated transcytosis and 
+receptor-mediated transcytosis (RMT), which are specific for different 
+classes of macromolecules. Therefore, one must consider the turnover 
+rate and efficiency of each pathway when choosing ligands for NP active 
+targeting. Nevertheless, even if the NPs manage to marginate towards 
+the vessel wall and are decorated with receptor-targeting ligands, the 
+rate of transcytosis across the BBB remains limited. Through the study 
+of RMT of TFR-targeting liposomes across the brain, it was surprisingly 
+found that liposomes were sequestered by the brain endothelium at 
+capillaries and arterioles, whereas transcytosis-mediated uptake mainly 
+occurred at post-capillary venules89, revealing the heterogeneity of 
+NP uptake in brain vasculature, independent of the gene expression 
+level of TFR. Finally, after successful penetration across the BBB, the 
+efflux transporter located on the BBB, such as the ATP-binding cassette 
+(ABC) transporters, can actively pump the NPs out of the brain90, which 
+poses another challenge for efficient drug delivery. Nevertheless, if 
+the goal is to target abnormal brain endothelium and vessel, as in the 
+case of macular degeneration91 and other vascular-associated CNS 
+disorders, selecting targeting strategies that induce endocytosis, but 
+not transcytosis or efflux transport, is optimal to achieve maximal 
+cargo retainment within the brain endothelium.
+Disruptions in BBB have been associated with various CNS dis-
+orders. For example, damages in blood vessels are thought to be a 
+key initiating factor in the development of AD, leading to an influx 
+of neurotoxic blood-derived components, which results in neuronal 
+dysfunction92. Similar BBB impairments have been observed in PD and 
+Huntington disease (HD)93,94. Therefore, it is critical to understand how 
+diseases affect the original BBB architecture and the resulting impacts on 
+effective drug delivery. Structural changes of BBB in CNS disorders often 
+include endothelial degeneration and shrinkage, reduced expression 
+of tight junctions, basal lamina thickening, basement membrane 
+disintegration, pericyte dissociation and astrocytic end feet detach-
+ments92,95,96. These changes contribute to increased BBB permeability 
+and an elevated transendothelial bulk flow into the brain parenchyma, 
+which might provide a window for the increased brain accumulation 
+of NPs. For instance, a brief opening of the BBB, as a result of optical 
+nerve transection, can dramatically increase the biodistribution of sys-
+tematically administered large (up to 200 nm) albumin-functionalized 
+polymeric NPs in the brain. Other acute assaults, such as TBI and ischae-
+mic stroke, can also breach the BBB for a short window of time, which 
+forms a valuable therapeutic window for the efficient penetration of 
+drug-loaded NPs97,98. Both passive and active targeting strategies can 
+increase the delivery of a wide range of therapeutics, ranging from 
+vitamins99, antioxidants100, peptide drugs101, neurotransmitters102 or 
+erythropoietin103 to successfully curb local neuroinflammation and 
+infarct volume in TBI and strokes, respectively.
+Although BBB breakdown and temporary breach may seem to be 
+a benefit for drug delivery, there are underlying complexities. Disrup-
+tions to the BBB can trigger the formation of fibrotic scars mediated 
+by the deposition of various extracellular components and could alter 
+the physiological composition of the BBB and potentially hinder access 
+to the parenchyma104,105. Likewise, transcriptomic studies on human 
+and animal brain tissues have revealed a global shift in transporter and 
+receptor expression as well as transcytosis patterns in the vasculatures 
+of diseased and ageing brains, which can heavily impact NP delivery 
+via the RMT pathway106–108. For instance, expression of glucose trans-
+porter 1 (GLUT1), a main entry point for glucose into the brain, and a 
+popular target for active brain targeting, was substantially reduced in 
+the luminal side of the BBB in AD109. Remarkably, the administration of a 
+glucagon-like peptide 1 receptor (GLP1R) agonist was able to reverse the 
+reduced GLUT1 expression and lead to functional recovery of the BBB in 
+an ageing mouse model of AD110. In addition to GLUT1, genes coding for 
+stress response pathways and regulation of BBB transcellular transport 
+and transcytosis were substantially downregulated in the endothelial 
+cells of the aged brain. By contrast, various transcription factors and 
+immune signalling genes were strongly upregulated. GLP1R treatment 
+also proved successful in attenuating age-dependent microglial prim-
+ing and in reversing ageing signatures in the neurovascular cell popu-
+lation, thereby offering promise for the therapeutic alteration of key 
+phenotypic and genotypic changes associated with neurodegenerative 
+disease76,111. By comprehensively mapping the transcriptome of over 
+
+Nature Reviews Materials | Volume 9 | August 2024 | 567–588
+573
+Review article
+20,000 cerebrovascular cells, it was found that carriers of the APOE4 
+risk allele for AD had substantially downregulated expression of trans-
+port genes in endothelial cells, pericytes and fibroblasts106. Another 
+commonly targeted receptor in brain drug delivery, the low-density 
+lipoprotein (LDL) receptor, is expressed at lower levels in the AD brain 
+endothelium, which was correlated to reduced amyloid-β clearance112. 
+The closely associated low-density receptor-related protein 1 (LRP1) is 
+also downregulated in ageing and AD, and it contributes to impaired 
+amyloid-β transport across the BBB113. Importantly, the timescale of 
+BBB breakdown also differs between diseases. Although BBB break-
+down is a gradual neurodegenerative process and precedes cognitive 
+decline for several years, other more acute diseases such as TBI can lead 
+to BBB breach moments after the physical injury114. Consequently, the 
+BBB tends to self-repair with complete recovery after 2 weeks of injury. 
+Therefore, differences in the speed of the BBB breakdown dictate 
+effective therapeutic windows and dosing strategies.
+Crossing the interstitial space (stage 3)
+The interstitial system of the brain, consisting of interstitial fluid 
+and extracellular matrix, has a crucial role in nurturing parenchymal 
+cells, facilitating nutrient, gas and ion exchange, and aiding in waste 
+removal115. However, this system is effectively gated from systemic 
+circulation and is dynamically irregular and tortuous116, thereby 
+hindering nanocarriers from reaching specific regions and cells within 
+the brain. Additionally, interstitial flow is intricately linked with the 
+dynamic flow of cerebrospinal fluid, creating an environment marked 
+by constant turnover and drainage117 that can negatively impact carrier 
+residence time and cellular contact. The rate and pressure of this flow 
+determine the transport efficiency of NPs118 and could pose upper 
+thresholds on the shear stress that can be sustained by them. Owing 
+to the breakdown of the BBB during most CNS diseases, the influx of 
+blood-derived proteins (that is, albumin, plasmin and fibrinogen) 
+often leads to local inflammation of the brain, thus recruiting circu-
+lating neutrophils and macrophages that affect the rate and pressure 
+of interstitial fluid flow119,120 which, in turn, can impact NP distribution 
+and efficacy. Whole-brain 3D atlas findings have revealed an abrupt 
+reduction in vessel diameter, density and altered branch angle in 
+the hippocampal region of an AD mouse model121, all of which could 
+potentially alter the therapeutic distribution as well. Moreover, the 
+accumulation of neurotoxic debris in the perivascular space can also 
+hinder the normal diffusion of NPs, causing them to be trapped within 
+the pathological regions without reaching their targets122,123. Lastly, the 
+extracellular matrix presents a dense, viscous and charged environment 
+within the brain parenchyma124,125, which can retard NP diffusion. It is 
+also worth noting that the entire extracellular architecture undergoes 
+dynamic remodelling, facilitated by the degrading activities of enzymes 
+secreted by neurons and glial cells in physiological and pathological 
+states116, which can further complicate NP delivery.
+Cellular uptake and targeting (stage 4)
+For therapeutic agents that act intracellularly, NPs need to cross the cell 
+membrane and escape the endosome after reaching the pathological 
+brain region. NPs with fine-tuned charge, size and hydrophobic–
+hydrophilic balance can enter the cells via passive diffusion. The 
+delicate bilayer model of cell plasma membranes poses a highly 
+selective filter to contents that can gain entry into cells126. Active entry 
+typically involves interactions with cell surface receptors, which vary 
+between cell types and can change expression levels in response to 
+various physiological and pathological signals. As mentioned earlier, 
+receptor-mediated uptake is complicated by the presence of the pro-
+tein corona and other detoxification strategies triggered by the cell in 
+response to external stimuli127. If nanomaterials successfully contact 
+the cell membrane, they can enter the cells via phagocytic or pinocytic 
+pathways, with receptor-mediated endocytosis being the most com-
+mon route of entry128. Endocytosed materials are typically fated for 
+degradation in the acidic environment of the lysosome, prompting 
+intelligent design considerations to facilitate endosomal escape and 
+release into the cytoplasm129. Even within the cytoplasm, nanomate-
+rials can be enveloped by autophagosomes and recycled back to the 
+lysosomes, adding a further layer of complexity128,130. In addition to 
+the various physicochemical factors of the nanocarrier, the biological 
+identity of the cell can determine the feasibility and efficiency of cel-
+lular uptake128,131. For example, microglia are notoriously hard to target 
+considering the spectrum of phenotypic and genotypic forms they 
+can adopt, depending on the pathological state in question. Further 
+research is also required to delineate the transcriptomic changes 
+that these cells express in both physiological and pathological states, 
+and could eventually enable us to safely target certain receptors that 
+are exclusively expressed in a disease of interest132–134. As the primary 
+immune responders of the CNS, their inherent capacity to phagocy-
+tose any foreign material could further question the validity of a truly 
+‘microglia-selective’ targeting approach. The same challenge echoes for 
+astrocytes, as they express an important proportion of receptors that 
+are also distributed among other cell types within the brain, and could 
+therefore lead to the uptake of an astrocyte-targeted NP by another cell 
+and thereby diminish the intended therapeutic outcomes135. Neuron 
+specificity is uniquely hampered by the need to target them in particular 
+brain regions, as mentioned in previous sections, and requires the 
+development of strategies beyond active targeting to limit NP diffusion 
+to said regions. Although further research is required to support the 
+development of such complex and precise nanosystems, there is a 
+growing body of techniques adopted by researchers to guarantee 
+cell-specific and region-specific delivery of NPs.
+Precision brain targeting at different levels
+Precision targeting can be achieved at four different levels (Fig. 3). 
+At level 1, targeting is directed towards the brain endothelium. At level 2, 
+BBB penetration is attained to target the entire brain comprehensively. 
+Moving further, levels 3 and 4 involve the realization of region-specific 
+and cell-specific targeting, respectively. The determination of the 
+target level is contingent upon the nature of the specific disease and 
+its underlying pathophysiology. For example, NPs intended for the 
+modulation of neuroinflammation in neurodegenerative diseases such 
+as AD or TBI would require the targeting of activated microglia136–138. 
+However, repairing the BBB after TBI or treating BEC dysfunction in AD 
+and other diseases may require targeting the brain endothelium and 
+other extracellular components26,139,140. To achieve effective precision 
+delivery, it is critical to design NPs to address the barriers summarized 
+above, which vary depending on the desired level of precision targeting 
+(Fig. 4). For instance, for endothelium targeting, challenges include 
+clearance during circulation, dynamics of margination, and ensur-
+ing efficient uptake by BECs. Conversely, for microglial or neuronal 
+targeting, the comprehensive resolution of all barriers outlined in the 
+preceding section becomes imperative.
+Targeting the brain endothelium (level 1)
+Prolonging the circulation half-life is a critical step to increase 
+the chance of NPs interacting with the brain endothelium. Varying 
+
+Nature Reviews Materials | Volume 9 | August 2024 | 567–588
+574
+Review article
+the size, surface charge and charge density of NPs have proven effec-
+tive in tuning their pharmacokinetic properties58,74,141. For instance, 
+NPs within 50–100 nm showed reduced RES clearance, whereas neu-
+tral or slightly negatively charged NPs tend to circulate longer than 
+positively charged ones74,142,143. However, if the charge density of cati-
+onic NPs is maintained at a low level, they can achieve comparable 
+circulation time and safety profiles144. To evade protein corona and 
+subsequent clearance by the mononuclear phagocytic system (MPS), 
+surface modification of NPs with polyethylene glycol (PEG) polymers 
+as a ‘stealth coating’58,145 proves to be an effective approach. Variations 
+in PEG chain length and coating density can further influence the cir-
+culation time of NPs. For example, NPs with PEG-coating density lower 
+than 0.2 PEG nm−2 were insufficient to prevent opsonization and MPS 
+clearance and thus led to faster clearance146. Coating NPs with PEG5000 
+substantially reduces serum protein adsorption to NPs, leading to the 
+longest circulation time among other PEG chain lengths147. Besides 
+tuning the physicochemical properties of NPs, cloaking them with 
+membranes isolated from erythrocytes, leukocytes and platelets can 
+enhance their stealthy circulation and substantially reduce protein 
+absorption and phagocytic uptake148,149. As the physicochemical prop-
+erties of NPs that govern clearance also influence margination, trade-
+offs are inevitable. For instance, although stiffer NPs have a higher 
+propensity to marginate, they also face more rapid clearance by phago-
+cytes in the bloodstream74. Conversely, non-spherical NPs, although 
+a
+Targeting specific brain cells (level 4)
+Targeting brain endothelium (level 1)
+b BBB penetration and comprehensive brain targeting (level 2)
+c Targeting specific brain regions (level 3)
+Brain
+parenchyma
+d 
+Barriers in level 1
+•  Particle clearance
+• Margination dynamics
+ of particles
+Endothelial cell uptake
+Brain
+parenchyma
+Cingulate cortex
+Corpus callosum
+Putamen
+Particle diﬀusion or
+distribution
+Barriers in level 2
+• BBB
+Hippocampus
+Neuron cell uptake
+Barriers in level 3
+• Interstitial flow
+• Lymphatic clearance
+• Eﬀlux transporters
+• ECM and neurotoxic
+ debris
+Barriers in level 4
+• Targeting specificity
+• Endosomal escape
+Fig. 3 | Distinct levels of precision targeting in CNS. Precision targeting of 
+nanoparticles (NPs) in the central nervous system (CNS) requires a strategic 
+approach within four different levels. a, It starts with designing NPs for prolonged 
+systemic circulation and enhanced margination to target endothelial cells, 
+facilitating interactions with endothelium and endothelial uptake. b, In the 
+second level, NPs should be engineered to cross the blood–brain barrier (BBB) 
+and reach the brain parenchyma in a comprehensive manner. c, The third level 
+involves NPs to target specific regions to address regional vulnerability. d, Finally, 
+achieving therapeutic effects in CNS diseases requires a focus on addressing 
+cell-specific vulnerability. To accomplish this, NPs must efficiently diffuse to 
+distinct affected brain regions and enter affected cell types. It is crucial to note 
+that the barriers presented at each level are cumulative. Thus, addressing barriers 
+at all stages is imperative to achieve effective targeting at the cellular level. ECM, 
+extracellular matrix.
+
+Nature Reviews Materials | Volume 9 | August 2024 | 567–588
+575
+Review article
+demonstrating a higher tendency for adhesion to vessel walls, often 
+suffer from less efficient cellular internalization owing to their irregular 
+shape and attract more protein corona150,151. Therefore, researchers 
+have to become the arbitrators of this ‘pulling contest’ to decide on the 
+physical parameters that lead to optimal delivery to the CNS.
+Rational design choices are essential to facilitate active endothelial 
+targeting given that BBB dysfunction is a hallmark of various neuro-
+pathologies. Existing research predominantly focuses on targeting 
+receptors on the endothelium to facilitate NP entry into the brain 
+(Table 1), but there is also a need to explore localization within damaged 
+brain endothelium. The dynamic endosomal compartments within 
+these cells often redirect endocytosed materials to different locations 
+within the brain, limiting retention within the vascular cells. Despite 
+the availability of highly selective cell surface markers for cells such 
+as pericytes, ligand-targeted approaches against them remain unex-
+plored152,153. Notably, targeting TFR or low-density lipoprotein receptors 
+(LDLR) can mediate NP penetration past the BBB. However, their high 
+internalization ratios make them unsuitable for BEC localization154. 
+By contrast, cell membrane components with low endocytic removal 
+rates — such as the homing peptide CFAGTPSILMLA — can internalize 
+selectively within BECs154. Combining the delicate interplay between 
+controlled endocytosis of vascular cell surface components, targeted 
+NPs and efflux transport mechanisms is crucial for achieving maximal 
+BEC targeting. Together, these considerations can inspire the devel-
+opment of novel approaches to target neovascular cell populations, 
+addressing vascular dysfunction following a pathological assault.
+BBB penetration and comprehensive brain targeting (level 2)
+Despite the continuous tight junctions of the brain endothelium making 
+paracellular transport and passive diffusion highly restricted, several 
+material designs can enhance passive targeting delivery of NPs across 
+the BBB. For instance, gold NPs of a particularly small size (10–15 nm) 
+can cross the BBB via transmembrane diffusion155. Similarly, superpara-
+magnetic iron oxide NPs (SPIONs) with a size of 50 nm or less can also 
+cross the BBB in the event of AD or ischaemic stroke156. Furthermore, 
+NPs made of lipophilic cores such as liposomes and LNPs are inherently 
+more efficient at passive brain targeting owing to endogenous interac-
+tion between lipids and LDLR, which are expressed by both BECs and 
+neurons157–159. By altering the specific types of lipids used in fabricating 
+the NPs, one may be able to control the composition of its associated 
+protein corona to further enhance BBB permeability160. More rigorous 
+studies are warranted in the future to gain a deeper understanding 
+of BBB penetration of different NPs with varying physiochemical 
+properties.
+The most promising avenue for brain drug delivery to date has 
+been the use of active targeting strategies to improve NP penetra-
+tion through the BBB. Ideally, the target receptors should be highly 
+expressed in the luminal side of the brain vasculature, with minimal 
+expression on the peripheral vessel to reduce off-targeting161. These 
+strategies involve surface modifications of NPs with molecules such as 
+glycoproteins, peptides, hormones and antibodies, aiming to improve 
+transcytosis by interacting with specific receptors on brain blood ves-
+sels162 (Table 1). Although the quest for receptors exclusively expressed 
+in the brain endothelium remains challenging, several promising 
+targets have emerged.
+As the most thoroughly investigated receptor for brain drug deliv-
+ery, the TFR was shown to be widely expressed in the brain capillary 
+beds compared to other tissues163. Successful brain drug delivery has 
+been achieved by conjugating full-length antibodies (such as OX26 
+and DNL310)164, single-chain Fv165,166, single antigen-binding frag-
+ment167,168, peptides76,111 and aptamers169 that target TFR. Aside from 
+antibodies, synthetic peptides specific to TFR can also be conjugated 
+to NPs to direct BBB targeting. Despite having only 1–10% binding 
+activity compared to their parent antibodies, these bioactive pep-
+tides (10 kDa) are considerably smaller than antibodies (150 kDa) and 
+possess lower immunogenicity, stronger penetration and reduced 
+production cost76,111. For instance, the conjugation of a CRT peptide — 
+an iron-mimicry moiety specific for TF–TFR complex — to PLGA-NPs 
+led to a 2.4-fold and 1.4-fold increase in brain accumulation compared 
+to TF-NP and bare NPs. Furthermore, CRT-NPs also demonstrated a 
+substantially higher extravasation distance into the brain parenchyma. 
+Consequently, mice bearing orthotopic glioma treated with paclitaxel-
+loaded CRT-NPs showed the greatest prolonged survival of all groups, 
+with a 2.5-fold increase compared to saline-treated negative controls170.
+The LDLR family, which binds to a variety of substrates includ-
+ing cholesterol, reelin and apolipoproteins (ApoE, ApoB)171, presents 
+another avenue for effective BBB penetration. Directly decorating 
+the NPs with these substrates through physical adsorption or cova-
+lent conjugation substantially increases intraparenchymal accumu-
+lation172–174. For instance, a near-infrared light-activatable nanogel 
+camouflaged with ApoE peptide-decorated erythrocyte membrane 
+showed a prolonged circulation half-life (8 h as opposed to 4 h), as 
+well as substantially enhanced BBB entry owing to the ApoE pep-
+tides, resulting in >5% of injected dose detected in brain parenchyma 
+8 h post-injection175. Other peptide ligands, such as VH434, angiopep-2 
+and MTF peptide developed from melanotransferrin (MTF), were also 
+developed for LDLR targeting and functionalized on NPs, showing a 
+statistically significant increase in BBB penetration compared to the 
+non-coated controls176–178. The effect of coating density on a wide range 
+of ligands on NPs, including polysorbate 80 (PS80), a substrate for 
+LDLR, has also been investigated. It was found that increasing PS80 
+coating density almost doubled the intracellular uptake and brain 
+accumulation of the NPs114.
+Other targeting strategies also include the decoration of NPs 
+with insulin receptor-binding antibodies (IgG) and glucose that rely 
+on GLUT1. These active targeting strategies provide valuable insights 
+into optimizing the surface properties of NPs to overcome the chal-
+lenges of delivering therapeutics to the brain. However, there is often 
+a trade-off between the binding avidity and/or affinity and brain pen-
+etrance. Although high avidity increases NP accumulation within brain 
+capillaries, NPs with lower avidity tend to translocate to the abluminal 
+side more efficiently. For instance, TF-decorated gold NPs can reach 
+the brain parenchyma through TFR-mediated transcytosis. High TF 
+content (200 TF per NP) on NPs, which correlates with high avidity, 
+increased association with endothelial cells, causing most of the NPs 
+to stay within brain capillaries. Conversely, lower TF content (20 TF per 
+NP) promoted NP-TFR interaction on the luminal side of the BBB and 
+translocation of the complex across to the abluminal side179.
+Another innovative method to boost BBB crossing is to leverage 
+innate cells and cellular products, which have a natural tendency to 
+home to diseased tissues. Cellular hitchhiking has emerged as a promis-
+ing strategy, wherein NPs are attached to the surface of either immune 
+cells or red blood cells to not only prolong their circulation time, but 
+also target specific receptors expressed by the BBB. For instance, 
+in most neurological disorders, neuroinflammation is a prevalent 
+hallmark accompanied by the upregulation of endothelial adhesion 
+proteins such as vascular cell adhesion molecule 1 (VCAM1) and inter-
+cellular adhesion molecule 1 (ICAM1) owing to local cytokine release. 
+
+Nature Reviews Materials | Volume 9 | August 2024 | 567–588
+576
+Review article
+This upregulation results in the widespread infiltration of circulat-
+ing immune cells, primarily macrophages and leukocytes, into the 
+brain parenchyma180. For example, ‘cellular backpacks’ consisting of 
+a polymer particle of 7–10 µm in diameter and a few hundred nano-
+metres in thickness carried by macrophages (as the particle is too 
+large to be phagocytosed) could penetrate the inflamed brain in an 
+Mannose and
+MS1 receptors
+Cell adhesion
+molecules
+GT1B
+receptor
+Tet-1
+Fibroblast growth
+factor receptor 1
+Fibroblast
+growth factor
+ligand
+Membranotrophic
+peptide
+gH625
+peptide
+Astrocyte
+homing peptide
+CD11b surface
+marker
+CD11b surface
+antibody
+RVG
+Dopamine
+receptor
+NP shape enhances wall adhesion
+Stiﬀness enhance margination
+TLR4
+NTR and nicotinic
+LPS acetylcholine
+receptors
+LPS
+TPP
+TPP
+Dopamine
+Ligands to enable cell-specific targeting for level 4 targeting
+Strategies to enable region-specific accumulation of NPs for level 3 targeting
+Ligands to enable endothelium uptake and
+BBB penetration for level 1 and 2 targeting
+Physicochemical modification to tune clearance 
+and margination for level 1 targeting
+ROS
+ROS
+ROS
+FUS
+External stimuli-assisted delivery
+External stimuli-assisted delivery
+FUS
+Facilitate localized
+drug release
+Near-infrared stimuli
+TF receptors
+TF ligand
+Cholesterol 
+Reelin 
+ApoE
+IgG antibody
+Glucose
+LDL receptor family
+Insulin receptor
+GLUT1
+Size
+Stiﬀness
+Charge
+Shape
+Environmentally triggered NP accumulation
+Microglia
+Neuron
+Astrocytes
+TF
+ApoE
+
+Nature Reviews Materials | Volume 9 | August 2024 | 567–588
+577
+Review article
+encephalitis brain model, but not when the backpacks were injected 
+alone without their cellular carriers181. As an alternative cell vehicle, 
+RBCs are highly abundant and have relatively long circulation times 
+compared to NPs. NPs adsorbed on the surface of RBCs demonstrate 
+decreased liver clearance and deposit within the capillary network 
+wherein NPs can be ‘shed off’ from the RBCs as they squeeze through 
+the narrow blood vessel182. This RBC hitchhiking strategy was imple-
+mented in brain vasculature targeting by using intra-carotid arterial 
+injection. An astonishingly high BBB penetration (~12% injected dose) 
+was achieved, which was about tenfold higher than the penetration 
+achieved with affinity moieties183 such as antibodies or ligands.
+Moreover, the expression of the receptor and transport mecha-
+nisms may vary in different CNS diseases owing to dysregulated 
+molecular transport. For instance, the brain endothelium of patients 
+with AD or HD is marked with a decrease in GLUT1 and LRP expression 
+levels184. Conversely, ischaemic stroke is characterized by an elevated 
+GLUT1 expression185. Therefore, researchers should tailor the targeting 
+ligand depending on the disease of interest.
+External interferences have also been used to transiently open the 
+BBB to increase NP delivery to the brain parenchyma. Microbubble-
+assisted focused ultrasound (MB-FUS) is one of the most advanced non-
+invasive methods to improve intravenous delivery through the BBB. 
+Rapid short-pulse ultrasound can introduce a local acoustic pressure 
+just above the pressure threshold of local BBB opening with minimum 
+adverse bioeffects, such as red blood cell extravasation and inflam-
+mation. Following FUS application, the BBB integrity is restored in as 
+short as 10 min, reducing the probability of serum protein extravasa-
+tion. The utility of MB-FUS was demonstrated for the co-delivery of 
+an mRNA-encapsulated LNP formulation with microbubbles to mice 
+with healthy brains, leading to a substantially enhanced transfection 
+rate in CD31+ BECs186. In 2019, the first-in-human trial that evaluated the 
+effectiveness of MR-guided FUS for BBB opening in the visual cortex 
+was completed in four patients with ALS. Successful BBB opening was 
+proven by permeation of otherwise impermeable imaging contrast 
+agents, such as gadolinium187.
+When the NPs extravasate from brain vasculature, their mass 
+transport relies predominantly on diffusion within the extracellular 
+space (ECS), which is morphologically heterogeneous188. Although 
+some studies suggest that convective transport may be at play in pro-
+moting particle motion within the brain interstitial, controversies 
+around its existence and extent persist122,189,190. To avoid confusion, 
+in this Review, we mainly focus on diffusive transport191,192. Particle 
+diffusion is primarily defined by local ECS geometry and tortuosity 
+and secondarily impacted by interstitial fluid viscosity and binding 
+interactions with ECS components188. Surface modification of the NPs 
+naturally plays a part in determining the diffusivity of the NPs within 
+the ECS. For instance, the effect of 5 biocompatible and commonly used 
+stabilizing surfactants on the transport of NPs to and within the brain 
+was studied. It was found that poloxamer 188 (F68) and poloxamer 407 
+(F127) inhibit P-glycoprotein efflux transporter to remain localized 
+intracellularly193, whereas PS80 increases the brain accumulation of 
+NPs. Poly(vinyl alcohol) (PVA) and anionic cholic acid (CHA) were also 
+studied because both are common surfactants to improve NP stabili-
+zation. It was found that the anionic surfactant CHA greatly enhanced 
+NP diffusive transport compared to no surfactant. By contrast, the 
+presence of non-ionic surfactants, PVA, F127, F68 and PS80 resulted in 
+shorter diffusion distances194. Nevertheless, when administered in vivo, 
+PS80 demonstrated impressive brain uptake, particularly by neurons 
+and microglia, owing to its ability to recruit ApoE and ApoB adsorption, 
+again highlighting the importance of protein corona composition 
+in dictating NPs fate within the brain194. ECS composition can also 
+influence diffusion; by studying the diffusion coefficients of 40-nm 
+NPs within the brain ECS in rat brain slices at different developmental 
+stages, an inverse relationship between diffusivity and age could be 
+built195. In contrast to diffusion, NPs can be delivered via bulk flow to 
+the brain by utilizing convection-enhanced delivery196, but this strategy 
+requires stereotaxic injection and is not applicable for systemically 
+administered NPs. Lastly, the fate of NPs within the brain is dictated 
+by a fine balance between accumulation and clearance, though little 
+is known about the mechanisms that facilitate the latter. Previously, 
+we discussed the roles of IF, cerebrospinal fluid and lymphatic flow in 
+contributing to the removal of NPs from the parenchymal environment 
+and it has been shown that organic NPs are cleared from the brain via 
+the glymphatic pathway197. Further research is therefore required to 
+reach a better understanding of the clearance mechanisms within 
+the brain and explore the possibilities of engineering NPs that could 
+potentially circumvent the same and ensure prolonged parenchymal 
+residence time.
+Targeting specific regions in the brain (level 3)
+Region-specific drug delivery to the brain is in dire need owing to the 
+differential vulnerability of brain regions to various neuropathologies. 
+One of the main strategies for directing NPs to specific brain regions 
+is to take advantage of the compromised neurovascular units and 
+resulting local microenvironment changes in specific CNS diseases. 
+For instance, after a TBI, the influx of thrombin to the injury site forms a 
+hotspot that can be used to attract NPs decorated with peptide (CAQK) 
+that can selectively bind to thrombin in the injured area198,199. Similarly, 
+NPs conjugated with a stroke homing peptide (SHp, CLEVSRKNC) were 
+used to successfully deliver neuroprotective agents to the stroke 
+Fig. 4 | Strategies to achieve precision targeting in CNS. Various strategies 
+and materials have been developed to overcome barriers at different targeting 
+levels. Physiochemical modifications, including adjustments in size, charge, 
+stiffness and shape, enhance particle circulation and margination to enable 
+endothelium targeting at level 1. Ligand conjugation on nanoparticles (NPs) 
+have been applied to target receptors present on the blood–brain barrier (BBB) 
+endothelium, such as transferrin (TF) receptors, low-density lipoprotein (LDL) 
+receptors, insulin receptors and glucose transporter 1 (GLUT1) transporters 
+for level 1 targeting or to enable BBB penetration for targeting the entire brain 
+(level 2). To achieve region-specific targeting (level 3), diverse approaches have 
+been investigated. For example, focused ultrasound can facilitate deep brain 
+tissue penetration and regional targeting. External stimuli, such as near-infrared 
+light, can guide particles such as gold nanorods to specific brain regions. 
+Additionally, environmental conditions within the brain can contribute to 
+regional targeting, as seen in central nervous system (CNS) diseases wherein 
+reactive oxygen species (ROS) can trigger NP drug release in the targeted region. 
+Achieving cellular targeting (level 4) often involves various ligands to target 
+microglia, astrocytes and neurons. The boxes represent different but cumulative 
+material design considerations across different levels: the smallest boxes 
+present considerations required for efficient level 1 targeting, whereas efficient 
+level 4 targeting requires the combination of the design considerations for all 
+levels. FUS, focused ultrasound; LPS, lipopolysaccharide; NTR, neurotrophin 
+receptor; RVG, rabies virus glycoprotein; TLR4, Toll-like receptor 4; TPP, 
+tetraphenylporphyrin.
+
+Nature Reviews Materials | Volume 9 | August 2024 | 567–588
+578
+Review article
+Table 1 | Different receptors, ligands and NP formulations previously developed to achieve targeting of BBB endothelium 
+and penetration through BBB in different diseases
+Receptor
+Ligand
+NP composition
+Therapeutic cargo
+Disease
+Animal
+BBB penetration
+Ganglioside 
+receptor
+A fusion peptide: cell-
+penetrating TGN peptide 
+and a neuron-binding 
+peptide Tet-1
+PEG–PLA NP
+NAP peptide
+AD
+Mice
+Brain accumulation of the TGN/Tet-1 peptide-
+coated NP is 5.8-fold higher than that of bare 
+NP and 1.7-fold higher than that of angiopep2-
+coated NP; NPs predominantly accumulated 
+in neurites251
+GLUT 
+receptor
+Glucose (covalent 
+conjugation)
+Liposomes (with 
+different PEG 
+chain lengths)
+Coumarin 6
+–
+Mice
+Longer PEG chain length resulted in lower 
+brain accumulation probably owing to 
+steric hindrance; but higher glucose 
+showed more effective transendothelial 
+transport287
+Glucose
+Polymeric 
+micelle
+–
+–
+Mice
+Simply modifying the micelles with glucose did 
+not substantially improve brain accumulation, 
+but when coupled with external glucose to 
+induce intracellular recycling, GLUT-modified 
+NP achieved elevated brain accumulation288
+Galactose (covalent 
+conjugation)
+Polymeric NP
+BACE1 siRNA
+AD
+Mice
+Induced hypoglycaemia to elevate GLUT1 
+receptor expression before administration; 
+Gal-modified NP showed 5.8-fold higher 
+accumulation in the brain than bare NPs289
+Dual targeting: GLUT 
+transporter-specific 
+mannose; brain-targeted 
+cell-penetrating peptide
+Liposome
+VGF protein-
+encoding plasmids
+–
+Mice
+Mannose-functionalized liposomes showed 
+~2-fold increase in plasmid transfection in 
+the brain290
+Insulin 
+receptor
+mAb antibody for insulin 
+receptor
+Antibody–drug 
+conjugate
+α-l-iduronidase; 
+iduronate 2-sulfatase
+MPS
+Rhesus 
+monkey
+Radiolabelled antibody–drug conjugate 
+showed detectable brain uptake for 2 h (ref. 291)
+Integrin 
+receptor
+c(RGD) peptide
+Liposomes
+Edaravone
+Cerebral 
+ischaemia
+Mice
+Penetration of the c(RGD)-NP is highly reliant 
+on infiltration of monocytes and/or neutrophils; 
+this also give region specificity to the 
+NP as the monocytes and/or neutrophils 
+preferentially accumulated in the ischaemic 
+sites292
+LDLR
+ApoE (covalent 
+conjugation)
+Bovine serum 
+albumin NPs
+–
+–
+Mice
+ApoE-conjugated NPs were detected in the 
+brain after 30 min, uniformly spread across all 
+six major brain regions293
+ApoB (BBB-binding 
+domain)
+APOB–drug 
+conjugation
+Suphamidase
+Mucopolysaccha­
+ridoses type IIIA 
+(MPS-IIIA)
+Mice
+10–15% greater enzymatic activity detected in 
+treated mice; ApoB–drug conjugate showed 
+intracellular uptake in both astrocytes and 
+neurons294
+ApoB (BBB-binding 
+domain)
+Recombinant 
+ApoB–enzyme 
+fusion protein
+Neprilysin
+AD
+Mice
+ApoB–enzyme conjugate achieved 1.7% 
+injected dose at 24 h post-delivery; treated 
+mice showed lower amyloid-β in the brain and 
+improved neuronal synapses295
+ApoE (covalent 
+conjugation)
+ApoE-
+reconstituted 
+nanocarrier with 
+synthetic lipids
+α-Mangostin
+AD
+Mice
+Following injection 2–4 weeks, ApoE 
+nanocarrier-treated mice showed less 
+astrogliosis and rescued memory296
+LDLR-specific cyclic 
+peptide VH434 and 
+VH4127
+Peptide protein 
+conjugate
+Fc fragment of 
+human IgG protein
+–
+Mice
+Mechanistically showed that the two cyclic 
+peptides cross the BBB through receptor-
+mediated transcytosis via LDLR176
+Lactoferrin
+Lipid NP
+Curcumin
+AD
+Rats
+Successful transcytosis demonstrated 
+with notably reduced astrogliosis in 
+treated rats297
+Dual targeting; LDLR-
+specific; ApoE peptide 
+and amyloid-β-specific 
+phosphatidic acid
+Liposome
+Aß peptide-specific 
+phosphatidic acid
+AD
+Mice
+ApoE-modified liposome reached 
+5-fold higher brain accumulation (0.3%) 
+compared to non-modified NP 24 h 
+post-injection298
+Leptin-30 peptide
+Dendrigraft
+Plasmid DNA
+–
+Mice
+Leptin 30-modified NPs resulted in significant 
+brain accumulation 80 min after injection and 
+resulted in high gene transfection efficiency 
+in microglia cells299
+
+Nature Reviews Materials | Volume 9 | August 2024 | 567–588
+579
+Review article
+regions in mice, leading to reductions in infarct volume and increased 
+functional recovery200. Other microenvironmental changes such as 
+pH and reactive oxygen species (ROS) at the site of CNS disease could 
+be used as a smart sensitive trigger for controlled drug release in the 
+pathological region. For instance, NPs sensitive to oxidative stress 
+effectively accumulated in the wound cavity after TBI and promoted 
+functional recovery201. Certain chemical coatings on NPs have shown 
+region-specific accumulation after intravenous injection. For example, 
+PS80-coated PLGA NPs were found to accumulate in the cortex after 
+systemic administration114,202. The reason for such preferential accumu-
+lation is not known and future investigations are needed to broaden the 
+list of similar materials that can achieve region-specific accumulation.
+Harnessing external stimuli such as light, magnetic field and ultra-
+sound offers great potential to dictate the localization of NPs within 
+desired brain regions. Factors such as NP shape, ligand coating density, 
+and responsiveness to light can be engineered to achieve regional 
+accumulation. For example, when gold nanorods are coated with TF 
+and activated by near-infrared stimulation, they specifically accumu-
+late in the hippocampus and subventricular zones of healthy mice203. 
+Similarly, magnetic stimulus was used to guide mesenchymal stem cells 
+labelled with superparamagnetic iron oxide NPs to the hippocampus of 
+AD mice204. However, how to control NPs smoothly to cover the whole 
+pathological brain region without migrating to other regions remains 
+unknown, which might require extensive iteration of physiochemical 
+properties of NPs including size, charge or stiffness.
+Targeting specific cell types in the brain (level 4)
+Advances in single-cell omics and sequencing have allowed the identi-
+fication of distinct cellular and molecular signatures associated with 
+healthy and diseased states of the brain205–207. Furthermore, the selective 
+vulnerability of cell populations and the resulting patterns of spatiotem-
+poral degeneration15,208 necessitate cell-specific delivery approaches 
+to maximize therapeutic efficacy while minimizing cytotoxicity and 
+off-target effects76 (Fig. 4).
+Astrocytes. Astrocytes are pivotal guardians of cerebral homoeostasis, 
+exerting their influence on BBB maintenance, neurotransmitter 
+recycling, synaptic remodelling and regulation of ion concentra-
+tions209–211. Targeted delivery to astrocytes is of great importance to 
+ameliorate neuropathological manifestations in the CNS. Owing to the 
+structural proximity of astrocyte feet to the brain endothelium and 
+given the disruption of BBB in multiple CNS diseases, astrocytes could 
+Receptor
+Ligand
+NP composition
+Therapeutic cargo
+Disease
+Animal
+BBB penetration
+Leptin 
+receptor
+Angiopep-2 peptide
+Polypeptide 
+NP with proline 
+neuroprotective 
+residues
+BDMC
+AD
+Mice
+Brain accumulation is predominantly in the 
+hippocampus, cortex and olfactory bulb; signal 
+is the highest in layer II/III of cortex177
+LRPR
+MTF peptide
+Peptide–protein 
+conjugate
+IL-1R antagonist mAb
+Neuropathic pain
+Mice
+Peptide–antibody fusion reached ~2.2% 
+injected dose in the brain with >95% in 
+parenchyma; in a neuropathic pain model, the 
+fusion vector achieved significant analgesic 
+effects300
+RVG peptide
+Exosome 
+(dendritic cell-
+derived) NPs
+SNCA siRNA 
+and curcumin
+Parkinson disease
+Mice
+RVG-coated NP showed significantly 
+higher brain accumulation and specifically 
+colocalization with neurons in substantia 
+nigra301
+nAChR
+Diferric TF or OX26 
+(entire antibody vs 
+Fab fragment)
+Antibody–drug 
+conjugate
+HRP
+–
+Mice
+OX26-HRP and TF-HRP, but not OX26(Fab)-HRP, 
+underwent transcytosis through BBB302
+OX26 (covalent 
+conjugation)
+Human serum 
+albumin NPs
+Loperamide
+–
+Mice
+Notable anti-nociceptive effects induced 
+after injection of OX26-HSA NP as opposed to 
+control isotype303
+TFR antibody 
+(heavy chain)
+Bispecific 
+antibody
+Anti-amyloid 
+antibody
+AD
+Mice
+Brain uptake of the fusion protein was 3.5% of 
+injected dose and amyloid-β concentration 
+was reduced 40% in treated mice166
+TFR antibody (heavy 
+chain, low affinity)
+Bispecific 
+antibody
+Anti-BACE1 antibody
+AD
+Mice
+Low affinity antibody exhibited high transcytotic 
+potential and showed broad brain distribution 
+24 h after injection; high amyloid-β reduction in 
+mouse brain neurons after treatment304
+Dual targeting; TFR 
+antibody and ICAM1 
+antibody
+Polystyrene NP
+Acid 
+sphingomyelinase
+Niemanne–Pick 
+disease types A 
+and B
+Mice
+The dual-targeted NP achieved higher BBB 
+penetration than TFR-antibody alone, but lower 
+than ICAM1-antibody alone; enzyme delivery 
+enhanced compared to free enzyme305
+TFR
+TF
+Gold NP
+–
+–
+Mice
+Large amount of TF functionalization trapped 
+NPs in the luminal side of brain endothelium 
+whereas less TF enabled greater transcytosis179
+Note that all NPs listed were administered intravenously. AD, Alzheimer disease; BBB, blood–brain barrier; BDMC, bisdemethoxycurcumin; HRP, horseradish peroxidase; MPS, 
+mucopolysarcharidosis; MTF, melanotransferrin; nAchR, nicotinic acetylcholine receptor; NP, nanoparticle; PLA, poly(lactic) acid; RVG, rabies virus glycoprotein; siRNA, small interfering RNA; 
+TF, transferrin; TFR, transferrin receptor.
+Table 1 (continued) | Different receptors, ligands and NP formulations previously developed to achieve targeting of BBB 
+endothelium and penetration through BBB in different diseases
+
+Nature Reviews Materials | Volume 9 | August 2024 | 567–588
+580
+Review article
+make for attractive candidates for passive targeting. Several groups 
+have exploited ligand-conjugated NPs that offer selective targeting 
+towards astrocytes (Table 2). For example, an arginine-rich poly-
+plex gene delivery system transfected primary human astrocytes, 
+with very minor localization observed within neurons when tested 
+in vivo212. The functionalization of NPs with lipopolysaccharide (LPS) 
+enabled the targeting of reactive astrocytes in an in vivo model of spinal 
+cord injury, although some uptake was noted in neurons as well213. 
+Other ligands such as a triphenylphosphonium cation214, a homing 
+peptide specific to reactive astrocytes (AS1)215, and peptide gH625 
+(ref. 1) are also promising for preferential delivery towards astrocytes 
+over other neural cells. Further studies seeking to uncover astrocyte 
+homing entities will benefit from exploring the differential expression 
+of receptors and transporters under pathophysiological conditions.
+Microglia. Microglia constitute the dense network of resident immune 
+cells of the brain, playing vital parts in the elimination of dead cells 
+and debris, the secretion of neurotrophic factors, the modulation of 
+neural circuits and the maintenance of the overall homoeostatic wel-
+fare of the CNS216. However, the phenotypic and genotypic profiles of 
+these cells vary across a broad spectrum in response to various healthy 
+and diseased states, offering unique opportunities and challenges to 
+precision delivery217,218. NP geometry substantially influences micro-
+glial uptake, with microglia demonstrating a preference for spiked 
+nano-urchins over spherical or rod-shaped materials219–221. Although 
+the inherent phagocytic capacity of microglia could contribute to 
+preferential uptake over other cells, most NPs have previously relied 
+on microglia receptors for active targeting (Table 2). For instance, func-
+tionalizing ceria-zirconia NPs with CD11b antibody led to substantial 
+internalization within microglia in a mouse model of neuropathic 
+pain222. Similarly, functionalizing liposomes targeting TLR4 receptors 
+with LPS led to selective internalization in microglia and delayed disease 
+progression. Microglia-specific LNPs (MG-LNP) were screened amongst 
+a library of seven formulations and resulted in effective delivery of 
+small interfering RNA (siRNA) against the gene encoding PU.1 in mouse 
+models of chronic neuroinflammation223. Remarkably, MG-LNPs carry-
+ing siRNA localize within the microglia and reduce neuroinflammation, 
+regardless of whether they were injected intracisternally or intraperi-
+toneally223. NPs that target microglia-specific receptors (such as the 
+scavenger receptor, RAGE and CD receptor) have achieved increased 
+uptake in microglia in vitro, warranting further evaluations of their 
+specificities in animal models with neurological disease conditions219.
+Neurons. Neurons exhibit functional and morphological diversity 
+across spatiotemporal regions and disease conditions. Further, these 
+distinct neuronal populations are selectively vulnerable to a range of 
+neurodegenerative disorders15,28,224–226, prompting precision delivery 
+towards specific CNS diseases. The shape of NPs can influence neuronal 
+regeneration, differentiation and survival, with specific attention drawn 
+to nanoscaffolds, nanotubes, nanowires and nanocones227. The influ-
+ence of NP size on neuronal uptake has only been reliably investigated 
+with gold NPs; smaller gold NPs (15 nm) are preferentially uptake of 
+whereas differentiated cells internalized larger ones (40 nm)228. None-
+theless, other studies demonstrate that smaller NPs appear to elicit 
+greater neurotoxic effects229,230. In addition to shape and size, the sur-
+face charge of NPs also has a role in targeting neurons. For example, in a 
+neuron-glial co-culture, negatively charged NPs interacted selectively 
+with the neuronal membranes compared with positive and neutrally 
+charged particles231. Similarly, negatively charged quantum dots were 
+selectively internalized by neurons232. Such exciting findings await eval-
+uation in vivo, especially in the context of epileptic disorders whereby 
+local surface charges could impact seizure thresholds233.
+Glossary
+Blood–brain barrier
+(BBB). A selective barrier formed by 
+endothelial cells, astrocytes and 
+pericytes that regulates the passage 
+of substances from the bloodstream 
+into the central nervous system.
+Braak stages
+A classification system that describes 
+the progression of abnormal protein 
+deposits, particularly tau proteins, 
+within specific brain regions, providing 
+insights in pathology progression in 
+neurodegenerative diseases such as 
+Alzheimer disease.
+Cerebrospinal fluid
+Produced by the choroid plexus in 
+brain ventricles; it surrounds the brain 
+and spinal cord, providing mechanical 
+support, nutrient delivery, waste removal 
+and regulation of intracranial pressure 
+within the central nervous system.
+Convection-enhanced 
+delivery
+A local delivery method that 
+utilize pressure to drive the flow of 
+therapeutic agents through the brain 
+parenchyma.
+Extracellular matrix
+A dynamic network of proteins and 
+carbohydrates in the brain that surround 
+neurons and glial cells, influencing 
+synaptic plasticity, cell adhesion and 
+neuronal migration.
+Glymphatic pathway
+A waste clearance system unique 
+to the brain that relies on glial cells 
+(especially astrocytes) to facilitate 
+the cerebrospinal fluid–interstitial 
+fluid exchange in the perivascular 
+space.
+Interstitial fluid
+A fluid that fills the brain interstitial 
+space and directly surrounds neurons 
+and glial cells for nutrient delivery, waste 
+removal and cell signalling.
+Parenchyma
+The main functional tissue of 
+the brain, consisting of neurons, 
+glial cells and other acellular 
+supporting structures to maintain the 
+cognitive and physiological function 
+of the brain.
+Protein corona
+A layer of proteins that adsorb 
+onto the surface of nanoparticles 
+upon exposure to biological 
+fluids, influencing their behaviour, 
+interactions and biological 
+responses.
+Reticuloendothelial system
+(RES). A network of phagocytic cells, 
+mainly macrophages, that are primarily 
+located in the liver and spleen and 
+actively remove foreign substances 
+via engulfment.
+Tight junctions
+Specialized intercellular junctions 
+between endothelial cells that create 
+a barrier to control the passage of ions, 
+molecules and cells across epithelial 
+and endothelial cell layers.
+Transcytosis
+The process by which macromolecules 
+or particles are transported across a 
+cell, involving their uptake on one side 
+through endocytosis, intracellular 
+transport, and release on the opposite 
+side through exocytosis.
+
+Nature Reviews Materials | Volume 9 | August 2024 | 567–588
+581
+Review article
+Table 2 | NPs developed to target specific cell types in the brain
+Cell type
+Ligand
+Receptor
+NP composition
+Cargo
+Disease
+Animal 
+model
+Entry
+Treatment outcome
+Astrocytes –
+–
+PEG-PEI polyplex
+Plasmid 
+DNA
+–
+Mice
+i.v.
+Predominant gene expression restricted to 
+astrocytes in the cortical regions212
+LPS
+Toll-like 
+receptor 4
+Chitosan and polyacrylic 
+acid-bound quantum 
+dots
+–
+SCI
+Rats
+Intrathecal
+pH-responsive smart NPs selectively targeted 
+reactive astrocytes and achieved successful 
+endosomal escape213
+TPP
+–
+Polymeric NPs
+Coenzyme 
+and aspirin
+ALS
+Rats
+i.v.
+Cargos efficiently crossed the BBB and localized 
+within astrocyte mitochondria, leading to 
+significant reduction of ROS levels214
+Astrocyte 
+homing 
+peptide
+–
+Self-assembled nucleic 
+acid framework
+Adenosine 
+kinase and 
+ASO
+Epilepsy
+Mice
+i.v.
+Efficient silencing of ADK gene expression 
+leading to reduced frequency of seizure215
+gH625 
+peptide
+Membrane-
+tropic
+–
+Direct 
+delivery of 
+gH625
+–
+Rats
+i.v.
+Proof-of-principle showing that gH625 was able 
+to target astrocytes in vitro but localized within 
+neurons in vivo306
+Microglia
+CD11b 
+antibody
+CD11b 
+surface 
+receptor
+Inorganic NPs
+–
+Pain
+Mice
+Intrathecal
+Significant reduction of microglial activation 
+and pro-inflammatory gene expression and 
+subsequent inhibition of mechanical allodynia222
+–
+MS1 receptor Microglial toxin-coated 
+quantum dots
+–
+–
+Mice
+Intracranial
+Specific uptake of saporin-coated NPs depleted 
+microglial populations and enabled the 
+preservation of neurons against microglia-
+mediated amyloid-β toxicity307
+–
+VCAM1 and 
+α4β1 integrin
+Neuron membrane-
+coated NP
+–
+PD
+Mice
+i.v.
+Biomimetic NPs localized within microglia in 
+the substantia nigra and striatum following BBB 
+sonication and promoted conversion to the 
+anti-inflammatory M2 phenotype and rescued 
+dopamine levels in the CSF308
+Neurons
+RVG
+p75 
+neurotrophin 
+and nAchR
+NPs with intracellular 
+trafficking transportan 
+peptide
+CASP3 
+siRNA
+TBI
+Mice
+i.v.
+50% knockdown of caspase 3 gene that is normally 
+upregulated following TBI and induces neuronal 
+apoptosis235
+Exosome membrane-
+coated NP
+–
+–
+Mice
+i.v.
+Enhanced targeting of neurons in vivo236
+MSN
+Favipiravir
+VSV
+Mice
+i.v.
+MSNs selectively accumulated in neurons, 
+effectively inhibiting viral infection and proliferation 
+and promoting enhanced survival of mice309
+PLGA NP
+–
+–
+Mice
+Intranasal
+Better understanding of spatiotemporal 
+distribution of RVG NPs among the olfactory bulb 
+and trigeminal nerve239
+Liposome conjugated 
+with TF peptide
+Plasmid 
+DNA
+–
+Rats
+i.v.
+Dual targeting strategy enhanced permeation 
+across the BBB and transfection of neuronal 
+populations
+PLA-PEG NPs coated 
+with RVG and contrast-
+enhanced gadolinium
+Rifampicin
+AD
+Mice
+i.v.
+Neuron-targeted delivery of rifampicin 
+dramatically reduced amyloid-β levels, 
+re-established synaptic plasticity and improved 
+learning and memory capacity of AD mice238
+Tet-1
+GT1B
+Polymeric NPs 
+conjugated with BBB-
+penetrating CGN peptide
+BACE1 
+siRNA
+AD
+Mice
+i.v.
+Significant knockdown of BACE1 expression 
+reduced amyloid plaque and tau accumulation 
+in the hippocampus248
+PEG-PLA NP conjugated 
+to BBB-penetrating TGN 
+peptide
+NAP peptide AD
+Mice
+i.v.
+Overall high neuronal uptake with reduced 
+oxidative stress, amyloid toxicity and reduced 
+memory impairment251
+Dopamine Dopamine 
+receptor
+MSN
+GSH
+–
+–
+–
+Proof-of-concept in vitro study that highlighted 
+the potential for specifically targeting 
+dopaminergic neurons261
+Fibroblast 
+growth 
+factor
+Fibroblast 
+growth 
+factor 
+receptor
+Polymeric NP
+Antioxidants 
+and neuro-
+protective 
+peptide
+AD
+Mice
+–
+Demonstrated targeting to cholinergic neurons and 
+intracellular trafficking to mitochondria to attenuate 
+oxidative stress, amyloid-β and tau accumulation, 
+and rescue of spatial memory impairment259
+AD, Alzheimer disease; ALS, amyotrophic lateral sclerosis; ASO, antisense oligonucleotide; CSF, cerebrospinal fluid; GT1B, trisialoganglioside clostridial toxin receptor; i.v., intravenous; LPS, 
+lipopolysaccharide; MS1, mannose and macrophage scavenger; MSN, mesoporous silica nanoparticle; NP, nanoparticle; PD, Parkinson disease; RVG, rabies virus glycoprotein; SCI, spinal cord 
+injury; siRNA, small interfering RNA; TBI, traumatic brain injury; TPP, tetraphenylporphyrin; TF, transferrin; VSV, vesicular stomatitis virus.
+
+Nature Reviews Materials | Volume 9 | August 2024 | 567–588
+582
+Review article
+Active targeting approaches to neurons typically involve the func-
+tionalization of NPs with cell-penetrating peptides (Fig. 4). For instance, 
+NPs functionalized with rabies virus glycoprotein (RVG) peptide 
+showed specific binding to neuronal cells in vivo234 and were used 
+to successfully deliver siRNA against the gene encoding caspase 3 to 
+neurons in a preclinical model of TBI235. Another interesting strategy 
+Optimal NP or
+nanomaterial design
+In vitro models
+(e.g. 3D BBB model)
+Brain organoids
+On-chip models
+Barcode sequence
+Peptide barcoding
+Patient 1
+Patient 2
+Heterogeneity leads to
+inconsistent therapy
+Diseased population
+Lack of biomarkers to
+track disease progression
+Targeted
+intervention
+Treated population
+Significant diﬀerences
+with human brain
+Improve
+stratification
+method
+Optimal
+homing
+peptide
+In vivo phage display
+Spatial transcriptomics
+Single-cell RNA sequencing
+t-SNE1
+t-SNE2
+–30
+–30
+–20
+–20
+–10
+–10
+0
+0
+10
+ 10
+20
+ 20
+30
+ 30
+1
+3
+5
+7
+2
+4
+6
+8
+Cell type
+Discovering new receptors
+AI-assisted NP screening
+a
+b
+High-throughput screening for NPs and targeting ligands
+In vitro evaluation using specialized models
+Patient heterogeneity
+Poor animal model
+Clinical trial design and lack of
+biomarkers for monitoring
+Strategies to
+advance CNS
+delivery
+Other
+factors to
+consider
+
+Nature Reviews Materials | Volume 9 | August 2024 | 567–588
+583
+Review article
+to promote selective endocytosis by neurons relied on coating gold 
+NPs with engineered exosomes that carried an RVG-Lamp2b fusion 
+peptide236. RVG has also been used in conjunction with polymeric, inor-
+ganic and metallic NPs as well237–240. Although RVG facilitates neuronal 
+specificity by interacting with nicotinic acetylcholine receptors241, 
+evidence suggests that astrocytes and microglia can overexpress 
+the same subtypes of receptors under pathological conditions242–245, 
+legitimizing cautious scrutiny when determining targeting success. 
+Another popular peptide, Tet-1, is derived from the tetanus toxin and 
+has a high binding capacity to motor neurons246 owing to its affin-
+ity for ganglioside receptors247. Tet-1 has been conjugated to diverse 
+families of NPs resulting in efficient delivery of therapeutic payloads 
+to neurons248–250, especially when used in tandem with BBB targeting 
+peptides such as TGN, CGN and D-T7 (refs. 251–253). Another category 
+of ligands includes nerve growth factors (NGFs), dopamine, TF and 
+lactoferrin254–256, which are involved in signalling pathways critical 
+to neuronal homoeostasis. Indeed, silica NPs grafted with dopamine 
+selectively delivered antioxidants to dopaminergic neurons in vitro257, 
+highlighting the potential for targeting individual subtypes of neu-
+rons implicated in discrete pathologies. Fibroblast ligand was modi-
+fied on NPs to utilize the heightened expression of fibroblast growth 
+factor receptors (FGFR1) in cholinergic neurons characteristic of AD 
+pathology258, by delivering a hybrid antioxidant and neuroprotective 
+peptide259, the NPs ameliorated mitochondrial stress in cholinergic 
+neurons, leading to significant physiological and functional recovery 
+among AD mouse models, with no observed toxicity. Studies have yet 
+to examine the potential for targeting other classes such as dopamin-
+ergic, glutamatergic and GABAergic neurons in vivo. To maximize the 
+efficacy of targeted delivery, we need to have a deep understanding 
+of the dynamism of receptor expression within and across patho-
+logical states. For example, in HD, dopamine receptors are usually 
+decreased260, whereas in PD, they can be either downregulated or 
+upregulated depending on the stage of the disease. Similarly, although 
+the cholinergic system is known to be globally affected in various neuro-
+pathologies, the specific subtype of neuronal muscarinic receptors that 
+are expressed and affected varies by the disease and brain region261–263.
+Conclusion and outlook
+Overall, NP platforms offer great promise because of their tunable size, 
+shape, surface charge and their ability to conjugate a variety of ligands, 
+which provide a versatile toolbox to optimize brain delivery with high 
+precision. To accelerate the advancement of NPs for CNS diseases, 
+additional efforts are required (Fig. 5). Integration of machine learning 
+tools in the design process can facilitate high-throughput, efficient 
+and precise synthesis of nanomaterials264–266. Optimization algorithms 
+can incorporate an incredible number of variables to better inform 
+experimental design parameters, enabling parsimonious and feasible 
+target selection267. In vivo phage display can enable multiplexed, high-
+throughput screening of homing peptides268, and it has already shown 
+success in identifying brain-targeting moieties247,269–272, which could one 
+day be functionalized to the next generation of nanovehicles. Moreo-
+ver, the effective utilization of single-cell RNA sequencing and spatial 
+transcriptomics will allow efficient mapping of the molecular identities 
+of various cell types in the brain and provide a comprehensive under-
+standing of how different cell types contribute to specific brain function 
+and their involvement in different CNS disease273,274, which can propel 
+precision delivery forward. Public sharing of such a large dataset would 
+be extremely useful to guide drug discovery and precision delivery. In 
+addition to dissecting how these cells are affected in various diseases, it 
+is imperative for future research to explore how NPs and their payloads 
+are distributed among different cells within the brain under different 
+disease states. As we have emphasized above, a robust communication 
+network exists between and within neurons and glia, creating strong 
+implications for the reciprocal modulation of the function of down-
+stream cells by the effector population275–278. For instance, delivery of 
+an antioxidant-loaded NP targeted to the microglia could achieve a 
+localized reduction of oxidative stress, but may also result in beneficial 
+effects among other cell types in the vicinity. However, whether a given 
+cell population might express the functional readout of an NP that has 
+been internalized by another cell type awaits further inquiry.
+Although in vivo screening of NP libraries with varying physio­
+chemical and material parameters can be a promising strategy to 
+identify compositions with high BBB permeability or efficient preci-
+sion targeting, this process can be extremely expensive and laborious. 
+Advances in machine learning tools, in vitro models, on-chip systems, 
+and organoids can aid in the conscientious design of NPs (Fig. 5). 
+For instance, novel 3D models of the BBB circumventing the reductive 
+and static limitations of the older 2D transwells not only offer better 
+recapitulation of cellular dynamics279 but also allow for an improved 
+understanding of the haemorheological behaviour of nanosystems280. 
+Newly developed models also account for specific receptors expressed 
+on the BBB, while accurately capturing the microenvironment in healthy 
+and diseased states279,281. Functionally competent bioengineered models 
+have been generated in the context of a variety of neurodegenerative, 
+neurodevelopmental and injury-related disorders of the CNS, contrib-
+uting to greater resolution of regional differences282. As technology 
+advances, compromises between physiological accuracy and material 
+constraints might narrow, paving the way for the modelling of specific 
+sub-classes of brain cells and their connectivity. In addition, machine 
+learning can predict the in vivo pharmacokinetics and pharmacody-
+namics of delivery systems and their interactions with specific cellular 
+receptors283,284, which can then be compared with actual in vivo data to 
+train artificial intelligence (AI) for predicting brain-targeted delivery.
+The biological complexity of neurological disorders necessi-
+tates the development of NPs to achieve pathology-specific resolu-
+tion. However, increasing the complexity of NPs will provide additional 
+reproducibility, scalability and economic challenges. Therefore, novel 
+industrial approaches are required to support the development of 
+Fig. 5 | Outlook of future research. a, The integration of artificial intelligence 
+(AI) and machine learning holds promise for high-throughput screening of 
+nanoparticles (NPs) to pinpoint optimal nanomaterials tailored for targeted 
+delivery. Techniques such as computational approaches, spatial transcriptomics 
+and single-cell RNA sequencing can help to identify receptors or pathways for 
+precise targeting. Additionally, peptide and phage-based sequencing methods 
+have been applied to discern optimal lipid NP (LNP) formulations and homing 
+peptides, respectively. To complement these advancements, enhancing in vitro 
+models is pivotal. b, Other key factors should be considered to promote success 
+in clinical translation, such as selecting an animal model that more closely 
+mirrors humans, addressing patient heterogeneity, and clinical trial designs. 
+By carefully incorporating suitable stratification methods, refining our choice 
+of animal models, and discovering additional biomarkers for use in clinical 
+studies, we can enhance the likelihood of clinical successes in central nervous 
+system (CNS) delivery. BBB, blood–brain barrier.
+
+Nature Reviews Materials | Volume 9 | August 2024 | 567–588
+584
+Review article
+biologically and commercially relevant platforms. Biological rele-
+vance further impinges on the promises offered by precision medicine, 
+which requires tailoring to the genetic and molecular dispositions 
+of individuals as well as diseased populations. However, much is still 
+unknown about the genotypic characteristics underlying various 
+neuropathologies, which can be attributed to the mismatch between 
+in vitro and in vivo findings and the choice of animal models used. 
+Rodents remain a popular preclinical model, but they possess stark 
+differences in neural and glial architecture, receptor expression and 
+ligand affinity compared to humans, leading to disappointing rates of 
+clinical translation285,286. Moreover, clinical trial design must account 
+for patient heterogeneity and improve the stratification methods.
+Overall, we believe the stagnant landscape of disease-modifying 
+therapies for neurological disorders would substantially benefit from 
+the development of precision delivery system, especially in the context 
+of novel therapeutic modalities such as gene therapies, the clinical 
+success of which heavily relying on the delivery system. Although there 
+has been limited progress in non-viral precision drug delivery systems 
+for brain targeting, the growing understanding of neuropathology and 
+the development of rationally designed delivery systems, in conjuga-
+tion with novel tools such as AI or machine learning, will build strong 
+momentum towards the clinical translation of precision NPs for CNS 
+disorders.
+Published online: 25 June 2024
+References
+1.	
+Valori, C. F., Possenti, A., Brambilla, L. & Rossi, D. Challenges and opportunities 
+of targeting astrocytes to halt neurodegenerative disorders. Cells 10, 2019 (2021).
+2.	
+Prabakaran, A. et al. Nose-to-brain drug delivery for the treatment of Alzheimer’s disease: 
+current advancements and challenges. Expert Opin. Drug Deliv. 19, 87–102 (2022).
+3.	
+Markowicz-Piasecka, M. et al. Current approaches to facilitate improved drug delivery 
+to the central nervous system. Eur. J. Pharm. Biopharm. 181, 249–262 (2022).
+4.	
+Doody, R. S. et al. A phase 3 trial of semagacestat for treatment of Alzheimer’s disease. 
+N. Engl. J. Med. 369, 341–350 (2013).
+5.	
+Imbimbo, B. P. & Giardina, G. A. M. γ-Secretase inhibitors and modulators for the treatment 
+of Alzheimer’s disease: disappointments and hopes. Curr. Top. Med. Chem. 11, 1555–1570 
+(2011).
+6.	
+Kouhi, A. et al. Brain disposition of antibody-based therapeutics: dogma, approaches and 
+perspectives. Int. J. Mol. Sci. 22, 6442 (2021).
+7.	
+Chang, H.-Y. et al. Brain pharmacokinetics of anti-transferrin receptor antibody affinity 
+variants in rats determined using microdialysis. mAbs 13, 1874121 (2021).
+8.	
+Keiser, M. S. et al. Toxicity after AAV delivery of RNAi expression constructs into nonhuman 
+primate brain. Nat. Med. 27, 1982–1989 (2021).
+9.	
+Ling, Q., Herstine, J. A., Bradbury, A. & Gray, S. J. AAV-based in vivo gene therapy for 
+neurological disorders. Nat. Rev. Drug Discov. 22, 789–806 (2023).
+10.	
+Lee, H. et al. Multi-omic analysis of selectively vulnerable motor neuron subtypes 
+implicates altered lipid metabolism in ALS. Nat. Neurosci. 24, 1673–1685 (2021).
+11.	
+Herb, B. R. et al. Single-cell genomics reveals region-specific developmental 
+trajectories underlying neuronal diversity in the human hypothalamus. Sci. Adv. 9, 
+eadf6251 (2023).
+12.	
+Vialle, R. A., de Paiva Lopes, K., Bennett, D. A., Crary, J. F. & Raj, T. Integrating whole-
+genome sequencing with multi-omic data reveals the impact of structural variants 
+on gene regulation in the human brain. Nat. Neurosci. 25, 504–514 (2022).
+13.	
+Yao, Z. et al. A high-resolution transcriptomic and spatial atlas of cell types in the whole 
+mouse brain. Nature 624, 317–332 (2023).  
+This article introduces a collaborative effort from the BRAIN Initiative Cell Census 
+Network, presenting cellular maps of the mouse brain with high spatial resolution.
+14.	
+Chini, M. & Hanganu-Opatz, I. L. Prefrontal cortex development in health and disease: 
+lessons from rodents and humans. Trends Neurosci. 44, 227–240 (2021).
+15.	
+Fu, H., Hardy, J. & Duff, K. E. Selective vulnerability in neurodegenerative diseases. 
+Nat. Neurosci. 21, 1350–1358 (2018).  
+This paper provides a comprehensive overview of the current understanding of 
+biological mechanisms underpinning selective neuronal and regional vulnerability 
+in neurological disorders.
+16.	
+Goodkind, M. et al. Identification of a common neurobiological substrate for mental 
+illness. JAMA Psychiatry 72, 305–315 (2015).
+17.	
+Del Tredici, K., Rüb, U., De Vos, R. A. I., Bohl, J. R. E. & Braak, H. Where does Parkinson 
+disease pathology begin in the brain? J. Neuropathol. Exp. Neurol. 61, 413–426 (2002).
+18.	
+De Marchi, F. et al. Cognitive dysfunction in amyotrophic lateral sclerosis: can we predict 
+it? Neurol. Sci. 42, 2211–2222 (2021).
+19.	
+Crockford, C. et al. ALS-specific cognitive and behavior changes associated with advancing 
+disease stage in ALS. Neurology 91, e1370–e1380 (2018).
+20.	 Lassmann, H. Multiple sclerosis pathology. Cold Spring Harb. Perspect. Med. 8, a028936 
+(2018).
+21.	
+Haider, L. et al. The topograpy of demyelination and neurodegeneration in the multiple 
+sclerosis brain. Brain 139, 807–815 (2016).
+22.	 Knopman, D. S. et al. Alzheimer disease. Nat. Rev. Dis. Primers 7, 33 (2021).
+23.	 Schöll, M. et al. Biomarkers for tau pathology. Mol. Cell. Neurosci. 97, 18–33 (2019).
+24.	 Musolino, P. L. et al. Brain endothelial dysfunction in cerebral adrenoleukodystrophy. 
+Brain 138, 3206–3220 (2015).
+25.	 Pong, S., Karmacharya, R., Sofman, M., Bishop, J. R. & Lizano, P. The role of brain 
+microvascular endothelial cell and blood-brain barrier dysfunction in schizophrenia. 
+Complex Psychiatry 6, 30–46 (2020).
+26.	 Estudillo, E. et al. Thinking outside the black box: are the brain endothelial cells the new 
+main target in Alzheimer’s disease? Neural Regen. Res. 18, 2592 (2023).
+27.	
+Yang, A. C. et al. A human brain vascular atlas reveals diverse mediators of Alzheimer’s 
+risk. Nature 603, 885–892 (2022).
+28.	 Mrdjen, D. et al. The basis of cellular and regional vulnerability in Alzheimer’s disease. 
+Acta Neuropathol. 138, 729–749 (2019).
+29.	 Bennett, H. C. & Kim, Y. Pericytes across the lifetime in the central nervous system. 
+Front. Cell. Neurosci. 15, 627291 (2021).
+30.	 Giguère, N., Burke Nanni, S. & Trudeau, L.-E. On cell loss and selective vulnerability 
+of neuronal populations in Parkinson’s disease. Front. Neurol. 9, 455 (2018).
+31.	
+Mamelak, M. Parkinson’s disease, the dopaminergic neuron and gammahydroxybutyrate. 
+Neurol. Ther. 7, 5–11 (2018).
+32.	 Reiner, A. & Deng, Y.-P. Disrupted striatal neuron inputs and outputs in Huntington’s 
+disease. CNS Neurosci. Ther. 24, 250–280 (2018).
+33.	 Spoleti, E. et al. Dopamine neuron degeneration in the ventral tegmental area causes 
+hippocampal hyperexcitability in experimental Alzheimer’s disease. Mol. Psychiatry 29, 
+1265–1280 (2024).
+34.	 Nobili, A. et al. Dopamine neuronal loss contributes to memory and reward dysfunction 
+in a model of Alzheimer’s disease. Nat. Commun. 8, 14727 (2017).
+35.	 Chen, X.-Q. & Mobley, W. C. Exploring the pathogenesis of Alzheimer disease in 
+basal forebrain cholinergic neurons: converging insights from alternative hypotheses. 
+Front. Neurosci. 13, 446 (2019).
+36.	 Baker-Nigh, A. et al. Neuronal amyloid-β accumulation within cholinergic basal forebrain 
+in ageing and Alzheimer’s disease. Brain 138, 1722–1737 (2015).
+37.	
+Vana, L. et al. Progression of tau pathology in cholinergic basal forebrain neurons in mild 
+cognitive impairment and Alzheimer’s disease. Am. J. Pathol. 179, 2533–2550 (2011).
+38.	 Tan, R. H. et al. Cerebellar neuronal loss in amyotrophic lateral sclerosis cases with 
+ATXN2 intermediate repeat expansions. Ann. Neurol. 79, 295–305 (2016).
+39.	 Fukutani, Y., Cairns, N. J., Rossor, M. N. & Lantos, P. L. Purkinje cell loss and astrocytosis in the 
+cerebellum in familial and sporadic Alzheimer’s disease. Neurosci. Lett. 214, 33–36 (1996).
+40.	 Singh-Bains, M. K. et al. Cerebellar degeneration correlates with motor symptoms 
+in Huntington disease. Ann. Neurol. 85, 396–405 (2019).
+41.	
+Louis, E. D. et al. Torpedoes in Parkinson’s disease, Alzheimer’s disease, essential tremor, 
+and control brains. Mov. Disord. 24, 1600–1605 (2009).
+42.	 Crabé, R., Aimond, F., Gosset, P., Scamps, F. & Raoul, C. How degeneration of cells 
+surrounding motoneurons contributes to amyotrophic lateral sclerosis. Cells 9, 2550 
+(2020).
+43.	 Elgayar, S. A. M., Abdel-Hafez, A. A. M., Gomaa, A. M. S. & Elsherif, R. Vulnerability of glia 
+and vessels of rat substantia nigra in rotenone Parkinson model. Ultrastruct. Pathol. 42, 
+181–192 (2018).
+44.	 Cragnolini, A. B. et al. Regional brain susceptibility to neurodegeneration: what is the 
+role of glial cells? Neural Regen. Res. 15, 838–842 (2019).
+45.	 Matute, C., Alberdi, E., Ibarretxe, G. & Sánchez-Gómez, M. V. Excitotoxicity in glial cells. 
+Eur. J. Pharmacol. 447, 239–246 (2002).
+46.	 Petito, C. K., Olarte, J. P., Roberts, B., Nowak, T. S. & Pulsinelli, W. A. Selective glial 
+vulnerability following transient global ischemia in rat brain. J. Neuropathol. Exp. Neurol. 
+57, 231–238 (1998).
+47.	
+Kim, Y.-K. & Na, K.-S. Role of glutamate receptors and glial cells in the pathophysiology 
+of treatment-resistant depression. Prog. Neuropsychopharmacol. Biol. Psychiatry 70, 
+117–126 (2016).
+48.	 Giuliani, F., Goodyer, C. G., Antel, J. P. & Yong, V. W. Vulnerability of human neurons to 
+T cell-mediated cytotoxicity. J. Immunol. 171, 368–379 (2003).
+49.	 Paß, T., Wiesner, R. J. & Pla-Martín, D. Selective neuron vulnerability in common and rare 
+diseases — mitochondria in the focus. Front. Mol. Biosci. 8, 676187 (2021).
+50.	 Penzes, P., Buonanno, A., Passafarro, M., Sala, C. & Sweet, R. A. Developmental vulnerability 
+of synapses and circuits associated with neuropsychiatric disorders. J. Neurochem. 126, 
+165–182 (2013).
+51.	
+Purves, D. et al. in Neuroscience 2nd edn Ch. 1 (Sinauer Associates, 2001).
+52.	 Eipel, C., Abshagen, K. & Vollmar, B. Regulation of hepatic blood flow: the hepatic arterial 
+buffer response revisited. World J. Gastroenterol. 16, 6046–6057 (2010).
+53.	 Dalal, R., Bruss, Z. S. & Sehdev, J. S. Physiology, Renal Blood Flow and Filtration 
+(StatPearls, 2023).
+54.	 Cabral, H., Li, J., Miyata, K. & Kataoka, K. Controlling the biodistribution and clearance 
+of nanomedicines. Nat. Rev. Bioeng. 2, 214–232 (2024).  
+This comprehensive review details consequence of different NP designs on their 
+pharmacokinetics, with abundant clinical data included.
+
+Nature Reviews Materials | Volume 9 | August 2024 | 567–588
+585
+Review article
+55.	 Du, B., Yu, M. & Zheng, J. Transport and interactions of nanoparticles in the kidneys. 
+Nat. Rev. Mater. 3, 358–374 (2018).
+56.	 Wang, J. & Liu, G. Imaging nano–bio interactions in the kidney: toward a better understanding 
+of nanoparticle clearance. Angew. Chem. Int. Ed. 57, 3008–3010 (2018).  
+This review details quantitative NP–kidney interactions along with coverage on strategies 
+to modulate NP size, shape and surface chemistry to minimize glomerular clearance.
+57.	
+Rawal, M., Singh, A. & Amiji, M. M. Quality-by-design concepts to improve 
+nanotechnology-based drug development. Pharm. Res. 36, 153 (2019).
+58.	 Blanco, E., Shen, H. & Ferrari, M. Principles of nanoparticle design for overcoming 
+biological barriers to drug delivery. Nat. Biotechnol. 33, 941–951 (2015).  
+This seminal review discusses the design principles of NPs to avoid delivery challenges, 
+with focus on opsonization, blood vessel fluid dynamics and site-directed entry.
+59.	 Park, J.-K. et al. Cellular distribution of injected PLGA-nanoparticles in the liver. 
+Nanomedicine 12, 1365–1374 (2016).
+60.	 Poon, W. et al. Elimination pathways of nanoparticles. ACS Nano 13, 5785–5798 (2019).
+61.	
+Lazarovits, J. et al. Supervised learning and mass spectrometry predicts the in vivo fate 
+of nanomaterials. ACS Nano 13, 8023–8034 (2019).
+62.	 Anraku, Y., Kishimura, A., Kobayashi, A., Oba, M. & Kataoka, K. Size-controlled long-
+circulating PICsome as a ruler to measure critical cut-off disposition size into normal 
+and tumor tissues. Chem. Commun. 47, 6054–6056 (2011).
+63.	 Lundqvist, M. et al. The evolution of the protein corona around nanoparticles: a test study. 
+ACS Nano 5, 7503–7509 (2011).
+64.	 Cai, R. & Chen, C. The crown and the scepter: roles of the protein corona in nanomedicine. 
+Adv. Mater. 31, e1805740 (2019).
+65.	 Monopoli, M. P., Åberg, C., Salvati, A. & Dawson, K. A. Biomolecular coronas provide the 
+biological identity of nanosized materials. Nat. Nanotech 7, 779–786 (2012).
+66.	 Lundqvist, M. et al. Nanoparticle size and surface properties determine the protein 
+corona with possible implications for biological impacts. Proc. Natl Acad. Sci. USA 105, 
+14265–14270 (2008).
+67.	
+García-Álvarez, R., Hadjidemetriou, M., Sánchez-Iglesias, A., Liz-Marzán, L. M. & 
+Kostarelos, K. In vivo formation of protein corona on gold nanoparticles. The effect 
+of their size and shape. Nanoscale 10, 1256–1264 (2018).
+68.	 Palchetti, S. et al. The protein corona of circulating PEGylated liposomes. Biochim. Biophys. 
+Acta 1858, 189–196 (2016).
+69.	 Wang, H. et al. The nature of a hard protein corona forming on quantum dots exposed to 
+human blood serum. Small 12, 5836–5844 (2016).
+70.	 Dobrovolskaia, M. A. et al. Interaction of colloidal gold nanoparticles with human blood: 
+effects on particle size and analysis of plasma protein binding profiles. Nanomedicine 5, 
+106–117 (2009).
+71.	
+Sakulkhu, U., Mahmoudi, M., Maurizi, L., Salaklang, J. & Hofmann, H. Protein corona 
+composition of superparamagnetic iron oxide nanoparticles with various physico-chemical 
+properties and coatings. Sci. Rep. 4, 5020 (2014).
+72.	 Lesniak, A. et al. Effects of the presence or absence of a protein corona on silica 
+nanoparticle uptake and impact on cells. ACS Nano 6, 5845–5857 (2012).
+73.	 Liu, K. et al. Multiomics analysis of naturally efficacious lipid nanoparticle coronas 
+reveals high-density lipoprotein is necessary for their function. Nat. Commun. 14, 4007 
+(2023).
+74.	 Mitchell, M. J. et al. Engineering precision nanoparticles for drug delivery. Nat. Rev. Drug 
+Discov. 20, 101–124 (2021).
+75.	 Salvati, A. et al. Transferrin-functionalized nanoparticles lose their targeting capabilities 
+when a biomolecule corona adsorbs on the surface. Nat. Nanotech 8, 137–143 (2013).
+76.	 Zhao, Z., Ukidve, A., Kim, J. & Mitragotri, S. Targeting strategies for tissue-specific drug 
+delivery. Cell 181, 151–167 (2020).
+77.	
+Chen, F. et al. Complement proteins bind to nanoparticle protein corona and undergo 
+dynamic exchange in vivo. Nat. Nanotech 12, 387–393 (2017).
+78.	 Hoshyar, N., Gray, S., Han, H. & Bao, G. The effect of nanoparticle size on in vivo 
+pharmacokinetics and cellular interaction. Nanomedicine 11, 673–692 (2016).
+79.	 Moghimi, S. M., Simberg, D., Skotland, T., Yaghmur, A. & Hunter, A. C. The interplay 
+between blood proteins, complement, and macrophages on nanomedicine performance 
+and responses. J. Pharmacol. Exp. Ther. 370, 581–592 (2019).
+80.	 Huang, W., Xiao, G., Zhang, Y. & Min, W. Research progress and application opportunities 
+of nanoparticle–protein corona complexes. Biomed. Pharmacother. 139, 111541 (2021).
+81.	
+Klepac, D. et al. Interaction of spin-labeled HPMA-based nanoparticles with human blood 
+plasma proteins — the introduction of protein-corona-free polymer nanomedicine. 
+Nanoscale 10, 6194–6204 (2018).
+82.	 Müller, K., Fedosov, D. A. & Gompper, G. Margination of micro- and nano-particles in blood 
+flow and its effect on drug delivery. Sci. Rep. 4, 4871 (2014).
+83.	 Lane, L. A. Physics in nanomedicine: phenomena governing the in vivo performance 
+of nanoparticles. Appl. Phys. Rev. 7, 011316 (2020).
+84.	 Cooley, M. et al. Influence of particle size and shape on their margination and wall-adhesion: 
+implications in drug delivery vehicle design across nano-to-micro scale. Nanoscale 10, 
+15350–15364 (2018).
+85.	 Kumar, A., Rivera, R. G. H. & Graham, M. D. Flow-induced segregation in confined 
+multicomponent suspensions: effects of particle size and rigidity. J. Fluid Mech. 738, 
+423–462 (2014).
+86.	 Tosi, G., Duskey, J. T. & Kreuter, J. Nanoparticles as carriers for drug delivery of 
+macromolecules across the blood-brain barrier. Expert Opin. Drug Deliv. 17, 23–32 (2020).
+87.	
+Pandit, R., Chen, L. & Götz, J. The blood-brain barrier: physiology and strategies for drug 
+delivery. Adv. Drug Deliv. Rev. 165–166, 1–14 (2020).
+88.	 Arvanitis, C. D., Ferraro, G. B. & Jain, R. K. The blood-brain barrier and blood-tumour 
+barrier in brain tumours and metastases. Nat. Rev. Cancer 20, 26–41 (2020).
+89.	 Kucharz, K. et al. Post-capillary venules are the key locus for transcytosis-mediated brain 
+delivery of therapeutic nanoparticles. Nat. Commun. 12, 4121 (2021).
+90.	 Uchida, Y. et al. Quantitative targeted absolute proteomics of human blood-brain barrier 
+transporters and receptors. J. Neurochem. 117, 333–345 (2011).
+91.	
+Yeo, N. J. Y., Chan, E. J. J. & Cheung, C. Choroidal neovascularization: mechanisms 
+of endothelial dysfunction. Front. Pharmacol. 10, 1363 (2019).
+92.	 Sweeney, M. D., Sagare, A. P. & Zlokovic, B. V. Blood–brain barrier breakdown in 
+Alzheimer disease and other neurodegenerative disorders. Nat. Rev. Neurol. 14, 133–150 
+(2018).  
+This comprehensive review discusses the BBB dysfunction in multiple neurological 
+disorders using neuroimaging studies in living human and post-mortem brain tissues.
+93.	 Malek, N. et al. Vascular disease and vascular risk factors in relation to motor features 
+and cognition in early Parkinson’s disease. Mov. Disord. 31, 1518–1526 (2016).
+94.	 Drouin-Ouellet, J. et al. Cerebrovascular and blood-brain barrier impairments in 
+Huntington’s disease: potential implications for its pathophysiology. Ann. Neurol. 78, 
+160–177 (2015).
+95.	 Profaci, C. P., Munji, R. N., Pulido, R. S. & Daneman, R. The blood-brain barrier in health 
+and disease: important unanswered questions. J. Exp. Med. 217, e20190062 (2020).
+96.	 Nguyen, B., Bix, G. & Yao, Y. Basal lamina changes in neurodegenerative disorders. 
+Mol. Neurodegener. 16, 81 (2021).
+97.	
+Prakash, R. & Carmichael, S. T. Blood–brain barrier breakdown and neovascularization 
+processes after stroke and traumatic brain injury. Curr. Opin. Neurol. 28, 556–564 
+(2015).
+98.	 Price, L., Wilson, C. & Grant, G. in Translational Research in Traumatic Brain Injury Ch. 4 
+(eds Laskowitz, D. & Grant, G.) (CRC, 2016).
+99.	 Clond, M. A. et al. Reactive oxygen species-activated nanoprodrug of ibuprofen for 
+targeting traumatic brain injury in mice. PLoS ONE 8, e61819 (2013).
+100.	 Xu, J. et al. Theranostic oxygen reactive polymers for treatment of traumatic brain injury. 
+Adv. Funct. Mater. 26, 4124–4133 (2016).
+101.	 Ruozi, B. et al. PLGA nanoparticles loaded cerebrolysin: studies on their preparation and 
+investigation of the effect of storage and serum stability with reference to traumatic brain 
+injury. Mol. Neurobiol. 52, 899–912 (2015).
+102.	 Gaudin, A. et al. Squalenoyl adenosine nanoparticles provide neuroprotection after stroke 
+and spinal cord injury. Nat. Nanotechnol. 9, 1054–1062 (2014).
+103.	 Chen, H. et al. Nanoerythropoietin is 10-times more effective than regular erythropoietin 
+in neuroprotection in a neonatal rat model of hypoxia and ischemia. Stroke 43, 884–887 
+(2012).
+104.	 D’Ambrosi, N. & Apolloni, S. Fibrotic scar in neurodegenerative diseases. Front. Immunol. 
+11, 1394 (2020).
+105.	 Fernández-Klett, F. & Priller, J. The fibrotic scar in neurological disorders. Brain Pathol. 24, 
+404–413 (2014).
+106.	 Sun, N. et al. Single-nucleus multiregion transcriptomic analysis of brain vasculature in 
+Alzheimer’s disease. Nat. Neurosci. 26, 970–982 (2023).  
+This transcriptomic study across 6 brain regions from 220 individuals with AD and 208 
+age-matched controls demonstrates a large number of differentially expressed genes 
+in neurovascular units, including endothelium, astrocytes and pericytes.
+107.	 Zhang, W. et al. Differential expression of receptors mediating receptor-mediated 
+transcytosis (RMT) in brain microvessels, brain parenchyma and peripheral tissues of the 
+mouse and the human. Fluids Barriers CNS 17, 47 (2020).
+108.	 Yang, A. C. et al. Physiological blood–brain transport is impaired with age by a shift in 
+transcytosis. Nature 583, 425–430 (2020).
+109.	 Winkler, E. A. et al. GLUT1 reductions exacerbate Alzheimer’s disease vasculo-neuronal 
+dysfunction and degeneration. Nat. Neurosci. 18, 521–530 (2015).
+110.	 Zhao, L. et al. Pharmacologically reversible zonation-dependent endothelial cell 
+transcriptomic changes with neurodegenerative disease associations in the aged brain. 
+Nat. Commun. 11, 4413 (2020).
+111.	 Liu, M., Fang, X., Yang, Y. & Wang, C. Peptide-enabled targeted delivery systems for 
+therapeutic applications. Front. Bioeng. Biotechnol. 9, 701504 (2021).
+112.	 Deane, R., Sagare, A. & Zlokovic, B. The role of the cell surface LRP and soluble LRP in 
+blood-brain barrier Aβ clearance in Alzheimer’s disease. Curr. Pharm. Des. 14, 1601–1605 
+(2008).
+113.	 Sweeney, M. D., Zhao, Z., Montagne, A., Nelson, A. R. & Zlokovic, B. V. Blood-brain barrier: 
+from physiology to disease and back. Physiol. Rev. 99, 21–78 (2019).
+114.	 Li, W. et al. BBB pathophysiology-independent delivery of siRNA in traumatic brain injury. 
+Sci. Adv. 7, eabd6889 (2021).
+115.	 Hladky, S. B. & Barrand, M. A. Mechanisms of fluid movement into, through and out of the 
+brain: evaluation of the evidence. Fluids Barriers CNS 11, 26 (2014).
+116.	 Shetty, A. K. & Zanirati, G. The interstitial system of the brain in health and disease. 
+Aging Dis. 11, 200–211 (2020).
+117.	 Nakada, T. & Kwee, I. L. Fluid dynamics inside the brain barrier: current concept 
+of interstitial flow, glymphatic flow, and cerebrospinal fluid circulation in the brain. 
+Neuroscientist 25, 155–166 (2019).
+118.	 Gao, Y. et al. Simulation study of the effects of interstitial fluid pressure and blood 
+flow velocity on transvascular transport of nanoparticles in tumor microenvironment. 
+Comput. Methods Prog. Biomed. 193, 105493 (2020).
+119.	 Glass, C. K., Saijo, K., Winner, B., Marchetto, M. C. & Gage, F. H. Mechanisms underlying 
+inflammation in neurodegeneration. Cell 140, 918–934 (2010).
+
+Nature Reviews Materials | Volume 9 | August 2024 | 567–588
+586
+Review article
+120.	 Whiteford, J. R., De Rossi, G. & Woodfin, A. Mutually supportive mechanisms of 
+inflammation and vascular remodeling. Int. Rev. Cell Mol. Biol. 326, 201–278 (2016).
+121.	 Zhang, X. et al. High-resolution mapping of brain vasculature and its impairment in the 
+hippocampus of Alzheimer’s disease mice. Natl Sci. Rev. 6, 1223–1238 (2019).
+122.	 Wolak, D. J. & Thorne, R. G. Diffusion of macromolecules in the brain: implications for 
+drug delivery. Mol. Pharm. 10, 1492–1504 (2013).
+123.	 Hammarlund-Udenaes, M., Fridén, M., Syvänen, S. & Gupta, A. On the rate and extent 
+of drug delivery to the brain. Pharm. Res. 25, 1737–1750 (2008).
+124.	 Barua, S. & Mitragotri, S. Challenges associated with penetration of nanoparticles across 
+cell and tissue barriers: a review of current status and future prospects. Nano Today 9, 
+223–243 (2014).
+125.	 Engin, A. B. et al. Mechanistic understanding of nanoparticles’ interactions with extracellular 
+matrix: the cell and immune system. Part. Fibre Toxicol. 14, 22 (2017).
+126.	 Chen, K. L. & Bothun, G. D. Nanoparticles meet cell membranes: probing nonspecific 
+interactions using model membranes. Environ. Sci. Technol. 48, 873–880 (2014).
+127.	 Mahmoudi, M. et al. Cell ‘vision’: complementary factor of protein corona in nanotoxicology. 
+Nanoscale 4, 5461–5468 (2012).
+128.	 Behzadi, S. et al. Cellular uptake of nanoparticles: journey inside the cell. Chem. Soc. Rev. 
+46, 4218–4244 (2017).
+129.	 Smith, S. A., Selby, L. I., Johnston, A. P. R. & Such, G. K. The endosomal escape of 
+nanoparticles: toward more efficient cellular delivery. Bioconjug. Chem. 30, 263–272 
+(2019).
+130.	 Foroozandeh, P. & Aziz, A. A. Insight into cellular uptake and intracellular trafficking 
+of nanoparticles. Nanoscale Res. Lett. 13, 339 (2018).
+131.	 Treuel, L., Jiang, X. & Nienhaus, G. U. New views on cellular uptake and trafficking 
+of manufactured nanoparticles. J. R. Soc. Interface 10, 20120939 (2013).
+132.	 Biber, K. et al. Microglial drug targets in AD: opportunities and challenges in drug discovery 
+and development. Front. Pharmacol. 10, 840 (2019).
+133.	 Fatoba, O., Itokazu, T. & Yamashita, T. Microglia as therapeutic target in central nervous 
+system disorders. J. Pharmacol. Sci. 144, 102–118 (2020).
+134.	 Mahmood, A. & Miron, V. E. Microglia as therapeutic targets for central nervous system 
+remyelination. Curr. Opin. Pharmacol. 63, 102188 (2022).
+135.	 Kimelberg, H. K. & Nedergaard, M. Functions of astrocytes and their potential as 
+therapeutic targets. Neurotherapeutics 7, 338–353 (2010).
+136.	 Leng, F. & Edison, P. Neuroinflammation and microglial activation in Alzheimer disease: 
+where do we go from here? Nat. Rev. Neurol. 17, 157–172 (2021).
+137.	 Zhang, G., Wang, Z., Hu, H., Zhao, M. & Sun, L. Microglia in Alzheimer’s disease: a target 
+for therapeutic intervention. Front. Cell Neurosci. 15, 749587 (2021).
+138.	 Donat, C. K., Scott, G., Gentleman, S. M. & Sastre, M. Microglial activation in traumatic 
+brain injury. Front. Aging Neurosci. 9, 208 (2017).
+139.	 Kandell, R. M., Kudryashev, J. A. & Kwon, E. J. Targeting the extracellular matrix in traumatic 
+brain injury increases signal generation from an activity-based nanosensor. ACS Nano 15, 
+20504–20516 (2021).
+140.	 Lutton, E. M. et al. Endothelial targeted strategies to combat oxidative stress: improving 
+outcomes in traumatic brain injury. Front. Neurol. 10, 582 (2019).
+141.	 Wang, R. et al. Strategies for the design of nanoparticles: starting with long-circulating 
+nanoparticles, from lab to clinic. Biomater. Sci. 9, 3621–3637 (2021).
+142.	 Zhu, G. H., Gray, A. B. C. & Patra, H. K. Nanomedicine: controlling nanoparticle clearance 
+for translational success. Trends Pharmacol. Sci. 43, 709–711 (2022).
+143.	 Soo Choi, H. et al. Renal clearance of quantum dots. Nat. Biotechnol. 25, 1165–1170 (2007).
+144.	 Weiss, M. et al. Density of surface charge is a more predictive factor of the toxicity 
+of cationic carbon nanoparticles than zeta potential. J. Nanobiotechnol. 19, 5 (2021).
+145.	 Dilliard, S. A. & Siegwart, D. J. Passive, active and endogenous organ-targeted lipid and 
+polymer nanoparticles for delivery of genetic drugs. Nat. Rev. Mater. 8, 282–300 (2023).
+146.	 Bertrand, N. et al. Mechanistic understanding of in vivo protein corona formation on 
+polymeric nanoparticles and impact on pharmacokinetics. Nat. Commun. 8, 777 (2017).
+147.	 Wang, J.-L. et al. The effect of surface poly(ethylene glycol) length on in vivo drug 
+delivery behaviors of polymeric nanoparticles. Biomaterials 182, 104–113 (2018).
+148.	 Ben-Akiva, E. et al. Biomimetic anisotropic polymeric nanoparticles coated with red blood 
+cell membranes for enhanced circulation and toxin removal. Sci. Adv. 6, eaay9035 (2020).
+149.	 Hu, C.-M. J. et al. Erythrocyte membrane-camouflaged polymeric nanoparticles as a 
+biomimetic delivery platform. Proc. Natl Acad. Sci. USA 108, 10980–10985 (2011).
+150.	 Gurnani, P. et al. Probing the effect of rigidity on the cellular uptake of core-shell 
+nanoparticles: stiffness effects are size dependent. Small 18, 2203070 (2022).
+151.	 Madathiparambil Visalakshan, R. et al. The influence of nanoparticle shape on protein 
+corona formation. Small 16, 2000285 (2020).
+152.	 Cheng, J. et al. Targeting pericytes for therapeutic approaches to neurological disorders. 
+Acta Neuropathol. 136, 507–523 (2018).
+153.	 Geranmayeh, M. H., Rahbarghazi, R. & Farhoudi, M. Targeting pericytes for neurovascular 
+regeneration. Cell Commun. Signal. 17, 26 (2019).
+154.	 Porro, G. M. et al. Identifying molecular tags selectively retained on the surface of brain 
+endothelial cells to generate artificial targets for therapy delivery. Fluids Barriers CNS 20, 
+88 (2023).
+155.	 Lasagna-Reeves, C. et al. Bioaccumulation and toxicity of gold nanoparticles after 
+repeated administration in mice. Biochem. Biophys. Res. Commun. 393, 649–655 (2010).
+156.	 Liu, D.-F. et al. Magnetic resonance imaging of post-ischemic blood-brain barrier damage 
+with PEGylated iron oxide nanoparticles. Nanoscale 6, 15161–15167 (2014).
+157.	 Shankar, R., Joshi, M. & Pathak, K. Lipid nanoparticles: a novel approach for brain 
+targeting. Pharm. Nanotechnol. 6, 81–93 (2018).
+158.	 Dehouck, B. et al. A new function for the LDL receptor: transcytosis of LDL across the 
+blood–brain barrier. J. Cell Biol. 138, 877–889 (1997).
+159.	 Jose, S. et al. In vivo pharmacokinetics and biodistribution of resveratrol-loaded solid 
+lipid nanoparticles for brain delivery. Int. J. Pharm. 474, 6–13 (2014).
+160.	 Cox, A. et al. Evolution of nanoparticle protein corona across the blood-brain barrier. 
+ACS Nano 12, 7292–7300 (2018).  
+This study reveals drastic changes in protein corona composition around NPs as they 
+pass form the blood to the brain side, which can alter their final distribution inside the 
+brain parenchyma.
+161.	 Terstappen, G. C., Meyer, A. H., Bell, R. D. & Zhang, W. Strategies for delivering therapeutics 
+across the blood–brain barrier. Nat. Rev. Drug Discov. 20, 362–383 (2021).
+162.	 Ciofani, G. et al. Roadmap on nanomedicine for the central nervous system. J. Phys. Mater. 
+6, 022501 (2023).
+163.	 Jefferies, W. A. et al. Transferrin receptor on endothelium of brain capillaries. Nature 312, 
+162–163 (1984).
+164.	 Sheridan, C. Drugs catch a ride through the blood–brain barrier. Nat. Biotechnol. 41, 
+1182–1184 (2023).
+165.	 Hultqvist, G., Syvänen, S., Fang, X. T., Lannfelt, L. & Sehlin, D. Bivalent brain shuttle increases 
+antibody uptake by monovalent binding to the transferrin receptor. Theranostics 7, 308–318 
+(2017).
+166.	 Zhou, Q.-H. et al. Receptor-mediated abeta amyloid antibody targeting to Alzheimer’s 
+disease mouse brain. Mol. Pharm. 8, 280–285 (2011).
+167.	 Weber, F. et al. Brain shuttle antibody for Alzheimer’s disease with attenuated peripheral 
+effector function due to an inverted binding mode. Cell Rep. 22, 149–162 (2018).
+168.	 Niewoehner, J. et al. Increased brain penetration and potency of a therapeutic antibody 
+using a monovalent molecular shuttle. Neuron 81, 49–60 (2014).
+169.	 Li, X. et al. Enhanced in vivo blood–brain barrier penetration by circular tau–transferrin 
+receptor bifunctional aptamer for tauopathy therapy. J. Am. Chem. Soc. 142, 3862–3872 
+(2020).
+170.	 Kang, T. et al. Enhancing glioblastoma-specific penetration by functionalization of 
+nanoparticles with an iron-mimic peptide targeting transferrin/transferrin receptor 
+complex. Mol. Pharm. 12, 2947–2961 (2015).
+171.	 Lane-Donovan, C. E., Philips, G. T. & Herz, J. More than cholesterol transporters: 
+lipoprotein receptors in CNS function and neurodegeneration. Neuron 83, 771–787 
+(2014).
+172.	 Kreuter, J. et al. Apolipoprotein-mediated transport of nanoparticle-bound drugs across 
+the blood-brain barrier. J. Drug Target. 10, 317–325 (2002).
+173.	 Hartl, N., Adams, F. & Merkel, O. M. From adsorption to covalent bonding: apolipoprotein 
+E functionalization of polymeric nanoparticles for drug delivery across the blood-brain 
+barrier. Adv. Ther. 4, 2000092 (2021).
+174.	 Neves, A. R., Queiroz, J. F., Lima, S. A. C., Reis, S. & Apo, E. Functionalization of solid lipid 
+nanoparticles enhances brain drug delivery: uptake mechanism and transport pathways. 
+Bioconjug. Chem. 28, 995–1004 (2017).
+175.	 Zhang, D. et al. Near infrared-activatable biomimetic nanogels enabling deep tumor drug 
+penetration inhibit orthotopic glioblastoma. Nat. Commun. 13, 6835 (2022).
+176.	 Molino, Y. et al. Use of LDL receptor-targeting peptide vectors for in vitro and in vivo 
+cargo transport across the blood-brain barrier. FASEB J. 31, 1807–1827 (2017).
+177.	 Duro-Castano, A. et al. Targeting Alzheimer’s disease with multimodal polypeptide-based 
+nanoconjugates. Sci. Adv. 7, eabf9180 (2021).
+178.	 Zhang, Z. et al. Brain-targeted drug delivery by manipulating protein corona functions. 
+Nat. Commun. 10, 3561 (2019).
+179.	 Wiley, D. T., Webster, P., Gale, A. & Davis, M. E. Transcytosis and brain uptake of transferrin-
+containing nanoparticles by tuning avidity to transferrin receptor. Proc. Natl Acad. Sci. USA 
+110, 8662–8667 (2013).
+180.	 Banks, W. A. & Erickson, M. A. The blood-brain barrier and immune function and 
+dysfunction. Neurobiol. Dis. 37, 26–32 (2010).
+181.	 Klyachko, N. L. et al. Macrophages with cellular backpacks for targeted drug delivery to 
+the brain. Biomaterials 140, 79–87 (2017).  
+This article presents one of the early successful demonstrations of cellular backpacks 
+as a means to transport NPs across the BBB.
+182.	 Wu, J. R., Hernandez, Y., Miyasaki, K. F. & Kwon, E. J. Engineered nanomaterials that 
+exploit blood-brain barrier dysfunction for delivery to the brain. Adv. Drug Deliv. Rev. 197, 
+114820 (2023).
+183.	 Brenner, J. S. et al. Red blood cell-hitchhiking boosts delivery of nanocarriers to chosen 
+organs by orders of magnitude. Nat. Commun. 9, 2684 (2018).
+184.	 Knox, E. G., Aburto, M. R., Clarke, G., Cryan, J. F. & O’Driscoll, C. M. The blood-brain 
+barrier in aging and neurodegeneration. Mol. Psychiatry 27, 2659–2673 (2022).
+185.	 Nian, K., Harding, I. C., Herman, I. M. & Ebong, E. E. Blood-brain barrier damage in 
+ischemic stroke and its regulation by endothelial mechanotransduction. Front. Physiol. 
+11, 605398 (2020).
+186.	 Ogawa, K. et al. Focused ultrasound/microbubbles-assisted BBB opening enhances 
+LNP-mediated mRNA delivery to brain. J. Control. Release 348, 34–41 (2022).
+187.	 Abrahao, A. et al. First-in-human trial of blood–brain barrier opening in amyotrophic 
+lateral sclerosis using MR-guided focused ultrasound. Nat. Commun. 10, 4373 (2019).
+188.	 Tønnesen, J., Hrabĕtová, S. & Soria, F. N. Local diffusion in the extracellular space of the 
+brain. Neurobiol. Dis. 177, 105981 (2023).
+189.	 Iliff, J. J. et al. A paravascular pathway facilitates CSF flow through the brain parenchyma 
+and the clearance of interstitial solutes, including amyloid β. Sci. Transl Med. 4, 147ra111 
+(2012).
+
+Nature Reviews Materials | Volume 9 | August 2024 | 567–588
+587
+Review article
+190.	 Abbott, N. J. Evidence for bulk flow of brain interstitial fluid: significance for physiology 
+and pathology. Neurochem. Int. 45, 545–552 (2004).
+191.	 Jin, B.-J., Smith, A. J. & Verkman, A. S. Spatial model of convective solute transport in 
+brain extracellular space does not support a “glymphatic” mechanism. J. Gen. Physiol. 
+148, 489–501 (2016).
+192.	 Ray, L., Iliff, J. J. & Heys, J. J. Analysis of convective and diffusive transport in the brain 
+interstitium. Fluids Barriers CNS 16, 6 (2019).
+193.	 Kreuter, J. Influence of the surface properties on nanoparticle-mediated transport 
+of drugs to the brain. J. Nanosci. Nanotechnol. 4, 484–488 (2004).
+194.	 Surfactants influence polymer nanoparticle fate within the brain. Biomaterials 277, 121086 
+(2021).
+195.	 McKenna, M., Shackelford, D., Ferreira Pontes, H., Ball, B. & Nance, E. Multiple particle 
+tracking detects changes in brain extracellular matrix and predicts neurodevelopmental 
+age. ACS Nano 15, 8559–8573 (2021).
+196.	 Negron, K., Khalasawi, N. & Suk, J. S. in Nanotherapy for Brain Tumor Drug Delivery 
+(eds Agrahari, V. et al.) 179–204 (Springer, 2021).
+197.	 Gu, X. et al. Clearance of two organic nanoparticles from the brain via the paravascular 
+pathway. J. Control. Release 322, 31–41 (2020).
+198.	 Waggoner, L. E. et al. Porous silicon nanoparticles targeted to the extracellular matrix 
+for therapeutic protein delivery in traumatic brain injury. Bioconjug Chem. 33, 1685–1697 
+(2022).
+199.	 Mann, A. P. et al. A peptide for targeted, systemic delivery of imaging and therapeutic 
+compounds into acute brain injuries. Nat. Commun. 7, 11980 (2016).
+200.	Zhao, Y. et al. Dual targeted nanocarrier for brain ischemic stroke treatment. J. Control. 
+Release 233, 64–71 (2016).
+201.	 Han, Z. et al. A novel targeted nanoparticle for traumatic brain injury treatment: combined 
+effect of ROS depletion and calcium overload inhibition. Adv. Healthc. Mater. 11, 2102256 
+(2022).
+202.	Carron, S. F., Alwis, D. S. & Rajan, R. Traumatic brain injury and neuronal functionality 
+changes in sensory cortex. Front. Syst. Neurosci. 10, 47 (2016).
+203.	Praça, C. et al. A nanoformulation for the preferential accumulation in adult neurogenic 
+niches. J. Control. Release 284, 57–72 (2018).
+204.	Hour, F. Q. et al. Magnetic targeted delivery of the SPIONs-labeled mesenchymal stem 
+cells derived from human Wharton’s jelly in Alzheimer’s rat models. J. Control. Release 321, 
+430–441 (2020).
+205.	Merienne, N. et al. Cell-type-specific gene expression profiling in adult mouse brain 
+reveals normal and disease-state signatures. Cell Rep. 26, 2477–2493.e9 (2019).
+206.	Lake, B. B. et al. Integrative single-cell analysis of transcriptional and epigenetic states 
+in the human adult brain. Nat. Biotechnol. 36, 70–80 (2018).
+207.	 Skene, N. G. & Grant, S. G. N. Identification of vulnerable cell types in major brain disorders 
+using single cell transcriptomes and expression weighted cell type enrichment. Front. 
+Neurosci. 10, 16 (2016).
+208.	Pak, V. et al. Distinctive whole-brain cell-types strongly predict tissue damage patterns 
+in eleven neurodegenerative disorders. eLife 12, RP89368 (2023).
+209.	Lee, H.-G., Wheeler, M. A. & Quintana, F. J. Function and therapeutic value of astrocytes 
+in neurological diseases. Nat. Rev. Drug Discov. 21, 339–358 (2022).
+210.	 Kwon, H. S. & Koh, S.-H. Neuroinflammation in neurodegenerative disorders: the roles 
+of microglia and astrocytes. Transl. Neurodegen. 9, 42 (2020).
+211.	 Maragakis, N. J. & Rothstein, J. D. Mechanisms of disease: astrocytes in neurodegenerative 
+disease. Nat. Clin. Pract. Neurol. 2, 679–689 (2006).
+212.	 Joshi, C. R. et al. Reaching for the stars in the brain: polymer-mediated gene delivery 
+to human astrocytes. Mol. Ther. Nucleic Acids 12, 645–657 (2018).
+213.	 Sabourian, P. et al. Targeting reactive astrocytes by pH-responsive ligand-bonded polymeric 
+nanoparticles in spinal cord injury. Drug Deliv. Transl. Res. 13, 1842–1855 (2023).
+214.	 Surnar, B. et al. Nanotechnology-mediated crossing of two impermeable membranes 
+to modulate the stars of the neurovascular unit for neuroprotection. Proc. Natl Acad. 
+Sci. USA 115, E12333–E12342 (2018).
+215.	 Zhu, J. et al. Reactive A1 astrocyte-targeted nucleic acid nanoantiepileptic drug 
+downregulating adenosine kinase to rescue endogenous antiepileptic pathway. 
+ACS Appl. Mater. Interfaces 15, 29876–29888 (2023).
+216.	 Colonna, M. & Butovsky, O. Microglia function in the central nervous system during 
+health and neurodegeneration. Annu. Rev. Immunol. 35, 441–468 (2017).
+217.	 Ortiz, C. et al. Molecular atlas of the adult mouse brain. Sci. Adv. 6, eabb3446 (2020).
+218.	 Vanlandewijck, M. et al. A molecular atlas of cell types and zonation in the brain vasculature. 
+Nature 554, 475–480 (2018).
+219.	 Zhao, N., Francis, N. L., Calvelli, H. R. & Moghe, P. V. Microglia-targeting nanotherapeutics 
+for neurodegenerative diseases. APL Bioeng. 4, 030902 (2020).
+220.	Albanese, A., Sykes, E. A. & Chan, W. C. W. Rough around the edges: the inflammatory 
+response of microglial cells to spiky nanoparticles. ACS Nano 4, 2490–2493 (2010).
+221.	 Hutter, E. et al. Microglial response to gold nanoparticles. ACS Nano 4, 2595–2606 (2010).
+222.	 Choi, B. et al. Highly selective microglial uptake of ceria–zirconia nanoparticles for 
+enhanced analgesic treatment of neuropathic pain. Nanoscale 11, 19437–19447 (2019).
+223.	 Ralvenius, W. T. et al. Nanoparticle-mediated delivery of anti-PU.1 siRNA via localized 
+intracisternal administration reduces neuroinflammation. Adv. Mater. 36, e2309225 
+(2023).
+224.	 Roussarie, J.-P. et al. Selective neuronal vulnerability in Alzheimer’s disease: a network-
+based analysis. Neuron 107, 821–835.e12 (2020).
+225.	 Schirmer, L. et al. Neuronal vulnerability and multilineage diversity in multiple sclerosis. 
+Nature 573, 75–82 (2019).
+226.	 Surmeier, D. J., Obeso, J. A. & Halliday, G. M. Selective neuronal vulnerability in Parkinson 
+disease. Nat. Rev. Neurosci. 18, 101–113 (2017).
+227.	 Khan, F. A., Almohazey, D., Alomari, M. & Almofty, S. A. Impact of nanoparticles on neuron 
+biology: current research trends. Int. J. Nanomed. 13, 2767–2776 (2018).
+228.	 Stojiljković, A. et al. High-content analysis of factors affecting gold nanoparticle uptake 
+by neuronal and microglial cells in culture. Nanoscale 8, 16650–16661 (2016).
+229.	 Orlando, A. et al. Mesoporous silica nanoparticles trigger mitophagy in endothelial 
+cells and perturb neuronal network activity in a size- and time-dependent manner. 
+Int. J. Nanomed. 12, 3547–3559 (2017).
+230.	Prabhu, B. M., Ali, S. F., Murdock, R. C., Hussain, S. M. & Srivatsan, M. Copper nanoparticles 
+exert size and concentration dependent toxicity on somatosensory neurons of rat. 
+Nanotoxicology 4, 150–160 (2010).
+231.	 Dante, S. et al. Selective targeting of neurons with inorganic nanoparticles: revealing the 
+crucial role of nanoparticle surface charge. ACS Nano 11, 6630–6640 (2017).
+232.	 Walters, R. et al. Nanoparticle targeting to neurons in a rat hippocampal slice culture 
+model. ASN Neuro 4, 383–392 (2012).
+233.	Zapukhliak, O. S., Kachanovska, V. O., Isaeva, E. V., Netsyk, O. V. & Isaev, D. S. Surface 
+charge impact in nonsynaptic model of epilepsy in rat hippocampus. Fiziol. Zhurnal 62, 
+35–40 (2016).
+234.	Gao, Y. et al. RVG-peptide-linked trimethylated chitosan for delivery of siRNA to the brain. 
+Biomacromolecules 15, 1010–1018 (2014).
+235.	 Kwon, E. J., Skalak, M., Lo Bu, R. & Bhatia, S. N. Neuron-targeted nanoparticle for siRNA 
+delivery to traumatic brain injuries. ACS Nano 10, 7926–7933 (2016).
+236.	Khongkow, M. et al. Surface modification of gold nanoparticles with neuron-targeted 
+exosome for enhanced blood–brain barrier penetration. Sci. Rep. 9, 8278 (2019).
+237.	 Ren, M. et al. Functionalized nanoparticles in prevention and targeted therapy of viral 
+diseases with neurotropism properties, special insight on COVID-19. Front. Microbiol. 12, 
+767104 (2021).
+238.	Zhou, R. et al. Targeted brain delivery of RVG29‐modified rifampicin‐loaded 
+nanoparticles for Alzheimer’s disease treatment and diagnosis. Bioeng. Transl. Med. 7, 
+e10395 (2022).
+239.	Chung, E. P. et al. Targeting small molecule delivery to the brain and spinal cord 
+via intranasal administration of rabies virus glycoprotein (RVG29)-modified PLGA 
+nanoparticles. Pharmaceutics 12, 93 (2020).
+240.	Dos Santos Rodrigues, B., Arora, S., Kanekiyo, T. & Singh, J. Efficient neuronal targeting 
+and transfection using RVG and transferrin-conjugated liposomes. Brain Res. 1734, 
+146738 (2020).
+241.	 Lian, M., Hueffer, K. & Weltzin, M. M. Interactions between the rabies virus and nicotinic 
+acetylcholine receptors: a potential role in rabies virus induced behavior modifications. 
+Heliyon 8, e10434 (2022).
+242.	 Fontana, I. C., Kumar, A. & Nordberg, A. The role of astrocytic α7 nicotinic acetylcholine 
+receptors in Alzheimer disease. Nat. Rev. Neurol. 19, 278–288 (2023).
+243.	Hoogland, I. C. M. et al. Microglial cell response in α7 nicotinic acetylcholine receptor-
+deficient mice after systemic infection with Escherichia coli. J. Neuroinflamm. 19, 94 
+(2022).
+244.	Jurado-Coronel, J. C. et al. Targeting the nicotinic acetylcholine receptors (nAChRs) in 
+astrocytes as a potential therapeutic target in Parkinson’s disease. Curr. Pharm. Des. 22, 
+1305–1311 (2016).
+245.	 Moon, J. H., Kim, S. Y., Lee, H. G., Kim, S. U. & Lee, Y. B. Activation of nicotinic acetylcholine 
+receptor prevents the production of reactive oxygen species in fibrillar β amyloid peptide 
+(1-42)-stimulated microglia. Exp. Mol. Med. 40, 11–18 (2008).
+246.	Park, I.-K., Lasiene, J., Chou, S.-H., Horner, P. J. & Pun, S. H. Neuron-specific delivery of 
+nucleic acids mediated by Tet1-modified poly(ethylenimine). J. Gene Med. 9, 691–702 
+(2007).
+247.	 Liu, J. K. et al. A novel peptide defined through phage display for therapeutic protein and 
+vector neuronal targeting. Neurobiol. Dis. 19, 407–418 (2005).
+248.	 Wang, P. et al. Systemic delivery of BACE1 siRNA through neuron-targeted nanocomplexes 
+for treatment of Alzheimer’s disease. J. Control. Release 279, 220–233 (2018).
+249.	 Zhang, Y. et al. Targeted delivery of Tet1 peptide functionalized polymersomes to the rat 
+cochlear nerve. Int. J. Nanomed. 7, 1015–1022 (2012).
+250.	Mathew, A. et al. Curcumin loaded-PLGA nanoparticles conjugated with Tet-1 peptide for 
+potential use in Alzheimer’s disease. PLoS ONE 7, e32616 (2012).
+251.	 Guo, Q. et al. A dual-ligand fusion peptide improves the brain-neuron targeting of 
+nanocarriers in Alzheimer’s disease mice. J. Control. Release 320, 347–362 (2020).
+252.	 Guo, Q. et al. Brain-neuron targeted nanoparticles for peptide synergy therapy at dual-
+target of Alzheimer’s disease. J. Control. Release 355, 604–621 (2023).
+253.	Hou, Q. et al. Dual targeting nanoparticles for epilepsy therapy. Chem. Sci. 13, 
+12913–12920 (2022).
+254.	Garcia-Chica, J. et al. An overview of nanomedicines for neuron targeting. Nanomedicine 
+15, 1617–1636 (2020).
+255.	 Spencer, A. P. et al. Breaking barriers: bioinspired strategies for targeted neuronal 
+delivery to the central nervous system. Pharmaceutics 12, 192 (2020).
+256.	Zhang, F., Lin, Y.-A., Kannan, S. & Kannan, R. M. Targeting specific cells in the brain with 
+nanomedicines for CNS therapies. J. Control. Release 240, 212–226 (2016).
+257.	 Zhang, H. et al. Selective neuronal targeting, protection and signaling network analysis 
+via dopamine-mediated mesoporous silica nanoparticles. Med. Chem. Commun. 6, 
+1117–1129 (2015).
+258.	Ferreira-Vieira, T. H., Guimaraes, I. M., Silva, F. R. & Ribeiro, F. M. Alzheimer’s disease: 
+targeting the cholinergic system. Curr. Neuropharmacol. 14, 101–115 (2016).
+
+Nature Reviews Materials | Volume 9 | August 2024 | 567–588
+588
+Review article
+259.	 Qian, K. et al. Cholinergic neuron targeting nanosystem delivering hybrid peptide for 
+combinatorial mitochondrial therapy in Alzheimer’s disease. ACS Nano 16, 11455–11472 
+(2022).
+260.	Luthi-Carter, R. et al. Decreased expression of striatal signaling genes in a mouse model 
+of Huntington’s disease. Hum. Mol. Genet. 9, 1259–1271 (2000).
+261.	 Dencker, D. et al. Muscarinic acetylcholine receptor subtypes as potential drug targets 
+for the treatment of schizophrenia, drug abuse, and Parkinson’s disease. ACS Chem. 
+Neurosci. 3, 80–89 (2011).
+262.	 Piggott, M. A. et al. Muscarinic receptors in basal ganglia in dementia with Lewy bodies, 
+Parkinson’s disease and Alzheimer’s disease. J. Chem. Neuroanat. 25, 161–173 (2003).
+263.	Rinne, J. O., Lo¨nnberg, P., Marjama¨ki, P. & Rinne, U. K. Brain muscarinic receptor subtypes 
+are differently affected in Alzheimer’s disease and Parkinson’s disease. Brain Res. 483, 
+402–406 (1989).
+264.	Liu, W. et al. Applications of machine learning in computational nanotechnology. 
+Nanotechnology 33, 16 (2022).
+265.	 Reker, D. et al. Computationally guided high-throughput design of self-assembling drug 
+nanoparticles. Nat. Nanotechnol. 16, 725–733 (2021).
+266.	Lv, H. & Chen, X. Intelligent control of nanoparticle synthesis through machine learning. 
+Nanoscale 14, 6688–6708 (2022).
+267.	 Tao, H. et al. Nanoparticle synthesis assisted by machine learning. Nat. Rev. Mater. 6, 
+701–716 (2021).
+268.	Pasqualini, R. & Ruoslahti, E. Organ targeting in vivo using phage display peptide libraries. 
+Nature 380, 364–366 (1996).
+269.	Pleiko, K. et al. In vivo phage display: identification of organ-specific peptides using deep 
+sequencing and differential profiling across tissues. Nucleic Acids Res. 49, e38 (2021).
+270.	 Bakhshinejad, B., Karimi, M. & Khalaj-Kondori, M. Phage display: development of 
+nanocarriers for targeted drug delivery to the brain. Neural Regen. Res. 10, 862–865 (2015).
+271.	 Li, J. et al. Identification of peptide sequences that target to the brain using in vivo phage 
+display. Amino Acids 42, 2373–2381 (2012).
+272.	 Li, J. et al. Targeting the brain with PEG-PLGA nanoparticles modified with phage-displayed 
+peptides. Biomaterials 32, 4943–4950 (2011).
+273.	 Ruta, A., Krishnan, K. & Elisseeff, J. H. Single-cell transcriptomics in tissue engineering 
+and regenerative medicine. Nat. Rev. Bioeng. 2, 101–119 (2024).
+274.	 Jung, N. & Kim, T.-K. Spatial transcriptomics in neuroscience. Exp. Mol. Med. 55, 
+2105–2115 (2023).
+275.	 Garland, E. F., Hartnell, I. J. & Boche, D. Microglia and astrocyte function and communication: 
+what do we know in humans? Front. Neurosci. 16, 824888 (2022).
+276.	 Matejuk, A. & Ransohoff, R. M. Crosstalk between astrocytes and microglia: an overview. 
+Front. Immunol. 11, 1416 (2020).
+277.	 Szepesi, Z., Manouchehrian, O., Bachiller, S. & Deierborg, T. Bidirectional microglia–neuron 
+communication in health and disease. Front. Cell. Neurosci. 12, 323 (2018).
+278.	 Jha, M. K., Jo, M., Kim, J.-H. & Suk, K. Microglia-astrocyte crosstalk: an intimate molecular 
+conversation. Neuroscientist 25, 227–240 (2019).
+279.	 Linville, R. M. & Searson, P. C. Next-generation in vitro blood–brain barrier models: 
+benchmarking and improving model accuracy. Fluids Barriers CNS 18, 56 (2021).
+280.	Bagchi, S. et al. In-vitro blood-brain barrier models for drug screening and permeation 
+studies: an overview. Drug Des. Dev. Ther. 13, 3591–3605 (2019).
+281.	 Pérez-López, A., Torres-Suárez, A. I., Martín-Sabroso, C. & Aparicio-Blanco, J. An overview of 
+in vitro 3D models of the blood-brain barrier as a tool to predict the in vivo permeability  
+of nanomedicines. Adv. Drug Deliv. Rev. 196, 114816 (2023).
+282.	 Rouleau, N., Murugan, N. J. & Kaplan, D. L. Functional bioengineered models of the central 
+nervous system. Nat. Rev. Bioeng. 1, 252–270 (2023).
+283.	Dara, S., Dhamercherla, S., Jadav, S. S., Babu, C. M. & Ahsan, M. J. Machine learning in 
+drug discovery: a review. Artif. Intell. Rev. 55, 1947–1999 (2022).
+284.	Vora, L. K. et al. Artificial intelligence in pharmaceutical technology and drug delivery 
+design. Pharmaceutics 15, 1916 (2023).
+285.	 Dawson, T. M., Golde, T. E. & Lagier-Tourenne, C. Animal models of neurodegenerative 
+diseases. Nat. Neurosci. 21, 1370–1379 (2018).
+286.	Kodamullil, A. T. et al. Of mice and men: comparative analysis of neuro-inflammatory 
+mechanisms in human and mouse using cause-and-effect models. J. Alzheimers Dis. 59, 
+1045–1055 (2017).
+287.	 Xie, F. et al. Investigation of glucose-modified liposomes using polyethylene glycols 
+with different chain lengths as the linkers for brain targeting. Int. J. Nanomed. 7, 163–175 
+(2012).
+288.	Anraku, Y. et al. Glycaemic control boosts glucosylated nanocarrier crossing the BBB into 
+the brain. Nat. Commun. 8, 1001 (2017).
+289.	 Zhou, Y. et al. Blood-brain barrier-penetrating siRNA nanomedicine for Alzheimer’s disease 
+therapy. Sci. Adv. 6, eabc7031 (2020).
+290.	Arora, S. & Singh, J. In vitro and in vivo optimization of liposomal nanoparticles based 
+brain targeted Vgf gene therapy. Int. J. Pharm. 608, 121095 (2021).
+291.	 Boado, R. J. et al. Genetic engineering of a lysosomal enzyme fusion protein for 
+targeted delivery across the human blood-brain barrier. Biotechnol. Bioeng. 99, 475–484 
+(2008).
+292.	Hou, J. et al. Accessing neuroinflammation sites: monocyte/neutrophil-mediated drug 
+delivery for cerebral ischemia. Sci. Adv. 5, eaau8301 (2019).
+293.	Zensi, A. et al. Albumin nanoparticles targeted with Apo E enter the CNS by transcytosis 
+and are delivered to neurones. J. Control. Release 137, 78–86 (2009).
+294.	Sorrentino, N. C. et al. A highly secreted sulphamidase engineered to cross the blood-
+brain barrier corrects brain lesions of mice with mucopolysaccharidoses type IIIA. 
+EMBO Mol. Med. 5, 675–690 (2013).
+295.	Spencer, B. et al. A neuroprotective brain-penetrating endopeptidase fusion protein 
+ameliorates Alzheimer disease pathology and restores neurogenesis. J. Biol. Chem. 289, 
+17917–17931 (2014).
+296.	Song, Q. et al. Biomimetic ApoE-reconstituted high density lipoprotein nanocarrier for 
+blood-brain barrier penetration and amyloid beta-targeting drug delivery. Mol. Pharm. 
+13, 3976–3987 (2016).
+297.	 Meng, F. et al. A novel LDL-mimic nanocarrier for the targeted delivery of curcumin into 
+the brain to treat Alzheimer’s disease. Colloids Surf. B Biointerfaces 134, 88–97 (2015).
+298.	Bana, L. et al. Liposomes bi-functionalized with phosphatidic acid and an ApoE-derived 
+peptide affect Aβ aggregation features and cross the blood-brain-barrier: implications 
+for therapy of Alzheimer disease. Nanomedicine 10, 1583–1590 (2014).
+299.	Liu, Y. et al. A leptin derived 30-amino-acid peptide modified pegylated poly-l-lysine 
+dendrigraft for brain targeted gene delivery. Biomaterials 31, 5246–5257 (2010).
+300.	Thom, G. et al. A peptide derived from melanotransferrin delivers a protein-based 
+interleukin 1 receptor antagonist across the BBB and ameliorates neuropathic pain in a 
+preclinical model. J. Cereb. Blood Flow Metab. 39, 2074–2088 (2019).
+301.	 Liu, L. et al. Targeted exosome coating gene-chem nanocomplex as ‘nanoscavenger’ for 
+clearing α-synuclein and immune activation of Parkinson’s disease. Sci. Adv. 6, eaba3967 
+(2020).
+302.	Broadwell, R. D., Baker-Cairns, B. J., Friden, P. M., Oliver, C. & Villegas, J. C. Transcytosis 
+of protein through the mammalian cerebral epithelium and endothelium. III. Receptor-
+mediated transcytosis through the blood-brain barrier of blood-borne transferrin and 
+antibody against the transferrin receptor. Exp. Neurol. 142, 47–65 (1996).
+303.	Ulbrich, K., Hekmatara, T., Herbert, E. & Kreuter, J. Transferrin- and transferrin-receptor-
+antibody-modified nanoparticles enable drug delivery across the blood-brain barrier 
+(BBB). Eur. J. Pharm. Biopharm. 71, 251–256 (2009).
+304.	Yu, Y. J. et al. Boosting brain uptake of a therapeutic antibody by reducing its affinity 
+for a transcytosis target. Sci. Transl Med. 3, 84ra44 (2011).
+305.	Papademetriou, I. T., Garnacho, C., Schuchman, E. H. & Muro, S. In vivo performance 
+of polymer nanocarriers dually-targeted to epitopes of the same or different receptors. 
+Biomaterials 34, 3459–3466 (2013).
+306.	Valiante, S. et al. Peptide gH625 enters into neuron and astrocyte cell lines and crosses 
+the blood–brain barrier in rats. Int. J. Nanomed. 10, 1885–1898 (2015).
+307.	 Minami, S. S. et al. Selective targeting of microglia by quantum dots. J. Neuroinflamm. 9, 
+22 (2012).
+308.	Liu, H. et al. Targeting microglia for therapy of Parkinson’s disease by using biomimetic 
+ultrasmall nanoparticles. J. Am. Chem. Soc. 142, 21730–21742 (2020).
+309.	Ren, M. et al. RVG peptide-functionalized favipiravir nanoparticle delivery system 
+facilitates antiviral therapy of neurotropic virus infection in a mouse model. Int. J. Mol. Sci. 
+24, 5851 (2023).
+Acknowledgements
+The authors thank all authors whose work in CNS drug delivery and related areas contributed 
+to this Review. The authors also thank the reviewers for their constructive suggestions, which 
+helped them to improve this Review.
+Author contributions
+All authors researched data for the article. J.G., Z.J.X., S.G., J.M.K. and N.J. contributed 
+substantially to the discussion of the content. J.G., Z.J.X., S.G. and C.J. wrote the article. C.J. 
+crafted all the figures. All authors reviewed and/or edited the manuscript before submission.
+Competing interests
+N.J. and J.M.K. have one pending patent on nanoparticles for gene delivery in the brain. The 
+other authors declare no competing interests.
+Additional information
+Peer review information Nature Reviews Materials thanks Horacio Cabral and the other, 
+anonymous, reviewer(s) for their contribution to the peer review of this work.
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in 
+published maps and institutional affiliations.
+Springer Nature or its licensor (e.g. a society or other partner) holds exclusive rights to this 
+article under a publishing agreement with the author(s) or other rightsholder(s); author self-
+archiving of the accepted manuscript version of this article is solely governed by the terms of 
+such publishing agreement and applicable law.
+Related links
+Basal Ganglia: https://my.clevelandclinic.org/health/body/23962-basal-ganglia
+Cognitive functioning: https://mayfieldclinic.com/pe-pd.htm
+© Springer Nature Limited 2024

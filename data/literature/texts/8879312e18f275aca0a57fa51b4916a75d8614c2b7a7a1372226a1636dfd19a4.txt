@@ -1,0 +1,1629 @@
+Pan et al., Sci. Adv. 12, eadz0887 (2026)     19 June 2026
+S c i e n c e  A d va n c e s  | R e s e a r c h  A r t i c l e
+1 of 19
+N E U R O S C I E N C E
+Neuronal YTHDF2 suppresses innate immune activation 
+in Aβ pathology by promoting m6A-­dependent decay 
+of cytosolic mitochondrial mRNAs
+Wenqi Pan1†, Lin Yang1†, Yao Zhang1†, Yan Chen1, Yuesi Xu1, Yifan Li1, Yujie Fu1, Chunhui Ma1, 
+Chunying Liu2, Qing Li1, Hailong Liu3, Hailin Wang3, Qi Xu4*, Wei-­Min Tong1*, Yamei Niu1,5*
+Dysregulation of RNA m6A modification has been implicated in Alzheimer’s disease (AD), but the molecular 
+mechanisms remain largely unclear. Here, we identified the presence of m6A on mitochondria-­encoded messen-
+ger RNAs (mt-­mRNAs) in the brain, with elevated levels correlated with amyloid-­β (Aβ) deposition. Under phys-
+iological conditions, cytosolic m6A-­modified mt-­Nd4 is recognized and degraded by the m6A reader protein 
+YTHDF2, thereby preventing aberrant activation of the RIG-­I–MAVS innate immune pathway in neurons. Under 
+Aβ-­associated pathological conditions, YTHDF2 expression is markedly down-­regulated in neurons, leading to 
+the accumulation of m6A-­modified mt-­Nd4 in the cytosol. This accumulation triggers RIG-­I–MAVS activation and 
+type I interferon (IFN) responses. Neuron-­derived IFN-­β then amplifies neuroinflammation by activating sur-
+rounding microglia through a paracrine mechanism. Furthermore, neuronal Ythdf2 deficiency exacerbates Aβ-­
+associated neuroinflammation and cognitive decline. Together, these findings reveal a previously unrecognized 
+m6A/YTHDF2-­dependent regulatory axis that links mitochondrial RNA metabolism to innate immune activation 
+and neuroinflammation in Aβ pathology.
+INTRODUCTION
+Alzheimer’s disease (AD), the most prevalent neurodegenerative dis-
+order, is pathologically characterized by the presence of amyloid-­β (Aβ) 
+plaques and neurofibrillary tangles (1). Aβ deposition begins in the pre-
+clinical stage and triggers a cascade of pathological events, such as 
+mitochondrial dysfunction, tau aggregation, and neuroinflammation 
+(2). Recent trials of Aβ immunotherapies, which promote the clear-
+ance of amyloid plaques and slow disease progression, underscore the 
+critical role of Aβ in AD pathogenesis. Despite these efforts, how-
+ever, the limited cognitive improvements observed in these thera-
+pies suggest that targeting Aβ alone is insufficient (3). This limitation 
+highlights the importance of identifying optimal treatment windows 
+as interventions may be more effective before irreversible down-
+stream damage occurs (4). A deep understanding of how Aβ deposi-
+tion triggers subsequent pathological processes is, therefore, critical 
+for developing multitarget therapeutic strategies and improving clini-
+cal outcomes in AD.
+Mounting evidence suggests that mitochondrial dysfunction plays 
+a crucial role in AD, with mitophagy acting as a key quality control 
+mechanism to preserve mitochondrial homeostasis by eliminating 
+damaged mitochondria (5). However, this protective process is often 
+disrupted by amyloid deposition, resulting in the release of proin-
+flammatory mitochondrial components such as reactive oxygen spe-
+cies and mitochondrial nucleic acids (6–8). For instance, cytosolic 
+mitochondria-­encoded DNA (mtDNA) has been shown to activate 
+the innate immune response of microglia through the cyclic GMP-­
+AMP synthase–stimulator of interferon genes (cGAS-­STING) path-
+way, thereby linking mitochondrial damage to neuroinflammatory 
+processes in aging and AD (7, 9–11). Cytosolic mitochondrial RNA 
+(mtRNA) is also recognized as a potent activator of innate immune 
+signaling in various cell types (12–15); however, its specific role in AD 
+pathogenesis remains poorly understood. Given its parallels with 
+mtDNA and the growing appreciation of neuroimmune dysregula-
+tion in AD, further investigation into mtRNA’s contribution to neuro­
+inflammatory processes is warranted.
+Epigenetic modifications have been proposed to link environ-
+mental factors and susceptibility genes in the complex pathogenesis 
+of AD, underscoring the importance of developing epigenetic-­based 
+therapeutic strategies (16). Among these, N6-­methyladenosine (m6A), 
+the most abundant epitranscriptional mark in the mammalian brain, 
+plays essential roles in neurodevelopment (17), adult neurogenesis 
+(18, 19), and learning and memory (20–23), primarily through its 
+regulation of RNA metabolism (24). Emerging evidence indicates 
+that dysregulated m6A is associated with multiple phenotypes and 
+risk factors for AD (25), such as aging (26, 27), neuroinflammation 
+(28, 29), and synaptic dysfunction (30–32). However, due to the com-
+plex and heterogeneous nature of AD, the directionality and con-
+sistency of m6A alterations remain under debate. Therefore, it is 
+important to investigate specific risk factors within defined brain re-
+gions and distinct cell types to better understand the role of m6A in 
+AD. YTH N6-­methyladenosine RNA binding protein F2 (YTHDF2) 
+is a well-­characterized m6A reader protein that plays a central role 
+in RNA stability regulation via recruitment of the catabolite repres-
+sion 4 (CCR4)-­negative on TATA-­less (NOT) transcription complex 
+1Department of Pathology, Institute of Basic Medical Sciences & School of Basic 
+Medicine, Chinese Academy of Medical Sciences & Peking Union Medical College, 
+Beijing 100005, China. 2Center for Experimental Animal Research, Institute of Basic 
+Medical Sciences & School of Basic Medicine, Chinese Academy of Medical Sciences & 
+Peking Union Medical College, Beijing 100005, China. 3State Key Laboratory of En-
+vironmental Chemistry and Ecotoxicology, Research Center for Eco-­Environmental 
+Sciences, Chinese Academy of Sciences, Beijing 100085, China. 4State Key Labo-
+ratory of Common Mechanism Research for Major Diseases, Institute of Basic 
+Medical Sciences & School of Basic Medicine, Chinese Academy of Medical Sci-
+ences & Peking Union Medical College, Beijing 100005, China. 5State Key Lab-
+oratory of Complex, Severe, and Rare Diseases, Peking Union Medical College Hospital, 
+Chinese Academy of Medical Sciences and Peking Union Medical College, Beijing 
+100730, China. 
+*Corresponding author. Email: xuqi@​pumc.​edu.​cn (Q.X.); wmtong@​ibms.​pumc.​edu.​
+cn (W.-­M.T.); niuym@​ibms.​pumc.​edu.​cn (Y.N.)
+†These authors contributed equally to this work.
+Copyright © 2026 The 
+Authors, some rights 
+reserved; exclusive 
+licensee American 
+Association for the 
+Advancement of 
+Science. No claim to 
+original U.S. 
+Government Works. 
+Distributed under a 
+Creative Commons 
+Attribution 
+NonCommercial 
+License 4.0 (CC BY-­NC). 
+Downloaded from https://www.science.org at Qingdao University of Science & Technology on July 20, 2026
+
+Pan et al., Sci. Adv. 12, eadz0887 (2026)     19 June 2026
+S c i e n c e  A d va n c e s  | R e s e a r c h  A r t i c l e
+2 of 19
+deadenylase complex (33, 34). This mechanism also enables host cells 
+to degrade exogenous or endogenous immunostimulatory RNA, pre-
+venting aberrant activation of innate immune sensors (35–38). How­
+ever, whether YTHDF2 modulates mtRNA metabolism and innate 
+immune signaling in the context of AD remains unknown.
+Here, we show that YTHDF2 safeguards neuronal homeostasis by 
+degrading m6A-­modified, cytosolic mitochondria-­encoded mRNAs 
+(mt-­mRNAs). Aβ-­associated down-­regulation of YTHDF2 in neurons 
+leads to cytosolic mt-­mRNA accumulation, subsequently triggering 
+retinoic acid-­inducible gene I (RIG-­I)–mediated innate immune ac-
+tivation. Neuron-­secreted interferon-­β (IFN-­β) then activates sur-
+rounding microglia and promotes neuroinflammation. Together, these 
+findings reveal a previously unrecognized role for neuronal YTHDF2 
+as a suppressor of innate immune activation, linking RNA methyla-
+tion and mitochondrial dysfunction to neuroinflammation under 
+Aβ-­associated pathological conditions.
+RESULTS
+Aβ deposition elevates m6A level on mitochondrial mRNAs 
+in AD models
+Given the emerging evidence that RNA methylation contributes to 
+neurodegenerative pathology, we investigated how Aβ deposition 
+affects m6A modification. To this end, we examined m6A profiles in 
+transgenic mouse models of amyloidosis, in patients with AD exhib-
+iting pathological Aβ deposition, and in cellular models stimulated 
+directly with oligomerized Aβ (oAβ) (Fig. 1A).
+In the temporal cortices of APP/PS1 mice, a classic model of Aβ 
+pathology, we identified ~20,000 m6A peaks per sample via m6A im-
+munoprecipitation (IP) sequencing (m6A-­seq), with enrichment of 
+the UGGAC consensus motif (fig. S1A and data S1 and S2). Consis-
+tent with previous reports, these peaks were predominantly located 
+in coding sequences, 3′ untranslated regions, and near stop codons 
+(fig. S1B). In total, 4089 differentially methylated RNAs (DMRs) were 
+identified between wild-­type (WT) and amyloid precursor protein/
+presenilin 1 (APP/PS1) mice (Fig. 1B), which were enriched in path-
+ways related to transcription regulation, brain development, and cell-­ 
+cell adhesion (fig. S1C and data S3). Among all chromosomes, only the 
+mitochondrial chromosome exhibited exclusively hyper-­methylated 
+regions (fig. S1D), which led us to further examine m6A modifi-
+cation on mitochondrial transcripts. Notably, multiple mt-­mRNAs 
+exhibited consistently increased m6A methylation, such as mt-­Nd2, 
+mt-­Nd4, mt-­Nd5, and Cytb (Fig. 1C).
+To determine whether a similar phenomenon was present in hu-
+man brain samples with Aβ deposition, we performed transcriptome-­
+wide m6A-­seq on postmortem cortical tissues from three pairs of 
+patients with AD and age-­matched healthy controls (fig. S1, E and F, 
+and data S1 and S4). We identified 1135 DMRs enriched in path-
+ways related to nervous system development, long-­term synaptic 
+potentiation, and membrane organization (Fig. 1D, fig. S1G, and 
+data S3 and S5). Intriguingly, in line with our findings in mice, most 
+mt-­mRNAs exhibited hypermethylation in the cortices of patients 
+with AD (Fig. 1E and fig. S1H). To further strengthen the reproduc-
+ibility of these observations, we analyzed publicly available m6A-­seq 
+datasets from three additional pairs of AD and control brains (39). 
+Consistent with our own data, a subset of mt-­mRNAs exhibited 
+elevated m6A levels in these independent datasets (fig. S2A). To 
+evaluate whether the observed m6A alterations were secondary to 
+changes in mitochondrial transcript abundance, we next examined 
+mt-­mRNA expression levels in both publicly available transcrip-
+tomic datasets and our in-­house RNA sequencing (RNA-­seq) data 
+derived from the same cortical samples. Across datasets, mt-­mRNA 
+expression did not exhibit consistent or directional changes between 
+AD and control groups (fig. S2B), suggesting that the altered mt-­
+mRNA m6A landscape in AD brains is unlikely to be attributable to 
+changes in mitochondrial transcript abundance.
+To provide orthogonal biochemical evidence supporting elevat-
+ed m6A levels on mitochondrial transcripts, we used multiple com-
+plementary approaches. Dot blot analysis confirmed the presence of 
+m6A signals on mtRNAs isolated from the cortices of APP/PS1 mice 
+(fig. S3A). In addition, ultrahigh-­performance liquid chromatography 
+coupled with tandem mass spectrometry (UHPLC-­MS/MS) analy-
+sis of mitochondrial poly(A) RNAs validated m6A modifications on 
+mt-­mRNAs, revealing an m6A/A ratio of ~0.15% (Fig. 1F). To pinpoint 
+specific mitochondrial transcripts contributing to this hypermethyl-
+ation pattern, we next performed m6A–IP–quantitative polymerase 
+chain reaction (qPCR) for 13 mt-­mRNAs. The hypermethylation of 
+mt-­Nd2 and mt-­Nd4 was most pronounced in the temporal cortices 
+of both APP/PS1 (Fig. 1G and fig. S3B) and five familial Alzheimer’s 
+disease mutations (5×FAD) mice, another well-­established model of 
+Aβ pathology (Fig. 1H and fig. S3C). Notably, increased m6A on 
+mt-­ND4 was also observed in an independent cohort comprising three 
+additional patients with AD (Fig. 1I and fig. S3D) and was therefore 
+selected as a representative target for subsequent analyses. To rule out 
+potential false positives due to antibody specificity, we repeated m6A-­
+IP using an antibody from a different manufacturer and successfully 
+validated the hypermethylation of mt-­Nd4 (fig. S3E). Furthermore, 
+by using SRAMP (40), an online tool for m6A site prediction, we 
+identified a high-­confidence m6A site on mt-­Nd4 (fig. S3F). Con-
+sistent with this prediction, single-­base elongation-­ and ligation-­
+based qPCR (SELECT-­qPCR) (41) demonstrated that the m6A level 
+at this site was increased by ~1.5-­fold in the cortices of APP/PS1 mice 
+(Fig. 1J and fig. S3G).
+In APP/PS1 mice, Aβ plaques emerge around the sixth month of 
+age and progressively intensify with age (42). Analysis of m6A levels in 
+the cortices and hippocampi of mice at different ages revealed a pro-
+gressive increase in mt-­Nd4 m6A levels with aging (fig. S3H), suggest-
+ing a cumulative association between Aβ burden and hypermethylation. 
+To identify the specific neural cell types responsible for the observed 
+m6A alterations, we treated both primary neurons and microglia with 
+oAβ (fig. S3I). A notable increase in m6A on mt-­Nd4 was detected 
+exclusively in the stimulated neurons, whereas microglia showed no 
+appreciable change (Fig. 1, K and L, and fig. S3J). Consistently, both 
+oAβ-­stimulated retinoic acid (RA)–induced differentiated N2a cells 
+(RA-­N2a) and APP-­overexpressing N2a (N2a/APP) cells exhibited 
+mt-­Nd4 hypermethylation, whereas BV2 cells did not (Fig. 1, K and 
+L, and fig. S3J). Together, the above results indicate that Aβ deposi-
+tion during AD progression leads to the hypermethylation of mt-­
+mRNAs, especially mt-­Nd4, in neurons.
+Interaction of YTHDF2 with cytosol-­distributed mt-­Nd4 
+in neurons
+Because the regulatory function of m6A modification is mediated by 
+reader proteins, we next sought to identify the proteins that interact 
+with m6A on mt-­Nd4. Two RNA oligonucleotides corresponding to 
+mt-­Nd4 were synthesized in vitro: one harboring a site-­specific m6A 
+modification at the identified position (m6A-­oligo) and the other lacking 
+this modification (A-­oligo) (data S6). We performed RNA pull-­down 
+Downloaded from https://www.science.org at Qingdao University of Science & Technology on July 20, 2026
+
+Pan et al., Sci. Adv. 12, eadz0887 (2026)     19 June 2026
+S c i e n c e  A d va n c e s  | R e s e a r c h  A r t i c l e
+3 of 19
+assay using cortical lysates from APP/PS1 mice, followed by MS/MS 
+analysis to identify candidate m6A-­binding proteins (Fig. 2A). Among the 
+candidates, three known m6A reader proteins—YTHDF2, YTHDF3, 
+and heterogeneous nuclear ribonucleoprotein C (hnRNPC)—were 
+specifically enriched by m6A-­oligo (Fig. 2B), with YTHDF2 exhibit-
+ing the strongest binding affinity to m6A-­oligo in both APP/PS1 mouse 
+cortical tissues and AD cell models (Fig. 2C). Moreover, fluores-
+cence in situ hybridization (FISH) analysis revealed colocalization 
+of mt-­Nd4 with YTHDF2 in AD cell models (Fig. 2D), supporting 
+a physiological interaction between them.
+YTHDF2 is crucial for RNA degradation via its recognition of 
+m6A-­modified RNAs in the cytosol (33). To determine the subcellular 
+distribution of YTHDF2 and mt-­Nd4, we performed mitochondria/
+cytosol fractionation analysis in both APP/PS1 mice and AD cell models. 
+We found that YTHDF2 was exclusively confined to the cytosol and 
+absent from mitochondria (Fig. 2E). Notably, mt-­Nd4 was also present 
+Fig. 1. Increased m6A modification of mitochondrial mRNAs in AD models. (A) Schematic overview of the experimental workflow for m6A analysis in AD models. Cre-
+ated in BioRender. Ma, C. (2026) https://BioRender.com/3swd5th. (B) Volcano plot showing hypomethylated (Hypo) and hypermethylated (Hyper) RNAs in cortical tissues 
+from wild-­type (WT) and APP/PS1 mice (n = 2). (C) IGV tracks illustrating the distributions of m6A peaks on mitochondrial transcripts in WT and APP/PS1 mouse cortices. 
+FDR, false discovery rate. (D) Volcano plot showing hypomethylated and hypermethylated RNAs in cortices from control (Con) and patients with AD (n = 3). (E) IGV tracks 
+illustrating m6A peaks distributions on mitochondrial transcripts in the cortices from Con and patients with AD. (F) Absolute quantification of m6A levels in poly(A) RNA 
+isolated from total lysate (T), cytosolic (C), and mitochondrial (M) fractions of APP/PS1 mouse cortices (n = 3). Data are presented as the ratio of m6A to unmodified ade-
+nosine (m6A/A). (G to I) m6A-­IP-­qPCR of selected mt-­mRNAs in the cortices of WT versus APP/PS1 mice [(G), n = 4], WT versus 5×FAD mice [(H), n = 6], and Con versus pa-
+tients with AD [(I), n = 3]. The y axis represents IP/input normalized to the m6A-­modified spike-­in control (Gluc). (J) SELECT-­qPCR of site-­specific m6A levels of mt-­Nd4 in 
+cortices of WT and APP/PS1 mice (n = 6). Amplification efficiency is represented by Ct values. (K and L) m6A levels of mt-­Nd4 in oAβ-­stimulated primary neurons, oAβ-­
+stimulated RA-­induced N2a (RA-­N2a) cells, and N2a/APP cells measured by m6A-­IP-­qPCR (K) and m6A-­SELECT-­qPCR (L), EV, empty vector; OE, overexpression. [(G) to (L)] 
+Two-­sided unpaired t tests. Data are means ± SEM. *P < 0.05; **P < 0.01; ***P < 0.001.
+Downloaded from https://www.science.org at Qingdao University of Science & Technology on July 20, 2026
+
+Pan et al., Sci. Adv. 12, eadz0887 (2026)     19 June 2026
+S c i e n c e  A d va n c e s  | R e s e a r c h  A r t i c l e
+4 of 19
+Fig. 2. YTHDF2 binds cytosol-­localized mitochondrial mRNA. (A) Schematic overview of the identification of m6A–mt-­Nd4–binding proteins in the cortices of APP/PS1 
+mice (n = 2). (B) Scatter plot showing proteins enriched by m6A-­oligo versus A-­oligo. (C) Representative immunoblots of candidate proteins binding to m6A-­oligo or A-­
+oligo in the cortices of APP/PS1 mice and AD cell models; GAPDH as loading control. (D) Representative confocal images of YTHDF2 (green) costained with mt-­Nd4 RNA 
+probe (red) in oAβ-­stimulated RA-­N2a cells (left), and correlation analysis of signal intensities between YTHDF2 and mt-­Nd4 (right). (E) Subcellular fractionation of YTHDF2 
+in mouse cortices and AD cell models. GAPDH as cytosolic (C) marker; TOMM20 and HSP60 as mitochondrial (M) marker. (F to I) RT-­qPCR of cytosolic mt-­Nd4 abundance 
+and cytosolic/mitochondrial ratios in APP/PS1 mouse cortices (F and G, n = 3) and oAβ-­stimulated primary neurons (H and I). (J to M) ddPCR of absolute cytosolic mt-­Nd4 
+copy numbers and cytosolic/mitochondrial ratios in APP/PS1 mouse cortices (J and K, n = 3) and oAβ-­stimulated primary neurons (L and M) (N) Representative images of 
+TOMM20 (green) costained with mt-­Nd4 RNA probe (red) in Con and oAβ-­stimulated RA-­N2a cells. Insets show enlarged regions; white dotted lines mark areas used for 
+red, green, and blue (RGB) line profiling analysis (right: red, mt-­Nd4+; green, TOMM20+). (O) Manders’ correlation analysis of mt-­Nd4 colocalization with TOMM20. a.u., ar-
+bitrary units. (P) RT-­qPCR of cytosolic mt-­Nd4 abundance in Pink1-­knockdown N2a cells. (Q) RIP-­qPCR of selected mt-­mRNAs bound to YTHDF2 in APP/PS1 mouse cortices. 
+Representative YTHDF2 immunoblots confirm IP efficiency. (R) m6A-­IP-­qPCR of selected mt-­mRNAs following Mettl17 knockdown. (S) RIP-­qPCR of selected mt-­mRNAs 
+bound to YTHDF2 following Mettl17 knockdown. [(F) to (M), and (O)] Two-­sided unpaired t tests. [(P), (R), and (S)] Two-­sided one-­way analysis of variance (ANOVA) followed 
+by Tukey’s multiple comparisons test. Data are means ± SEM. *P < 0.05; **P < 0.01; ***P < 0.001.
+Downloaded from https://www.science.org at Qingdao University of Science & Technology on July 20, 2026
+
+Pan et al., Sci. Adv. 12, eadz0887 (2026)     19 June 2026
+S c i e n c e  A d va n c e s  | R e s e a r c h  A r t i c l e
+5 of 19
+in the cytosol, and its abundance increased markedly in both APP/
+PS1 mice (Fig. 2, F and G) and oAβ-­stimulated primary neurons (Fig. 
+2, H and I). To further validate these findings with absolute quan-
+tification, we performed droplet digital polymerase chain reaction 
+(ddPCR), which revealed markedly higher cytosolic mt-­Nd4 copy num­
+bers in APP/PS1 mice, whereas mitochondrial mt-­Nd4 remained un-
+changed, thereby resulting in a higher cytosolic-­to-­mitochondrial ratio 
+(Fig. 2, J and K; and fig. S4, A and B). A similar pattern was observed 
+in primary neurons, where oAβ treatment increased the cytosolic 
+proportion of mt-­Nd4 (Fig. 2, L and M; and fig. S4, C and D). Con-
+sistently, oAβ stimulation reduced the colocalization of mt-­Nd4 with 
+the mitochondrial marker translocase of outer mitochondrial mem-
+brane 20 (TOMM20) compared with control conditions (Fig. 2, N 
+and O). These findings suggest that the cytosolic accumulation of 
+mt-­Nd4 result from impaired mitochondrial quality control mecha-
+nisms, such as mitophagy, which has previously been shown to be 
+disrupted by Aβ deposition in AD (6). PINK1-­mediated mitophagy 
+has been closely linked to amyloid pathology (43), and impairment 
+of this process has been reported to result in cytosolic accumulation 
+of mtDNA in macrophages (44). In line with this, knockdown of 
+Pink1 led to a marked increase in cytosolic mt-­Nd4 levels, suggest-
+ing that the cytosolic accumulation of mt-­mRNAs observed in AD 
+can be attributed, at least, in part, to impaired mitophagy (fig. S4E 
+and Fig. 2P).
+Furthermore, YTHDF2–RNA IP (RIP)–qPCR assays in APP/PS1 
+mouse cortices and AD cell models revealed robust interactions between 
+YTHDF2 and several cytosolic mt-­mRNAs, including mt-­Nd2, mt-­Nd4, 
+and mt-­Nd5 (Fig. 2Q and fig. S4F). Consistent with this, previous cross-­
+linking immunoprecipitation sequencing (CLIP-­seq) studies (33, 45) 
+have also identified YTHDF2-­binding (6) sites on multiple mt-­mRNAs 
+(fig. S4G). In addition, neuronal knockdown of methyltransferase-­like 
+protein 17 (METTL17) (fig. S4H), a reported mitochondrial regula-
+tor of m6A on mRNAs (46), rather than the cano­nical m6A methyl-
+transferase METTL3 (fig. S4, I and J), reduced mitochondrial m6A 
+content (fig. S4K) and specifically lowered the modification levels of 
+mt-­Nd2, mt-­Nd4, and mt-­Nd5 (Fig. 2R). Notably, METTL17 knock-
+down also markedly impaired YTHDF2 binding to cytosolic mt-­mRNAs 
+(Fig. 2S), confirming that the interaction is m6A dependent.
+In addition, to determine whether other RNA modifications con-
+tribute to this interaction, we examined whether YTHDF2 could also 
+recognize and bind mtRNAs via m1A modifications, which have been 
+previously reported to be recognized by YTHDF2 and are also present 
+on mtRNAs (46–48). Our mass spectrometry (MS) analysis confirmed 
+that the overall m1A content in mt-­mRNAs isolated from APP/PS1 
+mouse brains was much lower than that of m6A (fig. S4L). Consis-
+tently, reanalysis of published CLIP-­seq (45) and m1A-­MAP (46) data­
+sets from 293T cells revealed that the YTHDF2 binding sites on 
+mt-­mRNAs do not overlap with m1A-­modified sites (fig. S4M). Fur-
+thermore, knockdown of TRMT10C, which catalyzes m1A modifi-
+cations on mt-­Nd5 (48), an mtRNA exhibiting strong binding affinity 
+for YTHDF2, did not appreciably affect YTHDF2 binding (fig. S4, N 
+and O). Together, these findings demonstrate that YTHDF2 primar-
+ily interacts with cytosolic mt-­mRNAs through an m6A-­dependent 
+mechanism rather than via m1A modifications.
+m6A modification attenuates the cytosolic mtRNA–induced 
+innate immune response in neurons
+Cytosolic mtRNAs have been shown to function as damage-­associated 
+molecular patterns (DAMPs) to activate the downstream innate immune 
+response in tumor cells and macrophages (12–15). In contrast, m6A 
+modification can serve as a “self” label to suppress the innate im-
+mune response elicited by exogenous RNA (35, 49, 50). These find-
+ings prompted us to investigate whether mtRNAs similarly trigger 
+the innate immune response in neurons and how m6A influences 
+this process.
+When mtRNAs isolated from the mitochondria of Neuro2a (N2a) 
+cells were transfected into intact cells (Fig. 3A), cytosolic mt-­Nd4 
+levels markedly increased (fig. S5A), accompanied by robust up-­
+regulation of Ifnb expression (Fig. 3A), indicating activation of the 
+innate immune response. Exogenous RNA is known to trigger inflam-
+matory responses through different receptors and signaling pathways 
+(51). Specifically, MDA5 senses double-­stranded RNA (dsRNA), 
+whereas RIG-­I and Toll-­like receptor 7/8 recognize single-­stranded 
+RNA (ssRNA) (Fig. 3B). To determine which pathway mediates the 
+mtRNA-­induced response, we knocked down key components of 
+these pathways. In AD cell models, knockdown of Mavs, but not 
+Myd88, suppressed the mtRNA-­induced up-­regulation of Ifnb expres-
+sion, suggesting a predominant role for the mitochondrial antiviral-­
+signaling protein (MAVS)-­dependent pathway (Fig. 3C and fig. S5, 
+B to D). Moreover, knockdown of either Ddx58 or Mda5 reduced 
+Ifnb production, suggesting that both ssRNA and dsRNA contribute 
+to the mtRNA-­induced immune response (Fig. 3, D and E; and fig. 
+S5, E and F). To characterize the involved RNA species, we performed 
+IP using a monoclonal antibody (J2) specific for dsRNA (12) and ob-
+served only minimal m6A modification on dsRNAs (fig. S5G). Ac-
+cordingly, dot blot analysis showed that the RNAs bound to YTHDF2 
+contained little dsRNA (fig. S5H). In addition, the transfection of exo­
+genous mtRNAs robustly activated the RIG-­I–MAVS signaling path­
+way (Fig. 3F). These results led us to focus subsequent analyses 
+on mitochondrial ssRNA to investigate how m6A modification and 
+YTHDF2 modulate their immunogenicity.
+Intriguingly, impaired mitophagy also led to cytosolic mtRNA 
+accumulation and subsequent innate immune activation. Specifi-
+cally, Pink1 knockdown activated its upstream RIG-­I–MAVS signaling 
+pathway (Fig. 3G) and increased Ifnb expression (fig. S5I). Similarly, 
+oAβ-­treatment led to RIG-­I–MAVS pathway activation and elevated 
+Ifnb levels in both primary neurons (Fig. 3H and fig. S5J) and AD 
+cell models (fig. S5, K to M). Notably, activation of the RIG-­I–MAVS 
+path­way was also observed in the cortices of both AD mouse models 
+(Fig. 3I and fig. S5N) and patients with AD (Fig. 3J), providing 
+in vivo evidence that this innate immune axis is involved in Aβ pathol-
+ogy. To further validate the causative role of mtRNA, we inhibited 
+mitochondrial transcription using inhibitor of mitochondrial tran-
+scription 1 (IMT1) (fig. S5O), which led to a significant reduction 
+in cytosolic mt-­Nd4 levels (fig. S5P). Consequently, IMT1 treat-
+ment mark­edly reduced Ifnb expression induced by either Pink1 
+knockdown (Fig. 3K) or oAβ stimulation (Fig. 3L), supporting the 
+notion that mtRNA deregulation is a key upstream trigger of neuro-
+nal innate immune activation.
+Having established that cytosolic mtRNAs trigger the RIG-­I– 
+MAVS pathway, we next asked whether m6A modification could at-
+tenuate this immune activation. Compared with unmodified Cluc 
+RNA, m6A-­modified RNA (Gluc) induced lower Ifnb expression and 
+reduced activation of the RIG-­I–MAVS pathway (Fig. 3, M and N). 
+Furthermore, we transcribed mt-­Nd4 in vitro with varying levels of 
+m6A modification (fig. S5, Q and R) and found that the innate immune 
+response caused by exogenous mt-­Nd4 progressively decreased as the 
+m6A level increased (Fig. 3, O and P, and fig. S5S). Together, these 
+Downloaded from https://www.science.org at Qingdao University of Science & Technology on July 20, 2026
+
+Pan et al., Sci. Adv. 12, eadz0887 (2026)     19 June 2026
+S c i e n c e  A d va n c e s  | R e s e a r c h  A r t i c l e
+6 of 19
+Fig. 3. m6A modification suppresses innate immune activation triggered by cytosolic mtRNAs in neurons. (A) Schematic of mtRNA transfection strategies (left) and 
+RT-­qPCR analysis of Ifnb expression in mtRNA-­treated N2a cells (right). (B) Overview of RNA-­mediated innate immune signaling pathways in neurons. (C to E) RT-­qPCR 
+analysis of Ifnb expression in mtRNA-­transfected N2a cells following knockdown of Mavs (C), Ddx58 (D), or Mda5 (E). (F to J) Representative immunoblots and quantifica-
+tions of RIG-­I–MAVS pathway proteins in mtRNA-­treated N2a cells (F), Pink1-­knockdown N2a cells (G), oAβ-­treated primary neurons (H), cortices of Con versus patients with 
+AD [(I), n = 6], and WT versus APP/PS1 mice [(J), n = 3]. (K and L) RT-­qPCR analysis of Ifnb expression in Pink1-­knockdown (K) and IMT1-­pretreated N2a cells followed by 
+oAβ stimulation (L). (M and N) RT-­qPCR analysis of Ifnb expression (M) and representative immunoblots of RIG-­I–MAVS pathway proteins (N) in Cluc-­ or Gluc-­treated N2a 
+cells. (O to P) RT-­qPCR analysis of Ifnb expression (O) and representative immunoblots of RIG-­I–MAVS pathway proteins (P) in N2a cells transfected with in vitro-­transcribed 
+mt-­Nd4 containing different levels of m6A modification. [(A) and (B)] Created in BioRender. Ma, C. (2026) https://BioRender.com/3wzccyr. [(A), (F), and (H) to (K)] Two-­sided 
+unpaired t tests. [(C) to (E), (G), and (O)] One-­way ANOVA and (L) two-­way ANOVA, followed by Tukey’s multiple comparisons test. Data are presented as means ± SEM. 
+*P < 0.05; **P < 0.01; ***P < 0.001.
+Downloaded from https://www.science.org at Qingdao University of Science & Technology on July 20, 2026
+
+Pan et al., Sci. Adv. 12, eadz0887 (2026)     19 June 2026
+S c i e n c e  A d va n c e s  | R e s e a r c h  A r t i c l e
+7 of 19
+results reveal that cytosolic mtRNA accumulation elicits a neuronal 
+innate immune response via the RIG-­I–MAVS pathway, while m6A 
+attenuates this activation.
+YTHDF2 down-­regulation contributes to the type I IFN 
+response in neurons
+To investigate why the innate immune response remained activated 
+despite elevated m6A levels on mt-­mRNAs in AD, we examined 
+whether dysregulation of YTHDF2 might be involved. Transcrip-
+tomic data from the AlzData database (52) revealed notably reduced 
+YTHDF2 mRNA expression across multiple brain regions in patients 
+with AD (Fig. 4A). In line with this observation, YTHDF2 protein 
+levels were markedly reduced in the cortical tissues of six patients with 
+AD compared with age-­matched healthy controls (Fig. 4B and fig. 
+S6A). A similar reduction was observed in the cortices of APP/PS1 
+and 5×FAD mice (Fig. 4, C and D). Immunohistochemical analyses 
+further showed that this reduction was predominantly restricted to 
+neurons in the cortices of APP/PS1 mice (Fig. 4, E and F). In agreement 
+with these findings, YTHDF2 protein levels were also decreased in 
+primary neurons exposed to oAβ and in other amyloid-­related cell 
+models (Fig. 4G and fig. S6B).
+YTHDF2 is known to suppress the innate immune response by 
+recognizing m6A modifications on viral and circular RNAs (35, 38). 
+We therefore asked whether YTHDF2 similarly regulated cytosolic 
+mt-­mRNAs in an m6A-­dependent manner. Given that YTHDF2 is a 
+key regulator of RNA degradation, we first assessed its impact on 
+mt-­Nd4 stability. Knockdown of YTHDF2 selectively increased the 
+stability of cytosolic mt-­Nd4 (fig. S6C and Fig. 4H), without affecting 
+mitochondria-­distributed mt-­Nd4 (fig. S6D), thereby leading to in-
+creased mt-­Nd4 abundance in the cytoplasm (Fig. 4I). Consequently, 
+we observed markedly increased expression of Ifnb (Fig. 4J), sup-
+porting a role of YTHDF2 in modulating innate immune responses 
+triggered by mtRNAs. YTHDF2 did not bind to innate immunity-­
+related transcripts, thus excluding the possibility of direct regulation 
+(fig. S6E). Intriguingly, Ythdf2 knockdown counteracted the inhibi-
+tory effect of m6A modification on Ifnb expression in response 
+to both Gluc and m6A-­modified exogenous mt-­Nd4 (fig. S6F and 
+Fig. 4K). Conversely, overexpression of YTHDF2 markedly sup-
+pressed Ifnb induction by 50 ng of mtRNA, whereas this inhibitory 
+effect diminished at 100 ng (fig. S6, G and H). Parallel quantification 
+of cytosolic mt-­Nd4 showed a similar trend (fig. S6I), further indi-
+cating a positive correlation between cytosolic mtRNA abundance 
+and Ifnb expression. Furthermore, Ifnb expression decreased pro-
+portionally with increasing YTHDF2 levels, demonstrating dose-­
+dependent suppression of mt-­Nd4–triggered immune activation 
+(fig. S6J and Fig. 4L). In addition, YTHDF2 overexpression also at-
+tenuated Ifnb up-­regulation caused by endogenous mtRNA leakage 
+following Pink1 knockdown (Fig. 4M).
+We next examined whether YTHDF2 suppressed mtRNA-­induced 
+immune activation in an m6A-­dependent manner. METTL17 knock­
+down in oAβ-­treated RA-­N2a cells markedly weakened the protective 
+effect conferred by YTHDF2 overexpression (Fig. 4N), indicating that 
+YTHDF2’s immunosuppressive function relies on m6A-­modified 
+mtRNAs. We further asked whether reduction of m6A level alone 
+was sufficient to trigger immune activation. As shown in fig. S6K, 
+although METTL17 knockdown in primary neurons markedly de-
+creased m6A levels on mtRNAs, the abundance of cytosolic mtRNAs 
+remained unchanged (fig. S6L). Consequently, IFN responses re-
+mained unchanged under both basal and oAβ-­stimulated conditions 
+(fig. S6M). Western blot analysis confirmed that, while oAβ stimula-
+tion reduces YTHDF2 protein levels, METTL17 knockdown did 
+not appreciably alter YTHDF2 expression under either condition 
+(fig. S6N). Together, these results indicate that, while m6A modifi-
+cation alone does not trigger immune activation, it is essential for 
+YTHDF2 to recognize and degrade cytosolic mtRNAs, thereby sup-
+pressing neuronal innate immunity.
+To further clarify how YTHDF2 modulated RIG-­I sensing of 
+mtRNAs, we examined whether m6A modification directly affects 
+RIG-­I binding. First, m6A-­oligo pull-­down assays showed that m6A 
+modification alone did not alter the interaction between RIG-­I and 
+RNA (Fig. 4O), indicating that m6A modification per se does not inter­
+fere with RIG-­I recognition. However, in AD cell models, YTHDF2 
+overexpression reduced the abundance of mt-­Nd4 bound to RIG-­I 
+(Fig. 4, P and Q). These findings suggest that YTHDF2 limits RIG-­I– 
+mediated sensing of cytosolic mtRNAs not by altering recognition 
+but by selectively degrading m6A-­modified mtRNAs. This degradation 
+effectively reduces the pool of RNA available for RIG-­I engagement. 
+Collectively, these findings demonstrate that reduced YTHDF2 ex-
+pression in AD facilitates cytosolic accumulation of m6A-­modified 
+mt-­mRNAs, thereby enhancing their recognition by RIG-­I and trig-
+gering innate immune activation.
+Ythdf2 deficiency in neurons activates cocultured microglia
+Although immune cells such as macrophages are the primary pro-
+ducers of IFN-­β, other cell types, including neurons, can also produce 
+this cytokine, particularly in response to viral infection or cellular 
+stress (53). Having shown that Ifnb mRNA was up-­regulated in AD 
+cell models, we next examined whether these cells actively secreted 
+IFN-­β. Measurement of culture supernatants of RA-­N2a revealed a 
+notable increase in extracellular IFN-­β levels after oAβ treatment (fig. 
+S7A). Consistently, transfection of exogenous mtRNA or Cluc RNA 
+induced robust IFN-­β secretion (fig. S7, B and C), whereas Gluc or in-
+creasing m6A levels on mt-­Nd4 transcripts progressively suppressed 
+this effect (fig. S7, C and D), further highlighting the inhibitory role 
+of m6A modification.
+Given that cross-­talk between microglia and neurons is essential 
+for microglial surveillance and homeostasis (54), we hypothesized that 
+neuronal mtRNA-­induced type I IFN signaling might influence sur-
+rounding microglia through a paracrine mechanism. To test this 
+hypothesis, we established separate primary cultures of neurons and 
+microglia (Fig. 5A). As expected, oAβ stimulation increased IFN-­β 
+secretion in primary neuronal cultures (Fig. 5B). Notably, treatment 
+with IMT1, which inhibits mtRNA transcription and reduces cyto-
+solic mtRNA levels (fig. S4, O and P), decreased Ifnb expression in 
+neurons (Fig. 5C), and lowered IFN-­β content in the culture medi-
+um (Fig. 5D). Exposure of microglia to neuron-­conditioned medi-
+um robustly up-­regulated ISGs, whereas this effect was substantially 
+attenuated when neurons were pretreated with IMT1 (Fig. 5E). Col-
+lectively, these results indicate that neuronal mtRNA deregulation 
+promotes IFN-­β–mediated paracrine activation of microglia.
+Building on the role of neuronal mtRNA in regulating IFN-­β 
+production, we next examined whether YTHDF2 modulates neuron-
+to-­microglia cross-­talk under Aβ pathology. Knockout of Ythdf2 in 
+primary neurons increased IFN-­β secretion following oAβ stimula-
+tion (Fig. 5F and fig. S7E), whereas overexpression of YTHDF2 
+markedly suppressed it (Fig. 5G and fig. S7F). When primary mi-
+croglia were exposed to conditioned medium from these neurons, the 
+ISGs were robustly up-­regulated in the Ythdf2 knockout condition and 
+Downloaded from https://www.science.org at Qingdao University of Science & Technology on July 20, 2026
+
+Pan et al., Sci. Adv. 12, eadz0887 (2026)     19 June 2026
+S c i e n c e  A d va n c e s  | R e s e a r c h  A r t i c l e
+8 of 19
+Fig. 4. YTHDF2 down-­regulation promotes type I IFN response in neurons. (A) Box plots showing YTHDF2 mRNA levels in the entorhinal cortex (EC), frontal cortex (FC), 
+hippocampus (HP), and temporal cortex (TC) from Con and patients with AD (n = 78, 232, 140, and 91, respectively). (B to D) Immunoblots and quantifications of YTHDF2 
+in cortices of Con and patients with AD (B, n = 6), APP/PS1 mice (C, n = 3), and 5×FAD mice (D, n = 3). (E) Representative multiplex immunohistochemistry (mIHC) images 
+showing YTHDF2 expression (green) in neurons (NeuN, orange), microglia [ionized calcium-­binding adapter molecule 1 (IBA1), red], and astrocytes [glial fibrillary acidic 
+protein (GFAP), yellow] in WT and APP/PS1 mice cortices (n = 3). (F) Quantification of fluorescence intensity of YTHDF2 in different cell types. (G) Representative immu-
+noblots and quantification of YTHDF2 in oAβ-­treated primary neurons. (H and I) RNA stability assay (H) and RT-­qPCR analysis of cytosolic mt-­Nd4 (I) in Ythdf2-­knockdown 
+N2a cells. (J to M) RT-­qPCR of Ifnb in Ythdf2-­knockdown (J), mt-­Nd4–transfected (K), mtRNA-­transfected with graded YTHDF2 (L), and Pink1-­knockdown with YTHDF2 
+overexpression (M) N2a cells. (N) RT-­qPCR of Ifnb expression in YTHDF2-­overexpressing N2a cells with oAβ treatment, Mettl17 knockdown, or the combination of both 
+treatments. (O) Western blot validation of RIG-­I binding to m6A-­oligo or A-­oligo in AD cell models. (P) Representative immunoblots of MYC and YTHDF2 demonstrating IP 
+and overexpression efficiency. (Q) RIP-­qPCR showing mt-­Nd4 binding to exogenous RIG-­I in YTHDF2-­overexpressing oAβ-­stimulated RA-­N2a cells. [(A) to (D), (F), (G) and 
+(M)] Two-­sided unpaired t tests. [(H) and (N)] Two-­way ANOVA and [(I) to (L)] one-­way ANOVA, followed by Tukey’s multiple comparisons test. Data are presented as 
+means ± SEM. *P < 0.05; **P < 0.01; ***P < 0.001.
+Downloaded from https://www.science.org at Qingdao University of Science & Technology on July 20, 2026
+
+Pan et al., Sci. Adv. 12, eadz0887 (2026)     19 June 2026
+S c i e n c e  A d va n c e s  | R e s e a r c h  A r t i c l e
+9 of 19
+attenuated by YTHDF2 overexpression, confirming a biologically mean-
+ingful paracrine signaling mechanism (Fig. 5, H and I). Consistent with 
+these molecular changes, microglia exposed to conditioned medium 
+from oAβ-­treated neurons exhibited a higher proportion of activated, 
+amoeboid cells with enlarged somas and fewer branches, indicative of 
+enhanced microglial activation (Fig. 5J). YTHDF2 overexpression 
+reversed microglial morphological changes, restoring a more quiescent 
+phenotype (Fig. 5J). Together, these results indicate that down-­regulation 
+of neuronal YTHDF2 promotes mtRNA-­mediated IFN-­β signaling, 
+which, in turn, drives microglial activation and disrupts microglial 
+homeostasis under Aβ pathology.
+Ythdf2 deficiency in neurons accelerates 
+Aβ-­induced pathology
+To determine the in vivo effect of neuronal YTHDF2 on Aβ pathol-
+ogy, we generated a mouse model with excitatory neuron–specific 
+Fig. 5. Ythdf2 deficiency in neurons promotes activation of cocultured microglia. (A) Schematic illustration of the experimental design for stimulating primary mi-
+croglia with conditioned medium from oAβ-­treated primary neurons. Created in BioRender. Ma, C. (2026) https://BioRender.com/x7xnbp5. (B) Enzyme-­linked immuno-
+sorbent assay (ELISA) of IFN-­β levels in the culture medium of oAβ-­treated primary neurons. (C) RT-­qPCR analysis of Ifnb expression in IMT1-­pretreated primary neurons 
+after oAβ stimulation. (D) ELISA of IFN-­β levels in the culture medium of IMT1-­pretreated, oAβ-­stimulated primary neurons. (E) RT-­qPCR analysis of representative IFN-­
+stimulated genes (ISGs) in primary microglia treated with conditioned medium from IMT1-­pretreated, oAβ-­stimulated primary neurons. (F and G) ELISA showing the ef-
+fects of Ythdf2 knockout (F) or overexpression (G) on IFN-­β production in oAβ-­treated primary neurons. (H and I) RT-­qPCR analysis showing the effects of Ythdf2 knockout 
+(H) or overexpression (I) in oAβ-­treated primary neurons on ISG expression in primary microglia. (J) Representative bright-­field (BF; top) images and IBA1 staining (bottom) 
+of primary microglia treated with conditioned medium from oAβ-­treated primary neurons with Ythdf2 knockout or overexpression. Quantification of microglial morpho-
+logical phenotypes is shown on the right. [(B), (G), and (I)] Two-­sided unpaired t tests. [(C) to (E)] Two-­way ANOVA and [(F) and (H)] one-­way ANOVA, followed by Tukey’s 
+multiple comparisons test. Data are presented as means ± SEM. *P < 0.05; **P < 0.01; ***P < 0.001.
+Downloaded from https://www.science.org at Qingdao University of Science & Technology on July 20, 2026
+
+Pan et al., Sci. Adv. 12, eadz0887 (2026)     19 June 2026
+S c i e n c e  A d va n c e s  | R e s e a r c h  A r t i c l e
+10 of 19
+deletion of Ythdf2 [Camk2α-­cre; Ythdf2flox/flox, hereafter conditional 
+knockout (cKO) mice; Fig. 6A and fig. S8, A and B]. We subsequently 
+induced acute Aβ damage by injecting oAβ into the lateral ventricle 
+and monitored the behavioral and pathological manifestations of the 
+mice over time (Fig. 6B). The cKO mice were born at Mendelian 
+ratios and developed normally, with no overt abnormalities under 
+baseline conditions (fig. S8C). Measurements of body weight, brain 
+volume and morphology, and neuromuscular strength revealed no 
+differences between cKO and control (Ctrl) mice (fig. S8, D to G). 
+Furthermore, behavioral analyses via the Y-­maze and Morris water 
+maze tests indicated that the deletion of YTHDF2 in neurons did not 
+impair learning or spatial memory, suggesting that neuronal ythdf2 
+deletion did not affect baseline cognitive performance (Fig. 6, C to 
+E, and fig. S8H).
+In contrast, under Aβ-­associated pathological conditions, the ab-
+sence of YTHDF2 markedly altered the neuronal response. Follow-
+ing oAβ injection, both the Ctrl and cKO mice exhibited cognitive 
+impairments, but the deficits were more severe in the cKO mice, as 
+evidenced by poorer performance in the Y-­maze (Fig. 6C) and water 
+maze tests (Fig. 6, D and E, and fig. S8H). These findings suggest that 
+Ythdf2 deficiency exacerbates oAβ-­induced cognitive dysfunction. In 
+parallel with behavioral changes, histological analyses revealed robust 
+glial activation in response to oAβ administration. Both microglia and 
+astrocytes exhibited enhanced activation and aggregation in the cor-
+tices of oAβ-­injected mice (Fig. 6F and fig. S8I). Notably, this phe-
+nomenon was not observed in untreated cKO mice as multiplex 
+immunofluorescence staining showed that Ythdf2 deletion alone did 
+not alter glial number or morphology in either the cortex or hippo-
+campus (fig. S8J). However, following oAβ exposure, the neuroin-
+flammatory response was intensified in cKO mice, with enhanced 
+glial activation extending beyond the immediate site of injection (Fig. 6, 
+F to H). These results suggest that, under amyloid stress, Ythdf2 dele-
+tion primes microglia for an exaggerated proinflammatory response, 
+thereby amplifying neuroinflammation.
+Consistent with our in vitro findings, Ythdf2 cKO mice exhibited 
+elevated expression of Ifnb and enhanced activation of the RIG-­I– 
+MAVS signaling pathway following oAβ injection (Fig. 6, I and J). In line 
+with our observations in both patients with AD and APP/PS1 mice, 
+oAβ injection led to increased m6A modification on mt-­Nd4 (Fig. 6, 
+K and L). This increase was further enhanced in the absence of 
+YTHDF2, reinforcing the role of YTHDF2 in maintaining cytosolic 
+mt-­mRNA homeostasis. Together, these findings demonstrate that 
+neuronal deletion of YTHDF2 exacerbates amyloid-­induced neuro-
+inflammation and accelerates AD-­like pathology in vivo, likely through 
+disruption of cytosolic mt-­mRNA homeostasis.
+DISCUSSION
+Previous studies have established a critical link between RNA m6A 
+methylation and AD pathogenesis (25, 26, 32), yet the underlying 
+mechanisms remain unclear. In this study, we demonstrated that, in 
+addition to nuclear-­encoded RNAs, mt-­mRNAs in the brain also 
+undergo m6A methylation, with elevated levels observed in Aβ-­
+driven AD models and patient samples exhibiting amyloid plaque 
+deposition. Under physiological conditions, m6A serves as a mo-
+lecular “mark” on mtRNAs, allowing YTHDF2 to act as a “scaven-
+ger” that selectively recognizes and degrades these marked cytosolic 
+mtRNAs, thereby preventing aberrant activation of the downstream 
+RIG-­I–MAVS pathway. However, under Aβ-­related pathological 
+conditions, neuronal YTHDF2 is down-­regulated, leading to im-
+paired clearance of cytosolic mt-­mRNAs and subsequent activation 
+of the innate immune response. The resulting neuronal IFN-­β se-
+cretion further stimulates surround­ing microglia, amplifying neu-
+roinflammation and exacerbating Aβ pathology (Fig. 7). Overall, 
+these findings highlight neuronal YTHDF2 as a crucial regulator that 
+maintains immune homeostasis by restraining mtRNA-­induced im-
+mune activation in Aβ-­associated AD pathology.
+Although m6A methylation has been extensively studied on 
+nuclear-­encoded transcripts, whether mtRNAs undergo this modi-
+fication has long been uncertain. Prior reports briefly alluding to 
+m6A signals on mtRNAs, primarily in cancer cells, lacked direct ex-
+perimental validation or functional insight (55–57). Our study 
+rigorously used multiple methods to demonstrate that a subset of 
+mt-­mRNAs undergoes m6A methylation in both mouse and human 
+brain. Consistent with our findings, two recently published transcriptome-
+wide m6A mapping studies (39, 58) independently detected m6A 
+modifications on mt-­mRNAs in the human brain, further validating the 
+presence of m6A-­modified mtRNAs. Our reanalysis of one of these 
+datasets (fig. S1I) also revealed elevated mtRNA methylation levels in 
+brains from patients with AD compared with healthy controls, re-
+inforcing the pathological relevance of this modification. Together 
+with our experimental data from oAβ-­stimulated neuronal models and 
+transgenic mouse models of amyloidosis, these findings indicate that 
+amyloid deposition contributes to increased m6A modification of mt-­ 
+mRNAs. The positive correlation between mtRNA m6A methylation and 
+Aβ burden suggests that m6A acts as a molecular intermediary link-
+ing Aβ deposition to downstream molecular disturbance in neurons.
+YTHDF2, the prototypical m6A reader, recognizes and promotes 
+degradation of m6A-­modified nuclear-­encoded RNAs to regulate 
+diverse processes (33, 34). We extend this paradigm to mtRNAs, 
+showing that YTHDF2 selectively binds and degrades cytosolic m6A-
+modified mt-­mRNAs. Although YTHDF2 can interact with m1A-­
+modified RNAs (47) and m1A occurs on mtRNAs (46, 48), comparative 
+CLIP-­seq analysis (45) and functional experiments—silencing 
+the m1A writer TRMT10C (48) had no effect, whereas knocking 
+down the m6A writer METTL17 (57) strongly reduced binding to 
+mt-­Nd5—confirm that m6A, not m1A, mediates YTHDF2–mt-­mRNA 
+association. Analogous to its role in suppressing innate immunity trig-
+gered by viral or exogenous circRNAs (38, 50), YTHDF2 degrades 
+m6A-­modified cytosolic mtRNAs to prevent their accumulation and 
+aberrant immune activation in neurons. Notably, m6A alone is insuf-
+ficient to block type I IFN induction: METTL17 knockdown lowered 
+mtRNA m6A levels without increasing cytosolic mtRNA or triggering 
+IFN expression. Because RIG-­I senses mtRNAs independently of m6A 
+status, the immunosuppressive effect relies on YTHDF2-­mediated 
+degradation that limits cytosolic exposure. In AD, Aβ exposure down-
+regulates neuronal YTHDF2 [validated in public datasets (52) and 
+multiple AD models], disrupting this protective mechanism, causing 
+cytosolic accumulation of m6A-­modified mtRNAs, enhanced RIG-­I 
+engagement, and activation of the neuronal type I IFN pathway.
+Consistent with our in vitro findings, we observed aggravat-
+ed neuroinflammation and cognitive decline in an acute AD mouse 
+model with excitatory neuron–specific Ythdf2 deficiency. Support-
+ing our observation, a machine learning–based study identified 
+YTHDF2 as the YTHDF family member most strongly associated 
+with AD progression (59), with high predictive accuracy in AD di-
+agnosis. To date, the YTHDF1, YTHDF2, and YTHDF3 proteins have 
+been reported to function redundantly in inducing RNA degradation 
+Downloaded from https://www.science.org at Qingdao University of Science & Technology on July 20, 2026
+
+Pan et al., Sci. Adv. 12, eadz0887 (2026)     19 June 2026
+S c i e n c e  A d va n c e s  | R e s e a r c h  A r t i c l e
+11 of 19
+Fig. 6. Neuronal Ythdf2 deficiency exacerbates Aβ pathology and cognitive impairment. (A) Genome-­editing strategy for generating conditional knockout (cKO) 
+mice. Ythdf2flox/flox mice (Ctrl), carrying loxP sites flanking the 5′ untranslated region and exon 1 (E1), were crossed with Camk2α-­Cre mice to generate Ythdf2 cKO mice. 
+(B) Schematic overview of the procedure for establishing an acute AD mouse model and subsequent behavioral tests (n = 6). icv, intracerebroventricular. (C) Spontaneous 
+arm alternation performance of Ctrl and cKO mice with or without oAβ injection in the Y-­maze test. (D) Representative path tracings of mice in the Morris water maze. 
+(E) Percentage of time spent in the target quadrant (out of 60 s total) during the probe test of the Morris water maze. (F) Representative images of Nissl staining and im-
+munostaining for IBA1 and GFAP in the cortices of Ctrl and cKO mice in the acute AD model. (G and H) Quantification of IBA1-­positive (G) and GFAP-­positive (H) areas from 
+(F) (n = 3). (I and J) RT-­qPCR analysis of Ifnb expression (I) and representative immunoblots of RIG-­I–MAVS pathway proteins (J) in the cortices of Ctrl and cKO mice with or 
+without oAβ injection. (K and L) m6A-­IP-­qPCR analysis of mt-­Nd4 m6A levels (K) and m6A-­SELECT-­qPCR analysis of site-­specific m6A levels on mt-­Nd4 (L) in the cortices of 
+acute AD model mice generated from Ctrl and cKO mice. Two-­sided unpaired t tests. Data are presented as means ± SEM. *P < 0.05; **P < 0.01; ***P < 0.001.
+Downloaded from https://www.science.org at Qingdao University of Science & Technology on July 20, 2026
+
+Pan et al., Sci. Adv. 12, eadz0887 (2026)     19 June 2026
+S c i e n c e  A d va n c e s  | R e s e a r c h  A r t i c l e
+12 of 19
+(60, 61). Thus, the absence of neurological deficits in unstimulated 
+Ythdf2-­cKO mice likely reflects compensatory mechanisms in-
+volving YTHDF1 or YTHDF3. Under oAβ-­stimulated conditions, 
+however, defective mitophagy facilitates mtRNA leakage into the 
+cytosol, and the loss of YTHDF2 further impairs their degradation, 
+leading to excessive cytosolic mtRNA accumulation and enhanced 
+immune activation. Nevertheless, while our findings primarily focus 
+on mtRNA-­mediated mechanisms, nuclear-­encoded transcripts may 
+also contribute to the observed phenotypes. For instance, YTHDF2 
+has been shown to play a distinct role from YTHDF1 and YTHDF3 in 
+regulating the incorporation of RNAs into RNA granules (62–64). The 
+involvement of RNA granules, such as stress granules and P-­bodies, 
+in neuronal function has recently gained wide recognition (65). There­
+fore, future studies are warranted to clarify whether these parallel 
+pathways also participate in the neuronal response to Aβ pathology. 
+Collectively, these observations highlight the context-­dependent 
+role of YTHDF2 in maintaining neuronal homeostasis, particularly 
+under conditions of cellular stress or disease.
+Neurons, despite not being classical immune cells, can detect and 
+respond to immune signals (9). Owing to their high energy demands, 
+neurons are particularly vulnerable to impaired mitophagy, which can 
+result in the release of mitochondrial nucleic acids. These nucleic acids 
+act as potent DAMPs, triggering intracellular innate immune responses, 
+which, in turn, contribute to the progression of neurodegenerative 
+diseases such as amyotrophic lateral sclerosis (66), Huntington’s dis-
+ease (67), and Parkinson’s disease (68, 69). In the context of AD, how-
+ever, the key cytosolic DNA sensors in the cGAS-­STING pathway are 
+expressed at low levels in neurons (70, 71), suggesting that mtRNA, 
+rather than mtDNA, may serve as the primary trigger of neuro-
+nal innate immune responses. While prior work has focused on 
+mt-­dsRNA (14), our data demonstrate that cytosolic accumulation 
+of mt-­ssRNAs can also potently activate immune responses, a pre-
+viously unrecognized mechanism in neurons. In line with that, 
+YTHDF2 protein is predominantly expressed in neurons and 
+markedly down-­regulated in AD. Although m6A-­modified mt-­mRNAs 
+were detected in both neurons and microglia, oAβ-­induced elevation of 
+mt-­mRNA m6A levels was observed exclusively in neurons. Con-
+sequently, neurons with oAβ stimulation or mitophagy defects exhib-
+ited increased cytosolic mt-­mRNA levels, which, in turn, triggered 
+innate immune responses. The ensuing neuronal IFN-­β secretion 
+activated nearby microglia, promoting their transition into type I 
+IFN–responsive states. Thus, our results demonstrate that amyloid 
+plaques indirectly drive microglial activation by triggering neuronal in-
+nate immune responses, thereby exacerbating neuroinflammation.
+However, despite the strengths of our findings, certain limita-
+tions should be acknowledged. First, this study primarily centered on 
+mt-­Nd4 as a representative example; thus, the functional roles and regu-
+latory mechanisms of m6A on other mt-­mRNAs remain to be fully 
+Fig. 7. Proposed mechanism of YTHDF2 in protecting neurons from cytosolic mtRNA–induced innate immune response in Aβ pathology. Under normal condi-
+tions, the limited amount of mtRNA released into the cytosol could be timely recognized and degraded by YTHDF2 (“Scavenger”) in an m6A (“Mark”)–dependent manner, 
+thereby preventing RIG-­I recognition. However, in the presence of Aβ, the down-­regulation of YTHDF2, combined with mitochondrial dysfunction, leads to an in-
+creased distribution of mtRNAs in the cytosol. This accumulating mtRNA is recognized by RIG-­I, activating the downstream type I IFN pathway. Pathological neurons 
+subsequently secrete IFN-­β into the extracellular space, activating surrounding microglia and exacerbating neuroinflammation. Created in BioRender. Ma, C. (2026) 
+https://BioRender.com/o2uf900.
+Downloaded from https://www.science.org at Qingdao University of Science & Technology on July 20, 2026
+
+Pan et al., Sci. Adv. 12, eadz0887 (2026)     19 June 2026
+S c i e n c e  A d va n c e s  | R e s e a r c h  A r t i c l e
+13 of 19
+elucidated. Second, although m6A modifications are generally ab-
+sent from dsRNA structures, it remains unclear whether m6A in-
+fluences dsRNA formation or stability, thereby indirectly modulating 
+dsRNA-­triggered type I IFN responses. Third, nuclear-­encoded RNAs 
+may also contribute to YTHDF2-­mediated regulation of neuronal 
+innate immune responses—for example, via RNA granules or P-­
+bodies—and their precise contribution warrants further investigation. 
+Last, although our data and reanalysis of independent methylated 
+RNA immunoprecipitation sequencing (MeRIP-­seq) datasets support 
+elevated mt-­mRNA m6A levels in AD brains, not all publicly avail-
+able datasets reproduced this trend (58). Such discrepancies may 
+reflect differences in patient selection criteria, particularly with re-
+spect to amyloid pathology in control cohorts, as well as method-
+ological variability among m6A detection approaches. Therefore, 
+further studies using standardized cohorts and complementary tech-
+nologies will be important to establish the generalizability of mt-­
+mRNA methylation changes in AD.
+In summary, we identify YTHDF2 as a critical regulator that re-
+strains mtRNA-­induced innate immune activation in neurons under 
+Aβ-­associated stress. Aβ-­driven down-­regulation of YTHDF2 im-
+pairs this regulatory axis, leading to excessive type I IFN signaling 
+and neuroinflammation. Targeting the pathways that preserve or re-
+store YTHDF2 function, or modulate m6A-­dependent mtRNA me-
+tabolism, may represent promising therapeutic strategies to mitigate 
+neuroinflammation and slow AD progression.
+MATERIALS AND METHODS
+Postmortem human brain tissues
+Frozen brain tissue blocks and paraffin-­embedded sections were ob-
+tained from the National Human Brain Bank for Development and 
+Function, Chinese Academy of Medical Sciences and Peking Union 
+Medical College, with full, informed consent from tissue donors 
+(approval no. 2022125). Tissue samples were selected on the basis of the 
+level of AD pathology and were assessed according to current diag-
+nostic consensus criteria (72). The clinical and demographic data 
+for all patients included in this study are summarized in data S4. 
+Ethical approval for the study was obtained from the Institutional 
+Review Board of the Institute of Basic Medical Sciences, Chinese 
+Academy of Medical Sciences (approval no. 2019054).
+Mouse models and treatments
+APP/PS1 [B6.Cg-­Tg (APPswe,PSEN1dE9)-­85Dbo/Mmjax], 5×FAD 
+[B6SJL-­Tg (APPSwFlLon, PSEN1*M146L*L286V)6799Vas/Mmjax], 
+and Camk2α-­Cre [B6. Cg-­Tg (Camk2α-­cre) T29-­1Stl/J] were pur-
+chased from Model Animal Research Center and Shanghai Model 
+Organisms Center, respectively. Ythdf2flox/flox mice were provided by 
+A. Klungland (Oslo University Hospital, Norway) (73). To generate 
+Ythdf2 cKO mice, Ythdf2flox/flox mice were bred with Camk2α-­Cre 
+mice. All experimental mice were bred and housed under specific 
+pathogen–free (SPF) conditions, with controlled temperature (23.1°C) 
+and humidity (30 to 60%), under a 12-­hour light/dark cycle, with 
+ad libitum access to food and water. All experimental procedures 
+were conducted following protocols approved by the Animal Care 
+and Use Committee of Institute of Basic Medical Sciences, Chinese 
+Academy of Medical Sciences (ACUC-­XMSB-­2024-­099). The geno-
+types were determined via polymerase chain reaction (PCR) using 
+the primers listed in data S6.
+Behavioral tests
+The Morris water maze test
+The Morris water maze was performed as previously described (74). 
+Briefly, a transparent 12-­cm-­diameter platform was placed 1 cm below 
+the water surface at a fixed position. During the training phase, each 
+mouse underwent continuous training for 5 days with 4 trials/day, 
+lasting 90 s each or until the mouse found the hidden platform. On 
+the probe trial day, the platform was removed, and the mice were 
+allowed to swim for 60 s, starting from the quadrant opposite the 
+location of the platform. Behavioral parameters were recorded via a 
+video camera positioned above the water tank, and the data were 
+analyzed via EthoVision XT 11 software (Noldus).
+Y-­maze test
+For the Y-­maze test, spontaneous alternations were measured via a 
+Y-­shaped maze [35 cm (length) by 5 cm (width) by 15.5 cm (height) per 
+arm, with a 120° angle between each arm]. The mice were randomly 
+placed in one of the arms and allowed to explore freely for 8 min, and 
+the camera system was used to record their behavioral changes. The 
+total number of arm entries and the number of three-­arm cycles were 
+recorded to calculate the percentage of spontaneous alternations 
+(numbers of three-­arm cycles/total number of arm entries).
+Grip strength test
+The grip strength of the mice was measured via BIO-­GS3 (Bioseb). 
+Each mouse’s forelimb was placed on the device’s grid, and the tail was 
+gently held and pulled back until the forelimb released the grid. 
+The grip strength was recorded in newtons. Each test was repeated 
+three times per mouse, with intervals of at least 30 min between trials.
+Intracerebroventricular injection of oAβ
+To prepare oAβ, synthetic Aβ1-­42 peptides pretreated with hexafluo-
+roisopropanol (Sigma-­Aldrich, AG968) were dissolved according to 
+the established protocols. Briefly, a monomeric Aβ1-­42 solution was 
+prepared by diluting a stock solution (dimethyl sulfoxide, 5 mM) 
+with F12 medium to achieve a final concentration of 100 μΜ. Mono-
+merization was achieved by incubating the monomeric Aβ42 solution at 
+4°C for 24 hours. Six-­month-­old Ythdf2 cKO and Ythdf2flox/flox mice 
+(Ctrl) were anesthetized with tribromoethanol (20 mg/ml, 20 μl/g) 
+before surgery, which was performed after the head was secured in a 
+stereotaxic frame. Pulled long-­shaft borosilicate pipettes were back-
+filled with mineral oil before loading. A volume of 4 μl of oAβ solution 
+or sterile phosphate-­buffered saline (PBS) vehicle was injected into the 
+right lateral ventricle via a microinjector (HAMILTON, 80300). 
+The coordinates used for the stereotaxic injections were anteropos-
+terior (AP) −0.58, mediolateral (ML) 1.00, and dorsoventral (DV) 
+−2.00. After injection, the mice were housed under SPF conditions 
+until further analysis.
+Isolation and culture of primary neurons and microglia
+The embryonic mouse cortex [embryonic day 14.5 (E14.5) to E16.5] 
+was used to isolate primary neurons following approved animal pro-
+tocols (75). Briefly, pregnant mice were euthanized, and embryos were 
+removed and placed in ice-­cold Hanks’ balanced salt solution (HBSS; 
+Invitrogen, 1417509). After decapitation, cortices were dissected and 
+stripped of meninges. The sheared tissues were then dissociated in 
+0.125% trypsin-­EDTA at 37°C for 15 min and then suspended in 
+complete medium [Dulbecco’s modified Eagle’s medium (DMEM) 
+sup­plemented with 10% fetal bovine serum (FBS)] supplemented 
+Downloaded from https://www.science.org at Qingdao University of Science & Technology on July 20, 2026
+
+Pan et al., Sci. Adv. 12, eadz0887 (2026)     19 June 2026
+S c i e n c e  A d va n c e s  | R e s e a r c h  A r t i c l e
+14 of 19
+with deoxyribonuclease I (DNase I; 0.1 mg/ml; MilliporeSigma, 
+260913). After filtration through 40-­μm cell strainers, dissociated 
+cells were plated onto poly-­d-­lysine (PDL)–coated culture plates and 
+cultured in neurobasal medium (Gibco, 21103049) supplemented with 
+2% B27 (Gibco, 17504044) and 1% penicillin/streptomycin (P/S). Medium 
+was replaced after 24 hours. After 8 to 10 days in vitro, neurons were 
+treated with 20 μM oAβ for 24 hours to establish the AD cell model.
+For primary microglia, brains from mouse pups at postnatal days 1 
+to 3 were rinsed with ice-­cold HBSS After removing blood vessels, 
+the brains were minced into small pieces. The dissected tissues were dis-
+sociated in 0.25% trypsin-­EDTA at 37°C for 15 min, followed by brief 
+digestion with DNase I. Trypsin was neutralized with DMEM con-
+taining 10% FBS, and cells were passed through 70-­μm cell strainers 
+and centrifuged at 1000 rpm for 5 min. The cell suspension was seeded 
+at a density of two to three brains per 75-­cm2 flask. After 10 to 14 days, 
+microglia were detached by shaking at 200 rpm for 2 hours, collected, and 
+replated onto PDL-­coated six-­well plates for subsequent experiments.
+Immunofluorescence analysis
+The mice were perfused with 4% paraformaldehyde (PFA) after deep 
+anesthesia with tribromoethanol, and the brains were extracted and 
+fixed in 4% PFA at 4°C for 6 hours, followed by dehydration in 30% 
+sucrose until sectioning. The brains were embedded in Optimal Cut-
+ting Temperature (OCT) compound (Sakura, 4583) and sectioned 
+into 60-­μm-­thick tissue sections via a freezing microtome (Leica, 
+CM3050S). For staining, the frozen sections were washed in 1× PBS 
+and blocked at room temperature (RT) for 1 hour in blocking buffer 
+(2.5% goat serum and 1% Triton X-­100 in 1× PBS). Primary anti-
+bodies were applied to the sections overnight at 4°C. The tissues 
+were washed with 1× PBS three times and then incubated with fluo-
+rescent secondary antibodies diluted in blocking buffer for 1 hour at 
+RT. After a final wash in PBS, the sections were mounted on glass 
+slides with 4′,6-­diamidino-­2-­phenylindole (DAPI) mounting me-
+dium (Sigma-­Aldrich, F6057). A list of the antibodies used in this 
+study is provided in data S6.
+The cortex region of each mouse brain section was visualized 
+with a 20× objective on a confocal microscope (Olympus, LV1200). 
+Images were taken with z stacks of 20-­μm intervals at a 1-­μm step 
+size and analyzed by ImageJ.
+Immunohistochemistry analysis
+Formalin-­fixed paraffin-­embedded (FFPE) tissue sections (4 μm) 
+were deparaffinized in xylene and then hydrated in ethanol. Anti-
+gen retrieval was performed by heating the sections for 15 min in 
+citrate buffer pH 6.0 (Agilent-­Dako, S236984). After cooling to 
+RT, the slides were rinsed twice in 1× PBS for 5 min. The tissue sec-
+tions were blocked with 2.5% goat serum at RT for 30 min, followed 
+by overnight incubation with primary antibody at 4°C. The sec-
+tions were then washed in 1× PBS and incubated with a horseradish 
+peroxidase (HRP)–conjugated secondary antibody at RT for 45 min. 
+After being washed with 1× PBS, the sections were incubated with 
+3,3′-diaminobenzidine (DAB) (Vector, SK-­4100) for 1 to 3 min and 
+then counterstained with hematoxylin via a standard procedure. A 
+3DHISTECH digital slice scanner was used to scan the slice images 
+at different magnifications.
+Multiplex immunohistochemistry
+Multiplex immunohistochemistry (mIHC) staining was conducted 
+via the Opal 6-­Plex Detection Kit (NEL871001KT, Akoya Biosciences) 
+following established protocols. Briefly, FFPE tissue sections (4 μm) 
+were heated at 60°C for 2 hours, followed by deparaffinization, rehy-
+dration, and heat-­induced epitope retrieval. The slides were then 
+incubated with primary antibodies, followed by a 10-­min incubation 
+with Polymer HRP Mouse + Rabbit at RT. Next, the slides were 
+treated with Opal Fluorophore Working Solution (1:100 dilution) for 
+10 min. After tyramide signal amplification, heat-­induced epitope 
+retrieval was repeated to strip the tissue-­bound primary and sec-
+ondary antibody complexes before additional labeling. This process 
+was repeated until all four markers were labeled. Details of the anti-
+bodies used in this study are provided in data S4. Images of mIHC 
+staining were captured via the Vectra Polaris Automated Quantita-
+tive Pathology Imaging System and analyzed via ImageJ.
+Cell culture and treatments
+Mouse N2a neuroblastoma cells, mouse BV2 microglia, and human 
+embryonic kidney (HEK) 293T cells were purchased from the National 
+Infrastructure of Cell Line Resources (Beijing, China) and cultured 
+in DMEM-­H supplemented with 10% FBS and 1% P/S at 37°C with 
+5% CO2. N2a/APP cells (76), provided by H. Xu (Xiamen University), 
+were maintained in DMEM-­H/Opti-­MEM (1:1) supplemented with 
+10% FBS, P/S (1 U/ml), and G418 (200 mg/ml). All the cell lines were 
+subjected to standard mycoplasma contamination tests.
+To establish the AD cell model, N2a cells were seeded at 40 to 50% 
+confluence and treated with differentiation medium (DMEM-­H, 0.5% 
+FBS, and 20 μM RA) for 24 hours to induce cell differentiation. The 
+differentiated N2a cells were subsequently exposed to 100 nM oAβ for 
+24 hours to establish the AD cell model. To activate microglia, BV2 
+cells or primary microglia were exposed to 100 nM oAβ for 24 hours.
+For enzyme-­linked immunosorbent assay (ELISA), cell-­free su-
+pernatants from N2a or primary neuron cultures were analyzed for 
+IFN-­β production via a Mouse IFN-­β ELISA Kit (Beyotime, PI568) 
+following the manufacturer’s instructions.
+Gene knockdown, knockout, and overexpression
+For gene knockdown, N2a cells were cultured for 24 hours before trans-
+fection using Rfect (Biogenerating Biotechnology Corp., 11012). Pri-
+mary neurons were cultured for 7 days before transfection via CALNP 
+RNAi (D-­nano, DN001). All small interfering RNAs used for the 
+experiments were synthesized by Shanghai GenePharma, and the de-
+tails are provided in data S6.
+For gene knockout in primary neurons, the CRISPR-­Cas9 system 
+was adopted. The single guide RNAs (sgRNAs) against YTHDF2 
+and scramble sgRNA were designed, cloned, and inserted into 
+pLentiCRISPR v2 by GenScript. Lentiviruses were generated by 
+cotransfecting lentiCRISPR v2-­sgRNAs and packaging plasmids 
+[psPAX2 (Addgene, no. 12260) and pMD2.G (Addgene, no. 12259)] 
+into HEK293T cells via Neofect (Tengyi Biotech, TF201201). The 
+supernatant was collected and filtered through a 0.45-­μm filter after 
+transfection. Primary neurons were transduced with lentivirus ex-
+pressing sgRNA and selected with puromycin for 4 days.
+For overexpression, the mouse YTHDF2-­overexpressing plasmid 
+(pCAX-­mYTHDF2) and its parental vector (pCAX) were purchased 
+from Origene, and the mouse RIG-­I–overexpressing plasmid 
+(pcDNA3.1–mRIG-­I–MYC) was provided by M. Jiang (IBMS/PUMC). 
+The above plasmids were transfected via Neofect. Unless otherwise 
+stated, the cells were harvested 48 hours posttransfection. JetPRIME 
+(Polyplus, 101000027) was used to transfect plasmid DNA into pri-
+mary neurons.
+Downloaded from https://www.science.org at Qingdao University of Science & Technology on July 20, 2026
+
+Pan et al., Sci. Adv. 12, eadz0887 (2026)     19 June 2026
+S c i e n c e  A d va n c e s  | R e s e a r c h  A r t i c l e
+15 of 19
+Immunocytochemistry analysis
+The cells cultured on coverslips were fixed in 4% PFA in PBS for 10 
+to 20 min, followed by washing with 1× PBS and permeabilization 
+in 0.1% Triton X-­100–PBS for 20 min. Subsequently, the cells were 
+blocked in a 2.5% goat serum blocking solution at RT for 60 min. 
+Primary antibodies were then applied and incubated overnight at 
+4°C. After the samples were washed with PBS, secondary antibodies 
+were applied, and the samples were incubated at 37°C for 45 min in 
+the dark. Last, the coverslips were mounted onto glass microscope 
+slides with DAPI. The slides were visualized via a 63× oil objective 
+on a confocal microscope (STELLARIS 5, Leica). Images were taken 
+at each focus point, averaged three times, and then analyzed via LAS 
+X software. Protein colocalization was assessed via the plot profile 
+function in ImageJ and further analyzed via the plugin JACoP.
+Combined FISH and immunofluorescence analysis
+The cyanine 3 (Cy3)-­labeled RNA probe was synthesized by Biotech 
+Shanghai, and the detailed sequence is described in data S6. The 
+FISH methods were adapted from previous articles with minor mod-
+ifications (77). Briefly, cells were fixed with freshly prepared 4% PFA at 
+RT for 10 min, followed by permeabilization with 0.5% Triton X-­100 
+in PBS at 4°C for 10 min. Subsequently, the cells were blocked with 
+1% bovine serum albumin (BSA) at RT for 30 min. Primary anti-
+bodies were incubated at RT for 2 to 3 hours. After washing with 
+PBS, secondary antibodies were applied and incubated at 37°C for 
+45 min in a dark, humidified chamber. Samples were postfixed with 
+4% PFA at RT for 5 min and equilibrated in 2× saline-­sodium citrate 
+(SSC) twice for 10 min. Next, the cells were incubated with 100 μl of 
+hybridization mixture [50% formamide, 2× SSC, dextran sulfate, 
+yeast tRNA (1 mg/ml), ribonuclease (RNase) inhibitor, and 1 μM 
+probe] at 37°C overnight. The coverslips were subsequently washed 
+with freshly prepared 50% formamide or 2× SSC at 37°C for 5 min. 
+Subsequently, the cells were successively washed with 2× SSC, 1× 
+SSC, or 4× SSC at 37°C for 5 min. Last, the coverslips were mounted 
+onto glass microscope slides with DAPI. The slides were visualized via 
+a 63× oil objective on a confocal microscope (STELLARIS 5, Leica).
+RNA extraction and real-­time qPCR
+Temporal cortices of the mouse or human brains or cells were homo­
+genized in TRIzol (Sigma-­Aldrich, T9424), and RNA was extracted 
+and precipitated successively with trichloroethanol and isopropanol. 
+The precipitates were dissolved in RNase-­free water, and the con-
+centration was determined via a NanoPhotometer. The RNA was 
+reverse transcribed via ReverTra Ace qPCR RT Master Mix (TOYOBO, 
+FSQ-­301), and real-­time qPCR (RT-­qPCR) was performed in tripli-
+cate via SYBR qPCR Mix (TOYOBO, QPS-­201) on a qPCR instru-
+ment. Gapdh was used as an internal reference for all RT-­qPCR 
+experiments, except where otherwise indicated. A list of the se-
+quences of the primers used is provided in data S6.
+Droplet digital PCR
+cDNA was used as a template for ddPCR on the QX200 system (Bio-­Rad 
+Laboratories). A TaqMan probe specific for mt-­Nd4 was designed 
+(data S6). The ddPCR reaction mixture (20 μl), containing cDNA and 
+the probe, was loaded into a disposable droplet generator cartridge, and 
+70 μl of droplet generation oil was added. Droplets were generated 
+using the QX200 droplet generator and transferred to a 96-­well PCR 
+plate for PCR amplification. A negative control was included in each 
+run. Absolute mt-­Nd4 copy numbers were quantified as copies per 
+microliter using QuantaSoft software (Bio-­Rad Laboratories).
+N6-­methyladenosine–immunoprecipitation–quantitative 
+polymerase chain reaction
+For m6A-­IP-­qPCR, total RNA was fragmented to 300 to 400 nucleo-
+tides (nt) via RNA fragmentation reagents at 85°C for 30 s. m6A-­
+modified Gaussia luciferase RNA (Gluc) and nonmodified Cypridina 
+luciferase RNA (Cluc) [New England Biolabs (NEB), E1610S] were 
+mixed with 10 μg of fragmented RNA as spike-­in control RNA. Anti-
+bodies from two different companies (Synaptic Systems, 202003; and 
+Abcam, ab151230) were applied for m6A-­IP to exclude false positive 
+results from individual antibodies. IP and RNA recovery were con-
+ducted via the aforementioned methods. Input (100 ng) and IP 
+products were used for reverse transcription and qPCR. The y axis 
+represents the relative enrichment normalized to Gluc.
+Single-­base elongation-­ and ligation-­based qPCR
+SELECT was performed as previously described (41). Briefly, relative 
+quantification of target RNA was conducted via qPCR, with Gapdh 
+serving as the internal reference. Total RNA containing equal amounts 
+of target RNA was mixed with 40 nM Up primer, 40 nM Down primer, 
+and 5 μM deoxyribonucleoside triphosphates (dNTPs) (NEB, N0477V) 
+in 17 μl of reaction buffer (NEB, B6004V). The mixture was then 
+subjected to an annealing extension procedure: 90°C for 1 min, 80°C 
+for 1 min, 70°C for 1 min, 60°C for 1 min, 50°C for 1 min, and 40°C 
+for 6 min. Subsequently, the mixture was combined with 0.01 U of Bst 
+2.0 DNA Polymerase (NEB, M0537S), 0.5 U of SplintR Ligase (NEB, 
+M0375S), and 10 nM adenosine 5′-­triphosphate (ATP; NEB, P0756S) 
+to a final volume of 20 μl. The final reaction mixture was incubated 
+at 40°C for 20 min, followed by 80°C for 20 min, to facilitate recog-
+nition and ligation at single bases. qPCR was then carried out as 
+described above. The y axis displays the qPCR cycle threshold (Ct) 
+values, which directly reflect the presence of m6A modification at the 
+interrogated site.
+dsRNA immunoprecipitation
+Total RNA from the cortex of APP/PS1 mice was extracted via TRIzol 
+reagent. For IP, 50 μg of RNA was incubated with 4 μg of the dsRNA 
+antibody (J2) in IP buffer (10 mM tris-­HCl, 250 mM NaCl, and 0.1% 
+NP-­40, supplemented with RNase inhibitor) overnight at 4°C. 
+Following incubation, the RNA-­antibody mixture was transferred to 
+Dynabeads Protein A and incubated for an additional 120 min at 
+RT. The beads were then washed three times with IP buffer to re-
+move non-­specifically bound material. Last, the RNA was recovered 
+via ammonium acetate-­ethanol precipitation.
+Dot blot analysis
+Different amounts of RNA were heated at 95°C for 3 min to disrupt 
+the secondary structure, followed by immediate placement on ice. 
+The RNA samples were then applied to an Amersham Hybond-
+­N+ membrane, followed by ultraviolet cross-­linking (125 mJ/cm2 
+at 254 nm) and methylene blue staining. Afterward, the mem-
+brane was washed with 1× Tris-­buffered saline with 0.1% Tween 20 
+(TBST) buffer, blocked with 5% nonfat milk in TBST, and in-
+cubated with m6A antibody or dsRNA antibody (J2) overnight at 
+4°C. Fol­low­ing incubation with an HRP-­conjugated anti-­rabbit 
+immunoglobulin G (IgG) secondary antibody at RT for 1 hour, the 
+Downloaded from https://www.science.org at Qingdao University of Science & Technology on July 20, 2026
+
+Pan et al., Sci. Adv. 12, eadz0887 (2026)     19 June 2026
+S c i e n c e  A d va n c e s  | R e s e a r c h  A r t i c l e
+16 of 19
+membrane was visualized via the Tanon High-­sig ECL Western 
+Blotting Substrate (Tanon, 180-­5001).
+m6A and m1A quantification by UHPLC/MS-­MS
+Poly(A) RNA was isolated from total RNA via a Dynabeads mRNA 
+DIRECT Kit according to the manufacturer’s protocol. Fifty nano-
+grams of poly(A) RNA was digested with 1 μl of nuclease P1 (1 U/ml) 
+in reaction buffer (20 mM ZnCl2 and 100 mM NaCl) at 37°C for 
+2 hours. Subsequently, 1 μl of calf intestinal alkaline phosphatase 
+(CIAP) (Promega, M1821) was added to CIAP buffer (Promega, 
+M1821) and further incubated for another 2 hours at 37°C. The di-
+gested DNA or RNA was diluted twofold with nuclease-­free H2O 
+and filtered through a 0.22-­μm filter (Millipore, SLGVR04NL). For 
+UHPLC-­MS/MS analysis, a 2-­μl sample was injected, and the nucle-
+osides were separated via an Agilent Technologies 6470 Triple Quad 
+LC/MS (Agilent Technologies, 6470) for analysis. The nucleosides 
+were quantified via nucleoside-­to-­base ion mass transitions of 282.1 
+to 150.1 (m6A), 282.1 to 150.1 (m1A), 268.0 to 136.0 (A), and 244.0 
+to 112.0 (C).
+RNA pulldown and MS/MS analysis
+Biotin-­labeled RNA oligonucleotides containing adenosine or m6A 
+were synthesized by Takara, and the sequences and modification 
+sites are detailed in data S6. The RNA probe was denatured at 95°C 
+for 5 min and rapidly cooled on ice. Two hundred picomol of RNA 
+was then incubated with streptavidin magnetic beads (NEB, S1420S) in 
+RNA capture buffer [20 mM tris-­HCl (pH 7.5), 0.5 M NaCl, 1 mM 
+EDTA, and 1 μl of RNasin] at RT with gentle agitation (20 to 30 rpm) 
+for 30 to 45 min. The RNA-­bead complex was subsequently incu-
+bated with 1 mg of sample protein in protein-­RNA binding buffer 
+[20 mM tris-­HCl (pH 7.4), 50 mM NaCl, 2 mM MgCl2, 1% Tween 
+20, 1 mM dithiothreitol (DTT), 1× protease inhibitor cocktail, and 
+RNasin (0.04 U/ml)] overnight at 4°C. After thorough washing, bio-
+tin elution buffer (Thermo Fisher Scientific, 20164) was added, and 
+the mixture was incubated at 37°C for 15 to 30 min to recover the 
+RNA-­binding protein. The RNA-­protein complexes were dissolved in 
+5× SDS loading buffer, separated via 10% SDS–polyacrylamide gel 
+electrophoresis, and stained with Coomassie brilliant blue R250 stain-
+ing solution. For MS analysis, proteins in gel slices (1 cm by 1 cm) 
+were digested with trypsin. The resulting peptides were analyzed via 
+a rapid separation liquid chromatography (RSLC) nano-­LC system 
+(Thermo Fisher Scientific, ULTIM3000RSLCNANO) coupled online 
+to an Orbitrap Fusion mass spectrometer (Beijing Genomics Insti-
+tute) for nLC-­MS/MS analyses. All raw MS data were searched using 
+MaxQuant on the mouse proteome, and peptides or proteins were 
+filtered to a 1% false discovery rate in MaxQuant.
+RNA immunoprecipitation
+Mouse brain tissues (20 mg) or cells (5 × 107) were lysed with 5 vol-
+umes of nondenaturing lysis buffer [50 mM tris-­HCl (pH 7.4), 250 mM 
+NaCl, 0.5% Triton X-­100, 1 mM DTT, 2 mM EDTA, 1 mM NaF, 1× 
+protease inhibitor cocktail, and RNasin (0.04 U/ml)]. The anti-­
+YTHDF2 antibody (MEDICAL & BIOLOGICAL LABORATORIES, 
+RN123PW) and a corresponding rabbit IgG control (Cell Signaling 
+Technology, 2729S) were added to the precleared lysate, followed by 
+incubation at 4°C for 5 hours. BSA-­blocked beads were then added 
+to the mixture and incubated overnight at 4°C. After washing with 
+low-­salt buffer [50 mM tris-­HCl (pH 7.4), 250 mM NaCl, 1 mM DTT, 
+1 mM NaF, 1× protease inhibitor cocktail, and RNasin (0.04 U/ml)] 
+three times, the beads were resuspended in 2× proteinase K buffer 
+[100 mM tris-­HCl (pH 7.4), 150 mM NaCl, 12.5 mM EDTA, and 2% 
+SDS], followed by digestion with proteinase K (1.2 mg/ml) at 55°C 
+for 30 min. The input and IP RNAs were recovered via TRIzol ex-
+traction and analyzed via qPCR.
+RNA stability assay
+mtRNA stability assay was conducted as previously described (78). 
+Briefly, cells were treated with ethidium bromide (EtBr) (500 ng/ml), 
+which binds to and inhibits mitochondrial DNA transcription. The 
+cells were collected at the four designated time points (0, 1, 2, and 
+3 hours), followed by cytosolic RNA extraction and RT-­qPCR analy-
+sis as previously described. The primer sequences are provided in 
+data S6. Consistent with previous studies (79), the following equa-
+tion was used to determine the RNA half-­life (t1/2)
+In vitro transcription
+In vitro RNA was synthesized via the HiScribe T7 High Yield RNA 
+Synthesis Kit (NEB, E2040S) following the manufacturer’s instruc-
+tions. The plasmid template (pGEM-­T–mt-­Nd4) was synthesized by 
+Tsingke Beijing and linearized with Bst XI (NEB, R0113V) at 37°C 
+for 2 hours. A total of 1 μg of linearized template DNA was incu-
+bated with 20 μl of reaction mixture (100 mM nucleoside triphos-
+phates, 0.1 M DTT, and 5 mM T7 RNA Polymerase Mix) at 37°C for 
+2 hours. RNA with varying m6A contents was produced by adjusting 
+the ratio of ATP to N6-­methyl ATP (Trilink, N-­1013-­5). To remove 
+template DNA, 2 μl of DNase I (2000 units/ml) was added. The size 
+and concentration of the synthesized RNA were analyzed via agarose 
+gel electrophoresis and a NanoPhotometer assay, respectively.
+Subcellular fractionation analysis
+Mitochondria and cytoplasm were isolated via a Qproteome Mito-
+chondria Isolation Kit (QIAGEN, 37612) following the manufac-
+turer’s instructions. Washed cells (1 × 107) or homogenized mouse 
+brain tissues (20 mg) were suspended in lysis buffer, which selectively 
+disrupts the cell membrane without solubilizing it. After centrifuga-
+tion, the supernatant containing the cytoplasm and the precipitate 
+containing the compartmentalized organelles were separated. The re-
+sulting pellet was resuspended in disruption buffer, passed repeat-
+edly through a narrow-­gauge needle, and recentrifuged to pellet 
+the nuclei, cell debris, and unbroken cells. The resulting superna-
+tant was subsequently recentrifuged to pellet the mitochondria. 
+Following removal of the supernatant, the mitochondria were washed 
+and resuspended in mitochondria storage buffer. The efficiency of 
+mitochondrial isolation was verified by Western blot analysis, 
+with glyceraldehyde-­3-­phosphate dehydrogenase (GAPDH) used as a 
+cytoplasmic marker and TOMM20 used as a mitochondrial marker.
+Protein extraction and Western blotting analysis
+The cells were washed with PBS and lysed in ice-­cold lysis buffer, and 
+the protein concentration was quantified via a BCA protein assay kit 
+(GenStar, E162-­05). Equal amounts of protein from each sample were 
+resolved on tris-­glycine gels and transferred onto a 0.45-­μm polyvi-
+nylidene difluoride membrane (Millipore, IPVH00010). The mem-
+branes were blocked with TBST blocking buffer (5% milk powder 
+and 0.05% Tween 20) and then incubated with primary antibodies 
+overnight at 4°C. After being washed with 1× TBST, the membranes 
+t1∕2 = ln(2∕kdecay
+)
+Downloaded from https://www.science.org at Qingdao University of Science & Technology on July 20, 2026
+
+Pan et al., Sci. Adv. 12, eadz0887 (2026)     19 June 2026
+S c i e n c e  A d va n c e s  | R e s e a r c h  A r t i c l e
+17 of 19
+were incubated with a peroxidase-­conjugated secondary antibody at 
+RT for 1 hour. Subsequently, the membranes were incubated with 
+Clarity ECL Western blot Substrate (Bio-­Rad, 170–5060) according 
+to the manufacturer’s instructions.
+m6A-­seq and analysis
+For m6A-­seq, total RNA extracted from the cerebral cortices of pa-
+tients with AD and mice was fragmented to 100 to 150 nt using RNA 
+fragmentation reagents (Thermo Fisher Scientific, AM8740) at 70°C 
+for 10 to 15 min. Following RNA fragmentation, 5 μg of fragmented 
+RNA was incubated with 5 μl of anti-­m6A antibody (Synaptic Sys-
+tems, 202003) at 4°C for 4 hours. Precleared Dynabeads Protein A 
+(Thermo Fisher Scientific, 10002D) were added to the complex mix-
+ture and incubated overnight at 4°C. m6A nucleotides were used to 
+competitively elute targeted RNA, followed by RNA recovery via the 
+RNeasy MinElute Cleanup Kit (QIAGEN, 74204). cDNA libraries 
+were constructed from immunoprecipitated RNAs and input RNAs via 
+the SMARTer Stranded Total RNA-­seq Kit v2-­Pico (Takara, 634413) and 
+subsequently subjected to next-­generation sequencing on an Illumina 
+NovaSeq 6000 platform with a pair-­end 150–base pair read length.
+The identification of m6A peaks in all the samples followed previous 
+methods (80). Briefly, the raw sequencing reads from both the m6A-­IP 
+and input libraries were trimmed for adapters and low-­quality bases 
+with Trimmomatic (v.0.36). The clean reads were subsequently map­
+ped back to the human (hg38) or mouse (mm10) genome with hisat2 
+(v.2.1.0) (81). Only uniquely mapped reads and those with a map-
+ping quality greater than 20 were subjected to m6A peak scanning. 
+The ExomePeak R package (82) was used to call m6A peaks across 
+transcriptomes by comparing two Poisson distributions between the 
+m6A-­IP and input libraries. The differentially methylated peaks be-
+tween different groups were also identified via ExomePeak. The en-
+richment of m6A was denoted as the enrichment score, which was 
+calculated as IP_fpkm divided by Input_fpkm in a specific region 
+(IP/Input_fpkm: fragments per kilobase of transcript per million map­
+ped reads in the IP/Input library). Gene Ontology (GO) functional en­
+richment analysis was performed with the clusterProfiler R package.
+RNA-­seq analysis
+We obtained the processed MeRIP-­seq peak bigWig files from the 
+Gene Expression Omnibus database (accession no. GSE266459) and 
+visualized the m6A peaks on mitochondrial mRNAs using Integra-
+tive Genomics Viewer (IGV). In the original study, m6A peaks were 
+identified using MACS3 (v3.0.0a6) with the parameters -­-­nomodel 
+-­-­extsize 100. Peaks with q ≤ 1 × 10−5 and fold change ≥ 5 were re-
+tained as high-­confidence sites, and only those detected in at least 
+three replicates were considered reproducible. The comparison of 
+YTHDF2 expression between AD and control samples across multi­
+ple brain regions was implemented on data obtained from the com-
+prehensive database AlzData (www.alzdata.org).
+Statistical analysis
+The data are presented as the means ± SEMs. The number of ex-
+perimental repeats and the sample sizes are detailed in the figure 
+legends. Statistical analyses were conducted via GraphPad Prism 9. 
+Comparisons were performed via two-­tailed t tests, one-­way analy-
+sis of variance (ANOVA), or two-­way ANOVA, as specified in the 
+figure legends. A P value of less than 0.05 was considered statisti-
+cally significant.
+Supplementary Materials
+The PDF file includes:
+Figs. S1 to S8
+Legends for data S1 to S6
+Other Supplementary Material for this manuscript includes the following:
+Data S1 to S6
+REFERENCES
+	 1.	 P. Scheltens, B. De Strooper, M. Kivipelto, H. Holstege, G. Chételat, C. E. Teunissen,  
+J. Cummings, W. M. van der Flier, Alzheimer’s disease. Lancet 397, 1577–1590 (2021).
+	 2.	 J. Gallego-­Rudolf, A. I. Wiesman, A. P. Binette, S. Villeneuve, S. Baillet, PREVENT-­AD 
+Research Group, Synergistic association of Aβ and tau pathology with cortical 
+neurophysiology and cognitive decline in asymptomatic older adults. Nat. Neurosci. 27, 
+2130–2137 (2024).
+	 3.	 M. Jucker, L. C. Walker, Alzheimer’s disease: From immunotherapy to immunoprevention. 
+Cell 186, 4260–4270 (2023).
+	 4.	 Y. Lian, Y.-­J. Jia, J. Wong, X.-­F. Zhou, W. Song, J. Guo, C. L. Masters, Y.-­J. Wang, Clarity on the 
+blazing trail: Clearing the way for amyloid-­removing therapies for Alzheimer’s disease. 
+Mol. Psychiatry 29, 297–305 (2024).
+	 5.	 J. A. Pradeepkiran, P. H. Reddy, Defective mitophagy in Alzheimer’s disease. Ageing Res. Rev. 
+64, 101191 (2020).
+	 6.	 A. Mary, F. Eysert, F. Checler, M. Chami, Mitophagy in Alzheimer’s disease: Molecular 
+defects and therapeutic approaches. Mol. Psychiatry 28, 202–216 (2023).
+	 7.	 J. I. Jiménez-­Loygorri, B. Villarejo-­Zori, Á. Viedma-­Poyatos, J. Zapata-­Muñoz,  
+R. Benítez-­Fernández, M. D. Frutos-­Lisón, F. A. Tomás-­Barberán, J. C. Espín, E. Area-­Gómez, 
+A. Gomez-­Duran, P. Boya, Mitophagy curtails cytosolic mtDNA-­dependent activation of 
+cGAS/STING inflammation during aging. Nat. Commun. 15, 830 (2024).
+	 8.	 Y. Jiang, S. Krantz, X. Qin, S. Li, H. Gunasekara, Y.-­M. Kim, A. Zimnicka, M. Bae, K. Ma,  
+P. T. Toth, Y. Hu, A. N. Shajahan-­Haq, H. H. Patel, S. Gentile, M. G. Bonini, J. Rehman, Y. Liu,  
+R. D. Minshall, Caveolin-­1 controls mitochondrial damage and ROS production by 
+regulating fission -­ fusion dynamics and mitophagy. Redox Biol. 52, 102304 (2022).
+	 9.	 E. R. Roy, G. Chiu, S. Li, N. E. Propson, R. Kanchi, B. Wang, C. Coarfa, H. Zheng, W. Cao, 
+Concerted type I interferon signaling in microglia and neural cells promotes memory 
+impairment associated with amyloid β plaques. Immunity 55, 879–894.e6 (2022).
+	10.	 Y. Li, J. Cui, L. Liu, W. S. Hambright, Y. Gan, Y. Zhang, S. Ren, X. Yue, L. Shao, Y. Cui, J. Huard, 
+Y. Mu, Q. Yao, X. Mu, mtDNA release promotes cGAS-­STING activation and accelerated 
+aging of postmitotic muscle cells. Cell Death Dis. 15, 523 (2024).
+	11.	 S. Quan, X. Fu, H. Cai, Z. Ren, Y. Xu, L. Jia, The neuroimmune nexus: Unraveling the role of 
+the mtDNA-­cGAS-­STING signal pathway in Alzheimer’s disease. Mol. Neurodegener. 20, 25 
+(2025).
+	12.	 A. Dhir, S. Dhir, L. S. Borowski, L. Jimenez, M. Teitell, A. Rötig, Y. J. Crow, G. I. Rice, D. Duffy, 
+C. Tamby, T. Nojima, A. Munnich, M. Schiff, C. R. de Almeida, J. Rehwinkel, A. Dziembowski, 
+R. J. Szczesny, N. J. Proudfoot, Mitochondrial double-­stranded RNA triggers antiviral 
+signalling in humans. Nature 560, 238–242 (2018).
+	13.	 A. Hooftman, C. G. Peace, D. G. Ryan, E. A. Day, M. Yang, A. F. McGettrick, M. Yin,  
+E. N. Montano, L. Huo, J. E. Toller-­Kawahisa, V. Zecchini, T. A. J. Ryan, A. Bolado-­Carrancio, 
+A. M. Casey, H. A. Prag, A. S. H. Costa, G. De Los Santos, M. Ishimori, D. J. Wallace,  
+S. Venuturupalli, E. Nikitopoulou, N. Frizzell, C. Johansson, A. Von Kriegsheim,  
+M. P. Murphy, C. Jefferies, C. Frezza, L. A. J. O’Neill, Macrophage fumarate hydratase 
+restrains mtRNA-­mediated interferon production. Nature 615, 490–498 (2023).
+	14.	 J. Yoon, S. Kim, M. Lee, Y. Kim, Mitochondrial nucleic acids in innate immunity and 
+beyond. Exp. Mol. Med. 55, 2508–2518 (2023).
+	15.	 T. Doke, S. Mukherjee, D. Mukhi, P. Dhillon, A. Abedini, J. G. Davis, K. Chellappa, B. Chen,  
+J. A. Baur, K. Susztak, NAD+ precursor supplementation prevents mtRNA/RIG-­I-­
+dependent inflammation during kidney injury. Nat. Metab. 5, 414–430 (2023).
+	16.	 B. Maloney, D. K. Lahiri, Epigenetics of dementia: Understanding the disease as a 
+transformation rather than a state. Lancet Neurol. 15, 760–774 (2016).
+	17.	 H. Xu, Y. Dzhashiashvili, A. Shah, R. B. Kunjamma, Y.-­L. Weng, B. Elbaz, Q. Fei, J. S. Jones,  
+Y. I. Li, X. Zhuang, G.-­L. Ming, C. He, B. Popko, m6A mRNA methylation is essential for 
+oligodendrocyte maturation and CNS myelination. Neuron 105, 293–309.e5 (2020).
+	18.	 K.-­J. Yoon, F. R. Ringeling, C. Vissers, F. Jacob, M. Pokrass, D. Jimenez-­Cyrus, Y. Su, N.-­S. Kim, 
+Y. Zhu, L. Zheng, S. Kim, X. Wang, L. C. Doré, P. Jin, S. Regot, X. Zhuang, S. Canzar, C. He, 
+G.-­L. Ming, H. Song, Temporal control of mammalian cortical neurogenesis by m6A 
+methylation. Cell 171, 877–889.e17 (2017).
+	19.	 Y. Wang, Y. Li, M. Yue, J. Wang, S. Kumar, R. J. Wechsler-­Reya, Z. Zhang, Y. Ogawa, M. Kellis, 
+G. Duester, J. C. Zhao, N6-­methyladenosine RNA modification regulates embryonic neural 
+stem cell self-­renewal through histone modifications. Nat. Neurosci. 21, 195–206 (2018).
+	20.	 J. Widagdo, Q.-­Y. Zhao, M.-­J. Kempen, M. C. Tan, V. S. Ratnu, W. Wei, L. Leighton,  
+P. A. Spadaro, J. Edson, V. Anggono, T. W. Bredy, Experience-­dependent accumulation of 
+Downloaded from https://www.science.org at Qingdao University of Science & Technology on July 20, 2026
+
+Pan et al., Sci. Adv. 12, eadz0887 (2026)     19 June 2026
+S c i e n c e  A d va n c e s  | R e s e a r c h  A r t i c l e
+18 of 19
+N6-­methyladenosine in the prefrontal cortex is associated with memory processes in 
+mice. J. Neurosci. 36, 6771–6777 (2016).
+	21.	 J. L. Koranda, L. Dore, H. Shi, M. J. Patel, L. O. Vaasjo, M. N. Rao, K. Chen, Z. Lu, Y. Yi, W. Chi, 
+C. He, X. Zhuang, Mettl14 is essential for epitranscriptomic regulation of striatal function 
+and learning. Neuron 99, 283–292.e5 (2018).
+	22.	 H. Shi, X. Zhang, Y.-­L. Weng, Z. Lu, Y. Liu, Z. Lu, J. Li, P. Hao, Y. Zhang, F. Zhang, Y. Wu,  
+J. Y. Delgado, Y. Su, M. J. Patel, X. Cao, B. Shen, X. Huang, G.-­L. Ming, X. Zhuang, H. Song,  
+C. He, T. Zhou, m6A facilitates hippocampus-­dependent learning and memory through 
+YTHDF1. Nature 563, 249–253 (2018).
+	23.	 M. Zhuang, X. Geng, P. Han, P. Che, F. Liang, C. Liu, L. Yang, J. Yu, Z. Zhang, W. Dong, S.-­J. Ji, 
+YTHDF2 in dentate gyrus is the m6A reader mediating m6A modification in 
+hippocampus-­dependent learning and memory. Mol. Psychiatry 28, 1679–1691 (2023).
+	24.	 X. Jiang, B. Liu, Z. Nie, L. Duan, Q. Xiong, Z. Jin, C. Yang, Y. Chen, The role of m6A 
+modification in the biological functions and diseases. Signal Transduct. Target. Ther. 6, 74 
+(2021).
+	25.	 W. Pan, Y. Chen, Y. Xu, W.-­M. Tong, Y. Niu, RNA m6A methylation and Alzheimer’s disease: 
+Current evidence and future perspectives. Human Brain 3, e1796 (2024).
+	26.	 A. M. Shafik, F. Zhang, Z. Guo, Q. Dai, K. Pajdzik, Y. Li, Y. Kang, B. Yao, H. Wu, C. He,  
+E. G. Allen, R. Duan, P. Jin, N6-­methyladenosine dynamics in neurodevelopment and 
+aging, and its potential role in Alzheimer’s disease. Genome Biol. 22, 17 (2021).
+	27.	 R. Castro-­Hernández, T. Berulava, M. Metelova, R. Epple, T. Peña Centeno, J. Richter,  
+L. Kaurani, R. Pradhan, M. S. Sakib, S. Burkhardt, M. Ninov, K. E. Bohnsack, M. T. Bohnsack, 
+I. Delalle, A. Fischer, Conserved reduction of m6A RNA modifications during aging and 
+neurodegeneration is linked to changes in synaptic transcripts. Proc. Natl. Acad. Sci. U.S.A. 
+120, e2204933120 (2023).
+	28.	 Q. Li, S. Wen, W. Ye, S. Zhao, X. Liu, The potential roles of m6A modification in regulating 
+the inflammatory response in microglia. J. Neuroinflammation 18, 149 (2021).
+	29.	 H. Yin, Z. Ju, M. Zheng, X. Zhang, W. Zuo, Y. Wang, X. Ding, X. Zhang, Y. Peng, J. Li, A. Yang, 
+R. Zhang, Loss of the m6A methyltransferase METTL3 in monocyte-­derived macrophages 
+ameliorates Alzheimer’s disease pathology in mice. PLoS Biol. 21, e3002017 (2023).
+	30.	 D. Merkurjev, W.-­T. Hong, K. Iida, I. Oomoto, B. J. Goldie, H. Yamaguti, T. Ohara,  
+S.-­Y. Kawaguchi, T. Hirano, K. C. Martin, M. Pellegrini, D. O. Wang, Synaptic N6-­
+methyladenosine (m6A) epitranscriptome reveals functional partitioning of localized 
+transcripts. Nat. Neurosci. 21, 1004–1014 (2018).
+	31.	 M. N. Flamand, K. D. Meyer, m6A and YTHDF proteins contribute to the localization of 
+select neuronal mRNAs. Nucleic Acids Res. 50, 4464–4483 (2022).
+	32.	 F. Zhao, Y. Xu, S. Gao, L. Qin, Q. Austria, S. L. Siedlak, K. Pajdzik, Q. Dai, C. He, W. Wang,  
+J. M. O’Donnell, B. Tang, X. Zhu, METTL3-­dependent RNA m6A dysregulation contributes 
+to neurodegeneration in Alzheimer’s disease through aberrant cell cycle events. Mol. 
+Neurodegener. 16, 70 (2021).
+	33.	 X. Wang, Z. Lu, A. Gomez, G. C. Hon, Y. Yue, D. Han, Y. Fu, M. Parisien, Q. Dai, G. Jia, B. Ren,  
+T. Pan, C. He, N6-­methyladenosine-­dependent regulation of messenger RNA stability. 
+Nature 505, 117–120 (2014).
+	34.	 H. Du, Y. Zhao, J. He, Y. Zhang, H. Xi, M. Liu, J. Ma, L. Wu, YTHDF2 destabilizes m6A-­
+containing RNA through direct recruitment of the CCR4-­NOT deadenylase complex. Nat. 
+Commun. 7, 12626 (2016).
+	35.	 M. Lu, Z. Zhang, M. Xue, B. S. Zhao, O. Harder, A. Li, X. Liang, T. Z. Gao, Y. Xu, J. Zhou,  
+Z. Feng, S. Niewiesk, M. E. Peeples, C. He, J. Li, N6-­methyladenosine modification enables 
+viral RNA to escape recognition by RNA sensor RIG-­I. Nat. Microbiol. 5, 584–598 (2020).
+	36.	 A. F. Durbin, C. Wang, J. Marcotrigiano, L. Gehrke, RNAs containing modified nucleotides 
+fail to trigger RIG-­I conformational changes for innate immune signaling. MBio 7, 
+e00833-­16 (2016).
+	37.	 G.-­W. Kim, H. Imam, M. Khan, A. Siddiqui, N6-­Methyladenosine modification of hepatitis B 
+and C viral RNAs attenuates host innate immunity via RIG-­I signaling. J. Biol. Chem. 295, 
+13123–13133 (2020).
+	38.	 Y. G. Chen, R. Chen, S. Ahmad, R. Verma, S. P. Kasturi, L. Amaya, J. P. Broughton, J. Kim,  
+C. Cadena, B. Pulendran, S. Hur, H. Y. Chang, N6-­Methyladenosine modification controls 
+circular RNA immunity. Mol. Cell 76, 96–109.e9 (2019).
+	39.	 B. Hu, Y. Shi, F. Xiong, Y.-­T. Chen, X. Zhu, E. Carrillo, X. Wen, N. Drolet, C. S. Rajpurohit, X. Xu, 
+D.-­F. Lee, C. Soto, S. Zhong, V. Jayaraman, H. Zheng, W. Li, Rewired m6A of promoter 
+antisense RNAs in Alzheimer’s disease regulates neuronal genes in 3D nucleome. Nat. 
+Commun. 16, 5251 (2025).
+	40.	 Y. Zhou, P. Zeng, Y.-­H. Li, Z. Zhang, Q. Cui, SRAMP: Prediction of mammalian N6-­
+methyladenosine (m6A) sites based on sequence-­derived features. Nucleic Acids Res. 44, 
+e91 (2016).
+	41.	 Y. Xiao, Y. Wang, Q. Tang, L. Wei, X. Zhang, G. Jia, An elongation-­ and ligation-­based qPCR 
+amplification method for the radiolabeling-­free detection of locus-­specific N6-­
+methyladenosine modification. Angew. Chem. Int. Ed. Engl. 57, 15995–16000 (2018).
+	42.	 M. Garcia-­Alloza, E. M. Robbins, S. X. Zhang-­Nunes, S. M. Purcell, R. A. Betensky, S. Raju,  
+C. Prada, S. M. Greenberg, B. J. Bacskai, M. P. Frosch, Characterization of amyloid 
+deposition in the APPswe/PS1dE9 mouse model of Alzheimer disease. Neurobiol. Dis. 24, 
+516–524 (2006).
+	43.	 E. F. Fang, Y. Hou, K. Palikaras, B. A. Adriaanse, J. S. Kerr, B. Yang, S. Lautrup,  
+M. M. Hasan-­Olive, D. Caponio, X. Dan, P. Rocktäschel, D. L. Croteau, M. Akbari, N. H. Greig, 
+T. Fladby, H. Nilsen, M. Z. Cader, M. P. Mattson, N. Tavernarakis, V. A. Bohr, Mitophagy 
+inhibits amyloid-­β and tau pathology and reverses cognitive deficits in models of 
+Alzheimer’s disease. Nat. Neurosci. 22, 401–412 (2019).
+	44.	 J. Willemsen, M.-­T. Neuhoff, T. Hoyler, E. Noir, C. Tessier, S. Sarret, T. N. Thorsen,  
+A. Littlewood-­Evans, J. Zhang, M. Hasan, J. S. Rush, D. Guerini, R. M. Siegel, TNF leads to 
+mtDNA release and cGAS/STING-­dependent interferon responses that support 
+inflammatory arthritis. Cell Rep. 37, 109977 (2021).
+	45.	 D. P. Patil, C.-­K. Chen, B. F. Pickering, A. Chow, C. Jackson, M. Guttman, S. R. Jaffrey, m6A 
+RNA methylation promotes XIST-­mediated transcriptional repression. Nature 537, 
+369–373 (2016).
+	46.	 X. Li, X. Xiong, M. Zhang, K. Wang, Y. Chen, J. Zhou, Y. Mao, J. Lv, D. Yi, X.-­W. Chen, C. Wang, 
+S.-­B. Qian, C. Yi, Base-­resolution mapping reveals distinct m1A methylome in nuclear-­ and 
+mitochondrial-­encoded transcripts. Mol. Cell 68, 993–1005.e9 (2017).
+	47.	 X. Gu, A. Zhuang, J. Yu, L. Yang, S. Ge, J. Ruan, R. Jia, X. Fan, P. Chai, Histone lactylation-­
+boosted ALKBH3 potentiates tumor progression and diminished promyelocytic leukemia 
+protein nuclear condensates by m1A demethylation of SP100A. Nucleic Acids Res. 52, 
+2273–2289 (2024).
+	48.	 M. Safra, A. Sas-­Chen, R. Nir, R. Winkler, A. Nachshon, D. Bar-­Yaacov, M. Erlacher,  
+W. Rossmanith, N. Stern-­Ginossar, S. Schwartz, The m1A landscape on cytosolic and 
+mitochondrial mRNA at single-­base resolution. Nature 551, 251–255 (2017).
+	49.	 R. Winkler, E. Gillis, L. Lasman, M. Safra, S. Geula, C. Soyris, A. Nachshon, J. Tai-­Schmiedel, 
+N. Friedman, V. T. K. Le-­Trilling, M. Trilling, M. Mandelboim, J. H. Hanna, S. Schwartz,  
+N. Stern-­Ginossar, m6A modification controls the innate immune response to infection by 
+targeting type I interferons. Nat. Immunol. 20, 173–182 (2019).
+	50.	 N. Li, H. Hui, B. Bray, G. M. Gonzalez, M. Zeller, K. G. Anderson, R. Knight, D. Smith, Y. Wang, 
+A. F. Carlin, T. M. Rana, METTL3 regulates viral m6A RNA modification and host cell innate 
+immune responses during SARS-­CoV-­2 infection. Cell Rep. 35, 109091 (2021).
+	51.	 M. Olejniczak, P. Galka, W. J. Krzyzosiak, Sequence-­non-­specific effects of RNA 
+interference triggers and microRNA regulators. Nucleic Acids Res. 38, 1–16 (2010).
+	52.	 M. Xu, D.-­F. Zhang, R. Luo, Y. Wu, H. Zhou, L.-­L. Kong, R. Bi, Y.-­G. Yao, A systematic 
+integrated analysis of brain expression profiles reveals YAP1 and other prioritized hub 
+genes as important upstream regulators in Alzheimer’s disease. Alzheimers Dement. 14, 
+215–229 (2018).
+	53.	 C. C. Escoubas, L. C. Dorman, P. T. Nguyen, C. Lagares-­Linares, H. Nakajo, S. R. Anderson,  
+J. J. Barron, S. D. Wade, B. Cuevas, I. D. Vainchtein, N. J. Silva, R. Guajardo, Y. Xiao,  
+P. V. Lidsky, E. Y. Wang, B. M. Rivera, S. E. Taloma, D. K. Kim, E. Kaminskaya, H. Nakao-­Inoue, 
+B. Schwer, T. D. Arnold, A. B. Molofsky, C. Condello, R. Andino, T. J. Nowakowski,  
+A. V. Molofsky, Type-­I-­interferon-­responsive microglia shape cortical development and 
+behavior. Cell 187, 1936–1954.e24 (2024).
+	54.	 K. Borst, A. A. Dumas, M. Prinz, Microglia: Immune and non-­immune functions. Immunity 
+54, 2194–2208 (2021).
+	55.	 Z. Hao, T. Wu, X. Cui, P. Zhu, C. Tan, X. Dou, K.-­W. Hsu, Y.-­T. Lin, P.-­H. Peng, L.-­S. Zhang,  
+Y. Gao, L. Hu, H.-­L. Sun, A. Zhu, J. Liu, K.-­J. Wu, C. He, N6-­Deoxyadenosine methylation in 
+mammalian mitochondrial DNA. Mol. Cell 78, 382–395.e8 (2020).
+	56.	 L.-­S. Zhang, Q.-­P. Xiong, S. Peña Perez, C. Liu, J. Wei, C. Le, L. Zhang, B. T. Harada, Q. Dai,  
+X. Feng, Z. Hao, Y. Wang, X. Dong, L. Hu, E.-­D. Wang, T. Pan, A. Klungland, R.-­J. Liu, C. He, 
+ALKBH7-­mediated demethylation regulates mitochondrial polycistronic RNA processing. 
+Nat. Cell Biol. 23, 684–691 (2021).
+	57.	 H. Li, K. Yu, H. Hu, X. Zhang, S. Zeng, J. Li, X. Dong, X. Deng, J. Zhang, Y. Zhang, METTL17 
+coordinates ferroptosis and tumorigenesis by regulating mitochondrial translation in 
+colorectal cancer. Redox Biol. 71, 103087 (2024).
+	58.	 J. L. Libera, J. Hu, T.-­A. Nguyen, Z. Wang, S. J. F. van der Spek, K. Schult, L. Dorrian, J. Majka, 
+K. Tobunluepop, S. Puri, A. Kynshov, N. M. Kanaan, P. T. Nelson, K. Meyer, L. Hou, X. Zhang, 
+B. Wolozin, Loss of age-­associated increase in m6A-­modified RNA contributes to 
+GABAergic dysregulation in Alzheimer’s disease. bioRxiv 651974 [Preprint] (2025). https://
+doi.org/10.1101/2025.05.02.651974.
+	59.	 S. Tasaki, D. R. Avey, N. A. Kearns, A. Iatrou, C. Yu, S. De Tissera, H. Vyas, J. Xu, D. J. Flood,  
+K. Rothamel, A. P. Wingo, T. S. Wingo, N. T. Seyfried, P. L. De Jager, G. Yeo, C. Gaiteri,  
+D. A. Bennett, Y. Wang, The YTHDF proteins shape the brain gene signatures of 
+Alzheimer’s disease. bioRxiv 619425 [Preprint] (2024). https://doi.org/10.1101/ 
+2024.10.23.619425.
+	60.	 S. Zaccara, S. R. Jaffrey, A unified model for the function of YTHDF proteins in regulating 
+m6A-­modified mRNA. Cell 181, 1582–1595.e18 (2020).
+	61.	 Z. Zou, C. Sepich-­Poore, X. Zhou, J. Wei, C. He, The mechanism underlying redundant 
+functions of the YTHDF proteins. Genome Biol. 24, 17 (2023).
+	62.	 Q. Li, J. Liu, L. Guo, Y. Zhang, Y. Chen, H. Liu, H. Cheng, L. Deng, J. Qiu, K. Zhang,  
+W. S. S. Goh, Y. Wang, Q. Peng, Decoding the interplay between m6A modification and 
+stress granule stability by live-­cell imaging. Sci. Adv 10, eadp5689 (2024).
+	63.	 Y. Fu, X. Zhuang, m6A-­binding YTHDF proteins promote stress granule formation.  
+Nat. Chem. Biol. 16, 955–963 (2020).
+Downloaded from https://www.science.org at Qingdao University of Science & Technology on July 20, 2026
+
+Pan et al., Sci. Adv. 12, eadz0887 (2026)     19 June 2026
+S c i e n c e  A d va n c e s  | R e s e a r c h  A r t i c l e
+19 of 19
+	64.	 R. J. Ries, S. Zaccara, P. Klein, A. Olarerin-­George, S. Namkoong, B. F. Pickering, D. P. Patil,  
+H. Kwak, J. H. Lee, S. R. Jaffrey, m6A enhances the phase separation potential of mRNA. 
+Nature 571, 424–428 (2019).
+	65.	 M. A. Kiebler, K. E. Bauer, RNA granules in flux: Dynamics to balance physiology and 
+pathology. Nat. Rev. Neurosci. 25, 711–725 (2024).
+	66.	 C.-­H. Yu, S. Davidson, C. R. Harapas, J. B. Hilton, M. J. Mlodzianoski, P. Laohamonthonkul, 
+C. Louis, R. R. J. Low, J. Moecking, D. De Nardo, K. R. Balka, D. J. Calleja, F. Moghaddas, E. Ni, 
+C. A. McLean, A. L. Samson, S. Tyebji, C. J. Tonkin, C. R. Bye, B. J. Turner, G. Pepin,  
+M. P. Gantier, K. L. Rogers, K. McArthur, P. J. Crouch, S. L. Masters, TDP-­43 triggers mitochondrial 
+DNA release via mPTP to activate cGAS/STING in ALS. Cell 183, 636–649.e18 (2020).
+	67.	 A. Jauhari, S. V. Baranov, Y. Suofu, J. Kim, T. Singh, S. Yablonska, F. Li, X. Wang, P. Oberly,  
+M. B. Minnigh, S. M. Poloyac, D. L. Carlisle, R. M. Friedlander, Melatonin inhibits cytosolic 
+mitochondrial DNA-­induced neuroinflammatory signaling in accelerated aging and 
+neurodegeneration. J. Clin. Invest. 130, 3124–3136 (2020).
+	68.	 H. Matsui, J. Ito, N. Matsui, T. Uechi, O. Onodera, A. Kakita, Cytosolic dsDNA of 
+mitochondrial origin induces cytotoxicity and neurodegeneration in cellular and 
+zebrafish models of Parkinson’s disease. Nat. Commun. 12, 3101 (2021).
+	69.	 D. A. Sliter, J. Martinez, L. Hao, X. Chen, N. Sun, T. D. Fischer, J. L. Burman, Y. Li, Z. Zhang,  
+D. P. Narendra, H. Cai, M. Borsche, C. Klein, R. J. Youle, Parkin and PINK1 mitigate 
+STING-­induced inflammation. Nature 561, 258–262 (2018).
+	70.	 C. Marques, A. Held, K. Dorfman, J. Sung, C. Song, A. S. Kavuturu, C. Aguilar, T. Russo,  
+D. H. Oakley, M. W. Albers, B. T. Hyman, L. Petrucelli, C. Lagier-­Tourenne, B. J. Wainger, 
+Neuronal STING activation in amyotrophic lateral sclerosis and frontotemporal dementia. 
+Acta Neuropathol. 147, 56 (2024).
+	71.	 X. Xie, G. Ma, X. Li, J. Zhao, Z. Zhao, J. Zeng, Activation of innate immune cGAS-­STING 
+pathway contributes to Alzheimer’s pathogenesis in 5×FAD mice. Nat. Aging 3, 202–212 
+(2023).
+	72.	 W. Qiu, H. Zhang, A. Bao, K. Zhu, Y. Huang, X. Yan, J. Zhang, C. Zhong, Y. Shen, J. Zhou,  
+X. Zheng, L. Zhang, Y. Shu, B. Tang, Z. Zhang, G. Wang, R. Zhou, B. Sun, C. Gong, S. Duan,  
+C. Ma, Standardized operational protocol for human brain banking in China. Neurosci. Bull. 
+35, 270–276 (2019).
+	73.	 M. Li, X. Zhao, W. Wang, H. Shi, Q. Pan, Z. Lu, S. P. Perez, R. Suganthan, C. He, M. Bjørås,  
+A. Klungland, Ythdf2-­mediated m6A mRNA clearance modulates neural development in 
+mice. Genome Biol. 19, 69 (2018).
+	74.	 T. Dong, Z.-­Q. Zhang, L.-­H. Sun, W. Zhang, Z. Zhu, L. Lin, L. Yang, A. Lv, C. Liu, Q. Li,  
+R.-­F. Yang, X. Zhang, Y. Niu, H.-­Z. Chen, D.-­P. Liu, W.-­M. Tong, Mic60 is essential to maintain 
+mitochondrial integrity and to prevent encephalomyopathy. Brain Pathol. 33, e13157 (2023).
+	75.	 L. Lin, J. Ding, S. Liu, C. Liu, Q. Li, X. Gao, Y. Niu, W.-­M. Tong, Protein phosphatase 2ACα 
+regulates ATR-­mediated endogenous DNA damage response against microcephaly.  
+Mol. Neurobiol. 62, 1266–1281 (2025).
+	76.	 Y. Luo, J. V. Smith, V. Paramasivam, A. Burdick, K. J. Curry, J. P. Buford, I. Khan, W. J. Netzer, 
+H. Xu, P. Butko, Inhibition of amyloid-­β aggregation and caspase-­3 activation by the 
+Ginkgo biloba extract EGb761. Proc. Natl. Acad. Sci. U.S.A. 99, 12197–12202 (2002).
+	77.	 G. Zheng, J. A. Dahl, Y. Niu, P. Fedorcsak, C.-­M. Huang, C. J. Li, C. B. Vågbø, Y. Shi,  
+W.-­L. Wang, S.-­H. Song, Z. Lu, R. P. G. Bosmans, Q. Dai, Y.-­J. Hao, X. Yang, W.-­M. Zhao,  
+W.-­M. Tong, X.-­J. Wang, F. Bogdan, K. Furu, Y. Fu, G. Jia, X. Zhao, J. Liu, H. E. Krokan,  
+A. Klungland, Y.-­G. Yang, C. He, ALKBH5 is a mammalian RNA demethylase that impacts 
+RNA metabolism and mouse fertility. Mol. Cell 49, 18–29 (2013).
+	78.	 Y. V. Surovtseva, T. E. Shutt, J. Cotney, H. Cimen, S. Y. Chen, E. C. Koc, G. S. Shadel, 
+Mitochondrial ribosomal protein L12 selectively associates with human mitochondrial 
+RNA polymerase to activate transcription. Proc. Natl. Acad. Sci. U.S.A. 108, 17921–17926 
+(2011).
+	79.	 Z.-­W. Zhang, X. Teng, F. Zhao, C. Ma, J. Zhang, L.-­F. Xiao, Y. Wang, M. Chang, Y. Tian, C. Li,  
+Z. Zhang, S. Song, W.-­M. Tong, P. Liu, Y. Niu, METTL3 regulates m6A methylation of PTCH1 
+and GLI2 in Sonic hedgehog signaling to promote tumor progression in SHH-­
+medulloblastoma. Cell Rep. 41, 111530 (2022).
+	80.	 C. Ma, M. Chang, H. Lv, Z.-­W. Zhang, W. Zhang, X. He, G. Wu, S. Zhao, Y. Zhang, D. Wang,  
+X. Teng, C. Liu, Q. Li, A. Klungland, Y. Niu, S. Song, W.-­M. Tong, RNA m6A methylation 
+participates in regulation of postnatal development of the mouse cerebellum. Genome 
+Biol. 19, 68 (2018).
+	81.	 A. M. Bolger, M. Lohse, B. Usadel, Trimmomatic: A flexible trimmer for Illumina sequence 
+data. Bioinformatics 30, 2114–2120 (2014).
+	82.	 J. Meng, X. Cui, M. K. Rao, Y. Chen, Y. Huang, Exome-­based analysis for RNA epigenome 
+sequencing data. Bioinformatics 29, 1565–1567 (2013).
+Acknowledgments: We thank the National Human Brain Bank for Development and Function 
+for providing the human postmortem brain tissues, as well as brain donors and families for 
+tissue samples used in this study. We thank A. Klungland for providing Ythdf2flox/flox mice. We 
+thank H. Xu for providing N2a/APP cells. We thank M. Jiang for providing the pcDNA3.1–mRIG-­I 
+plasmid. We thank D. Trono for providing the psPAX2 and pMD2.G plasmid. The graphic 
+diagrams in the figures were produced by BioRender. Funding: This work was supported by 
+the National Natural Science Foundation of China (32293213 to Q.X.), the Chinese 
+Academy of Medical Sciences Innovation Fund for Medical Sciences (2021-­I2M-­1-­020 to Y.N.), 
+the Brain Science and Brain-­like Intelligence Technology-­National Science and Technology 
+Major Project no. 2021ZD0201100 Task 1 (2021ZD0201101 to Y.N.), the Noncommunicable 
+Chronic Diseases-­National Science and Technology Major Project (2023ZD0507100 to  
+C.M.), and the Fundamental Research Funds for the Central Universities (3332024155 to W.P.). 
+Author contributions: Conceptualization: Q.X., W.-­M.T., and Y.N. Methodology: W.P., L.Y., 
+Y.Z., Y.C., Y.X., Y.L., H.L., and H.W. Software: L.Y. and Y.F. Validation: W.P., Y.C., Y.X., Y.L., and H.W. 
+Formal analysis: W.P. and L.Y. Investigation: W.P. and L.Y. Resources: C.M., C.L., Q.L., and H.W. 
+Data curation: L.Y., Y.F., and H.W. Writing—original draft: W.P., L.Y., and Y.N. Writing—review 
+and editing: W.P., L.Y., Y.Z., Y.C., Y.X., Y.L., Y.F., C.M., C.L., Q.L., H.W., Q.X., W.-­M.T., and Y.N. 
+Visualization: W.P. and L.Y. Supervision and project administration: H.W., W.-­M.T., and Y.N. 
+Funding acquisition: W.P., C.M., H.W., Q.X., and Y.N. Competing interests: The authors 
+declare that they have no competing interests. Data, code, and materials availability: All 
+data and code needed to evaluate and reproduce the results in the paper are present in 
+the paper and/or the Supplementary Materials. All the sequencing data involved in this study 
+are deposited on the Genome Sequence Archive (GSA) database under accession no. 
+PRJCA020074 (https://ngdc.cncb.ac.cn/bioproject/browse/PRJCA020074). Materials generated 
+by this study can be made available upon request via the corresponding authors.
+Submitted 17 May 2025 
+Accepted 8 May 2026 
+Published 19 June 2026 
+10.1126/sciadv.adz0887
+Downloaded from https://www.science.org at Qingdao University of Science & Technology on July 20, 2026
+
+Neuronal YTHDF2 suppresses innate immune activation in A# pathology by
+promoting m6A-dependent decay of cytosolic mitochondrial mRNAs
+Wenqi Pan, Lin Yang, Yao Zhang, Yan Chen, Yuesi Xu, Yifan Li, Yujie Fu, Chunhui Ma, Chunying Liu, Qing Li, Hailong Liu,
+Hailin Wang, Qi Xu, Wei-Min Tong, and Yamei Niu
+Sci. Adv. 12 (25), eadz0887.  DOI: 10.1126/sciadv.adz0887
+View the article online
+https://www.science.org/doi/10.1126/sciadv.adz0887
+Permissions
+https://www.science.org/help/reprints-and-permissions
+Use of this article is subject to the Terms of service
+Science Advances (ISSN 2375-2548) is published by the American Association for the Advancement of Science. 1200 New York Avenue
+NW, Washington, DC 20005. The title Science Advances is a registered trademark of AAAS. 
+Copyright © 2026 The Authors, some rights reserved; exclusive licensee American Association for the Advancement of Science. No claim
+to original U.S. Government Works. Distributed under a Creative Commons Attribution NonCommercial License 4.0 (CC BY-NC).
+Downloaded from https://www.science.org at Qingdao University of Science & Technology on July 20, 2026

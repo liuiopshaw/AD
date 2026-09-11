@@ -1,0 +1,1014 @@
+RESEARCH ARTICLE
+www.advmat.de
+A Nanozyme-Based Electrode for High-Performance Neural
+Recording
+Shuangjie Liu, Yang Wang, Yue Zhao, Ling Liu, Si Sun, Shaofang Zhang, Haile Liu,
+Shuhu Liu, Yonghui Li, Fan Yang, Menglu Jiao, Xinyu Sun, Yuqin Zhang, Renpeng Liu,
+Xiaoyu Mu, Hao Wang, Shu Zhang, Jiang Yang, Xi Xie, Xiaojie Duan, Jianning Zhang,
+Guosong Hong, Xiao-Dong Zhang,* and Dong Ming*
+Implanted neural electrodes have been widely used to treat brain diseases
+that require high sensitivity and biocompatibility at the tissue–electrode
+interface. However, currently used clinical electrodes cannot meet both these
+requirements simultaneously, which hinders the eﬀective recording of
+electronic signals. Herein, nanozyme-based neural electrodes incorporating
+bioinspired atomically precise clusters are developed as a general strategy
+with a heterogeneous design for multiscale and ultrasensitive neural
+recording via quantum transport and biocatalytic processes. Owing to the
+dual high-speed electronic and ionic currents at the electrode–tissue interface,
+the impedance of nanozyme electrodes is 26 times lower than that of
+state-of-the-art metal electrodes, and the acquisition sensitivity for the local
+ﬁeld potential is ≈10 times higher than that of clinical PtIr electrodes,
+enabling a signal-to-noise ratio (SNR) of up to 14.7 dB for single-neuron
+recordings in rats. The electrodes provide more than 100-fold higher
+antioxidant and multi-enzyme-like activities, which eﬀectively decrease 67%
+of the neuronal injury area by inhibiting glial proliferation and allowing
+sensitive and stable neural recording. Moreover, nanozyme electrodes can
+considerably improve the SNR of seizures in acute epileptic rats and are
+expected to achieve precise localization of seizure foci in clinical settings.
+S. Liu, Y. Wang, Y. Zhao, L. Liu, X. Sun, Y. Zhang, R. Liu, X. Mu, H. Wang,
+X.-D. Zhang, D. Ming
+Tianjin Key Laboratory of Brain Science and Neural Engineering
+Academy of Medical Engineering and Translational Medicine
+Tianjin University
+Tianjin 300072, China
+E-mail: xiaodongzhang@tju.edu.cn;richardming@tju.edu.cn
+S.Sun, S.Zhang, H.Liu, Y.Li,M.Jiao,X.-D.Zhang
+Department of Physics andTianjin Key Laboratory of Low Dimensional
+Materials Physics andPreparing Technology
+School of Science
+Tianjin University
+Tianjin 300354,China
+The ORCID identiﬁcation number(s) for the author(s) of this article
+can be found under https://doi.org/10.1002/adma.202304297
+DOI: 10.1002/adma.202304297
+1. Introduction
+Neural electrodes are the core device unit
+at the brain–computer interface and func-
+tion as a diagnostic tool for neurological dis-
+orders, thus, they have been widely used
+in neuroscience to record neural electrical
+activities.[1] Most central nervous system
+(CNS) disorders, such as stroke, Parkin-
+son’s disease, and epilepsy, are closely asso-
+ciated with abnormal circulatory brain ac-
+tivities and demand sensitive and biocom-
+patible neural electrodes for timely diagno-
+sis and therapy. Epilepsy, a clinically recur-
+rent disease with a long course and high dis-
+ability rate, is a common neurological dis-
+order characterized by abnormal brain neu-
+ronal discharges causing recurrent epilep-
+tic seizures. The diagnosis and detection of
+epilepsy have been of great interest during
+surgery and postoperative monitoring and
+are closely related to the resection size and
+functional recovery of the lesion. Therefore,
+the development of implantable electrodes
+S. Liu
+Beijing Synchrotron Radiation Facility (BSRF)
+Institute of High Energy Physics (IHEP)
+Chinese Academy of Sciences (CAS)
+Beijing 100049, China
+F. Yang, G. Hong
+Department of Materials Science and Engineering
+Stanford University
+Stanford, California 94305, USA
+S. Zhang, J. Zhang
+Tianjin Neurological Institute
+Department of Neurosurgery
+General Hospital
+Tianjin Medical University
+Tianjin 300041, China
+J. Yang, X. Xie
+School of Electronics and Information Technology and Medicine
+Sun Yat-sen University
+Guangzhou 510060, China
+Adv. Mater. 2024, 36, 2304297
+© 2023 Wiley-VCH GmbH
+2304297 (1 of 14)
+
+www.advancedsciencenews.com
+www.advmat.de
+to accurately delineate seizure foci and capture weak neural sig-
+nals during the incubation period or focal-onset seizures is neces-
+sary to guide intraoperative resection of epileptogenic foci while
+simultaneously protecting vital functional areas and avoiding
+the occurrence of postoperative neurological deﬁcits.[2] However,
+clinically available metal electrodes are limited by their low sen-
+sitivity and chronic neuroinﬂammation owing to the slow elec-
+tronic transfer and interface compatibility.[3]
+Many eﬀorts have been made to apply state-of-the-art nan-
+otechnologies to improve the sensitivity and biocompatibility.[4]
+For example, carbon nanotube coating successfully enhanced
+neural recording and electrical stimulation by decreasing the
+electrode impedance (≈20 μm diameter) to 38 kΩ at 1 kHz
+and increasing charge transfers.[5] Graphene-based electrodes
+with high carrier mobility of 350 000 cm2 V–1 s–1 and
+a low electrochemical impedance achieved a high signal-to-
+noise ratio (SNR) in vivo.[6] However, graphene and car-
+bon nanotubes can potentially induce behavioral deﬁcits and
+neural damage and pose long-term biological risks.[7] Elec-
+trode arrays based on ﬂexible polymers and semiconduc-
+tor nanowires can comprehensively record normal physio-
+logical and epileptiform activities under acute and chronic
+conditions.[8] However, the lack of rigidity of such electrode
+arrays makes accurate implantation into the target brain re-
+gion diﬃcult, resulting in surgical failure and enormous trans-
+lational challenges in clinical settings.[9] To reconcile the con-
+ﬂicting requirements of size, robustness, biocompatibility, and
+electrical properties of conventional electrodes, the develop-
+ment of functional and chronically implantable electrodes
+that simultaneously have improved electrical properties and
+bioactive surfaces to control intrinsic biological processes is
+necessary.
+Herein, we propose a nanozyme neural electrode based on
+atomically precise metal clusters[10] that simultaneously achieves
+high sensitivity and biocompatibility for long-term signal record-
+ings. Furthermore, compared with the traditional Ag and W,
+and clinical PtIr electrodes, the electrochemical performance
+of the nanozyme electrodes was signiﬁcantly improved by en-
+hancing quantum electronic transfers at the atomic layer in-
+terface. The antioxidative properties and biocatalytic activities
+of the nanozyme electrodes circumvented chronic neuroin-
+ﬂammation and deterioration of neural signals during long-
+term acquisition. We successfully recorded single-neuron ac-
+tivity with an SNR of 14.7 dB, with increased the detec-
+tion sensitivity of the local ﬁeld potential (LFP) signal in the
+whole frequency band of 1–100 Hz by one order of mag-
+nitude, and achieved stable neural signal acquisition for at
+least 2 months without decay. In addition, a high detec-
+tion sensitivity of epileptic signals was achieved, which is ex-
+pected to enable the precise localization of seizure foci in the
+clinic.
+X. Duan
+Department of Biomedical Engineering
+College of Engineering
+Peking University
+Beijing 100871, China
+2. Results and Discussion
+2.1. Structural Properties of Nanozyme Electrode
+The general scheme and concept of the nanozyme neural elec-
+trodes are shown in Figure 1a. The metal electrodes with a di-
+ameter of 100 μm aﬀord suﬃcient mechanical strength for self-
+support implantation into the brain. Nanozyme electrodes were
+constructed by depositing metal clusters (Au, Ag, Pt, and Mn) on
+the surface of Ag electrodes to form a functional layer of nan-
+oclusters via multi-potential step methods. The deposition cur-
+rent was controlled at ≈0.4 mA by setting the electrodeposition
+parameters such that the nanozyme layer on the surface of the
+bare electrode was dense with a strong binding force. Finally,
+the electrodes were encapsulated by brushing with an insulating
+layer of polyimide (PI), while the nanozyme recording sites were
+left exposed (Figure S1, Supporting Information and Experimen-
+tal Section). The electrochemical performance of the constructed
+electrodes by analyzed (Figure 1b and Figures S2–S4, Support-
+ing Information), and the results revealed that Au clusters de-
+posited on the bare electrode exhibited the lowest impedance
+and the highest cathode charge-storage-capacity (CSCc). Further-
+more, the Au24Cd1 clusters-modiﬁed electrodes exhibited the op-
+timal impedance and CSCc among a series of metal atom (Zn,
+Ag, Er, Cu, and Cd)-doped Au clusters (Figures S5–S11, Sup-
+porting Information). Thus, the nanozyme electrode based on
+Au24Cd1 was chosen for the biocatalytic and electrophysiologi-
+cal experiments in the remainder of the study. Scanning elec-
+tron microscopy (SEM) images of the bare electrodes showed a
+ﬂat surface (Figure 1c), whereas the nanozyme electrodes pre-
+sented excellent uniformity and a homogeneous spatial distribu-
+tion of atomic clusters, facilitating a high surface area and prefer-
+ring satisfactory catalytic activity (Figure 1d and Figure S12, Sup-
+porting Information). The root-mean-square surface roughness
+of the nanozyme electrodes was calculated using atomic force mi-
+croscopy (AFM) and found to be 124.5 nm, which was 9 times
+higher than that of the Ag electrodes (13.8 nm) (Figure 1e and
+Figure S13, Supporting Information). The high surface area and
+high roughness of the nanozyme electrodes resulted in an exten-
+sive exposure of the active catalytic sites, which was beneﬁcial
+for achieving a high CSCc and low impedance.[6e,11] Only the Ag
+crystal phase was detected in the X-ray diﬀraction proﬁle of the
+nanozyme electrodes (Figure S14, Supporting Information), in-
+dicating the formation absence of Au nanoparticles. X-ray pho-
+toelectron spectroscopy (XPS) spectra further conﬁrmed that Au
+(0) and Au (I) were the primary states in the nanozyme electrodes
+(Figure S15, Supporting Information), which is consistent with
+the reported Au clusters.[10]
+The interface morphology, atomic arrangement and coordi-
+nation bond of the atomically layered electrodes were charac-
+terized using aberration-corrected high-angle annular dark-ﬁeld
+scanning transmission electron microscope (AC HAADF-STEM)
+(Figure 1f–h). The Ag atomic layer at the interface exhibited
+a lattice stripe of 0.235 nm (Figure 1g), corresponding to the
+(111) plane of the Ag crystal. The atomic-level distribution of
+the Au clusters on the surface of the Ag electrodes was random
+(Figure 1g and Figure S16, Supporting Information).[12] To an-
+alyze the ﬁne structure of the interface, the detailed atomic ar-
+rangement was enlarged as shown in Figure 1h. The Au clusters
+Adv. Mater. 2024, 36, 2304297
+© 2023 Wiley-VCH GmbH
+2304297 (2 of 14)
+ 15214095, 2024, 6, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304297 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Figure 1. Characterization of the nanozyme electrode. a) A schematic diagram of the interface between the nanozyme electrodes and biological tissues.
+b) Screen of neural electrodes based on modiﬁcation of diﬀerent metal clusters. c) A representative SEM image of the Ag electrodes. Inset, a magniﬁed
+image of the region in the dashed box. d) A typical SEM image of the exposed active site of the nanozyme electrodes. Inset, a magniﬁed image of the
+region in the dashed box. e) The surface roughness of electrodes by AFM. Inset, the surface morphology of nanozyme electrodes. The cross-sectional
+AC HAADF-STEM image of the atomic-level catalytic layer–electrode interface at f) 100 nm, g) 2 nm, and h) 0.5 nm scaled magniﬁcations. The blue and
+yellow spheres represent Ag and Au atoms, respectively. i) The corresponding EDX element mapping images (Ag red and Au blue) of the entire interface
+area. j) Au L3-edge FT-EXAFS spectra in R space of the nanozyme electrodes. k) Au L3-edge XANES of the Au foil and the nanozyme electrodes.
+Adv. Mater. 2024, 36, 2304297
+© 2023 Wiley-VCH GmbH
+2304297 (3 of 14)
+ 15214095, 2024, 6, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304297 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+serving as nanozymes were preferentially located near the stack-
+ing fault of the Ag electrode substrate, which was attributed to
+the strong Ag─Au bonds.[13] In addition, the presence of Ag dis-
+locations at the Au–Ag junction interface exposes the energetic
+catalytic sites. Furthermore, elemental mapping using energy-
+dispersive X-ray spectroscopy (EDX) revealed a uniform distribu-
+tion of both Ag and Au over the entire interfacial area (Figure 1i
+and Figure S17, Supporting Information). To determine whether
+a bond was formed at the nanozyme–Ag electrode interfaces, we
+applied extended X-ray absorption ﬁne structure (EXAFS) spec-
+tra at the Au L3-edge (Figure 1j,k and Figure S18, Supporting In-
+formation). The X-ray absorption near edge structure (XANES)
+spectrum of the nanozyme electrodes exhibited a higher white-
+line absorption than that of the Au foil reference, indicating lower
+electron density and higher vacancy density (Figure 1j). It could
+be ascribed to the formation of Au (I) in nanozyme electrodes,
+which is consistent with XPS results. The Fourier-transformed
+EXAFS (FT-EXAFS) curve of the nanozyme electrodes displayed
+a pronounced peak at ≈2.83 Å, corresponding to the Au–Ag scat-
+tering paths (Figure 1k).[14] Moreover, the Au─O and Au─Au
+bonds were observed at ≈1.7 Å at ≈2.1 Å, respectively, which
+might be ascribed to the oxidation and linkage of the RS-Au-S(R)-
+Au-SR “staple” units within Au clusters in the aqueous phase dur-
+ing the preparation process of nanozyme electrodes.[15] HAADF-
+STEM and XANES spectra suggested that Au clusters were at-
+tached to the surface of the neural electrodes via Au─Ag bonds,
+forming new catalytically active sites and faster electron transfer
+pathways at the neural interface,[16] which were beneﬁcial for en-
+hancing the catalytic activity and reducing the impedance of the
+electrodes.
+2.2. Detection Sensitivity and Interface Transport of Nanozyme
+Electrode
+The quality of the recorded electrophysiological signals depends
+on the electrochemical properties of the neural electrodes.[17]
+The impedance of the nanozyme electrodes was signiﬁcantly
+lower than that of the Ag electrodes in the frequency range of
+1 Hz–100 kHz (Figure 2a). Speciﬁcally, the impedance of the
+nanozyme electrodes was ≈12 times lower than that of the Ag
+electrodes at a biologically relevant frequency of 1 kHz. Remov-
+ing the eﬀect of increased eﬀective surface area of nanozyme,
+the speciﬁc impedance of nanozyme electrodes (187.9 MΩ μm2)
+was still reduced by a factor of 6.4, which is entirely attributed to
+the interfacing electron transport eﬀect of nanozyme electrodes
+(Figure 2c). The impedance of nanozyme electrodes is signiﬁ-
+cantly lower than widely used PtIr electrode of 451.9 MΩ μm2,[18]
+MorphE of 900 MΩ μm2,[19] Au electrode of 188 MΩ μm2.[20]
+The phase diagram also shows a decreasing phase delay with
+nanozyme deposition, tending toward Faradaic charge transport
+(Figure 2b). Cyclic voltammetry (CV) measurements also showed
+an increase in CSCc with nanozyme deposition, which was ≈26.0
+and 10.3 times greater than those of the Ag and clinical PtIr
+electrodes, respectively (Figure 2d,e and Table S1, Supporting
+Information). We further evaluated the long-term electrochem-
+ical and mechanical stability of the nanozyme electrodes, which
+are crucial for long-term recordings.[19,21] As shown in Figure 2f
+and Figures S19–S21 (Supporting Information), the impedance
+of the nanozyme electrodes maintained high stability with <9%
+decay during the entire soaking period in PBS for up to 1 month
+(n = 4). The mechanical properties of implantable neural elec-
+trodes are equally important for chronic recording. As shown in
+Figure S22 (Supporting Information), the nanozyme electrodes
+were bent to varying degrees and maintained their functions un-
+der signiﬁcant deformations. Furthermore, the bending stiﬀness
+seems to be more relevant than the elastic modulus in the case
+of tissue micromotion because the electrodes were ﬁxed to the
+skull after implantation into the brain tissue and were not antic-
+ipated to experience compressive or tensile stress.[22] We used a
+dynamic mechanical analyzer to measure the bending stiﬀness
+of the nanozyme electrodes in the frequency range of animal res-
+piratory and heartbeat (0.1–10 Hz). We found that the nanozyme
+electrodes exhibited bending stiﬀness value of 5–8 N m−1, which
+was an order of magnitude lower than those of steel electrodes
+of comparable dimensions commonly used in electrophysiolog-
+ical recordings (Figure S23, Supporting Information). Taken to-
+gether, these results indicated that the nanozyme electrode de-
+scribed in this study is an outstanding candidate for use at bio-
+electronic interfaces.
+To further explore the underlying mechanism responsible for
+the low resistance of the nanozyme electrodes, transport prop-
+erties were modeled using the extended Boltzmann transport
+theory based on the electron structures simulated by the den-
+sity functional theory (DFT).[23] The Au24Cd1/Ag (111) system
+with a cluster–crystal interface was constructed, and the opti-
+mized structure predicted the Au─Ag bond lengths ranging from
+2.8–3.0 Å (Figure 2g), which is in good agreement with the above
+XANES results. The predicted adsorption energy was calculated
+to be −7.473 eV, implying the high binding stiﬀness at the inter-
+face. The predicted Bader charge of the Au24Cd1/Ag (111) model
+indicates that the attached Au cluster supplied hole carriers to
+the Ag crystal, suggesting p-type doping in general. Using the
+electron structure predicted by DFT, the group velocities and
+mass tensors of the carriers were obtained and substituted into
+the Boltzmann transport theory to simulate the electrical con-
+ductivity of the models. The benchmark Ag crystal set a base
+pattern for the predicted electrical conductivity over the relax-
+ation time (𝜎/𝜏) as a function of the carrier concentration (n)
+at T = 300 K (Figure 2h). Accordingly, in the Au24Cd1/Ag (111)
+model, the carrier concentration increased in the Ag crystal by
+3.32 × 1018 m−2, which elevated 𝜎/𝜏from 1.31 × 1019 (Ω ms)−1
+to 1.54 × 1019 (Ω ms)−1. The doping of hole carriers at a low con-
+centration to an electron carrier system reduces the conductivity
+owing to the neutralization of diﬀerent charges. However, when
+the number of doped hole carriers surpasses the threshold, the
+band structure and mass tensor of the system shift. We calculated
+the critical concentration (n = 2.15 × 1018 m−2) for this transition
+(Figure 2h). Compared with the benchmark (Figure 2i), the band
+structure of the Au24Cd1/Ag (111) system exhibited more eigen-
+states contributed by the Au and S atoms (Figure 2j and Figure
+S24, Supporting Information), potentially providing a more com-
+prehensive range of states in the conduction band for free elec-
+trons. The Au clusters on the other side of the interface beneﬁt
+from the conductivity of the donor levels provided by the Ag crys-
+tals. Such synergistic eﬀects near the interface are vital for en-
+hancing the conductivity. Due to the diﬀerent electronegativity,
+Au and S are partially positive and negatively charged, which will
+Adv. Mater. 2024, 36, 2304297
+© 2023 Wiley-VCH GmbH
+2304297 (4 of 14)
+ 15214095, 2024, 6, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304297 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Figure 2. Electrochemical characterization and quantum interface transport of the nanozyme and Ag electrodes. a) Magnitude and b) phase angle of
+electrodes impedance as a function of the frequency. c) The speciﬁc impedance at 1 kHz. d) CV of electrodes. e) Comparison of CSCc for electrodes.
+f) CSCc and the speciﬁc impedance (at 1 kHz) for the nanozyme electrode soaked in PBS for 4 weeks. g) Side view of the geometrically optimized
+structure of Au24Cd1/Ag (111) system. Gray, orange, yellow, and red balls represent Ag, Au, S, and Cd atoms. h) The ratio of electrical conductivity to
+relaxation time (𝜎/𝜏) as a function of the carrier concentration for the p-type nanozyme electrode at 300 K using extended Boltzmann transport theory
+based on DFT. i) The band structure (left) and total density of states (right) for Ag (111) surface. j) The band structure (left) and atom-projected density
+of states (right) for Au24Cd1/Ag (111).
+improve electrostatic adsorption of the opposite ions. Meanwhile,
+the carrier concentration of nanozyme electrodes increases was
+proven in Figure 2h, and the nano-structure exposes suﬃcient
+sites for ions transmission and transfer, resulting in the enhance-
+ment of signal transduction.[1a,24] The nanozyme electrodes with
+dual conduction coupled with a large eﬀective surface area and
+interfacing electron quantum transport can decrease the electro-
+chemical impedance mismatch between the electrode and the
+brain tissue.
+2.3. Bioactivity and Biocompatibility of Nanozyme Electrode
+Biocatalytic properties can eﬀectively alleviate neuroinﬂam-
+mation by reducing dangerously activated molecules at the
+tissue–electrode interface.[25] Therefore, the antioxidant and
+multienzyme-mimicking properties of the nanozyme electrodes
+were evaluated under physiological conditions. As shown in
+Figure 3a, the nanozyme electrodes accelerated the catalytic re-
+action with ABTS•+ substrate in seconds at a rapid reaction
+rate of 4.76 μm s−1, which was 110.6 and 12.6 times higher
+than that of the Ag and clinical PtIr electrodes, respectively. Al-
+though the nanozyme electrode demonstrated superior antiox-
+idant activity, the benchmark Ag electrode exhibited negligible
+activity (Figure 3a,b). Next, we studied the CAT-like activity of
+the nanozyme electrodes (Figure 3c,d and Video S1, Support-
+ing Information). The Michaelis–Menten constant (Km) and the
+maximum reaction velocity (Vmax) of the nanozyme electrodes
+were determined to be 197.99 mm and 2.11 mm min−1, suggest-
+ing its high CAT-like activity. In contrast, the Ag and PtIr elec-
+trodes exhibited almost no CAT-like activity. Similarly, the high-
+est superoxide dismutase (SOD)-like activity was observed for
+the nanozyme electrode using the classical nitro-blue tetrazolium
+(NBT) chromogenic method (Figure 3e). Quantiﬁcation showed
+a high substrate inhibition rate of 94.6% for the nanozyme
+electrode, whereas those of the Ag and clinical PtIr electrodes
+Adv. Mater. 2024, 36, 2304297
+© 2023 Wiley-VCH GmbH
+2304297 (5 of 14)
+ 15214095, 2024, 6, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304297 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Figure 3. In vitro total antioxidant and enzyme-like activities, and ex vivo histological studies of inﬂammation in brain tissues to chronically implanted
+8-week nanozyme electrodes. a) The time dependence of ABTS·+ catalysis for electrodes. b) The corresponding reaction rates of electrodes. c) Time-
+dependent CAT-like activities of the nanozyme electrodes at diﬀerent concentrations of H2O2. d) The reaction kinetics of CAT-like activities for electrodes.
+e) Time-dependent analysis of SOD-like activities for electrodes. f) Inhibition rates of SOD for electrodes by the NBT method. g) Immunoﬂuorescence
+images of tissue responses following 2-month implantation of Ag electrodes (left) and nanozyme electrodes (right). The tissue was labeled for astrocytes
+(green), microglia (purple), and neurons (red). Scale bar, 100 μm. Normalized ﬂuorescence intensities of h) astrocytes and i) microglia, and j) neuron
+lost zone diameters for nanozyme and Ag electrodes (n = 3). k–m) Quantitative analysis of ELISA for IL-1𝛽, IL-6, and TNF𝛼in brain tissues 1, 3, and 7
+days after implantation of nanozyme and Ag electrodes (n = 3). n–q) Indicators for oxidative stress, including SOD, GSH, H2O2, and MDA in groups
+of the Sham, Ag, and nanozyme electrodes. The data were presented as mean ± SEM, n = 3, one-way analysis of variance was used to determine the
+signiﬁcance level between multiple groups, and the signiﬁcance level was considered as *p < 0.05, **p < 0.01.
+were only 5.6% and 3.1%, respectively (Figure 3f). In addition,
+the nanozyme electrode achieved a much higher negative cur-
+rent density than the Ag electrode, indicating its excellent cat-
+alytic activity owing to the relatively higher number of active
+sites on its surface (Figure S25, Supporting Information). Over-
+all, the unmodiﬁed Ag and clinical PtIr electrodes barely had
+any enzyme-mimetic activities, as opposed to the robust antioxi-
+dant and biocatalytic activities of the nanozyme electrode, which
+serve as a feasible solution to minimize neuroinﬂammation from
+implantation.[26]
+To evaluate the brain tissue reaction to the long-term biocom-
+patibility of the implanted nanozyme electrodes, post-mortem
+histology 2 months after implantation was performed. Implanted
+electrodes may contribute to local neuroinﬂammation due to
+the invasion of brain tissue, further inducing a redox imbal-
+ance and leading to excessive reactive oxygen species (ROS).[24a,27]
+Glial encapsulation and neuronal death in the vicinity of elec-
+trodes have been implicated as main factors negatively impacting
+the stability and longevity of chronic neural recordings. Three
+types of neural cells—neurons (NeuN), microglia (Iba1), and
+Adv. Mater. 2024, 36, 2304297
+© 2023 Wiley-VCH GmbH
+2304297 (6 of 14)
+ 15214095, 2024, 6, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304297 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+astrocytes (GFAP)—were investigated by staining for speciﬁc
+markers.[3a,10] Immunoﬂuorescence-stained images of brain tis-
+sues showed the presence of activated microglia and accumulated
+astrocytes, as well as many dying neurons after electrode implan-
+tation (Figure 3g). The ﬁbrotic scar surrounding the nanozyme
+electrodes was signiﬁcantly smaller than that surrounding the
+Ag electrode by ≈1.5-fold due to the decreased accumulation of
+astrocytes (Figure 3h). Similarly, the marker expression of mi-
+croglia around the nanozyme electrodes was 1.6-fold lower than
+that around the Ag electrodes (Figure 3i), owing to suppressed
+immune responses. In addition, the loss of neurons was found
+to be conﬁned within a region of ≈160 μm in diameter for the
+nanozyme electrodes, compared to 448 μm for the Ag electrodes.
+The neuron loss zone for the nanozyme electrodes was only
+slightly larger than the implantation footprint (≈100 μm diameter
+nanozyme electrode insulated with ≈10 μm thick PI), indicating
+that there was no obvious further neuronal degeneration within 8
+weeks after implantation (Figure 3j and Figure S26, Supporting
+Information). Certainly, we also conducted studies on acute in-
+ﬂammation post-implanted 7 days, and the immunoﬂuorescence
+images showed that the nanozyme electrodes were more biocom-
+patible than Ag electrodes in acute phase (Figure S27 , Support-
+ing Information). These histological data demonstrate the abil-
+ity of the nanozyme electrodes to create an improved and more
+stable microenvironment at neural interfaces than stiﬀmetal
+electrodes. Furthermore, enzyme-linked immunosorbent assay
+(ELISA) conﬁrmed the expected gradual restoration of IL-1𝛽, IL-
+6, and TNF𝛼from the nanozyme electrode implantation to nor-
+mal levels in the sham group (Figure 3k–m), On the contrary, in-
+ﬂammatory cytokines produced from the Ag electrode were not
+recovered, consistent with the immunoﬂuorescence analysis.
+Intracranial implantation of electrodes disrupts the blood-
+brain barrier, triggers foreign body responses, and exposes
+brain tissue to an environment rich in pro-oxidants and pro-
+inﬂammatory factors, generating a large number of harmful
+molecules from oxidative stress reactions.[3a,25g,28] The signiﬁcant
+decrease in SOD and glutathione (GSH) levels for the Ag elec-
+trode denoted the presence of excessive oxidants and consump-
+tion of rescuing antioxidants (Figure 3n,o). Comparatively, the
+nanozyme electrodes, owing to the high catalytic SOD-like activ-
+ity, promoted the conversion of O2
+•−into H2O2, eﬀectively re-
+ducing the level of reactive oxygen and promoting the recovery of
+the initial SOD and GSH levels in vitro (Figure 3e). Furthermore,
+cells became vulnerable to assaults from oxygen free radicals, ini-
+tiating lipid peroxidation processes and causing severe oxidative
+damage. Notably, the MDA, as the end product of lipid peroxida-
+tion, showed higher accumulation in the brain post Ag electrode
+implantation. In contrast, the nanozyme electrodes steadily re-
+duced the accumulation of lipid peroxides and approached the
+level of the blank control group due to its high catalytic selec-
+tivity for O2
+•−(Figure 3p). Simultaneously, the nanozyme elec-
+trodes demonstrate outstanding CAT-like activity, facilitating the
+conversion of H2O2 into H2O and O2 in vitro (Figure 3q). These
+ex vivo results revealed that the nanozyme electrodes could sal-
+vage imbalanced redox reactions owing to their multi-enzyme
+mimetic activities. According to the reported works,[10] it is ra-
+tional to suppose that the nanozyme electrodes can alleviate the
+acute inﬂammation and modulate redox reactions via inhibiting
+NF-𝜅B pathway, which is a key factor in regulating inﬂamma-
+tion, NO, ROS, and peroxynitrite.[29] Moreover, the biodistribu-
+tion showed the absence of Au and Cd in the brain (Figure S28,
+Supporting Information), suggesting a low risk of long-term ac-
+cumulation.
+2.4. In Vivo Sensitivity and Long-Term Monitoring of Nanozyme
+Electrode
+Eﬀective, accurate, and minimally invasive monitoring of biolog-
+ical signals can provide a meaningful way to understand brain
+function and diagnose neurological diseases.[18] The nanozyme
+and Ag electrodes were implanted into the symmetrical hip-
+pocampus CA3 of adult rats for in vivo neural signals record-
+ing (Figure 4a). The electrodes were immersed in artiﬁcial cere-
+brospinal ﬂuid to simulate the tissue ﬂuid microenvironment,
+and the noise level was measured without any neural signal in-
+put. The noise of the nanozyme electrode was 40.9 μV, which
+was ≈3.4 times lower than that of the Ag electrodes (140.8 μV).
+In addition, the nanozyme electrode detected LFP activity with
+greater oscillation amplitudes in CA3, showing increased sensi-
+tivity and a 6.2 times higher SNR (Figure 4b). The diﬀerence be-
+tween the two traces is determined by calculating the power spec-
+tra. As shown in Figure 4c, the power of the nanozyme electrode
+was higher than that of the Ag electrode with a band-pass ﬁlter
+at 1–100 Hz, indicating a more sensitive detection of LFP with
+amplitude augmentation. We further demonstrated the power
+spectra in diﬀerent frequency bands and time-frequency within
+a 60 s time window. The signal ampliﬁcation of the nanozyme
+electrodes was signiﬁcantly higher than that of the bare elec-
+trodes and the degree of signal augmentation diﬀered across var-
+ious frequency ranges, particularly in the lower frequency, i.e., 𝛿
+rhythm, at a 14-fold increase (Figure 4d–f). The lower-frequency
+component may be enhanced owing to the greater contact sur-
+face with the nanozyme electrode, which allows better reception
+of the signal from neighboring dendritic synaptic currents. The
+two traces oscillated in parallel, reﬂecting a common source of
+recorded neural activity. Similar results were observed in the nor-
+mal rats (Figures S29 and S30, Supporting Information). In addi-
+tion, we compared the recording performance of clinical PtIr and
+nanozyme electrodes. The latter showed a sensitivity 9.8 times
+higher than the former in 𝛿rhythm (Figure S31, Supporting In-
+formation). Overall, the nanozyme electrode had a higher oscil-
+lation amplitude and power with increased sensitivity and SNR
+for LFPs. The abundant proteins present in the brain may non-
+speciﬁcally adsorb on the electrode surface, potentially impact-
+ing the sensitivity and long-term stability of the electrode. The
+electrochemical methods and protein quantiﬁcation kits were
+used to explore the anti-nonspeciﬁc adsorption capacity in vitro
+(Figures S32 and S33, Supporting Information). In addition, the
+non-speciﬁc adsorption of protein in vivo was studied by compar-
+ing SEM images pre- and post-implantation of nanozyme elec-
+trodes (Figure S34, Supporting Information). The results showed
+that the nanozyme electrodes performed better resistance to non-
+speciﬁc protein adsorption and no signiﬁcant changes in detec-
+tion sensitivity.
+To validate the continuous recording ability of the nanozyme
+electrode, we implanted it into the hippocampal CA3 and moni-
+tored the electrophysiological signals in rats for two months. The
+Adv. Mater. 2024, 36, 2304297
+© 2023 Wiley-VCH GmbH
+2304297 (7 of 14)
+ 15214095, 2024, 6, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304297 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Figure 4. Detection sensitivity and long-term stability of electrophysiological signal monitoring in normal rats. a) A schematic drawing of the implanted
+nanozyme electrodes in the hippocampus CA3. b) The noise level, the LFP signal time-domain diagram, and SNR analysis for the control and nanozyme
+electrodes. c) The power spectra analysis through FFT for the Ag and nanozyme electrodes. Inset, magniﬁed image of the region in the dashed box.
+d,e) The comparison of power spectra and time-domain signal in various rhythms, including 𝛿, 𝜃, 𝛼, 𝛽, 𝛾. f) Time-frequency diagrams of the Ag and
+nanozyme electrodes. g) LFP of the Ag and nanozyme electrodes at representative time nodes (1, 4, 8 weeks) in the long-term stability study. h) The
+correlation of the LFP power with the implantation time within 8 weeks. i) The sensitivity and stability of the nanozyme electrode. The detection sensitivity
+was deﬁned as the ratio of the power of nanozyme electrodes and Ag electrodes. j) SNR after 8 weeks of implanted nanozyme electrodes. The data were
+presented as mean ± SEM, n = 3, *p < 0.05, **p < 0.01.
+time-domain waveforms of the representative nodes at 1, 4, and
+8 weeks are shown in Figure 4g. The signal power of the Ag
+electrode quantitatively decreased by 57.9% after 8 weeks of im-
+plantation, possibly because of the additional impedance intro-
+duced by the glial scar, whereas the nanozyme electrode main-
+tained stable recording signals without decay. Owing to the min-
+imized chronic inﬂammation, the corresponding sensitivity of
+the nanozyme electrode was at least 9.3 times higher than that
+of the Ag electrode in the second month (Figure 4h). In addition,
+the inﬂammatory responses caused by the Ag electrode formed
+a thick and dense glial encapsulation, which gradually prevented
+the recording electrode from coming into close contact with the
+Adv. Mater. 2024, 36, 2304297
+© 2023 Wiley-VCH GmbH
+2304297 (8 of 14)
+ 15214095, 2024, 6, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304297 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+target neurons (Figure 3g), leading to a decrease in the num-
+ber of detectable neurons. The power of the nanozyme electrode
+remained stable over time with satisfactory biocompatibility. To
+further characterize the long-term recordings, we investigated
+the ratio of the signal power of the LFPs as collected by the two
+electrodes. As shown in Figure 4i, the ratio gradually increased
+over time and reached 10 in 𝛿rhythm after 2–8 weeks of implan-
+tation without decay, as did the SNR (Figure 4j). Similar long-
+term stability was observed in other normal rats (Figures S35 and
+S36, Supporting Information). We compared the nanozyme elec-
+trode with the clinical PtIr electrode, whose power was attenu-
+ated by 41.4% at 4 weeks post-implantation. The nanozyme elec-
+trode maintained excellent long-term stability, with a sensitivity
+9.7-fold higher than that of the clinical PtIr electrode at the 4th
+week after implantation (Figure S37, Supporting Information).
+2.5. Seizure Recording Capability of Nanozyme Electrode
+We assessed the potential capability to monitor seizures in
+vivo, we concurrently implanted the nanozyme and refer-
+ence electrodes intracranially into the hippocampal CA3 region
+(Figure 5a), which is known to be hyperexcitable during
+seizures.[2c] We employed kainic acid (KA)-induced epileptic rat
+models with neuropathological and electroencephalographic fea-
+tures similar to the human temporal lobe epilepsy, the most com-
+mon type of refractory epilepsy in adults.[30] Once the epilepsy
+was successfully induced (Video S2, Supporting Information),[31]
+real-time epileptic activity was immediately recorded (Figure 5b).
+The two-channel representative real-time recording signals and
+the corresponding normalized time-frequency spectrum analy-
+sis of the nanozyme and Ag electrodes are shown in Figure 5c,d
+and Figure S38 (Supporting Information). Three distinct periods,
+namely the basal activity, latency, and epilepsy periods, were iden-
+tiﬁed. In the basal stage, the nanozyme electrode presented stead-
+ier signal acquisition than the Ag electrode, indicating a more sta-
+ble tissue–electrode interface. After a 2-min latency period, it en-
+tered the epilepsy stage with representative seizure characteristic
+waveforms and a sharp increase in amplitude. Moreover, the re-
+sponse magnitudes of the nanozyme electrode at all three stages
+were higher than those of the Ag electrode. The three-stage power
+spectra (Figure 5e–g) were analyzed (Figure 5h), conﬁrming the
+high neural activity of the nanozyme electrode, which was 6.0,
+1.7, and 2.1 times higher than that of the Ag electrodes in the
+basal, latency, and epilepsy periods, respectively. Furthermore,
+the nanozyme electrode detected pathological signals that failed
+to be captured by traditional electrodes during epileptic seizures
+(Figure 5i), which is promising for the sensitive and accurate di-
+agnosis of epilepsy sensitively and accurately. Further analysis of
+the characteristic epileptic waves determined that the epileptic
+detection SNR[32] of the nanozyme electrode was 3.2 times higher
+than that of the Ag electrode. In addition, we successfully de-
+tected sharp epileptic waves of seizures 7 days after KA induc-
+tion (Figure S39, Supporting Information), and the sensitivity
+of the nanozyme electrode was at least twofold higher than that
+of the Ag electrode within 70 days of epilepsy recording (Figure
+S40, Supporting Information). The nanozyme electrode also ca-
+pably detected intense seizures of up to 1252.8 μV, and the corre-
+sponding power value was more than 5 times higher in the 𝜃to
+𝛾rhythm range than the clinical PtIr electrode, showing its high
+sensitivity during the seizure occurrence (Figure S41, Supporting
+Information).
+2.6. In Vivo Single-Neuron Recording Sensitivity of Nanozyme
+Electrode
+In vivo single-neuron-recording capabilities of the nanozyme
+electrodes were further validated, as shown in Figure 6. The tung-
+sten (W) electrodes with a diameter of 2 μm was coated with
+biocatalytic Au24Cd1 clusters through galvanostatic deposition to
+prepare nanozyme electrodes. After the introduction of the clus-
+ters, a uniform nanozyme-layer was formed on the surface of
+the electrodes, and the eﬀective reaction area increased by 3.1
+times (Figures S42 and S43, Supporting Information). As shown
+in Figure 6a–c, the average impedance of the neural electrodes
+measured at 1 kHz decreased from 2.1 MΩ to 80 kΩ, and the
+speciﬁc impedance of nanozyme electrodes was still reduced by
+a factor of 8.5 after removing the eﬀect of the increased surface
+area. In addition, the ﬁtted parameters for the equivalent circuit
+model (Figure 6a and Figure S44, Supporting Information) are
+listed in Table S2 (Supporting Information), showing a 4.3-fold
+reduction in the charge transfer resistance (Rct) for the nanozyme
+electrodes, which greatly enhanced the charge transfer ability.
+Similarly, CSCc increased by a factor of 1.7 times excluding the
+eﬀect of the surface area, which was entirely due to the intrin-
+sic electroactivity of the nanozyme (Figure 6d–e). In vivo single-
+neuron recording capabilities of the nanozyme electrodes were
+measured in the hippocampal CA3 region of the anesthetized
+rats (Figure 6f), and a representative acute electrophysiological
+recording in the high-frequency range (0.5–5 kHz) is shown in
+Figure 6g. The nanozyme electrodes were able to detect and iso-
+late single-neuron spikes with a high SNR, whereas the bare elec-
+trode could not record any single unit with an SNR greater than
+3 s.d. Figure 6h,i shows the sorted single-unit activity mean wave-
+form and pile plot, respectively. The SNR of single-unit record-
+ings from nanozyme electrodes was 14.7 dB, which was sig-
+niﬁcantly higher than that reported for PEDOT-based electrode
+(≈8 dB),[4e] Neuropixels (9.0 dB),[33] and graphene ﬁber electrode
+(9.2 dB),[6d] indicating a close proximity between the ﬁring neu-
+rons and the nanozyme electrodes. In addition, simultaneous
+LFP recordings showed no phase diﬀerences between the W and
+nanozyme electrodes, and similar activities were detected by both
+channels (Figure 6j). However, the LFP detected by the nanozyme
+electrodes had higher amplitudes, as evidenced by the power
+spectral density plots of the neural recordings (Figure 6k). Over-
+all, the single-unit recordings demonstrated that the nanozyme
+electrodes created eﬀective interfaces capable of recording high-
+quality neural activity.
+Table S3 and Figure S45 (Supporting Information) demon-
+strate the performance of nanozyme electrodes in comparison
+with the most promising current electrodes. To overcome the lim-
+itations of metallic electrodes, research on nanostructured mate-
+rials has received much attention for developing next-generation
+neural interfaces. Nanomaterials with excellent electronic con-
+ductivity and biocompatibility, such as PEDOT,[4e] Pt black,[34]
+graphene,[6d,e] and carbon nanotube,[28b] have been the most pop-
+ular choices of electrodes in the past decade and have been well
+Adv. Mater. 2024, 36, 2304297
+© 2023 Wiley-VCH GmbH
+2304297 (9 of 14)
+ 15214095, 2024, 6, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304297 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Figure 5. In vivo monitoring of neural activities in acute seizure rat models with nanozyme electrodes. a) A schematic diagram of neural activities
+recorded in KA-induced epileptic rats. b) The study timeline showing procedures for epileptic rats. c) Real-time recording of epileptiform activities,
+including three distinct stages: the basal activity, the latent period, and the epileptiform activity. The black arrowheads indicate the time point of KA injec-
+tion. d) Normalized time-frequency spectral analysis of the time serial data in (c). The power spectra during e) the basal, f) latency, and g) epileptiform
+periods. h) Enlarged view during the basal, latency, and epileptiform periods. i) The minor physiological signals (epileptic sharp waves) collected by the
+nanozyme electrode during the seizure onset. j) SNR analysis between Ag and nanozyme electrodes during seizures in (i). The data were presented as
+mean ± SEM, *p < 0.05, **p < 0.01.
+characterized in terms of the electrical performance and signal
+quality of the neural electrodes. However, the nano-coatings are
+prone to peeling oﬀduring long-term implantation due to the
+weak adhesion, which restricts long-term application in vivo.
+Atomic engineering can realize the precise construction of neu-
+ral electrodes at the atomic level through various heterojunc-
+tions, avoiding the shortcomings of insuﬃcient rigidity and easy
+shedding of other organic molecules. The greatest advantage of
+nanozyme electrodes is that it is well-balanced and can satisfy
+all aspects of performance required for neural electrodes, such
+as high SNR for neural recordings, excellent long-term record-
+ing stability, and chronic biocompatibility, by virtue of the bio-
+catalytic activity and enhanced interface transport, which is cru-
+cial for future clinical applications.
+In addition, the nanozyme at the atomic level can not only
+endow the neural electrodes with eﬃcient catalytic biological
+Adv. Mater. 2024, 36, 2304297
+© 2023 Wiley-VCH GmbH
+2304297 (10 of 14)
+ 15214095, 2024, 6, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304297 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Figure 6. In vivo single-unit recording capabilities of 2 μm diameter nanozyme electrodes/W. a) Equivalent circuit model of electrode–electrolyte interface
+for nanozyme electrodes/W. b) Impedance magnitude and phase of 2 μm diameter W and nanozyme electrodes/W. c) The comparison of impedance
+(left) and speciﬁc impedance after removing the eﬀect of the increased surface area (right) at 1 kHz. d) CV measurement for electrodes. e) The comparison
+of CSC (left) and CSCc after removing the eﬀect of the increased surface area (right) for electrodes. f) Schematic of nanozyme electrodes/W implanted
+into the CA3 region of the rat hippocampus. g) Representative acute recording of high-frequency (0.5–5 kHz) electrophysiological signal. h) Mean
+waveform for each unit spike (right) using W and nanozyme electrodes/W. i) Piled single-unit neural recordings. Colors serve to distinguish the two
+distinct single units. The SNR for the nanozyme electrodes/W is 14.7 dB. j) LFP and recorded acutely from W and nanozyme electrodes/W. k) Power
+spectra analysis across the LFP range. The data were presented as mean ± SEM, n = 3.
+activity and protect the neural tissues surrounding the implan-
+tation from gliosis and neuroinﬂammation, but can also freely
+edit the electrode surface, greatly improve the electron transmis-
+sion eﬃciencies, and enhance the electrode recording sensitiv-
+ity and long-term stability. Nanozyme-based neural electrodes
+can also be extended to deep brain stimulation (DBS) appli-
+cations for more precise electrical stimulation in neurological
+disorders such as Parkinson’s disease. The low impedance and
+high capacitance caused by the improved electron transmission
+eﬃciencies can reduce the energy consumption, increase the
+Adv. Mater. 2024, 36, 2304297
+© 2023 Wiley-VCH GmbH
+2304297 (11 of 14)
+ 15214095, 2024, 6, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304297 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+polarization voltage of the electrical stimulation, and extend the
+lifespan of the stimulation electrodes. In addition, biocompatibil-
+ity facilitates long-term stability of DBS, avoiding the hazards of
+secondary surgery due to electrode failure.
+This research brings together a new set of materials and a
+novel approach to make fundamental advances in the electrical
+performance, recording sensitivity, biocompatibility, and long-
+term stability of microelectrode technology. Although the current
+results are encouraging, especially for improving basic neuro-
+science research, the clinical relevance of nanozyme-based elec-
+trodes remains lacking at this stage and needs to be further
+demonstrated through long-term high-sensitivity studies in pri-
+mates. Therefore, we anticipate that the next step will be to tran-
+sition to primate studies, which may lead to a shift in neuro-
+science research and clinical neurotechnology. Second, emerging
+single-atom nanozymes and more advanced bio-nanomaterials
+can be used to develop eﬃcient and biocompatible neural elec-
+trodes and provide more biomimetic interfaces to further blur
+the electrode-biological tissue boundary.[35] Strong quantum ef-
+fects on the atomic scale result in interesting electronic trans-
+port phenomena at the interface. With the rapid development of
+Moiré materials and related van der Waals heterostructures,[36]
+the electron transport eﬃciency in neural electrodes is expected
+to substantially increase. In addition, state-of-the-art CMOS fab-
+rication techniques can be used to fabricate such nanozyme-
+based needle electrodes into high-density arrays and ECoG elec-
+trode arrays to probe globally coordinated brain regions for
+sensitive brain–machine interfaces and high-throughput record-
+ings. Finally, the nanozyme electrodes designed herein are not
+only limited to epilepsy and can be extended for use as deep
+brain stimulation electrodes for more precise long-term sta-
+ble recording and modulation of neural activity at the single-
+neuron level by electrical or optical stimulation to treat Parkin-
+son’s disease, stroke, and other CNS diseases. The highly ver-
+satile nanozyme-based electrodes demonstrate broad prospects
+in neuroscience and translational medicine and hold promise
+as closed-loop, bidirectional, and high-density implantable
+devices.
+3. Conclusion
+We developed a high-performance implantable nanozyme neu-
+ral electrode by integrating atomic-level catalytic clusters onto an
+electrode surface to facilitate a heterogeneous Au–Ag interface.
+As a result, the nanozyme electrode was endowed with ultra-low
+intrinsic impedance and improved CSCc, 12 and 26 times better
+than those of the commercial Ag electrode, respectively. More-
+over, the nanozyme electrode exhibited multi-enzyme mimetic
+activity with minimal neuroinﬂammation and stably recorded
+electrical signals. The nanozyme electrode displayed high de-
+tection sensitivity and enabled single-neuron recordings with
+an SNR of 14.7 dB in vivo. Furthermore, the nanozyme elec-
+trode can capture weak pathological signals that are missed by
+traditional electrodes during real-time monitoring of epilepsy,
+which is expected to achieve precise localization of seizure
+foci in the clinic. Therefore, these highly versatile nanozyme-
+based electrodes have broad prospects in neuroscience and
+translational medicine as a new technology with therapeutic
+potential.
+4. Experimental Section
+A detailed description of experimental procedures can be found in the Sup-
+porting Information.
+Supporting Information
+Supporting Information is available from the Wiley Online Library or from
+the author.
+Acknowledgements
+S.L., Y.W., and Y.Z. contributed equally to this work. This work was ﬁ-
+nancially supported by the National Key Research and Development Pro-
+gram of China (2021YFF1200700), the National Natural Science Foun-
+dation of China (Grant nos. 91859101, 81971744, U1932107, 82001952,
+11804248, 82302361, and 82302381), the Outstanding Youth Funds of
+Tianjin (2021FJ-0009), the National Natural Science Foundation of Tianjin
+(Nos. 19JCZDJC34000, 20JCYBJC00940, 21JCYBJC00550, 21JCZDJC00620,
+and 21JCYBJC00490), the Innovation Foundation of Tianjin University, and
+the CAS Interdisciplinary Innovation Team (JCTD-2020-08). All animal ex-
+periments were approved by the Animal Ethical and Welfare of Tianjin Uni-
+versity (TJUE-2023-126).
+Conﬂict of Interest
+The authors declare no conﬂict of interest.
+Data Availability Statement
+The data that support the ﬁndings of this study are available in the sup-
+plementary material of this article.
+Keywords
+acquisition sensitivity, biocatalytic, nanozymes, neural recording
+Received: May 8, 2023
+Revised: October 19, 2023
+Published online: December 7, 2023
+[1] a) D. Khodagholy, J. N. Gelinas, T. Thesen, W. Doyle, O. Devinsky, G.
+G. Malliaras, G. Buzsáki, Nat. Neurosci. 2015, 18, 310; b) G. Hong,
+C. M. Lieber, Nat. Rev. Neurosci. 2019, 20, 330; c) X. Yang, T. Zhou,
+T. J. Zwang, G. Hong, Y. Zhao, R. D. Viveros, T.-M. Fu, T. Gao, C. M.
+Lieber, Nat. Mater. 2019, 18, 510; d) T.-M. Fu, G. Hong, T. Zhou, T. G.
+Schuhmann, R. D. Viveros, C. M. Lieber, Nat. Methods 2016, 13, 875.
+[2] a) E. Beghi, Neuroepidemiology 2020, 54, 185; b) A. Chari, R. C.
+Thornton, M. M. Tisdall, R. C. Scott, Brain Commun 2020, 2, 082; c)
+J. Liu, F. Li, Y. Wang, L. Pan, P. Lin, B. Zhang, Y. Zheng, Y. Xu, H. Liao,
+G. Ko, F. Fei, C. Xu, Y. Du, K. Shin, D. Kim, S.-S. Jang, H. J. Chung, H.
+Tian, Q. Wang, W. Guo, J.-M. Nam, Z. Chen, T. Hyeon, D. Ling, Nat.
+Nanotechnol. 2020, 15, 321.
+[3] a) J. W. Salatino, K. A. Ludwig, T. D. Y. Kozai, E. K. Purcell, Nat. Biomed.
+Eng. 2017, 1, 862; b) R. Chen, A. Canales, P. Anikeeva, Nat. Rev. Mater.
+2016, 2, 16093.
+[4] a) R. Garcia-Cortadella, G. Schwesig, C. Jeschke, X. Illa, A. L. Gray, S.
+Savage, E. Stamatidou, I. Schiessl, E. Masvidal-Codina, K. Kostarelos,
+Adv. Mater. 2024, 36, 2304297
+© 2023 Wiley-VCH GmbH
+2304297 (12 of 14)
+ 15214095, 2024, 6, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304297 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+A. Guimerà-Brunet, A. Sirota, J. A. Garrido, Nat. Commun. 2021, 12,
+211; b) R. Parameswaran, J. L. Carvalho-De-Souza, Y. Jiang, M. J.
+Burke, J. F. Zimmerman, K. Koehler, A. W. Phillips, J. Yi, E. J. Adams,
+F. Bezanilla, B. Tian, Nat. Nanotechnol. 2018, 13, 260; c) W. Yan,
+I. Richard, G. Kurtuldu, N. D. James, G. Schiavone, J. W. Squair,
+T. Nguyen-Dang, T. Das Gupta, Y. Qu, J. D. Cao, R. Ignatans, S. P.
+Lacour, V. Tileli, G. Courtine, J. F. Löﬄer, F. Sorin, Nat. Nanotechnol.
+2020, 15, 875; d) C. M. Tringides, N. Vachicouras, I. De Lázaro, H.
+Wang, A. Trouillet, B. R. Seo, A. Elosegui-Artola, F. Fallegger, Y. Shin,
+C. Casiraghi, K. Kostarelos, S. P. Lacour, D. J. Mooney, Nat. Nanotech-
+nol. 2021, 16, 1019; e) T. D. Y. Kozai, N. B. Langhals, P. R. Patel, X.
+Deng, H. Zhang, K. L. Smith, J. Lahann, N. A. Kotov, D. R. Kipke,
+Nat. Mater. 2012, 11, 1065; f) J. Chen, Y. Huang, N. Zhang, H. Zou,
+R. Liu, C. Tao, X. Fan, Z. L. Wang, Nat. Energy 2016, 1, 16138; g) J. Liu,
+T.-M. Fu, Z. Cheng, G. Hong, T. Zhou, L. Jin, M. Duvvuri, Z. Jiang, P.
+Kruskal, C. Xie, Z. Suo, Y. Fang, C. M. Lieber, Nat. Nanotechnol. 2015,
+10, 629; h) F. Yang, X. Wu, H. Cui, S. Jiang, Z. Ou, S. Cai, G. Hong, J.
+Am. Chem. Soc. 2022, 144, 18406.
+[5] E. W. Keefer, B. R. Botterman, M. I. Romero, A. F. Rossi, G. W. Gross,
+Nat. Nanotechnol. 2008, 3, 434.
+[6] a) L. Banszerus, M. Schmitz, S. Engels, J. Dauber, M. Oellers, F.
+Haupt, K. Watanabe, T. Taniguchi, B. Beschoten, C. Stampfer, Sci.
+Adv. 2015, 1, e1500222; b) S. Garaj, W. Hubbard, A. Reina, J. Kong,
+D. Branton, J. A. Golovchenko, Nature 2010, 467, 190; c) N. Liu,
+A. Chortos, T. Lei, L. Jin, T. R. Kim, W.-G. Bae, C. Zhu, S. Wang, R.
+Pfattner, X. Chen, R. Sinclair, Z. Bao, Sci. Adv. 2017, 3, e1700159; d) K.
+Wang, C. L. Frewin, D. Esraﬁlzadeh, C. Yu, C. Wang, J. J. Pancrazio, M.
+Romero-Ortega, R. Jalili, G. Wallace, Adv. Mater. 2019, 31, 1805867;
+e) S. Zhao, G. Li, C. Tong, W. Chen, P. Wang, J. Dai, X. Fu, Z. Xu,
+X. Liu, L. Lu, Z. Liang, X. Duan, Nat. Commun. 2020, 11, 1788; f) E.
+Masvidal-Codina, X. Illa, M. Dasilva, A. B. Calia, T. Dragojevic, E. E.
+Vidal-Rosas, E. Prats-Alfonso, J. Martínez-Aguilar, J. M. De La Cruz,
+R. Garcia-Cortadella, P. Godignon, G. Rius, A. Camassa, E. Del Corro,
+J. Bousquet, C. Hébert, T. Durduran, R. Villa, M. V. Sanchez-Vives, J.
+A. Garrido, A. Guimerà-Brunet, Nat. Mater. 2019, 18, 280.
+[7] a) M. Kim, H.-J. Eom, I. Choi, J. Hong, J. Choi, Neurotoxicology 2020,
+77, 30; b) P. Li, T. Xu, S. Wu, L. Lei, D. He, J. Appl. Toxicol. 2017, 37,
+1140.
+[8] a) K. J. Yu, D. Kuzum, S.-W. Hwang, B. H. Kim, H. Juul, N. H. Kim,
+S. M. Won, K. Chiang, M. Trumpis, A. G. Richardson, H. Cheng, H.
+Fang, M. Thompson, H. Bink, D. Talos, K. J. Seo, H. N. Lee, S.-K.
+Kang, J.-H. Kim, J. Y. Lee, Y. Huang, F. E. Jensen, M. A. Dichter, T.
+H. Lucas, J. Viventi, B. Litt, J. A. Rogers, Nat. Mater. 2016, 15, 782;
+b) D. Khodagholy, T. Doublet, P. Quilichini, M. Gurﬁnkel, P. Leleux,
+A. Ghestem, E. Ismailova, T. Hervé, S. Sanaur, C. Bernard, G. G.
+Malliaras, Nat. Commun. 2013, 4, 1575; c) Y. Liu, J. Liu, S. Chen, T. Lei,
+Y. Kim, S. Niu, H. Wang, X. Wang, A. M. Foudeh, J. B.-H. Tok, Z. Bao,
+Nat. Biomed. Eng. 2019, 3, 58; d) J. Viventi, D.-H. Kim, L. Vigeland, E.
+S. Frechette, J. A. Blanco, Y.-S. Kim, A. E. Avrin, V. R. Tiruvadi, S.-W.
+Hwang, A. C. Vanleer, D. F. Wulsin, K. Davis, C. E. Gelber, L. Palmer,
+J. Van Der Spiegel, J. Wu, J. Xiao, Y. Huang, D. Contreras, J. A. Rogers,
+B. Litt, Nat. Neurosci. 2011, 14, 1599.
+[9] a) J. T. Robinson, M. Jorgolli, A. K. Shalek, M.-H. Yoon, R. S. Gertner,
+H. Park, Nat. Nanotechnol. 2012, 7, 180; b) T. J. Oxley, N. L. Opie,
+S. E. John, G. S. Rind, S. M. Ronayne, T. L. Wheeler, J. W. Judy, A. J.
+Mcdonald, A. Dornom, T. J. H. Lovell, C. Steward, D. J. Garrett, B. A.
+Moﬀat, E. H. Lui, N. Yassi, B. C. V. Campbell, Y. T. Wong, K. E. Fox,
+E. S. Nurse, I. E. Bennett, S. H. Bauquier, K. A. Liyanage, N. R. Van
+Der Nagel, P. Perucca, A. Ahnood, K. P. Gill, B. Yan, L. Churilov, C. R.
+French, P. M. Desmond, et al., Nat. Biotechnol. 2016, 34, 320.
+[10] H. Liu, Y. Li, S. Sun, Q. Xin, S. Liu, X. Mu, X. Yuan, K. Chen, H. Wang,
+K. Varga, W. Mi, J. Yang, X.-D. Zhang, Nat. Commun. 2021, 12, 114.
+[11] T. Chung, J. Q. Wang, J. Wang, B. Cao, Y. Li, S. W. Pang, J. Neural Eng.
+2015, 12, 056018.
+[12] Y. Lei, F. Yang, H. Xie, Y. Lei, X. Liu, Y. Si, H. Wang, J. Mater. Chem. A
+2020, 8, 20629.
+[13] M. Van Der Linden, A. J. Van Bunningen, L. Amidani, M. Bransen, H.
+Elnaggar, P. Glatzel, A. Meijerink, F. M. F. De Groot, ACS Nano 2018,
+12, 12751.
+[14] Y. Huang, W. Liu, L. Yang, T. Huang, Y. Jiang, T. Yao, S. Wei, J. Phys.
+Conf. Ser. 2016, 712, 012066.
+[15] a) M. A. Macdonald, D. M. Chevrier, P. Zhang, H. Qian, R. Jin, J. Phys.
+Chem. C 2011, 115, 15282; b) X.-P. Fu, L.-W. Guo, W.-W. Wang, C. Ma,
+C.-J. Jia, K. Wu, R. Si, L.-D. Sun, C.-H. Yan, J. Am. Chem. Soc. 2019,
+141, 4613.
+[16] N. T. Alvarez, E. Buschbeck, S. Miller, A. D. Le, V. K. Gupta, C.
+Ruhunage, I. Vilinsky, Y. Ma, ACS Appl. Bio Mater. 2020, 3, 6478.
+[17] M.-H. Wang, B.-W. Ji, X.-W. Gu, H.-C. Tian, X.-Y. Kang, B. Yang, X.-L.
+Wang, X. Chen, C.-Y. Li, J.-Q. Liu, Biosens. Bioelectron. 2017, 99, 99.
+[18] F. Vitale, S. R. Summerson, B. Aazhang, C. Kemere, M. Pasquali, ACS
+Nano 2015, 9, 4465.
+[19] Y. Liu, J. Li, S. Song, J. Kang, Y. Tsao, S. Chen, V. Mottini, K. Mcconnell,
+W. Xu, Y.-Q. Zheng, J. B.-H. Tok, P. M. George, Z. Bao, Nat. Biotechnol.
+2020, 38, 1031.
+[20] V. Saunier, E. Flahaut, M.-C. Blatché, C. Bergaud, A. Maziz, Biosens.
+Bioelectron. 2020, 165, 112413.
+[21] Y. Fang, A. Prominski, M. Y. Rotenberg, L. Meng, H. Acarón Ledesma,
+Y. Lv, J. Yue, E. Schaumann, J. Jeong, N. Yamamoto, Y. Jiang, B. Elbaz,
+W. Wei, B. Tian, Nat. Nanotechnol. 2021, 16, 206.
+[22] A. Canales, X. Jia, U. P. Froriep, R. A. Koppes, C. M. Tringides, J.
+Selvidge, C. Lu, C. Hou, L. Wei, Y. Fink, P. Anikeeva, Nat. Biotechnol.
+2015, 33, 277.
+[23] A. Togo, L. Chaput, I. Tanaka, Phys. Rev. B 2015, 91, 094306.
+[24] a) J. Rivnay, H. Wang, L. Fenno, K. Deisseroth, G. G. Malliaras, Sci.
+Adv. 2017, 3, e1601649; b) X. Guo, J. Zhang, L. Yuan, B. Xi, F. Gao,
+X. Zheng, R. Pan, L. Guo, X. An, T. Fan, S. Xiong, Adv. Energy Mater.
+2023, 13, 2204376.
+[25] a) X. Wang, X. J. Gao, L. Qin, C. Wang, L. Song, Y.-N. Zhou, G. Zhu,
+W. Cao, S. Lin, L. Zhou, K. Wang, H. Zhang, Z. Jin, P. Wang, X. Gao, H.
+Wei, Nat. Commun. 2019, 10, 704; b) S. Mitchell, R. Qin, N. Zheng, J.
+Pérez-Ramírez, Nat. Nanotechnol. 2021, 16, 129; c) J. Xie, Y. Zheng, J.
+Y. Ying, J. Am. Chem. Soc. 2009, 131, 888; d) H. Tang, Y. Su, B. Zhang,
+A. F. Lee, M. A. Isaacs, K. Wilson, L. Li, Y. Ren, J. Huang, M. Haruta,
+B. Qiao, X. Liu, C. Jin, D. Su, J. Wang, T. Zhang, Sci. Adv. 2017, 3,
+e1700231; e) F. Cao, L. Zhang, Y. You, L. Zheng, J. Ren, X. Qu, Angew.
+Chem., Int. Ed. Engl. 2020, 59, 5108; f) B. Xu, H. Wang, W. Wang, L.
+Gao, S. Li, X. Pan, H. Wang, H. Yang, X. Meng, Q. Wu, L. Zheng, S.
+Chen, X. Shi, K. Fan, X. Yan, H. Liu, Angew. Chem., Int. Ed. Engl. 2019,
+58, 4911; g) K. Fan, J. Xi, L. Fan, P. Wang, C. Zhu, Y. Tang, X. Xu, M.
+Liang, B. Jiang, X. Yan, L. Gao, Nat. Commun. 2018, 9, 1440.
+[26] W. Feng, X. Han, H. Hu, M. Chang, L. Ding, H. Xiang, Y. Chen, Y. Li,
+Nat. Commun. 2021, 12, 2203.
+[27] S. Liu, Y. Zhao, W. Hao, X.-D. Zhang, D. Ming, Biosens. Bioelectron.
+2020, 170, 112645.
+[28] a) A. Vezzani, J. French, T. Bartfai, T. Z. Baram, Nat. Rev. Neurol. 2011,
+7, 31; b) L. Lu, X. Fu, Y. Liew, Y. Zhang, S. Zhao, Z. Xu, J. Zhao, D. Li,
+Q. Li, G. B. Stanley, X. Duan, Nano Lett. 2019, 19, 1577.
+[29] a) B. Hoesel, J. A. Schmid, Mol. Cancer 2013, 12, 86; b) Z. Ji, L. He, A.
+Regev, K. Struhl, Proc. Natl. Acad. Sci. U. S. A. 2019, 116, 9453.
+[30] N. Gouder, J.-M. Fritschy, D. Boison, Epilepsia 2010, 44, 877.
+[31] C. Wang, W. Sun, J. Zhang, J. Zhang, Q. Guo, X. Zhou, D. Fan, H. Liu,
+M. Qi, X. Gao, H. Xu, Z. Gao, M. Tian, H. Zhang, J. Wang, Z. Wei, N.
+J. Long, Y. Mao, C. Li, Nat. Biomed. Eng. 2021, 5, 278.
+[32] A. Suarez-Perez, G. Gabriel, B. Rebollo, X. Illa, A. Guimerà-Brunet,
+J. Hernández-Ferrer, M. T. Martínez, R. Villa, M. V. Sanchez-Vives,
+Front. Neurosci. 2018, 12, 862.
+[33] J. J. Jun, N. A. Steinmetz, J. H. Siegle, D. J. Denman, M. Bauza, B.
+Barbarits, A. K. Lee, C. A. Anastassiou, A. Andrei, Ç. Aydin, M. Barbic,
+Adv. Mater. 2024, 36, 2304297
+© 2023 Wiley-VCH GmbH
+2304297 (13 of 14)
+ 15214095, 2024, 6, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304297 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+T. J. Blanche, V. Bonin, J. Couto, B. Dutta, S. L. Gratiy, D. A. Gutnisky,
+M. Häusser, B. Karsh, P. Ledochowitsch, C. M. Lopez, C. Mitelut, S.
+Musa, M. Okun, M. Pachitariu, J. Putzeys, P. D. Rich, C. Rossant, W.-
+L. Sun, K. Svoboda, et al., Nature 2017, 551, 232.
+[34] L.-C. Wang, M.-H. Wang, C.-F. Ge, B.-W. Ji, Z.-J. Guo, X.-L. Wang, B.
+Yang, C.-Y. Li, J.-Q. Liu, Biosens. Bioelectron. 2019, 145, 111661.
+[35] A. Wang, J. Li, T. Zhang, Nat. Rev. Chem. 2018, 2, 65.
+[36] E. Y. Andrei, D. K. Efetov, P. Jarillo-Herrero, A. H. Macdonald, K. F.
+Mak, T. Senthil, E. Tutuc, A. Yazdani, A. F. Young, Nat. Rev. Mater.
+2021, 6, 201.
+Adv. Mater. 2024, 36, 2304297
+© 2023 Wiley-VCH GmbH
+2304297 (14 of 14)
+ 15214095, 2024, 6, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304297 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

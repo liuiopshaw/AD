@@ -1,0 +1,1378 @@
+Hydrogen Incorporation Selectively Modulates the Catalytic
+Performance of Pd Nanozymes for Cascade-Catalytic Tumor Therapy
+Jiayu Ning,† Xiafeng Zhu,† Tengfei Hu, Chao Xia, Pengfei Hao, Jia Shi, Yijun Fang, Jiaying Xu,
+Duo Zhang, Khemayanto Hidayat, Liqiang Qin, Jianrong Zeng, Xiaomei Shen,* Qianjun He,*
+and Yu Chong*
+Cite This: J. Am. Chem. Soc. 2025, 147, 15519−15533
+Read Online
+ACCESS
+Metrics & More
+Article Recommendations
+*
+sı
+Supporting Information
+ABSTRACT: Pd-based nanozymes have emerged as promising
+alternatives to natural enzymes, but their application is still
+constrained due to suboptimal activity and poor specificity. As
+efficient hydrogen storage nanomaterials, the specific implications of
+implanted hydrogen on the enzyme-mimicking activity of Pd-based
+nanomaterials remain largely uninvestigated. In this study, we
+discovered that hydrogenation process significantly enhances the
+enzyme-like activity of Pd-based nanomaterials, although reaction
+specificity varies in dependence on the synthetic route of Pd
+hydrides. Pd/H2 nanocubes (NCs), which are synthesized by
+directly injecting hydrogen gas into a solution containing Pd NCs,
+exhibit a selective enhancement in antioxidative activity against
+cytotoxic hydrogen peroxide (H2O2), superoxide anion (O2
+•−), and
+hydroxyl radical (•OH) due to the sustained release of bioreductive hydrogen. In contrast, stable Pd hydride NCs, which are
+prepared through the in situ catalytic decomposition of alternative sources of hydrogen atoms, exhibit a remarkable enhancement in
+exclusive H2O2 activation pathways, specifically exhibiting peroxidase (POD)-like and catalase (CAT)-like activities. Multiple
+spectroscopic characterizations and density functional theory (DFT) calculations confirmed that this high catalytic activity and
+specificity of PdH NCs arise from lattice tensile strain and electronic structure change. Based on these findings, a PdH/glucose
+oxidase (GOx) nanocomplex was developed for cascade catalysis in tumor therapy. This work not only reveals that hydride
+formation can influence both the activity and selectivity of Pd nanozymes but also provides a viable strategy for the precise regulation
+of specific enzyme-like activity in hydrogen-loading nanozymes.
+■INTRODUCTION
+The broad applicability of natural enzymes beyond biological
+systems has driven the development of cost-effective
+alternatives that offer enhanced activity and stability. Over
+the past few decades, advances in nanoscience have positioned
+nanozymes as versatile tools in fields such as biomedicine,
+bioanalysis, environmental science, and the food industry,
+owing to their enzyme-mimetic properties.1,2 Various engi-
+neered nanomaterials, including metal-based, metal-oxide or
+sulfide-based, carbon-based, and single-atom nanostructures,
+have been developed to mimic the activities of multiple
+enzymes.3−5 Enhancing the catalytic efficiency of nanozymes
+remains a priority for biomedical applications, with research
+showing that their performance can be fine-tuned through
+modifications in size, morphology, composition, and surface
+structure.6−8 Among these factors, the arrangement of surface
+atoms plays a significant role in catalytic performance.9−11 For
+instance, palladium (Pd) nanocrystals with {100} facets show
+superior oxidase (OXD)- and peroxidase (POD)-like activities
+compared to {111} facets,12 while concave Pd nanostructures
+nanocrystals with high-index {730} facets outperform the
+planar nanostructures with low-index facets in catalyzing
+ascorbate autoxidation.13,14 Additionally, engineered platinum
+(Pt) hollow nanodendrites demonstrate exceptional POD-like
+activity due to optimized Pt atom utilization.14
+In addition to catalytic efficiency, achieving high specificity
+in nanozyme activity has become an area of growing
+interest.15−17 For instance, CeO2 nanomaterials exhibit near
+100% specificity for POD- and catalase (CAT)-like activity on
+{100} surfaces and haloperoxidase (HPO)-like activity on
+{111} surfaces.18 Strained Pd icosahedra demonstrate higher
+POD-like activity than unstrained Pd octahedra despite having
+the same enclosed {111} facets.19 Ru-based nanozymes with
+Received:
+February 4, 2025
+Revised:
+April 15, 2025
+Accepted:
+April 16, 2025
+Published: April 28, 2025
+Article
+pubs.acs.org/JACS
+© 2025 American Chemical Society
+15519
+https://doi.org/10.1021/jacs.5c02114
+J. Am. Chem. Soc. 2025, 147, 15519−15533
+Downloaded via QINGDAO UNIV SCIENCE AND TECHNOLOGY on June 27, 2026 at 10:41:14 (UTC).
+See https://pubs.acs.org/sharingguidelines for options on how to legitimately share published articles.
+
+lattice expansion exhibit simultaneously enhanced activity
+across multienzyme-like activities, including POD, CAT, OXD,
+and glutathione peroxidase (GPx)-like activity.20 These
+findings highlight the challenge of designing nanozymes that
+combine high activity with selectivity while uncovering the
+underlying catalytic mechanisms and shedding light on them.
+Hydrogen gas (H2) has garnered attention as a therapeutic
+agent due to its selective anti-inflammatory and anticancer
+properties.21−25 However, its poor solubility and indiscrimi-
+nate diffusivity often result in suboptimal systemic concen-
+trations and short reaction times. To address these limitations,
+innovative H2 delivery nanoplatforms have been developed.
+Solid hydrogen donors, such as MgH2 and CaH2, have been
+incorporated into oral formulations to improve H2 loading
+capacity.26,27 Pd-based nanomaterials, known for their
+excellent H2 storage properties, stand out for their ability to
+selectively deliver H2, control its release, and facilitate catalytic
+hydrogenation.28−31 Furthermore, despite the effects of
+hydrogen incorporation on the catalytic performance of Pd-
+based materials have been reported, these research all focus on
+industrially catalytic properties such as electrochemical formic
+acid oxidation, electrochemical methanol oxidation reaction,
+and electrocatalytic N2 reduction.10,32−34 The impact of
+hydrogen incorporation on the enzyme-like activity of Pd-
+based nanomaterials has not been previously explored. It
+should be noticed that biomedical enzyme-like catalysis is
+much different from industrial catalysis in terms of reaction
+substrate, reaction condition, catalytic process, and application
+field. In addition, in the biomedical field, researches have
+predominantly focused on the biological functions of
+molecular hydrogen, with hydrogen-storing Pd-based nanoma-
+terials primarily serving as a vector for hydrogen delivery.23
+The influence of hydrogen introduction on the biological
+functions of hydrogen-storing Pd nanocarriers, as well as the
+biological effects it triggers, have long been considerably
+underestimated.
+This study investigates the impact of incorporated H on the
+catalytic efficiency and specificity of H2-storage nanozymes,
+using Pd-based nanomaterials with H2 storage properties as a
+model (Scheme 1). Two types of Pd hydrides were
+engineered: Pd/H2 NCs, synthesized by directly injecting
+hydrogen gas into a solution containing Pd NCs, demonstrated
+a selective enhancement in antioxidative activity against
+cytotoxic hydrogen peroxide (H2O2), superoxide anion
+(O2
+•−), and hydroxyl radical (•OH). This enhancement is
+attributed to the catalytic hydrogenation effect of Pd NCs and
+sustained bioreductive H2 release. In contrast, stable PdH NCs,
+produced through the in situ catalytic decomposition of
+alternative hydrogen sources, exhibited remarkable enhance-
+ment in the exclusive H2O2 activation pathway. Specifically,
+they displayed POD-like and CAT-like activities while their
+OXD-like, SOD-like and •OH scavenging capabilities were
+even lower than those of the Pd NCs counterparts.
+Spectroscopic characterizations and density functional theory
+(DFT) calculations revealed that these improvements arise
+from lattice tensile strain triggered by H incorporation, thereby
+tuning both the structural and electronic properties of Pd
+nanocrystals. Building on these findings, a PdH/glucose
+Scheme 1. Hydrogen Incorporation Selectively Modulates the Catalytic Performance of Pd Nanozymes for Cascade-Catalytic
+Tumor Therapya
+aPd/H2 nanocubes (NCs), synthesized by directly injecting H2 gas into a solution containing Pd NCs, exhibited selective enhancements in
+antioxidative enzyme activities due to the sustained release of bioreductive H2. In contrast, stable PdH NCs, produced through in situ catalytic
+decomposition of an alternative H2 source (DMF), exhibited remarkable enhancement in exclusive H2O2 activation pathways attributable to lattice
+tensile strain and upshifted d-band center. Accordingly, a PdH/GOx nanocomplex was developed for cascade catalysis in tumor therapy.
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.5c02114
+J. Am. Chem. Soc. 2025, 147, 15519−15533
+15520
+
+oxidase (GOx) nanocomplex was developed for cascade
+catalysis in tumor therapy, facilitating the conversion of
+H2O2 into abundant toxic •OH, thereby promoting tumor
+apoptosis and death.
+■RESULTS AND DISCUSSION
+Specifically Enhanced Antioxidative Enzyme-like
+Activities in Pd NCs via H2 Gas Injection. H2 gas was
+employed to introduce H2 into Pd NCs, forming Pd/H2 NCs.
+Initially, cubic Pd NCs were synthesized, followed by H2
+incorporation through bubbling H2 gas into the Pd NCs
+solution leveraging the strong coordination between Pd and H2
+(Figure 1a). Transmission electron microscopy (TEM) images
+(Figure 1b) confirmed that the synthesized Pd NCs exhibited a
+uniform cubic morphology with an average size of 12.1 ± 1.9
+nm. Upon exposure to H2 gas, the solution transitioned from
+orange to dark brown within 5 min and remained stable for an
+extended duration (Figure 1c). The morphology or size of the
+Pd NCs remained unchanged following H2 incorporation, with
+excellent dispersion observed (Figure 1d).23 UV−vis spectros-
+copy revealed a distinct absorbance peak at approximately 280
+nm post-H2 loading, with an enhanced absorption in the visible
+to near-infrared regions compared to the original Pd NCs,
+indicating successful H2 loading (Figure 1e).
+Our previous research has demonstrated that Pd-based
+nanomaterials exhibit strong multienzyme-like performance in
+biomedical applications.12,13 In this study, the enzyme-like
+activities of Pd NCs were evaluated to determine the impact of
+H2 injection. The H2O2-scavenging capacity, assessed using a
+CAT detection kit, was significantly enhanced in Pd/H2 NCs,
+which scavenged 56.6% of H2O2 compared to 33.8% by Pd
+NCs (Figures 1f and S1). Control experiments with hydrogen-
+rich water (HRW) showed minimal effects on H2O2 content,
+suggesting that the enhanced CAT-like activity originated from
+Pd/H2 NCs rather than dissolved hydrogen. The OXD- and
+POD-like activities of Pd NCs were evaluated using 3,3′,5,5′-
+tetramethylbenzidine (TMB) as a substrate. Pd NCs oxidized
+TMB effectively in sodium acetate (NaAc/HAc) buffer, with
+additional enhancement observed in the presence of H2O2,
+demonstrating OXD- and POD-like activities. However,
+hydrogen loading did not further enhance these activities, as
+Pd/H2 NCs exhibited oxidation efficiencies comparable to
+those of Pd NCs (Figures S2 and S3). Superoxide dismutase
+(SOD)-mimicking activity of Pd/H2 NCs toward O2
+•−was
+assessed by monitoring the reduction of O2
+•−radicals using an
+enzymatic generating system and electron spin resonance
+(ESR).35,36 Pd/H2 NCs reduced the ESR signal of BMPO/·
+OOH by 46.5%, surpassing Pd NCs (27.1%) and HRW
+(2.8%), demonstrating enhanced SOD-mimicking activity
+Figure 1. Synthesis of Pd/H2 NCs and the evolution of their enzyme-like properties. (a) Schematic illustration of the synthesis process for Pd/H2
+NCs. (b) TEM image of Pd NCs with a scale bar of 25 nm. (c) Color change of the solution following hydrogen injection. (d) TEM image of Pd/
+H2 NCs. Scale bar = 25 nm. (e) Evolution of UV−vis absorption spectra for Pd NCs after hydrogen treatment. (f−h) Antioxidative enzyme-like
+activities of Pd NCs, Pd/H2 NCs, and hydrogen-rich water (HRW). (i) Schematic illustration and comparison of enzyme-like activities between Pd
+NCs and Pd/H2 NCs. (j) Sustained hydrogen release profile of Pd/H2 NCs using MB as a hydrogen probe. (k) •OH scavenging activity of Pd/H2
+NCs after centrifugal washing. All data are presented as mean ± SD, ***p < 0.001.
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.5c02114
+J. Am. Chem. Soc. 2025, 147, 15519−15533
+15521
+
+(Figures 1g and S4). The •OH scavenging capacity of Pd/H2
+NCs was assessed via the Fenton reaction. While Pd NCs
+reduced the ESR signal intensity of DMPO/•OH adducts by
+approximately 50%, Pd/H2 NCs completely suppressed the
+signal, indicating superior
+•OH scavenging activity. HRW
+reduced the signal by only 10%, further highlighting the
+enhanced performance of Pd/H2 NCs (Figures 1h and S5).
+The overall findings suggest that introducing H2 into Pd NCs
+results in Pd/H2 NCs with selectively enhanced antioxidative
+enzyme-like activities, effectively targeting reactive oxygen
+species (ROS):
+•OH, O2
+•−, and H2O2 (Figure 1i).
+Antioxidative nanozymes are widely recognized for their
+crucial role in combating oxidative stress, a key factor
+underlying numerous diseases and aging processes. The
+development of Pd/H2 NCs with selectively enhanced
+antioxidative enzyme-like activities represents a significant
+advancement in nanozyme-based therapeutics. Their ability to
+combat oxidative stress, combined with the targeted delivery
+capabilities of nanomaterials and sustained release of
+bioreductive hydrogen, makes them highly promising
+candidates for therapeutic applications in neurodegenerative
+diseases, cardiovascular disorders, and other oxidative damage-
+related pathological conditions.
+Previous reports indicate that the H2 incorporated into Pd/
+H2 NCs through normobaric H2 gas bubbling are inherently
+unstable and can be released as bioreductive H2.23 To elucidate
+the mechanism underlying the enhanced antioxidative enzyme-
+like activities of Pd/H2 NCs, methylene blue (MB) was
+employed as an oxidative probe to evaluate their reductivity
+and H2 release. As shown in Figures 1j and S6, Pd/H2 NCs
+exhibited sustained bioreductive H2 release, possibly due to the
+catalytic properties of Pd NCs that facilitate the hydrogenation
+reactions. Notably, the observed H2 release was significantly
+higher than that of HRW, confirming the superior H2 storage
+and release capacity of Pd NCs. To further investigate their
+stability, Pd/H2 NCs were stored for varying durations, and
+their •OH scavenging ratio was measured. As shown in Figure
+S7, Pd/H2 NCs maintained their enhanced •OH scavenging
+capability for over a week. However, centrifugal washing led to
+a significant decline in their
+•OH-scavenging capability,
+rendering it comparable to that of Pd NCs (Figure 1k). This
+reduction is attributed to H2 loss from the Pd NCs during
+washing and disruption of the adsorption−desorption
+equilibrium between dissolved H2 and the Pd NCs in the
+solution (Figure S8). Consequently, the destabilization of the
+aqueous Pd/H2 NC system during washing resulted in
+decreased antioxidative enzyme-like activities. These findings
+confirm that Pd NCs serve as efficient H2 carriers, activating
+H2 into a bioreductive form and exhibiting excellent
+antioxidative enzyme-like properties. However, the instability
+of the Pd/H2 NCs system highlights the need for developing
+stable solution-phase PdH nanostructures. Such advancements
+are essential to fully understanding and optimizing the impact
+of the hydrogenation process on the biomimetic activity of Pd
+nanocrystals.
+Synthesis and Characterization of Stable PdH Nano-
+crystals. In addition to direct H2 gas injection, several
+alternative sources of H atoms have been explored, including
+dimethylformamide (DMF), sodium borohydride (NaBH4),
+formaldehyde (HCOH), and aqueous hydrazine solution
+(N2H4).32,37−42 These methods enable significant H incorpo-
+ration into Pd NCs under controlled temperature and pressure,
+Figure 2. Synthesis and characterization of PdH NCs. (a) Schematic illustration of the synthesis process for PdH NCs. (b) UV−vis spectrum of
+PdH NCs, with the inset displaying the color change of the solution after DMF treatment: (1) Pd NCs; (2) PdH NCs. (c, d) HRTEM images of
+Pd NCs (c) and PdH NCs (d). Scale bar = 5 nm. (e) Lattice spacing measurements for Pd NCs and PdH NCs. (f) Synchrotron XRD pattern of
+PdH NCs. Red and black bars on the x axis indicate the standard diffraction peaks for Pd and PdHx, respectively. (g) XPS spectra of PdH NCs. (h)
+XANES spectra of PdH NCs at the Pd K-edge.
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.5c02114
+J. Am. Chem. Soc. 2025, 147, 15519−15533
+15522
+
+stabilizing H atoms within the lattice structure of Pd crystals to
+form PdH. Among these techniques, DMF was selected as a
+model reaction due to the exceptional long-term stability of the
+resulting PdH nanocrystals at room temperature.
+In a typical synthesis, presynthesized Pd NCs were efficiently
+converted into PdH NCs by heating them in DMF (Figure
+2a). The resulting products were collected through centrifu-
+gation and subjected to sequential ethanol and water washes to
+eliminate residual DMF and adsorbed H2 from the solvent and
+the surface of the Pd NCs. The stable incorporation of H
+atoms within the lattice of Pd NCs was evidenced by a distinct
+color change in the solution, transitioning from orange to dark
+gray. This chromatic shift was more pronounced compared to
+that observed in presynthesized Pd NCs and Pd/H2 NCs
+(Figure 2b). UV−vis absorption spectra revealed further
+attenuation of UV absorption in PdH NCs, confirming
+successful H incorporation. Similar to Pd/H2 NCs, the cubic
+shape and size of the original Pd NCs were preserved in PdH
+NCs (Figure S9).
+Stable H incorporation was hypothesized to induce
+deviations in Pd atom positions within the lattice, leading to
+lattice mismatch and strain. High-resolution transmission
+electron microscopy (HRTEM) confirmed this hypothesis,
+revealing a lattice spacing of 0.197 nm for Pd NCs, consistent
+with a face-centered cubic structure with {100} facets. After
+DMF treatment, PdH NCs displayed a lattice spacing of 0.228
+nm, representing approximately 6.3% lattice expansion
+compared to Pd NCs (Figure 2c−e). While TEM provides
+insights into local structure changes, synchrotron-based X-ray
+diffraction (XRD) was employed to characterize the overall
+crystal structure (Figure 2f). The XRD pattern of Pd NCs
+displayed distinct diffraction peaks characteristic of a face-
+centered cubic (fcc) structure. In PdH NCs, these peaks
+shifted to lower 2θ values, indicating lattice parameter
+expansion. Furthermore, the emergence of a PdH phase was
+confirmed, with diffraction peaks aligning closely with standard
+values for PdH0.64. The expanded Pd lattice and formation of
+PdH NCs were further corroborated by the reduction in unit
+cell parameters.
+Previous theoretical and experimental studies suggest that
+lattice expansion is associated with a reduction in Pd 3d
+binding energy.39 To further investigate this alteration in
+electronic structure, X-ray photoelectron spectroscopy (XPS)
+was performed. A negative shift of approximately 0.2 eV in the
+Pd 3d5/2 peak was observed following surface reconstruction,
+signifying modifications in electronic structure and a down-
+ward shift of the d-band center (Figure 2g). X-ray absorption
+near-edge structure (XANES) spectroscopy further confirmed
+Figure 3. Selectively enhanced CAT- and POD-like activities of PdH NCs. (a) Photographs illustrating O2 generation for Pd NCs and PdH NCs in
+the presence of H2O2 within PBS buffer (pH = 7.0). (b) ESR spectra of samples containing H2O2 solution with or without Pd NCs or PdH NCs.
+(c) Changes in O2 concentration following the addition of Pd NCs or PdH NCs to H2O2. (d) Decomposition of H2O2 upon the addition of Pd
+NCs or PdH NCs, monitored by absorbance at 240 nm. (e) Photographs depicting TMB oxidation for Pd NCs and PdH NCs in the presence of
+H2O2 in NaAc/HAc buffer (pH = 4.6). (f) Time-dependent absorbance of TMB at 652 nm upon the addition of H2O2 and Pd NCs or PdH NCs.
+(g) Fluorescence spectra of TA in the presence of H2O2 and PdH NCs. (h) ESR spectra of DMPO/•OH adducts obtained from samples
+containing DMPO, H2O2, NaAc/HAc buffer (pH = 4.6), and either Pd NCs or PdH NCs. EGCG was added as a scavenger to consume the
+generated •OH radicals. (i) Statistical charts comparing the changes in enzyme-like activities of PdH NCs with Pd NCs. (j) Schematic illustration
+of the selectively enhanced CAT- and POD-like activities of PdH NCs toward H2O2. All data are presented as mean ± SD.
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.5c02114
+J. Am. Chem. Soc. 2025, 147, 15519−15533
+15523
+
+these findings. As illustrated in Figure 2h, the edge position for
+PdH NCs shifted to higher energy compared to Pd NCs,
+suggesting reduced electron density around Pd atoms in PdH
+NCs, consistent with the XPS results. These findings highlight
+the robust stability of PdH NCs under lattice tensile strain and
+provide a foundation for further exploration of hydrogenation
+effects on the biomimetic activity of Pd nanocrystals.
+Selectively Promoted CAT- and POD-like Activities of
+PdH Nanocrystals. The incorporation of H atoms alters the
+lattice constant of Pd nanostructures and induces surface
+strain, which will significantly influence the surface character-
+istics and biocatalytic properties of Pd NCs. Accordingly, the
+enzyme-like activities of PdH NCs were subsequently
+evaluated. Unlike Pd/H2 NCs, PdH NCs did not exhibit
+enhanced scavenging abilities for •OH and O2
+•−compared to
+pristine Pd NCs (Figures S10 and S11). Moreover, the total
+antioxidative capacity of PdH NCs against DPPH was slightly
+lower than that of pristine Pd NCs (Figure S12), possibly due
+to a minor decrease in dispersity following multiple washes.
+The H2O2 scavenging capability of PdH NCs was then
+assessed by examining their ability to catalyze the decom-
+position of H2O2 into oxygen (O2) under neutral conditions.
+Unexpectedly, the introduction of PdH NCs into an H2O2
+solution led to the rapid generation of macroscopic O2
+bubbles, which were absent in the Pd NCs-H2O2 solution
+within the first 5 min (Figure 3a). Over time, the quantity and
+size of O2 bubbles in the PdH NCs solution surpassed those
+observed in the Pd NCs solution. Quantitative analysis using
+ESR oximetry revealed a significant broadening of the ESR
+signal line width and reduced peak intensity, indicative of a
+faster rate of O2 generation (Figure 3b).36 The dissolved O2
+concentration increased from 0.33 mM to 0.47 mM for Pd
+NCs and to 0.72 mM for PdH NCs after 20 min (Figure 3c).
+These findings indicate that PdH NCs catalyze the conversion
+of H2O2 into O2 in a concentration- and time-dependent
+manner, with a significantly higher rate of dissolved O2
+production compared to Pd NCs (Figures S13 and S14).
+The consumption of H2O2 was monitored by measuring the
+intensity of its characteristic absorption at 240 nm. As shown
+in Figure 3d, H2O2 content decreased gradually in the presence
+of Pd NCs, as evidenced by reduced absorption at this
+wavelength. However, PdH NCs induced a pronounced and
+time-dependent reduction in H2O2, with a consumption rate at
+least 5 times higher than that of Pd NCs. Validation using a
+H2O2 assay kit confirmed that H2O2 elimination increased with
+PdH NCs concentration, achieving complete H2O2 removal at
+50 μg/mL within 5 min, while Pd NCs at the same
+concentration scavenged only about 22.7% of H2O2 (Figures
+S15 and S16). Kinetic analysis showed that both Pd NCs and
+PdH NCs followed Michaelis−Menten kinetics across H2O2
+concentrations ranging from 5 to 60 mM (Figure S17). The
+specific activity of PdH NCs was determined to be 20 units/
+mg, nearly 5 times greater than that of Pd NCs, further
+demonstrating the enhanced CAT-like activity of PdH NCs.
+Moreover, PdH NCs showed a minimal decline in catalytic
+activity after seven cycles, indicating sustained catalytic
+capacity under physiological conditions (Figure S18). Unlike
+natural CAT, the catalytic activity of PdH NCs increased
+linearly with pH, reaching optimal activity in neutral to basic
+environments (Figure S19). These findings suggest that the
+stable incorporation of H atoms into the Pd crystal lattice
+selectively enhances the CAT-like activity of Pd nanocrystals.
+The POD- and OXD-like activities of PdH NCs were next
+evaluated under mildly acid conditions using TMB as the
+chromogenic substrate. As shown in Figure S20, the
+absorbance of oxidized TMB at 652 nm in the presence of
+PdH NCs without H2O2 was slightly lower than that observed
+for Pd NCs, suggesting that lattice expansion does not
+influence the OXD-like activity of Pd NCs. However, PdH
+NCs rapidly catalyzed the oxidation of TMB by H2O2,
+producing a pronounced blue oxidation product within 5 min,
+whereas a comparable concentration of Pd NCs induced only a
+weak color change (Figure 3e). Extending the duration to 30
+min intensified the color of Pd NCs, although it remained
+significantly less intense than that of the PdH NCs. The UV−
+vis spectra showed a consistent increase in TMB absorbance
+for PdH NCs over time, plateauing at 50 min, a significantly
+faster rate compared to Pd NCs (Figures 3f and S21). These
+results indicate that while both Pd NCs and PdH NCs catalyze
+TMB oxidation, PdH NCs exhibit much higher POD-like
+activity. To quantify the POD-mimicking efficiency of PdH
+NCs, the influence of H2O2 concentrations on the TMB
+oxidation rate was examined. Typical Michaelis−Menten
+curves were derived for both Pd NCs and PdH NCs (Figure
+S22). The apparent specific activity for the POD-like activity of
+PdH NCs at pH 4.6 was approximately 1,500 units/mg, four
+times greater than that of Pd NCs, indicating that lattice
+expansion significantly enhances the POD-like activity of Pd
+NCs. In addition, we conducted a preliminary comparison of
+the POD-like activities of PdH nanomaterials with other
+typical metals and metal oxide nanomaterials reported in the
+literature.6,43 As shown in Figure S23, the specific activity of
+PdH NCs is not only significantly higher than that of Pd NCs
+but also exceeds those of other metals nanozymes (such as
+monometallic Ru NPs or alloyed AuPtCo NPs) and metal
+oxides (e.g., Fe3O4 NPs). The potential involvement of •OH in
+the enhanced POD-like activity was further explored using
+terephthalic acid (TA) as a fluorescent sensor, which
+specifically reacts with •OH to produce a fluorescence signal
+at 435 nm. Figure 3g illustrates a strong fluorescence signal at
+435 nm upon adding H2O2 and PdH NCs, confirming the
+selective enhancement of POD-like activity by Pd NCs under
+mildly acid conditions. To further verify this result, we
+employed ESR spectroscopy to detect the generated
+•OH
+radicals. As shown in Figure 3h, samples containing the spin
+trap DMPO and H2O2 exhibited no ESR signal. However, the
+addition of either PdH NCs or Pd NCs produced a distinct
+1:2:2:1 ESR signal corresponding to the standard
+DMPO/•OH adduct, indicating that both Pd-based nano-
+zymes can catalyze the generation of
+•OH from H2O2.
+Notably, the signal intensity was significantly enhanced in
+the presence of PdH NCs compared to Pd NCs, correlating
+with the enhanced POD-like activity observed for PdH NCs.
+Moreover, the introduction of the •OH scavenger epigalloca-
+techin gallate (EGCG) completely quenched the DMPO/•OH
+signal, further confirming that PdH NCs exert their POD-like
+activity by catalyzing the generation of •OH from H2O2. To
+further investigate the surface changes of PdH NCs during the
+catalytic process, we conducted in situ attenuated total
+reflection Fourier transform infrared (ATR-FTIR) spectra.
+Following the addition of H2O2, a distinct vibrational signal
+appeared at 1625 cm−1, which is attributed to the formation of
+adsorbed OH* intermediates during the activation of H2O2
+(Figure S24). The significantly higher intensity observed in
+PdH NCs relative to Pd NCs reflects the generation of more
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.5c02114
+J. Am. Chem. Soc. 2025, 147, 15519−15533
+15524
+
+OH* intermediates, explaining the superior catalytic perform-
+ance of PdH NCs. The hydroxyl spillover effect clarifies the
+origin of abundant OH*: H2O2 is initially activated into OH*
+on PdH sites (denoted as OH*/PdH), which then desorbs as
+•OH radicals.44−46
+Finally, the stability of PdH NCs was systematically
+evaluated to assess their robustness in biomedical applications.
+As shown in Figures S25 and S26, PdH NCs maintained
+effective catalytic activity over a wider pH range and at higher
+temperatures, indicating their potential for applications under
+various conditions. In addition, the POD-like enzymatic
+activity of PdH NCs remained stable over extended periods
+in both water and PBS (Figure S27). Furthermore, we
+performed TEM characterization of PdH NCs dispersed in
+water over different time periods. As shown in Figure S28, the
+lattice spacing of PdH NCs aged for 60 and 180 days remained
+consistent with that of newly synthesized PdH NCs, and was
+significantly wider than that of Pd NCs. These results
+collectively demonstrate the robust stability of the PdH NCs
+after long-term storage.
+The aforementioned results highlight that stable PdH NCs,
+produced through in situ hydrogenation of Pd NCs, exhibit
+specific enhancements in POD- and CAT-like activities
+through selective activation of H2O2 (Figure 3i,j). In contrast
+to the Pd/H2 NCs, the OXD-like, SOD-like, and
+•OH
+scavenging capabilities of PdH NCs remained unchanged or
+were even lower than those of the Pd NCs (Figure S29). Thus,
+the stable incorporation of H atoms into the Pd crystal lattice
+selectively enhances POD- and CAT-like activities, likely due
+to modifications in the lattice constants and surface strain.
+Universality Testing of Different PdH Nanostruc-
+tures. To verify the universality of selectively enhanced
+nanozyme activities of PdH nanocrystals, diverse models of
+PdH nanostructures, including varying H content, alternative
+H sources, and different morphologies of Pd nanocrystals, were
+designed to determine the impact of stable H incorporation on
+their enzyme-mimicking activities. Initially, PdH NCs with
+varying levels of hydride formation were developed to evaluate
+how the content of incorporated H influences their POD- and
+CAT-like activities (Figure 4a). It has been reported that the
+degree of hydride formation can be modulated by adjusting
+reaction temperature or time.32,41 For instance, the H:Pd ratio
+of PdH NCs, when DMF served as the H sources, increases
+from approximately 0.33 after 30 min of reaction to around
+0.43 after 4 h. In this study, PdH NCs were monitored at
+specific time points, namely, PdH-0.2 NCs (0.2 h), PdH-4
+NCs (4 h), and PdH-6 NCs (6 h), to assess the influence of
+stable H incorporation (Figure 4b). When Pd NCs were
+annealed in DMF for 10 min, the H2O2 elimination capability
+of the resulting PdH NCs improved from 27.6% to 42.7%,
+further increasing to 82.8% after 4 h of reaction. The CAT-like
+activity plateaued once the H:Pd ratio reached its maximum
+value, corresponding closely with the degree of hydride
+formation. A similar trend was observed for POD-like activity,
+Figure 4. Universality testing of different PdH nanostructures. (a) Diagram of the synthesis of PdH NCs with varying levels of hydride formation:
+PdH-0.2 NCs (10 min), PdH-4 NCs (4 h), and PdH-6 NCs (6 h). (b) Changes in the CAT- and POD-like activities after treating the Pd NCs with
+DMF for different durations (0.2 h, 4 and 6 h). (c) Changes in the CAT- and POD-like activities of PdH NCs after annealing at 500 °C for 2 h in
+an argon atmosphere. (d) Diagram of the synthesis of PdH NCs using N2H4 as the hydrogen precursor. (e) Modification of the enzyme-like
+activities of Pd NCs after treating with N2H4. (f) Schematic illustration of the synthesis of PdH NSs using DMF as the hydrogen precursor. (g)
+Changes in the CAT- and POD- like activities of the PdH NSs. All data are presented as mean ± SD.
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.5c02114
+J. Am. Chem. Soc. 2025, 147, 15519−15533
+15525
+
+which increased with the annealing time of DMF and peaked
+after 4 h of reaction. These findings indicate a positive
+correlation between the content of H incorporation and the
+selectively enhanced POD- and CAT-like activities of PdH
+NCs. Next, MB was employed as an oxidative probe to
+monitor potential hydrogen release from PdH NCs. As shown
+in Figure S30, in contrast to Pd/H2 NCs, no hydrogen release
+was detected in the PdH NCs solution within 60 min.
+Moreover, no hydrogen signals were detected even in PdH
+NCs solution synthesized 180 days prior. These findings
+demonstrate the excellent long-term stability of our synthe-
+sized PdH NCs in water, indicating that the enzyme-like
+activity of PdH NCs is independent of H2 generation.
+It has been documented that PdH nanocrystals derived from
+organic compounds such as DMF are highly stable at room
+temperature, but a transformation from PdH to Pd nanocryst-
+Figure 5. DFT calculation results. (a, b) Self-supplying hydrogen catalytic mechanism for PdH exhibiting (a) POD-like and (b) CAT-like activities
+and (c, d) the corresponding reaction energy profiles (PdH_2) along (c) POD and (d) CAT reaction mechanism paths, in which PdH_1 denotes
+the conventional catalytic mechanism. (e) Lattice structure and interatomic distance of PdH and Pd. (f) Projected density of states (PDOS) of Pd
+(top panel) and PdH (bottom panel). The Fermi levels were set to 0 eV. The black dashed line denotes the position of the d-band center (δd).
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.5c02114
+J. Am. Chem. Soc. 2025, 147, 15519−15533
+15526
+
+als can occur under an argon atmosphere at 400 °C, with
+complete conversion back to Pd nanocrystals at 500 °C.41
+Inspired by this property, presynthesized PdH NCs were
+annealed at 500 °C in an argon atmosphere for 2 h to
+transform them into Pd NCs (Figure 4c). Following H
+spillover, the CAT- and POD-like activities of PdH NCs were
+significantly reduced, underscoring the critical role of stable H
+incorporation in enhancing the catalytic properties of PdH
+NCs toward H2O2.
+Subsequently, the possibility of achieving similar catalytic
+enhancement using alternative H sources or different
+morphologies was investigated. Recently, N2H4 has been
+identified as a new H source for producing a stable PdH
+phase.32 Accordingly, we converted Pd NCs into PdH NCs
+using a low concentration of N2H4 under mild temperature
+and pressure conditions (Figure 4d). As shown in Figure S31,
+the lattice spacing of PdH NCs synthesized using N2H4 is
+increased to 0.229 nm, which is consistent with the results
+obtained using DMF. The resulting PdH NCs were tested as
+biocatalysts for H2O2 reduction, and both CAT- and POD-like
+activities exhibited stable enhancements, with significantly
+higher activities compared to Pd NCs (Figure 4e). In addition
+to H2 sources, the morphology of Pd nanocrystals also plays a
+substantial role in influencing enzyme-mimicking activities. To
+examine whether this feature extends to PdH nanocrystals with
+different morphologies, spherical Pd nanostructures (Pd NSs)
+were prepared, and the spherical PdH nanostructures (PdH
+NSs) were synthesized using DMF as a precursor (Figure
+4f).47 Consistent with the PdH NCs, hydrogen incorporation
+has no effect on the size or morphology of the Pd NSs (Figure
+S32). Similar to Pd NCs, the spherical Pd NSs also exhibited
+both POD- and CAT-like activities (Figure 4g). Notably, the
+stable H incorporation into spherical Pd crystals significantly
+enhanced their catalytic performance toward H2O2.
+In summary, various PdH nanostructures were designed
+with varying H content, alternative H sources, and different
+morphologies of Pd nanocrystals. The findings consistently
+demonstrated that stable H incorporation plays a critical role
+in selectively enhancing POD- and CAT-like activities of Pd
+nanocrystals.
+Selectively Enhanced Catalytic Mechanism of PdH
+NCs toward H2O2. To elucidate the role of stably
+incorporated H in selectively enhancing the catalytic activity,
+the reaction mechanisms and energy profiles for the POD- and
+CAT-like activities of PdH NCs were systematically inves-
+tigated. Due to its hydrogen-rich lattice structure, PdH NCs
+are hypothesized to function as an in situ H reservoir,
+dynamically supplying H during catalytic processes. To validate
+this hypothesis, a hydrogen-supplying mechanism for both
+POD- and CAT-like activities of PdH was proposed and
+compared with conventional catalytic pathways (Figure 5a,b).
+The corresponding reaction energy profiles are presented in
+Figure 5c,d.
+For the POD-like activity of PdH, the catalytic mechanism
+(Figure 5a) can be delineated into three stages: (1)
+H2O2adsorption and isomerization. H2O2 molecules adsorb
+onto the PdH(100) surface, forming a stable adsorption
+complex. This step is thermodynamically more favorable on
+PdH (−0.53 eV) than on Pd (−0.22 eV) (Figure 5c). The
+adsorbed H2O2 subsequently undergoes isomerization and
+decomposes into H2O and O* adsorbates, consistent with the
+conventional mechanism of POD.48 (2) Lattice H involvement.
+The O* adsorbates capture two H atoms from the PdH lattice,
+forming OH* and H2O* intermediates and creating H
+vacancies within the lattice. This step is unique to the H-
+supplying mechanism and is thermodynamically more
+favorable (reaction energy, 0.36 eV) compared to the
+traditional pathway (0.67 eV). (3) Substrate oxidation and
+lattice regeneration. The PdH facilitates the oxidation of a
+substrate, such as TMB, yielding oxTMB while restoring the
+lattice to its original state by refilling the H vacancies with
+substrate-derived H atoms. This H-supplying mechanism
+enhances the catalytic efficiency of PdH NCs, particularly in
+the rate-determining step of H2O2 activation, which exhibits a
+lower reaction energy (0.64 eV) for H2O desorption compared
+to Pd (0.72 eV). These findings validate the hypothesis that H-
+rich lattice of PdH actively participates in the catalytic process,
+contributing to its superior POD-like activity compared to Pd.
+Based on these findings, the CAT-like activity of PdH NCs
+was further explored leveraging its unique H-supplying
+capability. Unlike the POD-like mechanism, which primarily
+involves H atoms in oxidizing substrates, the CAT-like
+mechanism highlights PdH’s ability to facilitate the dispro-
+portionation of H2O2 (Figure 5b). In the proposed CAT
+mechanism, PdH undergoes the following steps: (1) Adsorbed
+H2O2 molecules homolytically cleave into two OH*
+adsorbates. (2) Lattice H atoms are directly utilized to
+generate two H2O molecules, leaving H vacancies in the PdH
+lattice. This step differs from the conventional mechanism,
+which relies on a second H2O2 molecule as the hydrogen
+source. (3) The H vacancies are subsequently filled by H
+atoms from an H2O2 molecule, resulting in the formation of O2
+and the restoration of PdH to its initial state, completing the
+catalytic cycle. The reaction energy profile for this mechanism
+(Figure 5d) demonstrates that PdH exhibits significantly
+enhanced CAT-like activity under the H-supplying pathway.
+These results further highlight the critical role of lattice H in
+modulating the catalytic efficiency and reactivity of PdH.
+In addition, we also analyzed the OXD-like activity, •OH
+scavenging activity and the SOD-like activity of Pd and PdH
+from the perspective of theoretical calculation. It has been
+reported that the adsorption and activation of O2 on the
+surface of nanomaterials can describe their OXD-like activity.
+The adsorption energy can serve as a physical descriptor of
+OXD-like activity and is numerically consistent with the
+Brønsted−Evans−Polanyi (BEP) relationship with the activa-
+tion energy of O2. To verify phenomenon observed in our
+experiments, we analyzed the adsorption energies of O2 on
+both Pd and PdH surfaces.12,49 As shown in Figure S33, Pd can
+activate oxygen, stretching its O−O bond length from 1.23 Å
+in vacuum to 1.33 Å. The adsorption energy is −0.88 eV.
+When H is incorporated into the Pd lattice to form stable PdH,
+its ability to activate oxygen becomes weaker. The O−O bond
+length of adsorbed O2 is shorter than that on Pd, at 1.31 Å, and
+the adsorption energy is −0.49 eV, which is 44% lower than
+that on Pd. This indicates that after hydrogen incorporation,
+the affinity for O2 is significantly decreased, and the activation
+ability is significantly weakened. Consequently, the OXD-like
+activity of PdH is weaker compared to Pd. The
+•OH
+adsorption energies on Pd and PdH, which are calculated to
+be −4.83 and −4.87 eV, respectively, are quite close (Figures
+4c and S34). This could explain why hydrogen incorporation
+fails to significantly enhance the •OH scavenging capacity.
+O2
+•−is a Brønsted base with a pKb value of 9.12, making it
+prone to capturing protons from water to form •OOH. To
+investigate the SOD-like activity, we calculated the dispro-
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.5c02114
+J. Am. Chem. Soc. 2025, 147, 15519−15533
+15527
+
+portionation reaction pathway of
+•OOH on these two
+nanomaterial surfaces (Figure S35). The reaction energy
+pathway diagram shows that PdH has a weaker affinity for
+•OOH compared to Pd (−2.46 vs −2.65 eV). However, the
+desorption of the disproportionation products H2O2 and O2 is
+more favorable on PdH than on Pd. These results demonstrate
+that hydrogen incorporation selectively enhances the POD-like
+and CAT-like activities of Pd NCs, whereas no significant
+enhancement was observed in OXD-like activity or the
+scavenging efficiency of hydroxyl radicals •OH and O2
+•−.
+Structural and Electronic Modifications Induced by H
+Incorporation in the Pd Lattice. H atoms can be
+intercalated into the Pd crystal lattice leading lattice expansion,
+companying with structural and electronic transformations. To
+confirm these effects, structure optimization was performed on
+the primitive cells of Pd and PdH via DFT calculations. The
+optimized structures revealed significant lattice expansion by
+4.9%, with the lattice parameters increasing from a = b = c =
+3.89 Å to a = b = c = 4.08 Å, which is well consistent with the
+lattice expansion observed in the experiment. The correspond-
+ing interatomic Pd−Pd distance increased from 2.75 to 2.89 Å,
+highlighting the significant structural changes induced by H
+intercalation (Figure 5e). This H-enriched lattice structure
+effectively serves as a dynamic reservoir for H, thereby
+facilitating H-supplying chemical reactions.
+The impact of stable H incorporation on the electronic
+structure was further explored using the projected density of
+states (PDOS) analysis for both Pd and PdH (Figure 5f). The
+results indicated a narrowing of the d-bandwidth, along with an
+upward shift of the d-band center (from −1.66 to −1.54 eV)
+and the Fermi levels (from −2.63 to −2.36 eV) (Figure S36).
+These electronic modifications suggest the enhanced inter-
+actions between PdH and potential substrates, implying an
+increased adsorption capacity to H2O2 (−0.53 eV/PdH vs
+−0.22 eV/Pd).
+Collectively, these findings demonstrate that H-intercala-
+tion-induced lattice expansion is an effective strategy for tuning
+both the structural and electronic properties of Pd nanocryst-
+als, paving the way for their novel applications in biocatalysis
+and materials science.
+Cascade-Catalytic Reaction of PdH@GOx NCs and
+Their Therapeutic Efficacy in Tumor Treatment. Nano-
+zymes exhibiting POD-like activities have been widely
+recognized for their ability to convert endogenous H2O2 into
+highly toxic •OH, which are crucial for catalytic tumor therapy,
+particularly in tumor microenvironments characterized by
+elevated H2O2 levels and acidic conditions.50,51 The
+introduction of H can selectively enhance the catalytic activity
+of Pd NCs toward H2O2. However, the limited intracellular
+levels of H2O2 and the mild acidity in tumor tissues could
+hinder the persistence and efficiency of the PdH NCs-catalyzed
+reaction, potentially reducing their anticancer efficacy. To
+address these challenges, GOx was combined with Pd NCs to
+construct a cascade catalytic system. GOx oxidizes glucose into
+gluconic acid and H2O2, simultaneously increasing substrate
+availability for POD-like reactions and enhancing the acidic
+conditions of the tumor microenvironment. These comple-
+Figure 6. Synthesis of PdH@GOx NCs and their in vitro and in vivo tumor therapeutic efficacy. (a) Schematic illustration depicting the ROS
+generation through cascade reaction facilitated by PdH@GOx NCs. (b) The absorbance of TMB at 652 nm for detecting •OH generated by the
+cascade reaction of glucose and Pd@GOx NCs or PdH@GOx NCs. (c−e) Cell viability (c), cell apoptosis (d), and intracellular ROS detection (e)
+of 4T1 tumor cells incubated with PBS, GOx, Pd NCs, PdH NCs, Pd@GOx NCs, or PdH@GOx NCs, respectively. (f) Variation in tumor volume
+of mice after different treatments. (g, h) Tumor weight (g) and size (h) collected from different groups of mice at day 14 postinjection.
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.5c02114
+J. Am. Chem. Soc. 2025, 147, 15519−15533
+15528
+
+mentary effects synergistically amplify the catalytic activity of
+PdH NCs, promoting more robust
+•OH production and
+enhancing tumor cell death.
+The PdH@GOx NCs were synthesized by first coating
+negatively charged PdH NCs with positively charged poly-
+(allylamine hydrochloride) (PAH). Subsequently, the GOx
+molecules were covalently attached to the amino groups of
+PAHs via carbodiimide-catalyzed amide bond formation
+(Figure 6a).52,53 Zeta potential measurements confirmed the
+successful assembly of the nanocomposites, with the surface
+charge shifting from −16 to +45 mV after PAH onto the PdH
+NCs and subsequently to −3 mV upon GOx attachment
+(Figure S37). The UV−vis absorption peak of GOx at 280 nm
+was observed in PdH@GOx NCs, further verifying successful
+loading (Figures S38 and S39). Quantitative analysis indicated
+a maximum GOx loading capacity of approximately 9.8 wt %.
+At this concentration, the presence of GOx did not noticeably
+affect the enzyme-like activity of PdH NCs (Figure S40). In
+the PdH@GOx NCs system, GOx catalyzed the decom-
+position of glucose, producing gluconic acid and H2O2. The
+increased availability of H2O2 enhanced the efficiency of POD-
+like catalytic reactions, significantly improving the production
+of •OH. Concurrently, gluconic acid lowered the pH of the
+reaction system, further promoting the POD-like activity of
+PdH NCs and enhancing their anticancer efficacy (Figure 6a).
+To verify the activity of PdH NCs@GOx in converting
+glucose to gluconic acid, PdH@GOx NCs were added to a
+glucose solution, and the pH changes during the reaction were
+monitored. The pH of a glucose solution initially remained
+near 7.0. However, upon the addition of PdH@GOx NCs, the
+pH rapidly decreased to below 4.8 within 2 h (Figure S41),
+indicating sustained catalytic production of gluconic acid and a
+corresponding decrease in pH over time. Notably, after 1 h of
+reaction, the rate of pH reduction in the PdH@GOx NCs
+group was significantly faster than that observed in the Pd@
+GOx NCs group. These findings suggest that the enhanced
+POD-like activity of PdH@GOx NCs accelerates the catalytic
+oxidation of glucose by promoting the decomposition of H2O2,
+thereby improving the efficiency of gluconic acid production.
+The changes in concentrations of H2O2, an intermediate
+product in the cascade catalytic reaction involving PdH@GOx
+NCs, were subsequently analyzed. As shown in Figure S42,
+Pd@GOx NCs or PdH@GOx NCs elevated H2O2 concen-
+trations in the glucose solution, confirming that GOx retained
+its enzymatic activity. However, the rate of increase in H2O2
+concentrations was slower in the PdH@GOx NCs solution,
+primarily due to the higher POD-like activity of PdH NCs,
+which rapidly catalyzed and decomposed some of the
+generated H2O2 into O2 or
+•OH. Furthermore, the
+concentrations of H2O2 were positively correlated with the
+concentrations of PdH@GOx NCs (Figure S43). To analyze
+the dynamic changes of H2O2 and pH in the tumor
+microenvironment, we used homogenates of mouse tumor
+tissues to simulate a realistic tumor environment (Figure S44).
+The result further demonstrate that PdH@GOx NCs can
+catalyze the oxidation of glucose in the tumor microenviron-
+ment. Based on these findings, the ability of PdH@GOx NCs
+to produce •OH in the cascade catalytic reaction involving
+glucose was assessed. After the addition of PdH@GOx NCs,
+the absorbance of TMB at 652 nm increased, indicating the
+production •OH (Figure 6b). Compared to Pd@GOx NCs,
+PdH@GOx NCs demonstrated higher absorbance, reflecting
+their superior efficiency in generating
+•OH through the
+cascade catalytic reaction. Additionally, the
+•OH concen-
+trations in the solution were positively correlated with both the
+concentrations of PdH@GOx NCs and the reaction time
+(Figure S45).
+Encouraged by the selectively enhanced enzyme-like
+activities of PdH NCs and the reliable H2O2 supply provided
+by GOx, the potential therapeutic efficacy of the cascade-
+catalyzed PdH@GOx NCs against 4T1 cells was investigated
+in vitro. Incubation with various concentrations of GOx or Pd
+NCs for 24 h did not significantly affect cell viability (Figure
+6c), indicating their good biocompatibility. In contrast, PdH
+NCs induced cell death in 4T1 cells in a concentration-
+dependent manner. Notably, PdH NCs exhibited negligible
+cytotoxicity to normal vascular endothelial cells (HUVECs)
+and intestinal epithelial cell line 6 (IEC-6), even at
+concentrations as high as 200 μg/mL (Figure S46). This
+selectivity is likely due to the elevated oxidative stress state of
+tumor cells, which facilitates the POD-like activity of the PdH
+NCs and leads to the generation of more toxic •OH radicals. In
+addition, PdH@GOx NCs exhibited even greater cytotoxicity
+against 4T1 cells compared to PdH NCs, highlighting the
+additional contribution of GOx in elevating cell death through
+cascade catalytic reactions. To further assess the cytotoxic
+effects on tumor cells, live/dead cell staining was conducted
+using calcein acetoxymethyl ester (calcein-AM, green) and
+propidium iodide (PI, red). As depicted in Figure S47, cells
+treated with Pd NCs exhibited strong green fluorescence,
+indicating most cells remained viable. In contrast, a significant
+number of red-stained dead cells were observed in 4T1 cells
+treated with PdH NCs, and nearly all cells were killed
+following treatment with PdH@GOx NCs, consistent with cell
+viability results. To compare the levels of cytosolic ROS in 4T1
+cells, laser scanning confocal microscopy was employed using
+the fluorescent probe 2′,7′-dichlorofluorescein diacetate
+(DCFH-DA) as a ROS indicator. The green fluorescence
+intensity in 4T1 cells treated with PdH@GOx NCs was much
+stronger than that observed in cells treated with PdH NCs or
+Pd@GOx at the same concentration, indicating a higher level
+of oxidative stress induced by PdH@GOx NCs (Figures S48
+and S49). The apoptosis-inducing capacity of PdH@GOx NCs
+was investigated by analyzing the apoptosis rates of 4T1 cells
+using flow cytometry with Annexin V-FITC and PI staining.
+The percentages of cells in the early and late apoptotic stages
+were significantly increased following treatment with PdH@
+GOx NCs (Figure 6d,e). This apoptotic pathway is likely due
+to ROS levels exceeding the critical threshold, disrupting the
+ROS scavenging system and inducing cellular apoptosis.
+To investigate the in vivo anticancer effects, the therapeutic
+efficacy of PdH@GOx NCs was evaluated in 4T1-tumor-
+bearing mice. Approximately 1.0 × 106 4T1 cells were
+subcutaneously implanted into the right flank of 6−8-week-
+old Balb/c female mice. Once the tumor volume reached
+approximately 100 mm3, the mice were randomly assigned to
+receive intravenous administration of one of the following
+treatments on days 1, 3, and 5: PBS, GOx, Pd NCs, PdH NCs,
+Pd@GOx NCs, and PdH@GOx NCs (Figure S50). As shown
+in Figure 6f, tumors grew rapidly in the mice treated with PBS.
+Treatments with GOx or Pd NCs induced mild tumor
+inhibition, primarily due to glucose depletion and the POD-
+like activity of Pd NCs within the tumor microenvironment. In
+contrast, PdH NCs and Pd@GOx NCs demonstrated
+moderate therapeutic effects, with tumor inhibition rates of
+32.5% and 49.6%, respectively. These results highlight the
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.5c02114
+J. Am. Chem. Soc. 2025, 147, 15519−15533
+15529
+
+importance of cascade catalytic systems for tumor therapy and
+confirm that the highly efficient POD-like enzyme activity of
+PdH NCs significantly improves the antitumor effect of PdH@
+GOx NCs. Moreover, sequential treatment with PdH@GOx
+NCs significantly suppressed tumor growth, highlighting the
+superior therapeutic performance of PdH@GOx NCs. These
+results suggest that the PdH NCs-GOx system achieves
+exceptional in vivo cascade performance, efficiently generating
+(•OH) and demonstrating potent anticancer activity. Consid-
+ering that the NIR absorption of Pd NCs increases during
+hydrogen incorporation, and that the POD-like activity of PdH
+NCs also increases with rising temperature, we believe that the
+antitumor effect of PdH@GOx NCs combined with NIR laser
+irradiations could be further enhanced. Further validation of
+the anticancer efficacy was conducted through the analysis of
+tumor wight (Figure 6g) and size (Figure 6h) following the
+euthanasia of mice after 14 days of treatments. These
+observations were consistent with the above results, confirming
+the excellent anticancer effect of PdH@GOx NCs. The excised
+tumors were subsequently fixed, dissected, and subjected to
+histological analyses, including hematoxylin and eosin (H&E)
+staining, proliferation assays using Ki-67, and terminal
+deoxynucleotidyl transferase dUTP nick-end labeling
+(TUNEL). These analyses confirmed that the PdH@GOx
+NCs induced the most severe tumor damage (Figure S51).
+The biosafety of PdH@GOx NCs was also evaluated in
+animal models. Hemolytic behavior, assessed using red blood
+cells, revealed hemolysis rates below 5%, indicating good
+biosafety (Figure S52). Furthermore, there were no significant
+changes in the body weights of mice in the therapeutic groups
+compared to the control group, suggesting minimal systemic
+toxicity associated with PdH@GOx NCs (Figure S53). H&E
+staining of major organs indicated high histocompatibility of all
+Pd-based nanocomposites, including PdH@GOx NCs (Figure
+S54). Furthermore, all hematological parameters remained
+normal ranges, and no significant adverse effects were observed
+in either the treatment or control groups (Figure S55). These
+results indicate that treatment with either Pd NCs or PdH@
+GOx did not lead to any infection or inflammatory lesions.
+Finally, we conducted an in vivo long-term toxicology study of
+PdH@GOx NCs. As shown in Figure S56, the levels of key
+liver enzymes and renal function parameters remained
+unchanged at 0, 7, 14, and 28 days postintravenous
+administration of the drug via the tail vein. These results
+suggest that liver and kidney functions were unaffected by the
+treatment. The spleen, a vital organ of the immune system,
+plays crucial roles in antigen processing and antibody
+production. Variations in the spleen index can indicate the
+level of immune response and the overall state of immune
+function in mice. No significant differences in the spleen index
+were observed before and after PdH@GOx NCs admin-
+istration on 7, 14, and 28 days postinjection, indicating that the
+treatment did not induce any notable immune response
+throughout the evaluation period. Collectively, these findings
+demonstrate that PdH@GOx NCs exhibit excellent anticancer
+efficacy through enhanced cascade catalytic therapy while
+maintaining high biosafety, supporting their potential as a safe
+and effective therapeutic agent.
+■CONCLUSIONS
+This study provides a novel insight into the selective regulation
+of enzyme-like activities in H-loaded Pd nanomaterials through
+molecular H. The different synthetic routes for creating Pd
+hydrides greatly affect the enzyme-like activity and specificity
+of Pd-based nanozymes. Initially, Pd/H2 NCs, synthesized by
+directly injecting hydrogen gas into an aqueous solution
+containing Pd NCs, demonstrated a selective enhancement in
+antioxidative enzyme-like activities against H2O2, O2
+•−, and
+•OH due to the sustained release of bioreductive H2.
+To address the intrinsic instability of the Pd/H2 NCs
+system, stable PdH nanocrystals were synthesized via the in situ
+catalytic decomposition of alternative H sources, such as DMF.
+These stable PdH NCs exhibited specific enhancements in
+POD- and CAT-like activities through selective activation of
+H2O2, while their OXD-like, SOD-like, and •OH scavenging
+activities showed no significant changes or were lower than
+those of the Pd NCs. The selective enhancement in H2O2
+activation of PdH NCs was positively correlated with the
+extent of H incorporation into the PdH NCs. Furthermore,
+this phenomenon was also observed when N2H4 was used as a
+H source and with spherical morphologies of Pd nanomateri-
+als.
+Multiple spectroscopic analyses and DFT calculations
+revealed that lattice tensile strain and changes in electronic
+structures were critical factors driving the high catalytic activity
+and specificity of PdH NCs. Building upon the observed
+enhanced selective H2O2 activation, the PdH/GOx nano-
+complex was developed as a cascade catalytic system in tumor
+therapy. The introduction of GOx facilitated the generation of
+abundant H2O2 and intensified tumor acidosis, thereby
+enhancing the specificity of POD-like activity of PdH NCs
+within tumor microenvironments. As a result, the PdH/GOx
+nanocomplex demonstrated remarkable anticancer efficacy
+through a cascade catalytic reaction, with minimal damage to
+normal tissues.
+This study not only uncovers the influence and mechanism
+of hydride formation on the activity and selectivity of Pd
+nanozymes but also introduces a promising strategy for the
+precise regulation of specific enzyme-like activities in H-loaded
+nanozymes. These findings open new opportunities for
+breakthroughs in enzymatic applications and highlight the
+potential of PdH-based systems in advanced catalytic and
+therapeutic platforms.
+■ASSOCIATED CONTENT
+*
+sı Supporting Information
+The Supporting Information is available free of charge at
+https://pubs.acs.org/doi/10.1021/jacs.5c02114.
+Methods and supporting figures (PDF)
+■AUTHOR INFORMATION
+Corresponding Authors
+Yu Chong −State Key Laboratory of Radiation Medicine and
+Protection, School of Radiation Medicine and Protection,
+Collaborative Innovation Center of Radiological Medicine of
+Jiangsu Higher Education Institutions, Soochow University,
+Suzhou 215123, China;
+orcid.org/0000-0002-6538-
+2498; Email: chongyu@suda.edu.cn
+Qianjun He −Shanghai Key Laboratory of Hydrogen Science
+& Center of Hydrogen Science, School of Materials Science
+and Engineering, Shanghai Jiao Tong University, Shanghai
+200240, China; Shenzhen Research Institute, Shanghai Jiao
+Tong University, Shenzhen 518057, China;
+orcid.org/
+0000-0003-0689-8838; Email: qjhe@sjtu.edu.cn
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.5c02114
+J. Am. Chem. Soc. 2025, 147, 15519−15533
+15530
+
+Xiaomei Shen −Key Lab of Porous Functional Materials of
+Jiangxi Province, College of Chemistry and Materials, Jiangxi
+Normal University, Nanchang 330022, China;
+orcid.org/
+0000-0002-7851-9959; Email: shenxm@jxnu.edu.cn
+Authors
+Jiayu Ning −State Key Laboratory of Radiation Medicine and
+Protection, School of Radiation Medicine and Protection,
+Collaborative Innovation Center of Radiological Medicine of
+Jiangsu Higher Education Institutions, Soochow University,
+Suzhou 215123, China
+Xiafeng Zhu −Key Lab of Porous Functional Materials of
+Jiangxi Province, College of Chemistry and Materials, Jiangxi
+Normal University, Nanchang 330022, China
+Tengfei Hu −State Key Laboratory of Radiation Medicine
+and Protection, School of Radiation Medicine and Protection,
+Collaborative Innovation Center of Radiological Medicine of
+Jiangsu Higher Education Institutions, Soochow University,
+Suzhou 215123, China
+Chao Xia −Shanghai Key Laboratory of Hydrogen Science &
+Center of Hydrogen Science, School of Materials Science and
+Engineering, Shanghai Jiao Tong University, Shanghai
+200240, China; Shenzhen Research Institute, Shanghai Jiao
+Tong University, Shenzhen 518057, China;
+orcid.org/
+0000-0003-2886-6415
+Pengfei Hao −State Key Laboratory of Radiation Medicine
+and Protection, School of Radiation Medicine and Protection,
+Collaborative Innovation Center of Radiological Medicine of
+Jiangsu Higher Education Institutions, Soochow University,
+Suzhou 215123, China
+Jia Shi −State Key Laboratory of Radiation Medicine and
+Protection, School of Radiation Medicine and Protection,
+Collaborative Innovation Center of Radiological Medicine of
+Jiangsu Higher Education Institutions, Soochow University,
+Suzhou 215123, China
+Yijun Fang −State Key Laboratory of Radiation Medicine and
+Protection, School of Radiation Medicine and Protection,
+Collaborative Innovation Center of Radiological Medicine of
+Jiangsu Higher Education Institutions, Soochow University,
+Suzhou 215123, China
+Jiaying Xu −State Key Laboratory of Radiation Medicine and
+Protection, School of Radiation Medicine and Protection,
+Collaborative Innovation Center of Radiological Medicine of
+Jiangsu Higher Education Institutions, Soochow University,
+Suzhou 215123, China
+Duo Zhang −State Key Laboratory of Radiation Medicine
+and Protection, School of Radiation Medicine and Protection,
+Collaborative Innovation Center of Radiological Medicine of
+Jiangsu Higher Education Institutions, Soochow University,
+Suzhou 215123, China
+Khemayanto Hidayat −School of Public Health, Suzhou
+Medical College of Soochow University, Suzhou 215123,
+China
+Liqiang Qin −School of Public Health, Suzhou Medical
+College of Soochow University, Suzhou 215123, China;
+orcid.org/0000-0002-5231-2562
+Jianrong Zeng −Shanghai Synchrotron Radiation Facility,
+Shanghai Advanced Research Institute, Chinese Academy of
+Sciences, Shanghai 201204, China
+Complete contact information is available at:
+https://pubs.acs.org/10.1021/jacs.5c02114
+Author Contributions
+†J.N. and X.Z. contributed equally.
+Notes
+The authors declare no competing financial interest.
+■ACKNOWLEDGMENTS
+This work was supported by the National Key Research and
+Development Program of China (2022YFB3804500), the
+National Natural Science Foundation of China (22367013,
+82073482, 52425309, U23A20690, 82172078), the Shenzhen
+S c i e n c e
+a n d
+T e c h n o l o g y
+P r o g r a m
+(RCJC20210706092010008), the Natural Science Foundation
+of Jiangsu Province (BK20211596), the Suzhou Fundamental
+Research Project (SJC2023001), the Key Laboratory of
+Radiation Damage and Treatment of Jiangsu Provincial
+Universities and Colleges, and the Project Fund by the Priority
+Academic Program Development of Jiangsu Higher Education
+Institutions (PAPD). The authors thank the staff of beamlines
+BL13SSW and BL14B1 at Shanghai Synchrotron Radiation
+Facility for experimental support.
+■REFERENCES
+(1) Zhang, Y.; Wei, G.; Liu, W.; Li, T.; Wang, Y.; Zhou, M.; Liu, Y.;
+Wang, X.; Wei, H. Nanozymes for nanohealthcare. Nat. Rev. Methods
+Primers 2024, 4 (1), 36.
+(2) Chong, Y.; Liu, Q.; Ge, C. Advances in oxidase-mimicking
+nanozymes: Classification, activity regulation and biomedical
+applications. Nano Today 2021, 37, No. 101076.
+(3) Meng, X.; Fan, H.; Chen, L.; He, J.; Hong, C.; Xie, J.; Hou, Y.;
+Wang, K.; Gao, X.; Gao, L.; Yan, X.; Fan, K. Ultrasmall metal alloy
+nanozymes mimicking neutrophil enzymatic cascades for tumor
+catalytic therapy. Nat. Commun. 2024, 15 (1), 1626.
+(4) Chen, Y.; Tian, Q.; Wang, H.; Ma, R.; Han, R.; Wang, Y.; Ge,
+H.; Ren, Y.; Yang, R.; Yang, H.; Chen, Y.; Duan, X.; Zhang, L.; Gao,
+J.; Gao, L.; Yan, X.; Qin, Y. A Manganese-Based Metal-Organic
+Framework as a Cold-Adapted Nanozyme. Adv. Mater. 2024, 36 (10),
+No. 2206421.
+(5) Zhou, J.; Xu, D.; Tian, G.; He, Q.; Zhang, X.; Liao, J.; Mei, L.;
+Chen, L.; Gao, L.; Zhao, L.; Yang, G.; Yin, W.; Nie, G.; Zhao, Y.
+Coordination-Driven Self-Assembly Strategy-Activated Cu Single-
+Atom Nanozymes for Catalytic Tumor-Specific Therapy. J. Am. Chem.
+Soc. 2023, 145 (1), 4279−4293.
+(6) Fan, H.; Zheng, J.; Xie, J.; Liu, J.; Gao, X.; Yan, X.; Fan, K.; Gao,
+L. Surface Ligand Engineering Ruthenium Nanozyme Superior to
+Horseradish Peroxidase for Enhanced Immunoassay. Adv. Mater.
+2024, 36 (10), No. 2300387.
+(7) Wei, H.; Gao, L.; Fan, K.; Liu, J.; He, J.; Qu, X.; Dong, S.; Wang,
+E.; Yan, X. Nanozymes: A clear definition with fuzzy edges. Nano
+Today 2021, 40, No. 101269.
+(8) Ai, Y.; Hu, Z. N.; Liang, X.; Sun, H. B.; Xin, H.; Liang, Q. Recent
+Advances in Nanozymes: From Matters to Bioapplications. Adv.
+Funct. Mater. 2022, 32 (14), No. 2110432.
+(9) Fan, J.; Feng, Z.; Mu, Y.; Ge, X.; Wang, D.; Zhang, L.; Zhao, X.;
+Zhang, W.; Singh, D. J.; Ma, J.; Zheng, L.; Zheng, W.; Cui, X. Spatially
+Confined PdHx Metallenes by Tensile Strained Atomic Ru Layers for
+Efficient Hydrogen Evolution. J. Am. Chem. Soc. 2023, 145 (10),
+5710−5717.
+(10) Li, S.; Xu, B.; Lu, M.; Sun, M.; Yang, H.; Liu, S.; Huang, Z.;
+Liu, H. Tensile-Strained Palladium Nanosheets for Synthetic Catalytic
+Therapy and Phototherapy. Adv. Mater. 2022, 34 (32), No. 2202609.
+(11) Wang, Z.; Zhang, R.; Yan, X.; Fan, K. Structure and activity of
+nanozymes: Inspirations for de novo design of nanozymes. Mater.
+Today 2020, 41, 81−119.
+(12) Fang, G.; Li, W.; Shen, X.; Perez-Aguilar, J. M.; Chong, Y.; Gao,
+X.; Chai, Z.; Chen, C.; Ge, C.; Zhou, R. Differential Pd-nanocrystal
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.5c02114
+J. Am. Chem. Soc. 2025, 147, 15519−15533
+15531
+
+facets demonstrate distinct antibacterial activity against Gram-positive
+and Gram-negative bacteria. Nat. Commun. 2018, 9 (1), 129.
+(13) Chong, Y.; Dai, X.; Fang, G.; Wu, R.; Zhao, L.; Ma, X.; Tian,
+X.; Lee, S.; Zhang, C.; Chen, C.; Chai, Z.; Ge, C.; Zhou, R. Palladium
+concave nanocrystals with high-index facets accelerate ascorbate
+oxidation in cancer treatment. Nat. Commun. 2018, 9 (1), 4861.
+(14) Ge, C.; Wu, R.; Chong, Y.; Fang, G.; Jiang, X.; Pan, Y.; Chen,
+C.; Yin, J. J. Synthesis of Pt Hollow Nanodendrites with Enhanced
+Peroxidase-Like Activity against Bacterial Infections: Implication for
+Wound Healing. Adv. Funct. Mater. 2018, 28 (28), No. 1801484.
+(15) Wei, G.; Liu, S.; Peng, Y. K.; Wei, H. On the Specificity of
+Nanozymes: A Perspective. Chin. J. Chem. 2024, 42 (13), 1515−1522.
+(16) Li, L.; Liu, X.; Liu, G.; Xu, S.; Hu, G.; Wang, L. Valence-
+engineered catalysis-selectivity regulation of molybdenum oxide
+nanozyme for acute kidney injury therapy and post-cure assessment.
+Nat. Commun. 2024, 15 (1), 8720.
+(17) Fan, H.; Zhang, R.; Fan, K.; Gao, L.; Yan, X. Exploring the
+Specificity of Nanozymes. ACS Nano 2024, 18 (4), 2533−2540.
+(18) Yuan, B.; Tan, Z.; Guo, Q.; Shen, X.; Zhao, C.; Chen, J. L.;
+Peng, Y. K. Regulating the H2O2 Activation Pathway on a Well-
+Defined CeO(2) Nanozyme Allows the Entire Steering of Its
+Specificity between Associated Enzymatic Reactions. ACS Nano
+2023, 17 (17), 17383−17393.
+(19) Xi, Z.; Cheng, X.; Gao, Z.; Wang, M.; Cai, T.; Muzzio, M.;
+Davidson, E.; Chen, O.; Jung, Y.; Sun, S.; Xu, Y.; Xia, X. Strain Effect
+in Palladium Nanostructures as Nanozymes. Nano Lett. 2020, 20 (1),
+272−277.
+(20) Wu, J.; Liu, Q.; Jiao, D.; Tian, B.; Wu, Q.; Chang, X.; Chu, H.;
+Jiang, S.; Yang, Q.; Liu, T.; Zhang, Y.; Zhang, W.; Fan, J.; Cui, X.;
+Chen, F. Tensile Strain-Mediated Bimetallene Nanozyme for
+Enhanced Photothermal Tumor Catalytic Therapy. Angew. Chem.,
+Int. Ed. 2024, 63 (24), No. 202403203.
+(21) Xu, C.; Wang, S.; Wang, H.; Liu, K.; Zhang, S.; Chen, B.; Liu,
+H.; Tong, F.; Peng, F.; Tu, Y.; Li, Y. Magnesium-Based Micromotors
+as Hydrogen Generators for Precise Rheumatoid Arthritis Therapy.
+Nano Lett. 2021, 21 (5), 1982−1991.
+(22) Wang, S.; Liu, K.; Zhou, Q.; Xu, C.; Gao, J.; Wang, Z.; Wang,
+F.; Chen, B.; Ye, Y.; Ou, J.; Jiang, J.; Wilson, D. A.; Liu, S.; Peng, F.;
+Tu, Y. Hydrogen-Powered Microswimmers for Precise and Active
+Hydrogen Therapy Towards Acute Ischemic Stroke. Adv. Funct.
+Mater. 2021, 31 (19), No. 2009475.
+(23) Zhao, P.; Jin, Z.; Chen, Q.; Yang, T.; Chen, D.; Meng, J.; Lu,
+X.; Gu, Z.; He, Q. Local generation of hydrogen for enhanced
+photothermal therapy. Nat. Commun. 2018, 9 (1), 4241.
+(24) Ohsawa, I.; Ishikawa, M.; Takahashi, K.; Watanabe, M.;
+Nishimaki, K.; Yamagata, K.; Katsura, K.; Katayama, Y.; Asoh, S.;
+Ohta, S. Hydrogen acts as a therapeutic antioxidant by selectively
+reducing cytotoxic oxygen radicals. Nat. Med. 2007, 13 (6), 688−694.
+(25) Chen, S.; Zhu, Y.; Xu, Q.; Jiang, Q.; Chen, D.; Chen, T.; Xu, X.;
+Jin, Z.; He, Q. Photocatalytic glucose depletion and hydrogen
+generation for diabetic wound healing. Nat. Commun. 2022, 13 (1),
+5684.
+(26) Yang, N.; Yang, X.; Cheng, S.; Gao, X.; Sun, S.; Huang, X.; Ge,
+J.; Han, Z.; Huang, C.; Wang, Y.; Cheng, C.; Cheng, L. Magnesium
+implants with alternating magnetic field-enhanced hydrogen release
+and proton depletion for anti-infection treatment and tissue repair.
+Bioact. Mater. 2024, 38, 374−383.
+(27) Gong, F.; Xu, J.; Liu, B.; Yang, N.; Cheng, L.; Huang, P.; Wang,
+C.; Chen, Q.; Ni, C.; Liu, Z. Nanoscale CaH2 materials for synergistic
+hydrogen-immune cancer therapy. Chem 2022, 8 (1), 268−286.
+(28) Tao, G.; Liu, F.; Jin, Z.; Liu, B.; Wang, H.; Li, D.; Tang, W.;
+Chen, Y.; He, Q.; Qin, S. A strategy of local hydrogen capture and
+catalytic hydrogenation for enhanced therapy of chronic liver diseases.
+Theranostics 2023, 13 (8), 2455−2470.
+(29) Li, H.; Song, X.; Liu, W.; Zhang, Y.; Guan, H.; Wu, J.; Yu, S.;
+Xue, W. Revealing the antibacterial power of hydrogen-releasing PdH
+nanohydride against drug resistant Staphylococcus aureus: an in-
+depth mechanism study. J. Mater. Chem. B 2023, 11 (7), 1495−1505.
+(30) Xu, M.; Zhou, Y.; Ren, C.; Liang, X.; Li, N. Palladium Hydride
+Nanopocket Cubes and Their H2-Therapy Function in Amplifying
+Inhibition of Foam Cells to Attenuate Atherosclerosis. Adv. Funct.
+Mater. 2021, 31 (46), No. 2104892.
+(31) Zhang, L.; Zhao, P.; Yue, C.; Jin, Z.; Liu, Q.; Du, X.; He, Q.
+Sustained release of bioactive hydrogen by Pd hydride nanoparticles
+overcomes Alzheimer’s disease. Biomaterials 2019, 197, 393−404.
+(32) Shi, Y.; Schimmenti, R.; Zhu, S.; Venkatraman, K.; Chen, R.;
+Chi, M.; Shao, M.; Mavrikakis, M.; Xia, Y. Solution-Phase Synthesis of
+PdH(0.706) Nanocubes with Enhanced Stability and Activity toward
+Formic Acid Oxidation. J. Am. Chem. Soc. 2022, 144 (6), 2556−2568.
+(33) Wang, L.; Zeng, Z.; Gao, W.; Maxson, T.; Raciti, D.; Giroux,
+M.; Pan, X.; Wang, C.; Greeley, J. Tunable intrinsic strain in two-
+dimensional transition metal electrocatalysts. Science 2019, 363
+(6429), 870−874.
+(34) Tang, C.; Zhang, N.; Ji, Y.; Shao, Q.; Li, Y.; Xiao, X.; Huang, X.
+Fully Tensile Strained Pd(3)Pb/Pd Tetragonal Nanosheets Enhance
+Oxygen Reduction Catalysis. Nano Lett. 2019, 19 (2), 1336−1342.
+(35) Chong, Y.; Ning, J.; Min, S.; Ye, J.; Ge, C. Emerging nanozymes
+for potentiating radiotherapy and radiation protection. Chin. Chem.
+Lett. 2022, 33 (7), 3315−3324.
+(36) Chong, Y.; Ge, C.; Fang, G.; Tian, X.; Ma, X.; Wen, T.; Wamer,
+W. G.; Chen, C.; Chai, Z.; Yin, J. J. Crossover between Anti- and Pro-
+oxidant Activities of Graphene Quantum Dots in the Absence or
+Presence of Light. ACS Nano 2016, 10 (9), 8690−8699.
+(37) Sun, L.; Liu, B. Mesoporous PdN Alloy Nanocubes for Efficient
+Electrochemical Nitrate Reduction to Ammonia. Adv. Mater. 2023, 35
+(1), No. 2207305.
+(38) Chen, H.; Ding, B.; Tan, J.; Zheng, P.; Cheng, Z.; Ma, P. A.;
+Lin, J. Palladium hydride nanourchins with amplified photothermal
+therapeutic effects through controlled hydrogen release and antigen-
+assisted immune activation. Chem. Eng. J. 2022, 442, No. 136296.
+(39) Xu, W.; Fan, G.; Chen, J.; Li, J.; Zhang, L.; Zhu, S.; Su, X.;
+Cheng, F.; Chen, J. Nanoporous Palladium Hydride for Electro-
+catalytic N(2) Reduction under Ambient Conditions. Angew. Chem.,
+Int. Ed. 2020, 59 (9), 3511−3516.
+(40) Lin, B.; Wu, X.; Xie, L.; Kang, Y.; Du, H.; Kang, F.; Li, J.; Gan,
+L. Atomic Imaging of Subsurface Interstitial Hydrogen and Insights
+into Surface Reactivity of Palladium Hydrides. Angew. Chem., Int. Ed.
+2020, 59 (46), 20348−20352.
+(41) Zhao, Z.; Huang, X.; Li, M.; Wang, G.; Lee, C.; Zhu, E.; Duan,
+X.; Huang, Y. Synthesis of Stable Shape-Controlled Catalytically
+Active beta-Palladium Hydride. J. Am. Chem. Soc. 2015, 137 (50),
+15672−15675.
+(42) Wang, H.; Qin, Y.; Wu, Y.; Qiu, Y.; Ling, L.; Fang, Q.; Wang,
+C.; Hu, L.; Gu, W.; Zhu, C. Pd hydride metallene aerogels with lattice
+hydrogen participation for efficient hydrogen evolution reaction. Nat.
+Commun. 2024, 15 (1), 10289.
+(43) Jiang, B.; Duan, D.; Gao, L.; Zhou, M.; Fan, K.; Tang, Y.; Xi, J.;
+Bi, Y.; Tong, Z.; Gao, G. F.; Xie, N.; Tang, A.; Nie, G.; Liang, M.;
+Yan, X. Standardized assays for determining the catalytic activity and
+kinetics of peroxidase-like nanozymes. Nat. Protoc. 2018, 13 (7),
+1506−1520.
+(44) Yu, Z.; Xu, Z.; Zeng, R.; Xu, M.; Zheng, H.; Huang, D.; Weng,
+Z.; Tang, D. D-Band-Center-Engineered Platinum-Based Nanozyme
+for Personalized Pharmacovigilance. Angew. Chem., Int. Ed. 2025, 64
+(2), No. 202414625.
+(45) Wu, Y.; Jiang, W.; Xu, W.; Lv, F.; Song, S.; Hu, L.; Wang, C.;
+Zheng, L.; Gu, W.; Zhang, R.; Guo, S.; Zhu, C. Hydroxyl Spillover in
+Fe-Se Dual-Site Catalysts for Mixed Plastics Assay. J. Am. Chem. Soc.
+2025, 147 (1), 1356−1363.
+(46) Shen, B.; Wu, Q.; Guo, Y.; Qin, J.; Chen, H.; Yang, Y.; Liu, Z.;
+Li, L.; Li, W.; Zhu, C. Modulating the Hydrophilic-Hydrophobic
+Microenvironment of MOF-Stabilized Pt Nanozymes: the Role of
+H2O in the Peroxidase-Like Catalyzed Reaction. Adv. Funct. Mater.
+2025, 35 (8), No. 2415854.
+(47) Hung, C. C.; Wu, C. Y.; Lin, J. T.; Wu, C. H.; Tu, A. P.; Wei, T.
+C.; Yang, T. H. Pd nanocubes enclosed by {100} facets for activating
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.5c02114
+J. Am. Chem. Soc. 2025, 147, 15519−15533
+15532
+
+electroless Cu deposition on liquid crystal polymer substrates with
+strong adhesion strength. Electrochim. Acta 2024, 489, No. 144254.
+(48) Shen, X.; Wang, Z.; Gao, X.; Zhao, Y. Density Functional
+Theory-Based Method to Predict the Activities of Nanomaterials as
+Peroxidase Mimics. ACS Catal. 2020, 10 (21), 12657−12665.
+(49) Shen, X.; Liu, W.; Gao, X.; Lu, Z.; Wu, X.; Gao, X. Mechanisms
+of Oxidase and Superoxide Dismutation-like Activities of Gold, Silver,
+Platinum, and Palladium, and Their Alloys: A General Way to the
+Activation of Molecular Oxygen. J. Am. Chem. Soc. 2015, 137 (50),
+15882−15891.
+(50) Wang, Y.; Zhang, R.; Zang, P.; Zhao, R.; Wu, L.; Zhu, Y.; Yang,
+D.; Gai, S.; Yang, P. Synergizing Pyroelectric Catalysis and Enzyme
+Catalysis: Establishing a Reciprocal and Synergistic Model to Enhance
+Anti-Tumor Activity. Adv. Mater. 2024, 36 (24), No. 2401111.
+(51) Li, S.; Shang, L.; Xu, B.; Wang, S.; Gu, K.; Wu, Q.; Sun, Y.;
+Zhang, Q.; Yang, H.; Zhang, F.; Gu, L.; Zhang, T.; Liu, H. A
+Nanozyme with Photo-Enhanced Dual Enzyme-Like Activities for
+Deep Pancreatic Cancer Therapy. Angew. Chem., Int. Ed. 2019, 58
+(36), 12624−12631.
+(52) Wang, Z.; Bao, W.; Wujieti, B.; Liu, M.; Li, X.; Ma, Z.; Cui, W.;
+Tian, Z. Molecular Photoswitching Unlocks Glucose Oxidase for
+Synergistically Reinforcing Fenton Reactions for Antitumor Chemo-
+dynamic Therapy. Angew. Chem., Int. Ed. 2025, 64 (1),
+No. 202413633.
+(53) Liu, J.; Wang, A.; Liu, S.; Yang, R.; Wang, L.; Gao, F.; Zhou, H.;
+Yu, X.; Liu, J.; Chen, C. A Titanium Nitride Nanozyme for pH-
+Responsive and Irradiation-Enhanced Cascade-Catalytic Tumor
+Therapy. Angew. Chem., Int. Ed. 2021, 60 (48), 25328−25338.
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.5c02114
+J. Am. Chem. Soc. 2025, 147, 15519−15533
+15533

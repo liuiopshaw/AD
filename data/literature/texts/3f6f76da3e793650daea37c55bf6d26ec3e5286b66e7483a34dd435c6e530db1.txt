@@ -1,0 +1,1937 @@
+Vol.:(0123456789)
+Advanced Composites and Hybrid Materials (2024) 7:76 
+https://doi.org/10.1007/s42114-024-00884-9
+RESEARCH
+Pharmacokinetic modeling of solid and hollow gold‑coated 
+superparamagnetic iron oxide nanoparticles for brain‑targeted 
+therapeutics: prediction and experiment
+Hanwen Hu1 · Muzhaozi Yuan1 · Jingfan Chen1 · Tianzhu Fan1 · Nguyen Nguyen1 · Caitlin A. Madison2 · Tianhao Yan3 · 
+Zhifeng Xiao3 · Ying Li1 · Shoshana Eitan2 · Hong‑cai Zhou3 · Jean Phillippe Pellois3 · Ya Wang1,4,5
+Received: 1 October 2023 / Revised: 25 January 2024 / Accepted: 2 April 2024 / Published online: 22 April 2024 
+© The Author(s), under exclusive licence to Springer Nature Switzerland AG 2024
+Abstract
+Magneto-plasmonic nanoparticles (MPNPs), such as solid gold (Au) or hollow gold (HG) coated superparamagnetic iron oxide 
+(SPIO) nanoparticles (NPs), have attracted increasing attention for brain-targeted therapeutics. This is due to their supreme magnetic 
+targeting capability, light-to-heat conversion efficiency, and biocompatibility. Though promising, their therapeutic efficiency is dif-
+ficult to predict because of the complex absorption, distribution, metabolism, and excretion process and the intrinsic and extrinsic 
+properties of the blood–brain barrier (BBB). This paper presents a modern physiologically based pharmacokinetic (PBPK) model to 
+predict pharmacokinetic (PK) behaviors of brain-targeting MPNPs and investigate their morphology and surface function-dependent 
+BBB crossing efficiency. This model quantifies intrinsic and extrinsic properties of PK parameters, including phagocytic cellular 
+uptake rate and brain permeability. This model successfully predicts the biodistribution of functionalized Au-SPIO (18.42 ± 0.23 nm) 
+and HG-SPIO (73.65 ± 1.46 nm) MPNPs in 8-week-old adult mice in a 16-h window after intraperitoneal (IP) injection. These pre-
+dictions agree well with the experimental data with a low absolute average fold error (1.5381 for Au-SPIO and 1.1225 for HG-SPIO 
+NPs). Interestingly, Au-SPIO MPNPs with thinner plasmonic layers result in higher magnetization levels and thus lead to more 
+efficient BBB crossing. Static magnetic field stimulation could improve brain accumulation of IP-injected Au-SPIO and HG-SPIO 
+NPs by up to 4.9% and 1.4%, respectively. Additionally, IP injection led to higher brain accumulation compared to intravenous injec-
+tion. This modern PBPK model can guide MPNP design optimization for brain-specific therapeutics.
+Keywords  Modern pharmacokinetic modeling · Brain-targeted therapeutics · Au-SPIO · HG-SPIO · Magnetic field · In 
+vivo biodistribution
+1  Introduction
+Compared to non-plasmonic nanoparticles (NPs), plasmonic 
+NPs, typically made from metals like gold or silver, exhibit 
+distinctive optical characteristics due to their conduction 
+electrons interacting with light [1]. This interaction is gov-
+erned by plasmon resonance, which occurs when light’s fre-
+quency aligns with the natural oscillation frequency of the 
+metal’s surface electrons against the positive nuclei’s restor-
+ing force. When these nanoparticles are exposed to light, the 
+free electrons on the metal’s surface vibrate together, gener-
+ating potent electric fields. This phenomenon amplifies opti-
+cal behaviors such as scattering and absorption. As a result, 
+Hanwen Hu, Muzhaozi Yuan and Jingfan Chen are co-first author.
+Tianzhu Fan, Nguyen Nguyen and Caitlin A. Madison are co-second 
+author.
+ *	 Muzhaozi Yuan 
+	
+Muzhaozi.yuan@tamu.edu
+ *	 Ya Wang 
+	
+ya.wang@tamu.edu
+1	
+J. Mike Walker ‘66 Department of Mechanical Engineering, 
+Texas A&M University, College Station, TX 77843, USA
+2	
+Department of Psychological and Brain Sciences, Texas 
+A&M University, College Station, TX 77843, USA
+3	
+Department of Chemistry, Texas A&M University, 
+College Station, TX 77843, USA
+4	
+Department of Electrical and Computer Engineering, Texas 
+A&M University, College Station, TX 77843, USA
+5	
+Department of Biomedical Engineering, Texas A&M 
+University, College Station, TX 77843, USA
+
+	
+Advanced Composites and Hybrid Materials (2024) 7:76
+76 
+Page 2 of 23
+plasmonic nanoparticles are highly valuable in applications 
+like sensing and photothermal therapy [2]. In addition to 
+plasmonic properties, magneto-plasmonic nanoparticles 
+(MPNPs) have drawn increasing attention for brain-targeted 
+therapeutics due to their unique properties of magnetic tar-
+geting [3], magnetic [4], and plasmonic [5] hyperthermia, 
+excellent biocompatibility [6], and drug loading capacity [7]. 
+We recently developed solid gold (Au)-coated superpara-
+magnetic iron oxide (SPIO) MPNPs with a high photother-
+mal conversion efficiency [8, 9], enhanced neurodegenera-
+tion [9, 10], and magnetic-field promoted cellular uptake 
+[11]. They exhibit more substantial magneto-plasmonic 
+properties than other compounds [12–14], but their limited 
+tissue penetration depth has restricted their brain-targeting 
+therapeutic efficiency [15]. In contrast, a hollow gold (HG) 
+MPNP with multiple SPIO cores enclosed [16] and a thin 
+gold outer layer offers a promising solution to overcome 
+this limitation by penetrating deeper into brain tissues. This 
+is achieved by fine-tuning their surface plasmon resonance 
+(SPR) to near-infrared (NIR) regions by varying the thick-
+ness of the gold shells.
+However, designing MPNPs with optimal nanostructure 
+and surface functions facilitating brain-targeting therapeu-
+tics is still a persistent challenge. This is mainly because 
+it is difficult to predict the complex absorption, distribu-
+tion, metabolism, and excretion (ADME) process and the 
+blood–brain barrier (BBB) crossing behaviors of MPNPs 
+[17]. Traditional physiologically based pharmacokinetic 
+(PBPK) models can predict the time history of the ADME 
+process of MPNPs within major organs, but the brain due 
+to low brain permeabilities and lack of understanding of 
+intrinsic and extrinsic parameters related to BBB crossing. 
+Notably, evaluating the penetration ability of MPNPs across 
+the BBB is crucial in brain-targeting therapeutics [18]. This 
+paper presents a modern PBPK model that can predict phar-
+macokinetic (PK) behaviors of brain-targeting MPNPs and 
+investigate their morphology and surface function-dependent 
+BBB crossing efficiency. This current PBPK model quan-
+tifies intrinsic and extrinsic properties of PK parameters, 
+including phagocytic cellular uptake rate and brain perme-
+ability. Some PK parameters, historically challenging to col-
+lect, are curve-fitted using in vivo data collected from major 
+organs of mice and rats.
+Traditional PBPK models are either diffusion-limited 
+(also called permeability-limited model) or perfusion-
+limited based. The former model works better for MPNPs 
+larger than 50 nm [19], where the permeability of the cell 
+membrane limits the distribution of the substance into the 
+tissue, as the tissue’s tight junctions and transporters create 
+a barrier and limit the rate of drug or chemical exchange 
+between blood and tissues. The latter model assumes that 
+the transport of compounds across the blood tissue barriers 
+is the rate-limiting step of biodistribution [20]. That is, the 
+rate of drug entering the compartment (tissue) is deter-
+mined by the organ’s blood flow rate, where the compound 
+distributes freely across the membranes without diffusion 
+barriers or significant transporter contributions [21]. For a 
+diffusion-limited model, the equilibrium of vascular versus 
+extravascular space cannot be obtained instantly. While the 
+perfusion-limited model considers blood perfusion as the 
+main limitation for MPNP penetration, the transportation 
+between blood and tissue reaches equilibrium immediately 
+[21]. The diffusion-limited model is usually more appro-
+priate for predicting the in vivo biodistribution of MPNPs 
+since it takes a long time to cross the cell membrane [22]. 
+However, neither traditional model considers enough 
+parameters to predict BBB crossing efficiency accurately. 
+For example, a diffusion-limited PBPK model was cre-
+ated to predict brain accumulation of spherical polyethyl-
+ene glycol (PEG)-coated Au nanoparticles (NPs) (13 nm 
+and 100 nm in diameter). However, their average fold error 
+is 2 and 3 [23]. The main reason is that their parameters 
+are mainly obtained from different animal models in the 
+literature, such as rats and mice, dogs, and pigs, and they 
+did not consider the size impacts on phagocytic (PC) cel-
+lular uptake rate, plasma distribution coefficient, and many 
+other parameters.
+A perfusion model was created to predict tissue accu-
+mulation of Au NPs (16 nm in diameter) in mice and their 
+interspecies extrapolation from mice to rats using the organ-
+ism-specific (excretion and PC cellular uptake) parameters 
+of rats from the literature to validate their model [24]. This 
+model does not consider the impact of size and tissue perme-
+ability on the PBPK model. A recent study also discussed 
+the effect of different administration routes, including intra-
+venous (IV), oral, instillation, and inhalation of spherical 
+Au NPs (18 nm in diameter) [25]. It concluded that the 
+surface area determines the cellular uptake rate regardless 
+of the administration route. However, their model does not 
+quantify the impact of NP size on the PBPK parameters. 
+Others intend to predict the in vivo biodistribution of PEG-
+coated Au NPs (13 nm in diameter) in the corresponding 
+organ tissue shield using a perfusion-limited PBPK model 
+fitted with in vitro data of human lung bronchial epithe-
+lial cell lines [26]. However, the cell line model does not 
+consider macrophage-mediated uptake. In vitro results may 
+lead to overestimating NP burden for organs like the brain 
+with natural barriers compared with in vivo data. Recently, 
+more efforts have been made to utilize the in vitro results to 
+parametrize the PBPK models to increase their prediction 
+accuracy. Our previous PBPK model integrated in vivo data 
+to predict the biodistribution of Au-SPIO NPs (17.50 nm in 
+diameter) in adult mice under static and dynamic magnetic 
+fields (MF) [17]. Significantly, this model formulated tra-
+ditionally neglected brain permeabilities of Au-SPIO NPs 
+using in vivo data [17].
+
+Advanced Composites and Hybrid Materials (2024) 7:76	
+Page 3 of 23 
+76
+To better predict brain accumulation of generalized MPNPs 
+with different morphologies. This paper presents a modern PBPK 
+model to study intrinsic and extrinsic parameters associated with 
+tissue uptake and brain targeting efficiency. Using comprehensive 
+quantification of PK parameters using in vivo data, this modern 
+PBPK model can predict a history (16-h) brain accumulation 
+of Au-SPIO and HG-SPIO NPs in 8-week-old adult mice after 
+intraperitoneal (IP) and IV injection. This model presents the 
+MPNP parametric dependence on brain permeability, crossing, 
+and brain-targeting efficiency, unlike commercial software, such 
+as Simcyp Simulator, PBPKPlus, and PopPKPD, which do not 
+provide many options for fine-tuning PBPK parameters such 
+as brain permeability, distribution coefficients, and PC uptake 
+rate. These are critical for designing brain-targeting MPNPs 
+with maximal efficiency. In addition, our model considers the 
+parametric importance of magnetic field stimulation intrinsic 
+and extrinsic properties of PK parameters to better design 
+MPNPs with optimal nanostructure and surface properties. We 
+also compared the in vivo results of IP and IV-injected MPNPs. 
+The local sensitive analysis (LSA) and parameter optimization 
+provide comprehensive guidance for designing MPNPs with 
+higher brain accumulation.
+Section 2 describes the synthesis and functionalization of 
+these two types of MPNPs (Au-SPIO and HG-SPIO NPs) 
+used for modeling and in vivo validation. Section 3 presents 
+the development of the PBPK model and identifies each 
+essential parameter. Finally, Sect. 4 compares the predicted 
+results and the measured in vivo data in adult mice to assess 
+the model’s accuracy. We also presented N2A cell viability 
+to verify the non-toxic properties of the two types of MPNPs 
+injected. A local LSA ranks the importance of parameters 
+affecting MPNP concentration in blood and the brain. Param-
+eters are optimized using the Symbiology-optimized toolbox 
+to improve prediction accuracy. The final section discusses 
+factors affecting the BBB crossing, including outer diameters 
+of MPNPs, external MF applied, and injection methods.
+2  Material and methods
+This section discusses synthesizing and characterizing two 
+types of MPNPs.1 They are functionalized with PEG and 
+insulin to increase the blood half-life and the BBB crossing 
+efficiency, respectively [].
+2.1  Materials
+SPIO NPs (EMG304) were obtained from Ferrotec (Liv-
+ermore, CA). All other NP synthesis and functionalization 
+reagents are obtained from Sigma-Aldrich (St. Louis, MO). 
+DMEM (Dulbecco’s Modified Eagle Medium) contains 
+essential nutrients, vitamins, amino acids, and glucose to 
+support cell growth and is widely used for in vitro culti-
+vation. PBS (phosphate-buffered saline) is a buffer for 
+cell washing and diluting substances. Trypsin EDTA is an 
+enzyme used in cell culture to dissociate adherent cells from 
+the surface of a culture dish. SYTO 59 and SYTOX Green 
+are fluorescent nucleic acid stains that selectively stain dead 
+and alive cells for cell viability experiments. These sub-
+stances are obtained from Thermo Fisher Scientific (Harris 
+County, TX, USA).
+2.2  Synthesis of Au‑SPIO core–shell structure
+We synthesized the Au-SPIO NPs according to our previous 
+protocol [6]. In summary, 2 mL of 4.66-mM SPIO solution 
+was stirred with 6 mL of 0.1 M sodium citrate for 10 min to 
+exchange the absorbed OH − with citrate anions. The mix-
+ture was then diluted to 100 mL with DI water. A total of 
+0.5 mL of 1% ­HAuCl4 solution was added to the mixture. 
+The pH was adjusted to 9–10 using 0.1 M NaOH solution. 
+Then, 0.6 mL of 0.2-M hydroxylamine hydrochloride was 
+added to the mixture to form the Au coating. The color of the 
+mixture changed from brown to purple in several minutes. 
+After that, another 0.5 mL of 1% ­HAuCl4 was added to the 
+solution, followed by 0.2 mL of 0.2 M hydroxylamine hydro-
+chloride. This process was repeated several times to form a 
+thicker Au coating. The color of the final solution changed 
+from purple to red.
+2.3  Synthesis of HG‑SPIO core–shell structure
+At first, the SPIO core NPs were synthesized by a simple 
+co-precipitation method. First, 2 mmol of ­FeCl3, 1 mmol 
+of ­FeSO4, and 0.1 mmol of sodium dodecyl sulfate (SDS) 
+were dissolved in 200 mL of deionized (DI) water. Then 
+80 mL of 125-mM NaOH solution was slowly added at room 
+temperature. Once the mixed solution appeared black, it was 
+centrifuged and washed with DI water and ethanol several 
+times. Then, the precipitate ­(Fe3O4) was collected by a mag-
+net and reserved in 80 mL of DI water ­(Fe3O4 suspension) in 
+a refrigerator. To further oxidize ­Fe3O4 to magnetic γ-Fe2O3, 
+20 mL of ­Fe3O4 suspension was diluted to 100 mL with DI 
+water and then added with 0.1 mL of concentrated ­HNO3 
+(70%). The mixed solution was heated under 90 °C in an 
+oil bath for 30 min, and its appearance changed from black 
+to brown during the procedure, indicating the oxidation of 
+­Fe3O4 to γ-Fe2O3. Finally, the solution was centrifuged and 
+washed with DI water, and the precipitate (γ-Fe2O3) was 
+collected and preserved in 20 mL of DI water (SPIO suspen-
+sion). Secondly, Ag-SPIO NPs were fabricated as templates. 
+To do this, 0.5 mL of SPIO suspension and 1 mL of 30-mM 
+1  In this manuscript, all MPNPs are functionalized with PEG and 
+insulin to promote blood half-life and brain permeability unless oth-
+erwise specified.
+
+	
+Advanced Composites and Hybrid Materials (2024) 7:76
+76 
+Page 4 of 23
+trisodium citrate were added to 17 mL of DI water. The 
+mixed solution was heated uniformly under 60 °C in the oil 
+bath for 10 min, then 2 mL of 20 mM ­AgNO3 was slowly 
+added into the solution. After 10 min, 5 mL of 5 mM NaOH 
+was slowly added to the solution. After another 30 min, 
+0.5 mL of 0.5-M hydroxylamine hydrochloride was added 
+into the solution to facilitate the precipitation process of ­Ag+ 
+on the surface of γ-Fe2O3. The heating process continued 
+for 210 min, and finally, the product’s appearance became 
+brownish yellow, indicating the formation of an Ag-SPIO 
+suspension. Finally, for fabricating HG-SPIO NPs, 0.53 mL 
+of 25 mM ­HAuCl4 was slowly added into the Ag-SPIO sus-
+pension under 60 °C when the ­Ag+ on the surface of γ-Fe2O3 
+began to be replaced by ­Au3+. The heating process for this 
+displacement reaction continued for another 30 min, and 
+then the product in blue color was collected, which was 
+marked as HG-SPIO suspension.
+2.4  Functionalization of Au‑SPIO and HG‑SPIO NPs 
+using PEG and insulin
+The prepared Au-SPIO and HG-SPIO NPs were functional-
+ized by PEG first. Two types of PEG solutions were applied, 
+including 5 mg ­mL−1 mPEG-SH (molecular weight (MW), 
+5000 Da) and 5 mg ­mL−1 SH-PEG-COOH (MW, 3400 Da). 
+The Au-SPIO and HG-SPIO NPs’ suspensions were thor-
+oughly mixed with a hybrid PEG solution (including 15% 
+of SH-PEG-COOH and 85% of mPEG-SH) by a ratio of 
+45 µL of PEG solution at the concentration of 5 mg/mL 
+per mg of Au-SPIO NPs and HG-SPIO NPs, respectively. 
+Then, the resulting PEG functionalized Au-SPIO NPs and 
+HG-SPIO solutions were stored in a refrigerator for 24 h. 
+Then, for the insulin conjugation with Au-SPIO-PEG NPs, 
+2 mM of 1-Ethyl-3-(3-dimethyl aminopropyl) carbodiimide 
+hydrochloric acid (HCl) (EDC, 22980-Sigma-Aldrich, St. 
+Louis, MO, USA) and 5 mM of N-hydroxysulfosuccinimide 
+sodium salt (NHS, 24500-Sigma-Aldrich, St. Louis, MO, 
+USA) were added directly to 1 mL of insulin (11061-Sigma-
+Aldrich, St. Louis, MO, USA) at the concentration of 10 
+mg/mL. The solution was mixed well and reacted for 15 
+min at room temperature. A total of 0.02 mL of the result-
+ing mixture was added directly to 12 mL of 1 mg/mL Au-
+SPIO-PEG NPs. The solution was left to stir overnight to 
+ensure the conjugation of the PEG layer to the insulin. Au-
+SPIO-PEG-insulin NPs were purified after the solution was 
+centrifuged. The final concentration was 3 mg/mL, denoted 
+as functionalized Au-SPIO NPs. For the insulin conjugation 
+with HG-SPIO-PEG NPs, 1 mL of 1 mg ­mL−1 insulin was 
+thoroughly mixed with 2 mL of 5 mM EDC solution and 
+2 mL of 5 mM NHS solution. Then, 1 mL of the resulting 
+mixture was added to 12 mL of 1 mg ­mL−1 HG-SPIO-PEG 
+suspension, and the mixture was left overnight to ensure 
+the conjugation of the PEG layer to the insulin. Finally, the 
+prepared HG-SPIO-PEG-insulin NPs were collected by 
+centrifugation at 12,000 rpm for 15 min and washed twice 
+to remove the uncoated insulin. The resultant was denoted 
+as functionalized HG-SPIO NPs. The MPNPs used for the 
+following in vivo experiments are fully functionalized Au-
+SPIO and functionalized HG-SPIO NPs.
+2.5  Characterization of functionalized Au‑SPIO 
+and HG‑SPIO NPs
+We use the transmission electron microscope (TEM) to 
+assess the morphological characteristics and determine the 
+MPNP size distribution. In addition, the detailed structure 
+and morphology of the HG-SPIO NPs were analyzed on an 
+FEI Tecnai G2 F20 ST field emission transmission elec-
+tron microscope (FE-TEM), operated at an accelerating 
+voltage of 200 kV. The size distribution of the MPNPs 
+was analyzed by measuring a minimum of 100 NPs. The 
+inner and outer diameters of each NP were measured using 
+ImageJ. Their light absorption spectra were measured 
+using a Hitachi U-4100 UV–Vis-NIR spectrophotometer 
+(500–1200 nm). In a typical measurement, 3 ml of NP 
+solution was added to the cuvette. The hydrodynamic 
+diameters and zeta potential of MPNPs, with and without 
+functionalization, were measured by dynamic light scatter-
+ing (DLS) on a Zetasizer apparatus (Malvern Instruments; 
+Malvern, UK). The hydrodynamic diameter was calculated 
+from the intensity-weighted distribution function obtained 
+by CONTIN analysis of the correlation function embedded 
+in Malvern software. All measurements were performed 
+in triplicates.
+2.6  Cell viability evaluation
+Neuro2A cells are known for their neuron-like character-
+istic and commonly serve as a versatile in vitro model for 
+many investigations in neuronal functions, neurotoxicity, and 
+responses to stimuli [27]. Thus, we use N2A cells to evaluate 
+the toxicity of Au-SPIO and HGNS-SPIO to neuronal cells. 
+N2A cells were seeded into a 48-well plate and cultured for 
+1 day. The cells were then incubated with Au-SPIO and HG-
+SPIO NPs at different concentrations for 1, 3, and 5 days. 
+After each incubation period, the cells were harvested by 
+detaching them with 0.25% trypsin–EDTA and neutralizing 
+them in the Dulbecco’s Modified Eagle Medium (DMEM). 
+The cell suspension was then centrifuged, and the super-
+natant was discarded. The cells were stained with SYTOX 
+Green and SYTO 59 Red for flow cytometric analysis. The 
+staining solutions were diluted at 1:2000 for SYTOX Green 
+and 1:1000 for SYTO 59 Red for 30 min in the dark. Cell 
+viability was measured using a BD Accuri C6 flow cytom-
+eter equipped with FL 1 detector (553 nm) and FL 4 detector 
+(675 nm); event number > 10,000.
+
+Advanced Composites and Hybrid Materials (2024) 7:76	
+Page 5 of 23 
+76
+2.7  Cell uptake rate measurement
+The cell uptake rate for Au-SPIO and HG-SPIO NPs was 
+measured using elemental analysis. N2A cells were cul-
+tured in a 48-well plate for 1 day and then incubated with 
+Au-SPIO and HG-SPIO NPs at 40 ug/ml concentrations. 
+After 2, 4, 8, and 12 h of incubation, the cells were washed 
+three times with PBS to remove unassociated and unattached 
+NPs. The cells were then harvested by detaching them with 
+0.25% trypsin–EDTA and neutralizing them in DMEM 
+before transferring them to microcentrifuge tubes. The cells 
+were then centrifuged to remove the top solutions contain-
+ing free NPs not taken up by the cells. The remaining cells 
+were digested using aqua regia, and the amount of gold was 
+quantified using a PerkinElmer NexION 300D Inductively 
+Coupled Plasma Mass Spectrometer (ICP-MS).
+2.8  In vivo biodistribution of Au‑SPIO and HG‑SPIO 
+NPs in adult mice
+We used 8-week-old male C57BL/6N mice (Envigo Lab, 
+Indianapolis, IN, USA). We housed them in a tempera-
+ture-controlled (21 ± 2 °C, humidity 45%) vivarium with 
+a 12-h light/12-h dark cycle (lights on at 07:30). We use 
+male mice in our study to maintain consistency for direct 
+comparability with existing literature [28–30] and to build 
+upon established knowledge. To study the effect of MFs, 
+injection methods, and MPNP types, mice were injected 
+(Au-SPIO-PEG-insulin or HG-SPIO-PEG-insulin NPs) 
+at 30 mg/kg and were randomly divided into eight treat-
+ment groups as follows: (a) MF − , IV, functionalized 
+Au-SPIO NPs; (b) MF + , IV, functionalized Au-SPIO 
+NPs; (c) MF − , IP, functionalized Au-SPIO NPs; (d) MF + , 
+IP, functionalized Au-SPIO NPs; (e) MF − , IV, functional-
+ized HG-SPIO NPs; (f) MF + , IV, functionalized HG-SPIO 
+NPs, (g) MF − , IP, functionalized HG-SPIO NPs; and 
+(h) MF + , IP, functionalized HG-SPIO NPs (number of 
+animals = 3 for each experimental group). The mice in the 
+corresponding groups were subjected to MF for 30 min and 
+were anesthetized right before the MF treatment.
+The mice were anesthetized and sacrificed at 2, 4, 8, and 
+12 h post-injection. The injected dose of 30 mg/kg, of which 
+gold is about 77.4% for Au-SPIO and 58.9% for HG-SPIO 
+NPs, is considered safe for mice and for detecting gold con-
+centration in the brain. According to the literature, Au NPs 
+were IV injected into mice with a dose as high as 1000 mg/
+kg. The dose was well-tolerated, and no adverse effects were 
+observed 24 h after injection [31]. It is also reported that 
+gold NPs with insulin coating at 273 mg/kg were IV injected 
+into mice [32]. Our dose was within the range reported in 
+the literature. At the designated post-injection time, the brain 
+(dissected into midbrain, cortex, and cerebellum), liver, 
+lung, and blood samples were collected and frozen imme-
+diately at − 80 °C. All procedures were conducted by the 
+National Institutes of Health Guide for the Care and Use of 
+Laboratory Animals and were approved by the Institutional 
+Animal Care and Use Committee. As shown in Fig. 1a–b, 
+we built an MF applicator using a linear Halbach array com-
+posed of 9 magnets for treating two mice simultaneously 
+(NdFeB, grade N52, the core strength of 1.48 T, dimen-
+sions 12.7 × 12.7 × 12.7 mm, K&J Magnetics, Inc.). The 
+array was specialized for a mouse’s head as a ring with a 38 
+mm inner diameter (approximately the size of the diameter 
+of the mouse head), 78 mm outer length, and 16 mm thick.
+We performed statistical analysis using the Mann–Whitney 
+U-test to estimate whether there is a significant difference 
+between the two treatment groups of Au accumulation. We 
+consider a p-value < 0.05 as a significant difference. We 
+express all the results using the average and the standard error 
+of the mean based on at least three independent experiments.
+Fig. 1   a The magnetic flux 
+simulation (front view) of the 
+magnetic applicator containing 
+a linear Halbach array and b 
+the magnetic applicator hosting 
+two mice
+
+	
+Advanced Composites and Hybrid Materials (2024) 7:76
+76 
+Page 6 of 23
+3  PBPK Modeling
+3.1  PK properties of MPNPs
+The developed PBPK model considers diffusion from blood 
+to major compartments, including the brain, lungs, liver, 
+spleen, kidneys, and the rest of the mouse body, as shown in 
+Fig. 2a. Each compartment comprises three sub-compartments 
+representing capillary blood, tissue, and PCs. We consider two 
+diffusion pathways: Au-SPIO NPs transport blood and PCs, 
+while HG-SPIO NPs transport between tissue and PCs, as 
+illustrated in Fig. 2b. We model the brain permeability using 
+an advection–diffusion equation, as shown in Fig. 2c. Empirical 
+studies suggest a 60–80% absorption rate. Examples include 
+64.8 ± 11.9% for IP-injected SPIO NPs in mice (18–20 nm, 
+25 mg/kg) [33], 69% for IP-injected docetaxel (20 nm, 8 mg/
+kg) [34], and 76% for Au NPs (20 nm 10 mg/kg) [24]. Based 
+on this evidence and microscope observations, we assume that 
+76% of functionalized MPNPs entered blood circulation after 
+IP injection. Subsequently, they passed through the capillary 
+membrane of each organ via different endocytic pathways, 
+described by the diffusion-limited model. We assume their 
+excretion rates by the liver and kidneys are constant. Therefore, 
+ordinary differential equations can mathematically describe 
+their concentrations at each compartment and sub-compartment. 
+Works of the literature suggest that MPNP of different sizes are 
+taken up via different pathways: the tissue and blood pathway for 
+smaller (20 nm) [35] and larger (50 nm) NPs [36], respectively.
+Thus, we describe the kinetics of Au-SPIO (18.42 ± 0.23 
+nm) and HG-SPIO NPs (73.65 ± 1.46 nm) in the PCs, capillary 
+blood, and tissue of each organ:
+For Au-SPIO NPs:
+For HG-SPIO NPs:
+Here, subscript t represents the organ t, Rbloodt is the rate 
+of changes in the mass of the MPNPs in the capillary of the 
+organ t, Qt (L/h) is the blood flow to the organ, Ca (mg/l) 
+and ­CVt (mg/L) are the MPNP concentrations in the arterial 
+and venous blood, respectively, ­PAt (L/h) is the permeability 
+area cross product between the capillary blood and the tis-
+sue (the product of permeability coefficient between capil-
+lary blood and tissue ­PACt (unitless) and regional blood 
+flow Qt (L/h)), Ctissue_t (mg/L, µg/g or ng/g) is the MPNP 
+concentration in the tissue, Pt (unitless) is the tissue/plasma 
+distribution coefficient. Kup_t (1/h) and Krelease_t (1/h) are 
+the PC uptake and release rate (constant), respectively, and 
+Ab_t (mg) and Apc_t (mg) are the mass of the MPNPs in the 
+capillary blood and the PCs, respectively.
+(1)
+Rbloodt =Qt × (Ca −CVt
+) −PAt × CVt +
+PAt × Ctissuet
+Pt
++ Kupt × Abt-Kreleaset × Apct
+(2)
+Rbloodt = Qt × (Ca −CVt
+) −PAt × CVt +
+PAt × Ctissuet
+P푡
+Fig. 2   a The permeability-
+limited PBPK model 
+considering brain permeability. 
+Q and C are blood flow and NP 
+concentration. b Different sub-
+compartment representations 
+of organs in the PBPK model: 
+blood and PC transport for 
+Au-SPIO NPs and tissue and 
+PC transport for HG-SPIO 
+NPs. c The brain permeability 
+was obtained from advection–
+diffusion equations
+
+Advanced Composites and Hybrid Materials (2024) 7:76	
+Page 7 of 23 
+76
+For Au-SPIO NPs:
+For HG-SPIO NPs:
+Here, Rtissue_t (mg/h) is the rate of changes in the mass 
+of the MPNPs in the tissue. Given the average weight of 
+the 80 mice of 0.025 kg, we calculated the PB parameters, 
+including blood flow to different compartments (Qt), the 
+compartment mass (Vb_t and Vt_t), and the blood mass (Vv 
+and Va), as listed in Table 1. The average percentage of 
+blood flow to the compartments and the percentage of 
+compartment volumes (capillary blood and tissue) to the 
+body weight were adopted from the literature [37].
+Besides these PB parameters in Table 1, which are only 
+affected by animal type, other PK parameters are essential 
+to simulate the PBPK of MPNPs, as listed in Table 2. As 
+(3)
+Rtissuet = PAt × CVt −
+PAt × C푡푖푠푠푢푒푡
+P푡
+,
+(4)
+Rtissuet = PAt × CVt −
+PAt × C푡푖푠푠푢푒푡
+Pt
++ Kupt × A푏푡−K푟푒푙푒푎푠푒푡× A푝푐푡
+discussed in the next section, those parameters are highly 
+affected by the MPNP’s properties.
+3.2  Estimation of permeability
+3.2.1  Brain permeability based on the indicator  
+diffusion method
+The permeability for the brain tissue is usually assumed to 
+be zero in most reported PBPK models because of the low 
+BBB crossing ability for some NPs and drugs [36]. It is not 
+accurate enough to simulate the MPs accumulation in the 
+brain. Our model assumes that the brain permeability is 
+not negligible and discusses the effect of the applied mag-
+netic field’s enhancement on the MPNP’s BBB crossing 
+efficiency by the advection–diffusion method. To estimate 
+the permeability coefficient in the brain, we consider the 
+entry of MPNPs through the Circle of Willis (CoW), an 
+arterial junction supplying blood to the brain. It details the 
+arterial structure of the brain, including the internal carotid 
+arteries (ICAs), vertebral arteries (VAs), anterior cerebral 
+Table 1   PB parameters used in our PBPK model
+Parameter
+Symbol
+Mean value
+Body weight (kg)
+BW
+0.025
+Cardiac output (L/h/kg0.75)
+QCC
+16.5
+Blood flow to each compartment (L/h)
+Liver
+QL
+0.167
+Spleen
+Qs
+0.011
+Kidneys
+Qk
+0.094
+Lungs
+QLu
+1.037
+Brain
+QBR
+0.034
+Remainder
+QRE
+0.730
+Mass of the tissue in each compartment (kg)
+Liver
+Vt_L
+9.49*10−4
+Spleen
+Vt_S
+1.04*10−4
+Kidneys
+Vt_K
+3.23*10−4
+Lungs
+Vt_Lu
+8.75*10−5
+Brain
+Vt_BR
+4.12*10−4
+Remainder
+Vt_RE
+2.04*10−2
+Mass of the blood (kg)
+Venous blood
+VV
+9.80*10−4
+Arterial blood
+Va
+2.45*10−4
+Mass of the capillary blood in each compartment (kg)
+Liver
+Vb_L
+4.26*10−4
+Spleen
+Vb_S
+2.13*10−5
+Kidneys
+Vb_K
+1.02*10−4
+Lungs
+Vb_Lu
+8.75*10−5
+Brain
+Vb_BR
+1.28*10−5
+Remainder
+Vb_RE
+8.50*10−4
+
+	
+Advanced Composites and Hybrid Materials (2024) 7:76
+76 
+Page 8 of 23
+arteries (ACA), middle cerebral arteries (MCA), basilar 
+artery (BA), and posterior cerebral arteries (PCA). Accord-
+ing to statistical analysis, the blood inflow distribution is 
+ICA (36% each) and VA (14% each), and the total brain 
+blood flow is 0.034 L/h. We confirmed these rates align 
+with existing literature [38].
+Brownian motion must be considered when the energy 
+exerted by the applied force in moving the particle at a distance 
+equal to its diameter is less than or comparable to thermal 
+energy. To understand the random movement of our MPNPs, 
+we first calculate the Brownian diffusion DB:
+Here T is the absolute temperature (measured in Kelvin) 
+and KB is Boltzmann’s constant. 휂 is the dynamic blood 
+viscosity Pa.s) and DH is the particle hydrodynamic diam-
+eter (nm). Another diffusive mechanism that influences the 
+MPNP motion in vessels is shear-induced diffusion. As blood 
+is a highly concentrated fluid with red blood cells (RBCs) 
+suspended in plasma where sheared cell–cell collisions give 
+rise to random motions with a diffusive character, the shear-
+induced diffusion coefficient, DS can be modeled as
+(5)
+DB = Kb
+∗T
+3πηDH
+(6)
+DS = KS
+(r푏
+)2훾
+Here KS ≈5 × 10−2 is a dimensionless coefficient depend-
+ent on RBCs concentration, rb is the radius of RBCs (µm) and 
+̇𝛾= 4 × VBmax
+dB  is the local value of the fluid shear rate. VBmax 
+(µm/s) and ­dB (µm) are the maximum centerline velocity and 
+blood vessel diameter, respectively. Thus, the total diffusion 
+coefficient in the blood is:
+An empirical equation calculates the diffusion coefficient 
+in the endothelial layer [39]:
+where d (nm) is the average diameter of MPNPs and 
+dpore ≈20nm is the average diameter of the pores in a mem-
+brane, [39] where the diffusion coefficient in the tissue is 
+defined as:
+The magnetization of MPNPs can be expressed as [40]:
+(7)
+Dtotal = DB+DS
+(8)
+Dendo = DB
+(
+1 −
+d
+dpore
+)2
+(1 −2.1
+(
+d
+dpore
+)
++2.09
+(
+d
+dpore
+)3
+−0.95
+(
+d
+dpore
+)5
+(9)
+Dtissue = 0.56DB
+(10)
+mp = Vp
+3(휒p −휒f
+)
+((휒p −휒f
+) + 3(휒f + 1))Ha
+Table 2   MPNP-related 
+parameters used for simulating 
+their transportation in the brain
+a Values obtained from the NPs characterization discussed in Sect. 4.1
+b Value obtained from the literature [17]
+c Values were from the literature [41]
+d Values were from the equation [5–9]
+Parameter
+Symbol
+Value
+Diameter of Au-SPIO NPs
+dAu
+18.42 nm (± 0.23)
+Hydrodynamic diameter Au-SPIO NPs
+dHAu
+38.4 nm (± 1.21)
+Outer diameter of HG-SPIO NPs
+dHG
+73.65 nm (± 1.21)
+Hydrodynamic diameter of HG-SPIO ­NPsa
+dHHG
+125.8 nm (± 0.60)
+SPIO ­densitya
+ρspio
+5240 kg/m3
+Au ­densitya
+ρAu
+19,320 kg/m3
+Initial concentration of Au-SPIO NPs a
+Cin
+1 mol/m3
+Magnetic ­gradientb
+∇(|||⃗H|||
+2
+)
+1.46*1013A2/m3
+ICA inflow ­ratec
+QICA
+0.012 L/h
+VA inflow ­ratec
+Qva
+0.004 L/h
+Blood ­viscosityc
+휂
+0.003 Pa.s
+Temperaturec
+T
+310 °K (body temperature)
+Brownian diffusion ­coefficientd
+DB
+7.27*10−12 ­m2/s
+Blood cells diffusion ­coefficientd
+DS
+3.92*10−10 ­m2/s
+Total diffusion coefficient in ­bloodd
+Dtotal
+3.99*10−10 ­m2/s
+Diffusion coefficient (in membrane) d
+Dendo
+1.15*10−12 ­m2/s
+Diffusion coefficient (in tissue) d
+Dtissue
+2.23*10−10 ­m2/s
+
+Advanced Composites and Hybrid Materials (2024) 7:76	
+Page 9 of 23 
+76
+where Vp is the volume of MPNPs and, χp and χf are the 
+susceptibility of the MPNP and the fluid, respectively, and 
+µ0 = 4π × 10 − 7 H/m is the permeability of the free space. 
+Ha is the applied magnetic field strength. Based on the TEM 
+images in Fig. 3, each Au-SPIO NP has one SPIO NP core, 
+while each HG-SPIO NP has multiple SPIO NP cores. The 
+diameter distribution of Au-SPIO and HG-SPIO NPs and 
+their core SPIO are given in Fig. 3a–d. This is verified by 
+our elemental mapping analysis with the energy-dispersive 
+X-ray spectroscopy [7]. The average number of SPIO in each 
+HG-SPIO is calculated as
+where ­dHG_IN is the average inner diameter of HG-SPIO NPs, 
+and ­dspio is the average diameter of SPIO NP cores. The 
+magnetic force provided by MF acted on each SPIO NP core 
+is given by:
+(11)
+N = Vcore
+Vspio
+=
+4
+3πd3
+HG−IN
+4
+3πd3
+spio
+=
+d3
+HG−IN
+d3
+spio
+(12)
+FA
+m = 휇f
+(N∗mp ⋅∇)Ha
+where μf is the permeability of the fluid. The magnetic force 
+acted on each MPNP is given by:
+The opposing Stokes drag force on a spherical particle is 
+given by
+When the Stokes drag force first equals the applied MF 
+force, the particle will reach its equilibrium relative velocity, 
+defined as,
+where k =
+a3
+9휂RH
+휇0휒
+1+ 휒
+3
+ is the magnetic drift coefficient. Thus, 
+considering these effects together, the concentration of 
+MPNPs in the cerebral blood is given by:
+(13)
+FH
+m = 휇f
+(mp ⋅∇)Ha
+(14)
+⃗
+Fs = 6𝜋𝜂R𝐻⃗
+V𝑅
+(15)
+⃗
+VR = N∗
+𝛼3
+9𝜂R𝐻
+𝜇0𝜒
+l + 𝜒
+3
+𝛻
+(
+|||⃗H|||
+2)
+=k𝛻
+(
+|||⃗H|||
+2)
+(16)
+𝜕
+𝜕tC(𝑥, 𝑦, 𝑡)=−𝛻
+[
+−𝐷𝑇𝑜𝑡𝑎𝑙𝛻𝐶+C
+→
+VB+𝐶𝑘𝛻
+(
+|||⃗H(𝑥, 𝑦)|||
+2)]
+Fig. 3   TEM images of a SPIO 
+core in Au-SPIO NPs and b 
+Au-SPIO NPs and c SPIO core 
+of HG-SPIO NPs and d HG-
+SPIO NPs
+
+	
+Advanced Composites and Hybrid Materials (2024) 7:76
+76 
+Page 10 of 23
+Here C is the concentration of MPNPs, ⃗
+VB is the blood 
+velocity.
+Functionalized Au-SPIO and HG-SPIO NPs in the 
+surrounding endothelial and tissue layer only experience 
+diffusion and magnetic drift but no blood flow forces. The 
+concentration inside the membrane and tissue is defined 
+more simply by the equation:
+After solving the equations, the permeability coefficient of 
+the brain was calculated as [40]:
+Here, dS/dt is the amount of MPNPs passing the mem-
+brane in unit time, A is the surface area of the capillaries, ΔC 
+is the average concentration difference between the cerebral 
+blood and brain tissue, and v is the average blood velocity. 
+The permeability coefficients of MPNPs for the brain without 
+and with MF were further incorporated into the previously 
+described PBPK model to estimate the amount of MPNPs 
+staying in the brain tissue for every systemic circulation.
+3.2.2  Other tissues’ permeability identification
+Based on reference [42], permeability for the liver and spleen 
+was calculated by the equation:
+The biliary excretion rate is calculated as follows:
+Here d is the MPNP’s outer diameter.
+3.3  Estimation of the PC uptake rate
+PCs capture MPNPs from the tissue (for smaller MPNPs) or 
+blood (for larger MPNPs), releasing part of them back into 
+the tissue. The PC uptake rate is a function of the maximum 
+uptake rate and decreases as the PCs reach a saturation level. 
+The effective uptake rate by PCs is a function of a maximum 
+uptake rate. The effective uptake rate decreases as the PCs 
+become saturated. The experimental data [43] and curve fit-
+ting results [42] suggested that the uptake capacity, uptake, 
+and release rate are related to MPNPs’ size. Additionally, 
+the cellular-uptake efficiency is affected by the size, mor-
+phology, surface-functionalization type, and surface coat-
+ing of MPNPs [15]. Thus, we measured the uptake rate of 
+(17)
+𝜕
+𝜕tC(x, y, t) = 𝛻
+[
+−D endo
+tissue 𝛻C + Ck𝛻
+(
+|||⃗H(x, y)|||
+2)]
+(18)
+PACBR = dS
+dt ×
+l
+A × ΔC × v
+(19)
+PACliver = 0.0001336 × d −0.0016558.
+(20)
+PACspleed = 0.0001448 × d −0.0004824.
+(21)
+Kbile = 0.0005768∗ln ln(d) −0.001449
+two types of MPNPs and curve-fitted them with MATLAB. 
+Simulation results using different approaches were com-
+pared. PCs’ endocytosis of MPNPs is shown in the follow-
+ing equations:
+Here, Kmax
+(h−1) is the maximum uptake rate in the tis-
+sue or blood, ­Apc stands for MPNPs in PCs, MPC cap is the 
+uptake capacity per PC, NPC,t is the number of PCs in the 
+different tissues. According to Curve fitting results [42], 
+Kmax and MPC cap can be described as:
+Here, UPt and Rret t (unitless) are the coefficient for differ-
+ent tissues, and Dt, UPt1, UPt2,2 , UPt3, Mt, Mt11, Mt22, Mt3, Dt 
+(unitless) are parameters (constants) calculated from available 
+data by the literature [43, 44]. The collected PC uptake data is 
+presented in Table 3.
+Based on curve-fitting data, the obtained PK parameters for 
+MPNPs are summarized in Table 4.
+4  Results and discussion
+4.1  MPNP characteristics
+Figure 3 shows the morphology and the calculated diam-
+eters/historiography of (a) the SPIO core in Au-SPIO NPs 
+(b) Au-SPIO NPs, (c) the SPIO core in HG-SPIO NPs, and 
+(d) HG-SPIO NPs. From the historiographic diagram, we 
+can calculate the average diameter of the SPIO core in Au-
+SPIO, and HG-SPIO NPs, which are 9.71 ± 0.09 nm, and 
+19.50 ± 0.05 nm, respectively. The average outer diameters 
+(22)
+Kup = Kmax ×
+(
+1 −
+Apc
+MPCCap × NPC
+)
+(23)
+Kmax −t = UPt ×
+(
+UPt−1 × (d −UPt−2
+)2 + UPt−3
+)
+(24)
+MPC cap = Mt ×
+(
+Mt−1 × (d −ML−2
+)2 + ML−3
+)
+Table 3   PCs uptake rate from literature
+Reference
+Diameter (nm)
+Number of Au 
+NPs per cell 
+­(103)
+ [44]
+22
+290
+ [44]
+39
+120
+ [44]
+66
+74
+ [43]
+14
+300
+ [43]
+50
+60
+ [45]
+74
+41
+ [45]
+100
+20
+
+Advanced Composites and Hybrid Materials (2024) 7:76	
+Page 11 of 23 
+76
+of the Au-SPIO and HG-SPIO NPs are 18.42 ± 0.23 nm 
+and 73.65 ± 1.46 nm, respectively.
+Table 5 shows the increase of hydrodynamic diameter 
+and zeta potential of MPNPs after the conjugation with 
+PEG and insulin, indicating the successful functionaliza-
+tion of PEG and insulin.
+The magnetic properties of MPNPs were measured 
+using a vibration sample magnetometer. As shown in 
+Fig.  4, magnetization curves appear s-shaped under 
+the applied MF, and the MPNPs exhibit typical super-
+paramagnetic behavior. The saturated magnetization is 
+56.94 emu/g, 16.23 emu/g, and 7.11 emu/g, for SPIO, Au-
+SPIO, and HG-SPIO NPs, respectively. This result agrees 
+well with the literature that the magnetization saturation 
+of SPIO decreases when coated with Au [46].
+4.2  In vitro evaluation
+The morphological impacts of MPNPs on the N2A neu-
+ron cell line are investigated, and the results are shown in 
+Fig. 5. It can be noticed from the images that after 3 days 
+of incubation, there is no significant change in morphol-
+ogy for Au-SPIO NP-treated cells. For HG-SPIO NP-treated 
+cells, more dead cells and a reduced extent of neuronal cell 
+Table 4   PK parameters of functionalized MPNPs used in the PBPK model
+a, b, c  values are from the literature [17], [23], and [42], respectively
+Parameter
+Symbol
+MPNP
+Liver
+Spleen Kidneys
+Lungs Brain
+Rest
+Tissue: plasma distribution coefficient
+Pt(unitless)a
+Au-SPIO
+0.08
+0.15
+0.15
+0.15
+0.0360
+0.15
+HG-SPIO 1.5
+3
+0.15
+0.15
+0.0360
+0.15
+Permeability coefficient
+PACt(unitless)b
+Au-SPIO
+0.001
+0.001
+0.001
+0.001
+1.32*10−4 
+(MF −); 
+3.41*10−4 
+(MF +)
+0.000001
+HG-SPIO 0.008
+0.0099 0.001
+0.001
+3.0*10−5 
+(MF −); 
+6.2*10−5 
+(MF +)
+0.000001
+Maximum PC uptake rate
+Kmax(1/h)1a
+Au-SPIO
+4
+10
+0.1
+1
+NA
+NA
+HG-SPIO 4
+10
+0.1
+0.1
+NA
+NA
+Time for reaching half maximum uptake 
+rate
+K50t(h)c
+Au-SPIO
+24
+24
+24
+24
+NA
+NA
+HG-SPIO 24
+24
+24
+24
+NA
+NA
+Hill coefficient
+nt(unitless)c ; nt(unitless)c
+Au-SPIO
+2
+2
+2
+2
+NA
+NA
+HG-SPIO 2
+2
+2
+2
+NA
+NA
+Release rate PC constant
+Krelease(1/h1)
+Au-SPIO
+0.001
+0.003
+0.01
+0.003
+NA
+NA
+HG-SPIO 0.0075 0.003
+0.01
+0.005
+NA
+NA
+Biliary/ urinary excretion rate constant
+Kbile (L/h) or Kurine(L/h)b
+Au-SPIO
+0.0001 NA
+3*10−6
+NA
+NA
+NA
+HG-SPIO 0.0012 NA
+1.2*10−4 NA
+NA
+NA
+Table 5   Zeta potential and hydrodynamic measurement of Au-SPIO 
+and HG-SPIO NPs
+Particle type
+Hydrodynamic 
+diameter (nm)
+Zeta-potential (mV)
+Au − SPIO
+23.6 ± 0.1
+ − 42.3 ± 0.8
+Au − SPIO − PEG
+38.0 ± 0.15
+ − 26.4 ± 0.2
+Au − SPIO − PEG − insulin
+38.4 ± 1.2
+ − 17.0 ± 0.1
+HG − SPIO
+115.5 ± 2.1
+ − 30.6 ± 1.7
+HG − SPIO − PEG
+122.7 ± 1.3
+ − 30.7 ± 0.3
+HG − SPIO − insulin
+125.8 ± 0.6
+ − 23.4 ± 1.0
+Fig. 4   Magnetization curves for SPIO NPs, Au-SPIO NPs, and HG-
+SPIO NPs
+
+	
+Advanced Composites and Hybrid Materials (2024) 7:76
+76 
+Page 12 of 23
+differentiation are observed, indicating toxicity induced by 
+HG-SPIO NPs at 40 µg/ml after 3 days of incubation.
+The cell viability of Au-SPIO and HG-SPIO NPs was 
+further evaluated on the N2A cell line using flow cytom-
+etry. As shown in Fig. 6, for up to 5 days of incubation, 
+SPIO-Au NPs did not induce significant toxicity on N2A 
+cells at 40 µg/ml. For HG-SPIO NPs at the concentration 
+of 20 µg/ml, the cell viability was unaffected for up to 5 
+days of incubation. However, at a higher concentration (40 
+µg/ml), there was reduced viability after 1 day of incuba-
+tion. The overall viability of HG-SPIO NPs at 40 µg/ml 
+was lower than that at 20 µg/ml and the viability of Au-
+SPIO NPs.
+The results suggested that the larger size of NPs could 
+induce higher toxicity. Therefore, a lower concentration of 
+HG-SPIO NPs is favored for drug delivery to reduce the 
+possible toxicity due to the high dose. The cell uptake rates 
+of MPNPs at different time points were evaluated by quan-
+tifying the mass of Au in each sample using the ICP-MS. 
+As shown in Table 6, the number of MPNPs absorbed by 
+each cell was calculated based on the counted cell number 
+in each well.
+The results are shown in Fig. 7 (a) and (b) for Au-SPIO 
+and HG-SPIO NPs respectively. It can be observed from the 
+results that the cellular uptake rate reaches the maximum 
+value at 4 h for both types of MPNPs. Additionally, at each 
+time point, the cell uptake rate of Au-SPIO NPs is much 
+higher than HG-SPIO NPs, indicating that the smaller size 
+NPs are easier to be absorbed by cells.
+4.3  Model prediction
+For IP-injected MPNPs, MPNPs will first diffuse into the 
+interstitial spaces of the portal organs and the lymph before 
+entering the bloodstream. We applied an optimized bioavail-
+ability (F) to the dose based on our observation that a portion 
+of the quantity remained trapped in the intraperitoneal space 
+upon dissection. According to the reference that studied the 
+biodistribution of IP-injected Au NPs [24], the optimized 
+value of IP bioavailability is given as 76%. We simulated 
+the biodistribution of IP-injected MPNPs (MF + and MF-) 
+and compared them with measured biodistribution data. For 
+Au-SPIO NPs, the blood, brain, liver, and lung prediction 
+results show close to measured data (Fig. 8).
+Fig. 5   Morphological changes in N2A cells. a Control, day 3, b Au-SPIO NPs at 40 µg/mL, day 3, and c HG-SPIO NPs at 40 µg/mL, day 3
+Fig. 6   MPNP-treated N2A cell 
+viability for up to 5 days of 
+incubation
+
+Advanced Composites and Hybrid Materials (2024) 7:76	
+Page 13 of 23 
+76
+For HG-SPIO NPs, the prediction results for the liver 
+and spleen are close to the measured data. At the same 
+time, there is some deviation for blood and brain (Fig. 9). 
+The difference in error bars’ lengths is probably because of 
+the large size of HG-SPIO NPs and the individual variabil-
+ity of the absorption rate in animals, as well as the small 
+sample size. We will perform animal studies in a larger 
+sample size in our future study to minimize the measure-
+ment variability. We discussed our evaluation methodol-
+ogy in the following section.
+4.4  Model evaluation
+The measured Au concentrations in blood, brain, liver, lung, 
+kidney, and spleen were obtained at 2, 4, 8, and 12 h post IP 
+injection of MPNPs at 30 mg/kg. The absolute average fold 
+error (AAFE) was used to verify the PBPK model:
+Here n is the total number of data points. A larger AAFE 
+value indicates a lower accuracy of prediction. The AAFE of 
+model simulated data for each organ in each group is shown 
+in Table 7. The AAFE of brain concentration for MF − groups 
+is lower than for the MF + group for both types of MPNPs.
+4.5  Model sensitivity analysis
+We conducted normalized sensitivity analyses to identify 
+highly influential parameters for optimal AAFE. We varied 
+(25)
+AAFE = 10
+1
+n
+∑
+log
+
+simulated
+measured
+
+each parameter by a 10% change of the initial value and cal-
+culated the area-under-the-concentration curve (AUC) in the 
+plasma, liver, and spleen following:
+As shown in Figs. 10a and 11a, the most sensitive PK 
+parameters determining the brain accumulation of MPNPs 
+are the PBR and Kbile for Au-SPIO NPs and PABRC and 
+Kbile for HG-SPIO NPs. We will use these results for opti-
+mization in the discussion section.
+4.6  Impact of MF
+We investigated the effect of different MFs (MF − , MF +) on 
+accumulating two types of MPNPs in the brain. The blood 
+and three brain sections (midbrain, cortex, and cerebel-
+lum) were collected at 2, 4, 8, and 12 h after IP injection of 
+MPNPs at 30 mg/kg, as shown in Figs. 12 and 13.
+For the Au-SPIO NPs, the concentration of gold in the 
+brain is 3.833 ng/ml for the MF − group and 3.608 ng/ml for 
+the MF group. For the HG-SPIO NPs, the concentration of 
+gold in the brain of the MF + group (0.854 ng/ml) is slightly 
+higher than the MF − group (0.759 ng/ml), and the concen-
+tration in time points of 2 and 4 h are blank. The reason is 
+that the accumulated concentration is too low to be detected 
+within the ICP-MS test resolution. Note that the absolute 
+value of gold accumulation in the brain also largely depends 
+on the number of MPNPs entering the bloodstream upon 
+injection. Sometimes, we can observe a noticeable amount 
+of MPNPs accumulated in the injection site due to operating 
+errors. Therefore, we normalized the brain concentration by 
+the blood concentration.
+Figure 14a shows that the MF + group has a higher gold level 
+(normalized) at all time points than the MF − group, suggesting 
+that the MF can enhance the BBB crossing of Au-SPIO NPs. 
+As shown in Fig. 14b, the MF + group has a lower normalized 
+gold level at 8 h and a slightly higher one at 12 h for HG-SPIO 
+NPs. We did not observe the enhanced BBB crossing of HG-
+SPIO NPs by MF. According to our magnetization curve results 
+(26)
+Sx(%) =
+(AUCperturb
+AUCbase
+−1
+)
+× 100%
+Table 6   Experimental N2A cellular uptake rate of Au-SPIO and HG-
+SPIO NPs
+Time point
+HG-SPIO (ng/103 
+cell)
+Au-SPIO (ng/103 cell)
+2 h
+0.524
+0.40
+4 h
+1.39
+1.07
+8 h
+1.31
+1.04
+12 h
+1.15
+1.06
+Fig. 7   N2A cellular uptake of a Au-SPIO NPs and b HG-SPIO NPs
+
+	
+Advanced Composites and Hybrid Materials (2024) 7:76
+76 
+Page 14 of 23
+in Fig. 4, the thinner plasmonic layers of Au-SPIO NPs result 
+in higher magnetization levels and thus significantly improve 
+efficient BBB crossing exposure to the magnetic field. In con-
+trast, there is no substantial improvement in BBB crossing effi-
+ciency for HG-SPIO NPs with increased shell thickness and 
+less saturation magnetization. In brain tissues, most MPNPs are 
+distributed in the cerebellum, fewer MPNPs are concentrated in 
+the cortex, and the least amount is in the midbrain. We assume 
+the MF has equal effects on the f MPNPs absorption in each 
+area of the brain; the reason for the results may come from 
+the mass difference samples; midbrain samples have the least 
+mass, and the total amount of MPNPs in this area might be 
+too limited for the ICP test to detect it. In other organs such as 
+the spleen and livers, the MF has no effects on the biodistribu-
+tion of MPNPs as the MF did not apply on these regions. The 
+MF − and MF + treatment groups show different results because 
+of the individual differences of each male mouse; the total num-
+ber of MPNPs in each sample is a little different.
+4.7  Impact of IP and IV injection types
+As shown in Fig. 15a–b, the brain accumulation of gold post 
+IP and IV injection of Au-SPIO NPs peaks at 12 and 8 h, 
+respectively, while in Fig. 15c–d, the brain accumulation of 
+gold post IP and IV injection of HG-SPIO NPs peaks at 8 
+h for both cases.
+In addition, the brain concentration of gold in IP-
+injected MPNPs is higher than that of IV injection. In the 
+supplementary document, Figure S1 presents the time his-
+tory of blood concentration of gold of MPNPs after IP 
+and IV injection. It shows that the gold concentration in 
+blood decreases at 8 h. Additionally, As shown in Figs. S2 
+Fig. 8   Simulated and measured 
+in vivo biodistribution of Au-
+SPIO NPs (MF − and MF +)
+Fig. 9   Simulated and measured 
+in vivo biodistribution HG-
+SPIO NPs (MF − and MF +)
+
+Advanced Composites and Hybrid Materials (2024) 7:76	
+Page 15 of 23 
+76
+and S3, for Au-SPIO NPs, the gold levels in the lungs 
+and kidney by IV injection are higher than those by IP 
+injection. But for the HG-SPIO NPs, the gold level in the 
+liver, spleen, and kidney by IP injection is higher than that 
+by IV injection. According to the literature, IV- and IP- 
+injections can accumulate MPNPs in organs like the liver, 
+spleen, and kidney [47]. However, literature suggested that 
+the blood concentration of IP-injected Au NPs showed a 
+slow increase followed by a steady state. In contrast, the 
+blood concentration of IV-injected MPNPs decreased 
+biexponentially [33]. Therefore, there is always a vast 
+and rapid decrease in gold levels in the blood after an IV 
+injection compared to the relatively slow decline of gold 
+levels after an IP injection. The reason is that IV-injected 
+MPNPs directly enter the systemic circulation and rapidly 
+reach a peak. Thus, MPNPs are distributed more quickly, 
+and they are also cleared out more efficiently. Unlike IV 
+injection, the IP-injected MPNPs undergo an absorption 
+process by the peritoneal cavity before entering the sys-
+temic circulation. Therefore, the amount of gold in the 
+Table 7   AAFE of simulated 
+biodistribution of MPNPs in 
+different tissues
+Tissue
+Au-SPIO(MF −)
+Au-SPIO(MF +)
+HG-SPIO(MF −)
+HG-SPIO(MF +)
+Brain
+1.5381
+5.8266
+1.1125
+1.4213
+Blood
+1.8350
+1.3600
+1.3755
+1.3501
+Liver
+2.4696
+2.3732
+1.1624
+3.4275
+Spleen
+NA
+NA
+1.7818
+1.2610
+Kidney
+NA
+NA
+5.7468
+2.9385
+Lung
+1.0660
+2.3074
+2.1075
+2.0656
+Fig. 10   PK parameter sensitiv-
+ity analysis for Au-SPIO NPs in 
+the a brain and b blood
+
+	
+Advanced Composites and Hybrid Materials (2024) 7:76
+76 
+Page 16 of 23
+blood slowly increases after IP injection as MPNPs are 
+constantly absorbed by the peritoneal cavity.
+4.8  Impact of MPNP diameters
+To investigate the impact of MPNP diameters on brain 
+accumulation, we normalized the gold concentration in the 
+brain by the gold concentration in the blood. We compared 
+the non-normalized (Figs. 12d and 13d) and normalized 
+(Fig. 14) results for both types of MPNPs. As we can see, 
+both the non-normalized and normalized brain accumula-
+tion levels of Au-SPIO NPs are higher than those of HG-
+SPIO NPs, indicating that the smaller MPNPs can pass 
+through BBB more efficiently. The size effect on brain 
+gold accumulation is reported in the literature as well: 
+Sonavane et al. [31] compared the biodistribution data of 
+4, 15, 28, and 58 nm Au NPs in mice and found that 15 nm 
+Au NPs showed the highest concentration in the brain 24 
+h after IV injection, while on the contrary, as the particle 
+size increased, the concentration increased in the spleen. 
+Betzer also found that 20 nm Au NPs showed the highest 
+concentration levels in the blood for all time points from 
+2 to 48 h after IV injection compared to other sizes of 
+Au NPs (50 nm and 100 nm), indicating the small size 
+enhanced their BBB crossing efficiency and resulted in 
+the highest brain accumulation over time [32]. Takeuchi 
+pointed out that this difference in BBB crossing efficiency 
+of colloidal Au NP at different sizes is because the surface 
+area of the capillary basement membrane is covered by 
+end-feet (button-like terminals of axons that make synap-
+tic connections with other nerve cells) originating from 
+brain astrocytes. These astrocytic end-feet are separated 
+from the capillary endothelium by only 20 nm. Hence, Au 
+NPs at smaller sizes may transfer through these gaps more 
+quickly than their larger-size counterparts [48, 49].
+Figure 16a–b shows that the concentration of HG-SPIO 
+NPs is much higher than Au-SPIO NPs in the liver. Fig-
+ure 16c shows that the HG-SPIO NP accumulation in the 
+Fig. 11   PK parameter sensitiv-
+ity analysis for HG-SPIO NPs 
+in a brain and b blood
+
+Advanced Composites and Hybrid Materials (2024) 7:76	
+Page 17 of 23 
+76
+spleen reaches 300 ng/mg after 12 h, the highest biodis-
+tribution among all tissues. According to a study of Au 
+NPs from 10 to 100 nm diameter, the largest NP accu-
+mulations typically occur in the blood, liver, and spleen. 
+Generally, larger nanoparticles accumulate in the liver and 
+spleen more rapidly [50]. The study agrees well with our 
+results that the high HG-SPIO NPs were measured in the 
+liver and spleen. Organ biodistribution studies of Au NPs 
+(15, 50, 100, and 200 nm) also showed that 15 nm Au 
+NPs had a widespread concentration compared with larger 
+sizes. An increase in spleen concentration was observed 
+with the increase in particle size after 24 h of IV injection 
+[31]. Literature also shows that the size of Au and Ag NP 
+affects cellular uptake, biodistribution, and half-life [51]. 
+For example, spherical mesoporous silica NPs with a 50 nm 
+diameter showed the highest cellular uptake by HeLa cells 
+at 10 min and 4 h after IV injection [52]. Au NPs coated 
+with ethylene glycol (size from 10 to 100 nm) show NPs 
+less than 50 nm protected by a moderate mPEG weight 
+seem to have a long half-life and the ability to extravasate 
+into and permeate through the tissue [53]. In addition, a 
+study using targeted Au NPs reported the highest cellu-
+lar uptake with 40–50 nm Au NPs in SKBR-3 cells [54]. 
+These experimental studies provide empirical insights into 
+designing MPNPs with optimal sizes, therapeutic effective-
+ness, and targeting efficiencies.
+4.9  MPNP‑related PK parameter optimization
+The sensitivity analysis compares and selects sensitive 
+biochemical-dependent PBPK parameters estimated by 
+MATLAB optimization. Symbology supports a variety of 
+Fig. 12   Gold accumulation level in a midbrain, b cortex, c cerebellum, and d total brain at 2, 4, 8, and 12 h after IP injection of 30 mg/kg Au-
+SPIO NPs for MF − vs. MF + 
+
+	
+Advanced Composites and Hybrid Materials (2024) 7:76
+76 
+Page 18 of 23
+optimization methods for least-squares and mixed-effects 
+estimation problems. Here, we introduced the nonlinear least 
+square optimization toolbox [55] to evaluate the key param-
+eters for brain concentration of MPNPs determined from our 
+sensitive analysis. As discussed in Sect. 4.4, we chose the two 
+most sensitive parameters (Kbile and PBR for Au-SPIO NP, 
+Kbile and PABRC for HG-SPIO NP) for optimization. The 
+optimized values for these parameters are listed in Table 8.
+The optimized prediction of brain gold concentration 
+is shown in Fig. 17. Compared with the simulated result 
+with original parameters, the simulated result with opti-
+mized parameters is closer to the measured data of brain 
+gold concentration.
+To further evaluate the accuracy of the simulated results 
+using optimized parameters, we performed an AAFE eval-
+uation. The results in Table 9 showed that the optimized 
+predicting outcomes exhibited lower AAFE value com-
+pared with original results for MPNPs with and without 
+MF, indicating that the optimized results are closer to 
+measured data than the initial results.
+Fig. 13   Accumulation level of gold in a midbrain, b cortex, c cerebellum, and d brain at 2, 4, 8, and 12 h after IP injection of 30 mg/kg HG-
+SPIO NPs: MF − vs. MF + (*p < 0.05)
+Fig. 14   Normalized concentra-
+tion level of gold in the brain 
+by blood gold concentration for 
+IP-injected MPNPs: a Au-SPIO 
+NPs and bHG-SPIO NPs
+
+Advanced Composites and Hybrid Materials (2024) 7:76	
+Page 19 of 23 
+76
+However, due to the homogeneity and heterogeneity of 
+NPs and animal models, developing a more comprehensive 
+PBPK model still requires collecting much more diverse 
+biological data from different animal species. Composing 
+a complete dataset to construct a robust PBPK model is vir-
+tually impossible. There are lots of factors which can affect 
+PK parameters’ estimation. For example, in the intrinsic 
+factors (pregnancy, genetics, disease, organ dysfunction, 
+Fig. 15   Concentration level of gold in brain a Au-SPIO NPs through IP injection, b Au-SPIO NPs through IV injections, c HG-SPIO NPs 
+through IP injection, and d HG-SPIO NPs through IV injections (*p < 0.05)
+Fig. 16   Gold concentration of IP-injected a Au-SPIO NPs in the liver, b HG-SPIO NPs in the liver, and c HG-SPIO NPs in the spleen (*p < 0.05)
+
+	
+Advanced Composites and Hybrid Materials (2024) 7:76
+76 
+Page 20 of 23
+race) and extrinsic factors (diet, smoking, alcohol use, 
+other medications) [56], in our model, we have not quanti-
+fied these factors’ influence on PK parameters. The use 
+of machine learning (ML) and artificial intelligence (AI) 
+approaches to predict the PK parameters is increasingly 
+appealing because these novel approaches speed up the 
+efficient development of robust PBPK models for drugs 
+and NPs and have the potential to become an alternative 
+approach to traditional in vivo-data-based PBPK modeling. 
+For example, it always takes a long time to investigate and 
+validate the permeability and drug development targeted to 
+the central nervous system due to the extraordinary com-
+plexity of the brain. ML or AI algorithms are excellent for 
+predicting BBB permeability with higher accuracy with 
+limited data [57]. Compared with the in vivo and in vitro 
+approach, which may involve complex physiological pro-
+cesses and hard-to-measure parameters accurately, ML/AI 
+tools have significant advantages in prediction. However, 
+the ML-based PBPK model still needs more interpretabil-
+ity for novel drugs. Integrating existing diffusion-limited 
+and perfusion-limited approaches [21] and data process-
+ing techniques with experimental data is essential to help 
+us better understand and predict the in vivo biodistribu-
+tion of MPNPs and other NPs in general [58, 59]. In the 
+future, the accuracy of the ML-PBPK model can be further 
+improved or optimized for specific drug molecular struc-
+tures by expanding the training set. We will keep updating 
+our PBPK model to study the in vivo biodistribution of 
+more types of MPNPs and apply AI approaches to estimate 
+PK parameters accurately and efficiently.
+5  Conclusion
+This paper investigates the PBPK behavior of two types of 
+MPNPs: functionalized Au-SPIO and HG-SPIO NPs with 
+different sizes in the microvascular system. We developed 
+a modern PBPK model that considers the impact of MPNP 
+size on the brain plasma distribution coefficient and PC 
+cellular uptake rate. We incorporate PB and PK parameters 
+based on in vivo data from our experiments in adult mice 
+and the literature. We validate our model using in vivo 
+biodistribution of MPNPs in adult mice. The results 
+showed that smaller-sized MPNPs have higher brain 
+accumulation than larger sizes for both IP and IV injec-
+tions. The full-body biodistribution results showed that 
+most large MPNPs, like HG-SPIO NPs, enter the liver and 
+spleen. In contrast, for smaller MPNPs like SPIO, ­Fe3O4, 
+Au-SPIO, glycol-coated Au-SPIO NPs, and so on. The 
+in vivo results also demonstrated that MF enhances the 
+Table 8   Optimized brain 
+parameters
+MPNPs
+Biliary rate (Kbile)
+Brain plasma distribution (PBR) for Au-SPIO NPs/
+brain permeability (PABRC) for HG-SPIO NPs
+HG-SPIO NPs (MF −)
+0.0334
+3.0*10−5 (PABRC)
+HG-SPIO NPs (MF +)
+0.0212
+6.2*10−5 (PABRC)
+Au-SPIO NPs (MF −)
+0.0016
+0.0268 (PBR)
+Au-SPIO NPs (MF +)
+6.59*10−4
+0.0168 (PBR)
+Fig. 17   Optimized (opt) and original(ori) simulation results compared with measurement (mea) results of brain concentration of gold in. a Au-
+SPIO NPs and b HG-SPIO NPs
+
+Advanced Composites and Hybrid Materials (2024) 7:76	
+Page 21 of 23 
+76
+brain accumulation of MPNPs for both injection types. IP 
+injections resulted in a higher brain MPNP accumulation 
+than IV injections. The local sensitive analysis showed that 
+the brain plasma distribution, brain permeability, and dis-
+tribution coefficients were highly influential parameters 
+for brain accumulation of MPNPs.
+Based on these findings, we optimized PB/PK parameters 
+using nonlinear least square fitting to arrive at a more accu-
+rate prediction. We compared the biodistribution for different 
+MPNPs and discussed intrinsic and extrinsic impact factors, 
+such as MPNP morphologies, surface functions, and injection 
+methods. The comparative study provides theoretical insight 
+into designing MPNPs and biodegradable nano- [60, 61] 
+and micro-scale [62] drug carriers. Much research has been 
+done to investigate MPNP application as a functional filler 
+in electromagnetic composites. Examples include MPNPs in 
+electromagnetic composites such as Epsilon-negative cermet 
+[63], doped ceramics [64], and C/SiO2 meta-composite [65]to 
+enhance further the development of therapeutic agents with 
+multiple action modes. Applications also include bio-printed 
+microrobots that can release smaller MPNPs continuously 
+and sustainably [66] for brain-targeting drug delivery. In the 
+next step, we will explore a more accurate friction and adhe-
+sion and the slippage model of microrobots into the PBPK 
+model. We will develop an AI-empowered autonomous feed-
+back control system to deliver the microrobots and nano drug 
+carriers precisely to the targeted brain sites.
+Supplementary Information  The online version contains supplemen-
+tary material available at https://​doi.​org/​10.​1007/​s42114-​024-​00884-9.
+Acknowledgements  The authors thank the Material Characterization 
+Facility and the Elemental Analysis Laboratory at Texas A&M Uni-
+versity for their help.
+Author contribution  The manuscript was written through the contri-
+butions of all authors. Hanwen Hu, Muzhaozi Yuan, Jingfan Chen, 
+Tianzhu Fan, and Tianhao Yan performed material preparation, char-
+acterization, and results analysis. In vitro cell work was performed by 
+Nguyen Nguyen and Zhifeng Xiao. In vivo animal work was performed 
+by Caitlin A Madison. Hanwen Hu and Muzhaozi Yuan prepared the 
+initial draft of the manuscript. Ying Li, Shoshana Eitan, Hong-Cai 
+Zhou, Jean-Philippe Pellois, and Ya Wang reviewed and revised previ-
+ous manuscript versions. All authors have read and approved the final 
+version of the manuscript.
+Funding  This work was kindly supported by the United States National 
+Science Foundation (award # CMMI 1851635, Y.W.; award # ECCS 
+2021081, Y.W. and Y.L.). This work was also supported by the award 
+R01GM110137 (J.-P.P.) from the US National Institute of General 
+Medical Sciences.
+Availability of data and material  The datasets generated and analyzed 
+during the current work are available from the corresponding author 
+upon reasonable request.
+Declarations 
+Conflict of interest  The authors declare no competing interests.
+References
+	 1.	 Elmi GR et al (2022) Recent advances of magnetic gold hybrids 
+and nanocomposites, and their potential biological applications. 
+Magnetochemistry 8(4):38
+	 2.	 Dykman LA, Khlebtsov NG (2014) Uptake of engineered gold 
+nanoparticles into mammalian cells. Chem Rev 114(2):1258–1288
+	 3.	 Wang X et al (2022) Fe3O4@PVP@DOX magnetic vortex hybrid 
+nanostructures with magnetic-responsive heating and controlled 
+drug delivery functions for precise medicine of cancers. Adv 
+Compos Hybrid Mater 5(3):1786–1798
+	 4.	 Jia W et al (2021) Facile fabrication of monodisperse CoFe2O4 
+nanocrystals@dopamine@DOX hybrids for magnetic-responsive 
+on-demand cancer theranostic applications. Adv Compos Hybrid 
+Mater 4(4):989–1001
+	 5.	 Chowdhury P et al (2018) Chitosan biopolymer functionalized 
+gold nanoparticles with controlled cytotoxicity and improved 
+antifilarial efficacy. Adv Compos Hybrid Mater 1(3):577–590
+	 6.	 Yuan M, Wang Y, Qin YX (2017) SPIO-Au core–shell nano-
+particles for promoting osteogenic differentiation of MC3T3-E1 
+cells: concentration-dependence study. J Biomed Mater Res, Part 
+A 105(12):3350–3359
+	 7.	 Yuan M et al (2021) Superparamagnetic iron oxide–gold nano-
+particles conjugated with porous coordination cages: towards con-
+trolled drug release for non-invasive neuroregeneration. Nanomed 
+Nanotechnol Biol Med 35. p 102392
+	 8.	 Yuan M et al (2019) Thermocouple-tip-exposing temperature 
+assessment technique for evaluating photothermal conversion 
+efficiency of plasmonic nanoparticles at low laser power density. 
+Rev Sci Instrum 90(9):094902
+	 9.	 Yuan M, Wang Y, Qin YX (2018) Promoting neuroregeneration 
+by applying dynamic magnetic fields to a novel nanomedicine: 
+superparamagnetic iron oxide (SPIO)-gold nanoparticles bounded 
+with nerve growth factor (NGF). Nanomed Nanotechnol Biol Med 
+14(4):1337–1347
+	10.	 Yuan M, Wang Y, Qin YX (2019) Engineered nanomedicine for 
+neuroregeneration: light emitting diode-mediated superparamag-
+netic iron oxide-gold core-shell nanoparticles functionalized by 
+nerve growth factor. Nanomed Nanotechnol Biol Med. p 102052
+	11.	 Yuan M et al (2022) Magnetic fields and magnetically stimu-
+lated gold-coated superparamagnetic iron oxide nanoparticles 
+Table 9   AAFE of Optimized 
+results
+MPNPs
+Optimized results
+Original results
+Au-SPIO NPs (MF −)
+0.1248
+0.2777
+Au-SPIO NPs (MF +)
+0.5127
+0.6072
+HG-SPIO NPs (MF −)
+0.1928
+0.3351
+HG-SPIO NPs (MF +)
+0.8421
+1.3255
+
+	
+Advanced Composites and Hybrid Materials (2024) 7:76
+76 
+Page 22 of 23
+differentially modulate L-type voltage-gated calcium channel 
+activity in midbrain neurons. Appl Nano Mater 5(1):205–215
+	12.	 Reddy GR et al (2006) Vascular targeted nanoparticles for 
+imaging and treatment of brain tumors. Clin Cancer Res 
+12(22):6677–6686
+	13.	 Al-Jamal KT et al (2016) Magnetic drug targeting: preclinical 
+in vivo studies, mathematical modeling, and extrapolation to 
+humans. Nano Lett 16(9):5652–5660
+	14.	 Zhang J et al (2023) Nanoliposomal Bcl-xL proteolysis-targeting 
+chimera enhances anti-cancer effects on cervical and breast cancer 
+without on-target toxicities. Adv Compos Hybrid Mater 6(2):78
+	15.	 Yuan M et al (2022) Progress, opportunities, and challenges of 
+magneto-plasmonic nanoparticles under remote magnetic and 
+light stimulation for brain-tissue and cellular regeneration. Nano-
+materials 12(13):2242
+	16.	 Yuan M et al (2022) Superparamagnetic iron oxide-enclosed hol-
+low gold nanostructure with tunable surface plasmon resonances 
+to promote near-infrared photothermal conversion. Adv Compos 
+Hybrid Mater. pp 1–12
+	17.	 Chen J et al (2022) Blood-brain barrier crossing using magnetic 
+stimulated nanoparticles. J Control Release 345:557–571
+	18.	 Kutumova EO et al (2022) Physiologically based pharmacokinetic 
+modeling of nanoparticle biodistribution: a review of existing 
+models, simulation software, and data analysis tools. Int J Mol 
+Sci 23(20):12560 %@ 1422–0067
+	19.	 Qian MR et al (2017) Diffusion-limited PBPK model for pre-
+dicting pulmonary pharmacokinetics of florfenicol in pig. J Vet 
+Pharmacol Ther 40(6):e30–e38
+	20.	 Utembe W et al (2020) Current approaches and techniques in 
+physiologically based pharmacokinetic (PBPK) modelling of 
+nanomaterials. Nanomaterials 10(7):1267
+	21.	 Li M et al (2017) Physiologically based pharmacokinetic (pbpk) 
+modeling of pharmaceutical nanoparticles. AAPS J 19(1):26–42
+	22.	 Li M et al (2010) Physiologically based pharmacokinetic mod-
+eling of nanoparticles. ACS Nano 4(11):6303–6317
+	23.	 Lin Z, Monteiro-Riviere NA, Riviere JE (2016) A physiologically 
+based pharmacokinetic model for polyethylene glycol-coated gold 
+nanoparticles of different sizes in adult mice. Nanotoxicology 
+10(2):162–172
+	24.	 Aborig M et al (2019) Biodistribution and physiologically-based 
+pharmacokinetic modeling of gold nanoparticles in mice with 
+interspecies extrapolation. Pharmaceutics 11(4):179
+	25.	 Chou W-C et al (2022) Development of a multi-route physiologi-
+cally based pharmacokinetic (PBPK) model for nanomaterials: 
+a comparison between a traditional versus a new route-specific 
+approach using gold nanoparticles in rats. Part Fibre Toxicol 
+19(1):1–19 %@ 1743-8977
+	26.	 Dubaj T et al (2022) Pharmacokinetics of PEGylated gold nano-
+particles: in vitro—in vivo correlation. Nanomaterials 12(3):511
+	27.	 LePage KT et al (2005) On the use of neuro-2a neuroblastoma 
+cells versus intact neurons in primary culture for neurotoxicity 
+studies. Crit Rev Neurobiol 17(1):27–50
+	28.	 Yang L et al (2017) Comparisons of the biodistribution and toxi-
+cological examinations after repeated intravenous administration 
+of silver and gold nanoparticles in mice. Sci Rep 7(1):3303
+	29.	 Daems N et al (2020) In Vivo Pharmacokinetics, biodistribution 
+and toxicity of antibody-conjugated gold nanoparticles in healthy 
+mice. J Biomed Nanotechnol 16(6):985–996
+	30.	 Lasagna-Reeves C et al (2010) Bioaccumulation and toxicity of 
+gold nanoparticles after repeated administration in mice. Biochem 
+Biophys Res Commun 393(4):649–655
+	31.	 Sonavane G, Tomoda K, Makino K (2008) Biodistribution of col-
+loidal gold nanoparticles after intravenous administration: effect 
+of particle size. Colloids Surf B Biointerfaces 66(2):274–280
+	32.	 Betzer O et al (2017) The effect of nanoparticle size on the ability 
+to cross the blood-brain barrier: an in vivo study. Nanomedicine 
+(Lond) 12(13):1533–1546
+	33.	 Jung C et al (2014) Intraperitoneal injection improves the uptake 
+of nanoparticle-labeled high-density lipoprotein to atherosclerotic 
+plaques compared with intravenous injection. Circ Cardiovasc 
+Imaging 7(2):303–311
+	34.	 Al Shoyaib A, Archie SR, Karamyan VT (2019) Intraperitoneal 
+route of drug administration: should it be used in experimental 
+animal studies? Pharm Res 37(1):12
+	35.	 Bachler G, von Goetz N, Hungerbühler K (2013) A physiologi-
+cally based pharmacokinetic model for ionic silver and silver 
+nanoparticles. Int J Nanomed 8:3365–3382
+	36.	 Li D et al (2014) Physiologically based pharmacokinetic mod-
+eling of polyethylene glycol-coated polyacrylamide nanoparticles 
+in rats. Nanotoxicology 8(sup1):128–137
+	37.	 Brown RP et al (1997) Physiological parameter values for physi-
+ologically based pharmacokinetic models. Toxicol Ind Health 
+13(4):407–484
+	38.	 Zarrinkoob L et al (2015) Blood flow distribution in cerebral 
+arteries. J Cereb Blood Flow Metab 35(4):648–654
+	39.	 Fournier RL (2017) Basic transport phenomena in biomedical 
+engineering. CRC Press
+	40.	 Chen J, Wang Y (2020) Personalized dynamic transport of mag-
+netic nanorobots inside the brain vasculature. Nanotechnology 
+31(49):495706
+	41.	 Yankova G et al (2021) Cerebral arterial architectonics and CFD 
+simulation in mice with type 1 diabetes mellitus of different dura-
+tion. Sci Rep 11(1):3969
+	42.	 Deng L et al (2019) Endocytosis mechanism in physiologically-
+based pharmacokinetic modeling of nanoparticles. Toxicol Appl 
+Pharmacol 384:114765
+	43.	 Chithrani BD, Ghazani AA, Chan WCW (2006) Determining the 
+size and shape dependence of gold nanoparticle uptake into mam-
+malian cells. Nano Lett 6(4):662–668
+	44.	 Chithrani BD, Chan WCW (2007) Elucidating the mechanism of 
+cellular uptake and removal of protein-coated gold nanoparticles 
+of different sizes and shapes. Nano Lett 7(6):1542–1550
+	45.	 Nambara K et al (2016) Reverse size dependences of the cellular 
+uptake of triangular and spherical gold nanoparticles. Langmuir 
+32(47):12559–12567
+	46.	 Woodard LE et al (2018) Nanoparticle architecture preserves 
+magnetic properties during coating to enable robust multi-modal 
+functionality. Sci Rep 8(1):12706
+	47.	 Mitusova K et al (2022) Overcoming the blood–brain barrier for 
+the therapy of malignant brain tumor: current status and prospects 
+of drug delivery approaches. J Nanobiotechnol 20(1):412
+	48.	 Takeuchi I, Onaka H, Makino K (2018) Biodistribution of col-
+loidal gold nanoparticles after intravenous injection: effects 
+of PEGylation at the same particle size. Bio-Med Mater Eng 
+29(2):205–215
+	49.	 Olivier J-C (2005) Drug transport to brain with targeted nanopar-
+ticles. NeuroRx 2(1):108–119
+	50.	 Dreaden EC et al (2012) Size matters: gold nanoparticles in targeted 
+cancer drug delivery. Ther Deliv 3(4):457–478
+	51.	 Hoshyar N et al (2016) The effect of nanoparticle size on in vivo 
+pharmacokinetics and cellular interaction. Nanomedicine 
+11(6):673–692
+	52.	 Lu F et al (2009) Size effect on cell uptake in well-suspended, 
+uniform mesoporous silica nanoparticles. Small 5(12):1408–1413
+	53.	 Perrault SD et al (2009) Mediating tumor targeting efficiency of 
+nanoparticles through design. Nano Lett 9(5):1909–1915
+	54.	 Jiang W et al (2008) Nanoparticle-mediated cellular response is 
+size-dependent. Nat Nanotechnol 3(3):145–150
+
+Advanced Composites and Hybrid Materials (2024) 7:76	
+Page 23 of 23 
+76
+	55.	 Shilo M et al (2015) The effect of nanoparticle size on the prob-
+ability to cross the blood-brain barrier: an in-vitro endothelial cell 
+model. J Nanobiotechnol 13(1):19
+	56.	 Reyner E et al (2020) Intrinsic and extrinsic pharmacokinetic vari-
+ability of small molecule targeted cancer therapy. Clin Transl Sci 
+13(2):410–418
+	57.	 Singh AV et al (2021) Emerging application of nanorobotics and 
+artificial intelligence to cross the BBB: advances in design, con-
+trolled maneuvering, and targeting of the barriers. ACS Chem 
+Neurosci 12(11):1835–1853
+	58.	 Peer CJ, Chau CH, Figg WD (2017) Jumping the barrier: mod-
+eling drug penetration across the blood–brain barrier. Clin Cancer 
+Res 23(24):7437–7439
+	59.	 Markicevic M et al (2021) Emerging imaging methods to study 
+whole-brain function in rodent models. Transl Psychiatry 
+11(1):457
+	60.	 Qin L et al (2022) Resveratrol-silica aerogel nanodrug complex 
+system enhances the treatment of sports osteoarthritis by activat-
+ing SIRT-1. Advanced composites and hybrid materials 6(1):3
+	61.	 Wan J et al (2023) Novel strategy of senescence elimination via 
+toxicity-exempted kinome perturbations by nanoliposome-based 
+thermosensitive hydrogel for osteoarthritis therapy. Adv Compos 
+Hybrid Mater 6(3):104
+	62.	 Bakadia B et al (2022) Biodegradable and injectable poly(vinyl 
+alcohol) microspheres in silk sericin-based hydrogel for the 
+controlled release of antimicrobials: application to deep full-
+thickness burn wound healing. Adv Compos Hybrid Mater 
+5(4):2847–2872
+	63.	 Fan G et al (2021) Dielectric dispersion of copper/rutile cermets: 
+Dielectric resonance, relaxation, and plasma oscillation. Scripta 
+Mater 190:1–6
+	64.	 Fan G et al (2021) Doped ceramics of indium oxides for negative 
+permittivity materials in MHz-kHz frequency regions. J Mater Sci 
+Technol 61:125–131
+	65.	 Xie P et al (2017) C/SiO2 meta-composite: overcoming the λ/a 
+relationship limitation in metamaterials. Carbon 125:1–8
+	66.	 Chen J, Hu H, Wang Y (2023) Magnetic-driven 3D-printed 
+biodegradable swimming microrobots. Smart Mater 
+Struct 32(8):085014
+Publisher's Note  Springer Nature remains neutral with regard to 
+jurisdictional claims in published maps and institutional affiliations.
+Springer Nature or its licensor (e.g. a society or other partner) holds 
+exclusive rights to this article under a publishing agreement with the 
+author(s) or other rightsholder(s); author self-archiving of the accepted 
+manuscript version of this article is solely governed by the terms of 
+such publishing agreement and applicable law.

@@ -1,0 +1,1759 @@
+Article
+Emergence of community behaviors in the gut
+microbiota upon drug treatment
+Graphical abstract
+Highlights
+d Bacteria can be protected from and sensitized to drugs in a
+community context
+d Cross-protection and community resilience dissipate at high
+drug concentrations
+d Drug biotransformation and bioaccumulation can partially
+explain communal protection
+d Enzyme speciﬁcity and expression dictate detoxiﬁcation of
+nitroaromatic drugs
+Authors
+Sarela Garcia-Santamarina,
+Michael Kuhn, Saravanan Devendran, ...,
+Michael Zimmermann, Peer Bork,
+Athanasios Typas
+Correspondence
+kp533@mrc-tox.cam.ac.uk (K.R.P.),
+michael.zimmermann@embl.de (M.Z.),
+bork@embl.de (P.B.),
+typas@embl.de (A.T.)
+In brief
+A comparison of the effects of
+pharmaceuticals on different gut bacterial
+species when grown alone or as part of a
+community shows that complex microbial
+communities can protect, and less
+frequently sensitize, community
+members to the treatment. Both drug
+biotransformation and bioaccumulation
+are key to community protection, which
+can be overwhelmed at high drug
+concentrations.
+Garcia-Santamarina et al., 2024, Cell 187, 6346–6357
+October 31, 2024 ª 2024 The Author(s). Published by Elsevier Inc.
+https://doi.org/10.1016/j.cell.2024.08.037
+ll
+
+Article
+Emergence of community behaviors
+in the gut microbiota upon drug treatment
+Sarela Garcia-Santamarina,1,2,5,10 Michael Kuhn,2,10 Saravanan Devendran,2 Lisa Maier,1,6,7 Marja Driessen,2
+Andre´ Mateus,1,8 Eleonora Mastrorilli,2 Ana Rita Brochado,1,6,7 Mikhail M. Savitski,1 Kiran R. Patil,2,9,*
+Michael Zimmermann,2,* Peer Bork,2,3,4,* and Athanasios Typas1,2,11,*
+1European Molecular Biology Laboratory, Genome Biology, Heidelberg, Germany
+2European Molecular Biology Laboratory, Structural and Computational Biology, Heidelberg, Germany
+3Max Delbru¨ ck Center for Molecular Medicine, Berlin, Germany
+4Department of Bioinformatics, Biocenter, University of Wu¨ rzburg, Wu¨ rzburg, Germany
+5Present address: Instituto de Tecnologia Quimica e Biologica, Universidade Nova de Lisboa, Oeiras, Portugal
+6Present address: Interfaculty Institute of Microbiology and Infection Medicine, University of Tu¨ bingen, Tu¨ bingen, Germany
+7Present address: Cluster of Excellence ‘‘Controlling Microbes to Fight Infections’’, University of Tu¨ bingen, Tu¨ bingen, Germany
+8Present address: Department of Chemistry, Umea˚ University, Umea˚ , Sweden
+9Present address: The Medical Research Council Toxicology Unit, University of Cambridge, Cambridge, UK
+10These authors contributed equally
+11Lead contact
+*Correspondence: kp533@mrc-tox.cam.ac.uk (K.R.P.), michael.zimmermann@embl.de (M.Z.), bork@embl.de (P.B.), typas@embl.de (A.T.)
+https://doi.org/10.1016/j.cell.2024.08.037
+SUMMARY
+Pharmaceuticals can directly inhibit the growth of gut bacteria, but the degree to which such interactions
+manifest in complex community settings is an open question. Here, we compared the effects of 30 drugs
+on a 32-species synthetic community with their effects on each community member in isolation. While
+most individual drug-species interactions remained the same in the community context, communal behav-
+iors emerged in 26% of all tested cases. Cross-protection during which drug-sensitive species were pro-
+tected in community was 6 times more frequent than cross-sensitization, the converse phenomenon.
+Cross-protection decreased and cross-sensitization increased at higher drug concentrations, suggesting
+that the resilience of microbial communities can collapse when perturbations get stronger. By metabolically
+proﬁling drug-treated communities, we showed that both drug biotransformation and bioaccumulation
+contribute mechanistically to communal protection. As a proof of principle, we molecularly dissected a prom-
+inent case: species expressing speciﬁc nitroreductases degraded niclosamide, thereby protecting both
+themselves and sensitive community members.
+INTRODUCTION
+Commonly prescribed therapeutics are associated with changes
+in the composition and function of the human gut microbiome.1,2
+Hundreds of drugs, including both antibiotics and those target-
+ing human proteins, can directly inhibit the growth of commensal
+gut bacteria at physiologically relevant concentrations.3,4 Recip-
+rocally, drug sequestration or metabolization by gut bacteria can
+affect the bioavailability, efﬁcacy, mode of action, and adverse
+effects of pharmaceuticals, thereby contributing to the interper-
+sonal variability of drug responses.1,5 Further molecular under-
+standing of such drug-gut microbe interactions is crucial to
+designing improved therapies with fewer side effects, including
+dysbiosis.
+Several studies have used in vitro, ex vivo, and in vivo ap-
+proaches to probe the impact of a limited set of drugs in diverse
+communities, showing both that drugs affect the community
+biomass and structure6–10 and that communities affect drug ac-
+tivity via mechanisms that include drug biotransformation5,7,11–13
+and bioaccumulation.5 Yet it remains unclear whether and to
+what extent such drug-microbial interactions in communities
+reﬂect the composite of effects observed in monocultures and/
+or whether communal behaviors can mask or augment the single
+drug-microbe interactions. This understanding is crucial for our
+ability to predict the responses of complex communities to
+drug treatment and to dissect drug-microbiota interactions
+based on simpler and more controlled in vitro experimental
+setups.
+Here, we assembled a synthetic community containing 32
+representative species of the healthy human gut microbiota3
+and compared the effect of 30 diverse drugs on 21 species
+reproducibly detected in the community versus in isolation. We
+detected at least one species being protected or sensitized in
+the community setting for all drugs tested, and in total, a quarter
+ll
+OPEN ACCESS
+6346 Cell 187, 6346–6357, October 31, 2024 ª 2024 The Author(s). Published by Elsevier Inc.
+This is an open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/).
+
+of all drug-microbe interactions (465/1,823 cases; see STAR
+Methods) changed in the community setting. Cross-protection
+was the most frequent scenario, indicating that communities
+are more resilient to external insults than individual bacteria.
+However, such communal protective strategies decreased with
+increasing drug concentrations, while cases of cross-sensitiza-
+tion increased. Thus, at higher drug concentrations, commu-
+nities are disturbed the most—not only because more species
+may be targeted by the drug but also because communities
+lose capacity for cross-protection and negative interactions
+(cross-sensitization) increase. Moreover, we demonstrated that
+both drug biotransformation and drug bioaccumulation contrib-
+uted to many cross-protection instances and mechanistically
+dissected a case of communal protection, identifying the spe-
+cies protecting the community and the enzymes degrading the
+drug. Using knowledge about detoxifying species, we could
+design synthetic communities that would enable growth of
+otherwise highly sensitive communities, opening the path for
+future use of such knowledge to optimize community composi-
+tion to reduce adverse drug effects or increase drug efﬁcacy.
+Overall, we provide insights into the degree of emerging behav-
+iors upon treatment of microbial communities with drugs, identify
+some of their underlying mechanisms, and map their depen-
+dence on drug concentration.
+RESULTS
+Evaluating the impact of drugs on the composition of a
+complex synthetic community
+We assembled a synthetic community of 32 species from 26
+genera across 6 phyla (Table S1), cultured at 37C under anaer-
+obic conditions in Gifu Anaerobic Medium Broth, Modiﬁed
+(mGAM). We selected mostly type strains of these prevalent
+and abundant human gut species, as they are broadly available
+and used. Overall, we used most of the 38 species previously
+selected to be representative of the healthy human gut micro-
+biome and tested for their interactions with over 1,200 drugs,3
+and six species were omitted because we could not differen-
+tiate them robustly from existing members by 16S sequencing.
+Combined, the 32 species accounted for 63% and 41% of the
+median assignable relative abundance at the genus level in
+fecal samples from the Human Microbiome Project14 (HMP,
+N = 237) and from MetaHIT15 (N = 665, Figure S1A), respec-
+tively. From over 1,200 drugs previously tested against gut mi-
+crobes in isolation,3 we selected 30 representative drugs that
+inhibited the growth of a variety of species and spanned thera-
+peutic areas (Figure S1B; Table S1). Out of the 30 tested drugs,
+21 were human-targeted and 9 were anti-infective drugs (Fig-
+ure S1B; Table S1). Drug concentrations were selected to al-
+ways include 20 mM, as previously screened,3 and two addi-
+tional concentrations, adjusted to the drug activity and colon
+concentrations (Figure S1B; Table S1). In most cases, concen-
+trations were varied by multiples of 4 (e.g., 5, 20, and 80 mM).
+For ﬁfteen of the human-targeted drugs, at least one of
+the tested concentrations fell within 3-fold of the estimated
+colon concentrations (Figure S1B; Table S1). By contrast, anti-
+biotics were tested in concentrations below those estimated to
+be present in the colon, since at such high concentrations
+many commensals were inhibited and the community barely
+grew in vitro.
+To probe the effect of a drug on the community, we added the
+drug when combining the individual species that formed the
+community (Figure 1A). We passaged the community (1:50 dilu-
+tion) once after growing it 24 h into medium containing the
+respective drug and grew it for another 24 h. At the end of
+the second passage, relative species abundance was deter-
+mined by 16S amplicon sequencing. We found high correlations
+between the three biological replicates (median Spearman cor-
+relation between relative abundances rs = 0.91 for controls and
+rs = 0.88 for drug treatment; Figure S1C) and between the two
+technical replicates performed for each biological replicate (me-
+dian rs = 0.96 for controls and rs = 0.97 for drug treatment;
+Figure S1C). To assess the impact of drug treatment on each
+species in the community, we normalized species abundances,
+using the community’s ﬁnal optical density (OD, set to 1 for con-
+trols) as a proxy for total cell number (Figure 1B). As this normal-
+ization method is an approximation, we conﬁrmed that the main
+ﬁndings of this study also held when relative species abun-
+dances were directly used (Figures S1D and S1E; see STAR
+Methods). To determine the effect of drug treatment, we used
+the ratio of the species abundance between treatment condi-
+tions and untreated controls (Figure 1C). Eleven species were
+below the level of detection in untreated controls, and therefore
+we excluded them from further analysis. Those eleven species
+included some, but not all, of the slower-growing species in
+mGAM (Figure S1F). Interestingly, 7 of these low-abundance
+species could be detected in at least one treatment condition
+(Table S1), suggesting that drugs can open niches for otherwise
+less ﬁt community members, for example, by removing compet-
+itors for same niche or slowing down the growth of otherwise
+rapidly growing species. Twenty of the 21 species that remained
+above detection level in community after passaging in vitro were
+also recently found to stably colonize germ-free mice as commu-
+nity and provide colonization resistance against pathogens.16
+Community behaviors emerge during drug treatment
+All 21 species kept for further analysis were also treated individ-
+ually with the 30 drugs (at 3 concentrations), and their growth was
+monitored (Figures 1D and 1E; Table S1). We calculated the area
+under the growth curve (AUC) and normalized it for the vehicle
+(DMSO)-treated controls (STAR Methods). For a total of 1,823
+drug-species combinations, we compared the response to the
+drug in community and in monoculture. From the 1,890 possible
+drug-species combinations (21 species 3 30 drugs 3 3 concen-
+trations), we excluded 4 cases in which growth data in monocul-
+tures were not reproducible and the highest concentration for 3
+drugs (chlorpromazine, ciproﬂoxacin, and doxycycline) in which
+the community did not grow at all. Three outcomes were identi-
+ﬁed (Figures 1C, 1E, 2A, and 2B, using methotrexate as an
+example): (1) expected outcome—growth was similarly affected
+(Veillonela parvula) or unaffected (Escherichia coli) in both com-
+munity and monoculture; (2) cross-sensitization (emergent
+communal behavior)—the species growth was not affected by
+the drug when alone, but its abundance was reduced in the
+community (Fusobacterium nucleatum); (3) cross-protection
+(emergent communal behavior)—the species was inhibited in
+ll
+OPEN ACCESS
+Cell 187, 6346–6357, October 31, 2024 6347
+Article
+
+monoculture but grew normally in community (Erysipelatoclostri-
+dium ramosum). To assess the degree of cross-protection and
+cross-sensitization per drug, we calculated the percentage of
+species that were either protected or sensitized in the commu-
+nity. For protection, we divided by the total number of species
+that the drug inhibited in monoculture (as only those could be
+Figure 1. Measuring drug impact on gut bacteria in community and in isolation
+(A) A community of 32 gut bacterial species was treated with 30 drugs in 3 concentrations. The community was treated with drug upon assembly for 48 h, with an
+intermediate passage step (1:50 dilution) at 24 h. Community growth was measured by following OD and relative species abundance by 16S rDNA amplicon
+sequencing at 48 h. Twenty-one species were reproducibly detected in vehicle (DMSO control) and used thereafter.
+(B) Examples of normalized species abundances in vehicle (DMSO control) and in three selected drugs and concentrations in the community. The abundance for
+each species of the community is normalized by the ﬁnal OD of the community.
+(C) Example of the effect of 5 mM methotrexate in the community, comparing species normalized abundances between DMSO control and treated conditions.
+Species along the identity line were not inﬂuenced by the drug, while species below were inhibited in the presence of methotrexate.
+(D) The 21 species reproducibly detected in the community were also tested in the same panel of drugs as in (A) in isolation. Fitness was calculated by comparing
+the growth with versus without drug.
+(E) Examples of the effect of 5 mM methotrexate on selected species in monoculture compared with DMSO controls. While E. coli and V. parvula behaved the
+same in community (C) and isolation (E), E. ramosum and F. nucleatum were only inhibited in isolation (E) and in the community (C), respectively.
+See also Figure S1.
+ll
+OPEN ACCESS
+6348 Cell 187, 6346–6357, October 31, 2024
+Article
+
+protected in community), whereas for sensitization, we divided
+by the total number of species that grew normally in single-spe-
+cies experiments (Figure 2C, for the treatment amount closest
+to the gut concentration; Figure S2 for all treatment conditions).
+We observed at least one emergent behavior for all drugs probed,
+and in total 26% of drug-microbe interactions changed in the
+community setting. When taking into account only drug-sensitive
+species, protection in the community amounted to 47% of all
+cases, whereas community-speciﬁc sensitization was observed
+in 8% of all cases of resistant species. At the drug concentrations
+closest to the estimated human gut concentrations, these frac-
+tions were very similar with 49% and 9%, respectively. Overall,
+this suggests that numerous community-dependent protection
+and sensitization events can be expected upon drug treatment
+of human gut microbiotas, and those can vary between individ-
+uals as they harbor different community compositions.
+High drug concentrations overwhelm community
+resilience
+For each drug, we tested 3 concentrations. When starting from
+concentrations at which there was at least one sensitive spe-
+cies in monoculture (to be able to detect cross-protection),
+we could detect a signiﬁcant drop in the percentage of pro-
+tected species within the community across all drugs as the
+drug concentration increased (Figure 2D). Vice versa, the per-
+centage of sensitized species signiﬁcantly increased at higher
+drug concentrations (Figure 2E). Since the concentration steps
+were not always equally spaced, we also veriﬁed the concen-
+tration dependence in a separate model that uses the actual
+drug concentrations (Figures S3A and S3B). Overall, this means
+that the community stays relatively unaffected at low drug con-
+centrations since the perturbation is buffered and sensitive
+species are protected. By contrast, the impact on composition
+Figure 2. Emergent community behaviors are common upon drug treatment
+(A) Comparing species growth in monoculture and in community in response to drug treatment. ‘‘Expected’’ refers to similar growth in both community and
+monoculture (light and dark gray areas), ‘‘protected in community’’ refers to species that are inhibited by the drug in monoculture but remain relatively unper-
+turbed in the community (blue area), and ‘‘sensitized in community’’ refers to species being unaffected in monoculture but inhibited by the drug in the community
+(yellow area).
+(B) Examples of community-emergent behaviors for 5 mM methotrexate treatment. E. coli growth was unperturbed both in monoculture and in the community
+(expected), V. parvula was inhibited in both cases (expected), E. ramosum was only inhibited in monoculture (protected in community), and F. nucleatum growth
+was only reduced in the community setting (sensitized in community).
+(C) Percentage of the 21 species across replicates that show expected or emergent behaviors (protection or sensitization in community) in all drugs tested at the
+concentration closest to the estimated colon concentration, or at 20 mM for those cases that the colon concentration could not be estimated (Figure S1B). The
+asterisk denotes drug concentrations that are within a factor of three of the estimated intestinal concentration.
+(D and E) Higher drug concentrations bypass community resilience. A median of 68% sensitive species in 28 drugs was protected in the community at the lowest
+drug concentrations, but this signiﬁcantly decreased to 47% (in 24 drugs) at the intermediate concentration and to 23% (in 10 drugs) at the highest concentration
+(D). For drugs with resistant species (24 drugs) at the lowest concentrations, sensitization occurred for a median of 4% of resistant species, and this increased to
+8% (in 23 drugs) and 11% (in 17 drugs) at the intermediate and high concentrations, respectively (E). p values were calculated using paired Wilcoxon signed-rank
+tests. The boxplots represent the distribution of the data. The line within the box represents the median, and the lower and upper hinges correspond to the 25th
+and 75th percentiles, respectively. The distance between the 25th and 75th percentiles is the inter-quartile range (IQR). The lower and upper whiskers extend to
+the smallest and lowest values up to 1.5 * IQR from the hinge, respectively. Data points beyond the whiskers are outliers, individually plotted.
+See also Figures S2 and S3.
+ll
+OPEN ACCESS
+Cell 187, 6346–6357, October 31, 2024 6349
+Article
+
+(legend on next page)
+ll
+OPEN ACCESS
+6350 Cell 187, 6346–6357, October 31, 2024
+Article
+
+increases disproportionally at higher drug concentrations, as
+not only does the community fail to protect other members,
+but negative interactions emerge that sensitize otherwise resis-
+tant species.
+Bacterial drug biotransformation and bioaccumulation
+underpin emergent cross-protection
+Many mechanisms could be driving the prevalent emergent be-
+haviors we observed: interspecies interactions, new niches
+created by reduced growth of some species, altered stress re-
+sponses and/or triggering of toxic molecule secretion,17–19
+and/or modiﬁcations in the drug availability and structure. Since
+previous work had showcased the extended ability of gut mi-
+crobes to transform or intracellularly accumulate drugs,5,11,12
+we decided to assess the degree to which emergent communal
+phenotypes, and especially cross-protection, could be ex-
+plained by such phenomena. To this aim, we measured drug
+concentrations over time using liquid chromatography-coupled
+mass spectrometry (LC-MS) in the same synthetic community
+upon treatment with the same panel of drugs as above, typically
+at the concentration for which we observed the highest percent-
+age of emergent behaviors (Figure S2). Samples were collected
+on the second day of treatment at different time points after pas-
+sage into fresh, drug-exposed medium (0, 1.25, 2.5, 5, 7.5, and
+10 h after treatment). We collected two fractions per community:
+one containing the whole community (WC), i.e., both supernatant
+(SN) and bacteria, and one containing only SN, to be able to
+distinguish between biotransformation and bioaccumulation.5
+In parallel, we used only mGAM and the same time course to
+assess drug decay in the medium. For each time course, we
+normalized concentrations to the maximum value among the
+two ﬁrst time points of the time course and calculated AUCs.
+Overall, biological replicates were consistent, with mean stan-
+dard deviation between replicates for all measurements being
+8% for both community experiments and media control. From
+the time courses of each drug, we used AUCs to calculate the
+extent of biotransformation (media control minus WC), bio-
+accumulation (WC minus SN), and both phenomena (media con-
+trol minus SN) (Figures 3A and S4A; Table S2). For example, the
+antibiotic ciproﬂoxacin was stable across all conditions; the pro-
+ton-pump inhibitor lansoprazole decayed on its own, and this
+process was accelerated by the community; the antiparasitic ni-
+closamide was rapidly metabolized by the community; and the
+antimalaria drug meﬂoquine was both bioaccumulated and bio-
+transformed (Figure 3A).
+We found an overall positive correlation between the fraction
+of species that were protected by the community and the degree
+to which the drug was biotransformed by the community (Fig-
+ure 3B), with the two earliest time points (1.25 and 2.5 h) showing
+signiﬁcant correlations (Figures 3B and S4B). By contrast, bio-
+accumulation only mildly correlated with the fraction of both
+protected and sensitized species at early time points, with only
+the ﬁrst time point showing a signiﬁcant correlation with protec-
+tion (Figures 3B, S4B, and S4C). When combined with biotrans-
+formation, bioaccumulation often increased the overall correla-
+tion with the fraction of protected species in the community
+(Figures 3B, S4B, and S4C). Overall, this means that the protec-
+tive community effects can be at least partially explained by the
+drug being transformed (and to some degree accumulated) by
+one or more species in the community. Nonetheless, there are
+other mechanisms at play that remain to be elucidated in the
+future; for example, dienestrol was neither biotransformed nor
+bioaccumulated, yet 49% of susceptible species were protected
+in the community. In such cases, altered metabolism of drug-
+treated species may create new niches or neutralize the drug ef-
+fect for the sensitive species. In contrast to communal protec-
+tion, cross-sensitization did not correlate with biotransformation
+and only partially correlated with bioaccumulation (Figures S4B
+and S4D). This could be due to the smaller number of cases iden-
+tiﬁed. Having a better understanding of what drives cross-pro-
+tection, we decided to study some of the underlying mecha-
+nisms in further detail.
+Different species protect against different
+nitroaromatic drugs in communities
+All three nitroaromatic drugs used in the screen, the antiparasitic
+drugs niclosamide and nifurtimox, and a drug to treat Parkin-
+son’s disease, entacapone, were rapidly biotransformed by the
+community (Figure S4A). At the highest tested concentration,
+these drugs inhibited on average 92% of the tested species in
+monoculture (Table S1). In line with the observed biotransforma-
+tion, we found 47% of these sensitive species to be protected by
+the community (Figure S2). Since both activation and detoxiﬁca-
+tion of nitroaromatic compounds rely on reduction of the nitro
+group,20,21 we wondered whether it is the same set of microbes
+with potent nitroreductases that efﬁciently transformed the
+drugs to an inactive form.
+To explore this further, we selected seven species from the
+community, which covered a wide range of sensitivities to niclo-
+samide in monoculture (Figure 4A). Using LC-MS, we checked
+for the ability of these seven species to reduce niclosamide to
+its amine form. Three out of the four (partially) resistant species
+in monoculture (Roseburia intestinalis, Coprococcus comes,
+and F. nucleatum; Figure 4A) stoichiometrically and rapidly
+Figure 3. Bacterial drug biotransformation and bioaccumulation drive community cross-protection
+(A) Representative examples of community effects on drug biotransformation and bioaccumulation during a 10 h treatment. Drug concentrations were measured
+by LC-MS in the 32-species synthetic community for 27 drugs (Figure S4A). For each time course, we normalized concentrations to the start of the time course
+(using time point with the highest raw measurement at 0 or 1.25 h) and calculated the mean drug concentration per time point. Bioaccumulation can be calculated
+by comparing the drug remaining in whole community and in supernatant (dark gray), and biotransformation by comparing the drug alone with the drug remaining
+whole community (light gray). Ciproﬂoxacin was stable in the community, lansoprazole was unstable in mGAM and decayed further in the community, meﬂoquine
+was biotransformed and bioaccumulated, and niclosamide was rapidly biotransformed by the community. The error bars represent the standard deviation of the
+replicates.
+(B) Fraction of protected strains correlated with degree of drug biotransformation and bioaccumulation by the community. p values were calculated by per-
+mutation tests using 100,000 samples.
+See also Figure S4.
+ll
+OPEN ACCESS
+Cell 187, 6346–6357, October 31, 2024 6351
+Article
+
+reduced niclosamide to aminoniclosamide (Figures 4B, 4C, S5,
+and S6A), which was not toxic to any of the gut bacterial isolates
+tested (Figure S6B). Indeed, this biotransformation of the drug to
+the inactive amino form resulted in protection of niclosamide-
+sensitive species from niclosamide toxicity, as we showed by
+growing sensitive species in spent media of bacteria with
+biotransformation capacity (Figure 4B). The degree of protection
+of sensitive species was directly related to the ability of the pro-
+tecting species to degrade the drug (Figure 4C; Table S2).
+In contrast to the other three (partially) resistant species, we
+found that the most resistant species, E. coli ED1a, could not
+degrade niclosamide, and the drug was even more stable in
+the culture than in the medium control (Figures 4C and S5C;
+Table S2). We hypothesized that E. coli ED1A bioaccumulates ni-
+closamide, preventing the non-enzymatic reduction of the drug22
+in the medium. Indeed, by using drug-treated cultures and spent
+media, we showed that a signiﬁcant amount of niclosamide bio-
+accumulated in E. coli ED1a (2 mM in 5 h, Figure 4D; Table S2)
+without affecting the ﬁtness of the organism. However, this
+amount of bioaccumulation in E. coli ED1a allowed only limited
+protection of other sensitive species in the spent media (Fig-
+ure 4C; Table S2), as the niclosamide remaining in the media
+was mostly above to the minimal inhibitory concentrations
+(MICs) of the sensitive species (Figure S6C).
+In stark contrast to its inability to reduce niclosamide, E. coli
+ED1a had high protective capacity for nifurtimox, completely
+Figure 4. Speciﬁc species protect the community from niclosamide
+(A) Community-emergent phenotypes in 20 mM niclosamide. Representation of species that grow in community as expected from monoculture (gray areas) that
+are cross-protected (blue area) or cross-sensitized (yellow area) in the community. Species used in further tests are highlighted: partially/full resistant species to
+niclosamide in red and sensitive species in black.
+(B) Experimental strategy used to disentangle contributions of individual species to community protection from niclosamide. Species were incubated with ni-
+closamide for 5 h, after which cultures were analyzed by targeted metabolomics to quantify niclosamide and aminoniclosamide (see also Figures S5A and S5B). In
+separate experiments, the same species were treated with vehicle (DMSO control) or 10 mM niclosamide for 5 h, after which cultures were ﬁlter-sterilized. Spent
+media from these cultures was mixed 1:1 with fresh mGAM and used to grow other niclosamide-sensitive species. Growth of these other species in spent media
+from drug-treated cultures was normalized to their growth in spent media from DMSO cultures (controls).
+(C) Left, following the scheme in (B), quantiﬁcation of niclosamide and aminoniclosamide in culture media of the indicated species (text color as in A) after 5 h
+incubation with niclosamide. Right, relative growth of the indicated species (sensitive to niclosamide; see A) in spent media from the niclosamide-treated cultures.
+(D) Quantiﬁcation of niclosamide and aminoniclosamide concentrations in medium control (upper) and in cultures of E. coli ED1a cells after treatment with 10 mM
+niclosamide for the indicated times (lower). Boxes denote the amount of bioaccumulated drug in E. coli ED1a. To determine them, we subtracted the measured
+compound concentrations in supernatants from those measured in whole-cell cultures. Niclosamide is more stable (i.e., less reduced to aminoniclosamide) in
+E. coli ED1a cell cultures (lower) than in the medium control (upper) because it is bioaccumulated in ED1a cells (see also Figure S5C).
+(E and F) Addition of a niclosamide-detoxifying species can rescue a synthetic community from niclosamide treatment. C. comes restores growth of a niclo-
+samide-treated community, yielding species abundances similar to that of the untreated control (see also Figure S6F). In addition to drug protection, C. comes
+promotes the overall community growth via unknown mechanisms.
+See also Figures S5 and S6.
+ll
+OPEN ACCESS
+6352 Cell 187, 6346–6357, October 31, 2024
+Article
+
+transforming 20 mM nifurtimox in 5 h and fully protecting nifurti-
+mox-sensitive species (Figures S6D and S6E). Another fully
+resistant species to nifurtimox, Streptococcus parasanguinis
+(Figure S6D), only partially metabolized the drug after 7.5 h incu-
+bation and hence offered limited protection to sensitive species
+(Figure S6E; Table S2). Overall, this highlights the diversity of
+drug-microbe interaction mechanisms, even with drugs with
+the same functional group that are subject to the same type of
+bacterial transformation. It also highlights that the degree of
+resistance is not predictive of the ability to protect other species
+in the community, as resistance mechanisms differ.
+We further wondered whether we could use this knowledge of
+selective protection to engineer communities that are more
+robust to drug treatment. To do this, we grew a small community
+of gut bacteria sensitive to niclosamide, composed of Biﬁdobac-
+terium longum, Bacteroides uniformis, S. parasanguinis, and
+S. salivarius (MIC % 1.25 mM), to which we added or not the de-
+toxiﬁer C. comes (Figure 4E). C. comes partially restored the
+growth of the community, even after 10 mM niclosamide treat-
+ment, yielding species relative abundances similar to those of
+the untreated control (Figures 4F and S6F). C. comes provided
+communal resistance to niclosamide, despite itself only growing
+modestly in the community, highlighting that protection can
+also be offered from members that are less abundant in the
+community.
+Nitroreductase expression and speciﬁcity determine
+ability to reduce nitroaromatics
+To pinpoint the mechanism by which niclosamide cross-pro-
+tection occurred, we looked for the nitroreductases encoded
+in the genomes of the protecting and sensitive species.
+Oxygen-insensitive or type I pyridine nucleotide-ﬂavin mono-
+nucleotide (NAD(P)H/FMN)-dependent nitroreductases reduce
+nitroaromatics through stepwise additions of two electrons
+to nitroso-, hydroxylamino-, or amino-aromatics.23 FMN-
+dependent nitroreductases constitute a large and diverse fam-
+ily of proteins, mainly present in bacteria, which have been
+recently reclassiﬁed into 14 subgroups according to their
+sequence similarities.24 We found that all species in our com-
+munity encode at least two of these enzymes belonging to
+different subgroups (Table S3). To further understand the basis
+of niclosamide reduction, we focused on two species: (1)
+R. intestinalis, moderately resistant to niclosamide and a
+good protector, encoding only two putative FMN-dependent
+nitroreductases (other resistant species encoded more nitrore-
+ductases), and (2) P. vulgatus, sensitive to niclosamide (MIC =
+0.625 mM), but intriguingly encoding seven putative nitroreduc-
+tases (Table S3). To test the ability of each of these nitroreduc-
+tases to degrade niclosamide, we cloned and overexpressed
+them in the sensitive P. vulgatus. Overexpressing any of the
+two R. intestinalis nitroreductases conferred an 8-fold or more
+increase in MIC to niclosamide for P. vulgatus (Figures 5A and
+S6G), suggesting that these enzymes are responsible for the
+resistance of R. intestinalis in niclosamide. Indeed, nitroreduc-
+tase C7GA87 was highly expressed in R. intestinalis (Figure 5B).
+Interestingly, overexpression of two out of the seven P. vulgatus
+nitroreductases conferred also signiﬁcant resistance to niclo-
+samide (Figures 5A and S6G). We reasoned that these proteins
+should be silent or lowly expressed from endogenous locus,
+and hence P. vulgatus is sensitive to niclosamide. Indeed,
+both proteins had low abundance, which was not further
+induced by niclosamide in monoculture (Figure 5B). Overex-
+pression of nitroreductase Pv2039 led to >16-fold increase in
+protein levels (Table S3) and 32-fold higher niclosamide resis-
+tance (Figures 5A and 5B). As expected, only P. vulgatus over-
+expressing the R. intestinalis nitroreductases or the endoge-
+nous Pv2039 allowed other niclosamide-sensitive strains to
+grow (Figures 6C and 6D).
+Our results indicate that nitroreductases are speciﬁc to the
+substrate. When we overexpressed the same nitroreductases
+as the ones above in P. vulgatus, resistance to nifurtimox did
+not change (Figure S6G), which was consistent with the sensi-
+tivity of both P. vulgatus and R. intestinalis to nifurtimox (Fig-
+ure S6D). Thus, many species may have the capacity to bio-
+transform drugs, but the respective selective enzymes may not
+be expressed and/or induced upon drug treatment.
+DISCUSSION
+In recent years, advances in gut microbiota culture techniques
+have made it possible to systematically determine the direct
+interactions between hundreds of commonly used drugs and
+speciﬁc members of the gut microbiota.3,6,12 However, little
+is known about whether these direct drug-bacterial species
+interactions are relevant when the same strain/species is
+part of a bacterial community. Here, we show that 74% of a
+total of 1,823 directly determined drug-species interactions
+remained the same in a community context. Hence, single-
+species-drug interactions are relatively good predictors of
+what will happen to a species when it is part of a community.
+This is consistent with decades of clinical work where anti-
+biotic sensitivity of enteric pathogens is tested in isolation
+and not in community settings. Nevertheless, communal be-
+haviors were substantial and were present in every drug we
+tested. Protection of sensitive species was the most common
+outcome, especially at low drug concentrations. At higher
+concentrations, closer to those found in the colon, community
+protection decreased, with more species behaving the same
+as when growing alone.
+Based on targeted metabolomics data, we established that
+bacterial drug biotransformation partially explains community
+protection phenotypes. This implies that in most cases drug
+biotransformation yields harmless or less toxic products. In our
+in vitro setting, drug bioaccumulation only mildly correlated
+with protective phenotypes. This could be because we added
+the drug during passaging, meaning that at the beginning there
+is a relatively low bacterial biomass that could accumulate the
+drug. Since this low biomass situation is less relevant for the hu-
+man gut, we may be underestimating the role of bioaccumulation
+with our experimental setup. Bioaccumulation has only recently
+been reported for drugs and gut microbes.5 In addition to the
+previously reported drugs, we found here that intestinal bacteria
+bioaccumulate four more drugs: ebselen, meﬂoquine, simva-
+statin, and tamoxifen. Ebselen may accumulate due to its ability
+to bind to thiol groups.25 In the case of tamoxifen or meﬂoquine,
+bioaccumulation could stem from their ability to interact with
+ll
+OPEN ACCESS
+Cell 187, 6346–6357, October 31, 2024 6353
+Article
+
+membranes, as previously shown for Bacillus stearothermophi-
+lus and E. coli, respectively.26,27 The case of simvastatin is inter-
+esting, since previous studies suggested a link between micro-
+biome composition and the efﬁcacy of the drug in lowering
+low-density lipoprotein (LDL) cholesterol in patients.28–30 Statins
+are widely prescribed in western countries31 and are hence
+commonly found in wastewater.32 Due to their high water-octa-
+nol partition coefﬁcient, statins tend to bioaccumulate in aquatic
+animals, causing a serious environmental problem.33,34 It would
+interesting to investigate in the future if the bioaccumulation of
+statins in bacteria has implications for drug efﬁcacy in patients
+and/or may also affect the accumulation of the drug in environ-
+mental reservoirs.
+Our data underline the broad ability of the microbiota to
+transform xenobiotics. Working with a bottom-up assembled
+synthetic community allowed us to gain insights into the
+biotransformation mechanisms that lead to communal protec-
+tion. We focused on nitroaromatic compounds and observed
+that the nitroreductases that reduce them are rather speciﬁc.
+For example, both nitroreductases of the niclosamide-resis-
+tant R. intestinalis efﬁciently reduced niclosamide but not ni-
+furtimox. Importantly, P. vulgatus encoded nitroreductases
+that could render it resistant to niclosamide but did not ex-
+press them in relevant amounts even in the presence of the
+drug. This denotes that gut bacteria likely have an even larger
+potential to transform drugs than previously appreciated,
+which would render them able to evolve resistance if exposed
+to the drug for longer periods.
+Albeit rare at low drug concentrations, cross-sensitization
+became more frequent as emergent behavior at higher drug
+concentrations. Cross-sensitization may arise from direct or
+indirect effects. A drug can itself become more toxic to a
+given species in a community setting because uptake mecha-
+nisms get activated, resistance mechanisms dampened, or
+the drug is transformed to a more toxic product by another
+species. Biotransformation to more toxic products did not
+occur for the drugs we tested, as biotransformation lacked
+any correlation to cross-sensitization (Figures S4B and S4D).
+On the other hand, more indirect mechanisms, such as strain
+competition arising from altered nutrient utilization dynamics
+Figure 5. Speciﬁc nitroreductases protect the community from niclosamide
+(A) Effect of heterologous nitroreductase overexpression on P. vulgatus IC90 (mM) to niclosamide. IC90 represents the concentration at which 90% of the growth is
+inhibited (see Figure S6G for IC curves). P. vulgatus strains transformed with empty plasmid or plasmids overexpressing different P. vulgatus or R. intestinalis
+nitroreductases, as indicated, were treated with niclosamide, and growth was monitored by measuring the OD578 during 24 h.
+(B) Comparison of proteome expression between niclosamide (20 mM for 30 min; y axis) and vehicle (DMSO control, x axis) treated cultures of R. intestinalis,
+P. vulgatus transformed with an empty plasmid, and P. vulgatus overexpressing the nitroreductase Pvu2039. The two putative R. intestinalis nitroreductases and
+the seven putative P. vulgatus nitroreductases are highlighted in red.
+(C) P. vulgatus expressing different nitroreductases has different abilities to protect niclosamide-sensitive species. Similar to experiment in Figures 4B and 4C,
+P. vulgatus strains carrying different nitroreductases were treated with DMSO control, 10 mM, or 20 mM niclosamide for 5 h, after which cultures were ﬁlter-
+sterilized. Spent media from these cultures was mixed 1:1 with fresh mGAM and used to grow niclosamide-sensitive species.
+(D) Following the scheme in (C), growth of the indicated strains in spent media from niclosamide-treated cultures. Growth of the sensitive strains in spent media of
+treated cultures was normalized with their growth in spent media from untreated cultures (controls).
+See also Figure S6.
+ll
+OPEN ACCESS
+6354 Cell 187, 6346–6357, October 31, 2024
+Article
+
+or the induction of toxic stress responses by other members
+of the community targeted by the drug, can also be at play.
+It has been previously reported that drug treatments can
+trigger virulence factor and toxin production, especially at
+low antibiotics doses.17–19 Although the underlying mecha-
+nisms behind such cases remain to be explored, cross-sensi-
+tization further decreases the community richness. Together
+with the loss of cross-protection at high drug concentrations,
+they presumably lead to an accumulative strong impact in
+community stability.
+In summary, we established that most drug-gut bacteria in-
+teractions remain the same in communities, but cross-protec-
+tion and/or cross-sensitization of speciﬁc community mem-
+bers happens for almost every drug. The knowledge of such
+interactions that change in the community setting could help
+to build more accurate predictive models of community re-
+sponses to drug in the future. We further showed that commu-
+nities have higher resilience than individual species to certain
+drugs, but up to a certain concentration limit, after which
+communal protection drops and cross-sensitization and indi-
+vidualized behaviors prevail. This resilience is partially ex-
+plained by bacterial drug biotransformation activities, which
+are facilitated by the expanded functional diversity of the
+community. However, this is not the only mechanism by which
+communities become resilient. Understanding the remaining
+underlying mechanisms can facilitate the targeted design of
+designed communities that are resilient to speciﬁc drugs, as
+we show here for niclosamide. Our work also contributes
+to expanding the notion that drug bioaccumulation is wide-
+spread among gut bacteria.5 Understanding the drivers of
+bioaccumulation, as well as its potential to affect drug
+mode of action, merits both deeper exploration. Overall, we
+have used a bottom-up approach to assess the degree of
+communal behaviors that emerge in response to drugs and
+to map some of the underlying mechanisms that govern inter-
+actions between drugs and gut bacteria.
+Limitations of the study
+The in vitro model used in this study has enabled us to system-
+atically assess the degree to which community effects modulate
+bacterial responses to drugs, the mechanisms driving such
+emergent communal behaviors, and their relation to drug con-
+centrations. We opted for a synthetic community consisting of
+21 prevalent and abundant human gut species at the end. This
+reductionist approach has numerous advantages, including
+control of community assembly, access to all members, accu-
+mulated knowledge of type strains used, and in vivo and
+in vitro community stability, which are all key for starting to un-
+derstand communal behaviors. However, a single synthetic
+community cannot capture the genetic diversity of human mi-
+crobiomes within and across individuals. The relative abun-
+dances of species within communities grown in vitro cannot fully
+reproduce the ones found in the human gastrointestinal tract,
+which may cause discrepancies between in vitro observations
+and potential in vivo outcomes. Speciﬁc drug-species interac-
+tions observed in vitro in our study may not translate one-to-
+one to in vivo due to factors, such as different community
+composition, strain diversity, host environment, nutrition, and
+drug bioavailability in the colon. Hence, the speciﬁc drug inter-
+actions we report here have limited utility for clinical applica-
+tions without further validation. To establish such clinical rele-
+vance, different study designs that focus on speciﬁc drugs
+and measure drug pharmacokinetics and drug concentrations
+in colon, as well as assess the impact of the drug in large number
+of strains and communities (to account for interpersonal varia-
+tion) will be needed in the future. The study design (30 drugs
+covering 20 different therapeutic classes) also precludes gen-
+eral statements about the behaviors of speciﬁc drug classes
+or the identiﬁcation of links between drug chemistry and micro-
+bial responses. As communal interactions to drugs seem perva-
+sive across drug classes, future studies that focus on speciﬁc
+therapeutic classes and increase the number of drugs tested
+and strain/community variability will give power to start building
+associations (and hypotheses) between drug chemistry and
+molecular functions.
+RESOURCE AVAILABILITY
+Lead contact
+Further information and requests for resources and reagents should be
+directed to and will be fulﬁlled by the lead contact, Athanasios Typas
+(typas@embl.de).
+Materials availability
+All plasmids and strains generated in this work are available upon request.
+Data and code availability
+Data are available from https://github.com/grp-bork/drugbug_Santamarina_
+2023.
+d Raw 16S amplicon sequencing data have been deposited at the Euro-
+pean
+Nucleotide
+Archive
+(ENA)
+under
+accession
+number
+ENA:
+PRJEB46619 https://www.ebi.ac.uk/ena/browser/view/PRJEB63118.
+d LC-MS data from the community experiments has been submitted to
+the MetaboLights database under accession number Metabolights:
+MTBLS10112.
+Code is available at https://github.com/grp-bork/drugbug_Santamarina_
+2023
+d Any additional information required to reanalyze the data reported in this
+paper is available from the lead contact upon request.
+ACKNOWLEDGMENTS
+We thank Justin Sonnenburg and Carlos G.P. Voogdt for plasmids; Jacob Bo-
+bonis for providing the E. coli conjugation donor; Ece Kartal for help with
+primers design for qPCR; the EMBL Gene Core Facility for services and exper-
+imental assistance; Thomas Sebastian B. Schmidt and Georg Zeller for anal-
+ysis and feedback of pilot experiments; Pascale Cossart and Carlos G.P.
+Voogdt for feedback on the manuscript; and Luis Morgado, Joel Arruda, and
+the ITQB Communication Ofﬁce for graphical abstract design. We acknowl-
+edge EMBL, ERC grant uCARE (ID 819454), and the H-2020 Twinning project:
+SymbNET Genomics & Metabolomics in a Host-Microbe Symbiosis Network
+(grant: 952537) for funding. S.G.-S. and L.M. were supported by the EMBL
+Interdisciplinary Postdoc programme under the Marie Sklodowska Curie Ac-
+tions COFUND (grant numbers 664726 and 291772, respectively).
+AUTHOR CONTRIBUTIONS
+This study was conceived by K.R.P., P.B., and A.T. and was designed by
+S.G.-S., M.K., L.M., M.Z., and A.T. M.K. pre-processed, curated, analyzed,
+ll
+OPEN ACCESS
+Cell 187, 6346–6357, October 31, 2024 6355
+Article
+
+and/or contributed to the analysis of all experimental data. S.G.-S., L.M., and
+M.D. performed community experiments; S.G.-S. and A.R.B. performed high-
+throughput DNA extraction; S.G.-S., S.D., and E.M. performed metabolomics
+experiments and analyzed metabolomics data; S.G.-S. and A.M. performed
+proteomics experiments and analyzed proteomics data; S.G.-S. performed ni-
+closamide and nifurtimox experiments; and M.M.S., M.Z., and A.T. supervised
+experimental work. Data interpretation was performed by S.G.-S., M.K.,
+K.R.P., M.Z., P.B., and A.T. S.G.-S., M.K., and A.T. wrote the manuscript
+with feedback from all authors. M.K. and S.G.-S. designed the ﬁgures with
+input from K.R.P., M.Z., P.B., and A.T.
+DECLARATION OF INTERESTS
+The authors declare no competing interests.
+STAR+METHODS
+Detailed methods are provided in the online version of this paper and include
+the following:
+d KEY RESOURCES TABLE
+d EXPERIMENTAL MODEL
+B Bacterial species and growth conditions
+d METHOD DETAILS
+B Chemical screening of a bottom-up assembled bacterial commu-
+nity of 32 species
+B Chemical screening of bacterial monocultures
+B Quantiﬁcation of community effects
+B Spent media experiments
+B Small community growth rescue by a drug detoxiﬁer
+B Overexpression of nitroreductases
+B Calculation of species abundances in human microbiomes
+SUPPLEMENTAL INFORMATION
+Supplemental information can be found online at https://doi.org/10.1016/j.cell.
+2024.08.037.
+Received: June 14, 2023
+Revised: June 26, 2024
+Accepted: August 20, 2024
+Published: September 24, 2024
+REFERENCES
+1. Zimmermann, M., Patil, K.R., Typas, A., and Maier, L. (2021). Towards a
+mechanistic understanding of reciprocal drug–microbiome interactions.
+Mol. Syst. Biol. 17, e10116. https://doi.org/10.15252/MSB.202010116.
+2. Maier, L., and Typas, A. (2017). Systematically investigating the impact of
+medication on the gut microbiome. Curr. Opin. Microbiol. 39, 128–135.
+https://doi.org/10.1016/J.MIB.2017.11.001.
+3. Maier, L., Pruteanu, M., Kuhn, M., Zeller, G., Telzerow, A., Anderson, E.E.,
+Brochado, A.R., Fernandez, K.C., Dose, H., Mori, H., et al. (2018). Exten-
+sive impact of non-antibiotic drugs on human gut bacteria. Nature 555,
+623–628. https://doi.org/10.1038/nature25979.
+4. Maier, L., Goemans, C.V., Wirbel, J., Kuhn, M., Eberl, C., Pruteanu, M.,
+Mu¨ ller, P., Garcia-Santamarina, S., Cacace, E., Zhang, B., et al. (2021).
+Unravelling the collateral damage of antibiotics on gut bacteria. Nature
+599, 120–124. https://doi.org/10.1038/s41586-021-03986-2.
+5. Klu¨ nemann, M., Andrejev, S., Blasche, S., Mateus, A., Phapale, P., Deven-
+dran, S., Vappiani, J., Simon, B., Scott, T.A., Kafkia, E., et al. (2021). Bio-
+accumulation of therapeutic drugs by human gut bacteria. Nature 7877,
+533–538. https://doi.org/10.1038/s41586-021-03891-8.
+6. Li, L., Ning, Z., Zhang, X., Mayne, J., Cheng, K., Stintzi, A., and Figeys, D.
+(2020). RapidAIM: a culture- and metaproteomics-based rapid assay of in-
+dividual microbiome responses to drugs. Microbiome 8, 33. https://doi.
+org/10.1186/S40168-020-00806-Z.
+7. Van De Steeg, E., Schuren, F.H.J., Obach, R.S., Van Woudenbergh, C.,
+Walker, G.S., Heerikhuisen, M., Nooijen, I.H.G., and Vaes, W.H.J. (2018).
+An ex vivo fermentation screening platform to study drug metabolism by
+human gut microbiota. Drug Metab. Dispos. 46, 1596–1607. https://doi.
+org/10.1124/DMD.118.081026.
+8. Ng, K.M., Aranda-Dı´az, A., Tropini, C., Frankel, M.R., Van Treuren, W.,
+O’Loughlin, C.T., Merrill, B.D., Yu, F.B., Pruss, K.M., Oliveira, R.A.,
+et al. (2019). Recovery of the gut microbiota after antibiotics depends
+on host diet, community context, and environmental reservoirs. Cell
+Host Microbe 26, 650–665.e4. https://doi.org/10.1016/J.CHOM.2019.
+10.011.
+9. Newton, D.P., Ho, P.-Y., and Huang, K.C. (2022). Antibiotic effects on mi-
+crobial communities are modulated by resource competition. Preprint at
+bioRxiv. https://doi.org/10.1101/2022.09.01.506215.
+10. Nagata, N., Nishijima, S., Miyoshi-Akiyama, T., Kojima, Y., Kimura, M.,
+Aoki, R., Ohsugi, M., Ueki, K., Miki, K., Iwata, E., et al. (2022). Popula-
+tion-level metagenomics uncovers distinct effects of multiple medications
+on the human gut microbiome. Gastroenterology 163, 1038–1052. https://
+doi.org/10.1053/j.gastro.2022.06.070.
+11. Javdan, B., Lopez, J.G., Chankhamjon, P., Lee, Y.J., Hull, R., Wu, Q.,
+Wang, X., Chatterjee, S., and Donia, M.S. (2020). Personalized mapping
+of drug metabolism by the human gut microbiome. Cell 181, 1661–
+1679.e22. https://doi.org/10.1016/J.CELL.2020.05.001.
+12. Zimmermann, M., Zimmermann-Kogadeeva, M., Wegmann, R., and
+Goodman, A.L. (2019). Mapping human microbiome drug metabolism by
+gut bacteria and their genes. Nature 570, 462–467. https://doi.org/10.
+1038/S41586-019-1291-3.
+13. Zimmermann, M., Zimmermann-Kogadeeva, M., Wegmann, R., and
+Goodman, A.L. (2019). Separating host and microbiome contributions to
+drug pharmacokinetics and toxicity. Science 363, eaat9931. https://doi.
+org/10.1126/SCIENCE.AAT9931.
+14. Lloyd-Price, J., Mahurkar, A., Rahnavard, G., Crabtree, J., Orvis, J., Hall,
+A.B., Brady, A., Creasy, H.H., McCracken, C., Giglio, M.G., et al. (2017).
+Strains, functions and dynamics in the expanded Human Microbiome
+Project. Nature 550, 61–66. https://doi.org/10.1038/nature23889.
+15. Le Chatelier, E., Nielsen, T., Qin, J., Prifti, E., Hildebrand, F., Falony, G., Al-
+meida, M., Arumugam, M., Batto, J.-M., Kennedy, S., et al. (2013). Rich-
+ness of human gut microbiome correlates with metabolic markers. Nature
+500, 541–546. https://doi.org/10.1038/nature12506.
+16. Grießhammer, A., de la Cuesta-Zuluaga, J., Zahir, T., Mu¨ ller, P., Gekeler,
+C., Chang, H., Schmitt, K., Planker, C., Bohn, E., Nguyen, T.H., et al.
+(2023). Non-antibiotic drugs break colonization resistance against patho-
+genic Gammaproteobacteria. Preprint at bioRxiv. https://doi.org/10.1101/
+2023.11.06.564936.
+17. Yoon, V., and Nodwell, J.R. (2014). Activating secondary metabolism with
+stress and chemicals. J. Ind. Microbiol. Biotechnol. 41, 415–424. https://
+doi.org/10.1007/s10295-013-1387-y.
+18. Andersson, D.I., and Hughes, D. (2014). Microbiological effects of suble-
+thal levels of antibiotics. Nat. Rev. Microbiol. 12, 465–478. https://doi.
+org/10.1038/nrmicro3270.
+19. Seyedsayamdost, M.R. (2014). High-throughput platform for the discovery
+of elicitors of silent bacterial gene clusters. Proc. Natl. Acad. Sci. USA 111,
+7266–7271. https://doi.org/10.1073/pnas.1400019111.
+20. Spain, J.C. (1995). Biodegradation of nitroaromatic compounds. Annu.
+Rev.
+Microbiol.
+49,
+523–555.
+https://doi.org/10.1146/annurev.mi.49.
+100195.002515.
+21. Rolda´ n, M.D., Pe´ rez-Reinado, E., Castillo, F., and Moreno-Vivia´ n, C.
+(2008). Reduction of polynitroaromatic compounds: the bacterial nitrore-
+ductases. FEMS Microbiol. Rev. 32, 474–500. https://doi.org/10.1111/j.
+1574-6976.2008.00107.x.
+22. Valiauga, B., Miseviciene, L., Rich, M.H., Ackerley, D.F., Sarlauskas, J.,
+and Cenas, N. (2018). Mechanism of two-/four-electron reduction of
+nitroaromatics by oxygen-insensitive nitroreductases: the role of a
+ll
+OPEN ACCESS
+6356 Cell 187, 6346–6357, October 31, 2024
+Article
+
+non-enzymatic reduction step. Molecules 23, 1–9. https://doi.org/10.
+3390/MOLECULES23071672.
+23. Koder, R.L., Haynes, C.A., Rodgers, M.E., Rodgers, D.W., and Miller, A.F.
+(2002). Flavin thermodynamics explain the oxygen insensitivity of enteric
+nitroreductases.
+Biochemistry
+41,
+14197–14205.
+https://doi.org/10.
+1021/BI025805T.
+24. Akiva, E., Copp, J.N., Tokuriki, N., and Babbitt, P.C. (2017). Evolutionary
+and molecular foundations of multiple contemporary functions of the nitro-
+reductase superfamily. Proc. Natl. Acad. Sci. USA 114, E9549–E9558.
+https://doi.org/10.1073/PNAS.1706849114.
+25. Wendel, A., Fausel, M., Safayhi, H., Tiegs, G., and Otter, R. (1984). A novel
+biologically active seleno-organic compound–II. Activity of PZ 51 in rela-
+tion to glutathione peroxidase. Biochem. Pharmacol. 33, 3241–3245.
+https://doi.org/10.1016/0006-2952(84)90084-4.
+26. Luxo, C., Jurado, A.S., Madeira, V.M.C., and Silva, M.T. (2003). Tamoxifen
+induces ultrastructural alterations in membranes of Bacillus stearothermo-
+philus. Toxicol. In Vitro 17, 623–628. https://doi.org/10.1016/S0887-
+2333(03)00113-9.
+27. Brown, R.E., Stancato, F.A., and Wolfe, A.D. (1979). The effects of meﬂo-
+quine on Escherichia coli. Life Sci. 25, 1857–1864. https://doi.org/10.
+1016/0024-3205(79)90434-X.
+28. Wang, L., Zhou, W., Guo, M., Hua, Y., Zhou, B., Li, X., Zhang, X., Dong, J.,
+Yang, X., Wang, Y., et al. (2021). The gut microbiota is associated with clin-
+ical response to statin treatment in patients with coronary artery disease.
+Atherosclerosis 325, 16–23. https://doi.org/10.1016/J.ATHEROSCLE-
+ROSIS.2021.03.007.
+29. Hu, X., Li, H., Zhao, X., Zhou, R., Liu, H., Sun, Y., Fan, Y., Shi, Y., Qiao, S.,
+Liu, S., et al. (2021). Multi-omics study reveals that statin therapy is asso-
+ciated with restoration of gut microbiota homeostasis and improvement in
+outcomes in patients with acute coronary syndrome. Theranostics 11,
+5778–5793. https://doi.org/10.7150/THNO.55946.
+30. Kummen, M., Solberg, O.G., Storm-Larsen, C., Holm, K., Ragnarsson, A.,
+Trøseid, M., Vestad, B., Ska˚ rdal, R., Yndestad, A., Ueland, T., et al. (2020).
+Rosuvastatin alters the genetic composition of the human gut microbiome.
+Sci. Rep. 10, 5397. https://doi.org/10.1038/s41598-020-62261-y.
+31. Vancheri, F., Backlund, L., Strender, L.E., Godman, B., and Wettermark,
+B. (2016). Time trends in statin utilisation and coronary mortality in Western
+European countries. BMJ Open 6, e010500. https://doi.org/10.1136/
+BMJOPEN-2015-010500.
+32. Gracia-Lor, E., Sancho, J.V., Serrano, R., and Herna´ ndez, F. (2012).
+Occurrence and removal of pharmaceuticals in wastewater treatment
+plants at the Spanish Mediterranean area of Valencia. Chemosphere 87,
+453–462. https://doi.org/10.1016/j.chemosphere.2011.12.025.
+33. Barros, S., Montes, R., Quintana, J.B., Rodil, R., Andre´ , A., Capita˜ o, A.,
+Soares, J., Santos, M.M., and Neuparth, T. (2018). Chronic environmen-
+tally relevant levels of simvastatin disrupt embryonic development,
+biochemical and molecular responses in zebraﬁsh (Danio rerio). Aquat.
+Toxicol. 201, 47–57. https://doi.org/10.1016/J.AQUATOX.2018.05.014.
+34. Barros, S., Coimbra, A.M., Alves, N., Pinheiro, M., Quintana, J.B., Santos,
+M.M., and Neuparth, T. (2020). Chronic exposure to environmentally rele-
+vant levels of simvastatin disrupts zebraﬁsh brain gene signaling involved
+in energy metabolism. J. Toxicol. Environ. Health A 83, 113–125. https://
+doi.org/10.1080/15287394.2020.1733722.
+35. Tramontano, M., Andrejev, S., Pruteanu, M., Klu¨ nemann, M., Kuhn, M.,
+Galardini, M., Jouhten, P., Zelezniak, A., Zeller, G., Bork, P., et al.
+(2018). Nutritional preferences of human gut bacteria reveal their meta-
+bolic idiosyncrasies. Nat. Microbiol. 3, 514–522. https://doi.org/10.1038/
+s41564-018-0123-9.
+36. Picard, C., Ponsonnet, C., Paget, E., Nesme, X., and Simonet, P. (1992).
+Detection and enumeration of bacteria in soil by direct DNA extraction
+and polymerase chain reaction. Appl. Environ. Microbiol. 58, 2717–2722.
+https://doi.org/10.1128/AEM.58.9.2717-2722.1992.
+37. Caporaso, J.G., Lauber, C.L., Walters, W.A., Berg-Lyons, D., Lozupone,
+C.A., Turnbaugh, P.J., Fierer, N., and Knight, R. (2011). Global patterns
+of 16S rRNA diversity at a depth of millions of sequences per sample.
+Proc. Natl. Acad. Sci. USA 108, 4516–4522. https://doi.org/10.1073/
+PNAS.1000080107.
+38. Quast, C., Pruesse, E., Yilmaz, P., Gerken, J., Schweer, T., Yarza, P., Pe-
+plies, J., and Glo¨ ckner, F.O. (2013). The SILVA ribosomal RNA gene data-
+base project: improved data processing and web-based tools. Nucleic
+Acids Res. 41, D590–D596. https://doi.org/10.1093/NAR/GKS1219.
+39. Matias Rodrigues, J.F., Schmidt, T.S.B., Tackmann, J., and Von Mering,
+C. (2017). MAPseq: highly efﬁcient k-mer search with conﬁdence esti-
+mates, for rRNA sequence analysis. Bioinformatics 33, 3808–3810.
+https://doi.org/10.1093/BIOINFORMATICS/BTX517.
+40. Gloor, G.B., Macklaim, J.M., Pawlowsky-Glahn, V., and Egozcue, J.J.
+(2017). Microbiome datasets are compositional: and this is not optional.
+Front. Microbiol. 8, 2224. https://doi.org/10.3389/fmicb.2017.02224.
+41. Props, R., Kerckhof, F.-M., Rubbens, P., De Vrieze, J., Hernandez Sana-
+bria, E., Waegeman, W., Monsieurs, P., Hammes, F., and Boon, N.
+(2017). Absolute quantiﬁcation of microbial taxon abundances. ISME J.
+11, 584–587. https://doi.org/10.1038/ismej.2016.117.
+42. Mira, P., Yeh, P., and Hall, B.G. (2022). Estimating microbial population
+data from optical density. PLoS One 17, e0276040. https://doi.org/10.
+1371/journal.pone.0276040.
+43. Bullard, J.H., Purdom, E., Hansen, K.D., and Dudoit, S. (2010). Evaluation
+of statistical methods for normalization and differential expression in
+mRNA-Seq experiments. BMC Bioinformatics 11, 94. https://doi.org/10.
+1186/1471-2105-11-94.
+44. Hughes, C.S., Moggridge, S., Mu¨ ller, T., Sorensen, P.H., Morin, G.B., and
+Krijgsveld, J. (2019). Single-pot, solid-phase-enhanced sample prepara-
+tion for proteomics experiments. Nat. Protoc. 14, 68–85. https://doi.org/
+10.1038/S41596-018-0082-X.
+45. Mateus, A., Hevler, J., Bobonis, J., Kurzawa, N., Shah, M., Mitosch, K.,
+Goemans, C.V., Helm, D., Stein, F., Typas, A., et al. (2020). The functional
+proteome landscape of Escherichia coli. Nature 588, 473–478. https://doi.
+org/10.1038/s41586-020-3002-5.
+46. Huber, W., Von Heydebreck, A., Su¨ ltmann, H., Poustka, A., and Ving-
+ron, M. (2002). Variance stabilization applied to microarray data
+calibration and to the quantiﬁcation of differential expression. Bioinfor-
+matics 18, S96–S104. https://doi.org/10.1093/BIOINFORMATICS/18.
+SUPPL_1.S96.
+47. Bateman, A., Martin, M.J., Orchard, S., Magrane, M., Agivetova, R., Ah-
+mad, S., Alpi, E., Bowler-Barnett, E.H., Britto, R., and Bursteinas, B.
+(2021). UniProt: the universal protein knowledgebase in 2021. Nucleic
+Acids Res. 49, D480–D489. https://doi.org/10.1093/NAR/GKAA1100.
+48. Whitaker, W.R., Shepherd, E.S., and Sonnenburg, J.L. (2017). Tunable
+expression tools enable single-cell strain distinction in the gut microbiome.
+Cell 169, 538–546.e12. https://doi.org/10.1016/j.cell.2017.03.041.
+49. Bobonis, J., Yang, A.L.J., Voogdt, C.G.P., and Typas, A. (2024). TAC-TIC,
+a high-throughput genetics method to identify triggers or blockers of bac-
+terial toxin-antitoxin systems. Nat. Protoc. 19, 2231–2249.
+50. Ruscheweyh, H.-J., Milanese, A., Paoli, L., Karcher, N., Clayssen, Q., Kel-
+ler, M.I., Wirbel, J., Bork, P., Mende, D.R., Zeller, G., et al. (2022). Cultiva-
+tion-independent genomes greatly expand taxonomic-proﬁling capabil-
+ities of mOTUs across various environments. Microbiome 10, 212.
+https://doi.org/10.1186/s40168-022-01410-z.
+51. Parks, D.H., Chuvochina, M., Rinke, C., Mussig, A.J., Chaumeil, P.-A., and
+Hugenholtz, P. (2022). GTDB: an ongoing census of bacterial and archaeal
+diversity through a phylogenetically consistent, rank normalized and com-
+plete genome-based taxonomy. Nucleic Acids Res. 50, D785–D794.
+https://doi.org/10.1093/nar/gkab776.
+ll
+OPEN ACCESS
+Cell 187, 6346–6357, October 31, 2024 6357
+Article
+
+STAR+METHODS
+KEY RESOURCES TABLE
+REAGENT or RESOURCE
+SOURCE
+IDENTIFIER
+Bacterial and virus strains
+Akkermansia muciniphila
+DSMZ
+DSM 22959
+Bacteroides fragilis
+DSMZ
+DSM 2151
+Bacteroides thetaiotaomicron
+DSMZ
+DSM 2079
+Bacteroides uniformis
+DSMZ
+DSM 6597
+Biﬁdobacterium adolescentis
+DSMZ
+DSM 20083
+Biﬁdobacterium longum subsp. longum
+DSMZ
+DSM 20219
+Bilophila wadsworthia
+ATCC
+ATCC 49260
+Blautia obeum
+DSMZ
+DSM 25238
+Clostridium perfringens
+DSMZ
+DSM 11782
+Collinsella aerofaciens
+DSMZ
+DSM 3979
+Coprococcus comes
+ATCC
+ATCC 27758
+Dorea formicigenerans
+DSMZ
+DSM 3992
+Eggerthella lenta
+DSMZ
+DSM 2243
+Enterocloster bolteae
+DSMZ
+DSM 15670
+Erysipelatoclostridium ramosum
+DSMZ
+DSM 1402
+Escherichia coli ED1a
+Denamur Lab, INSERM
+N/A
+Eubacterium rectale
+DSMZ
+DSM 17629
+Fusobacterium nucleatum subsp.
+nucleatum
+DSMZ
+DSM 15643
+Lacrimispora saccharolytica
+DSMZ
+DSM 2544
+Lacticaseibacillus paracasei
+Dupont Health and Nutrition
+N/A
+Odoribacter splanchnicus
+DSMZ
+DSM 20712
+Parabacteroides distasonis
+DSMZ
+DSM 20701
+Parabacteroides merdae
+DSMZ
+DSM 19495
+Phocaeicola vulgatus
+DSMZ
+DSM 1447
+Prevotella copri
+DSMZ
+DSM 18205
+Roseburia intestinalis
+DSMZ
+DSM 14610
+Ruminococcus bromii
+ATCC
+ATCC 27255
+Ruminococcus gnavus
+ATCC
+ATCC 29149
+Ruminococcus torques
+ATCC
+ATCC 27756
+Streptococcus parasanguinis
+DSMZ
+DSM 6778
+Streptococcus salivarius
+DSMZ
+DSM 20560
+Veillonella parvula
+DSMZ
+DSM 2008
+EC100D pir+ RP4-2-Tc::[DMu1::aac(3)IV-
+DaphA-Dnic35-DMu2::zeo] 903
+DdapA::hygromycin
+DSMZ
+DSM 116187
+Nitroreductase overexpression strains,
+Table S1
+This study
+N/A
+Chemicals, peptides, and recombinant proteins
+Acarbose
+TCI Deutschland GmbH
+Cat#A2485
+Amlodipine
+TCI Deutschland GmbH
+Cat#A2353
+Aprepitant
+TCI Deutschland GmbH
+Cat#A3135
+Aripiprazole
+TCI Deutschland GmbH
+Cat#A2496
+Azithromycin
+Sigma
+Cat#75199
+(Continued on next page)
+ll
+OPEN ACCESS
+e1
+Cell 187, 6346–6357.e1–e8, October 31, 2024
+Article
+
+Continued
+REAGENT or RESOURCE
+SOURCE
+IDENTIFIER
+beta-estradiol 17-valerate
+TCI Deutschland GmbH
+Cat#E0876
+Chlorpromazine
+TCI Deutschland GmbH
+Cat#C2481
+Ciproﬂoxacin
+Sigma
+Cat#17850
+Clomiphene
+Sigma
+Cat#C6272-1G
+Diacerein
+Santa Cruz Biotechnology
+Cat#sc-204717
+Dienestrol
+TCI Deutschland GmbH
+Cat#D0449
+Doxyxycline
+Sigma
+Cat#D9891
+Ebselen
+TCI Deutschland GmbH
+Cat#E0946
+Entacapone
+Sigma
+Cat#SML0654
+Felodipine
+TCI Deutschland GmbH
+Cat#F0814
+Ketoconazole
+TCI Deutschland GmbH
+Cat#K0045
+Lansoprazole
+TCI Deutschland GmbH
+Cat#L0233
+Loratadine
+TCI Deutschland GmbH
+Cat#L0223
+Loxapine
+Sigma
+Cat#L106
+Mecillinam
+Sigma
+Cat#33447
+Meﬂoquine
+TCI Deutschland GmbH
+Cat#M2313
+Methotrexate
+TCI Deutschland GmbH
+Cat#M1664
+Niclosamide
+Sigma
+Cat#N3510-50G
+Nifurtimox
+Sigma
+Cat#N3415-5MG
+Olanzapine
+TCI Deutschland GmbH
+Cat#O0393
+Omeprazole
+TCI Deutschland GmbH
+Cat#O0359
+Oxolinic acid
+Santa Cruz Biotechnology
+Cat#sc-212488
+Sertindole
+TCI Deutschland GmbH
+Cat#S0942
+Simvastatin
+Santa Cruz Biotechnology
+Cat#sc-200829A
+Tamoxifen
+Santa Cruz Biotechnology
+Cat#sc-203288
+N-(4-amino-2-chlorophenyl)-5-chloro-2-
+hydroxybenzamide
+Sigma
+Cat#EN300-209216
+Niclosamide-(2-chloro-4-nitrophenyl-
+13C6) hydrate
+Sigma
+Cat#35365
+2-amino-N-(4-chlofophenyl)benzamide
+Sigma
+Cat#TMT00102-1G
+Warfarin
+Sigma
+Cat#A2250-10G
+Caffeine
+Sigma
+Cat#C0750
+Ipriﬂavone
+Sigma
+Cat#16499
+Sulfamethoxazole
+TOKU-E
+Cat#S045
+GAM Broth, modiﬁed
+HyServe GmbH & Co.KG
+Cat#05433
+Todd Hewitt broth
+Sigma
+Cat#T1438
+SYBR Master Mix
+Applied Biosystems
+Cat#43-091-55
+Critical commercial assays
+DNA extraction kit GNOME00E2 DNA
+Isolation Kit
+MP Biomedicals
+Cat#2010400
+Deposited data
+Raw 16S amplicon sequencing data
+N/A
+ENA: PRJEB63118.
+LC-MS community metabolomics data
+N/A
+Metabolights https://www.ebi.ac.uk/
+metabolights/: MTBLS10112
+Oligonucleotides
+Primers for qPCR, see Table S3
+This paper
+N/A
+Primers for nitroreductases
+overexpression, see Table S3
+This paper
+N/A
+(Continued on next page)
+ll
+OPEN ACCESS
+Cell 187, 6346–6357.e1–e8, October 31, 2024
+e2
+Article
+
+EXPERIMENTAL MODEL
+Bacterial species and growth conditions
+Species used in this study were purchased from DSMZ, BEI Resources, ATCC and Dupont Health & Nutrition, or were gifts from the
+Denamur Laboratory (INSERM) and processed as previously described.3 All species (monoculture or community) were grown in
+mGAM (HyServe GmbH & Co.KG, Germany) except the monocultures of Veillonella parvula and of Bilophila wadsworthia, which
+were grown in Todd-Hewitt Broth supplemented with 0.6% sodium lactate and mGAM supplemented with 60 mM sodium formate
+and 10 mM taurine, respectively. Media was pre-reduced to a minimum of 24 h under anoxic conditions (2% H2, 12% CO2, 86% N2) in
+an anaerobic chamber (Coy Laboratory Products Inc.). Experiments were performed at 37C and under anaerobiosis, species were
+inoculated from frozen stocks into liquid culturing media, and passaged twice overnight to ensure robust growth, and drug stocks in
+DMSO were prereduced overnight in the anaerobic chamber inside an ice-box at 4 C. A representative core of species in the human
+gut microbiome were selected as previously described.3,35 From this core, 32 diverse species, differing more than 1.35% on their 16S
+rDNA sequences at the V4 region, were selected for the screening.
+METHOD DETAILS
+Chemical screening of a bottom-up assembled bacterial community of 32 species
+Screening plate preparation
+Drugs were dissolved with the appropriate solvent (i.e., 100% DMSO), except for oxolinic acid and ciproﬂoxacin, which were
+dissolved with 0.5 M NaOH and 0.1M HCl, respectively (Table S1, at a concentration 100-fold higher than the screening con-
+centration, distributed in 96-well V-bottom plates (Greiner, 651261), each well containing 11 ml of dissolved compound or
+vehicle (100% DMSO), and stored at -30C for up to 1 month. One day before the experiment, drug plates were thawed,
+and each of the 11 ml of drug or vehicle per well were added to 539 ml/well of mGAM in 96-deep well plates (Costar 3959) using
+the Biomek FXP (Beckman Coulter) liquid handling system. These plates were pre-reduced in the anaerobic chamber overnight
+(‘‘Community Plates Day1’’). Inoculation of community passage 1. For community assembly, the optical density (OD) was indi-
+vidually measured at 578 nm for the 32 species. These were added together into 200 ml of mGAM with the volume required to
+reach a total of 2x the desired initial OD of 0.01: therefore, each species was added at an OD of 0.0006. 550 ml of the assembled
+community was added into each well of the ‘‘Community Plates Day 1’’ with an epMotion 96 (Bio-Rad) semi-automated elec-
+tronic 96 channel pipette. Final drug concentrations are described in Table S1 and each well contained 1% DMSO. After inoc-
+ulation, 100 ml/well were transferred from the ‘‘Community Plates Day 1’’ to U-bottom shallow 96-well plates (‘‘Community
+Growth Plates Day 1’’) (Fisher Scientiﬁc 168136), sealed with breathable membranes (Breathe-Easy, Sigma), and incubated
+at 37C. These plates were used for monitoring community growth after drug treatment, for which OD578 was measured with
+a microplate spectrophotometer (EON, Biotek) every hour during 24 h, with shaking only few seconds before OD measurement.
+The ‘‘Community Plates Day 1’’ were also sealed with a breathable membrane (AeraSeal, Sigma) and incubated during 24 h. The
+untreated community grew to an average OD578 of 1 (7 generations). Inoculation of community passage 2. After the initial 24 h
+incubation, the drug-treated community was passaged with a 1:50 dilution (OD578 of 0.02 for the untreated community) into a
+new drug-containing deep-well plate for an additional 24 h incubation as follows: during the initial 24 h incubation period, new
+drug plates were thawed, and the 11 ml of drug or vehicle was added to 1067 ml/well of mGAM in 96-deep well plates (‘‘Com-
+munity Plates Day 2’’). These were prereduced in the anaerobic chamber overnight. Wells in the ‘‘Community Plates Day 1’’
+Continued
+REAGENT or RESOURCE
+SOURCE
+IDENTIFIER
+Recombinant DNA
+Plasmids for nitroreductases
+overexpression, see Table S3
+This paper
+N/A
+Software and algorithms
+MassHunter Quantitative Analysis Software
+10.0
+Agilent Technologies
+N/A
+isobarQuant
+Matrix Science
+N/A
+Mascot 2.4
+Matrix Science
+N/A
+Other
+Data availability
+This paper
+https://github.com/grp-bork/drugbug_
+Santamarina_2023
+Code availability
+This paper
+https://github.com/grp-bork/drugbug_
+Santamarina_2023
+ll
+OPEN ACCESS
+e3
+Cell 187, 6346–6357.e1–e8, October 31, 2024
+Article
+
+were mixed with the 96 channel epMotion pipette, and from here 22 ml were transferred to the ‘‘Community Plates Day 2’’. Of
+these, 100 ml were transferred to 96-well U-bottom plates (‘‘Community Growth Plates Day 2’’), for growth curve acquisition, as
+described above. The ‘‘Community Plates Day 2’’ were incubated for 24 h anaerobically and at 37C. The untreated community
+grew to an average OD578 of 1 (5-6 generations). After 24 h of incubation, cell pellets were collected by centrifugation. DNA
+extraction and 16S rDNA sequencing were performed as described below. These experiments were performed in 3 biological
+replicates (different days: different community assemblies, batch of media) with 2 technical replicates each (same community
+assembly and batch of media, but distinct culture/well of plate).
+Genomic DNA isolation
+Genomic DNA isolation was done as previously described.4 Brieﬂy, DNA was extracted in a 96-well plate format using a Biomek FXP
+(Beckman Coulter) liquid handling system or in single tubes depending on the number of samples. Cells were ﬁrst washed with PBS
+and resuspended in 281 ml of cell suspension solution (MP GNOME DNA kit). Cell suspension was treated with lysozyme (25 ml;
+400.000 U/ml) and incubated for 1 h at 37 C. Cell suspensions were then further lysed by three freeze/thaw cycles using liquid ni-
+trogen, before the addition of 15.2 ml of cell lysis solution (MP GNOME DNA kit) and 20 ml of RNA mix (MP GNOME DNA kit). A last step
+of lysis was performed using glass beads (Glasperlen, Edmund Bu¨ hler) by bead beating twice for 5 min at 30 Hz in a Tissue Lyzer II
+(QIAGEN). Lysates were then incubated for 30 min at 37 C with shaking. 12.8 ml of protease mix (MP GNOME DNA kit) was subse-
+quently added and the lysates were incubated for 2 h at 55 C. After a 5-min centrifugation step at 3.200 x g, 200 ml of supernatants
+were collected and mixed with 100 ml of TENP buffer36 (buffer: 50 mM Tris-HCl, pH=8, 20 mM EDTA, 100 mM NaCl, 1% w/vol poly-
+vinlylpolypyrrolidone), and with 75 ml salt out solution (MP GNOME DNA kit). These were incubated for 10 min with at 4 C. After a
+10 min centrifugation at 3200 x g, 200 ml of supernatant were transferred to a clean plate. 500 ml of ice-cold ethanol and 70 ml of
+3M NaOAc pH 5.2 were added. The solution was kept at -30 C overnight. The next day, the plates were centrifuged at 4 C,
+3.200 x g for 45 min. The supernatant was carefully removed and the pellets were washed with 400 ml of ice-cold 70% ethanol. After
+a 20 min centrifugation at 3200 x g at 4 C, all the supernatant was removed and plates were dried in a chemical hood for 30 min. DNA
+was resuspended in 70 ml water overnight at 4 C.
+16S rDNA sequencing
+The 16S libraries were then prepared for sequencing using a published two-step PCR method,37 using the Phire Hot Start II DNA
+polymerase (Thermo Scientiﬁc). Brieﬂy, the V4 region was ampliﬁed by a ﬁrst PCR with the 515F/806R primers (Table S3). The result-
+ing amplicons were subsequently ampliﬁed again using barcoded primers that contain Illumina adaptors. These libraries were
+sequenced in the EMBL GeneCore sequencing facility on an Illumina MiSeq (250 base pairs, paired-end).
+Processing of 16S data and quantiﬁcation of species abundances
+To estimate the species abundance, a database of 16S rRNA regions was constructed by manually querying the SILVA rRNA
+database38 and extracting the representative sequence from each of our 32 species. Amplicon sequencing reads were then
+mapped against this database using MAPseq v1.2.39 Paired reads were mapped independently and assignments were only
+considered upon agreement. Abundance estimates were then produced by counting the number of reads mapping to each
+genome included in the study. Eleven species whose median read count in controls was below 10 were designated as rare spe-
+cies and excluded from the subsequent analysis, as for these species abundance ratios would be unreliable. Relative species
+abundances were calculated by dividing the number of reads mapping to each species by the total number of reads for a
+sample.
+As 16S sequencing data are compositional,40 we estimated absolute species abundances using the ﬁnal OD of the commu-
+nity.41,42 We set the controls’ OD to 1 and multiplied each condition’s OD by the relative species abundances. In this way, the normal-
+ized species abundances sum to 1 for controls, and to lower values when drug treatment has inhibited the overall growth of the com-
+munity. To ensure that relying on OD as a proxy for cell counts does not lead to large distortions, we also calculated standardized
+relative abundances by dividing the relative abundances within each condition by the 75th percentile of the relative abundances,
+also known as upper-quartile normalization.43 We chose the 75th percentile instead of the median, as this is more robust to the
+case where the growth of many species is inhibited.
+Quantiﬁcation of treatment effects
+Control abundances were separately determined for each biological and technical replicate by calculating the mean abundance
+across six control wells. For each species and treatment condition, we calculated the ratio of treatment and control abundances
+to estimate the effect of drug treatment on each species independently of its absolute abundance. Species whose abundance
+was decreased to 50% or less upon drug treatment were designated as being reduced in the community.
+Community metabolomics
+LC-MS analyses were employed to assess the presence/absence of a drug after incubation with the community of 30 species
+(compared to the initial community, Ruminococcus bromii, and Ruminococcus torques, which did not grow reliably in the com-
+munity, were not added as cells did not grow from stocks). Drug plates, community assembly, passages, and incubations were
+performed as described above, with the only exception that the community inoculation in the 2nd passage was performed in a
+ﬁnal volume of 1.5 ml per well. Final drug concentrations are listed in Table S1. Immediately after inoculating the community in
+the 2nd passage: i) 100 ml were transferred to 96-well U-bottom plates for growth curve acquisition, as described above, ii)
+100 ml were transferred to 96-well shallow U-bottom plates and immediately stored frozen at -80 C (0 h time point), and iii)
+150 ml were transferred to 5 different 96-well shallow U-bottom plates, which were incubated anaerobically at 37 C for
+ll
+OPEN ACCESS
+Cell 187, 6346–6357.e1–e8, October 31, 2024
+e4
+Article
+
+1.15 h, 2.5 h, 5 h, 7.5 h, and 10 h, respectively. At each time point, 75 ml/well were transferred to a new plate and immediately
+frozen at -80 C (cells and supernatants), the remaining 75 ml/well were centrifuged for 5 min at 4.680 rpm in an Eppendorf 5430
+centrifuge, and 50 ml of the supernatants transferred to a new plate, which was immediately frozen at -80 C (supernatants). To
+assess drug stability in the culture media (mGAM), drugs were pooled together in three different pools according to drug-treat-
+ment concentration: 80 uM, 20 and 30 uM, and 2.5 and 5 uM. Immediately after pooling the drugs, 1) 100 ml were transferred to
+96-well shallow U-bottom plates and immediately stored frozen at -80 C (0 h time point), and 2) 150 ml were transferred to 5
+different 96-well U-bottom plates, which were incubated anaerobically at 37 C for 1.15 h, 2.5 h, 5 h, 7.5 h, and 10 h, respec-
+tively. At each time point, the plates were immediately frozen at -80 C. Metabolite extraction. Frozen samples were thawed on
+ice, and 20 ml of supernatants, cells and supernatants or of mGAM were distributed into 96-well plates (V-bottom storage plates,
+Thermo Scientiﬁc) according to drug-treatment concentration: 80 uM, 20 and 30 uM, and 2.5 and 5 uM. Additionally, 20 ml of
+pooled drug stocks, split according to the concentration range, were serial diluted in fresh mGAM to set-up calibration curves in
+all plates. Pooled 13C-niclosamide, warfarin, caffeine, ipriﬂavone, 2-amino-N-cholrophenyl)benzamide (Sigma), and sulfameth-
+oxazole (TOKU-E) were diluted in 50% DMSO and used as internal standards (IS) by adding 5 ml per well of 160 uM, 40 uM, and
+10 uM stock concentrations to the 80 uM, 20 and 30 uM, and 2.5 and 5 uM sample plates, respectively. For metabolite extrac-
+tion, 100 ml/well of a 1:1 mix of methanol:acetonitrile were added using the Biomek FXP (Beckman Coulter) liquid handling sys-
+tem. Well contents were mixed and plates were incubated at -20 C overnight. After incubation, samples were centrifuged at
+4.000 rpm in a 5810R Eppendorf centrifuge for 10 min at 4 C. 80 uM, 20 and 30 uM, and 2.5 and 5 uM treated samples were
+diluted 1/7, 1/2, and 2/1, respectively, with H2O for analysis by LC-MS. These experiments were performed in 2 biological rep-
+licates with 2 technical replicates each. LC-MS measurements. Chromatographic separation was performed using an Agilent
+InﬁnityLab Poroshell HPH-C18 1.9 mM, 2.1 x 10 mm column and an Agilent 1290 Inﬁnity II LC system coupled to a 6546
+Q-TOF mass spectrometer. Column temperature was maintained at 45 C with a ﬂowrate of 0.6 ml/min. The following mobile
+phases were used: mobile phase A: water with 0.1% formic acid and mobile Phase B: acetonitrile with 0.1% formic acid. 5 mL
+of sample were injected at 5% mobile phase B, maintained for 0.10 min, followed by a linear gradient to 95% B in 5.5 min and
+maintained at 95% B for 1 min. The column was allowed to re-equilibrate with starting conditions for 0.5 min before each sam-
+ple injection. The mass spectrometer was operated in positive mode (50–1,700 m/z) with the following source parameters:
+VCap, 3,500 V; nozzle voltage, 2000 V; gas temperature, 275 C; drying gas 13 l/min; nebulizer, 40 psi; sheath gas temperature
+275 C; sheath gas ﬂow 12 l/min, fragmentor, 365 V and skimmer, 750 V. Online mass calibration was performed using a second
+ionization source and a constant ﬂow (10 mL/min) of reference mass solvent (121.0509 and 922.0098 for positive). Quantiﬁcation
+of compounds was performed using the MassHunter Quantitative Analysis Softwere (Aglient Technologies, version 10.0). For
+niclosamide, we used the same method as we reported for single species metabolomics (see below). During data processing,
+one of the internal standards was selected to normalize the compound’s signal based on the correlation between the measured
+signal and the expected concentration.
+Chemical screening of bacterial monocultures
+Screening plate preparation
+Drugs were dissolved with the appropriate solvent (Table S1) at a concentration 200-fold higher than the screening concentration,
+distributed in 96-well V-bottom plates (Greiner, 651261), each well containing 10 ml of dissolved compound or vehicle, and stored
+at -30C for up to 1 month. Before the experiment, drug plates were pre-reduced overnight in the anaerobic chamber inside an
+ice-box at 4 C. The experiment day, the 10 ml of drug or vehicle was added to 990 ml/well of media in 96-deep well plates (Costar
+3959) and 50 ml/well were transferred to shallow U-bottom 96-well plates using the epMotion 96 (Bio-Rad) semi-automated electronic
+96 channel pipette.
+Species inoculation
+Species, started in liquid media from a -80 C glycerol stock, were passaged twice overnight. For inoculation, the second overnight
+culture was diluted into fresh medium to an OD578 of 0.02 (2x). 50 ml/well were added to the 96-well U-bottom drug containing plates,
+to ﬁnal drug concentrations as indicated in Table S1, 1% DMSO, and starting bacterial cultures at OD578 of 0.01. Plates were sealed
+with breathable membranes and incubated at 37 C, with shaking only a few seconds before OD measurement, as described above.
+These experiments were performed in 3 biological replicates with 2 technical replicates each.
+Single-species growth curves
+Growth curves for single species were determined for the 21 species that were consistently detected in the in vitro com-
+munities (Table S1). As previously described,3 growth curves were quality-controlled, and truncated at the end of the expo-
+nential phase under control conditions. The AUC was calculated for all conditions and divided by the median control AUC
+within each plate. Across all treatment conditions, the standard deviation between biological and technical replicates had a
+mean value of 0.04 and 0.03, respectively. In our previous screen,3 a large number of control wells and wells with inactive
+drugs made it possible to calculate a distribution of AUCs for normal growth, and to calculate p values based on this dis-
+tribution. In this more focused screen with no inactive drugs and fewer control wells, this was not possible and we therefore
+opted to use an AUC threshold of 0.75 (i.e., a substantial growth reduction by 25%) to determine whether a species was
+susceptible to drug treatment.
+ll
+OPEN ACCESS
+e5
+Cell 187, 6346–6357.e1–e8, October 31, 2024
+Article
+
+Single-species metabolomics
+LC-MS measurements were employed to assess the presence/absence of a drug or a drug metabolite after incubation with a sin-
+gle-species culture. A 96-deep well plate was ﬁlled with 750 ml/well of a 2x drug concentration in mGAM. Inoculation was per-
+formed by ﬁlling the plate with 750 ml/well of mGAM containing different species at OD578 of 0.02, as indicated. Immediately after
+species inoculation: (1) 100 ml were transferred to 96-well U-bottom plates for growth curve acquisition, as described above, (2)
+100 ml were transferred to 96-well U-bottom plates and immediately stored frozen at -80 C (0 h time point), and (3) 100 ml were
+transferred to different 96-well U-bottom plates, which were incubated anaerobically at 37 C for the indicated times. At each
+time point, plates were immediately frozen and stored at -80 C until metabolite extraction. Metabolite extraction. Frozen samples
+were thawed on ice, and 20 ml of the samples were distributed into 96-well plates (V-bottom storage plates, Thermo Scientiﬁc).
+Additionally, 20 ml of pooled niclosamide and aminoniclosamide, or of nifurtimox were serial diluted in fresh mGAM to set-up cali-
+bration curves. Pooled 2-amino-N-cholrophenyl)benzamide and 13C-niclosamide (Sigma) were diluted in 50% DMSO and used as
+internal standards (IS) by adding 5 ml per well of 2x drug treatment respectively. Metabolite extraction was performed with
+methanol:acetonitrile as described above. These experiments were performed at least in 2 biological replicates with 2 technical
+replicates each. When speciﬁed, drug bioaccumulation was analyzed by splitting supernatants from cells and supernatants by
+centrifugation right after time point collection and before freezing at -80 C, as described above for the community metabolomics.
+Bioaccumulated drug concentration was calculated by subtracting the drug concentration obtained from the cell and supernatant
+fraction minus the drug concentration in the supernatant fraction. LC-MS measurements. Chromatographic separation was per-
+formed using an Agilent InﬁnityLab Zorbax Eclipse Plus C18, 1.8mM, 2.1 x 50mm column and an Agilent 1290 Inﬁnity II LC system
+coupled to a 6546 Q-TOF mass spectrometer. Column temperature was maintained at 45 C with a ﬂow rate of 0.6 ml/min. The
+following mobile phases were used: Mobile phase A: Water with 0.1% Formic acid and mobile Phase B: Acetonitrile with 0.1%
+Formic acid. 5 mL of sample were injected at 5% mobile phase B, maintained for 0.10 min, followed by a linear gradient to
+20% B in 0.4 min, followed by a linear gradient to 95% B in 4 min and maintained at 95% B for 0.5 min. The column was allowed
+to re-equilibrate with starting conditions for 0.5 min before each sample injection. The mass spectrometer was operated in positive
+mode for initial 3.6 min and then switched to negative scanning mode (50–1,700 m/z) with the following source parameters: VCap,
+4,000 V; nozzle voltage, 1000 V; gas temperature, 290 C; drying gas 13 l/min; nebulizer, 50 psi; sheath gas temperature 400 C;
+sheath gas ﬂow 12 l/min, fragmentor, 130 V and skimmer, 750 V. Online mass calibration was performed using a second ionization
+source and a constant ﬂow (10 mL/min) of reference mass solvent (121.0509 and 922.0098 for positive and 119.0363 and
+1033.9881 m/z for negative operation mode, respectively). Quantiﬁcation of compound was performed using the MassHunter
+Quantitative Analysis Softwere (Aglient Technologies, version 10.0).
+Quantiﬁcation of community effects
+Protection and sensitization
+The assessment of the effects of the community on the drug sensitivity of individual species is based on the comparison of the
+expected behavior in bacterial monocultures and the observed treatment effects in the bacterial community. To compute the
+fraction of species that are protected in the community for a certain treatment condition, we only considered the subset of spe-
+cies that are affected by the drug in the monoculture experiment. For this subset of species, we divided the number of species
+that grew normally in the community by the number of affected species. Conversely, to determine the fraction of species that
+are cross-sensitized in the community, we divided the number of species that showed reduced growth in the community (but
+grew normally in monoculture) by the number of species that grew normally in the monoculture experiment. For some species,
+the growth reduction was close to the designated threshold, and in some replicates the growth might be counted as reduced
+while in others as normal. We therefore counted each technical replicate individually in the calculation of the fractions of
+affected species, instead of combining them ﬁrst.
+Concentration dependency
+The concentration dependency of the community effects was calculated both on the concentration steps of the drug (low/middle/
+high) and the actual numerical concentration. In the ﬁrst instance, we determined for each drug the concentration steps for which
+the community effect could be determined. For example, consider a drug which only reduced the growth of any species monoculture
+at its middle and high concentration but not at its lowest concentrations. For determining the concentration dependency, these would
+be considered as the low and middle concentration. The distributions of the fractions of affected species were compared using Wil-
+coxon signed-rank tests.
+In addition, we ﬁtted separate logistic functions for sensitization and protection for all drugs which were affected at more than one
+concentration step. Parameters are a common growth rate k and drug-speciﬁc offset di to capture the relation between the fraction of
+affected species fi,j for the concentration step ci,j:
+fi;j =
+
+1+e kðlog ci;j  diÞ 1
+We compared the resulting model with a simpliﬁed model that has no concentration dependency, i.e., only one constant value for
+each drug. We ascertained that the concentration-dependent model provides a better ﬁt to the data using both an ANOVA (analysis of
+variance) and the BIC (Bayesian information criterion), Figure S3.
+ll
+OPEN ACCESS
+Cell 187, 6346–6357.e1–e8, October 31, 2024
+e6
+Article
+
+Spent media experiments
+Spent media experiments were used to evaluate specie’s effects on drugs and whether these protect (potential protectors) other
+species (drug-sensitive species) from drug toxicity. All species were inoculated from glycerol stocks into liquid medium, passaged
+for two days, and diluted to ﬁnal OD578 of 0.01 to perform the experiments. Potential protectors and mGAM controls were grown, for
+the indicated times, in the presence of 2x the indicated drug concentrations. After the incubation periods, the potential protectors and
+mGAM controls were sterilized with 0.22 mm PVDF ﬁlters (Millipore). 50% of the ﬁltrate (growth spent media) was diluted with 50% of
+fresh mGAM containing drug-sensitive species at OD578 of 0.02 in shallow 96-well U-bottom drug-containing plates. The ﬁnal drug
+concentrations are as indicated in the ﬁgures. Plates were sealed with breathable membranes and incubated at 37C for monitoring
+the growth of the sensitive species every hour during 24 h, as described above. These experiments were performed at least in 3 bio-
+logical replicates with 2 technical replicates each.
+Small community growth rescue by a drug detoxiﬁer
+Two small bacterial communities assembled by mixing Bacteroides uniformis, Biﬁdobacterium longum, Streptococcus parasangui-
+nis, S. salivarius with and without Coprococcus comes at a starting OD578 nm of 0.01 were kept untreated or treated with 10 mM ni-
+closamide for 24 h. At 24 h pellets were collected by centrifugation and DNA was isolated and bacterial community composition was
+quantiﬁed by qPCR. Community growth was monitored in 96-well U-bottom plates as described above.
+Bacterial community composition quantiﬁcation by qPCR
+Primer design. Species-speciﬁc primers were designed using the NCBI primer design tool by selecting the following common pa-
+rameters: product length of 200 bp maximum, 25 bp primer length, Tm 70 C ± 3 C, G/C content < 60%. Primers were tested in
+silico for homology to non-speciﬁc sites against nr and RefSeq representative genomes by BLAST, and in vitro by PCR against
+genomic DNA isolated from each individual species included in the community. The 515F/806R primers37 (Table S3) targeting
+the V4 hypervariable regions of 16S rDNA were used for the ampliﬁcation of the 16S rDNA of the community in each sample.
+Four-point standard curves were prepared from ten-fold serial dilutions of DNA prepared for each individual species, starting
+at concentration of 1 ng/mL using 1 mL per well in duplicate reactions (range from 1 ng – 2 pg). The standard curves demon-
+strated good linearity in four orders of magnitude (R2 of 0.989-1.000) for all DNAs except for DNA isolated from B. uniformis, where
+linearity was three orders of magnitude. Species speciﬁc primer’s efﬁciencies ranged from 91 to 100 %, 16S rDNA primer’s efﬁ-
+ciencies were 84.5% ± 5.5%. Reaction conditions. 20 mL qPCR reactions containing 10 mL SYBR master mix (Applied Bio-
+systems), 1 mL nuclease-free water, 4 mL of 4 mM primer mix (0.2 mM each ﬁnal), and 1 mL of template DNA (5-10 ng) were run
+on 96-well plates on a StepOne Plus Real-Time PCR system (ThermoFisher Scientiﬁc). A melting curve analysis was carried
+out to conﬁrm the ampliﬁcation of a single product in each reaction. Data analysis. Normalized DNA contributed by each species
+per condition was determined by calculating the threshold cycle (DDCT) value for each gene in relation to the 16S rDNA of the
+community. To reﬂect the effect of the community growth on the ﬁnal community composition, the resulting normalized DNA value
+was divided by the ﬁnal OD578 of the community at 24 h.
+Overexpression of nitroreductases
+Proteomics
+For proteomics experiments, overnight cultures of the different species were diluted to an OD578 0.1, and anaerobically grown until
+OD5781. At this point, cell cultures were treated with vehicle (DMSO) or 20 mM niclosamide for 30 minutes. Cell pellets were collected
+by 10 min centrifugation at 4000 x g, washed with ice-cold PBS, and frozen at -80C until further processing. Cells were then resus-
+pended in a lysis buffer (2% SDS, 250 U/ml benzonase, and 1 mM MgCl2 in PBS) and boiled at 95 C for 10 min. After measuring
+protein concentration using the BCA assay, according to the manufacturer’s instructions (ThermoFisher Scientiﬁc), 5 mg of protein
+from each condition were digested using a modiﬁed SP3 protocol44 as previously described.45 Peptides were labeled with
+TMT10plex (Thermo Fisher Scientiﬁc), fractionated under high pH conditions, and analyzed using liquid chromatography coupled
+to tandem mass spectrometry, as previously described.45 Mass spectrometry data were processed using isobarQuant and Mascot
+2.4 (Matrix Science) against the R. intestinalis (UP000004828) and P. vulgatus (UP000002861) UniProt FASTA. Protein abundance
+(niclosamide treated samples vs vehicle control) was calculated after normalizing the signal sum intensity across conditions us-
+ing vsn.46
+Nitroreductases over-expressing species
+Annotated R. intestinalis (UP000004828) and P. vulgatus (UP000002861) nucleotide sequences of nitroreductases were retrieved
+from the genome annotation databases from UniprotKB.47 Plasmids were constructed by Gibson assembly reactions, using the
+plasmid pww3864 as a backbone,48 which were transformed into the chemically competent E. coli species EC100. For this,
+PCRs using the primer sequences described in Table S3 were used to amplify the vector pww3864 and the nitroreductases ORFs
+from extracted genomic DNA. Resulting plasmids and pww3864 were electroporated into the E. coli conjugation donor species
+EC100D pir+ RP4-2-Tc::[DMu1::aac(3)IV-DaphA-Dnic35-DMu2::zeo] DdapA::hygromycin.49 For conjugating the nitroreductases
+plasmids from the E. coli donor into the recipient P. vulgatus, overnight aerobic cultures of donor species (grown in LB + 0.3 mM
+diaminopimelic acid (DAP) + 100 mg/ml ampicillin) and anaerobic cultures of P. vulgatus (grown in mGAM) were diluted 50- and
+20-fold respectively, and grown for 3 h. At 3 h, cells were collected by centrifugation and donor cells were washed 3 times with
+LB. Cells were resuspended in 200 ml of mGAM, and 25 ml of each donor species was mixed with 25 ml of the recipient
+ll
+OPEN ACCESS
+e7
+Cell 187, 6346–6357.e1–e8, October 31, 2024
+Article
+
+P. vulgatus, plated on mGAM plates supplemented with 0.3 mM DAP, and incubated at 37 C overnight aerobically. After overnight
+incubation, cells were collected and plated on mGAM plates supplemented with erythromycin (10 mg/ml) and gentamicin (200 mg/ml).
+P. vulgatus transconjugants were conﬁrmed by PCR.
+Calculation of species abundances in human microbiomes
+Relative species abundances were calculated from the raw sequencing data using the mOTUs proﬁler (version 3).50 Unassigned
+reads and samples with insert counts below 1000 were discarded. Species were mapped to the GTDB (release 207),51 and relative
+species abundances were collated on the species and genus level.
+ll
+OPEN ACCESS
+Cell 187, 6346–6357.e1–e8, October 31, 2024
+e8
+Article
+
+Supplemental ﬁgures
+(legend on next page)
+ll
+OPEN ACCESS
+Article
+
+Figure S1. Characteristics of strains and drugs selected, quality control, and threshold exploration for screen, related to Figure 1
+(A) Coverage of tested species in fecal samples. The tested 32 species were mapped against gut microbiome data from the Human Microbiome Project14 (HMP)
+and MetaHIT.15 The median of the combined relative species abundance of the tested species was 25% in HMP and 15% in MetaHIT. Counting genera from
+which at least one species was tested here, 63% and 41% were covered, respectively. The boxplots represent the distribution of the data, and summary statistics
+and outliers as described in Figures 2D and 2E.
+(B) The drug concentrations tested in the screen. Selection was based on prior knowledge of drugs’ activity at 20 mM3 (counts of species targeted on the right
+side).3 Estimated colon concentrations are shown as a red dot (when available), and tested concertation closest to the estimated colon concentration is shown as
+enlarged dots (if colon concentration is not available, then the 20 mM is shown).
+(C) Distribution of Spearman correlations between relative abundances for technical and biological replicates for 16S sequencing. The boxplots represent the
+distribution of the data, and summary statistics and outliers as described in Figures 2D and 2E.
+(D) Exploration of thresholds for deﬁning growth inhibition in the community and in monoculture. Cells are colored by the fraction of protected (left) or sensitized
+(right) species for pairs of thresholds. The white dot designates the chosen thresholds of 25% growth inhibition in monoculture and 50% growth inhibition in the
+community. White lines delineate regions of similar fractions. The fractions of protection and sensitization changed only slowly as the cutoffs for determining
+growth inhibition were varied. Likewise, the abundance normalization based on OD produces similar results as the standardization of relative abundances by
+dividing by the 75th percentile of relative abundances.
+(E) The concentration dependency of the fraction of protection and sensitization is not sensitive to the chosen thresholds of deﬁning growth inhibition. The white
+line encloses the region where the p value of the concentration dependency is below 0.05 (calculated as in Figure S3). Gray cells are shown for threshold pairs
+where the sigmoid curve ﬁtting for the concentration dependency failed.
+(F) Growth curves of the 32 species that constituted the community, using data from Maier et al.3 The mean optical density (OD) over time in hours (h) is shown in
+log scale. Highlighted in turquoise are the species that could not be consistently detected by 16S amplicon sequencing in the community setting in untreated
+conditions. Stains exhibiting slow growth rate and low yield are often, but not always, the ones absent from the community.
+ll
+OPEN ACCESS
+Article
+
+(legend on next page)
+ll
+OPEN ACCESS
+Article
+
+Figure S2. Overview of the emergent behaviors for all drugs and concentration steps, related to Figure 2
+For each treatment condition, the range of community effects is shown. Percentages of protection are shown relative to species being inhibited in monoculture
+(blue/blue + dark gray), and percentages of cross-sensitization are shown relative to species being unaffected in monoculture (yellow/yellow + light gray).
+Concentrations in bold: within a factor of three of the estimated gut concentration. Outlined in rectangles: conditions chosen for follow-up metabolomics
+experiments.
+ll
+OPEN ACCESS
+Article
+
+(legend on next page)
+ll
+OPEN ACCESS
+Article
+
+Figure S3. Concentration dependency of emergent behaviors, related to Figure 2
+(A) The fraction of protected species is shown as a function of the drug concentration. We modeled the dependency between the drug concentration and the
+fraction of affected species as a logistic function, which has two parameters: the growth rate and the offset (i.e., the concentration where the fraction of the
+affected species would be 0.5). For the curve ﬁtting, we used the same growth rate for all drugs, but drug-speciﬁc offsets. Hence, the ‘‘shape’’ of the logistic curve
+is the same across all drugs, but the curve is shifted according to the drugs’ overall effect on the community. ANOVA was used to compare the logistic function ﬁt
+to a concentration-independent model with a constant fraction of affected species per drug. (B) is same as (A), but this time for cross-sensitization.
+ll
+OPEN ACCESS
+Article
+
+(legend on next page)
+ll
+OPEN ACCESS
+Article
+
+Figure S4. Metabolomics proﬁling of communities partially explains cross-protection, related to Figure 3
+(A) Time course of biotransformation and bioaccumulation for all drugs (graphs plotted as in Figure 3A). The error bars represent the standard deviation of the
+replicates.
+(B) The correlation between the compound biotransformation and/or bioaccumulation and the fraction of protected (top) and sensitized (bottom) species as a
+function of different time cutoffs in the metabolomics data. Asterisks: **p < 0.01, *p < 0.05. p values were calculated by permutation tests using 100,000 samples.
+(C) Fraction of protected species in the community as a function of drug biotransformation and/or bioaccumulation at 10 h. Only biotransformation and bio-
+accumulation together show a signiﬁcant correlation. p values were calculated as in (B).
+(D) Fraction of sensitized species in the community as a function of drug biotransformation and/or bioaccumulation at 2.5 h. Only bioaccumulation shows some
+correlation, albeit it fails to reach signiﬁcance—partially also due to the low number of bioaccumulation cases. p values were calculated as in (B).
+ll
+OPEN ACCESS
+Article
+
+(legend on next page)
+ll
+OPEN ACCESS
+Article
+
+Figure S5. LC-MS traces for niclosamide and aminoniclosamide, related to Figure 4
+(A) Calibration curves for niclosamide (left) and aminoniclosamide (right) were generated by pooling the two compounds in fresh mGAM and performing 1:2 serial
+dilutions, starting from a concentration of 10 mM down to 0.08 mM. The y axis shows the peak intensity corresponding to each concentration.
+(B) Incubation of 10 mM niclosamide and aminoniclosamide in mGAM for 5 h shows that only a small fraction of niclosamide is converted to aminoniclosamide (top
+two rows). Both C. comes and R. intestinalis fully convert niclosamide to aminoniclosamide in 5 h (bottom two rows). Note that the peak intensity for amino-
+niclosamide after the incubation matches the one from the aminoniclosamide standard, indicating a stoichiometric conversion.
+(C) Incubation of niclosamide (10 mM) with E. coli for 5 h (second row) exhibited lower turnover to aminoniclosamide than when niclosamide was incubated in
+media mGAM for same time (top row). At the same time, the concentration of niclosamide in the supernatant was lower than the concentration in the whole
+culture, indicating the E. coli has bioaccumulated niclosamide. Three biological replicates with two technical replicates each have been combined, calculating the
+mean across replicates and the moving average across ﬁve data points.
+ll
+OPEN ACCESS
+Article
+
+(legend on next page)
+ll
+OPEN ACCESS
+Article
+
+Figure S6. Contribution of individual strains to niclosamide and nifurtimox community protection, related to Figures 4 and 5
+(A) Full time course for the niclosamide degradation experiment shown in Figure 4B.
+(B) Relative growth of niclosamide-sensitive (black) and resistant (red) species subjected to niclosamide (control) and aminoniclosamide treatments. Amino-
+niclosamide was non-toxic to all species.
+(C) Single-species growth under niclosamide treatment. For illustrative purposes, monotonic spline models were ﬁtted to the AUC data points.
+(D) Single-species versus community growth phenotypes upon treatment with 20 mM nifurtimox. Representation of species that grow in community as expected
+from monoculture (light and dark gray areas) or that are cross-protected (blue area) or cross-sensitized (yellow area) in the community.
+(E) Full time course for nifurtimox biotransformation (as in A). In contrast to niclosamide, E. coli strongly reduced nifurtimox to aminonifurtimox. Spent media from
+E. coli and S. parasanguinis (resistant species to nifurtimox; C), grown in the presence of 40 mM nifurtimox (or vehicle) for 5 h, was mixed 1:1 with fresh mGAM and
+used to grow nifurtimox-sensitive strains. Growth of the sensitive was normalized to their growth in spent media from untreated cultures.
+(F) Protection of the community under niclosamide treatment by C. comes. The same data as in Figure 4F is shown but as a scatter plot of relative abundances in
+control versus niclosamide treatment. Next to each species, the fold change and its direction are shown. In the community without C. comes, the abundances of
+the four species change by a factor of 3 on average. With C. comes, this is reduced to an average of 1.3.
+(G) Niclosamide and nifurtimox dose response curves for P. vulgatus heterologously overexpressing different nitroreductases. Although speciﬁc nitroreductases
+increased the dose response and IC90 to niclosamide (Figure 5A), minor or no changes were observed for nifurtimox.
+ll
+OPEN ACCESS
+Article

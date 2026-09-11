@@ -1,0 +1,1394 @@
+RESEARCH ARTICLE
+www.advmat.de
+Doping Engineering to Modulate Lattice and Electronic
+Structure for Enhanced Piezocatalytic Therapy and
+Ferroptosis
+Boshi Tian, Ruixue Tian, Shaohua Liu, Yan Wang, Shili Gai,* Ying Xie, Dan Yang, Fei He,
+Piaoping Yang,* and Jun Lin*
+Piezocatalytic therapy, which generates reactive oxygen species (ROS) under
+mechanical force, has garnered extensive attention for its use in cancer
+therapy owing to its deep tissue penetration depth and less O2-dependence.
+However, the piezocatalytic therapeutic eﬃciency is limited owing to the poor
+piezoresponse, low separation of electron–hole pairs, and complicated tumor
+microenvironment (TME). Herein, a biodegradable, porous Mn-doped ZnO
+(Mn–ZnO) nanocluster with enhanced piezoelectric eﬀect is constructed via
+doping engineering. Mn-doping not only induces lattice distortion to increase
+polarization but also creates rich oxygen vacancies (OV) for suppressing the
+recombination of electron–hole pairs, leading to high-eﬃciency generation of
+ROS under ultrasound irradiation. Moreover, Mn-doped ZnO shows
+TME-responsive multienzyme-mimicking activity and glutathione (GSH)
+depletion ability owing to the mixed valence of Mn (II/III), further aggravating
+oxidative stress. Density functional theory calculations show that Mn-doping
+can improve the piezocatalytic performance and enzyme activity of Mn–ZnO
+due to the presence of OV. Beneﬁting from the boosting of ROS generation
+and GSH depletion ability, Mn–ZnO can signiﬁcantly accelerate the
+accumulation of lipid peroxide and inactivate glutathione peroxidase 4 (GPX4)
+to induce ferroptosis. The work may provide new guidance for exploring novel
+piezoelectric sonosensitizers for tumor therapy.
+1. Introduction
+Recently, novel cancer treatment modalities, such as photother-
+mal/photodynamic therapy (PTT/PDT), chemodynamic therapy
+B. Tian, Y. Wang, S. Gai, D. Yang, F. He, P. Yang
+Key Laboratory of Superlight Materials and Surface Technology
+Ministry of Education
+College of Materials Science and Chemical Engineering
+Harbin Engineering University
+Harbin 150001, P. R. China
+E-mail: gaishili@hrbeu.edu.cn;yangpiaoping@hrbeu.edu.cn
+J.Lin
+StateKey Laboratory of RareResourceUtilization
+Changchun Instituteof AppliedChemistry
+ChineseAcademy of Sciences
+Changchun 130022,P.R.China
+E-mail: jlin@ciac.ac.cn
+The ORCID identiﬁcation number(s) for the author(s) of this article
+can be found under https://doi.org/10.1002/adma.202304262
+DOI: 10.1002/adma.202304262
+(CDT), sonodynamic therapy (SDT), and
+other new strategies, have shown promis-
+ing prospects for eﬀective ablation of tu-
+mors compared to traditional treatments.[1]
+However, the low tissue penetration capac-
+ity of light signiﬁcantly limits the light-
+involved therapeutic outcomes. CDT is
+highly dependent on the H2O2 level and
+generally encounters the exhaustion of
+H2O2
+in the tumor microenvironment
+(TME), leading to a decrease or even in-
+terruption of the catalytic reaction. Alterna-
+tively, SDT, which generates reactive oxy-
+gen species (ROS) using sonosensitizers to
+kill cancer cells under ultrasound (US) ir-
+radiation, has gained signiﬁcant attention
+owing to its large tissue penetration depth
+and noninvasion.[2] Undoubtedly, sonosen-
+sitizers play a critical role in SDT. In-
+organic nanoparticles have great potential
+for cancer diagnosis and therapy owing
+to their low cost, intrinsic imaging ability,
+good stability, and special biological reactiv-
+ity compared with organic sonosensitizers.
+Moreover, some inorganic compounds ex-
+hibit unique Fenton or enzyme-mimicking
+catalytic activity within the TME, catalyzing endogenous H2O2
+into ROS to kill tumor cells, thereby achieving imaging-guided
+synergetic cancer therapy.[3] However, their inherent toxicity
+and long-term biotoxicity risk are the major obstacles to the
+R. Tian
+Inner Mongolia Key Laboratory of Advanced Materials and Devices
+Inner Mongolia University of Science and Technology
+Baotou 014010, P. R. China
+Y. Xie
+Key Laboratory of Functional Inorganic Material Chemistry
+Ministry of Education
+School of Chemistry and Materials Science
+Heilongjiang University
+Harbin 150080, P. R. China
+B. Tian, S. Liu
+Key Laboratory of Rare Earth Functional Materials and Applications
+Zhoukou Normal University
+Zhoukou 466001, P. R. China
+Adv. Mater. 2023, 35, 2304262
+© 2023 Wiley-VCH GmbH
+2304262 (1 of 18)
+
+www.advancedsciencenews.com
+www.advmat.de
+clinical application of inorganic materials. Biodegradation is an
+eﬀective way to eliminate nanoparticles from the body.[4] Never-
+theless, the majority of current inorganic sonosensitizers used
+in SDT such as TiO2, BaTiO3, and Bi-based nanomaterials,
+are nonbiodegradable,[2a,5] which prevents their further clinical
+application. Therefore, the development of biocompatible and
+biodegradable inorganic sonosensitizers to minimize the risks
+of toxicity is extremely important but it remains a challenge.
+Another urgent issue that should be addressed is the limited
+therapeutic eﬃcacy of SDT in tumor tissues. In general, SDT
+treatment outcomes are mainly enslaved to two aspects: the com-
+plicated TME and low ROS generation capacity of the sonosen-
+sitizer. Although the detailed mechanism of SDT remains con-
+troversial and unclear, it is widely believed that SDT eﬃcacy is
+highly dependent on the O2 level of tumor tissues.[2c,6] In general,
+the sonosensitizer can transform O2 into singlet oxygen (1O2) un-
+der US irradiation through an energy-transfer pathway. As an O2-
+consuming therapeutic modality, SDT eﬃcacy is impaired by the
+hypoxic nature of the TME and may aggravate tumor hypoxia. Be-
+sides, the generated ROS can be consumed by overpressed glu-
+tathione (GSH) (≈10 × 10−3 m) in the TME,[7] which dramatically
+decreases the ROS level in tumor cells.
+Piezoelectric materials, as a kind of noncentrosymmetric crys-
+tals, are emerging as novel high-eﬃciency sonosensitizers in
+SDT. They can generate built-in electric ﬁelds owing to the sepa-
+ration of negative and positive charge centers on two opposing
+surfaces under external mechanical strain while showing zero
+electric dipoles without external strain.[8] Consequently, the built-
+in electric ﬁelds promote the separation of carriers and suppress
+carrier recombination. Thus, the generated activated electrons
+and holes subsequently react with H2O or O2 to yield ROS (e.g.,
+·OH, and ·O2
+‒).[8,9] Unlike traditional sonosensitizers that con-
+sume O2 to generate ROS, piezoelectric materials exhibit no or
+less O2-dependency for the generation of ROS by reaction with
+H2O or O2 through the electron transfer pathway. In general,
+the suitable energy band structure is the prerequisite for ROS
+generation in traditional SDT, i.e., a more negative conduction
+band than the redox potential of O2/·O2
+−to generate ·O2
+−, or a
+more positive valence band than H2O/·OH potential to produce
+·OH.[10] In contrast, the energy band of piezoelectric materials
+can be tilted due to the formation of piezoelectric ﬁeld under
+external stress, satisfying the requirement band level to gener-
+ate ROS.[11] In recent years, several piezoelectric sonosensitizers
+such as BaTiO3, MoWOx, ZnO, and 2D Bi-based materials have
+been reported for use in cancer therapy.[2e,5a,11b,12] However, most
+current piezoelectric materials show unsatisfactory ROS yields
+because of the limited piezoelectric eﬀect and rapid recombina-
+tion of excited electron–hole pairs.[2a,13] Ionic doping in the crys-
+tal lattice is considered an eﬀective strategy to enhance piezo-
+electric performance by regulating the crystal lattice and increas-
+ing the polarity of the single units.[14] Creating oxygen vacancies
+(OV) is a promising approach for enhancing the catalytic perfor-
+mance by regulating the electronic structure of the catalyst.[15]
+OV not only provide charge traps to capture excited electrons and
+holes for promoting charge separation but also act as the electron
+donors to increase the density of majority carriers.[15b,16] Cationic
+doping is a common and easy method for creating OV in inor-
+ganic nanomaterials. What is more, some doped transition met-
+als (such as Fe, Mn, Cu, etc.) exhibit enzyme-mimicking catalytic
+activity triggered by TME to generate ROS.[17] For example, per-
+oxidase (POD) and oxidase (OXD)-like nanozymes can catalyze
+H2O2 and O2 transformation into ·OH and ·O2
+−, respectively. In
+addition, studies have shown that the presence of OV could ac-
+celerate the enzyme catalytic performance by optimizing the cat-
+alytic process.[17c,18] Therefore, it is anticipated to achieve a piezo-
+electric sonosensitizer with high piezocatalytic performance and
+superior enzyme-mimicking activity for boosted ROS generation
+via doping engineering strategy.
+Recently, ferroptosis, a nonapoptotic cell death pathway, has
+attracted research attention owing to its inherent ability to elim-
+inate resistant tumor cells.[19] Ferroptosis is featured with redox-
+active iron (Fe2+), ROS-induced accumulation of lipid peroxides
+(LPO), and inhibition of lipid peroxidation repair enzyme glu-
+tathione peroxidase 4 (GPX4).[20] However, the low eﬀectiveness
+of iron-catalyzed ROS generation in TME usually causes unsatis-
+factory ferroptosis because the Fe(II)-dominated Fenton reaction
+usually requires low pH conditions (pH = 3–4).[21] Therefore, it
+is critical to improve ROS generation eﬃciency in cancer cells to
+achieve eﬀective ferroptosis. Inhibition of GPX4 can lead to the
+eﬀective accumulation of LPO, resulting in tumor cell death. Be-
+cause the action of GPX4 requires the assistance of GSH, GSH
+depletion can indirectly lead to the inactivity of GPX4, eventually
+causing ferroptosis. Thus, GSH consumption is another way to
+induce ferroptosis by inactivating GPX4. Fortunately, upon US ir-
+radiation, sono-induced activated holes in the valence band (VB)
+of piezoelectric materials decrease GSH levels in tumor cells be-
+cause GSH can be oxidized by highly activated holes.[13] It is
+reasonable to hypothesize that inorganic piezoelectric sonosen-
+sitizers with synergistic burst ROS generation and GSH deple-
+tion ability may induce prominent ferroptosis., The hexagonal
+wurtzite structure of ZnO is a well-known piezoelectric semicon-
+ductor material and has been widely used in many ﬁelds owing to
+its unique chemical and physical features.[22] However, the inher-
+ent surface/bulk defects reduce its piezoelectric eﬀect,[23] thus,
+there is room for further improvement in the piezocatalytic eﬃ-
+ciency. In addition, ZnO is considered a promising candidate for
+biological applications owing to its good biocompatibility, degrad-
+ability, and permitted use by the Food and Drug Administration
+(FDA).[24] To date, there have been no reports on the application
+of metal-doped ZnO with multienzyme-mimicking activity for
+combined piezocatalytic cancer therapy and ferroptosis.
+To address these challenges, we reported a degradable
+Mn-doped ZnO nanocluster with multienzyme-like activity
+for enhanced piezocatalytic cancer therapy and ferroptosis
+(Scheme 1). In contrast with the widely reported wire/rod-like
+ZnO micro/nanostructures, we developed a novel mesoporous
+Mn-doped ZnO nanocluster with suﬃcient OV using a facile dop-
+ing strategy. It is expected that the unique porous structure and
+large surface area of Mn–ZnO could enlarge the catalytic active
+sites and promote charge separation,[25] facilitating its piezocat-
+alytic performance and enzyme-mimicking activity. First, after
+Mn doping, the lattice of Mn–ZnO was distorted and caused
+the formation of the built-in electric ﬁeld, resulting in the im-
+provement of the piezoresponse. In addition, OV were created
+because Mn-doping promoted the separation of electron–hole
+pairs generated by US.[26] Thus, Mn-doped ZnO can eﬀectively
+generate ROS under US irradiation. Second, the doping Mn
+ions exhibited outstanding TME-responsive POD and OXD-like
+Adv. Mater. 2023, 35, 2304262
+© 2023 Wiley-VCH GmbH
+2304262 (2 of 18)
+ 15214095, 2023, 38, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304262 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Scheme 1. Schematic illustration of mesoporous Mn–ZnO nanocluster and its anticancer mechanism of enhanced piezocatalytic therapy and ferropto-
+sis.
+activity, which further generated ROS within the TME. Third,
+Mn-doped ZnO showed remarkable GSH depletion ability ow-
+ing to the presence of mixed a valence of Mn2+/Mn3+. Upon US
+irradiation, the GSH level was dramatically decreased, which is
+a result of the strong oxidization of US-generated holes. This el-
+evated the accumulation of LPO and inhibited the expression of
+GPX4 in tumor cells, thus achieving eﬃcient ferroptosis. More-
+over, Mn–ZnO nanoclusters have remarkable antitumor eﬃcacy
+owing to the combination of piezocatalytic therapy and ferropto-
+sis features. To the best of our knowledge, this study provides the
+ﬁrst example of a biodegradable, metal-ion doped piezoelectric
+sonosensitizer with superior ROS generation and GSH-depletion
+ability for MRI-imaging guided combined piezocatalytic therapy
+and ferroptosis for eﬃcient tumor therapy with good biosafety.
+2. Results and Discussion
+In this study, mesoporous Mn–ZnO nanocrystal clusters were
+prepared by high-temperature decomposition of the metal salts at
+220 °C (Figure 1a). Diethylene glycol (DEG, boiling point: 240 °C)
+was used as the polar solvent, and Zn(NO3)2 and Mn(NO3)2
+were used as the precursor and dopant, respectively. The for-
+mation of Mn–ZnO nanoclusters followed a two-stage growth
+mechanism. First, ZnO seeds were formed by the decomposition
+of Zn(NO3)2 at high temperatures and subsequently grew into
+primary nanocrystals. Then, these primary nanocrystals spon-
+taneously aggregated into mesoporous spherical nanoclusters.
+Figure S1 (Supporting Information) shows transmission elec-
+tron microscopy (TEM) images of ZnO and Mn–ZnO varying
+Mn doping content. The morphology and particle size of the
+nanoclusters were tuned by varying the Mn doping molar ratio
+from 0% to 8%. As shown in Figure S1 (Supporting Informa-
+tion), the undoped ZnO exhibited irregular aggregation by rod-
+like crystals. Interestingly, the 2%-Mn–ZnO showed a uniform
+spherical shape with a porous structure. Higher Mn-doping con-
+tent caused smaller nanoclusters, indicating that the Mn dopant
+inhibited the aggregation of nanocrystals. These observations
+demonstrate that Mn-doping is the key factor in the formation
+of porous structures of Mn–ZnO nanoclusters. Because the 2%-
+Mn–ZnO nanocluster showed an optimized piezocatalytic per-
+formance, it was usually selected as the sample to study in the
+following sections. All mentions of Mn–ZnO refer to 2%-Mn–
+ZnO, unless otherwise indicated. As shown in Figure 1b–d, the
+TEM images of Mn–ZnO nanoclusters displayed a uniform par-
+ticle distribution (≈140 nm) and a spherical shape with a meso-
+porous structure. The nanoclusters were composed of smaller
+nanocrystals (7–9 nm) (Figure 1d,f). The porous structure of nan-
+ocluster can be understood due to the interval arrangement of
+primary nanocrystals with adjacent ones. The selected area elec-
+tron diﬀraction (SAED) pattern in Figure 1b corresponded to
+diﬀraction rings in the order of (100), (002), (101), (102), and
+(110), which could be attributed to hexagonal wurtzite Mn–ZnO
+with a polycrystalline structure. High-angle annular dark-ﬁeld
+scanning transmission electron microscopy (HAADF-STEM) im-
+ages displayed that Mn, O, and Zn were uniformly distributed
+in Mn–ZnO (Figure 1e). High-resolution TEM (HRTEM)
+images displayed a distinct lattice fringe with a crystal spac-
+ing of 0.26 nm, corresponding to the (002) diﬀraction plane of
+hexagonal Mn–ZnO (Figure 1g). Notably, the HRTEM images of
+Mn–ZnO displayed disordered lattice defects (Figure 1g, yellow
+Adv. Mater. 2023, 35, 2304262
+© 2023 Wiley-VCH GmbH
+2304262 (3 of 18)
+ 15214095, 2023, 38, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304262 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Figure 1. Morphology and structure of Mn–ZnO nanoclusters. a) Synthetic process of porous Mn–ZnO nanoclusters. b) Representative TEM image
+of Mn–ZnO nanoclusters. Inset shows the SAED pattern of Mn–ZnO. c) The hydrodynamic diameter of Mn–ZnO nanoclusters. d) TEM image and e)
+the elemental mapping of Zn, O, Mn of Mn–ZnO. f) High-resolution TEM (HRTEM) image and g) ampliﬁed HRTEM image of Mn–ZnO. h) Powder
+X-ray diﬀraction (XRD) patterns of ZnO and Mn-doped ZnO, and i) partial enlargement for the XRD diﬀraction at (100) and (002) peaks. j) Ferroelectric
+hysteresis loop of Mn–ZnO at room temperature. k) X-ray photoelectron spectroscopy (XPS) spectra of Mn 2p, and l) O 1s for ZnO and Mn–ZnO
+nanoclusters. m) Electron paramagnetic resonance (EPR) spectra of ZnO and Mn–ZnO nanoclusters.
+ellipse) unlike ZnO (Figure S2, Supporting Information), ow-
+ing to the surface vacancies caused by the unsaturated coordi-
+nation of metal atoms.[17c] Figure S3 (Supporting Information)
+shows the N2 absorption–desorption isotherms of Mn–ZnO nan-
+oclusters. A type-IV absorption isotherm with a narrow H1 type
+hysteresis loop was observed, conﬁrming the mesoporous struc-
+ture of Mn–ZnO.[26] The Brunauer–Emmett–Teller (BET) sur-
+face area of Mn–ZnO was ≈70.6 m2 g−1. In addition, the pore
+diameter was estimated to be ≈3.3 nm by the Barrett–Joyner–
+Halenda (BJH) method. The unique porous structure and large
+surface area are likely to endow Mn–ZnO with high separation
+of charge ability and plenty of exposed active sites for catalytic
+reactions.
+Then, we investigated the crystal structures of ZnO before
+and after Mn doping using X-ray diﬀraction (XRD) analysis. As
+shown in Figure 1h and Figure S4 (Supporting Information),
+Adv. Mater. 2023, 35, 2304262
+© 2023 Wiley-VCH GmbH
+2304262 (4 of 18)
+ 15214095, 2023, 38, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304262 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Table 1. Lattice parameters of ZnO and Mn-doped ZnO based on XRD
+patterns..
+a = b [Å]
+c [Å]
+c/a
+V [Å3]
+d(100) [nm]
+Crystal size (nm)
+ZnO
+3.249
+5.173
+1.592
+47.62
+2.8137
+1.887
+1%-Mn–ZnO
+3.253
+5.214
+1.602
+47.79
+2.8174
+4.506
+2%-Mn–ZnO
+3.254
+5.218
+1.604
+48.94
+2.8177
+7.086
+4%-Mn–ZnO
+3.2598
+5.2192
+1.601
+49.13
+2.823
+5.222
+8%-Mn–ZnO
+3.2536
+5.2107
+1.602
+48.87
+2.8177
+6.579
+Note: a, b, and c (lattice parameters) are calculated from the formula for a hexago-
+nal unit cell: 1/d2
+(hkl) = 4/3(h2 + k2/a2+ hk) + I2/c2. Unit cell volume is calculated
+according to the formula over a cubic unit cell: V = 0.866 × a × b × c, wherein V is
+the unit cell volume. Crystal size of (002) lattice plane are calculated by the Debye–
+Scherrer formula.
+all the samples had a typical hexagonal wurtzite structure with
+P63mc space group (JCPDS card no. 36-1451). No metallic Mn or
+oxide phases were detected, suggesting that Mn was doped into
+the ZnO lattice without changing the ZnO phase structure.[27]
+However, the diﬀraction peaks of Mn-doped ZnO nanoclusters
+shifted to lower angles, revealing that the ZnO lattice space was
+enlarged after Mn doping, probably owing to the larger radius
+Mn2+ (0.80 Å) replacing Zn2+ (0.74 Å), thereby inducing lat-
+tice distortion and increasing the polarity.[23,28] Undoubtedly, the
+occupation of oﬀ-centered positions of the ZnO lattice by Mn
+dopants would lead to variations in the chemical bond strengths
+and polarities.[23] Consequently, the polarity enhancement causes
+more noncentrosymmetricity and a higher piezoresponse.[14]
+For hexagonal wurtzite ZnO, the noncentrosymmetric structure
+arises from the tetrahedrally coordinated Zn2+ and O2−stacked
+along the c­-axis.[8,29] They can generate a piezoelectric poten-
+tial due to the separation of positive and negative charge centers
+when subjected to an external force along the asymmetric c-axis
+direction.[30] It has been demonstrated that crystal growth along a
+particular direction can increase polarization and lead to the gen-
+eration of a greater piezopotential.[14] After Mn ion doping, we
+found that the intensity of the (002) peak enhanced (Figure 1i),
+which corresponds to the [0001] direction (the c-axis of the hexag-
+onal system), indicating that Mn doping favored the c-axis orien-
+tation growth of Mn–ZnO nanoclusters.[31] Notably, the relative
+intensity ratio of d(002)/d(100) peaks increased after the introduc-
+tion of Mn, as shown in Figure 1i. This indicates that Mn-doping
+is beneﬁcial for c-axis preferred orientation growth of ZnO nan-
+oclusters, resulting in the enhancement of their polarization. It
+should be noted that the lattice parameters of Mn–ZnO nan-
+ocluster s (a = b = 0.3254 nm, c = 0.5218 nm) changed slightly
+compared to those of ZnO (a = b = 0.3249 nm, c = 0.5173 nm)
+(Table 1), revealing the distortion of the lattice space of ZnO and
+further conﬁrming the increase in its the noncentrosymmetricity.
+More importantly, the distortion will cause uneven charge distri-
+bution and, in turn, increase the polarization, thus enhancing the
+piezoresponse.[32] Figure 1j shows the polarization-electric ﬁeld
+(P–E) hysteresis loop of Mn–ZnO at room temperature. The P–
+E hysteresis loop displayed a typical ferroelectricity proﬁle with a
+remnant polarization (Pr) of 0.04 μC cm−2 and a coercive ﬁeld (Ec)
+of 1.74 kV cm−1, conﬁrming the existence of permanent dipole
+moments in Mn-doped ZnO crystal.[33] In contrast, no typical P–
+E hysteresis loop was observed in the polarization curves, indi-
+cating the nonferroelectric feature of undoped ZnO (Figure S5,
+Supporting Information). The ferroelectric feature of Mn–ZnO
+probably originates from the uneven electronic distribution ow-
+ing to the oﬀ-centered and interstitial occupation of the dopant
+(Mn2+) in the crystal lattice.[33] Similar ferroelectricity has also
+been observed in Li+-doped ZnO nanostructures.[34] Therefore,
+the spontaneously generated polarization electric ﬁeld in ferro-
+electric Mn–ZnO would strengthen the piezoinduced polariza-
+tion under US irradiation and further drive the migration and
+separation of carriers, leading to an improvement in the piezo-
+catalytic eﬃciency.[9b,35] The surface chemical environments were
+characterized using X-ray photoelectron spectroscopy (XPS). As
+shown in Figure S6 (Supporting Information), the XPS spec-
+tra of Mn–ZnO displayed O, Zn, and Mn, indicating the suc-
+cessful doping of Mn. In terms of ZnO (Figure S6b, Support-
+ing Information), the peaks located at 1021.4 and 1044.6 eV
+were assigned to 2p3/2 and 2p1/2 of Zn2+,[36] respectively. After
+doping with Mn, the peak intensities decreased and shifted to
+higher binding energy (Figure S6b, Supporting Information),
+suggesting that the electron density of Zn decreased owing to
+Mn doping.[37] The high-resolution XPS spectrum of Mn 2p3/2
+exhibited two separated peaks at 640.5 and 642.0 eV (Figure 1k),
+corresponding to Mn2+ and Mn3+, respectively. The mixed va-
+lence state of Mn theoretically endows Mn–ZnO with Fenton-
+like catalytic activity. More importantly, the existence of Mn3+
+in the lattice of Mn–ZnO suggested the nonequivalent substitu-
+tion of Zn by Mn, thereby causing the formation of defects in
+the ZnO lattice.[36] For the ZnO (Figure 1i), the XPS spectrum
+of O1s exhibited two main peaks located at 530.1 and 531.7 eV,
+belonging to the lattice oxygen (OL) and surface oxygen (OC),
+respectively. Notably, an obvious binding intensity could be ob-
+served at 532.1 eV after the doping of Mn, corresponding to the
+O atom near the O-vacancies(OV).[38] In addition, the intensity
+of lattice O was signiﬁcantly decreased and shifted to higher
+binding energy, revealing that charge transfer occurred for the
+O atom after doping with Mn, thus leading to spontaneous po-
+larization owing to the uneven charge distribution.[32] The con-
+centration of oxygen vacancy was estimated to be ≈33.3% of the
+XPS peak area, indicating the presence of plentiful oxygen va-
+cancies on the surface of Mn–ZnO. Moreover, with increasing
+Mn-doping content, higher concentrations of oxygen vacancies
+were observed (Figure S6c,d, Supporting Information). The oxy-
+gen vacancies were further veriﬁed by electron paramagnetic res-
+onance (EPR) analysis. As shown in Figure 1m, Mn–ZnO dis-
+played an intense signal at g = 2.002, corresponding to the elec-
+trons trapped on the oxygen vacancy, whereas a weak EPR signal
+was detected for ZnO.[17c] As expected, these oxygen vacancies
+can regulate the electronic structure and promote charge carriers,
+which can enhance the catalytic performance. In addition, the
+zeta potentials of Mn–ZnO nanoclusters in water and PBS con-
+taining 2% fetal bovine serum (PBS/FBS) were determined to be
+about −14.5 and −10.4 mV (Figure S7, Supporting Information),
+respectively, indicating the moderate colloidal stability of Mn–
+ZnO nanoparticles in the physiological environment. The neg-
+atively charged surface of Mn–ZnO is possibly owing to the pres-
+ence of hydrophilic hydroxyl groups on the surface of Mn–ZnO
+(Figure S7a, Supporting Information). Moreover, the diameter
+of Mn–ZnO exhibited no obvious change after incubation with
+PBS and Dulbecco’s modiﬁed Eagle’s medium (DMEM) medium
+Adv. Mater. 2023, 35, 2304262
+© 2023 Wiley-VCH GmbH
+2304262 (5 of 18)
+ 15214095, 2023, 38, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304262 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+for two days, further conﬁrming the good stability of Mn–ZnO
+nanoparticles (Figure S8, Supporting Information).
+Next, we investigated the energy levels and electronic struc-
+tures of ZnO and Mn–ZnO. The band gap of ZnO was de-
+termined to be 3.15 eV based on Kubelka–Munk (K–M) curve
+(Figure S9, Supporting Information). For Mn–ZnO, the band
+gap was reduced to 2.95 eV possibly because of the formation
+of impurity states. A narrow band gap is favorable for the car-
+rier migration. Moreover, the conduction band (CB) of Mn–
+ZnO was determined to be −0.59 V (vs normal hydrogen elec-
+trode (NHE)) from the Mott–Schottky plot (Figure 2f), which
+was more negative than the redox potential of O2/·O2
+−(−0.33 V
+vs NHE), suggesting that O2 molecules can be reduced to su-
+peroxide (·O2
+−) radicals.[11a] The VB of Mn–ZnO was calcu-
+lated to be 2.36 eV (vs NHE) from the equation Eg = EVB –
+ECB, which was more positive than the H2O/·OH redox poten-
+tial in water (+2.01 V vs NHE),[11a] indicating that the holes in
+the VB can oxidize H2O molecules to ·OH radical under US
+irradiation. It has been reported that ion substitution can pro-
+mote piezoelectric performance by increasing the local dipole
+moments and macroscopic polarization.[37] The piezoelectricity
+of ZnO and Mn–ZnO was directly detected by piezoresponse
+force microscopy (PFM) and the results are shown in Figure 2.
+A Typical butterﬂy amplitude loop (Figure 2a) and ≈180° phase
+switching (Figure 2b) were observed when a bias voltage from
+−10 to 10 V was applied, which is a typical characteristic of piezo-
+electric materials, indicating the remarkable piezoelectricity of
+Mn–ZnO.[5a] Notably, the amplitude variation was signiﬁcantly
+higher than that for ZnO, suggesting a stronger piezoelectric re-
+sponse of Mn–ZnO compared to ZnO. The piezoelectric coef-
+ﬁcient (d33) is a key characteristic of the piezoelectric material,
+which reﬂects the conversion eﬃciency from mechanical energy
+to electricity,[12,39] thus a larger d33 is necessary for practical ap-
+plications.
+In this study, the d33 of Mn–ZnO was calculated to be ≈44.1 pm
+V‒1 based on amplitude-voltage loops, which was four times that
+of ZnO (11.1 pm V‒1), further conﬁrming the superior piezoelec-
+tric performance of Mn–ZnO. Based on the energy band theory,
+piezoelectrics can generate a polarizing potential with positive
+and negative charges on both sides under external stress, and the
+generated polarized charge then creates a built-in electric ﬁeld to
+separate the excited electron–hole pairs.[12,40] Under mechanical
+stress, the electrons generated in the CB can reduce O2 molecules
+to ·O2
+–, whereas the holes in the VB can oxidize H2O to ·OH
+(Figure 2c). In contrast, O vacancies in metal oxides not only act
+as trapping centers to inhibit the recombination of hole-electron
+pairs but can also promote the most carrier density,[41] thereby
+enhancing the piezocatalytic performance of piezoelectrics. To
+evaluate the separation capacity of sono-induced carriers after
+Mn doping, ultrasonic transient current and electrochemical
+impedance spectroscopy (EIS) were performed. As displayed in
+Figure 2d, Mn–ZnO showed a stable and higher current den-
+sity under US irradiation than ZnO. Notably, with the increasing
+Mn-doping concentration, the current density trend increased
+initially and subsequently decreased, and the highest current
+density was observed when the Mn-doping concentration was
+up to 2%. Similarly, the Nyquist plot showed that 2%-Mn–ZnO
+exhibited a much smaller semicircular arc compared to other
+samples (Figure 2e), indicating more free charge transfer at the
+interface.[42] To gain more insight into the electronic properties,
+Mott–Schottky curves of ZnO and Mn–ZnO with diﬀerent Mn-
+doping concentrations were measured. As displayed in Figure 2f
+and Figure S10 (Supporting Information), the positive slope of
+the Mott–Schottky curves revealed the n-type semiconductor of
+ZnO and Mn-doped ZnO. As shown, the various doping level
+from 1% to 4% samples exhibited diﬀerent slopes, and the 2%
+dopant showed a signiﬁcantly smaller slope than that of ZnO and
+1%-Mn–ZnO, revealing a higher charge carrier density.[15b,42] It
+should be noted that the slope of 4%-Mn–ZnO was nearly close
+to that of 2%-Mn–ZnO, indicating the excessive dopant was not
+seemly facilitating the enhancement of the carrier density. The
+PL spectra in Figure 2g show that 2% dopant displayed the weak-
+est ﬂuorescent intensity around 510 nm compared with other
+samples, indicating the superior carrier separation eﬃciency of
+2%-Mn–ZnO, which is well consistent with the electrochemical
+results. These results demonstrate that the charge separation ca-
+pacity and carrier concentration strongly depend on the Mn dop-
+ing level.[23] All these observations suggested that a moderate
+OV concentration (2% Mn-doping) facilitates carrier transport,
+whereas excessive OV would cause the electron–hole recombina-
+tion to decrease carrier density.[43] Overall, the optimal doping
+concentration was 2% in Mn–ZnO, which exhibited outstanding
+piezoresponse and high-eﬃciency charge separation. Therefore,
+we selected 2%-Mn–ZnO as the typical model in the following
+experiments. Electron spin resonance (ESR) measurements were
+ﬁrst performed to directly prove the production of ROS (e.g., ·O2
+‒,
+·OH, and 1O2). As shown in Figure 2i, characteristic ESR peaks
+with an intensity ratio of 1:1:1:1 were observed when ZnO was
+triggered by US, suggesting the generation of ·O2
+‒ species. No-
+tably, the ESR signal intensity of Mn–ZnO was signiﬁcantly en-
+hanced compared to ZnO, indicating that more ·O2
+‒ species were
+produced. Dihydrorhodamine 123 (DHR123) was selected as a
+speciﬁc indicator to further conﬁrm the generation of ·O2
+−. An
+intense ﬂuorescent signal was observed when Mn–ZnO was irra-
+diated with US (Figure S11a, Supporting Information), and the
+intensity gradually increased over time, conﬁrming the genera-
+tion of ·O2
+‒ species. We next studied the generation ·OH capac-
+ity of Mn–ZnO under US irradiation using ESR measurements.
+As shown in Figure 2j, quartet intense characteristic ESR signals
+(1:2:2:1 in intensity) appeared using DMPO as the ·OH-trapped
+agent, ﬁrmly revealing the generation of ·OH, whereas a weaker
+ESR signal was observed for ZnO under ﬁxed conditions. Tereph-
+thalic acid (TA), a speciﬁc ·OH indicator, was used as a ﬂuores-
+cent probe to detect ·OH because TA can be oxidized to TAOH
+by ·OH radicals. As shown in Figure S11b (Supporting Informa-
+tion), a strong ﬂuorescent emission peak at ≈420 nm appeared
+after Mn–ZnO was irradiated with US, suggesting the remark-
+able ·OH generation capacity of Mn–ZnO. In addition, ESR mea-
+surements were performed to verify whether the Mn–ZnO can
+generate single oxygen (1O2) upon US irradiation using 2,2,6,6-
+tetramethylpiperidine (TEMP) as a 1O2 trapping agent. As dis-
+played in Figure S12 (Supporting Information), Mn–ZnO + US
+group exhibited a typical 1:1:1 triplet signal, suggesting that Mn–
+ZnO can generate 1O2 under US irradiation possibly since the
+·O2
+‒ were oxidized by holes in the valence band.[44] Moreover,
+we further verify the generation of 1O2 from Mn–ZnO under US
+irradiation using singlet oxygen sensor green (SOSG) as a spe-
+ciﬁc ﬂuorescence probe. As displayed in Figure S13 (Supporting
+Adv. Mater. 2023, 35, 2304262
+© 2023 Wiley-VCH GmbH
+2304262 (6 of 18)
+ 15214095, 2023, 38, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304262 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Figure 2. Structure and piezoelectric performance of Mn–ZnO. a) Amplitude–voltage curves and b) phase hysteresis loops of ZnO and Mn–ZnO.
+c) Schematic illustrations on the generation of ROS from Zn–MnO under US irradiation. d) Transient piezoelectric current of ZnO and Mn-doped
+ZnO under US irradiation (1.0 MHz, 1.0 W cm–2). e) Electrochemical impedance spectroscopy (EIS) spectra, and f) Mott–Schottky plots of ZnO and
+Mn-doped ZnO with diﬀerent Mn-doping concentrations. g) Fluorescence intensity changes with the addition of diﬀerent Mn-doping content under
+the excitation of 465 nm. h) Normalized ﬂuorescence intensity and corresponding slope of Mott–Schottky curves from Figure 2g,f, respectively. i)
+DMPO spin-trapping ·O2‒ electron spin resonance (ESR) signals of ZnO and Mn–ZnO under US irradiation at diﬀerent pH (5.5, 7.4). j) ESR spectra
+of DMPO/·OH for the Mn–ZnO nanoclusters with diﬀerent treatments. k) US-triggered (1.0 MHz, 1.0 W cm−2) ROS generation catalyzed by Mn–ZnO
+using 1,3-diphenylisobenzofuran (DPBF) as a ROS probe. l) Normalized UV–vis absorbance of DPBF after incubation with Mn–ZnO with diﬀerent
+Mn-doping concentrations under US irradiation (1.0 MHz, 1.0 W cm−2). Data are presented as mean ± standard deviation (S.D.) (n = 3).
+Adv. Mater. 2023, 35, 2304262
+© 2023 Wiley-VCH GmbH
+2304262 (7 of 18)
+ 15214095, 2023, 38, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304262 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Information), the ﬂuorescence intensity of SOSG probe gradually
+increased during the US irradiation, conﬁrming the generation
+of 1O2. Furthermore, we evaluated the general ROS generation
+capacity of Mn–ZnO using 1,3-diphenylisobenzofuran (DPBF)
+as a ﬂuorescent probe. The decrease in ﬂuorescence intensity of
+DPBF revealed the massive ROS generated from Mn–ZnO upon
+US irradiation (Figure S14, Supporting Information), indicating
+the eﬀective generation of ROS. Moreover, Mn–ZnO exhibited
+much weaker ﬂuorescence than ZnO under the same experimen-
+tal conditions, further demonstrating that the ROS generation
+capacity of Mn–ZnO was superior to that of ZnO (Figure 2k).
+Of note, the 2% doping concentration of Mn–ZnO displayed
+the strongest ROS generation ability among the Mn-doped ZnO,
+which was well consistent with the above electrochemical and PL
+results. Collectively, we can conclude that the ROS generation ca-
+pacity of Mn–ZnO is remarkably enhanced under US irradiation
+because of Mn doping in the ZnO lattice.
+Owing to the inherent multivalence of Mn, Mn–ZnO is likely
+to exhibit enzyme-mimicking activity. We ﬁrst investigated the
+OXD-like activity of Mn–ZnO in PBS solutions with diﬀerent
+pH values using 3,3′,5,5′-tetramethylbenzidine (TMB) as a sub-
+strate, in which the colorless TMB can be oxidized to the blue
+oxidation of TMB (oxTMB) with a UV-vis absorption peak at
+≈652 nm. Interestingly, TMB turned blue oxTMB after incuba-
+tion with Mn–ZnO at pH = 5.5, whereas no color change was
+observed at pH = 7.4, indicating that O2 was catalyzed into ·O2
+‒
+by the acid-responsive OXD-like activity of Mn–ZnO (Inset of
+Figure 3a). Moreover, the UV-vis absorption of oxTMB showed
+that lower pH values induced a stronger absorption intensity of
+oxTMB at 652 nm (Figure 3a), suggesting that the acidic environ-
+ment was favorable for the OXD-like activity of Mn–ZnO. The
+ESR results (Figure 3b) further revealed the pH-triggered gen-
+eration of ·O2
+‒ from Mn–ZnO nanoclusters. These observations
+suggested that the OXD-like activity of Mn–ZnO was unlocked
+at weakly acidic conditions, suggesting that it can intelligently
+generate ·O2
+‒ in acidic TME but not in normal physiological con-
+ditions (pH 7.4). The Michaelis–Menten constant (Km) and maxi-
+mal initial velocity (Vmax) were estimated to be 37.9 × 10−3 m and
+5.2 × 10−7 m s−1, respectively (Figure 3c). Thus, we believe that
+our Mn–ZnO with acid-triggered OXD activity can be used for
+targeted tumor therapy and to avoid damage to normal tissues.
+O2 is the essential substrate of OXD, thus, suﬃcient O2 levels are
+favorable for OXD-like activity. It is well known that the overpro-
+duced H2O2 in TME could be decomposed into O2 by catalase
+(CAT)-like nanozymes. We then veriﬁed whether Mn–ZnO pos-
+sesses CAT activity in the presence of H2O2. As expected, many
+O2 bubbles appeared after Mn–ZnO incubation with H2O2 solu-
+tion (Figure 3d), whereas no bubbles appeared for the ZnO sam-
+ple, indicating that H2O2 was decomposed to O2 by Mn–ZnO.
+Furthermore, ﬂuorescent [Ru(dpp)3)]Cl2 was used as a speciﬁc
+indicator to verify the generation of oxygen because its ﬂuores-
+cent emission can be quenched by oxygen. After Mn–ZnO was
+incubated with H2O2, the ﬂuorescence of [Ru(dpp)3)]Cl2 gradu-
+ally decreased over time (Figure S15, Supporting Information),
+verifying the generation of O2. Figure 3d showed that the O2 con-
+centration gradually increased over the incubation time, further
+conﬁrming the CAT-like activity of Mn–ZnO. The generated O2
+was subsequently transformed O2 into ·O2
+‒ by OXD-like activ-
+ity. Accordingly, the cascade catalytic reaction will facilitate ROS
+generation within the TME. Furthermore, the POD-like activity
+was evaluated using TMB as an indicator in a PBS solution con-
+taining H2O2 (20 × 10−3 m). To eliminate interference from the
+OXD activity, the PBS solution was saturated with N2 bubbles
+to remove O2. As shown in Figure 3e, time-dependent oxTMB
+was observed after Mn–ZnO was incubated with H2O2, reveal-
+ing the outstanding POD-like catalytic capacity of Mn–ZnO. The
+ESR results displayed in Figure 3f further conﬁrmed the genera-
+tion of ·OH from Mn–ZnO. The Km and Vmax were determined
+to be 25.9 × 10−3 m and 8.35 × 10−7 m s−1 at pH 4.5 (Figure 3g),
+respectively. To summarize, Mn–ZnO can TME-special generate
+massive ·O2
+‒ through CAT and OXD-like cascade reaction and
+catalyze H2O2 into ·OH by POD-like activity, thus exhibiting high
+ROS generation eﬃciency.
+Excess endogenous GSH is recognized as an antioxidant
+that mitigates high oxidative stress in tumor cells, resulting
+in limited ROS-mediated tumor therapy outcomes.[7,45] Thus,
+we next investigated the GSH depletion ability of Mn–ZnO us-
+ing 5,5′-dithiobis (2-nitrobenzoic acid) (DTNB) as a probe, be-
+cause DTNB can recognize the sulfhydryl group with a UV–
+vis absorption peak at ≈412 nm. The GSH depletion proﬁles
+showed that the absorption intensity dramatically decreased over
+time (Figure 3h), suggesting that GSH was consumed by Mn–
+ZnO because reductive GSH was oxidized by Mn3+. Moreover,
+upon US irradiation, Mn–ZnO + US showed superior GSH-
+depletion capacity compared with Mn–ZnO alone, suggesting the
+US-enhanced GSH-consuming ability of Mn–ZnO (Figure 3i).
+This ﬁnding probably arises from the fact that the US-induced
+holes with high oxidation capacity can reduce GSH to GSSG
+(GSH/GSSG = −0.24 V),[46] which is consistent with previous
+reports.[47]
+To gain insight into the enhanced piezocatalytic eﬀect of Mn–
+ZnO under US stimulation, theoretical calculations were per-
+formed. It is well known that the piezoelectricity of hexagonal
+wurtzite ZnO arises from its noncentrally symmetric structure
+(Figure 4a).[8] It can generate a piezoelectric potential owing to
+the separation of positive and negative charge centers under an
+external force stimulus. The structural optimization diagrams
+displayed in Figure 4b show an obvious structural deformation
+in defective Mn–ZnO with O vacancies (Mn–ZnOV) after dop-
+ing with Mn. Figure 4c and d show the changes in the atomic
+bond length and bond angle in ZnO before and after the doping
+of Mn2+. For Mn–ZnO, the length of the Zn–O bond increased,
+and the bond angle of O–Zn–O decreased after the replacement
+of Zn2+ by Mn compared to the ideal ZnO. Moreover, the bond
+length and bond angle further decreased after the introduction
+of O vacancies into the Mn–ZnO. These calculations revealed
+that both Mn doping and the creation of O vacancies induced
+the lattice distortion of Mn–ZnO, which was consistent with the
+HRTEM (Figure 1g) and XRD (Figure 1h and Table 1) results.
+Considering that Mn substitution and structural reconstruction
+would create oxygen vacancies on the surface of Mn–ZnO, the
+oxygen vacancy formation energy (EOv) was calculated. It was
+found that the EOv of Mn–ZnOV was calculated to be −0.36 eV.
+This negative vacancy formation energy indicates that it is ther-
+modynamically permissible for the spontaneous generation of
+OV, which was vividly conﬁrmed by the XPS and EPR results
+(Figure 1l,m). Figure 4e–g displays the density of states (DOS)
+of ideal ZnO, defect-free Mn–ZnO, and Mn–ZnOV. As shown
+Adv. Mater. 2023, 35, 2304262
+© 2023 Wiley-VCH GmbH
+2304262 (8 of 18)
+ 15214095, 2023, 38, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304262 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Figure 3. Enzyme-mimicking activity and GSH-depletion ability of Mn–ZnO. a) UV–vis absorption spectra of oxidation of TMB by Mn–ZnO at diﬀerent
+pH (7.4, 6.5, 5.5, and 4.5). b) ESR spectra of ·O2‒ trapped by DMPO incubated with Mn–ZnO for diﬀerent times. c) Michaelis–Menten curves of Mn–ZnO
+with TMB as a substrate. Data are presented as mean ± S.D. (n = 3). d) The quantiﬁed O2 generation from ZnO and Mn–ZnO. e) Time-dependent
+oxidation of TMB by Mn–ZnO. f) Electron spin resonance (ESR) spectra of ·OH trapped by DMPO incubated with Mn–ZnO for diﬀerent times. g)
+Michaelis–Menten curves of Mn–ZnO with H2O2 as a substrate. Data are presented as mean ± S.D. (n = 3). h) GSH depletion by Mn–ZnO using
+5,5′-dithiobis (2-nitrobenzoic acid) (DTNB) as a probe. i) Time-dependent GSH depletion of Mn–ZnO with and without US irradiation (1.0 MHz, 1.0 W
+cm−2). Data are presented as mean ± S.D. (n = 3).
+in Figure 4g, Mn–ZnOV showed some new obvious defect states
+between the CB and VB compared to ideal ZnO and defect-free
+Mn–ZnO (Figure 4e,f). In this case, the sono-induced electrons
+are more easily excited to the conduction band and subsequently
+transferred to the piezocatalyst surface to participate in the re-
+dox reaction. In addition, the introduction of defects would trap
+sono-induced electrons under US irradiation, resulting in the
+promotion of the separation of electron–hole pairs. These calcu-
+lation results suggested that Mn-doping could not only induce
+lattice distortion but also form defect bands in Mn–ZnO with
+oxygen vacancies, thus enhancing the piezoresponse and sepa-
+ration of electron–hole pairs. To illustrate the enzymatic activ-
+ity mechanism, the key intermediate structures and free energy
+diagrams are shown in Figure 4h,i, respectively. As shown, the
+ideal ZnO, defect-free Mn–ZnO, and Mn–ZnOV showed com-
+parable energy changes for the ﬁrst two steps involving the ad-
+sorption of H2O2 and subsequent O–O bond cleavage. Notably,
+the subsequent deprotonation step on the Mn-doped ZnOV sur-
+face with O vacancies had a much lower required energy bar-
+rier than that of the ideal ZnO, defect-free Mn-doped ZnO sur-
+face. Mn–ZnOV exhibited the lowest energy for the generation
+of 2O* compared to the other conﬁgurations. These results in-
+dicate that the CAT-like activity of Mn–ZnOV was signiﬁcantly
+enhanced due to the formation of O vacancies, thereby supply-
+ing O2 to augment the OXD-like activity to eﬀectively generate
+ROS.
+Adv. Mater. 2023, 35, 2304262
+© 2023 Wiley-VCH GmbH
+2304262 (9 of 18)
+ 15214095, 2023, 38, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304262 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Figure 4. Density functional theory (DFT) calculations and enhanced piezocatalysis mechanism. a) Hexagonal wurtzite structure of ZnO. b) Geomet-
+rically optimized structures of ideal ZnO, Mn–ZnO, and Mn–ZnOV, as well as c,d) bond lengths (c) and bond angles (d) in the samples. e,f) Density
+of states (DOS) proﬁles of ideal ZnO (e), defect-free Mn–ZnO (f), and Mn–ZnOV (g). h) Energy diagrams of the catalytic pathways of H2O2 in three
+samples, and i) corresponding modeling surface structures of defect-free Mn–ZnO and Mn–ZnOV. j) Proposed enhanced piezocatalysis mechanism
+under US irradiation.
+Based on these theoretical calculations and experimental re-
+sults, a possible mechanism for the enhanced peizocatalytic per-
+formance of Mn-doped ZnO with oxygen vacancies was proposed
+from two aspects (Figure 4j). The piezoelectric eﬀect was en-
+hanced by the doping engineering strategy. In this study, Mn-
+doping facilitated ZnO crystal growth along c-axis orientation, re-
+markably improving the piezopotential of Mn–ZnO. Moreover,
+after Mn doping, the polarity increased owing to lattice distor-
+tion and uneven charge distribution, resulting in the generation
+of a built-in electric ﬁeld to enhance the piezoresponse. In addi-
+tion, the generated built-in electric ﬁelds can promote the sep-
+aration of sonogenerated charge carriers.[35] In contrast, O va-
+cancies can improve the free charge carrier density of piezoelec-
+tric semiconductors.[14,15b] Promoting the charge carrier density
+plays a vital role in high-eﬃciency piezocatalysis. It has been
+demonstrated that positively charged oxygen vacancies (O2+
+V
+)
+can
+function as electron donors to donate free electrons to the
+conduction band, inducing an increase in the majority carrier
+Adv. Mater. 2023, 35, 2304262
+© 2023 Wiley-VCH GmbH
+2304262 (10 of 18)
+ 15214095, 2023, 38, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304262 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+density.[15b,48] In addition, O vacancies can induce impurity states
+near the CB or VB edge, resulting in a reduced bandgap that
+makes the electrons in the VB easier to excite to the CB. More
+importantly, O vacancies can provide charge traps to capture elec-
+trons or holes to suppress the radiative recombination of US-
+induced electron–hole pairs, leading to enhanced charge separa-
+tion eﬃciency. As a result, more charge carriers reach the surface
+of the catalysts to take part in the catalytic reaction. However, ex-
+cess O vacancies can form unlocalized levels and subsequently
+serve as quenching traps to reduce the separation ratio.[48] In ad-
+dition, it is known that the construction of a porous structure
+on the surface of the catalyst can promote catalytic reaction ef-
+ﬁciency by shortening the migration distance of activated holes
+and providing more active reaction sites.[49] The unique porous
+structure of Mn–ZnO can shorten the migration distance and
+accelerate the migration speed of sound-induced holes, signiﬁ-
+cantly increasing the separation eﬃciency of the electron–hole
+pairs. In addition, the large surface area and porous structure fa-
+cilitated the eﬀective adsorption of O2 and H2O on the surface of
+Mn–ZnO, which was beneﬁcial for the following catalytic reac-
+tions.
+Considering the boosting of ROS generation triggered by US,
+we next studied the in vitro therapeutic eﬃcacy of Mn–ZnO nan-
+oclusters. First, we evaluated the cytotoxicity of Mn–ZnO on nor-
+mal L929 ﬁbroblast cells using the standard MTT assay. The ob-
+tained Mn–ZnO nanocluster showed no obvious cytotoxicity even
+at concentrations as high as 300 μg mL−1 (Figure S16, Supporting
+Information), indicating its good biocompatibility. We then eval-
+uated the anticancer eﬀect of Mn–ZnO in vitro using the MTT as-
+say. The viability of 4T1 cells in Figure 5a showed concentration-
+dependent behavior, and more cells were killed further irradi-
+ated with US, indicating the excellent piezocatalytic eﬀect of Mn–
+ZnO. The intracellular ROS generation capacity of Mn–ZnO was
+determined in 4T1 cells. Dihydroethidium (DHE) was selected
+as an indicator to distinguish the intracellular ·O2
+−species.[25c]
+A red ﬂuorescence signal was observed after 4T1 cells were in-
+cubated with Mn–ZnO (Figure 5b), whereas no ﬂuorescence ap-
+peared for the control or US group, indicating the generation of
+·O2
+−arising from the OXD activity of Mn–ZnO. Notably, the in-
+tensity signiﬁcantly increased upon US irradiation, suggesting
+massive ·O2
+‒ generation because of the piezocatalysis eﬀect of
+Mn–ZnO. Hydroxyphenyl ﬂuorescein (HPF) was used as a ﬂu-
+orescence probe to verify the production of ·OH. As shown in
+Figure 5b, the Mn–ZnO + US group showed the strongest green
+ﬂuorescence compared to the other groups, while Mn–ZnO dis-
+played moderate ﬂuorescence due to POD-like activity, suggest-
+ing that the US stimulus aggravated the generation of ·OH. To
+verify the intracellular POD-like activity of Mn–ZnO, we evalu-
+ated the intracellular H2O2 level in 4T1 cells using Amplex Red
+as a speciﬁc probe. As shown in Figure S17 (Supporting Informa-
+tion), strong red ﬂuorescence could be observed for the control
+and US irradiation groups. In contrast, after 4T1 cells incuba-
+tion with Mn–ZnO, the ﬂuorescence drastically decreased, indi-
+cating that the H2O2 level decreased because of the consumption
+by Mn–ZnO. In addition, SOSG was used as a speciﬁc indicator
+to verify the generation of 1O2. As shown in Figure S18 (Support-
+ing Information), the cells treated with Mn–ZnO + US exhibited
+obvious green ﬂuorescence signals, whereas the other groups
+showed negligible green ﬂuorescence, suggesting the generation
+of 1O2 in 4T1 cells when Mn–ZnO was irradiated with US. These
+results indicate the boosting of the ROS (i.e., ·O2
+−, ·OH, and 1O2)
+generation capacity of Mn–ZnO under US irradiation. In addi-
+tion, both AM/PI double-staining (Figure 5c,d) and ﬂow cytomet-
+ric analysis (Figure 5e,f) showed similar results. Furthermore,
+multicellular tumor spheroids more closely mimic the tumor mi-
+croenvironment within the tumor tissue.[50] Thus, we evaluated
+the antitumor eﬀect of Mn–ZnO on 3D 4T1 tumor spheroids. As
+displayed in Figure 5c, moderate red ﬂuorescence was detected
+after Mn–ZnO incubation with 4T1 tumor spheroids for 4 h. For
+the Mn–ZnO + US group, however, strong red ﬂuorescence ap-
+peared in the area of the whole cells, suggesting that the majority
+of 4T1 cells were killed. In summary, the resulting Mn–ZnO nan-
+ocluster can eﬀectively generate ·O2
+−and ·OH responses to the
+TME to kill tumor cells due to its unique OXD-like and POD-like
+activity, respectively. Moreover, the ROS generation capacity was
+remarkably enhanced by US irradiation owing to its outstanding
+piezocatalytic eﬀect. Figure 5g shows the TME images of Mn–
+ZnO at diﬀerent pH values of PBS (pH 5.5, 7.4) for various peri-
+ods. As shown, Mn–ZnO can degrade at pH 5.5, while it was rel-
+atively stable in the neutral environment, suggesting that acidic
+tumor microenvironments have contributed to the degradation
+of Mn–ZnO.
+Previous studies have reported that GSH depletion and ROS
+generation can downregulate the expression of glutathione
+peroxidase 4 (GPX4), which is a distinct characteristic of
+ferroptosis.[51] Inspired by the combined GSH depletion and
+boosted ROS generation capacity of Mn–ZnO, we expect that
+Mn–ZnO can trigger ferroptosis in tumor cells. In general, the
+overproduced endogenous GSH (≈10 × 10−3 m) in TME can dra-
+matically consume ROS and activate the expression of GPX4,[7,52]
+which is a major obstacle to tumor treatment. Figure 6a quanti-
+tatively shows intracellular GSH depletion after 4T1 cells were
+treated with Mn–ZnO. As shown, the GSH content remarkably
+decreased in a concentration-dependent manner, suggesting that
+Mn–ZnO could eﬀectively consume intracellular GSH. More-
+over, western blot results also showed that the expression of GSH-
+related GPX4 in tumor cells was signiﬁcantly down-regulated af-
+ter treatment with Mn–ZnO + US (Figure 6b,c). In addition, vita-
+min C was used GSH antidepletion agent to investigate the GPX4
+level in 4T1 cells after incubation with Mn–ZnO using a west-
+ern blot assay. Because vitamin C can protect the GSH to main-
+tain their reduced form, thus compensating for GSH depletion by
+Mn–ZnO.[53] As shown in Figure S19 (Supporting Information),
+in the presence of vitamin C (50 × 10−6 m), the GPX4 level in 4T1
+cells was much higher than that of Mn–ZnO group, indicating
+that GSH level was crucial for the inactivation of GPX4.
+Owing to the robust ROS generation and GSH depletion that
+can lead to lipid peroxidation (LPO), we next evaluated the LPO
+level in 4T1 cells using C11-BODIPY581/591 as the speciﬁc ﬂuo-
+rescence probe. When C11-BODIPY581/591 was oxidized by LPO,
+the ﬂuorescence emission shifted from 590 nm (red) to 510 nm
+(green). As shown in Figure 6d, Mn–ZnO + US group exhib-
+ited the strongest green ﬂuorescence signal than that of the other
+groups, demonstrating the desired ultrasound-enhanced LPO ac-
+cumulation and occurrence of ferroptosis. In addition, the in-
+tracellular LPO level was veriﬁed using Liperﬂuo as a probe
+(Figure 6d, middle). As shown, the LPO level in the Mn–ZnO
++ US group was much higher than that in the Mn–ZnO group,
+Adv. Mater. 2023, 35, 2304262
+© 2023 Wiley-VCH GmbH
+2304262 (11 of 18)
+ 15214095, 2023, 38, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304262 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Figure 5. In vitro piezocatalytic performance of Mn–ZnO. a) 4T1 cells viability with diﬀerent treatments. b) Intracellular level of ·O2‒ and ·OH using
+dihydroethidium (DHE) and hydroxyphenyl ﬂuorescein (HPF) as probes, respectively. c) Confocal laser scanning microscopy (CLSM) images of 3D 4T1
+tumor spheres co-stained with AM/PI after diﬀerent treatments. d) Live/dead staining of 4T1 cells after coincubation with Mn–ZnO (100 μg mL−1) for
+4 h followed by various treatments. e,f) Flow cytometry analysis of apoptosis in 4T1 cells with diﬀerent treatments. Data are presented as mean ± S. D.
+(n = 5). g) TEM images of Mn–ZnO nanoclusters degraded after treatment at diﬀerent pH values.
+conﬁrming the high-eﬃciency accumulation of LPO by ultra-
+sound irradiation. The eﬀective accumulation of LPO in tumor
+cells was probably due to the remarkable GSH depletion and ROS
+generation ability (Figure 6d, bottom) of Mn–ZnO under US irra-
+diation. Because ROS can damage the endosomal membrane,[54]
+an acridine orange (AO) staining assay was performed CLSM
+images in Figure 6e showed that the red ﬂuorescence signal
+in 4T1 cells treated with Mn–ZnO decreased dramatically, re-
+vealing the incompleteness of the endosomal membrane. More-
+over, a weaker red ﬂuorescence was observed after further US
+Adv. Mater. 2023, 35, 2304262
+© 2023 Wiley-VCH GmbH
+2304262 (12 of 18)
+ 15214095, 2023, 38, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304262 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Figure 6. In vitro ferroptosis. a) GSH levels in 4T1 cells at various concentrations of Mn–ZnO. Data are presented as mean ± S. D. (n = 5). b,c) Western
+blot analysis of GPX4 protein expression with diﬀerent treatments. Data are presented as mean ± S. D. (n = 3). d) Confocal laser scanning microscopy
+images of 4T1 cells stained with C11-BODIPY581/591, lipid peroxidation (LPO), and 2,7-dichloroﬂuorescein diacetate (DCFH-DA), e) acridine orange
+(AO), and f) JC-1 after diﬀerent treatments. g) Bio-TEM images of 4T1 cells after diﬀerent treatments. h) Cell viabilities of 4T1 cells treated by Mn–ZnO
+under US stimulation and diﬀerent concentrations of ferrostatin-1. Data are presented as mean ± S. D. (n = 5).
+Adv. Mater. 2023, 35, 2304262
+© 2023 Wiley-VCH GmbH
+2304262 (13 of 18)
+ 15214095, 2023, 38, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304262 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+irradiation, indicating that the integrity of the endosomal mem-
+brane was further damaged. It is well known that ferroptosis can
+cause oxidative injury to mitochondria and lead to the loss of
+membrane potential. A JC-1 staining method was used to moni-
+tor mitochondrial dysfunction.[55] As shown in Figure 6f, a weak-
+ened red ﬂuorescence signal associated with a strengthen green
+ﬂuorescence appeared in the Mn–ZnO groups, suggesting mito-
+chondrial damage. In the Mn–ZnO + US group, negligible red
+ﬂuorescence, and the strongest green ﬂuorescence were observed
+under US irradiation in comparison to the other groups, indicat-
+ing maximum mitochondrial injury. It has been reported that fer-
+roptosis can lead to the shrinking of mitochondrial membranes
+and even the disappearance of mitochondrial cristae.[56] Thus, we
+directly visualized the changes in mitochondrial morphology us-
+ing Bio-TEM. An obvious morphological change appeared after
+4T1 cells were treated with Mn–ZnO + US (Figure 6g). Perfect
+linear mitochondria and the cristate were observed in the con-
+trol group, indicating that the integrity of mitochondrial function
+was not disturbed. In contrast, for the Mn–ZnO + US group, the
+typical ferroptosis-induced characteristic of mitochondrial mor-
+phology, including the mitochondria, was shrunk or ruptured,
+the cristate reduced or disappeared, and the membrane density
+increased, indicating remarkable damage to the mitochondria.
+To gain deeper insight into the cell death pathway, the ferropto-
+sis inhibitor ferrostatin-1 (Fer-1) was preincubated with 4T1 cells
+before diﬀerent treatments. MTT assay results showed that Fer-1
+eﬀectively increase cell viability, indicating that ferroptosis was
+indeed induced by Mn–ZnO + US treatment (Figure 6h). Ac-
+DEVE-CHO, a typical apoptosis inhibitor, was used to evaluate
+the contribution of apoptosis. As shown, 4T1 cell death was some-
+what inhibited after the addition of Ac-DEVE-CHO (Figure S20,
+Supporting Information), suggesting that Mn–ZnO + US could
+also induce apoptosis due to the generation of ROS.[52]
+Mn(II)-based nanoparticles are generally regarded as eﬀec-
+tive magnetic resonance imaging (MRI) contrast agents owing
+to their unpaired electrons and long relaxation times.[57] As ex-
+pected, Mn–ZnO has potential as an MRI agent for imaging-
+guided cancer therapy. The magnetization (M) vs magnetic ﬁeld
+(H) curve in Figure 7a reveals the ferromagnetic feature of Mn–
+ZnO at room temperature. As displayed in Figure 7b, Mn–
+ZnO showed bright MR images and concentration-dependent
+T1-weighted MR signals, and the longitudinal relaxation (r1) was
+calculated to be 5.07 mm‒1 s‒1 in PBS solution (pH 7.4). It was
+reported that evolved Mn2+ from manganese particles could en-
+hance the MR signal (or molar relaxivities) due to the enhance-
+ment of water contact with manganese.[58] Based on acid-induced
+biodegradation in an acidic TME, Mn–ZnO is expected to possess
+pH-responsive T1-weighted MR imaging capacity with high lon-
+gitudinal relaxivity because of the release of Mn2+ (Figure S21,
+Supporting Information). To verify our hypothesis, we next in-
+vestigated the pH-responsive MRI contrast performance of Mn–
+ZnO in PBS solutions with various pH values. As shown in
+Figure 7c, at pH 5.5, the r1 value of Mn–ZnO (18.28 mm‒1 s‒1)
+was much higher than that at pH 7.4 (r1 = 5.07 mm‒1 s‒1) due to
+Mn2+ release, indicating that Mn–ZnO has potential as a TME-
+responsive T1-weighted MR imaging contrast agent. To evalu-
+ate the MRI contrast ability in vivo, Mn–ZnO was intravenously
+injected into tumor-bearing BALB/c mice, and the changes in
+MRI signals were monitored using an MRI system. As shown in
+Figure 7e, the tumor area (white cycle) gradually became bright
+over time, and the brightest signal appeared at 12 h postinjec-
+tion (Figure 7d,e), suggesting the eﬃcient tumor accumulation
+capacity of Mn–ZnO. Therefore, the TME-responsive MRI con-
+trast eﬀect of Mn–ZnO makes it a potentially highly eﬀective T1-
+weighted MRI agent for monitoring the therapeutic process in
+vivo. To assess the tumor accumulation and biodistribution of
+Mn–ZnO, Mn–ZnO nanoclusters were labeled with Cy5 and in-
+travenously injected into tumor-bearing mice via a vein. As dis-
+played in Figure 7f,g, the ﬂuorescence intensity of the tumor site
+gradually increased over time and reached a peak at 12 h post-
+injection, indicating that Mn–ZnO could eﬀectively accumulate
+in the tumor. Moreover, ex vivo ﬂuorescence imaging of the tu-
+mor and main organs (heart, liver, spleen, lung, and kidney) at
+12 h post-injection showed that the tumor displayed a strong ﬂu-
+orescence signal (Figure 7h), suggesting good tumor retention
+of Mn–ZnO. In addition, the bio-distribution results (Figure 7i)
+further revealed the good tumor uptake ability of Mn–ZnO pos-
+sibly due to the permeability and retention (EPR) eﬀect and pro-
+longed blood circulation (Figure 7j). Moreover, a high content of
+Zn was found in the urine after intravenous injection of Mn–
+ZnO (Figure 7k), indicating that Mn–ZnO was mainly excreted
+through kidney metabolism possibly because it can degrade into
+smaller nanoparticles.
+Given the outstanding therapeutic outcome in vitro, we further
+investigated the antitumor eﬀect in tumor-bearing BALB/c mice.
+First, we evaluated the hemolysis of Mn–ZnO in vitro (Figure
+S22, Supporting Information), and the result revealed that no ob-
+vious hemolysis occurred, suggesting the good blood safety of
+Mn–ZnO administered by intravenous injection. For the in vivo
+antitumor studies, 4T1-tumor-bearing BALB/c mice with diﬀer-
+ent treatments were randomly divided into four groups (n = 5):
+1) saline, 2) US, (3) Mn–ZnO (dosage, 15 mg kg−1), and 4) Mn–
+ZnO + US (dosage, 15 mg kg−1) (Figure 8a). For the US and Mn–
+ZnO + US groups, the tumor location was irradiated with US
+(1.0 W cm‒2, 1.0 MHz) for 3 min at 12 h post-injection. The body
+weights and tumor volumes of the mice were recorded every two
+days throughout the 14 days treatment period. As displayed in
+Figure 8b–d, the tumors in the saline and US treatment groups
+showed rapid growth, suggesting that US irradiation had a neg-
+ligible inﬂuence on tumor inhibition. According to the Mn–ZnO
+group (Figure 8e), a moderate tumor inhibition rate (50.1%) was
+observed. More importantly, the tumor growth was drastically
+suppressed in the Mn–ZnO + US group, and the inhibition rate
+(94.5%)was much higher than those of other groups (Figure 8e).
+The superior therapeutic outcome of Mn–ZnO is possibly due to
+the GSH-depleted SDT and US-enhanced ferroptosis in tumors
+by Mn–ZnO. In addition, no obvious weight loss was observed
+for the control or treatment groups, suggesting no obvious ad-
+verse eﬀect of Mn–ZnO nanoclusters (Figure 8f). Hematological
+and blood biochemical analysis results revealed no signiﬁcant bi-
+ological toxicity of Mn–ZnO (Figure 8g). To verify the antitumor
+eﬀect of Mn–ZnO at the histological level, a tumor specimen was
+randomly selected from each group for H&E and TUNEL stain-
+ing. As shown in Figure 8h, the tumors treated with Mn–ZnO
++ US showed the most severe damage compared to the other
+groups. Moreover, the expression level of GPX4 was detected by
+immunostaining. The Mn–ZnO + US group showed the low-
+est GPX4 expression (Figure 8i), indicating the occurrence of
+Adv. Mater. 2023, 35, 2304262
+© 2023 Wiley-VCH GmbH
+2304262 (14 of 18)
+ 15214095, 2023, 38, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304262 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Figure 7. In vitro and in vivo imaging. a) Magnetic hysteresis loop of Mn–ZnO at room temperature. b) Magnetic resonance (MR) images and c) T1
+relaxation rate (r1) of the Mn–ZnO under diﬀerent pH conditions (pH = 7.4, 6.5, and 5.5) at diﬀerent Mn concentrations employed (0.1 × 10−3, 0.2 ×
+10−3, 0.4 × 10−3, 0.6 × 10−3, and 0.8 × 10−3 m). d) Quantitative T1-weighted MR signal variations of the tumor area from (e). Data are presented as mean
+± S.D. (n = 3). e) T1-weighted MR images of mice at diﬀerent times post-injection of Mn–ZnO (3, 6, 12, and 24 h) intravenously. f) In vivo ﬂuorescence
+images of 4T1-tumor-bearing mice at diﬀerent time points (3, 6, 12, 24, and 48 h) after intravenous injection of Mn–ZnO. g) Quantitative analysis of
+ﬂuorescence intensity per unit tumor area from (f). Data are presented as mean ± S.D. (n = 3). h) Ex vivo ﬂuorescence imaging of the tumor and the
+major organs. i) Biodistribution of Mn–ZnO in major organs and tumor tissues at diﬀerent times of post-injection. Data are presented as mean ± S.D.
+(n = 3). j) Blood circulation after the injection of Mn–ZnO intravenously. Data are presented as mean ± S.D. (n = 3). k) Zn content in collected urine
+and feces. Data are presented as mean ± S.D. (n = 3).
+Adv. Mater. 2023, 35, 2304262
+© 2023 Wiley-VCH GmbH
+2304262 (15 of 18)
+ 15214095, 2023, 38, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304262 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Figure 8. Antitumor performance of Mn–ZnO in vivo. a) Therapeutic procedure for 4T1-tumor-bearing mice. b) Tumor volumes of the mice and c) the
+corresponding excised tumors of each group on the 14th day in various treatment groups. Data are presented as mean ± S.D. (n = 5). d) Average
+tumor weight and e) the tumor inhibition rate at the end of diﬀerent treatments of control, US, Mn–ZnO, and Mn–ZnO + US. Data are presented as
+mean ± S.D. (n = 5). f) Body weights of the mice in various treatment groups. Data are presented as mean ± S.D. (n = 5). g) Blood biochemistry and
+hematological parameters of the healthy mice after diﬀerent treatment days (control, 1 day, 7th day, and 21th day). h) H&E and TUNEL staining images
+of tumor after diﬀerent containing control, US, Mn–ZnO, and Mn–ZnO + US. i) Immunohistochemical assessment of the expression levels of GPX4
+from the representative tumor tissues in various treatment groups. Student’s t-test, *p < 0.05, **p < 0.01, ***p < 0.001.
+Adv. Mater. 2023, 35, 2304262
+© 2023 Wiley-VCH GmbH
+2304262 (16 of 18)
+ 15214095, 2023, 38, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304262 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+ferroptosis in tumors. To study the biosafety of Mn–ZnO in
+healthy mice, the major organs (heart, liver, spleen, lung, and kid-
+ney) were stained with H&E. As shown in Figure S23 (Support-
+ing Information), no obvious pathological abnormalities were ob-
+served, demonstrating the good biocompatibility of Mn–ZnO.
+3. Conclusions
+We have presented for the ﬁrst time a biodegradable, mesoporous
+Mn-doped ZnO nanocluster with enhanced piezoresponse via a
+facile doping engineering strategy for high-eﬃciency piezocat-
+alytic cancer therapy and ferroptosis. Experimental and DFT cal-
+culation results showed that the generated built-in electric ﬁeld
+was caused by lattice distortion and oxygen vacancy owing to the
+Mn-doping. The built-in electric ﬁeld not only promoted the sep-
+aration of sono-induced electron–hole pairs but also increased
+the carrier density, thus synergistically enhancing the generation
+of massive ROS under US irradiation. The Mn–ZnO nanoclus-
+ter also exhibited TEM-responsive multienzyme (CAT, OXD, and
+POD)-like activity, which can further generate ·O2
+−and ·OH
+within the TME. Furthermore, Mn–ZnO showed sono-enhanced
+GSH depletion ability, which signiﬁcantly suppressed the expres-
+sion of GPX4 in tumor cells. Owing to the boost in ROS gener-
+ation and GSH depletion ability under US irradiation, Mn–ZnO
+can signiﬁcantly accelerate the accumulation of LPO and inac-
+tivate GPX4 to induce ferroptosis. Moreover, Mn–ZnO showed
+excellent biocompatibility because it can degrade and be excreted
+from the body to avoid long-term biotoxicity. Our ﬁndings pro-
+vide the ﬁrst stone for the development of piezoelectric sonosen-
+sitizer with good biosafety for a combined enhanced piezocat-
+alytic cancer therapy and ferroptosis.
+4. Experimental Section
+Synthesis of Mn–ZnO and ZnO:
+Mn–ZnO nanoclusters were synthe-
+sized via a facile one-step high-temperature decomposition of metal salts
+at 220 °C. Zn(NO3)2·6H2O (1.8 g) was dispersed in diethylene glycol
+(DEG, 150 mL). Subsequently, 30 μL of Mn(NO3)2 solution (50 wt% in
+H2O) was added to the above solution and stirred for 15 min at 60 °C to ob-
+tain a homogeneously mixed solution. The solution was heated at 220 °C
+(2 °C min−1) under stirring for 12 h. After centrifugation (10 000 rpm
+min−1, 10 min), the collected solid was sequentially washed with dis-
+tilled water and ethanol. After drying at 60 °C for 6 h in a vacuum oven,
+brown powdered Mn–ZnO was obtained. Diﬀerent Mn-doping content
+ZnOs were obtained using the same procedure by varying the Mn/Zn mo-
+lar ratio. The samples are denoted as x%-Mn–ZnO (x = 0, 1, 2, 4, and
+8) according to the Mn doping ratio (the Mn content was determined by
+ICP) For comparison, bare ZnO was also synthesized under the same con-
+ditions without the addition of Mn.
+Supporting Information
+Supporting Information is available from the Wiley Online Library or from
+the author.
+Acknowledgements
+This work was ﬁnancial supported by the National Natural Science Foun-
+dation of China (51972076, U22A20347, and 51929201), Heilongjiang
+Provincial Natural Science Foundation of China (JQ2022E001), Natural
+Science Foundation of Shandong Province (ZR2020ZD42), and the Fun-
+damental Research Funds for the Central Universities are greatly acknowl-
+edged.
+Note: The order of the aﬃliations in the pdf version was revised on
+September 21, 2023, after initial publication online.
+Conﬂict of Interest
+The authors declare no conﬂict of interest.
+Author Contributions
+B.T. and R.T. contributed equally to this work. The manuscript was written
+through contributions of all authors. All authors have given approval to
+the ﬁnal version of the manuscript.
+Data Availability Statement
+The data that support the ﬁndings of this study are available from the cor-
+responding author upon reasonable request.
+Keywords
+doping engineering, enzymatic activity, ferroptosis, oxygen vacancy, piezo-
+catalysis
+Received: May 7, 2023
+Revised: July 2, 2023
+Published online: August 15, 2023
+[1] a) X. Wang, X. Zhong, Z. Liu, L. Cheng, Nano Today 2020, 35, 100946;
+b) M. Li, Y. Shao, J. H. Kim, Z. Pu, X. Zhao, H. Huang, T. Xiong, Y.
+Kang, G. Li, K. Shao, J. Fan, J. W. Foley, J. S. Kim, X. Peng, J. Am.
+Chem. Soc. 2020, 142, 5380; c) H. Lin, S. S. Gao, C. Dai, Y. Chen, J.
+L. Shi, J. Am. Chem. Soc. 2017, 139, 16235; d) L. S. Lin, T. Huang, J.
+Song, X. Y. Ou, Z. Wang, H. Deng, R. Tian, Y. Liu, J. F. Wang, Y. Liu,
+G. Yu, Z. Zhou, S. Wang, G. Niu, H. H. Yang, X. Chen, J. Am. Chem.
+Soc. 2019, 141, 9937.
+[2] a) X. Wang, X. Zhong, L. Bai, J. Xu, F. Gong, Z. Dong, Z. Yang, Z.
+Zeng, Z. Liu, L. Cheng, J. Am. Chem. Soc. 2020, 142, 6527; b) S. Son,
+J. H. Kim, X. Wang, C. Zhang, S. A. Yoon, J. Shin, A. Sharma, M. H.
+Lee, L. Cheng, J. Wu, J. S. Kim, Chem. Soc. Rev. 2020, 49, 3244; c) F.
+Gong, L. Cheng, N. Yang, Y. Gong, Y. Ni, S. Bai, X. Wang, M. Chen,
+Q. Chen, Z. Liu, Nat. Commun. 2020, 11, 3712; d) F. Gong, L. Cheng,
+N. Yang, O. Betzer, L. Feng, Q. Zhou, Y. Li, R. Chen, R. Popovtzer, Z.
+Liu, Adv. Mater. 2019, 31, 1900730; e) X. Pan, W. Wang, Z. Huang, S.
+Liu, J. Guo, F. Zhang, H. Yuan, X. Li, F. Liu, H. Liu, Angew. Chem., Int.
+Ed. 2020, 59, 13557.
+[3] a) B. Yang, J. Shi, J. Am. Chem. Soc. 2020, 142, 21775; b) C. H. Liu,
+D. D. Wang, S. Y. Zhang, Y. R. Cheng, F. Yang, Y. Xing, T. L. Xu, H. F.
+Dong, X. J. Zhang, ACS Nano 2019, 13, 4267.
+[4] a) H. Zhou, J. X. Ge, Q. Q. Miao, R. Zhu, L. Wen, J. F. Zeng, M. Y. Gao,
+Bioconjugate Chem. 2020, 31, 315; b) M. Yu, J. Zheng, ACS Nano 2015,
+9, 6655.
+[5] a) P. Zhu, Y. Chen, J. Shi, Adv. Mater. 2020, 32, 2001976; b) P. Wang,
+Q. Tang, L. Zhang, M. Xu, L. Sun, S. Sun, J. Zhang, S. Wang, X. Liang,
+ACS Nano 2021, 15, 11326; c) Z. Yang, M. Yuan, B. Liu, W. Zhang, A.
+Maleki, B. Guo, P. Ma, Z. Cheng, J. Lin, Angew. Chem., Int. Ed. 2022,
+61, e202209484.
+Adv. Mater. 2023, 35, 2304262
+© 2023 Wiley-VCH GmbH
+2304262 (17 of 18)
+ 15214095, 2023, 38, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304262 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+[6] S. Liang, X. Deng, P. a. Ma, Z. Cheng, J. Lin, Adv. Mater. 2020, 32,
+2003214.
+[7] S. Dong, Y. Dong, T. Jia, S. Liu, J. Liu, D. Yang, F. He, S. Gai, P. Yang,
+J. Lin, Adv. Mater. 2020, 32, 2002439.
+[8] Q. Xu, X. Gao, S. Zhao, Y. N. Liu, D. Zhang, K. Zhou, H. Khanbareh,
+W. Chen, Y. Zhang, C. Bowen, Adv. Mater. 2021, 33, 2008452.
+[9] a) Y. Dong, S. Dong, B. Liu, C. Yu, J. Liu, D. Yang, P. Yang, J. Lin, Adv.
+Mater. 2021, 33, 2106838; b) Z. Liu, X. Yu, L. Li, Chin. J. Catal. 2020,
+41, 534.
+[10] J. Ma, X. Xiong, D. Wu, Y. Wang, C. Ban, Y. Feng, J. Meng, X. Gao, J.
+Dai, G. Han, L. Gan, X. Zhou, Adv. Mater. 2023, 35, 2300027.
+[11] a) Z. Li, T. Zhang, F. Fan, F. Gao, H. Ji, L. Yang, J. Phys. Chem. Lett.
+2020, 11, 12281238; b) L. Yang, B. Tian, Y. Xie, S. Dong, M. Yang, S.
+Gai, J. Lin, Adv. Mater. 2023.
+[12] Q. Truong Hoang, V. Ravichandran, T. G. Nguyen Cao, J. H. Kang, Y.
+T. Ko, T. I. Lee, M. S. Shim, Chem. Eng. J. 2022, 435, 135039.
+[13] S. Liang, B. Liu, X. Xiao, M. Yuan, L. Yang, P. a. Ma, Z. Cheng, J. Lin,
+Adv. Mater. 2021, 33, 2101467.
+[14] S. Tu, Y. Guo, Y. Zhang, C. Hu, T. Zhang, T. Ma, H. Huang, Adv. Funct.
+Mater. 2020, 30, 2005158.
+[15] a) B. Zhang, J. Shan, X. Wang, Y. Hu, Y. Li, Small 2022, 18, 2200173;
+b) S. Wang, T. He, P. Chen, A. Du, K. Ostrikov, W. Huang, L. Wang,
+Adv. Mater. 2020, 32, 2001385.
+[16] S. Selim, E. Pastor, M. García-Tecedor, M. R. Morris, L. Francàs, M.
+Sachs, B. Moss, S. Corby, C. A. Mesa, S. Gimenez, A. Kaﬁzas, A. A.
+Bakulin, J. R. Durrant, J. Am. Chem. Soc. 2019, 141, 18791.
+[17] a) S. Dong, Y. Dong, B. Liu, J. Liu, S. Liu, Z. Zhao, W. Li, B. Tian, R.
+Zhao, F. He, S. Gai, Y. Xie, P. Yang, Y. Zhao, Adv. Mater. 2021, 34,
+2107054; b) B. Yu, W. Wang, W. Sun, C. Jiang, L. Lu, J. Am. Chem. Soc.
+2021, 143, 8855; c) D. D. Wang, H. H. Wu, C. L. Wang, L. Gu, H. Z.
+Chen, D. Jana, L. L. Feng, J. W. Liu, X. Y. Wang, P. P. Xu, Z. Guo, Q. W.
+Chen, Y. L. Zhao, Angew. Chem., Int. Ed. 2021, 60, 3001.
+[18] S. Dong, Y. Dong, Z. Zhao, J. Liu, S. Liu, L. Feng, F. He, S. Gai, Y. Xie,
+P. Yang, J. Am. Chem. Soc. 2023, 145, 9488.
+[19] a) X. Meng, J. Deng, F. Liu, T. Guo, M. Liu, P. Dai, A. Fan, Z. Wang, Y.
+Zhao, Nano Lett. 2019, 19, 7866; b) C. You, X. Li, D. Wang, H. Chen,
+L. Liang, Y. Chen, Y. Zhao, H. Xiang, Angew. Chem., Int. Ed. 2022, 61,
+e202210174.
+[20] Z. Xiao, L. Zhang, V. L. Colvin, Q. Zhang, G. Bao, Ind. Eng. Chem. Res.
+2022, 61, 7613.
+[21] a) Y. Liu, J. Wu, Y. Jin, W. Zhen, Y. Wang, J. Liu, L. Jin, S. Zhang, Y. Zhao,
+S. Song, Y. Yang, H. Zhang, Adv. Funct. Mater. 2019, 29, 1904678;
+b) G. Guan, C. Zhang, H. Liu, Y. Wang, Z. Dong, C. Lu, B. Nan, R.
+Yue, X. Yin, X.-B. Zhang, G. Song, Angew. Chem., Int. Ed. 2022, 61,
+e202117229.
+[22] a) J. Ma, J. Ren, Y. Jia, Z. Wu, L. Chen, N. O. Haugen, H. Huang, Y.
+Liu, Nano Energy 2019, 62, 376; b) D. Xiang, Z. Liu, M. Wu, H. Liu,
+X. Zhang, Z. Wang, Z. L. Wang, L. Li, Small 2020, 16, 1907603; c) M.
+Laurenti, N. Garino, G. Canavese, S. Hernandéz, V. Cauda, ACS Appl.
+Mater. Interfaces 2020, 12, 25798.
+[23] M. Laurenti, G. Canavese, A. Sacco, M. Fontana, K. Bejtka, M.
+Castellino, C. F. Pirri, V. Cauda, Adv. Mater. 2015, 27, 4218.
+[24] a) D. X. Ye, Y. Y. Ma, W. Zhao, H. M. Cao, J. L. Kong, H. M. Xiong,
+H. Möhwald, ACS Nano 2016, 10, 4294; b) S. Afroz, H. Medhi, S.
+Maity, G. Minhas, S. Battu, J. Giddaluru, K. Kumar, P. Paik, N. Khan,
+Nanoscale 2017, 9, 14641; c) H. J. Kwon, K. Shin, M. Soh, H. Chang,
+J. Kim, J. Lee, G. Ko, B. H. Kim, D. Kim, T. Hyeon, Adv. Mater. 2018,
+30, 24.
+[25] a) R. Guo, X. Hu, X. Chen, Z. Bi, J. Wang, W. Pan, Small 2023, 19,
+2207767; b) J. X. Jian, V. Jokubavicius, M. Syväjärvi, R. Yakimova, J.
+Sun, ACS Nano 2021, 15, 5502; c) B. Tian, S. Liu, C. Yu, S. Liu, S.
+Dong, L. Feng, N. Hu, P. Yang, Adv. Funct. Mater. 2023, 2300818.
+[26] B. Tian, S. Liu, S. Wu, W. Lu, D. Wang, L. Jin, B. Hu, K. Li, Z. Wang, Z.
+Quan, Colloids Surf., B 2017, 154, 287.
+[27] N. Ali, B. Singh, V. A R, S. Lal, C. S. Yadav, K. Tarafder, S. Ghosh, J.
+Phys. Chem. C 2021, 125, 7734.
+[28] C. Yu, J. He, M. Tan, Y. Hou, H. Zeng, C. Liu, H. Meng, Y. Su, L. Qiao,
+T. Lookman, Y. Bai, Adv. Funct. Mater. 2022, 32, 2209365.
+[29] F. Ali, W. Raza, X. Li, H. Gul, K. H. Kim, Nano Energy 2019, 57, 879.
+[30] a) K. Ma, G. Qi, B. Wang, T. Yu, Y. Zhang, H. Li, S. A. Kitte, Y. Jin,
+Nano Energy 2021, 87, 106208; b) X. Xue, W. Zang, P. Deng, Q. Wang,
+L. Xing, Y. Zhang, Z. L. Wang, Nano Energy 2015, 13, 414.
+[31] C. Cao, X. Xie, Y. Zeng, S. Shi, G. Wang, L. Yang, C. Z. Wang, S. Lin,
+Nano Energy 2019, 61, 550.
+[32] W. Tian, J. Han, L. Wan, N. Li, D. Chen, Q. Xu, H. Li, J. Lu, Nano Energy
+2023, 107, 108165.
+[33] S. Goel, N. Sinha, B. Kumar, Physica E 2019, 105, 29.
+[34] S. Goel, B. Kumar, J. Alloys Compd. 2020, 816, 152491.
+[35] M. Wang, B. Wang, F. Huang, Z. Lin, Angew. Chem., Int. Ed. 2019, 58,
+7526.
+[36] S. Zhan, H. Zhang, X. Mi, Y. Zhao, C. Hu, L. Lyu, Environ. Sci. Technol.
+2020, 54, 8333.
+[37] Y. Wen, J. Chen, X. Gao, W. Liu, H. Che, B. Liu, Y. Ao, Nano Energy
+2023, 107, 108173.
+[38] L. Kong, G. Fang, Z. Fang, Y. Zou, F. Zhu, D. Zhou, J. Zhan, Chem.
+Eng. J. 2021, 416, 128996.
+[39] a) X. B. Wang, C. Song, D. M. Li, K. W. Geng, F. Zeng, F. Pan, Appl.
+Surf. Sci. 2006, 253, 1639; b) M. Li, Y. Yang, Y. Ling, W. Qiu, F. Wang, T.
+Liu, Y. Song, X. Liu, P. Fang, Y. Tong, Y. Li, Nano Lett. 2017, 17, 2490.
+[40] S. Chen, P. Zhu, L. Mao, W. Wu, H. Lin, D. Xu, X. Lu, J. Shi, Adv. Mater.
+2023, 35, 2208256.
+[41] W. Shen, T. Hu, X. Liu, J. Zha, F. Meng, Z. Wu, Z. Cui, Y. Yang, H. Li,
+Q. Zhang, L. Gu, R. Liang, C. Tan, Nat. Commun. 2022, 13, 3384.
+[42] G. Wang, Y. Ling, X. Lu, F. Qian, Y. Tong, J. Z. Zhang, V. Lordi, C. Rocha
+Leao, Y. Li, J. Phys. Chem. C 2013, 117, 10957.
+[43] S. Feng, T. Wang, B. Liu, C. Hu, L. Li, Z. J. Zhao, J. Gong, Angew.
+Chem., Int. Ed. 2020, 59, 2044.
+[44] a) Y. Nosaka, T. Daimon, A. Y. Nosaka, Y. Murakami, Phys. Chem.
+Chem. Phys. 2004, 6, 2917; b) Y. Nosaka, A. Y. Nosaka, Chem. Rev.
+2017, 117, 11302.
+[45] L. Teng, X. Han, Y. Liu, C. Lu, B. Yin, S. Huan, X. Yin, X. B. Zhang, G.
+Song, Angew. Chem., Int. Ed. 2021, 60, 26142.
+[46] K. Bian, W. Yang, Y. Xu, W. Zeng, H. Wang, H. Liang, T. Cui, Z. Wang,
+B. Zhang, Small 2022, 18, 2202921.
+[47] M. Yuan, S. Liang, L. Yang, F. Li, B. Liu, C. Yang, Z. Yang, Y. Bian, P.
+Ma, Z. Cheng, J. Lin, Adv. Mater. 2023, 35, 2209589.
+[48] Y. C. Wang, J. M. Wu, Adv. Funct. Mater. 2020, 30, 1907619.
+[49] a) Y. Liu, L. Liang, C. Xiao, X. Hua, Z. Li, B. Pan, Y. Xie, Adv. Energy
+Mater. 2016, 6, 1600437; b) Z. Shen, Z. Luo, J. Chen, Y. Li, Adv. Funct.
+Mater. 2023, 33, 2213935.
+[50] H. Ma, Q. Jiang, S. Han, Y. Wu, J. C. Tomshine, D. Wang, Y. Gan, G.
+Zou, X. J. Liang, Mol. Imaging 2012, 11, 487.
+[51] L. Ke, F. Wei, L. Xie, J. Karges, Y. Chen, L. Ji, H. Chao, Angew. Chem.,
+Int. Ed. 2022, 61, e202205429.
+[52] C. Wu, Z. Liu, Z. Chen, D. Xu, L. Chen, H. Lin, J. Shi, Sci. Adv. 2021,
+7, eabj8833.
+[53] F. Shang, M. Lu, E. Dudek, J. Reddan, A. Taylor, Free Radical Biol. Med.
+2003, 34, 521.
+[54] Z. Dong, P. Liang, G. Guan, B. Yin, Y. Wang, R. Yue, X. Zhang, G. Song,
+Angew. Chem., Int. Ed. 2022, 61, e202206074.
+[55] Z. Liu, S. Liu, B. Liu, Y. Bian, M. Yuan, C. Yang, Q. Meng, C. Chen, P.
+Ma, J. Lin, Small 2023, 2207825.
+[56] D. Huang, H. Huang, M. Li, J. Fan, W. Sun, J. Du, S. Long, X. Peng,
+Adv. Funct. Mater. 2022, 32, 2208105.
+[57] X. Qian, X. Han, L. Yu, T. Xu, Y. Chen, Adv. Funct. Mater. 2019, 20,
+1907066.
+[58] M. F. Bennewitz, T. L. Lobo, M. K. Nkansah, G. Ulas, G. W. Brudvig,
+E. M. Shapiro, ACS Nano 2011, 5, 3438.
+Adv. Mater. 2023, 35, 2304262
+© 2023 Wiley-VCH GmbH
+2304262 (18 of 18)
+ 15214095, 2023, 38, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202304262 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

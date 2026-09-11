@@ -1,0 +1,1644 @@
+Article
+https://doi.org/10.1038/s41467-026-70930-1
+Copper single-atom nanozyme with
+intelligent capture and photo-enhanced
+activity for controlling plant bacterial
+diseases
+Hao Jiang1,2,3, Yue Xing1, Zhifeng Ma2, Guangjin Fan2, Zhongwei Liu3, Song Yang1 &
+Lin Cai
+2
+Nanozymes hold promise for controlling plant bacterial diseases, but con-
+ventional ones suffer from low bacterial afﬁnity, inefﬁcient enzyme-like
+activity, and thus poor antibacterial efﬁcacy. Here, we report a photo-
+enhanced copper single-atom (CuSA)-loaded ZnS@MoS2 nanozyme with high
+afﬁnity and efﬁcient peroxidase (POD)-like activity. CuSA-loaded ZnS@MoS2
+exhibits higher efﬁcacies against bacterial speck and bacterial wilt diseases in
+tomatoes, surpassing the commercial thiodiazole copper by 13.33% and
+52.77%, respectively. Mechanistically, it catalyzes H2O2 to generate toxic
+hydroxyl radicals (·OH) via POD-like activity; near-infrared irradiation boosts
+this activity by lowering activation energy and accelerating mass transfer.
+Density functional theory (DFT) calculations reveal that CuSA-loaded
+ZnS@MoS2 captures bacteria via Metal-O-P bonds on cell surfaces, reducing
+·OH short-range quenching to enhance efﬁcacy. This SA nanozyme design,
+integrating intelligent capture and photo-enhanced activity, offers an insight
+for plant bacterial disease control.
+Plant bacterial diseases cause substantial annual crop yield losses,
+posing a severe threat to global food security1–3. For instance, Pseu-
+domonas syringae pv. tomato DC3000 (Pst. DC3000) and Ralstonia
+solanacearum (R. solanacearum) are major pathogens limiting pro-
+duction of Solanaceae crops. The bacterial speck disease caused by Pst.
+DC3000 reduces the quality of tomatoes, resulting in a 75% reduction
+in their output, signiﬁcantly impacting the global economy4. Similarly,
+R. solanacearum causes bacterial wilt disease, leading to yield reduc-
+tions of 0–91% in tomato, 33–90% in potato, 10–30% in tobacco, and
+80–100% in banana5. While agrochemicals are pivotal for controlling
+plant bacterial diseases6, their escalating overuse and inherent inefﬁ-
+ciency have driven a steady rise in bacterial resistance7. This resistance
+has further complicated disease control, creating an urgent need for
+efﬁcient alternative antibacterial strategies.
+Nanozymes,
+nanomaterials
+with
+enzyme-like
+activity,
+offer
+advantages including low cost, high stability, scalable production, and
+multifunctionality8–10. Peroxidase (POD)-like nanozymes are particu-
+larly promising: they catalyze the decomposition of H2O2 into hydroxyl
+radicals (·OH), the most effective reactive oxygen species (ROS) for
+eradicating pathogenic bacteria11–14. This catalytic activity is well-
+matched to the microenvironment of plant infection sites, where
+pathogens induce the production of ROS (including H2O2) and organic
+acids15,16. Notably, ~52% of sunlight consists of near-infrared (NIR) light;
+this enables NIR-enhanced nanozymes to kill bacteria more effectively
+Received: 16 December 2024
+Accepted: 6 March 2026
+Check for updates
+1National Key Laboratory of Green Pesticide, Key Laboratory of Green Pesticide and Agricultural Bioengineering, Ministry of Education, Center for R&D of Fine
+Chemicals of Guizhou University, Guiyang, China. 2Guizhou Key Laboratory for Tobacco Quality, College of Tobacco Science of Guizhou University,
+Guiyang, China. 3Institute of Agro-Bioengineering, Guizhou University/Key Laboratory of Plant Resource Conservation and Germplasm Innovation in
+Mountainous Region (Ministry of Education), Guiyang, China.
+e-mail: lincai@gzu.edu.cn
+Nature Communications|   (2026) 17:4261 
+1
+1234567890():,;
+1234567890():,;
+
+by boosting their POD-like activity17,18. POD-like nanozyme with NIR
+enhancement, therefore represent a promising approach for control-
+ling plant bacterial diseases. Structural modiﬁcations can further
+optimize antibacterial efﬁcacy, such as loading exogenous metal
+atoms into a support matrix19. Single-atom (SA) nanozymes with pre-
+cisely deﬁned electronic and geometric structures are especially
+effective at mimicking the catalytic centers of natural enzymes20,21. For
+example, CeO2-supported Cu SA nanozymes demonstrated enhanced
+POD-like activity and reduced ·OH antioxidant capacity activity,
+effectively combating Methicillin-resistant Staphylococcus aureus and
+Escherichia coli19. Nevertheless, the rapid quenching effect of ROS and
+the low afﬁnity of SA nanozymes to the bacterial surface severely limit
+their applications22. Two-dimensional (2D) materials address these
+issues via multivalent binding: WS2, MoS2, and VOxC nanosheets form
+strong Metal-O-P bonds with bacteria and possess membrane-
+conforming ﬂexibility, thereby increasing the contact area and bind-
+ing strength22–24. Complementary strategies involve ROS-generating
+metal ions (e.g., Zn2+) that increase membrane permeability25. Inte-
+grating these advantages, a multifunctional Cu SA nanozyme com-
+bining NIR enhancement, optimized bacterial afﬁnity via 2D support,
+and ROS-mediated membrane disruption could enable intelligent
+pathogen capture and kill in plant protection systems.
+In this study, we develop a photo-enhanced CuSA-loaded
+ZnS@MoS2 nanozyme with intelligent capture and killing bifunction
+through an atom loaded strategy. We evaluated this nanozyme for the
+control of tomato speck disease (caused by Pst. DC3000) and tomato
+bacterial wilt (caused by R. solanacearum), and investigated its anti-
+bacterial mechanism. Combined experimental and density functional
+theory (DFT) calculations demonstrate that CuSA-loaded ZnS@MoS2
+nanozyme exhibits high POD-like activity, efﬁciently catalyzing H2O2 to
+generate ·OH. This process is further enhanced under NIR irradiation.
+Additionally, CuSA-loaded ZnS@MoS2 nanozyme can capture bacteria
+cells by interactions with the bacteria surface, avoiding the rapid
+quenching effect of ·OH. Beneﬁting from these advantages, CuSA-
+loaded ZnS@MoS2 nanozyme achieves high efﬁcacy in controlling
+plant bacterial diseases. These ﬁndings deepen the understanding of
+the antibacterial mechanism of SA nanozymes, guide the design of
+speciﬁc and efﬁcient bactericidal nanozymes for plant disease control,
+and mark the pioneering application of SA nanozymes in the man-
+agement of agricultural bacterial diseases.
+Results and discussion
+Synthesis and characterization
+Firstly, different amounts of Cu were added to synthesize the CuSA-
+loaded ZnS@MoS2 using a conventional hydrothermal method
+(Fig. 1a).To identify the optimal Cu addition, we evaluated the POD-like
+catalytic activity of CuSA-loaded ZnS@MoS2 and its effects on tomato
+seed germination. At a Cu addition of 0.25 mmol, CuSA-loaded
+ZnS@MoS2 exhibited the highest POD-like activity and no toxicity to
+tomato seeds (Supplementary Fig. 1). Therefore, the addition of Cu
+used in all subsequent experiments was 0.25 mmol. As shown in Fig. 1b,
+CuSA-loaded ZnS@MoS2 had an irregular overall morphology, with
+granular nanoparticles (NPs) distributed on the surface of lamellar
+structures. Supplementary Fig. 2 conﬁrmed that these granular and
+lamellar components corresponded to ZnS and MoS2, respectively.
+The zeta potential and average particle diameter of CuSA-loaded
+ZnS@MoS2 were −23.86 mV and 513.09 nm, respectively (Supple-
+mentary Fig. 3). X-ray diffraction (XRD) patterns of CuSA-loaded
+ZnS@MoS2 revealed characteristic peaks for ZnS (PDF#89-2156), MoS2
+(PDF#06-0097), and S (PDF#13-0141) (Supplementary Fig. 4).The high-
+resolution transmission electron microscopy (HRTEM), selected area
+electron diffraction (SAED) pattern, and Fast Fourier transformation
+(FFT) pattern indexing further conﬁrmed the presence of three sub-
+stances: ZnS (crystal plane: 102, interplanar spacing: 0.31 nm), S
+(crystal plane: 222, interplanar spacing: 0.33 nm), and MoS2 (crystal
+plane: 002, interplanar spacing: 0.61 nm) (Supplementary Fig. 5).
+These lattice parameters matched the standard XRD data for ZnS,
+MoS₂, and S, conﬁrming their crystalline phases. According to the
+previous report26, we speculated that thioacetamide ﬁrst reduced Cu2+
+to Cu+, then sulfurized MoO3 to MoS3. The subsequent reaction
+between MoS3 and Cu+ produced MoS2, Cu2+, and S, which was con-
+ﬁrmed by XRD pattern results. Meanwhile, the absence of nanocrystal
+and large clusters characteristic diffraction peaks for Cu suggested
+that Cu could exist in a single atomic form. To verify this, the high-
+angle annular dark ﬁeld scanning transmission electron microscopy
+(HAADF-STEM) was employed to compare the atomic images of CuSA-
+loaded ZnS@MoS2 and ZnS@MoS2. However, it was difﬁcult to clearly
+observe the presence of single Cu atoms in the HAADF-STEM images of
+CuSA-loaded ZnS@MoS2. (Fig. 1c and Supplementary Fig. 6). HAADF-
+STEM elemental mapping showed uniform distribution of Cu, Zn, O,
+Mo, and S across CuSA-loaded ZnS@MoS2 (Fig. 1d). Due to HAADF-
+STEM’s Z-contrast imaging was inherently limited when imaging high-Z
+(heavy) metals alongside low-Z (light) elements, the weak scattering
+intensity of low-Z elements made them undetectable in the presenceof
+high-Z counterparts27–29. This likely explained the attenuated O signal
+in the elemental mapping. Fourier transform infrared (FTIR) spectrum
+results showed that the peaks at 452, 613, 899, 1049, 1126, 1388, 1612,
+and 3425 cm−1 were corresponding to the Metal-O30, Metal-S31, C-H32,
+C-O33, C-N34, N-C-H35, C = O36, N-H/O-H, respectively (Supplementary
+Fig. 7). X-ray photoelectron spectroscopy (XPS) conﬁrmed the ele-
+mental composition of CuSA-loaded ZnS@MoS2, consistent with
+HAADF-STEM mapping (Supplementary Fig. 8a). Considering the cri-
+tical role of element valence states, high-resolution XPS analysis of Mo
+3d, Cu 2p, S 2p, Zn 2p, and O 1s was performed. The Mo 3d spectrum
+showed that two characteristic peaks at 229.3 and 228.6 eV were cor-
+responding to the Mo4+ (Supplementary Fig. 8b)37. The characteristic
+peaks at 232 and 233.2 eV were corresponding to the Mo6+ 38. The
+characteristic peak at 226.1 eV was attributed to the presence of sulfur
+2s39. Furthermore, the characteristic peaks observed in the Cu 2p at
+932.4 and 952.3 eV were ascribed to Cu+ 40,41, while the peak detected at
+946.3 eV were assigned to weak satellite peak (Supplementary
+Fig. 8c)42. As shown in Supplementary Fig. 8d, three characteristic
+peaks at 162.6, 168.9, and 161.4 eV were assigned to Mo-S, S in thio-
+sulfate and sulfate, and Cu/Zn-S, respectively43. This suggested that the
+material could present a Cu-S-Zn structure. The Zn 2p was divided into
+the characteristic peaks at 1021.7, 1044.7, and 1038.2 eV, attributing to
+Zn 2p3/2 and Zn 2p1/2, respectively (Supplementary Fig. 8e)44–46. The O
+1s spectrum exhibited three characteristic peaks at 531.7, 530.5, and
+533.0 eV corresponding to the binding energy of Metal-O, lattice-O,
+and surface-adsorbed water, respectively (Supplementary Fig. 8f)47,48.
+Inductively coupled plasma optical emission spectrometry (ICP-OES)
+quantiﬁed the elemental contents: Cu (11.4 wt%), Zn (27.5 wt%), and Mo
+(11.9 wt%) (Supplementary Fig. 9). Collectively, these results conﬁrmed
+the successful synthesis of CuSA-loaded ZnS@MoS2 with a Cu-S-Zn
+structure.
+Coordination chemistry states of Cu single atom
+To resolve the coordination chemistry states of CuSA, the X-ray
+absorption
+near-edge
+structure
+(XANES)
+and
+extended
+X-ray
+absorption
+ﬁne
+structure
+(EXAFS)
+measurements
+were
+performed14. The XANES spectra at the K-edge revealed that the pre-
+edge of Cu in CuSA-loaded ZnS@MoS2 was situated between that of
+CuO and Cu2O as well as between that of CuS and Cu2S, demon-
+strating the oxidation state of Cu atoms in CuSA-loaded ZnS@MoS2
+was higher than Cu+ and lower than Cu2+ (Fig. 1e and Supplementary
+Fig. 10). The Fourier-transformed (FT) k3-weighted extended XAFS
+(FT-EXAFS) spectrum of CuSA-loaded ZnS@MoS2 displayed the
+dominant peak at ~1.5 Å, which could be mainly attributed to the
+scattering interactions between Cu and N/O atoms (Fig. 1f)49. Fur-
+thermore, the R space showed the peak at ~2.0 Å corresponding to
+Article
+https://doi.org/10.1038/s41467-026-70930-1
+Nature Communications|   (2026) 17:4261 
+2
+
+the scattering interactions between Cu and S atoms (Fig. 1f). Nota-
+bly, no prominent Cu-Cu coordination peak (typically at ~2.2 Å, as
+observed in Cu foil) was detected. This conﬁrmed Cu existed as
+isolated single atoms in CuSA-loaded ZnS@MoS2, with no aggrega-
+tion into clusters or NPs. To quantify the Cu coordination environ-
+ment, we performed least-squares EXAFS curve ﬁtting. The ﬁtting
+curves and parameters were provided in Fig. 1g, Supplementary
+Fig. 11, and Supplementary Table 1. The ﬁtting results indicated that
+the coordination number of Cu-N/O (average bond length: 1.959 Å)
+and Cu-S (average bond length: 2.409 Å) were 5.9 ± 0.3 and 0.5 ± 0.1,
+respectively. Wavelet transform (WT) analysis of the Cu K-edge
+EXAFS provided further validation of this conclusion, explicitly
+conﬁrming both the isolated Cu-S coordination and the lack of Cu-
+Cu aggregation (Fig. 1h–j).
+Photothermal and enzyme-like properties
+To
+evaluate
+the
+photothermal
+performance
+of
+CuSA-loaded
+ZnS@MoS2, we recorded temperature changes during NIR irradia-
+tion. Under 808 nm NIR light, the temperature of CuSA-loaded
+ZnS@MoS2 suspensions increased in a concentration-dependent
+manner (Fig. 2a). The photothermal conversion efﬁciency (η) was cal-
+culated using a 200 μg/mL CuSA-loaded ZnS@MoS2 suspension
+(1 mL): the sample was irradiated with an 808 nm laser (1 W/cm2) for
+10 min until temperature plateaued, then cooled to initial temperature
+-10
+-5
+0
+5
+10
+15
+20
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+Cu-N/O
+k (Å-1)
+CuSA-loaded ZnS@MoS2
+Cu-S
+-10
+-5
+0
+5
+10
+15
+20
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+k (Å-1)
+R+α (Å)
+CuS
+Cu-S
+-10
+-5
+0
+5
+10
+15
+20
+1.0
+1.5
+2.0
+2.5
+3.0
+3.5
+4.0
+Cu-O
+k (Å-1)
+R+α Å)
+R+α Å)
+CuO
+Cu-Cu
+2
+4
+6
+8
+10
+k3(k) (Å-3)
+k (Å-1)
+ CuSA-loaded ZnS@MoS2
+Fit
+0
+1
+2
+3
+4
+5
+6
+|FT(k3(k))| (Å-4)
+R+α (Å)
+ CuSA-loaded ZnS@MoS2
+Cu-foil
+CuO
+ Cu2O
+CuS
+ Cu2S
+Cu-Cu
+8950
+8975
+9000
+9025
+9050
+y
+ti
+s
+n
+e
+t
+n
+i
+n
+o
+it
+p
+r
+o
+s
+d
+a
+d
+e
+zil
+a
+m
+r
+o
+N
+(
+s
+ti
+n
+u
+.
+b
+r
+a
+)
+Energy (eV)
+ CuSA-loaded ZnS@MoS2
+Cu-foil
+CuO
+ Cu2O
+CuS
+ Cu2S
+Cu K-edge
+Hydrothermal
+ZnS
+MoS2
+(CH3COO)2Cu
+ZnO NPs
+a
+b
+c
+2 nm
+d
+100 nm
+50 nm
+Cu
+50 nm
+50 nm
+Zn
+50 nm
+O
+50 nm
+Mo
+50 nm
+S
+e
+f
+g
+h
+i
+j
+Fig. 1 | Schematic illustration and structural characterization of CuSA-loaded
+ZnS@MoS2 nanozyme.a Schematic of CuSA-loaded ZnS@MoS2 nanozyme synthesis.
+(Blue: Cu single atom). b–d TEM, HAADF-STEM, and HAADF-STEM elemental mapping
+representative images of CuSA-loaded ZnS@MoS2 nanozyme (each experiment was
+repeated three times independently with similar results). e K-edge XANES spectra of Cu.
+f FT of Cu K-edge EXAFS of samples in R space. g The corresponding EXAFS ﬁtting
+curves of CuSA-loaded ZnS@MoS2 at K space. h–j WT-EXAFS plots of CuO, CuS, and
+CuSA-loaded ZnS@MoS2. Source data are provided as a Source Data ﬁle.
+Article
+https://doi.org/10.1038/s41467-026-70930-1
+Nature Communications|   (2026) 17:4261 
+3
+
+under ambient conditions. The η value of CuSA-loaded ZnS@MoS2 was
+15.37% (Fig. 2b, see the Supplementary Information for details).
+Although this η was lower than that of commonly used photothermal
+materials50, CuSA-loaded ZnS@MoS2 still raised the system tempera-
+ture from 25 to 40°C under the above irradiation conditions. This
+temperature was close to the optimal working temperature of natural
+enzymes51,52, meaning it avoided damaging plant cells while promoting
+catalytic reactions via increased thermal energy.
+Previous reports indicated that nanozymes with OXD-like activity
+or POD-like activity could oxidize 3,3,5,5-tetramethylbenzidine (TMB)
+Fig. 2 | Photothermal enhanced POD-like activity of CuSA-loaded ZnS@MoS2
+nanozyme. a The temperature rise of CuSA-loaded ZnS@MoS2 solution under
+1.00 W/cm2 808 nm laser irradiation at different concentrations within 10 min. Data
+are presented as mean ± SD (n = 3 independent experiments). b Calculated pho-
+tothermal conversion efﬁciency of CuSA-loaded ZnS@MoS2 upon 1.00 W/cm2 NIR-
+808 nm laser irradiation. Data are presented as mean ± SD (n = 3 independent
+experiments). c UV–vis absorption spectra of TMB solution containing different
+samples with or without 1.00 W/cm2 NIR-808 nm laser irradiation. d, e Steady-state
+kinetic assay of POD-like activity of CuSA-loaded ZnS@MoS2 nanozyme with varied
+TMB and H2O2. Data are presented as mean ± SD (n = 3 independent experiments).
+f Comparison of the TON and Vmax values with previous POD-like nanozymes. g EPR
+spectra of ·OH trapped DMPO with different treatments. h Schematic illustration of
+laser-enhanced POD-like activity of CuSA-loaded ZnS@MoS2 nanozyme. Source
+data are provided as a Source Data ﬁle.
+Article
+https://doi.org/10.1038/s41467-026-70930-1
+Nature Communications|   (2026) 17:4261 
+4
+
+to blue oxTMB14,53. Thus, we evaluated the potential OXD-like activity
+of the material. It is well known that O2 could be catalyzed by the OXD-
+like activity of Cu+ to generate O2
+·−, which oxidized TMB to oxTMB54.
+However, CuSA-loaded ZnS@MoS2 and MoS2 displayed no obvious
+OXD-like activity (Supplementary Fig. 12). This might be attributed to
+the relatively low concentration of dissolved oxygen molecules in the
+liquid phase system55. Subsequently, the POD-like activity of CuSA-
+loaded ZnS@MoS2 was determined using a typical biochemical reac-
+tion of TMB56. The POD-like activity of these materials was evaluated
+under different pH values. As shown in Supplementary Figs. 13 and 14,
+CuSA-loaded ZnS@MoS2 presented a more intensive activity than the
+MoS2 nanosheets, and ZnO NPs displayed no obvious POD-like activity.
+The POD-like activity of CuSA-loaded ZnS@MoS2 and MoS2 gradually
+decreased with increased pH value. In addition, NIR irradiation could
+enhance the POD-like activity of CuSA-loaded ZnS@MoS2 (Fig. 2c).
+According to the Arrhenius equation, higher temperatures increase
+reaction rates by lowering activation energy and accelerating mass
+transfer17. This explained the NIR-induced activity enhancement, as
+photothermal heating raised the system temperature. Furthermore,
+the maximum initial velocity (Vmax), Michaelis constant (Km), and
+turnover number (TON, the maximum number of transforming sub-
+strate molecules per catalytic site) were calculated based on the
+Michaelis–Menten
+curves
+(Fig.
+2d,
+e
+and
+Supplementary
+Figs. 15 and 16). The Vmax and Km values of CuSA-loaded ZnS@MoS2 for
+TMB were 2.78 × 10−8 M/s and 0.43 × 10−3 M, respectively (Supplemen-
+tary Fig. 15). The Vmax, Km, and TON values of CuSA-loaded ZnS@MoS2
+for H2O2 were 1.62 × 10−7 M/s, 2.37 × 10−2M, and 2.30 × 10−3 s−1, respec-
+tively (Supplementary Fig. 16 and Supplementary Table 2). A previous
+study reported a CuSA-loaded MoS2 nanozyme with POD-like activity,
+synthesized via machine learning-guided electrostatic self-assembly57.
+However, this method relied on weak electrostatic interactions
+between Cu2+ and MoS2, limiting Cu2+ binding strength and catalytic
+capacity. By contrast, the Vmax value of our synthesized CuSA-loaded
+ZnS@MoS2 was over 1000 times higher than the reported value, which
+could be attributed to the predominantly monovalent valence state of
+the CuSA. We further compared CuSA-loaded ZnS@MoS2 to reported
+artiﬁcial PODs (metal oxides, metal hydrides, single-atom catalysts,
+metal complexes) (Fig. 2f and Supplementary Table 2). Our nanozyme
+exhibited the highest Vmax and TON, conﬁrming its stronger ability to
+mimic natural POD. Electron paramagnetic resonance (EPR) spectro-
+scopy conﬁrmed that CuSA-loaded ZnS@MoS2 and MoS2 in the pre-
+sence of H2O2 appeared the characteristic signal of DMPO·OH with an
+intensity ratio of 1:2:2:1 (Fig. 2g). The signal intensity was signiﬁcantly
+stronger for CuSA-loaded ZnS@MoS2, conﬁrming it produces more
+·OH. The detailed mechanisms were shown in Fig. 2h.
+To elucidate the POD-like catalytic mechanism and selective ·OH
+production activity of CuSA-loaded ZnS@MoS2, we performed the
+DFT to calculate the catalysis system. Based on the aforementioned
+characterization results, we established two models of CuSA-loaded
+ZnS@MoS2, featuring Cu-N/O coordination and Cu-S coordinatin,
+respectively (Fig. 3a, b and Supplementary Fig. 17). As shown in
+Fig. 3c–e, the initial adsorption of H2O2 and its subsequent decom-
+position into 2*OH on the ZnS surface of Cu-N/O coordination model
+and the Cu site of Cu-S coordination model exhibited negative changes
+in Gibbs free energy, indicating that these two steps were spontaneous
+processes on both types of catalyst surfaces. Furthermore, the Gibbs
+free energies for the desorption of 2*OH were calculated to be 3.96 eV
+for Cu site of Cu-S coordination model and 4.48 eV for ZnS surface of
+a
+Acetamide ligand
+Acetate ligand
+ZnS
+b
+MoS2
+Cu
+ZnS
+MoS2
+−3
+−2
+−1
+0
+1
+2
+3
+4
+)
+V
+e
+(
+y
+g
+r
+e
+n
+e
+e
+e
+r
+F
+Reaction coordinate
+Cu-N/O
+Cu-S
+* + H2O2
+*H2O2
+2*OH
+*H + OOH
+* + H + OOH
+c
+d
+*
+*H2O2
+*2OH
+e
+*
+*H2O2
+*2OH
+f
+Fig. 3 | Catalytic mechanism of CuSA-loaded ZnS@MoS2. a The structure of
+CuSA-loaded ZnS@MoS2 with Cu-N/O coordination. b The structure of CuSA-
+loaded ZnS@MoS2 with Cu-S coordination. c The energy distribution for the gen-
+eration of ·OH from H2O2 catalyzed by CuSA-loaded ZnS@MoS2 in two distinct
+coordination environments. d, e The structural changes of CuSA-loaded
+ZnS@MoS2 with two distinct coordination environments during the reaction
+pathway. f Behavior of electrons of CuSA-loaded ZnS@MoS2 catalyzing H2O2 to
+release ·OH. Source data are provided as a Source Data ﬁle.
+Article
+https://doi.org/10.1038/s41467-026-70930-1
+Nature Communications|   (2026) 17:4261 
+5
+
+Cu-N/O coordination model. This indicated a weaker binding afﬁnity of
+OH on the Cu site of Cu-S coordination model, which facilitated the
+release of ·OH. Finally, we also elucidated the behavior of electrons in
+the pivotal process, delving into their intricate and nuanced actions
+(Fig. 3f). The oxygen atom of H2O2 initially captured an electron from
+Cu(I) in the 3d orbital. Subsequently, a homogeneous splitting of the σ
+bond in H2O2 occurred, leading to the generation of hydroxide and
+·OH. With releasing the ·OH, the electron pair of the hydroxide effec-
+tively attacked the vacant 4s orbital of Cu(II), leading to the formation
+of a new σ bond. This process occurred with greater ease compared to
+Mo(IV) donating an electron.
+In summary, CuSA-loaded ZnS@MoS2 nanozyme efﬁciently con-
+verted low-toxic H2O2 into highly toxic ·OH. Under NIR irradiation, its
+POD-like activity was further enhanced by photothermal heating,
+which lowered the reaction activation energy. This dual capability
+(catalytic ·OH generation and NIR-enhanced activity) enabled localized
+production of potent ROS, thereby boosting bactericidal efﬁcacy.
+In vitro antibacterial activity and mechanism
+Encouraged by the catalytic activity and ROS generation mechanism of
+CuSA-loaded ZnS@MoS2 nanozyme, we performed in vitro anti-
+bacterial assays. The representative strains Pst. DC3000 and R. sola-
+nacearum, two devastating Gram-negative bacteria infecting the leaves
+and roots of Solanaceae, were chosen as the study subjects. For
+comparison, we used the commercial bactericide thiodiazole copper
+(a widely used agricultural antibacterial agent). As shown in Fig. 4a, c
+and Supplementary Figs. 18–20, CuSA-loaded ZnS@MoS2 inhibited
+Pst. DC3000 and R. solanacearum in a dose-dependent manner, out-
+performing thiodiazole copper at all tested concentrations. Consistent
+with this, the half-maximal effective concentration (EC50) of CuSA-
+loaded ZnS@MoS2 against both pathogens were lower than that of
+thiodiazole copper, conﬁrming its higher antibacterial activity (Sup-
+plementary Table 3). CuSA-loaded ZnS@MoS2 also showed better
+inhibition than CuO NPs, ZnO NPs, and MoS2 nanosheets (Supple-
+mentary Figs. 21 and 22). Furthermore, it outperformed CuSA@MoS2
+and ZnS@MoS2 (Supplementary Figs. 23–26), indicating a synergistic
+antibacterial effect between CuSA and ZnS in the nanozyme. To opti-
+mize the POD-like catalytic condition for antibacterial assays, we ﬁrst
+determined the optimal H2O2 concentrations for Pst. DC3000
+(100 μM) and R. solanacearum (10 μM) by testing H2O2’s intrinsic
+antibacterial effect (Supplementary Figs. 27 and 28). Under these
+optimal H2O2 conditions, CuSA-loaded ZnS@MoS2 increased the
+inhibition rate of Pst. DC3000 and R. solanacearum by 69.71% and
+87.63%, respectively, compared to the H2O2-only control (Fig. 4b and
+Supplementary Figs. 29 and 30). To verify that ·OH was the primary
+contributor to antibacterial activity, we performed ·OH scavenging
+assays using tert-butanol (TBA). Under H2O2 conditions, the addition
+of TBA signiﬁcantly reduced the antibacterial activity of CuSA-loaded
+ZnS@MoS2 nanozyme, suggesting that the ·OH generation during
+catalysis was the primary contributor of antibacterial activity (Sup-
+plementary Figs. 31 and 32). Then, the ·OH generation capabilities of
+CuSA-loaded ZnS@MoS2 nanozyme at 2.5 and 12.5 μg/mL were mea-
+sured to be 9.44 and 16.16 U/mL, respectively (Supplementary
+Fig. 33a). To rule out Cu ion leaching as a contributing factor, we
+measured Cu ion release from CuSA-loaded ZnS@MoS2 after 2 h and
+tested the antibacterial activity of this leached Cu concentration. No
+signiﬁcant inhibition was observed, conﬁrming the antibacterial
+mechanism was not dependent on Cu ion release (Supplementary
+Fig. 34). Given the NIR-enhanced POD activity of CuSA-loaded
+ZnS@MoS2 nanozyme, it had great potential in plant leaf bacterial
+disease control18. The NIR irradiation not only improved the anti-
+bacterial ability of CuSA-loaded ZnS@MoS2 nanozyme against Pst.
+DC3000, but also further boosted activity under H2O2 conditions
+(Fig. 4b and Supplementary Fig. 29). These phenomena could be
+attributed to the fact that NIR irradiation reduced the activation
+energy required for POD-like catalytic reactions, making it easier to
+catalyze the conversion of H2O2 into highly toxic ·OH.
+To conﬁrm intracellular ROS generation, we stained Pst. DC3000
+and R. solanacearum with ROS-speciﬁc dyes and analyzed ﬂuorescence
+intensity. CuSA-loaded ZnS@MoS2 nanozyme treatment signiﬁcantly
+increased ROS ﬂuorescence intensity, suggesting that the nanozyme
+induced intracellular ROS generation in both bacteria (Fig. 4d, e and
+Supplementary Fig. 33b, c). NIR irradiation further enhanced ﬂuores-
+cence, conﬁrming NIR ampliﬁes ROS generation (Fig. 4d). SEM images
+revealed the morphological changes of Pst. DC3000 and R. solana-
+cearum after different treatments. As shown in Fig. 4f, the cell surface
+contraction in Pst. DC3000 was gradually apparent after treatments
+with NIR, H2O2, and NIR + H2O2. Compared with the control, CuSA-
+loaded ZnS@MoS2 nanozyme caused the stretching and squeezing of
+Pst. DC3000 cells. NIR and H2O2 treatments aggravated the CuSA-
+loaded ZnS@MoS2 nanozyme on the disruption of Pst. DC3000 cells
+(Fig. 4f). For R. solanacearum, H2O2 did not cause noticeable damage
+on the surface of R. solanacearum cells, compared to the control
+(Fig. 4g). Additionally, CuSA-loaded ZnS@MoS2 nanozyme caused the
+tearing of R. solanacearum cells. Under H2O2 conditions, the ·OH
+generated
+by
+the
+POD-like
+catalytic
+activity
+of
+CuSA-loaded
+ZnS@MoS2 nanozyme severely disrupt the R. solanacearum cells.
+Then, the alteration of the bacterial contents after these treatments
+were determined. The results were generally consistent with the ﬁnd-
+ings obtained from the bacterial plate assays (Supplementary Fig. 35).
+Notably, CuSA-loaded ZnS@MoS2 nanozyme caused the morphologi-
+cal change of Pst. DC3000 cells and R. solanacearum cells. It is
+reported that cationic micellar nanostructures were also employed to
+disrupt the membrane of methicillin-resistant Staphylococcus aureus
+and fungi through steric hindrance, hydrogen bonding, and electro-
+static interaction with the cell wall/membrane58. Previous studies also
+showed that 2D VOₓC nanosheets bound strongly to lipopolysacchar-
+ide (LPS, a major component of Gram-negative outer membranes) via
+phosphate group interactions22. Therefore, we hypothesized CuSA-
+loaded ZnS@MoS2 nanozyme bound to bacterial surface components,
+causing bacterial stretching, squeezing or tearing.
+Based on this hypothesis, we used DFT to calculation the binding
+afﬁnity of two CuSA-loaded ZnS@MoS2 nanozyme models (Cu-N/O
+and Cu-S coordination) for adsorbing inorganic cations (Na+, K+, Mg2+,
+Ca2+, and Zn2+), anions (Cl, NO
+3 , PO3
+4 , SO2
+4
+and SO2
+3 ), and organic
+functional groups (-COOH and -NH2) commonly found on the bacterial
+surface. Both models showed stronger adsorption for PO3
+4 than other
+ions (Fig. 4h, i). Speciﬁcally, Cu-S coordination model was stronger
+adsorption for PO3
+4 , Zn2 + , SO2
+3 , SO2
+4 , Mg2 + , Ca2 + -NH2, -COOH, and
+K+. Cu-N/O coordination model was stronger adsorption for NO
+3 , Cl−,
+and Na+. These results reﬂected the nanozyme’s complex surface
+charge, driven by both coordination structures. The strongPO3
+4
+adsorption suggested that the binding to bacterial surfaces was pri-
+marily mediated by Metal-O-P bonds (interacting with LPS/phospho-
+lipid phosphates). To validate this, the nanozyme’s binding to LPS and
+PO3
+4
+were measured. CuSA-loaded ZnS@MoS2 nanozyme exhibited a
+stronger afﬁnity for LPS than PO3
+4 , conﬁrming its high bacterial afﬁ-
+nity (Supplementary Fig. 36), in agreement with previous reports22. We
+further tested PO3
+4
+in plant apoplastic sap (a potential competitor);
+even so, the nanozyme retained stronger bacterial afﬁnity (Supple-
+mentary Fig. 37). This “intelligent binding” shortened ·OH diffusion
+distance, enabling direct bacterial contact and efﬁcient killing. Mem-
+brane permeability assays showed NIR did not increase permeability,
+suggesting permeability changes were driven by the nanozyme itself
+(Supplementary Figs. 38 and 39). Given Zn2+ enhanced permeability via
+ROS25, we proposed the nanozyme’s permeability effect arose from
+both bacterial surface binding and ZnS-derived Zn2+. Furthermore, we
+also explored the nanozyme’s antibacterial mechanism by assessing
+bacterial motility, antioxidant enzyme (superoxide dismutase (SOD),
+catalase
+(CAT))
+activity,
+bioﬁlm
+formation,
+and
+extracellular
+Article
+https://doi.org/10.1038/s41467-026-70930-1
+Nature Communications|   (2026) 17:4261 
+6
+
+polysaccharide (EPS) production. The results showed that CuSA-
+loaded ZnS@MoS2 nanozyme reduced motility, decreased SOD and
+CAT activity, inhibited bioﬁlm formation, and lowered EPS production
+in both bacteria (Supplementary Figs. 40–42).
+In summary, as shown in Fig. 4j, the main antibacterial mechan-
+isms of CuSA-loaded ZnS@MoS2 nanozyme were as follows: (1) The
+nanozyme bound to the bacterial cell wall/outer membrane (via Metal-
+O-P bonds with LPS/phospholipids), anchoring to bacteria. (2) Binding
+stimulates intracellular ROS production and alters bacterial membrane
+permeability. (3) The nanozyme catalyzed H2O2 to produce highly
+toxic ·OH through POD-like activity. (4) NIR irradiation lowered POD
+catalytic activation energy and accelerated mass transfer, further
+0
+20
+40
+60
+80
+100
+Inhibition rate (%)
+ 12.5 μg/mL
+ H2O2
+ NIR
+ H2O2+NIR
+ 12.5 μg/mL+H2O2
+ 12.5 μg/mL+NIR
+ 12.5 μg/mL+H2O2+NIR
+12.5 μg/mL
+H2O2
+NIR
+H2O2+NIR
+12.5 μg/mL+H2O2
+12.5 μg/mL+NIR
+12.5 μg/mL+H2O2+NIR
+c
+e
+e
+d
+a
+b
+a
+12.5
+25
+50
+100
+200
+0
+20
+40
+60
+80
+100
+Thiodiazole copper
+CuSA-loaded ZnS@MoS2
+Inhibition rate (%)
+Concentration (μg/mL)
+**
+***
+***
+***
+**
+2.5
+5
+10
+20
+0
+20
+40
+60
+80
+100
+120
+ Thiodiazole copper
+ CuSA-loaded ZnS@MoS2
+Inhibition rate (%)
+Concentration (μg/mL)
+***
+***
+***
+***
+c
+b
+a
+Pst. DC3000
+R. solanacearum
+d
+Control
+NIR
+Nanozyme
+Nanozyme+NIR
+e
+Control
+Nanozyme
+f
+Control
+1 μm
+Local contraction
+1 μm
+NIR
+1 μm
+Slight contraction
+H2O2
+1 μm
+Contraction
+NIR+H2O2
+Nanozyme
+Stretching and squeezing
+Nanozyme+NIR
+1 μm
+Disrupted
+1 μm
+Nanozyme+H2O2
+1 μm
+Disrupted
+Severely disrupted
+1 μm
+Nanozyme+NIR+H2O2
+g
+Control
+1 μm
+1 μm
+H2O2
+Nanozyme
+1 μm
+Tearing
+1 μm
+Nanozyme+H2O2
+Severely disrupted
+h
+−3.0
+−2.5
+−2.0
+−1.5
+−1.0
+−0.5
+0.0
+0.5
+1.0
+−3.0
+−2.5
+−2.0
+−1.5
+−1.0
+−0.5
+0.0
+PO3-
+4
+NO-
+3
+-NH2
+Cl-
+-COOH
+Cu-N/O
+SO2-
+4
+SO2-
+3
+Na+
+K+
+Mg2+
+Ca2+
+Zn2+
+PO3-
+4
+NO-
+3
+-NH2
+Cl-
+-COOH
+ Cu-S
+SO2-
+4
+SO2-
+3
+Na+
+K+
+Mg2+
+Ca2+
+Zn2+
+i
+j
+Article
+https://doi.org/10.1038/s41467-026-70930-1
+Nature Communications|   (2026) 17:4261 
+7
+
+boosting ·OH production and antibacterial efﬁcacy. (5) The nanozyme
+could reduce motility, decreased antioxidant enzyme activities,
+inhibited bioﬁlm formation, and lowered EPS production in bacteria.
+These mechanisms collectively drived the nanozyme’s high anti-
+bacterial efﬁciency.
+Biosafety
+Nanomaterials were promising for improving plant growth, crop
+yields, and disease resistance59–61; however, their inevitable release into
+agricultural environments during application raised biosafety con-
+cerns. Therefore, the biosafety of nanomaterials to plants should be
+evaluated before practical applications. We preliminarily evaluated the
+leaching behavior of Cu2+ in CuSA-loaded ZnS@MoS2 nanozyme
+(200 μg/mL) at different pH levels (pH 5 and pH 7) and in different
+solutions (water and PBS) over different time intervals (1 d, 3 d, 5 d, and
+8 d) (Supplementary Fig. 43). The results demonstrated that CuSA-
+loaded ZnS@MoS2 nanozyme exhibited the highest concentration of
+Cu2+ release at pH 5, reaching a maximum of 8.62 μg/mL. At both pH 7
+and in water, the release of Cu2+ remained relatively stable. In contrast,
+the amount of Cu2+ released in PBS was below the detection limit of
+ICP-OES, indicating that the release of Cu2+ in PBS was minimal. We
+next assessed the CuSA-loaded ZnS@MoS2 nanozyme’s safety to
+Solanaceae plants (tomato, tobacco) and human cells. Exposure to
+CuSA-loaded ZnS@MoS2 had no signiﬁcant effect on plant height, root
+length, shoot biomass, or seed germination rate (Supplementary
+Figs. 44–46). CuSA-loaded ZnS@MoS2 nanozyme also demonstrated
+no cytotoxic effects on human gut cell lines (Caco-2 cells) across a
+range of concentrations (0, 10, 20, 50, 100, and 200 μg/mL), indicating
+its
+biosafety
+(Supplementary
+Fig.
+47).
+However,
+CuSA-loaded
+ZnS@MoS2 nanozyme at 400 μg/mL exhibited low toxicity towards
+Caco-2 cells. These results indicated that CuSA-loaded ZnS@MoS2
+nanozyme had potential biosafety for Solanaceae plants and human
+cells. Furthermore, the acute toxicity of CuSA-loaded ZnS@MoS2
+nanozyme on non-target organisms, including zebraﬁsh and earth-
+worms, was evaluated. The results indicated that the nanozyme at 20
+and 200 µg/mL exhibited no signiﬁcant difference in survival rates of
+zebraﬁsh and earthworms (Supplementary Fig. 48), conﬁrming the
+safety of CuSA-loaded ZnS@MoS2 nanozyme for non-target organ-
+isms. We also evaluated the effects of CuSA-loaded ZnS@MoS2 nano-
+zyme on root endosphere, rhizosphere soil microbes, and leaf
+endosphere microbes, as well
+as the
+effects
+of
+CuSA-loaded
+ZnS@MoS2 nanozyme + NIR on leaf endosphere microbes. The
+results indicated that the antibacterial efﬁcacy and photothermal
+effects of CuSA-loaded ZnS@MoS2 nanozyme had a minimalimpact on
+microbes in plants and in the environment, preliminarily conﬁrming
+the safety of CuSA-loaded ZnS@MoS2 nanozyme (Supplementary
+Figs. 49–51). To further conﬁrm that the application concentration of
+CuSA-loaded ZnS@MoS2 nanozyme was non-toxic to tomato plants,
+we assessed the malondialdehyde (MDA) content, SOD activity, POD
+activity, and CAT activity in tomato plant leaves after foliar application
+at 200 μg/mL and roots after root application at 20 μg/mL. The results
+indicated that CuSA-loaded ZnS@MoS2 nanozyme did not induce
+oxidative damage to the tomato plants (Supplementary Fig. 52).
+Similarly, we found that foliar application of 200 μg/mL nanozyme +
+100 μM H2O2 and root application of 20 μg/mL nanozyme + 10 μM
+H2O2 did not induce oxidative damage in tomato plants. This indicated
+that the ·OH of catalytic production by nanozymes from H2O2 did not
+pose any harm to the plants (Supplementary Fig. 53). Notably, we
+observed that the foliar or root application of CuSA-loaded ZnS@MoS2
+nanozyme could induce plant immunity by upregulating the expres-
+sion of NPR1, PR1b1, and PR5 genes (Supplementary Figs. 54 and 55).
+We also evaluated the changes in the contents of Cu, Zn, and Mo
+elements in both plants and soil after the foliar application and root
+application of CuSA-loaded ZnS@MoS2 nanozyme. Foliar application
+of CuSA-loaded ZnS@MoS2 nanozyme facilitated the uptake of Zn and
+Mo elements by the roots, as well as the uptake of Cu, Zn, and Mo
+elements by the shoots (Supplementary Fig. 56). However, there were
+no signiﬁcant changes in the concentrations of Cu, Zn, and Mo ele-
+ments in the soil. Root application of CuSA-loaded ZnS@MoS2 nano-
+zyme facilitated the uptake of Cu and Zn by the roots and Cu and Mo
+by the shoots, while also increasing the soil content of Zn and Mo
+(Supplementary Fig. 57).
+The degradation of nanomaterials in the environment was
+crucial for assessing their biosafety. Thus, we evaluated the degra-
+dation of CuSA-loaded ZnS@MoS2 nanozyme in soil and the infec-
+tious environment around bacteria according to the previous
+reports62,63. The results indicated that over time, Cu in the nanozyme
+primarily existed as residual fraction and organic-bound fraction; Zn
+predominantly occurred as Fe-Mn oxides-bound fraction and
+organic-bound fraction; while Mo was mainly found in the form of
+organic-bound fraction (Supplementary Fig. 58). Furthermore, malic
+acid, H2O2, and horseradish peroxidase (HRP) + H2O2 could promote
+the oxidation of CuSA-loaded ZnS@MoS2 nanozyme (Supplemen-
+tary Figs. 59–61). However, the presence of Cu+, Mo4+/Mo6+, and S2−
+within the CuSA-loaded ZnS@MoS2 nanozyme increased complexity
+to the system, which was conﬁrmed through XPS and previous
+reports regarding H2O2 and HRP + H2O2 interactions63,64. Therefore,
+soil and infectious environment around bacteria could gradually
+degrade the CuSA-loaded ZnS@MoS2 nanozyme, suggesting that
+the nanozyme possessed potential biosafety and long-term efﬁcacy
+in controlling bacterial diseases.
+In vivo antibacterial activity
+Based on the conclusions above, CuSA-loaded ZnS@MoS2 nanozyme
+was utilized via foliar spraying (to control tomato bacterial speck dis-
+ease) and root irrigation (to control tomato bacterial wilt disease). To
+Fig. 4 | In vitro antibacterial activity and mechanism of CuSA-loaded
+ZnS@MoS2 nanozyme. a Inhibition rate of Pst. DC3000 after different concentra-
+tions of thiodiazole copper and CuSA-loaded ZnS@MoS2 nanozyme. Data are pre-
+sented as mean ± SD (n = 3 biological replicates). The asterisk denotes a signiﬁcant
+difference as determined by the independent t-test (two-sided, *p < 0.05, **p < 0.01,
+and ***p < 0.001). 12.5 μg/mL (t = 6.093, df = 4, p = 0.004), 25 μg/mL (t = 30.107, df =
+4, p < 0.001), 50 μg/mL (t = 30.707, df = 4, p < 0.001), 100 μg/mL (t = 53.942, df = 4,
+p < 0.001), and 200 μg/mL (t = 17.631, df = 2.001, p = 0.003). b Inhibition rate of Pst.
+DC3000 after different treatments. The wavelength of the NIR irradiation was set at
+808 nm, with an intensity of 1.00 W/cm2, and an irradiation time of 10 min. Data are
+presented as mean ± SD (n = 3 biological replicates). All values marked with different
+letters are signiﬁcantly different among different treatment groups at p < 0.05 as
+determined by one-way ANOVA with Tukey HSD test (Inhibition rate: F6,
+14 = 3698.097, p < 0.001). All values marked with same letters indicate no signiﬁcant
+difference among different treatment groups. c Bacteria inhibition rate of R. sola-
+nacearum after different concentrations of thiodiazole copper and CuSA-loaded
+ZnS@MoS2 nanozyme. Data are presented as mean ± SD (n = 3 biological replicates).
+The asterisk denotes a signiﬁcant difference as determined by the independent t-test
+(two-sided, *p < 0.05, **p < 0.01, and ***p < 0.001). 2.5 μg/mL (t = 22.861, df = 4,
+p < 0.001), 5 μg/mL (t = 115.865, df = 4, p < 0.001), 10 μg/mL (t = 55.2, df = 4,
+p < 0.001), and 20 μg/mL (t = 101.485, df = 2, p < 0.001). d, e ROS staining ﬂuores-
+cence representative images of Pst. DC3000 and R. solanacearum after different
+treatments (each experiment was repeated three times independently with similar
+results). Scar bar: 20 μm. The wavelength of the NIR irradiation was set at 808 nm,
+with an intensity of 1.00 W/cm2, and an irradiation time of 10 min. f, g SEM repre-
+sentative images of Pst. DC3000 and R. solanacearum after different treatments
+(each experiment was repeated three times independently with similar results). The
+wavelength of the NIR irradiation was set at 808 nm, with an intensity of 1.00 W/cm2,
+and an irradiation time of 10 min. h, i Interaction mechanism of CuSA-loaded
+ZnS@MoS2 nanozyme with the Gram-negative bacterial cell membrane surface was
+calculated by DFT. j Schematic illustration of antibacterial mechanisms. Source data
+are provided as a Source Data ﬁle.
+Article
+https://doi.org/10.1038/s41467-026-70930-1
+Nature Communications|   (2026) 17:4261 
+8
+
+verify the catalytic activity of CuSA-loaded ZnS@MoS2 nanozyme
+within plants, the H2O2 content at the infection sites was measured.
+The results indicated that the H2O2 contents at the infection sites of
+both tomato speck disease and wilt disease were higher than the
+concentrations used in our in vitro experiments (Supplementary
+Fig. 62). Therefore, CuSA-loaded ZnS@MoS2 nanozyme could achieve
+catalyze activity within plant tissues. Uptake and distribution of CuSA-
+loaded ZnS@MoS2 nanozyme in plants further conﬁrmed the accu-
+mulation of nanozyme in apoplast, enabling the reduction of bacterial
+colonization within plant tissues (Supplementary Figs. 63–65). These
+results provided evidence that CuSA-loaded ZnS@MoS2 nanozyme
+could effectively control tomato speck disease and wilt disease. In vivo
+experiments results indicated that CuSA-loaded ZnS@MoS2 nanozyme
+could signiﬁcantly decrease the disease index of tomato speck disease,
+resulting in 21.67% disease index at 7 dpi (Fig. 5a, c), whereas the
+control was 83.33%, ZnO NPs was 51.67%, MoS2 nanosheets was 41.67%,
+CuO NPs was 38.33%, and commercial bactericide thiodiazole copper
+was 35%. The leaf disc assay also demonstrated the excellent curative
+efﬁcacy of CuSA-loaded ZnS@MoS2 nanozyme against tomato speck
+disease
+(Supplementary
+Fig.
+66).
+Furthermore,
+CuSA-loaded
+ZnS@MoS2 nanozyme under NIR irradiation also exhibited better
+curative effect than CuSA-loaded ZnS@MoS2 nanozyme-alone treat-
+ment (Supplementary Fig. 67). For tomato wilt disease, the disease
+index
+after CuSA-loaded ZnS@MoS2
+nanozyme treatment was
+obviously reduced, resulting in 31.67% disease index at 10 dpi (Fig. 5b,
+d), whereas the control was 100%, ZnO NPs was 60%, MoS2 nanosheets
+was 91.67%, CuO NPs was 63.33%, and commercial bactericide thio-
+diazole copper was 75%. These results indicated that CuSA-loaded
+ZnS@MoS2 nanozyme exhibited stronger curative activity against
+tomato speck disease and tomato wilt disease within a short period. To
+evaluate the long-term control effect of CuSA-loaded ZnS@MoS2
+nanozyme, the stability of the nanozyme was assessed under various
+0
+20
+40
+60
+80
+100
+Disease index (%)
+ Control
+ ZnO
+ MoS2
+ CuO
+ Thiodiazole copper
+ Nanozyme
+a
+b
+bc
+c
+c
+d
+a
+Pst. DC3000
+R. solanacearum
+Control
+ZnO
+MoS2
+CuO
+Thiodiazole copper
+Nanozyme
+Adaxial leaf
+Abaxial leaf
+b
+Control
+MoS2
+Thiodiazole copper
+CuO
+ZnO
+Nanozyme
+c
+d
+0
+20
+40
+60
+80
+100
+Disease index (%)
+ Control
+ MoS2
+ Thiodiazole copper
+ CuO
+ ZnO
+ Nanozyme
+a
+ab
+bc
+c
+c
+d
+Fig. 5 | In vivo antibacterial properties of CuSA-loaded ZnS@MoS2 nanozyme.
+a Representative photographs 7 dpi after different foliar application (sterile water,
+55 μg/mL ZnO NPs, 23.8 μg/mL MoS2 nanosheets, 22.8 μg/mL CuO NPs, 200 μg/mL
+thiodiazole copper, and 200 μg/mL CuSA-loaded ZnS@MoS2 nanozyme).
+b Representative photographs 10 dpi after different root application (sterile water,
+5.5 μg/mL ZnO NPs, 2.38 μg/mL MoS2 nanosheets, 2.28 μg/mL CuO NPs, 20 μg/mL
+thiodiazole copper, and 20 μg/mL CuSA-loaded ZnS@MoS2 nanozyme).
+c, d Disease index of tomato speck disease and tomato wilt disease after different
+treatments. Data are presented as mean ± SD (n = 3 biological replicates). All values
+marked with different letters are signiﬁcantly different among different treatment
+groups at p < 0.05. Disease index of tomato speck disease: F5, 12 = 68.3, p < 0.001;
+disease index of tomato wilt disease: F5, 12 = 33.318, p < 0.001. All values marked with
+same letters indicate no signiﬁcant difference among different treatment groups.
+Source data are provided as a Source Data ﬁle.
+Article
+https://doi.org/10.1038/s41467-026-70930-1
+Nature Communications|   (2026) 17:4261 
+9
+
+conditions, including different temperatures (4°C and 25°C), different
+pH levels (pH 5, pH 7, and pH 9), different solvent types (water, etha-
+nol, and PBS), as well as different time (1 d, 7 d, 14 d, 21 d, and 28 d). The
+results indicated that CuSA-loaded ZnS@MoS2 nanozyme exhibited
+excellent stability under various conditions (Supplementary Fig. 68).
+Furthermore, the homogeneity of CuSA-loaded ZnS@MoS2 nanozyme
+in water was also important to the practical applications65. The Tyndall
+effect and polydispersity index were utilized to investigate the
+homogeneity of nanozyme in solution. The results indicated that the
+nanozyme was uniformly dispersed in water over a short term (Sup-
+plementary Fig. 69). Finally, the disease index of CuSA-loaded
+ZnS@MoS2 nanozyme against tomato speck disease and wilt disease
+signiﬁcantly decreased by 41.67% and 36.67% at 20 dpi, respectively
+(Supplementary Fig. 70). Therefore, CuSA-loaded ZnS@MoS2 nano-
+zyme demonstrated a sustained ability to effectively control tomato
+speck disease and wilt disease.
+In summary, we develop a CuSA-loaded ZnS@MoS2 nanozyme
+with highly efﬁcient POD-like and NIR-enhanced activities for the
+control of tomato bacterial speck and tomato bacterial wilt diseases.
+CuSA-loaded ZnS@MoS2 nanozyme shows higher activities than other
+reported POD-like nanozyme. Experimental studies and theoretical
+calculations demonstrate that CuSA-loaded ZnS@MoS2 nanozyme can
+achieve the “capture and kill” bifunctionality by binding to the cell
+wall/outer membrane. Additionally, NIR irradiation can enhance the
+POD-like activity of CuSA-loaded ZnS@MoS2 nanozyme by decreasing
+the activation barrier and increasing the mass transfer rate. In vivo
+bioassay results
+show
+that the
+phytotoxicity-free
+CuSA-loaded
+ZnS@MoS2 nanozyme can effectively inhibit tomato speck disease and
+tomato wilt disease, and its curative effect is higher to that of the
+commercial bactericide thiodiazole copper. These ﬁndings uncover
+the photo-enhanced activity and smart capture mechanism of SA
+nanozymes, deepening the understanding of their antibacterial
+mechanisms, providing a strategy for designing highly efﬁcient and
+speciﬁc antibacterial nanozymes.
+Methods
+Ethical regulations
+This research complies with all relevant ethical regulations, and the
+study protocols are approved by the Subcommittee of Experimental
+Animal Ethics Committee of Guizhou University (Protocol No. EAE-
+2025-E063).
+Synthesis of CuSA-loaded ZnS@MoS2 nanozyme
+The CuSA-loaded ZnS@MoS2 nanozyme was synthesized via a hydro-
+thermal
+method.
+Brieﬂy,
+0.6 mmol
+of
+ZnO
+NPs,
+0.25 mmol
+Na2MoO4·2H2O, 0.03125–0.5 mmol C4H8CuO5, and 3 mmol C2H5NS
+were mixed in 50 mL of ultrapure water through sonication treatment
+for a duration of 30 min. The mixture was subsequently transferred
+into a 100 mL Teﬂon-lined stainless-steel autoclave and subjected to
+heating at 220°C for 12 h. After being cooled to room temperature, the
+obtained sample was thoroughly washed three times with water and
+ethanol, respectively. During the separation process, the centrifugal
+force was 10,911 × g and the duration was 10 min. Finally, the product
+was dried in an oven at 70°C for 8 h.
+POD-like activity of CuSA-loaded ZnS@MoS2 nanozyme
+The POD-like activity of CuSA-loaded ZnS@MoS2 nanozyme was
+evaluated by employing TMB as the substrate in the presence of H2O2.
+The OD652 value was recorded to determine the POD-like activity.
+CuSA-loaded ZnS@MoS2 nanozyme (500 μg/mL, ﬁnal concentration),
+TMB (1 mM, ﬁnal concentration), and H2O2 (200 mM, ﬁnal concentra-
+tion) were added to 0.1 M PBS (pH 5.5) and were incubated for 5 min.
+For steady-state kinetics assays, the system contained 500 μg/mL
+CuSA-loaded ZnS@MoS2 nanozyme in the presence of TMB and H2O2.
+(1) TMB as the substrate: 200 mM H2O2 and different concentrations of
+TMB (50, 100, 200, 500, 700, and 800 μM) were added to the system
+containing CuSA-loaded ZnS@MoS2 nanozyme and were incubated
+for 5 min. (2) H2O2 as the substrate: 1 mM TMB and different con-
+centrations of H2O2 (1, 2, 5, 10, 15, 20, 25, 30, 35, and 40 mM) were
+added to the system containing CuSA-loaded ZnS@MoS2 nanozyme
+and were incubated for 5 min. The reaction rates were plotted against
+their corresponding concentrations of H2O2 or TMB and then ﬁtted
+with the Michaelis–Menten curves. Additionally, a Lineweaver–Burk
+plot was utilized to determine the values of V max and Km. Furthermore,
+the turnover number (TON) was calculated according to Eq. (1).
+TON = V max=½E0
+ð1Þ
+½E0 is the molar concentration of metal in nanozymes.
+NIR-enhanced the POD-like activity of CuSA-loaded ZnS@MoS2
+nanozyme
+The different treatments were set as: TMB (1 mM, ﬁnal concentra-
+tion), TMB (1 mM, ﬁnal concentration) + H2O2 (200 mM, ﬁnal con-
+centration),
+TMB
+(1 mM,
+ﬁnal
+concentration) + CuSA-loaded
+ZnS@MoS2 nanozyme (500 μg/mL, ﬁnal concentration), and TMB
+(1 mM, ﬁnal concentration) + H2O2 (200 mM, ﬁnal concentration) +
+CuSA-loaded ZnS@MoS2 nanozyme (500 μg/mL, ﬁnal concentra-
+tion) were added to 0.1 M PBS (pH 5.5) and were incubated for 5 min
+under NIR or no NIR irradiation, respectively. Then, the OD652 values
+were measured.
+In vitro antibacterial activity assay
+Foliar plant pathogen (Pst. DC3000). According to the previous
+method, the antibacterial experiments were performed with some
+modiﬁcations12. Brieﬂy, Pst. DC3000 cells were incubated in King’s B
+(KB)
+medium
+(glycerol
+1%,
+peptone
+20 g/L,
+K2HPO4
+1.5 g/L,
+MgSO4·7H2O 1.5 g/L, and rifampicin 25 mg/L) with shaking at 28°C and
+180 rpm for 48 h. The obtained bacterial suspension (OD600 = 1.0) was
+diluted to 104 or 105. The bacterial suspension (200 μL) was then mixed
+with varying concentrations of nanomaterial suspensions (200 μL) in
+2 mL centrifuge tubes. The mixed solution was incubated in the dark at
+28°C for 2 h. The mixed solution was spread onto the KB solid medium
+plate using 50 μL. After incubating at a temperature of 28°C for a
+duration of 24 h, the colony-forming units (CFUs) were quantiﬁed and
+recorded. The inhibition rates of different concentrations CuSA-
+loaded ZnS@MoS2 nanozyme and thiodiazole copper against Pst.
+DC3000 were utilized to calculate the EC50 values. The antibacterial
+activity of the nanomaterials was tested by a colony-counting method.
+The inhibition rate (%) was calculated as follows:
+Inhibition rate %
+ð Þ = A0  A
+A0
+× 100
+ð2Þ
+where A0 represents the number of CFU on the control plates, and A
+represents the number of CFU after using different concentrations of
+the sample treatment.
+The H2O2 concentration was optimized to investigate the anti-
+bacterial activity of CuSA-loaded ZnS@MoS2 nanozyme based on its
+POD-like properties and NIR-induced photothermal effect. The above
+diluted bacterial suspension was incubated with different concentra-
+tions (50 μM, 100 μM, 500 μM, 1 mM, 5 mM, and 10 mM) of H2O2. The
+antibacterial activity of the nanomaterials was also tested by a colony-
+counting method. The above diluted bacterial suspension was mixed
+with different samples: PBS, H2O2, CuSA-loaded ZnS@MoS2, CuSA-
+loaded ZnS@MoS2 + H2O2, without and with 808 nm NIR laser irra-
+diation for 10 min in the 2 mL of centrifuge tubes. The ﬁnal con-
+centrations of H2O2 and catalysts were 100 μM and 12.5 μg/mL,
+respectively. The other processes were the same as above.
+Article
+https://doi.org/10.1038/s41467-026-70930-1
+Nature Communications|   (2026) 17:4261 
+10
+
+Root plant pathogen (R. solanacearum). The antibacterial experi-
+ments were conducted following the previous methods25. Brieﬂy, R.
+solanacearum cells were incubated in B medium (tryptone 10 g/L, yeast
+extract 1 g/L, and casein acid hydrolysate 1 g/L) with shaking at 28°C
+overnight. The obtained bacterial suspension (OD600 = 1.0) was diluted
+to 104. Then the bacterial suspension with different treatments (ﬁnal
+concentrations: 0, 2.5, 5, 10, and 20 μg/mL) was directly inoculated
+onto the casamino acid peptone glucose (CPG) agar medium plates.
+The CFU on the agar plates was counted after cultivating for 48 h in an
+incubator. The inhibition rate (%) was calculated according to formula
+(2). Furthermore, the inhibition rates of different concentrations
+CuSA-loaded ZnS@MoS2 nanozyme and thiodiazole copper against R.
+solanacearum were utilized to calculate the EC50 values.
+The H2O2 concentration was optimized to investigate the anti-
+bacterial activity of CuSA-loaded ZnS@MoS2 nanozyme based on its
+POD-like properties. The above diluted bacterial suspension was
+incubated with different concentrations (5, 10, 20, 30, 40, and 50 μM)
+of H2O2. The antibacterial activity of the nanomaterials was also tested
+by a colony-counting method. The above diluted bacterial suspension
+was
+mixed
+with
+different
+samples:
+PBS,
+H2O2,
+CuSA-loaded
+ZnS@MoS2, and CuSA-loaded ZnS@MoS2 + H2O2. The ﬁnal con-
+centrations of H2O2 and catalysts were 10 μM and 2.5 μg/mL, respec-
+tively. The other processes were the same as above.
+Reporting summary
+Further information on research design is available in the Nature
+Portfolio Reporting Summary linked to this article.
+Data availability
+All raw sequence data reported in this paper have been deposited in
+the NCBI Sequence Reading Archive (SRA), with the BioProject login
+number
+PRJNA1372983
+(http://www.ncbi.nlm.nih.gov/bioproject/
+1372983). DFT computational model data is provided in Supplemen-
+tary Data 1. Source data are available for Figs. 1e–j, 2a–g, 3c, 4a–c, h, i,
+5c, d and Supplementary Figs. 1, 3, 4, 7–12, 14–16, 21b–28b, 30b–32b,
+33–39, 40c, d, g, h, 41a–d, g, 42, 43, 44b–d–46b–d, 47, 48b, c, 52–63,
+64b, 66, 67b, 68, 69c, 70b, d in the associated source data ﬁle. Source
+data are provided with this paper. All data underlying this study are
+available from the corresponding author upon request. Source data
+are provided with this paper.
+References
+1.
+Yang, J. et al. Photo-stimuli smart supramolecular self-assembly of
+azobenzene/β-cyclodextrin inclusion complex for controlling plant
+bacterial diseases. Adv. Funct. Mater. 33, 2303206 (2023).
+2.
+Savary, S. et al. The global burden of pathogens and pests on major
+food crops. Nat. Ecol. Evol. 3, 430–439 (2019).
+3.
+Gu, S. et al. Competition for iron drives phytopathogen control by
+natural rhizosphere microbiomes. Nat. Microbiol. 5,
+1002–1010 (2020).
+4.
+Grifﬁn, K. et al. Copper-tolerance in Pseudomonas syringae pv.
+tomato and Xanthomonas spp. and the control of diseases asso-
+ciated with these pathogens in tomato and pepper. A systematic
+literature review. Crop Prot. 96, 144–150 (2017).
+5.
+Li, S. et al. Soil acidiﬁcation aggravates the occurrence of bacterial
+wilt in South China. Front. Microbiol. 8, 703 (2017).
+6.
+Xu, H. et al. Design, synthesis and antifungal activities of novel cis-
+enamides via intermediate derivatization method. Adv. Agrochem.
+2, 97–103 (2023).
+7.
+Wang, D. et al. Nano-enabled pesticides for sustainable agriculture
+and global food security. Nat. Nanotechnol. 17, 347–360 (2022).
+8.
+Ai, Y. et al. Recent advances in nanozymes: from matters to
+bioapplications. Adv. Funct. Mater. 32, 2110432 (2022).
+9.
+Jiang, D. et al. Nanozyme: new horizons for responsive biomedical
+applications. Chem. Soc. Rev. 48, 3683–3704 (2019).
+10.
+Liu, Q. et al. A review on metal-and metal oxide-based nanozymes:
+properties, mechanisms, and applications. Nano-Micro Lett. 13,
+1–53 (2021).
+11.
+Ling, C. et al. Atomic-layered Cu5 nanoclusters on FeS2 with dual
+catalytic sites for efﬁcient and selective H2O2 activation. Angew.
+Chem. Int. Ed. 134, e202200670 (2022).
+12.
+Yu, H. et al. Bi2O3/TiO2@reduced graphene oxide with enzyme-like
+properties efﬁciently inactivates Pseudomonas syringae pv. tomato
+DC3000 and enhances abiotic stress tolerance in tomato. Environ.
+Sci.: Nano 9, 118–132 (2022).
+13.
+Yuan, Y. et al. Stable peptide-assembled nanozyme mimicking dual
+antifungal actions. Nat. Commun. 15, 5636 (2024).
+14.
+Huang, H. et al. Spiky artiﬁcial peroxidases with V-O-Fe pair sites for
+combating antibiotic-resistant pathogens. Angew. Chem. Int. Ed.
+136, e202310811 (2024).
+15.
+van Bruggen, A. H. et al. Plant disease management in organic
+farming systems. Pest Manag. Sci. 72, 30–44 (2016).
+16.
+Camejo, D. et al. Reactive oxygen species, essential molecules,
+during plant-pathogen interactions. Plant Physiol. Biochem. 103,
+10–23 (2016).
+17.
+Wu, H. et al. A photomodulable bacteriophage-spike nanozyme
+enables dually enhanced bioﬁlm penetration and bacterial capture
+for photothermal-boosted catalytic therapy of MRSA infections.
+Adv. Sci. 10, 2301694 (2023).
+18.
+Fang, Y. et al. Near-infrared-responsive CuS@Cu-MOF nano-
+composite with high foliar retention and extended persistence for
+controlling strawberry anthracnose. J. Control. Release 367,
+837–847 (2024).
+19.
+Jiang, P. et al. Tuning oxidant and antioxidant activities of ceria by
+anchoring copper single-site for antibacterial application. Nat.
+Commun. 15, 1010 (2024).
+20. Chen, Y. et al. Thermal atomization of platinum nanoparticles into
+single atoms: an effective strategy for engineering high-
+performance nanozymes. J. Am. Chem. Soc. 143,
+18643–18651 (2021).
+21.
+Wu, J. et al. Enhancing radiation-resistance and peroxidase-like
+activity of single-atom copper nanozyme via local coordination
+manipulation. Nat. Commun. 15, 6174 (2024).
+22. Geng, H. et al. Highly adhesive and catalytic VOxC nanosheets with
+strong antibacterial activity. Nano Today 52, 101989 (2023).
+23. Ahmed, R. et al. Multivalent bacteria binding by ﬂexible poly-
+cationic microsheets matching their surface charge density. Adv.
+Mater. Interfaces 7, 1902066 (2020).
+24. Xu, S. et al. Vacancies on 2D transition metal dichalcogenides elicit
+ferroptotic cell death. Nat. Commun. 11, 3484 (2020).
+25. Liang, W. et al. pH-responsive on-demand alkaloids release from
+core-shell ZnO@ZIF-8 nanosphere for synergistic control of bac-
+terial wilt disease. ACS Nano 16, 2762–2773 (2022).
+26. Ji, L. et al. One-pot synthesis of porous 1T-phase MoS2 integrated
+with single-atom Cu doping for enhancing electrocatalytic hydro-
+gen evolution reaction. Appl. Catal. B: Environ. 251, 87–93 (2019).
+27.
+Sawada, H. et al. Atomic-resolution STEM imaging of graphene at
+low voltage of 30 kV with resolution enhancement by using large
+convergence angle. Phys. Rev. Lett. 114, 166102 (2015).
+28. de Graaf, S. et al. Resolving hydrogen atoms at metal-metal hydride
+interfaces. Sci. Adv. 6, eaay4312 (2020).
+29. Liu, C. et al. Direct observation of oxygen atoms taking tetrahedral
+interstitial sites in medium-entropy body-centered-cubic solutions.
+Adv. Mater. 35, 2209941 (2023).
+30. Azam, A. et al. Formation and characterization of ZnO nanopowder
+synthesized by sol-gel method. J. Alloy. Compd. 496,
+399–402 (2010).
+31.
+Wang, H. et al. Electrocatalytic determination of nitrite based on
+straw cellulose/molybdenum sulﬁde nanocomposite. Biosens.
+Bioelectron. 85, 692–697 (2016).
+Article
+https://doi.org/10.1038/s41467-026-70930-1
+Nature Communications|   (2026) 17:4261 
+11
+
+32. Feng, C. et al. Effect of temperature on simultaneous separation
+and extraction of hemicellulose using p-toluenesulfonic acid
+treatment at atmospheric pressure. Bioresour. Technol. 348,
+126793 (2022).
+33. Li, C. et al. SERS-and absorbance-based catalytic assay for deter-
+mination of isocarbophos using aptamer-modiﬁed FeMOF nano-
+zyme and in situ generated silver nanoparticles. Microchim. Acta
+190, 4 (2023).
+34. Zhao, P. et al. A SERS nano-tag-based magnetic-separation strategy
+for highly sensitive immunoassay in unprocessed whole blood.
+Talanta 198, 527–533 (2019).
+35. Jacob, M. & Arof, A. FTIR studies of DMF plasticized polyvinyledene
+ﬂuoride based polymer electrolytes. Electrochim. Acta 45,
+1701–1706 (2000).
+36. Manthey, J. A. Fourier transform infrared spectroscopic analysis of
+the polymethoxylated ﬂavone content of orange oil residues. J.
+Agric. Food Chem. 54, 3215–3218 (2006).
+37. Nie, W. et al. High sensitivity surface plasmon resonance biosensor
+for detection of microRNA based on gold nanoparticles-decorated
+molybdenum sulﬁde. Anal. Chim. Acta 993, 55–62 (2017).
+38. Song, Y. et al. Hydrothermal post-synthesis of HZSM-5 zeolite to
+enhance the coke-resistance of Mo/HZSM-5 catalyst for methane
+dehydroaromatization reaction: reconstruction of pore structure
+and modiﬁcation of acidity. Appl. Catal. A-Gen. 317, 266–274
+(2007).
+39. McCreary, K. M. et al. Large-area synthesis of continuous and uni-
+form MoS2 monolayer ﬁlms on graphene. Adv. Funct. Mater. 24,
+6449–6454 (2014).
+40. Ling, P. et al. Versatile three-dimensional porous Cu@Cu2O aerogel
+networks as electrocatalysts and mimicking peroxidases. Angew.
+Chem. Int. Ed. 130, 6935–6940 (2018).
+41.
+Mamba, G. et al. Evidence for the degradation of an emerging
+pollutant by a mechanism involving iso-energetic charge transfer
+under visible light. Appl. Catal. B-Environ. 233, 175–183
+(2018).
+42. Zhang, H. et al. In situ encapsulation engineering boosts the elec-
+trochemical performance of highly graphitized N-doped porous
+carbon-based copper-cobalt selenides for bifunctional oxygen
+electrocatalysis. Nanoscale 13, 17663–17674 (2021).
+43. Kozhevnikova, N. S. et al. One-pot green synthesis of copper sulﬁde
+(I) thin ﬁlms with p-type conductivity. Mater. Chem. Phys. 242,
+122447 (2020).
+44. Wang, J. H. et al. Three-dimensional zinc-seeded carbon nanoﬁber
+architectures as lightweight and ﬂexible hosts for a highly rever-
+sible zinc metal anode. ACS Nano 17, 19087–19097
+(2023).
+45. Li, H. et al. An efﬁcient and stable inverted structure organic solar
+cell using ZnO modiﬁed by 2D ZrSe2 as a composite electron
+transport layer. Adv. Funct. Mater. 34, 2402128 (2024).
+46. Suguna, A. et al. Design and fabrication of Zeolite Socony Mobil-5
+incorporated ZnO composite for enhanced visible light photo-
+catalytic performance. Chem. Phys. Impact 8, 100621 (2024).
+47. Yuan, H. et al. ZnO nanosheets abundant in oxygen vacancies
+derived from metal-organic frameworks for ppb-level gas sensing.
+Adv. Mater. 31, 1807161 (2019).
+48. Kloprogge, J. T. et al. XPS study of the major minerals in bauxite:
+gibbsite, bayerite and (pseudo-)boehmite. J. Colloid Interface Sci.
+296, 572–576 (2006).
+49. Lyu, L. et al. Selective H2O2 conversion to hydroxyl radicals in the
+electron-rich area of hydroxylated C-g-C3N4/CuCo-Al2O3. J. Mater.
+Chem. A 5, 7153–7164 (2017).
+50. Zhou, J. et al. Photothermally triggered copper payload release for
+cuproptosis-promoted cancer synergistic therapy. Angew. Chem.
+Int. Ed. 62, e202213922 (2023).
+51.
+Suganami, M. et al. Co-overproducing Rubisco and Rubisco acti-
+vase enhances photosynthesis in the optimal temperature range in
+rice. Plant Physiol. 185, 108–119 (2021).
+52. Amiour, S. D. & Hambaba, L. Effect of pH, temperature and some
+chemicals on polyphenoloxidase and peroxidase activities in har-
+vested Deglet Nour and Ghars dates. Postharvest Biol. Technol. 111,
+77–82 (2016).
+53. Gu, Y. et al. Oxidase mimic graphdiyne for efﬁcient superoxide
+generation in wide pH ranges. Adv. Funct. Mater. 32, 2110192 (2022).
+54. Wang, L. et al. Defect-rich adhesive molybdenum disulﬁde/rGO
+vertical heterostructures with enhanced nanozyme activity for
+smart bacterial killing application. Adv. Mater. 32, 2005423 (2020).
+55. Yuan, H. et al. Exploration of the existence forms and patterns of
+dissolved oxygen molecules in water. Nano-Micro Lett. 16,
+1–13 (2024).
+56. Dong, H. et al. Depletable peroxidase-like activity of Fe3O4 nano-
+zymes accompanied with separate migration of electrons and iron
+ions. Nat. Commun. 13, 5365 (2022).
+57. Xu, D. et al. Rational design of MoS2-supported Cu single-atom
+catalysts by machine learning potential for enhanced peroxidase-
+like activity. Nanoscale 15, 6686–6695 (2023).
+58. Nederberg, F. et al. Biodegradable nanostructures with selective
+lysis of microbial membranes. Nat. Chem. 3, 409–414 (2011).
+59. Zhao, L. et al. Nanobiotechnology-based strategies for enhanced
+crop stress resilience. Nat. Food 3, 829–836 (2022).
+60. Kah, M. et al. Nano-enabled strategies toenhance crop nutrition and
+protection. Nat. Nanotechnol. 14, 532–540 (2019).
+61.
+Pulizzi, F. Nano in the future of crops. Nat. Nanotechnol. 14,
+507–507 (2019).
+62. Kurapati, R. et al. Enzymatic biodegradability of pristine and func-
+tionalized transition metal dichalcogenide MoS2 nanosheets. Adv.
+Funct. Mater. 27, 1605176 (2017).
+63. Yuan, J. et al. Root exudates drive the soil-borne legacy of above-
+ground pathogen infection. Microbiome 6, 1–12 (2018).
+64. Li, J. et al. Molybdenum disulﬁde-supported cuprous oxide nano-
+composite for near-infrared-I light-responsive synergistic anti-
+bacterial therapy. ACS Nano 18, 16184–16198 (2024).
+65. Gao, C. et al. A user-friendly herbicide derived from photo-
+responsive supramolecular vesicles. Nat. Commun. 9, 2967 (2018).
+Acknowledgements
+This work was supported by the Scientiﬁc Research Project of Higher
+Education Department of Guizhou Province (Youth Project) (2022-116,
+L.C.) and the Guizhou University Natural Science Special Post Special
+Fund (2021-42, L.C.).
+Author contributions
+H.J. and L.C. conceived and designed the study and supervised the
+project. H.J. conducted experiments, analyzed the data, and wrote the
+initial manuscript. Y.X. and Z.F.M. performed nanomaterial synthesis
+experiments and antibacterial experiments. L.C., G.J.F., Z.W.L., and S.Y.
+gave some suggestions for the study and advanced project direction.
+Z.W.L. provided technical support for both transmission electron
+microscopy and scanning electron microscopy. All the authors dis-
+cussed the results and commented on the manuscript.
+Competing interests
+The authors declare no competing interests.
+Article
+https://doi.org/10.1038/s41467-026-70930-1
+Nature Communications|   (2026) 17:4261 
+12
+
+Additional information
+Supplementary information The online version contains
+supplementary material available at
+https://doi.org/10.1038/s41467-026-70930-1.
+Correspondence and requests for materials should be addressed to
+Lin Cai.
+Peer review information Nature Communications thanks Sumati Bhatia
+and the other, anonymous, reviewer(s) for their contribution to the peer
+review of this work. A peer review ﬁle is available.
+Reprints and permissions information is available at
+http://www.nature.com/reprints
+Publisher’s note Springer Nature remains neutral with regard to jur-
+isdictional claims in published maps and institutional afﬁliations.
+Open Access This article is licensed under a Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International License,
+which permits any non-commercial use, sharing, distribution and
+reproduction in any medium or format, as long as you give appropriate
+credit to the original author(s) and the source, provide a link to the
+Creative Commons licence, and indicate if you modiﬁed the licensed
+material. You do not have permission under this licence toshare adapted
+material derived from this article or parts of it. The images or other third
+party material in this article are included in the article’s Creative
+Commons licence, unless indicated otherwise in a credit line to the
+material. If material is not included in the article’s Creative Commons
+licence and your intended use is not permitted by statutory regulation or
+exceeds the permitted use, you will need to obtain permission directly
+from the copyright holder. To view a copy of this licence, visit http://
+creativecommons.org/licenses/by-nc-nd/4.0/.
+© The Author(s) 2026
+Article
+https://doi.org/10.1038/s41467-026-70930-1
+Nature Communications|   (2026) 17:4261 
+13

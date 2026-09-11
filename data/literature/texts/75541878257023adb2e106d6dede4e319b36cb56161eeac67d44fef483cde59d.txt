@@ -1,0 +1,2151 @@
+Received: 27 February 2026
+Revised: 12 March 2026
+Accepted: 17 March 2026
+Published: 19 March 2026
+Copyright: © 2026 by the authors.
+Licensee MDPI, Basel, Switzerland.
+This article is an open access article
+distributed under the terms and
+conditions of the Creative Commons
+Attribution (CC BY) license.
+Review
+Multifaceted Role of Copper Homeostasis in Gut Health: From
+Molecular Mechanisms to Therapeutic Interventions
+Fucheng Lu †
+, Xuchen Wang †, Xiaoyan Xue, Liqiang Liu, Dongmei Li
+, Anfang Liu, Simeng Qin *
+and Lingbin Liu *
+College of Animal Science and Technology, Southwest University, Beibei, Chongqing 400715, China;
+18178001293@163.com (F.L.); m13920074889@163.com (X.W.); luvsic177@163.com (X.X.);
+liuliqiang0207@163.com (L.L.); ldm0175@163.com (D.L.); liuanfang@swu.edu.cn (A.L.)
+* Correspondence: smqin13@swu.edu.cn (S.Q.); liulb515@163.com (L.L.)
+† These authors contributed equally to this work.
+Highlights
+What are the main findings?
+•
+This review delineates the molecular machinery of intestinal copper absorption and
+transport, focusing on key transporters and regulatory mechanisms.
+•
+We elucidate how copper homeostasis acts as a central modulator of gut iron metabolism,
+barrier integrity, mucosal immunity, the microbiome, and the gut–brain/liver axes.
+What are the implications of the main findings?
+•
+The pathophysiological roles of copper dyshomeostasis in Menkes disease, Wilson
+disease, and intestinal cancers are comprehensively discussed.
+•
+We explore the therapeutic potential and mechanisms of copper-targeting agents in
+oncology, evaluating current strategies and future directions.
+Abstract
+Intestinal copper homeostasis governs gut health through its dual roles as an enzymatic
+cofactor and signaling mediator. This review discusses the molecular basis of copper
+absorption/transport, genetic regulation, and its functional impacts. Copper-dependent
+enzymes maintain intestinal barrier function and metabolism, while copper availability
+shapes the composition of gut microbiota and mucosal immunity. The dysregulation of
+copper homeostasis, specifically pathological accumulation, contributes to the development
+of CRC by inducing dysbiosis of gut microbiota, chronic inflammation, and metastasis.
+This review systematically evaluates copper-targeted therapies and the associated unre-
+solved challenges. Future efforts should prioritize defining cell-specific copper handling,
+metal interaction networks, and the copper–gut microbiota–immune axis in non-cancer
+pathologies. Moreover, future studies should also focus on developing stratified biomarker
+panels and spatially precise interventions to harness copper biology for diagnostic and
+therapeutic innovation.
+Keywords: copper; copper homeostasis; gut health; intestinal immunity; dysregulation of
+copper homeostasis
+1. Introduction
+Copper is an essential trace element for all eukaryotes, serving as an indispensable
+cofactor for enzymes involved in aerobic respiration and antioxidant defense [1]. However,
+Cells 2026, 15, 545
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+2 of 37
+the redox activity of copper presents a dual threat: excessive Cu+/Cu2+ ions catalyze
+the generation of Reactive Oxygen Species (ROS), causing damage to DNA, lipids, and
+proteins [2], while their direct binding to lipid-acylated Tricarboxylic Acid (TCA) cycle
+proteins induces aggregation, loss of iron–sulfur clusters, and cuproptosis [3]. These dual
+effects necessitate evolutionarily conserved homeostatic mechanisms to balance the vital
+functions against their inherent toxicity.
+In daily diets, the main dietary sources of copper are generally nuts, whole grains,
+seafood, and organ meats [4], with an approximate daily intake of 0.9 mg for adults [5].
+Copper metabolism in the human body is a systemic process involving the coordinated
+action of multiple organs. The intestine serves as the primary site of copper absorption
+and initial regulatory hub, controlling the uptake and transport of dietary copper into the
+portal circulation [6]. The liver functions as the central hub of copper metabolism, receiving
+copper via the portal vein, where it is stored, incorporated into copper-dependent proteins,
+and systemically distributed through biliary excretion and bloodstream regulation [7].
+The kidneys contribute to copper homeostasis through renal excretion and reabsorption
+mechanisms [8]. Additionally, copper is utilized and stored in various organs, including
+the brain, heart, bones, and skeletal muscles, where it plays essential roles in physiolog-
+ical functions [6]. Copper homeostasis imbalance can lead to either deficiency or excess,
+resulting in multisystem clinical manifestations. Copper deficiency may be classified as
+hereditary (e.g., Menkes disease) or acquired, with the latter being more common. It is
+frequently misdiagnosed as myelodysplastic syndrome or vitamin B12 deficiency, and de-
+layed treatment may lead to irreversible neurological damage. Copper excess is primarily
+associated with the genetic disorder Wilson disease.
+The triple function of the intestine, including absorption, excretion, and storage,
+establishes it as the “first gateway” for systemic copper homeostasis [9,10]. Critically, the
+local intestinal copper contents further modulate host health by shaping the composition
+of gut microbiota, as well as immune microenvironments: the physiological levels sustain
+symbiosis, while excess copper activates bacterial efflux pumps, thereby fostering antibiotic
+resistance and dysbiosis [3,11].
+Copper homeostasis is dynamically regulated by transporters, chaperones, and chela-
+tors and maintains intestinal integrity [12]. Its disruption shows multifaceted pathology.
+Dysregulated copper can impair iron absorption via iron–sulfur cluster inhibition, inducing
+anemia [10], and microbial dysbiosis promotes inflammation [13]. Consequently, excessive
+copper accumulation can initiate a vicious cycle.
+Gastrointestinal disorders are heterogeneous and fall into three main categories: in-
+flammatory, infectious, and metabolic, with distinct etiologies and clinical traits. Inflamma-
+tory Bowel Disease, a chronic gastrointestinal inflammatory condition comprising Crohn’s
+disease and ulcerative colitis, arises from complex interactions between genetic suscepti-
+bility, environmental triggers, gut dysbiosis, and dysregulated immunity. This triggers
+chronic inflammation, barrier damage, and tissue injury, marked by relapsing-remitting
+courses and intestinal/extra-intestinal manifestations linked to microbial and metabolic
+shifts [14,15]. Infectious enteritis is acute intestinal inflammation caused by pathogenic
+bacteria, viruses, parasites or toxins, presenting with diarrhea, abdominal cramps and fever,
+transmitted via contaminated sources or person-to-person contact; it is generally acute but
+severe in immunocompromised patients. Metabolic gut disorders, encompassing inherited
+and acquired types, involve gut-metabolism crosstalk: inherited forms include lactose
+intolerance, while acquired ones feature non-alcoholic fatty liver disease and diabetes-
+related gut dysfunction. Notably, disrupted host-microbial metabolism is also a key IBD
+pathophysiological feature.
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+3 of 37
+In inflammatory states, it induces ROS overproduction and intestinal barrier dysfunc-
+tion, while in CRC, elevated copper levels drive tumor progression via pro-angiogenic
+signaling and cuproptosis [2,16]. Cuproptosis, a newly identified form of copper-dependent
+cell death, plays a complex and critical role in the initiation, progression, and treatment of
+intestinal cancers, particularly CRC. The core mechanism involves the excessive accumula-
+tion of copper ions (Cu2+) within cells, which subsequently targets lipoylated tricarboxylic
+acid (TCA) cycle proteins in the mitochondrial respiratory chain (e.g., DLAT). This leads
+to the aberrant aggregation of these proteins, disruption of iron–sulfur cluster protein
+stability, and eventual mitochondrial dysfunction, culminating in proteotoxic stress and cell
+death [17,18]. Therefore, understanding the complex interactive mechanisms among copper
+homeostasis, gut physiology, and intestinal disease pathogenesis is crucial for developing
+novel therapeutic strategies.
+2. Molecular Mechanisms Governing Intestinal Copper Homeostasis
+2.1. Luminal Reduction and Apical Uptake
+The human body acquires copper primarily from dietary sources and drinking water.
+It is predominantly absorbed in the duodenum, with additional uptake along the small
+intestine [19]. Its absorption requires the enzymatic reduction of Cu2+ to Cu+, a process
+mediated by specific metallo-reductases, including the Six-Transmembrane Epithelial
+Antigen of the Prostate (STEAP) family [20,21]. Cu+ is primarily transported across cellular
+membranes in intestinal and somatic tissues via two major copper permease transporters,
+including Solute Carrier Family 31 Member 1/Copper Transport protein 1 (SLC31A1/CTR1)
+and SLC31A2/CTR2 of the SLC31 copper transporter family [22]. CTR1 functions as a
+high-affinity Cu+ importer and has highly conserved structural and functional features
+among eukaryotes. It is localized to the plasma membrane and intracellular vesicles,
+highlighting its importance in maintaining cellular copper homeostasis [23]. It is localized
+to the apical membrane of enterocytes in diverse species, including Drosophila melanogaster,
+mice, rats, and pigs [23–26]. Further studies have shown that CTR1 is distributed not only
+on both apical and basolateral membranes but also within intracellular compartments of
+enterocytes [26]. Moreover, its expression is dynamically regulated by copper availability:
+it degrades under high copper concentrations to prevent toxicity, while the increased
+membrane trafficking promotes copper uptake during deficiency [27]. SLC11A2/Divalent
+Metal Transporter 1 (SLC11A2/DMT1)-mediated compensatory uptake may bypass the
+functional impairment of SLC31A1 (Figure 1) [28].
+2.2. Intracellular Buffering and the Labile Copper Pool
+Free copper displays potent cytotoxicity; therefore, following cellular uptake, cop-
+per ions are either incorporated into copper-dependent enzymes or stored in non-toxic
+forms. The intracellular free copper concentrations are strictly maintained at mini-
+mal levels through high-affinity chelation by Metallothioneins (MTs) and Glutathione
+(GSH) [29]. GSH is a tripeptide comprising glutamate, cysteine, and glycine residues.
+GSH plays two essential roles in copper homeostasis: (1) it serves as the major intra-
+cellular copper buffer via direct ion chelation and (2) it functions as the likely initial
+copper acceptor following cellular uptake. The resulting copper–GSH complex can
+subsequently deliver Cu+ ions either to specific chaperones for biological incorporation
+or to MTs for detoxification [30–32].
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+4 of 37
+Figure 1. A diagram of cellular copper transport and metabolism. Abbreviations: ATP7A: ATPase
+Copper Transporting Alpha; ATP7B: ATPase Copper Transporting Beta; SLC31A1: Solute Carrier
+Family 31 Member 1; SLC31A2: Solute Carrier Family 31 Member 2; STEAP: Six-Transmembrane
+Epithelial Antigen of the Prostate; CCS: Copper Chaperone for Superoxide Dismutase; COX17:
+Cytochrome c Oxidase Copper Chaperone 17; ATOX1: Antioxidant 1 Copper Chaperone; MT:
+Metallothionein; SOD1: Superoxide Dismutase 1; SCO1: Synthesis of Cytochrome C Oxidase 1; SCO2:
+Synthesis of Cytochrome c Oxidase 2; CCO: Cytochrome c Oxidase.
+Within cells, oxidation-state-specific labile copper pools exist in both Cu+ and Cu2+
+forms, functioning as dynamic signaling molecules that participate in the regulation of
+diverse biological processes. Copper exhibits heterogeneous distribution among organelles,
+establishing subcellular concentration gradients. Lysosomes serve as major copper storage
+compartments, with approximately 57.3% of cellular copper localized in lysosome-enriched
+large granule fractions in bovine hepatocytes [33]. Lysosomal copper mobilization depends
+on the coordinated action of the autophagy–lysosome pathway and the copper transporter
+Atp7a. In senescent cells, reduced Atp7a expression and impaired autophagic function lead
+to lysosomal copper accumulation. Activation of autophagy by rapamycin restores copper
+efflux capacity in aging cells, where copper accumulation is accompanied by diminished
+lysosomal degradative function. The synergistic regulation of copper homeostasis by Atp7a
+and the autophagy–lysosome pathway is further evidenced by exacerbated copper accu-
+mulation in Atp7a-deficient senescent cells such as Mobr MEFs [34]. Mitochondria harbor
+a chemically reactive Cu2+ pool that sustains metabolic and epigenetic reprogramming
+by catalyzing NAD(H) redox cycling, thereby promoting inflammatory responses [35].
+This organelle-specific copper pool operates independently from lysosomal storage and
+contributes to distinct physiological functions.
+2.3. Copper Chaperone Networks and Mitochondrial Delivery
+The intracellular copper trafficking is precisely regulated through specialized chap-
+erone proteins, including the Copper Chaperone for SOD (CCS). This metallochaperone
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+5 of 37
+specifically delivers copper ions to their cognate targets, such as the cytoplasmic Cu/Zn-
+SOD1 [36,37]. CCS catalyzes the dismutation of superoxide radicals into oxygen and
+hydrogen peroxide. The antioxidant enzyme SOD1 is localized primarily in the cytoplasm,
+as well as in a minor fraction in mitochondrial intermembrane space.
+The Cytochrome c Oxidase Copper Chaperone 17 (COX17), a copper chaperone,
+can specifically deliver copper ions to the mitochondrial membrane proteins, including
+Synthesis of Cytochrome C Oxidase 1 (SCO1) and SCO2, which are essential for the COX
+assembly [38]. The COX assembly contains two catalytic subunits: COX1 and COX2. These
+subunits interact with copper at distinct active sites: COX1 at the CuB center and COX2
+at the CuA site [39]. The mitochondrial copper chaperone COX17, which is localized to
+the intermembrane space, can mediate the transfer of cytoplasmic copper to the inner
+membrane for COX biogenesis. [40,41]. Additionally, COX17 also delivers copper to the
+COX1 subunit via COX11 [38,42].
+2.4. Basolateral Export and Systemic Distribution
+The P-type ATPases, including ATP7A and ATP7B, function as the major cellular
+copper efflux transporters. These ATPases share about 60% sequence homology and coor-
+dinately regulate systemic copper homeostasis [43]. The cytoplasmic Cu+ delivery to both
+transporters at the Trans-Golgi Network (TGN) is mediated by copper chaperone Antioxi-
+dant 1 Copper Chaperone (ATOX1) [44]. ATP7A undergoes continuous recycling between
+the TGN and plasma membrane, while ATP7B transfers between the TGN and cytoplasmic
+vesicles [45,46]. ATP7A is constitutively localized at the TGN in most tissues and supplies
+copper for cuproenzyme biosynthesis [46,47], relocating to the plasma membrane during
+copper excess to mediate efflux [44,48].
+In the intestinal lumen, reduced copper enters enterocytes primarily via CTR1, binds
+to ATOX1, and is exported into the circulation by ATP7A. In contrast, the liver, acting as a
+central metabolic hub, also takes up copper through CTR1 but distributes it to key enzymes
+such as superoxide dismutase via chaperones including CCS and SCO1. The key distinction
+lies in the handling of copper excess: hepatocytes store copper through metallothioneins
+or excrete it into bile via ATP7B, whose vesicular trafficking is dynamically regulated by
+intracellular copper levels. Intestinal epithelial cells lack this copper-responsive regula-
+tory mechanism, underscoring a fundamental difference in copper homeostasis between
+absorptive and regulatory tissues [49].
+2.5. Transcriptional and Post-Translational Regulation
+The expression of copper transporters is dynamically modulated by copper availability.
+Current studies indicate two distinct mechanisms modulating SLC31A1 expression and
+function in copper absorption: (1) post-translational regulation through copper-dependent
+endocytosis and degradation [50] and (2) the SLC31A1 regulatory network is a multidi-
+mensional dynamic system driven by Sp1 as the core transcriptional regulator, mediated
+by HIFs for hypoxic adaptation, modulated by MTF-1 in response to metal stress, finely
+tuned by microRNAs at the post-transcriptional level, and integrated with inflammatory
+factors that transduce microenvironmental signals [51–53].
+The apical-basal polarity of intestinal epithelial cells underpins their barrier and ab-
+sorptive functions, with the polarized localization and trafficking dynamics of copper
+transporters such as ATP7A and ATP7B playing critical roles. Under low copper condi-
+tions, both ATP7A and ATP7B reside in distinct subdomains of the trans-Golgi network
+(TGN). Upon copper stimulation, ATP7A traffics to the basolateral membrane, whereas
+ATP7B translocates to the apical membrane via recycling endosomes, apical sorting en-
+dosomes, and apical recycling endosomes [54]. The clathrin adaptor protein complex
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+6 of 37
+1 (AP-1) serves as a core regulator of this polarity. Knockout of AP-1 disrupts ATP7A
+polarity, resulting in its mislocalization to both apical and basolateral membranes, while
+ATP7B, although losing TGN retention, retains apical membrane localization in a copper-
+independent manner [54]. Auxiliary mechanisms support polarity maintenance. Vesicle
+tethering complexes, such as the exocyst complex, contribute to apical-basal polarity by an-
+choring secretory vesicles to specific membrane domains [55]. V0-ATPase maintains brush
+border integrity and apical polarity modules by regulating RAB-11-positive endosomes and
+SNAP-29-mediated trafficking; its disruption leads to microvillus inclusion disease-like phe-
+notypes [56]. Transcytosis, exemplified by basolateral-to-apical transport of CFTR, serves
+as a corrective mechanism for polarity errors, rescuing mis-sorted proteins from basolateral
+mistargeting [57].
+Microenvironmental gradients along the crypt-villus axis, such as bone morphogenetic
+protein (BMP) signaling, regulate enterocyte differentiation and influence copper trans-
+porter expression and function. Spatially, stem cells and progenitor cells at the crypt base
+predominantly express the copper importer CTR1, while differentiated enterocytes at the
+villus tip exhibit high expression of copper exporters ATP7A and the C. elegans homolog
+CUA-1 [58]. BMP signaling, which increases along the villus axis, drives functional zonation
+by regulating transcriptional programs: crypt cells prioritize proliferation, whereas villus
+cells specialize in absorption and metal efflux [59]. Dynamic regulation maintains copper
+homeostasis. Under copper deficiency, CUA-1 localizes to the basolateral membrane to
+facilitate efflux into the circulation; under copper overload, it relocates to lysosome-related
+organelles such as gut granules for sequestration and detoxification. An isoform, CUA-1.2,
+lacking the N-terminal domain, is constitutively targeted to the basolateral membrane,
+providing basal efflux capacity [58]. Disruption of the crypt-villus gradient, such as through
+defective BMP signaling, leads to dysregulated copper transporter expression and impaired
+systemic copper homeostasis [59].
+Goblet cells and Paneth cells, as specialized intestinal epithelial cells, participate in
+copper handling in contexts related to immune defense and metal homeostasis, though
+mechanistic insights remain limited. In goblet cells, regional specification is influenced
+by BMP signaling, with antimicrobial peptide genes such as RegIIIγ being upregulated at
+the villus tip, potentially contributing to copper-dependent immune defense [59]. Copper
+overload induces oxidative stress in goblet cells, downregulating copper chaperone genes
+such as COX17 and ATOX1, thereby impairing intracellular copper buffering capacity [60].
+3. Multidimensional Regulation of Gut Health by Copper Homeostasis
+3.1. Core Regulation at the Molecular and Cellular Level
+Copper is essential for key enzymes that regulate intestinal cell function, especially in
+regulating redox. In COX, copper enables mitochondrial energy metabolism by coupling
+the mediation of electron transfer kinetics during oxygen reduction with proton transloca-
+tion to drive ATP synthesis [61,62]. Beyond energy metabolism, copper-dependent SOD1
+catalyzes superoxide dismutation, thereby critically protecting intestinal epithelial cells
+from oxidative damage. The SOD1 activity is modulated by copper availability through
+interactions with chaperones, such as ATOX1 and CCS; copper deficiency impairs antiox-
+idant defenses, while its overload disrupts SOD1 dimerization via COMMD1 (Copper
+Metabolism Domain Containing 1) [63–65]. Copper further regulates gut homeostasis
+through amine oxidases. The activity of diamine oxidase (AOC1), which catalyzes the
+degradation of extracellular histamine in intestinal tissues, is copper-dependent and im-
+plicated in histamine intolerance and oncogenesis [66–68]. On the other hand, LOXL4
+(Lysyl Oxidase Homolog 4) mediates extracellular matrix (ECM) stabilization via colla-
+gen/elastin cross-linking and affects cancer progression [69–71]. Additionally, hephaestin
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+7 of 37
+is a copper-dependent ferroxidase, which enables dietary iron efflux from duodenal en-
+terocytes. Its expression is regulated by iron status and genetic loss, causing enterocytic
+iron retention [72,73]. Collectively, these copper-dependent enzymes integrate intracellular
+processes with the extrinsic microenvironmental regulation in the gut (Table 1).
+Table 1. Function and cell-specific expression of Cu-dependent enzymes in the intestine.
+Enzyme
+Function
+References
+Cytochrome c oxidase
+Electron transfer and oxygen reduction, proton
+pumping and energy conversion, and structural
+features and metal centers
+[74]
+Cu/Zn-dependent superoxide
+dismutase 1
+Antioxidant defense, immune regulation,
+inflammatory response, and gene transcription
+regulation
+[75]
+Cu-dependent amino-oxidase 1
+(diamine oxidase)
+Diamine metabolism and maintenance of intestinal
+barrier function
+[76,77]
+Peptidylglycine α-amidating
+monooxygenase
+Catalysis of the amidation reaction
+[78]
+Lysyl oxidase homologue 4
+Deamination of lysine and hydroxylysine residues of
+collagens and elastin
+[79]
+Heparin
+Ferroxidase: facilitates iron efflux from the cell
+[80]
+Copper homeostasis functions as the central regulator of intestinal signaling path-
+ways that govern both iron absorption and barrier integrity. DMT1 mainly mediates iron
+transport [81]; however, emerging evidence suggests it may also facilitate copper uptake
+under certain physiological conditions. A study using Belgrade rat models (b/b vs. +/b)
+demonstrated that the brush border membrane vesicles of DMT1-deficient mice exhibited
+significantly impaired copper uptake under non-energized conditions, while the copper
+uptake was maintained in energized vesicles through the ATP-dependent transport mecha-
+nisms [82]. These findings suggest that DMT1 may function as a secondary copper importer
+during specific conditions, such as copper excess.
+The physiological relationship between iron and copper metabolism further compli-
+cates the assessment of DMT1 function. Iron deficiency modulates expression of copper
+transporters; however, the exact role of DMT1 in copper transport remains controver-
+sial [83–86]. Everted gut sac experiments showed that iron deficiency in +/b rats signifi-
+cantly increased copper absorption, which was completely abolished in b/b mutants [87].
+These findings provided functional evidence that DMT1 could mediate adaptive copper
+uptake during iron-deficient conditions. Copper regulates intestinal iron absorption by
+stabilizing hypoxia-inducible factor-2α (HIF-2α), while HIF-2α activates the expression of
+iron transporters, including DMT1 and Ferroportin 1 (FPN1), during iron deficiency. Under
+these conditions, copper enrichment in enterocytes upregulates iron transporter expression
+by potentiating the DNA-binding activity and stability of HIF-2α, thereby establishing a
+positive feedback loop between copper and iron metabolism [10].
+In the intestinal system, copper and iron metabolism are closely intertwined, primar-
+ily mediated by copper-dependent ferroxidases such as hephaestin and ceruloplasmin.
+Multi-copper ferroxidases (MCFs), including ceruloplasmin (CP), hephaestin (HEPH), and
+Zyklopen (ZP), facilitate transcellular iron efflux by oxidizing Fe2+ to Fe3+, thereby enabling
+iron binding to transferrin [88]. Among these, HEPH functions predominantly in the small
+intestine and is essential for dietary iron absorption; CP promotes iron release from the
+liver and central nervous system; and ZP is involved in placental iron transport [88–90].
+All these enzymes require copper as a cofactor, and their activity is dependent on copper
+incorporation [89,91].Copper deficiency profoundly disrupts iron homeostasis. Insufficient
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+8 of 37
+copper supply reduces the activity of MCFs such as HEPH and CP, impairing iron oxidation
+and consequently inhibiting iron efflux via FPN from tissues including intestinal epithelial
+cells and macrophages into the circulation [91–93]. Although intestinal and hepatic iron
+concentrations may be elevated under copper deficiency, iron cannot be effectively mobi-
+lized into the bloodstream, leading to systemic iron deficiency and anemia [91,92,94]. At
+the molecular level, copper deficiency upregulates HIF-2α, enhancing the expression of
+duodenal iron absorption genes such as Dmt1 and Dcytb, which exacerbates tissue iron
+retention [93]. Furthermore, copper deficiency impairs mitochondrial function, particularly
+the activity of CCO, the terminal complex of the electron transport chain. CCO assembly
+depends on copper chaperones such as COX19 [95,96]. Insufficient mitochondrial copper
+supply under deficiency conditions compromises CCO activity, contributing to energy
+metabolism dysfunction [95,97]. The synthesis of iron–sulfur (Fe-S) clusters is a core mito-
+chondrial function. Mitochondria generate Fe-S cluster intermediates via the iron–sulfur
+cluster assembly machinery, which are exported for use by the cytosolic iron–sulfur protein
+assembly system [97]. Copper indirectly supports Fe-S cluster stability by participating
+in the activation of Fe-S cluster-associated enzymes such as superoxide dismutase [98].
+Copper deficiency or disrupted iron metabolism impairs Fe-S cluster biogenesis, affecting
+mitochondrial respiratory chain function and DNA repair, ultimately leading to reactive
+oxygen species accumulation and cellular damage [98,99].
+In addition to its role in iron metabolism, copper homeostasis critically regulates
+intestinal barrier integrity through interconnected pathways. Dietary copper stabilizes
+the HIF-1α signaling pathway, enhancing the expression of epithelial tight junction (TJ)
+proteins, such as occludin, and boosting antioxidant defenses, such as Glutathione Peroxi-
+dase 1 (GPX1). This stabilization strengthens the barrier and mitigates oxidative stress; this
+mechanism is crucial for counteracting damage in alcoholic liver disease models, where
+alcohol depletes HIF-1α, TJs, and antioxidants, causing barrier disruption. Notably, copper
+supplementation can reverse these detrimental effects, while its deficiency can exacerbate
+the condition [100]. In vitro studies using Caco-2 cells confirmed the copper-mediated
+promotion of cell growth and reduced ROS generation, supporting antioxidant-dependent
+barrier protection [100]. However, excessive copper intake disrupts barrier function in-
+directly by depleting beneficial bacteria, including Lactobacillus johnsonii, within the gut
+microbiota. This hinders the microbial conversion of acetate to butyrate, depriving colono-
+cytes of their primary energy source, butyrate, and thereby directly impairing barrier
+integrity. Such damage could be reversed through supplementation with either L. johnsonii
+or butyrate [101]. Furthermore, copper modulates intestinal lipid metabolism via AMPK
+(AMP-activated protein kinase) activation with concomitant suppression of SREBP1 (sterol
+regulatory element-binding protein 1) and PPARG (peroxisome proliferator activated recep-
+tor gamma) signaling pathways, thus inhibiting intestinal lipogenesis and lipid absorption
+while promoting lipid transport to reduce lipid deposition. These alterations in membrane
+lipid composition can impact epithelial cell structure and barrier function, as demonstrated
+in fish models [102].
+3.2. Shaping the Gut Microbiota
+3.2.1. Direct Antimicrobial Mechanism
+Copper exerts its broad-spectrum antimicrobial effects through multiple synergistic
+mechanisms. First, it directly damages bacterial cell membranes via electrostatic interactions
+with electronegative components (such as thiols and carboxyl groups), thus compromising
+membrane integrity [103]. Second, copper primarily exists as Cu+ within the bacterial
+cytoplasm and catalyzes the generation of lethal ROS and reactive nitrogen species (RNS).
+Host-derived superoxide (O2−) and nitric oxide (NO) undergo Cu+-induced redox cy-
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+9 of 37
+cling, thereby depleting bacterial antioxidants and inducing severe oxidative/nitrosative
+stress [104,105]. Furthermore, according to the Irving–Williams series, Cu+ competitively
+displaces essential metals (such as Fe2+ from [Fe-S] clusters) in metalloproteins, disrupting
+critical enzymatic activities and metabolic pathways [106–108]. This was demonstrated
+in Neisseria gonorrhoeae, where Cu+ could inhibit heme biosynthesis, impairing bacterial
+defenses [104,109] (Figure 2).
+Figure 2. Antimicrobial mechanisms of copper. Abbreviations: ROS: Reactive Oxygen Species; INOS:
+inducible Nitric Oxide Synthase; NO: Nitric Oxide.
+Copper ions exert dual effects on the host antimicrobial defense through their cyto-
+toxic properties and essential functions. The high thiol affinity of Cu+ and ROS-generating
+capacity of Cu2+ can synergistically damage cellular constituents, such as proteins, lipids,
+and nucleic acids, ultimately causing lethal injury in microbial cells [110–112]. Moreover,
+copper is a crucial component of the innate immune system. Early studies suggest that
+copper can contribute to antimicrobial activity within phagocytes. Proinflammatory stimuli,
+such as IFN-γ (Interferon-gamma) and lipopolysaccharide (LPS), promote copper uptake
+in macrophages by upregulating CTR1 expression [113]. Concurrently, these stimuli induce
+ATP7A expression. This suggests the direct delivery of copper to phagocytosed bacteria.
+An impairment of ATP7A could reduce the bactericidal activity of macrophages against
+pathogens, such as Escherichia coli and Salmonella Typhimurium. Conversely, bacterial mu-
+tants deficient in copper exhibit enhanced susceptibility to ATP7A-dependent macrophage
+killing, further supporting the role of copper in phagocyte-mediated antimicrobial
+defense [114,115].
+Copper plays a pivotal role at the host–pathogen interface as part of nutritional
+immunity, a host defense strategy that manipulates essential metal availability to in-
+hibit microbial growth. Host cells employ distinct copper-dependent mechanisms
+depending on the infection niche and pathogen type. Within phagocytic cells like
+macrophages, copper is actively compartmentalized into phagosomes via ATP7A-
+mediated transport, creating a copper-rich bactericidal environment that generates
+toxic ROS [116,117]. Conversely, in extracellular niches such as mucosal surfaces or
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+10 of 37
+during adaptive immune responses, hosts sequester copper through metal-chelating
+proteins like calprotectin (S100A8/S100A9), S100A7, and S100A12, limiting its bioavail-
+ability to pathogens [118,119]. This dual strategy—copper intoxication in phagosomes
+and copper restriction in extracellular compartments—highlights the context-dependent
+nature of copper manipulation in host defense [120].
+Pathogens have evolved sophisticated copper resistance and acquisition systems to
+counter host-imposed copper stress, demonstrating a co-evolutionary arms race. For detox-
+ification, bacteria utilize copper efflux pumps such as P1B-type ATPases (e.g., CopA in
+Salmonella and E. coli), Cus systems for periplasmic copper export, and metallochaperones
+like CueP to mitigate copper toxicity [116,121]. Fungal pathogens like Histoplasma capsula-
+tum and Cryptococcus neoformans upregulate copper exporters (e.g., CRP1) and chaperones
+to survive in copper-loaded phagosomes [122,123]. Simultaneously, pathogens deploy high-
+affinity copper acquisition mechanisms under copper-limiting conditions. Mycobacterium
+tuberculosis produces diisonitrile lipopeptides (chalkophores) that scavenge copper [124],
+while Neisseria gonorrhoeae and Histoplasma express copper importers (e.g., Ctr3) regulated
+by copper-sensing transcription factors like Mac1 to maintain essential cuproenzyme func-
+tion [122,125,126]. This adaptive flexibility allows pathogens to thrive across varying host
+microenvironments.
+The co-evolution of host copper manipulation and microbial resistance systems is
+evident in functional redundancies and compensatory adaptations. Salmonella enterica lost
+the ancestral CusCFBA efflux system but acquired the periplasmic chaperone CueP, which
+functionally substitutes for efflux under anaerobic conditions, illustrating evolutionary
+trade-offs [127]. Similarly, microbial siderophores, like yersiniabactin, initially evolved
+for iron acquisition, have been repurposed to bind copper, providing dual protection
+against host-imposed metal toxicity and restriction [128,129]. Host metal-sequestering
+proteins such as S100A7 and calprotectin exert selective pressure that drives pathogen gene
+diversification, as seen in the specificity of Neisseria TdfJ for human S100A7 [130]. This
+dynamic interplay underscores how microbial copper homeostasis systems are virulence
+factors directly shaped by host nutritional immunity [131,132].
+3.2.2. Impact on Microbial Composition and Its Metabolites
+Dietary copper supplementation exerts dose- and source-dependent effects on gut
+microbiota, with strikingly distinct outcomes between physiological copper concentrations
+and pharmacological or excess exposure.
+Animal studies have demonstrated that pharmacological or excess copper supplemen-
+tation (such as 187.5–250 mg/kg diet) can significantly alter gut microbiota, as evidenced
+by increased ileal mucosal microbiota in poultry models. Moreover, supplementation with
+nano-form copper at much lower doses (1.7 mg/kg)—still representing a pharmacological
+intervention rather than physiological intake—could induce substantial taxonomic shifts.
+This was characterized by a decreased Firmicutes-to-Bacteroidetes (F/B) ratio, a pattern
+often associated with gut microbiota dysbiosis [133–137]. Similarly, in other mammalian
+models such as swine, high levels of dietary CuSO4 (175–250 mg/kg) could reduce the abun-
+dance of beneficial lactic acid-producing bacteria and decrease overall microbial diversity.
+Moreover, high copper levels (160 vs. 15 mg/kg) from either sulfate or hydroxy-chloride
+sources could induce distinct shifts in porcine gut microbiota. These changes included
+increased abundances of Methanosphaera and Roseburia, coupled with decreased abundances
+of Fibrobacter and Acidaminococcus [138].
+Direct evidence regarding copper effects on the human gut microbiota remains scarce,
+and the translatability of animal findings to human physiology requires further investiga-
+tion. In healthy children, low-dose, physiological copper exposure (e.g., 2 mg/L) enhances
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+11 of 37
+the abundance of beneficial probiotics such as Lactobacillus and Lactococcus in the intesti-
+nal microbiota, activates antioxidant and detoxification pathways, and contributes to the
+maintenance of intestinal homeostasis. However, exceeding a threshold into excess expo-
+sure (≥4 mg/L) disrupts microbial balance, reduces probiotic abundance, enriches potential
+pathogens, and suppresses the expression of genes involved in metabolism and detoxifica-
+tion, ultimately leading to intestinal barrier damage and inflammatory responses [139].
+Key genes involved in copper homeostasis include copA and cueO, which function
+synergistically in bacterial systems to mitigate copper toxicity through efflux and oxidation
+pathways [140–143]. CopA encodes a P1B-type ATPase that actively exports excess cop-
+per from the cytoplasm to the periplasm or extracellular space. In Escherichia coli, CopA
+is regulated by the transcriptional activator CueR, which responds to elevated copper
+concentrations by promoting copA expression [143,144]. This efflux mechanism prevents
+cytoplasmic copper accumulation, which can lead to oxidative stress and enzyme inactiva-
+tion. In pathogens like Listeria monocytogenes, CopA cooperates with the metallochaperone
+CopZ to fine-tune copper efflux, highlighting the complexity of regulatory networks [144].
+Similarly, in Deinococcus radiodurans, the copper-responsive cluster copA-copZ-csoR en-
+sures copper homeostasis, with CsoR acting as a repressor that dissociates from DNA upon
+copper binding [145]. CueO encodes a multicopper oxidase that oxidizes toxic cuprous
+ions (Cu+) to less reactive cupric ions (Cu2+) in the periplasm. This enzyme utilizes oxygen
+as an electron acceptor, coupling copper detoxification to oxidative processes [141,142].
+Structural studies reveal that CueO contains a methionine-rich domain for copper binding
+and a catalytic T1 copper center, which can undergo reductive inactivation under high
+copper conditions [141]. While CueO is primarily associated with aerobic copper resistance,
+recent evidence indicates its functional role in anaerobic environments, where it comple-
+ments efflux systems like CusCBA to maintain copper homeostasis [142]. Beyond these core
+genes, copper resistance often involves additional genetic elements. For instance, the cop
+operon in Pseudomonas aeruginosa includes copG, which forms a cysteine-bridged tetranu-
+clear copper cluster to facilitate redox cycling and efflux [146]. Horizontally acquired loci
+like copXL in Staphylococcus aureus confer hyper-resistance via a novel efflux ATPase (CopX)
+and lipoprotein (CopL), enhancing survival in macrophage environments [147].
+In addition to altering microbial composition, dietary copper also affects the functional
+metabolism of gut microbiota [148]. Physiologically relevant copper deficiency reduces
+the production of short-chain fatty acids (SCFAs), especially butyrate [149]. Butyrate is
+well known to strengthen intestinal barrier function, serving both as a primary energy
+source for colonocytes via β-oxidation and as a signaling molecule [150]. Conversely,
+excess copper levels can also induce gut microbiota dysbiosis that leads to reduced SCFA
+concentrations. This suggests a complex, U-shaped relationship between copper status and
+microbial metabolic homeostasis that warrants further investigation [150].
+The effects of copper are highly dependent on dosage and chemical form, contribut-
+ing to inconsistencies in the literature. Organic copper, such as copper citrate, has been
+shown to reduce SCFAs while potentially mitigating the spread of antibiotic resistance
+genes [151,152]; in contrast, inorganic copper (e.g., CuSO4) at 160 mg/kg improves growth
+performance in pigs but increases the risk of microbiota dysbiosis [138,152]. Nano-copper,
+even at a low dose of 1.7 mg/kg, induces significant taxonomic shifts and exhibits higher
+toxicity than ionic copper [153,154]. Furthermore, the role of copper in antimicrobial resis-
+tance remains debated: some studies suggest that copper exposure promotes horizontal
+transfer of antibiotic resistance genes via oxidative stress and mobile genetic elements [155],
+while others report that therapeutic levels (250 µg/g) do not significantly induce antibiotic
+resistance genes or mobile genetic elements [156]. The mechanistic link between copper
+deficiency and infection susceptibility remains unclear, and microbiota-mediated immune
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+12 of 37
+modulation—such as butyrate signaling pathways—requires further metabolomic valida-
+tion [153]. In addition, the selective inhibition of Neisseria gonorrhoeae by copper has
+not been systematically compared across different species [153], highlighting a gap in
+cross-species mechanistic understanding.
+The gut microbiota is also a fundamental instructor of the host immune system. There-
+fore, copper-induced dysbiosis from excess or pharmacological exposure can indirectly
+cause significant immune dysregulation. Microbial metabolites, such as SCFAs, modulate
+the differentiation and function of various immune cells, including T lymphocytes, B cells,
+and NK (natural killer) cells [157,158]. Evidence for microbiota-mediated immunomod-
+ulation is observed in both copper deficiency and copper excess. Copper deficiency can
+impair immune responses and increase infection risk through unknown microbial interac-
+tions [153]. In Wilson’s disease, a specific dysbiosis (increased Bacteroidetes abundance
+and decreased Firmicutes/Proteobacteria abundance) correlates with immune dysregula-
+tion [159]. Furthermore, studies in poultry models suggested that high copper levels could
+alter intestinal morphology and increase mucosal lymphocyte counts; these effects were
+likely secondary to primary alterations in microbial populations [160]. While copper clearly
+shapes immune responses by modulating gut microbiota, the precise mechanistic path-
+ways, including altered metabolite production or direct microbial-host crosstalk, represent
+a critical frontier for future research.
+3.3. Regulating Intestinal Immunity
+The mechanism by which copper in the intestine affects the immune system is similar
+to that in other parts of the body. Copper plays a dual role in the regulation of autoimmunity.
+On one hand, it promotes autoimmune responses by facilitating the formation of altered
+self-proteins that disrupt immune tolerance. Specifically, copper ions rapidly bind to plasma
+proteins and biological thiols, such as cysteine and GSH, through high-affinity interactions
+with their sulfhydryl groups. This binding can modify native proteins, generating neo-
+antigens that activate B cells with help from Th lymphocytes (such as Th1 and Th2 subsets).
+Such activation may lead to autoimmune reactions through cross-reactivity with self-
+proteins [161–163]. On the other hand, copper may also exert immunosuppressive effects,
+as observed in Wilson’s disease, where copper overload paradoxically attenuates immune
+activation. This effect is potentially mediated by inflammation-induced copper-binding
+proteins, such as ceruloplasmin, which help maintain immune homeostasis by scavenging
+ROS and modulating immune cell activity. These mechanisms support gut barrier integrity
+and systemic immune defense. Additionally, copper can also directly bind to MHC (major
+histocompatibility complex) class II molecules and T cell receptors, possibly modulating
+immune responses via the idiotype-anti-idiotype network [164] (Figure 3).
+High Mobility Group Box 1 (HMGB1) is a key molecular mediator linking copper
+metabolism to autoimmune pathogenesis. Its immunomodulatory activity depends on
+the redox modifications at three cysteine residues (C23, C45, and C106). Complete oxi-
+dation abolishes its function, while partial oxidation differentially activates either TLR4
+(Toll Like Receptor 4)-mediated cytokine production or CXCL12-CXCR4 (C-X-C Motif
+Chemokine Ligand 12-C-X-C motif chemokine receptor 4)-dependent chemotaxis [165,166].
+HMGB1 was initially recognized for its role in acute inflammation; however, it is now
+also implicated in chronic autoimmune diseases, most extensively in rheumatoid arthritis.
+Its elevated levels in synovial fluid and serum, along with enhanced tissue expression,
+contribute to inflammation via cytokine release, leukocyte recruitment, cellular activation,
+and autoantibody generation [167]. These effects involve multi-receptor engagement (such
+as TLR2/4/9) [168,169] and are amplified through HMGB1’s ability to form complexes
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+13 of 37
+with PAMPs (Pathogen-Associated Molecular Patterns), nucleic acids, and cytokines, thus
+synergistically enhancing inflammatory signaling [170].
+ 
+Figure 3. Mechanisms of copper ions affecting intestinal immunity. Abbreviations: HMGB1: High
+Mobility Group Box 1; CXCL12: Chemokine C-X-C Motif Ligand 12; TLR4: Toll Like Receptor 4;
+CXCR4: Chemokine C-X-C Motif Receptor 4.
+Notably, copper homeostasis also affects intestinal immunity and barrier function.
+Copper supplementation can enhance intestinal structural integrity by increasing villus
+height, reducing crypt depth [171], and upregulating TJ proteins (such as claudin 15)
+and mucosal factors (such as mucin 2 and trefoil factor 3) [172]. Copper also promotes
+homodimerization of trefoil factor 1, facilitating mucosal repair [173]. Within immune
+cells, IFN-γ upregulates copper uptake in macrophages. ATP7A activation promotes
+phagosome-lysosome fusion, enhancing bacterial killing [114]. Adequate copper levels
+help in balancing the inflammatory responses by reducing pro-inflammatory cytokines,
+such as TNF-α ((tumor necrosis factor-α) and IL-6 (Interleukin-6) [174,175].
+Both copper deficiency and excess disrupt immune homeostasis. Excess copper cat-
+alyzes hydroxyl radical formation via the Haber-Weiss reaction, damaging cellular struc-
+tures and activating transcription factors, such as NF-κB (nuclear factor kappa-B) and
+AP-1 (Activator Protein-1), which promote expression of IL-1β, IL-8, and TNF-α [128,129].
+Concurrent GSH depletion exacerbates oxidative stress [176]. In contrast, copper deficiency
+induces immunosuppression; this is characterized by thymic atrophy, splenomegaly, re-
+duced neutrophil function, decreased CD4+ T cells, impaired IL-2 secretion, and suppressed
+antibody production [177,178]. Excess copper also causes shortening of the duodenal villi,
+lipid peroxidation, and compromised intestinal barrier integrity, which are further aggra-
+vated by hepatic GSH depletion [179]. In Monopterus albus, copper exposure induced
+histological damage to the intestinal epithelium, characterized by an increased number
+of erythrocytes and goblet cells in the lamina propria, as well as separation of the lam-
+ina propria. These structural alterations were accompanied by significant changes in the
+expression of genes involved in the tight junction complex, including ZO-1, Claudin-3,
+Claudin-12, and Claudin-15 [180]. Similarly, in rats, copper exposure compromised the
+structural integrity of the intestinal epithelium, resulting in a significant downregulation of
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+14 of 37
+both genes and proteins related to the intestinal barrier, such as Zonula occludens-1 (ZO-1),
+Claudin-1, and Occludin [181]. These findings indicate that copper exposure disrupts
+intestinal barrier function across species by targeting tight junction complexes, though the
+specific molecular components affected may vary.
+Copper directly modulates immune cell function through metabolic reprogramming.
+In macrophages, mitochondrial copper ions catalyze NAD(H) redox cycling, driving gly-
+colytic metabolic reprogramming and promoting pro-inflammatory phenotypic differen-
+tiation; targeted intervention of mitochondrial copper reverses this process and inhibits
+inflammatory activation [35]. Additionally, copper serves as a signaling molecule that
+directly binds to the intracellular pattern recognition receptor ALPK1, enhancing its sen-
+sitivity to bacterial metabolite ADP-heptose and thereby amplifying innate immune re-
+sponses [182]. In antigen-presenting cells, aberrant copper concentrations interfere with
+HLA-I/II molecule expression, affecting T cell activation [183]. Copper also influences the
+immunomodulatory functions of innate lymphoid cells and B cells by altering microbial
+composition [180,184]. Mucin MUC2 functions as an intestinal copper chaperone, utilizing
+divalent copper-binding sites to prevent copper-induced oxidative cycling, protect the
+intestinal mucosal barrier, maintain copper bioavailability, and balance the interaction
+between microbiota and immune cells [185].
+Pathogenic microorganisms contribute to this complex interplay by evolving copper
+resistance mechanisms, including efflux systems, membrane modifications, and copper
+chelation. These mechanisms can facilitate the co-selection of multidrug resistance [186,187].
+Thus, the disruption of copper homeostasis can initiate a pathogenic cascade involving
+dysbiosis, chronic immune activation, and impaired mucosal immunity, thereby fostering a
+microenvironment conducive to oncogenic transformation in the gut.
+The immunomodulatory effects of copper exhibit significant species specificity.
+Aquatic organisms, such as fish and turtles, suffer from more severe intestinal damage due
+to copper exposure, with immunosuppressive thresholds considerably lower than those ob-
+served in mammals [188,189]. In humans, patients with Wilson disease, who carry ATP7B
+mutations, experience copper accumulation in the intestine, leading to mitochondrial
+dysfunction and local inflammation. However, whether copper supplementation confers
+immunological benefits in the general population remains inconclusive [190]. Furthermore,
+although intestinal Mucin 2 can chelate copper ions to prevent oxidative damage [185], its
+expression levels are influenced by genetic factors, and inter-individual variability may
+compromise the immunoprotective effects of copper.
+Copper ions generate ROS through the Fenton reaction, thereby activating the
+Nrf2/HO-1 antioxidant pathway. In inflammatory bowel disease models, copper-luteolin
+nanocomplexes have been shown to alleviate oxidative damage by modulating the Nrf2
+pathway, while simultaneously suppressing NF-κB-mediated inflammatory cascades
+and restoring intestinal barrier function [191].
+Additionally, copper influences lipid
+metabolism through the regulation of the PPARγ pathway. In the context of gut-liver
+axis disruption associated with non-alcoholic fatty liver disease, copper overload leads
+to inhibited β-oxidation and subsequent lipid deposition, thereby exacerbating intestinal
+inflammation [192].
+Overall, copper exerts context-dependent immunomodulatory effects; both its defi-
+ciency and excess contribute to loss of immune tolerance and inflammatory pathogenesis.
+Taken together, these highlight the importance of maintaining copper homeostasis to
+prevent autoimmune dysregulation.
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+15 of 37
+3.4. Systemic Metabolic Crosstalk
+Copper homeostasis is centrally regulated by the liver through coordinated intestinal
+absorption and biliary excretion. Its expression is upregulated during copper deficiency to
+promote uptake [193]. Under high copper intake, ATP7A expression increases to enhance
+delivery to the liver [194]. Once in the portal blood, copper binds to serum proteins, such as
+albumin, for hepatic uptake. ATP7B facilitates copper incorporation into ceruloplasmin for
+systemic distribution [195,196]. Intestinal ATP7A is regulated through an organ-specific re-
+ciprocal manner: its abundance increases in enterocytes during systemic copper deficiency
+to boost absorption but decreases in peripheral tissues, such as the heart and spleen, to
+conserve copper. This pattern is reversed upon copper supplementation. Thus, the intestine
+is positioned as the critical gatekeeper modulating copper levels via non-autonomous regu-
+lation of ATP7A [197]. Studies in Caenorhabditis elegans demonstrated that in response to
+changes in copper levels, the subcellular localization of intestinal copper transporter CUA-1
+dynamically shifted to the basolateral membrane during copper deficiency to promote
+efflux to tissues and relocated to lysosome-like organelles called gut granules during copper
+excess for sequestration and detoxification, thereby supporting the importance of intestinal
+copper sorting. The loss of CUA-1 disrupted copper accumulation and increased toxic-
+ity sensitivity [58]. Copper homeostasis is intricately linked to neuroendocrine signaling
+within the brain–gut axis, playing a critical role in both neurological and gastrointestinal
+physiology. The gut–brain axis mediates bidirectional communication between the central
+nervous system and the gastrointestinal tract via the vagus nerve and neuropeptides, such
+as cholecystokinin. Disruptions in copper homeostasis may interfere with this signaling
+pathway, thereby impairing gastrointestinal function and potentially exacerbating neu-
+ropathological processes [198]. Therefore, maintaining copper homeostasis is critical. This
+balance is precisely regulated through intestinal absorption, hepatic processing, biliary ex-
+cretion, and peripheral utilization. Any disruption by genetic, environmental, or acquired
+factors can lead to systemic disorders, affecting multiple organ systems.
+4. Dysregulation of Copper Homeostasis in Pathologies
+4.1. Deficiency Syndromes
+Pathogenic mutations in ATP7A gene lead to Menkes Disease (MD), an X-linked re-
+cessive disorder. This condition is characterized by impaired copper absorption, resulting
+in systemic copper deficiency and severe neurological and multisystem dysfunction [199].
+Copper-dependent enzyme dysfunction constitutes a core mechanism underlying systemic
+pathology. Impaired intestinal copper absorption leads to reduced activity of multiple
+copper-dependent enzymes, including lysyl oxidase, tyrosinase, and cytochrome c oxi-
+dase [200]. Insufficient lysyl oxidase activity results in connective tissue abnormalities,
+manifesting as skin laxity, joint hyperextensibility, bladder diverticula, and defective elastin
+cross-linking in vascular walls [201,202]. The latter contributes to increased vascular
+fragility, characterized by spontaneous hemorrhage, arterial aneurysms (e.g., splenic or
+iliac artery aneurysms), and intracranial vascular tortuosity [203,204]. Pigmentary abnor-
+malities arise from tyrosinase dysfunction. This enzyme catalyzes melanin synthesis, and
+its decreased activity leads to hypopigmentation of hair, presenting as characteristic “steely”
+or “kinky” hair, with microscopic evidence of twisted hair shafts (pili torti) [202,205]. Gas-
+trointestinal dysfunction manifests as intestinal malabsorption, gastroesophageal reflux,
+and diaphragmatic hernia, which are associated with connective tissue abnormalities and
+impaired intestinal smooth muscle function [206,207]. Studies have reported more than
+311 disease-causing mutations in ATP7A, including single-exon deletions and whole-gene
+rearrangements. Moreover, studies have identified a notable mutational hotspot within
+a 700 bp region encompassing exons 7–10, which accounts for a significant fraction of
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+16 of 37
+cases [208–211]. The loss of functional ATP7A protein disrupts systemic copper transport,
+leading to inactivation of copper-dependent enzymes. Tyrosinase, a crucial enzyme for
+melanin biosynthesis, exhibits markedly reduced activity in MD due to copper deficiency.
+Restoration of wild-type ATP7A protein could rescue tyrosinase function, confirming its
+copper-dependent regulation [47]. Similarly, Peptidylglycine α-Amidating Monooxygenase
+(PAM), required for neuropeptide amidation, has demonstrated significantly impaired ac-
+tivity in ATP7A-deficient models, contributing to the neurodevelopmental deficits observed
+in Menkes Disease [212]. Diminishing the activity of intestinal copper-dependent enzymes
+leads to the disruption of essential physiological functions, particularly nutrient absorption,
+antioxidant defense mechanisms, and cellular signaling pathways. Concurrently, the patho-
+logical copper accumulation in cytosolic and mitochondrial compartments disrupts redox
+homeostasis through Fenton reaction-mediated ROS production. This oxidative stress cas-
+cade leads to GSH depletion and mitochondrial membrane destabilization. The resulting
+oxidative stress further damages membrane-associated proteins, compromising ATP7A
+stability, thereby creating a vicious cycle that exacerbates intestinal epithelial dysfunction
+and systemic metabolic impairment [213].
+The treatment of MD presents significant challenges, as early supplementation with
+copper salts, such as copper histidinate, can elevate serum copper levels; however, it demon-
+strates limited efficacy in alleviating neurological symptoms due to its poor penetration
+of the blood–brain barrier [214]. Copper histidinate is the first FDA-approved treatment
+for Menkes disease, improving copper absorption and utilization in affected children. In
+response, novel therapeutic agents are under investigation. Copper chelators, such as ES
+(Elesclomol) compounds, could mitigate pathological features in animal models, though
+their clinical applicability requires further validation [215]. Alternative strategies that focus
+on copper transport mechanisms, including gene therapy or small molecule modulators
+targeting copper-transporting proteins such as Copper Metabolism Domain Containing 1
+(COMMD1) activators, represent promising future directions [216].
+4.2. Toxicity-Driven Pathologies
+Wilson disease is an autosomal recessive disorder caused by loss-of-function mutations
+in the ATP7B gene, which encodes the hepatocyte-specific copper-transporting P-type
+ATPase critical for systemic copper homeostasis [217]. The loss-of-function mutations in
+ATP7B (with >700 pathogenic variants reported) can disrupt copper transport activity,
+leading to defective biliary copper excretion and impaired ceruloplasmin maturation [218].
+This functional impairment causes progressive toxic copper accumulation (not bound
+to ceruloplasmin) in both hepatic and extrahepatic tissues, ultimately inducing hepatic
+damage and systemic copper overload [219]. Wilson disease damages target organs through
+mechanisms involving oxidative stress, inflammatory responses, and direct cytotoxicity.
+Brain injury is primarily characterized by neuroinflammation and metal-induced cell
+death pathways [220,221]; renal damage manifests as tubular dysfunction with secondary
+obstruction [222]; and hematopoietic system involvement is marked by hemolysis and
+impaired synthetic function [223,224].
+Traditional diagnostic approaches for Wilson disease primarily rely on indirect bio-
+chemical markers. Although serum ceruloplasmin measurement is widely used, it is
+susceptible to interference from factors such as inflammation [225,226]. Twenty-four-hour
+urinary copper excretion, serving as a classic indicator, exhibits decreased sensitivity in
+the presence of liver injury [226,227]. However, the simultaneous detection of multiple
+biomarkers, including Cu2+, pyrophosphate, and alkaline phosphatase, using a single
+fluorescent probe has not been achieved until recently. A novel fluorescent switch, (E)-8-((4-
+methylbenzylidene) amino) napthalen-1-amine (L), has been developed for the sequential,
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+17 of 37
+selective detection of these targets in vitro (in living cells and synovial fluid), showing alter-
+nating fluorescence responses. Given the correlation among these biomarkers in Wilson’s
+disease, this probe holds significant potential for future in vitro screening applications [228].
+The future therapeutic directions for Wilson’s disease continue to build upon established
+first-line treatments, which include copper chelators (such as penicillamine and trientine)
+and zinc agents that inhibit intestinal copper absorption [229,230]. Beyond these conven-
+tional approaches, experimental strategies are emerging, notably involving small molecular
+copper chaperones, such as Elesclomol, which improve copper distribution and metabolic
+balance [231]. In patients with Wilson disease who present with acute liver failure, or
+who have progressed to decompensated cirrhosis and fail to respond to standard copper
+chelation therapy, liver transplantation is the indicated treatment option [232].
+4.3. Carcinogenic Effect
+Dysregulation of copper homeostasis has been implicated in the pathogenesis of
+various malignancies, including colorectal cancer (CRC), breast cancer, hepatocellular carci-
+noma, and cervical cancer. Copper has emerged as a key regulator in oncogenesis and tumor
+progression through “cuproplasia”, which is a copper-dependent progression of cell growth
+mediated by both enzymatic and non-enzymatic processes [233]. Copper ions can function
+as allosteric regulators and potentiate oncogenic proliferation by direct binding to MEK
+(MAPK/ERK Kinase, Mitogen-Activated Protein Kinase-Extracellular Signal-Regulated
+Kinase) 1/2 kinases, which triggers the activation of the RAF (Raf kinases)-MEK-ERK
+signaling pathway and subsequent ERK1/2 hyperphosphorylation [233,234]. In cancer,
+this mechanism may position copper ionophores (such as ES) as therapeutic agents by
+inducing oxidative stress and degrading oncoproteins (such as p53); however, excessive
+copper conversely supports malignant cell survival [235]. Moreover, malignant tissues and
+patient sera have demonstrated elevated copper levels compared to healthy controls, with
+copper levels showing positive correlation with both disease progression and histological
+grade [236]. This copper dysregulation is further evidenced by progressively increasing
+serum Cu/Zn ratios across advancing CRC stages, showing strong associations with tumor
+aggressiveness [237]. At the molecular level, copper promotes oncogenic survival by mod-
+ulating nutrient-sensing pathways via ULK (UNC-51-like kinases) 1/2 regulation [238,239].
+Dysregulated copper homeostasis plays a pivotal role in CRC progression through three
+interconnected pathways. First, dysregulation of ATOX1 disrupts copper homeostasis,
+resulting in the accumulation of this copper-binding transcription factor that subsequently
+promotes tumorigenic processes. ATOX1 promotes cell proliferation by upregulating cyclin
+D1 while simultaneously suppressing ROS and enhancing ATP production [240,241]. The
+interaction with proinflammatory cytokines, such as activin A, further facilitates nuclear
+localization in CRC cells, amplifying oncogenic signaling [242]. Notably, KRAS (Kirsten
+ratsarcoma viral oncogene homolog) mutations in CRC cause copper addiction, as these
+mutations stabilize ATP7A copper transporters on the cell membrane, leading to a depen-
+dence on increased intracellular copper for survival [243]. Chaperones (such as SLC31A1,
+SCO1, COX11) channel copper into tumors, thereby further intensifying this copper re-
+liance [244]. Inflammatory signaling engages copper metabolism via the IL-17-STEAP4
+axis. Inflammatory cytokines induce STEAP4-mediated copper uptake. STEAP4 func-
+tions as a copper reductase, converting extracellular cupric ions (Cu2+) to cuprous ions
+(Cu+), facilitating their cellular uptake via copper transporters [245,246]. Consequently,
+inflammation, driven by IL-17 and other cytokines, leads to a significant accumulation of
+intracellular copper within tissues like the colon and lung [245,246]. This copper overload
+is not merely a bystander effect but plays an active pathogenic role. Elevated intracellular
+copper levels activate specific signaling molecules, most notably X-linked inhibitor of
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+18 of 37
+apoptosis protein (XIAP). Copper-dependent activation of XIAP enhances NF-κB signaling,
+a key pro-inflammatory and pro-survival pathway, while simultaneously suppressing
+caspase-3 activity, thereby inhibiting apoptosis [245]. These mechanisms promote both
+tumor cell survival and proliferation (Figure 4).
+ 
+Figure 4. Effects of copper on cancer cell proliferation. (A) Copper potentiation of oncogenic signal-
+ing. (B) Key copper-dependent mechanisms in intestinal cancer. Abbreviations: RAS: Rat Sarcoma
+Viral Oncogene Homolog; RAF: Rapidly Accelerated Fibrosarcoma; MEK1/2: Mitogen-Activated
+Protein Kinase 1/2; ERK1/2: Extracellular Signal-Regulated Kinase 1/2; CCS: Copper Chaperone
+for Superoxide Dismutase; ATOX1: Antioxidant 1; ROS: Reactive Oxygen Species; ATP: Adenosine
+Triphosphate; KRAS: Kirsten Rat Sarcoma Viral Oncogene Homolog; ATP7A: ATPase Copper Trans-
+porting Alpha; SLC31A1: Solute Carrier Family 31 Member 1; SCO1: Synthesis of Cytochrome C
+Oxidase 1; COX11: Cytochrome c Oxidase Copper Chaperone COX11; IL-17: Interleukin-17; STEP4:
+Striatal-Enriched Protein Tyrosine Phosphatase 4; XIAP: X-linked Inhibitor of Apoptosis Protein;
+NF-κB: Nuclear Factor Kappa-Light-Chain-Enhancer of Activated B Cells; “(+)”: indicates positive
+regulation; “(-)”: negative regulation.
+The CRC metastasis heavily relies on copper-dependent pathways, particularly
+through epithelial–mesenchymal transition (EMT), ECM remodeling, and angiogenesis.
+The copper-binding proteins are central to EMT initiation, where copper enables LOX to
+inhibit E-cadherin expression via the activation of focal adhesion kinase [247,248]. Simulta-
+neously, copper facilitates HIF-1α interactions with hypoxia response elements, promoting
+the transcription of EMT regulators, such as ZEB1 (Zinc Finger E-Box Binding Homeobox 1),
+ZEB2, and Snail through the copper chaperone CCS [249]. ECM remodeling is also a copper-
+dependent process, in which LOX crosslinks collagen and elastin, thereby stiffening the ma-
+trix [250]. This mechanical change enhances FAK (Focal Adhesion Kinase) phosphorylation
+and fosters premetastatic niche formation, thereby correlating with increased tumor aggres-
+siveness [251]. HIF-1α further amplifies LOX activity via the PI3K (Phosphatidyqinositol-3
+kinase)/Akt (protein kinase B) pathway, establishing a feedforward loop that maintains
+metastatic progression [252,253]. Copper is essential for regulating angiogenesis, which
+supports metastatic growth. Copper activates HIF-1 to upregulate pro-angiogenic factors,
+such as Vascular Endothelial Growth Factor (VEGF) and ceruloplasmin, while enhancing
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+19 of 37
+endothelial nitric oxide synthase activity to boost vasodilatory NO production [254,255].
+ATOX1 promotes angiogenesis through two mechanisms: (1) transporting copper to ATP7A
+for LOX activation and (2) transcriptional cofactor activity for NADPH (Nicotinamide
+Adenine Dinucleotide Phosphate Hydrogen) oxidase [256]. Conversely, CTR1 depletion
+disrupts copper uptake in endothelial cells, impairing VEGF signaling and halting neovas-
+cularization [257]. Collectively, these interrelated mechanisms position copper homeostasis
+as a crucial axis in the pathogenesis of CRC, presenting potential therapeutic targets.
+Serum copper levels are significantly elevated in patients with colorectal cancer (CRC)
+compared to healthy controls, accompanied by an increased serum copper/zinc ratio, and
+these systemic alterations correlate positively with tumor size. Patients harboring large-
+volume tumors exhibit the highest serum copper concentrations alongside the lowest zinc
+levels, suggesting that copper–zinc imbalance may serve as a potential biomarker for tumor
+burden [258]. However, copper content within cancerous tissues remains a subject of debate:
+some studies report lower copper levels in tumor tissues compared to adjacent normal
+tissues, potentially reflecting rapid copper consumption by cancer cells [259]; conversely,
+other evidence indicates that cancer cells actively accumulate copper through upregulation
+of copper transporters such as CTR1 to support proliferative demands [260].
+5. Therapeutic Targeting of Copper Homeostasis
+5.1. Copper Chelators
+Copper chelators have emerged as promising anticancer strategies by targeting copper-
+dependent pathways, inducing unique cell death and enhancing chemotherapy. The
+clinically available copper chelators, including Tetrathiomolybdate (TTM), D-penicillamine,
+and trientine, exert antitumor effects by depleting the bioavailable copper pools [261].
+TTM acts through multiple mechanisms. It inhibits angiogenesis by downregulating
+NF-κB, SOD1, and HIF-1α levels [262]. Additionally, TTM could reverse BRAF (B-Raf
+Proto-Oncogene, Serine/Threonine Kinase)V600E-mediated chemoresistance in mutant
+CRC models by blocking the RAS-RAF-MEK-ERK pathway [263]. D-penicillamine and
+trientine exhibit similar mechanisms, impairing metastatic potential by disrupting tumor
+vascularization and ECM maturation [264]. The synthetic chelator TPEN (N,N,N′,N′-
+Tetrakis-[2-Pyridylmethyl]-Ethylenediamine) has demonstrated selective CRC cytotoxicity
+through the ROS-mediated cell death pathways [265,266]. In the future, mechanistic studies
+should be expanded to elucidate processes, such as the interaction between cuproptosis
+and EMT. In parallel, selective delivery systems require optimization, and individualized
+clinical trials must advance to ultimately enable precision therapy.
+Clinical translation is underway, with PET imaging using [64Cu] CuCl2 enabling non-
+invasive monitoring of copper metabolism and TTM efficacy in triple-negative breast cancer
+(TNBC) [267]. Early human studies indicate TTM reduces intestinal copper absorption,
+limiting exposure to the liver and brain [268]. Ongoing trials explore TTM in combina-
+tion regimens, such as with lenvatinib for hepatocellular carcinoma, where it suppresses
+VEGF expression and microvessel density [269]. TTM’s toxicity profile is manageable
+but requires careful monitoring. It reduces serum ceruloplasmin activity (a biomarker of
+copper status) without significant hepatotoxicity in animal models [270,271]. However,
+prolonged copper depletion may impair physiological processes, as copper is essential for
+superoxide dismutase and cytochrome c oxidase activity [272,273]. In Wilson’s disease
+patients, TTM effectively lowers copper burden but can cause reversible neurological effects
+if overdosed [268] (Table 2).
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+20 of 37
+Table 2. Mechanisms underlying various therapeutic strategies targeting copper homeostasis.
+Category
+Name
+Mechanisms
+Result
+Clinical Status
+References
+Copper
+chelators
+Tetrathiomolybdate
+Sequesters copper ions; downregulates
+NF-κB/SOD1/HIF-1α; targets
+RAS-RAF-MEK-ERK pathway
+Inhibits angiogenesis; reverses
+chemoresistance (BRAFV600E
+mutants)
+clinical trial
+[261–263]
+D-penicillamine/Trientine
+Disrupts tumor vascularization and
+collagen cross-linking
+Reduces metastasis
+clinical trial
+[264,274]
+TPEN
+Induces oxidative stress
+Selectively kills cancer cells
+preclinical
+[275]
+Copper
+ionophores
+Disulfiram
+DSF/Cu complexes inhibit
+NF-κB/MAPK pathways; induces
+autophagy; suppresses cancer stemness
+Inhibits tumor growth
+preclinical
+[276]
+Clioquinol
+Clears XIAP (apoptosis regulator)
+Sensitizes cancer cells to death
+preclinical
+[277]
+Elesclomol
+ES-Cu complexes transport Cu2+ into
+cells; induces oxidative stress/TCA cycle
+disruption
+Triggers cuproptosis
+preclinical
+[278]
+Nanoparticle
+Therapeutics
+Copper-loaded nanoparticles
+Induces cuproptosis, enhances traditional
+therapies, synergizes with PTT/PDT, and
+regulates the immune microenvironment
+Induces cuproptosis; suppresses
+immune evasion, distant
+metastasis, and recurrence
+preclinical
+[279–283]
+Abbreviations: NF-κB: nuclear factor kappa-B; BRAFV600E: a specific mutation in the BRAF gene, which encodes
+a protein involved in cell growth and division. TPEN: N,N,N′,N′-Tetrakis-[2-Pyridylmethyl]-Ethylenediamine;
+SOD1: Cu/Zn-Superoxide Dismutase 1; HIF-1α: Hypoxia-Inducible Factor 1α; DSF: Disulfiram; XIAP: X-linked
+Inhibitor of Apoptosis Protein; ES: Elesclomol; TCA: Tricarboxylic Acid; PTT: photothermal therapy; PDT:
+photodynamic therapy.
+5.2. Copper Ionophores
+Copper ionophores promote intracellular copper accumulation, thereby inducing
+oxidative stress and cell death through cuproptosis [284]. Copper ionophores leverage the
+unique biological features of the tumor microenvironment to achieve selective antitumor
+effects. Tumoral tissues exhibit significantly elevated levels of copper as compared to
+normal tissues, thereby providing a foundational basis for copper ionophore activity [285].
+Furthermore, these agents exploit the overexpression of specific receptors on cancer cells,
+such as the asialoglycoprotein receptor, to enhance drug enrichment preferentially within
+malignant cells [284]. Additionally, cancer cells rely on mitochondrial respiration for
+energy production. Copper ionophores induce mitochondrial copper overload, subse-
+quently disrupting cellular energy metabolism and amplifying their cytotoxic effects [286].
+Disulfiram (DSF), clioquinol, and bis (thiosemicarbazone) analogs demonstrate this ap-
+proach. Originally developed to treat alcoholism, DSF exhibits potent anticancer activity
+by inhibiting oncogenic signaling pathways, including NF-κB and MAPK signaling path-
+ways [287,288]. DSF-Cu complexes can induce autophagy and suppress cancer stemness,
+highlighting their multifaceted role in CRC therapy [289,290]. Clioquinol, a derivative of
+chloroquine, can clear XIAP, a protein that regulates apoptosis, thereby sensitizing CRC
+cells to cell death [277]. ES mediates its anticancer activity through copper-dependent cyto-
+toxicity. ES facilitates intracellular copper accumulation by forming ES-Cu complexes. This
+triggers dual cytotoxic mechanisms: oxidative stress-induced apoptosis and cuproptosis
+through direct interference with TCA cycle components and ferredoxin 1 activity [278].
+Bis(thiosemicarbazones) exert their antitumor effects through multiple mechanisms. They
+induce apoptosis in cancer cells via both the mitochondrial pathway, characterized by
+reduced mitochondrial membrane potential and upregulated caspase-3/7 activity, and the
+death receptor pathway, evidenced by enhanced caspase-8 activation [291]. Additionally,
+these compounds induce cell cycle arrest by modulating the expression of cyclin-dependent
+kinases and cyclins, thereby trapping tumor cells in specific phases of the cell cycle [292,293].
+Bis(thiosemicarbazones) also suppress tumor migration and invasion by downregulating
+matrix metalloproteinase expression and inhibiting epithelial–mesenchymal transition [292].
+Notably, these compounds exhibit potent radical-trapping antioxidant activity, inhibiting
+lipid peroxidation and conferring resistance to ferroptosis [292]. These multifaceted mech-
+anisms contribute to the antitumor activity of bis(thiosemicarbazones) against various
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+21 of 37
+cancer types, including bladder cancer [292], breast cancer [294], lung cancer [295], and
+prostate cancer [296].
+DSF-Cu and clioquinol-copper complexes represent promising repurposed therapeutic
+strategies in oncology, with extensive preclinical investigation but limited clinical success
+to date. The active metabolite, copper diethyldithiocarbamate (CuET or Cu(DDC)2), is
+central to its cytotoxicity, but its hydrophobicity and rapid metabolism of oral DSF impede
+bioavailability and tumor accumulation [297–299]. Despite robust preclinical data, clinical
+trials face challenges. A phase Ib study in metastatic castration-resistant prostate cancer
+(mCRPC) revealed that oral DSF rapidly metabolizes to inactive diethyldithiocarbamate-
+methyl ester (Me-DDC), failing to achieve efficacy despite copper supplementation [300].
+Similarly, a phase II trial in recurrent temozolomide-resistant glioblastoma showed DSF-
+Cu was well-tolerated but offered minimal clinical benefit, underscoring limitations in
+unselected populations [301]. To overcome metabolic instability, nanoformulations like sta-
+bilized Cu(DDC)2 nanoparticles (SMILE method) and liposomal Cu(DDC)2 are advancing,
+demonstrating high drug loading, stability, and efficacy in drug-resistant models [302,303].
+Clioquinol (CQ), an antifungal agent, forms a copper complex (Cu(CQ)2) with anticancer
+potential. However, its poor aqueous solubility and rapid metabolism hinder therapeutic
+utility. Liposomal Cu(CQ)2 formulations enable intravenous delivery but showed lim-
+ited efficacy in glioblastoma and ovarian cancer models, either alone or combined with
+DSF [304]. Thus, while mechanistic insights support CQ’s potential, effective delivery
+systems remain critical for translation.
+5.3. Nanoparticle Therapeutics
+Nanoparticle therapeutics play a pivotal role in copper-targeted cancer treatment,
+primarily by inducing cuproptosis and enhancing radiotherapy sensitivity, as well as their
+synergistic application in photothermal/photodynamic therapy (PTT/PDT). Copper-based
+nanoparticles (such as copper sulfides or copper oxides) and copper-ion-loaded nanocarri-
+ers (such as liposomes and metal–organic frameworks) enable efficient delivery of copper
+into tumor cells, thus overcoming the limitations of free copper ions, such as poor targeting
+and short half-life. For instance, acid-degradable copper hydride nanoparticles can selec-
+tively release copper ions within the tumor microenvironment to trigger cuproptosis [305].
+Similarly, the combination of transferrin-templated copper nanoclusters (Tf-CuNCs) with
+doxorubicin could significantly suppress tumor growth and prolong survival in animal
+models [306]. Furthermore, copper-based nanoparticles, such as 64Cu-labeled CuS, act as
+radiosensitizers by generating free radicals under localized irradiation, thereby synergisti-
+cally increasing DNA damage [307]. Additionally, due to their localized surface plasmon
+resonance properties, copper-based nanomaterials exhibit strong near-infrared absorption
+and excellent photothermal conversion efficiency. In the tumor microenvironment, endoge-
+nous hydrogen peroxide (H2O2) reacts with Cu2+ ions to produce oxygen (O2), alleviating
+tumor hypoxia, which is a critical barrier to oxygen-dependent therapies like PDT [308–310].
+This catalytic decomposition of H2O2 not only mitigates hypoxia but also supplies O2 for
+subsequent ROS generation, enhancing therapeutic efficacy [308,310]. Simultaneously,
+elevated GSH levels in tumors reduce Cu2+ to Cu+, depleting GSH and weakening the
+cellular antioxidant defense system [308,311,312]. The depletion of GSH is crucial, as it
+minimizes the scavenging of ROS and amplifies oxidative stress [311,313]. The resulting
+Cu+ ions then catalyze a Fenton-like reaction with H2O2, generating highly toxic hydroxyl
+radicals (•OH) that induce oxidative damage to cellular components, including lipids,
+proteins, and DNA [309,314,315]. The Fenton-like reaction represents an improvement and
+extension of the classical Fenton reaction, employing alternative transition metal ions (such
+as copper or manganese), supported solid catalysts, or external energy inputs (e.g., light
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+22 of 37
+or electricity) to replace or assist ferrous ions in catalyzing hydrogen peroxide to generate
+highly oxidative hydroxyl radicals. The combination of copper-based nanoparticles with
+PTT/PDT offers precise spatial control and multi-modal therapeutic capacity, enabling
+targeted tumor ablation, and exhibits enhanced therapeutic efficacy [316].
+Copper nanoparticles show promise in cancer therapy due to their unique properties:
+enhanced tumor targeting via the EPR effect and surface functionalization; improved
+systemic stability with tumor-specific controlled release; and multimodal therapeutic effects
+that activate multiple cell death pathways and enable synergistic therapies, overcoming
+drug resistance and targeting cancer stem cells. But their clinical application hinges on three
+key factors: biocompatibility, systemic toxicity, and clearance. Biocompatibility is largely
+determined by surface coatings—such as Polyethylene glycol or biomimetic membranes—
+which improve stability and tumor targeting while reducing immune recognition and
+off-target effects [317–319]. Toxicity stems mainly from copper ion release, which can
+induce cancer cell death via mechanisms like cuproptosis but may also cause organ damage
+if not properly controlled [320–323]. Clearance pathways depend on particle size and
+surface chemistry: small, hydrophilic particles are rapidly cleared by the kidneys, while
+larger ones are processed by the liver and spleen [324–326]. Optimizing surface engineering
+and dosing is essential to balance therapeutic efficacy with safety.
+6. Conclusions and Future Prospects
+Copper homeostasis critically orchestrates intestinal health through the regulation of
+enzymatic catalysis, microbiota composition, barrier integrity, and immune function. In the
+context of malignancy, the dysregulation of this delicate balance drives tumor progression.
+As outlined in this review, this occurs through the activity of copper-dependent enzymes,
+which promote oxidative stress and metastasis, while the disruption of copper transport
+by key mediators such as CTR1, ATP7A, ATP7B, and the chaperone ATOX1 underpins
+chemoresistance and tumor survival. Furthermore, the recent elucidation of cuproptosis, a
+distinct cell death mechanism triggered by mitochondrial copper accumulation and the
+aggregation of lipoylated TCA cycle proteins, has revealed a novel therapeutic vulnera-
+bility. Exploiting this mechanism, emerging strategies including copper ionophores and
+engineered copper nanoparticles offer a means to selectively induce cancer cell death.
+These approaches represent a paradigm shift in targeting the dual role of copper in both
+proliferation, termed cuproplasia, and cytotoxicity.
+Understanding how copper homeostasis shapes the gut microbiome represents a
+critical frontier for future investigation. This interaction presents a promising axis for
+investigation, as shifts in microbial populations could serve as a systemic link influencing
+both intestinal health and the efficacy of antitumor immunity. To translate these findings
+into clinical practice, developing multimodal biomarkers will be essential. Such biomarkers
+should not only facilitate patient stratification based on tumor copper status but also enable
+dynamic monitoring of therapeutic responses to copper-targeted interventions. Key trans-
+lational steps include optimizing delivery systems for copper chelators and ionophores
+to enhance tumor specificity, rigorously profiling the safety and toxicity of nanoparticle-
+based therapies, and exploring rational combination approaches such as integrating copper
+modulation with established chemotherapies or immune checkpoint inhibitors to over-
+come drug resistance and potentiate antitumor immune responses. Ultimately, targeting
+copper homeostasis represents a promising and multifaceted axis poised to yield both
+fundamental mechanistic insights and transformative translational applications in the fight
+against cancer.
+Author Contributions: F.L.: Writing—original draft. X.W.: Conceptualization, Visualization. X.X.:
+Investigation. L.L. (Liqiang Liu): Visualization. D.L.: Conceptualization. A.L.: Conceptualization,
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+23 of 37
+Supervision. S.Q.: Conceptualization, Writing—review and editing. L.L. (Lingbin Liu): Conceptual-
+ization, Writing—review and editing, Visualization, Funding acquisition. All authors have read and
+agreed to the published version of the manuscript.
+Funding: This research was funded by [National Key Research and Development Program of
+China] grant numbers [2023YFF1103800, 2023YFF1001900], [Chongqing Modern Agricultural Industry
+Technology System (Poultry)] grant number [CQMAITS202514], [The Undergraduate Innovation
+and Entrepreneurship Training Program of Southwest University], grant number [S202410635359],
+[Chongqing Beibei District Special Project for Science and Technology Talents and Independent
+Innovation] grant number [2024-28].
+Informed Consent Statement: Not applicable.
+Data Availability Statement: No new data were created or analyzed in this study.
+Conflicts of Interest: The authors declare that they have no competing interests.
+Abbreviations
+AOC1
+Amine Oxidase 1;
+ATOX1
+Antioxidant 1 Copper Chaperone;
+ATP7A
+ATPase copper transporting alpha;
+CCS
+Copper Chaperone for Superoxide Dismutase;
+COMMD1
+Copper Metabolism Domain Containing 1;
+COX11
+Cytochrome c Oxidase Copper Chaperone 11;
+COX17
+Cytochrome c Oxidase Copper Chaperone 17;
+CP
+ceruloplasmin;
+CRC
+Colorectal Cancer;
+CTR1
+Copper Transport protein 1;
+CTR2
+Copper Transport protein 2;
+CXCL12
+Chemokine C-X-C Motif Ligand 12;
+CXCR4
+Chemokine C-X-C Motif Receptor 4;
+DMT1
+Divalent Metal Transporter 1;
+FPN1
+Ferroportin 1;
+GPX1
+Glutathione Peroxidase 1;
+DSF
+Disulfiram;
+ECM
+Extracellular Matrix;
+EMT
+epithelial–mesenchymal transition;
+ER
+Endoplasmic Reticulum;
+ES
+Elesclomol;
+ETC-derived
+Electron Transport Chain-derived);
+GSH
+Glutathione;
+HEPH
+hephaestin;
+HIF-1α
+Hypoxia-Inducible Factor 1α;
+HMGB1
+High Mobility Group Box 1;
+INOS
+Inducible Nitric Oxide Synthase;
+LOXL4
+Lysyl Oxidase Homolog 4;
+MD
+Menkes Disease;
+MTs
+Metallothioneins;
+MCFs
+Multi-copper ferroxidases;
+NF-κB
+Nuclear Factor Kappa-Light-Chain-Enhancer of Activated B Cells;
+PAM
+Peptidylglycine α-Amidating Monooxygenase;
+PAMPs
+Pathogen-Associated Molecular Patterns;
+PD-L1
+Programmed cell death ligand 1;
+ROS
+Reactive Oxygen Species;
+SCFAs
+Short-Chain Fatty Acids;
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+24 of 37
+SCO1
+Synthesis of Cytochrome C Oxidase 1;
+SCO2
+Synthesis of Cytochrome C Oxidase 2;
+SLC11A2
+Solute Carrier Family 11 Member 2;
+SLC31A1
+Solute Carrier Family 31 Member 1;
+SLC31A2
+Solute Carrier Family 31 Member 2;
+SOD1
+Cu/Zn-Superoxide Dismutase 1;
+STEAP
+Six-Transmembrane Epithelial Antigen of the Prostate;
+STEAP4
+Six-Transmembrane Epithelial Antigen of the Prostate 4;
+TCA
+Tricarboxylic Acid;
+TGN
+Trans-Golgi Network;
+TLR4
+Toll-Like Receptor 4;
+TPEN
+N,N,N′,N′-tetrakis-[2-pyridylmethyl]-ethylenediamine;
+TTM
+Tetrathiomolybdate;
+VEGF
+Vascular Endothelial Growth Factor;
+XIAP
+X-linked Inhibitor of Apoptosis Protein;
+5-FU
+5-Fluorouracil,
+PTT
+photothermal therapy,
+PDT
+photodynamic therapy.
+References
+1.
+Parsanathan, R. Copper’s dual role: Unravelling the link between copper homeostasis, cuproptosis, and cardiovascular diseases.
+Hypertens. Res. 2024, 47, 1440–1442. [CrossRef] [PubMed]
+2.
+Gaetke, L.M.; Chow-Johnson, H.S.; Chow, C.K. Copper: Toxicological relevance and mechanisms. Arch. Toxicol. 2014, 88,
+1929–1938. [CrossRef] [PubMed]
+3.
+Abdullah, K.M.; Kaushal, J.B.; Takkar, S.; Sharma, G.; Alsafwani, Z.W.; Pothuraju, R.; Batra, S.K.; Siddiqui, J.A. Copper metabolism
+and cuproptosis in human malignancies: Unraveling the complex interplay for therapeutic insights. Heliyon 2024, 10, e27496.
+[CrossRef]
+4.
+Małyszko, M.; Przybyłkowski, A. Copper and Colorectal Cancer. Cancers 2024, 16, 3691. [CrossRef]
+5.
+Cook, M.W.; LaPenna, K.B.; Baker, J.W.; Rabito, F.A. Our Patients Do Indeed Have Excess Serum Copper (and Normal Ceruloplas-
+min): The Reasons Why Are Yet to Be Determined. Obes. Surg. 2022, 32, 2071–2072. [CrossRef]
+6.
+Cui, X.; Wang, Y.; Liu, H.; Shi, M.; Wang, J.; Wang, Y. The Molecular Mechanisms of Defective Copper Metabolism in Diabetic
+Cardiomyopathy. Oxidative Med. Cell. Longev. 2022, 2022, 5418376. [CrossRef]
+7.
+Ban, X.X.; Wan, H.; Wan, X.X.; Tan, Y.T.; Hu, X.M.; Ban, H.X.; Chen, X.Y.; Huang, K.; Zhang, Q.; Xiong, K. Copper Metabolism and
+Cuproptosis: Molecular Mechanisms and Therapeutic Perspectives in Neurodegenerative Diseases. Curr. Med. Sci. 2024, 44,
+28–50. [CrossRef]
+8.
+Jiayi, H.; Ziyuan, T.; Tianhua, X.; Mingyu, Z.; Yutong, M.; Jingyu, W.; Hongli, Z.; Li, S. Copper homeostasis in chronic kidney
+disease and its crosstalk with ferroptosis. Pharmacol. Res. 2024, 202, 107139. [CrossRef]
+9.
+Tang, X.; Yan, Z.; Miao, Y.; Ha, W.; Li, Z.; Yang, L.; Mi, D. Copper in cancer: From limiting nutrient to therapeutic target. Front.
+Oncol. 2023, 13, 1209156. [CrossRef]
+10.
+Doguer, C.; Ha, J.H.; Collins, J.F. Intersection of Iron and Copper Metabolism in the Mammalian Intestine and Liver. Compr.
+Physiol. 2018, 8, 1433–1461. [CrossRef] [PubMed]
+11.
+Li, C.; Li, Y.; Ding, C. The Role of Copper Homeostasis at the Host-Pathogen Axis: From Bacteria to Fungi. Int. J. Mol. Sci. 2019,
+20, 175. [CrossRef] [PubMed]
+12.
+Yang, Y.; Wu, J.; Wang, L.; Ji, G.; Dang, Y. Copper homeostasis and cuproptosis in health and disease. MedComm 2024, 5, e724.
+[CrossRef]
+13.
+Hyre, A.; Casanova-Hampton, K.; Subashchandrabose, S. Copper Homeostatic Mechanisms and Their Role in the Virulence of
+Escherichia coli and Salmonella enterica. EcoSal Plus 2021, 9, eESP00142020. [CrossRef]
+14.
+Gonzalez-Acera, M.; Patankar, J.V.; Erkert, L.; Cineus, R.; Gamez-Belmonte, R.; Leupold, T.; Bubeck, M.; Bao, L.L.; Dinkel, M.;
+Wang, R.; et al. Integrated multimodel analysis of intestinal inflammation exposes key molecular features of preclinical and
+clinical IBD. Gut 2025, 74, 1602–1615. [CrossRef] [PubMed]
+15.
+Hyun, H.K.; Cheon, J.H. Metabolic Disorders and Inflammatory Bowel Diseases. Gut Liver 2025, 19, 307–317. [CrossRef] [PubMed]
+16.
+Wang, D.; Guan, H. Cuproptosis: A new mechanism for anti-tumour therapy. Pathol. Res. Pract. 2025, 266, 155790. [CrossRef]
+17.
+Tsvetkov, P.; Coy, S.; Petrova, B.; Dreishpoon, M.; Verma, A.; Abdusamad, M.; Rossen, J.; Joesch-Cohen, L.; Humeidi, R.; Spangler,
+R.D.; et al. Copper induces cell death by targeting lipoylated TCA cycle proteins. Science 2022, 375, 1254–1261. [CrossRef]
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+25 of 37
+18.
+Wang, H.; Yang, Y.; Du, J. Cuproptosis: The mechanisms of copper-induced cell death and its implication in colorectal cancer.
+Naunyn-Schmiedeberg’s Arch. Pharmacol. 2025, 398, 14737–14749. [CrossRef]
+19.
+Mason, K.E. A conspectus of research on copper metabolism and requirements of man. J. Nutr. 1979, 109, 1979–2066. [CrossRef]
+20.
+Georgatsou, E.; Mavrogiannis, L.A.; Fragiadakis, G.S.; Alexandraki, D. The yeast Fre1p/Fre2p cupric reductases facilitate copper
+uptake and are regulated by the copper-modulated Mac1p activator. J. Biol. Chem. 1997, 272, 13786–13792. [CrossRef]
+21.
+Dancis, A.; Roman, D.G.; Anderson, G.J.; Hinnebusch, A.G.; Klausner, R.D. Ferric reductase of Saccharomyces cerevisiae:
+Molecular characterization, role in iron uptake, and transcriptional control by iron. Proc. Natl. Acad. Sci. USA 1992, 89, 3869–3873.
+[CrossRef]
+22.
+Walshe, J.M. Wilson’s disease. Lancet 2007, 369, 902. [CrossRef]
+23.
+Nose, Y.; Wood, L.K.; Kim, B.E.; Prohaska, J.R.; Fry, R.S.; Spears, J.W.; Thiele, D.J. Ctr1 is an apical copper transporter in
+mammalian intestinal epithelial cells in vivo that is controlled at the level of protein stability. J. Biol. Chem. 2010, 285, 32385–32392.
+[CrossRef]
+24.
+Nose, Y.; Kim, B.E.; Thiele, D.J. Ctr1 drives intestinal copper absorption and is essential for growth, iron metabolism, and neonatal
+cardiac function. Cell Metab. 2006, 4, 235–244. [CrossRef] [PubMed]
+25.
+Balamurugan, K.; Egli, D.; Hua, H.; Rajaram, R.; Seisenbacher, G.; Georgiev, O.; Schaffner, W. Copper homeostasis in Drosophila
+by complex interplay of import, storage and behavioral avoidance. EMBO J. 2007, 26, 1035–1044. [CrossRef]
+26.
+Zimnicka, A.M.; Maryon, E.B.; Kaplan, J.H. Human copper transporter hCTR1 mediates basolateral uptake of copper into
+enterocytes: Implications for copper homeostasis. J. Biol. Chem. 2007, 282, 26471–26480. [CrossRef] [PubMed]
+27.
+Molloy, S.A.; Kaplan, J.H. Copper-dependent recycling of hCTR1, the human high affinity copper transporter. J. Biol. Chem. 2009,
+284, 29704–29713. [CrossRef]
+28.
+Elchuri, S.; Oberley, T.D.; Qi, W.; Eisenstein, R.S.; Jackson Roberts, L.; Van Remmen, H.; Epstein, C.J.; Huang, T.T. CuZnSOD
+deficiency leads to persistent and widespread oxidative damage and hepatocarcinogenesis later in life. Oncogene 2005, 24, 367–380.
+[CrossRef]
+29.
+Lalioti, V.; Muruais, G.; Tsuchiya, Y.; Pulido, D.; Sandoval, I.V. Molecular mechanisms of copper homeostasis. Front. Biosci. 2009,
+14, 4878–4903. [CrossRef]
+30.
+Freedman, J.H.; Ciriolo, M.R.; Peisach, J. The role of glutathione in copper metabolism and toxicity. J. Biol. Chem. 1989, 264,
+5598–5605. [CrossRef] [PubMed]
+31.
+Maryon, E.B.; Molloy, S.A.; Kaplan, J.H. Cellular glutathione plays a key role in copper uptake mediated by human copper
+transporter 1. Am. J. Physiol. Cell Physiol. 2013, 304, C768–C779. [CrossRef] [PubMed]
+32.
+Skopp, A.; Boyd, S.D.; Ullrich, M.S.; Liu, L.; Winkler, D.D. Copper-zinc superoxide dismutase (Sod1) activation terminates
+interaction between its copper chaperone (Ccs) and the cytosolic metal-binding domain of the copper importer Ctr1. Biometals
+2019, 32, 695–705. [CrossRef]
+33.
+López-Alonso, M.; Carbajales, P.; Miranda, M.; Pereira, V. Subcellular distribution of hepatic copper in beef cattle receiving high
+copper supplementation. J. Trace Elem. Med. Biol. 2017, 42, 111–116. [CrossRef]
+34.
+Masaldan, S.; Clatworthy, S.A.S.; Gamell, C.; Smith, Z.M.; Francis, P.S.; Denoyer, D.; Meggyesy, P.M.; Fontaine, S.; Cater, M.A.
+Copper accumulation in senescent cells: Interplay between copper transporters and impaired autophagy. Redox Biol. 2018, 16,
+322–331. [CrossRef]
+35.
+Solier, S.; Müller, S.; Cañeque, T.; Versini, A.; Mansart, A.; Sindikubwabo, F.; Baron, L.; Emam, L.; Gestraud, P.; Pantos,, G.D.; et al.
+A druggable copper-signalling pathway that drives inflammation. Nature 2023, 617, 386–394. [CrossRef]
+36.
+Wong, P.C.; Waggoner, D.; Subramaniam, J.R.; Tessarollo, L.; Bartnikas, T.B.; Culotta, V.C.; Price, D.L.; Rothstein, J.; Gitlin, J.D.
+Copper chaperone for superoxide dismutase is essential to activate mammalian Cu/Zn superoxide dismutase. Proc. Natl. Acad.
+Sci. USA 2000, 97, 2886–2891. [CrossRef]
+37.
+Bertinato, J.; L’Abbé, M.R. Copper modulates the degradation of copper chaperone for Cu,Zn superoxide dismutase by the 26 S
+proteosome. J. Biol. Chem. 2003, 278, 35071–35078. [CrossRef]
+38.
+Chojnacka, M.; Gornicka, A.; Oeljeklaus, S.; Warscheid, B.; Chacinska, A. Cox17 Protein Is an Auxiliary Factor Involved in the
+Control of the Mitochondrial Contact Site and Cristae Organizing System. J. Biol. Chem. 2015, 290, 15304–15312. [CrossRef]
+39.
+Nývltová, E.; Dietz, J.V.; Seravalli, J.; Khalimonchuk, O.; Barrientos, A. Coordination of metal center biogenesis in human
+cytochrome c oxidase. Nat. Commun. 2022, 13, 3615. [CrossRef] [PubMed]
+40.
+Heaton, D.N.; George, G.N.; Garrison, G.; Winge, D.R. The mitochondrial copper metallochaperone Cox17 exists as an oligomeric,
+polycopper complex. Biochemistry 2001, 40, 743–751. [CrossRef] [PubMed]
+41.
+Prohaska, J.R. Role of copper transporters in copper homeostasis. Am. J. Clin. Nutr. 2008, 88, 826s–829s. [CrossRef] [PubMed]
+42.
+Horng, Y.C.; Cobine, P.A.; Maxfield, A.B.; Carr, H.S.; Winge, D.R. Specific copper transfer from the Cox17 metallochaperone to
+both Sco1 and Cox11 in the assembly of yeast cytochrome C oxidase. J. Biol. Chem. 2004, 279, 35334–35340. [CrossRef]
+43.
+La Fontaine, S.; Mercer, J.F. Trafficking of the copper-ATPases, ATP7A and ATP7B: Role in copper homeostasis. Arch. Biochem.
+Biophys. 2007, 463, 149–167. [CrossRef]
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+26 of 37
+44.
+Hamza, I.; Faisst, A.; Prohaska, J.; Chen, J.; Gruss, P.; Gitlin, J.D. The metallochaperone Atox1 plays a critical role in perinatal
+copper homeostasis. Proc. Natl. Acad. Sci. USA 2001, 98, 6848–6852. [CrossRef]
+45.
+Cater, M.A.; La Fontaine, S.; Shield, K.; Deal, Y.; Mercer, J.F. ATP7B mediates vesicular sequestration of copper: Insight into biliary
+copper excretion. Gastroenterology 2006, 130, 493–506. [CrossRef] [PubMed]
+46.
+Petris, M.J.; Mercer, J.F.; Culvenor, J.G.; Lockhart, P.; Gleeson, P.A.; Camakaris, J. Ligand-regulated transport of the Menkes copper
+P-type ATPase efflux pump from the Golgi apparatus to the plasma membrane: A novel mechanism of regulated trafficking.
+EMBO J. 1996, 15, 6084–6095. [CrossRef] [PubMed]
+47.
+Petris, M.J.; Strausak, D.; Mercer, J.F. The Menkes copper transporter is required for the activation of tyrosinase. Hum. Mol. Genet.
+2000, 9, 2845–2851. [CrossRef]
+48.
+La Fontaine, S.; Ackland, M.L.; Mercer, J.F. Mammalian copper-transporting P-type ATPases, ATP7A and ATP7B: Emerging roles.
+Int. J. Biochem. Cell Biol. 2010, 42, 206–209. [CrossRef]
+49.
+Nishito, Y.; Kambe, T. Absorption Mechanisms of Iron, Copper, and Zinc: An Overview. J. Nutr. Sci. Vitaminol. 2018, 64, 1–7.
+[CrossRef]
+50.
+Gralla, E.B.; Valentine, J.S. Null mutants of Saccharomyces cerevisiae Cu,Zn superoxide dismutase: Characterization and
+spontaneous mutation rates. J. Bacteriol. 1991, 173, 5918–5920. [CrossRef]
+51.
+Sun, L.; Ding, X.; Kang, Y.J. ABCE1 selectively promotes HIF-1α transactivation of angiogenic gene expression. J. Trace Elem. Med.
+Biol. 2023, 80, 127307. [CrossRef]
+52.
+Fitisemanu, F.M.; Padilla-Benavides, T. Emerging perspectives of copper-mediated transcriptional regulation in mammalian cell
+development. Metallomics 2024, 16, mfae046. [CrossRef]
+53.
+Yan, D.; Aiba, I.; Chen, H.H.; Kuo, M.T. Effects of Cu(II) and cisplatin on the stability of Specific protein 1 (Sp1)-DNA binding:
+Insights into the regulation of copper homeostasis and platinum drug transport. J. Inorg. Biochem. 2016, 161, 37–39. [CrossRef]
+54.
+Ruturaj; Mishra, M.; Saha, S.; Maji, S.; Rodriguez-Boulan, E.; Schreiner, R.; Gupta, A. Regulation of the apico-basolateral trafficking
+polarity of the homologous copper-ATPases ATP7A and ATP7B. J. Cell Sci. 2024, 137, jcs261258. [CrossRef] [PubMed]
+55.
+Polgar, N.; Fogelgren, B. Regulation of Cell Polarity by Exocyst-Mediated Trafficking. Cold Spring Harb. Perspect. Biol. 2018,
+10, a031401. [CrossRef] [PubMed]
+56.
+Bidaud-Meynard, A.; Nicolle, O.; Heck, M.; Le Cunff, Y.; Michaux, G. A V0-ATPase-dependent apical trafficking pathway
+maintains the polarity of the intestinal absorptive membrane. Development 2019, 146, dev174508. [CrossRef]
+57.
+Bidaud-Meynard, A.; Bossard, F.; Schnúr, A.; Fukuda, R.; Veit, G.; Xu, H.; Lukacs, G.L. Transcytosis maintains CFTR apical
+polarity in the face of constitutive and mutation-induced basolateral missorting. J. Cell Sci. 2019, 132, jcs226886. [CrossRef]
+58.
+Chun, H.; Sharma, A.K.; Lee, J.; Chan, J.; Jia, S.; Kim, B.E. The Intestinal Copper Exporter CUA-1 Is Required for Systemic Copper
+Homeostasis in Caenorhabditis elegans. J. Biol. Chem. 2017, 292, 1–14. [CrossRef]
+59.
+Beumer, J.; Puschhof, J.; Yengej, F.Y.; Zhao, L.; Martinez-Silgado, A.; Blotenburg, M.; Begthel, H.; Boot, C.; van Oudenaarden, A.;
+Chen, Y.G.; et al. BMP gradient along the intestinal villus axis controls zonated enterocyte and goblet cell states. Cell Rep. 2022, 38,
+110438. [CrossRef] [PubMed]
+60.
+Li, R.; Wen, Y.; Lin, G.; Meng, C.; He, P.; Wang, F. Different Sources of Copper Effect on Intestinal Epithelial Cell: Toxicity,
+Oxidative Stress, and Metabolism. Metabolites 2019, 10, 11. [CrossRef]
+61.
+Wikström, M.; Sharma, V. Proton pumping by cytochrome c oxidase—A 40 year anniversary. Biochim. Biophys. Acta Bioenerg. 2018,
+1859, 692–698. [CrossRef]
+62.
+Wikstrom, M.K. Proton pump coupled to cytochrome c oxidase in mitochondria. Nature 1977, 266, 271–273. [CrossRef]
+63.
+Fridovich, I. Superoxide radical and superoxide dismutases. Annu. Rev. Biochem. 1995, 64, 97–112. [CrossRef] [PubMed]
+64.
+Hatori, Y.; Lutsenko, S. The Role of Copper Chaperone Atox1 in Coupling Redox Homeostasis to Intracellular Copper Distribution.
+Antioxidants 2016, 5, 25. [CrossRef] [PubMed]
+65.
+Vonk, W.I.; Wijmenga, C.; Berger, R.; van de Sluis, B.; Klomp, L.W. Cu,Zn superoxide dismutase maturation and activity are
+regulated by COMMD1. J. Biol. Chem. 2010, 285, 28991–29000. [CrossRef]
+66.
+Enrique-Tarancón, G.; Marti, L.; Morin, N.; Lizcano, J.M.; Unzeta, M.; Sevilla, L.; Camps, M.; Palacín, M.; Testar, X.; Carpéné, C.;
+et al. Role of semicarbazide-sensitive amine oxidase on glucose transport and GLUT4 recruitment to the cell surface in adipose
+cells. J. Biol. Chem. 1998, 273, 8025–8032. [CrossRef]
+67.
+Ding, Q.; Lin, D.; Zhou, Y.; Li, F.; Lai, J.; Duan, J.; Chen, J.; Jiang, C. Downregulation of amine oxidase copper containing 1 inhibits
+tumor progression by suppressing IL-6/JAK/STAT3 pathway activation in hepatocellular carcinoma. Oncol. Lett. 2021, 22, 857.
+[CrossRef]
+68.
+Xu, F.; Xu, Y.; Xiong, J.H.; Zhang, J.H.; Wu, J.; Luo, J.; Xiong, J.P. AOC1 Contributes to Tumor Progression by Promoting the AKT
+and EMT Pathways in Gastric Cancer. Cancer Manag. Res. 2020, 12, 1789–1798. [CrossRef]
+69.
+Li, R.K.; Zhao, W.Y.; Fang, F.; Zhuang, C.; Zhang, X.X.; Yang, X.M.; Jiang, S.H.; Kong, F.Z.; Tu, L.; Zhang, W.M.; et al. Lysyl
+oxidase-like 4 (LOXL4) promotes proliferation and metastasis of gastric cancer via FAK/Src pathway. J. Cancer Res. Clin. Oncol.
+2015, 141, 269–281. [CrossRef]
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+27 of 37
+70.
+Zaffryar-Eilot, S.; Hasson, P. Lysyl Oxidases: Orchestrators of Cellular Behavior and ECM Remodeling and Homeostasis. Int. J.
+Mol. Sci. 2022, 23, 11378. [CrossRef] [PubMed]
+71.
+Kasashima, H.; Yashiro, M.; Okuno, T.; Miki, Y.; Kitayama, K.; Masuda, G.; Kinoshita, H.; Morisaki, T.; Fukuoka, T.; Hasegawa, T.;
+et al. Significance of the Lysyl Oxidase Members Lysyl Oxidase Like 1, 3, and 4 in Gastric Cancer. Digestion 2018, 98, 238–248.
+[CrossRef]
+72.
+Vulpe, C.D.; Kuo, Y.M.; Murphy, T.L.; Cowley, L.; Askwith, C.; Libina, N.; Gitschier, J.; Anderson, G.J. Hephaestin, a ceruloplasmin
+homologue implicated in intestinal iron transport, is defective in the sla mouse. Nat. Genet. 1999, 21, 195–199. [CrossRef]
+73.
+Fuqua, B.K.; Lu, Y.; Darshan, D.; Frazer, D.M.; Wilkins, S.J.; Wolkow, N.; Bell, A.G.; Hsu, J.; Yu, C.C.; Chen, H.; et al. The
+multicopper ferroxidase hephaestin enhances intestinal iron absorption in mice. PLoS ONE 2014, 9, e98792. [CrossRef] [PubMed]
+74.
+Brischigliaro, M.; Zeviani, M. Cytochrome c oxidase deficiency. Biochim. Biophys. Acta Bioenerg. 2021, 1862, 148335. [CrossRef]
+[PubMed]
+75.
+Eleutherio, E.C.A.; Silva Magalhães, R.S.; de Araújo Brasil, A.; Monteiro Neto, J.R.; de Holanda Paranhos, L. SOD1, more than just
+an antioxidant. Arch. Biochem. Biophys. 2021, 697, 108701. [CrossRef]
+76.
+Comas-Basté, O.; Sánchez-Pérez, S.; Veciana-Nogués, M.T.; Latorre-Moratalla, M.; Vidal-Carou, M.D.C. Histamine Intolerance:
+The Current State of the Art. Biomolecules 2020, 10, 1181. [CrossRef]
+77.
+Ouyang, J.; Yan, J.; Zhou, X.; Isnard, S.; Harypursat, V.; Cui, H.; Routy, J.P.; Chen, Y. Relevance of biomarkers indicating gut
+damage and microbial translocation in people living with HIV. Front. Immunol. 2023, 14, 1173956. [CrossRef]
+78.
+Bäck, N.; Mains, R.E.; Eipper, B.A. PAM: Diverse roles in neuroendocrine cells, cardiomyocytes, and green algae. FEBS J. 2022,
+289, 4470–4496. [CrossRef]
+79.
+Ma, H.Y.; Li, Q.; Wong, W.R.; N’Diaye, E.N.; Caplazi, P.; Bender, H.; Huang, Z.; Arlantico, A.; Jeet, S.; Wong, A.; et al. LOXL4, but
+not LOXL2, is the critical determinant of pathological collagen cross-linking and fibrosis in the lung. Sci. Adv. 2023, 9, eadf0133.
+[CrossRef]
+80.
+Raju, K.S.; Alessandri, G.; Ziche, M.; Gullino, P.M. Ceruloplasmin, copper ions, and angiogenesis. J. Natl. Cancer Inst. 1982, 69,
+1183–1188. [PubMed]
+81.
+Bao, H.; Wang, Y.; Xiong, H.; Xia, Y.; Cui, Z.; Liu, L. Mechanism of Iron Ion Homeostasis in Intestinal Immunity and Gut
+Microbiota Remodeling. Int. J. Mol. Sci. 2024, 25, 727. [CrossRef]
+82.
+Knöpfel, M.; Smith, C.; Solioz, M. ATP-driven copper transport across the intestinal brush border membrane. Biochem. Biophys.
+Res. Commun. 2005, 330, 645–652. [CrossRef] [PubMed]
+83.
+Espinoza, A.; Le Blanc, S.; Olivares, M.; Pizarro, F.; Ruz, M.; Arredondo, M. Iron, copper, and zinc transport: Inhibition of divalent
+metal transporter 1 (DMT1) and human copper transporter 1 (hCTR1) by shRNA. Biol. Trace Elem. Res. 2012, 146, 281–286.
+[CrossRef] [PubMed]
+84.
+Arredondo, M.; Muñoz, P.; Mura, C.V.; Nùñez, M.T. DMT1, a physiologically relevant apical Cu1+ transporter of intestinal cells.
+Am. J. physiology. Cell Physiol. 2003, 284, C1525–C1530. [CrossRef]
+85.
+Illing, A.C.; Shawki, A.; Cunningham, C.L.; Mackenzie, B. Substrate profile and metal-ion selectivity of human divalent metal-ion
+transporter-1. J. Biol. Chem. 2012, 287, 30485–30496. [CrossRef]
+86.
+Shawki, A.; Knight, P.B.; Maliken, B.D.; Niespodzany, E.J.; Mackenzie, B. H(+)-coupled divalent metal-ion transporter-1:
+Functional properties, physiological roles and therapeutics. Curr. Top. Membr. 2012, 70, 169–214. [CrossRef] [PubMed]
+87.
+Jiang, L.; Garrick, M.D.; Garrick, L.M.; Zhao, L.; Collins, J.F. Divalent metal transporter 1 (Dmt1) mediates copper transport
+in the duodenum of iron-deficient rats and when overexpressed in iron-deprived HEK-293 cells. J. Nutr. 2013, 143, 1927–1933.
+[CrossRef]
+88.
+Vashchenko, G.; MacGillivray, R.T. Multi-copper oxidases and human iron metabolism. Nutrients 2013, 5, 2289–2313. [CrossRef]
+89.
+Helman, S.L.; Zhou, J.; Fuqua, B.K.; Lu, Y.; Collins, J.F.; Chen, H.; Vulpe, C.D.; Anderson, G.J.; Frazer, D.M. The biology of
+mammalian multi-copper ferroxidases. Biometals 2023, 36, 263–281. [CrossRef]
+90.
+Wang, X.; Garrick, M.D.; Collins, J.F. Animal Models of Normal and Disturbed Iron and Copper Metabolism. J. Nutr. 2019, 149,
+2085–2100. [CrossRef]
+91.
+Prohaska, J.R. Impact of copper limitation on expression and function of multicopper oxidases (ferroxidases). Adv. Nutr. 2011, 2,
+89–95. [CrossRef]
+92.
+Prohaska, J.R.; Broderius, M. Copper deficiency has minimal impact on ferroportin expression or function. Biometals 2012, 25,
+633–642. [CrossRef] [PubMed]
+93.
+Matak, P.; Zumerle, S.; Mastrogiannaki, M.; El Balkhi, S.; Delga, S.; Mathieu, J.R.; Canonne-Hergaux, F.; Poupon, J.; Sharp, P.A.;
+Vaulont, S.; et al. Copper deficiency leads to anemia, duodenal hypoxia, upregulation of HIF-2α and altered expression of iron
+absorption genes in mice. PLoS ONE 2013, 8, e59538. [CrossRef] [PubMed]
+94.
+Xu, E.; Chen, M.; Zheng, J.; Maimaitiming, Z.; Zhong, T.; Chen, H. Deletion of hephaestin and ceruloplasmin induces a serious
+systemic iron deficiency and disrupts iron homeostasis. Biochem. Biophys. Res. Commun. 2018, 503, 1905–1910. [CrossRef]
+[PubMed]
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+28 of 37
+95.
+Bahadir, A.; Erduran, E.; De˘ger, O.; Birinci, Y.; Ayar, A. Augmented mitochondrial cytochrome c oxidase activity in children with
+iron deficiency: A tandem between iron and copper? Arch. Med. Sci. 2018, 14, 151–156. [CrossRef]
+96.
+Garcia, L.; Mansilla, N.; Ocampos, N.; Pagani, M.A.; Welchen, E.; Gonzalez, D.H. The mitochondrial copper chaperone COX19
+influences copper and iron homeostasis in arabidopsis. Plant Mol. Biol. 2019, 99, 621–638. [CrossRef]
+97.
+Pandey, A.K.; Pain, J.; Dancis, A.; Pain, D. Mitochondria export iron-sulfur and sulfur intermediates to the cytoplasm for
+iron-sulfur cluster assembly and tRNA thiolation in yeast. J. Biol. Chem. 2019, 294, 9489–9502. [CrossRef]
+98.
+Paul, B.T.; Tesfay, L.; Winkler, C.R.; Torti, F.M.; Torti, S.V. Sideroflexin 4 affects Fe-S cluster biogenesis, iron metabolism,
+mitochondrial respiration and heme biosynthetic enzymes. Sci. Rep. 2019, 9, 19634. [CrossRef]
+99.
+Liddell, J.R.; White, A.R. Nexus between mitochondrial function, iron, copper and glutathione in Parkinson’s disease. Neurochem.
+Int. 2018, 117, 126–138. [CrossRef]
+100. Lin, H.; Chen, D.; Du, Q.; Pan, T.; Tu, H.; Xu, Y.; Teng, T.; Tu, J.; Li, J.; Lin, Z.; et al. Dietary Copper Plays an Important Role
+in Maintaining Intestinal Barrier Integrity During Alcohol-Induced Liver Disease Through Regulation of the Intestinal HIF-1α
+Signaling Pathway and Oxidative Stress. Front. Physiol. 2020, 11, 369. [CrossRef]
+101. Wen, Y.; Yang, L.; Wang, Z.; Liu, X.; Gao, M.; Zhang, Y.; Wang, J.; He, P. Blocked conversion of Lactobacillus johnsonii derived
+acetate to butyrate mediates copper-induced epithelial barrier damage in a pig model. Microbiome 2023, 11, 218. [CrossRef]
+102. Chen, G.H.; Luo, Z.; Hogstrand, C.; Wu, K.; Ling, S.C. SREBP1, PPARG and AMPK pathways mediated the Cu-induced change in
+intestinal lipogenesis and lipid transport of yellow catfish Pelteobagrus fulvidraco. Food Chem. 2018, 269, 595–602. [CrossRef]
+[PubMed]
+103. Grass, G.; Rensing, C.; Solioz, M. Metallic copper as an antimicrobial surface. Appl. Environ. Microbiol. 2011, 77, 1541–1547.
+[CrossRef]
+104. Djoko, K.Y.; Franiek, J.A.; Edwards, J.L.; Falsetta, M.L.; Kidd, S.P.; Potter, A.J.; Chen, N.H.; Apicella, M.A.; Jennings, M.P.; McEwan,
+A.G. Phenotypic characterization of a copA mutant of Neisseria gonorrhoeae identifies a link between copper and nitrosative
+stress. Infect. Immun. 2012, 80, 1065–1071. [CrossRef]
+105. Gold, B.; Deng, H.; Bryk, R.; Vargas, D.; Eliezer, D.; Roberts, J.; Jiang, X.; Nathan, C. Identification of a copper-binding
+metallothionein in pathogenic mycobacteria. Nat. Chem. Biol. 2008, 4, 609–616. [CrossRef]
+106. Tottey, S.; Patterson, C.J.; Banci, L.; Bertini, I.; Felli, I.C.; Pavelkova, A.; Dainty, S.J.; Pernil, R.; Waldron, K.J.; Foster, A.W.; et al.
+Cyanobacterial metallochaperone inhibits deleterious side reactions of copper. Proc. Natl. Acad. Sci. USA 2012, 109, 95–100.
+[CrossRef]
+107. Chillappagari, S.; Seubert, A.; Trip, H.; Kuipers, O.P.; Marahiel, M.A.; Miethke, M. Copper stress affects iron homeostasis by
+destabilizing iron-sulfur cluster formation in Bacillus subtilis. J. Bacteriol. 2010, 192, 2512–2524. [CrossRef] [PubMed]
+108. Fung, D.K.; Lau, W.Y.; Chan, W.T.; Yan, A. Copper efflux is induced during anaerobic amino acid limitation in Escherichia coli to
+protect iron-sulfur cluster enzymes and biogenesis. J. Bacteriol. 2013, 195, 4556–4568. [CrossRef]
+109. Djoko, K.Y.; McEwan, A.G. Antimicrobial action of copper is amplified via inhibition of heme biosynthesis. ACS Chem. Biol. 2013,
+8, 2217–2223. [CrossRef] [PubMed]
+110. Hans, M.; Mathews, S.; Mücklich, F.; Solioz, M. Physicochemical properties of copper important for its antibacterial activity and
+development of a unified model. Biointerphases 2015, 11, 018902. [CrossRef]
+111. Dalecki, A.G.; Crawford, C.L.; Wolschendorf, F. Copper and Antibiotics: Discovery, Modes of Action, and Opportunities for
+Medicinal Applications. Adv. Microb. Physiol. 2017, 70, 193–260. [CrossRef]
+112. Rai, R.; Gummadi, S.N.; Chand, D.K. Cuprous Oxide- or Copper-Coated Jute Stick Pieces at an Air-Water Interface for Prevention
+of Aerial Contamination in Potable Water. ACS Omega 2019, 4, 22514–22520. [CrossRef] [PubMed]
+113. Wagner, D.; Maser, J.; Lai, B.; Cai, Z.; Barry, C.E., 3rd; Höner Zu Bentrup, K.; Russell, D.G.; Bermudez, L.E. Elemental analysis
+of Mycobacterium avium-, Mycobacterium tuberculosis-, and Mycobacterium smegmatis-containing phagosomes indicates
+pathogen-induced microenvironments within the host cell’s endosomal system. J. Immunol. 2005, 174, 1491–1500. [CrossRef]
+114. White, C.; Lee, J.; Kambe, T.; Fritsche, K.; Petris, M.J. A role for the ATP7A copper-transporting ATPase in macrophage bactericidal
+activity. J. Biol. Chem. 2009, 284, 33949–33956. [CrossRef] [PubMed]
+115. Ladomersky, E.; Khan, A.; Shanbhag, V.; Cavet, J.S.; Chan, J.; Weisman, G.A.; Petris, M.J. Host and Pathogen Copper-Transporting
+P-Type ATPases Function Antagonistically during Salmonella Infection. Infect. Immun. 2017, 85, e00351-17. [CrossRef]
+116. Samanovic, M.I.; Ding, C.; Thiele, D.J.; Darwin, K.H. Copper in microbial pathogenesis: Meddling with the metal. Cell Host
+Microbe 2012, 11, 106–115. [CrossRef]
+117. García-Santamarina, S.; Thiele, D.J. Copper at the Fungal Pathogen-Host Axis. J. Biol. Chem. 2015, 290, 18945–18953. [CrossRef]
+[PubMed]
+118. Rosen, T.; Wang, K.A.; Nolan, E.M. Metal sequestration by S100 proteins in chemically diverse environments. Trends Microbiol.
+2022, 30, 654–664. [CrossRef]
+119. Zygiel, E.M.; Nolan, E.M. Transition Metal Sequestration by the Host-Defense Protein Calprotectin. Annu. Rev. Biochem. 2018, 87,
+621–643. [CrossRef]
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+29 of 37
+120. Murdoch, C.C.; Skaar, E.P. Nutritional immunity: The battle for nutrient metals at the host-pathogen interface. Nat. Rev. Microbiol.
+2022, 20, 657–670. [CrossRef]
+121. Fu, Y.; Chang, F.M.; Giedroc, D.P. Copper transport and trafficking at the host-bacterial pathogen interface. Acc. Chem. Res. 2014,
+47, 3605–3613. [CrossRef] [PubMed]
+122. Ray, S.C.; Rappleye, C.A. Mac1-Dependent Copper Sensing Promotes Histoplasma Adaptation to the Phagosome during Adaptive
+Immunity. mBio 2022, 13, e0377321. [CrossRef] [PubMed]
+123. Probst, C.; Garcia-Santamarina, S.; Brooks, J.T.; Van Der Kloet, I.; Baars, O.; Ralle, M.; Thiele, D.J.; Alspaugh, J.A. Interactions
+between copper homeostasis and the fungal cell wall affect copper stress resistance. PLoS Pathog. 2022, 18, e1010195. [CrossRef]
+124. Buglino, J.A.; Ozakman, Y.; Xu, Y.; Chowdhury, F.; Tan, D.S.; Glickman, M.S. Diisonitrile Lipopeptides Mediate Resistance to
+Copper Starvation in Pathogenic Mycobacteria. mBio 2022, 13, e0251322. [CrossRef]
+125. Branch, A.H.; Stoudenmire, J.L.; Seib, K.L.; Cornelissen, C.N. Acclimation to Nutritional Immunity and Metal Intoxication
+Requires Zinc, Manganese, and Copper Homeostasis in the Pathogenic Neisseriae. Front. Cell. Infect. Microbiol. 2022, 12, 909888.
+[CrossRef]
+126. Brechting, P.J.; Rappleye, C.A. Histoplasma Responses to Nutritional Immunity Imposed by Macrophage Activation. J. Fungi
+2019, 5, 45. [CrossRef]
+127. Méndez, A.A.E.; Mendoza, J.I.; Echarren, M.L.; Terán, I.; Checa, S.K.; Soncini, F.C. Evolution of Copper Homeostasis and Virulence
+in Salmonella. Front. Microbiol. 2022, 13, 823176. [CrossRef]
+128. Koh, E.I.; Henderson, J.P. Microbial Copper-binding Siderophores at the Host-Pathogen Interface. J. Biol. Chem. 2015, 290,
+18967–18974. [CrossRef]
+129. Chaturvedi, K.S.; Henderson, J.P. Pathogenic adaptations to host-derived antibacterial copper. Front. Cell. Infect. Microbiol. 2014, 4,
+3. [CrossRef]
+130. Maurakis, S.; Keller, K.; Maxwell, C.N.; Pereira, K.; Chazin, W.J.; Criss, A.K.; Cornelissen, C.N. The novel interaction between
+Neisseria gonorrhoeae TdfJ and human S100A7 allows gonococci to subvert host zinc restriction. PLoS Pathog. 2019, 15, e1007937.
+[CrossRef] [PubMed]
+131. Porollo, A.; Sayson, S.G.; Ashbaugh, A.; Rebholz, S.; Landero Figueroa, J.A.; Cushion, M.T. Insights into copper sensing and
+tolerance in Pneumocystis species. Front. Microbiol. 2024, 15, 1383737. [CrossRef]
+132. Focarelli, F.; Giachino, A.; Waldron, K.J. Copper microenvironments in the human body define patterns of copper adaptation in
+pathogenic bacteria. PLoS Pathog. 2022, 18, e1010617. [CrossRef]
+133. Nguyen, H.T.T.; Kheravii, S.K.; Wu, S.B.; Roberts, J.R.; Swick, R.A.; Toghyani, M. Sources and levels of copper affect liver copper
+profile, intestinal morphology and cecal microbiota population of broiler chickens fed wheat-soybean meal diets. Sci. Rep. 2022,
+12, 2249. [CrossRef]
+134. Thompson, K.; Burkholder, K.; Patterson, J.; Applegate, T.J. Microbial ecology shifts in the ileum of broilers during feed
+withdrawal and dietary manipulations. Poult. Sci. 2008, 87, 1624–1632. [CrossRef]
+135. Pang, Y.; Patterson, J.A.; Applegate, T.J. The influence of copper concentration and source on ileal microbiota. Poult. Sci. 2009, 88,
+586–592. [CrossRef]
+136. Yausheva, E.; Miroshnikov, S.; Sizova, E. Intestinal microbiome of broiler chickens after use of nanoparticles and metal salts.
+Environ. Sci. Pollut. Res. Int. 2018, 25, 18109–18120. [CrossRef] [PubMed]
+137. Broom, L.J. The sub-inhibitory theory for antibiotic growth promoters. Poult. Sci. 2017, 96, 3104–3108. [CrossRef] [PubMed]
+138. Villagómez-Estrada, S.; Pérez, J.F.; Darwich, L.; Vidal, A.; van Kuijk, S.; Melo-Durán, D.; Solà-Oriol, D. Effects of copper and zinc
+sources and inclusion levels of copper on weanling pig performance and intestinal microbiota. J. Anim. Sci. 2020, 98, skaa117.
+[CrossRef]
+139. Zhao, L.; Li, X.; Wang, Y.; Yang, Q.; Jiang, X.; Zhao, R.; Chen, H.; Zhang, Y.; Ran, J.; Chen, W.; et al. Resistance role of Lactobacillus
+sp. and Lactococcus sp. to copper ions in healthy children’s intestinal microorganisms. J. Hazard. Mater. 2024, 469, 134059.
+[CrossRef] [PubMed]
+140. Cusick, K.; Iturbide, A.; Gautam, P.; Price, A.; Polson, S.; MacDonald, M.; Erill, I. Enhanced copper-resistance gene repertoire in
+Alteromonas macleodii strains isolated from copper-treated marine coatings. PLoS ONE 2021, 16, e0257800. [CrossRef]
+141. Adachi, T.; Takei, T.; Nishiyama, T.; Kano, K.; Yamashita, S.; Kataoka, K.; Sowa, K. Roles of Labile Copper Coordinated by
+Histidine in Reductive Inactivation of Copper Efflux Oxidase. Inorg. Chem. 2026, 65, 130–140. [CrossRef]
+142. Becam, J.; Dessertine, M.; Vergnes, A.; Aussel, L.; Ezraty, B. Role of the Multicopper Oxidase CueO in Copper Homeostasis Under
+Anaerobic Conditions in Enterobacteria. Mol. Microbiol. 2025, 124, 297–309. [CrossRef]
+143. Rademacher, C.; Masepohl, B. Copper-responsive gene regulation in bacteria. Microbiology 2012, 158, 2451–2464. [CrossRef]
+144. Corbett, D.; Schuler, S.; Glenn, S.; Andrew, P.W.; Cavet, J.S.; Roberts, I.S. The combined actions of the copper-responsive
+repressor CsoR and copper-metallochaperone CopZ modulate CopA-mediated copper efflux in the intracellular pathogen Listeria
+monocytogenes. Mol. Microbiol. 2011, 81, 457–472. [CrossRef]
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+30 of 37
+145. Zhao, Z.; Zhou, Z.; Li, L.; Xian, X.; Ke, X.; Chen, M.; Zhang, Y. A copper-responsive gene cluster is required for copper homeostasis
+and contributes to oxidative resistance in Deinococcus radiodurans R1. Mol. Biosyst. 2014, 10, 2607–2616. [CrossRef]
+146. Hausrath, A.C.; Ramirez, N.A.; Ly, A.T.; McEvoy, M.M. The bacterial copper resistance protein CopG contains a cysteine-bridged
+tetranuclear copper cluster. J. Biol. Chem. 2020, 295, 11364–11376. [CrossRef] [PubMed]
+147. Purves, J.; Thomas, J.; Riboldi, G.P.; Zapotoczna, M.; Tarrant, E.; Andrew, P.W.; Londoño, A.; Planet, P.J.; Geoghegan, J.A.; Waldron,
+K.J.; et al. A horizontally gene transferred copper resistance locus confers hyper-resistance to antibacterial copper toxicity and
+enables survival of community acquired methicillin resistant Staphylococcus aureus USA300 in macrophages. Environ. Microbiol.
+2018, 20, 1576–1589. [CrossRef] [PubMed]
+148. Song, M.; Vos, M.B.; McClain, C.J. Copper-Fructose Interactions: A Novel Mechanism in the Pathogenesis of NAFLD. Nutrients
+2018, 10, 1815. [CrossRef] [PubMed]
+149. Kaiko, G.E.; Ryu, S.H.; Koues, O.I.; Collins, P.L.; Solnica-Krezel, L.; Pearce, E.J.; Pearce, E.L.; Oltz, E.M.; Stappenbeck, T.S. The
+Colonic Crypt Protects Stem Cells from Microbiota-Derived Metabolites. Cell 2016, 165, 1708–1720. [CrossRef]
+150. Liu, H.; Wang, J.; He, T.; Becker, S.; Zhang, G.; Li, D.; Ma, X. Butyrate: A Double-Edged Sword for Health? Adv. Nutr. 2018, 9,
+21–29. [CrossRef] [PubMed]
+151. Du, Y.; Tu, Y.; Zhou, Z.; Hong, R.; Yan, J.; Zhang, G.W. Effects of organic and inorganic copper on cecal microbiota and short-chain
+fatty acids in growing rabbits. Front. Vet. Sci. 2023, 10, 1179374. [CrossRef]
+152. Wen, Y.; Gao, M.; Wang, Z.; Liu, X.; Zhang, Y.; Lin, G.; He, P.; Yang, H.; Xiao, Y.; Lyu, W. Dietary copper-driven colonic dysbiosis
+mediates oxidative stress and butyrate deficiency to facilitate the spread of resistome in pigs. NPJ Biofilms Microbiomes 2026.
+[CrossRef] [PubMed]
+153. Djoko, K.Y.; Ong, C.L.; Walker, M.J.; McEwan, A.G. The Role of Copper and Zinc Toxicity in Innate Immune Defense against
+Bacterial Pathogens. J. Biol. Chem. 2015, 290, 18954–18961. [CrossRef]
+154. Zheng, X.; Du, C.; Miao, Q.; Gao, X.; Feng, B.; Gu, S.; Liu, Y.; Wang, L.; Ding, J.; Shen, W.; et al. Sub-chronic exposure to copper
+nanoparticles and copper sulfate dysregulated the microbiota-gut-liver axis in large yellow croaker, Larimichthys crocea. Mar.
+Pollut. Bull. 2026, 223, 118935. [CrossRef]
+155. Zhang, S.; Wang, Y.; Song, H.; Lu, J.; Yuan, Z.; Guo, J. Copper nanoparticles and copper ions promote horizontal transfer of
+plasmid-mediated multi-antibiotic resistance genes across bacterial genera. Environ. Int. 2019, 129, 478–487. [CrossRef]
+156. Brinck, J.E.; Lassen, S.B.; Forouzandeh, A.; Pan, T.; Wang, Y.Z.; Monteiro, A.; Blavi, L.; Solà-Oriol, D.; Stein, H.H.; Su, J.Q.; et al.
+Impacts of dietary copper on the swine gut microbiome and antibiotic resistome. Sci. Total Environ. 2023, 857, 159609. [CrossRef]
+157. Kim, C.H. Control of lymphocyte functions by gut microbiota-derived short-chain fatty acids. Cell. Mol. Immunol. 2021, 18,
+1161–1171. [CrossRef]
+158. Wang, J.; Zhu, N.; Su, X.; Gao, Y.; Yang, R. Gut-Microbiota-Derived Metabolites Maintain Gut and Systemic Immune Homeostasis.
+Cells 2023, 12, 793. [CrossRef] [PubMed]
+159. Geng, H.; Shu, S.; Dong, J.; Li, H.; Xu, C.; Han, Y.; Hu, J.; Han, Y.; Yang, R.; Cheng, N. Association study of gut flora in Wilson’s
+disease through high-throughput sequencing. Medicine 2018, 97, e11743. [CrossRef] [PubMed]
+160. Arias, V.J.; Koutsos, E.A. Effects of copper source and level on intestinal physiology and growth of broiler chickens. Poult. Sci.
+2006, 85, 999–1007. [CrossRef]
+161. Bjørklund, G.; Dadar, M.; Chirumbolo, S.; Aaseth, J.; Peana, M. Metals, autoimmunity, and neuroendocrinology: Is there a
+connection? Environ. Res. 2020, 187, 109541. [CrossRef]
+162. Zhang, Y.; Lawrence, D.A. Metals and Autoimmune Disease. In Encyclopedia of Immunotoxicology; Vohr, H.-W., Ed.; Springer:
+Berlin/Heidelberg, Germany, 2016; pp. 603–609.
+163. Zhu, M.; Liang, Z.; Wang, T.; Chen, R.; Wang, G.; Ji, Y. Th1/Th2/Th17 cells imbalance in patients with asthma with and without
+psychological symptoms. Allergy Asthma Proc. 2016, 37, 148–156. [CrossRef]
+164. Gromadzka, G.; Czerwi´nska, J.; Krzemi´nska, E.; Przybyłkowski, A.; Litwin, T. Wilson’s Disease-Crossroads of Genetics, Inflam-
+mation and Immunity/Autoimmunity: Clinical and Molecular Issues. Int. J. Mol. Sci. 2024, 25, 9034. [CrossRef]
+165. Magna, M.; Pisetsky, D.S. The role of HMGB1 in the pathogenesis of inflammatory and autoimmune diseases. Mol. Med. 2014, 20,
+138–146. [CrossRef] [PubMed]
+166. Venereau, E.; Casalgrandi, M.; Schiraldi, M.; Antoine, D.J.; Cattaneo, A.; De Marchis, F.; Liu, J.; Antonelli, A.; Preti, A.; Raeli, L.;
+et al. Mutually exclusive redox forms of HMGB1 promote cell recruitment or proinflammatory cytokine release. J. Exp. Med. 2012,
+209, 1519–1528. [CrossRef] [PubMed]
+167. Yang, H.; Lundbäck, P.; Ottosson, L.; Erlandsson-Harris, H.; Venereau, E.; Bianchi, M.E.; Al-Abed, Y.; Andersson, U.; Tracey, K.J.;
+Antoine, D.J. Expression of Concern to: Redox modification of cysteine residues regulates the cytokine activity of high mobility
+group box-1 (HMGB1). Mol. Med. 2020, 26, 18. [CrossRef]
+168. Park, J.S.; Svetkauskaite, D.; He, Q.; Kim, J.Y.; Strassheim, D.; Ishizaka, A.; Abraham, E. Involvement of toll-like receptors 2 and 4
+in cellular activation by high mobility group box 1 protein. J. Biol. Chem. 2004, 279, 7370–7377. [CrossRef]
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+31 of 37
+169. Park, J.S.; Gamboni-Robertson, F.; He, Q.; Svetkauskaite, D.; Kim, J.Y.; Strassheim, D.; Sohn, J.W.; Yamada, S.; Maruyama, I.;
+Banerjee, A.; et al. High mobility group box 1 protein interacts with multiple Toll-like receptors. Am. J. Physiol. Cell Physiol. 2006,
+290, C917–C924. [CrossRef]
+170. Bianchi, M.E. HMGB1 loves company. J. Leukoc. Biol. 2009, 86, 573–576. [CrossRef] [PubMed]
+171. Zhao, J.; Harper, A.F.; Estienne, M.J.; Webb, K.E., Jr.; McElroy, A.P.; Denbow, D.M. Growth performance and intestinal morphology
+responses in early weaned pigs to supplementation of antibiotic-free diets with an organic copper complex and spray-dried
+plasma protein in sanitary and nonsanitary environments. J. Anim. Sci. 2007, 85, 1302–1310. [CrossRef]
+172. Forouzandeh, A.; Blavi, L.; Pérez, J.F.; D’Angelo, M.; González-Solé, F.; Monteiro, A.; Stein, H.H.; Solà-Oriol, D. How copper can
+impact pig growth: Comparing the effect of copper sulfate and monovalent copper oxide on oxidative status, inflammation, gene
+abundance, and microbial modulation as potential mechanisms of action. J. Anim. Sci. 2022, 100, skac224. [CrossRef]
+173. Manuela, N.; Bruno, L.; Igea, D’.A.; Rossella, B.; Ivan, A.; Armando, F.; Maria, F.Z. Intestinal Barrier Physiology. Genes Nutr. 2010,
+5, 25–100. [CrossRef]
+174. Namkung, H.; Gong, J.; Yu, H.; Lange, C.F.M.d. Effect of pharmacological intakes of zinc and copper on growth performance,
+circulating cytokines and gut microbiota of newly weaned piglets challenged with coliform lipopolysaccharides. Can. J. Anim. Sci.
+2006, 86, 511–522. [CrossRef]
+175. Al-Sadi, R.; Boivin, M.; Ma, T. Mechanism of cytokine modulation of epithelial tight junction barrier. Front. Biosci. 2009, 14,
+2765–2778. [CrossRef] [PubMed]
+176. Wu, M.; Han, F.; Gong, W.; Feng, L.; Han, J. The effect of copper from water and food: Changes of serum nonceruloplasmin
+copper and brain’s amyloid-beta in mice. Food Funct. 2016, 7, 3740–3747. [CrossRef]
+177. Cheng, F.; Peng, G.; Lu, Y.; Wang, K.; Ju, Q.; Ju, Y.; Ouyang, M. Relationship between copper and immunity: The potential role of
+copper in tumor immunity. Front. Oncol. 2022, 12, 1019153. [CrossRef]
+178. Calder, P.C. Nutrition and immunity: Lessons for COVID-19. Eur. J. Clin. Nutr. 2021, 75, 1309–1318. [CrossRef]
+179. Fry, R.S.; Ashwell, M.S.; Lloyd, K.E.; O’Nan, A.T.; Flowers, W.L.; Stewart, K.R.; Spears, J.W. Amount and source of dietary copper
+affects small intestine morphology, duodenal lipid peroxidation, hepatic oxidative stress,and mRNA expression of hepatic copper
+regulatory proteins in weanling pigs. J. Anim. Sci. 2012, 90, 3112–3119. [CrossRef] [PubMed]
+180. Lin, C.; Fu, J.; Liu, L.; Wang, H.; Wei, L. Disruption of intestinal structure, tight junction complex, immune response and
+microbiota after chronic exposure to copper in swamp eel (Monopterus albus). Fish Shellfish Immunol. 2023, 143, 109182. [CrossRef]
+181. Quan, J.; Chang, X.; Liu, S.; He, T.; Zhong, G.; Liu, Z.; Yu, W. Long-term copper exposure induced pyroptosis and inflammation of
+rat spleen through intestinal-splenic axis. Ecotoxicol. Environ. Saf. 2025, 289, 117423. [CrossRef] [PubMed]
+182. Lu, J.; Liu, X.; Li, X.; Li, H.; Shi, L.; Xia, X.; He, B.L.; Meyer, T.F.; Li, X.; Sun, H.; et al. Copper regulates the host innate immune
+response against bacterial infection via activation of ALPK1 kinase. Proc. Natl. Acad. Sci. USA 2024, 121, e2311630121. [CrossRef]
+183. Wang, S.; Sun, X.; Xin, Q.; Shi, J.; Li, J.; Zhang, H.; Xue, M.; Yin, F.; Qiu, Z.; Wang, X.; et al. A single-cell transcriptomic atlas of
+immune cells in Wilson disease identifies copper-specific immune regulation. iScience 2025, 28, 112450. [CrossRef]
+184. Casale, E.; Evariste, L.; Houdeau, E.; Lamas, B. Copper nanoparticles in agriculture: From expected benefits of reduced copper
+use to toxicity on gut health. Sci. Total Environ. 2025, 1004, 180801. [CrossRef]
+185. Reznik, N.; Gallo, A.D.; Rush, K.W.; Javitt, G.; Fridmann-Sirkis, Y.; Ilani, T.; Nairner, N.A.; Fishilevich, S.; Gokhman, D.; Chacón,
+K.N.; et al. Intestinal mucin is a chaperone of multivalent copper. Cell 2022, 185, 4206–4215.e4211. [CrossRef] [PubMed]
+186. Arendsen, L.P.; Thakar, R.; Sultan, A.H. The Use of Copper as an Antimicrobial Agent in Health Care, Including Obstetrics and
+Gynecology. Clin. Microbiol. Rev. 2019, 32, e00125-18. [CrossRef] [PubMed]
+187. Zhang, R.; Gu, J.; Wang, X.; Li, Y.; Liu, J.; Lu, C.; Qiu, L. Response of antibiotic resistance genes abundance by graphene oxide
+during the anaerobic digestion of swine manure with copper pollution. Sci. Total Environ. 2019, 654, 292–299. [CrossRef] [PubMed]
+188. Chen, F.; Luo, Z.; Chen, G.H.; Shi, X.; Liu, X.; Song, Y.F.; Pan, Y.X. Effects of waterborne Cu exposure on intestinal copper transport
+and lipid metabolism of Synechogobius hasta. Aquat. Toxicol. 2016, 178, 171–181. [CrossRef]
+189. Liu, P.; Liu, Y.; Cheng, J.; Xia, Y.; Yang, Y. Copper exposure causes alteration in the intestinal microbiota and metabolites in
+Takifugu rubripes. Ecotoxicol. Environ. Saf. 2024, 272, 116064. [CrossRef]
+190. Fontes, A.; Pierson, H.; Bierła, J.B.; Eberhagen, C.; Kinschel, J.; Akdogan, B.; Rieder, T.; Sailer, J.; Reinold, Q.; Cielecka-Kuszyk, J.;
+et al. Copper impairs the intestinal barrier integrity in Wilson disease. Metabolism 2024, 158, 155973. [CrossRef]
+191. Fu, W.; Huang, Z.; Li, W.; Xu, L.; Yang, M.; Ma, Y.; Liu, H.; Qian, H.; Wang, W. Copper-luteolin nanocomplexes for Mediating
+multifaceted regulation of oxidative stress, intestinal barrier, and gut microbiota in inflammatory bowel disease. Bioact. Mater.
+2025, 46, 118–133. [CrossRef]
+192. Zhong, C.C.; Zhao, T.; Hogstrand, C.; Chen, F.; Song, C.C.; Luo, Z. Copper (Cu) induced changes of lipid metabolism through
+oxidative stress-mediated autophagy and Nrf2/PPARγ pathways. J. Nutr. Biochem. 2022, 100, 108883. [CrossRef]
+193. Curnock, R.; Cullen, P.J. Mammalian copper homeostasis requires retromer-dependent recycling of the high-affinity copper
+transporter 1. J. Cell Sci. 2020, 133, jcs249201. [CrossRef]
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+32 of 37
+194. Yu, C.H.; Dolgova, N.V.; Dmitriev, O.Y. Dynamics of the metal binding domains and regulation of the human copper transporters
+ATP7B and ATP7A. IUBMB Life 2017, 69, 226–235. [CrossRef]
+195. Li, Y. Copper homeostasis: Emerging target for cancer treatment. IUBMB Life 2020, 72, 1900–1908. [CrossRef] [PubMed]
+196. Saporito-Magriñá, C.M.; Musacco-Sebio, R.N.; Andrieux, G.; Kook, L.; Orrego, M.T.; Tuttolomondo, M.V.; Desimone, M.F.;
+Boerries, M.; Borner, C.; Repetto, M.G. Copper-induced cell death and the protective role of glutathione: The implication of
+impaired protein folding rather than oxidative stress. Metallomics 2018, 10, 1743–1754. [CrossRef] [PubMed]
+197. Chun, H.; Catterton, T.; Kim, H.; Lee, J.; Kim, B.E. Organ-specific regulation of ATP7A abundance is coordinated with systemic
+copper homeostasis. Sci. Rep. 2017, 7, 12001. [CrossRef] [PubMed]
+198. Sun, Z.; Wang, X.; Feng, S.; Xie, C.; Xing, Y.; Guo, L.; Zhao, J.; Ji, C. A review of neuroendocrine immune system abnormalities in
+IBS based on the brain-gut axis and research progress of acupuncture intervention. Front. Neurosci. 2023, 17, 934341. [CrossRef]
+199. Tümer, Z.; Møller, L.B. Menkes disease. Eur. J. Hum. Genet. 2010, 18, 511–518. [CrossRef]
+200. Horn, N.; Wittung-Stafshede, P. ATP7A-Regulated Enzyme Metalation and Trafficking in the Menkes Disease Puzzle. Biomedicines
+2021, 9, 391. [CrossRef]
+201. Kim, M.Y.; Kim, J.H.; Cho, M.H.; Choi, Y.H.; Kim, S.H.; Im, Y.J.; Park, K.; Kang, H.G.; Chae, J.H.; Cheong, H.I. Urological Problems
+in Patients with Menkes Disease. J. Korean Med. Sci. 2019, 34, e4. [CrossRef] [PubMed]
+202. Gracia-Darder, I.; Saus, C.; Martín-Santiago, A. Hair Abnormalities: Key to Suspecting Menkes Disease. Actas Dermo-Sifiliogr.
+2021, 112, 10. [CrossRef]
+203. Peng, C.H.; Hsu, C.H.; Wang, N.L.; Lee, H.C.; Lin, S.P.; Chan, W.T.; Yeung, C.Y.; Jiang, C.B. Spontaneous retroperitoneal
+hemorrhage in Menkes disease: A rare case report. Medicine 2018, 97, e9869. [CrossRef]
+204. Ng, R.; Eliezer, D.; Vilain, R.; Kamien, B.; Deshpande, A.V. Fatal Exsanguination Following Rupture of an Iliac Artery Aneurysm
+in an Infant With Menkes Disease. Pediatr. Dev. Pathol. 2019, 22, 486–491. [CrossRef] [PubMed]
+205. Sáez-de-Ocariz, M.; Aguilar-Sarmiento, A.S.; Garcés-Abad, M.A.; Vázquez-Arroyo, P.; García-Romero, M.T.; Durán-McKinster,
+C. Usefulness of Trichoscopy over Hair Light Microscopy in Menkes Disease. Ski. Appendage Disord. 2022, 8, 57–60. [CrossRef]
+[PubMed]
+206. Hui, W.F.; Hon, K.L.; Leung, A.K.C.; Pang, K.K.Y.; Leung, M.W.Y. Tubular Dysfunction and Ruptured Ureter in a Child with
+Menkes Syndrome. Case Rep. Pediatr. 2021, 2021, 4398456. [CrossRef]
+207. Ceccanti, S.; Mastrangelo, M.; Andreoli, G.; Cozzi, D.A. Laparoscopic patch repair of a Morgagni hernia in Menkes disease. Asian
+J. Endosc. Surg. 2021, 14, 553–556. [CrossRef] [PubMed]
+208. Stenson, P.D.; Mort, M.; Ball, E.V.; Howells, K.; Phillips, A.D.; Thomas, N.S.; Cooper, D.N. The Human Gene Mutation Database:
+2008 update. Genome Med. 2009, 1, 13. [CrossRef]
+209. Gu, Y.H.; Kodama, H.; Murata, Y.; Mochizuki, D.; Yanagawa, Y.; Ushijima, H.; Shiba, T.; Lee, C.C. ATP7A gene mutations in 16
+patients with Menkes disease and a patient with occipital horn syndrome. Am. J. Med. Genet. 2001, 99, 217–222. [CrossRef]
+210. Tümer, Z.; Birk Møller, L.; Horn, N. Screening of 383 unrelated patients affected with Menkes disease and finding of 57 gross
+deletions in ATP7A. Hum. Mutat. 2003, 22, 457–464. [CrossRef]
+211. Kaler, S.G.; Liew, C.J.; Donsante, A.; Hicks, J.D.; Sato, S.; Greenfield, J.C. Molecular correlates of epilepsy in early diagnosed and
+treated Menkes disease. J. Inherit. Metab. Dis. 2010, 33, 583–589. [CrossRef]
+212. Steveson, T.C.; Ciccotosto, G.D.; Ma, X.M.; Mueller, G.P.; Mains, R.E.; Eipper, B.A. Menkes protein contributes to the function of
+peptidylglycine alpha-amidating monooxygenase. Endocrinology 2003, 144, 188–200. [CrossRef] [PubMed]
+213. de Bie, P.; van de Sluis, B.; Burstein, E.; van de Berghe, P.V.; Muller, P.; Berger, R.; Gitlin, J.D.; Wijmenga, C.; Klomp, L.W.
+Distinct Wilson’s disease mutations in ATP7B are associated with enhanced binding to COMMD1 and reduced stability of ATP7B.
+Gastroenterology 2007, 133, 1316–1326. [CrossRef] [PubMed]
+214. Zhang, B.; Burke, R. Copper homeostasis and the ubiquitin proteasome system. Metallomics 2023, 15, mfad010. [CrossRef]
+215. Godoy-Molina, E.; Serrano, N.L.; Jiménez-González, A.; Villaronga, M.; Marqués Pérez-Bryan, R.M.; Varela-Fernández, R.;
+Lotz-Esquivel, S.; Hevia Tuñón, A.; Trivedi, P.P.; Horn, N.; et al. Elesclomol-copper therapy improves neurodevelopment in two
+children with Menkes disease. J. Clin. Investig. 2025, 135, e193107. [CrossRef]
+216. Weiskirchen, R.; Penning, L.C. COMMD1, a multi-potent intracellular protein involved in copper homeostasis, protein trafficking,
+inflammation, and cancer. J. Trace Elem. Med. Biol. 2021, 65, 126712. [CrossRef]
+217. Ala, A.; Walker, A.P.; Ashkan, K.; Dooley, J.S.; Schilsky, M.L. Wilson’s disease. Lancet 2007, 369, 397–408. [CrossRef] [PubMed]
+218. Członkowska, A.; Litwin, T.; Dusek, P.; Ferenci, P.; Lutsenko, S.; Medici, V.; Rybakowski, J.K.; Weiss, K.H.; Schilsky, M.L. Wilson
+disease. Nat. Rev. Dis. Primers 2018, 4, 21. [CrossRef]
+219. de Bie, P.; Muller, P.; Wijmenga, C.; Klomp, L.W. Molecular pathogenesis of Wilson and Menkes disease: Correlation of mutations
+with molecular defects and disease phenotypes. J. Med. Genet. 2007, 44, 673–688. [CrossRef]
+220. Dong, J.; Xiang, G.; Xia, X.; Xu, L.; Wen, P.; Xu, C.; Xu, Y.; Su, Y.; Song, Y.; Tong, H.; et al. Aberrant copper metabolism and hepatic
+inflammation cause neurological manifestations in a mouse model of Wilson’s disease. J. Neuroinflamm. 2024, 21, 235. [CrossRef]
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+33 of 37
+221. Teschke, R.; Eickhoff, A. Wilson Disease: Copper-Mediated Cuproptosis, Iron-Related Ferroptosis, and Clinical Highlights, with
+Comprehensive and Critical Analysis Update. Int. J. Mol. Sci. 2024, 25, 4753. [CrossRef] [PubMed]
+222. Dang, J.; Chevalier, K.; Letavernier, E.; Tissandier, C.; Mouawad, S.; Debray, D.; Obadia, M.; Poujois, A. Kidney involvement in
+Wilson’s disease: A review of the literature. Clin. Kidney J. 2024, 17, sfae058. [CrossRef]
+223. Sailer, J.; Nagel, J.; Akdogan, B.; Jauch, A.T.; Engler, J.; Knolle, P.A.; Zischka, H. Deadly excess copper. Redox Biol. 2024, 75, 103256.
+[CrossRef]
+224. Litwin, T.; Smolinski, Ł.; Antos, A.; Bembenek, J.; Członkowska, A. Copper Deficiency as a Serious Complication of Anti-Copper
+Treatment in Wilson’s Disease. Mov. Disord. Clin. Pract. 2023, 10, 1564–1565. [CrossRef]
+225. Djebrani-Oussedik, N.; Desjardins, C.; Obadia, M.A.; Rahli, D.; Collet, C.; Woimant, F.; Poupon, J.; Debray, D.; Poujois, A.
+Relative exchangeable copper: A highly specific and sensitive biomarker for Wilson disease diagnosis. JHEP Rep. 2025, 7, 101537.
+[CrossRef]
+226. Martínez-Morillo, E.; Bauça, J.M. Biochemical diagnosis of Wilson’s disease: An update. Adv. Lab. Med. 2022, 3, 103–125.
+[CrossRef]
+227. Gromadzka, G.; Grycan, M.; Przybyłkowski, A.M. Monitoring of Copper in Wilson Disease. Diagnostics 2023, 13, 1830. [CrossRef]
+[PubMed]
+228. Kiran, S.; Khatik, R.; Schirhagl, R. Smart probe for simultaneous detection of copper ion, pyrophosphate, and alkaline phosphatase
+in vitro and in clinical samples. Anal. Bioanal. Chem. 2019, 411, 6475–6485. [CrossRef] [PubMed]
+229. Kodama, H.; Fujisawa, C.; Bhadhprasit, W. Inherited copper transport disorders: Biochemical mechanisms, diagnosis, and
+treatment. Curr. Drug Metab. 2012, 13, 237–250. [CrossRef] [PubMed]
+230. Dev, S.; Kruse, R.L.; Hamilton, J.P.; Lutsenko, S. Wilson Disease: Update on Pathophysiology and Treatment. Front. Cell Dev. Biol.
+2022, 10, 871877. [CrossRef]
+231. Mariño, Z.; Schilsky, M.L. Wilson Disease: Novel Diagnostic and Therapeutic Approaches. Semin. Liver Dis. 2025, 45, 221–235.
+[CrossRef]
+232. Poujois, A.; Sobesky, R.; Meissner, W.G.; Brunet, A.S.; Broussolle, E.; Laurencin, C.; Lion-François, L.; Guillaud, O.; Lachaux, A.;
+Maillot, F.; et al. Liver transplantation as a rescue therapy for severe neurologic forms of Wilson disease. Neurology 2020, 94,
+e2189–e2202. [CrossRef]
+233. Ge, E.J.; Bush, A.I.; Casini, A.; Cobine, P.A.; Cross, J.R.; DeNicola, G.M.; Dou, Q.P.; Franz, K.J.; Gohil, V.M.; Gupta, S.; et al.
+Connecting copper and cancer: From transition metal signalling to metalloplasia. Nat. Rev. Cancer 2022, 22, 102–113. [CrossRef]
+234. Opazo, C.M.; Lotan, A.; Xiao, Z.; Zhang, B.; Greenough, M.A.; Lim, C.M.; Trytell, H.; Ramírez, A.; Ukuwela, A.A.; Mawal, C.H.;
+et al. Nutrient copper signaling promotes protein turnover by allosteric activation of ubiquitin E2D conjugases. bioRxiv 2021.
+[CrossRef]
+235. Wang, Y.; Pei, P.; Yang, K.; Guo, L.; Li, Y. Copper in colorectal cancer: From copper-related mechanisms to clinical cancer therapies.
+Clin. Transl. Med. 2024, 14, e1724. [CrossRef] [PubMed]
+236. Baszuk, P.; Marciniak, W.; Derkacz, R.; Jakubowska, A.; Cybulski, C.; Gronwald, J.; D˛ebniak, T.; Huzarski, T.; Białkowska, K.;
+Pietrzak, S.; et al. Blood Copper Levels and the Occurrence of Colorectal Cancer in Poland. Biomedicines 2021, 9, 1628. [CrossRef]
+[PubMed]
+237. Gupta, S.K.; Shukla, V.K.; Vaidya, M.P.; Roy, S.K.; Gupta, S. Serum and tissue trace elements in colorectal cancer. J. Surg. Oncol.
+1993, 52, 172–175. [CrossRef]
+238. Tsang, T.; Posimo, J.M.; Gudiel, A.A.; Cicchini, M.; Feldser, D.M.; Brady, D.C. Copper is an essential regulator of the autophagic
+kinases ULK1/2 to drive lung adenocarcinoma. Nat. Cell Biol. 2020, 22, 412–424. [CrossRef]
+239. Polishchuk, E.V.; Merolla, A.; Lichtmannegger, J.; Romano, A.; Indrieri, A.; Ilyechova, E.Y.; Concilli, M.; De Cegli, R.; Crispino,
+R.; Mariniello, M.; et al. Activation of Autophagy, Observed in Liver Tissues from Patients with Wilson Disease and from
+ATP7B-Deficient Animals, Protects Hepatocytes From Copper-Induced Apoptosis. Gastroenterology 2019, 156, 1173–1189.e1175.
+[CrossRef]
+240. Itoh, S.; Kim, H.W.; Nakagawa, O.; Ozumi, K.; Lessner, S.M.; Aoki, H.; Akram, K.; McKinney, R.D.; Ushio-Fukai, M.; Fukai, T.
+Novel role of antioxidant-1 (Atox1) as a copper-dependent transcription factor involved in cell proliferation. J. Biol. Chem. 2008,
+283, 9157–9167. [CrossRef]
+241. Wang, J.; Luo, C.; Shan, C.; You, Q.; Lu, J.; Elf, S.; Zhou, Y.; Wen, Y.; Vinkenborg, J.L.; Fan, J.; et al. Inhibition of human copper
+trafficking by a small molecule significantly attenuates cancer cell proliferation. Nat. Chem. 2015, 7, 968–979. [CrossRef]
+242. Jana, A.; Das, A.; Krett, N.L.; Guzman, G.; Thomas, A.; Mancinelli, G.; Bauer, J.; Ushio-Fukai, M.; Fukai, T.; Jung, B. Nuclear
+translocation of Atox1 potentiates activin A-induced cell migration and colony formation in colon cancer. PLoS ONE 2020,
+15, e0227916. [CrossRef]
+243. Aubert, L.; Nandagopal, N.; Steinhart, Z.; Lavoie, G.; Nourreddine, S.; Berman, J.; Saba-El-Leil, M.K.; Papadopoli, D.; Lin, S.; Hart,
+T.; et al. Copper bioavailability is a KRAS-specific vulnerability in colorectal cancer. Nat. Commun. 2020, 11, 3701. [CrossRef]
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+34 of 37
+244. Barresi, V.; Trovato-Salinaro, A.; Spampinato, G.; Musso, N.; Castorina, S.; Rizzarelli, E.; Condorelli, D.F. Transcriptome analysis
+of copper homeostasis genes reveals coordinated upregulation of SLC31A1, SCO1, and COX11 in colorectal cancer. FEBS Open
+Bio 2016, 6, 794–806. [CrossRef]
+245. Liao, Y.; Zhao, J.; Bulek, K.; Tang, F.; Chen, X.; Cai, G.; Jia, S.; Fox, P.L.; Huang, E.; Pizarro, T.T.; et al. Inflammation mobilizes
+copper metabolism to promote colon tumorigenesis via an IL-17-STEAP4-XIAP axis. Nat. Commun. 2020, 11, 900. [CrossRef]
+246. Jiang, C.; Wu, B.; Xue, M.; Lin, J.; Hu, Z.; Nie, X.; Cai, G. Inflammation accelerates copper-mediated cytotoxicity through induction
+of six-transmembrane epithelial antigens of prostate 4 expression. Immunol. Cell Biol. 2021, 99, 392–402. [CrossRef] [PubMed]
+247. El-Haibi, C.P.; Bell, G.W.; Zhang, J.; Collmann, A.Y.; Wood, D.; Scherber, C.M.; Csizmadia, E.; Mariani, O.; Zhu, C.; Campagne, A.;
+et al. Critical role for lysyl oxidase in mesenchymal stem cell-driven breast cancer malignancy. Proc. Natl. Acad. Sci. USA 2012,
+109, 17460–17465. [CrossRef]
+248. Baker, A.M.; Bird, D.; Lang, G.; Cox, T.R.; Erler, J.T. Lysyl oxidase enzymatic function increases stiffness to drive colorectal cancer
+progression through FAK. Oncogene 2013, 32, 1863–1868. [CrossRef] [PubMed]
+249. Feng, W.; Ye, F.; Xue, W.; Zhou, Z.; Kang, Y.J. Copper regulation of hypoxia-inducible factor-1 activity. Mol. Pharmacol. 2009, 75,
+174–182. [CrossRef]
+250. Liu, G.; Zhan, W.; Guo, W.; Hu, F.; Qin, J.; Li, R.; Liao, X. MELK Accelerates the Progression of Colorectal Cancer via Activating
+the FAK/Src Pathway. Biochem. Genet. 2020, 58, 771–782. [CrossRef]
+251. Baker, A.M.; Cox, T.R.; Bird, D.; Lang, G.; Murray, G.I.; Sun, X.F.; Southall, S.M.; Wilson, J.R.; Erler, J.T. The role of lysyl oxidase in
+SRC-dependent proliferation and metastasis of colorectal cancer. J. Natl. Cancer Inst. 2011, 103, 407–424. [CrossRef] [PubMed]
+252. Wong, C.C.; Gilkes, D.M.; Zhang, H.; Chen, J.; Wei, H.; Chaturvedi, P.; Fraley, S.I.; Wong, C.M.; Khoo, U.S.; Ng, I.O.; et al.
+Hypoxia-inducible factor 1 is a master regulator of breast cancer metastatic niche formation. Proc. Natl. Acad. Sci. USA 2011, 108,
+16369–16374. [CrossRef]
+253. Pez, F.; Dayan, F.; Durivault, J.; Kaniewski, B.; Aimond, G.; Le Provost, G.S.; Deux, B.; Clézardin, P.; Sommer, P.; Pouysségur, J.;
+et al. The HIF-1-inducible lysyl oxidase activates HIF-1 via the Akt pathway in a positive regulation loop and synergizes with
+HIF-1 in promoting tumor cell growth. Cancer Res. 2011, 71, 1647–1657. [CrossRef]
+254. Martin, F.; Linden, T.; Katschinski, D.M.; Oehme, F.; Flamme, I.; Mukhopadhyay, C.K.; Eckhardt, K.; Tröger, J.; Barth, S.;
+Camenisch, G.; et al. Copper-dependent activation of hypoxia-inducible factor (HIF)-1: Implications for ceruloplasmin regulation.
+Blood 2005, 105, 4613–4619. [CrossRef] [PubMed]
+255. Urso, E.; Maffia, M. Behind the Link between Copper and Angiogenesis: Established Mechanisms and an Overview on the Role
+of Vascular Copper Transport Systems. J. Vasc. Res. 2015, 52, 172–196. [CrossRef]
+256. Chen, G.F.; Sudhahar, V.; Youn, S.W.; Das, A.; Cho, J.; Kamiya, T.; Urao, N.; McKinney, R.D.; Surenkhuu, B.; Hamakubo, T.; et al.
+Copper Transport Protein Antioxidant-1 Promotes Inflammatory Neovascularization via Chaperone and Transcription Factor
+Function. Sci. Rep. 2015, 5, 14780. [CrossRef]
+257. Narayanan, I.G.; Natarajan, S.K. Peptides derived from histidine and methionine-rich regions of copper transporter 1 exhibit
+anti-angiogenic property by chelating extracellular Cu. Chem. Biol. Drug Des. 2018, 91, 797–804. [CrossRef]
+258. Skalny, A.V.; Kushlinskii, N.E.; Korobeinikova, T.V.; Alferov, A.A.; Kuzmin, Y.B.; Kochkina, S.O.; Gordeev, S.S.; Mammadli, Z.Z.;
+Stilidi, I.S.; Tinkov, A.A. Zinc, copper, copper-to-zinc ratio, and other biometals in blood serum and tumor tissue of patients with
+colorectal cancer. Biometals 2025, 38, 529–544. [CrossRef] [PubMed]
+259. Squitti, R.; Pal, A.; Dhar, A.; Shamim, M.A.; Goswami, K.; De Luca, A.; Rizzo, G.; Rongioletti, M.; Tondolo, V. The Debated Issue
+on Tissue Copper Levels in Colorectal Cancer Patients: A Meta-analysis and Replication Study. Biol. Trace Elem. Res. 2025, 203,
+3479–3493. [CrossRef]
+260. Kuo, M.T.; Fu, S.; Savaraj, N.; Chen, H.H. Role of the human high-affinity copper transporter in copper homeostasis regulation
+and cisplatin sensitivity in cancer chemotherapy. Cancer Res. 2012, 72, 4616–4621. [CrossRef]
+261. Sammons, S.; Brady, D.; Vahdat, L.; Salama, A.K. Copper suppression as cancer therapy: The rationale for copper chelating agents
+in BRAF(V600) mutated melanoma. Melanoma Manag. 2016, 3, 207–216. [CrossRef] [PubMed]
+262. Kim, K.K.; Abelman, S.; Yano, N.; Ribeiro, J.R.; Singh, R.K.; Tipping, M.; Moore, R.G. Tetrathiomolybdate inhibits mitochondrial
+complex IV and mediates degradation of hypoxia-inducible factor-1α in cancer cells. Sci. Rep. 2015, 5, 14296. [CrossRef] [PubMed]
+263. Baldari, S.; Di Rocco, G.; Heffern, M.C.; Su, T.A.; Chang, C.J.; Toietta, G. Effects of Copper Chelation on BRAF(V600E) Positive
+Colon Carcinoma Cells. Cancers 2019, 11, 659. [CrossRef]
+264. Yoshiji, H.; Yoshii, J.; Kuriyama, S.; Ikenaka, Y.; Noguchi, R.; Yanase, K.; Namisaki, T.; Kitade, M.; Yamazaki, M.; Fukui,
+H. Combination of copper-chelating agent, trientine, and methotrexate attenuates colorectal carcinoma development and
+angiogenesis in mice. Oncol. Rep. 2005, 14, 213–218. [PubMed]
+265. Fatfat, M.; Merhi, R.A.; Rahal, O.; Stoyanovsky, D.A.; Zaki, A.; Haidar, H.; Kagan, V.E.; Gali-Muhtasib, H.; Machaca, K. Copper
+chelation selectively kills colon cancer cells through redox cycling and generation of reactive oxygen species. BMC Cancer 2014,
+14, 527. [CrossRef]
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+35 of 37
+266. Yu, N.; Zhu, H.; Yang, Y.; Tao, Y.; Tan, F.; Pei, Q.; Zhou, Y.; Song, X.; Tan, Q.; Pei, H. Combination of Fe/Cu -chelators and
+docosahexaenoic acid: An exploration for the treatment of colorectal cancer. Oncotarget 2017, 8, 51478–51491. [CrossRef]
+267. Lewis, M.R.; Chambers, C.G.; Heidari-Kharaji, M.; Sikligar, K.; Yang, V.A.; Schaedler, A.W.; Golzy, M.; Watkinson, L.D.; Carmack,
+T.L.; Lunceford, J.M.; et al. PET imaging of [(64)Cu]copper(II) chloride and tetrathiomolybdate administration in animal models
+of triple-negative breast cancer. Nucl. Med. Biol. 2026, 152–153, 109596. [CrossRef]
+268. Kirk, F.T.; Munk, D.E.; Swenson, E.S.; Quicquaro, A.M.; Vendelbo, M.H.; Larsen, A.; Schilsky, M.L.; Ott, P.; Sandahl, T.D. Effects of
+tetrathiomolybdate on copper metabolism in healthy volunteers and in patients with Wilson disease. J. Hepatol. 2024, 80, 586–595.
+[CrossRef]
+269. Nan, L.; Yuan, W.; Guodong, C.; Yonghui, H. Multitargeting Strategy Using Tetrathiomolybdate and Lenvatinib: Maximizing
+Antiangiogenesis Activity in a Preclinical Liver Cancer Model. Anti-Cancer Agents Med. Chem. 2023, 23, 786–793. [CrossRef]
+270. Wei, H.; Zhang, W.J.; Leboeuf, R.; Frei, B. Copper induces--and copper chelation by tetrathiomolybdate inhibits--endothelial
+activation in vitro. Redox Rep. 2014, 19, 40–48. [CrossRef]
+271. Wei, H.; Frei, B.; Beckman, J.S.; Zhang, W.J. Copper chelation by tetrathiomolybdate inhibits lipopolysaccharide-induced
+inflammatory responses in vivo. Am. J. physiology. Heart Circ. Physiol. 2011, 301, H712–H720. [CrossRef] [PubMed]
+272. Rieber, M. Cancer Pro-oxidant Therapy Through Copper Redox Cycling: Repurposing Disulfiram and Tetrathiomolybdate. Curr.
+Pharm. Des. 2020, 26, 4461–4466. [CrossRef] [PubMed]
+273. Lee, C.; Xiao, Z.; Lim, I.; Wang, T.; Aghaei, P.; Burke, P.J.; Rao, J. Copper Chelation Induces Morphology Change in Mitochondria
+of Triple-Negative Breast Cancer. JACS Au 2025, 5, 2102–2113. [CrossRef]
+274. Lee, E.J.; Woo, M.H.; Moon, J.S.; Ko, J.S. Efficacy and safety of D-penicillamine, trientine, and zinc in pediatric Wilson disease
+patients. Orphanet J. Rare Dis. 2024, 19, 261. [CrossRef]
+275. Schaefer-Ramadan, S.; Barlog, M.; Roach, J.; Al-Hashimi, M.; Bazzi, H.S.; Machaca, K. Synthesis of TPEN variants to improve
+cancer cells selective killing capacity. Bioorg. Chem. 2019, 87, 366–372. [CrossRef] [PubMed]
+276. Li, H.; Wang, J.; Wu, C.; Wang, L.; Chen, Z.S.; Cui, W. The combination of disulfiram and copper for cancer treatment. Drug
+Discov. Today 2020, 25, 1099–1108. [CrossRef]
+277. Cater, M.A.; Haupt, Y. Clioquinol induces cytoplasmic clearance of the X-linked inhibitor of apoptosis protein (XIAP): Therapeutic
+indication for prostate cancer. Biochem. J. 2011, 436, 481–491. [CrossRef]
+278. Hasinoff, B.B.; Yadav, A.A.; Patel, D.; Wu, X. The cytotoxicity of the anticancer drug elesclomol is due to oxidative stress indirectly
+mediated through its complex with Cu(II). J. Inorg. Biochem. 2014, 137, 22–30. [CrossRef]
+279. Shen, W.; Pei, P.; Zhang, C.; Li, J.; Han, X.; Liu, T.; Shi, X.; Su, Z.; Han, G.; Hu, L.; et al. A Polymeric Hydrogel to Eliminate
+Programmed Death-Ligand 1 for Enhanced Tumor Radio-Immunotherapy. ACS Nano 2023, 17, 23998–24011. [CrossRef]
+280. Gholami, M.; Darroudi, M.; Hekmat, A.; Khazaei, M. Five-FU@CuS/NH(2) -UiO-66 as a drug delivery system for 5-fluorouracil
+to colorectal cancer cells. J. Biochem. Mol. Toxicol. 2022, 36, e23145. [CrossRef] [PubMed]
+281. Gholami, M.; Hekmat, A.; Khazaei, M.; Darroudi, M. OXA-CuS@UiO-66-NH(2) as a drug delivery system for Oxaliplatin to
+colorectal cancer cells. J. Mater. Sci. Mater. Med. 2022, 33, 26. [CrossRef]
+282. Zhou, H.; Liu, Z.; Zhang, Z.; Pandey, N.K.; Amador, E.; Nguyen, W.; Chudal, L.; Xiong, L.; Chen, W.; Wen, Y. Copper-cysteamine
+nanoparticle-mediated microwave dynamic therapy improves cancer treatment with induction of ferroptosis. Bioact. Mater. 2023,
+24, 322–330. [CrossRef]
+283. Chang, M.; Hou, Z.; Jin, D.; Zhou, J.; Wang, M.; Wang, M.; Shu, M.; Ding, B.; Li, C.; Lin, J. Colorectal Tumor Microenvironment-
+Activated Bio-Decomposable and Metabolizable Cu(2) O@CaCO(3) Nanocomposites for Synergistic Oncotherapy. Adv. Mater.
+2020, 32, e2004647. [CrossRef]
+284. Oliveri, V. Selective Targeting of Cancer Cells by Copper Ionophores: An Overview. Front. Mol. Biosci. 2022, 9, 841814. [CrossRef]
+285. Denoyer, D.; Pearson, H.B.; Clatworthy, S.A.; Smith, Z.M.; Francis, P.S.; Llanos, R.M.; Volitakis, I.; Phillips, W.A.; Meggyesy, P.M.;
+Masaldan, S.; et al. Copper as a target for prostate cancer therapeutics: Copper-ionophore pharmacology and altering systemic
+copper distribution. Oncotarget 2016, 7, 37064–37080. [CrossRef]
+286. Springer, C.; Humayun, D.; Skouta, R. Cuproptosis: Unraveling the Mechanisms of Copper-Induced Cell Death and Its Implication
+in Cancer Therapy. Cancers 2024, 16, 647. [CrossRef]
+287. Ying, H.; Qin, A.; Cheng, T.S.; Pavlos, N.J.; Rea, S.; Dai, K.; Zheng, M.H. Disulfiram attenuates osteoclast differentiation in vitro:
+A potential antiresorptive agent. PLoS ONE 2015, 10, e0125696. [CrossRef] [PubMed]
+288. Chiba, T.; Suzuki, E.; Yuki, K.; Zen, Y.; Oshima, M.; Miyagi, S.; Saraya, A.; Koide, S.; Motoyama, T.; Ogasawara, S.; et al. Disulfiram
+eradicates tumor-initiating hepatocellular carcinoma cells in ROS-p38 MAPK pathway-dependent and -independent manners.
+PLoS ONE 2014, 9, e84807. [CrossRef] [PubMed]
+289. Hu, Y.; Qian, Y.; Wei, J.; Jin, T.; Kong, X.; Cao, H.; Ding, K. The Disulfiram/Copper Complex Induces Autophagic Cell Death in
+Colorectal Cancer by Targeting ULK1. Front. Pharmacol. 2021, 12, 752825. [CrossRef]
+290. Yang, Z.; Guo, F.; Albers, A.E.; Sehouli, J.; Kaufmann, A.M. Disulfiram modulates ROS accumulation and overcomes synergistically
+cisplatin resistance in breast cancer cell lines. Biomed. Pharmacother. 2019, 113, 108727. [CrossRef]
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+36 of 37
+291. Radomska, D.; Szewczyk-Roszczenko, O.K.; Marciniec, K.; Ksi ˛a˙zek, M.; Kusz, J.; Roszczenko, P.; Szymanowska, A.; Radomski, D.;
+Bielawski, K.; Czarnomysy, R. Evaluation of anticancer activity of novel platinum(II) bis(thiosemicarbazone) complex against
+breast cancer. Bioorg. Chem. 2024, 148, 107486. [CrossRef] [PubMed]
+292. Yu, P.; Deng, J.; Cai, J.; Zhang, Z.; Zhang, J.; Hamid Khan, M.; Liang, H.; Yang, F. Anticancer and biological properties of a
+Zn-2,6-diacetylpyridine bis(thiosemicarbazone) complex. Metallomics 2019, 11, 1372–1386. [CrossRef] [PubMed]
+293. Zheng, Y.; Wei, K.; Gao, Y.; Zhou, Z.; Zheng, X.; Li, J.; Qi, J. Comparative evaluation of the structure and antitumor mechanism of
+mononuclear and trinucleated thiosemicarbazone Cu(II) complexes. J. Inorg. Biochem. 2023, 240, 112116. [CrossRef]
+294. Anjum, R.; Palanimuthu, D.; Kalinowski, D.S.; Lewis, W.; Park, K.C.; Kovacevic, Z.; Khan, I.U.; Richardson, D.R. Synthesis,
+Characterization, and in Vitro Anticancer Activity of Copper and Zinc Bis(Thiosemicarbazone) Complexes. Inorg. Chem. 2019, 58,
+13709–13723. [CrossRef] [PubMed]
+295. Bai, X.G.; Zheng, Y.; Qi, J. Advances in thiosemicarbazone metal complexes as anti-lung cancer agents. Front. Pharmacol. 2022,
+13, 1018951. [CrossRef]
+296. He, Z.X.; Huo, J.L.; Gong, Y.P.; An, Q.; Zhang, X.; Qiao, H.; Yang, F.F.; Zhang, X.H.; Jiao, L.M.; Liu, H.M.; et al. Design, synthesis
+and biological evaluation of novel thiosemicarbazone-indole derivatives targeting prostate cancer cells. Eur. J. Med. Chem. 2021,
+210, 112970. [CrossRef]
+297. Shi, H.; Suo, Y.; Zhang, Z.; Liu, R.; Liu, H.; Cheng, Z. Copper(II)-disulfiram loaded melanin-dots for cancer theranostics. Nanomed.
+Nanotechnol. Biol. Med. 2021, 32, 102340. [CrossRef]
+298. Chen, M.; Huang, Z.; Xia, M.; Ding, Y.; Shan, T.; Guan, Z.; Dai, X.; Xu, X.; Huang, Y.; Huang, M.; et al. Glutathione-responsive
+copper-disulfiram nanoparticles for enhanced tumor chemotherapy. J. Control. Release 2022, 341, 351–363. [CrossRef]
+299. Lu, X.; Lin, B.; Xu, N.; Huang, H.; Wang, Y.; Lin, J.M. Evaluation of the accumulation of disulfiram and its copper complex in
+A549 cells using mass spectrometry. Talanta 2020, 211, 120732. [CrossRef]
+300. Zhang, T.; Kephart, J.; Bronson, E.; Anand, M.; Daly, C.; Spasojevic, I.; Bakthavatsalam, S.; Franz, K.; Berg, H.; Karachaliou, G.S.;
+et al. Prospective clinical trial of disulfiram plus copper in men with metastatic castration-resistant prostate cancer. Prostate 2022,
+82, 858–866. [CrossRef]
+301. Huang, J.; Chaudhary, R.; Cohen, A.L.; Fink, K.; Goldlust, S.; Boockvar, J.; Chinnaiyan, P.; Wan, L.; Marcus, S.; Campian, J.L. A
+multicenter phase II study of temozolomide plus disulfiram and copper for recurrent temozolomide-resistant glioblastoma. J.
+Neuro-Oncol. 2019, 142, 537–544. [CrossRef] [PubMed]
+302. Heroux, D.; Leung, A.W.Y.; Gilabert-Oriol, R.; Kulkarni, J.; Anantha, M.; Cullis, P.R.; Bally, M.B. Liposomal delivery of a disulfiram
+metabolite drives copper-mediated tumor immunity. Int. J. Pharm. 2025, 683, 126010. [CrossRef]
+303. Chen, W.; Yang, W.; Chen, P.; Huang, Y.; Li, F. Disulfiram Copper Nanoparticles Prepared with a Stabilized Metal Ion Ligand
+Complex Method for Treating Drug-Resistant Prostate Cancers. ACS Appl. Mater. Interfaces 2018, 10, 41118–41128. [CrossRef]
+304. Wehbe, M.; Malhotra, A.K.; Anantha, M.; Lo, C.; Dragowska, W.H.; Dos Santos, N.; Bally, M.B. Development of a copper-clioquinol
+formulation suitable for intravenous use. Drug Deliv. Transl. Res. 2018, 8, 239–251. [CrossRef]
+305. Noh, D.; Lee, H.; Lee, S.; Sun, I.C.; Yoon, H.Y. Copper-Based Nanomedicines for Cuproptosis-Mediated Effective Cancer Treatment.
+Biomater. Res. 2024, 28, 0094. [CrossRef]
+306. Goswami, U.; Dutta, A.; Raza, A.; Kandimalla, R.; Kalita, S.; Ghosh, S.S.; Chattopadhyay, A. Transferrin-Copper Nanocluster-
+Doxorubicin Nanoparticles as Targeted Theranostic Cancer Nanodrug. ACS Appl. Mater. Interfaces 2018, 10, 3282–3294. [CrossRef]
+[PubMed]
+307. Zhou, M.; Tian, M.; Li, C. Copper-Based Nanomaterials for Cancer Imaging and Therapy. Bioconjugate Chem. 2016, 27, 1188–1199.
+[CrossRef] [PubMed]
+308. Liu, C.; Wang, D.; Zhang, S.; Cheng, Y.; Yang, F.; Xing, Y.; Xu, T.; Dong, H.; Zhang, X. Biodegradable Biomimic Copper/Manganese
+Silicate Nanospheres for Chemodynamic/Photodynamic Synergistic Therapy with Simultaneous Glutathione Depletion and
+Hypoxia Relief. ACS Nano 2019, 13, 4267–4277. [CrossRef]
+309. Koo, S.; Park, O.K.; Kim, J.; Han, S.I.; Yoo, T.Y.; Lee, N.; Kim, Y.G.; Kim, H.; Lim, C.; Bae, J.S.; et al. Enhanced Chemodynamic
+Therapy by Cu-Fe Peroxide Nanoparticles: Tumor Microenvironment-Mediated Synergistic Fenton Reaction. ACS Nano 2022, 16,
+2535–2545. [CrossRef] [PubMed]
+310. He, L.; Xu, F.; Li, Y.; Jin, H.; Lo, P.C. Cupric-ion-promoted fabrication of oxygen-replenishing nanotherapeutics for synergistic
+chemo and photodynamic therapy against tumor hypoxia. Acta Biomater. 2023, 162, 57–71. [CrossRef]
+311. Jia, S.; Ke, S.; Tu, L.; Chen, S.; Luo, B.; Xiong, Y.; Li, Y.; Wang, P.; Ye, S. Glutathione/pH-responsive copper-based nanoplatform
+for amplified chemodynamic therapy through synergistic cycling regeneration of reactive oxygen species and dual glutathione
+depletion. J. Colloid Interface Sci. 2023, 652, 329–340. [CrossRef]
+312. Tian, H.; Zhang, M.; Jin, G.; Jiang, Y.; Luan, Y. Cu-MOF chemodynamic nanoplatform via modulating glutathione and H2O2 in
+tumor microenvironment for amplified cancer therapy. J. Colloid Interface Sci. 2021, 587, 358–366. [CrossRef]
+https://doi.org/10.3390/cells15060545
+
+Cells 2026, 15, 545
+37 of 37
+313. Bonet-Aleta, J.; Sancho-Albero, M.; Calzada-Funes, J.; Irusta, S.; Martin-Duque, P.; Hueso, J.L.; Santamaria, J. Glutathione-
+Triggered catalytic response of Copper-Iron mixed oxide Nanoparticles. Leveraging tumor microenvironment conditions for
+chemodynamic therapy. J. Colloid Interface Sci. 2022, 617, 704–717. [CrossRef]
+314. Liu, B.; Bian, Y.; Liang, S.; Yuan, M.; Dong, S.; He, F.; Gai, S.; Yang, P.; Cheng, Z.; Lin, J. One-Step Integration of Tumor
+Microenvironment-Responsive Calcium and Copper Peroxides Nanocomposite for Enhanced Chemodynamic/Ion-Interference
+Therapy. ACS Nano 2022, 16, 617–630. [CrossRef]
+315. Lin, L.S.; Huang, T.; Song, J.; Ou, X.Y.; Wang, Z.; Deng, H.; Tian, R.; Liu, Y.; Wang, J.F.; Liu, Y.; et al. Synthesis of Copper Peroxide
+Nanodots for H(2)O(2) Self-Supplying Chemodynamic Therapy. J. Am. Chem. Soc. 2019, 141, 9937–9945. [CrossRef]
+316. Zhuo, X.; Liu, Z.; Aishajiang, R.; Wang, T.; Yu, D. Recent Progress of Copper-Based Nanomaterials in Tumor-Targeted Photothermal
+Therapy/Photodynamic Therapy. Pharmaceutics 2023, 15, 2293. [CrossRef]
+317. Li, G.; Li, X.; Lou, Z.; Xu, J.; Ma, Y.; Li, X.; Liu, Q.; Sun, T. Recent advances in copper sulfide nanoparticles for cancer diagnosis
+and therapy. Mater. Today Bio 2025, 34, 102197. [CrossRef]
+318. Ji, B.; Cai, H.; Yang, Y.; Peng, F.; Song, M.; Sun, K.; Yan, F.; Liu, Y. Hybrid membrane camouflaged copper sulfide nanoparticles for
+photothermal-chemotherapy of hepatocellular carcinoma. Acta Biomater. 2020, 111, 363–372. [CrossRef]
+319. Amatya, R.; Lee, D.; Sultana, M.; Min, K.A.; Shin, M.C. Albumin-coated copper nanoparticles for photothermal cancer therapy:
+Synthesis and in vitro characterization. Heliyon 2023, 9, e17732. [CrossRef] [PubMed]
+320. Gupta, G.; Cappellini, F.; Farcal, L.; Gornati, R.; Bernardini, G.; Fadeel, B. Copper oxide nanoparticles trigger macrophage cell
+death with misfolding of Cu/Zn superoxide dismutase 1 (SOD1). Part. Fibre Toxicol. 2022, 19, 33. [CrossRef] [PubMed]
+321. Niu, L.; Su, W.; Ju, L.; Xiang, J.; Yang, Z.; Yao, B. Innovative cross-intervention: Copper ions and metabolic pathways in cancer
+therapy. Cancer Biol. Med. 2026, 23, 30–41. [CrossRef] [PubMed]
+322. Zhang, B.; Deng, Y.; Xu, D.; Zhao, X. Dimethylcurcumin and Copper Sulfate-Loaded Silk Nanoparticles for Synergistic Therapy
+against Breast Cancer. ACS Biomater. Sci. Eng. 2025, 11, 1539–1548. [CrossRef]
+323. Fahmy, H.M.; Ali, O.A.; Hassan, A.A.; Mohamed, M.A. Biodistribution and toxicity assessment of copper nanoparticles in the rat
+brain. J. Trace Elem. Med. Biol. 2020, 61, 126505. [CrossRef] [PubMed]
+324. Yu, M.; Zheng, J. Clearance Pathways and Tumor Targeting of Imaging Nanoparticles. ACS Nano 2015, 9, 6655–6674. [CrossRef]
+325. Wang, X.; Guo, L.; Zhang, S.; Chen, Y.; Chen, Y.T.; Zheng, B.; Sun, J.; Qian, Y.; Chen, Y.; Yan, B.; et al. Copper Sulfide Facilitates
+Hepatobiliary Clearance of Gold Nanoparticles through the Copper-Transporting ATPase ATP7B. ACS Nano 2019, 13, 5720–5730.
+[CrossRef] [PubMed]
+326. Guo, L.; Panderi, I.; Yan, D.D.; Szulak, K.; Li, Y.; Chen, Y.T.; Ma, H.; Niesen, D.B.; Seeram, N.; Ahmed, A.; et al. A comparative
+study of hollow copper sulfide nanoparticles and hollow gold nanospheres on degradability and toxicity. ACS Nano 2013, 7,
+8780–8793. [CrossRef] [PubMed]
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.
+https://doi.org/10.3390/cells15060545

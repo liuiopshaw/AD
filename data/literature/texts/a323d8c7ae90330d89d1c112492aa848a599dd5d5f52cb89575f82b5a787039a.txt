@@ -1,0 +1,1047 @@
+Food Hydrocolloids 154 (2024) 110144
+Available online 26 April 2024
+0268-005X/© 2024 Elsevier Ltd. All rights reserved.
+Chitosan/nanoclusters membrane-based sensors with antibacterial 
+properties for rapid detection of bacterial viability and food preservation 
+Nan Gao a, Xuanxuan Wang a, Jingjing Tian b, Yu Wang a, Guixia Ling a,**, Peng Zhang a,* 
+a Wuya College of Innovation, Shenyang Pharmaceutical University, No. 103, Wenhua Road, Shenyang, 110016, China 
+b School of Pharmaceutical Engineering, Shenyang Pharmaceutical University, No. 103, Wenhua Road, Shenyang, 110016, China   
+A R T I C L E  I N F O   
+Keywords: 
+Colorimetric sensing 
+Copper nanoclusters 
+Chitosan 
+Bacterial viability 
+Antibacterial effect 
+Food preservation 
+A B S T R A C T   
+In this work, copper nanoclusters (CuNCs) with tiny particle sizes were successfully obtained by a template- 
+assisted synthesis approach. The interfacial interaction energies of cysteine (Cys) and CuNCs were simulated 
+and calculated by molecular dynamics using the Materials Studio program package, and the anchoring sites of 
+Cys on CuNCs surface in aqueous solution were investigated in detail by adsorption modeling. Chitosan (CS), a 
+natural polymer, was used as a confining agent to enhance the excellent peroxidase (POD)-like activity of CuNCs. 
+Therefore, the composite can catalyze the decomposition of hydrogen peroxide (H2O2) to generate hydroxyl 
+radical (⋅OH) and possess higher antibacterial activity. A broad-spectrum antibacterial system based on 
+CS@CuNCs was established for E. coli and S. aureus, avoiding the harmful effects of high concentration of H2O2 
+on organisms. In addition, a cascade reaction with glucose oxidase (GOx) was established for the specific con­
+sumption of glucose by bacteria, and a method for the visual colorimetric detection of bacterial viability within 
+30 min was established. Finally, based on the polymer properties of CS, a cling wrap with antibacterial properties 
+was also prepared for food preservation. In summary, this study provides innovative proposals for the application 
+of CS/nanocluster composite in food packaging, food safety, and even bioengineering.   
+1. Introduction 
+It is widely acknowledged that infectious diseases and food 
+poisoning brought on by foodborne and waterborne microorganisms in 
+various public health environments pose a serious threat to global public 
+health (Thao Nguyen, Tai Duc, & Moon, 2020). Many diseases such as 
+gastroenteritis, diarrhea, and sepsis are associated with the ingestion of 
+contaminated food or water sources, and the microbial test is a critical 
+step in preventing these types of infectious and deadly diseases (Dickson 
+et al., 2016; Freeman et al., 2017; Guerrant, Moore, Kirschenfeld, & 
+Sande, 1975). Therefore, bacterial detection and the development of 
+novel broad-spectrum antimicrobial agents have become top priorities 
+in pharmaceutical, environmental, and food safety sciences. 
+Colony counts, fluorometric assays, enzyme-linked immunosorbent 
+assay (ELISA), and polymerase chain reaction (PCR) are frequently used 
+techniques for identifying food and waterborne pathogens (Chorti, Kazi, 
+Wiederoder, & Christodouleas, 2021; Grubb & Dehority, 1976; Vray, 
+Hoebeke, Saint-Guillain, Leloup, & Strosberg, 1980; Zaidi, 2021). The 
+colony counting method, the established gold standard for determining 
+bacterial viability, necessitates incubation for 24–48 h in the appro­
+priate media and temperature (D¨onmez, Needs, Osborn, Reis, & 
+Edwards, 2022; Shi et al., 2019). Moreover, other methods are expensive 
+and wasteful of labor. Therefore, there is an urgent need for a simple, 
+rapid, and economical method for the analysis of the activity of patho­
+genic bacteria. Colorimetry is a detection technique that can precisely 
+express the chemical concentration according to the change of color. 
+Compared with other techniques, it does not require complex in­
+struments, and the change of concentration can be judged by the naked 
+eye, which is also affordable and simple to operate (Li & Feng, 2020). 
+For example, Wen, Liu, Wu, and He (2022) employed gold nanoparticles 
+as probes to detect bacterial viability, generating a color signal via 
+surface plasmon resonance. Glucose oxidase (GOx) and horseradish 
+peroxidase (HRP) were used by Sun, Huang, Warden, and Ding (2020) 
+for real-time monitoring of food and drinking water bacterial viability in 
+a cascade reaction. Although the method has a rapid color development 
+time, the poor stability of natural enzymes under external conditions, 
+demanding extraction procedures, and expensive costs severely limit 
+their applications in vitro. 
+* Corresponding author. 
+** Corresponding author. 
+E-mail addresses: pharlab@163.com (G. Ling), zhangpengspu@163.com (P. Zhang).  
+Contents lists available at ScienceDirect 
+Food Hydrocolloids 
+journal homepage: www.elsevier.com/locate/foodhyd 
+https://doi.org/10.1016/j.foodhyd.2024.110144 
+Received 27 September 2023; Received in revised form 9 April 2024; Accepted 25 April 2024   
+
+Food Hydrocolloids 154 (2024) 110144
+2
+Metal nanoclusters (MNCs) are an emerging class of nanomaterials, 
+including gold (Au), silver (Ag), copper (Cu), platinum (Pt), and palla­
+dium (Pd) nanoclusters, which usually consist of a few hundred to 
+several thousand atoms (Tan, He, Wang, Yu, & Yang, 2023). An internal 
+metal nucleus, a repeating structure of nucleus and ligand, and a spatial 
+ligand are the typical components of a metal nanocluster, which is a 
+transitional state between a metal atom and a nanoparticle (Gao, Xu, Li, 
+Ling, & Zhang, 2023). Compared to nanoparticles with sizes ranging 
+from 5 to 200 nm, such small-sized nanoclusters can greatly reduce 
+bioaccumulation and be effectively metabolized and removed from the 
+organism (Li et al., 2020). They have been widely exploited in bio­
+catalysis and biosensing due to their exceptional qualities such as fluo­
+rescent luminescence (Yang et al., 2023), compact size (Shang, Dong, & 
+Nienhaus, 2011), and enzyme-like activity (Bera, Mukhopadhyay, 
+Nonappa, & Goswami, 2023). In addition to detecting biomarkers and 
+trace pollutants, MNNs have also shown great potential in antibacterial 
+treatment in recent years (Danai et al., 2023; Li, Zhu, & Wu, 2023). The 
+widely reported antibacterial mechanisms of MNCs are (1) release of 
+metal ions, (2) elevation of intracellular reactive oxygen species (ROS) 
+levels, and (3) catalytic activity. MNCs with catalytic activity can 
+enhance the antibacterial activity of other intermediates. One of the 
+advantages is that they can convert low-level hydrogen peroxide (H2O2) 
+into another ROS of ⋅OH to kill bacteria, thus avoiding the harmful ef­
+fects of high concentration of H2O2 on organisms. 
+Nanomaterials based on chitosan-copper nanocluster composites 
+(CS@CuNCs) with both bacterial detection and bacteriostatic activity 
+were constructed. Using the principle of bacterial metabolism of 
+glucose, the colorimetric detection of bacterial activity was achieved by 
+a cascade reaction with glucose. In recent years, a variety of nano­
+materials have been applied to fight bacteria (Li, Du, Xu, Ling, & Zhang, 
+2023; Wu et al., 2023). Due to its abundant surface groups, chitosan (CS) 
+is frequently utilized as a modification or protective agent for different 
+nanomaterials (Gao, Du, Zhang, Ling, & Zhang, 2022). Moreover, 
+positively charged CS can stabilize negatively charged nanoparticles, 
+which has been demonstrated by computer simulations of the energies 
+involved in protein-ligand interactions (Collado-Gonzalez et al., 2017). 
+Meanwhile, CS has been found to be employed directly or in composite 
+form with strong antibacterial activity as a biocompatible cationic 
+polysaccharide (Du, Li, Zhang, Ling, & Zhang, 2023; Munoz-Tebar, 
+Perez-alvarez, Fernandez-Lopez, & Viuda-Martos, 2023; Zhang, Xu, Li, 
+Ling, & Zhang, 2023). CS@CuNCs with peroxidase (POD)-like activity 
+can catalyze the production of the more toxic ⋅OH by H2O2, which in 
+turn kills bacteria. 
+In this work, CuNCs were synthesized by a template-assisted method, 
+the interfacial interaction energies of CuNCs and cysteines (Cys) were 
+calculated by molecular dynamics simulation, and the anchoring sites of 
+Cys on CuNCs in aqueous solution were investigated for the first time by 
+adsorption modeling. And the enzymatic activity of CS@CuNCs was 
+greatly enhanced by electrostatically trapping negatively charged cys­
+teines (Cys) with CS as a stabilizer and protector. Utilizing the properties 
+of CS, the composite can be self-dried into a membrane, which improves 
+the portability. Finally, the applications of the composite in the field of 
+food safety were explored, and the colorimetric detection of bacterial 
+viability in water was realized. A food cling wrap with antibacterial 
+properties was prepared by using PVA and glycerol as plasticizers, and 
+the freshness of grapes was investigated, which greatly broadened the 
+application values of CS@CuNCs in the field of food safety. 
+2. Materials and methods 
+2.1. Materials 
+Chitosan (CS, Mw 500,000–1,000,000, deacetylation degree≥95%) 
+and 3,3′,5,5′-tetramethylbenzidine (TMB) were purchased from 
+Shanghai Aladdin Biochemical Technology Co., L-cysteine (Cys), gluta­
+thione (GSH), fructose, galactose, histidine (His), o-phenylenediamine 
+(OPD) and agar powder were obtained from Shanghai Maclean 
+Biochemical Technology Co. 2,2′-Biamine-bis (3-ethylbenzothiazoline- 
+6-sulfonic acid) diammonium salt (ABTS) and glucose oxidase (GOx) 
+were purchased from Roen Biotechnology Co. Glucose, hydrogen 
+peroxide (H2O2, 30%), ammonium acetate and potassium dihydrogen 
+phosphate (KH2PO4) and sodium chloride (NaCl) were obtained from 
+Tianjin Hengxing Chemical Reagent Manufacturing Co. Manganese ac­
+etate, maltose, and lactose were purchased from Tianjin Damao Chem­
+ical Reagent Factory. Mannitol and magnesium chloride (MgCl2) were 
+obtained from Tianjin Regent Chemical Co., Ltd. Ascorbic acid (AA) and 
+glycine (Gly) were purchased from Tianjin Bodi Chemical Co., Ltd. 
+Tryptone was obtained from Beijing Auboxing Biotechnology Co. Yeast 
+extract was purchased from OXOID. Escherichia coli (E. coli, ATCC 
+25922), Staphylococcus aureus (S. aureus, ATCC 25922), Enterococcus 
+faecalis (E. faecalis, ATCC 29212), Bacillus subtilis (B. subtilis, CMCC (B) 
+63501) were purchased from Beijing Preservation Biology. All other 
+chemicals and solvents are of analytical grade. 
+2.2. Synthesis of CuNCs and CS@CuNCs 
+Briefly, CuNCs were synthesized based on the method of Cui, Song, 
+Wang, and Song (2015) with some modifications. First, 10 mL of freshly 
+prepared 5 mmol L−1 Cys was slowly added dropwise to 10 mL of 5 
+mmol L−1 CuSO4⋅5H2O under vortex conditions, at which point the so­
+lution turned grayish purple. After stirring for 15 min at room temper­
+ature, 1 mol L−1 of NaOH was added drop by drop to adjust the pH of the 
+solution to 12, and the solution immediately changed to a black-brown 
+color. The obtained solution was centrifuged at 8000 rpm for 10 min, the 
+supernatant was collected, and the operation was repeated three times 
+to obtain CuNCs. 
+CS@CuNCs were prepared by referring to Chen et al. (Chen, Li, 
+Huang, & Jia, 2021). Firstly, the low-viscosity CS was dissolved in 0.4% 
+HAc at 40 ◦C in a water bath and stirred well to obtain 40 mg mL−1 of CS 
+solution. The supernatant of CuNCs obtained by centrifugation as 
+described above was added to the CS solution at a volume ratio of 1:1, 
+and stirring was continued for 30 min. 
+2.3. Preparation of CS@CuNCs membranes 
+CS@CuNCs composite nano-membranes were prepared by a solvent 
+evaporation method (Xie et al., 2019). A solution of 230 μL of 30 mg 
+mL−1 CS@CuNCs was added to the cap of a 0.8 cm diameter EP-tube, 
+which was then placed in a blast oven at 50 ◦C to evaporate the sol­
+vent and dried. The POD activity of CS@CuNCs was tested as follows: 50 
+μL of 10 mmol L−1 TMB, 50 μL of 5 mmol L−1 H2O2, 200 μL of HAc-NaAc 
+buffer (pH = 3) were added to the tube containing CS@CuNCs mem­
+brane, and the solution was incubated for 20 min at room temperature, 
+and its absorbance at 652 nm was measured. 
+2.4. Characterization of CuNCs and CS@CuNCs composite 
+2.4.1. Size distribution and zeta potential 
+The diameter and size distribution of the CuNCs and CS@CuNCs 
+composite were determined by the dynamic light scattering (DLS) 
+method (Zetasizer Nano ZS900 laser particle sizer, Malvern, UK). The 
+same instrument was also used in electrophoresis mode to measure the 
+zeta potential of the samples. All samples were properly diluted in 
+distilled water to minimize multiple scattering. 
+2.4.2. Electron microscopy analysis 
+A transmission electron microscope (TEM, HT7700, Hitachi, Japan) 
+was used to characterize the morphology of CuNCs and CS@CuNCs 
+composite. The sample solution was suitably diluted and subsequently 
+deposited on a carbon-coated copper grid, the excess sample was 
+removed with filter paper, dried overnight and subsequently analyzed. 
+N. Gao et al.                                                                                                                                                                                                                                     
+
+Food Hydrocolloids 154 (2024) 110144
+3
+2.4.3. X-ray photoelectron analysis 
+The valence states of the Cu element in CuNCs and CS@CuNCs were 
+recorded using X-ray photoelectron spectroscopy (XPS, K-Alpha, 
+Thermo Scientific, US). An appropriate amount of sample was taken on 
+the disk and the spectrum of Cu 2p was obtained at an operating voltage 
+of 12 V, a fluence energy of 50 eV and a step length of 0.1 eV. 
+2.4.4. X-ray diffraction analysis 
+The X-ray diffraction (XRD) patterns of the samples were collected 
+using an X-ray diffractometer (Rigaku Ultima IV, Japan). The mea­
+surements were conducted at a wavelength of 1.5418 Å, with scanning 
+angles ranging from 10◦to 80◦and a scan speed of 2◦⋅min−1. 
+2.4.5. Fourier transform infrared spectroscopy 
+Fourier transform infrared (FT-IR) spectroscopy analysis of the CS, 
+Cys, CuNCs, and CS@CuNCs was performed using an FT-IR spectrometer 
+(FT-IR-650, China). The spectra were collected in the scan range of 
+4000–400 cm−1, employing a spectral resolution of 2 cm−1. 
+2.5. Characterization of CS@CuNCs membranes 
+2.5.1. Atomic force microscopy imaging 
+Surface characterization and roughness of the membranes were 
+performed using an atomic force microscope (AFM, Bruker Multimode 8, 
+Bruker, Germany). The membrane was placed on a sample stage and a 2 
+μm × 2 μm area was scanned. 
+2.5.2. Electron microscopy analysis 
+The morphology of the CS@CuNCs membranes was analyzed using a 
+scanning electron microscope (ZEISS Gemini 300, ZEISS, Germany). 
+Each sample was directly adhered to a conductive adhesive and then 
+sputter-plated with a gold layer using a Quorum SC7620 to enhance the 
+conductivity of the membrane. The accelerating voltage was 3 kV for 
+morphology capture and 15 kV for energy dispersive X-ray (EDX) 
+mapping. 
+2.6. Investigation of the mechanism of Cys-CuNCs interaction 
+The Materials Studio program package was used to model and 
+optimize the structure of CuNCs, Cys, and the interface between them, 
+the interfacial interaction energy was simulated and calculated by mo­
+lecular dynamics, and the anchoring sites of Cys to CuNCs in aqueous 
+solution were investigated in detail by adsorption model. During the 
+molecular dynamics simulation, the NVT system was adopted, the 
+simulation temperature was set at 298 K, the time step was set at 1 fs, the 
+number of steps was set at 5000 steps with a duration of 5 ps, and the 
+structural output was optimized every 250 steps, and the maximum 
+deviation of the energy was set at 50000 kcal/mol. The calculation of 
+interfacial interaction energy between CuNCs and Cys was shown in 
+equation (1): 
+EInteraction = ETotal-
+(
+ECuNCs Surface + ECys
+)
+(1)  
+where EInteraction is the interfacial binding energy, ETotal is the total 
+interaction energy of the system, ECuNCs Surface is the surface interaction 
+energy of CuNCs, and ECys is the interaction energy of Cys. 
+Adsorption calculations were also carried out using the Adsorption 
+Locator module and adsorption site calculations between Cu and S were 
+performed. 
+2.7. Determination of peroxidase activity of CS@CuNCs 
+The POD-like catalytic performance of CS@CuNCs was investigated 
+with TMB as the chromogenic agent and H2O2 as the substrate. The 
+experimental procedures were as follows: 100 μL of 2 mg mL−1 of 
+CS@CuNCs was added to a mixed solution containing 10 mmol L−1 TMB 
+solution and 0.1 mol L−1 HAc-NaAc buffer (pH = 5), and 50 μL of 5 
+mmol L−1 H2O2 were added to bring the total volume of the mixed so­
+lution to 0.4 mL. After mixing well, the solution was incubated for 10 
+min at 37 ◦C. The color change of the solution was observed and its 
+absorbance at 652 nm was detected and compared with the two systems 
+without the addition of CS@CuNCs and without the addition of H2O2. 
+2.8. Steady-state kinetic analysis 
+The kinetics of the catalytic oxidation reaction of peroxide-mimetic 
+enzymes was investigated by recording the change in absorbance at 
+652 nm using a microplate reader (Synergy, Biotek, US) in scanning 
+kinetic mode. The experiments were performed by keeping the con­
+centration of TMB constant and changing the concentration of H2O2, or 
+keeping the concentration of H2O2 constant and changing the concen­
+tration of TMB to test different reaction rates, respectively. A double 
+inverse plot of the substrate concentration and reaction rate was ob­
+tained, based on which the Michaelis-Menten equation was used to 
+calculate the Michaelis constant and the maximum reaction rate of the 
+substrate. The kinetic equation was shown in equation (2): 
+v = Vmax[S]
+Km + [S]
+(2)  
+where v is the initial velocity, Vmax is the maximum velocity, Km value 
+is the Michaelis constant, and [S] is the substrate concentration. 
+2.9. Preparation of samples with different vitality 
+Preparation of live and dead bacteria samples: The method of 
+configuring different ratios of live/dead bacteria was shown in Fig. S1. 
+10 mL of bacterial culture solution was taken out from the bacterial 
+culture bottle in the fixed differentiation stage into a sterilized centri­
+fuge tube and centrifuged at 3000 rpm for 10 min. After completion of 
+centrifugation, it could be observed that the bacterial cells in the 
+centrifuge tube were gathered at the bottom of the tube with the bac­
+terial culture fluid in the upper layer. The upper layer of culture fluid 
+was discarded by pipetting, and the sediment at the bottom of the 
+centrifuge tube was blown with an appropriate volume of sterile water 
+to make the bacterial cells evenly suspended for centrifugation again. 
+After repeating the procedure three times, the colonies were diluted 
+with sterile water until the OD value at 600 nm was equal to 0.1. The 
+colonies were then divided into two portions, one stored in a refrigerator 
+at 4 ◦C (considered 100% bacterial viability for this sample) and one 
+placed in a glass sample bottle and boiled on a universal electric stove 
+for 30 min to completely kill the bacteria (considered 0% bacterial 
+viability for this sample). 
+Live and dead bacteria were mixed in different volume ratios to 
+obtain bacterial samples with the viability of 0%, 20%, 40%, 60%, 80%, 
+and 100%. 
+2.10. Detection of H2O2 by CS@CuNCs 
+Based on the excellent POD-like catalytic properties of the prepared 
+CS@CuNCs, the detection of H2O2 was achieved by using the phenom­
+enon that CS@CuNCs can catalyze the oxidation of TMB by H2O2 to turn 
+the solution blue and increase the absorbance at 652 nm. 50 μL of H2O2 
+(0.05, 0.1, 0.2, 0.4, 0.6, 0.8, 1.0, 1.2, 1.5 mmol L−1) were incubated with 
+CS@CuNCs (20 mg mL−1, 100 μL), TMB (10 mmol L−1, 50 μL), and HAc- 
+NaAc buffer (pH = 3, 200 μL) for 15 min for color development. 
+2.11. Bacterial viability detection 
+Preparation of different active S. aureus: Bacterial samples with 0% 
+and 100% viability were obtained according to the steps described 
+above, respectively, and different volumes of bacterial samples with 0% 
+N. Gao et al.                                                                                                                                                                                                                                     
+
+Food Hydrocolloids 154 (2024) 110144
+4
+and 100% viability were taken and mixed evenly to obtain bacterial 
+samples with 0%, 20%, 40%, 60%, 80%, and 100% viability. 
+Preparation of mixed bacteria: The mixed bacterial sample suspen­
+sions were consisted of 1.0 × 108 CFU mL−1 of S. aureus, E. faecalis, 
+E. coli, and B. subtilis. The four kinds of bacterial samples with viability of 
+0% and 100% were obtained by following the steps described above, and 
+an equal volume of bacterial samples with 0% and 100% viability was 
+taken and mixed uniformly to obtain a bacterial suspension with 50% 
+viability. Four bacterial suspensions of equal volumes and viability were 
+taken to obtain mixed bacterial suspensions. By analogy, three mixed 
+bacterial samples containing four bacteria with different viabilities were 
+prepared: live bacteria/dead bacteria ratio of 0%, 50%, and 100%, 
+respectively. 
+The viability was determined as follows: the bacteria with different 
+viabilities were incubated with 4 mmol L−1 glucose and 500 μg mL−1 
+GOx for 15 min, followed by the addition of 100 μL CS@CuNCs, 50 μL 
+TMB (10 mmol L−1) and 200 μL HAc-NaAc buffer (pH = 3.0), and the 
+absorbance values were recorded after incubation for 15 min. 
+2.12. Real sample detection 
+Bacteria with different viabilities (live and dead) were prepared by 
+centrifugation and washing. S. aureus was added to drinking water and 
+tap water samples, respectively. The concentration of bacteria in these 
+Fig. 1. (a) Schematic diagram of the synthesis of CS@CuNCs. (b) The TEM image of CuNCs. (c) The TEM image of CS@CuNCs. (d) The Zeta potential graph of CS, 
+CuNCs, and CS@CuNCs. (e) The XPS energy spectra of Cu 2p of CuNCs and CS@CuNCs. (f) The XRD spectra of CuNCs and CS@CuNCs. (g) The FT-IR spectra of Cys, 
+CS, CuNCs, and CS@CuNCs. 
+Fig. 2. (a) The AFM image of CS@CuNCs membranes. (b, c) The SEM images of CS@CuNCs membranes.  
+N. Gao et al.                                                                                                                                                                                                                                     
+
+Food Hydrocolloids 154 (2024) 110144
+5
+contaminated water samples was 1.0 × 108 CFU mL−1. Dead bacteria 
+samples were obtained by boiling for 30 min, and the samples to be 
+tested were obtained by mixing different ratios of live/dead bacteria 
+suspensions to obtain bacterial viability of 0%, 50%, and 100%, 
+respectively. The control group was made by adding different pro­
+portions of live/dead bacterial suspensions in sterile water, respectively. 
+The viability was determined as follows: the bacteria with different vi­
+abilities were incubated with 4 mmol L−1 glucose and 500 μg mL−1 GOx 
+for 15 min, followed by the addition of 100 μL CS@CuNCs, 50 μL TMB 
+(10 mmol L−1) and 200 μL HAc-NaAc buffer (pH = 3.0), and the 
+absorbance values were recorded after incubation for 15 min. 
+2.13. Terephthalic acid probe to detect ⋅OH 
+Terephthalic acid (TA) was used as a fluorescent probe to investigate 
+whether the nanozyme could catalyze the production of ⋅OH from H2O2 
+(Barreto, Smith, Strobel, McQuillin, & Miller, 1995). The reaction pro­
+cess was shown in Fig. S2. The validation process was as follows: the 
+final concentration of CS@CuNCs was 2 mg mL−1, the final concentra­
+tion of H2O2 was 5, 10, 20 mmol L−1, and the final concentration of TA 
+was 0.5 mmol L−1. The fluorescence spectral data of the mixed solutions 
+were collected after incubating in HAc-NaAc buffer (0.1 M, pH = 4.2) for 
+12 h at 37 ◦C. 
+2.14. Determination of the antibacterial activity of CS@CuNCs catalyzed 
+by H2O2 
+Unless otherwise stated, antimicrobial studies were performed by 
+incubating S. aureus and E. coli bacteria to their mid-growth, and then 
+the bacteria were diluted to 108 CFU mL−1 by phosphate-buffered saline 
+(PBS, pH = 7.4, 1 × ) and further diluted to 106 CFU mL−1. A small 
+amount of bacterial solution containing only HAc-NaAc buffer (0.1 mol 
+L−1, pH = 4.2), H2O2 (5 mmol L−1), CS@CuNCs (100 μg mL−1), as well 
+as H2O2 and CS@CuNCs were incubated for 0.5 h at 37 ◦C. Then a small 
+portion of the bacterial solution was dispersed uniformly on nutrient 
+agar plates. 
+2.15. CS@CuNCs bacteriophage inhibition circle experiment 
+The inhibition effects of H2O2, CS@CuNCs, and both together in the 
+presence of S. aureus and E. coli (106 CFU mL−1) were investigated by the 
+filter paper sheet method. HAc-NaAc buffer (pH = 4.2) was used as a 
+diluent to obtain the diluted antimicrobial agent (final concentrations of 
+H2O2: 5 mmol L−1, CS@CuNCs: 100 μg mL−1). 
+2.16. Bacterial biofilm removal assay 
+Luria-Bertani (LB) medium containing 100 μL of bacteria (OD600 =
+0.1) was added to the small wells of a 96-well plate and incubated at 
+37 ◦C for 48 h to form a bacterial biofilm. To ensure the formation of 
+bacterial biofilm at the bottom of each well, the medium was carefully 
+removed from each well and the bacteria adhering to each well were 
+washed lightly twice with sterile PBS buffer solution (pH = 7.4, 1 × ). 
+Then, S. aureus and E. coli biofilms were randomly divided into four 
+groups: control group (HAc-NaAc buffer), only CS@CuNCs group (100 
+μg mL−1), only H2O2 group (5 mmol L−1), and CS@CuNCs + H2O2 
+group, and incubated at 37 ◦C for 2 h. In this case, all samples were 
+further incubated in an oven at 60 ◦C for another 1 h to fix the biofilm. 
+Afterward, 200 μL of PBS buffer solution (pH = 7.4, 1 × ) containing CV 
+(0.1 mg mL−1) was added to each well and further incubated in the dark 
+for 30 min. After incubation, the PBS buffer solution (pH = 7.4, 1 × ) was 
+carefully removed from each well in turn, and the 96-well plates were 
+then lightly washed with sterile PBS buffer solution (pH = 7.4, 1 × ) 
+three times. Finally, the 96-well plates were allowed to dry naturally at 
+room temperature, and 200 μL of 33% (v/v) ethanol solution was added 
+to each well. The biomass of the bacterial biofilm could be estimated by 
+measuring the absorbance of the liquid in each well at 590 nm by a 
+microplate reader. 
+2.17. Hemolysis test 
+1 mL of rat blood was dispersed in 0.9% NaCl solution, centrifuged 
+(13000 rpm, 5 min) to separate red blood cells (RBCs), and washed with 
+0.9% NaCl to a colorless supernatant (3000 rpm, 5 min). The RBCs were 
+Fig. 3. (a) Binding energy curves for 21 sub-structural outputs (insets were structural diagrams of the composite with the highest, lowest, and random points of 
+energy). (b) Schematic diagram of the adsorption of H2O and Cys on CuNCs. (c) Probability plots of H2O and Cys adsorption on CuNCs. (d) Adsorption of Cys alone on 
+CuNCs. (e) Adsorption of Cys on CuNCs in an aqueous environment and (f) localized magnification of the image. 
+N. Gao et al.                                                                                                                                                                                                                                     
+
+Food Hydrocolloids 154 (2024) 110144
+6
+then diluted with 0.9% NaCl to a concentration of 4%. 500 μL of 
+different concentrations of material CS@CuNCs (0, 2, 4, 8, 16, 32, 64, 
+128 μg mL−1) were co-incubated with RBCs at 37 ◦C for 3 h. The 0.9% 
+NaCl-treated group served as a negative control group and the purified 
+water-treated group served as a positive control group. After incubation, 
+the supernatant was centrifuged at 13000 rpm for 5 min. The OD value 
+of the supernatant was measured at 545 nm using a multifunctional 
+enzyme marker. The hemolysis rate was calculated by equation (3): 
+Hemolysis ratio (%) = ODsample −ODnegative
+ODpositive −ODnegative
+× 100%
+(3)  
+where OD are the absorbance values at 545 nm for different groups. 
+2.18. Preparation and freshness preservation properties of CS@CuNCs 
+cling wrap 
+10 mL of 1% CS@CuNCs and 10 mL of 3% polyvinyl alcohol (PVA) 
+were mixed and 0.75% glycerol was added as a plasticizer. The mixture 
+was homogenized and placed in a Petri dish with a diameter of 90 mm at 
+40 ◦C for 24 h. And the CS@CuNCs cling wrap was obtained by peeling 
+slowly. 
+The higher water vapor barrier of cling wrap can lead to a higher 
+humidity atmosphere in the inner packaging, which promotes the 
+growth and reproduction of bacteria, so the water vapor permeability 
+(WVP) of the cling wrap is an essential property. The WVP of PE and 
+CS@CuNCs cling wrap were compared: firstly, 4 g of anhydrous calcium 
+Fig. 4. (a) Schematic diagram of enzymatic activity tests based on the colorimetric sensor. The POD-like catalytic activity of CS@CuNCs on ABTS (b), TMB (c), and 
+OPD (d), respectively. Michaelis-Menten curves of CS@CuNCs with H2O2 (e) and TMB (f) as substrates. The Lineweaver-Burk double-reciprocal plot of CS@CuNCs 
+with TMB (g) and H2O2 (h) as substrates. The effect of absorbance at 652 nm with pH (i) and temperature (j). 
+N. Gao et al.                                                                                                                                                                                                                                     
+
+Food Hydrocolloids 154 (2024) 110144
+7
+chloride was placed in a weighing bottle, sealed with cling wrap and 
+subsequently placed at 75% relative humidity and room temperature for 
+48 h (Xie et al., 2024). The WVP was calculated by equation (4)： 
+WVP = (△m) × L
+A × t × △P
+(4)  
+where WVP (g⋅Pa−1 h−1 m−1) is the water vapor permeability, Δm (g) is 
+the mass change of the bottle, L (m) is the thickness of the cling wrap, A 
+(m2) is the effective cling wraps area, t (h) is the measurement time, and 
+ΔP (Pa) is the difference in water vapor pressure between the sides of the 
+cling wrap. 
+Subsequently, the freshness preservation properties of PE and 
+CS@CuNCs cling wrap were investigated. Grapes and PE cling wrap 
+were purchased from local supermarkets. The grapes were categorized 
+into the following three groups to examine the film’s ability to preserve 
+freshness: (1) without any cling wrap, (2) commercially available PE 
+cling wrap, and (3) CS@CuNCs cling wrap. The grapes in the above three 
+groups were placed in a ventilated cool place (room temperature) and 
+the appearance was observed. 
+3. Results and discussion 
+3.1. Synthesis and characterization of CS@CuNCs and CS@CuNCs 
+membranes 
+CuNCs were synthesized by a template-assisted method with Cys as 
+the reducing and stabilizing agent (Fig. 1a). First, Cu2+ combines with 
+–SH on Cys in the form of a Cu–S bond, and then Cys reduces Cu (II) to 
+Cu (0) under alkaline conditions to form CuNCs. Due to the negative 
+charge brought to the surface of CuNCs by Cys, the positively charged CS 
+was combined with it to form the CS@CuNCs composite. Fig. 1b indi­
+cated the TEM image of CuNCs, from which it could be observed that the 
+CuNCs had a round granular shape, uniform size, and good dispersion. 
+The illustration showed that the particle size of CuNCs was concentrated 
+in the range of 4~7 nm. The TEM characterization (Fig. 1c) showed that 
+CS@CuNCs were spherical particles. In addition, the results determined 
+by laser particle sizer (Table S1) indicated that the particle sizes of 
+CS@CuNCs were mostly distributed in the range of 70~120 nm. Zeta 
+potentials were measured respectively to preliminarily confirm the 
+surface functionalization. Fig. 1d showed that CuNCs had a negative zeta 
+potential of −34.9 mV, CS had a positive zeta potential of 24.7 mV, and 
+CS@CuNCs had a positive zeta potential of 17.4 mV, indicating that 
+positively charged CS was functionalized on CuNCs. The chemical 
+valence states on the surface of Cys-CuNCs were investigated by the XPS 
+technique. It could be seen from Fig. 1e that Cu had a peak at 932.2 eV 
+and 952.5 eV, corresponding to the binding energy of 2p3/2 and 2p1/2 
+electrons of Cu (0), respectively. And no significant peak was observed 
+at 942 eV, indicating the absence of Cu (II). The XRD pattern of CuNCs 
+was shown in Fig. 1f. After modification with CS, the peak of CS located 
+at 11.54◦showed up and the peaks of 34.4◦and 41.4◦of CuNCs dis­
+appeared (Chae, Shin, & Shin, 2018). The FT-IR spectra of CS, CuNCs, 
+and CS@CuNCs nanocomposites were shown in Fig. 1g. The character­
+istic peak of Cys could be labeled as a weak stretching vibrational peak 
+at 2550 cm−1 (v-SH). The FT-IR spectra of CuNCs were roughly similar to 
+those of Cys, indicating that the surface of CuNCs contained functional 
+groups of Cys, but no weak stretching vibrational peak of –SH was 
+observed, which indicated that a Cu–S bond had formed between –SH in 
+Cys and Cu (II), further suggesting the successful synthesis of 
+Cys-CuNCs. The C––O stretching vibration at 1650 cm−1 and C–O 
+stretching vibration at 1078 cm−1 were retained in the spectra of 
+CS@CuNCs, along with the absence of the peak of –SH of Cys, con­
+firming the effective binding of CS and CuNCs. 
+CS@CuNCs membranes were obtained by volatilizing CS@CuNCs 
+with acetic acid (HAc). The enzyme activity and membrane morphology 
+were used as indicators to obtain the optimal concentration of 30 mg 
+mL−1 for the prepared membranes (Fig. S3). The microscopic 
+morphology of CS@CuNCs was precisely measured by AFM. As shown in 
+Fig. 2a, the surface of the membrane was relatively flat, with an average 
+roughness Ra of 1.51 nm and its root mean square roughness Rq of 1.91 
+nm. During the drying process of CS@CuNCs film, with the evaporation 
+of the solvent, the more extended molecular chains of CS in the solution 
+state were continuously curled due to desolvation, and the intermolec­
+ular chain entanglement or bonding tended to be tightened, as shown in 
+Fig. 2b and c. The Energy Dispersive X-Ray Spectroscopy (EDX) results 
+shown in Fig. S4 also indicated the deposition of CuNCs on CS mem­
+branes and agreed with the results obtained from the spectral analyses. 
+3.2. Investigation of the binding mechanism of Cys with CuNCs 
+The optimized Cys was placed in the middle position directly above 
+the CuNCs so that it would not detach from the surface of CuNCs during 
+the molecular dynamics’ simulation (Fig. S5a). The optimized composite 
+structure of Cys and CuNCs was shown in Fig. S5b, the Cys molecules 
+were located in planes parallel to the CuNCs surfaces and were stably 
+bonded together by non-bonding interactions. The mean binding energy 
+was calculated to be −18.67 kcal mol−1. The binding energies calculated 
+at different outputs were shown in Fig. 3a, and the inset showed the 
+schematic structure at the lowest, highest, and moderate energy. It could 
+be seen that at the lowest energy, the S atom of Cys was close to the 
+Fig. 5. (a) Absorbance changes at 652 nm versus H2O2. (b) Selectivity of CS@CuNCs for the detection of H2O2.  
+N. Gao et al.                                                                                                                                                                                                                                     
+
+Food Hydrocolloids 154 (2024) 110144
+8
+surface of CuNCs and stably bound together relying on non-bonding 
+interactions. Subsequently, a vacuum box with a thickness of 15 con­
+taining 20 H2O molecules, 20 Cys molecules, and 344 Cu was built and 
+adsorption calculation was carried out using the Adsorption Locator 
+module, Fig. 3b demonstrated the adsorption of Cys and H2O on the 
+CuNCs surface, and Fig. 3c was represented as the adsorption probability 
+on the surface of CuNCs (green color represented a higher adsorption 
+probability). To investigate the adsorption sites of S atoms on the CuNCs 
+surface such as top site adsorption, bridge site adsorption, or hollow site 
+adsorption (Fig. S6), three adsorption models were constructed for en­
+ergy calculations (Fig. S7), and the energies of the three models were as 
+follows: top site: 4.98 × 106 kcal mol−1; bridge site: 1.70 × 103 kcal 
+mol−1; pore site: −9.69 × 102 kcal mol−1, and in combination with 
+Fig. 3d–f, it could be found that the S atom was indeed in the hollow sites 
+of CuNCs. Therefore, a two-step mechanism was proposed, where first 
+Cys released S–H followed by surface adsorption with CuNCs. This 
+suggested that this process could be considered a physical process of 
+interaction between the sulfur lone pair electrons and the metal sub­
+strate. Chemical binding then proceeded: the S–H cleaved to form S–Cu 
+covalent bonds. Therefore, the existence of a weakly bound molecular 
+adsorption state as a precursor to the cleavage reaction is well- 
+documented, with the binding energy of Cys at the surface being 
+about −18.67 kcal mol−1. 
+3.3. Catalytic properties and steady-state kinetic analysis of CS@CuNCs 
+The POD-like activity of the synthesized nanozymes was detected 
+(Fig. 4a). And the results showed that both CuNCs and CS@CuNCs could 
+Fig. 6. The evaluation of bacterial viability from the plate culture test showed that the bacterial viability was 0% (a) and the bacterial viability was 100% (b). 
+Colorimetric linearity of CS@CuNCs (c) and CS@CuNCs membranes (d) for S. aureus with different viability. Colorimetric linearity of CS@CuNCs (e) and CS@CuNCs 
+membranes (f) for mixed bacteria with different viability. The color response (g) and absorbance (h) of sterile water and the real contaminated water samples 
+including drinking water and tap water. 
+N. Gao et al.                                                                                                                                                                                                                                     
+
+Food Hydrocolloids 154 (2024) 110144
+9
+catalyze the oxidative color development of 3,3′,5,5′-tetramethylbenzi­
+dine (TMB) in the presence of H2O2, and the activity of CS@CuNCs was 
+significantly enhanced compared to that of CuNCs (Fig. S8). The ability 
+of different concentrations of CS to enhance the POD-like activity of 
+CuNCs was examined, and as shown in Fig. S9, the enzymatic activity of 
+the composite increased significantly with the elevated CS concentra­
+tion. However, since higher CS concentration led to a more viscous so­
+lution, CS solution of 30 mg mL−1 was selected to prepare CS@CuNCs 
+composite. The optimal color development temperature and pH for 
+CS@CuNCs were then experimentally demonstrated to be 50 ◦C and 3.0 
+(Fig. 4i and j). However, due to the consideration of bacterial survival 
+under harsh conditions, experiments involving bacteria were performed 
+at 37 ◦C and pH = 4.2. Additionally, TMB, o-phenylenediamine (OPD), 
+and 2,2′-Biamine-bis (3-ethylbenzothiazoline-6-sulfonic acid) dia­
+mmonium salt (ABTS) were used as chromogenic substrates to further 
+validate the POD activity of CS@CuNCs. It could be seen from Fig. 4b–d 
+that CS@CuNCs could catalyze all three kinds of substrates in the 
+presence of H2O2, showing maximum absorption at 652 nm, 450 nm, 
+and 420 nm, respectively. 
+Fig. 4e–h revealed the steady-state kinetic studies of CS@CuNCs 
+under optimal conditions. The oxidation reaction catalyzed by 
+CS@CuNCs follows Michaelis-Menten’s behavior. The comparison of Km 
+and Vmax of CS@CuNCs and other nanozymes was listed in Table S2. 
+Generally, the lower Km values indicated a higher affinity between the 
+nanozyme and the substrate. As shown in Table S1, with H2O2 and TMB 
+as substrates, the Km values of CS@CuNCs were much lower than HRP 
+for H2O2 and slightly higher than HRP for TMB, which might be 
+attributed to the poor binding of electropositive nano-enzymes to posi­
+tively charged TMB. The Km values for H2O2 were lower than that of 
+other copper-based nanozymes or MNCs, indicating that the composite 
+had excellent activity and affinity. 
+Meanwhile, the stability of CS@CuNCs was investigated. The 
+experimental results were shown in Fig. S10. The catalytic activities of 
+three batches of CS@CuNCs placed at room temperature for 30 days 
+were investigated periodically, and the experimental results showed that 
+CS@CuNCs had excellent stability and their catalytic activities were still 
+above 90% within 30 days placed at room temperature. 
+3.4. Colorimetric detection of H2O2 
+A linear relationship was established between H2O2 concentration 
+and absorbance at 652 nm, and the result was shown in Fig. 5a. The 
+linear regression equation for H2O2 was y = 0.3824x+0.0063, with an 
+R2 of 0.9995. The limit of detection (LOD) can reach 30 μM, which was 
+determined by the equation LOD = 3σ/k, where σ is the standard de­
+viation of the control groups and k is the slope of the calibration graph. 
+Some common ions (Na+, K+, NH4
++, Ca2+, Mg2+, Mn2+, Cu2+), amino 
+acids (His, Gly, Cys), sugars (mannose, lactose, sucrose, fructose, 
+galactose, maltose), and biomarkers (DA, AA, GSH) were chosen for 
+selective examination. The results showed that the 10-fold concentra­
+tion of interferents did not affect the detection of H2O2 (Fig. 5b). The 
+above results indicated that the colorimetric method based on the 
+simulated enzymatic activity of CS@CuNCs could achieve sensitive 
+detection of H2O2. 
+3.5. Colorimetric detection of bacterial viability 
+The performance of the proposed assay was verified with different 
+viabilities of S. aureus (0%, 20%, 40%, 60%, 80%, and 100%). As shown 
+in Fig. 6a and b, the plates with the regular culture of bacteria were full 
+of colonies while the boiled one had no colonies, indicating that the 
+bacteria boiled in boiling water for 30 min were completely inactivated 
+(0%), while the viability of the normal culture of bacteria was recorded 
+as 100%. Samples with viability of 0, 20, 40, 60, 80, and 100% were 
+tested and absorbances were measured at 652 nm using a microplate 
+reader, and the results were shown in Fig. 6c. It could be seen that the 
+absorbance of the solution gradually decreased with the increase of 
+colony viability and showed a good linear relationship (R2 = 0.9811). 
+Based on the same principle, the dried CS@CuNCs membranes were 
+used to perform the assay, and it could be found that the activity was not 
+lost after the membrane formation treatment, and the weak change in 
+absorbance could be caused by the different concentrations of the pre­
+pared membranes (Fig. 6d). In Table 1, the current commonly reported 
+methods for monitoring bacterial viability are summarized. 
+Since a variety of bacteria exist in nature, 108 CFU mL−1 E. coli, 
+S. aureus, E. faecalis, and B. subtilis were chosen as mixed bacterial 
+models. These four bacteria were prepared by the above method with 
+the viability of 0, 50, and 100% of bacterial samples respectively, and 
+mixed at a certain volume for detection. The assay results were shown in 
+Fig. 6e and f. It could be seen that the color change and absorbance 
+values were consistent with the results of S. aureus, which proved the 
+feasibility of the method for the detection of mixed bacterial species in 
+nature. 
+To test the ability to detect the real samples, drinking water and tap 
+water were selected as real samples, and the centrifugally washed 
+S. aureus was added to tap water, drinking water, and sterile water 
+(control group) to make the final concentration of 108 CFU mL−1. 
+Samples with the viability of 0, 50, and 100% were prepared according 
+to the method described previously, respectively. The results of the 
+experiment were shown in Fig. 6g and h. The color development results 
+of drinking water and tap water were almost the same as those of the 
+sterile water group, indicating that the other components in drinking 
+water and tap water did not interfere with the experiment. 
+Table 1 
+Comparison of common bacterial viability monitoring methods.  
+Detection 
+methods 
+Objective 
+Time 
+Requirements 
+References 
+Viability PCR 
+technique 
+Distinguish 
+between live 
+and dead 
+bacteria. 
+<1 h 
+Specific DNA or 
+RNA sequences 
+are required. 
+Chen et al. 
+(2022) 
+Fluorescence 
+color method 
+Live and 
+dead bacteria 
+counts. 
+– 
+Dark, dye, and 
+large instruments 
+such as 
+fluorescence 
+microscopes 
+Boulos, 
+Prevost, 
+Barbeau, 
+Coallier, and 
+Desjardins 
+(1999) 
+Colorimetric 
+method 
+(double 
+enzyme 
+cascade) 
+Monitoring 
+bacterial 
+viability. 
+20 min 
+Natural enzymes 
+are Unstable and 
+solutions need to 
+be prepared on 
+the spot. The 
+viability of 
+bacteria at 109 
+CFU mL−1 was 
+monitored. 
+Sun et al. 
+(2020) 
+Colorimetric 
+method 
+(localized 
+surface 
+plasmon 
+resonance) 
+Monitoring 
+bacterial 
+viability. 
+15~120 
+min 
+Gold 
+nanoparticles are 
+highly 
+susceptible to 
+aggregation in 
+storage. Different 
+bacteria have 
+different color 
+change times. 
+Kinoshita, 
+Ishiki, 
+Nguyen, 
+Shiigi, and 
+Nagaoka 
+(2018) 
+Colorimetric 
+method 
+Monitoring 
+bacterial 
+viability. 
+30 min 
+CS@CuNCs 
+membranes are 
+more stable, 
+portable, and 
+have higher 
+enzyme-like 
+activity than 
+HRP. The 
+viability of 
+bacteria at 108 
+CFU mL−1 was 
+monitored. 
+This work  
+N. Gao et al.                                                                                                                                                                                                                                     
+
+Food Hydrocolloids 154 (2024) 110144
+10
+3.6. Antibacterial activity of CS@CuNCs 
+H2O2 is a ROS species commonly employed for bacterial clearance in 
+clinical settings. The antimicrobial performance of different concentra­
+tions of H2O2 was first evaluated, and the results showed that even 10 
+mmoL⋅L−1 H2O2 could not achieve excellent antimicrobial performance 
+(Fig. S11). However, high concentrations of H2O2 not only cause 
+gastrointestinal disorders, but also lead to cell apoptosis and increases 
+the risk of cancers. Therefore, it will be a more appropriate and effective 
+approach to convert low-level H2O2 into ⋅OH. The antibacterial ability of 
+CS@CuNCs against E. coli or S. aureus was tested by plate counting 
+experiment. CS@CuNCs could catalyze H2O2 to produce ⋅OH with high 
+oxidation capacity, and then kill the bacteria (Fig. 7a). As shown in 
+Fig. 7b and c, compared with the control group, both low concentrations 
+of H2O2 and CS@CuNCs could slightly reduce the bacterial activity, and 
+only sporadic colonies grew on the plate with CS@CuNCs + H2O2. In­
+hibition circle experiments were conducted to demonstrate the inhibi­
+tion effect of CS@CuNCs, and the results were shown in Fig. 7d. The 
+results demonstrated that the inhibition activity of CS@CuNCs + H2O2 
+was much greater than that of the single component. These results 
+remained consistent with the proposed theory. In order to verify the 
+proposed theory, the experimental results of the TA probe showed that 
+the prepared CS@CuNCs composite could generate ⋅OH, which in turn 
+leads to a reaction to obtain 2-hydroxyterephthalic acid (HTA) with the 
+maximum fluorescence at 420 nm (Fig. 7e). In addition, the Electron 
+paramagnetic resonance (EPR, EMXplus-6/1, Bruker, Germany) tech­
+nique was used to capture the radicals in the reaction system and further 
+elaborate the catalytic mechanism of CS@CuNCs. Fig. 7f presented a 
+typical spectrum with a relative intensity ratio of 1:2:2:1, which indi­
+cated the presence of ⋅OH in the catalytic process. 
+Based on the proposed mechanism, the potential of CS@CuNCs 
+composite-mediated platform for biofilm eradication was also investi­
+gated, since biofilm production could severely affect bacterial antibiotic 
+resistance development and raise the potential risk of microbial flood­
+ing. The quality of biofilm was quantified using a crystalline violet (CV)- 
+based colorimetric method. As shown in Fig. 7g, the CS@CuNCs + H2O2 
+group showed the strongest biofilm disruption against E. coli and 
+S. aureus, which was consistent with the in vitro antibacterial results, 
+demonstrating the good antibacterial effect of the CS@CuNC nanozyme- 
+mediated platform. 
+The hemolysis test showed that the nanomaterial was biocompatible. 
+According to the calculated hemolysis rates, the hemolysis rates of 
+CS@CuNCs with different concentrations were 0.29%, 0.47%, 0.99%, 
+0.53%, 0.58%, 0.87%, 2.54% and 2.55%, which were far lower than 5%, 
+indicating that the antibacterial agent had good blood compatibility 
+(Fig. 7h). 
+3.7. Freshness preservation properties of CS@CuNCs cling wrap 
+CS@CuNCs, PVA and glycerin are mixed and dried to obtain 
+CS@CuNCs cling film (Fig. 8a). The freshness preservation performance 
+of CS@CuNCs cling wrap was compared with that of commercially 
+available PE cling wrap. Firstly, the weight change of the fruits is an 
+important indicator of the response to water loss (Guo et al., 2024). Due 
+Fig. 7. (a) Schematic diagram of antibacterial mechanism of CS@CuNCs. In vitro antibacterial performance of CS@CuNCs for S. aureus (b) and E. coli (c). (d) In­
+hibition zones of control, H2O2, CS@CuNCs, and CS@CuNCs + H2O2 against S. aureus and E. coli. (e) Fluorescence spectra of 2-HTA. (f) EPR spectra of the ⋅OH 
+formed by CS@CuNCs in the presence of H2O2. (g) CV staining and quantifying of biofilms of E. coli and S. aureus. (h) Hemolysis ratios of the CS@CuNCs with 
+different concentrations. 
+N. Gao et al.                                                                                                                                                                                                                                     
+
+Food Hydrocolloids 154 (2024) 110144
+11
+to the higher WVP (Fig. S12) compared to that of the PE cling wrap 
+group, it is inferred that the weight loss rate of the CS@CuNCs cling 
+wrap group would be slightly higher than that of the PE cling wrap 
+group and lower than that of the no cling wrap group. It can also be 
+observed through Fig. 8b that the difference between the first and the 
+fifth day of the no cling wrap group was the largest, reflecting the rapid 
+loss of water from the grapes due to their direct exposure to air. Sec­
+ondly, the bacteria produced by the fruit during storage is also a very 
+significant indicator. The production of bacteria is properly assessed by 
+the naked eye through the degree of rotting of the grapes. Grapes in the 
+no cling wrap group showed some degree of rotting on the first day (red 
+arrow) and were accompanied by white rotting on the third day (yellow 
+arrow), which implied that a large number of harmful microorganisms 
+had already been generated. In the PE cling wrap group, the grapes 
+developed white fungus caused by the moist environment at the roots on 
+the second day, and it got worse on the third and fourth days, which 
+meant that large amounts of bacteria or even toxins were already present 
+in the grapes. In the CS@CuNCs cling wrap group, the grapes were only 
+somewhat dried out (blue arrows) and did not rot or grow visible bac­
+teria or fungus until the fifth day. On the one hand, the removal of 
+grapes from the rootstock can easily lead to pulp exposure and high 
+localized humidity. CS@CuNCs cling wrap possesses higher perme­
+ability than PE cling wrap due to the unique hydrophilic groups, which 
+prevents higher humidity in the interior of the package and avoids the 
+growth and excessive reproduction of bacteria. On the other hand, 
+although commercially available PE cling wrap could insulate the grapes 
+from external bacteria, when the grapes deteriorated internally, the PE 
+cling wrap was unable to inhibit the growth of colonies, but instead 
+accelerated the decay of the grapes. However, CS@CuNCs cling wrap 
+could inhibit bacterial growth both internally and externally, and still 
+provide a favorable preservation effect even in the absence of H2O2. In 
+summary, CS@CuNCs can effectively maintain the appropriate condi­
+tion and color of grapes during storage, and have an inhibitory effect on 
+common bacteria in fruit storage and transportation, which broadens 
+the application in the field of food safety. 
+4. Conclusions 
+In summary, CuNCs prepared with Cys as a stabilizer had good 
+dispersion in aqueous media, and CS as a stabilizing and protective agent 
+greatly improved their enzyme-like activity. GOx was used in combi­
+nation with the composite for colorimetric detection of bacterial 
+Fig. 8. (a) Preparation and application of CS@CuNCs cling film. (b) Appearance graphs of grape preservation by the no cling wrap group, PE cling wrap group and 
+CS@CuNCs cling wrap group. 
+N. Gao et al.                                                                                                                                                                                                                                     
+
+Food Hydrocolloids 154 (2024) 110144
+12
+viability accompanied by significant visual changes. The feasibility of 
+the analytical method for application in real samples was confirmed by 
+the detection of bacterial viability in drinking water and tap water. It 
+was also demonstrated that the composite was highly biocompatible 
+with excellent broad-spectrum antibacterial ability against Gram- 
+positive and Gram-negative bacteria, which enabled the preservation 
+and storage of fruits. The multifunctional nanocomposite would be a 
+promising candidate for bacterial elimination and detection in applica­
+tions such as food packaging and biomedical engineering. 
+CRediT authorship contribution statement 
+Nan Gao: Conceptualization, Visualization, Writing – original draft. 
+Xuanxuan Wang: Writing – review & editing. Jingjing Tian: Writing – 
+review & editing. Yu Wang: Writing – review & editing. Guixia Ling: 
+Funding acquisition, Project administration, Supervision. Peng Zhang: 
+Funding acquisition, Project administration, Supervision. 
+Declaration of competing interest 
+The authors declare that we have no conflicts of interest to this work. 
+We declare that we do not have any commercial or associative interest 
+that represents a conflict of interest in connection with the work 
+submitted. 
+Data availability 
+Data will be made available on request. 
+Appendix A. Supplementary data 
+Supplementary data to this article can be found online at https://doi. 
+org/10.1016/j.foodhyd.2024.110144. 
+References 
+Barreto, J. C., Smith, G. S., Strobel, N. H., McQuillin, P. A., & Miller, T. A. (1995). 
+Terephthalic acid: A dosimeter for the detection of hydroxyl radicals in vitro. Life 
+Sciences, 56, 189–196. https://doi.org/10.1016/0024-3205(94)00925-2 
+Bera, D., Mukhopadhyay, A., Nonappa, N., & Goswami, N. (2023). In situ depletion- 
+guided engineering of nanoshell-like gold nanocluster assemblies with enhanced 
+peroxidase-like nanozyme activity. Journal of Physical Chemistry Letters, 14, 
+7299–7305. https://doi.org/10.1021/acs.jpclett.3c01837 
+Boulos, L., Prevost, M., Barbeau, B., Coallier, J., & Desjardins, R. (1999). LIVE/DEAD 
+BacLight : Application of a new rapid staining method for direct enumeration of 
+viable and total bacteria in drinking water. Journal of Microbiological Methods, 37, 
+77–86. https://doi.org/10.1016/s0167-7012(99)00048-2 
+Chae, K. S., Shin, C. S., & Shin, W. S. (2018). Characteristics of cricket (Gryllus 
+bimaculatus) chitosan and chitosan-based nanoparticles. Food Science and 
+Biotechnology, 27, 631–639. https://doi.org/10.1007/s10068-018-0314-4 
+Chen, M., Lan, X., Zhu, L., Ru, P., Xu, W., & Liu, H. (2022). PCR mediated nucleic acid 
+molecular recognition technology for detection of viable and dead foodborne 
+pathogens. Foods, 11. https://doi.org/10.3390/foods11172675. Article 2675. 
+Chen, S., Li, Z., Huang, Z., & Jia, Q. (2021). Investigation of efficient synergistic and 
+protective effects of chitosan on copper nanoclusters: Construction of highly active 
+and stable nanozyme for colorimetric and fluorometric dual-signal biosensing. 
+Sensors and Actuators B-Chemical, 332, Article 129522. https://doi.org/10.1016/j. 
+snb.2021.129522 
+Chorti, P., Kazi, A. P., Wiederoder, M., & Christodouleas, D. C. (2021). High-throughput 
+flow-through direct immunoassays for targeted bacteria detection. Analytical 
+Chemistry, 93, 14586–14592. https://doi.org/10.1021/acs.analchem.1c02867 
+Collado-Gonzalez, M., Montalban, M. G., Pena-Garcia, J., Perez-Sanchez, H., Villora, G., 
+& Diaz Banos, F. G. (2017). Chitosan as stabilizing agent for negatively charged 
+nanoparticles. Carbohydrate Polymers, 161, 63–70. https://doi.org/10.1016/j. 
+carbpol.2016.12.043 
+Cui, M., Song, G., Wang, C., & Song, Q. (2015). Synthesis of cysteine-functionalized 
+water-soluble luminescent copper nanoclusters and their application to the 
+determination of chromium(VI). Microchimica Acta, 182, 1371–1377. https://doi. 
+org/10.1007/s00604-015-1458-z 
+Danai, L., Rolband, L. A., Perdomo, V. A., Skelly, E., Kim, T., & Afonin, K. A. (2023). 
+Optical, structural and antibacterial properties of silver nanoparticles and DNA- 
+templated silver nanoclusters. Nanomedicine, 18, 769–782. https://doi.org/10.2217/ 
+nnm-2023-0082 
+Dickson, R. P., Singer, B. H., Newstead, M. W., Falkowski, N. R., Erb-Downward, J. R., 
+Standiford, T. J., et al. (2016). Enrichment of the lung microbiome with gut bacteria 
+in sepsis and the acute respiratory distress syndrome. Nature Microbiology, 1, Article 
+16113. https://doi.org/10.1038/nmicrobiol.2016.113 
+D¨onmez, S., Needs, S. H., Osborn, H. M. I., Reis, N. M., & Edwards, A. D. (2022). Label- 
+free 1D microfluidic dipstick counting of microbial colonies and bacteriophage 
+plaques. Lab on a Chip, 22, 2820–2831. https://doi.org/10.1039/d2lc00280a 
+Du, W., Li, X., Zhang, M., Ling, G., & Zhang, P. (2023). Investigation of the antibacterial 
+properties of hyaluronic acid microneedles based on chitosan and MoS(2). Journal of 
+Materials Chemistry B, 11, 7169–7181. https://doi.org/10.1039/d3tb00755c 
+Freeman, K., Mistry, H., Tsertsvadze, A., Royle, P., McCarthy, N., Taylor- 
+Phillips, S. M. R., et al. (2017). Multiplex tests to identify gastrointestinal bacteria, 
+viruses and parasites in people with suspected infectious gastroenteritis: A 
+systematic review and economic analysis. Health Technology Assessment, 21, 1. 
+https://doi.org/10.3310/hta21230 
+Gao, N., Du, W., Zhang, M., Ling, G., & Zhang, P. (2022). Chitosan-modified biochar: 
+Preparation, modifications, mechanisms and applications. International Journal of 
+Biological Macromolecules, 209, 31–49. https://doi.org/10.1016/j. 
+ijbiomac.2022.04.006 
+Gao, N., Xu, J., Li, X., Ling, G., & Zhang, P. (2023). Colorimetric sensing of biomarkers 
+based on the enzyme-mimetic activity of metal nanoclusters. Chemical Engineering 
+Journal, 465, Article 142817. https://doi.org/10.1016/j.cej.2023.142817 
+Grubb, J. A., & Dehority, B. A. (1976). Variation in colony counts of total viable 
+anaerobic rumen bacteria as influenced by media and cultural methods. Applied and 
+Environmental Microbiology, 31, 262–267. https://doi.org/10.1128/aem.31.2.262- 
+267.1976 
+Guerrant, R. L., Moore, R. A., Kirschenfeld, P. M., & Sande, M. A. (1975). Role of 
+toxigenic and invasive bacteria in acute diarrhea of childhood. New England Journal 
+of Medicine, 293, 567–572. https://doi.org/10.1056/nejm197509182931201 
+Guo, B., Liu, G., Ye, W., Xu, Z., Li, W., Zhuang, J., et al. (2024). Multifunctional carbon 
+dots reinforced gelatin-based coating film for strawberry preservation. Food 
+Hydrocolloids, 147, Article 109327. https://doi.org/10.1016/j. 
+foodhyd.2023.109327 
+Kinoshita, T., Ishiki, K., Nguyen, D. Q., Shiigi, H., & Nagaoka, T. (2018). Real-time 
+evaluation of bacterial viability using gold nanoparticles. Analytical Chemistry, 90, 
+4098–4103. https://doi.org/10.1021/acs.analchem.7b05439 
+Li, X., Du, W., Xu, W., Ling, G., & Zhang, P. (2023). Dissolving microneedles based on 
+ZnO nanoparticles and an ionic liquid as synergistic antibacterial agents. Journal of 
+Materials Chemistry B, 11, 4354–4364. https://doi.org/10.1039/d3tb00127j 
+Li, Y., & Feng, L. (2020). Progress in paper-based colorimetric sensor array. Chinese 
+Journal of Analytical Chemistry, 48, 1448–1457. https://doi.org/10.19756/j. 
+issn.0253-3820.201240 
+Li, D., Kumari, B., Makabenta, J. M., Tao, B. L., Qian, K., Mei, X. F., et al. (2020). 
+Development of coinage metal nanoclusters as antimicrobials to combat bacterial 
+infections. Journal of Materials Chemistry B, 8, 9466–9480. https://doi.org/10.1039/ 
+d0tb00549e 
+Li, T., Zhu, H., & Wu, Z. (2023). Viewing aggregation-induced emission of metal 
+nanoclusters from design strategies to applications. Nanomaterials, 13. https://doi. 
+org/10.3390/nano13030470. Article 470. 
+Munoz-Tebar, N., Perez-alvarez, J. A., Fernandez-Lopez, J., & Viuda-Martos, M. (2023). 
+Chitosan Edible films and Coatings with added bioactive compounds: Antibacterial 
+and antioxidant properties and their application to food products: A review. 
+Polymers, 15, 396. https://doi.org/10.3390/polym15020396 
+Shang, L., Dong, S., & Nienhaus, G. U. (2011). Ultra-small fluorescent metal nanoclusters: 
+Synthesis and biological applications. Nano Today, 6, 401–418. https://doi.org/ 
+10.1016/j.nantod.2011.06.004 
+Shi, J., Zhang, F., Wu, S., Guo, Z., Huang, X., Hu, X. H. M., et al. (2019). Noise-free 
+microbial colony counting method based on hyperspectral features of agar plates. 
+Food Chemistry, 274, 925–932. https://doi.org/10.1016/j.foodchem.2018.09.058 
+Sun, J., Huang, J., Warden, A. R., & Ding, X. (2020). Real-time detection of foodborne 
+bacterial viability using a colorimetric bienzyme system in food and drinking water. 
+Food Chemistry, 320, Article 126581. https://doi.org/10.1016/j. 
+foodchem.2020.126581 
+Tan, S. C. L., He, Z. J., Wang, G., Yu, Y., & Yang, L. (2023). Protein-templated metal 
+nanoclusters: Molecular-like hybrids for biosensing, diagnostics and pharmaceutics. 
+Molecules, 28. https://doi.org/10.3390/molecules28145531. Article 5531. 
+Thao Nguyen, L., Tai Duc, T., & Moon, I. I. K. (2020). A convenient colorimetric bacteria 
+detection method utilizing chitosan-coated magnetic nanoparticles. Nanomaterials, 
+10. https://doi.org/10.3390/nano10010092. Article 92. 
+Vray, B., Hoebeke, J., Saint-Guillain, M., Leloup, R., & Strosberg, A. D. (1980). A new 
+quantitative fluorimetric assay for phagocytosis of bacteria. Scandinavian Journal of 
+Immunology, 11, 147–153. https://doi.org/10.1111/j.1365-3083.1980.tb00220.x 
+Wen, J. L., Liu, J. B., Wu, J. L., & He, D. G. (2022). Rapid measurement of waterborne 
+bacterial viability based on difunctional gold nanoprobe. RSC Advances, 12, 
+1675–1681. https://doi.org/10.1039/d1ra07287k 
+Wu, P., Liu, X., Duan, Y., Pan, L., Sun, Z., Chu, H., et al. (2023). ZnPc photosensitizer- 
+loaded peony-shaped FeSe2 remotely controlled by near-infrared light for 
+antimycobacterial therapy. Acta Materia Medica, 2, 260–269. https://doi.org/ 
+10.15212/AMM-2023-0012 
+Xie, D., Liang, Y., Zheng, X., Zhu, M., Huang, G., & Lin, B. (2024). High-strength, 
+antifogging and antibacterial ZnO/carboxymethyl starch/chitosan film with unique 
+“Steel Wire Mesh” structure for strawberry preservation. International Journal of 
+Biological Macromolecules, 259, Article 129090. https://doi.org/10.1016/j. 
+ijbiomac.2023.129090 
+Xie, X., Tan, F., Xu, A., Deng, K., Zeng, Y., & Huang, H. (2019). UV-induced peroxidase- 
+like activity of gold nanoclusters for differentiating pathogenic bacteria and 
+detection of enterotoxin with colorimetric readout. Sensors and Actuators B-Chemical, 
+279, 289–297. https://doi.org/10.1016/j.snb.2018.10.019 
+N. Gao et al.                                                                                                                                                                                                                                     
+
+Food Hydrocolloids 154 (2024) 110144
+13
+Yang, S., Li, C., Zhan, H., Liu, R., Chen, W., Wang, X., et al. (2023). A label-free 
+fluorescent biosensor based on specific aptamer-templated silver nanoclusters for the 
+detection of tetracycline. Journal of Nanobiotechnology, 21. https://doi.org/10.1186/ 
+s12951-023-01785-7. Article 22. 
+Zaidi, S. A. (2021). Bacterial imprinting methods and their applications: An overview. 
+Critical Reviews in Analytical Chemistry, 51, 609–618. https://doi.org/10.1080/ 
+10408347.2020.1755822 
+Zhang, M., Xu, W., Li, X., Ling, G., & Zhang, P. (2023). Tunicate-mimetic antibacterial 
+hydrogel based on metal ion crosslinking and chitosan functionalization for wound 
+healing. International Journal of Biological Macromolecules, 244, Article 125062. 
+https://doi.org/10.1016/j.ijbiomac.2023.125062 
+N. Gao et al.

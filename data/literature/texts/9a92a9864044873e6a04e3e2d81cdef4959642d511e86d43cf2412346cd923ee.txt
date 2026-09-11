@@ -1,0 +1,1528 @@
+Advanced Materials
+www.advmat.de
+RESEARCH ARTICLE
+Self-Evolving Hydrogel Dressing Temporally Accelerates
+Infected Diabetic Wound Healing
+Chenyang Liu1
+Huichen Zhao2
+Junmin Qian1
+Mofan Xiao2
+Jinlei Wang3
+Yaping Wang2
+Xinyu Li2
+Bei Han4
+Zhuanli Bai5
+Weijun Xu1
+Aili Suo2
+1State Key Laboratory for Mechanical Behavior of Materials, Xi’an Jiaotong University, Xi’an, Shaanxi, China
+2Department of Oncology, The First Affiliated
+Hospital of Xi’an Jiaotong University, Xi’an, Shaanxi, China
+3School of Clinical Medicine, Xi’an Medical University, Xi’an, Shaanxi, China
+4School of Public
+Health, Health Science Center of Xi’an Jiaotong University, Xi’an, Shaanxi, China
+5Department of Plastic and Aesthetic Maxillofacial Surgery, The First
+Affiliated Hospital of Xi’an Jiaotong University, Xi’an, Shaanxi, China
+Correspondence: Junmin Qian (jmqian@mail.xjtu.edu.cn)
+Weijun Xu (weijun.xu@mail.xjtu.edu.cn)
+Aili Suo (ailisuo@mail.xjtu.edu.cn)
+Received: 22 November 2025
+Revised: 3 April 2026
+Accepted: 16 April 2026
+Keywords: diabetic wound | dual dynamic hyaluronic acid/poly(aspartic acid) hydrogel | Fe3N/Fe3O4 nanoheterojunction | silver nanozymes | temporal niche
+regulation
+ABSTRACT
+Diabetic wounds usually involve disorganized redox and immune homeostasis and are prone to bacterial infection, often
+leading to delayed healing and worse outcomes. However, existing therapeutic strategies cannot simultaneously achieve potent
+antibacterial action and temporal microenvironment modulation. Herein, a self-evolving hyaluronan/poly(aspartic acid) hydrogel
+dressing integrating in situ Ag+-to-Ag nanozyme conversion function and hydrolyzable Fe3N/Fe3O4 nanoheterojunction (nHJ) is
+presented to meet the intricate requirements of consecutive healing stages. At infectious inflammatory stage, nHJ-based self-
+oxygenated photodynamic and photothermal effects synergize with Ag+ to combat multidrug-resistant biofilm-forming bacteria.
+Subsequently, Ag nanozymes with superoxide dismutase/catalase-like activities continuously scavenge reactive oxygen species
+while generating oxygen, facilitating macrophage M1-to-M2 repolarization and ensuing inflammatory-to-proliferative phase
+transition. Accumulated ammonia enhances cell proliferation, migration and angiogenesis. The dressing demonstrates exceptional
+biocompatibility and bioactivity in accelerating Staphylococcus aureus-infected full-thickness cutaneous wound healing in a
+diabetic rat model, as validated by hemostatic, broad-spectrum antibacterial, antioxidative and immunomodulatory abilities,
+enhanced oxygenation and cell proliferation, and extensive collagen deposition, vascularization and re-epithelialization. RNA-seq
+results further reveal the activation of multiple pro-healing signaling axes. Consequently, this platform offers a powerful dynamic
+strategy of realizing robust antibacterial activity and active temporal niche modulation to guide the healing of infected diabetic
+wounds.
+1
+Introduction
+Diabetes mellitus affects approximately 589 million people
+globally, with about 25% of patients suffering from cutaneous
+wounds [1, 2]. Diabetic wounds, characterized by macrophage
+dysfunction, redox imbalance, and angiogenesis impairment, are
+one of the most intractable diabetic complications, posing sub-
+stantial social and economic burdens [3, 4]. Furthermore, open
+wounds are extremely susceptible to bacterial infection owing
+to their hyperglycemic microenvironment and dysregulated
+Chenyang Liu and Huichen Zhao contributed equally to this work.
+© 2026 Wiley-VCH GmbH
+Advanced Materials, 2026; 38:e23302
+https://doi.org/10.1002/adma.202523302
+1 of 22
+
+immunity, severely disturbing orchestrated healing progression:
+hemorrhage, inflammation, proliferation, and remodeling [5, 6].
+In serious cases, tissue necrosis, amputation and even death
+occur, with a 5-year mortality rate exceeding 30% [7]. Existing
+therapeutic strategies, such as offloading, debridement, and
+antiinfection, cannot achieve satisfactory efficacies because of
+blurred pathogenesis and undesired side effects [8, 9]. Besides,
+increasingly serious population aging and rising obesity rate
+are exacerbating the prevalence of diabetic wounds [10]. These
+all manifest that the effective management of infected diabetic
+wounds remains a central challenge. Consequently, developing
+synergistic intervention strategies integrating potent antibacterial
+and temporal niche-modulation functions is urgently needed.
+Diabetic wound infections frequently involve bacterial biofilms,
+and anti-bacterial therapy seems essential. Antibiotics are pre-
+ferred for combating biofilm-forming bacteria and have saved
+innumerable lives [11]. However, their actual therapeutic effi-
+cacies face the challenge of multidrug-resistant bacteria which
+make antibiotics hardly exert effects by enzymatically inactivat-
+ing antibiotics and reducing membrane permeability to impede
+the penetration of antibiotics [12, 13]. Even worse, upon biofilm
+formation, they aggravate multidrug resistance and induce per-
+sistent inflammation, often leading to therapeutic failure. This
+underscores the imminency of developing alternative antibac-
+terial tactics. Reactive oxygen species (ROS), such as singlet
+oxygen (1O2), hydroxyl radicals (⋅OH) and superoxide anion
+radicals (⋅O2
+−), which are usually generated by photodynamic,
+sonodynamic and chemodynamic reactions and nanozymes, have
+garnered special interest [14]. ROS offer unique bactericidal
+advantages, including broad-spectrum activity, multiple mecha-
+nisms and low resistance propensity, and function by irreversibly
+damaging bacterial membranes and internal biomolecules [15].
+Typically, photodynamic therapy (PDT) demonstrates reliable
+and controllable antibacterial effects [3]. However, conventional
+organic photosensitizers face challenges, such as complicated
+synthesis, single type of ROS, and declining activity. Oppositely,
+inorganic photosensitizers, especially heterojunctions and het-
+erostructures, possess prominent ROS-generating efficiency and
+stability [16]. Nevertheless, there are still concerns regarding
+biosafety and biocompatibility. Rare reports have revealed the
+great promise of metal nitride nanozymes for tumor and infection
+treatments [17, 18]. Inspired by this, we assume that biocompati-
+ble and biodegradable iron nitride (Fe3N)-based heterojunction
+is a powerful and biosafe photosensitizer that can generate
+multiple ROS to combat bacteria and simultaneously promote
+wound healing. Such a strategy has not been explored to date.
+On the other hand, the germicidal efficacy of ROS is severely
+restrained by short diffusion distance and low permeable bac-
+terial membranes. Fortunately, Ag+, the strongest antibacterial
+metallic ions, can significantly increase bacterial membrane
+permeability by directly destroying membranes [19]. This can
+not only realize unexpected germicidal effect but make bacteria
+highly susceptible to other treatments. Besides, ROS are easily
+depleted by glutathione (GSH) overexpressed in wound beds [20].
+Thus, exploiting a strategy integrating Fe3N heterojunction-based
+PDT, Ag+ and GSH depletion holds great promise in eradicating
+biofilm-forming bacteria.
+An ignored but important dilemma is that both ROS and Ag+
+are double-edged swords for infected diabetic wound healing [21].
+High levels of ROS and Ag+ exhibit favorable potent antibacterial
+activities, but they not only inevitably inflict direct damage on
+healthy mammalian cells but aggravate oxidative stress elicited
+by dysfunctional macrophages, thus potentially impairing wound
+healing [7]. Therefore, the prompt removal of ROS and Ag+
+post-antibacterial treatment is crucial to maximize therapeutic
+efficacy. However, utilizing a single system to realize the precise
+temporal control of massive ROS/Ag+ production for antibacteria
+and timely ROS/Ag+ removal for pro-healing remains extremely
+challenging. For ROS modulation, several approaches like PDT
+have achieved on-demand ROS generation. Concurrently, despite
+natural antioxidants, artificial nanozymes, and reductive gases
+have been proven to scavenge ROS [22], they cannot achieve
+on-demand ROS elimination. Hence, it is vital to integrate on-
+demand ROS generation and elimination bifunctions into a
+single system to precisely regulate the redox state in wounds.
+Recent studies demonstrate the antioxidant, proangiogenic and
+anti-inflammatory functions of Ag nanozymes with superoxide
+dismutase (SOD) and catalase (CAT) activities [23]. Furthermore,
+low levels of Ag+ may promote fibroblast proliferation and re-
+epithelialization [19]. These emphasize the necessity of timely
+Ag+-to-Ag nanozymes conversion. Based on this inspiration,
+we propose an approach to achieve in situ conversion of Ag+
+to Ag nanozymes in wounds. This strategy not only ensures
+potent antibacterial performance but reduces cytotoxicity by
+balancing ROS/Ag+ and Ag nanozymes. Another vital challenge
+for infected diabetic wound healing is persistent inflammation
+governed by M1 macrophages, which prevents the transition to
+proliferation and remodeling phases [24]. Meanwhile, bacterial
+infection frequently occurs and accordingly M1 macrophages
+oversecrete ROS (mainly ⋅O2
+−and H2O2) and inflammatory
+cytokines [25], resulting in a vicious cycle of infection and
+inflammation, thus impeding tissue-repairing M2 macrophages
+repolarization [11]. Prolonged immune imbalance has devastating
+effects on wound healing, including impaired neovascularization,
+collagen deposition and re-epithelialization as well as poor skin
+appearance. Given the decisive role of macrophages in initiating
+tissue regeneration [26], timely inducing phenotypic transition
+is essential for accelerating wound healing. Thereby, exploiting
+rational tactics that can simultaneously achieve macrophage
+reprogramming, antibacteria and antioxidation is significant.
+Infected diabetic wound healing is an exceedingly complicated
+pathophysiological process, and it frequently cannot progress
+in an orderly and timely manner. A significant interference in
+any stage will have a knock-on effect on subsequent stages,
+eventually ending with delayed healing and even non-healing.
+Moreover, diabetic wounds are typically covered with inflamma-
+tory exudates and biofilms, preventing therapeutic agents from
+reaching targeted tissues. Hence, developing well-orchestrated
+versatile therapeutic strategies adapting to the niches at distinct
+healing stages is desirable yet challenging. Hydrogels, espe-
+cially dynamic hydrogels, are prevalent in managing wounds
+because of their outstanding advantages [27, 28], such as exudate
+absorption, shape adaptability, and biocompatibility. Regrettably,
+pristine hydrogels are largely used for passive wound protection
+and moisturizing and usually lack biofunctionalities required
+for wound healing, including antibacteria, antioxidation, anti-
+inflammation, and hypoxia alleviation. Therefore, it is essential to
+integrate hydrogels with biofunctional agents. However, existing
+strategies primarily focus on either incorporation of individual
+2 of 22
+Advanced Materials, 2026
+ 15214095, 2026, 30, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202523302 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 1
+Schematic illustration of FAHP hydrogel formation and its mechanisms for promoting infected diabetic wound healing.
+functions or disordered copresence of multiple functions [29].
+They have only limited success owing to their inability to tempo-
+rally adapt to dynamic wound healing process [30], highlighting
+the indispensability of time-phased comprehensive therapeutic
+interventions of wounds when multiple functions are applied.
+Besides, compared with delivery of premade nanozymes, in situ-
+forming nanozymes inside hydrogels are more desirable owing
+to the circumvention of complex preparation and dispersion
+processes [31]. Despite great progress in passively accommodat-
+ing wound microenvironments, intelligent hydrogels that can
+actively and temporally guide the niches across consecutive
+healing stages have been scarcely explored.
+Herein, we present a self-evolving hydrogel dressing as a
+bactericidal and temporal niche-modulating platform for syn-
+ergistic infectious diabetic wound therapy (Figure 1). This
+dressing (FAHP) is constructed from hydrazided hyaluronic acid
+(HHA), aldehyde poly(aspartic acid) (APA), Ag+, and hydrolyz-
+able Fe3N/Fe3O4 nanoheterojunction (FNO nHJ) photosensitizer
+through synchronous coordination/Schiff base dual dynamic
+crosslinking process. The “self-evolving” nature enables the
+FAHP hydrogel to dynamically adapt its therapeutic functions to
+the changing needs of wound microenvironment across different
+healing stages. Specifically, at the initial stage, rapid hemostasis
+may be achieved through the combined action of hydrogel’s liquid
+absorption and Ag+/aldehyde groups’ procoagulant effects, as
+validated using rat liver injury model. In the case of bacterial
+infection, the nHJ realizes on-demand self-oxygenated PDT (1O2
+and ⋅O2
+−) and hyperthermia, which synergize with Ag+ to erad-
+icate drug-resistant bacteria and disrupt biofilms. Additionally,
+the hydrogel’s disulfide bonds deplete GSH, further enhancing
+antibacterial ability. Notably, hyaluronic acid/poly(aspartic acid)
+hydrogel mediates the gradual reduction of Ag+ to Ag nanozymes
+in situ [32]. In the late stage of inflammation, cumulative
+Ag nanozymes eliminate various ROS and produce oxygen via
+cascade reactions, especially with the assistance of hyperther-
+mia, thus alleviating oxidative stress and hypoxia. Meanwhile,
+ammonia generated not only stimulates endothelial angio-
+genesis and fibroblast/keratinocyte proliferation but impedes
+Ag nanozymes to release Ag+ by neutralizing weakly acidic
+wound niche [33–35]. Restored redox homeostasis together with
+iron oxide promotes macrophage M2 polarization [36]. These
+Advanced Materials, 2026
+3 of 22
+ 15214095, 2026, 30, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202523302 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+compounding effects forward the establishment of favorable
+pro-healing microenvironment and smooth inflammation-to-
+proliferation phase transition. Impressively, our dressing sub-
+stantially accelerates infectious full-thickness cutaneous wound
+healing in a methicillin-resistant Staphylococcus aureus (MRSA)-
+infected diabetic rat model through orchestrated temporal regu-
+lation of dressing functions. Transcriptomic sequencing analysis
+reveals the multiple pro-healing mechanisms. Overall, our novel
+concept of active and temporal comprehensive therapeutic strat-
+egy proposes a new horizon for integrated solution to the chal-
+lenges of hemorrhage, oxidative stress, bacterial infection, and
+immune dysfunction in infected diabetic wounds, distinguished
+from existing strategies that mainly regulate single healing stage.
+2
+Results and Discussion
+2.1
+Synthesis and Characterization of FNO nHJ
+Heterojunction shows great promise in biomedical applications
+owing to its exceptional catalytic activity and stability. It is
+noteworthy that certain metal nitrides can undergo hydrolysis to
+produce metal nitride/metal oxide heterojunctions while releas-
+ing ammonia. Given the potential of Fe3N and iron(II, III) oxide
+(Fe3O4) in infected wound healing, herein we present a facile
+saline-assisted hydrolysis method to synthesize FNO nHJ.
+Transmission electron microscopy (TEM) observation indicates
+that both raw Fe3N and as-synthesized Fe3N/Fe3O4 nanoparticles
+display noticeable agglomeration (Figure S1). Moreover, they
+exhibit superparamagnetism, with Fe3N/Fe3O4 nanoparticles
+having a higher saturation magnetization than Fe3N nanoparti-
+cles (Figure S2). This may be related to the enhanced nanoparticle
+agglomeration. To resolve this problem, by means of an ultrasonic
+probe method, uniformly dispersed spherical FNO nHJ particles
+were obtained with an average diameter of 79.7 ± 30.0 nm
+(Figure 2A,B; Figure S3a), which is in close agreement with the
+result determined by dynamic light scattering (Figure S3b). High-
+resolution TEM (HRTEM) image (Figure 2C) shows lattice fringes
+with spacings of 0.242 and 0.175 nm, which correspond to the (222)
+and (422) crystal planes of Fe3O4, respectively. Meanwhile, the
+interplanar spacings of 0.221 and 0.239 nm match the (002) and
+(110) crystal planes of Fe3N. By extracting greyscale information
+from the HRTEM image, the crystal surface information of FNO
+nHJ is visually displayed. EDS mapping further demonstrates the
+compositions of FNO nHJ (Figure 2D; Figure S4). The Fe, N, and
+O are uniformly interspersed throughout the particles, indicating
+partial oxidization of Fe3N to form Fe3O4.
+The crystalline and phase information of Fe3N and FNO nHJ
+were investigated by X-ray diffraction (XRD) (Figure 2E). Fe3N
+exhibits multiple diffraction peaks at 37.703◦, 40.928◦, 43.084◦,
+56.787◦, and 67.883◦that match well with the characteristic (110),
+(002), (-1-11), (-1-12), and (300) planes of Fe3N (PDF#72-2125). In
+contrast, FNO nHJ not only retains the diffraction peaks of Fe3N
+but also displays additional peaks at 30.049◦, 35.363◦, 56.503◦,
+62.552◦, and 89.591◦, which correspond to the (220), (311), (511),
+(440), and (731) planes of Fe3O4 (PDF#99-0073). Further analysis
+of the relationship between saline hydrolysis duration and the
+oxidation ratio of Fe3N was conducted (Figure S5). After 12 h of
+hydrolysis, approximately 6.8% of Fe3N was oxidized to Fe3O4,
+whereas after 24 h, an oxidation conversion of 18.8% for Fe3N was
+observed.
+High-resolution X-ray photoelectron spectroscopy (XPS) was
+used to determine the chemical composition and elemental
+valence states. In the N 1s spectrum of Fe3N (Figure S6), a
+distinct Fe─N peak is observed at 399.3 eV [37]. Following the
+transformation of Fe3N into FNO nHJ, the proportion of Fe─N
+decreases from 72.4% to 50.7%. The Fe in Fe3N exists in both Fe(II)
+and Fe(III) states, with a ratio of 68.5: 31.5 (Figure 2F), while the
+ratio in FNO nHJ shifts to 60.5: 39.5. The retention of a significant
+amount of Fe(II) is crucial for ensuring the effective Fenton
+reaction activity of FNO nHJ. Furthermore, Fe─N bonding is
+observed at 705.6 eV in both Fe3N and FNO nHJ, indicating
+the retention of Fe3N component [38]. Compared with Fe3N,
+the O 1s spectrum of FNO nHJ exhibits a lattice oxygen peak
+at 530.1 eV (Figure 2G), which supports the formation of Fe3O4
+[39]. Notably, during the hydrolysis of Fe3N to FNO nHJ, all
+peaks in the Fe 2p spectrum exhibit slight negative shifts (ΔBE ≈
+−0.28 eV), while those in the O 1s spectrum display pronounced
+positive shifts (ΔBE ≈+0.86 eV). These results indicate electron
+transfer between Fe3N and Fe3O4, confirming the formation of a
+heterojunction.
+UV–vis absorption spectra (Figure 2H) show that Fe3N exhibits
+relatively uniform absorption across the 200–1000 nm range
+and FNO nHJ possesses markedly higher broadband absorbance.
+Notably, the latter displays a near-symmetric localized surface
+plasmon resonance band at approximately 420 nm, attributed to
+the existence of Fe3O4 phase [40]. Kubelka-Munk analysis with
+Tauc plots indicates optical bandgaps of 1.66 eV for Fe3N and
+1.43 eV for FNO nHJ (Figure 2I). The narrower bandgap of FNO
+nHJ theoretically favors photon absorption and photogenerated
+carrier excitation.
+Ultraviolet photoelectron spectroscopy (UPS) measurements
+yielded work functions (Φ) of 4.58 eV for Fe3N and 4.35 eV
+for FNO nHJ (Figure 2J,K). The reduced Φ suggests an upward
+Fermi-level shift in FNO nHJ, potentially decreasing interfacial
+electron injection barriers and improving carrier transport. Pho-
+tocurrent measurements revealed substantially higher current
+density for FNO nHJ, evidencing enhanced carrier generation
+and charge separation (Figure S7a). Electrochemical impedance
+spectroscopy Nyquist plots corroborated this, and FNO nHJ
+exhibited a smaller semicircle (Figure S7b), indicating lower
+charge-transfer resistance and faster interfacial transport. In
+summary, as compared to Fe3N, FNO nHJ exhibits superior spec-
+tral absorbance, carrier generation/separation, and interfacial
+charge-transfer kinetics. Consequently, FNO nHJ is expected to
+improve energy-utilization efficiency and therapeutic response in
+PDT and photothermal therapy.
+The ammonia release behavior of FNO nHJ was quantitatively
+evaluated under simulated physiological temperature and fluid
+conditions. The results (Figure S8) showed that the ammonia
+released from FNO nHJ was negligible in ultrapure water at 20◦C.
+In contrast, the release rate of ammonia increased markedly in
+physiological saline at 37◦C. By comparing the data obtained
+in ultrapure water at 37◦C and in physiological saline at 20◦C,
+it was found that NaCl exerted a stronger promotive effect on
+ammonia release than temperature. Considering the moist and
+4 of 22
+Advanced Materials, 2026
+ 15214095, 2026, 30, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202523302 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 2
+Characterizations of FNO nHJ synthesized in 1% NaCl solution at 37◦C for 24 h followed by sonication in 28% ammonia for 30 min.
+Low (A) and high (B) magnification TEM images of FNO nHJ. (C) HRTEM image with measured interplanar spacings corresponding to Fe3N (002) and
+(110) planes and Fe3O4 (222) and (422) planes. (D) HAADF-STEM image and elemental mappings of Fe (red), N (yellow), and O (blue) for FNO nHJ.
+(E) XRD patterns comparing Fe3N and FNO nHJ. XPS spectra of the elements Fe (F) and O (G) in Fe3N and FNO nHJ. UV–vis absorption spectra (H)
+and optical bandgaps (I) of Fe3N and FNO nHJ. UPS spectra of Fe3N (J) and FNO nHJ (K).
+saline microenvironment of wounds, these results suggest the
+potential of ammonia released by FNO nHJ at wound sites in
+contributing to an effective therapeutic outcome.
+2.2
+Enzymatic-Like Activities and
+Photodynamic Evaluation of FNO nHJ
+Given the capability of Fe2+ to conduct the Fenton reaction,
+the FNO nHJ should be able to decompose H2O2 to generate
+⋅OH [41]. The chemodynamic therapy (CDT) capability of FNO
+nHJ was evaluated using 3,3’,5,5’-tetramethylbenzidine (TMB)
+as a chromogenic substrate. An increase in the absorption at
+652 nm was observed with prolonged reaction time, accompanied
+by a visible color change of the solution from transparent to
+blue (Figure 3A). Quantitative assessment of ⋅OH generation
+was performed via electron spin resonance (ESR) spectroscopy
+using 5,5-dimethyl-1-pyrroline N-oxide (DMPO) as a trapping
+agent [42]. The distinct quadruple resonance peaks of ⋅OH
+were observed after the reaction between FNO nHJ and H2O2,
+Advanced Materials, 2026
+5 of 22
+ 15214095, 2026, 30, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202523302 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 3
+Evaluation of enzymatic activities and photodynamic/photothermal performances of FNO nHJ. (A) POD-like activity of FNO nHJ in
+PBS buffer (10 mm, pH 4.0; H2O2: 1.0 mm; TMB: 0.2 mm). (B) Absorption spectra showing DPBF depletion by FNO nHJ under 808 nm laser irradiation
+(1.0 W cm−2, DPBF: 0.1 mm). ESR spectra reflecting ⋅O2−(C), ⋅OH (D) and 1O2 (E) generation. (F) The fitting curve of the mass extinction coefficient of
+FNO nHJ. (G) Temperature elevation curves of FNO nHJ, Fe3N, and Fe3N/Fe3O4 mixture under 808 nm laser irradiation at 1.0 W cm−2. (H) Temperature
+elevation curves of FNO nHJ at varied 808 nm laser power densities. (I) Concentration-dependent photothermal effect of FNO nHJ under 808 nm laser
+irradiation at 1.0 W cm−2. (J) Photothermal stability of FNO nHJ: Temperature curves over five on/off cycles (808 nm, 1.0 W cm−2). (K) Photothermal
+conversion efficiency calculation. (L) Schematic diagram of the enzymatic activity and photoresponsivity of FNO nHJ.
+6 of 22
+Advanced Materials, 2026
+ 15214095, 2026, 30, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202523302 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+displaying a signal intensity ratio of 1:2:2:1 (Figure 3D). The
+signal intensity was enhanced with increasing H2O2 concen-
+tration, demonstrating that the chemodynamic activity of FNO
+nHJ is both time-dependent and H2O2-dependent. Moreover,
+as the FNO nHJ concentration increased, the concentration of
+generated O2 rose from 10.2 to 16.8 mg L−1, demonstrating strong
+CAT-like activity (Figure S9).
+To evaluate the peroxidase (POD)-like activity of Fe3N and FNO
+nHJ, Michaelis-Menten kinetics analysis was performed using
+various concentrations of H2O2 as the substrate. The results
+(Figure S10) indicated that Fe3N exhibited a maximum reaction
+rate (Vmax) of 1.221 × 10−7 M s−1 and a Michaelis constant (Km) of
+0.196 m. In contrast, FNO nHJ demonstrated a Vmax of 2.520 ×
+10−7 M s−1 and a Km of 0.156 m. Compared to Fe3N, FNO nHJ
+displayed a higher Vmax and a lower Km, suggesting its stronger
+affinity for the substrate and enhanced catalytic efficiency, thus
+generating more ⋅OH to support the CDT effect. Furthermore, the
+CAT-like activity was characterized by monitoring the O2 release
+rate using a dissolved oxygen meter. FNO nHJ exhibited a Vmax
+of 6.620 mg (L min)−1 and a Km of 0.046 m, both superior to
+those of Fe3N (Vmax = 4.473 mg (L min)−1, Km = 0.073 m) (Figure
+S11), indicating a stronger CAT-like catalytic capability. These
+performance enhancements are attributed to both the in situ
+formation of Fe3O4 which possesses favorable POD-/CAT-like
+activities and the heterostructure interface effect which promotes
+carrier separation and reactive intermediate formation, thereby
+synergistically amplifying the overall catalytic activity.
+The PDT efficiency of FNO nHJ was investigated using 1,3-
+diphenylisobenzofuran (DPBF) as a 1O2 trapping agent. A signifi-
+cant decrease in the DPBF absorption profile was observed in the
+presence of FNO nHJ under near-infrared (NIR) laser irradiation,
+indicating the generation of 1O2 (Figure 3B). Concurrently, the
+ESR spectra show typical peaks in a 1:1:1 ratio, further confirming
+the production of 1O2 (Figure 3E). Importantly, the capacity of
+FNO nHJ to generate ⋅O2
+−under NIR laser irradiation was iden-
+tified by ESR spectroscopy (Figure 3C), and the six characteristic
+peaks of ⋅O2
+−were evident within only 5 min. In sharp contrast,
+no detectable signal was observed for Fe3N after 10 min under
+identical conditions (Figure S12).
+The optical properties of FNO nHJ were first investigated by
+UV–vis absorption spectroscopy (Figure 3F). The extinction coef-
+ficient of FNO nHJ (8.59 L (g cm)−1) is significantly higher than
+those of both Fe3N (4.18 L (g cm)−1) and Fe3O4 (6.07 L (g cm)−1),
+indicating its superior light-harvesting capability. A comparative
+analysis of temperature elevation was conducted among FNO
+nHJ, Fe3N, and a physical mixture of Fe3N and Fe3O4 (mass
+ratio matching FNO nHJ based on XRD quantification) under
+identical conditions (concentration: 400 µg mL−1; laser: 808 nm,
+1.0 W cm−2, 10 min). FNO nHJ exhibits a higher temperature
+elevation (ΔT = 25.91◦C) than Fe3N (ΔT = 20.57◦C) and the
+physical mixture (ΔT = 18.43◦C) (Figure 3G). This enhancement
+is attributed not only to the altered phase composition but to the
+heterojunction-induced amplification of photo absorption and
+utilization efficiency.
+Temperature elevation capability of FNO nHJ (400 µg mL−1) was
+further examined under gradient laser power densities (0.5, 0.8,
+1.0, 1.5, and 2.0 W cm−2). A notable laser power density-dependent
+photothermal effect was observed (Figure 3H), and the tempera-
+ture of FNO nHJ irradiated with NIR laser (1.0 W cm−2) increased
+considerably by 25.91◦C. Concentration-dependent photothermal
+behavior was observed under NIR laser irradiation (1.0 W cm−2)
+(Figure 3I): At 200 µg mL−1 FNO nHJ, temperature increased
+to 47◦C within 10 min, whereas at 400 µg mL−1 FNO nHJ,
+temperature surpassed 50◦C after only 5 min. This provides
+sufficient hyperthermia for antibacterial efficacy. Considering the
+good cytocompatibility of FNO nHJ (Figure S13), a concentration
+of 400 µg mL−1 was selected for subsequent experiments. Addi-
+tionally, negligible attenuation in peak temperature occurred over
+five laser-on/off cycles, indicating the remarkable photothermal
+stability of FNO nHJ (Figure 3J). The photothermal conversion
+efficiency (η) of FNO nHJ was calculated to be 28.62% based on
+the cooling phase (Figure 3K).
+These results collectively demonstrate that the FNO nHJ exhibits
+POD-/CAT-like activities for generating ⋅OH and O2 in the pres-
+ence of H2O2. Furthermore, under 808 nm NIR laser irradiation,
+FNO nHJ can serve as both a photosensitizer to produce both
+1O2 and ⋅O2
+−and a photothermal agent to generate hyperther-
+mia. These functions make it well-suited for achieving potent
+antibacterial effects (Figure 3L).
+2.3
+Preparation and Characterization of FAHP
+Hydrogel
+FNO nHJ and AgNO3 were incorporated into a hydrogel matrix
+composed of HHA and APA (HP), resulting in a dual dynamic
+hydrogel. APA and HHA were synthesized according to the
+reported processes, and their chemical structures were confirmed
+by FTIR and 1H NMR spectroscopy (Figure 4A,B; Figures S14
+and S15). The characteristic peaks of polysuccinimide (PSI) at
+1711 cm−1 and 1782 cm−1 are attributed to the coupling of two
+carbonyl groups separated by one nitrogen atom [43]. The peak at
+1720 cm−1 for APA is attributed to the stretching vibration of the
+C═O bond of aldehyde group. Compared with HA, HHA exhibit
+two additional characteristic peaks at 3201 and 1494 cm−1. The
+former is attributed to the stretching vibration of N─H bonds in
+3,3’-dithiobis(propionic hydrazide) moiety, while the latter arises
+from the bending vibration of its N─H bonds. The formation of
+HP hydrogel was confirmed by FTIR spectroscopy, which shows
+a characteristic peak at 1640 cm−1 corresponding to the C═N bond
+stretching vibration. This result indicates that the crosslinking
+between HHA and APA via a Schiff base reaction formed the
+hydrogel.
+We recently reported the first observation of a series of HHA-
+metal ion hydrogels formed through hydrazide-metal coordina-
+tion crosslinking [32]. During the experiments, a distinct color
+transition from transparent to orange-yellow occurred during the
+HHA-Ag+ hydrogel formation. To further investigate the changes
+in physicochemical properties elicited by the incorporation of Ag+
+into HP, the following experiments were conducted.
+First, rheological tests were performed to evaluate the moduli
+of three hydrogels: HP, Ag+-incorporated HP (AHP), and FNO
+nHJ-loaded AHP (FAHP). The sol-gel transformation of the
+mixed solution of HHA and APA took approximately 30 s,
+whereas the incorporation of Ag+ reduced this time to 1–2 s.
+Advanced Materials, 2026
+7 of 22
+ 15214095, 2026, 30, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202523302 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 4
+Preparation and characterization of FAHP Hydrogel. (A) FTIR spectra of PSI, PA, and APA. (B) FTIR spectra of HA, HHA, and HP.
+(C) Self-healing behavior and stretchability of FAHP hydrogel. (D) Skin adhesion of FAHP hydrogel. Rheological behaviors of hydrogels: frequency
+sweep (E), strain sweep (F), alternating step strain switched from 1% to 470% (G), and shear thinning curve (Inset: injectability demonstration) (H).
+(I) SEM images of hydrogels (red circles indicated protrusions; green circles indicated particulate matter). (J) Element distribution of FAHP hydrogel.
+(K) Release profiles of ions from FAH and FAHP hydrogels. (L) Swelling ratios of hydrogels in deionized water for 60 min. (M) In vitro procoagulant
+performances of different hydrogels. (N) Hemostatic abilities of different hydrogels and commercial gelatin sponge in a rat liver hemorrhage model.
+8 of 22
+Advanced Materials, 2026
+ 15214095, 2026, 30, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202523302 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Frequency-dependent scanning analysis showed that the addi-
+tion of Ag+ led to a decrease in the storage modulus (G′) and
+an increase in the loss modulus (G′′), while the loading of FNO
+nHJ resulted in a slight decrease in both G′ and G′′ (Figure 4E).
+Furthermore, the FAHP hydrogel could withstand strains up
+to 420% without collapse of the hydrogel network (Figure 4F).
+When subjected to alternating high and low strains, the hydrogel
+network rapidly recovered, demonstrating excellent self-healing
+property (Figure 4G). Shear-thinning tests (Figure 4H) revealed
+that the viscosities of all three hydrogels decreased with increas-
+ing shear rate, enabling their use for filling wounds of varying
+shapes, sizes, and depths through syringe injection. Furthermore,
+the hydrogel displayed excellent macroscopic self-healing behav-
+ior (Figure 4C), attributable to the reversible nature of both the
+Schiff base and hydrazide-metal coordination linkages within
+the hydrogel network [44]. This may provide a stable physical
+barrier for skin wounds. Additionally, the FAHP hydrogel could
+fit closely to joint surfaces. The incorporation of Ag+ enhanced
+the adhesive strength to some extent, fulfilling the adhesive
+requirements for wound dressing applications (Figure 4D; Figure
+S16). The adhesiveness of HP hydrogel is primarily attributed
+to the aldehyde groups of APA, since Ag+ may preferentially
+interact with the hydrazide groups of HHA, which increases the
+availability of aldehyde groups for reaction with amine groups on
+the skin, resulting in enhanced adhesion.
+Scanning electron microscopy (SEM) revealed the porous struc-
+tures of the hydrogels (Figure 4I; Figure S17). The HP hydrogel
+exhibited smooth pore walls with non-uniform pore size distribu-
+tion. After incorporation of Ag+, numerous protrusions appeared
+on the pore walls, likely arising from the agglomeration of
+generated Ag nanozymes. A concomitant reduction in average
+pore diameter by approximately 10 µm was also observed, which
+is attributed to an increase in crosslinking density. Following the
+loading of FNO nHJ, backscattered electron imaging revealed
+the presence of particulate matter. EDS and inductively coupled
+plasma mass spectrometry (ICP-MS) analysis confirmed the
+successful loading of FNO nHJ and the uniform distribution of
+Ag+ and Ag nanozymes inside the hydrogel network (Figure 4J;
+Figure S18).
+Traditional Ag+/Ag nanoparticles-embedded hydrogels exhibit
+broad-spectrum antibacterial activity and are usually used as
+wound dressings [45]. However, uncontrolled Ag+ release and
+toxicity from silver accumulation significantly limit their prac-
+tical applications. To address these issues, our hydrogel matrix
+components can complex with Ag+, thus enabling controlled Ag+
+release while influencing the size of generated Ag nanozymes
+[32, 46]. ICP-MS analysis revealed that APA incorporation had
+no significant effect on iron release but markedly reduced Ag+
+release (Figure 4K), indicating APA’s ability to effectively bind
+Ag+ via its carboxyl and aldehyde groups.
+In PBS at pH 5.5 mimicking the wound microenvironment, the
+HP hydrogel degraded rapidly, retaining only 30.1% of its initial
+mass by day 14 (Figure S19), because of the tendency of Schiff-base
+linkages to hydrolyze under acidic conditions [47]. In contrast,
+the incorporation of Ag+ produced a more stable crosslinking
+network, maintaining approximately 50.9% of the initial mass
+at day 14, which helps prevent excessive Ag+ release from
+overly rapid degradation and provides more sustained wound
+protection. Swelling tests demonstrated significant acceleration
+in water absorption following Ag+ incorporation. The dry FAHP
+hydrogel achieved a swelling ratio of 147 after only 1 h of
+water immersion, markedly surpassing that (70.8) of the dry HP
+hydrogel (Figure 4L). This accelerated absorption may contribute
+to the improved coagulation performance. The FAHP group
+exhibited a reduced blood clotting time of approximately 2.37 min,
+significantly faster than the control group (7.2 min) and HP
+group (4.9 min) (Figure 4M; Figure S20a). These are attributable
+to faster water absorption and the procoagulant effects of Ag+
+and aldehyde groups. In vivo hemostatic performance of FAHP
+hydrogel was further validated in a Sprague-Dawley (SD) rat liver
+hemorrhage model. A 5 mm-length incision was created on the
+liver, and the hydrogel was immediately injected to cover the
+bleeding site. After 1 min, the untreated group (control) exhibited
+a severe blood loss (305.7 mg), while the FAHP group and the
+commercial gelatin sponge group showed comparable blood loss
+of approximately 116 mg (Figure 4N; Figure S20b).
+Collectively, these findings demonstrate that the FAHP hydrogel
+possesses inherent self-healing ability, injectability, and tissue
+adhesion for effective wound sealing and hemostasis. Notably,
+it achieves controlled Ag+ release, highlighting its potential for
+clinical translation.
+2.4
+In Situ Generation of Ag Nanozymes within
+FAHP Hydrogel and Their Antioxidant Activity
+The formation rate of Ag nanozymes inside the hydrogel is
+controllable by modulating the ratio of Ag+ to hydrazide groups.
+Over time, Ag+ was in situ reduced gradually by HHA to form
+Ag nanozymes, which exhibit multiple functionalities, includ-
+ing antioxidant and anti-inflammatory abilities. This enables a
+programmed ROS regulation strategy where ROS are generated
+via FNO nHJ-mediated PDT and CDT for bacterial eradication
+and subsequently scavenged by Ag nanozymes formed gradually
+(Figure S21).
+The valence state conversion of silver in the FAHP hydrogel over
+three days was monitored by XPS spectroscopy (Figure 5A,B).
+Significant change in peak shape within the Ag 3d spectra was
+observed. After one day, Ag+ and Ag0 accounted for 40% and
+60%, respectively. As the conversion time extended, a distinct
+darkening of the hydrogel color occurred. By the third day,
+the proportion of Ag0 exceeded 95%. Accordingly, the UV-vis
+absorption spectrum of the AHP hydrogel displays a broad peak
+at 420 nm on the first day (Figure 5C), which is attributed to
+the surface plasmon resonance of Ag nanozymes [48]. Once
+time was prolonged, the peak blue-shifted and became sharper,
+indicating the continuous formation of Ag nanozymes. TEM
+studies revealed that in situ-generated Ag nanozymes exhibited
+a uniform particle size distribution with an average diameter of
+3.59 ± 1.47 nm (Figure 5D; Figure S22).
+The antioxidant capacities of HP, AHP, and FAHP hydrogels
+were comprehensively evaluated (Figure 5E–I). The HP hydrogel
+exhibited very weak radicals- and ROS-scavenging activities
+owing to the presence of disulfide groups. In contrast, the AHP
+hydrogel demonstrated excellent antioxidant capacity. Moreover,
+this was not affected by FNO nHJ loading. Intriguingly, freshly
+Advanced Materials, 2026
+9 of 22
+ 15214095, 2026, 30, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202523302 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 5
+In situ generation of Ag nanozymes and antioxidant ability of FAHP hydrogel. (A) Time-dependent XPS spectra of silver element in
+FAHP hydrogel. (B) Macroscopic observation of in situ generation of Ag nanozymes within AHP hydrogel. (C) UV–vis spectra of AHP hydrogel at
+different times. (D) Size distribution of Ag nanozymes determined by SEM (based on 200 particles). Free radical scavenging by hydrogels: DPPH∙(E),
+ABTS∙+ (F), ⋅OH (G), H2O2 (H), and ⋅O2−(I). (J) Oxygen release capacities of different hydrogels at 1 mm H2O2. (K) Semiquantitative fluorescence
+data of JC-1 monomers (n = 3) (FI: fluorescence intensity). (L) Semiquantitative fluorescence data of DCFH-DA fluorescent probe (n = 3). (M) JC-1
+staining of L929 cells after different treatments under H2O2 exposure. Blue: DAPI, Green: JC-1 monomers, Red: JC-1 aggregates. (N) DCFH-DA staining
+of L929 cells after different treatments under H2O2 exposure. (O) Representative flow cytometry histograms of ROS levels in L929 cells after different
+treatments using DCFH-DA fluorescent probe labeling. Data are presented as mean ± standard deviation (S.D.) and statistical significance was assessed
+using one-way ANOVA with Tukey’s multiple comparisons test. (ns: non-significant, p > 0.05; ***p < 0.001).
+10 of 22
+Advanced Materials, 2026
+ 15214095, 2026, 30, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202523302 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+prepared FAHP lacked free radical scavenging ability but devel-
+oped antioxidant activity after 1–2 h. Combined UV–vis/ESR
+spectroscopy revealed that the FAHP hydrogel effectively scav-
+enged multiple radical species and ROS, including 2,2-diphenyl-
+1-picrylhydrazyl (DPPH⋅), 2,2’-azino-bis(3-ethylbenzothiazoline-
+6-sulfonic acid) (ABTS⋅+), ⋅OH, H2O2, and ⋅O2
+−(Figure S23).
+Subsequent dissolved oxygen assay demonstrated that both
+FNO nHJ and Ag nanozymes possessed CAT-like activity and
+could efficiently decompose H2O2 to release substantial oxygen
+(Figure 5J). These results suggest that the FAHP hydrogel exhibits
+SOD-CAT cascade catalytic activity and can effectively scavenge
+excess H2O2 and ⋅O2
+−and simultaneously increase local oxygen
+level to alleviate hypoxia.
+Given the scavenging capacity of the FAHP hydrogel against
+multiple free radicals and ROS, its antioxidant activity was further
+evaluated at the cellular level. An oxidative stress cell model was
+established by treating L929 cells with 0.4 mm H2O2 solution. JC-
+1 probe analysis revealed that after H2O2 treatment, the green
+fluorescence intensity of JC-1 monomers significantly increased,
+indicating a reduction in mitochondrial membrane potential
+and an increased propensity for apoptosis (Figure 5K,M) [49].
+In contrast, both FAHP and AHP groups exhibited similar red
+fluorescence intensities to the control group, implying that Ag
+nanozymes formed in the two hydrogels efficiently mitigated
+H2O2-induced mitochondrial damage. A similar phenomenon
+was observed in the fluorescence images and flow cytomet-
+ric analysis using 2’,7’-dichlorofluorescein diacetate (DCFH-DA)
+probe (Figure 5L,O), where the FAHP group showed a signifi-
+cantly lower ROS level than the H2O2 group. Notably, most cells
+in the H2O2 group exhibited signs of apoptosis, while the FAHP-
+treated cells maintained a normal spindle-shaped morphology
+(Figure 5N).
+2.5
+In Vitro Bioactivity and Biocompatibility of
+FAHP Hydrogel
+Wound healing requires a synchronized sequence of immune
+events. An aberrant macrophage phenotypic switch is recognized
+as a critical factor contributing to delayed healing [50]. Pro-
+inflammatory M1 macrophages play vital roles in host defense
+and the removal of damaged tissue during the initial healing
+phase. However, their prolonged presence leads to sustained
+inflammation and delayed re-epithelialization [51]. Conversely,
+anti-inflammatory M2 macrophages greatly promote wound heal-
+ing by releasing anti-inflammatory cytokines like IL-4, IL-10,
+TGF-β and various growth factors including VEGF, FGF, and EGF
+[52]. Therefore, promoting macrophage phenotype transition
+from the M1 to the M2 is crucial for chronic wound healing.
+In our study, lipopolysaccharide (LPS)-stimulated macrophages
+were used as a positive control, with all hydrogel treatments
+performed in the presence of LPS stimulation. As expected, LPS
+stimulation induced a clear transition towards the M1 phenotype,
+evidenced by a significant increase in CD86 expression (a M1-
+type macrophage marker) (Figure 6A; Figure S24). Both AHP and
+FAHP groups exhibited stronger CD206 expression (a M2-type
+macrophage marker) than the control group and significantly
+downregulated CD86 expression compared to the LPS group.
+Flow cytometry analysis further confirmed that the CD86+ cell
+population in the FAHP group (25.9 ± 2.1%) was significantly
+lower than that in the LPS group (47.4 ± 1.3%) (Figure 6B;
+Figure S25). The CD206 positive rate of the FAHP-incubated
+macrophages was 24.8 ± 3.6%, contrasting sharply with the
+3.6 ± 1.0% observed in the LPS group (Figure 6C), providing
+strong evidence that FAHP hydrogel promoted the transition
+of macrophages from the M1 to the M2 phenotype. This was
+also corroborated by the levels of pro-inflammatory factors and
+anti-inflammatory factors in each group (Figure 6D–G): LPS
+stimulation elevated the levels of pro-inflammatory factors (TNF-
+α, IL-1β), while FAHP treatment significantly suppressed the
+secretion of these cytokines and upregulated anti-inflammatory
+factors (IL-10, TGF-β). Critically, no significant differences were
+observed between FAHP and AHP groups, confirming that the
+loading of FNO nHJ had no negative effects on the antioxidant
+and anti-inflammatory functions of the AHP hydrogel.
+After 24 h of co-culture with L929 cells, the AHP hydrogel showed
+some inhibitory effect on cell proliferation, whereas the FAHP
+hydrogel caused no impairment (Figure 6H,I). After extending
+the culture time to 72 and 120 h, the cell viabilities in the
+FAHP group were significantly higher than those in the control
+group. Cell lysis analysis of FAHP-treated cells revealed elevated
+ammonia level (Figure S26), suggesting that low-concentration
+ammonia released during FNO nHJ hydrolysis promoted cell
+proliferation and migration. In fact, epithelial regeneration at
+the wound site depends not only on cell proliferation but
+also critically on epithelial cells migration [53]. The ability of
+hydrogels to promote cell migration was assessed by cell scratch
+assay (Figure 6J,K). The control group achieved only a 10%
+migration ratio at 24 h, whereas the FAHP hydrogel reached
+35%. By 48 h, the scratch area in the FAHP group was 73%
+covered, significantly higher than those in the AHP group (44.2%)
+and the control group (20.6%). Angiogenesis within granulation
+tissues provides essential nourishment to the healing area, and
+poor vascularization contributes to the delayed wound healing
+[54]. The tube formation test confirmed that the FAHP group
+not only formed a mesh-like vascular structures more quickly
+but also showed more junctions and greater total tube length
+(Figure 6L–N).
+For hydrogel dressings in direct contact with the body, biocom-
+patibility is closely related to treatment outcomes and safety. To
+evaluate the cytocompatibility of FNO nHJ, the CCK-8 assay was
+employed. When the FNO nHJ concentration reached 200 µg
+mL−1, L929 cells maintained a high survival rate of 94.6%, whereas
+HUVEC cells showed a relatively low survival rate (84.7%) (Figure
+S13), which may be attributed to their higher sensitivity to
+pH changes. To further reveal whether photothermal heating
+induced thermal injury, systematic assessments at the cellular
+and tissue levels were conducted (Figure S27). The results indi-
+cated that the FAHP hydrogel under specified NIR irradiation
+caused no detectable adverse influences on cellular viability,
+tissue morphology, and inflammatory responses, demonstrating
+favorable biosafety. Hemolysis test demonstrated that the AHP
+group had a hemolysis ratio of 3.3%. Notably, the FAHP group
+showed a reduced hemolysis ratio of 2.1% (Figure 6O). To
+investigate whether the FAHP hydrogel would induce cumulative
+toxicity to animal organs, histological analyses were conducted
+on the hearts, livers, spleens, lungs, and kidneys of rats (Figure
+S28). No significant damage was observed in any examined
+Advanced Materials, 2026
+11 of 22
+ 15214095, 2026, 30, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202523302 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 6
+Macrophage polarization effect and biocompatibility assessment of hydrogels. (A) Representative immunofluorescence images of
+RAW264.7 macrophage phenotypes after different treatments (red: CD86; green: CD206; blue: DAPI). (B) Flow cytometry analysis of CD86 expression
+in RAW264.7 cells after different treatments. (C) Flow cytometry analysis of CD206 expression in RAW264.7 cells after different treatments. Cytokine
+levels measured by ELISA: TNF-α (D), IL-1β (E), IL-10 (F), and TGF-β (G) (n = 3). (H) Proliferation staining images of L929 cells on day 5 after hydrogel
+treatments. (I) Proliferation of L929 cells on days 1, 3, and 5 (n = 3). (J) Scratch images of L929 cells at different time points after hydrogel treatments.
+(K) Statistical analysis of L929 cell migration ratio at different time points (n = 3). (L) Representative images of the HUVEC tube formation assay. (M)
+Junctions number analysis of tube structure (n = 5). (N) Quantification of total tube length (n = 5). (O) Hemolysis ratio of red blood cells after hydrogel
+treatments (n = 3). (P) Blood routine and biochemical indices (n = 3). Data are presented as mean ± S.D. and statistical significance was assessed using
+one-way ANOVA with Tukey’s multiple comparisons test. (ns: non-significant, p > 0.05; *p < 0.05; **p < 0.01; ***p < 0.001).
+12 of 22
+Advanced Materials, 2026
+ 15214095, 2026, 30, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202523302 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+organs. Furthermore, all the tested blood routine and biochemical
+indicators were within normal ranges (Figure 6P), confirming the
+good biocompatibility and safety of the FAHP hydrogel.
+2.6
+In Vitro Antibacterial and Anti-Biofilm
+Activities of FAHP Hydrogel
+The eradication of bacteria and biofilms from wound sites is
+a critical prerequisite for chronic wound healing. Initially, the
+photothermal performance of FAHP hydrogel was evaluated. The
+results (Figure S29) were comparable to those observed for FNO
+nHJ nanosuspension, with a temperature window of 50–55◦C
+sufficient to suppress bacterial viability while further enhancing
+the antibacterial effect of Ag+. To ensure ROS-mediated steriliza-
+tion, the consumption of bacterial GSH is essential [55]. In the
+present study, GSH can be efficiently consumed by the FAHP
+hydrogel and the ROS free radicals generated under irradia-
+tion through thiol-disulfide exchange and oxidization reactions
+(Figure S30). Clinically isolated Gram-positive MRSA and Gram-
+negative Escherichia coli (E. coli) were used as model strains
+to evaluate the antibacterial properties and mechanisms of the
+FAHP hydrogel.
+The antibacterial effects of different hydrogels were assessed
+using the agar plate assay (Figure 7A). The results showed
+that the HP hydrogel exhibited no antibacterial activity. The
+incorporation of Ag+ into the HP hydrogel significantly enhanced
+antibacterial activity, achieving antibacterial ratios of 83.2%
+against MRSA and 81.3% against E. coli (Figure 7B). Further-
+more, the loading of FNO nHJ into AHP hydrogel did not
+induce a significant change in antibacterial activity. The reason
+for this is that endogenous H2O2 is insufficient to support
+effective CDT. In contrast, upon 808 nm laser irradiation,
+the FAHP hydrogel achieved a satisfactory antibacterial ratio
+exceeding 97% against both bacterial strains. The SYTO9/PI
+assay revealed negligible red fluorescence in the control and
+HP groups (Figure 7C). In contrast, the AHP group exhibited
+intense red fluorescence, signifying severe bacterial membrane
+disruption. The FAHP+NIR group had the highest clearance
+ratios for both bacteria (MRSA: 91%, E. coli: 96%), consistent
+with the agar plate assay. Freshly prepared FAHP hydrogels and
+those aged for several days exhibited comparable antibacterial
+activity. This is partially attributable to the inherent antibacterial
+properties of Ag nanozymes and a reversible, dynamic intercon-
+version between Ag+ and Ag nanozymes within the hydrogel.
+The Ag nanozymes in the hydrogel could dissolve and release
+Ag+, thus contributing to antibacterial activity through an ion-
+mediated mechanism [56]. As the bacterial load was very low,
+the conversion of Ag+ to Ag nanozymes was favorable at the
+hydrogel’s periphery, specifically at the interface with remaining
+bacteria. This dynamic interconversion may enable the hydrogel
+to maintain long-term antibacterial and immunomodulatory
+effects.
+Using the DCFH-DA probe, it was observed that Ag+ induced
+a certain degree of oxidative stress, while the FAHP hydrogel
+under NIR irradiation significantly elevated ROS level in bacteria
+(Figure S31). As revealed by continuous monitoring of the optical
+density (OD) at 600 nm of bacterial suspensions co-cultured with
+the hydrogels, the bacteria in the AHP groups retained prolifer-
+ative capacity, whereas the bacterial growth of the FAHP+NIR
+groups was completely suppressed (Figure S32). These results
+demonstrate that the potent antibacterial activity of the FAHP
+hydrogel under NIR irradiation arises from the synergistic effect
+of Ag+, ROS and hyperthermia.
+To illuminate the antibacterial mechanism of the FAHP
+hydrogel, the morphologies of bacteria co-cultured with the
+hydrogels were observed by SEM (Figure 7D). Both MRSA
+and E. coli treated with AHP hydrogel exhibited leakage
+of
+intracellular
+contents,
+with
+distinct
+leakage
+patterns.
+This difference may be attributed to the distinct cell wall
+structures: The cell wall of E. coli bacteria is relatively thin
+and rich in proteins. Ag+ can complex with thiol groups
+within
+these
+proteins,
+leading
+to
+extensive
+membrane
+disruption and substantial leakage of intracellular contents.
+In contrast, the cell wall of MRSA bacteria is primarily
+composed of a peptidoglycan layer tens of nanometers thick,
+which can effectively prevent membrane deformation [57].
+The FAHP+NIR combination treatment, which generated
+both hyperthermia and ROS, further enhanced leakage of
+bacterial contents and affected bacterial surface morphology.
+These observations suggest that the disruption of bacterial
+membrane integrity is likely the primary cause of bacterial
+death.
+To verify this hypothesis, polymyxin B (PMB), an antibiotic
+known to target bacterial membranes, was chosen as a positive
+control in further experiments. The extent of protein leakage from
+bacteria following various treatments was quantified using the
+BCA protein assay (Figure S33a,b). The leakage levels induced
+by AHP treatment were comparable to those caused by PMB.
+In contrast, the FAHP+NIR group exhibited 1.41 times higher
+leakage level for MRSA and 1.24 times higher leakage level for
+E. coli compared to the PMB group. Unexpectedly, the HP group
+showed the greatest protein leakage for both bacterial strains. To
+figure out the underlying reason, the BCA reagent was mixed with
+the two components of HP hydrogel (HHA and APA), respec-
+tively. It was found that APA itself reacted with the BCA reagent,
+producing an intense purple color (Figure S33c). During co-
+culture with bacteria, the HP hydrogel was completely degraded,
+which resulted in the presence of APA in the supernatant after
+centrifugation, thus leading to the abnormally high absorbance
+reading. In contrast, neither AHP hydrogel nor FAHP hydrogel
+was degraded by bacteria, and their absorbance levels were within
+the normal range. Additionally, the membrane permeability of E.
+coli was assessed using the O-nitrophenyl-β-D-galactopyranoside
+assay (Figure S33d). The FAHP+NIR group exhibited the highest
+level of β-galactosidase leakage, indicating increased bacterial
+membrane permeability. This enhanced permeability facilitates
+the entry of Ag+ and ROS into bacteria, thus contributing to their
+antibacterial efficacy.
+Biofilms are formed by bacterial aggregates and their secreted
+extracellular polymeric substances (EPS) rich in polysaccharides,
+nucleic acids, and proteins. These components confer bacterial
+resistance to antibiotics [58]. To evaluate the ability of FAHP
+hydrogel to disrupt mature MRSA biofilms, FITC-labeled con-
+canavalin A and PI were used to stain polysaccharides and
+dead bacteria within the biofilm, respectively. The control and
+HP groups exhibited extensive green fluorescence (Figure 7E),
+Advanced Materials, 2026
+13 of 22
+ 15214095, 2026, 30, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202523302 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 7
+In vitro antibacterial and antibiofilm activities of hydrogels. (A) Representative agar plate images and live/dead staining images of
+MRSA and E. coli after different treatments (green: SYTO 9, red: PI). (B) Statistical analysis of colony counts (n = 3). (C) Statistical analysis of bacteria
+live/dead ratio (n = 3). (D) Representative SEM images and magnified images of MRSA and E. coli after different treatments. (E) Confocal laser scanning
+microscopy images of MRSA biofilms after different treatments (green: FITC-labeled concanavalin A; red: PI). (F) Crystal violet staining images of MRSA
+biofilms after different treatments. (G) Scavenging ratio of mature MRSA biofilm calculated from the EPS-retained area (n = 3). (H) Statistical analysis
+of crystal violet staining (n = 3). (I) Statistical analyses of biofilm thickness and distribution range of dead bacteria after different treatments (n = 3).
+Data are presented as mean ± S.D. and statistical significance was assessed using one-way ANOVA with Tukey’s multiple comparisons test. (*p < 0.05;
+**p < 0.01; ***p < 0.001).
+14 of 22
+Advanced Materials, 2026
+ 15214095, 2026, 30, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202523302 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+indicating an intact EPS structure. In stark contrast, the AHP
+group displayed intense red fluorescence and a reduced green
+fluorescence coverage area, reaching only 47.9% of the control
+group’s area (Figure 7G). Upon application of NIR laser irra-
+diation, FAHP hydrogel achieved a biofilm clearance rate of
+83.7%. Additionally, the biofilm thickness decreased substantially
+from 11.3 µm in the control group to 5.2 µm, with bacteri-
+cidal effects extending to bacteria within a thicker range of
+15.4 µm (Figure 7I). Crystal violet staining revealed distinct
+fading of the violet color in the biofilm co-cultured with the
+AHP hydrogel, confirming that Ag+ disrupted the biofilm,
+though insufficiently for complete eradication (Figure 7F).
+Remarkably, the FAHP+NIR group exhibited the lowest biofilm
+retention ratio (17.94%), highlighting the superior efficacy of
+the synergistic bactericidal action of Ag+ and phototherapy
+(Figure 7H).
+2.7
+FAHP Hydrogel Promotes Infected Diabetic
+Wound Healing
+The excellent in vitro antioxidant, macrophage phenotypic mod-
+ulation, and antibacterial activities of FAHP hydrogel inspired
+us to further explore its in vivo antibacterial and pro-healing
+efficacies on diabetic wounds. Therefore, we designed the treat-
+ment procedure (Figure 8A). First, type 1 diabetes was induced
+in SD rats using streptozotocin (STZ). After blood glucose level
+had stabilized, two circular full-thickness skin defects with an
+8 mm diameter were created on the back of each rat, followed
+by infection with 100 µL of MRSA suspension at 108 CFU
+mL−1. The infected rats were randomly divided into five groups
+and subjected to different treatments: commercial Tegaderm
+film (control group), HP, AHP, FAHP, and FAHP+NIR. Wound
+imaging and sampling were performed at predetermined time
+points.
+Wound healing progression from day 0 to day 12 (Figure 8B)
+revealed significantly accelerated closure in the FAHP+NIR
+group. After 6 d of treatment, only 20.7% of the wound area
+remained in the FAHP+NIR group, far lower than 54.6% in
+the control group. Meanwhile, wound exudates were collected
+for the agar plate assays. Notably, the FAHP+NIR group had
+the lowest bacteria survival rate of 8.5% (Figure 8C,F). This
+potent antibacterial effect is attributed to the synergistic action
+of Ag+, PDT and hyperthermia, which effectively eliminated
+stubborn bacteria and significantly promoted wound healing.
+On day 9, the control and AHP groups still had large wound
+areas of 27.4% and 19.7%, respectively. In contrast, the FAHP
+group displayed enhanced wound healing, with a remaining
+wound area of only 11.1%. This is attributable to the enhanced
+cellular proliferation, migration, and angiogenesis by FNO nHJ-
+released ammonia. The FAHP+NIR group exhibited the most
+significant healing effect, with only about 6.7% of the original
+wound area remaining. After 12 d of treatment, the wounds
+in the FAHP+NIR group were nearly healed (97.1%), while
+other treatment groups showed varying degrees of incomplete
+healing (Figure 8E). Infrared thermal images demonstrated
+excellent in vivo photothermal performance of FAHP hydrogel
+(Figure 8D). The FAHP hydrogel elicited a rapid tempera-
+ture increase to 50◦C within 6 min, whereas the PBS group
+showed a minimal temperature elevation of only 5◦C after
+10 min of irradiation. Stable body weights throughout the treat-
+ment indicated good biocompatibility of all hydrogel dressings
+(Figure 8G).
+Histological analysis (H&E staining, Picro-Sirius red staining,
+and Masson staining) provided detailed insights into the wound
+healing process. Wound tissues harvested on day 6 revealed supe-
+rior healing effects in the FAHP+NIR group, while other groups
+had not formed complete epithelia (Figure 8H). The FAHP+NIR
+group showed nearly no dermal gaps and an epidermal thickness
+of 133 µm, with an average granulation tissue thickness 1.68
+times that of the control group (Figure 8I; Figure S34a). Sirius
+red staining analysis indicated that type III collagen (critical for
+early healing) predominated [59], with the FAHP+NIR group
+displaying organized collagen covering 49.4% of the area (Figure
+S34b). Masson staining visualized collagen synthesis and deposi-
+tion in newly formed tissues (Figure 8J). The FAHP+NIR group
+exhibited 1.27 to 1.8 times higher collagen deposition rates than
+those of other groups (Figure 8K), with uniformly arranged dense
+collagen fibers. Collectively, these findings demonstrated that
+the FAHP+NIR treatment accelerated infected diabetic wound
+healing through enhanced antiinfection, re-epithelialization and
+collagen deposition.
+2.8
+Mechanisms of FAHP Hydrogel in
+Promoting Infected Diabetic Wound Healing
+To elucidate the pro-healing mechanisms of FAHP hydrogel in
+infected diabetic wounds, tissue samples collected at different
+time points were analyzed using immunofluorescence staining
+and RNA transcriptome sequencing analysis. On day 3, the
+expression levels of HIF-1α in the control and HP groups are
+significantly higher than that in the AHP group (Figure 9A),
+indicating that AHP hydrogel activated the SOD-CAT cascade
+reaction, effectively alleviating tissue hypoxia. Notably, further
+HIF-1α downregulation observed in the FAHP and FAHP+NIR
+groups suggests supplemental CAT-like activity from the FNO
+nHJ (Figure 9B), enhancing oxygen supply. Consistently, dihy-
+droethidium staining images show markedly weakened fluores-
+cence signals in the FAHP and FAHP+NIR groups, indicative
+of reduced ROS levels in the wound microenvironments (Figure
+S35). Collectively, these findings demonstrate that FAHP hydrogel
+can alleviate hypoxia and oxidative stress, thereby facilitating
+wound repair.
+Macrophage phenotypic transition and the secretion of asso-
+ciated cytokines were assessed on day 6 post-treatment. In
+the control and HP groups, CD86 expression levels were high,
+while CD206 fluorescence signals were negligible (Figure 9C).
+Following FAHP+NIR treatment, CD86 expression was markedly
+downregulated, while CD206 expression was upregulated (Figure
+S36). These findings are consistent with the aforementioned
+immunofluorescence staining and flow cytometry analyses in
+LPS-stimulated RAW264.7 cells, indicating that FAHP hydrogel
+could induce macrophage polarization from the M1 to the M2
+phenotype. The changes in cytokine expression further corrobo-
+rated this switch: Compared with the control group, FAHP+NIR
+treatment downregulated TNF-α expression from 40.6 to 9.3
+(Figure 9D,E) and upregulated IL-10 expression from 15.4 to 60.5
+(Figure 9F,G). By restoring macrophage phenotype and redox
+Advanced Materials, 2026
+15 of 22
+ 15214095, 2026, 30, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202523302 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 8
+Effects of FAHP hydrogel on healing of infected wounds in diabetic rats. (A) Schematic illustration of the timeline of animal
+experiments. (B) Representative wound photographs and contour maps depicting wound healing in different groups on days 0, 3, 6, 9, and 12.
+(C) Representative photographs of bacterial colonies from wound exudates collected on day 6. (D) Representative infrared thermal images of skin wound
+temperature elevation during the FAHP+NIR treatment (1.0 W cm−2, 10 min). (E) Statistical analysis of remaining wound area (n = 5). (F) Relative
+bacterial viabilities in wounds after different treatments (n = 5). (G) Body weight changes in rats during the treatments (n = 5). (H) Representative
+H&E staining and Picro-Sirius red staining images of wound tissues on day 6. (I) Statistical analysis of granulation tissue thickness on day 6 (n = 5).
+(J) Representative Masson staining images of wound tissues on day 12. (K) Statistical analysis of collagen deposition on day 12 (n = 5). Data are presented
+as mean ± S.D. and statistical significance was assessed using one-way ANOVA with Tukey’s multiple comparisons test. (***p < 0.001).
+16 of 22
+Advanced Materials, 2026
+ 15214095, 2026, 30, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202523302 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 9
+In vivo histopathological analysis of wound tissues after different treatments. Representative immunofluorescence staining images:
+HIF-1α on day 3 (A), CD86 and CD206 on day 6 (C), TNF-α on day 6 (D), IL-10 on day 6 (F), and Ki67 on day 12 (H). Semiquantitative analyses for
+HIF-1α (B), TNF-α (E), IL-10 (G), and Ki67 (FI: fluorescence intensity) (I). (J) Representative immunohistochemical staining images of CD31 on day 12.
+(K) Semiquantitative analysis of immunohistochemical staining for CD31 (AOD: average optical density). Data are presented as mean ± S.D. (n = 5).
+Statistical significance was assessed using one-way ANOVA with Tukey’s multiple comparisons test. (**p < 0.01; ***p < 0.001).
+homeostasis, FAHP+NIR treatment facilitated the transition
+from the inflammatory to the proliferative phase.
+Cell proliferation and angiogenesis are critical during the prolif-
+erative phase. On day 12, significant Ki67 and CD31 expression
+was observed at the wound sites across all groups (Figure 9H,J).
+Compared with the control group, the FAHP+NIR group shows
+a significant reduction in Ki67 expression (Figure 9I), prevent-
+ing excessive proliferation and scar formation. Notably, the
+FAHP+NIR group exhibits the highest vessel count but smaller
+individual vessel area (Figure 9K), indicating initiation of the
+transition to the remodeling phase, during which most nascent
+vessels regress to achieve a vascular density akin to normal tissue
+[60, 61]. These findings demonstrate that the FAHP hydrogel
+dynamically adapts to the requirements of each healing stage,
+significantly promoting the healing of infected diabetic wounds.
+RNA sequencing analysis was conducted on wound tissues
+collected on day 6 to elucidate the mechanism underlying
+the difference in therapeutic effects between the control and
+FAHP+NIR groups. The squares of Pearson’s correlation coeffi-
+cients for all samples are above 0.97, indicating high reliability of
+the tissue samples (Figure 10A). Volcano plot analysis shows 395
+differentially expressed genes (DEGs) between the FAHP+NIR
+and control groups, with 213 genes upregulated (53.92%) and
+182 genes downregulated (46.08%) (Figure 10B). Notably, down-
+regulated genes include inflammation-related genes (IL-6 and
+Tnfsf11), proliferation-inhibiting gene (Hoxa11), and muscle
+Advanced Materials, 2026
+17 of 22
+ 15214095, 2026, 30, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202523302 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 10
+Transcriptomic analysis of wound tissues from FAHP+NIR group. (A) Heatmap of Pearson’s correlation coefficient matrix for tested
+samples. (B) Volcano plot showing the DEGs between control group and FAHP+NIR group on day 6 (|log2 fold-change| ≥1.5; p < 0.05). Volcano plots of
+significantly downregulated (C) and upregulated (D) DEGs. (E) Chord diagram obtained through GO enrichment analysis. (F) GO enrichment analysis
+between control group and FAHP+NIR group. (G) KEGG pathway enrichment analysis between control group and FAHP+NIR group. GSEA analyses
+for hair follicle morphogenesis (H), skin development (I), and Hedgehog signaling pathway (J). (K) Heatmap of Hedgehog signaling pathway–related
+DEGs between control group and FAHP+NIR group. (L) Heatmap of DEGs involved in immune responses and wound healing process. Western blot
+analysis (M) and relative protein expressions (N) of Shh, Ptch1, Smo, and Gli1 in L929 cells after different treatments for 24 h. Levels of IL-17 (O) and
+TNF-α (P) measured by ELISA. Data are presented as mean ± S.D. (n = 3). Statistical significance was assessed using a Student’s t-test (two-tailed).
+(ns: non-significant, p > 0.05; *p < 0.05; **p < 0.01; ***p < 0.001).
+18 of 22
+Advanced Materials, 2026
+ 15214095, 2026, 30, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202523302 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+fiber-suppressing gene (Myh6) (Figure 10C). In contrast, the
+genes associated with injured tissue clearance (Timd4), interme-
+diate filament formation (Krt72, Krt83, and Krt87), epithelial cell
+differentiation (Lcn2), and cell proliferation and differentiation
+(Shh) are significantly upregulated (Figure 10D).
+Subsequently, Gene Ontology (GO) and Kyoto Encyclopedia
+of Genes and Genomes (KEGG) pathway analyses were con-
+ducted to elucidate the biological functions of these DEGs
+(Figure 10F,G). GO enrichment analysis reveals that the DEGs
+are mainly associated with immune system processes, inflam-
+matory responses, skin epidermis development, hair follicle
+development, and cell proliferation and differentiation. This
+suggests that FAHP+NIR treatment accelerates wound heal-
+ing by modulating inflammation, enhancing proliferation, and
+promoting hair follicle formation. The chord diagram of GO
+enrichment analysis highlights core genes such as Shh, Thbs1,
+Serpine2, Clec7a, Hmox1, Hpse, IL-1α, Msx2, Nfkbiz, Trem1,
+Adm, Clu, Csf3, and Ngfr, which are frequently involved in
+various biological processes, indicating their crucial regulatory
+roles (Figure 10E). KEGG pathway enrichment analysis further
+reveals that the DEGs are primarily enriched in pathways
+related to infection and inflammation, such as rheumatoid
+arthritis, S. aureus infection, and IL-17 signaling pathways,
+highlighting the role of FAHP hydrogel in treating infection
+and regulating inflammation. The FAHP hydrogel may also
+promote osteoclast differentiation and upregulate Hedgehog
+signaling pathway to accelerate wound healing. Gene set enrich-
+ment analysis (GSEA) demonstrates significant upregulation
+in hair follicle morphogenesis (NES = 1.88), skin develop-
+ment (NES = 1.71), and Hedgehog signaling pathway (NES
+= 1.41) in the FAHP+NIR group (Figure 10H–J). A heatmap
+further confirms significant upregulation of Hedgehog signaling
+pathway-related DEGs (Shh, Ptch1, Gli1, Gli2, Scube1) in the
+FAHP+NIR group (Figure 10K) [62]. Given the established roles
+of Hedgehog signaling in stem cell proliferation and differenti-
+ation, hair follicle regeneration, and microvascular remodeling,
+these results suggest that the healing effects of FAHP+NIR
+treatment may stem from the activation of this signaling path-
+way.
+Heatmap visualization of key DEGs shows the downregula-
+tion of chemotaxis-related genes (Ccl2, Ccl3, Ccl7, Ccl9, Cxcl1,
+Cxcl3, and Cxcl6) and pro-inflammatory genes (Map3k8, Mmp8,
+Csf3, and Sca1) following FAHP+NIR treatment (Figure 10L).
+Notably, genes involved in hair follicle development (Sp6),
+hair cycle regulation (Foxn1), and keratinization promotion
+(Tgm3) are upregulated, suggesting favorably improved skin
+function [63]. Additionally, the genes that promote wound heal-
+ing (Tnfrsf19, Fgfr2, Fgfr3, Fgfr4, Mkx, Itgb4, and Adora1) are
+upregulated, indicating enhanced cell migration and tissue repair
+capabilities.
+To validate the activation of relevant signaling pathways at the
+protein level, Western blot analysis was performed on L929
+cells treated with PBS and FAHP+NIR to systematically assess
+the expression levels of key proteins in the Hedgehog pathway
+(Figure 10M). Compared with the PBS group, the expression
+levels of Hedgehog pathway-related proteins, including the lig-
+and Shh, the receptor Ptch1, the signal transducer Smo, and
+the downstream transcription factor Gli1, were significantly
+upregulated in the FAHP+NIR group (Figure 10N), indicating
+activation of this pathway. In addition, ELISA assays revealed
+that FAHP+NIR treatment significantly reduced TNF-α and IL-
+17 secretion in L929 cells (Figure 10O,P), suggesting that the
+FAHP hydrogel participated in the regulation of inflammatory
+responses.
+In conclusion, FAHP+NIR treatment accelerated wound healing
+through multiple mechanisms, including reduction of exces-
+sive inflammation, promotion of hair follicle development, and
+enhancement of cell proliferation and tissue remodeling. These
+findings underscore the potential of FAHP hydrogel as a promis-
+ing therapeutic strategy.
+3
+Conclusions
+We developed a self-evolutionary Fe3N/Fe3O4 nHJ-incorporated
+hyaluronan/poly(aspartic acid) hydrogel dressing through Ag+-
+hydrazide coordination and Schiff base dual dynamic crosslink-
+ing strategy, aiming at meeting the requirements of different
+wound healing stages. The hydrogel mediated in situ reduction
+of Ag+ to gradually generate Ag nanozymes with superox-
+ide dismutase-like and catalase-like activities. Fe3N/Fe3O4 nHJ
+photosensitizer continuously released ammonia via hydrolysis,
+generated 1O2 and ⋅O2
+‒ and heat under 808 nm laser irradiation,
+and exhibited peroxidase-/catalase-like activities. The dressing
+displayed exceptional biocompatibility, self-healing capacity and
+injectability, and could conduct effective hemostasis, cascade
+catalytic reaction and phototherapy. The multifunctional dress-
+ing could actively and temporally modulate wound niche to
+substantially promote infected full-thickness wound closure
+in diabetic rats, with potent broad-spectrum antibacterial and
+anti-biofilm activities from Ag+ and phototherapy at initial
+infectious stage, favorable redox and immune rebalancing func-
+tions by ROS scavenging and macrophage M2 polarization
+mediated by antioxidative Ag nanozymes and nHJ during the
+inflammatory period, and extensive cell proliferation, vascular-
+ization, collagen deposition and re-epithelialization boosted by
+ammonia and oxygenation in the proliferative stage. mRNA
+sequencing analysis validated the upregulation of multiple
+pro-healing signaling pathways. This study demonstrates an
+active temporal therapeutic strategy to efficiently accelerate
+MRSA-infected cutaneous wound healing, offering a promising
+option for the phased treatment of clinical refractory chronic
+wounds.
+4
+Experimental Section
+4.1
+Statistical Analysis
+All results were presented as mean ± S.D. Differences between
+two groups were analyzed using a t-test. For comparisons among
+more than two groups, one-way ANOVA or two-way ANOVA
+was performed using GraphPad Prism 9.0 software. Statistical
+significance was denoted as “ns” (no significant difference),
+*p < 0.05, **p < 0.01, and ***p < 0.001.
+The preparation and characterization methods of the nanoparti-
+cles and hydrogels are available in the Supporting Information.
+Advanced Materials, 2026
+19 of 22
+ 15214095, 2026, 30, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202523302 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Acknowledgements
+This work was supported by the National Natural Science Foundation
+of China (82272802), the Medical Career Development Fund of Xi’an
+Jiaotong University (XJYG2025-SFJJ014), the Wu Jieping Medical Foun-
+dation (320.6750.2023-17-19, 320.6750.2025-17-3, and 320.6750.2025-26-16),
+the Clinical Research Foundation of the First Affiliated Hospital of
+Xi’an Jiaotong University (XJTU1AF-CRF-2023-023), the China Postdoc-
+toral Science Foundation (2023TQ0268 and 2023M732801), Institutional
+Foundation of The First Affiliated Hospital of Xi’an Jiaotong University
+(2024-QN-27), and the Natural Science Foundation of Shaanxi Province of
+China (2024GX-YBXM-315 and 2024JC-YBMS-640). We also would like to
+thank XiaoFei Wang at Biomedical Experimental Center of Xi’an Jiaotong
+University for his technical support.
+Conflicts of Interest
+The authors declare no conflicts of interest.
+Ethics Statement
+All animal experiments were approved by the Ethical Committee of Xi’an
+Jiaotong University (ethics no. XJTUAE2023-1414).
+Data Availability Statement
+The data that support the findings of this study are available from the
+corresponding author upon reasonable request.
+References
+1. I. Genitsaridi, P. Salpea, A. Salim, et al., “11th edition of the IDF Diabetes
+Atlas: global, regional, and national diabetes prevalence estimates for
+2024 and projections for 2050,” Lancet Diabetes & Endocrinology 14 (2026):
+149–156, https://doi.org/10.1016/S2213-8587(25)00299-2.
+2. D. G. Armstrong, T. W. Tan, A. J. M. Boulton, and S. A. Bus, “Diabetic
+Foot Ulcers,” JAMA 330 (2023): 62–75, https://doi.org/10.1001/jama.2023.
+10578.
+3. X. Wang, X. Qin, Y. Liu, et al., “Plasmonic Supramolecular Nanozyme-
+Based Bio-Cockleburs for Synergistic Therapy of Infected Diabetic
+Wounds,” Advanced Materials 36 (2024): 2411194, https://doi.org/10.1002/
+adma.202411194.
+4. P. Ye, Y. Yang, M. Liu, et al., “Co-Delivery of Morphologically Switch-
+able Au Nanowire and Hemoglobin-Resveratrol Nanoparticles in the
+Microneedle for Diabetic Wound Healing Therapy,” Advanced Materials
+37 (2025): 2419430, https://doi.org/10.1002/adma.202419430.
+5. Y. L. Jin, S. H. Liu, X. Y. Wang, C. Y. Wang, Q. F. Ruan, and
+W. Li, “Multifunctional Microneedle Patches Loaded with Engineered
+Nitric Oxide-Releasing Nanocarriers for Targeted and Synergistic Chronic
+Wound Therapy,” Advanced Materials 37 (2025): 2413108, https://doi.org/
+10.1002/adma.202413108.
+6. J. Y. Shan, X. Y. Wu, J. Y. Che, J. J. Gan, and Y. J. Zhao, “Reactive
+Microneedle Patches with Antibacterial and Dead Bacteria-Trapping
+Abilities for Skin Infection Treatment,” Advanced Science 11 (2024):
+2309622, https://doi.org/10.1002/advs.202309622.
+7. D. Pranantyo, C. K. Yeo, Y. Wu, et al., “Hydrogel Dressings with
+Intrinsic Antibiofilm and Antioxidative Dual Functionalities Accelerate
+Infected Diabetic Wound Healing,” Nature Communications 15 (2024):
+954, https://doi.org/10.1038/s41467-024-44968-y.
+8. H. Li, S. Wei, Q. Ling, et al., “Nanozyme-Reinforced Hydrogel Spray
+as a Reactive Oxygen Species-Driven Oxygenator to Accelerate Diabetic
+Wound Healing,” Advanced Materials 37 (2025): 2504829, https://doi.org/
+10.1002/adma.202504829.
+9. S. M. Andrabi, S. M. S. Shahriar, Y. Tian, et al., “Engineered Peptides-
+Based Hybrid-Nested Microneedle Effectively Treat Biofilm-Infected
+Diabetic Wounds,” Advanced Functional Materials 35 (2025): 2422150,
+https://doi.org/10.1002/adfm.202422150.
+10. J. Jiang, H. Liang, Y. Ye, et al., “Stem Cell Secretome Armed Magneto-
+Actuated Micromotors as Spatio-Temporal Manipulators for Wound
+Healing Acceleration,” Nature Communications 16 (2025): 6754, https://
+doi.org/10.1038/s41467-025-61914-8.
+11. M. Li, C. Wang, Q. Yu, et al., “A Wearable and Stretchable Dual-
+Wavelength LED Device for Home Care of Chronic Infected Wounds,”
+Nature Communications 15 (2024): 9380, https://doi.org/10.1038/s41467-
+024-53579-6.
+12. Z. Jiang, W. Zhang, C. Zhu, et al., “Copper Telluride@Sodium
+Alginate-Poly(vinyl Alcohol) Nanofiber/Gauze Wound Dressing for
+Gram-Negative Bacteria-Infected Wounds,” ACS Nano 19 (2025): 26170–
+26192, https://doi.org/10.1021/acsnano.5c07686.
+13. Y. X. Huang, J. L. Li, Z. H. Yu, J. Y. Li, K. N. Liang, and Y.
+Deng, “Elaborated Bio-Heterojunction with Robust Sterilization Effect
+for Infected Tissue Regeneration via Activating Competent Cell-Like
+Antibacterial Tactic,” Advanced Materials 36 (2024): 2414111, https://doi.
+org/10.1002/adma.202414111.
+14. X. N. Hou, H. S. Wang, X. Y. Yao, Q. L. Zhou, and X. D. Niu, “Pt-Induced
+Sublattice Distortion Facilitates Enzyme Cascade Reactions for Erad-
+icating Intracellularly Methicillin-Resistant Staphylococcus aureus and
+Enhancing Diabetic Wound Healing,” ACS Nano 19 (2025): 17709–17727,
+https://doi.org/10.1021/acsnano.5c01894.
+15. M. He, X. Yang, D. Xiang, et al., “Jahn–Teller-Driven Electronic Modu-
+lation of Bio-Heterojunction for Wound Regeneration after Postoperative
+Tumor Resection,” Nano Letters 25 (2025): 6828–6838, https://doi.org/10.
+1021/acs.nanolett.5c01632.
+16. D. Wang, H. Wang, L. Ji, et al., “Hybrid Plasmonic Nanodumbbells
+Engineering for Multi-Intensified Second Near-Infrared Light Induced
+Photodynamic Therapy,” ACS Nano 15 (2021): 8694–8705, https://doi.org/
+10.1021/acsnano.1c00772.
+17. J. Liu, A. Wang, S. Liu, et al., “A Titanium Nitride Nanozyme
+for pH-Responsive and Irradiation-Enhanced Cascade-Catalytic Tumor
+Therapy,” Angewandte Chemie International Edition 60 (2021): 25328–
+25338, https://doi.org/10.1002/anie.202106750.
+18. Z. Yang, L. Wang, X. Zhang, et al., “Nitrogen Vacancy Modulation
+of Tungsten Nitride Peroxidase-Mimetic Activity for Bacterial Infection
+Therapy,” ACS Nano 18 (2024): 24469–24483, https://doi.org/10.1021/
+acsnano.4c07856.
+19. J. W. Guan, J. L. Wang, X. S. Zhang, J. W. Chi, Z. L. Ma, and
+X. J. Zhang, “Silver Nanoparticles with Multimodal Biological Activi-
+ties Integrated into Advanced Material Platforms for Chronic Wound
+Management,” Nanoscale 17 (2025): 18409–18445, https://doi.org/10.1039/
+d5nr02066b.
+20. L. Yang, D. Zhang, W. Li, et al., “Biofilm Microenvironment Trig-
+gered Self-Enhancing Photodynamic Immunomodulatory Microneedle
+for Diabetic Wound Therapy,” Nature Communications 14 (2023): 7658,
+https://doi.org/10.1038/s41467-023-43067-8.
+21. Y. Yang, Q. Fang, J. Wang, et al., “Glucose-Activated Programmed
+Hydrogel with Self-Switchable Enzyme-like Activity for Infected Diabetic
+Wound Self-Adaptive Treatment,” Advanced Materials 37 (2025): 2419158,
+https://doi.org/10.1002/adma.202419158.
+22. H. Tao, Y. Xia, T. Tang, et al., “Self-Responsive H2-Releasing
+Microneedle Patch Temporally Adapts to the Sequential Microenviron-
+ment Requirements for Optimal Diabetic Wound Healing,” Chemical
+Engineering Journal 489 (2024): 151200, https://doi.org/10.1016/j.cej.2024.
+151200.
+23. C. Tyavambiza, M. Meyer, and S. Meyer, “Cellular and Molecular
+Events of Wound Healing and the Potential of Silver Based Nanoformula-
+tions as Wound Healing Agents,” Bioengineering 9 (2022): 712, https://doi.
+org/10.3390/bioengineering9110712.
+24. F. Zhang, H. Zhang, S. Wang, et al., “A Dynamically Phase-Adaptive
+Regulating Hydrogel Promotes Ultrafast Anti-Fibrotic Wound Healing,”
+20 of 22
+Advanced Materials, 2026
+ 15214095, 2026, 30, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202523302 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Nature Communications 16 (2025): 3738, https://doi.org/10.1038/s41467-
+025-58987-w.
+25. Y. Kang, L. Xu, J. Dong, et al., “Programmed Microalgae-Gel Promotes
+Chronic Wound Healing in Diabetes,” Nature Communications 15 (2024):
+1042, https://doi.org/10.1038/s41467-024-45101-9.
+26. B. Zhao, J. Sun, Y. Xu, et al., “Programmed Temporal Modulation
+by Using a Magnetoelectric Wound Dressing for Ultra-Fast Early-Stage
+Wound Healing,” Biomaterials 325 (2026): 123569, https://doi.org/10.1016/
+j.biomaterials.2025.123569.
+27. Y. Cheng, Y. Wang, Y. Wang, et al., “Microenvironment-Feedback
+Regulated Hydrogels as Living Wound Healing Materials,” Nature
+Communications 16 (2025): 6050, https://doi.org/10.1038/s41467-025-
+60858-3.
+28. H. Shu, T. Zhang, Y. Jiang, et al., “Mechanoregulative Hydrogel
+Facilitates Rapid Scarless Healing by Self-Adaptive Control of Wound
+Niche at Different Stages,” Science Advances 11 (2025): adv9895, https://
+doi.org/10.1126/sciadv.adv9895.
+29. T. Wei, T. Pan, X. Peng, et al., “Janus Liposozyme for the Modulation
+of Redox and Immune Homeostasis in Infected Diabetic Wounds,” Nature
+Nanotechnology 19 (2024): 1178–1189, https://doi.org/10.1038/s41565-024-
+01660-y.
+30. L. Cheng, Z. Zhuang, M. Yin, et al., “A Microenvironment-Modulating
+Dressing with Proliferative Degradants for the Healing of Diabetic
+Wounds,” Nature Communications 15 (2024): 9786, https://doi.org/10.
+1038/s41467-024-54075-7.
+31. Y. Ma, C. Xie, C. Liao, et al., “Zinc-Coordinated Trienzyme Nanogel
+Cascade Therapy for Accelerated Post-Pancreatectomy Cutaneous Wound
+Healing,” Advanced Materials 37 (2025): 08538, https://doi.org/10.1002/
+adma.202508538.
+32. J. Qian, L. Ji, W. Xu, et al., “Copper-Hydrazide Coordinated Mul-
+tifunctional Hyaluronan Hydrogels for Infected Wound Healing,” ACS
+Applied Materials & Interfaces 14 (2022): 16018–16031, https://doi.org/10.
+1021/acsami.2c01254.
+33. A. Merhi, P. Delrée, and A. M. Marini, “The Metabolic Waste Ammo-
+nium Regulates mTORC2 and mTORC1 Signaling,” Scientific Reports 7
+(2017): 44602, https://doi.org/10.1038/srep44602.
+34. S. Sergio, B. Spedicato, G. Corallo, et al., “β-Catenin/c-Myc Axis
+Modulates Autophagy Response to Different Ammonia Concentra-
+tions,” Advanced Biology 9 (2025): 2400408, https://doi.org/10.1002/adbi.
+202400408.
+35. J. Zhu, Q. Zeng, Y. Liu, et al., “Smart Nanosilver Strikes Twice:
+Precision Bacteria Killing Meets Autophagy-Boosted Healing for Infected
+Wounds,” Advanced Functional Materials 35 (2025): 2507797, https://doi.
+org/10.1002/adfm.202507797.
+36. Y. Gao, X. Chen, L. Liu, et al., “Transdermal Microneedle Integrat-
+ing a Biomimetic Self-Enhancing Fenton Reaction Nano-Reactor for
+Alleviating Rheumatoid Arthritis by Inflammatory Microenvironment
+Remodeling,” Theranostics 15 (2025): 7180–7196, https://doi.org/10.7150/
+thno.114855.
+37. Z. Huang, F. H. Li, Y. D. Liu, S. G. Chen, Z. D. Wei, and Q. Tang,
+“The Role of Nitrogen Sources and Hydrogen Adsorption on the Dynamic
+Stability of Fe–N–C Catalysts in Oxygen Reduction Reaction,” Chemical
+Science 15 (2024): 1132–1142, https://doi.org/10.1039/d3sc05378d.
+38. H. Hu, X. Wang, Z. Zhang, et al., “Engineered Nickel–Iron Nitride
+Electrocatalyst for Industrial-Scale Seawater Hydrogen Production,”
+Advanced Materials 37 (2025): 2415421, https://doi.org/10.1002/adma.
+202415421.
+39. Y. Wu, Y. Zhao, P. Zhai, et al., “Triggering Lattice Oxygen Activation of
+Single-Atomic Mo Sites Anchored on Ni–Fe Oxyhydroxides Nanoarrays
+for Electrochemical Water Oxidation,” Advanced Materials 34 (2022):
+2202523, https://doi.org/10.1002/adma.202202523.
+40. Y. Zhao, M. E. Sadat, A. Dunn, et al., “Photothermal Effect on Fe3O4
+Nanoparticles Irradiated by White-Light for Energy-Efficient Window
+Applications,” Solar Energy Materials and Solar Cells 161 (2017): 247–254,
+https://doi.org/10.1016/j.solmat.2016.11.039.
+41. Y.
+Liu
+and
+J.
+L.
+Wang,
+“Multivalent
+Metal
+Catalysts
+in
+Fenton/Fenton-Like Oxidation System: A Critical Review,” Chemical
+Engineering Journal 466 (2023): 143147, https://doi.org/10.1016/j.cej.
+2023.143147.
+42. W. Xu, Y. Wang, G. Hou, et al., “Tumor Microenvironment Respon-
+sive Hollow Nanoplatform for Triple Amplification of Oxidative Stress
+to Enhance Cuproptosis-Based Synergistic Cancer Therapy,” Advanced
+Healthcare Materials 12 (2023): 2202949, https://doi.org/10.1002/adhm.
+202202949.
+43. H. Adelnia, H. D. N. Tran, P. J. Little, I. Blakey, and H. T. Ta,
+“Poly(aspartic Acid) in Biomedical Applications: From Polymerization,
+Modification, Properties, Degradation, and Biocompatibility to Appli-
+cations,” ACS Biomaterials Science & Engineering 7 (2021): 2083–2105,
+https://doi.org/10.1021/acsbiomaterials.1c00150.
+44. X. Y. Zhang, Y. P. Liang, S. F. Huang, and B. L. Guo, “Chitosan-Based
+Self-Healing Hydrogel Dressing for Wound Healing,” Advances in Colloid
+and Interface Science 332 (2024): 103267, https://doi.org/10.1016/j.cis.2024.
+103267.
+45. S. Chernousova and M. Epple, “Silver as Antibacterial Agent: Ion,
+Nanoparticle, and Metal,” Angewandte Chemie International Edition 52
+(2013): 1636–1653, https://doi.org/10.1002/anie.201205923.
+46. Z. L. Zhu, J. Y. Gao, F. T. Li, and H. R. Zhang, “The Study of Adsorption
+of L-Aspartic Acid on Silver Sol by Surface-Enhanced Raman Scattering,”
+Spectroscopy and Spectral Analysis 24 (2004): 68–70.
+47. J. P. Xu, Y. Liu, and S. H. Hsu, “Hydrogels Based on Schiff Base
+Linkages for Biomedical Applications,” Molecules (Basel, Switzerland) 24
+(2019): 3005, https://doi.org/10.3390/molecules24163005.
+48. M. A. Raza, Z. Kanwal, A. Rauf, A. N. Sabri, S. Riaz, and S. Naseem,
+“Size- and Shape-Dependent Antibacterial Studies of Silver Nanoparticles
+Synthesized by Wet Chemical Routes,” Nanomaterials 6 (2016): 74, https://
+doi.org/10.3390/nano6040074.
+49. W. Xu, A. Suo, A. J. M. Aldai, et al., “Hollow Calcium/Copper
+Bimetallic Amplifier for Cuproptosis/Paraptosis/Apoptosis Cancer Ther-
+apy via Cascade Reinforcement of Endoplasmic Reticulum Stress and
+Mitochondrial Dysfunction,” ACS Nano 18 (2024): 30053–30068, https://
+doi.org/10.1021/acsnano.4c11455.
+50. M. Kharaziha, A. Baidya, and N. Annabi, “Rational Design of
+Immunomodulatory Hydrogels for Chronic Wound Healing,” Advanced
+Materials 33 (2021): 2100176, https://doi.org/10.1002/adma.202100176.
+51. K. G. Harding, H. L. Morris, and G. K. Patel, “Science, Medicine, and
+the Future: Healing Chronic Wounds,” BMJ 324 (2002): 160–163, https://
+doi.org/10.1136/bmj.324.7330.160.
+52. T. A. Wynn and K. M. Vannella, “Macrophages in Tissue Repair,
+Regeneration, and Fibrosis,” Immunity 44 (2016): 450–462, https://doi.
+org/10.1016/j.immuni.2016.02.015.
+53. V. Falanga, “Wound Healing and Its Impairment in the Diabetic Foot,”
+The Lancet 366 (2005): 1736–1743, https://doi.org/10.1016/s0140-6736(05)
+67700-8.
+54. O. A. Peña and P. Martin, “Cellular and Molecular Mechanisms of Skin
+Wound Healing,” Nature Reviews Molecular Cell Biology 25 (2024): 599–
+616, https://doi.org/10.1038/s41580-024-00715-1.
+55. B. Ezraty, A. Gennaris, F. Barras, and J. F. Collet, “Oxidative Stress,
+Protein Damage and Repair in Bacteria,” Nature Reviews Microbiology 15
+(2017): 385–396, https://doi.org/10.1038/nrmicro.2017.26.
+56. L. Xu, Y. Y. Wang, J. Huang, C. Y. Chen, Z. X. Wang, and H. Xie,
+“Silver Nanoparticles: Synthesis, Medical Applications and Biosafety,”
+Theranostics 10 (2020): 8996–9031, https://doi.org/10.7150/thno.45413.
+57. L. Pasquina-Lemonche, J. Burns, R. D. Turner, et al., “The Architecture
+of the Gram-Positive Bacterial Cell Wall,” Nature 582 (2020): 294–297,
+https://doi.org/10.1038/s41586-020-2236-6.
+Advanced Materials, 2026
+21 of 22
+ 15214095, 2026, 30, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202523302 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+58. H. C. Flemming, J. Wingender, U. Szewzyk, P. Steinberg, S. A. Rice,
+and S. Kjelleberg, “Biofilms: An Emergent Form of Bacterial Life,” Nature
+Reviews Microbiology 14 (2016): 563–575, https://doi.org/10.1038/nrmicro.
+2016.94.
+59. L. Gardeazabal and A. Izeta, “Elastin and Collagen Fibres in Cuta-
+neous Wound Healing,” Experimental Dermatology 33 (2024): 15052,
+https://doi.org/10.1111/exd.15052.
+60. L. A. DiPietro, “Angiogenesis and Wound Repair: When Enough Is
+Enough,” Journal of Leukocyte Biology 100 (2016): 979–984, https://doi.
+org/10.1189/jlb.4MR0316-102R.
+61. G. C. Gurtner, S. Werner, Y. Barrandon, and M. T. Longaker, “Wound
+Repair and Regeneration,” Nature 453 (2008): 314–321, https://doi.org/10.
+1038/nature07039.
+62. J. Briscoe and P. P. Thérond, “The Mechanisms of Hedgehog Signalling
+and Its Roles in Development and Disease,” Nature Reviews Molecular Cell
+Biology 14 (2013): 416–429, https://doi.org/10.1038/nrm3598.
+63. M. Zhu, Y. Fang, Y. Huang, et al., “Transcriptomics Sequencing
+Reveals Qu-Shi-Yu-Fa Decoction Promotes Hair Cycle and Keratinization
+by Upregulating FOXN1 and TGM3 to Treat Androgenetic Alopecia,”
+Phytomedicine 143 (2025): 156837, https://doi.org/10.1016/j.phymed.2025.
+156837.
+Supporting Information
+Additional supporting information can be found online in the Supporting
+Information section.
+SupportingFile: adma73169-sup-0001-SuppMat.docx.
+22 of 22
+Advanced Materials, 2026
+ 15214095, 2026, 30, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202523302 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

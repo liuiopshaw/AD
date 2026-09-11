@@ -1,0 +1,2167 @@
+Review
+Gold clusters: A promising NIR-II probe for bioimaging and biosensing
+Jiaqi Sun a,1, Wanyu Cheng a,1, Xu Liu b,1, Huixin Xiang a,c, Chenhao Ruan a,c, Fenzhen Chen a,
+Chuanhao Yao a,c,*
+a Strait Laboratory of Flexible Electronics, Fujian Key Laboratory of Flexible Electronics, Strait Institute of Flexible Electronics, Fujian Normal University, Fuzhou 350117,
+China
+b Institute for Energy Research, Jiangsu University, Zhenjiang 212013, China
+c Key laboratory of Flexible Electronics of Zhejiang Province, Ningbo Institute of Northwestern Polytechnical University, 218 Qingyi Road, Ningbo 315103, China
+A R T I C L E I N F O
+Keywords:
+Gold clusters
+NIR-II bioimaging and biosensing
+PLQY enhancement
+Red-shifting emission wavelengths
+A B S T R A C T
+Optical imaging and biosensing in the second near-infrared window (NIR-II, 1000–1700 nm) have gained sig-
+nificant interest due to their high signal-to-noise ratio (SNR) and excellent spatial and temporal resolution. These
+features enable accurate monitoring and treatment of deeper bio-pathological processes. Gold nanoclusters (Au
+NCs) have emerged as promising candidates for NIR-II emission, offering advantages such as their ultra-small
+size, outstanding biocompatibility, large Stokes shift, and favorable photoluminescence (PL) properties. This
+review begins by highlighting the benefits and applications of NIR-II luminescent Au NCs in bioimaging and
+biosensing. We then explore current strategies to enhance the photoluminescence quantum yield (PLQY) of Au
+NCs, including techniques such as metal doping, ligand engineering, and the aggregation-induced emission (AIE).
+Furthermore, we discuss advancements in red-shifting the emission wavelength of Au NCs. Our goal is to provide
+researchers with fresh insights into improving and fine-tuning the photoluminescent properties of Au NCs,
+thereby broadening their potential applications in NIR-II bioimaging and biosensing.
+1. Introduction
+Biomedical imaging techniques are essential in modern medicine,
+aiding clinicians in diagnosing conditions and guiding surgical proced-
+ures [1,2]. However, traditional methods such as ultrasound imaging
+(UI), magnetic resonance imaging (MRI), and computed tomography
+(CT) present challenges, including radiation exposure, high costs, and
+limitations in resolution, sensitivity, and real-time detection [3,4].
+These drawbacks have prompted the development of optical imaging
+and sensing technologies, which offer high resolution, sensitivity, and
+molecular targeting capabilities [5,6]. And these technologies enable
+detailed observation of biological tissue structures and the detection of
+low biomarker concentrations, crucial for early disease diagnosis and
+understanding biological systems [7–11]. Furthermore, optical imaging
+devices are typically more portable, non-invasive, and cost-effective,
+making them suitable for real-time applications in various settings,
+such as point-of-care diagnostics, intraoperative guidance, and health-
+care monitoring [12–15].
+Despite these advantages, optical imaging faces its own challenges
+[16]. Most techniques are limited to the visible (400–700 nm) and near-
+infrared I (NIR-I, 700–900 nm) windows, where biological tissue auto-
+fluorescence, light absorption, and scattering can hinder imaging reso-
+lution and signal-to-background ratios (SBR, the ratio of the signal
+intensity between target and the background, measuring the “contrast”
+of the imaging) [17,18]. In contrast, the NIR-II region (1000–1700 nm),
+particularly the NIR-IIa window (1300–1400 nm) and the NIR-IIb win-
+dow (1500–1700 nm), offers minimal autofluorescence, high signal-to-
+noise ratios (SNR, the ratio of the signal strength between target and
+the background noise, reflecting the “clarity” of the signal), high spatial
+resolution, and deep tissue penetration, making it a promising area for
+research (Fig. 1A and B) [19–21]. In this window, autofluorescence is
+significantly reduced, enhancing imaging performance in tissues with
+high endogenous autofluorescence (Fig. 1C–E) [22–25]. Consequently,
+NIR-II imaging shows great potential for medical diagnostics, pathology
+analysis, and therapeutic interventions.
+However, challenges remain. NIR-II luminescent materials often
+* Corresponding author at: Strait Laboratory of Flexible Electronics, Fujian Key Laboratory of Flexible Electronics, Strait Institute of Flexible Electronics, Fujian
+Normal University, Fuzhou 350117, China.
+E-mail address: ifechhyao@fjnu.edu.cn (C. Yao).
+1 These authors contributed equally to this work.
+Contents lists available at ScienceDirect
+Coordination Chemistry Reviews
+journal homepage: www.elsevier.com/locate/ccr
+https://doi.org/10.1016/j.ccr.2025.216544
+Received 12 January 2025; Received in revised form 9 February 2025; Accepted 10 February 2025
+Coordination Chemistry Reviews 533 (2025) 216544 
+Available online 24 February 2025 
+0010-8545/© 2025 Elsevier B.V. All rights are reserved, including those for text and data mining, AI training, and similar technologies. 
+
+exhibit low QY, limiting their signal strength and sensitivity [26,27].
+While longer wavelengths scatter less, many luminescent materials
+struggle to achieve high emission wavelengths within the NIR-II win-
+dow, which is necessary to minimize tissue autofluorescence and
+background interference [28]. Various NIR-II light-emitting materials
+have been explored, including rare earth nanoparticles [29–31], quan-
+tum dots [32–34], organic nanoparticles [35–37], and single-walled
+carbon nanotubes [38–40]. Unfortunately, these materials frequently
+suffer from low QY, poor stability, and limited biocompatibility [41,42].
+Therefore, there is a pressing need to enhance their performance or
+develop new, efficient, and stable NIR-II luminescent materials.
+Gold nanoclusters (Au NCs) are ultra-small, atomically precise par-
+ticles with a core-shell structure, typically consisting of a metallic core
+made of several to hundreds of gold atoms, surrounded by a shell of
+metal-ligand motifs [43–45]. The motifs are arranged in a “short-bridge”
+structure, providing a protective layer around the core [46]. The Au
+NCs, with sizes ranging from 1 to 3 nm, exhibit a unique combination of
+properties found in both larger nanoparticles and smaller organome-
+tallic molecules [47,48]. This size range enhances their versatility and
+broadens their potential applications [49,50]. They also possess well-
+defined structures and demonstrate molecular-like transitions between
+their highest occupied molecular orbitals (HOMO) and lowest unoccu-
+pied molecular orbitals (LUMO) [51–54]. The core-shell structure can be
+finely tuned at the atomic level, allowing for significant alterations in
+their physicochemical properties [55–57]. Additionally, Au NCs are
+known for their simple synthesis, low toxicity, large Stokes shift,
+excellent biocompatibility, and high renal clearance, making them a
+promising class of luminescent materials for NIR-II imaging and sensing
+[58–60].
+Currently, research on NIR-II luminescent Au NCs is rapidly
+advancing [61,62]. The development of Au NCs with atomically precise
+structures and predictable luminescent properties holds great potential
+for enhancing PLQY and controlling emission wavelengths, benefiting
+bioimaging
+and
+biosensing
+applications
+[52,63–65].
+However,
+achieving precise control over the PL properties of Au NCs remains a
+complex challenge [19,66]. Researchers face significant technical hur-
+dles in managing cluster structures and optical properties to improve PL
+efficiency and stability [67].
+While several reviews have summarized progress in NIR-II lumi-
+nescent materials, focusing on synthesis, characterization, and applica-
+tions, there is a lack of comprehensive summaries on strategies for
+controlling PLQY and red-shifting emission wavelengths [44,68–70].
+Fig. 1. (A) Visible, NIR-I, and NIR-II spectral ranges. Reproduced with permission [19]. Copyright 2023, Wiley-VCH. (B) Different tissues scattering coefficients.
+Reproduced with permission [20]. Copyright 2024, American Chemical Society. (C) Attenuation coefficients for blood, skin, and fat. Reproduced with permission
+[22]. Copyright 2021, Wiley-VCH. (D) Reduced auto-fluorescence in NIR-II improves SNR in imaging. (E) Absorption spectrum of water, showing absorption in NIR-II
+region. Reproduced with permission [23]. Copyright 2020, American Chemical Society.
+J. Sun et al.
+Coordination Chemistry Reviews 533 (2025) 216544 
+2 
+
+Thus, a thorough review of the design and application of NIR-II lumi-
+nescent Au NCs is essential, particularly regarding strategies to enhance
+their PL intensity and regulate emission wavelengths. The review is
+organized into three main sections: (i) the advantages and applications
+of NIR-II emitting Au NCs in bioimaging and biosensing; (ii) strategies
+for enhancing PLQY; and (iii) methods for extending the emission
+wavelength of Au NCs. This review aims to serve as a valuable resource
+for researchers studying NIR-II luminescent Au NCs, facilitating ad-
+vancements in bioimaging and biosensing applications while promoting
+the development of related technologies.
+2. NIR-II gold clusters for bioimaging and biosensing
+2.1. Bioimaging
+Medical imaging technologies have significantly advanced our un-
+derstanding of diseases and improved early diagnosis [71–73]. Recently,
+NIR-II photoluminescent imaging probes have emerged as non-invasive,
+efficient, and safe tools for detection and treatment [74–76]. These
+probes have found applications in tumor, kidney, bone, and vascular
+imaging [77–79]. By utilizing the optical properties of the NIR-II win-
+dow, they reduce background interference, enabling penetration
+through soft tissue up to centimeters and providing high spatial reso-
+lution of approximately 10 μm [42,80]. As a result, NIR-II probes are
+effective for visualizing and quantifying molecular information in
+biomedical research [1]. Moreover, optimizing the optical properties
+and biocompatibility of Au NCs has further enhanced the sensitivity and
+specificity of NIR-II imaging, paving the way for clinical applications
+and broader use in medical diagnostics and therapies [81,82].
+For example, glutathione (GSH) in tumor cells can bind to platinum
+(Pt), forming GSH-Pt conjugates, which lead to resistance against
+platinum-based chemotherapy [83]. Reducing GSH levels in tumor cells
+is essential for improving sensitivity to these treatments [84]. Yang et al.
+developed AuNCs-Pt, a dual-function cluster drug that not only excels in
+NIR-II imaging but also enhances the effects of platinum chemotherapy
+(Fig. 2A) [85]. It displays two emission peaks at 945 and 1035 nm, with
+Fig. 2. (A) Overview of AuNCs-Pt synthesis, PDHC model establishment, and dual-action mechanisms, including Pt (IV) prodrug reduction, GSH depletion, and NIR-
+II imaging for platinum transportation. (B) and (C) NIR-I and NIR-II images, ex vivo signal intensities, and Pt biodistribution in the heart (H), liver (Li), spleen (S),
+lung (Lu), kidney (K), and tumor (T) 12 h post-i.p. (intraperitoneal) AuNCs-Pt administration. (D) An orthotopic HGSOC model with weekly treatments of AuNCs-Pt,
+Pt (IV), CDDP, and PBS, and LUC signal monitoring of tumor growth. (E) A subcutaneous PDHC model and therapy protocol, showing i.v. (intravenous) injections of
+AuNCs-Pt, Pt(IV), CDDP, and PBS at days 0, 2, 4, and 6. Reproduced with permission [85]. Copyright 2020, American Chemical Society. (F) Dual-ligand stabilized Au
+NCs and NIR-II imaging of kidney dysfunction. (G) NIR-II imaging of KM mice 5 min after i.v. injection of Au NCs and ICG. (H) NIR-II imaging of KM mice 24 h after i.
+v. injection of MHA/Cystm-AuNCs. Reproduced with permission [87]. Copyright 2023, American Chemical Society.
+J. Sun et al.
+Coordination Chemistry Reviews 533 (2025) 216544 
+3 
+
+a QY of 0.04 %. AuNCs-Pt facilitates NIR-II imaging by visualizing
+platinum transport within tissues while also depleting intracellular GSH
+to boost chemotherapy efficacy (Fig. 2B and C). Further research
+demonstrated that AuNCs-Pt significantly inhibited tumor growth in
+relevant models of high-grade serous ovarian cancer (HGSOC) (Fig. 2D)
+and hepatocellular carcinoma (PDHC) (Fig. 2E), underscoring its po-
+tential in clinical cancer therapy.
+NIR-II imaging also allows for precise monitoring of renal function,
+enabling early detection of issues and timely interventions to prevent
+renal disease progression [86]. Recent studies synthesized dual-ligand-
+stabilized Au NCs by combining mercaptoundecanoic acid (MHA) with
+various ligands, including cysteamine (Cystm), 2-mercaptoethanol
+(ME), and DL-dithiothreitol (DTT) (Fig. 2F) [87]. These Au NCs
+exhibited a NIR-II emission peak at 1064 nm and QYs ranging from 1.4
+% to 2.0 %. In vivo experiments showed that MHA/Cystm-AuNCs
+provided a strong SBR of 4.53, highlighting their potential for high-
+contrast renal imaging (Fig. 2G). Following tail vein injection, the kid-
+neys were clearly distinguishable within 5 min, and after 10 min, the
+signal shifted to the bladder as the Au NCs were cleared in urine
+(Fig. 2H). These findings indicate that Au NCs not only enable high-
+resolution imaging of deep tissues but also exhibit excellent renal
+clearance, making them particularly useful for monitoring conditions
+such as renal ischemia-reperfusion (RIR) and unilateral ureteral
+obstruction (UUO).
+Traditional imaging methods for bone in the NIR-I range face chal-
+lenges such as long half-lives, poor clearance, and low spatial resolution
+[88]. Furthermore, common therapeutic drugs like methotrexate (MTX)
+can have severe side effects with prolonged use [89]. Therefore, devel-
+oping photoluminescent materials that utilize high-resolution NIR-II
+technology for bone imaging is crucial. Li et al. discovered that the
+Fig. 3. (A) Scheme of Au25(SG)18 targeting bone, clearance, and applications. (B) and (C) NIR-II imaging of a mouse post-i.v. injection of Au NCs, highlighting bone
+uptake and visualization. (D) and (E) Pharmacokinetics of Au NCs via spine-to-soft tissue SBR, and FWHM (full width at half maxima) analysis showing rib widths of
+0.73–1.14 mm. Reproduced with permission [90]. Copyright 2020, Wiley-VCH. (F) Anisotropic AuMHA/TDT NCs with high SWIR brightness and long blood half-life,
+paired with a high-resolution SWIR imaging system for detailed vascular mapping. (G) and (H) SWIR and NIR imaging of WT 129/Ola mice 15 min post-i.v. AuMHA/
+TDT, with ventral images pre- and post-MCR processing. (I) and (J) Pixel contrast enhancement and left leg images with intensity profiles before and after MCR
+processing. Reproduced with permission [92]. Copyright 2020, American Chemical Society.
+J. Sun et al.
+Coordination Chemistry Reviews 533 (2025) 216544 
+4 
+
+Au25(SG)18 cluster, when combined with hydroxyapatite (HA), exhibi-
+ted outstanding NIR-II photoluminescence for bone imaging (Fig. 3A)
+[90]. Excited at 808 nm, the Au25(SG)18@HA showed a peak emission at
+1050 nm with a QY of 0.27 %. Due to its small size (core diameter
+approximately 3.30 ± 0.82 nm), the Au25(SG)18@HA was efficiently
+excreted by the renal system, minimizing liver and spleen accumulation.
+In vivo studies demonstrated successful accumulation of Au NCs in the
+thoracic, lumbar, knee, and pelvic regions within 8.5 min post-injection
+(Fig. 3B). Imaging results revealed a maximum SBR of 4.35 for the spine
+within 24 h, decreasing to 1.35 by day 14, indicating partial clearance
+from the bone (Fig. 3D). Compared to NIR-I imaging, NIR-II imaging
+provided higher resolution without requiring skin removal, enabling
+visualization of nearly all bone structures and offering essential support
+for surgical guidance (Fig. 3C and E). These results highlight the sig-
+nificant potential of the Au25(SG)18@HA as a bone-targeting NIR-II
+probe.
+Despite advancements in NIR-II imaging for cancer and renal di-
+agnostics, developing high quantum yield vascular contrast agents with
+good biocompatibility and minimal organ accumulation remains chal-
+lenging [91]. Yu et al. developed water-soluble gold nanocluster
+(AuMHA/TDT NCs) by utilizing mercaptohexanoic acid (MHA) and tetra
+(ethylene glycol) dithiol (TDT) as ligands (Fig. 3F) [92]. The AuMHA/
+TDT NCs exhibited emission peaks above 1250 nm and a high QY of
+approximately 6 %. In vivo experiments showed that intravenous
+injection of AuMHA/TDT NCs allowed clear visualization of the vascular
+network, enabling quantitative detection of vascular complexity at
+depths exceeding 4 mm. This approach facilitated non-invasive identi-
+fication of subtle vascular abnormalities in mice lacking bone morpho-
+genetic protein 9 (Bmp9). By integrating a non-invasive whole-body
+vascular imaging system with Monte Carlo constrained reconstruction
+(MCR) image processing, spatial resolution in the short-wave infrared
+(SWIR) window (1250–1700 nm) improved by 59 %, with contrast
+enhanced by an order of magnitude (Fig. 3G–J). This combination of
+high-brightness nanoprobes and advanced imaging techniques repre-
+sents a significant advancement in non-invasive vascular disease diag-
+nosis and biomedical applications.
+NIR-II Au NCs have shown considerable promise in bioimaging [93].
+Through strategies such as ligand modification and surface functional-
+ization, researchers have developed various NIR-II Au NCs with benefits
+including longer emission wavelengths, excellent biocompatibility, and
+high spatial resolution [94,95]. As synthesis technologies improve and
+our understanding of NIR-II Au NCs' biological behavior deepens, these
+nanomaterials are set to play a vital role in disease diagnosis, opening
+new avenues for biomedical research and clinical applications [96].
+2.2. Biosensing
+In recent years, NIR-II-emitting Au NCs have gained considerable
+Fig. 4. (A) Synthesis of Ln@AuNCs, NIR-II PL changes with ligand assembly and H2S treatment, and liver imaging for H2S detection. Reproduced with permission
+[101]. Copyright 2022, American Chemical Society. (B) Activatable AuNCs@PDA-MB nanoprobe for real-time NIR-II imaging of gastric acid secretion. (C) and (D)
+NIR-II PL spectra of AuNCs@PDA with varying MB concentrations and under different pH conditions. Reproduced with permission [104]. Copyright 2023, Elsevier.
+(E) Oxidation-responsive NIR-II PL of Au NCs with NAC and CDS ligands for AKI imaging, showing enhanced sensitivity in NAC-AuNCs, with a schematic of the
+imaging procedure. Reproduced with permission [107]. Copyright 2023, American Chemical Society.
+J. Sun et al.
+Coordination Chemistry Reviews 533 (2025) 216544 
+5 
+
+attention due to their advantages, including a large Stokes shift, ease of
+functionalization,
+excellent
+biocompatibility,
+high
+stability,
+and
+straightforward synthesis [19,20]. These properties enable Au NCs to
+detect a wide range of analytes and environmental changes with
+remarkable sensitivity and selectivity, significantly enhancing detection
+accuracy and reliability [97,98]. Consequently, NIR-II-emitting Au NCs
+are emerging as a focal point in biosensing technology research.
+For instance, hydrogen sulfide (H2S), a physiological gas signaling
+molecule, plays a crucial role in various biochemical processes,
+including inflammation, cardiovascular diseases, and cancer [99]. H₂S
+can disrupt the Au(0)@Au(I) structure within Au NCs, altering their
+electronic states and leading to photoluminescence quenching [100]. To
+address this, Li et al. developed a core-satellite cluster by assembling
+lanthanide-doped Er@YNPs (Ln@AuNCs) through ligand anchoring
+(Fig. 4A) [101]. Under 808 nm laser excitation, Ln@AuNCs exhibited
+dual emission bands centered at 1100 and 1550 nm, with strong NIR-II
+photoluminescence at 1550 nm attributed to Er3+. The NIR-II photo-
+luminescence at 1100 nm was enhanced by approximately 2.5-fold due
+to restricted intramolecular movement of thiolate ligands. Treatment
+with varying concentrations of NaHS resulted in rapid and significant
+quenching of the NIR-II photoluminescence at 1100 nm within 30 min,
+while the 1550 nm emission remained largely unaffected. Additionally,
+the photoluminescence intensity of Ln@AuNCs remained stable after
+exposure to various potential interfering substances, such as peroxyni-
+trite (ONOO−), bovine serum albumin (BSA), and ascorbic acid (AA).
+These results indicate that the high sensitivity and selectivity of this
+quenching response to H2S make Ln@AuNCs promising candidates for
+in vivo visualization of hepatic H2S detection, delivery, and prodrug
+screening, which could broaden the application of AuNCs-based bio-
+sensing technology.
+Traditional methods for detecting gastric acid, such as gastric juice
+extraction, digestible electronic capsules, and endoscopy, are often
+complex, time-consuming, and uncomfortable for patients [102,103].
+To overcome these challenges, Liang et al. encapsulated GSH-AuNCs
+with polydopamine (PDA) to enhance NIR-II luminescence and stabil-
+ity [104]. They conjugated methylene blue (MB) onto the surface of
+PDA-coated Au NCs to impart pH-responsive properties for gastric acid
+imaging (Fig. 4B). In this mechanism, the MB adsorption layer quenches
+the NIR-II photoluminescence emission of Au NCs at 1050 nm through
+photoinduced electron transfer (PET). Under acidic conditions in the
+stomach, protonation of the PDA surface leads to the detachment of MB,
+restoring the NIR-II photoluminescence of Au NCs (Fig. 4C and D). This
+pH-sensitive “off-on” nanoprobe provides a simple, safe, and non-
+invasive method for in vivo gastric acid detection, suitable for moni-
+toring changes in gastric acid due to dietary intake, acid-reducing
+medications, and gastric ulcer diseases. This offers significant implica-
+tions for assessing gastric function and diagnosing related conditions.
+During acute kidney injury (AKI), the kidneys experience reduced
+glomerular filtration rates (GFR) and elevated levels of peroxynitrite
+(ONOO−) [105,106]. Li et al. explored the use of N-acetylcysteine (NAC)
+and
+mercapto-β-cyclodextrin
+(CDS)
+capped
+NAC/CDS-AuNCs
+for
+detecting heightened ONOO−levels in a mouse model of AKI (Fig. 4E)
+[107]. They found that NAC-AuNCs, which are more susceptible to
+oxidation, aggregate upon exposure to ONOO−, increasing in size from
+2 nm to 400 nm. Additionally, due to the relatively low oxidation po-
+tential
+of
+ONOO−,
+significant
+quenching
+of
+the
+NIR-II
+photo-
+luminescence at 1050 nm under 808 nm excitation was avoided,
+indicating that NAC-AuNCs can be selectively oxidized by ONOO−while
+maintaining
+their
+NIR-II
+photoluminescence
+performance.
+Conse-
+quently, elevated ONOO−
+levels during AKI cause NAC-AuNCs to
+aggregate in damaged kidneys, enhancing NIR-II photoluminescence
+imaging. Following intravenous injection, NAC-AuNCs provided clear
+kidney imaging within 5 min. By one-hour post-injection, the NIR-II
+photoluminescence signal in the kidneys decreased while the signal in
+the bladder increased, indicating rapid clearance of NAC-AuNC nano-
+particles. NAC-AuNCs demonstrate excellent sensitivity and selectivity
+for ONOO−in AKI, highlighting the importance of ligand engineering in
+NIR-II Au NCs and advancing their application in biomedical sensing
+and imaging.
+NIR-II Au NCs hold great promise for biosensing applications due to
+their distinctive optical and chemical characteristics [59]. A compre-
+hensive list of NIR-II emitting Au NCs has been compiled, as presented in
+Table 1. As fabrication methods advance, we anticipate improvements in
+the stability and functionalization of NIR-II Au NCs, which will enhance
+their reliability in complex biological settings [108,109]. This progress
+will enable wider applications in multi-parameter detection and the
+creation of multifunctional sensors. Ongoing research and application of
+NIR-II Au NCs are expected to propel advancements in biosensing
+technology, paving the way for new breakthroughs in biomedical di-
+agnostics and environmental monitoring.
+3. Strategies for QY enhancement
+Non-radiative relaxation is the main process that deactivates the
+excited state in NIR-II Au NCs, leading to low QYs, often below 1 %
+[110]. To enhance the QYs of Au NCs and broaden their applications in
+bioimaging and biosensing, it is important to explore effective strategies
+for improvement [19]. The PLQY can be expressed as PLQY = kr/(kr +
+knr), where suppressing non-radiative decay (knr) and increasing radi-
+ative decay (kr) can effectively improve QY [111]. Various strategies
+have been developed to enhance the QY of Au NCs, including metal
+doping [112], ligand engineering [113], host-guest interactions [114],
+and the aggregation-induced emission (AIE) [115]. These strategies aim
+to enhance the rigidity of the Au NCs surface [116], expand the HOMO-
+LUMO energy gap [117], optimize ligand-to-metal charge transfer
+(LMCT)
+[118],
+and
+strengthen
+metal-metal
+interactions
+through
+aggregation-induced effects [119]. These approaches effectively sup-
+press non-radiative relaxation or energy transfer and significantly in-
+crease the QYs of Au NCs.
+3.1. Metal atom doping
+Metal doping can significantly influence the electronic and geomet-
+rical structure of metal NCs due to the synergistic effect between
+different metals, thus exhibiting enhanced physical and chemical
+properties [117]. Moreover, the introduction of heterogenous metal
+atoms typically does not significantly alter the core structure of the Au
+NCs [120]. Therefore, studying doped metal NCs not only aids in the
+design of novel alloy NCs with enhanced QY but also provides valuable
+insights into the PL mechanisms of the alloy NCs [121].
+Since the initial report of the Au24Cd1(SR)18 cluster in 2015, interest
+in research related to this cluster has steadily increased [122,123]. For
+instance, Huang et al. reported on the synthesis of the Au24Cd1 cluster
+through the doping of a single cadmium (Cd) atom onto the staple motif
+of Au25 [124]. The PL intensity for Au24Cd1 increased by 51.1-fold
+compared to that of the pure Au25 cluster (Fig. 5 A and B). The QY of
+Au24Cd1 was approximately 1.1 %. The enhanced PL intensity associated
+with Cd doping is attributed to the shorter Cd–Au bonds and the lower
+electronegativity of Cd (1.69) compared to Au (2.54), which strengthens
+the interaction between the two metals and facilitates electron transfer
+from Cd to Au (Fig. 5C). This shift in electron density from the staple to
+the core introduces a new energy level that promotes radiative recom-
+bination. Furthermore, the Au24Cd1 clusters demonstrated significant
+potential in improving renal function and reducing oxidative stress and
+inflammation in an acute kidney injury (AKI) murine model, indicating
+their promise for noninvasive detection and treatment of AKI.
+Hirai et al. synthesized a series of MAu12(dppe)5Cl2 clusters (MAu12;
+M = Au, Pd, Pt, Rh; dppe = 1,2 - bis (diphenylphosphino) ethane) [112].
+Compared to the QY of the undoped Au13 cluster (0.117), the QYs for
+PtAu12, RhAu12 and IrAu12 were significantly enhanced, measuring
+0.606, 0.464, and 0.665, respectively. Notably, the IrAu12 in dichloro-
+methane exhibited the highest reported PLQY among M@Au12 clusters,
+J. Sun et al.
+Coordination Chemistry Reviews 533 (2025) 216544 
+6 
+
+reaching 0.705. Notably, this substantial enhancement is attributed to
+the doping effect, where electrons are transferred from the doped M
+atoms to the outer Au shell. This transfer increases the HOMO-LUMO
+gap, accelerates the radiative recombination process, and slows down
+nonradiative decay. Furthermore, the bidentate dppe ligand effectively
+suppresses nonradiative relaxation, leading to a significant improve-
+ment in the PLQY.
+Liu et al. explored a series of Au25 clusters with a cage-like structure
+by introducing surface ligands and metal doping [125]. Their research
+demonstrated that cysteine-protected Au25 clusters exhibited the
+strongest PL among all tested ligands. Doping with metals such as Cu,
+Zn, Ag, and Er significantly enhanced the QY of Au25 clusters. Specif-
+ically, Cu doping increased the QY of Au25 by a factor of 5.2, reaching
+0.67 %, which is considerably higher than that of the pure Au25 clusters
+(Fig. 5D and E). The incorporation of Cu or Zn led to a decrease in the
+HOMO-LUMO band gap from 1.18 eV to 1.11 eV and 1.08 eV, respec-
+tively (Fig. 5F), indicating that the introduction of different metals alters
+the electron transfer dynamics between the surface ligands and the Au
+core. In another contribution, Wang et al. prepared a series of AgxAu25−x
+(x = 1–13) NCs with varying Ag atom doping levels [126]. It was found
+Table 1
+Overview of NIR-II emitting Au clusters.
+Au
+clusters
+Ligand
+compositions
+Absorption
+(nm)
+Emission
+(nm)
+QY
+(%)
+Ref.
+Ln@AuNCs
+Glutathione (GSH)
+N-acetylcysteine
+NaErF4@NaYF4
+520
+1100 1550
+0.52
+[101]
+D/UCNP@cgAuNCs
+GSH
+Carboxylate-terminated D/UCNPs
+650
+1060 1550
+0.10
+[74]
+[Au37(PPh3)10(SC2H4Ph)10X2]+
+Triphenylphosphine (PPh3)
+2-Phenylethanethiol
+7,951,230
+1520
+0.10
+[180]
+[Au25(PPh3)10(SePh)5X2]+
+PPh3
+Benzeneselenol
+680,870
+1100
+1.00
+Cd1Au30(DM-SAdm)18
+3,5-dimethyl-1-adamantanethiol (DM-SAdm)
+1000
+1300
+N/A
+[179]
+Cd1Au24(DM-SAdm)13(DPPF)Cl
+DM-SAdm
+1,1′-bis (diphenylphosphino)ferrocene)
+810
+1125
+N/A
+Cd1Au23(OPDP)(SAdm)14Cl
+(oxydi-2,1-phenylene)bis (diphenylphosphine)
+1-adamantanethiol
+775
+1000
+N/A
+Au44MBA26-APP
+4-mercaptobenzoic acid (MBA)
+3-amino-propane-1-phosphatemolecules
+497,590,794
+1080 1280
+4.50
+[77]
+Au44MBA26-NLG
+MBA
+1-cyclohexyl-2-(5H-imidazo[5,1-a]-isoindol-5-yl)ethanol
+497,590,794
+1080 1280
+4.50
+[79]
+Au44MBA26-Cy7
+MBA
+Denotes heptamethine dye
+497,590,794
+1080 1280
+4.50
+[75]
+AuMHA/TDT
+6-mercaptohexanoic acid (MHA)
+Tetra(ethylene glycol)
+dithiol
+8,009,101,140
+1050 1250
+1.60
+[92]
+PEMA@Au25DDT18–50
+Dodecanethiol
+Poly(ethylmethacrylate)
+416,708
+1175
+0.40
+[192]
+Au24Cu1(SG)18
+GSH
+450,670
+1120
+0.67
+[125]
+Au25(pMBA)6–8(cRGD)10–12
+MBA
+cRGD
+700
+1100
+5.5
+[159]
+[Au25(PPh3)10(DTX)5Cl2]2+
+PPh3
+O-ethyl dithiocarbonate
+532,800
+1075
+0.22
+[178]
+MHA/ME-AuNCs
+MHA
+2-mercaptoethanol
+4,606,701,000
+1064
+2.00
+[87]
+AuNC@HSA/CAT
+Human serum albumin
+Catalase
+N/A
+1064
+N/A
+[91]
+(Au24(S-TBBM)20
+4-tertbutyl-phenylmethancan
+420,500
+1050
+2.00
+[170]
+Au25(SR1)n(SR2)18−n
+11-mercaptoundecanoic acid
+11-mercaptoundecyl-
+phosphonic acid
+11-mercaptoundecyl-
+sulfonic acid
+690,790
+1050
+1.40
+[95]
+Au25pMBA18@BSA
+MBA
+Bovine serum albumin
+690,800
+1050
+0.70
+[190]
+AuNCs@PDA
+GSH
+Dopamine
+450,670
+1050
+0.65
+[104]
+NAC-AuNCs
+GSH
+N-acetylcysteine
+510,620,750
+1050
+0.65
+[107]
+AuPC
+GSH
+4-aminophenyl-phosphorylcholine
+450,500,670
+1050
+0.38
+[78]
+Au25(SR)18@HA
+GSH
+Hydroxyapatite
+450,670
+1050
+0.27
+[90]
+Min-23@AuNCs
+GSH
+23-merpolypeptide
+520
+1050
+0.21
+[82]
+CD-AuNCs
+Biocompatible
+cyclodextrin (CD)
+Mercapto-β-CD
+520
+1050
+0.11
+[80]
+Au42(PET)32
+2-phenyl-ethanethiolate
+375,806
+1040
+11.9
+[165]
+Au25(SG)18@Pt
+GSH
+450,670
+1035
+0.04
+[85]
+Au24Cd1-MPA
+3-mercaptopropionic acid
+450,670
+1020
+1.10
+[124]
+Au21Cu1(SG)18
+GSH
+515,926
+1020
+0.16
+[81]
+Au7Cd1-MHA
+MHA
+700
+1000
+N/A
+[128]
+J. Sun et al.
+Coordination Chemistry Reviews 533 (2025) 216544 
+7 
+
+that the Au NCs doped with 13 silver atoms exhibited a dramatic PL
+enhancement, with the QY increasing to 40.1 %, nearly 400 times higher
+than that of the Au25 NC (QY = 0.1 %). The research revealed that
+doping with 13 silver atoms induced a strong perturbation in the elec-
+tronic structure of the cluster (Fig. 5G). After 13 gold atoms were
+replaced by silver atoms, the HOMO-LUMO showed a larger energy gap,
+and high PL was only achieved when all 13 Au sites were fully replaced
+by silver.
+These studies collectively suggest that doping metals into Au NCs not
+only modifies their electronic structures but also leads to significant
+enhancements in QY. These doping strategies could be explored further
+by varying ligand types, as ligand-induced rigidification of the cluster
+core plays a pivotal role in reducing non-radiative losses. Additionally,
+investigating how different doping metals affect the HOMO-LUMO
+transitions and electron transfer mechanisms could offer new insights
+into optimizing PLQY [127]. This research may also reveal synergies
+between metal-ligand interactions and core-shell electron transfer pro-
+cesses, ultimately contributing to the development of more efficient
+luminescent materials for imaging and sensing applications.
+3.2. Ligand engineering
+It is well established that the protective ligands of Au NCs signifi-
+cantly influence the electronic structure, morphology, and optical
+properties [128]. In particular, the LMCT process often dominates the PL
+characteristics of NCs [118,129]. Ligand engineering is a straightfor-
+ward and effective approach to design functional materials such as Au
+NCs with high PLQY [130]. Consequently, several strategies have been
+proposed to optimize the photoluminescent performance of Au NCs
+through ligand engineering, including increasing the structural rigidity
+of ligands [131], and fine-tuning ligand surfaces [113], etc [132].
+Additionally, the spatial environment around the ligand surface also
+exerts an influence on the luminescent performance [133].
+For example, Liu et al. synthesized Au25(SR)18
+−
+clusters protected by
+different ligands, including 2-phenylethylthiol (PET), benzylthiol (BM),
+thiophenol (HSPh), and 3,5-dimethylbenzylthiol (3,5-DMBT) (Fig. 6A)
+[134]. It is revealed that the introduction of diverse protective ligands
+alters the electronic density and vibrational modes of Au NCs, conse-
+quently affecting the energy relaxation pathways. In dichloromethane
+(DCM) solution, the QYs of Au25 protected by four ligands ranged from
+1.1 % to 1.7 %. Notably, when embedded in polystyrene films, the QYs
+of Au25 protected by PET, BM, SPh, and 3,5-DMBT were enhanced by
+approximately 10 %, 40 %, 200 %, and 350 %, respectively, compared to
+their solution states (Fig. 6B). The observed enhancement in QY is
+attributed to the ability of aromatic ligands to suppress high-frequency
+optical phonons in Au25, which facilitates the radiative relaxation of
+photoexcited electrons and further improves the QY of Au25. In the
+structural framework of Au25 nanoclusters, electron transitions from the
+HOMO to the LUMO are influenced by both low-frequency and high-
+frequency optical phonons. However, the specific mechanisms under-
+lying
+electron-phonon
+interactions
+in
+Au
+NCs
+warrant
+further
+investigation.
+Wang et al. synthesized Au52(SR)32 clusters with varying protective
+ligands, including 4-tert-butylbenzylthiol (4-TBBT, R = −C6H4 −
+C
+(CH3)3), 4-isopropylbenzylthiol (4-IPBT, R = −C6H4 −
+CH(CH3)2), 4-
+ethylbenzylthiol
+(4-EBT,
+R
+=
+−C6H4
+−
+CH2CH3),
+and
+para-
+methylbenzylthiol (p-MBT, R = −C6H4 −
+CH3) (Fig. 6C) [135]. As the
+number of methyl groups on the ligand decreased, the QY increased
+Fig. 5. (A) and (B) NIR-II PL intensity and images of Cd-, Pt-, Ag-, and Zn-doped Au25 clusters, with photoluminescence spectra from 850 to 1300 nm. (C) DFT-
+optimized structures of Au25, Au24Cd1-oligomer, and Au24Cd1-core surface, with Au, S, and Cd atoms depicted in orange, yellow, and magenta. Reproduced with
+permission [124]. Copyright 2023, Wiley-VCH. (D) and (E) PL enhancement in metal-doped Au25 clusters, showing crystal structure, surface ligand effects, and NIR-II
+PL of Er, Ag, Cu, and Zn doped clusters. (F) Energy levels of Cu and Zn in Au25 clusters from DFT calculations, with undoped Au25 clusters as controls. Reproduced
+with permission [125]. Copyright 2019, Wiley-VCH. (G) X-ray structures of [Au25(PPh3)10(SC2H4Ph)5Cl2]2+, I, and II, with M representing the metal atom.
+Reproduced with permission [126]. Copyright 2014, Wiley-VCH.
+J. Sun et al.
+Coordination Chemistry Reviews 533 (2025) 216544 
+8 
+
+from
+3.8 %
+to
+18.3
+%,
+following
+the
+order:
+Au52(TBBT)32
+<
+Au52(IPBT)32 < Au52(4-EBT)32 < Au52(p-MBT)32 (Fig. 6D). The trend is
+inversely related to the electron-donating ability of the ligands. The
+research found that strengthening π⋅⋅⋅π interactions between the ligands
+can limit ligand motion and reduce high-frequency vibrations of C −
+H
+bonds, thereby suppressing non-radiative relaxation. Given that Au52(p-
+MBT)32 has the fewest −CH₃ groups, it exhibits the weakest C −
+H vi-
+brations. The smaller volume of the p-MBT ligand also enhances π⋅⋅⋅π
+stacking interactions between the ligands. Consequently, Au52(p-
+MBT)32 demonstrated the highest QY of 18.3 %, indicating that reducing
+the number of methyl groups in the ligands effectively suppresses non-
+radiative pathways and significantly enhances its PLQY.
+Chen et al. utilized lipoic acid-based sulfobetaine (LA-sulfobetaine)
+as both a reducing agent and protecting ligand to synthesize Au NCs with
+a QY of 0.6 % (Fig. 7A) [136]. By adjusting the ratio of chloroauric acid
+to
+LA-sulfobetaine,
+the
+researchers
+introduced
+additional
+LA-
+sulfobetaine through electrostatic interactions, forming an extended
+ligand shell. It was observed that as the ratio of chloroauric acid to LA-
+sulfobetaine increased from 1:1 to 1:5, and then to 1:40, the QY
+improved from 0.6 % to 6.2 % and 14.9 %, respectively (Fig. 7B). The
+sizes of these Au NCs were 1.6, 1.5, and 1.3 nm, respectively, indicating
+that
+the
+structural
+stacking
+formed
+by
+the
+additional
+ligands
+significantly impacted the PLQY of the Au NCs. The observed enhanced
+QY were attributed to the formation of disulfide bonds between the
+additional ligands and the thiols on the Au NCs surface, leading to an
+increase in the Au–S motifs on the surface of the clusters which
+enhanced the rigidity of the gold shell. Therefore, one can find that the
+applied rigidity of the clusters can notably affect the low-frequency
+vibrational modes of the metal core, effectively suppressing core relax-
+ation and surface vibrations thereby reducing non-radiative relaxation.
+This indicates that limiting the intramolecular and intermolecular mo-
+tions associated with metal(I) ligand units is an effective strategy to
+achieve strong emission for Au NCs. Similarly, Zhong et al. employed a
+layer-by-layer ligand engineering approach to enhance the surface ri-
+gidity of Au NCs, resulting in Au NCs with exceptionally high PLQY of
+90.3 ± 3.5 % at room temperature [137].
+In another research, Pyo et al. utilized tetrabutylammonium (TOA)
+cations to bind with the glutathione ligands on Au22(SG)18 clusters
+[138]. The introduction of TOA cations rapidly hardened the surface of
+Au22(SG)18, effectively diminishing the non-radiative relaxation path-
+ways in the ligand shell of the gold clusters, which significantly
+enhanced the QY of Au22(SG)18, resulting in a QY exceeding 60 % at
+room temperature.
+Additionally, Pyo et al. functionalized the surface of Au22(SG)18
+Fig. 6. (A) The structure of Au25 NCs showing the core, surface motifs, and total structure, along with tangential, radial, and breathing vibrational modes of Au2(SR)3
+motifs and Au13 core. (B) Room-temperature photoluminescence spectra of Au25 NCs in solution (black) and film (red) under 375 nm excitation, with DCM reab-
+sorption indicated by the asterisk. Reproduced with permission [134]. Copyright 2022, American Chemical Society. (C) and (D) Optical and PL spectra of Au52(SR)32
+with different ligands in DCM. Reproduced with permission [135]. Copyright 2023, American Chemical Society. (For interpretation of the references to colour in this
+figure legend, the reader is referred to the web version of this article.)
+J. Sun et al.
+Coordination Chemistry Reviews 533 (2025) 216544 
+9 
+
+using benzyl chloroformate (CBz–Cl) and folic acid (FA), to synthesize
+highly water-soluble Au22-FA clusters (Fig. 7C) [139]. Compared to the
+6.5 % QY of Au22(SG)18, the PL of the Au22-FA was significantly
+enhanced, achieving a QY of 42 %. This represents more than a six-fold
+increase and surpasses the QYs of most water-soluble Au NCs reported in
+the literature (Fig. 7D). This study revealed that FA functionalization
+induced a hardening effect in Au22-FA, which led to the suppression of
+nonradiative relaxation and contributed to the enhancement of QY.
+Furthermore, the emission spectrum of FA overlaps with the absorption
+of the Au22 clusters, allowing the photoexcitation of FA to sensitize the
+Au22 clusters via resonance energy transfer. As shown in right panel of
+Fig. 7D, the fluorescence quenching of FA, coupled with the increased PL
+of the Au22 cluster, clearly indicates successful energy transfer from the
+photoexcited FA to the Au22 cluster.
+Specifically, Yao et al. proposed a novel ligand-induced surface en-
+gineering method using Au25(SR)18 as the parent cluster (Fig. 7E) [140].
+The method involved Cd atoms doping and a ligand exchange reaction,
+replacing the original ligand 2-phenylethanethiol with p-toluenethiol. It
+was observed that six bidentate Au2(SR1)3 motifs (L2) on the Au13 core
+were substituted with three tetradentate Au2Cd1(SR2)6 motifs (L4),
+resulting in the transformation from Au25(SR1)18 to Au19Cd3(SR2)18
+while maintaining the integrity of the Au13 core structure. The PLQY of
+Au19Cd3(SR2)18 in a single crystal state was 9.8 %, approximately a
+thousand times higher than that of Au25(SR1)18 (Fig. 7F). The research
+indicated that the relatively rigid p-toluenethiol ligand can effectively
+limit surface vibrations and reduce non-radiative decay of photoexcited
+electrons. Additionally, the surface reorganization induced by ligand-
+induced atomic doping led to the contraction of the Au13 core,
+increasing the density of individual clusters and reducing the length of
+Au–S bonds, which effectively enhanced the electronic interactions
+between the surface motifs and the Au13 core (e.g., C −
+H⋅⋅⋅π and π⋅⋅⋅π
+interactions). Finally, the stability and luminescence of the bimetallic
+clusters were significantly enhanced. This kind of surface engineering
+method can be defined as a new strategy for Crystallization-Induced
+Emission Enhancement (CIEE).
+These studies have demonstrated that enhancing the rigidity of the
+ligand shell to suppress non-radiative relaxation is critical for improving
+PLQY. Further investigations could explore how the manipulation of
+chemical bond formation between ligands and Au surfaces affects core
+relaxation and vibrational modes. Additionally, examining how ligand-
+induced rigidity influences metal core dynamics in Au NCs could enable
+more precise modulation of PLQY. Such insights may lead to the
+development of highly tunable nanomaterials for optical applications.
+3.3. Host-guest interaction
+Au NCs exhibit a versatile coordination chemistry due to the diverse
+range of protective ligands used in their design [131]. These ligands
+Fig. 7. (A) Schematic of zwitterionic ligand-capped Au NCs and ligand shell expansion with additional zwitterionic ligands. (B) Absorption and PL spectra and GFC
+(gel filtration chromatography) traces of Au NCs with different ligand ratios. Reproduced with permission [136]. Copyright 2017, American Chemical Society. (C)
+Synthetic scheme for converting Au22(SG)18 to Au22-FA. (D) PL spectra of Au22(SG)18, Au22-CBz, and Au22-FA in water, and PL spectra of Au22-FA excited at 520 nm
+and 350 nm, along with unbound FA. Reproduced with permission [139]. Copyright 2017, Wiley-VCH. (E) and (F) PL spectra of Au25(SR1)18 (1) and the bimetallic
+Au19Cd3(SR2)18 (2) clusters, demonstrating enhanced PL properties due to ligand-induced surface reconstruction and metal doping. Reproduced with permission
+[140]. Copyright 2020, Wiley-VCH.
+J. Sun et al.
+Coordination Chemistry Reviews 533 (2025) 216544 
+10 
+
+provide multiple coordination sites, enabling Au NCs to interact with
+specifically structured molecules through host-guest assembly or
+encapsulation methods [141]. This interaction facilitates the formation
+of novel cluster network structures [114]. Compared to individual
+nanocluster, the network structures built upon Au NCs offer unique
+advantages due to their intricate three-dimensional architectures and
+the strong interactions between Au NCs and the connecting media
+during assembly [142,143]. These factors effectively suppress core
+relaxation and surface vibrations in AuNCs, reducing non-radiative
+transitions and consequently enhancing the PLQY of Au NCs [144].
+For instance, Jiang et al. utilized the high affinity between cucurbi-
+turil (CB[n], where n = 7, 8) and phenyl-glycine-glycine-cysteine
+(FGGC) peptide to self-assemble Au NCs in aqueous solution, forming
+a ternary host-guest complex, CB[7/8]-Au22(FGGC)18 (Fig. 8A) [142].
+The synthesized CB/FGGC-AuNCs exhibited pronounced red phospho-
+rescence emission, with QY of 51 % for CB [7] and 39 % for CB [8],
+representing nearly a 7-fold increase compared to the QY of FGGC-
+AuNCs (7.5 %). Besides, the PL lifetime increased from 1.61 μs to
+3.51 μs. The research indicated that the emission enhancement was
+primarily due to the improved rigidity of the Au NCs surface induced by
+the hydrophobic effects, ion-dipole interactions, and hydrogen bonding
+between CB[n] and FGGC-AuNCs, which altered the rate of excited-state
+transitions. Specifically, the non-radiative transition rate (knr) decreased
+from 7.97 × 105 s−1 to 1.40 × 105 s−1, while the radiative transition rate
+(kr) increased from 6.4 × 104 s−1 to 1.45 × 105 s−1. Thus, the host-guest
+self-assembly of FGGC-AuNCs effectively promoted radiative transitions
+while suppressing non-radiative transitions, leading to a significant
+enhancement in luminescent performance. Furthermore, CB [7]/FGGC-
+AuNCs demonstrated excellent performance in live-cell luminescence
+imaging of cancer cells. Additionally, Qu et al. prepared a PolySC4AP
+(sulfonatocalix[4]arene) and positively charged FGGC assembly, termed
+PolySC4AP/FGGC@AuNC (Fig. 8B) [143]. The rich hydrogen bonding
+within the macrocyclic SC4A-FGGC peptide provided a rigid environ-
+ment for the Au NCs, effectively suppressing non-radiative transitions
+and increasing the QY of FGGC@AuNC from 7.0 % to 35.3 %, with the
+PL lifetime extending from 0.84 μs to 2.41 μs. Additionally, researchers
+achieved efficient mitochondrial imaging in cells by crosslinking the
+PolySC4AP/FGGC@AuNC assembly with a mitochondrial-targeting
+group, triphenyl (2-propenyl) phosphonium bromide (TPP).
+Similarly, Deng et al. utilized the aldehyde groups in 2,6-pyridinedi-
+carboxaldehyde (PDA) to react with the amino groups on the surface of
+the water-soluble glutathione (HSG) protected Au22(SG)18 (Fig. 8C)
+[144]. This formed imine (−CH = N−) bonds, which endowed
+Au22(SG)18 with the advantageous properties of Schiff bases, including
+enhanced stability, minimal by-products, and increased luminescence.
+The research found that cross-linking Au22(SG)18 with PDA reduced the
+core-shell distance and formed a larger π⋅⋅⋅π conjugated system, result-
+ing in a reduction in Stokes shift (approximately 0.06 eV). The results
+indicate that the surface-bound complex restricted intramolecular mo-
+tion (RIM), significantly reduced non-radiative decay rates, and
+increased radiative decay rates. Consequently, the PLQY of PDA-
+Au22(SG)18 reached 48 ± 1.4 % at room temperature, which is nearly 11
+times higher than that of the unmodified Au22(SG)18 (4.6 %) (Fig. 8D).
+Furthermore, the conjugated PDA led to a longer decay lifetime,
+providing additional evidence that the non-radiative pathways in PDA-
+Au22(SG)18 were suppressed (Fig. 8E and F). The cross-linking did not
+lead to significant aggregation of Au22(SG)18, ruling out the possibility
+that the increased QY was due to AIE effects.
+From these studies it is easy to find that the assembly of Au NCs into
+complex network presents a viable strategy for enhancing photo-
+luminescence
+by
+suppressing
+non-radiative
+transitions
+through
+increased structural rigidity and tailored electronic environments.
+Exploring the effects of different host-guest assembly methods and cross-
+linking agents could further optimize the interaction forces and molec-
+ular confinement around clusters. Additionally, manipulating the spatial
+arrangement of metal cores and conjugated ligands may offer new
+pathways to modulate charge transfer dynamics and extend emission
+lifetimes.
+Fig. 8. (A) Enhancement of FGGC-AuNCs luminescence through host-guest assembly with cucurbiturils, achieving increased QY and improved live cell imaging.
+Reproduced with permission [142]. Copyright 2020, Royal Society of Chemistry. (B) Enhanced QY and improved mitochondrial imaging of FGGC-functionalized Au
+NCs using PolySC4AP assemblies via host-guest interactions. Reproduced with permission [143]. Copyright 2022, American Chemical Society. (C) Schematic rep-
+resentation of the effect of PDA binding on PL enhancement. (D) and (E) Emission spectra and luminescence decay of Au22(SG)18 and PDA-Au22(SG)18. (F) Schematic
+of excited-state dynamics in Au22(SG)18 and PDA-Au22(SG)18 NCs, showing transitions, energy gap, emission wavelength, lifetime, and QYs. Reproduced with
+permission [144]. Copyright 2022, Springer Nature.
+J. Sun et al.
+Coordination Chemistry Reviews 533 (2025) 216544 
+11 
+
+3.4. AIE enhancement
+Recent research into the PL mechanisms of Au NCs has revealed the
+potential of AIE, a phenomenon first identified by the Tang team [145].
+AIE is characterized by a transition from weak to strong emission as
+materials aggregate [146]. This process alters the intermolecular in-
+teractions within the clusters, effectively reducing π–π stacking and
+preventing the quenching of excited states [147]. As a result, more en-
+ergy from excited states is released as luminescence, significantly
+enhancing the possibility of radiative transitions [148,149]. The AIE
+properties of Au NCs are associated with LMCT or LMMCT, and are
+highly influenced by the surface characteristics of the clusters [150].
+Various strategies can be employed to enhance AIE, such as improving
+the electron-donating capacity of protective ligands, increasing the
+metal(I) content in surface motifs, and anchoring metal cores with
+ligand-rich crosslinking sites [151,152]. These approaches can minimize
+non-radiative energy loss and improve the rate of radiative energy
+transfer, thereby increasing the PLQY of Au NCs. Additionally, AIE can
+be triggered by stimuli such as Cd2+ [115], Ag+ [153], Pb2+ [154], and
+Gd3+ [155], which further boosts the luminescence intensity of Au NCs.
+The exploration and application of AIE in Au NCs not only provide
+valuable insights into PL behavior but also facilitate the development of
+highly efficient and stable luminescent probes for various bioimaging
+and biosensing applications [156–158].
+For instance, Luo et al. synthesized Au(I)-thiolate complexes using
+the tripeptide glutathione (GSH, γ-Glu-Cys-Gly) as a ligand (Fig. 9A)
+[115]. They utilized solvent-induced and cation-induced methods to
+control the aggregation of gold(0) cores, leading to the formation of
+core-shell nanoclusters with a gold(0) core and a gold(I)-thiolate shell.
+The research explored how AIE influences the luminescent properties of
+Au NCs. During solvent-induced aggregation, the Au(I)-thiolate com-
+plexes were placed in ethanol at a high-volume fraction [fe = voletha-
+nol/(volethanol + water)], which disrupted the hydrated shell structure.
+This
+disruption
+facilitated
+charge
+neutralization
+and
+promoted
+Fig. 9. (A) Solvent-induced AIE in Au(I)-thiolate complexes. (B) UV/vis absorption and emission spectra of Au(I) −
+thiolate complexes in mixed solvents, with
+luminescence intensity plotted against fe (inset). (C) Photos of Au(I)-thiolate complexes in ethanol-water mixtures with different fe under visible (top) and UV
+(bottom) light. Reproduced with permission [115]. Copyright 2012, American Chemical Society. (D) Schematic of surface engineering's impact on Au25(pMBA)18
+during aggregation. (E) The luminescence profiles of Au25(pMBA)18-x(cRGD)x at pH 8.0. Reproduced with permission [159]. Copyright 2024, Wiley-VCH. (F) Ce(III)-
+triggered AIE in GSH-AuNCs. (G) and (H) Luminescent spectra and UV light photographs of Au(I)-GSH complexes, GSH-AuNCs, and Ce(III)-GSH-AuNCs. Reproduced
+with permission [160]. Copyright 2018, Royal Society of Chemistry. (I) AIE of GSH-AuNCs triggered by polyarginine peptides. (J) Excitation and emission spectra of
+GSH-AuNCs (black) and polyArg-GSH-AuNC aggregates (red), with images of GSH-AuNCs and polyArg-GSH-AuNC aggregates (inset). Reproduced with permission
+[161]. Copyright 2019, Elsevier. (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)
+J. Sun et al.
+Coordination Chemistry Reviews 533 (2025) 216544 
+12 
+
+aggregation. As the complexes aggregated, the interactions between Au
+(I) atoms were enhanced, leading to the formation of more tightly
+packed aggregates and a significant increase in the luminescence in-
+tensity
+of
+the
+gold(0)@gold(I)-thiolate
+core-shell
+nanoclusters,
+achieving a QY of approximately 15 % (Fig. 9B). This value greatly
+exceeds the typical QY of Au-thiolate NCs, which ranges from 0.001 % to
+0.1 %. The study found that as fe increased, the extent of aggregation
+also rose, resulting in a corresponding increase in luminescence intensity
+(Fig. 9C). Further analysis revealed that the luminescence enhancement
+attributed to AIE stemmed from increased internal and intermolecular
+interactions within the aggregates. Notably, the enhanced Au(I)•••Au(I)
+interactions facilitated LMCT within the aggregates. These interactions
+also restricted intramolecular vibrations and rotations, effectively sup-
+pressing non-radiative relaxation of the excited state, thereby signifi-
+cantly enhancing luminescence.
+In a related study, Liu et al. developed a model for Au25(pMBA)18 to
+achieve efficient luminescence of Au NCs under AIE by precisely regu-
+lating non-covalent interactions (e.g., hydrogen bonds and π −
+π
+stacking) [159]. The study found that at low pH values, the enhanced
+inter-cluster
+interactions
+lead
+to
+aggregation
+and
+luminescence
+quenching. By introducing exogenous substances (e.g., BS-12 surfactant
+and cRGD peptide functionalization), the inter-cluster interactions were
+effectively blocked, and the intra-cluster interactions were enhanced,
+thereby significantly improving the QY in the aggregated state (Fig. 9D).
+For example, after the addition of BS-12, the luminescence intensity of
+Au25(pMBA)18 at pH 4.0 was increased by 43 times, and the QY was
+improved from 1.0 % to 5.5 %. Besides, a series of dual-ligand-protected
+Au25(pMBA)18-x(cRGD)x were prepared by ligand exchange with
+(cRGD)x.
+Under
+pH
+8.0,
+the
+luminescence
+intensity
+of
+Au25(pMBA)12–14(cRGD)4–6,
+Au25(pMBA)9–11(cRGD)7–9,
+and
+Au25(pMBA)6–8(cRGD)10–12 was enhanced by 2.8 times (QYs, 3.4 %), 4.0
+times (QYs, 4.8 %), and 4.7 times (QYs, 5.5 %), respectively (Fig. 9E).
+This achieved precise and controllable luminescence of Au25(pMBA)18
+in the aggregated state.
+Yu et al. synthesized a novel gold cluster with a precise molecular
+formula, Au22(SR)18 [119]. In contrast to Au22(SR)16 and Au22(SR)17,
+which exhibit weak luminescence and low QYs (less than 0.5 %), the
+Au22(SR)18 demonstrated strong luminescence with a high QY of 8 %.
+The research showed that the Au22(SR)18 comprises an extended Au8
+core, two interlocked RS-[Au-SR]3 motifs, and two RS-[Au-SR]4 motifs,
+resulting in a higher SR/Au ratio of 0.82. Furthermore, Au22(SR)18
+exhibited a microsecond-level photoluminescence lifetime and a large
+Stokes shift, indicating that its strong photoluminescence originates
+from the AIE phenomenon associated with the extended Au(I)‑sulfur
+motifs on the cluster surface.
+You et al. synthesized Ce(III)-GSH-AuNCs by taking advantage of the
+strong coordination between the trivalent lanthanide ion Ce(III) and the
+two carboxyl groups in GSH (Fig. 9F) [160]. The high coordination
+number of lanthanide ions triggered the AIE effect in GSH-AuNCs,
+significantly improving the luminescence properties. Compared to
+GSH-AuNCs, which show an absolute QY of 1 %, and an average lifetime
+of 4.0 μs, the Ce(III)-GSH-AuNCs exhibit a 7-fold increase in lumines-
+cence intensity, a 13-fold increase in QY (QY = 13 %) (Fig. 9G and H),
+and an extended average lifetime of 7.3 μs. It was revealed that Ce(III)-
+GSH-AuNCs are composed of 30 % Au(I) and 70 % Au(0). The aggre-
+gation induced by Ce(III) not only restricts the intramolecular motion of
+the protecting ligand (GSH), but also increases the Au(I)⋯Au(I) dis-
+tance, resulting in strong PL emission. Besides, You et al. also discovered
+that the cationic peptide polyarginine (polyArg) can effectively induce
+AIE in negatively charged glutathione-capped GSH-AuNCs through
+electrostatic attraction (Fig. 9I) [161]. Compared to GSH-AuNCs, which
+have a QY of 1.2 %, and an average PL lifetime of 2.2 ms, the polyArg-
+GSH-AuNCs exhibited a 3.5-fold increase in PL intensity, and a 2.1-fold
+extension in luminescence lifetime (Fig. 9J). The research demonstrated
+that the aggregation of GSH-AuNCs increases the average distance be-
+tween Au(I) atoms, and hinders intramolecular rotation and vibration of
+GSH-AuNCs. As a result, the polyArg-GSH-AuNCs displayed significantly
+enhanced luminescence intensity. Furthermore, by stimulating the AIE
+of GSH-AuNCs with four different cationic peptides (including AG73,
+GR, pYR, and RGDR5), four types of biosensors were developed, which
+have the ability to detect heparin, trypsin in bodily fluids, and ALP in
+cancer cells.
+3.5. Impact of ambient conditions
+To optimize the QY and luminescent performance of Au NCs for
+further applications, it is essential to consider not only the aforemen-
+tioned strategies but also to take into account the effects of ambient
+conditions, including temperature and pH, etc [162–165]. Specifically,
+variations in pH can modify the chemical ambient conditions on the
+surface of Au NCs, thereby influencing the luminescence intensity and
+stability [166,167]. Similarly, changes in temperature can affect the
+luminescence behavior of Au NCs by influencing the structural or elec-
+tronic states [168,169]. Therefore, when designing and applying Au
+NCs, it is essential to consider and optimize these ambient conditions
+parameters to ensure optimal luminescent performance and application
+outcomes under specific conditions [163,164,170].
+For example, Zhou et al. synthesized pH-responsive near-infrared
+emitting Au NCs (PDMAEMA-AuNCs) by incorporating poly [2-(dime-
+thylamino) ethyl methacrylate] (PDMAEMA) with thiol (TA) groups into
+the ligand (Fig. 10A) [166]. At pH = 11.0, the QY is 0.84 %, but it in-
+creases to 3.5 % at pH = 4.1 with an average PL lifetime of 3.6 μs
+(Fig. 10B and C). The observed pH-dependent PLQY is due to the pro-
+tonation and deprotonation of TA groups under varying pH conditions,
+which alters the electronic structure of PDMAEMA-AuNCs and signifi-
+cantly impacts their optical performance. Specifically, under alkaline
+conditions (pH = 7–11), deprotonated TA groups have low-energy
+molecular orbitals that facilitate photo-induced electron transfer be-
+tween TA groups and the Au–S bonds on the cluster surface, which
+disrupts radiative transitions and leads to a substantial decrease in PL
+intensity. Conversely, under acidic conditions (pH = 4–7), protonated
+TA groups possess higher-energy molecular orbitals which impede
+electron transfer to the Au–S motif, thus restoring the PLQY intensity.
+Similarly, Liu et al. reported significant changes in the PL properties of
+Au25Capt18 (Capt = captopril) under varying pH conditions [167]. For
+example, under neutral conditions (pH = 7), the emission intensity of
+Au25Capt18 is relatively low, whereas at pH = 2, the emission intensity
+increases by an order of magnitude, with the QY rising from 0.37 % to
+3.9 %. The enhancement in luminescence is attributed to the low pH
+treatment converting Au25Capt18 into a more luminescent Au23Capt17,
+resulting in a 13-fold increase in PL intensity. These studies demon-
+strated that the pH-sensitive PL enhancement is closely related to the
+changes in the structure of cluster and composition, providing valuable
+insights for further applications.
+Jin et al. synthesized three types of Au NCs: [Au23(SR)16]−
+(R =
+cyclohexyl),
+[Au21(SR)12(PCP)]+
+(PCP
+=
+PPh2CH2PPh2),
+and
+[Au19Cd2(SR)16]−[168]. The results showed that [Au21(SR)12(PCP)]+
+exhibited the highest QY at room temperature, which was four times
+greater than that of [Au19Cd2(SR)16]−
+and eight times greater than
+[Au23(SR)16]−. Furthermore, the QY and PL lifetimes of all three Au NCs
+significantly increased as the temperature decreased (Fig. 10D). This
+research demonstrated that low temperatures effectively suppress non-
+radiative pathways activated by thermal energy, thereby significantly
+enhancing the QY of the Au NCs. Likewise, Luo et al. synthesized
+Au38(PET)26 (PET = 2-phenylethanethiolate) clusters via an N-hetero-
+cyclic carbene (NHC)-mediated method with a QY of 1.8 % at room
+temperature [169]. When the temperature decreased from 298 K to 80
+K, the QY of Au38(PET)26 increased by nearly 90 %, indicating that lower
+temperatures effectively inhibit non-radiative pathways. Additionally,
+the PL lifetimes showed a similar increasing trend. The reduction in
+temperature also suppressed the reverse intersystem crossing (RISC)
+process from the triplet state (T1) to the singlet state (S1), leading to the
+J. Sun et al.
+Coordination Chemistry Reviews 533 (2025) 216544 
+13 
+
+disappearance of fluorescence and thermal activated delayed fluores-
+cence (TADF) effects, with only phosphorescence from the T1 state
+remaining. This underscores the significant impact of temperature on
+the luminescent properties of Au NCs.
+In addition, Jin et al. also reported a dual emission Au24(S-TBBM)20
+(S-TBBM = 4-tertbutyl-phenylmethancan) cluster [170]. The dual-
+emission phenomenon was found to be highly responsive to solvent
+polarity, viscosity, and pressure. For example, the QY of Au24(S-
+TBBM)20 increased from 2 % in high-polarity solvent (DCM) to 10 % in
+low-polarity solvent hexane (Fig. 10E). Additionally, the photo-
+luminescence lifetime increased to 200 ns when transitioning from DCM
+to hexane, suggesting that non-radiative decay was suppressed in this
+case. Furthermore, as the viscosity of the solvent increased, the PLQY of
+Au24 increased from 2 % to 20 % to 80 %, respectively, indicating that
+the QY of Au24 are also viscosity-dependent. Moreover, under high-
+pressure conditions, the increased viscosity of the medium not only
+hindered photoinduced dynamic structural distortions but also inhibited
+excited state transitions. This resulted in a significant increase in PL I,
+while PL II disappeared (Fig. 10F).
+4. Strategies for red-shifting emission wavelengths
+Red-shifting the emission wavelengths of Au NCs into the near-
+infrared region enables deeper tissue penetration and reduces back-
+ground interference in biological systems, which is essential for
+enhancing their applications in bioimaging and biosensing [20,93].
+According to Planck formula (λ = hc/E, where h is Planck constant and c
+is the speed of light) [171], the photon energy is inversely proportional
+to the emitted wavelength, the lower the energy, the longer the wave-
+length. Therefore, reducing the HOMO-LUMO gap (E) is a key
+mechanism for achieving red-shifted emission [172]. When a photon
+excites an electron from the HOMO to the LUMO, the electron enters an
+excited state. As it returns to the ground state, it emits a photon with
+energy directly related to the HOMO-LUMO gap. A smaller HOMO-
+LUMO gap means that less energy is required for this transition,
+resulting in emitted photons with lower energy and a corresponding
+shift in emission wavelength toward the NIR region [109,173–175]. In
+this chapter, we will explore the fundamental principles and methods for
+reducing the HOMO-LUMO gap in Au NCs. We will discuss strategies
+such as heteroatom doping [176], structural modulation of the metal
+core [177], ligand effects [178], and optimization of ambient conditions
+[170]. These approaches not only effectively tune the electronic struc-
+ture and optical properties of Au NCs but also open new avenues for
+designing
+nanomaterials
+with
+specific
+functionalities
+[179–182].
+Therefore, it is essential to examine these strategies in detail, focusing on
+their roles and mechanisms in red-shifting the emission wavelengths of
+Au NCs. This exploration aims to provide both a theoretical foundation
+and practical guidance for developing Au NCs with enhanced optical
+properties.
+4.1. Heteroatom doping
+Due to the differing electronic structures of the dopant elements and
+Au atoms, the electron density and molecular orbital energy levels of the
+Au NCs can be significantly modulated [112,117,120]. Narrowing the
+HOMO-LUMO gap of clusters by heteroatom doping is an effective
+method to red shift in the emission of the Au NCs [176,179]. The syn-
+thesis of Cu-doped Au22(tBuPhC ≡C)18, resulting in Au16Cu6(tBuPhC ≡
+C)18 (where tBu is tert-butyl and Ph is phenyl), stands out as a repre-
+sentative case (Fig. 11 A and B) [176]. The emission peak of Au22 is
+Fig. 10. (A) Synthetic process of PDMAEMA-AuNCs using a modified Brust-Schiffrin strategy, highlighting TA and thiol groups. (B) and (C) PL emission spectra,
+intensity at 792 nm, and zeta potential of PDMAEMA-AuNCs across pH values. Reproduced with permission [166]. Copyright 2023, Wiley-VCH. (D) Temperature-
+dependent PL spectra of [Au23(SR)16]−, [Au21(SR)12(PCP)]+, and [Au19Cd2(SR)16]−. Reproduced with permission [168]. Copyright 2019, American Chemical So-
+ciety. (E) PL and TCSPC (time-correlated single photon counting) spectra of Au24 in DCM, butanol, and solid state. (F) Pressure-dependent PL spectra of Au24 in
+toluene under diamond anvil compression. Inset: mechanism of pressure-induced dual emission changes. Reproduced with permission [170]. Copyright 2020,
+Springer Nature.
+J. Sun et al.
+Coordination Chemistry Reviews 533 (2025) 216544 
+14 
+
+centered at 690 nm, with a PLQY of 9 %. In contrast, the introduction of
+Cu resulted in a red shift of the emission peak to 720 nm in Au16Cu6,
+demonstrating an almost 100 % PLQY at room temperature (Fig. 11C).
+The red shift is primarily attributed to the substitution of six Au
+atoms with copper. The electronic structure of the doped copper atoms
+differs from that of Au atoms, resulting in a modification of the electron
+distribution within the metal nucleus. The incorporation of copper not
+only raises the HOMO energy level and lowers the LUMO energy level,
+thereby reducing the HOMO-LUMO gap (Fig. 11D), but also makes the
+cluster structure more compact, further diminishing non-radiative decay
+by 60-fold. For example, the ISC rate is accelerated from 148 ps in Au22
+to 0.5 ps in Au16Cu6, significantly enhancing the efficiency of triplet
+state formation. Consequently, the Au16Cu6 exhibits outstanding optical
+properties.
+By progressively assembling the core and controlling the position of
+Cd atoms, four distinct assembly structures of Au–Cd bimetallic NCs
+were synthesized by Tan et al., including Cd1Au13, Cd1Au23, Cd1Au24,
+and Cd1Au30 (Fig. 11E and F) [179]. The optical absorption spectra of
+these NCs show significant red shift (Fig. 11G). More importantly, as the
+M13 icosahedral unit progressively assembles with the M4 tetrahedral
+unit, the emission peaks of these NCs also gradually red shift, extending
+from the NIR-I to the NIR-II. For example, the emission peak of Cd1Au23
+is located at 1000 nm, while those of Cd1Au24 and Cd1Au30 are red-
+shifted to 1125 nm and 1300 nm, respectively (Fig. 11H). The key to
+the red shifts lies in the continuous assembly of the tetrahedral M4 unit
+on the icosahedral M13 structure, which causes Cd atoms to gradually
+move from the periphery to the inner core of the cluster, particularly at
+the shared sites between M13 and M4. This alters the geometric structure
+and electronic energy levels, leading to a narrowed HOMO-LUMO gap
+and significant red shifts in both optical absorption and emission.
+4.2. Metal Core structural modulation
+It has been well documented that as the number of Au atoms in Au
+NCs increases, the HOMO-LUMO gap of the clusters decreases [183].
+This reduction in the energy gap lowers the energy required for elec-
+tronic transitions, thereby enhancing the possibility of photon emission
+in the NIR region [184]. Consequently, NCs with larger core sizes tend to
+exhibit longer emission wavelengths [185]. For example, Wan et al.
+synthesized two Au NCs, [Au21(m-MBT)12(Hdppa)2]SO3CF3 (1) and
+[Au28(p-MBT)14(Hdppa)3](SO3CF3)2 (2), to investigate how the metal
+kernel shape and surface structure affect their NIR PL properties
+Fig. 11. (A) and (B) Molecular structures of Au22(tBuPhC ≡C)18 and Au16Cu6(tBuPhC ≡C)18, with structure anatomy of Au16Cu6 showing Au10Cu3 kernel, Au2Cu
+staples, and Au6Cu6 ring (H atoms omitted). Orange: Au atoms; light blue: Cu atoms; blue, deep blue, or green: C atoms. (C) Excitation and emission spectra of Au22
+and Au16Cu6 in CH2Cl2. (D) Kohn-Sham energy levels and atomic orbital populations for Au22 and Au16Cu6. Reproduced with permission [176]. Copyright 2024,
+American Association for the Advancement of Science. (E) and (F) Framework structure, growth patterns, and Cd-doped sites of Au–Cd alloy clusters (Au = cyan/
+orange; Cd = pink; S = yellow; P = green; Cl = light green; Fe = blue; C = gray; H atoms omitted). (G) and (H) UV/Vis and PL spectra of Cd1Au13 (black), Cd1Au23
+(kermesinus), Cd1Au24 (bluish violet), and Cd1Au30 (madder red) clusters. Reproduced with permission [179]. Copyright 2023, American Chemical Society.
+J. Sun et al.
+Coordination Chemistry Reviews 533 (2025) 216544 
+15 
+
+(Fig. 12A) [177]. Compound 1 has an Au15 kernel, exhibits a maximum
+emission wavelength of 860 nm. In contrast, compound 2, which has a
+rod-shaped face-centred cubic Au22 core, exhibit an emission wave-
+length of 920 nm (Fig. 12B). The red-shift in emission wavelength from
+860 nm (1) to 920 nm (2) is primarily attributed to the rod-shaped
+structure of the Au22 kernel in compound 2. The elongated core struc-
+ture of 2 facilitates the overlap of atomic orbitals along the long axis of
+the rod, leading to more extensive electron delocalization throughout
+the kernel. When electrons are delocalized, they occupy molecular or-
+bitals that are spread over the entire structure, resulting in a reduced
+HOMO-LUMO gap.
+Similarly, Li et al. synthesized rod-shaped double icosahedral NCs,
+[Au25(PPh3)10(SC2H4Ph)5Cl2]2+, composed of two Au13 icosahedrons
+sharing a vertex Au atom, five bridging thiocarboxylates, ten phosphine
+ligands (triphenylphosphine, PPh3), and two chloride ions [180]. The
+Au25 exhibited a strong PL emission at 990 nm (Fig. 12C). Subsequently,
+a rod-shaped Au37 cluster was synthesized by fusing three Au13 icosa-
+hedrons sharing two vertex Au atom. A strong PL emission was observed
+at 1520 nm. Compared to Au25, the emission wavelength of Au37 red-
+shifted into the NIR-II range (Fig. 12D). This study suggests that the
+increased number of Au atoms enhances the interactions between the
+NCs and allows more d- and s-orbital electrons to participate in the
+formation of molecular orbitals, decreasing the HOMO-LUMO energy
+gap and favoring long-wavelength PL emission.
+4.3. Ligand effects
+The electronic structure and geometric shape of Au NCs can be
+altered by modifying the electronic properties and steric effects of the
+ligands,
+which
+subsequently
+influence
+their
+optical
+properties
+[186,187]. Strong electron-donating ligands enhance the electron den-
+sity of Au NCs and decrease the energy of the lowest-energy electron
+transition, resulting in a red shift in the emission wavelength [118].
+Moreover, due to steric effects, larger ligands can alter the geometric
+structure of the Au NCs, affecting their electronic energy levels
+[188,189]. Therefore, ligand engineering is one of the most employed
+strategies for achieving a red shift in the emission wavelength of Au NCs
+[190,191].
+For example, Bai et al. synthesized Au25DTX-Cl and Au25DTX-Br NCs
+using o-ethyl dithiocarbonate (DTX) bidentate ligands (Fig. 13A) [178].
+These Au NCs belong to the P1 space group and consist of a 25-atom gold
+core (Au25), ten PPh3 protecting ligands, five DTX ligands at the waist,
+and two halide atoms (Cl or Br). The unidirectional arrangement of DTX
+ligands at the waist is considered the source of chirality (Fig. 13B).
+Compared to thiol-stabilized Au25, which has an emission peak wave-
+length around 990 nm, the Au25DTX-Cl and Au25DTX-Br exhibit red-
+shifted emission wavelengths in the NIR-II range at 1075 nm and
+1038 nm, respectively (Fig. 13C). The introduction of DTX ligands
+transforms the D5d symmetric structure of Au25 into a D5 chiral config-
+uration, forming a staggered arrangement of Au25 nanorods. This
+change lowers the energy of the triplet state (T1) responsible for NIR-II
+emission from the metal cluster center (1.439 eV for overlapped Au25
+nanorods vs. 1.283 eV for staggered Au25 nanorods) (Fig. 13D and E).
+This ligand-induced structural change is considered the main reason for
+the red shift in the emission wavelength of the Au NCs.
+Wu et al. synthesized a series of GSH-protected Au NCs, including
+[Au10SR10], [Au15SR13], [Au18SR14], and [Au25SR18] (SR = thiolate
+ligand), to systematically investigate the effects of Au(I)-thiolate motifs
+on the surface of Au NCs with respect to emission wavelength (Fig. 13F)
+[181]. Under 450 nm excitation, the Au NCs exhibited progressively red-
+shifted emission peaks at 658 nm, 660 nm, 670 nm, and 987 nm,
+respectively (Fig. 13G). It was found that the red shift is due to shorter
+Au(I)-SR motifs bringing the ligands closer to the Au core, which en-
+hances the d-orbital overlap and electronic coupling between Au atoms.
+This promotes the formation of a more compact structure in the Au NCs,
+which strengthens the interactions between Au atoms, increasing elec-
+tron delocalization within the core, and consequently reducing the
+HOMO-LUMO gap. Therefore, maintaining shorter Au(I)-SR motifs can
+red-shift the emission wavelength into the NIR-II region, enabling
+broader applications.
+Specifically, Haye et al. reported a dodecanethiol (DDT) protected
+Au25 clusters encapsulated in a poly(ethyl methacrylate) (PEMA) poly-
+mer [192]. It was found that as the amount of encapsulated Au NCs
+increased, the emission wavelength significantly red-shifted from 947
+nm and 1010 nm to 1120 nm and 1300 nm. The red-shift phenomenon is
+attributed to the enhanced interactions between Au NCs, while the lower
+ligand-metal and ligand-metal-metal charge transfer efficiency of the
+DDT ligand favors long-wavelength PL emission. This study demon-
+strates that by regulating the size of the nanoparticles and the Au NCs
+loading, the number and spacing of Au NCs within each nanoparticle can
+be precisely controlled, thereby enabling accurate adjustment of the
+emission wavelength and providing new insights and methods for the
+Fig. 12. (A) Structures and compositions of [Au21(m-MBT)12(Hdppa)2]+ and [Au28(p-MBT)14(Hdppa)3]2+. Reproduced with permission [177]. Copyright 2024,
+Springer Nature. (B) Excitation (black) and emission (red) spectra of Cluster 1 and Cluster 2 in CH₂Cl₂. (C) Schematic diagram of structure in bi-icosahedral clusters;
+(D) PL spectrum of the Au25 and Au37. Reproduced with permission [180]. Copyright 2021, Wiley-VCH. (For interpretation of the references to colour in this figure
+legend, the reader is referred to the web version of this article.)
+J. Sun et al.
+Coordination Chemistry Reviews 533 (2025) 216544 
+16 
+
+development and application of NIR-II nanomaterials.
+4.4. Impact of ambient conditions
+Recent studies demonstrate that the electronic states of Au NCs can
+be
+affected
+by
+solvent
+polarity,
+temperature,
+and
+pressure
+[168,170,182]. For instance, the emission wavelength of Au24(S-
+TBBM)20 red-shifted as the solvent polarity increased, from 600 nm in
+low-polarity hexane to 650 nm in high-polarity dichloromethane. This
+observation shows that the PL of Au24(S-TBBM)20 depends on solvent
+polarity, with stronger polarities causing more significant red shifts in
+both PL I and PL II [170]. In addition, the emission wavelengths of
+[Au23(SR)16]−, [Au21(SR)12(PCP)]+, and [Au19Cd2(SR)16]−
+red shift
+from 720 nm to approximately 760 nm with the increasing temperature
+[168]. The increase in temperature facilitates electron transitions be-
+tween energy bands, resulting in a reduced HOMO-LUMO energy gap.
+Additionally, higher temperatures increase the possibility of non-
+radiative relaxation, which leads to a decrease in emission energy and
+consequently causes a redshift in the emission wavelength. Furthermore,
+the emission wavelengths of Au21(SR)12(dppm)2 and Au28(S-TBBT)20
+exhibit a redshift with the increasing pressure, indicating that pressure-
+induced structural changes significantly alter the oscillator strength of
+electron transitions. Specifically, the increase in pressure leads to the
+distortion of the atomic structure of clusters, resulting in a more pro-
+nounced optical response characterized by low-energy transitions [182].
+This enhancement further induces a redshift effect in the emission
+wavelength. These studies suggest that the emission wavelength of Au
+NCs is closely related to ambient conditions, providing new insights into
+their applications in bioimaging and biosensing.
+Fig. 13. (A) Structures and compositions of P-Au25DTX-Cl and M-Au25DTX-Cl. (B) Crystal structures of Au25DTX-Cl (side view) and Au25DTX-Br (top view) with
+ligand packing and enantiomeric parallel rotation. (Colour code: Au, green; P, violet; S, yellow; O, red; C, light gray; Cl, light blue; Br, brown.). (C) PL spectra of
+Au25DTX-Cl and Au25DTX-Br in DCM. (D) and (E) Kohn-Sham energy levels, atomic orbital populations, and HOMO-LUMO distributions of Au25DTX-Cl. Reproduced
+with permission [178]. Copyright 2024, American Chemical Society. (F) UV/Vis absorption and negative-ion mode ESI-MS spectra. (G) Emission spectra and images
+of [Au10SR10], [Au15SR13], [Au18SR14], and [Au25SR18]−in ethanol-water mixtures. Reproduced with permission [181]. Copyright 2020, Wiley-VCH. (For inter-
+pretation of the references to colour in this figure legend, the reader is referred to the web version of this article.)
+J. Sun et al.
+Coordination Chemistry Reviews 533 (2025) 216544 
+17 
+
+5. Conclusion and future perspectives
+Biomedical imaging plays a crucial role in disease diagnosis [1,10].
+Among the various imaging methods, optical imaging has garnered
+significant attention due to its high resolution, real-time capability, and
+non-invasiveness [5,6]. Notably, imaging in the NIR-II region allows for
+enhanced resolution and deeper tissue penetration [10,21]. Recently,
+gold nanoclusters (Au NCs) have been widely utilized in NIR-II imaging
+and sensing applications due to their exceptional optical properties
+[63,93]. The PLQY and emission wavelength of Au NCs significantly
+impact imaging performance: a high PLQY enhances image brightness
+and SNR, resulting in clearer images; while emission wavelengths in the
+1000–1700 nm NIR-II region notably improve tissue penetration and
+reduce autofluorescence interference, facilitating deep-tissue imaging.
+These factors contribute to imaging that offers high brightness, contrast,
+and deep tissue penetration. In this review, we summarize recent ad-
+vances in the use of NIR-II Au NCs for bioimaging and biosensing. We
+specifically discuss strategies to enhance the PLQY and red-shift the
+emission wavelengths of Au NCs, including metal doping, ligand effects,
+and variations in ambient conditions. It is worth noting that NIR-II op-
+tical imaging technology based on Au NCs is still in its infancy. While
+significant progress has been made, most Au NCs continue to suffer from
+low PLQYs and short emission wavelengths, limiting their luminescent
+efficiency. Moreover, the PL mechanisms underlying these Au NCs
+remain poorly understood. To address these challenges, further in-depth
+research is essential to improve their luminescent properties and unlock
+their full potential for broader applications in bioimaging and bio-
+sensing. Key directions for future research are outlined below.
+(1) Enhancing PLQY: First, non-radiative relaxation can be effec-
+tively reduced by limiting core and surface vibrations within the
+Au NCs through surface hardening or the introduction of rigid
+ligands [137,193]. In future studies, molecular rotation and vi-
+bration can be effectively restricted by ligand introduction of
+non-covalent interactions, such as hydrogen bonding, electro-
+static forces and C −H⋅⋅⋅π interactions. In addition, the induction
+of ionic dipole interactions or hydrophobic effects through guest
+molecules with multifunctional groups can also be effective in
+restricting molecular motions and thus reducing non-radiative
+relaxation. Second, anchoring chromophores to the surface of
+Au NCs can sensitize the clusters through resonance energy
+transfer, thereby enhancing the PLQY [194]. The effective energy
+transfer relies on the strong overlap between the absorption
+spectrum of the chromophore and the emission spectrum of the
+Au NCs, which is a critical factor in facilitating energy transfer
+[195]. This process holds significant importance in the design and
+application of Au NCs, paving a way for enhancing the lumines-
+cent properties of Au NCs in the future. Third, it is generally
+observed that as the Au core size decreases, the energy levels of
+electrons and holes become discrete, resulting in an increase in
+the HOMO-LUMO gap [183,184]. Upon excitation, electrons at
+higher energy levels can avoid non-radiative recombination
+processes with lower energy states [196]. Additionally, estab-
+lishing the relationship between core size and QY is quite chal-
+lenging when focusing solely on the size of the Au core without
+considering the specific structures resulting from metal doping or
+different ligands. The electronic structures of ligands and/or
+doped metals influence the electron density of the clusters and
+can also modify the mechanisms of LMCT and MLCT [130],
+thereby profoundly affecting the optical properties of Au NCs. In
+the future, it is necessary to maintain relative consistency in
+experimental conditions. Only in this way can achieve a more
+comprehensive understanding of how Au core size or other fac-
+tors influence the mechanisms of PLQY, thereby leading to the
+optimization of Au NCs for bioimaging and sensing. Fourth, ac-
+cording to the Beer-Lambert law [197], absorbance (A) is a
+measure of the light absorption characteristics of a material, and
+is determined by the product of the molar absorption coefficient
+(ε), path length (l), and concentration (c) of the solution. The QY
+can also be defined as the ratio of emitted photons to absorbed
+photons. Therefore, if the material exhibits fewer non-radiative
+processes, a higher absorbance can enhance its emission effi-
+ciency, thereby improving the QY. The size and shape of Au NCs
+significantly affect their molar absorption coefficient [198]. In
+general, smaller Au NCs typically exhibit broader absorption
+bands and stronger absorption capacities [199], while non-
+spherical Au NCs (e.g., nanorods) tend to have stronger optical
+absorption properties [165,200]. Thus, by modulating the size
+and shape of the nanoclusters, their absorption at specific
+wavelengths can be enhanced, which in turn boosts the QY.
+Additionally, the use of electron-donating ligands can increase
+the electron density on the Au NCs, raising the energy levels of
+the valence band and thus improving light absorption. However,
+it is important to note that if non-radiative transitions are likely to
+occur, the QY may remain low, even if the Au NCs demonstrate
+strong absorption capabilities.
+(2) Red-shifting Emission Wavelengths: In the study of the PL
+emission wavelength of Au NCs, the HOMO-LUMO gap directly
+influences the efficiency of electron transitions [201]. A smaller
+HOMO-LUMO gap results in a decreased energy of electron
+transitions, making clusters more prone to redshift of the emis-
+sion wavelength. First, metal doping can introduce new elec-
+tronic states and charge transfer channels. Especially when the
+dopant elements have different electronegativities, they will ex-
+change charges with the electrons in the Au NCs, changing the
+overall energy level structure and electron density, and thus
+modulating the HOMO-LUMO gap [176,179]. Therefore, in
+future studies, exploring the incorporation of transition metals
+such as zinc, nickel or cobalt, could be beneficial to lower HOMO-
+LUMO gap. Additionally, investigating different doping ratios to
+identify the optimal conditions for red-shifting the emission
+wavelength is also an important research direction. Second, li-
+gands can affect the energy levels and the overall electronic dis-
+tribution of the cluster [190]. Ligands with strong electron-
+donating or electron-withdrawing properties can modulate the
+HOMO-LUMO gap, leading to shifts in emission wavelengths
+[191]. In the future, the use of bifunctional ligands containing
+electron-donating and electron-accepting groups, may help
+modulate the electronic structure of the Au NCs, thereby lowering
+the HOMO-LUMO gap.
+(3) Balancing of QY and Emission Wavelengths: In the process of
+enhancing QY, it is necessary to reduce non-radiative pathways to
+achieve more efficient optical transitions. This process tends to
+increase the energy of the excited state, leading to an expansion
+of the HOMO-LUMO gap and thus a blue shift in the emission
+wavelength. Conversely, to achieve a red shift in the emission
+wavelength, it is generally required to lower the HOMO-LUMO
+gap to facilitate low-energy transitions, which results in a
+reduction in QY. Therefore, future research faces a significant
+challenge in optimizing the design and synthesis of Au NCs to
+enhance PLQY while simultaneously achieving a red shift in the
+emission wavelength. This endeavor may involve the fusion of
+various regulatory strategies and a deeper understanding of the
+PL mechanisms in Au NCs.
+(4) Deepening Understanding of PL Mechanisms: Although the PL
+properties of Au NCs have garnered significant attention, the
+underlying PL mechanisms are not yet fully understood. Unlike
+traditional dyes, the luminescence mechanism of Au NCs is more
+complicated, involving various emission processes such as fluo-
+rescence [137], phosphorescence [202], and TADF [203].
+Currently, the effects of ligand chemistry, gold core size, metal
+doping, temperature, and solvent on the emission mechanisms of
+J. Sun et al.
+Coordination Chemistry Reviews 533 (2025) 216544 
+18 
+
+nanoclusters primarily remain theoretical hypotheses, lacking
+sufficient experimental validation. To advance the understanding
+of the PL properties of Au NCs from empirical observations to a
+scientifically predictable framework, researchers must investi-
+gate the relationship between atomically precise structures of Au
+NCs and their luminescent properties. Additionally, an in-depth
+understanding of the AIE mechanism and detailed assessment
+of external ambient conditions on luminescence properties are
+also essential. Further study should focus on integrating theo-
+retical calculations, such as density functional theory (DFT)
+[204,205], with experimental results. This approach will enhance
+our understanding of the relationship between the structures of
+Au NCs and their optical properties, providing a solid theoretical
+foundation for the design of innovative, high-performance NIR-II
+probes.
+(5) Enhancing Targeting Ability of NIR-II Probes: To improve the
+targeting ability of NIR-II probes, the primary challenge that
+needs to be addressed is how to achieve specific activation in
+target tissues after the probes have distributed throughout the
+body [206,207]. Currently, many probes generate false positives
+due to the non-specific distribution of pathological parameters,
+making the reduction of background interference a key challenge.
+Additionally, most probes can only perform qualitative analysis.
+However, quantitative analysis is more important, as it can
+effectively monitor disease progression, assess treatment efficacy,
+and determine prognosis. Consequently, future research should
+focus on the development of PL probes with in vivo quantitative
+analysis capabilities. Furthermore, NIR-II Au NCs biosensing
+probes are scarce. Most of these probes are single-emission “turn-
+on” type probes susceptible to non-specific factors. In contrast,
+the probes with dual-emission PL signals can enhance detection
+accuracy, aiding in the better resolution of complex physiological
+and pathological processes.
+(6) Improving Biocompatibility of NIR-II Probes: In the biomed-
+ical field, biocompatibility of NIR-II probes is crucial. While most
+Au NCs demonstrate excellent performance in PL imaging and
+have sizes below the renal filtration threshold (approximately
+5.5 nm), their high hydrophobicity can result in accumulation in
+the liver. This accumulation can slow down in vivo metabolism
+and restrict their broader use. In contrast, hydrophilic Au NCs,
+featured by non-toxicity, good biocompatibility, and photo-
+stability, have become ideal materials for biological applications.
+For instance, employing water-soluble molecules like γ-gluta-
+thione (GSH) and cysteine (Cys) as ligands not only increases the
+water solubility of NCs but also enhances their biocompatibility
+and potential for functionalization. Therefore, future research
+should focus on enhancing the biocompatibility of Au NCs while
+retaining their NIR-II PL properties.
+(7) Promoting Clinical Application and Translation: As research
+on the PL of Au NCs advances, their clinical application prospects
+become increasingly promising. In the future, researchers should
+focus on transitioning high-performance Au NCs from the labo-
+ratory to clinical settings, particularly in critical areas such as
+early disease diagnosis, precision therapy, and dynamic imaging.
+NIR-II emitting Au NCs could provide higher resolution, deeper
+imaging capabilities, and more precise sensing functions. Addi-
+tionally, integrating Au NCs with biological markers and drug
+delivery systems enhances their multifunctionality, enabling
+comprehensive applications in “theranostics”, including photo-
+thermal therapy (PTT) and photodynamic therapy (PDT). This
+integration is expected to propel the development of biomedical
+technology, tackle challenges in the field, and ultimately facili-
+tate breakthroughs from basic research to clinical applications.
+In summary, future research should continue to optimize the struc-
+ture and functionality of Au NCs to enhance their bioimaging
+capabilities in the NIR-II window while improving their stability and
+specificity in complex biological environments. We anticipate that in the
+near
+future,
+researchers
+will
+be
+able
+to
+transition
+more
+high-
+performance NIR-II Au NC probes from the laboratory to clinical set-
+tings, leading to groundbreaking advancements in the biomedical field.
+Declaration of competing interest
+The authors declare that they have no known competing financial
+interests or personal relationships that could have appeared to influence
+the work reported in this paper.
+Acknowledgements
+This work was financially supported by start-up research funding of
+Fujian Normal University (No. Y0720326K13), the Natural Science
+Foundation of Ningbo (No. 202003N4005) and the Natural Science
+Foundation of Fujian Province, China (No. 2024J01300).
+Data availability
+No data was used for the research described in the article.
+References
+[1] F. Wang, Y. Zhong, O. Bruns, Y. Liang, H. Dai, Nat. Photonics 18 (2024) 535–547,
+https://doi.org/10.1038/s41566-024-01391-5.
+[2] E.L. Schmidt, Z. Ou, E. Ximendes, H. Cui, C.H.C. Keck, D. Jaque, G. Hong, Nat.
+Rev. Method. Prime. 4 (2024) 23, https://doi.org/10.1038/s43586-024-00301-x.
+[3] R. Weissleder, M.J. Pittet, Nature 452 (2024) 580–589, https://doi.org/10.1038/
+nature06917.
+[4] S.H. Yun, S.J.J. Kwok, Nat. Biomed. Eng. 1 (2017) 0008, https://doi.org/
+10.1038/s41551-016-0008.
+[5] Y. Kenry, B. Liu Duan, Adv. Mater. 30 (2018) 1802394, https://doi.org/10.1002/
+adma.201802394.
+[6] S. He, J. Song, J. Qu, Z. Cheng, Chem. Soc. Rev. 47 (2018) 4258–4278, https://
+doi.org/10.1039/C8CS00234G.
+[7] H. Kobayashi, P.L. Choyke, Acc. Chem. Res. 44 (2011) 83–90, https://doi.org/
+10.1021/ar1000633.
+[8] Q. Miao, C. Xie, X. Zhen, Y. Lyu, H. Duan, X. Liu, J.V. Jokerst, K. Pu, Nat.
+Biotechnol. 35 (2017) 1102–1110, https://doi.org/10.1038/nbt.3987.
+[9] E.A. Owens, M. Henary, G. El Fakhri, H.S. Choi, Acc. Chem. Res. 49 (2016)
+1731–1740, https://doi.org/10.1021/acs.accounts.6b00239.
+[10] F. Wang, F. Ren, Z. Ma, L. Qu, R. Gourgues, C. Xu, A. Baghdasaryan, J. Li, I.
+E. Zadeh, J.W.N. Los, A. Fognini, J. Qin-Dregely, H. Dai, I. Nat. Nanotechnol. 17
+(2022) 653–660, https://doi.org/10.1038/s41565-022-01130-3.
+[11] F. Wang, H. Wan, Z. Ma, Y. Zhong, Q. Sun, Y. Tian, L. Qu, H. Du, M. Zhang, L. Li,
+H. Ma, J. Luo, Y. Liang, J. Li, G. Hong, L. Liu, H. Dai, Nat. Methods 16 (2019)
+545–552, https://doi.org/10.1038/s41592-019-0398-7.
+[12] Y. Tang, F. Pei, X. Lu, Q. Fan, W. Huang, Adv. Opt. Mater. 7 (2019) 1900917,
+https://doi.org/10.1002/adom.201900917.
+[13] G. Yang, Z. Wang, F. Du, F. Jiang, X. Yuan, J. Am. Chem. Soc. 145 (2023)
+11879–11898, https://doi.org/10.1021/jacs.3c02880.
+[14] Y. Cong, J. Liu, J. Zhang, J. Wang, X. Wang, L. Li, ACS Appl. Bio. Mater. 7 (2024)
+2695–2703, https://doi.org/10.1021/acsabm.4c00376.
+[15] A.S. Arojojoye, S.G. Awuah, Coord. Chem. Rev. 522 (2025) 216208, https://doi.
+org/10.1016/j.ccr.2024.216208.
+[16] N. Zhang, C. Lu, M. Chen, J. Chen, L. Xu, F. Shu, Z. Du, J. Nanobiotechnol. 19
+(2021) 132, https://doi.org/10.1186/s12951-021-00870-z.
+[17] R. Weissleder, Nat. Biotechnol. 19 (2001) 316–317, https://doi.org/10.1038/
+86684.
+[18] G. Chen, Y. Zhang, C. Li, D. Huang, Q. Wang, Q. Wang, Adv. Healthc. Mater. 7
+(2018) 1800497, https://doi.org/10.1002/adhm.201800497.
+[19] Z. Liu, L. Luo, R. Jin, Adv. Mater. 36 (2023) 2309073, https://doi.org/10.1002/
+adma.202309073.
+[20] N. Sharma, W. Mohammad, X. Le Gu´evel, Chem. Biomed. Imaging 2 (2024)
+462–480, https://doi.org/10.1021/cbmi.4c00021.
+[21] B. Chang, D. Li, Y. Ren, C. Qu, X. Shi, R. Liu, H. Liu, J. Tian, Z. Hu, T. Sun,
+Z. Cheng, Nat. Biomed. Eng. 6 (2021) 629–639, https://doi.org/10.1038/s41551-
+021-00773-2.
+[22] L. Gong, X. Shan, X.H. Zhao, L. Tang, B. Zhang, ChemMedChem 16 (2021)
+2426–2440, https://doi.org/10.1002/cmdc.202100142.
+[23] C. Li, G. Chen, Y. Zhang, F. Wu, Q. Wang, J. Am. Chem. Soc. 142 (2020)
+14789–14804, https://doi.org/10.1021/jacs.0c07022.
+[24] G. Hong, A.L. Antaris, H. Dai, Nat. Biomed. Eng. 1 (2017) 0010, https://doi.org/
+10.1038/s41551-016-0010.
+[25] S. Diao, G. Hong, A.L. Antaris, J.L. Blackburn, K. Cheng, Z. Cheng, H. Dai, Nano
+Res. 8 (2015) 3027–3034, https://doi.org/10.1007/s12274-015-0808-9.
+J. Sun et al.
+Coordination Chemistry Reviews 533 (2025) 216544 
+19 
+
+[26] K. Zhang, R. Chen, L. Wang, J. Hu, Small 19 (2023) 2206044, https://doi.org/
+10.1002/smll.202206044.
+[27] C. Xu, K. Pu, Chem. Soc. Rev. 50 (2021) 1111–1137, https://doi.org/10.1039/
+d0cs00664e.
+[28] G. Hong, S. Diao, J. Chang, A.L. Antaris, C. Chen, B. Zhang, S. Zhao, D.N. Atochin,
+L. Huang, K.I. Andreasson, C.J. Kuo, H. Dai, Nat. Photonics 8 (2014) 723–730,
+https://doi.org/10.1038/nphoton.2014.166.
+[29] X. Zhang, S. He, B. Ding, C. Qu, Q. Zhang, H. Chen, Y. Sun, H. Fang, Y. Long,
+R. Zhang, X. Lan, Z. Cheng, Chem. Eng. J. 385 (2020) 123959, https://doi.org/
+10.1016/j.cej.2019.123959.
+[30] Z. Liu, F. Ren, H. Zhang, Q. Yuan, Z. Jiang, H. Liu, Q. Sun, Z. Li, Biomaterials 219
+(2019) 119364, https://doi.org/10.1016/j.biomaterials.2019.119364.
+[31] P. Wang, Y. Fan, L. Lu, L. Liu, L. Fan, M. Zhao, Y. Xie, C. Xu, F. Zhang, Nat.
+Commun. 9 (2018) 2989, https://doi.org/10.1038/s41467-018-05113-8.
+[32] Z. Li, Q. Fu, J. Ye, X. Ge, J. Wang, J. Song, H. Yang, Angew. Chem. Int. Ed. 59
+(2020) 22202–22209, https://doi.org/10.1002/anie.202009609.
+[33] J.-Y. Zhao, G. Chen, Y.-P. Gu, R. Cui, Z.-L. Zhang, Z.-L. Yu, B. Tang, Y.-F. Zhao, D.-
+W. Pang, J. Am. Chem. Soc. 138 (2016) 1893–1903, https://doi.org/10.1021/
+jacs.5b10340.
+[34] A. Zebibula, N. Alifu, L. Xia, C. Sun, X. Yu, D. Xue, L. Liu, G. Li, J. Qian, Adv.
+Funct. Mater. 28 (2017) 1703451, https://doi.org/10.1002/adfm.201703451.
+[35] G. Hong, Y. Zou, A.L. Antaris, S. Diao, D. Wu, K. Cheng, X. Zhang, C. Chen, B. Liu,
+Y. He, J.Z. Wu, J. Yuan, B. Zhang, Z. Tao, C. Fukunaga, H. Dai, Nat. Commun. 5
+(2014) 4206, https://doi.org/10.1038/ncomms5206.
+[36] A. Reisch, A.S. Klymchenko, Small 12 (2016) 1968–1992, https://doi.org/
+10.1002/smll.201503396.
+[37] D. Mao, J. Liu, S. Ji, T. Wang, Y. Hu, D. Zheng, R. Yang, D. Kong, D. Ding,
+Biomaterials 143 (2017) 109–119, https://doi.org/10.1016/j.
+biomaterials.2017.07.038.
+[38] G. Hong, S. Diao, A.L. Antaris, H. Dai, Chem. Rev. 115 (2015) 10816–10906,
+https://doi.org/10.1021/acs.chemrev.5b00008.
+[39] F. Liu, Z. Yuan, X. Sui, C. Wang, M. Xu, W. Li, Y. Chen, Chem. Commun. 56 (2020)
+8301–8304, https://doi.org/10.1039/d0cc02813d.
+[40] S. Diao, J.L. Blackburn, G. Hong, A.L. Antaris, J. Chang, J.Z. Wu, B. Zhang,
+K. Cheng, C.J. Kuo, H. Dai, Angew. Chem. Int. Ed. 54 (2015) 14758–14762,
+https://doi.org/10.1002/anie.201507473.
+[41] Q. Xin, H. Ma, H. Wang, X.D. Zhang, Exploration 3 (2023) 20220011, https://doi.
+org/10.1002/exp.20220011.
+[42] F. Ren, Z. Jiang, M. Han, H. Zhang, B. Yun, H. Zhu, Z. Li, View 2 (2021)
+20200128, https://doi.org/10.1002/viw.20200128.
+[43] C. Yao, S. Tian, L. Liao, X. Liu, N. Xia, N. Yan, Z. Gan, Z. Wu, Nanoscale 7 (2015)
+16200–16203, https://doi.org/10.1039/c5nr04760a.
+[44] H. Lin, X. Song, O.J.H. Chai, Q. Yao, H. Yang, J. Xie, Adv. Mater. 36 (2024)
+2401002, https://doi.org/10.1002/adma.202401002.
+[45] Q. Yao, X. Yuan, T. Chen, D.T. Leong, J. Xie, Adv. Mater. 30 (2018) 1802751,
+https://doi.org/10.1002/adma.201802751.
+[46] S. Li, N.-N. Li, X.-Y. Dong, S.-Q. Zang, T.C.W. Mak, Chem. Rev. 124 (2024)
+7262–7378, https://doi.org/10.1021/acs.chemrev.3c00896.
+[47] J. Qian, Z. Yang, J. Lyu, Q. Yao, J. Xie, Precision Chem. 2 (2024) 495–517,
+https://doi.org/10.1021/prechem.4c00044.
+[48] Y. Lu, W. Chen, Chem. Soc. Rev. 41 (2012) 3594–3623, https://doi.org/10.1039/
+c2cs15325d.
+[49] Y. Li, M. Zhou, R. Jin, Adv. Mater. 33 (2021) 2006591, https://doi.org/10.1002/
+adma.202006591.
+[50] G. Schmid, Chem. Soc. Rev. 37 (2008) 1909–1930, https://doi.org/10.1039/
+b713631p.
+[51] A. Fernando, K.L.D.M. Weerawardene, N.V. Karimova, C.M. Aikens, Chem. Rev.
+115 (2015) 6112–6216, https://doi.org/10.1021/cr500506r.
+[52] R. Jin, C. Zeng, M. Zhou, Y. Chen, Chem. Rev. 116 (2016) 10346–10413, https://
+doi.org/10.1021/acs.chemrev.5b00703.
+[53] H. H¨akkinen, Chem. Soc. Rev. 37 (2008) 1847–1859, https://doi.org/10.1039/
+b717686b.
+[54] Y. Huang, L. Fuksman, J. Zheng, Dalton T. 47 (2018) 6267–6273, https://doi.
+org/10.1039/c8dt00420j.
+[55] H. H¨akkinen, Nat. Chem. 4 (2012) 443–455, https://doi.org/10.1038/
+nchem.1352.
+[56] Z. Lei, X.-K. Wan, S.-F. Yuan, Z.-J. Guan, Q.-M. Wang, Acc. Chem. Res. 51 (2018)
+2465–2474, https://doi.org/10.1021/acs.accounts.8b00359.
+[57] K. Sahoo, T.R. Gazi, S. Roy, I. Chakraborty, Commun. Chem. 6 (2023) 157,
+https://doi.org/10.1038/s42004-023-00958-7.
+[58] S. Li, J. Wei, Q. Yao, X. Song, J. Xie, H. Yang, Chem. Soc. Rev. 52 (2023)
+1672–1696, https://doi.org/10.1039/d2cs00497f.
+[59] Y. Zheng, J. Wu, H. Jiang, X. Wang, Coord. Chem. Rev. 431 (2021) 213689,
+https://doi.org/10.1016/j.ccr.2020.213689.
+[60] H. Ma, J. Wang, X.-D. Zhang, Coordin. Chem 448 (2021) 214184, https://doi.
+org/10.1016/j.ccr.2021.214184.
+[61] W. Pan, M. Rafiq, W. Haider, Y. Guo, H. Wang, M. Xu, B. Yu, H. Cong, Y. Shen,
+Coord. Chem. Rev. 514 (2024) 215907, https://doi.org/10.1016/j.
+ccr.2024.215907.
+[62] A. Cifuentes-Rius, V.G. Deepagan, J. Xie, N.H. Voelcker, ACS Appl. Mater.
+Interfaces 13 (2021) 49581–49588, https://doi.org/10.1021/acsami.1c14275.
+[63] A.S. Krishna Kumar, W.-L. Tseng, Anal. Methods 12 (2020) 1809–1826, https://
+doi.org/10.1039/d0ay00157k.
+[64] X. Kang, M. Zhu, Chem. Soc. Rev. 48 (2019) 2422–2457, https://doi.org/
+10.1039/c8cs00800k.
+[65] I. Chakraborty, T. Pradeep, Chem. Rev. 117 (2017) 8208–8271, https://doi.org/
+10.1021/acs.chemrev.6b00769.
+[66] D.M. Chevrier, V.D. Thanthirige, Z. Luo, S. Driscoll, P. Cho, M.A. MacDonald,
+Q. Yao, R. Guda, J. Xie, E.R. Johnson, A. Chatt, N. Zheng, P. Zhang, Chem. Sci. 9
+(2018) 2782–2790, https://doi.org/10.1039/c7sc05086k.
+[67] C.M. Aikens, Acc. Chem. Res. 51 (2018) 3065–3073, https://doi.org/10.1021/
+acs.accounts.8b00364.
+[68] X. Kang, Y. Li, M. Zhu, R. Jin, Chem. Soc. Rev. 49 (2020) 6443–6514, https://doi.
+org/10.1039/C9CS00633H.
+[69] S. Chen, S. Li, Y. Wang, Z. Chen, H. Wang, X.-D. Zhang, Adv. Nanobiomed Res. 3
+(2023) 2300082, https://doi.org/10.1002/anbr.202300082.
+[70] S.M. van de Looij, E.R. Hebels, M. Viola, M. Hembury, S. Oliveira, T. Vermonden,
+Bioconjug. Chem. 33 (2021) 4–23, https://doi.org/10.1021/acs.
+bioconjchem.1c00475.
+[71] Z. Wang, X. Wang, J.B. Wan, F. Xu, N. Zhao, M. Chen, Small 17 (2021) 2103780,
+https://doi.org/10.1002/smll.202103780.
+[72] Z. Yang, X. Yang, Y. Guo, H. Kawasaki, ACS Appl. Bio. Mater. 6 (2023)
+4504–4517, https://doi.org/10.1021/acsabm.3c00518.
+[73] C. Ding, T. Ren, Coord. Chem. Rev. 482 (2023) 215080, https://doi.org/10.1016/
+j.ccr.2023.215080.
+[74] S. Hu, L. Huang, L. Zhou, T. Wu, S. Zhao, L. Zhang, Anal. Chem. 95 (2023)
+3830–3839, https://doi.org/10.1021/acs.analchem.2c05333.
+[75] G. Yang, X. Mu, X. Pan, Y. Tang, Q. Yao, Y. Wang, F. Jiang, F. Du, J. Xie, X. Zhou,
+X. Yuan, Chem. Sci. 14 (2023) 4308–4318, https://doi.org/10.1039/d2sc05729h.
+[76] Y.Y. Zhao, B. Hwang, Y. Lee, J. Yoon, Natl. Sci. Rev. 11 (2024) nwae048, https://
+doi.org/10.1093/nsr/nwae048.
+[77] G. Yang, K. Liu, Y. Wang, X. Pan, J. Ye, Y. Li, F. Du, T. Feng, X. Yuan, Aggregate 5
+(2023) e435, https://doi.org/10.1002/agt2.435.
+[78] A. Baghdasaryan, F. Wang, F. Ren, Z. Ma, J. Li, X. Zhou, L. Grigoryan, C. Xu,
+H. Dai, Nat. Commun. 13 (2022) 5613, https://doi.org/10.1038/s41467-022-
+33341-6.
+[79] G. Yang, X. Pan, W. Feng, Q. Yao, F. Jiang, F. Du, X. Zhou, J. Xie, X. Yuan, ACS
+Nano 17 (2023) 15605–15614, https://doi.org/10.1021/acsnano.3c02370.
+[80] X. Song, W. Zhu, X. Ge, R. Li, S. Li, X. Chen, J. Song, J. Xie, X. Chen, H. Yang,
+Angew. Chem. Int. Ed. 60 (2020) 1306–1312, https://doi.org/10.1002/
+anie.202010870.
+[81] H. Ma, X. Zhang, L. Liu, Y. Huang, S. Sun, K. Chen, Q. Xin, P. Liu, Y. Yan,
+X. Zhang, Sci. Adv. 9 (2023) eadh7828, https://doi.org/10.1126/sciadv.
+adh7828.
+[82] Y. Kong, D. Santos-Carballal, D. Martin, N.N. Sergeeva, W. Wang, G. Liu,
+B. Johnson, B. Bhayana, Z. Lin, Y. Wang, X. Le Gu´evel, N.H. de Leeuw, D. Zhou,
+M.X. Wu, Mater. Today 51 (2021) 96–107, https://doi.org/10.1016/j.
+mattod.2021.09.022.
+[83] T.C. Johnstone, K. Suntharalingam, S.J. Lippard, Chem. Rev. 116 (2016)
+3436–3486, https://doi.org/10.1021/acs.chemrev.5b00597.
+[84] L. Kelland, Nat. Rev. Cancer 7 (2007) 573–584, https://doi.org/10.1038/
+nrc2167.
+[85] Y. Yang, Y. Yu, H. Chen, X. Meng, W. Ma, M. Yu, Z. Li, C. Li, H. Liu, X. Zhang,
+H. Xiao, Z. Yu, ACS Nano 14 (2020) 13536–13547, https://doi.org/10.1021/
+acsnano.0c05541.
+[86] C.N. Loynachan, A.P. Soleimany, J.S. Dudani, Y. Lin, A. Najer, A. Bekdemir,
+Q. Chen, S.N. Bhatia, M.M. Stevens, Nat. Nanotechnol. 14 (2019) 883–890,
+https://doi.org/10.1038/s41565-019-0527-6.
+[87] S. Yi, Q. Hu, Y. Chi, H. Qu, Y. Xiao, ACS Mater. Lett. 5 (2023) 2164–2173, https://
+doi.org/10.1021/acsmaterialslett.3c00379.
+[88] A. Zaheer, R.E. Lenkinski, A. Mahmood, A.G. Jones, L.C. Cantley, J.V. Frangioni,
+Nat. Biotechnol. 19 (2001) 1148–1154, https://doi.org/10.1038/nbt1201-1148.
+[89] C. Li, Y. Zhang, G. Chen, F. Hu, K. Zhao, Q. Wang, Adv. Mater. 29 (2017) 13,
+https://doi.org/10.1002/adma.201605754.
+[90] D. Li, Q. Liu, Q. Qi, H. Shi, E.C. Hsu, W. Chen, W. Yuan, Y. Wu, S. Lin, Y. Zeng,
+Z. Xiao, L. Xu, Y. Zhang, T. Stoyanova, W. Jia, Z. Cheng, Small 16 (2020)
+2003851, https://doi.org/10.1002/smll.202003851.
+[91] Q. Chen, J. Chen, Z. Yang, L. Zhang, Z. Dong, Z. Liu, Nano Res. 11 (2018)
+5657–5669, https://doi.org/10.1007/s12274-017-1917-4.
+[92] Z. Yu, B. Musnier, K.D. Wegner, M. Henry, B. Chovelon, A. Desroches-Castan,
+A. Fertin, U. Resch-Genger, S. Bailly, J.-L. Coll, Y. Usson, V. Josserand, X. Le
+Gu´evel, ACS Nano 14 (2020) 4973–4981, https://doi.org/10.1021/
+acsnano.0c01174.
+[93] S. Ni, Y. Liu, S. Tong, S. Li, X. Song, J. Anal. Test. 7 (2023) 260–271, https://doi.
+org/10.1007/s41664-023-00256-0.
+[94] Y. Zheng, Y. Zhu, J. Dai, J. Lei, J. You, N. Chen, L. Wang, M. Luo, J. Wu, Int. J.
+Biol. Macromol. 230 (2023) 123452, https://doi.org/10.1016/j.
+ijbiomac.2023.123452.
+[95] Z. Pang, W. Yan, J. Yang, Q. Li, Y. Guo, D. Zhou, X. Jiang, ACS Nano 16 (2022)
+16019–16037, https://doi.org/10.1021/acsnano.2c03752.
+[96] J.E. Park, M. Kim, J.H. Hwang, J.M. Nam, Small Methods 1 (2017) 1600032,
+https://doi.org/10.1002/smtd.201600032.
+[97] L.-Y. Chen, C.-W. Wang, Z. Yuan, H.-T. Chang, Anal. Chem. 87 (2014) 216–229,
+https://doi.org/10.1021/ac503636j.
+[98] Y. Xie, Y. Xianyu, N. Wang, Z. Yan, Y. Liu, K. Zhu, N.S. Hatzakis, X. Jiang, Adv.
+Funct. Mater. 28 (2018) 1702026, https://doi.org/10.1002/adfm.201702026.
+[99] S. Sarkar, Y.S. Ha, N. Soni, G.I. An, W. Lee, M.H. Kim, P.T. Huynh, H. Ahn,
+N. Bhatt, Y.J. Lee, J.Y. Kim, K.M. Park, I. Ishii, S.G. Kang, J. Yoo, Angew. Chem.
+Int. Ed. 55 (2016) 9365–9370, https://doi.org/10.1002/anie.201603813.
+[100] R. Wang, Physiol. Rev. 92 (2012) 791–896, https://doi.org/10.1152/
+physrev.00017.2011.
+J. Sun et al.
+Coordination Chemistry Reviews 533 (2025) 216544 
+20 
+
+[101] S. Li, Q. Ma, C. Wang, K. Yang, Z. Hong, Q. Chen, J. Song, X. Song, H. Yang, Anal.
+Chem. 94 (2022) 2641–2647, https://doi.org/10.1021/acs.analchem.1c05154.
+[102] T. Ghosh, D.I. Lewis, A.T.R. Axon, S.M. Everett, Aliment. Pharm. Ther. 33 (2011)
+768–781, https://doi.org/10.1111/j.1365-2036.2010.04573.x.
+[103] G. Ma, X. Gao, C. Jiang, S. Xing, C. Wei, P. Huang, J. Lin, Anal. Chem. 91 (2019)
+13570–13575, https://doi.org/10.1021/acs.analchem.9b02701.
+[104] M. Liang, Q. Hu, S. Yi, Y. Chi, Y. Xiao, Biosens. Bioelectron. 224 (2023) 115062,
+https://doi.org/10.1016/j.bios.2023.115062.
+[105] Y. Yu, H. Jin, D. Holder, J.S. Ozer, S. Villarreal, P. Shughrue, S. Shi, D.J. Figueroa,
+H. Clouse, M. Su, N. Muniappa, S.P. Troth, W. Bailey, J. Seng, A.G. Aslamkhan,
+D. Thudium, F.D. Sistare, D.L. Gerhold, Nat. Biotechnol. 28 (2010) 470–477,
+https://doi.org/10.1038/nbt.1624.
+[106] J. Huang, J. Huang, P. Cheng, Y. Jiang, K. Pu, Adv. Funct. Mater. 30 (2020)
+2003628, https://doi.org/10.1002/adfm.202003628.
+[107] S. Li, N. Yang, Q. Ma, S. Li, S. Tong, J. Luo, X. Song, H. Yang, Anal. Chem. 95
+(2023) 16153–16159, https://doi.org/10.1021/acs.analchem.3c02698.
+[108] S.E. Crawford, M.J. Hartmann, J.E. Millstone, Acc. Chem. Res. 52 (2019)
+695–703, https://doi.org/10.1021/acs.accounts.8b00573.
+[109] D. Mordini, A. Mavridi-Printezi, A. Menichetti, A. Cantelli, X. Li, M. Montalti,
+Nanomaterials 13 (2023) 648, https://doi.org/10.3390/nano13040648.
+[110] Y. Chen, M. Zhou, Q. Li, H. Gronlund, R. Jin, Chem. Sci. 11 (2020) 8176–8183,
+https://doi.org/10.1039/d0sc01270j.
+[111] Q. Li, C.J. Zeman, G.C. Schatz, X.W. Gu, ACS Nano 15 (2021) 16095–16105,
+https://doi.org/10.1021/acsnano.1c04759.
+[112] H. Hirai, S. Takano, T. Nakashima, T. Iwasa, T. Taketsugu, T. Tsukuda, Angew.
+Chem. Int. Ed. 61 (2022) e202207290, https://doi.org/10.1002/anie.202207290.
+[113] Z. Wei, Y. Pan, G. Hou, X. Ran, Z. Chi, Y. He, Y. Kuang, X. Wang, R. Liu, L. Guo,
+ACS Appl. Mater. Interfaces 14 (2022) 2452–2463, https://doi.org/10.1021/
+acsami.1c16324.
+[114] H.-H. Deng, X.-Q. Shi, F.-F. Wang, H.-P. Peng, A.-L. Liu, X.-H. Xia, W. Chen, Chem.
+Mater. 29 (2017) 1362–1369, https://doi.org/10.1021/acs.chemmater.6b05141.
+[115] Z. Luo, X. Yuan, Y. Yu, Q. Zhang, D.T. Leong, J.Y. Lee, J. Xie, J. Am. Chem. Soc.
+134 (2012) 16662–16670, https://doi.org/10.1021/ja306199p.
+[116] M.R. Narouz, S. Takano, P.A. Lummis, T.I. Levchenko, A. Nazemi, S. Kaappa,
+S. Malola, G. Yousefalizadeh, L.A. Calhoun, K.G. Stamplecoskie, H. H¨akkinen,
+T. Tsukuda, C.M. Crudden, Robust, J. Am. Chem. Soc. 141 (2019) 14997–15002,
+https://doi.org/10.1021/jacs.9b07854.
+[117] S. Takano, H. Hirai, T. Nakashima, T. Iwasa, T. Taketsugu, T. Tsukuda, J. Am.
+Chem. Soc. 143 (2021) 10560–10564, https://doi.org/10.1021/jacs.1c05019.
+[118] Z. Wu, R. Jin, Nano Lett. 10 (2010) 2568–2573, https://doi.org/10.1021/
+nl101225f.
+[119] Y. Yu, Z. Luo, D.M. Chevrier, D.T. Leong, P. Zhang, D. Jiang, J. Xie, J. Am. Chem.
+Soc. 136 (2014) 1246–1249, https://doi.org/10.1021/ja411643u.
+[120] M. Suyama, S. Takano, T. Tsukuda, J. Phys. Chem. C 124 (2020) 23923–23929,
+https://doi.org/10.1021/acs.jpcc.0c06765.
+[121] T. Kawawaki, Y. Imai, D. Suzuki, S. Kato, I. Kobayashi, T. Suzuki, R. Kaneko,
+S. Hossain, Y. Negishi, Chem.-Eur. J. 26 (2020) 16150–16193, https://doi.org/
+10.1002/chem.202001877.
+[122] C. Yao, Y. Lin, J. Yuan, L. Liao, M. Zhu, L. Weng, J. Yang, Z. Wu, J. Am. Chem.
+Soc. 137 (2015) 15350–15353, https://doi.org/10.1021/jacs.5b09627.
+[123] H. Xiang, H. Yan, J. Liu, R. Cheng, C. Xu, J. Li, C. Yao, J. Am. Chem. Soc. 144
+(2022) 14248–14257, https://doi.org/10.1021/jacs.2c05053.
+[124] Y. Huang, K. Chen, L. Liu, H. Ma, X. Zhang, K. Tan, Y. Li, Y. Liu, C. Liu, H. Wang,
+X.D. Zhang, Small 19 (2023) 2300145, https://doi.org/10.1002/smll.202300145.
+[125] H. Liu, G. Hong, Z. Luo, J. Chen, J. Chang, M. Gong, H. He, J. Yang, X. Yuan, L. Li,
+X. Mu, J. Wang, W. Mi, J. Luo, J. Xie, X.D. Zhang, Adv. Mater. 31 (2019)
+1901015, https://doi.org/10.1002/adma.201901015.
+[126] S. Wang, X. Meng, A. Das, T. Li, Y. Song, T. Cao, X. Zhu, M. Zhu, R. Jin, Angew.
+Chem. Int. Ed. 53 (2014) 2376–2380, https://doi.org/10.1002/anie.201307480.
+[127] E. Janssens, S. Neukermans, P. Lievens, Curr. Opin. Solid. St. M. 8 (2004)
+185–193, https://doi.org/10.1016/j.cossms.2004.09.002.
+[128] M. Guo, G. Zhang, R. Zhao, H. Ma, Y. Yan, S. Yang, J. Meng, Y. Huang, X.-
+D. Zhang, H. Wang, R. Zhang, Acs Appl. Nano Mater. 6 (2023) 15945–15958,
+https://doi.org/10.1021/acsanm.3c02888.
+[129] D. Lee, R.L. Donkers, G. Wang, A.S. Harper, R.W. Murray, J. Am. Chem. Soc. 126
+(2004) 6193–6199, https://doi.org/10.1021/ja049605b.
+[130] G. Pramanik, J. Humpolickova, J. Valenta, P. Kundu, S. Bals, P. Bour,
+M. Dracinsky, P. Cigler, Nanoscale 10 (2018) 3792–3798, https://doi.org/
+10.1039/c7nr06050e.
+[131] K. Pyo, V.D. Thanthirige, S.Y. Yoon, G. Ramakrishna, D. Lee, Nanoscale 8 (2016)
+20008–20016, https://doi.org/10.1039/c6nr07660b.
+[132] F. Aldeek, M.A.H. Muhammed, G. Palui, N. Zhan, H. Mattoussi, ACS Nano 7
+(2013) 2509–2521, https://doi.org/10.1021/nn305856t.
+[133] Y. Sun, F. Qu, R. Geng, W. Xiao, D. Bi, B. Xiong, Y. Liu, J. Zhu, X. Chen, ACS Nano
+18 (2024) 32126–32144, https://doi.org/10.1021/acsnano.4c10973.
+[134] Z. Liu, Y. Li, E. Kahng, S. Xue, X. Du, S. Li, R. Jin, ACS Nano 16 (2022)
+18448–18458, https://doi.org/10.1021/acsnano.2c06586.
+[135] Y. Wang, Z. Liu, A. Mazumder, C.G. Gianopoulos, K. Kirschbaum, L.A. Peteanu,
+R. Jin, J. Am. Chem. Soc. 145 (2023) 26328–26338, https://doi.org/10.1021/
+jacs.3c09846.
+[136] Y. Chen, D.M. Montana, H. Wei, J.M. Cordero, M. Schneider, X. Le Gu´evel,
+O. Chen, O.T. Bruns, M.G. Bawendi, Nano Lett. 17 (2017) 6330–6334, https://
+doi.org/10.1021/acs.nanolett.7b03070.
+[137] Y. Zhong, J. Zhang, T. Li, W. Xu, Q. Yao, M. Lu, X. Bai, Z. Wu, J. Xie, Y. Zhang,
+Nat. Commun. 14 (2023) 658, https://doi.org/10.1038/s41467-023-36387-2.
+[138] K. Pyo, V.D. Thanthirige, K. Kwak, P. Pandurangan, G. Ramakrishna, D. Lee,
+J. Am. Chem. Soc. 137 (2015) 8244–8250, https://doi.org/10.1021/
+jacs.5b04210.
+[139] K. Pyo, N.H. Ly, S.Y. Yoon, Y. Shen, S.Y. Choi, S.Y. Lee, S.W. Joo, D. Lee, Adv.
+Healthc. Mater. 6 (2017) 1700203, https://doi.org/10.1002/adhm.201700203.
+[140] C. Yao, C.Q. Xu, I.H. Park, M. Zhao, Z. Zhu, J. Li, X. Hai, H. Fang, Y. Zhang,
+G. Macam, J. Teng, L. Li, Q.H. Xu, F.C. Chuang, J. Lu, C. Su, J. Li, J. Lu, Angew.
+Chem. Int. Ed. 59 (2020) 8270–8276, https://doi.org/10.1002/anie.202001034.
+[141] G. Qu, Y. Zhang, X. Ma, Chin. Chem. Lett. 30 (2019) 1809–1814, https://doi.org/
+10.1016/j.cclet.2019.07.042.
+[142] T. Jiang, G. Qu, J. Wang, X. Ma, H. Tian, Chem. Sci. 11 (2020) 3531–3537,
+https://doi.org/10.1039/d0sc00473a.
+[143] G. Qu, T. Jiang, T. Liu, X. Ma, ACS Appl. Mater. Interfaces 14 (2021) 2023–2028,
+https://doi.org/10.1021/acsami.1c21109.
+[144] H. Deng, K. Huang, L. Xiu, W. Sun, Q. Yao, X. Fang, X. Huang, H.A.A. Noreldeen,
+H. Peng, J. Xie, W. Chen, Nat. Commun. 13 (2022) 3381, https://doi.org/
+10.1038/s41467-022-30760-3.
+[145] J. Luo, Z. Xie, J.W.Y. Lam, L. Cheng, B.Z. Tang, H. Chen, C. Qiu, H.S. Kwok,
+X. Zhan, Y. Liu, D. Zhu, Chem. Commun. 18 (2001) 1740–1741, https://doi.org/
+10.1039/b105159h.
+[146] Y. Hong, J.W.Y. Lamab, B.Z. Tang, Chem. Soc. Rev. 40 (2011) 5361–5388,
+https://doi.org/10.1039/C1CS15113D.
+[147] Q.-Y. Liang, C. Wang, H.-W. Li, D.-Y. Qi, Y. Wu, J. Mol. Liq. 377 (2023) 121516,
+https://doi.org/10.1016/j.molliq.2023.121516.
+[148] X. He, Z. Zhao, L.-H. Xiong, P.F. Gao, C. Peng, R.S. Li, Y. Xiong, Z. Li, H.H.Y. Sung,
+I.D. Williams, R.T.K. Kwok, J.W.Y. Lam, C.Z. Huang, N. Ma, B.Z. Tang, J. Am.
+Chem. Soc. 140 (2018) 6904–6911, https://doi.org/10.1021/jacs.8b02350.
+[149] M. Chen, X. Hu, J. Liu, B. Li, Nelson L.C. Leung, L. Viglianti, T.S. Cheung, H.H.
+Y. Sung, R.T.K. Kwok, I.D. Williams, A. Qin, J.W.Y. Lam, B.Z. Tang, Chem. Sci. 9
+(2018) 7829–7834, https://doi.org/10.1039/c8sc02810a.
+[150] Z. Wu, Q. Yao, S. Zang, J. Xie, Natl. Sci. Rev. 8 (2021) nwaa208, https://doi.org/
+10.1093/nsr/nwaa208.
+[151] M. Gao, B.Z. Tang, ACS Sensors 2 (2017) 1382–1399, https://doi.org/10.1021/
+acssensors.7b00551.
+[152] R. Hu, N.L.C. Leung, B.Z. Tang, Chem. Soc. Rev. 43 (2014) 4494–4562, https://
+doi.org/10.1039/c4cs00044g.
+[153] B. Li, X. Wang, X. Shen, W. Zhu, L. Xu, X. Zhou, J. Colloid Interface Sci. 467
+(2016) 90–96, https://doi.org/10.1016/j.jcis.2016.01.002.
+[154] L. Ji, Y. Guo, S. Hong, Z. Wang, K. Wang, X. Chen, J. Zhang, J. Hu, R. Pei, RSC
+Adv. 5 (2015) 36582–36586, https://doi.org/10.1039/c5ra03449c.
+[155] X. Wu, C. Li, S. Liao, L. Li, T. Wang, Z. Su, C. Wang, J. Zhao, C. Sui, J. Lin, Chem.-
+Eur. J. 20 (2014) 8876–8882, https://doi.org/10.1002/chem.201403202.
+[156] X. Wu, L. Li, L. Zhang, T. Wang, C. Wang, Z. Su, J. Mater. Chem. B 3 (2015)
+2421–2425, https://doi.org/10.1039/c4tb02009j.
+[157] A. Yahia-Ammar, D. Sierra, F. M´erola, N. Hildebrandt, X. Le Gu´evel, ACS Nano 10
+(2016) 2591–2599, https://doi.org/10.1021/acsnano.5b07596.
+[158] M. Hembury, N. Beztsinna, H. Asadi, J.B. van den Dikkenberg, J.D. Meeldijk, W.
+E. Hennink, T. Vermonden, Biomacromolecules 19 (2018) 2841–2848, https://
+doi.org/10.1021/acs.biomac.8b00414.
+[159] X. Luo, J. Kong, H. Xiao, D. Sang, K. He, M. Zhou, J. Liu, Angew. Chem. Int. Ed. 63
+(2024) e202404129, https://doi.org/10.1002/anie.202404129.
+[160] J.-G. You, C.-Y. Lu, A.S. Krishna Kumar, W.-L. Tseng, Nanoscale 10 (2018)
+17691–17698, https://doi.org/10.1039/c8nr05050c.
+[161] J.-G. You, W.-L. Tseng, Anal. Chim. Acta 1078 (2019) 101–111, https://doi.org/
+10.1016/j.aca.2019.05.069.
+[162] W.-D. Si, K. Sheng, C. Zhang, Z. Wang, S.-S. Zhang, J.-M. Dou, L. Feng, Z.-Y. Gao,
+C.-H. Tung, D. Sun, Chem. Sci. 13 (2022) 10523–10531, https://doi.org/
+10.1039/d2sc03463h.
+[163] Q. Li, M.A. Mosquera, L.O. Jones, A. Parakh, J. Chai, R. Jin, G.C. Schatz, ACS
+Nano 14 (2020) 11888–11896, https://doi.org/10.1021/acsnano.0c04813.
+[164] H. Wu, J. Li, L. Tian, F. Zhao, J. Yin, Y. Shao, Chem. Eng. J. 495 (2024) 153608,
+https://doi.org/10.1016/j.cej.2024.153608.
+[165] L. Luo, Z. Liu, X. Du, R. Jin, J. Am. Chem. Soc. 144 (2022) 19243–19247, https://
+doi.org/10.1021/jacs.2c09107.
+[166] S. Zhou, L. Gustavsson, G. Beaune, S. Chandra, J. Niskanen, J. Ruokolainen, J.V.
+I. Timonen, O. Ikkala, B. Peng, R.H.A. Ras, Angew. Chem. Int. Ed. 62 (2023)
+e202312679, https://doi.org/10.1002/anie.202312679.
+[167] M. Waszkielewicz, J. Olesiak-Banska, C. Comby-Zerbino, F. Bertorelle, X. Dagany,
+A.K. Bansal, M.T. Sajjad, I.D.W. Samuel, Z. Sanader, M. Rozycka, M. Wojtas,
+K. Matczyszyn, V. Bonacic-Koutecky, R. Antoine, A. Ozyhar, M. Samoc, Nanoscale
+10 (2018) 11335–11341, https://doi.org/10.1039/c8nr00660a.
+[168] Q. Li, M. Zhou, W.Y. So, J. Huang, M. Li, D.R. Kauffman, M. Cotlet, T. Higaki, L.
+A. Peteanu, Z. Shao, R. Jin, J. Am. Chem. Soc. 141 (2019) 5314–5325, https://
+doi.org/10.1021/jacs.8b13558.
+[169] L. Luo, Z. Liu, X. Du, R. Jin, Commun. Chem. 6 (2023) 22, https://doi.org/
+10.1038/s42004-023-00819-3.
+[170] Q. Li, D. Zhou, J. Chai, W.Y. So, T. Cai, M. Li, L.A. Peteanu, O. Chen, M. Cotlet,
+X. Wendy Gu, H. Zhu, R. Jin, Nat.Commun. 11 (2020) 2897, https://doi.org/
+10.1038/s41467-020-16686-8.
+[171] J.M. Marr, F.P. Wilkin, Am. J. Phys. 80 (2012) 399–405, https://doi.org/
+10.1119/1.3696974.
+[172] K. Kwak, V.D. Thanthirige, K. Pyo, D. Lee, G. Ramakrishna, J. Phys. Chem. Lett. 8
+(2017) 4898–4905, https://doi.org/10.1021/acs.jpclett.7b01892.
+[173] J. Kong, W. Zhang, Y. Wu, M. Zhou, Aggregate 3 (2022) e207, https://doi.org/
+10.1002/agt2.207.
+J. Sun et al.
+Coordination Chemistry Reviews 533 (2025) 216544 
+21 
+
+[174] L. Zeng, M. Zhou, R. Jin, ChemPhysChem 25 (2024) e202300687, https://doi.
+org/10.1002/cphc.202300687.
+[175] D. Cheng, R. Liu, K. Hu, Front. Chem. 10 (2022) 958626, https://doi.org/
+10.3389/fchem.2022.958626.
+[176] W.-Q. Shi, L. Zeng, R.-L. He, X.-S. Han, Z.-J. Guan, M. Zhou, Q.-M. Wang, Science
+383 (2024) 326–330, https://doi.org/10.1126/science.adk6628.
+[177] X.-K. Wan, X.-S. Han, Z.-J. Guan, W.-Q. Shi, J.-J. Li, Q.-M. Wang, Nat. Commun.
+15 (2024) 7214, https://doi.org/10.1038/s41467-024-51642-w.
+[178] M. Bai, L. Qin, X.-M. Zeng, M. Wu, L.-Y. Yao, G.-Y. Yang, J. Am. Chem. Soc. 146
+(2024) 12734–12742, https://doi.org/10.1021/jacs.4c02411.
+[179] Y. Tan, Y. Lv, L. Xu, Q. Li, J. Chai, S. Yang, H. Yu, M. Zhu, J. Am. Chem. Soc. 145
+(2023) 4238–4245, https://doi.org/10.1021/jacs.2c13075.
+[180] Q. Li, C.J. Zeman, Z. Ma, G.C. Schatz, X.W. Gu, Small 17 (2021) 2007992, https://
+doi.org/10.1002/smll.202007992.
+[181] Z. Wu, Q. Yao, O.J.H. Chai, N. Ding, W. Xu, S. Zang, J. Xie, Angew. Chem. Int. Ed.
+59 (2020) 9934–9939, https://doi.org/10.1002/anie.201916675.
+[182] Z. Gan, Y. Liu, L. Wang, S. Jiang, N. Xia, Z. Yan, X. Wu, J. Zhang, W. Gu, L. He,
+J. Dong, X. Ma, J. Kim, Z. Wu, Y. Xu, Y. Li, Z. Wu, Nat. Commun. 11 (2020) 5572,
+https://doi.org/10.1038/s41467-020-19377-6.
+[183] J.J. Li, Z.J. Guan, S.F. Yuan, F. Hu, Q.M. Wang, Angew. Chem. Int. Ed. 60 (2021)
+6699–6703, https://doi.org/10.1002/anie.202014154.
+[184] L. Luo, Z. Liu, J. Kong, R. Jin, PANS 121 (2024) e2318537121, https://doi.org/
+10.1073/pnas.2318537121.
+[185] H. Xiang, Y. Wang, X. Xu, C. Ruan, K. Wang, W. Cheng, M. Zhou, X. Liu, C. Yao,
+J. Am. Chem. Soc. 146 (2024) 28572–28579, https://doi.org/10.1021/
+jacs.4c11727.
+[186] E. Pohjolainen, H. H¨akkinen, A. Clayborne, J. Phys. Chem. C 119 (2015)
+9587–9594, https://doi.org/10.1021/acs.jpcc.5b01068.
+[187] Y. Chen, C. Zeng, D.R. Kauffman, R. Jin, Nano Lett. 15 (2015) 3603–3609,
+https://doi.org/10.1021/acs.nanolett.5b01122.
+[188] L.G. AbdulHalim, N. Kothalawala, L. Sinatra, A. Dass, O.M. Bakr, J. Am. Chem.
+Soc. 136 (2014) 15865–15868, https://doi.org/10.1021/ja508860b.
+[189] C. Zeng, Y. Chen, A. Das, R. Jin, J. Phys. Chem. Lett. 6 (2015) 2976–2986,
+https://doi.org/10.1021/acs.jpclett.5b01150.
+[190] F. Bertorelle, K.D. Wegner, M. Peri´c Bakuli´c, H. Fakhouri, C. Comby-Zerbino,
+A. Sagar, P. Bernad´o, U. Resch-Genger, V. Bonaˇci´c-Koutecký, X. Le Gu´evel,
+R. Antoine, Chem.-Eur. J. 28 (2022) e202200570, https://doi.org/10.1002/
+chem.202200570.
+[191] W. Wang, Y. Kong, J. Jiang, Q. Xie, Y. Huang, G. Li, D. Wu, H. Zheng, M. Gao,
+S. Xu, Y. Pan, W. Li, R. Ma, M.X. Wu, X. Li, H. Zuilhof, X. Cai, R. Li, Angew. Chem.
+Int. Ed. 59 (2020) 22431–22435, https://doi.org/10.1002/anie.202010089.
+[192] L. Haye, P.I. Diriwari, A. Alhalabi, T. Gallavardin, A. Combes, A.S. Klymchenko,
+N. Hildebrandt, X. Le Gu´evel, A. Reisch, Adv. Opt. Mater. 11 (2022) 2201474,
+https://doi.org/10.1002/adom.202201474.
+[193] T. Chen, S. Yang, J. Chai, Y. Song, J. Fan, B. Rao, H. Sheng, H. Yu, M. Zhu, Sci.
+Adv. 3 (2017) e1700956, https://doi.org/10.1126/sciadv.1700956.
+[194] M. Montalti, N. Zaccheroni, L. Prodi, N. O'Reilly, S.L. James, J. Am. Chem. Soc.
+129 (2007) 2418–2419, https://doi.org/10.1021/ja068095d.
+[195] B. Varnholt, R. Letrun, J.J. Bergkamp, Y. Fu, O. Yushchenko, S. Decurtins,
+E. Vauthey, S.-X. Liu, T. Bürgi, Phys. Chem. Chem. Phys. 17 (2015) 14788–14795,
+https://doi.org/10.1039/c5cp01638j.
+[196] J. Zheng, P.R. Nicovich, R.M. Dickson, Annu. Rev. Phys. Chem. 58 (2007)
+409–431, https://doi.org/10.1146/annurev.physchem.58.032806.104546.
+[197] J.P. Menzel, B.B. Noble, A. Lauer, M.L. Coote, J.P. Blinco, C. Barner-Kowollik,
+J. Am. Chem. Soc. 139 (2017) 15812–15820, https://doi.org/10.1021/
+jacs.7b08047.
+[198] J. Zheng, C. Zhou, M. Yua, J. Liu, Nanoscale 4 (2012) 4073–4083, https://doi.
+org/10.1039/C2NR31192E.
+[199] J. Zheng, C. Zhang, R.M. Dickson, Phys. Rev. Lett. 93 (2004) 077402, https://doi.
+org/10.1103/PhysRevLett.93.077402.
+[200] Y. Li, Y. Song, X. Zhang, T. Liu, T. Xu, H. Wang, D. Jiang, R. Jin, J. Am. Chem. Soc.
+144 (2022) 12381–12389, https://doi.org/10.1021/jacs.2c03948.
+[201] R. Englman, J. Jortner, Mol. Phys. 18 (1970) 145–164, https://doi.org/10.1080/
+00268977000100171.
+[202] M. Mitsui, Y. Wada, R. Kishii, D. Arima, Y. Niihori, Nanoscale 14 (2022)
+7974–7979, https://doi.org/10.1039/d2nr00813k.
+[203] Q.-C. Peng, Y.-B. Si, Z.-Y. Wang, S.-H. Dai, Q.-S. Chen, K. Li, S.-Q. Zang, ACS
+Central Sci. 9 (2023) 1419–1426, https://doi.org/10.1021/acscentsci.3c00563.
+[204] K.L.D.M. Weerawardene, C.M. Aikens, J. Am. Chem. Soc. 138 (2016)
+11202–11210, https://doi.org/10.1021/jacs.6b05293.
+[205] J. Li, P. Wang, Y. Pei, J. Phys. Chem. Lett. 13 (2022) 3718–3725, https://doi.org/
+10.1021/acs.jpclett.2c00539.
+[206] Z. Lin, N. Goswami, T. Xue, O.J.H. Chai, H. Xu, Y. Liu, Y. Su, J. Xie, Adv. Funct.
+Mater. 31 (2021) 2105662, https://doi.org/10.1002/adfm.202105662.
+[207] L. Shang, S. Dong, G.U. Nienhaus, Nano Today 6 (2011) 401–418, https://doi.
+org/10.1016/j.nantod.2011.06.004.
+J. Sun et al.
+Coordination Chemistry Reviews 533 (2025) 216544 
+22

@@ -1,0 +1,851 @@
+Study on the performance and interaction mechanism of integrated
+anti-corrosion and anti-biofouling TiO2/GaInS3 Z-scheme
+heterojunction photoelectrodes
+Jing Wanga, Juan Liua, Ruiyang Zhaoa,c, Yiqing Tanga, Jingtian Huanga, Xinyu Zhanga,
+Jing Tiana,*, Ning Wanga,**, Wei Wangb
+a College of Chemical Engineering, Qingdao University of Science and Technology, 266042, Qingdao, China
+b School of Materials Science and Engineering, Ocean University of China, 266100, Qingdao, China
+c State Key Laboratory of Advanced Optical Polymer and Manufacturing Technology, Qingdao University of Science and Technology, 266042, Qingdao, China
+A R T I C L E I N F O
+Keywords:
+TiO2/GaInS3
+Z-scheme heterojunction
+Anti-corrosion
+Anti-biofouling
+Interaction mechanism
+A B S T R A C T
+The development of efficient, integrated anti-corrosion and anti-biofouling technologies is crucial for ensuring
+the long-term operational safety of marine equipment. In this study, a TiO2/GaInS3 Z-scheme heterojunction
+photoelectrode was constructed by in situ growth of hexagonal GaInS3 with a filamentous network architecture
+on TiO2 nanorods via a two-step hydrothermal method. Under simulated solar irradiation, the composite pho-
+toelectrode exhibited excellent photoelectrochemical cathodic protection performance for 304 stainless steel
+(304 SS), shifting its open-circuit potential negatively by 301 mV. Simultaneously, it demonstrated broad-
+spectrum and highly efficient photocatalytic inactivation (>98 % within 90 min) against multiple microorgan-
+isms (Pseudomonas aeruginosa, Staphylococcus aureus, Escherichia coli, and Microcystis aeruginosa). Even after four
+cycles of photocatalytic inactivation of Pseudomonas aeruginosa, a high antibacterial rate of >99 % was retained.
+By comparing the performance of single-function systems (anti-corrosion or anti-biofouling) with that of the
+coupled system (anti-corrosion + anti-biofouling), this study revealed a competitive relationship between the
+two processes for photogenerated electrons for the first time. This work not only presents a high-performance
+material for integrated corrosion and biofouling prevention but also provides an insightful understanding of
+the underlying interaction mechanisms, offering new perspectives for the rational design of marine anti-
+corrosion and anti-biofouling materials.
+1. Introduction
+Metals and structural materials employed in marine applications are
+subjected to severe corrosion induced by the aggressive oceanic envi-
+ronment [1,2]. Seawater, acting as a natural electrolyte rich in salts, is
+inherently
+corrosive
+[3].
+Moreover,
+microbiologically
+influenced
+corrosion accounts for approximately 20 % of metal failure cases in
+marine settings [4]. Notably, various microorganisms form biofilms on
+metal surfaces. These include Gram-positive and Gram-negative bacte-
+ria, such as Staphylococcus aureus, Pseudomonas aeruginosa, Escherichia
+coli, and cyanobacteria like Microcystis aeruginosa [5–7]. This process
+leads to biofouling and thereby accelerates metal degradation [8]. This
+corrosive attack, in turn, creates additional sites for microbial coloni-
+zation, resulting in a mutually reinforcing cycle of biofouling and
+corrosion. Hence, the development of integrated strategies that combine
+anti-corrosion with anti-biofouling functionalities is essential for
+enhancing the service longevity of marine infrastructures [9,10].
+Semiconductors, capable of converting light energy into electrical
+energy, demonstrate significant potential in both corrosion protection
+and anti-biofouling applications [11–13]. Specifically, under photoex-
+citation, semiconductors generate photogenerated electrons (e−) and
+holes (h+). If the photogenerated electrons lead to a Fermi energy level
+below the metal's self-corrosion potential, these photogenerated elec-
+trons will migrate to the metal/electrolyte interface and accumulate on
+* Corresponding author.
+** Corresponding author.
+E-mail addresses: tianjing@qust.edu.cn (J. Tian), 04031@qust.edu.cn (N. Wang).
+Peer review under the responsibility of Chongqing University
+Contents lists available at ScienceDirect
+Nano Materials Science
+journal homepage: www.keaipublishing.com/cn/journals/nano-materials-science/
+https://doi.org/10.1016/j.nanoms.2026.01.006
+Received 30 September 2025; Received in revised form 27 November 2025; Accepted 4 January 2026
+Available online xxxx
+2589-9651/© 2026 Chongqing University. Publishing services by Elsevier B.V. on behalf of KeAi Communications Co. Ltd. This is an open access article under the CC
+BY license (http://creativecommons.org/licenses/by/4.0/).
+Nano Materials Science xxx (xxxx) xxx
+Please cite this article as: J. Wang et al., Study on the performance and interaction mechanism of integrated anti-corrosion and anti-biofouling TiO2/
+GaInS3 Z-scheme heterojunction photoelectrodes, Nano Materials Science , https://doi.org/10.1016/j.nanoms.2026.01.006
+
+the metal surface, inducing cathodic polarization and enabling photo-
+electrochemical cathodic protection (PECCP) to prevent corrosion, i.e.,
+anti-corrosion. For instance, a TiO2/ZIF-67 composite, synthesized in
+situ and coupled with 304 SS, effectively reduced the open-circuit po-
+tential of 304 SS to −0.675 V (vs. saturated calomel electrode (SCE)),
+thereby providing robust cathodic protection. Concurrently, valence
+state changes of cobalt within the TiO2/ZIF-67 material enhance elec-
+tron storage and subsequent release, ensuring sustained 24 h PECCP for
+304 SS [14]. Furthermore, the generation of reactive oxygen species
+(ROS) contributes to anti-biofouling capabilities. When the semi-
+conductor's conduction band (CB) position is more negative than
+−0.33 V (vs. NHE (Normal Hydrogen Electrode)), electrons will react
+with dissolved oxygen to produce superoxide radicals (⋅O2
+−). Conversely,
+if its valence band (VB) position is more positive than 0.28 V (vs. NHE),
+water will convert into hydroxyl radicals (⋅OH) [15]. These highly
+oxidative ROS inflict multi-faceted damage to microbial cell structures,
+leading to intracellular fluid leakage and ultimately bacterial demise,
+thus achieving effective anti-biofouling [16]. For example, a Z-scheme
+heterojunction WO3/Bi2MoO6 photocatalyst, developed by Cheng et al.,
+retains highly oxidative holes and strongly reductive electrons, which
+generate ⋅OH and ⋅O2
+−. This system achieved over 99 % sterilization rate
+of Pseudomonas aeruginosa and Staphylococcus aureus within 60 min,
+demonstrating excellent stability [17]. In another study, Qian et al.
+fabricated TiO2/CdZnS/ZnS heterojunction photoelectrodes, which not
+only provided superior corrosion protection for 316 L stainless steel
+(316 L SS), evidenced by a potential drop of 415 mV, but also signifi-
+cantly reduced the colony count of Pseudomonas aeruginosa in bacterial
+solutions after a 2 h sterilization test. This dual functionality underscores
+the
+potential
+of
+such
+photoelectrodes
+for
+simultaneous
+metal
+anti-corrosion and anti-biofouling applications [18].
+The anti-corrosion process primarily utilizes the photogenerated
+electrons produced by the semiconductor. The consumption of holes can
+promote the separation of photogenerated electrons and holes, thereby
+enhancing the transfer of photogenerated electrons to the metal [19].
+However, biofouling mitigation necessitates the direct involvement of
+both charge carriers and their derived radicals (⋅OH/⋅O2
+−). When a single
+semiconductor is concurrently employed for both functions, a critical
+question arises: what determines the allocation of photogenerated
+electrons and holes? Moreover, what is the interplay between the
+anti-corrosion and anti-biofouling actions, and what mechanism ex-
+plains this interplay?
+TiO2, with a wide bandgap of ~3.2 eV, is limited to ultraviolet light
+absorption (constituting ~5 % of solar energy). In contrast, the narrower
+bandgap of GaInS3 (~2.2–2.4 eV) significantly extends the absorption
+range into the visible region, markedly improving solar energy utiliza-
+tion efficiency. Furthermore, the CB position of TiO2 is not negative
+enough to convert O2 into ⋅O2
+−, and the VB of GaInS3 is not positive
+enough to convert H2O into ⋅OH. Therefore, utilizing GaInS3-modified
+TiO2 holds promise for constructing a Z-scheme heterojunction system
+capable of both converting H2O into ⋅OH and transforming O2 into ⋅O2
+−.
+This study elucidates the interaction mechanism between corrosion
+and fouling protection. Using cetyl trimethyl ammonium bromide and
+other surfactants, hexagonal GaInS3 was grown in situ on TiO2 to form a
+Z-scheme TiO2/GaInS3-UC photoelectrodes coated with filamentous
+network structures. According to comparative analyses of anti-corrosion
+and anti-biofouling properties in coupled systems (steel + bacteria
+coexisting) versus single systems, it was noteworthy that: when acting
+within coupled systems, the TiO2/GaInS3-UC heterojunction still enables
+photogenerated holes to oxidize H2O into ⋅OH radicals, thereby
+participating in the sterilization process, whereas photogenerated elec-
+trons partly exert direct anti-corrosion effects by providing PECCP
+protection to 304 SS, while another portion reacts with dissolved oxygen
+to generate ⋅O2
+−, thereby re-engaging in the sterilization process. This
+manifests as a competitive phenomenon between anti-corrosion and
+anti-biofouling mechanisms vying for photogenerated electrons. Radical
+trapping experiments further confirm the dominant reactive species,
+with the electrode exhibiting universal microbial inactivation (>98 %
+within 90 min) and outstanding cycling stability (>99 % after four cy-
+cles). The study not only achieves dual corrosion-biofouling protection
+but also fundamentally reveals the competitive interaction mechanism
+between these processes in Z-scheme heterojunctions, providing critical
+insights for designing multifunctional photoelectrodes in marine
+environments.
+2. Experimental section
+2.1. Materials
+Hydrochloric acid, potassium chloride (KCl), sodium chloride
+(NaCl), thiourea (CH4N2S, TU), thioacetamide (C2H5NS), and peptone
+were all provided by Guoxun Chemical Reagents Co., Ltd. Isopropyl ti-
+tanium
+acid
+(C12H28O4Ti),
+gallium
+chloride
+(GaCl3),
+poly-
+vinylpyrrolidone ((C6H9NO)n, PVP), and yeast extract powder were all
+provided by Shanghai Maikelin Biochemistry Co., Ltd. Hexadecyl-
+trimethylammonium bromide (C19H42BrN, CTAB), tetrahydrate indium
+chloride (InCl3⋅4H2O), isopropanol (C3H8O, IPA), sodium oxalate
+(Na2C2O4), and agar powder were all purchased from Shanghai Aladdin
+Biotechnology Co., Ltd. PBS buffer was provided by Beijing Sollevab
+Technology Co., Ltd. Piperidine oxide compound (C9H18NO2, TEMPOL)
+was provided by Sigma-Aldrich (Shanghai) Trading Co., Ltd.
+2.2. Preparation of photoelectrode materials
+2.2.1. Synthesis of TiO2 photoelectrodes
+A precursor solution was prepared by adding 15 mL of hydrochloric
+acid to 15 mL of deionized water under magnetic stirring for 5 min.
+Then, 0.15 g of KCl and 0.36 mL of C12H28O4Ti were introduced into the
+mixture and stirred for another 30 min to ensure homogeneity. Two
+pieces of FTO substrates (10 × 30 × 1.6 mm), with the conductive side
+facing up, were placed into a 50 mL polytetrafluoroethylene-lined
+(PTFE-lined) autoclave containing the precursor solution. The hydro-
+thermal synthesis was conducted at 180 ◦C for 6 h. After the reaction, the
+samples were rinsed alternately with 95 % ethanol and deionized water
+three times. Finally, the samples were annealed at 450 ◦C for 2 h in a
+muffle furnace to obtain the final TiO2 photoelectrodes.
+2.2.2. Synthesis of TiO2/GaInS3 photoelectrodes
+Aqueous solutions for the secondary growth were prepared by dis-
+solving GaCl3 (0.1 mmol), InCl3⋅4H2O (0.1 mmol), a sulfur source
+(0.3 mmol), and a surfactant (0.1 mmol) in 35 mL of deionized water
+(molar ratio = 1:1:3:1). The as-prepared TiO2 photoelectrodes wwere
+then immersed in the solution within a PTFE-lined autoclave for a hy-
+drothermal reaction at 180 ◦C for 24 h. The final product, denoted as
+TiO2/GaInS3-MN (where M and N represent the sulfur source and sur-
+factant, respectively), was obtained after thorough rinsing with 95 %
+ethanol and deionized water. To investigate the effect of the sulfur
+source on the morphology of GaInS3, thiourea (abbreviated U) and
+thioacetamide (abbreviated A) were used, while the surfactant was
+maintained as CTAB (abbreviated C), yielding the TiO2/GaInS3-UC and
+TiO2/GaInS3-AC photoelectrodes. The role of the surfactant was then
+probed by fixing the sulfur source as thiourea (U) and selecting CTAB (C)
+or PVP (abbreviated P) as the surfactant, resulting in the TiO2/GaInS3-
+UP, TiO2/GaInS3-UC, and TiO2/GaInS3-U (no surfactant) photoelectrodes.
+The working area is all 10 mm × 10 mm. The specific process flow di-
+agram is shown in Fig. S1.
+2.3. Characterization of photoelectrode materials
+The crystal structures of the photoanode materials were character-
+ized by X-ray diffraction (XRD, D/MAX-2500/PC, Rigaku, Japan) with a
+scan rate of 2◦/min. The microstructure and morphology of the TiO2
+semiconductor and the TiO2/GaInS3 composite were examined by
+J. Wang et al.
+Nano Materials Science xxx (xxxx) xxx
+2
+
+scanning electron microscopy (SEM, Regulus8100, Rigaku, Japan) and
+transmission electron microscopy (TEM, JEM-2100PLUS, JEOL, Japan),
+with elemental distribution confirmed via energy-dispersive X-ray
+spectroscopy (EDS). X-ray photoelectron spectroscopy (XPS, ESCALAB
+250Xi, Thermo Fisher Scientific, USA) was employed to elucidate the
+chemical states of constituent elements and interfacial bonding char-
+acteristics. Photoluminescence (PL) spectra, obtained using an F-4700
+spectrometer (HITACHI, Japan), provided insights into the optical
+properties and charge carrier recombination behavior. Radical species
+involved in the photoelectrochemical reactions were detected by elec-
+tron spin resonance (ESR, EMXplus, Bruker BioSpin, Germany). The
+light absorption properties were investigated using ultraviolet–visible
+diffuse reflectance spectroscopy (UV–Vis DRS, Cary5000, Agilent
+Technologies, USA). A separate UV–Vis spectrophotometer (TU-1810,
+Puxi General Instrument, China) was utilized to measure the absorbance
+of degraded M. aeruginosa. Three-dimensional excitation-emission ma-
+trix (3D-EEM) fluorescence spectra were recorded on an F-7000 spec-
+trofluorometer (HITACHI, Japan) to identify spectral features associated
+with fluorophores in dissolved organic matter (DOM), using excitation
+wavelengths from 200 to 550 nm and emission wavelengths from 200 to
+450 nm.
+2.4. Electrochemical and photoelectrochemical tests
+All electrochemical and photoelectrochemical measurements in this
+study were conducted using an electrochemical workstation (VersaSTAT
+3F, AMETEK Trading Co., Ltd., China) in a 3.5 wt% NaCl solution. A
+standard three-electrode system was employed, with the photoelectrode
+material as the working electrode (WE), a platinum plate as the counter
+electrode (CE), and an SCE as the reference electrode (RE). Electro-
+chemical impedance spectroscopy measurements were performed over a
+frequency range from 105 to 10−2 Hz with an AC voltage amplitude of
+10 mV. Cyclic voltammetry (CV) tests were carried out at scan rates
+ranging from 20 to 100 mV/s, with an increment of 20 mV/s. Mott-
+Schottky analysis was conducted at a fixed frequency of 1000 Hz, with
+an AC potential amplitude of 20 mV.
+The photoelectrochemical tests include: open circuit potential-time
+(OCP-t), photocurrent density-time (i-t), and photo-induced voltammo-
+gram (LSV) tests. The OCP-t test is conducted using a two-electrode
+system, with 304 SS (10 mm × 10 mm) and a series of photo-
+electrodes serving as the WE, and SCE as the RE. The open-circuit and
+dark current tests are performed at 200 s intervals, with a total duration
+of 5 cycles. The i-t test is carried out in the ZRA mode, with the series of
+photoelectrodes connected to the WE, and the 304 SS connected to the
+RE and ground wire. The LSV test is conducted using the same standard
+three-electrode system, with the test range set from −0.75 V to 0.95 V.
+2.5. Photocatalytic sterilization and inactivation of algal experiment
+Photocatalytic sterilization experiment: Photocatalytic inactiva-
+tion of Pseudomonas aeruginosa was performed using 100 mL of a bac-
+terial suspension (2.5 × 107 cells mL−1) in PBS under simulated sunlight.
+The irradiation was provided by a 300 W xenon lamp (PLS-SXE300DUV,
+Beijing Pofilai Technology Co., Ltd., China) equipped with an AM1.5G
+filter, with the entire system maintained at constant temperature by
+circulating water cooling (20 ◦C). The illumination was calibrated to
+100 mW cm−2 with a spectrum spanning 280–1050 nm. At 30 min in-
+tervals, samples were withdrawn, diluted, and plated on solid culture
+media. After 24 h of incubation, the colonies were counted, and the
+sterilization rate was calculated using formula (1) [20].
+E = C0 −Ct
+C0
+(1)
+where E represented the photocatalytic bactericidal efficiency, C0 and Ct
+represented the number of colonies before and after different times of
+light illumination.
+The photocatalytic inactivation experiments of Staphylococcus aureus
+(approximately 1 × 107 cells mL−1) and Escherichia coli (approximately
+1 × 107 cells mL−1) were conducted as described above. The details of
+bacterial cultivation can be found in Text S1.
+Photocatalytic inactivation of algal: A 150 mL suspension of
+Microcystis aeruginosa (7.32 × 107 cells mL−1) was placed in the pho-
+tocatalytic reactor and irradiated by a 300 W Xenon lamp (PLS-
+SXE300DUV, Beijing Pofilai Technology Co., Ltd., China) equipped with
+an AM1.5G filter. The system was maintained under circulating water
+cooling during illumination. At 30-min intervals, a 4 mL aliquot was
+sampled and centrifuged at 8000 rpm for 5 min. After discarding the
+supernatant, 5 mL of ethanol was added to the precipitate and thor-
+oughly mixed. The mixture was stored in dark refrigeration for 24 h to
+allow complete chlorophyll extraction. The refrigerated sample was
+then centrifuged again at 8000 rpm for 5 min, and the absorbance of the
+supernatant was measured. The chlorophyll-a concentration was
+determined using formula (2), and the photocatalytic algal inactivation
+efficiency was calculated according to formula (2) [21].
+Ct = 13:95 × (A665 −A750) −6:68 × (A649 −A750)
+(2)
+where Ct represents the colony count of Pseudomonas aeruginosa at
+different time points under the inactivation experiment, while A665,
+A750, A649, and A750, respectively, represent the absorbance at 665, 750,
+649, and 750 nm. The cultivation details of Microcystis aeruginosa are
+provided in Text S2.
+2.6. Testing of anti-corrosion and anti-biofouling performance in the
+coupled system
+In a coupled system of anti-corrosion and anti-biofouling, OCP was
+tested using an electrochemical workstation (VersaSTAT 3F, AMETEK
+Trading Co., Ltd., China). Pseudomonas aeruginosa was added in a 3.5 wt
+% NaCl solution to obtain a mixed solution with a concentration of
+2.66 × 107 cells mL−1. Then, 304 SS was added to the mixed solution to
+form a coupling system. In this coupling system, OCP was tested
+simultaneously, and samples were taken and streaked for colony
+counting every 30 min.
+The free radical capture experiment of the photoelectrode material
+can be found in Text S3.
+3. Results and discussions
+Fig. 1a illustrates the proposed reaction pathways of photogenerated
+electrons and holes for the concurrent anti-corrosion and anti-biofouling
+processes. Upon photoexcitation, the semiconductor generates photo-
+generated electrons and holes pairs. The photogenerated electrons can
+migrate directly to the metal substrate, inducing cathodic polarization to
+provide corrosion protection (Process I: anti-corrosion). Simultaneously,
+these photogenerated electrons may react with dissolved oxygen to form
+⋅O2
+−(Process II: anti-biofouling), while the holes can oxidize water to
+produce ⋅OH (Process III: anti-biofouling). These reactive species (e-, h+,
+⋅O2
+−, and ⋅OH) collectively contribute to anti-biofouling by disrupting
+microbial cell membranes, leading to cell death. Theoretically, Process
+III is expected to facilitate Process I, whereas Process II may compete
+with Process I for photogenerated electrons. Nevertheless, the practical
+relationship between anti-corrosion and anti-biofouling performance
+remains an unresolved issue and represents a significant research gap in
+this field.
+Fig. 1b and c presents the comparison of the anti-corrosion [22–28]
+and sterilization [5,6,17,29–32] properties of TiO2/GaInS3-UC in this
+study with those reported in previous works. It is observed that in both
+the anti-corrosion and anti-biofouling fields, TiO2/GaInS3-UC exhibits
+J. Wang et al.
+Nano Materials Science xxx (xxxx) xxx
+3
+
+more favorable performance than the previously published works. In
+this work, TiO2/GaInS3-UC was synthesized via a two-step hydrothermal
+method. In individual anti-corrosion/anti-biofouling and anti-corrosion
+and anti-biofouling coupling systems, it induced a negative potential
+shift of 304 SS by 277 mV and 249 mV, respectively (Fig. 1d), indicating
+that Pseudomonas aeruginosa competes for photogenerated electrons
+required for corrosion protection in seawater. As shown in Fig. 1e and
+S2, the sterilization rate of TiO2/GaInS3-UC reached 100 % after 90 min
+of illumination in the individual anti-biofouling system, whereas it
+decreased to 98.01 % in the coupling system, however, it is still higher
+than the sterilization rate reported in many literature reports. This
+reduction demonstrates a diminished availability of photogenerated
+electrons for generating bactericidal species, thereby compromising the
+anti-biofouling efficacy. Consequently, a competitive relationship be-
+tween corrosion protection and bio-biofouling prevention is proposed
+(Fig. 1f), in the anti-corrosion and anti-biofouling coupled system,
+photogenerated electrons can simultaneously participate in both pro-
+cesses, which leads to competition in the utilization of photogenerated
+Fig. 1. (a) Schematic diagram of the reaction pathways where photogenerated electrons and h+ are simultaneously used for anti-corrosion and anti-biofouling
+purposes, (b) the comparison chart of the anti-corrosion and (c) sterilization properties of TiO2/GaInS3-UC with the results reported in previous studies, (d) the
+curves of open-circuit potential drop changes and (e) the sterilization rate in the individual system and the coupled system, (f) schematic diagram of the competitive
+relationship of photogenerated electrons in the TiO2/GaInS3-UC during the process of anti-corrosion and anti-biofouling.
+Fig. 2. (a) The curves depicting the changes over time of the OCP and (b) the current density; (c) the photocatalytic sterilization rates of TiO2, GaInS3-UC, and TiO2/
+GaInS3-UC at different times, (d) the results of the photocatalytic sterilization rate for four cycles. (e) Photocatalytic inactivation efficiency against Staphylococcus
+aureus and Escherichia coli over 90 min, and removal efficiency for Microcystis aeruginosa over 120 min. (f) The results of the bactericidal efficiency of Pseudomonas
+aeruginosa after 90 min under the action of different radical scavengers (f).
+J. Wang et al.
+Nano Materials Science xxx (xxxx) xxx
+4
+
+electrons between anti-corrosion and anti-biofouling mechanisms,
+resulting in a 10 % reduction (Fig. 1d) in anti-corrosion performance and
+a 1.99 % (Fig. 1e) decrease in anti-biofouling performance. Fortunately,
+the
+photogenerated
+electrons
+are
+simultaneously
+utilized
+for
+anti-corrosion and anti-biofouling, accelerating their rapid depletion,
+which enhances the separation efficiency of photogenerated charge
+carriers,
+thereby
+having
+minimal
+impact
+on
+anti-biofouling
+performance.
+Fig. 2a shows the OCP variations of the prepared TiO2 and a series of
+TiO2/GaInS3 samples coupled with 304 SS. The photopotential drop of
+pure TiO2 was only 100 mV. After growing GaInS3 on its surface using
+different surfactants and sulfur sources, the photopotential drop was
+enhanced to varying degrees. Without any surfactant, TiO2/GaInS3-U
+exhibited a photopotential drop of 173 mV. When CTAB and PVP were
+used as surfactants, the photopotential drop of TiO2/GaInS3-UP and
+TiO2/GaInS3-UC reached 208 mV and 301 mV, respectively. This in-
+dicates that CTAB facilitates the better synthesis of GaInS3, likely due to
+its electrostatic stabilization mechanism promoting reaction transport,
+thereby yielding a product with higher crystallinity and compositional
+uniformity. In contrast, although PVP can prevent agglomeration, its
+steric hindrance effect may inhibit crystal growth. Using CTAB as the
+surfactant, results with different sulfur sources suggest that thiourea is
+more suitable than thioacetamide for supplying sulfur in GaInS3 for-
+mation, which may be attributed to the faster release of S2−from thio-
+urea. The OCP curve of GaInS3-UC (Fig. S3) shows a minimal
+photopotential drop likely due to its narrow bandgap, leading to rapid
+recombination of photocarriers. The changes in photocurrent density
+shown in Fig. 2b and S4 also confirm that the TiO2/GaInS3-UC prepared
+with CTAB as the surfactant and TU as the sulfur source can provide
+more photogenerated electrons for 304 SS. The variations in both OCP-t
+and i-t demonstrate that coupling with GaInS3 significantly enhances the
+anti-corrosion performance of TiO2. This enhancement is attributed to
+the formation of a heterojunction between the two materials, which
+promotes the effective separation of photocarriers, allowing more pho-
+togenerated electrons to participate in the anti-corrosion process.
+Metallographic images (Fig. S5) of 304 SS immersed in 3.5 wt% NaCl for
+12 h, with and without the PECCP provided by TiO2/GaInS3-UC, reveal
+that the presence of the PECCP effectively prevents 304 SS corrosion.
+The anti-biofouling performance of the series of photoelectrodes was
+evaluated through photocatalytic sterilization experiments against
+Pseudomonas aeruginosa under simulated sunlight. The sterilization rates
+are presented in Fig. 2c, with corresponding plate images shown in
+Fig. S6. After 90 min of illumination, TiO2/GaInS3-UC exhibited superior
+sterilization efficiency (100 %) compared to TiO2 (64 %) and GaInS3-AC
+(89 %), which can be attributed to its enhanced charge carrier separa-
+tion efficiency and broader light absorption range. Control experiments
+involving
+illumination-only
+and
+photoelectrode-only
+conditions
+(Fig. S7) showed no significant reduction in bacterial colonies, ruling
+out any substantial antibacterial effect from light or the material alone
+[33]. Cyclic sterilization tests conducted with TiO2/GaInS3-UC (Fig. 2d
+and S8) demonstrated excellent stability, with the inactivation rate
+remaining as high as 99.83 % even after the fourth cycle. To further
+assess its universality, the photoelectrodes were tested against Staphy-
+lococcus aureus, Escherichia coli, and Microcystis aeruginosa. As shown in
+Fig. 2e and S9, after 90 min of irradiation, the inactivation rates reached
+100 % for Staphylococcus aureus and 99.10 % for Escherichia coli, while a
+rate of 98.96 % was achieved for Microcystis aeruginosa after 120 min,
+confirming its broad-spectrum antimicrobial and algal inhibition char-
+acteristics. To identify the primary ROS involved in the photocatalytic
+antibacterial process, scavenger experiments were performed using
+Na2C2O4, IPA, and TEMPOL to trap holes, ⋅OH and ⋅O2
+−, respectively.
+The relevant photos of the plate are shown in Fig. S10. As illustrated in
+Fig. 2f, the sterilization rates decreased to 90.21 %, 60.74 %, and
+36.83 % upon the addition of holes, ⋅OH and ⋅O2
+−
+scavengers, corre-
+sponding to reductions of 9.79 %, 39.26 %, and 63.17 % compared to the
+scavenger-free system. This indicates that ⋅O2
+−is the primary ROS in the
+sterilization process, with ⋅OH radicals also playing a role. ESR mea-
+surements were performed to investigate the generation of free radicals
+by the TiO2/GaInS3-UC photoelectrode under light irradiation (Fig. S11).
+No signals corresponding to DMPO-⋅OH or DMPO-⋅O2
+−were detected in
+the dark. However, after 5 and 10 min of illumination, characteristic
+signals of both DMPO-⋅OH and DMPO-⋅O2
+−emerged, with their intensity
+increasing over prolonged irradiation, indicating continuous accumu-
+lation of radicals during the photocatalytic process. These results pro-
+vide strong evidence that ⋅O2
+−
+and ⋅OH serve as the primary reactive
+species responsible for microbial inactivation.
+Fungal organic compounds, including extracellular organic matter
+(EOM) and intracellular organic matter (IOM), not only accelerate
+biofouling but also contribute to localized corrosion via microbial
+metabolic activities, thereby adversely affecting marine ecosystems.
+Changes in the DOM were thus monitored using 3D-EEM spectroscopy
+(Fig. S12). In Fig. S12a and b, two peaks located at 270/325 nm (Peak A)
+and 220/310 nm (Peak B) were assigned to aromatic protein-like sub-
+stances I and certain soluble microbial products, respectively. After
+90 min of light irradiation, the intensities of Peaks A and B decreased
+significantly, indicating that the TiO2/GaInS3-UC photoelectrode not
+only inactivates bacterial cells but also effectively degrades EOM. As
+shown in Fig. S12c and d, the EEM results of IOM before illumination
+exhibited Peak A (λEx/λEm = 280/310 nm) and Peak B (λEx/λEm = 225/
+310 nm), corresponding to aromatic proteins and soluble microbial
+byproducts, respectively. After 90 min of irradiation, both peaks showed
+a substantial reduction in intensity, likely attributable to the leakage of
+intracellular protein-like materials caused by microbial cell death and
+loss of membrane integrity.
+The microstructures of the prepared photoelectrodes were charac-
+terized using SEM and TEM, as summarized in Fig. 3. Fig. 3a clearly
+displays the typical nanorod morphology of TiO2. In the absence of a
+surfactant, GaInS3-U consists mainly of bulk hexagonal and needle-like
+crystals (Fig. 3b). The introduction of PVP or CTAB as surfactants
+leads to the formation of a wrinkled network structure for GaInS3-UP
+(Fig. 3c) and a fibrous network for GaInS3-UC (Fig. 3d), attributed to
+surfactant-induced anisotropic crystal growth via selective adsorption.
+By contrast, GaInS3-AC exhibits a burr-like morphology (Fig. 3e). Among
+these, the fibrous architecture of GaInS3-UC likely favors enhanced light
+absorption by the underlying TiO2 and improved electrolyte accessi-
+bility. This facilitates an increase in the reactive surface area, thereby
+promoting radical generation. Furthermore, this unique architecture
+may behave as a “physical trap” to capture microorganisms. EDS and
+elemental mapping of TiO2/GaInS3-UC (Figs. S13 and S14) confirm the
+presence and homogeneous distribution of Ti, O, Ga, In, and S. High-
+resolution TEM imaging (Fig. 3f) reveals lattice spacings of 0.254 nm
+and 0.231 nm in the TiO2 region, corresponding to the (012) and (220)
+planes of orthorhombic TiO2, respectively. The lattice fringes of
+0.199 nm in region C are assigned to the (110) plane of hexagonal
+GaInS3. These HRTEM results confirm intimate contact between the two
+components in the TiO2/GaInS3-UC heterostructure, which is expected to
+facilitate efficient interfacial charge transfer.
+Fig. 4a displays the XRD patterns of the series of photoelectrode
+materials. The characteristic peaks observed at 26.6◦, 33.8◦, 37.8◦,
+51.7◦, 61.7◦, and 65.7◦are attributed to SnO2 in the FTO substrate
+(PDF#46–1088). Diffraction peaks at 25.2◦, 36.2◦, and 54.6◦correspond
+to the (120), (012), and (320) crystal planes of orthorhombic TiO2
+(PDF#29–1360), respectively. After in situ loading with GaInS3 of
+different morphologies, the characteristic diffraction peaks of TiO2 and
+FTO remain essentially unchanged, while several minor characteristic
+peaks belonging to GaInS3 are detected. The peaks observed at 2θ values
+of 27.5◦, 54.6◦, 62.9◦, and 67.5◦are indexed to the (101), (115), (1011),
+and (119) planes of hexagonal GaInS3 (PDF#80–0868), respectively.
+Additionally, in the TiO2/GaInS3-U sample, a characteristic peak at
+2θ = 47.9◦is identified as the (220) plane of another hexagonal phase,
+GaIn4S9 (PDF#42–0816). These XRD results collectively confirm the
+successful synthesis of the TiO2/GaInS3 composites. XPS was further
+J. Wang et al.
+Nano Materials Science xxx (xxxx) xxx
+5
+
+employed to investigate the variations in surface elemental composition
+and chemical states of the as-synthesized TiO2, TiO2/GaInS3-UC, and
+GaInS3-UC samples (Figs. S15 and 4b–f). The survey spectra (Fig. S15)
+confirm that the detected elements in each photoelectrode are consistent
+with their expected compositions. In Fig. 4b, the two peaks located at
+458.1 eV and 463.7 eV are assigned to Ti 2p3/2 and Ti 2p1/2 of Ti4+ in
+TiO2, respectively. For TiO2/GaInS3-UC, these Ti 2p peaks shift toward
+lower binding energies, suggesting electron transfer from GaInS3-UC to
+TiO2. As shown in Fig. 4c, the O 1s spectrum of TiO2 exhibits two
+characteristic peaks at 529.9 eV and 531.6 eV, corresponding to lattice
+oxygen (OL) and adsorbed oxygen species (OA), respectively. In TiO2/
+GaInS3-UC, the OL peak remains unchanged in position, while the OA
+peak shifts to higher binding energy with significantly enhanced in-
+tensity, indicating the presence of abundant adsorbed oxygen species in
+the composite [24]. The Ga 3d spectra (Fig. 4d) are composed of two
+contributions. In GaInS3-UC, peaks are observed at 20.1 eV and 17.5 eV.
+Due to the notable overlap between the Ga 3d and In 4d (~17 eV) re-
+gions, the peak at 17.5 eV is strongly influenced. The peak at 20.1 eV
+corresponds to the Ga 3d3/2 orbital [34,35]. In TiO2/GaInS3-UC, both
+peaks shift positively by 0.2 eV and 0.3 eV, respectively, again indicating
+electron transfer from GaInS3-UC to TiO2. In Fig. 4e, the peaks at
+444.2 eV and 451.8 eV are attributed to In 3d5/2 and In 3d3/2 of In3+
+Fig. 3. (a) SEM images of TiO2, (b) TiO2/GaInS3-U, (c) TiO2/GaInS3-UP, (d) TiO2/GaInS3-UC, and (e) TiO2/GaInS3-AC. (f) HRTEM image of TiO2/GaInS3-UC, the upper
+left inset shows the nanorod structure of the TiO2 material.
+Fig. 4. (a) XRD patterns of the series of photoelectrode materials, and high-resolution XPS spectra of each element: (b) Ti 2p, (c) O 1s, (d) Ga 3d, (e) In 3d, and (f)
+S 2p.
+J. Wang et al.
+Nano Materials Science xxx (xxxx) xxx
+6
+
+species, respectively. In TiO2/GaInS3-UC, the doublet spacing remains
+unchanged, while both peaks shift to higher binding energies, consistent
+with electron donation from GaInS3-UC to TiO2. Similarly, the S 2p
+spectrum (Fig. 4f) shows peaks at 162.0 eV (S 2p1/2) and 160.8 eV (S
+2p3/2), which shift to 162.1 eV and 160.9 eV in the TiO2/GaInS3-UC
+sample, aligning with the trend observed for Ga and In. In summary, the
+decrease in Ti binding energy, coupled with the increase in Ga, In, and S
+binding energies, clearly demonstrates that electrons migrate from
+GaInS3-UC to TiO2 upon their contact.
+To elucidate the enhanced anti-corrosion and anti-biofouling per-
+formance of the TiO2/GaInS3-UC photoelectrode, a series of character-
+istics were investigated, including light absorption, photoelectronic
+conversion efficiency, charge carrier separation and migration, as well
+as electrochemically active surface area (ECSA) . Fig. 5a shows the
+UV–Vis DRS of the prepared photoelectrodes. The absorption edges of
+pure TiO2 and pure GaInS3-UC are approximately 412 nm and 527 nm,
+respectively. After the hydrothermal growth of GaInS3-UC on TiO2, the
+absorption edge of the TiO2/GaInS3-UC photoelectrode shifts to 499 nm,
+exhibiting a notable red shift compared to TiO2, which indicates a sig-
+nificant enhancement of visible-light absorption. The LSV curves under
+chopped light illumination (Fig. 5b) reveal that the incorporation of
+GaInS3-UC substantially increases the photocurrent density of TiO2/
+GaInS3-UC, demonstrating improved photoelectronic conversion effi-
+ciency due to heterojunction formation. Furthermore, the composite
+effectively suppresses the recombination of photogenerated charge
+carriers (Fig. 5c). The Nyquist plots (Fig. 5d) display that the capacitive
+arc radius follows the order: TiO2/GaInS3-UC < TiO2/GaInS3-UP < TiO2/
+GaInS3-U < TiO2 < GaInS3-UC. A smaller arc radius corresponds to a
+lower charge transfer resistance. All TiO2/GaInS3-based photoelectrodes
+exhibit reduced arc radii compared to pure TiO2, indicating more effi-
+cient migration of e−~h + pairs after modification with GaInS3. The
+corresponding equivalent circuit is shown in Fig. 5d, and fitting pa-
+rameters are provided in Table S3. The pore resistance (Rp) values of the
+TiO2/GaInS3 photoelectrodes are lower than that of TiO2, suggesting less
+hindered ion transport through the material's pores to the electrode
+surface. The smallest charge transfer resistance (Rct) observed for TiO2/
+GaInS3-UC indicates that the GaInS3-UC modification significantly en-
+hances the electron transfer rate at the photoelectrode/electrolyte
+interface. Consistently, the Bode plot (Fig. 5e) shows the lowest
+impedance modulus for TiO2/GaInS3-UC in the low-frequency region,
+further confirming its superior charge transport capability. Fig. S16
+displays the CV curves of the TiO2, TiO2/GaInS3-UC, TiO2/GaInS3-U, and
+GaInS3-UC photoelectrodes measured at five different scan rates. The
+corresponding ECSA, calculated from these curves, is presented in
+Fig. 5f. The double-layer capacitance (Cdl) values of the four photo-
+electrodes
+follow
+the
+descending
+order:
+TiO2/GaInS3-UC
+(0.118
+mF
+cm−2)
+>
+TiO2/GaInS3-U
+(0.110
+mF
+cm−2)
+>
+TiO2
+(0.103 mF cm−2) > GaInS3-UC (0.061 mF cm−2). Notably, the TiO2/
+GaInS3-UC composite exhibits the largest Cdl value, which is indicative of
+a greater ECSA and implies that the electrode surface can provide a
+higher density of active sites for both the anti-corrosion and anti-
+biofouling processes.
+Subsequent investigation focused on the influence of band structure
+and heterojunction type on the anti-corrosion and anti-biofouling per-
+formance. The Tauc plots (Fig. S17) derived from the data in Fig. 5a
+using the Kubelka-Munk transformation yielded bandgap energies (Eg)
+of 3.02 eV for TiO2 and 2.03 eV for GaInS3-UC. Concurrently, Mott-
+Schottky (Fig. S18) analysis determined the CB potentials (ECB) to be
+−0.19 V and −0.59 V (vs. NHE) for TiO2 and GaInS3-UC, respectively.
+Based on these results, the respective conduction and VB positions for
+TiO2 and GaInS3-UC were constructed, as illustrated in Fig. 6.
+Fig. 6 schematically illustrates the charge transfer mechanism within
+the TiO2/GaInS3 heterojunction and its integrated anti-corrosion and
+anti-biofouling functionality. The configuration is composed of two
+semiconductors, TiO2 and GaInS3, with complementary band structures.
+By establishing an energy step between their CB and VB, a Z-scheme-like
+electron transfer pathway is constructed. The key to the Z-scheme
+structure lies in the efficiency of interface reorganization of the inter-
+mediate band and the ability to suppress interface recombination. The
+CB electrons of the low-band semiconductor (TiO2) will undergo
+recombination and annihilation with the VB holes of the low-band
+semiconductor (GaInS3). This process ensures that electrons within the
+Z-scheme hierarchical junction remain confined to the CB of GaInS3,
+while holes remain confined to the VB of TiO2. In essence, the built-in
+electric field at the TiO2/GaInS3 interface, in conjunction with this
+distinctive charge migration route, synergistically enhances the sepa-
+ration of photogenerated electrons and holes. Furthermore, the Z-
+scheme heterojunction preserves the strong redox potential of the
+Fig. 5. (a) UV–Vis DRS of TiO2, GaInS3-U and TiO2/GaInS3-U, (b) the LSV curves, and (c) PL spectra of the series of photoelectrode materials, (d) EIS and (e) Bode
+plots of the series of photoelectrode materials, (f) ECSA diagram of the series of photoelectrodes.
+J. Wang et al.
+Nano Materials Science xxx (xxxx) xxx
+7
+
+separated charge carriers. In the anti-corrosion system, photogenerated
+electrons are directly transferred to the 304 SS substrate, thereby
+effectively suppressing its corrosion. In the anti-biofouling system, these
+photogenerated electrons react with dissolved oxygen to ⋅O2
+−, while the
+holes oxidize water to produce ⋅OH. These ROS collectively attack and
+disrupt microbial cellular structures, leading to efficient inactivation. In
+the coupled system, while the h+ remain available for water oxidation to
+produce ⋅OH for sterilization, the photogenerated electrons are parti-
+tioned: a portion is directly channeled to 304 SS for cathodic protection,
+while the remainder participates in the formation of ⋅O2
+−, contributing to
+the antimicrobial process. As such, within coupled systems, both anti-
+corrosion and anti-biofouling processes simultaneously contend for
+photogenerated electrons, ergo a competitive relationship exists.
+4. Conclusion
+This work successfully synthesized a TiO2/GaInS3-UC photoelectrode
+with a filamentous network structure and systematically evaluated its
+dual functionality in PECCP and photocatalytic sterilization/algaecide.
+The TiO2/GaInS3-UC photoelectrode provides 301 mV of cathodic pro-
+tection for 304 SS while achieving a sterilization and algae inactivation
+efficiency greater than 98 % within 90 min, and maintaining excellent
+stability. Comparative experiments in individual and coupled systems
+revealed, for the first time, a competitive relationship for photo-
+generated electrons between the anti-corrosion and anti-biofouling
+processes, resulting in a slight decrease in anti-corrosion and anti-
+biofouling performance compared to a single system. The Z-scheme
+charge transfer mechanism between TiO2 and GaInS3 not only effec-
+tively promotes the separation and migration of photogenerated elec-
+trons and holes but also preserves charge carriers with strong redox
+potentials. This mechanism is identified as the underlying origin of the
+high anti-corrosion and anti-biofouling performance.
+CRediT authorship contribution statement
+Jing Wang: Writing – original draft, Formal analysis, Conceptuali-
+zation. Juan Liu: Writing – original draft, Investigation, Formal anal-
+ysis, Data curation. Ruiyang Zhao: Methodology, Formal analysis.
+Yiqing Tang: Software, Resources, Data curation. Jingtian Huang:
+Methodology, Investigation. Xinyu Zhang: Validation, Supervision.
+Jing Tian: Writing – review & editing, Funding acquisition, Conceptu-
+alization. Ning Wang: Funding acquisition, Formal analysis. Wei
+Wang: Writing – review & editing, Software, Resources.
+Conflicts of interest
+The authors declare that they have no competing interest.
+Acknowledgements
+This work was supported by the National Natural Science Foundation
+of China (Nos. U22A20112 and U2106206), the Natural Science Foun-
+dation of ShanDong (No. ZR2023QD152) and Qingdao Science and
+Technology Benefiting the People Demonstration Project (No. 25-1-5-
+cspz-6-nsh).
+Appendix A. Supplementary data
+Supplementary data to this article can be found online at https://doi.
+org/10.1016/j.nanoms.2026.01.006.
+Data availability
+Data will be made available on request.
+References
+[1] K. Wang, B. Song, J. Wei, W. Cao, L. Zhang, H. Zheng, W. Li, E. Redaelli, W. Li,
+A review of the development of photoelectrochemical cathodic protection from the
+perspective of hole scavengers and interface synergy, Chem. Eng. J. 521 (2025)
+167000.
+[2] D. Zhou, D. Jiang, X. Song, Y. Ji, G. Zhang, G. Wang, T. Suo, Y. Zhang, H. Cui,
+Corrosion and wear behaviors of (CoCrNi)87M8B4C (M: v/nb) high-entropy alloy
+coatings by laser cladding, J. Mater. Sci. Technol. 251 (2026) 161–179.
+[3] L. Yang, S. Li, R. Zhang, Copper threatens marine ecosystems, Science 389 (2025),
+884-884.
+[4] X. Shi, H. Wei, W. Zhou, P.E.D. Soto Rodriguez, C. Lin, L. Wang, Z. Zhang,
+Advanced strategies for marine antifouling based on nanomaterial-enhanced
+functional PDMS coatings, Nano Mater. Sci. 6 (2024) 375–395.
+[5] H. Zhang, J. Zhang, Z. Zuo, R. Zhang, M. Sun, J. Duan, W. Sand, B. Xiao, B. Hou,
+Improvement of photocatalytic antibacterial action of Mn, sv-co-doped ZnIn2S4
+Fig. 6. The mechanism of TiO2/GaInS3 in the anti-corrosion and anti-biofouling coupling system.
+J. Wang et al.
+Nano Materials Science xxx (xxxx) xxx
+8
+
+prepared by a novel Ov-rich α-MnO2 decomposition approach, J. Mater. Chem. A
+13 (2025) 17646–17657.
+[6] H. Tian, Y. Song, R. Zhang, Q. Wang, Y. Ning, B. Liu, Lattice distortion and
+electronic structure dual engineering of Bi4O5Br2 nanosheets for enhanced
+photocatalytic activity, Chem. Eng. J. 508 (2025) 161000.
+[7] M. Li, Z. Hu, D. Liu, Y. Liang, S. Liu, B. Wang, C. Niu, D. Xu, J. Li, B. Han, Efficient
+antibacterial and microbial corrosion resistant photocatalytic coating: enhancing
+performance with S-type heterojunction and Cu synergy, Chem. Eng. J. 495 (2024)
+153519.
+[8] D.P.-H. Tran, A.D. Safiyanti, F. Nakajima, T. Tobino, Y.-F. Wang, S.-J. You,
+Exploring Fe3O4/PANI-functionalized PVDF membranes for bio-energy recovery
+and fouling control in anaerobic membrane bioreactor, Water Res. 287 (2025)
+124508.
+[9] X. Zhang, X. Li, H. Jiang, Z. Li, X. Yang, W. Li, Z. Jin, Bifunctional anticorrosion
+and antimicrobial applications via photoelectrochemical mechanisms based on Z-
+scheme ZnS/CdIn2S4 heterostructure for steel in marine environment, Constr.
+Build. Mater. 493 (2025) 143244.
+[10] L. Yang, E. Zhou, Y. Dong, J. He, Z. Tian, B. Liu, Y. Wu, Z. Li, Z. Zhou, X. Li, B. Yu,
+Y. Fan, M. Zhang, M. Cui, Y. Lu, T. Gu, F. Wang, D. Xu, Al/Cu enhancement in
+marine anti-biofouling and anti-biocorrosion performance of high-entropy alloys,
+Adv. Funct. Mater. 35 (2025) 2502816.
+[11] Z. Li, Z. Jin, H. Jiang, J. Cai, Y. Cao, X. Zhang, B. Hou, Manganese indium sulfide/
+indium oxide with S-scheme heterojunction for enhanced dual performance of
+metal in marine environment, J. Clean. Prod. 490 (2025) 144785.
+[12] N. Wang, R. Zhang, K. Liu, Y. Zhang, X. Shi, W. Sand, B. Hou, Application of
+nanomaterials in antifouling: a review, Nano Mater. Sci. 6 (2024) 672–700.
+[13] M. Safarkhani, A. Aldhaher, G. Heidari, E.N. Zare, M.E. Warkiani, O. Akhavan,
+Y. Huh, N. Rabiee, Nanomaterial-assisted wearable glucose biosensors for
+noninvasive real-time monitoring: pioneering point-of-care and beyond, Nano
+Mater. Sci. 6 (2024) 263–283.
+[14] S. Xu, Z. Zhang, H. Zhang, Z. Li, H. Peng, S. Kawi, A. Xie, P. Qiu, In-situ fabrication
+of TiO2/ZIF-67 composite film with electron storage characteristics for
+significantly enhanced photoelectrochemical cathodic protection of 304 stainless
+steel, Chem. Eng. J. 503 (2025) 158693.
+[15] R. Pang, Y. Miseki, S. Okunaka, K. Sayama, Photocatalytic production of
+hypochlorous acid over Pt/WO3 under simulated solar light, ACS Sustain. Chem.
+Eng. 8 (2020) 8629–8637.
+[16] W. Yang, L. Xu, Z. Wang, K. Li, R. Hu, J. Su, L. Zhang, Synchronous removal of
+ammonia nitrogen, phosphate, and calcium by heterotrophic nitrifying strain
+pseudomonas sp. Y1 based on microbial induced calcium precipitation, Bioresour.
+Technol. 363 (2022) 127996.
+[17] Y. Cheng, Y. Zhou, Z. Zhang, Z. Xu, Z. Zhao, J. Tian, J. Li, 1D/2D WO3/Bi2MoO6 Z-
+Scheme heterojunction photocatalytic for efficient photocatalytic removal of
+microorganisms, J. Environ. Chem. Eng. 13 (2025) 116368.
+[18] F. Qian, J. Tian, C. Guo, L. Liu, S. Chen, J. Li, N. Wang, L. Wang, Dual-function
+photoelectrode of TiO2 nanotube array/CdZnS/ZnS heterojunction for efficient
+photoelectrochemical cathodic protection and anti-biofouling, J. Mater. Sci.
+Technol. 189 (2024) 25–36.
+[19] G. Chen, D. Yao, Z. Wang, K. He, H. Xia, F. Lu, M. Ji, Z. Zhong, Y. Song, Cu2O@Cu-
+composed hollow spheres capable of generating rich reactive oxygen species for
+efficient photodynamic antibacterial application, Separ. Purif. Technol. 360 (2025)
+130951.
+[20] J. Wang, Y. Zhang, X. Wang, W. Su, Simultaneous enhancements in photoactivity
+and anti-photocorrosion of Z-scheme Mn0.25Cd0.75S/WO3 for solar water splitting,
+Appl. Catal. B Environ. Energy 268 (2020) 118444.
+[21] Y. Chen, Z. Li, J. Wang, X. Ren, H. Feng, M. Zhang, J. Tang, X. Zhou, L. Tang,
+Efficient photocatalytic inactivation of microcystis aeruginosa by a novel Z-scheme
+heterojunction tubular photocatalyst under visible light irradiation, J. Colloid
+Interface Sci. 623 (2022) 445–455.
+[22] F. Tu, Y. Jia, X. Tao, J. Ju, J. Ding, H. Sun, X. Zhan, W. Zhang, Improved
+photocathodic protection and S-scheme mechanism of graphene and ZnFe2O4
+decorated TiO2 nanosheets with {001} facet exposed, J. Alloys Compd. 976 (2024)
+173100.
+[23] W. Zu, G. Pan, J. Li, S. Wang, G. Zhang, Y. Liu, Y. Liu, Carbon nitride interlayer-
+enhanced TiO2/WO3 nanorods with surface oxygen vacancies for durable
+photocathodic performance on 304 stainless steel in simulated seawater, Chem.
+Eng. J. 490 (2024) 151533.
+[24] J. Tian, F. Qian, M. Cao, J. Gong, J. Li, L. Wang, M. Tian, Z. Chen, A Mo doping
+WO3/CdZnS heterojunction photoelectrode for boosting electron storage capacity,
+Appl. Surf. Sci. 634 (2023) 157680.
+[25] H. Li, G. Li, Z. Yang, H. Liu, X. Zhang, J. Zhu, W. Li, Y. Li, Enhanced photocathodic
+protection performance of Co3S4 nanoparticles modified porous BiVO4 composites
+for 304 stainless steel, Mater. Res. Bull. 181 (2025) 113110.
+[26] W. Li, L. Wei, T. Shen, Y. Wei, K. Li, F. Liu, W. Li, Ingenious preparation of
+“layered-closed” TiO2-BiVO4-CdS film and its highly stable and sensitive
+photoelectrochemical cathodic protection performance, Chem. Eng. J. 429 (2022)
+132511.
+[27] Z. Ma, X. Ma, L. Yang, X. Liu, Z. Zhong, B. Hou, Novel K-doped TiO2 nanotube
+arrays with superhydrophilic surface and high photoelectrochemical cathodic
+protection, Appl. Surf. Sci. 580 (2022) 152274.
+[28] C. Feng, Z. Chen, J. Jing, M. Sun, G. Lu, J. Tian, J. Hou, A novel TiO2 nanotube
+arrays/MgTixOy multiphase-heterojunction film with high efficiency for
+photoelectrochemical cathodic protection, Corros. Sci. 166 (2020) 108441.
+[29] C. Ma, S. Chen, C. Wang, Z. Zhao, W. Wang, W. Li, Defect regulation of p-n scheme
+Cu2NxO1–x/PDINH composites for enhanced photocatalytic antibacterial activities,
+J. Mater. Sci. Technol. 209 (2025) 149–160.
+[30] J. Liu, M. Rao, F. Xia, B. Jia, N. Zheng, H. Jiang, Z. Li, J. Lu, W. Li, G. Wang, Marine
+anti-fouling polyurethane-fluorinated polysiloxane/microcapsule/metal organic
+framework bionic coating for broad-spectrum and long-lasting protection, J. Mater.
+Sci. Technol. 250 (2026) 40–52.
+[31] P. Karthiga, K. Chitra, M.A. Wadaan, R. Mythili, J. Lee, D. Bharathi, Green
+synthesis of ZnO nanoparticles using Ficus benghalensis for visible light–driven
+photocatalytic degradation of crystal violet and antibacterial and antibiofilm
+activities, Luminescence 40 (2025) e70088.
+[32] H. Tian, R. Zhang, Y. Song, Y. Ning, Q. Wang, B. Liu, Construction of 3D
+nanoflower Bi2WO6/Bi4O5Br2 Z-scheme heterojunction with an internal electric
+field for enhanced photocatalytic activity, Appl. Surf. Sci. 684 (2025) 161863.
+[33] J. Pei, X. Wan, M. Guo, J. Mi, W. Wu, Y. Hong, P. Hu, P. Chen, L. Chen, S. Xiang,
+Q. Zhang, H. Zeng, L. Liu, X. Fan, B. Yu, Mechanochemical synthesis of ZnO@TiO2
+II heterojunction material: photocatalytic degradation and antibacterial synergistic
+effect, Chem. Eng. J. 523 (2025) 168624.
+[34] Z. Wang, L. Wu, J. Cheng, H. Chen, J. Luo, Gradient surface gallium-doped
+hematite photoelectrode for enhanced photoelectrochemical water oxidation,
+Nano Lett. 25 (2025) 707–714.
+[35] K. Rakhimbekov, D. Valiev, V. An, A. Blinova, N. Usoltseva, A. Pustovalov,
+M. Vasilevichev, D. Kogolev, S. Stepanov, D. Kokotov, Study of electroerosive
+Ga2O3-ZnO nanostructures as photoanodes for photoelectrochemical hydrogen
+generation, Phys. B Condens. Matter 700 (2025) 416885.
+J. Wang et al.
+Nano Materials Science xxx (xxxx) xxx
+9

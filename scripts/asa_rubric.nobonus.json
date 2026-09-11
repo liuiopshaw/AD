@@ -1,0 +1,47 @@
+{
+  "version": "0.6-nobonus",
+  "axes": {
+    "delivery_efficiency": {
+      "weight": 0.3,
+      "source_agent": "epa",
+      "subscores": {}
+    },
+    "multi_target_synergy": {
+      "weight": 0.15,
+      "source_agent": "mma",
+      "subscores": {}
+    },
+    "durability": {
+      "weight": 0.1,
+      "source_agent": "mma",
+      "subscores": {}
+    },
+    "manufacturability": {
+      "weight": 0.25,
+      "source_agent": "apa",
+      "subscores": {}
+    },
+    "biosafety": {
+      "weight": 0.2,
+      "source_agent": "bsa",
+      "subscores": {}
+    }
+  },
+  "modality_adjustments": {},
+  "consistency": {
+    "method": "cj",
+    "enabled": true,
+    "clamp": [
+      0,
+      1
+    ]
+  },
+  "labels_zh": {
+    "delivery_efficiency": "靶组织递送效率(30%)",
+    "multi_target_synergy": "多靶点协同潜力(15%)",
+    "durability": "效应持续时间(10%)",
+    "manufacturability": "生产质控与精准调控能力(25%)",
+    "biosafety": "生物安全性(20%)"
+  },
+  "standard_source": "E:/Cu-agent/评分标准/标准.md (调整后的评估框架,突出纳米制剂优势)"
+}

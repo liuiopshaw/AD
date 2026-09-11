@@ -4,18 +4,31 @@ Multilingual text definitions for ECOMATS
 
 结构 / Structure:
 TEXTS = {
-    "zh": { ... },
-    "en": { ... }
+    "zh": { ... },   # 中文文本定义
+    "en": { ... }    # English text definitions
 }
+
+此文件定义了系统中所有界面文本、Agent 角色描述、任务描述和提示词前缀的
+双语言版本。通过 locales/__init__.py 中的 get_text() 函数按需检索。
 """
 
+# TEXTS 字典是整个多语言系统的核心数据源
+# 三级键结构：语言代码 -> 类别 -> 键 -> 字段
+# 类别包括：
+#   - agents: Agent 的角色名（role）和目标描述（goal）
+#   - tasks: 任务描述（description）和期望输出（expected_output）
+#   - ui: 用户界面文本（欢迎语、输入提示、菜单选项等）
 TEXTS = {
     # ==================== 中文 ====================
+    # 中文语言区 - 所有 Agent 和任务的中文描述
     "zh": {
         "agents": {
+            # 材料设计专家 - 核心 Agent，负责根据用户需求设计材料方案
             "material_designer": {
                 "role": "材料设计专家",
                 "goal": "设计和优化水处理材料方案，严格按照材料类型分类和结构描述规范进行设计",
+                # backstory_suffix 附加背景信息，在 Agent 初始化时拼接到角色背景中
+                # 包含工具使用策略：优先复用已有查询结果以节省 API 配额
                 "backstory_suffix": """
 在输出设计结果时，应尽可能包含以下详细信息：
 - Materials Project ID (mp-xxx)（如该材料已在数据库中）
@@ -29,41 +42,52 @@ TEXTS = {
 - 元素组合查询限制返回数量，避免大范围拉取
 """
             },
+            # 评估专家 A - 从催化活性和反应机理角度评估
             "expert_a": {
                 "role": "高级氧化评估专家A",
                 "goal": "从催化活性和反应机理角度评估材料设计方案的可行性和优越性",
             },
+            # 评估专家 B - 从稳定性和耐久性角度评估
             "expert_b": {
-                "role": "高级氧化评估专家B", 
+                "role": "高级氧化评估专家B",
                 "goal": "从稳定性和耐久性角度评估材料设计方案",
             },
+            # 评估专家 C - 从环境安全性和可持续性角度评估
             "expert_c": {
                 "role": "高级氧化评估专家C",
                 "goal": "从环境安全性和可持续性角度评估材料设计方案",
             },
+            # 最终验证专家 - 综合三位评估专家的意见给出最终审核结论
             "final_validator": {
                 "role": "最终验证专家",
                 "goal": "综合多位专家的评估意见，对材料设计方案进行最终审核和验证",
             },
+            # 反应机理专家 - 深入分析催化反应机理（在自主调度模式中使用）
             "mechanism_expert": {
                 "role": "反应机理分析专家",
                 "goal": "深入分析材料在水处理过程中的催化反应机理",
             },
+            # 合成方法专家 - 提供材料合成的具体方法和工艺指导
             "synthesis_expert": {
                 "role": "合成方法指导专家",
                 "goal": "为设计的材料提供详细可行的合成方法和工艺参数",
             },
+            # 操作参数专家 - 建议最优的操作条件和使用参数
             "operation_expert": {
                 "role": "操作参数建议专家",
                 "goal": "根据材料特性和应用场景，提供最优的操作参数和使用建议",
             },
+            # 任务协调专家 - 在自主调度模式中负责协调和分配各 Agent 任务
             "coordinator": {
                 "role": "任务协调专家",
                 "goal": "协调和分配各智能体的任务，确保工作流程高效运行",
             },
         },
         "tasks": {
+            # 材料设计任务 - 整个工作流的核心任务
             "design_task": {
+                # 任务描述：详细的步骤说明，指导 Agent 如何设计材料
+                # 包含 9 个设计步骤、9 种材料类型分类、以及关键设计要点
                 "description": """根据用户需求设计水处理材料方案。
 
 设计步骤：
@@ -94,6 +118,7 @@ TEXTS = {
 - 满足目标污染物的降解需求
 - **必须验证设计的材料结构在现实中是否存在**
 """,
+                # 期望输出：定义 Agent 应产出的报告结构
                 "expected_output": """提供完整的材料设计方案，包括：
 1. 材料组成（材料类型和关键结构参数）
 2. 设计原理说明
@@ -103,6 +128,7 @@ TEXTS = {
 6. 合成可行性评估
 """,
             },
+            # 评估任务 - 由三位评估专家分别执行
             "evaluation_task": {
                 "description": """对材料设计方案进行专业评估。
 
@@ -125,6 +151,7 @@ TEXTS = {
 4. 具体的改进建议
 """,
             },
+            # 最终验证任务 - 汇总三位专家的意见后给出最终结论
             "final_validation_task": {
                 "description": """综合多位专家的评估意见，对材料设计方案进行最终审核验证。
 
@@ -141,6 +168,7 @@ TEXTS = {
 4. 综合改进建议
 """,
             },
+            # 反应机理分析任务（可选）
             "mechanism_analysis_task": {
                 "description": """深入分析材料在水处理过程中的催化反应机理。
 
@@ -159,6 +187,7 @@ TEXTS = {
 5. 降解效率预测
 """,
             },
+            # 合成方法任务（可选）
             "synthesis_method_task": {
                 "description": """为设计的材料提供详细可行的合成方法。
 
@@ -183,6 +212,7 @@ TEXTS = {
 6. 质量控制标准
 """,
             },
+            # 操作参数建议任务（可选）
             "operation_suggesting_task": {
                 "description": """根据材料特性和应用场景，提供最优的操作参数建议。
 
@@ -202,6 +232,7 @@ TEXTS = {
 """,
             },
         },
+        # 用户界面文本 - 终端交互时显示的提示信息
         "ui": {
             "welcome": "欢迎使用ECOMATS - 水处理材料设计多智能体系统",
             "input_prompt": "请输入您的材料设计需求：",
@@ -215,13 +246,17 @@ TEXTS = {
             "result_saved": "结果已保存到",
         },
     },
-    
+
     # ==================== English ====================
+    # 英语语言区 - 所有 Agent 和任务的英文描述
+    # 结构与中文区完全对应，确保 get_text() 在两语言间无缝切换
     "en": {
         "agents": {
+            # Material Design Expert - Core agent responsible for material design
             "material_designer": {
                 "role": "Material Design Expert",
                 "goal": "Design and optimize water treatment material solutions, strictly following material type classification and structural description specifications",
+                # backstory_suffix - Additional background with tool usage strategy (rate limiting and reuse)
                 "backstory_suffix": """
 When outputting design results, include the following detailed information:
 - Materials Project ID (mp-xxx) (if the material exists in the database)
@@ -235,40 +270,49 @@ Tool usage strategy (rate limiting and reuse):
 - Limit element combination queries to avoid large-scale data retrieval
 """
             },
+            # Assessment Expert A - Catalytic activity and reaction mechanism assessment
             "expert_a": {
                 "role": "Advanced Oxidation Assessment Expert A",
                 "goal": "Evaluate the feasibility and superiority of material design solutions from catalytic activity and reaction mechanism perspectives",
             },
+            # Assessment Expert B - Stability and durability assessment
             "expert_b": {
                 "role": "Advanced Oxidation Assessment Expert B",
                 "goal": "Evaluate material design solutions from stability and durability perspectives",
             },
+            # Assessment Expert C - Environmental safety and sustainability assessment
             "expert_c": {
                 "role": "Advanced Oxidation Assessment Expert C",
                 "goal": "Evaluate material design solutions from environmental safety and sustainability perspectives",
             },
+            # Final Validator - Integrates three expert evaluations for final validation
             "final_validator": {
                 "role": "Final Validation Expert",
                 "goal": "Integrate multiple expert evaluations to conduct final review and validation of material design solutions",
             },
+            # Mechanism Expert - In-depth reaction mechanism analysis
             "mechanism_expert": {
                 "role": "Reaction Mechanism Analysis Expert",
                 "goal": "Conduct in-depth analysis of catalytic reaction mechanisms in water treatment processes",
             },
+            # Synthesis Expert - Synthesis method guidance
             "synthesis_expert": {
                 "role": "Synthesis Method Guidance Expert",
                 "goal": "Provide detailed and feasible synthesis methods and process parameters for designed materials",
             },
+            # Operation Expert - Operation parameter recommendations
             "operation_expert": {
                 "role": "Operation Parameter Suggestion Expert",
                 "goal": "Provide optimal operation parameters and usage recommendations based on material properties and application scenarios",
             },
+            # Coordinator - Task coordination in autonomous mode
             "coordinator": {
                 "role": "Task Coordination Expert",
                 "goal": "Coordinate and distribute tasks among agents to ensure efficient workflow",
             },
         },
         "tasks": {
+            # Material design task - Core task of the entire workflow
             "design_task": {
                 "description": """Design water treatment material solutions based on user requirements.
 
@@ -309,6 +353,7 @@ Design Key Points:
 6. Synthesis feasibility assessment
 """,
             },
+            # Evaluation task - Executed by three assessment experts independently
             "evaluation_task": {
                 "description": """Professionally evaluate the material design solution.
 
@@ -331,6 +376,7 @@ Evaluation Requirements:
 4. Specific improvement suggestions
 """,
             },
+            # Final validation task - Integrates expert evaluations for final conclusion
             "final_validation_task": {
                 "description": """Integrate multiple expert evaluations for final validation of the material design solution.
 
@@ -347,6 +393,7 @@ Validation Content:
 4. Comprehensive improvement suggestions
 """,
             },
+            # Mechanism analysis task (optional)
             "mechanism_analysis_task": {
                 "description": """Conduct in-depth analysis of catalytic reaction mechanisms in water treatment.
 
@@ -365,6 +412,7 @@ Analysis Content:
 5. Degradation efficiency prediction
 """,
             },
+            # Synthesis method task (optional)
             "synthesis_method_task": {
                 "description": """Provide detailed and feasible synthesis methods for designed materials.
 
@@ -389,6 +437,7 @@ Synthesis Plan Requirements:
 6. Quality control standards
 """,
             },
+            # Operation parameter suggestion task (optional)
             "operation_suggesting_task": {
                 "description": """Provide optimal operation parameter recommendations based on material properties and application scenarios.
 
@@ -408,6 +457,7 @@ Recommendation Content:
 """,
             },
         },
+        # English UI texts - Terminal interaction prompts
         "ui": {
             "welcome": "Welcome to ECOMATS - Multi-Agent System for Water Treatment Material Design",
             "input_prompt": "Please enter your material design requirements:",

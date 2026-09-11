@@ -1,0 +1,934 @@
+RESEARCH ARTICLE
+www.small-journal.com
+Streamlining Bacterial Gene Regulation via Nucleic Acid
+Delivery with Gold Nanoclusters
+Qingsong Zhang, Xinyi Leng, Lin Peng, Hong Lin, Guanhua Xuan,* Weiwei Zhang,
+Hideyuki Mitomo, Kuniharu Ijiro, and Guoqing Wang*
+Delivery of exogenous nucleic acids (NAs) for gene regulation in bacteria,
+bypassing the barrier of the cell wall, is essential for advancing fundamental
+microbiology and genetic engineering, and the treatment of bacterial diseases.
+However, current methods that rely on electrical or chemical interventions are
+limited by their complexity, specialized expertise, and laboratory-speciﬁc
+instrumentation. This study explores the capability of gold nanoclusters
+(AuNCs) as carriers for delivering small-interfering RNA and antisense
+oligonucleotides into bacteria for targeted gene regulation while shielding
+them from degradation during transport. By enhancing the cytoplasmic
+membrane permeability, the AuNCs enable eﬃcient internalization of NAs
+into both Gram-positive and Gram-negative bacteria while exerting negligible
+inﬂuence on bacterial activity. It is demonstrated that the rationally designed
+NAs can be released from the AuNCs within bacteria, enabling ˜70%
+knockdown of mecA in Methicillin-resistant Staphylococcus aureus (MRSA).
+This signiﬁcantly reduces MRSA’s antibiotic resistance and enhances oxacillin
+treatment eﬃcacy. Furthermore, the successful silencing of ligA in Escherichia
+coli and pilQ in Pseudomonas aeruginosa highlights the broad adaptability of
+the approach across diverse bacterial species. The AuNCs-based
+next-generation NA delivery system has the potential to transform bacterial
+gene regulation—previously restricted to laboratory settings—into a versatile
+and scalable solution for real-world application.
+1. Introduction
+Bacterial gene regulation employs exogenous nucleic acids (NAs)
+as functional molecules to alter the expression of a target gene
+Q. Zhang, X. Leng, L. Peng, G. Wang
+MOE Key Laboratory of Evolution and Marine Biodiversity and Institute
+of Evolution and Marine Biodiversity
+Ocean University of China
+5 Yushan Road, Qingdao 266003, China
+E-mail: gqwang@ouc.edu.cn
+Q.Zhang,X.Leng,L.Peng,H.Lin,G.Xuan,G.Wang
+SKLof MarineFoodProcessing & Safety Control
+Collegeof FoodScienceandEngineering
+Ocean University of China
+1299 Sansha Road, Qingdao 266404,China
+E-mail: xuanguanhua@ouc.edu.cn
+The ORCID identiﬁcation number(s) for the author(s) of this article
+can be found under https://doi.org/10.1002/smll.202411723
+DOI: 10.1002/smll.202411723
+for a variety of uses ranging from genetic
+function prediction to industrial production
+as well as disease therapy.[1,2] The estab-
+lished strategy based on the use of small in-
+terfering RNA (siRNA) and antisense DNA
+oligonucleotide (ASO) represent important
+yet general methods, which are capable
+of modulating the expression of targeted
+genes in a variety of bacteria.[3–5] It has been
+reported that a rationally designed siRNA
+or ASO can speciﬁcally bind target mes-
+senger RNA (mRNA), facilitating the degra-
+dation of the target mRNA and inhibit-
+ing translation to protein and thereby the
+target gene expression.[6,7] While the ac-
+tive NAs possess a strong capacity to de-
+press gene expression, they are unable to
+pass through the bacterial cell wall and
+membrane on their own. This limitation
+is partially due to the negatively charged
+phosphate backbone, which causes elec-
+trostatic repulsion with the bacterial cell
+walls.[8,9] Indeed, Gram-positive bacteria
+possess a considerably thick peptidogly-
+can layer, while an outer membrane rich
+in lipopolysaccharides is present in the
+cell wall of Gram-negative bacteria, in ad-
+dition to a thin peptidoglycan layer.[10,11]
+Although electroporation with an external
+electric ﬁeld and Ca2+-based chemical transformation are rou-
+tinely utilized for the delivery of NAs into bacteria, both methods
+are restricted to specialized operations within qualiﬁed laborato-
+ries and often fail to work eﬀectively under certain contexts.[12–14]
+W. Zhang
+School of Marine Sciences
+Ningbo University
+169 Qixingnan Road, Ningbo 315832, China
+H. Mitomo, K. Ijiro
+Research Institute for Electronic Science
+Hokkaido University
+Sapporo 001–0021, Japan
+G. Wang
+Laboratory for Marine Drugs and Bioproducts
+Qingdao Marine Science and Technology Centre
+Qingdao 266237, China
+Small 2025, 21, 2411723
+© 2025 Wiley-VCH GmbH
+2411723 (1 of 12)
+
+www.advancedsciencenews.com
+www.small-journal.com
+Figure 1. Schematic illustration for PAuNCs-based NA delivery into bacterial cells for targeted gene silencing. To facilitate the loading of negatively
+charged NA, the AuNCs are made positively charged by PEI modiﬁcation to form PAuNCs, followed by incubation with bacteria. NA can be carried by
+the PAuNCs into bacteria, and released from the PAuNCs in bacteria, exerting gene targeting and regulation tasks.
+Furthermore, NAs, particularly siRNA, are inherently vulnera-
+ble to rapid degradation by nucleases present in diverse environ-
+ments, compromising their stability for use across numerous bi-
+ological processes.[15,16] Consequently, the persistent challenge of
+developing convenient, safe, and eﬃcient NA-delivery systems
+for bacteria represents a critical barrier to progress in microbi-
+ology, biochemistry, and related disciplines, stymieing advance-
+ments that could otherwise drive innovation in gene regulation
+and therapeutic applications.
+Nanostructures have recently emerged as crucial materials for
+interacting with bacterial cells in ways that traditional molecules
+(e.g., NAs) cannot, because of their high surface area and cus-
+tomizable surface chemistry.[17–20] Although the delivery of NAs
+using nanostructures into eukaryotic cells has become a popular
+concept for gene regulation and disease therapy,[21] indeed, inves-
+tigations on carrying NAs into bacteria have been rare. On the one
+hand, there have been few results on the evidence of nanoparticle
+internalization into bacteria, despite numerous studies on their
+antibacterial activities.[22,23] As a sedimental work, it has been re-
+ported by Xie and coworkers that nanostructures such as gold
+nanoparticles (≤5 nm), can enter into bacteria in a fashion and ef-
+ﬁcacy depending on size and surface properties.[24] On the other
+hand, a number of works suggest that the bacteria-killing eﬀect of
+nanostructures is directly connected to their internalization that
+causes membrane disruption.[25,26] Taken together, there has re-
+mained an open challenge for materials scientists and microbi-
+ologists to develop a nanoparticle-based delivery system for NAs
+using nanostructures.
+This study aims to leverage the unique size and surface proper-
+ties of gold nanoclusters (AuNCs) to develop the next-generation
+delivery platform for NAs in bacteria for targeted gene regula-
+tion (Figure 1). The polyethyleneimine (PEI)-modiﬁed AuNCs
+(PAuNCs) with positive surface charge allow for eﬀective load-
+ing of NAs on the PAuNCs, regardless of the use of siRNA or
+ASO sequence. Due to the enhanced cytoplasmic membrane per-
+meability, the complex of the NA/PAuNCs can further be rapidly
+internalized into both Gram-positive and Gram-negative bacte-
+ria while not inﬂuencing bacterial growth activity, as evidenced
+by ﬂuorescence microscopy, ﬂow cytometry, and elemental map-
+ping. We also demonstrate that gene silencing eﬃciencies of up
+Small 2025, 21, 2411723
+© 2025 Wiley-VCH GmbH
+2411723 (2 of 12)
+ 16136829, 2025, 13, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202411723 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.small-journal.com
+Figure 2. Characterizations of the AuNCs and the concentration-dependent internalization into MRSA. a) Cartoon of the synthesis scheme for the
+AuNCs. b) A typical TEM image of the AuNCs. c) Particle size distribution of the AuNCs. d) FTIR spectrum of the GSH and the AuNCs. e) Schematic
+illustration for PEI modiﬁcation of the AuNCs. f) Zeta potential measurement results for the AuNCs and the PAuNCs. g) Time courses of OD420 of MRSA
+in the presence of the AuNCs at diﬀerent concentrations upon the addition of 2-nitrophenyl-𝛽-D-galactopyranoside. An increase in OD420 implies an
+increase in the leakage of 𝛽-galactosidase. The error bars represent the standard deviations from three independent tests. h) The fractions of internalized
+PAuNCs in MRSA after incubation with diﬀerent concentrations of the PAuNCs for 1 h.
+to ˜70% were achieved by targeting the mecA gene in Methicillin-
+resistant Staphylococcus aureus (MRSA), ligA in Escherichia coli
+(E. coli), and pilQ in Pseudomonas aeruginosa (P. aeruginosa), at-
+tributable to the controlled release of the NAs from the PAuNCs
+and the precise design of the sequences. Our results highlight
+the versatility of the AuNCs-based approach across diverse bacte-
+rial strains and, importantly, they have essential implications in
+genetic engineering and real-world therapeutic contexts.
+2. Results and Discussion
+2.1. Synthesis and Characterization of the PAuNCs
+The AuNCs were prepared by reducing Au3+ using glutathione
+(GSH) as the reducing agent (Figure 2a). Characterizations by
+transmission electron microscope (TEM) reveal a narrow size dis-
+tribution (Figure 2b), with statistical analysis estimating an av-
+erage particle size of approximately1.6 nm (Figure 2c). Fourier
+transform infrared (FTIR) spectra show that, despite the N─H
+and C═O vibrational bands, and the N─H deformation band in
+common, the S─H stretching vibrational band at 2525 cm−1 van-
+ishes for the AuNCs in comparison with GSH (Figure 2d).[27] The
+disappearance of the S─H band can be ascribed to the reaction of
+GSH with Au and thereby the formation of the Au─S bond.[28,29]
+The surface charge of the AuNCs was measured to be
+−16.1 mV, a consequence of the surface capping by negatively
+charged GSH. To improve the loading eﬃciency for NA, the
+AuNCs were subjected to modiﬁcation with positively charged
+PEI (Figure 2e). Subsequently, the surface charge of the resultant
+PAuNCs turns to +16.8 mV (Figure 2f). TEM characterizations
+show that the PAuNCs remain well dispersed. The average diam-
+eter of the complexes was enlarged to 10.1 nm (Figure S1, Sup-
+porting Information), which was accompanied by a slight shift of
+the absorption proﬁle (Figure S2, Supporting Information).
+Interestingly, we observed the enhanced permeability of
+MRSA’s cytoplasmic membranes in the presence of the PAuNCs.
+Upon co-culture of the bacterial with the PAuNCs for diﬀer-
+ent times, 2-nitrophenyl-𝛽-D-galactopyranoside was introduced
+to probe the permeability change, the hydrolysis of which can
+be catalyzed by released 𝛽-galactosidase from the bacteria to pro-
+duce yellow o-nitrophenol.[30] The change in optical density at
+420 nm indicates the increase in the permeability of the cy-
+toplasmic membrane with increasing amounts of the PAuNCs
+(Figure 2g), which are attributable to the complexation of the
+membrane with the PAuNCs that alters the ﬂuidity of the lipid
+bilayer.[31]
+Subsequently, the potential of the PAuNCs in penetrating
+bacteria cells was examined. MRSA was co-cultured with the
+PAuNCs for 1 h, and then treated with 0.1% Triton X-100 to re-
+move the PAuNCs from the bacterial surface before proceeding
+with acid digestion and inductively coupled plasma-mass spec-
+trometry quantiﬁcation of the internalized PAuNCs. As a con-
+trol result, no change in MRSA’s cytoplasmic membrane per-
+meability is observed with 0.1% Triton X-100 (Figure S3, Sup-
+porting Information). The results reveal that the PAuNCs can
+penetrate the bacteria (Figure 2h; Figure S4, Supporting Infor-
+mation) and that the internalization undergoes a biphasic trend
+with increasing concentration of the PAuNCs in the range of
+Small 2025, 21, 2411723
+© 2025 Wiley-VCH GmbH
+2411723 (3 of 12)
+ 16136829, 2025, 13, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202411723 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.small-journal.com
+12.5–100 μg mL−1. In speciﬁc, when the concentration of the
+PAuNCs is 12.5 μg mL−1, the internalization fraction of the
+PAuNCs by MRSA in the system is 7.8% (0.1 μg); When the con-
+centration of the PAuNCs is increased to 25 μg mL−1, the internal-
+ization fraction is enhanced to 45.6% (1.13 μg). However, as the
+amount of the PAuNCs increased further, the amount of inter-
+nalized gold decreased slightly. The results might be ascribed to
+the decrease in the activity of MRSA at higher concentrations of
+the PAuNCs (Figure S5, Supporting Information), probably due
+to the occurrence of a dormant state of some MRSA in the pres-
+ence of high-concentration PAuNCs.[32] Given the considerable
+PAuNCs penetration and optimal eﬃciency, we chose 25 μg mL−1
+as the proper concentration for the following imaging and gene
+regulation studies.
+2.2. NA Loading and Delivery with the PAuNCs
+Agarose gel electrophoresis was used to evaluate the loading ca-
+pacity of the PAuNCs for ASO and siRNA1 against the mecA
+gene in MRSA upon their incubation for 20 min (Figures 3a-i
+and S1, Supporting Information). When there are fewer or no
+PAuNCs, a distinct band can be obtained due to the presence
+of free ASO (Lane 1, 2, Figure 3a-ii). As the amount of the
+PAuNCs increased (lanes 3), the corresponding band intensity
+of free ASO decreased signiﬁcantly. This is accompanied by the
+occurrence of a band close to the gel well, attributable to the
+accumulation of the NA/PAuNCs. When the mass ratio of the
+ASO to the PAuNCs was 1:1.4 or smaller, no free ASO was de-
+tected (lanes 4–7), indicating the complete loading of the ASO
+on the PAuNCs. Similarly, the siRNA can be fully loaded by the
+PAuNCs at a mass ratio of 1:2.1 (lane 4, Figure 3a-iii). Fortunately,
+the PAuNCs can further protect the susceptible siRNA against
+degradation. The image shown in Figure S6 (Supporting Infor-
+mation) reveals a high stability of the ASO against DNase degra-
+dation even at high DNase concentrations, consistent with the
+results reported elsewhere.[33] In contrast, RNase A was found to
+be capable of readily degrading the siRNA (Figure S7, Supporting
+Information),[34] while this is not the case for siRNA1/PAuNCs
+(Figure S8, Supporting Information).
+The PAuNCs’ capability of delivering NA into MRSA was in-
+vestigated using ﬂuorescence microscopy. Upon incubation of
+the NA/PAuNCs with MRSA for 1 h, Hoechst 33342 was used to
+stain bacterial cells, resulting in blue emission (Figure 3b-i).[35]
+MRSA emitted red ﬂuorescence upon treatment with the
+ASO/PAuNCs (Figure 3b-ii,iii), which can be attributed to the
+emission of the Cy3-labeled ASO.[36] In contrast, no red ﬂuo-
+rescence could be detected from the bacteria treated with the
+Cy3-labeled ASO alone, highlighting the role of the PAuNCs
+in the internalization of the ASO into bacteria. It is worth not-
+ing that, to ensure the occurrence of the red ﬂuorescence didn’t
+result from the adsorption of the ASO/PAuNCs on the bacte-
+ria, the ASO/PAuNCs were washed oﬀthe MRSA surface with
+0.1% Triton X-100 before ﬂuorescence imaging.[37] Similar re-
+sults were also observed for the siRNA1/PAuNCs-treated MRSA
+(Figure 3b-iv,v). TEM and elemental mapping were employed to
+cross-sectioned ﬁlm of MRSA embedded in epoxy resin, to di-
+rectly visualize the proﬁle of the PAuNCs internalized in MRSA
+(Figure 3c; Figure S9, Supporting Information). The distinct pro-
+ﬁle of the PAuNCs-internalized MRSA once again highlights the
+NA-carrying role of the PAuNCs. In contrast to the nano-delivery
+of NA to plant cells where nanoparticle uptake is not necessary,[38]
+we elucidate for the ﬁrst time the internalization of NA/PAuNCs
+into bacteria, suggesting a unique mechanism of interaction
+between nanoparticle-loaded NA and bacteria cell wall and
+membrane.
+The concentration of the PAuNC carriers is an essential
+factor that aﬀects the eﬃciency of NA-delivery into MRSA
+(Figure 3d-i), which was evaluated using ﬂow cytometry. As
+shown in Figure 3d-ii, the ﬂuorescence intensity of the Cy3-
+labeled ASO underwent a biphasic trend as the PAuNCs concen-
+tration increased. Without the use of the PAuNCs, ﬂuorescence
+was hardly observed from the corresponding MRSA, and the in-
+ternalization of ASO into MRSA was negligible (Figure 3d-ii).
+With increasing concentration of the PAuNCs, the ﬂuorescence
+of the Cy3-labeled ASO becomes stronger and undergoes a mono-
+tonic increase until 25 μg mL−1 of the PAuNCs is applied. The
+ratio of MRSA internalized with the ASO/PAuNCs is as high as
+54.1% but tends to decline with a further increase in the concen-
+tration of the PAuNCs (Figure 3d-iii). The reversion may also be
+ascribed to the inhibited activity of MRSA in the presence of con-
+centrated PAuNCs (50 and 100 μg mL−1) (Figure S5, Supporting
+Information). By following the identical procedure, we obtained
+similar results for the dependence of siRNA1 internalization
+on PAuNC concentration. The ratio of the siRNA-internalized
+MRSA becomes the highest with the use of the 25 μg mL−1 of
+the PAuNCs, which was yet 77.8% (Figure 3d-iv,v).
+The incubation time was optimized for the internalization of
+the NA/PAuNCs into MRSA (Figure 3e-i). Similarly, we observed
+that the ﬂuorescence intensity of the Cy3-labeled ASO shows a
+biphasic trend with the increase in incubation time (Figure 3e-ii).
+After incubation for 30 min, the ratio of the ASO/PAuNCs-
+internalized MRSA is 37.2% (Figure 3e-iii). The ﬂuorescence
+intensity of MRSA becomes the strongest after 1 h of incuba-
+tion, which is consistent with the highest ratio (54.1%) of the
+ASO/PAuNCs-internalized MRSA. As the incubation time in-
+creases further to 2 h and then 4 h, however, the internaliza-
+tion ratio gradually decreases. The results may be rationalized
+by the ﬁxed amount of the ASO/PAuNCs vs the rapidly grow-
+ing number of MRSA in the system. Indeed, the PAuNCs at the
+test concentration (25 μg mL−1) exert a negligible eﬀect on the
+growth of MRSA (Figure S5, Supporting Information). Compa-
+rably, the optimal incubation time and the PAuNC concentration
+for siRNA1 delivery are identical to that for the ASO, which are
+1 h and 25 μg mL−1, respectively (Figure 3e-iv,v). In particular,
+the PAuNCs demonstrated higher eﬃciency (77.8%) for siRNA1
+delivery.
+2.3. Gene Silencing Eﬀects of the NA/PAuNCs
+To examine the function of the NA/PAuNCs in gene regulation,
+the mecA gene in MRSA was chosen as the model target gene.
+The mecA gene encodes penicillin-binding protein 2a, which is
+responsible for bacterial cell wall crosslinking in the face of the
+challenge by 𝛽-lactam antibiotics. Thereby, it can foster the emer-
+gence of bacterial resistance.[39] Real-time quantitative reverse
+transcription-PCR (RT-qPCR) was employed to test the impact
+Small 2025, 21, 2411723
+© 2025 Wiley-VCH GmbH
+2411723 (4 of 12)
+ 16136829, 2025, 13, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202411723 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.small-journal.com
+Small 2025, 21, 2411723
+© 2025 Wiley-VCH GmbH
+2411723 (5 of 12)
+ 16136829, 2025, 13, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202411723 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.small-journal.com
+of the internalized NA/PAuNCs on the transcription of mecA in
+MRSA (Figure 4a-i). As shown in Figure 4a-ii, MRSA treated
+with free ASO and the ASO/PAuNCs indicate decay in the tran-
+script level of the mecA gene by 11.3% and 63.9%, respectively.
+The sharp contrast highlights the role of the PAuNCs in eﬃ-
+cient ASO delivery and target-gene silencing. As a control, the
+gene expression of mecA in MRSA treated with a control DNA
+oligonucleotide loaded by PAuNCs (c-DNA/PAuNCs) remains al-
+most unchanged. It is worth pointing out that siRNA1/PAuNCs
+aﬀord a high capability of target-gene silencing and a silencing
+eﬃciency of up to 69.7% was achieved (Figure 4a-ii), probably a
+consequence of the higher MRSA-internalization eﬃciency ratio
+of siRNA1/PAuNCs.
+The phenotype of MRSA was assessed by measuring changes
+in the MIC of oxacillin upon mecA gene regulation with the
+NA/PAuNCs (Figure 4b-i). The MIC of oxacillin against MRSA
+was found to be reduced to 8 μg mL−1 when treated with the
+ASO/PAuNCs, half of the MIC (16 μg mL−1) observed for the
+control group (Figure 4b-ii). The ﬁndings highlight the eﬀec-
+tive knockdown of the mecA gene by the ASO/PAuNCs, which
+boosts the susceptibility of MRSA to oxacillin. When treated
+with siRNA1/PAuNCs, interestingly, the MIC of oxacillin against
+MRSA was decreased to 4 μg mL−1 (Figure 4b-iii), consistent
+with the enhanced knockdown eﬃciency of siRNA1 compared
+to the ASO. To further evaluate the gene regulatory eﬀects of
+the NA/PAuNCs, the spread plate method was employed, al-
+lowing for visual inspection of MRSA growth. As shown in
+Figure 4c and Figure S10 (Supporting Information), MRSA
+growth in the group treated with a mixture of oxacillin and the
+ASO/PAuNCs was signiﬁcantly inhibited compared with control
+group (treated with water), and the group treated with oxacillin,
+the PAuNCs, the mixture of oxacillin and the PAuNCs, or a
+mixture of oxacillin and the ASO (Figure 4c-i,ii; Figure S10i–iii,
+Supporting Information). Therefore, the strong inhibition of
+MRSA growth shown in Figure 4c-iii can be ascribed to the sup-
+pression of the mecA gene in MRSA by the PAuNCs-delivered
+ASO. Drastic growth inhibition was also observed for the group
+treated with a mixture of oxacillin and the siRNA1/PAuNCs
+(Figure 4c-iv,v; Figure S10iv, Supporting Information), which
+agrees well with the measurements shown in Figure 4b-iii.
+These results further support the strong gene regulatory ca-
+pacity of NA/PAuNCs in enhancing antibiotic susceptibility in
+MRSA.
+2.4. Extension of the Gene Silencing Approach to Gram-Negative
+Bacteria
+The eﬃcient gene silencing in MRSA further encouraged us to
+extend the application of the present approach to Gram-negative
+bacteria, and E. coli was used to serve as the model. We ob-
+served that in the presence of the PAuNCs, the permeability of
+the E. coli cytoplasmic membrane also underwent an increase
+(Figure S11, Supporting Information). The measurements of in-
+ternalized PAuNCs and the corresponding bacterial activity con-
+ﬁrmed the successful uptake of PAuNCs by E. coli cells, without
+impairing bacterial viability (Figures S12,S13, Supporting Infor-
+mation). The gene of ligA encoding DNA ligase was chosen for
+testing gene silencing in E. coli. Due to its essential role in the cat-
+alytic formation of the phosphodiester bonds in DNA, the tran-
+scriptional level of ligA can be directly reﬂected by phenotypic
+change with respect to bacterial growth and reproduction.[40] The
+siRNA sequence (siRNA2) designed for silencing the ligA gene
+is shown in Table S1 (Supporting Information). Electrophoretic
+results conﬁrm the eﬃcient loading of siRNA2 by the PAuNCs
+(Figure S14, Supporting Information); while ﬂuorescence mi-
+croscopy reveals the internalization of siRNA2/PAuNCs into E.
+coli (Figure 5a). Elemental mapping images directly validate
+the capability of the PAuNCs in carrying siRNA2 to the E. coli
+(Figure 5b; Figure S15, Supporting Information).
+Flow cytometry measurements reveal the optimized concen-
+tration of the PAuNCs for siRNA2 and internalization time to
+be 10 μg mL−1 and 2 h, respectively (Figure 5c,d). The re-
+sults of experiments conducted under the conditions show that
+the transcript level in the ligA gene of the E. coli treated with
+siRNA2/PAuNCs decreases by 65.5% compared with the control
+group, as assessed using RT-qPCR (Figure 5e). To characterize
+the phenotype of the treated E. coli, PI was introduced to label
+dead bacterial cells for ﬂow cytometry analysis (Figure 5f-i).[41]
+The considerable mortality ratio (42.9%) veriﬁes the eﬃcient si-
+lencing of the ligA gene (Figure 5f-ii).
+To visualize gene regulation by the present approach using the
+naked eye, we used the pilQ gene of P. aeruginosa as the target for
+gene silencing, which encodes a protein implicated in type IV
+pili formation that promotes twitching motility.[42] Similarly, the
+transcription level of the pilQ gene in P. aeruginosa treated with
+siRNA3/PAuNCs is noticeably low compared with that in the con-
+trol group (Figure 5g). The results are consistent with the much
+Figure 3. Optimization of NA-loading and delivery eﬃciencies of the PAuNCs. a) The loading capacity of the PAuNCs for NA. The scheme (i) shows
+the NA-loading on the PAuNCs; Agarose gel (1%) electrophoresis is used to validate the loading of ASO (400 ng) (ii) or siRNA1 (200 ng) (iii) onto
+the PAuNCs at diﬀerent mass ratios between ASO/siRNA1 and the PAuNCs. b) Internalization of the NA/PAuNCs into MRSA. Scheme (i) shows
+the procedure of internalization of the NA/PAuNCs and Hoechst 33342 dye into MRSA. The ﬂuorescence images of MRSA treated with the ASO (ii),
+the ASO/PAuNCs (iii), siRNA1 (iv), and siRNA1/PAuNCs (v) for 1 h and then stained with Hoechst 33342 dye for 20 min are shown. Note Hoechst
+33342 emits blue ﬂuorescence under the excitation wavelength of 353 nm; The Cy3-labeled NA emits red ﬂuorescence under the excitation wavelength
+of 550 nm. Colocalized areas of the Hoechst 33342 channel and Cy3 channel are rendered in pink. c) TEM imaging and elemental mapping of cross-
+sectioned MRSA. The images in (i) and (ii) show the typical TEM image and the N and Au elemental maps for the MRSA before (i) and after (ii) treatment
+with the ASO/PAuNCs, respectively. d) Optimization of the concentration of the PAuNCs. Scheme (i) shows the procedure of NA-internalization into
+MRSA using diﬀerent amounts of the PAuNCs. (ii, iv) Flow cytometry histograms of the internalization ratio for MRSA after incubation of MRSA for
+1 h with diﬀerent amounts of the PAuNCs loaded with the ASO (ii) and siRNA1 (iv). (iii, v) Histograms depicting the corresponding ASO/PAuNCs- (iii)
+and siRNA1/PAuNCs (v)-internalization ratio of MRSA with diﬀerent PAuNC amounts. e) Optimization of incubation time. The scheme (i) shows the
+NA-internalization into MRSA with diﬀerent incubation times. (ii, iv) Flow cytometry histograms of the internalization ratio for MRSA after incubation
+of MRSA with the ASO/PAuNCs (ii) and siRNA1/PAuNCs (iv) for diﬀerent times. (iii, v) Histograms depicting the corresponding ASO/PAuNCs (iii) and
+siRNA1/PAuNCs (v)-internalization ratio of MRSA with diﬀerent incubation times. Note the error bars in the ﬁgures represent the standard deviations
+from three independent measurements.
+Small 2025, 21, 2411723
+© 2025 Wiley-VCH GmbH
+2411723 (6 of 12)
+ 16136829, 2025, 13, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202411723 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.small-journal.com
+Figure 4. Transcription level test of mecA gene in MRSA and phenotypic characterization. a) Transcription level test for mecA gene in MRSA. Scheme
+(i) shows the procedure for measuring RT-qPCR of the mecA gene of MRSA internalized with the NA/PAuNCs. Histogram (ii) shows the transcription
+levels of the mecA gene after treatment of MRSA for 1 h with water (Control), the PAuNCs, the ASO, the cDNA/PAuNCs, or the ASO/PAuNC. Histogram
+(iii) shows the transcription levels of the mecA gene after treatment of MRSA for 1 h with water (Control), the PAuNCs, siRNA1, c-siRNA/PAuNCs, or
+siRNA1/PAuNCs. b) Phenotypic changes of MRSA induced by NA/PAuNCs-mediated silencing of the mecA gene. Scheme (i) shows the state of MRSA
+after treatment with oxacillin and mixtures of oxacillin and NA/PAuNCs. Histograms (ii) show the growth of MRSA after 10 h-treatment with oxacillin
+at diﬀerent concentrations, and mixtures of the ASO/PAuNCs with oxacillin at diﬀerent concentrations. Histogram (iii) represents the parallel results
+that involve the use of siRNA1/PAuNCs instead of the ASO/PAuNCs. c) Digital photographs showing the growth of MRSA on LB agar upon diﬀerent
+treatments: (i) water (Control), (ii) oxacillin (8 μg mL−1), (iii) a mixture of ASO/PAuNCs and oxacillin (8 μg mL−1), (iv) oxacillin (4 μg mL−1), and
+(v) a mixture of siRNA1/PAuNCs and oxacillin (4 μg mL−1). The error bars in the ﬁgures represent the standard deviations from three independent
+measurements.
+smaller spreading colony morphology of the treated P. aeruginosa
+characteristic of weak twitching motility (Figure 5h).[43]
+Inspired by the eﬃcient gene knockdown, we became in-
+terested in the mechanism of gene suppression in the bac-
+teria by the siRNA/PAuNCs. Cy3-siRNA1/PAuNCs and Cy3-
+siRNA2/PAuNCs were subjected to react with MRSA and the E.
+coli lysates, respectively. We could observe the release of the NA
+from the PAuNCs upon reaction with the bacterial lysates, irre-
+spective of whether the bacteria were Gram-positive or Gram-
+negative (Figure S16, Supporting Information). The discharge
+of the cargo is attributable to the replacement of the nucleic
+acids by thiolates (e.g., glutathione) on the PAuNCs in the bacte-
+ria, which is distinct from the non-internalization cargo delivery
+mode for mature plant cells.[38] The results also rationalize the
+subsequent pairing of the siRNA with the target mRNA inside
+the bacteria after being carried into the bacteria by the PAuNCs,
+which is followed by the cleavage of the mRNA under the action
+of nuclease and thereby inhibiting the translation of the mRNA
+(Figure 5i).[44,45] Combined with the high biocompatibility of the
+PAuNCs (Figure S17, Supporting Information), this approach pi-
+oneers a next-generation delivery system for microorganisms,
+with the potential to transform bacterial gene regulation into a
+versatile and scalable solution for real-world disease prevention
+and therapy.
+3. Conclusion
+Despite the pressing need to develop a convenient yet practical
+means to deliver NAs to bacteria for gene regulation, the an-
+tibacterial activity of nanomaterials has discouraged the use of
+nanostructures as NA carriers. In this work, we have successfully
+demonstrated the potential of PAuNCs as the next-generation
+Small 2025, 21, 2411723
+© 2025 Wiley-VCH GmbH
+2411723 (7 of 12)
+ 16136829, 2025, 13, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202411723 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.small-journal.com
+Small 2025, 21, 2411723
+© 2025 Wiley-VCH GmbH
+2411723 (8 of 12)
+ 16136829, 2025, 13, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202411723 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.small-journal.com
+cargo delivery platform for convenient gene regulation in mi-
+croorganisms. Our ﬁndings showcase the remarkable ability of
+PAuNCs to facilitate targeted gene suppression in both Gram-
+positive and Gram-negative bacteria, which hinges on the rapid
+internalization of the NA/PAuNC complexes and the precise de-
+sign of the siRNA and ASOs. This work revolutionizes the ﬁeld of
+bacterial gene regulation and has signiﬁcant implications across
+three key dimensions. First, we have, for the ﬁrst time, demon-
+strated the transportation of DNA and RNA by tiny nanoclusters
+to bacteria cells, as well as their release within bacterial cells. This
+contrasts with the mechanism seen in plant cells, where nanopar-
+ticles remain embedded in the cell wall without penetrating the
+cytoplasm.[38] Second, compared to the established methods in-
+cluding electroporation and Ca2+-based chemical transformation
+that are limited to laboratory settings, this approach provides a
+simple methodology for delivering NAs into bacteria without re-
+quiring specialized expertise while preserving minimal eﬀect on
+bacterial growth activity. This also addresses long-standing con-
+cerns regarding the internalization-induced antibacterial proper-
+ties of nanoparticles.[46–48] Third, given the controllable atomic
+number, surface charge, and composition of nanoclusters, we
+suggest the further development of delivery tools for improved
+biomolecular delivery and eﬃcient gene regulation, promising
+real-world applications in disease treatment and genetic engi-
+neering. By knocking down resistance genes in drug-resistant
+bacteria, such as MRSA, for instance, this approach could oﬀer a
+new method to combat multi-drug-resistant pathogens with ex-
+isting antibiotics. The current approach can also be employed to
+develop high-throughput gene screening methods by delivering
+various NAs to investigate gene functions, thereby signiﬁcantly
+enhancing the eﬃciency of gene screening. This study represents
+a signiﬁcant step forward in bacterial gene regulation and sets the
+stage for future innovations in molecular delivery systems with
+broad applications.
+4. Experimental Section
+Synthesis and PEI Modiﬁcation of the AuNCs:
+The AuNCs were pre-
+pared using a simple hydrothermal method.[49] First, 1.5 mL of a GSH
+(100 mM) was added to the mixture of a HAuCl4 solution (20 mM, 5.0 mL)
+and 43.5 mL of water, accompanied by a color change of the mixture from
+light yellow to colorless. The system was then subjected to a water bath at
+80 °C under stirring (500 rpm), and the color of the mixture changed to
+dark brown in minutes. The mixture was continuously stirred at 80°C and
+500 rpm in the dark for 24 h, resulting in a yellow solution. Then, the yellow
+solution was dialyzed for 48 h using a dialysis bag (3.5 KD) to remove the
+unreacted species. Finally, the ﬁltrate in the dialysis bag was lyophilized
+to earn powder of the AuNCs. The AuNCs were stored at 4°C in the dark.
+For PEI modiﬁcation, the AuNCs (10 mg) were dissolved in 10 mL of wa-
+ter, followed by the addition of PEI (30 mg mL−1, 2 mL). The mixture was
+stirred for 5 h at room temperature. The resultant PAuNCs were stored in
+the dark in a 4°C refrigerator for future use.
+Strains
+and
+Growth
+Conditions:
+Gram-positive
+bacteria
+(MRSA
+ATCC43300) and Gram-negative bacteria (E. coli MG1655 and P. aerug-
+inosa PAO1) were grown in LB medium at 37°C. The concentration of
+a bacterial cell was determined by measuring the optical density of the
+corresponding suspension at 600 nm.
+Fluorescence Localization of the ASO and siRNA:
+Initially, the Cy3-ASO
+was incubated with the PAuNCs at a mass ratio of 1:8.8 for 20 min, and
+the mixture (100 μL) was subsequently added with a log-phase MRSA sus-
+pension (100 μL, 106 CFU mL−1), followed by incubation in a shaking in-
+cubator (37°C, 220 rpm) for 1 h. The ﬁnal concentration of the Cy3-ASO
+in the system (200 μL) was 500 nM and the ﬁnal concentration of the
+PAuNCs was 25 μg mL−1. Then, the bacterial suspension was subjected
+to three centrifugation/washing cycles with PBS containing 0.1% Triton X-
+100 and was then resuspended in PBS (100 μL). Afterward, Hoechst 33342
+dye (100 μL, 10 μg mL−1) was added to the bacteria and was incubated
+(37°C, 220 rpm) for 20 min in the dark, followed by washing the bacteria
+three times with PBS. Smears were prepared and observed using a ﬂuo-
+rescence microscope. Experiments conducted with the free Cy3-ASO were
+used as the control. The localization of Cy3-siRNA1 was performed with
+the identical procedure, in which a siRNA1-to-PAuNCs mass ratio of 1:3.7
+was adopted. For E. coli, the experimental procedure was followed, except
+for the use of 50 μg mL−1 of the PAuNCs and a siRNA2-to-PAuNCs mass
+ratio of 1: 7.5 for incubation with the E. coli for 2 h.
+Transmission Electron Microscope Characterizations of the Bacteria:
+The
+siRNA1/PAuNCs (100 μL) were mixed with a log-phase MRSA suspen-
+sion (900 μL, 106 CFU mL−1) and incubated in a shaking incubator
+(37°C, 220 rpm) for 1 h. The ﬁnal concentration of siRNA1 in the sys-
+tem (1 mL) was 500 nM and the ﬁnal concentration of the PAuNCs was
+25 μg mL−1. Then, the bacterial suspension was subjected to three cen-
+trifugation/washing cycles with PBS containing 0.1% Triton X-100 and
+was then resuspended in glutaraldehyde (200 μL) for ﬁxation. The bacte-
+rial suspension was then centrifuged and washed three times with phos-
+phate buﬀer (0.1 M, pH 7.4) before agarose (1%) pre-embedding. After-
+ward, the agarose blocks with samples avoid light post-ﬁxed with 1% os-
+mium tetroxide in phosphate buﬀer for 2 h at room temperature. After
+Figure 5. Targeted gene silencing in Gram-negative bacteria through internalization of siRNA/PAuNCs. a) Internalization of siRNA2/PAuNCs into the
+E. coli. Scheme (i) shows the procedure for internalization of siRNA2/PAuNCs and Hoechst 33342 into the E. coli. The ﬂuorescence images of the E. coli
+treated with siRNA2 (ii), and siRNA2/PAuNCs (iii) for 2 h are shown. b) TEM imaging and elemental mapping of cross-sectioned E. coli. The scheme
+(i) depicts the preparation of the cross-sectioned ﬁlm of an epoxy resin-embedded E. coli. The images in (ii) and (iii) show the typical TEM image and
+the N- and Au-elemental maps for the E. coli before (ii) and after (iii) treatment of siRNA2/PAuNCs, respectively. c) Optimization of the concentration
+of the PAuNCs. Scheme (i) depicts the procedure of delivering siRNA2 into the E. coli using diﬀerent amounts of the PAuNCs. The histogram (ii) shows
+the ratio of the E. coli internalized with siRNA2/PAuNCs for 2 h with diﬀerent amounts of the PAuNCs. d) Optimization of internalization time. Scheme
+(i) depicts the eﬀect of time on siRNA2 internalization into the E. coli. Histogram (ii) shows the ratio of the E. coli internalized with siRNA2/PAuNCs
+at diﬀerent times. e) Histogram of the corresponding transcription level of ligA gene after treatment of the E. coli for 2 h with water (Control), siRNA2,
+c-siRNA/PAuNCs, or siRNA2/PAuNCs. f) Phenotypic changes of the E. coli induced by siRNA2/PAuNCs-mediated silencing of ligA gene. Flow cytometry
+histogram (i) depicts the dead E. coli cells after treatment with water (Control), siRNA2, c-siRNA/PAuNCs, or siRNA2/PAuNCs for 2 h and then PI for
+20 min. Note PI emits red ﬂuorescence under the excitation wavelength of 488 nm. Histogram (ii) depicts the corresponding bacterial mortality ratio
+of the E. coli incubated with water (Control), siRNA2, c-siRNA/PAuNCs, or siRNA2/PAuNCs. g) Histogram of the transcription levels of pilQ gene after
+treatment of the P. aeruginosa for 2 h with water (Control), siRNA3, c-siRNA/PAuNCs, or siRNA3/PAuNCs, h) Phenotypic changes of the P. aeruginosa
+caused by siRNA3/PAuNCs-mediated silencing of pilQ gene. The images (i) indicate the corresponding twitching motility zones stained with crystal violet
+after treating P. aeruginosa with water (Control), siRNA3, c-siRNA/PAuNCs, or siRNA3/PAuNCs. Histogram (ii) depicts the corresponding diameters of
+the twitching motility zones of the P. aeruginosa incubated with water (Control), siRNA3, c-siRNA/PAuNCs, or siRNA3/PAuNCs. i) Schematic illustration
+of the mechanism of NA/PAuNCs-mediated target gene silencing in bacteria. Note that the error bars in the ﬁgures represent the standard deviations
+from three independent tests.
+Small 2025, 21, 2411723
+© 2025 Wiley-VCH GmbH
+2411723 (9 of 12)
+ 16136829, 2025, 13, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202411723 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.small-journal.com
+the removal of osmium tetroxide, the samples were rinsed with phos-
+phate buﬀer three times. Subsequently, the samples were dehydrated with
+acetone and transferred to epoxy resin for embedding. Finally, each of the
+epoxy resin-embedded samples was cut into 80-nm-thin cross-sectioned
+ﬁlms using a Leica EM UC7 microtome and then transferred onto a TEM
+grid for TEM imaging and elemental mapping. Bacteria untreated with
+NA/PAuNCs were used to serve as the control. The identical procedure
+was used for TEM observation of the internalized siRNA2/PAuNCs in E.
+coli, except for the use of 10 μg mL−1 of the PAuNCs for incubation with
+the E. coli for 2 h.
+Optimization of Internalization Conditions for the ASO and siRNA:
+To
+optimize the concentration of the PAuNCs, the Cy3-ASO (20 μM, 12.5 μL)
+was incubated with diﬀerent amounts of the PAuNCs for 20 min. MRAS
+at a density of 106 CFU mL−1 in an LB liquid medium (437.5 μL) was cul-
+tured with the mixture (62.5 μL) at 37°C for 1 h. The ﬁnal concentration
+of the Cy3-ASO was 500 nM, and the ﬁnal concentration of the PAuNCs
+was varied at 0, 12.5, 25, 50, and 100 μg mL−1. After incubation, the bacte-
+ria were centrifuged (5000 rpm, 5 min) and washed three times with PBS
+containing 0.1% Triton X-100 to remove the bacterial surface adsorbed
+complex of the Cy3-ASO/PAuNCs, and ﬁnally resuspended in PBS. The
+delivered amount of Cy3-ASO to MRSA was assessed using ﬂow cytom-
+etry. The identical procedure was applied to optimization for the siRNA1.
+For siRNA2 internalization into E. coli, the procedure was also applied, ex-
+cept for the varied ﬁnal concentration (0, 5, 10, 50, and 100 μg mL−1) of
+the PAuNCs used for incubation with the E. coli for 2 h.
+The Cy3-ASO (20 μM, 12.5 μL) was incubated with the PAuNCs
+(2 μg μL−1, 12.5 μL) for 20 min. To optimize incubation time, MRAS at
+a density of 106 CFU mL−1 in an LB liquid medium (475 μL) was cultured
+with the mixture (25 μL) at 37°C for diﬀerent durations (0.5, 1, 2, and 4 h).
+The ﬁnal concentration of the Cy3-ASO was 500 nM, and the ﬁnal concen-
+tration of the PAuNCs was set to 50 μg mL−1. After incubation, the bacte-
+ria were centrifuged (5000 rpm, 5 min) and washed three times with PBS
+containing 0.1% Triton X-100 to remove the bacterial cell surface-adsorbed
+complex of the Cy3-ASO/PAuNCs, and ﬁnally resuspended in PBS. Then,
+the delivered amount of the Cy3-ASO to MRSA was assessed using ﬂow
+cytometry. The identical procedure was applied to the optimization of the
+internalization of siRNA1. For siRNA2 internalization into E. coli, the identi-
+cal experimental procedure was followed, except for the use of 10 μg mL−1
+of the PAuNCs for diﬀerent incubation times (0, 1, 2, and 4 h) with the E.
+coli.
+Real-Time Quantitative Reverse Transcription-PCR (RT-qPCR):
+After in-
+cubation of the ASO (25 μL, 20 μM) with the PAuNCs (25 μL, 1.0 mg mL−1)
+for 20 min, the mixture was added to an MRSA suspension (950 μL,
+106 CFU mL−1). In the system (1 mL), the concentrations of the ASO
+and the PAuNCs were 500 nM and 25 μg mL−1, respectively. The mixture
+was incubated at 37°C for 1 h. In parallel, water (50 μL), the ASO (50 μL,
+10 μM), the PAuNCs (50 μL, 0.5 mg mL−1), and the cDNA loaded by the
+PAuNCs (c-DNA/PAuNCs, 50 μL) were separately incubated with MRSA
+suspensions for at 37°C 1 h, which were used to serve as the controls.
+Subsequently, each of the systems was centrifuged (5000 rpm, 5 min) and
+washed with PBS containing 0.1% Triton X-100, and ﬁnally resuspended in
+PBS (50 μL). To the bacterial suspension, lysozyme (50 μL, 30 mg mL−1)
+was added, followed by incubation for 1 h at 37°C. Total RNA was extracted
+using a Trizol reagent (1.0 mL). HiScript III All-in-one RT SuperMix Per-
+fect for qPCR was then employed to reversely transcribe the total RNA
+to cDNA. Finally, the upstream and downstream primers were added, and
+ampliﬁcation was carried out using ChamQ SYBR Colour qPCR Master Mix
+(Low ROX Premixed). The primers used in this study are listed in Table S1
+(Supporting Information). The values of Ct were measured using qPCR.
+By using 16S rRNA1 (Table S1, Supporting Information) as the internal
+reference gene, the relative expression of the target gene was calculated
+using the 2−ΔΔCt method.[50] The identical procedure was applied to the
+experiments for assessing gene expression regulated by siRNA1/PAuNCs.
+The assessments of target gene expression for E. coli and P. aeruginosa
+followed the identical procedure, except for the use of 10 μg mL−1 of the
+PAuNCs for incubation with the E. coli and the P. aeruginosa for 2 h.
+Phenotype Assessment for the Gene Suppression Bacteria by NA/PAuNCs:
+The silencing eﬀect of NA/PAuNCs on the mecA gene was explored by
+measuring the changes in the minimum inhibitory concentration (MIC)
+of antibiotics for MRSA treated with NA/PAuNCs. A log-phase MRSA sus-
+pension (90 μL, 106 CFU mL−1) was mixed with the ASO/PAuNCs (10 μL)
+in a 96-well plate. Then, an oxacillin solution (100 μL) at a speciﬁc concen-
+tration was added and incubated in a shaker (37°C, 220 rpm) for 10 h. In
+the system (200 μL), the ﬁnal concentrations of the ASO and the PAuNCs
+were 500 nM and 25 μg mL−1, respectively. The ﬁnal concentration of
+oxacillin was varied at 0, 0.5, 1, 2, 4, 8, 16, 32, 64, and 128 μg mL−1. Fi-
+nally, the optical density of each of the mixtures at 600 nm was measured.
+At each of the oxacillin concentrations, a mixture of MRSA suspension and
+antibiotics without the addition of the ASO/PAuNCs was used to serve as
+the control for comparison. The same procedure was also applied to the
+experiments with siRNA1.
+The antibiotic resistance of MRSA treated with NA/PAuNCs was fur-
+ther assessed using the spread plate method. MRSA suspensions (900 μL,
+106 CFU mL−1) were mixed well with water (100 μL), the PAuNCs (100 μL,
+250 μg mL−1), oxacillin (100 μL, 80 μg mL−1), the mixture of the PAuNCs
+and oxacillin (100 μL, 250 μg mL−1 of the PAuNCs, 40 μg mL−1 of oxacillin),
+the mixture of the ASO and oxacillin (100 μL, 5000 μg mL−1 of the ASO,
+80 μg mL−1 of oxacillin), or the mixture of the ASO/PAuNCs and oxacillin
+(100 μL, 5000 nM of the ASO, 250 μg mL−1 of the PAuNCs, 80 μg mL−1 of
+oxacillin) and incubated in a shaker (37°C, 220 rpm) for 2 h. Subsequently,
+100 μL of aliquot from each mixture was spread onto LB agar plates and
+cultured at 37°C for 24 h. Colony growth was observed and photographed.
+The same procedure was also followed for the experiments with siRNA1,
+with oxacillin at a concentration of 40 μg mL−1.
+The silencing eﬀect of siRNA2/PAuNCs on the ligA gene was analyzed
+by measuring the mortality of the E. coli treated with siRNA2/PAuNCs. The
+siRNA2/PAuNCs (100 μL) were mixed with a log-phase E. coli suspension
+(900 μL, 106 CFU mL−1) in a centrifuge tube and incubated in a shaker
+(37°C, 220 rpm) for 2 h. In the system (1.0 mL), the ﬁnal concentrations
+of siRNA2 and the PAuNCs were 500 nM and 10 μg mL−1, respectively.
+In parallel, water (100 μL), siRNA2 (100 μL, 5 μM), and c-siRNA loading
+with the PAuNCs (c-siRNA/PAuNCs, 100 μL) were separately incubated
+with the E. coli suspensions at 37°C for 2 h, which were used to serve as
+the controls. After incubation, the bacteria were centrifuged (5000 rpm,
+5 min) and washed three times with PBS. Afterward, propidium iodide
+(100 μL, 9 μ) was added to the bacteria precipitate, followed by incubation
+in a shaker (37°C, 220 rpm) for 25 min in the dark. Finally, the bacteria
+were washed three times with PBS and resuspended in PBS. The mortality
+of the E. coli was assessed using ﬂow cytometry.
+The silencing eﬀect of siRNA3/PAuNCs on the pilQ gene was investi-
+gated by assaying the twitching motility of the P. aeruginosa treated with
+siRNA3/PAuNCs. The siRNA3/PAuNCs (20 μL) were mixed with a log-
+phase P. aeruginosa suspension (180 μL, 106 CFU mL−1) in a 96-well plate
+and incubated in a shaker (37°C, 220 rpm) for 2 h. In the system (200 μL),
+the ﬁnal concentrations of siRNA3 and the PAuNCs were 500 nM and
+10 μg mL−1, respectively, with a siRNA3-to-PAuNCs mass ratio of 1: 3.8.
+In parallel, water (20 μL), siRNA3 (20 μL, 5 μM), and c-siRNA loaded by
+the PAuNCs (c-siRNA/PAuNCs, 20 μL) were separately incubated with the
+P. aeruginosa suspensions for at 37°C 2 h, which were used to serve as
+the controls. After incubation, the bacterial suspension (5 μL) was aspi-
+rated using a pipette, and the pipette tip was vertically stabbed into the
+bottom center of the LB agar plate for inoculation. The P. aeruginosa was
+then incubated at 37°C for 24 h. Afterward, the LB agar medium was re-
+moved and the bacteria at the bottom of the plates were stained with crys-
+tal violet solution (2%) for 15 min. Finally, the staining solution was re-
+moved and washed three times with PBS. After drying, the diameter of
+the motions was measured with a vernier caliper and photographed for
+recording.
+Statistical Analysis:
+The results presented in this study were derived
+from three corresponding independent experiments. The error bars in
+the ﬁgures represent the standard deviations observed across these inde-
+pendent tests. Statistical analysis was performed using a one-way anal-
+ysis of variance, followed by Tukey’s multiple comparison test using
+GraphPad Prism software. The P value was used to identify the statis-
+tically signiﬁcant diﬀerence: ns: not signiﬁcant, *p < 0.05, **p < 0.01,
+***p < 0.001.
+Small 2025, 21, 2411723
+© 2025 Wiley-VCH GmbH
+2411723 (10 of 12)
+ 16136829, 2025, 13, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202411723 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.small-journal.com
+Supporting Information
+Supporting Information is available from the Wiley Online Library or from
+the author.
+Acknowledgements
+This work was supported by the National Natural Science Foundation of
+China (No. 32373172). A part of this work was performed under the Coop-
+erative Research Program of “The Network Joint Research Center for Ma-
+terials and Devices” (20241023). G. Wang also acknowledged the ﬁnancial
+support by the Youth Cross-innovation Research Program of CFSE, OUC
+(2024101).
+Conﬂict of Interest
+The authors declare no conﬂict of interest.
+Author Contributions
+Q.Z., X.L., and L.P. contributed equally to this work. G.W. and G.X. con-
+ceived and designed the research. Q.Z., X.L., and L.P. conducted the ex-
+periments. G.W. and Q.Z. wrote the manuscript. All authors discussed the
+results and commented on the manuscript.
+Data Availability Statement
+The data that support the ﬁndings of this study are available from the
+corresponding author upon reasonable request.
+Keywords
+Au nanocluster, drug resistance, gene regulation, nucleic acid delivery,
+siRNA
+Received: December 5, 2024
+Revised: February 6, 2025
+Published online: February 24, 2025
+[1] A. K. Sinha, M. F. Laursen, T. R. Licht, Trends Microbiol. https://doi.
+org/10.1016/j.tim.2024.07.005.
+[2] J. S. Cho, D. Yang, C. P. S. Prabowo, M. R. Ghiﬀary, T. Han, K. R. Choi,
+C. W. Moon, H. Zhou, J. Y. Ryu, H. U. Kim, S. Y. Lee, Nat. Commun.
+2023, 14, 2359.
+[3] J. A. Kulkarni, D. Witzigmann, S. B. Thomson, S. Chen, B. R. Leavitt,
+P. R. Cullis, R. van der Meel, Nat. Nanotechnol. 2021, 16, 630.
+[4] J. K. Watts, D. R. Corey, J. Pathol. 2012, 226, 365.
+[5] K. Yanagihara, M. Tashiro, Y. Fukuda, H. Ohno, Y. Higashiyama, Y.
+Miyazaki, Y. Hirakata, K. Tomono, Y. Mizuta, K. Tsukamoto, S. Kohno,
+J. Antimicrob. Chemother. 2005, 57, 122.
+[6] V. Jadhav, A. Vaishnaw, K. Fitzgerald, M. A. Maier, Nat. Biotechnol.
+2024, 42, 394.
+[7] G. Kher, S. Trehan, A. Misra, in Challenges in Delivery of Therapeu-
+tic Genomics and Proteomics, (Ed.: A. Misra), Elsevier, London 2011,
+325–386.
+[8] W. Pajerski, D. Ochonska, M. Brzychczy-Wloch, P. Indyka, M. Jarosz,
+M. Golda-Cepa, Z. Sojka, A. Kotarba, J. Nanopart. Res. 2019, 21, 186.
+[9] M. J. Wilhelm, M. Shariﬁan Gh, T. Wu, Y. Li, C.-M. Chang, J. Ma, H.-L.
+Dai, Biophys. J. 2021, 120, 2461.
+[10] J. Sun, S. T. Rutherford, T. J. Silhavy, K. C. Huang, Nat. Rev. Microbiol.
+2022, 20, 236.
+[11] T. J. Silhavy, D. Kahne, S. Walker, Cold Spring Harbor Perspect. Biol.
+2010, 2, a000414.
+[12] Q. Tu, J. Yin, J. Fu, J. Herrmann, Y. Li, Y. Yin, A. F. Stewart, R. Müller,
+Y. Zhang, Sci. Rep. 2016, 6, 24648.
+[13] K. Z. Masoodi, S. M. Lone, R. S. Rasool, in Advanced Methods in
+Molecular Biology and Biotechnology, (Eds.: K. Z. Masoodi, S. M. Lone,
+R. S. Rasool), Academic Press, Cambridge, MA, USA 2021, 57–61.
+[14] A. Asif, H. Mohsin, R. Tanvir, Y. Rehman, Front. Microbiol. 2017, 8,
+2169.
+[15] W. Alshaer, H. Zureigat, A. Al Karaki, A. Al-Kadash, L. Gharaibeh, M.
+m. M. Hatmal, A. A. A. Aljabali, A. Awidi, Eur. J. Pharmacol. 2021, 905,
+174178.
+[16] Q. Li, M. Dong, P. Chen, Biorg. Med. Chem. 2024, 110, 117825.
+[17] Y. Luan, S. Liu, M. Pihl, H. C. van der Mei, J. Liu, F. Hizal, C.-H. Choi,
+H. Chen, Y. Ren, H. J. Busscher, Curr. Opin. Colloid Interface Sci. 2018,
+38, 170.
+[18] A. Elbourne, J. Chapman, A. Gelmi, D. Cozzolino, R. J. Crawford, V. K.
+Truong, J. Colloid Interface Sci. 2019, 546, 192.
+[19] L. Zhang, X. Ma, G. Wang, X. Liang, H. Mitomo, A. Pike, A. Houlton,
+K. Ijiro, Nano Today 2021, 39, 101154.
+[20] L. Kong, L. Wang, Y. Shi, L. Peng, X. Liang, G. Wang, H. Mitomo, T.
+Takarada, K. Ijiro, M. Maeda, ACS Appl. Nano Mater. 2022, 5, 10321.
+[21] B. B. Mendes, J. Conniot, A. Avital, D. Yao, X. Jiang, X. Zhou, N. Sharf-
+Pauker, Y. Xiao, O. Adir, H. Liang, J. Shi, A. Schroeder, J. Conde, Nat.
+Rev. Methods Primers 2022, 2, 24.
+[22] Q. Zhang, J. Fu, H. Lin, G. Xuan, W. Zhang, L. Chen, G. Wang, Biotech-
+nol. J. 2024, 19, 2400156.
+[23] H. Yin, Q. Zhang, S. Hu, X. Sun, L. Peng, H. Zhao, Q. Kong, H.
+Mitomo, Y. Matsuo, K. Ijiro, G. Wang, ACS Appl. Nano Mater. 2024,
+7, 16998.
+[24] K. Zheng, M. I. Setyawati, D. T. Leong, J. Xie, Bioact. Mater. 2021, 6,
+941.
+[25] D. P. Linklater, V. A. Baulin, S. Juodkazis, R. J. Crawford, P. Stoodley,
+E. P. Ivanova, Nat. Rev. Microbiol. 2021, 19, 8.
+[26] W. Li, E. S. Thian, M. Wang, Z. Wang, L. Ren, Adv. Sci. 2021, 8,
+2100368.
+[27] P. Huang, Q. Jiang, P. Yu, L. Yang, L. Mao, ACS Appl. Mater. Interfaces
+2013, 5, 5239.
+[28] B. Nieto-Ortega, T. Bürgi, Acc. Chem. Res. 2018, 51, 2811.
+[29] S. Zhang, C. Zhang, X. Shao, R. Guan, Y. Hu, K. Zhang, W. Liu, M.
+Hong, Q. Yue, RSC Adv. 2021, 11, 17283.
+[30] H. J. Jian, R. S. Wu, T. Y. Lin, Y. J. Li, H. J. Lin, S. G. Harroun, J. Y. Lai,
+C. C. Huang, ACS Nano 2017, 11, 6703.
+[31] T. Pfeiﬀer, A. De Nicola, C. Montis, F. Carlà, N. F. A. van der Vegt, D.
+Berti, G. Milano, J. Phys. Chem. Lett. 2019, 10, 129.
+[32] P. Zhang, Y. Qiu, Y. Wang, L. Xiao, S. Yu, M. Shi, Y. Ni, R. J. Miron, Y.
+Pu, Y. Zhang, Small 2022, 18, 2105525.
+[33] J. H. P. Chan, S. Lim, W. S. F. Wong, Clin. Exp. Pharmacol. Physiol.
+2006, 33, 533.
+[34] G. Meister, T. Tuschl, Nature 2004, 431, 343.
+[35] L. C. Crowley, B. J. Marfell, N. J. Waterhouse, Cold Spring Harb. Protoc.
+2016, 2016, pdb-top070318.
+[36] T. Wu, F. Su, Y. Feng, B. Liu, M. Li, F. Liang, G. Li, X. Li, Y. Zhang, Z.
+Cai, Z. Pei, Stem Cells 2019, 38, 218.
+[37] M. Zühlke, T. T. Meiling, P. Roder, D. Riebe, T. Beitz, I. Bald, H.-G.
+Löhmannsröben, T. Janßen, M. Erhard, A. Repp, ACS Omega 2021, 6,
+23742.
+[38] H. Zhang, N. S. Goh, J. W. Wang, R. L. Pinals, E. González-Grandío,
+G. S. Demirer, S. Butrus, S. C. Fakra, A. Del Rio Flores, R. Zhai, B.
+Zhao, S.-J. Park, M. P. Landry, Nat. Nanotechnol. 2022, 17, 197.
+Small 2025, 21, 2411723
+© 2025 Wiley-VCH GmbH
+2411723 (11 of 12)
+ 16136829, 2025, 13, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202411723 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.small-journal.com
+[39] N. A. Turner, B. K. Sharma-Kuinkel, S. A. Maskarinec, E. M.
+Eichenberger, P. P. Shah, M. Carugati, T. L. Holland, V. G. Fowler, Nat.
+Rev. Microbiol. 2019, 17, 203.
+[40] Y. Ishino, H. Shinagawa, K. Makino, S. Tsunasawa, F. Sakiyama, A.
+Nakata, Molec. Gen. Genet. 1986, 204, 1.
+[41] S. Shekhar, S. Shrivastava, A. Kabeer Kurukkan, P. Sagarika, S.
+Pramanik, C. Sahi, S. Mukherjee, J. Photochem. Photobiol., A 2023,
+436, 114403.
+[42] P. R. Martin, M. Hobbs, P. D. Free, Y. Jeske, J. S. Mattick, Mol. Micro-
+biol. 1993, 9, 857.
+[43] M. McCallum, S. Tammam, J. L. Rubinstein, L. L. Burrows, P. L.
+Howell, Structure 2021, 29, 457.
+[44] D.
+Di
+Fusco,
+V.
+Dinallo,
+I.
+Maraﬁni,
+M.
+M.
+Figliuzzi,
+B.
+Romano,
+G.
+Monteleone,
+Front.
+Pharmacol.
+2019,
+10,
+305.
+[45] Y. Dong, D. J. Siegwart, D. G. Anderson, Adv. Drug Deliv. Rev. 2019,
+144, 133.
+[46] M. J. Hajipour, K. M. Fromm, A. A. Ashkarran, D. J. d. Aberasturi, I.
+R. d. Larramendi, T. Rojo, V. Serpooshan, W. J. Parak, M. Mahmoudi,
+Trends Biotechnol. 2012, 30, 499.
+[47] D. P. Linklater, V. A. Baulin, X. L.e Guével, J.-B. Fleury, E. Hanssen, T.
+H. P. Nguyen, S. Juodkazis, G. Bryant, R. J. Crawford, P. Stoodley, E.
+P. Ivanova, Adv. Mater. 2020, 32, 2005679.
+[48] Y. N. Slavin, J. Asnis, U. O. Häfeli, H. Bach, J. Nanobiotechnol. 2017,
+15, 65.
+[49] C. Song, J. Zhang, X. Jiang, H. Gan, Y. Zhu, Q. Peng, X. Fang, Y. Guo,
+L. Wang, Biosens. Bioelectron. 2021, 190, 113376.
+[50] F. Zhao, N. A. Maren, P. Z. Kosentka, Y.-Y. Liao, H. Lu, J. R. Duduit, D.
+Huang, H. Ashraﬁ, T. Zhao, A. I. Huerta, T. G. Ranney, W. Liu, Hortic.
+Res. 2021, 8, 179.
+Small 2025, 21, 2411723
+© 2025 Wiley-VCH GmbH
+2411723 (12 of 12)
+ 16136829, 2025, 13, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202411723 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

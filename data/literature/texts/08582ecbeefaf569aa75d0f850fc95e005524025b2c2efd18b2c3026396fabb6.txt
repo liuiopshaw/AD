@@ -1,0 +1,3331 @@
+RESEARCH ARTICLE SUMMARY
+Full article and list of 
+author affiliations:
+https://doi.org/10.1126/
+science.ads3972
+Science 
+5 March 2026
+1006
+NEUROIMMUNOLOGY
+Targeting amyloid-­β pathology by chimeric antigen  
+receptor astrocyte (CAR-­A) therapy
+Yun Chen†, Yizhou Liu†, Khai Nguyen†, Junjie Wu, Sihui Song, Kent Lin, Patrick F. Rodrigues, Siling Du,  
+Charles Zhou, Kyle Xiong, Megan Bosch, Peter Bor-­Chian Lin, Darya Khantakova, Shitong Wu, May Wu,  
+Carla Yuede, David M. Holtzman, Marco Colonna* 
+INTRODUCTION: Alzheimer’s disease (AD) is the most common cause 
+of age-­related dementia worldwide. Its pathology progresses from 
+the accumulation of extracellular amyloid-­β (Aβ) to the development 
+of intraneuronal tauopathy, ultimately resulting in neurodegenera-
+tion. Currently, the most effective strategy for slowing AD progres-
+sion involves anti-­Aβ monoclonal antibodies, three of which have 
+recently received clinical approval. However, these therapies share 
+several limitations, including the need for high doses and repeated 
+administration, a narrow therapeutic window, risks such as 
+amyloid-­related imaging abnormalities, and dependence on Fc 
+receptor gamma subunit (FcRγ) signaling. These challenges 
+underscore the need for new therapeutic approaches.
+RATIONALE: Chimeric antigen receptors (CARs) can be engineered by 
+fusing an anti-­Aβ single-­chain variable fragment (scFv) to the intracel-
+lular domain of selected phagocytic receptors, creating a self-­sustaining 
+system that enables brain glia to recognize and clear Aβ aggregates. 
+This approach avoids repeated dosing and allows intracellular signaling 
+to be precisely tuned, a capability not offered by conventional antibody 
+therapies. Because replacing endogenous microglia with CAR-­
+expressing myeloid cells remains challenging for achieving durable, 
+brain-­wide coverage, we instead targeted an alternative phagocytic glial 
+population—astrocytes. We therefore generated CAR-­expressing 
+astrocytes (CAR-­A) and tested their ability to clear amyloid pathology in 
+a mouse model of amyloid plaques using systemic AAV-­PHP.eB delivery 
+to achieve central nervous system (CNS)–wide expression.
+RESULTS: We present a framework for engineering CAR systems in 
+which anti-­Aβ scFv are fused to the intracellular domains of phagocytic 
+receptors. We designed four FcRγ-­independent anti-­Aβ CARs that 
+function robustly in immortalized and primary astrocytes, enhancing 
+phagocytosis and promoting degradation of Aβ42 oligomers in vitro. 
+On the basis of these data, we selected two CARs for in vivo delivery to 
+CNS astrocytes through peripheral, noninvasive AAV-­PHP.eB-­GFAP 
+administration. One construct links crenezumab to the phagocytic 
+domain of MEGF10 (Cre-­Megf10), and the other links aducanumab to 
+the phagocytic domain of Dectin1 (Adu-­Dectin1). A single administra-
+tion of either CAR-­A after plaque formation significantly reduced 
+amyloid burden and neuritic dystrophy within 3 months, whereas 
+early delivery prevented Aβ accumulation and associated pathology for 
+2.5 months. Single-­nucleus RNA sequencing and immunostaining 
+showed that both CARs induced disease-­associated astrocytes and 
+shifted microglia toward a more homeostatic state with reduced 
+exhaustion signatures. Notably, the constructs diverged in part in their 
+downstream effects, with Cre-­Megf10 acting mainly on astrocytic states 
+and Adu-­Dectin1 additionally engaging microglial activation through 
+astrocyte-­microglia communication.
+CONCLUSION: Beyond the success of CAR-­based therapies in 
+oncology, this work establishes the potential of adapting phagocytic 
+CAR technology to the CNS. By targeting astrocytes, we reveal a new 
+therapeutic axis for AD that complements the phagocytic functions 
+classically attributed to microglia and expands the repertoire of 
+cellular targets for neuroimmune intervention. The observation that 
+distinct CAR designs drive partially divergent glial programs 
+highlights the flexibility of this platform and the opportunity to 
+tailor CAR signaling to achieve specific therapeutic goals. Looking 
+ahead, continued optimization will be critical to maximize amyloid 
+clearance while preserving neuronal integrity, minimize off-­target 
+effects, and extend this approach to additional cell types. Together, 
+these findings position CAR engineering as a scalable and tunable 
+strategy for treating neurodegenerative disease. 
+*Corresponding author. Email: mcolonna@​wustl.​edu †These authors contributed equally 
+to this work. Cite this article as Y. Chen et al., Science 391, eads3972 (2026). DOI: 10.1126/
+science.ads3972
+CAR-­A treatment of amyloid pathology in an AD-related model. (Left) Study pipeline 
+for developing CAR-­A therapies to reduce amyloid pathology from in vitro to in vivo models. 
+(Top right) CAR-­A treatment improves astrocytic phagocytosis and response to amyloid 
+pathology, which reduces microglial burden and neuronal dystrophy. (Bottom right) 
+Cre-­Megf10 and Adu-­Dectin1 treatments induced shared glial signatures, including 
+disease-­associated astrocytes and CSF1Rhigh/CD68high microglia. Additionally, 
+CAR-­Megf10 treatment induced MyoC+ astrocytes, whereas CAR-­Dectin1 treatment 
+expanded MHC-­II+ microglia. [Figure created with BioRender.com]
+
+Research Article
+Science 
+5 March 2026
+1 of 18
+NEUROIMMUNOLOGY
+Targeting amyloid-­β pathology by 
+chimeric antigen receptor 
+astrocyte (CAR-­A) therapy
+Yun Chen1,2†, Yizhou Liu2†, Khai Nguyen2†, Junjie Wu2, Sihui Song1, 
+Kent Lin2, Patrick F. Rodrigues2, Siling Du2, Charles Zhou1,  
+Kyle Xiong2, Megan Bosch1, Peter Bor-­Chian Lin1,  
+Darya Khantakova2, Shitong Wu2, May Wu2, Carla Yuede1,  
+David M. Holtzman1,3,4, Marco Colonna2,3,5* 
+Alzheimer’s disease (AD) is the leading cause of dementia and 
+is characterized by progressive amyloid accumulation followed 
+by tau-­mediated neurodegeneration. Despite advances in 
+anti-­amyloid immunotherapies, important limitations remain, 
+highlighting the need for new therapeutic strategies. Here, we 
+introduce anti-­amyloid chimeric antigen receptors expressed in 
+astrocytes (CAR-­A) and validate their function in vitro. We show 
+that two CAR-­A designs reduce amyloid and associated 
+pathology after plaque formation and prevent early plaque 
+deposition in vivo. Single-­nucleus RNA sequencing shows that 
+CAR-­A treatment induces a distinct glial response to amyloid 
+pathology involving coordinated activity of astrocytes and 
+microglia. Each construct additionally elicits distinctive, 
+receptor-­specific effects in astrocytes or microglia. Together, 
+these findings support the therapeutic potential of CAR-­A as a 
+disease-­modifying strategy for AD.
+Alzheimer’s disease (AD) is the most common cause of dementia world-
+wide, with rising prevalence owing to an aging population (1). AD follows 
+a distinctive pathological cascade: amyloid-­β (Aβ) deposits accumulate 
+in the extracellular space, leading to the hyperphosphorylation of intra-
+neuronal tau proteins, eventually forming tau-­associated paired helical 
+filaments that are closely linked with substantial neurodegeneration 
+(2, 3). Although the amyloid cascade theory’s ability to fully explain AD 
+is debated (4–6), the latest generation of anti-­Aβ monoclonal antibodies 
+(mAbs), such as lecanemab and donanemab, has shown promising results. 
+Anti-­Aβ mAbs primarily function through antibody-­dependent cellular 
+phagocytosis (ADCP) (7), removing Aβ aggregates through microglia-­
+mediated clearance. Both lecanemab and donanemab have received US 
+Food and Drug Administration approval, supporting the effectiveness 
+of anti-­Aβ therapies in slowing the progression of AD. In addition, a 
+DIAN-­TU trial recently showed promising results in long-­term treatment 
+to reduce disease risk in autosomal dominant AD patients (8). However, 
+these treatments require very high doses of mAbs to achieve sufficient 
+penetration into the central nervous system (CNS), raising concerns 
+about the high cost of long-­term therapy (9–11). Furthermore, the po-
+tential side effects necessitate frequent monitoring of patients receiving 
+these antibodies, complicating their clinical use (5, 12, 13). Current mAb 
+treatments carry potential side effects including amyloid-­related imag-
+ing abnormalities. Another challenge is determining the optimal treat-
+ment window (14). Early intervention to remove amyloid deposits may 
+prevent AD progression (15–17), whereas delayed treatment at more 
+advanced disease stages may not consistently produce meaningful im-
+provements in slowing cognitive decline (18, 19). Moreover, anti-­Aβ 
+mAb-­based therapies rely on ADCP through FcRγ (Fc receptor gamma 
+subunit) signaling, which limits the flexibility to fine-­tune cellular re-
+sponses (20). Therefore, there is an urgent need for new therapeutic 
+approaches that offer improved efficacy, safety, convenience, and flex-
+ibility for AD treatment.
+To address these challenges, we propose a paradigm shift in a method 
+to remove Aβ deposits through the development of chimeric antigen 
+receptors (CARs). By engineering CARs that combine an anti-­Aβ single-­
+chain variable fragment (scFv) with the intracellular domain of certain 
+phagocytic receptors, we can create a self-­sustaining therapeutic system 
+within the brain’s cellular milieu. This innovative approach circumvents 
+the need for repeated interventions, offering potential one-­time treat-
+ment that could provide sustained therapeutic action throughout the 
+course of disease. Additionally, unlike antibodies, CARs can be engi-
+neered to trigger specific intracellular signaling pathways, allowing 
+precise control over cellular responses. This strategy allows for highly 
+targeted, customizable interventions for AD, including during the criti-
+cal window for secondary prevention after anti-­Aβ mAb treatment.
+The CAR approach has been pioneered in cancer immunology (21, 22), 
+where CARs specific for tumor antigens have been designed and pri-
+marily deployed in T cells (23, 24). More recently, phagocytic CARs 
+specific to tumor antigens have also been implemented in monocytes 
+and macrophages (25, 26). Preliminary studies recently also showed 
+successful in vitro targeting of Aβ aggregates by FcRγ-­based designs 
+expressed in myeloid cells (27, 28). However, owing to the tightness of 
+the blood-­brain barrier and the self-­sustaining nature of microglia 
+already residing in the CNS, efficient methods to replace microglia with 
+engineered peripheral monocytes or other myeloid cells are still in 
+development (29–33). Moreover, the survival of engineered myeloid 
+cells in the face of massive amyloid deposition in the brain remains a 
+challenge. For example, an FcRγ-­based CAR macrophage injected in-
+tracranially into the hippocampus has shown limited survival and 
+therapeutic effects in removing amyloid pathology in vivo (27). Direct 
+viral infection to engineer endogenous microglia through noninvasive 
+gene delivery approaches is also in its preliminary stages (34–36). To 
+date, there is no conclusive evidence that CAR myeloid cells can exert 
+a sustained effect in mitigating AD-­related pathology in vivo.
+In this study, we explored whether another type of phagocytic glial cell, 
+the astrocyte (37–39), could be leveraged to overcome the challenges men-
+tioned above. Astrocytes contribute to the clearance of Aβ aggregates, 
+complementing microglial responses to amyloid pathology (40–42). We 
+introduced anti-­Aβ CARs into astrocytes using an adeno-­associated virus 
+(AAV), creating CAR-­expressing astrocytes (CAR-­A) that could act as 
+super-­phagocytes, specifically targeting and removing extracellular Aβ 
+aggregates. We designed CAR-­As functioning independently of FcRγ sig-
+naling that boosted astrocytic phagocytosis of Aβ oligomers in vitro. 
+Additionally, we delivered two of these CARs into CNS astrocytes in vivo 
+through peripheral noninvasive gene delivery using the AAV-­PHP.eB 
+strain with a glial fibrillary acidic protein (GFAP) promoter (43, 44). This 
+approach resulted in a substantial reduction in amyloid pathology in vivo. 
+We also demonstrated that a single administration of either CAR-­A ther-
+apy before Aβ deposition in the 5xFAD mouse model prevented amyloid 
+accumulation and associated pathology. Additionally, single-­nucleus RNA 
+sequencing (snRNA-­seq) revealed that both CAR-­A treatments activated 
+astrocytes and promoted a microglial profile consistent with reduced 
+exhaustion, with some differences in the specific patterns of astrocyte and 
+microglial activation. Overall, our results demonstrate the effectiveness 
+of the anti-­Aβ CAR-­A concept and highlight the therapeutic potential of 
+CAR-­A for decreasing Aβ deposition and treating AD.
+Construct development for anti-­Aβ CARs
+In the CNS, microglia and astrocytes act as phagocytes equipped with 
+receptors and downstream signaling capable of directly engulfing cells, 
+1Department of Neurology, Washington University School of Medicine, St. Louis, MO, USA. 
+2Department of Pathology and Immunology, Washington University School of Medicine, St. Louis, 
+MO, USA. 3Hope Center for Neurological Disorders, Washington University School of Medicine, 
+St. Louis, MO, USA. 4Knight Alzheimer’s Disease Research Center, Washington University 
+School of Medicine, St. Louis, MO, USA. 5Center for Brain Immunology and Glia (BIG), 
+Washington University in St. Louis, School of Medicine, St. Louis, MO, USA. *Corresponding 
+author. Email: mcolonna@​wustl.​edu †These authors contributed equally to this work.
+
+Research Article
+Science 
+5 March 2026
+2 of 18
+synapses, particles, or debris (45–48). Additionally, microglia can phago-
+cytose cells or particles that are coated with antibodies through Fc recep-
+tors (49). To develop functional anti-­Aβ CARs, fusion proteins must be 
+designed that integrate effectively into the preexisting signaling networks 
+of the target cells (Fig. 1A). Thus, we decided to leverage receptors intrinsi-
+cally expressed in the CNS phagocytes and capable of direct phagocytosis. 
+We linked an anti-­Aβ scFv to the intracellular domain of one of three 
+receptors that mediate phagocytosis in development, homeostasis, and 
+disease of the CNS: MEGF10 (multiple epidermal growth factor–like do-
+mains protein 10), expressed by astrocytes (50); Dectin1 [also known as 
+CLEC7A (C-­type lectin domain family 7 member A)], expressed by microg-
+lia (51); and MERTK (tyrosine-­protein kinase Mer), expressed by both 
+(50, 52). In one additional CAR, we linked the anti-­Aβ scFv to the signaling 
+domain of CD3ζ, which is well established for CAR-­T signaling (53). This 
+CD3ζ construct shares homology with the Fc common γ-­chain, FcεRIγ, a 
+key signaling molecule mediating ADCP in macrophages and microglia, 
+which has been successfully deployed to design an antitumor CAR 
+macrophage (22). We mirrored the Dectin1 intracellular sequence from 
+C terminus to N terminus owing to its type II transmembrane receptor 
+feature (54). We connected the anti-­Aβ scFv and each intracellular domain 
+with the transmembrane domain of CD8 adopted from CAR-­T constructs 
+with one exception: Because the scFv-­CD8-­MERTK chimeric construct 
+was not efficiently expressed, we replaced the CD8 transmembrane region 
+with the endogenous MERTK transmembrane sequence (Fig. 1A). For the 
+initial in vitro screening, we derived the anti-­Aβ scFv from the sequence 
+of crenezumab (abbreviated “Cre”) owing to the availability of its structure 
+in complex with the Aβ42 peptide (55). On the basis of this x-­ray crystal 
+structure, we designed a suitable (GGGGS)4 linker from the C termi-
+nus of the heavy chain to the N terminus of the light chain to maintain 
+antigen binding ability. We also tagged all CAR constructs with a bright 
+green fluorescent protein (GFP; GreenLantern) at the C terminus and 
+cloned them into a lentiviral vector for transduction.
+As a preliminary screen of CAR constructs’ function, we expressed all 
+constructs in an SV40T-­immortalized mouse astrocyte cell line (imA) to 
+validate their surface expression (Fig. 1B) and functional capacity (fig. S1, 
+A to E) in astrocytes. We confirmed Aβ surface binding by incubating 
+CAR-­imAs with monomeric Aβ42 labeled with the stable dye AlexaFluor-­647 
+(A647) on ice, followed by flow cytometry; we observed no binding in 
+GFP-­expressing imAs (fig. S1A). To assess phagocytic function, we oligomer-
+ized Aβ42 conjugated with the pH-­sensitive dye pHrodo (oAβ42) and in-
+cubated CAR-­imAs and GFP-­imAs with oAβ42-­pHrodo at 37°C. After 
+4 hours, CAR-­imAs exhibited clear uptake compared with controls, with 
+most cells showing low uptake and a smaller subset showing high uptake. 
+By 24 hours, the pHrodo signal had largely decayed in low-­uptake cells but 
+remained in high-­uptake cells (fig. S1, B and C). We observed similar results 
+using oAβ42 conjugated to A647: After a 4-­hour pulse, CAR-­imAs internal-
+ized oAβ42 and showed a marked reduction in intracellular A647 signal 
+by 24 hours, consistent with degradation of internalized aggregates (fig. S1, 
+D and E). Lastly, to confirm the target specificity of CAR-­A scFvs, we used 
+a dual-­challenge assay in which CAR-­imAs were simultaneously exposed 
+to oAβ42 and a second pHrodo-­labeled substrate (fig. S1F). These sub-
+strates included disease-­relevant biomolecules and aggregates such as tau 
+extracts from AD brains (AD-­tau), recombinant tau fibrils, α-­synuclein 
+preformed fibrils (PFFs), and myelin debris. CAR-­imAs did not increase 
+uptake of AD-­tau, tau fibrils, α-­synuclein, or myelin in the presence of 
+oAβ42 (fig. S1G), unlike the GFP controls, which exhibited enhanced 
+AD-­tau uptake with oAβ42. These results indicate that CAR-­induced 
+phagocytosis is antigen-­specific, driven by the scFv domain, rather than 
+a generalized response to antigen exposure.
+Functional verification for anti-­Aβ CAR in astrocytes
+Next, we validated the functionality of all four CAR constructs on com-
+mercially sourced primary astrocytes. We transduced these cells with 
+the same lentivirus constructs and challenged them with oAβ42-­A647 
+(Fig. 1, C and D). Although primary astrocytes required more time to 
+internalize Aβ42 aggregates—∼8 hours compared with 4 hours in im-
+mortalized cells—and showed slower degradation, occurring over 
+72 hours versus 24 hours, CAR-­As consistently enhanced phagocytosis 
+of oAβ42 followed by degradation (Fig. 1, C and D). Thus, all four CAR 
+designs showed comparable ability to phagocytose and digest oAβ42. 
+Although CD3ζ and Dectin1 are not normally expressed in astrocytes, 
+their intracellular domains may couple to alternative signaling partners 
+to promote phagocytosis. For subsequent experiments, we focused on 
+CARs incorporating phagocytic signaling domains from Megf10, a native 
+astrocytic engulfment receptor, and from Dectin1, a nonastrocytic 
+phagocytic receptor chosen to test whether alternative phagocytic path-
+ways can be harnessed for Aβ clearance.
+Previous clinical trials showed that the efficacy of anti-­Aβ mAbs in 
+clearing plaques depended on their ability to preferentially bind fibril-
+lar rather than soluble Aβ, given the sink effect of abundant soluble 
+Aβ (56). Thus, we surveyed different scFv components for Megf10-­ and 
+Dectin1-­CARs to optimize their application in vivo in both a preventive 
+and therapeutic approach. We selected two scFvs: crenezumab, which 
+recognizes both soluble Aβ monomers and oligomers, and aducanumab, 
+which preferentially binds Aβ oligomers—including early forms—
+without targeting soluble Aβ monomers (55, 57, 58). For the latter, we 
+engineered the aducanumab scFv in a light chain to heavy chain con-
+figuration to avoid potential interference of antigen binding (59). To 
+validate these constructs, we transduced primary astrocytes with 
+lentiviruses encoding Cre-­Megf10, Adu-­Megf10, Cre-­Dectin1, or Adu-­
+Dectin1 and then challenged them with oligomeric Aβ42-­pHrodo 
+(Fig. 1, E to G). Cre-­Megf10 expression led to a greater increase in 
+astrocytic Aβ phagocytosis than the other CAR designs, whereas Cre-­
+Dectin1 and Adu-­Dectin1 showed similar increase in Aβ phagocytosis 
+(Fig. 1G). Additionally, because the full-­length Megf10 intracellular 
+domain was too large for AAV packaging, we tested a truncated version 
+that retained the essential endocytosis domain. This shortened con-
+struct maintained similar phagocytic activity (fig. S1, H to J). On the 
+basis of these data, we prioritized two CAR constructs—Cre-­Megf10 
+and Adu-­Dectin1—for in vivo evaluation. This selection balanced strong 
+in vitro performance with design diversity—incorporating distinct 
+scFv specificities and intracellular signaling domains—to maximize 
+the chance of identifying design principles that drive efficacy in the 
+CNS and to help de-­risk future translational development.
+To achieve efficient brain penetration and expression of CARs in astro-
+cytes in vivo, we cloned Cre-­Megf10 and Adu-­Dectin1 CARs and a GFP 
+control into a GFAP promoter–based AAV-­PHP.eB expression system 
+(44, 60) (fig. S2A). We also replaced the CD8α transmembrane peptide 
+with a rat CD8α homolog sequence to avoid potential co-­receptor bind-
+ing (61). Inserting the Cre-­Megf10 CAR into the AAV vector required 
+using a shorter version of the GFAP promoter (GfaABC1D) owing to size 
+constraints (62). First, we tested the two AAV-­PHP.eB.GFAP-­CAR con-
+structs in primary astrocytes from mixed glial cultures derived from 
+postnatal day 3 to 5 (P3–5) cortex to assess uptake and degradation of 
+oAβ42 (fig. S2B). We gated astrocytes and microglia as CD11b– and 
+CD11b+ cells, respectively (fig. S2C). Although both CAR-­A constructs 
+increased Aβ42 uptake by astrocytes compared with the GFP control, 
+Cre-­Megf10 CAR-­A showed a more pronounced enhancement (Fig. 1, H 
+to K). Adu-­Dectin1 CAR-­A also enhanced microglial uptake of oAβ42 
+(CD11b+ gated; Fig. 1, L and M), suggesting that astrocytes may influence 
+microglia through cell surface ligands or soluble factors.
+We next assessed the in vivo phagocytic potential of CAR-­As in wild-­
+type (WT) mice. We first injected AAV-­PHP.eB-­CARs intravenously 
+via the retro-­orbital sinus. One month later, we injected prelabeled 
+Aβ42-­A647 fibrils into the mice intracerebrally (fig. S3A). Three days after 
+fibril injection, we isolated hippocampi and analyzed GFP+ cells by flow 
+cytometry for Aβ42-­A647 content. Results showed an increased uptake 
+of Aβ42-­A647 by GFP+ astrocytes expressing the Adu-­Dectin1 CAR-­A 
+construct compared with the GFP control (fig. S3, B to E). We further 
+examined the durability of GFP expression in 6-­month-­old 5xFAD males 
+
+Research Article
+Science 
+5 March 2026
+3 of 18
+0
+104
+105
+106
+107
+0
+103
+104
+105
+106
+0
+10 3
+10 4
+10 5
+0
+10 3
+10 4
+10 5
+0
+10 3
+10 4
+10 5
+0
+10 3
+10 4
+10 5
+0
+10 3
+10 4
+10 5
+0
+10 3
+10 4
+10 5
+0
+10 3
+10 4
+10 5
+0
+10 3
+10 4
+10 5
+0
+10 3
+10 4
+10 5
+0
+10 3
+10 4
+10 5
+0
+10 3
+10 4
+10 5
+0
+10 3
+10 4
+10 5
+0
+10 3
+10 4
+10 5
+0
+10 3
+10 4
+10 5
+0
+10 3
+10 4
+10 5
+0
+10 3
+10 4
+10 5
+0
+10 3
+10 4
+10 5
+0
+10 3
+10 4
+10 5
+0
+10 3
+10 4
+10 5
+0
+10 3
+10 4
+10 5
+A
+C
+B
+E
+F
+G
+GFP
+oA 42-Alexa647
+Megf10
+Dectin1
+Mertk
+CD3
+GFP
+0h (post 8h challenge)  
+72h (post 8h challenge)  
+0h 72hr
+0h 72hr
+0h 72hr
+0h 72hr
+0h 72hr
+ns
+****
+****
+****
+****
+****
+Megf10
+Dectin1
+Mertk
+CD3
+GFP
+H
+I
+oA 42-Alexa647 (%)
+GFP
+Cre-Megf10
+Adu-Dectin1
+oA 42-pHrodo
+oA 42-pHrodo
+J
+K
+L
+M
+GFP
+Cre-Megf10 Adu-Dectin1
+GFP
+Cre-Megf10 Adu-Dectin1
+Microglia Phagocytosis of oA 42-pHrodo
+CAR-A Phagocytosis of oA 42-pHrodo
+GFP
+Cre-Megf10
+Adu-Dectin1
+72 hr
+0 hr
+72 hr
+0 hr
+72 hr
+0 hr
+fA 42-Alexa647
+GFP
+Cre-Megf10
+Adu-Dectin1
+0hr
+72hr
+CAR-A Degradation of fA 42-Alexa647
+GFP
+Cre-Megf10
+Adu-Dectin1
+oA 42-high
+oA 42+
+oA 42+
+0
+100000
+200000
+300000
+400000
+oA 42-pHrodo (MFI) in
+GFP+/oA 42-high Astrocytes
+*
+*
+0
+1000
+2000
+3000
+4000
+fA 42-Alexa647 (MFI)
+in GFP+ Astrocytes
+****
+****
+****
+****
+****
+0hr
+72hr
+0hr
+72hr
+400000
+500000
+600000
+700000
+800000
+oA 42-pHrodo (MFI) in
+CD11b+/oA 42
++ cells
+ns **
+oA 42-pHrodo
+oA 42-pHrodo (MFI) in GFP  Astrocyotes
++
+Cre
+Adu
+Cre
+Adu
+GFP
+GFP
+GFP
+GFP
+Megf10
+Megf10
+Dectin1
+Dectin1
+Mertk
+Mertk
+Mertk
+CD3
+CD3
+CAR
+CD8
+scFV
+Other phago-receptors
+Phago-receptors
+expressed in 
+brain cells
+Signaling 
+networks for
+phagocytosis
+scFv
+CD8
+MEGF10
+DECTIN1
+(CLEC7A)
+Cre-Megf10
+Cre-Dectin1
+GFP
+GFP
+MEGF10
+Adu-Megf10
+GFP
+DECTIN1
+(CLEC7A)
+Adu-Dectin1
+GFP
+0
+10 3
+10 4
+10 5
+Adu-Dectin1
+Cre-Megf10
+Adu-Megf10
+Cre-Dectin1
+GFP
+0
+500
+1000
+1500
+GFP
+****
+ns
+****
+Dectin1
+Megf10
+CAR-Megf10
+CAR-Dectin1
+CAR-CD3
+CAR-Mertk
+D
+11.8%
+12.9%
+81.0%
+61.6%
+80.3%
+62.1%
+58.2%
+42.7%
+81.3%
+61.7%
+ns
+*
+0
+20
+40
+60
+80
+100
+VH VL
+VH VL
+VH VL
+VH VL
+VH
+VL
+VH
+VL
+VL
+VH
+VL
+VH
+Fig. 1. In vitro Aβ-­specific CAR designs and verifications for astrocytes. (A) Schematic representation of the rationale used to select appropriate phagocytic receptors (left) 
+
+Research Article
+Science 
+5 March 2026
+4 of 18
+at 1, 2, and 3 months after AAV injection (fig. S3F). Whereas the GFP 
+control showed the highest fluorescence, both Cre-­Megf10 and Adu-­
+Dectin1 CAR-­As maintained stable expression in the CNS over the 
+3-­month period. Astrocytes expressing either CAR remained clustered 
+around X34-­labeled amyloid plaques at 3 months after infection 
+(fig. S3G). These results supported advancing both Cre-­Megf10 and Adu-­
+Dectin1 CAR-­As to large in vivo cohorts.
+Late time point CAR-­A treatment reduces Aβ pathology in vivo
+To determine the therapeutic potential of AAV-­PHP.eB-­expressing CAR-­As, 
+we administered them intravenously in a cohort of age-­ and sex-­matched 
+5xFAD mice at 6 months of age and waited for 3 months to assess the 
+amyloid pathology, when amyloid plaque formation has reached a plateau 
+according to previous literature (63, 64) (Fig. 2A). At 9 months of age, we 
+assessed amyloid burden across the hemibrain using X34 staining of Aβ 
+plaques on two brain sections per mouse. Both AAV-­PHP.eB-­Cre-­Megf10 
+and AAV-­PHP.eB-­Adu-­Dectin1 CAR-­A treatments led to an overall ~50% 
+decrease in total amyloid load after a single injection (Fig. 2, B and C), 
+with a similarly marked reduction in Aβ plaques in both cortex and 
+hippocampus compared with controls (Fig. 2, D to F). Enzyme-­linked 
+immunosorbent assay (ELISA) analysis of cortical fractions confirmed 
+reductions in insoluble Aβ42 aggregates in both CAR-­treated groups 
+(Fig. 2G). Insoluble Aβ40 and soluble Aβ42 and Aβ40 amounts remained 
+unchanged in both CAR-­treated groups, except for an increase in soluble 
+Aβ40 in the Cre-­Megf10–treated group compared with the GFP control 
+(Fig. 2H).
+To evaluate neuronal changes, we stained for LAMP1 (lysosome-­
+associated membrane glycoprotein 1) to assess plaque-­associated neu-
+ritic dystrophy in cortex and hippocampus (Fig. 2, I to K). Consistent 
+with reduced amyloid deposition, both CAR-­A treatments substantially 
+decreased the volume of dystrophic neurites surrounding X34+ plaques 
+(Fig. 2, I to K). We further examined pre-­ and postsynaptic loss by 
+staining for synapsin and PSD95, respectively. Cre-­Megf10 treatment 
+alleviated postsynaptic loss, whereas we observed no rescue in synap-
+tic loss in the Adu-­Dectin1 group (Fig. 2, L to O). In summary, a single 
+dose of AAV-­PHP.eB–delivered CAR-­A therapy reduced amyloid burden 
+and neuronal dystrophy in vivo, with partial rescue of synaptic integ-
+rity in the Cre-­Megf10–treated group.
+Early time point CAR-­A intervention prevents 
+amyloid-β deposition
+Recently, the DIAN-­TU project launched a primary prevention trial to 
+evaluate whether early removal of amyloid plaques in patients with 
+autosomal dominant AD can influence their risk of AD development 
+(16). Aligning with this concept of early intervention, we explored the 
+potential of our two CAR-­A therapies as a preventive strategy. We 
+injected the viruses intravenously at 2.5 months instead of 6 months 
+of age in 5xFAD mice, before they exhibit Aβ plaques (63) (Fig. 3A). 
+Then we examined all mice at 5 months of age, when early Aβ plaques 
+had formed. We first assessed overall amyloid load across the hemi-
+brain using X34 staining of Aβ plaques. AAV-­PHP.eB-­Cre-­Megf10 and 
+AAV-­PHP.eB-­Adu-­Dectin1 treatments reduced amyloid plaque forma-
+tion 2.5 months after injection compared with AAV-­PHP.eB-­GFP 
+(Fig. 3, B and C), with the Cre-­Megf10 group showing almost no 
+amyloid plaques. In both cortex and hippocampus, AAV-­PHP.eB-­Cre-­
+Megf10 and AAV-­PHP.eB-­Adu-­Dectin1 treatments led to a similar re-
+duction in Aβ plaques compared with controls (Fig. 3, D to F). ELISA 
+analysis revealed that Aβ42 amounts in the phosphate-­buffered saline 
+(PBS)–insoluble but guanidine hydrochloride (GdnHCl)–soluble fraction 
+were reduced in both CAR-­A–treated groups compared with controls, 
+with undetectable amounts in the Cre-­Megf10 group (Fig. 3G). In con-
+trast, we observed no differences in Aβ40 or Aβ42 amounts in the 
+PBS-­soluble fraction between CAR-­treated groups and controls (Fig. 3H). 
+We also assessed neuronal dystrophy around residual plaques in the 
+cortex and hippocampus using LAMP1 staining (Fig. 3, I to K). Given 
+the substantial reduction in Aβ plaques in the AAV-­PHP.eB-­Cre-­Megf10 
+and AAV-­PHP.eB-­Adu-­Dectin1 groups, we analyzed only three plaques 
+per hippocampal section (two sections per mouse) (Fig. 3, I to K). 
+Consistent with the overall reduction in amyloid burden, both CAR-­
+treated groups showed a decrease in the volume of dystrophic neurites 
+surrounding X34+ plaques compared with controls (Fig. 3, I to K). 
+At this disease stage, both CAR treatments also alleviated plaque-­
+associated synaptic loss, as evidenced by improved synapsin and PSD95 
+staining (Fig. 3, L to O). Overall, our findings show that early admin-
+istration of either AAV-­PHP.eB-­Cre-­Megf10 or AAV-­PHP.eB-­Adu-­
+Dectin1 at 2.5 months of age in the 5xFAD model can substantially 
+reduce amyloid pathology as well as associated neuronal dystrophy 
+and synaptic loss.
+Limited behavioral improvement upon CAR-­A treatments
+As behavioral deficits have been reported in the 5xFAD model—
+although inconsistently across studies (65, 66)—we assessed whether 
+CAR-­A treatment could improve cognitive function. In the 9-­month 
+cohort, treatment with CAR-­As, particularly Adu-­Dectin1, reduced 
+overall activity (fig. S4, A to G), but we did not find other behavioral 
+differences (fig. S4, B and C). At 5 months, we did not observe behav-
+ioral differences. Thus, despite a marked reduction in amyloid pathology, 
+CAR-­A treatment did not result in improvements in memory-­related 
+behaviors at either 5 or 9 months of age. A safety assessment in WT 
+mice revealed mild but detectable alterations after AAV-­PHP.eB ad-
+ministration, including increased center zone time in motor function 
+tests and total entries in the elevated plus maze compared with PBS 
+controls, which may confound the performance in cognitive tests 
+(fig. S4, I to K). In addition, the increased phagocytic activity induced 
+by AAV-­PHP.eB-­Cre-­Megf10 or AAV-­PHP.eB-­Adu-­Dectin1 may inadver-
+tently promote synapse pruning, potentially offsetting the benefi­
+cial effects of amyloid clearance. Accordingly, translating CAR-­A– 
+mediated pathological improvement into functional recovery will 
+likely require further optimization of CAR design to better preserve 
+circuit integrity (67). Finally, broader behavioral testing will be im-
+portant, given reported variability and known limitations of the 
+5xFAD model (65, 66).
+and the designs of CARs with different intracellular signaling domains (right). (B) Confocal imaging of immortalized astrocytes transduced with the Cre-CARs, nuclei are stained 
+with DAPI (blue). Scale bars: 20 μm. (C) Flow cytometry plots of oligomeric Aβ42-­647 (oAβ42-­647) uptake by Lonza primary astrocytes at 0 and 72 hours after 8 hours phagocyto-
+sis. (D) Quantifications of the percentage of oAβ42-­647 CAR astrocytes at 0 and 72 hours after 8 hours of phagocytosis. N = 6. (E) Schematic representation of CAR-­Megf10 and 
+CAR-­Dectin1 with different scFvs. (F) Representative flow cytometry histograms of oAβ42-­pHrodo uptake by Cre-­Megf10, Adu-­Megf10, Cre-­Dectin1, and Adu-­Dectin1 astrocytes 
+after 8 hours. (G) The mean fluorescence intensity (MFI) of oAβ42-­pHrodo uptake by Cre-­Megf10, Adu-­Megf10, Cre-Dectin1, and Adu-­Dectin1 astrocytes after 8 hours. N = 4.  
+(H) Representative flow cytometry histograms of oAβ42-­pHrodo uptake by GFP-­, Cre-­Megf10–, and Adu-­Dectin1–expressing astrocytes in the mixed glial culture after 8 hours.  
+Two populations of oAβ42+ astrocytes are indicated by labels in the panel. (I) Quantifications of the MFI of Aβ42-­pHrodo uptake by GFP-­, Cre-­Megf10–, and Adu-­Dectin1–express-
+ing astrocytes in the mixed glial culture after 8 hours. N = 5. (J) Representative flow cytometry histograms of fibrillar Aβ42-­647+ uptake by GFP-­, Cre-­Megf10–, and Adu-­Dectin1–
+expressing astrocytes at 0 and 24 hours after 8 hours of phagocytosis. (K) Quantifications of the MFI of fibrillar Aβ42-­647+ uptake by GFP-­, Cre-­Megf10–, and Adu-­Dectin1– 
+expressing astrocytes at 0 and 24 hours after 8 hours of phagocytosis. N = 5. (L) Representative flow cytometry histograms of oAβ42-­pHrodo uptake by microglia in each mixed glial 
+culture after 8 hours. Populations of oAβ42+ microglia are indicated by labels in the panel. (M) Quantifications of the MFI of Aβ42-­pHrodo uptake by microglia in the mixed glial culture 
+after 8 hours. N = 5. All data presented as mean ± SEM with technical replicates, except in (I), (K), and (M), where biological replicates are shown.
+
+Research Article
+Science 
+5 March 2026
+5 of 18
+A
+B AAV-PHP.eB-GFP
+AAV-PHP.eB-Cre-Megf10
+AAV-PHP.eB-Adu-Dectin1
+D
+GFP
+Megf10 Dectin1
+0.0
+0.5
+1.0
+1.5
+2.0
+Total plaque (X34)
+X34+ area (%)
+****
+****
+E
+AAV-PHP.eB-GFP
+AAV-PHP.eB-Cre-Megf10
+F
+X34LAMP1
+AAV-PHP.eB-GFP
+AAV-PHP.eB-Cre-Megf10
+AAV-PHP.eB-Adu-Dectin1
+CTX
+HPC
+AAV-PHP.eB-GFP
+AAV-PHP.eB-Cre-Megf10
+AAV-PHP.eB-Adu-Dectin1
+GFP
+Megf10
+Dectin1
+0
+10
+20
+30
+Pre-synpatic loss
+around plaques
+ns
+ns
+GFP
+Megf10
+Dectin1
+0
+5
+10
+15
+20
+25
+Post-synpatic loss
+around plaques
+**
+Total Synapsin+ voxels within
+15
+ of X34+  plaques(%)
+Total PSD95 +  voxels within
+15
+ of X34 +  plaques(%)
+PBS-soluble fraction
+ns
+ns
+ns
+GdnHCl-soluble fraction
+C
+G
+GFP
+Megf10
+Dectin1
+0.0
+0.5
+1.0
+1.5
+CTX plaque (X34)
+****
+X34+  area (%)
+GFP
+Megf10
+Dectin1
+0.0
+0.5
+1.0
+1.5
+2.0
+HPC plaque (X34)
+****
+X34+  area (%)
+*
+***
+I
+0
+5
+10
+15
+0
+5
+10
+15
+Dystrophic neurites
+around plaques (CTX)
+GFP
+Megf10
+Dectin1
+GFP
+Megf10
+Dectin1
+Total LAMP1  voxels within
+15
+ of X34+ plaques(%)
++
+Total LAMP1  voxels within
+15
+ of X34+ plaques(%)
++
+Dystrophic neurites
+around plaques (HPC)
+**
+***
+*
+***
+J
+K
+L
+N
+M
+O
+0
+5
+10
+15
+concentra
+mg)
+0
+5
+10
+15
+0
+5
+10
+15
+GFP
+Megf10
+Dectin1
+0
+5
+10
+15
+*
+***
+***
+X34
+X34
+X34
+X34
+X34
+X34
+X34LAMP1
+X34LAMP1
+X34LAMP1
+X34LAMP1
+X34LAMP1
+X34 PSD95
+X34 Synapsin
+X34 PSD95
+X34 Synapsin
+X34 PSD95
+X34 Synapsin
+Am
+Age
+5xFAD
+6m
+9m
+I.V. AAV injection
+Pathological assessment
+****
+ns
+****
+ns
+ns
+*
+ns
+ns
+ns
+ns
+ns
+ns
+ns
+H
+concentra
+mg)
+AAV-PHP.eB-Adu-Dectin1
+GFP
+Megf10
+Dectin1
+ns
+Fig. 2. One-­time late time point AAV-­CAR-­A treatment reduces amyloidosis and amyloid-­associated pathology in vivo. (A) Experimental timeline for AAV injection and 
+
+Research Article
+Science 
+5 March 2026
+6 of 18
+CAR-­A treatments induce distinctive glial cell responses
+Given the rescue of peri-­plaque neuronal dystrophy in both Cre-­Megf10 
+and Adu-­Dectin1 CAR-­A treatments (Figs. 2 and 3), we investigated 
+whether CAR-­A–mediated Aβ clearance influences peri-­plaque glial 
+responses in vivo (68, 69). To this end, we analyzed the distribution, 
+morphology, and activation states of astrocytes and microglia sur-
+rounding X34+ Aβ plaques using confocal microscopy (68–72). At 
+9 months, Cre-­Megf10–treated mice showed a modest increase in as-
+trogliosis (total percentage of GFAP+ volume/Z-­stack volume) and 
+astrocyte clustering around plaques compared with the GFP control 
+(Fig. 4, A to C, and fig. S5, A to C), whereas Adu-­Dectin1 treatment 
+resulted in no differences relative to GFP. At 5 months, however, Adu-­
+Dectin1 induced greater astrogliosis and astrocyte clustering around 
+plaques than the GFP control, whereas Cre-­Megf10 had no effect 
+(Fig. 4, D to F, and fig. S5, D to F).
+At 9 months, Adu-­Dectin1 treatment led to greater microglial clus-
+tering around plaques, whereas both CAR-­A therapies reduced overall 
+microgliosis (total percentage of IBA1+ volume/Z-­stack volume) in the 
+cortex and hippocampus, likely reflecting the reduced Aβ burden (Fig. 4, 
+G to I, and fig. S5, G to I). At 5 months, despite the overall low plaque 
+burden, Adu-­Dectin1–treated mice showed increased microglial clus-
+tering around the few existing plaques in the ventral retrosplenial 
+cortex. Together, these findings suggest that Aβ clearance by CAR-­As 
+influences local glial responses in a construct-­ and age-­dependent 
+manner, with Cre-­Megf10 primarily enhancing astrocytic response 
+around plaques, whereas Adu-­Dectin1 promotes some microglial clus-
+tering, particularly at earlier stages. This observation is consistent 
+with moderate differences in astrocyte versus microglia phagocytosis 
+in the mixed glial culture (Fig. 1, I to N).
+To further characterize glial responses to CAR-­A treatment, we per-
+formed snRNA-­seq on pooled brain samples from five mice per group. 
+Groups included Cre-­Megf10, Adu-­Dectin1, and GFP controls at both 
+5 and 9 months of age. Initial clustering of all nuclei identified all 
+major CNS cell populations after removing most neuronal nuclei, with 
+an overrepresentation of oligodendrocytes (fig. S6, A and B), and con-
+firmed effective AAV-­PHP.eB delivery to astrocytes, as indicated by 
+high expression of woodchuck hepatitis virus posttranscriptional regu-
+latory element (WPRE) specifically in this population (fig. S6, C and 
+D). Oligodendrocytes and oligodendrocyte progenitor cells (OPCs) from 
+Cre-­Megf10– and Adu-­Dectin1–treated mice showed minimal tran-
+scriptional changes, aside from reduced expression of the activation 
+marker C4b in Cre-­Megf10–treated 5-­month mice, consistent with the 
+low plaque burden (fig. S6, E to H).
+Because astrocytes and microglia were initially underrepresented 
+(fig. S6, I to J), we performed nuclear sorting to deplete oligodendro-
+cyte nuclei from hippocampal samples, resulting in substantial enrich-
+ment of astrocyte and microglial nuclei for deeper analysis (fig. S7, A 
+to C). In the enriched dataset, we first focused on astrocytes. Both 
+CAR-­A treatments up-­regulated astrocytic differentially expressed genes 
+(DEGs) including Lrp1b, Gfap, Cxcl5, Clu, and S100a6 (9 months) and 
+Cdh19 and Zbtb16 (5 months), while downregulating Fam163a, Cmss1, and 
+Il31ra (9 months) and Zfp949 (5 months) (fig. S7, D and E). Pathway 
+analysis revealed that these transcriptional changes were associated 
+with astrocyte development, neurogenesis, neuron projection forma-
+tion, and cell-­cell signaling. Cre-­Megf10 preferentially up-­regulated 
+genes involved in astrocyte differentiation and lipid metabolism (fig. S7F). 
+Analysis of microglial DEGs revealed that both CAR-­A treatments were 
+associated with microglial activation markers (Cst3, Apoe, Trem2, C1q), 
+whereas Adu-­Dectin1 was also associated with increased MHC genes 
+(Cd74, H2-­Aa, H2-­D1) (fig. S7, G and H). Pathway analysis confirmed 
+up-­regulation of antigen processing, presentation, and endocytosis path-
+ways, with these microglial responses more pronounced at 9 months—
+consistent with the greater amyloid burden at this stage (fig. S8I). 
+Almost no DEGs were detected in OPCs (fig. S7, J and K).
+To obtain a more granular view of astrocytes, we reclustered astrocytes 
+into known subtypes—homeostatic, transitional (TA1, TA2), disease-­
+associated astrocytes (DAAs), and MyoC+ astrocytes—on the basis of 
+published markers (73) (Fig. 5, A and B, and fig. S8A). We validated 
+our DAA and MyoC clusters by mapping onto reference snRNA-­seq 
+uniform manifold approximation and projections (UMAPs), showing 
+strong alignment with known astrocyte trajectories (Fig. 5C). Two-­ and 
+three-­dimensional (2D and 3D) trajectory analyses revealed two dis-
+tinct lineages: one progressing through TA1 toward DAAs, and another 
+via TA2 toward MyoC+ astrocytes (Fig. 5D). Pathway analysis showed 
+that DAAs up-­regulated phagocytic and lysosomal genes, whereas 
+MyoC+ astrocytes were enriched for synaptic and metabolic pathways 
+(fig. S8B).
+Analysis of the relative abundance of astrocyte populations across 
+treatments showed that both CAR-­As expanded DAAs and reduced 
+TA1 at 9 months (Fig. 5E and fig. S8C). Only Cre-­Megf10 increased TA2 
+and MyoC+ astrocytes. RNA velocity analysis revealed uniform transi-
+tions toward both terminal states in Cre-­Megf10, whereas Adu-­Dectin1 
+astrocytes proceeded toward DAA following a nonlinear path (Fig. 5F). 
+Pseudotime analysis confirmed that both CAR-­As expanded DAAs, 
+whereas only Cre-­Megf10 treatment also triggered a TA2-­dependent 
+trajectory toward MyoC+ astrocytes (Fig. 5, G and H). At 5 months, 
+these trajectories were absent likely owing to lower pathology, except 
+for a modest increase of MyoC+ astrocytes in Cre-­Megf10–treated ani-
+mals (fig. S8, D and E).
+We next used explained DEG analysis to determine which clusters 
+contributed most to gene expression changes at 9 months (Fig. 5, I and 
+J). In Cre-­Megf10–treated mice, the DAA and MyoC+ astrocytes primarily 
+accounted for up-­regulated genes (Fig. 5I), whereas in Adu-­Dectin1–
+treated mice, DEG were largely restricted to DAAs (Fig. 5J). Despite a 
+substantial overlap in the overall DEG sets, Cre-­Megf10 treatment induced 
+DAA-­ and MyoC+ astrocyte–related genes, whereas Adu-­Dectin1 treatment 
+up-­regulated genes associated with DAAs (Fig. 5K). At 5 months, 
+Cre-­Megf10–treated animals showed the highest module score up-­
+regulation in TA1 astrocytes (fig. S8F), suggesting that induction of 
+DAA and MyoC+ astrocytes represents a later-­stage response emerging 
+as amyloid burden increases. Accordingly, DEG alignment showed 
+no differential induction of DAA versus MyoC+ astrocytes between Cre-­
+Megf10 and Adu-­Dectin1 treatments at 5 months (fig. S8G).
+To validate the impact of Cre-­Megf10 or Adu-­Dectin1 treatment on 
+astrocytic activation compared with controls in response to amyloid 
+burden at 9 months, we chose low-­density lipoprotein receptor-­related 
+pathological assessment in 5xFAD mice after plaque formation. (B) Representative X34 staining of amyloid plaques in coronal brain sections. Scale bars: 1000 μm. (C) Quantification 
+of total X34+ plaque area in coronal sections. (D) Representative X34 staining of amyloid plaques in cortical sections from mice at 9 months of age, injected with AAV-­PHP.
+eB-­GFP, AAV-­PHP.eB-­Cre-­Megf10, or AAV-­PHP.eB-­Adu-­Dectin1. Scale bars: 1000 μm. (E and F) Quantification of X34+ plaque area in cortex [CTX; (E)] and hippocampus [HPC; 
+(F)]. (G and H) ELISA results of Aβ40/42 in the GdnHCl-­soluble (G) or PBS-­soluble (H) fractions from cortical tissues of treated 5xFAD mice at 9 months of age. (I) Representative 
+confocal images of X34+ (blue) plaques and LAMP1 (white) staining in cortex and hippocampus. Scale bars: 30 μm. (J and K) Quantification of total LAMP1+ voxels within 15 μm 
+around X34+ plaques (percentage) in the cortex (J) or hippocampus (K) of treated 5xFAD mice at 9 months of age. (L) Representative images and (M) quantification of total 
+synapsin+ voxels (green) within 15 μm around X34+ plaques (percentage) in the cortex of treated 5xFAD mice at 9 months of age. (N) Representative images and (O) quantification 
+of total PSD95+ voxels (red) within 15 μm around X34+ plaques (percentage) in the cortex of treated 5xFAD mice at 9 months of age. Scale bars: 30 μm. Data in (C), (E) to (H), 
+(J), (K), (M), and (O) are presented as mean ± SEM. N = 9 for GFP, N = 10 for Megf10, and N = 9 for Dectin1. Statistical significance was calculated using one-­way ANOVA with 
+either Dunnett correction or Tukey correction for multiple comparison: *P < 0.05, **P < 0.01, ***P < 0.001, ****P < 0.0001; ns, not significant.
+
+Research Article
+Science 
+5 March 2026
+7 of 18
+A
+B
+F
+C
+D
+E
+H
+G
+I
+AAV-PHP.eB-GFP
+AAV-PHP.eB-Cre-Megf10
+PhpEB.AAV-Adu-Dectin1
+AAV-PHP.eB-GFP
+AAV-PHP.eB-Cre-Megf10
+AAV-PHP.eB-Adu-Dectin1
+J
+K
+L
+O
+Age
+I.V. AAV. injection
+Pathological assessment
+5m
+2.5m
+5xFAD
+GFP
+Megf10
+Dectin1
+0.0
+0.1
+0.2
+0.3
+CTX plaque (X34)
+X34+ area (%)
+GFP
+Megf10
+Dectin1
+0.0
+0.2
+0.4
+0.6
+HPC plaque (X34)
+X34+  area (%)
+****
+****
+***
+***
+GFP
+Megf10 Dectin1
+Total plaque (X34)
+X34+ area (%)
+***
+**
+A 40
+A 42
+-20
+0
+20
+40
+60
+80
+PBS-soluble fraction
+A  concentration (pg/mg)
+ns
+ns
+ns
+ns
+A 40
+A 42
+-100
+0
+100
+200
+300
+400
+GdnHCl-soluble fraction
+A  concentration (ng/mg)
+GFP
+Megf10
+Dectin1
+ns
+ns
+****
+LAMP1
+X34LAMP1
+CTX
+HPC
+AAV-PHP.eB-GFP
+AAV-PHP.eB-Cre-Megf10
+AAV-PHP.eB-Adu-Dectin1
+M
+N
+X34 PSD95
+X34 Synapsin
+GFP
+Megf10
+Dectin1
+0
+1
+2
+3
+4
+Dystrophic neurites 
+around plaques (CTX)
+Total LAMP1  voxels within 
++ plaques(%)
+GFP
+Megf10
+Dectin1
+0
+1
+2
+3
+4
+Dystrophic neurites 
+around plaques (HPC)
+Total LAMP1  voxels within 
++ plaques(%)
+****
+***
+*
+*
+GFP
+Megf10
+Dectin1
+0
+2
+4
+6
+8
+10
+Pre-synpase loss 
+around plaques
+Total Synapsin+ voxels within 
++  plaques(%)
+GFP
+Megf10
+Dectin1
+0
+2
+4
+6
+8
+10
+Post-synpase loss 
+around plaques
+Total PSD95 +  voxels within 
++  plaques(%)
+****
+****
+****
+*
++
++
+AAV-PHP.eB-GFP
+AAV-PHP.eB-Cre-Megf10
+AAV-PHP.eB-Adu-Dectin1
+*
+ns
+GFP
+Megf10
+Dectin1
+-20
+0
+20
+40
+60
+80
+-100
+0
+100
+200
+300
+400
+X34
+X34
+X34
+X34
+X34
+X34
+X34LAMP1
+X34LAMP1
+X34LAMP1
+X34LAMP1
+X34LAMP1
+X34 Synapsin
+X34 Synapsin
+X34 PSD95
+X34 PSD95
+0.0
+0.2
+0.4
+0.6
+*
+ns
+ns
+ns
+ns
+***
+ns
+ns
+ns
+ns
+Fig. 3. One-­time early AAV-­CAR-­A treatment prevents amyloid plaque formation and amyloid-­associated pathology in vivo. (A) Experimental timeline for AAV injection 
+
+Research Article
+Science 
+5 March 2026
+8 of 18
+protein 1 (LRP1) as a marker of reactive astrocytes, including DAA and 
+MyoC+ populations (fig. S8H). We performed immunofluorescence 
+staining for LRP1 in GFAP+ astrocytes and quantified its expression 
+around X34+ plaques. We observed an increase of astrocytic LRP1 in 
+Cre-­Megf10–treated mice but not in Adu-­Dectin1–treated animals 
+(Fig. 5, L and M), consistent with enhanced astrocytic engagement 
+with plaques, as indicated by X34+ Aβ colocalization with lysosomes 
+in plaque-­associated astrocytes (fig. S8I).
+To further explore potential astrocyte–microglia cross-­talk, we con-
+ducted ligand-­receptor pair analysis using NicheNet, focusing on as-
+trocytic ligands and microglial receptors (Fig. 5, N and O). At 9 months, 
+both treatments promoted a shared communication network involving 
+18 astrocytic ligands—such as Vcam1, Sdc2, Sema4a/b, Lrp1b, Gpc6, 
+Clu, and C4b—paired with 17 microglial receptors, including Trem2/
+Tyrobp, Itga5, Itga9, Lrp5, and C5ar2 (Fig. 5, P and Q). We also de-
+tected a subset of these interactions in the 5-­month cohort (fig. S8, J 
+and K). In Cre-­Megf10–treated mice, Apoe and Adam23 were selectively 
+up-­regulated in astrocytes, whereas Adam10/17 were enriched in mi-
+croglia. In Adu-­Dectin1–treated mice, Cd74, Notch2, and Itga4/6 were 
+prominent in microglia (Fig. 5, P and Q). These findings suggest that 
+two CAR-­A constructs not only enhance Aβ clearance but also dis-
+tinctly modulate glial communication and downstream signaling path-
+ways to varying extents.
+To determine the indirect effects of CAR-­A treatment on microglia, 
+we reclustered microglial nuclei into subtypes corresponding to estab-
+lished signatures: homeostatic, transitional, DAM1, DAM2, cycling, 
+interferon (IFN)–responsive, and major histocompatibility complex 
+(MHC)–expressing microglia (Fig. 6, A and B) (74, 75). Notably, we 
+identified a distinct microglia subset that coexpressed DAM genes (such 
+as Apoe, Trem2, and Cd68) together with homeostatic markers (Hexb, 
+Csf1r), defining a hybrid state that was clearly separable from classical 
+DAM or MHC clusters (Fig. 6B and fig. S9A). UMAP projection of pub-
+lished DAM gene sets (76) confirmed their partial overlap with this 
+specific population (fig. S9B). We refer to this subset as the CSF1Rhigh/
+CD68high microglia. At 9 months, both CAR-­A treatments increased the 
+CSF1Rhigh/CD68high population and reduced DAM1 and DAM2 clusters 
+(Fig. 6C and fig. S9, C and D). Additionally, we observed expansion of 
+MHC-­II–expressing microglia only in the Adu-­Dectin1 treatment group 
+(Fig. 6, C and D). Consistent with this, explained DEG analysis showed 
+that, in Adu-­Dectin1–treated mice, CSF1Rhigh/CD68high and MHC-­II 
+clusters accounted for most of the transcriptional changes (fig. S9, 
+E and F). Both CAR-­A treatments were associated with reduced DAM1 
+and DAM2 signatures compared with the GFP control (Fig. 6E). In 
+5-­month mice, in which amyloid burden was low, we observed more 
+homeostatic microglia and fewer CSF1Rhigh/CD68high cells (fig. S9, C 
+and D), with minimal changes in other activated subtypes.
+Immunofluorescence validated the microglia snRNA-­seq profiles. In 
+untreated 5xFAD mice, peri-­plaque microglia showed the expected 
+CSF1Rlow/CD68high DAM phenotype. In contrast, in both CAR-­A–treated 
+groups, microglia surrounding plaques displayed a CSF1Rhigh/CD68high 
+phenotype (Fig. 6, F and G), with a marked enrichment of this population 
+around X34+ plaques (Fig. 6G). This phenotypic shift was associated with 
+increased CD68+ voxels in plaque-­associated IBA1+ microglia, especially 
+in the Adu-­Dectin1 group, in which X34+ Aβ aggregates were frequently 
+observed in microglia lysosomes (Fig. 6, H and I, and figs. S9G and S10, 
+A and B). Consistent with reduced classical DAM activation, both CAR-­
+treated groups down-­regulated GPNMB—a DAM2 marker—in plaque-­
+associated microglia (Fig. 6, J and K, and fig. S10, C and D). Further, 
+immunostaining and quantification revealed an increase in MHC-­II+/
+IBA1+ microglia specifically in the Adu-­Dectin1 treatment group (Fig. 6, 
+L and M, and fig. S10, E and F), whereas no such increase was observed 
+with Cre-­Megf10 treatment. Similarly, Clec7A (Dectin1)—a marker 
+shared by DAM2 and MHC populations—was elevated in the cortex and 
+hippocampus of Adu-­Dectin1–treated mice (fig. S10, G and H), consistent 
+with transcriptomic data showing Clec7a enrichment in both DAM and 
+MHC clusters (Fig. 6B). In summary, both CAR-­A treatments promoted 
+a CSF1Rhigh/CD68high microglial state, while reducing the DAM2 state. 
+Given the association of the CSF1Rhigh/CD68high profile with lower amy-
+loid burden, this shift may reflect decreased stress and exhaustion of 
+microglia secondary to reduced amyloid load.
+Discussion
+In this study, we demonstrated that two selected CARs—Cre-­Megf10 and 
+Adu-­Dectin1—effectively reduced amyloid burden in vivo. These 
+constructs, chosen from four designs based on phagocytic receptors, 
+operate independently of classical FcRγ signaling, which underlies 
+ADCP by mAbs. Given the established role of astrocytes as phagocytes 
+in both health and disease (38, 39, 48, 50, 77) and their  abundance com-
+pared with microglia, we targeted these CARs to astrocytes using the 
+CNS-­penetrant AAV-­PHP.eB vector, enabling noninvasive delivery. 
+Astrocytic CAR expression offers several advantages: (i) It reduces the 
+Aβ burden on microglia, as shown by their increased CSF1Rhigh/CD68high 
+profile and reduction in DAM gene signatures. (ii) It avoids complica-
+tions related to peripheral immune cell infiltration seen in microglia 
+replacement strategies (3, 31, 32, 78). (iii) It allows efficient and durable 
+in vivo delivery without intracranial injection (43, 79).
+A single AAV injection led to sustained CAR expression in astrocytes 
+for at least 3 months and decreased plaque load. Early intervention—
+before plaque formation—achieved greater amyloid prevention, suggest-
+ing the potential for a one-­time, disease-­modifying treatment. Although 
+the AAV-­PHP.eB platform is widely used, and >100 active clinical trials 
+are using AAV therapies for neurological disorders (80), including trials 
+in AD (NCT05040217, NCT00876863), we did observe altered motor activity 
+in treated animals, which may have contributed to—or confounded—the 
+lack of behavioral rescue. This aligns with reports of side effects in some 
+AAV-­based clinical trials (80–82) and underscores the need for safer 
+delivery platforms such as optimized AAV, lipid nanoparticles, or RNA-­
+based systems. Although we did not notice peripheral effects, such as in 
+the spinal cord or gut, potential off-­target effects of AAV in peripheral 
+GFAP+ glial cells should also be evaluated in future studies.
+snRNA-­seq and immunostaining showed that both CARs induced DAAs. 
+Although DAAs were once considered detrimental (73), our data suggest 
+they may play a protective role in this context, supported by up-­regulation 
+of LRP1 in plaque-­associated astrocytes, a known mediator of Aβ clearance 
+(83). Both CAR-­A treatments were also associated with changes in 
+microglial responses, leading to the emergence of a CSF1Rhigh/CD68high 
+and pathological assessment in 5xFAD mice before plaque formation. (B) Representative X34 staining of amyloid plaques in coronal brain sections. Scale bars: 1000 μm.  
+(C) Quantification of total X34+ plaque area (percentage) in coronal sections. (D) Representative X34 staining of amyloid plaques in cortical sections from mice injected with 
+AAV-­PHP.eB-­GFP, AAV-­PHP.eB-­Cre-­Megf10, or AAV-­PHP.eB-­Adu-­Dectin1 at 5 months of age. Scale bars: 1000 μm. (E and F) Quantification of X34+ plaque area in cortex (E) and 
+hippocampus (F). (G and H) ELISA results of Aβ40/42 in the GdnHCl soluble (G) or PBS soluble (H) fractions from cortical tissues of treated 5xFAD mice at 5 months of age.  
+(I) Representative confocal images of X34+ (blue) plaques and LAMP1 (white) staining in cortex and hippocampus. Scale bars: 30 μm. (J and K) Quantification of total LAMP1+ voxels 
+within 15 μm around X34+ plaques (percentage) in the cortex (J) or hippocampus (K) of treated 5xFAD mice at 5 months of age. (L) Representative images and (M) quantification 
+of total Synapsin+ voxels (green) within 15 μm around X34+ plaques (percentage) in the cortex of treated 5xFAD mice at 5 months of age. (N) Representative images and  
+(O) quantification of total PSD95+ voxels (red) within 15 μm around X34+ plaques (percentage) in the cortex of treated 5xFAD mice at 5 months of age. Scale bars: 30 μm. Data 
+in (C), (E) to (H), (J), (K), (M), and (O) are presented as mean ± SEM. N = 11 for GFP, N = 6 for Megf10, and N = 11 for Dectin1. Statistical significance was calculated using 
+one-­way ANOVA with either Dunnett correction or Tukey correction for multiple comparison: *P < 0.05, **P < 0.01, ***P < 0.001, ****P < 0.0001.
+
+Research Article
+Science 
+5 March 2026
+9 of 18
+microglial population. This cluster retained homeostatic genes (such as 
+Csf1r and Hexb) alongside DAM markers (Trem2, Apoe), an intermediate 
+activation state that diverges from canonical DAM1/2 programs, perhaps 
+reflecting reduced microglial stress and exhaustion due to lower Aβ load 
+contributed by CAR-­A treatments. Immunostaining confirmed that this 
+population replaced classical CSF1Rlow/CD68high and GPNMB+ DAM 
+microglia near plaques in CAR-­treated animals.
+Some nuances were observed between Cre-­Megf10 and Adu-­Dectin1 
+CAR-­A treatments. In early-­intervention cohorts, Cre-­Megf10 more 
+effectively limited plaque formation, possibly reflecting its broader 
+binding profile, as crenezumab recognizes both soluble and oligomeric Aβ 
+species. In late treatment cohorts, Cre-­Megf10 also increased a MyoC+ 
+astrocyte population associated with differentiation and lipid metabo-
+lism. In contrast, Adu-­Dectin1 induced stronger microglial clustering, 
+X34 GFAP
+C
+G
+I
+IBA1
+X34
+AAV-PHP.eB-GFP
+AAV-PHP.eB-Cre-Megf10
+AAV-PHP.eB-Adu-Dectin1
+B
+D
+H
+A AAV-PHP.eB-GFP
+AAV-PHP.eB-Cre-Megf10
+AAV-PHP.eB-Adu-Dectin1
+E
+AAV-PHP.eB-GFP
+AAV-PHP.eB-Cre-Megf10
+AAV-PHP.eB-Adu-Dectin1
+AAV-PHP.eB-GFP
+AAV-PHP.eB-Cre-Megf10
+AAV-PHP.eB-Adu-Dectin1
+5m
+5m
+9m
+Astrocytes clustering 
+around plaques (CTX)
+Microglia clustering 
+around plaques (CTX)
+Total IBA1+ voxels within 
++ plaques(%)
+9m
+Total GFAP+  voxels within 
++  plaques(%)
+GFP
+Megf10 Dectin1
+0
+2
+4
+6
+8
+*
+ns
+GFP
+Megf10 Dectin1
+Astrogliosis (CTX)
+GFP
+Megf10 Dectin1
+0
+2
+4
+6
+8
+10
+Astrogliosis (CTX)
+The % of GFAP
++
+ voxels / Z-stack
+ns
+GFP
+Megf10 Dectin1
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+Microgliosis (CTX)
+The % of IBA1+ voxels / Z-stack
+ns
+GFP
+Megf10 Dectin1
+Microgliosis (CTX)
+***
+GFP
+Megf10 Dectin1
+0
+5
+10
+15
+ns
+Total GFAP+  voxels within 
++  plaques(%)
+***
+*
+*
+**
+Astrocytes clustering 
+around plaques (CTX)
+F
+GFP
+Megf10 Dectin1
+0
+1
+2
+3
+4
+5
+ns
+****
+****
+GFP
+Megf10 Dectin1
+0
+1
+2
+3
+4
+5
+ns
+Total IBA1+ voxels within 
++ plaques(%)
+****
+****
+****
+***
+Microglia clustering 
+around plaques (CTX)
+J
+L
+K
+X34 GFAP
+X34 GFAP
+IBA1
+X34
+IBA1
+X34
+X34 IBA1
+X34 IBA1
+X34 IBA1
+0
+0.2
+0.4
+0.6
+0.8
+ns
+*
+The % of GFAP
++
+ voxels / Z-stack
+0
+0.5
+1.0
+1.5
+2.0
+****
+**
+The % of IBA1+ voxels / Z-stack
+ns
+ns
+15  m of X34
+15  m of X34
+15  m of X34
+15  m of X34
+X34 GFAP
+X34 GFAP
+X34 GFAP
+Fig. 4. Differential glial cell responses in the late CAR-­A treatment and the early CAR-­A prevention treatment. (A) Representative images, (B) quantification of the 
+percentage of GFAP+ voxels within 15 μm around X34+ plaques, and (C) quantification of the percentage of total GFAP+ volumes per Z-­stack volume of interest (ROI) in the 
+cortex of treated 5xFAD mice at 9 months of age. Scale bars: 30 μm. (D) Representative images, (E) quantification of the percentage of GFAP+ voxels within 15 μm around X34+ 
+plaques, and (F) quantification of the percentage of total GFAP+ volumes per Z-­stack volume of interest (ROI) in the cortex of treated 5xFAD at 5 months of age. Scale bars: 
+30 μm. (G) Representative images, (H) quantification of the percentage of IBA1+ voxels within 15 μm around X34+ plaques, and (I) quantification of the percentage of total IBA1+ 
+volumes per Z-­stack volume of interest (ROI) in the cortex of treated 5xFAD mice at 9 months of age. Scale bars: 30 μm. (J) Representative images, (K) quantification of the 
+percentage of IBA1+ voxels within 15 μm around X34+ plaques, and (L) quantification of the percentage of total IBA1+ volumes per Z-­stack volume of interest (ROI) in the cortex 
+of treated 5xFAD at 5 months of age. Scale bars: 30 μm. Data in (B), (C), (E), (F), (H), (I), (K), and (L) are presented as mean ± SEM. N = 9 for GFP, N = 10 for Megf10, and N = 9 for 
+Dectin1 at 9 months; N = 11 for GFP, N = 6 for Megf10, and N = 11 for Dectin1 at 5 months. Statistical significance was calculated using one-­way ANOVA with Tukey correction for 
+multiple comparison: *P < 0.05, **P < 0.01, ***P < 0.001, ****P < 0.0001.
+
+Research Article
+Science 
+5 March 2026
+10 of 18
+−5.0
+−2.5
+0.0
+2.5
+5.0
+−4
+0
+4
+UMAP_1
+UMAP_2
+0−HA1
+1−HA2
+2−Gria2+
+3−TA1
+4−TA2
+5−DAA
+6−MyoC 
+7−TA3
+8−Doublets
+9−Ptgds 
+10−Doublets
+11−IFN
+12−MT
+A
+0
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+−1
+0
+1
+2
+Average Expression
+Percent Expressed
+0
+25
+50
+75
+100
+Cst3
+Gpr158
+Cd38
+Plcl1
+Dcc
+Pde10a
+Luzp2
+Ranbp3l
+Slco1c1
+Il33
+Grip1
+Tenm4
+Vim
+Serpina3n
+Ctsb
+Osmr
+Clu
+C4b
+Gria2
+Meis2
+Unc5c
+Tnc
+Epha5
+Myoc
+Fabp5
+Aqp4
+Gfap
+Map1b
+Syt1
+Nrgn
+Olig1
+Olig2
+Ptgds
+Apod
+Nrxn3
+Gria4
+Rbfox3
+Isg15
+Stat1
+Cxcl10
+H2−D1
+A2m
+B2m
+mt−Cytb
+mt−Nd4l
+mt−Co1
+B
+1
+E
+C
+D
+0.3
+0.4
+0.5
+Proportion
+GFP
+Megf10
+Dectin1
+9 month
+DAA
+*
+HA1
+HA2
+Gria2+
+TA1
+TA2
+DAA
+MyoC
+TA3
+Ptgds
+IFN
+MT
+Megf10 − 9mo
+Dectin1 − 9mo
+G
+−0.050
+−0.025
+0.000
+0.025
+DC_2
+−0.02
+0.00
+0.02
+0.04
+DC_1
+DAA projection
+DC_2
+−0.050
+−0.025
+0.000
+0.025
+−0.02
+0.00
+0.02
+0.04
+DC_1
+1
+2
+3
+4-DAA
+5
+6-MyoC
+MyoC projection
+DC2
+DC1
+DC3
+MyoC
+DAA
+HA1/2
+DC2
+DC3
+HA1
+HA2
+TA1
+TA2
+DAA
+MyoC
+Ptgds
+IFN
+MT
+TA3
+IL33+
+H
+0.35
+0.40
+0.45
+6−MyoC
+5−DAA
+11−IFN
+9−Ptgds
+4−TA2
+7−TA3
+12−MT
+1−HA2
+0−HA1
+2−Gria2+
+3−TA1
+Upregulated genes module score
+Megf10 9month explained DEGs
+0.35
+0.40
+0.45
+0.50
+3−TA1
+2−Gria2+
+1−HA2
+0−HA1
+7−TA3
+4−TA2
+12−MT
+11−IFN
+9−Ptgds
+6−MyoC
+5−DAA
+Downregulated genes module score
+0.36
+0.39
+0.42
+0.45
+5−DAA
+6−MyoC
+11−IFN
+12−MT
+9−Ptgds
+4−TA2
+0−HA1
+3−TA1
+1−HA2
+2−Gria2+
+7−TA3
+Upregulated genes module score
+Dectin1 9month explained DEGs
+0.400
+0.425
+0.450
+0.475
+0.500
+0.525
+2−Gria2+
+1−HA2
+7−TA3
+3−TA1
+4−TA2
+0−HA1
+11−IFN
+9−Ptgds
+12−MT
+6−MyoC
+5−DAA
+Downregulated genes module score
+I
+J
+K
+17
+18.5
+0.0
+2.5
+5.0
+7.5
+0.00
+0.02
+0.04
+DAA pseudotime
+Dectin1
+25
+26.5
+0.0
+2.5
+5.0
+7.5
+% Total Cells
+GFP
+20
+21
+0.0
+2.5
+5.0
+7.5
+Megf10
+73.5
+75
+0
+3
+6
+9
+61.5
+63
+0
+3
+6
+9
+71.5
+73
+0
+3
+6
+9
+0.00
+0.01
+0.02
+0.03
+0.04
+MyoC pseudotime
+Dectin1
+% Total Cells
+GFP
+Megf10
+L
+M
+Adam23
+Angpt1
+Apoe
+Boc
+C4b
+Cadm2
+Clu
+Gpc6
+Lrp1b
+Mdk
+Mpdz
+Ncam1
+Ndp
+Nrg2
+Sdc2
+Sema4a
+Sema4b
+Sema6d
+Thbs4
+Timp3
+Tnc
+Tspan3
+Vcam1
+Vcan
+Itga5
+Trem2
+Lrp1
+Plxnb2
+Itga9
+Smo
+Cr1l
+C5ar2
+Cadm1
+Plaur
+F11r
+Nptn
+Lrp5
+Nrp2
+Ptprj
+Tyrobp
+Plxna4
+Itgb3
+Itgav
+Adam17
+Adam10
+Selplg
+Tlr2
+App
+Boc
+C4b
+Cadm2
+Clu
+Cntn1
+Ezr
+Gpc6
+Lrp1b
+Mdk
+Mpdz
+Ncam1
+Ncan
+Ndp
+Neo1
+Sdc2
+Sema4a
+Sema4b
+Sema6d
+Thbs4
+Tnc
+Vcam1
+Vcan
+Trem2
+Notch2
+Lrp1
+Sdc3
+Plxnb2
+Itga9
+Cd74
+Smo
+C5ar2
+Cadm1
+Slc9a1
+Plaur
+Itga4
+Itga6
+F11r
+Nptn
+Lrp5
+Rgmb
+Ptprj
+Tyrobp
+Itgb3
+Itgav
+Itga5
+Selplg
+N
+O
+Megf10 vs GFP (9month)
+Dectin1 vs GFP (9month) 
+Apoe
+Aqp4
+C4b
+Clu
+Ctsb
+Epha5
+Gfap
+Meis2
+Myoc
+OsmrSerpina3n
+Tnc
+Unc5c
+Vim
+−1.0
+−0.5
+0.0
+0.5
+1.0
+−1.0
+−0.5
+0.0
+0.5
+1.0
+Dectin1 vs GFP (log2FC)
+Megf10 vs GFP (log2FC)
+DAA
+MyoC
+Other
+Activation
+Astrocytes DEGs  (9month)
+GFP
+Megf10
+Dectin1
+0
+2
+4
+6
+8
+GFAP-LRP1/GFAP % ard X34 (HPC) - 9m
+The % of LRP1+GFAP+/GFAP+
+15 m around X34+ plaques
+ns
+LRP1
+GFAP
+X34
+AAV-PHP.eB-GFP
+AAV-PHP.eB-Cre-Megf10
+AAV-PHP.eB-Adu-Dectin1
+**
+LRP1
+GFAP
+X34
+LRP1
+GFAP
+X34
+P
+Tspan3
+Timp3
+Nrg2
+Apoe
+Angpt1
+Adam23
+Neo1
+Ncan
+Ezr
+Cntn1
+App
+Cr1l
+Plxna4
+Adam10
+Adam17
+Tlr2
+Notch2
+Sdc3
+CD74
+Slcga1
+Itga4
+Itga6
+Rgmb
+Q
+Vcam1  Sema4a/b  Sdc2  Ncam1
+Mpdz  Lrp1b  Gpc6  Clu  C4b  Cadm12 
+Trem2  Tyrobp  Itga5  Lrp5  C5ar2
+Itga9  Cadm1  Selplg  Plxnb2  Itgb3 
+6
+18
+5
+5
+17
+7
+Astrocyte ligand
+Megf10
+Dectin1
+Microglia receptor
+Megf10
+Dectin1
+ns
+*
+ns
+F
+Fig. 5. snRNA-­seq reveals distinct alterations in astrocyte subpopulations by CAR-­A treatment. (A and B) Diversity of hippocampal astrocytes resolved by snRNA-­seq. (A) 
+
+Research Article
+Science 
+5 March 2026
+11 of 18
+activation, and phagocytic activity, supported by in vitro assays and 
+by increased expression of MHC-­II and Clec7A in vivo at later time 
+points. Together, these results indicate that astrocyte-­mediated Aβ 
+clearance by CAR-­As shapes glial responses in a construct-­specific and 
+stage-­dependent manner. Some differences may reflect the specific Aβ 
+species recognized by each scFv, whereas others may arise from dis-
+tinct intracellular signaling pathways engaged by the CAR constructs, 
+which can influence expression of cell-­surface molecules and soluble 
+mediators that shape microglial interactions. Regardless, astrocytes 
+equipped with CARs can effectively clear amyloid pathology through 
+phagocytosis, even when built with anti-­Aβ antibodies previously 
+shown to have limited clinical efficacy. In comparison to CAR-­microglia 
+or CAR-­macrophages, which face challenges in engraftment and delivery 
+(27) (29–32), astrocyte-­targeted CARs delivered through AAV-­PHP.eB 
+provide a promising and scalable alternative.
+Astrocytes are known to play essential roles in regulating neuronal 
+activity (84) and, like microglia, may contribute to synaptic pruning 
+through their phagocytic function (85, 86). However, owing to limita-
+tions of the current disease model, it remains unclear whether direct 
+manipulation of astrocytes using our CAR system could lead to adverse 
+effects from enhanced phagocytic activity. Despite clear reductions in 
+amyloid pathology, behavioral outcomes—particularly in the late-­stage 
+Adu-­Dectin1 cohort—did not show corresponding improvement. It re-
+mains unclear whether signaling from CAR intracellular domains, es-
+pecially Dectin1, further amplifies activation of amyloid-­primed glia, 
+thereby disrupting synapse maintenance and neuronal function and 
+offsetting the benefits of plaque reduction. Consistent with this possibil-
+ity, CAR-­A treatment in this cohort failed to rescue amyloid-­associated 
+synapse loss to the same extent observed in the early-­intervention group. 
+Together, these findings indicate that optimization of CAR-­A signaling 
+design, dosing strategies, and treatment timing will be essential to 
+achieve cognitive benefit and underscore the need for systematic evalu-
+ation of potential side effects across multiple disease models and with 
+more comprehensive behavioral testing. Future work should also assess 
+how CAR-­A compares with other gene-­ and cell-­based approaches and 
+whether combination strategies, including astrocyte-­targeted metabolic 
+therapies, can further enhance functional recovery (87). This work pro-
+vides a foundation for extending phagocytic CAR approaches in astro-
+cytes or other cell types to other neurodegenerative diseases involving 
+protein aggregates, such as tau in AD, with the potential to tailor target 
+specificity through modular scFv designs.
+Materials and methods
+Chimeric antigen receptor designs and constructs
+The DNA fragments of different CAR genes were designed in BioEdit 
+7.2, and the gBlock fragments were synthesized by Integrated DNA 
+Technologies (IDT). After ligating to second-­generation packaging vec-
+tor, the CAR-­containing vectors were used for lentivirus packaging 
+with SFFV promoter for immortalized cell lines and GFAP promoter 
+for primary astrocytes. The AAV-­PHP.eB constructs and viruses were 
+produced by BrainVTA (Wuhan) Co., Ltd., on the basis of DNA se-
+quences provided by Y.C. and M.C.
+Retroviral transfection of immortalized astrocytes
+Lentiviral vectors were transfected into Lenti-­X 293T cells using a 
+second-­generation lentiviral system packaging (Addgene), and viral 
+supernatants were collected 2 days later. SV40T immortalized mouse 
+astrocyte cells (in-­house stock) were transduced with supernatants of 
+transfected packaging cells with 2 μg/ml polybrene using spin infec-
+tion at 1800 rpm for 45 min. EGFP+ cells were sorted by ARIA-­II at 
+flow cytometry core at Washington University in St. Louis. Final cell 
+lines were frozen and stocked at −80°C until further use. Long-­term 
+storage aliquots were kept in liquid nitrogen.
+Lonza primary astrocyte preparation
+Cryopreserved primary mouse astrocytes (#M-­AsM-­330, Lonza Bioscience) 
+were thawed and cell suspension (1× 106 cell) was transferred into a 
+T75 flask to initiate culture process. The initial culture was maintained 
+in ABMTM basal medium (#CC-­3187, Lonza Bioscience) at 37°C in a 
+humidified 5% CO2 incubator for 6 hours to allow astrocyte recovery. 
+After the recovery phase, astrocyte cultures were maintained in ABMTM 
+basal medium (#CC-­3187, Lonza Bioscience) supplemented with AGMTM 
+SingleQuots (#CC-­4123, Lonza Bioscience), which includes 10% fetal 
+bovine serum (FBS), 1x l-­Glutamine, 1x GA-­1000, 1x ascorbic acid, 1x 
+heparin-binding EGF-like growth factor (HB-EGF), and 1x insulin. Cultures 
+were maintained at 37°C in a humidified 5% CO2 incubator for 7 to 
+10 days to allow astrocyte differentiation with a fresh medium change 
+every 4 days. After 95% confluent monolayer forms, astrocytes were 
+then trypsinized, harvested, and replated into 24-­well plates (50,000 
+cells per well) for lentiviral transduction for 5 days. After transduction, 
+lentiviral-­containing medium was replaced with ABMTM basal medium 
+(#CC-­3187, Lonza Bioscience) supplemented with AGMTM SingleQuots 
+(#CC-­4123, Lonza Bioscience) for an additional 2 days to restore astro-
+cytic homeostasis before phagocytosis and degradation experiments.
+Primary mixed glial culture preparation
+Cortical tissues were dissected individually from P3–P5 C57BL/6 pups, 
+carefully freed of meninges, and dissociated in ice-­cold Hanks’ balanced 
+salt solution using trypsin and DNase to obtain a single-­cell suspension. 
+Cells from each pup were plated separately on Gibco Geltrex (#A1413302, 
+ThermoFisher)–coated six-­well plates and in one T75 flask per pup to 
+generate biological replicates. Cultures were maintained in high-­glucose 
+Dulbecco’s modified Eagle’s medium (DMEM) supplemented with 10% 
+FBS, 1% penicillin/streptomycin, 1x Glutamax, and 1x sodium pyruvate at 
+37°C in a humidified 5% CO2 incubator for 7 to 10 days to allow for astro-
+cyte differentiation. To deplete microglia and precursor cells, cultures 
+UMAP of hippocampal astrocyte subsets after subclustering from the total dataset (as in fig. S8A; n = 18,492 nuclei). (B) Dot plot of marker genes for astrocyte subclusters.  
+(C) Projection of cluster 5–DAA (top) and cluster 6–MyoC astrocyte (bottom) onto diffusion map of snRNA-­seq data from Habib et al. (73). Colored dots represent nuclei 
+annotated according to Habib et al. (73), black dots represent nuclei from the present study. (D) 3D (left) and 2D (right) diffusion map embeddings of astrocyte subclusters [as 
+in (A), after exclusion of doublet clusters; total of 17,936 nuclei]. Diffusion components 2 and 3 were used for the 2D embedding as they best recapitulate the differentiation 
+trajectories. (E) Proportions of disease-­associated astrocytes in GFP-­, Cre-­Megf10–, or Adu-­Dectin1–treated groups at 9 months of age. Single asterisk indicates statistically 
+credible change by scCoda. (F) RNA velocity stream plot on 2D diffusion map embeddings of Megf10 and Dectin1 astrocyte subsets at 9 months of age (n = 607 and 460 nuclei, 
+respectively). (G and H) Histogram of astrocyte distribution along pseudotime for DAA (G) and MyoC (H) trajectories at 9 months of age. (I and J) Bar plot showing module 
+scores of up-­regulated (left) and down-­regulated (right) genes in each astrocyte subcluster for Cre-­Megf10 versus GFP (I) or Adu-­Dectin1 versus GFP (J) at 9 months of age. See also 
+fig. S8, D to F. (K) Scatterplot of DEGs in astrocytes for Cre-­Megf10 versus GFP and Adu-­Dectin1 versus GFP at 9 months of age. Representative genes are highlighted in color. 
+(L) Representative images and (M) quantification of the percentage of GFAP+/LRP1+ voxels within GFAP+ astrocytes (percentage) 15 μm around X34+ plaque in the 
+hippocampus of treated 5xFAD mice at 9 months of age. Scale bars: 30 μm. (N and O) Circos plot displaying the top 30 up-­regulated ligand-­receptor interactions in Cre-­Megf10 
+(N) or Adu-­Dectin1 (O) compared with GFP at 9 months of age. Red, astrocytes; blue, microglia. (P and Q) Pie graphs of overlapped gene analysis in the ligand-­receptor 
+interactions from astrocytic ligands (P) to microglial receptors (Q). HA, homeostatic astrocytes; TA, transitional astrocytes; DAA, disease-­associated astrocytes; IFN, interferon-­
+responsive astrocytes; DEGs, differentially expressed genes. Data in (M) are presented as mean ± SEM. N = 9 for GFP, N = 10 for Megf10, and N = 9 for Dectin1. Statistical signifi-
+cance was calculated using one-­way ANOVA with Tukey correction for multiple comparison: *P < 0.05, **P < 0.01, ***P < 0.001, ****P < 0.0001.
+
+Research Article
+Science 
+5 March 2026
+12 of 18
+−5
+0
+5
+−5
+0
+5
+UMAP_1
+UMAP_2
+TM
+HM
+CSF1Rhi/CD68hi
+DAM1
+DAM2
+Cycling
+IFN
+MHC
+A
+B
+C
+TM
+HM
+DAM1
+DAM2
+Cycling
+IFN
+MHC
+Tmem119
+P2ry12
+P2ry13
+Csf1r
+Hexb
+Cx3cr1
+Siglech
+Cd33
+Tgfbr1
+Sall1
+Selplg
+Mef2a
+Jun
+Ms4a6d
+Bin1
+Serinc3
+Cd9
+Cd68
+Apoe
+Trem2
+Tyrobp
+Cd63
+Lgals3
+Axl
+Spp1
+Cstb
+Ctsd
+Lpl
+Itgax
+B2m
+Cst7
+Csf1
+Gpnmb
+Clec7a
+Igf1
+Irf8
+Fth1
+Lyz2
+Ccl3
+Ccl6
+Timp2
+Irf7
+Ifitm3
+Ifit2
+Ifit3
+Cxcl10
+Oasl2
+Cd69
+Isg15
+Usp18
+H2−D1
+H2−K1
+H2−Eb1
+H2−Aa
+H2−DMa
+Cd74
+Top2a
+Mki67
+−1
+0
+1
+2
+Average Expression
+Percent Expressed
+0
+25
+50
+75
+100
+E
+D
+F
+G
+AAV-PHP.eB-GFP
+AAV-PHP.eB-Cre-Megf10
+AAV-PHP.eB-Adu-Dectin1
+CD68
+IBA1
+X34
+H
+GFP
+Megf10
+0
+5
+10
+15
+20
+25
+IBA1-CD68/IBA1 % ard X34 (HPC) - 9m
+The % of CD68+IBA1+/IBA1+
+ns
+0.00
+0.05
+0.10
+0.15
+0.20
+0.25
+MHC-II
+Proportion
+GFP
+Megf10
+Dectin1
+0.00
+0.05
+0.10
+0.15
+0.20
+0.25
+DAM1
+Proportion
+0.00
+0.05
+0.10
+0.15
+0.20
+0.25
+DAM2
+Proportion
+GFP
+Megf10
+Dectin1
+0.00
+0.05
+0.10
+0.15
+0.20
+0.25
+Proportion
+Apoe C1qb
+C1qc
+Cd74
+Cd81
+Cd9
+Cst3
+Cst7
+Ctsd
+Ctsl
+Ctss
+Ctsz
+Fth1
+H2−Aa
+H2−Ab1
+H2−D1
+H2−Eb1
+H2−K1
+Trem2
+Tyrobp
+−0.25
+0.00
+0.25
+0.50
+−0.3
+0.0
+0.3
+0.6
+Dectin1 vs GFP (log2FC)
+Megf10 vs GFP (log2FC)
+DAM
+MHC2
+Other
+Microglia DEGs at 9month
+5xFAD
+GFP
+Megf10 Dectin1
+0.0
+0.5
+1.0
+1.5
+CD68+CSF1R+ ard X34 (HPC) - 9m
+The % of CD68+/CSF1R+
+15 m around X34+ plaques
+ns
+Dectin1
+GFP
+Megf10 Dectin1
+0.00
+0.05
+0.10
+0.15
+IBA1-GPNMB % ard X34 (HPC) - 9m
+The % of GPNMB+/IBA1+ voxels
+GFP
+Megf10 Dectin1
+0.0
+0.2
+0.4
+0.6
+0.8
+Microglia clustering
+around plaques (HPC) -9m
+The % of IBA1+/MHC-II+ voxels within 
+ns
+AAV-PHP.eB-GFP
+AAV-PHP.eB-Cre-Megf10
+AAV-PHP.eB-Adu-Dectin1
+GPNMB
+IBA1
+X34
+MHC-II
+IBA1
+X34
+AAV-PHP.eB-GFP
+AAV-PHP.eB-Cre-Megf10
+AAV-PHP.eB-Adu-Dectin1
+AAV-PHP.eB-GFP
+AAV-PHP.eB-Cre-Megf10
+AAV-PHP.eB-Adu-Dectin1
+J
+L
+*
+**
+****
+***
+****
+*
+**
+I
+K
+M
+*
+CD68
+CSF1R
+X34
+CD68
+CSF1R
+X34
+CD68
+CSF1R
+X34
+5xFAD
+CD68
+IBA1
+X34
+CD68
+IBA1
+X34
+GPNMB
+IBA1
+X34
+GPNMB
+IBA1
+X34
+MHC-II
+IBA1
+X34
+MHC-II
+IBA1
+X34
+15 m around X34+ plaques
+15 m around X34+ plaques
+15 m around X34+ plaques
+CD68
+CSF1R
+X34
+*
+*
+*
+ns
+*
+*
+ns
+ns
+CSF1Rhi/CD68hi
+CSF1Rhi/CD68hi
+ns
+ns
+ns
+ns
+ns
+****
+ns
+*
+Fig. 6. CAR-­A treatment induces distinctive microglial responses between Cre-­Megf10 and Adu-­Dectin1 when compared with GFP controls. (A and B) Microglia subsets 
+
+Research Article
+Science 
+5 March 2026
+13 of 18
+in six-­well plates were shaken for 2 hours at 120 rpm and floating cells 
+removed, leaving behind a confluent astrocyte monolayer. Cells were 
+then trypsinized and plated into precoated 48-­well plates (10,000 cells 
+per well) for CAR-­AAV infection [2 × 106 vector genomes (vg) per cell] 
+for 72 hours. After infection, the AAV-­containing medium was replaced 
+with standard culture medium for an additional 3 days to restore as-
+trocytic homeostasis. In parallel, cultures in T75 flasks were shaken to 
+harvest microglia, which were subsequently transferred into CAR-­
+expressing astrocyte cultures (20,000 microglia per well) to complete 
+the mixed glial culture (fig. S2A).
+Aβ42 labeling and oligomer and fibril preparation
+Human Aβ42 peptide was purchased from GenScript (#RP10017). 
+Monomeric Aβ42 was prepared in dimethyl sulfoxide following previous 
+literature and conjugated with AlexaFluor-­594, -­647, or pHrodo Red 
+NHS Ester (#A20004, A20006, and P36011; Invitrogen), molar ratio 
+protein:dye = 1:5 in sodium bicarbonate buffer (pH 8.5) at room tem-
+perature overnight. Unconjugated dye was removed after 24 hours 
+3.5-­kDa cutoff dialysis in H2O at 4°C. Then, Aβ42-­594/647/pHrodo 
+peptide was dried with speed vacuum at room temperature overnight. 
+Aβ42-­594/647/pHrodo oligomers were prepared following the same 
+protocol (88) and dialyzed to PBS for 3 days. Final products were pre-
+pared into 10 μM aliquots and stored at −80°C until further use.
+AD-­tau, hTau fibrils, α-­synuclein PFF and myelin labeling and 
+stock preparation
+AD-­tau was from the in-­house stock in Holtzman lab. Human recom-
+binant Tau-­441 (2N4R) P301S mutant protein pre-­formed fibrils were 
+purchased from StressMarq Bioscience Inc. (SPR-­329). The α-­synuclein 
+PFF was from the in-­house stock from Albert A. Davis lab at Washington 
+University in St. Louis. The myelin debris was collected from the my-
+elin layer in the brain dissociation step by Adult Brain Dissociation 
+Kit (#130-­107-­677, Miltenyi Biotec). All the materials were labeled with 
+pHrodo Deep Red TFP Ester (succinimidyl ester) (#P35359, Invitrogen) 
+(pHrodoAPC) in the same procedure as described. Final pHrodoAPC-­
+labeled products were prepared into 10 μM aliquots and stored at 
+−80°C until needed.
+Phagocytosis and degradation experiments
+Before the phagocytosis or degradation assay, immortalized astrocytes 
+described above were recovered in DMEM differentiation media for 
+2 days. When fully recovered immortalized astrocytes were 70% conflu-
+ent, non–tissue culture–treated 96-­well plates were seeded with 20,000 
+cells per well in five replicates for each CAR construct in DMEM media 
+for a phagocytosis/degradation assay the next day. The primary astro-
+cytes were either differentiated and plated for 1 week (Lonza) or freshly 
+isolated to differentiate into mixed glial culture and replated for 1 week 
+(ex vivo mixed glial culture) to reach confluency. Then confluent primary 
+astrocytes were spin-­infected by freshly produced Cre-­CAR– or Adu-­
+CAR–expressing lentivirus with GFAP promoter with the same ap-
+proach as described earlier. For the phagocytosis assay, oAβ42-­pHrodo 
+were added into each well at 200 nM for 4 hours for immortalized 
+astrocytes or 8 hours for primary astrocytes. For degradation assay with 
+immortalized astrocytes, all cells were treated with oAβ42-­pHrodo at 
+200 nM for 4 hours and switched to normal media for 0 and 24 hours 
+before being harvested. For degradation assay with primary astrocytes, 
+all cells were treated with fAβ42-­647 at 200 nM for 8 hours and switched 
+to normal media for 0 and 72 hours before being harvested. For surface 
+binding assay, prechilled astrocytes were treated with monomeric Aβ42-­
+AlexaFluor-­647 at 100 nM for 1 hour at 4 °C. After washing with PBS 
+twice, all cells were resuspended with MACS buffer [PBS, 2 mM EDTA, and 
+0.5% bovine serum albumin (BSA)], and flow cytometry was performed 
+on a BD FACS Calibur/BD X20/BD Canto II System (FACS, fluorescence-­
+activated cell sorting) at the flow cytometry core at Washington University 
+in St. Louis. GFP (GreenLantern) signal was determined by FL1 (FITC), 
+and Deep Red pHrodo signal was determined by FL4 Far Red (APC) and 
+further analyzed by FlowJo.
+Animals
+The 5xFAD mice were purchased from JAX lab, which is on a C57BL/6 
+background. The WT (C57BL/6) control mice were from the same breeding 
+but without transgene in-­house. All mice were bred and housed in 
+specific pathogen-­free conditions. The Institutional Animal Care and 
+Use Committee at Washington University in St. Louis approved all 
+protocols used in this study. Age-­ and sex-­matched animals used for 
+amyloid pathology tests were euthanized at 5 months of age (early 
+treatment) and 9 months of age (late treatment), with each experi-
+mental group containing both transgenic and nontransgenic mice. The 
+brains of transgene-­positive animals were collected.
+AAV-­PHP.eB intravenous injection
+As described in previous literature (43), one-­time intravenous admin-
+istration of AAV-­PHP.eB-­CAR vectors were injected into the retro-­orbital 
+sinus of adult 5xFAD mice (2.5 months of age for early treatment and 
+6 months of age for the late treatment). For the viral safety assessment, 
+WT mice were injected at 4 months of age. The retro-­orbital sinus 
+administration of 100 μl (7 × 1012 vg/ml) virus was using 70 μl of frozen 
+stock viruses (1 × 1013 vg/ml) from BrainVTA (Wuhan) Co., Ltd., with 
+30 μl of sterile Gibco PBS (#10010023, ThermoFisher), mixed before 
+injections.
+Animal behavioral tests
+General design of behavioral tests: AAV-­infected 5xFAD and WT mice 
+were evaluated for differences in behavior. After habituation and 
+handling in the Washington University Animal Behavior Core, mice 
+were assessed for locomotor activity, spontaneous alternation Y-­maze, 
+elevated plus maze, and fear conditioning. All tests were conducted 
+during the light phase of the light/dark cycle, by an experimenter blind 
+to the genotype of the mice.
+One-­hour locomotor activity and open-­field behavior test: Motor and 
+exploratory behavior of mice were evaluated over a 1-­hour period in 
+transparent (47.6 cm by 25.4 cm by 20.6 cm high) polystyrene enclo-
+sures. Each cage was surrounded by a frame containing a 4 × 8 matrix 
+resolved by snRNA-­seq. (A) UMAP of microglia subsets after integration of the 5-­ and 9-­month-­old time points (n = 31,581 nuclei). (B) Dot plot of marker genes for each 
+microglia subset. (C) Box plot showing the proportion of CD68hi (left) and MHC-­II (right) microglia subsets at 9 months of age. (D) Scatterplot of DEGs in microglia comparing 
+Cre-­Megf10 versus GFP and Adu-­Dectin1 versus GFP at 9 months of age. Blue, DAM genes; red, MHC-­II genes. (E) Box plot showing the proportions of DAM1 (left) and DAM2 
+(right) in GFP, Cre-­Megf10, and Adu-­Dectin1 groups at 9 months of age. (F) Representative images and (G) quantification of the percentage of CSF1R+/CD68+ voxels within  
+15 μm around X34+ plaque in the hippocampus of treated 5xFAD mice at 9 months of age. Scale bars: 30 μm. (H) Representative images and (I) quantification of the percentage of 
+CD68+/IBA1+ voxels within IBA1+ microglia 15 μm around X34+ plaque in the hippocampus of treated 5xFAD mice at 9 months of age. Scale bars: 30 μm. (J) Representative 
+images and (K) quantification of the percentage of GPNMB+/IBA1+ voxels within IBA1+ microglia 15 μm around X34+ plaque in the hippocampus of treated 5xFAD mice at  
+9 months of age. Scale bars: 30 μm. (L) Representative images and (M) quantification of the percentage of MHC-­II+/IBA1+ voxels within IBA1+ microglia 15 μm around X34+ 
+plaque in the hippocampus of treated 5xFAD mice at 9 months of age. Scale bars: 30 μm. TM, transitional microglia; HM, homeostatic microglia; DAM, disease-­associated 
+microglia. Data in (G), (I), (K), and (M) are presented as mean ± SEM. N = 7 for 5xFAD in G, N = 9 for GFP, N = 10 for Megf10, and N = 9 for Dectin1. Statistical significance was 
+calculated using one-­way ANOVA with Tukey correction for multiple comparison: *P < 0.05, **P < 0.01, ***P < 0.001, ****P < 0.0001.
+
+Research Article
+Science 
+5 March 2026
+14 of 18
+of photocell pairs, the output of which was fed to an on-­line computer 
+(Hamilton-­Kinder, LLC, Poway, CA). The system software (Hamilton-­
+Kinder, LLC) was used to define a 33 cm by 11 cm central zone and a 
+peripheral or surrounding zone that was 5.5 cm wide with the sides 
+of the cage being the outermost boundary. This peripheral area ex-
+tended along the entire perimeter of the cage. Variables that were 
+analyzed included the total number of ambulations and rearing on 
+hindlimbs as well as the number of entries, the time spent, and the 
+distance traveled in the center area along with the distance traveled 
+in the periphery surrounding the center.
+Spontaneous alternation Y-­maze: Testing was conducted according to 
+our previously published procedures. Briefly, this involved placing a 
+mouse in one arm of a Y-­maze that contained three arms that were 
+10.5 cm wide, 40 cm long, and 20.5 cm deep, where an arm was oriented 
+at 120° with respect to each successive other arm. Mice were allowed 
+to explore the maze for 8 min, and entry into an arm was scored only 
+when the hindlimbs had completely entered the arm. An alternation 
+was defined as any three consecutive choices of three different arms 
+without reexploration of a previously visited arm. Dependent vari-
+ables included the number of alternations and arm entries along with 
+the percentage of alternations, which was determined by dividing the 
+total number of alternations by the total number of entries minus 2, 
+then multiplying by 100.
+Elevated plus maze (EPM) test: EPM was conducted to evaluate anxiety 
+in mice as previously described (63). Briefly, a 5-­min trial was conducted 
+in a dimly lit room using a standard mouse EPM provided by Kinder 
+Scientific. The EPM consists of a 5 cm by 5 cm black acrylic surface 
+positioned 63 cm above the floor equipped with photo beam pairs to 
+monitor the movement of the mice. Four arms extend from a central 
+area. Each arm measures 35 cm in length and 5 cm in width (two open 
+and two with 15-­cm-­height wells). Mice were placed in the center square 
+that connects the open and closed arms and allowed to explore dur-
+ing the 5-­min trial. The MotorMonitor software measures various pa-
+rameters such as duration, distance traveled, entries, and time at rest 
+in each zone (closed arms, open arms, and center area) by quantify-
+ing beam breaks.
+Conditioned fear: A conditioning protocol similar to previously 
+described was used to train and test mice using two clear-­plastic condi-
+tioning chambers (26 cm by 18 cm by 18 cm high) (Med-­Associates, 
+St. Albans, VT), which were easily distinguished by different olfactory, 
+visual, and tactile cues present in each chamber (chamber 1: metal grid 
+floor, metal walls, mint scent; chamber 2: solid acrylic floor, black acryl-
+ic walls, coconut scent). On the first day, each mouse was placed into the 
+conditioning chamber (chamber 1) for 5 min, and freezing behavior was 
+quantified during a 2-­min baseline period. Freezing (no movement except 
+that associated with respiration) was quantified using FreezeFrame 
+image analysis software (Actimetrics, Evanston, IL), which allows for 
+simultaneous visualization of behavior while adjusting for a “freezing 
+threshold” during 0.75-­s intervals. After baseline measurements, a con-
+ditioned stimulus (CS) consisting of an 80 dB tone (white noise) was 
+presented for 20 s followed by an unconditioned stimulus (US) consist-
+ing of a 1 s, 1.0 mA continuous foot shock. This tone-­shock (T/S) pairing 
+was repeated each minute over the next 2 min, and freezing was quanti-
+fied after each of the three tone-­shock pairings. Twenty-­four hours after 
+training, each mouse was placed back into the original conditioning 
+chamber (chamber 1) to test for fear conditioning to the contextual cues 
+in the chamber. This involved quantifying freezing over an 8-­min peri-
+od without the tone or shock being present. Forty-­eight hours after the 
+contextual test, the mice were evaluated on the auditory cue component 
+of the conditioned fear procedure, which included placing each mouse 
+into the other chamber (chamber 2) containing distinctly different cues. 
+Freezing was quantified during a 2-­min “altered context” baseline period 
+as well as over a subsequent 8-­min period during which the auditory 
+cue (CS) was presented.
+Brain isolation and fixation
+Whole-­brain samples for AAV-­CAR injected cohorts were collected 
+after perfusion. The brains were dissected and cut into two hemi-
+spheres: The right hemisphere was fixed in 4% paraformaldehyde for 
+at least 48 hours, and the left hemisphere was further microdissected 
+into anterior cortex, posterior cortex, and hippocampus, followed by 
+flash-­freezing in 2-­methylbutane on dry ice and subsequently stored 
+at −80°C until needed. The right brain hemispheres were cut coronally 
+into 30-­μm sections on a freezing sliding microtome (SM1020R, Leica) 
+and stored in cryoprotectant solution (0.2 M PBS, 15% sucrose, 33% 
+ethylene glycol) at –20°C until use. For samples from the in vivo phago-
+cytosis experiment, the injected hippocampus was dissected from the 
+whole brain samples for AAV-­CAR injected cohorts collected after 
+perfusion and kept in DPBS buffer with calcium and magnesium 
+(#14040117, ThermoFisher) for glial cell isolation and flow cytometry.
+Stereotactic intracerebral injections of AlexaFluor-­647–labeled 
+Aβ42 fibrils
+After AAV infection for 4 weeks, WT mice were anesthetized with 
+isoflurane and immobilized in a stereotaxic frame (Kopf Instruments). 
+A 0.5-­ to 1.0-­cm-­long incision was made in the shaved and sterilized 
+skin to expose the bregma. Before intracerebral injection, Aβ42-­647 
+fibril aliquots were thawed on ice and sonicated with 50% amplitude 
+for 30 s. Aβ42-­647 fibrils (1 μg) were injected into the dentate gyrus at 
+specific stereotaxic coordinates (anterior/posterior, −2.5 mm; medial/
+lateral, −2.0 mm; dorsal/ventral, −2.2 mm) using a Hamilton syringe 
+(#80265-­1702RNR, #7803-­07, Hamilton). The needle was retained for 
+an additional 5 min before it was slowly withdrawn. The incision was 
+cleaned with povidone-­iodine antiseptic solution and sutured. Mice 
+were allowed to recover on a 37°C heating pad and monitored for any 
+signs of stress. Food and water were provided ad libitum. Three days 
+after the injection, mice were euthanized, and brains were harvested 
+for glial cell extraction and flow cytometry.
+Brain dissociation and flow cytometry for in vivo phagocytosis
+Mice were perfused with prechilled DPBS containing 0.3% heparin to 
+remove blood contamination. Hippocampal tissues were extracted 
+followed by microdissection of the hippocampi that had been injected 
+with AlexaFluor-­647-­labeled Aβ42 fibrils, where the contralateral hippo-
+campi were collected as internal negative controls for flow cytometry 
+gating. Single-­cell suspensions from the hippocampi were prepared 
+using the Adult Brain Dissociation Kit (#130-­107-­677, Miltenyi Biotec) 
+following the manufacturer’s instructions.
+All subsequent steps for flow cytometry were performed in MACS 
+buffer on ice or using a 4°C centrifuge. Cell suspensions were first in-
+cubated with anti-­CD16/32 Fc block (#C247, Leinco Tech) for 5 min, then 
+stained for 20 min with CD45-­BV510, CD11b-­APC/Cy7 (#103137, #101225, 
+Biolegend), and ACSA2-­PE (#130-­123-­284, Miltenyi Biotec). After washing, 
+cells were analyzed on Cytek Aurora with 4′,6-­diamidino-­2-­phenylindole 
+(DAPI) used as a live/dead marker. GFP was intrinsically expressed by 
+astrocytes transduced with the CAR-­AAV constructs, and cells contain-
+ing Aβ42 fibrils were identified by AlexaFluor-­647 labeling on the fibrils. 
+Flow cytometric data were analyzed using FlowJo, and statistical analy-
+ses were performed with Prism.
+Immunofluorescence staining
+Floating mouse coronal brain sections with a thickness of 30 μm were 
+prepared and stained with Aβ plaque marker X34 (1:1000, #SML1954, 
+Millipore Sigma) for 20 min. Then the slices were washed with PBS 
+and subsequently blocked using a solution containing 3% Donkey se-
+rum, 3% BSA, and 0.25% Triton X-­100 in PBS. After the blocking step, 
+the brain sections were stained with anti-­IBA1 (1:500, #17198, Cell 
+
+Research Article
+Science 
+5 March 2026
+15 of 18
+Signaling Technology), anti-­GFAP (1:500, #PA1-­10004, Invitrogen), anti-­
+Olig2 (1:500, #AF2418, R&D Systems), anti-­MHC-­II (1:500, #107618, 
+BioLegend; 1:250, #H1721, Leinco Tech), anti-­mouse ApoE (10 μg/ml, clone: 
+HJ6.3, biotinylated, gift from Holtzman lab), anti-­CD68 (1:500, 
+#137002, BioLegend), anti-­Synapsin-­1/2 (1:500, #106004, Synaptic sys-
+tems), anti-­PSD95 (1:200, #51-­6900, Thermo Fisher Scientific), anti-­
+GPNMB (1:500, #AF2330, R&D Systems), anti-­LRP1 (1:500; L2295, 
+Sigma), anti-­CSF1R (1:500; #EPR23529-­26, abcam), and anti-­LAMP1 
+(1:500; #AF4320, R&D Systems) overnight at 4°C, followed by staining 
+with according fluorescent secondary antibodies (1:1000, Thermo Fisher 
+Scientific) for 2 hours at room temperature. The staining of panAβ/
+IBA1/Clec7a was performed at room temperature for 48 hours for the 
+primary staining with CLEC7A (1:50; #mabg-­mdect, InvivoGen), anti-­
+mouse Aβ (1:500, clone: HJ3.4, biotinylated, gift from Holtzman lab), 
+and anti-­IBA1 (1:500, #17198, Cell Signaling Technology). All antibodies 
+were used in blocking buffer, and between all incubations, sections were 
+washed for 10 min in PBS three times. Images were collected and ana-
+lyzed as described above. Three-­dimensional reconstruction and extrac-
+tion of parameters were performed in Imaris (version 10.0.0), and 
+further processing was performed using automated scripts in Matlab.
+Confocal image acquisition and analysis
+Images were obtained with eight replicates from two slices per brain 
+region per mouse for immunofluorescence. Four z-­stacks (20 μm) of each 
+brain region (e.g., four from ipsilateral CTX and four from contralateral 
+CTX) per slice were acquired on a Leica STELLARIS 5 confocal micro-
+scope and the Leica Application Suite X software (4.2.1.23810) with a 20x 
+objective and 1024 pixel by 1024 pixel resolution. Laser and detector set-
+tings were set for the acquisition of each immunostaining combination 
+consistently. High-­resolution representative images were maximum pro-
+jection from stacks imaged by confocal microscopy were 3D-­reconstructed 
+using the Leica Application Suite X software. Quantification of confocal 
+images for LAMP1, Synapsin, PSD95, IBA1, GFAP, CD68, MHC-­II, and 
+APOE around X34+ plaques was performed on a semiautomated 
+platform using MATLAB and Imaris 10 software (Bitplane) to create 
+surfaces of each stain on the basis of a threshold applied to all images, 
+dilate X34 surfaces 15 μm, and colocalize various immunostained sur-
+faces and dilated X34 surfaces. For percent voxel quantifications, colocal-
+ized volumes for each immunostained surface were summed per image 
+and divided by the X34+ extended surface. Quantification of confocal 
+images for CD68, APOE, GPNMB, and CLEC7A in Iba1+ microglia or 
+LAMP1 and LRP1 in GFAP+ astrocytes was performed by creating a sur-
+face of CD68/APOE/GPNMB/CLEC7A colocalized with Iba1 or LAMP1/
+LRP1 colocalized with GFAP voxels and dividing it with total IBA1 or 
+GFAP surfaces. The final individual value was averaged from a total of 
+eight images per brain region per mouse. All staining experiments were 
+imaged and quantified by a blinded investigator or labeling strategy.
+Soluble and insoluble Aβ40 and Aβ42 extractions
+The hippocampus samples were weighed, and then PBS buffer containing 
+complete protease inhibitor (#11697498001, Roche) and phosSTOP phos-
+phatase inhibitor (#04906845001, Roche) at a ratio of 20 μl per milligram 
+of tissue was added. The samples were homogenized and centrifuged at 
+20,627g for 30 min at 4°C, resulting in the collection of the supernatant as 
+the PBS-­soluble fraction. The pellet was then resuspended in the same 
+volume of 5 M guanidine buffer containing complete protease inhibitor 
+and phosSTOP phosphatase inhibitor, followed by further homogenization. 
+The samples were incubated on a rotator for 1 hour at room temperature. 
+Subsequently, the samples were centrifuged again, and the supernatant 
+was collected as the PBS-­insoluble guanidine fraction (guanidine fraction). 
+The concentrations of Aβ40 and Aβ42 were measured by ELISA.
+Aβ40/42 ELISA assays
+Anti-­Aβ40 (HJ2, generated in house) or anti-­Aβ42 (HJ7.4, generated in 
+house) (10 μg/ml) were separately coated on the high-­binding ELISA plates 
+in sodium carbonate coating buffer at 4°C overnight. After blocking with 
+2% BSA PBS-­Tween 20 (0.05%) at 37°C for 1 hour, 50 μl of each sample 
+diluted in Aβ sample buffer (0.05% PBST with 0.5% BSA and 1X complete/
+phosSTOP) were loaded into each well and incubated at 4°C overnight. On 
+the last day, 50 μl of 150 ng/ml probing antibody (HJ5.1-­biotinated) were 
+added into each well, and the plates were incubated at 37°C for 90 min. 
+Then 50 μl of sample buffer with streptavidin-poly-horseradish 
+peroxidase-40 (0.01%) was added into each well, and the plates were incu-
+bated for 90 min at RT. Plates were then washed and developed with Super 
+Slow ELISA 3,3′,5,5′-­Tetramethylbenzidine (Sigma) and read at 450 nm. 
+Between incubation steps, all plates were washed three times with 
+0.05% PBST.
+Single nucleus RNA-­seq
+Library preparation, sequencing, and alignment: snRNA-­seq of 5-­ and 
+9-­month-­old mouse cortex: Nuclei were isolated from five randomly 
+selected flash-­frozen mouse brain tissues per group (N = 30 mice total) 
+and sorted for DAPI+ NeuN-­ nuclei by FACS. Nuclei were pooled by 
+group, and libraries were prepared using the 10X Chromium Single-­cell 
+3′ v3 (5-­month-­old) or v4 (9-­month-­old) kit. Sequencing was performed 
+using an Illumina NovaSeq sequencer. Sequencing reads were analyzed 
+with mouse reference genome GRCm39-­2024-­A with the addition of the 
+WPRE and GFP transgenes. Raw sequencing data was aligned using 
+CellRanger (5-­month-­old: v7.2.0; 9-­month-­old: v.8.0.0).
+snRNA-­seq of 5-­ and 9-­month-­old mouse hippocampus: Nuclei were 
+isolated from four randomly selected flash frozen mouse brain tissues 
+per group and sorted for DAPI+ NeuN-­ Olig2-­ nuclei by FACS. Nuclei 
+were pooled and libraries were prepared using the 10X Chromium Single-­
+cell 5′ v2 kit. Sequencing was performed using an AVITI sequencer. 
+Sequencing reads were analyzed with mouse reference GRCm39-­
+2024-­A containing the GFP transgene. Raw sequencing data was aligned 
+using CellRanger (v9.0.0).
+Quality control and preprocessing: CellRanger outputs (filtered_feature_
+bc_matrix) were input into Seurat (89) (v4.4.0) for analysis. Data were 
+log-­normalized, the top 2000 variable features identified, cells clus-
+tered, and dimensionality reduction performed using UMAP. Ambient 
+RNA was removed using SoupX autoEstCont() function. Cells were then 
+excluded using the following criteria: <500 or >5000 unique genes, per-
+cent mitochondrial reads >5%, >25,000 detected unique molecular 
+identifiers (UMIs). Automated doublet removal was performed using 
+DoubletFinder using an estimated doublet rate of 8%. Clusters consist-
+ing of doublets or cells heavily contaminated by ambient RNA that fur-
+ther arose during subclustering were manually removed.
+Broad cluster annotation was performed using canonical markers as 
+follows: microglia (P2ry12, Trem2, Tmem119), astrocytes (Gfap, Aqp4), 
+oligodendrocytes (Mbp, Olig1, Olig2, Mog), OPCs (Pdgfra, Olig1, Olig2), 
+neurons (Snap25, Rbfox3), vascular (Vwf, Cd34), ependymal cells (cilia/
+flagella genes such as Cfap299, Cfap54, Dnah12). For subclustering analy-
+ses, pseudogenes, noncoding RNAs, and unannotated genes were removed 
+from the count matrix, and SCTransform (90) normalization was per-
+formed with nUMI and percentage mitochondrial reads as regressed vari-
+ables. Microglia, astrocytes, and OPCs were subclustered from hippocampus 
+Olig2-­ NeuN-­ snRNA-­seq data, while oligodendrocytes were subclustered 
+from cortical NeuN-­ snRNA-­seq data (see Fig. 5 and figs. S7 and S8). 
+Differential expression testing was performed with Seurat FindMarkers() 
+or FindAllMarkers() using the Wilcoxon rank-­sum test.
+Astrocyte subclustering analysis: Hippocampal astrocytes were subsetted 
+from the global Seurat object. The SCTransform() function was reap-
+plied to recalculate Pearson residuals and variable features, as well as 
+to recenter the scaled matrix. Annotation was performed on the basis 
+of diffusion map embeddings of Louvain clusters and marker genes. 
+Transitional clusters were defined as those with intermediate gene sig-
+natures between homeostatic astrocytes and MyoC/DAA astrocytes.
+
+Research Article
+Science 
+5 March 2026
+16 of 18
+Microglia subclustering analysis: Hippocampal microglia was subset-
+ted from the global Seurat object. Data was renormalized and vari-
+able features detected using the SCTransform() function. The 5-­ and 
+9-­month-­old time points were integrated with Seurat’s integration 
+procedure using the reciprocal principal components analysis (PCA) 
+method and 2000 integration features.
+Microglia subclusters, including homeostatic microglia (HM), tran-
+sitional microglia (TM), cycling microglia, interferon-­responsive mi-
+croglia (IFN), and MHC-­IIhi microglia (MHC) were annotated on the 
+basis of markers as previously described (70, 74). We noted three sepa-
+rate clusters that express varying levels of DAM markers, which we 
+called DAM-­like 1/2/3. Cluster-­specific expression of DAM genes can 
+be found in Fig. 6.
+To include Clec7a in the count matrix, we realigned the sequencing data 
+to a GRCm39-­based reference with the Clec7a coding sequence added as 
+previously described (70). Only the microglia barcodes were retained, and 
+counts were normalized using SCTransform and added back to the 
+microglia subcluster Seurat object using the CreateAssayObject() function. 
+Transitional microglia were defined as those with intermediate gene sig-
+natures between homeostatic and disease-­associated microglia.
+Statistically credible changes in cell type composition: scCoda (91) was 
+used to perform compositional analysis of astrocyte and microglia 
+subclusters. The 5-­ and 9-­month-­old time points were analyzed inde-
+pendently. Model setup was performed with group (i.e., GFP, Megf10, 
+or Dectin1) as covariate and automatic reference cell type selection. 
+Hamiltonian Monte Carlo sampling was performed using default pa-
+rameters via the sample_hmc() function. Statistically credible chang-
+es were derived at false discovery rate (FDR) < 0.1.
+Single-­cell pathway analysis: Pathway analysis was performed using 
+SCPA (92) (v1.5.4) with log-­normalized counts as input to identify 
+pathways with changes in multivariate distribution across compari-
+sons. DAA and MyoC astrocytes were compared against homeostatic 
+astrocyte clusters using the M5 gene set from MSigDB. Significantly 
+enriched pathways retained for visualization were defined as path-
+ways with qval > 0, adjusted p-­value < 0.05, and log fold-­change > 0.
+Gene set enrichment analysis: DEGs (log2FC cutoff: 0.12) were extracted, 
+and gene set enrichment analysis was performed using a hypergeometric 
+test with the enrichment() function from the bc3net package (v1.0.4), 
+using the M5 gene set from the Broad Institute. Significantly enriched 
+pathways were filtered using adjusted p-­value < 0.05.
+Diffusion map: Diffusion map (93) was constructed to examine the differ-
+entiation trajectories of astrocyte subclusters. The astrocyte subclus-
+ter Seurat object was converted to .h5ad format and input into Scanpy 
+(94) (v1.1.0). The doublet clusters were removed from the astrocytes 
+dataset. Diffusion map was constructed from PCA embeddings using 
+30 nearest neighbors and 15 principal components. Diffusion map coor-
+dinates were then extracted from Scanpy and added back to the Seurat 
+object for subsequent analyses in R. Downstream tasks, including projec-
+tion of external datasets and pseudotime analysis on 2D diffusion embed-
+dings, were performed using diffusion components 2 and 3, as these best 
+recapitulate the primary differentiation trajectories in the datasets.
+Pseudotime analysis: Astrocyte subclusters were divided into either the 
+DAA trajectory (clusters 0, 2, 3, 5) or MyoC trajectory (clusters 1, 4, 6, 7) 
+on the basis of the diffusion map embedding. Pseudotime analysis was 
+performed each trajectory using slingshot (95) (v2.2.1), on diffusion 
+components 2 and 3, with a homeostatic astrocyte subcluster as start-
+ing cluster, and either DAA or MyoC astrocytes as end cluster.
+RNA velocity analysis: dropEst (v0.8.5) was used to derive the .loom file 
+containing spliced and unspliced matrices from CellRanger-­outputted 
+BAM files. The .loom files were loaded using scvelo (96) (v0.3.3). The 
+astrocyte subclustering dataset was also loaded, and spliced/unspliced 
+matrices were subsetted to retain only the astrocyte barcodes. Individual 
+samples were merged and data was filtered and normalized using de-
+fault parameters. RNA velocity was estimated using the dynamical 
+model using default parameters. RNA velocity streams were visualized 
+using components 2 and 3 of the diffusion map.
+Astrocyte-­microglia ligand-­receptor signaling analysis using NicheNet: 
+Ligand-­receptor signaling was performed using NicheNet (97) (v2.2.0). 
+Log-­normalized count matrices were used as input, and each of the 
+CAR group was used as condition of interest and the GFP group as 
+reference condition. The 5-­ and 9-­month-­old time points were ana-
+lyzed independently. To identify CAR-­A–induced astrocytes -­> microg-
+lia interactions, astrocytes were set as sender of interest and microglia 
+were set as receivers, and the analysis was performed using the Seurat 
+wrapper nichenet_seuratobj_aggregate(). The output data frame was 
+filtered and prioritized on the basis of expression of the ligand and 
+receptors. The top 30 ligand-­receptor pairs were selected for visualiza-
+tion with Circos plots.
+Projection of snRNA-­seq datasets onto a reference embedding: The 
+ProjecTILs (98) (v3.0.0) R package was used to project snRNA-­seq data 
+onto reference embeddings. Briefly, count matrix of datasets was loaded, 
+and data were processed with log-­normalization, variable feature de-
+tection, scaling, PCA, and the cluster of interest was subsetted to gen-
+erate the query object. For projection of our DAA and MyoC astrocyte 
+clusters, the reference object was generated from a Seurat object con-
+taining diffusion map embeddings from Habib et al. (73). For projection 
+of DAM1 and DAM2 clusters from Keren-­Shaul et al. (76), the reference 
+was generated from our microglia Seurat object.
+Module scores to identify cell types underlying DEGs: To determine sub-
+clusters responsible for up-­ and down-­regulated genes in astrocytes 
+and microglia, cells were scored on the basis of their aggregate expres-
+sion of the up-­ or down-­regulated genes. This was performed using the 
+AddModuleScore_UCell() function in the UCell (99) (v1.3.1) R package. 
+The average up-­regulated/down-­regulated genes module score for each 
+cluster was used to rank the clusters for their contribution to DEGs.
+Data analysis and statistics
+GraphPad Prism 9.0 was used to perform all statistical analyses. Data 
+are presented as means ± SEM. Data were checked for normality using 
+the Shapiro-­Wilk method, D’Agostino and Pearson normality test, and 
+Kolmogorov-­Smirnov normality test. The statistical outliers were ex-
+cluded by the ROUT method (Q = 1%) in GraphPad Prism. Statistical 
+significance between groups with normally distributed data was cal-
+culated by two-­way analysis of variance (ANOVA) with Holm-­Šidák 
+correction for multiple comparison or one-­way ANOVA with Tukey 
+correction for group-­wise comparisons, unless otherwise noted in the 
+figure legends. *P < 0.05, **P < 0.01, ***P < 0.001, ****P < 0.0001, 
+or ns (not significant).
+REFERENCES AND NOTES
+	1.	 2024 Alzheimer’s disease facts and figures. Alzheimers Dement.  20, 3708–3821 (2024). 
+doi: 10.1002/alz.13809; pmid: 38689398
+	2.	 M. Tolar, S. Abushakra, M. Sabbagh, The path forward in Alzheimer’s disease therapeutics: 
+Reevaluating the amyloid cascade hypothesis. Alzheimers Dement.  16, 1553–1560 
+(2020). doi: 10.1016/j.jalz.2019.09.075; pmid: 31706733
+	3.	 A. Mary, R. Mancuso, M. T. Heneka, Immune activation in Alzheimer disease. Annu. Rev. 
+Immunol.  42, 585–613 (2024). doi: 10.1146/annurev-­immunol-­101921-­035222; 
+pmid: 38424470
+	4.	 M. Kurkinen et al., The amyloid cascade hypothesis in Alzheimer’s disease: Should we change 
+our thinking? Biomolecules  13, 453 (2023). doi: 10.3390/biom13030453; pmid: 36979388
+	5.	 G. B. Frisoni et al., The probabilistic model of Alzheimer disease: The amyloid hypothesis 
+revised. Nat. Rev. Neurosci.  23, 53–66 (2022). doi: 10.1038/s41583-­021-­00533-­w; 
+pmid: 34815562
+
+Research Article
+Science 
+5 March 2026
+17 of 18
+	6.	 Y. A. Martens et al., ApoE Cascade Hypothesis in the pathogenesis of Alzheimer’s disease 
+and related dementias. Neuron  110, 1304–1317 (2022). doi: 10.1016/ 
+j.neuron.2022.03.004; pmid: 35298921
+	7.	 K. M. Murphy, C. Weaver, Janeway’s Immunobiology (Garland Science, ed. 9, 2017).
+	8.	 R. J. Bateman et al., Safety and efficacy of long-­term gantenerumab treatment in 
+dominantly inherited Alzheimer’s disease: An open-­label extension of the phase 2/3 
+multicentre, randomised, double-­blind, placebo-­controlled platform DIAN-­TU trial. Lancet 
+Neurol.  24, 316–330 (2025). doi: 10.1016/S1474-­4422(25)00024-­9; pmid: 40120616
+	9.	 E. L. Ross, M. S. Weinberg, S. E. Arnold, Cost-­effectiveness of aducanumab and donanemab 
+for early Alzheimer disease in the US. JAMA Neurol.  79, 478–487 (2022). doi: 10.1001/
+jamaneurol.2022.0315; pmid: 35344024
+	10.	R. Brockmann, J. Nixon, B. L. Love, I. Yunusa, Impacts of FDA approval and Medicare 
+restriction on antiamyloid therapies for Alzheimer’s disease: Patient outcomes, healthcare 
+costs, and drug development. Lancet Reg. Health Am.  20, 100467 (2023). doi: 10.1016/ 
+j.lana.2023.100467; pmid: 36908502
+	11.	 L. Jönsson et al., The affordability of lecanemab, an amyloid-­targeting therapy for 
+Alzheimer’s disease: An EADC-­EC viewpoint. Lancet Reg. Health Eur.  29, 100657 (2023). 
+doi: 10.1016/j.lanepe.2023.100657; pmid: 37251789
+	12.	C. G. Withington, R. S. Turner, Amyloid-­related imaging abnormalities with anti-­amyloid 
+antibodies for the treatment of dementia due to Alzheimer’s disease. Front. Neurol.  13, 
+862369 (2022). doi: 10.3389/fneur.2022.862369; pmid: 35401412
+	13.	 N. J. Reish et al., Multiple cerebral hemorrhages in a patient receiving lecanemab and 
+treated with t-­PA for stroke. N. Engl. J. Med.  388, 478–479 (2023). doi: 10.1056/
+NEJMc2215148; pmid: 36599061
+	14.	 W. K. Self, D. M. Holtzman, Emerging diagnostics and therapeutics for Alzheimer disease. 
+Nat. Med.  29, 2187–2199 (2023). doi: 10.1038/s41591-­023-­02505-­2; pmid: 37667136
+	15.	 E. McDade, R. J. Bateman, Stop Alzheimer’s before it starts. Nature  547, 153–155 (2017). 
+doi: 10.1038/547153a; pmid: 28703214
+	16.	 R. J. Bateman et al., The DIAN-­TU Next Generation Alzheimer’s prevention trial: Adaptive 
+design and disease progression model. Alzheimers Dement.  13, 8–19 (2017). 
+doi: 10.1016/j.jalz.2016.07.005; pmid: 27583651
+	17.	 J. M. Long, D. M. Holtzman, Alzheimer disease: An update on pathobiology and treatment 
+strategies. Cell  179, 312–339 (2019). doi: 10.1016/j.cell.2019.09.001; pmid: 31564456
+	18.	J. R. Sims et al., Donanemab in early symptomatic Alzheimer disease: The TRAILBLAZER-­
+ALZ 2 randomized clinical trial. JAMA  330, 512–527 (2023). doi: 10.1001/
+jama.2023.13239; pmid: 37459141
+	19.	 C. H. van Dyck et al., Lecanemab in early Alzheimer’s disease. N. Engl. J. Med.  388, 9–21 
+(2023). doi: 10.1056/NEJMoa2212948; pmid: 36449413
+	20.	M. P. Cadiz et al., Aducanumab anti-­amyloid immunotherapy induces sustained microglial 
+and immune alterations. J. Exp. Med.  221, e20231363 (2024). doi: 10.1084/
+jem.20231363; pmid: 38226975
+	21.	M. A. Morrissey et al., Chimeric antigen receptors that trigger phagocytosis. eLife  7, 
+e36688 (2018). doi: 10.7554/eLife.36688; pmid: 29862966
+	22.	M. Klichinsky et al., Human chimeric antigen receptor macrophages for cancer 
+immunotherapy. Nat. Biotechnol.  38, 947–953 (2020). doi: 10.1038/s41587-­020-­0462-­y; 
+pmid: 32361713
+	23.	C. H. June, R. S. O’Connor, O. U. Kawalekar, S. Ghassemi, M. C. Milone, CAR T cell 
+immunotherapy for human cancer. Science  359, 1361–1365 (2018). doi: 10.1126/science.
+aar6711; pmid: 29567707
+	24.	D. J. Baker, Z. Arany, J. A. Baur, J. A. Epstein, C. H. June, CAR T therapy beyond cancer: The 
+evolution of a living drug. Nature  619, 707–715 (2023). doi: 10.1038/s41586-­023-­
+06243-­w; pmid: 37495877
+	25.	W. Zhang et al., Chimeric antigen receptor macrophage therapy for breast tumours 
+mediated by targeting the tumour extracellular matrix. Br. J. Cancer  121, 837–845 (2019). 
+doi: 10.1038/s41416-­019-­0578-­3; pmid: 31570753
+	26.	L. Gatto, V. D. Nunno, E. Franceschi, A. A. Brandes, Chimeric antigen receptor macrophage 
+for glioblastoma immunotherapy: The way forward. Immunotherapy  13, 879–883 (2021). 
+doi: 10.2217/imt-­2021-­0054; pmid: 34078139
+	27.	 A. B. Kim et al., Chimeric antigen receptor macrophages target and resorb amyloid 
+plaques. JCI Insight  9, e175015 (2024). doi: 10.1172/jci.insight.175015; pmid: 38516884
+	28.	C. N. Heiss et al., Expression of anti-­amyloid CARs in microglia promotes efficient and 
+selective phagocytosis of Aβ1‒42. Gene Ther.  32, 333–338 (2025). doi: 10.1038/
+s41434-­025-­00534-­9; pmid: 40210700
+	29.	K. A. Sailor et al., Hematopoietic stem cell transplantation chemotherapy causes microglia 
+senescence and peripheral macrophage engraftment in the brain. Nat. Med.  28, 517–527 
+(2022). doi: 10.1038/s41591-­022-­01691-­9; pmid: 35190726
+	30.	Y. Yoo, G. Neumayer, Y. Shibuya, M. M.-­D. Mader, M. Wernig, A cell therapy approach to 
+restore microglial Trem2 function in a mouse model of Alzheimer’s disease. Cell Stem Cell  
+30, 1043–1053.e6 (2023). doi: 10.1016/j.stem.2023.07.006; pmid: 37541210
+	31.	Y. Shibuya et al., Treatment of a genetic brain disease by CNS-­wide microglia replacement. 
+Sci. Transl. Med.  14, eabl9945 (2022). doi: 10.1126/scitranslmed.abl9945; 
+pmid: 35294256
+	32.	J. P. Chadarevian et al., Engineering an inhibitor-­resistant human CSF1R variant for 
+microglia replacement. J. Exp. Med.  220, e20220857 (2023). doi: 10.1084/jem.20220857; 
+pmid: 36584406
+	33.	M. R. P. Elmore et al., Replacement of microglia in the aged brain reverses cognitive, 
+synaptic, and neuronal deficits in mice. Aging Cell  17, e12832 (2018). doi: 10.1111/
+acel.12832; pmid: 30276955
+	34.	R. Lin et al., Directed evolution of adeno-­associated virus for efficient gene delivery to 
+microglia. Nat. Methods  19, 976–985 (2022). doi: 10.1038/s41592-­022-­01547-­7; 
+pmid: 35879607
+	35.	Y. Okada et al., Development of microglia-­targeting adeno-­associated viral vectors as tools 
+to study microglial behavior in vivo. Commun. Biol.  5, 1224 (2022). doi: 10.1038/
+s42003-­022-­04200-­3; pmid: 36369525
+	36.	M. E. Maes, G. Colombo, R. Schulz, S. Siegert, Targeting microglia with lentivirus and AAV: 
+Recent advances and remaining challenges. Neurosci. Lett.  707, 134310 (2019). 
+doi: 10.1016/j.neulet.2019.134310; pmid: 31158432
+	37.	 S. A. Liddelow, B. A. Barres, Reactive astrocytes: Production, function, and therapeutic 
+potential. Immunity  46, 957–967 (2017). doi: 10.1016/j.immuni.2017.06.006; 
+pmid: 28636962
+	38.	R. Patani, G. E. Hardingham, S. A. Liddelow, Functional roles of reactive astrocytes in 
+neuroinflammation and neurodegeneration. Nat. Rev. Neurol.  19, 395–409 (2023). 
+doi: 10.1038/s41582-­023-­00822-­1; pmid: 37308616
+	39.	F. Endo et al., Molecular basis of astrocyte diversity and morphology across the CNS in 
+health and disease. Science  378, eadc9020 (2022). doi: 10.1126/science.adc9020; 
+pmid: 36378959
+	40.	M. Koistinaho et al., Apolipoprotein E promotes astrocyte colocalization and degradation 
+of deposited amyloid-­beta peptides. Nat. Med.  10, 719–726 (2004). doi: 10.1038/nm1058; 
+pmid: 15195085
+	41.	T. Wyss-­Coray et al., Adult mouse astrocytes degrade amyloid-­beta in vitro and in situ.  
+Nat. Med.  9, 453–457 (2003). doi: 10.1038/nm838; pmid: 12612547
+	42.	H. Konishi et al., Astrocytic phagocytosis is a compensatory mechanism for microglial 
+dysfunction. EMBO J.  39, e104464 (2020). doi: 10.15252/embj.2020104464; 
+pmid: 32959911
+	43.	K. Y. Chan et al., Engineered AAVs for efficient noninvasive gene delivery to the central and 
+peripheral nervous systems. Nat. Neurosci.  20, 1172–1179 (2017). doi: 10.1038/nn.4593; 
+pmid: 28671695
+	44.	R. C. Challis et al., Adeno-­associated virus toolkit to target diverse brain cells. Annu. Rev. 
+Neurosci.  45, 447–469 (2022). doi: 10.1146/annurev-­neuro-­111020-­100834; 
+pmid: 35440143
+	45.	R. C. Paolicelli et al., Synaptic pruning by microglia is necessary for normal brain 
+development. Science  333, 1456–1458 (2011). doi: 10.1126/science.1202529; 
+pmid: 21778362
+	46.	S. Hong, L. Dissing-­Olesen, B. Stevens, New insights on the role of microglia in synaptic 
+pruning in health and disease. Curr. Opin. Neurobiol.  36, 128–134 (2016). doi: 10.1016/ 
+j.conb.2015.12.004; pmid: 26745839
+	47.	 A. P. Bosworth, N. J. Allen, The diverse actions of astrocytes during synaptic development. 
+Curr. Opin. Neurobiol.  47, 38–43 (2017). doi: 10.1016/j.conb.2017.08.017; pmid: 28938161
+	48.	J. Park, W.-­S. Chung, Astrocyte-­dependent circuit remodeling by synapse phagocytosis.  
+Curr. Opin. Neurobiol.  81, 102732 (2023). doi: 10.1016/j.conb.2023.102732; pmid: 37247606
+	49.	Q. Li, B. A. Barres, Microglia and macrophages in brain homeostasis and disease. Nat. Rev. 
+Immunol.  18, 225–242 (2018). doi: 10.1038/nri.2017.125; pmid: 29151590
+	50.	W.-­S. Chung et al., Astrocytes mediate synapse elimination through MEGF10 and MERTK 
+pathways. Nature  504, 394–400 (2013). doi: 10.1038/nature12776; pmid: 24270812
+	51.	Q. Li et al., Developmental heterogeneity of microglia and brain myeloid cells revealed by 
+deep single-­cell RNA sequencing. Neuron  101, 207–223.e10 (2019). doi: 10.1016/ 
+j.neuron.2018.12.006; pmid: 30606613
+	52.	Y. Huang et al., Microglia use TAM receptors to detect and engulf amyloid β plaques.  
+Nat. Immunol.  22, 586–594 (2021). doi: 10.1038/s41590-­021-­00913-­5; pmid: 33859405
+	53.	R. C. Sterner, R. M. Sterner, CAR-­T cell therapy: Current limitations and potential strategies. 
+Blood Cancer J.  11, 69 (2021). doi: 10.1038/s41408-­021-­00459-­7; pmid: 33824268
+	54.	K. Tone, M. H. T. Stappers, J. A. Willment, G. D. Brown, C-­type lectin receptors of the 
+Dectin-­1 cluster: Physiological roles and involvement in disease. Eur. J. Immunol.  49, 
+2127–2133 (2019). doi: 10.1002/eji.201847536; pmid: 31580478
+	55.	M. Ultsch et al., Structure of crenezumab complex with Aβ shows loss of β-­hairpin.  
+Sci. Rep.  6, 39374 (2016). doi: 10.1038/srep39374; pmid: 27996029
+	56.	C. H. van Dyck, Anti-­amyloid-­β monoclonal antibodies for Alzheimer’s disease: Pitfalls and 
+promise. Biol. Psychiatry  83, 311–319 (2018). doi: 10.1016/j.biopsych.2017.08.010; 
+pmid: 28967385
+	57.	 O. Adolfsson et al., An effector-­reduced anti-­β-­amyloid (Aβ) antibody with unique aβ 
+binding properties promotes neuroprotection and glial engulfment of Aβ. J. Neurosci.  32, 
+9677–9689 (2012). doi: 10.1523/JNEUROSCI.4742-­11.2012; pmid: 22787053
+	58.	D. J. Selkoe, Alzheimer disease and aducanumab: Adjusting our approach. Nat. Rev. Neurol. 
+15, 365–366 (2019). doi: 10.1038/s41582-­019-­0205-­1; pmid: 31138932
+	59.	J. W. Arndt et al., Structural and kinetic basis for the selectivity of aducanumab for 
+aggregated forms of amyloid-­β. Sci. Rep.  8, 6412 (2018). doi: 10.1038/s41598-­018-­
+24501-­0; pmid: 29686315
+	60.	D. Goertsen et al., AAV capsid variants with brain-­wide transgene expression and 
+decreased liver targeting after intravenous delivery in mouse and marmoset.  
+Nat. Neurosci.  25, 106–115 (2022). doi: 10.1038/s41593-­021-­00969-­4; pmid: 34887588
+
+Research Article
+Science 
+5 March 2026
+18 of 18
+	61.	W. Ellmeier, S. Sawada, D. R. Littman, The regulation of CD4 and CD8 coreceptor gene 
+expression during T cell development. Annu. Rev. Immunol.  17, 523–554 (1999). 
+doi: 10.1146/annurev.immunol.17.1.523; pmid: 10358767
+	62.	J. M. Griffin et al., Astrocyte-­selective AAV gene therapy through the endogenous GFAP 
+promoter results in robust transduction in the rat spinal cord following injury. Gene Ther.  
+26, 198–210 (2019). doi: 10.1038/s41434-­019-­0075-­6; pmid: 30962538
+	63.	S. Forner et al., Systematic phenotyping and characterization of the 5xFAD mouse model 
+of Alzheimer’s disease. Sci. Data  8, 270 (2021). doi: 10.1038/s41597-­021-­01054-­y; 
+pmid: 34654824
+	64.	A. O. Sasmita et al., Parental origin of transgene modulates amyloid-­β plaque burden in the 
+5xFAD mouse model of Alzheimer’s disease. Neuron  113, 838–846.e4 (2025). 
+doi: 10.1016/j.neuron.2024.12.025; pmid: 39837326
+	65.	B. C. Richard et al., Gene dosage dependent aggravation of the neurological phenotype in 
+the 5XFAD mouse model of Alzheimer’s disease. J. Alzheimers Dis.  45, 1223–1236 (2015). 
+doi: 10.3233/JAD-­143120; pmid: 25697701
+	66.	J. L. Jankowsky, H. Zheng, Practical considerations for choosing a mouse model of 
+Alzheimer’s disease. Mol. Neurodegener.  12, 89 (2017). doi: 10.1186/s13024-­017-­0231-­7; 
+pmid: 29273078
+	67.	 A. D. Carneiro, D. V. Schaffer, Engineering novel adeno-­associated viruses (AAVs) for 
+improved delivery in the nervous system. Curr. Opin. Chem. Biol.  83, 102532 (2024). 
+doi: 10.1016/j.cbpa.2024.102532; pmid: 39342684
+	68.	Y. Wang et al., TREM2-­mediated early microglial response limits diffusion and toxicity of 
+amyloid plaques. J. Exp. Med.  213, 667–675 (2016). doi: 10.1084/jem.20151948; 
+pmid: 27091843
+	69.	Y. Chen et al., APOE3ch alters microglial response and suppresses Aβ-­induced tau seeding 
+and spread. Cell  187, 428–445.e20 (2024). doi: 10.1016/j.cell.2023.11.029; pmid: 38086389
+	70.	S. Wang et al., TREM2 drives microglia response to amyloid-­β via SYK-­dependent and 
+-­independent pathways. Cell  185, 4153–4169.e19 (2022). doi: 10.1016/j.cell.2022.09.033; 
+pmid: 36306735
+	71.	 A. Serrano-­Pozo et al., Differential relationships of reactive astrocytes and microglia to 
+fibrillar amyloid deposits in Alzheimer disease. J. Neuropathol. Exp. Neurol.  72, 462–471 
+(2013). doi: 10.1097/NEN.0b013e3182933788; pmid: 23656989
+	72.	A. Serrano-­Pozo et al., Reactive glia not only associates with plaques but also parallels 
+tangles in Alzheimer’s disease. Am. J. Pathol.  179, 1373–1384 (2011). doi: 10.1016/j.
+ajpath.2011.05.047; pmid: 21777559
+	73.	N. Habib et al., Disease-­associated astrocytes in Alzheimer’s disease and aging. Nat. 
+Neurosci.  23, 701–706 (2020). doi: 10.1038/s41593-­020-­0624-­8; pmid: 32341542
+	74.	Y. Chen, M. Colonna, Microglia in Alzheimer’s disease at single-­cell level. Are there 
+common patterns in humans and mice? J. Exp. Med.  218, e20202717 (2021). 
+doi: 10.1084/jem.20202717; pmid: 34292312
+	75.	R. C. Paolicelli et al., Microglia states and nomenclature: A field at its crossroads. Neuron  
+110, 3458–3483 (2022). doi: 10.1016/j.neuron.2022.10.020; pmid: 36327895
+	76.	H. Keren-­Shaul et al., A unique microglia type associated with restricting development of 
+Alzheimer’s disease. Cell  169, 1276–1290.e17 (2017). doi: 10.1016/j.cell.2017.05.018; 
+pmid: 28602351
+	77.	 W.-­S. Chung, N. J. Allen, C. Eroglu, Astrocytes control synapse formation, function, and 
+elimination. Cold Spring Harb. Perspect. Biol.  7, a020370 (2015). doi: 10.1101/
+cshperspect.a020370; pmid: 25663667
+	78.	Z. Xu et al., Efficient strategies for microglia replacement in the central nervous system. 
+Cell Rep.  33, 108443 (2020). doi: 10.1016/j.celrep.2020.108443; pmid: 33238120
+	79.	D. Chatterjee et al., Enhanced CNS transduction from AAV.PHP.eB infusion into the 
+cisterna magna of older adult rats compared to AAV9. Gene Ther.  29, 390–397 (2022). 
+doi: 10.1038/s41434-­021-­00244-­y; pmid: 33753910
+	80.	Q. Ling, J. A. Herstine, A. Bradbury, S. J. Gray, AAV-­based in vivo gene therapy for 
+neurological disorders. Nat. Rev. Drug Discov.  22, 789–806 (2023). doi: 10.1038/
+s41573-­023-­00766-­7; pmid: 37658167
+	81.	C. P. Venditti, Safety questions for AAV gene therapy. Nat. Biotechnol.  39, 24–26 (2021). 
+doi: 10.1038/s41587-­020-­00756-­9; pmid: 33199877
+	82.	T. R. Flotte et al., AAV gene therapy for Tay-­Sachs disease. Nat. Med.  28, 251–259 (2022). 
+doi: 10.1038/s41591-­021-­01664-­4; pmid: 35145305
+	83.	C.-­C. Liu et al., Astrocytic LRP1 mediates brain Aβ clearance and impacts amyloid 
+deposition. J. Neurosci.  37, 4023–4031 (2017). doi: 10.1523/JNEUROSCI.3442-­16.2017; 
+pmid: 28275161
+	84.	M. V. Sofroniew, Astrocyte reactivity: Subtypes, states, and functions in CNS innate 
+immunity. Trends Immunol.  41, 758–770 (2020). doi: 10.1016/j.it.2020.07.004; 
+pmid: 32819810
+	85.	E. K. Lehrman et al., CD47 protects synapses from excess microglia-­mediated pruning 
+during development. Neuron  100, 120–134.e6 (2018). doi: 10.1016/j.neuron.2018.09.017; 
+pmid: 30308165
+	86.	T. E. Faust et al., Microglia-­astrocyte crosstalk regulates synapse remodeling via Wnt 
+signaling. Cell  188, 5212–5230.e21 (2025). doi: 10.1016/j.cell.2025.08.023; pmid: 40934914
+	87.	 P. S. Minhas et al., Restoring hippocampal glucose metabolism rescues cognition across 
+Alzheimer’s disease pathologies. Science  385, eabm6131 (2024). doi: 10.1126/science.
+abm6131; pmid: 39172838
+	88.	W. B. Stine, L. Jungbauer, C. Yu, M. J. LaDu, Preparing synthetic Aβ in different aggregation states. 
+Methods Mol. Biol.  670, 13–32 (2011). doi: 10.1007/978-­1-­60761-­744-­0_2; pmid: 20967580
+	89.	Y. Hao et al., Integrated analysis of multimodal single-­cell data. Cell  184, 3573–3587.e29 
+(2021). doi: 10.1016/j.cell.2021.04.048; pmid: 34062119
+	90.	C. Hafemeister, R. Satija, Normalization and variance stabilization of single-­cell RNA-­seq 
+data using regularized negative binomial regression. Genome Biol.  20, 296 (2019). 
+doi: 10.1186/s13059-­019-­1874-­1; pmid: 31870423
+	91.	M. Büttner, J. Ostner, C. L. Müller, F. J. Theis, B. Schubert, scCODA is a Bayesian model for 
+compositional single-­cell data analysis. Nat. Commun.  12, 6876 (2021). doi: 10.1038/
+s41467-­021-­27150-­6; pmid: 34824236
+	92.	J. A. Bibby et al., Systematic single-­cell pathway analysis to characterize early T cell 
+activation. Cell Rep.  41, 111697 (2022). doi: 10.1016/j.celrep.2022.111697; pmid: 36417885
+	93.	L. Haghverdi, F. Buettner, F. J. Theis, Diffusion maps for high-­dimensional single-­cell 
+analysis of differentiation data. Bioinformatics  31, 2989–2998 (2015). doi: 10.1093/
+bioinformatics/btv325; pmid: 26002886
+	94.	F. A. Wolf, P. Angerer, F. J. Theis, SCANPY: Large-­scale single-­cell gene expression data 
+analysis. Genome Biol.  19, 15 (2018). doi: 10.1186/s13059-­017-­1382-­0; pmid: 29409532
+	95.	K. Street et al., Slingshot: Cell lineage and pseudotime inference for single-­cell transcriptomics. 
+BMC Genomics  19, 477 (2018). doi: 10.1186/s12864-­018-­4772-­0; pmid: 29914354
+	96.	V. Bergen, M. Lange, S. Peidli, F. A. Wolf, F. J. Theis, Generalizing RNA velocity to transient 
+cell states through dynamical modeling. Nat. Biotechnol.  38, 1408–1414 (2020). 
+doi: 10.1038/s41587-­020-­0591-­3; pmid: 32747759
+	97.	 R. Browaeys, W. Saelens, Y. Saeys, NicheNet: Modeling intercellular communication by 
+linking ligands to target genes. Nat. Methods  17, 159–162 (2020). doi: 10.1038/
+s41592-­019-­0667-­5; pmid: 31819264
+	98.	M. Andreatta et al., Interpretation of T cell states from single-­cell transcriptomics data using 
+reference atlases. Nat. Commun.  12, 2965 (2021). doi: 10.1038/s41467-­021-­23324-­4; 
+pmid: 34017005
+	99.	M. Andreatta, S. J. Carmona, UCell: Robust and scalable single-­cell gene signature scoring. 
+Comput. Struct. Biotechnol. J.  19, 3796–3798 (2021). doi: 10.1016/j.csbj.2021.06.043; 
+pmid: 34285779
+ACKNOWLEDGMENTS
+We thank the Washington University Center for Cellular Imaging for assistance in imaging 
+studies, and the Flow Cytometry Core at Washington University for sorting. Graphical 
+schematics were created with BioRender.com. We thank S. Parhizkar and F. Saadi for their 
+sharing of instrument time. We thank A. A. Davis for the gift of α-­synuclein PFF stock. We thank 
+C. Han for assistance in snRNA-seq sample preparation. We thank G. Grajales-­Reyes for early 
+input and discussions that helped launch this project. Funding: This work was supported by 
+NIH grants RF1 AG051485, R21 AG059176, and P01 AG078106 to M.C.; the Cure Alzheimer’s 
+Fund (M.C.); the Carol and Gene Ludwig Family Foundation (M.C.); and the Fred and Ginger 
+Haberle Charitable Fund at East Texas Communities Foundation (M.C.). Author 
+contributions: Conceptualization: Y.C., M.C.; Methodology: Y.C., Y.L., K.N., C.Y., M.C.; 
+Investigation: Y.C., Y.L., K.N., J.W., S.S., K.L., P.F.R., S.D., C.Z., K.X., M.B., P.B.-­C.L., D.K., S.W., 
+M.W., C.Y. ; Visualization: Y.C., Y.L., M.C.; Funding acquisition: M.C.; Supervision: M.C., D.M.H.; 
+Writing – original draft: Y.C., M.C.; Writing – review & editing: Y.C., Y.L., D.M.H., M.C. 
+Competing interests: M.C. and Y.C. have a patent pending on CAR-­A constructs (PCT/
+US25/41329). M.C. cofounded and is on the scientific advisory boards of Halyardtx and 
+BioClec, is a member of the scientific advisory board of Vigil, receives research support from 
+Ono Pharmaceutical, and is a consultant for CST and Pfizer. D.M.H. cofounded and is on the 
+scientific advisory board of C2N Diagnostics. D.M.H. is also on the scientific advisory boards 
+of Denali, Genentech, and Cajal Neuroscience and consults for Asteroid. C.Y. is on the scientific 
+advisory board for Hoth Therapeutics and consults for Varro Life Sciences. Data, code, and 
+materials availability: All data associated with this study are present in the paper or the 
+supplementary materials. RNA-­seq data are available on GEO (GSE309604). CAR-­A 
+constructs will be available from the corresponding authors under a material transfer 
+agreement with Washington University in St. Louis. License information: Copyright © 2026 
+the authors, some rights reserved; exclusive licensee American Association for the 
+Advancement of Science. No claim to original US government works. https://www.science.
+org/about/science-­licenses-­journal-­article-­reuse
+SUPPLEMENTARY MATERIALS
+science.org/doi/10.1126/science.ads3972
+Figs. S1 to S10; Reproducibility Checklist
+Submitted 11 August 2024; resubmitted 30 September 2025; accepted 14 January 2026
+10.1126/science.ads3972
+
+Targeting amyloid-# pathology by chimeric antigen receptor astrocyte (CAR-A)
+therapy
+Yun Chen, Yizhou Liu, Khai Nguyen, Junjie Wu, Sihui Song, Kent Lin, Patrick F. Rodrigues, Siling Du, Charles Zhou,
+Kyle Xiong, Megan Bosch, Peter Bor-Chian Lin, Darya Khantakova, Shitong Wu, May Wu, Carla Yuede, David M.
+Holtzman, and Marco Colonna
+Science 391 (6789), eads3972.  DOI: 10.1126/science.ads3972
+Editor’s summary
+Immunotherapies targeting amyloid-# (A#) hold promise for the treatment of Alzheimer’s disease. Chen et al.
+developed an anti-A# strategy based on a chimeric antigen receptor (CAR) system called CAR-A, in which astrocytes
+are genetically engineered through adeno-associated viruses to express single-chain variable fragments of anti-A#
+antibodies conjugated to the intracellular domains of phagocytic receptors (see the Perspective by Boles and Gate).
+In vitro and mouse in vivo testing demonstrated the efficacy of CAR-A in reducing A# plaque formation through the
+coordinated activity of astrocytes and microglia. These results suggest that CAR-A could be effective in reducing
+disease progression in Alzheimer’s disease. —Mattia Maroso
+View the article online
+https://www.science.org/doi/10.1126/science.ads3972
+Permissions
+https://www.science.org/help/reprints-and-permissions
+Use of this article is subject to the Terms of service
+Science (ISSN 1095-9203) is published by the American Association for the Advancement of Science. 1200 New York Avenue NW,
+Washington, DC 20005. The title Science is a registered trademark of AAAS. 
+Copyright © 2026 The Authors, some rights reserved; exclusive licensee American Association for the Advancement of Science. No claim
+to original U.S. Government Works

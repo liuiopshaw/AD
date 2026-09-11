@@ -1,0 +1,1982 @@
+Article
+https://doi.org/10.1038/s41467-023-41489-y
+C3N nanodots inhibits Aβ peptides
+aggregation pathogenic path in
+Alzheimer’s disease
+Xiuhua Yin1,2,6, Hong Zhou1,6, Mengling Zhang2,3,6, Juan Su4, Xiao Wang2, Sijie Li4,
+Zaixing Yang
+1,4
+, Zhenhui Kang
+2,3
+& Ruhong Zhou
+1,5
+Despite the accumulating evidence linking the development of Alzheimer’s
+disease (AD) to the aggregation of Aβ peptides and the emergence of Aβ
+oligomers, the FDA has approved very few anti-aggregation-based therapies
+over the past several decades. Here, we report the discovery of an Aβ peptide
+aggregation inhibitor: an ultra-small nanodot called C3N. C3N nanodots alle-
+viate aggregation-induced neuron cytotoxicity, rescue neuronal death, and
+prevent neurite damage in vitro. Importantly, they reduce the global cerebral
+Aβ peptides levels, particularly in ﬁbrillar amyloid plaques, and restore
+synaptic loss in AD mice. Consequently, these C3N nanodots signiﬁcantly
+ameliorate behavioral deﬁcits of APP/PS1 double transgenic male AD mice.
+Moreover, analysis of critical tissues (e.g., heart, liver, spleen, lung, and kidney)
+display no obvious pathological damage, suggesting C3N nanodots are biolo-
+gically safe. Finally, molecular dynamics simulations also reveal the inhibitory
+mechanisms of C3N nanodots in Aβ peptides aggregation and its potential
+application against AD.
+Alois Alzheimer reported the ﬁrst case of Alzheimer’s disease (AD) in
+19061,2. Now, more than one century later, AD remains an unresolved
+public health problem worldwide3. AD is a progressive neurodegen-
+erative disease associated with insidious onset and slow progression of
+behavioral and cognitive dysfunction. The severity of the AD from
+early stage4 advances to obvious symptoms which further aggravates
+the need to utilize immediate remedies against the progression of the
+disease. Moreover, the incidence of AD also increases with the
+increasing age reﬂected by the increasing rate of ~27.6% in 65–74 year-
+old people to ~36.4% in people over 80 years old5. This signiﬁcant
+increase with age also poses a worldwide threat of acquiring AD among
+elderly population. This also urges the need of developing novel and
+effective AD management therapies for clinical purposes.
+Growing evidence suggests the aggregation of Aβ peptides is
+highly related with synaptic dysfunction, neuroinﬂammation, oxida-
+tive stress damage, neurotoxicity mediated by the triggered hyper-
+phosphorylation of downstream Tau protein, as well as the ultimate
+cell death6–9. Additionally, Aβ oligomers also drive pathology by
+damaging cell membranes, activating receptors, disrupting signaling,
+impairing mitochondria, perturbing the trans-Golgi network, inducing
+endoplasmic reticulum stress, causing endosomes/lysosomal leakage,
+and triggering macroautophagy6,10–15. In contrast, reversal of the Aβ
+peptides aggregation process also offers a suitable therapeutic strat-
+egy against AD. However, the successful implementation of this con-
+cept remains a huge challenge despite decades of effort along this
+direction. On the other hand, the lack of effective drugs against AD,
+Received: 8 November 2022
+Accepted: 31 August 2023
+Check for updates
+1Institute of Quantitative Biology, Shanghai Institute for Advanced Study, College of Life Sciences, Zhejiang University, Hangzhou 310027, China. 2Jiangsu Key
+Laboratory for Carbon-based Functional Materials and Devices, Institute of Functional Nano and Soft Materials (FUNSOM), Soochow University, Suzhou
+215123, China. 3Macao Institute of Materials Science and Engineering (MIMSE), MUST−SUDA Joint Research Center for Advanced Functional Materials, Macau
+University of Science and Technology, Taipa 999078 Macao, China. 4State Key Laboratory of Radiation Medicine and Protection, School for Radiological and
+Interdisciplinary Sciences (RAD-X), Soochow University, Suzhou 215123, China. 5Department of Chemistry, Columbia University, New York, NY 10027, USA.
+6These authors contributed equally: Xiuhua Yin, Hong Zhou, Mengling Zhang.
+e-mail: zxyang@suda.edu.cn; zhkang@suda.edu.cn; rhzhou@zju.edu.cn
+Nature Communications|   (2023) 14:5718 
+1
+1234567890():,;
+1234567890():,;
+
+with only two FDA-approved options available, such as aducanumab16
+and lecanemab17, still raising high demand for alternate therapeutic
+options. Encouragingly, in a phase-III clinical trial, another monoclonal
+antibody agent called donanemab exhibited promising positive
+results18. Besides, other anti-AD agents (including peptides19,20,
+polymers21,22, small drug molecules23–26, and metal oxides27) show only
+a very mild inhibition effect on Aβ peptides aggregation. Recently,
+nanomaterials (NMs) (e.g., graphene oxide28, fullerenes29,30, quantum
+dots31, carbon nanotube32, and g-C3N4
+33,34) have been reported to
+inhibit, directly or indirectly, the aggregation of Aβ peptides, including
+both the inhibition of oligomer ﬁbrillization and disaggregation of
+mature ﬁber in vitro. The potential of these NMs to inhibit aggregation
+is closely related to their physical and chemical properties, including
+size, curvature, and modiﬁcations35,36. But very few of them can still
+work in vivo. Interestingly, graphene quantum dots were also found to
+inhibit α-synuclein aggregation, disassociate mature ﬁbrils, and
+penetrate the blood-brain barrier (BBB) leading to ultimate protection
+of dopamine neurons37. Therefore, the use of nanomaterials may offer
+valuable alternate source as therapeutic agents for protein con-
+formational diseases (e.g., AD, Parkinson’s disease, Huntington’s dis-
+ease, Type 2 diabetes).
+In this study, we demonstrate that C3N nanodots can signiﬁcantly
+inhibit Aβ peptides aggregation and disaggregate mature Aβ ﬁbrils,
+relieve aggregation-induced neuron cytotoxicity, rescue neuronal
+death, protect neurites from damage, and exhibit only mild cytotoxi-
+city both in vitro and in vivo. Moreover, the intraperitoneal adminis-
+tration of C3N nanodots for 6 months signiﬁcantly improves the
+learning and spatial memory abilities of APP/PS1 in double transgenic
+AD mice. Additionally, the underlying molecular mechanism of Aβ
+peptide aggregation inhibition by C3N nanodots has also been
+explored using all-atom molecular dynamics (MD) simulations. Thus,
+we believe our current study provides deep insights into the anti-Aβ
+peptides aggregation capability of C3N nanodots and its potential
+application against AD.
+Results
+C3N nanodots inhibit Aβ42 peptides ﬁbrillization in vitro
+C3N nanodots were synthesized by polymerization of 2,3-diamino-
+phenazine using hydrothermal synthesis following a previous report38.
+The synthesized nanodots had an average lateral size of 4.5 ± 0.4 nm
+(Fig. 1a) with a lattice spacing of 0.21 nm, which corresponds to the
+(100) plane of graphite. Meanwhile, these nanodots had a height of less
+than 1 nm, indicating a stacking arrangement of one or two layers
+(Supplementary Fig. 1). Initially, the identiﬁcation and characterization
+of C3N nanodots were performed using several spectroscopic techni-
+ques including UV–visible (UV–Vis) absorption spectroscopy, Fourier
+transform infrared (FTIR) spectroscopy and X-ray photoelectron
+spectroscopy (XPS). (Supplementary Fig. 2).
+We ﬁrst studied the role of C3N nanodots towards the aggregation
+behavior of Aβ42 peptides, which were shown to have more implica-
+tions than Aβ40 in forming neurotoxic assemblies and causing AD
+pathogenesis39,40. In the absence of C3N nanodots, Aβ42 peptides
+aggregated into mature amyloid ﬁbers, as demonstrated by various
+experimental procedures. This included the utility of ThT ﬂuores-
+cence, dot blot assay, atomic force microscope (AFM), transmission
+electron microscope (TEM), and CD spectroscopy. During these
+investigations, C3N nanodots effectively inhibited the aggregation of
+Aβ42 peptides (Fig. 1). It was evident from delayed aggregation kinetics
+and reduced ThT ﬂuorescence intensity (after convergence of aggre-
+gation process) following C3N nanodots treatment. The inhibition
+strength was found positively correlated with C3N nanodots treatment
+concentration (Fig. 1b). It should be noted that, under the concentra-
+tions examined, C3N nanodots did not entirely inhibit the aggregation
+of peptides. The ﬁnal peptide self-assembly samples were also exam-
+ined through dot blotting using anamyloid ﬁber conformation-speciﬁc
+antibody (mOC87)41. Notably, amyloid ﬁber content decreased with
+the increasing concentration of C3N nanodots during treatment
+(Fig. 1c). This conﬁrmed the inhibition function of C3N nanodots
+against peptides aggregation. Morphologically, Aβ42 peptides aggre-
+gated to long and well-deﬁned mature ﬁbers after 24 h in PBS without
+C3N nanodots, as demonstrated through AFM and TEM imaging
+(Fig. 1d and Supplementary Fig. 3). In contrast, incubation with C3N
+nanodots for 24 h resulted in a gradual morphologic change of Aβ42
+peptides self-assembly samples from long mature ﬁbers to diffused
+punctiform structures. Furthermore, it is worth noting that the
+aggregation of N-truncated Aβ peptides (AβpE3) and Aβ40 is also likely
+to contribute to the molecular pathology of AD. Our investigation also
+delved into the impact of C3N nanodots on the aggregation of these
+two
+peptide
+species.
+Remarkably,
+comprehensive
+evaluations
+encompassing ThT ﬂuorescence, dot blot assay, CD spectra, TEM, and
+AFM unequivocally demonstrated the potent ability of C3N nanodots
+to effectively impede the aggregation of these peptides (Supplemen-
+tary Figs. 4 and 5).
+To our surprise, C3N nanodots exhibited an exceptional capacity
+to disassemble mature ﬁbrils of Aβ42 as well. The convergence of evi-
+dence from ThT ﬂuorescence, dot blot assay, CD spectra, AFM, and
+end-to-end distance results collectively substantiate that, in a con-
+centration and duration-dependent manner, the co-incubation of
+mature ﬁbrils with C3N nanodots led to the gradual dismantling of
+these originally long, well-deﬁned ﬁbrils into smaller, amorphous
+entities (Supplementary Fig. 6). Overall, these results suggested that
+C3N nanodots effectively reverse the aggregation of Aβ peptides.
+To further unveil the regulating process and underlying molecular
+mechanisms of C3N nanodots towards inhibiting aggregation of these
+peptides, we then performed all-atom molecular dynamics (MD)
+simulations (Supplementary Fig. 7). In the absence of C3N, two Aβ42
+peptides self-assembled into a partially ordered structure (containing
+β-sheets). However, C3N nanodot application signiﬁcantly inhibited
+the formation of any β-sheets. For instance, in two out of three tra-
+jectories (run 1 and run 3), very rare β-sheet contents were formed (i.e.,
+in run 2, β-sheet appeared at t = 80 ns, then disappeared at t = 340 ns)
+(Fig. 1e and Supplementary Fig. 8). Convergence of the simulations
+(>900 ns) demonstrated an overall decrease in the β-sheet content of
+~10.6 ± 1.5% without C3N to 0.2 ± 0.6% with C3N. Simultaneously, the
+random-coiled and bend components increased from ~37.0 ± 2.4% to
+~40.6 ± 1.7%, and ~13.5% to ~20.3% (Fig. 1f), respectively. These ﬁndings
+suggested that C3N nanodot effectively redirects Aβ42 peptides self-
+assembly to disordered structures. Moreover, CD spectroscopy con-
+ﬁrmed that C3N nanodots redirected the secondary structure of Aβ42
+peptides (at time = 24 h) from the β-sheet-rich to disordered random-
+coiled conformations (Fig. 1g). These results sufﬁciently demonstrate
+the structural modulating role of C3N nanodot in impeding the
+aggregation of Aβ42 peptides.
+The detailed interaction energies including both van der Waals
+(vdW) and electrostatic (elec) interactions between C3N and peptides
+were also explored (Fig. 1h). This was performed by analyzing the key
+binding conﬁgurations in a typical trajectory to better illustrate the
+binding mechanisms. Driven by vdW and hydrophobic interactions,
+one peptide was adsorbed onto the surface of C3N (time = 1 ns) and
+strengthened by π‒π stacking interactions (F4 and F20) (time = 10 ns).
+At time = 13 ns, another peptide was adsorbed onto the edge of C3N by
+electrostatic attractions between E11, D7, and E3 residues with ‒NH3
++
+groups at the edge of C3N nanodot. At time = 33 ns, this peptide was
+fully adsorbed onto the other side of C3N nanodot via vdW and π‒π
+stacking interactions. After 96 ns, the adsorption process converged.
+At this state, most hydrophobic and aromatic residues were adsorbed
+onto the C3N nanodot surface. Meanwhile, some charged or polar
+residues formed salt-bridge or hydrogen bonds with edge groups (e.g.,
+‒COO‒ and ‒NH3
++) of C3N nanodot while suppressing subsequent
+aggregation of peptides. Hence, the strong adsorption between
+Article
+https://doi.org/10.1038/s41467-023-41489-y
+Nature Communications|   (2023) 14:5718 
+2
+
+peptides and C3N nanodot was collectively driven by a combination of
+vdW and electrostatic, hydrophobic, hydrogen bonding, and π‒π
+stacking interactions, with the vdW interaction dominating (Fig. 1h), to
+induce disruption in peptides self-assembly and form disordered
+structures.
+Moreover, we conducted a comparative analysis of the inhibitory
+effects of stacked C3N nanodots (two layers), nano graphite (GRA)
+(simulated by two layers of stacked graphene), and fullerene (e.g., C60)
+on the aggregation of Aβ42 peptides. The ﬁndings clearly indicate that
+C3N nanodots exhibit a relatively stronger capability in inhibiting Aβ
+0.21 nm
+2 nm
+30
+20
+10
+0
+3.0  3.5 4.0  4.5  5.0  5.5 6.0
+20 nm
+size (nm)
+Percentage (%)
+4.5 ± 0.4 nm
+0
+ 
+5
+10
+15
+20
+25
+0
+20
+40
+60
+80
+100
+Aβ42 (50 μM) + C3N (μg/mL)
+Time (h)
+ThT signal (%)
+0
+100
+300
+500
+Dot-blot: Anti Amyliod Fibrils 
+Aβ42+ C3N (μg/mL)
+0          100       200       300        400       500
+10.0 nm
+-10.0 nm
+Aβ 42+ C3N 300 μg/mL
+Aβ 42+ C3N 100 μg/mL
+Aβ 42+ C3N 500 μg/mL
+Aβ 42 
+400 μm 
+0
+200
+400
+600
+800
+1000
+10
+20
+30
+40
+50
+60
+70
+80
+Residue
+Time (ns)
+0
+200
+400
+600
+800
+1000
+10
+20
+30
+40
+50
+60
+70
+80
+Residue
+Time (ns)
+Aβ42+ C3N
+Aβ42
+Coil
+-Sheet
+-Bridge
+Bend
+Turn
+-Helix
+5-Helix
+3-Helix
+Chain_Separator
+37.0
+0.2
+10.6
+13.5
+20.3
+40.6
+Aβ42                    Aβ42+ C3N
+ %  of  content
+100
+80
+60
+40
+20
+0
+3-helix
+5-helix
+-helix
+Turn
+Bend
+-bridge
+-sheet
+Coil
+    0
+100
+500
+300
+20
+10
+  0
+  
+-10
+-20
+200            210             220            230            240             250
+Aβ42 + C3N (μg/mL) 24 h
+Aβ42 0 h
+λ (nm)
+Aβ42-C3N vdW
+Aβ42-C3N total
+Time (ns)
+10
+100
+1000
+-500
+0
+Aβ42-C3N elec
+-2500
+-2000
+-1500
+-1000
+Interaction Energy (kJ/mol)
+   33 ns
+       96 ns
+1000 ns 
+  
+  1 ns                               10 ns                                 13 ns                     
+E11
+D7
+E3
+F20
+L17
+V24
+F4
+V24
+CTHR
+E3
+Y10
+F20
+A42
+E3
+K28
+Hydrophobic
+CTHR
+CHR
+Aromatic
+K28
+A42
+F4
+--
+-
+-
+-
+-
+a                                                                b                                                                                                           c 
+d
+e                                                                                                                                                                 f
+g                                                                                      h  
+Fig. 1 | C3N nanodots inhibit Aβ42 ﬁbrillization in vitro. a Transmission electron
+microscopy (TEM) image, crystal structure (top right corner, HRTEM image), and
+lateral size distribution (bottom right corner, histogram) of C3N nanodots. The
+image is representative of three independent experiments. b The inﬂuence of C3N
+nanodots on Aβ42 peptides (50 μM) aggregation was detected by ThT ﬂuorescence.
+Data are presented as mean ± SD, n = 3 biological replicates and signals were nor-
+malized by setting the maximal ThT signals to 100%. c The formation levels of
+amyloid ﬁber under different conditions were detected by dot blot assay using Aβ
+ﬁbrils conformation speciﬁc antibody (mOC87), at time = 24 h. Immunoblots are
+from one experiment representative of three independent experiments with similar
+results. d Representative AFM images of Aβ peptides untreated/treated with C3N
+nanodots (0, 100, 300, and 500 μg/mL) for 24 h. n = 3 independent experiments.
+e Time evolutions of the secondary structure of each residue in two Aβ42 peptides.
+The secondary structures of residues were assigned using the DSSP deﬁnition72.
+f The proportions of each structural component in the peptides. g CD spectra of Aβ
+peptides at 0 and 24 h in the absence of C3N nanodots and after incubation with
+C3N nanodots for 24 h. h The nonbonded interaction energies (including electro-
+static (elec), van der Waals (vdW) interactions, and a total of them) between C3N
+nanodots and peptides and key binding conﬁgurations during the process. Green
+dashed lines indicate hydrogen bonds, and the hydrophobic and hydrophilic
+(polar/charged) residues are shown with silver and green, respectively. Source data
+are provided as a Source data ﬁle.
+Article
+https://doi.org/10.1038/s41467-023-41489-y
+Nature Communications|   (2023) 14:5718 
+3
+
+peptide aggregation compared to the other two alternatives (Supple-
+mentary Fig. 9). Notably, the electrostatic potential (ESP) calculations
+of C3N nanodots reveal the presence of numerous polar C–N bonds
+and charged edge groups (e.g., ‒COO‒ and ‒NH3
++), resulting in a sig-
+niﬁcantly polar surface for C3N nanodots (Supplementary Fig. 10),
+which signiﬁcantly differs from GRA and fullerene represented by
+Lennard–Jones (LJ) particles. These distinct surface properties of C3N
+nanodots enable more effective suppression of peptide aggregation
+through multiple interactions, including vdW, electrostatic, hydro-
+phobic, hydrogen bonding, and π‒π stacking interactions. Further-
+more, these surface properties confer advantages upon C3N nanodots,
+such as superior water dispersity and compatibility with cell mem-
+branes, in contrast to highly hydrophobic candidates like nano GRA,
+fullerene, and others.
+C3N-nanodots alleviate neuron cytotoxicity induced by Aβ42
+peptides and demonstrate superior cytocompatibility
+As shown above, C3N nanodots exhibited an effective inhibiting
+function against Aβ42 peptides aggregation at molecular level. At this
+stage, it was logical to examine whether C3N nanodots alleviate
+aggregation-induced neuron cytotoxicity (Fig. 2). Herein, we ana-
+lyzed primary neuron cells viability and toxicity under different
+conditions using cell counting kit 8 (CCK-8), Lactate Dehydrogenase
+(LDH), and Live/Dead assays. The CCK-8 assay results demonstrated
+that Aβ42 peptides aggregation causes severe toxicity in neurons.
+This was found after neuronal cells incubation with 50 μM Aβ42
+peptides for 24 h which resulted in a survival rate of only
+~29.89 ± 3.98%. However, increased treatment concentration with
+C3N nanodots resulted in improved cell survival rate: ~44.83 ± 6.90%
+(100 μg/ml) to ~65.52 ± 9.12% (500 μg/mL) (Fig. 2a). Hence, C3N
+nanodots dose-dependently relieved Aβ42 peptides aggregation-
+induced neuron cytotoxicity, which was further conﬁrmed by LDH
+(Fig. 2b) and Live/Dead experimental (Fig. 2c, d) results. In addition,
+the cytotoxicity of C3N nanodots was found very mild with C3N
+nanodots administered at 500 μg/mL resulting a neuronal survival
+rate of ~88.47 ± 1.36%. We further investigated the morphologies of
+neurons under different conditions using scanning electron micro-
+scope (SEM) technology (Fig. 2e). Normal neurons presented in a
+plump-pear shape with many dendrites. However, Aβ42 aggregation-
+induced signiﬁcant deformations of neurons, e.g., the cellular body
+shrunk notably and was accompanied by severe dendrites loss. In
+contrast, the treatment with C3N nanodots resulted in well main-
+tained dense dendrites suggesting inverse effect against the toxicity
+caused by Aβ42 peptides aggregation in neurons. It also distinguished
+the mild inﬂuence of C3N nanodots on the shape of neurons. These
+effects predominantly stem from the fact that C3N nanodots facilitate
+d
+e
+0
+20
+40
+60
+80
+100
+120
+****
+n.s.
+****
+***
+*
+*
+n.s.
+-
+-
+-
+-
+Aβ (50 μM) 
++
++
++
++
++
++
+c
+a
+0
+20
+40
+60
+80
+****
+***
+250 μm
+control
+control
+Control
+Aβ (50 μM)
+Aβ + C3N
+CCK8 assay
+Cell viability (%)
+Cytotoxicity (%)
+Cell mortality (%) 
+LDH assay
+Aβ42 (50 μM) 
+Aβ42 (50 μM) 
+Aβ42 + C3N
+Aβ42 + C3N
+C3N (500 μg/mL)
+C3N (500 μg/mL)
+2 μm
+C3N (μg/mL) 
+500
+100
+200
+300
+400 
+500
+-
+-
+-
+-
+Aβ (50 μM) 
++
++
++
++
++
++
+C3N (μg/mL) 
+500
+100
+200
+300
+400 
+500
+b
+LIVE/DEAD
+C3N (500 μg/mL)
+0
+20
+40
+60
+80
+100
+****
+n.s.
+n.s.
+****
+**
+**
+*
+Fig. 2 | C3N nanodots reduce Aβ42-aggregation-induced cytotoxicity. Neurons
+were cultured with/without Aβ42 peptides for 24 h. Cytotoxicity of Aβ42 aggregates
+in the presence/absence of different concentrations of C3N nanodots for 24 h to
+primary neurons was assayed by a CCK8 (P < 0.0001, P < 0.0001, P = 0.0300,
+0.0114, and 0.0009, respectively) and b LDH-release (P < 0.0001, P < 0.0001,
+P = 0.0312, 0.0065, and 0.0035, respectively), n = 3 independent experiments.
+Statistical signiﬁcance was determined by one-way ANOVA in (a–c) with p < 0.05
+considered statistically signiﬁcant. c, d Live/dead staining experiments to examine
+whether C3N nanodots alleviate the cytotoxicity of neurons induced by Aβ42
+peptides. n = 5 independent experiments. Statistical signiﬁcance was determined
+by unpaired Student’s t test (two-tailed) with P < 0.05 considered statistically sig-
+niﬁcant (P < 0.0001, P = 0.0005). d Photomicrographs of live/dead assay showing
+live (green cell body) and dead (red nuclei) cells in each group. e Morphology of
+cells in each group was observed under SEM. The images are from one experiment
+representative of three independent experiments with similar results. All data are
+presented as mean ± SD. *P < 0.05, **P < 0.01, ***P < 0.001, and ***P < 0.0001 vs
+50 μM Aβ42 group. n.s. = not signiﬁcant. Source data are provided as a Source
+data ﬁle.
+Article
+https://doi.org/10.1038/s41467-023-41489-y
+Nature Communications|   (2023) 14:5718 
+4
+
+the reversal of Aβ42 peptide aggregation. Additionally, the adsorp-
+tion of peptides onto the surface of C3N nanodots, leading to a
+decrease in peptide concentration in the solution, is expected to play
+a role in alleviating the cytotoxicity of Aβ42 peptides to neurons. It is
+noteworthy
+that
+both
+the
+drug
+and
+peptide
+concentrations
+employed at the cellular level are relatively high. As we transition to
+the animal level, attaining elevated drug concentrations requires
+surmounting the BBB, a challenge that could potentially be addres-
+sed through sustained and long-term administration strategies.
+In addition, the cytotoxicity of C3N nanodots in several cell lines
+was also examined, including red blood cells (RBCs), primary mouse
+neuron (Neuron), rat adrenal chromafﬁn cell tumor cells (PC12), pri-
+mary rat astrocyte (Astrocyte), human umbilical vein endothelial cells
+(HUVECs), human neuroblastoma cells (sh-sy5y). The results showed
+that C3N nanodots possess decent cytocompatibility among all tested
+cell lines (Supplementary Fig. 11 and Supplementary Fig. 12). Moreover,
+C3N nanodots showed much superior biocompatibility than GO
+nanosheets (Supplementary Fig. 13). This revealed that C3N nanodots
+alleviate
+neuron
+cytotoxicity,
+reduce
+cell
+death,
+protect
+Aβ42
+aggregation-induced axonal and dendritic damages and demonstrate
+remarkable cytocompatibility.
+C3N-nanodots improve the learning and spatial memory cap-
+abilities of APP/PS1 mice with limited biotoxicity
+Following the encouraging in vitro ﬁndings, we sought to determine
+whether C3N nanodots have neuroprotective functions towards AD
+mice via inhibition of Aβ peptides aggregation. For this purpose, we
+used APP/PS1 double transgenic mice as the model AD organism. Here,
+male mice were chosen exclusively for this study as they may have a
+relatively stable hormone level and much less estrogen’s impact42–44. It
+thus allows for a more accurate observation and evaluation of disease
+progression and pathological changes upon the application of nano-
+medicine. This in-vivo model overexpresses Aβ peptides in the brain by
+inducing amyloid plaque formation which eventually leads to the
+occurrence of AD symptoms45,46. The expression of Aβ peptides in APP/
+PS1 mice begins at 3‒4 months of age. Thus, we treated the APP/PS1
+mice with C3N nanodots-saline solution per day from 3 to 9 months via
+intraperitoneal injection. APP/PS1 mice received saline only were set as
+the positive control group, and wild-type (WT) mice with non-
+intervention were set as the negative control. After six months of
+C3N nanodots injection vs. no injection, the cognitive function of APP/
+PS1 mice were examined using the Morris water maze and novel object
+recognition tests (Fig. 3).
+In order to further ascertain the ability of C3N nanodots to tra-
+verse the BBB and accumulate within the brain, an essential pre-
+requisite for their potential application in AD treatment, we employed
+Cy5.5-modiﬁed C3N nanodots (referred to as C3N-Cy5.5) to enable
+ﬂuorescence imaging. For this purpose, we conducted experiments
+utilizing healthy C57BL/6J mice, which were divided into ﬁve distinct
+groups: (1) a control group without any treatment, and (2) groups that
+received intraperitoneal (i.p.) administration of C3N-Cy5.5 nanodots
+for 8 h, (3) 24 h, (4) 48 h, and (5) 1 week. The administration of
+C3N-Cy5.5 nanodots was accomplished via injections of a PBS solution
+at a relatively high dosage of 200 mg/kg (n = 3 per group) to ensure
+optimal imaging. As shown in Fig. 3a, b, at time = 8 h, the ﬂuorescence
+emanating from C3N-Cy5.5 nanodots within the brain was discernible.
+Subsequently, the highest intensity of ﬂuorescence was observed at
+48 h post-injection, gradually diminishing to undetectable levels after
+one week. These compelling outcomes substantiate the remarkable
+capacity of C3N nanodots to successfully penetrate the BBB, thus
+establishing a crucial foundation for their potential therapeutic
+application in AD.
+Then, we reﬁned the optimal C3N nanodots administration dose
+from the assessment of the escape latency. In the Morris water maze
+test during the 5-day learning phase, the latency time for APP/PS1 mice
+to ﬁnd the survival platform (initially placed in the third quadrant) in
+the saline group underwent a very mild decrease from ~57.5 ± 1.5 to
+~42.4 ± 6.9 s as shown previously47. Treatment with C3N nanodots sig-
+niﬁcantly shortened the latency time, indicating a remarkably
+improved learning capacity of AD mice (Fig. 3c). We also noted that
+treatment with 1 mg/kg/d dose obtained better therapeutic effect than
+that treated with 5 mg/kg/d dose, at the day 5 the latency time was
+~19.2 ± 2.3 s vs. ~29.3 ± 2.9 s (Fig. 3c), suggesting that 1 mg/kg/d may be
+the optimal dose. The potential contribution of the swimming cap-
+ability (swimming speed) to the learning effects was excluded because
+there was no distinct difference in the average swimming speed
+between two C3N nanodots treated groups and the WT mice (Fig. 3d).
+Overall, these results demonstrated the efﬁcacy of C3N nanodots in the
+treatment and improving the learning capacity of AD mice, with an
+optimal dose of ~1 mg/kg/d. Hence, 1 mg/kg/d was used in the follow-
+ing in vivo experiments.
+To further measure the spatial memory capability, the third
+quadrant residence time of mice was accumulated during 60 s swim-
+ming after retrieval of the survival platform on day 6 (Fig. 3e, f). C3N
+nanodots-treated AD mice spent signiﬁcantly more time in the third
+quadrant and crossed this target quadrant more often compared to
+control APP/PS1 mice (~15.9 ± 2.8 s vs. ~6.5 ± 2.5 s; ~7.2 ± 0.8 times vs.
+~3.0 ± 1.3 times) (Fig. 3f, g, & h). In addition, the time to explore the new
+object among APP/PS1 mice was signiﬁcantly reduced as compared to
+that of the WT mice (~0.7 ± 0.3 vs. ~0.4 ± 0.1). However, treatment with
+C3N nanodots can remarkably prolong the time of APP/PS1 mice to
+explore the new object, which resulted in the recognition index (RI) of
+APP/PS1 mice (treated with C3N nanodots) was remarkably improved
+to level comparable with WT mice (~0.7 ± 0.3 vs. ~0.7 ± 0.2) (Fig. 3i, j).
+These results were indicative that C3N nanodots treatment could
+partially rescue these defects in APP/PS1 mice and may offer utility
+against AD.
+Furthermore, the body weights among both C3N nanodots treated
+and untreated AD mice increased steadily during the entire adminis-
+tration period (Supplementary Fig. 14) suggesting the higher bio-
+compatibility of C3N nanodots in animals. Moreover, the H&E staining
+in heart, liver, spleen, lung, and kidney tissue showed no distinct
+lesions (Supplementary Fig. 15). We also noted in the literature that
+GO-based nanomaterials have the ability to reverse the aggregation of
+Aβ and α-synuclein peptides28,37. However, it is worth pointing out that
+numerous studies have raised concerns about their potential long-
+term cytotoxicities, including inﬂammation reactions48–50. In light of
+these concerns, we conducted measurements of several inﬂammation
+markersafter six months of treatment with C3N nanodots. Remarkably,
+all investigated inﬂammation indexes, such as white blood cell count
+(WBC), lymphocyte count (Lymph#), monocyte count (Mon#), and
+granulocyte count (Gran#), fell within the normal healthy range
+(Supplementary Fig. 16). These ﬁndings strongly indicate that C3N
+nanodots do not provoke severe inﬂammation reactions. Additionally,
+the biodistribution of C3N nanodots suggests that the liver and kidney
+were the primary off-target organs of C3N nanodots (Supplementary
+Fig. 17). Consequently, we examined liver and kidney function indica-
+tors, such as aspartate aminotransferase (AST), albumin (ALB), and
+urea (UREA), and found no signiﬁcant differences in these function
+indices (Supplementary Fig. 18). This further supports the exceptional
+biocompatibility of C3N nanodots. Taken together, these toxicological
+assessments collectively suggest that C3N nanodots exhibit minimal
+toxicity in vivo.
+Moreover, we performed the investigation of the excretion
+pathways of C3N nanodots and discovered that urination and defeca-
+tion played vital roles in their elimination from the body (Supple-
+mentary Fig. 19). On the other hand, degradation studies conducted
+under simulated physiological conditions, including an acidic envir-
+onment similar to lysosomes and the presence of catalase with phy-
+siological concentrations of H2O2, revealed the degradability of C3N
+Article
+https://doi.org/10.1038/s41467-023-41489-y
+Nature Communications|   (2023) 14:5718 
+5
+
+nanodots (Supplementary Figs. 20 and 21). Cell colocalization experi-
+ments further conﬁrmed the entry of C3N nanodots into lysosomes
+(Supplementary Fig. 21), implying their potential decomposition
+through cellular lysosome degradation mechanisms. This inherent bio-
+degradable property may confer enhanced bioavailability and biose-
+curity to C3N nanodots, highlighting their potential as a biocompatible
+and safe candidate.
+In vivo efﬁcacy of C3N nanodots against amyloid pathology
+Next, we detected the level of cerebral ﬁbrillar amyloid plaques as
+hallmark of AD9 in WT and APP/PS1 mice untreated/treated with C3N
+nanodots. The 6E10 anti-Aβ antibody was used because of its speciﬁc
+binding capability with residues 1 to 16 of the Aβ peptide. Notably,
+massive amyloid plaques accumulated in both the cerebral cortex and
+hippocampus of APP/PS1 mice treated with saline (~1.5 ± 0.5%) (Fig. 4a).
+WT
+APP/PS1
+APP/PS1 + C3N 
+WT
+Ⅲ
+Ⅱ
+Ⅰ
+Ⅳ
+APP/PS1
+Crosses
+a
+c
+d
+b
+WT
+Low
+High
+APP/PS1
+APP/PS1 + C3N 1 mg/kg/d
+)I
+R
+(
+x
+e
+d
+ni
+n
+oitin
+g
+o
+c
+e
+R
+e
+f
+j
+g
+h
+i
+Avg Radiant Efficiency
+[p/s/cm2/sr] / [μW/cm2]
+Control
+8 h
+24 h
+48 h
+1 week
+APP/PS1 + C3N 5 mg/kg/d
+Control
+8 h
+24 h
+1 week
+48 h
+Ⅳ
+Ⅰ
+Ⅱ
+Ⅲ
+)
+s
+(
+t
+n
+a
+r
+d
+a
+u
+q
+ni
+e
+m
+i
+T
+1.0 × 107
+1.5 × 107
+2.0 × 107
+2.5 × 107
+*
+*
+***
+n.s.
+0
+20
+40
+60
+*
+**
+***
+Trial session (day)
+1
+2
+3
+4
+5
+Escape latency (s)
+Trial session (day)
+0
+100
+200
+300
+0
+3
+6
+9
+12
+**
+*
+1.0
+0.5
+0.0
+APP/PS1+C3N
+Average speed (mm/s)
+1
+2
+3
+4
+5
+0
+10
+20
+30
+40
+**
+*
+*
+*
+Article
+https://doi.org/10.1038/s41467-023-41489-y
+Nature Communications|   (2023) 14:5718 
+6
+
+However, the amyloid plaques deposition levels remarkably decreased
+after treatment with 1 mg/kg/d (~0.6 ± 0.3%; a ~60% decrease) C3N
+nanodots treatment (Fig. 4b). These results were also conﬁrmed by
+counting the number of amyloid plaques (Fig. 4c).
+Considering that Aβ40 and Aβ42 peptides are the dominant com-
+ponent of the plaques in the brains of AD patients39. We then used
+enzyme-linked immunosorbent assay (ELISA) to quantify the level of
+intra-cephalic Aβ42/Aβ40 peptides. This involved using Tris-buffered
+saline (TBS)‒, sodium dodecyl sulfate (SDS)‒, and formic acid (FA)‒
+soluble Aβ forms corresponding to the soluble, partially soluble (non-
+dense plaque), and completely insoluble (dense plaque) Aβ forms,
+respectively. These analyses showed that treatment with C3N nanodots
+decreased the level of total Aβ42/Aβ40 peptides by ~36%/~50%, respec-
+tively. The relative FA‒soluble Aβ42 / Aβ40 species levels was reduced
+most signiﬁcantly by ~84%/~83% (Fig. 4d, e), which suggested that C3N
+nanodots effectively inhibit Aβ peptides aggregating into completely
+insoluble dense plaques. Overall, C3N nanodots possessed the strong
+ability to delay or obstruct Aβ peptide aggregation pathogenesis in vivo.
+Fig. 3 | C3N nanodots rescues the cognition deﬁcits of the APP/PS1 mice.
+a, b Temporal changes in ﬂuorescence intensity of C3N-Cy5.5 in the mouse brain
+following intraperitoneal injection (i.p.) at a relatively high dosage of 200 mg/kg to
+ensure optimal imaging. n = 3 mice per group. The P value represents the signiﬁcant
+difference between the C3N nanodots-treated groups and the control group
+determined by one-way ANOVA (P = 0.0331, 0.0106, and 0.0003, respectively).
+c Time to reach hidden platform in Morris water maze of the WT and APP/PS1 mice
+treated without/with C3N nanodots (Two-way ANOVA for groups, P = 0.0396,
+0.0019, and 0.0001). d The average swimming velocity of each group.
+e Representative swimming paths of escape latency in the ﬁfth day.
+f Representative 60 s swimming paths of mice treated with various regimens to
+locate the escape platform after platform retrieval. g Accumulated time spent by
+mice treated with different regimens in all four quadrants. (P = 0.0016 and 0.0257).
+h Frequency of mice traversing the platform position after platform retrieval
+(P = 0.0024 and 0.0209). i The novel object recognition index (RI) of mice in each
+group mice (P = 0.0311 and 0.0168). j Representative paths of novel object recog-
+nition. All data are presented as mean ± SD. n.s. = no signiﬁcants, n = 6 mice each
+group. Statistical signiﬁcance was determined by one-way ANOVA in (g–i) with
+P < 0.05 considered statistically signiﬁcant. *P < 0.05, **P < 0.01 and ***P < 0.001.
+Source data are provided as a Source data ﬁle.
+APP/PS1+CN 1 mg/kg/d
+APP/PS1
+WT
+a
+b
+0
+1
+2
+3
+****
+6E10-positive area (%)
+APP/PS1
+APP/PS1+C3N 1mg/kg/d
+SDS-soluble   FA-soluble       Total
+0
+1
+2
+3
+*
+***
+**
+d
+Aβ42 (nmol/g of tissue)
+SDS-soluble  FA-soluble       Total
+0
+1
+2
+3
+*
+**
+**
+e
+Aβ40(nmol/g of tissue)
+0
+100
+200
+300
+plaques number (6E10)
+****
+**
+10-200                                
+>200
+c
+diameter (μm)
+Fig. 4 | C3N nanodots reduce Aβ deposition levels in the brain of APP/PS1 mice.
+After six months of treatment, the whole brains of APP/PS1 mice treated with/
+without C3N nanodots were collected. a 6E10-labeled mice brain sections immu-
+nostained for Aβ (6E10) and showing the amyloid plaque levels of the WT and APP/
+PS1 mice under different conditions. The cortex and hippocampus regions are
+marked with yellow and blue dashed lines, respectively. Scale bar = 500 μm. b 6E10-
+positive area (n = 16 images over 3 mice per group, P < 0.0001) and c number of
+6E10-positive plaques in different sizes (n = 6 images over 3 mice per group,
+P < 0.0001, P = 0.0041) in the APP/PS1 mice untreated/treated with C3N nanodots at
+the doses of 1 mg/kg/d, respectively. d, e Levels of Aβ42/Aβ40 peptides in SDS‒, FA‒,
+and TBS‒ soluble forms in the cortex, n = 3 mice per group, P = 0.0285, 0.0007,
+0.0021, 0.0498, 0.0021, and 0.0011 respectively. Statistical comparisons were
+performed between the APP/PS1 and C3N nanodots-treated groups, according to
+the Student’s t-test (two-tailed). Data are presented as mean ± SD.*P < 0.05,
+**P < 0.01, ***P < 0.001 and ****P < 0.0001 vs APP/PS1 group. Source data are pro-
+vided as a Source data ﬁle.
+Article
+https://doi.org/10.1038/s41467-023-41489-y
+Nature Communications|   (2023) 14:5718 
+7
+
+C3N nanodots improve the level of synaptic function-related
+proteins in vivo
+Synaptic dysfunction is another important pathological feature of
+AD51,52 having a strong impact in nerves development and neuro-
+transmitters release (including dopamine and glutamate). The SNAP25
+and VAMP2 proteins are the two main synaptic proteins which protects
+synaptic integrality53,54. Therefore, we assessed the changes in
+expression levels of these two proteins using western blot and
+immunohistochemistry ﬂuorescence assays. Western blot results
+demonstrated that the content of two proteins was up-regulated
+(Fig. 5a) after treatment with C3N nanodots. The quantiﬁcation of the
+SNAP25 and VAMP2 protein levels was performed using gray density
+analyses by utilizing Image J software. The results showed that
+expression levels of the two proteins were increased by 43% & 22%
+respectively, after treatment with C3N nanodots (Fig. 5b).
+In addition, we also examined the neuron number and synaptic
+damage by double-staining brain tissue with an antibody against
+microtubule-associated protein 2 (MAP2; a neuronal marker) and
+SNAP25 (a synaptic marker) (n = 3/group). The co-localization of
+SNAP25 and MAP2 signals reﬂected the expression level of synaptic
+proteins in neurons. Remarkably, C3N treatment preserves MAP2-
+positive neuron numbers in APP/PS1 mice exposed to Aβ (Fig. 5c, d),
+demonstrating a ~2.3-fold upregulation. In APP/PS1 mice treated with
+saline only, SNAP25/MAP2 co-localization yellow pixel intensity
+decreased remarkably, which indicated serious dysfunction of the
+neural network as compared to WT mice. In contrast, treatment with
+C3N nanodots for six months resulted in signiﬁcantly elevated SNAP25/
+MAP2 expression levels (Fig. 5d). These results demonstrated that C3N
+nanodots maintains an effective protective function in the synapse.
+Discussion
+In this study, an effective Aβ peptides aggregation nano-inhibitor
+called C3N nanodots has been explored against AD. This nano-inhibitor
+redirects peptide self-assembly to disordered off-pathway species and
+disassembly mature ﬁbrils into smaller and amorphous entities,
+thereby reducing aggregation-induced neuron cytotoxicity in vitro
+β-actin
+β-actin
+VAMP2
+SNAP25
+ kDa
+25 
+19
+42 
+42 
+WT-1
+    APP/PS1-1
+        APP/PS1+C3N-1
+WT-2
+    APP/PS1-2
+        APP/PS1+C3N-2
+WT-3
+    APP/PS1-3
+        APP/PS1+C3N-3
+a
+b
+d
+Relative proteins levels
+2.0
+1.5
+1.0
+0.5
+0.0
+APP/PS1 + C3N 1 mg/kg/d
+SNAP25
+VAMP2
+APP/PS1
+**
+**
+WT
+ MAP2+DAPI+/DAPI+ (%)
+APP/PS1 + C3N 1 mg/kg/d
+WT
+APP/PS1
+WT
+APP/PS1 APP/PS1+C3N 
+ 1 mg/kg/d
+0
+10
+20
+30
+40
+50
+60
+***
+****
+c
+DAPI
+Merge
+SNAP25
+MAP2
+WT
+APP/PS1
+APP/PS1 + C3N 1 mg/kg/d
+40 μm
+Fig. 5 | C3N nanodots increase the expression levels of the synaptic function-
+related proteins in APP/PS1 mice. a SNAP25 and VAMP2 proteins levels were
+assessed using western blotting. b The relative expression levels of the SNAP25 and
+VAMP2 proteins were estimated by comparing their relative gray densities to the β-
+actin. n = 3 mice per group, Statistical signiﬁcance was determined by unpaired
+Student’s t test (two-tailed) with P < 0.05 considered statistically signiﬁcant.
+P = 0.0077 and P = 0.0075. c Quantitation of MAP2-positive neurons in cortexes.
+n = 18 micrographs examined over 3 independent mice. Statistical signiﬁcance was
+determined by one-way ANOVA in with P < 0.05 considered statistically signiﬁcant.
+P < 0.0001, P = 0.0002. d Immunohistochemistry on brain sections of different
+group mice. Representative micrographs of MAP2-labeled (red), SANP25-labeled
+(green) and DAPI (blue) in the cortex. Micrographs from three independent mice
+with similar results. All experiments were repeated three times. Data are presented
+as mean ± SD. **P < 0.01, ***P < 0.001 and ****P < 0.0001 vs APP/PS1 group Source
+data are provided as a Source data ﬁle.
+Article
+https://doi.org/10.1038/s41467-023-41489-y
+Nature Communications|   (2023) 14:5718 
+8
+
+and in vivo. Several experimental analyses including ThT ﬂuorescence,
+dot blot assays and CD spectra collectively demonstrate that C3N
+nanodots guide Aβ42, AβpE3, and Aβ40 peptides self-assembly to dis-
+ordered structures rather than β-sheet-rich structures. Similarly,
+morphological observations using AFM and TEM imaging show that
+after treatment with C3N nanodots these Aβ peptides form small dif-
+fused oligomeric structures, in contrast to the long and well-deﬁned
+mature amyloid ﬁbers formed in the absence of C3N nanodots.
+Moreover, ThT ﬂuorescence, dot blot assay, CD spectra, AFM, and end-
+to-end distance results collaborate that C3N nanodots can dis-
+aggregate the preformed long, well-deﬁned mature ﬁbrils into smaller,
+amorphous species. The results from CCK-8, LDH, and Live/Dead assay
+reveal that C3N nanodots relieve neuron toxicity induced by Aβ
+aggregation and rescue neuronal death. SEM images further helped to
+depict that C3N nanodots protect normal neuronal morphology from
+Aβ aggregation-induced destruction. Furthermore, MD simulations
+demonstrated that both the non-speciﬁc hydrophobic and electro-
+static interactions, and the speciﬁc π‒π stacking and hydrogen
+bonding interactions between C3N nanodots and Aβ peptides syner-
+gistically obstruct the aggregation process of Aβ peptides. The inhi-
+bitory capability of C3N nanodots on peptides aggregation is notably
+superior to that of GRA and fullerene. This can be attributed to the
+polarization of the SEP of C3N nanodots, which is induced by the
+presence of numerous polarC‒N bonds and charged edge groups (e.g.,
+‒COO‒ and ‒NH3
++). These characteristics enable C3N nanodots to
+engage in additional electrostatic interactions with the charged resi-
+dues within the amyloid peptides, distinguishing them from GRA and
+fullerene represented by LJ particles. Moreover, the formation of
+hydrogen bonds between the charged edge groups of C3N nanodots
+and peptides contributes to the suppression of peptides aggregation.
+Fluorescence imaging experiments provide evidence that C3N
+nanodots are capable of effectively crossing the BBB in mice and
+accumulating in the brain. The cognitive abilities among the studied
+mice were also restored following C3N nanodots treatment. After C3N
+nanodots treatment, the cognitive ability of APP/PS1 mice signiﬁcantly
+improved to levels comparable with WT mice. Several immunological
+experiments including immunohistochemistry ﬂuorescence, western
+blot, and ELISA assays demonstrated that APP/PS1 mice experience a
+decrease in cerebral ﬁbrillar amyloid plaque levels and an increase in
+SNAP25 and VAMP2 with C3N nanodots treatments. Furthermore, rig-
+orous toxicological assessments, including changes in body weight,
+H&E staining of vital organs (heart, liver, spleen, lung, and kidney),
+long-term inﬂammation indexes, and liver and kidney function indi-
+cators, demonstrate the exceptional biocompatibility of C3N nano-
+dots. The main excretion pathways of C3N nanodots were found to be
+through urination and defecation. Additionally, simulated degradation
+studies suggest that C3N nanodots may undergo degradation via cel-
+lular lysosome and catalase degradation pathways. This may further
+enhance the bioavailability and biosecurity of C3N nanodots. Con-
+clusively, this study not only provides useful experimental and theo-
+retical basis for the application of C3N nanodots in neuronal
+protection, but also offers the groundwork for subsequent optimal
+designs of nanomaterials targeting Aβ peptides aggregation in AD.
+Methods
+Preparation of C3N nanodots and characterizations
+The synthesis of C3N nanodots was based on the method reported by
+our group38. Brieﬂy, the aqueous solution of 2,3-Diaminophenazine
+(80 mL, 1.4 mM) was heated and kept at 320 °C for 36 h in a 100 mL poly
+(p-phenylene)-lined stainless-steel autoclave. The products were ﬁl-
+tered by 0.02 µm alumina microporous membrane to obtain the raw
+C3N nanodots. Then, the raw C3N nanodots were treated with H2O2 (5 M,
+80 °C for 6 h) for further oxidization. Finally, the sample was puriﬁed via
+membrane dialysis with the molecular weight cutoff of 50–1000 Da for
+5 days, and the oxygen-modiﬁed C3N nanodots were obtained.
+The transmission electron microscopy (TEM) and high-resolution
+TEM (HRTEM) images were obtained using transmission electron
+microscope with the accelerating voltage of 200 kV (Tecnai G2 F20, FEI
+Corporation, American). The Fourier transform infrared (FT-IR) spec-
+tra of C3N nanodots were characterized using fourier transform
+infrared spectrometer (Hyperion, Bruker Corporation, Germany). The
+UV–Vis spectra analysis utilized a UV-vis spectrophotometer (Lambda
+750, PerkinElmer, American), and the X-ray photoelectron spectra
+(XPS) were obtained using an X-ray photoelectron spectrometer (Axis
+ultra DLD, Kratos, Britain).
+Preparation of Cy5.5-conjugated C3N nanodots
+To achieve ﬂuorescence labeling of the C3N nanodots, a reaction was
+carried out by incubating the resulting covalent C3N nanodots with the
+Cy5.5 monofunctional N-Hydroxysuccinimide ester (Cy5.5-NHS) in PB
+buffer at pH 8.0. This incubation process was allowed to proceed
+overnight, facilitating the successful conjugation of Cy5.5 dye to the
+C3N nanodots through covalent bonding. Following the reaction, any
+unreacted Cy5.5 dye was eliminated through the utilization of ultra-
+ﬁltration. The resultant product, namely Cy5.5-conjugated C3N nano-
+dots (denoted as C3N-Cy5.5), was subsequently stored in a dark
+environment at a temperature of 4 °C for future applications.
+Antibodies
+Primary antibodies for immunoblotting including dot blot analysis
+and western blot analysis were performed with antibodies against
+Amyloid
+Fibril-Conformation-Speciﬁc
+(mOC87,
+abcam,
+Cat#:
+ab201062, 1:8000), SNAP25 (Synaptic systems, Cat#: 111-002,
+1:2000), VAMP2 (abcam, Cat#: ab3347, 1:1000), β-actin (4D3, Bio-
+world Technology, Cat#: BS6007M, 1:5000). Secondary antibodies
+were conjugated with peroxidase afﬁnipure donkey anti-rabbit IgG
+(H + L) (#711-035-152, Jackson ImmunoResearch, 1:10,000), Perox-
+idase afﬁnipure donkey anti-mouse IgG (H + L) (#715-035-151, Jackson
+ImmunoResearch, 1:10,000).
+Primary antibodies for immunohistochemistry were directed
+against puriﬁed anti-β-Amyliod 1-16 (6E10, Covance, SIG-39320, 1:500);
+MAP2 (AP20, Millipore, Cat#: MAB3418, 1:1,000) and SNAP25 (Synaptic
+systems, Cat#: 111-002, 1:2,000). Secondary antibodies were con-
+jugated with CyTM3 afﬁnipure donkey anti-mouse IgG (H + L) (#715-165-
+151, 1:400), Alexa Fluor® 488 afﬁnipure donkey anti-rabbit IgG (H + L)
+(#711-545-152, 1:400).
+Preparation of monomic Aβ42 peptides
+Synthetic
+Aβ42
+(NH2-DAEFRHDSGYEVHHQKLVFFAEDVGSNK-
+GAIIGLMVGGVVIV-COOH,
+purity
+≥
+98%),
+AβpE3
+(NH2-Pyr-
+FRHDSGYEVHHQKLVFFAEDVGSNKGAIIGLMVGGVVIV-COOH,
+pur-
+ity ≥98%) and Aβ40 (NH2-DAEFRHDSGYEVHHQKLVFFAEDVGSNK-
+GAIIGLMVG GVV-COOH, purity ≥98%) peptides were purchased
+from APeptide Co., Ltd (Shanghai, China) and prepared according
+to protocols previous described55,56. Brieﬂy, Aβ42/Aβ40/AβpE3 pep-
+tides were ﬁrst dissolved in hexaﬂuoroisopropanol (HFIP, 10522,
+Sigma Aldrich) and sonicated for 10 min. The Aβ42‒HFIP solution
+was then incubated at room temperature for 1 h to ensure the
+monomerization and structural randomization of peptides, and
+placed into a fume hood to completely evaporate HFIP. The
+obtained peptide ﬁlm was stored at ‒80 °C. Immediately before use,
+the peptide ﬁlm was resuspended to 5 mM in dimethyl sulfoxide
+(DMSO, D2650, Sigma Aldrich) and diluted to a ﬁnal concentration
+of 100 μM in phosphate-buffered solution (PBS, 0.1 M). The solution
+was then centrifuged at 16,000 × g for 10 min at 4 °C to remove the
+pre-formed ﬁbers.
+In the aggregation experiment, Aβ42 (100 μM) was mixed with C3N
+nanodots at various concentrations or PBS solution to a ﬁnal con-
+centration of 50 μM and then incubated at 37 °C with constant agita-
+tion at 300 rpm for 24 h.
+Article
+https://doi.org/10.1038/s41467-023-41489-y
+Nature Communications|   (2023) 14:5718 
+9
+
+Preparation of Aβ42 ﬁbrils
+Aβ42 peptide stock solutions were prepared by dissolving them in
+DMSO and phosphate buffer (pH = 7.4) to achieve a ﬁnal concentration
+of 200 μM. The peptides were then aggregated for 48 h at 37 °C and
+centrifuged at 16,000 × g for 10 min to remove insoluble material. The
+concentration of the stock solutions was determined using the Brad-
+ford assay. Subsequently, the peptide stock solutions were diluted in
+1 mM phosphate buffer (pH = 7.4) to a ﬁnal concentration of 50 μM.
+The samples were incubated with different concentrations of C3N
+nanodots at 37 °C with continuous shaking at 300 rpm. The ability of
+C3N nanodots to disaggregate mature ﬁbrils was assessed using the
+ThT ﬂuorescence assay, Dot blot assay, CD spectra, and AFM images.
+Thioﬂavin-T (ThT) assay
+Fluorescence with Thioﬂavin T (ThT) was used to detect aggregated Aβ
+containing β-sheets57. A 50 μL sample was mixed with 150 μL ThT
+(20 μM, T3516, Sigma Aldrich) in a 96-well plate. The resulting ﬂuores-
+cence intensity was detected immediately after mixing with a ﬂuores-
+cence plate reader (BioTek, USA) at excitation and emission wavelengths
+of 450 nm and 485 nm, respectively. Fluorescence values of C3N nano-
+dots and ThT were subtracted from that of the mixed solution. Error
+bars (±s.d.) of triplicate samples are shown for selected data points.
+Dot blot assay
+Dot blot assays were carried out with amyloid ﬁbril conformation
+speciﬁc antibody to probe the formation level of Aβ42 amyloid mature
+ﬁbers. Brieﬂy, 5 μL aliquots of the sample were dropped onto nitro-
+cellulose membranes (1060002, GE Healthcare). Once the membranes
+dried, they were blocked for 1 h with 3% nonfat milk in tris-buffered
+saline (TBS) solution and then incubated with Anti-Amyloid Fibril
+antibody (mOC87) overnight at 4 °C. The membranes were washed 3
+times in TBST for 5 min and then incubated with the horseradish per-
+oxidase (HRP)-conjugated donkey anti-rabbit secondary antibody for
+2 h at room temperature (Fig. 1a and Supplementary Figs. 4b, 5b, 6b).
+Finally, the membranes were developed by chemiluminescence using
+ECL Plus (P0018S, Beyotime).
+Atomic force microscope (AFM)
+Here, 10 μL of each sample was dispersed on freshly cleaved mica
+sheets. After air-drying, samples were scanned and analyzed using the
+tapping mode of AFM (Bruker, Germany), and the height of the sample
+was recorded.
+Transmission electron microscopy (TEM)
+Ten microliters of each sample were dispersed on a copper grid (car-
+bon and formvar coated 300 mesh, Zhongjing Technology Co., Ltd,
+China) for 2 min at room temperature. Then, they were washed twice
+with ultrapure water and negatively stained with 1% uranyl acetate for
+2 min. After air-drying, images of peptides were observed using a
+Tecnai G2 spirit BioTwin TEM at 120 kV.
+Circular dichroism (CD) spectroscopy. All samples were diluted six
+times under PBS conditions. Spectra were detected using a Jasco J-815
+circular dichroism spectropolarimeter (1 mm path length cuvette) at
+25 °C. The spectrum of PBS was set as the baseline. Each sample was
+scanned three times and the average value was adopted. Raw data,
+after subtracting the buffer spectra, were smoothed according to the
+manufacturer’s instructions.
+Primary neuron cultures
+Mouse primary cortical neurons were obtained from embryonic day 18
+C57BL/6J mice. All animal procedures followed the policies of the
+Soochow University Animal Care and Use Committee (SUACUC). In
+brief, dissociated neurons were plated onto dishes coated with poly-D-
+lysine (P6407, Sigma Aldrich) then suspended in culture medium
+(Neurobasal Media (21103-049, Invitrogen) containing 2% B-27 (17504-
+044, Invitrogen), 1% penicillin/streptomycin (15140122, P/S, Gibco), 1%
+L-glutamine and 0.25% GlutaMaxTM (35050, Invitrogen)). Next, the
+plating medium was substituted with feeding medium (Neurobasal
+medium supplemented with 2% B27, 1% P/S, and 1% L-glutamine) on the
+second day after cell plating. The medium was replaced twice a week
+and the cultures were incubated in a 5% CO2 incubator at 37 °C. Cells
+were used for experimentation 8 days after seeding.
+Primary astrocyte cultures
+Primary astrocyte cultures were extracted from the cerebral cortex of
+1-3-d-old rats (Sprague-Dawley). In brief, dissociated cortical cells were
+suspended in DMEM media (sh30022.01b, Hyclone) containing 1% P/S
+(Gibco) and 10% Fetal bovine serum (10099141, Gibco) and plated on
+PDL-coated 75 cm2 ﬂasks ata density of 6 × 105 cells/cm2. Monolayers of
+type 1 astrocytes were harvested 12–14 days after plating. Non-
+astrocytic cells were separated and removed from the ﬂasks by shaking
+and changing the medium. Astrocytes were dissociated through
+trypsinization and reseeded on uncoated 96-well plates. The cells grew
+to 80–90% conﬂuence before exposure to C3N nanodots.
+In vitro cytotoxicity study
+The cytotoxicity of C3N nanodots was assessed using a standard CCK-8
+assay (CK04, Dojindo). Primary mouse neurons, rat adrenal pheo-
+chromocytoma cells (PC12, CRL-1721, purchased from ATCC), primary
+rat astrocytes, human umbilical vein endothelial cells (HUVCEs, PCS-
+100-013, purchased from ATCC), and human neuroblastoma cells (sh-
+sy5y, CRL-2266, purchased from ATCC) were selected for the study.
+Brieﬂy, cells in the logarithmic growth phase were seeded at a density
+of 5 × 103 cells per well in 96-well plates and cultured in complete
+DMEM
+medium
+(#11965092,
+Gibco)
+containing
+10%
+FBS
+(#03.U16001DC, EallBio) and 1% penicillin/streptomycin (#15140163,
+Gibco) at 37 °C with 5% CO2. The cells were then co-cultured with
+various concentrations of C3N nanodots (0, 50, 100, 150, 200, 300,
+400, and 500 μg/mL) in serum-free DMEM medium until they reached
+approximately 80% conﬂuence. After a 24-h incubation period, the
+cells were washed three times with PBS. The CCK-8 assay was per-
+formed according to the manufacturer’s instructions. The absorbance
+(optical density, OD) of cells in different groups was measured at
+450 nm using a microplate reader (Bio-Tek Instruments, Synergy NEO,
+USA) to calculate the cell viability using the following equation:
+cell viabilityð%Þ = ððODtest  ODblankÞ=ðODcontrol  ODblankÞÞ × 100%
+ð1Þ
+where, ODtest refers to the absorbance of the cells exposed to the
+nanomaterial sample, ODcontrol refers to the absorbance of the control
+sample, and ODblank refers to the absorbance of the blank well. Each
+sample was tested in ﬁve replicates.
+To compare the cytotoxicity between C3N nanodots and GO
+nanosheets, a standard CCK-8 assay was performed using mouse brain
+microvascular endothelial cells (bEnd.3, cl-0598, purchased from
+Procell), BV2 murine microglial cells (BV2, cl-0493, purchased from
+Procell), and HUVCEs. GO was purchased from TimeNano (product
+model: TNWGO-3; more characterizations were provided in our pre-
+vious literature58). The cells were co-cultured with different con-
+centrations of C3N nanodots or GO nanosheets (0, 62.5, 125, 250, and
+500 μg/mL) in serum-free DMEM medium for 24 h. The aforemen-
+tioned standard protocol was then followed.
+Evaluation of C3N nanodots relieve the neurotoxicity of Aβ42
+oligomers
+Cytotoxicity of Aβ42 oligomers on primary neuron was evaluated using
+CCK-8 kit, LDH cytotoxicity assay kit (K311-400, Biovision), and Live/
+Dead kit (l3224, Invitrogen). Before experimentation, the neuron cul-
+ture medium was used to dilute 5 mM Aβ42 peptide stock solution and
+Article
+https://doi.org/10.1038/s41467-023-41489-y
+Nature Communications|   (2023) 14:5718 
+10
+
+C3N nanodots solution to achieve a mixture of 50 μM Aβ42 and C3N
+nanodots at various concentrations (e.g., 100, 200, 300, 400, and
+500 μg/mL). A control group with medium solution and experimental
+groups with 50 μM Aβ42 peptide solution and 500 μg/mL C3N nano-
+dots solution were analyzed. The culture solutions were incubated at
+4 °C for 24 h and then added to cells for another 24 h at 5% CO2
+humidiﬁed environment 37 °C.
+The LDH assay was performed according to LDH cytotoxicity
+assay kit instructions. A group of cells treated with 1% Triton X-100 was
+added as a positive control; the cell-free group was the negative con-
+trol. Optical density at 490 nm was measured on a microplate reader
+and the cytotoxicity of each group was calculated according to:
+cytotoxicityð%Þ = ðTest Sample  Negative ControlÞ
+=ðPositive Control  Negative ControlÞ × 100%
+ð2Þ
+For the Live/Dead assay, the prepared dye was incubated with
+cells for 15 min according to the Live/Dead kit instructions. Cells were
+then photographed under a ﬂuorescence microscope (Leica, Ger-
+many), and live vs. dead cells were counted using Image J software.
+Morphology observation of primary neuron
+Primary neurons were planted on cell culture slides, washed twice with
+PBS, and ﬁxed overnight with 2.5% glutaraldehyde at 4 °C for mor-
+phological observation. Twenty-four hours later, they were washed 3×
+with ultrapure water for 5 min each. Then, 30%, 50%, 70%, 80%, 90%,
+95%, and 100% ethanol dehydration occurred in sequence for 10 min.
+Gold was then sprayed on the surface of the sample, and cell mor-
+phology was observed using a scanning electron microscope (SEM,
+Zeiss, Germany).
+Animals and drug treatment
+APP/PS1 [B6C3-Tg (APPswePSEN1dE9)/Nju] double transgenic AD mice
+and C57BL/6J mice were used in this study (Nanjing Model Animal
+Research Center, Nanjing, China). All experiments were reviewed and
+approved by the Animal Ethics Committee of Soochow University
+(Nos.: SUDA201807A422 and SUDA201907A025). APP/PS1 mice were
+produced and maintained on a C57BL/6J hybrid background with free
+access to chow and drinking water under a 12-h light/dark cycle under
+constant temperature (22 ± 1 °C) and humidity (40‒70%).
+Only male mice were tested in this study. APP/PS1 mice were
+randomly divided into three groups. The positive control group was
+intraperitoneally (i.p.) injected with vehicle (saline; APP/PS1 group).
+The other two groups were injected intraperitoneally with either 1 mg/
+kg or 5 mg/kg C3N nanodots solution. Littermate WT mice treated with
+saline solution were used as negative controls (WT group). Drugs were
+given once per day from 3 months of age for six months.
+Biodistribution study
+Healthy male C57BL/6J mice of 6 months old were selected for ex vivo
+ﬂuorescence (FL) imaging to verify the biodistribution of C3N-Cy5.5
+nanodots. The C57BL/6J mice were purchased from from the SLACCAL
+Lab Animal Ltd (Shanghai, China) and maintained on C57BL/6J back-
+ground. The experiment was reviewed and approved by the Animal
+Ethics Committee of Soochow University (No.: SUDA202007A648).
+The C57BL/6J mice were sacriﬁced at 8 h, 24 h, 48 h, and 1 week after
+i.p. injection of C3N-Cy5.5 nanodots, administered at a dosage of
+200 mg/kg (n = 3 per group). The main organs were collected for FL
+imaging and semiquantitative biodistribution analysis. The distribu-
+tion of C3N-Cy5.5 nanodots was tracked using an IVIS Spectrum Ima-
+ging System (PerkinElmer, USA), and FL imaging was performed at
+speciﬁc time points after the injections. The excitation wavelength
+used was 680 nm, and the emission wavelength was 710 nm.
+Excretion study
+The C57BL/6J mice were purchased from the SLACCAL Lab Animal Ltd
+(Shanghai, China) and maintained on C57BL/6J background. The
+experiment was reviewed and approved by the Animal Ethics Com-
+mittee of Soochow University (No.: SUDA202007A648). Three healthy
+male C57BL/6J mice of 6 months old were intraperitoneally injected
+with Cy5.5-labeled C3N nanodots at a dosage of 100 mg/kg. To monitor
+the excretion and distribution of the nanodots, each mouse was indi-
+vidually placed in a metabolic cage to facilitate the collection of urine
+and feces at predetermined time intervals. Following each collection,
+the metabolic cage was thoroughly washed and disinfected to ensure
+cleanliness and prevent cross-contamination. The collected urine and
+feces samples were carefully preserved at a temperature of −80 °C
+until further analysis. To determine the concentration of C3N-Cy5.5
+nanodots in the metabolites, the samples were subjected to mea-
+surement using Cy5.5 ﬂuorescence. The results were then expressed as
+the percentage of the injected dose per gram/milliliter of feces/urine,
+providing insights into the excretion dynamics and distribution pat-
+terns of the nanodots.
+Evaluation of intracellular biodegradation of C3N nanodots. C3N
+nanodots (1 mg/mL) were dissolved in 0.3 M acetate buffer at a pH of
+5.0, creating an acidic condition similar to lysosomes. The resulting
+solution was incubated in a shaker at 120 rpm and 37 °C. The absor-
+bance of the solution was continuously monitored to evaluate the acid-
+responsiveness of the C3N nanodots. The degradation rate (R) of the
+C3N nanodots was determined using the following equation:
+R = ðA0  AtÞ=A0 × 100%
+ð3Þ
+Where A0 represents the initial absorbance value (OD#) of the
+solution at 0 h, and At represents the absorbance value at time point t
+(t from 0–48 h).
+The biodegradation of C3N nanodots in vitro
+The in vitro degradation behaviors of C3N nanodots in biomimetic
+microenvironments were investigated. H2O2 is typically present in the
+bio- microenvironment at a physiological concentration ranging from
+50 × 10−6 to 100 × 10−6 M. Additionally, catalase, a common enzyme
+found in neutrophils, which are the main components of blood in the
+liver, was included in the study. To perform the experiment, C3N
+nanodots (1 mg/mL) and catalase (200 μg/mL) in 0.01 mol/L PBS (pH =
+7.00) were transferred into a vial. The resulting mixture had a total
+volume of 20 mL and was incubated at 37 °C in the dark for 24 h.
+Subsequently, H2O2 (500 μmol/L) was added to initiate the biode-
+gradation process. The sample was placed on a magnetic stirrer and
+subjected to constant shaking at 220 rpm. To compensate for H2O2
+consumption, an additional 200 μL of H2O2 (500 μmol/L) was added
+each day. After 14 days of degradation, the sample was collected for
+transmission electron microscopy (TEM) measurement, allowing for
+the evaluation of structural changes and degradation effects.
+In vitro cellular uptake
+The mouse brain endothelial cell line, bEnd.3 (Procell, China), was
+seeded at a density of 2 × 105 cells per well in glass bottom cell culture
+dishes (Nest, 801001). The cells were cultured in high glucose DMEM
+medium supplemented with 10% FBS and 1% penicillin-streptomycin at
+37 °C in a 5% CO2 atmosphere. After overnight incubation at 37 °C, the
+cells were treated with C3N-Cy5.5 at a concentration of 1 mg/mL for 5 h.
+PBS-treated cells were used as the negative control. Subsequently, the
+culture medium was replaced with Hochest 33342 dye (KeyGEN DIO
+tech, KGA212-50) and lysosome tracker (Invitrogen, L7526), and the
+cells were further incubated for an additional 20 min. After washing
+twice with PBS, the cells were observed using a confocal microscope
+(Olympus, FV1300, Japan). The Hochest 33342 channel (λex = 405 nm
+Article
+https://doi.org/10.1038/s41467-023-41489-y
+Nature Communications|   (2023) 14:5718 
+11
+
+and λem = 460 nm), lysosome tracker channel (λex = 504 nm and
+λem = 511 nm), and Cy5.5 channel (λex = 640 nm and λem = 668 nm)
+were chosen to visualize the cell nuclei and the uptake of Cy5.5-labeled
+C3N, respectively.
+Tissue preparations
+After behavioral tests, each group of mice was subdivided into two
+additional groups. In the ﬁrst group, mice were subjected to cardiac
+perfusion under deep anesthesia and perfused with PBS and 4% par-
+aformaldehyde (PFA, 158127, Sigma Aldrich) dehydrated with sucrose.
+Simultaneously, the major organs of the mice were meticulously har-
+vested at each designated time point, followed by ﬁxation in neutral
+buffered formalin (10%). Subsequently, the specimens were subjected
+to routine processing, wherein they were embedded in parafﬁn and
+sectioned into 8 µm slices. These sections were stained utilizing the
+standard hematoxylin and eosin (H&E) protocol, and their examination
+was conducted under a microscope. In the second group, blood
+samples were collected from the mice through the extraction of ocular
+blood. To perform hematological analysis, 100 μL of the collected
+blood samples were carefully transferred into anticoagulant tubes,
+allowing for routine blood analysis. The remaining blood samples were
+kept at a temperature of 4 °C for a duration of 4 h. Following this, the
+blood samples were subjected to centrifugation, enabling the separa-
+tion of blood serum, which was subsequently utilized for conducting
+blood biochemistry analysis. Mouse brains were harvested by decap-
+itation, then quickly placed in ‒80 °C for the extraction of brain
+proteins.
+Western blotting analysis
+Brain tissues were homogenized in cold lysis buffer (P0013C, Beyo-
+time) containing protease inhibitor cocktail (4693116001, Roche) and
+centrifugated 12,000 rpm for 15 min. Supernatants were collected and
+the protein concentration was determined by the BCA protein assay kit
+(P0009, Beyotime) measured with a microplate reader. The super-
+natants were mixed with 5× loading buffer (#FD006, Fdbio science)
+incubated at 100 °C for 10 min. Each protein (15 μg) was separated by
+electrophoresis using a 12% SDS-PAGE gel (P0692, Beyotime) and
+transferred onto a PVDF membrane (ipvh00010, Millipore). The
+membranes were blocked by incubation with 5% non-fat milk (wt/vol)
+in Tris-buffered saline containing 0.1% Tween-20 (vol/vol) (TBST) for
+60 min (Fig. 5a). The membranes were then incubated overnight with
+primary antibody (β-actin, SNAP25, VAMP2) at 4 °C. The membranes
+were washed thrice in TBST for 5 min and incubated with corre-
+sponding HRP–conjugated IgG secondary antibody for 2 h at room
+temperature (RT). The membranes were washed in TBST (3 × 5 min)
+before a 2-h incubation with HRP-linked secondary antibodies to rabbit
+or mouse accordingly at room temperature. The membranes were
+then visualized using chemiluminescence on ECL Plus. For the anti-
+bodies incubated in the same blots, after imaging, the blots were
+stripped with stripping buffer (25 mM Glycine and 1% SDS in ddH2O,
+pH 2.0) for 20 min at RT to remove antibodies and washed in TBST for
+10 min three times. The blots were blocked at RT for 2 h in 5% non-fat
+milk blocking buffer in TBST and then incubated with another primary
+antibody. For protein quantiﬁcation, densitometry was performed
+with ImageJ and normalized to β-actin.
+Behavioral analysis
+Spatial learning and memory performance were tested using the MWM
+task and the novel object recognition test. The Morris water maze was
+conducted in a circular pool (120 cm diameter) divided into four
+quadrants. In the center of the third quadrant (i.e., the target quad-
+rant), a circular platform (i.e., survival platform) with a diameter of
+10 cm was placed just below the water surface (1 cm). Mice were
+trained four times a day for the ﬁrst ﬁve days, with quadrant one as the
+water entry point. The time for mice to ﬁnd the survival platform
+within 60 s was recorded. On the sixth day, the survival platform was
+removed, and the time spent in each quadrant and locomotion of the
+mice were recorded.
+For the novel object recognition test, a cube (side length of 50 cm)
+was used, and two identical objects (i.e., old objects) were placed
+symmetrically at a position 10 cm from the sidewall. Mice were placed
+with their backs to the objects from the perpendicular bisector of the
+two objects, and the exploration time of the mice was recorded for
+7 min. Before placing the next mice, the chamber was cleaned with 75%
+ethanol. The mice were trained for three days. On the fourth day, one
+of the old objects was replaced with a novel object and the exploration
+time and path were recorded. The results are represented by the novel
+object recognition index (RI), which was calculated as follows:
+RI = ðtime to explore the new objectÞ=ðtime to explore the new object
++ time to explore the old objectÞ × 100%
+ð4Þ
+Data acquisition utilized detection and analysis software of
+Shanghai Xinsoft Information Technology Co., Ltd.
+Immunohistochemistry
+After sucrose dehydration, brain tissue was embedded with optimal
+cutting temperature compound (OTC, 4583, SAKURA) and sliced into
+15 μm sections (CM1950, Leica, Germany). Puriﬁed anti-β-Amyloid 1-16
+(6E10) was used to examine the extracellular Aβ deposits, anti-MAP2
+and anti-SNAP25 were used to detect dysfunction in neuronal net-
+works. Brian sections were stained with primary antibodies overnight
+at 4 °C in a humid chamber, after being washed in PBS, followed by 2 h
+of incubation of Cy3-conjugated or/and 488-conjugated secondary
+antibodies in the dark at room temperature. Fluorescent images were
+acquired using a ﬂuorescence microscope (Leica, Germany) or a con-
+focal microscope (FV1200, Olympus, Japan) following coverslipping.
+The number and the area of senile plaques were quantitatively ana-
+lyzed by Image J software. For histopathology of major organs, the
+heart, liver, kidney, spleen, lung, and kidney were isolated and stained
+with an H&E staining kit (ab245880, Abcam).
+Aβ40/Aβ42 quantiﬁcation
+Aβ40/Aβ42 content was measured using enzyme-linked immunosor-
+bent assay (ELISA). The right hemisphere was weighed and homo-
+genized in TBS (pH 7.4, 1:12, w/v) containing a complete protease
+inhibitor cocktail and centrifuged. Afterward, the precipitation was
+centrifuged in 2% SDS and 70% formic acid. The FA-soluble fraction
+was neutralized with 1 M Tris (pH 11.0) and then diluted with PBS. TBS-
+soluble and SDS-soluble fractions were directly diluted with PBS.
+Quantitation was performed according to the instructions using a
+Human Aβ40/Aβ42 Elisa Kit (E-EL-H0542/ E-EL-M0068km, Elabscience
+Biotechnology). The optical density of the samples was measured with
+a microplate reader (BioTek, USA) at 450 nm wavelength, and the
+content of Aβ40/Aβ42 in the brain was calculated as moles per gram of
+wet tissue.
+Statistical analysis
+All results are expressed as mean ± standard deviation (SD) from at
+least three independent experiments. The number of mice, experi-
+ments, and statistical tests are shown for each ﬁgure in the ﬁgure
+legend. Statistical analyses conducted using GraphPad Prism (version
+9.0) and origin (version 9.0). Datasets with only two independent
+groups were analyzed for statistical signiﬁcance using unpaired, two-
+tailed Student’s t test. Datasets with more than two groups were ana-
+lyzed using one-way ANOVA. Datasets with two independent factors
+were analyzed using two-way ANOVA, followed by Tukey’s post hoc
+test. All p values below or equal to 0.05 were considered signiﬁcant. *P
+< 0.05, **P < 0.01,***P < 0.001, ****P < 0.0001.
+Article
+https://doi.org/10.1038/s41467-023-41489-y
+Nature Communications|   (2023) 14:5718 
+12
+
+Simulation model system setup
+The C3N used in the simulations had a diameter of ~4.5 nm corre-
+sponding to the average diameter of C3N measured in the experi-
+ments (Supplementary Fig. 7 and Supplementary data 1). The initial
+Aβ42 peptide crystal structure was taken from RCSB Protein Data
+Bank (PDB ID: 1Z0Q)59 (Supplementary Fig. 7). To investigate the
+effect of C3N on Aβ42 aggregation, two Aβ42 peptides were simulated
+in the absence or presence of C3N. In the system without C3N (control
+system), two peptides were solvated into a 9.6 nm × 9.1 nm × 6.5 nm
+water box containing 17,911 water molecules. The peptides + C3N
+system was derived from its counterpart, by randomly adding a C3N
+with a minimum distance of 1.5 nm to any heavy atom of the peptide.
+Then, two Aβ42 peptides + C3N were solvated into a water box (9.6 nm
+× 9.1 nm × 8.2 nm) containing 22,604 water molecules. Na+ and Cl‒
+ions were added to the solvent to neutralize systems and mimic the
+physiological conditions of 0.15 mol/L NaCl. In addition, we also
+compared the inhibitory effects of stacked C3N (two layers), nano
+graphite (simulated by two layers of stacked graphene (GRA)), and
+fullerene (e.g., C60) on the aggregation of Aβ42. The distance between
+two stacked C3N/GRA was set at approximately 0.33 nm, while the
+distance between two C60 molecules was larger than 1 nm. Four
+peptides were randomly placed around C3N/GRA/C60 with minimum
+distances larger than 1.5 nm. Subsequently, the C3N/GRA/C60 + pep-
+tides complexes were solvated in a water box with dimensions of
+13.0 nm × 13.0 nm × 13.0 nm. The number of water molecules in the
+water box was 70,911, 70,918, and 71,274, respectively, for the C3N +
+peptides, GRA + peptides, and C60 + peptides systems. For each of the
+three systems, two independent 300 ns production runs were con-
+ducted for subsequent analysis.
+MD simulations
+The MD simulations were carried out using the GROMACS-4.6.660
+software package with AMBER99SB-ILDN force ﬁeld61. The VMD
+software was adopted to visualize the trajectories and conﬁgurations
+of the MD simulations62,63. The TIP3P water model was adopted for
+solvent molecules64. Long-range electrostatic interactions were
+conducted with the particle mesh Ewald method65. The vdW inter-
+actions were calculated with a smooth cutoff distance of 1.2 nm. Each
+solvated system was ﬁrst minimized using the conjugate gradient
+method and succeeded by a 10 ns NPT relaxation at 300 K and 1 bar.
+During production runs, the simulation temperature and pressure
+were ﬁxed at 300 K and 1 bar with the v−rescale thermostat and
+Parrinello−Rahman coupling scheme66,67, respectively. A time step of
+2.0 fs was used, and coordinates were collected every 20 ps. For each
+system, three independent 1000 ns trajectories were collected for
+the analysis. Periodic boundary conditions were introduced in all
+directions. All solute bonds were constrained at their equilibrium
+values by employing the LINCS algorithm68, and water geometry was
+constrained with the SETTLE algorithm69. Electrostatic surface
+potential of C3N was calculated using the Adaptive Poisson-
+Boltzmann Solver70,71.
+Reporting summary
+Further information on research design is available in the Nature
+Portfolio Reporting Summary linked to this article.
+Data availability
+The data that support the ﬁndings of this paper are available in the
+paper and supplementary information ﬁles. All the raw data are pro-
+vided in a Source Data ﬁle. The PDB data-base used in the study
+includes PDB ID: 1Z0Q [https://doi.org/10.2210/pdb1Z0Q/pdb]. The 3D
+model of C3N nanodot (in pdb format) constructed in this study is
+provided in Supplementary Data 1. Source data are provided with
+this paper.
+References
+1.
+Alzheimer, A. Über eine eigenartige Erkrankung der Hirnrinde. Allg
+Z. Psychiatrie Psychisch-Gerichtliche Med. 64, 146–148 (1907).
+2.
+About a peculiar disease of the cerebral cortex. By Alois Alzheimer,
+1907 (Translated by L. Jarvik and H. Greenson). Alzheimer Dis.
+Assoc. Disord. 1, 3–8 (1987).
+3.
+Gaugler, J. et al. 2022 Alzheimer’s disease facts and ﬁgures. Alz-
+heimers Dement. 18, 700–789 (2022).
+4.
+Soria Lopez, J. A., González, H. M. & Léger, G. C. in Handbook of
+Clinical Neurology Vol. 167 (eds Dekosky, S. T. & Asthana, S.)
+231–255 (Elsevier, 2019).
+5.
+2021 Alzheimer’s disease facts and ﬁgures. Alzheimers Dement. 17,
+327–406 (2021).
+6.
+De Strooper, B. & Karran, E. The cellular phase of Alzheimer’s dis-
+ease. Cell 164, 603–615 (2016).
+7.
+Viola, K. L. & Klein, W. L. Amyloid β oligomers in Alzheimer’s disease
+pathogenesis, treatment, and diagnosis. Acta Neuropathol. 129,
+183–206 (2015).
+8.
+Chiti, F. & Dobson, C. M. Protein misfolding, functional amyloid, and
+human disease. Annu. Rev. Biochem. 75, 333–366 (2006).
+9.
+Hardy, J. & Selkoe, D. J. The amyloid hypothesis of Alzheimer’s
+disease: progress and problems on the road to therapeutics. Sci-
+ence 297, 353–356 (2002).
+10.
+Walsh, D. M. et al. Naturally secreted oligomers of amyloid β protein
+potently inhibit hippocampal long-term potentiation in vivo. Nature
+416, 535–539 (2002).
+11.
+Haass, C. & Selkoe, D. J. Soluble protein oligomers in neurode-
+generation: lessons from the Alzheimer’s amyloid β-peptide. Nat.
+Rev. Mol. Cell Biol. 8, 101–112 (2007).
+12.
+Kofﬁe, R. M. et al. Oligomeric amyloid β associates with post-
+synaptic densities and correlates with excitatory synapse loss near
+senile plaques. Proc. Natl Acad. Sci. USA 106, 4012–4017 (2009).
+13.
+Cline, E. N., Bicca, M. A., Viola, K. L. & Klein, W. L. The amyloid-β
+oligomer hypothesis: beginning of the third decade. J. Alzheimers
+Dis. 64, S567–S610 (2018).
+14.
+Nguyen, P. H. et al. Amyloid oligomers: a joint experimental/com-
+putational perspective on Alzheimer’s disease, Parkinson’s disease,
+type II diabetes, and amyotrophic lateral sclerosis. Chem. Rev. 121,
+2545–2647 (2021).
+15.
+Benilova, I., Karran, E. & De Strooper, B. The toxic Aβ oligomer and
+Alzheimer’s disease: an emperor in need of clothes. Nat. Neurosci.
+15, 349–357 (2012).
+16.
+Dhillon, S. Aducanumab: ﬁrst approval. Drugs 81, 1437–1443 (2021).
+17.
+Van Dyck, C. H. et al. Lecanemab in early Alzheimer’s disease. N.
+Engl. J. Med. 388, 9–21 (2023).
+18.
+Sims, J. R. et al. Donanemab in early symptomatic alzheimer dis-
+ease: the TRAILBLAZER-ALZ 2 randomized clinical trial. JAMA 330,
+512–527 (2023).
+19.
+Sevigny, J. et al. The antibody aducanumab reduces Aβ plaques in
+Alzheimer’s disease. Nature 537, 50–56 (2016).
+20. Ladiwala, A. R. A. et al. Rational design of potent domain antibody
+inhibitors of amyloid ﬁbril assembly. Proc. Natl Acad. Sci. USA 109,
+19965–19970 (2012).
+21.
+Derrick, J. S. et al. A redox-active, compact molecule for cross-
+linking amyloidogenic peptides into nontoxic, off-pathway aggre-
+gates: in vitro and in vivo efﬁcacy and molecular mechanisms. J.
+Am. Chem. Soc. 137, 14785–14797 (2015).
+22. Choi, J. S., Braymer, J. J., Nanga, R. P. R., Ramamoorthy, A. & Lim, M.
+H. Design of small molecules that target metal-Aβ species and
+regulate metal-induced Aβ aggregation and neurotoxicity. Proc.
+Natl Acad. Sci. USA 107, 21990–21995 (2010).
+23. Ehrnhoefer, D. E. et al. EGCG redirects amyloidogenic polypeptides
+into unstructured, off-pathway oligomers. Nat. Struct. Mol. Biol. 15,
+558–566 (2008).
+Article
+https://doi.org/10.1038/s41467-023-41489-y
+Nature Communications|   (2023) 14:5718 
+13
+
+24. Reddy, P. H. et al. Protective effects of Indian spice curcumin
+against amyloid-β in Alzheimer’s disease. J. Alzheimers. Dis. 61,
+843–866 (2018).
+25. Bendheim, P. E. et al. Development of indole-3-propionic acid
+(OXIGONTM) for Alzheimer’s disease. J. Mol. Neurosci. 19,
+213–217 (2002).
+26. Ono, K., Hirohata, M. & Yamada, M. Ferulic acid destabilizes pre-
+formed β-amyloid ﬁbrils in vitro. Biochem. Biophys. Res. Commun.
+336, 444–449 (2005).
+27.
+Bellova, A. et al. Effect of Fe3O4 magnetic nanoparticles on lyso-
+zyme amyloid aggregation. Nanotechnology 21, 065103 (2010).
+28. Yang, Z. et al. Destruction of amyloid ﬁbrils by graphene through
+penetration and extraction of peptides. Nanoscale 7,
+18725–18737 (2015).
+29. Bobylev, A. G. et al. Fullerenolates: metallated polyhydroxylated
+fullerenes with potent anti-amyloid activity. Org. Biomol. Chem. 9,
+5714–5719 (2011).
+30. Podolski, I. Y. et al. Effects of hydrated forms of C60 fullerene on
+amyloid β-peptide ﬁbrillization in vitro and performance of the
+cognitive task. J. Nanosci. Nanotechnol. 7, 1479–1485 (2007).
+31.
+Chung, Y. J. et al. Photomodulating carbon dots for spatiotemporal
+suppression of Alzheimer’s β-amyloid aggregation. ACS Nano 14,
+16973–16983 (2020).
+32. Xie, L. G. et al. Effects of hydroxylated carbon nanotubes on the
+aggregation of Aβ16–22 peptides: a combined simulation and
+experimental study. Biophys. J. 107, 1930–1938 (2014).
+33. Chung, Y. J., Lee, B. I., Ko, J. W. & Park, C. B. Photoactive g-C3N4
+nanosheets for light-induced suppression of Alzheimer’s
+β-amyloid aggregation and toxicity. Adv. Healthc. Mater. 5,
+1560–1565 (2016).
+34. Wang, J. et al. Enhanced photoresponsive graphene oxide-modiﬁed
+g-C3N4 for disassembly of amyloid β ﬁbrils. ACS. Appl. Mater.
+Interfaces 11, 96–103 (2019).
+35. John, T. et al. Impact of nanoparticles on amyloid peptide and
+protein aggregation: a review with a focus on gold nanoparticles.
+Nanoscale 10, 20894–20913 (2018).
+36. Kim, Y., Park, J., Lee, H. & Nam, J. How do the size, charge and shape
+of nanoparticles affect amyloid β aggregation on brain lipid bilayer?
+Sci. Rep. 6, 19548 (2016).
+37. Kim, D. et al. Graphene quantum dots prevent α-synucleinopathy in
+Parkinson’s disease. Nat. Nanotechnol. 13, 812–818 (2018).
+38. Yang, S. W. et al. C3N-A 2D crystalline, hole-Free, tunable-narrow-
+bandgap semiconductor with ferromagnetic properties. Adv.
+Mater. 29, 1605625 (2017).
+39. LaFerla, F. M., Green, K. N. & Oddo, S. Intracellular amyloid-β in
+Alzheimer’s disease. Nat. Rev. Neurosci. 8, 499–509 (2007).
+40. Meisl, G. et al. Differences in nucleation behavior underlie the
+contrasting aggregation kinetics of the Aβ40 and Aβ42 peptides.
+Proc. Natl Acad. Sci. USA 111, 9384–9389 (2014).
+41.
+Hatami, A., Albay, R. III, Monjazeb, S., Milton, S. & Glabe, C. Mono-
+clonal antibodies against Aβ42 ﬁbrils distinguish multiple aggre-
+gation state polymorphisms in vitro and in Alzheimer disease brain.
+J. Biol. Chem. 289, 32131–32143 (2014).
+42. Uddin, M. S. et al. Estrogen signaling in Alzheimer’s disease:
+molecular insights and therapeutic targets for Alzheimer’s
+dementia. Mol. Neurobiol. 57, 2654–2670 (2020).
+43. Luo, M. et al. Estrogen deﬁciency exacerbates learning and memory
+deﬁcits associated with glucose metabolism disorder in APP/PS1
+double transgenic female mice. Genes Dis 9, 1315–1331 (2022).
+44. Lai, Y. et al. Estrogen receptor α promotes Cav1.2 ubiquitination and
+degradation in neuronal cells and in APP/PS1 mice. Aging Cell 18,
+e12961 (2019).
+45. Drummond, E. & Wisniewski, T. Alzheimer’s disease: experimental
+models and reality. Acta Neuropathol 133, 155–175 (2017).
+46. Esquerda-Canals, G., Montoliu-Gaya, L., Guell-Bosch, J. & Villegas,
+S. Mouse models of Alzheimer’s disease. J. Alzheimers. Dis. 57,
+1171–1183 (2017).
+47. Velazquez, R. et al. Maternal choline supplementation ameliorates
+Alzheimer’s disease pathology by reducing brain homocysteine
+levels across multiple generations. Mol. Psychiatr. 25,
+2620–2629 (2020).
+48. Ma, J. et al. Crucial role of lateral size for graphene oxide in acti-
+vating macrophages and stimulating pro-inﬂammatory responses
+in cells and animals. ACS Nano 9, 10498–10515 (2015).
+49. Wang, K. et al. Biocompatibility of graphene oxide. Nanoscale Res.
+Lett. 6, 1–8 (2011).
+50. Chen, G. et al. Simultaneous induction of autophagy and toll-like
+receptor signaling pathways by graphene oxide. Biomaterials 33,
+6559–6569 (2012).
+51.
+Coleman, P. D. & Yao, P. J. Synaptic slaughter in Alzheimer’s dis-
+ease. Neurobiol. Aging 24, 1023–1027 (2003).
+52. Selkoe, D. J. Alzheimer’s disease is a synaptic failure. Science 298,
+789–791 (2002).
+53. Sharma, M., Burre, J. & Sudhof, T. C. CSPalpha promotes SNARE-
+complex assembly by chaperoning SNAP-25 during synaptic
+activity. Nat. Cell Biol. 13, 30–39 (2011).
+54. Zhou, Q. et al. The primed SNARE-complexin-synaptotagmin
+complex for neuronal exocytosis. Nature 548, 420–425
+(2017).
+55. Bieschke, J. et al. EGCG remodels mature α-synuclein and amyloid-
+β ﬁbrils and reduces cellular toxicity. Proc. Natl Acad. Sci. USA 107,
+7710–7715 (2010).
+56. Joshi, A. U. et al. Fragmented mitochondria released from microglia
+trigger A1 astrocytic response and propagate inﬂammatory neuro-
+degeneration. Nat. Neurosci. 22, 1635–1648 (2019).
+57. Chimon, S. et al. Evidence of ﬁbril-like β-sheet structures in a neu-
+rotoxic amyloid intermediate of Alzheimer’s β-amyloid. Nat. Struct.
+Mol. Biol. 14, 1157–1164 (2007).
+58. Guo, Q. et al. Graphene oxide toxicity in W1118 ﬂies. Sci. Total Environ.
+805, 150302 (2022).
+59. Tomaselli, S. et al. The α-to-β conformational transition of Alzhei-
+mer’s Aβ1–42 peptide in aqueous media is reversible: a step by step
+conformational analysis suggests the location of β conformation
+seeding. ChemBioChem 7, 257–267 (2006).
+60. Hess, B., Kutzner, C., van der Spoel, D. & Lindahl, E. GROMACS 4:
+algorithms for highly efﬁcient, load-balanced, and scalable mole-
+cular simulation. J. Chem. Theory Comput. 4, 435–447 (2008).
+61.
+Lindorff-Larsen, K. et al. Improved side-chain torsion potentials for
+the Amber ff99SB protein force ﬁeld. Proteins 78,
+1950–1958 (2010).
+62. Humphrey, W., Dalke, A. & Schulten, K. VMD: visual molecular
+dynamics. J. Mol. Graph. 14, 33–38 (1996).
+63. Wu, C., Liu, S., Zhang, S. & Yang, Z. Molcontroller: a VMD graphical
+user interface featuring molecule manipulation. J. Chem. Inf. Model.
+60, 5126–5131 (2020).
+64. Jorgensen, W. L., Chandrasekhar, J., Madura, J. D., Impey, R. W. &
+Klein, M. L. Comparison of simple potential functions for simulating
+liquid water. J. Chem. Phys 79, 926–935 (1983).
+65. Essmann, U. et al. A smooth particle mesh Ewald method. J. Chem.
+Phys 103, 8577–8593 (1995).
+66. Bussi, G., Donadio, D. & Parrinello, M. Canonical sampling through
+velocity rescaling. J. Chem. Phys 126, 014101 (2007).
+67. Parrinello, M. & Rahman, A. Polymorphic transitions in single crys-
+tals: a new molecular dynamics method. J. Appl. Phys 52,
+7182–7190 (1981).
+68. Hess, B., Bekker, H., Berendsen, H. J. C. & Fraaije, J. G. E. M. LINCS: a
+linear constraint solver for molecular simulations. J. Comput. Chem.
+18, 1463–1472 (1997).
+Article
+https://doi.org/10.1038/s41467-023-41489-y
+Nature Communications|   (2023) 14:5718 
+14
+
+69. Miyamoto, S. & Kollman, P. A. Settle: an analytical version of the
+SHAKE and RATTLE algorithm for rigid water models. J. Comput.
+Chem. 13, 952–962 (1992).
+70. Baker, N. A., Sept, D., Joseph, S., Holst, M. J. & McCammon, J. A.
+Electrostatics of nanosystems: application to microtubules and the
+ribosome. Proc. Natl Acad. Sci. USA 98, 10037–10041 (2001).
+71.
+Dolinsky, T. J. et al. PDB2PQR: expanding and upgrading automated
+preparation of biomolecular structures for molecular simulations.
+Nucleic Acids Res. 35, W522–W525 (2007).
+72.
+Kabsch, W. & Sander, C. Dictionary of protein secondary structure:
+pattern recognition of hydrogen-bonded and geometrical features.
+Biopolymers 22, 2577–2637 (1983).
+Acknowledgements
+We would like to thank Taimoor Khan for critical reading of the manu-
+script. The authors also acknowledge support from the National Key
+Research and Development Program of China (2021YFA1201201 and
+2021YFF1200404 to R.Z.), Natural Science Foundation of Jiangsu Pro-
+vince (BE2022425 to Z.K.), the National MCF Energy R&D Program of
+China (2018YFE0306105 to Z.K.), the National Key R&D Program of China
+(2020YFA0406104 and 2020YFA0406101 to Z.K.), the Innovative
+Research Group Project of the National Natural Science Foundation of
+China (51821002 to Z.K.), the National Natural Science Foundation of
+China (U1967217 to R.Z., 22176137 to Z.Y., 52271223, 52272043, 51972216,
+52202107 and 52201269 to Z.K.), the Innovative Research Group Project
+of the National Natural Science Foundation of China (51821002 to Z.K.),
+the National Independent Innovation Demonstration Zone Shanghai
+Zhangjiang Major Projects (ZJZX2020014 to R.Z.), the Natural Science
+Foundation of the Jiangsu Higher Education Institutions of China
+(20KJA150010 to Z.Y.), the Starry Night Science Fund at Shanghai
+Institute for Advanced Study of Zhejiang University (SN-ZJU-SIAS-003 to
+R.Z.), and BirenTech Research (BR-ZJU-SIAS-001 to R.Z.). The authors are
+also grateful for Carbon-based Functional Materials and Devices, and
+the Collaborative Innovation Center of Suzhou Nano Science & Tech-
+nology, the 111 Project, and Suzhou Key Laboratory of Functional Nano &
+Soft Materials.
+Author contributions
+R.Z., Z.Y. and Z.K. conceived and designed the research. M.Z., X.Y., X.W.,
+and Z.K. synthesized the title material and characterization. X.Y., J.S., and
+S.L. carried out the molecular, cellular, and animal experiments and
+analyzed data. H.Z., and Z.Y. performed MD simulations and data ana-
+lysis. Z.Y., X.Y., Z.K., and R.Z. co-wrote the paper. All authors discussed
+and commented on the manuscript.
+Competing interests
+The authors declare no competing interests.
+Additional information
+Supplementary information The online version contains
+supplementary material available at
+https://doi.org/10.1038/s41467-023-41489-y.
+Correspondence and requests for materials should be addressed to
+Zaixing Yang, Zhenhui Kang or Ruhong Zhou.
+Peer review information Nature Communications thanks the anon-
+ymous, reviewers for their contribution to the peer review of this work. A
+peer review ﬁle is available.
+Reprints and permissions information is available at
+http://www.nature.com/reprints
+Publisher’s note Springer Nature remains neutral with regard to jur-
+isdictional claims in published maps and institutional afﬁliations.
+Open Access This article is licensed under a Creative Commons
+Attribution 4.0 International License, which permits use, sharing,
+adaptation, distribution and reproduction in any medium or format, as
+long as you give appropriate credit to the original author(s) and the
+source, provide a link to the Creative Commons licence, and indicate if
+changes were made. The images or other third party material in this
+article are included in the article’s Creative Commons licence, unless
+indicated otherwise in a credit line to the material. If material is not
+included in the article’s Creative Commons licence and your intended
+use is not permitted by statutory regulation or exceeds the permitted
+use, you will need to obtain permission directly from the copyright
+holder. To view a copy of this licence, visit http://creativecommons.org/
+licenses/by/4.0/.
+© The Author(s) 2023
+Article
+https://doi.org/10.1038/s41467-023-41489-y
+Nature Communications|   (2023) 14:5718 
+15

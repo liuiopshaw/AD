@@ -1,0 +1,849 @@
+Sequential targeting nanochaperone disrupts positive feedback loop of 
+mitochondrial dysfunction for Alzheimer's disease therapy
+Haodong Hu a, Shuyue Zhao a, Linlin Xu a, Zixuan Ma a, Rujiang Ma a, Fan Huang b,*,  
+Linqi Shi a,c,**
+a Key Laboratory of Functional Polymer Materials of Ministry of Education, Institute of Polymer Chemistry, State Key Laboratory of Medicinal Chemical Biology, 
+Frontiers Science Center for New Organic Matter, College of Chemistry, Nankai University, Tianjin, 300071, PR China
+b State Key Laboratory of Advanced Medical Materials and Devices, Tianjin Key Laboratory of Radiation Medicine and Molecular Nuclear Medicine, Key Laboratory of 
+Radiopharmacokinetics for Innovative Drugs, Tianjin Institutes of Health Science, Institute of Radiation Medicine, Chinese Academy of Medical Sciences & Peking Union 
+Medical College, Tianjin, 300192, PR China
+c Haihe Laboratory of Sustainable Chemical Transformations, Tianjin, 300192, PR China
+A R T I C L E  I N F O
+Keywords:
+Alzheimer's disease
+Mitochondrial dysfunction
+Nanochaperone
+Positive feedback loop
+Sequential targeting
+A B S T R A C T
+Mitochondrial dysfunction is recognized as a key pathogenic mechanism of Alzheimer's disease (AD), involving a 
+self-perpetuating feedback loop with three aspects: upstream β-amyloid protein (Aβ), downstream calcium ion 
+(Ca2+) and reactive oxygen species (ROS). However, current therapeutic strategies only focus on one aspect and 
+fail to address multiple factors within this cycle. Moreover, the lack of targeted approaches to the mitochondria 
+within damaged neurons further limits their application. Herein, we developed a sequential targeting nano­
+chaperone to selectively target damaged neuronal mitochondria and disrupt this vicious cycle for AD treatment. 
+In this strategy, with the sequence mediation of damaged neuron-targeting and mitochondria-targeting peptides 
+decorated on surface, the nanochaperone can first localize to the damaged neurons in AD brain and then 
+translocate to mitochondria within them. Subsequently, this nanochaperone can effectively bind upstream Aβ 
+proteins and inhibit their aggregation toxicity to mitochondria through the synergic effect of chaperone- 
+mimicking microdomains and Aβ-targeting peptide on surface, thereby halting downstream mitochondrial 
+Ca2+ dyshomeostasis and ROS overload in the damaged neuron. Furthermore, the modified mitochondria- 
+targeting peptide with antioxidant property can further scavenge overproduced ROS and regulate Ca2+ ho­
+meostasis, which in turn contributes to reducing the Aβ-induced mitochondrial damage. Consequently, the 
+nanochaperone efficiently restores the mitochondrial dysfunction by disrupting the self-amplifying feedback loop 
+of “Aβ-Ca2+-ROS” in the AD mitochondrial microenvironment, resulting in the significant alleviation of neuronal 
+damage and cognitive deficits in 5xFAD transgenic mice. Taken together, our work presents a novel therapeutic 
+strategy against mitochondrial dysfunction for AD treatment.
+1. Introduction
+Alzheimer's disease (AD), a progressive neurodegenerative disorder, 
+is characterized by the gradual impairment of memory, cognition, and 
+behavioural functions in patients. Given the global demographic shift 
+towards aging populations, the incidence of AD continues to rise, which 
+will become one of the most important healthcare challenges in the 21st 
+century [1–3]. During the pathological progression of AD, mitochon­
+drial dysfunction has been regarded as a key inducement [4–8]. 
+Emerging evidence has shown that there is an important positive feed­
+back loop in AD mitochondrial damage [9]. Specifically, the upstream 
+pathological Aβ aggregates induce damage to mitochondrial membrane, 
+leading to a large influx of calcium ions (Ca2+) into the mitochondria 
+and Ca2+ dyshomeostasis [10,11]. Subsequently, the increased levels of 
+Ca2+ further induce reactive oxygen species (ROS) generation and 
+mitochondrial respiratory dysfunction [12,13]. Conversely, down­
+stream mitochondrial Ca2+ imbalance and elevated ROS levels will 
+promote 
+upstream 
+Aβ 
+pathological 
+aggregation, 
+establishing 
+* Corresponding author.
+** Corresponding author. Key Laboratory of Functional Polymer Materials of Ministry of Education, Institute of Polymer Chemistry, State Key Laboratory of 
+Medicinal Chemical Biology, Frontiers Science Center for New Organic Matter, College of Chemistry, Nankai University, Tianjin, 300071, PR China.
+E-mail addresses: huangfan@irm-cams.ac.cn (F. Huang), shilinqi@nankai.edu.cn (L. Shi). 
+Contents lists available at ScienceDirect
+Biomaterials
+journal homepage: www.elsevier.com/locate/biomaterials
+https://doi.org/10.1016/j.biomaterials.2026.124408
+Received 7 July 2025; Received in revised form 29 May 2026; Accepted 24 June 2026  
+Biomaterials 335 (2026) 124408 
+Available online 26 June 2026 
+0142-9612/© 2026 Elsevier Ltd. All rights are reserved, including those for text and data mining, AI training, and similar technologies. 
+
+“Aβ-Ca2+-ROS” vicious circle of mitochondrial dysfunction. This feed­
+back loop will further precipitate cellular energy supply insufficiency 
+and ultimately drive neuronal cell death. Hence, extensive efforts have 
+been dedicated to developing mitochondrion-targeting therapies for AD 
+treatment, such as small molecules, peptides and various nanoparticles, 
+which display certain beneficial effects on repairing mitochondrial 
+damage [14–21]. However, current mitochondria-regulation ap­
+proaches only focus on the downstream Ca2+ dysregulation and ROS 
+overproduction, and cannot entirely halt the pathogenic mitochondrial 
+damage process, especially the upstream Aβ toxicity, severely restricting 
+their therapeutic effect. Furthermore, most mitochondrial drugs for AD 
+fail to distinguish between normal and damaged neuronal mitochondria, 
+which may cause severe side effects of treatment. Therefore, an ideal AD 
+mitochondrial-targeting therapeutic strategy should be capable of 
+selectively reaching the mitochondria in damaged neurons and 
+addressing all components of the “Aβ-Ca2+-ROS” mitochondrial 
+dysfunction cycle in AD brain.
+Molecular chaperones, as important cellular machines, play pivotal 
+roles in defending against neurodegenerative diseases, including AD 
+[22–26]. In recent years, mounting evidence substantiates that the 
+molecular chaperone is an important factor in maintaining mitochon­
+drial function in AD [27–29]. Typically, molecular chaperones with 
+unique surface microdomains can specifically bind upstream Aβ proteins 
+and inhibit their aggregation toxicity to mitochondria, thereby reducing 
+excessive Ca2+ influx into the mitochondria and restoring normal 
+mitochondrial Ca2+ levels [30–33]. Meanwhile, they can reverse 
+Aβ-induced over-opening of mitochondrial permeability transition pore 
+(mPTP) and preserve electron transport chain efficiency, thereby 
+attenuating the downstream ROS-mediated neuronal damage [34]. 
+Furthermore, molecular chaperones can also alleviate Ca2+ imbalance 
+and excessive ROS production by assisting the metal ion trafficking and 
+their antioxidant properties, which in turn contribute to reducing the 
+Aβ-induced mitochondrial damage [35]. Thus, under normal physio­
+logical conditions, molecular chaperones can maintain mitochondrial 
+physiological functions through preventing the occurrence of a positive 
+feedback loop of mitochondrial dysfunction. However, the activity of 
+molecular chaperones is significantly suppressed in AD pathological 
+environment [36]. Consequently, developing a chaperone-mimicking 
+strategy through reversing neuronal mitochondrial dysfunction is ur­
+gently needed for AD treatment and remains a significant challenge.
+Herein, we report a sequential targeting nanochaperone that can 
+achieve AD treatment by breaking the positive feedback loop of mito­
+chondrial dysfunction in brain damaged neurons (Scheme 1). To obtain 
+the nanochaperone (nChap), brain damaged neuron-targeting peptide 
+Scheme 1. (a) Schematic illustration of the preparation and sequential targeting processes of nanochaperone KAS-nChap to damaged neuronal mitochondria: 1) 
+After stereotaxic injection into the AD mice brain, 2) KAS-nChap first targets damaged neurons and then 3) targets intracellular mitochondria. (b) The improvement 
+of the therapeutic outcome between “Aβ-Ca2+-ROS” positive feedback loop of mitochondrial dysfunction before and after KAS-nChap treatment.
+H. Hu et al.                                                                                                                                                                                                                                      
+Biomaterials 335 (2026) 124408 
+2 
+
+AAN modified poly(ethylene glycol)-block-poly(ε-caprolactone) (AAN- 
+PEG-b-PCL), mitochondria-targeting peptide Szeto-Schiller 31 (SS-31) 
+modified poly(ethylene glycol)-block-poly(ε-caprolactone) (SS-31-PEG- 
+b-PCL) and Aβ-binding peptide KLVFF modified poly(β-amino ester)- 
+block-poly(ε-caprolactone) (KLVFF-PAE-b-PCL) are self-assembled in a 
+weak acidic aqueous solution. Upon transitioning to physiological pH 
+(7.4), chaperone-mimicking hydrophobic microdomains form on the 
+micelle surface due to the PAE segment transitioning from a hydrophilic 
+extended state to a hydrophobic collapsed conformation [37,38]. This 
+nanochaperone named KAS-nChap works via a sequential targeting 
+mechanism: It first targets and enters damaged neurons in the brain 
+through the recognition between the AAN peptide and excessive 
+asparagine endopeptidase (AEP) secreted by damaged neurons [39,40]. 
+Subsequently, this damaged neurons-entered KAS-nChap secondly tar­
+gets mitochondria through the SS-31 peptide [41,42]. Once localized, 
+KAS-nChap captures Aβ aggregates surrounding mitochondria via syn­
+ergistic interactions between its chaperone-mimicking hydrophobic 
+microdomains and Aβ-targeting peptide KLVFF [43,44], thus reducing 
+the toxic effect of upstream Aβ aggregates on mitochondrial membranes 
+and alleviating excessive mitochondrial Ca2+ influx and ROS overload in 
+the damaged neuron [45–47]. Moreover, due to the additional ROS 
+scavenging property of SS-31 peptide, KAS-nChap can scavenge the 
+excessive production of ROS and regulate Ca2+ levels, which in turn 
+contribute to reducing the Aβ-induced mitochondrial dysfunction [48,
+Fig. 1. Construction and characterization of the nanochaperones. (a) Schematic illustration of nChap, K-nChap, KA-nChap and KAS-nChap nanochaperone. (b) 
+TEM images of different nanochaperones. Scale bar = 200 nm. (c) Hydrodynamic diameters of nanochaperones measured by DLS. (d) Zeta potential of nano­
+chaperones at different pH values. (e) Schematic illustration of the separation of free and bound Aβ oligomer to investigate the Aβ-binding ability of KAS-nChap. (f) 
+Dot blot image and (g) quantitative results showing the binding affinities between Aβ oligomer and KAS-nChap (C, control; T, treated). (h) Damaged neurons 
+targeting ability of nanochaperones measured by CLSM. Green: cytoskeleton stained with Actin-stain 488 phalloidin green. Red: Cy5-labeled nanochaperones. Blue: 
+nuclei stained with DAPI. Scale bar = 20 μm (i) The flow cytometric quantification of damaged neurons targeting ability of nanochaperones. (j) Mitochondrial 
+targeting ability of KAS-nChap. Green: mitochondria stained with Mito-tracker green. Red: Cy5-labeled nanochaperones. Blue: nuclei stained with Hoechst 33342. 
+Scale bar = 20 μm. (k) Schematic illustration of sequential targeting nanochaperones KAS-nChap to mitochondria within damaged neurons. Data were presented as 
+mean ± SD, n = 3, **p < 0.01. (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.)
+H. Hu et al.                                                                                                                                                                                                                                      
+Biomaterials 335 (2026) 124408 
+3 
+
+49]. Therefore, this nanochaperone disrupts the positive feedback loop 
+of mitochondrial dysfunction and further alleviates the pathological 
+process of AD. This innovative therapeutic strategy is expected to 
+become a potential AD treatment.
+2. Results and discussion
+2.1. Preparation and characterization of KAS-nChap
+The amphiphilic copolymers SS-31-PEG-b-PCL, AAN-PEG-b-PCL, and 
+KLVFF-PAE-b-PCL were synthesized through ring-opening polymeriza­
+tion, click reaction, Michael addition, and amidation reaction (Fig. S1) 
+[50,51]. The chemical structure of the above polymers was confirmed by 
+the 1H nuclear magnetic resonance (1H NMR) spectra (Fig. S2). Next, the 
+above three amphiphilic copolymers with the same hydrophobic PCL 
+block (as a core) and different hydrophilic blocks (as a mixed shell) were 
+self-assembled into complex micelles in a weakly acidic aqueous solu­
+tion and named KAS-nChap. Meanwhile, the nanochaperone without 
+peptide modification (denoted as nChap), only KLVFF-modified nano­
+chaperone (denoted as K-nChap), AAN/SS-31 dual peptide-modified 
+nanochaperone (denoted as AS-nChap) and KLVFF/AAN dual 
+peptide-modified nanochaperone (denoted as KA-nChap) were prepared 
+using the same method as controls (Fig. 1a). Transmission electron mi­
+croscopy (TEM) images showed that all nanochaperones exhibited uni­
+formly spherical structures (Fig. 1b). Dynamic light scattering (DLS) 
+results indicated that the average hydrodynamic diameter of all nano­
+chaperones was approximately 110 nm (Fig. 1c). At the same time, we 
+measured the zeta potential of nanochaperones at different pH. As 
+shown in Fig. 1d, the charges of nChap, K-nChap and KA-nChap dis­
+played charge conversion when the pH changed from 7.4 to 5.0 and back 
+to 7.4, confirming that these nanochaperones containing PAE could 
+rapidly and reversibly form hydrophobic microdomains on the surface 
+through the deprotonation/protonation of the PAE segments. Moreover, 
+although KAS-nChap did not undergo the charge conversion, the zeta 
+potential of KAS-nChap still showed a significant change when the pH 
+changed from 7.4 to 5.0 and back to 7.4, which was also attributed to the 
+deprotonation/protonation of the PAE segments. Furthermore, to vali­
+date the self-assembly behavior and structural integrity of nano­
+chaperones, it is essential to measure the Critical Micelle Concentration 
+(CMC). The results showed the CMC of various nanochaperones were 
+around 1.8-4.1 μg/mL. These low CMC may facilitate the nano­
+chaperones to maintain assembly stability even under the continuous 
+dilution effect in circulating blood (Fig. S3). Moreover, after incubation 
+in PBS or fetal bovine serum (FBS) for 10 days, no significant changes in 
+particle size were observed among the nanochaperones (Fig. S4), indi­
+cating their excellent structural integrity. We then performed dot blot 
+assay to evaluate whether nanochaperones could capture and bind the 
+free Aβ oligomer. For dot blot experiment, Aβ oligomer were 
+co-incubated with PBS or nanochaperones, respectively. Then the so­
+lutions were dialyzed and concentrated by Millipore ultrafiltration 
+centrifuge tubes to remove any unbound Aβ oligomer. The free levels of 
+Aβ oligomer in the filtrate were measured via dot blot tests (Fig. 1e) 
+[52]. As shown in Fig. 1f, g and S5, the remaining level of free Aβ 
+oligomer in K-nChap, KA-nChap, and KAS-nChap groups (~50%) were 
+lower than those of nChap and AS-nChap groups (~95%), indicating a 
+specific recognition and binding effect of the KLVFF-moiety to Aβ olig­
+omer. Because SS-31 possesses antioxidant properties, cell-free free 
+radical (DPPH and OH−) scavenging assays were tested. As shown in 
+Fig. S6, free SS-31 peptide and KAS-nChap could notably scavenge DPPH 
+and OH−
+relative to those for nChap, K-nChap and KA-nChap (non­
+–SS–31-containing control nanochaperones). These data underscored 
+the antioxidant activity of the SS-31 peptide within the system, and 
+SS-31 peptide modification could endow the nanochaperones with 
+robust free radical scavenging ability. Before different nanochaperones 
+were used in cell-based experiments, the cell toxicity of them should be 
+further detected by CCK-8. The nanochaperone exhibited good 
+biocompatibility with SH-SY5Y cells at concentrations ranging from 25 
+to 500 μg/mL (Fig. S7), demonstrating their suitability for cell-based 
+experiments.
+2.2. Sequential targeting ability of KAS-nChap to damaged neurons and 
+mitochondria
+To validate the targeted ability of KAS-nChap to damaged neurons, 
+confocal laser scanning microscopy (CLSM) was used to examine the 
+localization of nanochaperones in SH-SY5Y cells. The nanochaperones 
+were labeled with Cy5 and the cell membrane was labeled with phal­
+loidin. As shown in Fig. 1h, the little red fluorescence was displayed in 
+SH-SY5Y cells not pre-incubated with Aβ oligomer. Nevertheless, the red 
+fluorescence intensity of KA-nChap and KAS-nChap groups markedly 
+increased in SH-SY5Y cells when pre-incubated with Aβ oligomer, 
+indicating that AAN modification enabled the nanochaperone targets to 
+damage neurons and be endocytosed into cells. The flow cytometry data 
+also supported these results (Fig. 1i and Fig. S8). After the nano­
+chaperone enters the cell, successful lysosomal escape is a critical step 
+for the intracellular performance of nanochaperones. To identify 
+whether our nanochaperones could escape from lysosomes, they were 
+incubated with SH-SY5Y cells for different periods, and their intracel­
+lular distribution was tracked by CLSM (Fig. S9). At the early time point 
+of 2 h, most nanochaperones were co-localized with lysosomes (orange 
+color) in the cytoplasm compared to the 1 h time point, indicating that 
+most nanochaperones might move into lysosomes. Next, after 4 h post- 
+incubation, most nanochaperones were found in the cytoplasm (red 
+color), which are not localized in lysosomes (green colour). It confirmed 
+that in the acidic environment of lysosomes (pH = 5.0), complete pro­
+tonation of the PAE chain segments of the nanochaperone could escape 
+lysosomes through the proton sponge effect and thereby enter the 
+cytoplasm. To verify the mitochondrial targeting capability of SS-31 
+peptide-modified nanochaperones, confocal images of mitochondria- 
+indicated Mito-tracker Green staining were acquired. It showed that 
+KAS-nChap exhibited stronger colocalization with mitochondria in 
+damaged neurons compared to nChap, K-nChap and KA-nChap (Fig. 1j 
+and Fig. S10). This proved that KAS-nChap could target intracellular 
+mitochondria via surface SS-31 peptide. These results demonstrated that 
+KAS-nChap could be endocytosed into the damaged neurons and locate 
+in mitochondria, providing a sequential targeting ability to damaged 
+neuronal mitochondria (Fig. 1k).
+2.3. Damaged mitochondrial calcium homeostasis repair and oxidative 
+stress reduction by KAS-nChap
+Then, we evaluated whether sequential targeting nanochaperone 
+KAS-nChap could break the positive feedback loop of mitochondrial 
+dysfunction by building a neuronal cell mitochondrial damage model 
+(Fig. 2b). Mitochondrial proteins are primarily synthesized in the cyto­
+plasm. Research indicated that Aβ protein can induce abnormalities in 
+the protein import receptors on mitochondria. Consequently, immuno­
+fluorescence experiments were conducted to evaluate whether KAS- 
+nChap could reduce the Aβ oligomer damage to mitochondrial mem­
+brane receptors by the binding ability of KLVFF peptide and Aβ (Fig. 2a). 
+The findings revealed that the co-localization coefficient between FITC- 
+labeled Aβ and the mitochondrial outer membrane receptor (Tom-20) 
+diminished following incubation of KAS-nChap and cells, implying that 
+KAS-nChap could alleviate the Aβ oligomer's toxic effects on mito­
+chondria. The calculated Pearson's correlation coefficients also proved 
+these findings (Fig. S11). To further verify the clearance mechanism of 
+Aβ protein, we measured colocalization of FITC-labeled Aβ and the ly­
+sosomes after treated with PBS or KAS-nChap for 8 h. As shown in 
+Fig. S12, more intense orange fluorescence (merged by green FITC-Aβ 
+signal and red Lyso-tracker signal) was observed in cells incubated with 
+KAS-nChap, whereas PBS group showed almost no orange fluorescence 
+signal. This indicated that KAS-nChap could bind and bring Aβ to 
+H. Hu et al.                                                                                                                                                                                                                                      
+Biomaterials 335 (2026) 124408 
+4 
+
+lysosomes, suggesting a potential role in Aβ degradation. The calculated 
+Pearson's correlation coefficients also proved these findings. The “pro­
+ton sponge effect” of our PAE-based nanochaperone may not be a static 
+property but rather a dynamically regulated process that could diminish 
+after its interaction with Aβ oligomer. To verify the lysosomal degra­
+dation of Aβ could occur effectively, the zeta potential of Aβ-nano­
+chaperone 
+complexes, 
+which 
+were 
+formed 
+by 
+co-incubating 
+nanochaperones with Aβ oligomer, were further measured. As shown in 
+Fig. S13, the zeta potential of KLVFF-modified nanochaperone were 
+decreased after binding with negatively charged Aβ oligomer. The 
+reduction in the potential of these Aβ-nanochaperone complexes could 
+slow down the proton sponge effect of nanochaperones in lysosomes. 
+Furthermore, to directly verify the lysosomal integrity, we further per­
+formed the Acridine Orange (AO) staining assay. AO is a metachromatic 
+dye that fluoresces red in intact acidic lysosomes and turns green in the 
+cytosol when lysosomal integrity is reduced. As shown in Fig. S14, after 
+incubating with the nanochaperones for 4 h, the cell cytoplasm exhibi­
+ted significant green fluorescence, indicating that lysosomal escape 
+occurred. Then, KLVFF-modified nanochaperones bound the Aβ olig­
+omer in the cytoplasm to form the Aβ-nanochaperone complexes and 
+returned to the lysosome after 8 h. After incubating for 10 h, the lyso­
+somes mainly maintained a red spot morphology, especially in the 
+KLVFF-modified nanochaperone group, indicating that lysosomal 
+integrity could maintain. The above results tend to indicate that Aβ 
+binding might delay the lysosomal escape process of nanochaperones, 
+potentially creating a time window for lysosomal degradation of Aβ 
+oligomer. Therefore, these findings imply that KLVFF-modified nano­
+chaperones (especially KAS-nChap) may facilitate Aβ oligomer degra­
+dation through the lysosomal network.
+Aβ oligomer can cause the imbalance of mitochondrial Ca2+ ho­
+meostasis. Studies have shown that direct exposure of neurons to Aβ 
+oligomer can increase mitochondrial Ca2+ uptake and subsequent 
+mitochondrial Ca2+ overload [9,10]. Specifically, pathological Aβ olig­
+omer causes Ca2+ accumulation in mitochondria and subsequent Ca2+
+homeostasis dysfunction. Therefore, the mitochondrial Ca2+ concen­
+tration was measured using the mitochondrial calcium ion probe 
+(Rhod-2). CLSM images showed significant red fluorescence in the Aβ 
+oligomer-treated cells, indicating that Aβ oligomer could cause mito­
+chondrial Ca2+ overload (Fig. 2e and g). Meanwhile, nChap treatment 
+could not decrease the red fluorescence, due to the weak binding ability 
+Fig. 2. Mitochondrial Ca2þ homeostasis recovery by KAS-nChap. (a) Immunofluorescence images of FITC-Aβ and Tom-20 colocalization in SH-SY5Y cells. Scale 
+bar = 20 μm. (b) Schematic illustration of neuronal cell damaged model and neuronal dysfunction recovery. The flow cytometry of (c) mitochondrial Ca2+ and (d) 
+mitochondrial permeability transition pore (mPTP) (Rhod-2 stained mitochondrial Ca2+: red; Calcein stained mPTP: green) content in SH-SY5Y cells after various 
+treatments. (e) CLSM images of mitochondrial Ca2+ and (g) quantitative analysis. Scale bar = 20 μm. (f) CLSM images of mPTP and (h) quantitative analysis. Scale 
+bar = 20 μm. (i) Schematic illustration of mitochondrial Ca2+ homeostasis repair. Data were presented as mean ± SD, n = 3, ***p < 0.001, ****p < 0.0001. (For 
+interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.)
+H. Hu et al.                                                                                                                                                                                                                                      
+Biomaterials 335 (2026) 124408 
+5 
+
+to Aβ. In contrast, K-nChap, KA-nChap and KAS-nChap decreased the red 
+fluorescence, indicating that they could alleviate the mitochondrial 
+Ca2+ uptake increase, with the KAS-nChap group showing the most 
+significant therapeutic effect. Furthermore, the mitochondrial perme­
+ability transition pore (mPTP), as a non-selective channel between the 
+inner and outer mitochondrial membranes, maintains mitochondrial ion 
+homeostasis [53,54]. Mechanistically, the interaction of Aβ oligomers 
+with the mPTP regulator (CypD) and increased mitochondrial Ca2+ leads 
+to excessive mPTP opening and reduced mitochondrial membrane po­
+tential. These further cause mitochondrial calcium ion homeostasis 
+imbalance, increased ROS production, and ultimately neuronal cell 
+damage [55]. The opening degree of mPTP was investigated by Calcein 
+staining. Similar results were observed that nearly no green fluorescence 
+in the Aβ oligomer treated cells, while the KAS-nChap group exhibited 
+increased green fluorescence, demonstrating that KAS-nChap treatment 
+could significantly alleviate the over-opening of mPTP (Fig. 2f and h). 
+Because KAS-nChap inhibited the excessive opening of mPTP by binding 
+to Aβ oligomer. Meanwhile, KAS-nChap could prevent the mitochondrial 
+cardiolipin oxidation, stabilize the structure of the mitochondrial 
+membrane through the SS-31 peptide on the surface, thus maintaining 
+the stability of mPTP. The flow cytometry data also supported the above 
+results (Fig. 2c and d). Consequently, KAS-nChap markedly recovered 
+Ca2+ homeostasis and diminished the over-opening of mPTP by the ef­
+fects of KLVFF and SS-31 peptide (Fig. 2i).
+Mitochondria are the main organelles that produce ROS and super­
+oxide in cells. More and more experiments have shown that excess Ca2+
+in mitochondria will increase the generation of ROS, damage the 
+mitochondrial membrane potential and mitochondrial structure, 
+resulting in excessive oxidative stress and neuronal cell death [56]. 
+Therefore, 2′,7′-dichlorodihydrofluorescein diacetate (DCFH-DA) and 
+MitoSox were used as probes to detect the levels of ROS in cells and 
+mitochondria. As shown in Fig. 3a–d, obvious fluorescence was gener­
+ated in both DCFH-DA or MitoSox after adding Aβ oligomer, indicating a 
+substantial increase in ROS production. K-nChap and KA-nChap treat­
+ments were more effective in scavenging ROS than the nChap group, 
+which was because the KLVFF peptide had toxic Aβ oligomer binding 
+ability [57], thereby reducing Aβ-induced ROS elevation. Besides, SS-31 
+alone treatment also decreased fluorescence due to its antioxidant 
+Fig. 3. Cellular oxidative stress and mitochondrial damage repair. CLSM images to show the intracellular and mitochondrial ROS generation after different 
+treatments, staining with (a) DCFH-DA or (b) MitoSOX probe and (c-d) quantitative analysis, respectively. (e-f) They were detected by flow cytometry, respectively. 
+(g) The quantitative analysis of intracellular mitochondrial membrane potential (MMP) by flow cytometry. Red/Green ratio represents the fluorescent intensity of red 
+J-aggregate divided by that of green J-monomer. (h) CLSM images of MMP staining with JC-1 dye. (i) Representative Bio-TEM images of mitochondrial morphology 
+in SH-SY5Y cells after various treatments. Orange arrows indicate damaged mitochondria. Scale bar = 500 nm. (j) Statistical analysis of the mitochondria length/ 
+width ratio in the different treatment groups. (k) Statistical analysis of the number of mitochondria in the different treatment groups. Data were presented as mean ±
+SD, **p < 0.01, ****p < 0.0001. (For interpretation of the references to color in this figure legend, the reader is referred to the Web version of this article.)
+H. Hu et al.                                                                                                                                                                                                                                      
+Biomaterials 335 (2026) 124408 
+6 
+
+properties (Fig. S15). More impressively, there was almost no fluores­
+cence after incubation with KAS-nChap. Therefore, KAS-nChap effec­
+tively decreased ROS levels through the synergic effect of KLVFF 
+peptide, chaperone-mimicking microdomains on the surface and anti­
+oxidant SS-31. These results were further supported by flow cytometry 
+data (Fig. 3e and f).
+Mitochondrial membrane potential (MMP) can reflect whether 
+mitochondria are healthy in cells, and the decrease of MMP indicates 
+mitochondrial damage. We examined changes in MMP using JC-1 as an 
+indicator, which is a cationic cyanine dye that accumulates in mito­
+chondria in a potential-dependent manner. When the mitochondrial 
+potential is high, JC-1 can enter the matrix of the mitochondria to form 
+aggregates with red fluorescence. Whereas, JC-1 can only exist as 
+monomers with green fluorescence when the potential is lowered. Thus, 
+mitochondrial depolarization can be measured by the relative ratio of 
+red and green fluorescence [58,59]. The intensity of red and green 
+fluorescence in SH-SY5Y cells was detected by CLSM and flow cytom­
+etry. As shown in Fig. 3g and h and Fig. S16, the red-to-green fluores­
+cence ratio was significantly decreased in the Aβ oligomer group, 
+suggesting that Aβ oligomer induced mitochondrial damage. Besides, 
+the intensity of red fluorescence increased and green fluorescence 
+decreased in KLVFF-modified nanochaperones and SS-31 groups 
+compared to the nChap group. Among them, KAS-nChap exhibited a 
+substantial recovery of mitochondrial membrane potential, as evidenced 
+by an increased red-to-green fluorescence ratio to about 0.9, suggesting 
+that KAS-nChap effectively repaired mitochondrial damage in SH-SY5Y 
+cells. Taken together, KAS-nChap exhibited better therapeutic effects 
+because of the synergic effect of KLVFF peptide, chaperone-mimicking 
+microdomains on surface and functional antioxidant properties of 
+SS-31. To verify the mitochondrial protection and apoptosis inhibition 
+effects at the protein level, Western Blot (WB) analysis of the SH-SY5Y 
+cell lysates was performed to quantify the expression changes of key 
+proteins in the mitochondrial apoptotic pathway (Fig. S17). The 
+expression of antiapoptotic protein Bcl-2, proapoptotic protein Bax and 
+main apoptosis effector Cleaved caspase-3 were analyzed. The 
+KAS-nChap group showed the strongest effect on reduction in Bax and 
+Cleaved caspase-3 expression and enhancement in Bcl-2 levels in com­
+parison with other groups. From the quantitative analysis, the ratios of 
+Bax/Bcl-2 and levels of Cleaved caspase-3 in the KAS-nChap group were 
+also much lower than those of other groups. These results suggested that 
+KAS-nChap could effectively inhibit mitochondrial damage and 
+apoptosis. Subsequently, Bio-TEM images were used to detect the 
+morphology of mitochondria. The mitochondrial membrane in cells 
+treated with Aβ oligomer was destroyed and a large portion of swollen, 
+vacuolated mitochondria with completely disrupted mitochondrial 
+cristae were observed. In contrast, most mitochondria treated by 
+KAS-nChap had healthy morphology with normal cristae structures, 
+indicating that KAS-nChap treatment efficiently restored the ultra­
+structure of mitochondria (Fig. 3i–k). Therefore, the above results 
+indicated that KAS-nChap could effectively inhibit neuronal apoptosis 
+by preserving mitochondrial integrity.
+Next, to investigate whether nanochaperones can repair Aβ-induced 
+cytotoxicity, cell viability was evaluated using the CCK-8 assay. Following 
+treated with Aβ oligomer for 4 h, cell viability of SH-SY5Y cells decreased 
+to approximately 60% (Fig. S18). In the presence of KAS-nChap, the cell 
+survival rate increased to about 95%, higher than that of n-Chap, K-nChap 
+and KA-nChap, suggesting that KAS-nChap effectively reduced Aβ 
+oligomer-induced cytotoxicity. The above data demonstrate that KAS- 
+nChap can break the self-perpetuating feedback loop of mitochondrial 
+dysfunction by binding Aβ oligomer, restoring mitochondrial calcium 
+homeostasis and scavenging ROS at the cellular level.
+2.4. Amelioration effect of KAS-nChap on the behavior and cognition of 
+5xFAD mice
+We next selected 5xFAD mice as AD pathological model to 
+investigate the therapeutic efficacy of nanochaperones in vivo [16,17]. 
+Cy5-labeled nanochaperones were injected into the mouse bilateral 
+hippocampus, and their metabolism was monitored using fluorescence 
+imaging technology. As shown in Fig. S19, obvious fluorescence signals 
+were observed throughout the entire mouse brain during the therapeutic 
+window and persisted for nearly 20 days, indicating that nano­
+chaperones could spread within the brain and remain effective for 
+approximately three weeks. Furthermore, the nanochaperones were 
+injected into 5xFAD mice by the brain stereotactic injection, while saline 
+into C57BL/6J mice served as wild-type control (WT) (Fig. 4a). Then 
+behaviour tests such as nest building, new object recognition (NOR), and 
+Morris water maze (MWM) test were carried out to evaluate the spatial 
+learning and memory abilities of AD model mice [60]. The nesting score 
+and novel objects discrimination index showed that 5xFAD mice failed 
+to build the complete nest due to cognitive impairment (Fig. 4b and c). 
+In contrast, nChap, K-nChap, KA-nChap, and KAS-nChap treated mice 
+obtained higher nesting scores, respectively. Of note, the KAS-nChap 
+treated mice possessed excellent nesting skills similar to the WT 
+group. Moreover, the hippocampal function of 5xFAD mice was also 
+examined using NOR test (Fig. 4d and e). 5xFAD mice showed decreased 
+interest in novel objects based on the results of motion paths and 
+discrimination index (DI), while KAS-nChap treated mice demonstrated 
+a higher DI, which was comparable to WT mice, reflecting good interest 
+in exploring novel objects. After that, in MWM test, mice treated with 
+KAS-nChap demonstrated a significantly shorter latency period 
+compared to the AD group during 4-days training (Fig. 4f and g), 
+approaching that of the WT group. Following the removal of the escape 
+platform on day 7, KAS-nChap treated group spent less time searching 
+for the hidden platform, more time swimming in the target quadrant, 
+and showed increased platform crossing numbers compared to nChap, 
+K-nChap and KA-nChap treated groups (Fig. 4h–j), confirming that 
+KAS-nChap significantly enhanced the spatial memory capabilities of 
+5xAD mice. The above findings suggested that KAS-nChap effectively 
+mitigated the cognitive and behavioural impairments in AD transgenic 
+mice to the normal level.
+2.5. Improvement of mitochondrial dysfunction and alleviation of 
+neuronal damage in 5xFAD mice by KAS-nChap
+After the behavioural evaluation, we subsequently investigated the 
+brain microenvironment changes in 5xFAD mice. First, to visualize the 
+in vivo targeting ability of nanochaperones to damaged neurons, we 
+conducted immunofluorescence assays on brain slices (Fig. 5a and b). 
+KA-nChap and KAS-nChap (red, Cy5 labeled) were more numerous in 
+the damaged neuronal regions (green, TUNEL stained) of the AD mice 
+brain compared to the nChap and K-nChap groups, confirming that 
+AAN-modified nanochaperones could effectively target damaged neu­
+rons for better therapeutic effects. During the “Aβ-Ca2+-ROS” positive 
+feedback loop of mitochondrial dysfunction, Aβ can cause mitochondrial 
+Ca2+ imbalance, which damages mitochondrial respiration, increases 
+ROS production, decreases ATP synthesis, and ultimately leads to neu­
+roinflammation and cell death. Therefore, immunofluorescence was 
+used to detect Aβ in 5xFAD mice brains [61]. CLSM images revealed lots 
+of Aβ plaques in AD mice brain compared to the WT group. Nevertheless, 
+the Aβ plaques of the KAS-nChap group were significantly reduced 
+compared to other groups, indicating that KAS-nChap effectively alle­
+viated Aβ deposition in 5xFAD mice (Fig. 5c and h). These results were 
+further supported by enzyme-linked immunosorbent assay (ELISA) data 
+(Fig. S20). Subsequently, we detected the levels of mitochondrial 
+oxidative stress in the brains of AD mice by various oxidation indicators. 
+After treatment, compared with the AD mice, the oxidative stress in­
+dicators in the brains of nChap, K-nChap and KA-nChap treated mice, 
+including total antioxidant capacity (T-AOC), superoxide dismutase 
+(SOD) and glutathione peroxidase (GSH-Px) were improved, while the 
+level of malondialdehyde (MDA), a major aldehyde product of lipid 
+peroxidation, was decreased (Fig. S21). Especially in the KAS-nChap 
+H. Hu et al.                                                                                                                                                                                                                                      
+Biomaterials 335 (2026) 124408 
+7 
+
+group, its antioxidant capacity was greatly enhanced by the introduction 
+of the SS-31 peptide. Specifically, the T-AOC, SOD and GSH-Px activity 
+of the KAS-nChap treated group increased by 2.0-fold, 2.6-fold and 
+2.4-fold, respectively, compared with the AD mice, while the level of 
+MDA was reduced to 47.4% of the AD group. This indicated that 
+KAS-nChap could effectively reduce mitochondrial oxidative stress. 
+Besides, KAS-nChap restored ATP production, indicating that it en­
+hances bioenergetic generation in mitochondria (Fig. S22). Then, 
+8-hydroxyguanosine (8-OHG), an oxidative damage product, was used 
+to detect the level of ROS in the brain [62]. A significant increase in the 
+green fluorescence signal of 8-OHG was observed in the hippocampus of 
+AD mice compared to the WT group, while the green fluorescence signal 
+in the KAS-nChap group was remarkably reduced, suggesting that 
+KAS-nChap could alleviate oxidative stress levels in the brain hippo­
+campus (Fig. 5d and i).
+Because the vicious cycle of mitochondrial dysfunction ultimately 
+leads to neuroinflammation and neuronal damage, we further detected 
+the levels of inflammatory factors in the brains of mice after treatment. 
+In comparison to the AD group, the KAS-nChap-treated group exhibited 
+a notably reduced fluorescence of TNF-α in the brain hippocampus 
+(Fig. S23), verifying that KAS-nChap effectively mitigated neuro­
+inflammation in the AD brain. These results were further supported by 
+ELISA data of inflammatory factors (TNF-α and IL-6) (Fig. S24). We next 
+explored the neuroprotection ability of KAS-nChap by Hematoxylin-and- 
+eosin (H&E), NeuN and Niss staining. The images showed severe neuron 
+damage in the brain of AD mice with apparent cell atrophy and nucleus 
+pyknosis. In contrast, KAS-nChap treatment could significantly lighten 
+the nerve cell damage, revealing that KAS-nChap was able to alleviate 
+neuronal damage in AD mice and effectively protect neurons (Fig. 5e–g 
+and Fig. 5j). Furthermore, the immunofluorescence assays were also 
+verified in the AD mice brain cortex (Fig. S25 and Fig. S26). Besides, the 
+assessment of protein oxidation was measured via a comparative anal­
+ysis of the levels of oxidative and nitrosative stress markers in the AD 
+mice brain after treatments. As shown in Fig. S27, the protein carbonyl 
+(PC) and 3-nitrotyrosine (3-NT) levels in the nChap, K-nChap and KA- 
+nChap groups were slightly lower compared to the AD group, while 
+the KAS-nChap group reduced PC and 3-NT levels by 25% and 30%, 
+respectively, compared to the AD control group. These results indicated 
+that KAS-nChap treatment could effectively alleviate protein oxidation. 
+Biosafety is a key concern in drug development and clinical application. 
+As shown in H&E staining, there were no obvious pathological changes 
+in the major organs of mice (heart, liver, spleen, lung, and kidney) after 
+various treatments (Fig. S28). Besides, the blood biochemistry and 
+routine blood parameters data were within normal ranges after different 
+treatments compared with the WT group. These results indicate that the 
+negligible toxicity of nanochaperones on the liver and kidney (Fig. S29 
+and Fig. S30). Taken together, the above results preliminarily supported 
+the biosafety of KAS-nChap as a potential AD treatment.
+Fig. 4. Behavioural evaluation of KAS-nChap therapy in 5xFAD mice. (a) Time course of nanochaperone administration and therapeutic evaluation. (b) 
+Representative images of the nest-building experiment. (c) Nest-building scores for each group. (d) Representative searching paths of mice in novel object recognition 
+(NOR) after different treatments. (e) Discrimination index (DI) of different groups in NOR test. (f) Representative swimming paths of mice in MWM after different 
+treatments. (g) Escape latency at different time points. (h) Escape latency after 6-day training. (i) Swimming time spent in the targeted quadrant. (j) Number of 
+crossing the escape platform location. Data were presented as mean ± SD, n = 6, ns represents no significance, **p < 0.01, ***p < 0.001, ****p < 0.0001.
+H. Hu et al.                                                                                                                                                                                                                                      
+Biomaterials 335 (2026) 124408 
+8 
+
+3. Conclusion
+In summary, we have developed a customized sequential targeting 
+nanochaperone (KAS-nChap) to serve as a novel damaged neuronal 
+mitochondria repair therapy for AD. Benefiting from the combined dual 
+functional modules-damaged neuronal targeting peptide and mito­
+chondrial targeting peptide, this nanochaperone can selectively target 
+dysfunctional mitochondrial regions. Furthermore, Aβ-recognition 
+peptide KLVFF and the chaperone-mimicking hydrophobic micro­
+domains of the polymer shell endow the nanochaperone with the ability 
+to recognize and bind Aβ aggregates that are damaged to mitochondria, 
+thereby reducing excessive Ca2+ influx into mitochondria and ROS 
+overload in the damaged neuron. Meanwhile, due to the decorated 
+antioxidant capacity of SS-31 peptide, nanochaperone further down­
+regulates the excessive production of ROS in mitochondria and restores 
+Ca2+ dyshomeostasis. In turn, the ROS reduction and Ca2+ homeostasis 
+recovery alleviate the toxicity of Aβ aggregates to mitochondria. As a 
+result, the nanochaperone disrupts the positive feedback loop of mito­
+chondrial dysfunction of AD. Consequently, it repaired damaged neu­
+rons, thus restoring cognitive impairments in the 5xFAD transgenic 
+mice. Admittedly, we acknowledge that brain stereotaxic injections 
+have limitations in clinical applications. Therefore, in our future work, 
+we will attempt to introduce blood-brain barrier (BBB) penetrating 
+peptides to overcome BBB or use intranasal administration to bypass 
+BBB for further facilitating the in vivo application of nanochaperones. 
+Overall, this groundbreaking approach offered a novel therapeutic 
+strategy for mitigating or reversing the pathological mechanisms of AD 
+against mitochondrial dysfunction.
+CRediT authorship contribution statement
+Haodong Hu: Conceptualization, Data curation, Formal analysis, 
+Investigation, Methodology, Software, Validation, Visualization, 
+Writing – original draft. Shuyue Zhao: Data curation, Investigation, 
+Methodology, Visualization. Linlin Xu: Methodology, Validation, 
+Visualization. Zixuan Ma: Data curation. Rujiang Ma: Funding acqui­
+sition, Supervision, Writing – review & editing. Fan Huang: Funding 
+acquisition, Supervision, Writing – review & editing. Linqi Shi: Funding 
+acquisition, Supervision, Writing – review & editing.
+Declaration of competing interest
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper.
+Acknowledgments
+This work was financially supported by the National Natural Science 
+Foundation of China (Grant Numbers: 52293380, 52293383, 52473162 
+and 52073306), the National Key R&D Program of China 
+(501100012166) (Project number: 2022YFA1205700), the Natural 
+Science Foundation of Tianjin, China (23JCZDJC00160), and the State 
+Key Laboratory of Advanced Medical Materials and Devices Research 
+Grant (JYY25QZZZ0002).
+Fig. 5. Mechanisms of nanochaperones therapy modulating AD microenvironment and neuroprotection in vivo. (a) Immunofluorescence images and (b) 
+quantitative analysis of tunel and Cy5-labeled nanochaperones in the hippocampus. Scale bar = 50 μm. Immunofluorescence images for expression of c) Aβ, d) 8- 
+OHG, and g) NeuN in 5xFAD mice brain hippocampus. Scale bar = 100 μm. (e) H&E and (f) Niss staining analysis of mice hippocampus with different treatment 
+groups. Scale bar = 100 μm. Quantitative analysis of immunofluorescence images of h) Aβ, i) 8-OHG, and j) NeuN in 5xFAD mice brain hippocampus. Data were 
+presented as mean ± SD, n = 5, ns represents no significance, ***p < 0.001, ****p < 0.0001.
+H. Hu et al.                                                                                                                                                                                                                                      
+Biomaterials 335 (2026) 124408 
+9 
+
+Appendix A. Supplementary data
+Supplementary data to this article can be found at https://doi.org/10 
+.1016/j.biomaterials.2026.124408.
+Data availability
+Data will be made available on request.
+References
+[1] H. Hampel, R. Au, S. Mattke, W.M. van der Flier, P. Aisen, L. Apostolova, C. Chen, 
+M. Cho, S. De Santi, P. Gao, Designing the next-generation clinical care pathway for 
+Alzheimer's disease, Nat. Aging 2 (2022) 692–703.
+[2] W.K. Self, D.M. Holtzman, Emerging diagnostics and therapeutics for Alzheimer 
+disease, Nat. Med. 29 (2023) 2187–2199.
+[3] J.F. Dartigues, Alzheimer's disease: a global challenge for the 21st century, Lancet 
+Neurol. 8 (2009) 1082–1083.
+[4] J. Liao, W. He, L. Li, J. Wang, L. Gong, Q. Zhang, Z. Lin, Mitochondria in brain 
+diseases: bridging structural-mechanistic insights into precision-targeted therapies, 
+Cell Biomaterials 1 (2025) 100016.
+[5] T. Ashleigh, R.H. Swerdlow, M.F. Beal, The role of mitochondrial dysfunction in 
+Alzheimer's disease pathogenesis, Alzheimer's Dementia 19 (2023) 333–342.
+[6] T. Calì, D. Ottolini, M. Brini, Mitochondrial Ca2+ and neurodegeneration, Cell 
+Calcium 52 (2012) 73–85.
+[7] S.C. Cunnane, E. Trushina, C. Morland, A. Prigione, G. Casadesus, Z.B. Andrews, M. 
+F. Beal, L.H. Bergersen, R.D. Brinton, S. de la Monte, Brain energy rescue: an 
+emerging therapeutic concept for neurodegenerative disorders of ageing, Nat. Rev. 
+Drug Discov. 19 (2020) 609–633.
+[8] E. Motori, I. Atanassov, S. Kochan, K. Folz-Donahue, V. Sakthivelu, P. Giavalisco, 
+N. Toni, J. Puyal, N.-G. Larsson, Neuronal metabolic rewiring promotes resilience 
+to neurodegeneration caused by mitochondrial dysfunction, Sci. Adv. 6 (2020) 
+eaba8271.
+[9] M. Calvo-Rodriguez, B.J. Bacskai, Mitochondria and calcium in Alzheimer's 
+disease: from cell signaling to neuronal cell death, Trends Neurosci. 44 (2021) 
+136–151.
+[10] M. Calvo-Rodriguez, S.S. Hou, A.C. Snyder, E.K. Kharitonova, A.N. Russ, S. Das, 
+Z. Fan, A. Muzikansky, M. Garcia-Alloza, A. Serrano-Pozo, Increased mitochondrial 
+calcium levels associated with neuronal death in a mouse model of Alzheimer's 
+disease, Nat. Commun. 11 (2020) 2146.
+[11] M. Calvo-Rodriguez, E.K. Kharitonova, A.C. Snyder, S.S. Hou, M.V. Sanchez-Mico, 
+S. Das, Z. Fan, H. Shirani, K.P.R. Nilsson, A. Serrano-Pozo, Real-time imaging of 
+mitochondrial redox reveals increased mitochondrial oxidative stress associated 
+with amyloid β aggregates in vivo in a mouse model of Alzheimer's disease, Mol. 
+Neurodegener. 19 (2024) 6.
+[12] W. Wang, F. Zhao, X. Ma, G. Perry, X. Zhu, Mitochondria dysfunction in the 
+pathogenesis of Alzheimer's disease: recent advances, Mol. Neurodegener. 15 
+(2020) 1–22.
+[13] K. Jia, H. Du, Mitochondrial permeability transition: a pore intertwines brain aging 
+and Alzheimer's disease, Cells 10 (2021) 649.
+[14] G. Battogtokh, Y.S. Choi, D.S. Kang, S.J. Park, M.S. Shim, K.M. Huh, Y.-Y. Cho, J. 
+Y. Lee, H.S. Lee, H.C. Kang, Mitochondria-targeting drug conjugates for cytotoxic, 
+anti-oxidizing and sensing purposes: current strategies and future perspectives, 
+Acta Pharm. Sin. B 8 (2018) 862–880.
+[15] Y. Han, X. Chu, L. Cui, S. Fu, C. Gao, Y. Li, B. Sun, Neuronal mitochondria-targeted 
+therapy for Alzheimer's disease by systemic delivery of resveratrol using dual- 
+modified novel biomimetic nanosystems, Drug Deliv. 27 (2020) 502–518.
+[16] Q. Zhang, Q. Song, R. Yu, A. Wang, G. Jiang, Y. Huang, J. Chen, J. Xu, D. Wang, 
+H. Chen, Nano-brake halts mitochondrial dysfunction cascade to alleviate 
+neuropathology and rescue Alzheimer's cognitive deficits, Adv. Sci. 10 (2023) 
+2204596.
+[17] W. Qian, D. Liu, J. Liu, M. Liu, Q. Ji, B. Zhang, Z. Yang, Y. Cheng, S. Zhou, The 
+mitochondria-targeted micelle inhibits Alzheimer's disease progression by 
+alleviating neuronal mitochondrial dysfunction and neuroinflammation, Small 1 
+(2025) 2408581.
+[18] R. Liu, J. Yang, L. Liu, Z. Lu, Z. Shi, W. Ji, J. Shen, X. Zhang, An “Amyloid-β 
+Cleaner” for the treatment of Alzheimer's disease by normalizing microglial 
+dysfunction, Adv. Sci. 7 (2020) 1901555.
+[19] G. Han, Y. Jin, K. Bai, Q. Du, X. Gu, L. Tao, J. Zhou, H. Zhang, Y. Ding, Biomimetic 
+elasticity compressed assembly controls rapid intracerebral drug release to reverse 
+microglial dysfunction, Sci. Adv. 11 (2025) eadr0656.
+[20] C. Li, Y. Wu, Q. Chen, Y. Luo, P. Liu, Z. Zhou, Z. Zhao, T. Zhang, B. Su, T. Sun, 
+C. Jiang, Pleiotropic microenvironment remodeling micelles for cerebral ischemia- 
+reperfusion injury therapy by inhibiting neuronal ferroptosis and glial 
+overactivation, ACS Nano 17 (2023) 18164–18177.
+[21] Y. Liu, D. Zhao, F. Yang, C. Ye, Z. Chen, Y. Chen, X. Yu, J. Xie, Y. Dou, J. Chang, In 
+situ self-assembled phytopolyphenol-coordinated intelligent nanotherapeutics for 
+multipronged management of ferroptosis-driven Alzheimer's disease, ACS Nano 18 
+(2024) 7890–7906.
+[22] H. Malkki, Chaperone protein clusterin is involved in amyloid-β-associated 
+entorhinal atrophy in early ad, Nat. Rev. Neurol. 10 (2014), 60-60.
+[23] P.J. Muchowski, J.L. Wacker, Modulation of neurodegeneration by molecular 
+chaperones, Nat. Rev. Neurosci. 6 (2005) 11–22.
+[24] W. Ahmad, T. Zhao, K. He, S. Luo, Exploring the role of British dementia protein-2 
+(Bri2) and its BRICHOS domain in neurodegenerative disorders, Supramol, Mater 3 
+(2024) 100050.
+[25] R. Freer, P. Sormanni, G. Vecchi, P. Ciryam, C.M. Dobson, M. Vendruscolo, 
+A protein homeostasis signature in healthy brains recapitulates tissue vulnerability 
+to Alzheimer's disease, Sci. Adv. 2 (2016) e1600947.
+[26] S. Zhao, B. Li, Y. Song, S. Wu, H. Hu, J. Wang, L. Shi, F. Huang, Temperature- 
+responsive self-assembly nanochaperone protects green fluorescent proteins from 
+thermal denaturation, Supramol. Mater. 3 (2024) 100067.
+[27] S. Escusa-Toret, W.I. Vonk, J. Frydman, Spatial sequestration of misfolded proteins 
+by a dynamic chaperone pathway enhances cellular fitness during stress, Nat. Cell 
+Biol. 15 (2013) 1231–1243.
+[28] R. Rosenzweig, N.B. Nillegoda, M.P. Mayer, B. Bukau, The Hsp70 chaperone 
+network, Nat. Rev. Mol. Cell Biol. 20 (2019) 665–680.
+[29] K.P. Kepp, Bioinorganic chemistry of Alzheimer's disease, Chem. Rev. 112 (2012) 
+5193–5239.
+[30] A.B. Caballero, P. Gamez, Nanochaperone-based strategies to control protein 
+aggregation linked to conformational diseases, Angew. Chem. 133 (2021) 41–52.
+[31] D. Balchin, M. Hayer-Hartl, F.U. Hartl, In vivo aspects of protein folding and 
+quality control, Science 353 (2016) aac4354.
+[32] H. Saibil, Chaperone machines for protein folding, unfolding and disaggregation, 
+Nat. Rev. Mol. Cell Biol. 14 (2013) 630–642.
+[33] S. Zhao, S. Quan, W. He, L. Xu, H. Hu, Z. Ma, R. Ma, F. Huang, L. Shi, Natural spy 
+chaperone mimic: tailored nanochaperone with electrostatic–hydrophobic synergy 
+to enhance protein folding regulation, J. Am. Chem. Soc. 147 (2025) 
+15357–15368.
+[34] Q.Y. Zhao, J.Y. Liu, H. Deng, R.Y. Ma, J.Y. Liao, H.X. Liang, J.X. Hu, J.Q. Li, Z. 
+Y. Guo, J.C. Cai, X.D. Xu, Z.L. Gao, S.C. Su, Targeting mitochondria-located circrna 
+scar alleviates nash via reducing mros output, Cell 183 (2020) 76–93.
+[35] B. Kalmar, L. Greensmith, Induction of heat shock proteins for protection against 
+oxidative stress, Adv. Drug Deliv. Rev. 61 (2009) 310–318.
+[36] J. Labbadia, R.I. Morimoto, The biology of proteostasis in aging and disease, Annu. 
+Rev. Biochem. 84 (2015) 435–464.
+[37] L. Xu, X. Wu, S. Zhao, H. Hu, S. Wang, Y. Zhang, J. Chen, X. Zhang, Y. Zhao, R. Ma, 
+Harnessing nanochaperone-mediated autophagy for selective clearance of 
+pathogenic tau protein in Alzheimer's disease, Adv. Mater. 36 (2024) 2313869.
+[38] J. Chen, F. Ma, Y. Zhang, M. Xu, L. Xu, Y. Liu, R. Ma, L. Shi, Synergizing CXCL9 
+with BRD4-PROTAC using nanochaperone boosts robust T cell-dependent 
+antitumor immune responses for cancer immunotherapy, Adv. Funct. Mater. 34 
+(2024) 2314203.
+[39] X. Mi, H. Du, X. Guo, Y. Wu, L. Shen, Y. Luo, D. Wang, Q. Su, R. Xiang, S. Yue, 
+Asparagine endopeptidase-targeted ultrasound-responsive nanobubbles alleviate 
+tau cleavage and amyloid-β deposition in an Alzheimer's disease model, Acta 
+Biomater. 141 (2022) 388–397.
+[40] X. Song, Z. Wan, T. Chen, Y. Fu, K. Jiang, X. Yi, H. Ke, J. Dong, L. Yang, L. Li, 
+Development of a multi-target peptide for potentiating chemotherapy by 
+modulating tumor microenvironment, Biomaterials 108 (2016) 44–56.
+[41] Y. Wang, M. Deng, Y. Wu, C. Zheng, F. Zhang, C. Guo, B. Zhang, C. Hu, Q. Kong, 
+Y. Wang, A multifunctional mitochondria-protective gene delivery platform 
+promote intervertebral disc regeneration, Biomaterials 317 (2025) 123067.
+[42] Y. Zhang, H. Zhang, F. Zhao, Z. Jiang, Y. Cui, M. Ou, L. Mei, Q. Wang, 
+Mitochondrial-targeted and ros-responsive nanocarrier via nose-to-brain pathway 
+for ischemic stroke treatment, Acta Pharm. Sin. B 13 (2023) 5107–5120.
+[43] H. Zhang, D. Yu, S. Liu, C. Liu, Z. Liu, J. Ren, X. Qu, Nir-ii hydrogen-bonded 
+organic frameworks (Hofs) used for target-specific amyloid-β photooxygenation in 
+an Alzheimer's disease model, Angew. Chem. Int. Ed. 61 (2021) e202109068.
+[44] M. Ma, Z. Liu, N. Gao, K. Dong, Z. Pi, L. Kang, X. Du, J. Ren, X. Qu, Near-infrared 
+target enhanced peripheral clearance of amyloid-β in Alzheimer's disease model, 
+Biomaterials 276 (2021) 121065.
+[45] Q. Huang, C. Jiang, X. Xia, Y. Wang, C. Yan, X. Wang, T. Lei, X. Yang, W. Yang, 
+G. Cheng, Pathological bbb crossing melanin-like nanoparticles as metal-ion 
+chelators and neuroinflammation regulators against Alzheimer's disease, Research 
+6 (2023) 180.
+[46] X. Zhang, H. Hu, Q. Li, Y. Zhao, Z. Zhang, S. Zhao, L. Xu, R. Ma, F. Huang, L. Shi, 
+Cascade-targeting multifunctional nanochaperone remodels brain 
+microenvironment for synergistic therapy of Alzheimer's disease, Nano Today 55 
+(2024) 102168.
+[47] Y. Lu, Z. Guo, Y. Zhang, C. Li, Y. Zhang, Q. Guo, Q. Chen, X. Chen, X. He, L. Liu, 
+Microenvironment remodeling micelles for Alzheimer's disease therapy by early 
+modulation of activated microglia, Adv. Sci. 6 (2019) 1801586.
+[48] H. Xu, P. She, Z. Zhao, B. Ma, G. Li, Y. Wang, Duplex responsive nanoplatform with 
+cascade targeting for atherosclerosis photoacoustic diagnosis and multichannel 
+combination therapy, Adv. Mater. 35 (2023) 2300439.
+[49] X.P. Zhang, Y.G. Sun, R. Yang, B. Liu, Y. Liu, J.H. Yang, W.G. Liu, An injectable 
+mitochondria-targeted nanodrug loaded-hydrogel for restoring mitochondrial 
+function and hierarchically attenuating oxidative stress to reduce myocardial 
+ischemia-reperfusion injury, Biomaterials 287 (2022) 13.
+[50] L. Xu, Y. Ding, F. Ma, Y. Chen, G. Chen, L. Zhu, J. Long, R. Ma, Y. Liu, J. Liu, 
+Engineering a pathological tau-targeted nanochaperone for selective and 
+synergetic inhibition of tau pathology in Alzheimer's disease, Nano Today 43 
+(2022) 101388.
+[51] Y. Liu, Y. Li, D. Keskin, L. Shi, Poly (β-Amino Esters): Synthesis, formulations, and 
+their biomedical applications, Adv. Healthcare Mater. 8 (2019) 1801359.
+[52] H.R. Yang, X.Y. Li, L. Zhu, X.H. Wu, S.Z. Zhang, F. Huang, X.Z. Feng, L.Q. Shi, Heat 
+shock protein inspired nanochaperones restore amyloid-β homeostasis for 
+preventative therapy of Alzheimer's disease, Adv. Sci. 6 (2019) 1901844.
+H. Hu et al.                                                                                                                                                                                                                                      
+Biomaterials 335 (2026) 124408 
+10 
+
+[53] M. Bonora, P. Pinton, A new current for the mitochondrial permeability transition, 
+Trends Biochem. Sci. 44 (2019) 559–561.
+[54] X. Xia, H. Li, X. Xu, G. Zhao, M. Du, Facilitating pro-survival mitophagy for 
+alleviating Parkinson's disease via sequence-targeted lycopene nanodots, ACS Nano 
+17 (2023) 17979–17995.
+[55] H. Du, L. Guo, F. Fang, D. Chen, A.A. Sosunov, G. M McKhann, Y. Yan, C. Wang, 
+H. Zhang, J.D. Molkentin, Cyclophilin d deficiency attenuates mitochondrial and 
+neuronal perturbation and ameliorates learning and memory in Alzheimer's 
+disease, Nat. Med. 14 (2008) 1097–1105.
+[56] L.Y. Zhao, F.L. Meng, Y.J. Li, S.J. Liu, M.M. Xu, F. Chu, C.Z. Li, X.L. Yang, L. Luo, 
+Multivalent nanobody conjugate with rigid, reactive oxygen species scavenging 
+scaffold for multi-target therapy of Alzheimer's disease, Adv. Mater. 35 (2023) 
+2210879.
+[57] Q. Luo, Y.X. Lin, P.P. Yang, Y. Wang, G.B. Qi, Z.Y. Qiao, B.N. Li, K. Zhang, J. 
+P. Zhang, L. Wang, H. Wang, A self-destructive nanosweeper that captures and 
+clears amyloid β-peptides, Nat. Commun. 9 (2018) 1802.
+[58] K. Qian, X.Y. Bao, Y.X. Li, P.Z. Wang, Q. Guo, P. Yang, S.T. Xu, F.Z. Yu, R. Meng, Y. 
+L. Cheng, D.Y. Sheng, J.X. Cao, M.J. Xu, J. Wu, T.Y. Wang, Y.H. Wang, Q. Xie, 
+W. Lu, Q.Z. Zhang, Cholinergic neuron targeting nanosystem delivering hybrid 
+peptide for combinatorial mitochondrial therapy in Alzheimer's disease, ACS Nano 
+16 (2022) 11455–11472.
+[59] A. Xie, G. Cheng, J. Wu, Z. Li, G. Yu, X. Zhu, T. Chen, Highly bbb-permeable 
+nanomedicine reverses neuroapoptosis and neuroinflammation to treat Alzheimer's 
+disease, Biomaterials 312 (2025) 122749.
+[60] H. Zhou, Y. Gong, Y. Liu, A. Huang, X. Zhu, J. Liu, G. Yuan, L. Zhang, J.-a. Wei, 
+J. Liu, Intelligently thermoresponsive flower-like hollow nano-ruthenium system 
+for sustained release of nerve growth factor to inhibit hyperphosphorylation of tau 
+and neuronal damage for the treatment of Alzheimer's disease, Biomaterials 237 
+(2020) 119822.
+[61] T. Lei, Z. Yang, C. Jiang, X. Wang, W. Yang, X. Yang, R. Xie, F. Tong, X. Xia, 
+Q. Huang, Y. Du, Y. Huang, H. Gao, Mannose-integrated nanoparticle hitchhike 
+glucose transporter 1 recycling to overcome various barriers of oral delivery for 
+Alzheimer's disease therapy, ACS Nano 18 (2024) 3234–3250.
+[62] P.X. Liu, T.Y. Zhang, Q.J. Chen, C. Li, Y.C. Chu, Q. Guo, Y.W. Zhang, W.X. Zhou, H. 
+Y. Chen, Z. Zhou, Y. Wang, Z.H. Zhao, Y.F. Luo, X.W. Li, H.L. Song, B.Y. Su, C.F. Li, 
+T. Sun, C. Jiang, Biomimetic dendrimer-peptide conjugates for early multi-target 
+therapy of Alzheimer's disease by inflammatory microenvironment modulation, 
+Adv. Mater. 33 (2021) 2100746.
+H. Hu et al.                                                                                                                                                                                                                                      
+Biomaterials 335 (2026) 124408 
+11

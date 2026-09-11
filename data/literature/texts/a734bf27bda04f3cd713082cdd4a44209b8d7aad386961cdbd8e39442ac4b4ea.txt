@@ -1,0 +1,680 @@
+Contents lists available at ScienceDirect
+Chemical Engineering Journal
+journal homepage: www.elsevier.com/locate/cej
+Rapid synthesis of [Au25(Cys)18] nanoclusters via carbon monoxide in
+microﬂuidic liquid-liquid segmented ﬂow system and their antimicrobial
+performance
+He Huanga, Gi Byoung Hwangb, Gaowei Wua, Kersti Karub, Hendrik Du Toita, Han Wua,
+June Callisonc, Ivan P. Parkinb, Asterios Gavriilidisa,⁎
+a Department of Chemical Engineering, University College London, Torrington Place, London WC1E 7JE, United Kingdom
+b Department of Chemistry, University College London, 20 Gordon Street, London WC1H 0AJ, United Kingdom
+c UK Catalysis Hub, Research Complex at Harwell, Rutherford Appleton Laboratory, Harwell, Oxon OX11 0FA, United Kingdom
+H I G H L I G H T S
+• A microﬂuidic system was developed
+for rapid [Au25(Cys)18] synthesis.
+• The required reaction time was shor-
+tened by operating at elevated tem-
+perature.
+• Higher productivity was achieved by
+using high reactant concentrations.
+• Signiﬁcant photobactericidal activity
+was observed at low light intensity.
+G R A P H I C A L A B S T R A C T
+A R T I C L E I N F O
+Keywords:
+Gold nanoclusters
+Carbon monoxide reduction
+Tube-in-tube contactor
+Coiled ﬂow inverter
+Taylor ﬂow
+Light-activated antimicrobial agents
+A B S T R A C T
+Atomically precise thiolate-gold nanoclusters with well-deﬁned structures attract attention for use in various
+applications. However, most of the recently reported synthetic methods rely on prolonged synthesis times (a few
+hours to days) in order to produce high purity materials with a single cluster size. Such extended synthesis times
+make these processes ill-suited for adaptation to industrial scale production with continuous ﬂow. In this work,
+an improved method for the synthesis of thiolated Au25 nanoclusters is presented utilising a microﬂuidic system
+and CO-mediated reduction. The optimized system, based on a coiled ﬂow inverter with inner diameter of 1 mm
+operating at 80 °C and 500 kPa took only 3 min for the synthesis of atomically precise cysteine-capped
+[Au25(Cys)18] nanoclusters, as characterized by ultraviolet–visible spectroscopy and electrospray ionization
+mass spectrometry. The productivity of the system was increased by using higher reactant concentrations which
+led to a throughput of 0.9 gAu per day, without changing the reaction time or aﬀecting the product purity. The
+Au nanoclusters were used as photobactericidal enhancement materials. In antimicrobial testing against S.
+aureus, encapsulation of the Au nanoclusters into crystal violet impregnated silicone showed high photo-
+bactericidal activity (~1.7 log reduction in viable bacteria) upon 6 h illumination of white light at ~312 lx,
+while crystal violet did not show signiﬁcant photobactericidal activity on its own.
+https://doi.org/10.1016/j.cej.2019.123176
+Received 11 August 2019; Received in revised form 7 October 2019; Accepted 13 October 2019
+⁎ Corresponding author.
+E-mail address: a.gavriilidis@ucl.ac.uk (A. Gavriilidis).
+Chemical Engineering Journal 383 (2020) 123176
+Available online 14 October 2019
+1385-8947/ © 2019 Elsevier B.V. All rights reserved.
+T
+
+1. Introduction
+Atomically precise gold nanoclusters (Au NCs) contain discrete
+numbers of gold atoms with a deﬁned ligand shell [1]. Due to their
+small size, they exhibit quantum size eﬀects and have drawn signiﬁcant
+attention in recent years due to their unusual molecular-like properties,
+such as discrete electronic transitions for enhanced optical properties
+[2], photoluminescence for bio-labels [3], quantized charging for self-
+assembly control [4] and atomically precise size for catalysis [5].
+Among them, thiolated Au NCs ([Aun(SR)m]), especially [Au25(SR)18]
+nanoclusters, have been extensively investigated owing to their high
+thermodynamic stability in the presence of excess thiol ligands [6].
+Typically, the Au NCs protected by thiol ligands are produced with
+the use of a strong reducing agent (such as sodium borohydride,
+NaBH4) to reduce thiolate-Au(I) complexes [7], which ﬁrst leads to a
+mixture of diﬀerent cluster sizes due to the fast and uncontrolled re-
+duction kinetics akin to the rapid formation of small gold nanoparticles
+(Au NPs) by similar methods [8]. It has been well established that
+during this stage, use of lower temperatures (e.g., ice-cold solutions) to
+suppress the reducing ability of NaBH4 is helpful to control the size
+distribution of the Au NPs [8,9]. A similar strategy was also utilized by
+adding NaBH4 to a thiolate-Au(I) solution at 0 °C to produce Au NCs
+[10]. High purity of [Au25(SR)18], which has the highest thermo-
+dynamic stability [7,11], can be obtained with long aging times under
+the gentle environment created due to the etching eﬀect by excess thiol
+ligands [6]. The free thiol can remove the gold atoms from the syn-
+thesized Aun(SR)m clusters to lead to more stable clusters. As this stage
+is thermodynamically controlled, the general synthetic time could be a
+few hours to days in order to leave enough time for cluster size evo-
+lution and focusing [12,13]. During this “size-focusing” stage, heating,
+which is the most eﬃcient method of energy input, can facilitate the
+transformation process of mixed size Au NCs into more thermodynamic
+stable Au NCs of atomic precision and decrease the total reaction time
+required [14]. Considering the conﬂicting favourable conditions at
+diﬀerent synthetic stages, Qian and Jin used a two-step method to
+synthesize high purity [Au144(SCH2CH2Ph)60] nanoclusters, by a mod-
+iﬁed Brust-Schiﬀrin method with a ﬁrst-stage reduction and a second-
+stage addition of excess thiol at 80 °C for 24 h for size-focusing [15].
+Katla et al. developed a one-pot synthesis of Au25(SG)18 NCs at an
+elevated temperature (60 °C) to speed up the aging process and the
+whole reaction time could be reduced to 2 h [16].
+Besides the adjustment of temperature, Xie and co-workers [17]
+made use of NaOH addition to tame the reducing ability of NaBH4, as
+well
+as to increase the
+etching
+ability of thiols
+to synthesize
+[Au25(SR)18] clusters. They further studied the eﬀect of temperature on
+nanoclusters formation and concluded that 40 °C is the optimal tem-
+perature for NaBH4 reduction to speed up the reaction rate without
+further irreversible transformation into mixed size Au NCs under higher
+temperature [14]. However, using NaBH4 as a reducing agent may
+bring about boron contamination into the ﬁnal product, in addition to
+the inevitable decomposition of NaBH4.
+Instead of using NaBH4, Xie and co-workers proposed an allternative
+reduction approach utilising gaseous carbon monoxide as reducing
+agent to direct a slow and size-controlled synthesis of [Au25(SR)18],
+which leads to a highly pure product at room temperature with a 24 h
+reaction time [11]. The mechanism of [Au25(SR)18] formation by CO
+reduction was investigated by the same group to show the cluster
+evolution from Au(I) precursor to ﬁnal Au25 clusters by UV–Vis spec-
+troscopy and electrospray ionization mass spectrometry (ESI-MS) [18].
+The ﬁrst stage, governed by kinetic control, ﬁnished in the ﬁrst 40 min,
+and reduced most of Au(I) complexes into NCs with Au atoms ranging
+from 4 to 10. In the remaining time, up to 72 h, the slow “size-focusing”
+growth was governed by thermodynamic control, converging all the
+intermediate NCs to [Au25(SR)18] with high purity.
+Considering the important role of reaction temperature in the Au
+NCs synthesis, a microﬂuidic system was developed for CO-directed
+[Au25(Cys)18] synthesis in this study, in an attempt to accelerate the
+thiolated Au NCs synthesis with better quality control. Instead of bub-
+bling CO through the solution, a heptane carrier phase was saturated
+with the gaseous reducing agent in a tube-in-tube membrane contactor,
+which oﬀered an enhanced safety platform with fully sealed CO gas
+inside the outer tube. The transfer of the CO to the gold precursor
+containing aqueous phase was facilitated by directly contacting the CO-
+saturated heptane with the aqueous stream, forming segmented ﬂow
+with high interfacial surface area in a coiled ﬂow inverter (CFI) made of
+a capillary with inner diameter of 1 mm. Thus, the controlled addition
+of CO to the aqueous phase occurred from a high excess CO reservoir.
+The synthesized [Au25(Cys)18] NCs were utilized for antimicrobial
+surface preparation. Antimicrobial surfaces are important in healthcare
+environments. There are 2 million incidences of healthcare-associated
+infections (HAIs) in US hospitals and approximately 90,000 of the pa-
+tients die by HAIs, which ranks HAIs as ﬁfth leading cause of death in
+acute-care hospitals of United states (US); 60–70% of HAIs were related
+to bacterial contamination of hospital surfaces or devices [19,20].
+2. Experimental section
+2.1. Experimental set-up and procedure for [Au25(Cys)18] nanoclusters
+synthesis
+Fig. 1 shows the microﬂuidic segmented ﬂow system which con-
+sisted of a tube-in-tube contactor at room temperature and a coiled ﬂow
+inverter (CFI) submerged inside a stirred glycerol (99.5%,VWR) bath
+placed on a hot plate (UC152D with SCT temperature controller, Stuart)
+for the synthesis of Au NCs at elevated temperature. The tube-in-tube
+contactor used a 2 m long Teﬂon AF-2400 tube (0.8 mm inner diameter
+(ID), 1.0 mm outer diameter (OD), Biogeneral) as the contacting in-
+terface placed inside a polytetraﬂuoroethylene (PTFE) tube (2.4 mm ID,
+3.2 mm OD, VICI Jour) and assembled together by a T-junction and a
+union (hole size: 1.0 mm, Upchurch). The contactor was used to satu-
+rate the heptane, fed by a HPLC pump (P2.1S, Knauer) to the Teﬂon AF-
+2400 tube, with CO (BOC gases) that was pressurized in the annulus
+between the inner and outer tube. A 500 kPa pressure in the CO side
+was maintained by a gas pressure regulator (K series, Swagelok) and
+Fig. 1. Schematic of the microﬂuidic segmented ﬂow system developed for
+synthesis of [Au25(Cys)18] NCs with CO-saturated heptane.
+H. Huang, et al.
+Chemical Engineering Journal 383 (2020) 123176
+2
+
+monitored by a pressure sensor (40PC150G, Honeywell) placed at the
+inlet of the annulus. A coiled ﬂow inverter (CFI) was used as a reactor
+placed after a T-junction where the organic phase mixed with aqueous
+solution to form segmented ﬂow. The residence time was estimated
+based on the reactor volume over the total volumetric ﬂow rate of
+aqueous and organic streams. The chemistry of the synthetic route was
+based on that reported proposed by Yu et al. [11]. The aqueous solution
+containing HAuCl4 and cysteine (molar ratio, 1:1.5) was prepared using
+15.0 MΩ reverse osmosis water with pH tuning to 11.6 by NaOH. All
+reagents were of analytical grade and purchased from Sigma-Aldrich.
+The aqueous stream was pumped into the CFI by a piston pump (mil-
+liGAT LF, Global FIA) and merged with CO-saturated heptane at ﬂow
+ratio of organic to aqueous solution of 2 by a T-mixer (0.5 mm ID, P-
+632, IDEX) forming microﬂuidic segmented ﬂow. The CFI was made of
+ﬂuorinated ethylene propylene (FEP) tubing (1 mm ID, VICI Jour) and
+consisted of 100 coils with coil diameter of 1 cm. A 90° bend was
+formed at every 5 coils and the total length of the CFI was 3.6 m (vo-
+lume 2.83 ml). The outlet of the CFI passed through a back pressure
+regulator (BPR-10, Zaiput) connected to a pressure regulator (K series,
+Swagelok) to maintain the liquid phase pressure at 550 kPa. The solu-
+tion at the outlet of the back pressure regulator was collected in a glass
+vial. A gas line of N2 with volumetric ﬂow rate of 1 ml/min, controlled
+by a mass ﬂow controller (5850 TR, Brooks), was connected to the glass
+vial to ﬂush the CO outgassed from the liquid due to decompression.
+The product was washed and precipitated immediately after reaction
+with acetone and the precipitate was ﬁltered with a PVDF syringe ﬁlter
+(0.2 µm, Alpha Laboratories) for long term storage. The stability of the
+solid Au NCs in the fridge was more than 1 month based on the UV–Vis
+spectrum.
+2.2. Analysis of [Au25(Cys)18] nanoclusters
+The solution pH was measured by a pH meter (pH/Ion S220,
+SevenCompact™). UV–Vis absorption spectra of the [Au25(Cys)18] so-
+lution were recorded using a UV–Vis spectrometer (USB 2000+ spec-
+trometer and DT-Mini-2-GS light source, Ocean Optics). Since in some
+cases the absorbance values of the synthesized [Au25(Cys)18] solution
+exceeded the detection limit of this UV–Vis spectrometer, diluted na-
+nocluster solutions were used during measurement and then the ab-
+sorbance data were multiplied by the dilution factor to obtain the ﬁnal
+UV–Vis spectra. The particle size was also analysed using Small Angle
+X-ray Scattering (SAXS, Ganesha 300XL, Xenocs/SAXSLAB); the details
+are shown in the Supporting Information (SI). Microwave Plasma
+Atomic Emission Spectroscopy (MP-AES, Agilent 4100) was used to
+measure the gold amount of the synthesized Au NCs after dialysis with a
+dialysis tube (MWCO 6–8 kDa, Pur-A-Lyzer™). Electrospray ionization
+mass spectrometry (ESI-MS, Agilent 6510 quadrupole Time-of-Flight
+(QTOF) mass spectrometer) was used for identifying the mass of the Au
+NCs. Dried precipitate of Au NCs was diluted in 0.01 µM cesium acetate
+in water (for operation procedure see the SI). Data acquisition was
+performed in proﬁle mode with the mass range m/z from 10–10000.
+Matrix-assisted laser desorption ionization mass spectrum (MALDI-MS,
+Micromass MALDI-TOF) was also used for veriﬁcation and also because
+it oﬀerred wider m/z range. The sample was prepared by mixing 2 μl of
+the raw product with 2 μl of matrix solution (saturated α-cyano-4-hy-
+droxycinnamic acid (CHCA) solution in methanol) and allowed to re-
+crystallize in air prior to the analysis. The data were collected in linear
+mode. The dried nanoclusters were also analysed by ATR-FTIR spec-
+troscopy using a Perkin-Elmer 1605 FTIR spectrometer with a resolu-
+tion of 0.5 cm−1 and wavenumber range 0–5000 cm−1.
+2.3. Bactericidal test
+To produce the antimicrobial surface, a swell-encapsulation-shrink
+process was employed lasting 24 h. Silicone pieces (cut from Bescita
+New Universal Silicone Desktop Computer Keyboard Cover Skin
+Protector Film, AX-11, China, with area of 4 cm × 7.5 cm) were im-
+mersed in an acetone/DI water solution (volume ratio of 1/1) con-
+taining 800 mg/L crystal violet (CV) and 35 mg/L [Au25(Cys)18] NCs.
+During the swelling process, the CV molecules and [Au25(Cys)18] NCs in
+the mixture penetrated into the silicone matrix as the polymer swelled.
+After collection of the polymer from the solution, the silicone shrank
+and CV molecules and [Au25(Cys)18] NCs remained within the polymer
+matrix. Two samples of [Au25(Cys)18] NCs obtained at 1-day and 3-days
+of continuous operation of the set-up were used. The details of speciﬁc
+silicone coupon preparation are shown in the SI. The antimicrobial
+activity of control and treated silicone coupons were tested against
+Staphylococcus aureus 8425-4 in white light. The light intensity of the
+white lamp was ~312 lx on average. One of the bacterial colonies
+grown on Mannitol salt agar (Oxoid Ltd) was inoculated into Brain-
+Heart-Infusion broth (BHI broth, Oxoid Ltd) and cultured in a shaking
+incubator (200 rpm) at 37 °C. After 18 h incubation, the bacteria were
+collected by centrifugation (5000 rpm), washed by 10 ml of phosphate
+buﬀer saline (PBS), and then centrifuged and washed to get bacteria
+resuspended in 10 ml of PBS. S. aureus suspension was diluted to get
+2.1 × 105 CFU/ml. 25 μl of the bacterial suspension was inoculated
+onto the treated coupons and then the coupons were placed in a petri
+dish with wet paper. The coupons were exposed to the white light
+source for 6 h and then they were located in 450 μl of PBS and vortexed
+for 30 s. After a serial dilution, 100 μl of bacterial suspension was plated
+onto Mannitol salt agar and incubated at 37 °C for 24 h. The bacteria
+colonies grown in the agar were counted. Statistical t-test of experi-
+mental data was performed using Microsoft Excel.
+3. Results and discussion
+3.1. Adaptation of the synthesis process from batch to ﬂow
+To the best of our knowledge, the single-step synthesis of atomically
+precise Au25 NCs in continuous ﬂow has not been investigated. This
+might be because the prolonged “size-focusing” time of up to several
+days is hard to adapt to a ﬂow system. The current challenge is in
+achieving good control of the fast reduction stage, as well as to facilitate
+the slow size evolution into atomically precise Au25 NCs in one stage
+synthesis (or indeed one tube or microﬂuidic chip). Based on these
+considerations, the relatively mild reducing agent CO, was chosen in
+order to better control the ﬁrst ‘fast reduction’ stage instead of cooling
+reactants as favoured by other researchers. A tube-in-tube contactor
+was employed to saturate an organic carrier with CO. Based on Henry’s
+law, the amount of dissolved gas in the liquid at equilibrium is pro-
+portional to its partial pressure in the gas phase [21]. Therefore the
+concentration of CO could be tuned by pressurising the microﬂuidic
+system. Heptane, which boasts a higher CO solubility (nearly 10 times)
+than water [22], could act as a CO reservoir to continuously provide
+reducing agent to the aqueous segments. The CO concentration proﬁle
+in heptane was calculated using COMSOL (see SI) [23]. The simulation
+showed that the 2 m Teﬂon AF-2400 tube was enough to saturate the
+heptane with 58.4 mM ﬁnal concentration of CO at 500 kPa. This is
+signicantly higher than the CO amount required to reduce the gold
+precursor (0.16 mol of CO per mol of gold precursor) [18] for all ex-
+perimental condtions employed in this work. Additionally, the CFI
+provided a compact way of coiling the reactor, having the potential to
+enhance the mixing between the liquid phases [24]. Thus, the reaction
+could be precisely controlled as each segment could be regarded as an
+individual reactor and nearly identical reaction conditions (ﬂow pattern
+with average aqueous droplet length ~2.5 mm and heptane slug
+length ~ 4.5 mm (see Fig. S3).
+A preliminary study for the adaptation of synthesis from batch to
+ﬂow was conducted at room temperature to investigate this liquid–li-
+quid segmented ﬂow system for the [Au25(Cys)18] NCs synthesis
+without the application of any heat. The UV–Vis spectra of the products
+at diﬀerent residence times (obtained by varying the ﬂow rates with
+H. Huang, et al.
+Chemical Engineering Journal 383 (2020) 123176
+3
+
+constant organic to aqueous ﬂow ratio of 2) are shown in Fig. 2. Unlike
+the single absorption peak observed with larger Au NPs (caused by
+surface plasmon resonance), the nanoclusters, which more closely re-
+semble molecules [25], have quantized energy levels from electronic
+transitions, and thus exhibit multiple absorption bands in UV–Vis
+spectroscopy [26]. The typical spectrum of thiolated Au25 NCs exhibits
+four peaks at the wavelengths of 400, 450, 670 and 770 nm [11]. The
+pronounced lift of the peak at 670 nm is typically used to determine
+whether the reaction has reached completion [14]. Yu et al. showed
+that the thiolate-Au(I) complexes could be fully reduced into Au NCs
+with mixed sizes during the ﬁrst 0.5 h of reaction [27], which is the
+required time for the ﬁrst ‘fast reduction’ phase of reaction. The peak at
+670 nm gradually appears after the second stage of slow “size-focusing”
+growth due to the increasing concentration of Au25 NCs. In Fig. 2, a
+weak absorbance peak at 670 nm was observed after 0.25 h in our
+microﬂuidic set-up. The absorption continued to increase with in-
+creasing residence time, indicating the increasing yield of Au25 NCs. At
+residence time of 2 h, a substantial absorption peak at 670 nm wave-
+length was observed. A 48 h reaction time was achieved by stopping the
+droplet ﬂow in the CFI. Compared to the peak absorbance at 48 h, the
+absorbance at 2 h was slightly lower, which indicated the slightly lower
+yield of [Au25(Cys)18]. Nevertheless, this preliminary trial of the
+adaptation for the synthesis of [Au25(Cys)18] from batch to ﬂow proved
+to be promising even without applying heat.
+3.2. Inﬂuence of temperature
+Even though the preliminary study demonstrated the feasibility of
+the Au25 NCs synthesis in ﬂow, a reaction time of more than 2 h is still
+unfavourably long for continuous ﬂow synthesis. Since heating has
+been demonstrated to increase the formation rate of Au25 NCs when
+using NaBH4 as reducing agent [14], experiments were carried out at a
+residence time of 15 min, but under diﬀerent elevated temperatures in
+the range 60–120 °C. The UV–Vis spectra of the synthesized products
+are shown in Fig. 3. Slightly higher absorbance at 450 nm was observed
+for the product obtained at 80 °C as compared to that at 60 °C, sug-
+gesting higher concentration of Au25 NCs. When the temperature was
+increased to 100 and 120 °C, no absorbance peak was observed at
+670 nm, which indicates the formation of multiple cluster sizes as
+suggested in previous literature [14]. Based on UV–Vis spectra, heating
+was demonstrated to accelerate the formation of Au25 NCs when using
+CO as reducing agent, and 80 °C was chosen as the optimal reaction
+temperature. Under this temperature the total reaction time could be
+decreased
+to
+15 min
+whilst
+maintaining
+the
+high
+purity
+of
+[Au25(Cys)18].
+3.3. Increase of productivity of the continuous ﬂow system
+Increase of productivity of the continuous ﬂow system for the
+[Au25(Cys)18] synthesis was ﬁrst investigated by increasing the ﬂow
+rate (i.e., decreasing residence time in the range 1.5–5.2 min). The
+product quality could be inﬂuenced if the residence time is too short to
+complete the synthesis. Thus, our aim was to ﬁnd the shortest residence
+time without aﬀecting the product quality. When increasing the ﬂow
+rate, the output solutions became turbid and could not be analysed
+directly by UV–Vis (shown in Fig. 4a). The turbidity was due to the
+signiﬁcant mixing capability of segmented ﬂow regimes inside CFIs
+(proven by comparable experiment using a wide coil tube instead of
+CFI, see the SI) resulting in the heptane forming microdroplets inside
+the aqueous phase. To precipitate the clusters and terminate the size
+evolution the sample at the outlet of the reactor was immediately mixed
+with acetone solution. After collection, it was ﬁltered with a PVDF
+syringe ﬁlter (0.2 µm pore size) and then re-dissolved in the appropriate
+amount of water to maintain the same concentration for further char-
+acterization. The results of UV–Vis show that the peak absorption at
+670 nm wavelength is nearly identical for the diﬀerent residence times
+considered. The residence time of 2.9 min was ﬁnally chosen as the
+optimal residence time, as it gave a better deﬁned absorption peak,
+which indicated the maximum amount of the Au25 NCs produced [18].
+Next, it was attempted to further increase the productivity of the
+continuous ﬂow system by increasing the Au precursor concentration in
+the stock solution at constant concentration ratio of cysteine to HAuCl4
+of 1.5. The product collected at the outlet of the reactor was treated
+immediately with acetone to precipitate and wash the clusters and it
+was subsequently ﬁltered. The clusters obtained were re-dissolved in DI
+water for UV–Vis measurement. As the absorbance value of synthesized
+[Au25(Cys)18] solution exceeded the linear detection range of the
+UV–Vis spectrometer, a diluted solution was used in this measurement
+and the data were multiplied by the dilution factor to produce Fig. 5a.
+The sharp absorption peak at 670 nm indicated the high concentration
+of [Au25(SR)18] with increasing initial concentration of gold precursor.
+There was a red shift of the peak observed (Fig. 5b) when the initial
+concentration of HAuCl4 was over 10 mM, which may be due to the
+formation of larger cluster sizes [10]. Hence, the UV–Vis results showed
+that the proposed system could produce high purity [Au25(Cys)18] with
+initial HAuCl4 concentration of up to 10 mM.
+3.4. Characterization of the synthesized [Au25(Cys)18] nanoclusters
+The particle size of the Au25 NCs obtained with 10 mM initial gold
+precursor concentration at 80 °C with a residence time of 2.9 min was
+Fig. 2. UV–Vis spectra of samples obtained with 1 mM initial concentration of
+HAuCl4 at room temperature and diﬀerent residence times (RT) by tuning the
+ﬂow rates of aqueous and organic streams with constant organic to aqueous
+ﬂow ratio of 2 and cysteine to gold precursor concentration ratio of 1.5.
+Fig. 3. UV–Vis spectra of Au nanoclusters produced using 1 mM HAuCl4 initial
+concentration at diﬀerent reactor temperatures. Residence time 15 min, aqu-
+eous ﬂow rate 0.064 ml/min, organic to aqueous ﬂow ratio 2 and cysteine to
+gold precursor concentration ratio 1.5.
+H. Huang, et al.
+Chemical Engineering Journal 383 (2020) 123176
+4
+
+analysed by SAXS. The average particle size obtained (see Fig. S5) was
+~1.5 nm. The particle size measured in our work was larger than
+measured sizes of Au25 NCs in organic solvent [28], which could be
+attributed to ionic strength-dependent aggregation of the gold clusters
+in water solvent during the 1 h SAXS measurement time [29]. IR spectra
+did not show the characteristic peak of S-H of the cysteine molecule for
+the solid Au25 NCs (Fig. S6), indirectly conﬁrming the Au-S interaction.
+ESI-MS was used to conﬁrm the composition of Au NCs formed. As
+shown in Fig. 6a, ESI-MS showed the most intense set of peaks at m/
+z ~ 2361.4 in a range of 1500–5200. An enlarged view of the spectrum
+in Fig. 6b shows that the base peak at m/z 2361.4 (#1) was accom-
+panied by a group of similar small peaks (#2 to #7) which correspond
+to H+ dissociation and Na+ coordination to [Au25(Cys)18]. Isotope
+pattern analysis of peak #1 in Fig. 6c showed that the peak spacing
+between 12C and 13C was about 0.33. This indicated that [Au25(Cys)18]
+carried three negative charges resulting in generation of [Au25(Cys)18-
+3H]3−, and molecular weight (MW) was about 7083.2 Da. Other
+identiﬁable ionized species (#2 to #7) were (#2) [Au25(Cys)18-
+4H + Na]3−(MW 7106.1), (#3) [Au25(Cys)18-5H + 2Na]3−(MW
+7128.1 Da), (#4) [Au25(Cys)18-6H + 3Na]3−(MW 7150.2 Da), (#5)
+[Au25(Cys)18-7H + 4Na]3−
+(MW
+7172.2 Da),
+(#6)
+[Au25(Cys)18-
+8H + 5Na]3−(MW 7194.1 Da) and (#7) [Au25(Cys)18-9H + 6Na]3−
+(MW 7216.2 Da) (see Fig. S7). Additionally, other sets of cluster peaks
+(shown in the SI) were observed at m/z ~ 1808.6 and 2411, indicating
+3−and 4−charged gas phase ions. All peaks corresponded to
+[Au25(Cys)18] dissociated with H+ or coordinated with Na+, K+ or Cs+
+which are common contaminant ions in ESI-MS [30]. The results from
+ESI-MS combined with those from UV–Vis, show that atomically precise
+[Au25(Cys)18] NCs were synthesized with high purity. The spectra by
+matrix-assisted laser desorption ionization time-of-ﬂight (MALDI-TOF)
+spectrometry (shown in Fig. S9) also indicated high purity of the syn-
+thesized [Au25(Cys)18], as no other peaks were found in the range of m/
+z up to 15000. The yield of [Au25(Cys)18] determined by MP-AES
+Fig. 4. UV–Vis spectra of Au nanoclusters produced using 1 mM HAuCl4 initial
+concentration at diﬀerent residence times (RT), recorded (a) immediately after
+collection and (b) after washing/precipitating and re-dissolving the clusters.
+Reactor temperature 80 °C, organic to aqueous ﬂow ratio 2 and cysteine to gold
+precursor concentration ratio 1.5. The insert in (a) is the cloudy solution formed
+from DI water and heptane segmented ﬂow at a residence time of 2.9 min.
+Fig. 5. (a) UV–Vis spectra and (b) the exact wavelength of the peak at ~670 nm
+of Au nanoclusters produced using diﬀerent initial concentration of HAuCl4.
+Residence time 2.9 min, reactor temperature 80 °C, organic to aqueous ﬂow
+ratio 2 and cysteine to gold precursor concentration ratio 1.5.
+Fig. 6. ESI mass spectra of synthesized [Au25(Cys)18]: (a) full-range spectra, (b)
+zoomed-in spectra in the m/z range of 2360–2440 and (c) comparison between
+theoretical and experimental isotope pattern of #1 peak of [Au25(Cys)18] ob-
+tained with 10 mM initial HAuCl4 concentration, residence time 2.9 min, re-
+actor temperature 80 °C, organic to aqueous ﬂow ratio 2 and cysteine to gold
+concentration ratio 1.5. The insert in (a) shows the colour of the synthesized
+[Au25(Cys)18] solution.
+H. Huang, et al.
+Chemical Engineering Journal 383 (2020) 123176
+5
+
+was > 90%, but there was no clear diﬀerence observed between the
+thiolate-Au(I) complexes and the Au25 NCs after dialysis. Nevertheless,
+the yield of [Au25(Cys)18] was estimated with the optical density of the
+Au NCs solution at the 670 nm in the UV–Vis proﬁle [10,11], and the
+value of ~0.34 suggests a [Au25(Cys)18] yield of ~95%.
+Through the above studies, it was demonstrated that it took only
+3 min to synthesize high-purity Au25 NCs in the ﬂow system at 80 °C
+with ten times (10 mM) the original concentration (1 mM) of the gold
+precursor compared to previously reported work in batch system [11].
+The total throughput of the [Au25(Cys)18] in our ﬂow system was in-
+creased to ~0.9 gAu/day. To demonstrate the robustness of the devel-
+oped process, a long term operation ﬂow experiment was performed
+lasting 3 days. As can be seen by ESI-MS in Fig. 7, the reactor system
+produced Au NCs of consistently high purity, throughout this period.
+3.5. Antimicrobial testing
+Two samples of [Au25(Cys)18] obtained from continuous operation
+times of 1-day and 3-days were used for photobactericidal enhancement
+of crystal violet treated silicone. Through a 24 h swell-encapusliation-
+shrink process, three types of silicone coupons containing [Au25(Cys)18]
+only, crystal violet only (CV) and crystal violet together with
+[Au25(Cys)18] (CV&[Au25(Cys)18]) were prepared and they were tested
+against Staphylococcus aureus, which is Gram-positive bacterium, in
+white light. Fig. 8 shows the antimicrobial activity of the coupons
+against S. aureus after 6 h incubation in white light. A reduction in the
+number of viable bacteria was not observed on the 1-day [Au25(Cys)18],
+3-day [Au25(Cys)18] and CV coupons compared to control (P-value >
+0.1). However, a statistically signiﬁcant reduction was observed on the
+CV&1-day [Au25(Cys)18], and CV&3-day [Au25(Cys)18] coupons (P-
+value < 0.05). Compared to the control experiment, 1.78 and 1.66 log
+reductions were observed on CV&1-day Au NCs and CV&3-day
+[Au25(Cys)18], respectively. Additionally, statistically signiﬁcant dif-
+ference
+between
+the
+CV&1-day
+[Au25(Cys)18]
+and
+CV&3-day
+[Au25(Cys)18] was not observed (P-value > 0.1).
+Au25 NCs are known to have intrinsic antimicrobial activity [31].
+However, the NCs encapsulated in silicone did not exhibit antimicrobial
+activity. This might be because of the diﬀerent ligand or the fact that
+the number of the clusters encapsulated into the polymer was not en-
+ough to cause a reduction of bacterial viability. Despite the fact that
+crystal violet is a light-activated antimicrobial agent [32], the CV en-
+capsulated polymer did not show photobactericial activity after 6 h
+exposure of white light. However, use of [Au25(Cys)18] together with
+CV signiﬁcantly enhanced photobactericidal activity. It is speculated
+that an interaction of [Au25(Cys)18] and CV reinforces photochemical
+reactions, resulting in signiﬁcant increase in the concentration of re-
+active oxygen species killing bacteria [33]. Through this antimicrobial
+test, it was conﬁrmed that the 3-day synthesis process yielded stable
+Fig. 7. ESI mass spectra of synthesized [Au25(Cys)18] obtained with 10 mM initial concentration of gold precursor at diﬀerent operation times (from 4 min to 3 days),
+residence time 2.9 min, reactor temperature 80 °C, organic to aqueous ﬂow ratio 2 and cysteine to gold precursor concentration ratio 1.5.
+Fig. 8. Antimicrobial activity of control, and
+treated silicone coupons after 6 h exposure of
+white light: Control, 1-day [Au25(Cys)18], 3-day
+[Au25(Cys)18], CV, CV&1-day [Au25(Cys)18] and
+CV&3-day [Au25(Cys)18] encapsulated silicone
+coupons. All experiments were performed with
+white light illumination of 312 lx at average
+temperature of 20 °C.
+H. Huang, et al.
+Chemical Engineering Journal 383 (2020) 123176
+6
+
+quality of [Au25(Cys)18].
+In previous studies, it was shown that addition of 2 nm Au NPs into
+polymer
+containing
+crystal
+violet
+signiﬁcantly
+enhanced
+photo-
+actericidal activity [34,35]. However, to obtain satisfactory perfor-
+mance, an intense white light source (> 3300 lx) and high concentra-
+tion of 2 nm Au NPs suspension (1000 mg/L) were required. In the
+present study, the solution used to prepare the antimicrobial silicone
+coupons contained only 35 mg/L [Au25(Cys)18] and the white light
+intensity was ~312 lx. This indicates that the [Au25(Cys)18] are more
+eﬃcient at reinforcing photobactericial activity of crystal violet than
+2 nm gold NPs.
+4. Conclusion
+A rapid synthesis of atomically precise [Au25(Cys)18] nanoclusters
+(NCs) was demonstrated in a microﬂuidic segmented ﬂow system. The
+mild reducing agent, CO, gave a gentle reduction environment and
+better control on the NCs synthesis. The utilization of a tube-in-tube set-
+up guaranteed that the CO was contained inside the tube, resulting in a
+much safer synthetic procedure. Compared to typical reaction times of
+few hours or even days in batch systems, operation at elevated tem-
+perature accelerated the size evolution and signiﬁcantly shortened the
+total reaction time to as little as 3 min with high purity and yield. In
+addition, the throughput could be increased to 0.9 gAu per day, and the
+process was shown to provide consistent quality gold NCs over a period
+of 3 days. These results demonstrate a high potential for translation of
+this method to an industrial enviroment. Regarding the application of
+[Au25(Cys)18], it was oberved that Au NCs addition reinforced sig-
+niﬁcantly the photobactericidal activity of crystal violet encapsulated
+silicone against S. aureus in white light. More speciﬁcally, [Au25(Cys)18]
+NCs enhanced the bactericidal activity of photosensitizer surfaces at
+lower concentration (35 mg/L vs. 1000 mg/L) and light intensity (312
+lx vs. 3300 lx) compared to 2 nm gold NPs, and hence are more eco-
+nomical for antimicrobial application to prevent contamination of
+hospital surfaces.
+Declaration of Competing Interest
+The authors declare that they have no known competing ﬁnancial
+interests or personal relationships that could have appeared to inﬂu-
+ence the work reported in this paper.
+Acknowledgements
+This work was supported by EPSRC, UK (grant EP/M015157/1). HH
+acknowledges the ﬁnancial support from the UCL-CSC Joint Scholarship
+programme. We thank the UK Catalysis Hub for the use of MP-AES
+equipment and support provided via our membership of the UK
+Catalysis Hub Consortium and funded by EPSRC (grants EP/K014706/
+2, EP/K014668/1, EP/K014854/1, EP/K014714/1 and EP/M013219/
+1). The authors gratefully acknowledge support for SAXS measurements
+from the EPSRC “Frontier Engineering” Centre for Nature Inspired
+Engineering
+(EP/K038656/1).
+We also
+would
+like to
+thank
+Dr
+Christopher Windle (University College London) for his support with
+the IR measurements.
+Appendix A. Supplementary data
+Supplementary data to this article can be found online at https://
+doi.org/10.1016/j.cej.2019.123176.
+References
+[1] R. Jin, C. Zeng, M. Zhou, Y. Chen, Atomically precise colloidal metal nanoclusters and
+nanoparticles: fundamentals and opportunities, Chem. Rev. 116 (2016) 10346–10413.
+[2] T.G. Schaaﬀ, G. Knight, M.N. Shaﬁgullin, R.F. Borkman, R.L. Whetten, Isolation and se-
+lected properties of a 10.4 kDa gold: glutathione cluster compound, J. Phys. Chem. B 102
+(1998) 10643–10646.
+[3] M.H. Muhammed, T. Pradeep, Luminescent Quantum Clusters of Gold as Bio-labels,
+Advanced Fluorescence Reporters in Chemistry and Biology II, Springer, 2010, pp.
+333–353.
+[4] F.P. Zamborini, J.F. Hicks, R.W. Murray, Quantized double layer charging of nanoparticle
+ﬁlms assembled using carboxylate/(Cu2+ or Zn2+)/carboxylate bridges, J. Am. Chem.
+Soc. 122 (2000) 4514–4515.
+[5] G. Li, R. Jin, Atomically precise gold nanoclusters as new model catalysts, Acc. Chem.
+Res. 46 (2013) 1749–1758.
+[6] Y. Shichibu, Y. Negishi, H. Tsunoyama, M. Kanehara, T. Teranishi, T. Tsukuda, Extremely
+high stability of glutathionate-protected Au25 clusters against core etching, Small 3
+(2007) 835–839.
+[7] X. Kang, H. Chong, M. Zhu, Au25(SR)18: the captain of the great nanocluster ship,
+Nanoscale 10 (2018) 10758–10834.
+[8] M. Brust, M. Walker, D. Bethell, D.J. Schiﬀrin, R. Whyman, Synthesis of thiol-derivatised
+gold nanoparticles in a two-phase liquid-liquid system, J. Chem. Soc., Chem. Commun.
+(1994) 801–802.
+[9] C.J. Murphy, T.K. Sau, A.M. Gole, C.J. Orendorﬀ, J. Gao, L. Gou, S.E. Hunyadi, T. Li,
+Anisotropic metal nanoparticles: synthesis, assembly, and optical applications, J. Phys.
+Chem. B 109 (2005) 13857–13870.
+[10] Y. Negishi, K. Nobusada, T. Tsukuda, Glutathione-protected gold clusters revisited:
+Bridging the gap between gold(I)−thiolate complexes and thiolate-protected gold na-
+nocrystals, J. Am. Chem. Soc. 127 (2005) 5261–5270.
+[11] Y. Yu, Z. Luo, Y. Yu, J.Y. Lee, J. Xie, Observation of cluster size growth in CO-directed
+synthesis of Au25(SR)18 nanoclusters, ACS Nano 6 (2012) 7920–7927.
+[12] Z. Wu, J. Suhan, R. Jin, One-pot synthesis of atomically monodisperse, thiol-functiona-
+lized Au25 nanoclusters, J. Mater. Chem. 19 (2009) 622–626.
+[13] R. Jin, H. Qian, Z. Wu, Y. Zhu, M. Zhu, A. Mohanty, N. Garg, Size focusing: a methodology
+for synthesizing atomically precise gold nanoclusters, J. Phys. Chem. Lett. 1 (2010)
+2903–2910.
+[14] T. Chen, Q. Yao, X. Yuan, R.R. Nasaruddin, J. Xie, Heating or cooling: temperature eﬀects
+on the synthesis of atomically precise gold nanoclusters, J. Phys. Chem. C 121 (2017)
+10743–10751.
+[15] H. Qian, R. Jin, Controlling nanoparticles with atomic precision: the case of
+Au144(SCH2CH2Ph)60, Nano Lett. 9 (2009) 4083–4087.
+[16] S.K. Katla, J. Zhang, E. Castro, R.A. Bernal, X.J. Li, Atomically-precise Au25(SG)18 na-
+noclusters: rapid single-step synthesis and application in photothermal therapy, ACS
+Appl. Mater. Interfaces 10 (2018) 75–82.
+[17] X. Yuan, B. Zhang, Z. Luo, Q. Yao, D.T. Leong, N. Yan, J. Xie, Balancing the rate of cluster
+growth and etching for gram-scale synthesis of thiolate-protected Au25 nanoclusters with
+atomic precision, Angew. Chem. 126 (2014) 4711–4715.
+[18] Z. Luo, V. Nachammai, B. Zhang, N. Yan, D.T. Leong, D.-E. Jiang, J. Xie, Toward un-
+derstanding the growth mechanism: tracing all stable intermediate species from reduction
+of Au(I)–thiolate complexes to evolution of Au25 nanoclusters, J. Am. Chem. Soc. 136
+(2014) 10577–10580.
+[19] P.W. Stone, Economic burden of healthcare-associated infections: an American perspec-
+tive, Expert Rev. Pharmacoecon. Outcomes. Res. 9 (2009) 417–422.
+[20] D.J. Weber, D. Anderson, W.A. Rutala, The role of the surface environment in healthcare-
+associated infections, Curr. Opin. Infect. Dis. 26 (2013) 338–344.
+[21] G. Wu, E. Cao, S. Kuhn, A. Gavriilidis, A novel approach for measuring gas solubility using
+a tube-in-tube membrane contactor, Chem. Eng. Technol. 40 (2017) 2346–2350.
+[22] R.W. Cargill, Solubility data series. Carbon monoxide, Pergamon Press, Oxford, 1990.
+[23] L. Yang, K.F. Jensen, Mass transport and reactions in the tube-in-tube reactor, Org.
+Process Res. Dev. 17 (2013) 927–933.
+[24] E. López-Guajardo, E. Ortiz-Nadal, A. Montesinos-Castellanos, K.D. Nigam, Coiled ﬂow
+inverter as a novel alternative for the intensiﬁcation of a liquid-liquid reaction, Chem.
+Eng. Sci. 169 (2017) 179–185.
+[25] I. Chakraborty, T. Pradeep, Atomically precise clusters of noble metals: emerging link
+between atoms and nanoparticles, Chem. Rev. 117 (2017) 8208–8271.
+[26] T. Schaaﬀ, M. Shaﬁgullin, J. Khoury, I. Vezmar, R. Whetten, W. Cullen, P. First,
+C. Gutierrez-Wing, J. Ascensio, M. Jose-Yacaman, Isolation of smaller nanocrystal Au
+molecules: robust quantum eﬀects in optical spectra, J. Phys. Chem. B 101 (1997)
+7885–7891.
+[27] Y. Yu, J. Li, T. Chen, Y.N. Tan, J. Xie, Decoupling the CO-reduction protocol to generate
+luminescent Au22(SR)18 nanocluster, J. Phys. Chem. C 119 (2015) 10910–10918.
+[28] Y. Bao, Interaction between Au25 Monolayer Protected Clusters with Lipid Nanodiscs,
+[Master Thesis] University of Connecticut, 2015.
+[29] M. Azubel, J. Koivisto, S. Malola, D. Bushnell, G.L. Hura, A.L. Koh, H. Tsunoyama,
+T. Tsukuda, M. Pettersson, H. Häkkinen, R.D. Kornberg, Electron microscopy of gold
+nanoparticles at atomic resolution, Science 345 (2014) 909–912.
+[30] B.O. Keller, J. Sui, A.B. Young, R.M. Whittal, Interferences and contaminants encountered
+in modern mass spectrometry, Anal. Chim. Acta 627 (2008) 71–81.
+[31] K.Y. Zheng, M.I. Setyawati, D.T. Leong, J.P. Xie, Antimicrobial gold nanoclusters, ACS
+Nano 11 (2017) 6904–6910.
+[32] G.B. Hwang, E. Allan, I.P. Parkin, White light-activated antimicrobial paint using crystal
+violet, ACS Appl. Mater. Interfaces 8 (2016) 15033–15039.
+[33] S. Noimark, E. Salvadori, R. Gomez-Bombarelli, A.J. MacRobert, I.P. Parkin, C.W.M. Kay,
+Comparative study of singlet oxygen production by photosensitiser dyes encapsulated in
+silicone: towards rational design of anti-microbial surfaces, Phys. Chem. Chem. Phys. 18
+(2016) 28101–28109.
+[34] T.J. Macdonald, K. Wu, S.K. Sehmi, S. Noimark, W.J. Peveler, H. du Toit, N.H. Voelcker,
+E. Allan, A.J. MacRobert, A. Gavriilidis, I.P. Parkin, Thiol-capped gold nanoparticles
+swell-encapsulated into polyurethane as powerful antibacterial surfaces under dark and
+light conditions, Sci. Rep. 6 (2016) 39272.
+[35] S. Noimark, E. Allan, I.P. Parkin, Light-activated antimicrobial surfaces with enhanced
+eﬃcacy induced by a dark-activated mechanism, Chem. Sci. 5 (2014) 2216–2223.
+H. Huang, et al.
+Chemical Engineering Journal 383 (2020) 123176
+7

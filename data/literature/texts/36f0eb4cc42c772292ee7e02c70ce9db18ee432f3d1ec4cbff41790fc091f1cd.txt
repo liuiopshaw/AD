@@ -1,0 +1,1121 @@
+Lethal Interactions of Atomically Precise Gold Nanoclusters and
+Pseudomonas aeruginosa and Staphylococcus aureus Bacterial Cells
+Denver P. Linklater, Xavier Le Guével, Gary Bryant, Vladimir A. Baulin, Eva Pereiro,
+Palalle G. Tharushi Perera, Jason V. Wandiyanto, Saulius Juodkazis, and Elena P. Ivanova*
+Cite This: ACS Appl. Mater. Interfaces 2022, 14, 32634−32645
+Read Online
+ACCESS
+Metrics & More
+Article Recommendations
+*
+sı
+Supporting Information
+ABSTRACT: Ultrasmall metal nanoclusters (NCs) are employed in an array of diagnostic
+and therapeutic applications due to their tunable photoluminescence, high biocompati-
+bility, polyvalent effect, ease of modification, and photothermal stability. However, gold
+nanoclusters’ (AuNCs’) intrinsically antimicrobial properties remain poorly explored and
+are not well understood. Here, we share an insight into the antimicrobial action of
+atomically precise AuNCs based on their ability to passively translocate across the bacterial
+membrane. Functionalized by a hydrophilic modified-bidentate sulfobetaine zwitterionic
+molecule (AuNC-ZwBuEt) or a more hydrophobic monodentate-thiolate, mercaptohex-
+anoic acid (AuNC-MHA) molecule, 2 nm AuNCs were lethal to both Gram-negative
+Pseudomonas aeruginosa and Gram-positive Staphylococcus aureus bacteria. The bactericidal
+efficiency was found to be bacterial strain-, time-, and concentration-dependent. The direct
+visualizations of the translocation of AuNCs and AuNC−cell and subcellular interactions
+were investigated using cryo-soft X-ray nano-tomography, transmission electron
+microscopy (TEM), and scanning TEM energy-dispersive spectroscopy analyses. AuNC-MHA were identified in the bacterial
+cytoplasm within 30 min, without evidence of the loss of membrane integrity. It is proposed that the bactericidal effect of AuNCs is
+attributed to their size, which allows for efficient energy-independent translocation across the cell membrane. The internalization of
+both AuNCs caused massive internal damage to the cells, including collapsed subcellular structures and altered cell morphology,
+leading to the eventual loss of cellular integrity.
+KEYWORDS: ultrasmall metal nanoclusters, gold nanoclusters, antimicrobial effect, nanotoxicity, translocation
+1. INTRODUCTION
+Gold nanoclusters (AuNCs), consisting of an assembly of a
+defined number of atoms (typically between tens and
+hundreds), exhibit distinct electronic states enabling tunable
+photoluminescence from the ultraviolet (UV) to the near
+infrared (NIR) wavelength regions.1 Owing to their photo-
+luminescence properties in the NIR/shortwave infrared region,
+AuNCs can be tracked in real time in various organs, making
+them an important diagnostic and therapeutic tool.2,3 For
+example, it has recently been demonstrated that ultra-small
+AuNCs (core diameter < 2 nm), protected by thiolate ligands,
+facilitate excellent in vivo computed tomography imaging,
+particularly of tumors.4−7
+AuNCs have also recently been found to act as potent
+antimicrobial agents toward both Gram-negative8,9 and Gram-
+positive bacteria.10 For therapeutic applications, AuNCs
+conjugated with various surface ligands have been extensively
+researched as antimicrobial agents owing to their high
+biocompatibility, polyvalent effect, ease of modification, and
+photothermal stability.11,12 Many research groups have focused
+on employing AuNCs conjugated to antibiotics, amino acids,
+antibacterial peptides, and quaternary ammonium compounds
+to demonstrate their antibacterial efficacy.13−16 The anti-
+bacterial action of antimicrobial-conjugated AuNCs has been
+attributed to their ultra-small size and high surface area
+allowing for an increased opportunity for interaction with
+bacteria in suspension and efficient binding of antibacterial
+small molecules at the bacterial membrane.16,17 Nevertheless,
+AuNCs are also intrinsically antimicrobial.10 Positively charged
+AuNCs may promote antibacterial efficacy due to electrostatic
+adsorption at the negatively charged cell wall, leading to the
+disruption of membrane integrity, increased membrane
+permeability, and dissipation of membrane potential.11,18,19
+Nevertheless, recent investigations of the antibacterial action of
+AuNCs protected by ligands with increasingly negative surface
+charge showed that the more negatively charged AuNCs
+possessed greater lethal action.17 Zheng et al. recently ascribed
+the bactericidal properties of 0.1 mM−2 nm AuNCs to their
+cellular internalization leading to the inducement of a
+Received:
+March 11, 2022
+Accepted:
+June 14, 2022
+Published: June 27, 2022
+Research Article
+www.acsami.org
+© 2022 American Chemical Society
+32634
+https://doi.org/10.1021/acsami.2c04410
+ACS Appl. Mater. Interfaces 2022, 14, 32634−32645
+Downloaded via OCEAN UNIV OF CHINA on June 23, 2026 at 08:35:27 (UTC).
+See https://pubs.acs.org/sharingguidelines for options on how to legitimately share published articles.
+
+metabolic imbalance in cells, reactive oxygen species (ROS)
+production, and consequent bacterial death; however, AuNC
+translocation was not explicitly shown.10,20 In another recent
+work, glutathione-conjugated AuNCs were shown by in situ
+liquid cell TEM experiments to aggregate at the bacterial
+membrane and then penetrate the cell, causing an increase in
+intracellular ROS and destroying the membrane integrity.21
+Contrastingly, other studies on the bactericidal action of ultra-
+small (3 nm) Au nanoparticles (NPs) showed no production
+of intracellular ROS.22,23 Similarly, investigations of the
+photosensitizing capabilities of AuNCs in bacteria showed
+that the ultra-small particles are highly capable of quenching
+any ROS produced.24 Notably, while ROS generation is a
+reliable indication of the metabolic imbalance of cells
+(endogenous redox imbalances can be caused by damage,
+which leads to an inability of the cell to maintain redox
+homeostasis),25 these indirect methods to study the anti-
+microbial action of AuNCs have been unable to resolve single
+particles and their fate within the cell. Thus, the limited
+understanding of the antibacterial action opens the door to
+further investigations toward elucidating the antibacterial
+nature of AuNCs.
+At the cellular level, AuNC size, surface chemistry, and
+hydrophobicity are identified to influence particle interactions
+with biological components and cell particle uptake.26−29
+Indeed, the high diffusivity of AuNCs across biological barriers
+at the tissue and cellular levels has been reported.4,30,31
+Dissipative particle dynamics were previously used to shed
+light on the two main translocation pathways of nanoparticles
+of different shape by active and passive physical penetration
+into a cell.32 Computer simulations concluded that the shape
+effect of nanoparticles was negligible at very small nanoparticle
+size (radius r = 0.8 nm), but as the particle increased in volume
+and radius (r = 3.2 nm), effects on penetration became more
+obvious. A similar conclusion was made from the simulation of
+equilibrium insertion of 2.3 nm objects into a lipid bilayer.33
+The effect of shape was found to be negligible for small radii
+particles and their cell−surface interactions are largely
+governed by surface properties. The small size (<2 nm) of
+AuNCs provide them with a very high surface area versus
+volume ratio and high diffusivity that allows them to
+translocate passively inside the cell by Brownian motion.34
+However, further clarification is required as to the effect of the
+AuNC functionality on their targeting, biodistribution, and
+toxicity toward bacteria. While the bactericidal effect of
+positively charged, pyrimidine-capped 3 nm AuNPs was
+reported due to multiple sub-cellular interactions,8 to the
+best of our knowledge, the nature of the bactericidal efficacy of
+AuNCs of variable degree of hydrophobicity and/or lip-
+ophilicity remains unclear. Thus, in the current work, we
+investigated the antibacterial mode of action of 2 nm AuNCs
+modified with either a moderately hydrophobic monodentate-
+thiolated molecule or a more hydrophilic modified-bidentate
+sulfobetaine zwitterionic molecule to control cell-membrane
+interactions. The fate of the AuNCs in both bacterial species
+Staphylococcus aureus CIP 65.8T and Pseudomonas aeruginosa
+ATCC 9721 was elucidated using a combination of advanced
+electron microscopy such as TEM, scanning TEM energy-
+dispersive spectroscopy (STEM-EDS), and cryo-soft X-ray
+tomography (cryo-SXT).
+2. RESULTS
+2.1. Synthesis and Characterization of AuNCs. AuNCs
+generally possess a metal core size between 1 and 3 nm, with
+the Au core protected by ligand shells (Figure 1). In this study,
+Au25NCs were synthesized with a hydrophilic monodentate-
+Figure 1. Synthesis and characterization of AuNCs. (A) Cartoon of AuNC-MHA and AuNC-ZwBuEt. (B) TEM micrographs of AuNC-MHA and
+AuNC-ZwBuEt. (C) Fit of SAXS scattering curve to a square prism model, achieving shape parameters for AuNC-MHA of a square prism with 0.73
+nm sides and a length of 2.27 nm and for AuNC-ZwBuEt, a square prism with sides of 0.79 nm and a length of 2.32 nm. (D) UV−vis absorbance
+spectra of AuNCs in water.
+ACS Applied Materials & Interfaces
+www.acsami.org
+Research Article
+https://doi.org/10.1021/acsami.2c04410
+ACS Appl. Mater. Interfaces 2022, 14, 32634−32645
+32635
+
+thiolated molecule, mercaptohexanoic acid (MHA), containing
+a short aliphatic chain with a terminal carboxyl group, which
+decorated the particle surface with negatively charged surface
+groups (ζ = −21.3 ± 0.5 mV), without significantly increasing
+the particle size due to the very thin organic shell.35−37
+Another thiolated ligand, ZwBuEt, was used to produce
+AuNCs with a lower surface hydrophobicity than AuNC-MHA
+while keeping a negative charge surface (ζ = −10.0 ± 0.2 mV)
+and good colloidal stability in water and in biological media, as
+we reported previously.27 Additionally, reported log P values
+for the surface ligands (MHA: 1.43; ZwBuEt: −3.45) confirm a
+large difference in the lipophilicity of the capping molecules
+(the more positive value corresponding to a greater lip-
+ophilicity). Further characteristics of the AuNCs are provided
+in Table S1.
+Small-angle X-ray scattering (SAXS) was used to approx-
+imate the size and shape of the particles, assuming a square
+prism model (i.e., a faceted rod) (Figure 1C). The AuNCs
+were determined to have a length of ∼2.3 nm and a width of
+∼0.75 nm, with slight differences between the samples. Both
+AuNC-MHA and AuNC-ZwBuEt were found to have a faceted
+rod-shape geometry. A similar rod-like structure has been also
+reported for Au25 and Au37 NCs that were stabilized by small
+thiolated molecules.38−40 The SAXS measurements confirmed
+the AuNC suspensions remained stable over the course of the
+4 h measurement. AuNCs coated with zwitterionic molecules
+Figure 2. Antibacterial activity of AuNCs as a function of the concentration toward (A) S. aureus and (B) P. aeruginosa as determined by CFU
+mL−1. Bacteria were exposed to AuNCs for 2 h. Statistical significance is denoted by ***p < 0.001, **p < 0.01, and *p < 0.05, n = 5. ϕ indicates
+that the measurement was below the detection limit (minimum bactericidal concentration). Error bars are 1 standard deviation.
+Figure 3. (A) TEM micrographs of S. aureus and P. aeruginosa incubated with no AuNCs (control) and 100 μg Au mL−1 AuNC-MHA and AuNC-
+ZwBuEt, respectively, for 2 h. Black arrows point to the bacterial structural damage incurred during incubation; white arrows indicate intracellular
+AuNCs. AuNC-MHA localized in cytosolic-particle aggregates inside the bacterial cells, as seen in figure (Aii,vi). The inset micrographs show
+AuNC-cytoplasm aggregates (white arrows) and membrane blebbing (black arrows) in response to bacterial interaction with AuNC-MHA. (B)
+SEM micrographs of P. aeruginosa morphology following 2 h of incubation with no AuNCs (control) and 100 μg Au mL−1AuNC-ZwBuEt and
+AuNC-MHA, respectively. No AuNCs are observed to be bound externally to P. aeruginosa cells; however, AuNCs were observed bound to lysed
+cell cytoplasmic material, as observed in Figure S4. (C) Distribution of the diameter of AuNC-ZwBuEt particles observed external, E, to the cell
+(embedded in the peptidoglycan or membrane layers) and localized internally, I. ϕ refers to below detection limit. Statistics were performed on
+data analyzed from n = 50 cells per condition.
+ACS Applied Materials & Interfaces
+www.acsami.org
+Research Article
+https://doi.org/10.1021/acsami.2c04410
+ACS Appl. Mater. Interfaces 2022, 14, 32634−32645
+32636
+
+have been shown to be stable in water, buffer solution, and
+physiological medium for approximately 6 months.27,41
+The AuNCs showed the characteristic absorption patterns of
+ultra-small Au particles with strong UV absorption (Figure
+1D). AuNC-MHA exhibited a shoulder peak at 440 nm and an
+NIR band centered at 670 nm, commonly attributed to a 25
+Au atom crystal structure.37
+2.2. Ligand−Surface Hydrophobicity-Dependent
+Antibacterial Activity of AuNCs. The antibacterial efficacy
+of AuNC-MHA and AuNC-ZwBuEt toward infectious doses of
+Gram-positive S. aureus and Gram-negative P. aeruginosa
+bacteria was evaluated for a maximum incubation period of 2
+h at concentrations of 5−200 μg Au mL−1, as it was previously
+reported that a 2 h incubation time was sufficient for the
+assessment of the antimicrobial action of AuNCs.10,17,20 Viable
+cells were quantified by colony-forming units (CFUs) obtained
+via the plate counting technique (Figure 2).
+The AuNCs exhibited negligible antibacterial effect at
+concentrations <25 μg Au mL−1. At 25 μg Au mL−1, a
+significant drop in CFU mL−1 was recorded for both AuNCs
+(AuNC-MHA p = 0.01; AuNC-ZwBuEt p = 0.03) toward S.
+aureus (approximately 30% reduction in viable cells). A further
+6 and 15% reduction in viable bacteria was recorded at 50 μg
+Au mL−1 AuNC-MHA and AuNC-ZwBuEt, respectively. At
+larger concentrations (100 and 200 μg Au mL−1), the
+antibacterial efficacy of both AuNCs toward S. aureus
+plateaued. Interestingly, no significant difference in antimicro-
+bial efficacy toward S. aureus was observed between AuNC-
+MHA and AuNC-ZwBuEt. By contrast, AuNC-MHA and
+AuNC-ZwBuEt completely inhibited the proliferation of P.
+aeruginosa with a minimum bactericidal concentration (MBC)
+of 100 μg mL−1 (Figure 2B). While ≤25 μg Au mL−1, AuNC-
+MHA had little to no effect on the growth and proliferation of
+P. aeruginosa, 25 μg Au mL−1 of AuNC-ZwBuEt reduced the
+number of viable cells by approximately 45% (p = 0.0002).
+These results are in good agreement with the reduction in cell
+viability observed at higher bacterial densities (Figure S1).
+Dynamic antibacterial studies showed that as the dose of
+AuNCs increased, the antibacterial efficiency toward both S.
+aureus and P. aeruginosa increased over continued contact with
+bacterial cells in suspension (Figure S2), demonstrating both
+time- and dose-dependent antibacterial activity. At 200 μg Au
+mL−1, AuNC-MHA and AuNC-ZwBuEt inactivated 86 and
+100% of P. aeruginosa bacterial cells in suspension in 30 min,
+respectively. Generally, the results of the plate counting
+technique indicated that AuNC-MHA displayed greater
+bactericidal activity toward S. aureus and P. aeruginosa at all
+incubation times tested than its less hydrophobic counterpart,
+AuNC-ZwBuEt.
+2.3. Investigation of the Interaction between AuNCs
+and Subcellular Structures. A combination of comple-
+mentary electron microscopy techniques was used to directly
+visualize the cell membrane, cell morphology, cellular integrity,
+and AuNC interactions with subcellular structures at 2 h
+following incubation with 100 μg Au mL−1 (MBC) (Figure 3).
+Cross-sectional TEM analysis of bacteria incubated with
+AuNCs revealed significant morphological changes to the
+cytosol and a lack of homogeneity most likely due to the
+damage of intracellular structures of both S. aureus and P.
+aeruginosa bacterial cells. Both aggregates and single AuNC
+were observed within the bacterial cells at 2 h of incubation.
+TEM images showed the presence of a single AuNC or
+aggregates of AuNC with cytoplasmic material corresponding
+to the areas with black contrast (Figure 3A). Particle analysis of
+clusters of AuNC-ZwBuEt and AuNC-MHA associated with S.
+aureus and P. aeruginosa returned a wide size distribution of
+AuNCs, between 5 and 30 nm. The diameters of particles that
+are external (E) and internal (I) to the cells are shown in
+Figure 3C. Aggregates of AuNC-ZwBuEt of a minimum
+diameter of 8.5 nm and a maximum diameter of 25 nm
+(corresponding to 10−12 AuNCs) were observed to be
+embedded in the peptidoglycan layer and membranes of both
+S. aureus and P. aeruginosa, whereas internalized AuNC-
+ZwBuEt aggregates were estimated to have a mean diameter of
+8 ± 2 nm. By contrast, AuNC-MHA localized in cytosolic-
+particle aggregates inside the bacterial cells, as seen in Figure
+3Aii,vi, possessed a mean diameter of 5 ± 2 nm. The diameter
+of AuNC-MHA particle aggregates attached externally to the
+cell wall of S. aureus ranged widely from 8.2 to 33 nm (average
+diameter 19.1 ± 7.5 nm). No AuNC-MHA aggregates were
+observed external to P. aeruginosa cells. Detailed TEM analysis
+revealed that many P. aeruginosa and S. aureus cells possessed
+intact double membranes (Figure S3), indicating that AuNC-
+MHA may be translocating across the membrane. Indeed,
+Figure 4. Aligned and reconstructed cryo-SXT tomograms of the P. aeruginosa morphology following (A) 15 and (B) 60 min of interaction
+between bacteria and 100 μg Au mL−1 AuNCs. Green arrows indicate the presence of bacterial inclusions in bacteria incubated with AuNC-
+ZwBuEt. The black arrow indicates a 100 nm gold fiducial used for tomogram alignment.
+ACS Applied Materials & Interfaces
+www.acsami.org
+Research Article
+https://doi.org/10.1021/acsami.2c04410
+ACS Appl. Mater. Interfaces 2022, 14, 32634−32645
+32637
+
+analysis of both TEM and SEM micrographs showed that no
+AuNC-MHA aggregates were observed bound externally to the
+cell wall (Figure 3A,B). SEM analysis of P. aeruginosa
+morphology showed the collapse of the central region of the
+cell, without the obvious leakage of cytoplasmic material.
+2.4. Observation of the Translocation of AuNCs. In-
+depth TEM analysis showed that the AuNC-MHA cell
+interactions that led to non-viability in Gram-positive and
+Gram-negative bacteria may stem from particles binding
+internally and not at the cell membrane since many cells
+show the destruction of internal cell integrity while
+simultaneously possessing intact double membranes (Figure
+S3). Additionally, fluorescence microscopy was used to
+confirm the uptake of AuNC-ZwBuEt in P. aeruginosa cells
+by exploiting the intrinsic fluorescence of the AuNCs in the
+NIR region (Figures S5 and S6). Both AuNC-MHA and
+AuNC-ZwBuEt may be efficiently up-taken by bacteria,
+although their cell-membrane interactions appear to be highly
+surface ligand-dependent. Therefore, we used cryo-SXT to
+determine the initial interactions of AuNCs with P. aeruginosa
+cells at a shortened incubation time of 15 min. Cryo-SXT is
+advantageous over electron microscopy techniques because the
+cell can be imaged without the introduction of artifacts caused
+by fixation and staining procedures, and sectioning. P.
+aeruginosa cells interacting with 100 μg Au mL−1 AuNC-
+ZwBuEt for 15 min showed the presence of small internal
+inclusions22,23 (indicated by the green arrows in Figure 4). The
+presence of small internal inclusions was previously
+reported;22,23 however, it was not possible to identify AuNCs
+surrounding, or internal to, these inclusion bodies. The
+bacterial membrane was roughened, possibly from loss of
+turgor pressure, in comparison to the smooth cell membrane
+appearance of control cells (Figure S7). Similarly, P. aeruginosa
+bacteria incubated with AuNC-MHA exhibit a damaged
+morphology with wrinkling of the cell wall. In the case of
+single particles or small aggregates (<20 nm), the cryo-SXT
+technique may not resolve their presence inside the cell
+because the spatial resolution is limited to a 26 nm half-pitch.42
+After 1 h of incubation, P. aeruginosa cells treated with AuNC-
+ZwBuEt showed increased vacuole-like spaces. In the high-
+magnification image, many of the inclusion bodies had traveled
+to the outer perimeter of the cell, possibly in an attempt to
+efflux the AuNCs from the cell. P. aeruginosa cells treated with
+AuNC-MHA for 1 h appeared ruptured, in agreement with the
+above TEM images.
+Figure 5. STEM analysis of bacteria−AuNC interactions at 30, 60, and 120 min. (A) STEM-EDS confirmation of the presence of Au in S. aureus
+(top panel) and P. aeruginosa (bottom panel) after incubation with 100 μg Au mL−1 AuNC-MHA and AuNC-ZwBuEt for 60 min. Bacteria were
+exposed to 100 μg Au mL−1. Red arrows indicate observable aggregates of AuNCs. (B) STEM micrographs and corresponding EDS spectra
+obtained from the areas within the white circles to confirm the presence of Au for (C) P. aeruginosa and (D) S. aureus. EDS spectra obtained at
+different incubation points are shown in Figures S8−S11.
+ACS Applied Materials & Interfaces
+www.acsami.org
+Research Article
+https://doi.org/10.1021/acsami.2c04410
+ACS Appl. Mater. Interfaces 2022, 14, 32634−32645
+32638
+
+STEM-EDS analysis as another independent complementary
+technique was used to study the AuNC interaction with
+bacteria over 30, 60, and 120 min and to confirm the
+internalization of AuNC-MHA and AuNC-ZwBuEt at each
+investigated time point (Figure 5). EDS analysis detected
+AuNC-MHA internalized in P. aeruginosa by 30 min, whereas
+they were only localized inside S. aureus bacteria after 60 min
+of incubation (Figure 5C,D). Many AuNC-MHA aggregates
+observed in contact with S. aureus were found embedded in the
+outer peptidoglycan layer (Figure 5D), as previously
+determined via TEM (Figure 3A). For P. aeruginosa, at 30
+min, no obvious cellular damage occurred despite EDS
+confirmation of the dispersal of AuNC-MHA throughout the
+cell cytoplasm (Figure 5C); however, at 60 min, the bacteria
+exhibit loss of cytosolic contents and cellular integrity (Figure
+5A). Thus, we propose that intracellular accumulation of
+AuNC-MHA over the first 60 min of incubation led to internal
+damage by AuNC interaction with subcellular structures.
+AuNC-ZwBuEt aggregates were only visible attached to the
+outer peptidoglycan layers of S. aureus cells at 30 min of
+incubation (Figure 5B). However, at 60 min, AuNC-ZwBuEt
+were localized within the cytoplasm, and obvious internal
+degradation had occurred (Figure 5D). Conversely, AuNC-
+ZwBuEt were only detectable within P. aeruginosa cells at 120
+min of incubation.
+Additionally, in vitro tests to assess whether the con-
+densation of chromatin might occur because of the AuNC
+presence inside P. aeruginosa cells were conducted using the
+high-resolution Airyscan capability of a Zeiss confocal laser-
+scanning microscope. In agreement with TEM images, no
+changes to DNA localization were detected at 30 min of
+exposure to either AuNCs. However, following 60 min of
+exposure, some bacteria show the condensation of DNA
+material, clearly shown in Figure 6. Furthermore, DNA damage
+was assessed using a DNA ladder assay. No DNA
+fragmentation was visible via gel electrophoresis, and a higher
+proportion of DNA breaks were not observed (Figure S12;
+Table S2). To further confirm that AuNC-MHA and AuNC-
+ZwBuEt are not preferentially targeting bacterial DNA,
+bacteria were treated with AuNC functionalized with arginine
+(AuNC-Arg) (100 μg Au mL−1 for 1 h), stained with DAPI,
+and imaged under a fluorescence microscope (Figure S13).
+Arg-coated AuNPs are known to interact with, and bind to,
+DNA.43 Fluorescence micrographs reveal evidence of DNA
+damage via the filamentous appearance of P. aeruginosa cells
+because of an inability to correctly replicate.44 By contrast, no
+such replicative errors were observed during exposure of P.
+aeruginosa and S. aureus to AuNC-MHA and AuNC-ZwBuEt.
+Further examination of TEM images of P. aeruginosa incubated
+with AuNC-MHA revealed that the bacterial DNA, although
+condensed inside the cell, is not directly targeted by the
+Figure 6. (A) CLSM micrographs of P. aeruginosa incubated with 100 μg Au mL−1 AuNC-MHA and AuNC-ZwBuEt for 1 h. Yellow arrows
+indicate DNA or chromatin condensation within the cell. Scale bars are 5 μm. (B) TEM micrographs of P. aeruginosa incubated with 100 μg Au
+mL−1 AuNC-MHA for 1 h. Yellow outlines highlight the condensed nucleoids of the bacterial cell.
+ACS Applied Materials & Interfaces
+www.acsami.org
+Research Article
+https://doi.org/10.1021/acsami.2c04410
+ACS Appl. Mater. Interfaces 2022, 14, 32634−32645
+32639
+
+AuNCs, as evidenced by the retention of the bacterial nucleoid
+and appearance of cytosolic-AuNC aggregates in a separate
+area of the cell (Figure 6B). Thus, the antimicrobial action of
+AuNCs is not likely to be linked to the direct binding with
+nucleic acids. Alternatively, we suggest that the AuNCs may
+form protein complexes with the cytoskeletal network, causing
+the condensation of chromatin as shown in Figure 6.45
+3. DISCUSSION
+It has been commonly believed that more positively charged
+NPs will favor interaction with the negatively charged bacterial
+cell wall,46 leading to greater bactericidal efficacy; however,
+recent studies of thiolate-protected AuNCs have shown that
+more negatively charged AuNCs possess greater antimicrobial
+efficacy.17 In this work, there was no apparent difference
+between the overall antimicrobial efficacy toward S. aureus and
+P. aeruginosa bacteria of either AuNCs studied at 2 h; however,
+AuNC-MHA were able to kill both bacteria more quickly,
+possibly explained by an increased affinity of AuNC-MHA for
+interaction with the bacterial cell wall.47 Indeed, the
+bactericidal efficiency of the AuNCs was correlated to the
+direct translocation of the AuNCs into the cytoplasm. STEM-
+EDS analysis corroborated that the more potent antibacterial
+action of AuNC-MHA particles could be due to the efficiency
+with which they can enter the cell and bind to internal cell
+substructures. For example, where AuNC-ZwBuEt particles
+were observed to aggregate at the cell wall or become
+embedded in the membrane, more negatively charged (and
+more lipophilic) monodisperse AuNC-MHA were localized
+within the cell interior within 30 min (in P. aeruginosa).
+Indeed, AuNC-ZwBuEt showed negligible antibacterial activity
+toward P. aeruginosa within the first 30 min of incubation at
+concentrations lower than 200 μg Au mL−1.
+Additionally, the variation of antibacterial efficacy of AuNC-
+MHA and AuNC-ZwBuEt was shown to be strain-species-
+dependent. Our work demonstrates that Gram-negative P.
+aeruginosa bacteria were generally more susceptible to the
+antibacterial action of both AuNCs functionalized with either
+the monodentate-thiolate (AuNC-MHA) molecule or the
+modified-bidentate sulfobetaine zwitterionic molecule (AuNC-
+ZwBuEt) than Gram-positive S. aureus. The differences in
+cell−NP interactions between AuNC-MHA and AuNC-
+ZwBuEt and bacteria may be attributed to their respective
+surface functionalization (surface hydrophobicity/lipophilicity
+and surface charge). For example, changes to the AuNC
+surface hydrophobicity may be correlated to a greater or less
+efficient translocation across the peptidoglycan and membrane
+layers of the bacterial cells.10,17,48 AuNPs protected by solution
+facing carboxylic acid groups, such as 6-MHA, are highly stable
+in water and are not easily driven to aggregate by hydrogen
+bonding.49 Additionally, when comparing surface ligand
+properties (Table S1), MHA possess a log P value of 1.43 in
+comparison to −3.45 for ZwBuEt, highlighting the increased
+lipophilicity of the compound. In turn, S. aureus possess a thick
+peptidoglycan layer that may inhibit the efficient translocation
+of small particles or cause AuNCs to aggregate at the cell wall,
+becoming embedded. Previous reports of the antibacterial
+action of silver ions have demonstrated that, for Gram-negative
+bacteria, the inadequate thickness of the cell wall (composed of
+a thin 8 nm inner peptidoglycan layer and a 1−3 nm outer
+layer of liposaccharides) increases their susceptibility to the
+uptake of silver ions. By contrast, Gram-positive bacteria are
+resistant to the antimicrobial action of silver ions due to the
+increased thickness of their cell wall (consisting of a thick 80
+nm peptidoglycan layer composed of teichoic acids).46
+The relationship between AuNC−cell membrane interaction
+and surface charge is less clear. Simple electrostatic arguments
+propose that oppositely charged NPs and membranes favor the
+formation of NP−lipid complexes, often leading to transient
+membrane damage or lipid extraction.50,51 However, NP
+toxicity can occur even when the membrane and the NP
+have the same charge.52,53 Furthermore, regardless of charge,
+both cationic and anionic AuNPs with a core diameter
+between 2 and 8 nm have been shown to passively interact
+with lipid membranes.54,55 Recently, it was shown that the
+integrity of neutral (zwitterionic) lipid membranes was not
+altered by cationic or anionic thiol-protected AuNPs of 3−4
+nm core diameter,56 suggesting that factors other than charge
+(like NP shape and size) are more likely to influence AuNC−
+membrane interactions.
+In this study, internalized aggregates of AuNCs were smaller
+than 8 nm (mean diameter of 5 nm), whereas those embedded
+in the peptidoglycan layer had a minimum diameter of 8.5 nm.
+Computational modeling has shown that small hydrophobic
+NPs (diameter < 10 nm) can penetrate the bilayer but become
+trapped in the membrane.57 Furthermore, combined numerical
+and experimental studies have shown that hydrophobic NPs of
+diameter d > 5 nm (but less than 10 nm) can translocate
+passively through the lipid bilayer, and those NPs of d ≤5 nm
+are trapped in the bilayer core and can only proceed through
+the bilayer when a cluster exceeding the threshold size is
+achieved.34 Recent studies of the antimicrobial efficacy of
+AuNCs of different sizes (Au25, Au102, and Au144) demonstrate
+that there is a crucial internalization “size cut-off” of 2 nm
+(Au25) that determines their antimicrobial ability, although
+internalization was only proposed and not directly visualized.20
+Our previous work has shown that AuNC-ZwBuEt can freely
+enter the phospholipid bilayer (demonstrated by using a
+DOPC lipid bilayer produced in a microfluidic device). In the
+presence of a serum, more hydrophobic particles could be
+inserted into the lipid bilayer with greater efficiency.27
+Thus, the antibacterial action of AuNCs used in this study
+may be related to their binding to internal cell components
+such as the cytoskeletal network (actin-like protein) and
+ribosomes rather than incurring damage at the membrane since
+they are likely to be able to freely navigate the bacterial
+membrane. Indeed, cryo-SXT experiments revealed the
+formation of hollow intracellular vesicles (such as endo-
+somes/vacuoles observed in mammalian cells) as early as 15
+min. The vesicles are not membrane-bound, as would be the
+case for mesosomes or periplasmic vacuoles, leading to the
+assumption that the inclusions are caused by a stress response
+to internalization of AuNCs in Gram-negative bacteria.
+It was previously discerned by TEM analysis that
+pyrimidine-capped 3 nm NPs can bind to the genetic material
+of the cell; NPs were observed to interact with ribosomes and
+chromosomes and were also localized to the outer membrane
+peptidoglycan layer, cytoplasmic membrane, and within the
+cytoplasm. The ability of pyrimidine-capped NPs to bind to
+DNA and other organelles responsible for protein synthesis
+was directly correlated to the extent of antibacterial activity.8
+However, DNA damage incurred from binding events between
+nucleic acid and NPs occur mainly with positively charged
+NPs, independent of NP size.58 Indeed, highly charged NPs
+bind to nucleic acids and reach a stable conformation more
+rapidly than NPs with a low charge.59 Conversely, thiolated
+ACS Applied Materials & Interfaces
+www.acsami.org
+Research Article
+https://doi.org/10.1021/acsami.2c04410
+ACS Appl. Mater. Interfaces 2022, 14, 32634−32645
+32640
+
+AuNPs have been observed to interact heavily with
+cytoplasmic protein and carbohydrates, rather than DNA.23
+In this work, DNA fragmentation because of AuNC−DNA
+interactions was not observed. Thus, since AuNCs are not
+likely to bind directly to nucleic acids, the antimicrobial action
+of AuNCs may be a result of their propensity to form protein
+complexes within the cytoplasm,46,60 destroying the cytoske-
+letal network and forcing the condensation of chromatin.45
+Indeed, TEM imaging clearly shows the formation of fibrous
+AuNC-cytosolic complexes that may be attributed to break-
+down of the actin-like protein network within bacteria.
+4. CONCLUSIONS
+Herein, we investigated the antibacterial action of ultra-small
+AuNCs (2 nm diameter) toward two common human
+pathogens, S. aureus and P. aeruginosa, using a combination
+of fluorescence and electron microscopy techniques, as well as
+cryo-SXT. AuNCs were functionalized with two surface ligands
+(MHA and ZwBuEt) to control cell-membrane interactions via
+a variable degree of particle hydrophobicity and/or lip-
+ophilicity and to assess the impact of such functionalization
+on antibacterial activity. The variation of the antibacterial
+efficacy of AuNC-MHA and AuNC-ZwBuEt was shown to be
+concentration-, time-, and strain-species-dependent. Both
+AuNCs displayed comparable antibacterial efficacy, irrespective
+of the surface chemistry. However, P. aeruginosa showed much
+greater susceptibility to the bactericidal action of AuNCs. Our
+results obtained from a combination of complementary and
+independent high-resolution imaging techniques suggest that
+the antibacterial action was directly linked to translocation of
+the AuNC into the cytoplasm, as evidenced by the localization
+of AuNCs inside the bacterial cells. It is proposed that AuNCs
+do not damage the membrane as they are freely translocated
+but cause devastating internal damage most likely by binding
+to the cytoskeletal network and other proteins necessary for
+cell function, and without compromising the nucleoid. Future
+work is necessary to elucidate the molecular details of the
+interaction between AuNCs and bacterial proteins. In addition,
+the ease of surface modification of gold NPs, that is,
+conjugation with antibacterial molecules, may aid in the search
+for new antibacterial agents without complex chemical
+synthesis or sophisticated techniques. P. aeruginosa bacterial
+cells are usually resistant to a wide variety of hydrophilic
+antibacterial agents due to the low permeability of their outer
+membrane;61 thus, it is of particular interest to develop
+antimicrobial agents that can efficiently navigate the bacterial
+cell wall and membrane in order to exert a maximal
+antimicrobial effect while minimizing the generation of
+antimicrobial resistance.
+5. EXPERIMENTAL SECTION
+5.1. Synthesis of AuNCs. Chemical products were purchased
+from Sigma-Aldrich (France), and deionized water was used for all
+syntheses.
+AuNCs stabilized by MHA (C6H12O2S, M = 148.2 g mol−1) were
+synthesized following a slightly modified protocol described else-
+where.37 To produce AuNC-MHA with the molar ratio Au/MHA/
+NaBH4 = 1:2:0.4, 500 μL of HAuCl4·3H2O (20 mM) was added to
+4.8 mL of water followed by 4 mL of the thiolated ligand MHA (5
+mM), changing the color from yellowish to pale yellow and cloudy.
+After 1 min, 500 μL of NaOH (1 M) was added dropwise, leading to
+an almost colorless sol. After 5 min, 200 μL of NaBH4 (20 mM in 0.2
+M NaOH) was introduced dropwise under mild stirring at 350 rpm
+for 4 h. Purification of the AuNC-MHA on a 3 kDa cut-off filter
+column (Amicon) was repeated 3 times to stop the reaction, adjusted
+to pH 7, concentrated to 2 mg Au mL−1 in water, and stored in the
+fridge.
+A modified thioctic-zwitterion (ZwBuEt, C19H38N2O4S3, M = 455.2
+g mol−1) was synthesized following the protocol described else-
+where.27 Au NCs with zwitterion (AuZwBuEt) were prepared by the
+addition of gold salt (HAuCl4·3H2O, 50 mM) to an alkaline solution
+(pH 10) containing the ligand in the presence of the reducing agent
+NaBH4 (50 mM) and stirred for 15 h. Zwitterion-stabilized AuNCs
+were synthesized with the molar ratio Au/ZwBuEt/NaBH4 = 1:2:2.
+Afterward, the solution was filtered 3 times with Amicon 3 kDa cut-off
+filters at 13,600 rpm for 20 min to remove excess free ligands,
+adjusted to pH 7, concentrated to 2 mg Au mL−1 in water, and kept
+refrigerated until use.
+5.2. Spectrophotometry. UV−vis absorption spectra of AuNC-
+MHA and AuNC-ZwBuEt were collected using a Shimadzu UV-1800
+spectrophotometer in transmission mode.
+5.3. Small-Angle X-ray Scattering. SAXS was conducted on a
+Bruker MicroCalix SAXS instrument operating on a Cu Kα
+microfocus source (Bruker Gmbh, Germany). Data were collected
+using a Pilatus 100k 2D detector with a q range of 0.004 to 0.56 Å−1,
+where q is the scattering vector (q = 4π sin(θ)/λ, 2θ is the scattering
+angle, and λ is wavelength of the scattered radiation). Calibration was
+carried out using silver behenate as the standard. Normalization,
+primary beam masking, and background subtraction were carried out
+using RAW.62 Analysis was carried out using SASView (version 4.1.2,
+http://www.sasview.org/)63 assuming scattering length densities of
+9.47 × 10−6/Å2 and 126 × 10−6/Å2 for the water and nanoparticles,
+respectively. As small metallic nanoparticles are known to be facetted,
+the data were fit assuming them to be square prisms,64 which yielded
+good fits over the entire scattering vector range without needing to
+add polydispersity.
+5.4. Antibacterial Activity. P. aeruginosa ATCC 9721 and S.
+aureus CIP 65.8T were obtained from American Type Culture
+Collection and Culture Institute Pasteur (France), respectively, and
+refreshed on a nutrient agar (Oxoid) for 24 h at 37 °C.
+To estimate the number of viable cells following treatment with
+AuNCs, standard plate count methods were used. P. aeruginosa and S.
+aureus stock solutions were then serially diluted in PBS until an
+infectious dose was achieved (1000 CFU/mL P. aeruginosa65 and
+100,000 CFU/mL S. aureus).66 AuNCs were added to suspensions of
+infectious doses of P. aeruginosa and S. aureus (500 μL) at
+concentrations of 5, 10, 25, 50, 100, and 200 μg Au mL−1. AuNCs/
+bacterial suspensions were then incubated in a rotary shaker at 37 °C
+for up to 2 h at 220 rpm. Control samples consisted of bacterial
+suspensions in PBS with no added AuNCs but an equal volume of
+Milli-Q water for each given concentration. AuNCs/bacterial
+suspensions and controls were then spread-plated on five separate
+nutrient agar (Oxoid) plates and incubated for 24 h at 37 °C to
+estimate the number of viable cells indicated by CFUs. Each
+experiment was performed in triplicate. Statistically significant
+differences were determined by Student’s t test.
+5.5. DNA Fragmentation Assay. P. aeruginosa were suspended
+in PBS at an optical density (OD600nm) of 0.1. 100 μg of Au mL−1 of
+each of the AuNCs was added and bacteria−AuNC suspensions were
+incubated at 37 °C for 1 h under shaking (120 rpm). DNA isolation
+was performed using the Qiagen DNeasy PowerSoil Pro Kit. 5 μL of
+DNA was stained with 2 μL of SYBR mix green and electrophoresed
+for 45 min at 100 V in a 3% agarose gel to visualize the DNA. The
+concentrations of double-stranded (ds) and single-stranded (ss) DNA
+were measured using a Nanodrop spectrophotometer.
+DNA fragmentation and chromatin condensation were assessed
+using DAPI staining of nucleic acid in P. aeruginosa exposed to 100 μg
+Au mL−1 of each of the AuNCs. Suspensions of bacteria and AuNCs
+were prepared as described above and stained with 10 μg/mL DAPI
+for 20 min at room temperature. DAPI-stained bacterial cells were
+visualized after 1 h using a Zeiss Airyscan 880 LSM instrument with a
+63× objective.
+5.6. Statistical Analysis. All plate count experiments were
+performed in replicates of 5 and repeated a minimum of 2 times. Data
+ACS Applied Materials & Interfaces
+www.acsami.org
+Research Article
+https://doi.org/10.1021/acsami.2c04410
+ACS Appl. Mater. Interfaces 2022, 14, 32634−32645
+32641
+
+are expressed as mean ± standard deviation of at least five
+independent samples. Statistical comparisons were made between
+results using a two-tailed Student’s t-test where p < 0.05 denoted a
+statistically significant difference.
+5.7. Transmission Electron Microscopy. TEM was used to view
+cross sections of bacterial cells incubated with AuNCs. AuNCs were
+incubated with bacteria at concentrations of 100 μg/mL in a rotary
+shaker at 37 °C at 220 rpm for 30, 60, and 120 min. Following the
+incubation period, the cells were washed and then fixed for TEM.
+After incubation, bacterial cell suspensions were washed twice with 10
+mM PBS (pH of 7.4) using centrifugation at 13000 rpm for 5 min at
+25 °C to remove any AuNCs that had not interacted with the cells.
+The pellets were then suspended in 2 mL of 1% glutaraldehyde in PBS
+for 30 min and then washed twice in PBS for 5 min. After the final
+washing step, the cell suspensions were post-fixed with 1 mL of 1%
+aqueous osmium tetroxide (OsO4) for 1.5 h. The cell pellets were
+washed 3× in nanopure H2O (with a resistivity of 18.2 MW cm−1) for
+5 min each. Samples were then dehydrated by passing them through a
+graded ethanol series (20, 40, and 60%) (2 mL) for 20 min each and
+then stained for 8 h with 2% uranyl acetate in 70% ethanol (2 mL).
+After staining, the cells were further dehydrated by passing the
+samples through another graded ethanol series (80, 90, and 100%) for
+15 min each (2 mL) at −20 °C.
+The embedding medium was prepared using Spurr’s resin
+(ProSciTech). To embed the samples, each sample was incubated
+at −20 °C in 2 mL of 100% ethanol and Spurr’s epoxy monomer (1:1
+ratio) for 8 h, followed by a transfer to 100% ethanol and an epoxy
+monomer (1:3 ratio) for 8 h, and then finally transferred into the pure
+epoxy for 8 h. Each sample was then transferred into a gelatin capsule
+containing fresh epoxy monomer mixed with 1% dry benzoyl
+peroxide, which was then polymerized for 24 h at 4 °C. The final
+block was trimmed and then cut into ultrathin sections (50 nm
+thickness) using a Leica EM UC7 Ultramicrotome (Leica Micro-
+systems, Wetzlar, Germany) with a diamond knife (Diatome,
+Pennsylvania, USA). Sections were placed onto 300 mesh copper
+grids and examined using a JEM 1010 instrument (JEOL).
+Approximately 40 TEM images were taken for each sample analyzed.
+STEM-EDS analysis was performed on samples prepared as
+described above using a transmission electron microscope Jeol
+2100F (FEG, 200 kV) equipped with a high-angle annular dark
+field detector (STEM mode) and an energy-dispersive X-ray
+spectrometer.
+5.8. Cryo-Soft X-ray Tomography. Quantifoil R 2/2 holey
+carbon-film microscopy grids (Au-G200F1) were exposed to 1 min
+O2 plasma to increase their hydrophilicity. P. aeruginosa colonies from
+a nutrient agar plate (kept at 37 °C for 24 h) were suspended in PBS
+at an optical density of OD600nm 0.1. 100 μg Au mL−1 was added and
+AuNCs and bacteria were left to interact for ∼15 min or 1 h before
+vitrification. Immediately prior to plunge-freezing (Leica, EM, GP),
+the grids were blotted from the rear using Whatman filter paper no. 4
+to remove excess medium, and 2 μL of Au fiducial markers with a 100
+nm diameter were added to the grids for projection alignment. The
+distribution of the cells on the frozen grid and the ice thickness were
+confirmed using a cryostage (CMS196 Linkam Scientific Instruments,
+Epsom, UK)-equipped fluorescence microscope (Zeiss Axio Scope).
+Grids were transferred to holders and stored in liquid nitrogen. The
+frozen grids were transferred to a Mistral (ALBA-Light Source)
+beamline in ALBA synchrotron under cryogenic conditions.67
+Tomograms were collected from a tilt range of ±65° with a step
+size of 1° at a 2.43 nm wavelength (photon energy E = 520 eV) with a
+40 nm zone and a 25 nm plate and an image pixel size of 8 nm for
+bacteria. Approximately ∼131 images were acquired for each tilt series
+with exposure times varying from 1 to 2 s. Tilt series were aligned and
+reconstructed using the batch reconstruction processes in IMOD, and
+segmentation was done with Microscopy Image Browser ver 2.70.
+■ASSOCIATED CONTENT
+*
+sı Supporting Information
+The Supporting Information is available free of charge at
+https://pubs.acs.org/doi/10.1021/acsami.2c04410.
+Characterization of AuNCs; metabolic activity of
+bacteria exposed to AuNCs for 2 h; dynamic
+antibacterial activity; TEM of bacterial morphology
+post AuNC exposure; SEM micrograph of bacterial
+morphology; CLSM analysis of Syto9 fluorescence;
+CLSM analysis of AuNC-ZwBuEt and AuNC-MHA
+uptake in P. aeruginosa; reconstructed cryo-SXT tomo-
+gram of control P. aeruginosa bacteria; STEM-EDS
+analyses of S. aureus and P. aeruginosa incubated with
+100 μg mL−1 AuNC-MHA and AuNC-ZwBuEt; DNA
+fragmentation assay via gel electrophoresis; DAPI
+staining of P. aeruginosa DNA following incubation
+with AuNCs; and cell surface characterization of P.
+aeruginosa and S. aureus (PDF)
+■AUTHOR INFORMATION
+Corresponding Author
+Elena P. Ivanova −STEM College, School of Science, RMIT
+University, Melbourne, Victoria 3001, Australia;
+orcid.org/0000-0002-5509-8071; Phone: +61 3 99 253
+395; Email: elena.ivanova@rmit.edu.au
+Authors
+Denver P. Linklater −STEM College, School of Science,
+RMIT University, Melbourne, Victoria 3001, Australia;
+orcid.org/0000-0003-1433-3685
+Xavier Le Guével −Cancer Targets and Experimental
+Therapeutics, Institute for Advanced Biosciences, University of
+Grenoble Alpes, La Tronche 38700, France;
+orcid.org/
+0000-0003-3634-7762
+Gary Bryant −STEM College, School of Science, RMIT
+University, Melbourne, Victoria 3001, Australia;
+orcid.org/0000-0001-5483-7592
+Vladimir A. Baulin −Departament de Química Física i
+Inorgànica, Universitat Rovira i Virgili, Tarragona 43007,
+Spain
+Eva Pereiro −MISTRAL Beamline-Experiments Division,
+ALBA Synchrotron Light Source, Cerdanyola del Vallès
+08290, Spain;
+orcid.org/0000-0001-7626-5935
+Palalle G. Tharushi Perera −STEM College, School of
+Science, RMIT University, Melbourne, Victoria 3001,
+Australia;
+orcid.org/0000-0002-2787-9938
+Jason V. Wandiyanto −Optical Sciences Centre, Swinburne
+University of Technology, Hawthorn, Victoria 3122,
+Australia
+Saulius Juodkazis −Optical Sciences Centre, Swinburne
+University of Technology, Hawthorn, Victoria 3122,
+Australia;
+orcid.org/0000-0003-3542-3874
+Complete contact information is available at:
+https://pubs.acs.org/10.1021/acsami.2c04410
+Author Contributions
+The manuscript was written through contributions of all
+authors. All authors have given approval to the final version of
+the manuscript.
+Notes
+The authors declare no competing financial interest.
+ACS Applied Materials & Interfaces
+www.acsami.org
+Research Article
+https://doi.org/10.1021/acsami.2c04410
+ACS Appl. Mater. Interfaces 2022, 14, 32634−32645
+32642
+
+■ACKNOWLEDGMENTS
+The authors acknowledge the support and technical services of
+the RMIT Microscopy and Microanalysis Facility (RMMF).
+D.P.L. acknowledges receipt of the internship AINSE ANSTO
+French Embassy (SAAFE) for travel support. The authors
+acknowledge travel funding provided by the International
+Synchrotron Access Program (ISAP) managed by the
+Australian Synchrotron, part of ANSTO. This work was
+performed in part at the Mistral beamline at ALBA
+synchrotron, Spain. V.A.B. acknowledges financial assistance
+from the Ministerio de Ciencia, Innovación y Universidades of
+the Spanish Government through research project PID2020-
+114347RB-C33, financed by MCIN/AEI 10.13039/
+501100011033. X.L.G. would like to thank ANR SIREN
+(ANR-20-CE92-0039-01) and ANR LAPIN (ANR-20-CE09-
+0021-04) for their financial support. Funding from the
+Australian Research Council (ARC) Industrial Transformation
+Research Hubs scheme (project number IH130100017) and
+the ARC Industrial Transformation Training Centre scheme
+(project number IC180100005) to E.P.I. is thankfully
+acknowledged. The authors thank J. Groen (ALBA) for his
+support in sample preparation.
+■REFERENCES
+(1) Nair, L. V.; Nair, R. V.; Shenoy, S. J.; Thekkuveettil, A.; Jayasree,
+R. S. Blood Brain Barrier Permeable Gold Nanocluster for Targeted
+Brain Imaging and Therapy: An in Vitro and in Vivo Study. J. Mater.
+Chem. B 2017, 5, 8314−8321.
+(2) Yu, Z.; Musnier, B.; Wegner, K. D.; Henry, M.; Chovelon, B.;
+Desroches-Castan, A.; Fertin, A.; Resch-Genger, U.; Bailly, S.; Coll, J.-
+L.; Usson, Y.; Josserand, V.; Le Guével, X. High-Resolution Shortwave
+Infrared Imaging of Vascular Disorders Using Gold Nanoclusters.
+ACS Nano 2020, 14, 4973−4981.
+(3) Tang, S.; Peng, C.; Xu, J.; Du, B.; Wang, Q.; Vinluan, R. D., III;
+Yu, M.; Kim, M. J.; Zheng, J. Tailoring Renal Clearance and Tumor
+Targeting of Ultrasmall Metal Nanoparticles with Particle Density.
+Angew. Chem., Int. Ed. 2016, 55, 16039−16043.
+(4) Loynachan, C. N.; Soleimany, A. P.; Dudani, J. S.; Lin, Y.; Najer,
+A.; Bekdemir, A.; Chen, Q.; Bhatia, S. N.; Stevens, M. M. Renal
+Clearable Catalytic Gold Nanoclusters for in Vivo Disease
+Monitoring. Nat. Nanotechnol. 2019, 14, 883−890.
+(5) Colombé, C.; Le Guével, X.; Martin-Serrano, A.; Henry, M.;
+Porret, E.; Comby-Zerbino, C.; Antoine, R.; Atallah, I.; Busser, B.;
+Coll, J.-L.; Righini, C. A.; Sancey, L. Gold Nanoclusters as a Contrast
+Agent for Image-Guided Surgery of Head and Neck Tumors.
+Nanomed. Nanotechnol. Biol. Med. 2019, 20, 102011.
+(6) Le Guével, X.; Henry, M.; Motto-Ros, V.; Longo, E.; Montañez,
+M. I.; Pelascini, F.; de La Rochefoucauld, O.; Zeitoun, P.; Coll, J.-L.;
+Josserand, V.; Sancey, L. Elemental and Optical Imaging Evaluation of
+Zwitterionic Gold Nanoclusters in Glioblastoma Mouse Models.
+Nanoscale 2018, 10, 18657−18664.
+(7) Chen, Y.; Montana, D. M.; Wei, H.; Cordero, J. M.; Schneider,
+M.; Le Guével, X.; Chen, O.; Bruns, O. T.; Bawendi, M. G. Shortwave
+Infrared in Vivo Imaging with Gold Nanoclusters. Nano Lett. 2017,
+17, 6330−6334.
+(8) Zhao, Y.; Tian, Y.; Cui, Y.; Liu, W.; Ma, W.; Jiang, X. Small
+Molecule-Capped Gold Nanoparticles as Potent Antibacterial Agents
+That Target Gram-Negative Bacteria. J. Am. Chem. Soc. 2010, 132,
+12349−12356.
+(9) Shamaila, S.; Zafar, N.; Riaz, S.; Sharif, R.; Nazir, J.; Naseem, S.
+Gold Nanoparticles: An Efficient Antimicrobial Agent against Enteric
+Bacterial Human Pathogen. Nanomaterials 2016, 6, 71.
+(10) Zheng, K.; Setyawati, M. I.; Leong, D. T.; Xie, J. Antimicrobial
+Gold Nanoclusters. ACS Nano 2017, 11, 6904−6910.
+(11) Yougbare, S.; Chang, T.-K.; Tan, S.-H.; Kuo, J.-C.; Hsu, P.-H.;
+Su, C.-Y.; Kuo, T.-R. Antimicrobial Gold Nanoclusters: Recent
+Developments and Future Perspectives. Int. J. Mol. Sci. 2019, 20,
+2924.
+(12) Tran, P. A.; O’Brien-Simpson, N.; Palmer, J. A.; Bock, N.;
+Reynolds, E. C.; Webster, T. J.; Deva, A.; Morrison, W. A.; O’Connor,
+A. J. Selenium Nanoparticles as Anti-Infective Implant Coatings for
+Trauma Orthopedics against Methicillin-Resistant Staphylococcus
+Aureus and Epidermidis: In Vitro and in Vivo Assessment. Int. J.
+Nanomed. 2019, 14, 4613−4624.
+(13) Kalita, S.; Kandimalla, R.; Bhowal, A. C.; Kotoky, J.; Kundu, S.
+Functionalization of Β-Lactam Antibiotic on Lysozyme Capped Gold
+Nanoclusters Retrogress Mrsa and Its Persisters Following Awaken-
+ing. Sci. Rep. 2018, 8, 5778.
+(14) Zheng, Y.; Liu, W.; Qin, Z.; Chen, Y.; Jiang, H.; Wang, X.
+Mercaptopyrimidine-Conjugated Gold Nanoclusters as Nanoanti-
+biotics for Combating Multidrug-Resistant Superbugs. Bioconjugate
+Chem. 2018, 29, 3094−3103.
+(15) Xie, Y.; Zhang, M.; Zhang, W.; Liu, X.; Zheng, W.; Jiang, X.
+Gold Nanoclusters-Coated Orthodontic Devices Can Inhibit the
+Formation of Streptococcus Mutans Biofilm. ACS Biomater. Sci. Eng.
+2020, 6, 1239−1246.
+(16) Pang, Z.; Li, Q.; Jia, Y.; Yan, W.; Qi, J.; Guo, Y.; Hu, F.; Zhou,
+D.; Jiang, X. Controlling the Pyridinium-Zwitterionic Ligand Ratio on
+Atomically Precise Gold Nanoclusters Allowing for Eradicating Gram-
+Positive Drug-Resistant Bacteria and Retaining Biocompatibility.
+Chem. Sci. 2021, 12, 14871−14882.
+(17) Zheng, K.; Setyawati, M. I.; Leong, D. T.; Xie, J. Surface Ligand
+Chemistry of Gold Nanoclusters Determines Their Antimicrobial
+Ability. Chem. Mater. 2018, 30, 2800−2808.
+(18) Lin, Y.; Ren, J.; Qu, X. Catalytically Active Nanomaterials: A
+Promising Candidate for Artificial Enzymes. Acc. Chem. Res. 2014, 47,
+1097−1105.
+(19) Xie, Y.; Liu, Y.; Yang, J.; Liu, Y.; Hu, F.; Zhu, K.; Jiang, X. Gold
+Nanoclusters for Targeting Methicillin-Resistant Staphylococcus
+Aureus in Vivo. Angew. Chem., Int. Ed. 2018, 57, 3958−3962.
+(20) Zheng, K.; Setyawati, M. I.; Leong, D. T.; Xie, J. Overcoming
+Bacterial Physical Defenses with Molecule-Like Ultrasmall Antimicro-
+bial Gold Nanoclusters. Bioact. Mater. 2021, 6, 941−950.
+(21) Kuo, J.-C.; Tan, S.-H.; Hsiao, Y.-C.; Mutalik, C.; Chen, H.-M.;
+Yougbaré, S.; Kuo, T.-R. Unveiling the Antibacterial Mechanism of
+Gold Nanoclusters Via in Situ Transmission Electron Microscopy.
+ACS Sustainable Chem. Eng. 2022, 10, 464−471.
+(22) Ortiz-Benitez, E. A.; Carrillo-Morales, M.; Velázquez-
+Guadarrama, N.; Fandiño-Armas, J.; Olivares-Trejo, J. d. J. Inclusion
+Bodies and Ph Lowering: As an Effect of Gold Nanoparticles in
+Streptococcus Pneumoniae. Metallomics 2015, 7, 1173−1179.
+(23) Ortiz-Benítez, E. A.; Velázquez-Guadarrama, N.; Durán
+Figueroa, N. V.; Quezada, H.; Olivares-Trejo, J. d. J. Antibacterial
+Mechanism of Gold Nanoparticles Onstreptococcus Pneumoniae.
+Metallomics 2019, 11, 1265−1276.
+(24) Zhang, H.; Liu, H.; Tian, Z.; Lu, D.; Yu, Y.; Cestellos-Blanco,
+S.; Sakimoto, K. K.; Yang, P. Bacteria Photosensitized by Intracellular
+Gold Nanoclusters for Solar Fuel Production. Nat. Nanotechnol. 2018,
+13, 900−905.
+(25) Reniere, M. L. Reduce, Induce, Thrive: Bacterial Redox Sensing
+During Pathogenesis. J. Bacteriol. 2018, 200, No. e00128.
+(26) Chithrani, B. D.; Ghazani, A. A.; Chan, W. C. W. Determining
+the Size and Shape Dependence of Gold Nanoparticle Uptake into
+Mammalian Cells. Nano Lett. 2006, 6, 662−668.
+(27) Porret, E.; Sancey, L.; Martín-Serrano, A.; Montañez, M. I.;
+Seeman, R.; Yahia-Ammar, A.; Okuno, H.; Gomez, F.; Ariza, A.;
+Hildebrandt, N.; Fleury, J.-B.; Coll, J.-L.; Le Guével, X. Hydro-
+phobicity of Gold Nanoclusters Influences Their Interactions with
+Biological Barriers. Chem. Mater. 2017, 29, 7497−7506.
+(28) Tay, C. Y.; Yu, Y.; Setyawati, M. I.; Xie, J.; Leong, D. T.
+Presentation Matters: Identity of Gold Nanocluster Capping Agent
+Governs Intracellular Uptake and Cell Metabolism. Nano Res. 2014, 7,
+805−815.
+(29) Carnovale, C.; Bryant, G.; Shukla, R.; Bansal, V. Identifying
+Trends in Gold Nanoparticle Toxicity and Uptake: Size, Shape,
+ACS Applied Materials & Interfaces
+www.acsami.org
+Research Article
+https://doi.org/10.1021/acsami.2c04410
+ACS Appl. Mater. Interfaces 2022, 14, 32634−32645
+32643
+
+Capping Ligand, and Biological Corona. ACS Omega 2019, 4, 242−
+256.
+(30) Porret, E.; Le Guével, X.; Coll, J.-L. Gold Nanoclusters for
+Biomedical Applications: Toward in Vivo Studies. J. Mater. Chem. B
+2020, 8, 2216−2232.
+(31) Genji Srinivasulu, Y.; Yao, Q.; Goswami, N.; Xie, J. Interfacial
+Engineering of Gold Nanoclusters for Biomedical Applications. Mater.
+Horiz. 2020, 7, 2596−2618.
+(32) Yang, K.; Ma, Y.-Q. Computer Simulation of the Translocation
+of Nanoparticles with Different Shapes across a Lipid Bilayer. Nat.
+Nanotechnol. 2010, 5, 579−583.
+(33) Pogodin, S.; Baulin, V. Equilibrium Insertion of Nanoscale
+Objects into Phospholipid Bilayers. Curr. Nanosci. 2011, 7, 721−726.
+(34) Guo, Y.; Terazzi, E.; Seemann, R.; Fleury, J. B.; Baulin, V. A.
+Direct Proof of Spontaneous Translocation of Lipid-Covered
+Hydrophobic Nanoparticles through a Phospholipid Bilayer. Sci.
+Adv. 2016, 2, No. e1600261.
+(35) Yuan, X.; Goswami, N.; Chen, W.; Yao, Q.; Xie, J. Insights into
+the Effect of Surface Ligands on the Optical Properties of Thiolated
+Au25nanoclusters. Chem. Commun. 2016, 52, 5234−5237.
+(36) Ivanov, M. R.; Haes, A. J. Anionic Functionalized Gold
+Nanoparticle Continuous Full Filling Separations: Importance of
+Sample Concentration. Anal. Chem. 2012, 84, 1320−1326.
+(37) Musnier, B.; Wegner, K. D.; Comby-Zerbino, C.; Trouillet, V.;
+Jourdan, M.; Häusler, I.; Antoine, R.; Coll, J.-L.; Resch-Genger, U.; Le
+Guével, X. High Photoluminescence of Shortwave Infrared-Emitting
+Anisotropic Surface Charged Gold Nanoclusters. Nanoscale 2019, 11,
+12092−12096.
+(38) Zhao, S.; Austin, N.; Li, M.; Song, Y.; House, S. D.; Bernhard,
+S.; Yang, J. C.; Mpourmpakis, G.; Jin, R. Influence of Atomic-Level
+Morphology on Catalysis: The Case of Sphere and Rod-Like Gold
+Nanoclusters for Co2 Electroreduction. ACS Catal. 2018, 8, 4996−
+5001.
+(39) Li, Q.; Zeman, C. J.; Ma, Z.; Schatz, G. C.; Gu, X. W. Bright
+Nir-Ii Photoluminescence in Rod-Shaped Icosahedral Gold Nano-
+clusters. Small 2021, 17, 2007992.
+(40) Zhou, M.; Jin, R.; Sfeir, M. Y.; Chen, Y.; Song, Y.; Jin, R.
+Electron Localization in Rod-Shaped Triicosahedral Gold Nano-
+cluster. Proc. Natl. Acad. Sci. U.S.A. 2017, 114, E4697−E4705.
+(41) Fernández, T. D.; Pearson, J. R.; Leal, M. P.; Torres, M. J.;
+Blanca, M.; Mayorga, C.; Le Guével, X. Intracellular Accumulation
+and Immunological Properties of Fluorescent Gold Nanoclusters in
+Human Dendritic Cells. Biomaterials 2015, 43, 1−12.
+(42) Otón, J.; Pereiro, E.; Pérez-Berná, A. J.; Millach, L.; Sorzano, C.
+O. S.; Marabini, R.; Carazo, J. M. Characterization of Transfer
+Function, Resolution and Depth of Field of a Soft X-Ray Microscope
+Applied to Tomography Enhancement by Wiener Deconvolution.
+Biomed. Opt Express 2016, 7, 5092−5103.
+(43) Rezaei, A.; Hashemi, E. A Pseudohomogeneous Nanocarrier
+Based on Carbon Quantum Dots Decorated with Arginine as an
+Efficient Gene Delivery Vehicle. Sci. Rep. 2021, 11, 13790.
+(44) Vukomanovic, M.; Cendra, M. d. M.; Baelo, A.; Torrents, E.
+Nano-Engineering Stable Contact-Based Antimicrobials: Chemistry at
+the Interface between Nano-Gold and Bacteria. Colloids Surf., B 2021,
+208, 112083.
+(45) Feng, Q. L.; Wu, J.; Chen, G. Q.; Cui, F. Z.; Kim, T. N.; Kim, J.
+O. A Mechanistic Study of the Antibacterial Effect of Silver Ions on
+Escherichia Coli and Staphylococcus Aureus. J. Biomed. Mater. Res.
+2000, 52, 662−668.
+(46) Slavin, Y. N.; Asnis, J.; Häfeli, U. O.; Bach, H. Metal
+Nanoparticles: Understanding the Mechanisms Behind Antibacterial
+Activity. J. Nanobiotechnol. 2017, 15, 65.
+(47) Pajerski, W.; Ochonska, D.; Brzychczy-Wloch, M.; Indyka, P.;
+Jarosz, M.; Golda-Cepa, M.; Sojka, Z.; Kotarba, A. Attachment
+Efficiency of Gold Nanoparticles by Gram-Positive and Gram-
+Negative Bacterial Strains Governed by Surface Charges. J. Nano-
+particle Res. 2019, 21, 186.
+(48) Hwang, G. B.; Huang, H.; Wu, G.; Shin, J.; Kafizas, A.; Karu,
+K.; Toit, H. D.; Alotaibi, A. M.; Mohammad-Hadi, L.; Allan, E.;
+MacRobert, A. J.; Gavriilidis, A.; Parkin, I. P. Photobactericidal
+Activity Activated by Thiolated Gold Nanoclusters at Low Flux Levels
+of White Light. Nat. Commun. 2020, 11, 1207.
+(49) Preston, T. C.; Nuruzzaman, M.; Jones, N. D.; Mittler, S. Role
+of Hydrogen Bonding in the Ph-Dependent Aggregation of Colloidal
+Gold Particles Bearing Solution-Facing Carboxylic Acid Groups. J.
+Phys. Chem. C 2009, 113, 14236−14244.
+(50) Goodman, C. M.; McCusker, C. D.; Yilmaz, T.; Rotello, V. M.
+Toxicity of Gold Nanoparticles Functionalized with Cationic and
+Anionic Side Chains. Bioconjugate Chem. 2004, 15, 897−900.
+(51) Pfeiffer, T.; De Nicola, A.; Montis, C.; Carlà, F.; van der Vegt,
+N. F. A.; Berti, D.; Milano, G. Nanoparticles at Biomimetic Interfaces:
+Combined Experimental and Simulation Study on Charged Gold
+Nanoparticles/Lipid Bilayer Interfaces. J. Phys. Chem. Lett. 2018, 10,
+129−137.
+(52) Wei, X.; Yu, J.; Ding, L.; Hu, J.; Jiang, W. Effect of Oxide
+Nanoparticles on the Morphology and Fluidity of Phospholipid
+Membranes and the Role of Hydrogen Bonds. J. Environ. Sci. 2017,
+57, 221−230.
+(53) Zhang, S.; Nelson, A.; Beales, P. A. Freezing or Wrapping: The
+Role of Particle Size in the Mechanism of Nanoparticle−
+Biomembrane Interaction. Langmuir 2012, 28, 12831−12837.
+(54) Verma, A.; Uzun, O.; Hu, Y.; Hu, Y.; Han, H.-S.; Watson, N.;
+Chen, S.; Irvine, D. J.; Stellacci, F. Surface-Structure-Regulated Cell-
+Membrane Penetration by Monolayer-Protected Nanoparticles. Nat.
+Mater. 2008, 7, 588−595.
+(55) Van Lehn, R. C.; Atukorale, P. U.; Carney, R. P.; Yang, Y.-S.;
+Stellacci, F.; Irvine, D. J.; Alexander-Katz, A. Effect of Particle
+Diameter and Surface Composition on the Spontaneous Fusion of
+Monolayer-Protected Gold Nanoparticles with Lipid Bilayers. Nano
+Lett. 2013, 13, 4060−4067.
+(56) Canepa, E.; Salassi, S.; Simonelli, F.; Ferrando, R.; Rolandi, R.;
+Lambruschini, C.; Canepa, F.; Dante, S.; Relini, A.; Rossi, G. Non-
+Disruptive Uptake of Anionic and Cationic Gold Nanoparticles in
+Neutral Zwitterionic Membranes. Sci. Rep. 2021, 11, 1256.
+(57) Li, Y.; Chen, X.; Gu, N. Computational Investigation of
+Interaction between Nanoparticles and Membranes: Hydrophobic/
+Hydrophilic Effect. J. Phys. Chem. B 2008, 112, 16647−16653.
+(58) May, S.; Hirsch, C.; Rippl, A.; Bohmer, N.; Kaiser, J.-P.; Diener,
+L.; Wichser, A.; Bürkle, A.; Wick, P. Transient DNA Damage
+Following Exposure to Gold Nanoparticles. Nanoscale 2018, 10,
+15723−15735.
+(59) Nash, J. A.; Tucker, T. L.; Therriault, W.; Yingling, Y. G.
+Binding of Single Stranded Nucleic Acids to Cationic Ligand
+Functionalized Gold Nanoparticles. Biointerphases 2016, 11, 04B305.
+(60) Wigginton, N. S.; Titta, A. d.; Piccapietra, F.; Dobias, J.;
+Nesatyy, V. J.; Suter, M. J. F.; Bernier-Latmani, R. Binding of Silver
+Nanoparticles to Bacterial Proteins Depends on Surface Modifications
+and Inhibits Enzymatic Activity. Environ. Sci. Technol. 2010, 44,
+2163−2168.
+(61) Yoshimura, F.; Nikaido, H. Permeability of Pseudomonas
+Aeruginosa Outer Membrane to Hydrophilic Solutes. J. Bacteriol.
+1982, 152, 636−642.
+(62) Hopkins, J. B.; Gillilan, R. E.; Skou, S. Bioxtas Raw:
+Improvements to a Free Open-Source Program for Small-Angle X-
+Ray Scattering Data Reduction and Analysis. J. Appl. Crystallogr. 2017,
+50, 1545−1553.
+(63) Bakker, J. H.; Washington, A. L.; Parnell, S. R.; van Well, A. A.;
+Pappas, C.; Bouwman, W. G. Analysis of Sesans Data By numerical
+hankel Transform Implementation in sasview. J. Neutron Res. 2020,
+22, 57−70.
+(64) Nayuk, R.; Huber, K. Formfactors of Hollow and Massive
+Rectangular Parallelepipeds at Variable Degree of Anisometry. Z. Phys.
+Chem. 2012, 226, 837−854.
+(65) Leggett, H. C.; Cornwallis, C. K.; West, S. A. Mechanisms of
+Pathogenesis, Infective Dose and Virulence in Human Parasites. PLoS
+Pathog. 2012, 8, No. e1002512.
+ACS Applied Materials & Interfaces
+www.acsami.org
+Research Article
+https://doi.org/10.1021/acsami.2c04410
+ACS Appl. Mater. Interfaces 2022, 14, 32634−32645
+32644
+
+(66) Passon, T. Methicillin-Resistant Staphylococcus Aureus: A
+Public Health Response to New Threats of Staph Infection. Synergist
+2007, 18, 35.
+(67) Sorrentino, A.; Nicolás, J.; Valcárcel, R.; Chichón, F. J.;
+Rosanes, M.; Avila, J.; Tkachuk, A.; Irwin, J.; Ferrer, S.; Pereiro, E.
+Mistral: A Transmission Soft X-Ray Microscopy Beamline for Cryo
+Nano-Tomography of Biological Samples and Magnetic Domains
+Imaging. J. Synchrotron Radiat. 2015, 22, 1112−1117.
+ACS Applied Materials & Interfaces
+www.acsami.org
+Research Article
+https://doi.org/10.1021/acsami.2c04410
+ACS Appl. Mater. Interfaces 2022, 14, 32634−32645
+32645

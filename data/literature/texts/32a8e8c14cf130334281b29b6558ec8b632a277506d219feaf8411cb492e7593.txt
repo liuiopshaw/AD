@@ -1,0 +1,1058 @@
+High-stable bimetallic AgCu nanoalloys with core-shell structures for 
+sustainable antibacterial and biofouling mitigation in nanofiltration
+Wenjuan Zhang a, Zhe Wang a, Zilong Zhao a, Peizhi Wang b
+, Shaopo Wang a,*, Jun Ma b,  
+Wei Cheng b,*
+a Tianjin Key Laboratory of Aquatic Science and Technology, School of Environmental and Municipal Engineering, Tianjin Chengjian University, Tianjin 300384, PR 
+China
+b State Key Laboratory of Urban Water Resource and Environment, School of Environment, Harbin Institute of Technology, Harbin 150090, PR China
+A R T I C L E  I N F O
+Keywords:
+Nanofiltration
+bimetallic AgCu nanoparticle
+in-situ reduction
+antibacterial activity
+biofouling reversibility
+A B S T R A C T
+Nanofiltration (NF) is crucial for advancing water purification and wastewater reuse technologies. Incorporating 
+biocidal nanoparticles (NPs) such as AgNPs and CuNPs is promising for developing antibacterial and anti­
+biofouling NF membranes, while their application is limited by NPs aggregation, high cost, and severe ion 
+release. In this study, we developed novel NF membranes by integrating bimetallic AgCu nanoalloys via an in- 
+situ reduction and coordination method facilitated by a polydopamine/polyethyleneimine (PDA/PEI) interme­
+diate layer. The sequential deposition of Cu2+ onto nascent AgNPs formed uniform AgCuNPs with a unique core- 
+shell structure. The Cu shell layer can shield the release of Ag+ from the Ag core and chelate with the PDA/PEI 
+intermediate layer, thus controlling the release of biocidal ions and prolonging the biocidal properties of the 
+membranes. As a result, the AgCuNP-modified membranes exhibited significantly improved membrane water 
+permeability, salt rejection, and performance stability, along with reduced release of biocidal ions in the long- 
+term operation. Notably, the bimetallic AgCuNP-modified membrane displayed superior antibacterial activity 
+and biofouling reversibility compared to the commercial NF and monometallic Ag/Cu-modified membranes, 
+achieving the highest sterilization rate (> 99 %), largest flux recovery rate (93 %), and lowest flux decline rate 
+(16 %) in both static antibacterial and dynamic biofouling processes. The metal-semiconductor heterostructure of 
+the AgCuNPs facilitated the electron transfer from the Ag core to the Cu shell, intensifying the substantial 
+generation of reactive oxygen species (H2O2: 71.6 mmol L-1 m-2, •OH: 43.4 mmol L-1 m-2, and O2
+•–: 1.3 × 10–4) at 
+the membrane-bacteria interface. The synergistic effects of the unique properties of AgCuNPs including micro­
+structure, atomic composition, charge transfer, and ROS generation significantly enhanced the antibacterial 
+capacity of the AgCuNP-modified membrane. This study presents a facile method for modifying NF membranes 
+with bimetallic AgCuNPs to achieve enhanced antibacterial activity and biofouling reversibility, providing 
+fundamental insights and promising potential for water treatment applications.
+1. Introduction
+Nanofiltration (NF) is pivotal for water purification and wastewater 
+reuse, offering benefits such as efficient water-solution separation, 
+relatively low energy consumption, simple operation, and environ­
+mental sustainability (Chung et al., 2012; Long et al., 2021). However, 
+biological enrichment and biofilm formation on NF membranes signifi­
+cantly reduce membrane permeability and solute rejection, challenge 
+their widespread application (Barry et al., 2014; Zhang et al., 2022). 
+Although bacteria can be preliminarily removed through prefiltration 
+and disinfection, biofouling remains an inevitable issue during 
+long-term operation due to bacterial proliferation. Surface modification 
+with antimicrobial agents (e.g., zeolite, silver, copper, and TiO2) is an 
+attractive alternative to enhance the membrane antibacterial capability 
+without compromising water treatment performance. Among various 
+bactericidal nanoparticles (NPs), AgNPs exhibit excellent antibacterial 
+activity and have been extensively studied for preventing membrane 
+biofouling (Johnson and Hilal, 2022; Wang et al., 2021). However, the 
+leaching and high cost of silver limit the practical application of 
+AgNP-modified membranes. CuNP is another biocidal agent with a 
+* Corresponding authors.
+E-mail addresses: wsp@tcu.edu.cn (S. Wang), chengweihit@hotmail.com (W. Cheng). 
+Contents lists available at ScienceDirect
+Water Research
+journal homepage: www.elsevier.com/locate/watres
+https://doi.org/10.1016/j.watres.2024.122986
+Received 6 October 2024; Received in revised form 7 December 2024; Accepted 14 December 2024  
+Water Research 271 (2025) 122986 
+Available online 15 December 2024 
+0043-1354/© 2024 Elsevier Ltd. All rights are reserved, including those for text and data mining, AI training, and similar technologies. 
+
+lower cost (1 % of AgNPs) that could effectively inhibit the development 
+of bacteria and the formation of biofilm, while the bactericidal efficacy 
+is generally considered lower than that of AgNPs (Qiu et al., 2011).
+Recently, bimetallic AgCu nanoalloys have been synthesized and 
+demonstrated superior bactericidal efficacy to monometallic AgNPs and 
+CuNPs (Ciacotich et al., 2018). The antibacterial mechanisms of AgNPs 
+and CuNPs primarily involve physical disruption, release of metal ions, 
+and generation of oxidative stress (Kim et al., 2022a). The enhanced 
+antibacterial activity of bimetallic AgCuNPs is likely due to their unique 
+chemical compositions and microstructure features (Ciacotich et al., 
+2018). The sequential deposition of Cu2+ onto nascent AgNPs can 
+facilitate the release and secondary reduction of Ag+, leading to a 
+redistribution of NPs with varied Ag/Cu ratios, sizes, and morphologies 
+(Tao et al., 2022). Given the growing interest in modifications using Ag 
+and Cu for the development of antibiofouling membranes, it is crucial to 
+conduct a comparative analysis of the antimicrobial activities and 
+mechanisms of AgNPs, CuNPs, and their bimetallic AgCuNPs (Taner 
+et al., 2011). Notably, the bactericidal efficacy, biofouling resistance, 
+and performance stability of AgCuNPs-modified membranes in water 
+treatment applications have not been studied, presenting an opportunity 
+for further research.
+Bimetallic AgCuNPs can be synthesized through chemical reduction 
+with the assistance of microwave irradiation and electrochemical tech­
+niques, but they have not been widely applied to enhance the anti­
+biofouling properties of membrane materials. Monometallic AgNPs and 
+CuNPs can be incorporated into membranes by blending with monomers 
+or polymers during the membrane preparation process. However, the 
+potential agglomeration of NPs may induce defects and compromise the 
+structural integrity of membranes. The uniform distribution of NPs can 
+be achieved by in-situ synthesis using strong reducing agents (i.e., 
+NaBH4) (Rahaman et al., 2014), while this process should be carefully 
+controlled to prevent damage to the membrane materials. Polydopamine 
+(PDA), with abundant catechol groups that formed through the 
+self-polymerization of dopamine (Lynge et al., 2011; Ye et al., 2011), can 
+mildly reduce metal precursors to AgNPs or CuNPs on the membrane 
+surface (Yan et al., 2024; Yang et al., 2017; Zhao et al., 2024). The ad­
+hesive and hydrophilic nature of the PDA layer can further enhance the 
+nanoparticle stability and membrane hydrophilicity, synergistically 
+improving the membrane resistance to biofouling. In addition, poly­
+ethyleneimine (PEI), a polyelectrolyte with high charge density, is 
+conducive to co-deposit with PDA on the negatively charged substrate 
+(e.g., polysulfone and polyethersulfone), forming loose NF membranes 
+with high permeability (Wang et al., 2017). The amino groups in PEI are 
+beneficial to chelate with Cu2+, immobilizing CuNPs on the membrane 
+surface and controlling the release of biocidal ions into solutions (Bisset 
+et al., 2003).
+In this study, we integrated bimetallic AgCu nanoalloys into NF 
+membranes using an in-situ reduction and coordination method facili­
+tated by a PDA/PEI intermediate layer to enhance the membrane 
+biofouling resistance and performance stability. The physicochemical 
+properties, filtration efficiency, bactericidal activity, and anti-biofouling 
+capabilities of both bimetallic (AgCu) and monometallic (Ag and Cu) 
+NP-modified membranes were comprehensively investigated and 
+compared. Additionally, we evaluated the water treatment performance 
+stability of membranes and monitored the release rate of metal ions from 
+NPs during long-term operation. To elucidate the underlying antibac­
+terial mechanisms of the AgCu-modified membrane, we quantified the 
+reactive oxygen species (H2O2, •OH, and O2
+•–) that potentially gener­
+ated at the interface between the membrane and bacteria. This 
+comprehensive analysis aims to provide insights into the enhanced 
+antibacterial properties endowed by incorporating AgCu nanoalloys into 
+NF membranes.
+2. Materials and methods
+2.1. Materials and chemicals
+Polysulfone membranes (PSf, GC-UF0201) with molecular weight 
+cut-off of 20 kDa were provided by Guochu Technology (Xiamen, 
+China). Tris (hydroxymethyl) aminomethane (Tris, ≥99.9 %), dopa­
+mine hydrochloride (DA, ≥98.0 %), and PEI (Mw 600, ≥99.0 %) were 
+purchased from Aladdin. Sodium chloride (NaCl), potassium chloride 
+(KCl), hydrochloric acid (HCl), copper sulfate (CuSO4⋅5H2O), and so­
+dium hypochlorite solution (NaClO) were obtained from Komeo 
+Chemical Reagent (Tianjin, China). Silver nitrate (AgNO3) was pur­
+chased from Shanghai Test Laboratory Equipment Co., Ltd. Potassium 
+dihydrogen phosphate (KH2PO4), disodium hydrogen phosphate 
+(Na2HPO4), and sodium hydroxide (NaOH) were purchased from 
+Fengchuan Chemical Reagent Technology (Tianjin, China). Beef paste 
+was obtained from Jizhi Biochemical Technology (Shanghai, China). 
+Peptone (≥99.9 %) and agar powder (≥99.9 %) were obtained from 
+Hongrun Baoshun Technology (Beijing, China). Escherichia coli strain 
+(E. coli, ATCC25922) was obtained from the China Microbial Strain 
+Preservation Center. The LIVE/DEAD BacLight Bacterial Viability Kit 
+NucGreen: Ex/Em: 503/530 nm (with DNA) was purchased from Nergy 
+Chemical (Anhui, China). The deionized (DI) water was obtained from 
+laboratory ultra-pure water equipment.
+2.2. Membrane modification
+A schematic illustration of the membrane modification process is 
+shown in Fig. 1A. Initially, the PSf substrate was mounted in a stainless- 
+steel frame with the smooth side facing upwards. DA (2 g L-1) and PEI (2 
+g L-1) were dissolved in Tris buffer (pH = 8.5, 50 mM), and the mixture 
+was gently poured into the frame to interact with the membrane surface 
+on a shaker (80 rpm) at room temperature. The co-deposition of PDA/ 
+PEI proceeded for 8 h to obtain a uniform modification layer with 
+optimized water permeability and solute rejection (Text S1 and Fig. S1, 
+supporting information). The membrane was then thoroughly washed 
+using DI water to remove the residual modification solution and denoted 
+as the PDA/PEI membrane. Subsequently, the PDA/PEI membranes 
+were immersed in the metallic salt solutions for 4 h to obtain the AgNPs 
+and CuNPs modified membranes. The membrane modified with bime­
+tallic AgCuNPs (PDA/PEI-AgCu) was prepared by sequential metalliza­
+tion with AgNO3 and CuSO4. Before the CuSO4 treatment, the membrane 
+was thoroughly washed to ensure the complete removal of residual 
+AgNO3 from the membrane surface. Table 1 lists the fabrication for­
+mulas for the modified membranes.
+2.3. Membrane characterization
+Attenuated total reflection Fourier transform infrared spectroscopy 
+(ATR-FTIR, Nicoletis10) was used to analyze the functional groups in the 
+membranes within a wavenumber range of 700–3800 cm-1. The surface 
+elemental compositions of the membranes were determined using X-ray 
+photoelectron spectroscopy (XPS, K-alpha, Semel Fisher Technology). A 
+solid surface zeta potential analyzer (Surpass 3, Anton Paar) was 
+employed to measure the streaming potential on the membrane surface 
+across a pH range of 3–10. A KCl solution (1 mmol L-1) was prepared as 
+the electrolyte solution with the pH value adjusted using 0.1 M NaOH 
+and 0.1 M HCl. The water contact angle of the membrane surface was 
+measured to evaluate the surface hydrophilicity of the membranes using 
+a contact angle tester (CM3250-DS3210, Kruess). Ten measurements at 
+different locations on each membrane sample were taken to determine 
+the average value. The morphological characteristics of the membrane 
+surfaces were observed by scanning electron microscopy (SEM, 
+TM3030, Hitachi, Japan) and atomic force microscopy (AFM, Multi­
+mode 3, Bruker). Elemental species and distributions on the membrane 
+W. Zhang et al.                                                                                                                                                                                                                                  
+Water Research 271 (2025) 122986 
+2 
+
+surfaces were characterized by energy-dispersive X-ray spectroscopy 
+(EDS, Genesis).
+2.4. Membrane performance test
+A crossflow filtration system (Fig. S2) was used to determine the 
+water flux and salt rejection of the membranes. The membrane samples 
+were pre-compacted under 0.5 MPa for 4 h using DI water at 25 ◦C. The 
+filtration performance of membranes was assessed using 1000 ppm 
+MgCl2 as the feed under the pressure of 0.4 MPa. The permeation flux J 
+(L m-2 h-1) and salt rejection R (%) of the membrane were calculated via 
+the following equations: 
+J = ΔV
+Δt A
+(1) 
+R = (1 −
+Cp
+Cf
+) × 100%
+(2) 
+Where ΔV is the volume of the collected permeate (L), Δt is the 
+permeation time (h), A is the effective area of the membrane samples 
+(m2), Cf and Cp are the salt concentrations (mg/L) in the feed and 
+permeate solutions, respectively.
+2.5. Stability assessment of AgNPs, CuNPs, and AgCu s
+The sustained release of ions (i.e., Ag+ and Cu2+) from membranes 
+modified with AgNPs, CuNPs, and AgCuNPs was evaluated using both 
+static immersion and dynamic filtration methods. In the static immer­
+sion test, the PDA/PEI-Cu, PDA/PEI-Ag, and PDA/PEI-AgCu membranes 
+with a dimension of 12 × 2.5 cm2 were immersed in 500 mL 5 % HNO3 
+solution and agitated at 80 rpm for 10 days. In the dynamic filtration 
+test, the membranes were operated at 0.4 MPa in a cross-flow filtration 
+equipment using 1000 mL 5 % HNO3 solution as the feed (Fig. S2). The 
+permeate solution was continuously returned to the feed tank to main­
+tain a consistent feed volume. The concentration of the released Ag+ and 
+Cu2+ in the solution was measured daily using inductively coupled 
+plasma mass spectrometry (ICP-MS, Agilent), and the solution was 
+refreshed with 5 % HNO3 solution every day.
+2.6. Antibacterial capability evaluation
+E. coli was used as a model biological contaminant to assess the 
+antibacterial efficiency of the membrane samples through diffusion in­
+hibition zone test, colony counting method, and fluorescence micro­
+scopy characterization. Prior to the experiment, E. coli needs to be 
+activated and enriched, and the detailed procedures are described in 
+Text S2.
+2.6.1. Bacteriostatic circle assay
+Membrane samples were cut into pieces with a diameter of 4 cm and 
+illuminated by ultraviolet for 30 min to sterilize before the experiment. 
+A culture suspension (100 μL) of the tested microorganism (about 106 
+colony-forming units (CFU)) was spread over the LB agar plates. Mem­
+brane samples were placed onto the plates with the functional layers in 
+contact with the agar, and the plates were incubated at 37 ◦C for 12 h
+2.6.2. Colony counting method
+The membrane sample with an area of 1.5 × 3 cm2 was sterilized for 
+30 min and then immersed in 50 mL bacteria suspension (107 CFU 
+mL−1). Following a 2-h incubation at 37 ◦C, 100 μL of the bacterial 
+suspension was pipetted out and diluted 1000 times with sterile DI 
+water. Then, 200 μL of the diluted bacterial suspension was evenly 
+spread onto the LB agar plates. After incubation at 37 ◦C for 12 h, the 
+bacteriostatic rate (G) of the membrane was calculated by the following 
+equation: 
+G = (1 −Nm/N0) × 100%
+(3) 
+where N0 and Nm are the colony numbers on the LB agar plate cultured 
+without and with membrane samples, respectively.
+2.6.3. Anti-adhesion property
+The anti-adhesion properties of membranes were assessed by live 
+bacteria count (Jeon and Lee, 2020) using a fluorescence microscopy 
+(LSM900, Carl Zeiss) equipped with a 10 × immersion objective under 
+green fluorescent light (480 nm (excitation)/500 nm (emission) wave­
+length). The experimental procedure is described as follows: membrane 
+samples removed from the bacterial suspension (described in Section 
+2.6.2) were rinsed thoroughly using the PBS solution to remove unat­
+tached bacteria and impurities, and then the membrane sample was 
+Fig. 1. (A) Schematic view for the membrane modification procedure and (B) reactions in the modification process.
+Table 1 
+Formulas for the modified membranes.
+Membrane
+DA (g L-1)
+PEI (g L-1)
+AgNO3 (mM)
+CuSO4 (mM)
+PDA
+2
+0
+0
+0
+PDA/PEI
+2
+2
+0
+0
+PDA/PEI-Ag
+2
+2
+25
+0
+PDA/PEI-Cu
+2
+2
+0
+25
+PDA/PEI-AgCu
+2
+2
+25
+25
+W. Zhang et al.                                                                                                                                                                                                                                  
+Water Research 271 (2025) 122986 
+3 
+
+stained with 200 μL of fluorescent dyes (Live/Dead BacLight Bacterial 
+Viability Kit, A.NucGreen, Energy Chemical).
+2.6.4. Dynamic biofouling experiments
+The biofouling resistance of the commercial and modified NF 
+membranes was evaluated through dynamic biofouling experiments 
+using E. coli as the model microorganism. Before the experiment, the 
+filtration system (Fig. S2) was thoroughly washed using NaClO (0.5 mg 
+L−1), EDTA (5 mmol), and ethanol (95 %, v/v). The membrane was pre- 
+compacted under 0.5 MPa for 4 h with DI water at 25 ◦C, then a solution 
+consisting of 0.85 % NaCl and 0.6 mmol glucose was introduced and 
+recirculated at 0.4 MPa until the system reached equilibrium. The initial 
+E. coli concentration was ~106 CFU mL−1, and the solution temperature 
+was maintained at 25 ± 1 ◦C during the biofouling experiment. The 
+permeation flux was measured every 30 min. After 360 min of 
+biofouling, the system was washed with DI water for 30 min, and the 
+feed solution was refreshed. The flux recovery ratio (FRR) and flux 
+decline ratio (FDR) were used to evaluate the biofouling propensity of 
+membranes. 
+FRR = (Je/J0) × 100%
+(4) 
+FDR = (J0 −Jt)/J0 × 100%
+(5) 
+Where Je is the recovered flux after hydro-cleaning, J0 is the initial 
+flux, and Jt is the flux after the 360-min biofouling.
+2.7. ROS determination
+2.7.1. Hydrogen peroxide (H2O2)
+The concentration of extracellular H2O2 was determined using the N, 
+N-diethylop-phenylenediamine (DPD)/horseradish peroxidase (POD) 
+method (Li et al., 2022). Firstly, the DPD solution (10 g l-1) and POD 
+solution (1 g l-1) were prepared by dissolving 0.10 g of DPD in 100 mL of 
+H2SO4 solution (0.05 mol l-1) and dissolving 1 mg of POD in 10 mL of DI 
+water, respectively. Then, 200 μL PBS buffer (0.5 M, pH = 6.8) was 
+added into 2 mL extracellular fluid, followed by adding 37 μL DPD and 
+37 μL POD solutions. Finally, the samples were examined by an ultra­
+violet spectrophotometer at a wavelength of 551 nm.
+2.7.2. Hydroxyl radical (•OH)
+The generation of •OH was assessed by benzoic acid (BA) through 
+high-performance liquid chromatography (Zhang et al., 2016). BA is a 
+common probe molecule for detecting •OH and was used to capture •OH 
+in our study. The wavelength for the measurements was set at 255 nm. 
+The •OH concentration can be obtained using the following equation: 
+[•OH] = [p −HBA] × 5.87
+(6) 
+Where [p-HBA] is the concentration of hydroxybenzoic acid (p-HBA, 
+mM) produced from the oxidation of BA by •OH.
+2.7.3. Superoxide radical anions (O2
+•–)
+The superoxide radical anions (O2
+•–) were measured by colorimetric 
+assay (Stenuit et al., 2012) using nitro blue tetrazolium ion (NBT2+), 
+which could be reduced by O2
+•– to a stable product with 
+k(NBT2+/O•−
+2 ) = 5.88 × 10−4 M-1S-1. Blank experiments were taken with 
+the addition of 50 μM NBT into the extracellular fluid without mem­
+branes, and the absorbance at 560 nm was recorded every 10 s for 5 min 
+with a spectrophotometer (T6 New Century Series). Then, 1 mM NADH 
+and 50 μM NBT were added to the extracellular fluid of the samples with 
+phosphate buffer (pH 7.4). The O2
+•– generation rate could be repre­
+sented by the slope of the curve (absorbance vs. time).
+3. Results and discussion
+3.1. Membrane characterization
+3.1.1. Membrane morphologies
+The morphological characteristics of membrane surfaces before and 
+after modification were visualized by SEM and AFM (Fig. 2 and 3). The 
+PSf substrate (Fig. 2a) exhibited a uniform and smooth surface. In 
+contrast, dispersive agglomerations were formed on the membrane 
+surface after PDA deposition (Fig. 2b), which can be attributed to the 
+combined effects of oxidation, covalent crosslinking via self- 
+polymerization, and non-covalent aggregation of PDA (Li et al., 2021; 
+Park et al., 2017). The surface roughness (Fig. 3f) of the PDA-modified 
+membrane (Rq = 54.5 nm) was significantly higher than that of the 
+PSf substrate (Rq = 12.5 nm), which was consistent with the SEM im­
+ages. The amine groups in PEI with flexible polymer chains can chelate 
+with PDA (Wang et al., 2023b), thus promoting PDA dispersion and 
+preventing the formation of large particles. Consequently, the 
+co-deposition of PEI and PDA induced a smoother membrane surface 
+(Fig. 2c and Fig. 3b) with reduced roughness (Rq = 19.4 nm).
+Scattered granules were observed on the surfaces of the PDA/PEI-Ag 
+(Fig. 2d) and PDA/PEI-Cu (Fig. 2e) membranes, indicating the formation 
+of aggregated AgNPs and CuNPs through in-situ reduction of Ag+ and 
+Cu2+ by chelating with PDA/PEI (the proposed reactions as shown in 
+Fig. 1B) (Amantay et al., 2023). The average size of the aggregated 
+AgNPs (~260 nm, Fig. 2d) was larger than that of the CuNPs (~140 nm, 
+Fig. 2e), resulting in a rougher surface on the PDA/PEI-Ag membrane 
+(Rq = 48.7 nm, Fig. 3c) compared to the PDA/PEI-Cu (Rq = 25.9 nm, 
+Fig. 3d). Notably, the incorporation of bimetallic AgCuNPs formed 
+abundant core-shell structured particles on the PDA/PEI-AgCu mem­
+brane surface (Huang et al., 2020; Li et al., 2018) (Fig. 2f) with a Rq of 
+31.7 nm (Fig. 3e and f). This morphological feature is likely because the 
+nascent AgNPs can catalyze the reduction of Cu2+, which facilitates the 
+release and secondary reduction of Ag+, leading to a redistribution of 
+NPs with varied AgCuNP morphologies (Tao et al., 2022; Zhou et al., 
+2022). Additionally, the nascent AgNPs can react with Cu2+ to form 
+Cu2O and AgCuNPs complexes (Fig. 1B) with small sizes (~60 nm, 
+Fig. 3f) (Tao et al., 2022; Zhou et al., 2022). EDS images (Fig. 4) further 
+confirmed the relatively uniform loading of Ag and/or Cu on the 
+PDA/PEI-Ag (Fig. 4e), PDA/PEI-Cu (Fig. 4b), and PDA/PEI-AgCu 
+(Fig. 4c and 4f) membrane surfaces.
+3.1.2. Surface chemical compositions
+The chemical compositions of the membranes were analyzed by 
+ATR-FTIR spectra (Fig. 5a). In contrast to the PSf substrate, new broad 
+peaks emerged within the wavenumber range of 3108–3743 cm-1 for the 
+PDA/PEI, PDA/PEI-Ag, PDA/PEI-Cu, and PDA/PEI-AgCu membranes, 
+which were attributed to the stretching vibrations of hydrogen bonds 
+associated with O–H/N–H groups from the PDA/PEI deposition (Shi 
+et al., 2016; Wang et al., 2023b). C = N bonds at 2230 and 1660 cm-1 
+indicated the formation of Schiff base structures through reactions be­
+tween the amino groups in PEI and quinone moieties of PDA (Wang 
+et al., 2023b). Besides, the bands at 1620 and 1490 cm-1 were assigned 
+to the C = O stretching vibrations (Lv et al., 2018). Above all, the FTIR 
+spectra demonstrated the successful deposition of PDA and PEI onto the 
+PSf substrate. Negligible differences were observed on the PDA/PEI, 
+PDA/PEI-Ag, PDA/PEI-Cu, and PDA/PEI-AgCu membranes.
+The surface elemental composition of the membranes was analyzed 
+before and after modification using XPS spectra (Fig. 5b–f and Table 2). 
+The deposition of PDA/PEI induced a notable increase in the atomic 
+percentage of nitrogen to 16.2 %, along with significant reductions in 
+the carbon percentage (from 73.9 to 70.2 %) and O/N ratio (from 2.0 to 
+0.8), which further confirmed the successful grafting of PDA and PEI 
+onto the membrane surface (PDA/PEI) (Karan and Livingston, 2015; 
+Yang et al., 2020). After incorporating AgNPs and/or CuNPs, discern­
+able signals at ~360–380 eV and ~920–980 eV were observed, which 
+W. Zhang et al.                                                                                                                                                                                                                                  
+Water Research 271 (2025) 122986 
+4 
+
+are assigned to the Ag3d and Cu2p characteristic peaks, respectively 
+(Feng et al., 2021; Wang et al., 2023a). The high-resolution XPS spectra 
+of the Ag element on the PDA/PEI-Ag (Fig. 5c) and PDA/PEI-AgCu 
+(Fig. 5d) membranes revealed doublet peaks at 368 and 374 eV (Δ =
+6 eV), emerging from the spin-orbital splitting of the Ag 3d5/2 and Ag 
+3d3/2 core levels. These peaks corresponded to the higher oxidation state 
+Ag+ and the lower oxidation state Ag0, which was generated by the 
+reduction of catechol groups in PDA (Xie et al., 2022).
+In the high-resolution XPS spectra of the PDA/PEI-Cu (Fig. 5e) and 
+PDA/PEI-AgCu (Fig. 5f) membranes, four characteristic peaks associ­
+ated with the Cu element were identified, including two Cu(II) satellite 
+peaks and two major peaks in the Cu2p region (i.e., the Cu2p1/2 orbital 
+at 953.8 eV and the Cu2p3/2 orbital at 934.2 eV). The deconvoluted 
+peaks at 952.9 eV (Cu2p1/2) and 931.3 eV (Cu2p3/2) were assigned to 
+the lower oxidation states of Cu (Cu0 and Cu+) (Ji et al., 2023). The 
+elemental percentages of Cu in various oxidation states were listed in 
+Table 3, revealing that nearly half of the total Cu element was reduced to 
+Cu0 and Cu+. Notably, the bimetallic PDA/PEI-AgCu membrane 
+exhibited a higher metal elemental percentage (Cu ~1.9 % and Ag ~2.5 
+%) than the monometallic modified membranes, i.e., PDA/PEI-Cu (Cu 
+~1.5 %) and PDA/PEI-Ag (Ag ~2.3 %). Additionally, the percentage of 
+reduced Cu (Cu0 and Cu⁺) was also higher in the bimetallic membrane 
+(55.2 %) than in the monometallic ones (50.7 %). This enhancement is 
+attributed to the catalytic effect of AgNPs on the reduction of Cu2+ ions, 
+and the released Ag+ ions were reduced by PDA/PEI and aggregated to 
+form new AgNPs (Fig. 1B) (Tao et al., 2022).
+Fig. 2. SEM images of the membrane surfaces before and after modification. (a) PSf, (b) PDA, (c) PDA/PEI, (d) PDA/PEI-Ag, (e) PDA/PEI-Cu, and (f) PDA/PEI- 
+AgCu membranes.
+Fig. 3. AFM morphologies of the (a) PDA, (b) PDA/PEI, (c) PDA/PEI-Ag, (d) PDA/PEI-Cu, and (e) PDA/PEI-AgCu membranes. (f) Roughness parameters, i.e., the 
+mean-square roughness (Rq) and average roughness (Ra), of the membranes.
+W. Zhang et al.                                                                                                                                                                                                                                  
+Water Research 271 (2025) 122986 
+5 
+
+3.1.3. Surface charge and hydrophilicity
+As shown in Fig. 6a, the surface zeta potential of membranes was 
+measured across a pH range of 3–10. The surface charge decreased with 
+the increase of pH due to the ionization of functional groups on the 
+membranes (Kim et al., 2022b; Liu et al., 2023). The isoelectric point of 
+the PDA/PEI membrane (3.7) was higher than that of the PSf substrate 
+(3.2), attributing to the deprotonation behavior of abundant amino 
+Fig. 4. The EDS mapping of (a) C, S, O, Cu, and Ag elements, (b) O element, (c) Cu element, and (d) Ag element of the PDA/PEI-AgCu membrane, (e) Cu element of 
+the PDA/PEI-Cu membrane, and (f) Ag element of the PDA/PEI-Ag membrane.
+Fig. 5. (a) ATR-FTIR spectra and (b) XPS survey of the membranes before and after modification. (c) and (d) are the XPS Ag3d spectra of the PDA/PEI-Ag and PDA/ 
+PEI-AgCu membranes, respectively. (e) and (f) are the XPS Cu2p spectra of the PDA/PEI-Cu and PDA/PEI-AgCu membranes, respectively.
+Table 2 
+Surface elemental composition of membranes before and after modification.
+Membranes
+C (%)
+N (%)
+O (%)
+S (%)
+Cu (%)
+Ag (%)
+O/N
+PSf
+73.9
+8.2
+16.5
+1.4
+–
+–
+2.0
+PDA/PEI
+70.2
+16.2
+13.4
+0.2
+–
+–
+0.8
+PDA/PEI-Ag
+69.8
+15.1
+11.8
+1.0
+–
+2.3
+0.8
+PDA/PEI-Cu
+62.6
+14.2
+20.3
+1.4
+1.5
+–
+1.4
+PDA/PEI- 
+AgCu
+61.5
+13.8
+18.8
+1.5
+1.9
+2.5
+1.4
+Table 3 
+Cu elemental percentage with different oxidation states of PDA/PEI-Cu and 
+PDA/PEI-AgCu membranes.
+Membrane
+Cu 2p2/3
+Cu2+
+satellite 
+peak
+Cu 2p1/2
+Cu0 +
+Cu+
+Cu2+
+Cu0 +
+Cu+
+Cu2+
+Cu0 +
+Cu+
+Cu2+
+PDA/PEI- 
+Cu
+34.8 
+%
+25.3 
+%
+14.5 %
+15.9 
+%
+9.4 
+%
+50.7 
+%
+49.3 
+%
+PDA/PEI- 
+AgCu
+38.0 
+%
+22.8 
+%
+11.5 %
+17.2 
+%
+10.5 
+%
+55.2 
+%
+44.8 
+%
+W. Zhang et al.                                                                                                                                                                                                                                  
+Water Research 271 (2025) 122986 
+6 
+
+groups under acidic conditions (Shi et al., 2016). Following the depo­
+sition of silver and copper, the isoelectric point of the PDA/PEI-Ag and 
+PDA/PEI-Cu membranes further increased to pH 4.7 and pH 5.1, 
+respectively, which likely due to the presence of charged metal ions on 
+the membrane surfaces (Fig. 5b–f, Tables 2–3) (Li et al., 2015). Addi­
+tionally, the coordination of metallic ions (Ag+, Cu+, and Cu2+) with the 
+phenolic hydroxyl, carbonyl, and amine groups within the PDA/PEI 
+chains can suppress their dissociation under alkaline conditions. 
+Consequently, the PDA/PEI-AgCu membrane exhibited the relatively 
+higher isoelectric point at pH 5.8 than the parallel monometallic 
+NP-modified membranes.
+Membrane surface hydrophilicity significantly influences membrane 
+performances, such as water permeability and resistance to fouling (Reid 
+et al., 2014). The presence of hydrophilic groups in PDA (hydroxyl and 
+amino groups) and PEI (amino groups) chains (Wei et al., 2010; Zhao 
+et al., 2015) enhanced the membrane surface hydrophilicity, resulting in 
+reduced water contact angles after modification (Fig. 6b). The water 
+contact angles for the membrane surfaces with incorporated AgNPs 
+(42.1 ± 2.4
+◦) and CuNPs (48.1 ± 1.3
+◦) were slightly higher than that of 
+the PDA/PEI membrane (38.7 ± 0.2
+◦), possibly due to the coordination 
+of metallic ions with these hydrophilic groups (Jin et al., 2022). In 
+addition, Cu has a greater ability to occupy coordination sites than Ag. 
+As a result, the water contact angle of the PDA/PEI-AgCu membrane fell 
+between those of the PDA/PEI-Cu and PDA/PEI-Ag membranes.
+Fig. 6. (a) Zeta potential and (b) water contact angle of the membrane surfaces before and after modification.
+Fig. 7. (a) Separation performance for different membranes, (b) performance stability for long term filtration, and the release of metal ions (Cu2+ and Ag+) from (c) 
+static immersion and (d) dynamic filtration tests.
+W. Zhang et al.                                                                                                                                                                                                                                  
+Water Research 271 (2025) 122986 
+7 
+
+3.2. Membrane performance and stability
+The separation performance of the modified membranes, including 
+water permeability and rejection for various solutes (Na2SO4, NaCl, 
+MgSO4, and MgCl2), is shown in Fig. 7a. The water permeability of the 
+PSf substrate reduced dramatically from 214.6 to 30.5 L m-2 h-1 bar-1 
+following the deposition of PDA/PEI (Wang et al., 2023b). Incorporating 
+AgNPs and CuNPs into the membrane further decreased the water 
+permeability while simultaneously enhancing salt rejection rates. 
+Compared to the monometallic-modified membranes, i.e., AgNPs 
+(PDA/PEI-Ag, 11.5 L m-2 h-1 bar-1) and CuNPs (PDA/PEI-Cu, 10.6 L m-2 
+h-1 bar-1), the bimetallic-modified PDA/PEI-AgCu membrane exhibited 
+higher water permeability (15.6 L m-2 h-1 bar-1) attributed to the for­
+mation of NPs with smaller sizes (Fig. 2f). Notably, the NaCl rejection 
+rate of the PDA/PEI-AgCu membrane remained unaffected. In contrast, 
+the PDA/PEI-AgCu membrane exhibited increased rejections for salts 
+with larger sizes and higher charges (i.e., Na2SO4, MgCl2, and MgSO4). 
+The PDA/PEI-AgCu membrane presented a significantly reduced mo­
+lecular weight cut-off (MWCO = 325 Da) compared to the PDA/PEI-Ag 
+(MWCO = 448 Da) and PDA/PEI-Cu (MWCO = 408 Da) membranes 
+(Fig. S3 and Table S1), indicating that the size exclusion is the major 
+rejection mechanism of the modified membranes.
+Compared to the commercial NF-270 membrane, the PDA/PEI-AgCu 
+membrane presented comparable water permeability. Besides, the 
+rejection of MgCl2 for the PDA/PEI-AgCu (89.1 %) was significantly 
+higher than that of the NF-270 (42.2 %), which was attributed to the 
+surface charge difference of the two membranes. As shown in Fig. 6a, the 
+PDA/PEI-AgCu membrane had a significantly higher isoelectric point 
+compared to the NF-270 (5.84 vs. 3.3) (Chidambaram et al., 2015). The 
+less negatively charged surface of the PDA/PEI-AgCu membrane resul­
+ted in a stronger electrostatic repulsion for high valence cations (i.e., 
+Mg2+) (Karan and Livingston, 2015; Liang et al., 2023), leading to a 
+higher selectivity of MgCl2/NaCl by the PDA/PEI-AgCu (5.12) than the 
+NF-270 membrane (2.1) in Fig. S4.
+The release of Ag+ and Cu2+ from AgNPs and CuNPs incorporated 
+into composite membranes can potentially influence the filtration per­
+formance and anti-biofouling properties of the membranes (Rousse 
+et al., 2016). The filtration performance (water flux and solute rejection) 
+of the modified membranes was monitored for 10 days to evaluate 
+performance stability (Fig. 7b). All the modified membranes maintained 
+their water flux throughout the 10-day operation. However, the rejec­
+tion rates of MgCl2 for the PDA/PEI-Ag and PDA/PEI-Cu membranes 
+gradually decreased during the initial 5 days, eventually stabilizing at a 
+rejection rate of 75–80 %. In contrast, the PDA/PEI-AgCu membrane 
+exhibited a relatively stable and high MgCl2 rejection rate of about 90 % 
+during the 10-day operation. Furthermore, the rejection of Na2SO4, 
+NaCl, and MgSO4 showed no significant decline (Fig. S5), indicating that 
+the bimetallic nanoparticles enhanced the stability of the membrane 
+performance.
+The decrease in MgCl2 rejection for the monometallic NP-modified 
+membranes was likely associated with the release of Ag+ and Cu2+
+ions (Fig. 7c and 7d). The remarkably high release rate of Ag⁺ ions 
+during the first five days can be attributed to the rapid leaching of 
+loosely bound Ag⁺ ions and Cu2⁺ ions (Jeon et al., 2021; Xu et al., 2020). 
+In both static immersion and dynamic filtration tests, the release pattern 
+of Ag+ and Cu2+ was found to be consistent with the variation trend of 
+MgCl2 rejection in Fig. 7b. Specifically, the release rate of metal ions 
+from monometallic NPs was significantly higher than that from the 
+bimetallic NPs and reached equilibrium after 4–5 days. Copper can be 
+readily oxidized, and the silver nanoparticles can be immobilized by the 
+CuOx NPs. In other words, the core-shell structure of the bimetallic 
+AgCuNPs can regulate the release of metal ions after the first five days, 
+thus promoting the long-term antibacterial property of the membrane 
+surface. Besides, the phenolic hydroxyl groups and amino groups within 
+the PDA/PEI chains can chelate with metallic NPs and further enhance 
+their stability.
+The release rate of Cu2+ ions in the NP-modified membranes was 
+higher than Ag+ ions, resulting in a higher Cu2+ concentration in the 
+permeate solution (Fig. S6). It has been reported that CuNPs are more 
+prone to release metal ions than AgNPs at equivalent concentrations 
+(Fan et al., 2021; Feng et al., 2021). After a 10-day dynamic crossflow 
+filtration, the cumulative release concentrations of Cu2+ and Ag+ in the 
+permeate solution were < 4 μg l-1 (Fig. S6b), which were much lower 
+than the drinking water standards established by the EPA and WHO 
+(1300 and 2000 μg l-1 for Cu2+, and 100 μg l-1 for Ag+, respectively) 
+(Istirokhatun et al., 2022)).
+3.3. Antimicrobial activity
+Inhibition zone assay, colony counting, and fluorescence microscopy 
+characterization were utilized to evaluate the antibacterial efficiency of 
+the NPs-modified membranes (Fig. 8). Bacteriostatic zones were not 
+observed surrounding the PSf substrate (Fig. 8a) or the commercial NF- 
+270 membrane (Fig. 8f). The PDA/PEI and PDA/PEI-Cu membrane 
+exhibited limited bactericidal effect against E. coli in this study (Fig. 8b 
+and 8d), although the phenolic hydroxyl groups, amino groups, and 
+Cu2+ in polymer chains and CuNPs have shown some antibacterial 
+ability in previous studies (Zhang et al., 2017). The monometallic AgNPs 
+demonstrated antimicrobial activity against E. coli, as evidenced by a 
+distinct bacteriostatic circle formed around the PDA/PEI-Ag membrane 
+(Fig. 8c). Notably, the bimetallic AgCuNPs displayed a significantly 
+enhanced antimicrobial activity, with the diameter of the inhibition 
+circle expanding from ~1.5 mm (Fig. 8c) to ~3 mm (Fig. 8e), which can 
+be attributed to the synergistic antibacterial effects of the AgCu nano­
+alloy (Fan et al., 2021; Yang et al., 2019).
+The antibacterial activity of the PDA/PEI-AgCu membrane was also 
+demonstrated by culturing E. coli colonies that detached from the 
+membrane surface and visualizing the viable E. coli cells using fluores­
+cence microscopy (Fig. 8A-F and Fig. 8I-VI). Following a 2-h exposure to 
+the E. coli suspension (107 CFU mL−1), the cells that contacted the 
+membrane surface were detached and cultured. As shown in Fig. 9a, the 
+sterilization rates of the PDA/PEI and NF-270 membranes were slightly 
+higher (20–25 %) than the PSf substrate (12 %), because the relatively 
+hydrophilic membrane surface partially hindered bacterial adhesion. 
+The bimetallic AgCuNP-modified membrane showed the highest steril­
+ization rate (> 99 %) as well as no visualized live cells (Fig. 8V) on the 
+membrane surface compared to the monometallic AgNP- and CuNP- 
+modified membranes (92 % and 65 %, Fig. 8III and IV), further con­
+firming the superior antibacterial activity of the PDA/PEI-AgCu 
+membrane.
+3.4. Biofouling reversibility
+E. coli. was selected as a model microorganism for dynamic 
+biofouling experiments to evaluate the biofouling resistance of modified 
+membranes. As shown in Fig. 9b, the water flux declined due to the 
+formation of biofilm, which resulted from the adsorption and growth of 
+bacteria. Compared to the commercial NF-270, the NP-modified mem­
+branes (PDA/PEI-Ag, PDA/PEI-Cu, and PDA/PEI-AgCu) showed a 
+slower decrease in membrane flux due to the bactericidal effect of AgNPs 
+and CuNPs. Notably, the PDA/PEI-AgCu membrane maintained the 
+highest water flux after the 6-h biofouling.
+After a 30-min cleaning using DI water, the NP-modified membranes 
+demonstrated significantly improved flux recovery rates (FRR) 
+compared to the NF-270 membrane. In addition, the bimetallic AgCuNP- 
+modified membrane exhibited the lowest flux decline rate (FDR) (16 %, 
+Fig. 9c) compared to the other membranes (PDA/PEI-Ag: 22 %, PDA/ 
+PEI-Cu: 25 %, NF-270: 31 %). The modification with bimetallic 
+AgCuNPs simultaneously improved the anti-biofouling property and 
+flux recovery capability of membranes, demonstrating an intensified 
+propensity for biofouling reversibility.
+W. Zhang et al.                                                                                                                                                                                                                                  
+Water Research 271 (2025) 122986 
+8 
+
+Fig. 8. Antimicrobial activity of the membranes. (a-f) Inhibition zone of the membranes against E. coli, (A-F) optical images for the E. coli colonies after exposure to 
+the membranes, and (I-VI) fluorescence microscopy of viable E. coli attached on the membrane surfaces (a, A and I: PSf substrate; b, B and II: PDA/PEI; c, C and III: 
+PDA/PEI-Ag; d, D and IV: PDA/PEI-Cu; e, E and V: PDA/PEI-AgCu; f, F and VI: NF-270).
+Fig. 9. (a) Sterilization rate of the membranes, (b) normalized flux decline during biofouling, (c) flux recovery rate (FRR) and flux decline rate (FDR) for membranes, 
+and (d) ROS production on the membrane surfaces.
+W. Zhang et al.                                                                                                                                                                                                                                  
+Water Research 271 (2025) 122986 
+9 
+
+3.5. Antibacterial mechanism analysis
+The reactive oxygen species (ROS) potentially generated at the 
+membrane and bacteria interface were quantified to elucidate the 
+antibacterial mechanism of the nanoparticles incorporated in the 
+membranes. As shown in Fig. 9d, the metallic NPs can generate a variety 
+of ROS, including H2O2, •OH, and O2
+•– (Fan et al., 2021; Lv et al., 2018). 
+The incorporation of AgCuNPs resulted in the highest ROS generation 
+(H2O2: 71.6 mmol l-1 m-2, •OH: 43.4 mmol l-1 m-2, and O2
+•–: 1.3 × 10–4) 
+compared to the CuNPs (H2O2: 49.3 mmol l-1 m-2, •OH: 37.0 mmol⋅L-1 
+m-2, and ⋅O2
+- : 1.2 × 10–4) and AgNPs (H2O2: 59.9 mmol l-1 m-2, •OH: 42.9 
+mmol l-1 m-2, and O2
+•–: 1.3 × 10–4). Specifically, the concentration of 
+H2O2 was ~2 times higher than that of the •OH produced on the surface 
+of both monometallic and bimetallic NPs. The AgCuNPs produced a 
+significantly higher amount of H2O2 and O2
+•– compared to AgNPs and 
+CuNPs, suggesting that these two ROS predominantly induced strong 
+oxidative stress responses, thus enhancing the antibacterial activity of 
+the PDA/PEI-AgCu membrane (Xie et al., 2022).
+In previous studies, the antibacterial activity of nanoparticles has 
+been attributed to two primary mechanisms, i.e., direct contact and 
+ROS-induced oxidative stress (García et al., 2021; Kim et al., 2022a). The 
+metallic ions (Cu2+ and Ag+) released from the nanoparticles can 
+directly interact with lipopolysaccharides and biological proteins on the 
+bacterial cell membrane, causing deactivation and loss of function (Yang 
+et al., 2023). In the meantime, the accumulation of intracellular Cu2+
+and Ag+ affects membrane integrity and disrupts osmotic pressure, 
+inducing cell disruption and leakage of bacteria contents (Slavin et al., 
+2017). ROS, generated from interactions between nanoparticles and 
+microorganisms, act as signal molecules associated with cell damage (Fu 
+et al., 2022).
+Fig. 10 illustrates the antimicrobial mechanisms of the PDA/PEI- 
+AgCu membrane. In this study, the AgCuNPs formed a core-shell struc­
+ture (Fig. 2f), with AgNPs at the core and CuNPs at the shell, resulting in 
+a metal-semiconductor heterostructure. Shielded by the copper oxide 
+shell layer, the AgCuNPs-modified membrane exhibited enhanced sta­
+bility and prolonged antibacterial properties (Fig. 7b-d). Considering 
+that the AgNPs have a lower Fermi energy level than that of copper oxide 
+(i.e., Cu2O), electrons are transferred from AgNPs (core layer) to copper 
+oxide (shell layer) until reaching a thermodynamic equilibrium (Guleria 
+et al., 2021; Shi et al., 2014). The charge transfer within AgCuNPs in­
+tensifies the generation of ROS (Fig. 9d) and release of Ag+, contributing 
+to a pronounced antimicrobial activity (Fig. 9a). Additionally, the 
+reduced nanoparticle sizes played a crucial role in enhancing antimi­
+crobial activity. The smaller size of AgCuNPs (Fig. 2f) than AgNPs 
+(Fig. 2d) and CuNPs (Fig. 2e) increased the surface area ratio of the 
+particles, which correlated with a higher number of active sites and 
+lower energy barriers, making them more effective at attacking the 
+bacterial cell membranes. Furthermore, the size reduction can be related 
+to the increased ROS generation, leading to serious oxidative stress 
+damage in the antimicrobial action of AgCuNPs. These synergistic 
+mechanisms collectively enhanced the antibacterial efficiency of the 
+PDA/PEI-AgCu membrane.
+4. Conclusion
+In this paper, we successfully incorporated bimetallic AgCu nano­
+alloys on the NF membrane surfaces in situ by reduction and chelation 
+with the PDA/PEI intermediate layer. The obtained AgCu-modified 
+membranes demonstrated significant enhancement in water treatment 
+performance, antibacterial activity, biofouling resistance, and perfor­
+mance stability. Compared to the monometallic Ag- or Cu-modified 
+membranes, uniform core-shell structured AgCuNPs with smaller sizes 
+were formed on the PDA/PEI layer, leading to improved water perme­
+ability, salt rejection, and performance stability, as well as reduced ion 
+release in the long-term operation. Additionally, the AgCuNP-modified 
+membrane exhibited comparable water permeability while improved 
+selectivity for separating MgCl2/NaCl compared to the commercial NF- 
+270 membrane (selectivity of 5.2 vs. 2.1), owing to the increased iso­
+electric point and stronger electrostatic repulsion for high valence cat­
+ions (i.e., Mg2+). The bimetallic AgCuNP-modified membrane also 
+displayed the highest sterilization rate (> 99 %) against E. coli compared 
+to monometallic AgNP- or CuNP-modified membranes, ascribing to the 
+substantial generation of ROS (H2O2: 71.6 mmol l-1 m-2, •OH: 43.4 mmol 
+l-1 m-2, and O2
+•–: 1.3 × 10–4) at the interface between the NPs and mi­
+croorganisms. The synergistic effects of the unique properties of 
+AgCuNPs such as structure, atomic composition, charge transfer, and 
+ROS generation significantly enhanced the antibacterial efficiency of the 
+AgCuNP-modified membrane. This study demonstrated a facile method 
+for modifying NF membranes with bimetallic AgCuNPs, resulting in 
+membranes with enhanced antibacterial activity and biofouling 
+reversibility, offering promising potential for water treatment 
+applications.
+Fig. 10. Schematic diagram for antimicrobial mechanisms of the PDA/PEI-AgCu membrane.
+W. Zhang et al.                                                                                                                                                                                                                                  
+Water Research 271 (2025) 122986 
+10 
+
+CRediT authorship contribution statement
+Wenjuan Zhang: Writing – review & editing, Writing – original 
+draft, Supervision, Conceptualization. Zhe Wang: Investigation, Data 
+curation. Zilong Zhao: Investigation, Data curation. Peizhi Wang: 
+Investigation. Shaopo Wang: Supervision, Project administration. Jun 
+Ma: Project administration. Wei Cheng: Writing – review & editing, 
+Validation, Project administration.
+Declaration of competing interest
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper.
+Acknowledgements
+The authors acknowledge the support from the National Natural 
+Science Foundation of China (No. 52100011, 52370060, and 
+52300082). The authors also thank for the support from the China 
+Postdoctoral Science Foundation (Grant Number: 2023M730881).
+Supplementary materials
+Supplementary material associated with this article can be found, in 
+the online version, at doi:10.1016/j.watres.2024.122986.
+Data availability
+Data will be made available on request.
+References
+Amantay, M., Ma, Y., Chen, L., osman, H., Mengping, L., Jiang, T., Zhou, T., Ye, T., 
+Wang, Y., 2023. Electrospinning fibers modified with near infrared light-excited 
+copper nanoparticles for antibacterial and bone regeneration. Adv. Mater. Interfaces. 
+10 (31), 2300113.
+Barry, M.C., Hristovski, K., Westerhoff, P., 2014. Membrane fouling by vesicles and 
+prevention through ozonation. Environ. Sci. Technol. 48 (13), 7349–7356.
+Bisset, W., Jacobs, H., Koshti, N., Stark, P., Gopalan, A., 2003. Synthesis and metal ion 
+complexation properties of a novel polyethyleneimine N-methylhydroxamic acid 
+water soluble polymer. React. Funct. Polym. 55 (2), 109–119.
+Chidambaram, T., Oren, Y., Noel, M., 2015. Fouling of nanofiltration membranes by dyes 
+during brine recovery from textile dye bath wastewater. Chem. Eng. J. 262, 
+156–168.
+Chung, T.-S., Zhang, S., Wang, K.Y., Su, J., Ling, M.M., 2012. Forward osmosis processes: 
+yesterday, today and tomorrow. Desalination. 287, 78–81.
+Ciacotich, N., Din, R.U., Sloth, J.J., Møller, P., Gram, L., 2018. An electroplated 
+copper–silver alloy as antibacterial coating on stainless steel. Surf. Coat. Technol. 
+345, 96–104.
+Fan, X., Yahia, L.H., Sacher, E., 2021. Antimicrobial properties of the Ag. Cu Nanopart. 
+Syst. Biol. 10 (2), 137.
+Feng, H., Wang, W., Wang, W., Zhang, M., Wang, C., Ma, C., Li, W., Chen, S., 2021. 
+Charge transfer channels of silver @ cuprous oxide heterostructure core-shell 
+nanoparticles strengthen high photocatalytic antibacterial activity. J. Coll. Interf. 
+Sci. 601, 531–543.
+Fu, S., Zhang, Y., Yang, Y., Liu, X., Zhang, X., Yang, L., Xu, D., Wang, F., Qin, G., 
+Zhang, E., 2022. An antibacterial mechanism of titanium alloy based on micro-area 
+potential difference induced reactive oxygen species. J. Mater. Sci. Technol. 119, 
+75–86.
+García, A., Rodríguez, B., Giraldo, H., Quintero, Y., Quezada, R., Hassan, N., Estay, H., 
+2021. Copper-modified polymeric membranes for water treatment: a comprehensive 
+review. Membranes. (Basel) 11 (2), 93.
+Guleria, A., Sharma, R., Singh, A., Upadhyay, N.K., Shandilya, P., 2021. Direct dual-Z- 
+scheme PANI/Ag2O/Cu2O heterojunction with broad absorption range for 
+photocatalytic degradation of methylene blue. J. Water. Process. Eng. 43, 102305.
+Huang, X., Chen, Y., Feng, X., Hu, X., Zhang, Y., Liu, L., 2020. Incorporation of oleic acid- 
+modified Ag@ZnO core-shell nanoparticles into thin film composite membranes for 
+enhanced antifouling and antibacterial properties. J. Memb. Sci. 602, 117956.
+Istirokhatun, T., Lin, Y., Shen, Q., Guan, K., Wang, S., Matsuyama, H., 2022. Ag-based 
+nanocapsule-regulated interfacial polymerization Enables synchronous 
+nanostructure towards high-performance nanofiltration membrane for sustainable 
+water remediation. J. Memb. Sci. 645, 120196.
+Jeon, S., Lee, J.-H., 2020. Rationally designed in-situ fabrication of thin film 
+nanocomposite membranes with enhanced desalination and anti-biofouling 
+performance. J. Memb. Sci. 615, 118542.
+Jeon, S., Shin, S.S., Park, C.H., Lee, J.-H., 2021. Star polymer-mediated in-situ synthesis 
+of silver-incorporated reverse osmosis membranes with excellent and durable 
+biofouling resistance. J. Memb. Sci. 639, 119778.
+Ji, X., Wu, Y., Han, Y., Liang, B., Cheng, Y., Zheng, J., Guo, S., Li, C., Xu, H., 2023. 
+Synergistic antibacterial study of nano-Cu2O/CuO@Ag-tetracycline composites. 
+Mater. Chem. Phys. 306, 127904.
+Jin, P., Mattelaer, V., Yuan, S., Bassyouni, M., Simoens, K., Zhang, X., Ceyssens, F., 
+Bernaerts, K., Dewil, R., Van der Bruggen, B., 2022. Hydrogel supported positively 
+charged ultrathin polyamide layer with antimicrobial properties via Ag 
+modification. Sep. Purif. Technol. 284, 120295.
+Johnson, D.J., Hilal, N., 2022. Nanocomposite nanofiltration membranes: state of play 
+and recent advances. Desalination. 524, 115480.
+Karan, S.J., Livingston, A.G, 2015. Sub–10 nm polyamide nanofilms with ultrafast 
+solvent transport for molecular separation. Science 348 (6241).
+Kim, A., Hak Kim, J., Patel, R., 2022a. Modification strategies of membranes with 
+enhanced Anti-biofouling properties for wastewater treatment: a review. Bioresour. 
+Technol. 345, 126501.
+Kim, J., Yun, E.-T., Tijing, L., Shon, H.K., Hong, S., 2022b. Mitigation of fouling and 
+wetting in membrane distillation by electrical repulsion using a multi-layered single- 
+wall carbon nanotube/polyvinylidene fluoride membrane. J. Memb. Sci. 653, 
+120519.
+Li, H., Peng, L., Luo, Y., Yu, P., 2015. Enhancement in membrane performances of a 
+commercial polyamide reverse osmosis membrane via surface coating of 
+polydopamine followed by the grafting of polyethylenimine. RSC Adv. 5 (119), 
+98566–98575.
+Li, M., Qin, X., Gao, M., Li, T., Lv, Y., 2022. Graphitic carbon nitride and carbon 
+nanotubes modified active carbon fiber cathode with enhanced H2O2 production and 
+recycle of Fe3+/Fe2+ for electro-Fenton treatment of landfill leachate concentrate. 
+Environmen. Sci.: Nano 9 (2), 632–652.
+Li, R., Wu, Y., Shen, L., Chen, J., Lin, H., 2018. A novel strategy to develop antifouling 
+and antibacterial conductive Cu/polydopamine/polyvinylidene fluoride membranes 
+for water treatment. J. Coll. Interf. Sci. 531, 493–501.
+Li, Y., Zhang, X., Yang, A., Jiang, C., Zhang, G., Mao, J., Meng, Q., 2021. Polyphenol 
+etched ZIF-8 modified graphene oxide nanofiltration membrane for efficient removal 
+of salts and organic molecules. J. Memb. Sci. 635, 119521.
+Liang, J., Wang, W., Zeng, F., 2023. The purification and concentration of amoxicillin by 
+novel alkali-sensitive polypiperazine amide/polysulfate composite nanofiltration 
+membranes. Sep. Purif. Technol. 326, 124824.
+Liu, H., Song, X., Zhang, C., 2023. Tailor-made highly negatively charged nanofiltration 
+membrane prepared by polyphenol derivatives for anionic dye/salt separation. 
+J. Water. Process. Eng. 54, 104068.
+Long, M., Yang, C., You, X., Zhang, R., Yuan, J., Guan, J., Zhang, S., Wu, H., Khan, N.A., 
+Kasher, R., 2021. Electrostatic enhanced surface segregation approach to self- 
+cleaning and antifouling membranes for efficient molecular separation. J. Memb. 
+Sci. 638, 119689.
+Lv, Y., Du, Y., Chen, Z.-X., Qiu, W.-Z., Xu, Z.-K., 2018. Nanocomposite membranes of 
+polydopamine/electropositive nanoparticles/polyethyleneimine for nanofiltration. 
+J. Memb. Sci. 545, 99–106.
+Lynge, M.E., van der Westen, R., Postma, A., St¨adler, B., 2011. Polydopamine—a nature- 
+inspired polymer coating for biomedical science. Nanoscale 3 (12), 4916–4928.
+Park, H.B., Kamcev, J., Robeson, L.M., Elimelech, M., Freeman, B.D., 2017. Maximizing 
+the right stuff: the trade-off between membrane permeability and selectivity. Science 
+(1979) 356 (6343).
+Qiu, J.-H., Zhang, Y.-W., Zhang, Y.-T., Zhang, H.-Q., Liu, J.-D., 2011. Synthesis and 
+antibacterial activity of copper-immobilized membrane comprising grafted poly(4- 
+vinylpyridine) chains. J. Coll. Interf. Sci. 354 (1), 152–159.
+Rahaman, M.S., Th´erien-Aubin, H., Ben-Sasson, M., Ober, C.K., Nielsen, M., 
+Elimelech, M., 2014. Control of biofouling on reverse osmosis polyamide membranes 
+modified with biocidal nanoparticles and antifouling polymer brushes. J. Mater. 
+Chem. B 2 (12), 1724–1732.
+Reid, K., Dixon, M., Pelekani, C., Jarvis, K., Willis, M., Yu, Y., 2014. Biofouling control by 
+hydrophilic surface modification of polypropylene feed spacers by plasma 
+polymerisation. Desalination 335 (1), 108–118.
+Rousse, C., Josse, J., Mancier, V., Levi, S., Gangloff, S.C., Fricoteaux, P., 2016. Synthesis 
+of copper–silver bimetallic nanopowders for a biomedical approach; study of their 
+antibacterial properties. RSC Adv. 6 (56), 50933–50940.
+Shi, H., Xue, L., Gao, A., Fu, Y., Zhou, Q., Zhu, L., 2016. Fouling-resistant and adhesion- 
+resistant surface modification of dual layer PVDF hollow fiber membrane by 
+dopamine and quaternary polyethyleneimine. J. Memb. Sci. 498, 39–47.
+Shi, L., Liang, L., Ma, J., Wang, F., Sun, J., 2014. Enhanced photocatalytic activity over 
+the Ag2O–g-C3N4 composite under visible light. Catal. Sci. Technol. 4 (3), 758–765.
+Slavin, Y.N., Asnis, J., H¨afeli, U.O., Bach, H., 2017. Metal nanoparticles: understanding 
+the mechanisms behind antibacterial activity. J. Nanobiotechnol. 15, 1–20.
+Stenuit, B., Lamblin, G., Cornelis, P., Agathos, S.N., 2012. Aerobic Denitration of 2,4,6- 
+Trinitrotoluene in the presence of phenazine compounds and reduced pyridine 
+nucleotides. Environ. Sci. Technol. 46 (19), 10605–10613.
+Taner, M., Sayar, N., Yulug, I.G., Suzer, S., 2011. Synthesis, characterization and 
+antibacterial investigation of silver–copper nanoalloys. J. Mater. Chem. 21 (35), 
+13150–13154.
+Tao, Y., Zhou, F., Wang, K., Yang, D., Sacher, E., 2022. AgCu NP formation by the Ag NP 
+catalysis of cu ions at room temperature and their antibacterial efficacy: a kinetic 
+study. Molecules. 27 (20), 6951.
+Wang, B., Tian, Y., Yang, T., Yuan, G., Liao, X., You, X., Liao, Y., 2023a. Membrane 
+biofouling mitigation via immobilizing AgNPs@ZIF-8 microcapsules on membrane 
+surface for extractive membrane bioreactor. J. Environ. Chem. Eng. 11 (3), 109899.
+W. Zhang et al.                                                                                                                                                                                                                                  
+Water Research 271 (2025) 122986 
+11 
+
+Wang, D., Li, S., Li, F., Li, J., Li, N., Wang, Z., 2021. Thin film nanocomposite membrane 
+with triple-layer structure for enhanced water flux and antibacterial capacity. Sci. 
+Total Environ. 770, 145370.
+Wang, J., Zhu, J., Tsehaye, M.T., Li, J., Dong, G., Yuan, S., Li, X., Zhang, Y., Liu, J., Van 
+der Bruggen, B., 2017. High flux electroneutral loose nanofiltration membranes 
+based on rapid deposition of polydopamine/polyethyleneimine. J. Mater. Chem. A 5 
+(28), 14847–14857.
+Wang, Z., Zhang, W., Wen, S., Wang, L., Wang, S., Wang, Y., Lu, J., Ma, J., Cheng, W., 
+2023b. Rapid co-deposition of dopamine and polyethyleneimine triggered by 
+CuSO4/H2O2 oxidation to fabricate nanofiltration membranes with high selectivity 
+and antifouling ability. Sep. Purif. Technol. 305, 122409.
+Wei, Q., Zhang, F., Li, J., Li, B., Zhao, C., 2010. Oxidant-induced dopamine 
+polymerization for multifunctional coatings. Polym. Chem. 1 (9), 1430–1433.
+Xie, Y., Chen, S., Peng, X., Wang, X., Wei, Z., Richardson, J.J., Liang, K., Ejima, H., 
+Guo, J., Zhao, C., 2022. Alloyed nanostructures integrated metal-phenolic 
+nanoplatform for synergistic wound disinfection and revascularization. Bioact. 
+Mater. 16, 95–106.
+Xu, C., Chen, W., Gao, H., Xie, X., Chen, Y., 2020. Cellulose nanocrystal/silver (CNC/Ag) 
+thin-film nanocomposite nanofiltration membranes with multifunctional properties. 
+Env. Sci.: Nano 7 (3), 803–816.
+Yan, Z.-L., Chang, J.-Y., Tsao, C., Fang, M.-X., Lin, B.-H., Tsai, J.-H., Chen, M.-H., 
+Jeng, R.-J., Kuo, C.-C., 2024. Mitigating thermal burden and enhancing minor phase 
+emission energy transfer in perovskite by introducing dopamine-mediated silver 
+nanoparticles. Chem. Eng. J. 498, 155835.
+Yang, H.-L., Zou, L., Juaim, A.N., Ma, C.-X., Zhu, M.-Z., Xu, F., Chen, X.-N., Wang, Y.-Z., 
+Zhou, X.-W., 2023. Copper release and ROS in antibacterial activity of Ti-Cu alloys 
+against implant-associated infection. Rare Metals. 42 (6), 2007–2019.
+Yang, L., Chen, L., Chen, Y.-C., Kang, L., Yu, J., Wang, Y., Lu, C., Mashimo, T., 
+Yoshiasa, A., Lin, C.-H., 2019. Homogeneously alloyed nanoparticles of immiscible 
+Ag–Cu with ultrahigh antibacterial activity. Coll. Surf. B: Biointerf. 180, 466–472.
+Yang, Z., Sun, P.F., Li, X., Gan, B., Wang, L., Song, X., Park, H.D., Tang, C.Y., 2020. 
+A critical review on thin-film nanocomposite membranes with interlayered 
+structure: mechanisms, recent developments, and environmental applications. 
+Environ. Sci. Technol. 54 (24), 15563–15583.
+Yang, Z., Wu, Y., Guo, H., Ma, X.-H., Lin, C.-E., Zhou, Y., Cao, B., Zhu, B.-K., Shih, K., 
+Tang, C.Y., 2017. A novel thin-film nano-templated composite membrane with in 
+situ silver nanoparticles loading: separation performance enhancement and 
+implications. J. Memb. Sci. 544, 351–358.
+Ye, Q., Zhou, F., Liu, W., 2011. Bioinspired catecholic chemistry for surface modification. 
+Chem. Soc. Rev. 40 (7), 4244–4258.
+Zhang, A., Zhang, Y., Pan, G., Xu, J., Yan, H., Liu, Y., 2017. In situ formation of copper 
+nanoparticles in carboxylated chitosan layer: preparation and characterization of 
+surface modified TFC membrane with protein fouling resistance and long-lasting 
+antibacterial properties. Sep. Purif. Technol. 176, 164–172.
+Zhang, H., Zhu, S., Yang, J., Ma, A., 2022. Advancing strategies of biofouling control in 
+water-treated polymeric membranes. Polymers. (Basel) 14 (6), 1167.
+Zhang, P., Yuan, S., Liao, P., 2016. Mechanisms of hydroxyl radical production from 
+abiotic oxidation of pyrite under acidic conditions. Geochim. Cosmochim. Acta 172, 
+444–457.
+Zhao, C., Zuo, F., Liao, Z., Qin, Z., Du, S., Zhao, Z., 2015. Mussel-inspired one-pot 
+synthesis of a fluorescent and water-soluble polydopamine–polyethyleneimine 
+copolymer. Macromol. Rapid. Commun. 36 (10), 909–915.
+Zhao, X., Chen, M., Wang, D., Zhang, H., Hu, G., Zhou, Y., 2024. Ultrafine nano-copper 
+derived from dopamine polymerization & synchronous adsorption achieve 
+electrochemical purification of nitrate to ammonia in complex water environments. 
+Chin. Chem. Lett. 35 (8), 109327.
+Zhou, F., Zhu, Y., Yang, L., Yang, D.-Q., Sacher, E., 2022. Ag NP catalysis of Cu ions in the 
+preparation of AgCu NPs and the mechanism of their enhanced antibacterial 
+efficacy. Coll. Surf. A: Physicochem. Eng. Asp. 632, 127831.
+W. Zhang et al.                                                                                                                                                                                                                                  
+Water Research 271 (2025) 122986 
+12

@@ -1,0 +1,670 @@
+RESEARCH ARTICLE
+www.small-journal.com
+Boosting Enzyme-Like Activity Through Controlled
+Coordination of Metal Single-Atoms in Rhombic Cavity of
+Graphyne
+Ruixue Fu, Jian guo, Huan Jin, Zhen Li, Jianing Xia, Ya Tang, Yaping Ding,
+Hongbin Zhao,* Daixin Ye,* and Jiaqiang Xu
+The coordination number of metal single-atoms, being an important
+factor, should be precisely controlled as it aﬀects both activity and speciﬁcity.
+Herein, the introduction of nitrogen into the para position of benzene in
+graphyne (2N-GY) is proposed as a carrier for anchoring metal single-atoms
+onto pyrazine nitrogen. These atoms are then coordinated to the center of the
+rhombic cavity, ensuring precisely controlled coordination numbers. Inspired
+by natural enzymes, a series of transition metal single-atom nanozymes (SANs)
+are constructed utilizing 2N-GY. Both theory calculations and experiments
+demonstrated that the incorporation of metal single-atoms of Fe, Mn,
+and Mo eﬀectively augmented the enzyme-like activity, with Mo/GY exhibiting
+the highest peroxidase -like activity. Based on the diﬀering activities of M/GY
+(M = Fe, Mn, Mo) and the varying abilities of sulfhydryl groups in biothiols
+to occupy metal active sites, sensing arrays for the high-throughput
+identiﬁcation of six biothiols are constructed. After combining the ﬁngerprint
+feature responses of biothiols and SANs with machine learning algorithms,
+the eﬃcient distinction of the six biothiols is achieved. This study introduces
+a novel pathway for designing and synthesizing SANs that mimic natural
+enzymes.
+1. Introduction
+The rational design of nanozymes has emerged as a prevail-
+ing research trend.[1] To signiﬁcantly enhance catalytic eﬃciency
+and selectivity while bridging the disparity between nanozymes
+and natural enzymes, a common strategy involves integrating
+structural features from natural enzymes into nanozyme de-
+sign. This approach entails simulating the active centers of
+R. Fu, J. guo, H. Jin, Z. Li, J. Xia, Y. Tang, Y. Ding, H. Zhao, D. Ye, J. Xu
+Department of Chemistry & Institute for Sustainable Energy
+College of Sciences
+Shanghai University
+Shanghai 200444, P. R. China
+E-mail: hongbinzhao@shu.edu.cn;daixinye@shu.edu.cn
+H.Jin
+Shanxi Inspection andTesting Center
+Taiyuan,Shanxi 030006,P.R.China
+The ORCID identiﬁcation number(s) for the author(s) of this article
+can be found under https://doi.org/10.1002/smll.202409113
+DOI: 10.1002/smll.202409113
+natural enzymes to construct nanozyme
+structures.
+Metalloenzymes
+generally
+refer
+to
+natural
+enzymes
+containing
+tightly
+bound
+metal
+atoms,[2]
+includ-
+ing
+Fe-containing
+cytochrome
+P450,[3]
+Zn-containing
+carbonic
+anhydrase,[4]
+Mn-containing
+manganese
+superoxide
+dismutase[5] and Mo-containing molybde-
+num enzymes.[6] Thus, the incorporation
+of transition metal elements commonly
+found in natural enzymes into nanocar-
+riers, inspired by these natural enzymes,
+oﬀers a promising direction for nanozyme
+design.
+Single-atom nanozymes (SANs) have
+the advantages of high atom utilization,
+high reactivity, good selectivity, and sta-
+bility, inheriting the advantages of multi-
+phase and homogeneous catalysts.[7] More-
+over, the SANs have a well-deﬁned and
+homogeneous active center, which eﬀec-
+tively improves selectivity.[8] Whereas, the
+coordination number of single-atoms, be-
+ing an important factor, should be care-
+fully controlled as it aﬀects both activity and
+speciﬁcity.[9] At the same time, metal-carrier interactions can ef-
+fectively induce charge transfer between the metal and the rel-
+evant interface, thus optimizing the activity of the active site.[10]
+Among the many carriers, carbon carriers, especially those doped
+with N atoms, are considered to be a promising class of car-
+riers for SANs due to their good mechanical properties, large
+speciﬁc surface area, excellent electrical conductivity, and struc-
+tural ﬂexibility.[11] Therefore, 2D carbon-based materials such as
+graphene,[12] N-doped graphene,[13] graphene[14] and graphitic
+carbon nitride[15] have been explored as single-atom support
+materials.
+Graphyne (GY) is a porous structure composed of carbon
+atoms hybridized in sp and sp2 states, with abundant Π-bonds,
+exhibiting exceptional performance across various ﬁelds.[16]
+Moreover, the bonding and antibonding p orbits of sp-carbon
+atoms in GY can indirectly maintain the metal atom orbits
+around the Fermi level, entrusting the stable electron-rich state
+of the metal atom. Additionally, introducing nitrogen into the
+para position of benzene in GY (2N-GY) modiﬁes the pore size
+and chemical environment of the framework, creating a unique
+site for anchoring individual metal atoms.[17] Meanwhile, due to
+Small 2025, 21, 2409113
+© 2024 Wiley-VCH GmbH
+2409113 (1 of 10)
+
+www.advancedsciencenews.com
+www.small-journal.com
+Figure 1. The scheme of synthesis and structure of Fe/GY, Mn/GY, and Mo/GY is inspired by natural enzymes.
+2N-GY can act as both the electron donor and acceptor, endowing
+reversible charge transfer between metal atoms and the electron-
+rich alkyne bonds of GY which is called incomplete charge trans-
+fer, an important chemical new concept for the theoretical ba-
+sis of GY catalysis.[18] Furthermore, theoretical calculations prove
+that transition metal (TM) single-atom holds onto pyrazine N
+and coordinated to the center of the rhombic cavity through the
+N site, showing excellent and abundant catalytic properties,[17]
+providing inspiration and guidance for the design of subse-
+quent 2N-GY carrier SANs with precisely controlled coordination
+numbers.
+In this work, a series of metal SANs with peroxidase (POD)-
+like activity were synthesized by loading metal single-atoms on
+2N-GY. The 2N-GY with rhombic cavity provided a reliable coor-
+dination and dispersion environment for the metal single-atoms,
+and three SANs (Fe/GY, Mn/GY, and Mo/GY) were successfully
+synthesized and their intrinsic source of POD-like activity was
+investigated. Both experiments and DFT calculations revealed
+that the Mo/GY showed the highest catalytic activity. It can be
+attributed to the lower energy barrier in the formation of H2O*,
+which is a rate-determining step in the hydrogen peroxide de-
+composition process. The diﬀerential charge density analysis also
+conﬁrmed the electron transfer between Mo active sites and the
+H2O* became easier on Mo/GY during the reaction process.
+These three SANs were used to construct sensing arrays for the
+detection of biological thiols, and six thiols with analogous struc-
+tures and chemical properties were successfully identiﬁed. This
+work provides an eﬀective method for designing transition metal
+SANs with GY as a carbon carrier.
+2. Results and Discussion
+According to the structure of natural enzymes, we simulated
+and designed three kinds of M/GY (M = Fe, Mn, Mo) SANs
+(Figure 1). Generally speaking, the metal single-atom acts as the
+active center, and the N atom acts as the coordination atom to
+stabilize and regulate the charge distribution of the active center
+and aﬀect its activity. The clearly deﬁned active centers are favor-
+able for theoretical calculations to investigate the underlying cat-
+alytic mechanism of POD-like activity. Density functional theory
+(DFT) simulations are used to explore the origin for the improved
+catalytic activity on M/GYs. Regarding the local coordination en-
+vironment of the atomically scattered metal active sites, the GY
+and M/GY models with axial nitrogen coordination were estab-
+lished (Figures S1 and S2, Supporting Information). Electronic
+band structures of these M/GYs demonstrated that incorporating
+metal atoms into GY causes a phase change from semiconductor
+to metal. Figure 2A shows that the direct bandgap of the origi-
+nal GY is 0.89 eV. Due to the electron transfer to GY, the doping
+of metal atoms increases the Fermi level in the conduction band
+region, resulting in metal properties in all M/GY (Figure 2B–D).
+The metallization of M/GYs enhances electron conductivity and
+promotes electron transfer during catalytic processes. As shown
+in Figure 2A–D, the project electronic density of states (PDOS)
+of TM’s 3d orbital was calculated using the established Mo/GY,
+Fe/GY, and Mn/GY models. The electronic state hybridization
+between the TM atoms and the GY is particularly obvious in the
+Fermi level area, showing that the reaction center and the sub-
+strate have excellent conductivity. Meanwhile, the d-band cen-
+ters of TM for each sample are also presented in Figure 2A–D.
+The higher d-band center on Mo/GY (−0.91 eV) means that the
+atomic Mo site is more active than that on Fe/GY (−2.19 eV)
+and Mn/GY (−3.10 eV), which can be ascribed to the stronger
+interaction between the axial ligand and Mo atom. Hence, the re-
+action intermediates are expected to have a stronger interaction
+with Mo/GY. The electron localization function (ELF) can also be
+used to describe the interactions of TM atoms with GY. As shown
+in Figure S3 (Supporting Information), electrons accumulate on
+N atoms in pyrazine rings due to the higher electronegativity of
+nitrogen compared to carbon. A higher ELF value in atomic Mo
+suggests that electrons nearby are more localized, which is ben-
+eﬁcial for OH* adsorption.
+Small 2025, 21, 2409113
+© 2024 Wiley-VCH GmbH
+2409113 (2 of 10)
+ 16136829, 2025, 5, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202409113 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.small-journal.com
+Figure 2. Electronic band structures of pristine GY, Mo/GY, Fe/GY, and Mn/GY. The energy at the Fermi level was set to zero.
+To elucidate the underlying factors contributing to the en-
+hanced catalytic performance, PDOS calculations were con-
+ducted to investigate the OH* adsorption characteristics on
+M/GY. The d-band centers of the TM atoms for each sample, as
+illustrated in Figure 3A–C, indicate that the d-band center of Mo
+in Mo/GY (−1.62 eV) is higher than that of Fe/GY (−2.38 eV)
+and Mn/GY (−2.52 eV), conﬁrming the activation of the Mo
+site. Additionally, the projected crystal orbital Hamilton popu-
+lation (pCOHP), derived from overlap-population-weighted den-
+sities of states, was employed to analyze the bonding and anti-
+bonding properties of the M─O bond. Negative COHP values
+represent bonding interactions, while positive COHP values de-
+note antibonding contributions. The M─O bond strength was
+quantiﬁed using the integral of COHP (ICOHP) up to the Fermi
+level. The ICOHP value for Mo/GY (−2.38 eV) was more neg-
+ative than that of Fe/GY (−1.99 eV) and Mn/GY (−0.78 eV),
+indicating a more signiﬁcant electron population in the bond-
+ing orbitals and a stronger M−O bond. Consequently, Mo/GY
+demonstrates enhanced electron transfer capability, facilitating
+stronger bonding between Mo and the adsorbed oxygen inter-
+mediate. In Figure 3D, the energy proﬁle depicts the POD-like
+catalytic performance. The dissociation of H2O2 (H2O2
+*→2OH*,
+2OH*→OH*+H2O) on M/GY models is thermodynamically en-
+ergy descent. However, in the following reactions, including the
+formation of H2O*, and desorption of H2O, the free-energy is rel-
+atively upward. In comparison, the Mo/GY model shows a higher
+catalytic activity than that of Fe/GY and Mn/GY models due to its
+lower free-energy barrier. Diﬀerential charge density analysis in-
+dicates charge transfer between substrates and H2O upon inter-
+action (Figure 3E). Bader charge calculations (Table S1, Support-
+ing Information) show that Mo in the Mo/GY structure delivers
+a Bader charge of 1.07 e, lower than that of Fe in Fe/GY (1.11 e)
+and Mn in Mn/GY (1.26 e), signifying that the Mo/GY structure
+retains more d orbital electrons on Mo atoms, thereby enhancing
+H2O adsorption and accelerating oxygen intermediate conver-
+sion. The reasonable atomic structures at diﬀerent steps in POD-
+like catalytic processes of Mo/GY are illustrated in Figure 3F.
+According
+to
+the
+results
+of
+DFT
+calculation,
+M/GY
+(M = Fe, Mn, Mo) was designed and synthesized. M/GY
+was synthesized according to the method shown in Figure 1.
+Small 2025, 21, 2409113
+© 2024 Wiley-VCH GmbH
+2409113 (3 of 10)
+ 16136829, 2025, 5, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202409113 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.small-journal.com
+Figure 3. The PDOS and pCOHP of oxygen adsorption state for A) Mo/GY, B) Fe/GY, and C) Mn/GY. D) The free-energy diagrams for the POD-like
+mechanism on diﬀerent catalysts. E) The charge density diﬀerence (CDD) plots of oxygen adsorption state for Mo/GY, Fe/GY, and Mn/GY. Yellow and
+blue regions correspond to charge gain and charge loss, respectively. (isosurface = 0.003 e/Å3). F) The catalytic mechanism along the POD-like reaction
+path on the Mo/GY structure.
+2N-GY was selected as the substrate and mixed with acetylace-
+tone (Fe(acca)3, Mn(acca)3, Mo(acca)2) for metal loading. The
+2N-GY@M(acca)n (M = Fe, Mn, Mo) precursor loaded with
+metal salt was pyrolyzed to prepare single-atom nanozyme
+Fe/GY, Mn/GY, Mo/GY, collectively deﬁned as M/GY (M = Fe,
+Mn, Mo). As shown in Figure 4A, there was no obvious metal
+peak or metal oxide peak in the X-ray diﬀraction (XRD) pattern.
+However, they all (2N-GY, Fe/GY, Mn/GY, and Mo/GY) showed
+an obvious envelope peak at about 21.5°, which belonged to
+carbon. It shows that the metal might present in the form of
+single-atoms rather than in the form of metal particles and metal
+oxides in the M/GY. The morphology of the metal-loaded M/GY
+was characterized by a transmission electron microscope (TEM).
+A clear lamellar structure can be seen in the TEM (Figure 4B)
+image, which is essentially the same as that of 2N-GY (Figure
+S4, Supporting Information). To further detect the molybdenum
+atoms on the Mo/GY, aberration-corrected high-angle annular
+dark-ﬁeld scanning transmission electron microscopy (HAADF-
+STEM) (AC HAADF-STEM) was used to obtain the atomic
+phase graph (Figure 4C). The bright spots with red circles in
+Figure 4C represent monodispersed molybdenum atoms on
+Mo/GY. Energy-dispersive spectroscopy (EDS) mapping spectra
+(Figure 4D; S5, Supporting Information) display that the C, N,
+and M atoms are distributed homogeneously in M/GY.
+Next, X-ray photoelectron spectroscopy (XPS) was used to an-
+alyze the surface species and the forms of species present in the
+SANs. As shown in Figures S6 and S7 (Supporting Information),
+characteristic peaks for carbon (C), nitrogen (N), oxygen (O), and
+metallic elements can be clearly observed in the XPS spectra. The
+presence of the O 1s peak at ≈535 eV is due to the adsorption of
+oxygen from the air by the prepared material. The XPS peaks of C
+1s can be ﬁtted into three sub-peaks, the deconvoluted peaks cen-
+tered at the binding energies of 284.4 eV, ≈286.0, and 288.0 eV
+are assigned to the C─C (sp2) and C─C (sp) and pyrazine-C, re-
+spectively (Figure 4E; Figure S7B,E, Supporting Information).
+The high-resolution N 1s spectrum of M/GY can be deconvo-
+luted into three peaks, which were assigned to M─N, pyrazine-N,
+graphtic-N, respectively (Figure 4F; Figure S7A,D, Supporting In-
+formation). The Mo 3d XPS spectrum (Figure 4G) can be divided
+into three main parts, with the peak at 229.13 eV contributed by
+Mo4+ 3d5/2, the peak near 232 eV mainly contributed by Mo4+
+3d3/2 at 232.55 eV, with a small contribution from Mo6+ 3d3/2 at
+232.25 eV, and the peak at 235.67 eV contributed by Mo6+ 3d3/2.
+In the Fe 2p XPS spectrum, the Fe species coordinated to N is
+located to the left of 711 eV and can be classiﬁed as 2p3/2 for Fe2+
+at 711.3 eV and 2p3/2 for Fe3+ at 714.1 eV, as shown in Figure
+S7C (Supporting Information). The Fe species at 724.4 eV can be
+classiﬁed as the Fe2+ 2p1/2 peak at 724.4 eV and the Fe3+ 2p1/2
+peak at 727.2 eV. Similarly, as in Figure S7F (Supporting Infor-
+mation), the Mn 2p XPS pattern of Mn/GY can be classiﬁed as
+Mn2+ 2p3/2 at 642.5, Mn3+ 2p3/2 at 644.16, Mn2+ 2p1/2 at 653.7,
+and Mn3+ 2p1/2 at 655.16 eV. As for the XPS spectra of the met-
+als, no metal bond is observed in the M/GY, further proving the
+absence of metal particles in M/GY. The above data indicate that
+Small 2025, 21, 2409113
+© 2024 Wiley-VCH GmbH
+2409113 (4 of 10)
+ 16136829, 2025, 5, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202409113 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.small-journal.com
+Figure 4. Characterization of Mo/GY SANs. A) XRD pattern of 2N-GY, Fe/GY, Mn/GY, and Mo/GY. TEM images of B) Mo/GY. C) Atomic phase image
+of Mo/GY. D) EDS mapping images (red: C element; green: N element, and yellow: Mo element). E) XPS analysis of C 1s of Mo/GY. F) XPS analysis of
+N 1s of Mo/GY. G) XPS analysis of Mo 3d of Mo/GY.
+M/GY (M = Fe, Mn, Mo) SANs were successfully prepared by
+annealing metal salts of acetylacetonate captured by 2N-GY, pro-
+viding a direction for the synthesis of GY-based SANs without
+the introduction of an exotic nitrogen source.
+The POD-like and oxidase (OXD)-like activities of diﬀerent
+SANs were investigated by UV–vis absorption spectroscopy ab-
+sorbance values, and it can be seen that the POD-like and OXD-
+like activities are dependent on the type of metal active site. As
+shown in Figure 5A, where Mo/GY has the highest POD-like ac-
+tivity and the lowest OXD-like activity with excellent POD-like se-
+lectivity, while Mn/GY has a lower activity, and the selectivity be-
+tween POD-like activity and OXD-like activity is not ideal. Fe/GY,
+as Fe-based SANs, showed both good POD-like activity and OXD-
+like activity. From Figure 5B we can see that the POD-like activity
+of the SANs designed and synthesized in this work is still signiﬁ-
+cant, with a signiﬁcant increase in absorbance after the introduc-
+tion of M/GY (M = Fe, Mn, Mo) SANs for catalysis.
+In SANs sensing, factors such as pH, SANs concentration,
+TMB concentration, and H2O2 concentration will have a great
+inﬂuence on the activity of SANs, so the conditions under which
+SANs exert their optimal activity need to be investigated. As
+shown in Figure S8A (Supporting Information), the absorbance
+showed an increasing and then decreasing trend with the change
+of pH, and the activity was highest and the absorbance reached
+the maximum value at pH = 4. Therefore, a buﬀer solution with
+pH = 4 was selected to provide a stable environment with con-
+stant pH = 4 for the system. Meanwhile, TMB and H2O2 oc-
+cupy an important position in this system; therefore, the re-
+sults of the experiments to explore the TMB concentration and
+H2O2 concentration are shown in Figure S8 (Supporting Infor-
+mation). As shown in Figure S8B (Supporting Information), the
+absorbance increased gradually as the concentration of SANs in-
+creased from 0 to 0.05 mg mL−1. From Figure S8D (Support-
+ing Information), it can be seen that from 0 to 1 mm, with the
+increase of TMB concentration, the absorbance ﬁrst increased
+rapidly, and then the growth rate became slower. The same phe-
+nomenon occurred with H2O2, as shown in Figure S8C (Sup-
+porting Information), the absorbance almost stopped increasing
+when exceeding 5 mm, while before 5 mm, the absorbance rapidly
+increased with the increase of H2O2 concentration. Therefore,
+0.33 mm TMB and 3.33 mm H2O2 were selected for further ex-
+periments from the point of view of solution color and economic
+saving. The nanozyme concentration is an important factor in de-
+termining the catalytic activity. In order to minimize the amount
+of SANs, 16.66 μg mL−1 of SANs was chosen for the following
+work. In conclusion, M/GY (M = Fe, Mn, Mo) exhibited excellent
+POD-like activity under the conditions of 16.66 μg mL−1 SANs,
+3.33 mm H2O2, 0.33 mm TMB, and pH = 4.0, and TMB was ox-
+idized to oxTMB in the constructed M/GY-TMB- H2O2 system,
+with a signiﬁcant absorbance at 652 nm.
+The kinetic experiments were used to investigate the diﬀeren-
+tial activity of M/GY (M = Fe, Mn, Mo), and the experimental
+data showed (Figure 5F; Figure S9, Supporting Information) that
+Mo/GY had the most favorable enzyme-like activity, followed by
+Fe/GY, and Mn/GY had a weaker enzyme-like activity. Michaelis
+Menten constant (Km) and maximum velocity (Vm) were used to
+Small 2025, 21, 2409113
+© 2024 Wiley-VCH GmbH
+2409113 (5 of 10)
+ 16136829, 2025, 5, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202409113 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.small-journal.com
+Figure 5. A) Comparison of POD-like and oxide-like activities of Fe/GY, Mn/GY and Mo/GY. B) UV–vis spectra in diﬀerent systems (including Fe/GY-
+H2O2-TMB system, Mn/GY- H2O2-TMB system, Mo/GY- H2O2-TMB system, H2O2-TMB system, and TMB system). C) Absorbance changes of the
+catalytic system before and after adding SCN−(1.5 mm). The inset is a schematic diagram of SCN−for toxic suppression of catalytic activity at metal
+sites. D) Schematic diagram of the POD-like activity catalytic reaction process of M/GY SANs. E) EPR spectrum detected in POD-like activity of Fe/GY,
+Mn/GY and Mo/GY. F) Steady-state kinetic analysis of POD-like activities. The Michaelis-Menten plots at various concentrations of the TMB substrate
+(0–1 mm) for Fe/GY, Mn/GY, and Mo/GY.
+quantitatively evaluate the POD activity of the SANs. Based on the
+double inverse plot of the initial reaction rate, we summarized
+the kinetic parameters of the SANs in Table S2 (Supporting In-
+formation), which shows that Mo/GY has the highest Vm value of
+30.90 nm s−1, followed by Fe/GY with 19.49 nm s−1, and Mn/GY
+with 16.62 nm s−1. The value of Vm can reﬂect the kinetic activity
+of the SANs, the larger Vm is, the better kinetic activity the SANs
+have.
+In view of the speciﬁc POD-like activity of M/GY (M = Fe, Mn,
+Mo), in order to understand the mechanism of its catalytic reac-
+tion, the free radicals generated during the reaction were deter-
+mined. Hydroxyl radical is a key intermediate homolyzed from
+H2O2 by M/GY during POD mimicking. As shown in Figure 5E,
+using 5,5-dimethy-1-pyrroline N-oxide (DMPO) as the trapping
+agent, the Electron Paramagnetic Resonance (EPR) test results
+suggest that the free radicals produced during the catalysis of
+M/GY are hydroxyl radicals, which is consistent with the DFT
+calculations.
+The SCN−toxicity assay was used to further conﬁrm that
+the metal SANs is the active site of the reaction, and the ab-
+sorbance decreased signiﬁcantly with increasing concentration
+of SCN−, indicating a decrease in the catalytic activity of the
+nanozyme. This is due to the coordination of SCN−with the
+metal active site; the active site is blocked and cannot catalyze
+the substrate reaction. The results of Figure 5C show that the
+active sites of Fe/GY are Fe SANs, Mn/GY are Mn SANs, and
+Mo/GY are Mo SANs, and the metal SANs play an impor-
+tant role as catalytic active centers in the catalytic oxidation of
+TMB.
+Biothiols are abundant in cells and play a variety of roles in hu-
+man physiological processes. For example, glutathione is the re-
+dox reservoir of the cell and plays an important intermediary role
+in many cellular functions, and cysteine is an important amino
+acid for the synthesis of glutathione and sulfur-containing pro-
+teins in organisms. Abnormal levels of biothiols have been as-
+sociated with a variety of clinical diseases, including malignant
+tumors, Parkinson’s disease, and Alzheimer’s disease. mercapto-
+succinic acid has anti-hypertensive properties, and isooctyl mer-
+captoacetate is an important pharmaceutical intermediate. These
+biothiols are involved in regulating the physiological functions
+of organisms, and changes in intracellular biothiol levels may
+be relevant to the development of many diseases.[18] Therefore,
+the development of eﬀective and stable methods for the analy-
+sis of thiols is particularly important in the early diagnosis of
+certain diseases. However, the speciﬁc identiﬁcation and high-
+throughput screening of thiols is a great challenge due to the
+high similarity of molecular structures and chemical properties
+of thiol compounds.[19]
+Inspired by the human olfactory system, there has been in-
+creased interest in array-based technologies for high-throughput
+detection sensing arrays with excellent performance.[20] In gen-
+eral, sensor arrays consist of a series of cross-receptors. SANs
+can be used as receptors that interact with a variety of target an-
+alytes to produce unique “ﬁngerprint” responses. These speciﬁc
+Small 2025, 21, 2409113
+© 2024 Wiley-VCH GmbH
+2409113 (6 of 10)
+ 16136829, 2025, 5, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202409113 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.small-journal.com
+Figure 6. A) Schematic diagram of the loading of 2N-GY on single metal atoms and the inﬂuence of mercaptan on the reaction system. The A/A0 value
+of M/GY (M = Fe, Mn, Mo)-TMB-H2O2 system after inhibition by diﬀerent thiols. The concentrations thiol were B) 1 μm, C) 2μm, D) 5 μm, E) 10 μm,
+(F) 20 μm, G) 50 μm, H) 100 μm.
+reactions are transformed by machine learning algorithms from
+complex multidimensional data into visual graphs for easy target
+diﬀerentiation.[21] Machine learning algorithms are an important
+tool for high-throughput identiﬁcation of biothiols, using which
+the analysis of complex samples can be achieved by performing
+analyses in the dataset to obtain regularities/models, and then
+making predictions about unknown data. Then, Fe/GY, Mn/GY,
+and Mo/GY were used to construct sensor arrays for the high-
+throughput detection of thiols. The successful construction of
+the sensor arrays was based on the interactions of two aspects,
+i.e., the diﬀerent behaviors of the receptors, the diﬀerences in
+nanozymatic activities of Fe/GY, Mn/GY, and Mo/GY, and the
+Small 2025, 21, 2409113
+© 2024 Wiley-VCH GmbH
+2409113 (7 of 10)
+ 16136829, 2025, 5, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202409113 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.small-journal.com
+Figure 7. A) Schematic diagram of the loading of single-atom on 2N-GY and the inﬂuence of thiol on the reaction system. Canonical score plots for
+colorimetric response patterns obtained against B) 1 μm, C) 2 μm, D) 5 μm, E) 10 μm, F) 20 μm, G) 50 μm, H) 100 μm thiol. I) HCA plot for the identiﬁcation
+of six thiols at 20 μm.
+subtle diﬀerences in the performance of the target substances,
+i.e., the diﬀerences in the interactions of the diﬀerent thiols with
+diﬀerent SANs. Then, Fe/GY, Mn/GY, and Mo/GY were used to
+construct a sensor array that could be used for high-throughput
+detection of mercaptan. The successful construction of the sen-
+sor array was mainly based on the interaction of two aspects:
+1) the diﬀerent performances of the receptors, namely, Fe/GY,
+Mn/GY, and Mo/GY; 2) diﬀerent aﬃnities of thiols for adsorption
+of metal ions, thiols inhibit the catalytic activity of M/GY SANs to
+a diﬀerent extent, resulting in diﬀerent changes in absorbance. In
+the present work, we took six common biothiols, namely, mercap-
+toacetic acid (MAA), cysteine (l-Cys), glutathione (GSH), isooctyl
+mercaptoacetate (TGA), mercaptosuccinic acid (DMSA) and mer-
+captoethanol (MH). The ball-and-stick model structure of the thi-
+ols is shown in Figure S10 (Supporting Information). As shown
+in Figure 6, the change of absorbance value in the presence of
+diﬀerent thiols has a unique colorimetric response pattern with
+TMB as the substrate.
+The eﬀective recognition of biothiols by this sensing array can
+be attributed to the following reasons. 1) 2N-GY is negatively
+charged and has a ﬂat and expansive layered conjugated struc-
+ture, thus favoring binding and response to biothiols. 2) The
+abundant negative charge of the lamellar structure of 2N-GY is
+easy to adsorb the positively charged TMB substrate, and at the
+same time, the catalytic reaction is reacted at the interface of the
+lamellar structure, and the rate and extent of the reaction will be
+eﬀectively aﬀected.
+Figures S11–S13 (Supporting Information) show the absorp-
+tion spectra of TMB oxidized by M/GY (M = Fe, Mn, Mo) in the
+presence of six kinds of mercaptan at diﬀerent concentrations. To
+further validate the quantitative capability of the prepared SANs
+sensing array, the linear detection range of diﬀerent concentra-
+tions of thiols was explored (Figure S14, Supporting Informa-
+tion). These results indicate that the SANs array constructed in
+this system can be eﬀectively used for the detection of thiols
+with high sensitivity and wide linear range. Based on the dataset,
+Small 2025, 21, 2409113
+© 2024 Wiley-VCH GmbH
+2409113 (8 of 10)
+ 16136829, 2025, 5, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202409113 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.small-journal.com
+Figure 8. Typical score plots of colorimetric response patterns were obtained for diﬀerent concentrations of thiols. A) mercaptoacetic acid, B) l-cysteine,
+C) glutathione, D) thioglycolic acid, E) mercaptosuccinic acid, and F) 6-mercapto- 1-hexanol. G) Canonical score plot for the colorimetric response
+patterns obtained against diﬀerent ratios of the mixture of MAA, MH, and DMSA. H) Canonical score plot for the colorimetric response patterns
+obtained against diﬀerent ratios of the mixture of l-Cys and GSH. I) Canonical score plot for the colorimetric response patterns obtained against 20 mμ
+thiols in the real sample.
+machine learning algorithms (LDA analysis) were performed us-
+ing a two-factor contrast color response sensing array to convert
+the complex and large training data matrix into a visual 2D typ-
+ical score plot. The LDA results show that the same thiols can
+be clustered together, while diﬀerent types of thiols can be com-
+pletely separated, and Figure 7 shows that this sensing array can
+be eﬀectively used for the separation of biological thiols.
+The sensing array can eﬀectively classify not only diﬀerent thi-
+ols at the same concentration, but also diﬀerent concentration
+systems of the same type of thiols. When the concentration of
+mercaptans was 1, 2, 5, 10, 20, 50, 100 μm, six kinds of mercap-
+tans could be eﬀectively distinguished (Figure 7), and the sensing
+array based on M/GY (M = Fe, Mn, Mo) had a good ability to iden-
+tify mercaptans over a wide range, which lays a solid foundation
+for identiﬁcation and diﬀerentiation of mercaptans in real sam-
+ples. To assess the usefulness of the sensor array, a double-blind
+experiment was conducted using Hierarchical Cluster Analysis
+(HCA) (Figure 7I). 18 blind samples were accurately classiﬁed.
+The thiol mixtures were analyzed in order to determine the dis-
+crimination ability of the sensing array on the mixed samples.
+Based on the structural similarity of the thiols, binary thiol
+mixtures (total thiol concentration of 20 μm, concentration ratios
+including: Cys: GSH = 1: 9, Cys: GSH = 2: 8, Cys: GSH = 3: 7,
+Cys: GSH = 4: 6, Cys: GSH = 5: 5, Cys: GSH = 6: 4, Cys: GSH = 7:
+3, Cys. GSH = 8: 2, Cys: GSH = 9: 1) and ternary thiol mixtures
+(total thiol concentration of 20 μm, concentration ratios includ-
+ing: MAA:MH: DMSA = 1: 1: 1, MAA: MH: DMSA = 1: 2: 1,
+MAA: MH: DMSA = 2: 1: 1, MAA: MH: DMSA = 1: 1: 2, MAA:
+MH: DMSA = 1: 2: 3, MAA: MH: DMSA = 3: 1: 2, MAA: MH:
+DMSA = 2: 3: 1) were constructed separately as target analytes. As
+shown in Figure 8A–H, diﬀerent ratios of mercaptans can be well
+clustered into diﬀerent groups, with high separation and diﬀer-
+entiation accuracy, laying a foundation for the identiﬁcation and
+diﬀerentiation of complex samples.
+Small 2025, 21, 2409113
+© 2024 Wiley-VCH GmbH
+2409113 (9 of 10)
+ 16136829, 2025, 5, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202409113 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.small-journal.com
+To further explore the potential of this sensor array for biomed-
+ical diagnostic applications, six selected thiols were measured in
+the fetal bovine serum (FBS) matrix. To eliminate matrix eﬀects,
+FBS was diluted 10-fold with HAc-NaAc buﬀer (pH = 4.0). Sub-
+sequently, various concentrations of 20 μL thiols were added into
+10% FBS. Diﬀerent reactions showed diﬀerent patterns and the
+antioxidants were eﬀectively categorized into six groups by LDA
+(Figure 8I), conﬁrming that the sensor array worked well in real
+samples.
+3. Conclusion
+In this work, a set of GY-based SANs with well-controlled coor-
+dination numbers were designed and synthesized. The design of
+the SANs with a coordination number of two nitrogen atoms was
+accomplished by replacing the para-carbon of the benzene ring in
+GY, creating a rhombic cavity to facilitate the anchoring of single-
+atoms. The proposed design was initially validated through DFT
+calculations. The PDOS, ELF, pCOHP, free-energy diagrams,
+and CDD, analysis conﬁrmed the superior potential of Mo/GY
+for POD-like performance. Subsequently, 2N-GY was selected
+as the substrate, and acetylacetonate metal was chosen as the
+metal source for synthesizing GY-based SANs with well-deﬁned
+binary coordination. The obtained three SANs (Fe/GY, Mn/GY,
+Mo/GY) exhibited exceptional POD-like activities, eﬀectively cat-
+alyzing the TMB-H2O2 system, with Mo/GY demonstrating the
+most outstanding performance. Subsequently, these SANs were
+employed to develop colorimetric sensing arrays for the identi-
+ﬁcation of six biothiols: MAA, l-Cys, GSH, TGA, DMSA, and
+MH. The catalytic activities are obstructed to varying degrees by
+the binding strengths of thiols to the metal active sites. Through
+the integration of the distinctive feature responses of biothiols
+and SANs with machine learning algorithms, it became feasible
+to qualitatively distinguish and quantitatively detect various thi-
+ols. Furthermore, the sensing array is capable of discerning mix-
+tures of thiols, oﬀering potential for clinical thiol detection. This
+research not only introduces a novel approach for synthesizing
+SANs with speciﬁed binary coordination but also provides a con-
+venient method for thiol detection, thus expanding the utility of
+SANs with sensing arrays.
+Supporting Information
+Supporting Information is available from the Wiley Online Library or from
+the author.
+Acknowledgements
+The authors gratefully acknowledge ﬁnancial support from the National
+Natural Science Foundation of China (22204096, 22274096).
+Conﬂict of Interest
+The authors declare no conﬂict of interest.
+Author Contributions
+R.F., J.G.and H.J. authors contributed equally to this work. The manuscript
+was written through contributions of all authors. All authors have given
+approval to the ﬁnal version of the manuscript.
+Data Availability Statement
+The data that support the ﬁndings of this study are available from the
+corresponding author upon reasonable request.
+Keywords
+graphyne, metal single-atom nanozymes, sensing arrays
+Received: October 4, 2024
+Revised: November 22, 2024
+Published online: December 24, 2024
+[1] a) W. Q. Xu, Y. Wu, W. L. Gu, D. Du, Y. H. Lin, C. Z. Zhu, Chem. Soc.
+Rev. 2024, 53, 137; b) Q. Fu, C. Wei, M. Wang, ACS Nano 2024, 18,
+12049.
+[2] B. L. Vallee, R. J. Williams, Sci 1968, 59, 498.
+[3] A. C. Thomas, A. W. Lucy, Drug Metab. Dispos. 2003, 31, 53.
+[4] H. Jörnvall, J. Hedlund, T. Bergman, U. Oppermann, B. Persson,
+Biochem. Biophys. Res. Commun. 2010, 396, 125.
+[5] Y. Li, T. T. Huang, E. J. Carlson, S. Melov, P. C. Ursell, J. L. Olson, L.
+J. Noble, M. P. Yoshimura, C. Berger, P. H. Chan, D. C. Wallace, C. J.
+Epstein, Nat. Genet. 1995, 11, 376.
+[6] G. Schwarz, R. R. Mendel, M. W. Ribbe, Nature 2009, 460, 839.
+[7] a) A. Wang, J. Li, T. Zhang, Nat. Rev. Chem. 2018, 2, 65; b) R. Fu, Z.
+Ma, H. Zhao, H. Jin, Y. Tang, T. He, Y. Ding, J. Zhang, D. Ye, Anal.
+Chem. 2023, 95, 10844; c) S. Wu, J. Xia, R. Li, H. Cao, D. Ye, Anal.
+Chem. 2024, 96, 1813.
+[8] P. Liu, Y. Zhao, R. Qin, S. Mo, G. Chen, L. Gu, D. M. Chevrier, P. Zhang,
+Q. Guo, D. Zang, B. Wu, G. Fu, N. Zheng, Science 2016, 352, 797.
+[9] H. Wei, X. Liu, A. Wang, L. Zhang, B. Qiao, X. Yang, Y. Huang, S. Miao,
+J. Liu, T. Zhang, Nat. Commun. 2014, 5, 5634.
+[10] Z. Shi, W. Yang, Y. Gu, T. Liao, Z. Sun, Adv. Sci. 2020, 7, 2001069.
+[11] J. Li, M. Chen, D. A. Cullen, S. Hwang, M. Wang, B. Li, K. Liu, S.
+Karakalos, M. Lucero, H. Zhang, C. Lei, H. Xu, G. E. Sterbinsky, Z.
+Feng, D. Su, K. L. More, G. Wang, Z. Wang, G. Wu, Nat. Catal. 2018,
+1, 935.
+[12] L. Zhang, Y. Wang, Z. Niu, J. Chen, Small Methods 2019, 3, 1800443.
+[13] V. H. Hoa, S. Prabhakaran, K. T. Nhi Le, D. H. Kim, J.Mater. Chem. A.
+2022, 10, 14604.
+[14] Y. Xue, B. Huang, Y. Yi, Y. Guo, Z. Zuo, Y. Li, Z. Jia, H. Liu, Y. Li, Nat.
+Commun. 2018, 9, 1460.
+[15] J. Yu, C. Chen, Q. Zhang, J. Lin, X. Yang, L. Gu, H. Zhang, Z. Liu, Y.
+Wang, S. Zhang, X. Wang, L. Guo, J. Am. Chem. Soc. 2022, 144, 21908.
+[16] a) F. He, Y. Li, CCS Chem. 2023, 5, 72; b) V. G. Desyatkin, W. B. Martin,
+A. E. Aliev, N. E. Chapman, A. F. Fonseca, D. S. Galvão, E. R. Miller, K.
+H. Stone, Z. Wang, D. Zakhidov, F. T. Limpoco, S. R. Almahdali, S. M.
+Parker, R. H. Baughman, V. O. Rodionov, J Am. Chem. Soc. 2022, 144,
+17999; c) F. He, X. Chen, Y. Xue, Y. Li, Angew. Chem., Int. Ed. 2024,
+63, 202318080.
+[17] Z. Zhang, S. Qi, X. Song, J. Wang, W. Zhang, M. Zhao, Appl. Surf. Sci.
+2021, 553, 149464.
+[18] a) B. Liu, S. Zhan, J. Du, X. Yang, Y. Zhao, L. Li, J. Wan, Z. J. Zhao, J.
+Gong, N. Yang, R. Yu, D. Wang, Adv. Mater. 2022, 35, 2206450; b) Y.
+Zhao, N. Yang, H. Yao, D. Liu, L. Song, J. Zhu, S. Li, L. Gu, K. Lin, D.
+Wang, J Am. Chem. Soc. 2019, 141, 7240.
+[19] Y. Zhou, W. Huang, Y. He, Sens. Actuat. B: Chem. 2018, 270, 187.
+[20] X. Li, S. Li, Q. Liu, Z. Cui, Z. Chen, ACS Sustainable Chem. Eng. 2019,
+7, 17482.
+[21] a) J. Sun, Y. Lu, L. He, J. Pang, F. Yang, Y. Liu, TrAC Trends in Anal.
+Chem. 2020, 122, 115754; b) J. Xia, Z. Li, Y. Ding, L. A. Shah, H. Zhao,
+D. Ye, J. Zhang, Anal. Chem. 2024, 96, 8221.
+Small 2025, 21, 2409113
+© 2024 Wiley-VCH GmbH
+2409113 (10 of 10)
+ 16136829, 2025, 5, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202409113 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

@@ -1,0 +1,1016 @@
+Angewandte Chemie International Edition 
+How to cite: Angew. Chem. Int. Ed. 2026 , 65, e4862058 
+doi.org/10.1002/anie.4862058 
+RESEARCH ARTICLE
+Remotely Tuning the Electronic Structures of Cu Site Over 
+N-Heterocyclic Carbene-Protected Cu7 Nanocluster for 
+Steering CO2 Electroreduction to Hydrocarbons 
+Li-Juan Gong1 
+Duan-Hui Si2 
+Sha Bai1 
+Li-Yao Liu2 
+Le Zhang1 
+Yuan-Biao Huang2 
+Ying-Feng Han1 
+1 College of Chemistry and Materials Science, Northwest University, Xi’an, P. R. China 
+2 State Key Laboratory Structural Chemistry, Fujian Institute of Research 
+on the Structure of Matter Chinese Academy of Sciences, Fujian, P. R. China 
+Correspondence: Ying-Feng Han ( yfhan@nwu.edu.cn) 
+Received: 27 November 2025 
+Revised: 19 January 2026 
+Accepted: 4 February 2026 
+Keywords: ball milling | CO2 electroreduction | Cu7 nanocluster | N-heterocyclic carbene | remote tuning of electronic structure 
+ABSTRACT 
+In this study, a remote-control strategy for tuning the electronic structures of atomically precise Cu nanoclusters (Cu NCs) 
+was developed, aiming to enhance the selectivity of the CO2 RR toward high-value hydrocarbons. Two Cu7 NCs protected by 
+tridentate N-heterocyclic carbene (NHC) ligands with distinct functional groups on the remote benzimidazole ring, NHCH -Cu7 
+and NHCMe -Cu7 , were synthesized via a green and efficient ball-milling approach. The main product obtained with NHCMe - 
+Cu7 is CO, with a selectivity of 82.8%, whereas the Faradaic efficiency (FE) for hydrocarbon production using NHCH -Cu7 is 
+74.0%, affording 50.4% CH4 and 23.6% C2 H4 at − 1.5 V versus the reversible hydrogen electrode (RHE). Comprehensive theoretical 
+calculations and operando spectroscopic analyses demonstrate that the effect of the remote substituent on the NHC ligand provides 
+a greater population of active electrons in the highest occupied d-orbital of NHCH -Cu7 compared to that in NHCMe -Cu7 , thus 
+effectively regulating the binding strength of the *CO intermediate. This in turn promotes stabilization and further activation of 
+the intermediate, ultimately steering the product selectivity from CO toward targeted hydrocarbons. This study establishes an 
+atomic-level paradigm for ligand engineering of Cu NCs, enabling remote tuning of the electronic structure of the active sites to 
+realize highly selective hydrocarbon generation. 
+1 
+Introduction 
+Electrochemical CO2 reduction (CO2 RR) driven by renewable 
+electricity offers a promising approach for upcycling CO2 into 
+high-value chemicals and fuels [ 1–4 ]. Compared to the products 
+(e.g., CO and HCOOH) of the relatively simple two-electron 
+transfer reaction, deeply reduced hydrocarbon products such 
+as CH4 and C2 H4 with higher energy density are more diffi- 
+cult to produce, despite their great significance [ 5 ]. Recently, 
+various Cu-based materials, including metallic Cu, Cu oxides, 
+Cu-containing molecules, Cu single-atom catalysts, and Cu- 
+based framework materials, were demonstrated as privileged 
+catalysts for converting CO2 into hydrocarbons [ 6–15 ]. Nev- 
+ertheless, simultaneously achieving high activity and selectiv- 
+ity in hydrocarbon formation is a persistent challenge owing 
+to the multiple-proton-coupled electron transfer process (i.e., 
+CO2 →*CO→*CHO→hydrocarbons) [ 6, 16 ]. To overcome this 
+limitation, various strategies for modulating the electronic 
+Li-Juan Gong and Duan-Hui Si contributed equally to this work. 
+Dedicated to Professor Yu Fang on the occasion of his 70th birthday. 
+© 2026 Wiley-VCH GmbH 
+Angewandte Chemie International Edition , 2026; 65:e4862058 
+https://doi.org/10.1002/anie.4862058
+1 of 11
+
+structure of Cu sites and regulating the binding strength with 
+the key *CO intermediate have been proposed, aiming to pro- 
+mote further hydrogenation to produce hydrocarbons [ 7, 14 , 15, 
+17–19 ]. Despite great improvements in the efficiency of CO2 
+reduction to hydrocarbons, the corresponding structure-activity 
+relationship remains unclear owing to the ambiguous composi- 
+tion and structural reconstruction of Cu catalysts under CO2 RR 
+conditions [ 20, 21 ]. 
+Atomically precise Cu nanoclusters (NCs) featuring well-defined 
+surface ligand and core have been established as an ideal platform 
+for exploring the structure-activity relationship governing the 
+CO2 RR [ 22–30 ]. The electronic structure of the Cu cores can 
+be precisely tailored at the atomic level via ligand engineering, 
+enabling direct regulation of the catalytic performance [ 22, 
+23 , 31–33 ]. Recent studies demonstrated that manipulating the 
+first/secondary coordination shells of Cu NCs via p-d orbital 
+hybridization with the Cu center or short-range electron delocal- 
+ization has a promotional effect on the CO2 RR [ 31 ], as exemplified 
+by thiolate-protected Cu6 (MBD)6 [ 27 ], alkynyl-protected Ag9 Cu6 - 
+Fc [ 34 ], phosphine-protected Cu6 Mo2 -R [ 35 ], and so forth. More- 
+over, regulation of the first/secondary coordination shells has a 
+non-negligible influence on the stability of the Cu NCs. Therefore, 
+developing a remote-control strategy to strike a balance between 
+the efficient tuning of electronic structure and the stability of Cu 
+NCs is highly desirable [ 22, 36 ]. 
+N-heterocyclic carbene (NHC) ligands have strong σ-donating 
+and moderate π-accepting capabilities, positioning them as great 
+candidates for stabilizing metal NCs during electrocatalytic pro- 
+cesses such as the CO2 RR [ 19, 37–41 ]. The electronic and steric 
+properties of NHC ligands can be precisely tailored by subtle 
+adjustment and targeted functionalization of the nitrogen sub- 
+stituents and imidazolium ring, thus modulating the electronic 
+structure and reactivity of the coordinated metal centers [ 42–45 ]. 
+Moreover, the π-conjugated backbone of NHC ligands enables 
+remote modulation of the electronic structure of NHC-stabilized 
+NCs while avoiding blocking the active sites and the ineffective 
+electronic modulation associated with alkyl linkers, encountered 
+in conventional ligand design [ 36, 46 , 47 ]. These features provide 
+great potential for developing Cu NCs for achieving highly 
+efficient CO2 RR, ultimately generating value-added products and 
+providing insight into the reaction mechanism. 
+Herein, a remote-control strategy was developed for realizing a 
+switch in the CO2 electroreduction product from CO to higher- 
+value hydrocarbons through precise modulation of the electronic 
+structure of NHC-stabilized Cu NCs. Through the tailored syn- 
+thesis of NHC ligands distinguished by the -H and -CH3 groups 
+on the remote benzimidazole ring, two stable Cu7 NCs, NHCH - 
+Cu7 and NHCMe - Cu7 , were obtained via a green ball-milling 
+approach. NHCMe -Cu7 showed predominant CO selectivity in 
+the CO2 electroreduction. Despite subtle differences in the remote 
+-H group, NHCH -Cu7 exhibited exceptional FE toward hydro- 
+carbons (50.4% CH4 and 23.6% C2 H4 ) at − 1.5 V versus RHE (all 
+relevant data herein are referenced to the RHE) with a high partial 
+current density of 202.2 mA ⋅cm− 2 for hydrocarbons. Operando 
+spectroscopic analyses confirmed that the stronger binding of 
+the *CO intermediate on NHCH -Cu7 impedes desorption and 
+promotes further hydrogenation. Systematic density functional 
+theory (DFT) analyses reveal that the -H group in the NHC 
+ligands elevates the 3dx 
+2 
+-y 
+2 orbital to the highest occupied d- 
+orbital state in NHCH -Cu7 , which hosts more active electrons 
+compared to the highest occupied orbital in NHCMe -Cu7 . Con- 
+sequently, the electronic configuration of NHCH -Cu7 facilitates 
+stabilization and activation of the adsorbed *CO on the Cu site, 
+and significantly decreases the free-energy barrier for *CHO 
+formation, thus greatly improving the hydrocarbon selectivity. 
+2 
+Results and Discussion 
+2.1 
+Synthesis and Characterization 
+Two pincer-type NHC precursors, 1,3-bis-(1-benzyl-1 H -1,2, 
+3-triazol-4-yl)methyl)-1H-benzo[ d ]imidazol-3-ium 
+hexafluoro- 
+phosphate (H(taz)2 NHCH ⋅PF6 ) and 1,3-bis-(1-benzyl-1 H -1,2,3- 
+triazol-4-yl)methyl)-5,6-dimethyl-1H-benzo[ d ] imidazole-3-ium 
+hexafluorophosphate (H(taz)2 NHCMe ⋅PF6 ) were designed and 
+synthesized through the Cu(I)-catalyzed click reaction (see the 
+details in Scheme S1 and Figures S1 ‒S6 ). These precursors were 
+then reacted with phenylacetylene (PhC ≡ CH), copper acetate, 
+and copper powder through a one-pot ball-milling process, 
+yielding NHCH -Cu7 and NHCMe -Cu7 with distinct functional 
+groups on the NHC ligands (Scheme 1 ). 
+Single crystals of NHCH -Cu7 and NHCMe -Cu7 suitable for 
+single-crystal x-ray diffraction (SCXRD) were obtained by slowly 
+diffusing isopropyl ether into a mixed CH2 Cl2 /MeOH solution 
+of the clusters. The SCXRD analysis reveals that NHCH -Cu7 
+crystallizes in the triclinic space group P 1, whereas NHCMe -Cu7 
+crystallizes in the monoclinic crystal system with the C 2/c space 
+group (Table S1 ). Both NHCH -Cu7 and NHCMe -Cu7 consist of a 
+Cu7 core, three NHC ligands, four PhC ≡ C ˉ ligands, and three PF6 ˉ
+counter anions [ 48 ]. The charge state and the precise molecular 
+composition of both clusters were further determined using 
+high-resolution electrospray ionization mass spectrometry (HR- 
+ESI-MS). The ESI-MS data presented in Figures S7 and S8 show 
+dominant peaks at m/z = 1188.1351 and 1230.1814, which match 
+well with the simulated data for [Cu7 (NHCH )3 (PhC ≡ C)4 (PF6 )]2 + 
+(calculated: 1188.1326) and [Cu7 (NHCMe )3 (PhC ≡ C)4 (PF6 )]2 + (cal- 
+culated: 1230.1794), respectively. 
+The two Cu clusters can be considered as pseudo-isologues owing 
+to their identical Cu atom counts and ligand arrangements. 
+The Cu7 core of NHCH -Cu7 exhibits an hourglass-shaped geo- 
+metric configuration composed of two vertex-sharing tetrahedra 
+(Figure 1a ). The average Cu–Cu distance of 2.5155 Å between the 
+central Cu atom (shown in yellow) and basal Cu atoms (shown in 
+pink) indicates a strong cuprophilic interaction (Table S2 ). 
+Furthermore, the two tetrahedra units are interlocked in a 
+staggered configuration through relatively weaker Cu–Cu inter- 
+actions, with bond lengths of 2.7957 (27) and 2.8494 (27) Å. The 
+corresponding interior angles are 67.796 (82) and 69.443 (91)
+◦, 
+respectively. The distances among the basal Cu atoms range from 
+3.6580 (34) to 3.8565(39) Å, resulting in “open-cube” structures, 
+as illustrated in Figure 1b . All Cu atoms are four-coordinated. 
+The central Cu atom is coordinated by four carbon atoms, while 
+each basal atom features a mixed coordination sphere consisting 
+of three carbon atoms and one nitrogen atom. In the motif of 
+the surrounding shell, each tridentate NHC ligand stabilizes the 
+2 of 11
+Angewandte Chemie International Edition, 2026
+ 15213773, 2026, 13, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.4862058 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+SCHEME 1 
+Synthesis and structures of NHCH -Cu7 and NHCMe -Cu7 clusters via the ball milling method. H atoms and PF6 ˉ counter anions are 
+omitted for clarity. Color labels: pink and yellow, Cu; blue, N; gray, orange, and cyan, C. 
+(b)
+(a)
+(c)
+(d)
+(f)
+82.3o
+79.9o
+1.921 Å
+1.957 Å
+(e)
+FIGURE 1 
+Side view (a) and top view (b) of Cu7 core in NHCH -Cu7 . (c) The bridging mode of NHC in NHCH -Cu7 . Side view (d) and top view 
+(e) of Cu7 core in NHCMe -Cu7 . (f) The bridging mode of NHC in NHCMe -Cu7 . H atoms and PF6 ˉ counter anions are omitted for clarity. Color labels: 
+pink and yellow, Cu; blue, N; gray, orange, and cyan, C. 
+Angewandte Chemie International Edition, 2026
+3 of 11
+ 15213773, 2026, 13, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.4862058 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+cluster via a unique μ3 - κC : κN : κN coordination mode, supported 
+by short Cu–Ccarbene (1.9208 (156) Å) and Cu–N (average 2.0325 
+Å) bonds (Figure 1c ). The geometric constraints imposed by the 
+triazole nitrogen substituents lead to C- Cu- Cu torsion angles 
+of 79.937 (42) and 97.797 (38)
+◦. Additionally, all four PhC ≡ C ˉ
+ligands adopt a μ4 - 𝜂1 
+𝜎: 𝜂1 
+𝜎: 𝜂1 
+𝜎: 𝜂2 
+𝜋coordination mode (Figure S9 ), 
+connecting the four Cu atoms, with Cu-C distances ranging from 
+2.0183 (115) to 2.5307 (109) Å. 
+The core-shell coordination pattern of NHCMe -Cu7 is similar to 
+that of NHCH -Cu7 but is more distorted owing to the substitution 
+of the -CH3 group in NHC ligands (Table S3 ). A relatively stronger 
+cuprophilic interaction was observed in NHCMe -Cu7 because the 
+Cu ─Cu bond lengths and interior angles are less than those in 
+NHCH -Cu7 (Figure 1d,e ). Furthermore, the Cu ─Ccarbene bond in 
+NHCMe -Cu7 is longer than that in NHCH -Cu7 (Figure 1f ). These 
+results indicate that subtle variations in the NHC ligand can 
+influence the structure of the Cu cluster, thereby potentially mod- 
+ulating its electronic properties. Space-filling models reveal that 
+both clusters feature three exposed copper centers, which could 
+serve as active sites during the electrocatalytic CO2 RR process 
+(Figure S10 ) [ 27 ]. Moreover, the packing diagrams of NHCH -Cu7 
+and NHCMe -Cu7 show strong intermolecular C–H ⋅⋅⋅π and π⋅⋅⋅π
+interactions between the protecting ligands (Figures S11 and S12 ). 
+The x-ray powder diffraction (PXRD) patterns (Figure S13 ) of 
+these clusters match well with those simulated from single-crystal 
+diffraction data, indicating that the bulk samples are phase-pure 
+and highly crystalline. 
+X-ray photoelectron spectroscopy (XPS) and x-ray absorption fine 
+spectroscopy (XAFS) analyses reveal that the electronic state of 
+the Cu in NHCH - Cu7 and NHCMe - Cu7 is significantly influenced 
+by the subtle variations in the NHC ligand. The high-resolution 
+Cu 2p spectrum of NHCH -Cu7 (Figure 2a ) shows two binding 
+energy (BE) peaks at 952.8 (Cu 2p1/2 ) and 932.9 (Cu 2p3/2 ) eV, 
+accompanied by a Cu LMM Auger peak at ∼ 915.6 eV (Figure 
+S14 ), indicating that the Cu species are in the monovalent state, 
+in agreement with the SCXRD analyses. As illustrated in Figure 
+S15 , the N 1s binding energies of both clusters are negatively 
+shifted relative to their imidazolium salt precursors, consistent 
+with electron back-donation from occupied Cu orbitals into 
+the π* system of the NHC ligands. Notably, this shift is more 
+pronounced for NHCH -Cu7 ( − 0.47 eV) than for NHCMe -Cu7 
+( − 0.21 eV), indicating stronger back donation in the H-modified 
+system. Further support is provided by the Cu 2p spectra, which 
+display a distinct positive shift for NHCH -Cu7 (Figure 2a ) [ 47, 49 ]. 
+The Cu K-edge x-ray absorption near-edge structure (XANES) 
+spectra (Figure 2b ) of both clusters exhibit a distinct Cu 1s →4p 
+transition at 8980.0 eV, indicative of Cu(I) species, whereas the 
+absence of 1s →3d transitions confirms the lack of Cu(II) centers. 
+Furthermore, the absorption edges of these clusters are located 
+between those of Cu foil and CuO, aligning more closely with 
+Cu2 O reference, collectively demonstrating the presence of Cu(I) 
+species [ 49, 50 ]. Notably, the negative shift in the absorption edge 
+for NHCMe -Cu7 clearly reflects a decrease in the Cu oxidation 
+state, corroborating the XPS results. Consequently, fine-tuning 
+the functional groups on NHC ligands offers a viable strategy for 
+remotely modulating the electronic state of both Cu NCs. The 
+Fourier-transform extended x-ray absorption fine structure (FT- 
+EXAFS) spectrum of NHCH -Cu7 and NHCMe -Cu7 shows two 
+peaks at 1.58 and 2.32 Å (prior to phase correction), assigned to the 
+Cu-N/C and Cu-Cu coordination shells, respectively (Figure 2c ) 
+[ 50 ]. The local coordination configurations of NHCH -Cu7 and 
+NHCMe -Cu7 were further investigated by fitting the EXAFS 
+curves. The best-fit results for both samples (Figure S16 and Table 
+S4 ) include three backscattering paths: (1) Cu-N, (2) Cu-C, and 
+(3) Cu-Cu. The coordination numbers of N and C around Cu are 
+estimated to be 0.9 and 3.1, respectively, which are consistent with 
+the coordination geometries of NHCH -Cu7 and NHCMe -Cu7 
+determined from the SCXRD analyses. The Fourier-transform 
+infrared (FT-IR) spectra of the NHC precursors and the as- 
+synthesized clusters (Figure S17 ) also support the conclusions 
+drawn above. 
+Comparison of the photophysical properties of NHCH -Cu7 and 
+NHCMe -Cu7 (Figure 2d ) indicates that upon substituting -H with 
+-CH3 in the NHC ligand, the absorption peaks at 292 and 362 nm 
+for NHCH -Cu7 were shifted to 303 and 368 nm for NHCMe - 
+Cu7 , respectively. The red shift of the peaks further confirms 
+that the effect of the electron-rich -CH3 groups on the Cu species 
+[ 51 ]. Time-dependent density functional theory (TD-DFT) calcu- 
+lations were carried out to gain deeper insight into the electronic 
+structures of these clusters. The simulated absorption spectra 
+show reasonable agreement with the experimental data (Figures 
+S18 and S19 ). The energy gaps between the highest occupied 
+molecular orbital and the lowest unoccupied molecular orbital for 
+NHCH - Cu7 and NHCMe - Cu7 are 4.35 and 4.08 eV, respectively 
+[ 32 ]. These results suggest that the variations in the electronic 
+states of the Cu of both clusters coincide with the modulation 
+of the substituents in the NHC ligand, as supported by XPS and 
+XAFS analyses. Additionally, the time-dependent UV/vis spectra 
+confirm that NHCH -Cu7 and NHCMe -Cu7 remained stable for 
+over 24 h (Figure S20 ). Thermogravimetric analysis (TG) further 
+demonstrates the remarkable thermal stability of these species up 
+to 250◦C (Figure S21 ), guaranteeing their structural robustness for 
+electrocatalytic CO2 RR. 
+2.2 
+Electrochemical CO2 Reduction 
+To evaluate the remote effect of the substituent of the NHC ligand 
+on the CO2 RR performance of NHCH - Cu7 and NHCMe - Cu7 , 
+electrocatalytic tests were conducted in a three-compartment 
+flow cell. Linear sweep voltammetry (LSV) analysis of both 
+catalysts revealed higher cathodic current densities under flowing 
+CO2 conditions compared to those in an Ar-saturated electrolyte, 
+indicating effective electrocatalytic CO2 reduction by both cata- 
+lysts (Figure 3a ). Notably, NHCH -Cu7 exhibited higher current 
+densities in the CO2 -saturated medium, reaching a maximum 
+current density of 364 mA cm− 2 at − 1.6 V, highlighting its superior 
+electrocatalytic performance for CO2 reduction. Furthermore, the 
+absence of distinct reduction peaks in the LSV and CV profiles 
+(Figure S22 ) indicates the high stability of the Cu(I) species in 
+both clusters during the CO2 RR. 
+The selectivity of the CO2 RR was quantified through periodic 
+analysis of the gaseous and liquid products using online gas 
+chromatography and 1 H NMR, respectively. With both catalysts, 
+the only gaseous products were CO, C2 H4 , CH4 , and H2 , and 
+no liquid products were detected (Figure S23 ). The FE for all 
+products is summarized in Figure 3b,c . The reaction catalyzed 
+by NHCMe -Cu7 produced CO as the major product, where FECO 
+4 of 11
+Angewandte Chemie International Edition, 2026
+ 15213773, 2026, 13, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.4862058 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+960
+950
+940
+930
+NHCH-Cu7
+).
+u
+.
+a
+( ytis
+n
+e
+t
+n
+I
+952.80 eV
+932.91 eV
+Cu 2p1/2
+Cu 2p3/2
+Binding Energy (eV)
+NHCMe-Cu7
+952.50 eV
+932.74 eV
+0
+1
+2
+3
+4
+5
+NHCH-Cu7
+NHCMe-Cu7
+Cu2O
+CuO 
+Cu foil
+FTk1(k) (a.u.)
+R (Å)
+Cu-Cu
+Cu-O
+Cu-O
+Cu-C/N Cu-Cu
+8980
+9000
+9020
+9040
+ 
+d
+e
+zila
+m
+r
+o
+N
+(E)
+Energy (eV)
+ Cu foil  
+ NHCMe-Cu7
+ CuO
+ NHCH-Cu7
+ Cu2O
+300
+450
+600
+750
+).
+u
+.
+a
+( 
+e
+c
+n
+a
+b
+r
+o
+s
+b
+A
+Wavelength (nm)
+ NHCH-Cu7
+ NHCMe-Cu7
+292 nm
+362 nm
+303 nm
+368 nm
+(a)
+(b)
+(c)
+(d)
+FIGURE 2 
+(a) High-resolution Cu 2p XPS spectra of NHCH -Cu7 and NHCMe -Cu7 . (b) Normalized Cu K-edge XANES spectra of NHCH -Cu7 and 
+NHCMe -Cu7 . (c) Cu K-edge Fourier-transformed extended x-ray absorption fine structure (FT-EXAFS) spectra of NHCH -Cu7 and NHCMe -Cu7 . (d) 
+UV-vis absorption spectra NHCH -Cu7 and NHCMe -Cu7 . 
+exceeded 70% across the entire potential range, reaching up 
+to ∼ 82.8% at − 1.2 V and a CO partial current density ( jco ) of 
+130.2 mA cm− 2 . With increasing negative potential, the formation 
+of C2 H4 was initiated, achieving a maximum FEC2H4 of ∼ 18.5% 
+at − 1.5 V with a jC2H4 of 42.4 mA cm− 2 . In contrast with the 
+high CO selectivity observed with NHCMe -Cu7 , the production of 
+hydrocarbons (i.e., CH4 and C2 H4 ) was markedly enhanced with 
+NHCH -Cu7 . Specifically, at more positive potentials ( ≥ − 1.0 V), 
+CO was the primary product (FECO > 42.2%). Interestingly, as 
+the potential became more negative, the total FEs for producing 
+the hydrocarbons increased steadily, with CH4 emerging as the 
+dominant product above –1.2 V. At –1.5 V, NHCH -Cu7 achieved 
+a maximum FECH4 of 50.4% ( jCH4 = 137.8 mA cm− 2 ) and a 
+FEC2H4 of 23.6% ( jC2H4 = 64.4 mA cm− 2 ; Figure 3d ). Collectively, 
+these findings demonstrate that subtle ligand modification within 
+these clusters can decisively switch the product selectivity of the 
+CO2 RR. To our best knowledge, the FEhydrocarbon values achieved 
+with NHCH -Cu7 are comparable to those of previously reported 
+Cu-based clusters (Table S5 ). Furthermore, the introduction of a 
+polydopamine (PDA) coating on NHCH -Cu7 ( NHCH -Cu7 /PDA ) 
+leads to enhanced C2 activity, yielding a FE of 48.5% with C2 H4 
+contributing 30.7% (Figures S24 and 25 ). This improvement may 
+stem from the amino and phenolic hydroxyl groups in PDA, 
+which function as integrated proton and hydrogen-bond donor 
+facilitators to promote *CO hydrogenation and stabilize key 
+intermediates for C2 production during the CO2 RR [ 52 ]. 
+To clarify the origin of the CO2 RR activity, a catalyst-free control 
+experiment was conducted. Only H2 was detected across all 
+potentials (Figure S26 ), confirming that all carbon-based products 
+originated exclusively from the catalytic function of the clusters. 
+Furthermore, 13 C-labeled CO2 isotope experiments showed clear 
+signals corresponding to 13 CO ( m/z = 29), 13 CH4 ( m/z = 17), and 
+13 C2 H4 ( m/z = 30), demonstrating that the carbon-containing 
+products generated over NHCH - Cu7 and NHCMe - Cu7 are indeed 
+derived from the labeled 13 CO2 feedstock (Figures S27 and S28 ). 
+Both clusters remained stable over continuous electrolysis for 
+7 h, with negligible decay in the selectivity and current density 
+Angewandte Chemie International Edition, 2026
+5 of 11
+ 15213773, 2026, 13, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.4862058 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 3 
+(a) LSV curves of NHCMe - Cu7 and NHCH - Cu7 in CO2 and Ar atmosphere. (b) FEs for CH4 , C2 H4 , CO, HCOOH and H2 on NHCMe - 
+Cu7 at different potential. (c) FEs for CH4 , C2 H4 , CO and H2 on NHCH -Cu7 at different potential. (d) Partial current densities of Hydrocarbons (CH4 
+and C2 H4 ) and CO on NHCMe -Cu7 and NHCH -Cu7 . 
+(Figures S29 and S30 ). After electrolysis, the structure of clusters 
+was preserved intact, as confirmed by PXRD, XPS, UV-vis, and 
+ESI-MS analyses (Figures S31 ‒S34 ). These results demonstrate 
+the remarkable stability of NHCH - Cu7 and NHCMe - Cu7 during 
+the electrochemical CO2 RR, attributed to the robust Cu-Ccarbene 
+bonds. 
+To further investigate the variations in the chemical state and 
+structural stability of the catalysts under realistic CO2 electrore- 
+duction conditions, NHCH -Cu7 was analyzed using in situ XAFS 
+(Figure S35 and Figure 4a ). Initially, in the CO2 -saturated 0.5 M 
+KHCO3 mixture solution under open-circuit voltage (OCP), the 
+Cu K-edge exhibited a distinct positive shift compared to that of 
+the pristine sample, indicating charge transfer from Cu 3d to the 
+carbon 2p orbital of CO2 and spontaneous chemical adsorption 
+at the active Cu sites [ 53 ]. When the potential was tuned from –
+0.9 to –1.6 V, the edge progressively shifted toward lower energies. 
+Upon applying a potential of –1.2 V, the absorption edge returned 
+to the high-energy side, revealing the reversible redox behavior 
+of Cu species under potential bias. The EXAFS k1 χ(k) functions 
+displayed distinct oscillation frequencies compared to those of 
+pristine NHCH -Cu7 , further confirming the rapid adsorption 
+of CO2 at the Cu sites (Figure S36a ) [ 54 ]. With increasing 
+CO2 adsorption and application of the voltage bias, the Cu–
+C coordination number gradually increased (Figure S36b and 
+Table S4 ), suggesting accumulation of CO2 and its reduction 
+intermediates bound via carbon atom at the Cu sites. In contrast, 
+the constant Cu–N and Cu–Cu coordination numbers reflect the 
+structural integrity of NHCH -Cu7 . These results indicate that 
+NHCH -Cu7 simultaneously affords high structural stability and 
+efficient CO2 activation capability, serving as an effective catalyst 
+for the CO2 RR. 
+2.3 
+Mechanistic Investigation 
+To elucidate the mechanism underlying the divergent CO2 RR 
+performance under NHCH -Cu7 and NHCMe -Cu7 catalysis, 
+the electrochemically active surface areas (ECSA) of the 
+catalysts were determined via double-layer capacitance ( Cdl ) 
+6 of 11
+Angewandte Chemie International Edition, 2026
+ 15213773, 2026, 13, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.4862058 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 4 
+(a) Normalized the Cu K-edge operando XANES spectra on NHCH -Cu7 . In situ ATR-FTIR spectra of NHCMe -Cu7 under different 
+potentials in the ranges of (b) 1000 to 1750 cm− 1 and (c) 1750 to 2100 cm− 1 . In situ ATR-FTIR spectra of NHCH -Cu7 under different potentials in the 
+ranges of (d) 1000 to 1750 cm− 1 and (e) 1750 to 2100 cm− 1 . (f) Desorption profile which shows the desorption rate of adsorbed CO on Cu active sites in 
+different catalysts. 
+measurements. The similar Cdl values of both clusters (Figure 
+S37 ) reflect the comparable ECSAs, attributed to the similar 
+crystalline structures and overall number of active sites. Contact 
+angle measurements further revealed no significant difference 
+in the hydrophobicity (Figure S38 ). Conversely, electrochemical 
+impedance spectroscopy (EIS) measurements identified a 
+smaller semicircle and lower charge transfer resistance ( Rct ) 
+for NHCH -Cu7 , indicating enhanced intrinsic kinetics for the 
+CO2 RR (Figure S39 ) [ 34 ]. Combined with prior analyses, these 
+findings imply that the divergence in product selectivity may 
+originate from differences in the electronic structure of the Cu 
+sites. 
+The different reaction pathways catalyzed by the two clusters 
+were investigated by tracking the real-time evolution of the 
+reaction intermediates using in situ electrochemical attenuated 
+total reflection Fourier-transform infrared spectroscopy (ATR- 
+FTIR) at various applied potentials. With decreasing applied 
+potential, strong peaks appeared at 1296, 1434, and 1562 cm− 1 in 
+the spectra of the NHCMe -Cu7 cluster catalyst (Figure 4b ), which 
+are attributed to OH deformation, symmetric stretching, and 
+asymmetric stretching of the *COOH intermediate, respectively 
+[ 55 ]. Peaks related to the *COOH intermediate emerged at similar 
+positions in the spectrum of NHCH -Cu7 (Figure 4d ). Moreover, 
+the peaks in the ranges of 1800 ‒1900 and 1900 ‒2000 cm− 1 
+are associated with the bridge and atop sites of adsorbed CO 
+(*CObridge and *COatop ), respectively (Figure 4c,e ) [ 14 ]. Notably, 
+no peaks were detected approximately 2000 cm− 1 for NHCMe - 
+Cu7 , and the bound *CO appears to be only absorbed at a bridge 
+site (1894 cm− 1 ), implying rapid desorption during electrolysis. 
+Conversely, NHCH -Cu7 displayed a distinct *COatop peak at 1970 
+cm− 1 ( ≥ − 0.9 V), signifying substantial accumulation of *COatop 
+intermediates resulting from the stronger binding strength on the 
+catalyst surface. Additionally, the *CObridge stretching frequency 
+(1836 cm− 1 ) was red-shifted in the case of NHCH -Cu7 , and the 
+coverage was higher compared to that of NHCMe -Cu7 [ 56 ]. This 
+shift reflects a weakening of the C-O bond due to enhanced 
+backdonation from the Cu centers, directly confirming a stronger 
+Cu-*CO interaction. Fundamentally, the conversion of CO2 to 
+hydrocarbons proceeds via the initial formation of the *CO inter- 
+mediate, followed by sequential hydrogenation steps, leading 
+to the generation of key *CHO intermediates, and ultimately 
+resulting in the formation of CH4 and C2 H4 . Consequently, the 
+adsorption strength of *CO on the active sites plays a critical role 
+in determining whether *CO evolves toward desorption or further 
+hydrogenation for hydrocarbon generation. As anticipated, the 
+intensity of the *CO peak initially increased in the case of 
+NHCH -Cu7 , and then gradually leveled off (Figure S40 and 
+Table S6 ). Simultaneously, a distinct *CHO peak emerged at 1690 
+cm− 1 below − 1.2 V, indicating enhanced protonation of *CO at 
+higher overpotentials (Figures 4d and S41 ) [ 14, 27 ]. Subsequently, 
+obvious peaks at 1460 and 1146 cm− 1 , appearing over the potential 
+Angewandte Chemie International Edition, 2026
+7 of 11
+ 15213773, 2026, 13, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.4862058 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+range of − 1.2 to − 1.8 V, were assigned to *CH2 O and *OCH3 
+intermediates, respectively [ 55 ]. These signals align with the 
+predominant CH4 selectivity observed for NHCH -Cu7 in this 
+potential window, as *CH2 O and *OCH3 are key intermediates 
+in the CO2 RR pathway toward CH4 generation. Additionally, the 
+absorption peak at 1384 and 1502 cm− 1 is indicative of *OCCHO 
+species, a crucial intermediate involved in the C-C coupling 
+process during C2 H4 formation [ 14 ]. In sharp contrast, no obvious 
+*CO hydrogenation signals were detected with NHCMe -Cu7 , 
+suggesting that *CO is spontaneously desorbed, preventing its 
+further reduction to generate CH4 or C2 H4 . 
+To further verify the *CO binding strength of the different 
+catalysts, the adsorption stability of CO on NHCH -Cu7 and 
+NHCMe -Cu7 was evaluated via CO diffuse reflection Fourier- 
+transform infrared spectroscopy (CO-DRIFTS) [ 51 ]. The intensity 
+of the peak of adsorbed CO serves as an indicator of the CO 
+adsorption ability. The CO adsorption capacity of NHCH -Cu7 
+is comparable to that of NHCMe -Cu7 (Figure S42 ), plausibly 
+owing to the similar number of active sites in both catalysts. Both 
+samples were subjected to Ar purging at a constant flow rate 
+while monitoring the intensity of the peak of adsorbed CO at 
+regular intervals to characterize its desorption behavior. For both 
+clusters, the recorded absorbance intensities were normalized 
+against the initial value at t = 0 s and fitted using a first-order 
+kinetic model, yielding a desorption rate constant ( kdes ) of 4.2 
+× 10− 3 for NHCMe -Cu7 and 8.6 × 10− 3 NHCH -Cu7 (Figure 4f ). 
+The lower kdes value for NHCH -Cu7 confirms a longer residence 
+time and stronger binding affinity of the *CO intermediate on 
+its surface. To disentangle the specific role of *CO binding 
+behavior in this selectivity shift from preceding CO2 activation 
+steps, we conducted comparative CORR experiments using CO 
+as substrate. Under high CO coverage, NHCMe -Cu7 still showed 
+negligible methane formation, indicating that the limiting factor 
+for hydrocarbon generation is not CO2 activation but rather the 
+intrinsic ability to stabilize and further hydrogenate adsorbed 
+*CO (Figure S43 ). In contrast, NHCH -Cu7 exhibited a pro- 
+nounced enhancement in CH4 production. Taken together, both 
+the CO2 /CO electroreduction performance tests and operando 
+spectroscopic analyses demonstrate that the *CO intermediate 
+can be stabilized by tuning the NHC ligand in the Cu clusters, 
+thereby successfully steering the reaction pathway on NHCH -Cu7 
+toward the production of hydrocarbons. 
+To gain more comprehensive insight into the intrinsic mech- 
+anism underlying the remote modulation of the Cu electronic 
+structure and its influence on the catalytic activity for CO2 
+electroreduction, extensive DFT calculations were carried out on 
+both clusters. The catalyst models derived from the optimized 
+crystal structures of NHCH -Cu7 and NHCMe -Cu7 are presented 
+in Figure S44 . Initially, the Bader charge of Cu was used as a 
+visual indicator for evaluating the effect of remote tuning on the 
+electronic state of the Cu core. As depicted in Figure 5a , the Cu 
+centers in NHCH -Cu7 have a higher positive charge compared 
+to those in NHCMe -Cu7 , as supported by the above experimental 
+findings. The d-band electronic structure of the Cu sites was 
+clarified by projected density of states (PDOS) and integrated 
+projected density of states (IPDOS) analyses of NHCH -Cu7 and 
+NHCMe -Cu7 . Rather than forming a broad d-band, each 3d state 
+exhibits a relatively localized electron distribution, resulting in 
+five distinct 3d orbitals, with different numbers of electrons 
+occupying each orbital (Figures S45 and 5b ). Specifically, the 3dz 
+2 
+orbital of NHCMe -Cu7 possesses the highest electron density near 
+the Fermi energy ( EF ) level among the five 3d orbitals, and is 
+thus identified as the highest occupied orbital. In contrast, the 
+energy levels of the d-orbital in NHCH -Cu7 were redistributed, 
+with the 3dx 
+2 
+-y 
+2 orbital shifting to higher energy states (Figure 5b ). 
+The highest occupied d-orbital is known to play a crucial role 
+in determining the reaction kinetics, as electrons located closer 
+to the EF are more chemically active [ 17, 57 ]. Notably, owing 
+to the electron-poor effect of the -H group, the Cu 3d energy 
+levels of NHCH -Cu7 exhibit more pronounced splitting compared 
+to those in NHCMe -Cu7 , leading to a distinct elevation of the 
+3dx 
+2 
+-y 
+2 orbital relative to the 3dz 
+2 orbital. Consequently, the 3dx 
+2 
+-y 
+2 
+orbital in NHCH -Cu7 accommodates more electrons than the 
+3dz 
+2 orbital in NHCMe -Cu7 . Such an electronic configuration 
+promotes more efficient electron transfer from the Cu 3dx 
+2 
+-y 
+2 
+orbital to the π* orbital of *CO [ 57–59 ]. Moreover, inspired by the 
+information regarding the adsorbed *CO intermediate obtained 
+from operando spectroscopy, the crystal orbital Hamilton popu- 
+lation (COHP) method was employed to assess the Cu-C bond 
+strength in Cu-*CO. The Cu-C bonding energy at EF was summed, 
+indicating that the integrated COHP (ICOHP) value increased 
+significantly from ‒1.29 eV on NHCMe -Cu7 to − 1.16 eV on 
+NHCH -Cu7 , confirming the stronger Cu-C bonding interaction 
+on NHCH -Cu7 owing to more facile electron transfer from the 
+Cu site to *CO, thus promoting *CO stabilization and subsequent 
+activation (Figure 5c ). Additionally, the charge density difference 
+plots reveal a stronger electron interaction between *CO and the 
+Cu sites in NHCH -Cu7 compared to those in NHCMe -Cu7 , further 
+supporting the enhanced orbital hybridization between *CO and 
+NHCH -Cu7 (Figure S46 ) [ 10 ]. In general, the aforementioned 
+analysis confirms that by subtly tailoring the functional groups 
+in the NHC ligands, a remarkable effect on remote modulation 
+of the d-band electronic structure of the Cu sites is achieved, 
+thus facilitating *CO stabilization and further hydrogenation on 
+NHCH -Cu7 , ultimately favoring the formation of deeper reduced 
+products such as CH4 and C2 H4 . Finally, to further investigate 
+the intrinsic relationship between the electronic structure and 
+the selectivity for the CO2 RR products, the Gibbs free energy of 
+the reaction at the different catalytic interfaces was calculated. 
+For NHCMe -Cu7 , the Gibbs free energy barrier for the release of 
+CO ( − 0.07 eV) is notably lower than that for *OCCO coupling 
+( − 0.01 eV) and the protonation of *CO to *CHO (0.01 eV) 
+(Figures 5d and S47 ). This indicates that CO desorption is 
+thermodynamically favored, consistent with the experimental 
+observations where CO is the main product, accompanied by 
+a small amount of C2 H4 . In contrast, for NHCH -Cu7 , the free 
+energy barrier for *CHO formation ( − 0.24 eV) is lower than that 
+for *CO desorption ( − 0.15 eV) (Figures 5e and S48 ), suggesting 
+that the pathway preferentially favors *CHO generation over CO 
+release. In addition, the protonation of *CHO to form *CH2 O 
+on NHCH -Cu7 is energetically favorable ( − 0.11 eV), exhibiting a 
+significantly lower barrier than the *COCHO coupling reaction 
+( − 0.04 eV). This explains the observed higher selectivity for CH4 
+production than for generating C2 H4 in the electrochemical tests. 
+By integrating the above findings, a plausible catalytic mech- 
+anism was proposed as follows: substituting the -CH3 group 
+with -H in the NHC ligands can remotely modulate the d-band 
+electronic structure of the Cu core, thus elevating the 3dx 
+2 
+-y 
+2 
+orbital as the highest occupied d-orbital on NHCH -Cu7 , which 
+8 of 11
+Angewandte Chemie International Edition, 2026
+ 15213773, 2026, 13, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.4862058 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 5 
+(a) Bader charge values of the Cu atoms in NHCH -Cu7 and NHCMe -Cu7 . (b) Integrated PDOS of 3d orbitals: d-density of states relative 
+to the Fermi level projected onto Cu atoms in NHCH - Cu7 and NHCMe - Cu7 . (c) The pCOHP between the Cu center on NHCH -Cu7 and NHCMe -Cu7 
+and C atom of adsorbed *CO. (d) The free energy of the key step for the CO pathway on NHCMe -Cu7 . (e) The free energy of the key step for the CO 
+(cyan lines), CH4 (red lines), and C2 H4 (yellow lines) pathway on NHCH -Cu7 . 
+hosts a greater number of electrons compared to the highest 
+occupied 3dz 
+2 orbital in NHCMe -Cu7 . Such electronic structural 
+modulation facilitates *CO stabilization and further activation 
+on NHCH -Cu7 , thereby significantly impeding *CO desorp- 
+tion while lowering the energy barrier for *CHO formation, 
+which favors the subsequent hydrogenation process to generate 
+CH4 and C2 H4 . Consequently, the product selectivity switches 
+from CO on NHCMe -Cu7 to targeted hydrocarbons on NHCH - 
+Cu7 . 
+3 
+Conclusion 
+In summary, a remote-control strategy for modulating the elec- 
+tronic structure of Cu NCs by tuning the functional groups of 
+NHC ligands was proposed. This ligand engineering switches 
+the products of CO2 electroreduction from simple CO to higher- 
+value h ydrocarbons. In the proof-of-concept study, two pseudo- 
+isologous NHCH -Cu7 and NHCMe -Cu7 clusters featuring either 
+-H or -CH3 groups on the NHC ligand were synthesized, resulting 
+in structural deformation of the core architecture. Notably, 
+NHCH -Cu7 exhibited exceptional FE toward hydrocarbon pro- 
+duction (50.4% CH4 and 23.6% C2 H4 ) at − 1.5 V, with a high partial 
+current density of 202.2 mA ⋅cm− 2 for hydrocarbon products, 
+which starkly contrasts with the predominant CO selectivity 
+observed with NHCMe -Cu7 . XAFS and UV-vis absorption anal- 
+yses demonstrate that the variations in the electronic state of the 
+two clusters coincide with the electronic effect of modulating 
+the functional groups on the NHC ligand. In situ ATR-FTIR 
+and CO-DRIFTS tests confirm stronger binding of the *CO 
+intermediate on NHCH -Cu7 , favoring deep *CO protonation and 
+the consequent generation of CH4 and C2 H4 . Systematic DFT 
+analyses reveal that the electron-poor -H groups in the NHC 
+ligands elevate the 3dx 
+2 
+-y 
+2 orbital to the highest occupied d- 
+orbital in NHCH -Cu7, which hosts a greater population of active 
+electrons, thereby facilitating electron injection from Cu into 
+the π* orbital of *CO. Compared to the 3dz 
+2 orbital in NHCMe - 
+Cu7 , the 3dx 
+2 
+-y 
+2 orbital exhibits stronger orbital hybridization 
+with *CO, which promotes *CO stabilization and activation, thus 
+significantly impeding its desorption and lowering the energy 
+barrier for *CHO formation. This ultimately steers the reaction 
+pathway on NHCH -Cu7 toward hydrocarbon production. To the 
+best of our knowledge, this work demonstrates the first remote 
+modulation electronic structure in Cu NCs through NHC ligand 
+engineering and establishes a definitive paradigm for atomic- 
+level design of highly efficient CO2 RR catalysts for high-value 
+hydrocarbons. 
+Acknowledgments 
+The authors gratefully acknowledge financial support from the National 
+Natural Science Fund for Distinguished Young Scholars of China 
+(22025107), the National Natural Science Foundation of China (92461302), 
+the National Youth Top-Notch Talent Support Program of China, the Xi’an 
+Key Laboratory of Functional Supramolecular Structure and Materials, 
+and the FM&EM International Joint Laboratory of Northwest University. 
+We thank beamline BL17B1 of the Shanghai Synchrotron Radiation 
+Facilities (SSRF) for providing the beam time. 
+Conflicts of Interest 
+The authors declare no conflicts of interest. 
+Angewandte Chemie International Edition, 2026
+9 of 11
+ 15213773, 2026, 13, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.4862058 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Date Availability Statement 
+The data that support the findings of this study are available in the 
+supplementary material of this article. 
+References 
+1 . P. De Luna, C. Hahn, D. Higgins, S. A. Jaffer, T. F. Jaramillo, and E. H. 
+Sargent, “What Would It Take for Renewably Powered Electrosynthesis to 
+Displace Petrochemical Processes?” Science 364 (2019): eaav3506, https:// 
+doi.org/10.1126/science.aav3506 . 
+2 . Y. Y. Birdja, E. Pérez-Gallent, M. C. Figueiredo, A. J. Göttle, F. Calle- 
+Vallejo, and M. T. M. Koper, “Advances and Challenges in Understanding 
+the Electrocatalytic Conversion of Carbon Dioxide to Fuels,” Nature 
+Energy 4 (2019): 732–745, https://doi.org/10.1038/s41560- 019- 0450- y. 
+3 . C. P. O’Brien, R. K. Miao, A. Shayesteh Zeraati, G. Lee, E. H. Sargent, 
+and D. Sinton, “CO2 Electrolyzers,” Chemical Reviews 124 (2024): 3648–
+3693, https://doi.org/10.1021/acs.chemrev.3c00206 . 
+4 . X.-M. Hu, H.-Q. Liang, A. Rosas-Hernández, and K. Daasbjerg, “Elec- 
+trochemical Valorization of Captured CO2 : Recent Advances and Future 
+Perspectives,” Chemical Society Reviews 54 (2025): 1216–1250. 
+5 . S. Das, J. Pérez-Ramírez, J. Gong, et al., “Core-Shell Structured Cata- 
+lysts for Thermocatalytic, Photocatalytic, and Electrocatalytic Conversion 
+of CO2 ,” Chemical Society Reviews 49 (2020): 2937–3004, https://doi.org/ 
+10.1039/C9CS00713J . 
+6 . S. Nitopi, E. Bertheussen, S. B. Scott, et al., “Progress and Perspectives 
+of Electrochemical CO2 Reduction on Copper in Aqueous Electrolyte,”
+Chemical Reviews 119 (2019): 7610–7672. 
+7 . C. Zhan, F. Dattila, C. Rettenmaier, et al., “Key Intermediates and Cu 
+Active Sites for CO2 Electroreduction to Ethylene and Ethanol,” Nature 
+Energy 9 (2024): 1485–1496. 
+8 . J. C. de Almeida, Y. Wang, T. A. Rodrigues, et al., “Copper-Based 
+Materials for Photo and Electrocatalytic Process: Advancing Renewable 
+Energy and Environmental Applications,” Advanced Functional Materials 
+35 (2025): 2502901, https://doi.org/10.1002/adfm.202502901 . 
+9 . Y. Yang, S. Louisia, S. Yu, et al., “Operando Studies Reveal Active 
+Cu Nanograins for CO2 Electroreduction,” Nature 614 (2023): 262–269, 
+https://doi.org/10.1038/s41586-022-05540-0 . 
+10 . W.-F. Xiong, D.-H. Si, H.-F. Li, et al., “Steering CO2 Electroreduction 
+Selectivity U-Turn to Ethylene by Cu-Si Bonded Interface,” Journal of the 
+American Chemical Society 146 (2023): 289–297. 
+11 . M. L. J. Peerlings, M. E. T. Vink-van Ittersum, J. W. de Rijk, P. E. 
+de Jongh, and P. Ngene, “Ionomer-Modulated Electrochemical Interface 
+Leading to Improved Selectivity and Stability of Cu2 O-Derived Catalysts 
+for CO2 Electroreduction,” ACS Catalysis 15 (2025): 9695–9705, https://doi. 
+org/10.1021/acscatal.5c01614 . 
+12 . N. Sakamoto, K. Sekizawa, S. Shirai, et al., “Dinuclear Cu(I) Molecular 
+Electrocatalyst for CO2 -to-C3 Product Conversion,” Nature Catalysis 7 
+(2024): 574–584. 
+13 . J. Timoshenko, C. Rettenmaier, D. Hursán, et al., “Reversible Metal 
+Cluster Formation on Nitrogen-Doped Carbon Controlling Electrocata- 
+lyst Particle Size With Subnanometer Accuracy,” Nature Communications 
+15 (2024): 6111, https://doi.org/10.1038/s41467- 024- 50379- w. 
+14 . C. Wang, Z. Lv, Y. Liu, et al., “Asymmetric Cu-N1 O3 Sites Coupling 
+atop-Type and Bridge-Type Adsorbed *C1 for Electrocatalytic CO2 -to- 
+C2 Conversion,” Angewandte Chemie International Edition 63 (2024): 
+e202411216. 
+15 . Q.-J. Wu, D.-H. Si, Y.-L. Dong, et al., “Steering CO2 Electroreduc- 
+tion to Hydrocarbons Over 2D Thiol-Based Conductive Metal-Organic 
+Framework,” Science Bulletin 70 (2025): 1107–1117. 
+16 . Y. Zheng, A. Vasileff, X. Zhou, Y. Jiao, M. Jaroniec, and S.-Z. 
+Qiao, “Understanding the Roadmap for Electrochemical Reduction of 
+CO2 to Multi-Carbon Oxygenates and Hydrocarbons on Copper-Based 
+Catalysts,” Journal of the American Chemical Society 141 (2019): 7646–7659. 
+17 . Y. Zhang, F. Chen, X. Yang, et al., “Electronic Metal-Support Inter- 
+action Modulates Cu Electronic Structures for CO2 Electroreduction to 
+Desired Products,” Nature Communications 16 (2025): 1956. 
+18 . Y. Zhang, Y. Li, N. Gao, et al., “Altering the CO2 Electroreduction 
+Pathways Towards C1 or C2 + Products via Engineering the Strength of 
+Interfacial Cu-O Bond,” Angewandte Chemie International Edition 63 
+(2024): e202404676. 
+19 . K. N. Kolding, M. Bretlau, S. Zhao, et al., “NHC-CDI Ligands Boost 
+Multicarbon Production in Electrocatalytic CO2 Reduction by Increasing 
+Accumulated Charged Intermediates and Promoting *CO Dimerization 
+on Cu,” Journal of the American Chemical Society 146 (2024): 13034–13045. 
+20 . J. Kok, P. P. Albertini, J. Leemans, R. Buonsanti, and T. Burdyny, 
+“Over coming Copper Stability Challenges in CO2 Electrolysis,” Nature 
+Reviews Materials 10 (2025): 550–563. 
+21 . S. Popovic, M. Smiljanic, P. Jovanovic, J. Vavra, R. Buonsanti, and 
+N. Hodnik, “Stability and Degradation Mechanisms of Copper-Based 
+Catalysts for Electrochemical CO2 Reduction,” Angewandte Chemie 
+International Edition 59 (2020): 14736–14746. 
+22 . Y. Liu, J. Yu, Y. Lun, Y. Wang, Y. Wang, and S. Song, “Ligand Design 
+in Atomically Precise Copper Nanoclusters and Their Application in 
+Electrocatalytic Reactions,” Advanced Functional Materials 33 (2023): 
+2304184, https://doi.org/10.1002/adfm.202304184 . 
+23 . M. Chen, C. Guo, L. Qin, et al., “Atomically Precise Cu Nanoclusters: 
+Recent Advances, Challenges, and Perspectives in Synthesis and Catalytic 
+Applications,” Nano Micro Letters 17 (2025): 83, https://doi.org/10.1007/ 
+s40820-024-01555-6 . 
+24 . S. Biswas, A. Pal, M. K. Jena, et al., “Luminescent Hydride-Free 
+[Cu7 (SC5 H9 )7 (PPh3 )3 ] Nanocluster: Facilitating Highly Selective C-C 
+Bond Formation,” Journal of the American Chemical Society 146 (2024): 
+20937–20944, https://doi.org/10.1021/jacs.4c05678 . 
+25 . S. Lee, M. S. Bootharaju, G. Deng, et al., “Cu32 (PET)24 H8 Cl2 (PPh4 )2 : 
+A Copper Hydride Nanocluster With a Bisquare Antiprismatic Core,”
+Journal of the American Chemical Society 142 (2020): 13974–13981, https:// 
+doi.org/10.1021/jacs.0c06577 . 
+26 . A. M. Butt and A. Qurashi, “Significance of Atomically Precise 
+Copper Nanoclusters and Their Alloys Protected by Organic Monolayer 
+in Electrocatalytic Carbon Dioxide Reduction Reaction,” Coordination 
+Chemistry Reviews 541 (2025): 216823, https://doi.org/10.1016/j.ccr.2025. 
+216823 . 
+27 . Q.-J. Wu, D.-H. Si, P.-P. Sun, et al., “Atomically Precise Copper 
+Nanoclusters for Highly Efficient Electroreduction of CO2 Towards 
+Hydrocarbons via Breaking the Coordination Symmetry of Cu Site,”
+Angewandte Chemie International Edition 62 (2023): e202306822. 
+28 . T. Jia, P.-M. Cheng, M.-X. Zhang, et al., “LnIII /CuI Bimetallic Nan- 
+oclusters With Enhanced NIR-II Luminescence,” Journal of the American 
+Chemical Society 146 (2024): 28618–28623, https://doi.org/10.1021/jacs. 
+4c09447 . 
+29 . S. Biswas, Y. Shingyouchi, M. Kamiyama, et al., “Atomically Precise 
+[Cu23 H4 (SC7 H7 )18 (PPh3 )6 ] Nanocluster: Structural Integration of John- 
+son Solids Through a TCu(0) Center and Electrocatalytic Functionality,”
+Journal of the American Chemical Society 147 (2025): 23733–23742, https:// 
+doi.org/10.1021/jacs.5c05665 . 
+30 . S. Biswas, Y. Shingyouchi, M. Kamiyama, et al., “Deciphering Elec- 
+trocatalytic Activity in Cu Nanoclusters: Interplay Between Structural 
+Confinement and Ligands Environment,” Small 21 (2025): 2500302. 
+31 . W. Jing, H. Shen, R. Qin, Q. Wu, K. Liu, and N. Zheng, “Surface and 
+Interface Coordination Chemistry Learned from Model Heterogeneous 
+Metal Nanocatalysts: From Atomically Dispersed Catalysts to Atomically 
+Precise Clusters,” Chemical Reviews 123 (2023): 5948–6002, https://doi. 
+org/10.1021/acs.chemrev.2c00569 . 
+32 . A. Cirri, H. Morales Hernández, C. Kmiotek, and C. J. Johnson, “Sys- 
+tematically Tuning the Electronic Structure of Gold Nanoclusters through 
+Ligand Derivatization,” Angewandte Chemie International Edition 58 
+(2019): 13818–13822, https://doi.org/10.1002/anie.201907586 . 
+10 of 11
+Angewandte Chemie International Edition, 2026
+ 15213773, 2026, 13, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.4862058 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+33 . M. Bodiuzzaman, K. Murugesan, P. Yuan, et al., “Modulating Decar- 
+boxylative Oxidation Photocatalysis by Ligand Engineering of Atomically 
+Precise Copper Nanoclusters,” Journal of the American Chemical Society 
+146 (2024): 26994–27005, https://doi.org/10.1021/jacs.4c08688 . 
+34 . G. Deng, H. Yun, Y. Chen, et al., “Ferrocene-Functionalized Atom- 
+ically Precise Metal Clusters Exhibit Synergistically Enhanced Perfor- 
+mance for CO2 Electroreduction,” Angewandte Chemie International 
+Edition 64 (2025): e202418264. 
+35 . Y.-D. Cao, D. Yin, S. Li, et al., “Substituent Effect to Fine-Tune Energy 
+Levels of Atom-Precise [MoOS3 ]2 − Modified Copper(I) Thiolate Clusters 
+Boosting Recyclable Photocatalysis,” Angewandte Chemie International 
+Edition 62 (2023): e202307678. 
+36 . E. L. Albright, T. I. Levchenko, V. K. Kulkarni, et al., “N-Heterocyclic 
+Carbene-Stabilized Atomically Precise Metal Nanoclusters,” Journal of 
+the American Chemical Society 146 (2024): 5759–5780, https://doi.org/10. 
+1021/jacs.3c11031 . 
+37 . Y. K. Loh, M. Melaimi, M. Gembicky, D. Munz, and G. Bertrand, “A 
+Crystalline Doubly Oxidized Carbene,” Nature 623 (2023): 66–70, https:// 
+doi.org/10.1038/s41586- 023- 06539-x. 
+38 . S. Bai and Y.-F. Han, “Metal- N -Heterocyclic Carbene Chemistry 
+Directed Toward Metallosupramolecular Synthesis and Beyond,”
+Accounts of Chemical Research 56 (2023): 1213–1227. 
+39 . Y.-S. Wang, H. Li, S. Bai, Y.-Y. Wang, and Y.-F. Han, “N-Heterocyclic 
+Carbene-Stabilized Platinum Nanoparticles within a Porphyrinic 
+Nanocage for Selective Photooxidation,” Science China Chemistry 66 
+(2023): 778–782. 
+40 . T. Liu, S. Bai, L. Zhang, F. E. Hahn, and Y.-F. Han, “N-Heterocyclic 
+Carbene-Stabilized Metal Nanoparticles Within Porous Organic Cages for 
+Catalytic Application,” National Science Review 9 (2022): nwac067. 
+41 . B.-L. Han, L.-C. Zhao, Z.-R. Yuan, et al., “Dipropyne-Modified N- 
+Heterocyclic Carbene Stabilized Atomically Precise Copper(I) Nanoclus- 
+ter Catalysts for CO2 Electroreduction,” Advanced Functional Materials 
+35 (2025): 2500149. 
+42 . C. L. Gutiérrez-Peña, A. Gutiérrez-Blanco, D. G. Gusev, M. Poyatos, 
+and E. Peris, “Lone-Pair- π Bond Strength Unveiled by a Combined Exper- 
+imental and Computational Study,” Angewandte Chemie International 
+Edition 63 (2024): e202407817. 
+43 . C. A. Smith, M. R. Narouz, P. A. Lummis, et al., “N-Heterocyclic Car- 
+benes in Materials Chemistry,” Chemical Reviews 119 (2019): 4986–5056, 
+https://doi.org/10.1021/acs.chemrev.8b00514 . 
+44 . S. Martínez-Vivas, D. G. Gusev, M. Poyatos, and E. Peris, “Tuning the 
+Catalytic Activity of a Pincer Complex of Rhodium(I) by Supramolecular 
+and Redox Stimuli,” Angewandte Chemie International Edition 62 (2023): 
+e202313899, https://doi.org/10.1002/anie.202313899 . 
+45 . Y. Li, X.-T. Chang, L. Zhang, G. Yuan, F. E. Hahn, and Y.-F. 
+Han, “Hierarchical, Template-Controlled Self-Assembly of Two Different 
+Organometallic Capsules from a Tetrakisimidazolium Salt,” Angewandte 
+Chemie International Edition 65 (2025): e20814. 
+46 . J. Zhang, Y. Zhang, Z. Qin, et al., “How Carbene Ligands Transform 
+AuAg Alloy Nanoclusters for Electrocatalytic Urea Synthesis,” Ange- 
+wandte Chemie International Edition 64 (2025): e202420993, https://doi. 
+org/10.1002/anie.202420993 . 
+47 . H. Chen, K.-S. Qi, X.-Y. Dong, et al., “Ligand-Mediated Activity of Cu4 
+Clusters Boosts Electrocatalytic Nitrate Reduction,” Angewandte Chemie 
+International Edition 64 (2025): e202510429. 
+48 . Deposition Numbers 2486208 (for NHCH -Cu7 ) and 2486206 (for 
+NHCMe -Cu7 ) Contain the Supplementary Crystallographic Data for this 
+Paper. These data are provided free of charge by the joint Cambridge 
+Crystallographic Data Centre and Fachinformationszentrum Karlsruhe 
+Access Structures service. 
+49 . S. Chen, Z. Zhang, W. Jiang, et al., “Engineering Water Molecules 
+Activation Center on Multisite Electrocatalysts for Enhanced CO2 Metha- 
+nation,” Journal of the American Chemical Society 144 (2022): 12807–12815. 
+50 . H. Dong, X. Wang, P. Shi, et al., “N-Heterocyclic Carbene-Ligated 
+Mixed-Valent Linear Cu3 Cluster for Enhanced Electrocatalytic Nitrite 
+Reduction,” Journal of the American Chemical Society 147 (2025): 29423–
+29430. 
+51 . Y. Yang, C. Zhang, C. Zhang, et al., “Ligand-Tuning Copper in 
+Coordination Polymers for Efficient Electrochemical C–C Coupling,”
+Nature Communications 15 (2024): 6316, https://doi.org/10.1038/s41467- 
+024-50791-2 . 
+52 . Z.-H. Zhao, H.-L. Zhu, J.-R. Huang, P.-Q. Liao, and X.-M. Chen, 
+“Polydopamine Coating of a Metal-Organic Framework With Bi-Copper 
+Sites for Highly Selective Electroreduction of CO2 to C2 + Products,” ACS 
+Catalysis 12 (2022): 7986–7993, https://doi.org/10.1021/acscatal.2c02002 . 
+53 . H. B. Yang, S.-F. Hung, S. Liu, et al., “Atomically Dispersed Ni(I) as the 
+Active Site for Electrochemical CO2 Reduction,” Nature Energy 3 (2018): 
+140–147. 
+54 . L. Cao, Q. Luo, W. Liu, et al., “Identification of Single-Atom Active 
+Sites in Carbon-Based Cobalt Catalysts During Electrocatalytic Hydro- 
+gen Evolution,” Nat Catalysis 2 (2019): 134–141, https://doi.org/10.1038/ 
+s41929- 018- 0203- 5 . 
+55 . W.-L. Mu, L. Li, X.-Z. Cong, et al., “Hierarchical Assembly of High- 
+Nuclearity Copper(I) Alkynide Nanoclusters: Highly Effective CO2 Elec- 
+troreduction Catalyst Toward Hydrocarbons,” Journal of the American 
+Chemical Society 146 (2024): 28131–28140. 
+56 . S. Yoo, D. Kim, G. Deng, et al., “Impact of Heterocore Atoms on CO2 
+Electroreduction in Atomically Precise Silver Nanoclusters,” Journal of 
+the American Chemical Society 147 (2025): 12546–12554. 
+57 . X. Shi, Z. Su, C. Deng, et al., “Amorphization-Induced D -Orbital Rear- 
+rangement in Ultrathin CoO Nanosheets with Strong D-p Interactions for 
+Efficient CO2 Photoreduction,” Advanced Materials 37 (2025): 202508492. 
+58 . Y. Yang, F. Wang, W. Lyu, et al., “Establishing 3 d -4 d Orbital 
+Hybridization for Efficient Photothermal Catalytic CO2 Hydrogenation,”
+Angewandte Chemie International Edition 64 (2025): e202509855. 
+59 . J. Han, P. An, S. Liu, et al., “Reordering D Orbital Energies of 
+Single-Site Catalysts for CO2 Electroreduction,” Angewandte Chemie 
+International Edition 58 (2019): 12711–12716. 
+Supporting Information 
+Additional supporting information can be found online in the Supporting 
+Information section. 
+Supporting File 1 : anie71492-sup-0001-SuppMat.pdf. 
+Angewandte Chemie International Edition, 2026
+11 of 11
+ 15213773, 2026, 13, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.4862058 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

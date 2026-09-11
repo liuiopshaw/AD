@@ -1,0 +1,1291 @@
+Han et al., Sci. Transl. Med. 16, eadi4830 (2024)     7 August 2024
+S c i e n c e  T r a n s l at i o n a l  M e d i c i n e  | R e s e a r c h  A r t i c l e
+1 of 15
+D R U G  D E L I V E R Y
+Engineered exosomes with a photoinducible protein 
+delivery system enable CRISPR-­Cas–based epigenome 
+editing in Alzheimer’s disease
+Jihoon Han1†, Jae Hoon Sul1, Jeongmi Lee1‡, Eunae Kim1, Hark Kyun Kim1§, Minshik Chae1,  
+Jeein Lim1, Jongho Kim1, Chanhee Kim1, Jun-­Sik Kim1, Yoonsuk Cho1, Jae Hyung Park2,3,4,5,  
+Yong Woo Cho4,6, Dong-­Gyu Jo1,3,4,5,7*
+Effective intracellular delivery of therapeutic proteins can potentially treat a wide array of diseases. However, ef-
+ficient delivery of functional proteins across the cell membrane remains challenging. Exosomes are nanosized 
+vesicles naturally secreted by various types of cells and may serve as promising nanocarriers for therapeutic bio-
+molecules. Here, we engineered exosomes equipped with a photoinducible cargo protein release system, termed 
+mMaple3-­mediated protein loading into and release from exosome (MAPLEX), in which cargo proteins can be 
+loaded into the exosomes by fusing them with photocleavable protein (mMaple3)–conjugated exosomal mem-
+brane markers and subsequently released from the exosomal membrane by inducing photocleavage with blue 
+light illumination. Using this system, we first induced transcriptional regulation by delivering octamer-­binding 
+transcription factor 4 and SRY-­box transcription factor 2 to fibroblasts in vitro. Second, we induced in vivo gene 
+recombination in Cre reporter mice by delivering Cre recombinase. Last, we achieved targeted epigenome editing 
+in the brains of 5xFAD and 3xTg-­AD mice, two models of Alzheimer’s disease. Administration of MAPLEXs loaded 
+with β-­site amyloid precursor protein cleaving enzyme 1 (Bace1)–targeting single guide RNA–incorporated dCas9 
+ribonucleoprotein complexes, coupled with the catalytic domain of DNA methyltransferase 3A, resulted in suc-
+cessful methylation of the targeted CpG sites within the Bace1 promoter. This approach led to a significant reduc-
+tion in Bace1 expression, improved recognition memory impairment, and reduced amyloid pathology in 5xFAD 
+and 3xTg-­AD mice. These results suggest that MAPLEX is an efficient intracellular protein delivery system that can 
+deliver diverse therapeutic proteins for multiple diseases.
+INTRODUCTION
+Despite the discovery of many potentially therapeutic proteins, in-
+cluding genome editing enzymes, epigenetic modifying enzymes, 
+and transcription factors, most clinically applicable protein thera-
+peutics remain confined to monoclonal antibodies, peptide hor-
+mones, and cytokines, which primarily function by binding to their 
+respective receptors on the plasma membrane to either trigger or 
+block downstream signaling cascades inside the cell (1–3). Many 
+diseases are associated with specific protein deficiencies that could 
+be treated with protein replacement; however, the inability to deliver 
+proteins across the cell membrane limits the development of protein-­
+based therapeutics.
+Numerous approaches have been developed to internalize pro-
+teins into cells. For instance, cell-­penetrating peptides (CPPs), short 
+peptides consisting of 5 to 30 amino acids, have been used to trans-
+locate recombinant proteins across cell membranes (4–7). However, 
+exposure of CPP-­conjugated recombinant proteins to biological flu-
+ids can result in rapid degradation or stimulation of the immune 
+response (8, 9). Several lipid nanoparticle–based protein delivery 
+systems have also been reported (10, 11). Unlike protein transduc-
+tion, lipid nanoparticles can encapsulate and protect cargo proteins 
+from degradation in biological fluids. Nevertheless, challenges such 
+as rapid clearance by the reticuloendothelial system, low cellular up-
+take, and poor cargo protein separation from lipids remain limita-
+tions for efficient intracellular protein delivery (12–14).
+To overcome these challenges, we used exosomes, which are 
+nanosized (30 to 150 nm) membrane vesicles that are naturally se-
+creted by cells, as nanocarriers for protein delivery. Compared with 
+protein transduction and lipid nanoparticles, exosomes have advan-
+tages in stability, biodegradability, biocompatibility, and immuno-
+compatibility (15, 16). Loading proteins into exosomes can be 
+achieved by fusing cargo proteins with exosomal markers (17, 18). 
+However, separation from exosomal markers must be completed for 
+cargo proteins to enter recipient cells and function properly. The 
+bond between the cargo protein and exosomal marker is therefore a 
+double-­edged sword because it is necessary for protein loading yet 
+unnecessary for protein delivery. Thus, we developed engineered 
+exosomes equipped with a photoinducible cargo protein release sys-
+tem, mMaple3-­mediated protein loading into and release from exo-
+some (MAPLEX). We fused the photocleavable protein (PhoCl) 
+mMaple3, a Clavularia-­derived green-­to-­red photoconvertible fluo-
+rescent protein variant (19, 20), between the cargo protein and CD9, 
+a tetraspanin exosomal marker, so that cargo proteins can be loaded 
+into exosomes. After the loaded exosomes are purified, cargo 
+proteins can be separated from CD9 by 405-­nm light-­induced 
+1School of Pharmacy, Sungkyunkwan University, Suwon 16419, Korea. 2School of 
+Chemical Engineering, College of Engineering, Sungkyunkwan University, Suwon 
+16419, Korea. 3Biomedical Institute for Convergence, Sungkyunkwan University, 
+Suwon 16419, Korea. 4ExoStem Tech Inc., Ansan 15588, Korea. 5Samsung Advanced 
+Institute for Health Sciences and Technology, Sungkyunkwan University, Seoul 
+06351, Korea. 6Department of Chemical Engineering, Hanyang University, Ansan 
+15588, Korea. 7Institute of Quantum Biophysics, Sungkyunkwan University, Suwon 
+16419, Korea.
+*Corresponding author. Email: jodg@​skku.​edu
+†Present address: Gladstone Institute of Data Science and Biotechnology, San Fran-
+cisco, CA 94158, USA.
+‡Present address: Research Institute of Dong-­A ST Co. Ltd., Yongin 17073, Korea.
+§Present address: Department of Pediatrics, University of California San Diego, La 
+Jolla, CA 92093, USA.
+Copyright © 2024 The 
+Authors, some rights 
+reserved; exclusive 
+licensee American 
+Association for the 
+Advancement of 
+Science. No claim to 
+original U.S. 
+Government Works 
+Downloaded from https://www.science.org at Fudan University on March 22, 2026
+
+Han et al., Sci. Transl. Med. 16, eadi4830 (2024)     7 August 2024
+S c i e n c e  T r a n s l at i o n a l  M e d i c i n e  | R e s e a r c h  A r t i c l e
+2 of 15
+mMaple3 cleavage before administration. After mMaple3 cleavage, 
+MAPLEX exosomes can be taken up by cells, enabling intracellular 
+delivery of functional cargo proteins that can induce diverse cel-
+lular events from transcriptional regulation to targeted epigenome 
+editing.
+RESULTS
+mMaple3 can be combined with an exosomal marker and a 
+cargo protein to construct a photoinducible cargo protein 
+release system
+To produce cargo protein-­loaded exosomes equipped with a photo-
+inducible cargo protein release system (Fig. 1A), mMaple3 was first 
+conjugated to the N terminus of CD9. For in vitro imaging, blue 
+fluorescent protein (TagBFP) was used as a cargo protein and was 
+conjugated to the N terminus of mMaple3 (fig. S1). Because CD9 is 
+a member of the tetraspanin family, TagBFP-­mMaple3-­CD9 fusion 
+proteins were localized to the plasma membrane when overex-
+pressed in human embryonic kidney (HEK) 293T cells (Fig. 1B). 
+Upon 405-­nm light illumination, mMaple3 was cleaved, as indicat-
+ed by the reduction in green fluorescence and increase in red fluo-
+rescence (Fig. 1, B and C). Efficient cleavage of mMaple3 was further 
+confirmed by immunoblotting, where full-­length (FL) fusion pro-
+teins disappeared and TagBFP-­containing N-­terminal fragments 
+(NTFs) and C-­terminal fragments (CTFs) accumulated during 405-­nm 
+light illumination (Fig. 1D). The highest photocleavage efficiency 
+was observed after 10 min of continuous 405-­nm light illumination 
+at 40 mW/cm2 (fig. S2).
+Cargo proteins can be released from the exosomal 
+membrane into the intraexosomal space via 405-­nm 
+light illumination
+To produce TagBFP:MAPLEXs, HEK293T cells were transfected 
+with the TagBFP-­mMaple3-­CD9 construct, and TagBFP:MAPLEXs 
+were isolated from the conditioned medium (CM) using the tan-
+gential flow filtration (TFF) method (Fig. 2A). The concentration 
+and size distribution of TagBFP:MAPLEXs were measured using 
+nanoparticle tracking analysis (NTA), revealing about 4 × 1010 par-
+ticles/ml with a mode diameter of 132 nm (Fig. 2B). This size distri-
+bution was further confirmed by dynamic light scattering (DLS) 
+analysis (Fig. 2C). The zeta potential of TagBFP:MAPLEXs was de-
+termined to be −19.3 mV via electrophoretic light scattering (ELS) 
+(Fig. 2D). In addition, the morphology and size of TagBFP:MAPLEXs 
+were verified via cryo–electron microscopy (cryo-­EM) analysis (Fig. 2E). 
+Next, the photoinducible protein release system of the MAPLEXs 
+was assessed (Fig. 2F). Immunoblotting and fluorescence intensity 
+measurements confirmed that FL TagBFP-­mMaple3-­CD9 fusion 
+proteins were safely loaded into MAPLEXs, and mMaple3 was effi-
+ciently cleaved by 405-­nm light illumination, leading to the release 
+of TagBFP from CD9 (Fig. 2, G to I). Exosomal markers such as 
+apoptosis-­linked gene 2–interacting protein X (ALIX), heat shock 
+protein 90 (HSP90), and CD63 were detected in TagBFP:MAPLEXs, 
+whereas calnexin, an endoplasmic reticulum marker, was not de-
+tected (Fig. 2G and fig. S3A). The presence of CD81, another exo-
+somal marker, was also confirmed by flow cytometry (fig.  S3B). 
+Because the highest photocleavage efficiency (90%) was observed 
+after 5 min of continuous 405-­nm light illumination at 40 mW/cm2, 
+it was determined to be the optimal condition for cargo protein 
+release (Fig. 2H). Last, we investigated the exosomal location of 
+TagBFP using a protease digestion assay. Non-­illuminated (OFF) or 
+405-­nm light-­illuminated (ON) TagBFP:MAPLEXs were treated 
+with proteinase K in the presence or absence of Triton X-­100 
+(Fig. 2J). TagBFP and ALIX, an intraluminal exosomal marker, were 
+protected from proteinase K in the absence of Triton X-­100, whereas 
+lysosome-­associated membrane protein 2b (LAMP2B), an exosom-
+al marker with an extracellular domain, was degraded by proteinase 
+K (Fig. 2J), suggesting that the cargo protein was located within the 
+exosome and therefore protected from external proteases. Protec-
+tion of TagBFP and ALIX from proteinase K was also observed in 
+TagBFP:MAPLEXs ON, suggesting that the lipid bilayer integrity 
+of MAPLEXs was not altered by 405-­nm light illumination. The 
+405-­nm light illumination also did not affect the size or zeta poten-
+tial of MAPLEXs (fig. S4, A and B).
+MAPLEXs are internalized by recipient cells
+Next, we examined whether MAPLEXs could be safely taken up by 
+recipient cells. Fluorescence-­activated cell sorting analysis and fluo-
+rescence intensity measurements confirmed the dose-­dependent 
+uptake of TagBFP:MAPLEXs by HEK293T cells (fig. S5, A and B). 
+To further examine the uptake of TagBFP:MAPLEXs by recipient cells, 
+HEK293T cells were incubated with HEK293T-­derived exosomes 
+(293T Exo), TagBFP:MAPLEXs OFF, or TagBFP:MAPLEXs ON, and 
+fluorescence was assessed using confocal microscopy (Fig. 3A, left). 
+Cells incubated with TagBFP:MAPLEXs OFF showed blue and 
+green fluorescence, whereas those incubated with TagBFP:MAPLEXs 
+ON showed blue and red fluorescence (Fig. 3A, right). The same 
+result was obtained using HeLa cells as recipient cells (fig. S6). Fluores-
+cence intensities were confirmed using a microplate reader (Fig. 3B). 
+FL TagBFP-­mMaple3-­CD9 fusion proteins were detected in HEK293T 
+cells incubated with TagBFP:MAPLEXs OFF, whereas NTFs and 
+CTFs of cleaved TagBFP-­mMaple3-­CD9 were detected in cells incu-
+bated with TagBFP:MAPLEXs ON (Fig. 3C and fig. S7). These re-
+sults suggest that both ON and OFF MAPLEXs can be successfully 
+taken up by recipient cells.
+Releasing cargo proteins from the exosomal membrane 
+enhances their function after uptake by recipient cells
+Next, we examined whether releasing cargo proteins from exosomal 
+markers by cleaving mMaple3 with 405-­nm light could enhance the 
+function of cargo proteins upon uptake by recipient cells. We hy-
+pothesized that transcription factors, which localize to the nucleus 
+and regulate the expression of specific genes, would be suitable car-
+go proteins to assess the intracellular protein delivery efficiency 
+of MAPLEX (Fig. 4A). Therefore, MAPLEXs were loaded with 
+octamer-­binding transcription factor 4 (OCT4) or SRY-­box tran-
+scription factor 2 (SOX2), which are transcription factors that are 
+essential for regulating pluripotency. The sizes of OCT4:MAPLEXs 
+and SOX2:MAPLEXs were characterized by NTA, and 405-­nm light-­
+induced cargo protein release was confirmed for OCT4:MAPLEXs 
+(Fig. 4, B to E) and SOX2:MAPLEXs (Fig. 4, F to I) using immunob-
+lotting and fluorescence intensity measurements. Then, we treated 
+BJ fibroblasts with OCT4:MAPLEXs or SOX2:MAPLEXs and as-
+sessed whether these transcription factors were delivered to the nu-
+clei of recipient cells by measuring the mRNA expression of their 
+target genes. Treatment with OCT4:MAPLEXs ON substantially 
+increased the mRNA expression of its target genes [OCT4, SOX2, 
+HESX homeobox  1 (HESX1), and Nanog homeobox (NANOG)] 
+compared with phosphate-­buffered saline (PBS)–, 293T Exo–, and 
+Downloaded from https://www.science.org at Fudan University on March 22, 2026
+
+Han et al., Sci. Transl. Med. 16, eadi4830 (2024)     7 August 2024
+S c i e n c e  T r a n s l at i o n a l  M e d i c i n e  | R e s e a r c h  A r t i c l e
+3 of 15
+Fig. 1. mMaple3 can be fused with an exosomal marker and a cargo protein to construct a photoinducible cargo protein release system. (A) Schematic design of 
+the MAPLEX system. (Right) The MAPLEX system consists of three components: a cargo protein, a PhoCl, and an exosomal membrane protein (EMP). (Left) mMaple3 is the 
+PhoCl, and CD9 is the EMP. CD9 enables cargo loading into the exosomes. Once the exosome has been isolated, 405-­nm light is used to induce photocleavage of mMaple3, 
+which releases the cargo protein from the exosomal membrane. The 405-­nm light-­illuminated exosomes can then be purified and deliver functional cargo protein to the 
+recipient cell. (B) (Top) Schematic illustration of the blue light–mediated photocleavage of mMaple3 in HEK293T cells. (Bottom) Representative confocal laser scanning 
+microscopy images of HEK293T cells transiently transfected with the pCMV14-­TagBFP-­mMaple3-­CD9 construct followed by an indicated duration of 405-­nm light illumi-
+nation. The first row represents TagBFP signal (blue). The second row represents FL mMaple3 signal (green). The third row represents cleaved (CL) mMaple3 signal 
+(orange). Scale bar, 20 μm. (C) Relative TagBFP, FL mMaple3, and CL mMaple3 fluorescence intensities in HEK293T cells transiently transfected with the pCMV14-­TagBFP-­
+mMaple3-­CD9 construct followed by an indicated duration of 405-­nm light illumination. RFU, relative fluorescence units. n = 3 biological replicates; *P < 0.05, ***P < 0.001, 
+and ****P < 0.0001; one-­way ANOVA with Tukey’s post hoc test. Data are presented as the means ± SEM. (D) Representative Western blots for 3xFLAG and TagBFP in 
+HEK293T cells transiently transfected with a pCMV14-­TagBFP-­mMaple3-­CD9 construct followed by the indicated duration of 405-­nm light illumination. The C terminus of 
+TagBFP-­mMaple3-­CD9 was tagged with 3xFLAG, allowing the detection of CTFs and FL TagBFP-­mMaple3-­CD9 using anti-­FLAG. NTFs were detected using anti-­TagBFP.
+Downloaded from https://www.science.org at Fudan University on March 22, 2026
+
+Han et al., Sci. Transl. Med. 16, eadi4830 (2024)     7 August 2024
+S c i e n c e  T r a n s l at i o n a l  M e d i c i n e  | R e s e a r c h  A r t i c l e
+4 of 15
+Fig. 2. Cargo proteins can be released from the exosomal membrane into the intraexosomal space via 405-­nm light exposure. (A) Schematic illustration of the 
+TagBFP:MAPLEX isolation process. Particle size distribution of TagBFP:MAPLEXs measured by (B) NTA and (C) DLS. d.nm, diameter in nanometers. (D) Zeta potential of 
+TagBFP:MAPLEXs measured using ELS. (E) Representative cryo-­EM images of TagBFP:MAPLEXs. Scale bars, 50 nm (left) and 100 nm (right). (F) Schematic representation of 
+the 405-­nm light-­induced photocleavage and fluorescence switch of TagBFP:MAPLEXs. (G) Representative Western blots for 3xFLAG, TagBFP, and exosomal markers (ALIX, 
+HSP90, and CD63) in TagBFP:MAPLEXs treated with the indicated duration of 405-­nm light illumination. (H) Quantification of Western blots in (G). Data are presented as 
+the means ± SEM. (I) Relative TagBFP, FL mMaple3, and CL mMaple3 fluorescence intensities of TagBFP:MAPLEXs treated with or without 405-­nm light illumination. n = 3 
+biological replicates; ***P < 0.001; Student’s t test (unpaired, two-­tailed). Data are presented as the means ± SEM. (J) Representative Western blots for 3xFLAG, TagBFP, 
+and exosomal markers (ALIX and LAMP2) in TagBFP:MAPLEXs OFF (left) and TagBFP:MAPLEXs ON (right). TagBFP:MAPLEXs were incubated with 1% Triton X-­100 or PBS for 
+5 min at RT. Proteinase K (10 μg/ml) or PBS was then added and incubated for 1 hour on ice.
+Downloaded from https://www.science.org at Fudan University on March 22, 2026
+
+Han et al., Sci. Transl. Med. 16, eadi4830 (2024)     7 August 2024
+S c i e n c e  T r a n s l at i o n a l  M e d i c i n e  | R e s e a r c h  A r t i c l e
+5 of 15
+OCT4:MAPLEXs OFF–treated groups (Fig.  4J). Treatment with 
+SOX2:MAPLEXs ON substantially increased the mRNA expression 
+of its target genes [OCT4, HESX1, Dickkopf WNT signaling path-
+way inhibitor 1 (DKK1), and NANOG] compared with PBS-­, 293T 
+Exo–, or SOX2:MAPLEXs OFF–treated groups (Fig. 4K). These 
+findings suggest that releasing cargo proteins from exosomal mark-
+ers by cleaving mMaple3 improves the function of cargo proteins 
+when they enter recipient cells.
+MAPLEX can induce in vivo gene recombination
+Next, we evaluated the ability of MAPLEX to deliver cargo proteins 
+in  vivo. We used genetically engineered Cre reporter mice (Ai9) 
+containing a LoxP-­STOP-­LoxP (LSL) cassette upstream of the tdTo-
+mato reporter gene. The LSL cassette prevents the transcription of 
+the CAG promoter–driven tdTomato; however, once the LSL cassette 
+is deleted by Cre-­mediated recombination, tdTomato expression is 
+turned on, allowing the detection of recombined cells (Fig. 5A). We 
+produced Cre:MAPLEXs with diameters in the range of 100 to 
+150 nm and a zeta potential of −15.3 mV (Fig. 5, B to D). The mor-
+phology and size of Cre:MAPLEXs were further confirmed by cryo-­
+EM analysis (Fig. 5E). Immunoblotting and fluorescence intensity 
+measurements confirmed that Cre protein was loaded into MA-
+PLEXs and released from CD9 via 405-­nm light-­induced mMaple3 
+cleavage (Fig. 5, F and G). We then intravenously injected Ai9 mice 
+with PBS, Cre:MAPLEXs OFF, or Cre:MAPLEXs ON and measured 
+tdTomato fluorescence. tdTomato fluorescence was specifically in-
+duced in the livers of Ai9 mice treated with Cre:MAPLEXs ON 
+(Fig. 5, H and I). Furthermore, partial deletion of the LSL cassette 
+from genomic DNA (gDNA) and the expression of tdTomato were 
+confirmed in the livers of Cre:MAPLEXs ON–treated mice via poly-
+merase chain reaction (PCR) and immunoblotting, respectively 
+(Fig. 5, J and K). To evaluate the cell type specificity of Cre:MAPLEXs 
+Fig. 3. MAPLEXs are internalized by recipient cells. (A) (Left) Schematic illustration of MAPLEX uptake by recipient cells. HEK293T cells were treated with 293T Exo, 
+TagBFP:MAPLEXs OFF, or TagBFP:MAPLEXs ON to assess cellular uptake. (Right) Representative confocal laser scanning microscopy images of HEK293T cells treated with 
+293T Exo, TagBFP:MAPLEXs OFF, or TagBFP:MAPLEXs ON for 24 hours. The first column represents differential interference contrast (DIC) image. The second column repre-
+sents TagBFP signal (blue). The third column represents FL mMaple3 signal (green). The fourth column represents CL mMaple3 signal (orange). Scale bars, 20 μm. (B) Rela-
+tive TagBFP, FL mMaple3, and CL mMaple3 fluorescence intensities in HEK293T cells treated with either TagBFP:MAPLEXs OFF or TagBFP:MAPLEXs ON. n = 3 biological 
+replicates; *P < 0.001; Student’s t test (unpaired, two-­tailed). Data are presented as the means ± SEM. (C) Representative Western blots for 3xFLAG and TagBFP in HEK293T 
+cells treated with the indicated concentrations of TagBFP:MAPLEXs OFF (left) or TagBFP:MAPLEXs ON (right) for 24 hours.
+Downloaded from https://www.science.org at Fudan University on March 22, 2026
+
+Han et al., Sci. Transl. Med. 16, eadi4830 (2024)     7 August 2024
+S c i e n c e  T r a n s l at i o n a l  M e d i c i n e  | R e s e a r c h  A r t i c l e
+6 of 15
+Fig. 4. Releasing cargo proteins from the exosomal membrane enhances their function upon uptake by recipient cells. (A) Schematic illustration of the MAPLEX-­
+mediated regulation of transcription. Transcription factor (TF):MAPLEXs were isolated, and the TFs were separated from the exosomal membrane using 405-­nm light il-
+lumination. TF:MAPLEXs ON were then applied to BJ fibroblasts to deliver TFs into the nucleus and regulate the transcription of target genes. (B and F) Particle size 
+distribution of OCT4:MAPLEXs (B) and SOX2:MAPLEXs (F), measured using NTA. (C and G) Schematic representations of 405-­nm light-­induced photocleavage and fluores-
+cence switch of OCT4:MAPLEXs (C) and SOX2:MAPLEXs (G). (D and H) Representative Western blots for 3xFLAG, OCT4, SOX2, and exosomal markers (ALIX and HSP90) in 
+OCT4:MAPLEXs (D) and SOX2:MAPLEXs (H) treated with or without 405-­nm light illumination. (E and I) Relative FL mMaple3 and CL mMaple3 fluorescence intensities of 
+OCT4:MAPLEXs (E) and SOX2:MAPLEXs (I) treated with or without 405-­nm light illumination. n = 3 biological replicates; *P < 0.05, ***P < 0.001, and ****P < 0.0001; Stu-
+dent’s t test (unpaired, two-­tailed). Data are presented as the means ± SEM. (J) Relative mRNA expression of OCT4, NANOG (reference gene: 18S), SOX2, and HESX1 (refer-
+ence gene: GAPDH) in BJ fibroblasts treated with PBS, 293T Exo, OCT4:MAPLEXs OFF, or OCT4:MAPLEXs ON for 24 hours. n = 3 biological replicates; *P < 0.05, **P < 0.01, 
+***P < 0.001, and ****P < 0.0001; one-­way ANOVA with Tukey’s post hoc test. Data are presented as the means ± SEM. (K) Relative mRNA expression of OCT4, DKK1, 
+NANOG (reference gene: 18S), and HESX1 (reference gene: GAPDH) in BJ fibroblasts treated with PBS, 293T Exo, SOX2:MAPLEXs OFF, or SOX2:MAPLEXs ON for 24 hours. 
+n = 3 biological replicates; *P < 0.05, **P < 0.01, ***P < 0.001, and ****P < 0.0001; one-­way ANOVA with Tukey’s post hoc test. Data are presented as the means ± SEM.
+Downloaded from https://www.science.org at Fudan University on March 22, 2026
+
+Han et al., Sci. Transl. Med. 16, eadi4830 (2024)     7 August 2024
+S c i e n c e  T r a n s l at i o n a l  M e d i c i n e  | R e s e a r c h  A r t i c l e
+7 of 15
+Fig. 5. MAPLEX-­mediated in vivo gene recombination. (A) Schematic illustration of the MAPLEX-­mediated in vivo gene recombination. (Left) Cre:MAPLEXs were iso-
+lated, and the Cre proteins were separated from the exosomal membrane using 405-­nm light illumination. (Right) Cre:MAPLEXs ON were then applied to Ai9 mice to de-
+liver Cre into the nucleus and induce tdTomato expression by deleting the LSL cassette. Mouse cartoons were generated using BioRender. bp, base pair. (B and C) Particle 
+size distribution of Cre:MAPLEXs measured using (B) NTA and (C) DLS. (D) Zeta potential of Cre:MAPLEXs measured using ELS. (E) Representative cryo-­EM images of 
+Cre:MAPLEXs. (F) Representative Western blots for 3xFLAG, Cre, and ALIX in Cre:MAPLEXs treated with or without 405-­nm light illumination. (G) Relative FL mMaple3 and 
+CL mMaple3 fluorescence intensities of Cre:MAPLEXs treated with or without 405-­nm light illumination. n = 3 biological replicates; ***P < 0.001; Student’s t test (unpaired, 
+two-­tailed). Data are presented as the means ± SEM. (H) Ex vivo IVIS images of the hearts, lungs, livers, spleens, and kidneys of Ai9 mice at 48 hours after intravenous injec-
+tion of PBS, Cre:MAPLEXs OFF, or Cre:MAPLEXs ON. (I) Quantification of the fluorescence intensity of organs in (H). n = 3; *P < 0.05 and **P < 0.01; one-­way ANOVA with 
+Tukey’s post hoc test. Data are presented as the means ± SD. (J) Representative image of the PCR to detect Cre-­mediated deletion of the LSL cassette in livers of Ai9 mice 
+injected with PBS, Cre:MAPLEXs OFF, or Cre:MAPLEXs ON. The blue arrow indicates the PCR product amplified from the uncut LSL cassette, whereas the red arrow indicates 
+the PCR product amplified from the cut LSL cassette. (K) Representative Western blots for tdTomato abundance in livers of Ai9 mice injected with PBS, Cre:MAPLEXs OFF, 
+or Cre:MAPLEXs ON.
+Downloaded from https://www.science.org at Fudan University on March 22, 2026
+
+Han et al., Sci. Transl. Med. 16, eadi4830 (2024)     7 August 2024
+S c i e n c e  T r a n s l at i o n a l  M e d i c i n e  | R e s e a r c h  A r t i c l e
+8 of 15
+in the liver, we performed immunohistochemistry (IHC) experi-
+ments and quantified the percentage of tdTomato-­positive cells. Our 
+findings revealed that about 25% of cells were positive for tdTomato 
+fluorescence, exhibiting a strong colocalization with albumin, a he-
+patocyte marker (fig. S8, A and D). In contrast, minimal colocaliza-
+tion was observed with α–smooth muscle actin, a hepatic stellate cell 
+marker, and epidermal growth factor (EGF)–like module-­containing 
+mucin-­like hormone receptor–like 1 (F4/80), a Kupffer cell marker, 
+indicating that hepatocytes were the primary cell type that took up 
+MAPLEXs in the liver (fig. S8, B to D). To assess the clearance kinetics 
+of MAPLEXs in vivo, we intravenously administered Cy5.5-­labeled 
+Cre:MAPLEXs to wild-­type mice and monitored fluorescence inten-
+sity at various time points. The intravenously delivered Cre:MAPLEXs 
+exhibited preferential accumulation in the liver, reaching peak fluo-
+rescence intensity at 4 hours after injection (fig. S9, A and B). Sub-
+stantial clearance of the Cy5.5-­labeled MAPLEXs occurred over 
+5 days, with complete clearance observed by day 7 (fig. S9, A and B). 
+To evaluate the potential toxicity of MAPLEXs, blood samples were 
+collected from mice injected with Cy5.5-­labeled Cre:MAPLEXs, 
+which revealed no significant difference in the concentrations of 
+aspartate transaminase or alanine transaminase in serum between 
+the control and Cre:MAPLEXs-­injected groups (fig. S9C). One of 
+the advantages of exosomes as nanocarriers is that they can cross the 
+blood-­brain barrier, facilitating brain delivery (21–24). Thus, we ex-
+amined whether Cre can be delivered to the brain by MAPLEX 
+through the intranasal route, which has been reported to show high-
+er brain delivery efficiency compared with the intravenous route 
+(fig. S10A) (25–27). We fused the N terminus of Cre to the C termi-
+nus of mMaple3 to expose the catalytic domain of Cre (fig. S10A). 
+We produced Cre:MAPLEXs with diameters in the range of 100 to 
+140 nm (fig.  S10B). Immunoblotting and fluorescence intensity 
+measurements confirmed that Cre protein was loaded into MA-
+PLEXs and released from CD9 via 405-­nm light-­induced mMaple3 
+cleavage (fig. S10, C and D). After daily intranasal administration 
+for 14 days, induction of tdTomato fluorescence was confirmed in 
+the brains of Ai9 mice treated with Cre:MAPLEXs ON (fig. S11, A 
+and B). To ascertain cell type specificity, brain sections from the 
+cortex were counterstained with either neuronal marker (neuronal 
+nuclei) and astrocyte marker (glial fibrillary acidic protein) or mi-
+croglia marker (allograft inflammatory factor 1), and the percentage 
+of tdTomato-­positive cells was quantified in each cell type. Our find-
+ings revealed that about 15% of neurons were positive for tdTomato 
+fluorescence, whereas about 4% of astrocytes and 6% of microglia 
+exhibited Cre-­mediated recombination (fig. S11, C and D). These 
+observations suggested that the MAPLEX system could cross the 
+blood-­brain barrier and deliver cargo proteins to neurons in the 
+brains of mice, leading to gene recombination.
+MAPLEX can induce targeted epigenome editing in the 
+brains of Alzheimer’s disease mouse models
+Last, we evaluated the ability of MAPLEXs to deliver macromolecu-
+lar cargos, such as Cas9 or deactivated Cas9 (dCas9) ribonucleopro-
+teins (RNPs), which are widely used to induce genome editing and 
+targeted epigenome editing. We attempted to regulate the expres-
+sion of the target gene by delivering a fusion protein consisting of 
+single guide RNA (sgRNA)–incorporated dCas9 and the catalytic 
+domain of DNA methyltransferase 3A (DNMT3A) (fig. S12A). 
+sgRNA-­incorporated dCas9 can guide the DNMT3A catalytic do-
+main (D3A) to the promoter of the target gene, where D3A can then 
+induce DNA methylation, leading to the repression of target gene 
+expression (28, 29). β-­Site amyloid precursor protein (APP) cleaving 
+enzyme 1 (Bace1), which encodes an enzyme that cleaves the APP to 
+produce the neurotoxic amyloid-­β (Aβ) peptide (30–32), therefore 
+playing a crucial role in the pathogenesis of Alzheimer’s disease 
+(AD), was selected as the target gene. We first assessed whether 
+Bace1 expression was regulated by DNA methylation of its promot-
+er. We identified 28 CpG sites in the promoter of Bace1 (fig. S12B) 
+that were highly methylated in mouse BV2 microglial cells and de-
+methylated in mouse N2a neuroblastoma cells (fig. S12C). Conse-
+quently, BACE1 protein was detectable in N2a cells but not in BV2 
+cells (fig. S12D). This is consistent with previous studies that report-
+ed BACE1 expression predominantly in neurons and not in microg-
+lial cells either in vitro and in vivo (33, 34). We then tested whether 
+dCas9-­D3A could be used to specifically methylate CpG sites in the 
+promoter of Bace1 in N2a cells. We designed nine sgRNAs targeting 
+different CpG sites in the promoter of Bace1 and a nontargeting con-
+trol sgRNA (fig. S13). Along with nontargeting dCas9-­D3A (Non-­
+dCas9-­D3A), Bace1-­targeting dCas9 fused to catalytically inactive 
+DNMT3A (mD3A) was used as another negative control (fig. S14A). 
+Among the nine sgRNAs, sgRNA3 and sgRNA7 were the most effec-
+tive in repressing the expression of Bace1 in N2a cells; however, the 
+degree of repression was mild because of the limited transfection 
+efficiency, probably due to the large size of the construct. To observe 
+dCas9-­D3A–mediated Bace1 repression, transfected cells were sorted 
+on the basis of enhanced green fluorescent protein (EGFP) fluores-
+cence, which was possible owing to the presence of T2A-­EGFP at 
+the C terminus of dCas9-­D3A (fig. S14, A and B). Both sgRNA3-­
+dCas9-­D3A and sgRNA7-­dCas9-­D3A repressed the expression of 
+Bace1 compared with Non-­dCas9-­D3A and Bace1-­targeting dCas9-­
+mD3A (fig. S15A). In contrast, Bace2 expression was not affected by 
+Bace1-­targeting dCas9-­D3A (fig. S15B), supporting the specificity 
+of sgRNA3 and sgRNA7 for Bace1. In addition, we confirmed the 
+reduction of BACE1 protein expression by both sgRNA3-­dCas9-­
+D3A and sgRNA7-­dCas9-­D3A (fig.  S15C). Next, we examined 
+whether the observed repression of Bace1 was the result of Bace1-­
+targeting dCas9-­D3A–mediated methylation of the target CpG sites. 
+The methylation percentage of the targeted CpG sites was increased 
+from 8.9 to 41.1% by sgRNA3-­dCas9-­D3A and from 6.0 to 36.8% by 
+sgRNA7-­dCas9-­D3A (fig.  S15, D to G). Bace1-­targeting dCas9-­
+mD3A also repressed the expression of Bace1 to some extent com-
+pared with nontargeting dCas9-­D3A (fig. S15A), perhaps because 
+endogenous wild-­type DNMT3A could have formed a heterotetra-
+mer with mD3A and partially methylated the targeted CpG sites in 
+the promoter of Bace1. Although the methylation percentage of the 
+targeted CpG sites was increased by sgRNA3-­dCas9-­mD3A and 
+sgRNA7-­dCas9-­mD3A (to 17.8 and 11.58%, respectively), it was 
+substantially lower than that of Bace1-­targeting dCas9-­D3A (fig. S15, 
+D to G). Although the degree of methylation induction with D3A 
+was comparable between sgRNA3 and sgRNA7, we observed unex-
+pectedly high methylation induction at CpG site 19 with sgRNA3-­
+dCas9-­mD3A. Therefore, we selected sgRNA7 as the Bace1-­targeting 
+sgRNA for further experiments. After confirming dCas9-­D3A–mediated 
+Bace1 promoter methylation and gene repression, we applied the 
+MAPLEX system to deliver Bace1-­targeting dCas9-­D3A to the 
+brains of the 3xTg-­AD and 5xFAD mouse models of AD. To load 
+dCas9-­D3A into the exosomes, mMaple3-­CD9 was conjugated to 
+the C terminus of dCas9-­D3A (Fig. 6A). It has been previously re-
+ported that, once transcribed in the nucleus, sgRNA is exported to 
+Downloaded from https://www.science.org at Fudan University on March 22, 2026
+
+Han et al., Sci. Transl. Med. 16, eadi4830 (2024)     7 August 2024
+S c i e n c e  T r a n s l at i o n a l  M e d i c i n e  | R e s e a r c h  A r t i c l e
+9 of 15
+Fig. 6. MAPLEX-­mediated targeted 
+epigenome editing in AD mouse 
+models. (A) Schematic illustration 
+of the MAPLEX-­mediated epigenetic 
+modification. (Left) sgBace1-­dCas9-­
+D3A:MAPLEXs were isolated, and 
+sgBace1-­dCas9-­D3As were separated 
+from the exosomal membrane using 
+405-­nm light illumination. (Right) 
+sgBace1-­dCas9-­D3A:MAPLEXs ON were 
+then intranasally applied to 3xTg-­AD 
+(three males and five females per group) 
+and 5xFAD (three males and one female 
+per group) mice to deliver sgBace1-­
+dCas9-­D3A into the brain and induce 
+DNA methylation in the promoter of 
+Bace1. Mouse cartoons were generated 
+using BioRender. (B) Time spent ex-
+ploring the indicated object during 
+training (left) and test (right) sessions 
+of the novel object test in 3xTg-­AD 
+and 5xFAD mice injected with Non-­
+dCas9-­D3A:MAPLEXs ON or sgBace1-­
+dCas9-­D3A:MAPLEXs ON. n = 5 (3xTG-­AD, 
+Non), n = 7 (3xTg-­AD, sgBace1) (3xTg-­
+AD: three mice from Non and one 
+mouse from the sgBace1 group were 
+excluded from the analysis because of 
+the lack of exploratory activity), n = 4 
+(5xFAD, Non), n = 4 (5xFAD, sgBace1) 
+biological replicates; *P < 0.05; Student’s 
+t test (unpaired, two-­tailed). Data are 
+presented as the means ± SD. (C) Rela-
+tive mRNA expression of Bace1 (refer-
+ence gene: 18S) in the cortices of 3xTg-­AD 
+and 5xFAD mice injected with either Non-­
+dCas9-­D3A:MAPLEXs ON or sgBace1-­
+dCas9-­D3A:MAPLEXs ON. n = 8 per group 
+(3xTg-­AD), n = 4 per group (5xFAD) bio-
+logical replicates; *P < 0.05, **P < 0.01; 
+Student’s t test (unpaired, two-­tailed). 
+Data are presented as the means  ±  ­ 
+SD. (D) Representative Western blots 
+for BACE1 and human microtubule-­
+associated protein tau (hTau) in the 
+cortices of male (n  =  3 per group) 
+and female (n = 5 per group) 3xTg-­AD 
+mice injected with Non-­dCas9-­D3A: 
+MAPLEXs ON or sgBace1-­dCas9-­D3A:­ 
+MAPLEXs ON. (E) Representative West-
+ern blots for BACE1 and hAPP in the 
+cortices of male (n  =  3 per group) 
+and female (n = 1 per group) 5xFAD 
+mice injected with Non-­dCas9-­D3A: 
+MAPLEXs ON or sgBace1-­dCas9-­D3A: 
+MAPLEXs ON. (F) Quantification of BACE1 abundance from Western blots in (D) and (E). n = 8 per group (3xTg-­AD), n = 4 per group (5xFAD) biological replicates; **P < 0.01 and 
+****P < 0.0001; Student’s t test (unpaired, two-­tailed). Data are presented as the means ± SD. (G) Representative images of cortical neurons from Non-­dCas9-­D3A:MAPLEXs 
+ON– or sgBace1-­dCas9-­D3A:MAPLEXs ON–injected 3xTg-­AD mice stained with 6E10. Scale bars, 50 μm. (H) Quantification of the 6E10-­positive area in (G). n = 8 biological repli-
+cates; **P < 0.01; Student’s t test (unpaired, two-­tailed). Data are presented as the means ± SD. (I) Representative images of cortices from Non-­dCas9-­D3A:MAPLEXs ON– or 
+sgBace1-­dCas9-­D3A:MAPLEXs ON–injected 5xFAD mice stained with 6E10. Scale bars, 100 μm. (J) Quantification of the number of 6E10-­positive plaques in (I). n = 4 biological 
+replicates; *P < 0.05; Student’s t test (unpaired, two-­tailed). Data are presented as the means ± SD. (K) Relative DNA methylation of targeted CpG sites (CpG site positions 11 to 
+15) in the cortices of 3xTg-­AD and 5xFAD mice injected with Non-­dCas9-­D3A:MAPLEXs ON or sgBace1-­dCas9-­D3A:MAPLEXs ON. n = 8 (3xTg-­AD), n = 4 (5xFAD) biological repli-
+cates; *P < 0.05; Student’s t test (unpaired, two-­tailed). Data are presented as the means ± SEM. (L and M) Relative methylation at targeted CpG sites in the cortices of (L) 3xTg-­AD 
+and (M) 5xFAD mice injected with Non-­dCas9-­D3A:MAPLEXs ON or sgBace1-­dCas9-­D3A:MAPLEXs ON. n = 8 (3xTg-­AD), n = 4 (5xFAD) biological replicates; *P < 0.05; Student’s 
+t test (unpaired, two-­tailed). Data are presented as the means ± SEM.
+Downloaded from https://www.science.org at Fudan University on March 22, 2026
+
+Han et al., Sci. Transl. Med. 16, eadi4830 (2024)     7 August 2024
+S c i e n c e  T r a n s l at i o n a l  M e d i c i n e  | R e s e a r c h  A r t i c l e
+10 of 15
+the cytoplasm where it forms a complex with Cas9 (35). Hence, we 
+hypothesized that sgRNA7 (sgBace1) could also be loaded into exo-
+somes by forming an RNP complex with dCas9 in the cytosol of 
+exosome producer cells before exosome formation (fig. S16A). To 
+confirm this, we first examined whether sgBace1 was present in the 
+cytoplasm and in the nuclei of the HEK293T cells used to produce 
+exosomes. We purified cytoplasmic and nuclear RNA from HEK293T 
+cells that were transfected with either empty vector or dCas9-­D3A-­
+mMaple3-­CD9 expression plasmid containing sgBace1 expression 
+cassette. The successful separation of cytoplasmic and nuclear RNA 
+was confirmed by reverse transcription quantitative PCR (RT-­qPCR) 
+using human nuclear paraspeckle assembly transcript 1 (NEAT1) 
+(nuclear RNA) and glyceraldehyde-­3-­phosphate dehydrogenase 
+(GAPDH), and the presence of sgBace1 was confirmed in both the 
+cytosol and the nucleus by RT-­qPCR (fig. S16, B and C). Then, we 
+isolated sgBace1-­dCas9-­D3A:MAPLEXs from the CM using the TFF 
+method. The size of sgBace1-­dCas9-­D3A:MAPLEXs was 109 nm as 
+measured by NTA, and 405-­nm light-­induced dCas9-­D3A release was 
+confirmed by immunoblotting (fig. S17, A and B). The presence of 
+sgBace1 in sgBace1-­dCas9-­D3A:MAPLEXs was also confirmed using 
+PCR, sequencing, and RT-­qPCR (fig. S17, C and D). To assess whether 
+sgBace1 was actively loaded by mMaple3-­CD9 or stochastically loaded 
+into the exosomes, we generated two additional expression cassettes: 
+one containing sgBace1 alone, achieved by deleting the cytomega-
+lovirus (CMV) promoter from the original construct, and another 
+comprising sgBace1 and dCas9-­D3A, which excluded the mMaple3-­
+CD9 component (fig.  S18, A and B). We isolated exosomes from 
+HEK293T cells transfected with sgBace1-­dCas9-­D3A-­mMaple3-­
+CD9, sgBace1, or sgBace1-­dCas9-­D3A. Subsequently, we extracted 
+small RNAs from these exosomes and performed RT-­qPCR analysis, 
+which revealed a substantial difference in sgBace1 enrichment within 
+sgBace1-­dCas9-­D3A:MAPLEXs when compared with exosomes de-
+rived from HEK293T cells expressing either sgBace1 alone or sgBace1-­
+dCas9-­D3A (fig. S18, C and D). These results suggested that sgBace1 
+was actively loaded into exosomes after forming an RNP complex 
+with dCas9-­D3A-­mMaple3-­CD9. Next, we treated mouse primary 
+cortical neurons with PBS, 293T Exo, sgBace1-­dCas9-­D3A:MAPLEXs 
+OFF, or sgBace1-­dCas9-­D3A:MAPLEXs ON and confirmed the 
+delivery of sgBace1-­dCas9-­D3A by measuring the mRNA and 
+protein expression of Bace1. Treatment with sgBace1-­dCas9-­
+D3A:MAPLEXs ON repressed both mRNA and protein expression 
+of Bace1 compared with the PBS-­, 293T Exo–, or sgBace1-­dCas9-­
+D3A:MAPLEXs OFF–treated groups (fig. S19, A and B). Last, to 
+examine whether sgBace1-­dCas9-­D3A:MAPLEXs can repress Bace1 
+expression in AD mouse models, 3xTg-­AD (three males and five 
+females) and 5xFAD (three males and one female) mice were admin-
+istered either sgBace1-­dCas9-­D3A:MAPLEXs ON or Non-­dCas9-­
+D3A:MAPLEXs ON every other day for 27 days through the 
+intranasal route (Fig. 6A). The size of Non-­dCas9-­D3A:MAPLEXs 
+was 131 nm as measured by NTA, and 405-­nm light-­induced cargo 
+protein (dCas9-­D3A) release was confirmed by immunoblotting 
+(fig. S20, A and B). After 13 injections over 27 days, we evaluated 
+recognition memory impairment in 3xTg-­AD and 5xFAD mice 
+via a novel object recognition (NOR) test. The sgBace1-­dCas9-­
+D3A:MAPLEXs ON–injected groups spent significantly (P = 0.0136 
+in 3xTG-­AD; P = 0.0208 in 5xFAD) more time exploring the novel 
+object than the Non-­dCas9-­D3A:MAPLEXs ON–injected groups, 
+suggesting some amelioration of recognition memory impairment 
+in sgBace1-­dCas9-­D3A:MAPLEXs ON–injected 3xTg-­AD and 
+5xFAD mice (Fig. 6B). Next, we examined Bace1 expression in the 
+cortices of the 3xTg-­AD and 5xFAD mice. Bace1 was reduced in the 
+cortices of the sgBace1-­dCas9-­D3A:MAPLEXs ON–injected groups 
+compared with those of the Non-­dCas9-­D3A:MAPLEXs ON–injected 
+groups (Fig. 6C), whereas Bace2 expression was not affected by 
+sgBace1-­dCas9-­D3A:MAPLEXs, supporting the specificity of sg-
+Bace1 for Bace1 (fig. S21). To examine BACE1 protein expression, we 
+subdivided samples into male and female groups for 3xTg-­AD mice. 
+The protein abundance of BACE1 was also reduced in the cortices of 
+the sgBace1-­dCas9-­D3A:MAPLEXs ON–injected groups compared 
+with those of the Non-­dCas9-­D3A:MAPLEXs ON–injected groups in 
+both male and female mice (Fig. 6, D to F). Because BACE1 initiates 
+the cleavage of APP to produce the Aβ peptide, we also performed 
+IHC to detect Aβ using the 6E10 antibody. Because the 3xTg-­AD is a 
+less severe AD mouse model compared with the 5xFAD mouse mod-
+el, Aβ plaque development occurs at a much later time point in 3xTg-­
+AD mice. Specifically, Aβ plaques are detected in 3xTg-­AD mice 
+between 12 and 18 months of age, whereas in 5xFAD mice, they are 
+observed as early as 2 months of age (36–38). Therefore, we measured 
+intraneuronal Aβ to assess Aβ pathology in 3xTg-­AD mice, whereas 
+Aβ plaque numbers were quantified in 5xFAD mice. In 3xTg-­AD 
+mice, the 6E10-­positive Aβ area was significantly (P = 0.0025) re-
+duced in the cortices of the sgBace1-­dCas9-­D3A:MAPLEXs ON–
+injected group compared with that in the Non-­dCas9-­D3A:MAPLEXs 
+ON–injected group (Fig. 6, G and H). In 5xFAD mice, the number of 
+Aβ plaques was significantly (P = 0.0117) reduced in the cortices of 
+the sgBace1-­dCas9-­D3A:MAPLEXs ON–injected group compared 
+with that in the Non-­dCas9-­D3A:MAPLEXs ON–injected group 
+(Fig. 6, I and J). To confirm whether the observed repression of Bace1 
+expression was the result of sgBace1-­dCas9-­D3A–mediated DNA 
+methylation of the target CpG sites, we performed pyrosequencing 
+analysis. In 3xTg-­AD mice, methylation of targeted CpG sites was in-
+creased in the cortices of the sgBace1-­dCas9-­D3A:MAPLEXs ON–in-
+jected group compared with that in the Non-­dCas9-­D3A:MAPLEXs 
+ON–injected group (Fig. 6, K and L). In 5xFAD mice, the methylation 
+at CpG site 12 was significantly (P = 0.0204) increased in the cortices 
+of the sgBace1-­dCas9-­D3A:MAPLEXs ON–injected group compared 
+with those of the Non-­dCas9-­D3A:MAPLEXs ON–injected group; 
+however, there was no significant difference in the overall methylation 
+of targeted CpG sites (Fig. 6, K and M). We hypothesized that the 
+amount of administered MAPLEXs could have been insufficient to 
+maximize methylation in 5xFAD mice. Therefore, we increased the 
+dose of MAPLEXs to 80 μg and followed the same injection schedule 
+(fig.  S22A). To assess the longevity of methylation, 5xFAD mice 
+were euthanized at 0, 1, 2, and 3 weeks after the last injection 
+(fig. S22A). The methylation was significantly (P = 0.0150 in week 1, 
+P = 0.0123 in week 2, and P = 0.0239 in week 3) increased by inject-
+ing a higher dose of sgBace1-­dCas9-­D3A:MAPLEXs, and the induced 
+methylation was sustained up to 3 weeks after the last injection 
+(fig. S22, B and C). This was associated with a sustained reduc-
+tion in Bace1 expression in the cortices of the sgBace1-­dCas9-­
+D3A:MAPLEXs–injected group (fig.  S22D). These results showed 
+that MAPLEX could deliver macromolecular cargos that induce 
+targeted epigenome editing in vivo.
+DISCUSSION
+Over the past decade, extracellular vesicles (EVs) have emerged as 
+one of the most promising nanocarriers for bioactive molecules 
+Downloaded from https://www.science.org at Fudan University on March 22, 2026
+
+Han et al., Sci. Transl. Med. 16, eadi4830 (2024)     7 August 2024
+S c i e n c e  T r a n s l at i o n a l  M e d i c i n e  | R e s e a r c h  A r t i c l e
+11 of 15
+(39). Specifically, exosomes are now being developed as a platform 
+to deliver functional proteins across the target cell membrane (40). 
+Previous studies have focused on loading cargo proteins into exo-
+somes using either light-­ or chemical-­induced heterodimerization 
+systems (41, 42). However, loading proteins into exosomes can also 
+be achieved by fusing cargo proteins directly with exosomal mark-
+ers. With this method, the challenge lies not in loading but rather 
+in releasing cargo proteins from exosomal markers post-­isolation. 
+To address these limitations, we engineered exosomes equipped 
+with a photoinducible cargo protein release system, called MAPLEX 
+(fig. S23).
+Using this system, we successfully delivered soluble proteins 
+across the target cell membrane, allowing the induction of compli-
+cated cellular events including transcriptional regulation, gene re-
+combination, and epigenome editing in vitro and in vivo (fig. S23). 
+Our results showing that MAPLEXs can be used to control OCT4 
+and SOX2 signaling suggest the possibility of virus-­free reprogram-
+ming of induced pluripotent stem cells via exosomal delivery. Intra-
+venously injected MAPLEXs accumulated in hepatocytes, consistent 
+with a report using exosomes without a targeting moiety (43), where 
+they were able to facilitate gene recombination in Cre reporter mice, 
+suggesting that the MAPLEX system might be effective in the treat-
+ment of diseases associated with the liver. Moreover, MAPLEX 
+could theoretically be equipped with targeting moieties, such as ra-
+bies virus glycoprotein, tumor-­penetrating peptides, or chondrocyte-­
+affinity peptide (44–46), to widen its potential applications.
+Last, we showed that in vivo epigenome editing can be induced 
+in the brains of AD mouse models via MAPLEX (fig. S23). Intrana-
+sal administration, which has previously been used to deliver exo-
+somes to the brain (23, 47, 48), was used to localize MAPLEX to the 
+brain without any targeting moiety. MAPLEX-­mediated delivery of 
+sgBace1-­dCas9-­D3A successfully induced methylation at the tar-
+geted CpG sites, reduced Bace1 expression, and reduced recognition 
+memory impairment and amyloid pathology in both 3xTg-­AD and 
+5xFAD mice. Furthermore, we confirmed that MAPLEX-­mediated 
+epigenome editing can last for 3 weeks after the last injection. Al-
+though a statistically significant increase in methylation percentage 
+was observed at targeted CpG sites upon dCas9-­D3A delivery in 
+both 3xTG-­AD and 5xFAD mice, the extent of this increase was 
+relatively modest when compared with the reduction in Bace1 ex-
+pression. This may be due to the inherent complexity of the brain, 
+comprising diverse cell populations with varying basal methylation 
+percentage. In addition, the presence of endogenous DNMT3A and 
+DNMT3L, which function as a heterotetramer in the methylation 
+process, could have influenced the degree of induced DNA methyla-
+tion. In cases where the amounts of endogenous DNMT3A and DN-
+MT3L may be lower than the delivered dCas9-­D3A, it is plausible 
+that sgBace1-­dCas9-­D3A could act as a repressor, potentially ob-
+structing RNA polymerase binding to the Bace1 promoter. In either 
+case, our findings demonstrate proof of principle for the potential of 
+the MAPLEX system to deliver dCas9-­D3A into the brain in AD 
+mouse models and repress Bace1 expression.
+Although our study demonstrated the efficacy of the MAPLEX 
+system in delivering proteins across cell membranes and triggering 
+desired cellular responses, some limitations and unanswered ques-
+tions remain. First, although we primarily focused on the cortex, 
+the specific brain regions taking up the intranasally injected exo-
+somes require more comprehensive evaluation. Additional regions 
+such as the olfactory bulb could potentially benefit from increased 
+exosomal delivery. Second, although we extensively characterized 
+our exosomes by following the guidelines from the minimal infor-
+mation for studies of EVs (MISEV2023) (49), the amount of cargo 
+protein within individual exosomes needs further evaluation for 
+precise dosing. Last, the implementation of a precise targeting sys-
+tem is essential for clinical translation. Although some targeting 
+moieties have been reported, they are generally not selective enough 
+to fully prevent off-­target effects. Because the type of exosome-­
+producing cells and administration routes also affect the targeting 
+of exosomes, further research to elucidate the appropriate targeting 
+moiety, exosome-­producing cells, and administration route is re-
+quired to enhance the targeting capability of the MAPLEX system. 
+The development of more sophisticated and selective targeting sys-
+tems is the next step to improve the clinical potential of the MA-
+PLEX system, which may open new avenues for genetic therapeutics 
+and be applied to various diseases associated with specific protein 
+deficiencies or gene mutations.
+MATERIALS AND METHODS
+Study design
+The aim of this study was to develop an exosome-­based intracellular 
+protein delivery system that can be applied to multiple types of dis-
+eases. We hypothesized that, by fusing a photocleavable protein be-
+tween a cargo protein and an exosomal membrane marker, the cargo 
+protein could be released from the exosomal membrane upon 405-­
+nm light illumination, allowing its proper function in the target cell 
+after exosomal uptake. Engineered exosomes, equipped with a pho-
+toinducible protein release system, were characterized using NTA, 
+immunoblotting, fluorescence intensity measurements, and cryo-­
+EM. For the in vitro evaluation of our photoinducible protein deliv-
+ery system, we delivered transcription factors (OCT4 and SOX2) to 
+BJ fibroblasts and measured the mRNA expression of their target 
+genes via qPCR. For the in vivo evaluation of our protein delivery 
+system, we delivered Cre recombinase to Ai9 mice and measured 
+tdTomato fluorescence using an in vivo imaging system (IVIS). 
+Cre-­mediated deletion of the LSL cassette from gDNA was exam-
+ined by PCR, and tdTomato protein was detected by immunoblot-
+ting. Last, to examine whether our system could be applied to 
+disease models, we delivered Bace1-­targeting sgRNA-­incorporated 
+dCas9 fused with the catalytic domain of DNMT3A to 3xTg-­AD 
+and 5xFAD mice. We conducted an NOR test to assess recognition 
+memory impairment in AD mice. We also performed qPCR and im-
+munoblotting to measure the mRNA and protein expression of 
+Bace1 in the brains of AD mice and pyrosequencing to measure the 
+methylation percentage in the promoter of Bace1.
+For in vivo studies, the number of animals was selected on the 
+basis of variability observed in pilot experiments and the availability 
+of mice. Animals were randomized to groups [Ai9: three mice per 
+group (three males), 3xTg-­AD: eight mice per group (three males 
+and five females), and 5xFAD: four mice per group (three males and 
+one female)], and no mice were excluded from the experiment. The 
+NOR test was performed by an operator blinded to the mouse type 
+involved in the test. In the NOR data analysis, three mice from the 
+Non-­dCas9-­D3A:MAPLEX–treated 3xTg-­AD group and one mouse 
+from the sgBace1-­dCas9-­D3A:MAPLEX–treated 3xTg-­AD group 
+were excluded from the analysis because of the lack of exploratory 
+activity (less than 7-­s exploration time of both objects within a 5-­
+min period).
+Downloaded from https://www.science.org at Fudan University on March 22, 2026
+
+Han et al., Sci. Transl. Med. 16, eadi4830 (2024)     7 August 2024
+S c i e n c e  T r a n s l at i o n a l  M e d i c i n e  | R e s e a r c h  A r t i c l e
+12 of 15
+Exosome isolation and characterization
+Exosomes were isolated by TFF as described previously (18, 50, 51). 
+Twenty-­four hours after transfection with an appropriate construct, 
+HEK293T cells were maintained in fresh fetal bovine serum (FBS)–
+free Dulbecco’s modified Eagle’s medium (DMEM) containing 1% 
+penicillin-­streptomycin. After 24 hours, the first CM was collected, 
+and fresh FBS-­free DMEM containing 1% penicillin-­streptomycin 
+was again added to the HEK293T cell. After 24 hours, the second 
+CM was collected, and all collected CMs were centrifuged at 1500g 
+for 10 min at 4°C to remove cellular debris. Subsequently, soluble 
+proteins were removed from the supernatant of the CM by using a 
+0.22-­μm bottle top filter (Millipore Sigma). To remove soluble pro-
+teins from the CM and concentrate exosomes, the filtered CM was 
+subjected to TFF. Briefly, a 300-­kDa MWCO (molecular weight cut-
+off) ultrafiltration membrane filter capsule (Pall Corporation) was 
+used to perform a continuous circulation at a 2 ml/min operation 
+speed. Contaminants below 300 kDa were removed, and exosomes 
+were obtained in a final volume of ~5 ml. Exosomes were quantified 
+using a micro bicinchoninic acid (BCA) protein assay (Thermo 
+Fisher Scientific) and NTA (LM-­10, Malvern Instruments Ltd.) 
+equipped with a 642-­nm laser module at room temperature (RT). 
+Samples were introduced into the chamber and video-­recorded for 
+1 min. Each experiment was performed in triplicate. The size distri-
+bution and zeta potential of the exosomes were measured by DLS 
+and ELS (Zetasizer ZS90, Malvern Instruments Ltd.).
+Mice
+Six-­month-­old heterozygous Cre reporter mice (Ai9 mice, RRID: 
+IMSR_JAX:007909) and their wild-­type littermates of the same ge-
+netic background (C57BL/6J) were maintained under pathogen-­free 
+conditions on a 12-­hour/12-­hour light/dark cycle with continuous 
+access to food and water. Male mice were used for the experiment. 
+Ten-­month-­old homozygous 3xTg-­AD (RRID:MMRRC_034830-­
+JAX) and wild-­type (B6129SF2/J) mice were maintained under 
+pathogen-­free conditions on a 12-­hour/12-­hour light/dark cycle 
+with continuous access to food and water. Both male and female 
+mice were used at a 3:5 ratio. Six-­month-­old heterozygous 5xFAD 
+(RRID:MMRRC_034840-­JAX) and their wild-­type littermates of the 
+same background (mixed C57BL/6 and SJL) were maintained under 
+pathogen-­free conditions on a 12-­hour/12-­hour light/dark cycle with 
+continuous access to food and water. Both male and female mice were 
+used at a 3:1 ratio. All procedures were reviewed and approved by the 
+Institutional Animal Care and Use Committee of Sungkyunkwan 
+University (SKKUIACUC2021-­04-­29-­1).
+Cell lines
+HEK293T cells, mouse neuroblastoma cells (N2a), and mouse microg-
+lial cells (BV2) were cultured in DMEM (Corning, no. 10-­013-­CV) 
+supplemented with 10% FBS (Gibco, no. 12483020) and 1% penicillin-­
+streptomycin (Capricorn, PS-­B) at 37°C in humidified air contain-
+ing 5% CO2. Human neonatal foreskin fibroblast cells (BJ) were 
+cultured in Eagle’s minimal essential medium (American Type Cul-
+ture Collection, no. 30-­2003) supplemented with 10% FBS at 37°C 
+in humidified air containing 5% CO2.
+Plasmids and transfection
+All plasmids and PCR primers used for cloning in this study are 
+listed in table S1. To generate the pCMV14-­TagBFP-­mMaple3-­CD9 
+construct, TagBFP, mMaple3, and CD9 were first PCR-­amplified 
+from Addgene plasmid nos. 100603, 101151, and 54029, respective-
+ly (table S1). The mMaple3-­CD9 fragment was PCR-­amplified using 
+primers 2F and 3R. The TagBFP-­mMaple3-­CD9 fragment was PCR-­
+amplified using primers 1F and 3R (table S1). Last, the TagBFP-­
+mMaple3-­CD9 fragment was inserted into the pCMV14-­3XFLAG 
+vector using Eco RI–HF and Xba I restriction enzymes. For efficient 
+cargo protein substitution purposes, the Xho I restriction enzyme 
+site was inserted in the linker between TagBFP and mMaple3. To 
+generate the pCMV14-­OCT4-­mMaple3-­CD9, the TagBFP fragment 
+from the pCMV14-­TagBFP-­mMaple3-­CD9 construct was substitut-
+ed with the OCT4 fragment (PCR-­amplified from Addgene plasmid 
+no. 26816 using primers 4F and 4R) via Sac I restriction enzyme 
+(table S1). To generate pCMV14-­SOX2-­mMaple3-­CD9, the TagBFP 
+fragment from the pCMV14-­TagBFP-­mMaple3-­CD9 construct was 
+substituted with the SOX2 fragment (PCR-­amplified from Addgene 
+plasmid no. 26817 using primers 5F and 5R) via Eco RI and Xho I 
+restriction enzymes (table S1). To generate the pCMV14-­Cre-­mMaple3-­
+CD9 construct, the TagBFP fragment from the pCMV14-­TagBFP-­
+mMaple3-­CD9 construct was substituted with the Cre fragment 
+(PCR-­amplified using primers 6F and 6R) via Eco RI and Xho I 
+restriction enzymes (table S1). To generate the pCMV14-­CD9-­
+mMaple3-­Cre construct, CD9, mMaple3, and Cre were first PCR-­
+amplified using primer sets 7, 8, and 9, respectively (table S1). The 
+CD9-­mMaple3 fragment was PCR-­amplified using primers 7F and 
+8R. The CD9-­mMaple3-­Cre fragment was PCR-­amplified using prim-
+ers 7F and 9R (table S1). Last, the CD9-­mMaple3-­Cre fragment was 
+inserted into the pCMV14-­3XFLAG vector using Eco RI–HF and 
+Xba I restriction enzymes. Cells were transfected with polyethyleni-
+mine (Sigma, no. 408727) at a density of 70% confluence, according 
+to the manufacturer’s protocol.
+Exosome uptake assay
+HEK293T cells were seeded on six-­well plates at a density of 4 × 105 
+cells per well, and the exosomes were treated at the same time. 
+Twenty-­four hours later, cells were washed with PBS and trypsin-
+ized for fluorescence measurement. After fluorescence intensity 
+measurement, cells were recollected for immunoblotting analysis.
+405-­nm induced photocleavage
+The 405-­nm micro ultraviolet (UV) light-­emitting diode (LED) 
+curing system (Skycares, Gimpo, Korea) was used for inducing 
+photocleavage. Briefly, an e-­tube containing cells or exosomes 
+was placed in ice with its lid opened. The 405-­nm micro UV LED 
+curing system was placed on top of the e-­tube, and 405-­nm light 
+was given for 5 min unless otherwise indicated. A UV radiometer 
+(Genicom, Daejeon, Korea) was used to measure the LED illumi-
+nation power.
+Confocal microscopy for cell imaging
+Twenty-­four hours before imaging, cells were passaged and plated 
+on either a Falcon 4-­well culture slide (Falcon, no. 353114) or a 
+Nunc glass-­bottom dish (Thermo Fisher Scientific, no. 150680). For 
+fixation, cells were washed with PBS twice (5 min each time), fixed 
+with 4% paraformaldehyde (PFA) for 10 min, and washed in PBS 
+twice (5 min each time). The slides were mounted in antifade 
+mounting medium without 4′,6-­diamidino-­2-­phenylindole (DAPI) 
+(VECTASHIELD, no. H-­1000). For live-­cell imaging, the culture 
+medium was replaced with a fresh phenol-­free medium, and a glass-­
+bottom dish was placed in a live-­cell imaging chamber. Confocal 
+Downloaded from https://www.science.org at Fudan University on March 22, 2026
+
+Han et al., Sci. Transl. Med. 16, eadi4830 (2024)     7 August 2024
+S c i e n c e  T r a n s l at i o n a l  M e d i c i n e  | R e s e a r c h  A r t i c l e
+13 of 15
+imaging was performed using an LSM700 (Carl Zeiss). Images were 
+acquired and analyzed using the Zeiss ZEN software.
+Fluorescence intensity measurement
+Cells or exosomes were placed in a 96-­well black/clear-­bottom plate 
+(Thermo Fisher Scientific, no. 165305), and fluorescence intensity was 
+analyzed on a Synergy HTX Multi-­Mode Microplate Reader (BioTek 
+Instruments, Inc.). Blue fluorescence intensity was assessed with a 
+360/40-­nm excitation filter and a 460/40-­nm emission filter. Green flu-
+orescence intensity was assessed with a 485/20-­nm excitation filter and 
+a 528/20-­nm emission filter. Red fluorescence intensity was assessed 
+with a 530/25-­nm excitation filter and a 590/35-­nm emission filter.
+Immunoblotting
+Cells were collected using a T-­PER tissue protein extraction reagent 
+(Thermo Fisher Scientific, no. 78510) with protease/phosphatase in-
+hibitor cocktail (Biovision, no. K276-­1). Proteins from cells were 
+quantified with a BCA protein assay kit (Thermo Fisher Scientific, 
+no. 23225), whereas proteins from exosomes were quantified with a 
+micro BCA protein assay kit (Thermo Fisher Scientific, no. 23235). 
+Sample buffer (4×) containing lithium dodecyl sulfate and 5% 
+2-­mercaptoethanol was added, and samples were heated for 10 min 
+at 95°C. Subsequently, samples were resolved on an SDS–polyacryl-
+amide gel and transferred to a polyvinylidene difluoride membrane. 
+Blots were blocked in 5% nonfat dry milk for 1 hour at RT before 
+incubating overnight with the primary antibodies. The membranes 
+were washed with tris-­buffered saline with 0.1% Tween 20 detergent 
+(TBST) and incubated with horseradish peroxidase–conjugated sec-
+ondary antibody for 1 hour at RT. After TBST washing, the signal 
+was detected using an enhanced chemiluminesence solution (Pierce, 
+solution A). Detailed information on the antibodies used in immu-
+noblotting is provided in table S2.
+Cryo–electron microscopy
+The transmission electron microscopy analysis was performed as 
+described previously (52). Briefly, to visualize the morphology of the 
+exosomes, 7 μl of samples was loaded onto a glow-­discharged holey 
+carbon film–supported grid, blotted with Whatman filter paper, and 
+plunge-­frozen with Vitrobot (FEI). The grids were examined with 
+Tecnai F20 (FEI) at 200 kV under −176°C.
+Protease digestion assay
+Exosomes were either given blue light (405 nm) for 5 min or not and 
+incubated with 1% Triton X-­100 or PBS for 5 min at RT. Proteinase 
+K (10 μg/ml) or PBS was added and incubated for 1 hour on ice. 
+Phenylmethylsulfonyl fluoride (2 mM) was added for 5 min at RT to 
+inactivate proteinase K. Sample buffer (4×) containing lithium do-
+decyl sulfate and 5% 2-­mercaptoethanol was added, and samples 
+were heated for 10 min at 95°C.
+Quantitative real-­time PCR
+Total RNA extraction and qPCR were performed as described previ-
+ously (53). Total RNA was extracted from BJ cells, mouse cortical 
+neurons, and cortices of 3xTg-­AD and 5xFAD mice using the 
+RNAiso Plus (TaKaRa) and reverse-­transcribed into cDNA using 
+the PrimeScript RT Master Mix (TaKaRa). qPCR was performed 
+to detect the mRNA expression of OCT4, SOX2, HESX1, DKK1, 
+NANOG, Bace1, and Bace2 using the TB Green PCR Kit (TaKaRa). 
+All qPCR primers used in this study are listed in table S3.
+In vivo gene recombination by Cre delivery
+Ai9 mice were fed an alfalfa-­free diet (Raonbio Co. Ltd.) for 7 days 
+to reduce the autofluorescence. Cre:MAPLEXs were isolated as de-
+scribed above, and 200 μl of Cre:MAPLEXs (1.5 mg ml−1) was admin-
+istered two times into Ai9 mice by intravenous injection. Forty-­eight 
+hours after the second injection, mice (n = 3 per group) were hu-
+manely euthanized, and the major organs (heart, liver, lung, kidney, 
+and spleen) were excised. Cre:MAPLEXs were isolated as described 
+above, and 24 μl of Cre:MAPLEXs (2.4 mg ml−1) was administered 
+into Ai9 mice by intranasal injection every day for 14 days. Mice 
+(n = 3 per group) were humanely euthanized, and the major organs 
+(brain, heart, liver, lung, kidney, and spleen) were excised. Ex vivo 
+fluorescence was imaged using an IVIS Lumina system (PerkinElmer) 
+with the following excitation and emission filters: 535/575 to 650 nm 
+for tdTomato and 465/575 to 650 nm for the tissue autofluorescence. 
+The autofluorescence background filter image was then subtracted 
+from the tdTomato filter image using the image math tool. All im-
+ages were acquired under the same field of view using autoexposure, 
+which corresponded to a pixel binning of 8 and f/stop of 2. gDNA 
+was extracted from the liver using a total DNA extraction kit (BI-
+ONICS) and PCR-­amplified using primers 26F and 26R to confirm 
+LSL cassette deletion (table S4). Total proteins were extracted from 
+the liver using the radioimmunoprecipitation assay lysis buffer 
+(Merck) and subjected to Western blotting.
+Bisulfite sequencing and pyrosequencing analysis
+gDNA was extracted from BV2, N2a, and cortices of 3xTg-­AD and 
+5xFAD mice using a total DNA extraction kit. gDNA (400 ng) 
+was subjected to bisulfite conversion using an EpiJET bisulfite 
+conversion kit (Thermo Fisher Scientific, no. K1461) following 
+the manufacturer’s instructions. For bisulfite sequencing analysis, 
+bisulfite-­converted DNA was PCR-­amplified using primers 29F and 
+29R (table S5). The resulting PCR products were purified and sub-
+jected to TA cloning using the pGEM-­T Easy Vector (Promega), fol-
+lowed by blue/white color screening. Plasmid DNA was extracted 
+from white colonies and analyzed via Sanger sequencing. For pyro-
+sequencing analysis, bisulfite-­converted DNA was PCR-­amplified 
+using primers 30F and 30R (table S6). The resulting PCR products 
+were purified and subjected to pyrosequencing analysis using se-
+quencing primers 31F, 32F, and the PyroMark Q48 Autoprep System 
+(QIAGEN) (table S6).
+Intranasal administration of MAPLEXs
+3xTg-­AD and 5xFAD mice were anesthetized with isoflurane (3.5% 
+for induction and 2% for maintenance) and placed in a supine posi-
+tion. Each mouse was administered 5 μl of either Non-­dCas9-­
+D3A:MAPLEXs (5 mg ml−1) or sgBace1-­dCas9-­D3A:MAPLEXs 
+(5 mg ml−1) per nostril using a small pipette as described previously 
+(54). Overall, each mouse received 50 μg of either Non-­dCas9-­
+D3A:MAPLEXs or sgBace1-­dCas9-­D3A:MAPLEXs every other 
+day for 27 days (13 injections). For assessment of methylation lon-
+gevity, 5xFAD mice were administered 80 μg of either Non-­dCas9-­
+D3A:MAPLEXs or sgBace1-­dCas9-­D3A:MAPLEXs every other day 
+for 27 days (13 injections).
+NOR test
+The NOR test was performed as described previously (55). Briefly, 
+the task was conducted in three stages: habituation, training, and test 
+sessions. On the first day, mice were placed in an empty open-­field 
+Downloaded from https://www.science.org at Fudan University on March 22, 2026
+
+Han et al., Sci. Transl. Med. 16, eadi4830 (2024)     7 August 2024
+S c i e n c e  T r a n s l at i o n a l  M e d i c i n e  | R e s e a r c h  A r t i c l e
+14 of 15
+box (length × width × height, 30 cm × 30 cm × 30 cm) and allowed 
+to explore the open field for 5 min. The next day, a training session 
+was performed where mice were placed in an open-­field box with 
+two similar objects and allowed to explore for 5 min. After the train-
+ing session, the mice were rested for 4 hours and then subjected to 
+the test session. In the test session, one of the two objects was re-
+placed with a novel object, and the exploration pattern was record-
+ed. Meaningful exploration was defined as mice facing and touching 
+the object at a distance of less than 2 cm. Animals with a total explo-
+ration time of less than 7 s were excluded from analysis (56, 57). 
+Tests were performed by an operator blinded to the mouse type in-
+volved in the test.
+Immunohistochemistry
+Mice were anesthetized with Zoletil (Virbac) and Rompun (Bayer). 
+Once anesthetized, mice were perfused transcardially with PBS. The 
+hemibrains or left liver lobes were removed and immersion-­fixed 
+with 4% PFA in PBS at 4°C overnight and then placed in 15% su-
+crose in PBS until the tissues sank. Then, the tissues were placed 
+in 30% sucrose in PBS at 4°C overnight. The tissues were cryo-­
+embedded in Tissue-­Tek Cryomold (Sakura Finetek USA) and sec-
+tioned at a thickness of 10 or 30 μm on a cryostat. The sections were 
+blocked with 2.5% donkey serum in 0.3% phosphate-­buffered saline 
+with Tween 20 (PBS-­T) and incubated with primary antibody at 4°C 
+for overnight. The brain or liver sections were then washed three 
+times with 0.3% PBS-­T and incubated in the presence of a second-
+ary antibody. The brain or liver sections were washed three times 
+with 0.3% PBS-­T and mounted in antifade mounting medium with 
+DAPI (VECTASHIELD, no. H-­1200-­10). Confocal imaging was 
+performed using a Leica Stellaris 5 (Leica). Acquired images were 
+analyzed using the ImageJ 1.53v software.
+Statistical analyses
+Statistical analyses were performed using the GraphPad Prism soft-
+ware v.9.5.1. Significant differences between the two groups were 
+calculated using a two-­tailed Student’s t test, and those among mul-
+tiple groups were calculated using one-­way analysis of variance 
+(ANOVA) with either Tukey’s post hoc test or Dunnett’s post hoc 
+test. Statistical significance was set at P < 0.05. Appropriate methods 
+are indicated in the legends, with significant differences marked in 
+all figures. Values and error bars are expressed as means ± SEM or 
+SD as noted in the text and figure legends.
+Supplementary Materials
+This PDF file includes:
+Materials and Methods
+Figs. S1 to S23
+Tables S1 to S6
+References (58–60)
+Other Supplementary Material for this manuscript includes the following:
+Data files S1 and S2
+MDAR Reproducibility Checklist
+REFERENCES AND NOTES
+	 1.	 T. T. Hansel, H. Kropshofer, T. Singer, J. A. Mitchell, A. J. T. George, The safety and side 
+effects of monoclonal antibodies. Nat. Rev. Drug Discov. 9, 325–338 (2010).
+	 2.	 R. A. Saxton, C. R. Glassman, K. C. Garcia, Emerging principles of cytokine pharmacology 
+and therapeutics. Nat. Rev. Drug Discov. 22, 21–37 (2023).
+	 3.	 M. C. Petersen, G. I. Shulman, Mechanisms of insulin action and insulin resistance. Physiol. 
+Rev. 98, 2133–2223 (2018).
+	 4.	 D. Raucher, J. S. Ryu, Cell-­penetrating peptides: Strategies for anticancer treatment. 
+Trends Mol. Med. 21, 560–570 (2015).
+	 5.	 S. Fawell, J. Seery, Y. Daikh, C. Moore, L. L. Chen, B. Pepinsky, J. Barsoum, Tat-­mediated 
+delivery of heterologous proteins into cells. Proc. Natl. Acad. Sci. U.S.A. 91, 664–668 (1994).
+	 6.	 H. Nagahara, A. M. Vocero-­Akbani, E. L. Snyder, A. Ho, D. G. Latham, N. A. Lissy,  
+M. Becker-­Hapak, S. A. Ezhevsky, S. F. Dowdy, Transduction of full-­length TAT fusion proteins 
+into mammalian cells: TAT-­p27Kip1 induces cell migration. Nat. Med. 4, 1449–1452 (1998).
+	 7.	 M. J. May, F. D’Acquisto, L. A. Madge, J. Glöckner, J. S. Pober, S. Ghosh, Selective inhibition 
+of NF-­κB activation by a peptide that blocks the interaction of NEMO with the IκB kinase 
+complex. Science 289, 1550–1554 (2000).
+	 8.	 C. Palm, M. Jayamanne, M. Kjellander, M. Hällbrink, Peptide degradation is a critical determinant 
+for cell-­penetrating peptide uptake. Biochim. Biophys. Acta 1768, 1769–1776 (2007).
+	 9.	 S. A. Moschos, S. W. Jones, M. M. Perry, A. E. Williams, J. S. Erjefalt, J. J. Turner, P. J. Barnes,  
+B. S. Sproat, M. J. Gait, M. A. Lindsay, Lung delivery studies using siRNA conjugated to TAT 
+(48−60) and penetratin reveal peptide induced reduction in gene expression and 
+induction of innate immunity. Bioconjug. Chem. 18, 1450–1459 (2007).
+	10.	 M. Wang, K. Alberti, S. Sun, C. L. Arellano, Q. Xu, Combinatorially designed lipid-­like 
+nanoparticles for intracellular delivery of cytotoxic protein for cancer therapy. Angew. 
+Chem. Int. Ed. Engl. 53, 2893–2898 (2014).
+	11.	 M. Wang, J. A. Zuris, F. Meng, H. Rees, S. Sun, P. Deng, Y. Han, X. Gao, D. Pouli, Q. Wu,  
+I. Georgakoudi, D. R. Liu, Q. Xu, Efficient delivery of genome-­editing proteins using 
+bioreducible lipid nanoparticles. Proc. Natl. Acad. Sci. U.S.A. 113, 2868–2873 (2016).
+	12.	 D. Chenthamara, S. Subramaniam, S. G. Ramakrishnan, S. Krishnaswamy, M. M. Essa,  
+F.-­H. Lin, M. W. Qoronfleh, Therapeutic efficacy of nanoparticles and routes of 
+administration. Biomater. Res. 23, 20 (2019).
+	13.	 S. S. Montoto, G. Muraca, M. E. Ruiz, Solid lipid nanoparticles for drug delivery: 
+Pharmacological and biopharmaceutical aspects. Front. Mol. Biosci. 7, 319 (2020).
+	14.	 V. Francia, R. M. Schiffelers, P. R. Cullis, D. Witzigmann, The biomolecular corona of lipid 
+nanoparticles for gene therapy. Bioconjug. Chem. 31, 2046–2059 (2020).
+	15.	 S. Kumar, I. J. Michael, J. Park, S. Granick, Y. K. Cho, Cloaked exosomes: Biocompatible, 
+durable, and degradable encapsulation. Small 14, e1802052 (2018).
+	 16.	 E. J. Bunggulawa, W. Wang, T. Yin, N. Wang, C. Durkan, Y. Wang, G. Wang, Recent advancements 
+in the use of exosomes as drug delivery systems. J. Nanobiotechnology 16, 81 (2018).
+	17.	 A. M. Silva, E. Lázaro-­Ibáñez, A. Gunnarsson, A. Dhande, G. Daaboul, B. Peacock,  
+X. Osteikoetxea, N. Salmond, K. P. Friis, O. Shatnyeva, N. Dekker, Quantification of protein 
+cargo loading into engineered extracellular vesicles at single-­vesicle and single-­molecule 
+resolution. J. Extracell. Vesicles 10, e12130 (2021).
+	18.	 H. K. Kim, J. Cho, E. Kim, J. Kim, J. S. Yang, K. C. Kim, J. Y. Lee, Y. Shin, L. F. Palomera, J. Park, 
+S. H. Baek, H. G. Bae, Y. Cho, J. Han, J. H. Sul, J. Lee, J. H. Park, Y. W. Cho, W. Lee, D. G. Jo, 
+Engineered small extracellular vesicles displaying ACE2 variants on the surface protect 
+against SARS-­CoV-­2 infection. J. Extracell. Vesicles 11, e12179 (2022).
+	19.	 S. Wang, J. R. Moffitt, G. T. Dempsey, X. S. Xie, X. Zhuang, Characterization and 
+development of photoactivatable fluorescent proteins for single-­molecule-­based 
+superresolution imaging. Proc. Natl. Acad. Sci. U.S.A. 111, 8452–8457 (2014).
+	20.	 A. L. McEvoy, H. Hoi, M. Bates, E. Platonova, P. J. Cranfill, M. A. Baird, M. W. Davidson,  
+H. Ewers, J. Liphardt, R. E. Campbell, mMaple: A photoconvertible fluorescent protein for 
+use in multiple imaging modalities. PLOS ONE 7, e51314 (2012).
+	21.	 H. X. Chen, F. C. Liang, P. Gu, B. L. Xu, H. J. Xu, W. T. Wang, J. Y. Hou, D. X. Xie, X. Q. Chai,  
+S. J. An, Exosomes derived from mesenchymal stem cells repair a Parkinson’s disease 
+model by inducing autophagy. Cell Death Dis. 11, 288 (2020).
+	22.	 M. J. Haney, N. L. Klyachko, Y. Zhao, R. Gupta, E. G. Plotnikova, Z. He, T. Patel, A. Piroyan,  
+M. Sokolsky, A. V. Kabanov, E. V. Batrakova, Exosomes as drug delivery vehicles for 
+Parkinson’s disease therapy. J. Control. Release 207, 18–30 (2015).
+	23.	 X. Zhuang, X. Xiang, W. Grizzle, D. Sun, S. Zhang, R. C. Axtell, S. Ju, J. Mu, L. Zhang,  
+L. Steinman, D. Miller, H. G. Zhang, Treatment of brain inflammatory diseases by 
+delivering exosome encapsulated anti-­inflammatory drugs From the nasal region to the 
+brain. Mol. Ther. 19, 1769–1779 (2011).
+	24.	 U. Sterzenbach, U. Putz, L. H. Low, J. Silke, S. S. Tan, J. Howitt, Engineered exosomes as 
+vehicles for biologically active proteins. Mol. Ther. 25, 1269–1278 (2017).
+	25.	 N. Perets, S. Hertz, M. London, D. Offen, Intranasal administration of exosomes derived 
+from mesenchymal stem cells ameliorates autistic-­like behaviors of BTBR mice. Mol. 
+Autism. 9, 57 (2018).
+	26.	 Y. Zhai, Q. Wang, Z. Zhu, Y. Hao, F. Han, J. Hong, W. Zheng, S. Ma, L. Yang, G. Cheng, 
+High-­efficiency brain-­targeted intranasal delivery of BDNF mediated by engineered 
+exosomes to promote remyelination. Biomater. Sci. 10, 5707–5718 (2022).
+	27.	 O. Betzer, N. Perets, A. Angel, M. Motiei, T. Sadan, G. Yadid, D. Offen, R. Popovtzer, In vivo 
+neuroimaging of exosomes using gold nanoparticles. ACS Nano 11, 10883–10893 (2017).
+	 28.	 A. Vojta, P. Dobrinic, V. Tadic, L. Bockor, P. Korac, B. Julg, M. Klasic, V. Zoldos, Repurposing the 
+CRISPR-­Cas9 system for targeted DNA methylation. Nucleic Acids Res. 44, 5615–5628 (2016).
+	29.	 X. S. Liu, H. Wu, X. Ji, Y. Stelzer, X. Wu, S. Czauderna, J. Shu, D. Dadon, R. A. Young,  
+R. Jaenisch, Editing DNA methylation in the mammalian genome. Cell 167, 233–247.e17 
+(2016).
+Downloaded from https://www.science.org at Fudan University on March 22, 2026
+
+Han et al., Sci. Transl. Med. 16, eadi4830 (2024)     7 August 2024
+S c i e n c e  T r a n s l at i o n a l  M e d i c i n e  | R e s e a r c h  A r t i c l e
+15 of 15
+	30.	 G. Bahn, J. S. Park, U. J. Yun, Y. J. Lee, Y. Choi, J. S. Park, S. H. Baek, B. Y. Choi, Y. S. Cho,  
+H. K. Kim, J. Han, J. H. Sul, S. H. Baik, J. Lim, N. Wakabayashi, S. H. Bae, J. W. Han,  
+T. V. Arumugam, M. P. Mattson, D. G. Jo, NRF2/ARE pathway negatively regulates BACE1 
+expression and ameliorates cognitive deficits in mouse Alzheimer’s models. Proc. Natl. 
+Acad. Sci. U.S.A. 116, 12516–12523 (2019).
+	31.	 Y. Cho, H. G. Bae, E. Okun, T. V. Arumugam, D. G. Jo, Physiology and pharmacology of 
+amyloid precursor protein. Pharmacol. Ther. 235, 108122 (2022).
+	32.	 G. Bahn, D. G. Jo, Therapeutic approaches to Alzheimer’s disease through modulation of 
+NRF2. Neuromolecular Med. 21, 1–11 (2019).
+	33.	 R. Vassar, B. D. Bennett, S. Babu-­Khan, S. Kahn, E. A. Mendiaz, P. Denis, D. B. Teplow, S. Ross, 
+P. Amarante, R. Loeloff, Y. Luo, S. Fisher, J. Fuller, S. Edenson, J. Lile, M. A. Jarosinski,  
+A. L. Biere, E. Curran, T. Burgess, J. C. Louis, F. Collins, J. Treanor, G. Rogers, M. Citron, 
+β-­Secretase cleavage of Alzheimer’s amyloid precursor protein by the transmembrane 
+aspartic protease BACE. Science 286, 735–741 (1999).
+	34.	 M. Hartlage-­Rübsamen, U. Zeitschel, J. Apelt, U. Gärtner, H. Franke, T. Stahl, A. Günther,  
+R. Schliebs, M. Penkowa, V. Bigl, S. Roßner, Astrocytic expression of the Alzheimer’s 
+disease β-­secretase (BACE1) is stimulus-­dependent. Glia 41, 169–179 (2003).
+	35.	 A. K. Fajrial, Q. Q. He, N. I. Wirusanti, J. E. Slansky, X. Ding, A review of emerging physical 
+transfection methods for CRISPR/Cas9-­mediated gene editing. Theranostics 10, 
+5532–5549 (2020).
+	36.	 D. I. Javonillo, K. M. Tran, J. Phan, E. Hingco, E. A. Kramar, C. da Cunha, S. Forner,  
+S. Kawauchi, G. Milinkeviciute, A. Gomez-­Arboledas, J. Neumann, C. E. Banh, M. Huynh,  
+D. P. Matheos, N. Rezaie, J. A. Alcantara, A. Mortazavi, M. A. Wood, A. J. Tenner,  
+G. R. MacGregor, K. N. Green, F. M. LaFerla, Systemic phenotyping and characterization of 
+the 3xTg-­AD mouse model of Alzheimer’s disease. Front. Neurosci. 15, 785276 (2021).
+	37.	 A. J. Barber, C. L. del Genio, A. Swain, E. M. Pizzi, S. C. Watson, V. N. Tapiavala, G. J. Zanassi, 
+A. B. Gaur, Age, sex and Alzheimer’s disease: A longitudinal study of 3xTg-­AD mice reveals 
+sex-­specific disease trajectories and inflammatory responses mirrored in postmortem 
+brains from Alzheimer’s patients. Alzheimers Res. Ther. 16, 134 (2024).
+	 38.	 H. Oakley, S. L. Cole, S. Logan, E. Maus, P. Shao, J. Craft, A. Guillozet-­Bongaarts, M. Ohno,  
+J. Disterhoft, L. Van Eldik, R. Berry, R. Vassar, Intraneuronal beta-­amyloid aggregates, 
+neurodegeneration, and neuron loss in transgenic mice with five familial Alzheimer’s disease 
+mutations: Potential factors in amyloid plaque formation. J. Neurosci. 26, 10129–10140 (2006).
+	39.	 I. K. Herrmann, M. J. A. Wood, G. Fuhrmann, Extracellular vesicles as a next-­generation 
+drug delivery platform. Nat. Nanotechnol. 16, 748–759 (2021).
+	40.	 X. Luan, K. Sansanaphongpricha, I. Myers, H. Chen, H. Yuan, D. Sun, Engineering 
+exosomes as refined biological nanoplatforms for drug delivery. Acta Pharmacol. Sin. 38, 
+754–763 (2017).
+	41.	 N. Yim, S. W. Ryu, K. Choi, K. R. Lee, S. Lee, H. Choi, J. Kim, M. R. Shaker, W. Sun, J. H. Park,  
+D. Kim, W. Do Heo, C. Choi, Exosome engineering for efficient intracellular delivery of 
+soluble proteins using optically reversible protein-­protein interaction module. Nat. 
+Commun. 7, 12277 (2016).
+	42.	 P. Gee, M. S. Y. Lung, Y. Okuzaki, N. Sasakawa, T. Iguchi, Y. Makita, H. Hozumi, Y. Miura,  
+L. F. Yang, M. Iwasaki, X. H. Wang, M. A. Waller, N. Shirai, Y. O. Abe, Y. Fujita, K. Watanabe,  
+A. Kagita, K. A. Iwabuchi, M. Yasuda, H. Xu, T. Noda, J. Komano, H. Sakurai, N. Inukai,  
+A. Hotta, Extracellular nanovesicles for packaging of CRISPR-­Cas9 protein and sgRNA to 
+induce therapeutic exon skipping. Nat. Commun. 11, 1334 (2020).
+	43.	 O. P. B. Wiklander, J. Z. Nordin, A. O’Loughlin, Y. Gustafsson, G. Corso, I. Mäger, P. Vader,  
+Y. Lee, H. Sork, Y. Seow, N. Heldring, L. Alvarez-­Erviti, C. E. Smith, K. Le Blanc, P. Macchiarini, 
+P. Jungebluth, M. J. A. Wood, S. EL Andaloussi, Extracellular vesicle in vivo biodistribution 
+is determined by cell source, route of administration and targeting. J. Extracell. Vesicles 4, 
+26316 (2015).
+	 44.	 L. Alvarez-­Erviti, Y. Seow, H. Yin, C. Betts, S. Lakhal, M. J. A. Wood, Delivery of siRNA to the 
+mouse brain by systemic injection of targeted exosomes. Nat. Biotechnol. 29, 341–345 (2011).
+	45.	 Y. Tian, S. Li, J. Song, T. Ji, M. Zhu, G. J. Anderson, J. Wei, G. Nie, A doxorubicin delivery 
+platform using engineered natural membrane vesicle exosomes for targeted tumor 
+therapy. Biomaterials 35, 2383–2390 (2014).
+	46.	 Y. Liang, X. Xu, X. Li, J. Xiong, B. Li, L. Duan, D. Wang, J. Xia, Chondrocyte-­targeted 
+microRNA delivery by engineered exosomes toward a cell-­free osteoarthritis therapy. ACS 
+Appl. Mater. Interfaces 12, 36938–36947 (2020).
+	47.	 Q. Longa, D. Upadhya, B. Hattiangady, D. K. Kim, S. Y. An, B. Shuai, D. J. Prockop,  
+A. K. Shetty, Intranasal MSC-­derived A1-­exosomes ease inflammation, and prevent 
+abnormal neurogenesis and memory dysfunction after status epilepticus. Proc. Natl. 
+Acad. Sci. U.S.A. 114, E3536–E3545 (2017).
+	48.	 H. Peng, Y. Li, W. Ji, R. Zhao, Z. Lu, J. Shen, Y. Wu, J. Wang, Q. Hao, J. Wang, W. Wang, J. Yang, 
+X. Zhang, Intranasal administration of self-­oriented nanocarriers based on therapeutic 
+exosomes for synergistic treatment of Parkinson’s disease. ACS Nano 16, 869–884 (2022).
+	49.	 J. A. Welsh, D. C. I. Goberdhan, L. O’Driscoll, E. I. Buzás, C. Blenkiron, B. Bussolati, H. Cai,  
+D. Di Vizio, T. A. P. Driedonks, U. Erdbrügger, J. M. Falcón-­Pérez, Q. Fu, A. F. Hill, M. Lenassi, 
+S. K. Lim, M. G. Mahoney, S. Mohanty, A. Möller, R. Nieuwland, T. Ochiya, S. Sahoo,  
+A. C. Torrecilhas, L. Zheng, A. Zijlstra, S. Abuelreich, R. Bagabas, P. Bergese, E. Bridges,  
+M. Brucale, D. Burger, R. P. Carney, E. Cocucci, F. Colombo, R. Crescitelli, E. Hanser,  
+A. L. Harris, N. J. Haughey, A. Hendrix, A. R. Ivanov, T. Jovanovic-­Talisman,  
+N. A. Kruh-­Garcia, V. K. Faustino, D. Kyburz, C. Lässer, K. M. Lennon, J. Lötvall, A. L. Maddox, 
+E. S. Martens-­Uzunova, R. R. Mizenko, L. A. Newman, A. Ridolfi, E. Rohde, T. Rojalin,  
+A. Rowland, A. Saftics, U. S. Sandau, J. A. Saugstad, F. Shekari, S. Swift, D. Ter-­Ovanesyan,  
+J. P. Tosar, Z. Useckaite, F. Valle, Z. Varga, E. Van Der Pol, M. J. C. Van Herwijnen,  
+M. H. M. Wauben, A. M. Wehman, S. H. Williams, A. Zendrini, A. J. Zimmerman, M. Consortium, 
+C. Théry, K. W. Witwer, Minimal information for studies of extracellular vesicles 
+(MISEV2023): From basic to advanced approaches. J. Extracell. Vesicles 13, e12404  
+(2024).
+	50.	 K. S. Lee, J. Lee, H. K. Kim, S. H. Yeom, C. H. Woo, Y. J. Jung, Y. E. Yun, S. Y. Park, J. Han, E. Kim, 
+J. H. Sul, J. M. Jung, J. H. Park, J. S. Choi, Y. W. Cho, D. G. Jo, Extracellular vesicles from 
+adipose tissue-­derived stem cells alleviate osteoporosis through osteoprotegerin and 
+miR-­21-­5p. J. Extracell. Vesicles 10, e12152 (2021).
+	51.	 C. H. Woo, H. K. Kim, G. Y. Jung, Y. J. Jung, K. S. Lee, Y. E. Yun, J. Han, J. Lee, W. S. Kim,  
+J. S. Choi, S. Yang, J. H. Park, D. G. Jo, Y. W. Cho, Small extracellular vesicles from human 
+adipose-­derived stem cells attenuate cartilage degeneration. J. Extracell. Vesicles 9, 
+1735249 (2020).
+	52.	 Y. J. Jung, H. K. Kim, Y. Cho, J. S. Choi, C. H. Woo, K. S. Lee, J. H. Sul, C. M. Lee, J. Han,  
+J. H. Park, D. G. Jo, Y. W. Cho, Cell reprogramming using extracellular vesicles from 
+differentiating stem cells into white/beige adipocytes. Sci. Adv. 6, eaay6721 (2020).
+	53.	 J. Han, H. Park, C. Maharana, A. R. Gwon, J. Park, S. H. Baek, H. G. Bae, Y. Cho, H. K. Kim,  
+J. H. Sul, J. Lee, E. Kim, J. Kim, Y. Cho, S. Park, L. F. Palomera, T. V. Arumugam, M. P. Mattson, 
+D. G. Jo, Alzheimer’s disease-­causing presenilin-­1 mutations have deleterious effects on 
+mitochondrial function. Theranostics 11, 8855–8873 (2021).
+	54.	 G. Hu, K. Liao, F. Niu, L. Yang, B. W. Dallon, S. Callen, C. Tian, J. Shu, J. Cui, Z. Sun,  
+Y. L. Lyubchenko, M. Ka, X. M. Chen, S. Buch, Astrocyte EV-­induced lincRNA-­Cox2 
+regulates microglial phagocytosis: Implications for morphine-­mediated 
+neurodegeneration. Mol. Ther. Nucleic Acids 13, 450–463 (2018).
+	55.	 M. Leger, A. Quiedeville, V. Bouet, B. Haelewyn, M. Boulouard, P. Schumann-­Bard, T. Freret, 
+Object recognition test in mice. Nat. Protoc. 8, 2531–2537 (2013).
+	56.	 N. de Bruin, B. Pouzet, Beneficial effects of galantamine on performance in the object 
+recognition task in Swiss mice: Deficits induced by scopolamine and by prolonging the 
+retention interval. Pharmacol. Biochem. Behav. 85, 253–260 (2006).
+	57.	 G. Taglialatela, D. Hogan, W. R. Zhang, K. T. Dineley, Intermediate-­and long-­term 
+recognition memory deficits in Tg2576 mice are reversed with acute calcineurin 
+inhibition. Behav. Brain Res. 200, 95–99 (2009).
+	58.	 S. H. Baek, S. J. Park, J. I. Jeong, S. H. Kim, J. Han, J. W. Kyung, S. H. Baik, Y. Choi, B. Y. Choi,  
+J. S. Park, G. Bahn, J. H. Shin, D. S. Jo, J. Y. Lee, C. G. Jang, T. V. Arumugam, J. Kim, J. W. Han, 
+J. Y. Koh, D. H. Cho, D. G. Jo, Inhibition of Drp1 ameliorates synaptic depression, Aβ 
+deposition, and cognitive impairment in an Alzheimer’s disease model. J. Neurosci. 37, 
+5099–5110 (2017).
+	59.	 A. O’Brien, T. L. Bailey, GT-­Scan: Identifying unique genomic targets. Bioinformatics 30, 
+2673–2675 (2014).
+	60.	 N. E. Sanjana, O. Shalem, F. Zhang, Improved vectors and genome-­wide libraries for 
+CRISPR screening. Nat. Methods 11, 783–784 (2014).
+Acknowledgments: We thank all members of the Ageomics lab. We thank K. W. Kim for 
+providing Ai9 mice. Mouse cartoons were created with BioRender (agreement number: 
+GB25ANHMSY). All other illustrations and figures were created and designed by J.H. Funding: 
+This study was supported by the National Research Foundation of Korea [NRF-­
+2019R1A5A2027340 (to D.-­G.J.), RS-­2024-­00399237 (to D.-­G.J.), RS-­2024-­00345742 (to D.-­G.J.), 
+and NRF-­2022R1A6A3A01087307 (to J.H.)].  Author contributions: D.-­G.J. and J.H. conceived 
+and designed the research. D.-­G.J., J.H.P., Y.W.C., and J.H. wrote the manuscript. J.H. performed 
+most of the experiments in this study and prepared the figures. J.H. and J.H.S. performed 
+in vivo gene recombination experiments. J.H., J. Lee, E.K., J.K., M.C., C.K., and J. Lim performed 
+in vivo epigenome editing experiments. D.-­G.J., J.H.P., Y.W.C., J.H., H.K.K., J.-­S.K, and Y.C. 
+analyzed data. Competing interests: D.-­G.J., J.H.P., and Y.W.C. are stockholders of ExoStemTech 
+Inc. D.-­G.J., J.H., and J.H.S. have filed patent applications on MAPLEX and related technologies 
+(international application number: PCT/KR2021/001634, title: Exosome comprising 
+photocleavable protein, and use thereof). The other authors declare that they have no 
+competing interests. Data and materials availability: All data associated with this study are 
+present in the paper or the Supplementary Materials. Plasmids used in this study are available 
+to academic researchers under a material transfer agreement with Sungkyunkwan University 
+by contacting D.-­G.J.
+Submitted 28 April 2023 
+Resubmitted 24 January 2024 
+Accepted 18 July 2024 
+Published 7 August 2024 
+10.1126/scitranslmed.adi4830
+Downloaded from https://www.science.org at Fudan University on March 22, 2026
+
+Engineered exosomes with a photoinducible protein delivery system enable
+CRISPR-Cas–based epigenome editing in Alzheimer’s disease
+Jihoon Han, Jae Hoon Sul, Jeongmi Lee, Eunae Kim, Hark Kyun Kim, Minshik Chae, Jeein Lim, Jongho Kim, Chanhee
+Kim, Jun-Sik Kim, Yoonsuk Cho, Jae Hyung Park, Yong Woo Cho, and Dong-Gyu Jo
+Sci. Transl. Med. 16 (759), eadi4830.  DOI: 10.1126/scitranslmed.adi4830
+Editor’s summary
+Many diseases could potentially be treated with protein-based therapeutics, but an inability to deliver proteins
+across cell membranes limits their development. Here, Han et al. engineered an exosome-based delivery system
+called MAPLEX, where cargo proteins are fused with the photocleavable protein mMaple3, which is then fused to
+an exosomal marker protein. The fusion product is overexpressed in cells in vitro and accumulates in exosomes,
+which are then purified and exposed to 405-nm light, cleaving mMaple3 and releasing the cargo protein into the
+intraexosomal space. Intranasal administration of MAPLEXs carrying a dCas9 ribonucleoprotein complex reduced
+A# by epigenetic editing of the Bace1 promoter in cortical neurons of two mouse models of Alzheimer’s disease,
+highlighting the potential of the MAPLEX system for delivery of therapeutic proteins. —Melissa L. Norton
+View the article online
+https://www.science.org/doi/10.1126/scitranslmed.adi4830
+Permissions
+https://www.science.org/help/reprints-and-permissions
+Use of this article is subject to the Terms of service
+Science Translational Medicine (ISSN 1946-6242) is published by the American Association for the Advancement of Science. 1200 New
+York Avenue NW, Washington, DC 20005. The title Science Translational Medicine is a registered trademark of AAAS. 
+Copyright © 2024 The Authors, some rights reserved; exclusive licensee American Association for the Advancement of Science. No claim
+to original U.S. Government Works
+Downloaded from https://www.science.org at Fudan University on March 22, 2026

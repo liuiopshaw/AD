@@ -1,0 +1,980 @@
+Spin-mediated and proton-coupled electron transfer boost NADH 
+oxidase-like activity of dual-atom metallozymes
+Jiarong Li a,b,1, Yonghui Li b,1, Zhen Wan a,c, Hongyang Li b, Haitao Dai b, Changlong Liu b,*,  
+Xiaoyu Mu a,b,**, Xiao-Dong Zhang a,b,**
+a Tianjin Key Laboratory of Brain Science and Neural Engineering, Academy of Medical Engineering and Translational Medicine, Tianjin University, Tianjin 300072, 
+China
+b Department of Physics and Tianjin Key Laboratory of Low Dimensional Materials Physics and Preparing Technology, School of Sciences, Tianjin University, Tianjin 
+300350, China
+c Haihe Hospital, Tianjin University, Tianjin 300350, China
+A R T I C L E  I N F O
+Keywords:
+Dual atom metallozymes
+NADH oxidase-like activity
+A B S T R A C T
+Nicotinamide adenine dinucleotide (NAD+) as a pivotal coenzyme plays a central role in the pathogenesis of 
+various inflammatory diseases. However, both natural and artificial NADH oxidase (NOX) systems exhibit limited 
+efficacy in NAD+ regeneration. Here, we developed a RuCo heterogeneous dual atom metallozymes (DAMs) with 
+over-natural NOX activity through spin-mediated and proton-coupled electron transfer (PCET). Under simulated 
+inflammatory microenvironment, DAMs exhibited a catalytic efficiency (Kcat/Km) of 0.99 μM−1min−1, surpassing 
+reported artificial enzymes by ~9–99 times. Additionally, its quantitative NOX activity reached 2139 U/mg, 
+about 6–18 times that of common microbial enzymes. The experimental and computational studies revealed that 
+Co not only modulated the spin state of Ru from low-spin to middle-spin, but also its electrophilic microenvi­
+ronment facilitated oxygen adsorption to further modulate electronic behavior of Ru with high-spin. Thus, Ru- 
+Co-O as high active sites preferred to trap electron and proton from NADH and acidic conditions via a PECT 
+mechanism. In a skin injury model, DAMs alleviated inflammation and promoted skin regeneration by restoring 
+the NAD+/NADH ratio, enhancing energy metabolism, and driving macrophage anti-inflammatory polarization. 
+Notably, no relapse was observed within 20 days post-treatment, highlighting the long-lasting therapeutic impact 
+of DAMs.
+1. Introduction
+Nicotinamide adenine dinucleotide (NAD+) serves as an essential 
+coenzyme within living organisms, and the lack of NAD+ is closely 
+associated with the pathogenesis and progression of various major 
+human diseases, including neurodegenerative disorders, metabolic 
+syndrome, atherosclerosis, and autoimmune diseases [1–4]. Natural 
+NADH oxidase (NOX) and hemoglobin demonstrate significant catalytic 
+potential in the NAD+ regeneration pathways [5]. Currently, the pri­
+mary source of these natural enzymes relies on extraction from specific 
+bacteria (e.g., Lactobacillus, Streptococcus, Enterococcus spp.) [6]. How­
+ever, the extraction process is not only complex and expensive but also 
+the obtained natural enzymes with inherent drawbacks such as poor 
+stability and difficulties in long-term storage [7,8]. In contrast, artificial 
+enzymes with tunable catalytic activity, functional diversity, high sta­
+bility, ease of storage, and lower production costs are expected to 
+become a powerful alternative to natural NOX, offering new viable 
+pathways for NAD+ regeneration and related disease treatments [7, 
+9–13].
+Although significant progress has been made in the development of 
+artificial nanozymes with NOX-like catalytic activity, their catalytic ef­
+ficiency still requires further improvement. In nature, nonheme iron 
+metalloenzymes use dioxygen to generate high-spin Fe(IV)=O inter­
+mediate for high catalytic performance, such as the ubiquitous 
+* Corresponding author.
+** Corresponding authors at. Tianjin Key Laboratory of Brain Science and Neural Engineering, Academy of Medical Engineering and Translational Medicine, 
+Tianjin University, Tianjin 300072, China.
+E-mail addresses: liuchanglong@tju.edu.cn (C. Liu), muxiaoyu@tju.edu.cn (X. Mu), xiaodongzhang@tju.edu.cn (X.-D. Zhang). 
+1 These authors have contributed equally.
+Contents lists available at ScienceDirect
+Nano Today
+journal homepage: www.elsevier.com/locate/nanotoday
+https://doi.org/10.1016/j.nantod.2026.102996
+Received 23 November 2025; Received in revised form 7 January 2026; Accepted 24 January 2026  
+Nano Today 68 (2026) 102996 
+Available online 3 February 2026 
+1748-0132/© 2026 Elsevier Ltd. All rights are reserved, including those for text and data mining, AI training, and similar technologies. 
+
+α-ketoglutarate-dependent dioxygenases. Biologically inspired, Hou 
+et al. developed a metal-organic framework with reactive high-spin iron 
+(IV)-oxo sites through dioxygen activation for catalytic oxygenation 
+[14]. Yang et al. modulated the spin state of Fe sites from low-spin (t2g
+5 eg
+0) 
+to intermediate-spin (t2g
+4 eg
+1) through Mn doping to facilitate oxygen 
+reduction [15].These studies demonstrate that spin-state modulation by 
+coordinate environment manipulation serves as a powerful strategy for 
+enhancing enzyme-like catalytic efficiency [16–19]. Simultaneously, 
+proton-coupled electron transfer (PCET) is a critical mechanism in 
+natural oxidoreductases systems that significantly enhances the bio­
+catalytic performance [20–22]. Especially, transition metal complexes 
+(M-Nx) have shown specific proton reactivities and PCET patterns ac­
+cording to their coordination environments [23,24]. Spin interactions 
+within transition metal complexes occurring during electron transfer 
+can dramatically affect the PCET pathway [25–28]. Therefore, a thor­
+ough understanding and controlling of spin-mediation and PECT 
+pathway in artificial metallozymes is a key focus in the field of the 
+biocatalyst development.
+Fig. 1. (a) Schematic illustration of the structural and spin-State disparities between DAMs and SAMs. (b). Schematic illustration of the combined effects of Co 
+doping and O2, H2O2, and H+ on the spin characteristics and activity of DAMs.
+J. Li et al.                                                                                                                                                                                                                                         
+Nano Today 68 (2026) 102996 
+2 
+
+In this work, we developed a RuCo heterogeneous dual-atom met­
+allozyme (DAMs) that achieved NOX-like activity surpassing natural 
+enzymes via the synergistic interplay of spin manipulation and the PCET 
+mechanism (Fig. 1a). Under simulated inflammatory microenvironment 
+conditions, DAMs demonstrated a catalytic efficiency (Kcat/Km) of 
+0.99 μM−1⋅min−1, with a quantified NOX activity reaching 2139 U/mg, 
+substantially exceeding those of reported artificial enzymes and 
+commonly used microbial enzymes. Superconducting quantum inter­
+ference device (SQUID) results and density functional theory (DFT) 
+calculations revealed that the incorporation of Co not only promoted a 
+spin-state transition of Ru from low-spin to middle-spin but also opti­
+mized the high-spin electronic behavior of Ru by modulating its elec­
+trophilic microenvironment to facilitate O2 adsorption. The Ru-Co-O 
+served as a highly active site that efficiently captured electrons and 
+protons from NADH under acidic conditions through a PCET mecha­
+nism, leading to efficient NAD+ regeneration (Fig. 1b). In vivo 
+experiments further demonstrated that DAMs promoted tissue repair by 
+restoring the NAD+/NADH ratio, improving energy metabolism, and 
+driving macrophage anti-inflammatory polarization, with sustained 
+therapeutic effects and no observed recurrence. This work pioneers the 
+integration of spin-state regulation and the PCET mechanism into the 
+design of artificial enzymes, offering a new strategy for developing 
+highly efficient bioinspired catalytic systems.
+2. Results
+2.1. Structural characterization of DAMs
+The fabrication of DAMs was achieved through a two-stage process 
+involving hydrothermal synthesis followed by pyrolysis. Transmission 
+electron microscopy (TEM) imaging revealed that these materials 
+possessed an amorphous, flake-like morphology (Figure S1), with N, Ru, 
+Fig. 2. Structural characterization of DAMs. (a) AC-STEM images of DAMs. (b) Enlarged view of the red dashed box of (a) The red circular boxes circled in the images 
+showed the Ru-Co mated-atom structure. (c) Distance between Ru and Co atoms in structures. (d) Structural model, (e) Raman spectrum of DAMs. (f) Temperature- 
+dependent magnetization characterizations of DAMs. The temperature dependence inverse susceptibilities for SAMs (g) and DAMs (h). The red lines are the fitting 
+results by a Curie–Weiss law, inset are the spin configuration diagrams of Ru3+ and Ru4+. (i) The number of unpaired d electrons (n) of SAMs and DAMs.
+J. Li et al.                                                                                                                                                                                                                                         
+Nano Today 68 (2026) 102996 
+3 
+
+and Co elements homogeneously dispersed throughout the graphite-like 
+layered structure (Figure S2). Utilizing Aberration-corrected high-angle 
+annular dark-field scanning transmission electron microscopy (AC- 
+HAADF-STEM) technology, it was discerned that within DAMs, Ru and 
+Co atoms (appearing as white bright spots) were uniformly dispersed 
+across the nitrogen-enriched carbon matrix, with no nanoparticles or 
+clusters present, only a dense distribution of individual atoms (Fig. 2a). 
+A detailed examination of the enlarged images indicated a propensity for 
+Ru and Co atoms to co-locate in pairs, as delineated within the red-boxed 
+region of Fig. 2b. Further analysis of the brightness distribution across 
+the Ru-Co diatomic configuration unveiled notable disparities between 
+two peaks (Fig. 2c), which not only substantiated the effective doping of 
+these atomic species but also suggested an interatomic distance of 
+0.23 nm between Ru and Co. This distance was shorter than the sum 
+radii of the two atoms, potentially leading to a modification of the 
+electronic structure, the creation of new active sites, and a consequent 
+enhancement in catalytic efficacy. X-ray diffraction (XRD) analysis of 
+DAMs identified two distinct peaks near 25◦and 44◦, as illustrated in 
+Figure S3, corresponding to the (002) and (010) crystallographic planes 
+of graphite carbon. No aggregation of metal atoms or metal oxide ag­
+gregates was observed, indicating an excellent dispersion of Ru and Co 
+atoms, corroborating the findings from AC-HAADF-STEM analysis. 
+Raman spectroscopy of DAMs confirmed its layered structure with a 
+peak at 2790 cm−1 (2D band), supporting TEM results. The ID/IG ratio 
+calculated from the D (1345 cm−1) and G (1586 cm−1) bands was 1.075 
+for DAMs, which was higher than the value of 1.05 measured for the 
+SAMs (Fig. 2e and Figure S4). The higher ID/IG ratios suggested more 
+surface defects in DAMs, which was beneficial for catalytic activity due 
+to the increased active sites. Based on the above analysis, the structural 
+diagram of DAMs was drawn (Fig. 2d).
+The X-ray photoelectron spectroscopy (XPS) measurement spectra 
+affirmed the presence of C, N, Ru and Co, matching with the TEM results 
+(Figure S5). The deconvolution of the Ru 3d XPS spectrum of DAMs 
+exposed characteristic peaks for C-C, C-N, and O-C––O bonds 
+(Figure S6a). The binding energies of Ru and Co suggested the concur­
+rent presence of Ru3+, Ru4+, Co2+ and Co3+ oxidation states (Figure S6b- 
+c) [29–32]. Compared to SAMs, we found that the binding energies of Ru 
+were shifted towards lower binding energies in DAMs, indicating elec­
+tron transfer from Co to Ru (Figure S6c). The above results demonstrated 
+a strong interaction between Ru and Co atoms, which further confirmed 
+the formation of Ru-Co mated-atom centers. Additionally, the N 1 s XPS 
+spectrum of DAMs displayed four peaks, corresponding to pyridinic N, 
+pyrrolic N, graphitic N and M-N (Figure S7) [33–35]. The content of M-N 
+implied that DAMs had a high metal atom loading capacity, potentially 
+conferring superior catalytic performance (Figure S8). To uncover the 
+electronic structure of DAMs, a temperature-dependent magnetization 
+(M-T) test was performed over a temperature range of 2 K to 300 K 
+under an applied field of 500 Oe (Fig. 2f and Figure S9). The Curie 
+constant C was determined by applying the Curie-Weiss law, χ = C/(T - 
+θ), to the linear segments of the data above 150 K in Fig. 2g and h, where 
+C represented the Curie constant and θ denoted the Curie-Weiss tem­
+perature. Utilizing the relationship the effective magnetic moments 
+(μeff) for DAMs and SAMs, were calculated to be 4.33 μB and 2.77 μB, 
+respectively [15, 36–39]. From these calculations, it can be deduced that 
+the optimized DAMs possess 3.44 unpaired d electrons, a number 
+notably higher than the 1.94 found in SAMs (Fig. 2i). This difference 
+suggested that the introduction of Co atoms had a significant impact on 
+controlling the electronic structure of these materials. Furthermore, 
+these findings supported the inference the electron configuration of the 
+d orbitals in both DAMs and SAMs (Fig. 2g-h and Figure S10). A higher 
+count of unpaired electrons implied a greater facility for electron 
+transfer between active sites and substrates, which in turn hastens the 
+catalytic process. Therefore, DAMs featured atomically paired Ru-Co 
+centers in a defect-rich graphite carbon lattice, where the enhanced 
+spin-state and electronic interactions synergistically conferred superior 
+catalytic performance.
+2.2. Evaluation of catalytic activities of DAMs
+NOX, a pivotal oxidoreductase, played a crucial role in the metabolic 
+processes of organisms. When it comes to the oxidation of NADH, DAMs 
+outperformed SAMs in catalytic efficiency (Fig. 3a). This led to a decline 
+in the absorption peak at 340 nm (Fig. 3b). The NOX-like activity 
+demonstrated a concentration-dependent pattern. Specifically, as the 
+concentration of DAMs rose, the amount of NADH oxidized per unit time 
+increases (Figure S11). Nonheme iron enzymes in nature use dioxygen to 
+generate high-spin iron(IV)=O species for oxygenation reactions [14]. 
+Zhang et al. showed that bilateral adsorption of oxygen atoms lowers the 
+reaction energy barrier [40]. Thus, dioxygen adsorption promoted 
+high-spin species formation and enhanced biocatalysis. The PCET 
+mechanism was pivotal in the catalytic activity of NADH oxidase, as it 
+concurrently transfers e- and H+, markedly lowering the activation en­
+ergy and enhancing both selectivity and catalytic efficiency [41]. 
+Consequently, O2, H2O2, and H+, acting as the enhancement factor of 
+NOX, can efficiently promote the oxidation of NADH.
+In the experiment, when O2, H2O2, and H+ were added sequentially, 
+the NOX-like activity of DAMs increased remarkably (Fig. 3c). The 
+experimental outcomes clearly demonstrated that as the environmental 
+acidity intensifies, the activity of NOX became more robust (Fig. 3d). 
+Moreover, under the pH conditions characteristic of both normal and 
+inflamed skin, this activity remained relatively high and stable. Pre­
+sumably, this was due to the synergistic effect between the high-spin 
+characteristics of DAMs and the enhancement factor, which acceler­
+ated electron transfer. Kinetic analysis revealed that in the simulated 
+acidic environment of eczema-affected skin, the Km value and Kcat/Km of 
+DAMs for NADH was 27.74 μM and 0.99 μM−1⋅min−1, respectively 
+(Fig. 3e). This value was lower than that of other reported nanozymes 
+(Table S1), suggesting that DAMs had a strong affinity for NADH in this 
+particular environment [42–51]. DAMs maintained stable activity over 
+7 cycles of catalysis (Fig. 3f). Through quantitative analysis, it was 
+evident that with the aid of the enhancement factor, DAMs achieved a 
+NOX-like activity of up to 2139 U/mg, which was 6–18 times higher 
+than that of common organisms (Fig. 3g and Table S2) [6, 52–58]. DAMs 
+exerted a significant catalytic effect on the oxidation of NADH, rather 
+than displaying NADH dehydrogenase-like (NDH-like) activity (Fig. 3h). 
+Meanwhile, it had a negligible impact on the oxidation of NADPH, 
+highlighting its selective catalytic properties (Fig. 3i). Although natural 
+NOX generate H2O2 or O2
+•⁻ as a byproduct during NADH oxidation, the 
+products of artificial DAMs here are H2O rather than ROS. This may be 
+attributed to the fact that DAMs also possess SOD-like and CAT-like 
+activity (Figure S12-13), which can facilitate a cascade reaction to 
+convert ROS into H2O and O2. Furthermore, these O2 byproduct assists 
+in the enhancement of spin-regulated NOX-like activity of artificial 
+DAMs. Thus, through the coupling of spin manipulation with the PCET 
+mechanism, the synergy between diatomic sites and enhancement fac­
+tors increased unpaired electrons and enhanced the catalytic rate, 
+leading to remarkable NOX-like activity.
+2.3. Analysis of electronic behavior and spin
+To explore the catalytic performance, the structural and electron 
+structural behaviors of the SAMs was explored with density functional 
+theory (DFT) (Fig. 4a-d). As shown in Fig. 4a the catalytic potential of 
+the SAMs was facilitated by the exposure of the Ru atom on the surface. 
+The associated Electron Localization Function (ELF) image (Fig. 4b) 
+revealed that the interaction between Ru and N atoms lies between 
+covalent and ionic since the neighboring N atoms cannot fully seize 
+electrons from the Ru atom. The formation process of Ru-N4 structure 
+indicated by Charge density difference (CDD) plot displayed in Fig. 4c 
+depicted that the electrons of Ru partially transferred to the neighboring 
+N atoms. Indicated by the Fukui function in Fig. 4d the nucleophilicity 
+was perpendicular to the molecular plane and the electrophilicity was in 
+the plane. This electrophilicity was conducive to the adsorption of other 
+J. Li et al.                                                                                                                                                                                                                                         
+Nano Today 68 (2026) 102996 
+4 
+
+reaction molecules, especially cations. By comparing the side-view 
+structures of SAM (Fig. 4a) and DAM (Fig. 4e), it was evident that the 
+incorporation of Co flattened the DAMs architecture, indicating that Co 
+effectively modulated the internal strain. This strain regulation not only 
+tuned the exposure of active sites but also induced structural defects, 
+thereby significantly influencing catalytic performance [59]. Compared 
+with Fig. 4b where the Ru-N bond lay between covalent and ionic, the 
+ELF color plot (Fig. 4 f) indicated that by the impact of the Co atom, the 
+Ru-N interaction shifted toward ionic, leaving a more pronounced po­
+larization. In addition, the Co-N interaction demonstrated a similar 
+pattern as the Ru-N interaction but with more polarization. As shown in 
+the CDD plot in Fig. 4g both Co and Ru atoms showed major electron 
+deficiency as their electrons transferred to neighboring N atoms (blue 
+blobs around the two neighboring N atoms). There was also electron 
+sufficiency on the Ru atom in the direction perpendicular to the plane 
+(blue blobs on top of the Ru atom). Fig. 4h suggested the major 
+electrophilicity and nucleophilicity distribution in the out-plane and 
+in-plane directions respectively. Compared with Fig. 4a-d, the Co atom 
+reduced the structural significance of the Ru atom by removing the 
+curvature of the catalyst plane. On the other hand, the Co centers in 
+DAMs exhibited distinct electrophilicity. Once oxygen was admitted, 
+they formed bonds preferentially; the electronic behavior around the Ru 
+atom was activated by the Co atom (bond, polarization and electro­
+philicity shifts). By the elemental/orbital projection of the density of 
+states (DOS) plots, the d-orbital of Ru made the most contribution to the 
+surface adhesion (Fig. 4i). As the total d-band controls the surface 
+adhesion, the Co atom displayed a deeper d-peak in the DOS which 
+contributed less adhesive power than that of the Ru atom. Thus, the final 
+control of the catalytic procedure depended on the Ru atom which was 
+cooperated by the Co atom. The Co atom also extended the total d-band 
+and shift the d-band center to the lower energy side. Such down-shifted 
+d-band can provide more flexibility in the catalytic procedure and 
+Fig. 3. Evaluation of NOX activities of DAMs. (a) Schematic representation of enzyme-like activities of DAMs. (b) NOX-like activity of SAMs and DAMs. (c) Time- 
+dependent absorbance changes of NADH with or without DAMs, O2, H2O2 and H+. (d) Changes of NOX activity in different pH environments. (e) Michaelis–Menten 
+curve for NADH catalysis by DAMs. (f) DAMs simulated NOX cycle stability curve. (g) Quantification of specific NOX-like activity (n = 5 independent experiments; 
+boxes represent the median and IQR and the upper and lower whiskers extending to the values that are within 1.5 × IQR). (h) Comparison of NOX-like and NDH-like 
+activities of DAMs. (i) Time-dependent absorbance changes of NADPH of DAMs and H2O2. Data are presented as means ± SD.
+J. Li et al.                                                                                                                                                                                                                                         
+Nano Today 68 (2026) 102996 
+5 
+
+allowing detachment of molecules/ions. In addition to the investigation 
+of electron structural features, the spin behavior of DAMs was system­
+atically explored as shown in Fig. 4j. By the comparison among relaxed 
+geometry structures of different spins up to 7/2, the common spin of 
+DAMs can be 1/2 or 3/2 with a negligible energy difference about 
+0.002 eV by the DFT simulation. Combined with the results of Fig. 2i, it 
+was considered that the number of unpaired electrons of DAMs is 3. Such 
+results indicated the spin flexibility to accommodate different catalytic 
+procedures. As indicated by the associated spin density plots (intersects 
+in Fig. 4j), the spin flexibility was mainly located on the Ru atom where 
+the spin can be flipped without extra energy cost. Therefore, experi­
+mental and computational studies confirmed that Co modulated the spin 
+state of Ru and established an oxygen-adsorbing electrophilic microen­
+vironment, forming Ru-Co-O sites that effectively trapped electrons and 
+protons from NADH through PCET under acidic conditions.
+2.4. Evaluation of tissue repair and metabolic regulation
+To assess the antioxidant capabilities and biological safety of DAMs, 
+in vitro tests were carried out (Figure S14) [60,61]. The outcomes from 
+fluorescent staining revealed that DAMs were capable of efficiently 
+eliminating O2
+•−and LPS from cellular interiors, thereby evidencing the 
+potential of DAMs to mitigate the harm induced by oxidative stress 
+within living organisms. In addition, assessments across a concentration 
+spectrum from 0 to 25 ng/µL indicated an absence of pronounced 
+cytotoxic effected associated with DAMs. To explore the potential 
+therapeutic applications of DAMs, which exhibited enhanced NOX-like 
+activity, DAMs were administered in a murine model of eczema, using 
+the clinical standard tacrolimus (Tac) as a benchmark. Figure S15
+illustrated that DAMs significantly hastened the healing of eczema. By 
+the tenth day of treatment, symptoms such as swelling and crusting at 
+the lesion sites were nearly absent, with recovery outcomes exceeding 
+those observed with Tac, RuFe and RuMn. While the exact causes of 
+eczema remain unclear, it was widely accepted that inflammation plays 
+a pivotal role. To further understand the regulatory impacts of treatment 
+groups, CD31 immunohistochemistry (IHC) was conducted. Fig. 5a and 
+Fig. 5c showed a notable increase in vascular area within the lesioned 
+regions, indicative of substantial immune cell infiltration during 
+inflammation. Interestingly, in the DAMs-treated group, this vascular 
+expansion was notably reduced, suggesting a potent anti-inflammatory 
+effect of DAMs on the lesion areas. In contrast to the control, H&E 
+staining of the Eczema group clearly revealed inflammatory cell infil­
+tration and epidermal necrosis, reinforcing the link between eczema and 
+inflammatory processes (Fig. 5b and Fig. 5d-e). Following DAMs treat­
+ment, there was a significant reduction in inflammation, coupled with a 
+notable recovery of hair follicles and sweat glands, underscoring the 
+efficacy of DAMs in mitigating inflammation. In an effort to understand 
+how DAMs modulated eczema at the molecular level, the expression of 
+key inflammatory markers in mice was examined. The findings indicated 
+that DAMs robustly increased the expression of the anti-inflammatory 
+cytokine IL-10, while concurrently suppressing the synthesis of 
+pro-inflammatory mediators like LTC4, LTB4, CysLTR1, and CysLTR2 
+Fig. 4. DFT simulation of SAMs and DAMs. Side view of (a) SAMs and (e) DAMs. ELF of (b) SAMs and (f) DAMs. CDD of (c) SAMs and (d) DAMs. Fukui function of 
+simulated (d) SAMs and (h) DAMs. (i) The DOS of DAMs represented by its orbital projection and elemental d-orbitals projection. Spin-energy plots of DAMs (j). In the 
+ELF plots, the ELF≥0.8 surface corresponds to yellow-red colors which indicate bonding properties. In the CDD plots, blue and green represent the electron suf­
+ficiency and deficiency respectively. In the Fukui function plots, blue and red represent the electrophilicity and the nucleophilicity parts respectively. In the spin 
+density plots, green and purple represent the spin-up and the spin-down components respectively.
+J. Li et al.                                                                                                                                                                                                                                         
+Nano Today 68 (2026) 102996 
+6 
+
+Fig. 5. The process of DAMs treatment for eczema. (a) IHC staining images of CD31. (b) H&E staining images. (c) The corresponding quantitative analysis of H&E 
+staining. (d) Inflammatory area and (e) Depth of necrosis in the H&E staining (n = 3 per group). Quantitative ELISA assays of (f) IL-10, (g) LTC4, (h) LTB4, (i) 
+CysLTR1, and (j) CysLTR2 (n = 5 per group). Asterisks indicate significant differences (*P < 0.05, **P < 0.01, ***P < 0.001) versus with the eczema group, which 
+were analyzed by one-way analysis of variance (ANOVA) with the Tukey test.
+J. Li et al.                                                                                                                                                                                                                                         
+Nano Today 68 (2026) 102996 
+7 
+
+(Fig. 5f-j). This dual reaction reduced inflammation and aided in the 
+resolution of eczema. These results offered compelling evidence for the 
+prospective use of DAMs in eczema therapy, highlighting its potential to 
+modulate inflammatory pathways. The results demonstrated that DAMs 
+effectively suppressed inflammation and promoted tissue repair in 
+eczema through dual regulation of the inflammatory mediators.
+In DNCB-induced eczema mice, lesions accumulated excessive 
+NADH, leading to "reductive stress" and increased ROS production, 
+which intensified oxidative stress and upset metabolic balance. It was 
+explored how DAMs affect metabolic substances in these mice. DAMs 
+oxidized NADH to NAD+ without impacting NADP+ or NADPH, and 
+GSH/GSSG normalized (Fig. 6a). MDA and SOD levels matched the 
+control group, showing effective mitigation of oxidative damage 
+(Fig. 6b-c). With DAMs intervention, increased SOD expression aided in 
+converting O2
+•−to H2O2 and O2. The acidic skin environment supplied 
+H+, these three substances promoted the NOX-like activity of DAMs, 
+indicating the adaptability of DAMs to the eczema microenvironment. 
+DAMs could influence immunomodulatory effects by regulating meta­
+bolism, boosting IL-10 expression and reducing macrophage counts 
+(Figure S16), while shifting macrophages from a pro-inflammatory M1 
+to an anti-inflammatory M2 phenotype (Fig. 6d-h and Figure S17). It was 
+speculated that the facilitation of DAM in eczema recovery stems from 
+Fig. 6. Regulated metabolism of DAMs treatment for eczema. (a) NADH, NAD+, NAD+/NADH, NADP+/NADPH, GSH/GSSG, (b) MDA and (c) SOD in lesion tissues 
+after treatment (n = 5 per group). (d) IF staining of CD86, CD206 and (e,g) the corresponding quantitative analysis (n = 3 per group). Representative gating strategy 
+for analysis of (f) CD86 and (h) CD206 about flow cytometry. (j) Schematic diagram of DAMs regulated metabolism of eczema by assisting NAD+ regeneration. 
+Asterisks indicate significant differences (*P < 0.05, **P < 0.01, ***P < 0.001) versus with the eczema group, which were analyzed by one-way analysis of variance 
+(ANOVA) with the Tukey test.
+J. Li et al.                                                                                                                                                                                                                                         
+Nano Today 68 (2026) 102996 
+8 
+
+its superior NOX-like activity during microenvironment adaptation. This 
+activity oxidized excess tissue NADH, with the resultant NAD+ phos­
+phorylated to NADP+ by NAD kinase and reduced to NADPH via the 
+PI3K-AKT pathway. GSH levels rose and ROS levels fell in a glutathione 
+peroxidase (GPX4)-dependent manner, reducing lipid peroxidation and 
+polarizing M1 macrophages to anti-inflammatory M2 macrophages, ul­
+timately boosting the production of anti-inflammatory cytokines 
+(Fig. 6i). Therefore, DAMs facilitated eczema repair by restoring NAD+/ 
+NADH balance, enhancing energy metabolism, and promoting macro­
+phage anti-inflammatory polarization, which collectively alleviated 
+inflammation and promoted skin regeneration.
+To assess the safety of DAMs, extensive toxicity evaluations were 
+performed. The findings revealed that the body weight of DAMs-treated 
+mice remained comparable to that of both the Con group and the Tac 
+group (Figure S18), indicating that DAMs did not exert significant 
+adverse effects on the overall health of the mice. Additionally, ICP-MS 
+analysis demonstrated that DAMs predominantly accumulated in the 
+skin, with negligible distribution in other organs (Figure S19), sug­
+gesting minimal potential for organ-specific toxicity. Furthermore, 
+complete blood cell counts indicated that all hematological parameters 
+in the DAMs-treated group were well within the normal range 
+(Figure S20), reinforcing the conclusion that DAMs posed no significant 
+toxicity to the blood system (Figure S21). In the in vivo toxicity assess­
+ment, DAMs exhibited excellent safety, with no observable toxic re­
+actions. Notably, no recurrence of skin inflammation was detected in the 
+DAMs-treated group 20 days after treatment cessation (Figure S22), 
+implying that DAMs may offer a fundamental cure for eczema rather 
+than merely symptom providing relief.
+Overall, this work develops a groundbreaking strategy that syner­
+gistically integrated spin-state manipulation and the PCET mechanism 
+to dramatically boost the NOX-like activity of DAMs. Incorporating Co 
+shifted Ru to a medium-spin state, elevating the unpaired electron 
+density from 1.94 to 3.44 and creating a highly active Ru-Co-O center 
+under oxygen activation. This site facilitated efficient proton-electron 
+capture from NADH under acidic conditions, enabling the DAMs to 
+rapidly restore the NAD+/NADH ratio and ameliorate metabolic dysre­
+gulation in an eczema model. Spin moderation within artificial metal­
+lozymes occurring during electron transfer can dramatically affect the 
+PCET pathway to facilitate biocatalytic behavior and activity. By 
+emulating natural enzymatic pathways, this study sets a new paradigm 
+for advanced biocatalyst design, particularly for the regeneration of 
+NAD+, a crucial cofactor in living organisms.
+3. Conclusions
+In this study, we demonstrated the effective NOX-like activity of 
+RuCo heterogeneous DAMs surpassing that of natural enzymes through 
+spin-state manipulation and PCET mechanism. During the NOX-like 
+process, three co-enhancement factors, identified as O2, H2O2, and H+, 
+were discovered for the first time. Notably, DAMs achieved an unprec­
+edented catalytic efficiency (Kcat/Km) of 0.99 μM−1 min−1 and a quan­
+titative activity of 2139 U/mg, outperforming existing artificial enzymes 
+and microbial by 6–99 times. The experimental and DFT studies indi­
+cated high-spin and highly active Ru-Co-O center tended to be formed, 
+which was ascribed to an electrophilic microenvironment to facilitate 
+oxygen adsorption under Co incorporating. In vivo experiments revealed 
+that DAMs promoted long-term tissue repair via efficiently converting 
+accumulated NADH to NAD+, encouraging macrophage polarization 
+from pro-inflammatory M1 to anti-inflammatory M2 phenotypes, 
+inhibiting key pro-inflammatory mediators, and enhancing anti- 
+inflammatory cytokine IL-10 production. The therapeutic efficacy of 
+DAMs in reducing inflammation and repairing tissue surpassed that of 
+the clinical drug Tac, highlighting its potential in inflammatory disease 
+intervention.
+4. Materials and methods
+4.1. Materials preparation
+The fabrication of DAMs is a two-stage process, detailed as follows:
+In the first step, commence by synthesizing trinitropyrene from an 
+aqueous solution containing 4 g of pyrene and 320 mL of 70 % nitric 
+acid at a temperature of 95℃. Subsequently, dissolve 0.1 g of the syn­
+thesized trinitropyrene in 10 mL of a 2.5 % aqueous ammonia solution, 
+ensuring uniform dispersion through ultrasonication on ice. Transfer the 
+solution to a polytetrafluoroethylene-lined reactor and heat at 180℃ for 
+a duration of 10 h. Post-heating, distill the solution to reduce its volume 
+to 37.5 % of the initial, thereby purifying the precursor by removing 
+impurities and un-reacted small molecules through a 48-hour dialysis 
+process.
+In the second step, for the synthesis of DAMs, prepare an aqueous 
+solution containing 0.02 mmol CoCl2⋅6 H2O and 0.02 mmol of RuCl3. 
+Combine this solution with 30 mL of the purified precursor solution at a 
+concentration of 1 mg/mL and subject the mixture to freeze-drying. The 
+resulting powder is then mixed with urea and calcined at a temperature 
+of 500℃, with a heating rate of 10℃ per minute, to yield the black- 
+colored DAMs.
+To synthesize SAMs, modify the second stage by substituting the 
+metal chlorides and RuCl3 with 0.04 mmol of RuCl3 alone, while 
+maintaining all other procedural steps constant.
+4.2. Materials characterization
+The morphological characteristics and dimensions of DAMs were 
+scrutinized employing dark-field transmission electron microscopy 
+(TEM, JEM-F200, JEOL, Japan). The quantification of metal elemental 
+content was executed using inductively coupled plasma mass spec­
+trometry (ICP-MS: Agilent 7800, Agilent Technologies Ltd, Singapore). 
+Atomic-level details of the surface-activated nanoparticles (DAMs) were 
+probed via aberration-corrected scanning transmission electron micro­
+scopy (AC-STEM, ARM200F, JEOL, Japan). X-ray diffraction (XRD, 
+Smartlab, Rigaku, Japan) was utilized for the crystallographic identifi­
+cation of DAMs. Raman spectroscopic analysis was conducted using an 
+ultra-fast Raman imaging spectrometer (XploRA PLUS, HoribaJY, 
+France) over a scanning wavenumber range of 500–3500 cm−1. 
+Elemental composition and chemical states were elucidated through X- 
+ray photoelectron spectrometry (XPS, Axis Supra, Kratos Analytical Ltd, 
+UK). Magnetic measurements were carried out with an MPMS SQUID 
+magnetometer.
+4.3. Calculation of unpaired electron number
+The effective magnetic moment (μeff) was derived from the 
+temperature-dependent molar magnetic susceptibility (χ) data by fitting 
+to the Curie-Weiss law: χ = C / (T - θ), where C is the Curie constant and 
+θ is the Weiss constant. The μeff (in Bohr magnetons, μB) was calculated 
+using the relation: 
+μeff =
+̅̅̅̅̅̅
+8C
+√
+μB 
+The number of unpaired electrons (n) was then estimated based on 
+the formula: 
+μeff =
+̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅̅
+n(n + 2)
+√
+μB 
+4.4. SOD-like activity assay
+The SOD-like activity of DAMs was assessed utilizing the Total Su­
+peroxide Dismutase Assay Kit with Nitro Blue Tetrazolium (NBT), pro­
+cured from Source Leaf Biology (Catalog No. R22261). The procedure 
+commenced with the preparation of the working solution, which was 
+formulated by mixing 100 µL of SOD detection buffer, 30 µL of NBT 
+J. Li et al.                                                                                                                                                                                                                                         
+Nano Today 68 (2026) 102996 
+9 
+
+color development solution, and 30 µL of enzyme solution for each 
+sample, and then aliquoting 160 µL of this mixture into a 96-well plate. 
+Subsequently, various concentrations of the enzyme solution (20 µL) 
+were introduced into their respective wells of the 96-well plate to 
+constitute the experimental groups. For the blank control group, an 
+equivalent volume (20 µL) of SOD detection buffer was added to the 
+corresponding wells. The reaction was initiated by adding 20 µL of the 
+reaction starter liquid to each well, and the plate was then exposed to 
+illumination under a lamp for a duration of 10–20 min to facilitate the 
+reaction. A light-shielded control group was established by placing 
+centrifuge tubes containing 20 µL of SOD detection buffer, 160 µL of the 
+reaction working solution, and 20 µL of the reaction starter liquid in a 
+dark chamber for an equivalent reaction period. The absorbance of the 
+reaction system at 560 nm was measured using a multifunctional 
+enzyme marker. The inhibition rate of NBT photochemical reduction by 
+the sample was calculated using the following formula: 
+Inhibition rate (%) = ( Ablank control −Aexperiment
+Ablank control −Adark control
+) × 100% 
+4.5. NOX -like activity assay
+The activity of NOX was ascertained using UV–vis spectrophotom­
+etry. For the experimental group, a colorimetric dish was prepared by 
+adding 180 μL of NADH (dissolved in phosphate-buffered saline, PBS) 
+and 20 μL of the enzyme solution. The blank control group was estab­
+lished by substituting the enzyme solution with an equivalent volume of 
+PBS. The absorbance at 340 nm, indicative of NADH oxidation, was 
+continuously monitored over time to assess the NOX activity.
+To simulate the NOX catalytic process, the steady-state kinetic curve 
+of the substrate NADH concentration was determined using UV–vis 
+spectrophotometry. In the experimental setup, 170 μL of PBS, 10 μL of 
+NADH, and 20 μL of the enzyme solution were combined in a colori­
+metric dish. For the blank control, PBS was used in place of the enzyme 
+solution. The absorbance at 340 nm was monitored at 1-minute intervals 
+for a total of 10 min to track the reaction kinetics. The Km was derived by 
+fitting the initial rates of the reaction to the Michaelis-Menten curve 
+using Origin software. It is noteworthy that the molar extinction coef­
+ficient of NADH at 340 nm is 6220 M−1 cm−1, which was utilized in the 
+calculations. For quantitative analysis, enzyme activity was calculated 
+based on NADH oxidation. One unit (U) of NOX-like activity is defined as 
+the amount of nanozyme required to oxidize 1 μmol of NADH per minute 
+under standard assay conditions (25℃).
+4.6. NADPH oxidized activity assay
+The activity of NADPH oxidized was ascertained using UV–vis 
+spectrophotometry. For the experimental group, a colorimetric dish was 
+prepared by adding 180 μL of NADPH (dissolved in phosphate-buffered 
+saline, PBS) and 20 μL of the enzyme solution. The blank control group 
+was established by substituting the enzyme solution with an equivalent 
+volume of PBS. The absorbance at 340 nm, indicative of NADPH 
+oxidation, was continuously monitored over time to assess the NOX 
+activity.
+4.7. DFT simulation
+This work is simulated with Gaussian 09 with the exchange corre­
+lation potential selected as B3LYP. The spin simulations are carried out 
+by setting the spin multiplicity to a fixed value with geometry optimi­
+zation applied. In addition, extra tools including Electron Localization 
+Function, Charge Density Difference and Fukui Function are applied for 
+a detailed discussion. Besides, the convergence criterion of the Self- 
+Consistency Field (SCF) of electron wavefunction is set to be 10–8 
+Hartree. The geometry relaxation convergence criterion is set to 
+4.5*10−4 Hartree/Bohr.
+4.8. Animal experiment
+All animal experimental protocols were conducted in strict accor­
+dance with the ethical guidelines established by the Animal Commission 
+and adhered to the Principles of Animal Protection, Animal Welfare, and 
+Ethics (YSY-DWLL 2023265). Male BALB/c mice, aged 6–8 weeks, were 
+procured from SPF (Beijing) Biotechnology Co., LTD. The eczema model 
+was meticulously established at Tianjin Haihe Hospital. The mice uti­
+lized in the experiment were systematically allocated into six distinct 
+groups: a control group (Con), an eczema model group (Eczema), the 
+grous treated with DAMs (DAMs) and a group treated with tacrolimus 
+(Tac), with each group comprising 8 mice.
+4.9. Eczema models
+The sensitization of the murine abdomen was initiated by applying a 
+7 % solution of dinitrochlorobenzene (DNCB) in an acetone-olive oil 
+(4:1) emulsion for a period of 2 days. In the control group, no inter­
+vention was conducted. Following this sensitization phase, the dorsal 
+region of the mice was challenged with 1.5 % DNCB every 3 days on two 
+separate occasions to induce dermatitis. The control group remained 
+untreated, thereby establishing the eczema model. Subsequently, DAMs 
+was formulated at a concentration of 4 mg/mL in olive oil and topically 
+applied to the eczematous lesions on the dorsal area of the mice every 
+48 h for a total of 7 applications. In the Tacrolimus group, the ointment 
+was applied as per the treatment protocol, while the eczema group 
+received an equivalent volume of olive oil as a control. The untreated 
+control group remained without any intervention. At the culmination of 
+the treatment regimen, 48 h post the final application, the mice were 
+euthanized, and skin samples from the eczematous lesions on their 
+dorsal regions were harvested for further analysis.
+4.10. Histological analysis
+Various skin tissue samples were processed by fixation in neutral 
+formalin solution for a duration of 2 days, followed by paraffin 
+embedding and sectioning into 2 µm-thick slides. Hematoxylin and eosin 
+(H&E) staining was employed to visualize the skin tissue affected by 
+eczema on the dorsal aspect of the mice. In this staining procedure, the 
+nuclei were stained blue-purple by the hematoxylin alkaline dye solu­
+tion, while the cytoplasm, muscle, and connective tissues exhibited 
+varying degrees of red or pink coloration due to the eosin dye solution. 
+The inflammatory cells were quantified based on their morphological 
+and chromatic distinctions from normal cells.
+For the detection of vascular elements, IHC staining was conducted 
+using a CD31 polyclonal antibody (Proteintech, catalog number 
+28083–1-AP, diluted at 1:100) to delineate skin vessels. Furthermore, 
+immunofluorescence (IF) staining was utilized to identify macrophages 
+and anti-inflammatory cytokines within the skin tissue. This was ach­
+ieved using CD68 polyclonal antibodies (Proteintech, catalog number 
+28058–1 AP, diluted at 1:100) for macrophage labeling and a separate 
+antibody for IL-10 (Proteintech, catalog number 28058–1 AP, diluted at 
+1:100) to visualize anti-inflammatory cytokines.
+4.11. Kit detection
+The centrifugation of the homogenates was performed at 3000 rpm 
+for 10 min, after which the supernatant was carefully collected and 
+stored at −80 ℃ for subsequent analysis. Protein concentration in the 
+homogenates was quantified using the BCA Protein Assay Kit (Biosharp, 
+catalog number BL521A). Oxidative stress-related biomarkers, including 
+malondialdehyde (MDA), superoxide dismutase (SOD), and the gluta­
+thione redox couple (GSH/GSSG), were assessed using specific assay kits 
+from the Nanjing Jiancheng Bioengineering Institute. The MDA levels 
+were determined with the Malondialdehyde (MDA) Assay Kit (catalog 
+number A003–1–2), SOD activity was measured with the SOD Assay Kit 
+J. Li et al.                                                                                                                                                                                                                                         
+Nano Today 68 (2026) 102996 
+10 
+
+employing the WST 1 method (catalog number A001–3–2), and the 
+glutathione status was evaluated with the Glutathione Assay Kit based 
+on a microenzymatic assay (catalog number A061–1–2). Inflammatory 
+cytokine levels were quantified using a series of enzyme-linked immu­
+nosorbent assay (ELISA) kits from FANKEW, including the Mouse 
+CYSLTR1 ELISA Kit (catalog number F43426-B), Mouse CYSLTR2 ELISA 
+Kit (catalog number F43427-B), Mouse IL-4 ELISA Kit (catalog number 
+F2165-B), Mouse LTB4 ELISA Kit (catalog number F2041-B), and Mouse 
+LTC4 ELISA Kit (catalog number F2395-B). The assays were conducted 
+in strict accordance with the protocols provided with each respective kit.
+4.12. Flow cytometry
+Freshly harvested tissues were initially rinsed with ice-cold phos­
+phate-buffered saline (PBS) to remove any extraneous materials. Sub­
+sequently, the tissues were enzymatically digested using collagenase IV 
+(Solarbio, catalog number C8160) and a pancreatic enzyme cell diges­
+tion solution (Biosharp, catalog number BL527A) at a temperature of 
+37℃ for a duration of 30 min. This treatment facilitated the isolation of 
+single cells, which were then prepared for flow cytometry analysis. For 
+the flow cytometric analysis, a panel of fluorescently conjugated anti­
+bodies was employed to characterize specific cell populations. These 
+included: FITC-conjugated anti-mouse F4/80 antibody (BioLegend, 
+catalog number 157310, diluted at 1:50), which is a marker for mac­
+rophages, PerCP-conjugated anti-mouse/human CD11b antibody 
+(Elabscience, catalog number E-AB F1081F, diluted at 1:20), indicative 
+of myeloid cells, PE-conjugated anti-mouse CD86 antibody (Elabscience, 
+diluted at 1:20), a marker for activation of antigen-presenting cells.
+Additionally, macrophages were specifically labeled using: an un­
+specified antibody (E-AB-f0994d, diluted at 1:20), and APC-conjugated 
+anti-mouse CD206 antibody (Elabscience, catalog number E-AB-f1135e, 
+diluted at 1:20), which is associated with M2 macrophage polarization.
+4.13. Toxicological studies
+Body weight fluctuations of the mice were meticulously documented 
+on a daily basis commencing from the initiation of the treatment 
+regimen. Euthanasia of the mice was performed the day subsequent to 
+the final administration. The dorsal skin and blood samples were har­
+vested from the mice for the assessment of drug elemental content and 
+hematological parameters, respectively.
+Hematological analyses encompassed a comprehensive evaluation of 
+the following parameters: white blood cell count (WBC), red blood cell 
+count (RBCs), hemoglobin concentration (HGB), hematocrit level 
+(HCT), mean corpuscular volume (MCV), mean corpuscular hemoglobin 
+(MCH), mean corpuscular hemoglobin concentration (MCHC), and 
+platelet count (PLT). These assessments provided a detailed profile of 
+the hematological status of the mice. Blood biochemical tests were 
+conducted to assess liver and kidney function, including measurements 
+of alanine aminotransferase (ALT), alkaline phosphatase (ALP), creati­
+nine (CREA), and aspartate transaminase (AST). These parameters 
+offered insights into the physiological integrity of the mice's hepatic and 
+renal systems.
+The quantification of Ru, Co elements in the skin, heart, liver, spleen, 
+lungs, kidneys, and other vital organs of mice from both the control 
+group and the DAMs treatment group was conducted using inductively 
+coupled plasma mass spectrometry (ICP-MS). This analytical technique 
+facilitated the precise determination of the elemental distribution and 
+accumulation within the organs of interest.
+4.14. Statistical analysis
+The data are articulated as the mean value ± standard deviation (SD) 
+or standard error of the mean (SEM). In instances where multiple 
+comparisons were necessary, a one-way analysis of variance (ANOVA) 
+was employed, complemented by the post-hoc Tukey test to ascertain 
+significant differences among the groups. Asterisks indicate significant 
+differences (*P < 0.05, **P < 0.01, ***P < 0.001).
+Authorship contribution statement
+We hereby declare that this manuscript is original, has not been 
+published previously, and is not currently under consideration for 
+publication elsewhere. We confirm that the manuscript has been read 
+and approved by all named authors, that the authorship list reflects all 
+substantial intellectual contributors, and that the author order has been 
+agreed upon by all co-authors.
+We understand that the Corresponding Author serves as the sole 
+contact for the editorial process, responsible for communication with the 
+journal and among co-authors regarding submission, revisions, and final 
+approval. The specific contributions of each author are detailed as 
+follows:
+X.M. conceived the project, supervised the research. J.L. and X.M. 
+wrote the manuscript. J.L. performed the experiments. Y.L. and H.L. 
+carried out the DFT calculations and analyzed the data. J.L. and Z.W. 
+conducted the biological assays. H.D., C.L., and X.Z. provided overall 
+supervision. All authors discussed the results and commented on the 
+manuscript.
+CRediT authorship contribution statement
+Hongyang Li: Software. Yonghui Li: Writing – original draft. Zhen 
+Wan: Project administration. Zhang Xiaodong: Funding acquisition. 
+Jiarong Li: Writing – original draft, Validation, Software, Data curation. 
+Xiaoyu Mu: Writing – review & editing, Supervision, Investigation, 
+Funding acquisition. Haitao Dai: Project administration. Changlong 
+Liu: Funding acquisition.
+Declaration of Competing Interest
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper.
+Acknowledgements
+This work was financially supported by the Young Scientists Fund- 
+Type A [the former National Science Fund for Distinguished Young 
+Scholars] (Grant Nos. 82525035), the National Natural Science Foun­
+dation of China (Grant Nos. 82572397, U24A6012, 91859101, 
+81971744, U1932107, 82302361, 82302381, 62205242, U22A20349), 
+Outstanding Youth Funds of Tianjin (2021FJ-0009), Natural Science 
+Foundation of Tianjin (Nos. 25JCYBJC01530, 23JCYBJC00710, 
+24JCZDJC01270), Tianjin Science and Technology Programme (Nos. 
+23YDTPJC00160).
+Appendix A. Supporting information
+Supplementary data associated with this article can be found in the 
+online version at doi:10.1016/j.nantod.2026.102996.
+Data availability
+The data that has been used is confidential.
+References
+[1] C. Cant´o, K.J. Menzies, J. Auwerx, NAD+ metabolism and the control of energy 
+homeostasis: a balancing act between mitochondria and the nucleus, Cell Metab. 
+22 (2015) 31–53.
+[2] T. Nacarelli, L. Lau, T. Fukumoto, J. Zundell, N. Fatkhutdinov, S. Wu, K.M. Aird, 
+O. Iwasaki, A.V. Kossenkov, D. Schultz, K.-i Noma, J.A. Baur, Z. Schug, H.-Y. Tang, 
+D.W. Speicher, G. David, R. Zhang, NAD+ metabolism governs the 
+J. Li et al.                                                                                                                                                                                                                                         
+Nano Today 68 (2026) 102996 
+11 
+
+proinflammatory senescence-associated secretome, Nat. Cell Biol. 21 (2019) 
+397–407.
+[3] E. Verdin, NAD+ in aging, metabolism, and neurodegeneration, Science 350 (2015) 
+1208–1213.
+[4] M. Hou, J. Yuan, X. Dong, Y. Wang, S. Yang, J. Gao, Engineering oxygen- 
+independent NADH oxidase integrated with electrocatalytic FAD cofactor 
+regeneration, JACS Au 4 (2024) 3581–3592.
+[5] L.R. Stein, S.-i Imai, The dynamic regulation of NAD metabolism in mitochondria, 
+Trends Endocrinol. Metab. 23 (2012) 420–428.
+[6] H. Gao, J. Li, D. Sivakumar, T.-S. Kim, S.K.S. Patel, V.C. Kalia, I.-W. Kim, Y.- 
+W. Zhang, J.-K. Lee, NADH oxidase from Lactobacillus reuteri: a versatile enzyme for 
+oxidized cofactor regeneration, Int. J. Biol. Macromol. 123 (2019) 629–636.
+[7] J. Wu, X. Wang, Q. Wang, Z. Lou, S. Li, Y. Zhu, L. Qin, H. Wei, Nanomaterials with 
+enzyme-like characteristics (nanozymes): next-generation artificial enzymes (II), 
+Chem. Soc. Rev. 48 (2019) 1004–1076.
+[8] Y. Ma, Y. Deng, W. Xue, X. Ji, M.-H. Li, An anaerobic biomimetic metal-free AIE 
+polymersome nanozyme as NADH oxidase mimic for photocatalytic tumor 
+suppression by impairing cancer cell energy metabolism under hypoxia, J. Am. 
+Chem. Soc. 147 (2025) 26557–26572.
+[9] X. Liu, Z. Wan, K. Chen, Y. Yan, X. Li, Y. Wang, M. Wang, R. Zhao, J. Pei, L. Zhang, 
+S. Sun, J. Li, X. Chen, Q. Xin, S. Zhang, S. Liu, H. Wang, C. Liu, X. Mu, X.-D. Zhang, 
+Mated-atom nanozymes with efficient assisted NAD+ replenishment for skin 
+regeneration, Nano Lett. 24 (2024) 4924–4935.
+[10] K. Liu, J. Niu, L. Liu, F. Tian, H. Nie, X. Liu, K. Chen, R. Zhao, S. Sun, M. Jiao, 
+M. Tian, X. Sun, L. Niu, X. Sun, H. Wang, W. Long, L. Feng, X. Mu, X.-D. Zhang, 
+LUMO-mediated Se and HOMO-mediated Te nanozymes for selective redox 
+biocatalysis, Nano Lett. 23 (2023) 5131–5140.
+[11] X. Mu, J. Wang, H. He, Q. Li, B. Yang, J. Wang, H. Liu, Y. Gao, L. Ouyang, S. Sun, 
+Q. Ren, X. Shi, W. Hao, Q. Fei, J. Yang, L. Li, R. Vest, T. Wyss-Coray, J. Luo, X.- 
+D. Zhang, An oligomeric semiconducting nanozyme with ultrafast electron 
+transfers alleviates acute brain injury, eabk1210, Sci. Adv. 7 (2021). eabk1210.
+[12] P. Xu, W. Liu, Y. Jiang, R. Hu, M. Xia, K. Song, S. Chu, S. Xi, Y. Lu, Unraveling the 
+proximity effects of a Co–P dual site in phosphorus-coordinated cobalt single-atom 
+nanozymes, ACS Nano 19 (2025) 41911–41922.
+[13] Z. Li, F. Liu, C. Chen, Y. Jiang, P. Ni, N. Song, Y. Hu, S. Xi, M. Liang, Y. Lu, 
+Regulating the N coordination environment of Co single-atom nanozymes for 
+highly efficient oxidase mimics, Nano Lett. 23 (2023) 1505–1513.
+[14] K. Hou, J. B¨orgel, H.Z.H. Jiang, D.J. SantaLucia, H. Kwon, H. Zhuang, 
+K. Chakarawet, R.C. Rohde, J.W. Taylor, C. Dun, M.V. Paley, A.B. Turkiewicz, J. 
+G. Park, H. Mao, Z. Zhu, E.E. Alp, J. Zhao, M.Y. Hu, B. Lavina, S. Peredkov, X. Lv, 
+J. Oktawiec, K.R. Meihaus, D.A. Pantazis, M. Vandone, V. Colombo, E. Bill, J. 
+J. Urban, R.D. Britt, F. Grandjean, G.J. Long, S. DeBeer, F. Neese, J.A. Reimer, J. 
+R. Long, Reactive high-spin iron(IV)-oxo sites through dioxygen activation in a 
+metal–organic framework, Science 382 (2023) 547–553.
+[15] G. Yang, J. Zhu, P. Yuan, Y. Hu, G. Qu, B.-A. Lu, X. Xue, H. Yin, W. Cheng, 
+J. Cheng, W. Xu, J. Li, J. Hu, S. Mu, J.-N. Zhang, Regulating Fe-spin state by 
+atomically dispersed Mn-N in Fe-N-C catalysts with high oxygen reduction activity, 
+Nat. Commun. 12 (2021) 1734.
+[16] X. Ge, X. Zheng, T. Zhou, L.-J. Tian, W. Wang, J.-j Chen, X. Wang, Engineering spin 
+state of atomic iron centers for high-performance photocatalytic nitrogen fixation, 
+Angew. Chem. Int. Ed. 64 (2025) e202506470.
+[17] N. Han, W. Zhang, J. Wu, K. Chu, S. Feng, S. Wang, A.R. Puente-Santiago, J. Long, 
+B. Weng, B.-L. Su, Boosting electrocatalytic nitrogen reduction on cobalt-based 
+perovskite via regulating reaction pathway through donation-back-donation 
+modulation, Angew. Chem. Int. Ed. 64 (2025) e202504601.
+[18] S. Jiang, L. Li, Z. Wang, J. Shan, K.F. Mak, Spin tunnel field-effect transistors based 
+on two-dimensional van der Waals heterostructures, Nat. Electron 2 (2019) 
+159–163.
+[19] J. Qiao, C. Lu, L. Kong, J. Zhang, Q. Lin, H. Huang, C. Li, W. He, M. Zhou, Z. Sun, 
+Spin engineering of Fe─N─C by axial ligand modulation for enhanced bifunctional 
+oxygen catalysis, Adv. Funct. Mater. 34 (2024) 2409794.
+[20] T.F. Markle, J.W. Darcy, J.M. Mayer, A new strategy to efficiently cleave and form 
+C–H bonds using proton-coupled electron transfer, eaat5776, Sci. Adv. 4 (2018). 
+eaat5776.
+[21] J.-H. Chen, W.-T. Li, K.-Y. Cai, H.-J. Tu, Z.-T. Long, S. Akhtar, L.-D. Liu, Proton- 
+coupled electron transfer controls peroxide activation initiated by a solid-water 
+interface, Nat. Commun. 16 (2025) 3789.
+[22] J. Azadmanesh, K. Slobodnik, L.R. Struble, J.J. Lovelace, E.A. Cone, M. Dasgupta, 
+W.E. Lutz, S. Kumar, A. Natarajan, L. Coates, K.L. Weiss, D.A.A. Myles, T. Kroll, G. 
+E.O. Borgstahl, The role of Tyr34 in proton coupled electron transfer and product 
+inhibition of manganese superoxide dismutase, Nat. Commun. 16 (2025) 1887.
+[23] J. Lee, J. Lee, J. Seo, Exchange coupling states of cobalt complexes to control 
+proton-coupled electron transfer, Nat. Commun. 15 (2024) 8688.
+[24] J. Derosa, P. Garrido-Barros, M. Li, J.C. Peters, Use of a PCET mediator enables a 
+Ni-HER electrocatalyst to act as a hydride delivery agent, J. Am. Chem. Soc. 144 
+(2022) 20118–20125.
+[25] H.-Z. Xue, J.-H. Wu, B.-W. Wang, S. Gao, J.-L. Zhang, Coordination induced spin 
+state transition switches the reactivity of nickel (II) porphyrin in hydrogen 
+evolution reaction, Angew. Chem. Int. Ed. 64 (2025) e202413042.
+[26] P.N. Phu, J.L. Lee, S. Biswas, J.W. Ziller, E.L. Bominaar, M.P. Hendrich, A. 
+S. Borovik, Proton-inducedswitching of paramagnetism: reversible conversion 
+between a low and high spin CoIII center within a heterobimetallic core, J. Am. 
+Chem. Soc. 147 (2025) 3129–3139.
+[27] T. Ji, S. Su, S. Wu, Y. Hori, Y. Shigeta, Y. Huang, W. Zheng, W. Xu, X. Zhang, 
+R. Kiyanagi, K. Munakata, T. Ohhara, T. Nakanishi, O. Sato, Development of an FeII 
+complex exhibiting intermolecular proton shifting coupled spin transition, Angew. 
+Chem. Int. Ed. 63 (2024) e202404843.
+[28] K.S. Otte, J.E. Niklas, C.M. Studvick, C.L. Montgomery, A.R.C. Bredar, I.A. Popov, 
+H.S. La Pierre, Proton-coupled electron transfer at the Pu5+/4+ couple, J. Am. 
+Chem. Soc. 146 (2024) 21859–21867.
+[29] J. Ebenezer, P. Velayudham, A. Schechter, Peroxide-driven nitrogen fixation 
+reactions for energy storage applications, Adv. Energy Mater. 15 (2025) 2501583.
+[30] H. Jia, N. Yao, Y. Jin, L. Wu, J. Zhu, W. Luo, Stabilizing atomic Ru species in 
+conjugated sp2 carbon-linked covalent organic framework for acidic water 
+oxidation, Nat. Commun. 15 (2024) 5419.
+[31] D. Shu, X. Zhang, B. Han, W. Li, B. Wang, C. Xu, Enhanced degradation and 
+recycling of reactive dye wastewater using cobalt loaded MXene catalysts, Npj. 
+Clean. Water 7 (2024) 88.
+[32] Q. Lu, How to correctly analyze 2p X-ray photoelectron spectra of 3d transition- 
+metal oxides: pitfalls and principles, ACS Nano 18 (2024) 13973–13982.
+[33] Z. Yuan, B. Han, B. Liu, J. Sun, P. Zhou, R. Mu, Z. Zhang, Unexpected activity of 
+MgO nanoclusters for the reductive-coupling synthesis of organonitrogen 
+chemicals with C = N bonds, Nat. Commun. 16 (2025) 2963.
+[34] Q. Liu, P. Qiao, M. Tong, Y. Xie, X. Zhang, K. Lin, Z. Liang, L. Wang, H. Fu, 
+Enhancing zinc–air battery performance by constructing three-dimensional N- 
+doped carbon coating multiple valence Co and MnO heterostructures, Nano Res 17 
+(2024) 5104–5113.
+[35] Q. Liu, X. Liu, X. He, D. Wang, C. Zheng, L. Jin, J. Shen, Iron-single-atom nanozyme 
+with NIR enhanced catalytic activities for facilitating MRSA-infected wound 
+therapy, Adv. Sci. 11 (2024) e2308684.
+[36] G. Shen, R. Zhang, L. Pan, F. Hou, Y. Zhao, Z. Shen, W. Mi, C. Shi, Q. Wang, 
+X. Zhang, J.-J. Zou, Regulating the spin state of FeIII by atomically anchoring on 
+ultrathin titanium dioxide for efficient oxygen evolution electrocatalysis, Angew. 
+Chem. Int. Ed. 59 (2020) 2313–2317.
+[37] S. Zhou, X. Miao, X. Zhao, C. Ma, Y. Qiu, Z. Hu, J. Zhao, L. Shi, J. Zeng, Engineering 
+electrocatalytic activity in nanosized perovskite cobaltite through surface spin- 
+state transition, Nat. Commun. 7 (2016) 11510.
+[38] Y. Liu, X. Liu, Z. Lv, R. Liu, L. Li, J. Wang, W. Yang, X. Jiang, X. Feng, B. Wang, 
+Tuning the spin state of the iron center by bridge-bonded Fe-O-Ti ligands for 
+enhanced oxygen reduction, Angew. Chem. Int. Ed. 61 (2022) e202117617.
+[39] L. Li, J. Zhu, F. Kong, Y. Wang, C. Kang, M. Xu, C. Du, G. Yin, Tailoring atomic 
+strain environment for high-performance acidic oxygen reduction by Fe-Ru dual 
+atoms communicative effect, Matter 7 (2024) 1517–1532.
+[40] S. Zhang, Y. Li, S. Sun, L. Liu, X. Mu, S. Liu, M. Jiao, X. Chen, K. Chen, H. Ma, T. Li, 
+X. Liu, H. Wang, J. Zhang, J. Yang, X.-D. Zhang, Single-atom nanozymes 
+catalytically surpassing naturally occurring enzymes as sustained stitching for 
+brain trauma, Nat. Commun. 13 (2022) 4744.
+[41] Q. Zhang, Y. Wang, C. Nickle, Z. Zhang, A. Leoncini, D.-C. Qi, K. Sotthewes, 
+A. Borrini, H.J.W. Zandvliet, E. del Barco, D. Thompson, C.A. Nijhuis, Molecular 
+switching by proton-coupled electron transport drives giant negative differential 
+resistance, Nat. Commun. 15 (2024) 8300.
+[42] J. Chen, Q. Ma, M. Li, W. Wu, L. Huang, L. Liu, Y. Fang, S. Dong, Coenzyme- 
+dependent nanozymes playing dual roles in oxidase and reductase mimics with 
+enhanced electron transport, Nanoscale 12 (2020) 23578–23585.
+[43] E. Golub, R. Freeman, I. Willner, A Hemin/G-quadruplex acts as an NADH oxidase 
+and NADH peroxidase mimicking DNAzyme, Angew. Chem. Int. Ed. 50 (2011) 
+11710–11714.
+[44] H. Song, C. Ma, L. Wang, Z. Zhu, Platinum nanoparticle-deposited multi-walled 
+carbon nanotubes as a NADH oxidase mimic: characterization and applications, 
+Nanoscale 12 (2020) 19284–19292.
+[45] P. Ling, Q. Zhang, T. Cao, F. Gao, Versatile three-dimensional porous Cu@Cu2O 
+aerogel networks as electrocatalysts and mimicking peroxidases, Angew. Chem. 
+Int. Ed. 57 (2018) 6819–6824.
+[46] H. Wang, J. Chen, Q. Dong, X. Jia, D. Li, J. Wang, E. Wang, Cadmium sulfide as 
+bifunctional mimics of NADH oxidase and cytochrome c reductase takes effect at 
+physiological pH, Nano Res 15 (2022) 5256–5261.
+[47] L. He, Y. Li, Q. Wu, D.M. Wang, C.M. Li, C.Z. Huang, Y.F. Li, Ru(III)-based 
+metal–organic gels: Intrinsic horseradish and NADH peroxidase-mimicking 
+nanozyme, ACS Appl. Mater. Interfaces 11 (2019) 29158–29166.
+[48] J. Rocha-Martín, D. Vega, J.M. Bolivar, C.A. Godoy, A. Hidalgo, J. Berenguer, J. 
+M. Guis´an, F. L´opez-Gallego, New biotechnological perspectives of a NADH oxidase 
+variant from Thermus thermophilus HB27 as NAD+-recycling enzyme, BMC 
+Biotechnol. 11 (2011) 101.
+[49] S. Fogal, E. Beneventi, L. Cendron, E. Bergantino, Structural basis for double 
+cofactor specificity in a new formate dehydrogenase from the acidobacterium 
+Granulicella mallensis MP5ACTX8, Appl. Microbiol. Biotechnol. 99 (2015) 
+9541–9554.
+[50] S. Alpda˘gtas¸, A. Çelik, F. Ertan, B. Binay, DMSO tolerant NAD(P)H recycler enzyme 
+from a pathogenic bacterium, Burkholderia dolosa PC543: effect of N-/C-terminal 
+His Tag extension on protein solubility and activity, Eng. Life Sci. 18 (2018) 
+893–903.
+[51] S. Alpda˘gtas¸, S. Yücel, H.A. Kapkaç, S. Liu, B. Binay, Discovery of an acidic, 
+thermostable and highly NADP+ dependent formate dehydrogenase from 
+Lactobacillus buchneri NRRL B-30929, Biotechnol. Lett. 40 (2018) 1135–1147.
+[52] S. Kawasaki, J. Ishikura, D. Chiba, T. Nishino, Y. Niimura, Purification and 
+characterization of an H2O-forming NADH oxidase from Clostridium 
+aminovalericum: Existence of an oxygen-detoxifying enzyme in an obligate 
+anaerobic bacteria, Arch. Microbiol 181 (2004) 324–330.
+[53] W. Hummel, B. Riebel, Isolation and biochemical characterization of a new NADH 
+oxidase from Lactobacillus brevis, Biotechnol. Lett. 25 (2003) 51–54.
+J. Li et al.                                                                                                                                                                                                                                         
+Nano Today 68 (2026) 102996 
+12 
+
+[54] B.R. Riebel, P.R. Gibbs, W.B. Wellborn, A.S. Bommarius, Cofactor regeneration of 
+NAD+ from NADH: Novel water-forming NADH oxidases, Adv. Synth. Catal. 344 
+(2002) 1156–1168.
+[55] H. Gao, M.K. Tiwari, Y.C. Kang, J.-K. Lee, Characterization of H2O-forming NADH 
+oxidase from Streptococcus pyogenes and its application in l-rare sugar production, 
+Bioorg. Med. Chem. Lett. 22 (2012) 1931–1935.
+[56] J. Yu, A.P. Bryant, A. Marra, M.A. Lonetto, K.A. Ingraham, A.F. Chalker, D. 
+J. Holmes, D. Holden, M. Rosenberg, D. McDevitt, Characterization of the 
+Streptococcus pneumoniae NADH oxidase that is required for infection, Microbiology 
+147 (2001) 431–438.
+[57] M. Higuchi, M. Shimada, Y. Yamamoto, T. Hayashi, T. Koga, Y. Kamio, 
+Identification of two distinct NADH oxidases corresponding to H2O2-forming 
+oxidase and H2O-forming oxidase induced in Streptococcus mutans, Microbiology 
+139 (1993) 2343–2351.
+[58] T.B. Stanton, N.S. Jensen, Purification and characterization of NADH oxidase from 
+Serpulina (Treponema) hyodysenteriae, J. Bacteriol. 175 (1993) 2980–2987.
+[59] K. Chen, G. Li, X. Gong, Q. Ren, J. Wang, S. Zhao, L. Liu, Y. Yan, Q. Liu, Y. Cao, 
+Y. Ren, Q. Qin, Q. Xin, S.-L. Liu, P. Yao, B. Zhang, J. Yang, R. Zhao, Y. Li, R. Luo, 
+Y. Fu, Y. Li, W. Long, S. Zhang, H. Dai, C. Liu, J. Zhang, J. Chang, X. Mu, X.- 
+D. Zhang, Atomic-scale strain engineering of atomically resolved Pt clusters 
+transcending natural enzymes, Nat. Commun. 15 (2024) 8346.
+[60] L.B. Pang, J. Li, Z.W. Zhang, C.Q. Zhang, Lung cancer-associated mesenchymal 
+stem cells mediate chemoresistance and malignant progression of lung cancer 
+through activating HIF-1α, Eur. Cell Mater. 50 (2025) 87–108.
+[61] L. Wang, B. Zhang, X. Yang, S. Guo, G.I.N. Waterhouse, G. Song, S. Guan, A. Liu, 
+L. Cheng, S. Zhou, Targeted alleviation of ischemic stroke reperfusion via 
+atorvastatin-ferritin Gd-layered double hydroxide, Bioact. Mater. 20 (2023) 
+126–136.
+J. Li et al.                                                                                                                                                                                                                                         
+Nano Today 68 (2026) 102996 
+13

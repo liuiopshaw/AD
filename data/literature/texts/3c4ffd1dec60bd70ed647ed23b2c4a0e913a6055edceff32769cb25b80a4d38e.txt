@@ -1,0 +1,1204 @@
+RESEARCH ARTICLE
+www.advmat.de
+Nanoparticle-Mediated Delivery of Anti-PU.1 siRNA via
+Localized Intracisternal Administration Reduces
+Neuroinﬂammation
+William T. Ralvenius, Jason L. Andresen, Margaret M. Huston, Jay Penney,
+Julia Maeve Bonner, Owen S. Fenton,* Robert Langer,* and Li-Huei Tsai*
+Neuroinﬂammation is a hallmark of neurodegenerative disorders including
+Alzheimer’s disease (AD). Microglia, the brain’s immune cells, express many
+of the AD-risk loci identiﬁed in genome wide association studies and present
+a promising target for anti-inﬂammatory RNA therapeutics but are diﬃcult to
+transfect with current methods. Here, several lipid nanoparticle (LNP)
+formulations are examined, and a lead candidate that supports eﬃcient RNA
+delivery in cultures of human stem cell-derived microglia-like cells (iMGLs)
+and animal models of neuroinﬂammation is identiﬁed. The lead microglia
+LNP (MG-LNP) formulation shows minimal toxicity and improves delivery
+eﬃciency to inﬂammatory iMGLs, suggesting a preference for delivery into
+activated microglia. Intraperitoneal injection of the MG-LNP formulation
+generates widespread expression of the delivered reporter construct in all
+organs, whereas local intracisternal injection directly into the cerebrospinal
+ﬂuid leads to preferential expression in the brain. It is shown that
+LNP-mediated delivery of siRNA targeting the PU.1 transcription factor, a
+known AD-risk locus, successfully reduces PU.1 levels in iMGLs and reduces
+neuroinﬂammation in mice injected with LPS and in CK-p25 mice that mimic
+the chronic neuroinﬂammation seen in AD patients. The LNP formulation
+represents an eﬀective RNA delivery vehicle when applied intrathecally and
+can be broadly utilized to test potential neuroinﬂammation-directed gene
+therapies.
+W. T. Ralvenius, M. M. Huston, J. Penney, J. M. Bonner, L.-H. Tsai
+Picower Institute for Learning and Memory
+Department of Brain and Cognitive Sciences
+Massachusetts Institute of Technology
+Cambridge, MA 02139, USA
+E-mail: lhtsai@mit.edu
+J.L.Andresen
+Department of Chemistry
+Massachusetts Instituteof Technology
+Cambridge,MA 02139,USA
+The ORCID identiﬁcation number(s) for the author(s) of this article
+can be found under https://doi.org/10.1002/adma.202309225
+© 2023 The Authors. Advanced Materials published by Wiley-VCH
+GmbH. This is an open access article under the terms of the Creative
+Commons Attribution-NonCommercial License, which permits use,
+distribution and reproduction in any medium, provided the original work
+is properly cited and is not used for commercial purposes.
+DOI: 10.1002/adma.202309225
+1. Introduction
+Several
+neurodegenerative
+disor-
+ders,
+including
+Alzheimer’s
+disease
+(AD), are characterized by a state of
+neuroinﬂammation.[1–3] As one of the most
+prevalent and deadly neurological diseases,
+AD has been subject to decades of research
+and clinical eﬀorts in search of potential
+therapeutic remedies.[4,5] Although anti-
+bodies designed to clear 𝛽-amyloid have
+recently shown therapeutic potential in
+human patients, the multifaceted nature
+of AD suggests a need for diverse treat-
+ment approaches depending on disease
+pathology and progression.[6] Microglia,
+the major immune cells present in the
+brain, have been subject of increasing
+interest for their potential role in the onset
+or prevention of AD.[2,7,8] A majority of AD
+risk genes identiﬁed through genome wide
+association studies are highly expressed in
+microglia,[9] including the transcription fac-
+tor PU.1, which is centrally involved in the
+regulation of basic microglia functions.[10]
+Several studies have shown that increased
+J. L. Andresen, R. Langer
+Koch Institute for Integrative Cancer Research
+Massachusetts Institute of Technology
+Cambridge, MA 02139, USA
+E-mail: rlanger@mit.edu
+O.S.Fenton
+UNC Eshelman School of Pharmacy
+Department of Pharmacoengineering andMolecularPharmaceutics
+University of North Carolina
+Chapel Hill, NC 27599, USA
+E-mail: osfenton@unc.edu
+R.Langer
+Department of Chemical Engineering
+Massachusetts Instituteof Technology
+Cambridge, MA 02139, USA
+L.-H.Tsai
+BroadInstituteof MITandHarvard
+Cambridge, MA 02139, USA
+Adv. Mater. 2024, 36, 2309225
+2309225 (1 of 13)
+© 2023 The Authors. Advanced Materials published by Wiley-VCH GmbH
+
+www.advancedsciencenews.com
+www.advmat.de
+PU.1 levels act as a risk factor in AD progression,[11–14] while re-
+duced PU.1 expression is thought to be protective in humans as
+well as in models of AD.[11,13–17]
+RNA therapeutics, including short interfering RNA (siRNA)
+designed to degrade mRNAs and/or impair translation to re-
+duce target protein production, could provide a therapeutic
+avenue to ameliorate AD-associated transcription and transla-
+tion changes in microglia. However, due to their large size
+and charge, nucleic acids require delivery vehicles or alternate
+methods of administration[18,19] to enter cells across the cellu-
+lar membrane.[20] Furthermore, systemically administered drugs
+are often incapable of reaching the aﬀected brain regions due
+to poor penetration across the blood–brain barrier (BBB). Mi-
+croglia have been particularly hard to target for poorly understood
+reasons, which both hampers experimental studies and is an
+impediment to therapeutic delivery.[21,22] Four-component lipid
+nanoparticle (LNP) systems composed of ionizable lipid, choles-
+terol, phospholipid, and polyethylene glycol (PEG)-lipid conju-
+gates have been widely implemented in COVID-19 vaccines and
+highlight the immense potential of RNA delivery for therapeu-
+tic purposes.[23–25] These four-component LNP systems represent
+the clinical gold standard of delivery vehicles for therapeutic nu-
+cleic acids. When LNPs are administered intravenously (i.v.), the
+corona of serum proteins which adsorb to the nanoparticle sur-
+face within the bloodstream targets them to the liver, primarily
+through ApoE-receptor mediated uptake.[26–28] Several nanopar-
+ticle systems and LNP modiﬁcations have been designed to im-
+prove delivery across the BBB.[29–31] Alternatively, local injections
+of LNPs have been shown to successfully deliver mRNA into neu-
+rons and astrocytes.[32] Recently, researchers identiﬁed cationic
+liposomes, lipid hybrid, and polymeric nanoparticles that can be
+administered locally or intranasally to transfect speciﬁc cell types
+such as microglia within the brain.[33–35] In addition, studies us-
+ing hyaluronic acid to functionalize the LNP surface have been
+used to aid delivery of siRNA to glioma in mice.[36] However,
+clinically relevant four-component LNP systems remain under-
+explored for localized RNA delivery into microglia.
+Here, we sought to examine the potential of LNP-facilitated
+delivery of RNA constructs to mitigate PU.1-mediated neuroin-
+ﬂammation in models of AD. We started with a small-scale screen
+of seven varying LNP formulations designed to optimize mRNA
+delivery in cell cultures of human induced pluripotent stem cell
+(iPSC)-derived microglia-like cells (iMGLs) and within the mouse
+brain after local intrathecal injection. Then, the optimal formu-
+lation was used to deliver anti-PU.1 siRNA to mouse models
+of systemic or AD-associated neuroinﬂammation. These treat-
+ments reduced neuroinﬂammation and further validated PU.1
+as a target pathway for potential therapeutic relief in AD or other
+neurodegenerative and neuroinﬂammatory diseases.
+2. Results and Discussion
+2.1. Commercial Lipoplex Transfection Reagents Are Not
+Eﬀective in iMGLs
+We ﬁrst determined if any of eight diﬀerent commercially avail-
+able transfection reagents could be used to eﬃciently deliver
+siRNA to human induced pluripotent stem cell (iPSC)-derived
+microglia-like cells (iMGLs) without causing nonspeciﬁc cytotox-
+icity. For an in vitro system, we chose iMGLs, which have been es-
+tablished as an eﬀective model for the study of AD-associated in-
+ﬂammation in human microglia.[9,37–40] The identity of the iMGL
+cultures was validated morphologically, by immunocytochem-
+istry with the microglia marker IBA1, and by ﬂow cytometry with
+the microglial membrane protein CD11b (Figure S1a, Support-
+ing Information). To determine cytotoxicity of the eight com-
+mercial transfection reagents, we delivered nontargeting scram-
+bled siRNA to iMGLs and, as a control, to iPSC-derived astro-
+cytes (iPS astrocytes, validation shown in Figure S1b, Support-
+ing Information). Four of the eight reagents reduced iMGL vi-
+ability 2 d post-treatment (Mirus 2020, P ≤0.0047; Fugene6,
+P = 0.0027, DharmaFECT, P = 0.0008; RNAiMAX, P = 0.0001;
+Figure 1a), while no signiﬁcant eﬀect on viability was seen in
+iPS astrocytes (P > 0.05; Figure 1b). This conﬁrms our qualita-
+tive observation that microglia are particularly sensitive to non-
+speciﬁc toxicity from transfection reagents. We then investigated
+the eight commercial reagents for their ability to deliver a target-
+ing siRNA to iMGLs, choosing an anti-PU.1 siRNA that targets
+the myeloid-speciﬁc SPI1 gene encoding the PU.1 protein, and
+subsequently quantifying PU.1 mRNA levels in RT-qPCR experi-
+ments. All siRNA sequences were chemically modiﬁed and com-
+mercially available. Only RNAiMAX lipofectamine (RNAiMAX)
+signiﬁcantly reduced PU.1 levels (P = 0.0002; Figure 1a). No
+eﬀect on viability was seen in iPS astrocytes for the anti-PU.1
+siRNA (P > 0.05; Figure 1b). Together, these ﬁndings show that
+none of the eight tested commercial transfection reagents are ca-
+pable of eﬃcient RNA delivery to iMGLs without causing non-
+speciﬁc toxicity.
+2.2. Potent MG-LNP RNA Delivery to iMGLs Can be Achieved In
+Vitro
+Given that LNPs have shown signiﬁcant therapeutic potential as a
+delivery vehicle in vitro and in vivo,[41,42] we next examined seven
+microglia LNP formulations for their ability to deliver RNA to
+iMGLs without causing cellular toxicity.[43] The seven LNP for-
+mulations (A to G; Figure 1c and Table S1, Supporting Infor-
+mation) were created by changing the structure of the ionizable
+lipid, the type of phospholipid, or the modiﬁed lipid-to-RNA ra-
+tios in a previously identiﬁed base formulation.[44] Recent ef-
+forts have used strategies including changing the structure of
+the ionizable lipid, the type of phospholipid, or alterations of the
+lipid:mRNA ratios to identify lead LNP for a particular route of
+administration.[45–47] Initial delivery experiments with the LNP
+used ﬁreﬂy Luciferase mRNA to allow for rapid quantitation of
+delivery eﬃcacy by measuring luminescence. Dosing volume
+was adjusted accordingly depending on overall RNA concentra-
+tion and encapsulation eﬃciency (EE%) of LNP to ensure equal
+amounts of RNA between groups. Transfection with all LNP for-
+mulations containing ionizable lipid (formulations A, B, E–G
+containing either cKK-E12 or 1,2-dioleoyl-3-trimethylammonium
+propane [DOTAP]) gave rise to luminescence in iMGL cultures 1
+d after transfection (Figure 1d). We also found that incorpora-
+tion of 5-methoxyuridine (5moU) modiﬁcations within the Lu-
+ciferase mRNA transcript led to approximately threefold increase
+in protein expression in iMGLs 1 d after transfection with LNP
+formulation A (P ≤0.0001), indicating reduced immunogenicity
+Adv. Mater. 2024, 36, 2309225
+2309225 (2 of 13)
+© 2023 The Authors. Advanced Materials published by Wiley-VCH GmbH
+ 15214095, 2024, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202309225 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Figure 1. In vitro LNP screen to evaluate mRNA delivery in human iMGLs. Comparison of eight commercially available transfection reagents in iMGLs
+and iPS astrocytes for delivery eﬃcacy and nonspeciﬁc toxicity. a) Left: nonspeciﬁc toxicity after delivery of nontargeting siRNA measured by changes in
+cell viability using CellTiter-Glo and right: eﬃcacy of delivery of anti-PU.1 siRNA by measuring PU.1 mRNA levels by use of RT-qPCR 1 d after delivery.
+ANOVA, Dunnett’s post hoc against DPBS treatment. n ≤4 for all conditions. b) Same experiments as in (a) but with iPS astrocytes. ANOVA, Dunnett’s
+post hoc against DPBS treatment. n ≤4 for all conditions. c) LNP formulation variations focused on ionizable lipid and phospholipid composition,
+as well as lipid:mRNA ratio. Below: Structure of lead ionizable lipid, cKK-E12. d) Luminescence detected in iMGLs without (top) or with (bottom)
+pretreatment with 25 ng mL−1 LPS and incubated for 1 d with LNP encapsulating 45 ng of Luciferase mRNA. e) Luciferase mRNA delivery eﬃciency of
+LNP relative to RNAiMAX in iMGLs. Student’s unpaired, two-sided t-test, ****P ≤0.0001. n ≥3 for all conditions. f) Dose–response titration from 1
+to 200 ng mL−1 Luciferase mRNA encapsulated by MG-LNP, evaluating luminescence, viability loss, and toxicity in iMGLs (left) and ES iMGLs (right)
+derived microglia, curves were ﬁtted using Hill’s equation. g) Comparison of percent luminescence of DPBS-treated cells (left, using BrightGlo in
+order to determine expression levels of Luciferase) and cell number (right, using CellTiter-Glo in order to determine cell viability) upon LNP delivery in
+iMGLs (red) and iPS astrocytes (blue) after a 2-d pretreatment with the pro-inﬂammatory molecules LPS or PMA. Student’s unpaired, two-sided t-test,
+****P ≤0.0001. n ≥3 for all conditions.
+of the modiﬁed RNA (Figure S1c, Supporting Information).[48,49]
+The use of modiﬁed mRNA was also found to have no impact on
+cell viability compared to unmodiﬁed mRNA while increasing
+protein expression. All subsequent experiments with Luciferase
+mRNA had the 5moU modiﬁcation.
+Since delivery of genetic material into inﬂammatory microglia
+is of particular interest for the treatment of AD,[7] we also de-
+termined the eﬃciency of LNP-mediated Luciferase mRNA de-
+livery to iMGLs pretreated with the pro-inﬂammatory molecule
+lipopolysaccharide (LPS) for 2 d to induce inﬂammation.
+Adv. Mater. 2024, 36, 2309225
+2309225 (3 of 13)
+© 2023 The Authors. Advanced Materials published by Wiley-VCH GmbH
+ 15214095, 2024, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202309225 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Pre-treatment with LPS did not aﬀect viability for any of the for-
+mulations (Figure S1e,f, Supporting Information, cells cultured
+in the presence of 1 × 10−6 m Actinomycin D for 24 h were used as
+positive control for cell death, see “dead” column). LNP formula-
+tion A (named MG-LNP) demonstrated a signiﬁcantly higher de-
+livery eﬃciency in LPS-treated iMGLs, with ≈24% more lumines-
+cence than formulation A without LPS, P = 0.044 (Figure 1d and
+Figure S1g, Supporting Information), while the other LNP for-
+mulations exhibited similar or even reduced delivery eﬃciencies
+in LPS-treated versus control iMGLs (Figure 1d and Figure S1g,
+Supporting Information). A notable example is formulation B,
+which showed higher delivery eﬃcacy than MG-LNP, but a reduc-
+tion after LPS treatment, making it less suitable for targeting in-
+ﬂammatory microglia. MG-LNP also showed increased delivery
+eﬃciency in iMGLs pre-treated with a second pro-inﬂammatory
+molecule, phorbol myristate acetate (PMA ≈35%, P = 0.006;
+Figure S1g, Supporting Information).
+MG-LNP not only showed the most promising RNA delivery
+eﬃciency in both untreated and pro-inﬂammatory iMGLs among
+the tested LNP formulations, but also tenfold higher delivery ef-
+ﬁciency than RNAiMAX in untreated iMGLs (Figure 1e). There-
+fore, we focused additional characterization experiments on this
+formulation. MG-LNP generated luminescence signal in iMGLs
+within only 2–3 h after delivery (Figure S1d, Supporting Infor-
+mation, left). The luminescence signal peaked at 24 h postdeliv-
+ery and remained steady for 4 d (Figure S1d, Supporting Infor-
+mation, right). We then titrated MG-LNP in iMGLs and a sec-
+ond line of embryonic stem cell (ES)-derived MGLs from 1 to
+200 ng of encapsulated Luciferase mRNA (equivalent to concen-
+trations of 0.02–4 × 10−9 m). We observed that delivery eﬃciency
+(as measured by luminescence) plateaued at ≈10 ng mL−1, with
+negligible cell toxicity and/or loss of viability observed at doses
+up to 50 ng (as measured by MultiTox assay; Figure 1f). We also
+evaluated the MG-LNP in iPS astrocytes treated with the pro-
+inﬂammatory molecules LPS or PMA. In contrast to iMGLs, iPS
+astrocytes did not show a detectable change in the overall level
+of luminescence after MG-LNP-mediated mRNA transfection (P
+> 0.05; Figure 1g). These results indicate that MG-LNP robustly
+delivers mRNA to microglia and other brain cell types, such as as-
+trocytes. In addition, the increased luminescence signal in LPS
+pretreated iMGLs but not in LPS pretreated iPS astrocytes, sug-
+gests our MG-LNP oﬀers a degree of increased transfection eﬃ-
+cacy in microglia during inﬂammation.
+2.3. Localized Delivery of LNP Formulation A In Vivo Eﬃciently
+Transfects Cells of the Brain
+Although MG-LNP emerged as the most promising transfection
+reagent for iMGL cultures, in vitro transfection results are not al-
+ways predictive of in vivo performance, often necessitating more
+costly in vivo screening experiments.[50,51] We evaluated the de-
+livery eﬃcacy in vivo for all seven LNP formulations. Previous
+reports on i.v. administration of MG-LNP demonstrated predom-
+inant expression of the transfected RNA (>90%) within the liver
+and with little penetration across the BBB.[28,52] We therefore in-
+jected LNPs intracisternally (i.c.st.) in order to bypass the BBB
+and deliver RNA directly into the cerebrospinal ﬂuid through the
+foramen magnum of the mouse.[32,35,53–55] C57BL/6J mice were
+injected either intraperitoneally (i.p.), as a control, or i.c.st. with
+0.5 and 0.07 mg kg−1, respectively, with LNP-encapsulated Lu-
+ciferase mRNA (Figure 2a,b), where the smaller dose used for
+i.c.st. injection was due to volume limitations of the cerebrospinal
+ﬂuid compartment. One day after injection, liver and brain were
+dissected, homogenized, and analyzed for luminescence. We ob-
+served no obvious side eﬀects of the LNP treatment in the mice.
+Following i.p. injection, several LNP formulations achieved ro-
+bust luminescence in the liver. MG-LNP also showed lumines-
+cence signal in brain tissue indicating that MG-LNP was able
+to cross the BBB to some extent. However, luminescence signal
+detected in the brain from treatment with MG-LNP was nearly
+an order of magnitude less than in the liver. Administration of
+MG-LNP by i.c.st. led to a twofold greater luminescence within
+the brain compared to i.p. administration; 1.4 ± 0.6 versus i.p.:
+0.67 ± 1.2 luminescence units (Figure 2a,b, see “Whole brain” for
+MG-LNP). Comparable signal was detected for several other LNP
+formulations (Figure 2a,b). Strikingly, all LNP formulations out-
+performed the commercially available reagent Invivofectamine,
+designed for delivery of genetic material into mice, regardless of
+injection route and target organ.
+We then ranked the overall delivery eﬃcacy for the diﬀerent
+LNP formulations both in vitro in iMGLs and in vivo in brain
+and liver after averaging i.c.st and i.p. injection (Figure 2c). Re-
+markably, we observed a strong correlation between in vitro and
+in vivo ranks, suggesting that our in vitro results were predictive
+of in vivo results, in particular for MG-LNP, which stood out as
+the highest performing formulation for both measures. Future
+work will be necessary to further validate whether the observed
+in vitro and in vivo correlation remains predictive for other LNP
+systems. Given the favorable performance of MG-LNP, we com-
+pared its i.p. and i.c.st. delivery eﬃcacy of Luciferase mRNA in var-
+ious organs (Figure 2e). We found that i.p. injection targeted pe-
+ripheral organs preferentially while i.c.st. preferentially targeted
+the brain. We then dissected various brain regions in order ex-
+amine the distribution across the brain (Figure 2f). After i.c.st
+injection with MG-LNP, luminescence was detected throughout
+the brain, with the strongest signal observed closest to the in-
+jection site in the brainstem. I.p. injection consistently yielded
+lower luminescence values in the brain compared to i.c.st., with
+the strongest signal detected in the cortex. These results indicated
+that an i.c.st. route of delivery will preferentially target brains re-
+gions over peripheral organs.
+2.4. MG-LNP Acts as a Potent Delivery Vehicle for Anti-PU.1
+siRNA In Vitro
+We next used our MG-LNP to deliver anti-PU.1 siRNA instead of
+Luciferase mRNA to iMGLs (Table S1, Supporting Information).
+MG-LNP delivery of anti-PU.1 siRNA achieved a concentration-
+dependent reduction in PU.1 mRNA levels, with doses of 200 ng
+mL−1 generating a 42 ± 25% decrease as quantiﬁed by RTqPCR
+(Figure 3a, left panel). In addition to being involved in pro-
+inﬂammatory signaling, the PU.1 gene is necessary for the sur-
+vival of immune cells such as microglia[10] and knockdown of
+PU.1 leads to the death of microglia in vitro over time (Figure 3a,
+right panel). By comparison, transfection with RNAiMAX re-
+quired a ﬁvefold higher dose (1000 ng mL−1) to achieve similar
+Adv. Mater. 2024, 36, 2309225
+2309225 (4 of 13)
+© 2023 The Authors. Advanced Materials published by Wiley-VCH GmbH
+ 15214095, 2024, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202309225 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Figure 2. Delivery of mRNA via local or systemic mRNA-LNP injection. Schematic demonstrating a) intraperitoneal (i.p.) administration or b) intracis-
+ternal (i.c.st) administration of delivery vectors containing Luciferase mRNA. One day after injection, luminescence in resected and homogenized whole
+brain or liver samples was measured. The commercially available in vivo transfection reagent Invivofectamine was included as a reference. c) Composite
+ranking of the various LNP formulations A–G across in vitro and in vivo delivery performance in Figure 1d and Figure 2a,b. The y-axis shows average
+ranking for i.p. and i.c.st. injection with regard to mouse brain luminescence signal for each formulation. The x-axis shows average luminescence signal
+in iMGLs, ranked as an average of the baseline condition and with LPS added. d) Luminescence signal in internal organs and regions of the brain
+after i.p. (yellow bars) or i.c.st. (black bars) delivery of Luciferase mRNA-LNP into wildtype, C57BL/6J mice 1 d after delivery. Organs were resected and
+homogenized prior to luminescence measurements. Student’s unpaired, two-sided t-test. n ≥6 for all conditions.
+eﬀects (52 ± 50%). MG-LNP delivery of anti-PU.1 siRNA at
+500 ng mL−1 achieved PU.1 transcriptional silencing up to 92
+± 2% within 12 h without concurrent increase in cell death
+(Figure 3a, middle and right panel), which only became evident
+after 2 d of PU.1 silencing (Figure 3a, right panel). In addition, we
+explored a number of known PU.1 target genes[13] and observed
+a strong reduction of transcript levels of inﬂammatory microglial
+markers, including TREM2, TNFA, and IL1B, within 2 d of MG-
+LNP delivery of anti-PU.1 siRNA (Figure 3a,b).[13] We also con-
+ﬁrmed our ﬁndings in iMGLs derived from embryonic stem cells
+(see ES-iMGLs, Figure 3b). In accordance with ﬁndings in mouse
+microglia, we observed signiﬁcantly increased levels of APOE
+transcription upon PU.1 silencing in iMGLs (Figure 3b).[13] Im-
+munocytochemistry staining of iMGLs with a PU.1 antibody con-
+ﬁrmed the successful knockdown with anti-PU.1 siRNA as com-
+pared to a scrambled nontargeting siRNA control (Figure 3c).
+We further validated the superior delivery eﬃcacy and lack of
+cytotoxicity of MG-LNPs compared to RNAiMAX through ﬂow
+cytometry. We observed no signiﬁcant drop in PU.1 expres-
+sion (91 ± 14% of DPBS-treated iMGLs) upon LNP delivery of
+Adv. Mater. 2024, 36, 2309225
+2309225 (5 of 13)
+© 2023 The Authors. Advanced Materials published by Wiley-VCH GmbH
+ 15214095, 2024, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202309225 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Figure 3. MG-LNP knockdown of PU.1 alters target gene expression and function in human iMGLs. a) Left: Concentration-response curve in RTqPCR
+experiments—showing SPI1 levels (the gene for PU.1) normalized to ACTB—comparing delivery of siRNA with RNAiMAX (black circles) and MG-LNP
+(blue symbols). Curves were ﬁtted using Hill’s equation. Middle: RTqPCR experiments on various genes, normalized to ACTB, over time after delivery of
+anti-PU.1 siRNA using LNPs. Right: Time course of cell death (red circles) after PU.1 silencing (black circles). Cell death was measured with CellTiterGlo.
+b) RTqPCR after delivery of anti-PU.1 siRNA (PU.1 siRNA) versus nontargeting siRNA (Scrambled), side-by-side in iMGLs (left) and ES iMGLs (right),
+normalized to ACTB. Student’s unpaired, two-sided t-test performed on cycle numbers, ****P ≤0.0001, ***P ≤0.001, n ≥3 for all data points. Bars
+are mean ± SEM, each data point represents one well. c) Immunocytochemistry of iMGLs treated with LNPs carrying either scrambled siRNA (left)
+or anti-PU.1 siRNA (right), staining for cytoplasmic IBA1 and nuclear PU.1, counterstained with Hoechst. d) Flow cytometry using a PU.1 antibody,
+comparing RNAiMAX and LNPs containing either scramble or anti-PU.1 siRNA. Student’s unpaired, two-sided t-test performed on cycle numbers,
+****P ≤0.0001, **P ≤0.01. Bars are mean ± SEM, each data point represents a well. e) Left: concentration response curve, comparing delivery with
+RNAiMAX Lipofectamine and LNPs, right: quantiﬁcation at 500 ng mL−1. Student’s unpaired, two-sided t-test.
+scramble siRNA while we saw a robust reduction of 42 ± 20% af-
+ter anti-PU.1 siRNA delivery (Figure 3d). In contrast, RNAiMAX-
+mediated delivery of scrambled siRNA already reduced ﬂuores-
+cence by 35 ± 8%, compared to 53 ± 21% after anti-PU.1 siRNA
+delivery, again indicating nonspeciﬁc cellular toxicity from the
+transfection reagent. Given that increased PU.1 activity correlates
+with microglial engulfment activity,[57] we then used microglial
+uptake of ﬂuorescently labeled Zymosan A-coated bioparticles as
+a functional measure of PU.1 inhibition in ﬂow cytometry exper-
+iments. RNAiMAX-mediated delivery of scrambled siRNA com-
+plexes again caused a nonspeciﬁc reduction in uptake starting at
+250 ng mL−1, while MG-LNP-mediated delivery only aﬀected up-
+take at concentrations ≥1000 ng mL−1 (see open black vs blue
+circles, Figure 3e). Simultaneously, MG-LNP-mediated delivery
+of anti-PU.1 siRNA consistently resulted in a greater reduction
+in uptake than RNAiMAX-mediated delivery of anti-PU.1 siRNA
+at equivalent doses. Together, these results show that LNPs are
+more eﬃcient at delivering siRNA and better tolerated in iMGLs
+than commercially available reagents (Figure 3e). These ﬁndings
+support the potential use of MG-LNP-mediated anti-PU.1 siRNA
+delivery as a potential therapy for neuroinﬂammatory diseases.
+2.5. MG-LNP Delivery of Anti-PU.1 siRNA by Localized Injection
+Reduces Neuroinﬂammation in Mice
+We used two diﬀerent mouse models of neuroinﬂammation
+to test the eﬀect of localized MG-LNP-delivery of anti-PU.1
+siRNA: 1) an LPS-induced model of systemic inﬂammation,
+and 2) the inducible CK-p25 model of neurodegeneration and
+neuroinﬂammation.[13] Although PU.1 is encoded by Spi1 in hu-
+mans, the homologous gene in mice is Sfpi1, requiring a change
+in sequence in the anti-PU.1 siRNA selected for in vivo experi-
+ments. We ﬁrst validated eﬃciency and tolerability of MG-LNP-
+encapsulated anti-PU.1 siRNA targeted against the mouse Sfpi1
+gene by transfecting a BV2 mouse microglia cell line (BV2-PU.1-
+Luciferase cells) which expresses a PU.1-activity dependent Lu-
+ciferase reporter construct.[17] With these cells, LNPs containing
+scrambled siRNA control caused no change in luminescence
+(Figure S2, Supporting Information), whereas MG-LNPs deliv-
+ering anti-PU.1 siRNA reduced luminescence in a concentration
+dependent manner from ≥10 ng mL−1 on.
+To establish a mouse model of systemic inﬂammation, we in-
+jected six-week-old male C57BL/6J wildtype mice i.p. with LPS
+Adv. Mater. 2024, 36, 2309225
+2309225 (6 of 13)
+© 2023 The Authors. Advanced Materials published by Wiley-VCH GmbH
+ 15214095, 2024, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202309225 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+at 10 mg kg−1 (Figure S3a, Supporting Information). After 1 d,
+LPS-treated mice showed a profound reduction in locomotion in
+an Open Field arena, from 34 ± 9 to 1.4 ± 0.9 m (P ≤0.0001)
+traveled in 10 min (Figure S3b, Supporting Information). LPS
+treatment also increased immune cell inﬁltration of hepatic ves-
+sels in hematoxylin and eosin-stained liver sections, seen as the
+presence of red-stained immune cells at the circumference of the
+vessel wall 1 d after injection. LPS-injected mice exhibited 28 ±
+18% inﬁltrated vessels per liver section versus 5 ± 6% in saline
+injected mice (P ≤0.002, Figure S3c, Supporting Information).
+LPS injection also increased neuroinﬂammatory markers in the
+hippocampus of mice one day later (Figure S3d, Supporting In-
+formation). The number of PU.1-positive nuclei per ﬁeld of view
+was increased 2.5-fold in the dentate gyrus in LPS-injected mice
+(P ≤0.0001), indicating microglial proliferation. Microglial sur-
+face area immunoreactivity of IBA1 was increased by 3.5-fold (P
+≤0.0001) as well, indicating microglial activation. In addition,
+C1Q-positive area rose 2.3-fold (P = 0.01), and astrogliosis, as
+measured by GFAP immunoreactive surface area, was up 1.7-
+fold (P = 0.02).
+We evaluated the eﬀect of PU.1 knockdown in this model of
+systemic inﬂammation by pairing the LPS injection with either
+i.p. or i.c.st. injection of MG-LNP with anti-PU.1 siRNA. In both
+treatment groups, reduced mouse locomotor activity during the
+10-min test period was partially alleviated, with the strongest ef-
+fect seen after i.p. administration (i.p.: 4m ± 1m, P ≤0.005 vs
+i.c.st.: 3m ± 0.8m, P ≤0.05; Figure 4a), indicating that ongoing
+inﬂammation in the periphery can contribute to reduced loco-
+motor activity in mice. In order to assess the degree of inﬂam-
+mation in the periphery, we investigated the liver of the mice
+injected with LPS and the MG-LNPs. Inﬂammation of the liver
+is associated with the presence of inﬁltrating monocytes that
+stain blood vessels red after immersion in hematoxylin & eosin
+reagent.[56] Both i.p. and i.c.st. injection of LNPs with anti-PU.1
+siRNA reduced the percentage of red-stained vessels per ﬁeld of
+view (black arrows) as compared to injection of MG-LNP with
+scrambled siRNA (yellow arrows). As expected, the i.p. injection
+of MG-LNPs with anti-PU.1 siRNA conferred a stronger anti-
+inﬂammatory eﬀect in the periphery than i.c.st. injection, leading
+to a 66 ± 11% decrease (P = 0.01) in red-stained vessels compared
+to only a 15 ± 16% decrease for i.c.st. (P = 0.05) relative to mice
+treated with LPS and nontargeting siRNA (Figure 4b,c).
+We subsequently performed RTqPCR on resected whole brain,
+liver, and spleen in order to examine the transcriptional changes
+induced by LPS injection. We found that Sfpi1 and the down-
+stream inﬂammatory genes Il1b and Ccl2 were strongly upreg-
+ulated in all three tissues 1 d after LPS treatment (max val-
+ues normalized to two for display purposes; Figure 4d, for raw
+data see Figure S4a,b, Supporting Information). In brain tis-
+sue, both i.c.st. and i.p. injection of anti-PU.1 siRNA MG-LNP
+achieved signiﬁcant knockdown of Sfpi1 (5.7- and 1.2-fold de-
+crease, respectively), Il1b (4.2- and 1.9-fold decrease, respec-
+tively) and a reduction in Ccl2 (2.4- and 4.9-fold decrease, re-
+spectively) mRNA transcripts. Notably, i.c.st. injections did not
+result in a signiﬁcant knockdown in the peripheral organs,
+while i.p. injections did. In the liver, i.c.st and i.p. injections
+resulted in 1.2- and 4.3-fold decreases in Sfpi1 RNA, respec-
+tively; 0.8- and 4.2-fold decreases in Il1b RNA, respectively; and
+1.0- and 2.9-fold decreases in Ccl2 RNA, respectively. Similar
+eﬀects were seen in homogenized spleen tissue, where i.c.st
+and i.p. administration led to a 1.4- and 4.2-fold decreases in
+Sfpi1 RNA, respectively; 0.9- and 8.1-fold decreases in Il1b RNA,
+respectively, and a 1.0- and 4.5-fold decreases in Ccl2 RNA,
+respectively.
+Confocal microscopy of hippocampal brain slices of mice in-
+jected with LPS that were stained with a PU.1 antibody indicated
+a comparable reduction in the number of PU.1-positive nuclei
+per ﬁeld of view after anti-PU.1 siRNA delivery by i.p. (from 49 ±
+12 to 32 ± 12, P = 0.02) or i.c.st. (from 38 ± 7 to 30 ± 7, P = 0.02)
+(Figure 4e). Similarly, quantiﬁcation of the microglial markers
+IBA1, C1Q, and astrocytic GFAP by immunohistology showed a
+reduction by 42% for IBA1 (P = 0.02), 84% for C1Q (P = 0.0008)
+and 44% for GFAP (P = 0.03) after i.p. injection with anti-PU.1
+siRNA. Furthermore, i.c.st. injection reduced the immunoreac-
+tivity of these markers, although to a lesser degree, with statisti-
+cal signiﬁcance only reached for C1Q (69% reduction, P = 0.03)
+and GFAP (27% reduction, P = 0.03; Figure 4f). I.p. injection of
+anti-PU.1 siRNA results in a broad reduction in PU.1 expression
+and downstream markers across all organs measured, includ-
+ing the liver and spleen. In contrast, the signiﬁcant reduction
+in PU.1 expression as measured by RTqPCR upon i.c.st. injec-
+tion is localized solely within the brain. The increased eﬃcacy of
+i.p. delivered MG-LNPs could be due to the fact that LPS was in-
+jected systemically and involves the peripheral immune system,
+combined with the fact i.p. injection allows for larger injection
+volumes.
+Finally, we evaluated the anti-inﬂammatory potential of MG-
+LNP-mediated PU.1 knockdown in a transgenic CK-p25 mouse
+model of chronic neuroinﬂammation, which mimics the neu-
+roinﬂammatory aspects of AD.[12,57] Rather than through induc-
+tion of systemic inﬂammation by LPS injection, these mice ex-
+press the neurotoxic CDK5 activator p25 under the control of a
+tamoxifen-inducible promoter speciﬁc to excitatory neurons.[13]
+After induction, CK-p25 mice progressively develop neurodegen-
+erative phenotypes including a profound neuroinﬂammatory re-
+sponse by two weeks.[58] In order to determine an appropriate
+dosing regimen for prolonged MG-LNP-mediated PU.1 knock-
+down, we ﬁrst used Luciferase mRNA to establish the time-course
+of protein expression after i.c.st. MG-LNP delivery. Lumines-
+cence in the liver faded completely by day 4 after i.c.st. injec-
+tion (90 ± 2% reduction) while still remaining detectable in
+hippocampus (41 ± 12% reduction) and cortex (58 ± 9.7% re-
+duction) tissue (Figure S4c, Supporting Information). By day
+7, luminescence in hippocampus and cortex had fallen to be-
+low 10%. Based on these results, we treated CK-p25 mice ev-
+ery third day during the two-week induction period (on days 0,
+3, 6, 9, 12) with i.c.st. MG-LNPs encapsulating either scrambled
+or anti-PU.1 siRNA (Figure S4d, Supporting Information). Af-
+ter 14 d, animals were sacriﬁced and hippocampal tissue was
+assessed for neuroinﬂammatory markers. In CK-p25 mice in-
+jected with anti-PU.1 siRNA, the presence of PU.1-positive cells
+was nearly reduced to baseline control levels (from 66 ± 10 to
+32 ± 17 nuclei, P = 0.001; Figure 4g, with quantiﬁcation in
+Figure 4h). Additional anti-inﬂammatory eﬀects manifested as
+reduction in hippocampal immunoreactivity of the microglial
+markers IBA1 by 61% (P = 0.01), C1Q by 62% (P = 0.02), and
+astrocytic GFAP by 39% (P = 0.03). We imaged the hippocam-
+pus after the two-week p25-induction course in control mice or
+Adv. Mater. 2024, 36, 2309225
+2309225 (7 of 13)
+© 2023 The Authors. Advanced Materials published by Wiley-VCH GmbH
+ 15214095, 2024, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202309225 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Figure 4. Silencing PU.1 with MG-LNP is anti-inﬂammatory during acute systemic inﬂammation and neurodegeneration. a) Left: schematic of in vivo
+mouse experiments. LPS was injected at 10 mg kg−1 i.p., immediately followed by i.c.st. (top) or i.p. (bottom) injection of MG-LNP containing either
+nontargeting siRNA (Scrambled, open blue bars) or anti-PU.1 siRNA (PU.1 siRNA, ﬁlled blue bars). One day later, mice were placed in the Open Field
+arena and had their general locomotor activity measured over 10 min. Student’s unpaired, two-sided t-test. b) Liver sections stained with hematoxylin
+and eosin after i.c.st. (top) or i.p. injection (bottom) of LNPs encapsulating nontargeting or anti-PU.1 siRNA. Black arrows indicate vessels (deﬁned
+as intact, circular, and empty structures of ≈40 μm size) with accumulation of immune cells (red stain). Yellow arrows indicate vessels not containing
+accumulated immune cells. Scale bare is 40 μm. c) Quantiﬁcation. Student’s unpaired, two-sided t-test. d) Comparison levels of Sfpi1, Il1b, and Ccl2
+mRNA transcripts as determined by RTqPCR, normalized to actb, in whole brain, liver, and spleen tissue after i.p. LPS administration and i.p. and i.c.st.
+LNP injection. Student’s unpaired, two-sided t-test performed on cycle numbers. e) Confocal micrographs of hippocampal tissue stained for PU.1-
+Adv. Mater. 2024, 36, 2309225
+2309225 (8 of 13)
+© 2023 The Authors. Advanced Materials published by Wiley-VCH GmbH
+ 15214095, 2024, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202309225 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+mice concomitantly injection course of LNP vehicle containing
+scrambled siRNA. When compared to control saline injections,
+there was no change in expression in these inﬂammatory mi-
+croglial markers, indicating the LNP delivery vehicle was well-
+tolerated and did not induce any obvious inﬂammation (Figure
+S5, Supporting Information). Taken together, these results indi-
+cate that MG-LNP delivery of anti-PU.1 siRNA can potentially be
+used as an anti-inﬂammatory therapeutic in mice with systemic
+inﬂammation and in the CK-p25 mouse model of AD-associated
+neuroinﬂammation.
+3. Conclusions
+In this article, we highlight the need for novel reagents to fa-
+cilitate delivery of nucleic acids, including mRNA and siRNA,
+for basic research as well as for investigating potential thera-
+peutics in microglia. Microglia, the main immune cells of the
+brain, represent an attractive target for neurodegenerative dis-
+orders. They express a majority of the AD risk genes identi-
+ﬁed in genome wide association studies for AD[9] and are criti-
+cal mediators of neuroinﬂammation, a pervasive hallmark of all
+neurodegenerative diseases.[1] However, immune cells are no-
+toriously challenging to transfect in vitro and in vivo. Through
+a small-scale screening of LNP formulations, we identiﬁed an
+LNP formulation, labeled MG-LNP, that delivered mRNA or
+siRNA cargo more eﬀectively and with less cytotoxicity than
+commercial reagents to iMGLs in vitro and to microglia of the
+mouse brain in vivo. Upon localized i.c.st. injection in mice,
+MG-LNP yielded detectable luminescence in all regions of the
+brain with less exposure in peripheral organs as compared to an
+i.p. injection. Furthermore, this formulation exhibited enhanced
+delivery to iMGLs following treatment with pro-inﬂammatory
+molecules.
+We further examined the role of the AD-risk locus and mas-
+ter regulator of inﬂammation, PU.1, in LPS-treated and CK-
+p25 mice. Our ﬁndings demonstrate that PU.1 is a promis-
+ing target for anti-inﬂammatory siRNA therapeutics. Deliver-
+ing anti-PU.1 siRNA with our MG-LNP to LPS-injected mice
+resulted in reduced systemic inﬂammation in LPS-injected
+mice, as measured by reduced immune cell inﬁltration of the
+liver, lowered expression levels of PU.1 in brain, spleen and
+liver, and dampened markers of downstream microglial activa-
+tion in the brain. In the CK-p25 mouse models of neuroin-
+ﬂammation, repeated LNP-mediated i.c.st. delivery of anti-PU.1
+siRNA also reduced neuroinﬂammatory hallmarks close to lev-
+els seen in control mice. We demonstrate proof-of-principle
+that MG-LNP mediated delivery of siRNA can ameliorate the
+neuroinﬂammatory hallmarks that are often observed in neu-
+rodegenerative diseases with associated microglial hyperactiva-
+tion.
+More broadly, delivery of RNA by MG-LNP can be used
+to examine the eﬀects of genetic perturbations in microglia
+cultures and to identify novel therapeutic gene targets in
+other cell types. Additional formulation optimization may re-
+veal LNP candidates which signiﬁcantly improve delivery ef-
+ﬁcacy even after systemic injection by facilitating crossing of
+the BBB or by extending longevity of knockdown eﬀect, ul-
+timately obviating the need for repeated dosing. Finally, MG-
+LNP delivery of silencing RNA into microglia represents a
+novel class of therapeutics for diseases characterized by neu-
+roinﬂammation, including AD and other neurodegenerative dis-
+eases.
+4. Experimental Section
+Human iPS and ES Microglia Experiments:
+Unedited human iPS
+(Coriell, AG09173) and ES (WiCell, WA09) cells were cultured on plates
+(VWR, 62406-161) coated with Matrigel (VWR, BD354277) in mTeSR1 me-
+dia (STEMCELL, 85850), and lifted with ReLeSR (STEMCELL, 05872). G-
+band karyotyping was performed by Cell Line Genetics. iPS and ES cells
+were diﬀerentiated into microglia using an optimized version of a pub-
+lished protocol,[39] starting with the STEMdiﬀHematopoietic Kit (STEM-
+CELL, 05310) reagents for 12 d, followed by maintenance in DMEM/F12,
+HEPES, 2% ITS-G (ThermoFisher, 41400045), 2% B27 (ThermoFisher,
+17504044), 0.5% N2, 1% Glutamax (ThermoFisher, 17502048), 1% NEAA,
+1% PenStrep, 100 × 10−6 m 𝛽-mercaptoethanol (Millipore, M6250), 25 ng
+mL−1 MCSF (PeproTech, 200-35), and 100 ng mL−1 IL34 (PeproTech, 200-
+34). The cells were used between days 45 and 200 in culture. Purity of
+microglia cultures was assessed via ﬂow cytometry (BD, FACSaria IIu) af-
+ter washes in DPBS, blocking in FcR blocking reagent (Miltenyi, 130-059-
+901), and labeling with CD11b-APC (Miltenyi, 130-113-794), NeuN-488
+(Millipore, MAB377X) or GLAST-PE (Miltenyi, 130-095-822). Before ﬂow
+cytometry, the cells were lifted using cell scrapers (Corning, 353085) and
+passed through a 35 μm ﬁlter cap tube (ThermoFisher, 08-771-23). Im-
+munocytochemistry was performed on cells plated directly on untreated
+glass slides (Millipore, PEZGS0816) followed by 4% paraformaldehyde ﬁx-
+ation and a 1-h incubation in blocking solution, consisting of 5% Normal
+Donkey Serum (Millipore, S30-M) and 0.3% Triton-X (Millipore, T8787) in
+DPBS. Cells were incubated with primary antibody overnight in blocking
+solution, followed by three 10-min DPBS washes before exposure to a sec-
+ondary antibody for 30 min at room temperature, and then three 10-min
+DPBS washes with 1 μg mL−1 Hoechst (ThermoFisher, H3570) added to
+the last wash. Finally, the glass coverslip was mounted using Fluoromount-
+G (VWR, 100502-406) and left to solidify overnight at room temperature.
+Confocal microscopy (Zeiss, LSM 880) was performed using a 20× Plan-
+Apochromat objective (Zeiss, 421452-9880-000). Luminescence was trig-
+gered with Bright-Glo reagents (Promega, E2650) and immediately mea-
+sured using an EnVision Multilabel Plate Reader (PerkinElmer, 2105-0010).
+Toxicity and loss of viability was measured with MultiTox-Fluor Multiplex
+Cytotoxicity Assay (Promega, G9200), and read on the EnVision Multi-
+label Plate Reader, after 30 min incubation at RT. Uptake assays were
+positive nuclei and all nuclei with Hoechst in LPS injected mice, co-injected i.p. with either nontargeting siRNA (top) or anti-PU.1 siRNA (bottom).
+Right: Quantiﬁcation of PU.1-positive cells for untreated (no LPS or LNP injection) mice in gray bars (n = 3), LPS-injected mice co-injected with LNPs
+containing scrambled (empty blue bars, n = 6 for i.p. and 9 for i.c.st.) or anti-PU.1 siRNA (ﬁlled blue bars, n = 6 for i.p. and 6 for i.c.st). Student’s
+unpaired, two-sided t-test. Scale bar is 50 μm. f) Confocal micrographs of hippocampal tissue stained for IBA1, C1Q, and GFAP and quantiﬁcation of
+immunoreactive area for untreated (n = 3), treated with LPS alone (n = 3), and treated with LPS and scrambled or anti-PU.1 siRNA by i.p. (n = 6)
+or i.c.st. (n = 9) injection. g) Confocal micrographs of hippocampal dentate gyrus staining of CK-p25 mice treated with LNPs containing scrambled
+nontargeting siRNA (top) or anti-PU.1 siRNA (bottom). h) Quantiﬁcation of mice from (f), n = 4, 6, and 7 for CK-p25 mice, CK-p25 mice treated with
+scrambled siRNA, and CK-p25 mice treated with anti-PU.1 siRNA, respectively. Student’s unpaired, two-sided t-test performed between CK-p25 mice.
+Bars are mean ± SEM, each data point represents a well.
+Adv. Mater. 2024, 36, 2309225
+2309225 (9 of 13)
+© 2023 The Authors. Advanced Materials published by Wiley-VCH GmbH
+ 15214095, 2024, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202309225 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+performed by overnight incubation of stem cell-derived microglia in clear-
+bottom 96-well plates (VWR, 3603) with 30 μg mL−1 pHrodo-labelled zy-
+mosan A bioparticles (ThermoFisher, P35365), analyzed with ﬂow cytome-
+try (BD, FACS Celesta HTS-1). Microglial activation was achieved by a 2-d
+incubation with 25 ng mL−1 of either IFN𝛾(R&D Systems, 285-IF-100),
+LPS (Millipore, L-2654), or PMA (Millipore, P1585-25MG). Commercially
+used transfection reagents were added exactly according to the instruc-
+tions of the manufacturer (Lipofectamine: ThermoFisher, 18324012; Lipo-
+fectamine RNAiMAX: ThermoFisher, 13778075; Invivofectamine, Ther-
+moFisher, IVF3001). Astrocytes were derived from human iPS (Coriell,
+AG09173) cells as previously described.[58]
+BV2 PU.1 Reporter Cell Line:
+The BV2 PU.1-Luciferase reporter cell
+line was made by inserting ﬁve tandem copies of the 𝜆B motif,[59] fol-
+lowed by a minimal promoter and the luciferase coding sequence from
+the pGL4.23 luciferase plasmid (Promega, E8411), into the pROSA26-1
+plasmid (Addgene, 21714). Then, the reporter construct was transfected
+into BV2 cells with lipofectamine (ThermoFisher, 18324012). BV2 cells
+were cultured in RPMI media (Millipore, R7388-500ML), 1% PenStrep
+(Wisent, 450-201-EL), 10% FBS (Gemini, 100-106) and were under con-
+stant selection with 1% G418 (ThermoFisher, 10131027), grown in CELL-
+STAR ﬂasks (VWR, 82050-872), and passaged with TrypLE (ThermoFisher,
+12605028).
+Lipid Nanoparticle Preparation:
+LNP were formulated through a mi-
+croﬂuidic mixing process as previously described.[43,60] Ionizable lipid
+cKK-E12 was synthesized according to previously published protocols.[28]
+Cholesterol, phospholipids, and PEG-lipid were purchased from Avanti Po-
+lar Lipids and stored at −20 °C prior to use. Brieﬂy, all lipids were dissolved
+as stock solutions in 100% ethanol at a concentration of 10–20 mg mL−1.
+RNA was dissolved in 10 × 10−3 m citrate buﬀer pH 3.0 at a concentration
+of 133 μg mL−1. Lipid solutions were mixed with a 35:46.5:16:2.5 mol% ra-
+tio of ionizable lipid:cholesterol:phospholipid:PEG-lipid unless otherwise
+speciﬁed. The ﬁnal lipid solution was calculated such that the ﬁnal ratio
+of ionizable lipid:RNA was 10:1 unless otherwise indicated. These solu-
+tions were mixed through dual-syringe pumps at a volume ratio of 3:1
+aqueous:ethanol within a microﬂuidic channel in a PDMS mold, result-
+ing in LNP with a ﬁnal RNA concentration of 100 μg mL−1. LNP solutions
+were then dialyzed against 1× PBS using 20K MWCO (for mRNA) or 3.5K
+MWCO (siRNA) Slide-a-lyzer cassettes (ThermoFisher, 66005) at 4 °C for
+at least 2 h. After dialysis, LNP aliquots were removed for characteriza-
+tion, and the remaining solution was stored at 4 °C until dosing experi-
+ments were performed in vitro or in vivo. For in vivo experiments, LNP
+were concentrated using centrifugal ﬁlters of the appropriate MWCO (20K
+for mRNA, 3.5K for siRNA LNP) at 2000 g for 20 min at 4 °C. Delivery of
+genetic cargo with LNPs was achieved by adding LNPs directly to cell cul-
+ture media. Cargo included Fireﬂy Luciferase mRNA (Trilink Biosciences,
+L-7202), siRNA for PU.1 (Horizon, M-041420/ orM-010537), and control
+nontargeting siRNA (Horizon, D-001810).
+LNP Characterization:
+Size, polydispersity, and zeta potential were
+measured using a Malvern Zetasizer. Brieﬂy, LNP solutions were diluted
+100× in 1× PBS to a ﬁnal volume of 1 mL in disposable polystyrene cu-
+vettes to evaluate particle diameter and polydispersity. For zeta potential
+measurements, LNP solutions were instead diluted 100× in 0.1× PBS and
+measured in disposable folded capillary cells. Encapsulation eﬃciency was
+calculated using a Ribogreen Quant-iT entrapment assay (ThermoFisher,
+R11491) with ﬂuorescence measured by a plate reader according to man-
+ufacturer’s protocol and compared to a calibration curve of the encapsu-
+lated mRNA or siRNA cargo. LNP were diluted 100× in TE buﬀer with and
+without 2% Triton, and encapsulation eﬃciency was calculated as previ-
+ously described.
+EE% = 1 −
+ConcentrationEncapsulated
+ConcentrationFree
+(1)
+Mouse Experiments:
+All experiments with mice were performed in ac-
+cordance with U.S. law and received ethical approval by the Committee for
+Animal Care of the Division of Comparative Medicine at Massachusetts
+Institute of Technology under protocol 0621-033-24. Mice were housed
+on a 12-h light-dark cycle at 24 °C, 45% relative humidity and food (En-
+vigo, Teklad RMH 3000) and with water accessible ad libitum. Experi-
+ments were performed in male, two-month-old C57BL/6J (JAX, 000664)
+mice. Lipopolysaccharides (Millipore, L6529) were injected using a 1 mL
+syringe (BD, 309659) with a 26G needle (BD, 305110) at 10 mg kg−1 1
+d before behavioral experiments and perfusions. Intracisternal injection
+was performed with a 30G needle (BD, 305128) as described before.[61]
+The cap of the needle was cut 7 mm from the top, so that 2.5 mm of
+the needle protrudes beyond the opening. The needle and cut cap were
+attached to a Luer lock syringe (Hamilton, 81020). Immediately prior to
+injection, the back of the head was shaved with an electric razor in 2%
+isoﬂurane anesthetized mice. The area was then sterilized with three al-
+ternations of 70% ethanol and povidine. The needle insertion point (fora-
+men magnum) was readily recognizable as a fold in the skin when the
+head was angled down. Ophthalmic ointment (Dechra, Puralube) was ap-
+plied to both eyes. Neurodegeneration was assessed using the in-house
+CK-p25 mice[13] (and control littermate CK mice). In the CK-p25 mice,
+p25 expression was driven by the CaMKII-tTA (CK; JAX, 003010) pro-
+moter crossed to tetO-p25 mice (JAX, 005706). p25 expression was sup-
+pressed by rearing on 1 g kg−1 doxycycline diet (Bio-Rad, custom-made);
+p25 expression was induced by withdrawal of doxycycline and growth on
+regular diet. Open Field activity was recorded using a camera attached
+to the ceiling and analyzed automatically using EthoVision XT (Noldus)
+software. Open Field activity was averaged from two 10-min trials mea-
+suring the movement of the mouse in a custom-made plastic compart-
+ment measuring 40 × 40 cm. For Luciferase mRNA distribution, the mice
+were decapitated, and blood was collected from the neck, followed by col-
+lecting internal organs and dissecting the brain. The biopsies were then
+dounce-homogenized with a loose pestle (VWR, 62400-595) in Bright-
+Glo, spun at 15 000 rpm for 5 min. The supernatant was then trans-
+ferred into a white 96-well plate (VWR, 354651) and measured for lumi-
+nescence using an EnVision Multilabel Plate Reader (PerkinElmer, 2105-
+0010).
+Reverse Transcriptase Quantitative Polymerase Chain Reaction (RT-qPCR):
+mRNA extraction was performed by use of the RNeasy Plus Mini Kit (Qi-
+agen, 74134) and then converted into cDNA using the EcoDry RT Pre-
+Mix reagent (Takara, 639542). cDNA was added to the SsoFast EvaGreen
+qPCR mastermix (Bio-Rad, 1725202) and primers were ordered from IDT,
+plated in Hard-Shell 96-well plates (Bio-Rad, Hsp9641), sealed (Bio-Rad,
+MSB1001), spun in a PCR plate spinner (Labnet, C1000) and, subse-
+quently, gene expression was quantiﬁed using a qPCR detection system
+(Bio-Rad, CFX96) for 40 cycles. Relative gene expression changes were cal-
+culated using the 2−ΔΔCT method. Values were normalized to expression
+levels of actb (mouse) or Actb (human).
+Immunohistology in Mice:
+Mice were deeply anesthetized with 5%
+isoﬂurane and intracardially perfused with 4 °C PBS, followed by dis-
+section of the brain and/or peripheral organs, and subsequent drop-
+ﬁxing in 4% paraformaldehyde overnight at 4 °C,[62] followed by sec-
+tioning into 40 μm coronal free-ﬂoating slices on a vibratome (Le-
+ica, VT1200S). Free-ﬂoating sections were transferred to blocking so-
+lution [5% normal donkey serum (Millipore, S30-M) and 0.3% Triton-
+X (Millipore, T8787)] and stained overnight in blocking solution with
+primary antibody at 4 °C. Secondary antibody was added in block-
+ing solution for 30 min at room temperature, followed by three 10-
+min DPBS washes with 1 μg mL−1 Hoechst (ThermoFisher, H3570)
+added to the last wash. Finally, the glass coverslip was mounted us-
+ing Fluoromount-G (VWR, 100502-406) and left to solidify overnight
+at room temperature. Confocal microscopy (Zeiss, LSM 880) was per-
+formed using a 20× Plan-Apochromat objective (Zeiss, 421452-9880-
+000). Livers were stained with hematoxylin and eosin Y (Tyr Scien-
+tiﬁc LLC) in the following sequence: sectioning, mounting on glass
+slide, dehydration in 100% xylene, 100% ethanol, 70% ethanol—followed
+by rehydration in deionized water and exposure to hematoxylin, blu-
+ing solution, 100% ethanol, eosin Y, 100% ethanol, and ﬁnally 100%
+xylene before coverslipping and imaging with a brightﬁeld camera
+(Zeiss, LSM 900).
+Statistical Analysis:
+All experiments were performed with at least three
+replicates, and each measurement was replicated at least three times.
+Adv. Mater. 2024, 36, 2309225
+2309225 (10 of 13)
+© 2023 The Authors. Advanced Materials published by Wiley-VCH GmbH
+ 15214095, 2024, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202309225 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Results are presented as mean ± SEM with individual data points
+also presented. Statistical analysis was performed using GraphPad
+Prism software. Unpaired Student’s t-tests were performed when com-
+paring two groups with P ≤0.05 considered statistically signiﬁcant.
+Product
+Source
+Identiﬁer
+Anti-human CD11b-APC,
+1:50
+Miltenyi
+130-113-231
+Anti-human/mouse IBA1,
+1:500
+SYSY
+234004
+Anti-human NeuN-488
+Millipore
+MAB377X
+Anti-human/mouse PU.1,
+1:500
+CST
+2258S
+Anti-human GLAST, 1:50
+Miltenyi
+130-095-822
+Anti-human PU.1, 1:500
+CST
+2266S
+Anti-mouse GFAP, 1:500
+Abcam
+Ab53554
+Anti-mouse C1q, 1:500
+Abcam
+ab182451
+CellTiter-Glo
+Promega
+G7570
+Bright-Glo
+Promega
+E2610
+Software
+ImageJ
+NIH
+https://imagej.net/Welcome
+Prism
+GraphPad
+https://www.graphpad.com
+EthoVisionXT
+Noldus
+https://www.noldus.com/ethovision-xt
+Cyberduck
+Open source
+https://cyberduck.io/
+RTqPCR primers
+TREM2-F
+Human
+ATGATGCGGGTCTCTACCAG
+TREM2-R
+Human
+GGAACCAGAGATCTCCAGCA
+IL1B-F
+Human
+GCATCCAGCTACGAATCTCC
+IL1B-R
+Human
+TCGTTATCCCATGTGTCGAA
+APOE-F
+Human
+CGCTTTTGGGATTACCTGCG
+APOE-R
+Human
+GGGGTCAGTTGTTCCTCCAG
+𝛽ACTIN-F
+Human
+GGATGCAGAAGGAGATCACTG
+𝛽ACTIN-R
+Human
+CGATCCACACGGAGTACTTG
+PU.1-F
+Human
+GCGTGCAAAATGGAAGGGTT
+PU.1-R
+Human
+AGATCCGTGTCATAGGGCAC
+TYROBP-F
+Human
+CCTGGCCGTGTACTTCCTG
+TYROBP-R
+Human
+TCGCTGTAGACATCCGACCT
+CCL2-F
+Human
+TCCCAAAGAAGCTGTGATCTTCA
+CCL2-R
+Human
+TTTGCTTGTCCAGGTGGTCC
+C1Q-F
+Human
+GCATCCAGTTGGAGTTGACA
+C1Q-R
+Human
+GTCCTCGGTCACCATAGAGG
+𝛽actin-F
+Mouse
+CTCTGGCTCCTAGCACCATGAAGA
+𝛽actin-R
+Mouse
+GTAAAACGCAGCTCAGTAACAGTCCG
+Pu.1-F
+Mouse
+GAGAAGCTGATGGCTTGGAG
+Pu.1-R
+Mouse
+GGCGAATCTTTTTCTTGCTG
+Il1b-F
+Mouse
+GAATCTATACCTGTCCTGTG
+Il1b-R
+Mouse
+ATCTTGTTGAAGACAAACCG
+Ccl2-F
+Mouse
+CACTCACCTGCTGCTACTCA
+Ccl2-R
+Mouse
+GCTTGGTGACAAAAACTACAGC
+Supporting Information
+Supporting Information is available from the Wiley Online Library or from
+the author.
+Acknowledgements
+The authors would like to acknowledge the following individuals, agen-
+cies, and foundations for their kind support to this work: The JPB Foun-
+dation and the Picower Institute for Learning and Memory PIIF Engineer-
+ing Collaboration Award (to L.-H.T. and R.S.L.), Robert and Renee Belfer
+Family, Eduardo Eurnekian, Lester A. Gimpelson, and Jay L. and Carroll
+Miller (to L.-H.T.). W.T.R. was supported by the Swiss National Science
+Foundation (Grants Nos. 177920 and 171909) and the Alzheimer’s As-
+sociation (Grant No. AARF-19-616816). J.L.A. was supported by a Koch
+Institute Graduate Fellowship.
+Conﬂict of Interest
+The authors declare no competing interests. For a list of entities with
+which R.L. is, or has been recently involved, compensated or un-
+compensated, see: https://www.dropbox.com/s/yc3xqb5s8s94v7x/Rev%
+20Langer%20COI.pdf?dl=0
+Author Contributions
+W.T.R. and J.L.A. contributed equally to this work. W.T.R., J.L.A., J.P., O.S.F.,
+R.S.L., and L.-H.T. conceived of the study and wrote the manuscript. W.T.R.,
+J.L.A, O.S.F., J.M.B., J.P., H.W., and M.M.H. performed the experiments
+and analyzed the results.
+Data Availability Statement
+The data that support the ﬁndings of this study are available from the
+corresponding author upon reasonable request.
+Keywords
+lipid nanoparticles, microglia, neurodegeneration, neuroinﬂammation,
+RNA delivery
+Received: September 7, 2023
+Revised: November 22, 2023
+Published online: December 8, 2023
+[1] W.-W. Chen, X. Zhang, W.-J. Huang, Mol. Med. Rep. 2016, 13, 3391.
+[2] H. S. Kwon, S.-H. Koh, Transl. Neurodegener. 2020, 9, 42.
+[3] S. Amor, F. Puentes, D. Baker, P. Van Der Valk, Immunology 2010, 129,
+154.
+[4] T. P. J. Knowles, M. Vendruscolo, C. M. Dobson, Nat. Rev. Mol. Cell
+Biol. 2014, 15, 384.
+[5] B. E. Deverman, B. M. Ravina, K. S. Bankiewicz, S. M. Paul, D. W. Y.
+Sah, Nat. Rev. Drug Discovery 2018, 17, 641.
+[6] G. Day, N. Scarmeas, R. Dubinsky, K. Coerver, A. Mostacero, B. West,
+S. Wessels, M. Armstrong, Neurolog 2022, 15, 619.
+[7] S. Hickman, S. Izzy, P. Sen, L. Morsett, J. El Khoury, Nat. Neurosci.
+2018, 21, 1359.
+[8] F. L. Heppner, R. M. Ransohoﬀ, B. Becher, Nat. Rev. Neurosci. 2015,
+16, 358.
+[9] J. Penney, W. T. Ralvenius, L.-H. Tsai, Mol. Psychiatry 2020, 25, 148.
+[10] A. M. Smith, H. M. Gibbons, R. L. Oldﬁeld, P. M. Bergin, E. W. Mee,
+R. L. M. Faull, M. Dragunow, Glia 2013, 61, 929.
+[11] A. A. Pimenova, M. Herbinet, I. Gupta, S. I. Machlovi, K. R. Bowles,
+E. Marcora, A. M. Goate, Neurobiol. Dis. 2021, 148, 105217.
+Adv. Mater. 2024, 36, 2309225
+2309225 (11 of 13)
+© 2023 The Authors. Advanced Materials published by Wiley-VCH GmbH
+ 15214095, 2024, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202309225 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+[12] E. Gjoneska, A. R. Pfenning, H. Mathys, G. Quon, A. Kundaje, L.-H.
+Tsai, M. Kellis, Nature 2015, 518, 365.
+[13] K.-L. Huang, E. Marcora, A. A. Pimenova, A. F. Di Narzo, M. Kapoor,
+S. C. Jin, O. Harari, S. Bertelsen, B. P. Fairfax, J. Czajkowski, V.
+Chouraki, B. Grenier-Boley, C. Bellenguez, Y. Deming, A. Mckenzie,
+T. Raj, A. E. Renton, J. Budde, A. Smith, A. Fitzpatrick, J. C. Bis, A.
+Destefano, H. H. H. Adams, M. A. Ikram, S. Van Der Lee, J. L. Del-
+Aguila, M. V. Fernandez, L. Ibañez, R. Sims, V. Escott-Price, et al., Nat.
+Neurosci. 2017, 20, 1052.
+[14] H. Cao, X. Zhou, Y. Chen, F. C. F. Ip, Y. Chen, N. C. H. Lai, R. M. N.
+Lo, E. P. S. Tong, V. C. T. Mok, T. C. Y. Kwok, A. N. Initiative, A. K. Y.
+Fu, N. Y. Ip, J. Alzheimer’s Dis. 2022, 86, 1861.
+[15] N. M. Dräger, S. M. Sattler, C. T.-L. Huang, O. M. Teter, K. Leng,
+S. H. Hashemi, J. Hong, G. Aviles, C. D. Clelland, L. Zhan, J. C.
+Udeochu, L. Kodama, A. B. Singleton, M. A. Nalls, J. Ichida, M. E.
+Ward, F. Faghri, L. Gan, M. Kampmann, Nat. Neurosci. 2022, 25,
+1149.
+[16] J. Rustenhoven, A. M. Smith, L. C. Smyth, D. Jansson, E. L. Scotter, M.
+E. V. Swanson, M. Aalderink, N. Coppieters, P. Narayan, R. Handley,
+C. Overall, T. I. H. Park, P. Schweder, P. Heppner, M. A. Curtis, R. L.
+M. Faull, M. Dragunow, Mol. Neurodegener. 2018, 13, 44.
+[17] W. T. Ralvenius, A. E. Mungenast, H. Woolf, M. M. Huston, T.
+Z. Gillingham, S. K. Godin, J. Penney, H. P. Cam, F. Gao, C. G.
+Fernandez, B. Czako, Y. Lightfoot, W. J. Ray, A. Beckmann, A. M.
+Goate, E. Marcora, C. Romero-Molina, P. Ayata, A. Schaefer, E.
+Gjoneska, L.-H. Tsai, J. Exp. Med. 2023, 220, e20222105.
+[18] W. M. Pardridge, Front. Aging Neurosci. 2020, 11, 373.
+[19] S. F. Dowdy, Nat. Biotechnol. 2017, 35, 222.
+[20] H. Yin, R. L. Kanasty, A. A. Eltoukhy, A. J. Vegas, J. R. Dorkin, D. G.
+Anderson, Nat. Rev. Genet. 2014, 15, 541.
+[21] R. Kanasty, J. R. Dorkin, A. Vegas, D. Anderson, Nat. Mater. 2013, 12,
+967.
+[22] K. A. Whitehead, R. Langer, D. G. Anderson, Nat. Rev. Drug Discovery
+2009, 8, 129.
+[23] J. L. Andresen, O. S. Fenton, MRS Bull. 2021, 46, 832.
+[24] F. P. Polack, S. J. Thomas, N. Kitchin, J. Absalon, A. Gurtman, S.
+Lockhart, J. L. Perez, G. Pérez Marc, E. D. Moreira, C. Zerbini,
+R. Bailey, K. A. Swanson, S. Roychoudhury, K. Koury, P. Li, W. V.
+Kalina, D. Cooper, R. W. Frenck, L. L. Hammitt, Ö. Türeci, H. Nell,
+A. Schaefer, S. Ünal, D. B. Tresnan, S. Mather, P. R. Dormitzer,
+U. Sahin, K. U. Jansen, W. C. Gruber, N. Engl. J. Med. 2020, 383,
+2603.
+[25] L. R. Baden, H. M. El Sahly, B. Essink, K. Kotloﬀ, S. Frey, R. Novak, D.
+Diemert, S. A. Spector, N. Rouphael, C. B. Creech, J. Mcgettigan, S.
+Khetan, N. Segall, J. Solis, A. Brosz, C. Fierro, H. Schwartz, K. Neuzil,
+L. Corey, P. Gilbert, H. Janes, D. Follmann, M. Marovich, J. Mascola,
+L. Polakowski, J. Ledgerwood, B. S. Graham, H. Bennett, R. Pajon, C.
+Knightly, et al., N. Engl. J. Med. 2021, 384, 403.
+[26] C. Lorenzer, M. Dirin, A.-M. Winkler, V. Baumann, J. Winkler, J. Con-
+trolled Release 2015, 203, 1.
+[27] Y.-N. Zhang, W. Poon, A. J. Tavares, I. D. Mcgilvray, W. C. W. Chan, J.
+Controlled Release 2016, 240, 332.
+[28] Y. Dong, K. T. Love, J. R. Dorkin, S. Sirirungruang, Y. Zhang, D. Chen,
+R. L. Bogorad, H. Yin, Y. Chen, A. J. Vegas, C. A. Alabi, G. Sahay, K. T.
+Olejnik, W. Wang, A. Schroeder, A. K. R. Lytton-Jean, D. J. Siegwart, A.
+Akinc, C. Barnes, S. A. Barros, M. Carioto, K. Fitzgerald, J. Hettinger,
+V. Kumar, T. I. Novobrantseva, J. Qin, W. Querbes, V. Koteliansky,
+R. Langer, D. G. Anderson, Proc. Natl. Acad. Sci. USA 2014, 111,
+3955.
+[29] D. Lalka, R. K. Griﬃth, C. L. Cronenberger, J. Clin. Pharmacol. 1993,
+33, 657.
+[30] H. Gao, K. Matyjaszewski, J. Am. Chem. Soc. 2007, 129, 6633.
+[31] F. Ma, L. Yang, Z. Sun, J. Chen, X. Rui, Z. Glass, Q. Xu, Sci. Adv. 2020,
+6, eabb4429.
+[32] H. Tanaka, T. Nakatani, T. Furihata, K. Tange, Y. Nakai, H. Yoshioka,
+H. Harashima, H. Akita, Mol. Pharm. 2018, 15, 2060.
+[33] B. Choi, M.-H. Ahn, S. Hong, E. E. Barcelon, J. Sangshetti, R. B. Arote,
+S. J. Lee, RSC Adv. 2021, 11, 36792.
+[34] H. K. Dhaliwal, Y. Fan, J. Kim, M. M. Amiji, Mol. Pharm. 2020, 17,
+1996.
+[35] S. Guo, F. Cázarez-Márquez, H. Jiao, E. Foppen, N. L. Korpel, A. E.
+Grootemaat, N. Liv, Y. Gao, N. Van Der Wel, B. Zhou, G. Nie, C.-X. Yi,
+ACS Appl. Mater. Interfaces 2022, 14, 5066.
+[36] Z. R. Cohen, S. Ramishetti, N. Peshes-Yaloz, M. Goldsmith, A. Wohl,
+Z. Zibly, D. Peer, ACS Nano 2015, 9, 1581.
+[37] A. E. Mungenast, S. Siegert, L.-H. Tsai, Mol. Cell. Neurosci. 2016, 73,
+13.
+[38] J. Muﬀat, Y. Li, B. Yuan, M. Mitalipova, A. Omer, S. Corcoran, G.
+Bakiasi, L.-H. Tsai, P. Aubourg, R. M. Ransohoﬀ, R. Jaenisch, Nat.
+Med. 2016, 22, 1358.
+[39] A. Mcquade, M. Coburn, C. H. Tu, J. Hasselmann, H. Davtyan, M.
+Blurton-Jones, Mol. Neurodegener. 2018, 13, 67.
+[40] G. Sienski, P. Narayan, J. M. Bonner, N. Kory, S. Boland, A. A.
+Arczewska, W. T. Ralvenius, L. Akay, E. Lockshin, L. He, B. Milo, A.
+Graziosi, V. Baru, C. A. Lewis, M. Kellis, D. M. Sabatini, L.-H. Tsai, S.
+Lindquist, Sci. Transl. Med. 2021, 13, eaaz4564.
+[41] H. Xue, P. Guo, W.-C. Wen, H. Wong, Curr. Pharm. Des. 2015, 21, 3140.
+[42] O. S. Fenton, K. N. Olafson, P. S. Pillai, M. J. Mitchell, R. Langer, Adv.
+Mater. 2018, 30, 1705328.
+[43] D. Chen, K. T. Love, Y. Chen, A. A. Eltoukhy, C. Kastrup, G. Sahay, A.
+Jeon, Y. Dong, K. A. Whitehead, D. G. Anderson, J. Am. Chem. Soc.
+2012, 134, 6948.
+[44] K. J. Kauﬀman, J. R. Dorkin, J. H. Yang, M. W. Heartlein, F. Derosa,
+F. F. Mir, O. S. Fenton, D. G. Anderson, Nano Lett. 2015, 15,
+7300.
+[45] E. Álvarez-Benedicto, L. Farbiak, M. Márquez Ramírez, X. Wang, L. T.
+Johnson, O. Mian, E. D. Guerrero, D. J. Siegwart, Biomater. Sci. 2022,
+10, 549.
+[46] L. Yang, F. Ma, F. Liu, J. Chen, X. Zhao, Q. Xu, Mol. Ther.–Nucleic Acids
+2020, 19, 1357.
+[47] M. J. Carrasco, S. Alishetty, M.-G. Alameh, H. Said, L. Wright, M.
+Paige, O. Soliman, D. Weissman, T. E. Cleveland, A. Grishaev, M. D.
+Buschmann, Commun. Biol. 2021, 4, 956.
+[48] M. P. Lokugamage, Z. Gan, C. Zurla, J. Levin, F. Z. Islam, S. Kalathoor,
+M. Sato, C. D. Sago, P. J. Santangelo, J. E. Dahlman, Adv. Mater. 2020,
+32, 1904905.
+[49] K. Karikó, H. Muramatsu, F. A. Welsh, J. Ludwig, H. Kato, S. Akira, D.
+Weissman, Mol. Ther. 2008, 16, 1833.
+[50] P. P. G. Guimaraes, R. Zhang, R. Spektor, M. Tan, A. Chung, M.
+M. Billingsley, R. El-Mayta, R. S. Riley, L. Wang, J. M. Wilson, M. J.
+Mitchell, J. Controlled Release 2019, 316, 404.
+[51] K. Paunovska, C. D. Sago, C. M. Monaco, W. H. Hudson, M. G.
+Castro, T. G. Rudoltz, S. Kalathoor, D. A. Vanover, P. J. Santangelo,
+R. Ahmed, A. V. Bryksin, J. E. Dahlman, Nano Lett. 2018, 18,
+2148.
+[52] L. Miao, J. Lin, Y. Huang, L. Li, D. Delcassian, Y. Ge, Y. Shi, D. G.
+Anderson, Nat. Commun. 2020, 11, 2424.
+[53] H. Peluﬀo, U. Unzueta, M. L. Negro-Demontel, Z. Xu, E.
+Váquez, N. Ferrer-Miralles, A. Villaverde, Biotechnol. Adv. 2015, 33,
+277.
+[54] D. Rosenblum, A. Gutkin, R. Kedmi, S. Ramishetti, N. Veiga, A. M.
+Jacobi, M. S. Schubert, D. Friedmann-Morvinski, Z. R. Cohen, M. A.
+Behlke, J. Lieberman, D. Peer, Sci. Adv. 2020, 6, eabc9450.
+[55] R. L. Rungta, H. B. Choi, P. J. Lin, R. W. Ko, D. Ashby, J. Nair, M.
+Manoharan, P. R. Cullis, B. A. Macvicar, Mol. Ther.–Nucleic Acids 2013,
+2, 136,
+[56] J. C. Cruz, H.-C. Tseng, J. A. Goldman, H. Shih, L.-H. Tsai, Neuron
+2003, 40, 471.
+Adv. Mater. 2024, 36, 2309225
+2309225 (12 of 13)
+© 2023 The Authors. Advanced Materials published by Wiley-VCH GmbH
+ 15214095, 2024, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202309225 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+[57] J. Yu, L. Liu, H. Zhang, Y. Wu, H. Pei, L. Ma, A. Xiong, C. Xie, RSC Adv.
+2018, 8, 33338.
+[58] H. Mathys, C. Adaikkan, F. Gao, J. Young, E. Manet, M. Hemberg, P.
+De Jager, R. Ransohoﬀ, A. Regev, L. Tsai, Cell Rep. 2017, 21, 366.
+[59] Y.-T. Lin, J. Seo, F. Gao, H. M. Feldman, H.-L. Wen, J. Penney, H.
+P. Cam, E. Gjoneska, W. K. Raja, J. Cheng, R. Rueda, O. Kritskiy, F.
+Abdurrob, Z. Peng, B. Milo, C. J. Yu, S. Elmsaouri, D. Dey, T. Ko, B. A.
+Yankner, L.-H. Tsai, Neuron 2018, 98, 1141.
+[60] M. Munde, S. Wang, A. Kumar, C. E. Stephens, A. A. Farahat, D.
+W. Boykin, W. D. Wilson, G. M. K. Poon, Nucleic Acids Res. 2014,
+421.
+[61] O. S. Fenton, K. J. Kauﬀman, R. L. Mcclellan, J. C. Kaczmarek, M. D.
+Zeng, J. L. Andresen, L. H. Rhym, M. W. Heartlein, F. Derosa, D. G.
+Anderson, Angew. Chem., Int. Ed. 2018, 57, 13582.
+[62] S. C. Hofer, W. T. Ralvenius, M. S. Gachet, J.-M. Fritschy, H. U.
+Zeilhofer, J. Gertsch, Neuropharmacology 2015, 98, 78.
+Adv. Mater. 2024, 36, 2309225
+2309225 (13 of 13)
+© 2023 The Authors. Advanced Materials published by Wiley-VCH GmbH
+ 15214095, 2024, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202309225 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/07/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

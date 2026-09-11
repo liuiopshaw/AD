@@ -1,0 +1,15 @@
+description: |
+  评估纳米材料对肠道菌群的选择性抗菌性能。
+
+  请按以下四个维度给出 1-10 分评分并说明理由：
+  1. 杀菌效力（40%）
+  2. 杀菌-益生选择性（35%）——核心维度
+  3. 抗菌谱广度（15%）
+  4. 耐药性风险（10%）
+
+  输出 JSON 格式，包含各维度评分、选择性比值、体内外数据标注。
+expected_output: |
+  JSON 格式的选择性抗菌评估报告，包含 potence_score、selectivity_score、
+  spectrum_score、resistance_score、selectivity_ratio、in_vitro_verified、
+  in_vivo_verified 字段。
+user_requirement_prefix: "需要评估选择性抗菌性能的材料与菌种信息："

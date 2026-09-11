@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>纳米生物评估系统 — 项目总览</title>
+<style>
+  :root {
+    --primary: #1a5276;
+    --accent: #2e86c1;
+    --bg: #f8f9fa;
+    --card-bg: #ffffff;
+    --border: #dee2e6;
+    --text: #333333;
+    --muted: #6c757d;
+    --success: #27ae60;
+    --warning: #f39c12;
+    --danger: #e74c3c;
+    --light-accent: #eaf2f8;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+    line-height: 1.7;
+    color: var(--text);
+    background: var(--bg);
+  }
+
+  /* ===== 顶部横幅 ===== */
+  .hero {
+    background: linear-gradient(135deg, var(--primary), var(--accent));
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  .hero h1 { font-size: 2.4rem; margin-bottom: 12px; letter-spacing: 2px; }
+  .hero .subtitle { font-size: 1.15rem; opacity: 0.9; max-width: 700px; margin: 0 auto; }
+
+  /* ===== 导航 ===== */
+  nav {
+    background: white;
+    border-bottom: 1px solid var(--border);
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+  nav a {
+    padding: 14px 18px;
+    color: var(--primary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s;
+  }
+  nav a:hover { border-bottom-color: var(--accent); }
+
+  /* ===== 主体容器 ===== */
+  .container { max-width: 960px; margin: 0 auto; padding: 30px 20px; }
+
+  /* ===== 分区标题 ===== */
+  .section-title {
+    font-size: 1.6rem;
+    color: var(--primary);
+    border-left: 5px solid var(--accent);
+    padding-left: 14px;
+    margin: 48px 0 20px;
+  }
+  .section-title:first-of-type { margin-top: 0; }
+
+  /* ===== 卡片 ===== */
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 24px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+  .card h3 { font-size: 1.2rem; color: var(--primary); margin-bottom: 10px; }
+  .card p, .card li { color: #555; }
+
+  /* ===== 智能体网格 ===== */
+  .agent-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 16px;
+  }
+  .agent-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    transition: transform 0.2s;
+  }
+  .agent-card:hover { transform: translateY(-3px); }
+  .agent-card .tag {
+    display: inline-block;
+    font-size: 0.78rem;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 8px;
+  }
+  .tag-extract   { background: #8e44ad; }
+  .tag-schedule  { background: #2c3e50; }
+  .tag-predict   { background: #2980b9; }
+  .tag-mechanism { background: #d35400; }
+  .tag-compare   { background: #27ae60; }
+  .agent-card h4 { font-size: 1rem; color: var(--primary); margin-bottom: 6px; }
+  .agent-card .role-name { font-size: 0.85rem; color: var(--muted); margin-bottom: 6px; }
+  .agent-card .desc { font-size: 0.9rem; color: #555; line-height: 1.6; }
+
+  /* ===== 流程 ===== */
+  .flow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 20px 0;
+  }
+  .flow .step {
+    background: var(--light-accent);
+    border: 1px solid var(--accent);
+    border-radius: 8px;
+    padding: 12px 18px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary);
+  }
+  .flow .arrow { font-size: 1.3rem; color: var(--accent); font-weight: bold; }
+  .flow .parallel-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    border: 2px dashed var(--warning);
+    border-radius: 10px;
+    padding: 8px;
+  }
+  .parallel-group::before {
+    content: "并行执行";
+    display: block;
+    font-size: 0.7rem;
+    color: var(--warning);
+    text-align: center;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+
+  /* ===== 评分维度 ===== */
+  .dimension-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
+  .dimension-table th {
+    background: var(--primary);
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+  }
+  .dimension-table td { padding: 10px 12px; border-bottom: 1px solid var(--border); }
+  .dimension-table tr:nth-child(even) { background: var(--light-accent); }
+  .weight-bar {
+    display: inline-block;
+    height: 8px;
+    border-radius: 4px;
+    margin-right: 8px;
+    vertical-align: middle;
+  }
+
+  /* ===== 工具表 ===== */
+  .tool-table { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+  .tool-table th {
+    background: var(--accent);
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-weight: 600;
+  }
+  .tool-table td { padding: 10px; border-bottom: 1px solid var(--border); }
+  .tool-table tr:nth-child(even) { background: var(--light-accent); }
+
+  /* ===== 提示框 ===== */
+  .note {
+    border-left: 4px solid var(--accent);
+    background: var(--light-accent);
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+    margin: 20px 0;
+    font-size: 0.95rem;
+  }
+  .note strong { color: var(--primary); }
+
+  /* ===== 示例 ===== */
+  .example-box {
+    background: #fefefe;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 16px 0;
+  }
+  .example-box .input-label { color: var(--accent); font-weight: 600; margin-bottom: 6px; }
+  .example-box .input-text {
+    background: #f1f3f5;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 0.92rem;
+    color: #555;
+  }
+  .example-box .arrow-down { text-align: center; font-size: 1.5rem; color: var(--accent); margin: 10px 0; }
+  .example-box .output-label { color: var(--success); font-weight: 600; margin-bottom: 6px; }
+  .example-box .output-text {
+    background: #f4fdf7;
+    padding: 10px 14px;
+    border-radius: 6px;
+    font-size: 0.92rem;
+    color: #444;
+  }
+
+  /* ===== 页脚 ===== */
+  footer {
+    text-align: center;
+    padding: 30px;
+    color: var(--muted);
+    font-size: 0.85rem;
+    border-top: 1px solid var(--border);
+    margin-top: 40px;
+  }
+
+  /* ===== 圆角图例 ===== */
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 12px 0 20px;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+  }
+  .legend-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+  }
+
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 1.6rem; }
+    .flow { flex-direction: column; }
+    .flow .arrow { transform: rotate(90deg); }
+    .agent-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== 顶部 ===== -->
+<div class="hero">
+  <h1>纳米生物评估系统</h1>
+  <p class="subtitle">
+    一套自动化分析工具，输入纳米材料的理化参数后，系统能够预测该材料
+    对肠道菌群的杀菌能力、类似天然酶的催化活性，以及对生物体的安全性，
+    并自动生成多种材料之间的横向对比报告。
+  </p>
+</div>
+
+<!-- ===== 导航 ===== -->
+<nav>
+  <a href="#what-is">系统简介</a>
+  <a href="#roles">分工角色</a>
+  <a href="#flow">工作流程</a>
+  <a href="#scoring">评分体系</a>
+  <a href="#tools">信息来源</a>
+  <a href="#example">使用示例</a>
+  <a href="#faq">常见问题</a>
+</nav>
+
+<!-- ===== 主体 ===== -->
+<div class="container">
+
+  <!-- ==== 系统简介 ==== -->
+  <h2 id="what-is" class="section-title">一、这是什么系统？</h2>
+
+  <div class="card">
+    <h3>一句话概括</h3>
+    <p>
+      你告诉系统几种纳米材料的名称和基本参数，系统从多个数据库中搜集相关实验数据，
+      结合已有文献报道，自动给出三种维度的评估结果，并告诉你哪一种材料综合表现最好。
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>它能回答什么问题？</h3>
+    <ul>
+      <li>这种纳米材料对大肠杆菌的杀菌效果如何？最小抑菌浓度大约是多少？</li>
+      <li>它对肠道益生菌（如乳酸杆菌、双歧杆菌）的毒性有多大？</li>
+      <li>它是否具有类似过氧化物酶、氧化酶的催化活性？活性强度如何？</li>
+      <li>它对人体细胞的毒性有多大？在环境中会不会长期残留？</li>
+      <li>和银纳米颗粒、氧化锌纳米颗粒相比，环糊精包裹的铜纳米团簇的综合优势在哪里？</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>不需要你会的技能</h3>
+    <p>
+      你不需要会写代码，不需要手动查数据库，不需要逐篇翻论文做 Excel 对比表。
+      你只需要用自然语言描述你想分析的材料和对比需求，系统自动完成剩下的工作。
+    </p>
+  </div>
+
+  <!-- ==== 七位分析角色 ==== -->
+  <h2 id="roles" class="section-title">二、系统内部的分工角色</h2>
+
+  <p>系统内部有 7 个"分析员"，各有专长。就像实验室里不同分工的研究员一样，每个人负责一块，最后汇总。</p>
+
+  <div class="legend">
+    <div class="legend-item"><div class="legend-dot" style="background:#8e44ad"></div>信息收集</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#2c3e50"></div>任务调度</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#2980b9"></div>性能预测</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#d35400"></div>机理分析</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#27ae60"></div>结果汇总</div>
+  </div>
+
+  <div class="agent-grid">
+
+    <div class="agent-card">
+      <span class="tag tag-extract">信息收集</span>
+      <h4>① 资料搜集员</h4>
+      <div class="role-name">EA（知识抽取）</div>
+      <p class="desc">
+        接到你的需求后，自动去 PubChem、DrugBank、Materials Project 等数据库
+        以及你的本地实验数据中，拉取材料的理化参数、抗菌数据、毒性数据，
+        整理成一份统一的结构化档案。
+      </p>
+    </div>
+
+    <div class="agent-card">
+      <span class="tag tag-schedule">调度</span>
+      <h4>② 任务分配员</h4>
+      <div class="role-name">TOA（任务调度）</div>
+      <p class="desc">
+        读懂你的意图——"是要对比多种材料"还是"深入分析某一种材料的机理"——
+        然后把任务分发给合适的分工角色。
+      </p>
+    </div>
+
+    <div class="agent-card">
+      <span class="tag tag-predict">性能预测</span>
+      <h4>③ 抗菌性能分析师</h4>
+      <div class="role-name">APA</div>
+      <p class="desc">
+        评估材料的杀菌效果（MIC 值、杀菌率）、对致病菌和益生菌的选择性、
+        抗菌谱广度、作用速度和是否诱导耐药性。
+      </p>
+    </div>
+
+    <div class="agent-card">
+      <span class="tag tag-predict">性能预测</span>
+      <h4>④ 类酶活性分析师</h4>
+      <div class="role-name">EPA</div>
+      <p class="desc">
+        判断材料是否具有类酶催化活性（类氧化酶/类过氧化物酶/类过氧化氢酶/类超氧化物歧化酶），
+        给出每种活性的强度等级，并与天然酶的动力学参数做对比。
+      </p>
+    </div>
+
+    <div class="agent-card">
+      <span class="tag tag-predict">性能预测</span>
+      <h4>⑤ 安全性评估师</h4>
+      <div class="role-name">BSA</div>
+      <p class="desc">
+        评估材料的细胞毒性、对益生菌的相对抑制作用、体内蓄积风险、
+        金属离子溶出风险和环境中残留的可能性。
+      </p>
+    </div>
+
+    <div class="agent-card">
+      <span class="tag tag-mechanism">机理分析</span>
+      <h4>⑥ 机理分析师</h4>
+      <div class="role-name">MMA</div>
+      <p class="desc">
+        解释<strong>为什么</strong>某种材料有抗菌/类酶活性——
+        是产生了哪种活性氧？电子是怎么转移的？活性位点的结构是什么样的？
+        为评估结果提供科学依据。
+      </p>
+    </div>
+
+    <div class="agent-card">
+      <span class="tag tag-compare">结果汇总</span>
+      <h4>⑦ 对比汇总员</h4>
+      <div class="role-name">CA</div>
+      <p class="desc">
+        收集前面所有分析师的结果，用统计学方法消除评估偏差，
+        生成多材料对比表格、雷达图和最终排名，给出明确的推荐结论。
+      </p>
+    </div>
+
+  </div>
+
+  <!-- ==== 工作流程 ==== -->
+  <h2 id="flow" class="section-title">三、工作流程</h2>
+
+  <div class="card">
+    <p>系统的运行顺序如下。其中四位分析师（③④⑤⑥）<strong>同时并行工作</strong>，大幅缩短总耗时。</p>
+
+    <div class="flow">
+      <div class="step">① 资料搜集<br><small>查数据库+文献</small></div>
+      <span class="arrow">→</span>
+      <div class="step">② 意图分析<br><small>判断需求</small></div>
+      <span class="arrow">→</span>
+      <div class="parallel-group">
+        <div class="step">③ 评估抗菌性能</div>
+        <div class="step">④ 评估类酶活性</div>
+        <div class="step">⑤ 评估生物安全性</div>
+        <div class="step">⑥ 分析作用机理</div>
+      </div>
+      <span class="arrow">→</span>
+      <div class="step">⑦ 汇总对比<br><small>出报告</small></div>
+    </div>
+  </div>
+
+  <!-- ==== 评分体系 ==== -->
+  <h2 id="scoring" class="section-title">四、评分体系</h2>
+
+  <p>每个维度采用 1–10 分制评分，加权汇总后得到维度总分。三个维度再由汇总员用统计方法合成综合评分。</p>
+
+  <div class="card">
+    <h3>抗菌性能（五维度）</h3>
+    <table class="dimension-table">
+      <tr><th>评估维度</th><th>占比</th><th>核心指标</th><th>高分的标准</th></tr>
+      <tr>
+        <td>杀菌效力</td>
+        <td><span class="weight-bar" style="width:64px;background:#e74c3c"></span>40%</td>
+        <td>MIC、MBC、对数减少值</td>
+        <td>MIC < 50 μg/mL</td>
+      </tr>
+      <tr>
+        <td>杀-益选择性</td>
+        <td><span class="weight-bar" style="width:40px;background:#f39c12"></span>25%</td>
+        <td>MIC(致病菌) / MIC(益生菌) 比值</td>
+        <td>比值越小越好（益生菌不受抑制）</td>
+      </tr>
+      <tr>
+        <td>广谱性</td>
+        <td><span class="weight-bar" style="width:24px;background:#2e86c1"></span>15%</td>
+        <td>可抑制的菌种数</td>
+        <td>同时覆盖 G+ 和 G- 菌</td>
+      </tr>
+      <tr>
+        <td>作用速度</td>
+        <td><span class="weight-bar" style="width:16px;background:#27ae60"></span>10%</td>
+        <td>达到 99% 杀菌时间</td>
+        <td>< 60 分钟</td>
+      </tr>
+      <tr>
+        <td>抗药性风险</td>
+        <td><span class="weight-bar" style="width:16px;background:#8e44ad"></span>10%</td>
+        <td>是否诱导耐药基因</td>
+        <td>无耐药证据</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>类酶活性（五维度）</h3>
+    <table class="dimension-table">
+      <tr><th>评估维度</th><th>占比</th><th>核心指标</th></tr>
+      <tr><td>活性强度</td><td>45%</td><td>催化效率相对于天然酶的比例</td></tr>
+      <tr><td>多功能性</td><td>20%</td><td>同时具有几种类酶活性（如兼具 POD+OXD 双功能加分）</td></tr>
+      <tr><td>底物亲和性</td><td>15%</td><td>Km 值量级（越低越好）</td></tr>
+      <tr><td>条件适用窗口</td><td>10%</td><td>pH/温度适用范围</td></tr>
+      <tr><td>文献佐证</td><td>10%</td><td>同类材料是否有已报道的实验证据</td></tr>
+    </table>
+  </div>
+
+  <div class="card">
+    <h3>生物安全性（五维度）</h3>
+    <table class="dimension-table">
+      <tr><th>评估维度</th><th>占比</th><th>核心指标</th></tr>
+      <tr><td>细胞毒性</td><td>30%</td><td>IC₅₀（正常细胞系），LD₅₀ 估算</td></tr>
+      <tr><td>肠道安全性</td><td>25%</td><td>对益生菌（乳酸杆菌、双歧杆菌）的相对抑制率</td></tr>
+      <tr><td>体内毒性</td><td>20%</td><td>肝脏/肾脏蓄积风险，溶血率</td></tr>
+      <tr><td>环境风险</td><td>15%</td><td>生物降解性，水中残留风险</td></tr>
+      <tr><td>结构稳定性</td><td>10%</td><td>是否容易释放有毒离子（如 Ag⁺、Cu²⁺ 溶出）</td></tr>
+    </table>
+  </div>
+
+  <!-- ==== 信息来源 ==== -->
+  <h2 id="tools" class="section-title">五、数据来源与分析工具</h2>
+
+  <p>系统不会凭空编造数据。所有结论都基于以下真实数据源的查询结果。</p>
+
+  <table class="tool-table">
+    <tr><th>数据来源/工具</th><th>提供什么信息</th><th>哪个角色使用</th></tr>
+    <tr>
+      <td><strong>PubChem</strong>（美国国立卫生研究院公共化学数据库）</td>
+      <td>化学结构、毒性测定数据（LD₅₀、IC₅₀）、生物活性数据</td>
+      <td>资料搜集、抗菌分析、安全评估</td>
+    </tr>
+    <tr>
+      <td><strong>DrugBank</strong>（药物与代谢数据库）</td>
+      <td>天然酶的动力学参数（作为类酶活性的参照基准）、药物在肠道菌群中的代谢通路</td>
+      <td>酶活分析、安全评估、机理分析</td>
+    </tr>
+    <tr>
+      <td><strong>Materials Project</strong>（材料学数据库）</td>
+      <td>晶体结构、能带间隙、形成能、态密度——这些是判断材料稳定性和电子转移能力的基础</td>
+      <td>资料搜集、抗菌分析、机理分析</td>
+    </tr>
+    <tr>
+      <td><strong>本地实验数据库</strong></td>
+      <td>你自有实验的 MIC、酶活、毒性数据（如 Cu NC@CD 的实际测试数据）</td>
+      <td>所有角色</td>
+    </tr>
+    <tr>
+      <td><strong>PubMed 文献检索</strong></td>
+      <td>已发表论文中关于特定纳米材料的抗菌、类酶、毒性研究结论</td>
+      <td>资料搜集、所有分析角色</td>
+    </tr>
+    <tr>
+      <td><strong>ECOSAR/PNEC 毒性预测</strong></td>
+      <td>基于化学结构估算急性和慢性毒性、环境无效应浓度</td>
+      <td>安全评估</td>
+    </tr>
+    <tr>
+      <td><strong>类酶活性分类规则引擎</strong></td>
+      <td>根据材料的元素组成、粒径、能带结构等参数，匹配已知的结构-活性关系规则</td>
+      <td>酶活分析</td>
+    </tr>
+    <tr>
+      <td><strong>知识图谱</strong>（Neo4j 图数据库）</td>
+      <td>将材料、菌种、酶类型、毒性终点之间的三元关系存储为网络图谱，支持关联查询</td>
+      <td>资料搜集、机理分析</td>
+    </tr>
+    <tr>
+      <td><strong>材料对比工具</strong></td>
+      <td>将多材料多维度数据标准化后生成对比矩阵和排名</td>
+      <td>汇总对比</td>
+    </tr>
+  </table>
+
+  <!-- ==== 使用示例 ==== -->
+  <h2 id="example" class="section-title">六、使用示例</h2>
+
+  <div class="example-box">
+    <div class="input-label">你只需要这样输入：</div>
+    <div class="input-text">
+      请对比 Cu_NC_CD、Ag_NP 和 ZnO_NP 三种纳米材料对肠道菌群的抗菌性能、
+      类酶活性和生物安全性，帮助我论证 Cu_NC_CD 的综合优势。
+    </div>
+    <div class="arrow-down">↓</div>
+    <div class="output-label">系统自动输出：</div>
+    <div class="output-text">
+      <strong>1. 逐材料的详细评估报告</strong><br>
+      ├─ Cu_NC_CD：抗菌得分 7.8 / 酶活得分 8.2 / 安全得分 8.5 / 综合 7.96<br>
+      ├─ Ag_NP：抗菌得分 9.1 / 酶活得分 5.3 / 安全得分 4.8 / 综合 6.12<br>
+      └─ ZnO_NP：抗菌得分 7.2 / 酶活得分 6.8 / 安全得分 7.1 / 综合 6.95<br><br>
+      <strong>2. 多材料对比矩阵</strong>（三维雷达图 + 表格）<br><br>
+      <strong>3. 机理解释</strong><br>
+      └─ Cu_NC@CD 中环糊精包覆层提供了良好的生物相容性，Cu 团簇的超小粒径
+      赋予高表面原子暴露比，有利于 H₂O₂ 在表面催化分解产生活性氧；同时
+      环糊精的空腔结构可选择性富集底物分子，增强类酶催化效率。<br><br>
+      <strong>4. 综合结论</strong><br>
+      └─ Cu_NC@CD 在三个维度上表现最均衡，杀菌效力与 Ag_NP 接近但生物
+      安全性远优于后者，类酶活性显著优于 ZnO_NP。推荐作为多功能纳米抗菌
+      材料的首选候选。
+    </div>
+  </div>
+
+  <!-- ==== 常见问题 ==== -->
+  <h2 id="faq" class="section-title">七、常见问题</h2>
+
+  <div class="card">
+    <h3>系统的结论有多可靠？</h3>
+    <p>
+      系统从三个独立的外部数据库和你的实验数据中交叉验证信息。
+      每一个分析结论都附有信息来源标注（来自哪篇论文、哪个数据库、哪个实验批次），
+      你可以回溯验证。三位不同方向的分析师独立评分，再用统计方法消除个体偏见后
+      才得出综合评分——这类似于学术论文的同行评审机制。
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>如果数据库里没有某种新材料的数据怎么办？</h3>
+    <p>
+      系统会类比结构相似的材料（相同元素家族、相近粒径、相同包覆方式）给出
+      "推断值"并标注置信度。同时会明确告诉你哪些结论有实验数据支撑、哪些是
+      基于类比推断的，你可以据此判断是否需要补充实验。
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>系统能处理图像数据吗？</h3>
+    <p>
+      是的。系统可以读取文献中的电镜照片（TEM/SEM）、XRD 衍射谱图、
+      EDS 元素分布图和剂量-反应曲线。当你把含这些图片的论文 PDF 或截图
+      输入系统后，它可以从中提取材料形貌、晶型和粒径分布等关键信息。
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>我能用自己的实验数据吗？</h3>
+    <p>
+      可以，这是系统设计时就考虑的核心功能。你的本地实验数据库中的
+      数据（MIC 值、酶活测定结果、细胞毒性数据）会被优先采用，
+      权重高于文献数据和公共数据库。系统提供了一个标准化的数据录入模板。
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>和 ChatGPT 之类的通用聊天工具有什么区别？</h3>
+    <p>
+      通用聊天工具缺乏领域专业知识，容易产生不可靠的推断（"幻觉"）。
+      本系统做了四件通用工具做不到的事：
+    </p>
+    <ul>
+      <li><strong>专领域训练：</strong>用上千份纳米生物领域的实验论文进行了专门训练</li>
+      <li><strong>多数据源交叉验证：</strong>不依赖单一模型，而是查询多个权威数据库</li>
+      <li><strong>结构化评分：</strong>不是随意打一个分数，而是按照明确的五维度权重和统计公式计算</li>
+      <li><strong>三位专家独立评判：</strong>三人评分 + 统计融合，消除单个模型的主观偏差</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  纳米生物评估系统 · 基于 ECOMATS 架构构建 · 2026
+</footer>
+
+</body>
+</html>

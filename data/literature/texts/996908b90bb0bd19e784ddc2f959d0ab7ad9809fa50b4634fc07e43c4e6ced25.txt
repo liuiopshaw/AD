@@ -1,0 +1,808 @@
+Research Article
+How to cite: Angew. Chem. Int. Ed. 2025, 64, e202509183
+doi.org/10.1002/anie.202509183
+Theranostics
+MitoSiege-Driven Catalase Collapse: A GSH-Responsive,
+Mitochondria-Targeted COF Prodrug for Ampliﬁed Chemodynamic
+Therapy
+Qihang Ding+, Bo Wang+, Zixuan Zhan+, Paramesh Jangili+, Junyang Chen, Rakesh Mengji,
+Hyeonji Rha, Yang Li,* Jian Tian,* and Jong Seung Kim*
+Abstract: Chemodynamic therapy (CDT), leveraging Fenton reactions to generate hydroxyl radicals (•OH) from
+intracellular hydrogen peroxide (H2O2), offers a promising cancer treatment strategy due to its high speciﬁcity and
+low systemic toxicity. However, the targeted delivery of •OH-producing prodrugs using covalent organic frameworks
+(COFs) remains a signiﬁcant challenge. Here, we report a mitochondria-targeted COF-based nano prodrug, COF-31@P,
+designed for enhanced CDT efﬁcacy. COF-31@P is composed of a Fenton-like copper complex and the hydrogen peroxide
+enzyme inhibitor 3-amino-1,2,4-triazole (3-AT), linked via disulﬁde bonds that are selectively cleaved by tumor-speciﬁc
+glutathione (GSH). This cleavage triggers the release of active components, resulting in robust •OH generation and
+effective eradication of cancer cells. The platform demonstrates precise mitochondrial targeting, high therapeutic efﬁciency,
+and excellent biocompatibility in vivo. By combining organelle targeting and multi-synergistic •OH generation production,
+our COF-31@P represents a signiﬁcant advancement in CDT and holds strong potential for clinical translation.
+Introduction
+Cancer is a leading cause of global morbidity and mortal-
+ity in both developing and developed nations.[1–3] Cancer
+therapeutic strategies, including chemotherapy, surgery, and
+radiotherapy, offer limited efﬁcacy in improving patient
+survival and quality of life. These limitations stem from
+chemotherapy resistance, surgical trauma, and the adverse
+side effects associated with radiotherapy.[4–6] In response to
+these challenges, Chemodynamic therapy (CDT) has emerged
+as a minimally invasive and highly selective therapeutic
+approach. CDT leverages Fenton or Fenton-like reactions to
+convert endogenous hydrogen peroxide (H2O2) into hydroxyl
+radical (•OH), the most cytotoxic reactive oxygen species
+(ROS).[7–9] This innovative therapy offers several advantages
+over conventional treatments, including tumor-speciﬁc activa-
+tion, minimal invasiveness, and reduced systemic toxicity.[4,10]
+To further enhance the efﬁcacy of CDT, recent research has
+focused on optimizing Fenton catalysts, tailoring therapies
+to the tumor microenvironment (TME), and regulating
+H2O2 levels by inhibiting catalase activity.[11] Despite these
+advancements, the clinical translation of CDT is still limited
+by the lack of a drug delivery system that can simultaneously
+induce Fenton reactions, respond to TME cues, and promote
+localized •OH generation.[12–14] Moreover, the short lifespan
+and diffusion range of •OH radicals necessitate strategies that
+ensure their interaction with biological macromolecules to
+maximize oxidative damage and therapeutic efﬁciency.[15–17]
+Targeted therapy systems capable of transporting therapeutic
+agents to speciﬁc cells or organelles represent a promising
+solution. By reducing the distance between •OH radical
+generation sites and critical biomolecules, these systems
+enhance the oxidative damage, increase therapeutic efﬁciency,
+and promote cell death. This study explores the development
+[*] Q. Ding+, B. Wang+, J. Chen, J. Tian
+Department of Cardiovascular Surgery, Zhongnan Hospital of
+Wuhan University, School of Pharmaceutical Sciences, Wuhan
+University, Wuhan 430071, China
+E-mail: jian.tian@whu.edu.cn
+Q. Ding+, P. Jangili+, R. Mengji, H. Rha, J. S. Kim
+Department of Chemistry, Korea University, Seoul 02841,
+South Korea
+E-mail: jongskim@korea.ac.kr
+Z. Zhan+
+Department of Respiratory and Critical Care Medicine, Targeted
+Tracer Research and Development Laboratory, Institute of
+Respiratory Health, State Key Laboratory of Respiratory Health and
+Multimorbidity, West China Hospital, Sichuan University, Chengdu,
+Sichuan 610041, China
+Y. Li
+School of Chemical Engineering & Pharmacy, Hubei Key Laboratory
+of Novel Reactor and Green Chemical Technology, Wuhan Institute
+of Technology, Wuhan 430079, China
+E-mail: lyyy9281015@163.com
+[+] These authors contributed equally to this work.
+Additional supporting information can be found online in the
+Supporting Information section
+© 2025 The Author(s). Angewandte Chemie International Edition
+published by Wiley-VCH GmbH. This is an open access article under
+the terms of the Creative Commons Attribution-NonCommercial
+License, which permits use, distribution and reproduction in any
+medium, provided the original work is properly cited and is not used
+for commercial purposes.
+Angew. Chem. Int. Ed. 2025, 64, e202509183 (1 of 12)
+© 2025 The Author(s). Angewandte Chemie International Edition published by Wiley-VCH GmbH
+
+Research Article
+of such a system, aiming to address existing limitations and
+advance the clinical potential of CDT.[18–21]
+Covalent organic frameworks (COFs) are a class of porous
+material composed of shape-deﬁned organic monomers inter-
+connected by dynamic covalent bonds.[22,23] These materials
+are highly customizable and feature uniform nanosized
+pores,[24] making them promising nanocarriers for inte-
+grating diverse functional components. Nanoscale COFs
+have been extensively studied for their therapeutic appli-
+cations in phototherapy, drug delivery, immunotherapy, and
+radiotherapy.[25,26] As organic carriers, COFs offer a selective
+platform for incorporating therapeutic agents,[27,28] ensur-
+ing targeted delivery and desired therapeutic outcomes
+while minimizing the physiological toxicity often associated
+with metal-rich inorganic materials.[29–33] These dual advan-
+tages position COFs as a versatile platform for advancing
+both preclinical and translational clinical investigations on
+COFs.[34,35,13,36–38] However, despite their potential, the use
+of organelle-targeting COF-based nanomaterials for CDT
+remains unexplored.[39–41] This study aims to address this gap
+by developing COF-based nanocarriers capable of organelle-
+speciﬁc targeting, with a focus on enhancing the efﬁcacy and
+precision of CDT.
+In this study, we therefore synthesized a nano prodrug
+COF-31@P based on COFs that targets mitochondria,
+incorporating a copper complex for Fenton-like reaction
+and a catalase inhibitor 3-AT, which are linked by disulﬁde
+bonds. The over-expression of glutathione (GSH) in tumor
+mitochondria facilitates the cleavage of these disulﬁde
+bonds, simultaneously releasing the copper complex and
+3-AT. The copper complex catalyzes the decomposition
+of abundant H2O2 into toxic ROS, speciﬁcally •OH, while
+3-AT inhibits catalase activity to sustain the H2O2 levels,
+thereby amplifying the Fenton-like reaction. Additionally,
+GSH consumption through disulﬁde bond cleavage further
+reduces its capacity to scavenge ROS, enhancing the overall
+therapeutic effect (Figure 1). Through cellular imaging
+and cytotoxicity assays, we demonstrated that COF-31@P
+effectively targets mitochondria, releases its therapeutic
+payload in response to GSH, generates a substantial amount
+of •OH radicals, leading to efﬁcient tumor cell eradication
+via CDT. Furthermore, COF-31@P exhibits excellent tumor
+enrichment and biosafety in vivo, making it a promising
+candidate for CDT-based tumor therapy. To the best of our
+knowledge, this is the ﬁrst report of a mitochondria-targeting
+COF-based nanomaterial that integrates GSH consumption
+and catalase inhibition to enhance the efﬁcacy of CDT,
+marking a signiﬁcant advancement in the ﬁeld.
+Results and Discussion
+To conﬁrm the cleavage of disulﬁde bonds and the subsequent
+release of the copper complex prodrugs, we designed a
+ﬂuorescent prodrug, C2 conjugated with a rhodamine dye.
+The synthesis of C2 involved a multistep process, including
+nucleophilic substitution and click reactions initiated from di-
+(2-picolyl)amine. Detailed synthetic procedures are provided
+in Figure 2a and Supporting Information (Scheme S1). We
+were able to identify and characterize the ﬂuorescent prodrug
+C2, incorporating a copper complex and a disulﬁde bond,
+through the use of 1H and 13C NMR spectroscopy in conjunc-
+tion with high-resolution mass spectrometry (Figures S1–S11).
+As shown in Figure 2a, the disulﬁde bond in C2 was efﬁciently
+cleaved in the presence of GSH, resulting in the release of the
+copper complex and the formation of rhodamine derivative
+as a reaction intermediate. This intermediate subsequently
+underwent electrophilic aromatic substitution by attacking an
+electron-deﬁcient carbon atom, resulting in the production of
+rhodamine dye. These reactions facilitated the GSH-induced
+release of the copper complex. To further investigate the
+interaction between C2 and GSH, we conducted a titration
+experiment using absorption spectroscopy, during which GSH
+was incrementally added to C2. Addition of GSH resulted in
+a notable shift in the absorption peak from 300 to 350 nm
+(Figure S15). Correspondingly, there was an increase in ﬂu-
+orescence intensity at 500 nm (Figures 2b,c), which allowed us
+to plot it as a function of GSH concentration with respective
+detection limits set at 3 mM (Figure 2d). These results also
+conﬁrmed that the disulﬁde bond-linked copper complex pro-
+drug can be effectively cleaved in the presence of GSH, lead-
+ing to the release of the active copper complex. The observed
+spectral changes and ﬂuorescence enhancement provide
+strong evidence for the GSH-responsive behavior of C2, vali-
+dating its potential for targeted drug release in environments
+with high GSH concentrations, such as tumor mitochondria.
+After validating the ﬂuorescent disulﬁde bond-linked
+copper complex prodrug, we extended this GSH-responsive
+molecular platform to synthesize a prodrug C1 derived from
+the catalase inhibitor 3-AT and characterized its structure
+(Figures S12–S14). As illustrated in Figure 2e, the disulﬁde
+bond in C1 was efﬁciently cleaved in the presence of GSH,
+leading to the release of the copper complex and the catalase
+inhibitor 3-AT. To further explore the interaction between
+prodrug C1 and GSH, we conducted high-performance liquid
+chromatography (HPLC) analysis on the reaction of C1 with
+GSH. The HPLC analysis revealed that prodrug C1 exhibited
+a single peak at 10.2 min (Figure 2f). After the addition of
+GSH for 1 h, the original peak of C1 diminished, and a new
+peak appeared at 8 min. Upon extending the incubation time
+to 4 h, the original C1 peak completely disappeared, while the
+new peak at 8 min intensiﬁed, coinciding with the retention
+time of 3-AT (8 min). These ﬁndings indicated that prodrug
+C1 releases copper complexes and catalase inhibitor 3-AT
+upon interaction with GSH. The observed changes in HPLC
+proﬁles provide clear evidence of the controlled and efﬁcient
+release of active therapeutic components under conditions of
+high GSH concentration, such as those found in tumor envi-
+ronments. This GSH-triggered release mechanism highlights
+the potential of prodrug C1 as a targeted therapeutic agent
+for enhancing chemodynamic therapy through simultaneous
+copper complex activation and catalase inhibition.
+We
+synthesized
+the
+COF
+framework
+via
+a
+Schiff
+base reaction between 4′,4′′′,4′′′′′-(1,3,5-triazine-2,4,6-triyl)
+tris(([1,1′-biphenyl]-4-amine)) and 2′,5′-dihydroxy-[1,1′:4′,1′′-
+terphenyl]-4,4′′-dicarbaldehyde. Subsequently, the framework
+was functionalized with bromine-substituted triphenylphos-
+phine
+groups,
+which
+possess
+mitochondrial
+targeting
+Angew. Chem. Int. Ed. 2025, 64, e202509183 (2 of 12)
+© 2025 The Author(s). Angewandte Chemie International Edition published by Wiley-VCH GmbH
+ 15213773, 2025, 44, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.202509183 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Research Article
+Figure 1. The synthesis of mitochondria-targeted COF materials and the design of the prodrug mechanism, along with the operational principle of
+CDT for tumor therapy via the synergistic Fenton-like reaction facilitated by copper complex and inhibition of catalase through COF material loading
+prodrug.
+capability, to obtain COF-31. Building on this, we further
+employed COF-31 as a drug delivery platform to encapsulate
+the prodrug C1, leading to the formation of the nanomedicine
+COF-31@P (Figure 3a). The nanomedicine was comprehen-
+sively characterized to conﬁrm its structural and functional
+properties. The scanning electron microscope (SEM) image
+(Figure 3b) revealed uniformly dispersed, spherical-like
+nanostructures with smooth surfaces, indicating that the
+copper-based
+prodrug
+was
+successfully
+loaded
+without
+compromising the COF framework. Hydrodynamic diameter
+measurements (Figure 3c) of COF-31@P revealed an average
+size of approximately 180 nm. To assess the stability of COF-
+31@P, dynamic light scattering (DLS) analysis was conducted.
+The particle size of COF-31@P remained relatively constant
+after storage in H2O and PBS for 7 days, further conﬁrming its
+favorable colloidal stability in both aqueous and physiological
+environments (Figure S16). The inset transmission electron
+microscope (TEM) image further conﬁrmed the uniform mor-
+Angew. Chem. Int. Ed. 2025, 64, e202509183 (3 of 12)
+© 2025 The Author(s). Angewandte Chemie International Edition published by Wiley-VCH GmbH
+ 15213773, 2025, 44, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.202509183 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Research Article
+Figure 2. a) Speciﬁc synthesis routes for C1 and C2. Reaction mechanism of C2 activation in the presence of GSH. b) Fluorescence spectrum of C2
+(10 µM) without and with GSH (2 mM) after 2 h of GSH addition. c) Time-dependent change in ﬂuorescence intensity of C2 (10 µM) upon incubation
+with GSH (2 mM) in PBS at 37 °C, using an excitation wavelength of 368 nm and a slit width of 5/5. d) Enhancement in ﬂuorescence intensity at
+495 nm for C2 (10 µM, PBS solution, 37 °C), following incubation with varying concentrations of GSH. Fluorescence measurements were taken 1 h
+after adding GSH, using an excitation wavelength of 368 nm. e) Reaction mechanism for the activation of C1 in the presence of GSH. f) HPLC
+analysis investigating the interaction between C1 and GSH.
+Angew. Chem. Int. Ed. 2025, 64, e202509183 (4 of 12)
+© 2025 The Author(s). Angewandte Chemie International Edition published by Wiley-VCH GmbH
+ 15213773, 2025, 44, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.202509183 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Research Article
+Figure 3. a) Speciﬁc synthesis routes for COF-31 and COF-31@P. b) SEM image of COF-31@P. Scale bar: 100 nm. c) The hydrodynamic diameter
+measurement of COF-31@P. Insert image: TEM image of COF-31@P. Scale bar: 100 nm. d) The Zeta potential of both COF-31 and COF-31@P. e)
+PXRD pattern of COF-31@P. f) Energy dispersive X-ray elemental mapping (EDX) of elements C, N, S, O and Cu, Scale bar: 100 nm. g) The EDS
+spectra of COF-31@P. h) XPS measurement spectrum of COF-31@P. i) High-resolution XPS spectra of Cu 2p. j) The prodrug loading of COF-31 was
+determined by measuring the ﬂuorescence quenching of the prodrug upon incremental addition of COF framework (dispersion in DMSO) to the
+prodrug solution.
+Angew. Chem. Int. Ed. 2025, 64, e202509183 (5 of 12)
+© 2025 The Author(s). Angewandte Chemie International Edition published by Wiley-VCH GmbH
+ 15213773, 2025, 44, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.202509183 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Research Article
+phology and dense core structure, suggesting efﬁcient prodrug
+incorporation. Zeta potential analysis (Figure 3d) showed a
+noticeable shift from 12.5 mV for pristine COF-31 to 10.3 mV
+for COF-31@P, indicating surface charge modiﬁcation due to
+prodrug loading. Powder X-ray diffraction (PXRD) analysis
+was employed to evaluate the crystallinity and structural
+ordering of COF-31@P (Figure 3e). A prominent and sharp
+diffraction peak at 2θ = 0.6°, which was characteristic of the
+(100) reﬂection plane, indicates a well-deﬁned long-range
+periodicity and an ordered two-dimensional layered structure
+with large pore channels. The distinct nature and high
+intensity of this peak reﬂected the high crystallinity of the
+COF framework. The absence of any signiﬁcant broad peaks
+or additional reﬂections at higher angles suggested a high
+degree of phase purity and minimal amorphous content. The
+sharpness of the (100) reﬂection and the lack of secondary
+peaks underscored the material’s uniformity and structural
+integrity.
+Energy-dispersive X-ray spectroscopy (EDX) mapping
+(Figure 3f) conﬁrmed the homogeneous distribution of C,
+N, O, S, and Cu throughout COF-31@P. The presence of
+Cu validates the successful encapsulation of the copper-
+containing prodrug, while S signals the integration of sulfur-
+containing functional groups from the prodrug. The EDX
+spectrum of COF-31@P showed prominent Cu peaks at
+∼1.0 keV (Cu Lα), ∼8.0 keV (Cu Kα), and ∼8.9 keV (Cu
+Kβ), conﬁrming the successful loading of the prodrug, as
+Cu was absent in pristine COF-31 (Figure 3g). Additionally,
+the distinct sulfur (S Kα) peak at ∼2.3 keV served as
+further evidence of prodrug incorporation, reﬂecting the
+presence of sulfur-containing functional groups speciﬁc to
+the drug. The co-localization of the strong Cu and S signals
+together validated the effective integration of the prodrug
+into the COF-31 structure. As shown in Figure 3h,i, the high-
+resolution X-ray photoelectron spectroscopy (XPS) spectra
+of the Cu 2p region conﬁrmed the successful incorporation
+of the copper-based prodrug into the COF-31 framework.
+Distinct peaks at ∼932.5 eV (Cu 2p3/2) and ∼952.3 eV
+(Cu 2p1/2) indicated the presence of both Cu+ and Cu2+
+oxidation states, with an additional peak at ∼934.8 eV and
+characteristic shake-up satellite features, further conﬁrming
+partial Cu2+ coordination. The survey spectrum also revealed
+sulfur (S 2p) peaks, supporting the incorporation of sulfur-
+containing prodrug moieties, and reinforcing the structural
+and chemical integration within COF-31. The coexistence
+of Cu+/Cu2+ suggested that the prodrug retained its redox
+activity post-loading, ensuring its stability and potential
+therapeutic efﬁcacy. Collectively, these results demonstrated
+that COF-31@P retained its structural integrity and exhibited
+uniform prodrug loading, establishing a strong foundation for
+its potential therapeutic applications. The in vitro prodrug
+loading capacity of COF-31 was evaluated using ﬂuorescence
+analysis (Figure 3j). The results indicated that the prodrug
+loading efﬁciency of COF-31 was approximately 15% w/w.
+Atomic absorption spectroscopy was used to measure the
+Cu concentration in the supernatant after 6 h of preloading
+with 3 mg of COF-31. The loading capacity after 6 h was
+calculated as 0.665 mg, with an encapsulation efﬁciency of
+11.1% (Figure S17).
+The release behavior of the prodrug was assessed by mea-
+suring copper ion concentrations using inductively coupled
+plasma (ICP). COF-31@P was exposed to different GSH
+concentrations, and copper ion levels were recorded after
+varying reaction times. As shown in Figure S18, prolonged
+GSH exposure and higher GSH concentrations gradually
+increased copper ion levels, indicating that the prodrug
+releases its active components in response to GSH. To
+evaluate copper ion release following prodrug activation,
+we conducted ICP-MS analysis under conditions of elevated
+H2O2, acidic pH, and GSH presence. Cu release was most
+pronounced under acidic pH conditions, with a higher
+release observed under GSH conditions compared to that
+under H2O2 conditions (Figure S19). We evaluated the nano
+prodrug COF-31@P in H2O to assess its ability to generate
+•OH. Tetramethylbenzidine (TMB) can be oxidized by •OH,
+and the resulting oxidation product can be quantiﬁed by
+measuring its absorbance at a speciﬁc wavelength. This allows
+for the analysis of •OH content within a sample. TMB was
+used to detect the ability of COF-31@P at different concen-
+trations to react with H2O2 to generate •OH. The absorbance
+results showed that the generation of •OH increased with the
+increase of COF-31@P concentration (Figure S20).
+To investigate the cellular internalization of COF-31 and
+COF-31@P, confocal laser scanning microscopy (CLSM) was
+performed on CT26 cells. The ﬂuorescence intensity of COF-
+31@P was higher than that of free COF-31, peaking at
+4 h, indicating enhanced cellular uptake and accumulation
+(Figure 4a). Speciﬁcally, after 4 h of incubation, the ﬂuo-
+rescence intensity of COF-31@P was 1.37 times higher than
+that of free COF-31 (Figure 4b). This enhanced uptake may
+be attributed to the lack of regulatory effects after drug
+release in the free COF, whereas the drug-loaded COF, upon
+releasing the prodrug, may exert cytotoxic effects on tumor
+tissue, leading to the formation of additional pores. These
+structural changes could further enhance the subsequent
+penetration and accumulation of COF-31@P, establishing a
+positive feedback loop. Moreover, COF-31@P was incubated
+with CT26 cells at a concentration of 100 µg mL−1 for 4
+h. The Cu content was then analyzed by ICP spectroscopy,
+showing a total uptake efﬁciency of 28.01% (Figure S21). To
+investigate the cellular uptake pathways of COF-31@P, we
+employed chlorpromazine as a clathrin inhibitor and Dyna-
+sore as a caveolin inhibitor. Confocal imaging demonstrated
+that the ﬂuorescence intensity in the chlorpromazine-treated
+group was markedly reduced compared to other groups,
+indicating a signiﬁcant decrease in COF-31@P uptake. These
+results suggest that COF-31@P primarily enters cells through
+clathrin-mediated endocytosis (Figure S22). To investigate
+the intracellular distribution of COF-31@P in cancer cells,
+co-staining experiments were conducted using CT26 cells
+and commercially available organelle dyes such as Mito-
+chondria Tracker Green. As shown in Figure 4c, COF-31@P
+exhibited a speciﬁc accumulation within the mitochondria
+of CT26 cells, emitting red ﬂuorescence that showed strong
+colocalization (Pearson correlation coefﬁcient = 0.93) with
+Mitochondria Tracker Green. The unique characteristics of
+COF-31@P, including their high charge density and pro-
+nounced positive charge, likely inﬂuenced their lipophilicity
+Angew. Chem. Int. Ed. 2025, 64, e202509183 (6 of 12)
+© 2025 The Author(s). Angewandte Chemie International Edition published by Wiley-VCH GmbH
+ 15213773, 2025, 44, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.202509183 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Research Article
+Figure 4. a) CT26 cells co-incubated with rhodamine B-labeled COF-31 and COF-31@P, incubated at diﬀerent time points (1 h, 2 h, 4 h, and 6 h), with
+a concentration of 100 µg mL−1. b) The relative ﬂuorescence intensity of CT26 cells was measured at diﬀerent time intervals to assess material
+uptake. c) CT26 cells co-incubated with rhodamine B-labeled COF-31 and COF-31@P, incubated at diﬀerent time points (1 h, 2 h, 4 h, and 6 h), with a
+concentration of 100 µg mL−1. Subsequently stained with Mito tracker green (100 nM) for 30 min followed by Hoechst 33 342 staining for another
+30 min. The ﬂuorescence intensity plot of Mito Tracker Green and COF-31@P after co-incubation with CT26 cells at 1 h, 2 h, 4 h, and 6 h.
+and electrophoretic force, facilitating preferential localization
+to the mitochondria.
+To evaluate the generation of •OH at the cellular level, we
+employed 2′,7′-dichlorodihydroﬂuorescein diacetate (DCFH-
+DA) as a ﬂuorescent probe for ROS detection. Figure 5a,b
+demonstrated that CT26 cells treated with COF-31@P dis-
+played higher levels of green ﬂuorescence than untreated con-
+trol cells or those treated with COF-31 or prodrug alone. We
+further investigated the intracellular generation of •OH using
+the hydroxyphenyl ﬂuorescein (HPF) probe. Compared with
+the COF-31 and prodrug groups, COF-31@P demonstrated
+the highest ﬂuorescence intensity, suggesting the most pro-
+nounced •OH production within the CT26 cells (Figure S23).
+This enhancement can be attributed to two factors. Firstly,
+COF-31@P targets the mitochondria in tumor cells, which
+contain higher levels of H2O2. The copper complex within
+the prodrug then reacts with this increased H2O2, enhancing
+therapeutic efﬁcacy through a Fenton-like reaction. Secondly,
+the catalase inhibitor (3-AT) promotes the generation of ROS
+by maintaining elevated levels of H2O2, thereby enhancing
+the effects of oxidative stress and posing a threat to tumor
+cell survival. Furthermore, as shown in Figure 5c, the ROS
+generation in the COF-31@P + GSH group is higher than that
+in the COF-31@P group, indicating that the nanomedicine
+exhibits
+excellent
+TME
+responsiveness,
+enabling
+GSH-
+triggered release of the copper complex and catalase inhibitor
+within tumor cells. The prodrug signiﬁcantly enhanced H2O2
+levels in CT26 cells upon the release of the catalase inhibitor
+3-AT. As a critical substrate for the Fenton-like reaction,
+H2O2 was catalyzed by Cu2+ released from the prodrug
+to generate highly reactive •OH, which subsequently ele-
+vated intracellular ROS levels. The markedly increased ROS
+Angew. Chem. Int. Ed. 2025, 64, e202509183 (7 of 12)
+© 2025 The Author(s). Angewandte Chemie International Edition published by Wiley-VCH GmbH
+ 15213773, 2025, 44, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.202509183 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Research Article
+Figure 5. a) Detection of intracellular ROS of CT26 cells using DCFH-DA as a probe after diﬀerent treatments of COF-31 (200 µg mL−1), COF-31@P
+(200 µg mL−1), and prodrug (30 µg mL−1). b) Quantitative analysis of intracellular ROS generation. c) Detection of intracellular ROS of CT26 cells
+using DCFH-DA as a probe after diﬀerent treatments. d) Quantitative analysis of intracellular ROS generation after treatment with diﬀerent
+formulations under varying conditions. e) Live/dead staining of CT26 cells after diﬀerent treatments. f) The relative cell viability of CT26 cells treated
+with diﬀerent concentrations of COF-31 and COF-31@P (0, 25, 50, 100, 200, and 400 µg mL−1). g) Analysis of cell apoptosis using the Annexin
+V-FITC/PI kit via ﬂow cytometry. h) Quantiﬁcation of apoptotic cells. i) Measurement of GSH levels of CT26 cells treated with COF-31 (200 µg mL−1),
+COF-31@P (200 µg mL−1), and prodrug (30 µg mL−1). j) The relative cell viability of 3T3 cells treated with diﬀerent concentrations of COF-31 and
+COF-31@P (0, 25, 50, 100, 200, and 400 µg mL−1).
+production observed in the COF-31@P + H2O2 group com-
+pared to the COF-31@P group further demonstrates that the
+Fenton-like reaction effectively facilitates H2O2 decomposi-
+tion to generate •OH, exacerbating oxidative stress-induced
+cellular damage. Quantitative analysis (Figure 5d) further
+corroborated that the intracellular ROS levels are signiﬁ-
+cantly elevated in response to both GSH and H2O2, validating
+the prodrug’s TME-responsive activation and catalytic ampli-
+ﬁcation of oxidative stress. The oxygen-responsive probe
+[Ru(dpp)3]Cl2 was introduced to CT26 cells in the Control,
+COF-31, Prodrug, and COF-31@P groups (200 µg mL−1)
+and incubated for 4 h. The signiﬁcant decrease in oxygen
+content in the COF-31@P group indicated that the catalase
+inhibitor effectively suppressed the conversion of H2O2 into
+O2 (Figure S24).
+To investigate the pharmacological effects of COF-31@P,
+a staining experiment was conducted using Calcein-AM
+(ﬂuorescent dye indicating live cells) and PI (ﬂuorescent
+dye indicating dead cells) to assess the efﬁcacy of CDT in
+eliminating tumor cells and determine the cell death-inducing
+potential of the nano prodrug. In Figure 5e, negligible cell
+death was observed in cells treated with PBS or COF-31
+alone. However, when exposed to COF-31@P, a signiﬁcant
+increase in red ﬂuorescence and minimal green ﬂuorescence
+was observed in the cell images. These ﬁndings suggest that
+COF-31@P effectively induces tumor cell death during CDT.
+A systematic cytotoxicity evaluation of COF-31@P against
+CT26 cells was conducted using 3-(4,5-dimethylthiazol-2-yl)-
+2,5-diphenyltetrazolium bromide (MTT) assay. Both COF-
+31@P and its prodrug demonstrated antitumor activity,
+Angew. Chem. Int. Ed. 2025, 64, e202509183 (8 of 12)
+© 2025 The Author(s). Angewandte Chemie International Edition published by Wiley-VCH GmbH
+ 15213773, 2025, 44, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.202509183 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Research Article
+with a pronounced dose-dependent cytotoxic effect. The
+half-maximal inhibitory concentration (IC50) values were
+calculated as 50.08 µg m−1 for the prodrug, 2.93 mg mL−1 for
+COF-31, and 17.67 µg mL−1 for COF-31@P (Figures 5f and
+S25). These results not only indirectly validated the excellent
+biocompatibility of the COF framework but also high-
+lighted that the mitochondria-targeting strategy of COF-31
+signiﬁcantly enhances CDT-induced tumor cell eradication.
+Furthermore,
+Annexin
+V-FITC/PI
+dual-staining
+ﬂow cytometry analysis (Figure 5g,h) revealed that the
+apoptotic rate of CT26 cells treated with COF-31@P reached
+72.15%, signiﬁcantly surpassing that of the COF-31 and
+prodrug groups. These ﬁndings further substantiated the
+mitochondria-targeting capability of the COF-31 framework
+in potentiating CDT-induced apoptosis. Consistently, in the
+GSH depletion assay (Figure 5i), the COF-31@P-treated
+group exhibited a signiﬁcantly higher GSH consumption
+compared
+to
+the
+prodrug
+group,
+indirectly
+conﬁrming
+its superior CDT catalytic activity. Notably, comparative
+cytotoxicity assessments across different tumor cell lines
+(HepG2 and Caco-2) revealed that CT26 cells exhibited the
+most pronounced sensitivity toward COF-31@P, suggesting a
+high cellular uptake efﬁciency or an enhanced susceptibility
+to CDT-induced oxidative damage. This antitumor efﬁcacy
+further underscores the therapeutic potential of COF-
+31@P for precision-targeted colorectal cancer treatment
+(Figure S26). To investigate the mechanism of cuproptosis,
+Control, COF (200 µg mL−1), Prodrug (30 µg mL−1), and
+COF-31@P (200 µg mL−1) were administered for group
+treatment over 4 h. The cuproptosis-related proteins DLAT,
+FDX1, and LIAS were subsequently analyzed using Western
+Blot assays. Prodrug and COF-31@P both led to a signiﬁcant
+reduction in the expression levels of proteins associated with
+cuproptosis. Notably, the effect of COF-31@P on protein
+expression was more pronounced compared to that of
+Prodrug (Figure S27).
+To systematically evaluate the biosafety proﬁle of COF-
+31@P, its effects on mouse embryonic ﬁbroblasts (3T3
+cells) were assessed in vitro. Following a 24-h exposure
+to 400 µg mL−1 of COF-31 and COF-31@P, no signiﬁcant
+decrease in cell viability was observed, indicating the absence
+of apparent cytotoxicity (Figure 5j). This ﬁnding was further
+corroborated by live/dead cell staining assays (Figure S28),
+which demonstrated that cell morphology remained intact,
+with no evident cellular damage. Moreover, even at a concen-
+tration of 60 µg mL−1, the prodrug-treated group (Figure S29)
+did not exhibit any discernible cytotoxic effects on 3T3 cells.
+These results collectively validated the excellent biocompat-
+ibility and safety of COF-31@P, demonstrating its ability to
+effectively induce CDT-mediated tumor cell apoptosis while
+maintaining minimal toxicity toward normal cells. The in
+vivo biosafety of COF-31@P was further evaluated in female
+BALB/c mice. The hemolytic properties were examined
+using a standardized hemolysis assay (ASTM E2524-08),
+which revealed that COF-31@P, even at concentrations up
+to 200 µg mL−1, did not induce any detectable hemolysis
+(Figure S30), highlighting its excellent hemocompatibility. We
+measured the levels of biochemical indices for the liver and
+kidney function—alanine aminotransferase (ALT), aspartate
+aminotransferase (AST), alkaline phosphatase (ALP), total
+protein, creatinine (CR), and blood urea nitrogen (BUN)—in
+the serum of mice after treatment with COF-31@P. We found
+that the levels of these indices were all within the normal
+range for mice and had no signiﬁcant difference from the
+Control group (Figure S31).
+Additionally, pharmacokinetic analysis demonstrated that
+COF-31@P exhibited a signiﬁcantly prolonged blood cir-
+culation half-life (t1/2 = 3.02 h) compared to the prodrug
+(t1/2 = 0.69 h). This result suggests that COF-31 functions
+as an efﬁcient nanocarrier, not only enabling the precise
+mitochondrial-targeted delivery of the prodrug but also
+signiﬁcantly extending its systemic circulation time, thereby
+enhancing antitumor therapeutic efﬁcacy (Figure S32). The
+copper ion content was further quantiﬁed in the liver
+and spleen of mice at various time points following the
+tail vein administration of the COF-31@P using ICP-MS.
+The highest concentration of copper ions in the liver was
+observed 60 min post-injection. Furthermore, the copper
+ion levels in the liver consistently exceeded those in the
+spleen throughout the observation period, suggesting that
+the prodrug may predominantly undergo hepatic metabolism
+(Figure S33). In summary, COF-31@P demonstrates good
+biocompatibility and biosafety in both in vitro and in vivo
+models, along with favorable pharmacokinetic properties;
+these attributes strongly support its potential application in
+CDT and precision cancer treatment.
+After conﬁrming the excellent biosafety and biocompat-
+ibility of COF-31@P, we further investigated its in vivo
+biodistribution and tumor-targeting accumulation capacity.
+Fluorescence imaging technology was employed to quan-
+titatively analyse the biodistribution of COF-31@P across
+various organs and tumor tissues, and ﬂuorescence imaging
+technology was employed for quantitative analysis. The
+results indicated that COF-31@P reached peak ﬂuorescence
+intensity in tumor tissue at 6 h post-injection, followed by a
+gradual decline until the end of the experiment (Figure 6a,b).
+This suggests that COF-31@P efﬁciently accumulates at tumor
+sites via the enhanced permeability and retention (EPR)
+effect, facilitating its targeted localization in vivo.
+The anti-tumor efﬁcacy of COF-31@P was further val-
+idated using CT26 tumor-bearing models. BALB/c mice
+were injected with CT26 cells subcutaneously, and when
+the tumor size reached approximately 100 mm3, treatments
+were administered via intravenous injection of PBS buffer,
+free COF-31 (10 mg kg−1), prodrug (1.5 mg kg−1), and
+COF-31@P (10 mg kg−1). Tumor size and body weight
+measurements were taken every 2 days. The growth rate of
+CT26 tumors treated with PBS and COF-31 showed rapid
+progression, resulting in a ∼10-fold and ∼14-fold increase
+in tumor volumes, respectively, after 15 days of treatment
+(Figure 6c). In comparison, the average tumor volume in the
+group treated with free prodrug increased by a factor of 10
+after 15 days of treatment. However, when treated with COF-
+31@P, a minimal change in tumor size was observed during
+the initial 8 days following injection, and tumor growth was
+effectively limited to only a ∼3-fold increase after 15 days
+of treatment (Figure S34). Tumor weight statistics on day
+15 further validated the signiﬁcantly enhanced therapeutic
+Angew. Chem. Int. Ed. 2025, 64, e202509183 (9 of 12)
+© 2025 The Author(s). Angewandte Chemie International Edition published by Wiley-VCH GmbH
+ 15213773, 2025, 44, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.202509183 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Research Article
+Figure 6. a) In vivo ﬂuorescence distribution of rhodamine B-labeled COF-31@P. b) Fluorescence quantiﬁcation of major tissues and tumors at
+diﬀerent time points. c) The volume of tumors after diﬀerent treatments of PBS, COF-31 (10 mg kg−1), prodrug (1.5 mg kg−1), and COF-31@P
+(10 mg kg−1) at diﬀerent times. d) Weight of tumors after diﬀerent treatments. e) Body weight statistics of mice during diﬀerent treatments of PBS,
+COF-31 (10 mg kg−1), prodrug (1.5 mg kg−1), and COF-31@P (10 mg kg−1). f) H&E staining of mouse organs after diﬀerent treatments of PBS,
+COF-31 (10 mg kg−1), prodrug (1.5 mg kg−1), and COF-31@P (10 mg kg−1). g) H&E staining images, TUNEL ﬂuorescence staining, and Ki67
+immunohistochemical staining of tumor slices from each group after diﬀerent treatments of PBS, COF-31 (10 mg kg−1), prodrug (1.5 mg kg−1), and
+COF-31@P (10 mg kg−1).
+efﬁcacy of COF-31@P compared to all other treatment groups
+(Figure 6d). Notably, no signiﬁcant ﬂuctuations in body
+weight were observed among the mice across different groups
+throughout the treatment period, indicating the biosafety of
+the formulation (Figure 6e). Hematoxylin and eosin (H&E)
+staining was performed on major organs, including the heart,
+liver, spleen, lung, and kidney, from mice in different treat-
+ment groups following therapy. No noticeable inﬂammatory
+lesions or tissue damage were observed, underscoring the
+excellent biocompatibility of COF-31@P (Figure 6f). To
+further assess the therapeutic efﬁcacy of each treatment, H&E
+staining, terminal deoxynucleotidyl transferase dUTP nick-
+end labeling (TUNEL) immunoﬂuorescence staining, and
+Ki67 immunohistochemical staining were conducted on tumor
+tissues (Figure 6g). H&E staining revealed pronounced tumor
+cell shrinkage in the COF-31@P group, indicative of extensive
+tumor necrosis. Consistently, TUNEL staining exhibited the
+most intense green ﬂuorescence in the COF-31@P group,
+suggesting the highest level of apoptosis. Additionally, Ki67,
+a proliferation marker, showed the lowest expression in the
+COF-31@P group, conﬁrming a predominant apoptotic state
+of the tumor cells. Collectively, these ﬁndings demonstrated
+that COF-31@P effectively suppresses colorectal tumor
+progression, exhibiting a potent CDT effect.
+Conclusion
+We have successfully synthesized the nano prodrug COF-
+31@P by employing a mitochondrial-targeting COF as the
+Angew. Chem. Int. Ed. 2025, 64, e202509183 (10 of 12)
+© 2025 The Author(s). Angewandte Chemie International Edition published by Wiley-VCH GmbH
+ 15213773, 2025, 44, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.202509183 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Research Article
+delivery platform for catalase inhibitors and copper com-
+plexes. The morphology of COF-31@P was thoroughly char-
+acterized, revealing spherical nanostructures with an average
+particle size of approximately 180 nm, uniform morphology,
+a dense core structure, and ordered macroporous channels
+exhibiting two-dimensional layered structural characteristics.
+In vitro experiments demonstrated that the disulﬁde bonds
+within the prodrug can be efﬁciently cleaved by GSH, releas-
+ing copper complexes with Fenton-like reactivity and catalase
+inhibitors to suppress H2O2 consumption. Cellular experi-
+ments further conﬁrmed that COF-31@P exhibits exceptional
+stability, outstanding biocompatibility, and precise mitochon-
+drial targeting. Upon mitochondrial targeting, COF-31@P
+effectively releases the prodrug. The GSH-triggered release
+of the prodrug enables the copper complex to react with H2O2
+via a Fenton-like reaction, thereby enhancing therapeutic
+efﬁcacy. Additionally, the catalase inhibitor (3-AT) sustains
+elevated H2O2 levels, further promoting ROS (•OH) gener-
+ation and increasing oxidative stress, ultimately threatening
+tumor cell survival. In vivo validation of COF-31@P in CT26
+tumor-bearing mice demonstrated its tumor accumulation via
+the EPR effect, as well as its therapeutic efﬁcacy through
+effective CDT. Moreover, COFs demonstrate signiﬁcant
+advantages over metal-organic frameworks, polymer micelles,
+and inorganic nanoenzymes in the context of CDT, owing to
+their tunable pore structures, high speciﬁc surface areas, excel-
+lent biocompatibility, and favorable electronic conductivity
+(Table S1). COF-31@P incorporates mitochondrial targeting
+and enables the synergistic generation of multiple hydroxyl
+radicals. This strategy effectively addresses the key limitations
+of conventional CDT, including low catalytic efﬁciency, TME
+barriers, and the insufﬁciency of single-mode treatment.
+These ﬁndings highlight the potential of COF-based delivery
+systems to improve CDT efﬁcacy and advance precision
+cancer treatment.
+Acknowledgements
+This work was supported by the National Natural Science
+Foundation of China (22307036), the National Research
+Foundation of Korea (2018R1A3B1052702 to JSK), the
+National Natural Science Foundation of China (Grant
+No. NSFC 22271222), and the China Scholarship Council
+(202106270027 to QD).
+Conﬂict of Interests
+The authors declare no conﬂict of interest.
+Data Availability Statement
+The data that support the ﬁndings of this study are available
+from the corresponding author upon reasonable request.
+Keywords: Chemodynamic therapy • Covalent organic
+framework • Fenton-like reaction • Mitochondria • Tumor
+microenvironment
+[1] M. Li, Y. Xu, X. Peng, J. S. Kim, Acc. Chem. Res. 2022, 55, 3253–
+3264.
+[2] C. Ding, C. Chen, X. Zeng, H. Chen, Y. Zhao, ACS Nano 2022,
+16, 13513–13553.
+[3] M. Li, J. Kim, H. Rha, S. Son, M. S. Levine, Y. Xu, J. L. Sessler,
+J. S. Kim, J. Am. Chem. Soc. 2023, 145, 6007–6023.
+[4] Y. Liu, Y. Li, S. Koo, Y. Sun, Y. Liu, X. Liu, Y. Pan, Z. Zhang,
+M. Du, S. Lu, X. Qiao, J. Gao, X. Wang, Z. Deng, X. Meng, Y.
+Xiao, J. S. Kim, X. Hong, Chem. Rev. 2022, 122, 209–268.
+[5] C. Li, L. Tu, Y. Xu, M. Li, J. Du, P. J. Stang, Y. Sun, Y. Sun,
+Angew. Chem. Int. Ed. 2024, 63, e202406392.
+[6] L. Tu, C. Li, X. Xiong, J. Hyeon Kim, Q. Li, L. Mei, J. Li, S.
+Liu, J. Seung Kim, Y. Sun, Angew. Chem. Int. Ed. 2023, 135,
+e202301560.
+[7] P. Zhao, H. Li, W. Bu, Angew. Chem. Int. Ed. 2023, 62,
+e202210415.
+[8] Y. Zhang, P.-H. Chen, B. Li, H. Guo, J. Zhu, Z. Dang, S. Lei, P.
+Huang, J. Lin, ACS Nano 2023, 17, 16743–16756.
+[9] M. Li, Y. Xu, Z. Pu, T. Xiong, H. Huang, S. Long, S. Son, L. Yu,
+N. Singh, Y. Tong, J. L. Sessler, X. Peng, J. S. Kim, Proc. Natl.
+Acad. Sci. USA 2022, 119, e2210504119.
+[10] L.-S. Lin, T. Huang, J. Song, X.-Y. Ou, Z. Wang, H. Deng, R.
+Tian, Y. Liu, J.-F. Wang, Y. Liu, G. Yu, Z. Zhou, S. Wang, G. Niu,
+H.-H. Yang, X. Chen, J. Am. Chem. Soc. 2019, 141, 9937–9945.
+[11] Q. Tian, F. Xue, Y. Wang, Y. Cheng, L. An, S. Yang, X. Chen, G.
+Huang, Nano Today 2021, 39, 101162.
+[12] C. Jia, Y. Guo, F. G. Wu, Small 2022, 18, 2103868.
+[13] Z. Tang, Y. Liu, M. He, W. Bu, Angew. Chem. Int. Ed. 2019, 131,
+958–968.
+[14] C. Zhang, W. Bu, D. Ni, S. Zhang, Q. Li, Z. Yao, J. Zhang, H.
+Yao, Z. Wang, J. Shi, Angew. Chem. Int. Ed. 2016, 55, 2101–2106.
+[15] L. L. Zhou, Q. Guan, W. Y. Li, Z. Zhang, Y. A. Li, Y. B. Dong,
+Small 2021, 17, e2103868.
+[16] C. Cao, X. Wang, N. Yang, X. Song, X. Dong, Chem. Sci. 2022,
+13, 863–889.
+[17] S.-L. Li, X. Chu, H.-L. Dong, H.-Y. Hou, Y. Liu, Coordin. Chem.
+Rev. 2023, 479, 215004.
+[18] H. Chen, P. Wu, Z. Xiao, T. Li, M. Zhong, Y. Xie, Y. Liu, Nano
+Today 2024, 54, 102095.
+[19] Q. Ding, X. Wang, Y. Luo, X. Leng, X. Li, M. Gu, J. S. Kim,
+Coord. Chem. Rev. 2024, 508, 215772.
+[20] L. Wu, H. Lin, X. Cao, Q. Tong, F. Yang, Y. Miao, D. Ye, Q. Fan,
+Angew. Chem. Int. Ed. 2024, 63, e202405937.
+[21] L. Liu, J. Zhang, R. An, Q. Xue, X. Cheng, Y. Hu, Z. Huang, L.
+Wu, W. Zeng, Y. Miao, J. Li, Y. Zhou, H. Chen, H. Liu, D. Ye,
+Angew. Chem. Int. Ed. 2023, 62, e202217055.
+[22] Q. Chen, J. Zhou, Z. Chen, Q. Luo, J. Xu, G. Song, ACS Appl.
+Mater. Interfaces 2019, 11, 30551–30565.
+[23] S. Das, T. Sekine, H. Mabuchi, T. Irie, J. Sakai, Y. Zhao, Q. Fang,
+Y. Negishi, ACS Appl. Mater. Interfaces 2022, 14, 48045–48051.
+[24] W. Ji, P. Zhang, G. Feng, Y.-Z. Cheng, T.-X. Wang, D. Yuan, R.
+Cha, X. Ding, S. Lei, B.-H. Han, Nat. Commun. 2023, 14, 6049.
+[25] P. Hu, T. Wu, W. Fan, L. Chen, Y. Liu, D. Ni, W. Bu, J. Shi,
+Biomaterials 2017, 141, 86–95.
+[26] F. Mehvari, V. Ramezanzade, P. Asadi, N. Singh, J. Kim, M.
+Dinari, J. S. Kim, Aggregate 2024, 5, 480.
+[27] W. Bao, M. Liu, J. Meng, S. Liu, S. Wang, R. Jia, Y. Wang, G. Ma,
+W. Wei, Z. Tian, Nat. Commun. 2021, 12, 6399.
+[28] Y. Zhao, S. Das, T. Sekine, H. Mabuchi, T. Irie, J. Sakai, D. Wen,
+W. Zhu, T. Ben, Y. Negishi, Angew. Chem. Int. Ed. 2023, 62,
+e202300172.
+[29] Y. Li, L. Wang, H. Liu, Y. Pan, C. Li, Z. Xie, X. Jing, Small 2021,
+17, e2100756.
+[30] H. Liu, Z. Deng, Z. Zhang, W. Lin, M. Zhang, H. Wang, Matter
+2024, 7, 977–990.
+Angew. Chem. Int. Ed. 2025, 64, e202509183 (11 of 12)
+© 2025 The Author(s). Angewandte Chemie International Edition published by Wiley-VCH GmbH
+ 15213773, 2025, 44, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.202509183 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Research Article
+[31] L. Zhang, A. Song, Q.-C. Yang, S.-J. Li, S. Wang, S.-C. Wan, J.
+Sun, R. T. K. Kwok, J. W. Y. Lam, H. Deng, B. Z. Tang, Z.-J.
+Sun, Nat. Commun. 2023, 14, 5355.
+[32] Y. Tang, L. Ge, L. Jiang, X. Jiang, Nano Today 2024, 55, 102166.
+[33] Q. Ding, S. Zhang, J. S. Kim, Sci. China Chem. 2024, 67, 3508–
+3509.
+[34] B. Ma, S. Wang, F. Liu, S. Zhang, J. Duan, Z. Li, Y. Kong, Y. Sang,
+H. Liu, W. Bu, L. Li, J. Am. Chem. Soc. 2019, 141, 849–857.
+[35] L.-S. Lin, J. Song, L. Song, K. Ke, Y. Liu, Z. Zhou, Z. Shen, J. Li,
+Z. Yang, W. Tang, G. Niu, H.-H. Yang, Angew. Chem. Int. Ed.
+2018, 130, 4996–5000.
+[36] K.e T. Tan, S. Ghosh, Z. Wang, F. Wen, D. Rodríguez-San-
+Miguel, J. Feng, N. Huang, W. Wang, F. Zamora, X. Feng, A.
+Thomas, D. Jiang, Nat. Rev. Methods Primers 2023, 3, 1.
+[37] A. M. Evans, L. R. Parent, N. C. Flanders, R. P. Bisbey, E.
+Vitaku, M. S. Kirschner, R. D. Schaller, L. X. Chen, N. C.
+Gianneschi, W. R. Dichtel, Science 2018, 361, 52–57.
+[38] C. Kang, K. Yang, Z. Zhang, A. K. Usadi, D. C. Calabro, L.
+S. Baugh, Y. Wang, J. Jiang, X. Zou, Z. Huang, D. Zhao, Nat.
+Commun. 2022, 13, 1370.
+[39] Y. Yang, M. Ratsch, A. M. Evans, K. Börjesson, J. Am. Chem.
+Soc. 2023, 145, 18668–18675.
+[40] Z. Lin, J. J. Richardson, J. Zhou, F. Caruso, Nat. Rev. Chem. 2023,
+7, 273–286.
+[41] F. Auras, L. Ascherl, V. Bon, S. M. Vornholt, S. Krause, M.
+Doeblinger, D. Bessinger, S. Reuter, K. W. Chapman, S. Kaskel,
+R. H. Friend, T. Bein, Nat. Chem. 2024, 16, 1373–1380.
+Manuscript received: April 25, 2025
+Revised manuscript received: July 23, 2025
+Manuscript accepted: September 01, 2025
+Version of record online: September 09, 2025
+Angew. Chem. Int. Ed. 2025, 64, e202509183 (12 of 12)
+© 2025 The Author(s). Angewandte Chemie International Edition published by Wiley-VCH GmbH
+ 15213773, 2025, 44, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.202509183 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

@@ -1,0 +1,991 @@
+Advanced Functional Materials
+www.afm-journal.de
+RESEARCH ARTICLE
+Biocompatible but Antibacterial Mechanism of Graphene
+Oxide for Sustainable Antibiotics
+Sujin Cha1
+Ju Yeon Chung2
+Seungju Yang2
+Seung Cheol Lee2
+Chan Woo Lee1
+Colin Wing-Lok Cheng1
+Jun Beom Kim1
+Nam Jun Kim1
+Ayoung Park2
+Heewon Choi2
+Junpyo Sinn2
+Ralph Weissleder3,4
+Nicholas A. Kotov5
+Myungeun Seo6,7
+Hyun Jung Chung2
+Sang Ouk Kim1,7,8
+1Department of Materials Science and Engineering, Korea Advanced Institute of Science and Technology (KAIST), Daejeon, Republic of Korea
+2Department of
+Biological Sciences, Korea Advanced Institute of Science and Technology (KAIST), Daejeon, Republic of Korea
+3Center For Systems Biology, Massachusetts
+General Brigham, Boston, Massachusetts, USA
+4Department of Systems Biology, Harvard Medical School, Boston, Massachusetts, USA
+5Department of
+Chemical Engineering, University of Michigan, Ann Arbor, Michigan, USA
+6Department of Chemistry, Korea Advanced Institute of Science and Technology
+(KAIST), Daejeon, Republic of Korea
+7KAIST Institute for Nanocentury, Korea Advanced Institute of Science and Technology (KAIST), Daejeon, Republic of
+Korea
+8Materials Creation, Seoul, Republic of Korea
+Correspondence: Hyun Jung Chung (hyunjc@kaist.ac.kr)
+Sang Ouk Kim (sangouk.kim@kaist.ac.kr)
+Received: 31 December 2025
+Revised: 17 February 2026
+Accepted: 20 February 2026
+Keywords: antibacterial effect | biocompatibility | graphene oxide | membrane | phospholipid
+ABSTRACT
+Graphene oxide (GO) has attracted research attention as a promising biomedical material principally owing to its biocompatibility
+as well as excellent antibacterial properties, although the exact mechanism for the apparently conflicting both activities remains
+controversial yet. We present controlled physicochemical and biomimetic features of GO that exert antibacterial effects via selective
+destabilization of the bacterial membrane. Our model cell study, exploiting artificial vesicular phospholipid assembly along
+with spectroscopic analyses, finds that surface oxygen functionalities of GO determine antibacterial activity by highly specific
+interaction with POPG, a phospholipid selectively present in membranes of various bacterial species, including drug-resistant
+bacteria. Furthermore, GO-incorporated nanofibers were evaluated in infected wound models in mice and pigs, where they
+effectively suppressed bacterial growth and accelerated wound healing with minimal inflammation. These findings highlight the
+potential use of GO as a safe and sustainable antibacterial to avoid repeated overuse of conventional antibiotics.
+1
+Introduction
+Widespread overuse of antibiotics and the consequent emergence
+of antibiotic resistance have prompted the need for newer and
+safer alternatives. There is a need for better treating antibiotic-
+resistant bacterial variants, minimizing nosocomial infections
+in implanted biomaterials, treating chronic infections and sur-
+face ulcers, among many others. Biomimetic engineering of
+nanoparticles provides an avenue to potent antibacterials by
+offering strong antibiotic-like activity on their often intricately
+shaped surfaces [1–4]. Adoption of nanomaterials for clinical
+use, nonetheless, necessitates thorough assessment of efficacy,
+toxicity, and feasibility of production [5–8]. For instance, metal
+nanoparticles, such as silver or copper, act via ion release and are
+simple to make, but their in vivo use induces oxidative stress and
+cellular damage [9–11].
+Low-dimensional carbons, such as carbon quantum dots, carbon
+nanotubes (CNTs), graphene, and their derivatives, have attracted
+interest as antibacterials [12–14]. CNTs are well-known for the
+Sujin Cha and Ju Yeon Chung contributed equally to this work.
+This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium, provided the original work is properly
+cited.
+© 2026 The Author(s). Advanced Functional Materials published by Wiley-VCH GmbH
+Advanced Functional Materials, 2026; 36:e74695
+https://doi.org/10.1002/adfm.74695
+1 of 12
+
+strong antibacterial effect due to its needle-like morphology,
+however, it can lead to damage of cell membranes [15–19]. On
+the other hand, graphene has a sheet-like morphology and thus
+offers a large surface area and mechanical flexibility, enabling
+intimate interactions with bacterial cell surfaces [20–23]. Unlike
+chemically inert pristine graphene, graphene oxide (GO), an
+oxidized form of graphene [24–26], possesses abundant oxygen
+functional groups that enable processability in aqueous disper-
+sion and chemical functionalization [27–37]. These distinctive
+features promote more effective adhesion to and intimate contact
+with biological cell membranes, contributing to antibacterial
+activity [38, 39]. The antibacterial action of GO has been suggested
+by physicochemical mechanisms primarily based on simulations
+[40, 41]. Unfortunately, the exact antibacterial mechanism of
+GO has rarely been elucidated under experimentally relevant
+conditions, particularly along with the consideration of its
+biocompatibility.
+To date, the biocompatibility of GO has prompted its exploitation
+for biomedical applications, such as drug delivery and tissue
+engineering [42–45]. Noticeably, an intriguing recent study pre-
+sented that straightforward respiratory inhalation of small-sized
+GO sheets by human subjects was well tolerated without causing
+any negative effects in the pulmonary or cardiovascular systems,
+nor any inflammatory responses [46, 47]. Such a biocompatibility
+has been suggested to be driven by the rapid excretion of GO after
+administration, which may depend on the degree of oxidation
+or purity of GO [48–51]. Other proposed explanations have
+primarily been based on the phenomenological observations [52].
+While considering the commonly conflicting feature between
+biocompatibility and antibacterial activity in the absence of a
+carefully designed antibiotic functionality, the molecular-level
+interaction between GO and the biological system needs to be
+clarified.
+In this study, we investigate the sustainable antibacterial activity
+of GO at the molecular level, focusing on its selective interaction
+with palmitoyloleoylphosphatidylglycerol (POPG), a phospho-
+lipid representative of bacteria. By investigating chemically
+modified GOs with various physical and chemical features, we
+clarified that the oxygen functional groups on the GO surface
+offer highly selective interaction with the bacterial membrane
+phospholipids (Figure 1A). The antibacterial activity of GO in
+various forms (e.g., films, nanofibers, and powders) was assessed
+in vivo using infected wound models in mice and, notably, in a
+porcine model that is histologically analogous to humans. Apply-
+ing GO on the wounds resulted in potent antibacterial effects
+that led to accelerated wound closure rates, while exhibiting
+minimal blood clotting and inflammation reactions. This study
+not only uncovers the origin of the biocompatible antibacterial
+effect by GO, but also prospects the potential use of GO for generic
+antibacterial therapy that can be safely applied in the long term.
+2
+Results and Discussions
+2.1
+Antibacterial Activity of Chemically
+Functionalized GO
+A series of chemically modified graphene nanosheets was pre-
+pared by physical and chemical modification of GO, and their
+antibacterial effect was examined [53–57]. GO nanosheets with
+various lateral dimensions were generated (Figure 1B; Figure
+S1), and either modified by thermal reduction to control the
+oxygen content (Figure 1C; Figures S2 and S3, and Table S1),
+or by nitrogen-doping (Figure 1D; Figure S4). All GO sheets
+displayed strong antibacterial efficacy, indicating the dominant
+surface-to-surface interactions with the membranes, with the
+growth suppression of 96–99% (Figure 1E). Notably, the oxygen
+content significantly influenced the antibacterial efficacy, with
+the higher oxygen level leading to the stronger antibacterial effect
+(Figure 1F). While moderately reduced GO (MrGO) and rGO
+displayed reduced efficacies to 68% and 57% suppression, respec-
+tively, the unmodified GO exhibited the strongest antibacterial
+activity up to > 99% suppression of bacterial growth. Nitrogen-
+doped GO (NGO) resulted in the lowest suppression (60%),
+indicating that chemical N-doping weakens the antibacterial
+effects (Figure 1G). rGO and reduced nitrogen-doped GO (rNGO)
+also showed inferior antibacterial performances with 65% and
+79% suppression, respectively, compared to unmodified GO, con-
+firming that these chemical modifications reduced the efficacy.
+Increasing the amount of GO resulted in a higher antibacterial
+efficacy, which remained sufficiently strong even at high bacte-
+rial densities (Figure S5). Notably, this antibacterial effect was
+consistently observed against E. coli and K. pneumoniae, as well
+as strains harboring antibiotic resistance genes (NDM-1) (Figure
+S6). Moreover, GO significantly suppressed the growth of rep-
+resentative Gram-positive bacteria, reducing bacterial growth to
+approximately 14–16% in methicillin-sensitive S. aureus (MSSA)
+and ∼30% in methicillin-resistant S. aureus (MRSA) relative to
+untreated controls, although the underlying antibacterial mecha-
+nism may differ from that of gram-negative ones in the presence
+of thick peptidoglycan cell wall (Figure S7). Taken together, the
+GO sheets with abundant oxygen groups were found to exhibit
+potent antibacterial effects, even in drug-resistant bacteria.
+2.2
+Selective Interaction of GO With Bacterial
+Phospholipids
+As a simplified model for GO-bacterial membrane interaction,
+we prepared artificial membrane models mimicking E. coli,
+purely composed of the two typical phospholipids, including
+palmitoyloleoylphosphatidylethanolamine (POPE) and POPG.
+While POPE is commonly found in the membranes of both
+bacteria and mammalian cells, POPG is selectively present only
+in the membranes of various bacterial species, including those
+of drug-resistant bacteria [58–61], constituting over 15% of the
+bacterial membrane phospholipids. POPG stabilizes bacterial
+membranes under the environmental challenges in diverse and
+often hostile conditions, such as aqueous conditions or varying
+ionic strengths. Its anionic nature facilitates interactions with
+divalent cations like Mg2+ and Ca2+, and thereby protects the
+membrane against osmotic pressure, antimicrobial peptides, and
+other external threats [62]. Cryogenic electron microscopy (cryo-
+EM) shows that the GO film, prepared by typical vacuum
+filtration, induced selective disruption of the artificial mem-
+brane, including POPG with punctured, collapsed structures,
+whereas no particular modification of pure POPE-based mem-
+branes (Figure 2A, Figures S8 and S9) was observed. Further
+investigation using GO powder revealed that nanoscale GO
+flakes selectively adhered onto bacterial-mimicking membranes,
+2 of 12
+Advanced Functional Materials, 2026
+ 16163028, 2026, 41, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74695 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 1
+Chemically modified GO nanosheets and their antibacterial effect. (A) Schematic illustration of the selective antibacterial mechanism
+of GO nanosheets and their chemical structures. (B) Size distribution of small GO. Inset: SEM image (scale bar: 200 nm). (C) Atomic compositions of
+GO reduced at various temperatures, calculated from XPS survey spectra. (D) XPS spectra of N 1s peaks in rNGO. (E) to (G) Antibacterial performances
+of various GO-based nanostructures. ((E) Different sizes of GO nanosheets (n = 4); (F) GO with various oxygen contents (n = 3); (G) nitrogen-doped GO
+(n = 2), treated to E. coli (107 CFU) for 4 h; independent experiments; data normalized to respective untreated controls). Data represent mean ± s.e.m.
+(* = p < 0.05, ** = p < 0.01, *** = p < 0.001, **** = p < 0.0001, one-way ANOVA).
+Advanced Functional Materials, 2026
+3 of 12
+ 16163028, 2026, 41, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74695 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 2
+Mechanism of selective antibacterial effect by GO. (A) Cryo-EM of E. coli-mimicking membrane (POPE:POPG = 2:1, 10 mg/mL) exposed
+to GO (scale bar = 200 nm). Red arrows and a circle indicate structural defects in the membrane. (B) and (C) Chemical interactions between phospholipids
+and GO ((B) FTIR spectra; (C) 1H-NMR spectra). (D), Interaction mechanism between POPG and GO. (E) Morphology and sphericity of E. coli treated
+with GO assessed via 3D real-time holotomography (scale bar = 1 µm). (F) SEM images of E. coli treated with GO. Red arrows indicate structural disruption
+of E. coli cells (scale bar = 2 µm).
+frequently accompanied by membrane rupture. This behavior
+is apparently analogous to the interfacial specific interaction of
+listeriolysin O with the phagosomal membrane [63, 64]. In the
+same manner, GO selectively interacts with POPG in the bacterial
+membrane. In a stark contrast to the case including POPG, GO
+does not show such an intimate interaction with the membranes
+composed solely of POPE (Figures S8 and S9). These observations
+underscore GO’s specific affinity for POPG and its ability to
+induce membrane disruption.
+Fourier transform infrared (FTIR) analysis revealed that while
+POPE membrane does not exhibit a noticeable change in its
+spectrum when exposed to GO film, POPG liposome clearly
+shows peaks originating from GO at 3200–3600 and 1620 cm−1
+(Figure 2B; Figure S10) [65, 66], indicating that the POPG
+liposomes picked up a substantial amount of GO flakes via
+specific interactions. Notable alterations in the 950–1300 cm−1
+range suggest GO interacts with the phosphate head groups [67].
+The selective interaction of GO with POPG was further inves-
+tigated using proton nuclear magnetic resonance spectroscopy
+(1H-NMR). Deuterated chloroform was used as the solvent to
+dissolve the phospholipids homogeneously. While no particular
+change was observed in the spectrum of POPE treated with
+4 of 12
+Advanced Functional Materials, 2026
+ 16163028, 2026, 41, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74695 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+GO film, methylene and methine protons in the glycerol unit
+of POPG located around 3 to 4 ppm showed a noticeable
+downshift in the NMR spectra (Figure 2C). This modification
+proposes that hydrogen bonding between the diol in POPG and
+oxygen-containing functional groups in GO could contribute to
+the observed interaction, mediating a specific influence on the
+antibacterial membrane (Figure 2D). Similar downfield shifts
+were also observed in the solutions of POPG with the model
+compounds representing GO fragments with the typical oxygen
+functional groups, including alcohol, epoxide, and carboxylic
+acid, well-supporting the hydrogen bonding mechanism as the
+origin of GO-POPG interaction (Figure S11).
+We also performed zeta potential measurements for the surface
+charge states of model cell membranes. Anionic POPG liposomes
+are more negatively charged than POPE counterparts (Figure
+S12). Our NMR results suggest that parallel adsorption of GO on
+the POPG-rich surface could maximize the hydrogen bonding
+opportunity, while involving abundant basal oxygen functional
+groups, and overcome the electrostatic repulsion from carboxylic
+acid-rich edges. Indeed, the zeta potential value significantly
+increased (less negative) for POPG and POPE/POPG-mixed lipo-
+somes after GO film treatment, illustrating the effective shielding
+of negative charges with GO adsorption. By contrast, the POPE
+membrane remained nearly unchanged without specific inter-
+action with GO. Noteworthy, while bacterial membrane lipids
+can be chemically modified to exhibit a weaker negative change,
+such as through MprF-mediated POPG lysinylation. This may
+attenuate initial membrane association, but the inherent POPG-
+dependent interaction is still active for eventual antibacterial
+activity. Together, this multifaceted mode of action suggests that
+GO-based nanomaterials may retain antibacterial efficacy even in
+the presence of emerging resistance mechanisms.
+The morphological changes of bacteria with GO treatment
+were characterized by real-time 3D holotomography, a unique
+technique for the high-resolution and rapid time-lapse anal-
+ysis of live cells without sample processing or labeling, thus
+minimizing the potential artifacts. Gradual distortion in the
+spherical morphology of bacterial cells was monitored over time
+upon exposure to GO (Figure 2E; Figure S13). The significant
+disruption of the plasma membrane was accompanied with the
+leakage of intracellular substances (Figure 2E). Scanning electron
+microscope (SEM) analysis also revealed that bacterial cells
+treated with the GO film exhibited membrane instability, leading
+to surface wrinkling, followed by structural disruption of the cells
+(Figure 2F).
+2.3
+GO Nanofibers as an Antibacterial Material
+As a conventional material form for biomaterial application,
+nylon nanofiber, including GO were prepared to examine the
+antibacterial activity. ∼200 nm diameter fibers with the GO
+compositions of 1 wt.% (GO-1%) and 2 wt.% (GO-2%) were
+produced by electrospinning process. SEM observation confirmed
+that GO sheets were evenly distributed at the cores as well as the
+surfaces of the nanofiber matrix (Figure 3A; Figure S14). It is note-
+worthy that, for GO contents exceeding 2 wt.%, nozzle clogging
+was observed during electrospinning, leading to bead formation
+and nonuniform fiber geometry; therefore, the GO content was
+limited to 2 wt.% (Figure S15). Thermogravimetric (TGA) analysis
+detected an increase in the thermal decomposition temperature
+with GO (Figure S16). The composite fibers, as well as their
+randomly accumulated textile, demonstrated strong antibacterial
+effects for E. coli, which increases with the GO content and
+total volume of spinning dope (Figure 3B, Figures S17 and S18).
+The antibacterial activity was well-maintained even after the
+thorough washing in water, confirming the stable incorporation
+of GO within the fiber matrix (Figure S19). Visual observation
+of the live and dead bacteria confirmed that the GO nanofiber
+induced the substantial deaths of bacterial cells (Figure 3C),
+compared to the GO-free counterparts without noticeable effect.
+It is noteworthy that several different matrix polymers were tested
+for the antibacterial effect. Interestingly, nanofibers composed of
+polyvinyl alcohol (PVA) and GO exhibited negligible antibacterial
+efficacy, presumably due to the strong multivalent hydrogen
+bonding between GO and the hydroxyl-rich PVA chains [68],
+which may restrict the interaction among GO surfaces and
+bacterial membranes (Figure S20). By contrast, polyamide groups
+in nylon are predominantly engaged in intrinsic interchain
+hydrogen bonding [69], thereby preserving the accessibility to
+GO surface functional groups. Despite their strong antibacterial
+effect, the cytotoxicity evaluation of GO fibers by treating NIH-
+3T3 cells presents minimal toxicity toward mammalian cells even
+after a prolonged treatment over 72 h (Figure 3D; Figures S21 and
+S22). This secures the potential use of GO-based materials for
+biomedical applications.
+2.4
+In Vivo Antibacterial Efficacy of GO
+We examined the in vivo antibacterial efficacy as well as the
+therapeutic potential of GO by employing wound infection
+models in mice and pigs. Various GO-based forms, including
+pure GO film, nylon composite fiber, and pure GO powder, were
+applied to the mice with full-thickness wounds infected with
+E. coli (Figure 3E). All GO forms resulted in the substantial
+reduction of bacterial growth within 7 days (Figure 3F; Figures
+S23 and S24). Notably, GO powder abrogated the bacterial growth
+within 3 days (no colony detected) (Figure 3G). By contrast, the
+pure nylon control suffered from substantial bacterial growth
+throughout the observed period. Moreover, all GO forms led to
+noticeably accelerated wound closure rates (Figure 3H), well-
+correlated to the antibacterial efficacy. Histological analysis of
+the skin tissues confirmed that GO forms induced minimal
+inflammation, reduced bleeding, and enhanced wound healing
+effects (Figure 3I; Figure S25). Since mice are known to exhibit
+rapid turnover rates of body fluids that can lead to high tolerance
+to foreign body reactions, validation in larger animal models that
+are physiologically similar to humans is highly desired.
+We employed a porcine model to validate the effect of GO in
+skin tissue, which is known to be highly similar to human
+skin. Full-thickness wound infections of E. coli were generated
+on the skin tissues of pigs, followed by the application of GO
+forms (Figure 4A; Figure S26). All GO forms (powder, film, and
+nanofiber) could successfully eradicate the infection, validating a
+clear contrast to the controls without GO (Figure 4B; Figures S27
+and S28). Quantification of bacterial colonies revealed the major
+reductions in bacterial growth, with the GO nanofiber resulting
+in > 99.9% reduction within 9 days (Figure 4C). The enhanced
+Advanced Functional Materials, 2026
+5 of 12
+ 16163028, 2026, 41, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74695 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 3
+In vivo Antibacterial efficacy of various GO forms in mice. (A) Electrospinning process for nylon/GO composite nanofibers (2 wt.%
+GO; scale bar = 2 µm). (B) Bacterial growth measurements after treatments with GO nanofiber of different GO contents to E. coli (105∼7 CFU) for 4 h.
+(C) Confocal microscopy of E. coli stained with SYTO9 (green) and PI (red) for live and dead bacteria, respectively, after 2 h of treatment with GO
+nanofiber (scale bar = 10 µm; inset scale bar = 5 µm). (D) Cytotoxicity of GO nanofiber with different GO contents (0∼2 wt.%) against NIH-3T3 (20,000
+cells) over 24∼72 h (Inset: photographs of the nanofibers). (E) Timeline for examining the in vivo efficacy of GO in E. coli-infected skin wounds of
+mice. (F) Gross images of wounds and bacterial colony formation after treatments with GO forms (film, nanofiber, and powder; scale bar = 5 mm).
+(G) Quantification of bacteria (log CFU) in the infected wounds after treatments with GO forms. (H) Wound closure rates are measured with time. (I)
+Histological analyses of infected skin tissues harvested on day 7, stained with hematoxylin and eosin (H&E) and Masson’s trichome (MT) (Scale bar =
+100 µm). Blue and yellow arrowheads indicate signs of inflammation and bleeding, respectively. (D), (G) and (H) Data represent mean ± s.e.m. (D) n =
+3, (G) and (H) n = 4–6, * = p < 0.05, **** = p < 0.0001, one-way and two-way ANOVA. (F) and (I) Representative images shown from each treatment
+group (n = 4–6).
+6 of 12
+Advanced Functional Materials, 2026
+ 16163028, 2026, 41, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74695 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 4
+In vivo antibacterial efficacy of GO in a porcine wound infection model. (A) Schematic and timeline for applying GO antibacterials to
+E. coli-infected skin wounds in pigs. (B) Gross images of wounds and bacterial colonies following treatment with different GO forms (scale bar = 1 cm).
+(C) Antibacterial efficacy by measuring bacterial load (log CFU) in the infected wounds treated with GO forms. (D) Wound closure rates with time. (E)
+Histological analyses of infected skin tissues treated with different GO forms, harvested on day 13, and stained with H&E and MT. Captured images at
+low magnification (middle) and at high magnification of the deep tissue layer (left) and surface (right) of skin tissue, for each treatment group (Scale bar
+= 100 µm). Blue and yellow arrowheads indicate signs of inflammation and bleeding, respectively. (C) and (D) Data represent mean ± s.e.m. (n = 3; *
+= p < 0.05, ** = p < 0.01, **** = p < 0.0001, one-way or two-way ANOVA). (B) and (E) Representative images shown from each treatment group (n = 3).
+antibacterial activities were correlated to the accelerated wound
+closure rates (Figure 4D). The potent effect of GO nanofiber
+in pigs can be attributed to the structural stability as well as
+mechanical flexibility that enables a better contact with the
+soft tissue, while preventing the uncontrolled leakage of bare
+GO sheets. By contrast, GO powder form suffered from poor
+and nonuniform coverage over the relatively large wound area,
+which is more challenging in large animals like pigs. Histolog-
+ical analysis demonstrated that the GO nanofiber resulted in
+minimal bleeding and inflammation, while the control group
+without GO exhibited noticeably higher levels of bleeding and
+inflammation (Figure 4E). Overall, the GO nanofiber emerged
+as a feasible antibacterial material with the minimal use of GO
+compared the pure GO film or powder. Further application to
+human should require finely tuned material designs regarding the
+controllable factors, such as GO size and content, modification,
+and fabrication form, for the optimal therapeutic efficacy.
+3
+Conclusion
+Understanding the molecular-level antibacterial mechanism of
+GO alongside the in-depth characterization in animal models
+proposes a sustainable and reliable design principle of GO-
+based materials for antibacterial therapy, which has been a
+longstanding controversy due to the inconsistency of the previous
+Advanced Functional Materials, 2026
+7 of 12
+ 16163028, 2026, 41, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74695 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+research results. Without judiciously designed biochemical activ-
+ities of antibiotics, GO exhibits highly selective interaction at
+the molecular-level that leads to the seemingly contradictory
+features of antibacterial efficacy and biocompatibility. The abun-
+dant oxygen functional groups on GO basal surfaces facilitate
+surface-to-surface interaction with the bacteria-specific phos-
+pholipids, uniquely enabling large-scale membrane disruption
+across various bacterial species, while preserving the integrity of
+mammalian cells. Moreover, owing to the generic presence of
+bacteria-specific phospholipids, this intriguing activity also holds
+for drug-resistant bacteria.
+The unique antibacterial activity of GO provides a sustainable
+and efficacious approach for infection control. Various material
+forms, including GO (film, nanofiber, and powder), generally
+demonstrated excellent antibacterial efficacy even with a small
+dose of GO. No significant inflammation was observed in the in
+vivo wound model tests, even with the intended bacterial infec-
+tions, together with the noticeably accelerated wound healing
+rate. Noticeably, GO-integrated nanofibers retained antimicrobial
+efficacy after repeated textile washing, prospecting their potential
+applicability as a reusable medical and protective equipment.
+This high stability, combined with its unique mode of antibacte-
+rial action, clearly distinguishable from other pharmaceuticals,
+and the general applicability to a broad spectrum of bacteria,
+including drug-resistant bacteria, highlights the potential of GO
+to move beyond passive infection prevention and contribute to
+reducing the repeated overuse of antimicrobial drugs. Overall, GO
+offers a versatile and valuable platform for the next generation
+of wound dressings, surgical instruments, and wearable textiles
+designed to address both clinical and functional demands in
+dynamic healthcare environments.
+4
+Experimental Section
+4.1
+Materials
+Large-sized graphene oxide, synthesized via the modified
+Hummers’ method and dispersed at a concentration of 10 mg/mL,
+was supplied by Grapheneall (Republic of Korea). Ammonia
+solution and nylon 6, and polyvinyl alcohol (Mw 89,000-98,000)
+were purchased from Sigma-Aldrich. 16:0-18:0 1-Palmitoyl-2-
+oleoyl-sn-glycero-3-phosphoethanolamine (POPE) and 16:0-18:0
+1-palmitoyl-2-oleoyl-sn-glycro-3-phospho-(1’-rac-glycerol)
+(sodium salt) (POPG) were purchased from Avanti Polar Lipids.
+2-Cyclohexen-1-ol, 3,4-epoxy-1-cyclohexene, benzoic acid, and
+chloroform-d (CDCl3, 99.8 at%) for NMR analysis was purchased
+from Sigma-Aldrich.
+4.2
+Preparation and Characterization of
+Chemically Modified GO
+To obtain highly purified GO, pre-washing of large GO was
+performed three times by centrifugation at 17,000 rpm. The
+GO dispersion (3.5 mg/mL) was tip-sonicated under ambient
+temperature for 20 min and 1 h to produce medium- and small-
+sized GO, respectively. To prepare the NGO, the obtained GO
+powder (method explained in the next section) was placed in
+ammonia solution and bath-sonicated for 3 h at 10◦C, followed
+by centrifugation at 17,000 rpm to achieve neutral pH. MrGO
+and rGO were prepared by thermal reduction of GO at 200◦C
+and 800◦C, respectively, under Ar atmosphere (Ar flow rate:
+100 sccm). NGO film was thermally reduced at 800◦C under
+Ar and ammonia atmosphere, to form rNGO (flow rates: Ar at
+100 sccm and ammonia at 50 sccm). For SEM, GO dispersed at
+5 µg/mL was applied and spin-coated on a silicon oxide wafer
+by treating with UV ozone. The GO layers and lateral sizes were
+observed using SEM (Hitachi S-4800) and analyzed using Image
+J. XPS spectroscopy was performed with GO films produced by
+a vacuum filtration method by a survey scan and narrow scans
+of the C1s and N1s regions using Nexsa G2. Chemical compo-
+sitions were obtained from the XPS spectra using the Avantage
+software.
+4.3
+Fabrication of Various GO Forms
+To prepare GO film, GO dispersions of 8.6 mL in deionized
+(DI) water were vacuum-filtrated through a PVDF membrane
+(pore size 0.22 µm) and precipitated on the membrane by drying
+in a vacuum at room temperature for 24 h. GO powder was
+obtained by freezing GO dispersion in liquid nitrogen, followed
+by freeze-drying for 2 days. To fabricate nylon/GO and PVA/GO
+composite nanofibers, nylon chips were dissolved in formic
+acid (Samchun Chemicals) to a concentration of 20 wt.%, while
+PVA was dissolved in DI water to 20 wt.% at 90◦C in an oil
+bath for 2 h, followed by stabilization at room temperature for
+24 h. Subsequently, GO powder was added to the nylon/GO or
+PVA/GO dispersion at a concentration of 0–2 wt.% and bath-
+sonicated at below 10◦C, then stabilized by magnetic stirring for
+24 h at room temperature. A syringe containing the nylon/GO
+or PVA/GO dope was connected to an electrospinning system
+(MTDI), then the electrospun nanofiber nonwovens were col-
+lected on a conductive carbon-coated teflon film under a potential
+of 15 kV between the spinneret (25 gauge needle). SEM (Hitachi
+S-4800) analysis was conducted for observation. TGA (TG209 F1
+Libra) analysis was conducted under a nitrogen atmosphere with
+10◦C/min heating rate.
+4.4
+Bacteria-Mimicking Artificial Membrane
+Model
+An E. coli-mimicking bacterial membrane model including POPG
+and POPE was produced according to a previous report [65,
+66]. In brief, POPG and POPE dissolved in chloroform at 1:2
+molar ratio were added to a glass vial and dried overnight to
+remove the organic solvent. The thin film and PBS (pH 7.4)
+buffer were preheated to above Tm (50◦C), and the thin film
+was resuspended in PBS (pH 7.4) to a final concentration of
+10 mg/mL at 50◦C for 10 min. After the lipid was dissolved
+completely, the solution was extruded multiple times through
+a thin polycarbonate membrane filter (Nucleopore Hydrophilic
+membrane, 1.0 µm pore size, 19 mm circle) using an extruder
+(Avanti Polar Lipids), creating 1 µm-size POPE/POPG liposomes.
+GO films were added to the solution of POPE/POPG liposomes
+and incubated at room temperature for 24 h under gentle shaking.
+Cryo-EM was conducted on 200-mesh lacey carbon copper grids
+(EMS), which were glow-discharged by PELCO easiGlow (TED
+Pella) for 90 s at 15 mA, and applied with the sample in 100%
+8 of 12
+Advanced Functional Materials, 2026
+ 16163028, 2026, 41, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74695 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+humidity and 4◦C. The grid was plunged using an automated
+plunge freezer (Thermo Fisher Glacios), blotted (blot force 4,
+blot time 4 sec), and rapidly frozen in liquid ethane. Samples
+were applied to the cryoholder and examined with a transmission
+electron microscope (Thermo Fisher Glacios).
+For FTIR and zeta potential analyses, POPE or POPG dissolved in
+chloroform were added to a 5 mL glass vial and dried overnight
+to remove the solvent, and re-dissolved in DI water to 10 mg/mL.
+GO film and dispersion were added to the solution of liposomes
+and incubated for 24 h at room temperature under gentle
+shaking. Following this, the zeta potential was immediately
+measured using ELSZ-2000 (Otsuka), and FTIR analysis was
+conducted after drying, using Nicolet iS50. For NMR analysis,
+POPE or POPG was dissolved in CDCl3 at 10 mg/mL, and added
+with the GO film, 2-cyclohexen-1-ol, 3,4-epoxy-1-cyclohexene,
+and benzoic acid, with their amounts matched to the molar
+quantity of functional groups on the GO film. The mixture was
+incubated at room temperature with gentle shaking. 900 MHz
+1H-NMR analysis was performed at the Korea Basic Science
+Institute (KBSI) using AR91, and analyzed using the MastReNova
+software.
+4.5
+Bacterial Culture
+Bacterial strains of E. coli (KCTC 22366) and K. pneumoniae
+(KCTC 12385) were obtained from the Korean Collection for Type
+Cultures. NDM-1-positive E. coli (AMC 22365) and K. pneumoniae
+(AMC 22503) were obtained from Asan Medical Center. For
+culture, bacteria were inoculated into Luria-Bertani broth (LB,
+DifcoTM, BD) or tryptic soy broth (TSB, DifcoTM, BD) and
+incubated in suspension at 37◦C with gentle agitation (160 rpm) in
+a shaking incubator (Jeiotech) overnight. Bacterial suspensions
+were transferred to fresh media and incubated for another 2 h.
+Bacterial growth was examined by measuring optical densi-
+ties at 600 nm (OD600) using NanoPhotometer (P330, Implen
+GmbH).
+4.6
+In Vitro Antibacterial Efficacy
+Microbial Viability Assay Kit-WST (Dojindo Molecular Technolo-
+gies, Inc.) was used to examine antimicrobial activity according to
+the manufacturer’s instructions. In brief, cultured bacteria were
+repeatedly washed with PBS (pH 7.4), and resuspended in fresh
+PBS to 2 × 105∼9 CFU/mL. Various GO forms or controls were
+treated to bacteria in a microwell plate, incubated for 4 h at
+37◦C, and bacterial cells were collected using a 0.1 µm centrifugal
+filter. Bacteria were resuspended in Mueller Hinton Broth (MHB)
+media (DifcoTM, BD) containing the WST reagent, followed
+by incubating at 37◦C for 1 ∼2 h. The absorbance at 450 nm
+was measured using Infinite 200 PRO (Tecan Group, Ltd.), and
+bacterial growth was determined based on normalization with
+values for the untreated control.
+Live/Dead BacLight Bacterial Viability kit (Thermo Fisher Scien-
+tific) was used to visualize live and dead bacteria, according to the
+manufacturer’s instructions. Briefly, bacteria were suspended in
+fresh LB medium to reach an OD600 of 0.6, followed by incubation
+for 2.5 h. Bacteria were washed repeatedly with PBS (pH 7.4)
+and resuspended in fresh PBS to 106 CFU/well in microscopic
+chamber slides (SPL Life Science) and treated with GO film
+(1 × 1 cm2) for 2 h at 37◦C. Then SYTO9 and propidium iodide
+were added and incubated for 15 min in the dark at room
+temperature. Slides were covered with a coverslip and observed
+using a confocal microscope (LSM 980). Images were analyzed
+using Zeiss Zen 3.2 (blue edition) software.
+4.7
+Morphological Analyses
+A thin film was formed by applying a 3.5 mg/ml GO dispersion
+onto a glass-bottom confocal plate for over fifteen coating cycles.
+Then, 106 cells of E. coli were placed on the GO thin film
+and observed for 3 h using a holotomography instrument (HT-
+X1). Sphericity of the bacterial cells was quantified using the
+TomoAnalysis 2.0 software.
+For examining the morphology of bacterial cells by SEM, E. coli
+cells (107∼8 cells) treated with GO for 1 h 30 min were fixed in
+2.5% glutaraldehyde in PBS (pH 7.0) at RT for 30 min, and then
+incubated for overnight at 4◦C, followed by washing twice with
+PBS. Samples were then treated with 1% osmium tetroxide (OsO4)
+for 30 min, dehydrated in a graded ethanol series, and dried
+overnight in a desiccator. Samples were then analyzed using a
+scanning electron microscope (Hitachi S-4800).
+4.8
+In Vitro Cytotoxicity
+NIH-3T3 mouse embryonic fibroblast cells were obtained from
+the American Type Culture Collection (ATCC). Cells were
+cultured in Dulbecco’s Modified Eagle Medium (DMEM), includ-
+ing 25 mm 4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid
+(HEPES) and L-glutamine (Thermo Fisher Scientific), supple-
+mented with 10% fetal bovine serum (Hyclone) and 1% peni-
+cillin/streptomycin (Thermo Fisher Scientific) in a CO2 incubator
+at 37◦C (BB15, Thermo Fisher Scientific). Cytotoxicity was deter-
+mined using the Cell Counting Kit-8 (CCK-8, Dojindo Molecular
+Technologies, Inc.) according to the manufacturer’s instructions.
+In brief, NIH-3T3 cells were inoculated in a 96-well culture plate
+at 2 × 104 cells/well. After 24 h incubation for attachment, cells
+were washed with Dulbecco’s phosphate-buffered saline (DPBS)
+and treated with GO for 6 ∼72 h at 37◦C. Then, the CCK-8 reagent
+in DMEM was added, incubated at 37◦C for 1 ∼2 h, and the
+absorbance at 450 nm was measured using Infinite 200 PRO. Cell
+viability was determined based on normalization with values for
+the untreated control.
+4.9
+Animals
+Male 7-week-old ICR mice were purchased from OrientBio.
+Female Jeju native pig (White Yucatan), weighing 40–50 kg
+was purchased from Optipharm. All animal experiments were
+conducted following authorized protocols and in accordance with
+the policies of the Institutional Animal Care and Use Committee
+(IACUC) of KAIST (#KA2024-080-v2), and HLB Biostep (#24-HB-
+0265).
+Advanced Functional Materials, 2026
+9 of 12
+ 16163028, 2026, 41, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74695 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+4.10
+Mouse Wound Infection Model
+Mice were randomly divided into groups of n = 3 and anesthetized
+with avertin. The dorsal region of each mouse was shaved,
+sterilized with alcohol, and a full-thickness circular wound (8 mm
+in diameter) was created using a biopsy punch. E. coli (5 × 104
+CFU/ml) suspended in 0.05 mL PBS was immediately applied
+to the wound, and various forms of GO or control (1 × 1 cm2)
+were placed to cover the wound area, followed by applying
+Tegaderm (3 m) to firmly secure the dressing to the wound site.
+Wound closure was monitored by taking gross images during
+the observed time period and analyzed by measuring wound
+area using ImageJ. Bacteria were collected from the wound
+sites at different time intervals using sterilized cotton swabs and
+suspended in LB containing 20% glycerol. Bacteria were then
+diluted in PBS solution, inoculated on agar plates for incubation
+overnight at 37◦C, and colonies were counted.
+4.11
+Pig Wound Infection Model
+All procedures were conducted using strict aseptic techniques
+and performed by qualified veterinary surgeons (HLB biostep).
+Pigs’ dorsal hair was carefully shaved with clippers and sterilized
+with 70% ethanol. All subsequent procedures were performed
+under general anesthesia with isoflurane. Full-thickness wounds
+measuring 2 × 2 cm2 were created with a blade, spaced 6 cm
+apart. Hemostasis was achieved using sterile gauze, and E. coli
+(106 CFU/mL) diluted in 0.1 mL PBS was immediately applied
+to the wounds. Various GO forms were then applied to each
+wound, followed by coverage with Tegaderm (3 m) film. Wound
+closure was monitored by taking photographs of the wound areas
+at various time points for 13 days, and wound area was measured
+using Image J software. Bacterial samples were collected at the
+time intervals and analyzed as described for the mouse model.
+4.12
+Histological Analysis
+After sacrifice of the animals, skin tissues, including the wounds,
+were excised, fixed in 4% PFA solution at room temperature for
+24 h, and embedded in paraffin for histological sectioning. Tissue
+sections were stained with hematoxylin and eosin (H&E), and
+Masson’s trichrome (MT), and bright-field microscopic images
+were acquired using Pannoramic SCAN II (Hungary).
+4.13
+Statistical Analysis
+For all in vitro experiments, at least three independent sets of
+experiments were performed in triplicate for each group. All
+statistical data were expressed as mean ± standard error of mean
+(SEM). Statistical significance was determined using One-way
+ANOVA or Two-way ANOVA to obtain the p-value. A value
+of p < 0.05 was considered statistically significant.
+Acknowledgements
+This work was financially supported by the National Research Foundation
+of Korea (NRF), funded by the Ministry of Science and ICT (MSIT),
+under grant numbers RS-2025-00521316, RS-2025-25442577, and RS-2024-
+00355464. The authors acknowledge Prof. Yong Keun Park (KAIST) for
+advice and technical assistance with Holotomography analysis.
+Funding
+This work was financially supported by the National Research Foundation
+of Korea (NRF), funded by the Ministry of Science and ICT (MSIT),
+under grant numbers RS-2025-00521316, RS-2025-25442577, and RS-2024-
+00355464.
+Conflicts of Interest
+The authors declare no conflicts of interest.
+Data Availability Statement
+The data that support the findings of this study are available from the
+corresponding author upon reasonable request.
+References
+1. Z. Wang, W. Zhu, Y. Qiu, et al., “Biological and Environmental
+Interactions of Emerging Two-dimensional Nanomaterials,” Chemical
+Society Reviews 45 (2016): 1750–1780, https://doi.org/10.1039/C5CS00914F.
+2. C. D. Walkey and W. C. W. Chan, “Understanding and Controlling the
+Interaction of Nanomaterials With Proteins in a Physiological Environ-
+ment,” Chemical Society Reviews 41 (2012): 2780–2799, https://doi.org/10.
+1039/C1CS15233E.
+3. M. J. Beha, J. S. Ryu, Y. S. Kim, and H. J. Chung, “Delivery of
+Antisense Oligonucleotides Using Multi-layer Coated Gold Nanoparticles
+to Methicillin-resistant S. aureus for Combinatorial Treatment,” Materials
+Science and Engineering: C 126 (2021): 112167, https://doi.org/10.1016/j.
+msec.2021.112167.
+4. S.-H. Cha, J. Hong, M. McGuffie, B. Yeom, J. S. VanEpps, and
+N. A. Kotov, “Shape-dependent Biomimetic Inhibition of Enzyme by
+Nanoparticles and Their Antibacterial Activity,” ACS Nano 9 (2015):
+9097–9105, https://doi.org/10.1021/acsnano.5b03247.
+5. S. Sharifi, S. Behzadi, S. Laurent, M. L. Forrest, P. Stroeve, and M.
+Mahmoudi, “Toxicity of Nanomaterials,” Chemical Society Reviews 41
+(2012): 2323–2343, https://doi.org/10.1039/C1CS15188F.
+6. A. Nel, T. Xia, L. Madler, and N. Li, “Toxic Potential of Materials at the
+Nanolevel,” Science 311 (2006): 622–627, https://doi.org/10.1126/science.
+1114397.
+7. J. Sahoo, S. Sahoo, Y. Subramaniam, P. Bhatt, S. Rana, and M. De,
+“Photo-Controlled Gating of Selective Bacterial Membrane Interaction
+and Enhanced Antibacterial Activity for Wound Healing,” Angewandte
+Chemie International Edition 63 (2024): 202314804, https://doi.org/10.
+1002/anie.202314804.
+8. F. Gao, T. Shao, Y. Yu, Y. Xiong, and L. Yang, “Surface-bound Reac-
+tive Oxygen Species Generating Nanozymes for Selective Antibacterial
+Action,” Nature Communications 12 (2021): 745, https://doi.org/10.1038/
+s41467-021-20965-3.
+9. A. M. Schrand, M. F. Rahman, S. M. Hussain, J. J. Schlager, D. A. Smith,
+and A. F. Syed, “Metal-based nanoparticles and their toxicity assessment,”
+WIREs Nanomedicine and Nanobiotechnology 2 (2010): 544–568, https://
+doi.org/10.1002/wnan.103.
+10. P. V. AshaRani, G. L. K. Mun, M. P. Hande, and S. Valiyaveettil,
+“Cytotoxicity and Genotoxicity of Silver Nanoparticles in human Cells,”
+ACS Nano 3 (2009): 279–290, https://doi.org/10.1021/nn800596w.
+11. M. A. Kahlson and S. J. Dixon, “Copper-induced Cell Death,” Science
+375 (2022): 1231–1232, https://doi.org/10.1126/science.abo3959.
+12. Q. Xin, H. Shah, A. Nawaz, et al., “Antibacterial Carbon-Based
+Nanomaterials,” Advanced Materials 31 (2019): 1804838, https://doi.org/
+10.1002/adma.201804838.
+10 of 12
+Advanced Functional Materials, 2026
+ 16163028, 2026, 41, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74695 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+13. S. Wang, D. Wang, G. Wang, M. Zhang, Y. Sun, and J. Ding, “Antibacte-
+rial Carbon Dots,” Materials Today Bio 30 (2025): 101383, https://doi.org/
+10.1016/j.mtbio.2024.101383.
+14. J. Lan, J. Zou, H. Xin, et al., “Nanomedicines as Disruptors or
+Inhibitors of Biofilms: Opportunities in Addressing Antimicrobial Resis-
+tance,” Journal of Controlled Release 381 (2025): 113589, https://doi.org/10.
+1016/j.jconrel.2025.113589.
+15. C. D. Vecitis, K. R. Zodrow, S. Kang, and M. Elimelech, “Electronic-
+structure-dependent Bacterial Cytotoxicity of Single-walled Carbon
+Nanotubes,” ACS Nano 4 (2010): 5471–5479, https://doi.org/10.1021/
+nn101558x.
+16. D. P. Linklater, M. D. Volder, V. A. Baulin, et al., “High Aspect
+Ratio Nanostructures Kill Bacteria via Storage and Release of Mechanical
+Energy,” ACS Nano 12 (2018): 6657–6667, https://doi.org/10.1021/acsnano.
+8b01665.
+17. M. L. Schipper, N. Nakayama-Ratchford, C. R. Davis, et al., “A Pilot
+Toxicology Study of Single-walled Carbon Nanotubes in a Small Sample of
+Mice,” Nature Nanotechnology 3 (2008): 216–221, https://doi.org/10.1038/
+nnano.2008.68.
+18. G. Jia, H. Wang, L. Yan, et al., “Cytotoxicity of Carbon Nanomaterials:
+Single-Wall Nanotube, Multi-Wall Nanotube, and Fullerene,” Environ-
+mental Science & Technology 39 (2005): 1378–1383, https://doi.org/10.1021/
+es048729l.
+19. L. Ding, J. Stilwell, T. Zhang, et al., “Molecular Characterization of the
+Cytotoxic Mechanism of Multiwall Carbon Nanotubes and Nano-onions
+on human Skin Fibroblast,” Nano Letters 5 (2005): 2448–2464, https://doi.
+org/10.1021/nl051748o.
+20. W. Hu, C. Peng, W. Luo, et al., “Graphene-based Antibacterial Paper,”
+ACS Nano 4 (2010): 4317–4323, https://doi.org/10.1021/nn101097v.
+21. X. Zou, L. Zhang, Z. Wang, and Y. Luo, “Mechanisms of the Antimicro-
+bial Activities of Graphene Materials,” Journal of the American Chemical
+Society 138 (2016): 2064–2077, https://doi.org/10.1021/jacs.5b11411.
+22. S. Liu, T. H. Zeng, M. Hofmann, et al., “Antibacterial Activity of
+Graphite, Graphite Oxide, Graphene Oxide, and Reduced Graphene
+Oxide: Membrane and Oxidative Stress,” ACS Nano 5 (2011): 6971–6980,
+https://doi.org/10.1021/nn202451x.
+23. F. Perreault, A. F. de Faria, S. Nejati, and M. Elimelech, “Antimicrobial
+Properties of Graphene Oxide Nanosheets: Why Size Matters,” ACS Nano
+9 (2015): 7226–7236, https://doi.org/10.1021/acsnano.5b02067.
+24. D. A. Dikin, S. Stankovich, E. J. Zimney, et al., “Preparation and
+Characterization of Graphene Oxide Paper,” Nature 448 (2007): 457–460,
+https://doi.org/10.1038/nature06016.
+25. W. Gao, L. B. Alemany, L. Ci, and P. M. Ajayan, “New Insights Into the
+Structure and Reduction of Graphite Oxide,” Nature Chemistry 1 (2009):
+403–408, https://doi.org/10.1038/nchem.281.
+26. S. P. Sasikala, J. Lim, I. H. Kim, et al., “Graphene oxide liquid crystals:
+A frontier 2D soft material for graphene-based functional materials,”
+Chemical Society Reviews 47 (2018): 6013–6045, https://doi.org/10.1039/
+C8CS00299A.
+27. G. Eda, G. Fanchini, and M. Chhowalla, “Large-area ultrathin films of
+reduced graphene oxide as a transparent and flexible electronic material,”
+Nature Nanotechnology 3 (2008): 270–274, https://doi.org/10.1038/nnano.
+2008.83.
+28. D. Li, M. B. Müller, S. Gilje, R. B. Kaner, and G. G. Wallace,
+“Processable Aqueous Dispersions of Graphene Nanosheets,” Nature
+Nanotechnology 3 (2008): 101–105, https://doi.org/10.1038/nnano.2007.
+451.
+29. T. Ramanathan, A. A. Abdala, S. Stankovich, et al., “Functionalized
+Graphene Sheets for Polymer Nanocomposites,” Nature Nanotechnology
+3 (2008): 327–331, https://doi.org/10.1038/nnano.2008.96.
+30. J. E. Kim, T. H. Han, S. H. Lee, et al., “Graphene Oxide Liquid
+Crystals,” Angewandte Chemie International Edition 50 (2011): 3043–3047,
+https://doi.org/10.1002/anie.201004692.
+31. D. R. Dreyer, S. Park, C. W. Bielawski, and R. S. Ruoff, “The Chemistry
+of Graphene Oxide,” Chemical Society Reviews 39 (2010): 228–240, https://
+doi.org/10.1039/B917103G.
+32. S. Park and R. S. Ruoff, “Chemical Methods for the Production of
+Graphenes,” Nature Nanotechnology 4 (2010): 217–224, https://doi.org/10.
+1038/nnano.2009.58.
+33. X. Wang, X. Li, L. Zhang, et al., “N-doping of Graphene Through
+Electrothermal Reactions With Ammonia,” Science 324 (2009): 768–771,
+https://doi.org/10.1126/science.1170335.
+34. A. Bagri, C. Mattevi, M. Acik, Y. J. Chabal, M. Chhowalla, and V.
+B. Shenoy, “Structural Evolution During the Reduction of Chemically
+Derived Graphene Oxide,” Nature Chemistry 2 (2010): 581–587, https://doi.
+org/10.1038/nchem.686.
+35. S. Park, Y. Hu, J. O. Hwang, et al., “Chemical Structures of
+Hydrazine-treated Graphene Oxide and Generation of Aromatic Nitrogen
+Doping,” Nature Communications 3 (2012): 638, https://doi.org/10.1038/
+ncomms1643.
+36. J. Lim, U. N. Maiti, N.-Y. Kim, et al., “Dopant-specific Unzip-
+ping of Carbon Nanotubes for Intact Crystalline Graphene Nanostruc-
+tures,” Nature Communications 7 (2015): 10364, https://doi.org/10.1038/
+ncomms10364.
+37. S. Kim, S. Zhou, Y. Hu, et al., “Room-temperature Metastability of
+Multilayer Graphene Oxide Films,” Nature Materials 11 (2012): 544–549,
+https://doi.org/10.1038/nmat3316.
+38. Y. Gwon, S. Park, W. Kim, et al., “Graphene Hybrid Tough Hydrogels
+With Nanostructures for Tissue Regeneration,” Nano Letters 24 (2024):
+2188–2195, https://doi.org/10.1021/acs.nanolett.3c04188.
+39. J. Zhao, B. Deng, M. Lv, et al., “Graphene Oxide-Based Antibacterial
+Cotton Fabrics,” Advanced Healthcare Materials 2 (2013): 1259–1266,
+https://doi.org/10.1002/adhm.201200437.
+40. Y. Tu, M. Lv, P. Xiu, et al., “Destructive Extraction of Phospholipids
+From
+Escherichia
+coli
+Membranes
+by
+Graphene
+Nanosheets,”
+Nature
+Nanotechnology
+8
+(2013):
+594–601,
+https://doi.org/10.1038/
+nnano.2013.125.
+41. Z. Guo, P. Zhang, C. Xie, et al., “Defining the Surface Oxygen
+Threshold That Switches the Interaction Mode of Graphene Oxide With
+Bacteria,” ACS Nano 17 (2023): 6350, https://doi.org/10.1021/acsnano.
+2c10961.
+42. K. P. Loh, Q. Bao, G. Eda, and M. Chhowalla, “Graphene Oxide as a
+Chemically Tunable Platform for Optical Applications,” Nature Chemistry
+2 (2010): 1015–1024, https://doi.org/10.1038/nchem.907.
+43. Z. Fan, B. Liu, J. Wang, et al., “A Novel Wound Dressing Based on
+Ag/Graphene Polymer Hydrogel: Effectively Kill Bacteria and Accelerate
+Wound Healing,” Advanced Functional Materials 24 (2014): 3933–3943,
+https://doi.org/10.1002/adfm.201304202.
+44. C. L. Weaver, J. M. LaRosa, X. Luo, and X. T. Cui, “Electrically
+Controlled Drug Delivery From Graphene Oxide Nanocomposite Films,”
+ACS Nano 8 (2014): 1834–1843, https://doi.org/10.1021/nn406223e.
+45. K. Yang, L. Feng, X. Shi, and Z. Liu, “Nano-graphene in Biomedicine:
+Theranostic Applications,” Chemical Society Reviews 42 (2013): 530–547,
+https://doi.org/10.1039/C2CS35342C.
+46. J. P. M. Andrews, S. S. Joshi, E. Tzolos, et al., “First-in-human
+Controlled Inhalation of Thin Graphene Oxide Nanosheets to Study Acute
+Cardiorespiratory Responses,” Nature Nanotechnology 19 (2024): 705–714,
+https://doi.org/10.1038/s41565-023-01572-3.
+47. R. Issa, N. Lozano, K. Kostarelos, and S. Vranic, “Functioning
+human Lung Organoids Model Pulmonary Tissue Response From Carbon
+Nanomaterial Exposures,” Nano Today 56 (2024): 102254, https://doi.org/
+10.1016/j.nantod.2024.102254.
+48. D. A. Jasim, S. Murphy, L. Newman, et al., “The Effects of Extensive
+Glomerular Filtration of Thin Graphene Oxide Sheets on Kidney Physi-
+ology,” ACS Nano 10 (2016): 10753–10767, https://doi.org/10.1021/acsnano.
+6b03358.
+Advanced Functional Materials, 2026
+11 of 12
+ 16163028, 2026, 41, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74695 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+49. L. Newman, D. A. Jasim, E. Prestat, et al., “Splenic Capture
+and in Vivo Intracellular Biodegradation of Biological-grade Graphene
+Oxide Sheets,” ACS Nano 14 (2020): 10168–10186, https://doi.org/10.1021/
+acsnano.0c03438.
+50. A. Bianco, “Graphene: Safe or Toxic? The Two Faces of the Medal,”
+Angewandte Chemie International Edition 52 (2013): 4986–4997, https://
+doi.org/10.1002/anie.201209099.
+51. H. Ali-Boucetta, D. Bitounis, R. Raveendran-Nair, A. Servant, J. V. D.
+Bossche, and K. Kostarelos, “Purified Graphene Oxide Dispersions Lack
+in Vitro Cytotoxicity and in Vivo Pathogenicity,” Advanced Healthcare
+Materials 2 (2013): 433–441, https://doi.org/10.1002/adhm.201200248.
+52. S. P. Mukherjee, K. Kostarelos, and B. Fadeel, “Cytokine Profiling
+of Primary Human Macrophages Exposed to Endotoxin-Free Graphene
+Oxide: Size-Independent NLRP3 Inflammasome Activation,” Advanced
+Healthcare Materials 7 (2018): 1700815, https://doi.org/10.1002/adhm.
+201700815.
+53. B.-Y. Lu, G.-Y. Zhu, C.-H. Yu, et al., “Functionalized Graphene
+Oxide Nanosheets With Unique Three-in-one Properties for Efficient and
+Tunable Antibacterial Applications,” Nano Research 14 (2021): 185–190,
+https://doi.org/10.1007/s12274-020-3064-6.
+54. L. Mei, C. Lin, F. Cao, et al., “Amino-functionalized Graphene
+Oxide for the Capture and Photothermal Inhibition of Bacteria,” ACS
+Applied Nano Materials 2 (2019): 2902–2908, https://doi.org/10.1021/
+acsanm.9b00348.
+55. Y.
+Ma,
+D.
+Bai,
+X.
+Hu,
+et
+al.,
+“Robust
+and
+Antibacterial
+Polymer/Mechanically
+Exfoliated
+Graphene
+Nanocomposite
+Fibers
+for Biomedical Applications,” ACS Applied Materials & Interfaces 10
+(2018): 3002–3010, https://doi.org/10.1021/acsami.7b17835.
+56. G. S. Lee, J. G. Kim, J. T. Kim, et al., “2D Materials Beyond Post-AI
+Era: Smart Fibers, Soft Robotics, and Single Atom Catalysts,” Advanced
+Materials 36 (2024): 2307689, https://doi.org/10.1002/adma.202307689.
+57. Z. Fan, B. Liu, J. Wang, et al., “A Novel Wound Dressing Based on
+Ag/Graphene Polymer Hydrogel: Effectively Kill Bacteria and Accelerate
+Wound Healing,” Advanced Functional Materials 24 (2014): 3933–3943,
+https://doi.org/10.1002/adfm.201304202.
+58. E. Krok, M. Stephan, R. Dimova, and L. Piatkowski, “Tunable
+Biomimetic Bacterial Membranes From Binary and Ternary Lipid Mix-
+tures and Their Application in Antimicrobial Testing,” Biochimica et
+Biophysica Acta (BBA)—Biomembranes 1865 (2023): 184194, https://doi.
+org/10.1016/j.bbamem.2023.184194.
+59. J. R. Willdigg and J. D. Helmann, “Mini Review: Bacterial Membrane
+Composition and Its Modulation in Response to Stress,” Frontiers in
+Molecular Biosciences 8 (2021): 634438, https://doi.org/10.3389/fmolb.
+2021.634438.
+60. C. Sohlenkamp and O. Geiger, “Bacterial Membrane Lipids: Diversity
+in Structures and Pathways,” FEMS Microbiology Reviews 40 (2016): 133–
+159, https://doi.org/10.1093/femsre/fuv008.
+61. K. L. F. Hilton, C. Manwani, J. E. Boles, et al., “The Phospholipid
+Membrane Compositions of Bacterial Cells, Cancer Cell Lines and
+Biological Samples From Cancer Patients,” Chemical Science 12 (2021):
+13273–13282, https://doi.org/10.1039/D1SC03597E.
+62. Y. Mao, Y. Du, X. Cang, et al., “Binding Competition to the POPG
+Lipid Bilayer of Ca2+, Mg2+, Na+, and K+ in Different Ion Mixtures and
+Biological Implication,” The Journal of Physical Chemistry B 117 (2012):
+850–858, https://doi.org/10.1021/jp310163z.
+63. N. A. Kotov, “Inorganic Nanoparticles as Protein Mimics,” Science 330
+(2010): 188–189, https://doi.org/10.1126/science.1190094.
+64. S. Köster, K. van Pee, M. Hude, et al., “Crystal Structure of Listeriolysin
+O Reveals Molecular Details of Oligomerization and Pore Formation,”
+Nature Communications 5 (2014): 3690.
+65. V. Brusko, A. Khannanov, A. Rakhmatullin, and A. M. Dimiev,
+“Unraveling the Infrared Spectrum of Graphene Oxide,” Carbon 229
+(2024): 119507, https://doi.org/10.1016/j.carbon.2024.119507.
+66. M. Acik, C. Mattevi, C. Gong, et al., “The Role of Intercalated Water in
+Multilayered Graphene Oxide,” ACS Nano 4 (2010): 5861, https://doi.org/
+10.1021/nn101844t.
+67. L. K. Tamm and S. A. Tatulian, “Infrared spectroscopy of proteins and
+peptides in lipid bilayers,” Quarterly Reviews of Biophysics 30 (1997): 365–
+429, https://doi.org/10.1017/S0033583597003375.
+68. X. Fu, Z. Liang, W. Shuai, et al., “Bend-Resistant and Energy-Friendly
+GO-PVA/PVA Polymer Electret Synaptic Transistors for Neuromor-
+phic Computations,” Advanced Functional Materials 33 (2023): 2308127,
+https://doi.org/10.1002/adfm.202308127.
+69. J. S. Stephens, D. B. Chase, and J. F. Rabolt, “Effect of the Elec-
+trospinning Process on Polymer Crystallization Chain Conformation in
+Nylon-6 and Nylon-12,” Macromolecules 37 (2004): 877–881, https://doi.
+org/10.1021/ma0351569.
+Supporting Information
+Additional supporting information can be found online in the Supporting
+Information section.
+SupportingFile:adfm74695-sup-0001-SuppMat.docx.
+12 of 12
+Advanced Functional Materials, 2026
+ 16163028, 2026, 41, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.74695 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

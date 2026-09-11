@@ -1,0 +1,769 @@
+Metabolic circuitry of NADH buffering reveals a vulnerability in redox-
+adaptive cancer cells
+Xuexue Li, 1,5 Pengjiao Hou, 1,5 Xuewei Zhai, 1,5 Lifang Li, 2 Zihao Guo, 1 Luxin Qiao, 1 Yanxia Fu, 3 Jing Niu, 3 Ping Chen, 3 Ronghui Yang, 1, * and Binghui Li 1,2,3,4, *
+*Correspondence: rhy_yangronghui@ccmu.edu.cn (R.Y.); bli@ccmu.edu.cn (B.L.)
+Received: November 19, 2025; Accepted: March 27, 2026; https://doi.org/10.1016/j.xinn.2026.101365
+© 2026 The Author(s). Published by Elsevier Inc. on behalf of Youth Innovation Co., Ltd. This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+GRAPHICAL ABSTRACT
+PUBLIC SUMMARY
+◼ Glucose-6-phosphate dehydrogenase (G6PD) promotes malic enzyme 1 (ME1) activity independent of catalysis.
+◼ The PC-MDH1/2-ME1 circuitry supports cytosolic and mitochondrial NADH redox homeostasis.
+◼ Blocking PC sensitizes cancer cells to reductive stress and enhances antitumor synergy.
+ll
+www.cell.com/the-innovation
+www.the-innovation.org
+ARTICLE
+Molecular & cell
+
+Metabolic circuitry of NADH buffering reveals a vulnerability in redox-
+adaptive cancer cells
+Xuexue Li, 1,5 Pengjiao Hou, 1,5 Xuewei Zhai, 1,5 Lifang Li, 2 Zihao Guo, 1 Luxin Qiao, 1 Yanxia Fu, 3 Jing Niu, 3 Ping Chen, 3 Ronghui Yang, 1, * and Binghui Li 1,2,3,4, *
+1 Beijing Institute of Hepatology, Beijing Youan Hospital, Capital Medical University, Beijing 100069, China
+2 Department of Cancer Cell Biology, National Clinical Research Center for Cancer, Tianjin Medical University Cancer Institute and Hospital, Tianjin 300060, China
+3 Department of Biochemistry and Molecular Biology, School of Basic Medical Sciences, Capital Medical University, Beijing 100069, China
+4 Chinese Institutes for Medical Research, Capital Medical University, Beijing 100069, China
+5 These authors contributed equally
+*Correspondence: rhy_yangronghui@ccmu.edu.cn (R.Y.); bli@ccmu.edu.cn (B.L.)
+Received: November 19, 2025; Accepted: March 27, 2026; https://doi.org/10.1016/j.xinn.2026.101365
+© 2026 The Author(s). Published by Elsevier Inc. on behalf of Youth Innovation Co., Ltd. This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/). 
+Citation: Li X., Hou P., Zhai X., et al., (2026). Metabolic circuitry of NADH buffering reveals a vulnerability in redox-adaptive cancer cells. The Innovation 7(9), 101365.
+Mitochondrial dysfunction elevates cellular NADH/NAD + ratios, inducing 
+reductive stress that impairs biosynthesis and cell viability. However, the 
+mechanisms by which cells buffer excess NADH to maintain redox homeo-
+stasis remain unclear. In this study, we identify a mitochondrial-cytosolic 
+metabolic circuitry involving pyruvate carboxylase (PC), malate dehydroge-
+nases (MDH1/2), and malic enzyme 1 (ME1) that mitigates NADH overload 
+by coupling anaplerotic flux with NADH oxidation. Under reductive stress 
+induced by electron transport chain (ETC) dysfunction, oxaloacetate 
+derived from PC is converted to malate by MDH1/2, which is then oxidized 
+by ME1, transforming both cytosolic and mitochondrial NADH into cytosolic 
+NADPH. Although cellular NADPH is typically associated with antioxidant 
+defense and biosynthesis, our experiments show that TPNOX, which can ox-
+idase NADPH to NADP + , restores proliferation under ETC inhibition, and this 
+rescue is entirely dependent on the mitochondrial-cytosolic metabolic cir-
+cuitry. This finding highlights that the primary function of the circuit is to 
+maintain NADH homeostasis rather than to generate NADPH. Notably, 
+glucose-6-phosphate dehydrogenase (G6PD) enhances ME1 activity inde-
+pendently of its catalytic function by acting as a scaffold, thereby prevent-
+ing net NADPH production while facilitating the conversion of NADH to 
+NADPH. Disruption of the PC-MDH1/2-ME1 pathway through PC inhibition 
+sensitizes cells to complex I inhibitors and/or glutaminase blockade, syner-
+gistically suppressing tumor growth both in vitro and in vivo. These findings 
+uncover a redox-buffering strategy that redirects NADH into NADPH produc-
+tion, revealing a metabolic vulnerability in redox-adapted cancer cells.
+INTRODUCTION
+Redox balance is a fundamental determinant of metabolic homeostasis, with 
+NADH/NAD + ratios critically regulating glycolysis, the tricarboxylic acid (TCA) 
+cycle, and biosynthesis. 1–5 Under normal physiological conditions, mitochon-
+drial respiration efficiently oxidizes NADH to regenerate NAD + , sustaining meta-
+bolic reactions and ATP production. 1,6 However, when electron transport chain 
+(ETC) activity is compromised by hypoxia, mitochondrial dysfunction, onco-
+genic transformation, or pharmacological inhibition, NADH accumulates in 
+both the cytosol and mitochondria, leading to reductive stress that threatens 
+cell viability by disrupting central carbon metabolism, redox signaling, and 
+anabolic capacity. 1–3,7
+To mitigate this threat, cells engage multiple adaptive responses to restrain 
+NADH production and facilitate its clearance. 1,3 Metabolic reprogramming un-
+der reductive stress involves suppressing NADH-generating pathways, 
+including downregulation of the TCA cycle, and rerouting glucose metabolism 
+toward lactate fermentation, which not only regenerates NAD + independently 
+of mitochondria but also sustains ATP production without exacerbating redox 
+imbalance. 1,8 More recently, reductive stress has been shown to trigger glycerol 
+biosynthesis and secretion, a cytosolic pathway that consumes NADH, albeit at 
+the cost of carbon substrates and ATP. 9 Additionally, cells activate glutamine-
+dependent lipid biosynthesis as a compensatory electron sink under reductive 
+stress, but this pathway primarily consumes NADPH rather than NADH, 3,10–12 
+highlighting the compartmentalized redox challenge imposed by ETC 
+dysfunction.
+The inability to effectively dissipate excess NADH contributes to pathologies 
+characterized by mitochondrial dysfunction and redox imbalance. In cancer, 
+metabolic rewiring and hypoxic microenvironments often result in elevated
+NADH levels, promoting reductive stress that fuels genomic instability and treat-
+ment resistance. 3,13 Similarly, ischemic injury, acute alcoholic liver injury, fatty 
+liver disease, mitochondrial myopathy, and neurodegenerative diseases involve 
+impaired mitochondrial respiration and NADH accumulation, underscoring the 
+clinical relevance of redox homeostasis in diverse disease contexts. 7,14–18 
+Efficient conversion of NADH into NADPH would simultaneously relieve 
+reductive pressure and bolster antioxidant and biosynthetic capacity. While 
+the mitochondrial nicotinamide nucleotide transhydrogenase (NNT) catalyzes 
+NADH-to-NADPH conversion, its activity is membrane-potential dependent 
+and restricted to the mitochondrial matrix, limiting its utility under ETC inhibition 
+and offering no cytosolic redox relief. 19 Consequently, a gap remains in our un-
+derstanding of how cells coordinate NADH-to-NADPH conversion across sub-
+cellular compartments, especially within the cytosol where biosynthesis and 
+reductive stress intersect.
+Here, we identify a mitochondrial-cytosolic metabolic circuitry involving pyru-
+vate carboxylase (PC), malate dehydrogenases (MDH1/2), and malic enzyme 1 
+(ME1) that enables cells to dissipate excess NADH by generating NADPH. This 
+pathway is activated under ETC inhibition, linking anaplerotic carbon flux to 
+cytosolic redox detoxification. We further show that glucose-6-phosphate dehy-
+drogenase (G6PD) enhances ME1 activity through a non-enzymatic mecha-
+nism. Disruption of this circuit compromises redox balance and sensitizes can-
+cer cells to ETC and glutamine metabolism inhibitors, highlighting a 
+therapeutically targetable vulnerability in redox-adapted tumors.
+MATERIALS AND METHODS 
+Cell culture and treatments
+HeLa, SK-Hep1, 143B, and HEK293T cells were obtained from the American Type Culture 
+Collection (ATCC) and cultured in Dulbecco’s modified Eagle’s medium (DMEM; Gibco) sup-
+plemented with 10% fetal bovine serum (FBS; Gibco) and 1% penicillin-streptomycin (Gibco) 
+at 37 ◦ C in a humidified 5% CO 2 atmosphere. To minimize the interference of exogenous 
+pyruvate on cellular NADH levels, NADH-related experiments were performed using pyru-
+vate-free DMEM (Gibco). All cell lines were routinely tested and confirmed to be free of my-
+coplasma contamination, and no commonly misidentified cell lines were used in this study.
+Measurement of NADH/NAD + and NADPH/NADP + ratios
+Intracellular NADH/NAD + and NADPH/NADP + ratios were measured using NAD/NADH-
+Glo and NADP/NADPH-Glo assays (Promega) following the manufacturer’s protocols. 
+Briefly, 5 × 10 4 cells were seeded in 24-well plates overnight and incubated with the treat-
+ment medium. Cells were washed with PBS and lysed with 200 μL of ice-cold PBS/bicar-
+bonate buffer (1:1) with 1% Dodecyl Trimethyl Ammonium Bromide (DTAB). For the acid 
+treatment, 50 μL of the cell lysate was mixed with 25 μL of 0.4 N HCl and incubated at 
+60 ◦ C for 15 min. For the base treatment, the same volume of lysate was incubated at 
+60 ◦ C for 15 min. Neutralization was achieved by adding 25 μL of 0.5 M Trizma base 
+(acid treated) or 50 μL of HCl/Trizma solution (base treated). Neutralized samples 
+(10 μL) were transferred to 384-well white plates and mixed with 10 μL of freshly prepared 
+detection reagent. After 30 min of gentle shaking at room temperature, luminescence was 
+measured using a Synergy H1 Hybrid Multi-Mode reader (BioTek).
+Cell viability assays
+Cells were seeded in triplicate into 24-well plates (5 × 10 4 or 1 × 10 4 cells per well). The 
+next day, cells were treated with indicated compounds for the specified duration. Then cells 
+were trypsinized and the viable cells were counted using Muse Cell Analyzer (Luminex 
+Corporation).
+ll
+The Innovation 7(9): 101365, September 8, 2026 
+1
+Molecular & cell
+ARTICLE
+
+Tumor xenografts in nude mice
+All of the xenograft experiments were approved by the Institutional Animal Care and Use 
+Committee (IACUC) at Capital Medical University in accordance with the principles and pro-
+cedures outlined in the National Institutes of Health Guide for the Care and Use of Labora-
+tory Animals. Female nude mice (4–5 weeks old) were purchased from Beijing Vital River 
+Laboratory Animal Technology. The mice were housed in a pathogen-free animal barrier 
+facility. The housing conditions were maintained at a temperature of 19 ◦ C–23 ◦ C, humidity 
+of 40%–70% and a 12/12 h light/dark cycle. The maximal tumor burden permitted by the 
+ethics committee was less than 10% of the mouse’s body weight, and this limit was not 
+exceeded. A total of 5 × 10 6 HeLa cells or 8 × 10 6 SK-Hep1 cells were injected subcutane-
+ously into mice. Once the tumor reached 100–200 mm 3 , the mice were assigned randomly 
+into different groups. Metformin was dissolved in PBS and administered by oral gavage at 
+100 mg kg − 1 daily or every other day. ZY444 and CB839 were dissolved in 10% dimethyl 
+sulfoxide and 90% corn oil; ZY444 was administered by intraperitoneal injection at 
+2.5 mg kg − 1 daily or every other day, while CB839 was administered orally at 150 mg 
+kg − 1 on the same schedule. Tumor volume was calculated using the formula: volume 
+(mm 3 ) = length (mm) × [width (mm)] 2 × ½.
+Quantification and statistical analysis
+The results of all the experiments were generated from at least three independent rep-
+licates unless noted otherwise in the figure legend. All results are presented as mean ± 
+standard deviation (SD). Plots and statistical analysis were performed using Prism 10 soft-
+ware (GraphPad). Statistical significance was calculated as appropriate using a two-tailed 
+Student’s t test or two-way ANOVA as indicated in the figure legends.
+RESULTS
+G6PD promotes ME1 activity independently of its enzymatic activity 
+Cytosolic NADPH is primarily generated by G6PD, ME1, and IDH1. 20 To 
+assess their roles in redox regulation, we knocked down each enzyme in 
+HeLa cells using small interfering RNAs (siRNAs). Silencing G6PD or ME1 signif-
+icantly impaired cell proliferation, whereas IDH1 knockdown had no effect 
+(Figures S1A–S1C). Notably, G6PD-depleted cells exhibited marked sensitivity 
+to mitochondrial ETC inhibition by antimycin A and phenformin (Figure S1D), 
+a phenotype not observed with ME1 or IDH1 knockdown (Figures S1E and S1F). 
+To further validate these findings, we generated CRISPR knockout (KO) lines 
+of each enzyme. G6PD KO phenocopied the siRNA results, with impaired growth 
+and enhanced susceptibility to ETC inhibition, both of which were rescued by re-
+expression of wild-type G6PD (Figures 1A–1C). In contrast, ME1 KO suppressed 
+proliferation but did not affect ETC inhibition sensitivity (Figures S1G and S1H), 
+and IDH1 KO had no detectable effects on either parameter (Figures S1I 
+and S1J).
+Given the metabolic roles of these enzymes, we examined their effects on 
+redox ratios. G6PD loss reduced the NADPH/NADP + ratio and concurrently 
+elevated the NADH/NAD + ratio (Figure 1D), consistent with our previous
+A 
+B 
+C 
+D
+E
+F
+G
+H
+I 
+J
+K 
+L
+Figure 1. G6PD promotes ME1 activity independently of its enzymatic activity (A) Immunoblot analysis of G6PD expression in HeLa/wild-type (WT) cells and G6PD-KO cells re-
+expressing empty vector (EV), G6PD WT, or R198P mutant. (B) Cell viability of HeLa/G6PD-KO and re-expression cells over 4 days. (C) Cell viability of HeLa/G6PD-KO and G6PD re-
+expression cells treated with electron transport chain (ETC) inhibitors antimycin A (AntA, 1 μM) or phenformin (Phen, 100 μM) for 36 h. (D) NADH/NAD + and NADPH/NADP + ratios in 
+HeLa/WT, HeLa/G6PD-KO, and G6PD re-expression cells. (E) ME1 enzymatic activity assay in HeLa/WT cells and G6PD-KO cells re-expressing EV, G6PD WT, or R198P with 
+immunoblotting of ME1 and G6PD. (F) ME1 activity in HEK293T cells transfected with FLAG-vector, G6PD-WT, or R198P, with immunoblotting of ME1 and FLAG-tagged proteins. (G 
+and H) In vitro ME1 activity with purified FLAG-ME1 incubated with increasing amounts of purified His-G6PD-WT (G) or R198P (H). Protein loading was verified by Coomassie-stained 
+SDS-PAGE. (I) Co-immunoprecipitation (coIP) of FLAG-ME1 in HEK293T cells followed by immunoblotting. WCL, whole-cell lysate. (J) CoIP of endogenous G6PD with anti-G6PD 
+antibody in HeLa cells. Rabbit immunoglobulin (Ig) G served as negative control. (K) CoIP of endogenous ME1 with anti-ME1 antibody in HeLa cells. Mouse IgG served as negative 
+control. (L) FLAG pull-down assay of purified FLAG-ME1 incubated with purified His-G6PD-WT or R198P, followed by immunoblotting. Data are presented as mean ± SD (n = 3 
+biologically independent samples). *p < 0.05, **p < 0.01, ***p < 0.001 by two-tailed Student’s t test.
+ARTICLE
+Molecular & cell
+2 
+The Innovation 7(9): 101365, September 8, 2026 
+www.cell.com/the-innovation
+www.the-innovation.org
+
+reports. 21,22 Interestingly, ME1 KO did not affect NADPH/NADP + ratio but 
+increased NADH/NAD + ratio (Figure S1K), suggesting a distinct role in redox ho-
+meostasis. IDH1 loss had no effect on either redox pair (Figure S1L).
+We previously demonstrated that both wild-type G6PD and naturally occur-
+ring G6PD mutants found in patients with G6PD deficiency are capable of 
+rescuing cell proliferation and redox balance in G6PD-deficient cells. 21 In this 
+study, we employed a catalytically inactive G6PD-R198P mutant 21 and found 
+that both the wild-type and R198P variants were able to restore the NADPH/ 
+NADP + and NADH/NAD + ratios (Figures 1A–1D), further supporting a non-enzy-
+matic role for G6PD in maintaining redox homeostasis.
+Considering that inactive G6PD maintained NADPH/NADP + homeostasis, we 
+next tested whether G6PD regulates ME1 or IDH1 activity. G6PD KO reduced 
+ME1 enzymatic activity without affecting IDH1 (Figures 1E and S1M). Strikingly, 
+both wild-type G6PD and R198P restored ME1 activity, and overexpression of 
+either protein in 293T cells enhanced ME1 activity (Figures 1E and 1F), with 
+no effect on IDH1 (Figure S1N).
+In vitro assays using purified proteins confirmed that both G6PD and R198P 
+directly enhances ME1 activity (Figures 1G and 1H). Co-immunoprecipitation 
+experiments further demonstrated that G6PD interacts with ME1 at both the 
+endogenous and exogenously expressed levels (Figures 1I–1K). Moreover, 
+pull-down assays using purified His-tagged G6PD or G6PD-R198P and FLAG-
+tagged ME1 proteins revealed a direct physical interaction between G6PD 
+and ME1 (Figure 1L). To further define the interaction interface between 
+G6PD and ME1, we performed truncation mutant analyses based on the known 
+structural domains of ME1 and G6PD (Figure S1O). Our results show that ME1 
+interacts only with full-length G6PD, as none of the G6PD truncation mutants 
+retained binding capacity (Figure S1P), indicating that the structural integrity 
+of G6PD is essential for its interaction with ME1.Truncation analysis of ME1 re-
+vealed that G6PD binds to the N-terminal region of ME1. Specifically, interaction 
+with G6PD was observed in the ME1 truncation containing amino acids 1–271, 
+whereas deletion of the first 121 amino acids completely abolished the interac-
+tion (Figure S1P). These findings collectively demonstrate that G6PD promotes 
+ME1 activity through direct interaction, independently of its dehydrogenase 
+activity.
+ME1 maintains NADH/NAD + balance via NADPH-generating metabolism 
+Our previous findings revealed that G6PD exerts multiple functions indepen-
+dent of its enzymatic activity, broadly regulating metabolic homeostasis. 21 
+Consequently, G6PD-KO cells are highly susceptible to NADH accumulation-
+induced reductive stress under various stress conditions. 21 Here, we challenged 
+G6PD-KO HeLa cells with ETC inhibitors, antimycin A, or phenformin and found 
+that treatment with α-ketobutyrate, 23 a substrate that can be reduced by lactate 
+dehydrogenase (LDH) and thereby lowers the NADH/NAD + ratio, significantly 
+improved cell viability (Figures S2A–S2C). To further modulate the NADH/ 
+NAD + ratio, we employed a doxycycline-inducible system to express LbNOX, 2 
+an engineered enzyme that transfers electrons from NADH to oxygen, gener-
+ating NAD + and water (Figures 2A and 2B). LbNOX expression also markedly 
+enhanced the survival of G6PD-deficient cells under ETC inhibition 
+(Figure 2C). This makes the G6PD-deficient cell line a suitable model for inves-
+tigating the regulation of reductive stress.
+Given that G6PD regulates ME1 activity and ME1 deletion leads to elevated 
+NADH/NAD + ratios (Figures 1E–1H and S1K), we next investigated the role of 
+ME1 in the cellular response to reductive stress. We ectopically expressed 
+ME1 or IDH1 in G6PD-KO HeLa cells, with G6PD re-expression serving as a con-
+trol (Figure 2D). Similar to G6PD, ME1 overexpression significantly improved cell 
+viability under ETC inhibition (Figure 2E) and mitigated the increase in the 
+NADH/NAD + ratio and the decline in the NADPH/NADP + ratio (Figure 2F). In 
+contrast, IDH1 overexpression had minimal effects on these parameters 
+(Figures 2D–2F). Consistent results were observed in another cell line, SK-
+Hep1, where ME1 overexpression rescued cell viability, reduced the NADH/ 
+NAD + ratio, and restored the NADPH/NADP + ratio in G6PD-deficient cells under 
+ETC inhibition (Figures S2D–S2F). We also examined whether other malic en-
+zymes or NADPH-generating enzymes, including ME2, ME3, and IDH2, could 
+affect the proliferation of G6PD-KO cells under ETC inhibition. Our results 
+showed that overexpression of none of these enzymes restored proliferative ca-
+pacity (Figures S2G–S2H), indicating that they are unable to functionally substi-
+tute for ME1 in this context.
+To dissect whether ME1-mediated rescue depends on restoring NADH/NAD + 
+or NADPH/NADP + balance, we expressed doxycycline (Dox)-inducible TPNOX 
+(Figure 2G), a synthetic oxidase that transfers electrons from NADPH to oxy-
+gen. 24 Interestingly, TPNOX often led to a reduction in the NADH/NAD + ratio 
+without significantly affecting the NADPH/NADP + ratio, likely due to an as-yet-
+undefined metabolic pathway that converts NADH into NADPH. 24 Consistently, 
+TPNOX expression in HeLa/G6PD-KO cells did not significantly reduce NADPH/ 
+NADP + ratio (Figure S2I) but attenuated ETC-inhibition-induced NADH/NAD + 
+elevation (Figure 2H), as confirmed by the genetically encoded cytosolic 
+NADH/NAD + biosensor SoNar 25 (Figure 2I). Importantly, TPNOX significantly 
+enhanced the survival of G6PD-KO cells under ETC inhibition (Figure 2J). A 
+similar outcome was achieved with EcSTH-LbNOX, another NADPH oxidase, 15 
+which not only lowered the NADPH/NADP + ratio but also decreased the NADH/ 
+NAD + ratio under ETC inhibition (Figures S2J–S2L).
+Strikingly, siRNA-mediated depletion of ME1 abrogated the ability of TPNOX 
+to rescue both the elevated NADH/NAD + ratio and the impaired viability of 
+G6PD-deficient HeLa or SK-Hep1 cells under ETC inhibition (Figures 2K–2M 
+and S3A–S3C). De novo fatty acid synthesis requires a substantial amount of 
+NADPH. By employing the inhibitor ND646 to restrict NADPH consumption in 
+cells, we observed a significant reduction in the rescue effect of ME1 on the 
+impaired viability of G6PD-deficient HeLa and SK-Hep1 cells under ETC inhibi-
+tion (Figures 2N and 2O). These findings suggest that ME1 contributes to redox 
+homeostasis not merely by simply providing cellular NADPH but through a 
+metabolic mechanism that couples NADPH production to NADH oxidation. 
+Thus, ME1 plays a key role in alleviating NADH reductive stress by functionally 
+linking NADPH generation to the maintenance of NADH/NAD + balance.
+ME1 cooperates with MDH1/2 to mitigate NADH reductive stress
+Malate, the substrate for cytosolic ME1, is generated by mitochondrial MDH2 
+and cytosolic MDH1 (Figure 3A). To determine whether ME1 activity relies on 
+upstream malate supply, we silenced MDH1 in G6PD-KO HeLa cells. Knock-
+down of MDH1 markedly attenuated the TPNOX-mediated decrease in the 
+NADH/NAD + ratio under ETC inhibition, as detected by the SoNar biosensor 
+(Figures 3B and 3C). MDH1 depletion also impaired TPNOX-mediated rescue 
+of cell proliferation under these conditions (Figure 3D). Interestingly, similar ef-
+fects were observed upon knockdown of MDH2, suggesting that both cytosolic 
+and mitochondrial malate dehydrogenases are required for the redox-buffering 
+function of ME1 (Figures 3E–3G). These findings were corroborated in SK-Hep1 
+G6PD-KO cells, where knockdown of either MDH1 or MDH2 similarly impaired 
+TPNOX function (Figures S3D–S3I).
+To evaluate the role of this pathway under basal conditions, we knocked 
+down ME1, MDH1, or MDH2 in wild-type HeLa, SK-Hep1, and 143B cells. All 
+three perturbations resulted in elevated SoNar signals, indicating increased 
+NADH/NAD + ratios and underlying a conserved role in redox homeostasis 
+(Figures 3H and S4A–S4F). We further found that TPNOX conferred protection 
+against ETC inhibition in wild-type HeLa and SK-Hep1 cells. However, this pro-
+tective effect was significantly blunted by knockdown of ME1, MDH1, or MDH2 
+(Figures 3I, 3J, and S5A–S5D), indicating that TPNOX function relies on an 
+intact MDH1/2-ME1 metabolic axis.
+Together, these results demonstrate that the oxidation of NADPH by TPNOX 
+creates a metabolic “pull” that increases ME1-mediated malate consumption. 
+This elevated ME1 flux stimulates MDH1/2 activity to regenerate malate, lead-
+ing indirectly to NADH oxidation. ME1 and its upstream malate-generating en-
+zymes, MDH1 and MDH2, form a functional metabolic pathway that is essential 
+for buffering cellular NADH, maintaining NADH/NAD + homeostasis, and miti-
+gating reductive stress.
+Reductive stress activates PC-dependent rerouting of glucose carbon 
+toward malate and aspartate synthesis
+To investigate metabolic changes associated with the ME1-MDH1/2 
+pathway under conditions of NADH reductive stress, we performed [U-13 C]- 
+glucose tracing in HeLa cells. ETC inhibition using antimycin A markedly sup-
+pressed 13 C incorporation into TCA cycle intermediates, as evidenced by 
+decreased isotopic labeling proportions of multiple citrate isotopologues 
+(Figures 4A–4C). In contrast, we observed a pronounced increase in the 13 C-la-
+beling proportions of malate and aspartate, particularly the m+3 isotopologues 
+(Figures 4D–4G). Given that 13 C-labeling of citrate was decreased (Figure 4C),
+Molecular & cell
+ARTICLE
+ll
+The Innovation 7(9): 101365, September 8, 2026 
+3
+
+this enrichment was not due to enhanced TCA cycling but rather suggests that 
+m+3-labeled malate and aspartate were derived from 13 C 3 -pyruvate converted 
+to oxaloacetate (OAA) via PC, bypassing the TCA cycle (Figure 4A). CRISPR-
+mediated deletion of PC significantly reduced the fractional 13 C-enrichment 
+of malate m+3 and aspartate m+3 under both basal and antimycin A-treated 
+conditions, and these effects were reversed upon PC re-expression
+A 
+B
+C
+D
+E 
+F
+G 
+H 
+I 
+J
+K 
+L 
+M
+N 
+O
+Figure 2. ME1 attenuates NADH reductive stress by generating NADPH (A) Schematic of LbNOX catalysis. Immunoblot of inducible Tet-on FLAG-LbNOX in HeLa/G6PD-KO cells 
+treated with Dox (0.1 μg/mL, 24 h). (B) NADH/NAD + and NADPH/NADP + ratios in HeLa/G6PD-KO-Tet-on-LbNOX cells. (C) Cell viability of HeLa/G6PD-KO-Tet-on-LbNOX cells under 
+ETC inhibition. (D) Immunoblot analysis of ME1, IDH1, and G6PD expression in HeLa/G6PD-KO cells reconstituted with EV, G6PD WT, or overexpression of ME1 or IDH1. (E) Cell 
+viability of HeLa/G6PD-KO cells expressing EV, G6PD WT, ME1, or IDH1 under AntA (1 μM) or Phen (100 μM) treatment for 36 h. (F) NADH/NAD + and NADPH/NADP + ratios in HeLa/ 
+G6PD-KO cells expressing EV, G6PD WT, ME1, or IDH1 under AntA (1 μM) or Phen (100 μM) treatment for 8 h. (G) Schematic of the enzymatic reaction catalyzed by TPNOX. 
+Immunoblot analysis of inducible Tet-on FLAG-tagged TPNOX expression in HeLa/G6PD-KO cells treated with Dox (0.1 μg/mL) for 24 h. (H) NADH/NAD + ratios in HeLa/G6PD-KO-
+Tet-on-TPNOX cells. (I) Relative SoNar fluorescence ratios (F 420nm /F 485nm ) in HeLa/G6PD-KO-Tet-on-TPNOX cells. (J) Cell viability of HeLa/G6PD-KO-Tet-on-TPNOX cells under ETC 
+inhibition. (K) Immunoblot analysis of ME1 and FLAG-TPNOX expression in HeLa/G6PD-KO-Tet-on-TPNOX cells with or without ME1 knockdown. (L) Cell viability of HeLa/G6PD-KO-
+Tet-on-TPNOX cells with or without ME1 knockdown under ETC inhibition. (M) Relative SoNar fluorescence ratios (F 420nm /F 485nm ) in HeLa/G6PD-KO-Tet-on-TPNOX cells with or 
+without ME1 knockdown. (N and O) Cell viability of G6PD-KO cells expressing EV or ME1 under AntA (1 μM) or Phen (100 μM) treatment for 36 h with or without ND646 (10 μM) in 
+HeLa (N) or SK-Hep1 cells (O). Data are presented as mean ± SD (n = 3 biologically independent samples). *p < 0.05, **p < 0.01, ***p < 0.001 by two-tailed Student’s t test.
+ARTICLE
+Molecular & cell
+4 
+The Innovation 7(9): 101365, September 8, 2026 
+www.cell.com/the-innovation
+www.the-innovation.org
+
+A
+B
+D
+C
+E
+F
+G
+H
+I
+J
+Figure 3. ME1-MDH1/2 alleviates NADH reductive stress (A) Schematic of the mitochondrial malate-aspartate shuttle, which transfers reducing equivalents from mitochondrial 
+NADH to the cytosol. (B) Immunoblot analysis of MDH1 and FLAG-TPNOX expression in HeLa/G6PD-KO-Tet-on-TPNOX cells with or without MDH1 knockdown. (C) Relative SoNar 
+fluorescence ratios (F 420nm /F 485nm ) in HeLa/G6PD-KO-Tet-on-TPNOX cells with or without MDH1 knockdown. (D) Cell viability of HeLa/G6PD-KO-Tet-on-TPNOX cells with or without 
+MDH1 knockdown under ETC inhibition. (E) Immunoblot analysis of MDH2 and FLAG-TPNOX expression in HeLa/G6PD-KO-Tet-on-TPNOX cells with or without MDH2 knockdown. 
+(F) Relative SoNar fluorescence ratios (F 420nm /F 485nm ) in HeLa/G6PD-KO-Tet-on-TPNOX cells with or without MDH2 knockdown. (G) Cell viability of HeLa/G6PD-KO-Tet-on-TPNOX 
+cells with or without MDH2 knockdown under ETC inhibition. (H) Relative SoNar fluorescence ratios (F 420nm /F 485nm ) in HeLa cells with individual knockdown of ME1, MDH1, or 
+MDH2. Corresponding immunoblot analyses of ME1, MDH1, or MDH2 expression in respective knockdown cells. (I) Cell viability of HeLa-Tet-on-TPNOX cells with or without ME1 
+knockdown upon AntA (0.1 μM) or Phen (50 μM) treatment for 4 days. Corresponding immunoblot analysis of ME1 and FLAG-TPNOX expression. (J) Cell viability of SK-Hep1-Tet-on-
+TPNOX cells with or without ME1 knockdown upon AntA (0.1 μM) or Phen (50 μM) treatment for 4 days. Corresponding immunoblot analysis of ME1 and FLAG-TPNOX expression. 
+Data are presented as mean ± SD (n = 3 biologically independent samples). *p < 0.05, **p < 0.01, ***p < 0.001 by two-tailed Student’s t test.
+Molecular & cell
+ARTICLE
+ll
+The Innovation 7(9): 101365, September 8, 2026 
+5
+
+(Figures 4B–4G), confirming a PC-dependent pathway for glucose-derived OAA 
+generation under ETC inhibition.
+A hallmark of NADH reductive stress is the activation of reductive glutamine 
+metabolism, which can be monitored via increased 13 C-labeling proportions of 
+citrate m+5 from [U-13 C]-glutamine 3,10 (Figure S6A). In HeLa cells, ETC inhibition 
+led to elevated 13 C-enrichment in citrate m+5 and its derivatives, malate m+3 
+and aspartate m+3 (Figures S6B–S6G). Interestingly, PC KO cells exhibited 
+higher baseline 13 C-labeling proportions of these metabolites, and this effect 
+was further amplified upon ETC inhibition. Reintroduction of PC reversed these 
+increases (Figures S6E–S6G), suggesting that PC constrains reductive gluta-
+mine flux. Additionally, PC deletion led to an increase in the ratio of the reductive 
+metabolite 2-hydroxyglutarate and its oxidized form 2-oxoglutarate (Figure 4H), 
+further supporting a role for PC in mitigating reductive stress.
+PC supports cytosolic and mitochondrial NADH redox homeostasis
+To evaluate the role of PC in redox regulation, we overexpressed PC in G6PD-
+KO HeLa cells. Similar to G6PD expression, PC expression robustly rescued cell 
+viability under various stress conditions, including ETC inhibition (Figures 5A, 
+5B, and S7A). PC overexpression also attenuated the increase in NADH/NAD + 
+ratio caused by ETC inhibition, but its effect on NADPH/NADP + levels was min-
+imal (Figure 5C). Conversely, silencing PC impaired the ability of TPNOX to 
+rescue G6PD-KO HeLa and SK-Hep1 cells under ETC inhibition (Figures 5D,
+5E, S7B, and S7C). This requirement for PC was similarly observed in wild-
+type HeLa and SK-Hep1 cells (Figures 5F, 5G, and S7D), underscoring the impor-
+tance of PC in countering reductive stress.
+PC depletion by siRNA in wild-type HeLa cells led to a significant increase in 
+the NADH/NAD + ratio and elevated SoNar signal (Figures 5H, 5I, and S7E), 
+consistent with an induction of reductive stress. Similar effects were observed 
+in SK-Hep1 and 143B cells, where PC knockdown increased NADH/NAD + ratio 
+and SoNar signal but did not alter the NADPH/NADP + ratio (Figures S7F–S7H). 
+Pharmacological inhibition of PC using ZY444 26 also dose-dependently 
+increased NADH/NAD + ratios without affecting NADPH/NADP + in HeLa and 
+SK-Hep1 cells (Figures 5J and S7I), further confirming PC’s role in buffering 
+excess NADH.
+A recent study reported that, under stress, PC may translocate to the cytosol 
+and interact with MDH1 and ME1 to form a complex facilitating NADH-to-
+NADPH conversion. 27 To determine the subcellular site of PC action, we ex-
+pressed wild-type or N-terminally FLAG-tagged PC constructs in G6PD-KO 
+HeLa cells. Only wild-type PC, but not N-terminally FLAG-tagged PC, rescued 
+growth under ETC inhibition, correlating with proper mitochondrial localization 
+(Figures 5K and S8A–S8C). Similarly, PC constructs lacking the first 20 amino 
+acids of the mitochondrial targeting sequence (PCΔ1-20Aa) or its N-terminally 
+FLAG-tagged counterpart were unable to rescue viability (Figure 5K). However, 
+when a mitochondrial targeting signal was reintroduced into these truncated or
+A 
+B 
+F
+G
+C
+D
+E
+H
+Figure 4. NADH reductive stress promotes PC-mediated glucose-derived malate and aspartate (A) Schematic diagram illustrating the metabolic flux of 13 C 6 -glucose through 
+glycolysis, the TCA cycle, and TCA anaplerosis via PC. (B) Immunoblot analysis of PC expression in HeLa/WT cells and PC-KO cells re-expressing EV or PC WT. (C–E) 13 C-labeled 
+fractions of citrate (C), malate (D), and aspartate (E) in the indicated HeLa cells cultured with 10 mM 13 C 6 -glucose for 8 h under AntA (1 μM) treatment. (F) Quantification of malate 
+m+3 isotopologues ( 13 C-labeled fraction), absolute m+3 levels, and total malate abundance under the same conditions as in (C–E). (G) Quantification of aspartate m+3 iso-
+topologues, absolute m+3 levels, and total aspartate abundance under the same conditions as in (C–E). (H) The ratios of 2-hydroxyglutarate (2HG) to α-ketoglutarate (2KG) in the 
+indicated HeLa cells after 8 h of AntA(1 μM) treatment. Data are presented as mean ± SD (n = 3 biologically independent samples). *p < 0.05, **p < 0.01, ***p < 0.001 by two-tailed 
+Student’s t test.
+ARTICLE
+Molecular & cell
+6 
+The Innovation 7(9): 101365, September 8, 2026 
+www.cell.com/the-innovation
+www.the-innovation.org
+
+FLAG-tagged forms, mitochondrial localization was restored (Figures S8C– 
+S8F), and the rescue of cell survival was regained (Figure 5K), indicating that 
+PC functions within mitochondria to combat reductive stress.
+Cytosolic NADH/NAD + is metabolically associated with the mitochondrial 
+NADH/NAD + pool. While the SoNar biosensor selectively detects cytosolic 
+NADH/NAD + , we employed the Frex-Mit biosensor to directly monitor mitochon-
+drial NADH levels 28 in order to determine whether PC, as well as ME1, contrib-
+utes to the regulation of mitochondrial reductive stress. Our results showed that 
+pharmacological inhibition using ZY444, as well as siRNA-mediated knockdown 
+of PC, ME1, MDH1, or MDH2, markedly increased Frex-Mit signal in HeLa, SK-
+Hep1, and 143B cells (Figures 5L, 5M, and S9A–S9M), indicating mitochondrial
+NADH accumulation. Collectively, these results demonstrate that PC, ME1, 
+MDH1, and MDH2 play a critical role in maintaining NADH redox homeostasis 
+across cellular compartments, thereby protecting both the cytosol and mito-
+chondria from reductive stress.
+Blocking PC sensitizes cancer cells to reductive stress and enhances 
+antitumor synergy
+We further observed that PC KO sensitized HeLa and SK-Hep1 cells to ETC 
+inhibition, whereas re-expression of PC reversed this sensitivity (Figures 6A 
+and 6B). As a mitochondrial enzyme, PC produces OAA, which can be converted 
+to malate by MDH2 or to aspartate via GOT2; both metabolites are exported to
+A 
+B 
+C
+D 
+E
+H 
+I
+F 
+G 
+J
+K
+L 
+M
+Figure 5. PC plays a critical role in maintaining NADH/NAD+ homeostasis (A) Immunoblot verification of the overexpression of PC in HeLa/G6PD-KO cells. (B) Cell viability of HeLa/ 
+G6PD-KO cells overexpressing PC under AntA (1 μM) treatment for 36 h. (C) NADH/NAD + and NADPH/NADP + ratios in HeLa/WT, HeLa/G6PD-KO cells expressing EV or PC under 
+AntA (1 μM) treatment for 8 h. (D) Immunoblot analysis of PC and FLAG-TPNOX expression in HeLa/G6PD-KO-Tet-on-TPNOX cells with or without PC knockdown. (E) Cell viability of 
+HeLa/G6PD-KO-Tet-on-TPNOX cells with or without PC knockdown under ETC inhibition. (F) Immunoblot analysis of PC and FLAG-TPNOX expression in HeLa-Tet-on-TPNOX cells 
+with or without PC knockdown. (G) Cell viability of HeLa-Tet-on-TPNOX cells with or without PC knockdown upon AntA (0.1 μM) or Phen (50 μM) treatment for 4 days. (H) NADH/ 
+NAD + ratios in HeLa cells with or without PC knockdown. (I) Relative SoNar fluorescence ratios (F 420nm /F 485nm ) in HeLa cells with or without PC knockdown. (J) NADH/NAD + and 
+NADPH/NADP + ratios in HeLa cells treated with varying concentrations of PC inhibitor ZY444 for 12 h. (K) Effects of respiratory-chain inhibition on cell viability in HeLa/G6PD-KO 
+cells overexpressing different PC mutants. Corresponding immunoblot analysis of PC expression. (L) Mitochondrial NADH assessed by Frex-Mit fluorescence signal in HeLa cells 
+treated with ZY444 for 12 h. Fluorescence values were corrected for pH using cpYFP-Mit signal. (M) Effects of PC knockdown on Frex-Mit fluorescence in HeLa cells. Corresponding 
+immunoblot analysis of PC expression. Data are presented as mean ± SD (n = 3 biologically independent samples). *p < 0.05, **p < 0.01, ***p < 0.001 by two-tailed Student’s t test.
+Molecular & cell
+ARTICLE
+ll
+The Innovation 7(9): 101365, September 8, 2026 
+7
+
+the cytosol and contribute to NADH detoxification pathways (Figure 3A). To 
+dissect their relative contributions downstream of PC, we silenced MDH2 and 
+GOT2 individually or in combination in HeLa cells. While single knockdowns 
+only mildly increased sensitivity to ETC inhibition, combined knockdown of 
+MDH2 and GOT2 mimicked the effect of PC loss, indicating that both pathways 
+downstream of PC are required for resistance to reductive stress (Figures 6C 
+and 6D).
+Next, we evaluated the therapeutic potential of targeting PC in combi-
+nation with ETC inhibition. The PC inhibitor ZY444 synergized with com-
+plex I inhibitors, including metformin, antimycin A, and phenformin, to 
+impair cell viability in HeLa, SK-Hep1, and 143B cells (Figures 6E, S10A, 
+and S10B). These combinatorial treatments also caused a more pro-
+nounced increase in the intracellular NADH/NAD + ratio (Figure 6F), indi-
+cating enhanced reductive stress.
+A previous study has reported that PC inhibition reduces cell viability under 
+glutamine deprivation, 29 consistent with the notion that reductive stress in-
+creases dependence of cancer cells on glutamine metabolism. Supporting 
+this, we found that PC-deficient HeLa cells were more sensitive to both gluta-
+mine withdrawal and glutaminase (GLS) inhibition by CB839 30 (Figures S10C 
+and S10D). Furthermore, the combination of ZY444 with both metformin and 
+CB839 resulted in greater suppression of cell viability than dual combinations 
+across all three cell lines tested (Figure S10E). These results reinforce the 
+role of PC in buffering reductive stress and maintaining metabolic flexibility un-
+der nutrient limitation.
+A
+C
+B
+D
+F
+E
+G
+H
+Figure 6. Blocking PC sensitizes cancer cells to NADH reductive stress (A) Cell viability of HeLa/WT cells and HeLa/PC-KO cells reconstituted with EV or PC under AntA (0.1 μM), 
+Phen (50 μM), or metformin (2 mM) treatment for 5 days. Corresponding immunoblot analysis of PC expression. (B) Cell viability of SK-Hep1/WT cells and SK-Hep1/PC-KO cells 
+reconstituted with EV or PC under the same treatment conditions as in (A). Corresponding immunoblot analysis of PC expression. (C) Immunoblot analysis of MDH2 and GOT2 
+expression in HeLa cells with single or combined knockdown of MDH2 and GOT2. (D) Cell viability of HeLa cells with MDH2 or GOT2 single or combined knockdown under Phen 
+(50 μM) or metformin (2 mM) treatment for 5 days. (E) Cell viability of HeLa, 143B, and SK-Hep1 cells treated with ZY444 (2 μM), metformin (0.5 mM), or their combination for 5 days. 
+(F) NADH/NAD + ratios in HeLa, 143B, and SK-Hep1 cells treated with ZY444 (2 μM), metformin (0.5 mM), or their combination for 12 h. (G) Tumor growth of HeLa xenografts in nude 
+mice treated with metformin (100 mg kg − 1 per day, i.g.), ZY444 (2.5 mg kg − 1 per day, intraperitoneal [i.p.]), CB839 (150 mg kg − 1 per day, i.g.), or their combinations. The control 
+group was treated with the same volume of vehicle (10% DMSO and 90% corn oil). (H) Tumor growth of SK-Hep1 xenografts in nude mice under the same treatment regimens as in 
+(G), administered every other day. Data are presented as mean ± SD (n = 3 biologically independent samples or n = 6 biologically independent mice). *p < 0.05, **p < 0.01, ***p < 0.001 
+by two-tailed Student’s t test.
+ARTICLE
+Molecular & cell
+8 
+The Innovation 7(9): 101365, September 8, 2026 
+www.cell.com/the-innovation
+www.the-innovation.org
+
+In xenograft models using HeLa and SK-Hep1 cells, individual treatment with 
+ZY444, metformin, or CB839 showed no or only modest tumor inhibition. How-
+ever, dual combinations (ZY444 + metformin or ZY444 + CB839) significantly 
+impaired tumor growth, and the triple combination nearly abolished tumor pro-
+gression, indicating a strong synergistic effect in vivo (Figures 6G, 6H, S10F, 
+and S10G).
+These findings demonstrate that PC is a critical node in protecting cancer 
+cells from NADH reductive stress and that its inhibition synergizes with ETC 
+blockade and glutamine utilization suppression, offering a potential combinato-
+rial therapeutic strategy.
+DISCUSSION
+Impairment of the ETC leads to NADH accumulation in both cytosol and mito-
+chondria, causing reductive stress that disrupts glycolysis, biosynthesis, and 
+antioxidant defense. 2,3,31 We identify a dual-branched, PC-driven mechanism 
+that channels excess NADH into NADPH production via malate metabolism, 
+coupling mitochondrial anaplerosis to cytosolic redox detoxification 
+(Figure 7). PC converts pyruvate to OAA in mitochondria, after which OAA exits 
+through two routes. In one branch, MDH2 reduces OAA to malate using mito-
+chondrial NADH; malate is exported and oxidized by ME1 to generate 
+NADPH, converting mitochondrial NADH equivalents into cytosolic NADPH. In 
+the other, GOT2 transaminates OAA to aspartate for export; cytosolic GOT1 re-
+generates OAA, MDH1 reduces it to malate using cytosolic NADH, and ME1 ox-
+idizes malate to produce NADPH. Together, these pathways allow both mito-
+chondrial and cytosolic NADH pools to fuel ME1, increasing NADPH when 
+reductive stress is most severe. The resulting NADPH supports antioxidant 
+and anabolic reactions, thereby relieving NADH burden.
+This dual architecture provides two advantages. The MDH2-malate-ME1 axis 
+directly consumes mitochondrial NADH, preserving NAD + to sustain residual 
+oxidative phosphorylation and dehydrogenase activity. 32 The GOT2-GOT1/ 
+MDH1-malate-ME1 shuttle removes excess cytosolic NADH generated by 
+ETC blockade and converts it into NADPH to maintain antioxidant and biosyn-
+thetic capacity. In both cases, NADH is redirected into adaptive reducing power 
+that supports survival.
+We further show that G6PD enhances ME1 activity through a non-catalytic 
+scaffolding function (Figure 1). By promoting efficient malate oxidation, G6PD 
+sustains continuous NADH-to-NADPH flux. Loss of this interaction impairs acti-
+vation of the PC-MDH1/2-ME1 pathway and renders cells susceptible to reduc-
+tive collapse.
+Although PC has been implicated in ME1-dependent NADPH production dur-
+ing oxidative stress, 27,32 our findings redefine the PC-ME1 axis as an NADH 
+disposal system functioning as a metabolic transhydrogenation-like cycle 
+that converts mitochondrial and cytosolic NADH into NADPH. This circuit is 
+driven by the need to maintain NADH/NAD + homeostasis under reductive 
+stress, with NADPH consumption—physiological (biosynthesis and antioxidant 
+defense) or experimental (eg, TPNOX-mediated oxidation)—providing the pull 
+that sustains flux (Figure 7). Thus, its dominant role is redox balancing rather 
+than net NADPH accumulation. G6PD optimizes this cycle by scaffolding 
+ME1 into a high-activity complex while suppressing its own NADPH-producing 
+activity, ensuring efficient malate oxidation and uninterrupted NADH clearance. 
+Disruption of this regulation markedly compromises the PC-MDH1/2-ME1 axis. 
+Therapeutically, this dual PC pathway represents a metabolic vulnerability. 
+PC inhibition blocks both malate export routes and sensitizes cancer cells to 
+complex I and glutamine metabolism inhibitors in vitro and in vivo (Figure 6).
+Figure 7. Schematic model of the PC-MDH1/2-ME1 pathway that linking NADH detoxification to NADPH generation Under conditions of ETC inhibition, a mitochondrial-cytosolic 
+metabolic circuitry centered on PC, MDH1/2, and ME1 is activated to buffer excess NADH. PC-mediated anaplerotic flux channels glucose-derived carbon into OAA, which is 
+transformed into malate via either the mitochondrial MDH2 branch (consuming mitochondrial NADH) or the GOT2-GOT1-MDH1 cytosolic shuttle (consuming cytosolic NADH). The 
+resulting malate is oxidized by ME1 to produce cytosolic NADPH, thereby coupling mitochondrial carbon metabolism to redox detoxification. G6PD enhances ME1 activity through a 
+non-enzymatic scaffold function, enabling efficient NADH-to-NADPH flux. Disruption of this pathway compromises redox homeostasis and sensitizes cells to ETC and glutamine 
+metabolism inhibition, revealing a therapeutically targetable redox vulnerability.
+Molecular & cell
+ARTICLE
+ll
+The Innovation 7(9): 101365, September 8, 2026 
+9
+
+Because many cancers exhibit elevated NADH/NAD + ratios, they may depend 
+on the PC-ME1 network for redox homeostasis. Targeting this axis may there-
+fore impair NADH clearance and antioxidant capacity, undermining tumor 
+viability.
+In summary, we define a two-branched, PC-dependent malate shuttle that 
+converts NADH into NADPH, linking mitochondrial anaplerosis with cytosolic 
+redox homeostasis. This mechanism supports survival under respiratory stress 
+and represents a tractable target for combination cancer therapies. Future 
+studies should determine how this circuit is regulated across tissues and stress 
+contexts and how it integrates with other redox-buffering systems.
+RESOURCE AVAILABILITY 
+Materials availability
+All unique/stable reagents generated in this study are available from the lead contact 
+with a completed materials transfer agreement.
+Data and code availability
+Data are available from the corresponding author upon reasonable request.
+FUNDING AND ACKNOWLEDGMENTS
+We thank Dr. Xiaohui Liu (Metabolomics Facility at Tsinghua University Branch of China 
+National Center for Protein Sciences, China) for technical help. This work was supported by 
+grants from the National Natural Science Foundation of China (82325038, 82530094, and 
+82303227), the Chinese Institutes for Medical Research, Beijing (CX23YZ18), and the Bei-
+jing High-Level Innovation and Entrepreneurship Talent Support Program-Young Backbone 
+Talent Projects (G202532306).
+AUTHOR CONTRIBUTIONS
+Conceptualization, B.L.; investigation, X.L., R.Y., P.H., X.Z., L.L., and Z.G.; funding acquisi-
+tion, B.L. and R.Y.; advice and discussion, P.C., L.Q., Y.F., and J.N.; supervision, B.L.; writing – 
+original draft, B.L.; writing – review & editing, B.L., R.Y., and X.L. All authors contributed to the 
+manuscript and approved the final version.
+DECLARATION OF INTERESTS
+The authors declare no competing interests.
+SUPPLEMENTAL INFORMATION
+It can be found online at https://doi.org/10.1016/j.xinn.2026.101365.
+REFERENCES
+1. Yang, R., Guo, Z. and Li, B. (2026). NADH reductive stress drives metabolic reprogramming.
+Trends Cell Biol. 36:177–189. DOI:10.1016/j.tcb.2025.07.005
+2. Titov, D.V., Cracan, V., Goodman, R.P. et al. (2016). Complementation of mitochondrial elec-
+tron transport chain by manipulation of the NAD+/NADH ratio. Science 352:231–235. DOI:10. 
+1126/science.aad4017
+3. Liu, M., Wang, Y., Yang, C. et al. (2020). Inhibiting both proline biosynthesis and lipogenesis
+synergistically suppresses tumor growth. J. Exp. Med. 217:e20191226. DOI:10.1084/jem. 
+20191226
+4. Ying, W. (2008). NAD+/NADH and NADP+/NADPH in cellular functions and cell death: regu-
+lation and biological consequences. Antioxid. Redox Signal. 10:179–206. DOI:10.1089/ars. 
+2007.1672
+5. Pollak, N., Dölle, C. and Ziegler, M. (2007). The power to reduce: pyridine nucleotides–small
+molecules with a multitude of functions. Biochem. J. 402:205–218. DOI:10.1042/ 
+BJ20061638
+6. Murphy, M.P. (2009). How mitochondria produce reactive oxygen species. Biochem. J.
+417:1–13. DOI:10.1042/BJ20081386
+7. Goodman, R.P., Calvo, S.E. and Mootha, V.K. (2018). Spatiotemporal compartmentalization
+of hepatic NADH and NADPH metabolism. J. Biol. Chem. 293:7508–7516. DOI:10.1074/ 
+jbc.TM117.000258
+8. Lunt, S.Y. and Vander Heiden, M.G. (2011). Aerobic glycolysis: meeting the metabolic re-
+quirements of cell proliferation. Annu. Rev. Cell Dev. Biol. 27:441–464. DOI:10.1146/an-
+nurev-cellbio-092910-154237
+9. Zhai, X., Yang, R., Chu, Q. et al. (2025). AMPK-regulated glycerol excretion maintains meta-
+bolic crosstalk between reductive and energetic stress. Nat. Cell Biol. 27:141–153. DOI:10. 
+1038/s41556-024-01549-x
+10. Mullen, A.R., Wheaton, W.W., Jin, E.S. et al. (2011). Reductive carboxylation supports 
+growth in tumour cells with defective mitochondria. Nature 481:385–388. DOI:10.1038/ 
+nature10642
+11. Metallo, C.M., Gameiro, P.A., Bell, E.L. et al. (2011). Reductive glutamine metabolism by 
+IDH1 mediates lipogenesis under hypoxia. Nature 481:380–384. DOI:10.1038/ 
+nature10602
+12. Wang, Y., Bai, C., Ruan, Y. et al. (2019). Coordinative metabolism of glutamine carbon and 
+nitrogen in proliferating cancer cells under hypoxia. Nat. Commun. 10:201. DOI:10.1038/ 
+s41467-018-08033-9
+13. Sullivan, L.B., Gui, D.Y. and Vander Heiden, M.G. (2016). Altered metabolite levels in cancer: 
+implications for tumour biology and cancer therapy. Nat. Rev. Cancer 16:680–693. DOI:10. 
+1038/nrc.2016.85
+14. Goodman, R.P., Markhard, A.L., Shah, H. et al. (2020). Hepatic NADH reductive stress un-
+derlies common variation in metabolic traits. Nature 583:122–126. DOI:10.1038/s41586-
+020-2337-2
+15. Yang, R., Yang, C., Ma, L. et al. (2022). Identification of purine biosynthesis as an NADH-
+sensing pathway to mediate energy stress. Nat. Commun. 13:7031. DOI:10.1038/ 
+s41467-022-34850-0
+16. Singh, C., Jin, B., Shrestha, N. et al. (2024). ChREBP is activated by reductive stress and me-
+diates GCKR-associated metabolic traits. Cell Metab. 36:144–158.e7. DOI:10.1016/j.cmet. 
+2023.11.010
+17. Liu, S., Fu, S., Wang, G. et al. (2021). Glycerol-3-phosphate biosynthesis regenerates cyto-
+solic NAD(+) to alleviate mitochondrial disease. Cell Metab. 33:1974–1987.e9. DOI:10. 
+1016/j.cmet.2021.06.013
+18. Chouchani, E.T., Kazak, L., Jedrychowski, M.P. et al. (2016). Mitochondrial ROS regulate 
+thermogenic energy expenditure and sulfenylation of UCP1. Nature 532:112–116. 
+DOI:10.1038/nature17399
+19. Francisco, A., Figueira, T.R. and Castilho, R.F. (2022). Mitochondrial NAD(P)(+) 
+Transhydrogenase: From Molecular Features to Physiology and Disease. Antioxid. Redox 
+Signal. 36:864–884. DOI:10.1089/ars.2021.0111
+20. Chen, L., Zhang, Z., Hoshino, A. et al. (2019). NADPH production by the oxidative pentose-
+phosphate pathway supports folate metabolism. Nat. Metab. 1:404–415
+21. Jin, X., Li, X., Li, L. et al. (2022). Glucose-6-phosphate dehydrogenase exerts antistress ef-
+fects independently of its enzymatic activity. J. Biol. Chem. 298:102587. DOI:10.1016/j.jbc. 
+2022.102587
+22. Zhong, B., Jiang, D., Hong, Y. et al. (2021). Glucose-6-phosphate dehydrogenase 
+neutralizes stresses by supporting reductive glutamine metabolism and AMPK activation. 
+Signal Transduct. Target. Ther. 6:46. DOI:10.1038/s41392-020-00399-x
+23. Sullivan, L.B., Gui, D.Y., Hosios, A.M. et al. (2015). Supporting Aspartate Biosynthesis Is an 
+Essential Function of Respiration in Proliferating Cells. Cell 162:552–563. DOI:10.1016/j. 
+cell.2015.07.017
+24. Cracan, V., Titov, D.V., Shen, H. et al. (2017). A genetically encoded tool for manipulation of 
+NADP(+)/NADPH in living cells. Nat. Chem. Biol. 13:1088–1095. DOI:10.1038/nchem-
+bio.2454
+25. Zhao, Y., Hu, Q., Cheng, F. et al. (2015). SoNar, a Highly Responsive NAD+/NADH Sensor, 
+Allows High-Throughput Metabolic Screening of Anti-tumor Agents. Cell Metab. 
+21:777–789. DOI:10.1016/j.cmet.2015.04.009
+26. Lin, Q., He, Y., Wang, X. et al. (2020). Targeting Pyruvate Carboxylase by a Small Molecule 
+Suppresses Breast Cancer Progression. Adv. Sci. 7:1903483. DOI:10.1002/advs. 
+201903483
+27. Igelmann, S., Lessard, F., Uchenunu, O. et al. (2021). A hydride transfer complex repro-
+grams NAD metabolism and bypasses senescence. Mol. Cell 81:3848–3865.e19. 
+DOI:10.1016/j.molcel.2021.08.028
+28. Zhao, Y., Jin, J., Hu, Q. et al. (2011). Genetically encoded fluorescent sensors for intracel-
+lular NADH detection. Cell Metab. 14:555–566. DOI:10.1016/j.cmet.2011.09.004
+29. Sellers, K., Fox, M.P., Bousamra, M., 2nd et al. (2015). Pyruvate carboxylase is critical for 
+non-small-cell lung cancer proliferation. J. Clin. Investig. 125:687–698. DOI:10.1172/ 
+JCI72873
+30. Gross, M.I., Demo, S.D., Dennison, J.B. et al. (2014). Antitumor activity of the glutaminase 
+inhibitor CB-839 in triple-negative breast cancer. Mol. Cancer Ther. 13:890–901. DOI:10. 
+1158/1535-7163.MCT-13-0870
+31. Luengo, A., Li, Z., Gui, D.Y. et al. (2021). Increased demand for NAD(+) relative to 
+ATP drives aerobic glycolysis. Mol. Cell 81:691–707.e6. DOI:10.1016/j.molcel.2020. 
+12.012
+32. Del Prado, L., Jaraíz-Rodríguez, M., Agro, M. et al. (2024). Compensatory activity of the PC-
+ME1 metabolic axis underlies differential sensitivity to mitochondrial complex I inhibition. 
+Nat. Commun. 15:8682. DOI:10.1038/s41467-024-52968-1
+ARTICLE
+Molecular & cell
+10 
+The Innovation 7(9): 101365, September 8, 2026 
+www.cell.com/the-innovation
+www.the-innovation.org

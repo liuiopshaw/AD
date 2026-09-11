@@ -1,0 +1,1226 @@
+Doped Graphene To Mimic the Bacterial NADH Oxidase for One-
+Step NAD+ Supplementation in Mammals
+Xi Liu, Jingkun Li, Andrea Zitolo, Meng Gao, Jun Jiang, Xiangtian Geng, Qianqian Xie, Di Wu,
+Huizhen Zheng, Xiaoming Cai, Jianmei Lu, Frédéric Jaouen,* and Ruibin Li*
+Cite This: J. Am. Chem. Soc. 2023, 145, 3108−3120
+Read Online
+ACCESS
+Metrics & More
+Article Recommendations
+*
+sı
+Supporting Information
+ABSTRACT: Nicotinamide adenine dinucleotide (NAD) is a critical
+regulator of metabolic networks, and declining levels of its oxidized form,
+NAD+, are closely associated with numerous diseases. While supplementing
+cells with precursors needed for NAD+ synthesis has shown poor efficacy in
+combatting NAD+ decline, an alternative strategy is the development of
+synthetic materials that catalyze the oxidation of NADH into NAD+, thereby
+taking over the natural role of the NADH oxidase (NOX) present in bacteria.
+Herein, we discovered that metal-nitrogen-doped graphene (MNGR)
+materials can catalyze the oxidation of NADH into NAD+. Among MNGR
+materials with different transition metals, Fe-, Co-, and Cu-NGR displayed strong catalytic activity combined with >80% conversion
+of NADH into NAD+, similar specificity to NOX for abstracting hydrogen from the pyridine ring of nicotinamide, and higher
+selectivity than 51 other nanomaterials. The NOX-like activity of FeNGR functioned well in diverse cell lines. As a proof of concept
+of the in vivo application, we showed that FeNGR could specifically target the liver and remedy the metabolic flux anomaly in
+obesity mice with NAD+-deficient cells. Overall, our study provides a distinct insight for exploration of drug candidates by design of
+synthetic materials to mimic the functions of unique enzymes (e.g., NOX) in bacteria.
+■INTRODUCTION
+Nicotinamide adenine dinucleotide (NAD) is an essential
+cofactor extensively expressed in all living cells.1 Its oxidized
+and reduced forms (NAD+ and NADH, respectively) play a
+key role in the electron transport chain (ETC) of metabolic
+processes, where NAD+ serves as an electron acceptor in
+metabolic redox reactions of cells.2,3 These reactions are crucial
+for cells to maintain their elemental biological functions by
+harvesting energy from fuel molecules such as glucose and fatty
+acids.4 The physiological functions of NAD+ as an essential
+coenzyme in metabolic networks have been highly underlined.5
+While the decline in NAD+ levels is closely associated with
+aging,6 metabolic diseases,7,8 neurodegenerative disorders,9
+and cancers,10,11 elevation of this cofactor by supplementing
+cells with precursors needed for NAD+ synthesis has shown
+considerable benefits in preclinical trials.12−15 This has aroused
+great interest in the exploration of efficient and affordable
+pathways to increase NAD+ levels for biomedical applications.
+Mammalian cells can produce NAD+ via two pathways,
+namely, the de novo synthesis (DNS) pathway and the salvage
+pathway16 (Figure S1). The former requires seven steps to
+synthesize NAD+ from its main building block, namely, the
+amino acid tryptophan, and was shown to be poorly efficient in
+biomedical applications.17 The salvage pathway utilizes vitamin
+B3 derivatives, including niacinamide (NAM), nicotinic acid
+(NA), or nicotinamide ribose (NR), bypassing the synthesis of
+adenine and resulting in the synthesis of NAD+ in fewer
+steps.18 However, supplementation of B3 derivatives may lead
+to NADH accumulation, resulting in side effects such as
+hepatic pressure, tissue-specific cytotoxicity, and even carcino-
+genesis.19 In contrast to mammalian cells, the NADH oxidase
+(NOX) was found in some bacteria to be involved in the
+regulation of NAD+ levels via the direct conversion of NADH
+into NAD+.20 The advent of synthetic nanomaterials with
+NOX-like activity holds great interest.
+The rapid development of nanotechnologies allows the
+precise design of nanostructures that mimic the catalytic
+properties of natural enzymes, namely, nanozymes.21,22
+However, most nanozymes can merely catalyze the degrada-
+tion of peroxides, oxygen and superoxide, while nanozymes
+with reactivity toward C−H bonds have rarely been reported.
+Synthetic metal-nitrogen-graphene (MNGR) materials origi-
+nally developed for catalyzing O2 electroreduction were
+recently investigated in the field of heterogeneous catalysis
+for the activation of C−H bonds.23−25 The 3d transition
+metals are often chosen as the dopants due to their superior
+efficiency to catalyze reduction and/or oxidation reactions, low
+Received:
+November 21, 2022
+Published: January 26, 2023
+Article
+pubs.acs.org/JACS
+© 2023 American Chemical Society
+3108
+https://doi.org/10.1021/jacs.2c12336
+J. Am. Chem. Soc. 2023, 145, 3108−3120
+Downloaded via QINGDAO UNIV SCIENCE AND TECHNOLOGY on June 9, 2025 at 02:34:17 (UTC).
+See https://pubs.acs.org/sharingguidelines for options on how to legitimately share published articles.
+
+toxicity, and high abundance in the continental crust. An
+FeNGR material with single-metal-atom sites (Fe−Nx
+moieties) was shown to selectively catalyze the oxidation of
+a broad range of aromatic hydrocarbons into their correspond-
+ing ketones,23 and a CoNGR material with Co−Nx sites was
+reported to selectively catalyze the one-hydrogen abstraction
+from propane, resulting in propene.24 This ability of MNGR
+materials with M−Nx sites covalently embedded in graphene
+sheets to catalytically activate C−H bonds is in line with a
+similar ability reported for non-pyrolyzed metal-phthalocya-
+nines comprising a well-defined M−N4 center.26,27 Metal-
+phthalocyanines are, however, less robust than MNGR single-
+atom catalysts, and their synthesis is more complex. Due to the
+reported activity of MNGR to activate C−H bonds selectively
+and efficiently, we hypothesized that they can be potential
+catalysts to mimic the activity of NOX for the catalytic
+elevation of NAD+ in mammalian cells. While MNGR
+materials have recently been investigated as nanozymes with
+peroxidase- or catalase-like properties,28−36 they have not yet
+been investigated as a NOX-like nanozyme to elevate NAD+.
+Given that Fe, Mn, Zn, Cu, and Co often serve as the
+catalytic core of many enzymes, we designed a series of MNGR
+materials by doping graphene with these transition metal and
+nitrogen atoms to investigate their catalytic properties toward
+NADH oxidation (Figure S1). The catalytic products of
+NADH and O2 in abiotic aqueous solutions were first
+examined by a colorimetric substrate, liquid chromatography
+and tandem mass spectrometry (LC−MS/MS). Among five
+synthetic MNGR materials, iron-, copper-, and cobalt-doped
+NGR (FeNGR, CuNGR, and CoNGR) were found to exhibit
+Figure 1. Characterization of MNGR materials. Characterization of the physicochemical properties of FeNGR, CuNGR, and CoNGR by (A) AFM,
+(B) powder XRD patterns, and (C) Fourier transformed EXAFS and (D) XANES spectra. A drop of MNGR material suspension at 50 μg/mL was
+added to mica plates and dried at room temperature for AFM observation. Ten milligrams of MNGR powder was placed on silicon plates by direct
+compression for XRD. Pelletized MNGR powders bound with Teflon powder were used for EXAFS and XANES measurements at the metal K-
+edge. The EXAFS and XANES spectra for the respective metal-phthalocyanine compounds with well-defined metal-N4 coordination are also shown
+(red curves in C and D).
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.2c12336
+J. Am. Chem. Soc. 2023, 145, 3108−3120
+3109
+
+potent catalytic activity. Focusing on FeNGR due to iron’s
+biocompatibility, the substrate selectivity, stability, and kinetics
+of FeNGR were then extensively assessed under physiological
+conditions. The biological functions of FeNGR as an
+alternative to NOX were assessed in diverse mammalian cell
+lines and the NAD+-deficient cell model by detecting the key
+intermediates in metabolic networks. Finally, as a proof of
+concept, the FeNGR material was exploited to remedy the
+metabolic flux anomaly in mice receiving high-fat diet (HFD).
+In summary, our study reports the discovery of the first
+nanozyme that mimics the catalytic properties of NOX from
+bacteria, with the proven catalytic elevation of NAD+ levels in
+mammalian cells and animals.
+■RESULTS
+Synthesis and Characterization of MNGR Materials.
+Five MNGR materials were prepared by changing only the
+nature of the transition metal in the synthesis. ZnNGR,
+Figure 2. Abiotic assessment of the NOX-like activity of MNGRs. Assessment of catalytic activities of MNGR materials by the (A) colorimetric
+assay and (B) LC−MS/MS. (C) NAD+ yields in NADH oxidation reactions. Nanoparticles of MNGR at 200 μg mL−1 and NOX at 200 mU mL−1
+were used to react with NADH for 2 h in PBS (pH 7.4). The residual NADH amount was detected by the MTS assay or LC−MS/MS (n = 3
+independent samples). For LC−MS/MS, the NAD+ yield was calculated according to the following equation: NAD+ yield (%) = SNAD
++/(SNADH +
+SNAD
++) × 100%, where SNADH and SNAD
++ represent the molar amounts of NADH and NAD+ detected by LC−MS/MS, respectively. (D) Heatmap
+presenting dose (0−200 μg mL−1) and time (0−2 h) responses of 52 nanomaterials toward the catalysis of NADH oxidation. The catalytic
+activities were assessed by the absorbance changes of the substrate in the MTS assay (see Supporting Information, Methods section: Assessment of
+NOX-like activity by colorimetric assay). (E) Comparisons of the stability of FeNGR and NOX in four simulated biofluids. FeNGR (200 μg/mL)
+and NOX (200 mU/mL) were pretreated in phagolysosomal simulated fluid (PSF), simulated gastric fluid (SGF), simulated intestinal fluid (SIF),
+and serum for 2 h. The catalytic activities of treated FeNGR or NOX were detected by the MTS assay (n = 3 independent samples). (F) Durability
+of FeNGR and NOX. An ultrafiltration membrane was used to separate FeNGR and NOX after each NADH oxidation reaction cycle. The catalytic
+activity before each cycle was measured by the MTS assay (n = 3 independent samples).
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.2c12336
+J. Am. Chem. Soc. 2023, 145, 3108−3120
+3110
+
+CuNGR, CoNGR, FeNGR, and MnNGR single-atom catalytic
+materials were prepared via flash pyrolysis at 1050 °C in
+flowing argon of dry-mixed metal acetate, 1,10-phenanthroline,
+and ZIF-8 according to a method previously developed by
+us.37,38 These materials were characterized by atomic force
+microscopy (AFM), Raman spectroscopy, X-ray diffraction
+(XRD), and X-ray absorption spectroscopy (XAS). The
+characterization data of Fe-, Cu-, and Co-NGR, with high
+catalytic activity, are presented in the main manuscript, while
+those of Zn- and Mn-NGR (materials with lower activity) are
+presented in the Supporting Information.
+The AFM images showed that the five MNGR materials had
+a lamellar structure consisting of a monolayer or a few atomic
+layers of carbon, with a thickness of 1.5−4.5 nm and a lateral
+size of 200−500 nm (Figures 1A and S2A). The Raman
+spectra were similar for the five MNGR materials (Figure S3),
+revealing the G and D bands at 1583 and 1328 cm−1 that are
+characteristic of the graphene plane and edges of small
+graphene planes, respectively.39 These results are in line with
+the small lateral size of graphene planes observed by AFM.
+Powder XRD showed only a first diffraction peak at ca. 22°
+that can be assigned to the reflection (002) of graphite and a
+second broader peak at ca. 42° that can be assigned to the
+convoluted (100) and (101) reflections of graphite (Figures
+1B and S2B). The absence of diffraction peaks arising from
+crystalline metallic structures or other metal-rich crystalline
+structures in the as-prepared MNGR materials indicates that
+the metal atoms are likely atomically dispersed, as supported
+also by the extended X-ray absorption fine structure (EXAFS)
+analysis discussed below. The similar signatures of the carbon
+support in Raman spectra and XRD patterns for the five
+MNGR indicate that the NGR support is similar in all five
+materials, with the materials differing mainly in the nature of
+the metal dopant. We then resorted to XAS for identification of
+the average local structure and coordination environment of
+the transition metal in each MNGR material (Figures 1C,D
+and S2C). The Fourier transform (FT) of the EXAFS spectra
+of the MNGRs at their respective metal K-edge showed a
+major peak (∼1.5 Å) and a secondary peak (2−3 Å). These
+two peaks can be attributed to the backscattering of light atoms
+(O, N, or C) situated in first and second coordination spheres
+of the absorbing metal (Figure 1C). No strong M−M
+backscattering signal (expected at ∼2 Å) was observed in the
+FT-EXAFS spectra, supporting the atomic dispersion of the
+metal centers in this series of MNGR materials. This is in line
+with previous characterizations on MNGR materials prepared
+identically by us, which have been extensively studied for
+various electrocatalytic applications.40
+M−Nx moieties (one central metal coordinated with
+multiple nitrogen atoms within one plane and possibly with
+additional axial oxygen ligand(s)) were then used as model
+structures to fit the metal K-edge EXAFS spectra. These model
+structures have successfully explained many structural features
+of MNGR materials with atomically dispersed transition metal
+sites achieved via pyrolysis.38,41 The strong affinity of the metal
+for nitrogen is known to result in the spontaneous formation of
+stable M−Nx moieties at high temperature.42 The proximity of
+metal and nitrogen atoms in MNGR was also experimentally
+supported with aberration-corrected scanning transmission
+electron microscopy.41 The best-fit FT-EXAFS spectra
+obtained with such model sites showed an average
+coordination number of ∼4 for Mn-, Co-, Cu-, and ZnNGR,
+which supports the presence of in-plane M−N4 moieties
+(Table S1). A higher overall coordination number of 5−6 was
+found for FeNGR, which again includes four nitrogen atoms in
+plane and also one or two axial ligands, likely oxygen ligands
+due to the high oxophilicity of Fe (Table S1). The results
+therefore indicate that the metal cations in MNGR are
+involved in an M−N4 structure. These M−N4 moieties are
+covalently embedded in-plane in graphene and resemble the
+square-planar M−N4 structure of metal macrocycles such as
+metal-phthalocyanines (MPcs). This is supported by the
+analogous metal K-edge X-ray near-edge absorption spectros-
+copy (XANES) spectra of MNGR and MPcs (Figures 1D and
+S2D). The most prominent difference in the XANES spectra of
+MNGR and MPcs is the peak intensities of the pre-edge
+shoulder, which is the characteristic feature of the square-
+planar M−N4 structure. The negligible pre-edge shoulder in
+the XANES spectra of MNGR indicates that the M−N4
+moieties formed via pyrolysis are distorted, deviating from
+the well-defined square-planar M−N4 geometry with four
+equal M−N bond lengths and four equal N−M−N bond
+angles in MPcs.
+Assessment of the Catalytic Features of MNGRs. The
+MNGRs were subjected to reaction with aqueous NADH for
+examination of their catalytic activity by a colorimetric
+substrate, MTS (3-(4,5-dimethylthiazol-2-yl)-5-(3-carboxy-me-
+thoxyphenyl)-2-(4-sulfophenyl)-2H-tetrazolium), which could
+rapidly react with NADH within 30 s, resulting in a color
+change from yellow to purple. This assay was exploited to
+acquire the standard curve of NADH, by which the
+percentages of NADH oxidized after a reaction time of 2 h
+were quantitatively determined by a calibration curve (Figure
+S4). As shown in Figure 2A, more than 80% NADH was
+converted after 2 h under catalysis by CoNGR, CuNGR, and
+FeNGR, while MnNGR showed a moderate effect (62.8%),
+and merely 21.2% conversion was detected in the presence of
+ZnNGR. In contrast, undoped GR (prepared by ultrasonic
+exfoliation of graphite)43 showed only ca. 5% conversion of
+NADH, indicating that M−Nx moieties in MNGRs account for
+their NOX-like catalytic activity rather than the graphene plane
+structure.
+Given the high biocompatibility of iron over cobalt and
+copper dopants (Figure S5), FeNGR was selected for further
+exploration and application. To validate the catalytic activity
+assessed by the colorimetric assay, LC−MS/MS was used to
+directly detect the targeted catalytic product, NAD+. NADH
+and NAD+ standards were also included for comparison and
+showed distinct peaks at 2.45 min (m/z = 666.1 for NADH2
++)
+and 1.73 min (m/z = 664.1 for NAD+), respectively (Figure
+2B). After the reaction of NADH with FeNGR, an intense
+peak assigned to NAD+ was detected, and no peak assigned to
+NADH was observed. Notably, FeNGR catalysis in a 2 h
+reaction time resulted in a high NAD+ yield (84.4%), which is
+similar to the effect (87.7%) of protein NOX (Figure 2C). To
+examine the catalytic kinetics of FeNGR toward the oxidation
+of NADH to NAD+, we measured the time dependence of
+NADH exhaustion with a colorimetric assay under different
+initial concentrations of NADH. For comparison, the same
+experiments were carried out with NOX. As shown in Figure
+S6, the kinetic curves of NADH oxidation catalyzed by both
+FeNGR and NOX could be fitted by the Michaelis−Menten
+equation:
+v
+V
+S
+K
+S
+/(
+)
+max
+m
+=
+× [ ]
++ [ ]
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.2c12336
+J. Am. Chem. Soc. 2023, 145, 3108−3120
+3111
+
+where [S] is the concentration of the substrate, Km is the
+Michaelis constant, Vmax is the maximum rate, and v is the
+initial rate for a given [S]. The NADH oxidation catalyzed by
+FeNGR and NOX has similar kinetic constants, with Vmax
+values of 2.5 × 10−2 and 4.1× 10−3 mM·s−1 and Michaelis
+constants of ca. 3.97 and 0.35 mM, respectively (Figure S6).
+We exploited the Vmax values to calculate the average single-site
+activity of catalytic sites in FeNGR (Fe−N4) and compared it
+to the active site in NOX (tryptophan 47 domains). While the
+quantification of the number of active sites with a cyanide
+molecular probe indicated that the Fe−N4 site density on the
+top surface in this FeNGR is ca. 3.3 × 1019 sites/g,44 the
+number of catalytic domains in NOX can be assessed from its
+known molecular weight to be 1.12 × 1019 sites/g (see
+Supporting Information, Methods section: Detection of
+catalytic reaction kinetics). As a result, after normalization by
+the number of sites present during the catalytic test, the single-
+site activity of FeNGR is 2.4 mole of NAD+ per mole of Fe−N4
+sites and per second, while the single-site activity of NOX is ca.
+5.5 mole of NAD+ per mole of tryptophan 47 domains and per
+second (see Supporting Information, Methods section:
+Detection of catalytic reaction kinetics).
+With the colorimetric assay, we then benchmarked the
+NOX-like catalytic activity of FeNGR to a pool of 52 synthetic
+nanomaterials covering 39 chemical elements, 17 crystal
+phases, and 6 morphologies (Figure 2D and Table S2). For
+a snapshot view of the results, the measured absorbance values
+after 2 h of reaction time were ranked into three levels, leading
+to a visual display where high, moderate, and negligible levels
+of NADH oxidation are represented in red, yellow, and blue
+colors, respectively (Figure 2D). Interestingly, only FeNGR
+displayed dose- and time-dependent catalytic activity among all
+Figure 3. Validation of the catalytic activity of FeNGR in cells. (A) Representative confocal images of FeNGR in cells. FeNGR was labeled by
+FITC conjugated with BSA and denoted as FITC-FeNGR (green). HepG2 cells treated with 10 μg/mL FeNGR for 24 and 48 h were stained with
+Hoechst 33342 (blue) and anti-LAMP1 (red) to visualize the nuclei and lysosome in cells, respectively (scale bar, 10 μm). Enzymatic activity of
+FeNGR in HepG2 cells at (B) different concentrations and (C) different incubation times. HepG2 cells were treated with different concentrations
+of FeNGR (0−10 μg/mL) or NR (10−150 μg/mL) for 24 h (B) or with 10 μg/mL FeNGR and 150 μg/mL NR for 0−192 h. (C) The treated
+cells were collected and lysed to detect the ratios of NAD+/NADH by an Amplite Fluorimetric NAD/NADH ratio assay kit (n = 3 biologically
+independent cell samples). (D) Catalytic activity of FeNGR in different cell lines. HepG2, MCF-7, Caco-2, THP-1, HeLa, and A549 cells were
+exposed to 10 μg/mL FeNGR for 24 h. Then, the cells were collected and lysed to detect NAD+ and NADH by an Amplite Fluorimetric NAD/
+NADH ratio assay kit (n = 3 biologically independent cell samples). The NAD+/NADH ratios reported in this figure are normalized to the value
+measured for NAD+/NADH for either the control (B,D) or at time 0 (C). *p < 0.05, **p < 0.01, and ***p < 0.001 compared to control cells by a
+two-tailed Student t-test.
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.2c12336
+J. Am. Chem. Soc. 2023, 145, 3108−3120
+3112
+
+52 tested materials, indicating good catalytic selectivity.
+Moreover, FeNGR specifically catalyzed hydrogen abstraction
+from 1,4-dihydropyridine-3-carboxamide and had little effect
+on hydrogens in the benzene, quinoline, pyran, and pyrimidine
+rings (Table S3). These results suggest that FeNGR is a NOX-
+like nanozyme, displaying the prominent features of enzymes,45
+including high catalytic efficiency under physiological con-
+ditions, catalytic specificity, and substrate selectivity.
+Stability of FeNGR in NADH Oxidation. In biological
+systems, FeNGR may cross diverse biological contexts in
+tissues or subcellular compartments, such as blood vessels,
+gastric intestine, and phagolysosomes, to reach the destinations
+for interaction with NADH. We therefore examined the
+stability of FeNGR in four representative harsh bio-contexts,
+including SGF, serum, SIF, and PSF. FeNGR or NOX
+immersed in these fluids for 2 h at 37 °C was subjected to a
+catalytic activity test and compared with the activity of
+untreated materials. Notably, FeNGR displayed high stability
+in all these media, maintaining >70% catalytic activity (Figure
+2E). The strongest decrease in activity was after immersion in
+SGF (pH 1.2), corresponding to the lowest pH of all four
+simulated bio-fluids, and may be due to the leaching of Fe
+cations from FeNGR in a strongly acidic medium. In contrast,
+NOX was more sensitive to digestive acidic fluids, retaining
+only 9.04 and 1.7% activity after exposure to PSF and SGF,
+respectively, which could be attributed to the acidic pH effect.
+Moreover, compared to NOX, FeNGR had stable catalytic
+activity (>75%) over a wide range of temperatures at 4−90 °C,
+ion strength at 0.5−3.0 M, or pH at 4−8.
+Figure 4. Effects of FeNGR in ETC-deficient cells. (A) Scheme showing key changes in metabolite levels in ETC-deficient cells. (B) Intracellular
+NAD+/NADH ratio, (C) glucose uptake, (D) dihydroxyacetone phosphate accumulation, and (E) ATP generation in ETC-deficient HepG2 cells
+with or without FeNGR treatment. The ETC-deficient HepG2 cell model was established by 2 μM antimycin A treatment, denoted as antimycin A
++ in (B−E). Antimycin Aindicates normal HepG2 cells. Parent and ETC-deficient cells were incubated with 10 μg/mL FeNGR for 72 h before
+the measurement of the NAD+/NADH ratio and dihydroxyacetone phosphate by LC−MS/MS as well as ATP production by the Celltiter Glo
+luminescent cell viability assay. Data are presented as the mean ± S.D. (n = 3 biologically independent cell samples). *p < 0.05, **p < 0.01, and
+***p < 0.001 compared to ETC-deficient cells by a two-tailed Student t-test.
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.2c12336
+J. Am. Chem. Soc. 2023, 145, 3108−3120
+3113
+
+In addition, we examined the durability of FeNGR by
+separating it from the reaction system after 2 h and re-
+introducing it into a fresh reaction solution for catalysis. This
+recycling procedure was repeated several times. As shown in
+Figure 2F, the catalytic activity of FeNGR slightly decreased
+from the first to the second cycle and preserved >80% of its
+initial catalytic activity after four cycles, whereas natural NOX
+lost 81.2% activity on the second cycle and was completely
+inactivated on the third cycle. These results indicate that
+FeNGR is more robust to degradation by biological media and
+displays superior durability, which may enable a long-lasting
+elevation of NAD+ levels in cells.
+Catalytic Elevation of NAD+ in Cells. To increase cellular
+NAD+ levels by FeNGR catalysis, the impact of FeNGR on cell
+growth was first examined to determine a safe dose range. Cell
+viability tests indicated that FeNGR has high biocompatibility
+over a broad concentration range (0−200 μg/mL) (Figure
+S7). Since the cytoplasm is an important reservoir of NADH,
+we examined whether FeNGR could be internalized into this
+cellular compartment. Fluorescein isothiocyanate-labeled
+FeNGR (FITC-FeNGR) was prepared for confocal micros-
+copy imaging of cellular distributions. FeNGR showed a time-
+dependent distribution pattern, including association with
+cytoplasmic membranes at 0−6 h, lysosomal internalization at
+6−24 h, and release into the cytoplasm after 24 h (Figures 3A
+and S8). The coincident settlement of NADH and FeNGR in
+the cytoplasm provided an essential prerequisite for the
+catalytic oxidation of NADH into NAD+ from the perspective
+of spatial distributions. A high NAD+ yield was therefore
+expected in cells after incubation with FeNGR for more than
+24 h. To examine this, we assessed the ratios of NAD+ to
+NADH in HepG2 cells exposed to FeNGR. As shown in
+Figure 3B,C, FeNGR displayed time- and dose-dependent
+catalytic effects in elevating the NAD+/NADH ratios, which
+reached a maximum in cells after 36 h of incubation with 10
+μg/mL FeNGR nanosheets, decreasing slowly afterward.
+Notably, at the same mass concentration (10 μg/mL),
+nicotinamide riboside (NR), a conventional precursor for
+NAD+ supplementation, had no effect on NAD+ production.
+Compared to the effect with NR at a concentration of 150 μg/
+mL (i.e., a 15-fold higher dose compared to FeNGR), FeNGR
+contributed to a longer supplementation of NAD+ with 1.8-
+fold higher total NAD+ production in HepG2 cells for 8 days’
+incubation time, whereas the effect of NR rapidly dropped by
+50% in 24 h (Figure 3C). In addition to the investigation with
+hepatic cells, we extensively examined the catalytic effects of
+FeNGR in more cell lines, including intestinal (Caco-2),
+monocyte (THP-1), breast (MCF-7), cervical (HeLa), and
+pulmonary (A549) cells. As shown in Figure 3D, cellular
+internalization of FeNGR significantly elevated the NAD+/
+NADH ratios in five tested cell lines, except for A549 cells.
+Notably, the NAD+/NADH ratios increased 4.2-fold in THP-1
+cells. This is not surprising because the primed THP-1 cells
+have macrophage-like features and often take in more
+nanomaterials than other cells.46 All these results demonstrate
+that FeNGR efficiently catalyzes the conversion of NADH into
+NAD+ in a complex intracellular environment.
+Assessment of the Biological Function of FeNGR in
+ETC-Deficient Cells. Given that the conversion of NADH
+into NAD+ is determined by the mitochondrial ETC in
+mammalian cells, we further examined the biological function
+of FeNGR in ETC-deficient cells which are often associated
+with metabolic diseases (e.g., adiposity and diabetes)47,48 and
+are featured by insufficient supplementation of NAD+. The
+mitochondrial ETC dysfunction model was established in
+HepG2 cells by antimycin A treatment to inhibit mitochondrial
+complex III. Since NAD+ is a critical cofactor in oxidation-
+phosphorylation metabolic pathways, failure of NAD+
+supplementation may result in the decline of glucose uptake,
+ATP deficiency, or accumulation of intermediates (e.g.,
+dihydroxyacetone phosphate, glyceraldehyde 3-phosphate, or
+pyruvic acid) in the metabolic network (Figure 4A).
+As shown in Figure 4B, compared to parent HepG2 cells, the
+ETC-dysfunctional cells displayed a 55.5% decrease in the
+NAD+:NADH ratio. Accordingly, glucose uptake and ATP
+production reduced by 60.9 and 42.0%, respectively (compare
+the first and third columns in Figure 4C,E). In contrast,
+dihydroxyacetone phosphate, an important intermediate that is
+rapidly exhausted in the natural glycolysis pathway, showed a
+35.5% increase (compare the first and third columns in Figure
+4D). These data confirm the successful construction of ETC-
+deficient cell models. Exposure of such cells to FeNGR
+significantly elevated the relative ratio of NAD+/NADH from
+0.4 to 0.9 (compare the third and fourth columns in Figure
+4B). Consequently, there were 88.0, 27.0, and 49.1%
+increments of glucose uptake, dihydroxyacetone phosphate
+consumption, and ATP production, respectively, in ETC-
+deficient cells after FeNGR treatment (compare the third and
+fourth columns in Figure 4C−E). Interestingly, although the
+uptake of FeNGR in normal HepG2 cells induced a significant
+increase in the NAD+/NADH ratio, it had negligible effects on
+the glucose, dihydroxyacetone phosphate, and ATP levels.
+These results demonstrate that FeNGR helps recovering the
+metabolism of ETC-deficient cells by the catalytic elevation of
+NAD+.
+Catalytic Elevation of NAD+ in Mice with Metabolic
+Diseases. In animals, the liver is the core organ to metabolize
+lipid, carbohydrate, and protein. Defective hepatic metabolism
+has been found to be responsible for severe diseases such as
+adiposity and diabetes. As a proof of concept for the
+biomedical application of FeNGR, we explored the possibility
+of elevating NAD+ levels in the livers of mice subjected to a
+HFD. First, we examined whether FeNGR could target this
+organ. Radio- and fluorophore-labeled FeNGR (125I-FeNGR
+and FITC-FeNGR) were prepared to examine the biodis-
+tribution by single photon emission computed tomography−
+computed tomography (SPECT−CT) or confocal microscopy.
+More than 98.8% labeled FeNGR was stably present in a
+representative biological medium, serum (Figure S9). After
+intravenous injection of 125I-FeNGR dispersed in PBS, a large
+portion of 125I-FeNGR rapidly targeted the liver within 6 h and
+was retained there for 7 days (Figure 5A). Although corona
+formation on FeNGR surfaces (Table S6) may affect the
+catalytic activity, FeNGR maintained >70% activity in serum
+over 9 days’ exposure (Figure S10).
+Confocal microscopy further revealed the distribution details
+in liver tissue sections. As shown in Figure 5B, the uptake of
+FeNGR was mainly by hepatocytes and Kupffer cells, both of
+which play important roles in hepatic metabolic processes. The
+long hepatic bio-persistence and strong cellular internalization
+capability of FeNGR offered opportunities for the catalytic
+elevation of NAD+ in the liver. Meanwhile, the H&E staining
+images of tissues as well as blood test results showed negligible
+detrimental effects (Figure S11 and Table S4).
+We then examined the effects of FeNGR injected to HFD-
+fed mice via tail vein. Animals that received a chow diet (CD)
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.2c12336
+J. Am. Chem. Soc. 2023, 145, 3108−3120
+3114
+
+were also included for comparison. Significant glucose
+tolerance was detected in HFD mice after 12 weeks of feeding.
+Then, the HFD mice were subjected to intravenous injection
+of FeNGR, denoted as the FeNGR-HFD group. The dose−
+response curve showed that FeNGR at ≥10 mg/kg could
+greatly promote the glucose metabolism rate (Figure S12).
+Therefore, the HFD mice were treated four times with FeNGR
+at this dose in each 7 day interval. The detailed animal
+treatment procedure is illustrated in Figure 5C. As shown in
+Figure 5D, intravenous injection of FeNGR in HFD mice
+greatly mitigated the decline in NAD+/NADH triggered by
+HFD, with a 4.1-fold higher NAD+/NADH ratio after 4 weeks
+compared to untreated HFD mice, displaying a NAD+/NADH
+ratio similar to that of CD mice. While HFD feeding resulted
+in a significant decline in NAD+/NADH ratios in mouse liver,
+lipid metabolism was affected accordingly, as evidenced by 2-
+fold higher serum triglycerides, compared to the results in CD
+mice (compare diagonal-line-filled and gray columns at week 3,
+in Figure 5E).
+Triglyceride is mainly metabolized in liver by lipase into
+glycerin and fatty acids. While glycerin could be further
+converted into dihydroxyacetone phosphate by glycerol kinase
+(GK) and glycerophosphate dehydrogenase (GPDH) with the
+assistance of NAD+, fatty acids were metabolized by the TCA
+cycle along with the consumption of NAD+ (Figure S13).
+Supposedly, elevation of hepatic NAD+/NADH by FeNGR
+could enhance the metabolic rate of triglyceride. Accordingly,
+the FeNGR injection contributed to a significant decrease
+(41.4%) in triglyceride levels at 3 weeks as well as relieving
+insulin resistance (Figure S14). These data indicate that the
+administration of FeNGR may mitigate metabolic anomalies in
+HFD mice.
+To validate this, we exploited non-target metabolomics to
+screen the levels of metabolites in serum samples from CD,
+HFD, and FeNGR-HFD mice. LC−MS/MS analysis identified
+1295 confident features in all three groups. The metabolite
+features were subjected to a clustering analysis for calculation
+of the Euclidean distance (ED) between the FeNGR-HFD and
+CD groups and the HFD and CD groups. Essentially, ED is a
+suitable index to assess the overall effect of FeNGR on HFD
+mice, with a shorter ED indicating fewer metabolic anomalies.
+As shown in Table S5, administration of FeNGR to HFD mice
+resulted in a 2.7-fold decrease in the ED value compared to
+HFD mice. Principal component analysis (PCA) was also
+exploited to assess the differences in metabolite expression
+among the CD (green square), HFD (red triangle), and
+FeNGR-HFD (blue circle) groups (Figure 5F). The maximum
+number of PCs was set to 26 for the analysis. As shown in
+Figure 5F, the cumulative contribution of the first two
+principal components to the total variance was 89.5%. The
+PCA plot showed that the HFD group was clearly distinct from
+the CD group. Interestingly, after FeNGR treatment, the
+metabolite levels of HFD mice were normal in six out of eight
+HFD mice, as revealed by their distribution in the green region
+of the CD group. These results suggest that FeNGR
+administration could relieve the metabolic disorder of HFD-
+fed mice.
+■DISCUSSION
+The elevation of the NAD+ level has considerable benefits in
+regulating the metabolic flux of mammals. To supplement
+NAD+ in mammals, biological researcher has raised two
+approaches, namely, the natural synthesis and catalytic
+Figure 5. Effect of FeNGR in HFD mice. (A) SPECT/CT imaging of
+125I-FeNGR in mice and (B) confocal imaging of FITC-FeNGR in
+liver sections. Mice were exposed to 10 mg/kg 125I-FeNGR or FITC-
+FeNGR by tail vein injection. 125I-FeNGR in mice was visualized by
+the SPECT−CT (IVIS spectrum, MILabs, the Netherlands) for 9
+days. Mice that received FITC-FeNGR injection were sacrificed at 24
+h to collect livers for fixation in formaldehyde solution and
+preparation of liver sections. The hepatocytes and Kupffer cells in
+liver sections were stained with Cy3-labeled albumin and F4/80
+antibodies (red), respectively. Cell nuclei were stained with DAPI
+(blue). The stained sections were visualized by confocal microscopy
+imaging. (C) Schematic image of the animal treatment procedure.
+(D) Hepatic NAD+/NADH ratios (n = 6 independent animal
+samples) and (E) blood triglyceride levels in treated and untreated
+mice (n = 6 independent animal samples). (F) PCA of the serum
+metabolites from CD (n = 9 independent animal samples), HFD (n =
+9 independent animal samples), and FeNGR-HFD mice (n = 8
+independent animal samples). Animals that received an intravenous
+injection of PBS or 10 mg/kg FeNGR were sacrificed on the 28th day
+to collect blood and livers for metabolite analysis by LC−MS/MS. *p
+< 0.05, **p < 0.01, and ***p < 0.001 compared to HFD mice by a
+two-tailed Student t-test.
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.2c12336
+J. Am. Chem. Soc. 2023, 145, 3108−3120
+3115
+
+conversion. According to the synthesis pathway of NAD+, a
+few intermediates including NAM,49 NA,50 and NR51 have
+been exploited to elevate NAD+ levels bypassing the synthesis
+of adenine from the main building block, tryptophan. Besides,
+Mootha’s group attempted to further improve the supplement
+efficiency by engineering protein enzymes, including combined
+enzymes consisting of bacterial lactate oxidase (LOX) and
+catalase (CAT) and bacterial water-forming NADH oxidase
+(NOX),52,53 for the catalytical elevation of NAD+ in cells. To
+the best of our knowledge, chemical approaches were rarely
+developed to increase NAD+ levels. Given the shortcomings of
+protein enzymes, such as poor cellular internalizations, low
+stability in harsh biological fluids, and high cost to scale up, we
+engineered a synthetic material to mimic the activity of
+bacterial NOX and elevate NAD+ in mammals.
+Biosafety is a paramount issue in terms of the clinical
+translation of nanomedicine and is often controversial.54,55
+Recent studies indicate that nanomaterials could be designed
+by tuning their physicochemical properties to acquire desired
+biological effects.56−58 Although Co, Cu-, and Fe-NGRs
+showed similar NOX-like activity, FeNGR was selected for
+further exploration in cells and animals because iron is
+abundantly expressed in biological systems and relatively safe
+compared to the other two metals. FeNGR was coated with
+lipidated polyethylene glycol to improve dispersion stability.
+The biodistribution and clearance of FeNGR in mice were
+examined by SPECT/CT after radiolabeling. Consistent with a
+literature report,59 the intravenously injected FeNGR rapidly
+targeted the liver in 6 h, and most of the FeNGR was
+eliminated in 9 days. The biological fate of nanomaterials is
+largely determined by their morphology and surface corona.60
+For instance, the comparison of MoS2 biodistribution in
+transgenic mice with fibrinogen (Fg), apolipoprotein E
+(ApoE), immunoglobulin M (IgM), or complement 3 (C3)
+deficiency provides convincing support that ApoE binding on
+MoS2 nanosheets dictates their accumulation in liver sinusoid
+and splenic red pulp.61,62 In this study, 12 apolipoproteins
+were identified in the 320 corona proteins of FeNGR (Table
+S6). Given that FeNGR has a similar planar structure with
+MoS2 nanosheets, we speculated that the excellent liver
+targeting of FeNGR could be attributed to the constituent of
+apolipoproteins in surface corona. There might be two
+mechanisms dictating the clearance of FeNGR in vivo. On
+the one hand, the intravenously injected graphene sheets were
+reported to be eliminated by both fecal and urinary
+excretions;59 on the other hand, enzymes including peroxides
+were demonstrated to catalyze the biodegradation of graphene
+derivatives.63,64 Moreover, we examined the possible patho-
+genic changes in tissue sections and biochemical indicators in
+blood from mice receiving intravenous injection of FeNGR.
+Although the numbers of white blood cells and lymphocytes
+showed slight increases on the first day, they all recovered on
+the seventh day. H&E staining images of heat, liver, spleen,
+kidney, and lung showed no pathogenic changes. To further
+minimize the risks of detrimental effects in humans from
+exposure and facilitate the clinical translation of MNGR, the
+candidate materials should be engineered in a colloidal
+dispersion state with small-sized individual graphene sheets
+and hydrophilic groups on surfaces.
+Two mechanisms, i.e., coupled electrochemical reaction
+(CER) and inner-sphere reaction (ISR), have been raised to
+explain the oxidation reactions catalyzed by MNGRs.65,66 The
+CER mechanism could be interpreted as two coupled
+electrochemical reactions, one for O2 electro-reduction and
+the other for the substrate electrooxidation, the coupled half-
+reactions working formally as a short-circuited electrochemical
+cell. In this view, a better O2 reduction catalyst then results in a
+higher driving force for the electrooxidation of the organic
+molecule. In contrast, Bates et al. proposed that the aerobic
+oxidation of the substrate on MNGR materials is not the sum
+of two independent electrochemical half-reactions but rather a
+direct inner-sphere reaction between O2 and the organic
+molecule.67 In this mechanism, O2 and the organic molecules
+co-adsorb on the metal center of the MNGR surface. As a
+result, the best catalyst for O2 reduction will not necessarily be
+the most active one for aerobic oxidation of an organic
+molecule. Nevertheless, whether the CER or ISR mechanism
+dictates the NADH oxidation, the MNGR catalyst must have
+the ability to bind and activate O2. As such, the Co-, Cu-, and
+FeNGR types of materials are known to be far more active
+toward O2 electroreduction than ZnNGR and MnNGR,66 and
+thus, their higher activity and selectivity in the present study
+toward NADH oxidation can be rationally explained according
+to either of these mechanisms.
+While the activity for the oxidation of NADH into NAD+
+normalized per active site is ca. 2 times lower for the present
+FeNGR than for NOX, the number of active sites per mass of
+catalyst is ca. 3 times higher for the present FeNGR than for
+NOX, resulting in comparable effects at the same dose. In the
+future, optimized syntheses can improve the activity of FeNGR
+via increased site density, improved site-specific activity, and
+tuned catalyst morphology. A recent work has shown that
+FeNGR materials with a site density of 1.9 × 1020 sites/gram
+can be prepared, ca. 6 times higher than in the present
+FeNGR.68 Although Fe2O3 has been observed operando from
+FeNGR degradation in proton exchange membrane fuel cells,
+Fe2O3 is poorly reactive toward NADH oxidation (Figure 2D),
+indicating that FeN4 is the true active site. The site-specific
+activity of FeNGR materials might also be improved by the
+selective formation of Fe−Nx sites with a specific oxidation
+state and spin state (while the present FeNGR has two main
+Fe−Nx species, differing in both their Fe oxidation and spin
+states) or by co-doping the carbon matrix with nitrogen and
+another light element, such as sulfur.69 Finally, the catalyst
+morphology may also play an important role for in vivo
+applications, including effects on the rate of cellular internal-
+ization of FeNGR and its elimination from the body. While
+commercial ZIF-8 was used to prepare the present FeNGR, the
+synthesis of ZIF-8 with a controlled crystal size is well
+established (from 30 to 1600 nm) and was shown to translate
+into precise control of the size of FeNGR particles after
+pyrolysis.70,71
+■CONCLUSIONS
+In summary, synthetic CuNGR, FeNGR, and CoNGR
+nanosheets showed significant NOX-like activity. Compared
+to natural NOX, FeNGR is more robust to four representative
+biological fluids. FeNGR could be internalized into the
+cytoplasm to elevate NAD+/NADH ratios, contributing to
+increments of glucose uptake and ATP production, in ETC-
+deficient cells. Intravenously injected FeNGR could target
+livers internalized by hepatic and Kupffer cells and enabled 4.1-
+fold increases in the NAD+/NADH ratio in the liver tissue of
+HFD-fed mice. The serum metabolite profiles demonstrated a
+dramatic relief of metabolic disorders in HFD-fed mice. Taken
+together, the discovery of MNGR as a NOX-like catalyst
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.2c12336
+J. Am. Chem. Soc. 2023, 145, 3108−3120
+3116
+
+provides a promising approach to regulate the metabolic flux
+by the rational design of synthetic nanomaterials. FeNGR and
+other MNGR could potentially be exploited to treat some
+metabolic disorders, such as diabetes, fatty liver, and
+hyperlipemia.
+■ASSOCIATED CONTENT
+*
+sı Supporting Information
+The Supporting Information is available free of charge at
+https://pubs.acs.org/doi/10.1021/jacs.2c12336.
+Experimental procedures, statistical method, Raman,
+AFM, EXAFS, XANES, K-edge FT-EXAFS spectra,
+kinetics of reaction, catalytic activity with different
+substrates, cell viability histological H&E staining
+images, glucose sensitivity, insulin sensitivity, and
+blood test data (PDF)
+■AUTHOR INFORMATION
+Corresponding Authors
+Frédéric Jaouen −ICGM, CNRS, ENSCM, Univ.
+Montpellier, Montpellier 34293, France;
+orcid.org/0000-
+0001-9836-3261; Email: frederic.jaouen@umontpellier.fr
+Ruibin Li −State Key Laboratory of Radiation Medicine and
+Protection, School for Radiological and Interdisciplinary
+Sciences (RAD-X), Collaborative Innovation Center of
+Radiological Medicine of Jiangsu Higher Education
+Institutions, Suzhou Medical College, Soochow University,
+Suzhou 215123, China;
+orcid.org/0000-0001-6471-
+7658; Email: liruibin@suda.edu.cn
+Authors
+Xi Liu −State Key Laboratory of Radiation Medicine and
+Protection, School for Radiological and Interdisciplinary
+Sciences (RAD-X), Collaborative Innovation Center of
+Radiological Medicine of Jiangsu Higher Education
+Institutions, Suzhou Medical College, Soochow University,
+Suzhou 215123, China
+Jingkun Li −School of Chemistry and Molecular Engineering,
+East China University of Science and Technology, Shanghai
+200237, China
+Andrea Zitolo −L’orme des Merisiers, Synchrotron SOLEIL,
+Gif-sur-Yvette 91192, France;
+orcid.org/0000-0002-
+2187-6699
+Meng Gao −State Key Laboratory of Radiation Medicine and
+Protection, School for Radiological and Interdisciplinary
+Sciences (RAD-X), Collaborative Innovation Center of
+Radiological Medicine of Jiangsu Higher Education
+Institutions, Suzhou Medical College, Soochow University,
+Suzhou 215123, China;
+orcid.org/0000-0003-2815-
+7002
+Jun Jiang −State Key Laboratory of Radiation Medicine and
+Protection, School for Radiological and Interdisciplinary
+Sciences (RAD-X), Collaborative Innovation Center of
+Radiological Medicine of Jiangsu Higher Education
+Institutions, Suzhou Medical College, Soochow University,
+Suzhou 215123, China
+Xiangtian Geng −School of Public Health, Suzhou Medical
+College, Soochow University, Suzhou 215123, China
+Qianqian Xie −State Key Laboratory of Radiation Medicine
+and Protection, School for Radiological and Interdisciplinary
+Sciences (RAD-X), Collaborative Innovation Center of
+Radiological Medicine of Jiangsu Higher Education
+Institutions, Suzhou Medical College, Soochow University,
+Suzhou 215123, China
+Di Wu −State Key Laboratory of Radiation Medicine and
+Protection, School for Radiological and Interdisciplinary
+Sciences (RAD-X), Collaborative Innovation Center of
+Radiological Medicine of Jiangsu Higher Education
+Institutions, Suzhou Medical College, Soochow University,
+Suzhou 215123, China
+Huizhen Zheng −State Key Laboratory of Radiation
+Medicine and Protection, School for Radiological and
+Interdisciplinary Sciences (RAD-X), Collaborative Innovation
+Center of Radiological Medicine of Jiangsu Higher Education
+Institutions, Suzhou Medical College, Soochow University,
+Suzhou 215123, China;
+orcid.org/0000-0001-6375-
+0122
+Xiaoming Cai −School of Public Health, Suzhou Medical
+College, Soochow University, Suzhou 215123, China
+Jianmei Lu −College of Chemistry, Chemical Engineering and
+Materials Science, Soochow University, Suzhou 215123,
+China;
+orcid.org/0000-0003-2451-7154
+Complete contact information is available at:
+https://pubs.acs.org/10.1021/jacs.2c12336
+Notes
+The authors declare no competing financial interest.
+■ACKNOWLEDGMENTS
+This work was supported by grants from the National Key
+R&D Program of China, Ministry of Science and Technology
+of China (2020YFA0710700, 2022YFE0124000), the National
+Natural Science Foundation of China (21976126), the Natural
+Science Foundation of Jiangsu Province (BK20211545), and
+the Project of National Center for International Research on
+Intelligent Nano-Materials and Detection Technology in
+Environmental Protection, Soochow University (No.
+SDGH2202). We acknowledge Synchrotron SOLEIL (Gif-
+sur Yvette, France) for provision of synchrotron radiation
+facilities at beamline SAMBA (proposal number 20180635).
+■REFERENCES
+(1) Zapata-Perez, R.; Wanders, R. J. A.; van Karnebeek, C. D. M.;
+Houtkooper, R. H. NAD+ homeostasis in human health and disease.
+EMBO Mol. Med. 2021, 1, No. e13943.
+(2) Kim, W.; Deik, A.; Gonzalez, C.; Elena Gonzalez, M.; Fu, F.;
+Ferrari, M.; Churchhouse, C. L.; Florez, J. C.; Jacobs, S. B. R.; Clish,
+C. B.; Rhee, E. P. Polyunsaturated fatty acid desaturation is a
+mechanism for glycolytic NAD+ recycling. Cell Metab. 2019, 29, 856−
+870.
+(3) Palzer, L.; Bader, J. J.; Angel, F.; Witzel, M.; Blaser, S.; McNeil,
+A.; Wandersee, M. K.; Leu, N. A.; Lengner, C. J.; Cho, C. E.; Welch,
+K. D.; Kirkland, J. B.; Meyer, R. G.; Meyer-Ficca, M. L. Alpha-amino-
+beta-carboxy-muconate-semialdehyde decarboxylase controls dietary
+niacin requirements for NAD+ synthesis. Cell Rep. 2018, 25, 1359−
+1370.
+(4) Roichman, A.; Elhanati, S.; Aon, M. A.; Abramovich, I.; Di
+Francesco, A.; Shahar, Y.; Avivi, M. Y.; Shurgi, M.; Rubinstein, A.;
+Wiesner, Y.; Shuchami, A.; Petrover, Z.; Lebenthal-Loinger, I.; Yaron,
+O.; Lyashkov, A.; Ubaida-Mohien, C.; Kanfi, Y.; Lerrer, B.;
+Fernandez-Marcos, P. J.; Serrano, M.; Gottlieb, E.; de Cabo, R.;
+Cohen, H. Y. Restoration of energy homeostasis by SIRT6 extends
+healthy lifespan. Nat. Commun. 2021, 12, 3208.
+(5) Ralto, K. M.; Rhee, E. P.; Parikh, S. M. NAD+ homeostasis in
+renal health and disease. Nat. Rev. Nephrol. 2020, 16, 99−111.
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.2c12336
+J. Am. Chem. Soc. 2023, 145, 3108−3120
+3117
+
+(6) Zhang, H.; Ryu, D.; Wu, Y.; Gariani, K.; Wang, X.; Luan, P.;
+D’Amico, D.; Ropelle, E. R.; Lutolf, M. P.; Aebersold, R.; Schoonjans,
+K.; Menzies, K. J.; Auwerx, J. NAD+ repletion improves mitochondrial
+and stem cell function and enhances life span in mice. Science 2016,
+352, 1436−1443.
+(7) Samuel, V. T.; Shulman, G. I. Nonalcoholic fatty liver disease as
+a nexus of metabolic and hepatic diseases. Cell Metab. 2018, 27, 22−
+41.
+(8) Hand, G. A.; Blair, S. N. Energy flux and its role in obesity and
+metabolic disease. Endocrinology 2014, 10, 131−135.
+(9) Kapogiannis, D.; Mattson, M. P. Disrupted energy metabolism
+and neuronal circuit dysfunction in cognitive impairment and
+Alzheimer’s disease. Lancet Neurol. 2011, 10, 187−198.
+(10) DeBerardinis, R. J.; Thompson, C. B. Cellular metabolism and
+disease: What do metabolic outliers teach us? Cell 2012, 148, 1132−
+1144.
+(11) Schwartz, J.-M.; Otokuni, H.; Akutsu, T.; Nacher, J. C.
+Probabilistic controllability approach to metabolic fluxes in normal
+and cancer tissues. Nat. Commun. 2019, 10, 2725.
+(12) Titov, D. V.; Cracan, V.; Goodman, R. P.; Peng, J.; Grabarek,
+Z.; Mootha, V. K. Complementation of mitochondrial electron
+transport chain by manipulation of the NAD(+)/NADH ratio. Science
+2016, 352, 231−235.
+(13) Canto, C.; Houtkooper, R. H.; Pirinen, E.; Youn, D. Y.;
+Oosterveer, M. H.; Cen, Y.; Fernandez-Marcos, P. J.; Yamamoto, H.;
+Andreux, P. A.; Cettour-Rose, P.; Gademann, K.; Rinsch, C.;
+Schoonjans, K.; Sauve, A. A.; Auwerx, J. The NAD+ precursor
+nicotinamide riboside enhances oxidative metabolism and protects
+against high-fat diet-induced obesity. Cell Metab. 2012, 15, 838−847.
+(14) Cameron, A. M.; Castoldi, A.; Sanin, D. E.; Flachsmann, L. J.;
+Field, C. S.; Puleston, D. J.; Kyle, R. L.; Patterson, A. E.; Haessler, F.;
+Buescher, J. M.; Kelly, B.; Pearce, E. L.; Pearce, E. J. Inflammatory
+macrophage dependence on NAD(+) salvage is a consequence of
+reactive oxygen species-mediated DNA damage. Nat. Immunol. 2019,
+20, 420−432.
+(15) Nacarelli, T.; Lau, L.; Fukumoto, T.; Zundell, J.; Fatkhutdinov,
+N.; Wu, S.; Aird, K. M.; Iwasaki, O.; Kossenkov, A. V.; Schultz, D.;
+Noma, K.-I.; Baur, J. A.; Schug, Z.; Tang, H.-Y.; Speicher, D. W.;
+David, G.; Zhang, R. NAD+ metabolism governs the proinflammatory
+senescence-associated secretome. Nat. Cell Biol. 2019, 21, 397−407.
+(16) Covarrubias, A. J.; Kale, A.; Perrone, R.; Lopez-Dominguez, J.
+A.; Pisco, A. O.; Kasler, H. G.; Schmidt, M. S.; Heckenbach, I.; Kwok,
+R.; Wiley, C. D.; Wong, H.-S.; Gibbs, E.; Iyer, S. S.; Basisty, N.; Wu,
+Q.; Kim, I.-J.; Silva, E.; Vitangcol, K.; Shin, K.-O.; Lee, Y.-M.; Riley,
+R.; Ben-Sahra, I.; Ott, M.; Schilling, B.; Scheibye-Knudsen, M.;
+Ishihara, K.; Quake, S. R.; Newman, J.; Brenner, C.; Campisi, J.;
+Verdin, E. Senescent cells promote tissue NAD+ decline during ageing
+via the activation of CD38(+) macrophages. Nat. Metab. 2020, 2,
+1265−1283.
+(17) Mehr, A. P.; Tran, M. T.; Ralto, K. M.; Leaf, D. E.; Washco, V.;
+Messmer, J.; Lerner, A.; Kher, A.; Kim, S. H.; Khoury, C. C.; Herzig,
+S. J.; Trovato, M. E.; Simon-Tillaux, N.; Lynch, M. R.; Thadhani, R. I.;
+Clish, C. B.; Khabbaz, K. R.; Rhee, E. P.; Waikar, S. S.; Berg, A. H.;
+Parikh, S. M. D. novo NAD+ biosynthetic impairment in acute kidney
+injury in humans. Nat. Med. 2018, 24, 1351−1359.
+(18) Cardoso, D.; Muchir, A. Need for NAD+: Focus on striated
+muscle laminopathies. Cell 2020, 9, 2248.
+(19) Yoshino, J.; Baur, J. A.; Imai, S.-I. NAD+ intermediates: the
+biology and therapeutic potential of NMN and NR. Cell Metab. 2018,
+27, 513−528.
+(20) Li, F.-L.; Shi, Y.; Zhang, J.-X.; Gao, J.; Zhang, Y.-W. Cloning,
+expression, characterization and homology modeling of a novel water-
+forming NADH oxidase from Streptococcus mutans ATCC 25175.
+Int. J. Biol. Macromol. 2018, 113, 1073−1079.
+(21) Gao, M.; Wang, Z.; Zheng, H.; Wang, L.; Xu, S.; Liu, X.; Li, W.;
+Pan, Y.; Wang, W.; Cai, X.; Wu, R.’.; Gao, X.; Li, R. Two-dimensional
+Tin selenide (SnSe) nanosheets capable of mimicking key
+dehydrogenases in cellular metabolism. Angew. Chem., Int. Ed. 2020,
+59, 3618−3623.
+(22) Wu, D.; Li, J.; Xu, S.; Xie, Q.; Pan, Y.; Liu, X.; Ma, R.; Zheng,
+H.; Gao, M.; Wang, W.; Li, J.; Cai, X.; Jaouen, F.; Li, R. Engineering
+Fe−N doped graphene to mimic biological functions of NADPH
+oxidase in cells. J. Am. Chem. Soc. 2020, 142, 19602−19610.
+(23) Liu, W.; Zhang, L.; Liu, X.; Liu, X.; Yang, X.; Miao, S.; Wang,
+W.; Wang, A.; Zhang, T. Discriminating catalytically active FeNx
+species of atomically dispersed Fe-N-C catalyst for selective oxidation
+of the C-H bond. J. Am. Chem. Soc. 2017, 139, 10790−10798.
+(24) Xie, J.; Kammert, J. D.; Kaylor, N.; Zheng, J. W.; Choi, E.;
+Pham, H. N.; Sang, X.; Stavitski, E.; Attenkofer, K.; Unocic, R. R.;
+Datye, A. K.; Davis, R. J. Atomically dispersed Co and Cu on N-doped
+carbon for reactions involving C-H activation. ACS Catal. 2018, 8,
+3875−3884.
+(25) Deng, D.; Chen, X.; Yu, L.; Wu, X.; Liu, Q.; Liu, Y.; Yang, H.;
+Tian, H.; Hu, Y.; Du, P.; Si, R.; Wang, J.; Cui, X.; Li, H.; Xiao, J.; Xu,
+T.; Deng, J.; Yang, F.; Duchesne, P. N.; Zhang, P.; Zhou, J.; Sun, L.;
+Li, J.; Pan, X.; Bao, X. A single iron site confined in a graphene matrix
+for the catalytic oxidation of benzene at room temperature. Sci. Adv.
+2015, 1, No. e1500462.
+(26) Parton, R. F.; Neys, P. E.; Jacobs, P. A.; Sosa, R. C.; Rouxhet, P.
+G. Iron-phthalocyanine immobilized on activated carbon black: A
+selective catalyst for alkane oxidation. J. Catal. 1996, 164, 341−346.
+(27) Pereira Monteiro, C. J.; Ferreira Faustino, M. A.; Pinho
+Morgado Silva Neves, M. d. G.; Quialheiro Simoes, M. M.; Sanjust, E.
+Metallophthalocyanines as catalysts in aerobic oxidation. Catalysts
+2021, 11, 122.
+(28) Wang, D.; Jana, D.; Zhao, Y. Metal−organic framework derived
+nanozymes in biomedicine. Acc. Chem. Res. 2020, 53, 1389−1400.
+(29) Wu, J.; Wang, X.; Wang, Q.; Lou, Z.; Li, S.; Zhu, Y.; Qin, L.;
+Wei, H. Nanomaterials with enzyme-like characteristics (nanozymes):
+next-generation artificial enzymes (II). Chem. Soc. Rev. 2019, 48,
+1004−1076.
+(30) Huang, L.; Chen, J.; Gan, L.; Wang, J.; Dong, S. Single-atom
+nanozymes. Sci. Adv. 2019, 5, No. eaav5490.
+(31) Jiao, L.; Kang, Y.; Chen, Y.; Wu, N.; Wu, Y.; Xu, W.; Wei, X.;
+Wang, H.; Gu, W.; Zheng, L.; Song, W.; Zhu, C. Unsymmetrically
+coordinated single Fe-N3S1 sites mimic the function of peroxidase.
+Nano Today 2021, 40, No. 101261.
+(32) Lu, M.; Wang, C.; Ding, Y.; Peng, M.; Zhang, W.; Li, K.; Wei,
+W.; Lin, Y. Fe-N/C single-atom catalysts exhibiting multienzyme
+activity and ROS scavenging ability in cells. Chem. Commun. 2019, 55,
+14534−14537.
+(33) Ji, S.; Jiang, B.; Hao, H.; Chen, Y.; Dong, J.; Mao, Y.; Zhang, Z.;
+Gao, R.; Chen, W.; Zhang, R.; Liang, Q.; Li, H.; Liu, S.; Wang, Y.;
+Zhang, Q.; Gu, L.; Duan, D.; Liang, M.; Wang, D.; Yan, X.; Li, Y.
+Matching the kinetics of natural enzymes with a single-atom iron
+nanozyme. Nat. Catal. 2021, 4, 407−417.
+(34) Wang, Y.; Huang, R.; Han, J. W. Metal-nitrogen-carbon-based
+nanozymes: Advances and perspectives. J. Phys. D: Appl. Phys. 2022,
+55, 323001.
+(35) Zhang, C.; Chen, C.; Zhao, D.; Kang, G.; Liu, F.; Yang, F.; Lu,
+Y.; Sun, J. Multienzyme cascades based on highly efficient metal-
+nitrogen-carbon nanozymes for construction of versatile bioassays.
+Anal. Chem. 2022, 94, 3485−3493.
+(36) Wang, Z.; Zhang, R.; Yan, X.; Fan, K. Structure and activity of
+nanozymes: Inspirations for de novo design of nanozymes. Mater.
+Today 2020, 41, 81−119.
+(37) Zitolo, A.; Goellner, V.; Armel, V.; Sougrati, M.-T.; Mineva, T.;
+Stievano, L.; Fonda, E.; Jaouen, F. Identification of catalytic sites for
+oxygen reduction in iron- and nitrogen-doped graphene materials.
+Nat. Mater. 2015, 14, 937−942.
+(38) Li, J.; Prslja, P.; Shinagawa, T.; Martin Fernandez, A. J.;
+Krumeich, F.; Artyushkova, K.; Atanassov, P.; Zitolo, A.; Zhou, Y.;
+Garcia-Muelas, R.; Lopez, N.; Perez-Ramirez, J.; Jaouen, F. Volcano
+trend in electrocatalytic CO2 reduction activity over atomically
+dispersed metal sites on nitrogen-doped carbon. ACS Catal. 2019, 9,
+10426−10439.
+(39) Tuinstra, F.; Koenig, J. L. Raman spectrum of graphite. J. Chem.
+Phys. 1970, 53, 1126−1130.
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.2c12336
+J. Am. Chem. Soc. 2023, 145, 3108−3120
+3118
+
+(40) Sun, Y.; Silvioli, L.; Sahraie, N. R.; Ju, W.; Li, J.; Zitolo, A.; Li,
+S.; Bagger, A.; Arnarson, L.; Wang, X.; Moeller, T.; Bernsmeier, D.;
+Rossmeisl, J.; Jaouen, F.; Strasser, P. Activity-selectivity trends in the
+electrochemical production of hydrogen peroxide over single-site
+metal-nitrogen-carbon catalysts. J. Am. Chem. Soc. 2019, 141, 12372−
+12381.
+(41) Chung, H. T.; Cullen, D. A.; Higgins, D.; Sneed, B. T.; Holby,
+E. F.; More, K. L.; Zelenay, P. Direct atomic-level insight into the
+active sites of a high-performance PGM-free ORR catalyst. Science
+2017, 357, 479−484.
+(42) Li, J.; Jiao, L.; Wegener, E.; Richard, L. L.; Liu, E.; Zitolo, A.;
+Sougrati, M. T.; Mukerjee, S.; Zhao, Z.; Huang, Y.; Yang, F.; Zhong,
+S.; Xu, H.; Kropf, A. J.; Jaouen, F.; Myers, D. J.; Jia, Q. Evolution
+pathway from iron compounds to Fe-1(II)-N-4 sites through gas-
+phase iron during pyrolysis. J. Am. Chem. Soc. 2020, 142, 1417−1423.
+(43) Kang, J.; Sangwan, V. K.; Wood, J. D.; Hersam, M. C. Solution-
+based processing of monodisperse two-dimensional nanomaterials.
+Acc. Chem. Res. 2017, 50, 943−951.
+(44) Bae, G.; Kim, H.; Choi, H.; Jeong, P.; Kim, D. H.; Kwon, H. C.;
+Lee, K.-S.; Choi, M.; Oh, H.-S.; Jaouen, F.; Choi, C. H. Quantification
+of active site density and turnover frequency: From single-atom metal
+to nanoparticle electrocatalysts. JACS Au 2021, 1, 586−597.
+(45) Lyu, Y.; Scrimin, P. Mimicking enzymes: The quest for
+powerful catalysts from simple molecules to nanozymes. ACS Catal.
+2021, 11, 11501−11509.
+(46) Lunov, O.; Syrovets, T.; Loos, C.; Beil, J.; Delecher, M.; Tron,
+K.; Nienhaus, G. U.; Musyanovych, A.; Mailaender, V.; Landfester, K.;
+Simmet, T. Differential uptake of functionalized polystyrene nano-
+particles by human macrophages and a monocytic cell line. ACS Nano
+2011, 5, 1657−1669.
+(47) Buck, M. D.; O’Sullivan, D.; Geltink, R. I. K.; Curtis, J. D.;
+Chang, C.-H.; Sanin, D. E.; Qiu, J.; Kretz, O.; Braas, D.; van der
+Windt, G. J. W.; Chen, Q.; Huang, S. C.-C.; O’Neill, C. M.; Edelson,
+B. T.; Pearce, E. J.; Sesaki, H.; Huber, T. B.; Rambold, A. S.; Pearce,
+E. L. Mitochondrial dynamics controls T cell fate through metabolic
+programming. Cell 2016, 166, 63−76.
+(48) Vafai, S. B.; Mootha, V. K. Mitochondrial disorders as windows
+into an ancient organelle. Nature 2012, 491, 374−383.
+(49) Mitchell, S. J.; Bernier, M.; Aon, M. A.; Cortassa, S.; Kim, E. Y.;
+Fang, E. F.; Palacios, H. H.; Ali, A.; Navas-Enamorado, I.; Di
+Francesco, A.; Kaiser, T. A.; Waltz, T. B.; Zhang, N.; Ellis, J. L.;
+Elliott, P. J.; Frederick, D. W.; Bohr, V. A.; Schmidt, M. S.; Brenner,
+C.; Sinclair, D. A.; Sauve, A. A.; Baur, J. A.; de Cabo, R. Nicotinamide
+improves aspects of healthspan, but not lifespan, in mice. Cell Metab.
+2018, 27, 667−676.
+(50) Trammell, S. A. J.; Schmidt, M. S.; Weidemann, B. J.; Redpath,
+P.; Jaksch, F.; Dellinger, R. W.; Li, Z.; Abel, E. D.; Migaud, M. E.;
+Brenner, C. Nicotinamide riboside is uniquely and orally bioavailable
+in mice and humans. Nat. Commun. 2016, 7, 12948.
+(51) Brakedal, B.; Dolle, C.; Riemer, F.; Ma, Y.; Nido, G. S.; Skeie,
+G. O.; Craven, A. R.; Schwarzlmuller, T.; Brekke, N.; Diab, J.;
+Sverkeli, L.; Skjeie, V.; Varhaug, K.; Tysnes, O.-B.; Peng, S.;
+Haugarvoll, K.; Ziegler, M.; Gruner, R.; Eidelberg, D.; Tzoulis, C.
+The NADPARK study: A randomized phase I trial of nicotinamide
+riboside supplementation in Parkinson’s disease. Cell Metab. 2022, 34,
+396−407.
+(52) Goodman, R. P.; Markhard, A. L.; Shah, H.; Sharma, R.;
+Skinner, O. S.; Clish, C. B.; Deik, A.; Patgiri, A.; Hsu, Y.-H. H.; Masia,
+R.; Noh, H. L.; Suk, S.; Goldberger, O.; Hirschhorn, J. N.; Yellen, G.;
+Kim, J. K.; Mootha, V. K. Hepatic NADH reductive stress underlies
+common variation in metabolic traits. Nature 2020, 583, 122−126.
+(53) Patgiri, A.; Skinner, O. S.; Miyazaki, Y.; Schleifer, G.; Marutani,
+E.; Shah, H.; Sharma, R.; Goodman, R. P.; To, T.-L.; Bao, X. R.;
+Ichinose, F.; Zapol, W. M.; Mootha, V. K. An engineered enzyme that
+targets circulating lactate to alleviate intracellular NADH:NAD(+)
+imbalance. Nat. Biotechnol. 2020, 38, 309−313.
+(54) Orecchioni, M.; Ménard-Moyon, C.; Delogu, L. G.; Bianco, A.
+Graphene and the immune system: challenges and potentiality. Adv.
+Drug Delivery Rev. 2016, 105, 163−175.
+(55) Heller, D. A.; Jena, P. V.; Pasquali, M.; Kostarelos, K.; Delogu,
+L. G.; Meidl, R. E.; Rotkin, S. V.; Scheinberg, D. A.; Schwartz, R. E.;
+Terrones, M.; Wang, Y. H.; Bianco, A.; Boghossian, A. A.; Cambré, S.;
+Cognet, L.; Corrie, S. R.; Demokritou, P.; Giordani, S.; Hertel, T.;
+Ignatova, T.; Islam, M. F.; Iverson, N. M.; Jagota, A.; Janas, D.; Kono,
+J.; Kruss, S.; Landry, M. P.; Li, Y.; Martel, R.; Maruyama, S.; Naumov,
+A. V.; Prato, M.; Quinn, S. J.; Roxbury, D.; Strano, M. S.; Tour, J. M.;
+Weisman, R. B.; Wenseleers, W.; Yudasaka, M. Banning carbon
+nanotubes would be scientifically unjustified and damaging to
+innovation. Nat. Nanotechnol. 2020, 15, 164−166.
+(56) Gazzi, A.; Fusco, L.; Orecchioni, M.; Ferrari, S.; Franzoni, G.;
+Yan, J. S.; Rieckher, M.; Peng, G.; Lucherelli, M. A.; Vacchi, I. A.;
+Chau, N. D. Q.; Criado, A.; Istif, A.; Mancino, D.; Dominguez, A.;
+Eckert, H.; Vázquez, E.; Ros, T. D.; Nicolussi, P.; Palermo, V.;
+Schumacher, B.; Cuniberti, G.; Mai, Y.; Clementi, C.; Pasquali, M.;
+Feng, X.; Kostarelos, K.; Yilmazer, A.; Bedognetti, D.; Fadeel, B.;
+Prato, M.; Bianco, A.; Delogu, L. G. Graphene, other carbon
+nanomaterials and the immune system: toward nanoimmunity-by-
+design. J. Phys. Mater. 2020, 3, No. 034009.
+(57) Guiney, L. M.; Wang, X.; Xia, T.; Nel, A. E.; Hersam, M. C.
+Assessing and mitigating the hazard potential of two-dimensional
+materials. ACS Nano 2018, 12, 6360−6377.
+(58) Zheng, H.; Jiang, J.; Xu, S.; Liu, W.; Xie, Q.; Cai, X.; Zhang, J.;
+Liu, S.; Li, R. Nanoparticle-induced ferroptosis: detection methods,
+mechanisms and applications. Nanoscale 2021, 13, 2266−2285.
+(59) Jasim, D. A.; Menard-Moyon, C.; Begin, D.; Bianco, A.;
+Kostarelos, K. Tissue distribution and urinary excretion of intra-
+venously administered chemically functionalized graphene oxide
+sheets. Chem. Sci. 2015, 6, 3952−3964.
+(60) Cao, J.; Yang, Q.; Jiang, J.; Dalu, T.; Kadushkin, A.; Singh, J.;
+Fakhrullin, R.; Wang, F.; Cai, X.; Li, R. Coronas of micro/nano
+plastics: a key determinant in their risk assessments. Part. Fibre
+Toxicol. 2022, 19, 55.
+(61) Ren, J.; Andrikopoulos, N.; Velonia, K.; Tang, H.; Cai, R.;
+Ding, F.; Ke, P. C.; Chen, C. Chemical and biophysical signatures of
+the protein corona in nanomedicine. J. Am. Chem. Soc. 2022, 144,
+9184−9205.
+(62) Cao, M.; Cai, R.; Zhao, L.; Guo, M.; Wang, L.; Wang, Y.;
+Zhang, L.; Wang, X.; Yao, H.; Xie, C.; Cong, Y.; Guan, Y.; Tao, X.;
+Wang, Y.; Xu, S.; Liu, Y.; Zhao, Y.; Chen, C. Molybdenum derived
+from nanomaterials incorporates into molybdenum enzymes and
+affects their activities in vivo. Nat. Nanotechnol. 2021, 16, 708−716.
+(63) Martin, C.; Jun, G.; Schurhammer, R.; Reina, G.; Chen, P.;
+Bianco, A.; Menard-Moyon, C. Enzymatic degradation of graphene
+quantum dots by human peroxidases. Small 2019, 15, No. 1905405.
+(64) Lalwani, G.; Xing, W.; Sitharaman, B. Enzymatic degradation of
+oxidized and reduced graphene nanoribbons by lignin peroxidase. J.
+Mater. Chem. B 2014, 2, 6354−6362.
+(65) Ryu, J.; Bregante, D. T.; Howland, W. C.; Bisbey, R. P.;
+Kaminsky, C. J.; Surendranath, Y. Thermochemical aerobic oxidation
+catalysis in water can be analysed as two coupled electrochemical half-
+reactions. Nat. Catal. 2021, 4, 742−752.
+(66) Rojas-Carbonell, S.; Artyushkova, K.; Serov, A.; Santoro, C.;
+Matanovic, I.; Atanassov, P. Effect of pH on the activity of platinum
+group metal-free catalysts in oxygen reduction reaction. ACS Catal.
+2018, 8, 3041−3053.
+(67) Bates, J. S.; Biswas, S.; Suh, S.-E.; Johnson, M. R.; Mondal, B.;
+Root, T. W.; Stahl, S. S. Chemical and electrochemical O2 reduction
+on earth-abundant MNC catalysts and implications for mediated
+electrolysis. J. Am. Chem. Soc. 2022, 144, 922−927.
+(68) Jiao, L.; Li, J.; Richard, L. L.; Sun, Q.; Stracensky, T.; Liu, E.;
+Sougrati, M. T.; Zhao, Z.; Yang, F.; Zhong, S.; Xu, H.; Mukerjee, S.;
+Huang, Y.; Cullen, D. A.; Park, J. H.; Ferrandon, M.; Myers, D. J.;
+Jaouen, F.; Jia, Q. Chemical vapour deposition of Fe-N-C oxygen
+reduction catalysts with full utilization of dense Fe-N-4 sites. Nat.
+Mater. 2021, 20, 1385−1391.
+(69) Jia, Y.; Xiong, X.; Wang, D.; Duan, X.; Sun, K.; Li, Y.; Zheng,
+L.; Lin, W.; Done, M.; Zhang, G.; Liu, W.; Sun, X. Atomically
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.2c12336
+J. Am. Chem. Soc. 2023, 145, 3108−3120
+3119
+
+dispersed Fe-N-4 modified with precisely located S for highly efficient
+oxygen reduction. Nano-Micro Lett. 2020, 12, 116.
+(70) Armel, V.; Hannauer, J.; Jaouen, F. Effect of ZIF-8 crystal size
+on the O2 electro-reduction performance of pyrolyzed Fe-N-C
+catalysts. Catalysts 2015, 5, 1333−1351.
+(71) Xu, X.; Xia, Z.; Zhang, X.; Li, H.; Wang, S.; Sun, G. Size-
+dependence of the electrochemical performance of Fe-N-C catalysts
+for the oxygen reduction reaction and cathodes of direct methanol
+fuel cells. Nanoscale 2020, 12, 3418−3423.
+Journal of the American Chemical Society
+pubs.acs.org/JACS
+Article
+https://doi.org/10.1021/jacs.2c12336
+J. Am. Chem. Soc. 2023, 145, 3108−3120
+3120
+ Recommended by ACS
+Localized Alkaline Environment via In Situ Electrostatic
+Confinement for Enhanced CO2-to-Ethylene Conversion in
+Neutral Medium
+Zihong Wang, Xiaodi Ren, et al.
+MARCH 09, 2023
+JOURNAL OF THE AMERICAN CHEMICAL SOCIETY
+READ 
+Crystal Engineering Enables Cobalt-Based Metal–Organic
+Frameworks as High-Performance Electrocatalysts for H2O2
+Production
+Chaoqi Zhang, Chengzhong Yu, et al.
+MARCH 10, 2023
+JOURNAL OF THE AMERICAN CHEMICAL SOCIETY
+READ 
+Decoupling the Contributions of Different Instability
+Mechanisms to the PEMFC Performance Decay of Non-noble
+Metal O2-Reduction Catalysts
+Seçil Ünsal, Juan Herranz, et al.
+MARCH 29, 2023
+JOURNAL OF THE AMERICAN CHEMICAL SOCIETY
+READ 
+Self-Growing MZIF8/GDE Bonding by N–Zn–O Boosts
+Electrochemical Oxygen Reduction to H2O2
+Guoliang Wang, Jianguo Wang, et al.
+JANUARY 17, 2023
+ACS SUSTAINABLE CHEMISTRY & ENGINEERING
+READ 
+Get More Suggestions >

@@ -1,0 +1,968 @@
+Atomically Precise Metal Nanoclusters: Emerging Materials for Near-
+Infrared II Photoluminescence
+Published as part of Accounts of Chemical Research special issue “Near-Infrared II Photoluminescence: From
+Materials to Applications”.
+Rakesh Kumar Gupta, Brij Mohan, Zhi Wang,* Yang Yang, and Di Sun*
+Cite This: Acc. Chem. Res. 2026, 59, 476−486
+Read Online
+ACCESS
+Metrics & More
+Article Recommendations
+CONSPECTUS: Atomically precise metal nanoclusters (NCs) are a class of nanomaterials
+composed of a specific number of metal atoms stabilized by well-defined organic ligands. These
+NCs exhibit molecular-like electronic states and offer exceptional control over their
+optoelectronic properties. Recent advancements have extended their photoluminescence
+deep into the near-infrared II (NIR-II) window (950−1700 nm), a spectral region that
+provides significant advantages for biomedical imaging and photonic applications, including
+reduced tissue scattering, minimal autofluorescence, and enhanced penetration depth. In
+comparison to conventional quantum dots and larger plasmonic nanoparticles, atomically
+precise metal NCs offer unprecedented tunability in terms of emission wavelength, quantum
+yield, and photostability, facilitated by the modulation of size, composition, and ligand shell
+chemistry.
+In this Account, we highlight cutting-edge strategies, including ligand engineering, core−shell
+engineering, and alloying, which enable fine-tuning of NIR-II photoluminescence in metal
+NCs. We also explore the photophysical mechanisms underlying NIR-II emission, such as core−ligand charge transfer, metal-
+centered transitions, and the role of surface electronic states in radiative recombination efficiency. Advanced spectroscopic
+techniques, such as time-resolved photoluminescence and transient absorption, are discussed for their ability to probe excited-state
+lifetimes and energy transfer processes that control the emission properties. Finally, we critically address the current limitations in
+quantum yield enhancement, long-term photostability, and biocompatibility while outlining future directions for developing hybrid
+materials and multifunctional NC platforms and advancing NIR-II photonic technologies. Our Account aims to offer molecular-level
+insights and guide the rational design of next-generation atomically precise metal NCs as versatile materials for advanced NIR-II
+photoluminescence.
+■KEY REFERENCES
+• Jia, T.; Guan, Z.-J.; Zhang, C.; Zhu, X.-Z.; Chen, Y.-X.;
+Zhang, Q.; Yang, Y.; Sun, D. Eight-Electron Superatomic
+Cu31 Nanocluster with Chiral Kernel and NIR-II
+Emission. J. Am. Chem. Soc. 2023, 145, 10355−10363.1
+This study reports the first eight-electron Cu NC (Cu31)
+with a chiral core, showing NIR-I absorption (750−950
+nm) and strong NIR-II emission at 1250 nm (1000−1700
+nm), facilitated by ligand-driven close NC packing and
+stability.
+• Zhang, C.; Si, W.-D.; Tian, W.-D.; Xiao, W.-J.; Gao, Z.-Y.;
+Wang, Z.; Tung, C.-H.; Sun, D. Single-Atom “Surgery” on
+Chiral All-Dialkynyl-Protected Superatomic Silver Nano-
+clusters. Sci. Bull. 2025, 70, 365−372.2 This study
+compares chiral bialkynyl ligand-protected R/S-Ag39
+and R/S-Ag40, showing that insertion of a single extra Ag
+atom decreases kernel symmetry, enhances chiroptical
+activity, and red-shifts NIR-II phosphorescence from
+1088 to 1150 nm, demonstrating atomic-level control
+over NC optical properties.
+• Zhang, C.; Si, W.-D.; Wang, Z.; Tung, C.-H.; Sun, D.
+Chiral Ligand-Concentration Mediating Asymmetric
+Transformations of Silver Nanoclusters: NIR-II Circu-
+larly Polarized Phosphorescence Lighting. Angew. Chem.,
+Int. Ed. 2024, 63, e202404545.3 This study demonstrates
+concentration-dependent asymmetric transformation of
+achiral Ag10 into chiral R/S-Ag29 and R/S-Ag16. R/S-
+Ag29 features hierarchical chirality and emits NIR-II
+Received:
+November 11, 2025
+Revised:
+December 18, 2025
+Accepted:
+January 5, 2026
+Published: January 13, 2026
+Article
+pubs.acs.org/accounts
+© 2026 American Chemical Society
+476
+https://doi.org/10.1021/acs.accounts.5c00788
+Acc. Chem. Res. 2026, 59, 476−486
+Downloaded via OCEAN UNIV OF CHINA on February 21, 2026 at 11:44:52 (UTC).
+See https://pubs.acs.org/sharingguidelines for options on how to legitimately share published articles.
+
+phosphorescence at 975 nm, advancing the design of
+chiral nanomaterials.
+• Si, W.-D.; Zhang, C.; Zhou, M.; Wang, Z.; Feng, L.; Tung,
+C.-H.; Sun, D. Arylgold Nanoclusters: Phenyl-Stabilized
+Au44 with Thermal-Controlled NIR Single/Dual-Channel
+Phosphorescence. Sci. Adv. 2024, 10, eadm6928.4 This
+study presents the synthesis of arylgold Au44 NCs,
+exhibiting NIR phosphorescence at 958 nm with
+temperature-controlled single- or dual-channel emission,
+providing novel insights into the structure and photo-
+luminescence mechanisms of aryl-protected Au nano-
+clusters.
+1. INTRODUCTION
+Atomically precise metal nanoclusters (NCs) are a distinctive
+class of nanomaterials composed of a specific number of metal
+atoms stabilized by well-defined organic ligands.5,6 Their
+molecular-like electronic states arise from their precisely defined
+atomic structures, offering unprecedented control over their
+optical, electronic, and catalytic properties.7−12 This precision
+enables the exploration of fundamental structure−property
+relationships, making these NCs highly versatile for a wide range
+of applications. In particular, near-infrared (NIR) photo-
+luminescence, especially in the second near-infrared window
+(NIR-II, 950−1700 nm), has emerged as a promising feature of
+metal NCs for biomedical imaging and optoelectronic
+applications.13,14 Compared with visible-region emission
+(400−700 nm), which suffers from strong tissue scattering,
+shallow penetration depth, and significant autofluorescence
+interference, NIR-II emission enables deeper light penetration
+into biological tissues, reduced scattering, and minimal back-
+ground noise. These advantages produce clearer, higher-contrast
+images and allow precise, noninvasive visualization of deep-
+seated tissues, blood vessels, and tumors.15,16 Unlike conven-
+tional emitters such as semiconductor quantum dots or larger
+plasmonic nanoparticles, atomically precise metal NCs provide
+unique opportunities to tailor NIR-II optical properties through
+controlled modulation of NC size, core composition (including
+alloying and heteroatom doping), and ligand environment.17−20
+Their ultrasmall dimensions, excellent photostability, and
+biocompatibility, combined with facile surface functionalization,
+make metal NCs an especially promising platform for the
+development of next-generation NIR-II probes designed for
+translational biomedical imaging.
+However, engineering atomically precise NCs with stable,
+efficient, and tunable NIR-II emission remains a significant
+challenge. The interplay between the electronic structure of the
+NC core and the effects of the surrounding ligand shell plays a
+crucial role in determining photoluminescence properties.21,22
+Quantum confinement effects influence the size-dependent
+emission properties of NCs. At the same time, surface chemistry
+plays a crucial role in the emission stability and efficiency.
+Defects in the ligand shell can act as nonradiative decay centers,
+reducing overall performance.23,24 Recent developments have
+leveraged strategies such as ligand engineering, core−shell
+modulation, and alloying to fine-tune the NIR-II emission of
+metal NCs.17−20 These strategies have expanded the chemical
+space for NIR-II emitters, improving emission properties and
+enhancing stability and efficiency. However, challenges remain
+in achieving reproducible synthesis, high quantum efficiency,
+and environmental stability, particularly for metal NCs that are
+prone to oxidation or surface degradation.
+This Account highlights recent progress in the synthesis,
+structural characterization, and photophysical mechanisms
+governing NIR-II emission in atomically precise metal NCs.
+We discuss key advances in synthetic methodologies, the
+influence of core and ligand modifications on emission
+characteristics, and emerging trends that are poised to overcome
+the existing limitations. By providing insights into structure−
+property correlations, we aim to guide the rational design of
+next-generation NIR-II emissive NCs for various biomedical and
+photonic applications.
+2. PHOTOLUMINESCENCE IN THE NIR-II REGION
+Photoluminescence (PL) in the NIR-II region (950−1700 nm)
+is highly valuable for metal NCs due to advantages like reduced
+scattering, minimal autofluorescence, and enhanced tissue
+penetration, making it ideal for deep-tissue biomedical imaging
+and sensing.25,26 The emission in this range is governed by
+quantum confinement, where smaller NCs emit in the visible
+range and larger ones, with smaller energy gaps, emit in the NIR-
+II region, allowing tunable emission wavelengths (Figure 1a).
+Surface chemistry plays a critical role; defects in NCs can reduce
+quantum yield, but surface passivation with organic molecules or
+polymers neutralizes these defects, improving emission stability
+and quantum yield, making them suitable for in vivo
+applications.27,28 Advancements in ligand engineering allow
+fine-tuning of NIR-II emission by modifying ligand concen-
+tration and functionality, which controls size and structure,
+Figure 1. PL in metal NCs. (a) Schematic illustrating the evolution of geometric and electronic structures from single atoms to NCs, nanoparticles, and
+bulk metals. (b) Jablonski diagram depicting the principal PL pathways in metal NCs, including excitation, fluorescence, phosphorescence, thermally
+activated delayed fluorescence (TADF), intersystem crossing (ISC), reverse ISC (RISC), and internal conversion (IC), all of which modulate emission
+efficiency, lifetime, and spectral characteristics by affecting radiative and nonradiative decay channels.
+Accounts of Chemical Research
+pubs.acs.org/accounts
+Article
+https://doi.org/10.1021/acs.accounts.5c00788
+Acc. Chem. Res. 2026, 59, 476−486
+477
+
+further enhancing the photoluminescent efficiency. Addition-
+ally, core−shell engineering and alloying, such as doping with Au
+or Cu, shift the emission spectrum into the NIR-II region,
+improving performance and expanding the material’s potential
+for biomedical and optoelectronic applications. These develop-
+ments demonstrate how quantum confinement and surface
+chemistry can be optimized to enhance the PL properties of
+metal NCs for advanced imaging and therapeutic use.
+The PL emission mechanism of metal NCs involves three
+main radiative processes: fluorescence, phosphorescence, and
+thermally activated delayed fluorescence (TADF) (Figure
+1b).29,30 Fluorescence occurs when singlet excitons relax
+radiatively from the S1 state to the S0 ground state without
+spin change, with lifetimes ranging from nanoseconds and
+tunable emission from visible to NIR. Phosphorescence involves
+triplet excitons decaying from the T1 state to S0, exhibiting
+longer lifetimes (microseconds to milliseconds), enhanced by
+spin−orbit coupling in metals such as Cu, Ag, or Au. TADF
+occurs when the energy gap between S1 and T1 (ΔEst) is
+sufficiently small (<0.2 eV), allowing upconversion of triplets to
+singlets via reverse intersystem crossing (RISC), resulting in
+delayed fluorescence with lifetimes in the microsecond
+range.31,32 These processes are influenced by quantum confine-
+ment, where NCs below 2 nm have discrete energy states,
+allowing for tunable PL. Thus, NIR-II PL in metal NCs is
+governed by quantum confinement, surface chemistry, and
+electronic interactions. Advances in size control, ligand
+engineering, and alloying have enhanced the performance of
+metal NCs for biomedical and optoelectronic applications.
+Despite improvements, challenges in synthesis consistency,
+quantum yield, and photostability persist, requiring further
+advancements in synthesis and mechanistic understanding for
+practical use.
+3. NIR-II PHOTOLUMINESCENCE PROPERTIES OF
+METAL NANOCLUSTERS
+Metal NCs exhibit unique PL properties in the NIR-II region,
+making them highly effective for deep-tissue biomedical
+imaging, therapeutic monitoring, and sensing. Their tunable
+emission enhances tissue penetration with minimal scattering
+and absorption, offering advantages over conventional fluo-
+rophores.33,34 The narrow emission spectra improve the signal-
+to-noise ratio for high-resolution imaging in complex biological
+environments. Combined with high photostability and bio-
+compatibility, these features make NIR-II-emitting metal NCs
+ideal for long-term in vivo applications, such as targeted drug
+delivery and theranostics.35,36 To optimize NIR-II PL, strategies
+such as size control, ligand engineering, surface passivation, and
+alloying are employed, which are essential for tuning emission
+wavelengths and enhancing quantum yield, photostability, and
+efficiency.
+3.1. Copper Nanoclusters (Cu NCs)
+Cu NCs have garnered significant attention for their potential in
+PL applications, particularly in deep-tissue biomedical imaging
+and theranostics. These NCs exhibit size-tunable emission in the
+NIR-I and NIR-II regions, enhancing tissue penetration and
+imaging resolution with minimal scattering.37 Their optical
+properties are highly sensitive to surface modifications and
+ligand passivation, which stabilize the NCs and reduce
+nonradiative decay, improving their efficiency.38 However,
+challenges such as oxidation limit their stability, particularly in
+biological environments, necessitating further advancements in
+surface passivation and protective strategies to enhance their
+photostability for long-term in vivo applications.
+In recent work by Liu et al. synthesized Cu NCs,
+(PPh4)[Cu40H17(2,4-DMBT)24] (Cu40) (2,4-dimethylbenzene-
+thiolate = 2,4-DMBT), which demonstrate NIR-II emission at
+1000 and 1174 nm with microsecond decay lifetimes of 1.18 and
+8.82 μs, originating from triplet-state phosphorescence.39 This
+unique NIR-II emission significantly enhanced their photo-
+Figure 2. Structural and optical characterization of Cu31. (a) Crystal structure of cationic Cu31. (b) TEM image with particle size distribution (inset).
+(c) NIR PL spectra of crystalline Cu31 at various temperatures with excitation at 480 nm; the inset shows linear intensity versus temperature. (d) PL
+spectra of Cu31-DCM and Cu31-PMMA film under 365 nm excitation; the inset displays PL lifetimes measured by TCSPC. (e, f) Femtosecond
+transient absorption maps of Cu31-DCM in solution and Cu31-PMMA film excited at 400 nm, showing spectral evolution over time. (g, h)
+Corresponding transient absorption spectra at selected delay times. Reproduced from ref 1. Copyright 2023 American Chemical Society.
+Accounts of Chemical Research
+pubs.acs.org/accounts
+Article
+https://doi.org/10.1021/acs.accounts.5c00788
+Acc. Chem. Res. 2026, 59, 476−486
+478
+
+catalytic efficiency, allowing for effective utilization of visible
+light in radical coupling reactions such as the cyanofluoroalky-
+lation of alkenes. The ability to perform the first NC catalyzed
+three-component radical coupling expands the substrate scope
+and improves the photostability and efficiency of the catalyst
+under blue-LED irradiation, illustrating the potential of Cu NCs
+for sustainable organic synthesis.
+Further advancing this field, Jia et al. developed the first NIR-
+II emissive Cu NC, [Cu31(4-MeO-PhCC)21(dppe)3](ClO4)2
+(Cu31), through the reduction of Cu(ClO4)2·6H2O in the
+presence of 4-methoxyphenylacetylene, triethylamine, and dppe
+using NaBH4 as the reducing agent.1 Structural analysis revealed
+that Cu31 exhibits a C3-symmetric core featuring a distorted Cu13
+icosahedron capped by a Cu6 tile and surrounded by Cu2 units,
+resulting in a NC size of approximately 2.3 nm (Figure 2a,b).
+Crystalline Cu31 exhibits a broad NIR-II emission band from
+1050 to 1600 nm, with a maximum emission at 1250 nm upon
+480 nm excitation. The emission shows a microsecond decay
+lifetime with double exponential components, indicating spin-
+forbidden triplet phosphorescence. In dichloromethane (DCM)
+solution, the NIR PL is nearly quenched, but when embedded in
+PMMA, Cu31 shows a broad NIR-II emission from 1000 to 1700
+nm, with a large Stokes shift of 0.51 eV and biexponential decay
+(τ1 = 1.42 μs, τ2 = 10.11 μs), suggesting complex electron
+dynamics (Figure 2c,d).
+Femtosecond transient absorption (fs-TA) measurements of
+Cu31-DCM and the Cu31-PMMA film reveal broad excited-state
+absorption (ESA) signals in the visible region with ground-state
+bleaching (GSB) peaks that overlap with the ESA signals. The
+kinetic traces show three decay components: for Cu31-DCM, τ1
+= 0.38 ps, τ2 = 1.07 ps, and τ3 > 7 ns, and for the Cu31-PMMA
+film, τ1 = 0.18 ps, τ2 = 4.18 ps, and τ3 > 7 ns (Figure 2e−h). The
+first femtosecond processes correspond to the IC and ISC from
+the singlet excited state (Sn) to the triplet excited state (T1),
+while the picosecond decays are attributed to structural
+relaxation. The long-lived decay component exceeding the
+detection limit of fs-TA corresponds to relaxation from T1 to the
+ground state (S0). The Cu31-PMMA film shows faster IC and
+ISC but slower core-based structural relaxation compared to
+Cu31-DCM, indicating that the enhanced PL intensity of Cu31-
+PMMA film is likely due to the suppression of nonradiative
+relaxation processes, particularly the relaxation from T1 to S0,
+due to the embedding in PMMA. These findings establish Cu31
+as the first NIR-II emissive Cu NC, setting a new record for the
+Figure 3. Structural and optical characterization of R-Ag39 and R-Ag40. Crystal structures of (a) R-Ag39 and (b) R-Ag40. (c) NIR-II PL spectra and
+relaxation time curves in the crystalline state. (d) Temperature-dependent steady-state PL spectra of R-Ag39 (top) and R-Ag40 (bottom). (e) PL peak
+shift with temperature from 80 to 300 K; dashed arrows indicate NIR-II band energy shift. NIR PL was recorded with 665 nm excitation, 5 nm
+excitation slit, and a 3 nm emission slit. fs-TA maps for R-Ag39 (f) and R-Ag40 (g) excited at 400 nm. TA kinetic traces at selected probe wavelengths
+of R-Ag39 (h) and R-Ag40 (i); dashed lines mark ESA II buildup and decay (ΔOD ≈10−3). Reproduced with permission from ref 2. Copyright 2024
+Science China Press, Elsevier B.V., and Science China Press.
+Accounts of Chemical Research
+pubs.acs.org/accounts
+Article
+https://doi.org/10.1021/acs.accounts.5c00788
+Acc. Chem. Res. 2026, 59, 476−486
+479
+
+longest emission wavelength observed in a pure Cu NC. Thus,
+Cu NCs with their tunable NIR-II emission, high photostability,
+and triplet-state phosphorescence offer great promise for deep-
+tissue imaging, theranostics, and photocatalytic applications.
+Recent advancements in surface passivation and ligand
+engineering have significantly improved their efficiency and
+photostability, expanding their potential for sustainable
+applications in organic synthesis and biomedical imaging.
+3.2. Silver Nanoclusters (Ag NCs)
+Ag NCs have gained significant attention for their unique NIR-II
+PL, making them ideal for biomedical imaging, drug delivery,
+and theranostics.40−43 To optimize their NIR-II emission,
+strategies such as heteroatom doping, ligand engineering, and
+core structural modulation have been employed. Heteroatom
+doping, such as incorporating Au or Cu atoms into the Ag NC
+core, shifts the emission to the NIR-II region and enhances the
+PL quantum yield (PLQY). For example, Ansari et al. (2025)
+demonstrated that doping Au onto the surface of
+(PPh4)4[Ag44(4-FTP)30] (Ag44) (4-fluorothiophenol = 4-
+FTPH) to form an (PPh4)4[Au12Ag32(4-FTP)30] (Au12Ag32)
+alloy increased the emission at ∼1340 nm by ten times
+compared to the parent Ag44, attributed to improved metal−
+ligand charge transfer from Au migration to the surface.44 Ligand
+engineering also plays a crucial role in enhancing PLQY and
+stabilizing excited states by reducing nonradiative decay and
+facilitating charge transfer, leading to red shifting of the
+emission. For example, Jiang et al. synthesized [Ag27(bpypz)14]-
+(NO3)3 (Ag27) using the 3,5-di(2-pyridyl)pyrazole (Hbpypz)
+ligand, achieving NIR-II emission at ∼1087 nm with a
+microsecond decay lifetime of 6.10 μs.45 Moreover, Ag27
+exhibited TADF, improving its catalytic efficiency and enabling
+singlet oxygen generation for oxidative coupling reactions.
+Core structural modulation also plays a key role in tuning the
+emission properties of Ag NCs. Zhang et al. demonstrated how
+introducing a single Ag atom into the Ag NC core could
+significantly shift the emission wavelength.2 [Ag39(R/S-BBA)16]
+(R/S-Ag39) and [Ag40(R/S-BBA)16] (R/S-Ag40) were synthe-
+sized using chiral bialkynyl ligands (R/S-2,2-bis(prop-2-
+Figure 4. Structural and optical characterization of R-Ag29. (a) Crystal structures of R/S-Ag29. (b) PL spectra and decay curves of crystalline R-Ag16
+and R-Ag29. Variable-temperature PL spectra of crystalline R-Ag16 (c) and R-Ag29 (d) with insets showing temperature-dependent branching ratios.
+(e) Normalized integrated intensities of R-Ag16 and R-Ag29 fitted with a monoexponential model. (f) PL spectra of R-Ag16 and R-Ag29 in PMMA
+films at 0 μs and >5 μs. (g, h) fs-TA map of R-Ag29-PMMA film excited at 400 nm with kinetic traces at selected probe wavelengths. (i) Jablonski
+diagram of R-Ag29-PMMA film. Reproduced with permission from ref 3. Copyright 2024 Wiley-VCH GmbH.
+Accounts of Chemical Research
+pubs.acs.org/accounts
+Article
+https://doi.org/10.1021/acs.accounts.5c00788
+Acc. Chem. Res. 2026, 59, 476−486
+480
+
+ynyloxy)-1,1-binaphthyl (R/S-BBAH2)), where the introduc-
+tion of an additional Ag atom in R/S-Ag40 led to a red shift in
+emission from 1088 to 1150 nm, which is attributed to changes
+in the excited-state dynamics caused by the additional atom.
+These NCs also exhibited microsecond decay lifetimes of τav =
+9.73 μs for R-Ag39 and τav = 9.31 μs for R-Ag40, suggesting that
+their emission originates from triplet excited states via spin-
+forbidden transitions (Figure 3a−c). Temperature-dependent
+PL measurements show an increase in emission intensity and a
+decrease in full width at half maximum (FWHM) as the
+temperature drops from 300 to 80 K, with R-Ag39 exhibiting a
+slight blue shift (∼9.4 meV) and R-Ag40 exhibiting a more
+significant red shift (∼43 meV), suggesting that emission in R-
+Ag39 originates from ligand-related transitions and emission in
+R-Ag40 originates from NC-centered transitions (Figure 3d,e).
+fs-TA spectra of both NCs showed ESA signals at 555 nm (ESA
+I) and 750 nm (ESA II), with ESA I appearing immediately after
+photoexcitation and ESA II growing slowly (0.1 to 10 ps),
+indicating ISC from singlet to triplet states (Sn →T1). R-Ag40
+exhibits faster ISC (0.836 ps) compared to R-Ag39 (6.51 ps),
+and both show triplet-state dynamics, supported by their
+microsecond lifetimes (τav = 9.73 μs for R-Ag39 and 9.31 μs
+for R-Ag40), with structural differences, including the additional
+Ag atom in R-Ag40, causing shifts in the emission spectrum
+(Figure 3f−i).
+In another report, Zhang et al. employed the BINOL-derived
+phosphoric acid ligand R/S-1,1′-binaphthyl-2,2′-diyl hydrogen
+phosphate (R/S-BNP), to induce the asymmetric trans-
+formation of the parent Ag NC [Ag10(p-MePhCC)4(PN-
+3′)4]2+ (Ag10) (PN-3′ = [PO(NHpy)2(Npy)]−), resulting in
+two pairs of chiral Ag NCs, [Na3Ag29(R/S-BNP)9(PN-3′)3(PN-
+2 ) 3 ( p - M e P h C  C ) 9 ] 2 +
+( R / S - A g 2 9 )
+( P N - 2
+=
+[PO2(NHpy)2]−) and [Ag16(R/S-BNP)10(p-MePhCC)7]−
+(R/S-Ag16).3 Structural analysis shows that R/S-Ag29 has a
+kernel−shell structure with a distorted Ag13 icosahedral core and
+a C3-symmetric shell, leading to NIR-II emission at 975 nm,
+while R/S-Ag16 has a simpler pentagram-shaped structure with
+a Ag(I) core, resulting in visible phosphorescence at 640 nm
+(Figure 4a,b).
+The PL behavior of R-Ag16 and R-Ag29, derived from achiral
+Ag10, reveals distinct emission characteristics influenced by
+structural and chiral differences. The parent Ag10 exhibits
+orange emission maxima at 618 nm (at 293 K) and 602 nm (at
+83 K), with monoexponential decay lifetimes of 6.88 and 48.52
+μs, respectively. R-Ag16 displays orange-red emission with a
+peak around 640 nm, microsecond lifetimes (τ1 = 12.4 μs, τ2 =
+61.9 μs, τav = 34.1 μs) upon 510 nm excitation, and a Stokes shift
+of 0.49 eV (Figure 4b−e). This emission is attributed to two
+relaxation channels with a 74% increase in PL intensity at lower
+temperatures. R-Ag29, on the other hand, shows NIR-II
+emission at ∼986 nm upon 610 nm excitation, with a larger
+Stokes shift of 0.78 eV and microsecond lifetimes (τ1 = 1.63 μs,
+τ2 = 13.22 μs, and τav = 12.2 μs), indicating stable NIR-II
+emission. When embedded in PMMA films, R-Ag16 emits at
+669 nm and R-Ag29 emits at 975 nm, with lifetimes of 111 and
+10.4 μs, respectively, suggesting triplet-state phosphorescence
+(Figure 4f). The fs-TA measurements reveal ESA at 555 nm
+(ESA I) and 655 nm (ESA II) with decay components
+corresponding to IC, ISC, and triplet state relaxation, further
+confirming the triplet excited-state dynamics of both NCs.
+These results highlight the structural and dynamic differences
+between R-Ag16 and R-Ag29, with R-Ag29 showing more
+complex NIR-II emission and R-Ag16 emitting in the visible
+region (Figure 4g−i).
+3.3. Gold Nanoclusters (Au NCs)
+Au NCs are widely studied for their biocompatibility, tunable
+optical properties, and high photostability, making them ideal
+for biomedical imaging, drug delivery, and theranostics.46,47
+These NCs emit in the near-infrared II (NIR-II) region (950−
+1700 nm), which can be enhanced by strategies such as metal
+atom doping, ligand engineering, and core structural modu-
+lation.48−50 These techniques optimize their emission proper-
+ties, allowing for precise tuning for applications in both imaging
+and therapy. For example, Huang et al. developed a NIR-II NC,
+Au24Cd1(MPA)18 (Au24Cd1) (3-mercaptopropionic acid =
+MPA), by using a heteroatom doping strategy, incorporating a
+single atom Cd to enhance the fluorescence brightness and
+stability.51 The Cd doping results in a strong emission centered
+around 1020 nm, making this NC highly suitable for long-term
+in vivo imaging applications.
+Core structural modulation is vital for tuning the optical
+properties, PL, PLQY, and emission wavelengths of Au NCs by
+altering the arrangement or number of Au atoms. For instance,
+Li et al. reported two types of Au NCs: rod-shaped bi-
+icosahedral [Au25(PPh3)10(SC2H4Ph)5Cl2]2+ (Au25), which
+emits strongly in the NIR-II region around 990 nm with a
+PLQY of 8%, and [Au37(PPh3)10(SC2H4Ph)10X2]+ (Au37), a
+rod-shaped tri-icosahedral NC, which emits at 1520 nm but has
+a much lower PLQY of 0.1%.52 The larger, more complex core in
+the Au37 shifts the emission to a longer wavelength but reduces
+PL efficiency due to increased nonradiative decay, demonstrat-
+ing how core structural changes influence both emission
+wavelengths and efficiency.
+Ligand engineering plays a crucial role in enhancing the PL
+properties of Au NCs, particularly in the NIR-II region. By
+modifying the surface ligands, it is possible to stabilize excited
+states, reduce nonradiative decay, and facilitate efficient charge
+transfer between the metal core and the ligands. For instance,
+the Au44MBA26 NC, functionalized with water-soluble 4-
+mercaptobenzoic acid (MBA), exhibits strong NIR-II PL, with
+an impressive PLQY of approximately 4.5%, featuring two
+distinct emission peaks at ∼1080 nm and ∼1280 nm.53 When
+conjugated with the immune checkpoint inhibitor 1-cyclohexyl-
+2-(5H-imidazo[5,1-a]isoindol-5-yl)ethanol (NLG919) via a
+singlet oxygen-cleavable linker, these NCs enabled NIR-II PL
+imaging of tumors, photothermal therapy (PTT), photo-
+dynamic therapy (PDT), and the
+1O2-induced release of
+NLG919 for cancer immunotherapy without any significant
+change in their emission properties, making them a powerful
+theranostic platform for cancer treatment.
+In the context of ligand engineering, our group has made a
+significant advances in synthesizing −COOH-functionalized Au
+NCs, [K3Au25(2-Hmna)9(mna)6]−(Au25a) (mercaptonico-
+tinic acid = H2mna), by employing a salting-out method to
+crystallize them, successfully overcoming challenges associated
+with the weak ionization properties of the −COOH group.54 For
+the first time, structural analysis of Au25a revealed an
+unprecedented tetrameric Au4(SRS)3(SRS,N)2 staple motif
+surrounding the icosahedral Au13 kernel, breaking the traditional
+perception of the Au25(SR)18 structure and offering new insights
+into the structural diversity of Au NCs. Au25a exhibited
+remarkable NIR-II PL at 970 nm, with a PL quantum yield
+(PLQY) of approximately 1.6% using cyanines (Cy7) as a
+standard at room temperature (Figure 5a,b). The emission
+Accounts of Chemical Research
+pubs.acs.org/accounts
+Article
+https://doi.org/10.1021/acs.accounts.5c00788
+Acc. Chem. Res. 2026, 59, 476−486
+481
+
+lifetime of Au25a measured using time-correlated single-photon
+counting (TCSPC) revealed two lifetime components: τ1 = 1.12
+μs and τ2 = 9.77 μs, with an average lifetime of 8.69 μs, indicating
+that the NIR PL originates from a relatively long-lived relaxation
+pathway (Figure 5c). Theoretical calculations suggested that the
+emission from the S1 state arises from a superatomic P →D
+transition in the kernel with an emission energy of 1.07 eV,
+slightly underestimating the experimental emission of 1.28 eV
+(970 nm), which points to the possibility of phosphorescence as
+the emission mechanism. Temperature-dependent PL studies
+showed an increase in PL intensity by 1.77 times from 263 to 83
+K, with a blue shift of about 10 nm at lower temperatures,
+indicating a single electronic transition responsible for the NIR
+PL (Figure 5d). Additionally, fs-TA showed a broad ESA signal,
+with two short decays (τ1 = 0.328 ps, τ2 = 1.680 ps), followed by
+a long-lived relaxation of >7 ns, suggesting internal conversion
+from the Sn to S1 state, electron reorganization from the metal
+kernel to the outer shell ligand, and slow radiative recombina-
+tion, which contributed to the phosphorescent NIR PL
+mechanism in Au25a (Figure 5e−g).
+In a separate study, our group synthesized two arylgold NCs,
+Au44[CH3O(CH3)2CC]16(C6H5)6(tht)2·CH2Cl2·H2O
+(Au44a) and Au44[CH3O(CH3)2CC]16(p-C6H4F)6(tht)2·
+3CH2Cl2·H2O (Au44b), (tetrahydrothiophene = tht) using
+tetraarylborates as aryl transfer agents through a one-pot
+reaction.4 These NCs feature a unique Au30 kernel made of
+two Au15 units, each with a Au10 core surrounded by four
+peripheral Au atoms, two capping triangular faces and two
+capping quadrangular faces (Figure 6a). Au44a exhibits broad
+PL emission with a peak at 958 nm and a FWHM of 180 nm in 2-
+Me-THF, attributed to the coupling of MM(Au:d‑sp)CT and
+3LM(Au)CT states, with a biexponential PL decay (τ1 = 1.20 μs
+and τ2 = 9.53 μs), confirming its triplet photosensitizer behavior.
+Temperature-dependent PL showed a red shift from 882 nm at
+80 K to 958 nm at 300 K, indicating thermal modulation of the
+triplet-state emission (Figure 6b−h). The fs/ns-TA spectra
+revealed a GSB at 550 nm and ESA signals at 425−500 nm (ESA
+I) and 600 nm to NIR (ESA II). In the first picosecond, ESA I
+decayed within 1−10 ps, while ESA II increased from 1 to 5.4 ps,
+indicating intersystem crossing from singlet to triplet states
+(Figure 6i−k). The excited-state lifetimes matched PL measure-
+ments, confirming two triplet excited states (T1 and T1′),
+enabling single/dual-channel NIR phosphorescence and high-
+lighting the potential of Au44a as a photosensitizer for singlet
+oxygen generation and deep tissue imaging.
+Atomically precise NIR-emissive metal NCs reported to date
+already reveal several structure−property trends that can guide
+future design. In terms of metal composition, Cu and Ag NCs
+frequently show long-lived NIR-II phosphorescence arising
+from strong spin−orbit coupling and core−ligand charge-
+transfer states, whereas Au NCs often combine high
+biocompatibility with bright NIR-II phosphorescence that is
+readily tuned by single-atom doping or alloying. Increasing
+nuclearity and constructing icosahedral, bi-icosahedral, or
+kernel−shell architectures generally narrows the energy gap
+and red-shifts emission, although excessively complex cores can
+Figure 5. Structural and optical characterization of Au25a. (a) Crystal structure of Au25a. (b) UV−vis absorption and PL spectra (excitation at 400
+nm) of Au25a in aqueous solution at room temperature. (c) Time-resolved PL decay at room temperature. (d) Temperature-dependent PL spectra
+from 83 to 263 K under 400 nm excitation in a glassy matrix. (e) Transient absorption data map and (f) TA kinetics at selected probe wavelengths. (g)
+Evolution-associated spectra (EAS) for Au25a. Reproduced with permission from ref 54. Copyright 2023 Science China Press, Elsevier B.V., and
+Science China Press.
+Accounts of Chemical Research
+pubs.acs.org/accounts
+Article
+https://doi.org/10.1021/acs.accounts.5c00788
+Acc. Chem. Res. 2026, 59, 476−486
+482
+
+introduce additional nonradiative channels that lower PL
+quantum yield, as exemplified by rod-like Au25 versus Au37
+systems.52 Ligand environments also play a decisive role:
+thiolate and alkynyl ligands efficiently couple to metal-centered
+states and support deep NIR-II emission, while phosphine co-
+ligands often help stabilize high-nuclearity cores and modulate
+charge transfer. More rigid ligand frameworks and core−shell
+assemblies, including chiral or π-conjugated ligands and polymer
+or matrix embedding, tend to suppress vibrational relaxation and
+structural distortion, thereby enhancing NIR-II brightness and
+lifetime; in contrast, more flexible coordination spheres usually
+increase nonradiative decay. Collectively, these observations
+suggest that combining appropriate metal composition (e.g.,
+Cu/Ag for strong triplet character, Au or alloyed Au−Ag/Cu for
+Figure 6. Structural and optical characterization of Au44a. (a) Crystal structure of Au44a. (b) Absorption and NIR emission spectra of Au44a in 2-
+MeTHF. (c) NIR emission under O2, N2, and ambient conditions (λex = 365 nm). (d) Temperature-dependent NIR emission in 2-MeTHF. (e) Time-
+resolved emission at various temperatures. (f) Decay curves at 80 and 300 K. (g, h) Temperature dependence of τ1 and τ2. (i) fs- and ns-TA maps of
+Au44a in 2-MeTHF (400 nm excitation). (j−l) fs-TA spectra and kinetic traces at selected delays and probe wavelengths. (m) Excited-state relaxation
+scheme with lifetimes of two PL bands from TCSPC. Reproduced from ref 4. Available under CC BY-NC 4.0 License. Copyright 2024, The Authors,
+American Association for the Advancement of Science.
+Accounts of Chemical Research
+pubs.acs.org/accounts
+Article
+https://doi.org/10.1021/acs.accounts.5c00788
+Acc. Chem. Res. 2026, 59, 476−486
+483
+
+biocompatibility and brightness), high but structurally con-
+trolled nuclearity, and rigid, charge-transfer-active ligand shells
+is crucial. This combination provides a rational blueprint for
+designing next-generation NIR-II NCs for biological imaging
+and theranostic applications.
+4. CHALLENGES AND FUTURE DIRECTIONS
+Despite significant progress in developing NIR-II photo-
+luminescent metal NCs, several challenges remain in their
+synthesis, stability, and efficiency. One major issue is achieving
+reproducible synthesis with consistently high quantum yields.
+Variations in reaction conditions, particularly in Cu-based NCs
+or those stabilized by complex ligands, often lead to batch-to-
+batch inconsistency. Additionally, the stability of these NCs is
+compromised, as many, especially Cu-based ones, are prone to
+oxidation and ligand dissociation, resulting in rapid lumines-
+cence quenching. To address these challenges, further advances
+in surface passivation, encapsulation methods, and protective
+coatings are needed to enhance their environmental stability and
+photochemical resilience. Understanding the photophysical
+processes that govern NIR-II emission remains another hurdle.
+Key mechanisms, including core−ligand charge transfer and
+triplet-state phosphorescence, have been identified but are not
+fully understood. The absence of a unified framework linking
+these processes to emission wavelength, lifetime, and polar-
+ization limits the ability to optimize the materials for practical
+applications. Additionally, the structural effects on PL,
+particularly in the context of chiroptical activity, are still
+underexplored. A deeper understanding of how ligand
+modifications and core structuring influence these properties
+will be crucial for advancing these materials.
+For practical applications, integrating NIR-II emitting NCs
+into solid-state matrices or functional platforms, such as organic
+light-emitting diodes (OLEDs), sensors, or biomedical imaging
+systems, poses additional challenges. Transitioning from
+solution to the solid state often causes aggregation or
+rearrangement of the ligands, leading to luminescence
+quenching. Achieving stable, homogeneous dispersion within
+host media that preserves their optical properties is essential.
+Furthermore, in biomedical applications, ensuring that NCs
+retain strong NIR-II emission while maintaining biocompati-
+bility and enabling targeted drug delivery remains a significant
+challenge. Looking forward, artificial intelligence (AI) and
+machine learning could play a pivotal role in optimizing
+synthesis conditions, predicting the best ligands and structural
+modifications and accelerating the discovery of new materials.
+Hybrid materials combining metal NCs with other nanomateri-
+als, such as graphene or quantum dots, could enhance their
+optical properties, making them suitable for a wider range of
+applications. Advances in supramolecular assemblies and
+quantum technologies also promise to improve NIR-II
+luminescence and enable new applications in quantum
+computing and secure communication. Finally, addressing
+sustainability concerns by developing ecofriendly synthesis
+methods and minimizing environmental impact will be essential
+for the long-term viability and practical use of these advanced
+materials.
+5. CONCLUSIONS
+Atomically precise metal NCs offer exceptional control over
+composition, structure, and optical properties, making them
+highly valuable for deep-tissue imaging, therapeutic monitoring,
+and sensing, especially due to their ability to emit in the NIR-II
+window. This emission provides advantages such as reduced
+scattering, minimal autofluorescence, and enhanced tissue
+penetration, crucial for noninvasive biomedical applications.
+Advances in ligand design, core−shell engineering, chiral
+modulation, and heteroatom doping have improved our
+understanding of their PL properties, particularly in the NIR-
+II region.
+However, challenges remain, such as reproducibility,
+quantum yield, stability, and a mechanistic understanding of
+NIR-II emission. Issues such as oxidation and degradation in
+biological environments necessitate better surface passivation
+and encapsulation techniques to enhance photostability and
+longevity. Despite these hurdles, recent innovations in synthetic
+strategies, including surface modification and alloying, have
+expanded their use in fields such as imaging, photothermal
+therapy, and sustainable energy applications. Future progress
+will require interdisciplinary research in synthetic chemistry,
+spectroscopy, and computational modeling. The continued
+development of hybrid materials, multifunctional platforms, and
+AI-driven designs will accelerate the application of NIR-II
+emitting NCs, positioning them as key tools in next-generation
+biomedical and photonic technologies.
+■AUTHOR INFORMATION
+Corresponding Authors
+Zhi Wang −School of Chemistry and Chemical Engineering,
+State Key Laboratory of Crystal Materials, Shandong
+University, Ji’nan 250100, P. R. China;
+orcid.org/0000-
+0001-8315-3501; Email: zwang@sdu.edu.cn
+Di Sun −School of Chemistry and Chemical Engineering, State
+Key Laboratory of Crystal Materials, Shandong University,
+Ji’nan 250100, P. R. China;
+orcid.org/0000-0001-5966-
+1207; Email: dsun@sdu.edu.cn
+Authors
+Rakesh Kumar Gupta −School of Chemistry and Chemical
+Engineering, State Key Laboratory of Crystal Materials,
+Shandong University, Ji’nan 250100, P. R. China;
+orcid.org/0000-0002-5701-3449
+Brij Mohan −Centro de Química Estrutural, Institute of
+Molecular Sciences, Instituto Superior Técnico, Universidade de
+Lisboa, 1049-001 Lisboa, Portugal
+Yang Yang −School of Chemistry and Material Science, Jiangsu
+Key Laboratory of Green Synthetic Chemistry for Functional
+Materials, Jiangsu Normal University, Xuzhou 221116,
+China;
+orcid.org/0000-0003-4888-1604
+Complete contact information is available at:
+https://pubs.acs.org/10.1021/acs.accounts.5c00788
+Author Contributions
+The manuscript was written through contributions from all
+authors. All authors have given approval to the final version of
+the manuscript.
+Notes
+The authors declare no competing financial interest.
+Biographies
+Rakesh Kumar Gupta received his Ph.D. degree from Banaras Hindu
+University, Varanasi, India, in 2015 with Prof. Daya Shankar Pandey.
+He worked with Professor Nobuo Kimizuka as a JSPS postdoctoral
+fellow at Kyushu University, Japan. Currently, he is an associate
+Accounts of Chemical Research
+pubs.acs.org/accounts
+Article
+https://doi.org/10.1021/acs.accounts.5c00788
+Acc. Chem. Res. 2026, 59, 476−486
+484
+
+professor at the School of Chemistry and Chemical Engineering at
+Shandong University. His current research interest focuses on
+functional molecular materials, particularly high-nuclearity metal
+nanoclusters, nanocluster-based coordination polymers, and MOFs
+for energy conversion, catalysis, and chemical sensing applications.
+Brij Mohan is a research member at the Centro de Química Estrutural,
+Instituto Superior Técnico, Universidade de Lisboa (ULisboa), Lisbon,
+Portugal. He completed his Ph.D. in 2018 from Kurukshetra University,
+Kurukshetra, under the supervision of Prof. Harish Kumar Sharma,
+India. Later, he worked as a postdoctoral research associate at the
+Harbin Institute of Technology, Shenzhen. His research interests
+include designing new coordination materials, MOFs, and nanoma-
+terials for energy, catalysis, sensing, optical, environmental, and medical
+applications.
+Zhi Wang is a professor (2024) at the School of Chemistry and
+Chemical Engineering, Shandong University, Ji’nan, PR China. She
+received her Ph.D. in inorganic chemistry from Shandong University in
+2021 and was selected into the national postdoctoral innovation talent
+support program. From 2021 to 2023, she worked as a postdoctoral
+researcher under the supervision of Prof. C.-H. Tung. Her research
+interest is the syntheses and properties of high nuclearity silver
+nanoclusters as well as the elucidation of assembly mechanisms using
+the ESI-MS technique.
+Yang Yang spent nine years at Xiamen University (China) from 2007 to
+2016, where he earned his Bachelor’s and Ph.D. degrees in Chemistry
+under the supervision of Prof. Quan-Ming Wang. In the summer of
+2016, he became a lecturer and led a small research team at Jiangsu
+Normal University (China). He was promoted to associate professor in
+2019 and to full professor in 2025. From August 2019 to March 2021,
+he joined the research group of Prof. Jonathan R. Nitschke at the
+University of Cambridge as a postdoctoral researcher. His research
+primarily focused on the synthesis and properties of coin-metal
+nanoclusters and coordination cage complexes.
+Di Sun received his B.S. (2005) from Liaocheng University and his M.S.
+(2008) and his Ph.D. (2011) from Xiamen University under the
+guidance of Profs. Su-Yuan Xie, Rong-Bin Huang, and Lan-Sun Zheng,
+respectively. In 2011, he was appointed as a Lecturer at Shandong
+University, and in 2014 and 2017, he was promoted to an associate
+professor and a professor, respectively. His research interests include
+coordination chemistry and metal nanocluster chemistry.
+■ACKNOWLEDGMENTS
+This work was financially supported by the National Natural
+Science Foundation of China (Grant Nos. 22325105, 92361301,
+52261135637, 22171164, W2532015, 22571182 ).
+■REFERENCES
+(1) Jia, T.; Guan, Z.-J.; Zhang, C.; Zhu, X.-Z.; Chen, Y.-X.; Zhang, Q.;
+Yang, Y.; Sun, D. Eight-Electron Superatomic Cu31 Nanocluster with
+Chiral Kernel and NIR-II Emission. J. Am. Chem. Soc. 2023, 145,
+10355−10363.
+(2) Zhang, C.; Si, W.-D.; Tian, W.-D.; Xiao, W.-J.; Gao, Z.-Y.; Wang,
+Z.; Tung, C.-H.; Sun, D. Single-Atom “Surgery” on Chiral All-
+Dialkynyl-Protected Superatomic Silver Nanoclusters. Sci. Bull. 2025,
+70, 365−372.
+(3) Zhang, C.; Si, W.-D.; Wang, Z.; Tung, C.-H.; Sun, D. Chiral
+Ligand-Concentration Mediating Asymmetric Transformations of
+Silver Nanoclusters: NIR-II Circularly Polarized Phosphorescence
+Lighting. Angew. Chem., Int. Ed. 2024, 63, No. e202404545.
+(4) Si, W.-D.; Zhang, C.; Zhou, M.; Wang, Z.; Feng, L.; Tung, C.-H.;
+Sun, D. Arylgold Nanoclusters: Phenyl-Stabilized Au44 with Thermal-
+Controlled NIR Single/Dual-Channel Phosphorescence. Sci. Adv.
+2024, 10, No. eadm6928.
+(5) Jin, R.; Zeng, C.; Zhou, M.; Chen, Y. Atomically Precise Colloidal
+Metal Nanoclusters and Nanoparticles: Fundamentals and Oppor-
+tunities. Chem. Rev. 2016, 116, 10346−10413.
+(6) Maity, S.; Kolay, S.; Chakraborty, S.; Devi, A.; Rashi; Patra, A. A
+Comprehensive Review of Atomically Precise Metal Nanoclusters with
+Emergent Photophysical Properties towards Diverse Applications.
+Chem. Soc. Rev. 2025, 54, 1785−1844.
+(7) Du, Y.; Sheng, H.; Astruc, D.; Zhu, M. Atomically Precise Noble
+Metal Nanoclusters as Efficient Catalysts: A Bridge between Structure
+and Properties. Chem. Rev. 2020, 120, 526−622.
+(8) Chakraborty, I.; Pradeep, T. Atomically Precise Clusters of Noble
+Metals: Emerging Link between Atoms and Nanoparticles. Chem. Rev.
+2017, 117, 8208−8271.
+(9) Fan, J.-Q.; Guo, J.-X.; Li, M.-B. Metal Nanoclusters Catalyzing
+Organic Transformations-Synergistic Effects. Chem. Eur. J. 2025, 31,
+No. e02620.
+(10) Gupta, R. K.; Wang, Z.; Mohan, B.; Tung, C.-H.; Sun, D.
+Atomically Precise Coinage Metal Nanoclusters with Exposed Metal
+Sites: Unlocking Reactivity and Functionality. Adv. Funct. Mater. 2025,
+35, 2507047.
+(11) Biswas, S.; Das, A. K.; Mandal, S. Surface Engineering of
+Atomically Precise M(I) Nanoclusters: From Structural Control to
+Room Temperature Photoluminescence Enhancement. Acc. Chem. Res.
+2023, 56, 1838−1849.
+(12) Nahan, E. N.; Aparna, R. K.; Chandrashekar, P.; Alam, N.; James,
+G.; Mandal, S. Ligand Engineering for Designing Atomically Precise
+Metal Nanoclusters and Cluster-Assemblies for Potential Applications.
+J. Chem. Sci. 2025, 137, 46.
+(13) He, L.; Dong, T.; Jiang, D.-e.; Zhang, Q. Recent Progress in
+Atomically Precise Metal Nanoclusters: From Bio-Related Properties to
+Biological Applications. Coord. Chem. Rev. 2025, 535, 216633.
+(14) Baghdasaryan, A.; Dai, H. Molecular Gold Nanoclusters for
+Advanced NIR-II Bioimaging and Therapy. Chem. Rev. 2025, 125,
+5195−5227.
+(15) Ma, H.; Wang, J.; Zhang, X.-D. Near-Infrared II Emissive Metal
+Clusters: From Atom Physics to Biomedicine. Coord. Chem. Rev. 2021,
+448, 214184.
+(16) Guo, M.; Zhang, G.; Zhao, R.; Ma, H.; Yan, Y.; Yang, S.; Meng, J.;
+Huang, Y.; Zhang, X.-D.; Wang, H.; Zhang, R. Ligand Engineering of
+Gold Nanoclusters for NIR-II Imaging. ACS Appl. Nano Mater. 2023, 6,
+15945−15958.
+(17) Liu, X.; Cai, X.; Zhu, Y. Catalysis Synergism by Atomically
+Precise Bimetallic Nanoclusters Doped with Heteroatoms. Acc. Chem.
+Res. 2023, 56, 1528−1538.
+(18) Kang, X.; Li, Y.; Zhu, M.; Jin, R. Atomically Precise Alloy
+Nanoclusters: Syntheses, Structures, and Properties. Chem. Soc. Rev.
+2020, 49, 6443−6514.
+(19) Gupta, R. K.; Wang, Z.; Mohan, B.; Tung, C.-H.; Sun, D.
+Advancements in Atomically Precise Nanocluster Protected by
+Thiacalix[4]arene. Adv. Mater. 2024, 36, 2410054.
+(20) Zhang, B.; Chen, J.; Cao, Y.; Chai, O. J. H.; Xie, J. Ligand Design
+in Ligand-Protected Gold Nanoclusters. Small 2021, 17, 2004381.
+(21) Liu, Z.-Y.; Nie, Q.-B.; Han, B.-L.; Gupta, R. K.; Dong, G.-L.; Luo,
+G.-G.; Yang, Z.-L.; Sun, D. Atom-Precise Coinage Metal Nanoclusters
+for Near-Infrared Emission: Excited-State Dynamics and Mechanisms.
+Chem. Soc. Rev. 2025, 54, 9092−9115.
+(22) Huang, Y.-Z.; Gupta, R. K.; Luo, G.-G.; Zhang, Q.-C.; Sun, D.
+Luminescence Thermochromism in Atomically Precise Silver Clusters:
+A Comprehensive Review. Coord. Chem. Rev. 2024, 499, 215508.
+(23) Kim, J. S.; Chang, H.; Kang, S.; Cha, S.; Cho, H.; Kwak, S. J.; Park,
+N.; Kim, Y.; Kang, D.; Song, C. K.; Kwag, J.; Hahn, J.-S.; Lee, W. B.;
+Hyeon, T.; Park, J. Critical Roles of Metal-Ligand Complexes in the
+Controlled Synthesis of Various Metal Nanoclusters. Nat. Commun.
+2023, 14, 3201.
+(24) Yang, Z.; Wang, Y.; Zhang, R.; Chen, T.; Xie, J. Precise Surface
+Engineering of Metal Nanoclusters: Ligand Programming for
+Functionality Design. Adv. Mater. 2025, 37, No. e08578.
+Accounts of Chemical Research
+pubs.acs.org/accounts
+Article
+https://doi.org/10.1021/acs.accounts.5c00788
+Acc. Chem. Res. 2026, 59, 476−486
+485
+
+(25) Liu, H.; Hong, G.; Luo, Z.; Chen, J.; Chang, J.; Gong, M.; He, H.;
+Yang, J.; Yuan, X.; Li, L.; Mu, X.; Wang, J.; Mi, W.; Luo, J.; Xie, J.;
+Zhang, X.-D. Atomic-Precision Gold Clusters for NIR-II Imaging. Adv.
+Mater. 2019, 31, 1901015.
+(26) Sharma, N.; Mohammad, W.; Le Guével, X.; Shanavas, A. Gold
+Nanoclusters as High Resolution NIR-II Theranostic Agents. Chem.
+Biomed. Imaging 2024, 2, 462−480.
+(27) Zhu, H.; Wang, Z.; Yao, Q.; Zhang, P.; Xie, J.; Yuan, X. Metal
+Nanoclusters for Cancer Imaging and Treatment. Adv. Funct. Mater.
+2026, 36, No. e07924.
+(28) Lin, Z.; Goswami, N.; Xue, T.; Chai, O. J. H.; Xu, H.; Liu, Y.; Su,
+Y.; Xie, J. Engineering Metal Nanoclusters for Targeted Therapeutics:
+From Targeting Strategies to Therapeutic Applications. Adv. Funct.
+Mater. 2021, 31, 2105662.
+(29) Kasha, M. Characterization of electronic transitions in complex
+molecules. Discuss. Faraday Soc. 1950, 9, 14−19.
+(30) Liu, Z.; Li, Y.; Kahng, E.; Xue, S.; Du, X.; Li, S.; Jin, R. Tailoring
+the Electron-Phonon Interaction in Au25(SR)18 Nanoclusters via
+Ligand Engineering and Insight into Luminescence. ACS Nano 2022,
+16, 18448−18458.
+(31) Li, H.; Kang, X.; Zhu, M. Controlling the Nature of
+Photoluminescence of Emissive Metal Nanoclusters. ChemPhysChem
+2022, 23, No. e202200484.
+(32) Liu, Z.; Zhou, M.; Luo, L.; Wang, Y.; Kahng, E.; Jin, R.
+Elucidating the Near-Infrared Photoluminescence Mechanism of
+Homometal and Doped M25(SR)18 Nanoclusters. J. Am. Chem. Soc.
+2023, 145, 19969−19981.
+(33) Shi, Y.; Wu, Z.; Qi, M.; Liu, C.; Dong, W.; Sun, W.; Wang, X.;
+Jiang, F.; Zhong, Y.; Nan, D.; Zhang, Y.; Li, C.; Wang, L.; Bai, X.
+Multiscale Bioresponses of Metal Nanoclusters. Adv. Mater. 2024, 36,
+2310529.
+(34) Das, A. K.; Biswas, S.; Manna, S. S.; Pathak, B.; Mandal, S. An
+Atomically Precise Silver Nanocluster for Artificial Light-Harvesting
+System Through Supramolecular Functionalization. Chem. Sci. 2022,
+13, 8355−8364.
+(35) Tong, S.; Liu, J.; Chen, Y.; Xiao, X.; Li, S.; Song, X.; Yang, H.
+Surface Engineering of NIR-II Luminescent Gold Nanoclusters for
+Brain Glioma-Targeted Imaging. Nanoscale 2025, 17, 10670−10676.
+(36) Song, X.; Zhu, W.; Ge, X.; Li, R.; Li, S.; Chen, X.; Song, J.; Xie, J.;
+Chen, X.; Yang, H. A New Class of NIR-II Gold Nanocluster-Based
+Protein Biolabels for In Vivo Tumor-Targeted Imaging. Angew. Chem.,
+Int. Ed. 2021, 60, 1306−1312.
+(37) Xu, T.; Kong, J.; Chen, Y.; Cui, W.; Fang, Y.; Zhang, W.; Wang,
+M.; Zhou, M.; Li, Y.; Jin, R.; Song, Y. Triple-Functional CuxAu61‑x
+Nanoclusters with NIR-II Photoluminescence, Photothermal and
+Photodynamic Properties and Their Bio-Application. Adv. Sci. 2025,
+12, No. e09283.
+(38) Zhang, C.; Si, W.-D.; Wang, Z.; Dinesh, A.; Gao, Z.-Y.; Tung, C.-
+H.; Sun, D. Solvent-Mediated Hetero/Homo-Phase Crystallization of
+Copper Nanoclusters and Superatomic Kernel-Related NIR Phosphor-
+escence. J. Am. Chem. Soc. 2024, 146, 10767−10775.
+(39) Liu, L.-J.; Zhang, M.-M.; Deng, Z.; Yan, L.-L.; Lin, Y.; Phillips, D.
+L.; Yam, V. W.-W.; He, J. NIR-II Emissive Anionic Copper
+Nanoclusters with Intrinsic Photoredox Activity in Single-Electron
+Transfer. Nat. Commun. 2024, 15, 4688.
+(40) Das, A. K.; Biswas, S.; Wani, V. S.; Nair, A. S.; Pathak, B.; Mandal,
+S. [Cu18H3(S-Adm)12(PPh3)4Cl2]: Fusion of Platonic and Johnson
+Solids Through a Cu(0) Center and its Photophysical Properties.
+Chem. Sci. 2022, 13, 7616−7625.
+(41) Ma, H.; Liu, L.; He, H.; Sun, S.; Yang, S.; Huang, Y.; Li, Y.; Tan,
+K.; Liu, H.; Liu, S.; Li, Y.; Liu, C.; Liu, P.; Wang, H.; Zhang, X.-D.
+Atomically Precise Ag Clusters for Intelligent NIR-II Imaging. Matter
+2024, 7, 1660−1676.
+(42) Rai, S.; Agrawal, S.; Mukherjee, S. Intracellular Subdegree
+Temperature Sensing and Dynamics by Thermoresponsive Silver
+Nanoclusters as Molecular Probes. J. Phys. Chem. Lett. 2025, 16, 9316−
+9324.
+(43) Huang, Y.; Li, J.; Feng, H.; Du, H.; Deng, Z. A Rapidly
+Synthesized, Ultrasmall Silver Nanocluster for Near-Infrared-II
+Imaging and Metabolic Studies. Nano Lett. 2025, 25, 854−860.
+(44) Ansari, H.; Bharadwaj, N.; Pramanik, G.; Chakraborty, I.; Pathak,
+B.; Baksi, A. Enhancement of NIR II Emission of Au12Ag32 Clusters by
+Tuning the Au Positions. Small 2025, 21, 2502758.
+(45) Jiang, W.-H.; Zeng, X.-M.; Wu, M.; Qin, L.; Yao, L.-Y.; Yang, G.-
+Y. Thermally Activated Delayed Fluorescence-Based Near-Infrared-II
+Luminescence and Controlled Size Growth of Silver Nanoclusters. ACS
+Nano 2025, 19, 7129−7139.
+(46) Pang, Z.; Yan, W.; Yang, J.; Li, Q.; Guo, Y.; Zhou, D.; Jiang, X.
+Multifunctional Gold Nanoclusters for Effective Targeting, Near-
+Infrared Fluorescence Imaging, Diagnosis, and Treatment of Cancer
+Lymphatic Metastasis. ACS Nano 2022, 16, 16019−16037.
+(47) Sun, J.; Cheng, W.; Liu, X.; Xiang, H.; Ruan, C.; Chen, F.; Yao, C.
+Gold Clusters: A Promising NIR-II Probe for Bioimaging and
+Biosensing. Coord. Chem. Rev. 2025, 533, 216544.
+(48) Zhang, B.; Matus, M. F.; Yao, Q.; Song, X.; Wu, Z.; Hu, W.;
+Häkkinen, H.; Xie, J. Unraveling the Stoichiometric Interactions and
+Synergism between Ligand-Protected Gold Nanoparticles and
+Proteins. J. Am. Chem. Soc. 2025, 147, 6404−6414.
+(49) Liu, Z.; Luo, L.; Jin, R. Visible to NIR-II Photoluminescence of
+Atomically Precise Gold Nanoclusters. Adv. Mater. 2024, 36, 2309073.
+(50) Luo, L.; Liu, Z.; Du, X.; Jin, R. Near-Infrared Dual Emission from
+the Au42(SR)32 Nanocluster and Tailoring of Intersystem Crossing. J.
+Am. Chem. Soc. 2022, 144, 19243−19247.
+(51) Huang, Y.; Chen, K.; Liu, L.; Ma, H.; Zhang, X.; Tan, K.; Li, Y.;
+Liu, Y.; Liu, C.; Wang, H.; Zhang, X.-D. Single Atom-Engineered NIR-
+II Gold Clusters with Ultrahigh Brightness and Stability for Acute
+Kidney Injury. Small 2023, 19, 2300145.
+(52) Li, Q.; Zeman IV, C. J.; Ma, Z.; Schatz, G. C.; Gu, X. W. Bright
+NIR-II Photoluminescence in Rod-Shaped Icosahedral Gold Nano-
+clusters. Small 2021, 17, 2007992.
+(53) Yang, G.; Pan, X.; Feng, W.; Yao, Q.; Jiang, F.; Du, F.; Zhou, X.;
+Xie, J.; Yuan, X. Engineering Au44 Nanoclusters for NIR-II
+Luminescence Imaging-Guided Photoactivatable Cancer Immunother-
+apy. ACS Nano 2023, 17, 15605−15614.
+(54) Tian, W.-D.; Si, W.-D.; Havenridge, S.; Zhang, C.; Wang, Z.;
+Aikens, C. M.; Tung, C.-H.; Sun, D. Biomimetic Crystallization for
+Long-Pursued -COOH-Functionalized Gold Nanocluster with Near-
+Infrared Phosphorescence. Sci. Bull. 2024, 69, 40−48.
+Accounts of Chemical Research
+pubs.acs.org/accounts
+Article
+https://doi.org/10.1021/acs.accounts.5c00788
+Acc. Chem. Res. 2026, 59, 476−486
+486

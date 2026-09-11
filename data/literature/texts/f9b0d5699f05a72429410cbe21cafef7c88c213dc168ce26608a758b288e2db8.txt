@@ -1,0 +1,956 @@
+NIR-driven GOx-like nanozyme-modified injectable thermoresponsive 
+hydrogel for antibacterial therapy and bone regeneration in periodontitis
+Changxing Qu a,1, Tianying Luo b,1, Ruxia Han b, Dong Mo b, Kun Shi b, Xicheng Li b,  
+Zhongwu Bei b, Meng Pan b, Songtao Tan b, Jun Liu a,*, Zhiyong Qian b,*
+a State Key Laboratory of Oral Diseases & National Center for Stomatology & National Clinical Research Center for Oral Diseases, Department of Orthodontics, West 
+China Hospital of Stomatology, Sichuan University, Chengdu 610041, Sichuan, China
+b Department of Biotherapy, Cancer Center and State Key Laboratory of Biotherapy, West China Hospital, Sichuan University, Chengdu 610041, China
+A R T I C L E  I N F O
+Keywords:
+photothermal therapy
+glucose oxidase-like nanozyme
+injectable thermoresponsive hydrogel
+osteogenesis
+antibacterial
+periodontitis
+A B S T R A C T
+Periodontitis is a chronic inflammatory disease caused by bacterial infection, leading to the destruction of 
+periodontal tissues and impairment of oral function. The high-glucose microenvironment within periodontal 
+pockets promotes the proliferation of pathogenic bacteria, worsening periodontal infections. Glucose oxidase 
+(GOx)-like nanozymes can utilize elevated glucose levels locally to produce acid and hydrogen peroxide, aiding 
+in infection control. Nevertheless, the catalytic efficiency of these nanozymes is low. Enhancing their activity 
+may offer a promising approach for periodontitis treatment. Herein, we developed a NIR-driven hydrogel 
+(AgZ@Au/PLEL) incorporating Au nanoparticles (Au NPs)-modified zeolitic imidazolate framework-8 (ZIF-8) 
+loaded with Ag2S nanoparticles, aimed at treating periodontitis through antibacterial action and promotion of 
+alveolar bone regeneration. The thermosensitivity and injectability of PLEL hydrogel ensured effective appli­
+cation in complex periodontal structures. The Au NPs exhibit GOx-like activity, catalyzing the decomposition of 
+glucose in the periodontal pocket to produce acid and hydrogen peroxide. Upon exposure to near-infrared (NIR) 
+laser irradiation, the catalytic activity of Au NPs is enhanced, resulting in increased hydrogen peroxide pro­
+duction that synergizes with photothermal therapy (PTT) for antibacterial effects. Meanwhile, the increased acid 
+promotes ZIF-8 degradation, releasing zinc ions that stimulate alveolar bone regeneration. In vitro, laser- 
+irradiated hydrogel exhibited potent bactericidal activity against periodontitis pathogens and promoted bone 
+marrow stem cell differentiation. In vivo studies revealed that the NIR-driven nanosystem significantly enhanced 
+treatment efficacy for periodontitis. Therefore, the NIR-driven GOx-like nanozyme-modified injectable ther­
+moresponsive hydrogel offers a promising strategy for managing periodontitis.
+1. Introduction
+Periodontitis is a chronic inflammatory condition caused by patho­
+genic bacteria [1]. As the disease progresses, it progressively damages 
+periodontal tissues, including the alveolar bone, periodontal ligaments, 
+and gingiva. This ultimately leads to tooth loosening and loss, which 
+significantly impairs the patient’s pronunciation and mastication [2,3]. 
+Furthermore, periodontitis has been associated with systemic diseases, 
+such as cardiovascular disease, diabetes, and Alzheimer’s disease [4,5]. 
+Current treatment strategies for periodontitis primarily focus on elimi­
+nating infection and restoring periodontal tissues. Clinical interventions 
+for infection control include mechanical debridement and antibiotic 
+administration [6,7], and tissue repair is primarily achieved through 
+guided tissue regeneration (GTR) [8]. Nonetheless, mechanical 
+debridement is often ineffective in removing plaque from complex 
+anatomical sites, such as narrow and deep periodontal pockets and root 
+furcations [9]. The effectiveness of antibiotics is further compromised 
+by the rise of bacterial resistance [10]. Additionally, GTR has limited 
+efficacy in promoting alveolar bone regeneration [4,11]. Consequently, 
+there is a need for novel therapeutic approaches, such as antimicrobial 
+photothermal therapy (PTT) [12], nanozyme-based treatments [13], 
+and tissue engineering strategies [14], to eliminate pathogens and pro­
+mote alveolar bone regeneration.
+Patients with periodontitis often have elevated glucose levels in 
+* Corresponding authors.
+E-mail addresses: junliu@scu.edu.cn (J. Liu), zhiyongqian@scu.edu.cn (Z. Qian). 
+1 Equal contribution.
+Contents lists available at ScienceDirect
+Chemical Engineering Journal
+journal homepage: www.elsevier.com/locate/cej
+https://doi.org/10.1016/j.cej.2025.160108
+Received 13 November 2024; Received in revised form 21 January 2025; Accepted 30 January 2025  
+Chemical Engineering Journal 506 (2025) 160108 
+Available online 1 February 2025 
+1385-8947/© 2025 Published by Elsevier B.V. 
+
+periodontal pockets, resulting from high-sugar diets, poor oral hygiene, 
+and elevated blood glucose [15]. These increased local glucose levels 
+can promote the growth of pathogenic bacteria, such as porphyromonas 
+gingivalis (P. gingivalis) and fusobacterium nucleatum (F. nucleatum), 
+worsening periodontal infections [16]. Utilizing glucose as a substrate to 
+generate therapeutic products may represent a viable strategy for peri­
+odontitis treatment. Glucose oxidase (GOx) catalyzes the oxidation of 
+glucose to produce hydrogen peroxide and gluconic acid [13]. Mean­
+while, generated hydrogen peroxide can exert antibacterial effects to a 
+certain extent [17], and gluconic acid production reduces pH, altering 
+the local microenvironment. GOx-like nanozymes (e.g., Au NPs, black 
+phosphorus quantum dots) have been reported to mimic GOx catalytic 
+activity, achieving similar biochemical effects [18]. However, the 
+enzyme-mimicking activity of these nanozymes is relatively low due to 
+insufficient surface active sites, nanozyme aggregation, and size-related 
+factors [19–24]. Therefore, researchers are exploring various approachs 
+to address this limitation, including altering external conditions (such as 
+temperature and pH), controlling the synthesis conditions of nano­
+particles, and improving nanozymes dispersion [20,21,24]. Elevated 
+temperatures have been reported to enhance the kinetics of the GOx-like 
+nanozyme-catalyzed 
+process, 
+significantly 
+increasing 
+hydrogen 
+peroxide yield [19,25]. Therefore, incorporating heat-generating 
+methods, such as photothermal therapy (PTT), can enhance the cata­
+lytic activity, enabling GOx-catalyzed reactions to achieve therapeutic 
+effects.
+PTT converts light into heat, causing protein denaturation and 
+structural damage to bacterial cells [26]. Unlike conventional antibac­
+terial treatments, such as antibiotics or disinfectants, PTT provides a 
+localized approach that reduces resistance risk and minimizes systemic 
+side effects. Due to its controllability, broad-spectrum efficacy, and 
+rapid action, PTT has been widely used in antibacterial applications 
+[27]. Our group previously synthesized near-infrared (NIR) responsive 
+Ag2S nanoparticles as photothermal agents for PTT [28,29]. Ag2S was 
+chosen for strong NIR absorption, biocompatibility, and desirable pho­
+tothermal conversion, making it highly suitable for in vivo applications 
+[14,15]. Moreover, NIR light (700–1000 nm) allows deeper tissue 
+penetration and reduced phototoxicity, enhancing its in vivo 
+effectiveness.
+Metals and their derivatives have shown promise in bone regenera­
+tion applications [30]. Metal ions such as zinc, calcium, and cobalt 
+facilitate bone repair within specific concentration ranges [31]. Zinc 
+promotes osteoblast differentiation and mineralization [32,33], calcium 
+supports bone matrix formation [34], and cobalt enhances vasculari­
+zation [35], all essential for bone regeneration. Zeolitic imidazole 
+framework-8 (ZIF-8), a type of metal–organic framework (MOF), can 
+release zinc ions under acidic conditions [36]. This property has been 
+explored for its potential application in bone repair [37–39]. A key 
+challenge remains in artificially triggering and regulating zinc ion 
+release for optimal osteogenic effects. Recent advances include stimuli- 
+responsive materials, such as pH-sensitive or enzyme-degradable coat­
+ings, enabling more controlled and targeted release.
+Consequently, we developed an NIR-driven nanosystem that in­
+tegrates antibacterial properties with alveolar bone repair capabilities 
+for periodontitis treatment (Fig. 1). This nanosystem employs ZIF-8 as 
+the foundational matrix to encapsulate Ag2S nanoparticles, yielding 
+Ag2S@ZIF-8 nanoparticles (AgZ). Through ion exchange and in situ 
+reduction approaches, Au nanoparticles (Au NPs) were precisely 
+anchored onto the surface of AgZ, generating Ag2S@ZIF-8@Au 
+(AgZ@Au) nanoparticles. AgZ@Au nanoparticles were then incorpo­
+rated into an injectable thermoresponsive hydrogel composed of poly(D, 
+L-lactide)-poly(ethylene glycol)-poly(D,L-lactide) (PDLLA-PEG-PDLLA, 
+PLEL), yielding the AgZ@Au/PLEL hydrogel. Without NIR irradiation, 
+Fig. 1. Schematic illustration of the synthesis of AgZ@Au/PLEL hydrogel and its mechanism in promoting alveolar bone regeneration and exerting antibacterial 
+effects in periodontal pockets.
+C. Qu et al.                                                                                                                                                                                                                                       
+Chemical Engineering Journal 506 (2025) 160108 
+2 
+
+the surface-modified Au NPs exhibited GOx-like enzymatic activity, 
+catalyzing the decomposition of glucose within periodontal pockets into 
+hydrogen peroxide and gluconic acid. With laser irradiation, the 
+AgZ@Au/PLEL hydrogel generated localized heat, accelerating 
+nanozyme-catalyzed reactions and enhancing biological outcomes. 
+Increased hydrogen peroxide production synergized with PTT for potent 
+antibacterial effects, and reduced pH facilitated zinc ions release from 
+ZIF-8, promoting alveolar bone repair. Additionally, the thermosensi­
+tivity and injectability of PLEL hydrogel ensured effective application in 
+complex periodontal structures.
+2. Materials and methods
+2.1. Materials
+Methanol, dimethyl sulfoxide (DMSO), and chloroauric acid trihy­
+drate (HAuCl4⋅3H2O) were purchased from Adamas (China). Sodium 
+borohydride (NaBH4) and zinc nitrate hexahydrate (Zn(NO3)2⋅6H2O) 
+were bought from Beijing Chemicals (China). D,L-Lactide was bought 
+from Daigang chemicals (China). PEG (Mn = 1500) and stannous 
+octoate (Sn(Oct)2, 95 %) were obtained from Astatech (China). Sodium 
+sulfide nonahydrate (Na2S⋅9H2O) and silver nitrate (AgNO3) were pur­
+chased from Chengdu Kelong Chemical Reagent (China). 3-mercapto­
+propionic acid (3-MPA) was purchased from Sigma-Aldrich (USA). 
+Cell culture plates were purchased from Nest Biotechnology Co., Ltd 
+(China) and transwell plates were purchased from Corning (USA). Fetal 
+bovine serum (FBS), α-MEM and RIMP-1640 medium were obtained 
+from Thermo (USA). BCIP/NBT alkaline phosphatase color development 
+kit and hydrogen peroxide assay kit were bought from Beyotime 
+Biotechnology (China). Glucose detection kit was purchased from 
+Sigma-Aldrich (USA). Cell Counting Kit-8 (CCK-8) was bought from MCE 
+(USA). Alizarin Red S staining solution was purchased from Solarbio 
+(China). Live & Dead Bacterial Staining Kit and TRITC-phalloidin fluo­
+rescence probe were purchased from Yeasen (China).
+2.2. Synthesis and characterization of Ag2S NPs, Ag2S@ZIF-8 (AgZ) and 
+Ag2S@ZIF-8@Au (AgZ@Au)
+A total of 400 µL of 3-MPA (1 M) was added to 20 mL of deionized 
+(DI) water, and the pH was adjusted to 5.0 by the dropwise addition of 
+NaOH (100 mM) solution. Following this, 1.6 mL of AgNO3 solution (50 
+mM) was introduced, and the reaction was maintained at 50 ◦C for 1.5 h. 
+Subsequently, 0.4 mL of Na2S⋅9H2O solution (100 mM) was added, and 
+the reaction continued for an additional 8 h [28,29]. The final product 
+was collected by centrifugation at 15,000 rpm for 1 h and dried under 
+vacuum for 24 h.
+10 mg of Ag2S NPs and 50 mg of Zn(NO3)2⋅6H2O were dissolved in 3 
+mL of DI water. A solution of 2-methylimidazole (970 mg) was prepared 
+by dissolving in 2 mL of DI water. The latter was then added dropwise to 
+the former under stirring at 600 rpm for 10 min. The suspension was 
+centrifuged at 12,000 rpm for 15 min to collect the solid product, which 
+was washed three times with methanol and dried in vacuum for 24 h to 
+obtain Ag2S@ZIF-8 (AgZ).
+10 mg of AgZ were dissolved in 10 mL of methanol, followed by the 
+addition of 100 µL of HAuCl4 (50 mM). The reaction mixture was stirred 
+at 600 rpm for 24 h. The resulting solution was centrifuged at 12,000 
+rpm for 10 min, and the precipitate was resuspended in 5 mL of meth­
+anol. Then, 2.5 mg of sodium borohydride was added, and the reaction 
+was allowed to proceed until the solution turned wine-red. Ag2S@ZIF- 
+8@Au was obtained via washing with methanol, centrifuging (12000 
+rpm, 10 min), and vacuum-dried overnight.
+The morphology of the obtained products was examined using a 
+transmission electron microscope (TEM) and high-resolution TEM 
+(Talos F200S, FEI, USA). Elemental mapping of AgZ@Au was performed 
+using scanning transmission electron microscopy (STEM) and corre­
+sponding energy-dispersive X-ray spectroscopy (EDS, SUPER X, FEI, 
+USA). The particle size and zeta potential were determined by dynamic 
+light scattering (DLS) using an Anton Paar Litesizer 500 (Anton Paar, 
+Austria). The elemental composition was analyzed with X-ray photo­
+electron spectroscopy (XPS) using a Thermo Fisher K-ALPHA system 
+(Thermo Fisher, USA). The crystal structures of AgZ and AgZ@Au were 
+characterized by X-ray diffraction (XRD) using a Rigaku Ultima IV 
+diffractometer (Rigaku, Japan). UV–vis spectra were obtained with a 
+Hitachi U-2900 spectrophotometer (Hitachi, Japan).
+2.3. Synthesis and characterization of PLEL, Ag2S/PLEL, AgZ/PLEL and 
+AgZ@Au/PLEL hydrogel
+The synthesis of PDLLA-PEG-PDLLA (PLEL) was conducted following 
+our previously established method [40–43]. Briefly, PEG (Mn = 1500) 
+was heated under vacuum at 100 ◦C to remove residual moisture. D, L- 
+lactide and Sn(Oct)2 were then added in a specified ratio, and the re­
+action was carried out under a nitrogen atmosphere at 140 ◦C for 10 h. 
+The resulting crude product was dissolved in water and stirred at room 
+temperature. The solution was subsequently heated to 80 ◦C, allowing 
+the product to precipitate. This purification process was repeated once, 
+and the final product was lyophilized to constant weight to obtain the 
+PDLLA-PEG-PDLLA (PLEL) triblock copolymer. The obtained polymer 
+was then dissolved in PBS (pH 7.4) and stirred overnight at 4 ◦C to form 
+the PLEL hydrogel. Ag2S NPs, AgZ, and AgZ@Au were dissolved in DI 
+water to prepare solutions at specified concentrations. These solutions 
+were then combined with PLEL hydrogel at a defined ratio and stirred 
+overnight at 4 ◦C to yield the corresponding hydrogels.
+After that, the sol–gel phase transition of the hydrogels was assessed 
+using the test tube inversion method. The samples were initially placed 
+at 4 ◦C for 10 min. Following this, the tubes were inverted by 180◦, and 
+the flow of the hydrogel was observed within 1 min. If no flow was 
+observed, the sample was deemed to be in the gel state; Otherwise, it was 
+classified as a solution. Photographs were taken to document the 
+appearance changes at various temperatures.
+The rheological properties of the hydrogels were assessed using a 
+rotational rheometer (HAAKE Rheostress 6000, Thermo Scientific, 
+USA). Both the blank PLEL (20 wt%) and AgZ@Au/PLEL hydrogel (20 
+wt%), pre-cooled to 4 ◦C, were placed onto a circular plate with a 
+diameter of 20 mm, maintaining a 1 mm gap between the fixture and the 
+plate. The storage modulus (G’) and loss modulus (G’’) were measured 
+over a temperature range from 4 ◦C to 60 ◦C at a controlled heating rate 
+of 1 ◦C /min. Measurements were conducted under constant frequency 
+(1.0 Hz) and constant stress (4.0 dyn/cm2).
+2.4. Zn2+ release in vitro
+The in vitro release behavior of AgZ@Au/PLEL hydrogel (20 wt%) 
+under various conditions was evaluated. A 2 mL sample of hydrogel 
+containing 100 µg/mL of AgZ@Au was introduced into a 50 mL glass 
+vial and allowed to gel at 37 ◦C for 30 min. Subsequently, 15 mL of pre- 
+warmed PBS solution (pH 7.4 or pH 6.5) was gently added, and the 
+mixture was shaken lightly at 100 rpm at 37 ◦C. At designated time 
+points (t = 0.5 h, 1 h, 6 h, 12 h, 24 h, 72 h, 168 h, 336 h, 504 h), 2 mL of 
+the release medium was sampled and replaced with an equal volume of 
+fresh PBS. Additionally, for one group in PBS at pH 7.4, samples were 
+collected after exposure to 808 nm laser irradiation (2.0 W/cm2, 5 min). 
+All collected release media were stored at 4 ◦C, and the amount of Zn2+
+released was quantified using inductively coupled plasma-optical 
+emission spectrometry (ICP-OES) (Agilent 5100, Agilent, USA).
+2.5. Evaluation of photothermal performance
+A thermal imaging camera (Fluke Ti32, Fluke, USA) was employed to 
+monitor the temperature variations of AgZ and AgZ@Au solutions (0 ~ 
+500 µg/mL) under 808 nm laser irradiation (2.0 W/cm2, 5 min). Tem­
+perature changes of a 100 µg/mL AgZ@Au solution were also recorded 
+C. Qu et al.                                                                                                                                                                                                                                       
+Chemical Engineering Journal 506 (2025) 160108 
+3 
+
+under varying laser intensities. The photothermal stability of the solu­
+tions was assessed over five consecutive photothermal cycles, with each 
+cycle comprising 10 min of irradiation followed by 10 min of cooling. 
+The photothermal conversion efficiency was calculated according to the 
+method described in our previous study [29,44].
+2.6. Assessment of GOx-like catalytic properties
+A 50 µg/mL solution of AgZ@Au was added to β-D-glucose solutions 
+at varying concentrations (0, 20, 40, 60, 80, 100 mM) and incubated for 
+5 h at either 25 ◦C or 50 ◦C. The hydrogen peroxide content in the re­
+action mixtures was quantified using a H2O2 detection kit (Beyotime, 
+China), and the pH levels were measured with a micro pH electrode 
+(Mettler Toledo, Switzerland). The glucose conversion rate was deter­
+mined using a glucose assay kit.
+2.7. Antibacterial performance in vitro
+Porphyromonas gingivalis (P. gingivalis, ATCC33277) and Fuso­
+bacterium nucleatum (F. nucleatum, ATCC10953) were cultured at 37 ◦C 
+under anaerobic conditions (80 % N2, 10 % H2, and 10 % CO2). The 
+growth medium consisted of brain heart infusion (BHI, Oxoid, UK) 
+supplemented with yeast extract (5 mg/mL), menadione (1 mg/mL), and 
+hemin (5 mg/mL).
+2.7.1. Growth curves plotting
+The antibacterial activity of various treatment groups (PBS, PBS +
+NIR, AgZ/PLEL, AgZ/PLEL + NIR, AgZ@Au/PLEL + NIR, AgZ@Au/ 
+PLEL + Glu, AgZ@Au/PLEL + Glu + NIR) was assessed by generating 
+growth curves for P. gingivalis and F. nucleatum. The assay was conducted 
+using 24-well transwell plates, with 100 µL of hydrogel containing 
+nanoparticles (100 µg/mL) added to each transwell chamber, while 1 mL 
+of bacterial suspension (P. gingivalis at OD600 = 0.13, F. nucleatum at 
+OD600 = 0.14) was introduced into the wells. The samples were then 
+either subjected to 808 nm laser irradiation (2 W/cm2, 5 min) or incu­
+bated in the dark. Optical density at 600 nm (OD600) was measured at 
+predefined intervals (0, 6 h, 24 h, 48 h, 72 h) to monitor bacterial 
+growth, and growth curves were plotted to evaluate the antibacterial 
+inhibition of each treatment group.
+2.7.2. CFU counting
+Bactericidal activity of the various treatment groups was evaluated 
+via colony-forming unit (CFU) counting using the plate-coating method, 
+alongside OD600 measurements. The experiment was performed in 24- 
+well transwell plates, with each well containing 1 mL of bacterial sus­
+pension (P. gingivalis at OD600 = 0.40, F. nucleatum at OD600 = 0.25). 
+Samples were exposed to 808 nm laser irradiation (2 W/cm2, 5 min) or 
+incubated in the dark. After 6 h of incubation at 37 ◦C, OD600 values 
+were recorded. Each bacterial suspension was diluted 105-fold, and 100 
+µL of the diluted solution was plated on blood agar. P. gingivalis plates 
+were incubated for 120 h and F. nucleatum plates for 48 h, after which 
+CFU counts were conducted to determine bacterial viability.
+2.7.3. Live/dead staining
+After treatment, 100 µL of the bacterial suspension was collected and 
+resuspended in an equal volume of 0.9 % NaCl solution. Samples were 
+stained using the Live & Dead Bacterial Staining Kit, and 5 µL of the 
+stained suspension was placed on a microscope slide, and covered with 
+an 18 mm square coverslip. Fluorescent microscopy (DMi8, Leica, Ger­
+many) was employed to capture images.
+2.7.4. Bacteria morphology observation
+After treatment, the bacterial suspensions were centrifuged at 6000 
+rpm for 10 min. The resulting pellets were fixed with 2.5 % glutaral­
+dehyde and subsequently dehydrated through a graded ethanol series 
+(30 %, 50 %, 70 %, 80 %, 90 %, and 100 %, v/v). Dehydrated samples 
+were dispersed onto clean silicon wafers, air-dried, and coated with 
+gold. Bacterial morphology was observed using a scanning electron 
+microscope (SEM, JSM-IT700HR, JEOL, Japan).
+2.8. Cytocompatibility assessment
+Rat bone marrow mesenchymal stem cells (rBMSCs) were isolated 
+from the femurs of 4-week-old Sprague-Dawley (SD) rats and cultured in 
+α-MEM supplemented with 15 % fetal bovine serum and 1 % penicillin/ 
+streptomycin. Mouse fibroblasts (L929) were cultured in RPMI-1640 
+medium containing 10 % FBS and 1 % penicillin/streptomycin. All 
+cells were incubated at 37 ◦C in a humidified atmosphere of 5 % CO2.
+2.8.1. Cell counting kit-8 (CCK-8) assay
+The assay was performed in 24-well transwell plates, with 50 µL of 
+hydrogel (Ag2S, AgZ, or AgZ@Au at 100 µg/mL) placed in the transwell 
+chambers, and L929 or rBMSC cells (5000 cells/well) seeded in the 
+lower wells. The culture medium for L929 and rBMSC cells was replaced 
+with a mixture of CCK-8 reagent and fresh medium (1:10, v/v) after 1 
+and 3 days of incubation, respectively. The plates were then incubated in 
+the dark for 2 h, and absorbance was measured at 450 nm.
+2.8.2. Assessment of cellular morphology
+Following treatment, the cell nuclei were stained with DAPI, and the 
+cytoskeleton was stained with TRITC-phalloidin fluorescence probe. 
+Cellular morphology was visualized using a confocal microscope 
+(FV3000, Olympus, Japan).
+2.9. In vitro osteogenic differentiation
+rBMSCs at passages 2 ~ 4 were utilized to evaluate the osteogenic 
+differentiation potential of the hydrogel in vitro.
+2.9.1. Alkaline phosphatase (ALP) staining
+This assay was performed using transwell plates, with the medium 
+replaced every 3 days. On days 3 and 7, ALP staining was performed 
+using the BCIP/NBT alkaline phosphatase color development kit, 
+following the manufacturer’s instructions. Stained cells were observed 
+and imaged using an inverted microscope (Leica, Germany).
+2.9.2. Alizarin red s (ARS) staining
+rBMSCs (1000 cells/well) were cultured in wells beneath the trans­
+well chambers, with the medium replaced every 3 days. On days 14 and 
+21, cells were fixed in 4 % paraformaldehyde and stained with ARS. 
+After being washed three times with DI water, cells were observed and 
+imaged using an inverted microscope.
+2.10. In vivo periodontitis treatment
+This animal study was approved by the Animal Ethics Committee of 
+West China Hospital of Stomatology, Sichuan University. Twenty-four 
+male SD rats (approximately 200 g each) were randomly assigned to 
+six groups: healthy control (HL), Control, AgZ/PLEL + NIR, AgZ@Au/ 
+PLEL + NIR, AgZ@Au/PLEL + Glu, and AgZ@Au/PLEL + NIR + Glu (n 
+= 4 per group). Periodontitis was induced using a ligature and bacterial 
+injection method. Specifically, a 4–0 silk suture was placed around the 
+second maxillary molar of each rat, followed by injection of 20 µL of 
+P. gingivalis suspension (OD600 = 0.4) into the gingival sulcus every 24 h 
+for 2 weeks.
+After the periodontitis model was established, 20 µL of hydrogel was 
+injected into the periodontal pockets. The rats were subjected to 808 nm 
+laser irradiation (2 W/cm2) for 5 min or left untreated. Temperature 
+variations and photothermal images were recorded using a thermal 
+imaging camera. This treatment regimen was repeated at 7-day intervals 
+for a total of 2 weeks. Gingival sulcus fluid was collected with sterile 
+cotton swabs, and microbial colony counts were determined on coated 
+C. Qu et al.                                                                                                                                                                                                                                       
+Chemical Engineering Journal 506 (2025) 160108 
+4 
+
+plates.
+Upon completion of the treatment, the rats were euthanized, and the 
+maxillary bone and organ tissues were harvested. Micro-computed to­
+mography (Micro-CT, PerkinElmer, USA) was utilized to assess changes 
+in alveolar bone structure. Maxillary bones were decalcified and pro­
+cessed for hematoxylin-eosin (HE) staining and Masson’s trichrome 
+staining 
+to 
+evaluate 
+histopathological 
+alterations. 
+Immunohistochemistry was conducted to detect the expression of IL-1β 
+and IL-6 expression in periodontal tissues. Additionally, major organs 
+(heart, liver, spleen, kidneys, and lungs) were stained with HE to assess 
+the potential toxicity of the hydrogel.
+Fig. 2. Characterization of Ag2S, AgZ, and AgZ@Au. TEM of (a) Ag2S, (b) AgZ, (c) AgZ@Au. (d) the corresponding SAED pattern of Au NPs in figure c. (e) HAADF- 
+STEM image of AgZ@Au and the corresponding EDS elemental mappings. Particle size distribution (f) and average zeta potential (g) of each step during the 
+fabrication of AgZ@Au. (h) The whole XPS survey spectrum of Ag2S, AgZ, and AgZ@Au. The red-boxed inset shows an enlarged view of (i) the Au4f spectra of 
+AgZ@Au. (j) XRD pattern of ZIF-8, AgZ, and AgZ@Au. The blue-boxed inset shows an enlarged view of (k) the characteristic diffraction peaks of gold in AgZ@Au. (l) 
+UV–vis absorption spectrum of AgZ@Au.
+C. Qu et al.                                                                                                                                                                                                                                       
+Chemical Engineering Journal 506 (2025) 160108 
+5 
+
+3. Results and discussion
+3.1. Fabrication and characterization of Ag2S NPs, AgZ and AgZ@Au
+In our previous work, NIR-responsive PTT reagents (Ag2S NPs) using 
+3-mercaptopropionic acid (3-MPA) as protecting agent were prepared 
+for component optimization through a green and safe chemical copre­
+cipitation method [28,29]. The Ag2S NPs exhibited homogeneous dis­
+persity with an average size of ~17.0 nm, as revealed by transmission 
+electron microscopy (TEM) (Fig. 2a). The Ag2S NPs were subsequently 
+coated with an acid-responsive zeolitic imidazolate framework-8 (ZIF-8) 
+to construct a nanosystem. With an optimized mass ratio of Zn2+/2- 
+methylimidazole (1:19.4), the ZIF-8 coated Ag2S NPs were spherical-like 
+with a particle size of ~ 240 nm (Fig. 2b) and named AgZ. Subsequently, 
+Au3+ replaced Zn2+ in ZIF-8 through ion exchange, followed by in situ 
+reduction to generate Au nanoparticles (Au NPs), resulting in the NIR- 
+driven nanosystem (AgZ@Au) (Fig. 1). The morphology of AgZ@Au 
+was observed by TEM, displaying spherical-like particles with average 
+diameter of ~170 nm (Fig. 2c). The high-resolution TEM (HRTEM) 
+image (Fig. S1) revealed that Au NPs (~5 nm) were homogeneously 
+anchored to the surface of AgZ, with the 0.23 nm lattice spacing 
+belonging to Au (111) planes. The SAED pattern (Fig. 2d) confirmed the 
+high crystallinity of the Au NPs. High-angle annular dark-field scanning 
+transmission electron microscopy (HAADF-STEM) and elemental map­
+ping of AgZ@Au (Fig. 2e) showed the homogenous distribution of Ag, S, 
+Zn, Au within nanosystem, confirming the successful construction of the 
+ZIF-8 entity, Ag2S NPs, and Au NPs, respectively. Moreover, the mass 
+fractions of Zn, Ag, and Au in AgZ@Au were determined to be 18.4 %, 
+13.0 %, and 9.8 %, respectively, using ICP-OES.
+The zeta potential and particle size of AgZ@Au were further 
+analyzed. As shown in Fig. 2f, g, the zeta potential of AgZ@Au was 
+measured as −10.95 mV, with a hydrated diameter of ~ 247 nm. The x- 
+ray photoelectron spectroscopy (XPS) analysis confirmed that the Au 
+element (Fig. 2h) and two distinct peaks in Au4f spectra (Fig. 2i and 
+Fig. S2) were only observed in AgZ@Au nanosystem and were absent in 
+AgZ and Ag2S NPs. Au peaks appeared at 84.10 eV (4f7/2) and 87.73 eV 
+(4f5/2) (Fig. 2h, i). X-ray Diffraction (XRD) analysis (Fig. 2j) revealed 
+that the crystal structures of AgZ@Au and AgZ were similar to ZIF-8, 
+indicating the preservation of the fundamental structure of ZIF-8. 
+Compared to AgZ, AgZ@Au displayed distinctive diffraction peaks for 
+the (111), (220), and (311) crystal planes of Au NPs (Fig. 2k) [45,46]. 
+XPS and XRD analyses confirmed the successful surface modification of 
+Fig. 3. Photothermal performance and GOx-like catalytic properties. (a) photothermal images and (b) curves of AgZ@Au with different concentrations (0–500 µg/ 
+mL). (c) Power-dependent temperature variation of AgZ@Au. (d) Photothermal cycling curves of AgZ@Au (100 µg/mL) over five cycles (10 min of irradiation 
+followed by 10 min of cooling), along with (e) the curve of a single cycle. (f) The linear fitting curve of time vs. −Lnθ based on the data from the cooling phase. The 
+production of hydrogen peroxide and corresponding pH values at 25 ◦C (g) and 50 ◦C (h) under the catalysis of AgZ@Au (50 µg/mL) with different concentrations of 
+β-D-glucose. (i) Glucose conversion efficiency of AgZ@Au at different concentrations and reaction temperatures.
+C. Qu et al.                                                                                                                                                                                                                                       
+Chemical Engineering Journal 506 (2025) 160108 
+6 
+
+AgZ with Au NPs. As shown in Fig. 2l, AgZ and Ag2S exhibited weak 
+absorption in the NIR region. However, the introduction of Au NPs in 
+AgZ@Au resulted in a significant increase in optical absorption in the 
+NIR region, likely attributed to the localized surface plasmon resonance 
+(LSPR) effect of Au NPs [47,48].
+3.2. Evaluation of photothermal performance
+Photothermal images of AgZ@Au under laser irradiation were 
+captured using a thermal imager (Fig. 3a). Fig. 3b and c showed that the 
+temperature of AgZ@Au increased with higher concentration and laser 
+intensity. The temperature of AgZ@Au (100 µg/mL) rose by 30.4 ◦C 
+after 300 s of exposure to an 808 nm laser at 2 W/cm2, followed by a 
+concentration-dependent way. Similarly, AgZ also displayed a compa­
+rable concentration-dependent photothermal response (Fig. S3a), pri­
+marily attributed to the incorporated Ag2S (Fig. S4), as demonstrated in 
+our previous studies [28,29]. Notbaly, AgZ@Au exhibited superior 
+photothermal performance compared to AgZ. This enhancement is pri­
+marily attributed to the localized surface plasmonic resonance (LSPR) of 
+surface-modified Au NPs [47,48], which generated additional heat 
+under the same laser intensity, leading to a higher temperature increase. 
+Meanwhile, the intrinsic photothermal effect of Au NPs is minimal 
+(Fig. S5), underscoring the necessity of Ag2S incorporation. Further­
+more, even after five irradiation/cooling cycles, the quantitative tem­
+perature profile of AgZ@Au remained consistent, demonstrating the 
+sufficient photothermal stability of the material (Fig. 3d). Based on 
+cooling phase data from a photothermal cycle (Fig. 3e, f, Fig. S3b and c) 
+and using Roper’s method [44], the photothermal conversion effi­
+ciencies of AgZ@Au and AgZ were determined to be 33.3 % and 28.7 %, 
+respectively. The enhanced photothermal effect of AgZ@Au may be 
+attributed to the modification of Au NPs.
+3.3. Assessment of GOx-like catalytic properties
+Fig. 3g showed that AgZ@Au increased hydrogen peroxide levels and 
+decreased pH with increasing β-D-glucose concentration. This effect is 
+attributed to the Au NPs in AgZ@Au, which act as GOx-like nanozymes, 
+converting glucose into hydrogen peroxide and gluconic acid. To mimic 
+Fig. 4. Characterization of blank PLEL and AgZ@Au/PLEL hydrogels. (a) In vitro sol–gel transition of blank PLEL and AgZ@Au/PLEL. (b) Variations in storage 
+modulus (G’) and loss modulus (G’’) of blank PLEL and AgZ@Au/PLEL as a function of temperature. (c) Cumulative Zn2+ release from AgZ@Au/PLEL hydrogel (100 
+µg/mL) at different pH levels (pH 6.5 and pH 7.4).
+C. Qu et al.                                                                                                                                                                                                                                       
+Chemical Engineering Journal 506 (2025) 160108 
+7 
+
+Fig. 5. In vitro antibacterial efficacy. (a) Growth curves of P. gingivalis and F. nucleatum over 72 h with different treatments. (b) Images of coated plates and (e) the 
+corresponding CFU counting of different groups. (c) Fluorescence images of live/dead staining (scale bar = 100 µm) and (f) the corresponding live/dead bacterial 
+ratios. (d) Micro-morphology of P. gingivalis and F. nucleatum characterized by SEM after different treatments (scale bar = 1 µm, red mark the shrinking and damaged 
+bacteria). (n = 3. ns p＞0.05, *p < 0.05, **p < 0.01, ***p < 0.001.).
+C. Qu et al.                                                                                                                                                                                                                                       
+Chemical Engineering Journal 506 (2025) 160108 
+8 
+
+laser-induced thermal effects, the system was heated to 50 ◦C in a water 
+bath. The catalytic activity significantly improved, with hydrogen 
+peroxide production increasing by almost 1.5-fold at 100 mM β-D- 
+glucose, and a pH decrease from 2.3 to 2.2 (Fig. 3h). Fig. 3i showed that 
+the glucose conversion rate at 50 ◦C is higher than at 25 ◦C regardless of 
+concentration. The heat generated by the photothermal effect facilitated 
+the production of hydrogen peroxide and gluconic acid, with surface- 
+modified Au NPs playing a key role in this process.
+3.4. Characterization of hydrogel
+PLEL is an amphiphilic block copolymer composed of a hydrophilic 
+PEG segment and a hydrophobic polylactic acid segment, which spon­
+taneously forms micelles with a core–shell structure in aqueous solution 
+(Fig. 1). The applicability of PLEL as a carrier for periodontitis treatment 
+depends on its ability to undergo sol–gel transformation at physiological 
+temperature. The in vitro gelation of AgZ@Au/PLEL was evaluated via 
+the tube inversion method (Fig. 4a). The system exhibited a flowable sol 
+state at 4 ◦C. As the temperature increased, PLEL micelles enlarged, 
+leading to aggregation and bridging, forming a semisolid hydrogel at 
+37 ◦C, and reverting to a fluid state at 55 ◦C. Both the unmodified 
+hydrogel and the hydrogel with 100 µg/mL AgZ@Au displayed this 
+reversible phase transition. The phase transition at 37 ◦C highlights the 
+hydrogel’s suitability for in vivo injection, whereas the transition at 
+55 ◦C suggested that laser exposure can alter its morphology, demon­
+strating its temperature sensitivity and photo-responsiveness.
+To further elucidate the dynamic mechanical behavior of the PLEL 
+hydrogel under temperature variation, dynamic rheological experi­
+ments were performed (Fig. 4b). Consistent with macroscopic charac­
+terization, AgZ@Au/PLEL hydrogel exhibited thermosensitive behavior 
+similar to that of blank PLEL. Specifically, when the temperature 
+exceeded ~37 ◦C, both the storage modulus (G’) and loss modulus (G’’) 
+increased rapidly, the storage modulus (G’) exceeded the loss modulus 
+(G’’), indicating a gel state. At temperatures above ~42 ◦C, the loss 
+modulus (G’’) surpassed the storage modulus (G’), showing a transition 
+to a sol state.
+Fig. 6. In vitro cytocompatibility evaluation. Cell viability of L929 (a) and rBMSCs (b) following treatment with different hydrogels in CCK-8 assay. (c) Morphology of 
+rBMSCs stained with DAPI (blue) and TRITC-phalloidin (red) (scale bar = 50 µm).
+C. Qu et al.                                                                                                                                                                                                                                       
+Chemical Engineering Journal 506 (2025) 160108 
+9 
+
+The in vitro release kinetics of the hydrogel were studied. Fig. 4c 
+showed that the AgZ@Au/PLEL hydrogel steadily released Zn2+ over 21 
+days, reaching a cumulative release of 67.17 % at pH 7.4 after 504 h. 
+Lower pH levels significantly enhanced Zn2+ release. Moreover, laser 
+irradiation before each medium collection in the laser group increased 
+Zn2+ release by 10.03 % after 504 h (Fig. S6). Therefore, such release 
+kinetics create favorable conditions for the NIR-driven release of zinc 
+ions.
+3.5. In vitro antibacterial effect
+AgZ@Au is expected to exhibit significant antibacterial potential, 
+attributed to its excellent photothermal conversion and photothermally 
+enhanced catalytic performance. The antibacterial efficacy of AgZ@Au 
+was tested on P. gingivalis and F. nucleatum. The inhibitory effects on 
+their growth were evaluated by plotting bacterial growth curves under 
+different treatments. As illustrated in Fig. 5a, without laser irradiation, 
+the growth curve for the AgZ/PLEL group exhibited a gradual increase, 
+indicating a relatively slow proliferation of P. gingivalis. Conversely, the 
+number of bacteria of AgZ@Au/PLEL with the addition of β-D-glucose 
+decreased by 33.1 % after 72 h, attributed to the generated hydrogen 
+peroxide from glucose. With laser irradiation, the AgZ@Au/PLEL + NIR 
+group’s number of bacteria consistently decreased by 35.4 %, while the 
+AgZ@Au/PLEL + Glu + NIR group exhibited a significant decrease of 
+almost 100 %. This indicated that the photothermally enhanced cata­
+lytic efficiency of AgZ@Au provided an effective antibacterial effect in 
+the presence of glucose. Fig. 5b and Fig. S7 showed spread plate images 
+of pathogenic bacteria under various treatments. As illustrated in Fig. 5b 
+and e, many colonies remained in the AgZ/PLEL group even after laser 
+irradiation, while laser irradiation of AgZ@Au/PLEL significantly 
+reduced the CFU. This can be attributed to the stronger photothermal 
+properties of AgZ@Au, which can generate more heat to promote anti­
+bacterial activity. Meanwhile, a significant reduction of colonies was 
+also observed in the AgZ@Au/PLEL + Glu group, where the hydrogen 
+peroxide generated from glucose catalyzed by the GOx-like nanozyme 
+exerted antibacterial effects. However, this effect was insufficient for 
+complete bacterial eradication, highlighting the necessity for further 
+enhancement. The group further reduced visible colonies after adding 
+both glucose and laser irradiation, with 99.72 % and 99.93 % antibac­
+terial rates against P. gingivalis and F. nucleatum, respectively. The OD600 
+measurements showed in Fig. S8 aligned with the plate-counting results, 
+showing the lowest values for the AgZ@Au/PLEL + Glu + NIR group 
+(P. gingivalis: 0.24; F. nucleatum: 0.21). Its superiority arises from the 
+coordination between the nanozyme catalytic reaction and laser irra­
+diation, which significantly elevated hydrogen peroxide levels in this 
+process. The live/dead assay results further ensured that AgZ@Au/PLEL 
+plus laser management with the addition of glucose caused more bac­
+terial death (Fig. 5C and 5D).
+SEM was used to further investigate changes in the bacterial 
+morphology during treatment. As shown in Fig. 5d, untreated bacterial 
+cells exhibited smooth and intact cell walls. In contrast, surface rough­
+ness and wrinkling were observed following treatment with AgZ@Au/ 
+PLEL + Glu or AgZ@Au/PLEL + NIR. Notably, the treatment of 
+AgZ@Au/PLEL + NIR + Glu resulted in significant surface roughness 
+and a complete loss of membrane integrity on both bacteria. These re­
+sults were consistent with the spread plate experiments, indicating that 
+Fig. 7. Osteogenic differentiation in vitro. (a) ALP staining after 3 and 7 days of incubation (scale bar = 100 µm) and with the corresponding quantitative analysis (c, 
+d). (b) ARS staining after 14 and 21 days of incubation (scale bar = 150 µm) and with the corresponding quantitative analysis (e, f). (n = 3. *p < 0.05, **p < 0.01, 
+***p < 0.001, ****p < 0.0001.).
+C. Qu et al.                                                                                                                                                                                                                                       
+Chemical Engineering Journal 506 (2025) 160108 
+10 
+
+the AgZ@Au exhibited photothermally enhanced catalytic reaction to 
+improve antibacterial activity against P. gingivalis and F. nucleatum.
+3.6. In vitro cytocompatibility evaluation
+In addition to the remarkable antibacterial capabilities, ensuring the 
+biocompatibility of the material is crucial for promoting periodontitis 
+recovery. The biocompatibility of PLEL hydrogel loaded with different 
+components was assessed using a CCK-8 assay. Fig. 6a and Fig. S9
+showed that AgZ/PLEL and AgZ@Au/PLEL maintained over 80 % L929 
+cell viability at concentrations of 0–100 µg/mL. Therefore, 100 µg/mL 
+was selected for AgZ@Au in subsequent in vitro cell experiments. 
+Additionally, all three hydrogels demonstrated biocompatibility with 
+rBMSCs (Fig. 6b).
+The impact of the AgZ@Au/PLEL hydrogel on rBMSC morphology 
+was assessed. Fig. 6c showed that rBMSCs in all groups maintained 
+normal morphology, with elongated spindle-shaped or polygonal forms. 
+These results confirm the biocompatibility of the rationally designed and 
+synthesized AgZ@Au/PLEL for future biomedical applications.
+Fig. 8. Therapeutic efficacy in rat periodontitis model. (a) Schematic diagram of the animal experimental procedure. (b) Images of silk ligation, hydrogel injection, 
+laser exposure, and a local magnified view of the maxillary molars post-model establishment. (c) Photothermal images of the rats and (e) temperature change curves 
+following different treatments. (d) Micro-CT with 3D reconstruction and coronal images of the maxillae in different groups (Scale bar = 1 mm). Region between red 
+dashed lines: the CEJ-ABC region; red arrow: the CEJ-ABC distance. Measurements based on Micro-CT: (f) CEJ-ABC distance on both the buccal and palatal sides, (g) 
+BV and (h) BV/TV calculated from the micro-CT results. (n = 4. *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001.).
+C. Qu et al.                                                                                                                                                                                                                                       
+Chemical Engineering Journal 506 (2025) 160108 
+11 
+
+3.7. Osteogenic differentiation in vitro
+The ability of hydrogels to induce osteogenic differentiation of 
+rBMSCs in vitro was assessed by alkaline phosphatase (ALP) staining and 
+alizarin red S (ARS) staining. ALP serves as a marker of early osteogenic 
+differentiation. Fig. 7a showed that minimal blue staining in the PLEL 
+and Ag2S/PLEL groups, whereas the AgZ/PLEL group exhibited signifi­
+cant blue staining, possibly due to zinc ions from ZIF-8 enhancing 
+osteogenic differentiation and ALP activity [49,50]. In the AgZ@Au/ 
+PLEL group, blue staining intensified with glucose or laser irradiation, 
+indicating elevated ALP expression. Glucose was converted to gluconic 
+acid via AgZ@Au, facilitating ZIF-8 decomposition and zinc ion release. 
+Additionally, NIR irradiation can also enhance zinc ion release, as 
+confirmed in our hydrogel release kinetics studies. The AgZ@Au/PLEL 
++ Glu + NIR group exhibited the most intense blue staining and the 
+highest ALP expression, surpassing the additive effects of the individual 
+treatments. In this group, the NIR-induced temperature rise boosted the 
+GOx-like catalytic activity of AgZ@Au, generating more acid and pro­
+moting the release of zinc ions from ZIF-8. (Fig. 7c and d).
+Subsequently, ARS staining was employed to evaluate calcium 
+nodule formation. This is an essential biomarker of late-stage osteogenic 
+differentiation. On day 14, significant Alizarin Red staining was 
+observed only in the AgZ@Au/PLEL + Glu + NIR group (Fig. 7b), 
+whereas other groups only showed minimal staining. Quantitative 
+analysis further confirmed that groups containing zinc ions (AgZ/PLEL, 
+AgZ@Au/PLEL + Glu, AgZ@Au/PLEL + NIR, AgZ@Au/PLEL + Glu +
+Fig. 9. Histopathologic analysis. (a) Histological examination using H&E staining of periodontal tissues post-treatment across various groups (scale bar = 200 and 
+50 μm). Yellow-bordered area: Histological morphology of the alveolar bone tissue. (b) Masson’s trichrome staining images (scale bar = 200 μm and 50 μm). Images 
+in the second row are magnifications of the yellow-bordered areas in the corresponding images of the first-row images. (c) Immunohistochemical images showing the 
+expression of IL-1β and IL-6 (scale bar = 100 μm).
+C. Qu et al.                                                                                                                                                                                                                                       
+Chemical Engineering Journal 506 (2025) 160108 
+12 
+
+NIR) had higher values compared to those without zinc ions (PLEL, 
+Ag2S/PLEL) (Fig. 7e). On day 21, the AgZ@Au/PLEL + Glu, AgZ@Au/ 
+PLEL + NIR, and AgZ@Au/PLEL + Glu + NIR groups displayed exten­
+sive dark red staining, indicating substantial calcium nodule formation 
+(Fig. 7b and f). These results indicated that the NIR-driven hydrogel 
+promoted early osteogenic differentiation and supported later-stage 
+alveolar bone regeneration.
+3.8. Therapeutic efficacy of periodontitis in vivo
+Considering the excellent antibacterial ability, osteogenic capacity, 
+and good biocompatibility of AgZ@Au in vitro, its anti-periodontitis 
+effect was investigated in vivo. The whole in vivo experiment process 
+was shown in Fig. 8a, including the establishment of periodontitis model 
+and the treatment process. The model was established using a ligature 
+and bacterial injection. After that, hydrogels were injected into the 
+periodontal pockets and subjected to 808 nm laser irradiation (Fig. 8b).
+A thermal imager was used to monitor temperature changes during 
+laser irradiation, and photothermal curves were plotted (Fig. 8c and 8e). 
+The AgZ@Au/PLEL group showed a 37.3 ◦C increase after 5 min, sur­
+passing the AgZ/PLEL and control groups. This trend was consistent 
+with in vitro photothermal performance evaluation results. Meanwhile, 
+the plate coating method was used to analyze microbial counts in 
+gingival crevicular fluid. Fig. S10 showed that the AgZ@Au/PLEL + Glu 
++ NIR group had fewer bacterial colonies compared to all other groups 
+(except the healthy control), suggesting the AgZ@Au/PLEL hydrogel is 
+also effective against bacteria in vivo.
+Since alveolar bone loss occurs as bacterial infection and inflam­
+mation progress [2,3], micro-CT was performed to evaluate bone loss 
+(Fig. 8d). Compared with the healthy control (HL) group, the vertical 
+distance between the cementoenamel junction (CEJ) and the alveolar 
+bone crest (ABC) was markedly increased in the control group (an in­
+crease of 0.43 mm). In contrast, AgZ@Au/PLEL + Glu + NIR group 
+significantly decreased the CEJ-ABC by 0.27 mm (Fig. 8f), closely 
+resembling the HL group. Additionally, bone volume (BV), tissue volume 
+(TV) and BV/TV ratio were measured for the palatal alveolar bone. As 
+shown in Fig. 8g and h, the BV/TV ratio in the AgZ@Au/PLEL + Glu +
+NIR group was second only to the HL group and significantly higher than 
+in other experimental groups. These results indicated that the AgZ@Au/ 
+PLEL hydrogel promoted alveolar bone regeneration within the peri­
+odontal pockets, leading to restoration of bone mass.
+Histopathological analysis was performed on maxillary bone sam­
+ples. HE staining images (Fig. 9a) showed significant alveolar bone 
+destruction due to periodontitis, characterized by slender bone 
+morphology and a worm-eaten appearance under the microscope, 
+indicating active bone resorption. After treatment, the bone morphology 
+in the AgZ@Au/PLEL + Glu + NIR group showed significant improve­
+ment, closely resembling the HL group.
+Notably, reversal lines were observed in the bone tissue, indicating 
+cessation of resorption and new bone formation above these lines. 
+Moreover, Masson’s trichrome staining results (Fig. 9b) revealed that 
+disorganized collagen fibers between the alveolar bone and tooth root in 
+the control group, suggesting damage to Sharpey’s fibers. In contrast, 
+the AgZ@Au/PLEL + Glu + NIR group exhibited dense collagen fiber 
+alignment, similar to normal tissue.
+Additionally, periodontitis often involves excessive production of 
+cytokines, such as IL-1β and IL-6. As shown in Fig. 9c and Fig. S11, the 
+control group showed extensive brown staining around the alveolar 
+bone, indicating high levels of IL-1β and IL-6. In contrast, the AgZ@Au/ 
+PLEL + Glu + NIR group exhibited significantly lower expression, 
+demonstrating the hydrogel’s effectiveness in controlling infection and 
+reducing inflammation. In vivo toxicity of the hydrogel was assessed by 
+HE staining of major organs in rats. Fig. S12 showed no pathological 
+abnormalities, indicating that the material is biocompatible and safe.
+4. Conclusions
+In this study, Ag2S nanoparticles were employed as a core, coated 
+with ZIF-8, and precisely anchored with Au NPs to form AgZ@Au. This 
+nanosystem was incorporated into an injectable thermosensitive PLEL 
+hydrogel, yielding the AgZ@Au/PLEL hydrogel. The hydrogel indicated 
+excellent biocompatibility, photothermal properties, antibacterial effi­
+cacy, and the ability to promote alveolar bone regeneration. Au NPs 
+exhibited GOx-like activity, converting glucose into hydrogen peroxide 
+and gluconic acid. Upon NIR laser irradiation, this catalytic reaction was 
+enhanced to achieve therapeutic outcomes, with the generated 
+hydrogen peroxide synergizing with PTT to eliminate pathogens. The 
+acid-responsive release of zinc ions from ZIF-8 further facilitated BMSCs 
+differentiation. These findings suggested that the AgZ@Au/PLEL 
+hydrogel is a promising candidate for periodontitis treatment, offering 
+an innovative NIR-driven GOx-like therapeutic strategy.
+CRediT authorship contribution statement
+Changxing Qu: Conceptualization, Data curation, Formal analysis, 
+Investigation, Methodology, Visualization, Writing – original draft, 
+Writing – review & editing. Tianying Luo: Conceptualization, Data 
+curation, Formal analysis, Investigation, Methodology, Visualization, 
+Writing – original draft, Writing – review & editing. Ruxia Han: 
+Methodology. Dong Mo: Methodology, Writing – review & editing. Kun 
+Shi: Methodology. Xicheng Li: Methodology, Writing – review & edit­
+ing. Zhongwu Bei: Methodology. Meng Pan: Methodology. Songtao 
+Tan: Methodology. Jun Liu: Conceptualization, Supervision, Resources, 
+Project administration, Funding acquisition, Writing – review & editing. 
+Zhiyong Qian: Conceptualization, Supervision, Resources, Project 
+administration, Funding acquisition, Writing – review & editing.
+Declaration of competing interest
+The authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper.
+Acknowledgements
+This work was financially supported by the National Natural Science 
+Foundation of China (NSFC U21A20417, 31930067 and 82170934), the 
+Sichuan Science and Technology Program (2024YFFK0201) and 1⋅3⋅5 
+project for disciplines of excellence, West China Hospital, Sichuan 
+University (ZYGD18002).
+Appendix A. Supplementary data
+Supplementary data to this article can be found online at https://doi. 
+org/10.1016/j.cej.2025.160108.
+Data availability
+Data will be made available on request.
+References
+[1] J. Slots, Periodontitis: facts, fallacies and the future, Periodontol. 2000 75 (1) 
+(2017) 7–23, https://doi.org/10.1111/prd.12221.
+[2] G. Hajishengallis, Periodontitis: from microbial immune subversion to systemic 
+inflammation, Nat. Rev. Immunol. 15 (1) (2015) 30–44, https://doi.org/10.1038/ 
+nri3785.
+[3] R.P. Darveau, Periodontitis: a polymicrobial disruption of host homeostasis, Nat. 
+Rev. Microbiol. 8 (7) (2010) 481–490, https://doi.org/10.1038/nrmicro2337.
+[4] P.I. Eke, W.S. Borgnakke, R.J. Genco, Recent epidemiologic trends in periodontitis 
+in the USA, Periodontol. 2000 82 (1) (2020) 257–267, https://doi.org/10.1111/ 
+prd.12323.
+C. Qu et al.                                                                                                                                                                                                                                       
+Chemical Engineering Journal 506 (2025) 160108 
+13 
+
+[5] G. Hajishengallis, T. Chavakis, Local and systemic mechanisms linking periodontal 
+disease and inflammatory comorbidities, Nat. Rev. Immunol. 21 (7) (2021) 
+426–440, https://doi.org/10.1038/s41577-020-00488-6.
+[6] M. Feres, L.C. Figueiredo, G.M. Soares, M. Faveri, Systemic antibiotics in the 
+treatment of periodontitis, Periodontol. 2000 67 (1) (2015) 131–186, https://doi. 
+org/10.1111/prd.12075.
+[7] F. Graziani, D. Karapetsa, B. Alonso, D. Herrera, Nonsurgical and surgical 
+treatment of periodontitis: how many options for one disease? Periodontol. 2000 
+75 (1) (2017) 152–188, https://doi.org/10.1111/prd.12201.
+[8] G.I. Benic, C.H. H¨ammerle, Horizontal bone augmentation by means of guided 
+bone regeneration, Periodontol. 2000 66 (1) (2014) 13–40, https://doi.org/ 
+10.1111/prd.12039.
+[9] D.F. Kinane, P.G. Stathopoulou, P.N. Papapanou, Periodontal diseases, Nat. Rev. 
+Dis. Primers 3 (2017) 17038, https://doi.org/10.1038/nrdp.2017.38.
+[10] S.S. Oberoi, C. Dhingra, G. Sharma, D. Sardana, Antibiotics in dental practice: how 
+justified are we, Int. Dent. J. 65 (1) (2015) 4–10, https://doi.org/10.1111/ 
+idj.12146.
+[11] F.M. Chen, J. Zhang, M. Zhang, Y. An, F. Chen, Z.F. Wu, A review on endogenous 
+regenerative technology in periodontal regenerative medicine, Biomaterials 31 
+(31) (2010) 7892–7927, https://doi.org/10.1016/j.biomaterials.2010.07.019.
+[12] P. Wang, L.G. Wang, Y.L. Zhan, Y.F. Liu, Z.Q. Chen, J. Xu, J. Guo, J. Luo, J.C. Wei, 
+F. Tong, Z.H. Li, Versatile hybrid nanoplatforms for treating periodontitis with 
+chemical/photothermal therapy and reactive oxygen species scavenging, Chem. 
+Eng. J. 463 (2023), https://doi.org/10.1016/j.cej.2023.142293.
+[13] Y.X. Wang, C. Li, B.W. Shen, L.Y. Zhu, Y.H. Zhang, L. Jiang, Ultra-small Au/Pt 
+NCs@GOX clusterzyme for enhancing cascade catalytic antibiofilm effect against 
+F. nucleatum-induced periodontitis, Chem. Eng. J. 466 (2023), https://doi.org/ 
+10.1016/j.cej.2023.143292.
+[14] X.G. Yu, X.H. Wang, D.J. Li, R.L. Sheng, Y.F. Qian, R. Zhu, X.D. Wang, K.L. Lin, 
+Mechanically reinforced injectable bioactive nanocomposite hydrogels for in-situ 
+bone regeneration, Chem. Eng. J. 433 (2022), https://doi.org/10.1016/j. 
+cej.2021.132799.
+[15] W.G. Wade, Resilience of the oral microbiome, Periodontol. 2000 86 (1) (2021) 
+113–122, https://doi.org/10.1111/prd.12365.
+[16] D.T. Graves, Z. Ding, Y. Yang, The impact of diabetes on periodontal diseases, 
+Periodontol. 2000 82 (1) (2020) 214–224, https://doi.org/10.1111/prd.12318.
+[17] F. Vatansever, W.C. de Melo, P. Avci, D. Vecchio, M. Sadasivam, A. Gupta, 
+R. Chandran, M. Karimi, N.A. Parizotto, R. Yin, G.P. Tegos, M.R. Hamblin, 
+Antimicrobial strategies centered around reactive oxygen species–bactericidal 
+antibiotics, photodynamic therapy, and beyond, FEMS Microbiol. Rev. 37 (6) 
+(2013) 955–989, https://doi.org/10.1111/1574-6976.12026.
+[18] J. Xu, X. Jian, J. Guo, J. Zhao, J. Tang, Y. Zhao, J. Xu, Z. Gao, Y.-Y. Song, Selective 
+SERS identification and quantification of glucose enantiomers on homochiral MOFs 
+based enzyme-free nanoreactors, Chem. Eng. J. 459 (2023), https://doi.org/ 
+10.1016/j.cej.2023.141650.
+[19] A. Ali, M. Ovais, H. Zhou, Y. Rui, C. Chen, Tailoring metal-organic frameworks- 
+based nanozymes for bacterial theranostics, Biomaterials 275 (2021) 120951, 
+https://doi.org/10.1016/j.biomaterials.2021.120951.
+[20] G. Xu, X. Du, W. Wang, Y. Qu, X. Liu, M. Zhao, W. Li, Y.Q. Li, Plasmonic 
+nanozymes: leveraging localized surface plasmon resonance to boost the enzyme- 
+mimicking activity of nanomaterials, Small 18 (49) (2022) e2204131, https://doi. 
+org/10.1002/smll.202204131.
+[21] Y. Zhang, X. Hu, J. Shang, W. Shao, L. Jin, C. Quan, J. Li, Emerging nanozyme- 
+based multimodal synergistic therapies in combating bacterial infections, 
+Theranostics 12 (13) (2022) 5995–6020, https://doi.org/10.7150/thno.73681.
+[22] L. Jiao, H. Yan, Y. Wu, W. Gu, C. Zhu, D. Du, Y. Lin, When Nanozymes Meet Single- 
+Atom Catalysis, Angew. Chem. Int. Ed. 59 (2020) 2565–2576.
+[23] B. Liu, J. Liu, Surface modification of nanozymes, Nano Res. 10 (4) (2017) 
+1125–1148.
+[24] Y. Zhu, Y. Liao, L.X. Chen, Engineering single-atom nanozymes for catalytic 
+biomedical applications, Small 19 (30) (2023).
+[25] T. Luo, H. Yang, R. Wang, Y. Pu, Z. Cai, Y. Zhao, Q. Bi, J. Lu, R. Jin, Y. Nie, 
+X. Shuai, Bifunctional cascading nanozymes based on carbon dots promotes 
+photodynamic therapy by regulating hypoxia and glycolysis, ACS Nano 17 (17) 
+(2023) 16715–16730, https://doi.org/10.1021/acsnano.3c03169.
+[26] A. Maleki, J. He, S. Bochani, V. Nosrati, M.A. Shahbazi, B. Guo, Multifunctional 
+photoactive hydrogels for wound healing acceleration, ACS Nano 15 (12) (2021) 
+18895–18930, https://doi.org/10.1021/acsnano.1c08334.
+[27] Y. Chen, Y. Gao, Y. Chen, L. Liu, A. Mo, Q. Peng, Nanomaterials-based 
+photothermal therapy and its potentials in antibacterial treatment, J. Control. 
+Release 328 (2020) 251–262, https://doi.org/10.1016/j.jconrel.2020.08.055.
+[28] R. Han, Q. Liu, Y. Lu, J. Peng, M. Pan, G. Wang, W. Chen, Y. Xiao, C. Yang, Z. Qian, 
+Tumor microenvironment-responsive Ag(2)S-PAsp(DOX)-cRGD nanoparticles- 
+mediated photochemotherapy enhances the immune response to tumor therapy, 
+Biomaterials 281 (2022) 121328, https://doi.org/10.1016/j. 
+biomaterials.2021.121328.
+[29] R. Han, Y. Xiao, Q. Yang, M. Pan, Y. Hao, X. He, J. Peng, Z. Qian, Ag(2)S 
+nanoparticle-mediated multiple ablations reinvigorates the immune response for 
+enhanced cancer photo-immunotherapy, Biomaterials 264 (2021) 120451, https:// 
+doi.org/10.1016/j.biomaterials.2020.120451.
+[30] X.Y. Hu, D.Q. You, T.Y. Fei, Y.H. Wu, Y.J. Shao, Y. Xie, M.H. Xu, Y.J. Hu, J. 
+Y. Zhang, M.F. Yu, The role and application of metal ions in maxillofacial bone 
+defect, Chem. Eng. J. 493 (2024), https://doi.org/10.1016/j.cej.2024.152317.
+[31] L. Fan, S. Chen, M. Yang, Y. Liu, J. Liu, Metallic materials for bone repair, Adv. 
+Healthc. Mater. 13 (3) (2024) e2302132, https://doi.org/10.1002/ 
+adhm.202302132.
+[32] L. Ma, J. Zhou, Q. Wu, G. Luo, M. Zhao, G. Zhong, Y. Zheng, X. Meng, S. Cheng, 
+Y. Zhang, Multifunctional 3D-printed scaffolds eradiate orthotopic osteosarcoma 
+and promote osteogenesis via microwave thermo-chemotherapy combined with 
+immunotherapy, Biomaterials 301 (2023) 122236, https://doi.org/10.1016/j. 
+biomaterials.2023.122236.
+[33] S. Shrestha, S.Y. Lee, D. Shrestha, R. Kandel, Y.J. Yoo, H.J. Tae, B.K. Shrestha, C. 
+H. Park, C.S. Kim, Micro/nanometer-sized porous structure of zinc phosphate 
+incorporated Ti (HPO4)2 hydrate bioceramic induces osteogenic gene expression 
+and enhances osteoporotic bone regeneration, Chem. Eng. J. 450 (2022), https:// 
+doi.org/10.1016/j.cej.2022.138360.
+[34] D.L. Cuylear, M.L. Fu, J.C. Chau, D. Bulkley, B. Kharbikar, G.J. Kazakia, A. 
+H. Jheon, S. Habelitz, S.D. Kapila, T.A. Desai, Calcium phosphate nanoclusters 
+modify periodontium remodeling and minimize orthodontic relapse, Biomaterials 
+315 (2025) 122965, https://doi.org/10.1016/j.biomaterials.2024.122965.
+[35] X. Chen, S. He, Y. Dong, M. Chen, Z. Xia, K. Cai, Y. Hu, Cobalt-doped layered 
+hydroxide coating on titanium implants promotes vascularization and osteogenesis 
+for accelerated fracture healing, Mater. Today Bio 24 (2024) 100912, https://doi. 
+org/10.1016/j.mtbio.2023.100912.
+[36] O.M. Yaghi, M. O’Keeffe, N.W. Ockwig, H.K. Chae, M. Eddaoudi, J. Kim, Reticular 
+synthesis and the design of new materials, Nature 423 (6941) (2003) 705–714, 
+https://doi.org/10.1038/nature01650.
+[37] S. Yao, J. Chi, Y. Wang, Y. Zhao, Y. Luo, Y. Wang, Zn-MOF encapsulated 
+antibacterial and degradable microneedles array for promoting wound healing, 
+Adv. Healthc. Mater. 10 (12) (2021) e2100056, https://doi.org/10.1002/ 
+adhm.202100056.
+[38] Y. Liu, T. Li, M. Sun, Z. Cheng, W. Jia, K. Jiao, S. Wang, K. Jiang, Y. Yang, Z. Dai, 
+L. Liu, G. Liu, Y. Luo, ZIF-8 modified multifunctional injectable 
+photopolymerizable GelMA hydrogel for the treatment of periodontitis, Acta 
+Biomater. 146 (2022) 37–48, https://doi.org/10.1016/j.actbio.2022.03.046.
+[39] Y. Xue, Z. Zhu, X. Zhang, J. Chen, X. Yang, X. Gao, S. Zhang, F. Luo, J. Wang, 
+W. Zhao, C. Huang, X. Pei, Q. Wan, Accelerated bone regeneration by MOF 
+modified multifunctional membranes through enhancement of osteogenic and 
+angiogenic performance, Adv. Healthc. Mater. 10 (6) (2021) e2001369, https:// 
+doi.org/10.1002/adhm.202001369.
+[40] Y. Zhang, K. Shi, X. Yang, W. Chen, T. Wang, Y. Kang, D. Gong, Z. Qian, W. Zhang, 
+Sustained release of levobupivacaine from temperature-sensitive injectable 
+hydrogel for long-term local anesthesia in postoperative pain management, 
+Biomaterials 299 (2023) 122129, https://doi.org/10.1016/j. 
+biomaterials.2023.122129.
+[41] Y.P. Jia, K. Shi, F. Yang, J.F. Liao, R.X. Han, L.P. Yuan, Y. Hao, M. Pan, Y. Xiao, Z. 
+Y. Qian, X.W. Wei, Multifunctional nanoparticle loaded injectable 
+thermoresponsive hydrogel as NIR controlled release platform for local 
+photothermal immunotherapy to prevent breast cancer postoperative recurrence 
+and metastases, Adv. Funct. Mater. 30 (25) (2020), https://doi.org/10.1002/ 
+adfm.202001059.
+[42] J. Liu, T.Y. Yang, L.Q. Dai, K. Shi, Y. Hao, B.Y. Chu, D.R. Hu, Z.W. Bei, L.P. Yuan, 
+M. Pan, Z.Y. Qian, Intravesical chemotherapy synergize with an immune adjuvant 
+by a thermo-sensitive hydrogel system for bladder cancer, Bioact. Mater. 31 (2024) 
+315–332, https://doi.org/10.1016/j.bioactmat.2023.08.013.
+[43] M. Wang, D. Hu, Y. Yang, K. Shi, J. Li, Q. Liu, Y. Li, R. Li, M. Pan, D. Mo, W. Chen, 
+X. Li, Z. Qian, Enhanced chemo-immunotherapy strategy utilizing injectable 
+thermosensitive hydrogel for the treatment of diffuse peritoneal metastasis in 
+advanced colorectal cancer, Adv. Sci. 10 (35) (2023) e2303819, https://doi.org/ 
+10.1002/advs.202303819.
+[44] D.K. Roper, W. Ahn, M. Hoepfner, Microscale heat transfer transduced by surface 
+plasmon resonant gold nanoparticles, J. Phys. Chem. C Nanomater. Interfaces 111 
+(9) (2007) 3636–3641, https://doi.org/10.1021/jp064341w.
+[45] Z.Z. Yu, L. Jiang, R.Y. Liu, W.D. Zhao, Z.H. Yang, J.Y. Zhang, S.Z. Jin, Versatile self- 
+assembled MXene-Au nanocomposites for SERS detection of bacteria, antibacterial 
+and photothermal sterilization, Chem. Eng. J. 426 (2021) 12, https://doi.org/ 
+10.1016/j.cej.2021.131914.
+[46] J. Ziesmer, J.V. Larsson, G.A. Sotiriou, Hybrid microneedle arrays for antibiotic 
+and near-IR photothermal synergistic antimicrobial effect against Methicillin- 
+Resistant Staphylococcus aureus, Chem. Eng. J. 462 (2023) 142127, https://doi. 
+org/10.1016/j.cej.2023.142127.
+[47] R. Bardhan, W. Chen, M. Bartels, C. Perez-Torres, M.F. Botero, R.W. McAninch, 
+A. Contreras, R. Schiff, R.G. Pautler, N.J. Halas, A. Joshi, Tracking of multimodal 
+therapeutic nanocomplexes targeting breast cancer in vivo, Nano Lett. 10 (12) 
+(2010) 4920–4928, https://doi.org/10.1021/nl102889y.
+[48] R. Bardhan, N.K. Grady, J.R. Cole, A. Joshi, N.J. Halas, Fluorescence enhancement 
+by Au nanostructures: nanoshells and nanorods, ACS Nano 3 (3) (2009) 744–752, 
+https://doi.org/10.1021/nn900001q.
+[49] B.L. Tao, W.K. Zhao, C.C. Lin, Z. Yuan, Y. He, L. Lu, M.W. Chen, Y. Ding, Y.L. Yang, 
+Z.Z.L. Xia, K.Y. Cai, Surface modification of titanium implants by ZIF-8@Levo/LBL 
+coating for inhibition of bacterial-associated infection and enhancement of in vivo 
+osseointegration, Chem. Eng. J. 390 (2020) 14, https://doi.org/10.1016/j. 
+cej.2020.124621.
+[50] M.X. Qiao, Z.Y. Xu, X.B. Pei, Y.H. Liu, J. Wang, J.Y. Chen, Z. Zhu, Q.B. Wan, Nano 
+SIM@ZIF-8 modified injectable high-intensity biohydrogel with bidirectional 
+regulation of osteogenesis and anti-adipogenesis for bone repair, Chem. Eng. J. 434 
+(2022) 16, https://doi.org/10.1016/j.cej.2022.134583.
+C. Qu et al.                                                                                                                                                                                                                                       
+Chemical Engineering Journal 506 (2025) 160108 
+14

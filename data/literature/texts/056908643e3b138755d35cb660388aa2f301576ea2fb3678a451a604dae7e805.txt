@@ -1,0 +1,940 @@
+ORIGINAL ARTICLE
+Simultaneous improvement to solubility and
+bioavailability of active natural compound
+isosteviol using cyclodextrin metal-organic
+frameworks
+Xiaojin Chena,b,y, Tao Guob,y, Kaikai Zhangb,c, Jiacai Chenb,d,
+Caifen Wangb, Xiaohong Renb, Qin Wanga,b, Yingchao Yangb,
+Chongjing Liub, Wen Tane, Shuangying Guia,*, Li Wub,*,
+Jiwen Zhanga,b,c,d,*
+aAnhui University of Traditional Chinese Medicine, Anhui 230000, China
+bCenter for Drug Delivery Systems, Shanghai Institute of Materia Medica, Chinese Academy of Sciences, Shanghai
+201210, China
+cKey Laboratory of Modern Preparation of TCM, Ministry of Education, Jiangxi University of Chinese Medicine,
+Nanchang 330004, China
+dNanjing University of Traditional Chinese Medicine, Nanjing 210000, China
+eInstitute of Biomedical and Pharmaceutical Sciences, Guangdong University of Technology, Guangzhou 510006,
+China
+Received 7 February 2021; received in revised form 1 April 2021; accepted 6 April 2021
+KEY WORDS
+Isosteviol;
+Cyclodextrin metal-
+organic framework;
+Drug loading;
+Nanoclusters;
+Solubility;
+Bioavailability;
+Abstract
+Cyclodextrin metal-organic framework (CD-MOF) as a highly porous supramolecular carrier
+could be one of the solutions to the insolubility of isosteviol (STV). The solubility of STV was lower than
+20.00 ng/mL at pH 1.0 and pH 4.5, whilst its solubility increased to 20,074.30 ng/mL at pH 6.8 and
+129.58 ng/mL in water with a signiﬁcant pH-dependence. The in vitro release proﬁles of STV from
+STV@CD-MOF (0.5:1) were pH-independent in distinct pH media and closed to be thoroughly released
+but no such release proﬁles were observed for STV@CD-MOF (1:1) owing to nanoclusters formation.
+The bioavailability of STV@CD-MOF (1:1) in rats was 8.67-fold higher than that of STV, and was
+1.32- and 1.27-fold higher than that of STV@CD and STV@CD-MOF (0.5:1). Our results indicated that
+*Corresponding authors. Tel./fax: þ86 21 50805901 (Jiwen Zhang); þ86 21 20231980 (Li Wu); þ86 551 68129123 (Shuangying Gui).
+E-mail addresses: guishy0520@ahtcm.edu.cn (Shuangying Gui), wuli@simm.ac.cn (Li Wu), jwzhang@simm.ac.cn (Jiwen Zhang).
+yThese authors made equal contributions to this work.
+Peer review under responsibility of Chinese Pharmaceutical Association and Institute of Materia Medica, Chinese Academy of Medical Sciences.
+https://doi.org/10.1016/j.apsb.2021.04.018
+2211-3835 ª 2021 Chinese Pharmaceutical Association and Institute of Materia Medica, Chinese Academy of Medical Sciences. Production and hosting
+by Elsevier B.V. This is an open access article under the CC BY-NC-ND license (http://creativecommons.org/licenses/by-nc-nd/4.0/).
+Chinese Pharmaceutical Association
+Institute of Materia Medica, Chinese Academy of Medical Sciences
+Acta Pharmaceutica Sinica B
+www.elsevier.com/locate/apsb
+www.sciencedirect.com
+Acta Pharmaceutica Sinica B 2021;11(9):2914e2923
+
+Supramolecule;
+Molecular simulation
+the inclusion mechanism played a primary role when STV in CD-MOF was at a low loading ratio, while
+the increasement in bioavailability at a high loading ratio, which was attributed to the nanocluster mech-
+anism. This was conﬁrmed by molecular simulation. In conclusion, CD-MOF is a promising system for
+STV loading, overcoming the insolubility and to improve the bioavailability of this natural compound.
+ª 2021 Chinese Pharmaceutical Association and Institute of Materia Medica, Chinese Academy of Medical
+Sciences. Production and hosting by Elsevier B.V. This is an open access article under the CC BY-NC-ND license
+(http://creativecommons.org/licenses/by-nc-nd/4.0/).
+1.
+Introduction
+Isosteviol (STV) is a synthetic steviol glycoside derivative,
+which belongs to diterpene molecule1. STV exhibited a wide
+range of biological activities and pharmacological effects,
+including
+anti-fungal2,
+anti-neoplastic3e5,
+anti-viral6,7,
+improving insulin sensitivity, reducing plasma triglycerides8,9. It
+also reduces vasoconstriction by the regulation of the ion
+channels and has cardioprotective effect against coronary
+reperfusion damage with little toxicity10e12. However, one
+drawback of STV’s application as medicine could be its low
+solubility and low bioavailability13. At present, methods to
+improve the solubility of STV include: solid dispersion tech-
+nology14,15, the use of enzymes such as transglycosylase to
+improve solubility through regioselective enzymatic glyco-
+sylation16e19, complexation with g-cyclodextrin (g-CD)20, etc.
+There was no report on using the cyclodextrin metal-organic
+framework (CD-MOF) encapsulation of STV.
+Using new materials and technologies to manufacture efﬁcient,
+stable and safe drug carriers are popular strategies to develop new
+formulations in order to improve the stability, bioavailability and
+maximize efﬁcacy. CD is a class of cyclic oligosaccharides
+conventionally used for decades to increase the solubility and
+bioavailability of insoluble drugs21. CDs are hollow cylindrical
+stereocyclic structures comprising of six, seven or eight D-gluco-
+pyranose units linked together, named as a-CD, b-CD and g-CD,
+respectively, all with a hydrophobic inner lumen and hydrophilic
+outer surface22e24. Metal-organic framework (MOF), also named
+as porous coordination polymer (PCP), is three-dimensional
+reticular porous crystal materials composed of metal ions and
+organic ligands25e28. MOFs have received much attention due to
+their intrinsic tunable structure, high speciﬁc surface area, and
+various functionalities, and have become a rising star toward the
+domain of materials in the last two decades27,29e31. MOFs have
+been utilized in a wide range of ﬁelds, such as gas adsorption and
+separation32e34, gas storage35e37, memristors38, catalysis39e41,
+biosensors42, chemical sensors43, optical materials, molecular
+recognitions44,45, biomedical imaging46, food packaging47, and
+drug delivery48e50.
+CD-MOF is inﬁnitely extended and regularly arranged
+network-like porous crystalline materials with cyclodextrin as
+the organic ligand and alkali metal ions (Kþ, Naþ, Rbþ) as the
+inorganic coupling units51. In recent years, the high drug
+loading capacity, the solubility enhancement capacity, the
+renewable, bio-degradable and the structural stability nature of
+CD-MOF have attracted widespread attention52. Notably, as a
+kind of porous material, CD-MOF has an advantage in terms
+of the number of pores and the tunability of pore size
+compared to activated carbon and zeolite materials. In addi-
+tion, it has been reported that CD-MOF can control the drug
+release and mask the taste after forming hosteguest complexes
+with drugs. For example, sodium diclofenac (DFNa) was
+loaded into different MOFs with g-KCD, g-NaCD and g-
+FeCD by impregnation approach. The encapsulation rates (%)
+in KCD-MOF, NaCD-MOF and FeCD-MOF particles were
+50  0.015, 49  0.109 and 55  0.140, respectively52. This
+result manifested a good capacity of the g-CD-MOF to
+incorporate the drugs with a high amount. Further, the in vivo
+anti-inﬂammatory activity showed that FeCD-MOF exhibits a
+pattern of controlled release of DFNa. The apparent solubility
+of azilsartan was greatly increased by CD-MOF loading, which
+was
+340
+times
+of the
+API, and
+the
+bioavailability
+was
+increased 9.7 times that of API in SD rats53. When CD-MOF
+was used for the encapsulation of two ester-based and two
+terpene-based fragrances, it was found that g-CD-MOF nano-
+crystals had a higher encapsulation capacity for the two ester-
+based fragrances compared to g-CD, with a good slow-release
+performance
+for
+all
+the
+fragrances
+tested49.
+In
+addition,
+vitamin
+A54,
+curcumin47,
+sucralose55,
+and
+diﬂunisal
+were
+successfully loaded into CD-MOF. 5-Fluorouracil (5-FU) was
+loaded into b-CD-MOF by grinding method and reduced the
+cellular toxicity of the drug56.
+Hence, the selection of suitable CD-MOF material carriers is
+a very critical step and of great practical importance for poorly
+water-soluble drugs. In this paper, STV was investigated as the
+insoluble model drug and tried to be loaded into CD-MOF by
+solvent incubation method. Two different STV-CD loading molar
+ratios were achieved in CD-MOF (0.5:1 and 1:1). The oral
+bioavailability of STV@CD-MOF (1:1) was compared with that
+of STV@CD-MOF (0.5:1), STV@CD (0.5:1) and pure STV in
+SD rats. Different kinds of characterization techniques were
+performed
+to
+explore
+the
+mechanisms
+underlying
+in
+the
+enhancement of the solubility and bioavailability using CD-
+MOF.
+2.
+Materials and methods
+2.1.
+Materials
+Isosteviol was obtained from Nanjing Spring & Autumn Biolog-
+ical Engineering Co., Ltd. (98%, Nanjing, China). g-CD was
+purchased from Maxdragon Biochem Co., Ltd. (Guangdong,
+Enhancement in solubility and bioavailability of isosteviol using CD-MOF
+2915
+
+China). The internal standard progesterone (Ourchem), potassium
+hydroxide (KOH), polyethylene glycol 20,000 (PEG20,000),
+methanol (MeOH), ethanol (EtOH) and other chemicals were
+provided by Sinopharm Chemical Reagent Co., Ltd. (Shanghai,
+China) and used in this study without further puriﬁcation. Milli-Q
+water system (Millipore, Shanghai, China) was used in this study
+to obtain puriﬁed water.
+2.2.
+Methods
+2.2.1.
+Preparation of CD-MOF
+The CD-MOF was synthesized from the previous procedure57.
+Concisely, 25.92 g g-CD and 11.20 g KOH were weighed with the
+molar ratio ng-CD:nKOH of 1:8, and were added into 800 mL of
+deionized water and then sonicated to dissolve as the mother li-
+quor. Methanol of 480 mL was added into a glass reactor con-
+taining 800 mL of the mother liquor on a magnetic stirrer (RCT
+IKA, Staufen, Germany) at 400 rpm, 60 C. It took approximately
+20 min to make the system clear, thereafter 640 mg of PEG20,000
+was added into the container. The reaction was continued for
+10 min, until the solution became clear. The solution was then
+transferred into cold water at 15 C for 2 h to obtain target
+crystals. The crystals were then centrifuged and washed twice
+each with anhydrous ethanol and methanol to remove the impu-
+rities. Ultimately, the CD-MOF was in the drying-oven (BPG-
+9140A, Shanghai Yiheng Technical Co., Ltd., Shanghai, China) at
+80 C for 2 h.
+2.2.2.
+Preparation and optimization of STV@CD-MOF and
+STV@CD
+STV@CD-MOF: STV-loaded CD-MOF (STV@CD-MOF) was
+developed using solvent incubation. Brieﬂy, 1.82 g CD-MOF
+([K2(C48H80O40) (OH)2]n, MW Z 1409.34)58 was dispersed in
+20 mL ethanol solution of STVat the concentration of 100 mg/mL
+(molar ratio of CD-MOF to STV was 1:5) and agitated at 60 C
+with a speed of 400 rpm. To make the drug loading in MOF
+consistent with the g-CD loading, the obtained product was
+washed with 5 mL ethanol, followed by ﬁltering and vacuum
+drying
+(OZF-6050,
+Shanghai
+Yiheng
+Technical
+Co.,
+Ltd.,
+Shanghai, China) at 60 C for 4 h to obtain STV@CD-MOF.
+When the washing condition to the product was considered as
+variable, other parameters involved such as temperature, mixing
+time, molar ratio and so forth were ﬁxed as constants.
+STV@CD: 1.30 g g-CD was weighed, and dissolved in
+100 mL water with sonication; 636.9 mg STV was added to
+6.5 mL anhydrous ethanol and made sure to be dissolved
+completely, then added drop by drop to the above-mentioned g-
+CD aqueous solution. It was agitated at 60 C with a speed of
+400 rpm for 4 h, followed by ﬁltering, the supernatant was dried in
+a freeze dryer for 24 h at a drying temperature below 50 C and
+a pressure below 20 Pa. It was evident that CD-MOF had great
+advantages in STV@CD-MOF preparation using the incubation
+method (8 h) over the freeze-drying method (28 h) for CD
+complexation.
+To determine STV loading amount in STV@CD-MOF. 10 mg
+STV@CD-MOF sample was weighed and placed in a 25 mL
+volumetric ﬂask, dissolved in methanol‒water (50:50, v/v),
+following the obtained solution was centrifuged (12,000 rpm,
+5 min; Micro 2R, Thermo Fisher Scientiﬁc) and the supernatant
+was taken for high-performance liquid chromatography (HPLC)
+analysis. The drug load was calculated as shown in Eq. (1)
+STV loading ð%ÞZSTV measured in CD=CD  MOF
+weigh of STV@CD=CD  MOF  100
+ð1Þ
+Assay of STV was measured using HPLC (Agilent Technol-
+ogies Inc. Santa Clara, CA, USA) on a Dikma Plastisil ODS C18
+column (100 mm  4.6 mm, 5 mm) with the column temperature
+of 40 C. The mobile phases consisted of ACN-0.1% H3PO4
+(70:30, v/v) with the ﬂow rate of 0.8 mL/min. The injection vol-
+ume was 20 mL and the detection wavelength was 210 nm.
+Chemstation software (Agilent) was utilized to reanalyze the
+chromatograms.
+2.2.3.
+Solubility studies in vitro
+The apparent solubility of STV, STV@KOH, STV@KOH-CD-
+MOF, and STV@CD in pH 1.0, pH 4.5, pH 6.8 and distilled water
+were determined. Excess STV (5 mg for STV raw material) and
+the above drug-loading samples (about 4, 8 and 20 mg drug
+content for STV@CD, STV@CD-MOF (0.5:1) and STV@CD-
+MOF (1:1), respectively) were placed in plastic centrifuge tubes,
+1 mL water was added to prepare the supersaturated solution,
+which was placed in a constant temperature incubation shaker
+(ES-60þ, Wiggens, Germany) for 200 rpm at 25 C for 2 h. The
+suspension was ﬁltered through a 0.45 mm membrane to eliminate
+any insoluble particles.
+The solubility of STV in different media was evaluated by
+HPLCeMS/MS using a Dikma Plastisil ODS C18 column
+(100 mm  4.6 mm, 5 mm) at 40 C. The chromatographic sep-
+aration was performed by isocratic elution with the mobile phases
+of 0.1% formic acid aqueous solution and methanol (25:75) at the
+ﬂow rate of 0.8 mL/min. The detection mode was multiple reac-
+tion monitoring method (MRM) in positive ion mode, and the
+transition of STV was m/z 319.2 / 273.2 with a collision energy
+(CE) of 16 eV. MassHunter V4.1 software (Agilent, USA) was
+used for data analysis in mass spectrometry mode. The solubility
+of each sample was measured in triplicates.
+2.2.4.
+In vitro drug release
+The dissolution of STV powder was determined by referring to the
+second method of dissolution and release determination in four
+parts of Chinese Pharmacopoeia (2020 edition). For the sake of
+investigating the release behaviors of STV in pH 1.0, pH 4.5, pH
+6.8 and water, STV and related drug loaded samples were placed
+in 100 mL media at 50 rpm. Samples were extracted at points (5,
+10, 20 and 30 min), then the entire release medium was replaced
+with 2 mL of the dissolution medium at the same temperature and
+inserted at the same time to maintain tank conditions. The
+extracted samples were ﬁltered using 0.45 mm ﬁlter. Analysis was
+conducted as the conditions in Section 2.2.2. All experiments were
+made in triplicate.
+2.2.5.
+Drug loading mechanism and molecular simulations
+The ﬁeld scanning emission electron microscope (SEM, S3400,
+Hitachi, Japan) and powder X-ray diffraction (PXRD, Bruker,
+USA) were conducted to characterize the morphology and crys-
+tallinity of the samples, respectively. The Synchrotron radiation-
+Fourier transform infrared spectroscopy (SR-FTIR) data were
+2916
+Xiaojin Chen et al.
+
+obtained using a spectrometer (Nicolet 6700, Thermo Scientiﬁc,
+USA) at the Shanghai Synchrotron Radiation Facility (SSRF) with
+a range of 400e4000 cm1. The nitrogen adsorptionedesorption
+isotherm and mean pore equivalent diameter were carried out
+using a porosimeter (Micromeritics, ASAP 2020, USA). Before
+the test, the samples were dried in vacuum at 60 C for 4 h to
+remove residual solvent and water. Differential scanning calo-
+rimeter (DSC, PerkinElmer DSC8500, USA) was employed under
+nitrogen purge.
+The molecular structure of STV was obtained from PubChem’s
+open chemical database (PubChem CID: 99514). The original
+crystal structure of MOF was derived from the reported single
+crystal structure of CD-MOF-1. The automatic molecular docking
+calculation was carried out with the AutoDock Vina 1.1.2 docking
+program. Firstly, the STV model was prepared according to the
+energy minimization protocol. Then, the STV molecule was
+docked to g-CD-MOF model. The docking result with maximum
+probability was used as the basis for subsequent structure
+optimization.
+2.2.6.
+In vivo characterization of STV@CD-MOF
+The male SpragueeDawley (250  50 g) was utilized and the rats
+were obtained from the Shanghai Jiesijie Laboratory Animals Co.,
+Ltd. The study was approved by the Institutional Animal Care and
+Use Committee of Shanghai Institute of Materia Medica (IACUC
+Application No. 2020-04-ZJW-27, Shanghai, China).
+The rats were divided into 4 groups randomly. Groups 1 to 4
+were orally administered by STV, STV@CD, STV@CD-MOF
+(0.5:1) and STV@CD-MOF (1:1), respectively. The drug sus-
+pensions were prepared by dispersing in 0.5% sodium carbox-
+ymethyl cellulose (CMC-Na) and the dose was 4 mg/kg
+(calculated as STV). The rats were fasted for 12 h with free access
+to drinking water ahead of the experiments. Blood was collected
+into a centrifuge tube containing heparins from the orbits at
+indicated time point (0, 0.08, 0.16, 0.32, 0.75, 1, 2, 4, 6, 8, 10 and
+24 h). Plasma was required by centrifugating (Thermo Fisher
+Scientiﬁc, 3500 rpm, 10 min), then cryo-preserved at 80 C
+refrigerator.
+Take the plasma sample out of the 80 C refrigerator and set
+aside at ambient surroundings until melted. 80 mL of plasma
+sample was mixed with 10 mL of Progesterone (500 ng/mL) and
+10 mL of solvent (methanol) were spun for 30 s, and ﬁnally 400 mL
+of acetonitrile (acetonitrile: acetic acid 95:5, v/v) was putted into
+and vortexed for 30 s. After blending, centrifugation (Thermo
+Fisher Scientiﬁc, 12,000 rpm, 5 min) was carried out for
+HPLCeMS/MS test.
+2.2.7.
+Determination of STV in plasma
+Blood concentrations were determined based on the results of
+HPLCeESI-MS analysis on an Agilent HPLC system (Agilent,
+USA). The speciﬁc MS conditions were as described above. The
+transition of internal standard (progesterone) was m/z 315.2 / 97
+with a collision energy (CE) of 20 eV. The STV had a good
+linearity in the range of 10.00e5000.00 ng/mL with the linear
+regression equation (y Z 1.064xe0.0885) and correlation coefﬁ-
+cient (r Z 0.995). The lower limit of quantiﬁcation (LLOQ) was
+10 ng/mL with the RSD% lower than 20%. The precision values
+of low, middle and high concentrations were all lower than 15%,
+and the recoveries were within 95.30%e112.54%. These results
+met the requirements of the analytical method.
+2.2.8.
+Statistical methods
+The linearity of the calibration curves was veriﬁed using linear
+regression analysis, with STV expressed as mean  standard de-
+viation (SD), using t-test, all statistical analyses were performed
+using GraphPad prism 6.01 (GraphPad Software, Inc.). Pharma-
+cokinetic parameters were computed and evaluated using DAS 2.0
+software (Mathematical Pharmacology Professional Committee of
+China, Shanghai, China) for non-interval analysis. ***P value of
+0.001 was deemed statistically signiﬁcant.
+3.
+Results and discussion
+3.1.
+Effective loading of STV
+The loadings of STV in CD-MOF were measured to be
+11.6
+
+0.4%
+(STV@CD-MOF
+0.5:1)
+and
+19.0
+
+0.3%
+(STV@CD-MOF 1:1), wherein the distinction between them was
+washed or not (Fig. 1A). The drug loading of STV@CD-MOF
+decreased from 19.0% to 11.6% after washing. This also made
+the loading molar ratio of STV:CD-MOF from 1:1 to 0.5:1. And
+the drug loading of STV@CD (0.5:1) prepared using freeze drying
+method was equivalent with that of STV@CD-MOF (0.5:1) using
+solvent incubation method.
+The cubical shaped CD-MOF is displayed in Fig. 1B. STV was
+incorporated into CD-MOF under agitation. SEM indicated that
+the morphology and size of CD-MOF remained unaltered when
+STV was incorporated. The morphology of STV@CD-MOF
+presented regular cubic with the size of 1e5 mm in the presence
+of different STV:CD molar ratios.
+3.2.
+Enhanced solubility of STV@CD-MOF
+STV compound was poor in solubility, and the current test methods
+failed to detect its solubility in acid (pH 1.0 and 4.5). The LLOQ
+was 20 ng/mL, and it can be assumed that the solubility of STV was
+less than 20 ng/mL except in pH 6.8 and water. As shown in Fig. 2,
+the solubilities of STV@CD-MOF in the four media were generally
+higher or similar to that of STV@CD. The solubility of STV@CD-
+MOF (2.60, 2.40, 10.98 and 19.96 mg/mL) at pH 1.0, 4.5, 6.8 and
+water were 3.4, 2.6, 3.9 and 24.9-fold higher than those of CD
+complexes (0.76, 0.93, 2.80 and 0.80 mg/mL), respectively.
+Compared with STV, its solubility was enhanced by as much as
+154,000-fold in water, a similar increase of the solubility by
+130,000-, 120,000- and 549,000-fold at pH 1.0, 4.5 and 6.8,
+respectively.
+Compared with the solubility (239.9 mg/mL) of STV in KOH
+solution (pH 11), the structure of CD-MOF contributed primarily
+to drug solubility improvement. And the pH values of media were
+little changed by the addition of STV@CD-MOF samples after
+solubility test.
+3.3.
+pH-independent release behaviors of STV@CD-MOF
+From the dissolution analysis of STV@CD-MOF section, STV
+was minimally soluble in all four media and had a certain
+dependence on pH value. In contrast, the STV@CD-MOF (0.5:1)
+formulation signiﬁcantly enhanced the release of STV, which was
+essentially complete release (100%) within 5 min in either water
+or in media with different pH, therefore it was non-pH dependent.
+The degree of drug release of STV@CD was 70%e80%, which
+Enhancement in solubility and bioavailability of isosteviol using CD-MOF
+2917
+
+was lower than that of STV@CD-MOF (0.5:1), underscoring the
+advantages of CD-MOF carriers. Notably, for the STV@CD-MOF
+1:1, in which half (0.5:1) of STV was considered to be the in-
+clusion of CD, and the other half (0.5:1) as nanoclusters of STV.
+The release proﬁles showed that a decreased release appeared at
+pH 1.0 and pH 4.5 (only about 40% of STV), while the cumulative
+release percentages in pH 6.8 and water were about 70%e80%
+(Fig. 3). This was attributed as nanoclusters formation in pH 1.0
+and pH 4.5 to partially decrease the release, while the complex-
+ation form of STV in STV@CD-MOF (0.5:1) formulation showed
+instant and complete release in all media. The counter-intuitive
+release results between STV@CD-MOF (0.5:1) and STV@CD
+(0.5:1) were possibly caused by the structure and property of CD-
+MOF. CDs arrayed in CD-MOF regularly, which caused drug
+molecules more highly dispersed than that in CDs crystals during
+release.
+3.4.
+Improved bioavailability of STV in rats
+The mean blood concentration time curves (Fig. 4) show the
+STV@CD, STV@CD-MOF (0.5:1) and STV@CD-MOF (1:1)
+groups achieved conspicuously rapid peak rates with high peak
+concentrations compared to the STV group.
+The bioavailability of STV@CD and STV@CD-MOF (0.5:1)
+in rats was almost the same comparing the AUC after oral
+administration. Table 1 showed AUC0e24 h of STV@CD-MOF
+(0.5:1)
+and
+STV@CD
+were
+240.99
+
+55.39
+and
+232.00  59.57 mg/mL$min, indicating the bioavailability of
+STV@CD group 4.61-fold greater compared to the free STV
+suspension (35.41  27.77 mg/mL$min). The bioavailability of
+STV@CD-MOF (0.5:1) increased by 4.67-fold (P < 0.001) in
+comparison to free STV, however it was similar to STV@CD. This
+further demonstrated that the low drug loading molar ratio was the
+CD inclusion mechanism. The bioavailability of STV@CD-MOF
+(1:1) group (AUC0e24 h Z 307.25  114.60 mg/mL$min) was
+8.67-fold higher than that of STV (P < 0.001) and about 1.32-fold
+higher than STV@CD and STV@CD-MOF (0.5:1). It was not
+difﬁcult to ﬁnd the STV@CD-MOF (0.5:1) group had a shorter
+time to peak and higher peak concentrations compared to the
+STV@CD group and STV@CD-MOF (1:1), but the in vivo ab-
+sorption and metabolite of STV in STV@CD-MOF (1:1) was
+prolonged in comparison with STV@CD and STV@CD-MOF
+(0.5:1). It was likely that the in vivo circumstance differed from
+the in vitro artiﬁcial media and the nano-clusters played a special
+role in absorption, which might be the reason that Tmax of
+Figure 1
+STV was efﬁciently incorporated into CD-MOF. (A) Efﬁcient loading of STV by CD-MOF, (B) SEM images of CD-MOF,
+STV@CD-MOF (0.5:1), and STV@CD-MOF (1:1) (data are mean  SD, n Z 3). Scale bar Z 5 mm.
+Figure 2
+The solubility of STV@CD-MOF was signiﬁcantly
+higher at different pH values compared to STV and STV@CD. The
+current HPLC method failed to detect STV solubility in pH 1.0 and
+pH 4.5, so the corresponding black column was not shown in Fig. 2
+(data are mean  SD, n Z 3).
+2918
+Xiaojin Chen et al.
+
+STV@CD-MOF (1:1) was almost 2-fold longer than STV@CD-
+MOF (0.5:1) and STV@CD. It was postulated that the nano-
+clusters formed in (g-CD)6 facilitated its absorption and well
+exempliﬁed on the basis of our preliminary works53,59.
+3.5.
+Characterization and mechanism of STV@CD-MOF
+At present, the mechanism by which CD-MOF enhanced release
+in vitro and improved absorption in vivo has not been fully
+appreciated. It was argued that drug payload in CD-MOF was not
+only the role of CD encapsulation, but also the co-action of
+nanoclusters.
+Hence,
+in
+our
+study,
+STV@CD-MOF
+(1:1),
+STV@CD-MOF (0.5:1) and STV@CD were characterized in
+various aspects, including FTIR, PXRD, DSC, BET and molec-
+ular
+simulation
+to
+further
+manifest
+their
+encapsulation
+mechanism.
+SR-FTIR: The characteristics of SR-FTIR spectrum (Fig. 5A)
+indicated that C]O stretching vibration peaks of the STV were
+1735 cm1 and 1693 cm1 (nC Z O) characteristic absorption, the
+formation of STV@CD-MOF was veriﬁed by the C]O signals,
+where there was a shift from 1735 cm1 to lower values (1727 or
+1726 cm1) and/or there was no 1693 cm1 peak. The C]O
+stretching vibration at 1735 cm1 was shifted to 1727 cm1 in
+STV@CD-MOF (0.5:1) and 1726 cm1 in STV@CD (0.5:1),
+while there was almost no shift in STV@CD-MOF (1:1), but the
+absorption intensity diminished at 1735 cm1 and was non-
+absorbing peak at 1693 cm1. The SR-FTIR spectra indicated
+that the interaction of STV in CD-MOF in STV@CD-MOF (0.5:1)
+was basically the same as that of the g-CD complexation, prob-
+ably due to the efﬁcacious loading of STV, and the vibration of the
+characteristic peak of STV was masked. And the vibrations of
+Figure 3
+Drug release proﬁles of STV@CD-MOF (0.5:1) (A), STV@CD (B) and STV@CD-MOF (1:1) (C) in HCl solution at pH 1.0, acetate
+buffer at pH 4.5, phosphate buffer at pH 6.8 and water (data are mean  SD, n Z 3).
+Figure 4
+Plasma concentrationetime proﬁles of STV in rats after
+oral administration of STV@CD-MOF (1:1), showing improved
+bioavailability in contrast to STV@CD-MOF (0.5:1), STV@CD and
+STV (data are mean  SD, n Z 6).
+Table 1
+Pharmacokinetic parameters of STV@CD-MOF, STV@CD and STV in rats.
+Pharmacokinetic parameter
+STV
+STV@CD
+(0.5:1)
+STV@CD-MOF
+(0.5:1)
+STV@CD-MOF
+(1:1)
+AUC 0e24 h (mg/mL$min)
+35.41  27.77
+232.0  59.6***
+241.0  55.4***
+307.2  114.6***
+Tmax (min)
+180.3  171.0
+18.33  9.83
+11.67  2.58
+35.00  12.25
+Cmax (mg/mL)
+0.061  0.039
+0.918  0.475
+1.54  0.85
+0.84  0.33
+STV, isosteviol. Data are mean  SD, n Z 6. ***P < 0.001 versus STV.
+Enhancement in solubility and bioavailability of isosteviol using CD-MOF
+2919
+
+STV molecules in STV@CD-MOF (0.5:1) were more constrained
+by CD-MOF than those of STV molecules in STV@CD-MOF
+(1:1), resulting in a different chemical environment between the
+bicyclodextrin molecular pair and the cavity.
+DSC: The thermal behavior of STV and STV-loadings were
+investigated by DSC (Fig. 5B). STV showed an intrinsic endo-
+thermic peak at 231 C, which was determined by its melting
+point and crystalline character. Yet, it can be seen the character-
+istic peaks completely disappeared in STV@CD and STV@CD-
+MOF entirely in the range of 25e300 C, which conﬁrmed the
+successful packing of STV by CD-MOF and CD. Further, the
+absence of melting point in STV@CD-MOF indicated that the
+STV in CD-MOF and g-CD converted crystal state to disordered
+amorphous state distributed in CD-MOF.
+BET: The effect of STV on the porosity of CD-MOF was
+investigated
+by
+measuring
+the
+nitrogen
+adsorption
+capacity
+(Fig. 5C). The BET surface area of CD-MOF used in this study was
+estimated as 278.7 m2/g. Drug molecules doping into CD-MOF
+were able to hinder the nitrogen uptake and led to the reduce of
+surface area, which could be used to conﬁrm the interaction be-
+tween CD-MOF and STV. As a result, the BET surface area of CD-
+MOF decreased to 6.6 m2/g after drug loading, indicating that most
+of the pores of CD in CD-MOF were occupied by STV. At drug
+loading molar ratio of 1:1, the BET surface area of CD-MOF was
+Figure 5
+Characterizations and spectra of STV, CD-MOF, STV@CD, STV@CD-MOF (0.5:1), STV@CD-MOF (1:1). (A) FTIR, (B) DSC, (C)
+BET and (D) PXRD.
+Figure 6
+Molecular mechanism of STV distribution in CD-MOF as nano-cluster and CD complexation. (A) STV loaded in CD-MOF with a
+STV:CD molar ratio of 1:1 (polar hydrogen atoms were added on the carboxylic group). (B) The form of STV@CD-MOF presented after
+dissolving into water.
+2920
+Xiaojin Chen et al.
+
+further decreased to 5.5 m2/g. It was considered that more STV
+molecules entered into the cavities of CD-MOF.
+PXRD: The PXRD patterns of STV@CD-MOF (0.5:1 and 1:1)
+all matched well with that of CD-MOF (Fig. 5D), indicating that
+the entry of STV into the nano-cavity of g-CD-MOF would not
+destroy the crystal structure of CD-MOF. The characteristic peak
+of STV in STV@CD-MOF disappeared. The disappearance of
+STV PXRD peaks after drug loading indicated successful incor-
+poration of STV in to the CD-MOF cavity.
+Molecular docking mechanism of STV@CD-MOF: Drug
+molecules are more likely to stay in CD bimolecular pairs. Under
+these conditions, hydroxyl group of g-CD formed hydrogen
+bonds with STV molecules, when the molar ratio of STV:CD was
+0.5:1, and the bound free energy was 8.2 kcal/mol. If the drug
+molecules increased to molar ratio of STV:CD Z 1:1, three STV
+molecules would take priority over existing in the large cavity of
+MOF in the form of nanocluster with extra molar ratio of about
+0.5:1, and the hydrophilic groups of STV molecules interact with
+the hydrophilic hydroxyl groups on the inner surface of CD-MOF
+cavity with the free energy of binding varying from 6.7 to
+8.4 kcal/mol (Fig. 6A). Of note, hydrogen bonds are the main
+interaction between STV and CD-MOF, while electrostatic
+interaction and coordination bonds between carboxylate groups
+and Kþ may also contribute to the adsorption energy. In
+STV@CD-MOF, CD-MOF was soluble in water, and there were
+STV@CD and STV nanoclusters in the solution system. The
+apparent solubility of STV was signiﬁcantly increased when
+STV@CD and nanoclusters released once STV@CD-MOF dis-
+solved into water, which also increased rate of encapsulation of
+CD by virtue of increasing contact area. In the STV@CD com-
+plex, STV was encapsulated by CD with the molar ratio STV:CD
+being 1:1 (Fig. 6B). In conclusion, it was considered that ioni-
+zation and cyclodextrin inclusion synergistically enhanced the
+solubility of the drug in water, while the CD-MOF complex
+markedly augmented the rate of the CD inclusion process
+described above.
+4.
+Conclusions
+Many natural compounds such as STV are limited in application
+due to low bioavailability and poor solubility. To enhance solu-
+bility and bioavailability is crucial to the formulation develop-
+ment regarding STV. In this context, loading of STV molecules
+into nano-architectures in the superhydrophilic CD-MOF had the
+advantages over conventional g-CD complexation. CD-MOF not
+only had the high drug loading efﬁciency but also the simplicity
+of the preparation process. Using CD-MOF as a supramolecular
+carrier, the solubilities of STV in varied media were signiﬁcantly
+improved and the releasing proﬁles signiﬁcantly improved in a
+non-pH-dependent way. Worthy of note, STV@CD-MOF (1:1)
+revealed the betterment of bioavailability in comparison to
+STV@CD. The STV loading position and nanocluster formation
+in CD-MOF had beneﬁcial contribution to the solubility and
+bioavailability, which may be superior to CD inclusion. This
+superiority was explored using molecular simulations
+and
+conﬁrmed by pharmacokinetics in vivo. In conclusion, this study
+demonstrated that CD-MOF is a useful formulation strategy to
+upgrade a drug candidate, which is insoluble either in acid media
+or in water.
+Acknowledgements
+The authors are grateful for the ﬁnancial support from the Na-
+tional Science Foundation for Young Scientists of China (No.
+81803441), the National Science and Technology Major Projects
+for the Major New Drugs Innovation and Development (No.
+2018ZX09721002-009, China), the National Natural Science
+Foundation of China (No. 81873019) and the University Synergy
+Innovation
+Program
+of
+Anhui
+Province
+(GXXT-2020-025).
+Thanks go to the staffs from BL01B beamline of National Facility
+for Protein Science Shanghai (NFPS) at Shanghai Synchrotron
+Radiation Facility for their assistance in SR-FTIR measurement.
+Author contributions
+Jiwen
+Zhang,
+Li
+Wu
+and
+Shuangying
+Gui
+designed
+the
+research. Xiaojin Chen, Tao Guo, Kaikai Zhang and Jiacai
+Chen carried out the experiments and performed data analysis.
+Caifen Wang, Xiaohong Ren, Qin Wang, Yingchao Yang and
+Chongjing Liu participated part of the experiments. Xiaojin
+Chen, Tao Guo and Kaikai Zhang wrote the manuscript. Wen
+Tan, Shuangying Gui, Li Wu and Jiwen Zhang revised the
+manuscript. All of the authors have read and approved the ﬁnal
+manuscript.
+Conﬂicts of interest
+The authors have no conﬂicts of interest to declare.
+References
+1. Gu WQ, Rebsdorf A, Hermansen K, Gregersen S, Jeppesen PB.
+The dynamic effects of isosteviol on insulin secretion and its
+inability to counteract the impaired beta-cell function during
+gluco-, lipo-, and aminoacidotoxicity: studies in vitro. Nutrients
+2018;10:13.
+2. Abdullah Al-Dhabi N, Valan Arasu M, Rejiniemon TS. In vitro anti-
+bacterial, antifungal, antibioﬁlm, antioxidant, and anticancer proper-
+ties
+of
+isosteviol
+isolated
+from
+endangered
+medicinal
+plant
+pittosporum tetraspermum. Evid Based Complement Alternat Med
+2015;2015:164261.
+3. Malki A, El-Sharkawy A, El Syaed M, Bergmeier S. Antitumor ac-
+tivities of the novel isosteviol derivative 10C against liver cancer. JAr
+Anticancer Res 2017;37:1591e601.
+4. Liu CJ, Zhang T, Yu SL, Dai XJ, Wu Y, Tao JC. Synthesis, cytotoxic
+activity, and 2D- and 3D-QSAR studies of 19-carboxyl-modiﬁed novel
+isosteviol derivatives as potential anticancer agents. Chem Biol Drug
+Des 2017;89:870e87.
+5. Liu C, Yu S, Liu Y, Dai X, Wu Y, Li R, et al. Synthesis, cytotoxic
+activity evaluation and HQSAR study of novel isosteviol derivatives as
+potential anticancer agents. Eur J Med Chem 2016;115:26e40.
+6. Huang T, Chou B, Lin C, Weng J, Chou C, Yang L, et al. Synthesis and
+antiviral effects of isosteviol-derived analogues against the hepatitis B
+virus. Phytochemistry 2014;99:107e14.
+7. Huang TJ, Yang CL, Kuo YC, Chang YC, Yang LM, Chou BH, et al.
+Synthesis and anti-hepatitis B virus activity of C4 amide-substituted
+isosteviol derivatives. Bioorg Med Chem 2015;23:720e8.
+8. Ruiz-Ruiz J, Moguel-Ordon˜ez Y, Segura-Campos M. Biological ac-
+tivity of stevia rebaudiana bertoni and their relationship to health. Crit
+Rev Food Sci 2017;57:2680e90.
+Enhancement in solubility and bioavailability of isosteviol using CD-MOF
+2921
+
+9. Carrera-Lanestosa A, Moguel-Ordo´n˜ez Y, Segura-Campos M. Stevia
+rebaudiana Bertoni: a natural alternative for treating diseases associ-
+ated with metabolic syndrome. J Med Food 2017;20:933e43.
+10. Mathur S, Bulchandani N, Parihar S, Shekhawat GS. Critical review on
+steviol glycosides: pharmacological, toxicological and therapeutic aspects
+of high potency zero caloric sweetener. Int J Pharm 2017;13:916e28.
+11. Adehin A, Tan KS, Tan W. Erythrocyte partitioning proﬁle of iso-
+steviol in human and rat blood. Curr Ther Res Clin E 2019;91:1e4.
+12. Adehin A, Tan KS, Lu ZQ, Cheng Q, Tan W. In vitro metabolic sta-
+bility and biotransformation of isosteviol in human and rat liver
+fractions. Drug Metabol Pharmacokinet 2019;34:194e200.
+13. Yin
+C,
+Chen
+Y,
+Wu
+H,
+Xu
+D,
+Tan
+W.
+Attenuation
+of
+ischemia/reperfusion-induced inhibition of the rapid component of
+delayed rectiﬁer potassium current by Isosteviol through scavenging
+reactive oxygen species. Bba-Biomembranes 2017;1859:2447e53.
+14. Hui H, Ou SX, Fang T, Hao Z, Qing L, Wen T. Neuroprotective effects
+of isosteviol sodium injection on acute focal cerebral ischemia in rats.
+Oxid Med Cell Longev 2016;2016:1379162.
+15. Pang S, Ma C, Zhang N. Investigation of the solubility enhancement
+mechanism of rebaudioside D using a solid dispersion technique with
+potassium sorbate as a carrier. Food Chem 2015;174:564e70.
+16. Lu T, Xia Y. Transglycosylation speciﬁcity of glycosyl donors in
+transglycosylation of stevioside catalysed by cyclodextrin glucano-
+transferase. Food Chem 2014;159:151e6.
+17. Wan HD, Xia YM. Enzymatic transformation of stevioside using a
+beta-galactosidase from sulfolobus sp. Food Funct 2015;6:3291e5.
+18. Musa A, Miao M, Zhang T, Jiang B. Biotransformation of stevioside
+by Leuconostoc citreum SK24.002 alternansucrase acceptor reaction.
+Food Chem 2014;146:23e9.
+19. Lemus-Mondaca R, Vega-Galvez A, Zura-Bravo L, Ah-Hen K. Stevia
+rebaudiana bertoni, source of a high-potency natural sweetener:
+acomprehensive review on the biochemical, nutritional and functional
+aspects. Food Chem 2012;132:1121e32.
+20. Wan HD, He GZ, Zhang HJ. Isosteviol preparation and inclusion
+complexation of it with cyclodextrin. J Incl Phenom Macro 2019;94:
+65e73.
+21. Zhou JW, Ritter H. Cyclodextrin functionalized polymers as drug
+delivery systems. Polym Chem 2010;1:1552e9.
+22. Davis ME, Brewster ME. Cyclodextrin-based pharmaceutics: past,
+present and future. Nat Rev Drug Discov 2004;3:1023e35.
+23. Shelley H, Babu RJ. Role of Cyclodextrins in nanoparticle-based drug
+delivery systems. J Pharmacol Sci 2018;107:1741e53.
+24. Crini G. Review: a history of cyclodextrins. Chem Rev 2014;114:
+10940e75.
+25. Li H, Eddaoudi M, O’Keeffe M, Yaghi OM. Design and synthesis of
+an exceptionally stable and highly porous metal-organic framework.
+Nature 1999;402:276e9.
+26. Ferey G. Hybrid porous solids: past, present, future. Chem Soc Rev
+2008;37:191e214.
+27. Deng HX, Doonan CJ, Furukawa H, Ferreira RB, Towne J,
+Knobler CB, et al. Multiple functional groups of varying ratios in
+metal-organic frameworks. Science 2010;327:846e50.
+28. O’Keeffe M, Peskov MA, Ramsden SJ, Yaghi OM. The reticular
+chemistry structure resource (RCSR) database of, and symbols for,
+crystal nets. Acc Chem Res 2008;41:1782e9.
+29. Liu YL, Eubank JF, Cairns AJ, Eckert J, Kravtsov VC, Luebke R,
+et al. Assembly of metal-organic frameworks (MOFs) based on
+indium-trimer building blocks: a porous MOF with soc topology and
+high hydrogen storage. Angew Chem Int Ed 2007;46:3278e83.
+30. O’Keeffe M, Yaghi OM. Deconstructing the crystal structures of
+metal-organic frameworks and related materials into their underlying
+nets. Chem Rev 2012;112:675e702.
+31. Zheng HQ, Liu CY, Zeng XY, Chen J, Lu J, Lin RG, et al. MOF-808: a
+metal-organic framework with intrinsic peroxidase-like catalytic ac-
+tivity at neutral pH for colorimetric biosensing. Inorg Chem 2018;57:
+9096e104.
+32. Gould
+JA,
+Athwal
+HS,
+Blake
+AJ,
+Lewis
+W,
+Hubberstey
+P,
+Champness NR, et al. Gas adsorption and structural diversity in a
+family of Cu(II) pyridyl-isophthalate metal-organic framework mate-
+rials. Philos T R Soc B 2017;375:16.
+33. Li L, Lin R, Krishna R, Li H, Xiang S, Wu H, et al. Ethane/ethylene
+separation in a metal-organic framework with iron-peroxo sites. Sci-
+ence 2018;362:443e6.
+34. Wang L, Liang XY, Chang ZY, Ding LS, Zhang S, Li BJ. Effective
+formaldehyde capture by green cyclodextrin-based metal-organic
+framework. ACS Appl Mater Interfaces 2018;10:42e6.
+35. Furukawa H, Cordova KE, O’Keeffe M, Yaghi OM. The chemistry
+and applications of metal-organic frameworks. Science 2013;341:974.
+36. Murray LJ, Dinca M, Long JR. Hydrogen storage in metal-organic
+frameworks. Chem Soc Rev 2009;38:1294e314.
+37. Latroche M, Surble S, Serre C, Mellot-Draznieks C, Llewellyn PL,
+Lee JH, et al. Hydrogen storage in the giant-pore metal-organic
+frameworks MIL-100 and MIL-101. Angew Chem Int Ed 2006;45:
+8227e31.
+38. Yoon SM, Warren SC, Grzybowski BA. Storage of electrical infor-
+mation in metal-organic-framework memristors. Angew Chem Int Ed
+2014;53:4437e41.
+39. Sabo M, Henschel A, Froede H, Klemm E, Kaskel S. Solution inﬁl-
+tration of palladium into MOF-5: synthesis, physisorption and cata-
+lytic properties. J Mater Chem 2007;17:3827e32.
+40. Mon M, Rivero-Crespo MA, Ferrando-Soria J, Vidal-Moya A,
+Boronat M, Leyva-Pe´rez A, et al. Synthesis of densely packaged, ul-
+trasmall PtO 2 Clusters within a thioether-functionalized mof: catalytic
+activity in industrial reactions at low temperature. Angew Chem 2018;
+130:6294e9.
+41. Li J, Ren Y, Qi C, Jiang H. A chiral salen-based MOF catalytic ma-
+terial with high thermal, aqueous and chemical stabilities. Dalton
+Trans 2017;46:7821e32.
+42. Fang X, Zong B, Mao S. Metal-organic framework-based sensors for
+environmental contaminant sensing. Nano-Micro Lett 2018;10:64.
+43. Kreno LE, Leong K, Farha OK, Allendorf M, Van Duyne RP, Hupp JT.
+Metal-organic framework materials as chemical sensors. Chem Rev
+2012;112:1105e25.
+44. Shekhah O, Wang H, Paradinas M, Ocal C, Schupbach B, Terfort A,
+et al. Controlling interpenetration in metal-organic frameworks by
+liquid-phase epitaxy. Nat Mater 2009;8:481e4.
+45. Deng HX, Grunder S, Cordova KE, Valente C, Furukawa H,
+Hmadeh M, et al. Large-pore apertures in a series of metal-organic
+frameworks. Science 2012;336:1018e23.
+46. Zhuang J, Young AP, Tsung CK. Integration of biomolecules with
+metal-organic frameworks. Small 2017;13:14.
+47. Moussa Z, Hmadeh M, Abiad MG, Dib OH, Patra D. Encapsulation of
+curcumin in cyclodextrin-metal organic frameworks: dissociation of
+loaded CD-MOFs enhances stability of curcumin. Food Chem 2016;
+212:485e94.
+48. Wang L, Zheng M, Xie Z. Nanoscale metal-organic frameworks for
+drug delivery: a conventional platform with new promise. J Mater
+Chem B 2018;6:707e17.
+49. Zhang B, Huang J, Liu K, Zhou Z, Jiang L, Shen Y, et al. Biocom-
+patible cyclodextrin-based metal-organic frameworks for long-term
+sustained release of fragrances. Ind Eng Chem Res 2019;58:
+19767e77.
+50. Agostoni V, Chalati T, Horcajada P, Willaime H, Gref R. Towards an
+improved anti-hiv activity of nrti via metal-organic frameworks
+nanoparticles. Adv Healthc Mater 2013;2:1630e7.
+51. Forgan RS, Smaldone RA, Gassensmith JJ, Furukawa H, Cordes DB,
+Li Q, et al. Nanoporous carbohydrate metal-organic frameworks. J Am
+Chem Soc 2011;134:406e17.
+52. Abucafy MP, Caetano BL, Chiari-Andreo BG, Fonseca-Santos B, do
+Santos AM, Chorilli M, et al. Supramolecular cyclodextrin-based
+metal-organic frameworks as efﬁcient carrier for anti-inﬂammatory
+drugs. Eur J Pharm Biopharm 2018;127:112e9.
+53. He Y, Zhang W, Guo T, Zhang G, Qin W, Zhang L, et al. Drug
+nanoclusters formed in conﬁned nano-cages of CD-MOF: dramatic
+enhancement of solubility and bioavailability of azilsartan. Acta
+Pharm Sin B 2019;9:97e106.
+2922
+Xiaojin Chen et al.
+
+54. Zhang G, Meng F, Guo Z, Guo T, Peng H, Xiao J, et al. Enhanced stability
+of vitamin A palmitate microencapsulated by gamma-cyclodextrin
+metal-organic frameworks. J Microencapsul 2018;35:249e58.
+55. Lv N, Guo T, Liu B, Wang C, Singh V, Xu X, et al. Improvement in
+thermal stability of sucralose by gamma-cyclodextrin metal-organic
+frameworks. Pharm Res 2017;34:269e78.
+56. Sha J, Wu L, Li S, Yang X, Zhang Y, Zhang Q, et al. Synthesis and
+structure of new carbohydrate metal-organic frameworks and inclusion
+complexes. J Mol Struct 2015;1101:14e20.
+57. Liu B, Li H, Xu X, Li X, Lv N, Singh V, et al. Optimized synthesis and
+crystalline stability of g-cyclodextrin metal-organic frameworks for
+drug adsorption. Int J Pharm 2016;514:212e9.
+58. Smaldone
+RA,
+Forgan
+RS,
+Furukawa
+H,
+Gassensmith
+JJ,
+Slawin AMZ, Yaghi OM, et al. Metal-organic frameworks from edible
+natural products. Angew Chem Int Ed 2010;49:8630e4.
+59. Xu J, Wu L, Guo T, Zhang G, Wang C, Li H, et al. A "Ship-in-a-Bottle"
+strategy to create folic acid nanoclusters inside the nanocages of gamma-
+cyclodextrin metal-organic frameworks. Int J Pharm 2019;556:89e96.
+Enhancement in solubility and bioavailability of isosteviol using CD-MOF
+2923

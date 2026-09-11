@@ -1,0 +1,1067 @@
+Article
+https://doi.org/10.1038/s41467-024-53174-9
+Simultaneous generation of residue-free
+reactive oxygen species and bacteria capture
+for efﬁcient electrochemical water
+disinfection
+Yong Liu
+1,7, Lihao Wang1,7, Qianhui Ma1, Xingtao Xu
+2
+, Xin Gao1,
+Haiguang Zhu1, Ting Feng1, Xinyue Dou1, Miharu Eguchi3,4,
+Yusuke Yamauchi4,5,6
+& Xun Yuan
+1
+Residue-free and highly efﬁcient techniques for drinking water disinfection are
+urgently needed. Herein, we report an electrochemical water disinfection sys-
+tem equipped with atomically precise Ag28 nanoclusters (NCs) as electrode
+materials. The deployment of these Ag28 NCs not only provides sufﬁcient elec-
+trosorption sites for intelligent microbe enrichment but also ensures high-
+efﬁciency dual-mode microbial killing through the in situ electrocatalytic pro-
+duction of residue-free reactive oxygen species (ROS) and the inherent anti-
+microbial activity of Ag28 NCs. Moreover, the design of the system enables a
+cyclical “alive microbe capture–killing–dead microbe desorption” process for
+continuous water disinfection. On this basis, this water disinfection system is
+efﬁcient against broad-spectrum microbes (with >99.99% antimicrobial activity),
+durable (with a performance reduction of only 0.75% over 40 cycles and 99.90%
+antimicrobial efﬁciency for over 5 h of continuous operation), versatile (i.e.,
+other NCs can be used), scalable (with water productivity of 213.33 L h−1 m−2),
+energy efﬁcient (with a low energy consumption of 4.91 Wh m−3; 1.04 Wh m−3
+without the pumping cost) and applicable for various real water samples. This
+study may open new avenues for global water disinfection techniques.
+The signiﬁcance of drinking water security for sustaining civilization
+and maintaining human health cannot be overstated, given that 3.6
+billion people worldwide currently face a shortage of safe drinking
+water, with this likely expanding to 5.7 billion by 20501,2. Chlorination,
+UV irradiation, and ozonation are common water disinfection techni-
+ques used in industry3,4. However, these techniques suffer from either
+carcinogenic residues (e.g., toxic trihalomethanes, haloacetic acids,
+and bromate from chlorination) or low processing efﬁciency (e.g., UV
+and ozonation)5. Therefore, there is an urgent need to explore residue-
+free and highly efﬁcient techniques for industrial use in drinking water
+disinfection.
+Hydrogen peroxide (H2O2) and other reactive oxygen species
+(ROS)6 are commonly used as residue-free and broad-spectrum disin-
+fectants due to their strong oxidative ability, which leads to green
+Received: 25 February 2024
+Accepted: 4 October 2024
+Check for updates
+1School of Material Science and Engineering, Qingdao University of Science and Technology, Qingdao, China. 2Marine Science and Technology College,
+Zhejiang Ocean University, Zhoushan, China. 3School of Advanced Science and Engineering, Waseda University, Shinjuku, Tokyo, Japan. 4Australian Institute
+for Bioengineering and Nanotechnology (AIBN), The University of Queensland, Brisbane, QLD, Australia. 5Department of Materials Process Engineering,
+Graduate School of Engineering, Nagoya University, Nagoya, Aichi, Japan. 6Department of Plant & Environmental New Resources, College of Life Sciences,
+Kyung Hee University, Yongin-si, South Korea. 7These authors contributed equally: Yong Liu, Lihao Wang.
+e-mail: xingtao.xu@zjou.edu.cn;
+y.yamauchi@uq.edu.au; yuanxun@qust.edu.cn
+Nature Communications|   (2024) 15:10175 
+1
+1234567890():,;
+1234567890():,;
+
+disinfection by the formation of oxygen and water7,8. Although the
+direct use of preformed H2O2 is a straightforward approach for water
+disinfection, it requires storage and transportation at the point of use
+and the use of stabilizers to prevent H2O2 degradation, with the side
+effect being lowering the antimicrobial efﬁcacy of H2O2
+9,10. Thus, this
+method is inconvenient and inefﬁcient. Alternatively, the catalytic in
+situ production of ROS by electrochemical or photochemical systems
+can overcome the drawbacks of preformed H2O2, with the electro-
+catalytic route being more advantageous than the photocatalytic one
+considering the poor penetration of light in water11 and relatively slow
+photocatalytic kinetics12. For instance, Kim’s group developed a series
+of self-powered (i.e., supercoiling-mediated rotational triboelectric
+nanogenerator) ROS-assisted electroporation disinfection systems
+with both nanowire-enhanced localized electric ﬁeld and oxidative
+species to terminate the microbes and achieved high disinfection
+performance
+without
+additional
+energy
+input
+or
+disinfection
+byproducts13,14. However, current ROS-directed water disinfection
+techniques are limited by low disinfection efﬁciency, largely due to the
+spread of generated ROS into the bulk water stream6. Moreover, the
+requirements of such techniques in terms of the ultrahigh production
+of ROS and the ultrafast diffusion of ROS into bulk water streams made
+their practical application impossible9. This dilemma has raised two
+questions: What are the criteria for an ideal water disinfection tech-
+nique? How can an excellent disinfection technique be designed?
+Deciphering the water disinfection process reveals six standards for an
+ideal technique: safe operation, no health risks, high efﬁciency, low
+cost, good durability, and adaptable decentralized application for
+underdeveloped regions. Developing a technique that meets several of
+these criteria is quite challenging, let alone fulﬁlling all of them
+simultaneously.
+Regarding the design of an optimal water disinfection system, our
+hypothesis was that using an electrocatalytic ROS-directed water dis-
+infection system with speciﬁc features would help us achieve this goal.
+We identiﬁed three essential features that the electrode material must
+possess: (i) efﬁcient capture of microbes from the water stream using
+electrostatic interactions or other driving forces15–19, ensuring that ROS
+and microbes encounter each other for efﬁcient disinfection and
+avoiding the low disinfection efﬁciency caused by ROS diffusion; (ii)
+in situ production of ROS by the electrode material without damaging
+its catalytic activity or inherent antimicrobial properties, leading to the
+ultrahigh antimicrobial efﬁcacy achieved by the high localized con-
+centration of ROS and antimicrobial electrode materials; and (iii)
+avoidance of high-cost metals such as Au and Pd to keep the system
+affordable. Therefore, the key to realizing this optimal water disin-
+fection method lies in the rational design of a multifunctional material
+that
+can
+fulﬁl
+the
+abovementioned
+criteria.
+Progress
+in
+the
+development of ultrasmall metal nanoclusters (NCs, <2 nm) presents
+an opportunity to design desirable electrode materials20. MetalNCs are
+novel functional nanomaterials with unique physicochemical proper-
+ties, including atomically precise structures, tailorable surface chem-
+istry, and molecule-like features such as strong luminescence, chirality,
+and HOMO–LUMO transitions21–29. For instance, precise Ag NCs can be
+used both as a model electrode material for the catalytic production of
+ROS for microbial killing and as intrinsic antimicrobial agents20,30.
+Conﬁguring Ag NC-based electrode materials into an electrosorption
+device could ensure fast microbe capture for efﬁcient water
+disinfection.
+Herein, we present a capacitive-charging induced electrochemical
+water disinfection (CEWD) system that uses atomically precise
+Ag28(GSH)20 NCs as electrode materials (GSH denotes glutathione).
+These NCs are locked within the metal–organic framework (MOF) ZIF-
+67. This conﬁguration not only improves the stability of Ag28(GSH)20
+NCs but also provides sufﬁcient electrosorption sites, which ensures
+high-efﬁciency dual-mode microbial killing through the in situ elec-
+trocatalytic production of ROS and the inherent antimicrobial activity
+of Ag28(GSH)20 NCs. In addition, the system design enables efﬁcient
+capture of microbes in the bulk water stream onto the surface of the
+anode material, creating highly localized concentrations of ROS and
+microbes, as well as additional contact with antimicrobial electrodes
+for microbe killing. The system is broadly effective (>99.99% anti-
+microbial rate), ultrastable (an efﬁciency reduction of only 0.75% over
+40 cycles), durable (99.90% bacterial killing efﬁciency for over 5 h of
+continuous operation), versatile (i.e., other NCs can be used), scalable
+(productivity of 213.33 L h m−2), energy efﬁcient (energy consumption
+of 1.04 Wh m−3), and practicable. This work may provide a paradigm for
+the design of ROS-directed water disinfection systems featuring the
+electrocatalytic in situ formation of residue-free ROS with concurrent
+microbe capture through capacitive charging, which may promote the
+translation of this water disinfection technique in the water industry.
+Results
+Material characterizations
+In this study, ultrasmall Ag28(GSH)20 NCs were selected as the elec-
+trocatalyst model and were further locked inside the framework of ZIF-
+67 for enhanced catalytic durability (denoted Ag NCs@ZIF-67). After-
+wards, Ag NCs@ZIF-67 was assembled as the CEWD anode for highly
+efﬁcient water disinfection based on the combined actions of the
+in situ production of residue-free ROS and concurrent microbe cap-
+ture (Fig. 1).
+Ag NCs@ZIF-67 synthesized via a two-step procedure (Fig. 2a).
+Speciﬁcally, Ag28(GSH)20 NCs were ﬁrst prepared by a conventional
+NaBH4 reduction method31 and subsequently immobilized inside ZIF-
+Fig. 1 | Schematic illustrations of CEWD. Schematic illustration of the application scenario and the working principle of CEWD for bacterial killing.
+Article
+https://doi.org/10.1038/s41467-024-53174-9
+Nature Communications|   (2024) 15:10175 
+2
+
+67 via “coordination-assisted self-assembly”32. As the active compo-
+nent of Ag NCs@ZIF-67, Ag28(GSH)20 NCs were ﬁrst characterized by
+UV-visible absorption spectrometry (UV-vis), electrospray ionization
+mass spectrometry (ESI-MS), and transmission electron microscopy
+(TEM). The UV-vis spectrum shows a dominant peak at 485 nm
+(Fig. 2b), indicating the formation of ultrasmall Ag NCs with molecule-
+like optical absorption. ESI-MS demonstrates peaks at m/z = 1305, 1527,
+1834, and 2292, which correspond to the 7, 6, 5, and 4 charges of
+Ag28(GSH)20 NCs, respectively (Fig. 2c and Supplementary Fig. 1). The
+TEM image conﬁrms the presence of ultrasmall Ag NCs with a core size
+of ~1.1 nm without the presence of large Ag nanoparticles (Fig. 2d).
+Ag28(GSH)20 NCs were accommodated inside ZIF-67 to create Ag
+NCs@ZIF-67 (Fig. 2e). To highlight the advantages of the Ag NCs@ZIF-
+67 conﬁguration, ZIF-67@Ag NCs was also prepared as a reference by
+in situ formation of Ag NCs on the surface of preformed ZIF-67 (Sup-
+plementary Fig. 2a). The size, morphology, and elemental distributions
+of both hybrids were examined using high-angle annular dark-ﬁeld
+scanning transmission electron microscopy (HAADF-STEM) and TEM
+(Fig. 2e–g and Supplementary Fig. 2b–d). Figure 2e, f shows that in Ag
+NCs@ZIF-67, Ag28(GSH)20 NCs are uniformly embedded inside the ZIF-
+67 matrix without any change in size (inset of Fig. 2f), which was fur-
+ther supported by the X-ray diffraction (XRD) results (see Supple-
+mentary Fig. 3 and Supplementary Note I). This structure exhibits the
+catalytic activity of the Ag28(GSH)20 NCs, as ZIF-67 prevents aggrega-
+tion and reinforces the structure with space conﬁnement. In compar-
+ison, the morphology and size of the ZIF-67@Ag NCs (Supplementary
+Fig. 2b, c) are similar to those of the Ag NCs@ZIF-67.
+Furthermore, the elemental maps of both Ag NCs@ZIF-67 and
+ZIF-67@Ag NCs conﬁrm the uniform distribution of Ag and S
+throughout ZIF-67 (Fig. 2g and Supplementary Fig. 2d). Both hybrids
+have comparable loading amounts of Ag NCs, 2.90 wt% for Ag
+NCs@ZIF-67 and 2.87 wt% for ZIF-67@Ag NCs, as determined by
+inductively coupled plasma-mass spectrometry (ICP-MS). In addition,
+the oxidation states of Ag species in the Ag NCs and the Co species in
+the Ag NCs@ZIF-67 were also investigated by X-ray photoelectron
+spectroscopy (XPS, see Supplementary Figs. 4–6 and Supplemen-
+tary Note I).
+Disinfection evaluations
+To assess the water disinfection efﬁciency, Ag NCs@ZIF-67 was
+assembled into a CEWD system as the anode (Fig. 3a) with surface-
+loaded ZIF-67@Ag NCs (right item on the right side of Fig. 3a) for
+comparison purposes. The CEWD system had an asymmetrical cell
+architecture and utilized activated carbon (AC) as the cathode. The
+conﬁguration and parameters for the CEWD system are shown in
+Supplementary Fig. 7 and Supplementary Table 1. Before commencing
+10 nm
+a
+b
+d
+c
+e
+f
+g
+200 nm
+C
+Ag
+S
+O
+50 nm
+Fig. 2 | Structural characterizations of the Ag28(GSH)20 NCs and Ag NCs@ZIF-
+67. a Schematic illustration of the synthesis of Ag NCs@ZIF-67, b UV-vis absorption
+spectrum, c ESI-MS results, and d TEM image of Ag28(GSH)20 NCs; e–f HAADF-STEM
+images and g elemental maps (i.e. C, Ag, S, and O) of Ag NCs@ZIF-67. The insets in
+b, d, and f are digital photographs of Ag28(GSH)20 NC solutions under visible light,
+the particle size distribution of Ag28(GSH)20 NCs, and the particle size distribution
+of Ag28(GSH)20 NCs within ZIF-67, respectively.
+Article
+https://doi.org/10.1038/s41467-024-53174-9
+Nature Communications|   (2024) 15:10175 
+3
+
+the water disinfection experiments, we optimized the loading amount
+of Ag28(GSH)20 NCs inside Ag NCs@ZIF-67 to 2.90 wt% and the oper-
+ating voltage of the CEWD system to 1.4 V for experimentation, as
+shown in Supplementary Figs. 8–15. The model solution consisting of
+three typical microbes found in natural water sources, namely, gram-
+negative E. coli (abbreviated as Escherichia coli), gram-positive B. sub-
+tilis (abbreviated as Bacillus subtilis), and the fungus C. albicans
+(abbreviated as Candida albicans), was pumped into the CEWD system
+through single-pass mode. As shown in Fig. 3b–d, Supplementary
+Fig. 11, and Supplementary Figs. 16–20, the Ag NCs@ZIF-67-based
+CEWD system displayed ultrahigh antimicrobial activity against all
+three microbes, with kill percentages of 99.99–99.9999% against E.
+coli, 99.90–99.999% against B. subtilis, and 99.90–99.999% against C.
+albicans, respectively. These antimicrobial activities were 1.86–2.2
+orders of magnitude (based on log reduction) increment than that of
+the ZIF-67@Ag NCs-based CEWD system (i.e., 99.80–99.96% against E.
+coli, 99.60–99.80% against B. subtilis, and 99.50–99.80% against C.
+albicans), highlighting the unique ability of Ag28(GSH)20 NCs within
+ZIF-67 to enhance antimicrobial efﬁciency.
+Interestingly, we observed a signiﬁcantly greater killing efﬁ-
+ciency against E. coli than against B. subtilis and C. albicans, which
+should be due to the thinner cell membrane (see Supplementary
+Table 2), as well as the enhanced driving force for E. coli capture in
+the electric ﬁeld due to its having a more negative ζ-potential than
+did its counterparts (E. coli: −55.9 mV; B. subtilis: −39.4 mV; and C.
+albicans: −35.6 mV, 106 CFU mL−1; Supplementary Table 3). The
+detailed antimicrobial mechanisms are discussed later. Never-
+theless, only a trace amount of Ag ions was detected in the efﬂuent
+(3.350 μg L−1, Supplementary Table 4), an amount that is much lower
+than the guideline value (100 μg L−1) for drinking water reported by
+the World Health Organization (WHO). In contrast, a higher con-
+centration of released Ag ions (20.650 μg L−1, Supplementary
+Table 4) was detected in the efﬂuent of the CEWD system equipped
+with surface-loaded ZIF-67@Ag NCs than in that of the Ag NCs@ZIF-
+67. These results demonstrate that our strategy of embedding
+Ag28(GSH)20 NCs inside ZIF-67 can effectively protect Ag28(GSH)20
+NCs from decomposition and prevent secondary water pollution
+without releasing Ag species into water.
+f
+e-
+Ag NCs@ZIF-67
+ZIF-67@Ag NCs
+Cluster inside or outside: Which is better?
+“ROS Layer” — Water oxidization reaction:
+One-electron pathway: H2O →•OH + H+ + e-
+Two-electron pathway: 2H2O →H2O2 + 2H+ + 2e-
+H2O
+H2O2
+•OH
+b
+e
+a
+c
+d
+H2O
+H2O2 and •OH
+Fig. 3 | Disinfection evaluations of the Ag NCs@ZIF-67 and ZIF-67@Ag NCs-
+based CEWD systems. a Schematic illustration of the anode interface of the CEWD
+system for the electrocatalytic production of ROS for microbe killing and its key
+electrode components (Ag NCs@ZIF-67 and ZIF-67@Ag NCs); kill percentage
+against b E. coli, c B. subtilis, and d C. albicans achieved with Ag NCs@ZIF-67 and
+ZIF-67@Ag NCs-based CEWD during the ﬁrst 60 min; e durability test performed on
+the AC, ZIF-67, and Ag NCs@ZIF-67-based CEWD systems against E. coli for 5 h;
+f long-term cyclic stability evaluation performed on the Ag NCs@ZIF-67 and ZIF-
+67@Ag NCs-based CEWD systems. Note: The feeding concentrations of E. coli, B.
+subtilis, and C. albicans were set to 106 CFU mL−1.**Error bars = s.d. (n = 3).
+Article
+https://doi.org/10.1038/s41467-024-53174-9
+Nature Communications|   (2024) 15:10175 
+4
+
+Durability, cycling stability, and water safety are among the most
+important factors affecting the practical application of any water dis-
+infection technique. Therefore, long-term(over 5 h) and multicycle (40
+cycles) disinfection experiments were conducted (Fig. 3e–f and Sup-
+plementary Figs. 21–26). As shown in Fig. 3e, killing efﬁciency against
+E. coli of over 99.90% remains even after 5 h of continuous operation
+without any regeneration for our CEWD system, while the disinfection
+efﬁciency of the AC- and ZIF-67-based systems rapidly decreased to
+below 90% within 60 min. These results show the superior durability of
+the Ag NCs@ZIF-67-based CEWD system and its potential for con-
+tinuous water disinfection in practical applications. Moreover, this
+outcome contradicts the “adsorption and termination” mechanism of
+conventional capacitive disinfection since the electrosorption equili-
+brium state should have long been reached (as seen in the AC-based
+system in Fig. 3e) and indicates that other dynamic processes must
+occur to trigger this ultradurable disinfection process, which is dis-
+cussed in detail in the following section. Regarding cycling stability,
+only a 0.75% reduction (still greater than 99.90%) is found in the
+antimicrobial ratio for the Ag NCs@ZIF-67-based CEWD system after
+40 disinfection/regeneration cycles (Fig. 3f and Supplementary
+Figs. 25–26), revealing its excellent cycling stability; however, the dis-
+infection efﬁciency against E. coli with the ZIF-67@Ag NCs electrode
+rapidly decreases to below 99% within the ﬁrst 5 cycles. This result was
+further supported by post-disinfection characterization using STEM,
+and ICP-MS. As shown, the structure of Ag NCs@ZIF-67 was well
+maintained after 40 disinfection/regeneration cycles (Supplementary
+Fig. 27), and the Ag content in Ag NCs@ZIF-67 barely changed
+according to the ICP-MS results (Supplementary Table 5), demon-
+strating the excellent structural stability of Ag NCs@ZIF-67. Moreover,
+the Ag content in the ZIF-67@Ag NCs decreased from 2.87% to 1.61%
+(Supplementary Table 5), and few Ag NCs wereobserved in the HAADF-
+STEM images of the ZIF-67@Ag NCs after cycling (Supplementary
+Fig. 28). These distinct differences demonstrate the effectiveness of
+encapsulating Ag28(GSH)20 NCs within ZIF-67 in improving their
+structural stability and ensuring their durability and cycling stability.
+Furthermore, the Ag NCs@ZIF-67-based CEWD system was conﬁrmed
+to have excellent biocompatibility through the LIVE/DEAD viability
+assay
+and
+cell
+proliferation
+kit
+(MTT)
+test
+(Supplementary
+Figs. 29 and 30 and Supplementary Note II). This validation highlights
+the exceptional ability of these systems to ensure water safety.
+Antimicrobial mechanism
+The excellent water disinfection performance of the Ag NCs@ZIF-67-
+based CEWD system calls for further investigation of its antimicrobial
+mechanism. As depicted in Fig. 4a, the antimicrobial mechanism can
+be elaborated upon in three aspects. First, the Ag28(GSH)20 NCs in the
+electrode of the CEWD system ﬁrst electrocatalytically generate
+abundant ROS in situ (see illustration in the upper right part of
+Fig. 3a)33–36, forming a ROS layer for microbial killing (upper left part of
+Fig. 4a). These ROS are highly toxic to microbes, such as bacteria and
+fungi, triggering their effective elimination. The experimental ﬁndings
+demonstrated that these ROS were mainly produced at the anode of
+the CEWD system (Fig. 4b, Supplementary Figs. 31–34, and Supple-
+mentary Note III), with the majority being H2O2 (244.83 μM) and a
+minority being hydroxyl radicals(•OH, 3.39 µM). Although less •OH was
+produced than H2O2, •OH is known to possess 108 times greater anti-
+microbial activity than H2O2 and plays a crucial role in killing bacteria
+and fungi9,37. Consequently, the CEWD system, with its •OH produc-
+tion, exhibits superior antimicrobial capabilities compared to con-
+ventional catalytic H2O2 production-based systems.
+Second, the CEWD system, as shown in Fig. 4a (lower left part),
+employs Ag28(GSH)20 NCs with inherent antimicrobial activity to
+enhance its antimicrobial activity on the anode surface. However,
+relying solely on in situ-generated ROS and the inherent antimicrobial
+property of Ag28(GSH)20 NCs is not sufﬁcient for efﬁcient water
+disinfection. This is because ROS are not easily accessible to microbes
+in the bulk stream, and the encapsulated Ag28(GSH)20 NCs cannot
+reach microbes in the bulk stream. Consequently, the diffusion of ROS
+from the electrode surface into the bulk stream for microbial killing is
+hampered by the sharp decrease in the ROS concentration gradient
+and the susceptibility of ROS to decomposition during the diffusion
+process. Fortunately, the CEWD system overcomes these challenges by
+utilizing
+electrostatic
+attraction
+to
+capture negatively
+charged
+microbes from the bulk stream onto the anode surface (right part of
+Fig. 4a). This strategy creates high local concentrations of both ROS
+and microbes near the anode surface, maximizing the antimicrobial
+efﬁciency of the in situ-produced ROS and Ag28(GSH)20 NCs on the
+anode surface of the CEWD system.
+To conﬁrm the microbial capture ability of the CEWD electrode
+materials, we tested the ζ-potentials of bacteria and fungi. Both bac-
+teria and fungi had negative charges, with values of −55.9 mV for E. coli,
+−39.4 mV for B. subtilis, and −35.6 mV for C. albicans (Fig. 4c and
+Supplementary Table 3). The negative charge of the microbes facil-
+itates the use of charge attraction in the CEWD system for microbial
+enrichment. Moreover, when microbes are effectively killed on the
+surface of the anode, their ζ-potentials change accordingly. In parti-
+cular, the negative charges of dead microbes are signiﬁcantly reduced
+(−42.0 mV for E. coli, −27.9 mV for B. subtilis, and −25.1 mV for C. albi-
+cans), which facilitates their detachment from the anode surface. A
+detailed discussion of the cyclic “alive microbe capture–killing–dead
+microbe desorption” mechanism on the electrode is presented in
+Supplementary Note IV (Supplementary Figs. 35–37). Furthermore, we
+examined the electrosorption behaviour of microbes on the electrode
+surface. As depicted in Fig. 4d, the Ag NCs@ZIF-67-based CEWD sys-
+tem demonstrated a high bacterial adsorption rate, reaching as high as
+1 × 106 CFU min−1 (the detailed calculation method can be found in
+Supplementary Fig. 38 and Supplementary Note V). The absorption
+rate remained steady at 9.91 × 105 CFU min−1 even after 300 min of
+continuous operation, conﬁrming our initial assumption that microbes
+can be continuously trapped on the anode surface of the Ag NCs@ZIF-
+67-based CEWD system. Notably, this result is in stark contrast to that
+of AC electrode- or pure ZIF-67-based CEWD systems, which exhibit a
+rapid decrease in microbial adsorption rate after 1 h despite having a
+much larger surface area for electrosorption (Fig. 4d). Such a drastic
+contrast contradicts the law of electrosorption equilibrium, further
+strengthening
+the
+evidence
+for
+a
+cyclical
+“alive
+microbe
+capture–killing–dead microbe desorption” process that sustains con-
+tinuous water disinfection. This process ensures that the CEWD system
+has efﬁcient yet long-term antimicrobial activity. Moreover, the real-
+time removal of pathogens was assessed by a LIVE/DEAD assaythrough
+inverted ﬂuorescence microscopy to determine how quickly the
+pathogens were terminated. Speciﬁcally, the disinfection experiment
+was carried out for different durations (1 min, 2 min, 3 min, and 4 min),
+followed by short-circuiting of the device to ﬂush out both live and
+dead bacteria. As shown in Supplementary Fig. 39a–f, 91.18%, 96.58%,
+97.64%, and 98.15% of the bacteria were terminated at 1 min, 2 min,
+3 min, and 4 min, respectively. Remarkably, the antimicrobial efﬁcacy
+reached 91.18% in just 1 min, indicating the rapid disinfection capability
+of our CEWD system. The disinfection efﬁcacy could be much greater
+(as shown in Supplementary Fig. 39g through the plate counting
+method) under real operational conditions (not short-circuited) since
+the bacteria could be trapped on the surface of the electrode through
+electrosorption and could subsequently enable a much longer time for
+termination. Taken together, the CEWD system achieves efﬁcient
+microbial enrichment and subsequent water disinfection through the
+electrostatic capture of microbes, as well as in situ-produced ROS and
+the intrinsic antimicrobial activities of the Ag28(GSH)20 NCs38,
+respectively.
+Two interesting issues may arise: (1) Does the intrinsic anti-
+microbial activity of Ag28(GSH)20 NCs contribute to microbial killing
+Article
+https://doi.org/10.1038/s41467-024-53174-9
+Nature Communications|   (2024) 15:10175 
+5
+
+via physical contact? (2) Can other metal NCs or other materials be
+used as CEWD electrodes for antimicrobial application? To validate
+these issues, two similar electrode materials (i.e., Au NCs@ZIF-67 and
+Pt NCs@ZIF-67 fabricated by encapsulating Au NCs and Pt NCs in ZIF-
+67), and one electrode equipped with non-metallic covalent organic
+framework (COF) were employed for water disinfection test (Supple-
+mentary Figs. 40–42). While the loading amounts of Au NCs and Pt NCs
+in the ZIF-67 were adjusted to be similar to that of Ag NCs inside the
+ZIF-67 (Supplementary Table 6), the loading amount of COF in the
+model COF electrode was optimized to make its ROS production level
+comparable to the Ag NCs@ZIF-67 one. As shown in Fig. 4e–f and
+Supplementary Fig. 43, the local ROS concentration of Ag NCs@ZIF-
+67-based CEWD was relatively lower than that of the Au NCs@ZIF-67-
+and Pt NCs@ZIF-67-based CEWD systems, and exactly comparable to
+that of the model COF-based CEWD system. However, Ag NCs@ZIF-67
+displayed greater antimicrobial efﬁciency against E. coli than its three
+counterparts (Fig. 4e–f and Supplementary Figs. 44–46), indicating
+that physical contact between Ag28(GSH)20 NCs and microbes (intrin-
+sic disinfection of Ag NCs) also plays an important role in enhancing
+the antimicrobial activity of the CEWD system. To conﬁrm the physical
+contact between Ag NCs@ZIF-67 and the bacteria, scanning electron
+microscopy–energy dispersion spectrometry (SEM‒EDS) was con-
+ducted to construct surface element maps of the Ag NCs@ZIF-67. The
+results, as depicted in Supplementary Fig. 47, revealed the presence of
+Ag on the surface of ZIF-67, suggesting that effective contact could be
+established between Ag NCs and the bacteria and conﬁrming our
+hypothesis of a dual-mode disinfection mechanism. To analyse the
+contributions of ROS and the intrinsic disinfection of Ag NCs to the
+f
+g
+e
+I. “ROS-layer” Killing
+II. Ag NCs Contact Killing
+III. Live-adsorption and
+Dead-desorption Cycle
+Live bacteria
+Dead bacteria
+c
+d
+a
+b
+Fig. 4 | Antimicrobial mechanism explorations of the Ag NCs@ZIF-67-based
+CEWD system. a Schematic illustration of the water disinfection mechanism of the
+Ag NCs@ZIF-67-based CEWD system: (I) in situ production of ROS for microbial
+killing, (II) microbial killing by the Ag28(GSH)20 NCs with inherent antimicrobial
+activity, and (III) smart alive microbe capture–killing–dead microbe desorption
+circulation; b comparison of ROS (H2O2 and •OH) generation at the cathode and
+anode of the Ag NCs@ZIF-67-based CEWD system; c ζ-potentials of live and dead
+E. coli, B. subtilis, and C. albicans; d time-course bacteria adsorption rate of the Ag
+NCs@ZIF-67, ZIF-67, and AC-based CEWD systems; e disinfection efﬁciency and
+f ROS (H2O2 and •OH) production of Ag NCs@ZIF-67, Au NCs@ZIF-67, and Pt
+NCs@ZIF-67-based CEWD systems with a feeding E. coli concentration of
+106 CFU min−1; g contribution analysis of the intrinsic disinfection of Ag NCs and
+ROS disinfection of the Ag NCs@ZIF-67-based CEWD system. Error bars = s.d.
+(n = 3). The insets in Fig. 4d are the SEM images of live (left, scale bar: 100 nm) and
+dead (right, scale bar: 100 nm) E. coli.
+Article
+https://doi.org/10.1038/s41467-024-53174-9
+Nature Communications|   (2024) 15:10175 
+6
+
+total antimicrobial efﬁcacy, the antimicrobial efﬁcacy of the model
+COF electrode-based and Ag NCs@ZIF-67-based CEWD systems was
+speciﬁcally compared (Supplementary Fig. 48). The model COF elec-
+trode demonstrated the ability to eliminate ~90% of bacteria, which
+means that the ROS contributed ~90% antimicrobial efﬁcacy in the Ag
+NCs@ZIF-67-based CEWD system because of the same amount and
+types of ROS production by the Ag NCs@ZIF-67. Accordingly, the
+intrinsic antimicrobial activity of Ag NCs was found to enhance the
+overall antimicrobial efﬁciency by an additional ~10% in the Ag
+NCs@ZIF-67-based CEWD system (Fig. 4g), since COF has negligible
+intrinsic disinfection properties in this scenario. Consequently, the
+predominant factor inﬂuencing the antimicrobial efﬁcacy of CEWD is
+ROS, with the intrinsic disinfection of Ag NCs further enhancing the
+antimicrobial efﬁcacy. The preliminary success of applying different
+metal NCs (e.g., Ag, Au, and Pt) and other nanomaterials (e.g., COF) as
+the core materials for CEWD has proven the versatility of this strategy.
+This could establish a universal platform for various oxidation-based
+applications (e.g., bacterial killing, selective microreactors, advanced
+oxidation).
+Theoretical exploration
+Why could Ag NCs@ZIF-67-based CEWD produce substantial amounts
+of ROS? This should be correlated with the molecular structure of the
+Ag28(GSH)20 NCs39. Therefore, we ﬁrst optimized the structure of
+Ag28(GSH)20 NCs based on ﬁrst-principles calculations via structural
+optimization, a static self-consistent ﬁeld (SCF), density of state cal-
+culations, and charge calculations using VASP-6.1.0 via density func-
+tional theory (DFT). The cross-section of Ag28(GSH)20 NCs is shown in
+Fig. 5a. Speciﬁcally, Ag28(GSH)20 NCs contain an Ag20 core (Td sym-
+metry with a geometric symmetry of D2h (Fig. 5a), capped by two
+Ag3S3 motifs (i.e., type i), two Ag1S1 motifs (i.e., type ii), and twelve S
+terminals (i.e., two S terminals of type iii and ten S terminals of type iv).
+Upon acquiring the structure and the wavefunction of the Ag28(GSH)20
+NCs (Supplementary Fig. 49 and Supplementary Note VI), we searched
+for the GSH ligands on the Ag28(GSH)20 NCs to identify potential active
+absorption sites for water molecules to facilitate ROS production,
+considering the lowest free energy on the potential energy surface.
+Through this analysis, we identiﬁed a total of eight adsorption sites for
+water molecules (Fig. 5b). Additionally, we provided the atomic coor-
+dinate parameters of the water molecules adsorbed by Ag28(GSH)20
+NCs in the Supplementary File, while the adsorption-free energies of
+each site are presented in Supplementary Table 7. Notably, sites #2, #4,
+and #8 have the lowest free energy among all the active sites, implying
+that they are the most likely active sites for adsorbing water molecules
+for water oxidation.
+To explore the detailed water oxidation pathway for ROS pro-
+duction, we constructed energy maps of different water oxidation
+pathways at these three active sites (#2, #4, and #8), including one-
+electron (to generate •OH, H2O →•OH + H+ + e−, Fig. 5c), two-electron
+(to generate H2O2, 2H2O →H2O2 + 2H+ + 2e−, Fig. 5d), and four-electron
+(to generate O2, 2H2O →O2 + 4H+ + 4e−, Fig. 5e)40–42 routes. Among
+them, OH* can desorb from the active site to generate free •OH via the
+one-electron route (Fig. 5c)43, yet the desorption of OH* requires
+excess energy to overcome the energy barrier of ~0.5–1.1 eV37. In
+addition, the two-electron oxidation of water to form H2O2 is ther-
+modynamically favourable (Supplementary Fig. 50 and Supplementary
+Note VII) based on the following facts: (1) the active site ﬁrst adsorbs a
+water molecule to generate OH*, and the decrease in free energy is
+approximately 1.1–1.5 eV; (2) OH* recombines with another water
+molecule to form H2O2, and the free energy further decreases in this
+step (Fig. 5d). For the four-electron oxygen evolution reaction (OER,
+Fig. 5e), the elementary OER steps include the formation of OH* by
+dissociative adsorption of H2O molecules, the formation of O* by
+deprotonation of OH*, O* oxidation to OOH*, and O2 formation and
+release. Obviously, the rate-determining step in the OER is O* oxidation
+to OOH*, which requires excess energy to overcome the energy barrier
+of ~0.62–0.94 eV. Therefore, the water molecules adsorbed on the
+active site preferentially undergo two-electron oxidation to generate
+H2O2 instead of one- or four-electron oxidation. To further verify that
+H2O2 is generated from H2O through two-electron water oxidation, we
+repeated the ROS generation experiment in D2O and conducted a 2H
+nuclear magnetic resonance (NMR 2H) test to determine whether D2O2
+could be generated. As shown in Supplementary Fig. 51, while D2O
+shows a single peak at ~4.8 ppm in its NMR 2H spectrum, two obvious
+peaks at ~4.8 ppm and ~3.8 ppm were found in the NMR 2H spectrum
+of the reacted D2O solution after electrocatalytic treatment. This result
+indicates that D2O2 was generated from the oxidation of D2O mole-
+cules, conﬁrming that the water molecules underwent a two-electron
+oxidation process to generate H2O2.
+Practical application
+Scalability, energy efﬁciency, and adaptability are three crucial
+factors that impact the practical application of water disinfection
+devices. Therefore, we conducted initial tests to assess the scal-
+ability and applicability of the Ag NCs@ZIF-67-based CEWD sys-
+tem (Fig. 6a–b). First, we investigated the ﬂow rate tolerance of
+the CEWD modules by increasing the electrode size and examin-
+ing the disinfection rate at various ﬂow rates (1–100 mL min−1;
+Fig. 6c). The results show that the disinfection rate decreases with
+increasing ﬂow rate for all electrode sizes, but the largest module
+(with an electrode size of 281.25 cm2) maintains a high disinfec-
+tion rate of 99.90%, even at 100 mL min−1. Additionally, the water
+productivity increased exponentially with increasing module size,
+reaching 213.33 L h−1 m−2 for the 281.25 cm2 module (Fig. 6d). We
+also analysed the relationship between water productivity and
+energy consumption at various module sizes and found that
+energy consumption decreases exponentially with increasing
+productivity (Fig. 6e). The energy consumption of the module
+with size × 5 was 4.91 Wh m−3 (1.04 Wh m−3 without pumping cost),
+with
+corresponding
+water
+productivity
+of
+213.33 L h−1 m−2,
+demonstrating its excellent energy efﬁciency. The high energy
+efﬁciency of our system could be attributed to the precise tar-
+geting of microbes and the continuous operation mode. Speciﬁ-
+cally, unlike conventional ROS antimicrobial techniques that need
+to generate a large amount of ROS to release into the microbe
+stream (the current to generate such an amount of ROS would be
+high), our CEWD system could trap microbes on the surface of
+the anode, while only a high local ROS concentration is needed to
+kill bacteria. Therefore, the current for ROS generation could be
+largely reduced (the current transients are shown in Supple-
+mentary Fig. 52). Moreover, the operational energy cost (e.g.,
+pumping cost) could be reduced since our CEWD system operates
+in continuous mode and no additional energy is required for its
+regeneration.
+Building on this promising energy efﬁciency, we evaluated the
+disinfection performance of the CEWD system for various real water
+samples, including those from rivers, lakes, seas, and reservoirs
+(Fig. 6b). Notably, the real water samples analysed in this study con-
+tained a mixture of ions and organic pollutants, posing potential
+challenges to the disinfection performance of the CEWD system. Total
+organic carbon (TOC) levels in these samples were assessed before and
+after disinfection treatment (refer to Supplementary Table 8), indi-
+cating the effectiveness of the CEWD system in removing TOC. The
+reduction in TOC can be attributed to the oxidation facilitated by the
+ROS generated during the disinfection process. Impressively, our
+CEWD system demonstrated exceptional efﬁcacy in eliminating
+pathogens, achieving a greater than 99.90% killing rate across all water
+samples containing TOC (Fig. 6f). In addition, no detectable disinfec-
+tion byproducts (DBPs), such as carcinogenic residues, were found in
+the treated water samples, as indicated in Supplementary Table 9,
+Article
+https://doi.org/10.1038/s41467-024-53174-9
+Nature Communications|   (2024) 15:10175 
+7
+
+underscoring the broad application scope, safety, and tolerance of the
+CEWD system to various salinity levels and organic pollutants (see
+Supplementary Figs. 53–54, Supplementary Table 10, Supplementary
+Movies 1–4, and Supplementary Note VIII). These results demonstrate
+that the CEWD system can adapt well to decentralized areas where
+water disinfection remains a great threat to public health but where
+large-scale water plants cannot be built, which is highly important for
+ensuring water security. Furthermore, we compared our CEWD system
+with other disinfection techniques from the literature, such as ex situ
+disinfection, UV, photocatalytic, and oxidation-assisted electropora-
+tion, in terms of energy utilization, safety, durability, disinfection
+efﬁciency, operability, and water ﬂux (Fig. 6g and Supplementary
+Table 11). Our CEWD system exhibited outstanding disinfection per-
+formance without apparent limitations, demonstrating its potential for
+practical applications.
+In summary, we designed a CEWD system equipped with an
+atomically precise Ag28(GSH)20 NC electrode for water disinfection. By
+integrating the in situ ROS production and the inherent antimicrobial
+c
+e
+d
+a
+b
+i
+ii
+iii
+iv
+Ag20 Core
+Ag28 (GSH)20
+#1
+#2
+#3
+#4
+#5
+#6
+#8
+#7
+Fig. 5 | Theoretical exploration of the Ag28(GSH)20 NCs catalyst for ROS gen-
+eration. a Ag28(GSH)20 NCs and its structural dissection. Colour codes: red =
+oxygen atom; white = hydrogen atom; dark blue = nitrogen atom; purple/grey = Ag
+atom; wathet blue = sulfur atom; black = carbon atom. b Active H2O adsorption
+sites of Ag28(GSH)20 NCs; c–e free energy diagrams of •OH, H2O2, and O2 produc-
+tion pathways on the active adsorption sites of Ag28(GSH)20 NCs.
+Article
+https://doi.org/10.1038/s41467-024-53174-9
+Nature Communications|   (2024) 15:10175 
+8
+
+activity of Ag28(GSH)20 NCs with smart microbe capture on the elec-
+trode surface, this water disinfection system was efﬁcient against
+broad-spectrum microbes (with a >99.99% antimicrobial rate), ultra-
+stable (with only a 0.75% efﬁciency reduction over 40 cycles), durable
+(with 99.90% antimicrobial efﬁciency for over 5 h of continuous
+operation), versatile (i.e., other NCs can be used), scalable (with water
+productivity of 213.33 L h m−2), energy efﬁcient (with a low energy
+consumption of 4.91 Wh m−3; 1.04 Wh m−3 without the pumping cost),
+and practically applicable for various real water samples. The brilliance
+of this study is the concurrent in situ formation of a high local ROS
+concentration via electrocatalysis and the inherent antimicrobial
+activity of Ag species with intelligent microbe enrichment on the
+electrode surface; ultimately, a continuous, highly efﬁcient, and safe
+water disinfection strategy was established, which could provide new
+possibilities for global water hygiene.
+Methods
+Synthesis of Ag28(GSH)20 NCs
+Reduced L-glutathione (GSH, 375 μL, 20 mM) and AgNO3 (125 μL,
+20 mM) were added to deionized (DI) water (4.4 mL) with vigorous
+stirring at room temperature to form an Ag(I)–GSH complex solution.
+Then, freshly prepared NaBH4 (50 μL, ~112 mM) was added dropwise to
+the Ag(I)–GSH complex solution to form a deep-red clear solution, and
+the solution was then incubated at room temperature for ~3 h until the
+solution became colourless. Next, NaBH4 (50 μL, ~112 mM) was added
+to the solution with stirring for 30 min and then aged at room tem-
+perature for 7 h. Finally, monodisperse Ag28(GSH)20 NCs were
+obtained by purifying the as-synthesized solution with a PD-10
+desalting column, and the concentration of the Ag28(GSH)20 NCs was
+adjusted to 5 mM through rotary evaporation.
+Synthesis of ZIF-67
+The 2-methylimidazole (2-MeIM) was added to a (CH3COO)2Co∙4H2O
+solution with a Co2+ to 2-MeIM molar ratio of 1:40 under vigorous
+stirring at room temperature for 6 h. Then, the solution was aged at
+room temperature for 12 h. The resulting material was centrifuged
+(8000 rpm), washed repeatedly with DI water, and dried under
+vacuum at 80 °C for 48 h.
+Synthesis of Ag NCs@ZIF-67
+2-MeIM and (CH3COO)2Co∙4H2O (molar ratio: 37:1) were added to the
+as-synthesized Ag28(GSH)20 NC solution with a Co2+ to Ag+ molar ratio
+of 8:1 under vigorous stirring at room temperature for 6 h. Then, the
+solution was aged at room temperature for 12 h. The resultant pre-
+cipitate was centrifuged (8000 rpm), washed with DI water, and dried
+under vacuum at 30 °C for 72 h.
+Synthesis of ZIF-67@Ag NCs
+GSH (375 μL, 20 mM), AgNO3 (125 μL, 20 mM), and the as-synthesized
+ZIF-67 (5 mg) were added to 4.4 mL of DI water with vigorous stirring at
+c
+d
+e
+f
+g
+UV
+Photocatalytic
+Oxidation-assisted
+Electroporation
+Ex-situ disinfection
+Our work
+Energy utilization
+Safety
+Water flux
+Durability
+Sterilization efficiency
+Operability
+Energy utilization
+Safety
+Water flux
+Durability
+Sterilization efficiency
+Operability
+a
+b
+Fig. 6 | Scalability, energy efﬁciency, and adaptability evaluations of the CEWD
+system. Digital photos of a the practical-scale testing setup of the Ag NCs@ZIF-67-
+based CEWD system (the solar panel is used to provide electricity only) and b water
+samples collected from four natural sources; c maximum allowable ﬂow rate of the
+three devices assuming that the antimicrobial efﬁciency is greater than 99.0%;
+d relationship between the maximum water productivity of the CEWD system and
+the electrode area; e energy consumption of the CEWD system as a function of
+water productivity; f antimicrobial performance of the CEWD system for four water
+samples; and g radar charts of the CEWD system in comparison with other water
+disinfection techniques in the literature7,45–47. Error bars = s.d. (n = 3).
+Article
+https://doi.org/10.1038/s41467-024-53174-9
+Nature Communications|   (2024) 15:10175 
+9
+
+room temperature. Then, freshly prepared NaBH4 (50 μL, ~112 mM)
+was added dropwise to the above solution for 5 min and aged at room
+temperature for 3 h. Afterwards, additional NaBH4 (50 μL, ~112 mM)
+was added to the solution with stirring for 30 min, and the mixture was
+then aged at room temperature for 8 h. Finally, the ZIF-67@Ag NCs
+were obtained by centrifuging (8000 rpm), washing repeatedly with DI
+water, and drying under vacuum at 30 °C for 72 h.
+Synthesis of Au25(GSH)18 NCs
+HAuCl4 (500 μL, 20 mM) and GSH (400 μL, 50 mM) were added to a
+mixed DI water (2.3 mL) and ethanol (6 mL) solvent with vigorous
+stirring at room temperature to form a GSH–Au(I) complex solution.
+Then, NaOH (200 μL, 1 M) and freshly prepared NaBH4 (100 μL,
+~112 mM) were added to the mixture with stirring for 3 h. Finally, the
+solution was centrifuged (8000 rpm) and redispersed in DI water to
+form a 5 mM Au25(GSH)18 NC solution.
+Synthesis of GSH-protected Pt NCs
+H2PtCl6 (200 μL, 100 mM) and GSH (400 μL, 50 mM) were added to DI
+water (9.5 mL) with vigorous stirring at room temperature to form the
+Pt(I)–GSH complex solution, and the pH of the solution was adjusted
+to 12.0 by adding NaOH (~150 μL, 1 M). Then, the Pt(I)–GSH complexes
+were reduced by bubbling CO into the solution for 5 min and sealing
+airtight with stirring for 24 h at room temperature. Finally, the con-
+centration of the GSH-protected Pt NCs was adjusted to 5 mM through
+rotary evaporation.
+Synthesis of COF
+The 1,3,5-triformylphloroglucinol at a concentration of 0.30 mM and
+benzidine at 0.45 mM were each dissolved in 20 mL of ethanol. The
+resulting solutions were subsequently combined in a 100 mL ﬂask and
+stirred at room temperature. After a stirring duration of 30 min, the
+resulting light brown suspension was subjected to centrifugation at
+10,000 rpm for 5 min, followed by a thorough washing with ethanol.
+The resultant COF was reﬂuxed with dimethylformamide (DMF) for 4 h
+to eliminate any unreacted residual, followed by a 2 h exchange with
+ethanol to replace the DMF. Ultimately, the synthesized COF was dried
+in a vacuum at room temperature overnight44.
+Detailed material characterizations, and antimicrobial evaluations
+are provided in the Supplementary Information.
+Reporting summary
+Further information on research design is available in the Nature
+Portfolio Reporting Summary linked to this article.
+Data availability
+Relevant data supporting the key ﬁndings of this study are available
+within the article and the Supplementary Information. All raw data
+generated during the current study are available from the corre-
+sponding authors upon request Source data are provided with
+this paper.
+References
+1.
+Alvarez, P. J. J., Chan, C. K., Elimelech, M., Halas, N. J. & Villagrán, D.
+Emerging opportunities for nanotechnology to enhance water
+security. Nat. Nanotechnol. 13, 634 (2018).
+2.
+He, C. et al. Future global urban water scarcity and potential solu-
+tions. Nat. Commun. 12, 4667 (2021).
+3.
+Shannon, M. A., Bohn, P. W., Elimelech, M., Georgiadis, J. G., Mar-
+iñas, B. J. & Mayes, A. M. Science and technology for water pur-
+iﬁcation in the coming decades. Nature 452, 301 (2008).
+4.
+Jütte, M., Abdighahroudi, M. S., Waldminghaus, T., Lackner, S. & V.
+Lutze, H. Bacterial inactivation processes in water disinfection-
+mechanistic aspects of primary and secondary oxidants—a critical
+review. Water Res. 231, 119626 (2023).
+5.
+Mitch, W. A., Richardson, S. D., Zhang, X. & Gonsior, M. High-
+molecular-weight by-products of chlorine disinfection. Nat. Water 1,
+336 (2023).
+6.
+Edwards, J. K. et al. Switching off hydrogen peroxide hydrogenation
+in the direct synthesis process. Science 323, 1037 (2009).
+7.
+Liu, C. et al. Rapid water disinfection using vertically aligned MoS2
+nanoﬁlms and visible light. Nat. Nanotechnol. 11, 1098 (2016).
+8.
+Lin, Y.-J. et al. Thermocatalytic hydrogen peroxide generation and
+environmental disinfection by Bi2Te3 nanoplates. Nat. Commun. 12,
+180 (2021).
+9.
+Richards, T. et al. A residue-free approach to water disinfection
+using catalytic in situ generation of reactive oxygen species. Nat.
+Catal. 4, 575 (2021).
+10.
+Xia, C., Xia, Y., Zhu, P., Fan, L. & Wang, H. Direct electrosynthesis of
+pure aqueous H2O2 solutions up to 20% by weight using a solid
+electrolyte. Science 366, 226 (2019).
+11.
+Fan, W. et al. Bactericidal efﬁciency and photochemical mechan-
+isms of micro/nano bubble-enhanced visible light photocatalytic
+water disinfection. Water Res. 203, 117531 (2021).
+12.
+Bie, C., Wang, L. & Yu, J. Challenges for photocatalytic overall water
+splitting. Chem 8, 1567 (2022).
+13.
+Huo, Z.-Y. et al. Microbial disinfection with supercoiling capacitive
+triboelectric nanogenerator. Adv. Energy Mater. 12, 2103680(2022).
+14.
+Huo, Z.-Y., Lee, D.-M., Wang, S., Kim, Y.-J. & Kim, S.-W. Emerging
+energy harvesting materials and devices for self-powered water
+disinfection. Small Methods 5, 2100093 (2021).
+15.
+Wang, Y. et al. High-performance capacitive deionization disinfec-
+tion of water with graphene oxide-graft-quaternized chitosan
+nanohybrid electrode coating. ACS Nano 9, 10142 (2015).
+16.
+Kim, K. et al. Coupling nitrate capture with ammonia production
+through bifunctional redox-electrodes. Nat. Commun. 14,
+823 (2023).
+17.
+Su, X., Kushima, A., Halliday, C., Zhou, J., Li, J. & Hatton, T. A.
+Electrochemically-mediated selective capture of heavy metal
+chromium and arsenic oxyanions from water. Nat. Commun. 9,
+4701 (2018).
+18.
+Liu, Y. et al. In situ synthesis of bismuth nanoclusters within carbon
+nano-bundles from metal-organic framework for chloride-driven
+electrochemical deionization. Adv. Funct. Mater. 32, 2110087
+(2022).
+19.
+Liu, X. et al. Unlocking enhanced capacitive deionization of
+NaTi2(PO4)3/carbon materials by the yolk-shell design. J. Am. Chem.
+Soc. 145, 9242 (2023).
+20. Du, Y., Sheng, H., Astruc, D. & Zhu, M. Atomically precise noble
+metal nanoclusters as efﬁcient catalysts: a bridge between struc-
+ture and properties. Chem. Rev. 120, 526 (2020).
+21.
+Shi, W.-Q. et al. Near-unity NIR phosphorescent quantum yield from
+a room-temperature solvated metal nanocluster. Science 383,
+326 (2024).
+22. Li, Y., Zhou, M., Song, Y., Higaki, T., Wang, H. & Jin, R. Double-helical
+assembly of heterodimeric nanoclusters into supercrystals. Nature
+594, 380 (2021).
+23. Wang, X. et al. Ligand-protected metal nanoclusters as low-loss,
+highly polarized emitters for optical waveguides. Science 381,
+784 (2023).
+24. Jia, T. et al. Eight-electron superatomic Cu31 nanocluster with chiral
+kernel and NIR-II emission. J. Am. Chem. Soc. 145, 10355
+(2023).
+25. Yao, Q. et al. Supercrystal engineering of atomically precise gold
+nanoparticles promoted by surface dynamics. Nat. Chem. 15,
+230 (2023).
+26. Narouz, M. R. et al. N-heterocyclic carbene-functionalized magic-
+number gold nanoclusters. Nat. Chem. 11, 419 (2019).
+27.
+Chen, J. et al. Atomically precise photothermal nanomachines. Nat.
+Mater. 23, 271 (2024).
+Article
+https://doi.org/10.1038/s41467-024-53174-9
+Nature Communications|   (2024) 15:10175 
+10
+
+28. Zhang, H. et al. Bacteria photosensitized by intracellular gold
+nanoclusters for solar fuel production. Nat. Nanotechnol. 13,
+900 (2018).
+29. Du, B. et al. Glomerular barrier behaves as an atomically precise
+bandpass ﬁlter in a sub-nanometre regime. Nat. Nanotechnol. 12,
+1096 (2017).
+30. Yang, G., Wang, Z., Du, F., Jiang, F., Yuan, X. & Ying, J. Y.
+Ultrasmall coinage metal nanoclusters as promising ther-
+anostic probes for biomedical applications. J. Am. Chem. Soc.
+145, 11879 (2023).
+31.
+Yuan, X., Setyawati, M. I., Tan, A. S., Ong, C. N., Leong, D. T. & Xie, J.
+Highly luminescent silver nanoclusters with tunable emissions:
+cyclic reduction-decomposition synthesis and antimicrobial prop-
+erties. NPG Asia Mater. 5, e39 (2013).
+32. Luo, Y. et al. Fabrication of Au25(SG)18-ZIF-8 nanocomposites: a
+facile strategy to position Au25(SG)18 nanoclusters inside and out-
+side ZIF-8. Adv. Mater. 30, 1704576 (2018).
+33. Tyo, E. C. & Vajda, S. Catalysis by clusters with precise numbers of
+atoms. Nat. Nanotechnol. 10, 577 (2015).
+34. Prieto, G., Zečević, J., Friedrich, H., de Jong, K. P. & de Jongh, P. E.
+Towards stable catalysts by controlling collective properties of
+supported metal nanoparticles. Nat. Mater. 12, 34 (2013).
+35. Hwang, G. B. et al. Photobactericidal activity activated by thiolated
+gold nanoclusters at low ﬂux levels of white light. Nat. Commun. 11,
+1207 (2020).
+36. Zheng, K. & Xie, J. Cluster materials as traceable antibacterial
+agents. Acc. Mater. Res. 2, 1104 (2021).
+37. Xie, J., Zhang, C. & Waite, T. D. Hydroxyl radicals in anodic oxidation
+systems: generation, identiﬁcation and quantiﬁcation. Water Res.
+217, 118425 (2022).
+38. Zheng, K., Setyawati, M. I., Leong, D. T. & Xie, J. Antimicrobial silver
+nanomaterials. Coordin. Chem. Rev. 357, 1 (2018).
+39. Wang, J., Xu, F., Wang, Z.-Y., Zang, S.-Q. & Mak, T. C. W. Ligand-shell
+engineering of a Au28 nanocluster boosts electrocatalytic CO2
+reduction. Angew. Chem. Internat. Edit. 61, e202207492
+(2022).
+40. Corby, S., Rao, R. R., Steier, L. & Durrant, J. R. The kinetics of metal
+oxide photoanodes from charge generation to catalysis. Nat. Rev.
+Mater. 6, 1136 (2021).
+41.
+Siahrostami, S. et al. Enabling direct H2O2 production through
+rational electrocatalyst design. Nat. Mater. 12, 1137 (2013).
+42. Okamura, M. et al. A pentanuclear iron catalyst designed for water
+oxidation. Nature 530, 465 (2016).
+43. Chen, Y.-C. et al. Electroactive membrane fusion-liposome for
+increased electron transfer to enhance radiodynamic therapy. Nat.
+Nanotechnol. 18, 1492 (2023).
+44. Yang, C., Liu, C., Cao, Y. & Yan, X. Facile room-temperature solution-
+phase synthesis of a spherical covalent organic framework for high-
+resolution chromatographic separation. Chem. Commun. 51,
+12254 (2015).
+45. Murphy, H. M., Payne, S. J. & Gagnon, G. A. Sequential UV- and
+chlorine-based disinfection to mitigate Escherichia coli in drinking
+water bioﬁlms. Water Res. 42, 2083 (2008).
+46. Liang, S., Lin, H., Habteselassie, M. & Huang, Q. Electrochemical
+inactivation of bacteria with a titanium sub-oxide reactive mem-
+brane. Water Res. 145, 172 (2018).
+47. Liu, H. et al. Carbon ﬁber-based ﬂow-through electrode system
+(FES) for water disinfection via direct oxidation mechanism with a
+sequential reduction-oxidation process. Environ. Sci. Technol. 53,
+3238 (2019).
+Acknowledgements
+This work was supported by the National Natural Science Foundation of
+China (22478210, 52009057, 22071127, and 52301002), the Taishan
+Scholar Foundation of Shandong Province (tsqn201812074, China),
+Natural Science Foundation of Qingdao City (24-4-4-zrjj-184-jch), the
+China Postdoctoral Science Foundation (2023M731854), the Post-
+doctoral Science Foundation of Qingdao City (QDBSH20230101003),
+the JST-ERATO Yamauchi Materials Space-Tectonics project
+(JPMJER2003), the ES program (via Nagoya University), and the Aus-
+tralian Laureate Fellowship (FL230100095). This work used the
+Queensland node of the NCRIS-enabled Australian National Fabrication
+Facility (ANFF).
+Author contributions
+Y. Liu, L. Wang, Q. Ma, and Xin Gao performed the experiments and
+analysed the data. H. Zhu, T. Feng, and X. Dou repeated some anti-
+bacterial experiments. Y. Liu and X. Yuan conceived and supervised the
+project, and wrote the manuscript with insightful discussion and
+proofreading of X. Xu, M. Eguchi, and Y. Yamauchi. All authors have
+given approval to the ﬁnal version of the manuscript. All authors dis-
+cussed the results and commented on the article.
+Competing interests
+The authors declare no competing interests.
+Additional information
+Supplementary information The online version contains
+supplementary material available at
+https://doi.org/10.1038/s41467-024-53174-9.
+Correspondence and requests for materials should be addressed to
+Xingtao Xu, Yusuke Yamauchi or Xun Yuan.
+Peer review information Nature Communications thanks Sang-Woo Kim
+and Wanjun Wang for their contribution to the peer review of this work. A
+peer review ﬁle is available.
+Reprints and permissions information is available at
+http://www.nature.com/reprints
+Publisher’s note Springer Nature remains neutral with regard to
+jurisdictional claims in published maps and institutional afﬁliations.
+Open Access This article is licensed under a Creative Commons
+Attribution-NonCommercial-NoDerivatives 4.0 International License,
+which permits any non-commercial use, sharing, distribution and
+reproduction in any medium or format, as long as you give appropriate
+credit to the original author(s) and the source, provide a link to the
+Creative Commons licence, and indicate if you modiﬁed the licensed
+material. You do not have permission under this licence toshare adapted
+material derived from this article or parts of it. The images or other third
+party material in this article are included in the article’s Creative
+Commons licence, unless indicated otherwise in a credit line to the
+material. If material is not included in the article’s Creative Commons
+licence and your intended use is not permitted by statutory regulation or
+exceeds the permitted use, you will need to obtain permission directly
+from the copyright holder. To view a copy of this licence, visit http://
+creativecommons.org/licenses/by-nc-nd/4.0/.
+© The Author(s) 2024
+Article
+https://doi.org/10.1038/s41467-024-53174-9
+Nature Communications|   (2024) 15:10175 
+11

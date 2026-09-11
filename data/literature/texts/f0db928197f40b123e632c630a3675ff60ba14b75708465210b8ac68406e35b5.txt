@@ -1,0 +1,745 @@
+RESEARCH ARTICLE
+www.small-journal.com
+Bimetallic Cu/Zn Single-Atom Nanozyme with Superoxide
+Dismutase-Like Activity
+Eslam M. Hamed,* Fun Man Fung,* and Sam F. Y. Li*
+The superoxide ion (O2•−), a radical species, is signiﬁcant in chemical and
+biological systems. Nanozymes, enzyme-mimicking nanomaterials, have been
+developed to replicate superoxide dismutase (SOD), which counters O2•−.
+Traditionally, nano ceria (CeO2) is used for SOD mimicry due to its Ce3+/Ce4+
+cycling ability, but issues like toxicity, biodistribution, aggregation, and
+speciﬁcity hinder practical use. Single-atom nanozymes (SANs) oﬀer a
+solution, with metal centers mimicking natural metal-based enzymes. A
+Cu/Zn bimetallic SAN is synthesized, structurally resembling natural SOD
+and exhibiting comparable activity. Its performance is assessed by capturing
+superoxide radicals and inhibiting Nitro-blue tetrazolium (NBT)
+photoreduction to blue Formazan. The Cu/Zn-SAN shows a half-maxima
+inhibitory concentration (IC50) of 0.115 µg mL−1 and a catalytic activity of
+7820 U mg−1, compared to 4264 U mg−1 for the natural SOD enzyme. Unlike
+many dual-metal nanozymes with multiple ROS activities, Cu/Zn-SAN
+selectively mimics SOD activity with no detectable oxidase or peroxidase-like
+behavior. Additionally, its performance in cigarette smoke extract
+demonstrates its practical relevance and biological safety. These ﬁndings
+highlight its potential for reducing oxidative stress in cardiovascular,
+inﬂammatory, and neurodegenerative diseases, as well as applications in
+cosmetic anti-aging products and skin protection, oﬀering a promising
+alternative to traditional nanozymes.
+E. M. Hamed, S. F. Y. Li
+Department of Chemistry
+National University of Singapore
+3 Science Drive 3, Singapore 117543, Singapore
+E-mail: eslam.hamed_m@u.nus.edu;chmlifys@nus.edu.sg
+E.M.Hamed
+Department of Chemistry
+Faculty of Science
+Ain Shams University
+Abbassia, Cairo 11566, Egypt
+F.M.Fung
+School of Chemistry
+University CollegeDublin
+Belﬁeld,Dublin 4 D04 C1P1,Ireland
+E-mail: funman.fung@ucd.ie
+The ORCID identiﬁcation number(s) for the author(s) of this article
+can be found under https://doi.org/10.1002/smll.202503879
+© 2025 The Author(s). Small published by Wiley-VCH GmbH. This is an
+open access article under the terms of the Creative Commons
+Attribution-NonCommercial License, which permits use, distribution and
+reproduction in any medium, provided the original work is properly cited
+and is not used for commercial purposes.
+DOI: 10.1002/smll.202503879
+1. Introduction
+Natural enzymes are biological macro-
+molecules
+that
+can
+catalyze
+a
+variety
+of biochemical events in living things
+and serve important roles in biological
+systems.[1,2] However, the expensive cost
+and low stability of natural enzymes pro-
+hibit their widespread application.[3] So far,
+nanozymes have gained a lot of interest
+and are predicted to replace conventional
+protein-based enzymes because of their
+aﬀordability, great stability, and ease of
+manufacture.[4–7]
+Superoxide
+dismutase
+(SOD),[8–11] catalase (CAT),[12–14] oxidase
+(OXD),[15–18]
+peroxidase
+(POD),[19–24]
+Laccase
+(LAC)[25–27]
+and
+other
+multi-
+enzymatic nanomaterials have been widely
+employed in anti-inﬂammatory, antibac-
+terial, cancer treatment, and biomarker
+applications.[28–32] SOD-like nanozymes are
+probably the least explored category among
+the four.
+Natural SOD enzymes are generally cat-
+egorized into three types based on the
+metal co-factor: Cu/Zn SOD for humans
+and eukaryotes, Fe- or Mn- SOD in mito-
+chondria and chloroplasts, and Ni- SOD in
+prokaryotes and marine cyanobacteria.[33]
+For a long time, the SOD-mimicking activity has been exclusively
+presented by ceria nanoparticles (CeO2 NPs).[34–36] This is due
+to their remarkable ability to eliminate free radicals by binding
+oxygen reversibly and changing the surface of the NPs between
+the reduced Ce3+ form and the oxidized Ce4+ form.[37] However,
+their potential toxicity, biodistribution, aggregation, and relatively
+low speciﬁcity limit their real-life application.
+A promising development in the realm of nanozymes, single-
+atom nanozymes (SANs) with atomically distributed metal active
+sites have recently come to light because of their high activity,
+stability, and ability to employ the highest possible utilization of
+metal atoms.[1,3,38–41] Some trials have been delivered already to
+synthesize SANs that mimic the action of natural SOD enzyme
+that rely on one metal co-factor such as Fe-SAN,[42] Mn-SAN,[43]
+and Cu-SAN.[44] However, our work oﬀers a systematic investiga-
+tion of a Cu/Zn single-atom nanozyme with high SOD-like activ-
+ity and exclusive selectivity, which has not been fully addressed
+in prior reports. In recent years, SANs have attracted consider-
+able attention for their high atomic utilization and enzyme-like
+behavior in diverse catalytic systems.[44,45] However, most SANs
+reported to date are based on single-metal active sites or form
+Small 2025, 21, e03879
+© 2025 The Author(s). Small published by Wiley-VCH GmbH
+e03879 (1 of 9)
+
+www.advancedsciencenews.com
+www.small-journal.com
+multi-metal clusters that lack atomic-level control. The Cu/Zn-
+SAN developed in this study is distinct in that it features atomi-
+cally dispersed dual active sites, where Cu and Zn are indepen-
+dently stabilized within a nitrogen-doped carbon matrix. This
+bimetallic architecture enables selective SOD-like catalysis, with-
+out undesired oxidase or peroxidase side reactions, represent-
+ing a rare example of a SAN with exclusive enzymatic selectiv-
+ity. Furthermore, we demonstrate the nanozyme’s robust activ-
+ity in complex environments, including real-world application in
+superoxide removal from cigarette smoke. While this dual-site
+approach oﬀers advantages in selectivity and catalytic eﬃciency,
+further computational and spectroscopic work is needed to fully
+unravel the Cu–Zn synergistic mechanism.
+While several Cu/Zn-based nanozymes have been previously
+explored as SOD mimics, most display broad ROS activity includ-
+ing oxidase or peroxidase-like functions, which can complicate bi-
+ological applications due to non-speciﬁc ROS modulation. More-
+over, few studies have systematically examined dual-metal SANs
+in complex oxidative environments like cigarette smoke extract.
+In this Article, a copper/zinc bimetallic SAN with excellent SOD
+activity was developed by controlling the isolated copper and zinc
+active sites and precisely coordinating nitrogen (N) to mimic the
+action of natural SOD enzyme with higher eﬃciency and stability.
+The SAN was used to eliminate the superoxide radicals among
+other radicals in cigarette smoke. While recent studies have ex-
+plored Cu/Zn-MOFs for AD treatment via ROS scavenging,[46]
+this work diverges by designing a carbon-supported Cu/Zn SAN
+with atomic-level precision to mimic natural Cu/Zn-SOD. Un-
+like MOF-based systems, this SAN exhibits unparalleled SOD-
+like selectivity (no OXD/POD activity) and exceptional catalytic
+eﬃciency (IC50 = 0.115 μg mL−1, activity = 7820 U mg−1). This
+fundamental advance expands applications beyond dermatology
+to oxidative stress management in diverse pathologies and bol-
+ster the potential application of Cu/Zn SAN in skin protection
+and cosmetic anti-aging products, as well as in the reduction of
+oxidative stress in inﬂammatory, neurological, and cardiovascu-
+lar diseases.
+2. Results
+2.1. Synthesis and Characterization of Cu/Zn-SAN
+The preparation process of Cu/Zn dual SAN was carried out fol-
+lowing the method published by Q. Chen et al.[47] with a few
+modiﬁcations as illustrated in Figure 1A. First, the octahedral-
+shaped Cu/Zn-MOF precursor was synthesized in the presence
+of polyvinylpyrrolidone (PVP) to modulate the morphology of
+Cu/Zn-MOF. PVP is adsorbed on the surface of the MOF crystal
+nucleus during the growth, thus reducing the “face-to-face stack-
+ing” between MOF layers and inducing the anisotropic growth
+of MOF. Next, the Cu/Zn was obtained by direct pyrolysis of the
+Cu/Zn-MOF precursor and dicyandiamide (DCD) in an alumina
+boat at 300 °C for 2h under ﬂowing nitrogen in a tube furnace,
+maintaining a heating rate of 5 °C min−1 and then at 550 °C for
+another 4 h.
+As shown by transmission electron microscopy (TEM) images,
+an octahedron-shaped MOF was obtained while no nanoparticles
+(NPs) were observed (Figure 1B,C). Similarly, high-angle annu-
+lar dark ﬁeld scanning tunneling electron microspore (HAADF-
+STEM) results of the annealed product indicate the atomic disper-
+sion of Cu and Zn single atoms over the Carbon sheet (Figure 1D;
+Figure S1, Supporting Information). Energy Dispersive Spec-
+troscopy (EDS) mapping illustrates the homogenous dispersibil-
+ity of Cu, Zn, C, and N throughout the construction of the SAN
+(Figure 2). Brunauer–Emmett–Teller analysis (BET) revealed that
+the SAN had a porous structure with a large surface area of
+983.4 m2 g−1, and the average pore diameter was 2.3 nm, as
+calculated by the Horvath–Kawazoe method. The XRD pattern
+of the Cu/Zn-MOF precursor (Figure S2, Supporting Informa-
+tion) shows sharp reﬂections matching those of the previously
+reported Cu/Zn-MOF[46] and HKUST-1 MOF,[48] indicating that
+the Cu/Zn-MOF likely adopts a similar framework structure.
+Minor peak shifts were observed due to Zn incorporation and
+the well-deﬁned and ordered precursor framework supports con-
+trolled pyrolysis and retention of porosity, which is beneﬁcial for
+forming well-dispersed single atoms in the derived catalyst. This
+supports its role as a suitable template for the subsequent pyrol-
+ysis process to generate Cu/Zn-SAN.
+X-ray photoelectron spectroscopy (XPS) was used to inspect
+the binding states of Cu, Zn, C, and N on the SAN. The N 1S spec-
+trum showed the existence of oxidized N (403.8 eV), graphite N
+(401.5 eV), pyrrolic N (400.7 eV), Metal-N (398.1 eV), and pyridine
+N (397.8 eV) (Figure 3A). The detailed proportions of each species
+are summarized in Table S1 (Supporting Information). The C 1S
+spectrum ﬁtted well with the peaks at 287.8 eV (C-N), 285.5 eV
+(C═N), and 284.5 eV (C═C) (Figure 3B). The Zn 2P spectra dis-
+played two strong peaks at 1042.6 and 1019.9 eV for Zn 2P1/2 and
+Zn 2P3/2, respectively, showing that Zn1 species are abundant in
+Zn-SAN (Figure 3C). Similarly, the Cu 2P spectrum exhibited two
+prominent peaks at 951.6 and 932.1 eV for the Cu 2P1/2 and Cu
+2P3/2, respectively, implying that Cu1 species are predominant in
+the Cu/Zn-SAN (Figure 3D). In accordance with XPS analysis,
+the elemental composition of Cu, Zn, N, O, and C was estimated
+to be 12.27%, 8.42%, 19.13%, 2.95%, and 57.23%, respectively
+(Figure S31, Supporting Information). The initial Cu:Zn precur-
+sor molar ratio was 10:1 to oﬀset the preferential loss of Cu dur-
+ing pyrolysis and ensure a ﬁnal atomic Cu:Zn ratio close to 1.5:1
+in the resulting Cu/Zn-SAN. Attempts to adjust the initial pre-
+cursor ratio resulted in lower catalytic activities, supporting the
+choice of this synthesis condition.
+2.2. Atomic Structure Analysis
+Extended X-ray absorption ﬁne structure spectroscopy (EXAFS)
+was used to investigate the coordination environment of Cu/Zn-
+SAN. The Fourier-transformed magnitudes of the Cu K-edge EX-
+AFS and the Zn K-edge EXAFS are shown in Figure 4A,B. The
+Cu/Zn-SAN showed a major peak at 1.48 Å in the of the Cu K-
+edge EXAF, which comes in complete agreement with the Cu-N
+peak in copper phthalocyanine attributed to the Cu and N atoms
+backscattering.[49]
+Moreover, The Cu and N atoms backscattering led to another
+peak at 1.52 Å. The prominent peak of Cu-Cu at 2.22 Å in the Cu-
+foil was not observed in the Cu/Zn-SAN, indicating that most of
+the loaded metal existed as isolated atoms.[50] The expected Cu–
+Cu backscattering peak at ∼2.5 Å is notably weak. This can be
+attributed to the use of nano-sized CuO with low crystallinity,
+Small 2025, 21, e03879
+© 2025 The Author(s). Small published by Wiley-VCH GmbH
+e03879 (2 of 9)
+ 16136829, 2025, 36, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202503879 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.small-journal.com
+Figure 1. A) Illustration of the synthesis process of Cu/Zn-SAN. B&C) TEM images showing the octahedral-shaped morphology of Cu/Zn-MOF. Scale
+bar 0.5 μm and 20 nm, respectively, and D) STEM analysis for Cu/Zn-SAN showing the single atoms as the bright dots. Scale bar 2 nm.
+the ﬂuorescence detection mode, and possible disorder in the
+second coordination shell, all of which can attenuate higher-
+shell signals in EXAFS. To provide a more accurate reference
+for the oxidation state of Cu, the EXAFS spectrum of Cu2O was
+added (Figure 4A). The similarity in spectral features between
+Cu/Zn-SAN and Cu2O further supports the presence of Cu in
+a Cu(I)-like coordination environment. Notably, no signiﬁcant
+second-shell peaks were observed at ∼3 Å in either the Cu or
+Zn K-edge EXAFS spectra. This suggests the absence of strong
+Cu–Zn or Zn–Cu backscattering and indicates that Cu and Zn
+atoms are likely atomically dispersed and independently coor-
+dinated to nitrogen atoms, rather than forming a ﬁxed linear
+arrangement.
+For the Zn K-edge EXAF, Cu/Zn-SAN exhibited a prominent
+peak at 1.52 Å, which aligned perfectly with the Zn-N peak
+observed for zinc phthalocyanine. This peak is ascribed to the
+backscattering of Zn and N atoms.[51] The small peak of Zn-Zn
+observed at 2.35 Å in the Cu/Zn-SAN spectrum was far more
+prominent in the Zn-foil spectrum, suggesting that the majority
+of the metal present was in the form of individual atoms.[52]
+The coordination conﬁguration was then investigated using
+quantitative EXAFS curve-ﬁtting analysis. By ﬁtting the EXAFS
+at the Cu K-edge and Zn K-edge, the structural parameters and
+quantitative chemical conﬁguration of Cu and Zn atoms were ob-
+tained (Table S2, Supporting Information). Based on the quanti-
+tative ﬁtting analysis, the coordination numbers of Cu and Zn
+was determined to be ≈4 for both metals. The Cu K-edge X-ray
+absorption near edge structure (XANES) shown in Figure 4C re-
+veals that the absorption edge of Cu/Zn-SAN closely aligns with
+that of CuO, suggesting that the majority of Cu atoms in Cu/Zn-
+SAN are present in a Cu(II)-like oxidation state. This observa-
+tion suggests that coordination with nitrogen atoms in the SAN
+structure eﬀectively stabilizes the reduced Cu species. The
+Cu/Zn-SAN showed a peak at 8,992 eV arising from the electron
+transfer between Cu and N. Since the transition between 1S and
+the unoccupied 4P states produces the Cu K-edge white-line peak,
+higher peak intensity means more electron transfer between the
+metal center and coordination atoms.
+Moreover, the Zn K-edge XANES of Cu/Zn-SAN shows an ab-
+sorption edge that is slightly shifted relative to Zn foil and ZnPC,
+suggesting a distinct electronic structure and coordination envi-
+ronment for Zn, likely due to its atomically dispersed bonding
+with nitrogen atoms (Figure 4D). Electron transport between Zn
+and N caused Cu/Zn-SAN to peak at 9663 eV, which is diﬀer-
+ent from Zn-O and Zn-N at 9669 and 9673 eV, respectively. A
+higher peak intensity indicates more electron transport between
+Small 2025, 21, e03879
+© 2025 The Author(s). Small published by Wiley-VCH GmbH
+e03879 (3 of 9)
+ 16136829, 2025, 36, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202503879 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.small-journal.com
+Figure 2. HAADF-STEM image of the Cu/Zn-SAN; scale bar: 10 nm, and the corresponding EDS elemental mapping showing B) C, C) N, D) Cu, and
+E) Zn.
+the coordination atoms and the metal center since the Zn K-edge
+white-line peak is the result of the transition between the unoccu-
+pied 4P states and 1S. Results for Feﬃt for a simple 1-shell ﬁt to
+a spectrum from Cu/Zn SAN in the R-space are shown in Figure
+S4 (Supporting Information). The results indicate how well the
+theoretical model matches the experimental data.
+These ﬁndings suggest potential electronic interactions be-
+tween Cu and Zn centers within the Cu/Zn-SAN structure,
+which could underlie the observed enhanced SOD-like activity.
+Such bimetallic synergistic eﬀects have been proposed in previ-
+ous studies of Cu/Zn-based systems.
+The observed shifts in the Cu and Zn K-edge XANES spec-
+tra, along with coordination environment changes identiﬁed by
+EXAFS, suggest electronic modulation and potential synergy be-
+tween Cu and Zn sites. While no direct Cu–Zn scattering was de-
+tected, these spectral features imply indirect interactions through
+shared nitrogen coordination and electronic coupling.
+2.3. SOD-Like Activity
+The nitro-blue tetrazolium (NBT) experiment was carried out
+to verify SOD-like activity of Cu/Zn-SAN. NBT is known to be
+photo-reduced by superoxide radicals to form the blue formazan
+product with a sharp absorption at 560 nm. However, in pres-
+ence of the SOD enzyme, the superoxide radical is scavenged,
+and the absorption peak is, hence, reduced.[53] The same obser-
+vation was spotted in presence of Cu/Zn-SAN with the absorp-
+tion peak at 560 nm being reduced with the increasing concen-
+tration of the Cu/Zn-SAN (Figure S5, Supporting Information).
+When the concentration of Cu/Zn-SAN was 2 μg mL−1, the maxi-
+mum inhibition percentage of the NBT reduction reaction under
+the assay conditions was about 81.5%, and reached about 98%
+when the catalyst’s concentration was 10 μg mL−1 (Figure 5A).
+On the other side, when the natural SOD enzyme was used, the
+removal eﬃciency was about 57% with 2 μg mL−1 of the enzyme
+and reached a maximum of 67% when the enzyme’s concentra-
+tion was 4 μg mL−1 (Figure 5B). No more signiﬁcant enhance-
+ment in eﬃciency was recorded when the concentration of the
+SOD enzyme increased beyond 4 μg mL−1.
+The inhibitory concentration of 50% (IC50) for both the natural
+SOD enzyme and the Cu/Zn-SAN were also evaluated to deter-
+mine the concentration at which the catalyst would inhibit the
+reaction by 50%. The IC50 of SOD was found to be 0.195 μg mL−1
+whereas that of the Cu/Zn-SAN was 0.115 μg mL−1 with a cat-
+alytic activity of 7820 U mg−1 compared to 4264 U mg−1 for the
+natural SOD enzyme as quantiﬁed using a commercial SOD as-
+say kit (WST-1) (Figure 5C). This indicates that Cu/Zn-SAN ef-
+fectively captures the superoxide radical and inhibits NBT pho-
+toreduction, demonstrating catalytic performance comparable to
+that of the natural SOD enzyme on a mass basis. However, we ac-
+knowledge that due to diﬀerences in active metal content, direct
+comparison of catalytic eﬃciency must be interpreted with cau-
+tion. For better context, the catalytic activity of Cu/Zn-SAN (7820
+U mg−1) was compared to that of previously reported nanozymes
+(Table S3, Supporting Information).
+Besides, electron paramagnetic resonance (EPR) was used to
+monitor the superoxide radical produced during the reaction.
+The Xanthine/Xanthine oxidase system was used to generate the
+superoxide radical in the presence of 5,5-Dimethyl-1-Pyrroline-
+N-Oxide (DMPO) as the spin trap. The DMPO/OOH EPR adduct
+showed four lines with an equal relative intensity, which sharply
+decreased in presence of Cu/Zn-SAN due to the elimination of
+superoxide radicals (Figure 5D).
+Small 2025, 21, e03879
+© 2025 The Author(s). Small published by Wiley-VCH GmbH
+e03879 (4 of 9)
+ 16136829, 2025, 36, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202503879 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.small-journal.com
+Figure 3. XPS spectra of A) N 1S, B) C 1S, C) Zn 2p, and D) Cu 2P of the Cu/Zn-SAN.
+Moreover, the relative activity of the Cu/Zn-SAN was checked
+regularly over two months, and no signiﬁcant depletion in its
+performance was observed (Figure S6, Supporting Information).
+The Cu/Zn-SAN also showed excellent stability under harsh
+acidic (1.0 m HCl) and basic (1.0 m NaOH) media (Figure S7,
+Supporting Information). The nanozyme’s reusability can also
+be highlighted by its ability to maintain ≈95% of its relative ac-
+tivity after 5 cycles (Figure S8, Supporting Information). These
+ﬁndings demonstrate that SANs catalyzing enzyme-like reac-
+tions may exhibit essential properties of natural enzymes, such
+as quick kinetics, productivity, and high activity under identical
+reaction conditions.
+Furthermore, the activity of the Cu/Zn-SAN was maintained in
+the range of 24 to 100 °C, while the natural SOD did not possess
+the same thermal stability and was deactivated at temperatures
+higher than 60 °C temperature (Figure S9, Supporting Informa-
+tion). Also, the activity of Cu/Zn-SAN was not much aﬀected by
+the pH change unlike the natural SOD whose activity is limited
+by maintaining a pH between 8 and 10 (Figure S10, Supporting
+Information). However, when the pH was lower than 4, both the
+natural SOD and Cu/Zn-SAN did not function properly.
+To evaluate the robustness of Cu/Zn-SAN under biologically
+relevant conditions, its SOD-like activity was tested after incuba-
+tion in 10% fetal bovine serum (FBS) and 1 m NaCl for 24 h. As
+shown in Figure S11 (Supporting Information), the nanozyme
+maintained 88.5% and 93.4% of its initial catalytic activity, respec-
+tively. These results demonstrate the excellent stability of Cu/Zn-
+SAN in complex chemical environments, making it suitable for
+biomedical and environmental applications.
+Kinetic studies of SOD-like activity were conducted by vary-
+ing the Xanthine’s concentration between 0.05 and 0.5 mm while
+keeping Cu/Zn-SAN concentrations constant. The apparent ki-
+netic parameters (derived from NBT inhibition curves) were an
+apparent Vmax of 7.56 mm min−1 and an apparent Km of 0.99
+mm (Figure S12, Supporting Information). These values are pro-
+vided for comparative purposes only, as indirect methods do not
+measure true enzymatic rates. A more accurate second-order rate
+constant (k) was calculated at the IC50 (0.115 μg mL−1) using the
+Small 2025, 21, e03879
+© 2025 The Author(s). Small published by Wiley-VCH GmbH
+e03879 (5 of 9)
+ 16136829, 2025, 36, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202503879 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.small-journal.com
+Figure 4. Atomic structure analysis of Cu/Zn-SAN showing FT-EXAFS spectra at the R-space of A) Cu and B) Zn in the Cu/Zn-SAN, and K-edge XANES
+spectra of C) Cu and D) Zn in the Cu/Zn-SAN.
+relationship k × [Cu/Zn-SAN] = kNBT × [NBT], where kNBT is
+the rate constant for NBT reduction by O2
+•−.
+Although direct computational modeling could not be per-
+formed due to current technical constraints, we propose a mecha-
+nism for the Cu/Zn synergistic eﬀect based on experimental ﬁnd-
+ings and literature reports. It is hypothesized that Cu atoms pri-
+marily act as the active centers for superoxide radical binding and
+electron transfer, while Zn atoms stabilize the surrounding coor-
+dination environment and facilitate charge delocalization. This
+division of labor enhances both the catalytic eﬃciency and selec-
+tivity of the Cu/Zn-SAN. Similar synergistic behaviors between
+Cu and Zn have been reported in related bimetallic systems.[46]
+Future density functional theory (DFT) studies will be under-
+taken to validate this mechanistic hypothesis.
+2.4. OXD- and POD-Like Activities
+The OXD- and POD-like activities were inspected by testing the
+ability of Cu/Zn-SAN to oxidize TMB in the absence and pres-
+ence of H2O2, respectively. Generally, TMB can be oxidized by
+H2O2 in presence of a catalyst to give the blue oxidation product
+that shows a peak at 652 nm under UV/Vis spectrophotometer. As
+depicted in Figures S13 and S14 (Supporting Information), The
+Cu/Zn-SAN could not oxidize TMB under optimal conditions,
+neither in the absence not the presence of H2O2. This shows that
+the Cu/Zn-SAN does not possess any OXD- or POD-like activi-
+ties, unlike the previously reported Cu-SAN.[18] This observation
+proves the function of the Zn metal in the structural integrity
+of the Cn/Zn-SAN, which endowed the Cu/Zn SAN with high
+selectivity towards the SOD. Importantly, the Cu/Zn-SAN exhib-
+ited no detectable OXD or POD activity, highlighting its superior
+enzymatic selectivity compared to previously reported SANs with
+multi-enzymatic behaviors.
+2.5. O2
+•−Elimination in Cigarette Smoke
+Cigarette smoke was drawn from commercial cigarettes into
+PBS buﬀer using a pump attached to a Buchner ﬂask in a
+Small 2025, 21, e03879
+© 2025 The Author(s). Small published by Wiley-VCH GmbH
+e03879 (6 of 9)
+ 16136829, 2025, 36, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202503879 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.small-journal.com
+Figure 5. O2
+•−removal rate as a function of the concentration of A) Cu/Zn-SAN and B) SOD enzyme using NBT indicator. C) The inhibition of NBT
+reduction reaction with the increasing concentration of Cu/Zn-SAN (Black) and SOD enzyme (Red). D) EPR spectra of Xanthine (2mM)/Xanthine oxidase
+(3 U mL−1) in DMPO in presence (Red) and absence (Black) of the Cu/Zn-SAN.
+Shisha-like setup (Figure S15 and Video S1, Supporting Informa-
+tion). The resulting solution was labeled as the radical-containing
+system, and the NBT assay was followed according to the pro-
+posed methodology. The colored product was monitored at 560
+nm in the presence and the absence of the Cu/Zn SAN. As shown
+in Figures S16 and S17 (Supporting Information), 2 μg mL−1 of
+the Cu/Zn-SAN was able to eliminate 90.7% of the ROS in the
+cigarette smoke extract verifying the exceptional SOD-like activity
+of the Cu/Zn-SAN.
+3. Conclusion
+In summary, a Cu/Zn dual single-atom nanozyme with well-
+dispersed active centers was synthesized to mimic the natural
+SOD enzyme. The Cu/Zn SAN showed higher activity in sup-
+pressing the photoreduction of NBT by removing the superox-
+ide radical with a maximum inhibition percentage of the NBT
+reduction reaction of ≈98%. The catalytic selectivity of Cu/Zn-
+SAN was evaluated through EPR and NBT assays, which consis-
+tently indicated the speciﬁc dismutation of superoxide radicals.
+No oxidase or peroxidase activity was detected under identical
+conditions, highlighting the selective enzyme-mimicking behav-
+ior of Cu/Zn-SAN. This behavior contrasts with many previously
+reported nanozymes that exhibit multiple ROS-related activities
+and underscores the importance of atomic-level control over ac-
+tive site architecture in achieving enzymatic speciﬁcity. The SAN
+was stable under harsh acidic and basic media and maintained
+its stability for over two months. In addition to its catalytic per-
+formance, the Cu/Zn-SAN exhibited excellent operational stabil-
+ity in protein-rich and high-salinity environments. Based on its
+SOD-like activity, the Cu/Zn SAN was used to eliminate the su-
+peroxide radical in cigarettes smoke with more than 90% eﬃ-
+ciency. The proposed synergistic roles of Cu and Zn in the SAN
+structure, supported by XANES/EXAFS data and literature anal-
+ysis, provide a framework for understanding the high catalytic
+performance observed in this study. Compared to previously re-
+ported Cu/Zn-based nanozymes that mimic natural SOD activ-
+ity, our system exhibits exclusive SOD-like activity with no de-
+tectable oxidase or peroxidase function, veriﬁed under physiolog-
+ically relevant conditions and is applicable in complex environ-
+ments such as cigarette smoke extract, demonstrating its prac-
+tical potential for superoxide detoxiﬁcation. Also, the synthesis
+approach involves a PVP-assisted Cu/Zn-MOF precursor, which
+leads to atomic-level dispersion of both metal centers. These
+Small 2025, 21, e03879
+© 2025 The Author(s). Small published by Wiley-VCH GmbH
+e03879 (7 of 9)
+ 16136829, 2025, 36, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202503879 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.small-journal.com
+elements position Cu/Zn-SAN as a uniquely selective and practi-
+cal nanozyme within the broader ﬁeld of dual-metal SACs. This
+suggests that the Cu/Zn SAN can be utilized in the diagnosis
+and treatment of diseases associated with superoxide radicals like
+cardiovascular diseases (e.g. hypertension and atherosclerosis),
+inﬂammatory diseases (e.g. rheumatoid arthritis), and neurode-
+generative diseases (e.g. Alzheimer and Parkinson).
+4. Experimental Section
+Synthesis of Cu/Zn MOF:
+The Cu/Zn MOF was synthesized by dis-
+solving 1 g of PVP in 50 mL of a mixture of DMF and ethanol (4:1).
+Afterward, 0.1 mmol of Zn(NO3)2. 6H2O and 1 mmol of Cu(NO3)2. 3
+H2O was added and mixed with the solution followed by the stepwise
+addition of 1 mL Triﬂuoroacetic acid until the addition caused no more
+fumes. A solution of 0.84 g Trimesic acid in 50 mL of a mixture of DMF
+and ethanol (4:1) was added to the aforementioned solution. The result-
+ing solution was autoclaved in a capped Teﬂon reactor for 1 h at 150 °C.
+Then, the light-blue precipitate was collected, washed multiple times with
+ethanol, and then left to dry at 80 °C. A relatively high Cu:Zn molar ratio
+(10:1) was used intentionally to account for the lower incorporation ef-
+ﬁciency of Cu compared to Zn during MOF formation and subsequent
+pyrolysis, aiming to achieve a ﬁnal balanced Cu/Zn ratio in the SAN
+material.
+Synthesis of Cu/Zn SAN:
+The Cu/Zn-SAN was synthesized by mixing
+0.2 g of the Cu/Zn MOF with 2.0 g of DCD in an alumina boat and heat
+at 300 °C for 2 h under ﬂowing nitrogen in a tube furnace, maintaining a
+heating rate of 5 °C min−1 and then at 550 °C for another 4 h. After cooling,
+the Cu/Zn SAN was collected directly for further use. Cu-SAN and Zn-SAN
+were synthesized according to previous work and used as controls.[54]
+Characterization:
+A JEOL JEM-2010F Field Emission Electron Micro-
+scope, a 200 kV class analytical TEM was used to record HR-TEM. A JEOL
+JSM-6701F Field Emission Scanning Electron Microscope as a 30 kV class
+analytical SEM was used to obtain SEM images. HAADF-STEM was done
+using a double spherical aberration electron JEOL JEM-2100F microscope
+operating at 200 kV. XRD (Bruker D8 Advance diﬀractometer with Cu K𝛼
+radiation (𝜆= 1.54056 Å) at = 40 KV & 40mA) was used to acquire the crys-
+tal structure and phase purity. XPS measurements were carried out using
+a Kratos Axis Ultra DLD x-ray spectrometer with a monochromatic alu-
+minum K𝛼X-ray source (energy = 1486.7 eV). HORIBA Jobin Yvon Modu-
+lar Raman Microscope equipped with a 514 nm (10 to 50 mW) laser source
+for excitation was used for Raman spectra. To check the nature of the pro-
+duced reactive oxygen species (ROS), JEOL FA200 EPR spectrometer was
+used in the frequency range of 8–10 GHz (X-Band). Agilent Cary 60 UV/Vis
+spectrophotometer was used for all absorbance measurements. Quan-
+tachrome Autosorb iQ C-XR with both physisorption and chemisorption
+capabilities was used for BET analysis at ambient temperature to conﬁrm
+the porous structure of the catalyst and calculate its surface area. The sam-
+ple was degassed at 200 °C for 12 h before adsorption measurements. The
+XAS measurements were performed at the BL14W1 station in Shanghai
+Synchrotron Radiation Facility (SSRF), China. The spectra were recorded
+in ﬂuorescent mode using a Si (311) double-crystal monochromator and
+a 32-element Canberra/XIA Ge solid-state detector. The electron storage
+ring is operated at 3.5 GeV, and the data was processed using Demeter
+Athena and Artemis software, according to the standard procedures.
+Evaluation of the SOD-Like Activity:
+To study the SOD-like perfor-
+mance of Cu/Zn SAN, a colorimetric method of the inhibitory eﬀect of
+photoreduction of NBT to the blue formazan was used. The superoxide
+radical was produced by mixing 0.25 mM xanthine and xanthine oxidase
+(0.05 UmL−1) in phosphate buﬀer solution (PBS) (50 mM, pH = 7.5). The
+mixture included 100 μm NBT, and diﬀerent concentrations of Cu/Zn SAN
+(0–10 μg mL−1). Then, the mixture solutions were placed under ﬂuores-
+cent lamp for 10 min, and then the absorbance was measured at 560 nm
+immediately. A control experiment was conducted in the same way replac-
+ing the Cn/Zn SAN with diﬀerent concentrations of the natural SOD en-
+zyme (0–5 μg mL−1).
+The NBT assay measures inhibition eﬃciency rather than direct cat-
+alytic turnover. Thus, the apparent Km and Vmax values in Figure S12 (Sup-
+porting Information) are estimates for cross-nanozyme comparison and
+should not be interpreted as classical enzymatic parameters. The SOD-like
+kinetic parameters were determined using an NBT inhibition assay. The re-
+action rate of formazan formation was monitored at 560 nm and converted
+to molar units using an extinction coeﬃcient of 12 800 M−1 cm−1. The
+substrate concentration was approximated by varying the initial xanthine
+concentration (0.05–0.5 mM), which regulates the steady-state generation
+of superoxide anion via xanthine oxidase. Thus, the calculated Vmax and
+Km values are apparent values reﬂecting the enzyme-like activity under
+these indirect assay conditions.
+For a more rigorous kinetic analysis, the second-order rate constant (k)
+was calculated at IC50 (0.115 μg mL−1) using the equation k × [Cu/Zn-
+SAN] = kNBT × [NBT], where kNBT is the known rate constant for NBT
+reduction by O2•−(5.94 × 104 M−1 s−1). With the measured IC50 of 0.115
+μg mL−1, this gives k = 2.17 × 108 M−1s−1, compared to 2.0 × 109 M−1s−1
+for the natural SOD.[55]
+Evaluation of the OXD- and POD-Like Activities:
+The OXD- and POD-
+like activities of the Cu/Zn SAN were evaluated based on the catalyst’s
+performance in the oxidation reactions of 3,3′,5,5′-tetramethylbenzidine
+(TMB). Typically, 50 μL of the dispersed Cu/Zn SAN (100 mg L−1) in ac-
+etate buﬀer (pH = 3.0, 100 mM) was allowed to react with 100 μL of TMB
+(0.5 mM) in absence and presence of H2O2, and the absorbance was mon-
+itored at 652 nm. A control sample was prepared in the same way without
+the addition of Cu/Zn SAN.
+Supporting Information
+Supporting Information is available from the Wiley Online Library or from
+the author.
+Acknowledgements
+The researcher “Eslam M. Hamed” is funded by a full scholarship from
+the ministry of higher education of the Arab Republic of Egypt. As a cur-
+rent member of the Global Young Academy (GYA) hosted by the German
+National Academy of Sciences Leopoldina, Fun Man Fung acknowledges
+the support of the UCD Start-up grant awarded to him in this project col-
+laboration.
+Conﬂict of Interest
+The authors declare no conﬂict of interest.
+Data Availability Statement
+The data that support the ﬁndings of this study are available from the cor-
+responding author upon reasonable request.
+Keywords
+catalysis, dismutase, nanozyme, single-atom, superoxide
+Received: March 27, 2025
+Revised: June 28, 2025
+Published online: July 21, 2025
+[1] J. Shen, J. Chen, Y. Qian, X. Wang, D. Wang, H. Pan, Y. Wang, Adv.
+Mater. 2024, 36, 2313406.
+Small 2025, 21, e03879
+© 2025 The Author(s). Small published by Wiley-VCH GmbH
+e03879 (8 of 9)
+ 16136829, 2025, 36, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202503879 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.small-journal.com
+[2] M. Broto, M. M. Kaminski, C. Adrianus, N. Kim, R. Greensmith, S.
+Dissanayake-Perera, A. J. Schubert, X. Tan, H. Kim, A. S. Dighe, J. J.
+Collins, M. M. Stevens, Nat. Nanotechnol. 2022, 17, 1120.
+[3] E. M. Hamed, F. M. Fung, S. F. Y. Li, ACS Sens. 2024, 9, 3840.
+[4] W. Zhang, J. Zhu, J. Ren, X. Qu, Adv. Mater. 2024, 36, 2405318.
+[5] D. Choi, H. Jung, J. Im, S. Y. Yi, S. Kim, D. Lee, S. Park, C. Lee, J. Kim,
+J. W. Han, J. Lee, Adv. Mater. 2024, 36, 2306602.
+[6] C. Peng, R. Y. Pang, J. Li, E. R. Wang, Adv. Mater. 2024, 36, 2211724.
+[7] S. Ji, B. Jiang, H. Hao, Y. Chen, J. Dong, Y. Mao, Z. Zhang, R. Gao, W.
+Chen, R. Zhang, Q. Liang, H. Li, S. Liu, Y. Wang, Q. Zhang, L. Gu, D.
+Duan, M. Liang, D. Wang, X. Yan, Y. Li, Nat. Catal. 2021, 4, 407.
+[8] W. Gao, J. He, L. Chen, X. Meng, Y. Ma, L. Cheng, K. Tu, X. Gao, C.
+Liu, M. Zhang, K. Fan, D.-W. Pang, X. Yan, Nat. Commun. 2023, 14,
+160.
+[9] L. Ma, J.-J. Zheng, N. Zhou, R. Zhang, L. Fang, Y. Yang, X. Gao, C.
+Chen, X. Yan, K. Fan, Nat. Commun. 2024, 15, 233.
+[10] X. Meng, H. Fan, L. Chen, J. He, C. Hong, J. Xie, Y. Hou, K. Wang, X.
+Gao, L. Gao, X. Yan, K. Fan, Nat. Commun. 2024, 15, 1626.
+[11] W. H. Gao, J. Y. He, L. Chen, X. Q. Meng, Y. N. Ma, L. L. Cheng, K.
+S. Tu, X. F. Gao, C. Liu, M. Z. Zhang, K. L. Fan, D. W. Pang, X. Y. Yan,
+Nat. Commun. 2023, 14, 15.
+[12] Y. J. Chen, B. Jiang, H. G. Hao, H. J. Li, C. Y. Qiu, X. Liang, Q. Y. Qu,
+Z. D. Zhang, R. Gao, D. M. Duan, S. F. Ji, D. S. Wang, M. M. Liang,
+Angew. Chem., Int. Ed. 2023, 62, 202301879.
+[13] B. L. Xu, Y. Cui, W. W. Wang, S. S. Li, C. L. Lyu, S. Wang, W. E. Bao,
+H. Y. Wang, M. Qin, Z. Liu, W. Wei, H. Y. Liu, Adv. Mater. 2020, 30,
+2003563.
+[14] Z. Wang, Y. Zhang, E. Ju, Z. Liu, F. Cao, Z. Chen, J. Ren, X. Qu, Nat.
+Commun. 2018, 9, 3334.
+[15] D. Chen, Z. Xia, Z. Guo, W. Gou, J. Zhao, X. Zhou, X. Tan, W. Li, S.
+Zhao, Z. Tian, Y. Qu, Nat. Commun. 2023, 14, 7127.
+[16] K. Wang, Q. Hong, C. Zhu, Y. Xu, W. Li, Y. Wang, W. Chen, X. Gu,
+X. Chen, Y. Fang, Y. Shen, S. Liu, Y. Zhang, Nat. Commun. 2024, 15,
+5705.
+[17] J. Chen, Q. Ma, M. Li, D. Chao, L. Huang, W. Wu, Y. Fang, S. Dong,
+Nat. Commun. 2021, 12, 3375.
+[18] E. M. Hamed, L. He, V. Rai, S. Hu, S. F. Y. Li, Small 2024, 20, 2405986.
+[19] E. M. Hamed, V. Rai, S. F. Y. Li, Chemosphere 2024, 346, 140557.
+[20] S. Ding, J. A. Barr, Z. Lyu, F. Zhang, M. Wang, P. Tieu, X. Li, M. H.
+Engelhard, Z. Feng, S. P. Beckman, X. Pan, J.-C. Li, D. Du, Y. Lin, Adv.
+Mater. 2024, 36, 2209633.
+[21] J.-J. Zheng, F. Zhu, N. Song, F. Deng, Q. Chen, C. Chen, J. He, X. Gao,
+M. Liang, Nat. Protoc. 2024, 19, 3470.
+[22] J. Wu, X. Zhu, Q. Li, Q. Fu, B. Wang, B. Li, S. Wang, Q. Chang, H.
+Xiang, C. Ye, Q. Li, L. Huang, Y. Liang, D. Wang, Y. Zhao, Y. Li, Nat.
+Commun. 2024, 15, 6174.
+[23] S. Wei, W. Ma, M. Sun, P. Xiang, Z. Tian, L. Mao, L. Gao, Y. Li, Nat.
+Commun. 2024, 15, 6888.
+[24] H. Dong, W. Du, J. Dong, R. Che, F. Kong, W. Cheng, M. Ma, N. Gu,
+Y. Zhang, Nat. Commun. 2022, 13, 5365.
+[25] R. Wang, X. Ma, E. M. Hamed, B. Cao, L. Wang, S. F. Y. Li, Y. Zhu,
+Sens. Actuators, B 2025, 426, 137112.
+[26] L. Wang, Z. Liu, L. Yao, S. Liu, Q. Wang, H. Qu, Y. Wu, Y. Mao, L.
+Zheng, Small 2024, 20, 2400629.
+[27] L. Xu, J. Nan, S. Han, Z. Yu, S. Wu, Y. Fang, S. Dong, Small 2024, 20,
+2405293.
+[28] L. Ge, Y. Chen, B. Geng, X. Chu, R. Jiang, X. Wang, X. Qin, W. Li, S.
+Song, Small 2024, 20, 2404608.
+[29] Y. Cheng, Y.-D. Xia, Y.-Q. Sun, Y. Wang, X.-B. Yin, Adv. Mater. 2024, 36,
+2308033.
+[30] B. Xu, R. Niu, R. Deng, Y. Tang, C. Wang, Y. Wang, Adv. Funct. Mater.
+2024, 34, 2405265.
+[31] W. Liu, E. Shi, H. Wu, Y. Liang, M. Chen, H. Zhang, R. Zhang, X. Li, Y.
+Wang, L. Zhang, Adv. Funct. Mater. 2024, 34, 2403386.
+[32] J. Jia, F. Yu, E. M. Hamed, S. F. Y. Li, L. Zhu, B. Cao, Y. Zhu, ACS Appl.
+Nano Mater. 2024, 7, 11984.
+[33] N. Singh, S. K. NaveenKumar, M. Geethika, G. Mugesh, Angew.
+Chem., Int. Ed. 2021, 60, 3121.
+[34] G.-B. Im, Y. G. Kim, T. Y. Yoo, Y. H. Kim, K. Kim, J. Hyun, M. Soh, T.
+Hyeon, S. H. Bhang, Adv. Mater. 2023, 35, 2208989.
+[35] S. Zhao, Y. X. Li, Q. Y. Liu, S. R. Li, Y. Cheng, C. Q. Cheng, Z.
+Y. Sun, Y. Du, C. J. Butch, H. Wei, Adv. Funct. Mater. 2020, 30,
+2004692.
+[36] L. Meng, L. Tang, F. Gao, L. Zhu, X. Liu, J. Zhang, Y. Chang, X. Ma, Y.
+Guo, Chem. – A Europ. J. 2024, 30, 202401640.
+[37] M. S. Lord, J. F. Berret, S. Singh, A. Vinu, A. S. Karakoti, Small 2021,
+17, 2102342.
+[38] F. Zhu, Y. Yu, Z. Yu, H. Qiu, G.-P. Lu, Z. Chen, J. Hu, Y. Lin, Small 2024,
+20, 2311848.
+[39] L. Wu, H. Lin, X. Cao, Q. Tong, F. Yang, Y. Miao, D. Ye, Q. Fan, Angew.
+Chem., Int. Ed. 2024, 63, 202405937.
+[40] Y. Zhu, Y. Liao, J. Zou, J. Cheng, Y. Pan, L. Lin, X. Chen, Small 2023,
+19, 2300750.
+[41] Z. Guo, J. Hong, N. Song, M. Liang, Acc. Mater. Res. 2024, 5, 347.
+[42] X. W. Fan, M. M. Cheng, S. Y. Ma, K. X. Song, Y. Yuan, Y. Liu, New J.
+Chem. 2023, 47, 10493.
+[43] L. Liu, S. F. Zhang, X. Z. Chen, G. Li, Y. Zhe, Y. H. Li, X. D. Zhang,
+Chem. Mater. 2024, 36, 2971.
+[44] J. Yang, R. F. Zhang, H. Q. Zhao, H. F. Qi, J. Y. Li, J. F. Li, X. Y. Zhou, A.
+Q. Wang, K. L. Fan, X. Y. Yan, T. Zhang, Exploration 2022, 2, 20210267.
+[45] H. Zhao, R. Zhang, X. Yan, K. Fan, J. Mater. Chem. B 2021, 9, 6939.
+[46] F. Huang, X. Lu, L. Kuai, Y. Ru, J. Jiang, J. Song, S. Chen, L. Mao, Y. Li,
+B. Li, H. Dong, J. Shi, J. Am. Chem. Soc. 2024, 146, 3186.
+[47] Q. Chen, Y. Liu, Y. Lu, Y. Hou, X. Zhang, W. Shi, Y. Huang, J. Hazard.
+Mater. 2022, 422, 126929.
+[48] D. Sharma, S. Rasaily, S. Pradhan, K. Baruah, S. Tamang, A. Pariyar,
+Inorg. Chem. 2021, 60, 7794.
+[49] Y. Cai, J. Fu, Y. Zhou, Y.-C. Chang, Q. Min, J.-J. Zhu, Y. Lin, W. Zhu,
+Nat. Commun. 2021, 12, 586.
+[50] X. Y. Wang, Q. Chen, Y. F. Zhu, K. R. Wang, Y. L. Chang, X. W. Wu, W.
+C. Bao, T. C. Cao, H. R. Chen, Y. Zhang, H. L. Qin, Signal Transduct.
+Targeted Ther. 2023, 8, 12.
+[51] B. Jiang, Z. Guo, M. Liang, Nano Res. 2023, 16, 1878.
+[52] T. Zhang, D. Zhang, X. Han, T. Dong, X. Guo, C. Song, R. Si, W. Liu,
+Y. Liu, Z. Zhao, J. Am. Chem. Soc. 2018, 140, 16936.
+[53] Y. Zhang, A. Khalique, X. Du, Z. Gao, J. Wu, X. Zhang, R. Zhang, Z.
+Sun, Q. Liu, Z. Xu, A. C. Midgley, L. Wang, X. Yan, J. Zhuang, D. Kong,
+X. Huang, Adv. Mater. 2021, 33, 2006570.
+[54] E. M. Hamed, F. M. Fung, S. F. Y. Li, ACS Mater. Au 2025, 5, 377.
+[55] L. B. Menezes, R. M. S. N. Sampaio, L. Meurer, B. Szpoganicz, R.
+Cervo, R. Cargnelutti, L. Wang, J. Yang, R. Prabhakar, C. Fernandes,
+A. Horn Jr., Inorg. Chem. 2024, 63, 14827.
+Small 2025, 21, e03879
+© 2025 The Author(s). Small published by Wiley-VCH GmbH
+e03879 (9 of 9)
+ 16136829, 2025, 36, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/smll.202503879 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [27/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

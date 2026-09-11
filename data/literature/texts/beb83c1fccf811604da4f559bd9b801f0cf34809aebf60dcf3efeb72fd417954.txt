@@ -1,0 +1,1583 @@
+REVIEW
+www.advhealthmat.de
+Advancements in NADH Oxidase Nanozymes: Bridging
+Nanotechnology and Biomedical Applications
+Dan Li, Juyang He, Guanyu Ding, Yan Xin, Fan Feng, Shuaining Ma, Lu Lin,
+Erkang Wang, and Jin Wang*
+Nicotinamide adenine dinucleotide (NADH) oxidase (NOX) is key in
+converting NADH to NAD+, crucial for various biochemical pathways.
+However, natural NOXs are costly and unstable. NOX nanozymes oﬀer a
+promising alternative with potential applications in bio-sensing, antibacterial
+treatments, anti-aging, and anticancer therapies. This review provides a
+comprehensive overview of the types, functional mechanisms, biomedical
+applications, and future research perspectives of NOX nanozymes. It also
+addresses the primary challenges and future directions in the research and
+development of NOX nanozymes, underscoring the critical need for continued
+investigation in this promising area. These challenges include optimizing the
+catalytic eﬃciency, ensuring biocompatibility, and achieving targeted delivery
+and controlled activity within biological systems. Additionally, the exploration
+of novel materials and hybrid structures holds great potential for enhancing
+the functional capabilities of NOX nanozymes. Future research directions can
+involve integrating advanced computational modeling with experimental
+techniques to better understand the underlying mechanisms and to design
+more eﬀective nanozyme candidates. Collaborative eﬀorts across disciplines
+such as nanotechnology, biochemistry, and medicine will be essential to
+unlock the full potential of NOX nanozymes in future biomedical applications.
+1. Introduction
+Nicotinamide adenine dinucleotide (NAD+) is a vital redox cofac-
+tor, essential for facilitating both catabolic and anabolic reactions
+in a variety of biotransformation processes.[1] It is integral to the
+metabolism of primary nutrients such as carbohydrates, fats, and
+D. Li, G. Ding, S. Ma, L. Lin, E. Wang
+State Key Laboratory of Electroanalytical Chemistry
+Changchun Institute of Applied Chemistry
+Chinese Academy of Sciences (CAS)
+Changchun, Jilin 130022, P. R. China
+J. He, F. Feng
+Department of Gynecological Oncology, the First Hospital of Jilin
+University (J. He) and School of Pharmaceutical Sciences (F. Fan)
+Jilin University
+Changchun, Jilin 130000, P. R. China
+The ORCID identiﬁcation number(s) for the author(s) of this article
+can be found under https://doi.org/10.1002/adhm.202402785
+DOI: 10.1002/adhm.202402785
+proteins.[2]
+Therefore,
+the
+regeneration
+of
+bioactive
+NAD+
+from
+its
+reduced
+form, nicotinamide adenine dinucleotide
+(NADH),
+facilitated
+by
+NADH
+oxi-
+dase
+(NOX),
+is
+of
+critical
+importance
+(Figure 1a).[3]
+NOX
+activity
+demonstrates
+signiﬁ-
+cant diversity across various organisms
+and cell types, with its speciﬁc functions
+and mechanisms depending on the bi-
+ological and cellular contexts. In certain
+bacteria, NOX is pivotal for the detox-
+iﬁcation
+of
+oxygen,
+thereby
+protecting
+anaerobic or microaerophilic organisms
+from oxidative stress.[4] In these cases,
+the NOX enzyme facilitates the reduction
+of oxygen (O2) to either water (H2O) or
+hydrogen peroxide (H2O2). For instance,
+lactic acid bacteria, which are facultative
+anaerobes, lack both catalase (CAT) and
+cytochrome oxidases for O2 processing.
+They rely on NOX to catalyze the reduction
+of O2 to superoxide (O2
+.−) (1), H2O2 (2), or
+H2O (3) through one-, two-, or four-electron
+transfers, respectively.[4] The resulting O2
+.-
+and H2O2 are subsequently neutralized by the activities of
+superoxide dismutase (SOD) and peroxidase (POD), respectively.
+Additionally, reaction (3) facilitates the regeneration of NAD+
+for several metabolic pathways, including glycolysis, oxidative
+phosphorylation (OXPHOS), tricarboxylic acid (TCA), and fatty
+acid oxidation (FAO).[5]
+Y. Xin
+Faculty of Chemistry
+Northeast Normal University
+Changchun, Jilin 130024, P. R. China
+J. Wang
+Center for Theoretical Interdisciplinary Science
+Wenzhou Institute
+University of Chinese Academy of Sciences
+Beijing 325001, P. R. China
+E-mail: jin.wang.1@stonybrook.edu
+J.Wang
+Department of Chemistry of Physics & Astronomy
+StateUniversity of New York at Stony Brook
+Stony Brook, NY 11794-3400, USA
+Adv. Healthcare Mater. 2025, 14, 2402785
+© 2024 Wiley-VCH GmbH
+2402785 (1 of 24)
+
+www.advancedsciencenews.com
+www.advhealthmat.de
+Figure 1. a) The molecular structure transformation from NADH to NAD+ catalyzed by NOX. b) Electrons derived from the oxidation of NADH and
+succinate are initially introduced to the aerobic electron transport chain (ETC) through complexes I and II. These electrons are then transferred to the
+electron carrier ubiquinone (UQ), which subsequently transports them through complexes III and IV. Here, they culminate the process by reducing O2,
+allowing their exit from the ETC. Concurrently, electron-coupled proton translocation occurs at complexes I, III, and IV, generating the proton motive
+force essential for the activation of ATP synthase. Reproduced with permission.[6] Copyright 2024, Springer Nature.
+The reactions catalyzed by NOXs:[4]
+NADH + 2O2 + e−NOX
+→NAD+ + H+ + 2O2
+∙−
+(1)
+NADH + H+ + O2 + 2e−NOX
+→NAD+ + H2O2
+(2)
+2NADH + 2H+ + O2 + 4e−NOX
+→2NAD+ + 2H2O
+(3)
+Moreover, NOX plays a crucial role in the electron transport
+chain (ETC), particularly within mitochondrial complex I, where
+it is responsible for transferring electrons to ubiquinone (UQ)
+during the oxidation of NADH. UQ then aids in the transport of
+electrons through complexes III and IV, which culminates in the
+reduction of O2. Subsequently, electron-coupled proton translo-
+cation occurs at complexes I, III, and IV, ultimately resulting
+in ATP generation (Figure 1b).[6] Consequently, the conversion
+between NADH and NAD+ is vital for cellular metabolism,
+immune responses, and overall cellular function.[5a,7] Under-
+standing the regulatory mechanisms that govern the balance
+of NAD+ and NADH can lead to innovative strategies for dis-
+ease diagnosis and treatment. Overall, NOXs play a pivotal
+role in maintaining cellular redox balance and energy produc-
+tion, underscoring their importance across various biological
+systems.
+Despite their essential roles, natural NOXs face challenges
+including low stability and high production costs. Nanozymes,
+which are nanomaterials with enzyme-mimicking properties, of-
+fer several advantages over natural enzymes, such as enhanced
+stability, reduced production costs, and simpliﬁed manufactur-
+ing processes.[8] These nanozymes are constructed from a wide
+variety of materials, including metals, metal oxides, carbon-based
+substances, and hybrid composites.[9] They mimic the catalytic
+functions of natural enzymes, which serve as biological catalysts
+to accelerate chemical reactions within living organisms.[10]
+The development of NOX nanozymes marks a signiﬁcant ad-
+vancement in this research ﬁeld. Various materials, including
+carbon-based nanomaterials, metal-organic frameworks (MOFs),
+and other metal-integrated hybrid nanocomposites, are being ex-
+plored for their potential in NADH oxidation. These nanomate-
+rials are engineered to exhibit speciﬁc surface properties and ac-
+tive sites that mimic the catalytic centers of natural NOXs. The
+Adv. Healthcare Mater. 2025, 14, 2402785
+© 2024 Wiley-VCH GmbH
+2402785 (2 of 24)
+ 21922659, 2025, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.202402785 by CochraneChina, Wiley Online Library on [24/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advhealthmat.de
+Figure 2. Schematic illustration of NOX nanozymes in biomedical applications: bio-sensing (Reproduced with permission.[12] Copyright 2021 Else-
+vier; reproduced with permission.[13] Copyright 2009, Royal Society of Chemistry.), antibacterial treatments (Reproduced with permission.[14] Copyright
+2023 Wiley-VCH; reproduced with permission.[15] Copyright 2023, American Chemical Society; reproduced with permission.[16] Copyright 2024, Wiley-
+VCH.), anti-aging interventions (Reproduced with permission.[17] Copyright 2023, Elsevier; reproduced with permission.[18] Copyright 2022, American
+Chemical Society; reproduced with permission.[19] Copyright 2024, American Chemical Society.), and anticancer therapies through metabolic regulation
+(Reproduced with permission.[20] Copyright 2023, American Chemical Society; Reproduced with permission.[21] Copyright 2023, Wiley-VCH; Reproduced
+with permission.[22] Copyright 2023, Wiley-VCH.), redox modulation (Reproduced with permission.[23] Copyright 2021, American Chemical Society. Re-
+produced with permission.[24] Copyright 2023, Elsevier. Reproduced with permission.[25] Copyright 2021, Oxford University Press. Reproduced with
+permission.[26] Copyright 2024, American Chemical Society.); and synergistic treatments (Reproduced with permission.[27] Copyright 2023, Wiley-VCH;
+Reproduced with permission.[28] Copyright 2023, Wiley-VCH.).
+underlying mechanism involves the transfer of electrons from
+NADH to the active site of the nanozyme, followed by the relay of
+these electrons to O2. The catalytic eﬃciency of NOX nanozymes
+is greatly inﬂuenced by their compositions, structural character-
+istics, and surface properties.[11]
+NOX nanozymes have been employed in various ﬁelds such
+as bio-sensing, antibacterial treatments, anti-aging, and anti-
+cancer therapies (Figure 2). Their advantages include superior
+catalytic eﬃciency, enhanced stability, and remarkable adaptabil-
+ity, making them exceptionally promising candidates for advanc-
+ing biomedical solutions. Consequently, they provide reliable
+performances across a wide range of therapeutic and sensing
+applications. With continued research and development, NOX
+nanozymes have the potentials to revolutionize healthcare and
+biotechnology, oﬀering more eﬀective, durable, and versatile so-
+lutions to address numerous biomedical challenges.
+Despite numerous reports on the application of various
+nanozymes in biomedical contexts, a comprehensive review
+summarizing recent advancements in NOX nanozyme research
+is still lacking. Such a review would greatly stimulate the inten-
+tion of design and development of new NOX nanozymes and ex-
+pand research within this ﬁeld. In this article, we will introduce
+the diﬀerent types of NOX nanozymes, provide an overview of
+their biomedical applications, and discuss the challenges and fu-
+ture perspectives associated with them in detail. This review aims
+to be a valuable resource for ongoing innovation and develop-
+ment in NOX-like nanozyme studies, thereby broadening their
+biomedical applications.
+Adv. Healthcare Mater. 2025, 14, 2402785
+© 2024 Wiley-VCH GmbH
+2402785 (3 of 24)
+ 21922659, 2025, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.202402785 by CochraneChina, Wiley Online Library on [24/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advhealthmat.de
+Figure 3. NOX nanozymes derived from carbon clusters and nanotubes. a) The electron transfer mechanism mediated by PEG-HCCs. Reproduced with
+permission.[14] Copyright 2009, Royal Society of Chemistry. b) N, P or S-doped carbon nanotubes (CNTs) as dual mimics of NOX and Cyt c reductase.
+Reproduced with permission.[15] Copyright 2023, Springer Nature.
+2. Types of NOX Nanozymes
+Based on the main composition, NOX nanozymes can be classi-
+ﬁed into three types:
+2.1. Carbon-Based NOX Nanozyme
+Carbon-based nanomaterials have gained prominence in the ﬁeld
+of nanozyme research due to their low toxicity and exceptional
+chemical properties.[12] Initially recognized for their inherent
+POD-like activity, the carbon-based nanomaterials have been ex-
+plored for a variety of bio-catalytic functions, such as oxidase
+(OXD), CAT and SOD.[13] An innovative approach by Kent et al.
+involved the development of poly(ethylene glycol)-functionalized
+hydrophilic carbon clusters (PEG-HCCs).[14] These PEG-HCCs
+enhance electron transport and catalyze the oxidation of NADH,
+as demonstrated in Figure 3a, indicating promising potential for
+addressing mitochondrial disorders.
+More recently, Wang et al. further advanced the ﬁeld by doping
+carbon nanotubes (CNTs) with nitrogen (N), phosphorus (P), or
+sulfur (S) to construct enzyme analogs capable of emulating the
+activities of NOX and cytochrome c (Cyt c) reduction (Figure 3b).
+The study revealed that the O2 was reduced to either H2O or
+H2O2 by CNTs, mimicking the action of natural NOXs.[15] This
+progression underscores the versatility and potential of CNTs
+in nanozyme technology, opening new avenues for biomedical
+applications and enzyme mimic. Similarly, the deployment of
+multi-walled carbon nanotubes anchored by platinum nanopar-
+ticles, named as (PtNPs@MWCNTs), has been instrumental in
+the development of NOX nanozyme.[16] The application of Pt-
+NPs@MWCNTs in the ﬁeld of biosensing will be discussed in
+the following section.
+Adv. Healthcare Mater. 2025, 14, 2402785
+© 2024 Wiley-VCH GmbH
+2402785 (4 of 24)
+ 21922659, 2025, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.202402785 by CochraneChina, Wiley Online Library on [24/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advhealthmat.de
+In addition to carbon clusters and nanotubes, graphene is also
+utilized to synthesize NOX nanozymes. Li et al. demonstrated
+that N-doped graphene variants incorporating iron (Fe), cobalt
+(Co), or copper (Cu), collectively termed as MNGRs, exhibited
+robust NOX-like activity (Figure 3a).[17] In particular, the FeNGR
+can be internalized into the cytoplasm, enhancing the ratio of
+NAD+/NADH. This enhancement facilitated glucose uptake and
+adenosine triphosphate (ATP) production. The FeNGR holds sig-
+niﬁcant potential for the treatment of various metabolic disor-
+ders, including diabetes, fatty liver disease, and hyperlipidemia.
+Single-atom nanozymes (SAzymes) represent an advanced
+class of nanoscale enzyme mimics characterized by their cat-
+alytic activity derived from individual atoms integrated within a
+suitable support matrix.[18] The distinct architecture of SAzymes
+enhances the utilization eﬃciency of metal atoms and demon-
+strates superior catalytic performance, owing to the high surface-
+to-volume ratio and the unique electronic properties of the
+isolated atoms.[19] To harness the exceptional properties of
+SAzymes, Huang et al. developed a kind of SAzyme that incor-
+porates palladium (Pd), graphene oxide (GO), and polypyrrole
+(PPy), termed as Pd@PPy/GO (Figure 4b). This nanozyme em-
+ulates natural NOXs activity and catalyzes the oxidation of fer-
+rous Cyt c to its ferric form in the presence of O2, mimick-
+ing the action of Cyt c oxidase (CcO).[20] These ﬁndings pave
+the way for further in-depth exploration of innovative NOX
+nanozymes. In contrast, other studies have shown that materi-
+als like CuxO nanorods,[21] Cu2+-GO,[22] Cu2+-modiﬁed MOFs,[23]
+and oxidation-derived nanoparticles from Ti3C2,[24] mainly ex-
+hibit NADH POD-like catalytic activity. This activity facilitates the
+oxidation of NADH to NAD+ only in the presence of H2O2, dif-
+fering from the behavior observed in the NOX nanozyme.
+Fu et al. advanced the ﬁeld by developing a novel metal-
+doped reduced GO (rGO) as the NOX nanozyme. They em-
+ployed a layer-by-layer technique to electrostatically deposit
+polyethyleneimine (PEI) and polyacrylic acid (PAA) onto rGO
+sheets, forming rGO/PEI/PAA nanoﬁlms (Figure 4c). Sub-
+sequently, various metal ions, including Au3+, Pt4+, Cu2+,
+and Mg2+ were incorporated to create multimetallic nanopar-
+ticles
+(rGPn@Au@Pt@Cu@MgO).[25]
+These
+nanoparticles
+achieved remarkable eﬃciency in catalyzing the conversion of
+NADH to NAD+, indicating potential beneﬁts for anti-aging
+therapies.
+Furthermore, Liu et al. synthesized Cu-doped graphene quan-
+tum dots (Cu-GQDs), aiming at antimicrobial applications. They
+assembled the Cu,N-GQDs@Ru-NO nanoplatform, as depicted
+in Figure 4d. This negatively charged nanoplatform targets in-
+ﬂammatory infection sites via electrostatic interactions and ex-
+hibits signiﬁcant NOX-like activity. Under light irradiation at
+808 nm, this nanoplatform photo-oxidizes NADH to NAD+, dis-
+rupting the redox balance within bacteria and contributing to
+their eradication.[26]
+2.2. MOF-Based NOX Nanozyme
+MOFs are a class of fascinating crystalline materials synthesized
+through the coordination of metal ions or clusters with organic
+ligands, resulting in highly ordered structures that can form
+1D, 2D, or 3D arrays.[27] Within the MOFs’ family, zeolitic
+imidazolate frameworks (ZIFs) typically employ metal ions, like
+zinc (Zn) or Co, coordinated with imidazolate ligands to form
+structures that resemble the characteristics of zeolites.[28] A sig-
+niﬁcant advancement in this ﬁeld has been achieved by Dong’s
+group. They developed an innovative ZIF by encapsulating it
+with PEI and functionalizing it with ﬂavin mononucleotide
+(FMN), resulting in the creation of PEI/ZIF-FMN, as illustrated
+in Figure 5a–d.[29] This innovative structure mimics the ar-
+chitecture of ﬂavin-dependent enzymes, acting as a NOX-like
+nanozyme. Furthermore, it has been eﬀectively paired with
+dehydrogenases for sequential enzymatic reactions. Remarkably,
+the PEI/ZIF-FMN nanozyme enables the electron transfer from
+NADH to Cyt c, demonstrating catalytic activity analogous of Cyt
+c reductase. This development not only showcases the versatility
+and potential of ZIF-based materials but also opens new avenues
+for their application in biochemical processes and enzyme
+mimicry.
+Additionally, Lei et al. developed Co2+-ZIF-67 MOFs (NMOFs),
+which function as nanozymes capable of catalyzing a variety of
+reactions, based on the typical POD, OXD, and CAT-like activities
+(Figure 5e–g). The OXD-like activity was evidenced by the aerobic
+oxidation of dopamine to aminochrome, and NADH to NAD+.[30]
+However the NOX-like activity of Co2+-ZIF-67 NMOFs was found
+to be lower than their NADH POD-like activity in the presence of
+H2O2.
+2.3. Additional Metal-Integrated Hybrid Nanocomposites
+Metal-integrated hybrid nanocomposites, particularly those in-
+corporating elements like Co, molybdenum (Mo), have shown
+promise in replicating the activity of natural NOXs. The catalytic
+eﬃciency of these nanomaterials can be attributed to their abil-
+ity to facilitate surface redox reactions that closely resemble the
+processes catalyzed by natural NOXs.
+The Co-doped MoS2 nanocomposite (Co-MoS2) has shown
+promising NOX activity, achieving its optimized performance at
+pH 4.5.[31] This nanozyme eﬀectively catalyzes the oxidation of
+NADH to generate O2
+•−from dissolved O2, showcasing a no-
+tably high recovery yield. Similarly, Liu and colleagues have de-
+veloped hierarchical porous MoS2 particles (Figure 6a) exhibiting
+enzyme-like activities analogous to sulﬁte oxidase (SuOx), NOX,
+and SOD.[32] The catalytic mechanism for the NOX mimics in-
+volves the oxidation of NADH with O2, leading to the formation
+of the intermediate (O2
+.−), which then converts to H2O2. These
+MoS2 particles hold promising potential for applications in bio-
+analytical ﬁelds.
+Additionally, Wang and colleagues discovered that cadmium
+sulﬁde (CdS) nanorods can catalyze the formation of O2
+•−, ex-
+hibiting NOX-like activity due to the inﬂuence of photo-generated
+holes in the CdS nanorods (Figure 6b).[33] Furthermore, the CdS
+nanorods have been shown to reduce Cyt c, demonstrating Cyt c
+reductase-like activity. Given that Cyt c reductase (complex III,
+C3) mediates electron transfer from CoQ to Cyt c and plays a
+vital role in the cellular ETC (Figure 6c), it is essential for bet-
+ter understanding various biological diseases by studying the
+NAD+/NADH ratio and Cyt c status. Consequently, these CdS
+nanorods hold signiﬁcant potential for therapeutic applications
+related to mitochondrial disorders.
+Adv. Healthcare Mater. 2025, 14, 2402785
+© 2024 Wiley-VCH GmbH
+2402785 (5 of 24)
+ 21922659, 2025, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.202402785 by CochraneChina, Wiley Online Library on [24/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advhealthmat.de
+Figure 4. NOX nanozymes based on graphene. a) Schematic illustration of mental-doped graphene mimicking NOX for NAD+ supplementation in
+mammals, and the atomic force microscopy images of the Fe, Cu, and Co-doped MNGRs. Reproduced with permission.[17] Copyright 2023, American
+Chemical Society. b) Schematic representation of Pd@PPy/GO nanozyme mimicking natural NOX and CcO enzymes. Reproduced with permission.[20]
+Copyright 2023, Elsevier. c) Formation of the rGPn@Au@Pt@Cu@MgO nanoparticles achieved by mixing four metal ions (Au3+, Pt4+, Cu2+, and
+Mg2+) and rGPn nanoﬁlms. Reproduced with permission.[25] Copyright 2022, American Chemical Society. d) Schematic illustration of the synthesis of
+the Cu,N-GQDs@Ru-NO nanoplatform. Reproduced with permission.[26] Copyright 2023 Wiley-VCH.
+3. Biomedical Applications of NOX Nanozymes
+3.1. Applications in Bio-Sensing
+NOX
+nanozymes
+have
+been
+utilized
+to
+develop
+biosen-
+sors speciﬁcally designed for the detection of NADH and
+related substrates, which are vital components in NADH-
+producing reactions. These features underscore their potential
+for transformative applications in clinical diagnostics and
+bioanalysis.
+The development of an NADH-detecting biosensor using NOX
+nanozymes involves a sophisticated enzymatic cascade reaction.
+This advanced system incorporates several key elements, includ-
+ing Co-MoS2 with NOX-like activity, HRP, and TMB, which work
+in concert to facilitate precise and sensitive detection of NADH,
+as illustrated in Figure 7a. The sensor exhibits a detection range
+of 0.5 to 800 μM, and a low detection limit of just 0.25 μM, as
+evidenced by the data presented in Figure 7b,c. Moreover, the
+biosensor maintains excellent selectivity, distinguishing NADH
+from other potential interfering substances with high accuracy, as
+Adv. Healthcare Mater. 2025, 14, 2402785
+© 2024 Wiley-VCH GmbH
+2402785 (6 of 24)
+ 21922659, 2025, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.202402785 by CochraneChina, Wiley Online Library on [24/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advhealthmat.de
+Figure 5. NOX nanozymes developed from MOFs. a) Schematic illustration of hydride transfer from NADH to FMN facilitated by PEI/ZIF-FMN. b)
+Schematic representation of the reversible interaction between NADH and the PEI/ZIF-FMN nanozyme. c) UV-Vis absorption spectra of the reaction
+mixtures post-colorimetric analysis, using the horseradish peroxidase (HRP) and the 3,3′,5,5′-tetramethylbenzidine (TMB) as an indicator. d) Electron
+spin-resonance (ESR) spectra featuring 5,5-dimethyl-1-pyrroline N-oxide (BMPO) as the spin trapping reagent for hydroxyl radicals. Reproduced with
+permission.[29] Copyright 2009, Royal Society of Chemistry. e) Schematic Co2+-ZIF-67 NMOFs catalyzed oxidation of NADH by H2O2. f) Time-dependent
+absorbance spectrum changes of NADH upon oxidation by 5 mM H2O2 in the presence of 50 μg mL−1 Co2+-ZIF-67 NMOFs. g) NADH oxidation rate
+in the presence of various concentrations of NADH. Reproduced with permission.[30] Copyright 2023, Wiley-VCH.
+demonstrated in Figure 7d.[31] This combination of broad detec-
+tion range, low detection limit, and high selectivity underscores
+the sensor’s potential for practical applications in a variety of bio-
+chemical and clinical contexts, where reliable and precise NADH
+measurement is crucial.
+Additionally, PtNPs@MWCNTs are employed as NOX mim-
+ics to improve the electrochemical performance for NADH
+detection (Figure 8a). This integration of PtNPs@MWCNTs
+with electrochemistry not only improves the sensor’s eﬃciency
+but also expends its applicability in various analytical set-
+tings, thereby broadening its potential uses.[16] Furthermore,
+the biosensor’s design is enhanced by incorporating biomimetic
+cofactors through the immobilization of xylose dehydrogenase
+(XDH), resulting in a novel XDH&PtNPs@MWCNTs nanocom-
+posite. This hybrid bioelectrode is speciﬁcally engineered for
+detection of xylose, exhibiting a detection range of 5 to 400
+μM and achieving a low detection limit of 1 μM, as shown
+in Figure 6b,c. Notably, the biosensor demonstrates consistent
+performance across multiple uses (Figure 8d), and exhibits fa-
+vorable stability (Figure 8e). Additionally, its detection results
+obtained by this biosensor closely align with those acquired
+from high-performance liquid chromatography (HPLC) mea-
+surements when tested with real lignocellulosic samples, as de-
+picted in Figure 8f. This congruence reinforces the biosensor’s
+suitability and accuracy for practical xylose detection in complex
+sample matrices.
+Overall, while the number of studies on NOX nanozymes
+for bio-sensing applications is relatively limited compared to
+the more extensively researched OXD and POD nanozymes, the
+emerging data indicates that NOX nanozymes have substantial
+potential as powerful biosensor tools. These nanozymes are ca-
+pable of providing rapid detection, which is necessary for real-
+time monitoring and urgent diagnostic needs. Moreover, their
+precise detection capabilities ensure high speciﬁcity and accu-
+racy, reducing the likelihood of cross-reactivity and false posi-
+tives. Additionally, the reliability of NOX nanozymes in various
+testing conditions suggests that they can be trusted for consis-
+tent performance, making them highly suitable for both clinical
+diagnostics and environmental monitoring. This combination of
+speed, accuracy, and reliability positions NOX nanozymes as a
+promising area of study, deserving of further research and devel-
+opment to fully harness their potential in the ﬁeld of bio-sensing.
+3.2. Applications in Antibacterial Therapy
+Antibiotics have signiﬁcantly revolutionized the treatment and
+management of bacterial infections, establishing themselves as
+the cornerstone of modern antimicrobial therapy.[34] They have
+been instrumental in reducing morbidity and mortality associ-
+ated with bacterial diseases, making surgeries and numerous
+medical procedures safer and more successful. However, the
+extensive and inappropriate use of these traditional antibiotics
+has precipitated a serious global health challenge: the emer-
+gence and spread of multidrug-resistant (MDR) bacteria.[35] This
+growing resistance undermines the eﬀectiveness of existing
+antibiotics, posing a signiﬁcant threat to public health worldwide
+and creating a pressing need for new antibacterial agents. These
+new agents must possess mechanisms of action that are distinct
+from those of current antibiotics to eﬀectively combat resis-
+tant strains and ensure continued success in treating bacterial
+infections.[36] Addressing this critical issue is of utmost urgency
+Adv. Healthcare Mater. 2025, 14, 2402785
+© 2024 Wiley-VCH GmbH
+2402785 (7 of 24)
+ 21922659, 2025, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.202402785 by CochraneChina, Wiley Online Library on [24/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advhealthmat.de
+Figure 6. Metal-integrated hybrid nanocomposites utilized as NOX nanozymes. a) Schematic depiction of the SuOx, NOX, and SOD-like activities of
+MoS2 particles for phenol detection. Reproduced with permission.[32] Copyright 2023, Elsevier. b) CdS nanozyme exhibits NOX and Cyt c reductase
+activities, respectively. c) A schematic diagram depicts the ETC in mammalian mitochondria, highlighting the roles of NOX (Complex I, C1), succinate
+dehydrogenase (Complex II, C2), and Cty c reductase (Complex III, C3). “Q” represents CoQ. Reproduced with permission.[33] Copyright 2022, Springer
+Nature.
+and importance, necessitating robust eﬀorts in the development
+of innovative antibacterial therapies.
+Nanobactericides, a class of nanoparticles renowned for their
+intrinsic antibacterial properties and their ability to enhance the
+eﬀectiveness of existing antibiotics, are emerging as a highly
+promising solution in the ﬁght against bacterial infections.[37]
+These innovative nanoparticles exert their antibiotic eﬀects
+through various mechanisms, such as inhibiting key enzyme
+activities, disrupting DNA synthesis, inducing reactive oxygen
+species (ROS), hydrolyzing glycosidic compounds, and interfer-
+ing with essential energy transduction processes.[38]
+The application of nanozymes in antimicrobial applications
+oﬀers substantial beneﬁts, particularly for infections that are
+resistant to traditional antibiotics[39] and treatment of diabetic
+wounds,[40] where conventional therapies are less eﬀective.
+Among the various types of nanozymes, the NOX serve as power-
+ful antibacterial agents, highlighting their potential across a wide
+range of medical applications. The functionality of the NOX en-
+zyme is particularly noteworthy for antibacterial use, primarily
+due to its capacity to generate ROS, which are eﬀective antimicro-
+bial agents. The generation of ROS by NOX enzymes can eﬀec-
+tively damage the cellular structures of bacteria, leading to their
+eradication. This unique capability underscores the extensive po-
+tential and versatility of NOX enzymes in combating bacterial
+infections, especially in scenarios where traditional antibiotics
+might fail.
+In the realm of developing nanobactericides with NOX
+activity, Liu et al. introduced a kind of Cu,N-GQDs@Ru-NO
+nanozyme, comprising of Cu and N-doped graphene QDs
+(GQDs) covalently functionalized with ruthenium nitrosyl
+(Ru-NO), a donor of nitric oxide (NO). This nanozyme demon-
+strates substantial potential as an eﬀective nanobactericide, as
+depicted in Figure 9. Upon exposure to 808 nm near-infrared
+(NIR) light, the Cu,N-GQDs@Ru-NO displays NOX-like activity
+that disrupts cellular redox balance. This disruption is a key
+mechanism through which the nanozyme exerts its antibacterial
+eﬀects. Concurrently, the released NO, along with photothermal
+eﬀects, eﬀectively eliminates the bioﬁlms of methicillin-resistant
+Staphylococcus aureus (MRSA) bacteria.[26] NO is known for
+its ability to enhance blood ﬂow, reduce inﬂammation, and
+Adv. Healthcare Mater. 2025, 14, 2402785
+© 2024 Wiley-VCH GmbH
+2402785 (8 of 24)
+ 21922659, 2025, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.202402785 by CochraneChina, Wiley Online Library on [24/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advhealthmat.de
+Figure 7. The Co-MoS2 nanocomposite for NADH detection. a) Preparation of Co-MoS2 nanocomposite with NOX activity and its application in col-
+orimetric sensing of NADH. b, c) Sensitivity, and d) selectivity of NADH detection using the Co-MoS2 as the catalyst. Reproduced with permission.[31]
+Copyright 2021 Elsevier.
+Figure 8. The application of XDH&PtNPs@MWCNTs for xylose detection. a) Schematic representation of PtNPs@MWCNTs functioning as a NOX
+mimic. b) Standard calibration curve, c) speciﬁcity assessment, d) frequency measurement, e) stability evaluation, and f) analysis in real samples using
+the xylose biosensor based on XDH&PtNPs@MWCNTs. Reproduced with permission.[16] Copyright 2009, Royal Society of Chemistry.
+Adv. Healthcare Mater. 2025, 14, 2402785
+© 2024 Wiley-VCH GmbH
+2402785 (9 of 24)
+ 21922659, 2025, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.202402785 by CochraneChina, Wiley Online Library on [24/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advhealthmat.de
+Figure 9. NOX nanozyme utilized for wound healing. Schematic representation of Cu,N-GQDs@Ru-NO nanozyme with integrations of NOX activity,
+photothermal therapy, and NO gas therapy for eﬀective antibacterial treatment. Reproduced with permission.[26] Copyright 2023 Wiley-VCH.
+stimulate the production of collagen, all of which are essential
+for eﬀective wound repair.[41] The photothermal eﬀects further
+contribute to this process by increasing local temperature, which
+can enhance tissue regeneration and reduce bacterial load. This
+multifaceted approach not only targets the bacterial infection
+but also addresses the associated inﬂammatory response and
+promotes tissue healing. Therefore, the Cu,N-GQDs@Ru-NO
+nanozyme introduces a novel and comprehensive therapeutic
+strategy for the eﬀective management of MRSA-associated
+inﬂammatory wounds. The integration of NOX-like activity,
+NO release, and photothermal eﬀects into a single nanozyme
+represents a signiﬁcant innovation in the ﬁeld of nanomedicine,
+oﬀering a promising solution for combating antibiotic-resistant
+infections and improving wound healing outcomes.
+Diabetic wounds, known for their prolonged healing dura-
+tion, pose a signiﬁcant challenge within healthcare.[42] These
+chronic wounds typically suﬀer from oxidative damage, which
+is worsened by high blood glucose levels, insuﬃcient oxy-
+gen (hypoxia), severe bacterial infections, and an abnormal
+pH environment.[43] All of these factors collectively hinder
+the natural healing process. To tackle the complexities associ-
+ated with diabetic wounds, Zhang and colleagues have devel-
+oped a microenvironmentally adaptive nanohybrid double net-
+work hydrogel, namely perﬂuorooctyl bromide@poly(lactic-co-
+glycolic acid)@Pt/methacrylate-anhydride gelatin/oxidized dex-
+tran (PFOB@PLGA@Pt/GelMA/ODex), featuring injectable,
+self-healing, and tissue-adhesive properties, as illustrated in
+Figure 10a.[44] This hydrogel exhibits a range of enzymatic ac-
+tivities similar to those of NOX, glucose oxidase (GOD), POD,
+OXD, CAT and SOD for synergistic antibacterial action. The in-
+corporation of the PFOB component within the nanocomposite
+boosts O2 availability through its CAT-like activity and simulates
+GOD activity. This dual functionality helps to lower glucose con-
+centrations and acidity in the wound area, thereby promoting a
+more favorable environment for healing. Subsequently, the ac-
+tivities analogous to NOX, OXD, and POD are activated, work-
+ing synergistically to generate ROS, thereby enhancing antimi-
+crobial eﬃcacy. During the later stages of healing, activities re-
+sembling those of CAT and SOD-like activities become vital in
+remodeling the redox microenvironment by neutralizing excess
+ROS, facilitating the transition from the inﬂammatory phase to
+the proliferative phase of wound healing. The nanocomposite hy-
+drogel markedly improves the healing eﬃcacy of diabetic wounds
+by eradicating bacterial infection and optimizing the wound mi-
+croenvironment.
+Recently, Chen et al. developed an innovative self-adaptive
+artiﬁcial peroxisome mimic with Co-Ru pair centers (APCR) for
+targeted diabetic ulcer therapy (Figure 10b).[45] The synergistic
+interaction between Co and Ru atoms enables the APCR to pro-
+duce toxic ROS and inhibit metabolism through its POD- and
+NOX-like activities, respectively, in the acidic microenvironment
+typical of infections. These ﬁndings suggest that the APCR can
+compromise bacterial membranes and cell walls, disrupt redox
+balance and energy metabolism, and consequently accelerate
+death of bacteria. Following disinfection, the APCR alleviates hy-
+poxia and intracellular ROS by mimicking SOD to convert O2
+•−
+to H2O2, and subsequently breaking down excess H2O2 into
+nontoxic water and oxygen through GSH peroxidase (GPx)- and
+Adv. Healthcare Mater. 2025, 14, 2402785
+© 2024 Wiley-VCH GmbH
+2402785 (10 of 24)
+ 21922659, 2025, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.202402785 by CochraneChina, Wiley Online Library on [24/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advhealthmat.de
+Figure 10. NOX nanozymes utilized for diabetic ulcer therapy. a) The PFOB@PLGA@Pt/GelMA/ODex nanohybrids enhance diabetic wound heal-
+ing by eliminating bacteria and remodeling the redox/O2 microenvironment, achieved through their GOD, POD, OXD, CAT, SOD, and NOX-like ac-
+tivities and improved tissue adhesion. Reproduced with permission.[44] Copyright 2023, American Chemical Society. b) The strategy of the wound
+microenvironments-responsive APCR with pH-switchable enzyme-like activities, and the therapeutic mechanisms of APCR for a programmed approach
+to diabetic wound healing. Reproduced with permission.[45] Copyright 2024, Wiley-VCH.
+Adv. Healthcare Mater. 2025, 14, 2402785
+© 2024 Wiley-VCH GmbH
+2402785 (11 of 24)
+ 21922659, 2025, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.202402785 by CochraneChina, Wiley Online Library on [24/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advhealthmat.de
+CAT-like activities, thereby promoting cell proliferation in the
+inﬂammatory microenvironment (neutral pH). Moreover, the
+APCR enhances angiogenesis, providing a novel approach for
+the rapid healing of infected diabetic ulcers. This study reveals
+that APCR is an eﬀective, safe, programmable, and self-adaptive
+nanozyme for treating diabetic ulcers.
+In summary, the exploration of the antimicrobial properties
+of NOX nanozymes is still in its early stages. However, this re-
+search domain is rapidly gaining attention due to its promising
+potential in combating microbial infections, particularly those
+that are resistant to conventional antibiotics. One of the most no-
+table advantages of these ROS-generating and redox-remodeling
+NOX nanozymes is their reduced likelihood of inducing micro-
+bial resistance compared to traditional antibiotics.[46] Signiﬁcant
+areas of future research include establishing the safety proﬁle
+of these nanozymes for human application, which encompasses
+thorough evaluations of their toxicity, degradation, and potential
+adverse eﬀects on human health. Additionally, it is imperative
+to assess the environmental impact of NOX nanozymes in de-
+tail. This involves studying their breakdown in diﬀerent environ-
+mental conditions, their potential to cause harm to ecosystems,
+and the long-term eﬀects of their usage. By addressing these crit-
+ical areas, researchers can better understand the full scope of the
+beneﬁts and risks associated with employing NOX nanozymes in
+medical and environmental applications.
+3.3. Applications in Anti-Aging
+Typically, the body maintains a delicate balance between produc-
+tion of ROS and antioxidant defenses.[47] However, as individu-
+als age, this equilibrium can become disrupted, resulting in ox-
+idative damage to cells and tissues. This oxidative damage not
+only manifests as visible signs of aging, such as wrinkles and
+age spots, but also contributes to the development of various age-
+related diseases.[48]
+Research indicates aging is also accompanied by a decline in
+the NAD+/NADH ratio, a critical factor in numerous cellular
+processes. A reduced ratio can lead to a range of age-related is-
+sues, including reduced energy production, impaired DNA re-
+pair, and compromised regulation of oxidative stress.[49] The de-
+crease in NAD+ levels, coupled with the excessive accumulation
+of NADH, has been closely linked to the aging process, mani-
+festing in impairments in skin regeneration and metabolic dys-
+regulation, and other age-associated health problems.[50] Conse-
+quently, strategies aimed at enhancing NAD+ levels and main-
+taining a higher NAD+/NADH ratio are increasingly recognized
+as eﬀective approaches to mitigate the impacts of aging and its
+associated health challenges. These strategies may involve sup-
+plementation with NAD+ precursors, lifestyle modiﬁcations, or
+therapeutic interventions designed to boost NAD+ levels.[3,51] By
+focusing on these approaches, it is possible to promote health-
+ier aging, improve cellular function, and reduce the risk of age-
+related diseases.
+NOX nanozymes are of particular interest due to their capac-
+ity to modulate oxidative stress and increase the NAD+/NADH
+ratio. By maintaining an optimal cellular redox balance, NOX
+nanozymes can eﬀectively mitigate the adverse eﬀects of ox-
+idative stress, thereby protecting cells from damage and dys-
+function. Huang et al. have developed a SAzyme, Pd@PPy/GO,
+which functions as artiﬁcial cascade nanoreactor with both NOX
+and CcO-like activities.[20] The CcO enzyme is a critical compo-
+nent in complex IV in the mitochondrial ETC,[52] playing a vital
+role in electron transfer for bioenergy production. Consequently,
+Pd@PPy/GO has been found to enhance mitochondrial function
+both in the Caenorhabditis elegans (C. elegans) and cellular models.
+Furthermore, the activation of the mitochondrial unfolded pro-
+tein response (UPRmt) pathway plays a key role in its anti-aging
+eﬀects (Figure 11a). This research paves the way for developing
+anti-aging therapies through the strategic design of simple and
+eﬀective nanozymes with NOX and CcO dual-enzymatic activi-
+ties.
+Additionally,
+the
+innovative
+multimetallic
+nanoparti-
+cles
+developed
+by
+Fu’s
+research
+group,
+designated
+as
+rGPn@Au@Pt@Cu@MgO,
+have
+demonstrated
+triple
+cat-
+alytic abilities that mimic the functions of GOD, CAT and
+NOX simultaneously, as illustrated in Figure 11b. These
+rGPn@Au@Pt@Cu@MgO nanoparticles eﬀectively catalyze
+the conversion of glucose to gluconic acid and H2O2 due to their
+GOD-like activity. Additionally, they exhibit CAT-like activity by
+decomposing H2O2 into harmless H2O and O2. This process,
+in turn, aids in the conversion of NADH to NAD+, even under
+hypoxic conditions. The increased concentration of NAD+ and
+a high NAD+/NADH ratio show promise in protecting humans
+against aging and age-related conditions.[53] This advancement
+represents a signiﬁcant step forward in the design of multi-
+metallic nanoparticles featuring synergistic cascade catalytic
+activities. By integrating multiple catalytic functions within a
+single nanoparticle system, these multimetallic nanoparticles
+hold promising potential for various biomedical applications,
+including anti-aging research. They oﬀer a powerful tool for
+mitigating oxidative stress and improving cellular health, thereby
+opening new avenues for the development of therapies aimed at
+promoting longevity and combating age-related degeneration.[25]
+Furthermore, Zhang and colleagues have made strides by
+emulating the catalytic properties of polymetallic active centers
+inherent in natural enzymes. Their research has led to the devel-
+opment of a variety of mated-atom nanozymes (MANs), generally
+named as M1M2 MANs, where Mi can be elements such as V,
+Mn, Fe, Co, Cu, Mo, Rh, Ru, or Pd, each paired with another
+(i = 1 or 2). These nanozymes exhibit highly selective catalytic
+activities achieved through innovative and precise compositional
+manipulation.[50] A particularly notable advancement among
+these MANs is the Rhodium (Rh) Co mated-atom nanozyme.
+This RhCo MAN demonstrates impressive NOX-like activity,
+which has far-reaching biological implications. It signiﬁcantly
+boosts the production of GSH while concurrently reducing the
+generation of ROS. Beyond its catalytic eﬃciency, the RhCo
+MAN also boasts excellent stability and reusability, making it
+a highly viable candidate for repeated biomedical applications.
+Furthermore, the RhCo MAN has a profound eﬀect on cellular re-
+dox balance by enhancing NAD+ regeneration, which is vital for
+maintaining cellular health. It helps rectify redox imbalances and
+diminishes the levels of pro-inﬂammatory cytokines, pivotal fac-
+tors in controlling inﬂammation. Moreover, this nanozyme aids
+in immune modulation by inducing macrophage polarization
+toward the M2 phenotype. This immune response modula-
+tion is achieved by downregulating Toll-like receptor 4 (TLR4)
+Adv. Healthcare Mater. 2025, 14, 2402785
+© 2024 Wiley-VCH GmbH
+2402785 (12 of 24)
+ 21922659, 2025, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.202402785 by CochraneChina, Wiley Online Library on [24/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advhealthmat.de
+Figure 11. NOX nanozymes utilized for anti-aging applications. a) The development and characterization of Pd@PPy/GO nanozyme and its
+NOX and CcO-like catalytic properties for anti-aging applications. Reproduced with permission.[20] Copyright 2023, Elsevier. b) The multimetallic
+rGPn@Au@Pt@Cu@MgO nanoparticles with signiﬁcant GOD, CAT, and NOX-like activities for anti-aging applications. Reproduced with permission.[25]
+Copyright 2022, American Chemical Society.
+expression, thus shaping a favorable environment for healing
+and regeneration. As a result, the RhCo MAN shows substantial
+potential in promoting skin regeneration, particularly in the
+treatment of inﬂammation-associated skin conditions such as
+eczema, as depicted in Figure 12. In stark contrast, other MANs
+like RhRu MAN with POD-like activity, and RhMn MAN with
+SOD-like activity have shown minimal eﬃcacy in modulating
+eczema. This diﬀerentiation underscores the unique and potent
+capabilities of RhCo MAN in addressing skin inﬂammation
+and encouraging skin regeneration. Thus, this work not only
+introduces a novel strategy for inhibiting skin inﬂammation but
+also highlights pioneering avenues for therapeutic interventions
+aimed at enhancing skin health and treating dermatological
+disorders.
+Adv. Healthcare Mater. 2025, 14, 2402785
+© 2024 Wiley-VCH GmbH
+2402785 (13 of 24)
+ 21922659, 2025, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.202402785 by CochraneChina, Wiley Online Library on [24/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advhealthmat.de
+Figure 12. The mechanism of RhCo MAN in skin regeneration during the treatment of inﬂammatory-related skin diseases. The RhCo MAN exhibits
+the ability of enhancing the regeneration of NAD+, correcting imbalance of redox, reducing the levels of pro-inﬂammatory cytokine, and inducing the
+polarization of macrophages toward the M2 phenotype. Reproduced with permission.[50] Copyright 2024, American Chemical Society.
+In summary, NOX nanozymes oﬀer remarkable potential
+as therapeutic agents aimed at combating age-related oxidative
+damage and associated disorders, representing a groundbreak-
+ing approach to anti-aging treatments. By modulating oxidative
+stress, these nanozymes could play a pivotal role in mitigating
+cellular damage, promoting cellular health, and enhancing the
+longevity of tissues and organs. However, despite their promis-
+ing prospects, several challenges must be addressed to enable the
+widespread application of NOX nanozymes in anti-aging thera-
+pies. One critical consideration is verifying their biocompatibil-
+ity to ensure that they do not elicit adverse reactions within the
+body. Ensuring stability in biological environments is also essen-
+tial, as the nanozymes must remain active and eﬀective within
+the complex milieu of living systems. Another signiﬁcant chal-
+lenge is achieving precise delivery to speciﬁc targets within the
+body to maximize therapeutic eﬃcacy while minimizing poten-
+tial side eﬀects. Moreover, comprehensive research is required
+to fully elucidate the mechanisms of action of NOX nanozymes.
+Understanding how they interact with biological systems at the
+molecular level will be vital for optimizing their design and ap-
+plication. Additionally, assessing their long-term impacts on bi-
+ological systems is important to determine their safety and eﬃ-
+cacy over extended periods, especially given the chronic nature
+of aging and age-related disorders. Ongoing research and devel-
+opment eﬀorts are necessary to overcome these challenges and
+fully harness the capabilities of NOX nanozymes for clinical use.
+By addressing these obstacles through rigorous scientiﬁc inquiry
+and technological innovation, the potential of NOX nanozymes
+as a transformative solution in anti-aging therapies can be real-
+ized, paving the way for new treatments that enhance the quality
+of life and promote healthy aging.
+3.4. Applications in Anticancer Therapy
+In the ETC of mammalian mitochondria, Complex I plays a
+pivotal role by catalyzing the oxidation of NADH and facilitating
+the transfer of electrons to Complex II, as depicted in Figure 6c.
+This electron transfer is crucial for the subsequent movement
+of hydrogen ions (H+) from the mitochondrial matrix to the in-
+termembrane space. Inhibiting the catalytic activity of Complex
+I disrupts this electron transfer process, thereby obstructing
+the transport of H+ ions.[54] The resultant blockage causes a de-
+crease in the mitochondrial membrane potential (ΔΨm), which
+is essential for maintaining the electrochemical gradient that
+drives ATP synthesis.[55] The inhibition of H+ transport and the
+consequent decline in ΔΨm eﬀectively impede ATP production,
+undermining the cell’s energy supply. Additionally, NADH plays
+a multifaceted role within cells. As a powerful reducing agent,
+NADH maintains the cellular reducing environment, indispens-
+able for protecting cells from oxidative damage. It serves as the
+primary scavenger of ROS and functions as an indispensable
+coenzyme for various antioxidant enzymes, including GPX and
+GSH-S-transferases. Therefore, a reduction in NADH levels
+can compromise the cell’s antioxidant defenses, leading to
+oxidative stress. Interestingly, this induced oxidative stress can
+signiﬁcantly augment the eﬃcacy of therapeutic strategies,
+particularly in the context of cancer treatment.[56] The dual role
+of NADH, as both a critical player in cellular energy production
+and a central component of the antioxidant defense system,
+highlights its importance in maintaining cellular homeostasis.
+By targeting NADH, it is possible to exploit its role in cellular
+defense mechanisms against oxidative stress, positioning it as a
+potential therapeutic target in cancer treatment.
+NOX nanozymes represent an innovative and promising ap-
+proach in cancer therapy. These nanozymes are capable of re-
+ducing NADH levels, disrupting ΔΨm, impairing ATP synthesis,
+and creating redox imbalances within cells. By harnessing these
+capabilities, NOX nanozymes can induce a state of metabolic and
+oxidative stress that is detrimental to cancer cells, making them
+highly eﬀective candidates for cancer therapy. This innovative ap-
+proach underscores the potential of NOX nanozymes to serve as
+powerful tools in the ongoing battle against cancer, leveraging
+Adv. Healthcare Mater. 2025, 14, 2402785
+© 2024 Wiley-VCH GmbH
+2402785 (14 of 24)
+ 21922659, 2025, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.202402785 by CochraneChina, Wiley Online Library on [24/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advhealthmat.de
+their ability to manipulate cellular redox states and energy pro-
+duction to target and eliminate malignancies.
+3.4.1. Cancer Therapy Primarily via Metabolic Regulation
+Metabolism, an intricate and interconnected network of bio-
+chemical reactions, plays a pivotal role in both the production
+and consumption of energy essential for the survival and func-
+tion of living organisms. This dynamic system is responsible
+for converting nutrients into energy, building cellular structures,
+and regulating various physiological processes. In the context of
+cancer, signiﬁcant alterations in metabolic pathways are com-
+monly observed.[57] These metabolic changes are instrumental
+in facilitating the growth and progression of tumors. Enhanced
+metabolic activity allows cancer cells to support rapid cell divi-
+sion, providing the necessary energy and biosynthetic materials
+to sustain proliferation.[58] Furthermore, these metabolic adapta-
+tions enhance the survival capabilities of cancer cells, enabling
+them to thrive even under adverse conditions, such as low nu-
+trient supply and hypoxia.[55] One notable metabolic characteris-
+tic of cancer cells is the elevated ratio of NAD+ to NADH com-
+pared to normal cells.[5a] This altered redox balance supports var-
+ious cellular processes that are advantageous for tumor progres-
+sion, including enhanced glycolysis and biosynthetic activities.
+The increased NAD+/NADH ratio also helps cancer cells man-
+age oxidative stress, further promoting their survival and growth.
+Given these fundamental metabolic diﬀerences between cancer
+cells and normal cells, targeting the disrupted metabolic path-
+ways within tumors has emerged as a promising strategy for can-
+cer treatment.[59] The ongoing exploration of metabolic interven-
+tions thus holds signiﬁcant promise for advancing cancer therapy
+and achieving better control over tumor growth.
+Lin et. al. have developed an amorphous honeycomb-like N-
+doped carbon (N/C) nanozyme characterized by NOX and CAT
+activities (Figure 13a).[60] This N/C nanozyme was cleverly com-
+bined with natural glucose dehydrogenase (GDH) to enhance the
+regeneration of NAD+, the coenzyme of GDH, resulting in ef-
+fective management of hyperglycemia through consuming glu-
+cose. This integration facilitates the transfer of electrons from
+glucose to NAD+, and subsequently to O2. Compared to other
+cancer-starving therapies,[61] the N/C-GDH nanozyme ensures
+sustainable and eﬀective glucose consumption while preventing
+the generation of cytotoxic H2O2. Furthermore, the synergistic
+combination of the N/C-GDH system with 5-ﬂuorouracil (5-FU)
+has been shown to signiﬁcantly inhibit the proliferation of hu-
+man colon cancer cells by lowering glucose levels and inducing
+apoptosis. This innovative approach not only broadens the appli-
+cation of nanozymes in managing blood glucose but also opens
+new avenues for employing nonmetallic nanomaterials in the de-
+velopment of eﬀective cancer therapies.
+Furthermore, the serine/threonine kinase AKT is requisite for
+various cellular processes. The AKT signaling is often excessively
+active in many cancer types, leading to abnormal cell growth
+and transformations.[62] The regulation of the NAD+/NADH ra-
+tio is intricately linked to the AKT signaling pathway. Du and
+colleagues developed a carbon-coated Co composite (C@Co)
+nanozyme, which exhibited signiﬁcant NOX-like activity, as
+shown in Figure 13b. The C@Co eﬃciently reduced NADH lev-
+els in cancer cells, resulting in increased production of ROS and
+a reduction of Δ𝜓m. Simultaneously, the elevated levels of NAD+
+suppressed the AKT/GSK3𝛽signaling pathway, thereby promot-
+ing apoptosis of cancer cells both in laboratory and animal stud-
+ies. These results further elucidate the role of NADH in cancer
+therapy, and highlight the potential of NOX nanozyme as a ther-
+apeutic strategy in oncology.[56]
+Studies have provided evidence that the NAD+/NADH ra-
+tio, which is associated with various biochemical processes, can
+be restored during the cell repair process.[63] This restoration
+is vital for maintaining cellular health and function. However,
+when it comes to cancer treatment, a signiﬁcant challenge arises
+due to the metabolic ﬂexibility of tumor cells. The cancer cells
+can adapt by utilizing various metabolic pathways to restore the
+NAD+/NADH ratio, thereby sustaining their growth.[64] As a re-
+sult, targeting a single metabolic pathway is often insuﬃcient for
+achieving eﬀective therapeutic outcomes in cancer therapy. This
+adaptability of tumor cells underscores the urgent need for inno-
+vative treatment strategies. Speciﬁcally, there is a pressing need
+to develop approaches that can simultaneously disrupt multiple
+metabolic pathways. By doing so, it may be possible to eﬀectively
+undermine the metabolic resilience of tumor cells, leading to
+more successful and lasting therapeutic results. Hence, the de-
+velopment of multi-targeted metabolic interventions represents
+a signiﬁcant and necessary challenge in advancing cancer treat-
+ment eﬃcacy.
+In response to the challenge of eﬀectively targeting the
+metabolic ﬂexibility of tumor cells, Ge and the colleagues pro-
+posed an innovative strategy for tumor therapy that involves
+the simultaneous disruption of multiple cellular metabolism
+pathways.[65] This triple cellular metabolism disruption strategy
+employs the use of Co-doped hollow carbon spheres (Co-HCS),
+which exhibit catalytic activities akin to those of three types of
+enzymes: NOX, OXD and CAT (Figure 14). The mechanism of
+this approach is multifaceted. First, the NOX-mimicking catalytic
+activity of Co-HCS eﬀectively disrupts the NAD+/NADH bal-
+ance within tumor cells, leading to mitochondrial dysfunction
+and a consequent inhibition of ATP production via OXPHOS.
+This inhibition of ATP production hampers the energy supply
+that tumor cells need for rapid therapy growth and survival. Sec-
+ond, the design of Co-HCS incorporates a substrate-cycle mecha-
+nism that enhances its catalytic eﬃciency. This mechanism helps
+mitigate the issues of declining catalytic activity that can occur
+due to substrate depletion, thereby ensuring sustained and ef-
+fective therapeutic outcomes against tumors. Third, this strat-
+egy includes the induction of 2-Deoxy-D-glucose (2-DG) and 6-
+aminonicotinamide (6-AN). These compounds play a vital role
+by eﬀectively blocking glycolysis and the pentose phosphate path-
+way (PPP) in cancer cells. By inhibiting these critical metabolic
+pathways, the overall energy production and biosynthetic pro-
+cesses of the cancer cells are severely compromised. The newly
+developed construct system, named DSPE-Co-HCS/D/A, func-
+tions as an NADH-circulating oxidation reactor and is engineered
+to simultaneously disrupt multiple cellular metabolic pathways.
+This design oﬀers a synergistic approach to cancer therapy. This
+research presents an innovative method for enhancing the ef-
+ﬁcacy of tumor treatment by coordinating the disruption of
+metabolic functions, thereby opening new avenues for cancer
+therapy.
+Adv. Healthcare Mater. 2025, 14, 2402785
+© 2024 Wiley-VCH GmbH
+2402785 (15 of 24)
+ 21922659, 2025, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.202402785 by CochraneChina, Wiley Online Library on [24/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advhealthmat.de
+Figure 13. Cancer therapy based on modulating the glucose metabolism and serine/threonine kinase AKT pathway. a) Schematic illustration of the
+GDH-N/C for the cyclic regeneration of NAD+, continuous glucose consumption, and cooperating with 5-FU inducing apoptosis on HCT-116 cells
+under hyperglycemic conditions. Reproduced with permission.[60] Copyright 2023, American Chemical Society. b) A schematic illustration of a NOX-like
+C@Co nanozyme eﬀectively depleting NAD(P)H within cancer cells, leading to an increased production of ROS, a reduction in Δ𝜓m, and suppression
+of cancer growth via the NAD(P)H-mediated AKT/GSK3𝛽pathway. Reproduced with permission.[56] Copyright 2023, Wiley-VCH.
+3.4.2. Cancer Therapy through Modulation of the Cellular Redox
+Environment and Metabolic Regulation
+Cancer cells typically exhibit elevated levels of ROS compared to
+normal cells. While moderate levels of ROS can promote tumori-
+genesis by inducing DNA damage, activating oncogenes, and al-
+tering signaling pathways, excessive ROS levels can lead to cell
+death.[66] Therefore, therapeutic strategies that either further el-
+evate ROS to cytotoxic levels or reduce ROS to impair cancer cell
+survival and proliferation are being explored.[67] One approach
+involves the use of redox-modulating agents that selectively in-
+crease ROS production in cancer cells. These agents include
+pro-oxidants, such as certain chemotherapeutic drugs and radia-
+tion, which enhance ROS generation to induce oxidative damage
+Adv. Healthcare Mater. 2025, 14, 2402785
+© 2024 Wiley-VCH GmbH
+2402785 (16 of 24)
+ 21922659, 2025, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.202402785 by CochraneChina, Wiley Online Library on [24/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advhealthmat.de
+Figure 14. Schematic illustration of DSPE-Co-HCS/D/A preparation and its mechanism for cancer therapy, highlighting the simultaneous disruption of
+multiple cellular metabolic pathways. Reproduced with permission.[65] Copyright 2023, Wiley-VCH.
+and apoptosis in cancer cells. Another approach focuses on in-
+hibiting antioxidant defenses, such as GSH, within cancer cells,
+thereby preventing them from neutralizing the elevated ROS
+levels.
+Exploring NOX nanozymes that disrupt cellular redox equilib-
+rium opens novel avenues for developing targeted cancer ther-
+apies. Lu’s team employs a defect engineering approach to cre-
+ate a powerful redox nanozyme, Fe doped MoOx (Fe-MoOv),
+by creating active sites that mimic enzymes and demonstrate
+multiple enzyme-like activities, including CAT, POD, OXD, and
+NOX.[68] First, the H2O2 in the tumor microenvironment (TME)
+is converted into •OH and O2 through POD- and CAT-like ac-
+tivities, respectively. The generated O2 is further transformed
+into O2
+•– demonstrating OXD-mimicking activity, which facili-
+tates the rapid oxidation of NADH. Notably, during NADH ox-
+idation, a signiﬁcant production of H2O2 is observed. Conse-
+quently, the generated O2
+•– can initiate a cascade reaction, reduc-
+ing the need for H2O2 and producing more •OH in an H2O2-
+recyclable manner (Figure 15a). When exposed to NIR-II laser
+light, these Fe-MoOv nanozymes markedly increase ROS levels
+within tumors via enzyme-like cascading reactions, signiﬁcantly
+enhancing therapeutic eﬃcacy. This research, capitalizing on de-
+fect engineering, oﬀers innovative insights into the development
+of highly eﬀective redox nanozymes for medical applications.
+Due to the heterogeneity of tumors, NOX nanozymes often
+display varying sensitivities to hypoxic and normoxic cancer cells
+within solid tumors, creating a signiﬁcant obstacle to achiev-
+ing high therapeutic eﬃcacy. Lu et al. introduced an innovative
+Cu2−xSe NOX nanozymes that not only disrupts OXPHOS and
+ATP generation in normoxic cancers but also impedes glycolysis
+and lactate production in hypoxic cancer cells. This distinctive
+action of Cu2−xSe nanozymes on NADH consumption eﬀectively
+dismantles the metabolic networks of solid tumors and increases
+cellular ROS, thereby enhancing antitumor eﬃcacy (Figure 15b).
+This approach oﬀers an innovative perspective on the develop-
+ment of metal-defect active centers in NOX nanozymes, poten-
+tially leading to more eﬀective cancer treatments.[69]
+Furthermore, Dong and colleagues have developed a novel
+Co catalyst supported on porous carbon (Co/C) to emulate the
+function of NOX enzymes.[70] This Co/C catalyst eﬀectively cat-
+alyzes the dehydrogenation of NADH, facilitating the transfer
+of electrons to O2. Through density functional theory (DFT)
+calculations, it is demonstrated that the Co/C catalyst signiﬁ-
+cantly promotes the reduction of O2 to •OH either H2O2 or
+Adv. Healthcare Mater. 2025, 14, 2402785
+© 2024 Wiley-VCH GmbH
+2402785 (17 of 24)
+ 21922659, 2025, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.202402785 by CochraneChina, Wiley Online Library on [24/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advhealthmat.de
+Figure 15. Cancer treatment through modulating the redox balance. a) Schematic illustration of Fe-MoOv nanozyme-induced antitumor mechanism.
+The Fe-MoOv alters the redox and metabolic balance in tumor tissues via enzyme-like cascading reactions, substantially improving therapeutic eﬃcacy
+after irradiation with NIR-II laser light. Reproduced with permission.[68] Copyright 2021, American Chemical Society. b) Schematic illustration of the
+synthesis and the antitumor mechanism of Cu2-xSe nanozyme. Cu2-xSe disrupts OXPHOS and ATP production in normoxic cancer cells while also
+inhibiting glycolysis and lactate production in hypoxic cancer cells, leading to disruptions in redox balance and metabolic homeostasis. Reproduced with
+permission.[69] Copyright 2023, Elsevier.
+H2O. In cancer cells, Co/C nanoparticles are shown to deplete
+NADH, elevate ROS level, impair oxidative phosphorylation, re-
+duce ΔΨm, and disrupt ATP synthesis. This sequence of events,
+or “domino eﬀect,” leads to the induction of apoptosis in cancer
+cells (Figure 16a). This research highlights the potential of the
+NOX nanozyme as a novel therapeutic agent in cancer treatment,
+leveraging its unique catalytic properties to disrupt the metabolic
+processes of cancer cells. The ability of NOX nanozymes to in-
+terfere with cellular respiration and energy production presents
+a promising avenue for further exploration and development in
+the ﬁeld of oncology.
+NOX nanozymes have shown remarkable potential in disrupt-
+ing cellular homeostasis for cancer therapy. However, their ef-
+fectiveness is often limited by the complex TME. To address this
+challenge, Mo et al. engineered bimetallic nanoalloys with opti-
+mized enzymatic activity, leveraging the interaction between Pd
+and layered double hydroxide (LDH). These nanoalloys, denoted
+as PdCux@LDH, exhibit POD, CAT, and NOX-like catalytic ac-
+tivities. It catalyzes the conversion of H2O2 and O2 into highly
+toxic ROS (•OH and 1O2), which induce apoptosis or necrosis
+in cancer cells. Moreover, it degrades GSH within the TME, con-
+verting it into glutathione disulﬁde (GSSG) through a redox re-
+action mediated by Cu2+, thereby circumventing ROS depletion.
+Notably, ultrasound (US) stimulation further ampliﬁes the POD
+and CAT-like activities of PdCux@LDH, resulting in enhanced
+ROS generation. This increase in ROS causes the consumption
+of NADH, leading to mitochondrial dysfunction and culminating
+in 1O2-boosted sonodynamic cancer therapy (Figure 16b).[71]
+Adv. Healthcare Mater. 2025, 14, 2402785
+© 2024 Wiley-VCH GmbH
+2402785 (18 of 24)
+ 21922659, 2025, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.202402785 by CochraneChina, Wiley Online Library on [24/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advhealthmat.de
+Figure 16. Cancer treatment through modulation of the cellular redox environment. a) A schematic depiction illustrates the “domino eﬀect” that dis-
+rupts ATP production, triggered by Co/C following the depletion of NADH in the mitochondrial membrane. Reproduced with permission.[70] Copyright
+2021, Oxford University Press. b) Schematic diagram illustrating the preparation of PdCux@LDH and the proposed antitumor mechanism via cascade
+reactions. US stimulation can enhance enzyme activities and improve ROS generation, thereby depleting NADH inducing mitochondrial dysfunction.
+Reproduced with permission.[71] Copyright 2024, American Chemical Society.
+3.4.3. Cancer Therapy with Combined and Synergistic Treatment
+Strategies
+To enhance the precision and eﬃciency of cancer treatments,
+thereby maximizing therapeutic eﬀects and reducing mortality,
+synergistic strategies have emerged. These combine imaging-
+guided technologies, including chemotherapy, radiation ther-
+apy, phototherapy, chemodynamic therapy, sonodynamic ther-
+apy, immunotherapy, and other therapies, beneﬁting from their
+mutually reinforcing therapeutic eﬃcacies.[72] Currently, most
+reported nanozymes have limited active sites for enzyme-
+mimicking catalytic reactions, and their low atom-utilization eﬃ-
+ciency signiﬁcantly restricts their catalytic performance.[73] Con-
+sequently, enhancing atom utilization within the catalytic cen-
+ters of nanozymes is an eﬀective strategy to improve the eﬃ-
+cacy of nanozyme-based catalytic therapies. With advances in
+atomic nanotechnology, SAzymes featuring precisely deﬁned co-
+ordination structures and optimal atom utilization have attracted
+signiﬁcant interest.[74] Their superior catalytic capabilities make
+SAzymes a promising avenue for cancer treatment, utilizing cat-
+alytic therapy that leverages TME-triggered and integrated cas-
+cade reactions.[75]
+Yang et al. have developed an innovative Iridium-nitrogen 5
+SAzyme (Ir-N5 SA), distinguished by its versatile enzyme-like cat-
+alytic properties.[76] Within TME, the Ir-N5 SA eﬃciently gener-
+ates a substantial amount of ROS through its OXD- and POD-
+like catalytic activities. Additionally, it produces O2 and H2O2 via
+CAT- and NOX-like functions, respectively. This enables eﬀec-
+tive catalytic therapy through a substrate-cycle mechanism, as
+illustrated in Figure 17. Crucially, the Ir-N5 SA disrupts the in-
+tracellular NAD+/NADH cycle by mimicking activity of NOX.
+This disruption is enhanced by the fatty acid synthase inhibitor
+cerulenin (Cer). Consequently, the strategically engineered Ir-N5
+SA/Cer nanoagent eﬀectively disrupts both redox and metabolic
+balance within tumors through a series of enzyme-mimicking re-
+actions. This approach not only addresses the limitations of cur-
+rent nanozyme catalytic therapies but also introduces a powerful
+new strategy for cancer treatment.
+Adv. Healthcare Mater. 2025, 14, 2402785
+© 2024 Wiley-VCH GmbH
+2402785 (19 of 24)
+ 21922659, 2025, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.202402785 by CochraneChina, Wiley Online Library on [24/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advhealthmat.de
+Figure 17. Enhanced cancer treatment using the Ir-N5 SA/Cer cascade. a) A schematic illustration demonstrates how Ir-N5 SA/Cer disrupts the intra-
+cellular NAD+/NADH cycle through NOX-like activity in cancer therapy. This disruption works synergistically with the fatty acid synthase inhibitor Cer
+to destabilize the energy metabolism equilibrium in cancer cells. Reproduced with permission.[76] Copyright 2023, Wiley-VCH.
+Tumor immunotherapy marks a signiﬁcant breakthrough in
+contemporary cancer treatment strategies.[77] However, its eﬃ-
+cacy is often limited by challenges such as low response rates and
+immune evasion, further exacerbated by the tumor’s immuno-
+suppressive microenvironment (TIME).[78] To enhance the eﬃ-
+cacy of immunotherapy, it is necessary to transform the TIME
+by converting immunologically inert “cold” tumors into “hot”
+tumors.[79] To address these challenges, Zhang and colleagues
+developed a pioneering approach with the introduction of the
+Cu-NS@UK@POx SAzyme.[80] This innovative complex that in-
+corporates UK5099 and pyruvate oxidase (POx) within a Cu-
+based nanozyme framework, exhibiting robust catalytic activi-
+ties as NOX, POD, L-cysteine oxidase (LCO), and GSH oxidase
+(GSHOx). These properties empower the Cu-NS@UK@POx to
+generate ROS storms, eﬀectively triggering pyroptosis, a form of
+programmed cell death. Additionally, this SAzyme strategically
+targets pyruvate metabolism, thus enhancing the immune TIME
+and amplifying the extent of pyroptosis (Figure 18). This dual-
+action strategy makes a substantial improvement in antitumor
+immunotherapy by leveraging multiple mechanisms. These in-
+clude the generation of ROS, consumption of NADH, GSH and
+L-cysteine, along with the oxidation of pyruvate, and depletion
+of lactic acid (LA) and ATP. Collectively, these processes not only
+trigger pyroptosis but also modulate metabolism, oﬀering a com-
+prehensive approach to cancer treatment.
+In
+summary,
+nanozymes
+exhibiting
+NOX
+activity
+can
+markedly alter cellular metabolism by enhancing glycolysis
+and reducing mitochondrial function.[81] Through their enzy-
+matic activity, these nanozymes modulate NAD+/NADH ratio,
+thereby inﬂuencing critical metabolic pathways. This capability
+positions them as promising tools in cancer therapy, where they
+can manipulate the cellular redox state, a key factor for the sur-
+vival and proliferation of cancer cells. By exploiting the disrupted
+redox balance in cancerous cells, NOX nanozymes have the
+potential to induce cytotoxicity through increased production of
+ROS, thereby oﬀering new avenues for targeted cancer therapies.
+These nanozymes can eﬀectively exacerbate the oxidative stress
+within cancer cells to a point where it overwhelms the cells’
+antioxidant defenses, leading to cell death.
+Furthermore, nanozymes with this speciﬁc activity can be ef-
+fectively integrated with other therapeutic modalities, includ-
+ing chemotherapy, radiation therapy, photothermal therapy, pho-
+todynamic therapy, sonodynamic therapy, and immunotherapy.
+The metabolic disruption and oxidative stress induced by NOX
+nanozymes can enhance the sensitivity of cancer cells to these
+treatments, potentially improving therapeutic outcomes. The
+synergistic eﬀects of combining NOX nanozymes with conven-
+tional and novel therapies may pave the way for more eﬃcient
+and eﬀective cancer treatment regimens, thereby improving the
+prognosis and quality of life for patients. Finally, the use of NOX
+nanozymes represents a multifaceted approach to cancer ther-
+apy, leveraging their unique ability to modulate redox states and
+metabolic pathways to selectively target and destroy cancer cells.
+Continued research and development in this area may unlock
+new potentials for these nanozymes, making them a cornerstone
+in future cancer treatment strategies.
+Adv. Healthcare Mater. 2025, 14, 2402785
+© 2024 Wiley-VCH GmbH
+2402785 (20 of 24)
+ 21922659, 2025, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.202402785 by CochraneChina, Wiley Online Library on [24/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advhealthmat.de
+Figure 18. The schematic depiction of the antitumor mechanism of Cu-NS@UK@POx includes cellular metabolism reprogramming, pyroptosis in-
+duction, and modulation of TIME. Additionally, targeted pyruvate metabolism therapy can enhance local O2/H2O2 levels while depleting LA and ATP.
+Notably, this metabolic therapy can amplify pyroptosis through a ROS-dependent caspase-1-related pathway. The combined eﬀects of pyroptosis and
+metabolic regulation can induce a robust antitumor immune response. Reproduced with permission.[80] Copyright 2023, Wiley-VCH.
+4. Conclusions and Future Perspectives
+Natural NOX, an enzyme associated to cellular metabolism, pri-
+marily functions within the ETC by catalyzing the oxidation of
+NADH to NAD+. The eﬃcient conversion of NADH to NAD+
+sustains the cell’s metabolic functions and overall vitality. In con-
+trast, NOX nanozymes, which are synthetic analogs of natural
+NOXs, oﬀer several advantages, including ease of preparation,
+lower production costs, and enhanced resistance to extreme con-
+ditions such as high temperatures and varying pH levels. The
+facility of preparation and cost-eﬀectiveness of NOX nanozymes
+opens up possibilities for large-scale production and widespread
+use in various sectors, including pharmaceuticals, and environ-
+mental engineering. Their ability to maintain functionality under
+diverse conditions also makes them attractive for use in diagnos-
+tic and therapeutic tools in vivo, where consistent and stable en-
+zymatic activity is critical.
+Due to these properties, NOX nanozymes present signiﬁcant
+potential in a wide range of applications. In the ﬁeld of bio-
+sensing, NOX nanozymes can catalyze speciﬁc reactions, en-
+abling the sensitive and precise detection of NADH and its as-
+sociated biological molecules. The capacity of NOX nanozymes
+to maintain a higher NAD+/NADH ratio also positions them
+as promising candidates for anti-aging therapies. In these treat-
+ments, they can enhance energy production, repair DNA dam-
+age, and mitigate oxidative stress. Moreover, NOX nanozymes
+Adv. Healthcare Mater. 2025, 14, 2402785
+© 2024 Wiley-VCH GmbH
+2402785 (21 of 24)
+ 21922659, 2025, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.202402785 by CochraneChina, Wiley Online Library on [24/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advhealthmat.de
+have shown substantial potential in anticancer therapies by selec-
+tively targeting cancer cells, inﬂuencing metabolic pathways, and
+modulating the cellular redox state. Their diverse catalytic activi-
+ties facilitate eﬃcient and synergistic cancer treatments, making
+them valuable tools in the ﬁght against cancer. Their robustness
+and ability to aﬀect cellular metabolism and redox states can be
+harnessed to selectively target and eliminate cancer cells, oﬀer-
+ing new avenues for therapeutic intervention. Additionally, their
+stability and durability under harsh conditions ensure reliable
+performance over extended periods, which is advantageous for
+in vivo applications. To sum up, the unique attributes of NOX
+nanozymes not only enhance their eﬀectiveness in bio-sensing
+applications but also open up possibilities for innovative uses in
+clinical ﬁelds. As research and development progress, the full po-
+tential of NOX nanozymes is likely to be explored, oﬀering new
+transformative solutions or improving current methodologies for
+the diagnosis and treatment of metabolic-related diseases.
+While NOX nanozymes can mimic the activity of natural
+NOXs, achieving comparable eﬃciency and speciﬁcity remains
+a formidable challenge. Firstly, NOX nanozymes often exhibit
+lower catalytic activities and broader substrate speciﬁcities, po-
+tentially leading to undesirable side reactions. Additionally, cer-
+tain types of NOX nanozymes can exhibit toxic eﬀects inﬂu-
+enced by their composition, size, shape, and surface modiﬁca-
+tions. Safely integrating these nanozymes into biological systems
+without causing adverse eﬀects poses a signiﬁcant challenge,
+particularly in anti-aging applications. Secondly, although NOX
+nanozymes are generally more stable than natural NOX, main-
+taining their long-term stability under physiological conditions
+remains challenging in certain environments. Over time, they
+may degrade or aggregate, thereby diminishing their enzymatic
+activity. Thirdly, scaling up the production of NOX nanozymes
+while maintaining consistent activity and quality poses another
+challenge. It is imperative to develop large-scale synthesis meth-
+ods that are cost-eﬀective and environmentally friendly. Lastly,
+integrating NOX nanozymes into complex biological systems re-
+quires an in-depth understanding of these systems and careful
+consideration of the interactions between the NOX nanozymes
+and native biomolecules.
+Future perspectives in the development of NOX nanozymes
+should emphasize overcoming existing challenges through pio-
+neering research and inventive strategies. This involves explor-
+ing biocompatible, and environmentally stable nanomaterials,
+as well as reﬁning production processes for eﬃcient, large-scale
+synthesis. The development of intelligent NOX nanozymes that
+respond to environmental stimuli, such as pH changes, tempera-
+ture shifts, or the presence of speciﬁc biomolecules, could signiﬁ-
+cantly enhance their functionality in dynamic biological settings.
+Furthermore, continued research into the interactions between
+NOX nanozymes and biological systems is optimum to reduce
+cytotoxic eﬀects and maximize their therapeutic potential.
+Given the inherent complexity of biological environments, a
+key focus should be on the systematic study of NOX nanozymes’
+behavior in vivo. This involves understanding their distribution,
+metabolism, and clearance from the body, as well as their interac-
+tion with immune systems. Advancements in imaging and track-
+ing technologies could provide critical insights, allowing for real-
+time monitoring of NOX nanozyme activity within living organ-
+isms. To address the potential cytotoxicity, research should prior-
+itize the design of NOX nanozymes with tailored surface modiﬁ-
+cations that enhance biocompatibility. Strategies such as coating
+NOX nanozymes with biopolymers or functionalizing their sur-
+faces with targeting ligands could help reduce undesired interac-
+tions with healthy tissues while ensuring that they reach speciﬁc
+pathological sites more eﬀectively.
+Furthermore, interdisciplinary collaboration will be indispens-
+able, integrating knowledge from biochemistry, pharmacology,
+computer modeling, materials science, and engineering to ex-
+pand the capabilities of NOX nanozymes. By fostering a cooper-
+ative research environment, it is possible to accelerate the devel-
+opment of multifunctional nanozymes that can perform complex
+catalytic activities tailored to speciﬁc biomedical applications.
+Ultimately, despite signiﬁcant challenges, the potential of
+NOX nanozymes across various ﬁelds makes them a promis-
+ing focus for ongoing research and development. The aim of the
+studies is to fully harness the capabilities of NOX nanozymes,
+transforming promising concepts into practical solutions that ef-
+fectively address critical issues in biomedical applications. This
+may include innovative therapies for inﬂammatory and aging-
+associated diseases, precise cancer treatments, and advanced di-
+agnostic tools. As the ﬁeld progresses, proactive and strategic col-
+laboration among researchers will be essential in translating the
+scientiﬁc promise of NOX nanozymes into tangible beneﬁts for
+human health and beyond.
+Acknowledgements
+The authors extend their heartfelt gratitude to Jinxing Chen from the
+National University of Singapore and Baoji Du from Xi’an Jiaotong
+University for their invaluable assistance in preparing this manuscript.
+D. Li and E. Wang also express their sincere appreciation for the ﬁ-
+nancial support received from the Natural Science Foundation of Jilin
+Province (20220101055JC) and the Scientiﬁc and Technological Develop-
+ment Scheme of Jilin Province (20240601015RC).
+Conﬂict of Interest
+The authors declare no conﬂict of interest.
+Keywords
+anti-aging, antibacterial treatment, anticancer therapy, biosensor, NADH
+oxidase nanozyme
+Received: July 28, 2024
+Revised: September 4, 2024
+Published online: September 29, 2024
+[1] R. Zapata-Perez, R. J. A. Wanders, C. D. M. van Karnebeek, R. H.
+Houtkooper, EMBO Mol. Med. 2021, 13, 13943.
+[2] D. J. Morré, D. M. Morré, Free Radical Res. 2003, 37, 795.
+[3] H. Zhang, D. Ryu, Y. Wu, K. Gariani, X. Wang, P. Luan, D. D’Amico, E.
+R. Ropelle, M. P. Lutolf, R. Aebersold, K. Schoonjans, K. J. Menzies,
+J. Auwerx, Science 2016, 352, 1436.
+[4] M. Higuchi, Y. Yamamoto, Y. Kamio, J. Biosci. Bioeng. 2000, 90, 484.
+[5] a) L. E. Navas, A. Carnero, Signal Transduc. Tar. 2021, 6, 257; b) J.
+Durieux, S. Wolﬀ, A. Dillin, Cell 2011, 144, 79.
+Adv. Healthcare Mater. 2025, 14, 2402785
+© 2024 Wiley-VCH GmbH
+2402785 (22 of 24)
+ 21922659, 2025, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.202402785 by CochraneChina, Wiley Online Library on [24/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advhealthmat.de
+[6] T. Davie, X. Serrat, L. Imhof, J. Snider, I. Stagljar, J. Keiser, H. Hirano,
+N. Watanabe, H. Osada, A. G. Fraser, Nat. Commun. 2024, 15, 3367.
+[7] a) D. V. Titov, V. Cracan, R. P. Goodman, J. Peng, Z. Grabarek, V. K.
+Mootha, Science 2016, 352, 231; b) W. H. Ying, Antioxid. Redox Sign.
+2008, 10, 179; c) C. Canto, K. J. Menzies, J. Auwerx, Cell Metab. 2015,
+22, 31.
+[8] a) M. M. Liang, X. Y. Yan, Acc. Chem. Res. 2019, 52, 2190; b) J. J. X.
+Wu, X. Y. Wang, Q. Wang, Z. P. Lou, S. R. Li, Y. Y. Zhu, L. Qin, H. Wei,
+Chem. Soc. Rev. 2019, 48, 1004.
+[9] Y. Y. Huang, J. S. Ren, X. G. Qu, Chem. Rev. 2019, 119, 4357.
+[10] Y. Fan, S. G. Liu, Y. Yi, H. P. Rong, J. T. Zhang, ACS Nano 2021, 15,
+2005.
+[11] D. Zhu, M. Zhang, C. Wang, P. Gai, F. Li, Chem. Mater. 2022, 34,
+11072.
+[12] H. Wang, P. H. Li, D. Q. Yu, Y. Zhang, Z. Z. Wang, C. Q. Liu, H. Qiu,
+Z. Liu, J. S. Ren, X. G. Qu, Nano Lett. 2018, 18, 3344.
+[13] K. L. Fan, J. Q. Xi, L. Fan, P. X. Wang, C. H. Zhu, Y. Tang, X. D. Xu,
+M. M. Liang, B. Jiang, X. Y. Yan, L. Z. Gao, Nat. Commun. 2018, 9,
+1440.
+[14] P. J. Derry, L. G. Nilewski, W. K. A. Sikkema, K. Mendoza, A. Jalilov,
+V. Berka, E. A. McHugh, A.-L. Tsai, J. M. Tour, T. A. Kent, Nanoscale
+2019, 11, 10791.
+[15] H. Wang, J. Chen, Q. Dong, X. Sun, Q. Liu, D. Li, E. Wang, J. Wang,
+Nano Res. 2023, 16, 6615.
+[16] H. Song, C. Ma, L. Wang, Z. Zhu, Nanoscale 2020, 12, 19284.
+[17] X. Liu, J. Li, A. Zitolo, M. Gao, J. Jiang, X. Geng, Q. Xie, D. Wu, H.
+Zheng, X. Cai, J. Lu, F. Jaouen, R. Li, J. Am. Chem. Soc. 2023, 145,
+3108.
+[18] L. Huang, J. X. Chen, L. F. Gan, J. Wang, S. J. Dong, Sci. Adv. 2019, 5,
+eaav5490.
+[19] L. Huang, Q. Liu, W. W. Wu, G. Gao, X. L. Zheng, J. Wang, S. J. Dong,
+Nat. Commun. 2023, 14, 5594.
+[20] W. Cong, L. Meng, Y. Pan, H. Wang, J. Zhu, Y. Huang, Q. Huang, Nano
+Today 2023, 48, 101757.
+[21] Y. Cai, C. Liu, J. Wang, X. Liu, Y. Zhang, S. Yang, L. Niu, L. Zeng, A.
+Liu, Anal. Chim. Acta 2021, 1186, 339126.
+[22] S. Wang, R. Cazelles, W.-C. Liao, M. Vazquez-Gonzalez, A. Zoabi, R.
+Abu-Reziq, I. Willner, Nano Lett. 2017, 17, 2043.
+[23] W.-H. Chen, M. Vazquez-Gonzalez, A. Kozell, A. Cecconello, I.
+Willner, Small 2018, 14, 1703149.
+[24] Q. Peng, N. Jiang, L. Qian, W. Yue, 2D Mater. 2023, 10, 045013.
+[25] X. Li, Q. An, Z. Ma, Y. Zhang, X. Chen, Y. Chai, M. Fu, ACS Appl. Mater.
+Interfaces 2022, 14, 39285.
+[26] Y. Wang, H.-d. Shi, H.-L. Zhang, Y.-Y. Chen, B. Ren, Q. Tang, Q. Sun,
+Q.-L. Zhang, J.-G. Liu, Adv. Healthcare Mater. 2023, 12, 2300568.
+[27] W. M. Xuan, C. F. Zhu, Y. Liu, Y. Cui, Chem. Soc. Rev. 2012, 41, 1677.
+[28] H. Z. Wang, X. K. Pei, M. J. Kalmutzki, J. J. Yang, O. M. Yaghi, Acc.
+Chem. Res. 2022, 55, 707.
+[29] J. Chen, Q. Ma, M. Li, W. Wu, L. Huang, L. Liu, Y. Fang, S. Dong,
+Nanoscale 2020, 12, 23578.
+[30] Y. Wu, Y. Qin, M. Muppidathi, R. Carmieli, M. Fadeev, W. Lei, M. Xia,
+I. Willner, Adv. Funct. Mater. 2024, 34, 2306929.
+[31] Y. Zhang, Y. Cai, J. Wang, L. Niu, S. Yang, X. Liu, Z. Zheng, L. Zeng, A.
+Liu, Process Biochem 2021, 111, 178.
+[32] Y. Cai, L. Niu, X. Liu, Y. Zhang, Z. Zheng, L. Zeng, A. Liu, J. Hazard.
+Mater. 2022, 425, 128053.
+[33] H. Wang, J. Chen, Q. Dong, X. Jia, D. Li, J. Wang, E. Wang, Nano Res.
+2022, 15, 5256.
+[34] J. M. Munita, A. S. Bayer, C. A. Arias, Clin. Infect. Dis. 2015, 61, S48.
+[35] L. Li, B. Koirala, Y. Hernandez, L. W. MacIntyre, M. A. Ternei, R. Russo,
+S. F. Brady, Nat. Microbiol. 2022, 7, 120.
+[36] A. P. Magiorakos, A. Srinivasan, R. B. Carey, Y. Carmeli, M. E. Falagas,
+C. G. Giske, S. Harbarth, J. F. Hindler, G. Kahlmeter, B. Olsson-
+Liljequist, D. L. Paterson, L. B. Rice, J. Stelling, M. J. Struelens, A.
+Vatopoulos, J. T. Weber, D. L. Monnet, Clin. Microbiol. Infec. 2012, 18,
+268.
+[37] M. J. Liang, M. Y. Zhang, S. S. Yu, Q. Wu, K. Ma, Y. Y. Chen, X. Q. Liu,
+C. S. Li, F. Wang, Small 2020, 16, 1905938.
+[38] a) Z. Geng, Z. Cao, J. Liu, Exploration 2023, 3, 20210117; b) Z. X. Yu,
+J. X. Chen, D. Y. Chao, X. X. Sun, L. Liu, S. J. Dong, Appl. Catal. B
+Environ. 2023, 330, 122639; c) D. Chao, Q. Dong, J. Chen, Z. Yu, W.
+Wu, Y. Fang, L. Liu, S. Dong, Appl. Catal. B Environ. 2022, 304,121017;
+d) D. Chao, Q. Dong, Z. Yu, D. Qi, M. Li, L. Xu, L. Liu, Y. Fang, S. Dong,
+J. Am. Chem. Soc. 2022, 144, 23438.
+[39] a) M. N. Karim, M. Singh, P. Weerathung, P. Bian, R. Zheng,
+C. Dekiwadia, T. Ahmed, S. Walia, E. D Gaspera, S. Singh, R.
+Ramanathan, V. Bansal, ACS Appl. Nano Mater 2018, 1, 1694; b) Z.
+Y. Liao, W. W. Gao, N. N. Shao, J. M. Zuo, T. Wang, M. Z. Xu, F. X.
+Zhang, Y. M. Xia, ACS Appl. Mater. Interfaces 2022, 14, 18170.
+[40] a) L. Zhang, Y. N. Ma, X. C. Pan, S. Y. Chen, H. H. Zhuang, S. F. Wang,
+Carbohydr. Polym. 2018, 180, 168; b) D. Y. Chao, Q. Dong, Z. X. Yu,
+D. S. Qi, M. H. Li, L. L. Xu, L. Liu, Y. X. Fang, S. J. Dong, J. Am. Chem.
+Soc. 2022, 144, 23438.
+[41] J. O. Lundberg, E. Weitzberg, Cell 2022, 185, 2853.
+[42] S. Wild, G. Roglic, A. Green, R. Sicree, H. King, Diabetes Care 2004,
+27, 1047.
+[43] J. G. Jiang, X. Li, H. Li, X. Y. Lv, Y. Xu, Y. L. Hu, Y. N. Song, J. J. Shao,
+S. K. Li, D. L. Yang, J. Mater. Chem. B 2023, 11, 6746.
+[44] Z. Zhou, X. Mei, K. Hu, M. Ma, Y. Zhang, ACS Appl. Mater. Interfaces
+2023, 15, 17612.
+[45] Y. Gao, Y. T. Deng, W. Geng, S. T. Xiao, T. Wang, X. H. Xu, M. Adeli, L.
+Cheng, L. Qiu, C. Cheng, Adv. Mater. 2024, 2408787.
+[46] A. Vassallo, M. F. Silletti, I. Faraone, L. Milella, J. Nanomater. 2020,
+2020, 1.
+[47] N. Singh, S. K. NaveenKumar, M. Geethika, G. Mugesh, Angew.
+Chem., Int. Ed. 2021, 60, 3121.
+[48] K. L. Quick, S. S. Ali, R. Arch, C. Xiong, D. Wozniak, L. L. Dugan,
+Neurobiol. Aging 2008, 29, 117.
+[49] J. Yoshino, K. F. Mills, M. J. Yoon, S. I. Imai, Cell Metab. 2011, 14, 528.
+[50] X. Y. Liu, Z. Wan, K. Chen, Y. X. Yan, X. Y. Li, Y. L. Wang, M. Y. Wang,
+R. L. Zhao, J. H. Pei, L. J. Zhang, S. Sun, J. R. Li, X. Z. Chen, Q. Xin,
+S. F. Zhang, S. J. Liu, H. Wang, C. L. Liu, X. Y. Mu, X. D. Zhang, Nano
+Lett. 2024, 24, 4924.
+[51] N. Braidy, J. Berg, J. Clement, F. Khorshidi, A. Poljak, T. Jayasena, R.
+Grant, P. Sachdev, Antioxid. Redox Sign. 2019, 30, 251.
+[52] I. Lee, Cells 2021, 10, 1346.
+[53] E. Verdin, Science 2015, 350, 1208.
+[54] a) F. Melin, P. Hellwig, Chem. Rev. 2020, 120, 10244; b) J. Kim, J. H.
+Cheong, Cells 2020, 9, 1691.
+[55] J.-S. Lee, H. Lee, H. Jang, S. M. Woo, J. B. Park, S.-H. Lee, J. H. Kang,
+H. Y. Kim, J. Song, S.-Y. Kim, Cells 2020, 9, 2013.
+[56] Q. Fang, Q. Liu, Z. Song, X. Zhang, Y. Du, Nanoscale 2024, 16, 6585.
+[57] N. N. Pavlova, C. B. Thompson, Cell Metab. 2016, 23, 27.
+[58] R. A. Cairns, I. S. Harris, T. W. Mak, Nat. Rev. Cancer 2011, 11, 85.
+[59] a) Z. E. Stine, Z. T. Schug, J. M. Salvino, C. V. Dang, Nat. Rev. Drug
+Discovery 2022, 21, 141; b) X. Yang, Y. Cheng, J. Y. Zhou, L. P. Zhang,
+X. C. Li, Z. Q. Wang, S. Y. Yin, L. R. Zhai, T. Huang, X. T. Wu, B. Q.
+Shen, Y. Y. Dong, L. J. Zhao, Y. J. Chi, Y. Y. Jia, J. Q. Wang, Y. J. He, X.
+Y. Dong, H. H. Xiao, J. L. Wang, Adv. Sci. 2022, 9, 2104472.
+[60] J. Du, J. Liu, Z. Zhao, J. Dai, K. Li, Y. Lin, ACS Appl. Bio Mater. 2023,
+6, 267.
+[61] a) W. Fan, N. Lu, P. Huang, Y. Liu, Z. Yang, S. Wang, G. Yu, Y. Liu, J.
+Hu, Q. He, J. Qu, T. Wang, X. Chen, Angew. Chem., Int. Ed. 2017, 56,
+1229; b) W. Zhao, J. Hu, W. Gao, ACS Appl. Mater. Interfaces 2017, 9,
+23528; c) Y. Zhang, Y. Yang, S. Jiang, F. Li, J. Lin, T. Wang, P. Huang,
+Mater. Horiz. 2019, 6, 169; d) L. H. Fu, C. Qi, Y. R. Hu, J. Lin, P. Huang,
+Adv. Mater. 2019, 31, 1808325.
+[62] B. D. Manning, A. Toker, Cell 2017, 169, 381.
+Adv. Healthcare Mater. 2025, 14, 2402785
+© 2024 Wiley-VCH GmbH
+2402785 (23 of 24)
+ 21922659, 2025, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.202402785 by CochraneChina, Wiley Online Library on [24/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advhealthmat.de
+[63] C. Aumeier, L. Schaedel, J. Gaillard, K. John, L. Blanchoin, M. Théry,
+Nat. Cell Biol. 2016, 18, 1054.
+[64] I. Martínez-Reyes, N. S. Chandel, Nat. Rev. Cancer 2021, 21, 669.
+[65] K. Liang, F. Nan, J. Wang, Y. Zhang, J. Li, X. Xue, T. Chen, Y. Hao, P.
+Wang, J. Ge, Small 2024, 20, 2311027.
+[66] Q. Cui, J.-Q. Wang, Y. G. Assaraf, L. Ren, P. Gupta, L. Wei, C. R. Ashby,
+Jr., D.-H. Yang, Z.-S. Chen, Drug Resist. Update. 2018, 41, 1.
+[67] D. Trachootham, J. Alexandre, P. Huang, Nat. Rev. Drug Discovery
+2009, 8, 579.
+[68] B. Yu, W. Wang, W. B. Sun, C. H. Jiang, L. H. Lu, J. Am. Chem. Soc.
+2021, 143, 8855.
+[69] J. Liu, B. Yu, M. Rong, W. Sun, L. Lu, Nano Today 2024, 54, 102113.
+[70] J. Chen, X. Zheng, J. Zhang, Q. Ma, Z. Zhao, L. Huang, W. Wu, Y.
+Wang, J. Wang, S. Dong, Natl. Sci. Rev. 2022, 9, nwab186.
+[71] M. Mo, Y. Jiang, A. Kang, K. Song, H. Qi, J. Li, S. Guan, S. Zhou, ACS
+Appl. Mater. Interfaces 2024, 16, 16164.
+[72] X. Lyu, J. J. Yu, L. P. Zhang, Y. Zhao, Z. J. Qiu, Y. B. Chen, Z. Zhao, B.
+Z. Tang, J. Mater. Chem. B 2023, 11, 5953.
+[73] C. Peng, R. Pang, J. Li, E. Wang, Adv. Mater. 2024, 36, 2211724.
+[74] D. D. Wang, H. H. Wu, S. Z. F. Phua, G. B. Yang, W. Q. Lim, L. Gu,
+C. Qian, H. B. Wang, Z. Guo, H. Z. Chen, Y. L. Zhao, Nat. Commun.
+2020, 11, 357.
+[75] Y. Zhu, W. Wang, J. Cheng, Y. Qu, Y. Dai, M. Liu, J. Yu, C. Wang, H.
+Wang, S. Wang, C. Zhao, Y. Wu, Y. Liu, Angew. Chem., Int. Ed. 2021,
+60, 9480.
+[76] Y. Liu, B. Wang, J. Zhu, X. Xu, B. Zhou, Y. Yang, Adv. Mater. 2023, 35,
+2208512.
+[77] Q. X. Sun, M. Barz, B. G. De Geest, M. Diken, W. E. Hennink, F.
+Kiessling, T. Lammers, Y. Shi, Chem. Soc. Rev. 2019, 48, 351.
+[78] W. C. Wu, Y. Y. Pu, B. G. Zhou, Y. C. Shen, S. Gao, M. Zhou, J. L. Shi,
+J. Am. Chem. Soc. 2022, 144, 19038.
+[79] J. Y. Su, W. H. Li, Y. M. Li, Chem. Soc. Rev. 2022, 51, 7944.
+[80] R. Niu, Y. Liu, B. Xu, R. Deng, S. Zhou, Y. Cao, W. Li, H. Zhang, H.
+Zheng, S. Song, Y. Wang, H. Zhang, Adv. Mater. 2024, 36, 2312124.
+[81] M. G. V. Heiden, L. C. Cantley, C. B. Thompson, Science 2009, 324,
+1029.
+DanLiiscurrentlyanAssociateProfessorattheChangchunInstituteofAppliedChemistry,Chinese
+AcademyofSciences(CAS).SheearnedherPh.D.fromJilinUniversity,China,in2015.In2017,she
+spentayearasavisitingresearcheratMacquarieUniversity,Australia.Herprimaryresearchfocuses
+onthedesignofnovelnanomaterialsfordiseasediagnosisandtreatments.
+JinWangreceivedhisPhDfromtheUniversityofIllinoisin1991.Followingthis,heundertookpost-
+doctoralresearchandservedasavisitingresearcherinchemistryandbiophysicsatboththeUniver-
+sityofIllinoisandtheNationalInstitutesofHealth(NIH).HeisaprofessorofChemistry,Physics,
+andAstronomyattheStateUniversityofNew YorkatStonyBrook.Hisresearchinterestsincludebio-
+physics,statisticalphysics,analyticalchemistry,andmaterialscience.
+Adv. Healthcare Mater. 2025, 14, 2402785
+© 2024 Wiley-VCH GmbH
+2402785 (24 of 24)
+ 21922659, 2025, 8, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adhm.202402785 by CochraneChina, Wiley Online Library on [24/08/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

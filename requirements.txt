@@ -1,49 +1,63 @@
 # ═══════════════════════════════════════════════════════════════
-# ECOMATS - Water Treatment Material Design Multi-Agent System
-# Requirements File - Updated 2025-12-22
-# Python 3.11 / 3.12 | CrewAI 1.7.0 with Async Support
+# Nano-Bio Evaluator — Selective Antibacterial Nanomaterial Screening
+# Requirements File - Updated 2026-07-01
+# Python 3.11 / 3.12 | CrewAI 1.7.0 + LLaVA-1.6-13B + vLLM
 # ═══════════════════════════════════════════════════════════════
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 # CrewAI Framework (Async Support)
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-crewai==1.7.0
-crewai-tools==1.7.0
+crewai>=1.7.0
+crewai-tools>=1.7.0
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# LLM API Clients
+# LLM Serving (Local LLaVA-1.6-13B via vLLM)
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-openai>=1.83.0          # OpenAI SDK (CrewAI dependency)
-dashscope>=1.25.0       # Alibaba Cloud Qwen API
-
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# Vector Database & Memory
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-chromadb>=1.1.0         # Vector database for memory system
-numpy>=2.0.0            # Numerical computing (for embeddings)
-pydantic>=2.0.0         # Data validation
+vllm>=0.6.0
+autoawq>=0.2.0
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# Async HTTP Client (for async tools)
+# LLM API Clients (DashScope for embeddings / fallback)
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-httpx>=0.27.0           # Async HTTP client for async tools
+openai>=1.83.0
+dashscope>=1.25.0
+litellm>=1.40.0
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# Scientific Database APIs
+# Database Drivers
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+neo4j>=5.20.0           # Neo4j graph database driver
+psycopg2-binary>=2.9.9  # PostgreSQL driver
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# Fine-tuning (LLaMA-Factory)
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+llamafactory>=0.9.0
+peft>=0.11.0
+bitsandbytes>=0.43.0
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# Scientific & Chemical APIs
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 mp-api>=0.45.0          # Materials Project API client
-requests>=2.32.0        # HTTP library for sync tools
+pubchempy>=1.0.4        # PubChem Python client
+rdkit>=2024.03.0        # Cheminformatics toolkit
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# Environment & Configuration
+# Async HTTP & Data Processing
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-python-dotenv>=1.0.0    # Environment variable management
+httpx>=0.27.0
+requests>=2.32.0
+pandas>=2.2.0
+numpy>=1.26.0
+pydantic>=2.0.0
 
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# Optional: Database Tools (install if needed)
+# Visualization & Utilities
 # ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# psycopg2-binary>=2.9.9  # PostgreSQL driver (for pg_vector_tool)
-# gremlinpython>=3.7.0    # Gremlin driver (for gdb_tool)
+matplotlib>=3.8.0
+python-dotenv>=1.0.0
+PyYAML>=6.0
 
 # ═══════════════════════════════════════════════════════════════
 # Notes:

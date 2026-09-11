@@ -1,0 +1,841 @@
+Advanced Materials
+www.advmat.de
+RESEARCH ARTICLE
+Solution-Processed Flexible Glass-Like Antibacterial
+Nanocomposite Coatings
+Bo Bi1,3
+Kaixuan Li2
+Pengfei Li1
+Caihong Xu1,3
+Zongbo Zhang1
+1Key Laboratory of Science and Technology on High-tech Polymer Materials, Institute of Chemistry, Chinese Academy of Sciences, Beijing, P. R. China
+2Key
+Laboratory of Green Printing, Institute of Chemistry, Chinese Academy of Sciences, Beijing, P. R. China
+3University of Chinese Academy of Sciences, Beijing,
+P. R. China
+Correspondence: Pengfei Li (lpf2017@iccas.ac.cn)
+Zongbo Zhang (zongbo@iccas.ac.cn)
+Received: 27 September 2025
+Revised: 7 January 2026
+Accepted: 19 January 2026
+Keywords: antibacterial coatings | flexible electronics | nanocomposites | perhydropolysilazane | silver nanoparticles
+ABSTRACT
+High-touch electronic displays represent a significant source of pathogenic contamination, creating an urgent need for protective
+coatings that combine antibacterial efficacy and mechanical robustness. However, developing protective coatings for emerging
+flexible displays faces a formidable challenge, as they must simultaneously satisfy a series of often-conflicting property
+requirements: potent antibacterial activity, high biocompatibility, excellent transparency, robust mechanical durability, as well
+as intrinsic flexibility. Developing a single coating that integrates all the required functionalities therefore remains a highly
+anticipated goal. Herein, we resolve this challenge through an “all-in-one” precursor strategy involving the incorporation of the
+bifunctional coupling agent, 3-mercaptopropyltrimethoxysilane, into a perhydropolysilazane-Ag+ system. This multicomponent
+design enables a synergistic chemical cascade that controls the in situ formation, stabilization, and subsequent covalent
+anchoring of silver nanoparticles within a dense SiOx matrix during a mild curing process. The resulting coating demonstrates
+a seamless integration of multiple high-performance properties: potent and durable antibacterial activity (>99.99%), excellent
+biocompatibility, polymer-like flexibility, glass-like damage tolerance, and high transparency. This work provides a reliable and
+scalable approach for fabricating robust, multifunctional protective surfaces, making it highly promising for next-generation
+flexible electronics where both durability and hygiene are paramount.
+1
+Introduction
+Touchscreen displays, ubiquitous in personal devices ranging
+from smartphones to public kiosks and central to the rise of flex-
+ible electronics, have become integral to modern life. However,
+their high-frequency touch nature also renders these surfaces
+potent vectors for pathogenic contamination [1, 2]. Studies have
+shown that harmful bacteria can persist on such inanimate
+surfaces for days or even weeks, forming resilient biofilms that are
+notoriously difficult to eradicate and can facilitate rapid disease
+transmission [3–5]. To mitigate these public health risks, the
+development of advanced protective coatings that provide intrin-
+sically antibacterial surfaces with durable efficacy has emerged as
+an essential requirement in the evolution of modern electronics.
+Nevertheless, engineering such coatings remains a formidable
+challenge, as they must simultaneously satisfy a series of often-
+conflicting property requirements: excellent optical transparency,
+potent antibacterial activity, high biocompatibility for user safety,
+robust mechanical durability against scratches and abrasion, as
+well as intrinsic flexibility to meet the needs of foldable devices
+[6, 7].
+To achieve a surface that possesses all the required functions for
+display coatings, one primary obstacle is to integrate antibacterial
+© 2026 Wiley-VCH GmbH
+Advanced Materials, 2026; 0:e19048
+https://doi.org/10.1002/adma.202519048
+1 of 12
+
+functionality without compromising its optical properties. While
+additives like metals (Ag, Cu, Zn), metal oxides (ZnO, Ag2O,
+TiO2), and carbon-based materials are effective antibacterial
+agents [8], increasing the filler loading to maximize antibacterial
+efficacy often comes at the cost of optical clarity, as higher con-
+centrations tend to promote particle aggregation and refractive
+index mismatch. New emerging strategies, such as engineering
+ultra-thin homogeneous films through advanced deposition or
+sparse network structures [9, 10], can address these optical
+losses, but creating a mechanically robust yet flexible physical
+platform remains a challenge as the properties of hardness and
+resilience are typically mutually exclusive. For instance, the
+silver nanowire/chitosan films with optical transparency over
+90% achieve remarkable stretchability, rendering them highly
+suitable for skin-attachable electronics [11]. However, the sur-
+faces of such materials are inherently vulnerable to mechanical
+abrasion, a major drawback for high-touch display applications
+that demand high durability. Consequently, many studies have
+turned to inorganic components to improve mechanical stability.
+Investigated materials range from relatively simple Zn-doped
+silica films [12] and multi-component oxides such as SiO2/ZnO
+[13] to highly-engineered superlattice nanofilms that exhibit
+high transparency, exceptional hardness, good biocompatibility,
+and photocatalytic antibacterial effects [14]. Unfortunately, these
+approaches sacrifice flexibility for stiffness, resulting in inherent
+brittleness and susceptibility to cracking under bending stress,
+thereby limiting their use in flexible devices. An advanced
+ZnO─PTFE composite system with alternating “soft” polymer
+and “hard” inorganic oxide layers was designed to bridge this
+gap, affording excellent mechanical robustness. However, the
+flexibility of this composite coating (R = 5 mm) lags behind
+the requirements for gapless foldable devices (typically ≤2 mm)
+[15, 16], and its limited optical transparency (<90%) restricts
+its utility in advanced display applications [17]. Furthermore,
+the reported antibacterial surfaces with mechanically robust
+inorganic oxide thin films as core components rely on high-
+vacuum deposition techniques, such as atomic layer deposition
+and sputtering, which impedes their widespread application in
+touchscreen manufacturing, where cost-effectiveness and scala-
+bility are critical considerations. Therefore, with the widespread
+application of touchscreen displays, the simultaneous attainment
+of all the merits mentioned above for an antibacterial coating with
+a versatile and scalable method is still critically demanded.
+Recently, perhydropolysilazane (PHPS), an inorganic polymer
+consisting of a Si─N backbone and free of organic groups, has
+demonstrated its superiority as a precursor for constructing
+robust functional coatings via a convenient solution process.
+Notably, by controlling the conversion process from PHPS to
+inorganic silica, the mechanical properties of the resulting
+coating can be well tuned, implying the potential for meeting
+flexibility requirements [18, 19]. Moreover, the highly reactive
+Si─H groups in PHPS provide a built-in chemical tool for the
+in situ generation of metal nanoparticles [20]. It is therefore
+highly attractive to exploit both the transformative characteristics
+and the inherent reducing activity of PHPS to chemically anchor
+antibacterial components within the coating matrix, thereby
+enabling the construction of a robust antibacterial coating with
+durable mechanical and optical properties. To accomplish this
+design, a stable PHPS solution incorporating such antibacte-
+rial metal nanoparticles is a prerequisite. However, due to the
+inherent tendency of nanoparticles to aggregate in the liquid
+phase, achieving high transparency in films deposited via a PHPS
+solution remains a significant challenge [21].
+In this work, by introducing the bifunctional coupling agent
+3-mercaptopropyltrimethoxysilane (KH-590) into the mixture
+of PHPS and AgNO3, we developed a stable and processable
+precursor solution incorporated with highly dispersed silver
+nanoparticles (AgNPs) for a robust, transparent, antibacterial
+nanocomposite coating. In this synergistic system, the thiol group
+of KH-590 ensures the formation of a stable and processable
+liquid precursor by effectively stabilizing the nascent AgNPs.
+Simultaneously, the silane moiety of KH-590 serves as both a
+covalent “bridge” to the matrix and an internal catalyst for
+the network transformation. This stable liquid precursor can be
+converted into macroscopic thin films via a simple spray-coating
+technique, followed by a low-temperature, moisture-induced
+transformation (Figure 1a), ultimately yielding a covalently
+anchored nanocomposite structure, in which AgNPs are homo-
+geneously dispersed and firmly locked within a transparent
+glass-like matrix (Figure 1b). This approach allows us to achieve
+what we term the KPA coating (an acronym derived from its
+key components: KH-590, PHPS, and AgNO3). Macroscopically,
+the KPA coating is highly transparent and mechanically robust,
+sustaining significant bending deformation without fracturing
+(Figure 1c), as well as exhibiting potent antibacterial activity
+(>99.99% efficacy against E. coli and >99.92% against S. aureus,
+Figure 1d). A comparative radar chart highlights the superior
+performance profile of the KPA coating in terms of mechani-
+cal durability, flexibility, high transparency, ease of fabrication,
+antibacterial functionality, and biocompatibility, demonstrating
+seamless integration of these properties within a single system
+(Figure 1e).
+1.1
+Preparation and Optimization of the KPA
+Precursor Solution
+The preparation of a stable, high-quality liquid precursor is
+crucial for fabricating nanocomposite coatings. In our designed
+precursor system, AgNO3 provides a source of antibacterial
+AgNPs, while PHPS serves a dual role: as a precursor for the
+coating matrix and as an endogenous reducing agent for silver
+ions, owing to its Si─H groups. The KH-590 coupling agent
+functions by stabilizing silver ions via thiol coordination, while
+its alkoxy groups act as covalent “bridges” to the PHPS matrix. As
+illustrated in Figure 2a, a critical kinetic balance exists within this
+system: the thiol groups coordinate with Ag+ to form Ag-thiolate
+complexes, which tempers the reduction potential. Concurrently,
+Si─H groups mediate the reduction of these complexes to
+form metallic Ag0 nanoparticles via a hydride-transfer pathway
+accompanied by hydrogen gas (H2) evolution [23, 24]. Precise
+stoichiometric control of these competing reactions is therefore
+essential to achieve controlled nucleation and growth, prevent
+undesired aggregation, and ensure the formation of a stable
+precursor solution.
+We systematically optimized the precursor formulation, using
+ultraviolet-visible (UV-Vis) spectroscopy to monitor the quality
+of the resulting AgNPs dispersion via its characteristic Surface
+Plasmon Resonance (SPR) peak. First, while maintaining a
+2 of 12
+Advanced Materials, 2026
+ 15214095, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202519048 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 1
+Design, fabrication, and multifunctional performance of the integrated KPA coating. (a) Schematic of the fabrication process, starting
+from a molecularly designed precursor solution, followed by spray-coating and a low-temperature, moisture-induced conversion to form the final
+nanocomposite coating. (b) Schematic of the covalently anchored nanocomposite architecture, illustrating the dispersion of AgNPs within the dense
+SiOx matrix. (c) Photograph of a freestanding KPA-coated PET film. (d) Antibacterial efficacy of the KPA coating against E. coli and S. aureus after 24 h
+of incubation. Inset: corresponding photographs of agar plates showing the inhibition of bacterial colonies compared to the control. (e) Benchmarking
+of the comprehensive performance of the KPA coating against other representative antibacterial coatings reported in the literature [11, 14, 17, 22]. (See
+Table S2 for the detailed scoring metrics).
+constant PHPS:AgNO3 molar ratio of 80:1, we investigated
+the effect of the molar ratio of the KH-590 to AgNO3. As
+shown in Figure 2b, samples with KH-590:AgNO3 ratios of 2:1
+and 5:1 exhibited broad and red-shifted SPR peaks, indicating
+nanoparticle aggregation and suggesting that an excess of KH-
+590 is detrimental for the formation of uniform AgNPs. The
+aggregation was directly confirmed by the transmission electron
+microscope (TEM) image of the K-2.0 sample (Figure S1a). This
+phenomenon is attributed to the formation of overly stable
+Ag─thiolate complexes, which kinetically hinder the reduction
+process [25]. Conversely, samples with KH-590:AgNO3 ratios
+of 1:1 (K-1.0) and 0.5:1 (K-0.5) both showed well-defined SPR
+peaks. TEM images revealed that the K-1.0 formulation yielded
+highly uniform AgNPs (2.43 ± 0.63 nm), superior to the broader
+size distribution of the K-0.5 sample (Figure 2c,d; Figure S1b).
+Thus, a AgNO3:KH-590 ratio of 1:1 was selected. Subsequently,
+with the AgNO3:KH-590 ratio fixed at 1:1, we adjusted the
+PHPS:AgNO3 ratio to determine its optimal value. The sample
+with a PHPS:AgNO3 ratio of 40:1 (P-40) exhibited a broad
+absorption band similar to those of the aggregated samples
+(Figure 2b). In contrast, when the ratio was increased to 80:1
+(P-80), a well-defined SPR peak emerged at ∼420 nm. This
+high-quality spectral feature remained unchanged as the ratio
+was further increased to 120:1 and 160:1, establishing that a
+PHPS:AgNO3 ratio of ≥80:1 is essential to provide a sufficient
+reducing environment for a controlled reaction. 1H Nuclear Mag-
+netic Resonance (NMR) spectroscopy clearly confirmed the role
+of PHPS as a reducing agent: as the amount of AgNO3 increased,
+the Si─H signal (∼4.3, ∼4.8 ppm) proportionally decreased
+(Figure 2e).
+Advanced Materials, 2026
+3 of 12
+ 15214095, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202519048 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 2
+Preparation and optimization of the KPA precursor solution. (a) Schematic illustration of the synergistic chemical mechanism for the
+in situ formation of AgNPs. (b) UV–Vis absorption spectra of precursor solutions. The molar ratios (PHPS:AgNO3:KH-590) are defined as: K-series
+(80:1:x), P-series (y:1:1), and A-series (80:z:z), where the variables (x, y, z) correspond to the respective sample suffixes. (c) Representative TEM image
+of the AgNPs formed in the precursor solution with the molar ratio of PHPS:AgNO3: KH-590 = 80:1:1. Scale bar: 20 nm. (d) Corresponding particle size
+distribution histogram for the AgNPs shown in (c), with an average diameter of 2.43 ± 0.63 nm. (e) 1H NMR spectra of precursor solutions with varying
+concentrations of AgNO3, showing the consumption of Si-H bonds. (f) UV–Vis absorption spectra of the A-1.0 precursor solution over a 7-day storage
+period. Inset: Photographs of the A-1.0 precursor solution after storage for 7 days.
+Next, we investigated the effect of Ag loading. A series of precur-
+sors were formulated with varying amounts of AgNO3 (and thus
+Ag+ contents), while maintaining the optimal AgNO3:KH-590
+ratio of 1:1. Two distinct regimes were observed (Figure 2b). At low
+to moderate Ag loadings (A-0.1 to A-1.0), all precursors exhibited
+well-defined SPR peaks, signifying the successful formation of
+stable and well-dispersed nanoparticles. Within this regime, the
+SPR peak exhibited a progressive blue shift from ∼436 nm (A-
+0.1) to ∼420 nm (A-1.0). This shift indicates that increasing the
+reactant concentration within this range leads to the formation
+of progressively smaller nanoparticles. However, at higher Ag
+loadings (A-2.0 and A-5.0), the SPR peaks exhibited broadening
+and a red shift, characteristic of nanoparticle aggregation.
+Based on the initial spectral analysis, we investigated the long-
+term colloidal stability of the promising precursor formulations
+(samples A-0.1 to A-1.0) by monitoring them over a 7-day
+period. This stability was confirmed quantitatively by UV-Vis
+spectroscopy. As shown in Figure 2f, the absorption spectra
+of the A-1.0 sample exhibited virtually unchanged features
+over the 7-day period, with no significant shifts in the SPR
+peak position or changes in bandwidth. Corresponding spec-
+tral data for the other stable precursors (A-0.1, A-0.2, and
+A-0.5), presented in Figure S2, display similar long-term stabil-
+ity. Furthermore, as shown in the inset photographs in both
+Figure 2f and Figure S2, all these precursor solutions remained
+homogeneous and visibly transparent after 7 days of storage,
+showing no sign of precipitation, in contrast to the A-5.0
+sample (Figure S3). These results confirm that our strategy
+can produce a series of colloidally robust precursor solutions
+with tunable AgNP content, suitable for subsequent coating
+applications.
+4 of 12
+Advanced Materials, 2026
+ 15214095, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202519048 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 3
+Structural characterization and properties of the KPA coating. (a) Schematic illustration of the moisture-induced curing mechanism.
+(b) FTIR spectra monitoring the chemical transformation during the conversion process. (c) STEM image of the KPA coating and the corresponding
+EDS elemental maps for Si, O, Ag, and S. Scale bar: 50 nm. (d) High-resolution XPS spectra of the KPA coating surface for Si 2p, O 1s, Ag 3d, and S 2p
+regions. (e) UV–Vis transmission spectra of the bare PET substrate and PET films coated with KPA nanocomposites prepared with different spray cycles
+(1, 3, 6, and 9 cycles). Inset: variation of coating thickness and surface roughness as a function of spray cycles. Data are presented as mean ± SD (n = 3),
+with error bars smaller than the symbols for some data points. (f) Hardness (H) and elastic modulus (E) of the KPA coating cured at 80◦C, 150◦C, 200◦C,
+and 250◦C. Data are presented as mean ± SD (n = 3), with error bars smaller than the symbols for some data points. (g) Ashby-style map illustrating
+the relationship between the ratio of hardness to effective elastic modulus (H/E*) and elastic recovery (We) for the KPA coating cured at 80◦C, 150◦C,
+200◦C, and 250◦C. The dashed line marks the threshold for the target “hard-and-tough” regime (H/E* > 0.1 and We > 60%), where E* = E/(1-ν2), ν is
+Poisson’s ratio.
+1.2
+Structural Characterization and Properties of
+the KPA Coating
+A solution with molar ratio of PHPS:AgNO3:KH-590 = 80:1:1
+(A-1.0) was initially selected for coating fabrication. The forma-
+tion of KPA coating proceeds via a moisture-induced pathway
+(Figure 3a), wherein both the PHPS backbone and the silane
+head group of the KH-590 coupling agent undergo hydrolysis to
+form reactive silanol (Si─OH) intermediates. Co-condensation of
+these silanols forms the Si─O─Si network while simultaneously
+grafting the KH-590-stabilized AgNPs into the matrix via Ag─S
+covalent bonds. Fourier transform infrared (FTIR) spectroscopy
+(Figure 3b) was used to monitor the reaction progress. The spectra
+confirm the conversion through the disappearance of the Si─H
+(∼2167 cm−1) and Si─N (∼830 cm−1) peaks and the concurrent
+growth of the Si─O─Si network peak (∼1065 cm−1). Notably,
+Advanced Materials, 2026
+5 of 12
+ 15214095, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202519048 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+this conversion is self-accelerating: the characteristic precursor
+peaks vanished entirely within 120 min, representing a more than
+twofold acceleration compared to a pure PHPS control, in which
+the correponding peaks remained even after 300 min (Figure S4).
+This rapid solidification is necessary as it preserves the initial
+high dispersion of the AgNPs during immobilization, locking
+them into a functionally effective state. The absence of carbonyl
+absorption bands in the FTIR spectrum (1600–1800 cm−1, Figure
+S5) and the lack of solvent signals in the 1H NMR spectrum of
+the coating extract (Figure S6) confirm the complete removal
+of residual organic solvents. The nanoscale structure of KPA
+was elucidated by scanning transmission electron microscopy
+with energy-dispersive X-ray spectroscopy (STEM-EDS) mapping
+(Figure 3c). The elemental map reveals a continuous Si─O
+matrix hosting discrete, well-dispersed nanodomains. The perfect
+overlay of the Ag and S signals within these domains provides
+direct visual evidence that the KH-590 remains bound to the
+AgNPs. The chemical nature of this anchoring was confirmed
+by X -ray photoelectron spectroscopy (XPS) (Figure 3d). The Si
+2p and O 1s spectra, with primary peaks at 103.5 and 533.0 eV
+respectively, confirm the formation of the SiOx matrix. The Ag 3d
+spectrum shows the characteristic doublet for Ag0, while the S 2p
+spectrum reveals a primary peak at ∼162.5 eV, the signature of an
+Ag─S thiolate bond. These results confirm the covalent anchoring
+of the AgNPs within the SiOx matrix.
+The thickness of the coating was tunable via the number of spray
+cycles, increasing linearly from ∼23 nm (1 cycle) to ∼185 nm
+(9 cycles) (Figure 3e, inset). As indicated by the transmission
+spectra, samples prepared with 1 to 6 cycles exhibit negligible
+optical deviation from the bare PET substrate, where the 6-cycle
+coating (∼122 nm) incurs a marginal transmittance loss of 1.3%
+at 550 nm (Table S1). In contrast, extending the deposition to 9
+cycles results in distinct spectral attenuation (3.8% loss), which
+is attributed to light scattering arising from increased surface
+roughness (Ra ≈16.8 nm; Table S1, Figure S7). Although this
+thicker coating yields a superior water contact angle (81.2◦), the
+loss in transparency renders it suboptimal. Consequently, the 6-
+cycle coating was selected as the optimal candidate, striking a
+balance between maximizing the material reservoir for durability
+and preserving intrinsic optical transparency.
+We further investigated the mechanical performance of the
+coating cured at different temperatures (80◦C–250◦C). As shown
+in Figure 3f, both hardness (H) and elastic modulus (E) increase
+monotonically with temperature, which is attributed to the
+densification of the inorganic network, as evidenced by solid-
+state
+29Si MAS NMR (Figure S8). The Q4 peak shifts from
+-107 ppm (80◦C) to -110 ppm (150◦C), reflecting an increase in
+average Si─O─Si bond angles [26], which is followed by peak
+enhancement at higher temperatures, confirming the progressive
+condensation of the siloxane network. Regarding the trade-off
+between hardness and flexibility, the Ashby-style map (Figure 3g)
+confirms that the coating processed at 80◦C already falls within
+the high-performance benchmarks (H/E* >0.1, We >60%) [27],
+balancing mechanical properties with the thermal stability limits
+of standard flexible substrates (e.g., PET). The resulting coating
+exhibits a hardness of 1.58 GPa—approximately sevenfold higher
+than that of common polymers—while retaining a moderate
+modulus of 12.7 GPa, which is an order of magnitude lower than
+that of typical metals [28–30]. This combination yields a high
+H/E* ratio of ∼0.12 and an excellent elastic recovery (We) of 72%,
+which is attributed to the energy-dissipating cage-like structures
+(Figure S9, 1130 cm−1) [31], embedded alkyl chains, and dynamic
+hydrogen-bonding networks that facilitate localized molecular
+motion [32, 33].
+1.3
+Antibacterial Efficacy and Biocompatibility
+of the KPA Coating
+The antibacterial activity was first visually assessed against both
+E. coli and S. aureus using live/dead fluorescence microscopy
+(Figure 4a). After 24 h of incubation, the surface of the KPA coat-
+ing was dominated by red fluorescence, indicating widespread
+bacterial mortality due to compromised membrane integrity. In
+contrast, the control substrate fostered the growth of a dense
+and viable biofilm, characterized by uniform green fluores-
+cence. These results provide direct visual evidence of the potent
+antibacterial nature of the KPA coating. To quantitatively analyze
+the relationship between Ag loading and antibacterial efficacy,
+coatings with varying silver contents were evaluated against E.
+coli. As shown in Figure 4b, the silver-free sample exhibited an
+antibacterial rate of 14.04% compared to bare PET. This result is
+attributed to the higher water contact angle of the KPA coating
+(∼78.7◦) relative to the bare PET substrate (∼69.6◦), as listed in
+Table S1, which induces a slight physical anti-adhesion effect
+rather than antibacterial capability. With the incorporation of Ag,
+a dramatic improvement in antibacterial efficacy was observed.
+The A-0.1 coating, with the lowest silver content, showed a
+moderate efficiency of 82.73%. However, upon increasing the
+Ag content to the A-0.2 level, the efficiency sharply rose to
+over 99.99%. This high level of antibacterial performance was
+maintained at all higher Ag loadings, establishing an “efficacy
+plateau” for the A-0.2 to A-1.0 formulations. Corresponding
+agar plate images, provided in Figure S10, visually confirm this
+trend.
+A critical aspect of the coating design is to achieve this
+potent efficacy without inducing cytotoxicity. To assess the
+biocompatibility under the most stringent conditions, the A-
+1.0 formulation, which has the highest Ag loading within
+this high-performance window, was selected for cytotoxicity
+evaluation. The cytotoxicity of the KPA coating was assessed
+using a 3-(4,5-dimethylthiazol-2-yl)-2,5-diphenyltetrazolium bro-
+mide (MTT) assay with L929 fibroblasts (Figure 4d). Cells were
+cultured for 24 h with coating extracts at various concentrations.
+Remarkably, even under the most stringent condition—exposure
+to a 100% extract—cell viability remained exceptionally high at
+104.5%, similar to the negative control. This demonstrates that
+the KPA coating exhibited no cytotoxicity toward the fibroblasts.
+Complementing these quantitative results, the corresponding
+optical micrographs in Figure 4c showed that the fibroblasts
+exhibited a healthy, spindle-like morphology indistinguishable
+from the negative control. Fluorescence imaging further con-
+firmed their high viability, revealing that the vast majority of
+these cells exhibited uniform bright green fluorescence (live
+cells). In contrast, the positive control (10% DMSO) induced
+significant cell rounding and death, as evidenced by both the
+optical cell image and the widespread red fluorescence in
+Figure S11.
+6 of 12
+Advanced Materials, 2026
+ 15214095, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202519048 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 4
+Antibacterial performance, formulation optimization, and biocompatibility of the KPA coating. (a) Representative live/dead
+fluorescence microscopy images of E. coli and S. aureus on the KPA coating and the control PET substrate after 24 h of incubation. Live bacteria are
+stained green (SYTO 9), while dead bacteria are stained red (PI). Scale bars: 20 µm for E. coli images, 40 µm for S. aureus images. (b) Antibacterial rates
+of the KPA coatings prepared with varying silver contents (No Ag, A-0.1, A-0.2, A-0.5, and A-1.0) against E. coli. Data are presented as mean ± SD (n = 3),
+with error bars smaller than the symbols for some data points. (c) Representative live/dead fluorescence microscopy images of L929 fibroblasts after 24 h
+of incubation with the 100% KPA coating extract. Live cells are stained green (Calcein-AM), and dead cells are stained red (PI). Bright-field images are
+also shown. See Figure S11 for images of the positive control. Scale bars: 100 µm. (d) In vitro cytotoxicity of the KPA coating evaluated by an MTT assay.
+L929 fibroblasts were incubated for 24 h with extracts of varying concentrations from the KPA coating. Polyethylene (PE) and 10% DMSO served as the
+negative and positive controls, respectively. Data are presented as mean ± SD (n = 6), with error bars smaller than the symbols for some data points. (e)
+Comparison of released Ag+ concentrations with literature thresholds. Comparison of measured Ag+ levels (24 h, 37◦C) in bacterial broth (LB) and cell
+culture medium (DMEM containing 10% FBS + 1% P/S) with the reported MIC50 for E. coli and IC50 for fibroblasts [34, 35]. Note: LB broth was used to
+represent a more rigorous release environment compared to the dilute 1/500 NB used in antibacterial tests.
+To investigate the biological safety and bactericidal mechanism,
+silver release was quantified in the respective culture media
+at 37◦C (Figure 4e). The concentration of Ag+ released into
+the cell culture medium was determined to be 188 ppb after
+24 h, a value over an order of magnitude below the reported
+half-maximal inhibitory concentration (IC50 ≈3500 ppb) for
+fibroblasts [34]. This low concentration aligns with the sustained
+cell viability (>100%) observed even after 72 h of exposure (Figure
+S12). Meanwhile, the cumulative Ag+ release over 24 h in the
+bacterial medium (259 ppb) fell significantly short of the typical
+50% minimum inhibitory concentration (MIC50 ≈4000 ppb)
+required for free silver ions to eradicate E. coli [35]. This stark
+contrast between the potent efficacy (>99.99%) and the low ionic
+release confirms that the antibacterial activity is governed by
+Advanced Materials, 2026
+7 of 12
+ 15214095, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202519048 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+direct contact with surface-anchored AgNPs, consistent with the
+mechanism described for immobilized systems [36].
+1.4
+Silver Release Kinetics and Service Life
+Prediction
+The time-dependent silver release profiles under physiologi-
+cal conditions are shown in Figure 5a. In neutral water, the
+cumulative release remains minimal, confirming the stability
+of the SiOx matrix. In contrast, acidic sweat (pH 4.7) triggers
+proton-promoted oxidative dissolution (Ag →Ag+), resulting
+in a continuous upward trend over 72 h. This indicates that
+dissolution is not merely confined to the surface but involves the
+diffusion of solvated silver ions from the bulk reservoir through
+the amorphous SiOx matrix to replenish the active interface.
+Alkaline sweat (pH 8.0) is characterized by a sharp initial surge
+during the first hour, followed by a markedly attenuated release
+rate. This behavior is attributed to the initial etching of the SiOx
+matrix by hydroxide ions (OH−), which is subsequently impeded
+by the rapid formation of a Ag2O passivation layer, as illustrated
+in the mechanistic schematic (Figure 5c). To investigate the
+silver release behavior under rigorous daily usage, the coating
+was subjected to accelerated cycling tests (8 h acidic immersion
+followed by 1 h water rinse per cycle). The release profile reveals
+an initial burst during the first few cycles, and then transitions
+to a consistent, stable output (Figure 5b). This stabilization of the
+depletion rate provides a basis for predicting the long-term service
+life.
+Based on the total silver reservoir (Mtotal ≈0.998 µg/cm2)
+calculated in Note S1 (using Figure S13) and the established
+kinetics, two predictive models were developed (Figure 5d). The
+accelerated laboratory model simulates a worst-case scenario by
+subjecting the coating to bulk immersion (10 mL) in acidic sweat,
+representing a massive volumetric excess compared to realistic
+thin-film exposure, followed by rigorous cleaning. Under these
+extreme conditions, reservoir depletion is predicted within ∼10
+cycles (days) (inset of Figure 5d; Note S1). In comparison, the
+realistic saturated sweat film model is predicated on the physical
+reality that sweat reaches a dynamic equilibrium between secre-
+tion and evaporation, maintaining a constant, finite thin film
+volume rather than accumulating indefinitely [37, 38]. Crucially,
+the maximum cumulative silver depletion is determined by
+the number of times this saturated film is physically removed.
+Accordingly, this model projects the functional lifespan based
+on the frequency of saturated sweat film removal. For heavy use
+(100 wipes/day, e.g., public touch screens), the coating remains
+effective for ∼2.6 months. Under typical use (40 wipes/day,
+e.g., personal electronics), the lifespan extends to ∼6.5 months.
+Finally, for light use (10 wipes/day, e.g., home furniture), the
+service life exceeds 2 years, confirming the suitability of the KPA
+coating for diverse long-term applications.
+1.5
+Performance of the KPA Coating in
+Simulated Application Environments
+To assess practical applicability in touch-based flexible elec-
+tronics, we systematically evaluated the KPA coating under
+rigorous mechanical, biological, and environmental stressors.
+First, the mechanical robustness was evaluated. The flexibility
+of the KPA-coated PET films was tested using a custom-built
+bending apparatus (Figure 6a). In this setup, two glass slides
+were hinged together face-to-face with adhesive tape, with their
+minimum separation distance controlled by an incompressible
+metal block. The film was fixed between the glass slides. Opening
+the hinge kept the film flat, while closing it forced the film
+to fold into a near-semicircular shape. The composite films
+withstood 3000 bending cycles at a radius of 1.5 mm without
+generating cracks or delamination. However, when the bending
+radius was reduced to 0.5 mm, noticeable cracks appeared after
+1500 cycles. Beyond flexibility, the surface abrasion resistance
+was evaluated to ensure durability against daily wear using a
+reciprocating abrader with a standard friction cloth under a 1 N
+load (Figure 6b, inset). After 500 abrasion cycles, the uncoated
+PET substrate was severely scratched (Figure S14), whereas the
+KPA-coated surface remained smooth and largely intact (Figure
+6b). This excellent wear resistance is attributed to the highly
+crosslinked Si─O─Si network, which imparts a high hardness of
+1.58 GPa and a high H/E* ratio (∼0.12), enabling the coating to
+effectively resist scratching. To further challenge this durability,
+we subjected the coating to more aggressive steel wool abrasion.
+While the coating exhibited progressive surface wear from 100
+to 5000 cycles (Figure S15), it remarkably sustained >99.96%
+antibacterial activity even after 10000 cycles (Figure 6c). This
+efficacy confirms that despite physical wear, the continuous
+exposure of fresh AgNPs embedded within the matrix ensures
+uninterrupted contact-killing performance.
+Following the mechanical assessment, we proceeded to simulate
+real-world contamination scenarios relevant to touch-based elec-
+tronics. Figure 6d illustrates the antibacterial efficacy following
+the accumulation of three distinct layers of fingerprints. Although
+a slight decrease in the antibacterial rate against E. coli was
+observed (from >99.99% to 99.67%) due to physical shielding by
+lipid and protein residues, the coating retained a high level of
+bacterial reduction. This retained activity is attributed to the dis-
+continuous topology of fingerprint residues. Unlike a continuous
+insulating film, this discontinuous structure allows AgNPs within
+the interstitial spaces to remain exposed, thereby maintaining
+effective contact-killing. Additionally, a cyclic “contamination-
+cleaning” test (100 cycles, Figure 6e) confirmed that surface
+activity is fully recoverable (>99.99%) via ethanol wiping. Finally,
+considering the corrosive nature of skin contact, we evaluated
+the stability of the coating in physiological microenvironments.
+This test involved cyclic immersion in acidic artificial sweat
+(pH 4.7) followed by vigorous oscillation rinsing and drying
+(Figure 6g). The maintenance of >99.99% antibacterial activity
+across multiple cycles demonstrates the chemical robustness of
+the coating, which prevents rapid leaching of active silver species
+in acidic microenvironments.
+To verify environmental durability, samples were subjected to
+protocols simulating extreme cumulative stress. High-intensity
+UV irradiation (100 h, 365 nm, 15 mW cm−2) applied at a distance
+of 2 cm delivered a radiant dosage equivalent to >50000 h
+of ambient indoor use, simulating several months of rigorous
+outdoor aging. Similarly, the 24 h chemical immersion repre-
+sented a worst-case accumulation exceeding 17000 instantaneous
+ethanol wiping events or ∼300 accidental spills. Furthermore,
+100 thermal shock cycles (−20◦C to 80◦C) were performed to
+8 of 12
+Advanced Materials, 2026
+ 15214095, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202519048 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 5
+Silver release kinetics, mechanism, and service life estimation. (a) Cumulative silver release profiles monitored over 72 h at 37◦C in
+neutral water, acidic sweat (pH 4.7), and alkaline sweat (pH 8.0). Data are presented as mean ± SD (n = 3), with error bars smaller than the symbols
+for some data points. (b) Silver release quantities per cycle during the accelerated durability test at 37◦C, where each cycle consists of 8 h acidic
+sweat immersion and 1 h water rinse. Data are presented as mean ± SD (n = 3), with error bars smaller than the symbols for some data points. (c)
+Schematic illustration of the silver release mechanisms under different pH conditions. (d) Projected coating lifespan under Heavy, Typical, and Light
+usage scenarios. The inset shows the silver reservoir depletion curve under the accelerated laboratory model (bulk immersion).
+Advanced Materials, 2026
+9 of 12
+ 15214095, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202519048 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 6
+Mechanical robustness, environmental stability, and functional durability of the KPA coating. (a) Flexibility test of the KPA coating.
+Left: schematic of the custom-built bending apparatus. Top right: micrograph of a KPA-coated PET film after 3000 bending cycles at a 1.5 mm radius.
+Bottom right: micrograph of a KPA-coated PET film after 1500 bending cycles at a 0.5 mm radius. Scale bars: 20 µm. (b) SEM morphology of the KPA
+coating after 500 abrasion cycles (1 N load, standard cloth). Inset: Schematic of the abrasion setup. Scale bars: 20 µm. (c) SEM image of the KPA coating
+surface after severe mechanical wear (10000 abrasion cycles with #0000 steel wool). Scale bar: 100 µm. Inset: corresponding antibacterial rate against
+E. coli. Data are presented as mean ± SD (n = 3). (d) Schematic of the 3-layer fingerprint contamination test and the corresponding antibacterial rate
+against E. coli. Data are presented as mean ± SD (n = 3), with error bars smaller than the symbols for some data points. (e) Schematic of the cyclic
+fingerprint pressing/ethanol cleaning test and the corresponding antibacterial rates against E. coli after 100 cycles. Data are presented as mean ± SD (n =
+3), with error bars smaller than the symbols for some data points. (f) Demonstration of the KPA coating on the screen of a touch-sensitive device during
+a writing operation. (g) Schematic of the accelerated aging test, where each cycle consists of immersion in acidic artificial sweat (pH 4.7) for 8 h at 37◦C,
+followed by vigorous rinsing and N2 drying. The corresponding antibacterial rates against E. coli after 1, 3, and 5 cycles are shown on the right. Data are
+presented as mean ± SD (n = 3), with error bars smaller than the symbols for some data points. (h) Antibacterial rate against E. coli following exposure
+to harsh environmental stressors, including UV irradiation (100 h), thermal shock cycling (−20◦C/80◦C; 100 cycles), and 24 h chemical immersions
+(water, ethanol, HAc, Na2CO3). Data are presented as mean ± SD (n = 3), with error bars smaller than the symbols for some data points.
+mimic rapid temperature transitions. Under all these extreme
+conditions, the coating maintained >99.96% antibacterial efficacy
+(Figure 6h) and exhibited negligible optical loss (Figure S16a)
+—notably resisting yellowing after 100 h of UV irradiation
+(Figure S16b). In terms of mechanical integrity, robust Class
+5B substrate adhesion was retained after thermal shock cycling
+(Figure S17). These results confirm that the inorganic silica
+matrix provides exceptional resistance to structural degradation,
+ensuring a reliable long-term service life. Consequently, the
+functional lifespan is determined primarily by the eventual
+depletion of the silver reservoir. Finally, a practical demonstra-
+tion on a touchscreen (Figure 5f) confirmed that the coating
+preserves full touch sensitivity and supports smooth writing,
+ensuring no interference with the core functionality of the
+device.
+2
+Conclusion
+In summary, we have developed a KPA coating via a solution
+process. This coating enables the integration of necessary mul-
+tifunctionality into flexible display cover windows. The KPA
+10 of 12
+Advanced Materials, 2026
+ 15214095, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202519048 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+coating simultaneously integrates high transparency, glass-like
+damage tolerance (H/E* ≈0.12), polymer-like flexibility, potent
+and durable antibacterial activity (>99.99%), and excellent bio-
+compatibility. This unique combination of properties, resulting
+from its covalently anchored nanocomposite architecture, holds
+tremendous potential for next-generation protective materials
+for high-touch electronics. Specifically, we provide a reliable
+method to fabricate a stable, “all-in-one” precursor solution that
+serves as a liquid-phase platform for a new class of durable,
+functional coatings. This method can be performed under mild
+conditions, making it compatible with a variety of thermally
+sensitive substrates. As such, we anticipate that this strategy
+provides a versatile and scalable platform for creating a new
+generation of hybrid materials capable of integrating diverse
+functionalities.
+3
+Experimental Section
+For all the experimental sections, please see Supporting Informa-
+tion.
+Acknowledgements
+This work was supported by the National Natural Science Foundation of
+China (Grant Nos. 52402368 and 52303333).
+Conflicts of Interest
+The authors declare no conflicts of interest.
+Data Availability Statement
+The data that support the findings of this study are available from the
+corresponding author upon reasonable request.
+References
+1. A. Dhyanssi, T. Repetto, D. Bartikofsky, et al., “Surfaces With Instant
+and Persistent Antimicrobial Efficacy Against Bacteria and SARS-CoV-2,”
+Matter 5 (2022): 4076–4091.
+2. D. M. Morens, G. K. Folkers, and A. S. Fauci, “Erratum: The Challenge
+of Emerging and Re-Emerging Infectious Diseases,” Nature 463 (2010):
+122, https://doi.org/10.1038/nature08554.
+3. C. H. Koh, M. R. Lambu, C. Y. Tan, et al., “Carbene Formation as a
+Mechanism for Efficient Intracellular Uptake of Cationic Antimicrobial
+Carbon Acid Polymers,” Nature Communications 16 (2025): 6460, https://
+doi.org/10.1038/s41467-025-61724-y.
+4. Y. Z. Zhan, X. W. Hu, Y. F. Li, et al., “Antimicrobial Hybrid Amphiphile
+via Dynamic Covalent Bonds Enables Bacterial Biofilm Dispersal and
+Bacteria Eradication,” Advanced Functional Materials 33 (2023): 2214299,
+https://doi.org/10.1002/adfm.202214299.
+5. H. C. Flemming, E. D. van Hullebusch, B. J. Little, et al., “Microbial
+Extracellular Polymeric Substances in the Environment, Technology and
+Medicine,” Nature Reviews Microbiology 23 (2025): 87–105, https://doi.org/
+10.1038/s41579-024-01098-y.
+6. Y. Lee, H. Lee, H. G. Im, et al., “Transparent and Flexible Hybrid Cover
+Window Film: Hard Coating/Substrate All-In-One composite Film for
+Reliable Foldable Display,” Composites Part B: Engineering 247 (2022):
+110336, https://doi.org/10.1016/j.compositesb.2022.110336.
+7. M. Hassan, G. Abbas, N. Li, et al., “Significance of Flexible Substrates
+for Wearable and Implantable Devices: Recent Advances and Perspec-
+tives,” Advanced Materials Technologies 7 (2022): 2100773, https://doi.org/
+10.1002/admt.202100773.
+8. Y.
+J.
+Huang,
+X.
+H.
+Guo,
+Y.
+Wu,
+et
+al.,
+“Nanotechnology’s
+Frontier
+in
+Combatting
+Infectious
+and
+Inflammatory
+Diseases:
+Prevention
+and
+Treatment,”
+Signal
+Transduction
+and
+Targeted
+Therapy
+9
+(2024):
+34,
+https://doi.org/10.1038/s41392-024-01745-
+z.
+9. B. Macco and W. M. M. Kessels, “Atomic Layer Deposition of Conduc-
+tive and Semiconductive Oxides,” Applied Physics Reviews 9 (2022): 041313,
+https://doi.org/10.1063/5.0116732.
+10. R. N. Hussein, T. C. Gomes, E. Ng, S. Rondeau-Gagné, and T. B.
+Carmichael, “Composites of Shellac and Silver Nanowires as Flexible,
+Biobased, and Corrosion-Resistant Transparent Conductive Electrodes,”
+Advanced Functional Materials (2025): 10375, https://doi.org/10.1002/
+adfm.202510375.
+11. S. B. Park, J. W. Han, J. H. Kim, et al., “Multifunctional Stretchable
+Organic–Inorganic Hybrid Electronics With Transparent Conductive
+Silver Nanowire/Biopolymer Hybrid Films,” Advanced Optical Materials
+9 (2021): 2002041, https://doi.org/10.1002/adom.202002041.
+12. S. Ippili, B. Kim, V. Jella, J. S. Jung, V. H. Vuong, and S. G.
+Yoon, “Antireflective, Transparent, Water-Resistant, and Antibacterial
+Zn-Doped Silicon Oxide Thin Films for Touchscreen-Based Display Appli-
+cations,” ACS Sustainable Chemistry & Engineering 10 (2022): 2136–2147,
+https://doi.org/10.1021/acssuschemeng.1c07404.
+13. C. Park, T. Kim, Y. I. Kim, M. W. Lee, S. An, and S. S. Yoon, “Superson-
+ically Sprayed Transparent Flexible Multifunctional Composites for Self-
+Cleaning, Anti-Icing, Anti-Fogging, and Anti-Bacterial Applications,”
+Composites Part B: Engineering 222 (2021): 109070, https://doi.org/10.1016/
+j.compositesb.2021.109070.
+14. J. Li, C. F. Wang, S. L. Wu, et al., “Superlattice Nanofilm on a
+Touchscreen for Photoexcited Bacteria and Virus Killing by Tuning
+Electronic Defects in the Heterointerface,” Advanced Materials 35 (2023):
+2300380, https://doi.org/10.1002/adma.202300380.
+15. Z. Y. Chen, D. Yin, and J. Feng, “Materials, Structures, and Strategies
+for Foldable Electroluminescent Devices,” Advanced Optical Materials 11
+(2023): 2300282, https://doi.org/10.1002/adom.202300282.
+16. D. W. Kim, S. W. Kim, G. Lee, et al., “Fabrication of Practi-
+cal Deformable Displays: Advances and Challenges,” Light: Science &
+Applications 12 (2023): 61.
+17. S. Ippili, V. Jella, J. M. Lee, J. S. Jung, D. H. Lee, T. Y. Yang,
+and S. G. Yoon, “ZnO–PTFE-Based Antimicrobial, Anti-Reflective
+Display Coatings and High-Sensitivity Touch Sensors,” Journal of
+Materials Chemistry A 10 (2022): 22067–22079, https://doi.org/10.1039/
+D2TA06095G.
+18. D. Wang, J. S. Ma, P. F. Li, et al., “Flexible Hard Coatings With Self-
+Evolution Behavior in a Low Earth Orbit Environment,” ACS Applied
+Materials & Interfaces 13 (2021): 46003–46014, https://doi.org/10.1021/
+acsami.1c13807.
+19. X. Guo, P. F. Li, G. M. Liu, et al., ““Nanocompoundsite”: Nano
+Phased Polymer Dispersed in Inorganic Matrix via Covalent Bonds,” Nano
+Research 15 (2022): 6582–6589, https://doi.org/10.1007/s12274-022-4233-6.
+20. D. Burak, M. A. Rahman, D. C. Seo, et al., “In Situ Metal Deposition on
+Perhydropolysilazane-Derived Silica for Structural Color Surfaces With
+Antiviral Activity,” ACS Applied Materials & Interfaces 15 (2023): 54143–
+54156, https://doi.org/10.1021/acsami.3c12622.
+21. S. Ippili, J. S. Jung, A. M. Thomas, et al., “An Overview of
+Polymer Composite Films for Antibacterial Display Coatings and Sen-
+sor Applications,” Polymers 15 (2023): 3791, https://doi.org/10.3390/
+polym15183791.
+22. K. J. Heo, D. U. Lee, J. H. Shin, et al., “Transparent, Robust,
+and
+Photochemical
+Antibacterial
+Surface
+Based
+on
+Hydrogen
+Bonding Between a Si-Al and Cationic Dye,” ACS Applied Materials
+& Interfaces 14 (2022): 53285–53297, https://doi.org/10.1021/acsami.
+2c16071.
+Advanced Materials, 2026
+11 of 12
+ 15214095, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202519048 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+23. C. Eaborn, “The Reaction Between Trisubstituted Silanes And Silver
+Perchlorate,” Journal of the Chemical Society 3 (1955): 2517–2519.
+24. Z. Wang, S. Yao, S. Pan, et al., “Synthesis of Silver Particles Stabilized
+by a Bifunctional SiHx–NHy–PMHS Oligomer as Recyclable Nanocat-
+alysts for the Catalytic Reduction of 4-Nitrophenol,” RSC Advances 9
+(2019): 31013–31020, https://doi.org/10.1039/C9RA04711E.
+25. H. Q. Guan, C. Harris, and S. H. Sun, “Metal–Ligand Interactions
+and Their Roles in Controlling Nanoparticle Formation and Functions,”
+Accounts of Chemical Research 56 (2023): 1591–1601, https://doi.org/10.
+1021/acs.accounts.3c00156.
+26. W. J. Malfait, W. E. Halter, and R. Verel, “29Si NMR spectroscopy
+of silica glass: T1 relaxation and constraints on the Si–O–Si bond angle
+distribution,” Chemical Geology 256 (2008): 269–277, https://doi.org/10.
+1016/j.chemgeo.2008.06.048.
+27. K. K. Zhang, S. S. Huang, J. D. Wang, and G. J. Liu, “Transparent
+Omniphobic Coating With Glass-Like Wear Resistance and Polymer-
+Like Bendability,” Angewandte Chemie International Edition 58 (2019):
+12004–12009, https://doi.org/10.1002/anie.201904210.
+28. H. L. Zheng, G. J. Liu, B. B. Nienhaus, and J. Buddingh, “Ice-Shedding
+Polymer Coatings With High Hardness but Low Ice Adhesion,” ACS
+Applied Materials & Interfaces 14 (2022): 6071–6082, https://doi.org/10.
+1021/acsami.1c23483.
+29. G. M. Choi, J. Jin, D. Shin, et al., “Flexible Hard Coating: Glass-
+Like Wear Resistant, Yet Plastic-Like Compliant, Transparent Protective
+Coating for Foldable Displays,” Advanced Materials 29 (2017): 1700205,
+https://doi.org/10.1002/adma.201700205.
+30. W. W. Zheng, J. Y. Huang, X. R. Zang, et al., “Judicious Design
+and Rapid Manufacturing of a Flexible, Mechanically Resistant Liquid-
+Like Coating With Strong Bonding and Antifouling Abilities,” Advanced
+Materials 34 (2022): 2204581, https://doi.org/10.1002/adma.202204581.
+31. C. C. Yang and W. C. Chen, “The Structures and Properties of
+Hydrogen Silsesquioxane (HSQ) Films Produced by Thermal Curing,”
+Journal of Materials Chemistry 12 (2002): 1138–1141, https://doi.org/10.
+1039/b107697n.
+32. D. N. Bender, K. K. Zhang, J. D. Wang, and G. J. Liu, “Hard yet Flexible
+Transparent Omniphobic GPOSS Coatings Modified With Perfluorinated
+Agents,” ACS Applied Materials & Interfaces 13 (2021): 10467–10479,
+https://doi.org/10.1021/acsami.0c23151.
+33. Y. L. Zhang, W. Y. Wang, P. F. Li, et al., “Thermal Conversion Process
+of Tetraethyl Orthosilicate-Based Silica Sol and Perhydropolysilazane Into
+Inorganic Silica Films,” Crystal Growth & Design 23 (2023): 5965–5974,
+https://doi.org/10.1021/acs.cgd.3c00539.
+34. C. Liu, L. Hou, L. Liu, et al., “In Vitro Cytotoxicity Evaluation of Highly
+Absorbent Foam Dressings Based on Silver Zirconium Phosphate via IC50
+Value,” Journal of Biomaterials and Nanobiotechnology 07 (2016): 37–44,
+https://doi.org/10.4236/jbnb.2016.71005.
+35. H. B. Wang, A. X. Yan, Z. G. Liu, et al., “Deciphering Molecular
+Mechanism of Silver by Integrated Omic Approaches Enables Enhancing
+its Antimicrobial Efficacy in E. coli,” PLoS Biology 17 (2019): 3000292,
+https://doi.org/10.1371/journal.pbio.3000292.
+36. S. Agnihotri, S. Mukherji, and S. Mukherji, “Immobilized Silver
+Nanoparticles Enhance Contact Killing and Show Highest Efficacy:
+Elucidation of the Mechanism of Bactericidal Action of Silver,” Nanoscale
+5 (2013): 7328–7340, https://doi.org/10.1039/c3nr00024a.
+37. S. M. Keller, R. Bello, B. Vibert, G. Swergold, and R. Burk, “Diagnosis
+of Palmar Hyperhidrosis via Questionnaire Without Physical Examina-
+tion,” Clinical Autonomic Research 19 (2009): 175–181, https://doi.org/10.
+1007/s10286-009-0006-5.
+38. S. M. Yum, I. K. Baek, D. Hong, et al., “Fingerprint Ridges Allow Pri-
+mates to Regulate Grip,” Proceedings of the National Academy of Sciences
+USA 117 (2020): 31665–31673, https://doi.org/10.1073/pnas.2001055117.
+Supporting Information
+Additional supporting information can be found online in the Supporting
+Information section.
+SupportingFile: adma72267-sup-0001-SuppMat.docx.
+12 of 12
+Advanced Materials, 2026
+ 15214095, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202519048 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

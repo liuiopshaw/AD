@@ -1,0 +1,1011 @@
+Chemical Engineering Journal 480 (2024) 148140
+Available online 20 December 2023
+1385-8947/© 2023 Elsevier B.V. All rights reserved.
+Antibacterial type-II InP/ZnO quantum dots via multimodal reactive 
+oxygen species 
+Saad Ullah Khan a,1, Guncem Ozgun Eren a,1, Nazli Atac b,c, Asim Onal a, 
+Mohammad Haroon Qureshi b, Francis Korshe Cooper b,c, Toghrul Almammadov d,e, 
+Safacan Kolemen d, Mehmet Sahin f, Fusun Can b,c, Sedat Nizamoglu a,g,* 
+a Biomedical Science and Engineering, Graduate School of Science and Engineering, Koç University, Istanbul 34450, Türkiye 
+b Department of Medical Microbiology, School of Medicine, Koç University, Istanbul 34450, Türkiye 
+c Koç University-˙Is¸bank Center for Infectious Diseases (KUISCID), Koç University, Topkapi, Istanbul 34450, Türkiye 
+d Department of Chemistry, Koç University, Istanbul 34450, Türkiye 
+e University of Zurich, Winterthurerstrasse 190, 8057 Zurich, Switzerland 
+f Department of Nanotechnology Engineering, Abdullah Gul University, Kayseri 38080, Türkiye 
+g Department of Electrical and Electronics Engineering, Koç University, Istanbul 34450, Türkiye   
+A R T I C L E  I N F O   
+Keywords: 
+Quantum dot 
+Antibacterial 
+Type-II 
+InP 
+Reactive oxygen species 
+ROS 
+Pseudomonas aeruginosa 
+Escherichia coli 
+ZnO 
+ZnS 
+A B S T R A C T   
+The emergence of multidrug-resistant bacteria as a global health threat has necessitated the exploration of 
+alternative treatments to combat bacterial infections. Among these, photocatalytic nanomaterials such as 
+quantum dots (QDs) have shown great promise and type-I QDs have been investigated thus far. In this study, we 
+introduce type-II InP/ZnO core/shell QDs that are ligand-exchanged with a short-chain inorganic sulfide ion 
+(S2−) for antibacterial activity. Interestingly, InP/ZnO QDs simultaneously generate reactive oxygen species 
+(ROS) including hydroxyl (•OH) and superoxide (O2
+•−) radicals, while only O2
+•−radicals can be released by the 
+type-I sulfide-capped InP/ZnS QDs. The optimized nanostructure achieved effective inhibition of Pseudomonas 
+aeruginosa and Escherichia coli bacteria growth to the level of 99.99% and 70.31% under low-intensity green light 
+illumination of 5 mW.cm−2. Our findings highlight the importance of type-II QDs as a new avenue for developing 
+effective antibacterial agents against drug-resistant pathogens.   
+1. Introduction 
+Multidrug resistance of bacteria limits the treatment of infections 
+[1]. Pseudomonas aeruginosa (P. aeruginosa) can cause infections in the 
+bloodstream infections, pneumonia and wound infections after surgery 
+[2–4]. Additionally, it poses a significant risk for severe health compli­
+cations, particularly in relation to burn wounds [5]. Escherichia coli (E. 
+coli) is the most common cause of urinary tract infections and can cause 
+recurrent infections with fimbrial attachment and biofilm formation on 
+epithelial cells thus lead to failure of antibiotic treatment [6–8]. Bacteria 
+can also acquire resistance to antibiotics through horizontal gene 
+transfer [9]. Hence, the failure of current antibiotics to effectively treat 
+infections highlights the need to seek novel alternatives for infection 
+treatment [4,10]. 
+In recent years, semiconductor photocatalysis has emerged as a 
+promising technique for antimicrobial activity [11–14]. When they are 
+pumped to an excited state, the semiconductor nanocrystals interact 
+with surrounding oxygen compounds and generate reactive oxygen 
+species (ROS) such as singlet oxygen (1O2), superoxide (O2
+•−), hydroxyl 
+radical (•OH), and hydrogen peroxide (H2O2) [15–17]. ROS is naturally 
+produced as a byproduct of normal oxygen metabolism in living cells 
+and acts as mediators of intracellular reactions. Advantageously, an 
+excessive amount of ROS can cause oxidative stress, leading to DNA 
+fragmentation, penetration of ROS into the cell, and further damage to 
+bacteria cell, ultimately resulting in bacterial cell death [18,19]. 
+The use of inorganic quantum dots (QDs) has gained significant 
+attention as a potential solution for combating drug-resistant bacteria. In 
+this regard, cadmium based QDs showed photocatalytic antibacterial 
+* Corresponding author at: Biomedical Science and Engineering, Graduate School of Science and Engineering, Koç University, Istanbul 34450, Türkiye. Department 
+of Electrical and Electronics Engineering, Koç University, Istanbul 34450, Türkiye. 
+E-mail address: snizamoglu@ku.edu.tr (S. Nizamoglu).   
+1 Equal Contribution. 
+Contents lists available at ScienceDirect 
+Chemical Engineering Journal 
+journal homepage: www.elsevier.com/locate/cej 
+https://doi.org/10.1016/j.cej.2023.148140 
+Received 4 September 2023; Received in revised form 24 November 2023; Accepted 15 December 2023   
+
+Chemical Engineering Journal 480 (2024) 148140
+2
+activity, which are controlled by composition and size variation of QDs 
+[10,20–25]. However, cadmium content is not preferred for biological 
+applications due to its heavy metal toxicity. In recent years, cadmium- 
+free QDs such as InP and InP/ZnE (E: S or Se) [26–28], ZnO [29], 
+CuInS [30], and AgBiS2 [31] QDs were investigated as alternative ma­
+terials. All these QDs possess a type-I band alignment where photo­
+generated electron and hole wavefunctions are confined in the core 
+region. Differently, type-II QDs have staggered band alignment that 
+leads to spatial separation of electron and hole wavefunctions [32,33], 
+and they show high promise for bioimaging, light amplification and 
+LEDs [34–37]. Since the spatial displacement of charge carriers leads to 
+the decreased recombination probability, this can potentially enhance 
+and control ROS generation [38]. However, the potential of cadmium- 
+free type-II QDs on antibacterial activity has not been explored yet. 
+In this study, we investigated InP/ZnO core/shell QDs with type-II 
+band alignment as a novel antibacterial agent for the first time. 
+Different from the previous InP-based QDs that only release superoxide 
+radicals [26–28], InP/ZnO QDs effectively generated both O2
+•−and •OH 
+radicals at the same time due to the type-II band alignment and presence 
+of sulfide (S2−) ligands as hole capturer (Fig. 1(a)). Moreover, we 
+investigated the thickness of the ZnO shell surrounding the InP core QDs 
+in order to maximize ROS generation. InP/ZnO QDs with 1-ZnO shell 
+facilitated significant antibacterial activity against P. aeruginosa and 
+E. coli with a growth inhibition of 99.99% and 70.31% under low-level 
+green light illumination of 5 mW.cm−2. These findings show that type-II 
+QDs hold high promise for future antibacterial coatings. 
+2. Results and discussion 
+For the InP/ZnO core/shell synthesis, we followed the procedure, 
+which was initially proposed by Sadeghi et al. [39]. We first synthesized 
+InP core QDs by using hot-injection method of tris-(trimethylsilyl) 
+phosphine (P(TMS)3) on indium chloride (InCl3) in the presence of the 
+oleic acid (OA) and oleylamine (OLA) ligands in 1-octadecene (ODE). 
+Fig. 1. (a) Schematic illustration of energy band diagram of InP core QDs and InP/ZnO core/shell QDs along with the redox potentials of the superoxide (O2
+•−) and 
+hydroxyl (•OH) radicals. After the photoexcitation process, electron-hole pairs are produced. Charge separation efficiency increases by type-II band alignment and 
+(S2−) ligands. Photogenerated electrons react with O2 molecules to produce O2
+•−and •OH radicals. (b) Mean size of InP core (3.05 nm ± 0.35), InP/1ZnO (3.54 nm ±
+0.42), and InP/3ZnO core/shell QDs (6.25 ± 0.73 nm). (c) TEM image of the InP/3ZnO core/shell QDs (6.25 ± 0.73 nm). The scale bar of the TEM images is 20 nm. 
+200 particles were counted. (d) X-ray diffraction pattern of the InP/ZnO core/shell QDs showing the cubic crystalline structure of InP with the (111), (220), and 
+(311) planes (JCPDS 32–0452), respectively. (e) Zn 2p XPS spectra of InP/ZnO QDs. (f) O 1s XPS spectra of InP/ZnO QDs. (g) Schematic illustration of ligand 
+exchange from OLA to S2−for InP/ZnO QDs. The images of the ligand exchange process from OLA-capped InP/ZnO QDs in hexane (left) to S2−capped InP/ZnO QDs 
+in NMF (h) under ambient and (i) under ultraviolet (UV) light, respectively. 
+S.U. Khan et al.                                                                                                                                                                                                                                 
+
+Chemical Engineering Journal 480 (2024) 148140
+3
+The resulting core size, determined by transmission electron microscopy 
+(TEM), corresponds to 3.05 nm ± 0.35 (Fig. 1(b) and Fig. S1). X-ray 
+diffraction (XRD) analysis confirmed the cubic crystal structure of InP 
+with the (111), (220), and (311) planes (JCPDS 32–0452) (Fig. 1(d)). 
+Additionally, we did not observe any separate XRD peaks of ZnO QDs, 
+which implies that ZnO shell grew on InP core [40]. X-ray photoelectron 
+spectroscopy (XPS) analysis was performed to confirm the elemental 
+surface chemistry of the InP core. In this regard, we identified two 
+distinct peaks at 444.48 eV (3d5/2) and 452.02 eV (3d3/2) that can be 
+assigned to InP (Fig. S2(a)) [40–42]. Additionally, the dominant doublet 
+at 128.22–129.11 eV (2p3/2) was the characteristic peak for InP [40,43], 
+while the doublet in the 132.58–133.47 eV range indicated P atoms in an 
+oxidized medium (InPOX), which is a generally observed phenomena for 
+InP QDs (Fig. S2(b)) [40,44–46]. 
+To form type-II band alignment and to investigate the effect of shell 
+thickness on optical properties of QDs, we grew multiple ZnO shells on 
+InP core structure by using thermal decomposition of zinc acetylaceto­
+nate (see methods about the reaction details) [47,48]. The first shell 
+reaction led (i.e., InP/1ZnO) growth up to the size of 3.54 nm ± 0.42 
+(Fig. 1(b)). After the third-time growth reaction of ZnO shell (i.e., InP/ 
+3ZnO), core/shell QD size increased to 6.25 ± 0.73 nm (Fig. 1(b), (c) 
+and Fig. S3). Zn 2p XPS spectrum confirmed that Zn2+ was bound to 
+oxygen in the ZnO shell (Fig. 1(e)) [40,49]. Furthermore, the O 1s peak 
+shifted to higher binding energy of 531.37 eV after ZnO coating due to 
+additional oxidation during the shelling procedure (Fig. 1(f)) [41]. 
+Moreover, ZnO shell growth caused shift of In 3d and P 2p peaks towards 
+higher binding energies (Fig. S4(a)-(b)). After the InP/ZnO core/shell 
+QDs synthesis, we performed a ligand exchange process by replacing 
+oleylamine (OLA) with the S2−ligand (i.e., InP/ZnO-S) to trigger reac­
+tive oxygen species (ROS) generation in water-based bacterial envi­
+ronment (Fig. 1(g)). The effectiveness of the ligand exchange was 
+confirmed by the successful phase transition of the treated QDs from 
+hexane to N-methyl formamide (NMF) via being stirred at room tem­
+perature for 30 mins (Fig. 1(h)-1(i)). Following the ligand-exchange 
+process, the resulting solution was purified by using hexane and 
+acetone. The final precipitate was redissolved in ultrapure water (see 
+experimental studies). The ligand exchange of OLA by S2−ligands was 
+confirmed by Fourier transform infrared (FT-IR) results, which indicate 
+the disappearance of the ligand C-H stretching bands at 2925 and 2855 
+cm−1 (see Fig. S5) [50,51]. 
+We then monitored optoelectronic properties of QDs after shell 
+growth and ligand exchange. For that we did steady-state and time- 
+resolved optical spectroscopy of InP, InP/ZnO and InP/ZnO-S QDs. We 
+observed a red shift in the photoluminescence (PL) spectra following the 
+growth of ZnO shells on top of InP core structure. For example, for 1 ZnO 
+shell the PL peak shifts from 598 nm to 618 nm (≈70 meV) (Fig. 2(a)). In 
+addition, we observed that the red shift in PL emission continues with 
+each subsequent layer of ZnO shell formation (Fig. S6). Moreover, after 
+the 1 ZnO shell growth the time-resolved PL decays increased from 5.1 
+ns to 13.9 ns (Fig. 2(b)). To investigate the electronic processes, we 
+conducted quantum mechanical calculations employing the effective 
+mass approximation, which was solved via the Poisson and Schr¨odinger 
+equations in a self-consistent manner using Ben Daniel-Duke boundary 
+conditions. In InP core QDs, both the electron and hole are confined 
+within the same spatial regions. After the subsequent growth of a ZnO 
+shell on the top of InP core QDs, the electron delocalizes toward shell 
+and hole remains confined within the InP core (Fig. 2(d)-(e)). The 
+delocalization of electrons decreases the confinement energy of elec­
+trons leading to a spectral red-shift and decreases the electron-hole 
+wavefunction overlap results in slower recombination dynamics, 
+which agree with experimental observations (Fig. 2(a)-(b)). 
+After ligand exchange with S2−, the PL spectrum (Fig. 2(a)) of InP/ 
+1ZnO-S QDs showed a red shift from 618 nm to 646 nm (≈87 meV), 
+which can be attributed to charge transfer (h+) toward S2−
+ligands 
+[52,53]. Similarly, red shift around 28 nm and 31 nm in PL emission was 
+observed for InP/2ZnO-S and InP/3ZnO-S core/shell QDs, respectively 
+(Fig. S6). Similarly, we observed a band gap decrease in absorption, 
+which is beneficial for stronger absorption in green spectral region 
+(Fig. S6). Moreover, the exchange of the ligand with S2−led to a sub­
+stantial decrease in the PLQY values (Fig. 2(c)). Since S2−
+ligands 
+Fig. 2. (a) PL emission spectrum of InP core, InP/1ZnO QDs capped with OLA and S2−(InP/1ZnO-S) ligands. (b) Time-resolved spectroscopy of InP core QDs, InP/ 
+1ZnO QDs capped with OLA and S2−(InP/ZnO-S) ligands. (c) PLQY of InP/1ZnO core/shell QDs before and after ligand exchange. Electron (dark red) and hole (red) 
+probability density of (d) InP and (e) InP/1ZnO QDs, respectively. Black and green dotted lines correspond to confinement potential profile for electrons and holes, 
+respectively. (For interpretation of the references to colour in this figure legend, the reader is referred to the web version of this article.) 
+S.U. Khan et al.                                                                                                                                                                                                                                 
+
+Chemical Engineering Journal 480 (2024) 148140
+4
+introduce surface traps and nonradiative recombination centers 
+[52,54,55], the drop of PLQY is expected. In terms of photocatalytic 
+activity, it is important to minimize the radiative recombination rates 
+and direct the photogenerated charges to non-radiative recombination 
+centers of catalytic reactions. Hence, PLQY substantially decreased after 
+S2−ligand exchange because of favorably directing holes to the ligands 
+for ROS generation. 
+To further investigate the effect of ligand exchange on recombination 
+decay dynamics, we conducted time-resolved photoluminescence spec­
+troscopy (TRPL) analysis (Fig. 2(b)). For OLA-capped InP/1ZnO QDs, 
+the decay of TRPL signal is slow (τ = 13.9 ns). Following the ligand 
+exchange process with S2−, TRPL decay becomes faster (τ = 3.5 ns), due 
+to the transfer of charges toward the surface trap states, which is in line 
+with decreased PLQY (Fig. 2(c)). 
+To get more insight into antibacterial photocatalytic properties, we 
+investigated ROS generation efficiency of InP/ZnO QDs with multiple 
+ZnO shells. The widely used 2′,7′-dichlorofluorescein diacetate (DCFH- 
+DA) sensor molecule was utilized to detect ROS generation [56]. Upon 
+oxidation by the QDs, DCFH was converted into a fluorescent compound 
+called dichlorofluorescein (DCF), which emits at 525 nm (Fig. S7(a)). To 
+this end, following the ligand exchange process, the intensity of DCF 
+fluorescence for InP/ZnO QDs with multiple ZnO shells was measured. 
+To perform such an experiment, we irradiated the core/shell QDs with 
+green light (λmax = 530 nm) in the photo absorption range of QDs 
+(Fig. S6). Our results presented in Fig. 3(a) show that InP/1ZnO QDs 
+exhibited the highest intensity of ROS in comparison with 2 or 3-ZnO 
+shells. This possibly stems from the fact that while electrons are ad­
+vantageously delocalized toward QD-electrolyte junction for efficient 
+redox reactions, ZnO shell thickness acts as a potential barrier for holes, 
+which are captured by S2−ligands. When the ZnO shell thickness in­
+creases, holes are more confined in core structure and the capturing 
+efficiency of photogenerated holes by S2−ligands decreases. Hence, we 
+conclude that InP/1ZnO-S is the most efficient QD for ROS generation, 
+which we used for the following studies. 
+Since all generated ROS are sensitive to DCFH-DA molecule, XTT 
+(sodium 
+3′-[1-[(phenylamino)carbonyl]-3,4-tetrazolium]-bis(4-metho 
+xy-6-nitro)benzene-sulfonic acid hydrate) [57] was utilized to detect 
+and quantify O2
+•−radicals generated by the InP/1ZnO-S QDs. XTT was 
+added at a concentration of 50 µM along with InP/1ZnO-S QDs at a 
+concentration of 0.5 mM. The O2
+•−oxidize XTT, which leads to the for­
+mation of XTT formazan (Eq.(1)) [58], a water-soluble, orange-colored 
+compound that can be detected spectrophotometrically by monitoring 
+the increase in absorbance at 470 nm. As depicted in Fig. 3(b), the ab­
+sorption spectrum of XTT at 470 nm was displayed under green light 
+irradiation for every 10 min interval light exposure in the presence of 
+InP/1ZnO-S QDs. The results revealed that the absorption at 470 nm 
+increases with irradiation time, indicating the formation of XTT for­
+mazan. In the absence of light, no absorption peak was observed, indi­
+cating that light is necessary for O2
+•−
+generation. The molar 
+concentration of O2
+•−generation was determined as 114 ± 7.34 µM (see 
+supplementary information), which is higher than CdTe QDs [21]. We 
+further characterized singlet oxygen (1O2) generation by using ABDA 
+(9,10-anthracenediyl-bis(methylene)dimalonic acid) sensor molecule 
+that is widely used for detection and quantification of (1O2). The solu­
+tion was irradiated in the presence of QDs and ABDA with 10-minute 
+intervals (Fig. S7(b)) and there is no significant change in the absor­
+bance of ABDA sensor molecules even after 30 min of photoactivation. 
+These results indicate that the generation of 1O2 by InP/1ZnO-S QDs is 
+exceptionally low, suggesting that primarily produces O2
+•−[59]. 
+XTT + O−.
+2 →O2 + XTT−
+(1) 
+To detect other ROS species besides 1O2, we conducted additional 
+experiments by using methyl violet (MV) dye. We utilized isopropanol 
+(IPA) and benzoquinone (BQ) as scavengers for •OH and O2
+•−radicals, 
+respectively [60]. We found that the photodegradation of MV was 
+substantially inhibited by both BQ and IPA, indicating that both O2
+•−and 
+•OH radicals are generated by InP/1ZnO-S QDs under green light illu­
+mination and are responsible for the photodegradation of MV dye (Fig. 3 
+(c)). We also performed a similar experiment by using InP/ZnS QDs with 
+S2−ligands and Fig. S7(c) shows that MV degradation is only inhibited 
+by BQ due to O2
+•−radical generation. These analysis techniques confirm 
+that InP/ZnO-S generates O2
+•−
+and •OH radicals due to type-II band 
+alignment and the capturing effect of the S2−ligands [59]. In this regard, 
+we propose a mechanism for the photoactivated ROS generation by InP/ 
+ZnO-S QDs based on scavenger experiments. When the photoenergy (hv) 
+exceeds the band gap energy of InP/ZnO-S QDs, electrons (e−) and holes 
+(h+) are generated (Eq. (2). The type-II heterostructure promotes the 
+spatial separation of photoexcited electron-hole pairs and the electrons 
+delocalize toward the shell. Additionally, S2−
+ligand energy level is 
+above the VB of InP [54], thus it improves the charge carrier separation 
+efficiency by capturing photogenerated holes. The electrons react with 
+O2 molecules to produce superoxide (O2
+•−) and hydroxyl (•OH) from 
+oxygen (O2) (Eq. (3) &(4) [31]. Even though the hole cannot thermo­
+dynamically favor the oxidation of water (Eq. (5) due to the energy level 
+of H2O/ •OH (2.32 V, E(V) vs. reversible hydrogen electrode (RHE)), it 
+can induce antibacterial effect as direct active species [61]. 
+InP/ZnO QDs + hv →e−
++ h+
+(2)  
+O2 + e−→O•−
+2
+(3)  
+O•−
+2 + H+ →H•O2 + OH
+(4) 
+Fig. 3. (a) The fluorescence intensity of DCF molecule indicating relative ROS generation of InP-S core and InP/ZnO-S QDs with multiple ZnO shells after irradiation 
+with green light (λmax = 530 nm). (b) Absorbance spectra of XTT formazan at 470 nm due to generation of O2
+•−radical by InP/1ZnO-S QDs at a concentration of 0.5 
+mM. (c) The photodegradation of MV dye while applying IPA and BQ as scavengers for the detection of •OH and O2
+•−radicals, respectively. (For interpretation of the 
+references to colour in this figure legend, the reader is referred to the web version of this article.) 
+S.U. Khan et al.                                                                                                                                                                                                                                 
+
+Chemical Engineering Journal 480 (2024) 148140
+5
+H2O + h+ →H+ + OH
+(5) 
+To evaluate the safety of InP/1ZnO-S QDs both for dark and light 
+conditions, we conducted a cytotoxicity assay on Vero E6 cells in Fig. 4 
+(a). Our results showed that the QDs did not induce significant cyto­
+toxicity in Vero E6 cells at the highest concentration of 125 µM.The cell 
+viability was consistently above 90%, which was comparable to that of 
+the untreated control cells. These findings show that InP/1ZnO-S QDs do 
+not exert harmful effects on Vero E6 cells. 
+To investigate the antibacterial effect of QDs, we conducted growth 
+inhibition tests under dark and light conditions and included 
+P. aeruginosa, E. coli, Staphylococcus epidermidis (S.epidermidis) and 
+Enterococcus faecalis (E. faecalis). We observed that InP/1ZnO-S QDs did 
+not cause any growth inhibition on E. faecalis, S.epidermidis, E. coli and 
+Fig. 4. (a) Cytotoxicity of InP/1ZnO-S QDs under dark condition and low-intensity green light illumination (5 mW cm−2) on Vero E6 cell line at concentration of 125 
+µM. Viable bacterial counts of (b) E. faecalis, (c) S. epidermidis, (d) E. coli and (e) P. aeruginosa with varied concentrations of InP/1ZnO-S QDs (50–125 µM) under dark 
+condition and low-intensity green light illumination (5 mW cm−2). Statistical analysis was performed using One-Way ANOVA test. The bacterial inhibition was 
+considered statistically significant for p < 0.05. (f) ROS intensity increase for bacteria in the presence of InP/1ZnO-S QDs under low-intensity green light illumination 
+(5 mW cm−2). SEM image of (g) untreated control bacteria, (h) bacteria incubated with 125 µM InP/1ZnO-S QDs, (i) bacteria under illumination and (j) bacteria 
+incubated with 125 µM InP/1ZnO-S QDs under illumination. The scale bar in SEM images is 1 µm. 
+S.U. Khan et al.                                                                                                                                                                                                                                 
+
+Chemical Engineering Journal 480 (2024) 148140
+6
+P. aeruginosa under dark conditions (Fig. 4(b-e)), respectively [29]. In 
+this regard, we hypothesized that the resulting InP/1ZnO-S QDs do not 
+release free Zn+2 ions, which would cause physical disruption of the cell 
+membrane. To confirm our hypothesis, we conducted ICP-MS mea­
+surement. The resulting ICP-MS result showed no Zn+2 ions releasing 
+from QDs (Fig. S8). 
+Under green light exposure (λmax = 530 nm) at a low intensity level 
+of 5 mW.cm−2, InP/1ZnO-S QDs facilitated a dose-dependent bacteri­
+cidal effect against P. aeruginosa (Fig. 4(e)). 50 µM of QD caused 99.99% 
+growth inhibition (mean CFU/ml reduced from 2.37 x 105 to 3.30 x 102; 
+p = 0.0231) and the inhibitory effect was sustained with 75, 100 and 
+125 µM concentrations, mean CFU/ml values being 1.25 x 101, 2.67 x 
+101 and 6.67 x 100, respectively (p = 0.0228; 0.0108 and 0.0108). 
+Bactericidal effect of InP/1ZnO-S QDs were further confirmed with 
+scanning electron microscopy to observe cellular morphology changes 
+(Fig. 4(g)-(j)). SEM images showed intact cellular morphology for con­
+trol and QD-exposed groups. When bacteria were exposed to QD plus 
+green light, cell wall condensation and shrinkage was observed in cells 
+marked with red circles. These results suggest that photoactivation of 
+QDs triggers the production of reactive oxygen species, and conse­
+quently, this ROS production leads to cell condensation and ultimately 
+culminates in a potent bactericidal effect [62]. These results provide 
+strong evidence for the potential use of InP/1ZnO-S QDs as an effective 
+antimicrobial agent under light activation. 
+To distinguish between different responses of bacterial species to 
+InP/1ZnO-S QDs under light exposure, we further tested the antibacte­
+rial activity against E. faecalis, S. epidermidis and E. coli (Fig.4(b)-(d). No 
+dark toxicity was observed for either of the bacteria. When exposed to 
+green light, E. coli showed a lower inhibition rate compared to 
+P. aeruginosa. At the lowest concentration of 50 µM QD, 61.81% growth 
+reduction was observed (Mean CFU/ml 4.77 x 105) while the growth 
+reduction was enhanced to 76.23% with 75 µM (2.56 x 105) and the 
+inhibitory effect sustained for 100 µM QD concentration (70.31% and p 
+< 0.0001). Against gram-positive bacteria (E. faecalis and S. epidermidis), 
+no inhibition was observed. The growth reduction rate for E. faecalis and 
+S. epidermidis were 7.78% and 19.56% with their control counts of 5.93 
+x 105 and 4.16 x 105, respectively. 
+In parallel with the growth reduction, 125 µM QD under green light 
+illumination generated the highest levels of ROS in P. aeruginosa (Fig.4 
+(f)). These results suggest that photoactivation of QDs triggers the pro­
+duction of reactive oxygen species and the ROS production leads to 
+species-dependent condensation, which ultimately culminates in a 
+potent bactericidal effect [62]. These results provide strong evidence for 
+the potential use of InP/1ZnO-S QDs against P. aeruginosa as an effective 
+antimicrobial agent under light activation. 
+3. Discussion 
+In recent years, cadmium-free semiconductor QDs have been widely 
+investigated as effective antibacterial agents against various types of 
+multidrug-resistant bacteria. For instance, ZnO QDs have been found to 
+be highly attractive materials for their ability to inhibit the growth of 
+bacterial microorganisms via the production of ROS under illumination 
+and generation of toxic Zn2+ ions. Recently, Gangadoo et al. examined 
+the ROS generation of ZnO QDs, and they observed that the resulting 
+ZnO QDs exhibited antimicrobial efficacy of more than 85% against 
+E. coli by generating H2O2 radicals [29]. However, the poor bandgap 
+tunability of ZnO QDs limits the application of these materials. ZnO is a 
+wide bandgap material (3.1–3.4 eV), thus ZnO-based QDs generally 
+necessitate the use of UV light sources, which are hazardous to 
+mammalian cells [29,63]. 
+Alternatively, InP-based QDs have been attractive material for anti­
+bacterial applications due to not only their less toxicity compared to 
+cadmium-based counterparts in vitro and in vivo [64] but also photo 
+absorption within the visible spectral range [65]. For instance, Levy 
+et al.[26] conducted a study to investigate the ligand exchange of type-I 
+InP/ZnS or InP/ZnSe QDs with MPA and their potential effects on 
+multidrug-resistant bacteria (MDR) E. coli. To analyze the inhibition of 
+MDR bacteria growth, they performed an extended irradiation exposure 
+of 15 h under low-energy red light. The observed reduction in bacteria 
+growth was attributed to the generation of O2
+•−radicals [27]. Similarly, 
+Lee et al.[28] employed type-I QDs (InP/ZnS and InP/ZnSe) modified 
+with MPA and investigated their antibacterial effect for multidrug- 
+resistant (MDR) E.coli and S. aureus by exposing the QDs to blue light 
+irradiation with a highest wavelength of 400 nm. They observed a 
+substantial reduction in bacterial growth followed by the generation of 
+O2
+•−radicals. 
+Different from the previous studies mentioned above, we have shown 
+InP-based QDs with type-II band alignment as a novel and efficient 
+antibacterial agent for the first time. In this regard, we investigated the 
+antibacterial efficacy of the S2−capped InP/ZnO QDs. Considering the 
+literature and control group (i.e., InP/ZnS) experiment together with the 
+cytotoxicity and ICP-MS result (Fig. S8), we conclude that InP/1ZnO-S 
+QDs do not produce free Zn+2 ions, which can cause growth inhibition 
+of bacteria [29]. Thanks to type-II band aligning ZnO shell and sulfide 
+ligands, InP/1ZnO-S QDs showed ROS-mediated antibacterial effect by 
+generating O2
+•−and •OH radicals compared to type-I InP-based hetero­
+structures, which generate only O2
+•−. 
+ROS generation triggers the oxidation of cellular substances such as 
+nucleic acids, proteins, and lipids [66] but the mechanism of action may 
+differ depending both on the gram-negative or gram-positive membrane 
+structure of the bacteria [67] and ROS type [68]. Gram-positive species 
+(i.e., S. epidermidis and E. faecalis) are more prone to 1O2 while gram- 
+negative bacteria (E. coli and P. aeruginosa) inhibition is dependent on 
+O2
+•−
+and •OH radicals [69]. In this study, no growth inhibition was 
+observed against S. epidermidis and E. faecalis, since InP/1ZnO-S QDs did 
+not generate 1O2 as expected. Moreover, we selected green light because 
+some bacterial species (e.g., P. aeruginosa) produce endogenous por­
+phyrins such as coproporphyrin III and/or uroporphyrin III, which can 
+be externally activated by blue light [70]. These intra-cellular photo­
+sensitive chromophores are prone to blue light and successful eradica­
+tion of the bacteria was reported both in vitro and in vivo [70]. Hence, by 
+using green light the antibacterial effect solely induced by QDs were 
+reported (i.e., Fig. 4d & 4e when concentration of QDs is zero under 
+light). 
+Thick peptidoglycan compartment of gram-positive bacteria limits 
+the ROS action. Since the diffusion length of ROS is under 200 nm, it 
+requires relatively long distance to reach out from QD to the cell wall of 
+gram positive bacteria [71]. Moreover, there are also other endogenous 
+factors that may influence the growth inhibition within the gram- 
+negative bacterial species. Wang et al. reported the higher amount of 
+endogenous porphyrins in P. aeruginosa (0.67 ag/CFU) compared to its 
+gram-negative counterpart E.coli (0.14 ag/CFU), which is thought to 
+play a role in the higher elimination of P. aeruginosa [72]. Furthermore, 
+the structural differences of ROS regulation mechanisms (i.e., via SoxR) 
+within the two gram-negative bacteria might alter ROS response and 
+lead to different growth inhibition rates [73]. In addition, there is none 
+hydrolyzing enzyme of the bacteria to remove •OH radicals [74], thus 
+introduction of them with O2
+•−can be advantageous to stress the bacteria 
+through multiple pathways and limit development of resistance against 
+the antibacterial agents. 
+4. Conclusion 
+In summary, type-II InP/ZnO-S core/shell QDs can exhibit remark­
+able photocatalytic activity by simultaneously generating ROS species 
+including •OH and O2
+•−radicals. The dual ROS generation was enabled 
+by the ZnO shell growth and sulfur ligand exchange. The highest ROS 
+generation efficiency was recorded with InP/1ZnO-S QDs, which facil­
+itated effective inhibition of multidrug-resistant and biofilm-forming 
+P. aeruginosa and E. coli under low intensity light illumination. There­
+fore, we consider that the high-level control of photogenerated charge 
+S.U. Khan et al.                                                                                                                                                                                                                                 
+
+Chemical Engineering Journal 480 (2024) 148140
+7
+carriers via heterojunction and ligand engineering has great potential 
+for future antibacterial agents. 
+5. Materials and method 
+5.1. Chemicals 
+Zinc undecylenate (99%), oleic acid (OA-99%), oleylamine (OAM- 
+99%), octadecene (ODE-90%), indium(III) chloride (InCl3-99%), tris 
+(trimethylsilyl)phosphine (P(TMS)3–95%), zinc acetylacetonate hydrate 
+[Zn(acac)2⋅xH2O] (99.995%), sodium 3′-[1-[(phenylamino)-carbony]- 
+3,4-tetrazolium]-bis(4-methoxy-6-nitro) benzene-sulfonic acid hydrate 
+(XTT), methyl violet (MV), 2′,7′-dichlorofluorescein diacetate (DCFDA) 
+and sodium sulfide nonahydrate (Na2S⋅9H2O-98%) were purchased 
+from Sigma-Aldrich. All the chemical handlings were performed in a 
+glovebox under a nitrogen atmosphere. Ligand exchange process was 
+performed in ambient atmosphere. 
+5.2. P(TMS)3 stock solution preparation 
+A solution of P(TMS)3 in ODE was prepared with the concentration of 
+0.1 mmol.ml−1 and stored in inert atmosphere at −30 ◦C. 
+5.3. Synthesis of InP core QDs 
+To synthesize InP core quantum dots (QDs), we used zinc unde­
+cylenate (43 mg), oleic acid (OA) (32 µL), oleylamine (OLA) (66 µL), and 
+indium chloride (InCl3) (22 mg) mixed in ODE (3 mL). The resulting 
+solution was heated to 120 ◦C, and the flask was degassed for one hour at 
+the same temperature. Subsequently, the solution was heated to 220 ◦C 
+under argon (Ar) environment. At this point, 500 µL from phosphine 
+stock solution [P(TMS)3-ODE] was rapidly injected into the mixture and 
+stirred for an additional 30 min. The solution was then cooled to 80 ◦C, 
+and an aliquot was taken for characterization purposes. 
+5.4. Synthesis of InP/ZnO core/shell QDs 
+To prepare the ZnO stock solution, OAM (245 µL), OA (8 µL), and [Zn 
+(acac)2⋅xH2O] (6.5 mg) were mixed in 1.6 mL ODE solution. This solu­
+tion was then injected into the as-synthesized InP core solution at 80 ◦C 
+and heated to 250 ◦C under the Ar environment. The mixture was stirred 
+for 30 min at the same temperature and then cooled down to room 
+temperature. For additional ZnO shell growth, instead of cooling down 
+to room temperature, the solution was cooled down to 80 ◦C and same 
+procedure was performed. After InP/ZnO core/shell QDs formation, the 
+crude solution was cooled down to room temperature. Hexane was 
+added into the flask and the resulting crude solution was centrifuged at 
+11000 rpm for 3 min to remove byproducts. The QD solution was mixed 
+with hexane and ethanol. Then, it was centrifuged at 9000 rpm for 10 
+min. Precipitation process was repeated two times. The final QDs solu­
+tion was redispersed in hexane. 
+5.5. Ligand exchange of InP/ZnO core/shell QDs 
+Ligand engineering was performed on InP/ZnO quantum dots (QDs) 
+using Na2S⋅9H2O as a precursor. The ligand exchange process of a 
+nanomaterial depends on various parameters such as QD concentration, 
+stirring speed, temperature, and solvent polarity. In our experiment, the 
+ligand exchange was carried out at room temperature by mixing InP/ 
+ZnO QDs (3–5 mg/mL) in hexane with a Na2S⋅9H2O (0.05 M) solution 
+dissolved in the highly polar solvent such as N-methyl-formamide 
+(NMF). Once the QDs were completely transferred from hexane to NMF 
+after 30 mins, the NMF phase was washed twice with hexane to elimi­
+nate any residual nonpolar organic species. The NMF phase was then 
+precipitated with acetone. The resulting precipitate was redissolved in 
+water using ultrasound and centrifuged to remove insoluble QDs and 
+impurities. Finally, the resulting colloidal aqueous solution of QDs was 
+stored at 2–6 ◦C. 
+5.6. Optical characterization 
+To comprehensively analyze the properties of QDs, a range of tech­
+niques were employed. Steady-state absorbance and photoluminescence 
+measurements were taken using an Edinburgh Instruments (FS5 spec­
+trofluorometer) with an excitation wavelength of 375 nm. Quantum 
+efficiency (i.e., photoluminescence quantum yield - PLQY) was 
+measured using an integrating sphere with an inner diameter of 150 
+mm. To understand the PL decay dynamics of the QDs, a time-correlated 
+single-photon counting (TCSPC) system (MicroTime 100, Picoquant) 
+was utilized, with a nanosecond pulsed laser (λ = 375 nm) serving as the 
+excitation source. The fluorescence decay was fitted to a bi-exponential 
+function using Eq.(6). 
+τ = A1τ2
+1 + A2τ2
+2
+A1τ1 + A2τ2
+(6)  
+5.7. Structural characterization 
+To determine the surface composition of the QDs, X-ray photoelec­
+tron spectroscopy (XPS) was employed by using a Thermo Scientific K- 
+alpha (Al Kα source) surface analysis tool at ultrahigh vacuum condi­
+tions. XPS spectrometer was calibrated by using the C 1s peak at 284.5 
+eV. For powder X-ray diffraction (XRD) analysis, a Rigaku miniflex XRD 
+instrument with λCu Kα = 1.54 Å and a scan rate of 5 min−1 was utilized. 
+To prepare the samples for XPS and XRD analysis, the QDs were dis­
+solved in hexane and deposited onto a 1 cm x 1 cm silicon wafer. TEM 
+measurements were performed using FEI TALOS F200S TEM 200 kV and 
+Hitachi HT7800 (100 kV). For TEM analysis, samples were deposited as 
+10 μL of a 1 mM QD in a hexane solution on a copper support grid. For 
+the ICP–MS analysis, an Agilent 7700x inductively coupled plasma-mass 
+spectrometer was used. The powder samples were digested in 10 mL of 
+aqua regia (8 mL of HNO3 + 2 mL HCl) via a Start D Milestone Micro­
+wave Digestion System, and the obtained samples were diluted with a 
+deionized water (18.2 MΩ) by a ratio of 1:3. FT-IR measurement was 
+conducted by using Thermo Scientific iS10 FT-IR. 
+5.8. ROS detection and quantification 
+To monitor the generation of reactive oxygen species (ROS), a trap 
+sensor molecule called 2′,7′-dichlorofluorescein diacetate (DCFH-DA) 
+was utilized at a concentration of 10 µM. To convert DCFH-DA to 
+dichlorofluorescin, DCFH-DA in ethanol was reacted with 0.01 N NaOH 
+and allowed to sit at room temperature for 30 min. The hydrolysate was 
+then neutralized with sodium phosphate buffer at pH 7.4. The presence 
+of ROS was detected by an increase in the emission spectrum of DCFH at 
+525 nm upon oxidation. Both InP/ZnO quantum dots (QDs) and a blank 
+sample were irradiated with green light, and the fluorescence intensity 
+of DCFH at 525 nm was monitored at 0, 10, 20, and 30 min using an 
+Edinburgh Instruments FL-50 spectrofluorometer with excitation at 490 
+nm. For quantifying superoxide radicals (O2
+−), sodium 3′-[1-[(phenyl­
+amino)-carbony]-3,4-tetrazolium]-bis(4-methoxy-6-nitro) 
+benzene- 
+sulfonic acid hydrate (XTT) was used, and the formation of XTT for­
+mazan was detected and quantified by the absorbance at 470 nm. For 
+detection and quantification of singlet oxygen (1O2), ABDA (9,10- 
+anthracenediyl-bis(methylene)dimalonic acid) sensor molecule was 
+used. The molar concentration of each ROS species was determined 
+using Eq. (7). 
+C =
+∫T
+0 C0 −Ctdt
+T
+(7)  
+where C is the average molar concentration of ROS species, Co is the 
+S.U. Khan et al.                                                                                                                                                                                                                                 
+
+Chemical Engineering Journal 480 (2024) 148140
+8
+initial concentration of the sensor molecule, Ct is the concentration of 
+the sensor molecule at time t, T is the irradiation time. 
+The ROS generation mechanism was explored by using methyl violet 
+(MV) dye to test its photodegradation in the presence of InP/ZnO QDs. 
+Isopropanol (IPA) and 1,4 benzoquinone (BQ) were also utilized as 
+scavengers for hydroxyl (•OH) and superoxide radicals (O2
+•−), respec­
+tively [75]. The concentration of MV in each light exposure experiment 
+was measured by applying the Beer-Lambert law. 
+5.9. Quantum mechanical Calculation 
+To understand the quantum mechanical properties, the Poisson and 
+Schrodinger equations solved self-consistently in the effective mass 
+approximation [76]. In the calculations, the effective mass and dielectric 
+mismatches are considered. In BenDaniel-Duke boundary condition and 
+in the Hartree approximation, the radial Schr¨odinger equations for 
+electron and hole are given by: 
+[
+−ℏ2
+2 ∇r
+1
+me(r)∇r + Ve(r) −qeϕh(r)
+]
+Re(r) = εeRe(r)
+(8)  
+[
+−ℏ2
+2 ∇r
+1
+mh(r)∇r + Vh(r) −qhϕe(r)
+]
+Rh(r) = εhRh(r)
+(9)  
+where, first terms are kinetic energy operators, second terms are 
+confinement potentials for electron and hole, respectively. Third terms 
+are Coulomb interaction terms and with these terms, these two equa­
+tions are coupled. ϕe(r) and ϕh(r) in third terms correspond to electro­
+static Coulomb potential or Hartree potential for electron and hole, 
+respectively and qe(h) is the charge of the electron (hole). In Hartree 
+approximation, electron moves in the electrostatic potential of the hole 
+ϕh(r) and on the other hand, hole moves in the electrostatic potential of 
+the electron ϕe(r). εe(r) and Re(h)(r) correspond to energy eigenvalues and 
+their eigenfunctions for electron (hole). To determine the Hartree po­
+tentials of electron and hole, the Poisson equation is solved considering 
+the dielectric mismatch by means of 
+∇rε(r)∇r = −ρe(h)
+ε0
+(10) 
+Here, ε(r) is the dielectric constant of each layer of quantum dot 
+nanocrystal, ε0 is the dielectric permittivity of the vacuum and ρe(h) is the 
+charge density of electron (hole). All calculations are carried out fully 
+numerically in real space by matrix diagonalization methods. 
+5.10. Antibacterial study 
+The antibacterial activity of InP/ZnO quantum dots was evaluated 
+against Pseudomonas aeruginosa ATCC® 700829™, Escherichia coli 
+ATCC® 25922™, Staphylococcus epidermidis ATCC® 35984™ and 
+Enterococcus faecalis ATCC® 29212™ strains. Different concentrations 
+of the quantum dots, ranging from 50 to 125 µM, were tested to assess 
+the dose-dependent antibacterial effect. To perform the assay, overnight 
+bacterial cultures were diluted in 1 x PBS (Biowest) to obtain a final 
+concentration of 105 CFU/ml. The diluted cultures were then incubated 
+with the quantum dots for 1 h at 37 ◦C in 12-well Ibidi chambers. The 
+control group was incubated with PBS only. After the initial incubation, 
+the samples were exposed to a green light source (λmax = 530 nm) for 4 
+h. To evaluate the dark antibacterial activity of the quantum dots, a 
+separate set of samples was prepared without light exposure. The bac­
+terial viability was compared to the control group, which did not receive 
+quantum dot treatment or light exposure. To determine the viable bac­
+terial counts, serial dilutions were prepared, and the samples were 
+plated on agar plates. The experiments were performed in triplicate to 
+ensure reproducibility. 
+ROS generation by QDs under green light illumination was measured 
+via DCFH-DA in bacterial assays with a final concentration of 100 µM 
+DCFH-DA to compare the ROS increase within tested bacteria. Imme­
+diately after light exposure, DCFH was added, and fluorescence intensity 
+was measured at 485/538 nm with Biotek spectrophotometer. ROS in­
+crease was measured with respect to the untreated controls of each 
+bacterial species. 
+After the exposure to green light, P.aeruginosa samples were prepared 
+for SEM imaging. Briefly, the bacterial pellets were washed with 1x PBS 
+and fixated in 2.5% glutaraldehyde for 1 h. Subsequently, gradual 
+alcohol dehydration was performed by incubating the samples in 50, 70, 
+80, 90, and 100% ethanol for 10 min each. Following dehydration, 10 µL 
+of the samples were transferred onto glass slides, and the morphologies 
+were compared to untreated bacteria. To obtain high-resolution images, 
+the samples were coated with gold for 45 s and visualized using a 
+scanning electron microscope (SEM) at a magnification of 10,000X. This 
+approach enabled the evaluation of the morphological changes in the 
+bacterial cells following exposure to the quantum dots and green light 
+exposure. The fixation and dehydration steps ensured the preservation 
+of the bacterial structures, and the SEM imaging provided a detailed 
+analysis of the bacterial morphologies. 
+Cytotoxicity tests for both dark and light conditions were performed 
+on Vero-E6 cell lines, which were grown in high-glucose DMEM sup­
+plemented with 10% inactivated Fetal Bovine Serum and 1% Penicillin/ 
+Streptomycin/Amphotericin at 37 ◦C under 5% CO2. For the dark 
+cytotoxicity assays, the cells were grown to a confluency of 80–90%. 
+Similar to the antibacterial assay, InP/ZnO quantum dots were added to 
+the adhered Vero-E6 cells in a final concentration 125 µM and incubated 
+for 1 h at 37 ◦C. Following the QD incubation, 4 h light illumination was 
+applied to one culture set in CO2 incubator (37 ◦C) and dark culture set 
+was kept similarly at 37 ◦C without light illumination. After the incu­
+bation period, the media were gently removed, and the cells were 
+treated with 0.5 mg/ml MTT for 2 h at 37 ◦C. After the MTT incubation, 
+200 µL of DMSO was added to the cells, and the absorbance was 
+measured at 570 nm using a Multiskan GO plate reader. 
+5.11. Statistical analysis 
+Viable bacterial counts were compared with One-Way ANOVA test 
+using Graphpad Prism 9. Inhibition caused by QD and / or light exposure 
+were compared to control viable counts. The bacterial inhibition was 
+considered as statistically significant for p < 0.05. 
+CRediT authorship contribution statement 
+Saad Ullah Khan: Investigation, Methodology, Writing – original 
+draft, Writing – review & editing. Guncem Ozgun Eren: Conceptuali­
+zation, Investigation, Writing – review & editing. Nazli Atac: Investi­
+gation, Methodology, Writing – review & editing. Asim Onal: Data 
+curation, Formal analysis. Mohammad Haroon Qureshi: Formal 
+analysis, Methodology. Francis Korshe Cooper: Formal analysis, 
+Investigation, Methodology. Toghrul Almammadov: Formal analysis, 
+Investigation. Safacan Kolemen: Supervision, Writing – review & 
+editing. Mehmet Sahin: Software, Supervision, Writing – review & 
+editing. Fusun Can: Supervision, Writing – review & editing. Sedat 
+Nizamoglu: Conceptualization, Funding acquisition, Supervision, 
+Visualization, Writing – original draft, Writing – review & editing. 
+Declaration of competing interest 
+The authors declare the following financial interests/personal re­
+lationships which may be considered as potential competing interests: 
+Sedat Nizamoglu reports financial support was provided by European 
+Union’s Horizon 2020. Sedat Nizamoglu reports a relationship with 
+European Union’s Horizon 2020 that includes: funding grants. 
+S.U. Khan et al.                                                                                                                                                                                                                                 
+
+Chemical Engineering Journal 480 (2024) 148140
+9
+Data availability 
+Data will be made available on request. 
+Acknowledgment 
+This project has received funding from the European Union’s Hori­
+zon 2020 research and innovation programme under the Marie SKŁO­
+DOWSKA-CURIE grant agreement No. 955664 (STIMULUS). The 
+authors thank KUBAM (Koç University Boron and Advanced Materials 
+Application and Research Center, Turkey) for XRD and KUYTAM (Koç 
+University Surface Science and Technology Center, Turkey) for XPS, 
+ICP–MS and SEM imaging, respectively. The authors acknowledge Dr. 
+Suleyman Tekmen from BUMER (Bayburt University Central Research 
+Laboratory, Turkey) for his assistance in TEM characterization. The 
+authors acknowledge Dr. Gülen Esken, Tayfun Barlas and Selma Yalçın 
+from KUISCID (Koç University-˙Is¸bank Center for Infectious Diseases, 
+Turkey) for cell culture assays. 
+Appendix A. Supplementary data 
+Supplementary data to this article can be found online at https://doi. 
+org/10.1016/j.cej.2023.148140. 
+References 
+[1] Z. Khatoon, C.D. McTiernan, E.J. Suuronen, T.-F. Mah, E.I. Alarcon, Bacterial 
+biofilm formation on implantable devices and approaches to its treatment and 
+prevention, Heliyon 4 (2018). 
+[2] C. Moser, P.Ø. Jensen, K. Thomsen, M. Kolpen, M. Rybtke, A.S. Lauland, 
+H. Trøstrup, T. Tolker-Nielsen, Immune responses to Pseudomonas aeruginosa 
+biofilm infections, Front. Immunol. 12 (2021), 625597. 
+[3] P. Stewart, T. Bjarnsholt, Risk factors for chronic biofilm-related infection 
+associated with implanted medical devices, Clin. Microbiol. Infect. 26 (2020) 
+1034–1038. 
+[4] N. Mesaros, P. Nordmann, P. Pl´esiat, M. Roussel-Delvallez, J. Van Eldere, 
+Y. Glupczynski, Y. Van Laethem, F. Jacobs, P. Lebecque, A. Malfroot, Pseudomonas 
+aeruginosa: resistance and therapeutic options at the turn of the new millennium, 
+Clin. Microbiol. Infect. 13 (2007) 560–578. 
+[5] E. Banin, D. Hughes, O.P. Kuipers, Bacterial pathogens, antibiotics and antibiotic 
+resistance, FEMS Microbiol. Rev. 41 (2017) 450–452. 
+[6] J.R. Brannon, T.L. Dunigan, C.J. Beebout, T. Ross, M.A. Wiebe, W.S. Reynolds, 
+M. Hadjifrangiskou, Invasion of vaginal epithelial cells by uropathogenic 
+Escherichia coli, Nat. Commun. 11 (2020) 2803. 
+[7] F. Can, O.K. Azap, C. Seref, P. Ispir, H. Arslan, O. Ergonul, Emerging escherichia 
+coli O25b/ST131 clone predicts treatment failure in urinary tract infections, Clin. 
+Infect. Dis. 60 (2015) 523–527. 
+[8] N. Atac, K. Onbasli, I. Koc, H. Yagci Acar, F. Can, Fimbria targeting 
+superparamagnetic iron oxide nanoparticles enhance the antimicrobial and 
+antibiofilm activity of ciprofloxacin against quinolone-resistant E. coli, 
+J. Microbial. Biotechnol. (2023). 
+[9] P. Pachori, R. Gothalwal, P. Gandhi, Emergence of antibiotic resistance 
+Pseudomonas aeruginosa in intensive care unit; a critical review, Genes & Diseases 
+6 (2019) 109–119. 
+[10] C.M. Courtney, S.M. Goodman, J.A. McDaniel, N.E. Madinger, A. Chatterjee, 
+P. Nagpal, Photoexcited quantum dots for killing multidrug-resistant bacteria, Nat. 
+Mater. 15 (2016) 529–534. 
+[11] K. Atacan, N. Güy, M. ¨Ozacar, Recent advances in photocatalytic coatings for 
+antimicrobial surfaces, Curr. Opin. Chem. Eng. 36 (2022), 100777. 
+[12] B. Jia, X. Du, W. Wang, Y. Qu, X. Liu, M. Zhao, W. Li, Y.Q. Li, Nanophysical 
+antimicrobial strategies: a rational deployment of nanomaterials and physical 
+stimulations in combating bacterial infections, Adv. Sci. 9 (2022) 2105252. 
+[13] P. Ganguly, C. Byrne, A. Breen, S.C. Pillai, Antimicrobial activity of photocatalysts: 
+Fundamentals, mechanisms, kinetics and recent advances, Appl Catal B 225 (2018) 
+51–75. 
+[14] Z. Shaw, S. Kuriakose, S. Cheeseman, M.D. Dickey, J. Genzer, A.J. Christofferson, 
+R.J. Crawford, C.F. McConville, J. Chapman, V.K. Truong, Antipathogenic 
+properties and applications of low-dimensional materials, Nat. Commun. 12 (2021) 
+3897. 
+[15] B. Yang, Y. Chen, J. Shi, Reactive oxygen species (ROS)-based nanomedicine, 
+Chem. Rev. 119 (2019) 4881–4985. 
+[16] Y. Nosaka, A.Y. Nosaka, Generation and detection of reactive oxygen species in 
+photocatalysis, Chem. Rev. 117 (2017) 11302–11336. 
+[17] M. Hayyan, M.A. Hashim, I.M. AlNashef, Superoxide ion: generation and chemical 
+implications, Chem. Rev. 116 (2016) 3029–3085. 
+[18] Q. Cui, J.-Q. Wang, Y.G. Assaraf, L. Ren, P. Gupta, L. Wei, C.R. Ashby Jr, D.- 
+H. Yang, Z.-S. Chen, Modulating ROS to overcome multidrug resistance in cancer, 
+Drug Resist. Updat. 41 (2018) 1–25. 
+[19] M. Nita, A. Grzybowski, The role of the reactive oxygen species and oxidative stress 
+in the pathomechanism of the age-related ocular diseases and other pathologies of 
+the anterior and posterior eye segments in adults, Oxid. Med. Cell. Longev. (2016) 
+1–23. 
+[20] D.F. Stamo, P. Nagpal, A. Chatterjee, Light-activated quantum dot potentiation of 
+antibiotics to treat drug-resistant bacterial biofilms, Nanoscale Advances 3 (2021) 
+2782–2786. 
+[21] C.M. Courtney, S.M. Goodman, T.A. Nagy, M. Levy, P. Bhusal, N.E. Madinger, C. 
+S. Detweiler, P. Nagpal, A. Chatterjee, Potentiating antibiotics in drug-resistant 
+clinical isolates via stimuli-activated superoxide generation, Sci. Adv. 3 (2017) 
+e1701776. 
+[22] M. Levy, C.M. Courtney, P.P. Chowdhury, Y. Ding, E.L. Grey, S.M. Goodman, 
+A. Chatterjee, P. Nagpal, Assessing different reactive oxygen species as potential 
+antibiotics: selectivity of intracellular superoxide generation using quantum dots, 
+ACS Applied Bio Materials 1 (2018) 529–537. 
+[23] C.R. McCollum, M. Levy, J.R. Bertram, P. Nagpal, A. Chatterjee, Photoexcited 
+quantum dots as efficacious and nontoxic antibiotics in an animal model, ACS 
+Biomater Sci. Eng. 7 (2021) 1863–1875. 
+[24] T.R. Aunins, K.A. Eller, C.M. Courtney, M. Levy, S.M. Goodman, P. Nagpal, 
+A. Chatterjee, Isolating the Escherichia coli transcriptomic response to superoxide 
+generation from cadmium chalcogenide quantum dots, ACS Biomater Sci. Eng. 5 
+(2019) 4206–4218. 
+[25] K.A. Eller, D.F. Stamo, C.R. McCollum, J.K. Campos, M. Levy, P. Nagpal, 
+A. Chatterjee, Photoactivated antibiotics to treat intracellular infection of bacteria, 
+Nanoscale Advances 5 (2023) 1910–1918. 
+[26] M. Levy, J.R. Bertram, K.A. Eller, A. Chatterjee, P. Nagpal, Near-infrared-light- 
+triggered antimicrobial indium phosphide quantum dots, Angew. Chem. 131 
+(2019) 11536–11540. 
+[27] C.R. McCollum, J.R. Bertram, P. Nagpal, A. Chatterjee, Photoactivated indium 
+phosphide quantum dots treat multidrug-resistant bacterial abscesses in vivo, ACS 
+Appl. Mater. Interfaces 13 (2021) 30404–30419. 
+[28] I. Lee, J. Moon, H. Lee, S. Koh, G.-M. Kim, L. Gauth´e, F. Stellacci, Y.S. Huh, P. Kim, 
+D.C. Lee, Photodynamic treatment of multidrug-resistant bacterial infection using 
+indium phosphide quantum dots, Biomaterials Science 10 (2022) 7149–7161. 
+[29] S. Gangadoo, C. Xu, D. Cozzolino, K. Latham, E. Della Gaspera, J. Chapman, V. 
+K. Truong, Probing nanoscale interactions of antimicrobial zinc oxide quantum 
+dots on bacterial and fungal cell surfaces, Advanced Materials Interfaces 9 (2022) 
+2101484. 
+[30] J. Li, X. Wei, Y. Hu, Y. Gao, Y. Zhang, X. Zhang, A fluorescent nanobiocide based on 
+ROS generation for eliminating pathogenic and multidrug-resistant bacteria, 
+J. Mater. Chem. B 9 (2021) 3689–3695. 
+[31] S. Wen, T. Wu, H. Long, L. Ke, S. Deng, L. Huang, J. Zhang, S. Tan, Mechanism 
+insight into rapid photodriven sterilization based on silver bismuth sulfide 
+quantum dots, ACS Appl. Mater. Interfaces 13 (2021) 21979–21993. 
+[32] D. Dorfs, T. Franzl, R. Osovsky, M. Brumer, E. Lifshitz, T.A. Klar, A. Eychmüller, 
+Type-I and type-II nanoscale heterostructures based on cdte nanocrystals: a 
+comparative study, small, 4 (2008) 1148-1152. 
+[33] G.S. Selopal, H. Zhao, Z.M. Wang, F. Rosei, Core/shell quantum dots solar cells, 
+Adv. Funct. Mater. 30 (2020) 1908762. 
+[34] J.V. Frangioni, S.-W. Kim, S. Ohnishi, S. Kim, M.G. Bawendi, Sentinel lymph node 
+mapping with type-II quantum dots, Applications in Biology, Quantum Dots, 2007, 
+pp. 147–159. 
+[35] X. Jin, H. Li, S. Huang, X. Gu, H. Shen, D. Li, X. Zhang, Q. Zhang, F. Li, Q. Li, Bright 
+alloy type-II quantum dots and their application to light-emitting diodes, J. Colloid 
+Interface Sci. 510 (2018) 376–383. 
+[36] J. Nanda, S.A. Ivanov, M. Achermann, I. Bezel, A. Piryatinski, V.I. Klimov, Light 
+amplification in the single-exciton regime using Exciton−
+Exciton repulsion in 
+type-II nanocrystal quantum dots, J. Phys. Chem. C 111 (2007) 15382–15390. 
+[37] G. Yang, M. Kazes, D. Raanan, D. Oron, Bright near-infrared to visible 
+upconversion double quantum dots based on a type-II/type-I heterostructure, ACS 
+Photonics 8 (2021) 1909–1916. 
+[38] Y. Wang, Q. Wang, X. Zhan, F. Wang, M. Safdar, J. He, Visible light driven type II 
+heterostructures and their enhanced photocatalysis properties: a review, Nanoscale 
+5 (2013) 8326–8339. 
+[39] S. Sadeghi, H. Bahmani Jalali, R. Melikov, B. Ganesh Kumar, M. Mohammadi Aria, 
+C.W. Ow-Yang, S. Nizamoglu, Stokes-shift-engineered indium phosphide quantum 
+dots for efficient luminescent solar concentrators, ACS Appl. Mater. Interfaces 10 
+(2018) 12975–12982. 
+[40] G.O. Eren, S. Sadeghi, H. Bahmani Jalali, M. Ritter, M. Han, I. Baylam, R. Melikov, 
+A. Onal, F. Oz, M. Sahin, Cadmium-free and efficient type-II InP/ZnO/ZnS 
+quantum dots and their application for LEDs, ACS Appl. Mater. Interfaces 13 
+(2021) 32022–32030. 
+[41] H. Virieux, M. Le Troedec, A. Cros-Gagneux, W.-S. Ojo, F. Delpech, C. Nayral, 
+H. Martinez, B. Chaudret, InP/ZnS nanocrystals: coupling NMR and XPS for fine 
+surface and interface description, J. Am. Chem. Soc. 134 (2012) 19701–19708. 
+[42] L. Kazmerski, P. Ireland, P. Sheldon, T. Chu, S. Chu, C. Lin, Comparison of low- 
+temperature oxides on polycrystalline InP by AES, SIMS, and XPS, Journal of 
+Vacuum, Sci. Technol. 17 (1980) 1061–1066. 
+[43] L. Xi, D.-Y. Cho, A. Besmehn, M. Duchamp, D. Grützmacher, Y.M. Lam, B. 
+E. Kardynał, Effect of zinc incorporation on the performance of red light emitting 
+InP core nanocrystals, Inorg. Chem. 55 (2016) 8381–8386. 
+[44] M.D. Tessier, E.A. Baquero, D. Dupont, V. Grigel, E. Bladt, S. Bals, Y. Coppel, 
+Z. Hens, C. Nayral, F. Delpech, Interfacial oxidation and photoluminescence of InP- 
+based core/shell quantum dots, Chem. Mater. 30 (2018) 6877–6883. 
+[45] H.B. Jalali, S. Sadeghi, I.B. Dogru Yuksel, A. Onal, S. Nizamoglu, Past, present and 
+future of indium phosphide quantum dots, Nano Res. 15 (2022) 4468–4489. 
+S.U. Khan et al.                                                                                                                                                                                                                                 
+
+Chemical Engineering Journal 480 (2024) 148140
+10
+[46] Y.-H. Won, O. Cho, T. Kim, D.-Y. Chung, T. Kim, H. Chung, H. Jang, J. Lee, D. Kim, 
+E. Jang, Highly efficient and stable InP/ZnSe/ZnS quantum dot light-emitting 
+diodes, Nature 575 (2019) 634–638. 
+[47] S. Musi´c, A. ˇSari´c, S. Popovi´c, Formation of nanosize ZnO particles by thermal 
+decomposition of zinc acetylacetonate monohydrate, Ceram. Int. 36 (2010) 
+1117–1123. 
+[48] H. Bahmani Jalali, M. Mohammadi Aria, U.M. Dikbas, S. Sadeghi, B. Ganesh 
+Kumar, M. Sahin, I.H. Kavakli, C.W. Ow-Yang, S. Nizamoglu, Effective neural 
+photostimulation using indium-Based type-II quantum dots, ACS Nano 12 (2018) 
+8104–8114. 
+[49] O. Karatum, G.O. Eren, R. Melikov, A. Onal, C.W. Ow-Yang, M. Sahin, 
+S. Nizamoglu, Quantum dot and electron acceptor nano-heterojunction for photo- 
+induced capacitive charge-transfer, Sci. Rep. 11 (2021) 2460. 
+[50] M.V. Kovalenko, M. Scheele, D.V. Talapin, Colloidal nanocrystals with molecular 
+metal chalcogenide surface ligands, Science 324 (2009) 1417–1420. 
+[51] A. Nag, M.V. Kovalenko, J.-S. Lee, W. Liu, B. Spokoyny, D.V. Talapin, Metal-free 
+inorganic ligands for colloidal nanocrystals: S2–, HS–, Se2–, HSe–, Te2–, HTe–, 
+TeS32–, OH–, and NH2–as surface ligands, J. Am. Chem. Soc. 133 (2011) 
+10612–10620. 
+[52] H.J. Yun, T. Paik, M.E. Edley, J.B. Baxter, C.B. Murray, Enhanced charge transfer 
+kinetics of CdSe quantum dot-sensitized solar cell by inorganic ligand exchange 
+treatments, ACS Appl. Mater. Interfaces 6 (2014) 3721–3728. 
+[53] A. Jiang, H. Guo, S. Yu, F. Zhang, T. Shuai, Y. Ke, P. Yang, Y. Zhou, Dual charge- 
+accepting engineering modified AgIn5S8/CdS quantum dots for efficient 
+photocatalytic hydrogen evolution overall H2S splitting, Appl Catal B 332 (2023), 
+122747. 
+[54] S. Yu, X.-B. Fan, X. Wang, J. Li, Q. Zhang, A. Xia, S. Wei, L.-Z. Wu, Y. Zhou, G. 
+R. Patzke, Efficient photocatalytic hydrogen evolution with ligand engineered all- 
+inorganic InP and InP/ZnS colloidal quantum dots, Nat. Commun. 9 (2018) 4009. 
+[55] K.V. Vokhmintcev, P.S. Samokhvalov, I. Nabiev, Charge transfer and separation in 
+photoexcited quantum dot-based systems, Nano Today 11 (2016) 189–211. 
+[56] M.P. Murphy, H. Bayir, V. Belousov, C.J. Chang, K.J. Davies, M.J. Davies, T.P. Dick, 
+T. Finkel, H.J. Forman, Y. Janssen-Heininger, Guidelines for measuring reactive 
+oxygen species and oxidative damage in cells and in vivo, Nature Metabolism 4 
+(2022) 651–662. 
+[57] Y. Li, W. Zhang, J. Niu, Y. Chen, Mechanism of photogenerated reactive oxygen 
+species and correlation with the antibacterial properties of engineered metal-oxide 
+nanoparticles, ACS Nano 6 (2012) 5164–5173. 
+[58] A.A. Boghossian, F. Sen, B.M. Gibbons, S. Sen, S.M. Faltermeier, J.P. Giraldo, C. 
+T. Zhang, J. Zhang, D.A. Heller, M.S. Strano, Application of nanoparticle 
+antioxidants to enable hyperstable chloroplasts for solar energy harvesting, Adv. 
+Energy Mater. 3 (2013) 881–893. 
+[59] A. Basu, A.J. Misra, M. Behera, S.K. Behera, A.K. Nayak, N.K. Dhal, A. Mishra, B. 
+K. Satpathy, C.S. Lundborg, S.K. Tripathy, Photocatalytic disinfection of extended- 
+spectrum beta-lactamase producing escherichia coli using alumina/ZnO 
+heterostructures, J. Environ. Chem. Eng. 9 (2021), 106334. 
+[60] X. Zhang, G. Zhang, H. Zhang, X. Liu, J. Shi, H. Shi, X. Yao, P.K. Chu, X. Zhang, 
+A bifunctional hydrogel incorporated with CuS@ MoS2 microspheres for 
+disinfection and improved wound healing, Chem. Eng. J. 382 (2020), 122849. 
+[61] S. Cheeseman, A.J. Christofferson, R. Kariuki, D. Cozzolino, T. Daeneke, R. 
+J. Crawford, V.K. Truong, J. Chapman, A. Elbourne, Antimicrobial metal 
+nanomaterials: from passive to stimuli-activated applications, Adv. Sci. 7 (2020) 
+1902913. 
+[62] Y. Wang, J. Kong, X. Zhang, Y. Liu, Z. Huang, L. Yuan, Y. Zhang, J. Cao, L. Chen, 
+Y. Liu, Plumbagin resurrect colistin susceptible against colistin-resistant 
+Pseudomonas aeruginosa in vitro and in vivo, Front. Microbiol. 13 (2022) 
+1020652. 
+[63] W. Xie, S. Zhang, F. Pan, S. Chen, L. Zhong, J. Wang, X. Pei, Nanomaterial-based 
+ROS-mediated strategies for combating bacteria and biofilms, J. Mater. Res. 36 
+(2021) 822–845. 
+[64] V. Brunetti, H. Chibli, R. Fiammengo, A. Galeone, M.A. Malvindi, G. Vecchio, 
+R. Cingolani, J.L. Nadeau, P.P. Pompa, InP/ZnS as a safer alternative to CdSe/ZnS 
+core/shell quantum dots: in vitro and in vivo toxicity assessment, Nanoscale 5 
+(2013) 307–317. 
+[65] G. Fan, C. Wang, J. Fang, Solution-based synthesis of III–V quantum dots and their 
+applications in gas sensing and bio-imaging, Nano Today 9 (2014) 69–84. 
+[66] F. Gao, T. Shao, Y. Yu, Y. Xiong, L. Yang, Surface-bound reactive oxygen species 
+generating nanozymes for selective antibacterial action, Nat. Commun. 12 (2021) 
+745. 
+[67] X. Wu, M. Yang, J.S. Kim, R. Wang, G. Kim, J. Ha, H. Kim, Y. Cho, K.T. Nam, 
+J. Yoon, Reactivity differences enable ROS for selective ablation of bacteria, 
+Angew. Chem. 134 (2022) e202200808. 
+[68] X. Hu, H. Zhang, Y. Wang, B.-C. Shiu, J.-H. Lin, S. Zhang, C.-W. Lou, T.-T. Li, 
+Synergistic antibacterial strategy based on photodynamic therapy: progress and 
+perspectives, Chem. Eng. J. 450 (2022), 138129. 
+[69] L. Huang, Y. Xuan, Y. Koide, T. Zhiyentayev, M. Tanaka, M.R. Hamblin, Type I and 
+Type II mechanisms of antimicrobial photodynamic therapy: an in vitro study on 
+gram-negative and gram-positive bacteria, Lasers Surg. Med. 44 (2012) 490–499. 
+[70] R.M. Amin, B. Bhayana, M.R. Hamblin, T. Dai, Antimicrobial blue light 
+inactivation of Pseudomonas aeruginosa by photo-excitation of endogenous 
+porphyrins: in vitro and in vivo studies, Lasers Surg. Med. 48 (2016) 562–568. 
+[71] Y. Liu, H. Zhang, Y. Xu, Quantum dots for pathogenic bacterial monitoring and 
+combating, Adv. Opt. Mater. 11 (2023) 2201826. 
+[72] Y. Wang, Y. Wang, Y. Wang, C.K. Murray, M.R. Hamblin, D.C. Hooper, T. Dai, 
+Antimicrobial blue light inactivation of pathogenic microbes: state of the art, Drug 
+Resist. Updat. 33 (2017) 1–22. 
+[73] M. Palma, J. Zurita, J.A. Ferreras, S. Worgall, D.H. Larone, L. Shi, F. Campagne, L. 
+E. Quadri, Pseudomonas aeruginosa SoxR does not conform to the archetypal 
+paradigm for SoxR-dependent regulation of the bacterial oxidative stress adaptive 
+response, Infect. Immun. 73 (2005) 2958–2966. 
+[74] P.Ø. Jensen, A. Briales, R.P. Brochmann, H. Wang, K.N. Kragh, M. Kolpen, 
+C. Hempel, T. Bjarnsholt, N. Høiby, O. Ciofu, Formation of hydroxyl radicals 
+contributes to the bactericidal activity of ciprofloxacin against Pseudomonas 
+aeruginosa biofilms, Pathogens and Disease 70 (2014) 440–443. 
+[75] M.R. Shariati, A. Samadi-Maybodi, A.H. Colagar, Dual cocatalyst loaded reverse 
+type-I core/shell quantum dots for photocatalytic antibacterial applications, 
+J. Mater. Chem. A 6 (2018) 20433–20443. 
+[76] A. Aktürk, M. Sahin, F. Koc, A. Erdinc, A detailed investigation of electronic and 
+optical properties of the exciton, the biexciton and charged excitons in a multi-shell 
+quantum dot nanocrystal, J. Phys. D Appl. Phys. 47 (2014), 285301. 
+S.U. Khan et al.

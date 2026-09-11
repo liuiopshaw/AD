@@ -1,0 +1,3875 @@
+Nature Biomedical Engineering
+nature biomedical engineering
+https://doi.org/10.1038/s41551-026-01667-x
+Article
+DeepDrugDiscovery identifies blood–brain 
+barrier permeable autophagy enhancers for 
+Alzheimer’s disease
+ 
+Yu Dong
+1,18, Xianglu Xiao
+2,3,4,18, Xu-Xu Zhuang
+1,18, Wenfan Wu3,5,6,18, 
+Zi-Ying Wang1,7, Shuang Zhang1,8, Jin-Tao Li1, Ke Zhang1, Wen-Yu Fu
+1, 
+Jun-Ming Chen1, Shi Hang Xiong1, Shenglong Deng 
+  2,4, Krinos Li 
+  2, Chao Ma3, 
+Wangzhen Jin3, Xurui Jin3, Qiwei Cai3, Han-Ming Shen9, Min Li 
+  10, Huanxing Su1, 
+Jian-Bo Wan 
+  1, Hua Yu1, Defang Ouyang1,11, Keqiang Ye 
+  12, Evandro F. Fang13,14, 
+Chris Soon Heng Tan 
+  8, Guang Yang 
+  2,15,16,17, Zhangming Niu 
+  3,4,15 
+ & 
+Jia-Hong Lu 
+  1 
+Dysfunctional autophagy, a key cellular cleaning process, is a key driver 
+of brain ageing and neurodegenerative diseases such as Alzheimer’s 
+disease (AD). However, developing effective treatments by enhancing 
+autophagy has been challenging, as most known compounds act through 
+the broad mTOR pathway, risking side effects, and few can effectively 
+penetrate the brain. To address this, we developed DeepDrugDiscovery—a 
+mechanism-aware, AI-powered screening platform incorporating ADMET 
+and blood–brain barrier penetrability predictions. Here we show that this 
+platform successfully identified novel, mTOR-independent autophagy 
+enhancers, with two lead compounds demonstrating an ability to 
+cross the blood–brain barrier, clear AD-related protein aggregates and 
+restore memory function in worm and mouse AD models. By releasing 
+DeepDrugDiscovery as an open-source, modular tool, we offer a 
+user-friendly AI platform that enables customized therapeutic screening. 
+Our work establishes a scalable, AI-driven pipeline that integrates 
+cross-species validation to rapidly discover mechanism-based therapeutics 
+for diseases with high unmet medical need.
+Alzheimer’s disease (AD), the most prevalent neurodegenerative dis-
+order, affects over 35 million individuals worldwide1,2. Autophagy, 
+an evolutionarily conserved cellular process in eukaryotic cells, is 
+essential for cellular waste clearance and materials recycling3. This 
+lysosome-dependent pathway degrades damaged and unnecessary 
+subcellular components (such as organelles and misfolded proteins), 
+maintaining homeostasis in the central nervous system (CNS). Accu-
+mulating evidence highlights a potential driving role of autophagic 
+dysfunction in the pathogenesis and progression of neurodegen-
+erative diseases, particularly in AD4–7. Recent studies have indicated 
+that small-molecule autophagy inducers can exert neuroprotective 
+effects by clearing abnormal protein aggregates in brain tissue, such 
+as Aβ and hyperphosphorylated proteins, as well as by restoring mito-
+chondrial function and energy metabolism8,9. The clinical translation 
+of autophagy enhancers in AD remains challenging. Although most 
+known autophagy enhancers act via mTOR-dependent pathways, their 
+clinical translation has been limited10–12. Targeting mTOR-independent 
+pathways presents a promising alternative with a potentially improved 
+safety profile. However, advancing this strategy is hampered by two 
+principal factors: the diversity of biological mechanisms available 
+Received: 4 April 2025
+Accepted: 23 March 2026
+Published online: xx xx xxxx
+ Check for updates
+A full list of affiliations appears at the end of the paper. 
+ e-mail: zhangming@mindrank.ai; jiahonglu@um.edu.mo
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+patterns and molecular properties. The variational autoencoder 
+learned to compress and reconstruct molecular features while pre-
+serving a well-regularized latent space (validation reconstruction 
+loss, 0.033 per bit; Kullback–Leibler divergence, 0.05–0.07) (Extended 
+Data Fig. 1c). This unsupervised learning approach enabled the model 
+to discern meaningful chemical relationships within the molecular 
+space. The resulting latent representations enabled the calculation of 
+virtual screening scores between any compound and the reference set 
+using a molecular attention mechanism (Fig. 1c,d).
+A set of 50 mTOR-independent autophagy enhancers was system-
+atically curated using the autophagy modulator scoring system11,20 
+as reference compounds (Extended Data Fig. 1b and Supplementary 
+Table 2). In the virtual screening workflow, the initial step was to gen-
+erate embeddings for both the reference compounds and the com-
+pound library using the molecular representation models. Our graphics 
+processing unit (GPU)-accelerated molecular attention mechanism 
+rapidly computed scores between each library compound and the 
+50 reference enhancers, generating a 50 × 1,155,606 scoring matrix 
+within seconds (Fig. 1e,f and Extended Data Fig. 2a). High-dimensional 
+virtual screening was performed as a ranking-based prioritization 
+rather than a hypothesis-testing analysis, and therefore did not involve 
+multiple-comparison correction.
+Using the ADMET Ranker platform for multi-tiered filtering 
+(Fig. 1g), we refined the initial 6,834 hits that had surpassed a selec-
+tion threshold of 0.65 (Fig. 2a,b). This threshold was determined based 
+on previous validation studies and computational efficiency consid-
+erations, aiming to balance downstream screening tractability with 
+the risk of prematurely excluding potentially active compounds21–23. 
+First, physicochemical property scoring narrowed the pool to 3,068 
+candidates with favourable drug-like properties (Fig. 2c,d). Subse-
+quent assessment of BBB permeability and drug-likeness identified 
+449 compounds with optimal CNS penetration potential (ADMET score 
+≥10) (Fig. 2e). Final computational filtering, involving molecular dock-
+ing of candidate compounds against mTOR-related targets (FKBP12, 
+mTOR kinase and the FKBP12–mTOR complex) and verification of 
+commercial availability, yielded 15 top candidates for experimental 
+validation (Fig. 2f).
+Validation of candidate mTOR-independent 
+autophagy enhancers
+To assess the autophagy-modulating activity of selected compounds, 
+we utilized the well-established mRFP-EGFP-LC3 tandem fluorescent 
+reporter system24. In this assay, GFP fluorescence is quenched within 
+acidic autolysosomes, while RFP remains stable, with RFP-only signals 
+denoting mature, functional autolysosomes. We used a PC12 cell line 
+stably expressing mRFP-EGFP-LC3B to evaluate the effects of 15 candi-
+dates on autophagy modulation. Following treatment, we quantified 
+red (RFP+) and yellow (RFP+/GFP+) puncta among experimental groups. 
+All 15 compounds induced autophagy at a level comparable to that 
+induced by our positive control Torin1 (Fig. 3a,b). The observed increase 
+in red puncta indicates enhanced autophagic flux. Furthermore, immu-
+noblotting for LC3-II and SQSTM1/p62 confirmed these findings, reveal-
+ing modulation of these key autophagy markers (Fig. 3c,d).
+To determine whether the autophagy-inducing capacity of the 
+tested compounds was cell-type specific, we extended our analysis 
+to N2a neuroblastoma cells, examining biochemical changes in 
+LC3-II and SQSTM1/p62 levels. Consistent with the observations 
+in PC12 cells, treatment with these compounds also modulated 
+LC3-II and SQSTM1/p62 protein levels in N2a cells, although the 
+effects were variable. Notably, while some drugs induced minimal 
+changes in LC3-II, they significantly reduced SQSTM1/p62 levels 
+(Fig. 3e–j). Further evaluation identified seven compounds, clevi-
+dipine, ombuin (Omb), 3′,4′,7-trimethoxyquercetin, salicylic acid, 
+hydroxygenkwanin, 2-hydroxycinnamic acid (2-HCA) and rilu-
+zole, that significantly decreased SQSTM1/p62 levels (Fig. 4a and 
+for drug targeting and the inherent difficulty in achieving sufficient 
+blood–brain barrier (BBB) penetration with such compounds10,13,14.
+The advent of artificial intelligence (AI) has ushered in a trans-
+formative era for traditional drug discovery paradigms. By leveraging 
+advanced algorithms and computational power, AI offers substantial 
+assistance across multiple critical stages, including large-scale vir-
+tual screening, lead compound optimization and the prediction of 
+pharmacokinetic/pharmacodynamic properties. These capabilities 
+represent a notable leap forward from conventional computer-aided 
+drug design, delivering marked improvements in both the efficiency 
+and predictive accuracy of the discovery pipeline15,16. Despite these 
+substantial advances, a notable limitation persists: current AI-driven 
+platforms, while powerful, largely remain constrained by virtual screen-
+ing strategies predicated on single target structures or specific ligand 
+frameworks. This approach may not be fully adequate for addressing 
+complex pharmacological phenomena where the therapeutic effect 
+arises from modulating broader, multi-faceted biological mechanisms 
+rather than interacting with a single, well-defined protein target.
+Therefore, developing novel methodologies capable of conduct-
+ing large-scale virtual screening based not on specific molecular struc-
+tures but on shared biological mechanisms represents a critical and 
+open challenge. To tackle this challenge, we developed DeepDrug-
+Discovery (https://deepdrugdiscovery.mindrank.ai/), an AI-driven 
+drug discovery platform that moves beyond traditional virtual screen-
+ing by adopting a mechanism-centric approach. Instead of relying 
+on the chemical structural similarity emphasized by conventional 
+methods17–19, the platform screens for mTOR-independent autophagy 
+inducers by identifying shared biological mechanisms, thereby ena-
+bling the discovery of structurally diverse compounds that act on 
+the same pathway. Furthermore, the platform integrates absorption, 
+distribution, metabolism, excretion and toxicity (ADMET) properties 
+and BBB permeability predictions into a unified workflow, allowing 
+for efficient prioritization of candidate compounds from large-scale 
+virtual screening to experimental validation. This end-to-end design 
+avoids the challenges associated with multi-platform data transfer and 
+accelerates the discovery process. Using this approach, we successfully 
+identified two novel lead compounds. Both demonstrated the ability 
+to induce autophagy, penetrate the BBB and exert neuroprotective 
+effects in animal models of AD. This outcome validates the efficacy and 
+accuracy of this highly integrated multi-module AI-driven platform 
+for CNS drug discovery and expands the toolbox for next-generation 
+AI-driven drug discovery.
+Establishment of an AI-accelerated platform 
+for screening of mTOR-independent autophagy 
+enhancers
+We developed a hybrid molecular representation approach for molec-
+ular modelling (Fig. 1a–c). This approach integrates a variational 
+autoencoder with a gated recurrent unit-based feature fusion mod-
+ule to encode molecular fingerprints alongside one-dimensional (1D) 
+and three-dimensional (3D) descriptors. Initially, we constructed 
+a comprehensive and structurally diverse compound library 
+tailored to our screening objectives. Commercially available compounds 
+were collected, curated and standardized, resulting in a dataset of 1.16 
+million compounds with substantial chemical diversity (Morgan finger-
+print diversity score, 0.881 ± 0.001; ring system diversity, 3.585 ± 0.015; 
+chemical space coverage, 3.411 ± 0.007) (Extended Data Fig. 1a 
+and Supplementary Table 1). The compound library was used as a 
+pre-training dataset for the variational autoencoder molecular rep-
+resentation model, which transformed molecular structures into 
+information-rich latent representations without requiring activity- 
+labelled training data.
+The molecular representation model architecture used a gated 
+recurrent unit cell to integrate 2,048-bit Morgan fingerprints (ECFP4) 
+with 19 1D and 3D descriptors, effectively capturing both structural 
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+e
+f
+100
+100
+50
+50
+–100
+–100
+–50
+0
+–50
+t-SNE component 2
+t-SNE component 1
+0
+Molecular representation
+(virtual screening database)
+Molecular representation
+(reference compounds)
+MatMul
+Parallel
+computing
+Scale
+Molecular attention
+Molecular database preparation
+Representation encoder
+Representation merge
+Gated recurrent unit cell
+Molecular attention score
+1,155,606 × 50 metrics
+Scoring metrics
+Aggregation based on t-SNE
+Predictive modelling
+BBB permeability
+Physiochemistry
+LogD, LogP
+pKa, pKb
+Solubility
+In vitro
+Caco-2 cell
+MDCK cell
+BBB prediction
+Pre-training
+Transformer
+Eﬀicient parameter fine-tuning
+Physiochemistry
+In vitro
+LogD
+pKa
+Solubility
+Caco-2
+MDCK
+BBB
+Y
+N
+N
+Y
+N
+N
+d
+g
+a
+b
+c
+1,155,606 
+compounds
+Virtual drug
+screening library
+Molecular weight
+LogP, HBA, HBD
+Special patterns
+Count of numbers
+Statistical characteristics
+Electrostatics 
+and conformation
+Molecular fingerprint
+2D 
+fingerprints
+1D and 3D 
+descriptor
+features
+Fingerprints 
+encoder
+Features
+encoder
+Rectified 
+linear unit
+Decoder
+Molecular representation
+St
+rt
+ht
+σ
+σ
+tanh
+1-
+Rectified 
+linear unit
+100
+80
+Ionization (%)
+60
+40
+0
+0
+2
+4
+6
+8 10 12 14
+20
+ph
+1.0
+0.9
+0.8
+0.7
+0.6
+Fig. 1 | Workflow of the DeepDrugDiscovery for ligand-based virtual screening and predictive modelling. a, Molecular database preparation; HBA, hydrogen bond 
+acceptor; HBD, hydrogen bond donor. b, Representation encoder. c, Representation merge. d, Molecular attention. e, Scoring metrics. f, Aggregation based on t-SNE. 
+g, BBB permeability and ADMET predictions.
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+Extended Data Fig. 3a,b). Moreover, these compounds increased the 
+formation of mature autolysosome, as indicated by an increase in 
+red puncta (Fig. 4b). To investigate the underlying mechanisms, we 
+assessed the effects of these compounds on mTOR signalling and 
+its downstream substrates. Unlike Torin1, a potent mTOR inhibitor 
+that reduced phospho-mTOR (Ser2448), phospho-p70 S6 kinase 
+(Ser371) and phospho-4E-BP1 (Thr37/46) levels, these seven candi-
+dates induced no significant changes (Fig. 4c), indicating that they 
+induce autophagy independently of mTOR under the tested dose and 
+experimental conditions.
+Among the seven AI-nominated and experimentally validated 
+mTOR-independent autophagy enhancers, we further evaluated their 
+drug-like potential based on (i) the originality of their autophagy- 
+inducing mechanisms of action, (ii) the novelty of their neuroprotective 
+activities and (iii) the diversity of their chemical structures. This sys-
+tematic evaluation led to the selection of four candidates, clevidipine, 
+Omb, 2-HCA and 3′,4′,7-trimethoxyquercetin, for further development 
+as potential treatments for AD (Extended Data Fig. 4a). To evaluate 
+autophagic flux, we performed an LC3-II turnover assay, measuring 
+LC3-II levels in the presence and absence of lysosomal inhibitors25. 
+Co-treatment with bafilomycin A1, alongside these four compounds 
+and the positive control Torin1, significantly increased LC3-II and 
+SQSTM1/p62 levels, confirming their ability to enhance autophagic 
+flux (Fig. 4d,e and Extended Data Fig. 3c–f).
+c
+d
+a
+b
+e
+f
+0
+500
+1,000
+1,500
+2,000
+BBB permeability and drug-likeness score
+Number of molecules
+0
+1
+2
+3
+4
+5
+9
+10
+7
+8
+6
+30
+Clevidipine
+Omb
+3′,4′,7-Trimethoxyquercetin
+Prudomestin
+Rhamnocitrin
+Ayanin
+Pachypodol
+Retusin
+Salicylic acid
+Bellidifolin
+Hydroxygenkwanin
+Prunetin
+2-HCA
+Riluzole
+3-Hydroxycinnamic acid
+Rapamycin
+Torin1
+0
+20
+10
+–10
+–20
+–30
+Binding aﬀinity
+prediction (kcal mol–1) 
+0
+0
+45
+327
+698
+1,098
+1,002
+868
+554
+449
+1,236
+Reference compound index
+Ligand-based
+screening score 
+0.9
+0.8
+0.7
+0.6
+0.5
+0.4
+0.3
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+Virtual screening results
+Stage 5
+Selected candidate drugs
+Stage 4
+Promising BBB permeability and 
+drug-likeness properties
+Stage 3
+Excellent absorption and transport, 
+and physicochemical properties 
+Stage 2
+mTOR-independent inducers 
+15
+449
+1,969
+6,834
+1,155,606
+Absorption and transport prediction
+The percentage of compound
+Terrible
+Fair
+Good
+Excellent
+Very good
+Physicochemical properties prediction
+The percentage of compound
+Terrible
+Fair
+Good
+Very good
+Excellent
+Outstanding
+Perfect
+Stage 1
+Virtual screening database
+Fig. 2 | DeepDrugDiscovery screening results of BBB penetrating mTOR-
+independent autophagy inducers. a, Overall results of virtual screening. b, Top 
+500 ligand-based screening scores for 50 reference compounds. Box plots show 
+the median (centre line) and interquartile range (box; 25th–75th percentiles). 
+Whiskers extend to the most extreme values within 1.5× the interquartile range 
+from the lower and upper quartiles. Outliers are not shown. The dashed red line 
+indicates the screening score threshold (0.65). c–e, Predictions of compound 
+properties: absorption and transport (c), key physicochemical parameters (d) 
+and BBB permeability along with drug-likeness (e). f, Distribution of predicted 
+binding free energies between candidate compounds and the mTOR protein.
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+a
+b
+GAPDH
+LC3B-II
+LC3B-II
+LC3B-I
+CTRL
+Clevidipine
+Omb
+3′,4′,7-Trimethoxyquercetin
+Rhamnocitrin 
+Prudomestin 
+Ayanin
+Pachypodol
+Retusin
+Torin1
+SQSTM1
+LC3B-I
+SE
+LE
+37
+15
+kDa
+50
+15
+37
+15
+kDa
+50
+CTRL
+Salicylic acid
+Bellidifolin
+Prunetin
+Hydroxygenkwanin
+2-HCA
+Riluzole
+3-Hydroxycinnamic acid
+Torin1
+15
+GAPDH
+LC3B-II
+LC3B-II
+LC3B-I
+SQSTM1
+LC3B-I
+SE
+LE
+37
+15
+kDa
+50
+CTRL
+Salicylic acid
+Bellidifolin
+Prunetin
+Hydroxygenkwanin
+2-HCA
+Riluzole
+3-Hydroxycinnamic acid
+Torin1
+GAPDH
+LC3B-II
+LC3B-I
+SQSTM1
+GAPDH
+LC3B-II
+LC3B-I
+CTRL
+Clevidipine
+Omb
+3′,4′,7-Trimethoxyquercetin
+Rhamnocitrin 
+Prudomestin 
+Ayanin
+Pachypodol
+Retusin
+Torin1
+SQSTM1
+37
+15
+kDa
+50
+c
+d
+e
+f
+g
+h
+i
+j
+LC3B-II/GAPDH
+CTRL
+Clevidipine
+Omb
+3′,4′,7-Trimethoxyquercetin
+Prudomestin
+Rhamnocitrin
+Ayanin
+Pachypodol 
+Retusin
+Torin1
+0
+0.5
+1.0
+1.5
+2.0
+***
+NS
+P < 0.001
+*** P < 0.001
+** P = 0.001
+**P = 0.007
+NS
+*P = 0.032
+NS
+SQSTM1/GAPDH
+0
+0.5
+1.0
+1.5
+2.0
+NS
+***
+*
+NS
+NS
+P = 0.021
+P < 0.001
+***P < 0.001
+CTRL
+Clevidipine
+Omb
+3′,4′,7-Trimethoxyquercetin
+Prudomestin
+Rhamnocitrin
+Ayanin
+Pachypodol 
+Retusin
+Torin1
+LC3B-II/GAPDH
+0
+0.5
+1.0
+1.5
+2.0
+0
+0.5
+1.5
+2.0
+CTRL
+Salicylic acid
+Bellidifolin
+Hydroxygenkwanin
+Prunetin
+2-HCA
+Riluzole
+3-Hydroxycinnamic acid
+Torin1
+**
+NS
+*** P < 0.001
+*** P < 0.001
+** P = 0.001
+NS
+*** P < 0.001
+P = 0.008
+***P < 0.001
+SQSTM1/GAPDH
+0
+0.5
+1.0
+1.5
+2.0
+CTRL
+Salicylic acid
+Bellidifolin
+Hydroxygenkwanin
+Prunetin
+2-HCA
+Riluzole
+3-Hydroxycinnamic acid
+Torin1
+NS
+***
+*
+ns
+NS
+P = 0.027
+P < 0.001
+***P < 0.001
+Autolysosomes
+Autophagosomes
+Defective autolysosomes
+0
+20
+40
+60
+80
+100
+Puncta per cell
+Summary of cross-species validation
+Stage 5
+Assessment of BBB permeability
+Stage 4
+Therapeutic eﬀicacy in AD models
+Stage 3
+Neuroprotective eﬀicacy of novel 
+autophagy enhancers
+Stage 2
+Potent induction of 
+mTOR-independent autophagy
+Stage 1
+Identification of potential 
+autophagy inducers
+2
+2
+4
+7
+15
+***P < 0.001
+***P < 0.001
+***P < 0.001
+***P < 0.001
+***P < 0.001
+***P < 0.001
+**P = 0.003
+***P < 0.001
+***P < 0.001
+***P < 0.001
+***P < 0.001
+***P < 0.001
+***P < 0.001
+***P < 0.001
+***P < 0.001
+***P < 0.001
+***P < 0.001
+*P = 0.019
+CTRL
+Clevidipine
+Omb
+3′,4′,7-Trimethoxyquercetin
+Prudomestin
+Rhamnocitrin
+Ayanin
+Pachypodol
+Retusin
+Salicylic acid
+Bellidifolin
+Hydroxygenkwanin
+Prunetin
+2-HCA
+Riluzole
+3-Hydroxycinnamic acid
+Torin1
+Bafilomycin A1
+Fig. 3 | Validation of candidate compounds for autophagy modulation.  
+a, Overall results of cross-species validation. b, Autophagic flux assay in 
+PC12-mRFP-EGFP-LC3B cells. Cells were treated with indicated compounds 
+(20 μM), Torin1 (1 μM) or bafilomycin A1 (100 nM) for 12 h. Images were acquired 
+using an Opera Phenix high-content imaging system. The average number 
+of red and yellow dots per cell was quantified (cells ≥30, n = 3 independent 
+biological replicates). c,d, Western blot (WB) analysis of LC3B-II and SQSTM1/
+p62 protein levels in PC12 cells treated with candidates (10 μM) or Torin1 
+(1 μM) for 24 h: clevidipine, ombuin (Omb), 3′,4′,7-trimethoxyquercetin, 
+prudomestin, rhamnocitrin, ayanin, pachypodol, retusin (c) and salicylic acid, 
+bellidifolin, hydroxygenkwanin, prunetin, 2-hydroxycinnamic acid (2-HCA), 
+riluzole, 3-hydroxycinnamic acid (d); LE, long exposure; SE, short exposure. 
+e,f, WB analysis of LC3B-II and SQSTM1/p62 protein levels in N2a cells under the 
+same treatment conditions. g–j, Semi-quantification of e,f (n = 3 independent 
+biological replicates). One-way analysis of variance (ANOVA) followed by 
+Dunnett’s multiple comparisons test (b,g–j). Quantitative data are shown 
+as mean ± s.d. NS, not significant; *P < 0.05; **P < 0.01; ***P < 0.001. Original 
+unprocessed WB gel data are in Source Data Fig. 3.
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+mTOR-independent autophagy enhancers 
+promote autophagy and clear abnormal proteins 
+in cellular models of AD
+To robustly quantify autophagy-related cargo turnover and lysosomal 
+proteolytic activity, we used the DQ-Red BSA assay26,27. Following cellular 
+endocytosis, DQ-Red BSA traffics through early and late endosomes 
+before merging with autophagosomes, which then fuse with lysosomes. 
+In the acidic, hydrolase-rich lysosomal environment, DQ-Red BSA is 
+cleaved, releasing detectable red fluorescent fragments (Fig. 4f). Treat-
+ment with clevidipine, Omb, 2-HCA and 3′,4′,7-trimethoxyquercetin 
+a
+b
+GAPDH
+LC3B-II
+LC3B-I
+SQSTM1
+CTRL
+Clevidipine
+Omb
+3′,4′,7-Trimethoxyquercetin
+Salicylic acid
+Hydroxygenkwanin
+2-HCA
+Riluzole
+Torin1
+37
+15
+kDa
+50
+CTRL
+Torin1
+Bafilomycin A1
+Clevidipine
+Omb
+3′,4′,7-
+Trimethoxyquercetin
+Salicylic
+acid
+Hydroxygenkwanin
+2-HCA
+Riluzole
+10 µm
+c
+d
+e
+g 
+h
+CTRL
+Torin1
+Bafilomycin A1
+Clevidipine
+Omb
+3′,4′,7-
+Trimethoxyquercetin
+2-HCA
+50 µm
+f
+Lysosome
+Autophagosome
+Autolysosome
+Amphisome
+Cytoplasm
+DQ-Red BSA traﬀicking assay
+Bafilomycin A1
+CTRL
+Torin1
+Clevidipine
+Omb
+2-HCA
+3′,4′,7-Trimethoxyquercetin
+DQ-Red
+BSA (MFI) 
+0
+5
+10
+15
+20
+*** P < 0.001
+GAPDH
+Phospho-4E-BP1
+(Thr37/46)
+Phospho-p70 S6 kinase
+(Ser371) 
+Phospho-mTOR
+(Ser2448)
+CTRL
+Clevidipine
+Omb
+Salicylic acid
+Hydroxygenkwanin
+2-HCA
+Riluzole
+Torin1
+37
+10
+kDa
+250
+3′,4′,7-Trimethoxyquercetin
+50
+250
+p70 S6 kinase
+mTOR
+50
+GAPDH
+LC3B-II
+LC3B-I
+CTRL
+Clevidipine 
+Omb
+Torin1
+Clevidipine 
+Bafilomycin A1
+Omb
+Torin1
+SQSTM1
++BAF
+37
+15
+kDa
+50
+37
+15
+kDa
+50
+CTRL
+2-HCA
+3′,4′,7-Trimethoxyquercetin
+Bafilomycin A1
+Torin1
+2-HCA
+3′,4′,7-Trimethoxyquercetin
+Torin1
++BAF
+GAPDH
+LC3B-II
+LC3B-I
+SQSTM1
+Fig. 4 | Characterization of candidate mTOR-independent autophagy 
+enhancers. a, WB analysis of LC3B-II and SQSTM1/p62 protein levels in N2a cells 
+treated with the indicated compounds (20 μM) or Torin1 (1 μM) for 24 h (n = 3 
+independent biological replicates). Statistical analyses are shown in Extended 
+Data Fig. 3a,b. b, Autophagic flux assay in PC12-mRFP-EGFP-LC3B cells. Cells were 
+treated with the indicated compounds (20 μM), Torin1 (1 μM) or bafilomycin A1 
+(100 nM) for 12 h. Representative images acquired using an Opera Phenix system 
+are shown (n = 3 independent biological replicates). c, WB analysis of mTOR and 
+its downstream substrates protein levels in N2a cells treated with the indicated 
+compounds (20 μM) or Torin1 (1 μM) for 6 h. d,e, WB analysis of LC3B-II and 
+SQSTM1/p62 protein levels in N2a cells treated with the indicated compounds 
+(20 μM) or Torin1 (1 μM) in the absence or presence of bafilomycin A1 (100 nM) 
+for 24 h (n = 3 independent biological replicates): clevidipine, ombuin (d) and 
+2-hydroxycinnamic acid, 3′,4′,7-trimethoxyquercetin (e). Statistical analyses are 
+shown in Extended Data Fig. 3c,f. f–h, PC12 cells were pre-incubated with DQ-Red 
+BSA for 0.5 h, followed by treatment with the indicated compounds (20 μM), 
+Torin1 (1 μM) or bafilomycin A1 (100 nM) for 4 h, and IncuCyte S3 live-cell analysis 
+system was applied. Schematic diagram of DQ-Red BSA assay (f), the results of 
+DQ-Red BSA assay (g), the mean fluorescence intensity (MFI) for each treatment 
+in g was quantified and analysed (cells ≥30, n = 3 independent biological 
+replicates) (h). One-way ANOVA followed by Dunnett’s multiple comparisons 
+test (h). Quantitative data are shown as mean ± s.d. NS, not significant; *P < 0.05; 
+**P < 0.01; ***P < 0.001. Original unprocessed WB gel data are in Source  
+Data Fig. 4.
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+resulted in a marked increase in red fluorescence intensity, indicating 
+enhanced autophagy induction and efficient substrate degradation in 
+autolysosomes (Fig. 4g,h).
+Genetic mutations in the genes encoding tau and amyloid pre-
+cursor protein (APP) drive the formation of neurofibrillary tangles 
+and amyloid plaques, recapitulating key pathological features of 
+AD28–30. Given that pharmacologically induced autophagy can attenu-
+ate tau pathology and Aβ accumulation, autophagy enhancement 
+represents a promising therapeutic strategy for AD23,31,32. In this 
+study, we assessed four compounds, clevidipine, Omb, 2-HCA and 
+3′,4′,7-trimethoxyquercetin, in cell lines overexpressing mutant tau 
+(P301L) or APP (K595N, M596L and V642F). Treatment with these com-
+pounds significantly reduced the levels of a series of key p-tau sites 
+(Thr181, Ser202, Thr205 and Thr231) (Fig. 5a–d) and decreased levels 
+of APP cleavage products (CTF-β and CTF-α) (Fig. 5e–g). Furthermore, 
+treatment mildly elevated LC3 while markedly decreasing SQSTM1/
+p62 levels (Fig. 5a,e and Extended Data Fig. 4b–f). Collectively, these 
+experiments identified Omb and 2-HCA as exhibiting the most potent 
+therapeutic effects.
+We next investigated whether Omb and 2-HCA promoted the deg-
+radation of hyperphosphorylated tau and APP-derived CTF-β/CTF-α 
+via an autophagosome–lysosome-dependent pathway. To address 
+this, we utilized SAR405 and bafilomycin A1, two well-established 
+autophagy inhibitors targeting early and late stages, respectively33,34. 
+Co-treatment with either inhibitor blocked the autophagic flux induced 
+by Omb and 2-HCA (Extended Data Fig. 4g), as well as the clearance of 
+g
+a
+CTRL
+Clevidipine 
+Omb
+2-HCA
+3′,4′,7-Trimethoxyquercetin
+APPK595N, M596L, V642F
+Vector
+kDa
+GAPDH
+APP-CTFβ
+APP-CTFα
+50
+10
+APP-CTFβ
+APP-CTFα
+LE
+SE
+37
+15
+LC3B-II
+LC3B-I
+SQSTM1
+10
+GAPDH
+LC3B-II
+LC3B-I
+CTRL
+Clevidipine 
+Omb
+2-HCA
+3′,4′,7-Trimethoxyquercetin
+SQSTM1
+TauP301L
+Vector
+Tau
+Phospho-Tau
+ 
+(Thr181)
+Phospho-Tau
+ 
+(Thr231)
+Phospho-Tau
+ 
+(Ser202, Thr205)
+37
+15
+kDa
+50
+50
+50
+50
+50
+e
+b
+kDa
+GAPDH
+APP-CTFβ
+APP-CTFα
+10
+APP-CTFβ
+APP-CTFα
+LE
+SE
+37
+10
+CTRL
+Omb
+2-HCA
+APPK595N, M596L, V642F
+Vector
+Omb
+Bafilomycin A1
+2-HCA
++BAF
+c
+h
+i
+***P < 0.001
+p-Tau(T181)
+/GAPDH
+0
+0.5
+1.0
+1.5
+2.0
+d
+** P = 0.003
+*** P < 0.001
+p-Tau(T231)
+/GAPDH
+0
+0.5
+1.0
+1.5
+2.0
+f
+CTF-β/GAPDH
+0
+0.5
+1.0
+1.5
+2.0
+*** P < 0.001
+CTF-α/GAPDH
+0
+0.5
+1.0
+1.5
+2.0
+***P < 0.001
+**P = 0.001
+** P = 0.003
+*** P < 0.001
+p-Tau(S202, T205)
+/GAPDH
+0
+0.5
+1.0
+1.5
+2.0
+GAPDH
+Tau
+Phospho-Tau
+(Thr181)
+ 
+Phospho-Tau
+(Thr231)
+ 
+Phospho-Tau
+(Ser202, Thr205)
+ 
+37
+50
+50
+50
+50
+CTRL
+Omb
+2-HCA
+TauP301L
+Vector
+kDa
+Omb
+Bafilomycin A1
+2-HCA
++BAF
+CTRL
+Clevidipine
+Omb
+2-HCA
+3′,4′,7-Trimethoxyquercetin
+CTRL
+Clevidipine
+Omb
+2-HCA
+3′,4′,7-Trimethoxyquercetin
+CTRL
+Clevidipine
+Omb
+2-HCA
+3′,4′,7-Trimethoxyquercetin
+CTRL
+Clevidipine
+Omb
+2-HCA
+3′,4′,7-Trimethoxyquercetin
+CTRL
+Clevidipine
+Omb
+2-HCA
+3′,4′,7-Trimethoxyquercetin
+Fig. 5 | Clearance of AD-related pathological proteins by candidate 
+compounds. a, WB analysis of total tau, phosphorylated tau (at multiple sites), 
+LC3B-II and SQSTM1/p62 protein levels in PC12 cells stably expressing tau P301L 
+treated with the indicated compounds (20 μM). b,c,d, Semi-quantification of 
+a (n = 3 independent biological replicates). Statistical analyses are shown in 
+Extended Data Fig. 4b–d. e, WB analysis of CTF-β, CTF-α, LC3B-II and SQSTM1/
+p62 protein levels in PC12 cells stably expressing APP KM595/596NL, V642F 
+treated with the indicated compounds (20 μM). f,g, Semi-quantification of 
+e (n = 3 independent biological replicates). Statistical analyses are shown in 
+Extended Data Fig. 4e,f. h, WB analysis of total tau and phosphorylated tau (at 
+multiple sites) protein levels in PC12 cells stably expressing tau P301L treated 
+with Omb or 2-HCA at 20 μM in the absence or presence of bafilomycin A1 (BAF; 
+100 nM) (n = 3 independent biological replicates). Statistical analyses are shown 
+in Extended Data Fig. 5a–d. i, WB analysis of CTF-β and CTF-α protein levels 
+in PC12 cells stably expressing APP K595N, M596L and V642F treated with the 
+indicated compounds (20 μM) in the absence or presence of BAF (100 nM) (n = 3 
+independent biological replicates). Statistical analyses are shown in Extended 
+Data Fig. 5e,f. One-way ANOVA followed by Dunnett’s multiple comparisons 
+test (b–d,f,g). Quantitative data are shown as mean ± s.d. NS, not significant; 
+*P < 0.05; **P < 0.01; ***P < 0.001. Original unprocessed WB gel data are in Source 
+Data Fig. 5.
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+hyperphosphorylated tau (Fig. 5h and Extended Data Fig. 5a–d,g,i–l) 
+and CTF-β/CTF-α fragments (Fig. 5i and Extended Data Fig. 5e,f,h,m,n). 
+In addition, we confirmed that physiologically relevant concentration 
+of Omb could still increase autophagic flux (Extended Data Fig. 4h,i). 
+These findings confirmed that the observed clearance effects were 
+dependent on the autophagic pathway.
+Omb and 2-HCA enhance autophagy and exert 
+neuroprotective effects in a C. elegans model  
+of AD
+To assess compound effects on autophagy in Caenorhabditis elegans 
+(C. elegans), we used a GFP::LGG1 reporter strain, in which the formation 
+of GFP-positive puncta (LGG1 is the C. elegans orthologue of mammalian 
+LC3/GABARAP proteins) indicates autophagic activity. Treatment with 
+Omb (50 μM) and 2-HCA (50 μM) significantly increased the number 
+of GFP::LGG1 puncta compared with untreated controls (Fig. 6a,b), 
+indicating increased autophagic flux. We next evaluated the effects of 
+the two lead compounds in C. elegans models expressing human tau 
+P301L, which recapitulate key features of AD. This model system has 
+been used to successfully screen drug candidates against AD, and some 
+of the screened positive compounds now in clinical trials23,32,35. Immu-
+noblotting assays revealed that both compounds effectively reduced 
+mutant tau protein levels (Fig. 6c), confirming that compound-induced 
+autophagy led to degradation of the aggregation-prone tau variant.
+a
+Vehicle
+Omb
+2-HCA
+***
+P < 0.001
+***
+P < 0.001
+GFP::LGG-1 puncta
+0
+100
+200
+300
+400
+Veh
+Omb
+2-HCA
+b
+ACTB
+Tau
+Phospho-Tau
+(Thr231)
+ 
+Phospho-Tau
+(Ser202, Thr205)
+ 
+37
+50
+50
+50
+Vehicle
+Omb
+2-HCA
+hTau[P301L]
+WT
+kDa
+c
+20 µm
+d
+e
+g
+h
+f
+i
+j
+Veh (naive)
+Veh (IA)
+Omb (naive)
+Omb (IA)
+2-HCA (naive)
+2-HCA (IA)
+Veh (naive)
+Veh (IA)
+Omb (naive)
+Omb (IA)
+2-HCA (naive)
+2-HCA (IA)
+–0.5
+0
+0.5
+1.0
+Chemotaxis index
+NS
+*
+P = 0.028
+*
+P = 0.015
+*
+P = 0.015
+WT
+hTau[P301L]
+0
+20
+40
+60
+80
+100
+Survival (%)
+WT (Veh)
+hTau[P301L] (Veh)
+Days
+0
+4
+8
+12
+16
+20
+24
+28
+hTau[P301L] (Veh)
+hTau[P301L] (Omb)
+0
+20
+40
+60
+80
+100
+Survival (%)
+Days
+0
+4
+8
+12
+16
+20 24
+28
+hTau[P301L] (Veh)
+hTau[P301L] (2-HCA)
+0
+20
+40
+60
+80
+100
+Survival (%)
+Days
+0
+4
+8
+12
+16
+20
+24
+28
+Egg stage/L1 stage
+0
+20
+40
+60
+80
+100
+120
+Survival (%)
+CTRL
+12.5
+25.0
+50.0
+12.5
+25.0
+50.0
+(µM)
+2-HCA
+Omb
+L1 stage/L4 stage
+0
+20
+40
+60
+80
+100
+120
+CTRL
+12.5
+25.0
+50.0
+12.5
+25.0
+50.0
+(µM)
+2-HCA
+Omb
+L4 stage/adult stage
+0
+20
+40
+60
+80
+100
+120
+CTRL
+12.5
+25.0
+50.0
+12.5
+25.0
+50.0
+(µM)
+2-HCA
+Omb
+NS
+NS
+Fig. 6 | Omb and 2-HCA regulate autophagy and exhibit neuroprotective 
+effects in the C. elegans model of AD. a, Analysis of autophagy activity in 
+transgenic nematodes expressing GFP::LGG-1 treated with Omb or 2-HCA at 
+50 μM. Fluorescence images were captured using a laser scanning confocal 
+microscope. b, The average number of green dots of a was quantified (n = 10 
+nematodes per group). Veh, vehicle; WT, wild type. c, WB analysis of total tau 
+and phosphorylated tau (at multiple sites) protein levels in N2 and transgenic 
+nematodes expressing hTau[P301L] (CK12) treated with Omb or 2-HCA at 50 μM. 
+For sample preparation, >200 nematodes were pooled per group. d, Analysis of 
+memory in N2 and CK12 treated with Omb or 2-HCA at 50 μM (n = 3 independent 
+biological replicates). One-way ANOVA followed by Tukey’s or Dunnett’s multiple 
+comparisons test (d). e–g, Analysis of lifespan in N2 and CK12 treated with Omb 
+or 2-HCA at 50 μM: WT (Veh) vs hTau[P301L] (Veh) (e), hTau[P301L] (Veh) vs 
+hTau[P301L] (Omb) (f) and hTau[P301L] (Veh) vs hTau[P301L] (2-HCA) (g).  
+h–j, Analysis of toxicity from egg hatching, development to L4 stage and time to 
+reach adulthood in N2 nematodes treated with Omb or 2-HCA at 12.5 μM, 25 μM 
+and 50 μM (n = 3 independent biological replicates): from the egg stage to L1 
+stage (h), from L1 stage to L4 stage (i) and from L4 stage to adult stage (j). One-
+way ANOVA followed by Dunnett’s multiple comparisons test (b,i,j). Quantitative 
+data are shown as mean ± s.d. NS, not significant; *P < 0.05; **P < 0.01; ***P < 0.001. 
+Original unprocessed WB gel data are in Source Data Fig. 6.
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+The chemotaxis assay, which quantifies worm movement towards 
+attractants, offers a reliable and sensitive behavioural measure of 
+learning and memory deficits in these organisms36. In this paradigm, 
+starvation was used as an aversive stimulus with isoamyl alcohol as a 
+‘cue’ linked to ‘no food’. Wild-type worms, preconditioned with isoamyl 
+alcohol and subsequently re-exposed, exhibited learned aversion by 
+moving away from the stimulus source. By contrast, tau P301L trans-
+genic worms showed impaired learning and memory, failing to exhibit 
+the anticipated aversion even after preconditioning, recapitulating 
+cognitive deficits observed in neurodegenerative diseases. Notably, 
+Omb (50 μM) and 2-HCA (50 μM) significantly improved the chem-
+otaxis index in tau transgenic worms (Fig. 6d), indicating restored 
+memory function.
+Finally, we assessed the effect of compound treatment on lifespan. 
+Consistent with previous reports23 and analogous to reduced survival in 
+patients with AD37,38, tau P301L transgenic worms exhibited a shortened 
+median lifespan compared with wild-type animals (Fig. 6e). This short-
+ened lifespan reflects the deleterious effects of pathological tau expres-
+sion, serving as a biological readout of tauopathy-related impairment. 
+Treatment with Omb (50 μM) or 2-HCA (50 μM) significantly extended 
+the median lifespan of tau transgenic worms by 6 and 4 days, respec-
+tively (Fig. 6f,g), supporting the conclusion that these compounds 
+confer neuroprotection and mitigate tau-induced toxicity. Finally, 
+we confirmed that Omb and 2-HCA did not show any detectable side 
+effects or developmental toxicity, as assessed through egg hatching, 
+progression to the L4 larval stage and timing of adulthood (Fig. 6h–j).
+Omb and 2-HCA stimulate autophagy, improve 
+cognitive function and clear abnormal protein 
+aggregates in 3×Tg-AD mice
+The 3×Tg-AD mouse model, which overexpresses mutant APP, tau and 
+presenilin 1, reproduces both Aβ and tau pathological features39,40. We 
+assessed the neuroprotective effects of Omb and 2-HCA in 3×Tg-AD 
+mice by analysing changes in spatial memory using the Morris water 
+maze (Fig. 7a,b). Over four training days, wild-type mice exhibited 
+progressive learning, reflected in reduced latency to find the hidden 
+platform (Fig. 7c). By contrast, untreated 3×Tg-AD mice, exhibiting 
+impaired memory and learning, showed no significant reduction in 
+latency. Treatment with Omb (10 mg kg−1 per day) or 2-HCA (10 mg kg−1 
+per day) for 2 months beginning at age 16 months ameliorated these 
+deficits (Fig. 7c). On day 5, with the platform removed, drug-treated 
+3×Tg-AD mice showed increased crossings over the former platform 
+location and spent more time and distance in the target quadrant 
+(Fig. 7d–g), indicating improved spatial memory in this AD model.
+Short-term learning and memory were further assessed using 
+the Y-maze and Novel Object Recognition tests (Fig. 7h,j). Compared 
+with wild-type controls, untreated 3×Tg-AD mice showed significantly 
+impaired performance in both assays (Fig. 7i,k), consistent with their 
+characteristic cognitive impairments. Following treatment with Omb 
+or 2-HCA, 3×Tg-AD mice exhibited substantial improvement in the 
+Y-maze, as evidenced by increased spontaneous alternation behaviour, 
+a marker of enhanced working memory (Fig. 7i). In this test, although 
+the effect of 2-HCA on recognition memory did not reach statistical 
+significance, a trend towards improvement was observed for both 
+compounds (Fig. 7k).
+After behavioural testing, hippocampal tissues from 3×Tg-AD mice 
+were collected and cryosectioned. Immunostaining was performed 
+on the vulnerable CA1 region41,42 to assess the deposition of phos-
+phorylated tau (p-Thr217) and Aβ (detected with the 4G8 antibody) 
+(Fig. 7a). Omb and 2-HCA substantially reduced phosphorylated tau 
+and Aβ levels in the CA1 region (Fig. 8a,b and Extended Data Fig. 6a,b). 
+Western blot analysis further confirmed significant reductions in 
+total tau, its key phosphorylated isoforms and APP cleavage products 
+(CTF-β and CTF-α) (Fig. 8c–j and Extended Data Fig. 6c). In addition, 
+both compounds increased LC3-II levels and decreased SQSTM1/p62 
+levels (Fig. 8e,k and Extended Data Fig. 6d), consistent with enhanced 
+autophagic flux. The administered doses of Omb and 2-HCA appeared 
+to be well tolerated, as evidenced by the absence of significant body 
+weight changes (Extended Data Fig. 6e).
+Omb and 2-HCA exhibit BBB penetration
+The BBB is a highly selective semipermeable interface that protects the 
+CNS from harmful substances in the circulation while also presenting 
+a major obstacle for the delivery of therapeutic agents targeting the 
+brain. Thus, the ability of a compound to cross the BBB is a crucial fac-
+tor in the development of treatments for CNS disorders. To evaluate 
+BBB penetration, we measured the brain penetration profiles of Omb 
+and 2-HCA in young mice following intravenous (tail vein) injection 
+at a dose of 10 mg kg−1, consistent with the dosage used in our thera-
+peutic efficacy studies in AD mouse models. Concentrations of each 
+compound were quantified in brain tissue, plasma and cerebrospinal 
+fluid at 0.5 h, 1 h and 2 h post-administration. The results demonstrated 
+that Omb was detectable in brain tissue at both 0.5 h and 1 h, reaching 
+a peak concentration of 516.00 ± 138.70 ng g−1 at 0.5 h post-injection. 
+This was accompanied by a relatively high brain-to-plasma ratio (>10), 
+confirming its favourable BBB penetration capability. Although the 
+brain concentration of 2-HCA was low (7.07 ± 0.40 ng g−1) and only 
+transiently detectable (at 0.5 h), its notable in vivo efficacy indicates 
+that its neuroprotective effects may be mediated through alterna-
+tive mechanisms. These could include facilitated accumulation in the 
+CNS via AD-associated BBB impairment43,44 and/or carrier-mediated 
+transport45,46 (Table 1).
+Predicted molecular mechanisms underlying 
+autophagy induction by Omb and 2-HCA
+To explore the molecular mechanisms by which Omb and 2-HCA 
+promote mTOR-independent autophagy, we used an integrated, 
+multi-tiered experimental strategy (Extended Data Fig. 7a). Initially, 
+thermal proteome profiling was applied to identify potential binding 
+proteins for both compounds47 (Extended Data Fig. 7b,c). We then 
+used the Enrichr tool to perform pathway enrichment analysis on the 
+predicted target proteins of Omb and 2-HCA (P < 0.05, log2FC > 0.5)48,49. 
+This integrated analysis identified Pip4k2a and Mtmr1 as the most 
+promising targets for Omb, and Ikbkb and Mapk8ip3 as primary 
+candidates for 2-HCA, based on the strong enrichment of these pro-
+teins with autophagy-related pathways (that is, inositol phosphate 
+metabolism and MAPK signalling) (Extended Data Fig. 8a–d and 
+Supplementary Tables 7–10).
+Protein–protein interaction analysis via the STRING database50 
+suggested that Omb may modulate phosphoinositide metabolism 
+through Pip4k2a and Mtmr1, potentially altering PI3P and PI5P levels 
+and thereby regulating the PI3KC3-C1 complex, a key regulator of 
+autophagosome nucleation and elongation (Extended Data Figs. 7d 
+and 8e,g). By contrast, 2-HCA likely acts through a different mechanism, 
+potentially involving the IKK–JNK1–Bcl-2 axis, which may regulate 
+Bcl-2 phosphorylation and subsequent release of Beclin1, modulating 
+assembly of the autophagy-initiation complex PI3KC3-C1 (Extended 
+Data Figs. 7e and 8f,h).
+Structurally, co-folding analyses using Boltz-251 indicated strong 
+binding potential between Omb and both Pip4k2a and Mtmr1, 
+while 2-HCA exhibited preferential binding capability with Ikbkb 
+(Extended Data Figs. 7f,g and 8i,j and Supplementary Table 11). Molec-
+ular dynamics simulations of the Omb–Pip4k2a, Omb–Mtmr1 and 
+2-HCA–Ikbkb complexes revealed that all three systems maintained 
+relatively stable conformations throughout the simulation trajectories, 
+with key dynamic parameters supporting their structural integrity 
+(Extended Data Fig. 9).
+Collectively, these data support a hypothetical model in which 
+both Omb and 2-HCA bypass canonical mTOR-dependent signalling 
+to directly promote autophagosome nucleation and elongation, albeit 
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+b
+d
+WT (Veh)
+3×Tg-AD (Veh)
+3×Tg-AD (Omb)
+3×Tg-AD (2-HCA)
+h
+i
+Y maze
+Novel object recognition
+k
+j
+a
+Drug treatment
+3×Tg-AD mice
+Start
+End
+Hippocampus 
+sampling
+Y maze
+Novel object 
+recognition
+Morris 
+water maze
+Behaviour tests
+Immunofluorescence 
+staining (CA1 region)
+Western blotting
+0
+20
+40
+60
+80
+1
+2
+3
+4
+5
+Days
+Latency to platform (s)
+***
+***
+**
+**
+WT (Veh)
+3×Tg-AD (Veh)
+3×Tg-AD (Omb)
+3×Tg-AD (2-HCA)
+***
+***
+e
+c
+WT (Veh)
+3×Tg-AD (Veh)
+3×Tg-AD (Omb)
+3×Tg-AD (2-HCA)
+Platform frequency
+0
+2
+4
+6
+8
+**P = 0.0014
+*P = 0.0165
+**P = 0.0040
+f
+**P = 0.0015
+*P = 0.0188
+*P = 0.0221
+Time spent
+in the target quadrant (%) 
+0
+20
+40
+60
+80
+WT (Veh)
+3×Tg-AD (Veh)
+3×Tg-AD (Omb)
+3×Tg-AD (2-HCA)
+g
+**P = 0.0016
+*P = 0.0103
+*P = 0.0206
+Distance spent
+in the target quadrant (%) 
+0
+20
+40
+60
+80
+WT (Veh)
+3×Tg-AD (Veh)
+3×Tg-AD (Omb)
+3×Tg-AD (2-HCA)
+Spontaneous
+alternation (%) 
+0
+20
+40
+60
+80
+WT (Veh)
+3×Tg-AD (Veh)
+3×Tg-AD (Omb)
+3×Tg-AD (2-HCA)
+***P < 0.001
+***P < 0.001
+P < 0.001
+P < 0.001
+P < 0.001
+Recognition
+index (%) 
+0
+20
+40
+60
+80
+WT (Veh)
+3×Tg-AD (Veh)
+3×Tg-AD (Omb)
+3×Tg-AD (2-HCA)
+**P = 0.0022
+P = 0.0155
+P = 0.2188
+*
+NS
+C
+A
+Correct
+B
+Incorrect
+C
+A
+B
+Familiarization session
+Same object
+Test session
+Habituated
+object
+New
+object
+Morris water maze
+Start
+Camera
+Start
+Fig. 7 | Omb and 2-HCA improve cognitive dysfunction in the 3×Tg-AD 
+mouse model. a, Experimental timeline. The 3×Tg-AD mice were treated with 
+Omb or 2-HCA at a dose of 10 mg kg−1 per day for 2 months via intraperitoneal 
+injection. Upon completion of behavioural testing, mice were euthanized 
+and transcardially perfused. Hippocampal tissue was collected for 
+immunofluorescence and WB analyses. b–g, Performance in the Morris water 
+maze test (n = 7 mice per group): schematic diagram of the Morris water maze (b), 
+analysis of latency to platform (c,d), analysis of platform frequency (e), analysis 
+of time spent in the target quadrant (f) and analysis of distance spent in the target 
+quadrant (g). h–k, Performance in the Y maze and Novel object recognition (n = 7 
+mice per group): schematic diagram of the Y maze and Novel object recognition 
+(h,j), analysis spontaneous alternation (i) and analysis of recognition index (k). 
+Two-way ANOVA followed by Tukey’s multiple comparisons test (c). One-way 
+ANOVA followed by Dunnett’s multiple comparisons test (e–g,i,k). Quantitative 
+data are shown as mean ± s.d. NS, not significant; *P < 0.05; **P < 0.01; ***P < 0.001.
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+through distinct molecular targets and pathways. While these pro-
+posed mechanisms are inferred from integrated computational and 
+proteomic data and provide a testable framework for understanding 
+compound action, they require further validation through targeted 
+experimental approaches.
+Discussion
+Recent advances in AI have markedly improved the efficiency of machine 
+learning and deep learning-based drug screening, offering substantially 
+higher throughput than traditional experimental methods52,53. Despite 
+this progress, AI-driven drug discovery is still an evolving field, facing 
+persistent challenges in predictive accuracy, model stability and opera-
+tional efficiency. In our earlier work, we developed an AI platform to 
+identify mitophagy modulators for neurodegenerative diseases23, but 
+its utility was limited by a small compound library (~3,000 molecules), 
+lack of capability for mechanism- or pathway-driven screening, and the 
+absence of integrated BBB permeability evaluation.
+To build upon this foundation and overcome these limitations, 
+we developed DeepDrugDiscovery, a novel platform designed to 
+identify mTOR-independent autophagy inducers with favourable 
+BBB penetration. The key features of DeepDrugDiscovery include (1) a 
+mechanism-driven screening paradigm that differs from conventional 
+structure- or ligand-based approaches; (2) higher screening efficiency, 
+hit rate and predictive accuracy compared with existing virtual screen-
+ing tools54–60 (Extended Data Fig. 2a and Supplementary Tables 3–6); 
+(3) integrated ADMET prediction capabilities relative to mainstream 
+a
+b
+Vehicle
+p-Tau-Thr217
+Hoechst
+Merge
+100 µm
+Omb
+2-HCA
+Vehicle
+4G8
+Hoechst
+Merge
+100 µm
+Omb
+2-HCA
+c
+f
+g
+GAPDH
+37
+10
+APP-CTFβ
+APP-CTFα
+APP-CTFβ
+APP-CTFα
+LE
+SE
+10
+d
+GAPDH
+37
+kDa
+50
+Tau
+3×Tg-AD mice
+WT mice
+Vehicle
+Vehicle
+Omb
+2-HCA
+Phospho-Tau
+(Thr181)
+ 
+50
+50
+Phospho-Tau
+(Thr231)
+ 
+50
+Phospho-Tau
+(Ser202, Thr205)
+ 
+e
+LC3B-II
+LC3B-I
+SQSTM1
+GAPDH
+37
+15
+50
+** P = 0.001
+** P = 0.003
+Veh
+Omb
+2-HCA
+Veh
+Omb
+2-HCA
+0
+0.5
+1.0
+1.5
+p-Tau(T181)/GAPDH
+*** P < 0.001
+Veh
+Omb
+2-HCA
+0
+0.5
+1.0
+1.5
+p-Tau(S202, T205)/
+GAPDH
+** P = 0.006
+** P = 0.004
+Veh
+Omb
+2-HCA
+0
+0.5
+1.0
+1.5
+p-Tau(T231)/GAPDH
+*** P < 0.001
+Veh
+Omb
+2-HCA
+0
+0.5
+1.0
+1.5
+CTF-β/GAPDH
+0
+0.5
+1.0
+1.5
+Tau/GAPDH
+** P = 0.005
+** P = 0.001
+h
+i
+j
+k
+** P = 0.008
+** P = 0.004
+Veh
+Omb
+2-HCA
+0
+0.5
+1.0
+1.5
+SQSTM1/GAPDH
+Fig. 8 | Omb and 2-HCA demonstrate the ability to clear abnormal 
+protein aggregates in the 3×Tg-AD mouse model. a,b, Representative 
+immunofluorescence images of phosphorylated tau (p-Thr217) (pseudo-
+coloured in magenta) (a) and Aβ (b) in the hippocampal CA1 region (n = 7 mice 
+per group). c–e, WB analysis of total tau, phosphorylated tau (at multiple sites) 
+(c), CTF-β, CTF-α (d), LC3B-II and SQSTM1/p62 (e) protein levels in mouse 
+hippocampal tissues. f–k, Semi-quantification of c–e (n = 3 mice per group).  
+One-way ANOVA followed by Dunnett’s multiple comparisons test (f–k). 
+Quantitative data are shown as mean ± s.d. NS, not significant; *P < 0.05; **P < 0.01; 
+***P < 0.001. Original unprocessed WB gel data are in Source Data Fig. 8.
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+platforms61–64 (Extended Data Fig. 2b–e), a critical feature that aids 
+in the selection of drug-like candidates; and (4) comprehensive 
+cross-species experimental validation, bridging AI-based prediction 
+and wet-lab confirmation to ultimately establish biological relevance.
+Despite being a promising therapeutic strategy for neurodegen-
+erative diseases for over two decades, no autophagy-targeting drug has 
+been approved for AD treatment so far. Numerous challenges hinder 
+the translation of this approach, including the complexity of autophagy 
+regulation in the brain and the lack of effective biomarkers to monitor 
+autophagic activity in vivo. Major obstacles include the side effects 
+associated with classical mTOR-dependent agents and the difficulty 
+in developing BBB-permeable autophagy enhancers. In this study, 
+we identified and validated two mTOR-independent, BBB-permeable 
+autophagy enhancers that exhibit neuroprotective effects in cellular, 
+C. elegans and mouse models of AD, providing candidates for future 
+therapeutic development.
+Nevertheless, this study has certain limitations, which also rep-
+resent opportunities for future research. Methodological limitations 
+currently restrict direct measurement of autophagic flux in brain tissue; 
+future studies could utilize tools such as mRFP-GFP-LC3 transgenic mice 
+to monitor autophagic activity within specific neural populations65. 
+Moreover, the therapeutic efficacy of these compounds has thus far 
+been evaluated in only a limited range of preclinical models. Transla-
+tion of these preclinical findings into clinical applications will require 
+comprehensive safety assessments and rigorous clinical trials to conclu-
+sively demonstrate efficacy and address potential concerns, including 
+excessive autophagy induction or off-target effects66. While DeepDrug-
+Discovery maintains substantial enrichment under similarity-stratified 
+and scaffold-split out-of-distribution evaluations, extending such per-
+formance to truly novel chemical space remains intrinsically challenging 
+owing to sparse data support and the frequent requirement for de novo 
+synthesis and optimization. Consequently, predictions in extreme 
+novelty regimes should be interpreted as hypothesis-generating and 
+pursued in close coordination with iterative experimental validation.
+In addition, natural products pose both a challenge and an oppor-
+tunity in target discovery owing to their polypharmacology—that is, 
+their ability to engage multiple targets simultaneously67,68. While this 
+multi-target engagement often underlies their therapeutic efficacy, 
+it also complicates the precise elucidation of their primary mech-
+anisms of action. To address this challenge, we used an integrated 
+multi-layered strategy combining thermal proteome profiling, bio-
+informatics, co-folding analysis and molecular dynamics simulations 
+to rapidly generate target hypotheses and accelerate deconvolution 
+of candidate compound targets. However, these predictions remain 
+largely unvalidated and function primarily as prioritization tools; 
+definitive target confirmation requires systematic downstream 
+experimental validation.
+Furthermore, the robustness and generalizability of the Deep-
+DrugDiscovery platform could be further enhanced through future 
+computational developments, such as (i) improving BBB permeability 
+prediction models, (ii) implementing uncertainty-based active learn-
+ing to iteratively refine predictions with new experimental data and 
+(iii) fine-tuning the variational autoencoder as more pathway-specific 
+datasets become available.
+Methods
+Identification of mTOR-independent autophagy enhancers 
+using the autophagy modulator scoring system
+To identify reference mTOR-independent autophagy enhancers, we 
+implemented a rigorous, multi-step strategy. First, we compiled a com-
+prehensive database of pharmacological studies reporting autophagy 
+enhancers. We then applied the autophagy modulator scoring system 
+to evaluate the methodological rigour of each study. For each candi-
+date molecule, we performed an exhaustive literature review using 
+‘mTOR’ as a keyword to confirm the absence of reported mTOR pathway 
+modulation. In addition, to minimize the risk of overlooking relevant 
+compounds, we manually curated autophagy-related review articles 
+to identify and confirm additional mTOR-independent candidates. 
+This multi-faceted approach ensured a meticulous and scientifically 
+robust selection for reference compounds, thereby establishing the 
+foundation for our subsequent AI-driven screening.
+Ligand-based virtual screening process
+The ligand-based virtual screening workflow began with the assembly 
+of a high-quality library of 1,155,606 compounds, which served as the 
+training dataset for a variational autoencoder to perform unsupervised 
+molecular representation learning. The trained variational autoen-
+coder generated latent embeddings for all library compounds and 
+a curated reference set of validated mTOR-independent autophagy 
+enhancers. Using a GPU-accelerated scoring framework, we identi-
+fied 6,834 compounds with similarity scores exceeding 0.65 relative 
+to the reference enhancers. These initial hits underwent multi-tiered 
+pharmacokinetic evaluation using our ADMET Ranker, prioritizing BBB 
+permeability and overall drug-likeness, which reduced the candidate 
+pool to 449 compounds. A final computational filter, incorporating 
+molecular docking against mTOR binding sites and verification of CAS 
+number availability, yielded 15 top candidates, which were advanced 
+for experimental validation.
+For the specific screening process, a compound library compris-
+ing 1.16 million molecules was curated from established commer-
+cial suppliers, including MedChemExpress, TSBiochem and other 
+reputable vendors, and is publicly accessible via Figshare (https://
+figshare.com/articles/dataset/Compound_Library_for_DeepDrug-
+Discovery_platform/31123354). This strategic sourcing ensures the 
+ready availability of identified hits, circumventing synthesis bot-
+tlenecks and facilitating a seamless transition from computational 
+prediction to experimental validation. For computational analysis, all 
+library compounds were converted into Simplified Molecular Input 
+Line Entry System (SMILES) format. This conversion involved three 
+critical steps to ensure the accuracy and usability of SMILES repre-
+sentations: (1) removal of invalid and duplicate SMILES notations, 
+(2) desalting of compounds and (3) normalization of SMILES nota-
+tions (details are provided in the Supplementary Methods). Compre-
+hensive diversity analysis confirmed broad and unbiased coverage 
+of chemical space, evidenced by high Morgan fingerprint diversity 
+(0.881 ± 0.001), substantial scaffold variety (ring system diversity 
+3.585 ± 0.015) and robust chemical space coverage (3.411 ± 0.007) 
+(Supplementary Table 1). Physicochemical profiling further revealed 
+favourable drug-like properties, with molecular weights ranging from 
+200 Da to 600 Da, balanced lipophilicity (LogP centred around 3), low 
+hydrogen bond donor counts (0–4) and appropriate topological polar 
+surface area distributions (Extended Data Fig. 1a).
+Table 1 | Pharmacokinetics study of Omb and 2-HCA
+Time (h)
+Omb
+2-HCA
+Brain concentration 
+(ng g−1)
+0.5
+516.00 ± 138.70
+7.07 ± 0.40
+1
+45.23 ± 4.88
+BLLOQ
+2
+BLLOQ
+BLLOQ
+Plasma concentration 
+(ng ml−1)
+0.5
+32.07 ± 20.85
+382.23 ± 90.73
+1
+2.29 ± 0.34
+29.63 ± 15.45
+2
+BLLOQ
+2.71 ± 0.80
+Cerebrospinal fluid 
+concentration (ng ml−1)
+0.5
+BLLOQ
+BLLOQ
+1
+BLLOQ
+BLLOQ
+2
+BLLOQ
+BLLOQ
+Data are mean ± s.d. BLLOQ, below the lower limit of quantitation (LLOQ). Brain LLOQ (ng g−1), 
+5.00; plasma LLOQ (ng ml−1), 2.00; cerebrospinal fluid LLOQ (ng ml−1), 6.00
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+To enhance molecular representation generation, we trained a 
+variational autoencoder model using a tailored hybrid architecture 
+designed for unsupervised molecular representation learning. The 
+model takes 2,048-bit Morgan fingerprints (ECFP4) as the primary 
+input to capture structural features via circular atom neighbourhoods. 
+These are supplemented by 19 one- and two-dimensional molecular 
+descriptors, which were discretized using a uniform KBinsDiscretizer 
+before encoding. The encoder network consists of a configurable 
+multi-layer stack incorporating batch normalization, rectified lin-
+ear unit activation and dropout applied after each layer. Molecular 
+fingerprints and auxiliary descriptors undergo separate linear trans-
+formations before being integrated via a gated recurrent unit cell, 
+which effectively captures interdependencies between structural 
+and physicochemical properties. The fused representation is then 
+processed through the encoder stack to generate the parameters of the 
+latent distribution. The decoder network transforms sampled latent 
+vectors to reconstruct the fingerprint space using a sigmoid-activated 
+output layer. Details of the model architecture are provided in the 
+Supplementary Methods.
+The variational autoencoder was trained in a fully unsuper-
+vised manner on a comprehensive compound library of 1.16 million 
+molecules, using an 80/20 train–validation split to ensure robust 
+learning and generalization of the molecular representation space. A 
+β-variational autoencoder training strategy with progressive Kullback–
+Leibler annealing was implemented, enabling the model to initially 
+prioritize accurate fingerprint reconstruction before gradually enforc-
+ing latent space regularization. Here Kullback–Leibler divergence 
+quantifies the divergence between the learned latent space probability 
+distribution and a target standard normal distribution. The loss func-
+tion integrated binary cross-entropy for fingerprint reconstruction 
+with Kullback–Leibler divergence regularization (L_total = L_recon-
+struction + β × L_Kullback–Leibler), balancing effective compression 
+and reconstruction of molecular fingerprints while fostering a smooth, 
+well-structured latent space. Gradient clipping was applied to enhance 
+optimization stability during training.
+The DeepDrugDiscovery model demonstrated robust reconstruc-
+tion performance, achieving a validation loss of 0.033 per bit, corre-
+sponding to approximately 93.3% bit-wise accuracy, and 98.9% fidelity 
+for reference mTOR-independent autophagy enhancers, confirming 
+effective capture of relevant molecular features (Extended Data Fig. 1c). 
+Leave-one-out cross-validation on 50 mTOR-independent enhancers 
+yielded a high retrieval success rate (Hit@500 = 86), with enrichment 
+factors reaching up to 162-fold over random selection and strong 
+ranking quality (mean reciprocal rank = 0.224, normalized discounted 
+cumulative gain@500 = 1.30) (Supplementary Table 3 and Supple-
+mentary Methods). Further analysis of out-of-distribution molecules 
+showed that leave-one-out performance decreased for compounds 
+with low similarity to the training data (Hit@500 = 81% for similarity 
+<0.3, n = 36; 71% for similarity <0.2, n = 21), while substantial enrich-
+ment over random screening (up to 288-fold) and informative ranking 
+quality were retained, indicating generalization to remote chemical 
+space (Supplementary Table 12 and Supplementary Methods). Five-
+fold scaffold-split cross-validation demonstrated reduced perfor-
+mance compared with in-distribution validation (Hit@500 = 80.6%), 
+yet strong enrichment over random screening (enrichment fac-
+tor@100 = 152×) and meaningful ranking quality (mean reciprocal 
+rank = 0.212; normalized discounted cumulative gain@500 = 0.70) 
+were maintained, supporting generalization across scaffold bounda-
+ries (Supplementary Table 13 and Supplementary Methods). Multiple 
+biologically distinct processes—including AMPK signalling, apopto-
+sis, CDK4, HDAC, PARP and proteasome pathways—were evaluated 
+using the same leave-one-out validation framework and consistently 
+achieved strong enrichment over random screening (enrichment fac-
+tor@100 up to 278×), with generally robust retrieval performance, 
+supporting the potential generalizability of the platform beyond 
+autophagy-centric chemistry (Supplementary Table 14 and Supple-
+mentary Methods). Ablation analysis further validated the robust-
+ness of the gated recurrent unit-based fusion design, as alternative 
+configurations reduced accuracy to 80–87% (Supplementary Table 5 
+and Supplementary Methods).
+All compounds in the library were encoded by the encoder compo-
+nent of the variational autoencoder into molecular representation vec-
+tors, which served as the computational input for ligand-based virtual 
+screening. To expedite candidate selection, we implemented a molecu-
+lar attention mechanism (equations (1) and (2)) that calculates the dot 
+product between a query vector and multiple key vectors, thereby 
+prioritizing the most relevant molecular features. In practice, cosine 
+distance matrix was applied in a batch-wise manner to compare molecu-
+lar embeddings, generating a normalized score matrix that identified 
+compounds most closely resembling the reference mTOR-independent 
+autophagy enhancers. This approach facilitated efficient and precise 
+candidate prioritization, significantly enhancing the throughput and 
+effectiveness of the ligand-based virtual screening process.
+For two sets of molecular representations qi and k j, each vector 
+was processed through an activation function f(), as shown in equation 
+(1). The molecular attention was calculated by computing the dot 
+product of the query and key vectors (Qi⋅K j) and normalizing it by the 
+Euclidean norm (L2-norm) | | Qi||||K j||, where a small constant ε included 
+to prevent division by zero.
+Qi = f(qi), K j = f(k j),
+(1)
+Molecular attentionij =
+Qi ⋅K j
+| | Qi| | | | K j| | + ε .
+(2)
+The molecular attention mechanism enhanced the efficient 
+processing of nonlinear molecular representations, significantly 
+improving the identification of candidate drugs in ligand-based vir-
+tual screening. Leveraging parallel computing, the GPU-accelerated 
+approach achieved exceptional computational speed, completing 
+the analysis of a 50 × 1,155,606 similarity matrix in 0.0925 s, render-
+ing it highly suitable for screening ultra-large compound libraries. 
+By contrast, conventional structure-based virtual screening meth-
+ods are estimated to require over 1,597 days to process a library of 
+equivalent size. In addition, a CPU-based version of the mechanism was 
+developed for local computing environments, offering flexibility for 
+smaller-scale applications despite operating over 3,000 times slower 
+than its GPU-accelerated counterpart (Extended Data Fig. 2a).
+The molecular attention mechanism subsequently performed 
+scoring, generating a 50 × 1,155,606 similarity matrix to identify 
+mTOR-independent small molecules. From this matrix, the top 500 
+scoring compounds for each reference were selected. Compounds with 
+a similarity score below 0.65 were excluded, yielding a refined library 
+of 6,834 high-potential candidates. For visualization, t-distributed 
+stochastic neighbor embedding (t-SNE) dimensionality reduction was 
+applied to project the data into two components, effectively illustrating 
+the structural diversity and distribution of the compounds (Fig. 1f). 
+In the t-SNE plot, reference compounds were depicted as larger green 
+dots, highlighting the library’s extensive coverage of diverse chemical 
+structures. The computational system utilized an Intel Xeon W7-3455 
+processor with 24 physical cores and 48 logical threads, paired with an 
+NVIDIA GeForce RTX 4090 graphics card.
+ADMET Ranker platform for ADMET and BBB permeability 
+prediction
+ADMET Ranker is an advanced graph transformer model designed to 
+predict ADMET properties. It uses a ‘Structure-Informed Pre-training 
+and Fine-tuning’ paradigm, enabling the model to first learn generaliz-
+able molecular representations from large, unlabelled datasets before 
+specializing in specific ADMET prediction tasks. The architecture 
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+integrates three key modules: (i) a structure-informed pre-training 
+module that leverages fragment-level feature learning and masked 
+node prediction to identify common scaffolds and substructures; 
+(ii) a fine-tuning module that utilizes hierarchical learning rate decay 
+and selective re-initialization to prevent overfitting while adapting 
+the model to specific endpoints, including BBB permeability, Caco-2 
+and MDCK permeability, LogD, pKa and solubility; and (iii) a feature 
+extraction module that generates robust ‘neural fingerprints’ for effec-
+tive use in data-limited scenarios. Together, these components enable 
+ADMET Ranker to capture complex structure–property relationships, 
+delivering accurate predictions across diverse ADMET tasks and sig-
+nificantly enhancing the efficiency of virtual screening pipelines. For 
+BBB permeability prediction specifically, ADMET Ranker was trained 
+and validated on a meticulously curated hybrid dataset. This dataset 
+integrates physiologically relevant in vivo data—primarily experi-
+mentally determined LogBB values (brain-to-plasma concentration 
+ratios) sourced from peer-reviewed literature and commercial data-
+bases—with complementary in vitro permeability data from human 
+brain endothelial cell-based transwell assays. The platform is freely 
+accessible at https://admet.mindrank.ai/, and methodological descrip-
+tions are available in the Supplementary Methods.
+We further evaluated the predictive performance of ADMET 
+Ranker on permeability-related assays, benchmarking it against estab-
+lished platforms such as ADMETlab 3.061, SwissADME62, admetSAR 
+3.063 and pkCSM64. Performance was assessed using a comprehensive 
+set of metrics: accuracy, area under the curve, F1-score, precision, 
+recall, Pearson correlation coefficient (R), mean absolute error and 
+root mean squared error. ADMET Ranker achieved competitive or 
+superior performance across these metrics (Extended Data Fig. 2b–e). 
+Specifically, it achieved higher accuracy (0.88–0.93), area under the 
+curve (0.81–0.82), F1-score (0.81–0.87), precision (0.80–0.94) and 
+recall (0.81–0.82) for Caco-2 permeability classification, MDCK efflux 
+ratio classification and BBB efflux ratio classification. For BBB regres-
+sion ADMET Ranker exhibited a strong correlation (R = 0.796) with low 
+mean absolute error (0.269) and root mean squared error (0.478). The 
+‘high confidence’ subset of predictions further improved performance, 
+particularly for BBB efflux ratio classification and MDCK efflux ratio 
+classification, with accuracy values of 0.95 and 0.86, and area under the 
+curve values of 0.86 for both endpoints. Although performance varied 
+across platforms and metrics, ADMET Ranker consistently showed 
+robust predictive accuracy for key ADMET properties, particularly 
+BBB-related endpoints. Detailed methods and results are provided in 
+the Supplementary Information.
+In our virtual screening pipeline, BBB permeability was evaluated 
+using ADMET Ranker. Unlike traditional approaches that rely on a single 
+predictive model, this platform simultaneously assesses physicochemi-
+cal and permeability-related properties, enabling a comprehensive 
+evaluation. This strategy minimized false positives and improved the 
+identification of compounds with optimal BBB permeability potential. 
+Six key physicochemical properties were evaluated to assess BBB perme-
+ability. LogD and LogP, indicators of lipophilicity, optimized lipid solubil-
+ity for membrane crossing while reducing retention in non-target tissues. 
+Water solubility ensured sufficient dissolution in the bloodstream for 
+effective brain delivery. Ionization constants (pKa and pKb) promoted 
+a non-ionized state at physiological pH, facilitating passage across lipid 
+membranes. In addition, permeability-related properties were examined 
+using predictive models focused on BBB penetration. The Caco-2 perme-
+ability (Class) score served as an initial indicator, assigning a value of 1 
+to compounds exhibiting ‘high permeability’. In the MDCK P-gp Efflux 
+(Class) model, compounds classified as ‘high efflux’ were assigned a 
+score of 0, reflecting reduced BBB permeability owing to active efflux; 
+all others received a score of 1, indicating lower efflux and enhanced per-
+meability. The BBB (Class) score evaluated penetration potential, with 
+‘BBB+’ compounds assigned a value of 1, signifying the capability to cross 
+the BBB. The BBB (Regression) score further quantified permeability 
+likelihood, refining candidate selection (Supplementary Table 6). Finally, 
+compounds achieving a comprehensive ADMET score of 10 were desig-
+nated as top candidates for experimental validation. In total, 449 candi-
+dates from the initial 6,834 hits successfully passed all physicochemical 
+and permeability property filters.
+Antibodies and reagents
+Antibodies: LC3B (Novus, NB100-2220), SQSTM1/p62, phospho-Tau 
+(Thr231) (Abcam, ab109012 and ab151559), mTOR, phospho-mTOR 
+(Ser2448), p70 S6 kinase, phospho-p70 S6 kinase (Ser371), 
+phospho-4E-BP1 (Thr37/46), Tau, phospho-Tau (Thr181) (Cell 
+Signaling Technology, 2983, 5536, 2708, 9208, 2855, 46687 and 
+12885), phospho-Tau (Ser202 and Thr205), phospho-Tau (Thr217) 
+(Thermo Fisher Scientific, MN1020, 44-744), APP, C-terminal 
+(Sigma-Aldrich, A8717), β-amyloid (BioLegend, SIG-39200), GAPDH, 
+HRP-conjugated goat anti-rabbit IgG (H + L), HRP goat anti-mouse 
+IgG (ABclonal, A19056, AS014 and AS003). Reagents: clevidipine, 
+Omb, 3′,4′,7-trimethoxyquercetin, prudomestin, rhamnocitrin, ayanin, 
+pachypodol, retusin, salicylic acid, bellidifolin, hydroxygenkwanin, 
+prunetin, 2-HCA, riluzole, 3-hydroxycinnamic acid (MedChemEx-
+press (Monmouth Junction), HY-17436, HY-N3139, HY-N7641, HY-N1547, 
+HY-N1353, HY-N2913, HY-N3121, HY-N6829, HY-B0167, HY-N2000, 
+HY-N1438, HY-N2597, HY-W012531, HY-B0211 and HY-N7127), isoamyl 
+alcohol (Macklin, I813912), bafilomycin A1 (Aladdin, B101389), Torin1 
+(LC Laboratories, T-7887), SAR405 (Sigma-Aldrich, 5330630001), 
+DQ-Red BSA (MedChemExpress, HY-D2449), Dulbecco’s modified Eagle 
+medium, fetal bovine serum, penicillin and streptomycin antibiotics, 
+Dulbecco’s phosphate-buffered saline (PBS), BCA protein concentra-
+tion assay kit (Thermo Fisher Scientific, 12100046, 10270106, 10378016, 
+21600010 and 23225), PVDF membrane, non-fat milk (Bio-Rad Labora-
+tories, 1620177, 170-6404) and High Sensitivity ECL Kit (MedChemEx-
+press (Monmouth Junction), HY-K2005).
+Plasmid construction and cell line establishment
+We obtained the following cDNA constructs from MiaoLingBio: 
+mRFP-EGFP-LC3B (P4838), tau P301L (P21765), and APP K595N, M596L 
+and V642F (P26936). These were cloned into either conventional or 
+doxycycline-inducible lentiviral vectors using a homologous recombi-
+nation kit (Beyotime Biotechnology, D7010). For the inducible vectors, 
+gene expression was maintained with 0.5 μg ml−1 doxycycline. Plasmid 
+accuracy was verified by sequencing. Lentiviruses were produced 
+using a third-generation packaging system. Subsequently, we infected 
+cells with these lentiviruses and established stable cell lines through 
+puromycin or blasticidin S selection.
+Pharmacokinetic study of Omb and 2-HCA in mice
+The pharmacokinetic study was performed at WuXi AppTec and adhered 
+to the study protocol and standard operating procedures (SOPs).
+Animals and drug administration. Eight-week-old male CD-1 mice 
+were housed under a 12 h/12 h light/dark cycle with free access to food 
+and water. On the experimental day, Omb or 2-HCA was administered 
+as a single intravenous bolus injection via the tail vein at a dose of 
+10 mg kg−1. Omb was dissolved in a mixture of N-methyl-2-pyrrolidone 
+and PEG300 (10:90, v/v), and 2-HCA was dissolved in 20% (w/v) 
+hydroxypropyl-β-cyclodextrin aqueous solution. At 0.5 h, 1 h and 2 h 
+post-dose, mice (n = 3) were anaesthetized. Blood was collected via 
+the jugular vein puncture into K2-EDTA-coated tubes and kept on wet 
+ice. Plasma was obtained by centrifugation at 3,200 × g for 10 min at 
+4 °C and stored at −80 °C. Cerebrospinal fluid was collected from the 
+cisterna magna (5 μl), transferred to low-binding tubes, flash-frozen 
+and stored at −80 °C. Before tissue collection, animals were transcardi-
+ally perfused with ice-cold saline to clear blood from the vasculature. 
+Whole brains were excised, rinsed with cold saline, blotted dry and 
+weighed. The right hemisphere was homogenized in methanol/15 mM 
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+PBS (1:2, v/v) at a ratio of 1:9 (weight/volume), and about 0.8 ml tissue 
+homogenate was stored at −80 °C. The left hemisphere was flash-frozen 
+intact as a backup.
+Sample preparation. For plasma and brain homogenate samples, 
+protein precipitation was performed in 96-well plates. Specifically, 
+3 µl of plasma or 40 µl of brain homogenate was aliquoted into the 
+plate, followed by the addition of 60 µl or 160 µl of a mixed internal 
+standard solution (containing labetalol and tolbutamide, each at 
+100 ng ml−1 in methanol), respectively. For double blank samples, an 
+equivalent volume of pure methanol was used instead. The mixtures 
+were vortexed for 10 min at 800 rpm and centrifuged at 3,200 × g for 
+15 min at 4 °C. Then, 55 µl of supernatant was transferred to a new 
+plate and centrifuged again under the same conditions before liquid 
+chromatography-tandem mass spectrometry (LC-MS/MS) analysis. 
+Cerebrospinal fluid samples were first mixed with an equal volume of 
+blank plasma. A 3 µl aliquot of the mixture was then processed identi-
+cally to plasma samples. All sample handling was conducted using 
+low-binding containers to minimize analyte adsorption.
+LC-MS/MS analysis. Sample concentrations were determined using a 
+Triple Quad 6500+ operating in negative electrospray ionization and 
+multiple reaction monitoring mode. Chromatographic separation was 
+achieved on an ACQUITY UPLC HSS T3 column (1.8 μm, 2.1 × 50 mm) 
+maintained at 45.0 °C. The mobile phase consisted of 0.1% formic acid in 
+water (A) and 0.1% formic acid in acetonitrile (B) using a gradient elution 
+(5% B at 0–0.2 min, increased linearly to 100% B by 1.0 min, held at 100% 
+B until 1.4 min and returned to 5% B at 1.41 min, maintained until 1.6 min) 
+at a flow rate of 0.6 ml min−1. The retention times were 1.08 min for Omb, 
+0.832 min for 2-HCA, 0.771 min for labetalol and 1 min for tolbutamide. 
+The multiple reaction monitoring transitions were m/z 329.10/299.00 
+for Omb, m/z 163.00/93.00 for 2-HCA, m/z 327.00/176.10 for labetalol 
+and m/z 269.00/169.80 for tolbutamide. Quantification was performed 
+using the internal standard method with calibration curves ranging from 
+0.500 ng ml−1 to 3,000 ng ml−1 across different matrices.
+Reporting summary
+Further information on research design is available in the Nature 
+Portfolio Reporting Summary linked to this article.
+Data availability
+Public candidate compound dataset is available via figshare at https://
+figshare.com/articles/dataset/Compound_Library_for_DeepDrug 
+Discovery_platform/31123354. DeepDrugDiscovery web interface is 
+available at https://deepdrugdiscovery.mindrank.ai/. ADMET predic-
+tion web interface is available at https://admet.mindrank.ai/. Source 
+data are provided with this paper.
+Code availability
+Primary GitHub repository is available at https://github.com/Xian-
+gLuXiao/DeepDrugDiscovery. This repository contains the complete 
+code for model training and inference, example datasets, tutorials, 
+documentation on computational requirements and configurations 
+for Docker containers or Conda environments.
+References
+1.	
+GBDDF Collaborators. Estimation of the global prevalence of 
+dementia in 2019 and forecasted prevalence in 2050: an analysis 
+for the Global Burden of Disease Study 2019. Lancet Public Health 
+7, e105–e125 (2022).
+2.	
+Zhang, J. et al. Recent advances in Alzheimer’s disease: 
+mechanisms, clinical trials and new drug development strategies. 
+Signal Transduct. Target. Ther. 9, 211 (2024).
+3.	
+Aman, Y. et al. Autophagy in healthy aging and disease. Nat. Aging 
+1, 634–650 (2021).
+4.	
+Nixon, R. A. & Rubinsztein, D. C. Mechanisms of 
+autophagy-lysosome dysfunction in neurodegenerative diseases. 
+Nat. Rev. Mol. Cell Biol. 25, 926–946 (2024).
+5.	
+Zhang, X. W. et al. Targeting autophagy in Alzheimer’s disease: 
+animal models and mechanisms. Zool. Res. 44, 1132–1145 (2023).
+6.	
+Kerr, J. S. et al. Mitophagy and Alzheimer’s disease: cellular and 
+molecular mechanisms. Trends Neurosci. 40, 151–166 (2017).
+7.	
+Kobro-Flatmoen, A. et al. Re-emphasizing early Alzheimer’s 
+disease pathology starting in select entorhinal neurons, with a 
+special focus on mitophagy. Ageing Res. Rev. 67, 101307 (2021).
+8.	
+Deng, Z. et al. Pharmacological modulation of autophagy for 
+Alzheimer’s disease therapy: opportunities and obstacles. Acta 
+Pharm. Sin. B 12, 1688–1706 (2022).
+9.	
+Date, Y. et al. Novel autophagy inducers by accelerating 
+lysosomal clustering against Parkinson’s disease. eLife 13, e98649 
+(2024).
+10.	 Sarkar, S. Regulation of autophagy by mTOR-dependent and 
+mTOR-independent pathways: autophagy dysfunction in 
+neurodegenerative diseases and therapeutic application of 
+autophagy enhancers. Biochem. Soc. Trans. 41, 1103–1130 (2013).
+11.	
+Dong, Y. et al. Autophagy modulator scoring system: a 
+user-friendly tool for quantitative analysis of methodological 
+integrity of chemical autophagy modulator studies. Autophagy 
+16, 195–202 (2020).
+12.	 Zhang, H. et al. Heterophyllin B enhances transcription factor 
+EB-mediated autophagy and alleviates pyroptosis and oxidative 
+stress after spinal cord injury. Int. J. Biol. Sci. 20, 5415–5435 
+(2024).
+13.	 Williams, A. et al. Novel targets for Huntington’s disease in an 
+mTOR-independent autophagy pathway. Nat. Chem. Biol. 4, 
+295–305 (2008).
+14.	 Zhang, X. et al. MTOR-independent, autophagic enhancer 
+trehalose prolongs motor neuron survival and ameliorates the 
+autophagic flux defect in a mouse model of amyotrophic lateral 
+sclerosis. Autophagy 10, 588–602 (2014).
+15.	 Mak, K. K. et al. Artificial intelligence in Drug Discovery and 
+Evaluation: Safety and Pharmacokinetic Assays (eds Franz, J. H. & 
+Michael, K.) 1461–1498 (Springer, 2024).
+16.	 Rehman, A. U. et al. Role of artificial intelligence in revolutionizing 
+drug discovery. Fundam. Res. 5, 2667–3258 (2024).
+17.	 Niu, Y. Z. & Lin, P. Advances of computer-aided drug design 
+(CADD) in the development of anti-Azheimer’s-disease drugs. 
+Drug Discov. Today 28, 103665 (2023).
+18.	 Zhou, G. et al. An artificial intelligence accelerated virtual 
+screening platform for drug discovery. Nat. Commun. 15, 7761 
+(2024).
+19.	 Zhang, K. et al. Artificial intelligence in drug development. Nat. 
+Med. 31, 45–59 (2025).
+20.	 Xiang, H. et al. Drug discovery by targeting the protein-protein 
+interactions involved in autophagy. Acta Pharm. Sin. B 13, 
+4373–4390 (2023).
+21.	 Yang, X. et al. Concepts of artificial intelligence for computer- 
+assisted drug discovery. Chem. Rev. 119, 10520–10594 (2019).
+22.	 Pham, T. H. et al. A deep learning framework for high-throughput 
+mechanism-driven phenotype compound screening and its 
+application to COVID-19 drug repurposing. Nat. Mach. Intell. 3, 
+247–257 (2021).
+23.	 Xie, C. et al. Amelioration of Alzheimer’s disease pathology 
+by mitophagy inducers identified via machine learning and a 
+cross-species workflow. Nat. Biomed. Eng. 6, 76–93 (2022).
+24.	 Mizushima, N., Yoshimori, T. & Levine, B. Methods in mammalian 
+autophagy research. Cell 140, 313–326 (2010).
+25.	 Tanida, I. et al. Lysosomal turnover, but not a cellular level, of 
+endogenous LC3 is a marker for autophagy. Autophagy 1, 84–91 
+(2005).
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+26.	 Marwaha, R. & Sharma, M. DQ-Red BSA trafficking assay in 
+cultured cells to assess cargo delivery to lysosomes. Bio Protoc. 
+7, e2571 (2017).
+27.	 Dong, Y. et al. Toosendanin, a novel potent vacuolar-type 
+H+-translocating ATPase inhibitor, sensitizes cancer cells to 
+chemotherapy by blocking protective autophagy. Int. J. Biol. Sci. 
+18, 2684–2702 (2022).
+28.	 Wang, Y. & Mandelkow, E. Tau in physiology and pathology.  
+Nat. Rev. Neurosci. 17, 5–21 (2016).
+29.	 Jonsson, T. et al. A mutation in APP protects against Alzheimer’s 
+disease and age-related cognitive decline. Nature 488, 96–99 (2012).
+30.	 DeLoach, K. E. Characterization of Mice Expressing APPSwe/Ind in 
+DG, CA3 or CA1 of the Hippocampus. MSc thesis, UC San Diego 
+(2012).
+31.	 Cai, Z. & Yan, L. J. Rapamycin, autophagy, and Alzheimer’s 
+disease. J. Biochem. Pharmacol. Res. 1, 84–90 (2013).
+32.	 Fang, E. F. et al. Mitophagy inhibits amyloid-beta and tau 
+pathology and reverses cognitive deficits in models of 
+Alzheimer’s disease. Nat. Neurosci. 22, 401–412 (2019).
+33.	 Pasquier, B. SAR405, a PIK3C3/Vps34 inhibitor that prevents 
+autophagy and synergizes with MTOR inhibition in tumor cells. 
+Autophagy 11, 725–726 (2015).
+34.	 Yamamoto, A. et al. Bafilomycin A1 prevents maturation 
+of autophagic vacuoles by inhibiting fusion between 
+autophagosomes and lysosomes in rat hepatoma cell line, 
+H-4-II-E cells. Cell Struct. Funct. 23, 33–42 (1998).
+35.	 Griffin, E. F., Caldwell, K. A. & Caldwell, G. A. Genetic and 
+pharmacological discovery for Alzheimer’s disease using 
+Caenorhabditis elegans. ACS Chem. Neurosci. 8, 2596–2606 (2017).
+36.	 Cao, S. Q. et al. Chemotaxis assay for evaluation of memory-like 
+behavior in wild-type and Alzheimer’s-disease-like C. elegans 
+models. STAR Protoc. 4, 102250 (2023).
+37.	 Strand, B. H. et al. Survival and years of life lost in various 
+aetiologies of dementia, mild cognitive impairment (MCI) and 
+subjective cognitive decline (SCD) in Norway. PLoS ONE 13, 
+e0204436 (2018).
+38.	 Larson, E. B. et al. Survival after initial diagnosis of Alzheimer 
+disease. Ann. Intern. Med. 140, 501–509 (2004).
+39.	 Sterniczuk, R. et al. Characterization of the 3xTg-AD mouse model 
+of Alzheimer’s disease: part 1. Circadian changes. Brain Res. 1348, 
+139–148 (2010).
+40.	 Sterniczuk, R. et al. Characterization of the 3xTg-AD mouse model 
+of Alzheimer’s disease: part 2. Behavioral and cognitive changes. 
+Brain Res. 1348, 149–155 (2010).
+41.	 Michaud, F. et al. Altered firing output of VIP interneurons and 
+early dysfunctions in CA1 hippocampal circuits in the 3xTg mouse 
+model of Alzheimer’s disease. eLife 13, RP95412 (2024).
+42.	 Park, S. et al. Distinct disruptions in CA1 and CA3 place cell 
+function in Alzheimer’s disease mice. iScience 28, 111631  
+(2025).
+43.	 Hussain, B., Fang, C. & Chang, J. Blood-brain barrier breakdown: 
+an emerging biomarker of cognitive impairment in normal aging 
+and dementia. Front. Neurosci. 15, 688090 (2021).
+44.	 Tsartsalis, S. et al. A single nuclear transcriptomic 
+characterisation of mechanisms responsible for impaired 
+angiogenesis and blood-brain barrier function in Alzheimer’s 
+disease. Nat. Commun. 15, 2243 (2024).
+45.	 Tsuji, A. Small molecular drug transfer across the blood-brain barrier 
+via carrier-mediated transport systems. NeuroRx 2, 54–62  
+(2005).
+46.	 Ohtsuki, S. & Terasaki, T. Contribution of carrier-mediated 
+transport systems to the blood-brain barrier as a supporting 
+and protecting interface for the brain; importance for CNS drug 
+discovery and development. Pharm. Res. 24, 1745–1758  
+(2007).
+47.	 Franken, H. et al. Thermal proteome profiling for unbiased 
+identification of direct and indirect drug targets using multiplexed 
+quantitative mass spectrometry. Nat. Protoc. 10, 1567–1593 (2015).
+48.	 Xie, Z. et al. Gene set knowledge discovery with Enrichr. Curr. 
+Protoc. 1, e90 (2021).
+49.	 Tang, D. et al. SRplot: a free online platform for data visualization 
+and graphing. PLoS ONE 18, e0294236 (2023).
+50.	 Szklarczyk, D. et al. The STRING database in 2023: protein–protein 
+association networks and functional enrichment analyses for any 
+sequenced genome of interest. Nucleic Acids Res. 51, D638–D646 
+(2023).
+51.	 Passaro, S. et al. Boltz-2: towards accurate and efficient binding 
+affinity prediction. Preprint at https://www.biorxiv.org/content/ 
+10.1101/2025.06.14.659707v1 (2025).
+52.	 Bhatt, P. et al. Artificial intelligence in pharmaceutical industry: 
+revolutionizing drug development and delivery. Curr. Artif. Intell. 
+2, E051223224198 (2024).
+53.	 Aundhia, C. et al. Impact of artificial intelligence on drug 
+development and delivery. Curr. Top. Med. Chem. 25, 1165–1184 
+(2025).
+54.	 Jung, S., Vatheuer, H. & Czodrowski, P. VSFlow: an open- 
+source ligand-based virtual screening tool. J. Cheminform. 15, 40 
+(2023).
+55.	 Ni, B. et al. AutoDock-SS: AutoDock for multiconformational 
+ligand-based virtual screening. J. Chem. Inf. Model. 64,  
+3779–3789 (2024).
+56.	 Cleves, A. E., Johnson, S. R. & Jain, A. N. Electrostatic-field and 
+surface-shape similarity for virtual screening and pose prediction. 
+J. Comput. Aided Mol. Des. 33, 865–886 (2019).
+57.	 Hawkins, P. C., Skillman, A. G. & Nicholls, A. Comparison of 
+shape-matching and docking as virtual screening tools. J. Med. 
+Chem. 50, 74–82 (2007).
+58.	 Yan, X. et al. Enhancing molecular shape comparison by weighted 
+Gaussian functions. J. Chem. Inf. Model. 53, 1967–1978 (2013).
+59.	 Puertas-Martin, S. et al. OptiPharm: an evolutionary algorithm to 
+compare shape similarity. Sci. Rep. 9, 1398 (2019).
+60.	 Ballester, P. J. & Richards, W. G. Ultrafast shape recognition to 
+search compound databases for similar molecular shapes.  
+J. Comput. Chem. 28, 1711–1723 (2007).
+61.	 Fu, L. et al. ADMETlab 3.0: an updated comprehensive online 
+ADMET prediction platform enhanced with broader coverage, 
+improved performance, API functionality and decision support. 
+Nucleic Acids Res. 52, W422–W431 (2024).
+62.	 Daina, A., Michielin, O. & Zoete, V. SwissADME: a free web tool 
+to evaluate pharmacokinetics, drug-likeness and medicinal 
+chemistry friendliness of small molecules. Sci. Rep. 7, 42717 
+(2017).
+63.	 Gu, Y. et al. admetSAR3.0: a comprehensive platform for 
+exploration, prediction and optimization of chemical ADMET 
+properties. Nucleic Acids Res. 52, W432–W438 (2024).
+64.	 Pires, D. E., Blundell, T. L. & Ascher, D. B. pkCSM: predicting 
+small-molecule pharmacokinetic and toxicity properties using 
+graph-based signatures. J. Med. Chem. 58, 4066–4072 (2015).
+65.	 Moulis, M. & Vindis, C. Methods for measuring autophagy in mice. 
+Cells 6, 14 (2017).
+66.	 Liu, J. & Li, L. Targeting autophagy for the treatment of Alzheimer’s 
+disease: challenges and opportunities. Front. Mol. Neurosci. 12, 
+203 (2019).
+67.	 Choo, M. Z. Y. & Chai, C. L. L. The polypharmacology of natural 
+products in drug discovery and development. Annual Reports in 
+Medicinal Chemistry (ed. Karl-Heinz, A.) Vol. 61, 55–100 (Elsevier, 
+2023).
+68.	 Naskar, R. et al. A critical appraisal of geroprotective 
+activities of flavonoids in terms of their bio-accessibility and 
+polypharmacology. Neurochem. Int. 180, 105859 (2024).
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+Acknowledgements
+This study was supported by the Dr. Stanley Ho Medical Development 
+Foundation (file number SHMDF-OIRFS/2024/002), the National 
+Natural Science Foundation of China (number 82271455), the Science 
+and Technology Development Fund, Macau SAR (file numbers 
+0040/2024/RIB1 and 0002/2025/NRP), the Guangdong Basic and 
+Applied Basic Research Foundation (file number 2024A1515012740) 
+and the University of Macau grants (file numbers MYRG-GRG2024-
+00238-ICMS-UMDF and MYRG-GRG2023-00089-ICMS-UMDF) 
+awarded to J.-H.L. The Wellcome Leap Dynamic Resilience 
+programme (co-funded by Temasek Trust) was awarded to X.X. 
+and Z.N. The EPSRC Doctoral Training Programme was awarded 
+to X.X. The ERC IMI (101005122), the H2020 (952172), the MRC 
+(MC/PC/21013), the Royal Society (IEC\NSFC\211235), the NVIDIA 
+Academic Hardware Grant Program, the SABER project supported 
+by Boehringer Ingelheim Ltd., NIHR Imperial Biomedical Research 
+Centre (RDA01), the Wellcome Leap Dynamic Resilience programme 
+(co-funded by Temasek Trust), UKRI guarantee funding for Horizon 
+Europe MSCA Postdoctoral Fellowships (EP/Z002206/1), UKRI MRC 
+Research Grant, TFS Research Grants (MR/U506710/1), and the UKRI 
+Future Leaders Fellowship (MR/V023799/1) were awarded to G.Y. We 
+thank the members of the Faculty of Health Sciences Animal Facility 
+at the University of Macau for their experimental and technical 
+support. Parts of figures were created using templates from Servier 
+Medical Art (https://smart.servier.com/), licensed under CC BY 4.0 
+(https://creativecommons.org/licenses/by/4.0/).
+Author contributions
+J.-H.L. and Z.N. conceived and supervised the project. Y.D. designed 
+and conducted the experiments, acquired and analysed the data, 
+and drafted the paper. X.X. and W.W. contributed to the development 
+of AI-driven drug screening and network platform. X.-X.Z. and 
+Z.-Y.W. contributed to the mouse and nematode experiments. S.Z. 
+and C.S.H.T. contributed to the thermal proteome profiling. K.Z. 
+contributed to the plasmid construction. J.-T.L., W.-Y.F., J.-M.C., S.H.X., 
+J.-B.W. and H.Y. contributed to the LC-MS/MS analysis. S.D., K.L., 
+C.M., W.J., X.J. and Q.C. contributed to the AI-driven drug screening 
+and network platform. H.-M.S., H.S., M.L., D.O., K.Y., E.F.F. and G.Y. 
+contributed to the revision of the paper. All authors reviewed, read and 
+approved the final paper.
+Competing interests
+E.F.F. is a co-owner of Fang-S Consultation AS (organization number 
+931 410 717) and NO-Age AS (organization number 933 219 127); he 
+has an MTA with LMITO Therapeutics Inc., a CRADA arrangement 
+with ChromaDex, a commercialization agreement with Molecule AG/
+VITADAO, and MTAs with GeneHarbor (Hong Kong) Biotechnologies 
+Limited and Hong Kong Longevity Science Laboratory; he is a 
+consultant to MindRank AI, NYO3, AgeLab (Vitality Nordic AS) and 
+Hong Kong Longevity Science Laboratory. Z.N., X.X., W.W., W.J., C.M., 
+X.J., Q.C. and S.D. are employers of MindRank AI.
+Additional information
+Extended data is available for this paper at  
+https://doi.org/10.1038/s41551-026-01667-x.
+Supplementary information The online version  
+contains supplementary material available at  
+https://doi.org/10.1038/s41551-026-01667-x.
+Correspondence and requests for materials should be addressed to 
+Zhangming Niu or Jia-Hong Lu.
+Peer review information Nature Biomedical Engineering thanks 
+Agustín Ibáñez and Ho Ko for their contribution to the peer review of 
+this work.
+Reprints and permissions information is available at  
+www.nature.com/reprints.
+Publisher’s note Springer Nature remains neutral with regard to 
+jurisdictional claims in published maps and institutional affiliations.
+Springer Nature or its licensor (e.g. a society or other partner) holds 
+exclusive rights to this article under a publishing agreement with 
+the author(s) or other rightsholder(s); author self-archiving of the 
+accepted manuscript version of this article is solely governed by the 
+terms of such publishing agreement and applicable law.
+© The Author(s), under exclusive licence to Springer Nature Limited 
+2026
+1State Key Laboratory of Mechanism and Quality of Chinese Medicine, Institute of Chinese Medical Sciences, University of Macau, Macau SAR, China. 
+2Bioengineering Department and Imperial-X, Imperial College London, London, UK. 3Mindrank AI Ltd, Hangzhou, China. 4AI Research Center, MindRank 
+Technologies Limited, London, UK. 5Department of Bioinformatics and Systems Biology, Huazhong University of Science and Technology, College of Life 
+Sciences and Technology, Wuhan, China. 6Guangzhou National Laboratory, Guangzhou, China. 7Interdisciplinary Institute for Personalized Medicine in 
+Brain Disorders, School of Traditional Chinese Medicine, Jinan University, Guangzhou, China. 8Department of Chemistry, School of Science, Southern 
+University of Science and Technology, Shenzhen, China. 9Department of Biomedical Sciences, Faculty of Health Sciences, Ministry of Education Frontiers 
+Science Center for Precision Oncology, University of Macau, Macau SAR, China. 10Mr. & Mrs. Ko Chi-Ming Centre for Parkinson’s Disease Research, School 
+of Chinese Medicine, Hong Kong Baptist University, Hong Kong SAR, China. 11Department of Public Health and Medicinal Administration, Faculty of Health 
+Sciences, University of Macau, Macau SAR, China. 12Faculty of Life and Health Sciences, Shenzhen University of Advanced Technology (SUAT), Shenzhen, 
+China. 13Department of Clinical Molecular Biology, University of Oslo and Akershus University Hospital, Lørenskog, Norway. 14The Norwegian Centre on 
+Healthy Ageing (NO-Age) and the Norwegian National anti-Alzheimer’s Disease (NO-AD) Networks, Oslo, Norway. 15National Heart and Lung Institute, 
+Imperial College London, London, UK. 16Cardiovascular Research Centre, Royal Brompton Hospital, London, UK. 17School of Biomedical Engineering & 
+Imaging Sciences, King’s College London, London, UK. 18These authors contributed equally: Yu Dong, Xianglu Xiao, Xu-Xu Zhuang, Wenfan Wu. 
+ 
+ e-mail: zhangming@mindrank.ai; jiahonglu@um.edu.mo
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+a
+c
+b
+Extended Data Fig. 1 | See next page for caption.
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+Extended Data Fig. 1 | Physicochemical property distribution of 
+compounds and variational autoencoder training performance. a,b, Key 
+physicochemical and drug-likeness parameters of the virtual screening 
+compound library and 50 reference mTOR-independent autophagy enhancers. 
+Properties analyzed include molecular weight (MW), lipophilicity (LogP), 
+hydrogen bond donors (HBDs), hydrogen bond acceptors (HBAs), topological 
+polar surface area (TPSA), and rotatable bond count. c, Training and validation 
+loss curves for the variational autoencoder on the DeepDrugDiscovery 
+platform. The left panel shows the total loss (combined reconstruction and 
+Kullback-Leibler (KL) divergence loss), and the right panel shows the  
+Kullback-Leibler divergence loss alone.
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+a
+b
+d
+e
+c
+Property = Caco2 permeability classification
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Score
+AccuracyArea under
+the curve
+Precision
+Recall
+F1-score
+AccuracyArea under
+the curve
+Precision
+Recall
+F1-score
+Property = MDCK efflux ratio classification
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Score
+Models for evaluating compound properties
+ADMET Ranker
+ADMET Ranker High Confidence
+ADMETlab 3.0
+SwissADME
+admetSAR 3.0
+pkCSM(Deep-PK)
+pkCSM(Deep-PK) High Confidence
+Experimental v.s. ADMET Ranker Predicted Values
+LogBB Experimental Values
+LogBB Predicted Values
+-2
+-2
+-1
+0
+1
+-1
+0
+1
+Ideal fit
+Datapoints
+AccuracyArea under
+the curve
+Precision
+Recall
+F1-score
+Property = BBB efflux ratio classification
+0.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Score
+Reference
+Compounds
+Chemical 
+Library
+DeepDrugDiscovery
+50
+50
+100
+200
+500
+1000
+1.2 million
+12 million
+GPU
+CPU
+CPU
+CPU
+CPU
+CPU
+CPU
+CPU
+CPU
+0.0925 s
+3.3485 s
+0.3501 s
+0.6368 s
+1.5355 s
+2.9921 s
+336 s
+2229 s
+409 s
+853 s
+2139 s
+4322 s
+VirtualFlow
+4530 s
+45299 s
+9060 s
+18119 s
+45299 s
+90597 s
+AutoDock-SS
+113 d
+1134 d
+227 d
+453 d
+1134 d
+2267 d
+eSim-pfastf
+2 d
+24 d
+5 d
+10 d
+24 d
+49 d
+ROCS
+13 d
+134 d
+27 d
+54 d
+134 d
+268 d
+WEGA
+25 d
+251 d
+50 d
+100 d
+251 d
+501 d
+OptiPharm
+56 d
+557 d
+111 d
+223 d
+557 d
+1115 d
+USR
+2.7 h
+26.8 h
+5.4 h
+10.7 h
+26.8 h
+53.6 h
+Extended Data Fig. 2 | See next page for caption.
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+Extended Data Fig. 2 | Benchmarking of our AI platform against public 
+platforms. a, Comparison of computational time for DeepDrugDiscovery 
+versus VSFlow, AutoDock-SS, eSim-pfastf, ROCS, WEGA, OptiPharm, and USR 
+(s: seconds; h: hours; d: days). b-d, Comparison of Caco-2 permeability, MDCK 
+efflux ratio, and blood-brain barrier penetration classification performance 
+across ADMET Ranker, ADMETlab 3.0, SwissADME, admetSAR 3.0, pkCSM 
+(Deep-PK), along with high-confidence prediction subsets from ADMET Ranker 
+and pkCSM predictions. Performance metrics include accuracy, AUC, F1-score, 
+precision, and recall. Missing bars indicate that a given platform does not 
+generate predictions for the specific endpoint or metric. e, Scatter plot showing 
+the correlation between experimentally derived LogBB values and the predicted 
+blood-brain barrier penetration scores from ADMET Ranker. The dashed red 
+line indicates the ideal correlation (predicted = experimental), and cyan circles 
+represent individual data points (compounds).
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+a
+b
+CTRL
+Clevidipine
+Ombuin
+3',4',7-Trimethoxyquercetin
+Salicylic acid
+Hydroxygenkwanin
+2-Hydroxycinnamic acid
+Riluzole
+Torin1
+SQSTM1/GAPDH
+0.0
+0.5
+1.0
+1.5
+2.0
+***p<0.001
+CTRL
+Clevidipine
+Ombuin
+3',4',7-Trimethoxyquercetin
+Salicylic acid
+Hydroxygenkwanin
+2-Hydroxycinnamic acid
+Riluzole
+Torin1
+***p<0.001
+ns
+LC3B-II/GAPDH
+0.0
+0.5
+1.0
+1.5
+2.0
+c
+e
+d
+f
+CTRL
+Clevidipine
+Ombuin
+Torin1
+Bafilomycin A1
+Clevidipine
+Ombuin
+Torin1
+**p=0.003
+**p=0.003
+**p=0.001
++BAF
+LC3B-II/GAPDH
+0.0
+0.5
+1.0
+1.5
+2.0
+*** p<0.001
+*** p<0.001
+***p<0.001
+CTRL
+Clevidipine
+Ombuin
+Torin1
+Bafilomycin A1
+Clevidipine
+Ombuin
+Torin1
++BAF
+SQSTM1/GAPDH
+0.0
+0.5
+1.0
+1.5
+2.0
+LC3B-II/GAPDH
+0.0
+0.5
+1.0
+1.5
+2.0
+CTRL
+2-Hydroxycinnamic acid
+3',4',7-Trimethoxyquercetin
+3',4',7-Trimethoxyquercetin
+Torin1
+Bafilomycin A1
+2-Hydroxycinnamic acid
+Torin1
+*** p<0.001
+*** p<0.001
+***p<0.001
++BAF
+SQSTM1/GAPDH
+0.0
+0.5
+1.0
+1.5
+2.0
+*** p<0.001
+*** p<0.001
+*** p<0.001
+CTRL
+2-Hydroxycinnamic acid
+3',4',7-Trimethoxyquercetin
+3',4',7-Trimethoxyquercetin
+Torin1
+Bafilomycin A1
+2-Hydroxycinnamic acid
+Torin1
++BAF
+Extended Data Fig. 3 | Validation of mTOR-independent autophagy inducers. 
+a,b, WB analysis of LC3B-II and SQSTM1/p62 protein levels in N2a cells 
+treated with the indicated compounds (20 μM) or Torin1 (1 μM) for 24 h (n = 3 
+independent biological replicates). One-way ANOVA followed by Dunnett’s 
+multiple comparisons test (a,b). c-f, WB analysis of LC3B-II and SQSTM1/p62 
+protein levels in N2a cells treated with the indicated compounds (20 μM) or 
+Torin1 (1 μM) in the absence or presence of Bafilomycin A1 (100 nM) for 24 h (n = 3 
+independent biological replicates). One-way ANOVA followed by Tukey’s  
+multiple comparisons test (c-f). Quantitative data are shown as mean ± SD.  
+ns, not significant, *P < 0.05, **P < 0.01, ***P < 0.001.
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+g
+h
+i
+10μm
+CTRL
+Omb
+2-HCA
+Bafilomycin A1
+SAR405
+Omb
+Bafilomycin A1
+2-HCA
+Bafilomycin A1
+Omb
+SAR405
+2-HCA
+SAR405
+Clevidipine
+C21H23Cl2NO6
+456.32 g/mol
+a
+Ombuin
+C17H14O7
+330.29 g/mol
+3',4',7-Trimethoxyquercetin
+C18H16O7
+344.32 g/mol
+2-Hydroxycinnamic acid
+C9H8O3
+164.16 g/mol
+b
+c
+d
+e
+CTRL
+Clevidipine
+Ombuin
+2-Hydroxycinnamic acid
+3',4',7-Trimethoxyquercetin
+**
+p=0.005
+p=0.002
+p=0.002
+p=0.005
+Tau/GAPDH
+0.0
+0.5
+1.0
+1.5
+2.0
+ns
+CTRL
+Clevidipine
+Ombuin
+2-Hydroxycinnamic acid
+3',4',7-Trimethoxyquercetin
+LC3B-II/GAPDH
+0.0
+0.5
+1.0
+1.5
+2.0
+***p<0.001
+CTRL
+Clevidipine
+Ombuin
+2-Hydroxycinnamic acid
+3',4',7-Trimethoxyquercetin
+SQSTM1/GAPDH
+0.0
+0.5
+1.0
+1.5
+2.0
+ns
+CTRL
+Clevidipine
+Ombuin
+2-Hydroxycinnamic acid
+3',4',7-Trimethoxyquercetin
+LC3B-II/GAPDH
+0.0
+0.5
+1.0
+1.5
+2.0
+f
+** p=0.004
+**p=0.005
+***p<0.001
+CTRL
+Clevidipine
+Ombuin
+2-Hydroxycinnamic acid
+3',4',7-Trimethoxyquercetin
+SQSTM1/GAPDH
+0.0
+0.5
+1.0
+1.5
+2.0
+CTRL
+24 h
+48 h
+0.5
+1
+Omb
+(μM)
+2
+10μm
+Autolysosomes
+Autophagosomes
+0
+10
+20
+30
+40
+Puncta/cell
+50
+CTRL
+CTRL
+Omb
+24 h
+0.5
+1
+2
+0.5
+1
+2
+Omb
+μM
+48 h
+***p<0.001
+***p<0.001
+***p<0.001
+Extended Data Fig. 4 | Evaluation of abnormal protein degradation effect and 
+autophagic flux by candidate autophagy enhancers. a, Chemical structures, 
+molecular formulas and weights of four novel autophagy inducers. b-f, WB 
+analysis of total tau, LC3B-II and SQSTM1/p62 protein levels in PC12 cells stably 
+expressing Tau P301L or APP KM595/596NL, V642F treated with the indicated 
+compounds (20 μM) (n = 3 independent biological replicates). g, PC12 cells 
+stably expressing mRFP-EGFP-LC3B were treated with the indicated compounds 
+(20 μM) in the absence or presence of BAF (100 nM) or SAR405 (1 μM) for 24 h, 
+and Opera Phenix plus high-content screening system was applied to capture the 
+fluorescent images (scale bar, 10 μm) (n = 2 independent biological replicates). 
+h-i, PC12 cells stably expressing mRFP-EGFP-LC3B were treated with the indicated 
+compound for 24 h or 48 h, and Opera Phenix plus high-content screening 
+system was applied to capture the fluorescent images (scale bar, 10 μm). The 
+average number of red and yellow dots per cell was quantified (cells≥30, n = 3 
+independent biological replicates). One-way ANOVA followed by Dunnett’s 
+multiple comparisons test (b-f, i). Quantitative data are shown as mean ± SD.  
+ns, not significant, *P < 0.05, **P < 0.01, ***P < 0.001.
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+**p=0.007
+**p=0.003
+CTRL
+Omb
+2-HCA
+SAR405
+Omb
+2-HCA
++SAR405
+p-Tau(T181)/GAPDH
+0.0
+0.5
+1.0
+1.5
+2.0
+GAPDH
+Tau
+Phospho-Tau
+ (Thr181)
+Phospho-Tau
+ (Thr231)
+Phospho-Tau
+ (Ser202, Thr205)
+37
+50
+50
+50
+50
+CTRL
+Omb
+2-HCA
+TauP301L
+Vector
+kDa
+Omb
+SAR405
+2-HCA
++SAR405
+CTRL
+Omb 
+2-HCA
+APPK595N, M596L, V642F
+Vector
+kDa
+GAPDH
+APP-CTFβ
+APP-CTFα
+10
+APP-CTFβ
+APP-CTFα
+L.E
+S.E
+37
+10
+Omb 
+SAR405
+2-HCA
++SAR405
+d
+h
+g 
+k
+l
+i
+j
+CTRL
+Omb
+2-HCA
+Bafilomycin A1
+Omb
+2-HCA
++BAF
+** p=0.001
+**p=0.008
+Tau/GAPDH
+0.0
+0.5
+1.0
+1.5
+2.0
+a
+**p=0.007
+***p<0.001
+CTRL
+Omb
+2-HCA
+Bafilomycin A1
+Omb
+2-HCA
++BAF
+p-Tau(T181)/GAPDH
+0.0
+0.5
+1.0
+1.5
+2.0
+b
+c
+p-Tau(S202, T205)
+/GAPDH
+**p=0.002
+**p=0.002
+CTRL
+Omb
+2-HCA
+Bafilomycin A1
+Omb
+2-HCA
++BAF
+0.0
+0.5
+1.0
+1.5
+2.0
+**p=0.001
+**p=0.005
+CTRL
+Omb
+2-HCA
+Bafilomycin A1
+Omb
+2-HCA
++BAF
+p-Tau(T231)/GAPDH
+0.0
+0.5
+1.0
+1.5
+2.0
+CTRL
+Omb
+2-HCA
+SAR405
+Omb
+2-HCA
++SAR405
+Tau/GAPDH
+0.0
+0.5
+1.0
+1.5
+2.0
+**p=0.005
+*** p<0.001
+**p=0.003
+**p=0.001
+CTRL
+Omb
+2-HCA
+SAR405
+Omb
+2-HCA
++SAR405
+p-Tau(S202, T205)
+/GAPDH
+0.0
+0.5
+1.0
+1.5
+2.0
+**p=0.003
+**p=0.001
+CTRL
+Omb
+2-HCA
+SAR405
+Omb
+2-HCA
++SAR405
+p-Tau(T231)/GAPDH
+0.0
+0.5
+1.0
+1.5
+2.0
+m
+n
+CTRL
+Omb
+2-HCA
+SAR405
+Omb
+2-HCA
++SAR405
+CTF-β/GAPDH
+0.0
+0.5
+1.0
+1.5
+2.0
+**p=0.003
+**p=0.008
+CTRL
+Omb
+2-HCA
+SAR405
+Omb
+2-HCA
++SAR405
+CTF-α/GAPDH
+0.0
+0.5
+1.0
+1.5
+2.0
+**p=0.007
+*p=0.013
+f
+e
+**p=0.007
+**p=0.006
+CTRL
+Omb
+2-HCA
+Bafilomycin A1
+Omb
+2-HCA
++BAF
+CTF-β/GAPDH
+0.0
+0.5
+1.0
+1.5
+2.0
+**p=0.003
+**p=0.005
+CTRL
+Omb
+2-HCA
+Bafilomycin A1
+Omb
+2-HCA
++BAF
+CTF-α/GAPDH
+0.0
+0.5
+1.0
+1.5
+2.0
+Extended Data Fig. 5 | See next page for caption.
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+Extended Data Fig. 5 | Ombuin and 2-Hydroxycinnamic acid clear abnormal 
+proteins in an autophagy-dependent manner. a-n, WB analysis of total tau, 
+phosphorylated tau (at multiple sites), CTF-β, and CTF-α protein levels in PC12 
+cells stably expressing Tau P301L or APP KM595/596NL, V642F treated with 
+the indicated compounds (20 μM) in the absence or presence of BAF (100 nM) 
+or SAR405 (1 μM) (n = 3 independent biological replicates). One-way ANOVA 
+followed by Tukey’s multiple comparisons test (a-f, i-n). Quantitative data are 
+shown as mean ± SD. ns, not significant, *P < 0.05, **P < 0.01, ***P < 0.001. Original 
+unprocessed WB gel data are in Source Data Fig. 6.
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+a
+c
+d
+e
+*** p<0.001
+Veh
+Omb
+2-HCA
+0.0
+0.5
+1.0
+1.5
+CTF-α/GAPDH
+b
+0
+10
+20
+30
+40
+50
+60
+3×Tg-AD (Veh)
+3×Tg-AD (Omb)
+3×Tg-AD (2-HCA)
+1
+2
+3
+4
+5
+6
+7
+8
+Weeks
+Body weight (g)
+3×Tg-AD (Veh)
+3×Tg-AD (Omb)
+3×Tg-AD (2-HCA)
+0
+5
+10
+15
+20
+p-Tau(Thr217) 
+reactive area (%)
+p=0.0244
+*
+*p=0.0326
+p=0.0133
+*
+** p=0.0059
+3×Tg-AD (Veh)
+3×Tg-AD (Omb)
+3×Tg-AD (2-HCA)
+Aβ load per ROI (%)
+0
+5
+15
+20
+25
+10
+p=0.004
+**p=0.002
+**
+Veh
+Omb
+2-HCA
+0.0
+0.5
+1.0
+1.5
+LC3B-II/GAPDH
+Extended Data Fig. 6 | Evaluation of the neuroprotective effects of  
+Ombuin and 2-Hydroxycinnamic acid in the 3×Tg-AD mouse models.  
+a,b, Immunofluorescence analysis of phosphorylated tau and Aβ in the 
+hippocampal CA1 region. Relative fluorescence intensity for each treatment 
+group was quantified (n = 7 mice per group). c-d, WB analysis of CTF-α and 
+LC3B-II protein levels in mouse hippocampal tissues (n = 3 mice per group).  
+e, Body weight changes in 3×Tg-AD mice throughout the treatment period  
+(n = 7 mice per group). One-way ANOVA followed by Dunnett’s multiple 
+comparisons test (a-d). Quantitative data are shown as mean ± SD. ns, not 
+significant, *P < 0.05, **P < 0.01, ***P < 0.001.
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+a
+Thermal Proteome Profiling
+Vehicle
+Heat 
+at 52℃
+m/z
+Mass 
+spectrometry
+Ranking
+Affinity
+STRING
+PPI Networks
+Binding Mode 
+Prediction
+Intensity
+Pathway
+Ranking
+Drug
+Pathway Analysis
+Target Prediction
+Predicted Molecular Mechanism of 
+Drug-Induced Autophagy
+d
+e
+b
+c
+Thermal proteome profiling: 2-HCA
+4
+-log10 P-value
+3
+-2
+-1
+1
+1
+2
+2
+0
+0
+log2 Fold Change
+Down (93)
+Not significant
+Up (81)
+Cd44
+Smg5
+Cog5
+Faf2
+Gipc1
+Ikbkb
+Klhdc2
+Tfr2
+Ssr3
+Hmga1
+Mapk8ip3
+Ccdc30
+Thermal proteome profiling: Omb
+6
+-log10 P-value
+4
+-2
+-1
+1
+2
+2
+0
+0
+log2 Fold Change
+Down (147)
+Not significant
+Up (171)
+Aldh1b1
+Podxl2
+Sdr39u1
+Senp6
+Hbb-b1 Pip4k2a
+Dmxl1
+Mtmr1
+Ttk
+Unc13a
+Aarsd1
+Spr
+g
+f
+Omb: Pip4k2a
+2-HCA: Ikbkb
+Extended Data Fig. 7 | Integrated profiling suggests candidate mechanisms for 
+autophagy induction by Ombuin and 2-Hydroxycinnamic acid. a, Schematic 
+workflow of the multi-faceted approach used to elucidate the mechanisms of 
+action of the compounds. b,c, Thermal proteome profiling of compound-treated 
+lysates identifies drug-binding candidates. Differential thermal stability was 
+assessed by comparing compound-treated and vehicle-control samples using 
+moderated t-tests implemented in the limma package (v3.62) in R. (P < 0.05, 
+red dot: stabilized, blue dot: destabilized; P < 0.05, log2FC > 0.5, protein name: 
+labeled). The dashed line indicates the P = 0.05 threshold. d,e, Protein-protein 
+interaction (PPI) networks were constructed for candidate targets of Ombuin 
+(Pip4k2a, Mtmr1) or 2-Hydroxycinnamic acid (Mapk8ip3, Ikbkb) using the 
+STRING database to explore their coordinated roles in autophagy regulation. 
+Edges represent predicted functional associations, colored by evidence type: 
+purple (experimental), light blue (database), green (neighborhood), red (fusion), 
+blue (co-occurrence), black (co-expression), light green (text mining), light 
+purple (homology). f,g, Predicted binding poses for each compound-target pair, 
+generated using the Boltz-2 deep learning method and visualized with PyMOL. 
+Hydrogen bonds and hydrophobic interactions are indicated by blue lines and 
+gray dashed lines, respectively.
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+Ikbkb
+Cd44
+Mapk8ip3
+RIG-I-like receptor signaling pathway
+Epithelial cell signaling in Helicobacter pylori infection
+Adipocytokine signaling pathway
+Acute myeloid leukemia
+Cytosolic DNA-sensing pathway
+Type II diabetes mellitus
+MicroRNAs in cancer
+MAPK signaling pathway
+Shigellosis
+Epstein-Barr virus infection
+0.100
+0.125
+0.150
+Gene.Ratio
+Count
+1
+2
+1.5
+2.0
+-log
+(Pvalue) 
+10
+Cd44
+Mapk8ip3
+Ikbkb
+Faf2
+Tfr2
+Gipc1
+Smg5
+Leukocyte Aggregation
+Axo-Dendritic Protein Transport
+Antigen Processing and Presentation of Exogenous Peptide Antigen via MHC Class I
+Anterograde Axonal Protein Transport
+Protein Localization to Presynapse
+Stress Granule Disassembly
+Cellular Response to Iron Ion
+Positive Regulation of Melanin Biosynthetic Process
+Positive Regulation of Secondary Metabolite Biosynthetic Process
+Regulation of Phosphate Metabolic Process
+0.100
+0.125
+0.150
+Gene.Ratio
+Count
+1
+2
+3
+4
+-log
+(Pvalue) 
+10
+Aldh1b1
+Spr
+Mtmr1
+Pip4k2a
+Pyruvate metabolism
+Fatty acid degradation
+Tryptophan metabolism
+beta-Alanine metabolism
+Ascorbate and aldarate metabolism
+Folate biosynthesis
+Histidine metabolism
+Pantothenate and CoA biosynthesis
+Phosphatidylinositol signaling system
+Inositol phosphate metabolism
+0.100
+0.125
+0.150
+Gene.Ratio
+Count
+1
+2
+2
+3
+-log
+(Pvalue) 
+10
+Unc13a
+Mtmr1
+Ttk
+Pip4k2a
+Senp6
+Positive Regulation of Dendrite Extension
+Regulation of Dephosphorylation
+Regulation of Macromolecule Metabolic Process
+Protein Localization to Kinetochore
+Protein Localization to Condensed Chromosome
+Regulation of Phospholipid Metabolic Process
+Synaptic Vesicle Docking
+Autophagosome-Lysosome Fusion
+Protein Desumoylation
+Phosphatidylinositol Biosynthetic Process
+0.100
+0.125
+0.150
+Gene.Ratio
+Count
+1
+2
+2.25
+2.50
+2.75
+-log
+(Pvalue) 
+10
+a
+b
+c
+d
+3.75
+4.00
+4.25
+4.50
+4.75
+5.00
+5.25
+5.50
+5.75
+Signal
+Macroautophagy
+Autophagosome assembly
+Autophagy of mitochondrion
+Autophagy
+Phosphatidylinositol phosphate
+biosynthetic process
+Vacuole organization
+Autophagosome maturation
+phosphatidylinositol-3-phosphate
+biosynthetic process
+Phosphatidylinositol metabolic process
+Cellular component disassembly
+Biological process (Gene Ontology) enrichment: Omb
+Groups at similarity 1.0
+1.0e-09
+1.0e-11
+1.0e-12
+1.0e-14
+1.0e-15
+1.0e-17
+FDR
+5
+8
+12
+Gene count
+3.0
+3.5
+4.0
+4.5
+5.0
+Signal
+Autophagosome assembly
+Macroautophagy
+Autophagy
+Autophagy of mitochondrion
+C-terminal protein lipidation
+Regulation of autophagy
+Autophagy of nucleus
+phosphatidylinositol-3-phosphate
+biosynthetic process
+Regulation of macroautophagy
+Cellular component disassembly
+Biological process (Gene Ontology) enrichment: 2-HCA
+Groups at similarity 1.0
+1.0e-07
+1.0e-08
+1.0e-10
+1.0e-11
+1.0e-13
+1.0e-14
+FDR
+4
+8
+11
+Gene count
+Biological process enrichment: Omb
+Signaling/metabolic pathways enrichment: Omb
+Biological process enrichment: 2-HCA
+Signaling/metabolic pathways enrichment: 2-HCA
+e
+f
+Biological process (KEGG) enrichment: 2-HCA
+g
+h
+Biological process (KEGG) enrichment: Omb
+1
+2
+3
+4
+5
+6
+Signal
+Autophagy - animal
+Spinocerebellar ataxia
+Huntington disease
+Amyotrophic lateral sclerosis
+Alzheimer disease
+Autophagy - other
+Mitophagy - animal
+Inositol phosphate metabolism
+Phosphatidylinositol signaling system
+Apelin signaling pathway
+Groups at similarity 1.0
+1.0e-03
+1.0e-06
+1.0e-09
+1.0e-11
+1.0e-14
+1.0e-17
+FDR
+3
+6
+10
+Gene count
+2
+3
+4
+5
+6
+7
+8
+Signal
+Autophagy - animal
+Autophagy - other
+NOD-like receptor signaling pathway
+Mitophagy - animal
+RIG-I-like receptor signaling pathway
+Spinocerebellar ataxia
+Huntington disease
+Apoptosis - multiple species
+Kaposi sarcoma-associated herpesvirus
+infection
+Alzheimer disease
+Groups at similarity 1.0
+1.0e-05
+1.0e-09
+1.0e-13
+1.0e-17
+1.0e-20
+1.0e-24
+FDR
+5
+10
+15
+20
+Gene count
+i
+j
+Omb: Mtmr1
+2-HCA: Mapk8ip3
+Extended Data Fig. 8 | See next page for caption.
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+Extended Data Fig. 8 | Integrated profiling reveals candidate mechanisms for 
+autophagy induction by Ombuin and 2-Hydroxycinnamic acid. a-d, Integrated 
+Sankey and dot plot illustrating the biological process and signaling/metabolic 
+pathways (analyzed using Enrichr) associated with target proteins of Ombuin 
+(Omb) and 2-Hydroxycinnamic acid (2-HCA), identified by thermal proteome 
+profiling (P < 0.05, log2FC > 0.5). Statistical significance was determined by 
+Fisher’s exact test, and multiple testing was corrected using the Benjamini-
+Hochberg method. Detailed data are provided in Supplementary Tables 7–10. 
+e-h, GO and KEGG enrichment analysis of the protein–protein interaction (PPI) 
+network constructed using the STRING database for Omb and 2-HCA candidate 
+targets, highlighting functional pathways related to autophagy regulation. 
+i-j, Predicted binding poses between each compound and its target protein, 
+generated using the Boltz-2 deep learning method and visualized with PyMOL. 
+Hydrogen bonds and hydrophobic interactions are indicated by blue lines and 
+gray dashed lines, respectively.
+
+Nature Biomedical Engineering
+Article
+https://doi.org/10.1038/s41551-026-01667-x
+a
+Omb: Pip4k2a
+b
+Omb: Mtmr1
+c
+2-HCA: Ikbkb
+Extended Data Fig. 9 | Molecular dynamics analysis of Ombuin and 
+2-Hydroxycinnamic acid interactions with target proteins. a-c, Analysis plots 
+from molecular dynamics simulations, including: (1) root mean square deviation 
+(RMSD) of protein and ligand; (2) radius of gyration (Rg) of the complex;  
+(3) root mean square fluctuation (RMSF) of protein residues; (4) solvent-
+accessible surface area (SASA) buried upon binding; (5) binding free energy; and 
+(6) number of hydrogen bonds formed during the simulation.
+
+
+
+β
+β
+β
+β

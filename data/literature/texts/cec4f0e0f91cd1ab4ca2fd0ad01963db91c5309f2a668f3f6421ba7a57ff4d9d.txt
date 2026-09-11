@@ -1,0 +1,1102 @@
+Shaping NIR-II Emission: The Role of Surface Chemistry and
+Environment in Gold Nanoclusters
+Published as part of Accounts of Chemical Research special issue “Near-Infrared II Photoluminescence: From
+Materials to Applications VSI”.
+Xavier Le Guével*
+Cite This: Acc. Chem. Res. 2025, 58, 3518−3529
+Read Online
+ACCESS
+Metrics & More
+Article Recommendations
+CONSPECTUS: Near-infrared II (NIR-II, 900−1700 nm) fluorescence imaging is
+transforming biological visualization, offering deeper, sharper, and more reliable
+detection than visible or NIR-I probes. Reduced scattering and autofluorescence in
+this window enable real-time imaging of tissues and organs. Gold nanoclusters
+(AuNCs) are promising NIR-II agents due to their atomically precise structures,
+biocompatibility, and versatile surface chemistry. However, their modest
+photoluminescence (PL) in aqueous environments, which is crucial for biomedical
+applications, remains a key limitation, making brightness enhancement a central
+challenge.
+The Au−ligand interface is critical: small changes in ligand structure or binding can
+strongly affect electronic relaxation. Smart ligand design, including bidentate thiols,
+electron-rich groups, or N-heterocyclic carbenes, stabilizes excited states and
+suppresses nonradiative losses. Beyond ligand optimization, strategies such as
+protein or polymer encapsulation, controlled self-assembly, and layer-by-layer coatings have increased quantum yields to nearly 10%
+in the 900−1300 nm range, underscoring the role of the metal−ligand environment.
+The nano(bio)interface also dictates practical performance. In complex milieus, proteins, redox agents, and pH fluctuations can
+stabilize or quench emission. Antifouling coatings (zwitterionic ligands, PEGylation, or rigid carbene shells) help preserve brightness,
+while kernel locking, heteroatom doping, and hybrid constructs with dyes or biomolecules extend emission beyond 1200 nm and
+enable red-shifting via Förster energy transfer (FRET) or bioluminescence energy transfer (BRET).
+Bright, stable AuNCs thus serve as both imaging agents and theranostic platforms, combining fluorescence with drug delivery,
+phototherapy, or radioenhancement. Their deep-tissue sensitivity makes them powerful tools for monitoring cancer, cardiovascular
+disease, and neuroinflammation. Yet environmental sensitivity also raises challenges: stability, biotransformation, and immune
+activation highlight the need for standardized evaluation of colloidal stability, photostability, and biological interactions.
+In this Account, we summarize strategies to boost AuNC brightness in water, including ligand design, molecular assembly, protein/
+polymer encapsulation, and controlled self-assembly, achieving PL quantum yields up to 10%. We also discuss how pH, redox
+conditions, protein binding, and intracellular aggregation shape NIR-II emission, highlighting key principles for advancing their
+biomedical use.
+■KEY REFERENCES
+• Musnier, B.; Wegner, K. D.; Comby-Zerbino, C.;
+Trouillet, V.; Jourdan, M.; Hausler, I.; Antoine, R.; Coll,
+J. L.; Resch-Genger, U.; Le Guevel, X. High photo-
+luminescence of shortwave infrared-emitting anisotropic
+surface charged gold nanoclusters. Nanoscale 2019, 11,
+12092−12096.1 The design of atomically precise gold
+nanoclusters with anisotropic charge enables strong
+absorption in NIR-I and boosts NIR-II emission to
+6.1% QY in water.
+• Bertorelle, F.; Wegner, K. D.; Perić Bakulić, M.; Fakhouri,
+H.; Comby-Zerbino, C.; Sagar, A.; Bernadó, P.; Resch-
+Genger, U.; Bonačić-Koutecký, V.; Le Guével, X.;
+Antoine, R. Tailoring the NIR-II Photoluminescence of
+Single Thiolated Au25 Nanoclusters by Selective Binding
+to Proteins. Chemistry A European Journal 2022, 28,
+e202200570.2 A single Au25 nanocluster was site-
+Received:
+September 9, 2025
+Revised:
+October 28, 2025
+Accepted:
+October 29, 2025
+Published: November 12, 2025
+Article
+pubs.acs.org/accounts
+© 2025 The Author. Published by
+American Chemical Society
+3518
+https://doi.org/10.1021/acs.accounts.5c00626
+Acc. Chem. Res. 2025, 58, 3518−3529
+Downloaded via OCEAN UNIV OF CHINA on February 21, 2026 at 11:40:32 (UTC).
+See https://pubs.acs.org/sharingguidelines for options on how to legitimately share published articles.
+
+specifically incorporated into bovine serum albumin,
+enhancing and red-shifting its photoluminescence into
+the NIR-II window, offering a controllable route to design
+selective probes for live biomolecular imaging.
+• París Ogáyar, M.; Ayed, Z.; Josserand, V.; Henry, M.;
+Artiga, Á.; Didonè, L.; Granado, M.; Serrano, A.;
+Espinosa, A.; Le Guével, X. Luminescence Fingerprint
+of Intracellular NIR-II Gold Nanocluster Transformation:
+Implications for Sensing and Imaging. ACS Nano 2025,
+19, 7821−7834.3 This study shows that NIR-II gold
+nanoclusters undergo major luminescence changes inside
+cells and tissues, mainly due to surface ligand disruption,
+aggregation, and protein interactions, highlighting their
+environmental sensitivity and guiding their optimization
+for reliable bioimaging and diagnostics.
+• Ayed, Z.; Muñoz, B. M.; Vandekerckhove, C. I.; Faure, V.;
+Ali, S. N. S.; Coll, J.-l.; Cognet, L.; Le Guével, X. Self-
+Assembled Small Interfering RNA-Gold Supraclusters
+Detected at the Single-Molecule Level in the Near-
+Infrared-II Window. Small Structures 2025, 2500381.4
+Small interfering RNA was used to direct the self-
+assembly of cysteamine-stabilized NIR-II gold nano-
+clusters into stable, bright supramolecular assemblies
+(∼100 nm) with photoluminescence up to 1400 nm,
+enabling single-particle detection and offering multifunc-
+tional potential for imaging and gene-silencing therapies.
+1. INTRODUCTION
+In optical imaging, the near-infrared (NIR) window offers
+significant advantages for in vivo detection, owing to the low
+water absorption and autofluorescence in the first NIR window
+(NIR-I, 700−900 nm).5 These properties markedly enhance
+detection sensitivity, providing a high signal-to-noise ratio in
+small animal models. Building on the seminal contributions of
+H. Dai6,7 in the early 2010s, the exploration of the second
+biological window (NIR-II, 900−1700 nm), also known as the
+shortwave infrared (SWIR) region, has rapidly expanded. Their
+pioneering studies highlighted how reduced light scattering at
+these wavelengths, together with low tissue autofluorescence,
+enables fluorescence imaging at depths of up to 10 mm in mice,
+while maintaining both high spatial (∼10 μm) and temporal
+(>20 frames per second) resolution.8,9 Since then, substantial
+efforts have been directed toward elucidating light diffusion and
+detection in organs and tissues across the sub-NIR-II
+ranges10−12 and even extending into the NIR-III window
+(2100−2400 nm).11 These advances have been supported by
+the development of two- and three-dimensional tissue
+phantoms10,12,13 as well as Monte Carlo simulation.14 Such
+investigations are essential, as absorption is higher in the NIR-II
+region compared with NIR-I, making the achievable signal-to-
+noise ratio strongly wavelength dependent.7,12 In parallel, the
+field has witnessed remarkable progress in NIR-II imaging
+technologies, including more sensitive and faster detectors,
+miniaturized devices, and real-time image processing tools,
+which collectively strengthen the prospects for clinical trans-
+lation, particularly in image-guided surgery.15
+Over the past 15 years, a wide variety of NIR-II probes has
+emerged, from the first reports on single-walled carbon
+nanotubes8,16 to inorganic nanomaterials such as quantum
+dots,17,18 lanthanide-based-complexes,19 and rare-earth nano-
+particles.20−22 Alongside these, diverse organic fluorophores
+including BODIPY, polymethine, squaraine, and AIEgens6,23 as
+well as semiconducting polymers24 have been developed. More
+recently, luminescent proteins have been engineered for
+emission in the NIR-II window, though their stability and
+brightness remain limited.25
+Gold nanoclusters (AuNCs), whether atomically precise or
+less well-defined ultrasmall gold nanoparticles, represent
+another class of luminescent probes with promising features
+for near-infrared bioimaging.26−28 These ‘nanomolecules,’
+previously described as monolayer-protected clusters, have
+emerged over the past two decades as versatile agents for
+biomedical applications, including biosensing, bioimaging,
+cancer and neurodegenerative therapies, and antibacterial
+treatments.29 Their unique properties stem from their ultrasmall
+size (<3 nm), which favors renal clearance and reduces toxicity,
+as well as their highly tunable surfaces that allow targeted
+functionalization and drug delivery. In addition, their distinct
+optoelectronic properties and high atomic number (Z = 79)
+enable them to participate in enzymatic or redox reactions and
+to induce photo- or radiotoxic effects, particularly valuable in
+cancer therapy.30−32
+Among these features, the luminescence of AuNCs is
+especially attractive for optical detection at both the cellular
+level and in living tissues. Considerable efforts have focused on
+developing biocompatible, functionalized AuNCs with strong
+photoluminescence (PL) and long fluorescence lifetimes (from
+tens of nanoseconds to the microsecond range), enabling the
+sensitive and selective detection of metal ions and biomolecules
+in cells, as well as the tracking and quantification of their
+accumulation in specific organs of small animals.33 Although the
+exact origin of the PL of AuNCs remains under debate,
+substantial evidence indicates that multiple interdependent
+energy-transfer processes occur within both the metal core and
+the staple motifs (AunSRm) under light excitation.26,34 These
+processes are strongly influenced by the structure of the gold
+core as well as the nature and organization of the protecting
+ligands. For instance, ligand engineering is a key factor, as it
+protects AuNCs from the surrounding environment and
+modulates their PL properties by modulating electronic
+relaxation pathways.35 Comprehensive reviews have discussed
+these structure−property relationships in detail, integrating
+experimental and theoretical perspectives.26 Building on this
+foundation, numerous strategies have been explored to enhance
+the molar absorptivity, photoluminescence quantum yield
+(PLQY), and fluorescence lifetime of AuNCs, with the goal of
+producing photostable and bright emitters suitable for cellular
+and in vivo imaging in the NIR-I and NIR-II regions. These
+approaches include tailoring the core by controlling its size (i.e.,
+number of atoms),36 shape (rods vs spheres),37,38 chirality,39 as
+well as introducing heteroatom doping with metals such as
+cadmium, silver, copper, platinum, or zinc.40−43 Collectively,
+these strategies have led to remarkable improvements in
+brightness, as demonstrated in both in vitro and in vivo
+applications.28
+While NIR-II emitting AuNCs still exhibit lower photo-
+luminescence quantum yields (PLQY) and broader emission
+spectra compared to quantum dots17 and rare-earth NPs,21 they
+offer several practical advantages. AuNCs can be synthesized in
+gram-scale quantities using nontoxic precursors, typically in
+aqueous media, or can be readily functionalized for dispersion in
+physiological environments. Also, in contrast to NIR-II organic
+fluorophores, AuNCs demonstrate superior photostability,
+larger Stokes shifts44 and require fewer synthetic steps for
+preparation.45
+Accounts of Chemical Research
+pubs.acs.org/accounts
+Article
+https://doi.org/10.1021/acs.accounts.5c00626
+Acc. Chem. Res. 2025, 58, 3518−3529
+3519
+
+In this short review, we focus on ligand-engineering strategies
+and the manipulation of the local environment to enhance PL in
+the NIR-II window for water-soluble AuNC systems (Figure
+1).27,28 By ‘local environment,’ we refer to the direct interactions
+occurring at the nano(bio)interface between the AuNC surface
+and surrounding biomolecules, polymers, or other matrices.46,47
+NIR-II-emitting AuNCs stabilized by hydrophobic ligands are
+not discussed here but have been comprehensively reviewed
+elsewhere.26 Finally, we highlight recent findings on how
+biological components within cells and organs influence the
+spectroscopic properties of NIR-II emitters, a key consideration
+for their reliable application in bioimaging and biosensing.
+2. LIGAND ENGINEERING
+The molecular structure of the ligand is a key determinant in
+shaping the geometry, size, and functionality of AuNCs.45,46
+Over the past two decades, numerous studies have sought to
+understand how AuNCs grow in the presence of both synthetic
+and biological ligands. Various strategies, including ligand
+exchange and size-focusing approaches, have been employed not
+only to control the formation of the clusters but also to unravel
+the relationship between their structure and their physicochem-
+ical and optical properties.34,45,48
+The first observations of weak PL above 900 nm in water-
+soluble AuNCs were reported in the early 2000s by Whetten for
+glutathione-stabilized Au28 NCs49 and shortly thereafter for a
+AuNC stabilized by modified poly(ethylene glycol) (PEG)
+molecules (Au38PhC2PEG13).50 In both cases, the emission was
+attributed to phosphorescence involving a triplet state and
+ligand-to-metal energy transfer. Following these reports, studies
+on NIR-II-emitting water-soluble AuNCs remained scarce,
+likely due to the limited availability of suitable instrumentation
+at the time. Seminal work by J.E. Millstone’s group systemati-
+cally investigated the influence of water-soluble short thiol
+ligands, as well as copper and gold−silver alloy NCs, on their
+spectroscopic properties.51 They found that the PL emission
+profile and intensity strongly depend on the nature of the
+thiolated ligand (Figure 2A(a,b)): longer ligands shifted the
+emission to longer wavelengths but exhibited lower brightness,
+with PL quantum yields ranging from 0.13% to 3.65% (Figure
+2A(c)). Their studies highlighted the critical roles of Au−S
+bonding, ligand geometry, and the nucleophilic character of the
+ligand in tuning NIR-I/NIR-II PL emission, as assessed through
+steady-state and time-resolved measurements. Importantly, they
+demonstrated that the observed PL was largely independent of
+core size, underscoring the potential of ligand engineering as a
+strategy to enhance NIR-II emission.
+Building on these insights, several groups have reported NIR-
+II PL from water-soluble, atomically precise gold nano-
+clusters.43,52 Notably, Au25SG18 (SG (or GSH) = Glutathione)
+and Au25Cyst18 (Cyst = cysteine) display broad NIR-II emission
+with three main bands centered at 930, 1050, and 1200 nm,
+albeit with relatively modest PL quantum yields below 1%.43
+These AuNCs are stable in physiological media, exhibit efficient
+renal clearance (up to 86% within 48 h postinjection), and
+enable high-performance in vivo imaging, including (i) non-
+Figure 1. Interdependence between gold nanocluster local surface, photoluminescence, and environmental factors.
+Accounts of Chemical Research
+pubs.acs.org/accounts
+Article
+https://doi.org/10.1021/acs.accounts.5c00626
+Acc. Chem. Res. 2025, 58, 3518−3529
+3520
+
+Figure 2. A. Excitation/emission contour maps (a) of 4,4-(diphenylphosphino)benzoic acid (DPPBA)−AuNCs before/after ligand exchange with
+thiol/sulfide ligands: 4-DPPBA, Na2S, cysteamine, TGA, MPA, MBuA, MHA, MOA, MUA; optimized ligand structures used for shell thickness
+estimation (b). Quantum yield vs chain length with error bars (≥5 trials) (c).61 B. Au25 crystal structure (UCSF Chimera) and schematic of AuGSH →
+AuPC conjugation (γ-glutamate shown) (a). UV−Vis spectra of AuGSH/AuPC (500 μg/mL, PBS pH 7.4, 2 mm cuvette); inset: PC absorption (b).
+PLE spectra of AuGSH at various λexc; Vis−NIR-I/II emission (120 μg/mL, λexc. 550 nm) (c,d).55 C. AuMHA/HDT synthesis scheme (a) with
+absorption (400−1100 nm) (b) and PL (λexc. 400/780 nm) spectra in water (c,d).1 D. Zwitterionic ligand capping/expansion of AuNCs (a). PL
+spectra (1:1, 1:5) before/after LA-sulfobetaine treatment (λexc. 532 nm, normalized to SWIR signal) (b).9 E. Absorption spectra of AuMHA/HDT at
+Accounts of Chemical Research
+pubs.acs.org/accounts
+Article
+https://doi.org/10.1021/acs.accounts.5c00626
+Acc. Chem. Res. 2025, 58, 3518−3529
+3521
+
+invasive cerebrovascular visualization in mice, and (ii) high-
+resolution imaging of primary tumors and lymphatic metastases
+in breast cancer (4T1)-bearing mice.43 Interestingly, Tian et al.
+demonstrated that a simple etching procedure of crude AuSG
+increased the NIR-II PLQY of Au25SG18 by 35%, attributing this
+enhancement to the high monodispersity of the species.53 These
+findings underscore the critical importance of obtaining highly
+pure, uniform AuNCs to minimize quenching or energy transfer
+between clusters of different sizes and optical properties.
+In another study, Baghdasarayan et al. functionalized AuSG
+with 4-aminophenylphosphorylcholine ligands (Figure 2B(a)),
+achieving strong NIR-II PL while conferring stealth properties
+(Figure 2B(b−d)), which enabled their use as lymph node
+markers in preclinical cancer models54 and as photothermal
+agent.55 In another example, the incorporation of the
+biocompatible macrocycle β-cyclodextrin as a ligand yielded
+AuNCs with broad NIR-II emission centered at 1050 nm
+(PLQY = 0.11%), predominantly originating from Au(I)
+complexes stabilizing the cluster core.56 Remarkably, con-
+jugation of these Au−β-cyclodextrin NCs to an antibody
+(CD326, epithelial cell adhesion molecule) created a host−
+guest nanosystem capable of selective tumor targeting and
+sensitive detection using NIR-II imaging.56
+One effective strategy to enhance NIR-II PL in AuNCs is to
+promote intramolecular charge transfer (ICT), which in these
+systems corresponds to charge transfer between the ligand and
+the metal core. A recent study demonstrated that deprotonation
+of copper-doped AuNCs stabilized by para-mercaptobenzoic
+acid (pMBA) can lead to a 6-fold increase in PLQY (5.59% at
+pH 13, at 1000 nm). This enhancement was attributed to copper
+stabilizing the Au(I) oxidation state and to strong π−π
+interactions between pMBA ligands at high pH.42
+Optimizing brightnessdefined as the product of molar
+extinction coefficient and PLQYrequires both strong
+absorption in the NIR-I window, to maximize tissue penetration
+of the excitation source, and efficient emission in the NIR-II
+range. A particularly elegant approach to achieve this involves
+the introduction of co-ligands on the AuNC surface.1,57,58 For
+example, short dithiol PEG derivatives, such as hexa(ethylene
+glycol) (HDT) and tetra(ethylene glycol) (TDT), were used as
+co-ligands during the synthesis of Au25NCs stabilized by
+mercaptohexanoic acid (MHA), forming loops on individual
+clusters (Figure 2C(a)).1 This modification induced two NIR
+absorbance bands at 780 and 980 nm, which intensified with
+increasing HDT content, reflecting structural microdistortions
+from surface charge anisotropy (Figure 2C(b)).58 HDT
+incorporation also markedly influenced PL properties, enhanc-
+ing multiple energy-transfer pathways involving Au−ligand
+electronic states. Consequently, PL bands at 1100 and 1200 nm
+were strengthened, lifetimes were prolonged, and PLQY reached
+6.1% in aqueous solution (Figure 2C(c,d)). In vivo experiments
+in mice showed prolonged circulation (t1/2 = 35 min) and
+efficient renal clearance, enabling pseudo-3D imaging of blood
+vessels and real-time, noninvasive monitoring of vascular
+disorders at 4 mm depth above 1319 nm with high spatial
+resolution.59
+Similarly, studies on Au25MHA18 with alternative co-
+ligandscysteamine (Cystm), 2-mercaptoethanol (ME), and
+DL-dithiothreitol (DTT)also demonstrated PLQY enhance-
+ments up to 2%. By selecting an excitation/emission pair of 1064
+nm/1200−1700 nm, capillaries containing these AuNCs could
+be detected at depths of up to 7 mm in intralipid solutions,
+highlighting the advantage of red-shifting both excitation and
+emission to maximize signal-to-background ratio while preserv-
+ing high spatial resolution. Furthermore, AuMHA/Cystm NCs
+enabled sensitive monitoring of kidney dysfunction, illustrating
+the potential of these engineered probes for functional in vivo
+imaging.60
+3. NANO(BIO)INTERFACE
+A widely used strategy to enhance the PL of AuNCs involves
+generating molecular interactions within the first ligand layer
+stabilizing the gold core. This approach has been successfully
+demonstrated for green- and red-emitting AuNCs through
+covalent or electrostatic interactions with small organic
+molecules, which rigidify the ligand shell.63−66 Such rigid-
+ification leads to marked increases in PLQY and prolonged
+fluorescence lifetimes by reducing nonradiative energy transfer
+at the AuNC surface66 and limiting water accessibility to the
+gold core, which otherwise acts as a quencher.67 Xie and
+colleagues further exploited this strategy by creating molecular
+assemblies on AuNCs, achieving PLQY enhancements of nearly
+60% in aqueous solution.64,68 These effects are primarily driven
+by noncovalent forcesincluding electrostatic interactions,
+hydrogen bonding, dipolar, van der Waals, and hydrophobic
+interactionsthat collectively reduce the nonradiative decay
+rate.26 Interestingly, ligand rigidification has also been shown to
+influence vibrations of the metal core, suggesting a subtle
+synergy between surface chemistry and core-state emission.65
+While this strategy has been demonstrated for green emission,
+notably via triple-layer assemblies on Au10NCs,65 and for red-
+emitting clusters,68 its applicability to NIR-II emission remains
+to be validated.
+In this context, in 2017, Chen et al. applied this strategy by
+introducing an additional layer of the zwitterionic thioctic
+sulfobetaine ligand onto the AuNC surface (Figure 2D(a)),
+resulting in a 6.3-fold enhancement of PL, increasing the PLQY
+from 0.6% to 3.8%, accompanied by a blue shift of the emission
+maximum from 1000 to 900 nm (Figure 2D(b)). This study
+provided the first demonstration of AuNCs exhibiting both
+efficient renal clearance in mice after intravenous injection and
+sufficient PL signal for blood vessel imaging with high signal-to-
+background ratio above 1300 nm.9 Rigidifying the ligand shell
+on co-ligand-stabilized AuNCs also has a profound effect on
+NIR absorption bands, which can be exploited to further
+enhance AuNC brightness.69 For example, by increasing the
+concentration of reducing agent during the synthesis of NIR-II-
+emitting AuMHA/HDT, mass spectrometry and electron
+microscopy revealed a progressive thickening of the organic
+ligand layer around the gold core, while the core itself remained
+unaffected. This modification led to a dramatic increase in the
+absorption band at 990 nm, by more than 60-fold, achieving a
+molar extinction coefficient of 1.69 × 104 M−1·cm−1
+comparable to that of organic dyes70 and nanocrystals71 at this
+Figure 2. continued
+different NaBH4 concentrations.62 Panels A, C, and D are reproduced with permission from refs 72, 68, and 5. Panels B and E are reproduced from refs
+65 and 73, respectively, under the terms of the Creative Commons Attribution License (CC BY 4.0).
+Accounts of Chemical Research
+pubs.acs.org/accounts
+Article
+https://doi.org/10.1021/acs.accounts.5c00626
+Acc. Chem. Res. 2025, 58, 3518−3529
+3522
+
+Figure 3. A. Scheme of AuPolyNP emitters (a).74 Absorbance (b) and PL (c) spectra of PEMA-COOH (5%) NPs with varying AuNC loading (λexc.
+730 nm); inset: PL in deuterated vs non-deuterated media. Evolution of absorbance, PL, and QY with loading (d).72 B. SREFLEX-refined model of
+Au25−BSA (blue) overlaid with BSA crystal structure; movable regions in darker shades (a). Absorption (b), PL (λexc. 700 nm) (c), and PL lifetime
+(λexc 485 nm, λem 920 nm) (d) of Au25pMBA18 and Au25−BSA in water.2 C. Self-assembly of AuCystA with siRNA (5:1) (a). TEM images (b) and
+excitation/PL maps (c) of AuCystA and AuCystA−siRNA. MSD analysis from 1774 trajectories across five fields of view, with ensemble MSD and
+hydrodynamic radius estimation (d,e).4 All panels reproduced from the cited references under the terms of the Creative Commons Attribution License
+(CC BY 4.0).
+Accounts of Chemical Research
+pubs.acs.org/accounts
+Article
+https://doi.org/10.1021/acs.accounts.5c00626
+Acc. Chem. Res. 2025, 58, 3518−3529
+3523
+
+wavelengthfavoring excitation light penetration into deep
+tissues with minimal photodamage (Figure 2E).
+NIR-II-emitting AuNCs can also be entrapped within
+polymeric matrices or proteins to enhance their PL and overall
+brightness. For example, AuNCs stabilized with long aliphatic
+thiols (DDT: dodecanethiol) were incorporated into biocom-
+patible, water-soluble poly(ethyl)methacrylate nanoparticles,
+achieving loadings of up to 10,000 AuNCs per 60 nanoparticles
+with high monodispersity and colloidal stability (Figure
+3A(a)).72 While the PLQY reached only a maximum of 1.3%,
+the strong absorption of the AuDDT emitters allowed overall
+brightness values up to 3.8 × 106 M−1·cm−1 at short wavelength
+in the second NIR window (900−1300 nm) (Figure 3A(b−d)),
+making them comparable to the brightest emitters such as
+quantum dots73 or rare earth NPs.22 Single-particle tracking
+studies further demonstrated the ability to monitor these zero-
+dimensional nano-objects in 3% agarose gels, a simple model for
+biological environments.74 Steady-state and time-resolved
+fluorescence measurements in water and deuterated water
+revealed a broad PL spectrum with three main bands at 950,
+1050, and 1200 nm (Figure 3A(c)). Notably, the PL profile
+differed between water and deuterated water, highlighting the
+influence of water absorption in the second NIR window. The
+relative intensity of these bands was also dependent on AuNC
+loading, indicating strong interactions between AuNCs within
+the polymeric matrix, particularly affecting the 1050 and 1200
+nm bands via ligand−metal−surface energy transfer.72 Fur-
+thermore, AuDDT could be encapsulated up to 1 mol % in the
+lipid bilayer of liposomes while retaining PL properties, enabling
+cellular and in vivo imaging.32
+To achieve more biologically relevant templates, efforts have
+focused on biomineralized AuNCs within proteins or on labeling
+specific amino-acid residues. Xie’s group demonstrated, through
+combined experimental and theoretical studies, a complex
+interplay between stoichiometric interactions and synergism for
+Au25(p-MBS)18 (p-MBS = p-mercaptobenzenesulfonic acid)
+and bovine serum albumin (BSA). Microscopy, spectroscopy,
+and molecular dynamics simulations showed that electrostatic
+and hydrogen-bond interactions between the p-MBS ligands
+and positively charged BSA residues could lead to a 4.5-fold
+enhancement of NIR-II PL.75,76 Similarly, Bertorelle et al.
+employed long incubations of Au25(p-MBA)18 (p-MBA = p-
+mercaptobenzoic acid) with BSA to achieve selective equimolar
+binding to the Cys34 residue, confirmed by mass spectrometry,
+small-angle X-ray scattering (SAXS), and molecular modeling
+(Figure 3B(a,b)).2 This ligand exchange resulted in a 4.7-fold
+increase in PLQY, a red-shifted emission maximum at 1050 nm
+(Figure 3B(c)), and an increase in average lifetime from 72 to
+396.3 ns (Figure 3B(d)), consistent with increased rigidity of
+the AuNC environment within the protein. Additional
+spectroscopic and TD-DFT studies on Au25pMBA18−xCysx (x
+= 0, 2, 5) and Au25Cys18 indicated that cysteine, being a stronger
+electron donor than pMBA, had a significant effect on the NIR
+band at 830 nm. Nonetheless, data suggest that the predominant
+factor enhancing PL was the rigidification of the surface within
+the BSA scaffold, which reinforces intersystem crossing
+pathways involved in photoluminescence.2,77
+Another promising avenue involves controlled aggregation of
+AuNCs, which can dramatically alter their optical properties and
+enable the design of 0D, 1D, 2D, and 3D assemblies with
+enhanced emission.78 While precise 1D assemblies such as
+dimers and trimers of atomically defined AuNCs (Au25pMBA18,
+Au18SG14) have been constructed using DNA guidance, their
+NIR PL remains relatively weak due to nonradiative energy
+losses.79 In our group, we developed ∼100 nm supraclusters
+through the spontaneous self-assembly of positively charged
+AuNCs (stabilized by arginine-containing peptides) and siRNA,
+achieving a 17.6-fold increase in PL at 680 nm alongside
+enhanced radiotherapeutic effects.30 Extending this approach,
+bright NIR-II-emitting AuNCs stabilized by cysteamine (PLQY
+= 7.1%) formed supraclusters with siRNA against heat shock
+factor protein (siHSF1) by controlling stoichiometry (Figure
+3C(a)).4 These supraclusters, ∼100 nm in size with interparticle
+distances below 3 nm (Figure 3C(b)), exhibited compaction
+over time as revealed by SAXS, suggesting dynamic reorganiza-
+tion or intercluster exchange to minimize energy. Following
+assembly, PL spectra showed decreased emission at shorter
+wavelengths (900−1000 nm) and a bathochromic shift to 1400
+nm (Figure 3C(c)), consistent with prior observations in solid
+matrices (PDMS) or other solid environments80 highlighting
+the influence of the local environment on AuNC surface energy
+transfer. These supraclusters could be detected by single particle
+tracking in the NIR-II window offering multifunctional potential
+for imaging and gene-silencing therapies (Figure 3C(c,d)).4
+Finally, Sun and colleagues demonstrated another approach
+using a reverse-emulsion method, confining AuNCs in droplets
+to finely tune assembly size (20−80 nm) and structure.81
+Assemblies of AuNCs stabilized by lipoic acid (LA) exhibited
+size- and cross-linker-dependent organization, influenced by the
+molecular weight (1.8−25 kDa) and architecture (linear vs
+branched) of polyelectrolyte cross-linkers. Under optimized
+conditions, these assemblies achieved a 4-fold PL enhancement
+at 1100 nm compared to free Au−LA NCs, with PLQY reaching
+1.18% across 900−1300 nm and lifetimes increasing from 206.2
+to 284.4 ns, reflecting restricted AuNC vibrations. Further
+physicochemical and microscopic analyses (XPS, TEM, FTIR)
+suggested polyelectrolyte-mediated etching and increased Au(I)
+content on the AuNC surface, which likely contributed to the
+observed PL enhancement via ligand−metal charge transfer.
+4. BIOLOGICAL ENVIRONMENT
+When optical probes such as AuNCs enter the body, they
+encounter numerous biological componentsincluding pro-
+teins, lipids, complement factors, and cellsunder varying salt
+concentrations. These probes interact dynamically with bio-
+logical fluids, which can directly influence their colloidal stability
+and optical properties.82 They are also subject to immune
+recognition, accumulate progressively in tissues and organs, and
+can undergo biotransformation, potentially causing inflamma-
+tion or acute toxicity.83 Importantly, these interactions can
+induce drastic changes in PL emission profiles, intensity, and
+lifetimes, potentially generating artifacts during detection and
+leading to misinterpretation of results. For example, significant
+optical changes have been reported for NIR-I AuNCs stabilized
+with dihydrolipoic acid in cellular environments84 and for NIR-
+II AuNCs stabilized with pMBA when interacting with abundant
+blood proteins such as albumin2 underscoring the need to
+understand these phenomena.
+Ogáyar and colleagues systematically investigated the cellular
+environment to identify key parameterssuch as pH, temper-
+ature, viscosity, ionic strength, oxidation, protein complexation,
+and aggregationthat affect the spectroscopic properties of
+NIR-II-emitting AuMHA/HDT clusters.3 Using multiple cell
+types (cancerous and noncancerous) alongside solution
+controls, they analyzed PL spectra and lifetimes. Their data
+highlighted the significant role of redox processes in the
+Accounts of Chemical Research
+pubs.acs.org/accounts
+Article
+https://doi.org/10.1021/acs.accounts.5c00626
+Acc. Chem. Res. 2025, 58, 3518−3529
+3524
+
+cytoplasm and endocytic vesicles, which can remove or replace
+ligands from the AuNC surface and promote aggregation or
+complexation with cellular biomolecules (Figure 4A(a−h)).
+These effects manifested as an 80 nm blue shift of the PL
+maximum (from 1080 nm) accompanied by spectral broad-
+ening, and a decrease in fluorescence lifetime from 54.7 ± 0.2 ns
+in solution to 32 ± 2 ns within cells (Figure 4B(a,b)). The study
+further demonstrated that luminescence properties of NIR-II
+AuNCs are cell-type dependent, indicating that variations in
+cellular metabolism modulate their optical behavior. Comple-
+mentary hyperspectral in vivo experiments in murine models
+confirmed that these spectroscopic changes observed in vitro are
+also present in living organs (Figure 4C(a−g)), reflecting
+comparable physicochemical modifications in biological con-
+texts.3
+5. CONCLUSION AND PERSPECTIVE
+Among the different families of NIR-II emitters, gold nano-
+clusters (AuNCs) stand out as promising candidates thanks to
+recent progress in their synthesis and ligand engineering.
+Tailoring the surface chemistry of these nanomolecular species
+has enabled a significant enhancement of their brightness,
+particularly in the first part of the NIR-II window between 900
+and 1300 nm, with PLQY reaching up to 10% in wateran
+essential feature for high-resolution deep-tissue imaging.
+Strategies such as controlling the nano(bio)interface through
+molecular assembly (e.g., layer-by-layer approaches), embed-
+ding AuNCs in protein or polymer matrices, or inducing self-
+assembly provide versatile routes to generate bright, water-
+soluble AuNC systems with PL emission extending up to 1700
+nm. Combining these optical properties with therapeutic
+functions, such as drug delivery and photo/radio activation,
+positions AuNCs as powerful theranostic agents for applications
+in oncology, cardiology, neuroinflammation, and other
+pathologies.
+To further improve brightness (PLQY > 10%) and shift
+maximum emission beyond 1200 nm, strategies developed for
+hydrophobic AuNCs could be translated to water-soluble
+systems. For instance, locking the kernel core with novel
+hydrosoluble thiol ligands may reduce nonradiative decay,
+prolong PL lifetimes, and boost PLQY.85 Recent developments
+by R. Jin’s group on hydrophobic rod-shaped AuNCs (Au42,
+Au60, Au78, Au96, Au114) with tunable absorption spanning
+800−1800 nm are particularly encouraging.38,86 Their strong
+absorption coefficients (105−106 M−1cm−1) suggest opportu-
+nities to increase brightness and enable excitation with longer
+Figure 4. A. Scheme of cellular factors affecting NIR-II-AuNC properties (a). Average lifetime measured as a function of viscosity (0−5.6 cP), pH
+(3.0−6.0), and K+ (0−180 mM) at 25 °C (b). Decay curves and emission spectra of NIR-II-AuNCs in water vs after aggregation (PEI) (c,d), protein
+binding (BSA) (e,f), and ligand cleavage (DTT) (g,h). Green lines in spectra show max emission in U87 cells (1080 nm). B. Emission spectra (a) and
+decay curves (b) of NIR-II-AuNCs in water and in U87 cells. C. Experimental setup for hyperspectral imaging of NIR-II-AuNCs in vivo (a). Whole-
+body fluorescence (900−1700 nm) at short (ti < 5 min) and long (ti > 5 min) time postinjection. In vivo emission spectra from long-time hyperspectral
+images compared with PBS solution (b,c,d). Ex vivo spectra from liver and skin/fat (with/without autofluorescence correction) compared to PBS
+control (e,f,g).3 This article was published under a Creative Commons Attribution License CC BY 4.0).
+Accounts of Chemical Research
+pubs.acs.org/accounts
+Article
+https://doi.org/10.1021/acs.accounts.5c00626
+Acc. Chem. Res. 2025, 58, 3518−3529
+3525
+
+wavelengths, improving penetration depth in tissues, even
+though their PL properties remain to be fully characterized. In
+addition, heteroatom doping40,87 and the use of N-heterocyclic
+carbene (NHC) ligands,88 already proven to enhance PL in the
+visible and NIR-I ranges, hold great promise for engineering
+bright, water-soluble NIR-II AuNCs. Hybrid AuNC systems
+incorporating organic/inorganic molecules or nanobioconju-
+gates76 also represent an attractive strategy to red-shift emission
+via FRET or BRET mechanisms while improving biocompat-
+ibility for biomedical applications.
+Despite these advances in optical performance, the environ-
+mental sensitivity of metal nanoclusters (Au, Ag, Cu, Pt, etc.)
+remains a critical challenge. Their optical properties can be
+significantly altered in cells and in tissues by factors such as pH,
+redox conditions, or ligand disruption, as well as by protein
+complexation and intracellular aggregation.3 These issues
+highlight the importance of designing AuNCs with robust
+surface ligand binding and stealth characteristics. Strategies such
+as using bidentate thiols, NHCs, antifouling zwitterionic ligands,
+or PEGylation may lead to more stable and biocompatible NIR-
+II AuNCs.
+Equally important for clinical translation is the long-term
+safety of AuNCs. Biopersistence and possible biotransformation
+by cellular metalloproteins could result in oxidative stress,
+organelle dysfunction, inflammation, and immune activation,
+ultimately impairing organ function.83,89 This underscores the
+urgent need to standardize protocols for evaluating colloidal and
+photostability, as well as oxidative/reductive behavior, in
+biologically relevant environments and in artificial models that
+mimic cellular and organ-level complexity.
+■AUTHOR INFORMATION
+Corresponding Author
+Xavier Le Guével −Université Grenoble Alpes, INSERM
+U1209, CNRS UMR 5309, Institut pour l’Avancée des
+Biosciences (IAB), Cancer Targets & Experimental
+Therapeutics, 38000 Grenoble, France;
+orcid.org/0000-
+0003-3634-7762; Email: Xavier.le-guevel@univ-grenoble-
+alpes.fr
+Complete contact information is available at:
+https://pubs.acs.org/10.1021/acs.accounts.5c00626
+Notes
+The author declares no competing financial interest.
+Biography
+Xavier Le Guével earned his Ph.D. in Chemistry in 2006 from the
+University of Tours and the French Alternative Energies and Atomic
+Energy Commission. He completed postdoctoral work in optical
+waveguides, biosensors, and pharmaceutical nanotechnology across
+Europe before joining the Nanomedicine Centre Bionand in Spain as an
+independent researcher. Since 2016, he has been a CNRS researcher,
+and since 2023, CNRS research director at the Institute for Advanced
+Biosciences, University of Grenoble Alpes. His research focuses on
+developing nanomaterials, including metal nanoclusters, and optical
+tools for cancer diagnosis and therapy, spanning fundamental studies to
+preclinical applications.
+■ACKNOWLEDGMENTS
+XLG would like to thank ANR SEQUOIA (ANR-22-CE18-
+0006), NanoGold (ANR-22-CE29-0022), SAMURAI, (ANR-
+24-CE19-2073-01) and Wilive (ANR-24-CE09-2351-03) for
+their financial support. XLG thanks Zeineb Ayed and Furhan
+Abdul Rezak for the graphical abstract design.
+■ABBREVIATIONS
+AuNCs: gold nanoclusters
+BRET: Bioluminescence Resonance Energy Transfer
+FRET: Förster Resonance Energy Transfer
+NIR-I: first near-infrared window
+NIR-II: second near-infrared window
+PL: photoluminescence
+PLQY: photoluminescence quantum yield
+SWIR: shortwave infrared
+■REFERENCES
+(1) Musnier, B.; Wegner, K. D.; Comby-Zerbino, C.; Trouillet, V.;
+Jourdan, M.; Hausler, I.; Antoine, R.; Coll, J. L.; Resch-Genger, U.; Le
+Guevel, X. High photoluminescence of shortwave infrared-emitting
+anisotropic surface charged gold nanoclusters. Nanoscale 2019, 11 (25),
+12092−12096.
+(2) Bertorelle, F.; Wegner, K. D.; Perić Bakulić, M.; Fakhouri, H.;
+Comby-Zerbino, C.; Sagar, A.; Bernadó, P.; Resch-Genger, U.;
+Bonačić-Koutecký, V.; Le Guével, X.; Antoine, R. Tailoring the NIR-
+II Photoluminescence of Single Thiolated Au25 Nanoclusters by
+Selective Binding to Proteins. Chemistry A European Journal 2022, 28
+(39), No. e202200570.
+(3) París Ogáyar, M.; Ayed, Z.; Josserand, V.; Henry, M.; Artiga, Á.;
+Didonè, L.; Granado, M.; Serrano, A.; Espinosa, A.; Le Guével, X.; et al.
+Luminescence Fingerprint of Intracellular NIR-II Gold Nanocluster
+Transformation: Implications for Sensing and Imaging. ACS Nano
+2025, 19 (8), 7821−7834.
+(4) Ayed, Z.; Muñoz, B. M.; Vandekerckhove, C. I.; Faure, V.; Ali, S.
+N. S.; Coll, J.-l.; Cognet, L.; Le Guével, X. Self-Assembled Small
+Interfering RNA-Gold Supraclusters Detected at the Single-Molecule
+Level in the Near-Infrared-II Window. Small Structures 2025,
+No. 2500381.
+(5) Hong, G.; Antaris, A. L.; Dai, H. Near-infrared fluorophores for
+biomedical imaging. Nature Biomedical Engineering 2017, 1 (1),
+No. 0010.
+(6) Zhu, S.; Tian, R.; Antaris, A. L.; Chen, X.; Dai, H. Near-Infrared-II
+Molecular Dyes for Cancer Imaging and Surgery. Adv. Mater. 2019, 31
+(24), No. 1900321.
+(7) Wang, F.; Zhong, Y.; Bruns, O.; Liang, Y.; Dai, H. In vivo NIR-II
+fluorescence imaging for biology and medicine. Nat. Photonics 2024, 18
+(6), 535−547.
+(8) Hong, G.; Diao, S.; Chang, J.; Antaris, A. L.; Chen, C.; Zhang, B.;
+Zhao, S.; Atochin, D. N.; Huang, P. L.; Andreasson, K. I.; et al.
+Through-skull fluorescence imaging of the brain in a new near-infrared
+window. Nat. Photonics 2014, 8 (9), 723−730.
+(9) Chen, Y.; Montana, D. M.; Wei, H.; Cordero, J. M.; Schneider, M.;
+Le Guével, X.; Chen, O.; Bruns, O. T.; Bawendi, M. G. Shortwave
+Infrared in Vivo Imaging with Gold Nanoclusters. Nano Lett. 2017, 17
+(10), 6330−6334.
+(10) Musnier, B.; Henry, M.; Vollaire, J.; Coll, J.-L.; Usson, Y.;
+Josserand, V.; Le Guével, X. Optimization of spatial resolution and
+scattering effects for biomedical fluorescence imaging by using sub-
+regions of the shortwave infrared spectrum. Journal of Biophotonics
+2021, 14 (2), No. e202000345.
+(11) Feng, Z.; Tang, T.; Wu, T.; Yu, X.; Zhang, Y.; Wang, M.; Zheng,
+J.; Ying, Y.; Chen, S.; Zhou, J.; et al. Perfecting and extending the near-
+infrared imaging window. Light: Science & Applications 2021, 10 (1),
+197.
+(12) Carr, J. A.; Aellen, M.; Franke, D.; So, P. T. C.; Bruns, O. T.;
+Bawendi, M. G. Absorption by water increases fluorescence image
+contrast of biological tissue in the shortwave infrared. Proc. Natl. Acad.
+Sci. U. S. A. 2018, 115 (37), 9080−9085.
+Accounts of Chemical Research
+pubs.acs.org/accounts
+Article
+https://doi.org/10.1021/acs.accounts.5c00626
+Acc. Chem. Res. 2025, 58, 3518−3529
+3526
+
+(13) Zhou, Q.; Chen, Z.; Robin, J.; Deán-Ben, X.-L.; Razansky, D.
+Diffuse optical localization imaging for noninvasive deep brain
+microangiography in the NIR-II window. Optica 2021, 8 (6), 796−803.
+(14) Iida, T.; Yamato, H.; Jin, T.; Nomura, Y. Optimal focus evaluated
+using Monte Carlo simulation in non-invasive neuroimaging in the
+second near-infrared window. MethodsX 2019, 6, 2367−2373. Lee, J.-
+Y.; Ahn, S.; Nam, S. H. Performance estimation of optical skin probe in
+short wavelength infrared spectroscopy based on Monte-Carlo
+simulation. Sci. Rep. 2022, 12 (1), 20134.
+(15) Li, C.; Chen, G.; Zhang, Y.; Wu, F.; Wang, Q. Advanced
+Fluorescence Imaging Technology in the Near-Infrared-II Window for
+Biomedical Applications. J. Am. Chem. Soc. 2020, 142 (35), 14789−
+14804.
+(16) Welsher, K.; Liu, Z.; Sherlock, S. P.; Robinson, J. T.; Chen, Z.;
+Daranciang, D.; Dai, H. A route to brightly fluorescent carbon
+nanotubes for near-infrared imaging in mice. Nat. Nanotechnol. 2009, 4
+(11), 773−780.
+(17) Chen, L.-L.; Zhao, L.; Wang, Z.-G.; Liu, S.-L.; Pang, D.-W. Near-
+Infrared-II Quantum Dots for In Vivo Imaging and Cancer Therapy.
+Small 2022, 18 (8), No. 2104567.
+(18) Franke, D.; Harris, D. K.; Chen, O.; Bruns, O. T.; Carr, J. A.;
+Wilson, M. W. B.; Bawendi, M. G. Continuous injection synthesis of
+indium arsenide quantum dots emissive in the short-wavelength
+infrared. Nat. Commun. 2016, 7 (1), No. 12749. Zhang, Z.; Yang, H.;
+Wang, M.; Zhang, Y.; Jiang, J.; Wang, Q. NIR-II silver-based quantum
+dots: Synthesis and applications. Nano Research 2024, 17 (12), 10620−
+10643. Li, H.; Du, Z.; Zhu, L.; Zhang, C.; Xiong, J.; Zhou, B.; Dong, B.;
+Zhang, X.; Alifu, N. Ultrabright NIR-IIb Fluorescence Quantum Dots
+for Targeted Imaging-Guided Surgery. ACS Appl. Mater. Interfaces
+2024, 16 (25), 32045−32057.
+(19) Yang, Y.; Tu, D.; Zhang, Y.; Zhang, P.; Chen, X. Recent advances
+in design of lanthanide-containing NIR-II luminescent nanoprobes.
+iScience 2021, 24 (2), 102062.
+(20) Xu, R.; Liu, J.; Cao, H.; Lin, D.; Chen, X.; Han, F.; Weng, X.;
+Wang, Y.; Liu, L.; Yu, B.; et al. In Vivo High-Contrast Biomedical
+Imaging in the Second Near-Infrared Window Using Ultrabright Rare-
+Earth Nanoparticles. Nano Lett. 2023, 23 (23), 11203−11210.
+(21) Zhao, H.; Xiao, H.; Liu, Y.; Ju, H. Lanthanide-doped rare earth
+nanoparticles for near-infrared-II imaging and cancer therapy. BMEMat
+2023, 1 (3), No. e12032.
+(22) Ding, S.; Lu, L.; Fan, Y.; Zhang, F. Recent progress in NIR-II
+emitting lanthanide-based nanoparticles and their biological applica-
+tions. Journal of Rare Earths 2020, 38 (5), 451−463.
+(23) Ou, Y.-F.; Ren, T.-B.; Yuan, L.; Zhang, X.-B. Molecular Design of
+NIR-II Polymethine Fluorophores for Bioimaging and Biosensing.
+Chemical & Biomedical Imaging 2023, 1 (3), 220−233. Bandi, V. G.;
+Luciano, M. P.; Saccomano, M.; Patel, N. L.; Bischof, T. S.; Lingg, J. G.
+P.; Tsrunchev, P. T.; Nix, M. N.; Ruehle, B.; Sanders, C.; et al. Targeted
+multicolor in vivo imaging over 1,000 nm enabled by nonamethine
+cyanines. Nat. Methods 2022, 19 (3), 353−358. Mu, J.; Xiao, M.; Shi, Y.;
+Geng, X.; Li, H.; Yin, Y.; Chen, X. The Chemistry of Organic Contrast
+Agents in the NIR-II Window. Angew. Chem., Int. Ed. 2022, 61 (14),
+No. e202114722. Dai, H.; Wang, X.; Shao, J.; Wang, W.; Mou, X.;
+Dong, X. NIR-II Organic Nanotheranostics for Precision Oncotherapy.
+Small 2021, 17 (44), No. 2102646.
+(24) Gill, N.; Srivastava, I.; Tropp, J. Rational Design of NIR-II
+Emitting Conjugated Polymer Derived Nanoparticles for Image-
+Guided Cancer Interventions. Adv. Healthcare Mater. 2024, 13 (26),
+No. 2401297. Chen, D.; Qi, W.; Liu, Y.; Yang, Y.; Shi, T.; Wang, Y.;
+Fang, X.; Wang, Y.; Xi, L.; Wu, C. Near-Infrared II Semiconducting
+Polymer Dots: Chain Packing Modulation and High-Contrast Vascular
+Imaging in Deep Tissues. ACS Nano 2023, 17 (17), 17082−17094.
+(25) Chang, Z.; Cai, J.; Liu, C.; Zhao, S.; Zhang, X.; Wang, F.; Sun, Q.
+Strong Exciton Emission and Ultra-Photostable Near Infrared-II
+Fluorescent Protein for In Vivo Imaging. Adv. Funct. Mater. 2025, 35
+(9), No. 2416366.
+(26) Liu, Z.; Luo, L.; Jin, R. Visible to NIR-II Photoluminescence of
+Atomically Precise Gold Nanoclusters. Adv. Mater. 2024, 36 (8),
+No. 2309073.
+(27) Sharma, N.; Mohammad, W.; Le Guével, X.; Shanavas, A. Gold
+Nanoclusters as High Resolution NIR-II Theranostic Agents. Chemical
+& Biomedical Imaging 2024, 2 (7), 462−480.
+(28) Baghdasaryan, A.; Dai, H. Molecular Gold Nanoclusters for
+Advanced NIR-II Bioimaging and Therapy. Chem. Rev. 2025, 125 (11),
+5195−5227.
+(29) Porret, E.; Le Guével, X.; Coll, J. L. Gold Nanoclusters for
+Biomedical Applications: Toward In Vivo Studies. J. Mater. Chem. B
+2020, 8, 2216−2232. Yan, Q.; Yuan, Z.; Wu, Y.; Zhou, C.; Dai, Y.; Wan,
+X.; Yang, D.; Liu, X.; Xue, N.; Zhu, Y.; et al. Atomically Precise Water-
+Soluble Gold Nanoclusters: Synthesis and Biomedical Application.
+Precision Chemistry 2023, 1 (8), 468−479.
+(30) Moro, S.; Omrani, M.; Erbek, S.; Jourdan, M.; Vandekerckhove,
+C. I.; Nogier, C.; Vanwonterghem, L.; Molina, M.-C.; Bernadó, P.;
+Thureau, A.; et al. Self-Assembled Peptide-Gold Nanoclusters with
+SiRNA Targeting Telomeric Response to Enhance Radiosensitivity in
+Lung Cancer Cells. Small Science 2025, 5 (2), No. 2400156.
+(31) Chen, F.; Ruan, F.; Xie, X.; Lu, J.; Sun, W.; Shao, D.; Chen, M.
+Gold Nanocluster: A Photoelectric Converter for X-Ray-Activated
+Chemotherapy. Adv. Mater. 2024, 36 (36), No. 2402966. Yang, Z.;
+Yang, X.; Guo, Y.; Kawasaki, H. A Review on Gold Nanoclusters for
+Cancer Phototherapy. ACS Applied Bio Materials 2023, 6 (11), 4504−
+4517.
+(32) Carigga Gutierrez, N. M.; Clainche, T. L.; Bulin, A.-L.; Leo, S.;
+Kadri, M.; Abdelhamid, A. G. A.; Pujol-Solé, N.; Obaid, G.;
+Hograindleur, M.-A.; Gardette, V.; et al. Engineering Radiocatalytic
+Nanoliposomes with Hydrophobic Gold Nanoclusters for Radio-
+therapy Enhancement. Adv. Mater. 2024, 36, No. 2404605.
+(33) Chen, S.; Li, S.; Wang, Y.; Chen, Z.; Wang, H.; Zhang, X.-D. Gold
+Nanoclusters for Tumor Diagnosis and Treatment. Advanced Nano-
+Biomed Research 2023, 3 (12), No. 2300082.
+(34) Li, Y.; Zhou, M.; Jin, R. Programmable Metal Nanoclusters with
+Atomic Precision. Adv. Mater. 2021, 33 (46), No. 2006591.
+(35) Zhang, B.; Chen, J.; Cao, Y.; Chai, O. J. H.; Xie, J. Ligand Design
+in Ligand-Protected Gold Nanoclusters. Small 2021, 17 (27),
+No. 2004381.
+(36) Herbert, P. J.; Ackerson, C. J.; Knappenberger, K. L., Jr Size-
+Scalable Near-Infrared Photoluminescence in Gold Monolayer
+Protected Clusters. J. Phys. Chem. Lett. 2021, 12 (31), 7531−7536.
+Dolamic, I.; Varnholt, B.; Bürgi, T. Far-infrared spectra of well-defined
+thiolate-protected gold clusters. Phys. Chem. Chem. Phys. 2013, 15 (45),
+19561−19565.
+(37) Liu, Z.; Hu, X.; Luo, L.; He, G.; Mazumder, A.; Gunay, E.; Wang,
+Y.; Dickey, E. C.; Peteanu, L. A.; Matyjaszewski, K.; et al. Near-Infrared
+to Visible Photon Upconversion with Gold Quantum Rods and
+Aqueous Photo-Driven Polymerization. J. Am. Chem. Soc. 2025, 147
+(31), 28241−28250. Luo, L.; Liu, Z.; Mazumder, A.; Jin, R. Raising
+Near-Infrared Photoluminescence Quantum Yield of Au42 Quantum
+Rod to 50% in Solutions and 75% in Films. J. Am. Chem. Soc. 2024, 146
+(41), 27993−27997. Li, Q.; Zeman, C. J., IV; Ma, Z.; Schatz, G. C.; Gu,
+X. W. Bright NIR-II Photoluminescence in Rod-Shaped Icosahedral
+Gold Nanoclusters. Small 2021, 17 (11), No. 2007992.
+(38) Luo, L.; Liu, Z.; Kong, J.; Gianopoulos, C. G.; Coburn, I.;
+Kirschbaum, K.; Zhou, M.; Jin, R. Three-atom-wide gold quantum rods
+with periodic elongation and strongly polarized excitons. Proc. Natl.
+Acad. Sci. U. S. A. 2024, 121 (10), No. e2318537121.
+(39) Bai, M.; Qin, L.; Zeng, X.-M.; Wu, M.; Yao, L.-Y.; Yang, G.-Y.
+Dithiocarbonate-Protected Au25 Nanorods of a Chiral D5 Config-
+uration and NIR-II Phosphorescence. J. Am. Chem. Soc. 2024, 146 (18),
+12734−12742.
+(40) Shi, W.-Q.; Zeng, L.; He, R.-L.; Han, X.-S.; Guan, Z.-J.; Zhou, M.;
+Wang, Q.-M. Near-unity NIR phosphorescent quantum yield from a
+room-temperature solvated metal nanocluster. Science 2024, 383
+(6680), 326−330.
+(41) Yang, H.; Huang, H.; Ma, X.; Zhang, Y.; Yang, X.; Yu, M.; Sun, Z.;
+Li, C.; Wu, F.; Wang, Q. Au-Doped Ag2Te Quantum Dots with Bright
+NIR-IIb Fluorescence for In Situ Monitoring of Angiogenesis and
+Arteriogenesis in a Hindlimb Ischemic Model. Adv. Mater. 2021, 33
+(37), No. 2103953. Suyama, M.; Takano, S.; Tsukuda, T. Synergistic
+Accounts of Chemical Research
+pubs.acs.org/accounts
+Article
+https://doi.org/10.1021/acs.accounts.5c00626
+Acc. Chem. Res. 2025, 58, 3518−3529
+3527
+
+Effects of Pt and Cd Codoping to Icosahedral Au13 Superatoms. J. Phys.
+Chem. C 2020, 124 (43), 23923−23929.
+(42) Li, S.; Ge, W.; Huang, X.; Du, H.; Wang, F. Synergistic
+Intramolecular Charge Transfer Promotes Au Nanoclusters with
+Enhanced NIR-II Photoluminescence. J. Phys. Chem. Lett. 2025, 16
+(5), 1221−1228.
+(43) Liu, H.; Hong, G.; Luo, Z.; Chen, J.; Chang, J.; Gong, M.; He, H.;
+Yang, J.; Yuan, X.; Li, L.; et al. Atomic-Precision Gold Clusters for NIR-
+II Imaging. Adv. Mater. 2019, 31 (46), No. 1901015.
+(44) Li, L.; Dong, X.; Li, J.; Wei, J. A short review on NIR-II organic
+small molecule dyes. Dyes Pigm. 2020, 183, No. 108756.
+(45) Yao, Q.; Zhu, M.; Yang, Z.; Song, X.; Yuan, X.; Zhang, Z.; Hu, W.;
+Xie, J. Molecule-like synthesis of ligand-protected metal nanoclusters.
+Nature Reviews Materials 2025, 10 (2), 89−108.
+(46) Matus, M. F.; Häkkinen, H. Understanding ligand-protected
+noble metal nanoclusters at work. Nature Reviews Materials 2023, 8 (6),
+372−389.
+(47) Yang, Z.; Wang, Y.; Zhang, R.; Chen, T.; Xie, J. Precise Surface
+Engineering of Metal Nanoclusters: Ligand Programming for
+Functionality Design. Adv. Mater. 2025, No. e08578.
+(48) Zhong, Y.; Wu, Z.; Bai, X.; Zhang, Y.; Xie, J. Viewing inorganic
+metal nanoclusters through the lens of molecular chemistry. Mater.
+Today 2024, 76, 72−93. Chakraborty, I.; Pradeep, T. Atomically
+Precise Clusters of Noble Metals: Emerging Link between Atoms and
+Nanoparticles. Chem. Rev. 2017, 117 (12), 8208−8271. Bose, P.;
+Kumaranchira Ramankutty, K.; Chakraborty, P.; Khatun, E.; Pradeep,
+T. A concise guide to chemical reactions of atomically precise noble
+metal nanoclusters. Nanoscale 2024, 16 (4), 1446−1470.
+(49) Link, S.; Beeby, A.; FitzGerald, S.; El-Sayed, M. A.; Schaaff, T. G.;
+Whetten, R. L. Visible to Infrared Luminescence from a 28-Atom Gold
+Cluster. J. Phys. Chem. B 2002, 106 (13), 3410−3415.
+(50) Wang, G.; Huang, T.; Murray, R. W.; Menard, L.; Nuzzo, R. G.
+Near-IR Luminescence of Monolayer-Protected Metal Clusters. J. Am.
+Chem. Soc. 2005, 127 (3), 812−813. Lee, D.; Donkers, R. L.; Wang, G.;
+Harper, A. S.; Murray, R. W. Electrochemistry and Optical Absorbance
+and Luminescence of Molecule-like Au38 Nanoparticles. J. Am. Chem.
+Soc. 2004, 126 (19), 6193−6199.
+(51) Crawford, S. E.; Hartmann, M. J.; Millstone, J. E. Surface
+Chemistry-Mediated Near-Infrared Emission of Small Coinage Metal
+Nanoparticles. Acc. Chem. Res. 2019, 52 (3), 695−703.
+(52) Guo, M.; Zhang, G.; Zhao, R.; Ma, H.; Yan, Y.; Yang, S.; Meng, J.;
+Huang, Y.; Zhang, X.-D.; Wang, H.; et al. Ligand Engineering of Gold
+Nanoclusters for NIR-II Imaging. ACS Applied Nano Materials 2023, 6
+(17), 15945−15958.
+(53) Tian, F.; Li, S.; Yang, X.; Fan, K.; Zhou, M.; Gao, D.; Hu, D.; Ju, S.
+Molecular Etching-Derived High-Brightness NIR-II Gold Nanoclusters
+for High-Resolution Bioimaging and Photothermal Therapy. Adv.
+Funct. Mater. 2025, 35 (24), No. 2418867.
+(54) Baghdasaryan, A.; Wang, F.; Ren, F.; Ma, Z.; Li, J.; Zhou, X.;
+Grigoryan, L.; Xu, C.; Dai, H. Phosphorylcholine-conjugated gold-
+molecular clusters improve signal for Lymph Node NIR-II fluorescence
+imaging in preclinical cancer models. Nat. Commun. 2022, 13 (1), 5613.
+(55) Baghdasaryan, A.; Liu, H.; Ren, F.; Hsu, R.; Jiang, Y.; Wang, F.;
+Zhang, M.; Grigoryan, L.; Dai, H. Intratumor injected gold molecular
+clusters for NIR-II imaging and cancer therapy. Proc. Natl. Acad. Sci. U.
+S. A. 2024, 121 (5), No. e2318265121.
+(56) Song, X.; Zhu, W.; Ge, X.; Li, R.; Li, S.; Chen, X.; Song, J.; Xie, J.;
+Chen, X.; Yang, H. A New Class of NIR-II Gold Nanocluster-Based
+Protein Biolabels for In Vivo Tumor-Targeted Imaging. Angew. Chem.,
+Int. Ed. 2021, 60 (3), 1306−1312.
+(57) Pang, Z.; Yan, W.; Yang, J.; Li, Q.; Guo, Y.; Zhou, D.; Jiang, X.
+Multifunctional Gold Nanoclusters for Effective Targeting, Near-
+Infrared Fluorescence Imaging, Diagnosis, and Treatment of Cancer
+Lymphatic Metastasis. ACS Nano 2022, 16 (10), 16019−16037.
+(58) Yuan, X.; Goswami, N.; Chen, W.; Yao, Q.; Xie, J. Insights into
+the effect of surface ligands on the optical properties of thiolated Au25
+nanoclusters. Chem. Commun. 2016, 52 (30), 5234−5237.
+(59) Yu, Z.; Musnier, B.; Wegner, K. D.; Henry, M.; Chovelon, B.;
+Desroches-Castan, A.; Fertin, A.; Resch-Genger, U.; Bailly, S.; Coll, J.-
+L.; et al. High-Resolution Shortwave Infrared Imaging of Vascular
+Disorders Using Gold Nanoclusters. ACS Nano 2020, 14 (4), 4973−
+4981.
+(60) Yi, S.; Hu, Q.; Chi, Y.; Qu, H.; Xiao, Y. Bright and Renal-
+Clearable Au Nanoclusters with NIR-II Excitation and Emission for
+High-Resolution Fluorescence Imaging of Kidney Dysfunction. ACS
+Materials Letters 2023, 5 (8), 2164−2173.
+(61) Crawford, S. E.; Andolina, C. M.; Smith, A. M.; Marbella, L. E.;
+Johnston, K. A.; Straney, P. J.; Hartmann, M. J.; Millstone, J. E. Ligand-
+Mediated “Turn On,” High Quantum Yield Near-Infrared Emission in
+Small Gold Nanoparticles. J. Am. Chem. Soc. 2015, 137 (45), 14423−
+14429.
+(62) Mohammad, W.; Wegner, K. D.; Comby-Zerbino, C.; Trouillet,
+V.; Ogayar, M. P.; Coll, J.-l.; Marin, R.; Garcia, D. J.; Resch-Genger, U.;
+Antoine, R.; et al. Enhanced brightness of ultra-small gold nanoparticles
+in the second biological window through thiol ligand shell control.
+Journal of Materials Chemistry C 2023, 11 (42), 14714−14724.
+(63) Deng, H.-H.; Shi, X.-Q.; Wang, F.-F.; Peng, H.-P.; Liu, A.-L.; Xia,
+X.-H.; Chen, W. Fabrication of Water-Soluble, Green-Emitting Gold
+Nanoclusters with a 65% Photoluminescence Quantum Yield via
+Host−Guest Recognition. Chem. Mater. 2017, 29 (3), 1362−1369.
+Pyo, K.; Thanthirige, V. D.; Kwak, K.; Pandurangan, P.; Ramakrishna,
+G.; Lee, D. Ultrabright Luminescence from Gold Nanoclusters:
+Rigidifying the Au(I)−Thiolate Shell. J. Am. Chem. Soc. 2015, 137
+(25), 8244−8250. Luo, X.; Kong, J.; Xiao, H.; Sang, D.; He, K.; Zhou,
+M.; Liu, J. Noncovalent Interaction Guided Precise Photoluminescence
+Regulation of Gold Nanoclusters in Both Isolate Species and Aggregate
+States. Angew. Chem., Int. Ed. 2024, 63 (27), No. e202404129.
+(64) Deng, H.; Huang, K.; Xiu, L.; Sun, W.; Yao, Q.; Fang, X.; Huang,
+X.; Noreldeen, H. A. A.; Peng, H.; Xie, J.; et al. Bis-Schiff base linkage-
+triggered highly bright luminescence of gold nanoclusters in aqueous
+solution at the single-cluster level. Nat. Commun. 2022, 13 (1), 3381.
+(65) Zhong, Y.; Zhang, J.; Li, T.; Xu, W.; Yao, Q.; Lu, M.; Bai, X.; Wu,
+Z.; Xie, J.; Zhang, Y. Suppression of kernel vibrations by layer-by-layer
+ligand engineering boosts photoluminescence efficiency of gold
+nanoclusters. Nat. Commun. 2023, 14 (1), 658.
+(66) Le Guével, X.; Tagit, O.; Rodríguez, C. E.; Trouillet, V.; Pernia
+Leal, M.; Hildebrandt, N. Ligand effect on the size, valence state and
+red/near infrared photoluminescence of bidentate thiol gold nano-
+clusters. Nanoscale 2014, 6 (14), 8091−8099.
+(67) Perić, M.; Sanader Maršić, Ž.; Russier-Antoine, I.; Fakhouri, H.;
+Bertorelle, F.; Brevet, P.-F.; le Guével, X.; Antoine, R.; Bonačić-
+Koutecký, V. Ligand shell size effects on one- and two-photon
+excitation fluorescence of zwitterion functionalized gold nanoclusters.
+Phys. Chem. Chem. Phys. 2019, 21 (43), 23916−23921.
+(68) Jiang, T.; Qu, G.; Wang, J.; Ma, X.; Tian, H. Cucurbiturils
+brighten Au nanoclusters in water. Chemical Science 2020, 11 (13),
+3531−3537.
+(69) Li, X.; Chen, H.; Su, Z.; Zhao, Q.; Wang, Y.; Li, N.; Li, S.
+Brightness Strategies toward NIR-II Emissive Conjugated Materials:
+Molecular Design, Application, and Future Prospects. ACS Applied Bio
+Materials 2024, 7 (12), 8019−8039.
+(70) Feng, Z.; Li, Y.; Chen, S.; Li, J.; Wu, T.; Ying, Y.; Zheng, J.; Zhang,
+Y.; Zhang, J.; Fan, X.; et al. Engineered NIR-II fluorophores with
+ultralong-distance molecular packing for high-contrast deep lesion
+identification. Nat. Commun. 2023, 14 (1), 5017.
+(71) Zhang, M.; Yue, J.; Cui, R.; Ma, Z.; Wan, H.; Wang, F.; Zhu, S.;
+Zhou, Y.; Kuang, Y.; Zhong, Y.; et al. Bright quantum dots emitting at ∼
+1,600 nm in the NIR-IIb window for deep tissue fluorescence imaging.
+Proc. Natl. Acad. Sci. U. S. A. 2018, 115 (26), 6590−6595.
+(72) Haye, L.; Diriwari, P. I.; Alhalabi, A.; Gallavardin, T.; Combes,
+A.; Klymchenko, A. S.; Hildebrandt, N.; Le Guével, X.; Reisch, A.
+Enhancing Near Infrared II Emission of Gold Nanoclusters via
+Encapsulation in Small Polymer Nanoparticles. Advanced Optical
+Materials 2023, 11 (11), No. 2201474.
+(73) Bruns, O. T.; Bischof, T. S.; Harris, D. K.; Franke, D.; Shi, Y.;
+Riedemann, L.; Bartelt, A.; Jaworski, F. B.; Carr, J. A.; Rowlands, C. J.;
+et al. Next-generation in vivo optical imaging with short-wave infrared
+quantum dots. Nature Biomedical Engineering 2017, 1 (4), No. 0056.
+Accounts of Chemical Research
+pubs.acs.org/accounts
+Article
+https://doi.org/10.1021/acs.accounts.5c00626
+Acc. Chem. Res. 2025, 58, 3518−3529
+3528
+
+(74) Simon, A. A.; Haye, L.; Alhalabi, A.; Gresil, Q.; Muñoz, B. M.;
+Mornet, S.; Reisch, A.; Le Guével, X.; Cognet, L. Expanding the Palette
+of SWIR Emitting Nanoparticles Based on Au Nanoclusters for Single-
+Particle Tracking Microscopy. Advanced Science 2024, 11 (24),
+No. 2309267.
+(75) Zhang, B.; Matus, M. F.; Yao, Q.; Song, X.; Wu, Z.; Hu, W.;
+Häkkinen, H.; Xie, J. Unraveling the Stoichiometric Interactions and
+Synergism between Ligand-Protected Gold Nanoparticles and
+Proteins. J. Am. Chem. Soc. 2025, 147 (8), 6404−6414.
+(76) Zhang, B.; Liu, Z.; Zhang, R.; Yao, Q.; Xie, J. Precision Metal
+Nanoclusters Meet Proteins: Crafting Next-Gen Hybrid Materials. ACS
+Nano 2025, 19 (4), 3997−4010.
+(77) Bonačić-Koutecký, V.; Le Guével, X.; Antoine, R. Engineering
+Liganded Gold Nanoclusters as Efficient Theranostic Agents for
+Cancer Applications. ChemBioChem. 2023, 24 (4), No. e202200524.
+(78) Yahia-Ammar, A.; Sierra, D.; Mérola, F.; Hildebrandt, N.; Le
+Guével, X. Self-Assembled Gold Nanoclusters for Bright Fluorescence
+Imaging and Enhanced Drug Delivery. ACS Nano 2016, 10 (2), 2591−
+2599.
+(79) Alhalabi, A.; Saint-Pierre, C.; Boeri-Erba, E.; Elchinger, P.-H.;
+Kaur, H.; Gasparutto, D.; Le Guével, X. Designing atomically precise
+gold nanocluster architectures with DNA-guided self-assembly and
+biofunctionalization approaches. Nanoscale 2025, 17 (20), 12775−
+12785.
+(80) Le Guével, X.; Wegner, K. D.; Würth, C.; Baulin, V. A.; Musnier,
+B.; Josserand, V.; Resch-Genger, U.; Coll, J.-l. Tailoring the SWIR
+emission of gold nanoclusters by surface ligand rigidification and their
+application in 3D bioimaging. Chem. Commun. 2022, 58 (18), 2967−
+2970.
+(81) Sun, Y.; Qu, F.; Geng, R.; Xiao, W.; Bi, D.; Xiong, B.; Liu, Y.; Zhu,
+J.; Chen, X. Electrostatic Assembly of Gold Nanoclusters in Reverse
+Emulsion Enabling Nanoassemblies with Tunable Structure and Size
+for Enhanced NIR-II Fluorescence Imaging. ACS Nano 2024, 18 (46),
+32126−32144.
+(82) Nienhaus, K.; Wang, H.; Nienhaus, G. U. Nanoparticles for
+biomedical applications: exploring and exploiting molecular inter-
+actions at the nano-bio interface. Materials Today Advances 2020, 5,
+No. 100036. Nienhaus, K.; Nienhaus, G. U. Mechanistic Under-
+standing of Protein Corona Formation around Nanoparticles: Old
+Puzzles and New Insights. Small 2023, 19 (28), No. 2301663.
+(83) Tan, Y.; Cai, W.; Luo, C.; Tang, J.; Kwok, R. T. K.; Lam, J. W. Y.;
+Sun, J.; Liu, J.; Tang, B. Z. Rapid Biotransformation of Luminescent
+Bimetallic Nanoparticles in Hepatic Sinusoids. J. Am. Chem. Soc. 2022,
+144 (45), 20653−20660.
+(84) Shang, L.; Yang, L.; Wang, H.; Nienhaus, G. U. In Situ
+Monitoring of the Intracellular Stability of Nanoparticles by Using
+Fluorescence Lifetime Imaging. Small 2016, 12 (7), 868−873.
+(85) Li, Q.; Zeman, C. J. I. V.; Schatz, G. C.; Gu, X. W. Source of
+Bright Near-Infrared Luminescence in Gold Nanoclusters. ACS Nano
+2021, 15 (10), 16095−16105.
+(86) Zhang, W.; Luo, L.; Liu, Z.; Zhao, F.; Kong, J.; Jin, R.; Luo, Y.;
+Zhou, M. Evolution of coherent vibrations in atomically precise gold
+quantum rods with periodic elongation. Science Advances 2025, 11 (24),
+No. eadx2781.
+(87) Jia, W.-W.; Dai, Y.; Zeng, L.-L.; Long, Z.-C.; Shi, W.-Q.; Zhou,
+M.; Qiao, J.; Wang, Q.-M. The Doping Effects on the NIR Emission
+Enhancement of Gold Nanoclusters and the Application in Efficient
+NIR-OLED. Angew. Chem., Int. Ed. 2025, 64 (32), No. e202508578.
+(88) Albright, E. L.; Levchenko, T. I.; Kulkarni, V. K.; Sullivan, A. I.;
+DeJesus, J. F.; Malola, S.; Takano, S.; Nambo, M.; Stamplecoskie, K.;
+Häkkinen, H.; et al. N-Heterocyclic Carbene-Stabilized Atomically
+Precise Metal Nanoclusters. J. Am. Chem. Soc. 2024, 146 (9), 5759−
+5780. Shen, H.; Tang, X.; Wu, Q.; Zhang, Y.; Ma, C.; Xu, Z.; Teo, B. K.;
+Zheng, N. Guiding the High-Yield Synthesis of NHC-Ligated Gold
+Nanoclusters by 19F NMR Spectroscopy. ACS Nanoscience Au 2022, 2
+(6), 520−526.
+(89) Balfourier, A.; Luciani, N.; Wang, G.; Lelong, G.; Ersen, O.;
+Khelfa, A.; Alloyeau, D.; Gazeau, F.; Carn, F. Unexpected intracellular
+biodegradation and recrystallization of gold nanoparticles. Proc. Natl.
+Acad. Sci. U. S. A. 2020, 117 (1), 103−113.
+Accounts of Chemical Research
+pubs.acs.org/accounts
+Article
+https://doi.org/10.1021/acs.accounts.5c00626
+Acc. Chem. Res. 2025, 58, 3518−3529
+3529

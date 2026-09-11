@@ -1,0 +1,1167 @@
+Vincent Lebreton a,b, Samuel Legeay a, Patrick Saulnier a,b,
+Frederic Lagarce a,b,⇑
+a University of Angers, MINT Inserm 1066 CNRS 6021, Angers, France
+b CHU Angers, 4 Rue Larrey, 49033 Angers, France
+Nanomedicines have been developed for more than four decades to
+optimize the pharmacokinetics (PK) of drugs, especially absorption,
+distribution, and stability in vivo. Unfortunately, only a few drug
+products have reached the market. One reason among others is the
+lack of proper PK modeling and evaluation, which impedes the
+optimization of these promising drug delivery systems. In this review,
+we discuss the speciﬁcity of nanomedicines and propose key param-
+eters to take into account for future accurate PK evaluation of
+nanomedicine. We believe that this could help these innovative drug
+products to reach to market and change the fate of many diseases.
+Keywords: Nanomedicine; Pharmacokinetics; Drug evaluation; Modeling
+Vincent Lebreton stud-
+ied
+pharmacy
+at
+the
+University
+of
+Angers,
+France, and was then a
+hospital
+pharmacist
+at
+the University of Tou-
+louse, earning a MSc in
+pharmacokinetics
+from
+the University of Paris XI,
+France. He is currently a
+hospital pharmacist and
+a PhD at the University
+of Angers. His main research interest is the pharma-
+cokinetic evaluation of anticancer drug nanoparticles
+to understand and improve their proﬁles.
+Samuel
+Legeay
+received his PharmD in
+2014 and his PhD in
+2016 from the University
+of Angers, France. After a
+stint
+at
+the
+Vascular
+Biology Center (Augusta,
+GA, USA), he joined the
+MINT
+laboratory
+(UMR
+INSERM
+U1066
+CNRS
+6021, Angers, France) in
+2017
+as
+an
+assistant
+professor, where he focuses his research on the phar-
+macokinetics of nanomedicines and vascular targeting.
+Speciﬁcity of pharmacokinetic modeling of
+nanomedicines
+⇑Corresponding author at: University of Angers, MINT Inserm 1066 CNRS 6021, Angers, France. Lagarce, F. (Frederic.lagarce@univ-angers.fr)
+Introduction
+The concept of nanomedicines was coined during the 1960s, and some medical applica-
+tions have successfully made it to the clinic, especially in the domain of cancer therapy
+and, recently, with two nanoparticle (NP)-based vaccines to combat Coronavirus 2019
+(COVID-19).1–4 However, for some key opinion leaders in this ﬁeld, the pathway to the
+market is narrow for these special drug delivery systems.5 This issue is linked to the difﬁ-
+culty in characterizing nanosized drug delivery systems.6 Their clinical translation would
+be faster if the products were better characterized and if their behavior in vivo was more
+described.7
+This is worth pursuing because nanotechnologies have signiﬁcant potential in medi-
+cine beyond their application for vaccines. The concept of nanodrug delivery systems
+was proposed initially to improve the efﬁcacy and safety of already commercialized anti-
+cancer or anti-infectious drugs. The objective was to enhance the performance of those
+nano-encapsulated drugs (i.e., absorption, body residence time, and selective distribution)
+and to limit their toxicity.8 The ﬁeld has since received signiﬁcant funding and is projected
+to continue to grow rapidly.9
+Drug Discovery Today d Volume 26, Number 10 d October 2021
+REVIEWS
+KEYNOTE (GREEN)
+1359-6446/ 2021 Elsevier Ltd. All rights reserved.
+https://doi.org/10.1016/j.drudis.2021.04.017
+www.drugdiscoverytoday.com
+2259
+
+Frederic
+Lagarce
+received his PhD in 2004,
+and has been a full pro-
+fessor of pharmaceutical
+technology
+and
+bio-
+pharmaceutics
+since
+2012 at the University of
+Angers,
+France.
+Being
+also a hospital pharma-
+cist,
+his
+research
+is
+translational
+(from
+bench to bedside) and
+mainly focuses on cancer therapy, especially bioavail-
+ability
+enhancement
+by
+exploiting
+interactions
+between the drug products (mainly nanosystems) and
+living tissues. In hospital he is in charge of the phar-
+maceutical technology and quality control unit. Finding
+new answers to medical needs using innovative drug
+formulations is what drives his work.
+Nanomedicines have been developed for more than
+four decades to optimize the pharmacokinetics (PK) of
+drugs, especially absorption, distribution, and stability
+in vivo. Unfortunately, only a few drug products have
+reached the market. One reason among others is the
+lack of proper PK modeling and evaluation, which
+impedes the optimization of these promising drug
+delivery systems. In this review, we discuss the speci-
+ﬁcity of nanomedicines and propose key parameters to
+take into account for future accurate PK evaluation of
+nanomedicine. We believe that this could help these
+innovative drug products to reach to market and
+change the fate of many diseases.
+Unfortunately, the few therapeutics nanoformulations that have already reached the mar-
+ket have not dramatically changed the outcome of their target disease, as seen, for example,
+with liposomal doxorubicin, which displays a new toxicological proﬁle compared with free
+doxorubicin (used for palmoplantar erythrodysesthesia)10,11 and for Nab paclitaxel (increases
+sensory neuropathy), which has not changed the prognosis of patients with breast cancer.11,12
+The enhanced permeation and retention (EPR) effect observed in rodents, which was for dec-
+ades used to explain the potential of NPs to accumulate in tumors, is now widely recognized as
+being minimal in humans.13 These examples show that the biodistribution of nanomedicines
+remains to be precisely determined. Moreover, the interactions of nanomedicines with biolog-
+ical media needs to be described in more details, in particular because of the high surface area:-
+mass ratio of these nanosized drug delivery systems. Indeed, one major interaction raised to
+explain the fate of NPs in vivo is protein corona formation at the surface of the NP, the diffusion
+of the modiﬁed NP being impeded by its sterically hindered surface.
+We think that the major problem impeding the access of nanomedicine to patients is
+that previous pharmacokinetic (PK) and biodistribution studies, including PK modeling,
+did not take into account the speciﬁcity of those drug delivery systems. In regular PK anal-
+ysis, biodistribution is described by four phases: absorption (except for the intravenous
+route), distribution, metabolism, and elimination (ADME). These are associated with differ-
+ent PK parameters, such as volume of distribution, half-life, mean retention time (MRT),
+area under the curve (AUC), and clearance. Those parameters are calculated based on the
+concentration of the drug molecule in the blood (mainly) versus time. PK modeling can
+be done by either a noncompartmental approach or by compartmental modeling. In this
+review, we shed light on what makes nanomedicines so different and how those speciﬁcities
+should be considered in models that are used to gain their approval by national and inter-
+national health agencies.
+Nanomedicines can globally be classiﬁed into two groups: organic and inorganic.
+Organic NPs include nanocapsules, dendrimers, polymeric micelles, and liposomes,
+whereas inorganic ones include NPs without any carbon atoms and generally comprise a
+variety of materials, such as noble metals (golden, silver etc.), alkaline earth metals (cal-
+cium, magnesium, etc.), semiconductors (cadmium and titan) or magnetic compounds
+(iron, nickel, cobalt, etc.).15
+In this review, we focus on organic lipidic or polymeric NPs because the issues and mod-
+els associated with these differ from those of inorganic particles, especially in terms of their
+diffusion and stability, which are central to understand the fate of these particles in the
+body.
+Absorption
+Besides parenteral routes, all routes of administration (skin delivery, pulmonary deliv-
+ery, and oral delivery) involve absorption to reach the blood circulation for systemic
+action.16 We focus here on oral delivery because the challenges for PK evaluation are
+the highest for this route, as explained below.
+The oral route is the route of choice for many drugs because it is considered convenient
+and safe. However, some drugs are not properly absorbed by the oral route because they are
+not soluble and display low permeability across the intestinal barrier. Some drugs are also
+destroyed by the biochemical stress induced by digestive liquids. Nanomedicines have been
+proposed to protect the drug and enhance its permeability. This would allow the oral deliv-
+ery of peptides, such as insulin, or other important drugs, such as anticancer drugs.17
+After oral administration, the bioavailability of the drug is mainly impacted by the
+absorption process. In fact, the stability of the drug after contact with biological media,
+its solubility, and its permeability are key parameters to monitor. The encapsulation of
+the drug molecules in NPs can help to control these parameters and many examples can
+be found showing oral bioavailability enhancement after encapsulation in nanocarri-
+ers;18–21 however, speciﬁc issues can also appear, as we discuss herein.
+Gastrointestinal stability of NPs in relation to their PK proﬁle
+Gastric or intestinal ﬂuids are a well-known stress for free molecules because of the pH of
+the media and the presence of enzymes, such as lipases or peptidases. If encapsulation is
+KEYNOTE (GREEN)
+KEYNOTE (GREEN)
+Drug Discovery Today d Volume 26, Number 10 d October 2021
+2260
+www.drugdiscoverytoday.com
+
+proposed to protect active drugs, NPs should remain intact after
+contact with gastric or intestinal ﬂuid with minimal encapsu-
+lated drug leakage. To evaluate the gastrointestinal stability of
+lipid nanocapsules (LNC), Roger et al. studied the size of LNCs
+after 3 h of contact with a simulated gastric (FaSSIF-V2) and
+intestinal media (FeSSIF-V2). The LNC size was not modiﬁed after
+3 h in the gastric medium but was quickly destroyed in the
+intestinal medium because of pancreatic lipase.22 In addition,
+Singh et al. studied the stability of poly (ethylene glycol) (PEG)-
+ylated liposomes versus conventional liposomes after 2 h of
+exposure to the gastrointestinal environment. They compared
+the release of the drug from these two formulations, ﬁnding that
+if the drug remained in PEGylated liposomes after 2 h, it was
+then completely released, compared with the conventional lipo-
+somes XXXXX.23 For polymeric NPs, Tobio et al. demonstrated
+that a PEG coating of poly (lactic acid) (PLA) NPs increased pro-
+tection against digestive ﬂuids. Indeed, after 4 h of incubation in
+simulated gastric media, PEG-PLA NPs were less degraded than
+PLA NPs (only 3% PEG-PLA NPs were converted in lactate against
+9% of PLA NPs).24
+From these examples, it is easy to understand that, to
+describe the PK proﬁle of nanomedicines after oral administra-
+tion, the stability of the nanocarrier along all the gastro-
+intestinal tract should be checked and included in the PK
+model.
+Mucus permeation of NPs as a crucial barrier to absorption
+After its contact with gastric and intestinal ﬂuid, the nanocarrier
+has to diffuse through mucus to be absorbed or at least to release
+its cargo in the mucus in the vicinity of drug-absorption sites.
+After the stability issue, diffusion within mucus is an important
+barrier for nanocarrier absorption; the barrier properties of
+mucus have been fully reviewed elsewhere.25–27
+Using the Transwell system, Groo et al. studied the impact of
+LNC surface modiﬁcations on their diffusion capability through
+the intestinal mucus layer. The authors concluded that LNCs
+with positive or neutral charge diffuse better through the mucus
+compared with negative LNCs.28 However, mucus diffusion
+might be a limiting step for drug absorption in the case of
+nanomedicines, explaining why many authors have proposed
+speciﬁc models26 and NP surface modiﬁcations to aid mucus
+crossing.29 Regular cell models, such as Caco-2 cells, which are
+widely used to assess the intestinal permeability of small mole-
+cules, are not relevant in the case of nanomedicines if they do
+not display a mucus barrier. This is why speciﬁc in vitro models,
+including mucus-secreting cells in co-culture with Caco-2, have
+been proposed.30–32 For example, to increase the correlation
+between in vitro–in vivo results, Pereira et al. seeded Caco-2 and
+HT29-MTX Matrigel, which contains myoﬁbroblasts (CCD18-
+Co cells).33 The authors demonstrated that this new 3D in vitro
+model was robust and could be used to predict drug and NP
+permeability.33
+NP mechanisms of diffusion in mucus are a complex and ill-
+deﬁned phenomenon. Physicochemical interactions, such as
+hydrophobic, electrostatic, and hydrogen interactions, limit NP
+diffusion and can be controlled by the composition of the NP
+surface properties.26 In addition, because both the size and
+charge of nanomedicines impact their ability to diffuse through
+mucus and there is interplay between those two features, they
+have to be analyzed concomitantly.34,35
+Contrary to what is used for free small molecules, mucus dif-
+fusion is a key parameter that must be considered in the design of
+absorption models for nanomedicines. Thus, as proposed for sta-
+bility, relevant models of PK used for nanomedicines should take
+into account their diffusion into mucus. In the case of small
+molecules, in vitro–in vivo correlation does not consider mucus
+diffusion; that is, the more the drug is released in vitro, the more
+of it will be absorbed (if the transport process is not saturable).
+This correlation is more complicated if the NPs are stuck in the
+mucus. Similarly, current PK models do not differ even if the
+drug remains in the NP during the absorption process.
+Crossing intestinal barriers: The speciﬁcity of nanomedicines
+and consequences for PK study
+Crossing the intestinal barrier requires speciﬁc pathways in the
+case of nanomedicines. As long as the drug remains encapsu-
+lated, it cannot cross the enterocytes by passive diffusion,
+whereas this is the main absorption process for small uncharged
+molecules. Thus, the absorption will be different if the drug is
+released before enterocyte crossing or if it is the NP carrying
+the drug that is absorbed. These differences have to be taken into
+account in relevant speciﬁc PK models. Indeed, NPs can only be
+absorbed by active endocytosis using clathrin pits or caveolae or
+by micropinocytosis.32 These processes are saturable and slower
+than passive diffusion. These particular steps for NP absorption
+should be included in relevant PK models of NP. Absorption
+mechanisms can be studied using regular cellular models.18 For
+example, one important question to address is the equilibrium
+of the endocytosis mechanisms in the case of NPs. For some
+NPs, a relay between the different endocytosis has been observed
+if one of them is saturated or blocked, allowing rapid uptake of
+the NPs in the cell, whereas, for others, it might not be the same
+if their uptake is mediated by only one endocytosis process.
+The integrity of NPs while crossing the intestinal barriers
+should also be studied. For example, Roger et al. conducted an
+in vitro study of LNCs to demonstrate their stability during ente-
+rocyte crossing. By following NPs with Förster resonance energy
+transfer (FRET) labeling, the authors observed the FRET signal in
+the basolateral side of the Caco-2 cell monolayer after 2 h, allow-
+ing them to demonstrate both LNC integrity and intestinal
+absorption.36 This information is essential because the PK after
+absorption will follow the PK proﬁle of the free drug if the carrier
+is destroyed during the absorption process, whereas it will mostly
+follow the PK proﬁle observed after intravenous injection of the
+nanocarrier if this carrier remains intact after reaching the portal
+vein at the end of the absorption process. One can also suggest
+that the PK of the drug can also be a complex mix between the
+PK of the free and encapsulated drug.
+Other in vitro models have been developed to mimic accu-
+rately the cell diversity of the intestinal barrier. Gulberg et al.
+developed a co-culture with Caco-2 cells and the B cell lym-
+phoma Raji cell line to mimic enterocytes and M cells, respec-
+tively.37 This model was improved by des Rieux et al., and
+enabled the authors to suggest micropinocytosis as a main mech-
+anism of absorption for their 200-nm carboxylated polystyrene
+NP.30 Beloqui et al. summarized different cell culture models used
+KEYNOTE (GREEN)
+Drug Discovery Today d Volume 26, Number 10 d October 2021
+KEYNOTE (GREEN)
+www.drugdiscoverytoday.com
+2261
+
+for transport studies of NP. The authors stated that almost all NPs
+cross the intestinal barriers via endocytosis except for lipophilic
+NPs, which are mainly transported by transcellular pathways.32
+The cellular models for studying intestinal absorption have
+been improved to better describe their uptake mechanisms by
+the cells. Knowledge of those mechanisms is needed to optimize
+the NP formulation to enhance their oral bioavailability. In par-
+allel, the integrity of NPs can be monitored (especially using
+FRET) during the crossing of cells. This second feature appears
+to be more crucial to include in the PK model to predict more
+accurately the bioavailability of the drug. If the NP is not stable
+while crossing the intestinal cell barrier, the fate of the encapsu-
+lated drug can be critically modiﬁed, which is not the case if the
+uptake pathway changes or is not fully described. The latter was
+shown by Roger et al., who displayed alternative uptake mecha-
+nisms because the main entrance pathway was blocked by inhi-
+bitors. Indeed, the authors demonstrated a modiﬁcation of
+transport pathways after cholesterol depletion or inhibition of
+clathrin-mediated endocytosis.21
+PK model relevancy for absorption
+From what has already been discussed, we can afﬁrm that integ-
+rity of the NP and its overall stability is an important parameter
+to monitor to obtain a relevant PK model. In regular PK models,
+the AUC after oral administration is accurate evidence of the rate
+of absorption, which can be calculated by Weibull modeling
+(Weibull’s law is a three-parameter probability law that is widely
+used to model the lifetime of products because of its ﬂexibility).
+In the case of nanomedicines, it is not relevant to only quantify
+the concentration of the drug through time because it does not
+consider the stability of the NP. For example, this was demon-
+strated by Groo et al., whereby the most effective paclitaxel
+nanoformulation in an in vivo subcutaneous tumor model after
+oral delivery was not that with the highest AUC. Importantly,
+the tumor was resistant to free paclitaxel but not to encapsulated
+paclitaxel. Thus, the formulation that was not stable during
+absorption gave the highest AUC, whereas free paclitaxel was
+not effective enough against the tumor. Paclitaxel encapsulated
+in stable LNCs was less absorbed but more effective. This is one
+example that demonstrates that relationship between AUC and
+drug effect is not obvious in the case of nanomedicines.38
+Distribution
+The main goal of drug nanoencapsulation is to modify the distri-
+bution of the drug to enhance its activity and/or to reduce its
+toxicity. Thus, this step of the PK process should be clearly
+assessed. Once again, regular PK models fail to describe with
+good accuracy the dynamics of NP distribution, which depends
+on the interaction of particles with body ﬂuids and tissues
+throughout the distribution process. Physicochemical parame-
+ters of the NPs change after contact with body ﬂuids and are
+responsible for the fate of the nanocarrier in vivo. To describe
+and predict those interactions, it is mandatory to characterize
+the NPs fully before administration and during their journey in
+the bloodstream.
+Characterization of NPs before administration
+To follow the distribution dynamics and to establish relevant
+models, it is important to characterize the formulation before
+administration. Not only size, shape, and charge should be
+assessed, but the homogeneity of the formulation should also
+be well deﬁned. If more than one type of nanostructure exists
+(e.g., nanocapsules mixed with micelles) in the same formulation
+mixture, this will have impact the overall distribution. Regular
+PK models used to describe distribution only consider the active
+ingredient as a free drug. Some nanomedicine PK models have
+been published but with the hypothesis that only one type of
+NP was administered.23,39 However, it is now well known that
+other species, such as micelles, can also be present in the formu-
+lation in addition to NPs. This is also the case for liposomal for-
+mulations, which can contain different types of liposome or
+liposome remnants.40 This complexity of the NP population after
+formulation has to be well characterized or puriﬁed to be
+included for speciﬁc PK modeling of NPs.
+To explain the complexity of NP characterization, we can look
+at an apparently simple parameter, namely size determination. It
+is well known that size impacts distribution.41,42 Thus, accurately
+determining the size is mandatory. However, different tech-
+niques adapted and validated in the nanosize range, such as
+dynamic light scattering (DLS), NP tracking analysis (NTA), or
+ﬁeld-ﬂow fractionation (FFF), coupled to multiple sizing detec-
+tors or even electron microscopy (EM), will not give the same
+results, especially for particles that are not solid, such as lipo-
+somes or lipid nanocapsules. If the technique is different, the
+measured parameter is also different as, thus, is the ﬁnal result.
+In fact, the difﬁculty is in choosing the best adapted method of
+analysis. In addition, size measurement is always performed
+in vitro in standardized conditions and might not be the same
+after contact with organic ﬂuids, as blood. The same reasoning
+can be applied for zeta potential reﬂecting the surface charge of
+the particles.
+Therefore, determining the true size of a particle is difﬁcult
+and impedes accurate modeling of distribution. A 10% error on
+the radius of the particle will lead to a 21% error on the surface
+and, for some techniques, this difference is much higher.43
+Characterization of NPs after administration
+If NP characterization is not easy before administration while
+NPs are in their native form, it becomes even more difﬁcult in
+the blood compartment after contact with plasma proteins,
+which form a corona at the surfaces of the NPs and potentially
+changes their diffusion properties.44,45 The proﬁle of coating pro-
+tein depends on the physicochemical properties of NPs. This
+physicochemical speciﬁcity leads to a ‘biological identity’, which
+has been well described by Dawson and Linse et al., and more
+recently by Caracciolo et al.14,46 This relatively modern concept
+is misunderstood, and mastering it is probably one of the keys
+to nanomedicine clinical success.47 Increasing knowledge of this
+phenomenon is essential to obtain information relating to the
+surface-associated proteins of NPs. Given that the environment
+of the protein changes between different body compartments,
+NP coatings change as they move through the body. Indeed, cor-
+ona proteins comprise a ‘hard corona’ based on strong NP/pro-
+tein links, and ‘soft corona’ resulting from weak binding,
+KEYNOTE (GREEN)
+KEYNOTE (GREEN)
+Drug Discovery Today d Volume 26, Number 10 d October 2021
+2262
+www.drugdiscoverytoday.com
+
+which allows dynamic protein exchanges at the surface of
+NPs.48,49 Finally, protein corona formation can lead to opsoniza-
+tion, which can enhance uptake by specialized cells of the retic-
+uloendothelial
+system
+(RES),
+leading
+to
+increased
+NP
+elimination. Therefore, by changing the size, shape properties,
+and surface charge of NPs, a protein coating will inﬂuence their
+biodistribution. To avoid or minimize corona protein and, thus,
+increase the plasma half-life during biodistribution, it is possible
+to design stealth NPs with a PEG coating.50,51 These NPs can be
+considered second-generation NPs, for which steric stabilization
+with PEG is one of the promising approaches used to improve
+their PK proﬁle, increase circulation time and/or stability, and
+reduce clearance of plasma nanocarrier by the RES.52
+Other important information for establishing accurate PK
+models is the equilibrium dynamic between the encapsulated
+drug, free drug, and the free NP. Regular PK models only describe
+the evolution of drug concentrations in compartments such as
+blood, brain, or other speciﬁc tissues. For NPs, their performance
+is linked to the distribution process of the drug within the carrier
+(speciﬁc targeting or drug protection) and the kinetics of release
+from the carrier to obtain drug action. Thus, monitoring the drug
+alone presents some limitations for NP PK modeling. Thus, it is
+important to use methods that enable the determination of not
+only the encapsulated and released drugs, but also the emptied
+NP. Combined with the PK process, this information is required
+to establish an accurate PK model with a high prediction capabil-
+ity of both the efﬁcacy and toxicity of nanomedicines.
+Singh et al. performed an in vivo PK study on liposomes loaded
+with exemestane (Fig. 1), in which they measured drug concen-
+tration without evaluating the integrity of liposomes,23 while
+Menzel et al. investigated exenatide loaded in a self-emulsifying
+drug delivered system.39 Most of the published studies rely on
+the monitoring of drug blood concentration over time, which
+is relevant for non-encapsulated drugs but is not accurate for
+nanomedicines. Considering the equilibrium between the free
+and the encapsulated drug during PK modeling will be required
+to remove barriers to the clinical translatability of nanomedicine
+treatments.
+Many studies use labeling of the drug or the nanocarrier (e.g.,
+with a dye) to follow their distribution. In this case, the stability
+of the dye and of its association with the nanocarrier has to be
+checked. Many issues have been reported, such as instability of
+ﬂuorescent labeling, structure modiﬁcation of the carrier after
+labeling, or deterioration of NP stability.53,54 Moreover, labeling
+can change the fate of the nanomedicines if it changes their sur-
+face properties, as discussed earlier. Guo et al. discussed each
+method of labeling and their associated ﬂaws for example, some
+elements of whole blood (hemoglobin) can interfere with ﬂuo-
+rescence. According to these authors, radiotracers are considered
+as a suitable choice to keep the molecular structure of the
+nanocarriers but, unfortunately, are not the most appropriate
+form of control of NP structure integrity.54
+Volume of distribution
+The volume of distribution (Vd) is a theoretical volume at which
+the drug should distribute at a homogenous concentration calcu-
+lated from the initial blood concentration immediately after
+intravenous injection. This parameter is calculated for every reg-
+ular drug product. For nanomedicines, encapsulated and free
+drugs are present at the same time from the initial time point
+(T0) in the blood circulation because, in many cases, there is
+an equilibrium between free and encapsulated drug even in the
+containers. Given this duality, the regular determination of Vd
+from the blood at T0 is neither accurate nor informative. If one
+calculates the Vd from the total drug (encapsulated plus free
+drug) the interpretation will be complex because the entities do
+not display the same diffusion patterns. This inability to deter-
+mine an accurate Vd has consequences for modeling because,
+in standard models, Vd is used to calculate other parameters,
+such as drug total clearance. This example shows again that reg-
+ular
+modeling
+is
+not
+relevant
+for
+PK
+determination
+of
+nanomedicines.
+Biodistribution studies
+A major way to evaluate the distribution of nanomedicines in the
+body while assessing their stability is to use FRET, as already
+described for absorption studies. Laine et al. used FRET to evalu-
+ate the behavior of different lipid NPs [i.e., LNCs, pegylated
+LNCs, and lipid nanoemulsions (LNEs)]. Results showed different
+release kinetic proﬁles, with PEGylated LNCs and LNEs had an
+extended blood-circulation time associated with good structure
+stability over several hours after intravenous injection.55 Gravier
+et al. used macroscopic and microscopic imaging to analyze the
+FRET signal to determine the stability of LNE and LNC in a bio-
+logical environment. Results showed that LNCs remained more
+stable compared with LNEs in the presence of serum or cancer
+cells.56 These studies, based only on imaging, give insight into
+the fate of nanocarriers in vivo but are not quantitative and, thus,
+do not enable determination of a PK proﬁle. Quantifying both
+the free drug and the nanocarrier in parallel would be a good
+strategy to this end.
+Various studies have described the surface modiﬁcation of NPs
+to optimize the biodistribution of the encapsulated drug in, for
+example, active targeting on solid tumors. Some surface probes,
+such as RGD peptides57 or speciﬁc antibodies, have been pro-
+posed for this use.11,58 In recent years, the ability of blood pro-
+KEYNOTE (GREEN)
+Drug Discovery Today
+FIGURE 1
+Plasma concentration of exemestane (EXE) with time for three different
+formulations: suspension, conventional liposomes (EXE-CON-LIPO), and poly
+(ethylene glycol) (PEG)-ylated liposomes (EXE-PEG-LIPO). Reproduced, with
+permission, from 23.
+Drug Discovery Today d Volume 26, Number 10 d October 2021
+KEYNOTE (GREEN)
+www.drugdiscoverytoday.com
+2263
+
+teins to form a corona around NPs has also been taken into
+account to develop efﬁcient active targeting.59,60 Before trying
+to optimize the biodistribution, one should be able to character-
+ize accurately the distribution of nanomedicines and to differen-
+tiate encapsulated drug from free drug in every tissue. This would
+help to solve the issue of active targeting. In fact, the percentage
+of administrated drug that is considered to reach its target after
+encapsulation in specialized drug delivery systems is low (0.3–
+3% according to some studies).61,62 Although targeting has been
+one of the potential key features highlighted for nanomedicines,
+it is now obvious that this goal has not yet been achieved in
+humans. This is also because animal models used (mainly
+rodents) do not display the same physiological characteristics
+as humans and, thus, are nonrelevant models.
+Conclusions on PK model relevancy for distribution step
+To characterize and model the distribution, it is important to
+determine the dynamics of corona formation over the particles.
+Regular PK parameters are not directly usable, such as, for exam-
+ple, Vd, as discussed earlier. Moreover, modeling should include
+the equilibrium between free and encapsulated drug. One way of
+doing this would be to add a supplemental compartment related
+to the encapsulated drug in the PK model. Thus, the minimum
+number of compartments in a nanomedicine PK model would
+be two (i.e., free drug in the blood and encapsulated drug in
+the blood) (Fig. 2).
+Degradation–elimination
+The degradation–elimination phase is the last phase of the PK
+process for drugs and NPs. One of the key advantages of NPs is
+their prolonged circulation time. This has been seen as being par-
+ticularly relevant for cancer therapy, and is why it is vital to char-
+acterize this phase with the aim of optimizing it. This phase
+contains both metabolization and excretion processes.
+Phases of NP elimination and hepatic afﬁnity
+For the active drug, the PK phase of metabolism is represented by
+chemical reactions mainly found in the liver. Usually, these reac-
+tions are divided into three phases. First, an activation phase
+using enzymes of cytochrome P450, which include oxidation,
+reduction, or hydrolysis reactions. Then, a conjugation phase is
+necessary because metabolites obtained after the ﬁrst phase are
+clearly unstable. During this second phase, the addition of a
+hydrophilic group allows the best drug solubilization, thus facil-
+itating its elimination. The ﬁnal phase is a transport phase to
+eliminate xenobiotics (Fig. 3).63 All these phases refer to the
+active drug and not to its carrier.
+In the case of nanomedicines, PK parameters associated with
+normal metabolism and followed by drug elimination are not
+directly applicable. For the nanocarrier, it could be possible to
+deﬁne a Phase IV of degradation (Fig. 3). Indeed, even if NPs
+are not metabolized using classical hepatic pathways, there is a
+speciﬁc process for NP degradation mainly linked to liver–NP
+interactions, as described by Zhang et al.. After NP administra-
+tion, proteins that are present in different biological media cover
+NPs to form a protein corona. This is called opsonization and can
+be considered as the ﬁrst step in elimination, during which the
+NP is tagged by proteins to allow its recognition by speciﬁc cells.
+Indeed, NPs covered with this protein corona generate different
+cell interactions in the blood, such as complement activation,
+or in different tissues, for example in the liver, with cellular
+uptake by the resident macrophages, Kupffer cells. The second
+step of NP elimination is the result of these interactions, which
+lead to NP degradation NP by the immune system. Thus, the liver
+has an essential role in the elimination of NPs, especially in the
+Kupffer cells by micropinocytosis, clathrin-mediated endocyto-
+sis, or caveolin-mediated endocytosis.64–66 Internalization is lar-
+gely associated with surface charge, shape, or size and, thus,
+also with the composition of protein corona because it impacts
+all three characteristics. For example, PEG reduces cellular uptake
+by decreasing the formation of the protein corona. By contrast,
+NP size can affect endocytosis mechanisms. Indeed, endocytosis
+is caveolin mediated for 20–100-nm NPs, whereas it is clathrin
+mediated for 100–350-nm NPs, and uses micropinocytosis for lar-
+ger NPs.65–68
+NP–liver interactions: ABC phenomena
+NP–liver interactions are a major step in elimination; unfortu-
+nately, this step was generally only studied in vitro or in healthy
+animals, as detailed by La-Beck et al.69 Using the right models in
+this case can be particularly relevant. For example, cancers are
+often associated with profound and heterogeneous immune dys-
+function, which can lead to modiﬁcation of circulating proteins,
+changing the nature of the corona covering the NPs and modify-
+ing their PK proﬁles.68 Phagocytosis of NPs is more associated
+with speciﬁc recognizable proteins present on their surface rather
+than by the quantity of binding proteins. Indeed, Nguyen et al.
+showed that uptake of NPs in mixtures of different protein con-
+centrations by phagocytes was identical.60
+These interactions with the mononuclear phagocyte system
+(MPS) lead to NP clearance from blood and sequestration in
+organs of the MPS: liver, spleen, and lymph nodes, and is one
+of the most important barriers to the therapeutic efﬁciency of
+NPs.70 PEG is added to the NP surface to reduce uptake by
+MPS, but this can induce the production of anti-PEG antibodies
+and activation of complement proteins. This immunogenicity
+mechanism, which leads to an accelerated blood clearance
+(ABC) phenomenon, is well established in preclinical studies
+but is unclear in clinical situations.68,71–73 The lack of relevant
+Drug Discovery Today
+FIGURE 2
+Drug release and exchange between nanoparticles and its elimination from
+the central compartment. K1 and K–1 are the exchange constants of active
+drug between the NP central compartment. Ke represents the elimination
+constant from the compartment.
+KEYNOTE (GREEN)
+KEYNOTE (GREEN)
+Drug Discovery Today d Volume 26, Number 10 d October 2021
+2264
+www.drugdiscoverytoday.com
+
+PK studies, including repetition of NP injections, could explain
+this situation. Thus, it will be interesting to study this ABC phe-
+nomenon
+more
+precisely,
+especially
+PK
+modiﬁcation
+of
+nanomedicines after multiple injections. The ABC phenomenon
+is complex and depends on multiple factors: time interval effect
+(more pronounced from 4 to 7 days), third dose effect (decrease
+of effect after two injections), PEG-surface density, PEG chain-
+length effect, NP size and charge effect (increased for larger and
+positively charged NPs), administration effect (more important
+for slow infusion in contrast to bolus), or also animal species
+effect (maximum ABC is observed after 7 days for rats and
+10 days for mice, but is unobserved for the rabbit).71
+Renal excretion
+As discussed for the distribution phase, another way to improve
+the PK proﬁle during the elimination phase involves adding PEG
+to the NP surface to reduce renal clearance.74
+NP renal elimination is also associated with protein-corona
+formation because it has a major role in increasing particle diam-
+eter (hydrodynamic diameter), which becomes considerably lar-
+ger compared with its in vitro measurement. Consequences for
+blood clearance are important because NP diameter is associated
+with cut-off glomerular ﬁltration linked to the elimination from
+blood of the encapsulated drug; thus, this can affect its half-life
+in blood.75
+Glomerular tissue comprises three layers: fenestrated endothe-
+lium, glomerular basement membrane (GBM), and podocytes,
+with pores between 4 and 5 nm. Filtration cut-off is 65 kDa (al-
+bumin
+molecular
+weight),
+which
+corresponds
+to
+6–8 nm.
+NPs < 6 nm are subject to free glomerular ﬁltration, whereas
+NPs > 8 nm are not ﬁltered. Moreover, renal elimination is also
+inﬂuenced by NP charge because the GBM is negatively charged;
+thus, positively charged NPs are more easily ﬁltered than nega-
+tively charged NPs, which are repulsed. In addition, because fen-
+estrated
+endothelium
+is
+covered
+by
+a
+negatively
+charged
+glycocalyx layer that is 200–300-nm thick, it allows negative
+NPs to have a longer circulation time.54,75,76 In a recent review,
+Peng et al. discussed the challenge of renal-clearable nanocarri-
+ers.
+This
+is
+an
+interesting
+topic
+because
+renal-clearable
+nanomedicines have many advantages, such as minimizing
+MPS uptake and avoiding long-term accumulation in vital
+organs, which could induce hepatic or spleen toxicity.70
+Calculating PK parameters for the elimination phase
+for nanomedicines
+In regular PK analysis, the elimination phase is described by dif-
+ferent PK parameters: half-life, MRT, and clearance. These param-
+eters are calculated (mainly) from the concentration of the free
+drug in the blood versus time. This can be done by non-
+compartmental analysis (NCA) or after using compartmental
+modeling. In each case, the calculation should be related to the
+drug concentration. When it comes to nanomedicines, the prob-
+lem is more complex because the drug can be present in blood as
+free or encapsulated drug (i.e., not bioavailable at the site of
+action). This situation should be taken into account in studies
+involving the PK analysis of nanomedicines. Indeed, the result
+obtained is not the same if both the free drug and the encapsu-
+Drug Discovery Today
+FIGURE 3
+Parallel elimination of organic nanoparticles (a) and its encapsulated drug after release (b). Blue arrow represents drug release into the environment from the
+carrier; dashed blue arrow indicates drug exchange between the environment and the carrier. Blue circles indicate lipophilic drug molecules.
+KEYNOTE (GREEN)
+Drug Discovery Today d Volume 26, Number 10 d October 2021
+KEYNOTE (GREEN)
+www.drugdiscoverytoday.com
+2265
+
+lated drug are separated after blood sampling before analysis.
+Given that the fraction of drug that can be eliminated by the kid-
+ney is only the free drug, the calculated renal clearance should
+only refer to the free drug (with exception of renal-clearable
+nanomedicines < 8 nm as discussed earlier). For terminal half-
+life determination, the issue is the same and interpreting a
+half-life that includes free and encapsulated drug can be difﬁcult,
+especially if the parameter is compared with a standard injectable
+or oral formulation without any encapsulation (i.e., sequestra-
+tion of the drug from its elimination process). Thus, the MRT
+might be more relevant because it allows a more accurate com-
+parison between different formulations of the same drug after
+NCA. MRT is a global value of the mean amount of time a mole-
+cule will stay in the studied tissue or media; however, it is only
+calculated from the blood AUC and its shape is described by area
+under the ﬁrst moment curve (AUMC). Total clearance calcula-
+tions for nanomedicine should also only be calculated as the
+ratio of dose and AUC using NCA, again keeping in mind that,
+in the case of nanomedicines, the result will be different if free
+drug is considered or if the total of free and encapsulated drug
+is considered. If modeling is involved to determine those elimi-
+nation parameters, the carrier with its encapsulated drug should
+be considered as a supplementary compartment, as discussed ear-
+lier. In the model, the stability of the carrier should also be con-
+sidered because it impacts the release of the free drug and, thus,
+its elimination. In fact, the released drug can follow the elimina-
+tion process, which might not be the same for the encapsulated
+drug still protected from major elimination processes (metabo-
+lization, kidney ﬁltration etc.).
+Concluding remarks and perspectives
+Classical PK parameters are not fully adapted and, thus, classical
+PK modeling is not sufﬁcient to describe the PK of nanomedi-
+cines. Indeed, the PK of NPs is a suite of complex phenomena
+that combine free drug, encapsulated drug, and empty NPs. Clas-
+sical PK models describe only the fate of the free drug. It is now
+necessary to create new PK models taking into account the
+dynamic equilibrium of free and encapsulated drug, the stability
+of the nanocarrier in the organism, its interactions with speciﬁc
+organs, such as the liver, spleen, and kidney, and any in vivo
+modiﬁcations of the carrier.
+Free drug 
+Therapeuc target
+Encapsulated drug 
+Kidney compartment 
+Eliminaon
+Encapsulated drug 
+Liver, MPS compartment 
+Free drug
+Free drug 
+Encapsulated drug 
+ Free drug 
+Administraon 
+NP 50–100 nm 
+Blood compartment 
+Free drug 
+Other ssue 
+Encapsulated drug 
+Drug Discovery Today
+FIGURE 4
+Proposed theoretical compartment pharmacokinetics (PK) model adapted to the specific features of nanomedicines. Blue arrows indicate encapsulated drug
+biodistribution; orange arrows indicate free drug biodistribution; black arrows indicate drug release from the nanoparticle; dashed black arrows indicate
+hypothetical return of drug back its carrier. Abbreviation: MPS, mononuclear phagocyte system.
+KEYNOTE (GREEN)
+KEYNOTE (GREEN)
+Drug Discovery Today d Volume 26, Number 10 d October 2021
+2266
+www.drugdiscoverytoday.com
+
+Recently, Colino et al. proposed an interesting PK model of
+NPs, which includes a speciﬁc compartment for macrophage
+uptake and release.66 Two recent reviews by Byun et al. and Yuan
+et al. provide details about PK behavior that can be used to design
+PBPK models.77,78 Finally, Guo et al. suggested ways to improve
+PK modeling using two methods of approaching data: compart-
+mental and noncompartmental analysis. The second method is
+more robust especially when the distribution is unknown.54
+As these authors explain, it appears essential to take into
+account all sequestration compartments in mathematical models
+to better describe blood-circulation time and elimination of
+nanomedicines. Fig. 4 summarizes a proposed approach to
+describe the compartment to consider in modeling, which is
+the ﬁrst step to future relevant PK models for nanomedicines.
+Acknowledgment
+This work was funded by the French League Against Cancer
+(‘La Ligue contre le cancer’) Maine et Loire Comity.
+References
+1 S. Tran, P.J. DeGiovanni, B. Piel, P. Rai, Cancer nanomedicine: a review of recent
+success in drug delivery, Clin Transl Med 6 (2017) 44–65.
+2 L.R. Baden, H.M. El Sahly, B. Essink, K. Kotloff, S. Frey, R. Novak, et al., Efﬁcacy
+and safety of the mRNA-1273 SARS-CoV-2 vaccine, N Engl J Med 384 (2020) 403–
+416.
+3 J. Machhi, F. Shahjin, S. Das, M. Patel, M.M. Abdelmoaty, J.D. Cohen, et al.,
+Nanocarrier vaccines for SARS-CoV-2, Adv Drug Deliv Rev 171 (2021) 215–
+239.
+4
+Anon., Nanomedicine and the COVID-19 vaccines, Nat Nanotechnol 15 (2020)
+963.
+5 K. Park, Drug delivery of the future: chasing the invisible gorilla, J Control Release
+240 (2016) 2–8.
+6 A.T. Florence, Nanotechnologies for site speciﬁc drug delivery: changing the
+narrative, Int J Pharm 551 (2018) 1–7.
+7 H. Malhaire, F. Lagarce, Is the translational approach becoming a reality in
+nanomedicine?, Eur J Nanomed 7 (2015) 79–83
+8 T.M. Allen, P.R. Cullis, Drug delivery systems: entering the mainstream, Science
+303 (2004) 1818–1822.
+9 F. Farjadian, A. Ghasemi, O. Gohari, A. Roointan, M. Karimi, M.R. Hamblin,
+Nanopharmaceuticals and nanomedicines currently on the market: challenges
+and opportunities, Nanomedicine 14 (2019) 93–126.
+10 A. Gabizon, H. Shmeeda, Y. Barenholz, Pharmacokinetics of pegylated liposomal
+doxorubicin review of animal and human studies, Clin Pharmacokinet 42 (2003)
+419–436.
+11 R.K. Jain, T. Stylianopoulos, Delivering nanomedicine to solid tumors, Nat Rev
+Clin Oncol 7 (2010) 653–664.
+12 W.J. Gradishar, S. Tjulandin, N. Davidson, H. Shaw, N. Desai, P. Bhar, et al., Phase
+III trial of nanoparticle albumin-bound paclitaxel compared with polyethylated
+castor oil-based paclitaxel in women with breast cancer, J Clin Oncol 23 (2005)
+7794–7803.
+13 F. Danhier, To exploit the tumor microenvironment: since the EPR effect fails in
+the clinic, what is the future of nanomedicine?, J Control Release 244 (2016) 108–
+121
+14 G.
+Caracciolo,
+O.C.
+Farokhzad,
+M.
+Mahmoudi,
+Biological
+identity
+of
+nanoparticles in vivo: clinical implications of the protein corona, Trends
+Biotechnol 35 (2017) 257–264.
+15 M. Auffan, J. Rose, J.-Y. Bottero, G.V. Lowry, J.-P. Jolivet, M.R. Wiesner, Towards a
+deﬁnition of inorganic nanoparticles from an environmental, health and safety
+perspective, Nat Nanotechnol 4 (2009) 634–641.
+16 G. P, Kalarikkal N, Thomas S. Challenges in nonparenteral nanomedicine
+therapy. In: Kesharwani P, Taurin S, Greish K, editors. Theory and applications
+of nonparenteral nanomedicines. Amsterdam; Elsevier Inc; 2021. p. 27–54.
+17 H. Malhaire, J.C. Gimel, E. Roger, J.P. Benoît, F. Lagarce, How to design the
+surface of peptide-loaded nanoparticles for efﬁcient oral bioavailability?, Adv
+Drug Deliv Rev 106 (2016) 320–336
+18 E. Roger, F. Lagarce, E. Garcion, J.P. Benoit, Biopharmaceutical parameters to
+consider
+in
+order
+to
+alter
+the
+fate
+of
+nanocarriers
+after
+oral
+delivery,
+Nanomedicine 5 (2010) 287–306.
+19 A. Ramadan, F. Lagarce, A. Tessier-Marteau, O. Thomas, P. Legras, L. Macchi,
+et al., Oral fondaparinux: use of lipid nanocapsules as nanocarriers and in vivo
+pharmacokinetic study, Int J Nanomedicine 6 (2011) 2941–2951.
+20 J. Varshosaz, S. Taymouri, A. Jahanian-Najafabadi, A. Alizadeh, Efavirenz oral
+delivery via lipid nanocapsules: formulation, optimisation, and ex-vivo gut
+permeation study, IET Nanobiotechnol 12 (2018) 795–806.
+21 E. Roger, F. Lagarce, E. Garcion, J. Benoit, Lipid nanocarriers improve paclitaxel
+transport throughout human intestinal, J Control Release 140 (2009) 174–181.
+22 E.
+Roger,
+F.
+Lagarce,
+J.P.
+Benoit,
+The
+gastrointestinal
+stability
+of
+lipid
+nanocapsules, Int J Pharm 379 (2009) 260–265.
+23 A. Singh, Y.R. Neupane, S. Shaﬁ, B. Mangla, K. Kohli, PEGylated liposomes as an
+emerging therapeutic platform for oral nanomedicine in cancer therapy: in vitro
+and in vivo assessment, J Mol Liq 303 (2020) 9.
+24 M. Tobío, A. Sánchez, A. Vila, I. Soriano, C. Evora, J.L. Vila-Jato, et al., The role of
+PEG on the stability in digestive ﬂuids and in vivo fate of PEG-PLA nanoparticles
+following oral administration, Colloids Surf B Biointerfaces 18 (2000) 315–323.
+25 R.A. Cone, Barrier properties of mucus, Adv Drug Deliv Rev 61 (2009) 75–85.
+26 A.C. Groo, F. Lagarce, Mucus models to evaluate nanomedicines for diffusion,
+Drug Discov Today 19 (2014) 1097–1108.
+27 L. Sardelli, D.P. Pacheco, A. Ziccarelli, M. Tunesi, O. Caspani, et al., Towards
+bioinspired: in vitro models of intestinal mucus, RSC Adv 9 (2019) 15887–15899.
+28 A.C. Groo, K. Mircheva, J. Bejaud, I. Panaiotov, P. Saulnier, T. Ivanova, et al.,
+Development of 2D and 3D mucus models and their interactions with mucus-
+penetrating paclitaxel-loaded lipid nanocapsules, Pharm Res 31 (2014) 1753–
+1765.
+29 S. Dünnhaupt, O. Kammona, C. Waldner, C. Kiparissides, A. Bernkop-Schnürch,
+Nano-carrier systems: strategies to overcome the mucus gel barrier, Eur J Pharm
+Biopharm 96 (2015) 447–453.
+30 A. des Rieux, V. Fievez, I. Théate, J. Mast, V. Préat, Y.J. Schneider, An improved
+in vitro model of human intestinal follicle-associated epithelium to study
+nanoparticle transport by M cells, Eur J Pharm Sci 30 (2007) 380–391.
+31 Y. Xu, N. Shrestha, V. Préat, A. Beloqui, Overcoming the intestinal barrier: a look
+into targeting approaches for improved oral drug delivery systems, J Control
+Release 322 (2020) 486–508.
+32 A. Beloqui, A. Des Rieux, V. Préat, Mechanisms of transport of polymeric and
+lipidic nanoparticles across the intestinal barrier, Adv Drug Deliv Rev 106 (2016)
+242–255.
+33 C. Pereira, F. Araújo, C.C. Barrias, P.L. Granja, B. Sarmento, Dissecting stromal-
+epithelial
+interactions
+in
+a
+3D
+invitro
+cellularized
+intestinal
+model
+for
+permeability studies, Biomaterials 56 (2015) 36–45.
+34 C. He, L. Yin, C. Tang, C. Yin, Size-dependent absorption mechanism of
+polymeric nanoparticles for oral delivery of protein drugs, Biomaterials 33 (2012)
+8569–8578.
+35 D.A. Norris, P.J. Sinko, Effect of size, surface charge, and hydrophobicity on the
+translocation of -polystyrene microspheres through gastrointestinal mucin, J
+Appl Polym Sci 63 (1997) 1481–1492.
+36 E. Roger, J.C. Gimel, C. Bensley, A.S. Klymchenko, J.P. Benoit, Lipid nanocapsules
+maintain full integrity after crossing a human intestinal epithelium model, J.
+Control Release 253 (2017) 11–18.
+37 E. Gullberg, M. Leonard, J. Karlsson, A.M. Hopkins, D. Brayden, A.W. Baird, et al.,
+Expression of speciﬁc markers and particle transport in a new human intestinal
+M-cell model, Biochem Biophys Res Commun 279 (2000) 808–813.
+38 A.C. Groo, M. Bossiere, L. Trichard, P. Legras, J.P. Benoit, F. Lagarce, In vivo
+evaluation of paclitaxel-loaded lipid nanocapsules after intravenous and oral
+administration on resistant tumor, Nanomedicine 10 (2015) 589–601.
+39 C. Menzel, T. Holzeisen, F. Lafﬂeur, S. Zaichik, M. Abdulkarim, M. Gumbleton,
+et al., In vivo evaluation of an oral self-emulsifying drug delivery system (SEDDS)
+for exenatide, J Control Release 277 (2018) 165–172.
+40 H. He, Y. Lu, J. Qi, Q. Zhu, Z. Chen, W. Wu, Adapting liposomes for oral drug
+delivery, Acta Pharm Sin B 9 (2019) 36–48.
+KEYNOTE (GREEN)
+Drug Discovery Today d Volume 26, Number 10 d October 2021
+KEYNOTE (GREEN)
+www.drugdiscoverytoday.com
+2267
+
+41 K. Partikel, R. Korte, N.C. Stein, D. Mulac, F.C. Herrmann, H.U. Humpf, et al.,
+Effect of nanoparticle size and PEGylation on the protein corona of PLGA
+nanoparticles, Eur J Pharm Biopharm 141 (2019) 70–80.
+42 W. Fan, Z. Yu, H. Peng, H. He, Y. Lu, J. Qi, et al., Effect of particle size on the
+pharmacokinetics and biodistribution of parenteral nanoemulsions, Int J Pharm
+586 (2020) 119551.
+43 F. Caputo, J. Clogston, L. Calzolai, M. Rösslein, A. Prina-Mello, Measuring particle
+size distribution of nanoparticle enabled medicinal products, the joint view of
+EUNCL
+and
+NCI-NCL.
+A
+step
+by
+step
+approach
+combining
+orthogonal
+measurements with increasing complexity, J Control Release 299 (2019) 31–43.
+44 A.L.
+Capriotti,
+C.
+Cavaliere,
+S.
+Piovesana,
+Liposome
+protein
+corona
+characterization as a new approach in nanomedicine, Anal Bioanal Chem 411
+(2019) 4313–4326.
+45 P.C. Ke, S. Lin, W.J. Parak, T.P. Davis, F. Caruso, A decade of the protein corona,
+ACS Nano 11 (2017) 11773–11776.
+46 T. Cedervall, I. Lynch, S. Lindman, T. Berggård, E. Thulin, H. Nilsson, et al.,
+Understanding the nanoparticle-protein corona using methods to quantify
+exchange rates and afﬁnities of proteins for nanoparticles, Proc Natl Acad Sci U
+S A 104 (2007) 2050–2055.
+47 P. Jain, R.S. Pawar, R.S. Pandey, J. Madan, S. Pawar, P.K. Lakshmi, et al., In-vitro
+in-vivo correlation (IVIVC) in nanomedicine: Is protein corona the missing link?,
+Biotechnol Adv 35 (2017) 889–904
+48 K. Kristensen, T.B. Engel, A. Stensballe, J.B. Simonsen, T.L. Andresen, The hard
+protein corona of stealth liposomes is sparse, J Control Release 307 (2019) 1–15.
+49 O. Vilanova, J.J. Mittag, P.M. Kelly, S. Milani, K.A. Dawson, J.O. Rädler, et al.,
+Understanding the kinetics of protein-nanoparticle corona formation, ACS Nano
+10 (2016) 10842–10850.
+50 S. Palchetti, D. Pozzi, A.L. Capriotti, G. Barbera, R.Z. Chiozzi, L. Digiacomo, et al.,
+Inﬂuence of dynamic ﬂow environment on nanoparticle-protein corona: from
+protein patterns to uptake in cancer cells, Colloids Surf B Biointerfaces 153 (2017)
+263–271.
+51 O.K. Kari, J. Ndika, P. Parkkila, A. Louna, T. Lajunen, A. Puustinen, et al., In situ
+analysis of liposome hard and soft protein corona structure and composition in a
+single label-free workﬂow, Nanoscale 12 (2020) 1728–1741.
+52 G. Fang, Q. Zhang, Y. Pang, H.E. Thu, Z. Hussain, Nanomedicines for improved
+targetability to inﬂamed synovium for treatment of rheumatoid arthritis: Multi-
+functionalization as an emerging strategy to optimize therapeutic efﬁcacy, J
+Control Release 303 (2019) 181–208.
+53 G. Bastiat, C.O. Pritz, C. Roider, F. Fouchet, E. Lignières, A. Jesacher, et al., A new
+tool to ensure the ﬂuorescent dye labeling stability of nanocarriers: a real
+challenge for ﬂuorescence imaging, J Control Release 170 (2013) 334–342.
+54 Guo H, MacKay JA. A pharmacokinetics primer for preclinical nanomedicine
+research. In Lorraine L, RInaldi C, editors. Nanoparticles for biomedical
+applications. Amsterdam; Elsevier Inc; 2020. p. 109–28.
+55 A.L. Lainé, J. Gravier, M. Henry, L. Sancey, J. Béjaud, E. Pancani, et al.,
+Conventional versus stealth lipid nanoparticles: formulation and in vivo fate
+prediction through FRET monitoring, J. Control Release 188 (2014) 1–8.
+56 J. Gravier, L. Sancey, S. Hirsjärvi, E. Rustique, C. Passirani, J.P. Benoît, et al., FRET
+imaging approaches for in vitro and in vivo characterization of synthetic lipid
+nanoparticles, Mol Pharm 11 (2014) 3133–3144.
+57 M. Goutayer, S. Dufort, V. Josserand, A. Royère, E. Heinrich, F. Vinet, et al.,
+Tumor targeting of functionalized lipid nanoparticles: Assessment by in vivo
+ﬂuorescence imaging, Eur J Pharm Biopharm 75 (2010) 137–147.
+58 M. Hadjidemetriou, Z. Al-Ahmady, M. Mazza, R.F. Collins, K. Dawson, K.
+Kostarelos, In vivo biomolecule corona around blood-circulating, clinically used
+and antibody-targeted lipid bilayer nanoscale vesicles, ACS Nano 9 (2015) 8142–
+8156.
+59 C.K. Elechalawar, M.N. Hossen, L. McNally, R. Bhattacharya, P. Mukherjee,
+Analysing
+the
+nanoparticle-protein
+corona
+for
+potential
+molecular
+target
+identiﬁcation, J. Control Release 322 (2020) 122–136.
+60 V.H. Nguyen, B.J. Lee, Protein corona: a new approach for nanomedicine design,
+Int J Nanomed 12 (2017) 3137–3151.
+61 Q. Dai, S. Wilhelm, D. Ding, A.M. Syed, S. Sindhwani, Y. Zhang, et al.,
+Quantifying the ligand-coated nanoparticle delivery to cancer cells in solid
+tumors, ACS Nano 12 (2018) 8423–8435.
+62 S. Wilhelm, A.J. Tavares, Q. Dai, S. Otha, J. Audet, H.J. Dvorak, et al., Analysis of
+nanoparticle delivery to tumours, Nat Rev Mater 1 (2016) 16014.
+63 C. Xu, C.Y.-T. Li, A.-N.T. Kong, Induction of phase I, II and III drug
+metabolism/transport by xenobiotics, Arch Pharm Res 28 (2005) 249–268.
+64 Y.-N. Zhang, W. Poon, A.J. Tavares, I.D. McGilvray, W.C.W. Chan, Nanoparticle–
+liver interactions: cellular uptake and hepatobiliary elimination, J. Control
+Release 240 (2016) 332–348.
+65 K. Xiao, Y. Li, J. Luo, J.S. Lee, W. Xiao, A.M. Gonik, et al., The effect of surface
+charge on in vivo biodistribution of PEG-oligocholic acid based micellar
+nanoparticles, Biomaterials 32 (2011) 3435–3446.
+66 C.I. Colino, J.M. Lanao, C. Gutierrez-Millan, Targeting of hepatic macrophages by
+therapeutic nanoparticles, Front Immunol 11 (2020) 218.
+67 C.D. Walkey, J.B. Olsen, H. Guo, A. Emili, W.C. Chan, Nanoparticle size and
+surface chemistry determine serum protein adsorption and macrophage uptake, J
+Am Chem Soc 134 (2012) 2139–2147.
+68 N.M. La-Beck, L.M. Wood, X. Liu, Harnessing liposome interactions with the
+immune system for the next breakthrough in cancer drug delivery, Front
+Pharmacol 10 (2019) 220.
+69 N.M. La-beck, A.A. Gabizon, Nanoparticle interactions with the immune system:
+clinical implications for liposome-based cancer chemotherapy, Front Immunol 8
+(2017) 6–11.
+70 C. Peng, Y. Huang, J. Zheng, Renal clearable nanocarriers: overcoming the
+physiological barriers for precise drug delivery and clearance, J. Control Release
+322 (2020) 64–80.
+71 T. Shimizu, A.S. Abu Lila, T. Ishida, Y. Hashimoto, H. Kiwada, Relationship
+between the concentration of anti-polyethylene glycol (PEG) immunoglobulin
+M
+(IgM)
+and
+the
+intensity
+of
+the
+accelerated
+blood
+clearance
+(ABC)
+phenomenon against PEGylated liposomes in mice, Biol Pharm Bull 38 (2015)
+417–424.
+72 J.K. Armstrong, G. Hempel, S. Koling, L.S. Chan, T. Fisher, H.J. Meiselman, et al.,
+Antibody
+against
+poly(ethylene
+glycol)
+adversely
+affects
+PEG-asparaginase
+therapy in acute lymphoblastic leukemia patients, Cancer 110 (2007) 103–111.
+73 Z. Zhang, Y. Chu, C. Li, W. Tang, J. Qian, X. Wei, et al., Anti-PEG scFv corona
+ameliorates
+accelerated
+blood
+clearance
+phenomenon
+of
+PEGylated
+nanomedicines, J. Control Release 330 (2020) 493–501.
+74 F. Alexis, E. Pridgen, L.K. Molnar, O.C. Farokhzad, Factors affecting the clearance
+and biodistribution of polymeric nanoparticles, Mol Pharm 5 (2008) 505–515.
+75 M. Longmire, P.L. Choyke, H. Kobayashi, Clearance properties of nano-sized
+particles
+and
+molecules
+as
+imaging
+agents:
+Considerations
+and
+caveats,
+Nanomedicine 3 (2008) 703–717.
+76 N. Bertrand, J.C. Leroux, The journey of a drug-carrier in the body: an anatomo-
+physiological perspective, J Control Release 161 (2012) 152–163.
+77 J.H. Byun, D.G. Han, H.J. Cho, I.S. Yoon, I.H. Jung, Recent advances in
+physiologically
+based
+pharmacokinetic
+and
+pharmacodynamic
+models
+for
+anticancer nanomedicines, Arch Pharm Res 43 (2020) 80–99.
+78 D. Yuan, H. He, Y. Wu, J. Fan, Y. Cao, Physiologically based pharmacokinetic
+modeling of nanoparticles, J Pharm Sci 108 (2019) 58–72.
+KEYNOTE (GREEN)
+KEYNOTE (GREEN)
+Drug Discovery Today d Volume 26, Number 10 d October 2021
+2268
+www.drugdiscoverytoday.com

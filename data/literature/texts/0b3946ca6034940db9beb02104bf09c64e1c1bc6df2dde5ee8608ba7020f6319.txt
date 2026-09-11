@@ -1,0 +1,1331 @@
+RESEARCH ARTICLE
+www.afm-journal.de
+Direct Z-Scheme Xylan-Based Carbon Dots@TiO2-x
+Nanocomposites for Visible Light Driven Photocatalytic of
+Dye Degradation and Antibacterial
+Shurui Cong, Jihai Cai, Xiaoyun Li, Junqin You, Lei Wang,* and Xiaoying Wang*
+TiO2 photocatalysis has gained attention as a cost-eﬀective way of degrading
+contaminants. However, it relies on UV excitation and experiences rapid
+carrier recombination. To address these drawbacks, novel xylan-based carbon
+dots@hydrogenated TiO2 (CDs@TiO2-x) composited by direct Z-scheme
+heterojunction is fabricated as a visible light-driven photocatalytic material,
+which broadens the range of light absorption to visible light and suppresses
+the recombination of photogenerated carriers. The spindle-shaped
+CDs@TiO2-x has C/N/O/S groups, positive charges, and oxygen vacancies on
+its surface, and can degrade 89% of methylene blue and 87% of methyl
+orange within 90 min, and 99% of rhodamine B within 60 min in visible light.
+It also eradicates 99.9% of E. coli in 2 h and 97.1% of S. aureus in 2.5 h. These
+performances surpass CDs and TiO2-x, and exhibit advantages in similar
+composite materials. The degradation pathways of dyes and the speciﬁc
+antibacterial processes induced by ROS are thoroughly investigated through
+LC-MS testing and related enzyme activity assays. DFT calculations study the
+role of oxygen vacancies, heterojunction mechanism, and catalytic sites. This
+study has developed a novel nanocomposite with applications in both dye
+degradation and sterilization, oﬀering insights for multifunctional materials
+based on photocatalysis and heterojunction.
+1. Introduction
+Amidst rapid industrial and agricultural advancements, the grav-
+ity of water pollution has reached alarming heights, particularly
+regarding the presence of wastewater containing diverse organic
+pollutants (such as methylene blue (MB), methyl orange (MO),
+rhodamine B (RhB), phenol, etc.) and even hazardous bacte-
+ria, signiﬁcantly endangering human health.[1] Compared with
+traditional wastewater puriﬁcation methods, photocatalysis only
+S. Cong, J. Cai, X. Li, X. Wang
+State Key Laboratory of Pulp & Paper Engineering
+South China University of Technology
+Guangzhou 510640, China
+E-mail: xyw@scut.edu.cn
+S.Cong,J.You,L.Wang
+StateKey Laboratory of NBC Protection forCivilian
+Beijing 102205,China
+E-mail: wanglei16@tsinghua.org.cn
+The ORCID identiﬁcation number(s) for the author(s) of this article
+can be found under https://doi.org/10.1002/adfm.202401540
+DOI: 10.1002/adfm.202401540
+requires sunlight and eliminates the need
+for frequent material replacement, which
+is beneﬁcial for alleviating energy stress
+and suitable for continuous chemical in-
+dustry and recyclability.[2] Moreover, photo-
+catalytic materials can directly oxidize or-
+ganic dyes to harmless CO2 and H2O and
+kill bacteria without causing drug resis-
+tance through the generation of holes (h+)
+and reactive oxygen species (ROS), avoid-
+ing potential harmful compounds in ad-
+sorption and coagulation processes, and
+bacterial resistance caused by antibiotic
+abuse. Among various photocatalysts, ti-
+tanium dioxide (TiO2) stands out as the
+most commonly utilized material due to
+its good photocatalytic eﬀect, low cost, en-
+vironmental friendliness, and high chemi-
+cal stability.[3] However, the wide band gap
+(3.2 eV for anatase) of TiO2 restricts its ex-
+citation to ultraviolet light, and the rapid
+recombination of photogenerated electron-
+hole pairs also reduces its photocatalytic
+performance.[4] Therefore, the practical ap-
+plication of pure TiO2 is limited.
+Extensive researches have been undertaken to enhance the
+photocatalytic performance of TiO2, including element doping,[5]
+precious metal deposition,[6] heterojunction structures [7] and hy-
+drogenated TiO2,[8] et al. Element doping usually requires com-
+plex modiﬁcation of the precursor solution, and the degree of
+doping is diﬃcult to control. Precious metal deposition is expen-
+sive, and the cumulative toxicity of metals can cause composites
+to lose the low toxicity advantage of TiO2 itself. The method of
+constructing heterojunctions is highly favored due to its diverse
+selection of ligands, which can design diﬀerent composite ma-
+terials according to the required situation. As a novel multifunc-
+tional carbon nanomaterial, carbon dots (CDs) have full potential
+to form composite materials with excellent photocatalytic perfor-
+mance with TiO2. The electron-accepting and -transporting prop-
+erties of CDs can help TiO2 to form heterojunction and promote
+the separation of its photogenerated carriers,[9] and the remark-
+able light absorption and conversion abilities of CDs allow for an
+expanded absorption range of TiO2.[10] Moreover, by modifying
+the surface groups and surface charge of CDs, the composites
+can exhibit enhanced binding aﬃnity toward bacteria, leading to
+a better antibacterial eﬀect.
+However, despite the increasing attention garnered by
+CDs/TiO2 nanocomposites, the predominant focus of similar
+Adv. Funct. Mater. 2024, 34, 2401540
+© 2024 Wiley-VCH GmbH
+2401540 (1 of 19)
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Scheme 1. Design, dye degradation, and antibacterial process of visible light-driven CDs@TiO2-x nanocomposites.
+studies revolves around Schottky-like junctions, which only fo-
+cus on the ability of CDs to transfer electrons, or type-II het-
+erostructures, which exhibit limited oxidation and reduction
+capability.[9a,11] For semiconductor-based photocatalysts, the ideal
+and preferred conﬁguration for forming heterojunctions is the
+direct Z-scheme.[12] In this conﬁguration, photogenerated elec-
+trons and holes are retained in the CB and VB of diﬀerent semi-
+conductors with higher redox potential, while other photogener-
+ated carriers participate in carrier recombination. Moreover, al-
+beit heterojunctions have facilitated the separation of charge car-
+riers of TiO2 in analogous studies, most of these researches have
+concentrated CDs and normal TiO2, wherein substantive mod-
+iﬁcations to TiO2 itself were not conducted. And the enhanced
+light utilization in these composite materials attributed to the
+dark color of CDs, and TiO2 has yet to directly harness visible
+light. Consequently, structural modiﬁcations of TiO2 are neces-
+sary to enable direct utilization of visible light prior to establish-
+ing a direct Z-scheme heterojunction with CDs, which represents
+the optimal way to address the extant challenges.
+Hydrogenated TiO2 (TiO2-x), characterized by its distinctively
+dark appearance and the concurrent development of structural
+imperfections resulting from reduction processes, which can
+fundamentally solve the problem of the diﬃculty in utilizing vis-
+ible light of normal TiO2, manifests an immensely powerful so-
+lar absorption potential and extraordinary photocatalytic activity.
+And specially, CDs derived from agriculture and forestry, such
+as cellulose, lignin, and xylan, have good chemical activity and
+complex chemical properties,[13] showing more advantages to
+combine with TiO2. However, although the hydrogenated TiO2
+(TiO2-x) has been widely investigated, the researches on the direct
+Z-scheme heterojunction consisting of TiO2-x and CDs, which
+presents an eﬀective solution for addressing existing issues, re-
+mains hardly unexplored in scientiﬁc literature. Meanwhile, the
+pivotal role of surface charge in both degradation and antibacte-
+rial processes is often overlooked. Prevailing research on analo-
+gous materials primarily focuses on dye degradation, with scant
+attention directed toward their antibacterial properties. Given the
+intricate challenges posed by real water environments, the imper-
+ative to develop materials adept at concurrently addressing these
+dual concerns is evident.
+In this study (Scheme 1), TiO2 was initially reduced by sodium
+borohydride (NaBH4) to hydrogenate TiO2 (TiO2-x) with eﬀec-
+tively narrowed band gap and enhanced absorption of visible
+light attributed to the production of Ti3+ and oxygen vacancies
+(Ov). Nitrogen and sulfur-doped CDs derived from biomass xy-
+lan with high yield were synthesized subsequently via a solvent-
+free method, which avoids the disadvantage of poor solubil-
+ity of biomass materials and signiﬁcantly boosts the yield of
+CDs. These CDs were then combined with TiO2-x to fabricate
+direct Z-scheme CDs@TiO2-x nanocomposites. The nanocom-
+posites exhibited exceptional proﬁciency in the degradation of
+organic dyes and demonstrated signiﬁcant antibacterial eﬃcacy
+through the generation of free radicals. The mechanism of the
+direct Z-scheme heterojunction has been proven by multiple
+Adv. Funct. Mater. 2024, 34, 2401540
+© 2024 Wiley-VCH GmbH
+2401540 (2 of 19)
+ 16163028, 2024, 32, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202401540 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 1. A) TEM and HRTEM images of CDs. B) Particle size distribution of CDs. C) TEM and HRTEM images of the TiO2-x. D) EDS elemental maps
+(Ti and O) of TiO2-x. E–G) TEM image, EDS elemental maps (Ti, O, C, N, and S), and HRTEM image of CDs@TiO2-x.
+experimental methods. The structure, stability, charge transfer
+pathway, and catalytic sites of CDs@TiO2-x were veriﬁed with
+the assistance of calculations based on density functional the-
+ory (DFT). The degradation pathway and antibacterial mech-
+anism of CDs@TiO2-x were revealed by analyzing the liquid
+chromatography-mass spectrometry (LC-MS) results and moni-
+toring changes in enzyme activity. Notably, the multi-mechanistic
+antibacterial properties of this material hold great promise for
+practical utilization in the post-antibiotic era.
+2. Results and Discussion
+2.1. Characterization of CDs, TiO2-x and CDs@TiO2-x
+TEM images of the CDs prepared by solvent-free method are
+shown in Figure 1A. Prepared CDs had a distinct graphite lat-
+tice structure, characterized by a lattice stripe spacing of 0.21 nm,
+corresponding to the (100) diﬀractive plane of sp2 graphitic
+carbon.[14] The particle size of CDs (Figure 1B) ranged from 4.3
+to 13.2 nm with an average particle size of 8.2 nm. Figure 1C
+shows the micromorphology of hydrogenated TiO2 (TiO2-x) and
+Figure 1D shows the EDS elemental maps (Ti and O) of TiO2-x.
+Due to the existence of a large number of surface defects, the
+shape of TiO2-x exhibits a spindle shape with a length of less than
+50 nm. The lattice fringes with a spacing of 0.35 nm in the high-
+resolution image of TEM were attributed to the (101) plane of
+TiO2.[15] Figure 1E shows the micromorphology of CDs@TiO2-x,
+smaller CDs are attached to the surface of larger TiO2-x. The el-
+ements Ti, O, C, N, and S were evenly overlapped across the se-
+lected region (Figure 1F), and the content of S was signiﬁcantly
+less. The HRTEM image of CDs@TiO2-x (Figure 1G; Figure S3,
+Supporting Information) clearly shows the lattice fringes with a
+spacing of 0.21 nm from CDs and 0.35 nm from TiO2-x, which
+proved the successful recombination of CDs and TiO2-x.
+Figure 2A shows the crystalline structure of CDs, TiO2-x, and
+CDs@TiO2-x. The blunt broad peak centered at 23° of CDs corre-
+sponded to the (002) plane of graphite.[16] TiO2-x exhibited strong
+characteristic diﬀraction peaks of TiO2 (Anatase #21-1272) and
+weaker diﬀraction peaks of Ti3O5 (Titanium oxide #11-0217).
+This is attributed to the decrease in Ti coordination number
+caused by oxygen vacancies (Ov), which resulted in the appear-
+ance of Ti3+, demonstrating the successful reduction of TiO2.[4]
+The XRD spectrum of CDs@TiO2-x is highly consistent with that
+of pure anatase, which is due to the lower crystallinity of CDs
+compared to TiO2-x, and the relatively low and dispersed con-
+tent of CDs and Ti3O5 in the CDs@TiO2-x. The existence of Ov
+was conﬁrmed by X-ray photoelectron spectroscopy (XPS) analy-
+sis (Figure 2B,C). Compared with unreduced TiO2, TiO2−x exhib-
+ited a Ti3+ 2p3/2 signal at 458.2 eV in the Ti 2p spectrum and a
+more obvious oxygen vacancy signal at 531.9 eV in the O 1s spec-
+trum [9b], demonstrating the reduction was due to the generation
+of Ti3+ and oxygen vacancies. Meanwhile, the peak of Ti─O─H
+formed at 533.5 eV due to surface adsorbed water also showed
+a signiﬁcant increase, indicating that after reduction, TiO2-x was
+more prone to adsorb water, making it easier to convert H2O
+into •OH, which was beneﬁcial for subsequent oxidation reac-
+tions. Figure 2D shows the valence band (VB) spectra of TiO2
+and TiO2-x, the VB of TiO2 was 2.63 V, after reduction, the VB
+of TiO2-x shifted to 2.39 V. As demonstrated in the UV–vis DRS
+spectra of TiO2 and TiO2-x (Figure 2E), TiO2 exhibited extremely
+Adv. Funct. Mater. 2024, 34, 2401540
+© 2024 Wiley-VCH GmbH
+2401540 (3 of 19)
+ 16163028, 2024, 32, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202401540 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 2. A) XRD spectra of CDs, TiO2-x and CDs@TiO2-x. B–D) High-resolution Ti 2p, O 1s and VB spectra of TiO2 and TiO2-x. E, F) UV–vis DRS
+spectra, images, and UV–vis spectra of TiO2 and TiO2-x. G, H) Raman and EPR spectra of TiO2 and TiO2-x.
+low reﬂectivity within the ultraviolet light spectrum but consid-
+erably higher reﬂectivity in the visible light spectrum, indicating
+its limited utilization of visible light. In contrast, the reﬂectivity
+of TiO2-x in the visible light spectrum decreased signiﬁcantly, in-
+dicating eﬀective utilization of visible light after reduction. The
+images (Figure 2E) of TiO2 and TiO2-x clearly illustrate the sig-
+niﬁcant change in appearance caused by the reduction, with the
+color of TiO2-x changing from pure white to dark blue. The band
+gaps (Eg) of TiO2 and TiO2-x were calculated to be 3.23 and 2.77 eV
+from the UV–vis spectrum (Figure 2F). The Eg of TiO2-x was obvi-
+ously reduced, facilitating its utilization of visible light. Figure 2G
+shows the Raman spectrum of TiO2 and TiO2-x. Raman spec-
+trum is highly sensitive to short-range distortion caused by mi-
+crostructure defects,[17] thus enabling the characterization of Ov
+in TiO2-x nanoparticles. The ﬁve characteristic Raman peaks at
+142.7, 195.4, 393.6, 513.9, and 636.8 cm−1 of TiO2 were assigned
+as the Eg (1), Eg (2), B1g, A1g + B1g and Eg (3) modes of the anatase
+phase, respectively.[18] The Eg (1) and B1g modes corresponded to
+O-Ti-O bending vibrations (bond-angle variations), while the Eg
+(3) and A1g + B1g modes corresponded to Ti─O stretching vibra-
+tions (bond-length variations).[19] Notably, the Eg (1) and Eg (3)
+modes exhibited sensitivity to oxygen deﬁciencies. In particular,
+the O─Ti─O bending vibration (Eg1) had a more signiﬁcant eﬀect
+than the Ti─O stretching vibration (Eg3) [20] upon the introduc-
+tion of Ov. Compared with TiO2, the frequency of Eg (1) mode
+of TiO2-x had a signiﬁcant blue shift from 142.7 to 150.3 cm−1,
+accompanied by peak broadening (full width at half maximum,
+FWHM varying from 15.0 to 22.0 cm−1). Previous research re-
+ports have shown that excluding the inﬂuence of particle size,
+the blue shift and peak broadening of anatase TiO2 could be at-
+tributed to the presence of Ov.[21] Therefore, the Raman spec-
+trum provided compelling evidence supporting the oxygen deﬁ-
+ciency of TiO2-x. Electron paramagnetic resonance (EPR) analysis
+is widely used to examine Ov. Figure 2H shows the EPR spectra of
+TiO2 and TiO2-x. TiO2 showed only one signal at g = 1.996, which
+was attributed to Ti3+ from the combination of Ti4+ and e−. TiO2-x
+Adv. Funct. Mater. 2024, 34, 2401540
+© 2024 Wiley-VCH GmbH
+2401540 (4 of 19)
+ 16163028, 2024, 32, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202401540 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 3. A) UV–vis spectra, PL spectra, and images of CDs. B) UV­Vis spectra of CDs solutions with diﬀerent concentrations. C) VB spectra of CDs.
+D) VB spectra of CDs@TiO2-x. E–H) Survey XPS, high-resolution C 1s, O 1s, and N 1s spectra of CDs and CDs@TiO2-x. I) FT-IR spectra of TiO2, TiO2-x,
+CDs, and CDs@TiO2-x. The inset is an enlarged view of the C-H peaks (2923.0 and 2849.8 cm−1).
+showed a strong signal at g = 2.003, which was indexed to singly
+ionized Ov namely F+ centers, and a weaker signal of Ti3+, con-
+sistent with previously reported oxygen-deﬁcient TiO2−x.[22] Due
+to the charge imbalance state, oxygen vacancies in the TiO2 lattice
+are prone to capturing electrons to form F centers. Based on the
+number of captured electrons, they are named F centers (cap-
+turing two electrons), F+ centers (capturing one electron), and
+F2+centers (not capturing electrons), respectively. In TiO2-x, one
+electron was localized in an oxygen vacancy state (F+ centers).
+Figure 3A shows the UV–visible absorption spectra, ﬂuores-
+cence (FL) spectrum, and images of the CDs. The typical absorp-
+tion peak of CDs at 260 nm could be attributed to the 𝜋─𝜋* tran-
+sition of C═C, the broad absorption band centered about 330 nm
+was related to the n–𝜋* transition of C═O,[23] and the absorption
+peak at 420 nm (Figure 3B) could also be attributed to the n–
+𝜋* transition,[14] indicating the formation of the graphitic carbon
+core. The CDs solution appeared golden yellow and emitted blue
+ﬂuorescence under the irradiation of a 365 nm UV lamp. The
+FL emission spectrum of CDs exhibited excitation-dependent be-
+havior, with an optimal excitation wavelength of 330 nm. Ac-
+cording to the UV–vis spectrum of CDs solutions with diﬀer-
+ent concentrations (Figure 3B), the band gap was calculated to
+be 2.25 eV. The VB of CDs was 1.46 V according to its VB spec-
+trum (Figure 3C) and the conduction band (CB) of CDs versus the
+normal hydrogen electrode (NHE) was calculated to be −0.79 V
+according to its cyclic voltammetry (CV) measurements (Figure
+S4, Supporting Information), these results mutually conﬁrmed
+each other. The VB spectrum (Figure 3D) of CDs@TiO2-x exhib-
+ited two distinct slopes, and by intersecting them with the base-
+line, the valence band of the CDs was calculated as 1.35 V, while
+the VB of TiO2-x changed to 2.78 V. The XPS survey spectra of
+CDs and CDs@TiO2-x (Figure 3E) indicated that the compos-
+ite material contained a certain amount of N element (2.33%).
+However, due to the low content of S element in CDs@TiO2-x
+Adv. Funct. Mater. 2024, 34, 2401540
+© 2024 Wiley-VCH GmbH
+2401540 (5 of 19)
+ 16163028, 2024, 32, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202401540 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+(1.46%), it was diﬃcult to detect obvious S peaks. The semi-
+quantitative content of each element from the XPS survey of
+CDs and CDs@TiO2-x are shown in Tables S1 and S2 (Support-
+ing Information). The high-resolution XPS spectrum of C 1s of
+CDs (Figure 3F) could be divided into three peaks of 284.7 eV
+(C─C), 285.9 eV (C─O/C─N/C─S), and 287.9 eV (C═O).[24] C
+1s of CDs@TiO2-x (Figure 3F) could also be divided into these
+peaks: 284.8 eV (C─C), 286.3 eV (C─O/C─N/C─S), and 288.8 eV
+(C═O). It is worth noting that when CDs were combined with
+TiO2-x, the C 1s binding energy in CDs shifted to a higher direc-
+tion, indicating that the local chemical environment of element
+C had changed. This displacement shows that due to the diﬀer-
+ent work functions of the two materials, electrons transferred
+from CDs to TiO2-x after combination.[25] This electron transfer
+generated an internal electric ﬁeld (IEF) at the interface between
+CDs and TiO2-x, which was conducive to the construction of di-
+rect Z-scheme CDs@TiO2-x heterojunction, thus promoting the
+separation of photogenerated carriers in the composite. O 1s of
+CDs (Figure 3G) could be divided into two peaks of 530.8 eV
+(C═O), and 532.1 eV (C─O).[24] O 1s of CDs@TiO2-x (Figure 3G)
+could be divided into two peaks of 529.8 eV (Ti─O─Ti), and
+531.9 eV (Ov). There were two main peaks yielded with N 1s
+XPS spectra (Figure 3H) of CDs, which ascribed to the C≡N
+(397.7 eV) and pyridine N (399.8 eV),[26] while in the N 1s of
+CDs@TiO2-x, there was only pyridine N peak (399.8 eV) left.
+There were three distinct peaks in the high-resolution XPS spec-
+trum of S 2p of CDs (Figure S5, Supporting Information): S 2p3/2
+(161.5 eV) and S 2p1/2 (162.9 eV) of the C─S─C bond, and S═O
+(168.5 eV).[27] Like TiO2-x, the Ti 2p spectrum of CDs@TiO2-x
+(Figure S6, Supporting Information) also showed three peaks
+of Ti3+ 2p3/2 (458.5 eV), Ti4+ 2p3/2 (458.8 eV) and Ti4+ 2p1/2
+(464.5 eV). Fourier-transform infrared (FTIR) spectrums of TiO2,
+TiO2-x, CDs, and CDs@TiO2-x (Figure 3I) were applied to analyze
+the functional groups. The peaks at about 3421.5 and 1631.7 cm−1
+that appeared in TiO2, TiO2-x, and CDs@TiO2-x are attributed to
+vibrations of ─OH and surface adsorbed water,[10] respectively.
+The absorption peaks at 3452.4, 3207.5, and around 2928.0 cm−1
+of CDs were attributed to the stretching vibration of O─H, N─H,
+and C─H, respectively. The peak at 1631.7 cm−1 of CDs corre-
+sponded to the bending vibration of C═O, the peaks at 1496.3
+and 1178.4 cm−1 of CDs corresponded to the stretching vibra-
+tion of C═C and C─O,[28] respectively. The multiple absorption
+peaks around 2500 cm−1 were attributed to the stretching vi-
+bration of S–H,[29] the strong peaks at 2065.7 and 1402.1 cm−1
+were attributed to the ─SCN and ─CN,[30] respectively, the broad
+peak at around 530.4 cm−1 was attributed to the C─S bond,[31]
+these functional groups all revealed the doping of N and S in
+CDs. The FT-IR spectrum of CDs@TiO2-x showed the absorp-
+tion of C─H (2923.0 and 2849.8 cm−1), C═C (1492.7 cm−1), C─N
+(1403.0 cm−1) and an obvious new peak at 1691.5 cm−1 attributed
+to C═O,[32] indicating the successful binding and interaction be-
+tween CDs and TiO2-x.
+2.2. Photocatalytic Degradation of Dyes and Antibacterial
+Properties
+In
+order
+to
+verify
+the
+ROS-generating
+performance
+of
+CDs@TiO2-x under visible light, dye degradation experiments
+were ﬁrst conducted. Methylene blue (MB), methyl orange
+(MO), and rhodamine B (RhB) are the most explored dyes in
+photocatalysis, and their degradation enables estimation of
+the photocatalytic activity of various materials. Figure 4A–C
+shows the kinetics linear simulation curves of the degradation
+of MB, MO, and RhB under visible light catalysis of CDs, TiO2-x,
+and CDs@TiO2-x. It is clear to see that the dye degradation
+ability of CDs@TiO2-x was much stronger than that of its raw
+materials CDs and TiO2-x under visible light. CDs@TiO2-x was
+able to degrade MB by 89% (k = 0.0251 min−1) and MO by 87%
+(k = 0.0236 min−1) within 90 min, and degrade RhB by 99%
+(k = 0.1003 min−1) in only 60 min. The eﬃciency of degradation
+of CDs@TiO2-x was compared with other similar photocatalysts
+reported in the literatures, and the results are listed in Table
+S3 (Supporting Information). When it came to visible light
+catalysis, CDs@TiO2-x demonstrated distinct advantages, and
+CDs@TiO2-x did not have signiﬁcant diﬀerences even compared
+to some works that contain ultraviolet lights. Such outcomes
+exempliﬁed the exceptional performance of CDs@TiO2-x.
+Then, some typical scavengers were used to remove the pho-
+togenerated holes (h+) and reactive oxygen species (ROS) that
+might be generated in the reaction. There have been several
+studies indicating that sodium formate (CHOONa), t-butanol (t-
+BuOH), p-benzoquinone (PBQ), and 4-chloro-2-nitrophenol (4-
+C-2-NP) are reasonable scavengers for the h+, hydroxyl radi-
+cals (•OH), superoxide anion radicals (•O2
+−) and singlet oxygen
+species (1O2) in the photocatalytic system, respectively.[33] After
+they were added into the reaction system, the eﬀects of the corre-
+sponding substances were reﬂected by the degree of degradation
+reduction. Thus, the role of these substances in the photocatalytic
+oxidation of these organic dyes could be elucidated (Figure 4D).
+The results indicated that •OH played a major role in the degra-
+dation of MB, •O2
+−and 1O2 played less role while h+ played no
+role, demonstrating MB was mainly oxidized by the •OH, which
+was converted from H2O by photogenerated electrons (e−) on the
+conduction band (CB) of TiO2. On the contrary, •OH had no role
+in the photocatalytic oxidation of MO, •O2
+−and 1O2 played al-
+most equal primary role in the degradation of MB, and h+ also
+played a certain role. This might be attributed to the fact that MO
+was mainly oxidized by 1O2 with strong oxidation ability, while
+1O2 was mainly produced by •O2
+−through h+ oxidation and
+other processes.[34] RhB was mainly oxidized by •O2
+−, with •OH
+and 1O2 playing a smaller role, and h+ played no role. MO and
+RB were mainly oxidized by the ROS converted from O2 by pho-
+togenerated holes (h+) on the valence band (VB) of CDs. Consid-
+ering that •OH and 1O2 both had stronger oxidation ability than
+•O2
+−, these results reﬂected that RhB was more easily oxidized
+than MB and MO, which was consistent with the experimental
+results. In addition, the stronger degradation eﬀect on RhB was
+also due to the negative charge of this dye, which better inter-
+acted with positively charged CDs@TiO2-x (Figure 4F). The above
+results also reﬂected CDs@TiO2-x had the ability to produce var-
+ious substances with oxidizing ability (h+, •OH, •O2
+−and 1O2),
+and when facing diﬀerent organic compounds, these oxidizing
+substances could play their respective roles, highlighting the po-
+tential of CDs@TiO2-x in degrading multiple pollutants.
+Considering the signiﬁcant impact of pH on the photocat-
+alytic degradation of dyes in practical applications, photocatalytic
+degradation experiments of three dyes were conducted for a cer-
+tain period (MB and MO: 45 min, RhB: 30 min) under ﬁve
+Adv. Funct. Mater. 2024, 34, 2401540
+© 2024 Wiley-VCH GmbH
+2401540 (6 of 19)
+ 16163028, 2024, 32, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202401540 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 4. Kinetics linear simulation curves of the degradation of A) MB, B) MO, and C) RhB by CDs, TiO2-x and CDs@TiO2-x. D) Changes in degradation
+rate with scavengers. E) Degradation rate of MB, MO and RhB at diﬀerent pH values. F) 𝜁-potentials of CDs@TiO2-x at diﬀerent pH values. G) Physical
+images of MB, MO, and RhB degradation in the natural environment by CDs@TiO2-x. UV–vis spectra of H) MB, I) MO, and J) RhB before and after
+placing in the natural environment.
+Adv. Funct. Mater. 2024, 34, 2401540
+© 2024 Wiley-VCH GmbH
+2401540 (7 of 19)
+ 16163028, 2024, 32, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202401540 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+conditions: pH = 3, 5, 7, 9, 11. (Figure 4E). Overall, alkalinity was
+beneﬁcial for the degradation of MB, while acidity was beneﬁcial
+for the degradation of MO and RhB. This trend was mainly due
+to changes in the positive surface charge of the CDs@TiO2-x. In
+alkaline environments, CDs@TiO2-x adsorbed more OH−, caus-
+ing their surface charge to become negative, while under acidic
+conditions, H+ was adsorbed and the surface charge became pos-
+itive (Figure 4F). For positively charged MB, the stronger the al-
+kalinity, the more negative the charge of CDs@TiO2-x, which was
+beneﬁcial for the interaction between CDs@TiO2-x and MB.[35] In
+addition, there was a large amount of OH−in the alkaline solu-
+tion. Compared to H2O (H2O/•OH = 2.38 eV), OH−was more
+easily converted into •OH (OH−/•OH = 1.99 eV), which was the
+main active substance for oxidizing MB, further improved the
+degradation rate of MB. On the contrary, for negatively charged
+MO and RhB, acidic conditions were most favorable for degrada-
+tion. It was worth noting that MB showed a higher degradation
+rate when pH = 3, while MO and RhB showed better degrada-
+tion eﬀects when pH = 9. The former might be due to the gener-
+ation of chlorine radicals (•Cl) resulting from the conversion of
+Cl−by h+ (Cl−/•Cl = 2.47 eV) generated by CDs@TiO2-x in the
+presence of HCl, which greatly improved the degradation ability
+of the material.[36] The latter might be due to the fact that more
+•OH had a greater promoting eﬀect on degradation than the in-
+ﬂuence of surface charge at pH = 9, when the alkalinity was en-
+hanced to pH = 11, although more •OH could be generated, the
+negative impact of mutual repulsion of the same negative surface
+charge on degradation was more severe, resulting in a decrease in
+degradation rate. Considering the strong alkalinity of actual tex-
+tile industry wastewater, pre-treatment to adjust pH before pho-
+tocatalytic degradation is highly beneﬁcial for the application of
+CDs@TiO2-x.
+To further evaluate the ability of CDs@TiO2-x in practical
+applications, organic dyes containing CDs@TiO2-x were placed
+in the natural environment and degraded through outdoor
+sunlight. Figure 4G shows the ability of CDs@TiO2-x to degrade
+dyes in the natural environment. After two and a half hours
+of sunlight exposure, all three dyes were almost degraded to a
+colorless state, demonstrating the strong degradation ability of
+CDs@TiO2-x. The UV–vis spectra of the three dyes before and
+after degradation (Figure 4H–J) show that the absorbance of the
+three dyes in the visible light region almost completely decreased
+to 0 after degradation, with only an absorption peak in the UV
+light region, indicating that most molecules have been degraded
+into H2O and CO2.
+In
+order
+to
+investigate
+the
+degradation
+pathway
+dur-
+ing
+the
+photocatalytic
+process,
+experiments
+using
+liquid
+chromatography-mass
+spectrometry
+(LC-MS)
+were
+carried
+out on MB and MO solutions at 0, 30, 60, and 90 min, as well as
+on RhB at 0, 20, 40, and 60 min to analyze their intermediates and
+ﬁnal products. The high-resolution mass spectra of the treated
+dye solutions at diﬀerent time intervals (Figure S7, Supporting
+Information) revealed the formation of signiﬁcant amounts of
+intermediates and ﬁnal products. The main intermediates and
+possible degradation pathways were identiﬁed and shown in
+Figure 5. The degradation mechanism of the three dyes was
+well established and was consistent with previous reports.[37]
+This process typically involves three main steps: N-deethylation,
+chromophores cleavage, and mineralization. These ﬁndings in-
+dicated that, for the three dyes, free radical species ﬁrst targeted
+the C─N bonds between nitrogen atoms and methyl groups.
+Subsequently, in the case of MB and MO, free radicals attacked
+the C─N bonds between nitrogen atoms and the benzene rings;
+For RhB molecules, they directly attacked their central carbon
+atoms, and these processes led to the dyes breaking down into
+smaller organic molecules, ultimately resulting in complete
+mineralization to CO2, H2O and inorganic ions.
+Figure 6A–C exhibits the antibacterial propriety of CDs, TiO2-x,
+and CDs@TiO2-x against Escherichia coli (E. coli) under visible
+light irradiation. It is evident from the colony count on nutri-
+tion agar plates that both CDs and CDs@TiO2-x have an antibac-
+terial eﬀect on E. coli, with CDs@TiO2-x exhibiting a stronger
+eﬀect. CDs@TiO2-x killed 96.8% of E. coli within one hour and
+achieved near-complete elimination (99.9%) of E. coli within 2 h.
+While the antibacterial rates of CDs against E. coli in 1, 2, and
+2.5 h were 79.0%, 89.6%, and 93.7%, all lower than the antibac-
+terial rate of CDs@TiO2-x within 1 h. At the same time, it was
+noted that although CDs had a higher antibacterial eﬃciency
+within the ﬁrst hour, the subsequent bactericidal eﬃciency sig-
+niﬁcantly decreased. This decline might be due to the fact that
+CDs mainly relied on destroying bacterial cell walls and mem-
+branes for sterilization,[38] making it diﬃcult to detach and at-
+tack the next bacteria after adhering and eliminating one bac-
+terium, indicating that CDs did not have long-term antibacterial
+activity. Figure 6D–F shows the antibacterial propriety of CDs,
+TiO2-x, and CDs@TiO2-x against Staphylococcus aureus (S. aureus)
+under visible light irradiation. CDs@TiO2-x continued to exhibit
+favorable antibacterial activity against S. aureus, and the antibac-
+terial ﬁltration could reach 61.4%, 89.1%, and 97.1% in 1, 2,
+and 2.5 h, respectively. Conversely, the antibacterial eﬀect of CDs
+against S. aureus decreased signiﬁcantly, and with the extension
+of time, their antibacterial eﬀect weakened even further, conﬁrm-
+ing the absence of long-term antibacterial capabilities in CDs.
+And whether it was E. coli or S. aureus, TiO2-x had almost no an-
+tibacterial ability, which might be attributed to its blocking of the
+light. These results proved that the antibacterial properties had
+been greatly improved after the formation of composite materi-
+als. The antibacterial eﬀect of CDs@TiO2-x was compared with
+other similar photocatalysts reported in the literature, and the re-
+sults are listed in Table S4 (Supporting Information). The pho-
+tocatalytic antibacterial eﬀect of CDs@TiO2-x is also signiﬁcantly
+better than similar materials.
+In addition, the antibacterial eﬀect of CDs@TiO2-x on Gram-
+negative E. coli was signiﬁcantly superior to that on Gram-positive
+S. aureus. This might be attributed to the diﬀerences in the cell
+wall and outer cell membrane structures which could aﬀect the
+interaction and internalization of ROS produced by CDs@TiO2-x
+with bacteria. The cell wall of gram-positive bacteria is mainly
+composed of peptidoglycan, phosphate, etc., which is tougher,[39]
+while that of gram-negative bacteria is mainly composed of pepti-
+doglycan, lipoprotein, phospholipid layer, etc., which is looser.[40]
+In addition, the gram-positive bacteria have thicker layers of pep-
+tidoglycan than gram-negative bacteria, so after binding to the
+cell wall of Gram-negative E. coli, the ROS CDs@TiO2-x produced
+were easier to damage it and enter the bacteria, achieving better
+antibacterial eﬀect.
+Adv. Funct. Mater. 2024, 34, 2401540
+© 2024 Wiley-VCH GmbH
+2401540 (8 of 19)
+ 16163028, 2024, 32, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202401540 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 5. Possible photocatalytic degradation pathways of MB, MO, and RhB.
+Adv. Funct. Mater. 2024, 34, 2401540
+© 2024 Wiley-VCH GmbH
+2401540 (9 of 19)
+ 16163028, 2024, 32, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202401540 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 6. Plate photos, colony counts and antibacterial rates of CDs, TiO2-x and CDs@TiO2-x against E. coli A–C) and S. aureus D–F).
+2.3. Possible Mechanism of Enhanced Photocatalytic and the
+Following Antibacterial Properties
+To understand the degradation and antibacterial results, a se-
+ries of characterizations and electrochemical experiments were
+performed to unravel the properties of CDs@TiO2-x. Electro-
+chemical impedance spectroscopy (EIS) was used to investigate
+the charge-transfer rate. Figure 7A shows the EIS spectrum of
+TiO2-x, CDs, and CDs@TiO2-x. For Nyquist plots, a larger area
+enclosed by the curve and x-axis of the semicircle corresponds
+to a greater resistance to electron ﬂow at the electrode-electrolyte
+interface. CDs@TiO2-x presented the smallest slope, indicating
+the lowest charge transfer resistance and the highest photogen-
+erated carriers migration rate.[41] Linear sweep voltammograms
+(LSV) were measured to investigate the recombination rate of
+photo-generated e−and h+ (Figure 7B). When the potential of
+1.0 V was applied, the current density of CDs@TiO2-x photoan-
+ode was 575.5 uA cm−2, which was 1.2 times than that of pure
+TiO2-x (483.8 uA cm−2) and 2.0 times than that of pure CDs
+(288.9 uA cm−2). The increase in current density resulted from
+the ability of CDs@TiO2-x to inhibit the recombination of photo-
+generated e−and h+, resulting in more e−and h+ participating
+in the generation of free radicals, which promoted the degra-
+dation activity of organic dyes and antibacterial performance.
+Adv. Funct. Mater. 2024, 34, 2401540
+© 2024 Wiley-VCH GmbH
+2401540 (10 of 19)
+ 16163028, 2024, 32, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202401540 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 7. A–D) EIS spectra, LSV curves, PL spectra, and 𝜁-potentials of CDs, TiO2-x, and CDs@TiO2-x. E,F) Mechanisms of the production of free radical
+substances of CDs and TiO2-x. G) Energy-band structures and plausible mechanisms of electron transfer for the CDs@TiO2-x heterojunctions. H–J)
+EPR spectra of DMPO-•OH adduct, DMPO-•O2−adduct and TEMPO-h+ adduct for CDs@TiO2-x. K–M) High-resolution C 1s, Ti 2p and O 1s spectra
+without and with irradiation of CDs@TiO2-x.
+Adv. Funct. Mater. 2024, 34, 2401540
+© 2024 Wiley-VCH GmbH
+2401540 (11 of 19)
+ 16163028, 2024, 32, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202401540 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Especially, the initial potential of CDs@TiO2-x exhibited a neg-
+ative shift compared to CDs and TiO2-x, reﬂecting a reduced
+charge transfer kinetic energy barrier through the CDs@TiO2-x
+interface.[7b] FL spectrum shows the emission peaks of TiO2-x,
+CDs, and CDs@TiO2-x (Figure 7C), which is originated from the
+recombination of photogenerated electrons and holes.[42] After
+the binding of CDs and TiO2-x, the ﬂuorescence intensity signiﬁ-
+cantly decreased, indicating a pronounced suppression of recom-
+bination between photogenerated e−and h+ within the compos-
+ite material, leading to a more eﬃcient utilization of absorbed
+photon energy for the generation of free radicals. The Zeta po-
+tentials (𝜁-potentials) of CDs, TiO2-x, and CDs@TiO2-x had been
+measured to investigate the interaction with bacteria (Figure 7D).
+The 𝜁-potentials of CDs, TiO2-x, and CDs@TiO2-x were + 0.96
+± 0.50, −32.83 ± 3.61, and +18.67 ± 0.61 V, respectively. The
+positive charge on the surface of CDs primarily originated from
+the abundance of nitrogen-containing groups (Figure 3H: C≡N
+and pyridine N) on its surface. TiO2-x exhibited a negative surface
+potential, which was consistent with the previous reports.[43] Re-
+search has shown that the surface potentials of E. coli and S. au-
+reus are also negative,[39b] which made them mutually exclusive.
+This was also one of the reasons why TiO2-x was diﬃcult to resist
+bacteria. On the contrary, after binding with CDs, the potential of
+TiO2-x changed from negative to positive, which was more con-
+ducive to contacting and interacting with bacteria, thereby im-
+proving the antibacterial ability of the composite material. No-
+tably, the absolute potential value of CD@TiO2-x surpassed that of
+CDs, possibly due to the eﬀective dispersion of CDs upon bind-
+ing to the TiO2-x surface, preventing agglomeration and result-
+ing in a higher positive potential.[44] Consequently, CD@TiO2-x
+more extensively interacted with bacteria in the solution, thereby
+achieving superior antibacterial eﬀects.
+Figure 7E demonstrates how CDs act as photosensitizers (PS)
+in antibacterial photodynamic therapy (aPDT). CDs are excited
+after absorbing a photon (A), and then transfer from the ground
+singlet state (S0) to the excited singlet state (Sn). CDs then release
+energy through ﬂuorescence (F) or internal conversion (H), re-
+turning to S0, or convert to a longer-living excited triplet state (T1)
+via inter-system crossing (ISC). From T1, CDs emit phosphores-
+cence (P) or generate ROS through two processes to return to
+S0. In the type I route, charges transfer to surrounding molecu-
+lar oxygen, oxidize them, and produce superoxide radicals (•O2
+−)
+and hydroxyl radicals (•OH). In the type II route, energy directly
+transfers to the ground state molecular oxygen (3O2), leading to
+the emergence of singlet oxygen (1O2).[45] Figure 7F shows the
+mechanism through which TiO2-x generates ROS under irradia-
+tion, a process commonly known as antibacterial photocatalytic
+therapy (aPCT) when employed for antibacterial purposes. When
+TiO2-x is exposed to light, electrons in its VB absorb the energy
+of photons and undergo a transition to the CB. This transition
+leads to the generation of photogenerated electrons (e−) in the
+CB and corresponding photogenerated holes (h+) in the VB. Pho-
+togenerated e−are easily captured by oxidizing substances such
+as dissolved oxygen in water to generate •O2
+−. And photogener-
+ated h+ can directly oxidize organics adsorbed on TiO2-x surface
+or oxidize OH−and H2O molecules adsorbed on TiO2-x surface
+to form hydroxyl radicals (OH•). •O2
+−can also convert to 1O2 via
+hole oxidation or other associated processes.[46]
+In order to further study the enhanced photocatalytic ability
+of the CDs@TiO2-x, the mechanism of heterojunction formation
+was studied. Mott-Schottky (MS) plots were measured to charac-
+terize the types of semiconductors and the ﬂat band potentials of
+CDs, TiO2-x, and CDs@TiO2-x (Figures S8–S10, Supporting Infor-
+mation). The ﬂat band of TiO2-x, CDs, and CDs@TiO2-x were de-
+termined to be 0.29, 0.78, and 0.67 V versus the saturated calomel
+electrode (SCE), respectively. Therefore, the Fermi levels (Ef) of
+TiO2-x, CDs, and CDs@TiO2-x were calculated to be 0.51, 1.00,
+and 0.89 V versus NHE, respectively. Figure 7G shows the band
+structures of CDs, TiO2-x, and two kinds of heterojunction they
+might form based on their band structures: traditional type-II
+heterojunction and direct Z-scheme heterojunction, which both
+have good charge separation eﬃciency. In the type-II heterojunc-
+tion, photogenerated e−gathered in CB of TiO2-x with weak re-
+duction potential, and photogenerated h+ gathered in VB of CDs
+with weak oxidation potential,[47] these potentials could not reach
+−0.33 V (O2/•O2
+−) and 2.38 V (H2O/•OH) respectively, demon-
+strating that it was diﬃcult for them to produce these active
+substances to degrade dyes or kill bacteria. This was not con-
+sistent with the above experimental results. While in the direct
+Z-scheme heterojunction, after being excited by irradiation, the
+photogenerated e−and h+ with strong redox ability retained in
+CB of CDs and VB of TiO2-x, while other photogenerated carriers
+(photogenerated e−in CB of TiO2-x and photogenerated h+ in VB
+of CDs) participate in carrier recombination. Therefore, the di-
+rect Z-scheme could solve the problem of carrier recombination
+while maintaining strong redox ability, achieving a better pho-
+tocatalytic degradation eﬀect and antibacterial eﬀect, consisting
+with the experimental results. To further verify the mechanism
+of direct Z-scheme heterojunction, the existence of •OH, •O2
+−,
+and h+ from the CDs@TiO2-x composite was directly ascertained
+through analysis of the electron paramagnetic resonance (EPR)
+spectra (Figure 7H–J). Subsequent utilization of DMPO for cap-
+turing •OH and •O2
+−and TEMPO for capturing h+ revealed no-
+table signal changes, including the emergence of peaks for •OH
+and •O2
+−and the attenuation of peaks for h+, further substan-
+tiating their generation. In order to provide conclusive evidence
+for the mechanism of the direct Z-scheme heterojunction, in situ
+XPS testing was conducted on CDs@TiO2-x to detect its electron
+transfer pathways under illumination. The high-resolution C 1s,
+Ti 2p, and O 1s spectra are shown in the Figure 7K–M. Compar-
+ing with the binding energy in the dark, the binding energy of
+C 1s shifted toward a lower direction, while the binding energy
+of Ti 2p and O 1s shifted toward a higher direction under illu-
+mination, indicating that photoelectrons transferred from TiO2-x
+to CDs under illumination. Such electron transfer pathway was
+consistent with the mechanism of direct Z-scheme heterojunc-
+tion. Therefore, the formation of direct Z-scheme heterojunction
+was conﬁrmed.
+Theoretical calculations were employed to explore the eﬀects
+of oxygen vacancies (OV) in the TiO2-x and the structure of
+CDs@TiO2-x (Figure 8). Figure S11 (Supporting Information)
+shows the possible structures of CDs and TiO2-x used for calcu-
+lation, which were constructed according to the initial analysis
+involving FT-IR, XPS, and XRD of them. The corresponding en-
+ergy bands are presented in Figure S12 and Table S5 (Support-
+ing Information). Although the energy band structure of CDs
+Adv. Funct. Mater. 2024, 34, 2401540
+© 2024 Wiley-VCH GmbH
+2401540 (12 of 19)
+ 16163028, 2024, 32, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202401540 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 8. A) Possible structure, Highest Occupied Molecular Orbital (HOMO), Lower Unoccupied Molecular Orbital (LUMO), and bandgap of CDs. B)
+Structure, calculated band structure, and density of states (DOS) of anatase TiO2 (101) surfaces. C) Possible structures, calculated band structure, and
+DOS of TiO2-x. (The markings indicate the position of OV and structural changes after structural optimization.) D) Possible structures and adsorption
+energy of CDs@TiO2-x. E) Electron density change and planar-average charge density in CDs@TiO2-x. In (A) and (E), the reduction and increase of
+electron density are marked by blue and yellow colors in electron density change, respectively.
+exhibited partial agreement with experimental results, the cal-
+culated bandgaps of both TiO2 and TiO2-x were narrower due
+to inherent limitations in the calculation method. Compared to
+TiO2 (Eg = 2.33 eV, Figure 8B), TiO2-x exhibited reduced bandgaps
+(1.97 eV of TiO2-x, 2, Figure 8C) and introduced signiﬁcant donor
+energy levels because of the presence of OV, consistent with ex-
+perimental ﬁndings. The existence of the defect state was equiv-
+alent to building a step between VB and CB, so that electrons can
+gradually transit from VB to CB, enhancing its absorption of visi-
+ble light, facilitating electron transition to the CB, and altering the
+charge transfer ability of the TiO2-x surface. From the calculated
+band structure, the valence band maximum (VBM) was mainly
+composed of O 2p orbitals, and the conduction band maximum
+(CBM) was mainly composed of Ti 3d orbitals. CDs3 (Figure 8A)
+and TiO2-x, 2 (Figure 8C) were selected for further calculations
+(referred to as CDs and TiO2-x, respectively). The stability of the
+Adv. Funct. Mater. 2024, 34, 2401540
+© 2024 Wiley-VCH GmbH
+2401540 (13 of 19)
+ 16163028, 2024, 32, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202401540 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+CDs@TiO2-x was studied through the adsorption energy calcu-
+lations, with an adsorption energy of −1.33 eV < 0, indicating
+an exothermic binding and the formation of a stable structure
+(Figure 8D; Table S6, Supporting Information). Electron density
+change calculations elucidated the electron transfer mechanism
+in the heterojunctions, with the electrons accumulating predom-
+inantly at the adsorption interface between CDs and TiO2-x. The
+CDs exhibited an overall tendency of electron loss, thereby con-
+ﬁrming electron transfer from CDs to TiO2-x (Figure 8E). The
+same conclusion could be drawn by combining the plane average
+diﬀerential charge density (Figure 8E). These calculation results
+proved the theory of the internal electric ﬁeld (IEF) mentioned
+above.
+DFT calculations were also employed to conduct an in-depth
+investigation into the optimal catalytic sites of CDs@TiO2-x. The
+Ti atoms situated at the interface between CDs and TiO2-x, and in
+proximity to Ov, exhibited a heightened susceptibility to catalytic
+reactions, attributed to their electron activity. Therefore, the cat-
+alytic activity of the eight Ti atoms at the aforementioned position
+(Figure 9A; Figure S13, Supporting Information) was calculated.
+Because CDs@TiO2-x were practically used in water, diﬀerent cal-
+culation methods were adopted for H2O and O2. For the reaction
+of H2O conversion to •OH, after initial adsorption and structural
+optimization of H2O and •OH at relevant positions, the catalytic
+activity was directly reﬂected through a comparison of reaction-
+free energy. Notably, site 6 exhibited the most substantial energy
+decrease on the free energy diagram (Figure 9B), indicating its su-
+perior capability in •OH generation. Additionally, site 5, closely
+following site 6, showcased notable catalytic activity as both were
+Ti atoms directly coordinated with Ov. For the conversion of O2
+into •O2
+−and subsequent reactions (conversion to H2O2, and ﬁ-
+nally to •OH), considering the relatively small concentration of
+O2 in water, O2 required optimal adsorption at a pre-determined
+position prior to commencing the reaction. Therefore, the opti-
+mal adsorption position was also optimal for O2 catalysis. The
+ability of these 8 Ti atoms in adsorbing O2 (Figure 9E) and the
+subsequent reaction free energy of the optimal adsorption site
+(Figure 9C) were calculated. Similarly, O2 had the strongest ad-
+sorption at site 6, followed by site 5, making site 6 the optimal ac-
+tive site. These ﬁndings underscored that Ti atoms directly linked
+to Ov possessed superior catalytic properties, with a gradual de-
+crease in free energy at these sites facilitating spontaneous cat-
+alytic reactions. Moreover, these outcomes highlighted the piv-
+otal role of Ov in fostering the catalytic production of free radical
+species, in addition to utilizing visible light.
+The antibacterial mechanism of CDs@TiO2-x has been further
+studied. Figure 10A–D shows the SEM images of E. coli and S.
+aureus with and without interacting with the CDs@TiO2-x. As
+shown in Figure 10B,D, after 2 h of treatment, a large num-
+ber of CDs@TiO2-x agglomerated and adsorbed on the surface
+of E. coli and S. aureus, and their cells showed diﬀerent degrees
+of shrinkage and pitting, demonstrating CDs@TiO2-x had a cer-
+tain destructive eﬀect on cell walls and cell membranes. The
+TEM images of the E. coli and S. aureus with interacting with
+the CDs@TiO2-x show the damage of bacteria more clearly. Com-
+pared to the blank control groups (Figure 10E,G), a large amount
+of CDs@TiO2-x adsorbed on the surface of bacteria, damaging
+their cell walls and membranes, and entering the interior of
+the bacteria (Figure 10F,H; Figures S16, S17, Supporting In-
+formation). These images visually demonstrate the destructive
+eﬀect of the CDs@TiO2-x on bacteria. The extracellular nucleic
+acids (OD260) content, protein concentration, and alkaline phos-
+phatase (AKP) activity in the bacteria-CDs@TiO2-x mixture were
+measured after 2 h of treatment to further investigate the changes
+in cell walls and cell membranes permeability (Figure 10I–K).
+AKP is a protease that exists between the cell membrane and
+the cell wall. It is almost impossible to pass through the cell
+wall of healthy bacteria and only leaks out when the cell wall
+is damaged.[48] Therefore, AKP activity can be used to indicate
+the degree of cell wall damage. Compared with the pure bacte-
+rial control groups, the extracellular nucleic acid content, protein
+content, and AKP activity of the CDs@TiO2-x groups were signiﬁ-
+cantly increased after 2 h of treatment, proving CDs@TiO2-x dam-
+aged the cell walls and cell membranes of bacteria and made their
+contents leak to kill bacteria. In addition, 𝛽-galactosidase activity
+of E. coli was measured to characterize the changes in cell mem-
+branes permeability (Figure S18, Supporting Information).[49] Af-
+ter treatment, the activity of 𝛽-galactosidase on the bacterial cell
+membranes decreased signiﬁcantly, indicating that the perme-
+ability of the cell membranes increased, which was conducive to
+the further entry of CDs@TiO2-x and ROS into the bacteria. In or-
+der to research the role of ROS in the antibacterial process, super-
+oxide dismutase (SOD) activity, catalase (CAT) activity, and mal-
+ondialdehyde (MDA) content were measured after 1 h of treat-
+ment (Figure 10L–N). SOD and CAT are enzymes for bacteria
+to resist oxidative stress, which can scavenge free radicals and in-
+hibit the reactive proliferation of free radicals in bacteria.[48] MDA
+is one of the products of lipid peroxidation, and its content can
+be used to evaluate the degree of oxidative damage and the oxida-
+tive damage state of cells.[39b] As shown in Figure 10L–N, SOD
+activity, CAT activity, and MDA content in the material groups
+increased signiﬁcantly compared with the control groups, indi-
+cating that the bacteria produced oxidative stress reaction and
+oxidative damage.
+Based on the above analysis, the antibacterial mechanism of
+CDs@TiO2-x could be summarized as follows (Figure 11). Ini-
+tially, the surface of CDs@TiO2-x exhibited a positive potential,
+facilitating its electrostatic adsorption onto the negatively charged
+bacteria, which altered the potential diﬀerence across the bac-
+terial cell membranes, thereby aﬀecting the normal function of
+membrane ion channels, disrupting ion homeostasis, and ulti-
+mately leading to cell membrane damage. Furthermore, a com-
+bination of CDs@TiO2-x and bacteria allowed the Ov present on
+the TiO2-x surface to eﬀectively act as electron acceptors, attract-
+ing active electrons from the normal respiratory chain of bacteria.
+This event triggered extracellular electron transfer (EET) and in-
+terfered with the regular functioning of the cell membranes.[50]
+CDs could also disrupt the physiological activities of transmem-
+brane proteins such as channels, porins, or receptors, thereby in-
+terfering with proton pools or electron transport along the res-
+piratory chain.[24] Simultaneously, after being excited by visible
+light, CDs@TiO2-x generated photogenerated e−and h+, follow-
+ing the pattern of direct z-scheme heterojunction, they reacted
+with O2 and H2O to produce ROS, which could also attack bacte-
+rial cell walls and membranes. These processes led to the destruc-
+tion of bacterial cell walls and membranes, resulting in content
+leakage and facilitating the inﬂux of CDs@TiO2-x and ROS into
+the bacteria. After internalizing within the bacteria, CDs@TiO2-x
+Adv. Funct. Mater. 2024, 34, 2401540
+© 2024 Wiley-VCH GmbH
+2401540 (14 of 19)
+ 16163028, 2024, 32, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202401540 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 9. A) 8 Ti atoms used for calculating catalytic sites. B) Free energy diagram at the 8 catalytic sites of catalysis of H2O. C) Free energy diagram
+at the optimal catalytic site (site 6) of catalysis of O2. D) Structures of H2O adsorbed on the 8 Ti atoms. E) Structures and adsorption energy of O2
+adsorbed on the 8 Ti atoms.
+continuously produced more ROS, inducing oxidative stress and
+damage to the bacteria, disrupting their normal nucleic acid, pro-
+tein, and lipid metabolism, and ultimately leading to bacterial
+death.
+3. Conclusion
+Direct Z-scheme xylan-based CDs@TiO2-x nanocomposites were
+prepared using a facile and simple hydrothermal method for the
+ﬁrst time. CDs@TiO2-x exhibited signiﬁcantly enhanced capabil-
+ities in dye degradation and antibacterial performance under vis-
+ible light irradiation. Results have shown that the introduction of
+oxygen vacancies (OV) and Ti3+ directly help TiO2-x absorb visi-
+ble light; Ov, the positively charged surface groups, and charges
+helped CDs@TiO2-x more eﬃciently attach to the bacterial and
+trigger extracellular electron transfer (EET); And the formation of
+direct Z-scheme heterojunction resulted in an increase in holes
+(h+) and reactive oxygen species (ROS) production. The photo-
+catalytic degradation process of CDs@TiO2-x mainly involves N-
+deethylation, chromophores cleavage, and mineralization. And
+Adv. Funct. Mater. 2024, 34, 2401540
+© 2024 Wiley-VCH GmbH
+2401540 (15 of 19)
+ 16163028, 2024, 32, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202401540 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 10. SEM images of E. coli and S. aureus without A,C) and with B,D) the treatment of CDs@TiO2-x. TEM images of E. coli and S. aureus without
+E,G) and without F,H) the treatment of CDs@TiO2-x. I–N) OD260, changes in Abs corresponding to protein leakage, AKP activity, SOD activity, CAT
+activity and MDA content of E. coli and S. aureus with and without the treatment of CDs@TiO2-x.
+the antibacterial process involves the processes of adsorption and
+disruption of cell membranes, subsequent leakage of contents,
+and oxidation of bacterial-related substances.
+4. Experimental Section
+Chemicals and Reagents:
+Titanium oxide (anatase, 99.8%) and sodium
+borohydride (98%) were obtained from Aladdin Biochemical Technology
+Co., Ltd (Shanghai, China). Xylan from corncob (90%), thiourea (99%),
+methylene blue (≥98%), methyl orange (98%), rhodamine B (AR) were ob-
+tained from Macklin Biochemical Technology Co., Ltd (Shanghai, China).
+E. coli (ATCC25922) and S. aureus (ATCC6538) were obtained from the
+Guangdong Institute of Microbiology (Guangzhou, China). BCA protein,
+alkaline phosphatase (AKP), superoxide dismutase (SOD), catalase (CAT),
+malondialdehyde (MDA), and 𝛽-galactosidase assay kits were purchased
+from Biyuntian Biotechnology Co., Ltd (Shanghai, China). For all experi-
+ments, Milli-Q grade water was used.
+Preparation
+of
+TiO2-x:
+For
+the
+preparation
+of
+oxygen-deﬁcient
+TiO2−x, TiO2 (1 g) and NaBH4 (0.5 g) were mixed and grinded
+for 10 min. After grinding, the mixture was transferred to a tube
+furnace and heated to 350 °C (3.75 °C min−1) and kept for 1 h in the N2
+atmosphere. The obtained dark blue product was soaked in ultrapure
+Adv. Funct. Mater. 2024, 34, 2401540
+© 2024 Wiley-VCH GmbH
+2401540 (16 of 19)
+ 16163028, 2024, 32, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202401540 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+Figure 11. The antibacterial mechanism of CDs@TiO2-x.
+water overnight, then repeatedly centrifuged and washed with ultrapure
+water until the pH < 7. After drying in a 60 °C oven, the dark bule TiO2−x
+is obtained.
+Preparation of CDs:
+CDs were synthesized by a solvent-free method.
+Brieﬂy, 1 g of xylan and 1.0 g of thiourea were mixed and grinded for 10 min.
+The mixture was transferred into a 20 mL of Teﬂon-lined stainless-steel
+autoclave for heating 10 h at 180 °C. After the obtained carbonized powder
+is fully dissolved in ultrapure water, it is dialyzed in a cellulose dialysis bag
+with a molecular weight cutoﬀof 100 Da in a dark place for 3 days, the
+water is changed twice a day to remove the salt and impurities inside.
+The puriﬁed solution is evaporated and concentrated at 65 °C, and then
+freeze–dried to obtain the CDs powder.
+Preparation of CDs@TiO2-x:
+For the preparation of CDs@TiO2-x,
+15 mg of TiO2-x was dispersed in 15 ml of CDs solution (1 mg/ml). After
+being sonicated for 10 min and stirred for 2 h, the mixture was transferred
+into a 20 mL of Teﬂon-lined stainless-steel autoclave for heating 4 h at
+150 °C. The obtained mixture is centrifuged and the solid part is dried to
+obtain CDs@TiO2-x.
+Characterization Methods:
+Transmission electron microscopy (TEM)
+images, high-resolution TEM (HRTEM) images, and energy dispersive
+spectroscopy (EDS) elemental mappings were acquired on a JEM-2100F
+electron microscope. X-ray diﬀraction (XRD) analysis was performed by
+a Bruker D8 Advance diﬀractometer to step scan the diﬀraction angles
+(2𝜃) from 5° to 90°. X-ray photoelectron spectroscopy (XPS) analysis was
+obtained by a Thermo Scientiﬁc NEXSA spectrometer equipped with Al
+K𝛼radiation under an ultrahigh vacuum. Ultraviolet–visible diﬀuse re-
+ﬂectance spectrums (UV–vis DRS) were recorded on a Shimadzu UV2600i
+apparatus. UV–vis spectrums (UV–vis) were recorded on a Shimadzu UV-
+1800 apparatus. Raman spectrums were recorded on the Horiba Jobin
+Yvon LabRAM Aramis. The electron paramagnetic resonance (EPR) mea-
+surements were performed using a spectrometer (Bruker EMX PLUS,
+Germany). Fluorescence (FL) spectrums were detected by a Hitachi F-
+7100 ﬂuorescence spectrophotometer using an Xe lamp as an excitation
+source. Fourier-transform infrared (FTIR) spectrums were recognized with
+a Thermo Fisher Scientiﬁc Nicolet IS50 FTIR spectrometer. Zeta poten-
+tials were measured by a Malvern Panalytical zetasizer. In situ X-ray pho-
+toelectron spectroscopy (in situ XPS) analysis was obtained by a PHI5000
+VersaprobeIII XPS spectrometer equipped with Al K𝛼radiation under ul-
+trahigh vacuum. Scanning electron microscopy (SEM) images were ac-
+quired on a Zeiss Merlin electron microscope after sprayed with a thin gold
+layer.
+Photocatalytic Reactions:
+Typically, 4 mL of dyes aqueous solution
+(20 mg/L) and materials (4 mg) were added into a 10 mL quartz reactor.
+The reaction mixture was ﬁrst ultrasonicated for 5 min and then stirred
+under 500 rpm for another 30 min in the dark, which allowed a desorp-
+tion equilibrium between materials and reactant. Then the mixture was
+added to a 10 mL transparent centrifuge tube and performed photocat-
+alytic degradation under the light source. In the laboratory, a Xe lamp (cut
+the ultraviolet band with a ﬁlter > 420 nm) from Beijing China Education
+Au-light Technology Co., Ltd. was used as a light source. The lamp was
+ﬁxed vertically about 15 cm above the liquid surface (about 60 mW cm−2).
+In the natural environment degradation experiments, centrifuge tubes
+containing mixtures are placed directly on the ground with sunlight. Cen-
+trifuge at regular intervals and test the absorbance of the supernatant at a
+speciﬁc wavelength: MB: 664 nm, MO: 463 nm, RhB: 554 nm. The degra-
+dation rate of dye was calculated by Equation (1):
+Degradation rate (%) = Abs (t0) −Abs (tx)
+Abs (t0)
+(1)
+where Abs (t0) is the absorbance of the corresponding wavelength of the
+dye after stirring for 30 min in the dark; Abs (tx) is the absorbance of the
+corresponding wavelength of the dye after stirring for a certain time (tx)
+under the light.
+Liquid chromatography-mass spectrometry (LC-MS) analysis: To iden-
+tify the degradation pathway during the photocatalytic process of MB,
+MO, and RhB, samples were analyzed by Ultimate 3000 UHPLC-Q Ex-
+active (Thermo Scientiﬁc, US). An Atlantis T3 column (100 × 3.0 mm,
+particle size 3.0 μm) was used for the separation of intermediates at
+30 °C. The ﬂow rate of mobile phase was 0.4 mL mi−1n. For all three
+dyes, the mobile phase included (A) 0.1% formic acid in ultrapure wa-
+ter and (B) acetonitrile. The following gradient of mobile phase was
+adopted for MB: 0–2 min 90% A and 10% B, 2–10 min 90%−10%
+A and 10–90% B, 10–15 min 10%−40% A and 90-60% B, 15–17 min
+40%−90% A and 60%−10% B, 17–20 min 90% A and 10% B; MO:
+0–2 min 70% A and 30% B, 2–10 min 70%−0% A and 30–100%
+B, 10–15 min 100% B, 15–17 min 0%−70%A and 100–30% B, 17–
+20 min 70% A and 30% B; RhB: 0–2 min 90% A and 10% B, 2–
+10 min 90%−0% A and 10–100% B, 10–15 min 100% B, 15–17 min
+0%−90%A and 100–10% B, 17–20 min 90% A and 10% B. The mass spec-
+trometry was operated with electrospray ionization (ESI) in positive ion
+mode for MB and RhB and in negative ion mode for MO (Thermo Sci-
+entiﬁc Q Exactive). The capillary voltage was 3.8 kV for MB and RhB and
+3.0 kV for MO. The mass range was 50–400 m z−1 for MB and MO, and
+50–600 m z−1 for RhB. The capillary temperature is 320 °C, and the auxil-
+iary gas temperature is 300 °C.
+Antibacterial Activity Assays:
+The antibacterial eﬀect was evaluated
+by mixing each strain (1 × 105 to 1 × 106 CFU mL−1) with TiO2-x, CDs,
+and CDs@TiO2-x (1 mg mL−1) in normal saline. The mixture was placed
+in a centrifuge tube and irradiated under a Xe lamp light source (cut the
+ultraviolet band with a ﬁlter > 420 nm), which was ﬁxed vertically about
+15 cm above the liquid surface. An air conditioning was used to maintain
+the temperature around 20 °C. After each speciﬁc time of illumination,
+100 μL of each bacterial suspension was taken out and diluted to a certain
+multiple, 100 μL of each dilution solution of appropriate concentration
+was spread on Luria Bertani (LB) agar plates and incubated at 37 °C for
+a certain period of time (E. coli: 24 h, S. aureus: 36 h). The number of
+colonies on the plate (N) was counted to calculate the antibacterial rate,
+which was calculated by Equation (2):
+Antibacterial rate (%) = N (control, t) −N (material, t)
+N (control, t)
+(2)
+Adv. Funct. Mater. 2024, 34, 2401540
+© 2024 Wiley-VCH GmbH
+2401540 (17 of 19)
+ 16163028, 2024, 32, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202401540 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+where N(control, t) is the number of bacterial colonies on the
+plate after coating with pure bacterial solution under light for a
+certain period of time (t); N(material, t) is the number of bac-
+terial colonies on the plate coating with the mixture of bacteria
+and materials after cultivating under light for a certain period of
+time (t).
+Electrochemical Measurements:
+A three-electrode system was used to
+measure the electrochemical curves of CDs, TiO2-x, and CDs@TiO2-x us-
+ing a CHI 660E electrochemical workstation (Chenhua Instrument, Shang-
+hai, China). Glassy carbon (GC) electrodes (diameter 2 mm) coated with
+materials, platinum sheets, and saturated calomel electrode (SCE) were
+used as working electrodes, counter electrodes, and reference electrodes,
+respectively. 0.5 m KCl aqueous solution is used as the supporting elec-
+trolyte.
+Preparation of Working Electrode:
+A sample of 5 mg was added into
+500 μL of water, and then 50 μL of 5 wt% Naﬁon solution was added as
+adhesive. After ultrasonic dispersion for 30 min, a uniform liquid was ob-
+tained. A 10 μL of dispersant was dropped onto a 2 mm diameter glassy
+carbon electrode, and the working electrode was obtained after natural
+drying.
+The potential versus the normal hydrogen electrode (NHE) can be cal-
+culated according to the following Equation (3), in which E0
+SCE is about
+0.197 V at 25 °C.
+ENHE = ESCE + 0.059∗pH −E0
+SCE
+(3)
+where ENHE is the potential versus the normal hydrogen electrode (NHE);
+ESCE is the potential versus the saturated calomel electrode (SCE).
+Calculation Method:
+The spin-polarized density functional theory
+(DFT) calculations were carried out in the Vienna ab initio simulation
+package (VASP) based on the plane-wave basis sets with the projector
+augmented-wave method. The exchange-correlation potential’s treatment
+incorporates the Generalized Gradient Approximation (GGA) with PBE
+parametrization. The calculation was performed with an energy cutoﬀof
+500 eV, and the Brillouin-zone integration was accomplished using a Γ-
+centered Monkhorst-Pack mesh of 3 × 3 × 1 of TiO2-x and CDs@TiO2-x
+surfaces by VASPKIT. For structure relaxation, the maximum force on each
+atom was constrained to be below 0.03 eV Å−1 with a converged energy
+standard of 10−5 eV. The van der Waals correction of Grimme’s DFT-D3
+model was also used in the calculations. To prevent periodic interactions
+for interface structures, a large vacuum layer of at least 20 Å was used
+along the c-direction perpendicular to the interface.
+Antibacterial Mechanisms:
+Each strain was treated with CDs@TiO2-x
+(1 mg mL−1) or pure water for 2 h, the mixtures were ﬁrst ﬁxed with a
+2.5% (volume fraction) glutaraldehyde aqueous solution for 2 h, followed
+by centrifugation and two washes with ultrapure water. Then they were
+dehydrated sequentially using an aqueous solution of alcohol with a con-
+centration gradient ranging from 50% to 100% (in increments of 10%).
+Each solvent replacement was accompanied by thorough shaking and a
+10 min stand. Finally, the bacteria dispersed in anhydrous ethanol were
+dripped onto a silicon wafer at room temperature for drying and observed
+using a scanning electron microscope.
+For the TEM images of the bacteria, the mixtures were ﬁxed with a 2.5%
+(volume fraction) glutaraldehyde aqueous solution for 12 h. Then they
+were ﬁxed with a mixture of 1% osmic acid and 2% potassium ferrocyanide
+for 2 h. The samples were then rinsed four times with water for 15 min each
+time. Sequential dehydration was carried out using acetone solutions with
+concentrations of 30%, 50%, 70%, 80%, and 95%, followed by two rounds
+of dehydration with pure acetone, for 20 min each time. Embedding was
+then performed using a mixture of acetone and the embedding agent in a
+ratio of 3:1 for 1 h, and then in a ratio of 1:3 for 3 h. Subsequently, the pure
+embedding agent was used for overnight embedding at 37 °C. The sam-
+ples were then poured into an embedding plate, which was kept at 60 °C
+for 48 h to allow for solidiﬁcation into a resin block. The resin block was
+cut into 70 mm slices, and the pieces were removed using copper mesh.
+After being dried and stained with uranium acetate and citric acid 10 min,
+the TEM images could be taken.
+Each strain was treated with CDs@TiO2-x (1 mg/mL) or pure water
+for certain time (OD260, protein, AKP, MDA, 𝛽-galactosidase: 2 h, SOD,
+CAT: 1 h). After treating, BCA protein, alkaline phosphatase (AKP), super-
+oxide dismutase (SOD), catalase (CAT), malondialdehyde (MDA), and 𝛽-
+galactosidase assay kits were used and the changes in absorbance were
+used to reﬂect the concentration of related substances.
+Supporting Information
+Supporting Information is available from the Wiley Online Library or from
+the author.
+Acknowledgements
+S.C. and J.C. contributed equally to this work. This work was ﬁnancially
+supported by Science and Technology Planning Project of Guangzhou City
+(Nos. 2023B03J1332, 202201010178 and 202201010151), National Natu-
+ral Science Foundation of China (No. 22208114), China Postdoctoral Sci-
+ence Foundation (2022M721195) and Fundamental Research Fund from
+the State Key Laboratory of NBC Protection for Civilian (SKLNBC 2022-03),
+China.
+Conﬂict of Interest
+The authors declare no conﬂict of interest.
+Data Availability Statement
+The data that support the ﬁndings of this study are available from the cor-
+responding author upon reasonable request.
+Keywords
+antibacterial, direct Z-scheme, hydrogenated TiO2, photocatalytic degra-
+dation, xylan-based carbon dots
+Received: January 26, 2024
+Revised: April 11, 2024
+Published online: May 13, 2024
+[1] a) S. Chen, J. Zhang, C. Zhang, Q. Yue, Y. Li, C. Li, Desalination. 2010,
+252, 149; b) S. Zhang, H. Yang, M. Wang, D. Mantovani, K. Yang, F.
+Witte, L. Tan, B. Yue, X. Qu, The Innovation 2023, 4, 100503.
+[2] C. Gao, J. Wang, H. Xu, Y. Xiong, Chem. Soc. Rev. 2017, 46, 2799.
+[3] J. Schneider, M. Matsuoka, M. Takeuchi, J. Zhang, Y. Horiuchi, M.
+Anpo, D. W. Bahnemann, Chem. Rev. 2014, 114, 9919.
+[4] G. Rajender, J. Kumar, P. Giri, Appl. Catal., B. 2018, 224, 960.
+[5] a) Y. Ren, Y. Han, Z. Li, X. Liu, S. Zhu, Y. Liang, K. W. K. Yeung, S.
+Wu, Bioact Mater. 2020, 5, 201; b) B. Xiao, C. Shen, Z. Luo, D. Li, X.
+Kuang, D. Wang, B. Zi, R. Yan, T. Lv, T. Zhou, Chem. Eng. J. 2023, 468,
+143650.
+[6] H. Zhao, Z. Liang, X. Liu, P. Qiu, H. Cui, J. Tian, Chin. J. Catal. 2020,
+41, 333.
+[7] a) B. Xia, B. He, J. Zhang, L. Li, Y. Zhang, J. Yu, J. Ran, S. Z. Qiao,
+Adv. Energy Mater. 2022, 12, 2201449; b) H. Wu, Z. Hu, R. Liang, O.
+V. Nkwachukwu, O. A. Arotiba, M. Zhou, Appl. Catal., B. 2023, 321,
+122053.
+[8] W. Fang, M. Xing, J. Zhang, J. Photochem. Photobiol., C. 2017, 32, 21.
+Adv. Funct. Mater. 2024, 34, 2401540
+© 2024 Wiley-VCH GmbH
+2401540 (18 of 19)
+ 16163028, 2024, 32, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202401540 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.afm-journal.de
+[9] a) J. Liu, W. Zhu, S. Yu, X. Yan, Carbon. 2014, 79, 369; b) B. Geng, S.
+Xu, P. Li, X. Li, F. Fang, D. Pan, L. Shen, Small. 2022, 18, 2103528.
+[10] X. Yu, J. Liu, Y. Yu, S. Zuo, B. Li, Carbon. 2014, 68, 718.
+[11] Y. Jin, W. Tang, J. Wang, F. Ren, Z. Chen, Z. Sun, P.-G. Ren, J. Alloys
+Compd. 2023, 932, 167627.
+[12] Q. Xu, L. Zhang, J. Yu, S. Wageh, A. A. Al-Ghamdi, M. Jaroniec, Mater.
+Today. 2018, 21, 1042.
+[13] J. Gan, L. Chen, Z. Chen, J. Zhang, W. Yu, C. Huang, Y. Wu, K. Zhang,
+Small. 2023, 19, 2304066.
+[14] L. Jiang, H. Ding, M. Xu, X. Hu, S. Li, M. Zhang, Q. Zhang, Q. Wang,
+S. Lu, Y. Tian, Small. 2020, 16, 2000680.
+[15] H. Tan, Z. Zhao, M. Niu, C. Mao, D. Cao, D. Cheng, P. Feng, Z. Sun,
+Nanoscale. 2014, 6, 10216.
+[16] Q. Zou, M. Wang, Y. Li, J. Exp. Nanosci. 2010, 5, 319.
+[17] S. Chen, Y. Xiao, Y. Wang, Z. Hu, H. Zhao, W. Xie, Nanomaterials.
+2018, 8, 245.
+[18] T. Niessink, J. Ringoot, C. Otto, M. Janssen, T. L. Jansen, Arthritis &
+Rheumatology. 2022, 74, 1069.
+[19] H. Zhang, T. Ji, Y. Liu, J. Cai, J. Phys. Chem. C. 2008, 112, 8604.
+[20] J. Wang, Q. Zhang, S. Yin, T. Sato, F. Saito, J. Phys. Chem. Solids. 2007,
+68, 189.
+[21] a) J. C. Parker, R. W. Siegel, Appl. Phys. Lett. 1990, 57, 943; b) H.
+Zhang, W. Huang, R. Lin, Y. Wang, B. Long, Q. Hu, Y. Wu, J. Alloys
+Compd. 2021, 860, 157913.
+[22] H. Liu, H. Ma, X. Li, W. Li, M. Wu, X. Bao, Chemosphere. 2003, 50, 39.
+[23] X. Li, L. Yan, J. Si, H. Xu, Y. Xu, RSC Adv. 2019, 9, 12732.
+[24] Z. Wang, L. Sheng, X. Yang, J. Sun, Y. Ye, S. Geng, D. Ning, J. Zheng,
+M. Fan, Y. Zhang, Sustainable Mater. Technol. 2023, 36, e00584.
+[25] F. Xu, K. Meng, B. Cheng, S. Wang, J. Xu, J. Yu, Nat. Commun. 2020,
+11, 4613.
+[26] R. Yu, S. Liang, Y. Ru, L. Li, Z. Wang, J. Chen, L. Chen, Nanoscale Res.
+Lett. 2022, 17, 32.
+[27] W. Zhou, J. Zhuang, W. Li, C. Hu, B. Lei, Y. Liu, J. Mater. Chem. C.
+2017, 5, 8014.
+[28] L. Hu, Y. Sun, Y. Zhou, L. Bai, Y. Zhang, M. Han, H. Huang, Y. Liu, Z.
+Kang, Inorg. Chem. Front. 2017, 4, 946.
+[29] M. Wu, J. Li, Y. Wu, X. Gong, M. Wu, Small. 2023, 19, 2302764.
+[30] a) X. Miao, X. Yan, D. Qu, D. Li, F. F. Tao, Z. Sun, ACS Appl. Mater.
+Interfaces. 2017, 9, 18549; b) Z. Wei, B. Wang, Y. Liu, Z. Liu, H. Zhang,
+S. Zhang, J. Chang, S. Lu, New J. Chem. 2019, 43, 718.
+[31] S. Gu, C.-T. Hsieh, Y.-Y. Tsai, Y. Ashraf Gandomi, S. Yeom, K. D. Kihm,
+C.-C. Fu, R.-S. Juang, ACS Appl. Nano Mater. 2019, 2, 790.
+[32] Y. Rong, H.-Z. Chen, G. Wu, M. Wang, Mater. Chem. Phys. 2005, 91,
+370.
+[33] Q. Zhang, H. Zhang, B. Gu, Q. Tang, Q. Cao, W. Fang, Appl. Catal., B.
+2023, 320, 122006.
+[34] W. Koppenol, Nature. 1976, 262, 420.
+[35] M. Khajeh, A. R. Oveisi, A. Barkhordar, M. Rakhshanipour, H.
+Sargazi-Avval, J Nanostructure Chem. 2022, 12, 105.
+[36] L. Wang, J. Guan, H. Han, M. Yao, J. Kang, M. Peng, D. Wang, J. Xu,
+J. Hao, Appl. Catal., B. 2022, 306, 121130.
+[37] a) C. H. Nguyen, C.-C. Fu, R.-S. Juang, J. Cleaner Prod. 2018, 202, 413;
+b) T. B. Wermuth, S. Arcaro, J. Venturini, T. M. H. Ribeiro, A. d. A. L.
+Rodriguez, E. L. Machado, T. F. de Oliveira, S. E. F. de Oliveira, M. N.
+Baibich, C. P. Bergmann, Ceram. Int. 2019, 45, 24137.
+[38] W. B. Zhao, K. K. Liu, Y. Wang, F. K. Li, R. Guo, S. Y. Song, C. X. Shan,
+Adv. Healthcare Mater. 2023, 12, 2300324.
+[39] a) L. Pasquina-Lemonche, J. Burns, R. Turner, S. Kumar, R. Tank, N.
+Mullin, J. Wilson, B. Chakrabarti, P. Bullough, S. Foster, Nature. 2020,
+582, 294; b) J. Zhang, P. Su, H. Chen, M. Qiao, B. Yang, X. Zhao,
+Chem. Eng. J. 2023, 451, 138879.
+[40] P. H. Clarke, M. Lilly, Nature. 1962, 195, 516.
+[41] L. Collado, M. Gomez-Mendoza, M. García-Tecedor, F. E. Oropeza,
+A. Reynal, J. R. Durrant, D. P. Serrano, Appl. Catal., B. 2023, 324,
+122206.
+[42] M. Ilkaeva, I. Krivtsov, E. García-López, G. Marcì, O. Khainakova,
+J. García, L. Palmisano, E. Díaz, S. Ordóñez, J. Catal. 2018, 359,
+212.
+[43] F. Azeez, E. Al-Hetlani, M. Arafa, Y. Abdelmonem, A. A. Nazeer, M.
+O. Amin, M. Madkour, Sci. Rep. 2018, 8, 7104.
+[44] M. S. Zaini, J. Y. C. Liew, S. Paiman, T. S. Tee, M. A. Kamarudin, J
+Fluoresc. 2023, https://doi.org/10.1007/s10895-023-03528-1.
+[45] F. Cieplik, D. Deng, W. Crielaard, W. Buchalla, E. Hellwig, A. Al-
+Ahmad, T. Maisch, Crit. Rev. Microbiol. 2018, 44, 571.
+[46] N. Kumar, N. S. Chauhan, A. Mittal, S. Sharma, BioMetals. 2018, 31,
+147.
+[47] Y. Zhao, X. Linghu, Y. Shu, J. Zhang, Z. Chen, Y. Wu, D. Shan, B. Wang,
+J. Environ. Chem. Eng. 2022, 10, 108077.
+[48] Y. Lin, X. Tang, L. Xu, S. Wang, Food Control. 2019, 106, 106675.
+[49] M. ˇCierna, M. Naumowicz, L. Bírošová, J. Krahulec, R. Sokolová, V.
+Kolivoška, T. Sebechlebská, F. Kielar, M. Gál, J. Electroanal. Chem.
+2020, 857, 113761.
+[50] Z. Li, E. Wang, Y. Zhang, R. Luo, Y. Gai, H. Ouyang, Y. Deng, X. Zhou,
+Z. Li, H. Feng, Nano Today. 2023, 50, 101826.
+Adv. Funct. Mater. 2024, 34, 2401540
+© 2024 Wiley-VCH GmbH
+2401540 (19 of 19)
+ 16163028, 2024, 32, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.202401540 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

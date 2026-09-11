@@ -1,0 +1,3014 @@
+Physics of Life Reviews 52 (2025) 207–244
+Available online 10 January 2025
+1571-0645/© 2025 Elsevier B.V. All rights are reserved, including those for text and data mining, AI training, and similar technologies.
+Contents lists available at ScienceDirect
+Physics of Life Reviews
+journal homepage: www.elsevier.com/locate/plrev
+Review
+Mathematical models on Alzheimer’s disease and its treatment: 
+A review
+Mitali Maji, Subhas Khajanchi
+,∗
+Department of Mathematics, Presidency University, 86/1 College Street, Kolkata 700073, India
+A R T I C L E 
+I N F O 
+A B S T R A C T 
+Communicated by Sergei Petrovskii
+Keywords:
+Mathematical modeling
+Amyloid beta protein
+Tau protein
+Microglia
+Cytokines
+Alzheimer’s disease is a gradually advancing neurodegenerative disease. According to the report 
+by ``World Health Organization (WHO)'', there are over 55 million individuals currently living 
+with Alzheimer’s disease and other dementia globally, and the number of suﬀerers is increasing 
+every day. In absence of eﬀective cures and preventive measures, this number is predicted to triple 
+by 2050. The disease’s origin is still unclear, and also no such treatment is available for eradicating 
+the disease. Based on the crucial factors that are connected to the disease’s progression, the 
+authors developed several types of mathematical models. We review such mathematical models 
+that are utilized to better understand the pathophysiology of Alzheimer’s disease. Section-wise, we 
+categorize the mathematical models in terms of diﬀerent components that might be responsible for 
+Alzheimer’s disease. We explain the mathematical models with their descriptions and respective 
+conclusions. In addition to mathematical models, we concentrate on biological aspects of the 
+disease and possible therapeutic targets. We explore the disease’s biological basis primarily to 
+understand how proteins, glial cells, cytokines, genes, calcium signaling and oxidative stress 
+contribute to the disease. We go through several treatment targets that might stop the progression 
+of the disease or at least slow it down. We present a table that summarizes the mathematical 
+models in terms of their formalisms, highlighting key components and important remarks.
+1. Introduction
+Alzheimer’s disease (AD) is a complex neurodegenerative illness that poses a signiﬁcant global health challenge in the 21st century. 
+Millions of individuals worldwide, including large populations in countries like the United States, India and China, are aﬀected by 
+AD. The U.S. population could see a surge in the number of individuals aged 65 and older with AD, potentially reaching 13.8 
+million by the year 2060 [1,4]. As a result, AD has become an important area of research and is capturing the interest of scientists 
+and healthcare professionals. The disease was first ident­fied by Dr. Alois Alzheimer in the year 1906, and according to his name, 
+the disease became known as Alzheimer’s disease. In this neurodegenerative disease, mainly the elements of the central nervous 
+system stop working, leading to progressive memory loss, cognitive decline and impaired reasoning. AD symptoms include confusion, 
+diﬃculty with language, impaired reasoning, mood swings and disorientation. In AD, neurons suﬀer progressive damage, leading to 
+impaired synaptic communication and eventual cell death. This disruption aﬀects cognitive function and memory.
+Despite years of research, the exact causes of the progression of AD remain unknown. However, scientists have made signiﬁcant 
+progress in understanding the complex interaction of genetic, environmental and lifestyle factors that contribute to the development 
+* Corresponding author.
+E-mail address: subhas.maths@presiuniv.ac.in (S. Khajanchi).
+https://doi.org/10.1016/j.plrev.2025.01.004
+Received 3 January 2025; Accepted 8 January 2025 
+
+Physics of Life Reviews 52 (2025) 207–244
+208
+M. Maji and S. Khajanchi 
+and progression of AD. It is also found that changes in the brain and protein abnormalities can also be the cause of disease. AD is 
+characterized by the buildup of two aberrant protein structures in the brain: amyloid beta (A𝛽) plaques and neurofibrillary tangles 
+(NFTs) [20]. Several cardiovascular factors, such as elevated blood pressure, elevated cholesterol levels, obesity, diabetes and smoking, 
+have been linked to a heightened risk of AD [46]. Chronic i­flammation and dysfunction of the immune system have been implicated 
+in the onset of AD [159]. Recent discoveries in genetics, neuroimaging and molecular biology have opened a new path to understand 
+the pathogenic processes involved in the disease, which would improve diagnoses, treatment techniques and future disease preventive 
+measures [86].
+Mathematical models can be used to investigate the disease’s progression and understand its underlying causes. Mathematical 
+modeling in AD’s research can give insights into the disease’s complex connections between various factors. Several studies in the field 
+of AD, have utilized mathematical models to gain insights into the process of abnormal protein accumulation and propagation within 
+the brain, speciﬁcally focusing on proteins like A𝛽and tau (𝜏) [2,38,39,90,95,123,145]. Mathematical models have the capability to 
+replicate the processes of these protein’s production, aggregation and clearance, and also can investigate how they contribute to the 
+disease progression. They can also forecast the long-term results of various therapeutic options by simulating the impact of therapies 
+on disease development. This can help researchers optimize trial designs, evaluate treatment eﬀects and i­fluence drug development 
+decision-making.
+Started with discovering the biomarker components in the twentieth century, AD research has come far away. Besides A𝛽plaque 
+and NFTs, many other components in the brain, along with factors like age, lifestyle, environment and genetics, have been incorporated 
+into the responsible factors. This review aims to present an analysis of the current state of AD research insights from both mathematical 
+modeling and crucial i­fluencing factors. By reviewing the existing research papers, publications and biological review articles, we 
+explore the nature of AD, its molecular pathology, risk factors, potential biomarkers and emerging therapeutic interventions in this 
+paper. For this intention, we analyze each paper that is referenced in this article, including the model descriptions and its conclusions.
+With the increasing global prevalence of AD, a comprehensive literature review on this becomes crucial. There is still a shortage 
+of useful treatments and cures. This review serves as an idea to develop new approaches in theoretical or mathematical frameworks 
+and provide a new research direction. It conducts a comprehensive and critical study of the current status of research findings and 
+assists in identifying gaps or inconsistencies in research. This thorough review not only gives the biological or mathematical overview 
+of the disease but also oﬀers an idea of novel approaches which can be used to diagnose or treatment of AD.
+In this review article, we analyze the existing mathematical models related to the development of AD. Section 2 discusses the 
+biological background of AD, that is, we investigate how proteins, glial cells, cytokines, genes, calcium signaling and oxidative stress 
+contribute to the disease. Various mathematical models that incorporate essential factors such as A𝛽proteins, 𝜏proteins, glial cells, 
+etc., have been illustrated segment-wise in Section 3. In Section 4, we discuss the articles that help us to understand the therapeutic 
+interventions for eradicating AD. In the end, we wrap up our discussion in Section 5.
+2. Contributory biological factors of AD
+There are many biological components that dedicate to AD. To understand this complex disease or to form a biologically relevant 
+mathematical model for AD, we have to know about the crucial biological factors related to AD. Some of such biological anticipated 
+factors have been r­flected in Fig. 1. Here, we discuss about the contributions of proteins, glial cells, cytokines, genes, calcium 
+signaling and oxidative stress in the disease.
+Proteins: Proteins have a crucial role in the advancement and evolution of AD. There are two main proteins that are associated 
+with AD, namely A𝛽protein and 𝜏protein. A𝛽protein accumulation in brain tissue has become a well-studied phenomenon in the 
+progression of AD. In a viewpoint of the article [175], the authors assessed research investigating the mechanisms responsible for 
+the buildup of A𝛽peptides and the formation of A𝛽oligomers. A bigger protein, named amyloid precursor protein (APP), is broken 
+down in presence of secretase into smaller fragments called A𝛽protein.
+A𝛽plaques are basically the extracellular deposits of A𝛽peptides. It is believed that these A𝛽plaques has a contribution in the 
+disturbance of communication between neurons, which results in neuronal malfunction and ultimately, cell death [135]. Although 
+the exact processes by which A𝛽protein damages neurons are not fully understood. It is thought that the buildup of these plaques 
+may create oxidative stress and i­flammatory reactions, both of which can be harmful to neurons.
+A𝛽oligomers are small clusters of A𝛽molecules that are thought to be toxic to brain cells and interfere with their normal 
+functioning. They can disrupt synaptic communication, promote i­flammation and cause neuronal damage. Studies say that both 
+A𝛽oligomers and plaques are pathogenic and contribute to AD development [162]. Some research also suggests that soluble A𝛽
+oligomers, rather than plaques, are more directly linked to the neurotoxic eﬀects and cognitive deficits seen in AD [104].
+The stability of oligomers and their role in the context of fibril formation is crucial for understanding the disease. Oligomers 
+are typically stable and do not necessarily polymerize into fibrils directly. Fibrillar oligomers are early forms of fibrils and are on 
+the pathway towards the formation of mature fibrils. Fibrillar oligomers are small, semistable, 𝛽-sheet rich oligomers and they have 
+a tendency to transition into fibrils [160]. Other side, no­-fibrillar oligomers are usually stable and they are often considered off­
+pathway in the aggregation process. According to the study of Vander Zanden et al. [160], no­-fibrillar oligomers are the most toxic, 
+followed by fibrils, with monomers being the least toxic. The latest study revealed that no­-fibrillar oligomers can also convert into 
+ﬁbrillar oligomers, although the conversion rate is very slow [79,117]. A schematic diagram has been given to show this fibrillar and 
+no­-fibrillar pathway of A𝛽aggregation process in Fig. 2.
+
+Physics of Life Reviews 52 (2025) 207–244
+209
+M. Maji and S. Khajanchi 
+Fig. 1. Anticipated factors contributing to the development/progression of AD. 
+Fig. 2. (a) A sigmoidal curve that represents the aggregation process of A𝛽. A𝛽fibril formation kinetics happen in three phases: the lag phase, the growth phase 
+and the plateau phase. The lag phase represents the nucleation process, from monomer to oligomer formation. The growth phase represents the elongation process, 
+from oligomers to protofibril formation. The plateau phase represents the saturation phase; during saturation, mature fibrils are produced from protofibrils. (b) The 
+schematic diagram of A𝛽aggregation procedure in fibrillar and no­-fibrillar pathway. Fibrillar pathway represents monomer to mature fibril formation; No­-fibrillar 
+pathway represents monomer to no­-fibrillar oligomers formation [79,117].
+On the other hand, 𝜏proteins are microtubule-associated proteins that contribute to the stability of the microtubule structure. In 
+AD, 𝜏undergoes abnormal phosphorylation, and it misfolds and aggregates into a twisted tangle inside the neurons, known as NFTs 
+[115]. These tangles interfere with neurons’ normal function and reduce their capacity to communicate and survive.
+Recent research shows that in AD, there is an involvement of a protein called cellular prion (PrP𝐶) protein, which is mainly 
+responsible for prion diseases. PrP𝐶protein can form complexes with A𝛽protein, which leads to AD [85]. Though the involvement 
+of the protein in AD is not fully understood, many mathematical models have been formed based on this concept.
+Glial cells: Studies demonstrate a signiﬁcant connection between glial cells and the progression of AD. Glial cells are neuron­
+supporting cells. Within the central nervous system, four distinct categories of glial cells exist: astrocytes, oligodendrocytes, microglia 
+and ependymal cells. We have already discussed that A𝛽protein accumulation in the brain has become an important phenomenon 
+in the progression of AD. A𝛽plaques activate glial cells, which then eliminate A𝛽[91]. Microglia and astrocytes are the two glial 
+cells that are supposed to be mostly involved in AD. A question arises regarding the potential neuroprotective or neurotoxic roles of 
+microglial cells and astrocytes in AD. Based on genetic and cell biology data, microglia contain defense mechanisms that prevent the 
+harmful accumulation of A𝛽and the onset of AD. But activated microglia can have harmful actions in AD [26,68].
+
+Physics of Life Reviews 52 (2025) 207–244
+210
+M. Maji and S. Khajanchi 
+Fig. 3. The diagram depicts the neuroi­flammatory cascade in AD pathogenesis. The pathway illustrates how pathological hallmarks (A𝛽plaques, NFTs) and cellular 
+damage trigger glial cell activation (microglia and astrocytes). Activated glial cells orchestrate the neuroi­flammatory response through the release of both pro­
+inflammatory and anti-inflammatory cytokines. This i­flammatory response leads to multiple pathological outcomes including blood-brain barrier (BBB) disruption, 
+synaptic damage and neuronal death. The complex interplay between these factors contributes to tissue damage and progressive neurodegeneration in AD.
+Microglia have protective roles in the early stages of AD, their prolonged or excessive activation can become harmful. Microglia 
+can clear A𝛽aggregates through phagocytosis in the early stages of AD and shows the protective nature. In AD, chronic microglial 
+activation can lead to an ongoing i­flammatory response. This persistent i­flammation results in the release of cytokines and ROS 
+that can harm neurons, causing cell death and contributing to disease progression.
+Microglia help in A𝛽plaque formation [148] and contribute to the progression of tauopathy [11]. On the other hand, microglia 
+can be activated by both A𝛽and 𝜏proteins aggregations [41,62]. Moreover, the activation of astrocytes and the production of A𝛽
+are interdependent [57,173]. Astrocytes are closely linked to the buildup of abnormal 𝜏protein forms in tauopathies [137]. But 
+the relationship between them is not fully understood. Oligodendrocytes have a role in initiating and spreading human 𝜏protein 
+within the corpus callosum of wild-type (WT) mice, as indicated by Ferrer et al. [55] in their study. In AD, activated glial cells can 
+compromise the BBB, allowing harmful molecules to enter and exacerbate neuroi­flammation [32]. Consequently, glial cells make a 
+substantial contribution to the advancement of AD.
+Cytokines: Microglial cells serve as the delegates of the immune system within the brain. In AD, the activation of microglia and 
+astrocytes triggers the release of various cytokines, which can either support neuronal health or exacerbate neurodegeneration [164]. 
+Activated microglia have two types: pro-inflammatory microglia and anti-inflammatory microglia [154]. Small proteins called cy­
+tokines are essential for regulating the immune system and cells growth and activity. Although anti-inflammatory microglia promote 
+anti-inflammation and neuroprotection, pro-inflammatory microglia cause i­flammation and neurotoxicity [35]. Cytokines like tu­
+mor necrosis factor-𝛼(TNF-𝛼), interleukin-1𝛽(IL-1𝛽) and interleukin-6 (IL-6), can promote i­flammation, leading to oxidative stress 
+and further neuronal damage. Some cytokines, like interleukin-10 (IL-10) and transforming growth factor-𝛽(TGF-𝛽), have anti­
+inflammatory properties and may help mitigate the damage caused by i­flammation in AD. The connection between i­flammatory 
+cytokines and the risk of AD may help us better understand the pathogenesis of AD. Domingues et al. [50] discussed the function 
+of cytokines and chemokines related to AD. A detailed description is given in a tabular form in that paper about the impact of 
+cytokines and chemokines on A𝛽deposition, A𝛽production and clearance and 𝜏protein production and clearance. The pathway 
+diagram (Fig. 3) demonstrates the central role of activated glial cells in mediating neuroi­flammation through cytokine production, 
+ultimately leading to synaptic dysfunction and neurodegeneration in AD.
+Genes: A gene is a basic unit of heredity. Four genes have been ident­fied as having a role in AD development: the A𝛽protein 
+precursor (APP), presenilin 1, presenilin 2 and the apolipoprotein E (APOE) gene [19]. Based on twin and family research, it is 
+
+Physics of Life Reviews 52 (2025) 207–244
+211
+M. Maji and S. Khajanchi 
+Fig. 4. The diagram illustrates the intricate cellular pathways linking Ca2+ dysregulation to AD pathogenesis. It demonstrates how initial Ca2+ dysregulation triggers 
+multiple pathological cascades: (1) increased A𝛽production leading to plaque formation and a feed-forward loop through calcium-permeable channels, (2) mito­
+chondrial dysfunction resulting in oxidative stress and cytochrome C release, and (3) calcineurin-mediated 𝜏protein dephosphorylation leading to NFTs formation. 
+These pathways converge on neurodegeneration, ultimately contributing to AD development. Color coding indicates related pathological processes: blue for A𝛽-related 
+processes, green for mitochondrial pathways, and purple for 𝜏-related mechanisms.
+widely understood that genetic factors are thought to contribute to a minimum of 80% of AD cases [153]. Among the three alleles of 
+the APOE gene, the 𝜀4 allele stands out as the primary genetic contributor to AD risk. The APOE 𝜀4 gene helps in the accumulation 
+of A𝛽protein [89,107]. On the other side, the 𝜀2 allele of the APOE gene is of protective nature [36]. A recent study conducted by 
+Williams et al. [166], has uncovered the involvement of the APOE gene’s 𝜀3 allele in the phosphorylation of the 𝜏protein.
+Calcium signaling: Calcium signaling assumes a crucial role in facilitating neurotransmitter release, governing synaptic plasticity 
+and enabling eﬀective neuronal communication. Hence, calcium signaling disruption in synapses can impede synaptic transmission 
+which may lead to AD [61]. Disrupted cellular calcium (Ca2+) signaling may enhance the formation of A𝛽plaques and NFTs [158]. 
+Rectifying neuronal Ca2+ dysregulation can open a new path for treating AD. The color-coded pathways in Fig. 4 highlight the distinct 
+but interconnected nature of these calcium-mediated mechanisms, emphasizing how initial Ca2+ dysregulation can propagate through 
+multiple cellular pathways to drive AD progression.
+Oxidative stress: Oxidative stress is also a signiﬁcant factor in the progression of AD. Oxidative stress arises when there exists 
+a disparity between the production of reactive oxygen species (ROS) within cells and the protective antioxidant mechanisms of the 
+body. ROS has the potential to induce cellular dysfunction and even trigger cell death by harming lipids, proteins and deoxyribonucleic 
+acid (DNA) within brain cells, ultimately contributing to the development of AD [60]. The overproduction of ROS can also damage 
+proteins and DNA in the mitochondria, impairing the ability of neurones to produce energy. Aggregation of A𝛽and 𝜏protein is a 
+compensatory reaction to underlying oxidative stress [119]. Oxidative stress i­fluences the ability of A𝛽peptide to aggregate into 
+ﬁbrils, which then lead to plaque formation [29]. It disrupts neural communication and promotes neuroi­flammation. Other hand, 
+oxidative stress contributes to the hyperphosphorylation of 𝜏proteins, which can lead to the formation of NFTs, a hallmark of AD. 
+The authors focused on this factor in forming mathematical models for the progression of AD. Fig. 5 illustrates the interconnected 
+pathways to express how oxidative stress initiates a cascade of cellular damage, promotes A𝛽aggregation and 𝜏phosphorylation, 
+and ultimately leads to neurodegeneration in AD.
+3. Mathematical models
+In this section, we go through numerous mathematical frameworks that are based on the crucial component related to the pro­
+gression of AD. The authors have formulated diﬀerent types of mathematical models depending on complicated biological factors. 
+Authors worked on the aggregation process of A𝛽protein, which helps in the development of AD [2,30,38,39,72,90,106,123,145]. 
+
+Physics of Life Reviews 52 (2025) 207–244
+212
+M. Maji and S. Khajanchi 
+Fig. 5. The Figure illustrates the oxidative stress-mediated pathways contributing to AD pathogenesis. The diagram shows how oxidative stress initiates multiple 
+destructive cellular processes, including lipid peroxidation and protein oxidation, leading to widespread membrane damage. Concurrently, mitochondrial dysfunction 
+creates a cellular energy crisis, while also exacerbating oxidative stress in a feed-forward loop. These processes promote A𝛽aggregation and 𝜏phosphorylation, two 
+hallmark features of AD. The convergence of these pathological cascades ultimately results in neurodegeneration. The multiple interconnections between pathways 
+highlight the complex and self-amplifying nature of oxidative damage in disease progression, where initial oxidative stress triggers multiple pathological processes 
+that can further increase oxidative damage, creating a vicious cycle that promotes neurodegeneration and disease advancement.
+Some authors showed their interest in finding the relationship between glial cells and AD [52,82,84,110,134]. Some models are 
+based on the biomarkers; A𝛽protein and 𝜏protein [66,122,129,156]. A series of authors focused on the involvement of PrP𝐶protein 
+in the disease and contributed many mathematical models related to AD [18,33,69,70,77,78]. Some works has been done on the 
+contribution of cytokines [65], calcium signaling [42,58,98,136], oxidative stress [138], obesity [83], APOE gene [111], lipid raft 
+[142,143], etc. The authors have constructed such mathematical models by using diﬀerent modeling formalisms like temporal mod­
+els, spatiotemporal models, network models, stochastic models, graph theoretical models and more. Herein, we go through diﬀerent 
+types of mathematical models and their succinct explanations.
+3.1. Modeling AD in terms of A𝛽protein aggregation mechanism
+In this subsection, we discuss the mathematical models, in which A𝛽protein and its ploymer units like A𝛽protein monomer, A𝛽
+protein dimer, A𝛽protein oligomers, etc. are involved in the model. The mathematical models containing the A𝛽protein as well as 
+other components are reviewed here, with details provided below.
+3.1.1. A𝛽protein and its aggregation
+The aggregation process of A𝛽protein plays a very vital role in the progression of AD and many works focused on the aggregation 
+mechanism of A𝛽protein [2,38,39,90,123,145]. In AD, A𝛽-40 or A𝛽-42 polymers eventually fold into amyloid fibrils and clump into 
+amyloid plaques in the brain. The conversion from soluble monomer to insoluble fibril has an impact on AD. To understand this 
+procedure, a mathematical model consisting of diﬀerential and algebraic equations describing this kinetic pathway of A𝛽protein 
+aggregation is derived [123]. This type of kinetic model is also helpful in understanding the mechanism of toxicity of A𝛽protein. 
+Pallitto & Murphy [123] studied a mathematical model by using this method. Kim et al. [90] used urea to reduce the production of 
+the aggregation of A𝛽protein and also examined how urea i­fluences size distribution, aggregation kinetics and the morphology of 
+aggregates.
+In addition to developing innovative treatments for AD, there is a need for easily measurable biomarkers, like the levels of A𝛽pro­
+tein in both cerebrospinal fluid (CSF) and plasma. These observations have led to the development of a mathematical compartmental 
+
+Physics of Life Reviews 52 (2025) 207–244
+213
+M. Maji and S. Khajanchi 
+Fig. 6. Schematic diagram of the underlying mechanism in the aggregation process of A𝛽protein. Primary nucleation refers to the formation of protein aggregates from 
+monomers. In AD, A𝛽monomer assembles into A𝛽oligomers and then turns into larger fibrils, which eventually become mature A𝛽plaques. During the elongation 
+process, monomeric A𝛽units are added to the growing ends of the fibrils and form larger fibril aggregates. Secondary nucleation comes into play when existing protein 
+aggregates function as templates for the formation of new aggregates. This process can accelerate the growth and propagation of A𝛽plaques. Fragmentation refers 
+to the process by which existing protein aggregates break down into smaller fragments. The exact mechanisms underlying in the aggregation process are still being 
+investigated, but understanding the mechanisms is crucial for AD.
+model aimed at elucidating the buildup of the A𝛽protein within the brain, CSF and plasma, as detailed in the work by Craft et al. [38]. 
+This work also analyzes the production of A𝛽protein, the dynamics of polymer elongation, fragmentation and clearance throughout 
+the course of treatment. Using this idea and based on the process of A𝛽𝑖-merization, Craft et al. [39] formed a mathematical model 
+as below:
+𝑑𝑀1
+𝑑𝑡 = 𝑝+ 𝑓
+∞ 
+∑
+𝑗=2 
+𝑀𝑗−𝑒𝑀1
+(
+2𝑀1 +
+∞ 
+∑
+𝑗=2 
+𝑀𝑗
+)
+−𝑙𝑀1,
+(1a)
+𝑑𝑀2
+𝑑𝑡 = 𝑒𝑀2
+1 + 𝑓𝑀3 −𝑒𝑀1𝑀2 −𝑓
+2 𝑀2,
+(1b)
+𝑑𝑀𝑖
+𝑑𝑡 = 𝑒𝑀1𝑀𝑖−1 + 𝑓𝑀𝑖+1 −𝑒𝑀1𝑀𝑖−𝑓𝑀𝑖,
+(1c)
+where 𝑖≥3. Here, 𝑀𝑖(𝑡) denotes the concentration of A𝛽𝑖-mer at time 𝑡where 𝑖= 1 represents the monomer, 𝑖= 2 represents 
+the dimer, and so on. The production of A𝛽monomers occurs through the cleavage of APP at a constant rate, denoted as 𝑝. This 
+represents the steady introduction of new monomers into the system. Once produced, these A𝛽monomers are degenerated at a rate 𝑙. 
+On average, A𝛽monomers persist for 𝑙−1 time units before they are removed by various mechanisms such as internalization by cells 
+(e.g., microglia ingestion), degradation by proteases, or clearance from the brain through circulation. The elongation happens through 
+the monomer addition at the rate 𝑒, whereas the fragmentation occurs only by the monomer breaks off at the rate 𝑓. This model can 
+be used to predict values for a number of critical parameters that are challenging to directly measure. These parameters encompass 
+the production rate, fragmentation rate and treatment strength. There exists a dimensionless quantity known as the polymerization 
+ratio, which is calculated by dividing the product of production and elongation rates by the product of fragmentation and loss 
+rates. This polymerization ratio plays a decisive role in determining the overall A𝛽protein load in the brain. Craft et al. [38,39] has 
+demonstrated that when the polymerization ratio falls below one, the body achieves a steady-state level of A𝛽throughout. Conversely, 
+if the ratio exceeds one, the burden of A𝛽protein in the brain continues to increase without interruption. Nucleation, both primary 
+and secondary, is crucial in AD as it initiates the aggregation of A𝛽, leading to the formation of plaques. Primary nucleation forms the 
+initial aggregates, while secondary nucleation accelerates the process by catalyzing further aggregation. For a basic understanding of 
+the process of primary nucleation, elongation, secondary nucleation and fragmentation, a figure is described in Fig. 6.
+Ackleh et al. [2] crafted a continuous-time mathematical framework to elucidate the aggregation of A𝛽protein, employing prin­
+ciples from chemical kinetics and population dynamics. Their model consists of the concentration of A𝛽monomers, dimers, trimers, 
+etc., as well as the concentration of oligomers and fibrils. In terms of numerical findings, the authors noted that the continuous-time 
+model demonstrates sigmoidal growth, whereas oscillatory dynamics may occur in discrete-time approximations. In their study, the 
+authors conducted a sensitivity analysis of the model outputs to investigate how variations in the parameters governing the aggre­
+gation process of A𝛽i­fluence the time series dynamics. They found that the parameters associated with the production rate and 
+prevalence of abnormal monomers, along with the nucleation rate that facilitates the formation of new aggregates, signiﬁcantly 
+impact both the transient and final equilibrium concentrations of aggregates.
+The process of A𝛽aggregation is nucleation-dependent and to understand the characteristics of the nucleus and pre-nucleation 
+processes in the development of AD, the authors [59] formed a mathematical model, given by
+𝑑𝑋1
+𝑑𝑡 = 𝑛(−𝑘12𝑋𝑛
+1 + 𝑘21𝑋2),
+(2a)
+𝑑𝑋2
+𝑑𝑡 = 𝑠(−𝑘34𝑋𝑠
+2 + 𝑘43𝑋𝑛
+1) ± 𝑘12𝑋𝑛
+1 −𝑘21𝑋2,
+(2b)
+𝑑𝑋3
+𝑑𝑡 = 𝑘34𝑋𝑠
+2 −𝑘43𝑋3.
+(2c)
+
+Physics of Life Reviews 52 (2025) 207–244
+214
+M. Maji and S. Khajanchi 
+Here 𝑋1, 𝑋2 and 𝑋3 represents the aggregations of one monomer, 𝑛monomers and 𝑠monomers, respectively. The authors have 
+ident­fied two crucial parameters for fibril formation: the nucleation number represented as 𝑛∗and the critical number of nuclei 
+denoted as 𝑠∗. The model’s equations cover three key stages of aggregation: pre-nucleation, where initial monomer interactions lead 
+to small aggregates; post-nucleation, where monomers reach a critical nucleus size 𝑛∗that allows stable nuclei to form and initiate 
+ﬁbril growth; and protofibril formation, where these aggregates elongate further to form protofibrils and mature fibrils. Additionally, 
+the reaction rates governing the forward and backward processes are labeled as 𝑘𝑖𝑗, with 𝑖,𝑗= 1,2,3,4. In the equation (2)(b), the 
+term ±𝑘12𝑋𝑛
+1 represents the reversible binding and unbinding of monomers, where the sign could vary depending on whether the 
+process involves monomer addition (aggregation) or monomer dissociation. Through a comprehensive analysis involving reduced­
+order stability assessment and numerical simulations based on ordinary diﬀerential equations (ODEs), the authors primarily focused 
+on determining the range of critical nucleation number 𝑛∗. Their work establishes that the critical nucleation size likely lies between 
+7 and 14 monomers, with 𝑛∗= 12 being the most plausible estimate for stable aggregates aligning with experimental results. This 
+model showed that the nature of 𝑛∗aﬀects the formation of large protofibrils.
+Bertsch et al. [14] proposed a mathematical model to elucidate the dynamics of the amyloid cascade hypothesis in AD and its 
+impact on neuronal degradation. The authors modeled the evolution from monomeric A𝛽protein to senile plaques by using a system 
+of ODEs. This model consists the variables representing the quantities of A𝛽monomers, oligomers and insoluble amyloid plaques. 
+The basic argument of the model is that the production of A𝛽monomers hinges on the average degradation rate of neurons within 
+a scale of small representative volumes (REVs). Additionally, the researchers conducted numerical simulations in a two-dimensional 
+(2D) context to visually illustrate the dynamic behavior of the solutions.
+Oligomers dissociation is more eﬀective than continued monomer addition in the molecular pathways of A𝛽-42, the fact is discov­
+ered by Michaels et al. [117]. Hence Lindstrom et al. [106] concentrated on low-order oligomers which is crucial for understanding 
+the genesis of AD. They developed a mathematical model of the oligomerization process to better understand the dynamics of oligomer 
+production and how it links to the development of AD. The mathematical model is given by the following reaction-diffusion equations 
+involving the concentrations of monomers 𝑌1 and dimers 𝑌2,
+𝜕𝑌1
+𝜕𝑡 = 𝐷1Δ𝑌1 + 𝑆−𝜅𝑌1 −2𝜈𝑌2
+1 −𝜈𝑌1𝑌2 + 2𝜇𝑌2,
+(3a)
+𝜕𝑌2
+𝜕𝑡 = 𝐷2Δ𝑌2 + 𝜈𝑌2
+1 −𝜈𝑌1𝑌2 −𝜇𝑌2.
+(3b)
+Without considering modeling space, the above system becomes
+𝑑𝑌1
+𝑑𝑡 = 𝑆−𝜅𝑌1 −2𝜈𝑌2
+1 −𝜈𝑌1𝑌2 + 2𝜇𝑌2,
+(3c)
+𝑑𝑌2
+𝑑𝑡 = 𝜈𝑌2
+1 −𝜈𝑌1𝑌2 −𝜇𝑌2.
+(3d)
+Here 𝑡is considered as time (age). The production rate of monomers is 𝑆and 𝜅is the clearance rate. A dimer can dissociate into two 
+monomers at a rate of 𝜇, and two monomers can combine to create a dimer at a rate 𝜈. Monomers and dimers diﬀuse with diﬀusion 
+coeﬃcients 𝐷1 and 𝐷2, respectively. This model accurately depicts the age-related rapid increase in the AD incidence. The model also 
+discusses changes in hippocampus volume, the risk of AD following traumatic brain damage, clinical development in genetic types 
+of AD and geographic dispersion of the disease as a result of foci with elevated A𝛽production. Most of the findings stem from the 
+non-spatial model, which describes the brain as a homogeneous volume or describes the case in which the diﬀusion of monomers and 
+dimers is i­finite. The spatial model introduces spatial dynamics. This allows the exploration of spatial eﬀects and can be extended 
+to include realistic boundary conditions and region-specific variations within the brain.
+For the spatial spread of A𝛽oligomers around a few neurons, Andrade-Restrepo et al. [9] suggested a reaction-diffusion mathemat­
+ical model; however, the authors did not take fibrils or plaques into account. It also provides a condensed depiction of the neurotoxic 
+eﬀects of the oligomer. A computer simulation demonstrates that the spatial dynamics of oligomers are particularly sensitive to the 
+balance between diﬀusion and its replication, and the progression of AD highly depends on it.
+Amyloid fibrils or oligomeric species are key intermediates and major pathogenic agents to disorders like AD and Parkinson’s 
+disease (PD). In contrast to amyloid fibrils, oligomers are diverse and their properties have been largely unexplored. Using chemical 
+kinetics [44], it is found that oligomers exhibit wide-ranging stabilities but share two generic properties: they are mostly no­fibrillar 
+and tend to dissociate back to monomers rather than maturing into fibrils. These findings alter our understanding of their role and 
+cellular toxicity in amyloid-related diseases. Experimental kinetic data were globally fitted on various protein aggregation systems to 
+the analytic model given in [44,45].
+3.1.2. A𝛽aggregation and interstitial fluid
+Chen et al. [30] elucidated the mechanisms underlying the generation and removal of A𝛽proteins and their subsequent aggregation 
+into A𝛽plaques in the context of AD. The authors divided A𝛽protein into five types according to their formation: monomers 𝑓1, 
+oligomers 𝑓2, protofibrils 𝑓3, fibrils 𝑓4 and plaques 𝑓5. Monomers, oligomers, protofibrils and fibrils may move and be cleaned by 
+interstitial fluid (ISF) flow or diﬀusion. But plaques cannot; hence, the eﬀect of advection and diﬀusion on plaques is neglected. The 
+developed mathematical model, consisting of a system of partial diﬀerential equations is
+𝜕𝑓𝑖
+𝜕𝑡 + ∇.(𝑣𝑓𝑖) = 𝐷𝑖∇2𝑓𝑖+ 𝐹𝑖(𝐟), 𝑖= 1,2,3,4,
+(4a)
+
+Physics of Life Reviews 52 (2025) 207–244
+215
+M. Maji and S. Khajanchi 
+𝜕𝑓5
+𝜕𝑡 = 𝐹5(𝐟),
+(4b)
+where 𝑣= −𝑘∇𝑝is ISF velocity and 𝐟= (𝑓1,𝑓2,𝑓3,𝑓4,𝑓5). The parameter 𝑝d­fines the pressure and 𝑘represents the permeability 
+coeﬃcient. The equation for 𝐹𝑖is given by
+𝐹1(𝐟) = 𝑓(𝜙) +
+𝑁
+∑
+𝑗=2 
+𝛾𝑗,1𝑓𝑗+ 2𝛾2,0𝑓2 −𝑘1,1𝑓2
+1 −
+𝑁
+∑
+𝑗=1 
+𝑘1,𝑗𝑓𝑗𝑓1 −𝛿1𝑓1,
+(4c)
+𝐹𝑖(𝐟) = ̄𝑘𝑖−1𝑓2
+𝑖−1 +
+𝑁
+∑
+𝑗=𝑖 
+𝛾𝑗,𝑖𝑓𝑗+ 2𝛾𝑖+1,0𝑓𝑖+1 −̄𝑘𝑖𝑓2
+𝑖−
+𝑁
+∑
+𝑗=𝑖 
+𝑘𝑖,𝑗𝑓𝑖𝑓𝑗
+−𝛾𝑖,0𝑓𝑖−𝛿𝑖𝑓𝑖, 𝑖= 2,3,4,
+(4d)
+𝐹5(𝐟) = 𝑘4𝑓2
+4 −𝛾5,0𝑓5 −𝛿5𝑓5,
+(4e)
+where ̄𝑘𝑖= 𝛽𝑖𝑘𝑖𝑖and 𝛽1 = 1. The parameter 𝑘𝑖𝑖represents the rate constant for self-association reactions within the same category 
+of A𝛽species and 𝛽𝑖is a proportion factor associated with aggregation reactions. The function 𝑓(𝜙) is the production rate function 
+of A𝛽monomers by cells, where 𝜙is a constant volume fraction. The authors numerically simulated the model in a spherically 
+symmetric case and a 2D asymmetric case. This research findings indicate that the advection of ISF have a crucial role in replicating 
+the observed clinical accumulation of plaque on the outer boundaries. It is also found that the presence of toxic oligomers does not 
+directly correlate with plaque formation.
+A reaction-diffusion model with a Becker-Döring-like system that incorporates fragmentation and size-dependent diﬀusion was 
+developed by Andrade-Restrepo et al. [8]. In addition, this is the first time when reaction-diffusion equations have been utilized to 
+predict the secondary nucleation process that results in the formation of A𝛽oligomers and the pathogenic eﬀects of A𝛽oligomers on 
+neuronal activity. Achdou et al. [3] presented a mathematical model for the aggregation and diﬀusion of A𝛽protein related to AD. 
+The model is made of classical discrete Smoluchowski aggregation equations [51,147] that are mod­fied to take the diﬀusion process 
+into account.
+3.1.3. A𝛽aggregation, glial cell and i­flammation
+Ciuperca et al. [34] formulated a new mathematical model for the progression of AD considering the interaction between A𝛽
+monomers, oligomers, plaque, microglia cell and interleukins through the mechanisms like protein polymerization, i­flammation 
+and neural stress reaction. The considered bi-monomeric simpl­fied model is as follows:
+𝜕𝑍1
+𝜕𝑡 = 𝜈2Δ𝑍1 + 𝑟1𝑍2
+3 −𝛾(𝑍4)𝑍1 −𝜏0𝑍1,
+(5a)
+𝜕𝑍2
+𝜕𝑡 = 𝛾(𝑍4)𝑍1 −𝜏𝑝𝑍2,
+(5b)
+𝜕𝑍3
+𝜕𝑡 = 𝜈1Δ𝑍3 +
+𝜏𝑠
+1 + 𝑐𝑍𝑛
+1
+𝑍5 −𝑑𝑍3 −𝑟2𝑍1𝑍3 −𝑟1𝑍2
+3,
+(5c)
+𝜕𝑍4
+𝜕𝑡 = 𝐷1Δ𝑍4 −𝛼∇.(𝑍4∇𝑍1) +
+𝛼1𝑍1
+1 + 𝛼2𝑍1
+( ̄𝑍4 −𝑍4)𝑍4 −𝜎𝑍4 + 𝜆1,
+(5d)
+𝜕𝑍5
+𝜕𝑡 = 𝐷2Δ𝑍5 +
+𝜏1𝑍1
+1 + 𝜏2𝑍1
+𝑍4 −𝜏3𝑍5,
+(5e)
+where the concentration of A𝛽oligomers, A𝛽plaque, A𝛽monomers, microglial cells and interleukins are denoted by 𝑍1, 𝑍2, 𝑍3, 𝑍4
+and 𝑍5. The diﬀuse rates are 𝜈1, 𝜈2, 𝐷1 and 𝐷2. 𝑟1 is the monomeric gain and 𝜏0 is the degeneration rate of oligomers. 𝛾(𝑍4) is the 
+recruitment of oligomers to the A𝛽plaques by microglial cells. The parameters 𝜏𝑝, 𝑑, 𝜎, 𝜏3 are the degeneration rates of 𝑍2, 𝑍3, 𝑍4
+and 𝑍5, respectively. In the 3rd equation, 𝜏𝑠and 𝑐are the coeﬃcients of neural stress and stress function, respectively. Moreover, 𝑛
+is the power coeﬃcient of the stress function. Here 𝑟2 d­fines the polymerization rate of monomers attaching to oligomers. 𝛼1 and 
+𝛼2 are the growth coeﬃcients of microglia cells. The growth coeﬃcients of interleukines are represented by the parameters 𝜏1 and 
+𝜏2. The maximum capacity of microglial cell is represented by ̄𝑍4. It is observed that i­flammation appears to be a critical role in the 
+onset and development of AD.
+3.1.4. A𝛽aggregation and PrP𝐶protein
+We have already discussed that there is a strong relationship between AD and prion disease [21]. Helal et al. [70] explored the 
+dynamics of toxic oligomeric species accumulation in the brain by integrating the fibrillation pathway of A𝛽protein peptides with the 
+process of A𝛽protein oligomerization. The mathematical model developed by Helal et al. [70] has two folds: the first one describes the 
+polymerization process which is based on the Becker-Döring equations [102], and the second one delineates the interplay between A𝛽
+and PrP𝐶proteins, which is modeled through a set of delay diﬀerential equations. The authors showed well-posedness of the system 
+as well as global stability analysis by constructing a suitable Lyapunov functional. The impact of each parameters on the system has 
+been shown numerically. The first part of the model describes the aggregation process of A𝛽protein, which consists of rate equations 
+for monomers, proto-oligomers, oligomers, oligomers in plaque, fibrils and fibrils in plaque. Here, we present two equations that 
+capture the dynamics of oligomers at two diﬀerent time points, as follows:
+
+Physics of Life Reviews 52 (2025) 207–244
+216
+M. Maji and S. Khajanchi 
+𝑑𝑚𝑖(𝑡)
+𝑑𝑡 
+= 𝑟𝑖−1𝑚𝑖−1(𝑡)𝑚1(𝑡) −
+(
+𝛾1 + 𝜇
+2 
+)
+𝑚𝑖(𝑡) −𝛿1𝑚𝑖(𝑡)𝑃1(𝑡)
++𝛿1𝑚𝑖(𝑡−̃𝜏)𝑚22(𝑡−̃𝜏), 𝑡∈[̃𝜏,+∞),
+(6a)
+𝑑𝑚𝑖(𝑡)
+𝑑𝑡 
+= 𝑟𝑖−1𝑚𝑖−1(𝑡)𝑚1(𝑡) −
+(
+𝛾1 + 𝜇
+2 
+)
+𝑚𝑖(𝑡) −𝛿1𝑚𝑖(𝑡)𝑃1(𝑡), 𝑡∈[0, ̃𝜏),
+(6b)
+where 𝑚𝑖−1(𝑡) represents the concentration of proto-oligomer with size 𝑖−1 while 𝑚1(𝑡) is the monomer concentration. The parameter 
+𝑟𝑖−1 is the polymerization rate of size 𝑖−1 proto-oligomers. The displacement rate of A𝛽oligomers into the plaque is 𝛾1 and the 
+proportion of oligomer fragmentation is 𝜇. The reaction rate of A𝛽and PrP𝐶proteins is 𝛿1, whereas ̃𝜏represents the time lag in the 
+interactions between A𝛽and PrP𝐶proteins. The delay term ̃𝜏represents the time lag between the formation of a complex and the 
+release of oligomers from it. This accounts for the biological reality that oligomer release occurs after a certain period, not instantly. 
+The second part of the model is given by
+𝑑𝑃1(𝑡)
+𝑑𝑡 
+= −𝛿1𝑚𝑖(𝑡)𝑃1(𝑡) −𝛼𝑃1(𝑡), 𝑡∈[0,+∞),
+(6c)
+𝑑𝑃2(𝑡)
+𝑑𝑡 
+= 𝛿1𝑚𝑖(𝑡−̃𝜏)𝑃1(𝑡−̃𝜏) + 𝛼𝑃1(𝑡), 𝑡∈[̃𝜏,∞),
+(6d)
+𝑑𝑃3(𝑡)
+𝑑𝑡 
+= 𝛿1𝑚𝑖(𝑡)𝑃1(𝑡) −𝛿1𝑚𝑖(𝑡−̃𝜏)𝑃1(𝑡−̃𝜏), 𝑡∈[̃𝜏,∞),
+(6e)
+where 𝑃1(𝑡), 𝑃2(𝑡) and 𝑃3(𝑡) are the concentrations of PrP𝐶protein, oligomerization PrP𝐶and A𝛽× PrP𝐶complex, respectively. The 
+rate of direct transformation of 𝑃1(𝑡) into 𝑃2(𝑡) is 𝛼.
+A time-delayed mathematical model has been developed to characterize the evolution of AD, includes the concentration of A𝛽
+oligomers (𝑃4), healthy prions (𝑃5) and pathogenic prions (𝑃6) [18]:
+𝑑𝑃4(𝑡)
+𝑑𝑡 
+= 𝑆4 −𝑑4𝑃4(𝑡) −𝛿1𝑛𝑃5(𝑡)𝑃𝑛
+4 (𝑡) + 𝑛𝛿2𝑃5(𝑡−̃𝜏)𝑃𝑛
+4 (𝑡−̃𝜏),
+(7a)
+𝑑𝑃5(𝑡)
+𝑑𝑡 
+= 𝑆5 −𝑑5𝑃5(𝑡) −𝛿1𝑃5(𝑡)𝑃𝑛
+4 (𝑡),
+(7b)
+𝑑𝑃6(𝑡)
+𝑑𝑡 
+= −𝑑6𝑃6(𝑡) + 𝛿2𝑃5(𝑡−̃𝜏)𝑃𝑛
+4 (𝑡−̃𝜏),
+(7c)
+where 𝑡∈[−̃𝜏,0). The sources of A𝛽oligomers and healthy prions are 𝑆4 and 𝑆5, respectively. The elimination rates of A𝛽oligomers, 
+healthy prions and pathogenic prions are 𝑑4, 𝑑5 and 𝑑6, respectively. The binding rate and unbinding rate of oligomers with healthy 
+prions and pathogenic prions are 𝛿1 and 𝛿2, respectively while 𝑛represents the number of oligomers. Any prion can interact with 
+𝑛∈ℕ∗oligomers to form a complex. The delay term has been introduced here to model the process where the complex requires a 
+certain time to mature before splitting into 𝑛oligomers and a pathogenic prion. In this work, the authors investigated the existence 
+of equilibria and their stability, and derived some parametric restrictions of 𝛿1, 𝛿2, 𝑑4 and 𝑑5. In numerical simulation, an oscillatory 
+behavior of solutions has been observed.
+Focusing on the involvement of PrP𝐶proteins in AD, a mathematical model has been formed [69]. This model consists of dif­
+ferential equations that describe the dynamics of the formation of A𝛽plaques (the density of the plaque is ℎ(𝑥,𝑡)) based on the 
+concentrations of A𝛽oligomers (𝑥2), PrP𝐶proteins (𝑥3) and the A𝛽× PrP𝐶complex (𝑥4). The model is expressed as follows:
+𝜕ℎ(𝑥,𝑡)
+𝜕𝑡 
++ 𝑥2(𝑡)𝜕[𝜌(𝑥)ℎ(𝑥,𝑡)]
+𝜕𝑥 
+= −𝜇(𝑥)ℎ(𝑥,𝑡),
+(8a)
+𝑑𝑥2
+𝑑𝑡 = 𝜆2 −𝛾2𝑥2 −̃𝜏𝑥2𝑥3 + 𝜎𝑥4 −𝑛𝑁(𝑥2) −1
+𝜖𝑥2
+∞ 
+∫
+𝑥0
+𝜌(𝑥)ℎ(𝑥,𝑡) 𝑑𝑥,
+(8b)
+𝑑𝑥3
+𝑑𝑡 = 𝜆3 −𝛾3𝑥3 −̃𝜏𝑥2𝑥3 + 𝜎𝑥4,
+(8c)
+𝑑𝑥4
+𝑑𝑡 = ̃𝜏𝑥2𝑥3 −(𝜎+ 𝛿)𝑥4.
+(8d)
+The variable 𝑁represents the contribution associated with the creation of a new A𝛽plaque, characterized by a size denoted as 
+𝑥0, created from A𝛽oligomers. To maintain balance within this context, the authors introduced a corresponding boundary condition:
+𝑥2(𝑡)𝜌(𝑥0)ℎ(𝑥0,𝑡) = 𝑁(𝑥2(𝑡)),  𝑡≥0.
+In the above model, 𝑥is the size of the plaque. 𝑛is the number of oligomers in a plaque of size 𝑥0 and 𝜖is the mass of one 
+oligomer. The parameters 𝜆2 and 𝛾2 are the source and degeneration rates of A𝛽oligomers, respectively. 𝜆3 and 𝛾3 signify the source 
+and degradation rates of PrP𝐶, respectively. ̃𝜏represents the binding rate of A𝛽oligomers to the PrP𝐶protein, initiating a critical 
+interaction. 𝜎is symbolizing the unbinding rate of the A𝛽× PrP𝐶complex and 𝛿denotes the degeneration rate of this complex. 
+The parameter 𝜌(𝑥) is responsible for converting oligomers into plaques and 𝜇(𝑥) is signifying the degradation rate of plaques. It 
+is considered that 𝑁(𝑥2(𝑡)) = 𝛼𝑥𝑛
+2, where 𝛼is the formation rate of new plaque. By applying an integration operation, the authors 
+transformed the mathematical model (8) into a temporal mathematical model (9) using an integration operation
+
+Physics of Life Reviews 52 (2025) 207–244
+217
+M. Maji and S. Khajanchi 
+Fig. 7. Schematic diagram represents model (9) which describes the evolution of A𝛽oligomers, A𝛽plaque, PrP𝐶proteins and the A𝛽× PrP𝐶complex. The deﬁnitions 
+of all the parameters are given in the description part of the mathematical model (8).
+𝑥1 =
+∞ 
+∫
+𝑥0
+ℎ(𝑥,𝑡)𝑑𝑥.
+The temporal model follows (see Fig. 7): 
+𝑑𝑥1
+𝑑𝑡 = 𝛼𝑥𝑛
+2 −𝜇𝑥1,
+(9a)
+𝑑𝑥2
+𝑑𝑡 = 𝜆2 −𝛾2𝑥2 −̃𝜏𝑥2𝑥3 + 𝜎𝑥4 −𝑛𝛼𝑥𝑛
+2 −𝜌𝑥1𝑥2,
+(9b)
+𝑑𝑥3
+𝑑𝑡 = 𝜆3 −𝛾3𝑥3 −̃𝜏𝑥2𝑥3 + 𝜎𝑥4,
+(9c)
+𝑑𝑥4
+𝑑𝑡 = ̃𝜏𝑥2𝑥3 −(𝜎+ 𝛿)𝑥4.
+(9d)
+The meanings of the parameters are the same as in model (8). The authors showed the well-posedness of the system (9). The key idea 
+of this paper is that A𝛽plaques increase in size over time due to the clustering of A𝛽oligomers, which are bound to PrP𝐶proteins. 
+The local and global stability analysis for the interior equilibrium has been performed.
+Though the roles of A𝛽oligomers and PrP𝐶in AD remain to be fully understood, recent evidence suggests that A𝛽oligomers can 
+interact with PrP𝐶to induce cytotoxic damage to neurons. Neuronal damage can occur as a result of the binding of A𝛽oligomers to 
+PrP𝐶. A mathematical model developed by Ciuperca et al. [33] sheds light on the process of A𝛽polymerization and the interactions 
+between A𝛽and PrP𝐶proteins. This comprehensive model consists nine equations, encompassing size-structured transport equations, 
+ODEs and delayed diﬀerential equations. The authors conducted a thorough analysis of the model’s well-posedness and provided the 
+existence and uniqueness of solutions by employing Schauder’s fixed point theorem and the Cauchy-Lipschitz theorem.
+In an aggregation of particles, each particle moves randomly, which causes the particles to spread out. Hence, by taking into ac­
+count the eﬀects of both reaction and diﬀusion in AD, Hu et al. [78] mod­fied the mathematical model (9). The mod­fied mathematical 
+model is given by
+𝜕𝑥1(𝑥,𝑡)
+𝜕𝑡 
+= 𝑑1 △𝑥1(𝑥,𝑡) + 𝛼𝑥𝑛
+2(𝑥,𝑡) −𝜇𝑥1(𝑥,𝑡),
+(10a)
+𝜕𝑥2(𝑥,𝑡)
+𝜕𝑡 
+= 𝑑2 △𝑥2(𝑥,𝑡) + 𝜆2 −𝛾2𝑥2(𝑥,𝑡) −̃𝜏𝑥2(𝑥,𝑡)𝑥3(𝑥,𝑡) + 𝜎𝑥4(𝑥,𝑡)
+−𝑛𝛼𝑥𝑛
+2(𝑥,𝑡) −𝜌𝑥1(𝑥,𝑡)𝑥2(𝑥,𝑡),
+(10b)
+𝜕𝑥3(𝑥,𝑡)
+𝜕𝑡 
+= 𝑑3 △𝑥3(𝑥,𝑡) + 𝜆3 −𝛾3𝑥3(𝑥,𝑡) −̃𝜏𝑥2(𝑥,𝑡)𝑥3(𝑥,𝑡) + 𝜎𝑥4(𝑥,𝑡),
+(10c)
+𝜕𝑥4(𝑥,𝑡)
+𝜕𝑡 
+= 𝑑4 △𝑥4(𝑥,𝑡) + ̃𝜏𝑥2(𝑥,𝑡)𝑥3(𝑥,𝑡) −(𝜎+ 𝛿)𝑥4(𝑥,𝑡),
+(10d)
+where △= ∑3
+𝑖=1
+𝜕2
+𝜕𝑥2
+𝑖
+is the Laplace operator in three dimensions. The parameters 𝑑𝑖(𝑖= 1,2,3,4) are the diﬀusion coeﬃcients of the 
+respective population. In the article, considering the diﬀusion and Ornstein-Uhlenbeck processes, the authors transformed the model 
+(10) into a stochastic model. Also, the stability in distribution has been shown.
+
+Physics of Life Reviews 52 (2025) 207–244
+218
+M. Maji and S. Khajanchi 
+We have already discussed a mathematical model that includes A𝛽plaque, A𝛽oligomers, PrP𝐶proteins and the A𝛽× PrP𝐶
+complex. The eﬀect of a random environment on the AD is not considered in that work by Helal et al. [69]. Hence, Hu et al. [77] 
+included the eﬀect of a random environment in their mathematical model, considering the impact of Brownian motion as a random 
+factor on the rates of degradation of A𝛽plaques, A𝛽oligomers, PrP𝐶and the A𝛽× PrP𝐶complex. The mod­fied model reads as
+𝑑𝑥1
+𝑑𝑡 = 𝛼𝑥𝑛
+2 −(𝜇−𝜉1𝑑𝐵1(𝑡))𝑥1,
+(11a)
+𝑑𝑥2
+𝑑𝑡 = 𝜆2 −(𝛾2 −𝜉2𝑑𝐵2(𝑡))𝑥2 −̃𝜏𝑥2𝑥3 + 𝜎𝑥4 −𝑛𝛼𝑥𝑛
+2 −𝜌𝑥1𝑥2,
+(11b)
+𝑑𝑥3
+𝑑𝑡 = 𝜆3 −(𝛾3 −𝜉3𝑑𝐵3(𝑡))𝑥3 −̃𝜏𝑥2𝑥3 + 𝜎𝑥4,
+(11c)
+𝑑𝑥4
+𝑑𝑡 = ̃𝜏𝑥2𝑥3 −𝜎𝑥4 −(𝛿−𝜉4𝑑𝐵4(𝑡))𝑥4,
+(11d)
+where 𝐵𝑖(𝑡) and 𝜉𝑖(𝑡) for 𝑖= 1,2,3,4 denote independent, standard Brownian motions and the intensity of the noises, respectively. 
+The meanings of other parameters are already given in the model (9). In this work, it is concluded that under a very weak condition, 
+the system (11) permits a unique ergodic stationary distribution, that is, once a person gets AD, the condition will probably persist.
+3.1.5. A𝛽aggregation, PrP𝐶protein and Ca2+
+Lang et al. [96] mod­fied a mathematical model (9) by introducing a new population for Ca2+, denoted by 𝑦2. The authors assumed 
+white noise in the environment of the population and applied stochastic dynamics to their model. The mathematical model reads as
+𝑑𝑥1
+𝑑𝑡 = (𝛼𝑥𝑛
+2 −𝜇𝑥1)𝑑𝑡+ 𝜉1𝑥1𝑑𝐵1(𝑡),
+(12a)
+𝑑𝑥2
+𝑑𝑡 =
+(
+𝜆2 −𝛾2𝑥2 −̃𝜏𝑥2𝑥3 + 𝜎𝑥4 −𝑛𝛼𝑥𝑛
+2 −𝜌𝑥1𝑥2 + 𝜈
+𝑦2
+𝑦2 + 𝑘
+)
+𝑑𝑡+ 𝜉2𝑥2𝑑𝐵2(𝑡),
+(12b)
+𝑑𝑥3
+𝑑𝑡 = (𝜆3 −𝛾3𝑥3 −̃𝜏𝑥2𝑥3 + 𝜎𝑥4)𝑑𝑡+ 𝜉3𝑥3𝑑𝐵3(𝑡),
+(12c)
+𝑑𝑥4
+𝑑𝑡 = (̃𝜏𝑥2𝑥3 −(𝜎+ 𝛿)𝑥4)𝑑𝑡+ 𝜉4𝑥4𝑑𝐵4(𝑡),
+(12d)
+𝑑𝑦2
+𝑑𝑡 = (𝜆1 + 𝑉2𝑥2 −𝑘4𝑥3𝑦2 −𝑘2𝑦2)𝑑𝑡+ 𝜉5𝑥5𝑑𝐵5(𝑡).
+(12e)
+The deﬁnitions of most of parameters are given in the previous subsection and rest of deﬁnitions are given here. The parameter 
+𝜈is the maximal rate of the positive feedback of Ca2+ on A𝛽and 𝑘sign­fies half-saturation constant. The independent and standard 
+Brownian motions are denoted by 𝐵𝑖(𝑡)(𝑖= 1,2,3,4,5) whereas 𝜉𝑖(𝑖= 1,2,3,4,5) represents the intensities of the white noise. The 
+source and degeneration rates of Ca2+ are 𝜆1 and 𝑘2, respectively. 𝑉2 denotes for the acceleration of Ca2+ due to A𝛽whereas 𝑘4 is 
+the limitation of Ca2+ due to PrP𝐶. Stochastic Lyapunov function theory is used to determine suﬃcient conditions for the extinction 
+of the A𝛽plaques and the A𝛽× PrP𝐶complex in the stochastic model. It is concluded that under certain stochastic disturbances, 
+such as fluctuations in Ca2+ concentrations, these pathological components may diminish. It provides theoretical evidence for the 
+potential eradication of the disease.
+3.1.6. A𝛽aggregation, 𝜏protein and glial cell
+Due to contribution of A𝛽protein, 𝜏protein and glial cells in the advancement of AD, Maji & Khajanchi [112] have introduced a 
+mathematical model that delineates the dynamics of A𝛽plaques (𝑥1), A𝛽protein oligomers (𝑥2), 𝜏protein (𝑇) and astrocytes (𝐴). 
+The mathematical model represents as
+𝑑𝑥1
+𝑑𝑡 = 𝛼𝑥𝑛
+2 −𝜇𝑥1,
+(13a)
+𝑑𝑥2
+𝑑𝑡 = 𝜆0𝑥2
+(1 −𝜆1𝑥2
+) −𝑛𝛼𝑥𝑛
+2 −𝜌𝑥1𝑥2 + 𝜆3𝐴,
+(13b)
+𝑑𝑇
+𝑑𝑡 = 𝛾0𝑇(1 −𝛾1𝑇) + 𝛾2𝑥2𝑇,
+(13c)
+𝑑𝐴
+𝑑𝑡 = 𝛿0𝑥2 −𝛿1𝐴.
+(13d)
+The deﬁnitions of a few parameters are given in the previous subsections and rest of deﬁnitions are given here. The proliferation 
+rate and maximum carrying capacity of A𝛽oligomers are denoted as 𝜆0 and 𝜆1. 𝜆3 sign­fies the positive feedback of astrocyte on A𝛽
+oligomers, respectively. The proliferation rate and maximum carrying capacity of 𝜏proteins are represented by 𝛾0 and 𝛾1, respectively. 
+The growth rate of 𝜏protein due to A𝛽oligomers is 𝛾2. The parameters 𝛿0 is activation rate of astrocyte by A𝛽oligomers whereas 
+𝛿1 represents the degeneration of astrocytes. Theoretical analysis including existence, uniqueness, positivity and boundedness is 
+performed in the model. Moreover, global stability analysis around the interior equilibrium point by constructing a suitable Lyapunov 
+function has been investigated. The numerical simulation demonstrates that an increase in astrocyte activity is correlated with an 
+increase in amyloids inside the brain. This points to a possible connection between the build-up of A𝛽proteins and astrocyte activity.
+
+Physics of Life Reviews 52 (2025) 207–244
+219
+M. Maji and S. Khajanchi 
+3.2. Modeling AD in terms of etiological factors
+In this section, the mathematical models employed to elucidate the etiological factors such as genetics, age, environmental in­
+ﬂuences and lifestyle, have been reviewed. From a mathematical viewpoint, we find the relationship between AD and such factors 
+below.
+3.2.1. AD and lifestyle factors
+According to medical studies, sleeping disorders often manifest as a common symptom of AD, typically occurring several years 
+prior to a formal diagnosis in patients. Hoore et al. [72] formed a minimal mathematical model of A𝛽protein fibrillation to examine 
+the long-term development of AD. A mathematical model consists a set of rate equations governing the levels of A𝛽protein, speciﬁcally 
+monitoring the concentrations of A𝛽oligomers in their soluble state (denoted as 𝑆1) and their fibrillar state (𝑆2), as outlined below.
+𝑑𝑆1
+𝑑𝑡 = 𝑟−𝑘1𝑆1𝑆2 −𝑘2𝑆2
+1 −(𝑑𝑠𝑛+ 𝑒𝑠)𝑆1,
+(14a)
+𝑑𝑆2
+𝑑𝑡 = 𝑘1𝑆1𝑆2 + 𝑘2𝑆2
+1 −𝑑𝑓𝑛𝑆2.
+(14b)
+In the above model, 𝑟represents the production rate of 𝑆1 due to neural synaptic activity over a day. Although there is a circadian 
+pattern to the production rate, the average day is used as an approximation. The density of microglia is represented by 𝑛; 𝑑𝑠and 𝑒𝑠
+are the clearance rates of 𝑆1 by microglia and 𝑆1 eﬄux through the CSF, respectively. 𝑘1 and 𝑘2 correspond to the rate constants 
+governing the polymerization and nucleation of A𝛽, respectively. 𝑑𝑓represents the clearance rate of 𝑆2 by microglia. The authors have 
+demonstrated that the transition from a soluble form of A𝛽protein to a fibrillar form is a key characteristic of the diseased state. The 
+involvement of circadian rhythms has been shown in this work. Circadian rhythms are essential biological processes that regulate the 
+physical, mental, and behavioral changes organisms experience over a 24-hour cycle. Hence, the circadian rhythm directly i­fluences 
+the sleep-wake cycle. Regulation of A𝛽levels in the ISF is mediated by circadian rhythm [118]. In the context of AD, disruptions 
+in circadian rhythms have been linked to A𝛽production and clearance, which contribute to the aggregation of A𝛽protein. This 
+mechanism is incorporated by modeling the diurnal rhythm of A𝛽production as a periodic function, oscillating between two distinct 
+production rates during sleep and wake states. It is considered that the production rate 𝑟of A𝛽is the most impacting parameter. It 
+takes the values 𝑟𝑤and 𝑟𝑠during the wake period and sleep period, respectively. The normalized circadian amplitude is d­fined as
+𝑎= 𝑟𝑤−𝑟𝑠
+𝑟𝑤+ 𝑟𝑠
+.
+Furthermore, the introduction of circadian rhythms into the model has revealed that the accumulation of fibrillar A𝛽protein is 
+critically i­fluenced by the control of the sleep-wake cycle.
+Nutini et al. [120] presented a non-linear mathematical model to study the impact of delays in the aggregation of A𝛽proteins 
+associated with AD. The model focuses on the dynamics of A𝛽in its soluble oligomers and fibrillar forms, exploring how sleep 
+deprivation and circadian cycle disruptions contribute to A𝛽accumulation. The authors analyze the model’s equilibrium points, 
+stability and sensitivity to key parameters. The criteria for Hopf bifurcation has been concluded with the help of delay which is used 
+as the bifurcation parameter. The result shows endemic equilibrium point is asymptotically stable when the delay parameter is small. 
+Additionally, the inclusion of delay helps to identify regions of instability. Results highlight that the model with delay provides a 
+more realistic depiction of amyloid dynamics in AD progression.
+3.2.2. AD and cardiovascular factors
+Obesity has notable implications on memory and cognitive function, exerting an i­fluence on the development and progression 
+of AD. Jain & Roy [83] formed a mathematical model for AD based on the obesity on memory function by considering both the 
+spatial and non-spatial aspects. The model consists of A𝛽plaques 𝐶1, 𝜏plaques 𝐶2, fat cells 𝐶3, glucose 𝐶4, insulin 𝐶5, beta cells 𝐶6, 
+cytokines 𝐶7 and microglia 𝐶8. The non-spatial mathematical model is described as follows
+𝑑𝐶1
+𝑑𝑡 = 𝐶1(𝛾0 −𝛾1𝐶1) + 𝑘6𝐶8𝐶1,
+(15a)
+𝑑𝐶2
+𝑑𝑡 = 𝐶2(𝛿0 −𝛿1𝐶2) + 𝑘7𝐶8𝐶2 + 𝑘8𝐶1𝐶2,
+(15b)
+𝑑𝐶3
+𝑑𝑡 = 𝐶3(𝛼0 −𝛼1𝐶3),
+(15c)
+𝑑𝐶4
+𝑑𝑡 = 𝜇−(𝛼2 + 𝛼3𝐶5)𝐶4 + 𝑘1𝐶4𝐶3,
+(15d)
+𝑑𝐶5
+𝑑𝑡 = 𝑘2𝐶6 −𝑑1𝐶5,
+(15e)
+𝑑𝐶6
+𝑑𝑡 = 𝐶6(𝛽0 −𝛽1𝐶6) + 𝑘3𝐶6𝐶4 −𝑑2𝐶6,
+(15f)
+𝑑𝐶7
+𝑑𝑡 = 𝑘4𝐶4 −𝑑3𝐶7,
+(15g)
+
+Physics of Life Reviews 52 (2025) 207–244
+220
+M. Maji and S. Khajanchi 
+𝑑𝐶8
+𝑑𝑡 = 𝑘5𝐶7 −𝑑4𝐶8,
+(15h)
+where 𝛼0, 𝛽0, 𝛾0 and 𝛿0 are the growth rates of fat cells, glucose, 𝛽cells, A𝛽plaque and 𝜏plaque, respectively. The carrying capacities 
+of fat cells, 𝛽cells, A𝛽plaque and 𝜏plaque are 𝛼1, 𝛽1, 𝛾1 and 𝛿1, respectively. The death rates of glucose, insulin, 𝛽cells, cytokines 
+and microglia are 𝛼2, 𝑑1, 𝑑2, 𝑑3 and 𝑑4, respectively. The death rate of glucose due to insulin is 𝛼3. The growth rate of glucose 
+attributed to fat cells is denoted as 𝑘1, while 𝑘2 represents the growth rate of insulin due to 𝛽cells. Additionally, the growth rates of 
+𝛽cells and cytokines stemming from glucose are labeled as 𝑘3 and 𝑘4, respectively. Furthermore, the growth rate of microglia as a 
+consequence of cytokines is expressed as 𝑘5. Lastly, the growth rates of A𝛽and 𝜏plaque originating from microglia are represented 
+by 𝑘6 and 𝑘7, and 𝑘8 denotes the growth rate of 𝜏plaque caused by A𝛽plaque. According to their study, the authors concluded that 
+the loss in cognitive function related to obesity may be caused by insulin resistance and pro-inflammatory microglia.
+3.2.3. AD and genetic factors
+Based on the biologically motivated variant of Ho­field’s model [74], Horn et al. [73] proposed a mathematical network model. It 
+showed how the interaction between synaptic loss and compensation determines the pattern of memory decline. The model is given 
+by
+𝑊𝑖𝑗= 1 
+𝑁
+𝑀
+∑
+𝜇=1
+(𝜉𝜇
+𝑖−𝑝)(𝜉𝜇
+𝑗−𝑝),
+(16a)
+𝑆𝑖(𝑡) = Θ
+(
+∑
+𝑗
+𝑊𝑖𝑗𝑆𝑗(𝑡−1) −𝑇
+)
+,
+(16b)
+𝑚𝜇=
+1 
+𝑝(1 −𝑝)𝑁
+𝑁
+∑
+𝜇=1
+(𝜉𝜇
+𝑖−𝑝)𝑆𝑖(𝑡).
+(16c)
+In the model, 𝑁represents the number of neurons that have a uniform threshold 𝑇. 𝑊𝑖𝑗sign­fies the weights of the synaptic 
+connections, 𝑆𝑖(𝑡) designates the updating rule for neuron 𝑖at time 𝑡, Θ is the step function, 𝜉𝜇represents the memory patterns 
+and the performance of the network is measured by the activities of the memories, d­fined by the overlaps 𝑚𝜇. The elements of 
+each memory pattern are chosen to be 1 with probability 𝑝and 0 with probability (1 −𝑝), with 𝑝<< 1. An observation is made by 
+multiplying all remaining synaptic weights by a common factor, the deterioration of memory retrieval due to synaptic deletion can 
+be much delayed. This is consistent with the experimental finding that synapse loss initially preserves the total synaptic area per unit 
+volume (TSA).
+We have already discussed the contribution of the APOE gene to AD. A Markov mathematical model based on the relationship 
+between the APOE gene and AD has been formed in [111]. Such a model represents each genotype; the transition intensities in each 
+model will diﬀer, showing the various genetic risks. The selection of states is determined by occurrences researched in the medical and 
+epidemiological literature. Moreover, the estimation of transition intensities using medical and epidemiological literature is described 
+in the paper.
+3.2.4. Age and gender in AD
+C.S. Drapaca [52] proposed a temporal mathematical model of AD and used fractional order diﬀerential equations to describe 
+the temporal evolution. The model contains the following population: surviving neurons, dead neurons, activated microglia in a pro­
+inflammatory and anti-inflammatory state, quiescent astrocytes, proliferative reactive astrocytes and aggregation-prone A𝛽fibrils. 
+The method is generalized by Puri & Li [134]. The variable fractional order elucidates the concept of fading memory resulting from 
+the neuro-protection loss caused by AD. The authors presented numerical evidence indicating that the reduction in the population of 
+surviving neurons is more conspicuous in postmenopausal female patients when compared to males at the equivalent stage of AD.
+As we know, AD biomarkers include both the A𝛽and 𝜏pathology. Authors [63] used an inclusive approach to estimate prevalence 
+incorporating both symptomatic AD individuals and those at elevated risk, including A𝛽-positive (A𝛽-deposition) persons without 
+considering 𝜏pathology or other neurocognitive disorders. In this study, the global burden of AD is characterized by providing data 
+on country, gender and age. Using this data, we have plotted a bar chart to show the global mean prevalence with respect to age for 
+males and females in Fig. 8.
+3.3. Modeling AD in terms of metal ions
+AD has been extensively studied by metal ions, particularly focusing on the role of metals such as copper, zinc and iron in the 
+pathogenesis of the disease. To understand the intricate relationship between AD and metal ions, and its insights from mathematics, 
+we review some models in this subsection.
+Metal ions have an important role for regulating the rate of A𝛽protein aggregation into senile plaques. Asili et al. [12] intro­
+duced a mathematical model comprising kinetic equations to depict the self-assembly of A𝛽proteins in presence of metal ions. The 
+mathematical model involving kinetics equations is given by
+
+Physics of Life Reviews 52 (2025) 207–244
+221
+M. Maji and S. Khajanchi 
+Fig. 8. A bar chart diagram, showing an age-specific global mean prevalence of A𝛽-positive AD dementia for (a) women and (b) men. Data taken from [63]. 
+𝑑𝐼1(𝑡)
+𝑑𝑡 
+= 𝑘𝑛𝑔(𝑡,1,1)2 −𝑘𝑛ℎ𝑚(𝑡)𝐼1(𝑡),
+(17a)
+𝑑𝐼2(𝑡)
+𝑑𝑡 
+= 𝑘𝑛𝑔(𝑡,1,1)2,
+(17b)
+𝑑𝐼3(𝑡)
+𝑑𝑡 
+= 2𝑘𝑛𝑔(𝑡,1,1)2 + 𝑘ℎ𝑔(𝑡,1,1)𝐼1(𝑡) −𝑘𝑛ℎ𝑚(𝑡)𝐼3(𝑡),
+(17c)
+𝑑𝐼4(𝑡)
+𝑑𝑡 
+= 2𝑘𝑛𝑔(𝑡,1,1)2 + 𝑘ℎ𝑔(𝑡,1,1)𝐼1(𝑡) + 𝑘𝑛ℎ𝑚(𝑡)𝐼2(𝑡),
+(17d)
+𝑑𝐼5(𝑡)
+𝑑𝑡 
+= 2𝑘𝑛𝑔(𝑡,1,1)2 + 𝑘ℎ𝑔(𝑡,1,1)𝐼1(𝑡),
+(17e)
+where 𝐼1 and 𝐼3 signify the homogeneous moments corresponding to the collective number of aggregated homogeneous complexes and 
+the bonded proteins/metals, respectively. On the other hand, 𝐼2, 𝐼4 and 𝐼5 are used to denote the total filaments, bonded proteins and 
+bonded metal ions, respectively. Additionally, 𝑔(𝑡,1,1) represents the time-varying concentration of A𝛽protein and metal complexes, 
+speciﬁcally the initial product arising from the reaction between metal ions and A𝛽protein. The parameters 𝑘𝑛, 𝑘ℎand 𝑘𝑛ℎstand for the 
+nucleation rate, homogeneous aggregation rate and non-homogeneous aggregation rate, respectively. The concentration of A𝛽protein 
+is d­fined by 𝑚(𝑡). The authors have non-dimensionalized their model (17) and deployed singular perturbation theory to explore the 
+timescales involved in metal-protein aggregation processes. The numerical simulations eﬀectively capture three signiﬁcant events: the 
+formation of amyloid-metal complexes, the homogeneous aggregation of these complexes and their non-homogeneous aggregation.
+3.4. Modeling AD in terms of its hallmarks responsible proteins
+The two biomarkers of AD that have been discovered by Dr. Alzheimer were A𝛽plaque and NFTs. The main proteins that are 
+responsible for the formation of the biomarkers are A𝛽protein and 𝜏protein. In this subsection, we review such models that include 
+A𝛽protein and 𝜏protein as components.
+One important result came out: the presence of protein-protein interactions in neurodegenerative disorders. Moreover, Thompson 
+et al. [156] extracted three crucial modes of interactions: (a) the seeding of new toxic 𝜏protein is enhanced by the presence of 
+A𝛽protein; (b) the toxicity of A𝛽protein depends on the presence of 𝜏protein; and (c) A𝛽protein and 𝜏protein enhance each 
+other’s toxicity. Taking observation (a) into consideration, the authors proposed a spatiotemporal continuous and a network-based 
+mathematical model. The spatiotemporal continuous model (see Fig. 9) can be expressed as 
+𝜕𝐴1
+𝜕𝑡 = ∇.(𝐷1∇𝐴1) + 𝑎0 −𝑎1𝐴1 −𝑎2𝐴1𝐴2,
+(18a)
+𝜕𝐴2
+𝜕𝑡 = ∇.(𝐷2∇𝐴2) −̃𝑎1𝐴2 + 𝑎2𝐴1𝐴2,
+(18b)
+𝜕𝐴3
+𝜕𝑡 = ∇.(𝐷3∇𝐴3) + 𝑏0 −𝑏1𝐴3 −𝑏2𝐴3𝐴4 −𝑏3𝐴2𝐴3𝐴4,
+(18c)
+𝜕𝐴4
+𝜕𝑡 = ∇.(𝐷4∇𝐴4) −̃𝑏1𝐴4 + 𝑏2𝐴3𝐴4 + 𝑏3𝐴2𝐴3𝐴4.
+(18d)
+The authors formed the mathematical models by dividing a protein into its healthy and toxic variants. (18a) and (18b) show a 
+heterodimer model for the healthy and toxic variants of the A𝛽protein, and the last two equations (18c) and (18d) represent a 
+heterodimer model for the healthy and toxic variants of the 𝜏protein. 𝐷𝑖(𝑖= 1,2,3,4) are the symmetric diﬀusion tensors of the 
+spreading of each protein. The 𝑏3 term is for the interaction term of A𝛽and 𝜏proteins. The parameters 𝑎0 and 𝑏0 signify the rates of 
+production for healthy A𝛽and 𝜏proteins, respectively. Meanwhile, 𝑎1, 𝑏1, ̃𝑎1 and ̃𝑏1 denote the average clearance rates for healthy 
+and toxic proteins. Finally, 𝑎2 and 𝑏2 describe the typical conversion rates from healthy proteins to toxic proteins. In a network 
+context, the diﬀusion term will be replaced by the weighted graph Laplacian 𝐿. It is d­fined by
+
+Physics of Life Reviews 52 (2025) 207–244
+222
+M. Maji and S. Khajanchi 
+Fig. 9. Schematic diagram represents model (18) which describes the evolution of healthy A𝛽protein, toxic A𝛽protein, healthy 𝜏protein and toxic 𝜏protein. The 
+deﬁnitions of all the parameters are given in the description part of the mathematical model (18).
+𝐿𝑖𝑗= ̃𝜌(𝐷𝑖𝑗−𝑊𝑖𝑗),  𝑖,𝑗= 1,2,...,𝑉,
+where ̃𝜌represents the overarching eﬀective diﬀusion constant. The weighted degree matrix can be d­fined as a diagonal matrix with 
+its elements being:
+𝐷𝑖𝑖=
+𝑉∑
+𝑗=1 
+𝑊𝑖𝑗, 𝑖,𝑗= 1,2,...,𝑉,
+𝑊𝑖𝑗=
+𝑛𝑖𝑗
+𝑙2
+𝑖𝑗
+, 𝑖,𝑗= 1,2,...,𝑉.
+Given that 𝑛𝑖𝑗represents the average fiber number and 𝑙𝑖𝑗denotes the average distance between node 𝑖and node 𝑗. The network 
+based mathematical model is given by
+𝑑𝐴1𝑗
+𝑑𝑡 = −
+𝑉∑
+𝑘=1
+𝐿𝑗𝑘𝐴1𝑘+ 𝑎0 −𝑎1𝐴1𝑗−𝑎2𝐴1𝑗𝐴2𝑗,
+(19a)
+𝑑𝐴2𝑗
+𝑑𝑡 = −
+𝑉∑
+𝑘=1
+𝐿𝑗𝑘𝐴2𝑘−̃𝑎1𝐴2𝑗+ 𝑎2𝐴1𝑗𝐴2𝑗,
+(19b)
+𝑑𝐴3𝑗
+𝑑𝑡 = −
+𝑉∑
+𝑘=1
+𝐿𝑗𝑘𝐴3𝑘+ 𝑏0 −𝑏1𝐴3𝑗−𝑏2𝐴2𝑗𝐴3𝑗−𝑏3𝐴2𝑗𝐴3𝑗𝐴4𝑗,
+(19c)
+𝑑𝐴4𝑗
+𝑑𝑡 = −
+𝑉∑
+𝑘=1
+𝐿𝑗𝑘𝐴4𝑘−̃𝑏1𝐴4𝑗+ 𝑏2𝐴3𝑗𝐴4𝑗+ 𝑏3𝐴2𝑗𝐴3𝑗𝐴4𝑗.
+(19d)
+𝐴1𝑗, 𝐴2𝑗, 𝐴3𝑗and 𝐴4𝑗are the concentrations of healthy and toxic A𝛽and 𝜏proteins at node 𝑗, respectively, for the network model. 
+The meanings of the parameters are the same as in the continuous model. This work revealed how 𝜏and A𝛽proteins may interact 
+together to enhance nucleation and spread many diseases.
+Nonlocal interactions take place between non-adjacent locations. Presence of nonlocal interaction shows that movement has a 
+large spatial scale and a slow temporal scale compared to explicit models [99]. Nonlocal models are useful to biologists because 
+such models depict biological processes on scales that make observation, gathering data and easy to understand. Thompson et al. 
+[156] proposed a spatiotemporal continuous and network-based mathematical model and considered the state variables by dividing a 
+protein into its healthy and toxic variants. However the authors didn’t consider the nonlocal eﬀect in their modeling approach. Based 
+on the observations (model (18)) that the concentration changes in A𝛽and 𝜏proteins are crucial for the progression of AD, a nonlocal 
+continuous model and a nonlocal network model have been proposed by Pal & Melnik [122]. Instead of taking exponential growth 
+for the proteins (A𝛽and 𝜏), logistic growth for both proteins is taken into consideration [116]. The nonlocal continuous model is 
+given by
+𝜕𝐴1
+𝜕𝑡 = ∇.(𝐷1∇𝐴1) + (𝑎0 −𝑎1𝐴1)𝐴1 −
+𝑎2𝐴1
+1 + 𝑐1𝐴1
+𝜙∗𝐴2,
+(20a)
+𝜕𝐴2
+𝜕𝑡 = ∇.(𝐷2∇𝐴2) −̃𝑎1𝐴2 + 𝑎2𝐴2𝜙∗
+(
+𝐴1
+1 + 𝑐1𝐴1
+)
+,
+(20b)
+𝜕𝐴3
+𝜕𝑡 = ∇.(𝐷3∇𝐴3) + (𝑏0 −𝑏1𝐴3)𝐴3 −𝑏3𝐴2𝐴3𝐴4 −
+𝑏2𝐴3
+1 + 𝑐2𝐴3
+𝜙∗𝐴4,
+(20c)
+
+Physics of Life Reviews 52 (2025) 207–244
+223
+M. Maji and S. Khajanchi 
+𝜕𝐴4
+𝜕𝑡 = ∇.(𝐷4∇𝐴4) −̃𝑏1𝐴4 + 𝑏3𝐴2𝐴3𝐴4 + 𝑏2𝐴4𝜙∗
+(
+𝐴3
+1 + 𝑐2𝐴3
+)
+.
+(20d)
+The symbol 𝜙denotes the kernel function, which serves as a description of the conversion eﬃciencies between spatial points denoted 
+as 𝑥and 𝑦. The convolution term, denoted as 𝜙∗𝑢, speciﬁcally refers to the result of applying the convolution operation at a particular 
+spatial point represented by 𝑥,
+𝜙∗𝑢(𝑥,𝑡) = ∫
+Ω 
+𝜙(𝑥−𝑦)𝑢(𝑦,𝑡) 𝑑𝑦.
+Here, 𝐷𝑖(𝑖= 1,2,3,4) represents the symmetric diﬀusion tensors of the spreading of each protein. The parameters 𝑐1 and 𝑐2 have units 
+of the reciprocal concentrations of the healthy proteins of A𝛽and 𝜏, respectively. The meanings of the parameters and the deﬁnitions 
+of 𝐿𝑖𝑗, 𝐷𝑖𝑖and 𝑊𝑖𝑗are as same as before. The network based mathematical model is given by
+𝑑𝐴1𝑗
+𝑑𝑡 = −
+𝑉∑
+𝑘=1
+𝐿𝑗𝑘𝐴1𝑘+ (𝑎0 −𝑎1𝐴1𝑗)𝐴1𝑗−
+𝑎2𝐴1𝑗
+1 + 𝑐1𝐴1𝑗
+𝜙𝑗∗𝐴2𝑗,
+(21a)
+𝑑𝐴2𝑗
+𝑑𝑡 = −
+𝑉∑
+𝑘=1
+𝐿𝑗𝑘𝐴2𝑘−̃𝑎1𝐴2𝑗+ 𝑎2𝐴2𝑗𝜙𝑗∗
+(
+𝐴1𝑗
+1 + 𝑐1𝐴1𝑗
+)
+,
+(21b)
+𝑑𝐴3𝑗
+𝑑𝑡 = −
+𝑉∑
+𝑘=1
+𝐿𝑗𝑘𝐴3𝑘+ (𝑏0 −𝑏1𝐴3𝑗)𝐴3𝑗−
+𝑏2𝐴3𝑗
+1 + 𝑐2𝐴3𝑗
+𝜙𝑗∗𝑥28𝑗−𝑏3𝐴2𝑗𝐴3𝑗𝐴4𝑗,
+(21c)
+𝑑𝐴4𝑗
+𝑑𝑡 = −
+𝑉∑
+𝑘=1
+𝐿𝑗𝑘𝐴4𝑘−̃𝑏1𝐴4𝑗+ 𝑏2𝐴4𝑗𝜙𝑗∗
+(
+𝐴3𝑗
+1 + 𝑐2𝐴3𝑗
+)
++ 𝑏3𝐴2𝑗𝐴3𝑗𝐴4𝑗,
+(21d)
+where
+𝜙𝑗∗𝑢𝑗=
+𝑁
+∑
+𝑛=1 
+𝑉𝑗(𝑛)𝑢𝑗
+is the convolution at node 𝑗. 𝐴1𝑗, 𝐴2𝑗, 𝐴3𝑗and 𝐴4𝑗are the concentrations of healthy A𝛽, toxic A𝛽, healthy 𝜏and toxic 𝜏proteins at 
+node 𝑗, respectively, for the network model. The meanings of the parameters are the same as in the continuous model. The study has 
+determined that the distribution patterns of toxic concentrations throughout the entire brain remain consistent, although the actual 
+concentrations vary across distinct regions. Furthermore, the time required for the propagation of damage within each region of the 
+brain’s connectome exhibits variations.
+In the work [16], the temporal evolution of AD is thought to be aﬀected by three mechanisms: the diﬀusion and aggregate formation 
+of soluble A𝛽protein, the eﬀects of phosphorylated 𝜏protein and the prion-like transmission of the disease between neurons. With 
+the help of a system of Smoluchowski equations, an evolution equation and a kinetic-type transport equation, a mathematical model 
+is formed. The model is given by
+𝜕𝑡𝑔+ 𝜕𝑎(𝑔𝑣[𝑔]) = 𝐽[𝑔],
+(22a)
+𝜖𝜕𝑡𝑣1 −𝑑1Δ𝑣1 = −𝛼𝑣1(𝑣1 + 𝑣2 + 𝑣3) + [𝑔] −𝜎1𝑣1,
+(22b)
+𝜀𝑣2 −𝑑2Δ𝑣2 = 𝛼
+2 𝑣2
+1 −𝛼𝑣2(𝑣1 + 𝑣2 + 𝑣3) −𝜎2𝑣2,
+(22c)
+𝜀𝑣3 = 𝛼
+2 
+∑
+3≤𝑗+𝑘<6
+𝑣𝑗𝑣𝑘,
+(22d)
+𝜕𝑡𝑢= 𝐶𝑢(𝑣2 −𝑈𝑢)+ + ∫
+Ω 
+ℎ𝑢(|𝑦−𝑥|)𝑢(𝑦,𝑡)𝑑𝑦,
+(22e)
+where 𝑓is the probability density function of the degree of malfunctioning 𝑎∈[0,1] of neurons located in 𝑥∈Ω at time 𝑡. 𝑣1 and 𝑣3
+are the densities of monomers and senile plaques, respectively. 𝑣2 is the cumulative density of soluble oligomers. Here, 𝑥is considered 
+as a space variable. Two time scales are taken to describe the AD’s evolution: a short 𝑠-scale and a long 𝑡-scale (𝑡= 𝜖𝑠, 0 < 𝜖<< 1). 
+𝛼is the coagulation parameter constant and the density for the toxicity of the phosphorylated 𝜏is 𝑢(𝑥,𝑡). The deterioration rate is
+𝑣[𝑔](𝑥,𝑎,𝑡) = 𝐶1
+1 
+∫
+0 
+(𝑏−𝑎)+𝑔(𝑥,𝑏,𝑡)𝑑𝑏+ 𝐶2(1 −𝑎)(𝑣2(𝑥,𝑡) −̄𝑈)+ + 𝐶3(1 −𝑎)𝑢(𝑥,𝑡).
+(23)
+The possible random onset of AD describes the term
+𝐽[𝑔](𝑥,𝑎,𝑡) = 𝜂
+⎛
+⎜
+⎜⎝
+1 
+∫
+0 
+𝑄(𝑡,𝑥,𝑎∗→𝑎)𝑓(𝑥,𝑎∗,𝑡)𝑑𝑎∗−𝑔(𝑥,𝑎,𝑡)
+⎞
+⎟
+⎟⎠
+.
+(24)
+
+Physics of Life Reviews 52 (2025) 207–244
+224
+M. Maji and S. Khajanchi 
+The production of A𝛽monomers by neurons is described by
+[𝑔](𝑥,𝑡) = 𝐶4
+1 
+∫
+0 
+(𝜇0 + 𝑎)(1 −𝑎)𝑔(𝑥,𝑎,𝑡)𝑑𝑎.
+(25)
+In essence, the researchers aimed to explore how the interaction between A𝛽protein and 𝜏protein i­fluences the progression of AD. 
+The study’s findings suggest that 𝜏protein interacts with A𝛽protein, hastening the pathological processes associated with AD. If A𝛽
+protein phosphorylates enough 𝜏protein, then that could drive AD pathology. Hence, the interaction of 𝜏protein and A𝛽protein 
+plays an important role in AD.
+The intrinsic interaction of A𝛽protein and 𝜏protein would better predict cognitive impairment. Using the hypothesis, Han & Shi 
+[67] proposed an A𝛽-𝜏interactive model. As a result, it is depicted that A𝛽protein promotes 𝜏protein phosphorylation, truncation 
+and aggregation, whereas 𝜏protein induces the formation of A𝛽protein and this interaction accelerates the progression of AD.
+The paper by M Corti [37] performs a sensitivity analysis of heterodimer and Fisher-Kolmogorov (FK) models to study the spread 
+of 𝜏protein and A𝛽in AD. The heterodimer model describes the dynamics of healthy protein 𝑔1(𝑥,𝑡,𝐯) and misfolded protein 𝑔2(𝑥,𝑡,𝐯)
+concentrations. The model is given as below:
+𝜕𝑔1
+𝜕𝑡 = ∇⋅(𝐷∇𝑔1) −𝑘1𝑔1 −𝑘12𝑔1𝑔2 + 𝑘0,
+(26a)
+𝜕𝑞
+𝜕𝑡 = ∇⋅(𝐷∇𝑔2) −̃𝑘1𝑔2 + 𝑘12𝑔1𝑔2,
+(26b)
+with boundary conditions: (𝐷∇𝑔1) ⋅𝐧= 0, (𝐷∇𝑔2) ⋅𝐧= 0 on 𝜕Ω × (0,𝑇] × Γ, and initial conditions: 𝑔1(𝑥,0,𝐯) = 𝑔0
+1(𝑥,𝐯), 𝑔2(𝑥,0,𝐯) =
+𝑔0
+2(𝑥,𝐯) in Ω × Γ. It is assumed that the reaction parameters are dependent on a vector of parameters 𝐯∈Γ ⊆ℝ𝑁, where Γ =
+Γ1 × ⋯× Γ𝑁is a hyperrectangle and 𝐯is randomly varying. For a final time 𝑇> 0, the problem depends on time 𝑡∈(0,𝑇] and space 
+𝑥∈Ω ⊂ℝ𝑑(with 𝑑= 2,3). Here, Ω is an open, bounded domain of ℝ𝑑. The Fisher-Kolmogorov (FK) model is a simpl­fied version of 
+the heterodimer model that tracks the relative concentration of misfolded proteins 𝑐(𝑥,𝑡,𝐯), where:
+𝑐(𝑥,𝑡,𝐯) = 𝑔2(𝑥,𝑡,𝐯)
+𝑔2max
+with 𝑔2max = 𝑘0
+̃𝑘1
+−𝑘1
+𝑘12
+.
+The governing equation for the FK model is:
+𝜕𝑐
+𝜕𝑡 = ∇⋅(𝐷∇𝑐) + 𝛼𝑐(1 −𝑐),
+(26c)
+with boundary conditions: (𝐷∇𝑐) ⋅𝐧= 0 on 𝜕Ω × (0,𝑇] × Γ, and initial condition: 𝑐(𝑥,0,𝐯) = 𝑐0(𝑥,𝐯) in Ω × Γ. Here, 𝛼= 𝛼(𝑥,𝐯) is the 
+conversion rate, describes the misfolding, clearance and protein production processes within a single term. This model’s parameters 
+are calibrated using biological data from AD patients. Advanced numerical methods such as IMEX-DG are applied to simulate protein 
+propagation in the brain. Sensitivity analysis in FK model highlights the importance of initial protein levels in determining the 
+progression of misfolded proteins. The study compares both models, concluding that while the FK model provides comparable results 
+for A𝛽spreading, the heterodimer model better captures 𝜏protein dynamics, particularly oscillatory behavior observed in high 
+concentrations.
+3.5. Modeling AD in terms of chemicals
+In this subsection, we go through the mathematical models that involve chemicals concerning AD. Many works have been done 
+on calcium signaling. Some chemicals might contribute to oxidative stress and i­flammation, causing AD.
+Ehrenstein et al. [53] proposed that an increase in the concentration of A𝛽protein in brain tissue causes an increased leakage of 
+choline and that reduced acetylcholine production. To understand this situation, the authors formed a mathematical model with a pair 
+of ODEs consisting of extracellular concentration of acetylcholine 𝐸1 and the extracellular concentration of A𝛽𝐸2. The mathematical 
+model is given by
+𝑑𝐸1
+𝑑𝑡 = −𝑘1𝐸1𝐸2,
+(27a)
+𝑑𝐸2
+𝑑𝑡 = 𝑘2 −𝑘3𝐸1 −𝑘4𝐸2,
+(27b)
+where 𝑘1 represents the loss of intracellular choline and 𝑘3 represents the eﬀect of extracellular acetylcholine. 𝑘2 describes the rate 
+of A𝛽protein production, while 𝑘4 sign­fies the rate of decay. The authors have demonstrated that the choline-leakage hypothesis 
+consistent with numerous experimental observations. Furthermore, the solutions derived from the aforementioned ODEs suggest that 
+the reduction in acetylcholine levels is highly responsive to the initial rate of A𝛽protein production.
+A model for chemotaxis in the presence of both chemoattractant and chemorepellent signaling chemicals has been developed 
+[84,110]. The main goal was to investigate whether the interaction of the chemicals may form aggregates of microglia. The proposed 
+dual-gradient system is described as follows
+𝜕𝐻1
+𝜕𝑡 = △𝐻1 −∇.(𝜒1𝐻1∇𝐻2) + ∇.(𝜒2𝑓(𝐻1)∇𝐻3),
+(28a)
+
+Physics of Life Reviews 52 (2025) 207–244
+225
+M. Maji and S. Khajanchi 
+Fig. 10. Schematic diagram representation of the model (30) describing the interplay between Ca2+ and A𝛽in AD. The deﬁnitions of all the parameters are given in 
+the description part of the mathematical model (30).
+𝜏1
+𝜕𝐻2
+𝜕𝑡 = △𝐻2 + 𝛼1𝐻1 −𝛽1𝐻2,
+(28b)
+𝜏2
+𝜕𝐻3
+𝜕𝑡 = △𝐻3 + 𝛼2𝐻1 −𝛽2𝐻3,
+(28c)
+where △≡
+𝜕2
+𝜕𝑥2 . In the above equations 𝐻1, 𝐻2 and 𝐻3 denote the density of microglia, chemoattractant and chemorepellent, 
+respectively. The chemotactic coeﬃcients 𝜒1 and 𝜒2 measuring the strength of attraction and repulsion, respectively and 𝜏1 and 𝜏2
+are the scaling constants. The production and degeneration rates of chemoattractants are 𝛼1 and 𝛽1, respectively; whereas 𝛼2 and 𝛽2
+are the production and degeneration rates of chemorepellent, respectively. Luca et al. [110] considered 𝑓(𝐻1) = 𝐻1 in the model 
+(28). The numerical simulations and linear stability analysis of the system suggest that periodic patterns occur in cells when both 
+attraction and repulsion are strong, but repulsion is longer-ranged while attraction is short-ranged. It has been observed that the 
+solution of the model exhibits one of two behaviors: it either experiences a rapid and uncontrolled increase, leading to instability, or 
+it converges to a fixed asymptotic value, signifying the absence of aggregation pattern. Due to the usability to produce aggregation 
+patterns, Jin & Wang [84] mod­fied the model as
+𝑓(𝐻1) =
+{
+𝐻𝑛
+1
+for 𝑛≥1,
+𝐻1(𝐻1 + 1)𝑛−1
+for 0 < 𝑛< 1.
+For 𝑛> 1, the model possesses a singular global classical solution, signifying the absence of an asymptotic constant. Consequently, 
+this condition allows for the existence of an aggregation pattern.
+Dave & Jha [42] delved into the analysis of a three-dimensional reaction-advection-diffusion equation which describes the dis­
+tribution of calcium concentrations while accounting for the presence of calcium-binding buffers. The mathematical model is as 
+follows:
+𝜕𝐵1
+𝜕𝑡 = 𝐷1
+(𝜕2𝐵1
+𝜕𝑥2 + 𝜕2𝐵1
+𝜕𝑦2 + 𝜕2𝐵1
+𝜕𝑧2
+)
++
+∑
+𝑗
+𝑅𝑗,
+(29a)
+𝜕𝐵2
+𝜕𝑡 = 𝐷2
+(𝜕2𝐵2
+𝜕𝑥2 + 𝜕2𝐵2
+𝜕𝑦2 + 𝜕2𝐵1
+𝜕𝑧2
+)
++
+∑
+𝑗
+𝑅𝑗,
+(29b)
+𝜕𝐵3
+𝜕𝑡 = 𝐷3
+(𝜕2𝐵3
+𝜕𝑥2 + 𝜕2𝐵2
+𝜕𝑦2 + 𝜕2𝐵1
+𝜕𝑧2
+)
+−
+∑
+𝑗
+𝑅𝑗,
+(29c)
+where
+𝑅𝑗= −𝑘+
+𝑗𝐵2𝐵1 + 𝑘−
+𝑗𝐵3.
+(29d)
+In the above model, 𝐵1, 𝐵2 and 𝐵3 refer to calcium ([𝐶𝑎2+]), buffer ([𝐵]) and calcium-bounded buffers ([𝐶𝑎𝐵]), respectively. The 
+association and dissociation rate constants are denoted as 𝑘+ and 𝑘−, respectively. The variable 𝑗, ranging from 1 to 𝑛, represents 
+the number of buffer species being considered. The following is the developed three-dimensional equation under the i­fluence of 
+reaction, advection and diﬀusion, describes the distribution of calcium concentration in the presence of calcium-binding buffers
+𝜕𝐵1
+𝜕𝑡 = 𝐷1𝑥
+𝜕2𝐵1
+𝜕𝑥2 + 𝐷2𝑦
+𝜕2𝐵1
+𝜕𝑦2 + 𝐷3𝑧
+𝜕2𝐵1
+𝜕𝑧2 −𝑢𝜕𝐵1
+𝜕𝑥 −𝑣𝜕𝐵1
+𝜕𝑦 −𝑤𝜕𝐵1
+𝜕𝑧 −𝑘+
+𝑗[𝐵∗
+2](𝐵1 −𝐵∗
+1),
+(29e)
+where 𝐷1𝑥, 𝐷2𝑦and 𝐷3𝑧are the diﬀusion coeﬃcients. 𝑢, 𝑣and 𝑤are flux velocities in the 𝑥, 𝑦and 𝑧directions. 𝐵∗
+2 and 𝐵∗
+1 are the 
+buffers and background calcium concentrations, respectively. Laplace and similarity transforms play a pivotal role in obtaining the 
+mathematical solutions, necessary for understanding the dynamics. It can be concluded that buffer concentration and ainity have 
+a considerable i­fluence on the level of cytosolic calcium concentration. It becomes evident that a decrease in buffer concentration 
+leads to an elevation in calcium levels, potentially culminating in toxicity and neurodegeneration, which in turn could manifest as 
+AD symptoms in healthy neuronal cells.
+In the work of Caluwe & Dupont [27], the authors considered the deterministic model to observe the impact of Ca2+ on the 
+progression of AD (see Fig. 10). The deterministic model is
+
+Physics of Life Reviews 52 (2025) 207–244
+226
+M. Maji and S. Khajanchi 
+𝑑𝑦1
+𝑑𝑡 = 𝑉1 + 𝑉3
+𝑦2
+2
+𝑘2
+3 + 𝑦2
+2
+−𝑘1𝑦1,
+(30a)
+𝑑𝑦2
+𝑑𝑡 = 𝑉2 + 𝑘4𝑦4
+1 −𝑘2𝑦2,
+(30b)
+where 𝑦1 and 𝑦2 are the concentrations of A𝛽protein and intracellular Ca2+, respectively. 𝑉1 and 𝑘1 represent the synthesis rate and 
+clearing rate of A𝛽protein. The flow rate and decay rate of Ca2+ are 𝑉2 and 𝑘2, respectively. The activation of A𝛽protein synthesis 
+through the i­fluence of Ca2+ can be described using the Hill term, which incorporates a maximum synthesis rate denoted as 𝑉3 and 
+a half-saturation constant denoted as 𝑘3. 𝑘4𝑦1 represents the positive feedback of A𝛽protein acting on Ca2+. Numerical simulations 
+revealed that this system exhibits bistable behaviors, which indicates that the system has two stable equilibria in some scenarios.
+Zhang & Wang [171] introduced a novel approach by incorporating stochastic noises and explicit time scales into their model 
+(30) to investigate the i­fluence of stochastic perturbations on the progression of AD and obtained the below model
+𝑑𝑦1 = 𝜖
+(
+𝑉1 + 𝑉3
+𝑦2
+2
+𝑘2
+3 + 𝑦2
+2
+−𝑘1𝑦1
+)
+𝑑𝑡+ 𝜎1
+√
+𝜖𝑦1𝑑𝐵1(𝑡),
+(31a)
+𝑑𝑦2 = (𝑉2 + 𝑘4𝑦1 −𝑘2𝑦2
+)𝑑𝑡+ 𝜎2𝑦2𝑑𝐵2(𝑡),
+(31b)
+where 0 < 𝜖≤1 describes the change in A𝛽protein concentration is much slower than Ca2+ concentration. 𝐵𝑖(𝑖= 1,2) are the 
+standard Wiener processes and 𝜎𝑖(𝑖= 1,2) denote the intensities of noise. The authors focused on the development of analytical 
+criteria to identify stochastic P-bifurcation, employing the slow-fast stochastic system technique. Additionally, they introduced a 
+disease index as a tool to predict the likelihood of disease onset. It is shown that AD progression can be slowed down by controlling 
+the initial level of A𝛽protein and Ca2+ into the basin of a healthy state. The progression can also be slowed down by enhancing the 
+intensity of stochastic noise for Ca2+. A𝛽oligomers can diﬀuse in the brain. In the previous two models only the eﬀects of time is 
+considered, the eﬀect of space was not.
+In this work, Hu et al. [75] considered space and time-dependent noise to make the scenario more realistic and also incorporate 
+diﬀusion into the concentration of A𝛽protein and Ca2+. The mod­fied model is given by
+𝑑𝑦1(𝑥,𝑡) =
+[
+𝐷1Δ𝑦1(𝑥,𝑡) + 𝑉1(𝑥) + 𝑉3(𝑥)
+𝑦2
+2(𝑥,𝑡) 
+𝑘2
+3(𝑥) + 𝑦2
+2(𝑥,𝑡)
+−𝑘1(𝑥)𝑦1(𝑥,𝑡)
+]
+𝑑𝑡
+−𝜎1(𝑥)𝑦1(𝑥,𝑡)𝑑𝐵1(𝑥,𝑡),
+(32a)
+𝑑𝑦2(𝑥,𝑡) =
+[
+𝐷2Δ𝑦2(𝑥,𝑡) + 𝑉2(𝑥) + 𝑉4𝑦1(𝑥,𝑡) −𝑘2(𝑥)𝑦2(𝑥,𝑡)
+]
+𝑑𝑡−𝜎2(𝑥)𝑦2(𝑥,𝑡)𝑑𝐵2(𝑥,𝑡),
+(32b)
+where Δ = ∑3
+𝑖=1
+𝜕2
+𝜕𝑥2
+𝑖
+is the Laplace operator in Γ ⊂ℝ3, is a bounded region. 𝐷1 and 𝐷2 are the diﬀusion coeﬃcients. Using the 
+truncation method, the existence and uniqueness of mild solutions for the system are investigated. It is shown that the permanence 
+of the solution of the system is valid. This conclusion shows that the disease cannot be treated.
+Gao et al. [58] have formulated a stochastic model by considering the extrinsic noise in the cellular microenvironment. The 
+stochastic model is given by
+𝑑𝑦1 =
+(
+𝑉1 + 𝑉3
+𝑦2
+2
+𝑘2
+3 + 𝑦2
+2
+−𝑘1𝑦1
+)
+𝑑𝑡+ 𝜎1𝑦1𝑑𝐵1(𝑡),
+(33a)
+𝑑𝑦2 = 1
+𝜀 
+(𝑉2 + 𝑘4𝑦1 −𝑘2𝑦2
+)𝑑𝑡+ 𝜎2
+√
+𝜀
+𝑦2𝑑𝐵2(𝑡),
+(33b)
+where 0 < 𝜀<< 1. The meanings of the parameters are already given above. In the study, the researchers explored bistable dynamics 
+and conducted an analysis of the existence of an ergodic stationary distribution. Furthermore, the authors investigated the impact 
+of various drug strategies on A𝛽protein and Ca2+. Utilizing a stochastic sensitivity function approach, they constructed co­fidence 
+ellipses that depict the co­figuration of stochastic coexistence equilibria, and estimated the tipping threshold. Within the bistability 
+region, the study uncovers noise-induced stochastic transitions between two coexisting equilibria. This research provides a novel 
+perspective on managing noise for potential AD treatment through physical therapy.
+Rajan et al. [136] conducted a comprehensive investigation in their study, combining various mathematical models to elucidate 
+the intricate relationship among A𝛽depositions, calcium signaling and the occurrence of cell death associated with mitochondrial 
+permeability transition pores in AD. The composite model that they developed, integrated four key molecular species: cytosolic Ca2+
+denoted as CAC, mitochondrial Ca2+ as CAM, endoplasmic reticulum Ca2+ as CAER and the A𝛽protein. Additionally, the model 
+incorporated a node representing mitochondria in a state of high-conductance termed PTPh. The simulation of calcium dynamics 
+in the presence and absence of AD was done using this model. Mitochondrial and cytosolic calcium levels remain low at rest in the 
+absence of AD. However, when AD is present, there is an elevated i­flux of Ca2+ into the cell, accompanied by a disruption in the 
+regulation of Ca2+ channel receptors located on the endoplasmic reticulum. The model allows us to better understand a single series 
+of events, from the accumulation and misfolding of A𝛽inside and surrounding the neuron to neuronal apoptosis.
+In their study, Latulippe et al. [98] introduced a mathematical model designed to replicate the dynamic patterns of Ca2+ ions 
+in the presence of A𝛽protein. Through a series of simulations conducted under various conditions, their findings unveiled that A𝛽
+
+Physics of Life Reviews 52 (2025) 207–244
+227
+M. Maji and S. Khajanchi 
+protein has the capacity to amplify regions characterized by mixed-mode oscillations, which subsequently result in irregular signaling 
+patterns. Furthermore, the authors delved into the impact of A𝛽protein on the individual contributions of inositol triphosphate (IP3) 
+receptors, ryanodine receptors and membrane pores to the overall Ca2+ dynamics. Their research also shed light on the potential 
+of controlling the maximum kinetic response rate of ryanodine receptors as a biophysical strategy to manage and regulate aberrant 
+Ca2+ signals.
+3.6. Neuronal dynamics
+AD interferes with functions that are essential to neurons and their networks. Neurons are the fundamental building blocks of the 
+nervous system. The hallmark pathological causes of AD, including the accumulation of A𝛽plaques and NFTs have a direct impact on 
+neuronal structure and function. The progressive loss of neurons in memory-associated regions of the brain causes cognitive decline, 
+which is one of the factors of AD. The interplay between neurons and the molecular processes involved in AD pathology is essential 
+to understand. Hence, in this subsection, we discuss the models based on neuronal networks.
+Bertsch et al. [15,17] introduced mathematical models that describe the initiation and development of AD by utilizing transport 
+and diﬀusion equations as the foundation of their approach. In the work [15], brain neurons are treated as a continuous medium and 
+organized according to their level of dysfunction. The authors assumed two mechanisms: the diﬀusion and aggregate formation of 
+soluble A𝛽protein and prion-like transmission of the disease between neurons. The authors constructed a mathematical model that 
+utilized a set of Smoluchowski equations to depict amyloid concentration. Additionally, they incorporated a kinetic-type transport 
+equation to d­fine the distribution function of neuronal dysfunction. The numerical results are supported qualitatively by clinical 
+images of AD distribution throughout the brain. The authors [17] investigated the existence and uniqueness of solutions to an initial 
+boundary value problem related to AD. Beyond the inclusion of reaction-diffusion equations, the model also incorporates a transport 
+equation that characterizes neuron malfunctioning. To establish the existence of these solutions, the authors employed a combination 
+of mathematical tools, including the method of characteristics for the transport equation, a priori estimation techniques for solutions 
+of the reaction-diffusion equations, a variation of the classical contraction theorem and the utilization of the Wasserstein metric for 
+assessing probability measure properties.
+Jafari et al. [82] put forward an innovative model centered on Cellular Automata (CA) for investigating the advancement of 
+AD. The model represents the synapses of individual neurons as square cells positioned around a central cell. A crucial parameter 
+within this framework is the A𝛽protein, which is computed using diﬀerential rate equations taken from the model by Puri & Li 
+[134]. Notably, the authors introduced a novel deﬁnition of the AD rate applicable to an M × L-neuron network. Numerically, it is 
+demonstrated that changes in a few parameters have a signiﬁcant impact on the progression of AD. Moreover, their research unveiled 
+that AD rate exhibits a greater sensitivity to changes in astroglia levels compared to microglia.
+Patow et al. [128] has studied the eﬀect of A𝛽and 𝜏on neuronal activity. A whole-brain dynamic model has been used to find 
+the optimal parameters which describes the eﬀects of A𝛽and 𝜏on the excitation-inhibition balance of the local nodes. The authors 
+have found the critical roles for 𝜏and A𝛽in complicated neuronal dynamics. Moreover, it is suggested that models of large-scale 
+brain function in AD may be eﬀectively d­fined using regional distributions.
+The spread of 𝜏and A𝛽throughout a human connectome is modeled by Alexandersen et al. [6] and they look into how the 
+disease aﬀects neuronal dynamics. Early-stage hyperactivation, late-stage hypoactivation and frequency slowing related to AD are all 
+explained. It is demonstrated that hyperactivation and frequency slowing are mostly caused by local neurotoxicity (triggered by 𝜏
+and A𝛽) rather than topological relationships across various areas.
+Stefanovski et al. [151] showed that how computational multi-scale brain model connects the phenomena of many scales and, as 
+a result, helps to find possible disease pathways that might lead to better diagnosis and treatment. Simulations were used to replicate 
+known empirical changes in electroencephalogram (EEG) between AD patients and healthy controls (HCs). In comparison to the mild 
+cognitive impairment (MCI) and HC groups, the virtual AD group had slower frequencies in both simulated local field potentials and 
+EEG.
+Demirtas et al. [48] explored the resting-state functional connectivity (FC) across the entire brain in individuals with preclinical 
+Alzheimer’s disease (PAD), mild cognitive impairment and mild dementia due to AD. The i­fluence of APOE4 carriership and its 
+association with variations in core AD CSF biomarkers are also examined.
+Anthwal et al. [10] formulated a Markov mathematical model taking a hypothesis into account that AD can develop in the brain or 
+through non-neuronal tissues. Using this model, the authors assess the dynamic network containing several cross-talks across diﬀerent 
+states and likely various methods for the genesis of AD. The Markov mathematical model is as follows:
+[ 𝜕
+𝜕𝑡+ 𝛼1 + 𝛽
+]
+𝑝0(𝑡) = 0,
+(34a)
+[ 𝜕
+𝜕𝑡+ 𝛼2 + 𝛼3
+]
+𝑝1(𝑡) = 𝛼1𝑝0(𝑡),
+(34b)
+[ 𝜕
+𝜕𝑡+ 𝛾
+]
+𝑝2(𝑡) = 𝛼2𝑝1(𝑡),
+(34c)
+[ 𝜕
+𝜕𝑡+ 𝛼4
+]
+𝑝3(𝑡) = 𝛼3𝑝1(𝑡) + 𝛽𝑝0(𝑡) + 𝛾𝑝2(𝑡),
+(34d)
+𝜕
+𝜕𝑡𝑝4(𝑡) = 𝛼4𝑝3(𝑡),
+(34e)
+
+Physics of Life Reviews 52 (2025) 207–244
+228
+M. Maji and S. Khajanchi 
+Table 1
+Description of i­fluence rates and associated pathways.
+Influence rates
+Pathways
+𝛼1
+𝑠0 →𝑠1
+𝛼2
+𝑠1 →𝑠2
+Influence rates
+Pathways
+𝛼3
+𝑠1 →𝑠3
+𝛼4
+𝑠3 →𝑠4
+Influence rates
+Pathways
+𝛽
+𝑠0 →𝑠3
+𝛾
+𝑠2 →𝑠3
+with initial conditions
+𝑝𝑖(0) =
+{
+1
+when 𝑖= 0,
+0
+otherwise.
+In the above model, 𝑝𝑖(𝑡) represents the probability of the state 𝑠𝑖(𝑖= 0,1,2,3,4). The states 𝑠𝑖(𝑖= 0,1,2,3,4) are d­fined as no AD 
+state, the A𝛽protein formation state in non-neuronal organs, the A𝛽protein production state by blood cells like platelets, the A𝛽
+protein and A𝛽plaque formation in brain and clinical symptoms state, respectively. The parameters description is given in Table 1. 
+It is suggested in this work that the brain itself has direct involvement in the circumstances that led to the development of AD.
+The study conducted by Kumar et al. [93] explored the relationship between the Wiener’s index, Zagreb group parameter, eccentric 
+connectivity index and the inhibitory activity of thiadiazolidinones on glycogen synthase kinase-3𝛽. To investigate this relationship, 
+the researchers calculated the Wiener’s index, Zagreb group parameter and eccentric connectivity index for each of the 28 analogs 
+of substituted thiadiazolidinones within their dataset. The predictive accuracy of these indices varied across models, with the model 
+based on Zagreb group parameters achieving an overall accuracy of approximately 83%, while the model relying on Wiener’s index 
+demonstrated the highest accuracy, peaking at approximately 87%.
+Utilizing graph theory, Stam et al. [149] delved into the changes within the extensive framework of resting-state brain networks 
+when comparing individuals with AD to non-demented controls. They conducted magneto-encephalograms assessments on 18 AD 
+patients and 18 non-demented control subjects under conditions of no-task and eyes closed. The findings suggest that the vulnerability 
+to AD predominantly aﬀects highly interconnected neural network hubs.
+Phillips et al. [130] investigated how graph creation methods impact structural network properties and group diﬀerences. The 
+authors evaluated the structural connectivity of brain networks using correlation maps of cortical thickness obtained by magnetic 
+resonance imaging (MRI). Four groups were compared in this work. Groups were diﬀerentiated by the Randic index. It is proposed 
+that the extent and orientation of changes related to AD in various graph metrics, including small-world clustering and characteristic 
+path length, are signiﬁcantly impacted by the choice of correlation matrix and edge weights employed during graph construction. 
+The Randic index could prove valuable in monitoring and forecasting the advancement of AD.
+The Smoluchowski equation characterizes the evolving densities of diﬀusing particles with a propensity for pairwise coagulation. 
+In their research, the authors [56] investigated the homogenization process of a set of Smoluchowski’s discrete diffusion-coagulation 
+equations, which model the aggregation and diﬀusion behavior of A𝛽protein peptides. By systematically removing an i­finite number 
+of tiny holes of size 𝜖(neurons), from the immobile region Ω representing brain tissue, the authors have introduced a periodically 
+perforated region denoted as Ω𝜖. This mod­fied domain can accommodate a non-uniform Neumann boundary condition, charac­
+terizing the generation of A𝛽protein at the neuronal membranes. Through their examination, the authors have demonstrated that 
+as 𝜖approaches zero, the solution of this micro-scale model gradually converges, in a two-scale manner, towards the solution of a 
+macro-scale model that exhibits asymptotic consistency with the original one.
+In a recent work, Cabrera-Alvarez et al. [25] developed a mechanistic multi-scale model of AD progression, linking A𝛽and 
+hyperphosphorylated 𝜏. The model showed that changes in neural inhibition, primarily due to A𝛽, drive the electrophysiological 
+changes in AD. It also revealed that early deposit locations of A𝛽and hyperphosphorylated 𝜏determine the disease’s spatiotemporal 
+progression.
+The paper [172] combines Physics-Informed Neural Networks (PINNs) with symbolic regression to discover a reaction-diffusion 
+model for AD, focusing on 𝜏protein misfolding and spreading. PINNs are a type of machine learning model that integrates our prior 
+physics-based knowledge into the training process of neural network. Using longitudinal 𝜏PET data from Alzheimer’s patients and 
+healthy controls, the study ident­fies distinct misfolding models for both groups. The Alzheimer’s group shows a faster tau misfolding 
+process compared to the control group. Authors anticipate that their study will serve as a foundation for more comprehensive analyses, 
+leading to the development of image-based technologies for early diagnosis and, ideally, early treatment of AD and other misfolding­
+protein-based neurodegenerative disorders.
+3.7. AD and lipid rafts
+Lipid rafts are microdomains in the cell membrane and play a crucial role in various cellular processes. Disruptions in lipid raft 
+integrity may impair APP localization and processing, resulting in the generation and accumulation of toxic A𝛽peptides. The authors 
+have formulated agent-based models by considering lipid rafts as agents. In this subsection, we go through such models.
+Santos et al. [143] proposed an agent-based model to investigate the i­fluence of alterations in lipid rafts on the emergence and 
+spread of AD. In this model, individual lipids are capable of interacting with up to four neighboring lipids. The strength of interaction 
+between adjacent lipid pairs is determined through calculations involving non-retarded and additive London-Vander Waals (LVW) 
+attraction forces. The presented model in the paper is as follows:
+
+Physics of Life Reviews 52 (2025) 207–244
+229
+M. Maji and S. Khajanchi 
+𝑀𝑖,𝑗=
+𝑎𝑙
+12
+√
+2𝑑3∕2
+( 𝑟𝑖𝑟𝑗
+𝑟𝑖+ 𝑟𝑗
+)1∕2
+,
+(35a)
+length = 0.154 + 0.1265𝑛 𝑛𝑚,
+(35b)
+volume = 27.4 + 26.9𝑛.10−3 𝑛𝑚3,
+(35c)
+where the Hamaker constant, denoted as 𝑎, falls within the range of 10−20 to 10−19 joule. The variable 𝑙sign­fies the length of 
+individual lipids, while 𝑑represents the distance separating these lipids. Additionally, 𝑟𝑖and 𝑟𝑗correspond to the radii of distinct 
+lipid groups. For saturated fatty acids, their dimensions (length and width) are determined using the formulas referenced as (35b) 
+and (35c), where 𝑛stands for the number of carbon atoms. One observation is that the size of lipid rafts and the mobility of lipids 
+are two crucial characteristics in non-raft domains that grow with age. The agent-based model put forth in this research suggests that 
+increasing the presence of sterols, primarily cholesterol and long-chain polyunsaturated fatty acids, predominantly docosahexaenoic 
+acid (DHA), in the membrane composition might potentially delay the onset and progression of AD.
+Lipid rafts, small domains within nerve cell membranes, play a crucial role in the development of A𝛽proteinopathies. To forecast 
+the structural changes of these domains based on empirical data obtained from the human frontal cortex, Santos & Diaz [142] applied 
+a coarse-grained molecular dynamics mathematical model. The model predicts signiﬁcant size and frequency alterations that can be 
+seen at the earliest neuropathological stage of AD (ADI/II).
+3.8. AD in terms of various responsible components
+We have already discussed about many contributory factors of AD. In this subsection, we discuss such models that involve maxi­
+mum number of possible components. The models are given below.
+A cascade model is comprised of four AD clinical biomarkers, which include pathologic hallmark biomarkers (A𝛽and 𝜏), as well 
+as biomarkers for neuronal loss and cognitive impairment [66,129]. The mathematical model formulated by Petrella et al. [129] is 
+given by
+𝑑𝑁1
+𝑑𝑡 = 𝜆1𝑁1
+(𝑘1 −𝑁1
+) + 𝜆8𝑚0 −𝛿𝑚𝑅𝑥(𝑡),
+(36a)
+𝑑𝑁2
+𝑑𝑡 = 𝜆2𝑁1 + 𝜆9𝑁2(𝑘2 −𝑁2),
+(36b)
+𝑑𝑁3
+𝑑𝑡 = 𝜆2𝑁1 + 𝜆9𝑁2(𝑘2 −𝑁2) + 𝜆10 ̃𝐴,
+(36c)
+𝑑𝑁4
+𝑑𝑡 = 𝜆4(𝑁3 −𝑁2) + 𝜆5𝑁2 + 𝜆11𝑁4
+(𝑘3 −𝑁4
+) + 𝜆12 ̃𝐴,
+(36d)
+𝑑𝑁5
+𝑑𝑡 = 𝜆6𝑁4𝑅+ 𝜆7𝑁5
+(𝑘4 −𝑁5
+) + 𝜆13 ̃𝐴+ 𝜆14𝜖.
+(36e)
+Herein 𝑁1, 𝑁2, 𝑁3, 𝑁4 and 𝑁5 represents the pathology of A𝛽protein, total 𝜏protein, non-amyloid-dependent 𝜏protein, neu­
+rodegeneration and cognitive decline, respectively. 𝜆1, 𝜆9, 𝜆11 and 𝜆7 represents the logistic growth rates of 𝑁1, 𝑁2, 𝑁3 and 𝑁5, 
+respectively and 𝑘1, 𝑘2, 𝑘3 and 𝑘4 are the corresponding carrying capacities. 𝑚0 denotes the amyloidopathy, while 𝑚𝑅𝑥(𝑡) represents 
+the time-dependent function related to anti-A𝛽therapy. The parameters representing aging and/or suspected non Alzheimer pathol­
+ogy (SNAP), cognitive reserve and APOE allele status can be denoted as ̃𝐴, 𝑅and 𝜖, respectively. The degradation rate constant for 
+A𝛽is 𝛿. The authors demonstrated the model’s viability through simulations of biomarker development and cognitive impairment in 
+both early and late-onset natural history scenarios, along with a therapeutic scenario aimed at addressing the core pathology of AD.
+A𝛽, both in soluble and plaque forms, is the first component of the pathophysiological pathways of AD. This encourages 𝜏protein 
+phosphorylation, which causes neurodegeneration and ultimately cognitive impairment, as seen in the disruption of large brain 
+networks. The mathematical model with biomarkers developed by Hao et al. [66] is given by the following system of ODEs
+𝑑𝑁1
+𝑑𝑡 = 𝜆1𝑁1
+(
+1 −𝑁1
+𝑘1
+)
+,
+(37a)
+𝑑𝑁2
+𝑑𝑡 = 𝜆2𝑁1
+(
+1 −𝑁2
+𝑘2
+)
+,
+(37b)
+𝑑𝑁3
+𝑑𝑡 = 𝜆3,
+(37c)
+𝑑𝑁4
+𝑑𝑡 = (𝜆4𝑁3 + 𝜆5𝑁2)
+(
+1 −𝑁4
+𝑘3
+)
+,
+(37d)
+𝑑𝑁5
+𝑑𝑡 = (𝜆6𝑁4 + 𝜆7𝑁2)
+(
+1 −𝑁5
+𝑘4
+)
+.
+(37e)
+Description of the model (37) is given previously (see model (36)). Authors parameterized the temporal model (37) to create a unique 
+feature for each patient using biomarker data from the large, multi-center ‘Alzheimer’s Disease Neuroimaging Initiative (ADNI)’ natu­
+ral history trial. The researchers conducted a personalized optimal treatment study in a computer-based simulation. They introduced 
+
+Physics of Life Reviews 52 (2025) 207–244
+230
+M. Maji and S. Khajanchi 
+Table 2
+Description of rates and associated pathways.
+Rates
+Pathways
+𝛼1
+𝐺3 →𝐺1
+𝛼2
+𝐺4 →𝐺2
+𝛼3
+𝐺6 →𝐺2
+𝛼4
+𝐺5 →𝐺3
+Rates
+Pathways
+𝛼5
+𝐺6 →𝐺4
+𝛼6
+𝐺1 →𝐺5
+𝛼7
+𝐺3 →𝐺5
+𝛼8
+𝐺7⊥𝐺5
+Rates
+Pathways
+𝛼9
+𝐺6⊥𝐺5
+𝛼10
+𝐺2 →𝐺6
+𝛼11
+𝐺1⊥𝐺6
+𝛼12
+𝐺3⊥𝐺6
+Rates
+Pathways
+𝛼13
+𝐺7 →𝐺6
+𝛼14
+𝐺5⊥𝐺6
+𝛼15
+𝐺1 →𝐺7
+𝛼16
+𝐺5⊥𝐺7
+a control function alongside an anti-A𝛽treatment strategy. This optimal treatment approach considered both the potential side eﬀects 
+of anti-A𝛽therapy and the occurrence of amyloid-related imaging abnormalities (ARIA). The simulation results revealed that, when 
+optimizing for the slowing of cognitive decline over a 10-year treatment period, donanemab outperformed aducanumab.
+Researchers formed many mathematical models based on the factors that may be responsible for the progression of AD. Puri & Li 
+[134] introduced a mathematical model consists of seven equations for the cell population of surviving neurons 𝐺1 and dead neurons 
+𝐺2, quiescent astroglia 𝐺3 and proliferating astroglia 𝐺4, normal microglia 𝐺5, reactive microglia 𝐺6 and A𝛽𝐺7. The formulation 
+of the model is as follows:
+𝑑𝐺1
+𝑑𝑡 = 𝛼1𝐺3 −𝛼2𝐺4 −𝛼3𝐺5,
+(38a)
+𝑑𝐺2
+𝑑𝑡 = −𝑑𝐺1
+𝑑𝑡 ,
+(38b)
+𝑑𝐺3
+𝑑𝑡 = 𝛼4𝐺6 −𝛼5𝐺5,
+(38c)
+𝑑𝐺4
+𝑑𝑡 = −𝑑𝐺4
+𝑑𝑡 ,
+(38d)
+𝑑𝐺5
+𝑑𝑡 = (𝛼6 + 𝛼11)𝐺1 −𝛼10𝐺2 + (𝛼7 + 𝛼12)𝐺3 −𝛼9𝐺6 + 𝛼14𝐺5 −(𝛼8 + 𝛼13)𝐺7,
+(38e)
+𝑑𝐺6
+𝑑𝑡 = −𝑑𝐺5
+𝑑𝑡 ,
+(38f)
+𝑑𝐺7
+𝑑𝑡 = 𝛼15𝐺1 −𝛼16𝐺5.
+(38g)
+The rates 𝛼𝑖(𝑖=1 to 16) and the corresponding pathways of AD mechanism of (38) are given in Table 2.
+The model suggests that improving the control of reactive microglia and A𝛽protein by normal microglia, are the two interventions 
+that will be most ben­ficial. To identify AD’s beginning and comprehend processes for eﬃcient disease prevention and treatment, 
+microglia are a critical node.
+The authors [169] incorporated fractal-fractional calculus with the Caputo derivative into the mathematical model proposed by 
+Puri & Li [134] which analyze the dynamics of key cell populations, such as A𝛽, neurons, astroglia and microglia. The authors demon­
+strated the existence and uniqueness of solutions using the fractal fractional operator, employing Leray-Schaefer’s theorem and the 
+Banach fixed-point methods. The stability of the proposed model was analyzed using Ulam-Hyers conditions. Numerical simulations 
+were done by using the Adams-Bashforth method. Results show that the fractal-fractional approach provides more accurate insights 
+into the disease’s progression compared to traditional models.
+Michaelis-Menten kinetics [13] represents an enzyme kinetics model that describes how the concentration of an enzyme and its 
+substrate aﬀect the rate of an enzyme-catalyzed reaction. The Michaelis-Menten equation for the initial rate of reaction is
+𝑣= 𝑣𝑚𝑎𝑥[𝑠] 
+𝑘𝑀+ [𝑠],
+(39)
+where 𝑣𝑚𝑎𝑥is the maximum rate of the reaction and [𝑠] is the initial substrate concentration. 𝑘𝑀is the Michaelis constant. The 
+Michaelis-Menten kinetics are used in forming mathematical models of degenerative diseases [65,163]. Hao & Friedman [65] intro­
+duced a mathematical model consisting of partial diﬀerential equations involving live and dead neurons, astrocytes, microglia and 
+peripheral macrophages, A𝛽proteins within neurons, A𝛽proteins outside neurons, NFTs, soluble A𝛽oligomers, high mobility group 
+box 1 (HMGB-1) and hyperphosphorylated-𝜏proteins. The equation of live neurons 𝑅1 that includes the concept of Michaelis-Menten 
+kinetics is
+𝜕𝑅1
+𝜕𝑡 = −𝑑2
+𝑅2
+𝑅2 + 𝐾2
+𝑅1 −𝑑3
+𝑅3
+𝑅3 + 𝐾3
+1 
+1 + 𝛾𝑅4∕𝐾4
+𝑅1.
+(40a)
+In the above equation, 𝑅2, 𝑅3 and 𝑅4 represent the populations for NFTs inside neurons, pro-inflammatory cytokines and anti­
+inflammatory cytokines, respectively. 𝑑2 and 𝑑3 denote the death rates. 𝐾2, 𝐾3 and 𝐾4 represents Michaelis-Menten coeﬃcients. 
+Microglia are one type of glial cell that is activated by soluble A𝛽oligomers [47] and extracellular NFTs [154]. Dividing the activated 
+microglia into two phenotypes: pro-inflammatory and anti-inflammatory, the authors have given the equations for pro-inflammatory 
+microglia (𝑅5) and anti-inflammatory microglia (𝑅6) as
+𝜕𝑅5
+𝜕𝑡 + ∇.(𝑅5∇𝑅10) = 𝑀0
+𝐺
+[
+𝜆7
+𝑅7
+𝑅7 + 𝐾7
++ 𝜆8
+𝑅8
+𝑅8 + 𝐾8
+]
+𝛽𝜖1
+𝛽𝜖1 + 𝜖2
+,
+
+Physics of Life Reviews 52 (2025) 207–244
+231
+M. Maji and S. Khajanchi 
+−𝜆9
+𝑅9
+𝑅9 + 𝐾9
+𝑅5 −𝑑5𝑅5,
+(40b)
+𝜕𝑅6
+𝜕𝑡 + ∇.(𝑅6∇𝑅10) = 𝑀0
+𝐺
+[
+𝜆7
+𝑅7
+𝑅7 + 𝐾7
++ 𝜆8
+𝑅8
+𝑅8 + 𝐾8
+]
+𝛽𝜖2
+𝛽𝜖1 + 𝜖2
+,
++𝜆9
+𝑅9
+𝑅9 + 𝐾9
+𝑅5 −𝑑6𝑅6,
+(40c)
+where
+𝜖1 =
+𝑅3
+𝑅3 + 𝐾3
+,  𝜖2 =
+𝑅4
+𝑅4 + 𝐾4
+.
+In the above two equations (40b)-(40c), 𝑅7, 𝑅8, and 𝑅10 are the populations of NFTs outside neurons, A𝛽oligomer, and HMGB­
+1, respectively. The pro-inflammatory microglia are converted into anti-inflammatory microglia by the transforming growth factor 
+beta (TGF-𝛽), denoted as 𝑅9. We have already discussed the contribution of cytokines to AD. In the work [65], authors introduced 
+equations for such cytokines, named TGF-𝛽, interleukin 10 (IL-10), and TNF-𝛼, denoted as 𝑅9, 𝑅4, and 𝑅3, respectively. Cytokines 
+are also generated by both pro-inflammatory and anti-inflammatory microglia and macrophages. The equations are as follows:
+𝜕𝑅3
+𝜕𝑡 −𝐷3Δ𝑅3 = 𝜆3𝑅5 + ̂𝜆3 ̂𝑅3 −𝑑3𝑅3,
+(40d)
+𝜕𝑅4
+𝜕𝑡 −𝐷4Δ𝑅4 = 𝜆4𝑅6 + ̂𝜆4 ̂𝑅6 −𝑑4𝑅4,
+(40e)
+𝜕𝑅9
+𝜕𝑡 −𝐷9Δ𝑅9 = 𝜆9𝑅6 + ̂𝜆9 ̂𝑅6 −𝑑9𝑅9,
+(40f)
+where 𝐷𝑖(𝑖= 3,4,9) are diﬀusion coeﬃcients whereas 𝑑𝑖(𝑖= 3,4,9) represent the degeneration rates. ̂𝑅3 and ̂𝑅6 represent pro­
+inflammatory and anti-inflammatory macrophages, respectively. This work is extended by applying drugs in the model. We discuss 
+the results in the Section 4. Alkahtani et al. [7] applied diﬀerent diﬀerential operators to the model of Hao & Friedman [65] and did 
+the respective numerical simulations.
+The study of ME Parks [127] uses two-state Markov chains to create a stochastic model of the course of AD. The deterministic 
+model proposed by Hao & Friedman [65] has been mod­fied to a stochastic approach by taking into consideration the intrinsic 
+randomness in biological processes that contribute to AD, speciﬁcally the accumulation of 𝜏and A𝛽proteins, and neuron death. It 
+is observed that incorporating stochasticity into the model accelerates neuron death while slowing down the production of two key 
+biomarkers, 𝜏and A𝛽proteins. This shift in dynamics underscores the signiﬁcant impact of stochastic processes on the progression 
+of AD.
+Assuming that early i­flammations caused by ROS drive the growth of A𝛽and 𝜏, Lee and Friedman [100] recently developed a 
+mathematical model that includes the pathological hallmarks of AD: A𝛽plaques, NFTs, and glial cells in the neuronal environment. 
+The mathematical model presented in the paper, is given by
+𝜕𝐿1
+𝜕𝑡 = −𝑑𝐿17
+𝐿7
+𝐾𝐿7 + 𝐿7
+𝐿1 −𝑑𝐿15
+𝐿5(𝐿5 −𝐿𝑠𝑠
+5 )+
+𝐾𝐿5 + (𝐿5 −𝐿𝑠𝑠
+5 )+ 𝐿1,
+(41a)
+𝜕𝐿2
+𝜕𝑡 + 𝛿𝐿25∇⋅
+(
+𝐿2
+∇𝐿5
+𝐾∇𝐿5 + |∇𝐿5|
+)
+−𝐷𝐿2∇2𝐿2 = 𝜆𝐿2 + 𝐿2
+( 𝜆𝐿25(𝐿5 −𝐿𝑠𝑠
+5 )+
+𝐾𝐿5 + (𝐿5 −𝐿𝑠𝑠
+5 )+ +
+𝜆𝐿27𝐿7
+𝐾𝐿7 + 𝐿7
+)
+−𝑑𝐿2𝐿2,
+(41b)
+𝑑𝐿3
+𝑑𝑡 = 𝜆𝐿3 + 𝜆𝐿32
+𝐿2
+𝐾𝐿2 + 𝐿2
+𝐿3 −𝑑𝐿3𝐿3,
+(41c)
+𝜕𝐿4
+𝜕𝑡 −𝐷𝐿4∇2𝐿4 =
+[
+𝑅1 + 𝜆𝐿4 −𝑑𝐿4𝐿4
+] 𝐿1
+𝐿01
+,
+(41d)
+𝜕𝐿5
+𝜕𝑡 −𝐷𝐿5∇2𝐿5 = 𝜆𝐿5 −𝜆𝐿51
+1 
+𝐿1
+𝜕𝐿1
+𝜕𝑡 𝐿4 −𝑑𝐿52𝐿2𝐿5 −𝑑𝐿5𝐿5 + 𝜆𝐿53𝐿3𝐿5,
+(41e)
+𝜕𝐿6
+𝜕𝑡 −𝐷𝐿6∇2𝐿6 = 𝑅2 + 𝜆𝐿6 + 𝜆𝐿64(𝐿4 −𝐿𝑠𝑠
+4 )+ −𝑑𝐿6𝐿6
+𝐿1
+𝐿10
+.
+(41f)
+The descriptions of the variables are: 𝐿1 represents the neuron density, 𝐿2 denotes the microglia density, 𝐿3 refers to the astrocyte 
+density, 𝐿4 is the concentration of intraneuronal A𝛽, 𝐿5 corresponds to the concentration of extraneuronal A𝛽, 𝐿6 is the 𝜏protein 
+level, and 𝐿7 represents the NFTs. Since 60% of hyperphosphorylated 𝜏proteins are involved in the formation of NFTs, so that 𝐿7(𝑡) =
+0.6(𝐿6 −𝐿𝑠𝑠
+6 ). Here the meaning of the notion: 𝑋+ = 𝑋if 𝑋≥0 and 𝑋+ = 0 if 𝑋< 0. In the above model, 𝐷𝑖(𝑖= 𝐿2,𝐿3,𝐿4,𝐿5,𝐿6) 
+represents the diﬀusion coeﬃcient of 𝑖. 𝜆𝑖(𝑖= 𝐿2,𝐿3,𝐿4,𝐿5,𝐿6) denotes the production rate of 𝑖, while 𝜆𝑖𝑗sign­fies the production 
+rate of 𝐿𝑖due to 𝐿𝑗. The Michaelis-Menten parameter for 𝑖is denoted by 𝐾𝑖(𝑖= 𝐿2,𝐿5,𝐿7). 𝑑𝑖refers to the death rates of 𝑖, and 𝑑𝑖𝑗
+represents the death rate of 𝐿𝑖due to 𝐿𝑗. 𝐿𝑠𝑠
+𝑖
+denotes the steady-state value of 𝐿𝑖in health. Finally, 𝛿25 and 𝐾∇𝐿5 correspond to the 
+chemotaxis force and the chemoattractant parameter for 𝐿2 by 𝐿5, respectively. The ROS in neuron are 𝑅1 and 𝑅2, 𝑅1 increases 𝐴𝑖
+𝛽
+and 𝑅2 increases 𝜏protein. The forms of the i­flammation for A𝛽and 𝜏has been taken as
+
+Physics of Life Reviews 52 (2025) 207–244
+232
+M. Maji and S. Khajanchi 
+𝑅1 = 𝑅1(𝑥,𝑦) 𝑡∕𝛾
+𝑘+ 𝑡,  𝑅2 = 𝑅2(𝑥,𝑦) 𝑡∕𝛾
+𝑘+ 𝑡,
+respectively, where (𝑥,𝑦) are variable points in the brain and, 𝑘and 𝛾are constants. Remarkably, this model can generate simulated 
+patterns of A𝛽and 𝜏consistent with those observed in positron emission tomography (PET) scans of AD patients. Authors utilized the 
+model in longitudinal studies of AD to determine the optimal timing for starting treatment with drugs that slow disease progression, 
+before the brain damage occurs. The model does not delve into the mechanisms behind A𝛽plaques and NFTs formation.
+3.9. Modeling through data and neuroimaging
+Using modern neuroimaging methods combined with data-driven models provides pathways for early diagnosis and progression 
+of AD. In this subsection, we delve into the fusion of data science and neuroimaging in the study of AD.
+A spatiotemporal analysis was performed on EEG data obtained in the groups of AD patients. The Karhunen-Loeve analysis 
+approach was used on four groups of subjects [88]. In severe AD patients, the analysis revealed considerable bilateral temporal 
+functional diﬀerences and notable intra-hemispheric correlation with inter-hemispheric connection problems.
+Ito et al. [80,81] constructed a model utilizing data derived from the literature to portray the longitudinal progression of 
+Alzheimer’s Disease Assessment Scale-Cognitive (ADAS-cog) scores, speciﬁcally the change from baseline, in individuals diagnosed 
+with mild to moderate AD. The described model [80] is
+𝑆(𝑡) = 𝑆(0) + 𝛼.𝑡+ 𝑃𝐷𝑝𝑏𝑜(𝑡) + 𝑃𝐷𝑑𝑟𝑢𝑔(𝑡) + 𝜖.
+(42)
+In this context, 𝑆(𝑡) represents the change in ADAS-cog from the baseline at time 𝑡. The parameter 𝛼sign­fies the rate at which the 
+untreated disease progresses. The functions 𝑃𝐷𝑝𝑏𝑜(𝑡) and 𝑃𝐷𝑑𝑟𝑢𝑔(𝑡) describe the placebo eﬀect and the eﬀect of the drug, respectively. 
+Additionally, 𝜖characterizes the residual error in the model. This model encompasses the pace at which AD advances, the observable 
+placebo eﬀect and the impact of acetylcholinesterase (AChE) inhibitors on symptoms. Several covariates, including age, year of 
+publication, baseline ADAS-cog scores and Mini-Mental State Examination scores, were assessed. The analysis revealed that there was 
+no disparity in disease progression rates between the groups receiving placebo and AChE inhibitors. Furthermore, it was determined 
+that baseline ADAS-cog scores signiﬁcantly i­fluenced the rate of AD progression. Age, the presence of the APOE 𝜖4 genotype and 
+gender may all be regarded as plausible covariates with the potential to i­fluence the advancement of AD [81]. In patients with 
+normal aging, moderate cognitive impairment and AD, the initial baseline severity stands out as a critical covariate for predicting a 
+curvilinear rate of AD advancement.
+A stochastic, multi-state framework is employed, incorporating United Nations global population projections and data gleaned 
+from epidemiological investigations, to forecast the global burden of AD and evaluate the potential eﬀects of therapies that delay 
+the development of AD. Modest improvements in therapeutic and preventive measures that result in a slight delay in the onset and 
+development of AD may signiﬁcantly decrease the global burden of AD [22].
+Khanal et al. [87] proposed a framework for constructing a biophysical model that is capable of predicting and simulating realistic 
+longitudinal MRIs of AD patients. The three main components of the framework are realistic MRI production, brain deformation 
+and atrophy generation. The equations in the model, which is based on biomechanical principles, are mostly comparable to Stoke­
+equations in fluid mechanics with a non-zero mass source portion. This model prescribes intricate atrophy patterns in order to imitate 
+longitudinal MRIs. This approach may be used to investigate the interplay between the mechanical reactions of various brain tissues 
+to neurodegeneration and test ideas on the distribution of brain atrophy. Fuzzy inference system is created with subtractive clustering 
+technique to classify MRI images of patients with MCI or/and normal controls [92]. As input characteristics for the fuzzy inference 
+system, means and standard deviations of MRI intensities over the most informative regions of interest (ROIs) are employed.
+Several attempts have underscored the signiﬁcance of calcium-dependent cellular processes in the biochemical characterization 
+of AD, suggesting that disturbances in calcium homeostasis may have a role in AD pathophysiology. In their study, Tiveci et al. [157] 
+primarily explored hypotheses regarding physiological and biochemical changes in both healthy individuals and those with AD. They 
+further established correlations between these changes and measurable physiological parameters derived from functional neuroimag­
+ing data, speciﬁcally the temporal patterns of the blood oxygenation level-dependent (BOLD) signal. When calcium dynamics are 
+integrated into the model, it demonstrates that both the BOLD signal and the pr­files of metabolite concentrations exhibit temporal 
+patterns consistent with the experimental data available in the literature.
+Whittington et al. [165] studied the spatial distribution of A𝛽protein. To investigate diﬀerent theories of A𝛽protein spread in 
+AD, the authors have proposed a mathematical model using A𝛽protein in vivo PET imaging data. This study yields the conclusion 
+that the in vivo spatiotemporal distribution of A𝛽protein in AD can be mathematically represented through a logistic growth model. 
+This model accounts for the spatial heterogeneity of the carrying capacity in the brain, maintains a constant exponential growth rate 
+and features a consistent time for reaching half-maximal A𝛽protein concentration.
+Extensive research has been conducted to investigate A𝛽protein distribution, deposits within the cerebral cortex in AD [23]. 
+A computer-enhanced image analysis is done to examine this distribution. This method has the potential to facilitate future quanti­
+tative investigations into the varying distribution of A𝛽in AD and certain dementia cases.
+3.10. Other literatures
+In this subsection, we will explore literature that were not previously categorized in the sections above. The remaining models 
+are described below.
+
+Physics of Life Reviews 52 (2025) 207–244
+233
+M. Maji and S. Khajanchi 
+A𝛽plaques have a very heterogeneous content, structure, density and distribution of macromolecules. Shoghi-Jadid et al. [144] 
+delved into the impact of the heterogeneous micro-environment of a plaque and its changes over time on the kinetic rate constant of 
+molecular imaging probes (MIPs) in PET. Depending on the argument that macromolecular crowding will cause abnormal diﬀusion 
+in the plaque region, the authors proposed a diffusion-limited ligand-receptor (LR) compartmental model. The mathematical model 
+is given by
+𝑑𝑚3
+𝑑𝑡 = 𝐾1𝐶𝑃−𝐾2𝑚3 −𝐾𝑜𝑛(𝐵𝑚𝑎𝑥−𝑚4)𝑚3 + 𝐾𝑜𝑓𝑓𝑚4,
+(43a)
+𝑑𝑚4
+𝑑𝑡 = 𝐾𝑜𝑛(𝐵𝑚𝑎𝑥−𝑚4)𝑚3 −𝐾𝑜𝑓𝑓𝑚4,
+(43b)
+where 𝑚3 and 𝑚4 are the concentrations of the extracellular free probe and bound probe, respectively. 𝐵𝑚𝑎𝑥is the concentration in 
+binding sites. 𝐾𝑜𝑛and 𝐾𝑜𝑓𝑓are the association and disassociation rate constants of a probe. The above-mentioned model is known 
+as the standard two-state LR model. The authors mod­fied the standard LR model to prove their hypothesis. It is basically discussed 
+the possibility of measuring the amyloid burden of a plaque utilizing A𝛽MIPs. The evolution of plaque morphology shows that the 
+parameters also depend on how the disease progresses pathologically.
+A mathematical model has been developed to explore the impacts of oxidative stress in AD [138]. It demonstrates how oxidants 
+and antioxidants cause the creation, oxidation, reduction and loss of proteins. Using some known initial conditions, a computer pro­
+gram simulation has been done of the system along the time and the simulation result is coherent with existing literature on oxidative 
+stress and AD. Prigent et al. [133] examined the PrP𝐶fibril size distribution’s structure using an odd example of truncated data. 
+The exponential law, which is consistent with the experimental distribution, can be explained by a model of polymerization and 
+depolymerization. A𝛽protein aggregation involves a wide range of processes, including polymerization, depolymerization, fragmen­
+tation, branching, and filament attachment. Several of these processes depend on fibril size, fibril age (maturity) and concentrations 
+(including molecular crowding).
+Researchers [64] created a basic stochastic mathematical model to simulate the onset and progression of AD in a longitudinal 
+cohort study based on the study of a collection of clinical data provided by the ADNI. In this study, the authors demonstrated how 
+this modeling framework could be used to evaluate the impact and likelihood of success of fictional treatments that are applied at 
+various disease progression stages.
+A mathematical model is formed to examine AD progression using systems biology and graph theory together [94]. A graph­
+theoretical framework was constructed to investigate the interplay between cell density within specific brain regions and the 
+concentration of molecules associated with pathogenesis, including A𝛽protein, IL-1, TNF-𝛼, cholesterol and adenosine triphosphate 
+(ATP) levels. This model was designed to elucidate the progression of AD, with a particular focus on the i­flammatory pathway’s 
+role. Through extensive simulations, intriguing findings emerged when exploring the functions of the pro-inflammatory cytokines 
+IL-1 and TNF-𝛼. The key takeaway was that both short-term and long-term i­flammation could potentially contribute to a reduction 
+in A𝛽protein levels.
+The amyloidogenic process is also i­fluenced by an inhibitor of APP breakdown, named sorting receptor-related protein (SORLA), 
+is also a major risk factor for AD. A mathematical model has been formulated to describe APP processing under the i­fluence of 
+SORLA by A Lao [97]. Alcantara et al. [5] analyzed the temporal behavior of the model and performed stability analysis. The stability 
+analysis shows that the system is constantly aﬀected by SORLA throughout the time. It assists by reducing the availability of APP for 
+secretase cleavage and disrupting the oligomerization of APP.
+In a study by Potter et al. [132], a compartmental model was developed to analyze data related to the labeling of A𝛽protein 
+peptides. This model was designed to capture the dynamics of A𝛽protein synthesis, exchange and irreversible loss. This compartmental 
+model allows the estimation of A𝛽protein peptide production, irreversible loss and short-term exchange rates. Elbert et al. [54] further 
+explored the characteristics of this compartmental model, approaching it from two diﬀerent perspectives: that of physician-scientists 
+and biokineticists. They established a kinetic mathematical model and conducted a thorough system ident­fiability analysis as well 
+as a sensitivity analysis of the kinetic model. Notably, their sensitivity analysis reveals that all the model parameters had an eﬀect on 
+the overall shape of the A𝛽protein labeling curves.
+Sampaoli et al. [141] created a toy model of misfolded aggregation of proteins and neuronal damage progression in neurodegen­
+erative disease. Authors basically considered the brain tissue in the form of a binary, saturated, closed and incompressible mixture 
+of misfolded protein aggregates and of healthy tissue. The mathematical model reads as
+𝜕𝑧1
+𝜕𝑡 + ∇.(𝑧1𝑣1) = 𝑆1
+𝛾+ ∇.𝑘1,
+(44a)
+𝜕𝑧2
+𝜕𝑡 + ∇.(𝑧2𝑣2) = 𝑆2
+𝛾+ ∇.𝑘2,
+(44b)
+where 𝑧1 and 𝑧2 are the volume fractions of the plaques and healthy tissue, respectively. 𝑣1 and 𝑣2 are the velocities of the phase, 𝑘1
+and 𝑘2 are the non-convective mass flux, and 𝑆1 and 𝑆2 denote the volumetric source terms. Numerical simulations are presented for 
+the system in two dimensions and find that the neural damage spreading front moves in the direction of the mobility tensor’s largest 
+eigenvalue. The authors calculated two biomarkers to measure plaque aggregation and the progression of neuronal damage.
+Pachauri et al. [121] presented a new approach to construct kernels based on cortical thickness estimates d­fined on brain surfaces. 
+Using the persistence of topological characteristics produced by the cortical thickness signal, a discriminative representation of cortical 
+surfaces is provided.
+
+Physics of Life Reviews 52 (2025) 207–244
+234
+M. Maji and S. Khajanchi 
+Liu et al. [108] pioneered the development of a novel shape model, employing parametric representations of volumetric shapes. 
+They constructed a shape space equipped with a multi-scale Sobolev-type metric, providing a robust framework for the statistical anal­
+ysis of shape evolution. Additionally, they introduced a signed energy function (SEF) derived from this model, revealing pronounced 
+correlations between shape alterations and, regional shape shrinkage and expansion. This innovative approach was employed to 
+scrutinize longitudinal morphological data, focusing on hippocampus volumes. The dataset comprised one-year repeated magnetic 
+resonance scans from 381 subjects, as part of the ADNI. In order to undertake a space-time analysis relevant to longitudinal studies 
+aiming at characterizing the evolution of AD in individual individuals, a complex network analysis technique is merged with temporal 
+dynamics [114].
+In their study, Stern et al. [152] introduced a novel approach for the application of growth curve models to experimental data. 
+They utilized this method to analyze the longitudinal functional changes in patients with AD over time. The researchers speciﬁcally 
+focused on modeling data derived from the mod­fied mini-mental state examination (mMMSE) and assessments of both basic and 
+instrumental activities of daily living in a cohort of 236 individuals up to 5 years diagnosed with probable AD.
+Based on imaging data collected from a large human population, the authors [155] have oﬀered algorithms that may detect 
+patterns of brain structure and function linked with AD, schizophrenia, normal ageing and defective brain development. The authors 
+focused on describing various approaches to mapping structural changes in the cortex. A cortical pattern-matching image analysis 
+pipeline that compares and pools cortical data across time and subjects has been described. Examples are provided to demonstrate 
+the tremendous impact of development and various disorders in the cortex. In dementia and schizophrenia, dynamically spreading 
+waves of gray matter loss are recorded.
+Zhou et al. [174] studied novel multi-task learning techniques to predict AD development as evaluated by cognitive scores and 
+identify biomarkers that predict disease progression. Additionally, the authors introduced an innovative approach known as the 
+convex fused sparse group Lasso (cFSGL) framework. This framework enables the concurrent ident­fication of a common set of 
+biomarkers across multiple time points and specific sets of biomarkers for diﬀerent time points. It achieves this by applying the sparse 
+group Lasso penalty for feature selection while incorporating temporal smoothness through the fused Lasso penalty. Furthermore, 
+the authors propose two non-convex formulations to mitigate the inherent shrinkage bias associated with the convex formulation. To 
+tackle these non-convex formulations, they employ the diﬀerence of convex (DC) programming approach. The authors also conducted 
+signiﬁcant experiments using data from ADNI. The results show that the suggested progression models are more eﬀective than existing 
+models for AD progression. The age-adjusted relative risk for AD is determined by APOE alleles. APOE may i­fluence AD pathogenesis 
+by boosting A𝛽protein peptide deposition and its fibrillarization. Holtzman et al. [71] examined APP𝑉717𝐹transgenic mice expressing 
+mouse, human or no APOE to investigate the i­fluence of APOE on A𝛽protein deposition and AD pathogenesis. It is concluded that 
+APOE plays a key and isoform-specific function in neuritic plaque development.
+In their study, Hu et al. [76] enhanced our understanding of AD by adapting model (9) to create a stochastic reaction-diffusion 
+model. This model incorporates time-varying delay, impulses and an AD-related Lévy jump process. They conducted an optimal control 
+analysis to minimize pathogenic proteins and control expenses, while also oﬀering suﬃcient conditions for finite-time stability in 
+their research. The authors represented methods to diagnose AD with the help of mathematical models and art­ficial intelligence [43]. 
+Two methods have been explored for assessing an individual’s mental well-being: the Support vector machine and the architecture of 
+a deep convolutional neural network. According to the research results, it is recommended to utilize the deep convolutional neural 
+network architecture for the diagnosis of mental states.
+In a recent work, a mathematical model focusing on the propagation of 𝜏pathology has been presented by Chen et al. [31]. The 
+model uses a system of partial diﬀerential equations to study two mechanisms: intracellular diﬀusion through synaptic activities or 
+the nanotubes, and extracellular diﬀusion with tau species moving via ISF flow. The model examines the impact of extracellular 𝜏
+clearance on disease progression. Key findings indicate that eﬀective extracellular 𝜏clearance combined with fast cross-membrane 
+transport is essential to maintain a healthy brain state. Numerical simulations show two types of spreading patterns: a slower pro­
+gression of pathology when only intracellular spreading is considered, and a faster spread when both intracellular and extracellular 
+mechanisms are active. Thus, limiting seeded 𝜏propagation to intracellular spreading leads to results most consistent with observed 
+AD progression, aligning with the findings of DeVos et al. [49].
+4. Therapeutic trials
+AD ranks among the intricate neurodegenerative diseases. While there is currently no cure for AD, researchers have ident­fied 
+several therapeutic targets that show promise in potentially slowing down the advancement of AD. The discovery of drugs that can 
+delay the beginning of AD can include molecular, genetic and pharmacological techniques. Accumulation of A𝛽protein can be a 
+major oﬀender in AD pathogenesis. A comprehensive understanding of the molecular mechanisms governing protein aggregation 
+and its impact on neuronal cell death holds the promise of innovative therapeutic strategies. An appealing therapeutic approach is 
+to block the formation of A𝛽oligomers and fibrils, which may inhibit fibrillation and fibrilization-dependent neurotoxicity, are the 
+drugs that regulate the activity of the enzymes 𝛾-secretase or 𝛽-secretase, notably inhibitors of 𝛽-secretase (BACE-1) [124]. However, 
+in clinical trials, immunotherapy has proven to be signiﬁcantly more successful compared to 𝛽/𝛾-secretase interventions [175].
+Mathematical models have been formed by researchers containing inhibitor drugs to treat AD. The research presented in the 
+referenced paper [101] introduces three distinct drug models: the monomer-inhibitor drug model, the polymer-inhibitor drug model 
+and the combined drug model. The study employs numerical simulations to substantiate the results. These simulations yield valuable 
+insights, revealing that the monomer-inhibitor drug exhibits promise in mitigating the early stages of AD. Conversely, the polymer­
+inhibitor drug demonstrates enhanced eﬃcacy in addressing more advanced AD cases. The monomer-inhibitor drug exhibits the 
+
+Physics of Life Reviews 52 (2025) 207–244
+235
+M. Maji and S. Khajanchi 
+capacity to decelerate AD progression, yet it lacks the capability to reverse the polymerization process or diminish the quantity of 
+monomers within polymers. On the other hand, the polymer-inhibitor drug has a time delay that increases the number of monomers 
+polymerized before this number begins to decline.
+For many years, it has been assumed that A𝛽and 𝜏proteins act separately, with no A𝛽-𝜏interaction. However, new research 
+reveals that A𝛽protein and 𝜏protein synergy exist in AD. As a result, in addition to anti-A𝛽treatments [126], anti-𝜏trials are also 
+being investigated [40]. The A𝛽-𝜏interaction concept may be useful in future AD treatment studies [24]. The direction of therapeutic 
+development is shifting from a singular focus on pathogenic targets to a more intricate approach, encompassing complex mechanisms 
+like neuro-inflammatory and neurodegenerative processes [161,170]. Hence, therapies aiming to reduce A𝛽protein levels or prevent 
+its aggregation include beta-secretase (BACE) inhibitors and anti-A𝛽antibodies. In 1955, cortisone and adrenocorticotropic hormone 
+(A.C.T.H.) treatments were given to two patients whose cerebral biopsies revealed histological evidence of AD [146]. As a result, the 
+use of cortisone and A.C.T.H. in the treatment of two patients with AD, as determined by brain biopsy, was unsuccessful.
+Depression is a prevalent psychiatric condition often linked with AD. The optimal approach for diagnosing depression in indi­
+viduals with dementia involves employing a standardized psychiatric interview and structured diagnostic criteria, as recommended 
+by Starkstein et al. [150]. There are several eﬀective antidepressant treatments available for addressing depression in AD patients, 
+with selective serotonin reuptake inhibitors (SSRIs) currently being the preferred choice due to their demonstrated eﬀectiveness 
+and relatively minimal incidence of side eﬀects. A model by Hao & Friedman [65] is employed to simulate drugs that have either 
+proven unsuccessful in clinical trials or are presently undergoing clinical trials. The authors applied the model to determine how this 
+TNF-𝛼inhibitor, TGF-𝛽injection, anti-A𝛽drugs and monocyte chemoattractant protein-1 (MCP-1) inhibitor aﬀect AD patients. For 
+the anti-alzheimer’s drugs, authors have formulated partial diﬀerential equations involving TNF-𝛼, TGF-𝛽, anti-A𝛽drugs, and MCP-1 
+inhibitors. TGF-𝛽is an anti-inflammatory cytokine that changes pro-inflammatory microglia to anti-inflammatory microglia. It is 
+suggested that TGF-𝛽reduces AD pathogenesis [168]. After applying the eﬀects of TNF-𝛼inhibitor and TNF-𝛼injection in equations 
+(40d) and (40f), we have
+𝜕𝑅3
+𝜕𝑡 −𝐷3Δ𝑅3 = 𝜆3𝑅5 + ̂𝜆3 ̂𝑅5 −𝑑3𝑅3 −𝑓𝑅3,
+(45a)
+𝜕𝑅9
+𝜕𝑡 −𝐷9Δ𝑅9 = 𝜆9𝑅6 + ̂𝜆9 ̂𝑅6 −𝑑9𝑅9 + 𝑔,
+(45b)
+where the amount of TGF-𝛽injected is proportional to 𝑔and 𝑓is proportional to the amount of etanercept. The meaning of the 
+parameters and variables are given in the model (40). These simulations showed that a combination of TNF-inhibitors and anti­
+amyloid medications may be eﬀective in signiﬁcantly delaying the progression of AD.
+Since the APOE 𝜀4 gene is a risk factor of AD, the treatment approach for AD, APOE gene, seems promising [140]. In the etiology 
+of AD, the interaction between APOE and A𝛽protein is crucial. Hence, the APOE and A𝛽protein interaction can be one of the 
+most promising therapeutic approaches [167]. Various therapeutic targets have been explored in the quest to develop treatments 
+for AD. Cell replacement therapies, such as the utilization of human embryonic stem cells or neural cells derived from induced 
+pluripotent stem cells, hold promise to cure individuals aﬄicted with AD [28,109]. Patients with AD exhibit increasing oxidative 
+stress, which coincides with aberrant levels of brain metals. Antioxidants and compounds that support mitochondrial function have 
+been investigated as potential therapeutic targets [125,131]. Modulating the i­flammatory response through anti-inflammatory drugs 
+or targeting specific immune cell types involved in neuro-inflammation is an area of interest for therapeutic intervention [139].
+Kuznetsov & Kuznetsov [95] developed a mathematical model to investigate the production and intracellular transport of APP 
+and 𝜏protein in a neuron. The aggregation of APP fragments into A𝛽protein and the aggregation of 𝜏protein into 𝜏oligomers and 
+NFTs are also investigated. It is shown that A𝛽protein aggregation can have an eﬀect on 𝜏protein transport and aggregation in both 
+the soma and the axon. According to the model, APP and 𝜏protein are distributed diﬀerently in the axon. It is concluded that the 
+rate at which misfolded 𝜏protein polymers are produced depends on how strongly A𝛽protein facilitates their formation.
+Li & Zhao [105] presented a mathematical model focusing on the progression of AD. This model encompasses several key compo­
+nents, such as the A𝛽proteins (including A𝛽-40 and A𝛽-42), the interaction between A𝛽oligomers and PrP𝐶and the impact of anti-A𝛽
+drug treatment. The paper delves into an analysis of the existence and uniqueness of solutions and also explores the global stability, 
+shedding light on crucial aspects of AD progression and potential treatment strategies. The authors concluded that the drug can delay 
+the progression of AD but cannot be cured completely. Their findings suggest that the formation rate of paranuclei has a stronger 
+impact on plaque and prion oligomers PrP𝑜𝑙, and the rate of formation of A𝛽-42 paranuclei might be employed as a therapeutic target.
+5. Discussion and conclusion
+Mathematical models are instrumental in enhancing our comprehension of AD and can assist in the development of new therapeutic 
+approaches. Depending on the specific research aim and objectives, several types of mathematical models can be formed to understand 
+AD dynamics. However, it is important to highlight that AD is a complicated and multifaceted disease, and mathematical models are 
+only one of many tools used to investigate it. The motivation to write this literature review on AD is the need to comprehensively 
+understand the complexities of this neurodegenerative disease from both mathematical and biological points of view.
+In this article, by reviewing the existing papers on AD, we went through the mathematical models section-wise according to their 
+elements. Now here, we provide a table (see Table 3) that primarily focuses on the formalisms of several mathematical models, 
+detailing their components and key comments. 
+
+Physics of Life Reviews 52 (2025) 207–244
+236
+M. Maji and S. Khajanchi 
+Table 3
+Classification of models based on the modeling formalisms.
+Authors
+Year
+Components
+Key Comment
+Temporal mathematical models
+Ehrenstein et al. [53]
+1997
+Acetylcholine, A𝛽
+Acetylcholine loss is highly 
+correlated with the initial rate 
+of A𝛽production.
+Craft et al. [38]
+2002
+A𝛽, its polymer 
+units, CSF, plasma
+The polymerization ratio 
+determines the total burdan of 
+A𝛽in the brain.
+Craft et al. [39]
+2004
+A𝛽, its polymer 
+units
+Polymerization ratio < 1 
+implies the body achieves a 
+steady-state level of A𝛽, 
+polymerization ratio > 1 
+implies the burden of A𝛽
+protein in the brain continues 
+to increase
+Puri & Li [134]
+2010
+Neurons, astroglia, 
+microglia, A𝛽
+Microglia plays a critical role in 
+identifying AD
+Caluwe & Dupont [27]
+2013
+A𝛽protein, 
+intracellular Ca2+
+The system exhibits bistable 
+behaviors
+Helal et al. [69]
+2014
+A𝛽, PrP𝐶proteins, 
+A𝛽× PrP𝐶
+complex
+A𝛽plaques increase in size over 
+time due to the clustering of A𝛽
+oligomers, which are bound to 
+PrP𝐶
+Ghosh et al. [59]
+2016
+A𝛽protein 
+monomers
+Large protofibrils production is 
+i­fluenced by critical 
+nucleation number
+Petrella et al. [129]
+2019
+A𝛽protein, 𝜏
+protein, neurode­
+generation, 
+cognitive decline
+By simulating biomarker 
+development and cognitive 
+decline in early- and late-onset 
+natural history scenarios, as 
+well as in a therapy scenario 
+aimed at core AD pathology, 
+the feasibility of the proposed 
+model has been shown.
+Helal et al. [70]
+2019
+A𝛽proteins, its 
+polymer units, 
+PrP𝐶proteins
+Well-posedness of the model 
+and global stability of a 
+nontrivial steady state have 
+been investigated
+Asili et al. [12]
+2019
+A𝛽proteins and 
+metals
+Four timescales in the A𝛽
+dynamics has been captured in 
+numerical simulation and 
+singular perturbation method is 
+used to identify these timescales
+Hoore et al. [72]
+2020
+A𝛽oligomers
+The balance of the sleep-wake 
+cycle has a signiﬁcant impact 
+on A𝛽protein accumulation
+Ackleh et al. [2]
+2021
+A𝛽and its polymer 
+units
+There is sigmoidal growth in 
+the continuous-time model and 
+oscillatory dynamics in the 
+discrete-time approximations. 
+Sensitivity analysis is also done.
+Hao et al. [66]
+2022
+A𝛽protein, 𝜏
+protein, neurode­
+generation, 
+cognitive decline
+Donanemab therapy fared 
+better than aducanumab 
+therapy for the slowing of 
+cognitive deterioration
+C.S. Drapaca [52]
+2022
+Neurons, astroglia, 
+microglia, A𝛽
+Compared to male patients at 
+the same stage of AD, 
+postmenopausal female patients 
+have a more noticeable 
+decrease in the population of 
+surviving neurons
+Bensid et al. [18]
+2022
+A𝛽oligomers, 
+PrP𝐶proteins
+In the system, an oscillatory 
+behavior has been observed
+Li & Zhao [105]
+2022
+A𝛽proteins, A𝛽
+oligomers, A𝛽×
+PrP𝐶complex, 
+anti-A𝛽drug
+The drug can delay the 
+progression of AD but cannot 
+be cured completely
+
+Physics of Life Reviews 52 (2025) 207–244
+237
+M. Maji and S. Khajanchi 
+Table 3 (continued)
+Authors
+Year
+Components
+Key Comment
+Maji & Khajanchi [112]
+2023
+A𝛽protein, 𝜏
+protein, astrocytes
+There is possible connection 
+between the build-up of A𝛽
+proteins and astrocyte activity
+Spatiotemporal mathematical models
+Luca et al. [110]
+2003
+Microglia, 
+chemoattractant, 
+chemorepellent
+The system reaches a fixed 
+asymptotic value, indicating the 
+lack of an aggregation pattern, 
+or it increases quickly and 
+uncontrollably, resulting in 
+instability
+Hao & Friedman [65]
+2016
+Neurons, 
+astrocytes, 
+microglia, 
+peripheral 
+macrophages, A𝛽
+proteins, NFTs, 
+HMGB-1, 𝜏
+proteins
+Anti-A𝛽and TNF-𝛼inhibitor 
+therapy together may be highly 
+eﬀective in slowing the 
+progression of AD
+Chen et al. [30]
+2019
+A𝛽protein and 
+polymers unit, ISF
+In order to reproduce the 
+documented clinical buildup of 
+plaque on the outer borders, 
+the advection of ISF is essential
+Thompson et al. [156]
+2020
+Healthy and toxic 
+A𝛽and 𝜏proteins
+𝜏and A𝛽proteins may interact 
+together to enhance nucleation 
+and spread many diseases
+Dave & Jha [42]
+2020
+Calcium, buffers
+Reduced buffer concentration 
+causes calcium levels to rise, 
+which may result in toxicity 
+and neurodegeneration, which 
+might be a sign of AD
+Andrade-Restrepo et al. [8]
+2021
+A𝛽protein and its 
+polymer units
+The existence of solutions of the 
+model is proved by using a 
+ﬁxed point method
+Lindstrom et al. [106]
+2021
+A𝛽protein 
+monomer and 
+dimer
+Experimental data from cell 
+viability assays and proxies for 
+rate constants in the model has 
+been used. The model 
+recapitulates the rapid growth 
+of disease incidence with age.
+Hu et al. [78]
+2022
+A𝛽, PrP𝐶proteins, 
+A𝛽× PrP𝐶
+complex
+By using the 
+stability-in-distribution method, 
+the existence and uniqueness of 
+a stationary distribution of the 
+positive solution has been 
+investigated
+Jain & Roy [83]
+2023
+A𝛽plaques, 𝜏
+plaques, fat cells, 
+glucose, insulin, 
+beta cells, 
+cytokines, 
+microglia
+The loss in cognitive function 
+related to obesity may be 
+caused by insulin resistance and 
+pro-inflammatory microglia
+Ciuperca et al. [34]
+2024
+A𝛽protein, its 
+polymer units, 
+microglia, 
+interleukins
+I­flammation appears to be a 
+critical role in the onset and 
+development of AD
+Lee & Friedman [100]
+2024
+A𝛽protein, 𝜏
+protein, astrocyte, 
+microglia, neurons, 
+ROS
+The model eﬀectively replicates 
+PET scan patterns of A𝛽and 𝜏, 
+providing insights for early AD 
+diagnosis and treatment 
+planning.
+M Corti [37]
+2024
+A𝛽and 𝜏protein
+The study finds FK model 
+suitable for A𝛽spreading, while 
+the heterodimer model better 
+captures 𝜏dynamics, including 
+oscillatory behavior at high 
+concentrations.
+(continued on next page)
+
+Physics of Life Reviews 52 (2025) 207–244
+238
+M. Maji and S. Khajanchi 
+Table 3 (continued)
+Authors
+Year
+Components
+Key Comment
+Stochastic models
+hline Hu et al. [77]
+2020
+A𝛽, PrP𝐶proteins, 
+A𝛽× PrP𝐶
+complex
+Under a very weak condition, 
+the system permits a unique 
+ergodic stationary distribution. 
+This means that once a person 
+develops AD, the condition is 
+likely to persist
+Zhang and Wang [171]
+2020
+A𝛽protein, Ca2+
+Controlling the initial levels of 
+A𝛽protein and Ca2+ and, also 
+by enhancing the intensity of 
+stochastic noise for Ca2+ can 
+help slow down AD progression
+Hu et al. [75]
+2022
+A𝛽protein, Ca2+
+AD can be slow but cannot be 
+treated
+Gao et al. [58]
+2023
+A𝛽protein, Ca2+
+Bistable dynamics and the 
+presence of an ergodic 
+stationary distribution are 
+investigated
+Nonlocal model
+Pal & Menlik [122]
+2022
+Healthy and toxic 
+A𝛽and 𝜏protein
+The distribution patterns of 
+toxic concentrations throughout 
+the entire brain remain 
+consistent
+Graph theoretical model
+Kumar et al. [93]
+2005
+Wiener’s index gives more 
+accuracy than Zagreb group 
+parameters for each of the 28 
+analogs of substituted 
+thiadiazolidinones within their 
+dataset
+Kyrtsos et al. [94]
+2012
+A𝛽protein, 
+cytokines
+Both short-term and long-term 
+i­flammation could potentially 
+contribute to a reduction in A𝛽
+protein levels
+Phillips et al. [130]
+2015
+The Randic index could prove 
+valuable in monitoring and 
+forecasting the advancement of 
+AD
+Other models
+Bertsch et al. [16]
+2021
+A𝛽protein, its 
+polymer units, 𝜏
+protein, neurons
+Phosphorylation of 𝜏protein by 
+A𝛽protein may contribute to 
+AD pathogenesis. Therefore, the 
+interaction between 𝜏protein 
+and A𝛽protein plays a 
+signiﬁcant part in AD
+Santos et al. [143]
+2016
+Lipid rafts
+Increasing the presence of 
+sterols, primarily cholesterol, 
+and long-chain polyunsaturated 
+fatty acids, DHA, in the 
+membrane composition might 
+potentially delay the onset and 
+progression of AD
+Anthwal et al. [10]
+2016
+No AD state, the 
+A𝛽protein 
+formation in 
+diﬀerent states
+The brain contributes directly 
+to the development of AD
+5.1. Pros and cons of diﬀerent mathematical approaches
+Mathematical models in the study of AD can take diﬀerent approaches, each with its own pros and cons:
+ODEs are mainly used to know how a system changes over time based on its current state. This type of mathematical model allows 
+us to model the temporal dynamics of etiological components contributing to AD. As a result, it can capture the progression of AD 
+over time and also predict the future state of the disease. Here, for understanding the aggregation process of A𝛽and 𝜏proteins, 
+and the interaction process between various biological factors, temporal models have been employed. On the other hand, temporal 
+models may oversimplify the complex process, that is, it is not able to capture the multifactorial nature of AD. Complexity can be 
+added in such models by incorporating time-varying parameters.
+
+Physics of Life Reviews 52 (2025) 207–244
+239
+M. Maji and S. Khajanchi 
+Spatiotemporal models are also suitable to model the progression of such non-infectious diseases because of the spreading nature 
+of the components (proteins or cells, etc.) over time in the brain. A spatiotemporal mathematical model captures the propagation and 
+dynamics of the disease in both space and time. Such models can provide insights into spatial patterns related to AD. Sometimes, it 
+might be diﬃcult to handle such models due to the involvement of both time and space. The validation of the model highly depends 
+on the spatial and temporal data, which may increase diﬃculties in capturing the pattern.
+By incorporating randomness and variability, stochastic models are also helpful in capturing the inherent uncertainties involved in 
+AD dynamics. Many authors incorporated stochasticity into their models by considering the eﬀect of randomness [77], the stochastic 
+noises [171] and the extrinsic noise in the cellular microenvironment [58]. The outcome of the process cannot be predicted with 
+certainty but rather follows a probabilistic pattern.
+Network models aid researchers in understanding disease development by portraying elements such as genes and proteins as nodes 
+and their interactions as edges. Moreover, researchers may discover novel therapeutic targets by analyzing the interaction between 
+drugs and biological entities in a network model. Such models can capture the complex interaction and interconnection between 
+brain networks. Network models might be a little more complex than others to understand the pathology of AD due to identifying 
+the interactions in the brain network and finding experimental data.
+Many authors also formulated agent-based models which are more realistic and d­fine rules that apply to individual biological 
+cell. Agent-based models can capture the characteristics of an individual agent like neurons, proteins, etc, and their local interactions 
+that may represent the complex and heterogeneous nature of AD. However, identifying parameters for particular agents might be 
+diﬃcult due to insuﬃcient availability of data. Some work on the agent-based model has been discussed already in this review.
+Several authors formed their models based on data and neuroimaging. Neuroimaging models can identify both structural and 
+functional changes in the brain that can help to diagnose AD. Such neuroimaging data can be used in models, but getting high-quality 
+neuroimaging data can be diﬃcult and costly. However, there are very few works where the real experimental or clinical results are 
+compared to the results of mathematical models.
+Each approach has its advantages and disadvantages. Combining biologically-equivalent models and using experimental data can 
+provide a more comprehensive understanding of this complex disease.
+5.2. Future direction
+In this review, in the Therapeutic trials Section 4, we mentioned many treatment strategies to eradicate or slow down the pro­
+gression of AD. For modeling such disease scenarios by incorporating treatments, models involving impulsive diﬀerential equations 
+can be useful [34]. Moreover, optimal control methods can also be used to minimize disease progression. A few nonlocal models are 
+formed for AD progression [122], hence forming nonlocal models can be a new direction to understanding the AD progression. There 
+are fewer works where the results have been validated using experimental and clinical data [65,66,122,165]. Specific AD laboratory 
+data can be incorporated into the appropriate models for improved outcomes. Machine learning and art­ficial intelligence techniques 
+can be deployed to analyze large-scale data sets [43]. Understanding the interplay between neurodegeneration and immune responses 
+may reveal new therapeutic targets. Recent works on the yeast prion model focus on understanding protein misfolding, aggregation 
+and amyloid propagation, providing a platform to study neurodegenerative diseases like AD and PD [103,113].
+For comprehensive and fruitful AD research, it is needed to have cooperation between researchers from many fields, including 
+mathematics, neurology and clinical medicine. We believe that this review will help the researchers understand this complex disease, 
+form mathematical models, and identify new therapeutic approaches.
+Declaration of competing interest
+The authors declare that they have no known competing financial interests or personal relationships that could have appeared to 
+i­fluence the work reported in this paper.
+Acknowledgements
+This study of Mitali Maji is supported by University Grants Commission (UGC) [NTA Ref.: 211610045129], Govt. of India. Subhas 
+Khajanchi acknowledges the financial support from the Department of Science and Technology (DST), Govt. of India, under the 
+Scheme ``Fund for Improvement of S&T Infrastructure (FIST)'' [File No. SR/FST/MS-I/2019/41].
+References
+[1] Association Alzheimer’s. Alzheimer’s disease facts and figures. Alzheimer’s Dement 2023;19(4). https://doi.org/10.1002/alz.13016.
+[2] Ackleh AS, Elaydi S, Livadiotis G, Veprauskas A. A continuous-time mathematical model and discrete approximations for the aggregation of 𝛽-amyloid. J Biol 
+Dyn 2021;15(1):109--36. https://doi.org/10.1080/17513758.2020.1869843.
+[3] Achdou Y, Franchi B, Marcello N, Tesi MC. A qualitative model for aggregation and diﬀusion of 𝛽-amyloid in Alzheimer’s disease. J Math Biol 
+2013;67(6--7):1369--92. https://link.springer.com/article/10.1007/s00285-012-0591-0.
+[4] Alzheimer’s Disease International. https://www.alzint.org/about/dementia-facts-ﬁgures/dementia-statistics/.
+[5] Alcantara JHM, Lao AR, Ruivivar LA. Stability analysis of the ODE model representation of amyloidogenic processing in Alzheimer’s disease in the presence of 
+SORLA. Mol BioSyst 2016;12(5):1468--77. https://pubs.rsc.org/en/content/articlelanding/2016/mb/c5mb00741k.
+[6] Alexandersen CG, de Haan W, Bick C, Goriely A. A multi-scale model explains oscillatory slowing and neuronal hyperactivity in Alzheimer’s disease. J R Soc 
+Interface 2023;20(198):20220607. https://royalsocietypublishing.org/doi/10.1098/rsif.2022.0607.
+
+Physics of Life Reviews 52 (2025) 207–244
+240
+M. Maji and S. Khajanchi 
+[7] Alkahtani BST, Alzaid SS. Stochastic fractional model of Alzheimer disease. Results Phys 2021;23:103977. https://www.sciencedirect.com/science/article/pii/
+S2211379721001492.
+[8] Andrade-Restrepo M, Ciuperca IS, Lemarre P, Pujo-Menjouet L, Tine LM. A reaction-diffusion model of spatial propagation of A𝛽oligomers in early stage 
+Alzheimer’s disease. J Math Biol 2021;82(5):39. https://link.springer.com/article/10.1007/s00285-021-01593-3.
+[9] Andrade-Restrepo M, Lemarre P, Pujo-Menjouet L, Tine LM, Ciuperca SI. Modeling the spatial propagation of A𝛽oligomers in Alzheimer’s disease. ESAIM Proc 
+2020;67:30--45. https://www.researchgate.net/publication/342042453.
+[10] Anthwal P, Goyal N, Ram M, Thapliyal A. Mathematical modeling for genesis of Alzheimer disease through Markov process. Int J PharmTech Res 
+2016;9(7):189--99. https://www.researchgate.net/publication/305392341.
+[11] Asai H, Ikezu S, Tsunoda S, Medalla M, Luebke J, Haydar T, et al. Depletion of microglia and inhibition of exosome synthesis halt tau propagation. Nat Neurosci 
+2015;18(11):1584--93. https://www.nature.com/articles/nn.4132.
+[12] Asili E, Yarahmadian S, Khani H, Sharify M. A mathematical model for amyloid-𝛽aggregation in the presence of metal ions: a timescale analysis for the progress 
+of Alzheimer disease. Bull Math Biol 2019;81:1943--64. https://pubmed.ncbi.nlm.nih.gov/30809773/.
+[13] Atkins P, de Paula J. Physical chemistry for the life sciences. New York: W. H. Freeman and Company; 2006. p. 309--13.
+[14] Bertsch M, Franchi B, Meacci L, Primicerio M, Tesi MC. The amyloid cascade hypothesis and Alzheimer’s disease: a mathematical model. Eur J Appl Math 
+2021;32(5):749--68. https://www.researchgate.net/publication/344379312.
+[15] Bertsch M, Franchi B, Marcello N, Tesi MC, Tosin A. Alzheimer’s disease: a mathematical model for onset and progression. Math Med Biol 2017;34(2):193--214. 
+https://pubmed.ncbi.nlm.nih.gov/27079222/.
+[16] Bertsch M, Franchi B, Meschini V, Tesi MC, Tosin A. A sensitivity analysis of a mathematical model for the synergistic interplay of amyloid beta and tau on the 
+dynamics of Alzheimer’s disease. Brain Multiphysics 2021;2:100020. https://www.sciencedirect.com/science/article/pii/S2666522020300071.
+[17] Bertsch M, Franchi B, Tesi MC, Tosin A. Well-posedness of a mathematical model for Alzheimer’s disease. SIAM J Math Anal 2018;50(3):2362--88. https://
+epubs.siam.org/doi/10.1137/17M1148517.
+[18] Bensid Y, Helal M, Lakmeche A. Mathematical analysis for a time-delayed Alzheimer disease model. Adv Math Sci J 2022;11(3):173--95. https://www.
+researchgate.net/publication/359144129.
+[19] Blacker D, Tanzi RE. The genetics of Alzheimer disease: current status and future prospects. Arch Neurol 1998;55(3):294--6. https://jamanetwork.com/journals/
+jamaneurology/fullarticle/773584.
+[20] Bloom GS. Amyloid-𝛽and tau: the trigger and bullet in Alzheimer disease pathogenesis. JAMA Neurol 2014;71(4):505--8. https://pubmed.ncbi.nlm.nih.gov/
+24493463/.
+[21] Boller F, Mizutani T, Roessmann U, Gambetti P. Parkinson disease, dementia, and Alzheimer disease: clinicopathological correlations. Ann Neurol 
+1980;7(4):329--35. https://pubmed.ncbi.nlm.nih.gov/7377758/.
+[22] Brookmeyer R, Johnson E, Ziegler-Graham K, Arrighi HM. Forecasting the global burden of Alzheimer’s disease. Alzheimer’s Dement 2007;3(3):186--91. https://
+alz-journals.onlinelibrary.wiley.com/doi/10.1016/j.jalz.2007.04.381.
+[23] Bruce CV, Clinton J, Gentleman SM, Roberts GW, Royston MC. Quantifying the pattern of 𝛽/A4 amyloid protein distribution in Alzheimer’s disease by image 
+analysis. Neuropathol Appl Neurobiol 1992;18(2):125--36. https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1365-2990.1992.tb00774.x.
+[24] Busche MA, Hyman BT. Synergy between amyloid-𝛽and tau in Alzheimer’s disease. Nat Neurosci 2020;23(10):1183--93. https://pubmed.ncbi.nlm.nih.gov/
+32778792/.
+[25] Cabrera-Alvarez J, Stefanovski L, Martin L, Susi G, Maestu F, Ritter P. A multiscale closed-loop neurotoxicity model of Alzheimer’s disease progression explains 
+functional connectivity alterations. eNeuro 2024;11(4) ENEURO.0345-23.2023, https://www.eneuro.org/content/11/4/ENEURO.0345-23.2023.full.
+[26] Cameron B, Landreth GE. I­flammation, microglia, and Alzheimer’s disease. Neurobiol Dis 2010;37(3):503--9. https://pubmed.ncbi.nlm.nih.gov/19833208/.
+[27] Caluwe DJ, Dupont G. The progression towards Alzheimer’s disease described as a bistable switch arising from the positive loop between amyloids and Ca2+. 
+J Theor Biol 2013;331:12--8. https://pubmed.ncbi.nlm.nih.gov/23614875/.
+[28] Chan HJ, Yanshree Roy J, Tipoe GL, Fung ML, Lim LW. Therapeutic potential of human stem cell implantation in Alzheimer’s disease. Int J Mol Sci 
+2021;22(18):10151. https://pubmed.ncbi.nlm.nih.gov/34576314/.
+[29] Cheignon C, Collin F, Sabater L, Hureau C. Oxidative damages on the Alzheimer’s related-A𝛽peptide alters its ability to assemble. Antioxidants 2023;12(2):472. 
+https://www.mdpi.com/2076-3921/12/2/472.
+[30] Chen CY, Tseng YH, Ward JP. A mathematical model demonstrating the role of interstitial fluid flow on the clearance and accumulation of amyloid 𝛽in the 
+brain. Math Biosci 2019;317:108258. https://www.sciencedirect.com/science/article/abs/pii/S0025556419304997.
+[31] Chen CY, Tseng YH, Ward JP. A mathematical model on the propagation of tau pathology in neurodegenerative diseases. J Math Biol 2024;89(1):4. https://
+link.springer.com/article/10.1007/s00285-024-02101-z.
+[32] Chen Y, He Y, Han J, Wei W, Chen F. Blood-brain barrier dysfunction and Alzheimer’s disease: associations, pathogenic mechanisms, and therapeutic potential. 
+Front Aging Neurosci 2023;15:1258640. https://pmc.ncbi.nlm.nih.gov/articles/PMC10679748/.
+[33] Ciuperca IS, Dumont M, Lakmeche A, Mazzocco P, Pujo-Menjouet L, Rezaei H, et al. Alzheimer’s disease and prion: an in vitro mathematical model. Discrete 
+Contin Dyn Syst, Ser B 2019;24(10):5225--60. https://www.aimsciences.org/article/doi/10.3934/dcdsb.2019057.
+[34] Ciuperca I, Pujo-Menjouet L, Matar-Tine L, Torres N, Volpert V. A qualitative analysis of a A𝛽-monomer model with i­flammation processes for Alzheimer’s 
+disease. R Soc Open Sci 2024;11:231536. https://royalsocietypublishing.org/doi/10.1098/rsos.231536.
+[35] Colonna M, Butovsky O. Microglia function in the central nervous system during health and neurodegeneration. Annu Rev Immunol 2017;35:441--68. https://
+www.ncbi.nlm.nih.gov/pmc/articles/PMC8167938/.
+[36] Corder EH, Saunders AM, Risch NJ, Strittmatter WJ, Schmechel DE, Gaskell PC, et al. Protective eﬀect of apolipoprotein E type 2 allele for late onset Alzheimer 
+disease. Nat Genet 1994;7:180--4. https://www.nature.com/articles/ng0694-180.
+[37] Corti M. Exploring tau protein and amyloid-beta propagation: a sensitivity analysis of mathematical models based on biological data. Brain Multiphysics 
+2024;7:100098. https://www.researchgate.net/publication/380002875.
+[38] Craft DL, Wein LM, Selkoe DJ. A mathematical model of the impact of novel treatments on the A𝛽burden in the Alzheimer’s brain, CSF and plasma. Bull Math 
+Biol 2002;64(5):1011--31. https://link.springer.com/article/10.1006/bulm.2002.0304.
+[39] Craft DL, Wein LM, Selkoe DJ. The impact of novel treatments on A𝛽burden in Alzheimer’s disease: insights from a mathematical model. In: Brandeau ML, 
+Sainfort F, Pierskalla WP, editors. Operations research and health care. International series in operations research & management science, vol. 70. Boston, MA: 
+Springer; 2005. p. 839--65.
+[40] Cummings J, Blennow K, Johnson K, Keeley M, Bateman RJ, Molinuevo JL, et al. EU/US/CTAD task force. Anti-tau trials for Alzheimer’s disease: a report from 
+the EU/US/CTAD task force. J Prev Alzheimers Dis 2019;6:157--63. https://pubmed.ncbi.nlm.nih.gov/31062825/.
+[41] Dani M, Wood M, Mizoguchi R, Fan Z, Walker Z, Morgan R, et al. Microglial activation correlates in vivo with both tau and amyloid in Alzheimer’s disease. 
+Brain 2018;141(9):2740--54. https://pubmed.ncbi.nlm.nih.gov/30052812/.
+[42] Dave DD, Jha BK. 3D mathematical modeling of calcium signaling in Alzheimer’s disease. Netw Model Anal Health Inform Bioinform 2020;9:1--10. https://
+link.springer.com/article/10.1007/s13721-019-0207-3.
+[43] Davodabadi A, Daneshian B, Saati S, Razavyan S. Mathematical model and art­ficial intelligence for diagnosis of Alzheimer’s disease. Eur Phys J Plus 
+2013;138(5):474. https://pubmed.ncbi.nlm.nih.gov/37274456/.
+[44] Dear AJ, Michaels TC, Meisl G, Klenerman D, Wu S, Perrett S, et al. Kinetic diversity of amyloid oligomers. Proc Natl Acad Sci 2020;117(22):12087--94. https://
+pubmed.ncbi.nlm.nih.gov/32414930/.
+
+Physics of Life Reviews 52 (2025) 207–244
+241
+M. Maji and S. Khajanchi 
+[45] Dear AJ, Meisl G, Saric A, Michaels TC, Kjaergaard M, Linse S, et al. Ident­fication of on-and off-pathway oligomers in amyloid fibril formation. Chem Sci 
+2020;11(24):6236--47. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7480182/.
+[46] de Bruijn RF, Ikram MA. Cardiovascular risk factors and future risk of Alzheimer’s disease. BMC Med 2014;12:1--9. https://bmcmedicine.biomedcentral.com/
+articles/10.1186/s12916-014-0130-5.
+[47] De Calignon A, Polydoro M, Suarez-Calvet M, William C, Adamowicz DH, Kopeikina KJ, et al. Propagation of tau pathology in a model of early Alzheimer’s 
+disease. Neuron 2012;73(4):685--97. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3292759/.
+[48] Demirtas M, Falcon C, Tucholka A, Gispert JD, Molinuevo JL, Deco G. A whole-brain computational modeling approach to explain the alterations in resting-state 
+functional connectivity during progression of Alzheimer’s disease. NeuroImage Clin 2017;16:343--54. https://pubmed.ncbi.nlm.nih.gov/28861336/.
+[49] DeVos SL, Corjuc BT, Oakley DH, Nobuhara CK, Bannon RN, Chase A, et al. Synaptic tau seeding precedes tau pathology in human Alzheimer’s disease brain. 
+Front Neurosci 2018;12:267. https://pubmed.ncbi.nlm.nih.gov/29740275/.
+[50] Domingues C, AB da Cruz e Silva O, Henriques A. Impact of cytokines and chemokines on Alzheimer’s disease neuropathological hallmarks. Curr Alzheimer 
+Res 2017;14(8):870--82. https://pubmed.ncbi.nlm.nih.gov/28317487/.
+[51] Drake RL. A general mathematics survey of the coagulation equation. In: Hidy GM, Brock JR, editors. Topics in current aerosol research. New York: Pergamon 
+Press; 1972. p. 203--376.
+[52] Drapaca CS. A mathematical investigation of sex diﬀerences in Alzheimer’s disease. Fractal Fract 2022;6(8):457. https://www.mdpi.com/2504-3110/6/8/457.
+[53] Ehrenstein G, Galdzicki Z, Lange GD. The choline-leakage hypothesis for the loss of acetylcholine in Alzheimer’s disease. Biophys J 1997;73(3):1276--80. https://
+pubmed.ncbi.nlm.nih.gov/9284295/.
+[54] Elbert DL, Patterson BW, Bateman RJ. Analysis of a compartmental model of amyloid beta production, irreversible loss and exchange in humans. Math Biosci 
+2015;261:48--61. https://pubmed.ncbi.nlm.nih.gov/25497960/.
+[55] Ferrer I, Aguilo Garcia M, Carmona M, Andres-Benito P, Torrejon-Escribano B, Garcia-Esparcia P, et al. Involvement of oligodendrocytes in tau seeding and 
+spreading in tauopathies. Front Aging Neurosci 2019;11:112. https://pubmed.ncbi.nlm.nih.gov/31191295/.
+[56] Franchi B, Lorenzani S. From a microscopic to a macroscopic model for Alzheimer disease: two-scale homogenization of the Smoluchowski equation in perforated 
+domains. J Nonlinear Sci 2016;26(3):717--53. https://link.springer.com/article/10.1007/s00332-016-9288-7.
+[57] Frost GR, Li YM. The role of astrocytes in amyloid production and Alzheimer’s disease. Open Biol 2017;7(12):170228. https://www.researchgate.net/
+publication/321774902.
+[58] Gao J, Ji J, Liu Y, Zhang F, Wang R, Wang H. A co­fidence ellipse analysis for stochastic dynamics model of Alzheimer’s disease. Nonlinear Dyn 2023:1--21. 
+https://www.researchgate.net/publication/365727891.
+[59] Ghosh P, Vaidya A, Kumar A, Rangachari V. Determination of critical nucleation number for a single nucleation amyloid-𝛽aggregation model. Math Biosci 
+2016;273:70--9. https://www.sciencedirect.com/science/article/abs/pii/S0025556415002667.
+[60] Gella A, Durany N. Oxidative stress in Alzheimer disease. Cell Adhes Migr 2009;3(1):88--93. https://www.tandfonline.com/doi/full/10.4161/cam.3.1.7402.
+[61] Guan PP, Cao LL, Yang Y, Wang P. Calcium ions aggravate Alzheimer’s disease through the aberrant activation of neuronal networks, leading to synaptic and 
+cognitive deficits. Front Mol Neurosci 2021:298. https://pubmed.ncbi.nlm.nih.gov/34924952/.
+[62] Guan YH, Zhang LJ, Wang SY, Deng YD, Zhou HS, Chen DQ, et al. The role of microglia in Alzheimer’s disease and progress of treatment. Ibrain 2022;8(1):37--47. 
+https://www.researchgate.net/publication/358788064.
+[63] Gustavsson A, Norton N, Fast T, Frolich L, Georges J, Holzapfel D, et al. Global estimates on the number of persons across the Alzheimer’s disease continuum. 
+Alzheimer’s Dement 2023;19(2):658--70. https://alz-journals.onlinelibrary.wiley.com/doi/full/10.1002/alz.12694.
+[64] Hadjichrysanthou C, Ower AK, de Wolf F, Anderson RM. Alzheimer’s disease neuroimaging initiative. The development of a stochastic mathematical model of 
+Alzheimer’s disease to help improve the design of clinical trials of potential treatments. PLoS ONE 2018;13(1):e0190615. https://journals.plos.org/plosone/
+article?id=10.1371/journal.pone.0190615.
+[65] Hao W, Friedman A. Mathematical model on Alzheimer’s disease. BMC Syst Biol 2016;10(1):1--18. https://bmcsystbiol.biomedcentral.com/articles/10.1186/
+s12918-016-0348-2.
+[66] Hao W, Lenhart S, Petrella JR. Optimal anti-amyloid-beta therapy for Alzheimer’s disease via a personalized mathematical model. PLoS Comput Biol 
+2022;18(9):e1010481. https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010481.
+[67] Han P, Shi J. A theoretical analysis of the synergy of amyloid and tau in Alzheimer’s disease. J Alzheimer’s Dis 2016;52(4):1461--70. https://pubmed.ncbi.nlm.
+nih.gov/27104897/.
+[68] Hansen DV, Hanson JE, Sheng M. Microglia in Alzheimer’s disease. J Cell Biol 2018;217(2):459--72. https://www.ncbi.nlm.nih.gov/pmc/articles/
+PMC5800817/.
+[69] Helal M, Hingant E, Pujo-Menjouet L, Webb GF. Alzheimer’s disease: analysis of a mathematical model incorporating the role of prions. J Math Biol 
+2014;69(5):1207--35. https://pubmed.ncbi.nlm.nih.gov/24146290/.
+[70] Helal M, Igel-Egalon A, Lakmeche A, Mazzocco P, Perrillat-Mercerot A, Pujo-Menjouet L, et al. Stability analysis of a steady state of a model describing 
+Alzheimer’s disease and interactions with prion proteins. J Math Biol 2019;78(1):57--81. https://link.springer.com/article/10.1007/s00285-018-1267-1.
+[71] Holtzman DM, Bales KR, Tenkova T, Fagan AM, Parsadanian M, Sartorius LJ, et al. Apolipoprotein E isoform-dependent amyloid deposition and neuritic 
+degeneration in a mouse model of Alzheimer’s disease. Proc Natl Acad Sci 2000;97(6):2892--7. https://www.pnas.org/doi/full/10.1073/pnas.050004797.
+[72] Hoore M, Khailaie S, Montaseri G, Mitra T, Meyer-Hermann M. Mathematical model shows how sleep may aﬀect amyloid-𝛽fibrillization. Biophys J 
+2020;119(4):862--72. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7451937/.
+[73] Horn D, Ruppin E, Usher M, Herrmann M. Neural network modeling of memory deterioration in Alzheimer’s disease. Neural Comput 1993;5(5):736--49. https://
+www.researchgate.net/publication/220499973.
+[74] Ho­field JJ. Neural networks and physical systems with emergent collective computational abilities. Proc Natl Acad Sci 1982;79(8):2554--8. https://www.pnas.
+org/doi/10.1073/pnas.79.8.2554.
+[75] Hu J, Meyer-Baese A, Zhang Q. Analysis of a stochastic reaction-diffusion Alzheimer’s disease system driven by space-time white noise. Appl Math Lett 
+2022;134:108308. https://www.sciencedirect.com/science/article/abs/pii/S0893965922002269.
+[76] Hu J, Zhang Q, Meyer-Baese A, Ye M. Finite-time stability and optimal control of a stochastic reaction-diffusion model for Alzheimer’s disease with impulse 
+and time-varying delay. Appl Math Model 2022;102:511--39. https://www.sciencedirect.com/science/article/abs/pii/S0307904X21004674.
+[77] Hu J, Zhang Q, Meyer-Baese A, Ye M. Stationary distribution of a stochastic Alzheimer’s disease model. Math Methods Appl Sci 2020;43(17):9706--18. https://
+onlinelibrary.wiley.com/doi/abs/10.1002/mma.6642.
+[78] Hu J, Zhang Q, Meyer-Baese A, Ye M. Stability in distribution for a stochastic Alzheimer’s disease model with reaction diﬀusion. Nonlinear Dyn 
+2020;108(4):4243--60. https://link.springer.com/article/10.1007/s11071-022-07387-6.
+[79] Huang YR, Liu RT. The toxicity and polymorphism of 𝛽-amyloid oligomers. Int J Mol Sci 2020;21(12):4477. https://www.mdpi.com/1422-0067/21/12/4477.
+[80] Ito K, Ahadieh S, Corrigan B, French J, Fullerton T, Tensfeldt T. Alzheimer’s disease working group. Disease progression meta-analysis model in Alzheimer’s 
+disease. Alzheimer’s Dement 2010;6(1):39--53. https://www.sciencedirect.com/science/article/abs/pii/S1552526009020135.
+[81] Ito K, Corrigan B, Zhao Q, French J, Miller R, Soares H, et al. Disease progression model for cognitive deterioration from Alzheimer’s disease neuroimaging 
+initiative database. Alzheimer’s Dement 2011;7(2):151--60. https://pubmed.ncbi.nlm.nih.gov/20810324/.
+[82] Jafari N, Sarbaz Y, Ebrahimi-kalan A, Golabi F. Novel mathematical model based on cellular automata for study of Alzheimer’s disease progress. Netw Model 
+Anal Health Inform Bioinform 2022;11(1):26. https://link.springer.com/article/10.1007/s13721-022-00366-2.
+
+Physics of Life Reviews 52 (2025) 207–244
+242
+M. Maji and S. Khajanchi 
+[83] Jain A, Roy P. Obesity Alzheimer’s: an attempt to decipher the role of obesity in blood brain barrier degradation. Chaos Solitons Fractals 2023;166:112902. 
+https://www.sciencedirect.com/science/article/abs/pii/S0960077922010815.
+[84] Jin HY, Wang ZA. A dual-gradient chemotaxis system modeling the spontaneous aggregation of microglia in Alzheimer’s disease. Anal Appl 2018;16(03):307--38. 
+https://www.worldscientiﬁc.com/doi/10.1142/S0219530517500087.
+[85] Kellett KA, Hooper NM. Prion protein and Alzheimer disease. Prion 2009;3(4):190--4. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2807690/.
+[86] Khan S, Barve KH, Kumar MS. Recent advancements in pathogenesis, diagnostics and treatment of Alzheimer’s disease. Curr Neuropharmacol 
+2020;18(11):1106--25. https://pubmed.ncbi.nlm.nih.gov/32484110/.
+[87] Khanal B, Lorenzi M, Ayache N, Pennec X. A biophysical model of brain deformation to simulate and analyze longitudinal MRIs of patients with Alzheimer’s 
+disease. NeuroImage 2016;134:35--52. https://www.sciencedirect.com/science/article/abs/pii/S1053811916300052.
+[88] Kim H, Kim S, Go H, Kim D. Synergetic analysis of spatio-temporal EEG patterns: Alzheimer’s disease. Biol Cybern 2001;85:1--17. https://pubmed.ncbi.nlm.
+nih.gov/11471836/.
+[89] Kim J, Basak JM, Holtzman DM. The role of apolipoprotein E in Alzheimer’s disease. Neuron 2009;63(3):287--303. https://pubmed.ncbi.nlm.nih.gov/
+19679070/.
+[90] Kim JR, Muresan A, Lee KYC, Murphy RM. Urea modulation of 𝛽-amyloid fibril growth: experimental studies and kinetic models. Protein Sci 
+2004;13(11):2888--98. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2286573/.
+[91] Kim YS, Jung HM, Yoon BE. Exploring glia to better understand Alzheimer’s disease. Anim Cells Syst 2018;22(4):213--8. https://www.ncbi.nlm.nih.gov/pmc/
+articles/PMC6138241/.
+[92] Krashenyi I, Popov A, Ramirez J, Gorriz JM. Application of fuzzy logic for Alzheimer’s disease diagnosis. In: Signal Processing Symposium (SPSympo). IEEE; 
+2015. https://ieeexplore.ieee.org/document/7168288.
+[93] Kumar V, Madan AK. Application of graph theory: prediction of glycogen synthase kinase-3 𝛽inhibitory activity of thiadiazolidinones as potential drugs for the 
+treatment of Alzheimer’s disease. Eur J Pharm Sci 2005;24(2--3):213--8. https://pubmed.ncbi.nlm.nih.gov/15661493/.
+[94] Kyrtsos CR, Baras JS. A graph theoretic mathematical model for Alzheimer’s disease: using a systems biology approach. In: 12th international conference on 
+bioinformatics & bioengineering (BIBE). Larnaca, Cyprus: IEEE; 2013. https://ieeexplore.ieee.org/document/6399723.
+[95] Kuznetsov IA, Kuznetsov AV. Simulating the eﬀect of formation of amyloid plaques on aggregation of tau protein. Proc Math Phys Eng Sci 
+2018;474(2220):20180511. https://pubmed.ncbi.nlm.nih.gov/30602936/.
+[96] Lang R, Tan Y, Mu Y. Stationary distribution and extinction of a stochastic Alzheimer’s disease model. AIMS Math 2023;8(10):23313--35. https://www.aimspress.
+com/article/doi/10.3934/math.20231185.
+[97] Lao A. A systems biology approach to understand the i­fluence of SORLA on amyloidogenic processing in Alzheimer’s disease. Rostock University; 2014.
+[98] Latulippe J, Lotito D, Murby D. A mathematical model for the eﬀects of amyloid beta on intracellular calcium. PLoS ONE 2018;13(8):e0202503. https://
+journals.plos.org/plosone/article?id=10.1371/journal.pone.0202503.
+[99] Lee CT, Hoopes MF, Diehl J, Gilliland W, Huxel G, Leaver EV, et al. Non-local concepts and models in biology. J Theor Biol 2001;210(2):201--19. https://
+pubmed.ncbi.nlm.nih.gov/11371175/.
+[100] Lee C, Friedman A. Generating PET scan patterns in Alzheimer’s by a mathematical model. PLoS ONE 2024;19(4):e0299637. https://journals.plos.org/plosone/
+article?id=10.1371/journal.pone.0299637.
+[101] Leonard III RY. A mathematical model for inhibitor drugs in the treatment of Alzheimer’s disease. Mississippi State University; 2018. https://scholarsjunction.
+msstate.edu/honorstheses/34/.
+[102] Laurencot P, Wrzosek D. The Becker-Döring model with diﬀusion. I. Basic properties of solutions. Colloq Math 1998;75(2):245--69. Polska Akademia Nauk. 
+Instytut Matematyczny PAN. https://eudml.org/doc/210541.
+[103] Lemarre P, Pujo-Menjouet L, Sindi SS. A unifying model for the propagation of prion proteins in yeast brings insight into the [PSI + ] prion. PLoS Comput Biol 
+2020;16(5):e1007647. https://pmc.ncbi.nlm.nih.gov/articles/PMC7274466/.
+[104] Lesne S, Kotilinek L. Amyloid plaques and amyloid-𝛽oligomers: an ongoing debate. J Neurosci 2005;25(41):9319--20. https://www.ncbi.nlm.nih.gov/pmc/
+articles/PMC6725700/.
+[105] Li H, Zhao H. Mathematical model of Alzheimer’s disease with prion proteins interactions and treatment. Appl Math Comput 2022;433:127377. https://
+www.sciencedirect.com/science/article/abs/pii/S0096300322004519.
+[106] Lindstrom MR, Chavez MB, Gross-Sable EA, Hayden EY, Teplow DB. From reaction kinetics to dementia: a simple dimer model of Alzheimer’s disease etiology. 
+PLoS Comput Biol 2021;17(7):e1009114. https://journals.plos.org/ploscompbiol/article/ﬁgures?id=10.1371/journal.pcbi.1009114.
+[107] Liu CC, Kanekiyo T, Xu H, Bu G. Apolipoprotein E and Alzheimer disease: risk, mechanisms and therapy. Nat Rev Neurol 2013;9(2):106--18. https://pubmed.
+ncbi.nlm.nih.gov/23296339/.
+[108] Liu X, Liu X, Shi Y, Thompson P, Mio W. A model of volumetric shape for the analysis of longitudinal Alzheimer’s disease data. In: 11th European conference 
+on computer vision. 2010 September 5-11, Heraklion, Crete, Greece: proceedings, part III, vol. 11. Springer Berlin Heidelberg; 2010. p. 594--606. https://
+www.researchgate.net/publication/221304662.
+[109] Liu XY, Yang LP, Zhao L. Stem cell therapy for Alzheimer’s disease. World J Stem Cells 2020;12(8):787. https://www.ncbi.nlm.nih.gov/pmc/articles/
+PMC7477654/.
+[110] Luca M, Chavez-Ross A, Edelstein-Keshet L, Mogilner A. Chemotactic signaling, microglia, and Alzheimer’s disease senile plaques: is there a connection? Bull 
+Math Biol 2003;65(4):693--730. https://pubmed.ncbi.nlm.nih.gov/12875339/.
+[111] Macdonald A, Pritchard D. A mathematical model of Alzheimer’s disease and the ApoE gene. ASTIN Bull 2000;30(1):69--110. https://www.cambridge.org/core/
+journals/astin-bulletin-journal-of-the-iaa/article/mathematical-model-of-alzheimers-disease-and-the-apoe-gene/5016C62C46371ADE42555A7EBC41FEDB.
+[112] Maji M, Khajanchi S. Roles of astrocytes and prions in Alzheimer’s disease: insights from mathematical modeling. J Biol Phys 2023:1--31. https://pubmed.ncbi.
+nlm.nih.gov/38157152/.
+[113] Maji M, Khajanchi S. A fractional-order yeast prion mathematical model and its solution. J Appl Math Comput 2024:1--8. https://link.springer.com/article/10.
+1007/s12190-024-02063-x.
+[114] Morabito FC, Campolo M, Labate D, Morabito G, Bonanno L, Bramanti A, et al. A longitudinal EEG study of Alzheimer’s disease progression based on a complex 
+network approach. Int J Neural Syst 2015;25(02):1550005. https://www.worldscientiﬁc.com/doi/10.1142/S0129065715500057.
+[115] Medeiros R, Baglietto-Vargas D, LaFerla FM. The role of tau in Alzheimer’s disease and related disorders. CNS Neurosci Ther 2011;17(5):514--24. https://
+www.ncbi.nlm.nih.gov/pmc/articles/PMC4072215/.
+[116] Meisl G, Hidari E, Allinson K, Rittman T, DeVos SL, Sanchez JS, et al. In vivo rate-determining steps of tau seed accumulation in Alzheimer’s disease. Sci Adv 
+2021;7(44):eabh1448. https://pubmed.ncbi.nlm.nih.gov/34714685/.
+[117] Michaels TC, Saric A, Curk S, Bernfur K, Arosio P, Meisl G, et al. Dynamics of oligomer populations formed during the aggregation of Alzheimer’s A𝛽-42 peptide. 
+Nat Chem 2020;12(5):445--51. https://pubmed.ncbi.nlm.nih.gov/32284577/.
+[118] Musiek ES. Circadian rhythms in AD pathogenesis: a critical appraisal. Curr Sleep Med Rep 2017;3:85--92. https://pmc.ncbi.nlm.nih.gov/articles/PMC5754029/.
+[119] Nunomura A, Castellani RJ, Zhu X, Moreira PI, Perry G, Smith MA. Involvement of oxidative stress in Alzheimer disease. J Neuropathol Exp Neurol 
+2009;65(7):631--41. https://pubmed.ncbi.nlm.nih.gov/16825950/.
+[120] Nutini A, Sohail A, Arif R, Fiaz M, Beg OA. Modeling the impact of delay on the aggregation of AD proteins. Ann Data Sci 2024;11(1):201--15. https://
+link.springer.com/article/10.1007/s40745-022-00439-z.
+
+Physics of Life Reviews 52 (2025) 207–244
+243
+M. Maji and S. Khajanchi 
+[121] Pachauri D, Hinrichs C, Chung MK, Johnson SC, Singh V. Topology-based kernels with application to inference problems in Alzheimer’s disease. IEEE Trans 
+Med Imaging 2011;30(10):1760--70. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3245735/.
+[122] Pal S, Melnik R. Nonlocal models in the analysis of brain neurodegenerative protein dynamics with application to Alzheimer’s disease. Sci Rep 2022;12(1):7328. 
+https://www.nature.com/articles/s41598-022-11242-4.
+[123] Pallitto MM, Murphy RM. A mathematical model of the kinetics of 𝛽-amyloid fibril growth from the denatured state. Biophys J 2001;81(3):1805--22. https://
+pubmed.ncbi.nlm.nih.gov/11509390/.
+[124] Parihar MS, Hemnani T. Alzheimer’s disease pathogenesis and therapeutic interventions. J Clin Neurosci 2004;11(5):456--67. https://pubmed.ncbi.nlm.nih.
+gov/15177383/.
+[125] Perez Ortiz JM, Swerdlow RH. Mitochondrial dysfunction in Alzheimer’s disease: role in pathogenesis and novel therapeutic opportunities. Br J Pharmacol 
+2019;176(18):3489--507. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6715612/.
+[126] Perneczky R, Jessen F, Grimmer T, Levin J, Floel A, Peters O, et al. Anti-amyloid antibody therapies in Alzheimer’s disease. Brain 2023;146(3):842--9. https://
+pubmed.ncbi.nlm.nih.gov/36655336/.
+[127] Parks ME. Stochastic model of Alzheimer’s disease progression using two-state Markov chains. PLoS ONE 2024;19(1):e0295578. https://journals.plos.org/
+plosone/article?id=10.1371/journal.pone.0295578.
+[128] Patow G, Stefanovski L, Ritter P, Deco G, Kobeleva X. Whole-brain modeling of the diﬀerential i­fluences of amyloid-Beta and Tau in Alzheimer’s disease. 
+Alzheimers Res Ther 2023;15(1):1--18. https://pubmed.ncbi.nlm.nih.gov/38053164/.
+[129] Petrella JR, Hao W, Rao A, Doraiswamy PM. Computational causal modeling of the dynamic biomarker cascade in Alzheimer’s disease. Comput Math Methods 
+Med 2019;2019:6216530. https://www.hindawi.com/journals/cmmm/2019/6216530/.
+[130] Phillips DJ, McGlaughlin A, Ruth D, Jager LR, Soldan A. Alzheimer’s disease neuroimaging initiative. Graph theoretic analysis of structural connectivity across 
+the spectrum of Alzheimer’s disease: the importance of graph creation methods. NeuroImage Clin 2015;7:377--90. https://pubmed.ncbi.nlm.nih.gov/25984446/.
+[131] Plascencia-Villa G, Perry G. Preventive and therapeutic strategies in Alzheimer’s disease: focus on oxidative stress, redox metals, and ferroptosis. Antioxid Redox 
+Signal 2021;34(8):591--610. https://pubmed.ncbi.nlm.nih.gov/32486897/.
+[132] Potter R, Patterson BW, Elbert DL, Ovod V, Kasten T, Sigurdson W, et al. Increased in vivo amyloid-𝛽42 production, exchange, and loss in presenilin mutation 
+carriers. Sci Transl Med 2013;5(189):189ra77. https://pubmed.ncbi.nlm.nih.gov/23761040/.
+[133] Prigent S, Haﬀaf HW, Banks HT, Hoffmann M, Rezaei H, Doumic M. Size distribution of amyloid brils: mathematical models and experimental data. Int J Pure 
+Appl Math 2014;93(6):845--78. https://www.researchgate.net/publication/275596974.
+[134] Puri IK, Li L. Mathematical modeling for the pathogenesis of Alzheimer’s disease. PLoS ONE 2010;5(12):e15176. https://journals.plos.org/plosone/article?id=
+10.1371/journal.pone.0015176.
+[135] Rajmohan R, Reddy PH. Amyloid-beta and phosphorylated tau accumulations cause abnormalities at synapses of Alzheimer’s disease neurons. J Alzheimer’s 
+Dis 2017;57(4):975--99. https://pubmed.ncbi.nlm.nih.gov/27567878/.
+[136] Ranjan B, Chong KH, Zheng J. Composite mathematical modeling of calcium signaling behind neuronal cell death in Alzheimer’s disease. BMC Syst Biol 
+2018;12:61--74. https://pubmed.ncbi.nlm.nih.gov/29671396/.
+[137] Reid MJ, Beltran-Lobo P, Johnson L, Perez-Nievas BG, Noble W. Astrocytes in tauopathies. Front Neurol 2020;11:572850. https://pubmed.ncbi.nlm.nih.gov/
+33071951/.
+[138] Reis AES, Vianna GK, Barreto F, Carvalho LAV. A computational mathematical model of neuronal death caused by oxidative stress in Alzheimer’s disease. In: 
+Proceeding of II international symposium on mathematical and computational biology; 2006. https://www.researchgate.net/publication/239555150.
+[139] Rivers-Auty J, Mather AE, Peters R, Lawrence CB, Brough D. Anti-inflammatories in Alzheimer’s disease potential therapy or spurious correlate? Brain Commun 
+2020;2(2):fcaa109. https://pubmed.ncbi.nlm.nih.gov/33134914/.
+[140] Safieh M, Korczyn AD, Michaelson DM. ApoE4: an emerging therapeutic target for Alzheimer’s disease. BMC Med 2019;17:1--17. https://bmcmedicine.
+biomedcentral.com/articles/10.1186/s12916-019-1299-4.
+[141] Sampaoli S, Agosti A, Pozzi G, Ciarletta P. A toy model of misfolded protein aggregation and neural damage propagation in neurodegenerative diseases. Int J 
+Non-Linear Mech 2022;144:104083. https://www.sciencedirect.com/science/article/abs/pii/S0020746222001093.
+[142] Santos G, Diaz M. Dimensional changes in lipid rafts from human brain cortex associated to development of Alzheimer’s disease. Predictions from an agent-based 
+mathematical model. Int J Mol Sci 2021;22(22):12181. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8620379/.
+[143] Santos G, Diaz M, Torres NV. Lipid raft size and lipid mobility in non-raft domains increase during aging and are exacerbated in APP/PS1 mice model of 
+Alzheimer’s disease. Front physiol 2016;7:90. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4791387/.
+[144] Shoghi-Jadid K, Barrio JR, Kepe V, Huang SC. Exploring a mathematical model for the kinetics of 𝛽-amyloid molecular imaging probes through a critical analysis 
+of plaque pathology. Mol Imaging Biol 2006;8:151--62. https://link.springer.com/article/10.1007/s11307-006-0037-4.
+[145] Shoghi-Jadid K, Barrio JR, Kepe V, Wu HM, Small GW, Phelps ME, et al. Imaging 𝛽-amyloid fibrils in Alzheimer’s disease: a critical analysis through simulation 
+of amyloid fibril polymerization. Nucl Med Biol 2005;32(4):337--51. https://www.sciencedirect.com/science/article/abs/pii/S0969805105000533.
+[146] Sim M, Smith WT. Alzheimer’s disease co­firmed by cerebral biopsy: a therapeutic trial with cortisone and A.C.T.H. J Ment Sci 1955;101(424):604--9. https://
+pubmed.ncbi.nlm.nih.gov/13263853/.
+[147] Smoluchowski MV. Versuch einer mathematischen Theorie der Koagulationskinetik kolloider Losungen. IZ Phys Chem 1918;92(1):129--68. https://doi.org/10.
+1515/zpch-1918-9209.
+[148] Spangenberg E, Severson PL, Hoh­field LA, Crapser J, Zhang J, Burton EA, et al. Sustained microglial depletion with CSF1R inhibitor impairs parenchymal 
+plaque development in an Alzheimer’s disease model. Nat Commun 2019;10(1):3758. https://www.nature.com/articles/s41467-019-11674-z.
+[149] Stam CJ, De Haan W, Daﬀertshofer ABFJ, Jones BF, Manshanden I, van Cappellen, et al. Graph theoretical analysis of magnetoencephalographic functional 
+connectivity in Alzheimer’s disease. Brain 2009;132(1):213--24. https://academic.oup.com/brain/article/132/1/213/287071.
+[150] Starkstein SE, Mizrahi R, Power BD. Depression in Alzheimer’s disease: phenomenology, clinical correlates and treatment. Int Rev Psychiatry 2008;20(4):382--8. 
+https://www.tandfonline.com/doi/full/10.1080/09540260802094480.
+[151] Stefanovski L, Triebkorn P, Spiegler A, Diaz-Cortes MA, Solodkin A, Jirsa V, et al. Alzheimer’s disease neuroimaging initiative. Linking molecular pathways and 
+large-scale computational modeling to assess candidate disease mechanisms and pharmacodynamics in Alzheimer’s disease. Front Comput Neurosci 2019;13:54. 
+https://pubmed.ncbi.nlm.nih.gov/31456676/.
+[152] Stern Y, Liu X, Albert M, Brandt J, Jacobs DM, Castillo-Castaneda CD, et al. Application of a growth curve approach to modeling the progression of Alzheimer’s 
+disease. J Gerontol, Ser A, Biol Sci Med Sci 1996;51(4):M179--84. https://pubmed.ncbi.nlm.nih.gov/8681001/.
+[153] Tanzi RE. The genetics of Alzheimer disease. CSH Perspect Med 2012;2(10):a006296. https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3475404/.
+[154] Theriault P, ElAli A, Rivest S. The dynamics of monocytes and microglia in Alzheimer’s disease. Alzheimer’s Res Ther 2015;7:1--10. https://alzres.biomedcentral.
+com/articles/10.1186/s13195-015-0125-2.
+[155] Thompson PM, Hayashi KM, Sowell ER, Gogtay N, Giedd JN, Rapoport JL, et al. Mapping cortical change in Alzheimer’s disease, brain development, and 
+schizophrenia. NeuroImage 2004;23:S2--18. https://www.sciencedirect.com/science/article/abs/pii/S1053811904003994.
+[156] Thompson TB, Chaggar P, Kuhl E, Goriely A. Alzheimer’s disease neuroimaging initiative. Protein-protein interactions in neurodegenerative diseases: a conspir­
+acy theory. PLoS Comput Biol 2020;16(10):e1008267. https://pubmed.ncbi.nlm.nih.gov/33048932/.
+[157] Tiveci S, Akin A, Cakir T, Saybasili H, Ulgen K. Modelling of calcium dynamics in brain energy metabolism and Alzheimer’s disease. Comput Biol Chem 
+2005;29(2):151--62. https://pubmed.ncbi.nlm.nih.gov/15833443/.
+
+Physics of Life Reviews 52 (2025) 207–244
+244
+M. Maji and S. Khajanchi 
+[158] Tong BCK, Wu AJ, Li M, Cheung KH. Calcium signaling in Alzheimer’s disease & therapies. Biochim Biophys Acta, Mol Cell Res 2018;1865(11):1745--60. https://
+pubmed.ncbi.nlm.nih.gov/30059692/.
+[159] Van Eldik LJ, Carrillo MC, Cole PE, Feuerbach D, Greenberg BD, Hendrix JA, et al. The roles of i­flammation and immune mechanisms in Alzheimer’s disease. 
+Alzheimer’s Dement: Transl Res Clin Interv 2016;2(2):99--109. https://pubmed.ncbi.nlm.nih.gov/29067297/.
+[160] Vander Zanden CM, Wampler L, Bowers I, Watkins EB, Majewski J, Chi EY. Fibrillar and no­fibrillar amyloid beta structures drive two modes of membrane­
+mediated toxicity. Langmuir 2019;35(48):16024--36. https://pubs.acs.org/doi/10.1021/acs.langmuir.9b02484.
+[161] Vasic V, Barth K, Schmidt MH. Neurodegeneration and neuro-regeneration Alzheimer’s disease and stem cell therapy. Int J Mol Sci 2019;20(17):4272. https://
+www.ncbi.nlm.nih.gov/pmc/articles/PMC6747457/.
+[162] Viola KL, Klein WL. Amyloid 𝛽oligomers in Alzheimer’s disease pathogenesis, treatment, and diagnosis. Acta Neuropathol 2015;129:183--206. https://pubmed.
+ncbi.nlm.nih.gov/25604547/.
+[163] Voropaeva OF, Bayadilov TV, Leontiev SV, Senotrusova SD, Tsgoev CA, Shokin YI. Mathematical modeling of degenerative diseases. AIP Conf Proc AIP Publ 
+LLC 2018;2027(1):030075. https://pubs.aip.org/aip/acp/article/2027/1/030075/925869/Mathematical-modeling-of-degenerative-diseases.
+[164] Wang WY, Tan MS, Yu JT, Tan L. Role of pro-inflammatory cytokines released from microglia in Alzheimer’s disease. Ann Transl Med 2015;3(10):136. https://
+www.ncbi.nlm.nih.gov/pmc/articles/PMC4486922/.
+[165] Whittington A, Sharp DJ, Gunn RN. Spatiotemporal distribution of 𝛽-amyloid in Alzheimer disease is the result of heterogeneous regional carrying capacities. 
+J Nucl Med 2018;59(5):822--7. https://jnm.snmjournals.org/content/57/supplement_2/346.
+[166] Williams T, Ruiz AJ, Ruiz AM, Vo Q, Tsering W, Xu G, et al. Impact of APOE genotype on prion-type propagation of tauopathy. Acta Neuropathol Commun 
+2022;10(1):57. https://actaneurocomms.biomedcentral.com/articles/10.1186/s40478-022-01359-y.
+[167] Wisniewski T, Drummond E. APOE-amyloid interaction: therapeutic targets. Neurobiol Dis 2020;138:104784. https://www.ncbi.nlm.nih.gov/pmc/articles/
+PMC7118587/.
+[168] Wyss-Coray T. TGF-𝛽pathway as a potential target in neurodegeneration and Alzheimer’s. Curr Alzheimer Res 2006;3(3):191--5. https://jneuroinﬂammation.
+biomedcentral.com/articles/10.1186/s12974-023-02751-8.
+[169] Yadav P, Jahan S, Nisar KS. Analysis of fractal-fractional Alzheimer’s disease mathematical model in sense of Caputo derivative. AIMS Public Health 
+2024;11(2):399--419. https://www.researchgate.net/publication/379666166.
+[170] Yu TW, Lane HY, Lin CH. Novel therapeutic approaches for Alzheimer’s disease: an updated review. Int J Mol Sci 2021;22(15):8208. https://www.ncbi.nlm.
+nih.gov/pmc/articles/PMC8348485/.
+[171] Zhang Y, Wang W. Mathematical analysis for stochastic model of Alzheimer’s disease. Commun Nonlinear Sci Numer Simul 2020;89:105347. https://www.
+sciencedirect.com/science/article/abs/pii/S1007570420301799.
+[172] Zhang Z, Zou Z, Kuhl E, Karniadakis GE. Discovering a reaction-diffusion model for Alzheimer’s disease by combining PINNs with symbolic regression. Comput 
+Methods Appl Mech Eng 2024;419:116647. https://www.researchgate.net/publication/377879676.
+[173] Zhao J, O’Connor T, Vassar R. The contribution of activated astrocytes to A𝛽production: implications for Alzheimer’s disease pathogenesis. J Neuroi­flamm 
+2011;8:1--17. https://pubmed.ncbi.nlm.nih.gov/22047170/.
+[174] Zhou J, Liu J, Narayan VA, Ye J. Modeling disease progression via fused sparse group lasso. In: Proceedings of the 18th ACM SIGKDD international conference 
+on knowledge discovery and data mining; 2012. p. 1095--103. https://dl.acm.org/doi/10.1145/2339530.2339702.
+[175] Zhou Y, Sun Y, Ma QH, Liu Y. Alzheimer’s disease: amyloid-based pathogenesis and potential therapies. Cell Stress 2018;2(7):150--61. https://www.cell-stress.
+com/researcharticles/alzheimers-disease-amyloid-based-pathogenesis-and-potential-therapies/.

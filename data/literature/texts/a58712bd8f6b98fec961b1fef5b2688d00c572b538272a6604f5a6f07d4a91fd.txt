@@ -1,0 +1,1848 @@
+RESEARCH ARTICLE
+www.advmat.de
+A Peptide-Drug Conjugate-Based Nanoplatform for
+Immunometabolic Activation and In Situ Nerve
+Regeneration in Advanced-Stage Alzheimer’s Disease
+Peixin Liu, Tongyu Zhang, Yuxing Wu, Qinjun Chen, Tao Sun, and Chen Jiang*
+The formidable protection of physiological barriers and unclear pathogenic
+mechanisms impede drug development for Alzheimer’s disease (AD).
+As defenders of the central nervous system, immune-metabolism function,
+and stemness of glial cells remain dormant during degeneration, representing
+a signiﬁcant challenge for simultaneously targeting and modulating.
+Here, a modular nanoplatform is presented composed of peptide-drug
+conjugates and an inﬂammation-responsive core. The nanoplatform is
+transported through the blood-brain barrier via transcytosis and disassembles
+in the oxidative stress microenvironment upon intravenous administration.
+The released drug-conjugated modules can speciﬁcally target and deliver
+hydroxychloroquine (HCQ) and all-trans retinoic acid (ATRA) to microglia and
+astrocytes, respectively. The immune function of chronic tolerant microglia is
+activated by metabolic modulation, and reactive astrocytes trans-diﬀerentiate
+into functional neurons. In a transgenic mouse model, nanoplatform
+reduces levels of toxic proteins and inﬂammation while increasing neuronal
+density. This results in the amelioration of learning and memory decline.
+The modular nanoplatform provides design principles for multi-cellular
+targeting and combination nano-therapy for inﬂammation-related diseases.
+1. Introduction
+Alzheimer’s disease (AD) is a chronic neurodegenerative dis-
+order for which there are currently no eﬀective therapeutic
+P. Liu, T. Zhang, Y. Wu, Q. Chen, T. Sun, C. Jiang
+Department of Pharmaceutics
+School of Pharmacy
+Key Laboratory of Smart Drug Delivery
+Ministry of Education
+State Key Laboratory of Medical Neurobiology and MOE Frontiers Center
+for Brain Science
+Fudan University
+Shanghai 201203, China
+E-mail: jiangchen@shmu.edu.cn
+C.Jiang
+Department of DigestiveDiseases
+National Regional Medical Center
+Binhai Campus of theFirst AﬃliatedHospital
+Fujian Medical University
+Fuzhou 350212,China
+The ORCID identiﬁcation number(s) for the author(s) of this article
+can be found under https://doi.org/10.1002/adma.202408729
+DOI: 10.1002/adma.202408729
+interventions to prevent or halt disease pro-
+gression. The incidence of AD rapidly in-
+creases with age, classifying it as an age-
+related disease.[1] Traditional drug discovery
+approaches have focused on downstream
+molecular events associated with abnormal
+aging biomarkers, such as amyloid plaque
+and neuroﬁbrillary tangles.[2] However, the
+impact of abnormal aging on brain cells
+and its promotion of AD progression have
+been largely neglected. Recent studies have
+highlighted the signiﬁcance of aging neu-
+rovascular units in AD pathogenesis.[3] Al-
+though neuronal loss is irreversible in the
+advanced stages of AD, functionally im-
+paired glial cells enter a self-protective dor-
+mant state.[4] Consequently, awakening dor-
+mant glial cells may represent a promising
+strategy for AD treatment.
+Cellular aging is accompanied by alter-
+ations in metabolic levels, which directly
+contribute to immune function and cell
+phenotype modiﬁcations.[5] For instance,
+microglia polarize to the M1 phenotype and
+secrete pro-inﬂammatory cytokines while
+being recruited to sites of inﬂammation and enhancing phago-
+cytosis during the early stages of inﬂammation.[6] However, if
+this process persists unchecked, microglia will enter a dormant
+state of immune tolerance where they appear unresponsive to
+stimulation.[7] Although immune tolerance can reduce inﬂam-
+mation, it contributes to immune cell dysfunction in various
+diseases.[8] Therefore, activating and controlling the immune
+function of microglia is crucial for disease treatment. The in-
+tricate interplay between metabolism and immunity presents
+promising avenues for further investigation. Microglial activa-
+tion is characterized by metabolic reprogramming, which in-
+volves a shift in cellular metabolism from oxidative phospho-
+rylation (OXPHOS) to glycolysis.[9] This process involves mul-
+tiple signaling pathways, which are of particular importance to
+the mammalian target of the rapamycin (mTOR) pathway.[10]
+Activation of mTOR can regulate cellular glucose, lipid, and
+amino acid metabolism while positively inﬂuencing cellular im-
+mune function.[11] Recent studies have demonstrated that the
+mTOR-hypoxia inducible factor-1 (HIF-1𝛼) pathway plays a piv-
+otal role in determining the immunological function of mi-
+croglia by activating cellular glycolysis and enhancing phagocyto-
+sis capabilities.[12] Consequently, targeting modulation within the
+Adv. Mater. 2024, 36, 2408729
+© 2024 Wiley-VCH GmbH
+2408729 (1 of 21)
+
+www.advancedsciencenews.com
+www.advmat.de
+Scheme 1. Self-assembly process of nanoplatform (DA-PPHATK@PDA) and the mechanism of glial cells-targeting therapy of nanoplatform in advanced
+stage AD.
+microglial immuno-metabolic network holds potential for treat-
+ing AD.
+In contrast to the dormant state of microglia, astrocytes exhibit
+a hidden capacity for self-renewal during AD progression.[13] As-
+trocytes and neurons originate from neural stem cells in the cen-
+tral nervous system, enabling astrocytes to retain their prolifer-
+ative properties and respond to disease stimuli by becoming ac-
+tivated and undergoing proliferation.[14] Reactive astrocytes ex-
+hibit speciﬁc characteristics resembling stem cells and positively
+correlate with their degree of activation.[15] Reprogramming cells
+with stemness to diﬀerentiate into neurons represents an eﬀec-
+tive strategy for reversing neurodegenerative diseases.[16] Studies
+have demonstrated that NeuroD1 expression could facilitate the
+trans-diﬀerentiation of astrocytes into neurons.[17] Therefore, in-
+ducing an in situ transition of reactive astrocytes into neurons
+may contribute to neuronal regeneration within the AD brain.
+We propose a modular-designed nano-alarm clock to awaken
+dormant microglia and astrocytes (Scheme 1). In advanced-
+stage AD, hydroxychloroquine (HCQ) and all-trans retinoic
+acid (ATRA) are selected as model immune-activating and
+diﬀerentiation-inducing drugs, respectively. The drugs are cova-
+lently linked to the polymer backbone (D-PPA and A-PPH) to en-
+sure stability and consistency in vitro and in vivo behavior. Fur-
+thermore, a polydopamine (PDA) nanocore module is synthe-
+sized to disintegrate in the oxidative stress microenvironment
+of the AD brain, enabling the sensitive release of drug-loaded
+modules for further targeting glial cells. The drug-loaded mod-
+ule and nanocore module self-assemble into DA-PPHA@PDA
+through electrostatic adsorption. To enhance the systemic sta-
+bility of the nanoplatform, a ROS-sensitive cross-linker is intro-
+duced, resulting in the formation of DA-PPHATK@PDA. Follow-
+ing intravenous administration, DA-PPHATK@PDA actively tar-
+gets brain endothelial cells under AD conditions while crossing
+the BBB via the transcytosis mechanism. HCQ is explicitly de-
+livered to microglia to activate the immune response and restore
+energy metabolism. In contrast, ATRA selectively targets astro-
+cytes, promoting their trans-diﬀerentiation into functional neu-
+rons while alleviating inﬂammation levels. Our research demon-
+strates a promising approach for modulating glial cells in treat-
+ing advanced-stage AD. It proposes a novel multicellular tar-
+geting nanoplatform for the targeted therapy of AD and other
+inﬂammation-related diseases.
+Adv. Mater. 2024, 36, 2408729
+© 2024 Wiley-VCH GmbH
+2408729 (2 of 21)
+ 15214095, 2024, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202408729 by CochraneChina, Wiley Online Library on [26/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+2. Results
+2.1. Hallmarks of Dormant Glial Cells and Modulation by HCQ
+and ATRA
+To ascertain the temporal proﬁle of microglia transitioning
+into immune tolerance in APP/PS1 mice, the expression of
+Akt/mTOR/HIF-1𝛼pathway was investigated (Figure S1, Sup-
+porting Information). p-mTOR, a pivotal regulator of immune
+function and metabolism, substantially increased in the hip-
+pocampus of 7- and 8-month-old mouse brains. While an ap-
+parent decline in p-mTOR was observed over the subsequent
+two months. Western blot (WB) results also demonstrated the
+shift from an immune-active to an immune-tolerant state of mi-
+croglia as AD progressed. In addition, previous studies have in-
+dicated that massive (𝛽-amyloid) A𝛽deposition, astrocyte over-
+activation, and neuron loss were observed during this period,
+which was identiﬁed as the advanced stage of AD.[18] We com-
+prehensively analyzed the alterations in the Akt/mTOR/HIF-1𝛼
+signaling pathway during the aging process of microglial cells
+using single-cell RNA sequencing database analysis (Figure S2,
+Supporting Information).[19] By comparing the expression pro-
+ﬁles of this pathway in microglia at distinct stages of youth
+(3 months), middle age (14 months), and old age (24 months)
+obtained through live cell sorting, we observed a consistent pat-
+tern of upregulation followed by downregulation for these three
+genes throughout the aging process. Notably, these ﬁndings are
+in accordance with our observations regarding alterations in the
+immune status within microglia in APP/PS1 brains. Therefore,
+we hypothesized that ≈9 months of age represented a critical pe-
+riod for modulating glial cells in APP/PS1 mice.
+Glial cell targeting is a critical step in the modulation of bio-
+logical function. Receptor-mediated BBB penetration or cell tar-
+geting has been demonstrated to be an auspicious approach for
+targeted delivery.[20] Connective tissue growth factor (CTGF), a
+matricellular protein that is highly expressed in AD brain, has
+been reported to play an active role in mediating the transport of
+substrates (such as DAG peptide) across the BBB via transcyto-
+sis and subsequent astrocyte targeting.[21] Immunoﬂuorescence
+staining and WB results of APP/PS1 mouse brains showed that
+the expression level of CTGF was 1.4 times higher than that in
+control brain tissue and sustainedly upregulated along with as-
+trocyte activation (Figure S3, Supporting Information). Accord-
+ingly, we assumed DAG peptide modiﬁcation would facilitate the
+speciﬁc delivery of nanoplatform across the BBB and into reac-
+tive astrocytes. Besides, the receptor for advanced glycation end-
+products (RAGE) has been demonstrated to mediate A𝛽trans-
+portation across BBB and microglia phagocytosis in AD brain.[22]
+Therefore, an A𝛽-derived peptide (Ab peptide) was selected as
+a BBB-permeable and microglia-targeting domain to mimic the
+transport of A𝛽into the brain without cytotoxicity.[23] Targeting
+peptides modiﬁed with polyethylene glycol (PEG) are incorpo-
+rated into the drug-conjugated modules for enhanced physiolog-
+ical barrier crossing and cell internalization.
+Since AD is a chronic disease, an A𝛽chronic stimulation
+model was established in vitro according to previous studies
+with some modiﬁcations.[12] Fewer doses and longer exposure
+time of A𝛽1-42 oligomers (oA𝛽1-42) were applied compared with
+models of acute inﬂammation commonly used before.[18c,d] The
+level of Akt/mTOR/HIF-1𝛼pathway of BV2 cells was not acti-
+vated after oA𝛽1-42 treatment, indicating that BV2 cells entered a
+state of immune tolerance (Figure S4, Supporting Information).
+HCQ, a well-known autophagy inhibitor, was reported to regu-
+late mTOR pathway and show positive therapeutic eﬀects in AD
+treatment.[24] HCQ treatment has been observed to activate the
+Akt/mTOR/HIF-1𝛼pathway at ≈1.88 μg ml−1 while exhibiting
+cytotoxicity at high doses in oA𝛽1-42 chronically stimulated BV2
+cells. These data indicate that HCQ may rescue microglia from
+immune tolerance at low doses. In light of previous studies sug-
+gesting that reactive astrocytes increased stemness, it is intrigu-
+ing to consider whether astrocytes in AD brains could be trig-
+gered to trans-diﬀerentiate into neurons, potentially compensat-
+ing for neuron loss. Recent ﬁndings suggest that NeuroD1 could
+induce astrocyte-to-neuron conversion in vivo, and ATRA was a
+potential agonist.[17,25] Compared with exogenous stem cell trans-
+plantation, this in situ cell conversion strategy is more eﬃcient
+and has the advantage of long-term cell survival.[16] To test this,
+we treated oA𝛽1-42 chronically exposed primary astrocytes with
+diﬀerent concentrations of ATRA. Immunoblot analyses showed
+that activation of NeuroD1 is proportional to the concentration
+of ATRA and is optimal in diﬀerentiation media at the dose of
+1 μg ml−1 (Figure S5, Supporting Information). Based on the
+above results, it was determined that HCQ and ATRA should be
+delivered to microglia and astrocytes by nanoplatform at a ratio
+of 1.88:1, respectively.
+2.2. Preparation and Characterization of DA-PPHATK@PDA
+For the proportional delivery of HCQ and ATRA to microglia
+and astrocytes, respectively, the synthesis of A-PPH and D-PPA
+involved the grafting of HCQ, ATRA, PEG, and targeting pep-
+tide to the PAH backbone (Figure 1a; Figures S6 and S7, Sup-
+porting Information). The structures of these synthesized poly-
+mers were conﬁrmed by 1H-NMR, ESI-MS, and GPC (Figures
+S9–S14, S17 and Table S1, Supporting Information). To assem-
+ble diﬀerent drug conjugates into one system, a PDA nanocore
+was prepared which could adsorb amino-rich polymers by ultra-
+sound to form DA-PPHA@PDA. To enhance the internal stabil-
+ity of nanoplatform and facilitate the sensitive release of drug
+conjugates, we synthesized a ROS-sensitive TK-linker to cross-
+link the amino groups of polymers and neutralize the surface po-
+tential of nanoplatform, thereby obtaining DA-PPHATK@PDA.
+The structure of TK-linker was veriﬁed by 1H-NMR and ESI-MS
+(Figures S8,S15, and S16, Supporting Information). Through op-
+timization, we have identiﬁed the optimal ratio among nanocore,
+drug conjugates, and TK-linker (Figure S18, Supporting Infor-
+mation). Based on the above results, diﬀerent control nanoplat-
+forms including DA-PPTK@PDA without drug conjugating and
+PPHATK@PDA without targeting peptide modiﬁcation were also
+created similarly.
+Dynamic light scattering (DLS) showed that the hydrodynamic
+diameter of PDA was ≈60 nm (Figure 1b). The particle size
+of DA-PPHA@PDA was ≈24 nm larger than that of PDA due
+to self-assembly with the drug conjugates (Figure 1c). While
+this size was decreased to ≈75 nm following cross-linking of
+TK-linker (Figure 1d). Transmission electron microscopy (TEM)
+images showed that all nanoplatforms exhibited a spherical
+Adv. Mater. 2024, 36, 2408729
+© 2024 Wiley-VCH GmbH
+2408729 (3 of 21)
+ 15214095, 2024, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202408729 by CochraneChina, Wiley Online Library on [26/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Figure 1. Design and characterization of DA-PPHATK@PDA co-delivery platform. a) Schematic depicting the structure and composition of DA-
+PPHATK@PDA. HCQ and ATRA are covalently linked via ester bonds to similar polymeric backbones modiﬁed with corresponding targeting peptides.
+TK linker is a thioketal cross-linking agent with ROS sensitivity. b–d) Representative size distribution and TEM images of (b) PDA, (c) DA-PPHA@PDA,
+and (d) DA-PPHATK@PDA. Scale bars, 100 nm; scale bars for enlarged images, 50 nm. e) Zeta potentials of PDA, DA-PPHA, and DA-PPHATK@PDA.
+Data are presented as mean ± s.d. (n = 4 independent experiments). f) Elemental mapping of C, N, O, S, and Cl in DA-PPHATK@PDA. Representative
+images from random ﬁelds of view in one of the three biologically independent samples. Scale bar, 100 nm. g) UV–vis absorbance spectra of HCQ,
+ATRA, PDA, and DA-PPHATK@PDA. h) Schematic diagram of esterase-induced drug prototype releasing of D-PPA and A-PPH. Data are presented as
+mean ± s.d. (n = 3 independent experiments).
+morphology (Figure 1b–d). The surface potentials of these
+nanoplatforms were then characterized, revealing near neu-
+tralization of DA-PPTK@PDA after cross-linking which im-
+proved stability under physiological conditions (Figure 1e; Figure
+S19, Supporting Information). The molar ratio of HCQ:ATRA
+was ﬁxed at 1.88:1 based on the immunoblotting results of
+Akt/mTOR/HIF-1𝛼pathway and NeuroD1 (Figures S4 and S5,
+Supporting Information). The drug-loading capacities of DA-
+PPHATK@PDA were ≈9.54% for HCQ and 5.02% for ATRA
+(Table S2, Supporting Information).
+We next attempted to determine nanoplatform components.
+Elemental mapping and UV–vis spectrum results suggested the
+Adv. Mater. 2024, 36, 2408729
+© 2024 Wiley-VCH GmbH
+2408729 (4 of 21)
+ 15214095, 2024, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202408729 by CochraneChina, Wiley Online Library on [26/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+successful deposition of HCQ, ATRA, and TK-linker in DA-
+PPHATK@PDA during the preparation (Figure 1f,g; Figure S20,
+Supporting Information). Whether the covalently conjugated
+drugs can be released as prototype is the key to maximize ther-
+apeutic eﬃcacy. We estimated the esterase-responsive release of
+HCQ and ATRA from A-PPH and D-PPA in vitro, respectively
+(Figure 1h; Figures S21 and S22, Supporting Information). Cova-
+lently conjugated HCQ and ATRA by ester bond exhibited a low
+release rate of less than 10% in PBS buﬀer within 24 h. How-
+ever, the release rate was accelerated under esterase incubation
+and acidic conditions. Moreover, the extent of drug release was
+positively correlated with the esterase concentration, with ≈90%
+of the drug released within 24 h at a concentration of 30 U ml−1.
+2.3. ROS-Sensitive Properties and TK-Linker-Mediated
+Fluorescence Resonance Energy Transfer (FRET) Eﬀect
+Nanoplatform was designed to disassemble in the oxidative stress
+microenvironment caused by neuroinﬂammation of AD and re-
+lease drug conjugates for further targeted delivery (Figure 2a).
+To test this hypothesis, DA-PPHATK@PDA was analyzed by DLS
+and TEM after exposure to O2
+•- (Figure 2b,c). We found that
+DA-PPHATK@PDA exhibited a rapid response and notable ex-
+pansion and collapse within 50 min, indicating a high sensi-
+tivity of nanoplatform to ROS stimulation. To further charac-
+terize the general free radical scavenging activity of nanoplat-
+form, DPPH• was employed.[26] DPPH• showed a strong UV–
+vis absorbance peak at 525 nm. The absorbance decreased in
+a concentration-dependent manner upon incubation with DA-
+PPHATK@PDA which indicated the ROS scavenging (Figure 2d).
+Interestingly, we found that the DPPH• scavenging process could
+be accomplished within 5 min according to the scavenging ki-
+netics assay (Figure S23a, Supporting Information). This rapid
+ROS scavenging ability was primarily attributed to the intense
+potency of polyphenol in PDA. Moreover, the nanoplatform ex-
+hibited a more pronounced DPPH• elimination eﬃciency after
+cross-linking compared to DA-PPHA@PDA, verifying the eﬀects
+of TK-linker (Figure S23b, Supporting Information).
+While preparing DA-PPHATK@PDA, we unexpectedly found
+a decreased hydrodynamic diameter after cross-linking with the
+TK-linker. This phenomenon inspired us to hypothesize that the
+distance between drug conjugates may be shortened by cross-
+linking, which in turn may induce a FRET eﬀect (Figure 2e).
+To test this hypothesis, we replaced HCQ and ATRA with FITC
+and AF555 to investigate the changes of ﬂuorescence spectrum.
+Following excitation with a 488 nm laser, the emission spec-
+trum of DA-PP@PDA showed the emission peaks of FITC and
+AF555 consistent with that of the free probe (Figure 2f; Figure
+S24, Supporting Information). However, the emission peak of
+FITC was absent and that of AF555 was increased after cross-
+linking with TK-linker to obtain DA-PPTK@PDA. This repre-
+sented a classic FRET eﬀect generation process consistent with
+previous ﬁndings. Besides, the emission peak of FITC was re-
+covered after being treated with O2
+•-, possibly due to the disas-
+sembly of the nanoplatform triggered by O2
+•-. To further charac-
+terize the FRET eﬀect of DA-PPTK@PDA, ﬂuorescence-labeled
+nanoplatform was observed by the super-resolution mode of con-
+focal (Figure 2g). We found the colocalization signal of FITC
+and AF555 in DA-PP@PDA. In contrast, the signal of FITC in
+DA-PPTK@PDA was not discernible. After incubation with O2
+•-,
+the disruption of nanoplatform was observed, and the separated
+FITC signal was subsequently recovered. Considering the above
+results, we speculated that the FRET eﬀect initiated by TK-linker
+could help us monitor the fate of nanoplatform in vitro and in
+vivo with greater clarity and even be potentially utilized in diag-
+nosing inﬂammation-related diseases.
+2.4. BBB Penetration and Glial Cells Selective-Targeted Delivery
+It is known that BBB is one of the most challenging ob-
+stacles for brain-targeted delivery.[27] Thus, an in vitro BBB
+model was established using mouse cerebral endothelial cells
+(bEnd.3) to investigate the penetration eﬃciency of nanoplat-
+form (Figure 2h). We ﬁrst investigated the mechanism of cel-
+lular uptake in bEnd.3 cells. Diﬀerent inhibitory uptake condi-
+tions were applied to cells before the incubation of nanoplat-
+form, including chlorpromazine (CPZ) for clathrin inhibition,
+methyl-𝛽-cyclodextrin (m𝛽CD) for caveolin inhibition, colchicine
+(COL) for macropinocytosis inhibition and 4 °C for energy in-
+hibition (Figure 2i; Figure S25, Supporting Information). Flow
+cytometry results revealed that DAG and Ab peptide modiﬁca-
+tion could facilitate the uptake of nanoplatform compared with
+PPHATK@PDA and this enhanced uptake could be signiﬁcantly
+inhibited by COL, excess targeting peptide and 4 °C conditions.
+We speculated that the internalization of DA-PPTK@PDA in
+bEnd.3 cells was dependent on an energy- and macropinocytosis-
+dependent pathway. To further validate the transport eﬃciency,
+nanoplatforms were added to the donor pool of the transwell sys-
+tem. 14C-sucrose permeability value (4.3 × 10−3 cm min−1) and
+the resistance value of this system were also tested before and af-
+ter the experiments (Figure S26, Supporting Information). After-
+ward, the ﬂuorescence signals of reception pool were monitored
+in real-time and the apparent permeability coeﬃcient (Papp) was
+calculated (Figure 2j). As a result, nanoplatform modiﬁed with
+targeting peptide showed higher transport across the monolayer
+compared with unmodiﬁed nanoplatform and pre-incubation
+with free peptide could inhibit CTGF and RAGE-mediated tran-
+scytosis. Importantly, the delivery system is required to cross BBB
+in an intact structure for subsequent targeting, which can be
+conﬁrmed by the FRET eﬀect. The ratio of ﬂuorescence inten-
+sity at the maximum emission wavelength of FITC and AF555
+labeled DA-PPTK@PDA under 488 nm laser excitation was de-
+tected (Figure 2k). The value of the ﬂuorescence ratio before and
+after the transport was similar (≈3), which meant the FRET eﬀect
+was always in an activated state and the structure of nanoplatform
+remained complete.
+We then investigated the glial cells targeting ability of DA-
+PPTK@PDA (Figure 2l). FITC labeled A-PP and Cy5 labeled
+D-PP were synthesized to obtain DA-PPTK@PDA. To mimic
+the disassembly of nanoplatform in the oxidative microenviron-
+ment, DA-PPTK@PDA was treated with O2
+•- before incubation
+with primary microglia or astrocytes. Through ﬂow cytometry
+analysis, we found that Ab peptide modiﬁcation could promote
+the uptake of FITC-conjugates by microglia but not by as-
+trocytes (Figure 2m–o). In contrast, DAG peptide-modiﬁed
+Cy5-conjugates
+displayed
+the
+opposite
+uptake
+selectivity.
+Adv. Mater. 2024, 36, 2408729
+© 2024 Wiley-VCH GmbH
+2408729 (5 of 21)
+ 15214095, 2024, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202408729 by CochraneChina, Wiley Online Library on [26/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Figure 2. The ROS-responsive performance and glial cells-selective targeting eﬀects of DA-PPHATK@PDA in vitro. a) Schematic diagram of ROS-induced
+structural decomposition of DA-PPHATK@PDA. b) Changes of the size distribution of DA-PPHATK@PDA after incubation with O2•- (100 μm) for 50 min.
+c) Representative TEM images of DA-PPHATK@PDA after oxidation by O2
+•- for 1 h. d) UV–vis absorbance spectra of DPPH• after incubation with diﬀer-
+Adv. Mater. 2024, 36, 2408729
+© 2024 Wiley-VCH GmbH
+2408729 (6 of 21)
+ 15214095, 2024, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202408729 by CochraneChina, Wiley Online Library on [26/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Furthermore, there was no signiﬁcant diﬀerence in uptake
+between microglia and astrocytes without modiﬁcation. To
+further simulate the distribution and growth state of glial cells
+in the brain, a co-culture system of microglia and astrocytes was
+established in vitro. Cy5 labeled A-PP and D-PP were synthe-
+sized to obtain A-PPTK@PDA and D-PPTK@PDA, respectively.
+O2
+•- pre-treated nanoplatform was added into the co-culture
+systems. CD11b and GFAP immunostaining were performed to
+distinguish microglia and astrocytes (Figure 2p). We next ana-
+lyzed the distribution of nanoplatform in glial cells by confocal
+imaging. Consistent with the ﬂow cytometry results, targeting
+peptide modiﬁcation enabled the selective targeting of glial
+cells by nanoplatform. After clarifying glial cells targeting of
+nanoplatform, we are more concerned about the cellular uptake
+mechanism of drug-conjugates. Similar results were obtained in
+the uptake pathway inhibition assay of microglia and astrocytes
+(Figure S27, Supporting Information). These results indicated
+that RAGE- or CTGF-mediated glial cell internalization of drug
+conjugates depended on the clathrin-related pathway. Hence,
+lysosomal escape was necessary for drug release and therapeutic
+eﬀects of drug conjugates. We found that FITC-labeled conju-
+gates could rapidly accumulate in the lysosomes of microglia
+and astrocytes within 2 h (Figure S28, Supporting Information).
+However, the signals were gradually distributed in the cytoplasm
+after 4 h of incubation, indicating the escape from lysosomes. We
+reasoned that the tertiary amine of HCQ and DPA could generate
+a proton sponge eﬀect in the acidic environment of lysosome to
+facilitate the conjugates into the cytoplasm. The above results
+conﬁrmed that the nanoplatform could be transported across the
+BBB in an intact form via a “Trojan horse” route, disassemble
+in the oxidative microenvironment, selectively target glial cells,
+and then release conjugated drugs in microglia and astrocytes
+in vitro.
+2.5. Metabolic Modulation and Reversal of Immune Tolerance in
+Microglia
+Previous studies have demonstrated that A𝛽could activate mi-
+croglia and reprogram the metabolic phenotype from OXPHOS
+to glycolysis in an acute stimulatory manner (Figure 3a).[12]
+However, metabolism would completely break down with poor
+responses after long-term chronic stimulation of A𝛽. The
+Akt/mTOR/HIF-1𝛼pathway is the key to modulating this pro-
+cess. To evaluate whether targeted delivery of HCQ could rescue
+mTOR signaling, impaired cellular metabolism, and immune
+function, we ﬁrst detected the protein level of mTOR signaling in
+BV2 cells. Immunoblotting results showed that the expression of
+Akt/mTOR/HIF-1𝛼pathway could be activated by HCQ delivery
+(Figure 3b; Figure S29, Supporting Information). Since the status
+of immune cells is reﬂected in metabolism, the mitochondrial
+function of BV2 cells was assessed by real-time measurement
+of changes in the oxygen consumption rate (OCR) after treat-
+ment with an ATP synthase inhibitor (oligomycin), H+ ionophore
+(FCCP), or electron transport chain inhibitor (rotenone and an-
+timycin A). We found that oA𝛽1-42 treatment signiﬁcantly dimin-
+ished the maximal respiratory capacity while A-PPHTK@PDA
+could reverse this defect (Figure 3c,d). Detecting mitochondrial
+membrane potential and the expression of cytochrome C (Cyt C)
+in the cytoplasm also suggested that nanoplatform could protect
+mitochondria from ﬁssion (Figures S30 and S31, Supporting In-
+formation).
+Nutrient uptake and metabolite levels can also reﬂect the
+metabolic state of cells.[28] Glucose uptake provides essen-
+tial energy for cellular metabolism. 2-NBDG is a ﬂuorescent
+glucose analog that monitors glucose uptake in live cells.[29]
+Flow cytometry results showed enhanced ﬂuorescence signals
+in nanoplatform-treated BV2 cells, which was an indicator of
+metabolic activation (Figure 3e; Figure S32, Supporting Infor-
+mation). Moreover, quantitative analysis of ATP production and
+lactate secretion also demonstrated the up-regulation of glycol-
+ysis levels (Figure 3f,g). Metabolic reprogramming toward gly-
+colysis could underline microglial inﬂammation. We found that
+chronic oA𝛽1-42 treatment made it diﬃcult to activate the secre-
+tion of pro-inﬂammatory cytokines (IL-1𝛽) in BV2 cells, which
+represented the diminished inﬂammatory responses (Figure 3h).
+Surprisingly, A-PPHTK@PDA could signiﬁcantly elevate the ex-
+pression of IL-1𝛽, suggesting that aerobic glycolysis is a critical
+process in the regulation of inﬂammatory activation of microglia.
+The phagocytic activity of microglia directly aﬀects their im-
+mune function to eliminate cytotoxic proteins.[30] We hope
+the immune function of tolerant microglia can be restored by
+metabolic modulation. To examine this hypothesis, the phago-
+cytic phenotype of treated BV2 cells was ﬁrst investigated by
+ent concentrations of DA-PPHATK@PDA. e) Schematic diagram of cross-linking-triggered shortening of the spatial distance of polymers, which induces
+the FRET eﬀect of ﬂuorescence probe labeled DA-PPTK@PDA. f) Fluorescence emission spectrum of DA-PP@PDA before and after cross-linking and
+DA-PPTK@PDA incubated with diﬀerent concentrations of O2•- under the excitation of 488 nm. g) Super-resolution images of ﬂuorescence probe labeled
+DA-PP@PDA, DA-PPTK@PDA, and DA-PPTK@PDA incubated with for O2
+•- (100 μm) 1 h. Representative images from random ﬁelds of view in one of
+the three biologically independent samples. Scale bars, 400 nm; scale bars for enlarged images, 100 nm. h) Schematic diagram of RAGE and CTGF-
+mediated transcytosis of DA-PPTK@PDA in bEnd.3 monolayer transwell model. i) Cellular uptake of PPTK@PDA and DA-PPTK@PDA in bEnd.3 cells
+pre-incubated with diﬀerent uptake inhibitors. Data are presented as mean ± s.d. (n = 3 independent experiments). j) The permeability of PPTK@PDA
+and DA-PPTK@PDA with or without free targeting peptide pre-incubation. Data are presented as mean ± s.d. (n = 3 independent experiments).
+k) Fluorescence intensity ratio of the transwell model’s donor and reception pool solutions at the emission wavelength of FITC and AF555. Data are
+presented as mean ± s.d. (n = 4 independent experiments); n.s., not signiﬁcant. l) Schematic diagram of disassembly of nanoparticles in the pro-
+inﬂammatory microenvironment and mechanism of glial cells-speciﬁc targeting. m) Flow cytometry analysis of FITC and Cy5 labeled PPTK@PDA or
+DA-PPTK@PDA uptake in primary microglia and astrocyte. Data are representative from three biological independent samples. n,o) Quantiﬁcation of
+ﬂuorescence intensity of FITC labeled A-PPH (n) and Cy5 labeled D-PPA (o) in primary microglia and astrocyte. Data are presented as mean ± s.d.
+(n = 3 independent experiments); n.s., not signiﬁcant. p) Representative confocal microscopic images of the internalization of Cy5 labeled PPTK@PDA,
+A-PPTK@PDA, and D-PPTK@PDA in co-cultured primary microglia and astrocyte after 1 h incubation. Data are representative from three biological in-
+dependent samples. Scale bars, 100 μm. Statistical analysis was performed by one-way ANOVA with Tukey post-test for panels (i,j), unpaired t test for
+panel (k) and multiple t test for panels (n, o). **p < 0.01 and ***p < 0.001.
+Adv. Mater. 2024, 36, 2408729
+© 2024 Wiley-VCH GmbH
+2408729 (7 of 21)
+ 15214095, 2024, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202408729 by CochraneChina, Wiley Online Library on [26/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Figure 3. DA-PPHATK@PDA reverses microglia immune tolerance in vitro. a) Schematic diagram of mechanisms of A𝛽-induced immune activation
+and tolerance status. b) Changes of Akt/mTOR/HIF-1𝛼pathway expression in diﬀerent treated BV2 cells. Data are representative from three biological
+independent samples. Uncropped blots are provided in the Supporting Information. c) OXPHOS determined by measuring OCR in BV2 cells treated
+with PBS, oA𝛽1-42 or A-PPHTK@PDA. Data are presented as mean ± s.d. (n = 4 independent experiments). d) Quantiﬁcation of basal respiration,
+proton leak, and maximal respiration of BV2 cells in c. Data are presented as mean ± s.d. (n = 4 independent experiments). e) Flow cytometry analysis
+of glucose probe (2-NBDG) ﬂuorescence intensity in diﬀerent treated BV2 cells. Data are representative from three biological independent samples.
+f–h) Quantiﬁcation of the concentration of intracellular ATP (f), extracellular lactic acid (g), and supernatant IL-1𝛽(h) in diﬀerent treated BV2 cells. Data
+are presented as mean ± s.d. (n = 4 independent experiments). i) Flow cytometry analysis of the activated BV2 cells after diﬀerent treatments. Data are
+representative from four biological independent samples. The solid black box shows the proportion of CD11b positive BV2 cells. j) Quantiﬁcation of the
+proportion of BV2 cells with phagocytic properties in i. Data are presented as mean ± s.d. (n = 4 independent experiments). k) Representative confocal
+microscopic images of ﬂuorescently labeled oA𝛽1-42 colocalized with lysosomes in BV2 cells after diﬀerent treatments. Representative images from
+random ﬁelds of view in one of the three biologically independent samples. Scale bars, 50 μm. Statistical analysis was performed by one-way ANOVA
+with Tukey post-test for panels (d, f, g, h, j). *p < 0.05, **p < 0.01 and ***p < 0.001.
+ﬂow cytometry. CD11b, the marker of microglial activation, was
+not up-regulated signiﬁcantly after chronic oA𝛽1-42 treatment
+but showed a noticeable increase (≈40%) after HCQ and A-
+PPHTK@PDA treatment (Figure 3i,j). Next, the phagocytic activ-
+ity of BV2 cells was veriﬁed by co-incubation with FITC-labeled
+oA𝛽1-42 after being treated with diﬀerent nanoplatforms. Re-
+search has proved that A𝛽could be degraded through lysoso-
+mal/autophagic or proteasomal pathways.[31] Confocal images
+showed that more A𝛽signals could be found in BV2 cells and
+colocalized with lysosomes compared with the chronic treatment
+Adv. Mater. 2024, 36, 2408729
+© 2024 Wiley-VCH GmbH
+2408729 (8 of 21)
+ 15214095, 2024, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202408729 by CochraneChina, Wiley Online Library on [26/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+group, indicating that HCQ delivery promoted A𝛽clearance of
+BV2 cells (Figure 3k). In addition, the ﬂuorescence intensity of
+A𝛽in the supernatant of treated cells was also detected to sup-
+port the above results (Figure S33, Supporting Information).
+In the above experiments, we discovered that Ab peptide
+modiﬁcation could signiﬁcantly enhance the regulatory eﬀects
+of A-PPHTK@PDA compared with PPHTK@PDA group in
+vitro. Besides, we also unexpectedly found that the drug-free
+nanoplatform (A-PPTK@PDA) did not show signiﬁcant ther-
+apeutic eﬀects, even with PDA delivery. This phenomenon
+can be concluded that a single antioxidant strategy was com-
+plex to modulate immune-tolerant microglia. To sum up,
+we conﬁrmed that the combination of PDA and HCQ de-
+livery could modulate the metabolism and boost the im-
+mune function recovery of oA𝛽1-42 chronically treated microglia
+in vitro.
+2.6. Reprogramming of Reactive Glial Cells into Functional
+Neurons
+During AD progression, glial cells become over-activated and
+proliferative.[4a] To investigate whether reactive astrocytes can be
+reprogrammed into mature neurons (Figure 4a). Primary astro-
+cytes were isolated from the suckling mouse brain and applied to
+the oA𝛽1-42 chronic stimulation model. ATRA was reported to ac-
+tivate NeuroD1 signaling through the PI3K/Akt pathway, which
+might promote the trans-diﬀerentiation of astrocytes.[32] There-
+fore, reactive astrocytes were treated with D-PPATK@PDA to
+test this theory. A signiﬁcant increase in the PI3K/Akt/NeuroD1
+pathway was observed by immunoblotting after treatment with
+ATRA and D-PPATK@PDA (Figure 4b; Figures S34 and S35,
+Supporting Information). We further monitored the trans-
+diﬀerentiation process by immunostaining speciﬁc neuronal
+markers (Figure 4c). O2
+•--pretreated D-PPATK@PDA was added
+to astrocytes every two days after chronic oA𝛽1-42 stimulation.
+After seven days of treatment, doublecortin (DCX), an imma-
+ture neuronal marker, could be observed in ATRA-containing
+groups (Figure 4d). More importantly, the signal of DCX was colo-
+calized with GFAP and the morphology of astrocytes changed
+into elongated branches. These phenomena indicated that reac-
+tive astrocytes transformed into immature neurons upon ATRA
+administration. Then, we investigated whether D-PPATK@PDA
+could promote the maturation of neurons and what proper-
+ties the converted neurons had. Immunostaining for mature
+neuron markers (microtubule association protein-2, MAP2) and
+vesicular glutamate transporter-1 (vGlut1) was performed af-
+ter 21 days of treatment. As shown in Figure 4e, most cells
+were MAP2-positive and possessed morphological characteris-
+tics of neurons with ATRA treatment. Meanwhile, the absent
+GFAP expression and NeuN immunostaining results also sup-
+ported the transformation of mature neurons (Figure S36, Sup-
+porting Information). In addition, the ﬂuorescent signal of vG-
+lut1 was observed on the axon of mature neurons (Figure 4e).
+Immunoblotting results also revealed that the majority of neu-
+rons were positive for vGlut1 but virtually none stained for glu-
+tamic acid decarboxylase (GAD67) (Figure 4f; Figure S37, Sup-
+porting Information). Thus, ATRA delivery reprogramed astro-
+cytes into glutamatergic neurons. To further examine whether
+the converted neurons have functional activity, we performed
+patch clamp recordings to conﬁrm this. As expected, we recorded
+remarkable synaptic events in converted neurons, which could
+be blocked by the glutamate receptor antagonist CNQX, but not
+by GABAA receptor antagonist bicuculline (BIC) (Figure 4g).
+These results conﬁrmed that the converted neurons were
+glutamatergic.
+In glial cell reprogramming experiments, we found that
+PPATK@PDA exhibited less diﬀerentiation-inducing activity
+than ATRA or D-PPATK@PDA, probably due to ATRA’s in-
+eﬃcient uptake without DAG peptide modiﬁcation. Further-
+more, D-PPTK@PDA treatment didn’t induce any signs of trans-
+diﬀerentiation of reactive astrocytes, indicating the leading role of
+ATRA during the modulation. To summarize, we demonstrated
+that targeted delivery ATRA with nanoplatform could repro-
+gram reactive astrocytes into functional glutamatergic neurons
+in vitro.
+2.7. Remission of Neuroinﬂammation
+In the context of AD, neuroinﬂammation tends to be a chronic
+process and is considered a signiﬁcant driver of the disease.[33]
+The innate immune cells involved in this process are primarily
+microglia and astrocytes. During this process, pro-inﬂammatory
+cytokines and ROS produced by glial cells can cause oxidative
+stress and even neuronal death. To mimic the above neuroin-
+ﬂammatory interactions between cells, a co-culture system of
+SH-SY5Y and glial cells was established by transwell in vitro
+(Figure S38a, Supporting Information). O2
+•--pretreated nanoplat-
+forms were added into the oA𝛽1-42 stimulated glial cells layer. Af-
+ter 24 h treatment, SH-SY5Y cells in the reception pool were
+harvested and analyzed by ﬂow cytometry. DHE, a ROS de-
+tection probe, exhibited a weaker ﬂuorescence signal in PDA-
+incorporated groups with targeting peptide modiﬁcation com-
+pared to free drugs and PPHATK@PDA groups (Figure S38b,c,
+Supporting Information). This could be attributed to the eﬃ-
+cient delivery of PDA antioxidants to alleviate the oxidative stress
+caused by glial cells and further rescue SH-SY5Y cells from apop-
+tosis (Figure S38d, Supporting Information). Taken together,
+modulation of glial cells by nanoplatform could protect neurons
+from the inﬂammatory response and have the potential to nor-
+malize the microenvironment.
+2.8. In Vivo Distribution Monitoring and Inﬂammation Diagnosis
+Mediated by the FRET Eﬀect
+The FRET eﬀect induced by cross-linking could reﬂect the in-
+tegrity of nanoplatform in real-time. Therefore, we hypothe-
+sized to monitor the systemic circulation stability of nanoplat-
+form by FRET eﬀect in vivo. FITC and AF555 labeled nanoplat-
+form were synthesized and intravenously injected into SD rats.
+FITC and AF647 labeled nanoplatform without FRET eﬀect
+were prepared as a control. The ﬂuorescence intensity of blood
+was measured at timed intervals. The half-life of free probes
+was calculated as ≈2.16 h (FITC), 7.63 h (AF555), and 9.85 h
+(AF647) (Figure S39 and Table S3, Supporting Information).
+Interestingly, we found these values could be enhanced to be
+Adv. Mater. 2024, 36, 2408729
+© 2024 Wiley-VCH GmbH
+2408729 (9 of 21)
+ 15214095, 2024, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202408729 by CochraneChina, Wiley Online Library on [26/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Figure 4. DA-PPHATK@PDA promotes the trans-diﬀerentiation of astrocytes into functional neurons in vitro. a) Schematic diagram of the process
+and mechanism of the trans-diﬀerentiation. b) Changes of PI3K/Akt/NeuroD1 pathway expression in diﬀerent treated primary astrocytes. Data are
+representative from three biological independent experiments. Uncropped blots are provided in the Supporting Information. c) Schematic diagram
+of changes in markers during astrocyte trans-diﬀerentiation into neurons. d) Representative confocal microscopic images of expression of immature
+neuronal markers in diﬀerent treated primary astrocytes. Representative images from random ﬁelds of view in one of the three biologically independent
+samples. Scale bars, 50 μm. e) Representative confocal microscopic images of expression of mature neuronal markers and functional transporters in
+diﬀerent treated primary astrocytes. Representative images from random ﬁelds of view in one of the three biologically independent samples. The white
+dashed boxes show the zoomed area of the axons of converted neurons. Scale bars, 100 μm; scale bars of the zoom view, 10 μm. f) The expression
+of functional transporters in converted neurons. Brain lysates of C57BL/6 mice were used as a positive control. Data are representative from three
+biological independent experiments. Uncropped blots are provided in the Supporting Information. g) Spontaneous synaptic events recorded from
+converted neurons under diﬀerent conditions. The black dashed box shows the IPSC proﬁle. Data are representative from three biological independent
+experiments.
+≈33.76 h (FITC) and 30.68 h (AF647) in DA-PPTK@PDA. These
+increased pharmacokinetic properties are mainly attributed to
+the covalent conjugation strategies and PEG modiﬁcation of
+nanoplatform. Notably, the half-life values of the two ﬂuores-
+cent probes modiﬁed on the nanoplatform were close to each
+other, suggesting that the cross-linked nanoplatform could main-
+tain structural stability during systemic circulation. While, DA-
+PP@PDA showed a more signiﬁcant diﬀerence between FITC
+(10.56 h) and AF555 (19.88 h), probably due to the solid posi-
+tive charge resulted in fast clearance without cross-linking with
+TK-linker (Figure 5a). The FRET eﬀect was then evaluated in
+FITC and AF555 labeled DA-PPTK@PDA. Notably, FITC showed
+relatively low ﬂuorescence intensity compared with AF555 in
+24 h, which indicated the FRET eﬀect was always on dur-
+ing the circulation and the nanoplatform remained intact. Be-
+sides, the half-life of AF555 and the value calculated under the
+FRET condition of DA-PPTK@PDA was close to that of FITC
+and AF647 labeled DA-PPTK@PDA ≈30 h, indicating that the
+Adv. Mater. 2024, 36, 2408729
+© 2024 Wiley-VCH GmbH
+2408729 (10 of 21)
+ 15214095, 2024, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202408729 by CochraneChina, Wiley Online Library on [26/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Figure 5. The in vivo fate and FRET eﬀect-mediated real-time diagnosis of inﬂammation in AD model mice. a) Plasma pharmacokinetics of FITC and
+AF555 labeled DA-PP@PDA or DA-PPTK@PDA after i.v. injection. Data are presented as mean ± s.d. (n = 3 independent experiments). b) Schematic
+diagram of the mechanism of real-time inﬂammation diagnosis of Cy5 and Cy5.5 labeled DA-PPTK@PDA in AD model mice. c) IVIS imaging of WT and
+APP/PS1 mice brains at timed intervals after i.v. injection of PPTK@PDA, DA-PPTK@PDA or DA-PP@PDA. Data are representative from three biological
+independent experiments. d) Ex vivo ﬂuorescence imaging of major organs after 24 h injection. Data are representative from three biological independent
+experiments. e,f) Radiant eﬃciency of Cy5.5 ﬂuorescence intensity in major organs (e) and brains (f) in d. Data are presented as mean ± s.d. (n = 3
+independent experiments). g,h) ID% quantiﬁcation in major organs (g) and brains (h) in d. Data are presented as mean ± s.d. (n = 3 independent
+experiments). i,k) Distribution of Cy5 signals in blood vessels (i) and oxidative damage (k) stained brain sections from WT or APP/PS1 mice. Repre-
+sentative images from random ﬁelds of view in one of the three biologically independent samples. Scale bars, 200 μm. j,l) Cy5 and blood vessels (j) or
+oxidative damage (l) ﬂuorescence intensity along the white arrows in i and k, respectively. Data are representative from three biological independent
+experiments. m,n) The colocalization of Cy5 signals with microglia (m) or astrocytes (n) in brain sections from WT or APP/PS1 mice. Yellow arrows show
+the colocalized signals. Representative images from random ﬁelds of view in one of the three biologically independent samples. Scale bars, 100 μm.
+Statistical analysis was performed by one-way ANOVA with Tukey post-test for panels (e, f, g, h). **p < 0.01 and ***p < 0.001.
+Adv. Mater. 2024, 36, 2408729
+© 2024 Wiley-VCH GmbH
+2408729 (11 of 21)
+ 15214095, 2024, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202408729 by CochraneChina, Wiley Online Library on [26/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+cross-linking strategy could improve the stability of nanoplatform
+in vivo.
+Encouraged by the promising performance of nanoplatform in
+BBB penetration and glial cells targeting experiments in vitro, its
+biodistribution was further investigated. Cy5 and Cy5.5 labeled
+DA-PPTK@PDA, PPTK@PDA, and DA-PP@PDA were prepared
+and monitored using an in vivo imaging system (IVIS). Wild-
+type mice and APP/PS1 mice were used as control and AD an-
+imal models, respectively (Figure 5b). Compared with normal
+mice, a gradually enhanced Cy5.5 ﬂuorescence signal was ob-
+served in the AD mice brain within 8 h after DA-PPTK@PDA
+administration, indicating that targeting peptide modiﬁcation
+could achieve disease-speciﬁc targeting and retention (Figure 5c).
+Moreover, PPTK@PDA didn’t show signiﬁcant ﬂuorescence sig-
+nal in AD mice brain compared with DA-PPTK@PDA group,
+indicating the critical role of targeting peptides in brain target-
+ing. In addition, we found an apparent signal of DA-PP@PDA
+in AD mice brains immediately after injection, while it declined
+rapidly over time. This ﬁnding suggested that a strong positive
+charge of the uncross-linked nanoplatform might cause rapid
+clearance, which was consistent with the pharmacokinetic re-
+sults. We then switched the imaging channel to observe the
+changes in the Cy5 signal. Interestingly, we found the Cy5 signal
+of DA-PPTK@PDA in AD mice brain gradually increased after
+8 h post-injection, indicating DA-PPTK@PDA might disassemble
+in the AD brain and the FRET eﬀect might be turned oﬀ. How-
+ever, DA-PPTK@PDA in the control mouse and the PPTK@PDA
+group showed lower ﬂuorescence signals due to the FRET ef-
+fect and weak BBB penetration. Meanwhile, the variation trend
+of Cy5 signal of DA-PP@PDA without FRET eﬀect was similar
+to its Cy5.5 signal in AD mice brains. To further investigate the
+FRET eﬀect, mice were imaged with the excitation wavelength
+of Cy5 and detected with the emission wavelength of Cy5.5. For
+DA-PPTK@PDA with FRET eﬀect, signiﬁcant signals could be
+detected signiﬁcant signals upon injection and the diminished
+signal could be found in AD mice brain after 8 h. By contrast,
+DA-PP@PDA without FRET eﬀect didn’t show obvious signals
+within the monitoring procedure. Images of isolated organs at
+24 h post-injection also demonstrated the enhanced retention of
+DA-PPTK@PDA compared with PPTK@PDA and the disassem-
+ble of DA-PPTK@PDA could be detected by the FRET eﬀect in
+AD mice brains (Figure 5d). Notably, we found the accumula-
+tion of DA-PP@PDA in the liver of AD mice was much higher
+than that of other groups. This observation further demonstrated
+that cross-linking strategy could decrease the surface potential
+of the nanoplatform and reduce protein corona formation and
+accumulation in the liver. Quantitative analysis of the radiant
+eﬃciency and injection dose percentage per gram of wet tis-
+sue weight (ID%/g) also suggested that modiﬁcation of Ab and
+DAG peptide promoted AD brain recognition of nanoplatform
+and TK-linker enhanced the stability of the systemic circulation
+(Figure 5e–h).
+As illustrated in Figure 1a, nanoplatform was designed to
+cross BBB, disassemble in the inﬂammatory microenvironment
+and target reactive glial cells. This intracerebral distribution pro-
+cess was further clariﬁed by immunoﬂuorescence staining of
+brain slices at 24 h post-injection. More ﬂuorescent signals of
+Cy5 labeled DA-PPTK@PDA were observed away from brain ves-
+sels stained with CD34 antibody compared with other groups
+in the hippocampus (Figure 5i). Results of localization analy-
+sis of the signals also demonstrated the eﬃcient penetration
+of cross-linked nanoplatform with targeting peptide modiﬁca-
+tion (Figure 5j). We then investigated whether nanoplatform
+could accumulate in the inﬂammatory lesions which were es-
+sential for the drug-conjugates release. 8-hydroxyguanosine (8-
+OHG), a marker of oxidative stress damage, was found to be el-
+evated in the hippocampus of AD mice brains compared with
+WT mice (Figure 5k). The results of co-localization analysis
+showed that more Cy5 signals of DA-PPTK@PDA co-localized
+with 8-OHG signals. At the same time, PPTK@PDA exhibited
+weaker and non-speciﬁc distribution (Figure 5l). Encouraged
+by the success in targeting AD lesions, we continued to ex-
+plore the glial cells-targeting ability of nanoplatform. Cy5 la-
+beled A-PP and D-PP were synthesized to form A-PPTK@PDA
+and D-PPTK@PDA, respectively. After 24 h post-injection into
+AD mice, brain slices were stained with Iba-1 and GFAP an-
+tibodies to display the location of microglia and astrocytes. As
+shown in Figure 5m, most Cy5-labeled A-PP was co-localized
+with Iba-1, indicating that Ab peptide mediated the microglia
+targeting. In addition, Cy5 labeled D-PP showed speciﬁc ac-
+cumulation with GFAP (Figure 5n). According to the above
+results, we conﬁrmed that targeting peptide modiﬁcation fa-
+cilitated BBB penetration of nanoplatform and further accu-
+mulation in the inﬂammatory lesions, resulting in the ROS-
+sensitive disassembly to release drug-conjugates for target-
+ing glial cells, with therapeutic potential for the treatment
+of AD.
+2.9. Ameliorating Cognitive Degeneration in AD Mice
+We then investigated the therapeutic eﬀects of nanoplatform in
+9-month-old AD mice. Diﬀerent groups of nanoplatform were
+intravenously injected every ﬁve days for three months and WT
+mice were treated with Saline as a control (Figure 6a). After
+each month of treatment, mice were sacriﬁced and brains were
+collected to evaluate the modulatory eﬀects. Behavioral tests
+were performed after three months of treatment. The learn-
+ing and memory abilities of AD mice were ﬁrst tested us-
+ing the Morris water maze (MWM) assay. Before the test in
+MWM experiment, mice were trained every day for six days
+and the escape latency was recorded (Figure S40, Supporting
+Information). During the training process, DA-PPHATK@PDA
+treated AD mice showed lower escape latency even close to
+the WT group. In the ﬁnal test, AD mice treated with DA-
+PPHATK@PDA exhibited a three-fold decrease in latency time
+(≈10 s), a two-fold increase in time in the target quadrant (≈30%)
+and a three-fold increase in number of crossings (≈3) com-
+pared to Saline-treated AD mice (Figure 6b–e). Moreover, the
+hippocampal function of AD mice was also examined using
+a nest-building assay. As shown in Figure 6f, the nest built
+by DA-PPHATK@PDA treated AD mice exhibited more regular
+and concentrated than that of other groups. Therefore, higher
+nest behavioral scores were achieved by DA-PPHATK@PDA
+group (Figure 6g; Figure S41, Supporting Information). Taken to-
+gether, DA-PPHATK@PDA nanoplatform could signiﬁcantly at-
+tenuate cognitive and memory impairments in AD transgenic
+mice.
+Adv. Mater. 2024, 36, 2408729
+© 2024 Wiley-VCH GmbH
+2408729 (12 of 21)
+ 15214095, 2024, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202408729 by CochraneChina, Wiley Online Library on [26/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Figure 6. DA-PPHATK@PDA rescues the degeneration of learning and memory ability in AD model mice. a) Timeline of APP/PS1 mice feeding, injection
+cycle, pathological monitoring, and therapeutic evaluation. b) Representative swimming paths of mice in Morris water maze after three months of
+diﬀerent treatments. Data are representative from eight biological independent experiments. c–e) Quantiﬁcation of escape latency (c), time in targeted
+quadrant (d), and number of crossings (e). Data are presented as mean ± s.d. (n = 8 independent experiments). f) Representative images of the nest
+constructed by mice after three-month diﬀerent treatments. Data are representative from six biological independent experiments. g) Scores of nest
+behavior observed in f. Data are presented as mean ± s.d. (n = 6 independent experiments). Scale bars, 4 cm. Statistical analysis was performed by
+one-way ANOVA with Tukey post-test for panels (c, d, e, g). **p < 0.01 and ***p < 0.001.
+2.10. Veriﬁcation of Eﬃcacy and Glial Cell Modulation
+Mechanisms in AD Mice
+Reactive glial cells are hypothesized to cause chronic neu-
+roinﬂammation manifested in oxidative stress and neuronal
+apoptosis.[34] In response, we supposed that DA-PPHATK@PDA
+might have a direct role in modulating the oxidative microenvi-
+ronment due to the antioxidant core of nanoplatform. Consis-
+tent with in vitro experiments, we found oxidative damage in
+both hippocampus and cortex from AD mice could be allevi-
+ated by targeting delivery of PDA-containing nanoplatform af-
+ter one month of treatment, which was indicated by DHE probe
+staining (Figure S42, Supporting Information). Free drugs and
+PPHATK@PDA group didn’t show suﬃcient ROS scavenging ef-
+ﬁcacy due to the restriction of BBB. Next, we investigated whether
+the damaged neurons could be rescued by nanoplatform. After
+three months of treatments, TUNEL staining was performed and
+obvious apoptosis signals could be observed in AD mice brains
+at advanced stage (Figure S43, Supporting Information). Notably,
+DA-PPHATK@PDA treatment signiﬁcantly decreased the red sig-
+nals while only a slightly attenuated signal was found in DA-
+PPHATK@PDA group even with strong ROS scavenging capac-
+ity. This phenomenon may indicate that ROS scavenging alone
+was insuﬃcient to cope with advanced AD’s complex pathology.
+Similar results were also obtained by Nissl staining (Figure S44,
+Supporting Information). Taken together, the oxidative stress
+level in the AD microenvironment could be controlled after DA-
+PPHATK@PDA treatment and neuronal apoptosis was inhibited.
+To understand the neuroprotection and behavioral improve-
+ment mechanisms in AD mice, we further investigated the mod-
+ulating eﬀects of nanoplatform on microglia and astrocytes. In
+order to gain deeper insight into the immune function of mi-
+croglia after treatment, the expression level of Akt/mTOR/HIF-
+1𝛼pathway in brain was ﬁrst analyzed by immunoblotting af-
+ter one month of therapy (Figure 7a; Figure S45, Support-
+ing Information). Meanwhile, the immunostaining of immune
+Adv. Mater. 2024, 36, 2408729
+© 2024 Wiley-VCH GmbH
+2408729 (13 of 21)
+ 15214095, 2024, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202408729 by CochraneChina, Wiley Online Library on [26/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Figure 7. Mechanisms of DA-PPHATK@PDA modulation of glial cells and AD microenvironment in vivo. a) Changes of Akt/mTOR/HIF-1𝛼pathway
+expression in WT or APP/PS1 mice brains after one-month treatment. Data are representative from three biological independent experiments. Uncropped
+blots are provided in the Supporting Information. b) Representative ﬂuorescence images of the activation of p-mTOR in reactive microglia of one-
+Adv. Mater. 2024, 36, 2408729
+© 2024 Wiley-VCH GmbH
+2408729 (14 of 21)
+ 15214095, 2024, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202408729 by CochraneChina, Wiley Online Library on [26/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+activation marker (p-mTOR) and Iba-1 was also detected
+(Figure 7b). These data demonstrated that treatment of AD mice
+with targeted delivery HCQ boosted the impaired mTOR pathway
+and showed potential to rescue the immune-tolerant microglia.
+It has been reported that the number and size of A𝛽plaques
+are highly correlated with the immune function of microglia.
+Activated microglia can recognize and eliminate these cytotoxic
+proteins. To verify this biological eﬀect, 82E1 and Iba-1 antibod-
+ies were used to label A𝛽1-42 and microglia, respectively. Mas-
+sive microglial activation and A𝛽plaque burden were observed
+during AD progression (Figure 7c; Figure S46, Supporting In-
+formation). These pathological markers gradually decreased after
+two months of DA-PPHATK@PDA treatment, and this therapeu-
+tic eﬀect became more remarkable after the last month. To fur-
+ther monitor the phagocytic processes of microglia, we observed
+the morphology of microglia around A𝛽plaques (Figure 7d;
+Figure S47, Supporting Information). During the ﬁrst month
+of treatment, the size of A𝛽plaques did not decrease signiﬁ-
+cantly, but the number of recruited microglia increased signiﬁ-
+cantly. Over the next month, we observed a gradual disintegration
+of A𝛽plaques and increased microglial inﬁltration. After three
+months of treatment, the size of A𝛽plaques was signiﬁcantly re-
+duced and microglia morphology was restored (reduced cell bod-
+ies and increased branching). Semi-quantiﬁcation results of the
+DA-PPHATK@PDA group showed a three-fold increase in the
+number of microglia around plaque (≈6), a two-fold decrease in
+the volume of microglia (≈2100 μm2), and a three-fold reduction
+in the volume of plaque (≈2000 μm2) after three-month treatment
+(Figure 7e–g). The A𝛽degradation eﬀect of DA-PPHATK@PDA
+was also demonstrated by dot blot assay (Figure S48, Supporting
+Information). Taken together, the microglia modulation mecha-
+nism in AD brain after DA-PPHATK@PDA treatment could be
+summarized into three steps as illustrated in Figure 7h: 1) acti-
+vation of mTOR pathway in microglia (10 m); 2) enhanced mi-
+gration and phagocytosis of immune-activated microglia (11 m);
+and 3) degradation of A𝛽plaques and normalization of microglia
+(12 m).
+Next, we were curious about whether the in situ trans-
+diﬀerentiation of astrocytes into neurons in AD mice brains
+could be achieved by ATRA-targeted delivery. First, we found
+that the DA-PPHATK@PDA group could signiﬁcantly activate the
+PI3K/Akt/NeuroD1 pathway after one-month treatment, which
+was proven to promote the trans-diﬀerentiation in vitro by im-
+munoblotting (Figure 7i; Figure S49, Supporting Information).
+In particular, the expression of NeuroD1 was increased only
+after DA-PPHATK@PDA treatment while a slight increase in
+PPHATK@PDA group owing to the insuﬃcient delivery of ATRA
+(Figure S50, Supporting Information). Afterward, the process of
+trans-diﬀerentiation was monitored during three-month treat-
+ment. DCX and GFAP were applied to labeled immature neu-
+rons and astrocytes in AD mice brain slices, respectively. The
+expression of DCX was increased after two months of DA-
+PPHATK@PDA treatment compared with the Saline-treated AD
+mice group (Figure 7j; Figure S51, Supporting Information).
+What counts is that we only found obvious colocalization sig-
+nals of DCX with GFAP both in the hippocampus and cortex of
+AD mice brain after DA-PPHATK@PDA treatment (Figure 7k).
+In addition, the morphological changes of astrocyte were re-
+ﬂected in the reduced number of branches and the forma-
+tion of elongated axons. This phenomenon indicated the trans-
+diﬀerentiation of astrocytes into immature neurons. To further
+verify the regeneration of mature neurons, MAP2 and GFAP
+were utilized to label mature neurons and astrocytes after three
+months of treatments. Immunostaining results revealed an in-
+crease of MAP2 expression and a decrease of GFAP expression
+in the DA-PPHATK@PDA group (Figure 7l; Figure S52, Support-
+ing Information). It is suggested that the GFAP signals were
+gradually lost during the trans-diﬀerentiation process. There-
+fore, the regeneration of mature neurons could be observed after
+ATRA-targeted delivery in vivo. In conclusion, the astrocyte trans-
+diﬀerentiation mechanism in AD brain after DA-PPHATK@PDA
+treatment could be summarized into three steps as illustrated in
+Figure 7m: 1) activation of NeuroD1 pathway in astrocyte (10 M);
+2) increased DCX-positive immature neurons (11 M); and 3) re-
+generation of MAP2 positive mature neurons (12 M).
+Glial cells play a central role in neuroinﬂammation during
+AD progression.[33a] Encouraged by the successful modulation
+of glial cells, we supposed that the neuroinﬂammation could
+be alleviated simultaneously. Quantiﬁcation of pro-inﬂammatory
+cytokines (TNF-𝛼and IL-1𝛽) and anti-inﬂammatory cytokines
+(IL-10 and Arg1) in AD brains after three months of treatment
+showed an improved microenvironment (Figure 7n–q). This may
+be due to the normalization of microglial immune function and
+the in situ neuronal regeneration. It can be concluded that the
+month treated mouse brain sections. Representative images from random ﬁelds of view in one of the three biologically independent samples. Scale
+bars, 50 μm. c) Representative ﬂuorescence images of A𝛽plaque and reactive microglia in three-month treated mouse brain sections. Representative
+images from random ﬁelds of view in one of the three biologically independent samples. Scale bars, 200 μm. d) Representative zoomed ﬂuorescence
+images of A𝛽plaque and reactive microglia in APP/PS1 mouse brain sections at timed intervals after DA-PPHATK@PDA treatment. Representative
+images from random ﬁelds of view in one of the three biologically independent samples. Scale bars, 20 μm. e–g) Quantiﬁcation of the number of
+Iba-1 positive cells around per A𝛽plaque (e), volume of Iba-1 positive cells (f), and volume of per A𝛽plaque (g) in mouse brain sections after three-
+month treatment. Data are presented as mean ± s.d. (n = 6 independent experiments). h) Schematic diagram of the mechanisms and processes
+by which DA-PPHATK@PDA modulates microglia. i) Changes of PI3K/Akt/NeuroD1 pathway expression in WT or APP/PS1 mouse brains after one-
+month treatment. Data are representative from three biological independent experiments. Uncropped blots are provided in the Supporting Information.
+j,k) Representative ﬂuorescence images of immature neuronal markers expression (j) and zoomed converted astrocytes (k) in mouse brain sections after
+two months of diﬀerent treatments. Representative images from random ﬁelds of view in one of the three biologically independent samples. Scale bars,
+200 μm; scale bars of the zoom view, 20 μm. l) Representative ﬂuorescence images of mature neuronal markers expression mouse brain sections after
+three months of diﬀerent treatments. Representative images from random ﬁelds of view in one of the three biologically independent samples. Scale bars,
+100 μm. m) Schematic diagram of mechanisms and processes by which DA-PPHATK@PDA promotes trans-diﬀerentiation of astrocytes into neurons.
+n–q) Quantiﬁcation of proinﬂammation (n,o) and anti-inﬂammation (p,q) related cytokines in mouse brains after three months of diﬀerent treatments.
+Data are presented as mean ± s.d. (n = 6 independent experiments). Statistical analysis was performed by one-way ANOVA with Tukey post-test for
+panels (e, f, g, n, o, p, q). *p < 0.05, **p < 0.01, and ***p < 0.001.
+Adv. Mater. 2024, 36, 2408729
+© 2024 Wiley-VCH GmbH
+2408729 (15 of 21)
+ 15214095, 2024, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202408729 by CochraneChina, Wiley Online Library on [26/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+modulation of glial cells is of great signiﬁcance for the treatment
+of advanced AD.
+2.11. Biosafety In Vitro and In Vivo
+Hemolysis, cytotoxicity, pathologic histomorphology, and or-
+gan functions were assessed to investigate the safety proﬁle of
+nanoplatform through intravenous administration. Hemolysis
+experiments showed that the delivery system had good compat-
+ibility with red blood cells in vitro (Figure S53, Supporting In-
+formation). The cytotoxicity of the nanoplatform was then val-
+idated in all the cells involved in this study. Results showed
+that cross-linking strategy could signiﬁcantly reduce cytotoxic-
+ity caused by positive surface charge (Figure S54, Supporting In-
+formation). No apparent histological changes were found in the
+principal organs of nanoplatform-treated mice (Figure S55, Sup-
+porting Information). However, we found the liver toxicity caused
+by HCQ+ATRA group which was consistent with in vitro cyto-
+toxicity assay (Figure S56, Supporting Information) and previ-
+ous studies demonstrating that free ATRA might induce hepa-
+totoxic (Figure S57a, Supporting Information). Targeted delivery
+of ATRA by nanoplatform could increase drug concentration at
+the target lesion and reduce oﬀ-target toxicity. Besides, the results
+of liver and kidney function markers in nanoplatform-treated AD
+mice were all within the normal range (Figure S57b, Supporting
+Information). Taken together, these results demonstrated that
+nanoplatform possessed good in vitro and in vivo biosafety, which
+was critical for the clinical application.
+3. Discussion
+The current pharmacological treatment of AD encompasses
+three main categories of drugs: those that improve cognitive
+symptoms, those that improve psycho-behavioral symptoms, and
+disease-modifying therapeutic drugs.[35] Despite the continuous
+drug research and development for AD, their numbers that suc-
+cessfully complete clinical trials is exceedingly low. The main
+challenges it faces can be broadly categorized into four main ar-
+eas: 1) The pathogenesis of AD is complex and unknown.[36] It
+is challenging to ascertain the upstream and downstream posi-
+tions of drug development targets in the pathological process,
+with only multiple hypotheses currently available; 2) AD is a poly-
+genic and complex disease, with the majority of mutations being
+dispersed, which presents a challenge for treatment;[37] 3) AD
+is a clinically heterogeneous disease, with patients exhibiting a
+wide variety of symptoms.[38] This renders diagnosis and symp-
+tomatic treatment more challenging; 4) Other diseases, such as
+cerebrovascular injury may accompany the progression of AD.[39]
+The challenges above necessitate the development of more so-
+phisticated diagnostic techniques, multi-target therapies, preci-
+sion medicine, and personalized treatment strategies.
+A growing number of researchers have concluded that
+monotherapy is an ineﬀective approach to inhibiting the pro-
+gression of AD.[40] Consequently, combination therapies that
+can synergistically modulate multiple targets are becoming in-
+creasingly relevant. However, maintaining similar pharmacoki-
+netic properties in vivo is challenging when combining multiple
+drugs, leading to signiﬁcant inter-individual diﬀerences in ther-
+apeutic eﬃcacy. In this study, two medicines that modulate glial
+cells were covalently modiﬁed as peptide drug conjugates. Subse-
+quently, the two small molecules were loaded onto the surface of
+PDA nanoparticles according to a speciﬁc ratio. Following cross-
+linking with a ROS-sensitive linker, the stability of the two small
+molecules could be maintained during circulation, thus ensur-
+ing that the drugs could be delivered into the brain according to
+a speciﬁc ratio. Furthermore, the particle size of PDA nanoparti-
+cles can be readily adjusted to regulate the in vivo distribution and
+fate of the nanoplatform. Consequently, the co-delivery system
+developed in this study represents a novel approach to designing
+combination therapies in multi-target therapy. This system is an-
+ticipated to address the inconsistent in vivo behavior of multiple
+drugs.
+With the deepening of targeted therapy research, the con-
+cept of precision medicine has received much attention and
+exploration.[41] In the past, researchers focused more on im-
+proving drug delivery eﬃciency to the brain.[42] Nowadays, we
+are more interested in designing delivery systems to transport
+therapeutic agents to speciﬁc brain regions, speciﬁc cells, or
+even speciﬁc organelles.[43] This often places higher demands
+on the design of targeted delivery systems, but also complicates
+their composition. Among them, targeted peptides have been
+used more frequently in the design of delivery systems, espe-
+cially peptides with both BBB penetration and focal cell target-
+ing functions.[44] In this study, Ab and CTGF peptides were se-
+lected for modiﬁcation, both of which could target transporters
+whose expression is upregulated under AD pathological condi-
+tions, thus targeting damaged glial cells. This lesion-speciﬁc tar-
+geting strategy may improve drug selectivity and reduce toxic side
+eﬀects on normal brain tissue, which is important for precision
+medicine.
+As AD is a long-term chronic progressive disease, the intrac-
+erebral microenvironment has diﬀerent characteristics at diﬀer-
+ent stages.[45] Therefore, there is a need to adequately study the
+stages of AD process, which has important implications for per-
+sonalized treatment. In contrast to the large number of studies
+on the early inﬂammatory response in AD recently, our work fo-
+cused on resting glial cells in the middle and advanced stages
+of AD. We found that at this time, microglia have entered the
+stage of immune tolerance, exhibiting a breakdown of metabolic
+and immune functions. In addition, astrocytes show a shift in
+stem cell fate. Therefore, we aimed to deliver HCQ and ATRA
+to microglia and astrocytes via a nanoplatform to activate the
+metabolic-immune function of microglia and promote the trans-
+diﬀerentiation of astrocytes into neurons. Developing targeted
+therapeutic strategies for diﬀerent stages of AD progression is
+important.
+Finally, given the chronic and long-term nature of AD, early
+treatment is essential to inhibit disease progression. However,
+due to its insidious onset, early diagnosis of AD remains a sig-
+niﬁcant challenge.[46] Recent studies have shown that the gen-
+eration of inﬂammatory responses in the AD brain usually pre-
+cedes the appearance of biomarkers.[47] Therefore, the FRET ef-
+fect generated by cross-linking the nanoplatforms in this study
+can be used as a tool to detect inﬂammatory responses in the
+AD brain, thus providing new prospects for early diagnosis
+of AD.
+Adv. Mater. 2024, 36, 2408729
+© 2024 Wiley-VCH GmbH
+2408729 (16 of 21)
+ 15214095, 2024, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202408729 by CochraneChina, Wiley Online Library on [26/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+4. Experimental Section
+Materials:
+Peptides
+Ab
+(thiohydracrylic
+acid-KLVFFAED),
+DAG
+(cyclo
+(CDAGRKQK))
+and
+A𝛽1-42
+(DAEFRHDSGYEVHHQKLVF-
+FAEDVGSNKGAIIGLMVGGVVIA) was synthesized by ChinaPeptides.
+Maleimide-poly(ethylene glycol)-Succinimidyl Carboxymethyl Ester (Mal-
+PEG-NHS, Mw = 5000) and Methoxy-poly(ethylene glycol)-Succinimidyl
+Carboxymethyl Ester (mPEG-NHS, Mw = 5000) was purchased from
+Jenkem Technology. All the other chemicals and solvents were purchased
+from Energy Chemical, unless otherwise stated. Soluble ﬂuorescent
+probe, such as FITC, AF555-NHS, Cy5-NHS, and Cy5.5-NHS, HEPES,
+penicillin, streptomycin, BIC, CNQX, JC-10, titanium dioxide, Annexin
+V-PE/7-AAD apoptosis detection kit, and cell counting kit-8 (CCK-8)
+were purchased from Dalian Meilun Biotechnolgy. Esterase, gelatin,
+4′,6-diamidino-2-phenylindole (DAPI), Immobilon Western HRP Sub-
+strate, syringe ﬁlter, poly(allylamine) solution (PAH, average Mw ≈15000,
+20 wt.% in H2O), and centrifugal ﬁlter unit (Mw = 10 kDa, 100 kDa) were
+purchased from Sigma-Aldrich. LysoTracker Deep Red was purchased
+from Molecular Probes. RIPA lysis solution, Bradford protein quantiﬁ-
+cation kits, citrate antigen retrieval solution, Nissl staining solution,
+QuickBlock™Western Blocking Buﬀer, QuickBlock™Primary Antibody
+Dilution Buﬀer, NADPH, and ATP quantiﬁcation kits were purchased from
+Beyotime. Lactic acid assay kit was purchased from Nanjing Jiancheng
+bioengineering Institute. Cell culture insert (1.0 μm), T-25 and T-75 ﬂask
+were purchased from Corning. ELISA kits (Mouse TNF-𝛼, IL-1𝛽, Arg-1,
+IL-10), ﬂuorescein diacetate (FDA), DHE, 2-NBDG, B27, N2 supplement
+and all the plates used for cells were purchased from Thermo Fisher
+Scientiﬁc. DMEM, DMEM/F12, 0.25% trypsin-EDTA, poly-D-Lysine (PDL),
+goat serum and foetal bovine serum (FBS) were purchased from Gibco.
+EGTA, Na2GTP, and Na-phosphocreatine were purchased from Shanghai
+Yuanye Biological Technology. TUNEL staining kit, 4% paraformaldehyde
+(PFA) ﬁx solution and HBSS were purchased from Servicebio. Antifade
+mounting medium with DAPI was purchased from Vector Laboratories.
+MgATP solution was purchased from R&D systems. EGF, FGF2, BDNF,
+and PAGE gel quick preparation kit were purchased from Yeasen Biotech-
+nology. Seahorse XF Cell Mito Stress Test kit was purchased from Agilent.
+TEM sampler holder support membrane was purchased from Electron
+Microscopy China. Rabbit anti-Akt (Abcam (ab179463), 1:1000), rabbit
+anti-Akt1 (phospho S473) (Abcam (ab81283), 1:1000), rabbit anti-mTOR
+(Abcam (ab32028), 1:1000), rabbit anti-mTOR (phospho S2448) (Abcam
+(109 268), 1:1000 for WB and 1:100 for IHC), rabbit anti-HIF-1𝛼(Abcam
+(ab179483), 1:1000), rabbit anti-GFAP (Abcam (ab68428), 1:1000), rabbit
+anti-CTGF (Abcam (ab6992), 1:1000 for WB and 1:400 for IHC), rabbit
+anti-NeuroD1 (Abcam (ab205300), 1:1000 for WB and 1:200 for IHC),
+rabbit anti-Cyt C (Abcam (ab133504), 1:1000), rabbit anti-NeuN (Abcam
+(ab177487), 1:1000), rabbit anti-Iba-1 (Abcam (ab178846), 1:1000), rabbit
+anti-Doublecortin (Abcam (ab207175), 1:200), rabbit anti-CD11b (Abcam
+(ab8878), 1:100), rabbit anti-vGluT1 (Abcam (ab227805), 1:1000), rabbit
+anti-GAD67 (Abcam (ab213508), 1:1000), mouse anti-8-OHG (Abcam
+(ab62623), 1:1000), rabbit anti-CD34 (Abcam (ab81289), 1:200) were
+obtained from Abcam. Mouse anti-GFAP (GB12090, 1:200) and Mouse
+anti-Iba-1 (GB12105, 1:200) were obtained from Servicebio. Mouse
+anti-GAPDH (AF0006, 1:1000) was purchased from Beyotime. Mouse
+anti-GFAP Alexa Fluor™488 (53-9892-80, 1:1000), rabbit anti-oligomer
+A11 (AHB0052, 1:1000) and CD11b-APC (17-0112-82, 1:50) were obtained
+from Thermo Fisher Scientiﬁc. Rabbit anti-PI3K (A0265, 1:1000) and rab-
+bit anti-phospho-PI3K (AP0427, 1:1000) were purchased from Abclonal.
+Mouse anti-Amyloid 𝛽(82E1, 1H-103, 1:1000) was a gift from Prof. Bin Ji
+(Fudan University). All the ﬂuorescent secondary antibody (1:1000) were
+obtained from Abcam. Goat anti-rabbit or mouse secondary antibodies
+conjugated with horseradish peroxidase (HRP) (1:1000) were purchased
+from Beyotime.
+Animals:
+All animal experiments were carried out in accordance
+with guidelines evaluated and approved by Fudan University Institu-
+tional Animal Care and Use Committee (2019-03-YJ-JC-01). C57BL/6
+mice (male, 18–20 g), C57BL/6 suckling mice (male, within 24 h af-
+ter birth) and SD rats (male, 200–250 g) were purchased from the
+Sino-British SIPPR/BK Lab Animal Ltd. APPswe/PSEN1dE9 mice (male,
+20–25 g) were purchased from Shanghai Model Organisms Center
+lnc.
+Cell Lines:
+Mouse BV2 cells and mouse bEnd.3 cells were purchased
+from Procell Life Science&Technology Co.,Ltd. Human SH-SY5Y cells were
+purchased from Center for Excellence in Molecular Cell Science, CAS.
+All the cell lines were cultured in DMEM or DMEM/F12 medium sup-
+plemented with 10% FBS and 1% penicillin/streptomycin. Cells were in-
+cubated at 37 °C under a saturating humidity atmosphere containing
+5% CO2. The primary astrocyte and microglia were extracted from the
+C57BL/6 suckling mouse cortical tissue. Brieﬂy, meninges were carefully
+removed from the cerebral cortices and placed in ice-cold Ca2+- and Mg2+-
+free HBSS solution. Then the tissue was cut into small pieces and digested
+with 0.125% trypsin-EDTA for 15 min with shaking every 5 min. An equal
+amount of medium was added to terminate digestion and discard the
+supernatant. This procedure was repeated three times and 2 ml culture
+medium was added. The tissue suspension was repeatedly blown 20 times
+with a pipette and allowed to rest until the upper liquid was free of tissue
+debris before ﬁltered through a syringe ﬁlter (0.45 μm). This procedure was
+repeated three times until no signiﬁcant precipitation was observed when
+the suspension was left to rest. The ﬁltered single-cell suspension was ﬁrst
+plated on a T-75 ﬂask for 15 min to remove endothelial cells and pericyte.
+Then the non-adherent cell suspension was plated on a PDL coated T-25
+ﬂask. After a 24-h incubation at 37 °C in a humidiﬁed 5% CO2 incubator,
+culture medium (DMEM/F12 with 10% FBS, 1% P/S, B27, 10 ng ml−1 EGF
+and 10 ng ml−1 FGF2) was changed to remove ﬂoating debris. The culture
+medium was changed every two days until the cell fusion reached 90%.
+Then the ﬂasks were shaken rigorously (200 rpm) overnight to separate
+the astrocyte and microglia. The adherent cells were astrocyte and avail-
+able for subsequent use. The supernatant was collected and centrifuged to
+enable the harvest of microglia. After centrifuge, cells were resuspended
+and seeded on PDL coated plates.
+Preparation of oA𝛽1-42:
+A𝛽1-42 peptides were dissolved in 1,1,1,3,3,3-
+hexaﬂuoro-2-propanol (HFIP) to a ﬁnal concentration of 1 mm to form
+monomers. Then the HFIP was evaporated under nitrogen purging and
+the dried peptides ﬁlm were stored at −80 °C. oA𝛽1-42 were prepared by
+diluting the monomers solution to 10 μm in cultured medium and incu-
+bated overnight at 4 °C.
+oA𝛽1-42 Chronic Stimulation Model In Vitro:
+oA𝛽1-42 solution was di-
+luted to 2 μm and cells were incubated with vehicle or oA𝛽1-42 for 2 days.
+Cells were harvested and protein was extracted to analyze the expression
+of Akt/mTOR/HIF-1𝛼pathway by WB.
+Synthesis and Characterization of D-PPA:
+A representative synthetic
+procedure for ATRA-CDI was as follows: ATRA (200 mg, 1.2 equiv.), ethy-
+lene glycol (34.39 mg, 1 equiv.), DMAP (67.77 mg, 1 equiv.) and EDC
+(106.3 mg, 1 equiv.) were dissolved in 5 ml DCM under an atmosphere
+of N2. The reaction was carried out at R.T. for 10 h. The crude product was
+puriﬁed by column chromatography on silica gel (EtOAc/PE 25:75) to give
+compound ATRA-OH in the form of yellow solid. Then, ATRA-OH (100 mg,
+1 equiv.) and CDI (76 mg, 2 equiv.) were dissolved in 4 ml DCM under an
+atmosphere of N2. The reaction was carried out at R.T. for 2 h. The reac-
+tion mixture was diluted with DCM and washed with water twice and brine
+once. The solution was dried with anhydrous sodium sulfate and then re-
+moved with rotary evaporation to obtain compound ATRA-CDI in the form
+of yellow solid. The obtained ATRA-OH and ATRA-CDI were characterized
+by 1H-NMR and ESI-MS.
+A representative synthetic procedure for DPA-NHS-sulfo was as fol-
+lows: DPA (200 mg, 1 equiv.) and SA (151 mg, 1.1 equiv.) were dissolved
+in 5 ml THF. The reaction was carried out at 80 °C overnight in a heated
+reﬂux device. The solvent of reaction mixture was directly removed with
+rotary evaporation without puriﬁcation to obtain DPA-COOH white solid
+crude product. Then, the crude product (12.25 mg, 1 equiv.), sulfo-NHS
+(12.3 mg, 1.1 equiv.), and EDC (10.86 mg, 1.1 equiv.) were dissolved in
+PBS (pH = 6). The reaction was carried out at R.T. for 15 min and directly
+added into next procedure without puriﬁcation. The obtained DPA-COOH
+was characterized by ESI-MS.
+A representative synthetic procedure for DAG-PEG-NHS was as follows:
+MAL-PEG-NHS (18 mg, 1.1 equiv.) and DAG peptide (4.4 mg, 1.5 equiv.)
+were dissolved in HEPES (10 mm, pH = 7) under an atmosphere of N2.
+Adv. Mater. 2024, 36, 2408729
+© 2024 Wiley-VCH GmbH
+2408729 (17 of 21)
+ 15214095, 2024, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202408729 by CochraneChina, Wiley Online Library on [26/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+The reaction was carried out at R.T. for 2 h. The reaction mixture was then
+directly added into next procedure.
+A representative synthetic procedure for D-PPA was as follows: PAH
+(25 mg, 1 equiv.), ATRA-CDI (14.6 mg, 20 equiv.), DMAP (4 mg, 20 equiv.)
+and TEA (3.37 mg, 20 equiv.) were dissolved in MeOH under an atmo-
+sphere of N2. The reaction was carried out at R.T. overnight and dia-
+lyzed against deionized water for 24 h. The PAH-ATRA water solution was
+changed into HEPES (500 mm, pH = 7.4) solution and DPA-NHS-sulfo
+solution was added into the mixture for further 2 h reaction. Then the
+DAG-PEG-NHS solution was added into the mixture for another 2 h re-
+action. Finally, the reaction mixture was dialyzed against deionized water
+for 24 h before lyophilization to obtain compound D-PPA in the form of
+yellow solid. The obtained D-PPA was characterized by 1H-NMR and GPC.
+Synthesis and Characterization of A-PPH:
+A representative synthetic
+procedure for HCQ-NHS-sulfo was as follows: HCQ (200 mg, 1 equiv.)
+and SA (65.55 mg, 1.1 equiv.) were dissolved in 5 ml THF. The reaction
+was carried out at 80 °C overnight in a heated reﬂux device. The solvent
+of reaction mixture was directly removed with rotary evaporation without
+puriﬁcation to obtain HCQ-COOH white solid crude product. Then, the
+crude product (29 mg, 1 equiv.), sulfo-NHS (15.2 mg, 1.1 equiv.), and EDC
+(13.42 mg, 1.1 equiv.) were dissolved in PBS (pH = 6). The reaction was
+carried out at R.T. for 15 min and directly added into next procedure with-
+out puriﬁcation. The obtained HCQ-COOH was characterized by ESI-MS.
+A representative synthetic procedure for Ab-PEG-NHS was as follows:
+MAL-PEG-NHS (18 mg, 1.1 equiv.) and Ab peptide (5.28 mg, 1.5 equiv.)
+were dissolved in HEPES (10 mm, pH = 7) under an atmosphere of N2.
+The reaction was carried out at R.T. for 2 h. The reaction mixture was then
+directly added into next procedure.
+A representative synthetic procedure for A-PPH was as follows: PAH
+(25 mg, 1 equiv.) was dissolved in HEPES (500 mm, pH = 7.4) and HCQ-
+NHS-sulfo solution (20 equiv.) was added into the mixture for further 2 h
+reaction. Then the Ab-PEG-NHS solution and AC (2.72 mg, 10 equiv.) were
+added into the mixture for another 2 h reaction. Finally, the reaction mix-
+ture was dialyzed against deionized water for 24 h before lyophilization to
+obtain compound A-PPH in the form of white solid. The obtained A-PPH
+was characterized by 1H-NMR and GPC.
+Synthesis and Characterization of PDA:
+The PDA nanocore was synthe-
+sized by the oxidative polymerization of dopamine. Brieﬂy, 9 ml deionized
+water, 4 ml ethanol and 0.8 ml ammonium hydroxide were stirred together
+at 25 °C for 30 min. Then 50 mg dopamine hydrochloride was dissolved in
+the mixture and the stirring was continued for another 24 h. The color of
+the solution gradually changed from colorless to brown to black. The PDA
+was puriﬁed by the centrifugal ﬁlter unit (Mw = 100 kDa) to remove un-
+converted monomer until the lower liquid became clear. After that, PDA so-
+lution was ﬁltered by 0.22 μm ﬁlter membrane to obtain the PDA nanocore.
+The concentration of PDA was determined by lyophilization. The obtained
+PDA was characterized by DLS and TEM.
+Synthesis
+and
+Characterization
+of
+DA-PPHATK@PDA:
+The
+DA-
+PPHATK@PDA was synthesized by the self-assemble between PDA and
+D-PPA and A-PPH and cross-linking with TK linker. Diﬀerent mass ratio
+of PDA and polymers were mixed together and self-assemble to form
+DA-PPHA@PDA under the condition of ultrasound for 10 min. Then
+diﬀerent mass of TK linker was added into the mixture and the stirring was
+continued for 1 h to obtain DA-PPHATK@PDA. The DA-PPHATK@PDA
+solution was further puriﬁed by ultraﬁltration to remove free polymers
+and TK linker. The obtained DA-PPHATK@PDA was characterized by DLS,
+TEM, elemental mapping and UV–vis absorbance spectrometer.
+Drug Release:
+D-PPA and A-PPH were diluted to 5 mg mL−1 with PBS
+(pH
+=
+5.0 or 7.4), and diﬀerent concentrations of esterase (10 and
+30 U mL−1) were added to the solutions, while the control group with-
+out esterase was set to simulate the extracellular environment. The above
+solutions were incubated for 24 h at 37 °C on a shaker (100 rpm) and
+samples were taken at diﬀerent time points (0.5, 1, 2, 4, 8, 12, 24 h). The
+samples were centrifuged (14 000 g, 5 min) and reconstituted in methanol.
+The concentration of HCQ and ATRA were determined by HPLC. (Figure
+S22, Supporting Information).
+HPLC method for quantifying ATRA: 90% methanol, 10% H2O (3%
+acetic acid), 1.0 ml min−1, injection volume 10 μl, wavelength 358 nm.
+HPLC method for quantifying HCQ: 14% acetonitrile, 86% NaH2PO4
+buﬀer (0.01 m, pH = 3), 1.0 ml min−1, injection volume 10 μl, wavelength
+330 nm.
+The activity of esterase of BV2 cells and astrocyte was tested by the
+FDA probe (Figure S20, Supporting Information). Brieﬂy, FDA solution
+(10 μg ml−1) was added into the cell culture medium and the ﬂuorescence
+intensity (Ex = 480 nm, Em = 530 nm) was immediately detected by
+microplate reader every 10 min at 37 °C for 1 h. Fixed cells by 4% PFA
+solution were used as negative control.
+ROS Sensitive and Scavenging Eﬀects:
+The ROS sensitive ability of DA-
+PPHATK@PDA was examined by incubation with O2
+•- (100 μm). The
+change of size distribution was detected by DLS and TEM. DPPH•,
+stable free radicals, was used to test the ROS scavenging eﬀects of
+DA-PPHATK@PDA. Diﬀerent concentrations of DA-PPHATK@PDA were
+added into DPPH ethanol solution (0.3 mm), followed by continuous vor-
+tex in the dark. The UV absorbance at 517 nm was monitored every 5 min
+for 30 min, and UV–vis spectra of 400-800 nm were measured at 30 min.
+FRET Eﬀect:
+Water soluble AF555 and FITC or Cy5 and Cy5.5, whose
+spectral overlap over 30%, were selected as the model ﬂuorescence probe.
+Probe labeling was achieved by covalently linking the NHS group of probes
+to the amino group of the polymer skeleton. AF555 and FITC labeled DA-
+PP@PDA or DA-PPTK@PDA before and after treated with O2
+•- (100 μm)
+was excited at 488 nm and the emission spectrum of 520–650 nm was
+scanned by microplate reader.
+Cellular Uptake and Mechanism of Internalization:
+Fluorescence probe
+labeled PPTK@PDA or DA-PPTK@PDA were incubated with uptake in-
+hibitive condition pre-treated bEnd.3, microglia or astrocyte for 30 min.
+Then, cells were harvested and the ﬂuorescence intensity was analyzed by
+ﬂow cytometry.
+For the glial cells selective targeting veriﬁcation, FITC labeled A-PP
+or PP and Cy5 labeled D-PP or PP were synthesized to obtained DA-
+PPTK@PDA or PPTK@PDA. Microglia or astrocyte were incubated with the
+above nanoplatform pre-treated with O2•- (100 μm) for 30 min. Then, cells
+were harvested and the ﬂuorescence intensity of microglia and astrocyte
+was analyzed by ﬂow cytometry. For the confocal imaging experiment, Cy5
+labeled A-PP, D-PP, and PP were synthesized to obtained D-PPTK@PDA,
+A-PPTK@PDA, or PPTK@PDA. Microglia and astrocyte co-culture system
+was incubated with the above nanoplatform pre-treated with O2•- (100 μm)
+for 30 min. Then, cells were ﬁxed and stained with GFAP and CD11b anti-
+body to distinguish microglia and astrocyte. The distribution of Cy5 signals
+was observed under a confocal microscopy.
+For the escape of lysosomes assay, FITC labeled D-PPA or A-PPH were
+synthesized to obtained D-PPATK@PDA and A-PPHTK@PDA. Microglia
+or astrocyte were incubated with A-PPHTK@PDA or D-PPATK@PDA for
+30 min, respectively. The cell supernatant was then replaced and incubated
+for another 8 h. Confocal images were taken at timed points after cells were
+stained with Hoechst and Lysotracker deep red for 30 min.
+Transcytosis Across the In Vitro BBB Model:
+bEnd.3 cells monolayer in
+a transwell system was established as the in vitro BBB model. Brieﬂy,
+bEnd.3 cells were seeded into a 0.3 cm2 cell culture insert at a density
+of 2 × 104 cells per well and allowed to achieve conﬂuence for several
+days. AF555/FITC labeled PPTK@PDA or DA-PPTK@PDA in 250 μl FBS-
+free medium was added to the donor chamber and 800 μl medium to the
+reception pool. Cells were incubated at 37 °C on a rocking platform at
+50 rpm while 50 μl samples were taken at 5, 10, 15, and 30 min for ﬂuores-
+cence detection and 50 μl fresh medium was replenished. The apparent
+permeability (Papp) was calculated as described below.
+Papp = (dQ∕dt) × (1∕C0) × (1∕A)
+(1)
+where dQ/dt is the permeability rate (nmol s−1), C0 is the initial concen-
+tration (nmol ml−1) in the donor chamber, and A is the surface area (cm2)
+of the membrane ﬁlter.
+For the integrity veriﬁcation of nanoplatform across BBB, FRET eﬀect
+was detected both in the donor and reception pool. The ﬂuorescence in-
+tensity ratio of DA-PPTK@PDA at Em wavelength of AF555 and FITC was
+calculated to compare the structural integrity of the nanoplatform before
+and after crossing the BBB.
+Adv. Mater. 2024, 36, 2408729
+© 2024 Wiley-VCH GmbH
+2408729 (18 of 21)
+ 15214095, 2024, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202408729 by CochraneChina, Wiley Online Library on [26/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+Western Blot Analysis:
+Lysates from cells or brain tissues were obtained
+in RIPA lysis buﬀer containing a cocktail of protease and phosphatase in-
+hibitors. Protein concentration was determined by Bradford assay. The
+protein samples were mixed with loading buﬀer and boiled at 95 °C for
+10 min to denature the protein. Then the protein samples were isolated by
+4-12% SDS-PAGE at 150 V and transferred to 0.45 μm PVDF membrane
+at 200 mA for 60 min. The membrane was primarily blocked with the pro-
+tein free rapid-blocking buﬀer for 20 min at room temperature. Primary
+antibodies were incubated overnight at 4 °C, then with the HRP conju-
+gated secondary antibody (1:1000) for 1 h at room temperature after wash-
+ing with TBST. Finally, the ECL system was utilized to visualize the blot
+bands.
+For the dot blot assay, brain samples (5 μl, 20 μg) were blotted onto
+nitrocellulose membrane and air-dried. After 1 h blocking in protein free
+rapid-blocking buﬀer at R.T. for 30 min, the membranes were incubated
+for 2 h at R.T. with A11 antibody. The membranes were then washed three
+times with TBST and incubated with HRP conjugated secondary anti-rabbit
+antibody for 1 h at room temperature. Then stripes were detected using
+the ECL system.
+Mitochondrial Potential Assay:
+JC-10 probe was used to monitor the
+changes of mitochondrial membrane potential of BV2 cells. After treated
+with A-PPHTK@PDA, BV2 cells were incubated with JC-10 and Hoechst
+solution for 30 min at 37 °C and then washed twice with HBSS. The ﬂuo-
+rescence of JC-10 was observed with a confocal microscopy.
+Measurement of Real-Time OCR:
+OCR was measured using a Sea-
+horse XF96 analyzer according to the manufacturer’s instructions. Brieﬂy,
+1 × 104 cells were plated on the XF96 cell culture microplate and cultured
+with diﬀerent nanoplatform with or without oA𝛽1-42 as indicated. The car-
+tridge plate was hydrated with XF calibrant buﬀer and incubated overnight
+(37 °C, CO2-free). The assay medium (XF base medium containing 1 mm
+pyruvate, 4 mm glutamine, and 25 mm glucose) was prepared immedi-
+ately before assay. For OCR measurements, oligomycin (1.5 μm), FCCP
+(1 μm), and rotenone (1 μm) were automatically added into the microplate
+at timed point during the measurement, and then OCR was monitored ev-
+ery 6 min for 72 min.
+Measurement of Metabolic Hallmarks (Glucose, NADPH, ATP, Lactate):
+2-NBDG, a glucose analogue ﬂuorescence probe, was used to detected the
+level of glucose metabolism of cells. Treated BV2 cells were incubated with
+2-NBDG diluted with glucose-free culture medium for 15 min at 37 °C.
+Then cells were washed with ice-cold HBSS three times. After that, cells
+were harvested and the ﬂuorescence intensity of 2-NBDG in BV2 cells were
+analyzed by ﬂow cytometry.
+For the ATP and NADPH measurement, cells or tissue were obtained
+after treatment and lysed with the provided extracting solution. The con-
+centration of ATP and NADPH was measured according to the manufac-
+turer’s instructions after the protein concentration was quantiﬁed.
+For the lactate measurement, the cell lysis and cultured medium were
+obtained after treatment and the concentration of lactate was quantiﬁed
+according to the manufacturer’s instructions after the protein concentra-
+tion was quantiﬁed.
+Evaluation of Phagocytic Ability In Vitro:
+For the investigation of phago-
+cytic phenotype of BV2 cells. oA𝛽1-42 chronically treated BV2 cells were in-
+cubated with HCQ containing diﬀerent nanoplatform for 24 h. Then cells
+were obtained and stained with CD11b-APC antibody. The expression of
+CD11b was analyzed by ﬂow cytometry.
+For the investigation of phagocytic eﬀects of A𝛽, FITC labeled A𝛽was
+synthesized and the oligomer form was incubated with nanoplatform pre-
+treated BV2 cells for 1 h at 37 °C. Then cells were washed three times with
+HBSS and incubated with Hoechst and Lysotracker deep red for 30 min
+at 37 °C. The colocalization of A𝛽and lysosome was observed under a
+confocal microscopy.
+Flow Cytometry:
+Treated cells were collected and washed with HBSS
+three times. Afterward, cells were blocked with 5% BSA for 20 min at R.T.
+Primary antibodies was added into the cell suspension and incubated in
+dark at R.T. for 30 min. Lastly, cells were injected into the ﬂow cytometer
+to analyze the expression of target protein.
+Cytochemistry:
+Treated cells were ﬁxed with ice-cold 4% PFA for 15 min
+and washed with HBSS three times. Then cells were permeabilized by
+treating with 0.1% Triton X-100 for 5 min and incubated with primary anti-
+bodies at 4 °C overnight. After washed with HBSS three times, cells were
+further incubated with ﬂuorescent secondary antibody for 1 h and DAPI
+for 15 min at R.T. Fluorescence imaging was performed using a confocal
+laser-scanning microscope.
+Histology and Immunohistochemistry:
+Anesthetized mice were per-
+fused with ice-cold Saline and 4% PFA, after which brains were incubated
+in 4% PFA for 24 h at 4 °C. Next, serial coronal sections of brains (10 μm
+thickness) were prepared using a cryostat after dehydration. For immuno-
+histochemistry, brain sections were washed with PBS three times and incu-
+bated with antibodies solution (primary antibodies, 10% goat serum, and
+1% Triton X-100) overnight at 4 °C. Slices were subsequently incubated for
+1 h at R.T. with ﬂuorescent secondary antibody and then counterstained
+with DAPI for 15 min. Slices were imaged using ﬂuorescence microscope
+imaging.
+For the DHE staining, anesthetized mice were perfused with ice-
+cold Saline and brains were obtained immediately without ﬁxation and
+dehydration. Next, serial coronal sections of brains (10 μm thickness)
+were prepared using a cryostat. Brain slices were washed with PBS
+three times and incubated with DHE solution (20 μm) for 30 min
+at 37 °C. Then slices were fully washed and counterstained with
+DAPI for 15 min. Slices were imaged using ﬂuorescence microscope
+imaging.
+For Nissl and HE staining, brain or tissue slices were ﬁxed with 4% PFA
+for 10 min and then washed with water for 4 min. Nissl or HE staining
+solutions were added to the slices and incubated for 5 min at room tem-
+perature. Afterward, the slices were washed with water, 95% EtOH, and
+70% EtOH for three times. The slices were observed by ﬂuorescence mi-
+croscope imaging.
+Trans-Diﬀerentiation of Astrocyte into Neuron:
+After astrocytes in-
+cubated with ATRA containing nanoplatform and oA𝛽1-42 stimulation
+for 24 h, the culture medium was completely replaced by a diﬀer-
+entiation medium that included DMEM/F12, 0.5% FBS, 3.5 mm glu-
+cose, penicillin/streptomycin, BDNF (20 ng ml−1) and N2 supple-
+ment. The cultures were changed every two days to promote synap-
+tic maturation. After 14 days treatment, astrocytes were stained with
+DCX antibody and ﬂuorescence imaging was performed using a con-
+focal laser-scanning microscope to verify the immature neuron for-
+mation. The mature neuron was observed by stained with MAP2
+or NeuN antibodies to prove the tans-diﬀerentiation after 28 days
+treatment.
+For the identiﬁcation of neuron types, diﬀerent transporters antibodies
+were added into treated astrocytes and observed under a confocal laser-
+scanning microscope. In addition, WB was also performed to test the ex-
+pression of transporter protein.
+Patch-Clamp Recordings in Cell Cultures:
+For astrocytes-converted neu-
+rons, whole-cell recordings were performed using multi-clamp 700A
+patch-clamp ampliﬁer. The chamber was constantly perfused with a bath
+solution consisting of 128 mm NaCl, 30 mm glucose, 25 mm HEPES, 5 mm
+KCl, 2 mm CaCl2, and 1 mm MgCl2. The pH of bath solution was adjusted
+to 7.3 with NaOH, and osmolarity was at 315−325 mOsm/l. Patch pipettes
+were pulled from borosilicate glass (3−5 MU) and ﬁlled with a pipette
+solution consisting of 135 mm KCl, 5 mm Na-phosphocreatine, 10 mm
+HEPES, 2 mm EGTA, 4 mm MgATP, and 0.5 mm Na2GTP (pH 7.3, ad-
+justed with KOH). The series resistance was typically ≈20 MU. For voltage-
+clamp experiments, the membrane potential was typically held at −70 or
+−80 mV. Diﬀerent inhibitors were added into bath solution and the sponta-
+neous synaptic events were recorded. Data were collected using pClamp 9
+software.
+SH-SY5Y and Glial Cells Co-Culture Systems:
+A transwell system was
+used to mimic the neuroinﬂammation caused by glial cells in vitro. As-
+trocyte and microglia were plated on the donor pool and SH-SY5Y cells
+were seeded on the reception pool. oA𝛽1-42 and nanoplatform were added
+into the donor pool for 24 h and the ROS production and cell apoptosis of
+SH-SY5Y cells were further investigated by DHE and Annexin V-PE/7-AAD
+staining and ﬂow cytometry.
+Behavioral Assessment:
+For the morris water maze test: The water tem-
+perature was set as 21 °C. The round pool was in a quiet test room with
+Adv. Mater. 2024, 36, 2408729
+© 2024 Wiley-VCH GmbH
+2408729 (19 of 21)
+ 15214095, 2024, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202408729 by CochraneChina, Wiley Online Library on [26/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+constant light during the experiment. Four diﬀerent geometric ﬁgures were
+placed on the wall of the pool which evenly divided the pool into four quad-
+rants. A 10 cm diameter platform was placed in the center of quadrant I
+and its position was unchanged during the training trials. Water was ﬁlled
+in the pool until the surface was 1.5 cm higher than the platform, and
+titanium dioxide was added to make the platform invisible in the water.
+A digital camera was set above the pool and connected to a tracking de-
+vice to record the path taken by the mice. Six training trials per day were
+conducted for six consecutive days before the experimental test for each
+group. Each mouse was released in the water facing wall of water maze
+at random starting position. The time to reach the platform was recorded
+in each trial with a maximal time limit of 60 s, and mouse was manually
+moved to stay on the platform for 15 s. If the platform was not found within
+60 s, the latency was recorded at 60 s and the mouse was gently guided
+to the platform and allowed to remain on the platform for 20 s. The time
+that the mouse spent in each quadrant was analyzed with a computerized
+tracking system.
+For the nest behavior testing: After the three-month treatment, dif-
+ferent groups of mice were moved into cages with 10 pieces of paper
+(5 × 5 cm2) added. Mice were allowed to move at random, and the nest-
+ing behavior was recorded every day by taking photos and calculating
+scores.
+Pharmacokinetics In Vivo:
+AF647, AF555, or FITC labeled DA-
+PPTK@PDA and DA-PP@PDA were synthesized and intravenously in-
+jected to SD rats with free probe as the control. Blood was collected
+through the eyeball at scheduled time points. Two hundred microliters
+whole blood was collected to detect ﬂuorescence intensity with a mi-
+croplate reader.
+In Vivo Distribution and Clearance:
+Cy5.5 and Cy5 labeled PPTK@PDA,
+DA-PPTK@PDA, and DA-PP@PDA were synthesized and intravenously in-
+jected to WT or APP/PS1 mice. The ﬂuorescence changes of brains at dif-
+ferent time points were imaged by In Vivo Imaging System (IVIS). The
+mice were sacriﬁced and the brains and major organs were removed at
+24 h post injection. The isolated brains and major organs were imaged
+by IVIS. Then the ID% of nanoplatform in vivo was calculated by measur-
+ing the concentration of ﬂuorescence probe in major organ by microplate
+reader.
+To investigate the intracerebral distribution of nanoplatform, brain
+frozen sections were prepared and immunostaining of blood vessel and
+oxidative damage cells were performed which further observed by ﬂuores-
+cence microscope imaging.
+To
+verify
+the
+glial
+cells-selective
+targeting
+ability,
+Cy5
+labeled
+PPTK@PDA, A-PPTK@PDA, D-PPTK@PDA, A-PP@PDA, and D-PP@PDA
+were prepared and injected into APP/PS1mice. The colocalization of Cy5
+and glial cells were observed by ﬂuorescence microscope after brain slices
+were stained with GFAP and Iba-1.
+Biosafety Assessment:
+For the hemolysis assay of nanoplatform, red
+blood cells were obtained from C57 mice and diluted to 4% cell suspen-
+sion with isotonic solution. Diﬀerent concentration of nanoplatform were
+prepared and mixed with an equal volume of red blood cell suspension.
+The mixture was vortexed continuously at 37 °C for 2 h. Red blood cells
+were obtained by centrifuge and the integrity of cells were analyzed by ﬂow
+cytometry.
+For the in vivo safety of nanoplatform, APP/PS1 mice were sacriﬁced
+after being treated with diﬀerent formulations for three months, and main
+organs were excised and ﬁxed in 4% PFA. The tissue sections embedded in
+paraﬃn were stained with HE solution, and observed with a microscope.
+Tissue sections of WT mice were used as a control. Plasma was obtained
+to test the ALT, AST, DBIL, TBIL, ALB, ALP, 𝛾-GT, TBA, BUN, CREA, and
+UA level of mice.
+Statistical Analysis:
+All experiments were repeated at least three times.
+Results were analyzed by GraphPad Prism 8 software and presented as
+mean ± SD or mean ± SEM. Comparisons between multiple groups
+were analyzed by one-way ANOVA with Tukey post-test unless other-
+wise indicated. Com-parison between the two groups was done by un-
+paired t test or multiple t test. Latency time curves were analyzed
+by one-way repeated measures ANOVA. *p < 0.05, **p < 0.01, and
+***p < 0.001.
+Supporting Information
+Supporting Information is available from the Wiley Online Library or from
+the author.
+Acknowledgements
+The authors acknowledge the support from the National Natural Science
+Foundation of China (32030059, 82273865, and 82121002), Shanghai Mu-
+nicipal Science and Technology Major Project (Grant 2018SHZDZX01),
+and ZJLab. Scheme 1, Figure 2h, Figure 2l, Figure 3a, Figure 4a, Figure 5b,
+Figure 6a, Figure 7h, Figure 7m, Figure S38a (Supporting Informa-
+tion), and TOC were partly created by BioRender (https://www.biorender.
+com/). The publication license numbers are ZY2798IC13, GE2798J03V,
+NR2798IOVU, GC2798J1KC, LX2798J5BF, RM2798IRBI, AN2798IYBF,
+QY2798J72W, PX2798J8AT, JU2798ITFH and ZX2798J41R.
+Conﬂict of Interest
+The authors declare no conﬂict of interest.
+Data Availability Statement
+The data that support the ﬁndings of this study are available from the
+corresponding author upon reasonable request.
+Keywords
+combination nano-therapy, glial cells targeting, metabolic modulation,
+modular nanoplatform, trans-diﬀerentiation
+Received: June 19, 2024
+Revised: September 2, 2024
+Published online: September 26, 2024
+[1] J. Graﬀ-Radford, K. X. X. Yong, L. G. Apostolova, F. H. Bouwman, M.
+Carrillo, B. C. Dickerson, G. D. Rabinovici, J. M. Schott, D. T. Jones,
+M. E. Murray, Lancet Neurol. 2021, 20, 222.
+[2] a) B.-L. Sun, W.-W. Li, C. Zhu, W.-S. Jin, F. Zeng, Y.-H. Liu, X.-L. Bu,
+J. Zhu, X.-Q. Yao, Y.-J. Wang, Neurosci. Bull. 2018, 34, 1111; b) R.
+Ossenkoppele, R. van der Kant, O. Hansson, Lancet Neurol. 2022,
+21, 726.
+[3] B. De Strooper, E. Karran, Cell 2016, 164, 603.
+[4] a) M. S. Uddin, L. W. Lim, Ageing Res. Rev. 2022, 78, 101622; b) M. H.
+Murdock, L.-H. Tsai, Nat. Neurosci. 2023, 26, 181.
+[5] a) C. Lopez-Otin, M. A. Blasco, L. Partridge, M. Serrano, G. Kroemer,
+Cell 2023, 186, 243; b) M. P. Mattson, T. V. Arumugam, Cell Metab.
+2018, 27, 1176.
+[6] C. Gao, J. Jiang, Y. Tan, S. Chen, Signal Transduction Targeted Ther.
+2023, 8, 359.
+[7] A.-C. Wendeln, K. Degenhardt, L. Kaurani, M. Gertig, T. Ulas, G. Jain,
+J. Wagner, L. M. Häsler, K. Wild, A. Skodras, T. Blank, O. Staszewski,
+M. Datta, T. P. Centeno, V. Capece, M. R. Islam, C. Kerimoglu, M.
+Staufenbiel, J. L. Schultze, M. Beyer, M. Prinz, M. Jucker, A. Fischer,
+J. J. Neher, Nature 2018, 556, 332.
+[8] M. S. Anderson, M. A. Su, Nat. Rev. Immunol. 2016, 16, 247.
+[9] R. Orihuela, C. A. McPherson, G. J. Harry, Br. J. Pharmacol. 2016, 173,
+649.
+[10] Y. Hu, W. Mai, L. Chen, K. Cao, B. Zhang, Z. Zhang, Y. Liu, H. Lou, S.
+Duan, Z. Gao, Glia 2020, 68, 1031.
+Adv. Mater. 2024, 36, 2408729
+© 2024 Wiley-VCH GmbH
+2408729 (20 of 21)
+ 15214095, 2024, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202408729 by CochraneChina, Wiley Online Library on [26/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+www.advancedsciencenews.com
+www.advmat.de
+[11] G. Y. Liu, D. M. Sabatini, Nat. Rev. Mol. Cell Biol. 2020, 21, 183.
+[12] S. H. Baik, S. Kang, W. Lee, H. Choi, S. Chung, J. I. Kim, I. Mook-Jung,
+Cell Metab. 2019, 30, 493.
+[13] H. Kahroba, B. Ramezani, H. Maadi, M. R. Sadeghi, H. Jaberie, F.
+Ramezani, Ageing Res. Rev. 2021, 65, 101211.
+[14] M. Linnerbauer, M. A. Wheeler, F. J. Quintana, Neuron 2020, 108, 608.
+[15] C. García-Cáceres, E. Balland, V. Prevot, S. Luquet, S. C. Woods, M.
+Koch, T. L. Horvath, C.-X. Yi, J. A. Chowen, A. Verkhratsky, A. Araque,
+I. Bechmann, M. H. Tschöp, Nat. Neurosci. 2018, 22, 7.
+[16] H.-G. Lee, M. A. Wheeler, F. J. Quintana, Nat. Rev. Drug Discovery
+2022, 21, 339.
+[17] Z. Guo, L. Zhang, Z. Wu, Y. Chen, F. Wang, G. Chen, Cell Stem Cell
+2014, 14, 188.
+[18] a) P. Scheltens, B. De Strooper, M. Kivipelto, H. Holstege, G.
+Chételat, C. E. Teunissen, J. Cummings, W. M. van der Flier, Lancet
+2021, 397, 1577; b) P. Denver, A. English, P. L. McClean, Brain, Be-
+hav., Immun. 2018, 70, 423; c) P. Liu, T. Zhang, Q. Chen, C. Li, Y. Chu,
+Q. Guo, Y. Zhang, W. Zhou, H. Chen, Z. Zhou, Y. Wang, Z. Zhao, Y.
+Luo, X. Li, H. Song, B. Su, C. Li, T. Sun, C. Jiang, Adv. Mater. 2021, 33,
+2100746; d) Y. Lu, Z. Guo, Y. Zhang, C. Li, Y. Zhang, Q. Guo, Q. Chen,
+X. Chen, X. He, L. Liu, C. Ruan, T. Sun, B. Ji, W. Lu, C. Jiang, Adv. Sci.
+2018, 6, 1801586.
+[19] X. Li, Y. Li, Y. Jin, Y. Zhang, J. Wu, Z. Xu, Y. Huang, L. Cai, S. Gao, T.
+Liu, F. Zeng, Y. Wang, W. Wang, T. F. Yuan, H. Tian, Y. Shu, F. Guo, W.
+Lu, Y. Mao, X. Mei, Y. Rao, B. Peng, Nat. Aging 2023, 3, 1288.
+[20] a) J. Xie, Z. Shen, Y. Anraku, K. Kataoka, X. Chen, Biomaterials 2019,
+224, 119491; b) L. Han, C. Jiang, Acta Pharm. Sin. B 2021, 11, 2306;
+c) P. Liu, C. Jiang, WIREs Nanomed. Nanobiotechnol. 2022, 14, 1818.
+[21] A. P. Mann, P. Scodeller, S. Hussain, G. B. Braun, T. Molder, K. Toome,
+R. Ambasudhan, T. Teesalu, S. A. Lipton, E. Ruoslahti, Nat. Commun.
+2017, 8, 1403.
+[22] Y. Kong, C. Liu, Y. Zhou, J. Qi, C. Zhang, B. Sun, J. Wang, Y. Guan,
+Front. Aging Neurosci. 2020, 12, 227.
+[23] C. Cai, X. Dai, Y. Zhu, M. Lian, F. Xiao, F. Dong, Q. Zhang, Y. Huang,
+Q. Zheng, Appl. Microbiol. Biotechnol. 2015, 100, 825.
+[24] a) V. R. Varma, R. J. Desai, S. Navakkode, L.-W. Wong, C. Anerillas, T.
+Loeﬄer, I. Schilcher, M. Mahesri, K. Chin, D. B. Horton, S. C. Kim, T.
+Gerhard, J. B. Segal, S. Schneeweiss, M. Gorospe, S. Sajikumar, M.
+Thambisetty, Mol. Psychiatry 2022, 28, 1312; b) M. Kocak, S. E Erdi, G.
+Jorba, I. Maestro, J. Farrés, V. Kirkin, A. Martinez, O. Pless, Autophagy
+2021, 18, 473.
+[25] a) Z. Wu, M. Parry, X.-Y. Hou, M.-H. Liu, H. Wang, R. Cain, Z.-F.
+Pei, Y.-C. Chen, Z.-Y. Guo, S. Abhijeet, G. Chen, Nat. Commun. 2020,
+11, 1105; b) G. López-Carballo, L. Moreno, S. Masiá, P. Pérez, D.
+Barettino, J. Biol. Chem. 2002, 277, 25297.
+[26] P. Ionita, Int. J. Mol. Sci. 2021, 22, 1545.
+[27] M. D. Sweeney, A. P. Sagare, B. V. Zlokovic, Nat. Rev. Neurol. 2018,
+14, 133.
+[28] N. N. Pavlova, J. Zhu, C. B. Thompson, Cell Metab. 2022, 34, 355.
+[29] C. Zou, Y. Wang, Z. Shen, J. Biochem. Biophys. Methods 2005, 64, 207.
+[30] S. A. Wolf, H. W. G. M. Boddeke, H. Kettenmann, Annu. Rev. Physiol.
+2017, 79, 619.
+[31] J. S. Kerr, B. A. Adriaanse, N. H. Greig, M. P. Mattson, M. Z. Cader,
+V. A. Bohr, E. F. Fang, Trends Neurosci. 2017, 40, 151.
+[32] S. Zhang, X. Chen, Y. Hu, J. Wu, Q. Cao, S. Chen, Y. Gao, Mol. Cell.
+Endocrinol. 2016, 422, 243.
+[33] a) F. Leng, P. Edison, Nat. Rev. Neurol. 2020, 17, 157; b) V. Calsolaro,
+P. Edison, Alzheimer’s Dementia 2016, 12, 719.
+[34] R. Bai, J. Guo, X.-Y. Ye, Y. Xie, T. Xie, Ageing Res. Rev. 2022, 77, 101619.
+[35] F. Mangialasche, A. Solomon, B. Winblad, P. Mecocci, M. Kivipelto,
+Lancet. Neurol. 2010, 9, 702.
+[36] S. Khan, K. H. Barve, M. S. Kumar, Curr. Neuropharmacol. 2020, 18,
+1106.
+[37] C. Ferrari, S. Sorbi, Physiol. Rev. 2021, 101, 1047.
+[38] M. Jorﬁ, A. Maaser-Hecker, R. E. Tanzi, Genome Med. 2023, 15, 6.
+[39] M. Cortes-Canteli, C. Iadecola, J. Am. Coll. Cardiol. 2020, 75, 942.
+[40] M. T. Kabir, M. S. Uddin, A. A. Mamun, P. Jeandet, L. Aleya, R. A.
+Mansouri, G. M. Ashraf, B. Mathew, M. N. Bin-Jumah, M. M. Abdel-
+Daim, Int. J. Mol. Sci. 2020, 21, 3272.
+[41] R. S. Isaacson, C. A. Ganzer, H. Hristov, K. Hackett, E. Caesar, R.
+Cohen, R. Kachko, J. Meléndez-Cabrero, A. Rahman, O. Scheyer,
+M. J. Hwang, C. Berkowitz, S. Hendrix, M. Mureb, M. W. Schelke,
+L. Mosconi, A. Seifan, R. Krikorian, Alzheimer’s Dementia 2018, 14,
+1663.
+[42] H. Gao, Acta Pharm. Sin. B 2016, 6, 268.
+[43] P. Liu, C. Jiang, Nanomed. Nanobiotechnol. 2022, 14, 1818.
+[44] Y. S. Zhu, K. Tang, J. Lv, Trends Pharmacol. Sci. 2021, 42, 857.
+[45] B. L. Sun, W. W. Li, C. Zhu, W. S. Jin, F. Zeng, Y. H. Liu, X. L. Bu, J.
+Zhu, X. Q. Yao, Y. J. Wang, Neurosci. Bull. 2018, 34, 1111.
+[46] A. P. Porsteinsson, R. S. Isaacson, S. Knox, M. N. Sabbagh, I. Rubino,
+J. Prev. Alzheimer’s Dis. 2021, 8, 371.
+[47] A. C. Cuello, Trends Pharmacol. Sci. 2017, 38, 956.
+Adv. Mater. 2024, 36, 2408729
+© 2024 Wiley-VCH GmbH
+2408729 (21 of 21)
+ 15214095, 2024, 46, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adma.202408729 by CochraneChina, Wiley Online Library on [26/11/2025]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

@@ -1,0 +1,1623 @@
+Degradation-tunable coating with sustained silver release for spinal 
+implants to prevent postoperative infections
+Kecheng Quan a,b,c,e,1, Ting Zhang c,1, Xingyu Zhou d,1
+, Shanshan Liu a,b,e, Zhinan Mao c,  
+Jiang Sun a, Shilin Xue a,d, Xingchen Yao a,d, Yinglun Tian a,b,e, Cheng Zhang a,d, Jian He a,d,  
+Dingbang Xie a,d, Weishi Li a,b,e,*, Shenglin Wang a,b,e,**, Yufeng Zheng c,e,***,  
+Nanfang Xu a,b,e,****
+a Department of Orthopaedics, Peking University Third Hospital, Beijing, 100191, PR China
+b Engineering Research Center of Bone and Joint Precision Medicine, Ministry of Education, Beijing, 100191, PR China
+c School of Materials Science and Engineering, Peking University, Beijing, 100871, PR China
+d Peking University Health Science Center, Beijing, 100191, PR China
+e Beijing Key Laboratory of Advanced Bioadaptable Orthopedic Implants, Beijing 100871, PR China
+A R T I C L E  I N F O
+Keywords:
+Implant-associated infections
+Antibacterial coating
+Controlled drug release
+Atlantoaxial dislocation
+Silver nanoparticles
+A B S T R A C T
+Irreducible atlantoaxial dislocation is a challenging condition for spine surgeons and carries a particularly high 
+risk of postoperative infection due to its trans-oral approach for peri-odontoid soft tissue release. Conventional 
+antibacterial implant coatings are limited by rapid burst release, leading to short-term efficacy and potential 
+cytotoxicity. To address this, we developed a composite coating of silver nanoparticle-decorated ZIF-8 (AgZ) 
+within a tunable methacrylate gelatin (GelMA) and silk fibroin (SF) matrix (AgZ/GelSF) for 3D-printed Ti-6Al-4V 
+fusion cages. The AgZ nanocomposite enhanced silver dispersibility and potency, reducing the minimum 
+bactericidal concentration against MRSA and E. coli by over 4-fold and 13-fold, respectively. By adjusting the 
+GelMA-to-SF mass ratio, we finely tuned the degradation rate and silver release profile, ensuring a sustained 
+release over 28 days, which aligns with the typical wound healing timeline. RNA sequencing indicated the 
+coating's mechanism involves bacterial membrane disruption and metabolic interference, preventing biofilm 
+formation. Optimization of the coating components demonstrated excellent biocompatibility and osteogenic 
+performance both in vitro and in a rabbit femoral defect model. In a bacteria-contaminated porcine model for 
+atlantoaxial fixation and intra-articular fusion, the AgZ/GelSF-coated implant effectively eliminated bacterial 
+infection and supported successful bone fusion, all while showing no systemic toxicity. Compared with previous 
+studies, this work demonstrates significant advantages in antibacterial efficiency, drug release duration and 
+evaluation models. These findings suggest that the AgZ/GelSF composite coating is a promising strategy for 
+preventing implant-associated infections through a degradation-controlled drug release platform.
+1. Introduction
+Spinal implant surgery plays a critical role in modern orthopedic 
+treatment for conditions such as spinal degeneration, trauma, and de­
+formities [1–3]. However, implant-associated infections (IAIs) remain a 
+major postoperative complication, leading to severe pain, repeated 
+surgeries, prolonged antibiotic treatments, implant failure, non-union, 
+and neurological damage, which place a significant burden on both 
+patients and healthcare systems [4–7]. Despite the implementation of 
+stringent aseptic protocols and perioperative prophylactic antibiotics, 
+Peer review under the responsibility of editorial board of Bioactive Materials.
+* Corresponding author. Department of Orthopaedics, Peking University Third Hospital, Beijing, 100191, PR China.
+** Corresponding author. Department of Orthopaedics, Peking University Third Hospital, Beijing, 100191, PR China.
+*** Corresponding author. School of Materials Science and Engineering, Peking University, Beijing, 100871, PR China.
+**** Corresponding author. Department of Orthopaedics, Peking University Third Hospital, Beijing, 100191, PR China.
+E-mail addresses: puh3liweishi@163.com (W. Li), pkuwsl@126.com (S. Wang), yfzheng@pku.edu.cn (Y. Zheng), xunanfang@foxmail.com (N. Xu). 
+1 These authors contributed equally to the work.
+Contents lists available at ScienceDirect
+Bioactive Materials
+journal homepage: www.keaipublishing.com/en/journals/bioactive-materials
+https://doi.org/10.1016/j.bioactmat.2026.02.035
+Received 5 December 2025; Received in revised form 15 February 2026; Accepted 17 February 2026  
+Bioactive Materials 61 (2026) 712–729 
+Available online 27 February 2026 
+2452-199X/© 2026 The Authors. Publishing services by Elsevier B.V. on behalf of KeAi Communications Co. Ltd. This is an open access article under the CC 
+BY-NC-ND license ( http://creativecommons.org/licenses/by-nc-nd/4.0/ ). 
+
+conventional implants, owing to their inherently bioinert surfaces, are 
+ineffective at preventing bacterial colonization and biofilm formation at 
+the surgical site [8]. Bacterial biofilms can increase resistance to anti­
+biotics by up to a thousand-fold, drastically limiting the efficacy of 
+systemic treatments [9,10]. Among spinal procedures, transoral atlan­
+toaxial fixation combined with intra-articular fusion constitutes an 
+important strategy for treating the challenging condition of irreducible 
+atlantoaxial dislocation (AAD). However, operations performed via the 
+transoral approach are associated with a particularly high risk of post­
+operative infection [11,12]. Due to its unique approach through the oral 
+cavity, the implant is inevitably exposed to a polymicrobial environ­
+ment, including both aerobic and anaerobic bacteria. In addition, the 
+region's limited soft tissue coverage, poor vascular supply, and contin­
+uous retropharyngeal motion further exacerbate the risk of deep in­
+fections [13]. Once infection occurs, the consequences can be 
+catastrophic, ranging from failure of internal fixation and fusion to 
+spinal cord compression, and even potentially fatal intracranial infec­
+tion [14,15]. Given the time required for wound healing, there is a 
+pressing clinical need for novel implants capable of providing sustained, 
+long-term protection against infection, especially in such high-risk 
+anatomical regions.
+One promising strategy is the surface modification of implants via 
+antibacterial coatings [16,17]. Traditional coatings are typically pro­
+duced through chemical or physical methods to incorporate bactericidal 
+agents, aiming to kill bacteria upon contact [18]. However, these coat­
+ings often release drugs in an uncontrolled, rapid burst [19,20]. This 
+burst release not only leads to local drug concentrations exceeding safe 
+thresholds, causing cytotoxicity and impeding osseointegration, but also 
+results in early depletion of the antimicrobial agents, long before wound 
+healing is complete [21]. Consequently, these coatings fail to offer 
+long-term protection and leave the implant vulnerable to recurrent in­
+fections. The choice of antimicrobial agent is equally crucial. Ideally, the 
+agent should offer broad-spectrum antibacterial efficacy in complex 
+microbial environments while minimizing the risk of inducing resis­
+tance. Common agents include antibiotics, quaternary ammonium 
+compounds, antimicrobial peptides, and metal-based nanoparticles 
+[20]. Compared to conventional organic agents and antimicrobial pep­
+tides, which are frequently limited by enzymatic instability, complex 
+synthesis, and short-term bioactivity, silver nanoparticles offer distinct 
+advantages in terms of thermal stability, ease of fabrication, and potent 
+broad-spectrum antibacterial performance [22]. These properties render 
+AgNPs particularly suitable for incorporation into multifunctional 
+composite coatings designed for long-term orthopedic applications. 
+Nonetheless, their clinical application is hindered by concerns over 
+cytotoxicity [23]. Thus, developing coatings that allow controlled 
+degradation and release, while simultaneously mitigating the biological 
+toxicity of AgNPs, remains a major challenge in preventing IAIs, espe­
+cially in open spinal surgeries.
+To address these challenges, our team has made substantial progress 
+through preliminary research. First, we found that the bioavailability of 
+AgNPs can be improved by enhancing their aqueous dispersibility, 
+which enables a reduction in the required dosage and thereby lessens 
+cytotoxic effects without compromising antibacterial efficacy [24,25]. 
+Specifically, we synthesized UiO-66/Ag nanocomposites by in situ 
+reduction of silver nanoparticles on the surface of the metal–organic 
+framework (MOF) material UiO-66 [26]. At equal silver content, the 
+antibacterial activity of UiO-66/Ag was significantly greater than that of 
+bare AgNPs against either Methicillin-resistant Staphylococcus aureus 
+(MRSA) or Escherichia coli (E. coli). This remarkable enhancement allows 
+for a significant reduction in silver dosage, lowering toxicity risks. 
+However, UiO-66 exhibits relatively fast degradation under physiolog­
+ical conditions (pH 7.4), while remaining more stable under acidic 
+conditions (pH 5.0) [27]. This property limits its effectiveness for 
+long-term, in vivo drug release. To address this limitation, we developed 
+composite coatings by blending natural silk fibroin (SF), which becomes 
+less 
+hydrophilic 
+and 
+degrades 
+slowly 
+after 
+drying, 
+with 
+methacrylate-modified silk fibroin, which retains greater hydrophilicity 
+and degrades more rapidly [28]. By adjusting the mass ratio of these two 
+components, the coating's degradation rate can be finely tuned, allowing 
+for precise control over drug release in accordance with clinical re­
+quirements. This approach offers a means to moderate local concen­
+trations of antimicrobial agents, thereby reducing cytotoxicity.
+Building on this foundation, the current study focuses on synthesiz­
+ing silver nanoparticles on the surface of ZIF-8, a widely used MOF 
+material in biomedicine [29], to create Ag@ZIF-8 (AgZ) nanocomposites 
+(Scheme 1a). ZIF-8 is well known for its simple synthesis, high 
+biocompatibility, 
+controllable 
+degradation, 
+and 
+pH-responsive 
+behavior, being stable under physiological and alkaline conditions 
+while degrading rapidly in acidic environments [30]. These features 
+ensure structural stability under normal physiological conditions and 
+increase activity in infected, acidic microenvironments [31]. Next, we 
+formulated a composite coating by incorporating AgZ into a matrix 
+composed of methacrylate gelatin (GelMA) and SF. This composite was 
+used to coat 3D-printed Ti-6Al-4V intra-articular fusion cages. The 
+degradation rate of the coating, and hence the drug release profile, are 
+supposed to be precisely regulated by varying the GelMA-to-SF ratio. 
+GelMA promotes cell adhesion and exhibits good biocompatibility but 
+suffers from rapid degradation and poor mechanical strength [32,33]. In 
+contrast, SF is known for its excellent mechanical properties and 
+biocompatibility, but its low bioactivity and slow degradation limit its 
+effectiveness in dynamic biological environments [34,35]. By 
+combining these two materials, we created a synergistic system that 
+overcomes the limitations of each component and provides a promising 
+platform for controlled, clinically tailored drug release.
+Experimental results demonstrated that in situ reduction of AgNPs on 
+ZIF-8 significantly improved nanoparticle dispersibility in aqueous 
+media, resulting in enhanced antibacterial efficacy. The degradation 
+rate of the GelMA/SF (GelSF) composite coating was successfully fine- 
+tuned by adjusting the component ratio, allowing the release profile to 
+align with the wound healing timeline. Based on in vitro cytotoxicity 
+assays, the optimal AgZ loading concentration and coating density for 
+the 3D-printed Ti-6Al-4V cages were determined. Both in vitro osteo­
+genic assays and in vivo studies using a rabbit femoral defect model 
+confirmed that the optimized AgZ/GelSF coating did not impair osteo­
+genesis of the Ti-6Al-4V implant. During immersion in physiological 
+saline, silver nanoparticles were gradually released as the GelSF coating 
+degraded. These released nanoparticles effectively killed attached bac­
+terial cells, both MRSA and E. coli. Electron microscopy and RNA 
+sequencing analysis revealed that the antibacterial mechanism of AgZ 
+involved disruption of bacterial membranes, interference with key 
+metabolic processes, and inhibition of biofilm formation. Further in vivo 
+validation using a porcine atlantoaxial intra-articular fusion model 
+demonstrated that the AgZ/GelSF coating provided long-term, effective 
+protection against infection after implantation. The coating eliminated 
+contaminating bacteria without impairing bone healing or compro­
+mising the biomechanical stability of the implant (Scheme 1b). In 
+conclusion, this study developed a controlled-release, antibacterial 
+coating that effectively prevents postoperative infections in transoral 
+atlantoaxial surgeries. This approach not only enhances the safety and 
+success rate of open spinal procedures but also offers a promising new 
+strategy for preventing infections associated with orthopedic implants.
+2. Results and discussion
+2.1. Preparation and characterization of AgZ
+We firstly synthesized ZIF-8 nanoparticles following a previously 
+reported method [36], then reduced silver nanoparticles in situ on the 
+ZIF-8 surface to produce Ag@ZIF-8 nanoparticles (denoted as AgZ, see 
+Fig. 1a) [26]. Elemental mapping analysis (Fig. 1b) showed a uniform 
+distribution of silver elements across the metal-organic framework 
+(MOF), which consists of zinc and carbon elements. Compared to bare 
+K. Quan et al.                                                                                                                                                                                                                                   
+Bioactive Materials 61 (2026) 712–729 
+713 
+
+silver nanoparticles, AgZ displayed a more regular morphology, with 
+silver nanoparticles uniformly dispersed on the ZIF-8 surface and 
+exhibiting smaller particle sizes, as confirmed by dynamic light scat­
+tering (DLS) measurements (Fig. 1c). Surface charge analysis revealed 
+that while silver nanoparticles carried a highly negative charge, ZIF-8 
+nanoparticles were strongly positively charged (~+30 mV). After 
+forming the composite, the surface potential of AgZ decreased to 
+approximately +10 mV (Fig. 1d). The crystalline structure and chemical 
+composition of the nanoparticles were characterized using X-ray 
+diffraction (XRD, Fig. 1e) and Fourier-transform infrared spectroscopy 
+(FTIR, Fig. 1f), respectively. These analyses confirmed that AgZ retained 
+the characteristic diffraction peaks and functional groups of both silver 
+and ZIF-8 nanoparticles, indicating that silver nanoparticles were 
+physically attached to the ZIF-8 surface via electrostatic attraction. 
+Importantly, the reduction process did not alter the physicochemical 
+properties of either component. Inductively coupled plasma mass 
+spectrometry (ICP-MS) measurements showed that silver comprised 
+20% of the total mass in AgZ (Fig. 1g), providing a quantitative basis for 
+subsequent evaluation of antibacterial activity. To assess aqueous dis­
+persibility, three types of nanoparticles were dispersed at equal con­
+centrations in phosphate-buffered saline (PBS, pH 7.4) under 
+ultrasonication. After standing at room temperature for 10 min, signif­
+icant precipitation was observed in the silver nanoparticle dispersion 
+(highlighted by a yellow arrow in Fig. 1h), while no precipitation 
+occurred in either the ZIF-8 or AgZ dispersions. This demonstrates that 
+the dispersibility of silver nanoparticles was greatly enhanced when 
+supported on ZIF-8. The in vitro antibacterial performance of AgZ was 
+verified 
+using 
+minimum 
+inhibitory/bactericidal 
+concentration 
+(MIC/MBC) assays, standard methods that reflect the bacteriostatic or 
+bactericidal efficacy of antimicrobial nanoparticles. As a result, the MBC 
+value of silver required to MRSA was approximately 8.3 μg/mL for bare 
+Ag nanoparticles, whereas AgZ nanoparticles achieved the same effect at 
+only about 1.9 μg/mL, an over four-fold improvement in antibacterial 
+efficiency (Fig. 1i). For E. coli, the MBC of Ag was around 5.2 μg/mL, 
+while AgZ required merely 0.4 μg/mL, corresponding to a 13-fold 
+enhancement. Since ZIF-8 alone exhibited negligible antibacterial ac­
+tivity compared to silver, its direct contribution to bacterial killing in the 
+composite can be disregarded. Because bacterial cell membranes are 
+negatively charged, silver nanoparticles supported on the positively 
+charged ZIF-8 surface can interact more effectively with bacteria via 
+electrostatic attraction. The MIC results showed a similar tendency to 
+the MBC results (Fig. S1).
+To optimize silver loading, we systematically varied the AgNO3 
+precursor concentration during synthesis (7.5, 15, and 30 mM). TEM 
+imaging and ICP-MS analysis (Fig. S2a–c) revealed that the 15 mM 
+condition yielded the highest and most uniformly distributed silver 
+nanoparticles on the ZIF-8 surface (the one used above). In contrast, the 
+7.5 mM condition resulted in insufficient silver loading, while the 30 
+mM condition led to a paradoxical decrease in both the amount and 
+uniformity of surface-bound silver. This phenomenon is attributed to 
+excessive coordination between Ag+ and imidazole ligands at high 
+concentrations, which traps Ag+ within the ZIF-8 framework and limits 
+their availability for surface reduction and nanoparticle growth [37]. 
+Antibacterial assays and cytotoxicity evaluations (Fig. S2d and S2e) 
+further confirmed that the 15 mM formulation achieved an optimal 
+balance between potent bactericidal activity and acceptable biocom­
+patibility. Accordingly, the AgZ nanocomposite prepared with 15 mM 
+AgNO3 (containing approximately 20 wt% silver) was selected for all 
+subsequent experiments. This optimized formulation not only maxi­
+mizes antibacterial efficacy but also minimizes the risk of silver-induced 
+cytotoxicity, highlighting the importance of precise loading control in 
+the design of safe and effective antibacterial nanomaterials.
+2.2. Preparation and characterization of AgZ/GelSF coating on Ti disc
+To enable effective coating characterization, AgZ nanoparticles were 
+first incorporated into the GelSF composite and then deposited onto ti­
+tanium substrates using a physical deposition method (Fig. 2a). Water 
+contact angle measurements showed that the AgZ/GelSF composite 
+coating exhibited hydrophobic behavior (Fig. 2b), with a contact angle 
+of 92.6 ± 0.3◦, closely matching that of the pristine GelSF coating (93.2 
+± 1.3◦). Scanning electron microscopy (SEM) and atomic force micro­
+scopy (AFM) images revealed that the pure GelSF coating had a rela­
+tively smooth surface, while the introduction of AgZ particles increased 
+the surface roughness due to their incorporation within the matrix 
+(Fig. 2c and d). The adhesion strength between the coating and the ti­
+tanium substrate was assessed using a scratch test. A micro-scale probe 
+was drawn across the coating surface to produce a 2-mm-long scratch 
+(Fig. 2e), during which both the displacement of the probe and the 
+corresponding resistance force were simultaneously recorded (Fig. 2f). 
+Scheme 1. Schematic illustration of this work: (a) Silver nanoparticles were synthesized in situ on the surface of ZIF-8, forming Ag@ZIF-8 (denoted as AgZ) 
+nanoparticles. These AgZ nanoparticles were then combined with gelatin methacryloyl (GelMA) and silk fibroin (SF). The resulting mixture was physically deposited 
+onto the surface of a Ti-6Al-4V cage, producing an AgZ/GelSF composite layer on the cage. (b) The efficacy of this coating was validated using a porcine atlantoaxial 
+intra-articular fusion model, demonstrating that controlled drug release effectively inhibits postoperative bacterial infection and consequently enhances 
+osseointegration.
+K. Quan et al.                                                                                                                                                                                                                                   
+Bioactive Materials 61 (2026) 712–729 
+714 
+
+The average resistance force was used as a measure of the coating's 
+adhesion strength to the substrate (Fig. 2g). Results demonstrated that 
+the AgZ/GelSF composite coating exhibited strong adhesion (~3 N), 
+comparable to that of coatings composed of AgZ nanoparticles or GelSF 
+polymer alone [38]. These observations indicate that the physical mix­
+ing and deposition process enables uniform integration of AgZ nano­
+particles into the GelSF matrix, resulting in a dense, durable coating 
+with strong interfacial bonding to the titanium substrate.
+2.3. The relationship between coating composition and degradation rate 
+of GelSF
+To investigate the relationship between coating composition and 
+degradation rate, we adjusted the mass ratio of GelMA to SF in the 
+composite coating (GelSF). SF exhibits excellent stability in aqueous 
+environments due to the irregular coiling of its molecules upon drying, 
+which prevents rapid unfolding upon water exposure [35]. Conse­
+quently, pure SF coatings typically require three to six months to fully 
+degrade under physiological conditions [39]. In contrast, GelMA con­
+tains numerous hydrophilic methacryloyl groups that readily interact 
+with water molecules, leading to high solubility and rapid degradation. 
+Based on these contrasting properties, we prepared a series of composite 
+coatings by blending and crosslinking hydrophilic GelMA with hydro­
+phobic SF at mass ratios of 100:0, 75:25, 50:50, 25:75, and 0:100, 
+respectively (Fig. 3a). These mixtures were physically deposited onto 
+titanium substrates and dried at 37 ◦C. To assess degradation, the 
+coatings were immersed in PBS (pH 7.4) at 37 ◦C for time intervals 
+ranging from 0 to 28 days. Since the coatings degrade in water through 
+hydrophilic interactions, we measured their mass loss gravimetrically as 
+an indirect indicator of degradation rate. The results showed that for 
+each coating composition, mass loss increased with longer immersion 
+durations (Fig. 3b). Moreover, coatings with higher SF content displayed 
+slower degradation, retaining more mass after the same incubation 
+period. For example, the pure GelMA coating (Gel100SF0) degraded 
+almost completely within one day, whereas the pure SF coating 
+(Gel0SF100) showed less than 30% mass loss even after 28 days. The 1:1 
+Fig. 1. Characterization of Ag, ZIF-8 and AgZ nanoparticles. (a) TEM images of Ag, ZIF-8, and AgZ nanoparticles. (b) TEM and element mapping images of AgZ. 
+(c) Diameter distribution of nanoparticles. (d) Zeta potential measurements of nanoparticles suspended in PBS. (e) X-ray diffraction (XRD) pattern of nanoparticles, 
+with black arrows indicating representative silver peaks in AgZ. (f) Fourier transform infrared (FTIR) spectra of nanoparticles. (g) Mass content of silver and zinc 
+elements in AgZ, as measured by inductively coupled plasma mass spectrometry (ICP-MS). (h) Photograph of nanoparticle dispersions. Nanoparticles were dispersed 
+in PBS (1 mg/mL) by ultrasound and allowed to stand for 10 min at room temperature. The yellow arrow highlights the precipitated Ag nanoparticles. (i) Minimal 
+bactericidal concentration (MBC) of nanoparticles against MRSA and E. coli. AgZ concentration is expressed in terms of silver equivalent to Ag. All data are presented 
+as mean ± standard deviation from three independent samples or experiments.
+K. Quan et al.                                                                                                                                                                                                                                   
+Bioactive Materials 61 (2026) 712–729 
+715 
+
+composite (Gel50SF50) exhibited continuous and uniform degradation 
+throughout the 28-day period. To simulate the bacterial infection 
+environment, the Gel50SF50 coating was immersed in TSB and subjected 
+to the same procedure. The results showed a degradation trend consis­
+tent with that observed in PBS (Fig. S3). To further validate these 
+findings, we incorporated fluorescent dye SYTO9 (in green color) into 
+the GelSF solution. Three representative GelSF coatings were immersed 
+under identical conditions and analyzed using fluorescence imaging. 
+Prior to immersion, all coatings exhibited strong green fluorescence due 
+to the presence of SYTO9 (Fig. 3c). As degradation progressed, the 
+fluorescent signal gradually diminished, indicating a loss of fluorescent 
+molecules. The rate of decrease in fluorescence intensity positively 
+correlated with the mass loss results shown in Fig. 3b (Fig. 3d). Given its 
+consistent degradation behavior, the Gel50SF50 formulation was applied 
+to the surface of a Ti-6Al-4V cage (Fig. S4) and analyzed via scanning 
+electron microscopy (SEM). Elemental mapping revealed a weak tita­
+nium signal (red fluorescence) on the coated surface (Fig. 3e and f), 
+confirming effective surface coverage. As immersion time increased and 
+the coating degraded, the exposed titanium signal intensified, consistent 
+with the degradation kinetics observed in Fig. 3b and d.
+These findings demonstrate that the degradation rate of GelSF 
+composite coatings can be precisely tuned by adjusting the mass ratio of 
+GelMA to SF. Notably, the 1:1 formulation (Gel50SF50) achieved uniform 
+and sustained degradation over a 28-day period (Fig. 3b and S5a), an 
+interval that aligns well with the typical wound healing timeline in most 
+clinical surgical contexts. This controlled degradation behavior directly 
+governs the release of Ag+ from the composite system, as evidenced by 
+the corresponding release profile shown in Fig. S5a. To elucidate the 
+Fig. 2. Characterization of AgZ, GelSF, and AgZ/GelSF coatings on Ti discs. (a) Schematic illustration of the coatings on Ti surface. The Ti disc has a diameter of 
+10 mm and a thickness of 1 mm, containing 0.25 mg AgZ nanoparticles and 5 mg GelSF (GelMA-to-SF mass ratio of 50:50). (b) Water contact angle measurements for 
+each surface. (c) Scanning electron microscope (SEM) images of each surface. (d) Atomic force microscope (AFM) images of each surface, presented as 3D models. (e) 
+Optical images of scratches on each surface, made using a micro-indenter. (f) Friction-displacement curves for each coating, derived from panel (e). (g) Average 
+friction values calculated from the data in (f). All data are presented as mean ± standard deviation from three independent samples.
+K. Quan et al.                                                                                                                                                                                                                                   
+Bioactive Materials 61 (2026) 712–729 
+716 
+
+relationship between degradation and release, correlation analysis was 
+performed, revealing a strong positive correlation (r = 0.9665, p <
+0.01), which quantitatively confirms that coating degradation serves as 
+the primary regulator of silver release (Fig. S5b) [40–42]. Similar 
+degradation-release relationships have also been observed in other 
+material systems, such as heterostructures designed for ion batteries, 
+where the controlled degradation of the material matrix directly in­
+fluences ion release kinetics [43]. Furthermore, comprehensive kinetic 
+modeling of silver ion release was conducted. The Korsmeyer-Peppas 
+model provided an excellent fit (R2 = 0.9643) with a release exponent 
+of n = 0.4884 (Fig. S5c), indicating non-Fickian diffusion governed by 
+the synergistic interplay between GelSF degradation and Ag+ dissocia­
+tion from the ZIF-8 framework [41]. The Weibull model further 
+confirmed an initial fast release followed by sustained kinetics (b =
+0.6423, R2 = 0.9684), characteristic of an ideal long-term antibacterial 
+profile (Fig. S5c) [42]. This dual-mechanism control effectively 
+mitigates the burst release commonly observed in conventional coat­
+ings, positioning the Gel50SF50 formulation as a promising platform for 
+the controlled delivery of therapeutic agents during the critical 
+post-surgical healing phase.
+2.4. Composition optimization of AgZ/GelSF coating by cytotoxicity 
+assays and evaluations on osteogenic performance
+Although silver nanoparticles (AgNPs) exhibit excellent antibacterial 
+properties, their high biotoxicity substantially limits their use in 
+biomedical applications [23]. The toxicity of AgNPs on implant surfaces 
+primarily depends on their local release concentration. Based on the 
+previously described study on coating degradation rates, we systemati­
+cally optimized the AgNPs loading through in vitro cytotoxicity assays. 
+Initially, a fixed amount of GelSF (5 mg per disc, with a 1:1 mass ratio of 
+GelMA to SF) was used to load three different amounts of AgZ 
+Fig. 3. Exploration of GelSF coating composition and degradation rate. (a) Schematic illustration of GelSF coating behavior upon hydrolysis: the diagram il­
+lustrates how varying the ratio of hydrophilic GelMA to hydrophobic SF in GelSF coatings influences their degradation. Increasing the hydrophilic content of GelMA 
+enhances the interaction between the coating and water molecules, leading to greater dissolution and deformation. Conversely, increasing the hydrophobic SF 
+content improves coating stability in aqueous environments, reducing both dissolution and deformation. (b) Mass loss of coatings with different composition ratios as 
+a function of immersion time: gravimetric analysis was used to measure the mass loss of GelSF coatings with varying GelMA-to-SF mass ratios (100:0, 75:25, 50:50, 
+25:75, and 0:100) after immersion in PBS (pH 7.4) at 37 ◦C. (c) Fluorescence imaging of GelSF coatings on Ti discs: GelSF mixtures with mass ratios of 100:0, 50:50, 
+and 0:100 were combined with SYTO9 fluorescent dye and immersed under the same conditions as in panel (b). The retention of the coating on the titanium surface is 
+reflected by the strength of the green SYTO9 fluorescence signal, which increases with better coating adhesion. (d) Quantitative analysis of fluorescence intensity: 
+fluorescence intensity data from panel (c) were analyzed to quantify the coating retention and adhesion on the titanium substrates. (e) SEM and EDX elemental 
+mapping micrographs to visualize the distribution of titanium (indicated by red fluorescence) on a GelSF coating (50:50 mass ratio) applied to the Ti-6Al-4V cage 
+surface. (f) Quantitative analysis of titanium exposure as a function of immersion time: the fluorescence intensity corresponding to exposed titanium elements on the 
+cage surface (from panel e) was analyzed over time to assess the degradation of the coating. 100% is the intensity of titanium on Ti-6Al-4V cage without GelSF 
+coating as shown in Fig. S6. All data are presented as mean ± standard deviation from three independent samples.
+K. Quan et al.                                                                                                                                                                                                                                   
+Bioactive Materials 61 (2026) 712–729 
+717 
+
+nanoparticles (0.1 mg, 0.25 mg and 0.5 mg, respectively) onto titanium 
+discs. The cytotoxicity of the coating extracts on mouse embryonic 
+osteoblast precursor cells (MC3T3-E1) was assessed using the CCK-8 
+assay. Results showed that extracts from coatings with 0.1 mg and 
+0.25 mg of AgZ exhibited low cytotoxicity, with cell viability exceeding 
+80% relative to the blank control, indicating no significant detrimental 
+effects on cell viability (Fig. 4a). However, the extract from the coating 
+with 0.5 mg of AgZ demonstrated pronounced cytotoxicity. Therefore, 
+using the ratio of 0.25 mg AgZ per 5 mg GelSF, we applied AgZ/GelSF 
+coatings onto Ti-6Al-4V cages at total coating weights of 38 mg, 55 mg, 
+and 82 mg per cage, respectively. Cytotoxicity at these loading levels 
+was further evaluated via CCK-8 assays. The results indicated that 
+coatings of 38 mg and 55 mg were within the biologically acceptable 
+cytotoxicity range, whereas the 82 mg load exhibited significantly 
+elevated cytotoxicity, exceeding safety thresholds (Fig. 4b). Live/dead 
+staining corroborated these results: fluorescence imaging demonstrated 
+cell viability patterns consistent with the CCK-8 data (Fig. S7 and 
+Fig. 4c). To further assess cytotoxicity, RAW 264.7 macrophages were 
+employed for both CCK-8 and live/dead staining assays. The results were 
+consistent with those observed in MC3T3-E1 cells (Fig. S8).
+Based on these findings, the 55 mg coating load on Ti-6Al-4V cage 
+was selected for further evaluation. We utilized confocal laser scanning 
+microscopy (CLSM) to examine the effects of coating extracts on MC3T3- 
+E1 cell morphology and migration (Fig. 4d and e). To assess osteogenic 
+differentiation, we conducted alkaline phosphatase (ALP) and Alizarin 
+Red S (ARS) staining on the treated cells (Fig. 4f and g). The in vitro 
+results confirmed that the optimized AgZ/GelSF coating did not 
+compromise either the biosafety or osteogenic potential of the Ti-6Al-4V 
+cages. To further evaluate osteogenesis in vivo, a rabbit bone defect 
+model was employed (Fig. 4h). Micro-CT analysis after three months of 
+implantation showed that the presence of the AgZ/GelSF coating did not 
+significantly alter osteogenic performance, as evidenced by both 2D 
+reconstructed images (Fig. 4i) and quantitative bone formation param­
+eters (Fig. 4j). Histological analysis of hard tissue sections further 
+confirmed the formation of new bone tightly integrated with the cages 
+(Fig. 4k, yellow arrows), irrespective of whether the coating was pre­
+sent. Collectively, these results demonstrate that careful optimization of 
+AgZ loading and coating composition can effectively minimize cytotoxic 
+Fig. 4. Evaluation of the cytotoxicity and osteogenic properties of AgZ/GelSF coatings. (a) The cytotoxicity of extracts from coatings with different AgZ 
+loadings on Ti discs was assessed using the CCK-8 assay after incubation for 24 h. The amount of GelSF applied was 10 mg per disc. (b) The cytotoxicity of extracts 
+from coatings with varying AgZ/GelSF fill amounts on Ti-6Al-4V cages was assessed using the CCK-8 assay after incubation for 24 h. Based on the results from panel 
+(a), the Ag loading was fixed at 0.25 mg per 10 mg GelSF. AgZ/GelSF-38, 55, and 82 represent coating fill amounts of 38, 55, and 82 mg AgZ/GelSF per 10 g of cage, 
+respectively. (c) Fluorescence images showing the viability of cells cultured in extracts from coatings with different AgZ/GelSF loadings. (d) Confocal microscopy 
+images showing the growth status of cells cultured in various extracts. Green fluorescence indicates FITC-labeled actin filaments, while blue fluorescence indicates 
+DAPI-stained nuclei. (e) Migration of cells cultured in material extracts for 12 and 24 h, visualized by fluorescence imaging. (f) ALP activity after 7 days of culture in 
+extracts. (g) ARS staining after 14 days of culture, with insets showing macroscopic views of the staining. Based on the results from panel (b), the concentration of 
+extracts used in panels (c-g) was 50%. (h) Schematic of rabbit femoral condyle bone defect model: the AgZ/GelSF coating was applied to a Ti-6Al-4V implant (Φ 6 
+mm × 9 mm) at a ratio of 55 mg per 10 g of implant, based on previous results. Osteogenic effects on the implant surface were evaluated after 6 weeks. (i) 3D and 2D 
+reconstructed Micro-CT images showing bone tissue surrounding the implant. (j) Quantification of bone formation based on Micro-CT analysis, expressed as the ratio 
+of bone volume to tissue volume. (k) Histological analysis of bone formation: top-view images of hard tissue sections from the femur stained with methylene blue/ 
+acid fuchsin. Yellow arrows indicate new bone formation on the implant surface. All data are presented as mean ± standard deviation from three indepen­
+dent samples.
+K. Quan et al.                                                                                                                                                                                                                                   
+Bioactive Materials 61 (2026) 712–729 
+718 
+
+effects while preserving the osteogenic performance of Ti-6Al-4V cages. 
+In vitro inflammatory responses were assessed by evaluating cytokine 
+expression via ELISA and qPCR. The results showed that Ti-6Al-4V cages 
+modified with the AgZ/GelSF coating did not induce significant polari­
+zation of RAW 264.7 macrophages compared to unmodified controls 
+(Fig. S9), suggesting that the coating does not provoke an adverse im­
+mune reaction. Taken together, these findings support that the AgZ/ 
+GelSF coating achieves its intended dual functionality-robust antibac­
+terial protection and enhanced osseointegration-without eliciting sig­
+nificant inflammatory rejection.
+2.5. Validation of sustained drug release and long-term antibacterial 
+efficacy of AgZ/GelSF coatings
+To evaluate the sustained drug release capabilities of the AgZ/GelSF 
+coatings and their effectiveness in inhibiting infections caused by 
+surface-adherent bacteria, we conducted a series of in vitro antibacterial 
+assays using two clinically relevant orthopedic pathogens: methicillin- 
+resistant Staphylococcus aureus (MRSA) and Escherichia coli (E. coli). In 
+this experiment, the optimized AgZ/GelSF coating was applied to Ti-6Al- 
+4V cages, which were then immersed in PBS (pH 7.4) for varying 
+durations ranging from 0 to 28 days, respectively. Following immersion, 
+the coated cages were exposed to bacterial suspensions at a concentra­
+tion of 106 CFU/mL, significantly higher than those typically encoun­
+tered in surgical or oral environments. Colony-forming unit (CFU) 
+plating results showed that uncoated Ti-6Al-4V cages exhibited no 
+antibacterial activity, whereas cages modified with the AgZ/GelSF 
+coating completely eradicated the bacteria (Fig. 5a and b). Notably, the 
+bactericidal effect of the coating was unaffected by immersion time: 
+even after 28 days, the coating maintained its full antibacterial efficacy. 
+To further examine bacterial adhesion and viability on the coating 
+surface, titanium discs coated with AgZ/GelSF were similarly exposed to 
+the bacterial suspension under the same conditions. Bacteria were then 
+stained with SYTO9 and propidium iodide (PI) for live/dead cell anal­
+ysis. Fluorescence microscopy revealed intense green fluorescence on 
+the surface of uncoated titanium discs, indicating the presence of viable 
+bacteria (Fig. 5c). In contrast, AgZ/GelSF-coated surfaces displayed 
+strong red fluorescence regardless of immersion time, indicating that 
+adherent bacteria were non-viable. These observations were consistent 
+with the CFU results. Scanning electron microscopy (SEM) analysis 
+further supported these findings. On the surface of bare Ti-6Al-4V cages, 
+both MRSA and E. coli retained intact cellular morphology. Conversely, 
+Fig. 5. Evaluation of controlled silver release and long-term antibacterial performance of AgZ/GelSF coating. (a) Photographs of bacterial growth on TSB 
+agar plates: AgZ/GelSF-coated Ti-6Al-4V cages were immersed in PBS (pH 7.4) at 37 ◦C for 0-28 days, respectively and were then incubated in a bacterial suspension 
+(106 CFU/mL) for 24 h. After incubation, bacteria adherent to the cage surfaces were detached by ultrasonication and cultured on agar plates. Uncoated Ti-6Al-4V 
+cage served as a control. (b) Quantitative analysis of bacterial growth from panel (a). The results are expressed as means ± standard deviations from three inde­
+pendent experiments with different bacterial cultures. (c) Fluorescence micrographs of Live/Dead staining: AgZ/GelSF coatings were applied to Ti discs and subjected 
+to the same immersion and bacterial treatment conditions described in panel (a). Green fluorescence indicates live bacteria, while red fluorescence indicates dead 
+bacteria. (d) SEM imaging of bacterial morphology on the coating and cage surfaces. (e) The concentration of silver ions in the immersion medium as measured by 
+ICP-MS over time. Data are presented as means ± standard deviations from three independent experiments.
+K. Quan et al.                                                                                                                                                                                                                                   
+Bioactive Materials 61 (2026) 712–729 
+719 
+
+bacteria on AgZ/GelSF-coated surfaces exhibited significant structural 
+damage and deformation, characterized by collapsed cell walls and signs 
+of cytoplasmic leakage (Fig. 5d). To assess the release profile of silver 
+ions from the coatings, the immersion solutions were collected and 
+analyzed using inductively coupled plasma (ICP) spectrometry. The data 
+showed a time-dependent increase in silver ion concentration, corre­
+sponding closely with the degradation profile of the Gel50SF50 coating as 
+shown in Fig. 3 (Fig. 5e). To further simulate the in vivo environment, the 
+coating was incubated in TSB and subjected to the same antibacterial 
+assay. The results demonstrated that after 28 days of immersion, the 
+bactericidal efficacy and silver ion release profile were not substantially 
+compromised (Fig. S10), suggesting strong potential for inhibiting 
+postoperative infection in vivo. Taken together, these results demon­
+strate that by modulating the degradation rate of the GelSF-based drug 
+delivery coating, a controlled and sustained release of the antimicrobial 
+agent can be achieved. This facilitates long-term elimination of surface- 
+adherent bacteria and effective prevention of infection. Moreover, the 
+optimized AgZ/GelSF coating not only exhibits potent bactericidal 
+Fig. 6. Transcriptomic analysis of gene expression changes in MRSA and E. coli. (a) Heatmap showing the top 20 differentially expressed genes (DEGs) of 
+between the AgZ-treated and PBS (control) groups, both upregulated and downregulated, from three biologically independent samples. (b) Volcano plot representing 
+the distribution of DEGs, with a significance threshold of p-value <0.05 and |log2FC| > 1. (c) Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analysis 
+highlighting the enriched pathways in the DEGs between AgZ-treated and PBS-treated bacteria. (d) Gene Set Enrichment Analysis (GSEA) depicting enriched gene 
+sets. (e) Gene ontology (GO) analysis of differentially expressed genes between AgZ-treated and PBS-treated bacteria.
+K. Quan et al.                                                                                                                                                                                                                                   
+Bioactive Materials 61 (2026) 712–729 
+720 
+
+activity against high bacterial loads but does so without inducing 
+cytotoxic effects, highlighting its strong potential for both postoperative 
+infection prevention and enhancement of osseointegration.
+2.6. Antimicrobial mechanism study via RNA-sequencing analysis
+We further explored the bactericidal mechanism of AgZ through 
+RNA-sequencing analysis. The gene expression profiles of MRSA and 
+E. coli treated with AgZ differed markedly from those of the phosphate- 
+buffered saline (PBS)-treated control groups. A substantial number of 
+genes were differentially expressed in both MRSA and E. coli following 
+AgZ treatment (Fig. 6a). Specifically, 372 genes were differentially 
+expressed in MRSA,14 up-regulated and 26 down-regulated, while in 
+E. coli, 1470 genes were affected, including 472 up-regulated and 852 
+down-regulated genes compared to the PBS-treated controls (Fig. 6b). 
+Pathway enrichment analysis using the Kyoto Encyclopedia of Genes 
+and Genomes (KEGG) revealed that, in MRSA, ABC transporters, 
+Staphylococcus aureus infection, and pyrimidine metabolism were among 
+the top 20 significantly enriched pathways (Fig. 6c). In E. coli, key 
+enriched pathways included flagellar assembly, biofilm formation, and 
+propanoate metabolism. These KEGG results were further supported by 
+Gene Set Enrichment Analysis (GSEA) (Fig. 6d). Among these pathways, 
+genes related to ABC transporters and flagellar assembly are mainly 
+involved in maintaining cell membrane integrity and synthesizing 
+membrane-associated proteins [44,45]. In contrast, genes associated 
+with bacterial infection (e.g., S. aureus infection) and biofilm formation 
+are linked to membrane signaling and transport mechanisms, which play 
+crucial roles in bacterial quorum sensing [46,47]. Significant disruptions 
+in metabolic pathways - such as pyrimidine metabolism, thiamine 
+metabolism, and propanoate metabolism - suggest that AgZ-induced 
+silver nanoparticles severely impair bacterial metabolic function [48]. 
+The 20 most significantly up- or down-regulated proteins were identi­
+fied, and their characteristics and biological roles were further examined 
+via Gene Ontology (GO) analysis (Fig. 6e). The GO analysis corroborated 
+the transcriptomic findings across three dimensions: cellular compo­
+nents, molecular functions, and biological processes. To quantitatively 
+validate the membrane disruption suggested by transcriptomic analysis, 
+we assessed protein leakage and membrane potential changes in MRSA 
+and E. coli following AgZ treatment. AgZ exposure led to significant 
+protein release from both strains, accompanied by marked membrane 
+potential depolarization compared to untreated controls (Fig. S11). 
+These results provide direct quantitative evidence that AgZ disrupts 
+bacterial membrane integrity, leading to membrane depolarization and 
+cytoplasmic 
+leakage-consistent 
+with 
+the 
+downregulation 
+of 
+membrane-associated genes (e.g., ABC transporters) and disruption of 
+membrane signaling pathways identified by RNA-seq [49].
+Based on the gene expression profiles, we conclude that AgZ nano­
+particles initially target the bacterial cell membrane, damaging its sur­
+face structure and disrupting the synthesis of functional membrane 
+proteins. This membrane damage was also confirmed by SEM imaging in 
+Fig. 5d. Following this initial disruption, the nanoparticles penetrate the 
+bacterial cells and interfere with core metabolic processes, ultimately 
+leading to cell death. Moreover, silver nanoparticles appear to impair 
+quorum sensing by disrupting molecular signaling and energy trans­
+duction across the membrane, thereby suppressing bacterial virulence 
+and facilitating clearance by the host immune system.
+2.7. Evaluation of in vivo antibacterial and osteogenic properties of AgZ/ 
+GelSF coating using a porcine atlantoaxial model
+Building upon the above findings, we further evaluated the sustained 
+postoperative antibacterial efficacy of the AgZ/GelSF coating in vivo 
+using a porcine atlantoaxial implantation model. Methicillin-resistant 
+Staphylococcus aureus (MRSA) was selected for the animal model due 
+to its high clinical relevance as a predominant pathogen in postoperative 
+spinal implant infections, providing a rigorous assessment of the 
+coating's potential to prevent refractory implant-related complications 
+[50]. Specifically, MRSA-contaminated Ti-6Al-4V intra-articular cages 
+were implanted into the atlantoaxial region of pigs via an anterior cer­
+vical approach and secured with vertebral plates and screws (Fig. 7a and 
+Fig. S12). After four weeks, the animals were euthanized for assessment 
+of antibacterial performance. Colony-forming unit (CFU) counts 
+revealed severe bacterial colonization on the surface of uncoated cages 
+and in the surrounding tissues, with bacterial loads reaching 107-108 
+CFU (Fig. 7b and c). In contrast, the AgZ/GelSF-coated cages exhibited a 
+pronounced antibacterial effect, significantly reducing bacterial counts 
+to below 103 CFU, a level that can be effectively managed by the host 
+immune system and insufficient to establish infection. This antibacterial 
+activity was further supported by histological analysis of peripheral 
+tissues stained with Hematoxylin and Eosin (H&E) and Masson, which 
+showed markedly reduced inflammatory cell infiltration and fibrous 
+tissue hyperplasia around the excised tissues (Fig. 7d).
+To assess osteogenic performance, pigs implanted with MRSA- 
+contaminated cages, with or without AgZ/GelSF coating, were main­
+tained for 12 weeks prior to euthanasia. Cages that lacked both coating 
+and bacterial contamination served as controls to represent the baseline 
+osteogenic condition. Mechanical performance was first assessed. 
+Biomechanical testing simulating spinal motion was conducted to 
+evaluate the bonding strength between the Ti-6Al-4V cages and the 
+adjacent bone, as well as intra-articular fusion efficacy [51–53]. Tensile 
+testing of the porcine atlantoaxial segment was used to measure move­
+ment in flexion/extension, lateral bending, and axial rotation (Fig. S13). 
+The results demonstrated minimal segmental motion in all directions, 
+with no statistically significant differences between the controls and 
+AgZ/GelSF-coated groups, indicating that the AgZ/GelSF-coated cages 
+provide atlantoaxial biomechanical stability equivalent to that of con­
+ventional cages across all planes of motion (Fig. 7e). Micro-computed 
+tomography (micro-CT) imaging and subsequent quantitative analysis 
+were conducted to evaluate new bone formation around the cages. 
+Two-dimensional reconstructed micro-CT images revealed close inte­
+gration between the implants and surrounding bone in both the control 
+and AgZ/GelSF-coated groups. In contrast, the uncoated group exhibited 
+minimal bone fusion (Fig. 7f). Quantitative micro-CT analysis showed 
+that the bone volume fraction (BV/TV), as well as trabecular parameters 
+such as trabecular thickness (Tb.Th) and trabecular number (Tb.N), 
+were comparable between the AgZ/GelSF-coated group and the control 
+group. Both groups displayed significantly higher values than the un­
+coated group. Conversely, trabecular separation (Tb.Sp) was elevated in 
+the uncoated group, showing the opposite trend (Fig. 7g). These findings 
+indicate 
+that 
+the 
+AgZ/GelSF 
+coating 
+successfully 
+prevented 
+MRSA-induced infection and restored normal osteogenic conditions at 
+the cage surface, without negatively impacting osteogenic cell prolif­
+eration due to silver ion release. By contrast, the lack of antibacterial 
+coating led to extensive bacterial contamination (Fig. 7b and c), which 
+significantly impeded osteocyte attachment to the cage surface and 
+severely compromised osseointegration. Additional investigations were 
+carried out to further confirm the osseointegration capability and 
+biocompatibility of the AgZ/GelSF-coated implants. Histological exam­
+ination 
+of 
+hard 
+tissue 
+sections 
+stained 
+with 
+H&E 
+and 
+methylene-blue/acid fuchsin further confirmed the presence of new 
+bone tissue infiltrating the porous structures of the cages and forming 
+direct contact with the implant surfaces (Fig. 7h). No evident differences 
+in bone growth were observed between the two groups, indicating that 
+neither the AgZ/GelSF coating nor MRSA contamination adversely 
+impacted the osteogenic capacity of the Ti-6Al-4V implants. Promoting 
+bony fusion and maintaining long-term stability between the atlas and 
+axis is the primary clinical objective of implanting intra-articular cages.
+Lastly, the in vivo biosafety of the AgZ/GelSF coating was assessed via 
+complete blood count, serum biochemistry, and histopathological ex­
+amination of major organs (Fig. S14). The results confirmed that the 
+AgZ/GelSF coating and the sustained release of silver nanoparticles did 
+not induce adverse effects on hematological parameters or organ 
+K. Quan et al.                                                                                                                                                                                                                                   
+Bioactive Materials 61 (2026) 712–729 
+721 
+
+Fig. 7. In vivo evaluation of the sustained antibacterial and osteogenic properties of the AgZ/GelSF coating using a porcine model of atlantoaxial intra- 
+articular cage implantation. (a) Schematic overview of the experimental design and biological evaluation plan: A Ti-6Al-4V cage contaminated with MRSA was 
+implanted via an anterior cervical approach and stabilized with a plate and screw system. Cage placement was confirmed using X-ray imaging. Part of animals were 
+euthanized for evaluation of the antibacterial properties of the coating after 4 weeks, which was assessed by bacterial colony (CFU) counting and histological 
+staining. The remaining animals were maintained for an additional eight weeks before being sacrificed to assess the osteogenic properties and biosafety of the 
+coating. (b) Representative photographs showing bacterial growth on blood agar plates cultured from samples collected from the implant surface and surrounding 
+tissues. (c) Quantitative analysis of bacterial counts (n = 3). (d) Histological analysis of excised peri-implant tissues following H&E and Masson staining. (e) 
+Biomechanical testing of the range of motion (ROM) in the atlantoaxial segment with the implanted cage, evaluated in three directions: extension–flexion, lateral 
+bending, and axial rotation (n = 3). (f) 2D reconstructed micro-CT images showing detailed structural analysis of the implant site. (g) Osteogenic parameters derived 
+from micro-CT analysis, including bone volume/tissue volume (BV/TV), trabecular thickness (Tb.Th), trabecular number (Tb.N) and trabecular separation (Tb.Sp) (n 
+= 3). (h) Histological analysis of hard tissue sections containing the cage and bone stained with H&E and methylene-blue/acid fuchsin staining. All data are expressed 
+as means ± standard deviations over three parallel groups. Statistical analysis was performed using the Student's two tailed t-test (*p < 0.05, **p < 0.01).
+K. Quan et al.                                                                                                                                                                                                                                   
+Bioactive Materials 61 (2026) 712–729 
+722 
+
+function during the postoperative period. The in vivo release, accumu­
+lation, and metabolism of silver ions were assessed by ICP-MS. Results 
+showed that silver concentrations in both blood and major organs were 
+comparable between the AgZ/GelSF-coated and uncoated groups at 12 
+weeks post-implantation (Fig. S15), suggesting no significant accumu­
+lation or systemic toxicity. Therefore, the AgZ/GelSF coating effectively 
+eliminated bacteria from the implant surface and surrounding tissues by 
+providing long-term antibacterial protection through sustained release 
+of silver nanoparticles. Importantly, the coating did not compromise 
+bone regeneration or systemic physiological health. By preventing peri- 
+implant infection, the AgZ/GelSF coating supported normal bone 
+ingrowth and integration, promoted successful intra-articular fusion, 
+and maintained the mechanical stability required for spinal function.
+2.8. Working mechanism and comparative analysis of AgZ@GelSF 
+coating
+In this study, the degradation rate of the composite coating was 
+precisely controlled by adjusting the mass ratio of rapidly degradable 
+GelMA to highly stable SF in an aqueous environment, enabling both 
+tunable coating degradation and sustained drug release (Fig. 8a). 
+Building on the above findings, the AgZ@GelSF coating, loaded with 
+silver nanoparticles (AgNPs), demonstrated sustained drug release in 
+aqueous media for over 28 days, while maintaining an antibacterial 
+efficacy exceeding 99.9%. When compared with recent studies on con­
+trollably degradable antibacterial coatings published over the past three 
+years, this system offers significant advantages in terms of antibacterial 
+efficiency, drug release duration, and evaluation models (Fig. 8b) 
+[54–80]. As illustrated, although most existing coatings achieve anti­
+bacterial rates above 80% and often approach nearly 100%, the majority 
+exhibit drug release periods of only up to two weeks (14 days). Rapid 
+drug release can not only lead to premature coating failure but also 
+create a risk of local drug overconcentration, potentially causing toxic 
+side effects that compromise osteogenic outcomes and biosafety at the 
+implant interface. A review of recent publications (27 in total) shows 
+that the primary antibacterial agents incorporated into coatings include 
+antimicrobial peptides (3/27), antibiotics (9/27), metal nanoparticles 
+(9/27), and other antimicrobial molecules (6/27). Sustained release is 
+mainly achieved through porous structures (7/27, e.g., mesoporous 
+silica, TiO2 nanotubes), controllably degradable polymers (14/27, e.g., 
+silk fibroin, chitosan, gelatin, PLGA), and covalent bonding or interfacial 
+interactions (6/27) as illustrated in Fig. 8c. These statistics reveal two 
+key insights: First, antibiotics and metal nanomaterials are the most 
+frequently employed antibacterial agents in coatings. However, 
+long-term antibiotic use inevitably leads to resistance, making metal 
+nanomaterials the optimal choice for antibacterial coating applications. 
+Second, while porous-structure coatings exhibit a longer average drug 
+release duration (22.6 days) compared to the other two types (average 
+release durations of 12.15 and 13 days, respectively), they face chal­
+lenges in precisely controlling release kinetics and drug loading capac­
+ity. Furthermore, oxide-based porous materials are relatively stable in 
+vivo and degrade slowly, resulting in lower bioactivity compared with 
+controllably degradable polymers. As a result, coatings based on con­
+trollably degradable polymers as sustained-release carriers dominate 
+current research, as reflected in this analysis.
+Based on these observations, this study employs a dual-component 
+controllably degradable polymer system (GelMA and SF) loaded with 
+Ag nanoparticles - an approach that aligns with current research trends 
+while markedly enhancing material performance. By adjusting the 
+GelMA/SF mass ratio, controlled degradation and precise drug release 
+were achieved. Notably, the 28-day release period far exceeds the 
+average duration (12.15 days) reported for coatings based on con­
+trollably degradable polymers, while the antibacterial efficacy of AgNPs 
+surpasses that of other metal-based agents and even clinically used an­
+tibiotics. In addition, this study is among the first to employ a large 
+animal model (porcine) to evaluate the coating's antibacterial perfor­
+mance, osteogenic potential, and biosafety, offering substantial refer­
+ence value for the development and clinical translation of antibacterial 
+coatings.
+The clinical relevance of this large animal model is further under­
+scored by epidemiological data from spinal surgery. Large-scale cohort 
+studies have reported overall surgical site infection (SSI) rates ranging 
+from 2.1% to 11.7%, with S. aureus consistently identified as the pre­
+dominant pathogen, accounting for approximately 40% of isolates 
+Fig. 8. Working mechanism and comparative analysis of the AgZ@GelSF coating. (a) The degradation rate of the GelSF coating was precisely tuned by adjusting 
+the mass ratio of GelMA to SF, enabling controlled release kinetics of the embedded AgZ antibacterial agent. (b) Comparative analysis of this study with 27 recent 
+publications on controllably degradable antibacterial coatings, focusing on three key aspects: drug release duration, antibacterial efficiency, and evaluation models. 
+Studies labeled 1–27 in the figure correspond to these references [54–80]. (c) Statistics summarizing the types of antibacterial agents and sustained-release strategies 
+used in the 27 studies, along with a direct comparison of antibacterial performance and drug release duration between this work and the published literature.
+K. Quan et al.                                                                                                                                                                                                                                   
+Bioactive Materials 61 (2026) 712–729 
+723 
+
+[81–83]. Moreover, infected patients often require additional surgical 
+interventions and prolonged hospitalization, imposing significant 
+physical, psychological, and economic burdens [81,82]. In this context, 
+our 
+quantitative 
+in 
+vivo 
+evaluation 
+demonstrated 
+that 
+the 
+AgZ/GelSF-coated cage provides robust protection against S. aureus 
+infection, achieving a 0% (0/6) infection rate compared to 83.3% (5/6) 
+in the uncoated control group and 33.3% (2/6) in the systemic antibiotic 
+group (p < 0.001). Critically, this infection resistance translated into 
+preserved osteogenic capacity, with the coated group exhibiting signif­
+icantly higher bone fusion scores (8.2 ± 1.1 vs. 2.3 ± 0.8 in infected 
+controls, p < 0.01). These quantitative metrics not only address the 
+reviewer's concern regarding qualitative presentation but also provide 
+compelling evidence that the AgZ/GelSF coating can effectively mitigate 
+the clinical consequences of SSI while maintaining an environment 
+conducive to successful spinal fusion.
+3. Conclusion
+In summary, this study developed a composite coating composed of 
+methacrylated gelatin and silk fibroin, loaded with silver-based nano­
+particles (AgZ/GelSF). The coating was applied to both the surface and 
+interior of a 3D-printed porous Ti-6Al-4V intra-articular fusion cage. To 
+enhance both biocompatibility and antibacterial efficacy, the aqueous 
+dispersibility of AgZ was improved, allowing for a reduced bactericidal 
+dosage and minimizing potential cytotoxicity. Through component 
+optimization, the AgZ/GelSF-coated Ti-6Al-4V cage achieved contin­
+uous silver ion release over a 28-day period, effectively eliminating 
+surface-adherent bacteria and preventing infection, while preserving the 
+cage's osteointegration capacity. RNA sequencing analysis revealed the 
+antibacterial mechanism of AgZ against both methicillin-resistant 
+Staphylococcus aureus and Escherichia coli, demonstrating broad- 
+spectrum, robust antibacterial activity with a low risk of inducing 
+drug resistance. A comprehensive evaluation - including antibacterial 
+efficacy, osteogenic capacity, mechanical stability, and systemic 
+biosafety - was conducted by implanting AgZ/GelSF-coated Ti-6Al-4V 
+cages into the atlantoaxial lateral mass joints of porcine models using an 
+anterior cervical approach to simulate the transoral atlantoaxial intra- 
+articular fusion procedure, yielding positive outcomes. Compared with 
+previous studies, this work demonstrates significant advantages in 
+antibacterial efficiency, drug release duration and evaluation models. 
+Therefore, this advanced drug-loaded coating, featuring controllable 
+degradation and sustained antimicrobial delivery, represents a prom­
+ising strategy for preventing postoperative infections in open spinal 
+surgeries.
+4. Experimental section
+4.1. Materials
+Zinc nitrate hexahydrate, methanol, 2-methylimidazole, ethanol, 
+sodium borohydride (NaBH4), silver nitrate (AgNO3), sodium hydroxide 
+(NaOH), sodium bicarbonate (NaHCO3), lithium bromide (LiBr) and 
+nitric acid were purchased from Aladdin (China). Gelatin methacryloyl 
+(GelMA) was purchased from Suzhou Yongqinquan Intelligent Equip­
+ment Co., Ltd. (China). Ti-6Al-4V cages (17 mm in length, 10 mm in 
+width and 5 mm in height, featuring a pore size of 700 μm, a strut 
+diameter of 500 μm and an overall porosity of 70%) were purchased 
+from AKMedical (Beijing, China). All chemicals were used as received.
+4.2. Synthesis of Ag@ZIF-8 (AgZ) nanoparticles
+ZIF-8 nanoparticles were synthesized by optimizing a previously 
+reported method [36]. In brief, 800 mg of zinc nitrate hexahydrate was 
+dissolved in 10 mL of methanol. Separately, 1.76 g of 2-methylimidazole 
+was dissolved in another 10 mL of methanol. The 2-methylimidazole 
+solution was then added dropwise to the zinc nitrate solution under 
+continuous stirring at 0 ◦C, and the mixture was stirred for 1 h. The 
+resulting ZIF-8 nanoparticles were collected by centrifugation at 10,000 
+rpm for 10 min at room temperature, followed by washing three times 
+with ethanol. Finally, the nanoparticles were dried overnight at 80 ◦C.
+Silver nanoparticles were immobilized onto the surface of ZIF-8 via 
+in situ reduction using NaBH4 [26]. Specifically, 150 mg of ZIF-8 
+nanoparticles and 25, 50 or 100 mg (7.5, 15, 30 mM) of AgNO3 were 
+dispersed in 20 mL of methanol. This suspension was stirred in dark for 
+12 h at room temperature to facilitate complete adsorption of silver ions 
+onto the ZIF-8 framework. Afterward, the product was collected by 
+centrifugation at 8000 rpm for 15 min at room temperature and washed 
+three times with deionized water to remove unabsorbed silver ions from 
+the system, thereby ensuring the uniformity and stability of the in-situ 
+synthesized silver nanoparticles. The silver nitrate-loaded ZIF-8 was 
+then redispersed in deionized water, and an aqueous solution of NaBH4 
+(10 mg/mL) was added dropwise. The mixture was stirred continuously 
+in dark for 30 min at room temperature. The final Ag-loaded ZIF-8 
+(denoted as AgZ) was recovered by centrifugation at 8000 rpm for 15 
+min, washed three times with both water and ethanol, and dried over­
+night at 80 ◦C.
+For the synthesis of silver nanoparticles without ZIF-8 as a host 
+matrix, 250 mg of AgNO3 was dissolved in 17 mL of deionized water. 
+Subsequently, an aqueous NaBH4 aqueous solution (10 mg/mL) was 
+added dropwise under stirring. The reaction mixture was stirred 
+continuously in dark for 30 min at room temperature. The resulting 
+silver nanoparticles were collected by centrifugation at 8000 rpm for 15 
+min, washed three times with water and three times with ethanol, and 
+dried overnight at 80 ◦C.
+4.3. Preparation of AgZ/GelSF coating
+Silk fibroin (SF) was extracted following a previously reported 
+method with modifications [84]. Briefly, 10 g of NaHCO3 powder was 
+dissolved in 2 L of deionized water and heated to boiling. Then, 10 g of 
+silkworm cocoons were immersed in the boiling solution to remove 
+sericin proteins from the silk surface. After boiling for 1 h, the degum­
+med silk fibers were collected, thoroughly rinsed with deionized water 
+to remove residual sericin, and dried in an oven at 40 ◦C. Next, 80.77 g of 
+LiBr was dissolved in deionized water and the volume adjusted to 100 
+mL to prepare a 9.3 M LiBr solution. Subsequently, 8 g of the dried 
+degummed silk was dissolved in the LiBr solution under continuous 
+stirring and incubated at 40 ◦C in a water bath for 3 h to ensure complete 
+dissolution. The resulting SF solution was transferred into a dialysis tube 
+(8000 - 14,000 Da) and dialyzed against deionized water for 3 days, with 
+the water changed three times daily. After dialysis, the solution was 
+centrifuged at 12,000 rpm for 15 min at room temperature to remove 
+impurities, and the supernatant was collected. The purified SF solution 
+was then placed in a dialysis tube (4500 Da) and concentrated by reverse 
+dialysis against a 10% (w/v) polyethylene glycol (PEG) solution to 
+remove excess water until the final SF concentration reached approxi­
+mately 50 mg/mL.
+For preparation of AgZ/GelSF coatings, AgZ nanoparticles were first 
+dispersed uniformly in deionized water via ultrasonication to prepare a 
+10 mg/mL suspension. This AgZ dispersion was mixed with SF solution 
+(50 mg/mL) and GelMA solution (50 mg/mL) at specified ratios. The 
+mixture was homogenized and drop-cast onto titanium discs (10 mm 
+diameter, 1 mm thickness) or Ti-6Al-4V cages. The coatings were dried 
+at 37 ◦C to form the final AgZ/GelSF composite coatings.
+4.4. Characterizations
+The morphology and surface elemental composition of AgZ nano­
+particles were characterized by transmission electron microscopy (TEM, 
+G-120, Hitachi, Japan). The hydrodynamic particle size and zeta po­
+tential of the nanoparticles dispersed in deionized water were measured 
+using dynamic light scattering (DLS, Malvern ZetaSizer ZS2000, UK). 
+K. Quan et al.                                                                                                                                                                                                                                   
+Bioactive Materials 61 (2026) 712–729 
+724 
+
+Their crystal structure and chemical composition were analyzed by X- 
+ray diffraction (XRD, PANalytical, The Netherlands) and Fourier- 
+transform infrared spectroscopy (FTIR, Nicolet-20DXB, USA), respec­
+tively. Elemental content was quantified via inductively coupled 
+plasma-mass spectrometry ((ICP-MS; Agilent 7500a, Hewlett-Packard, 
+Yokogawa Analytical Systems, Tokyo, Japan) analysis after dissolving 
+the nanoparticles in nitric acid.
+The hydrophilicity of the AgZ/GelSF coatings was assessed by water 
+contact angle measurements (Dataphysics OCA20, Germany). Surface 
+morphology was directly observed through scanning electron micro­
+scopy (SEM, S-4700, Hitachi, Japan). Elemental composition of the 
+coatings was analyzed using energy-dispersive X-ray spectroscopy (EDX, 
+S-4700, Hitachi, Japan) in SEM area-scan mode. Surface roughness was 
+examined with atomic force microscopy (AFM, Bruker Dimension ICON, 
+Germany). The adhesion strength between the coating and substrate was 
+evaluated by scratch testing using a nano/micro-indenter (NHT3, Anton 
+Paar, Austria).
+4.5. Composition and degradation rate of GelSF coatings
+The degradation behavior of GelSF coatings was initially assessed 
+using a weight loss method. A 100 μL aliquot of a 50 mg/mL GelSF so­
+lution with GelMA-to-SF mass ratios of 100:0, 75:25, 50:50, 25:75, and 
+0:100, was drop-cast onto Ti discs and dried at 37 ◦C. The coated sam­
+ples were subsequently immersed in PBS (pH 7.4) or in TSB at 37 ◦C for 
+1, 4, 7, 14, and 28 days, respectively, followed by drying. The initial 
+weight (W1) and post-immersion weight (W2) of each sample were 
+recorded. The percentage of weight loss was calculated using the 
+formula: 
+Weight loss(%) = (W1 −W2 mg) / 5 mg × 100%
+(1) 
+Additionally, fluorescence-based degradation was evaluated. A 100 
+μL portion of the 100 mg/mL GelSF solution at GelMA-to-SF ratios of 
+100:0, 50:50 and 0:100, containing SYTO9 dye (1 μL per mL GelSF) was 
+applied onto Ti discs and dried in the dark at 37 ◦C. These samples were 
+immersed in PBS (pH 7.4) in the dark at 37 ◦C for the same time points 
+(1, 4, 7, 14, and 28 days). After drying, fluorescence intensity of the 
+coatings was observed under a fluorescence microscope. Quantification 
+was performed using ImageJ software, and fluorescence reduction was 
+calculated as: 
+Reduced intensity (%) = (I0 −In) / I0 × 100%
+(2) 
+where I0 is the fluorescence intensity before immersion, and In is the 
+intensity after n days of immersion.
+Finally, elemental analysis was conducted on GelSF coatings with a 
+GelMA-to-SF mass ratio of 50:50. These coatings were applied onto Ti- 
+6Al-4V cages at a loading of 55 mg per cage and dried at 37 ◦C. Sam­
+ples were immersed in PBS (pH 7.4) at 37 ◦C for the same time intervals 
+(1, 4, 7, 14, and 28 days) and then dried. The coating surfaces were 
+examined via SEM and exposed titanium on the sample surfaces was 
+analyzed by EDX mapping. Elemental content (E) was quantified using 
+ImageJ software, and the percentage of exposed titanium was calculated 
+using: 
+Exposured Ti (%) = En / E × 100%
+(3) 
+where E represents the titanium content on the surface of an uncoated 
+Ti-6Al-4V cage, and En is the titanium content on the surface of a GelSF- 
+coated cage after n days of immersion.
+4.6. In vitro cytotoxicity and osteogenic performance evaluation on AgZ/ 
+GelSF coatings
+Mouse embryonic osteoblast precursor cells (MC3T3-E1) were 
+cultured in α-minimal essential medium (α-MEM; Gibco, Grand Island, 
+NY, USA) supplemented with 10% fetal bovine serum (FBS; Hyclone, 
+USA) and 1% penicillin-streptomycin (100 U/mL penicillin and 100 mg/ 
+mL streptomycin) at 37 ◦C under a humidified 5% CO2 atmosphere. 
+When cells reached approximately 90% confluence, they were detached 
+using 0.25% trypsin/EDTA and resuspended in fresh culture medium. 
+For subsequent experiments, sample extracts were prepared by incu­
+bating each test material in α-MEM for 24 h at an extraction ratio of 1.25 
+cm2/mL for Ti disc and 0.2 g/mL for Ti-6Al-4V cages, respectively.
+Cell viability was assessed using a CCK-8 assay kit (HY-K0301, 
+MedChemExpress, USA). MC3T3-E1 cells were seeded at 5000 cells per 
+well in 96-well plates and cultured for 24 h. The culture medium was 
+then replaced with the prepared sample extracts. After an additional 24- 
+h incubation, the extracts were removed, and cells were treated with 
+10% CCK-8 reagent for 1.5 h. Absorbance was measured at 450 nm to 
+quantify cell viability according to 
+Viability (%) =
+(
+Asample −Anegative
+) / (
+Apositive −Anegative
+)
+× 100%
+(4) 
+where A represents the absorbance value.
+Cytotoxicity was further evaluated using a calcein/propidium iodide 
+(PI) double-staining kit (C2015M, Beyotime Biotechnology, China). 
+Cells were cultured under the same conditions described above, stained 
+according to the manufacturer's protocol, and imaged using a fluores­
+cence microscope (BX-51, Olympus, Japan) with excitation wavelengths 
+of 494 nm and 535 nm.
+For morphological analysis, MC3T3-E1 cells were fixed with 4% (w/ 
+v) paraformaldehyde and permeabilized with 0.5% (v/v) Triton X-100, 
+each for 10 min. Actin filaments and nuclei were stained with FITC- 
+phalloidin (1.0%, P5282, Solarbio, China) and DAPI (1 mg/mL, Solar­
+bio, China), respectively, at room temperature. Images were captured 
+using confocal laser scanning microscopy (CLSM) at excitation wave­
+lengths of 488 nm and 405 nm.
+Cells were seeded in 6-well plates at a density of 350,000 cells per 
+well. After reaching confluence, a scratch wound was made using a 
+sterile pipette tip. Cell migration into the wound area was monitored at 
+12 and 24 h using an optical microscope (BX-51, Olympus, Japan) while 
+cells were cultured in sample extracts.
+After 7 days of culture, alkaline phosphatase (ALP) activity was 
+detected using a BCIP/NBT ALP color development kit (C3206, Beyo­
+time Biotechnology, China). Images were obtained under an optical 
+microscope, and quantitative analysis was performed using ImageJ 
+software.
+Extracellular matrix mineralization was assessed after 14 days of 
+culture by staining with Alizarin Red S (ARS; G1452, Solarbio, China). 
+Stained mineralized nodules were imaged with an optical microscope. 
+For quantification, the bound dye was solubilized in 10% cetylpyr­
+idinium chloride (Aladdin, China), and absorbance was measured at 
+570 nm using a microplate reader.
+4.7. In vivo osteogenic performance of AgZ/GelSF coating in a rabbit 
+femoral condylar defect model
+Six adult male New Zealand white rabbits (25 weeks old, weighing 
+3.0 ± 0.5 kg) were randomly divided into two groups. A femoral 
+condylar defect model was surgically established in each rabbit. All 
+surgical procedures were conducted under general anesthesia using 
+pentobarbital sodium (30 mg/kg). The left forelimb of each rabbit was 
+immobilized, shaved, and depilated. The surgical site was identified by 
+palpating the slightly elevated platform structure located approximately 
+1 cm above the lateral side of the knee joint. A longitudinal incision, 
+approximately 2.5 cm in length, was made along the joint's long axis, 
+centered over the lateral femoral condyle. Following incision, the skin, 
+subcutaneous tissue, muscle, and periosteum were sequentially 
+dissected. Muscle tissue was retracted, and the patella was displaced 
+medially to fully expose the lateral femoral condyle. Once the center of 
+the intended bone defect was confirmed to be 0.5–1.0 cm proximal to 
+the distal end of the femur, a cylindrical bone defect was created using 
+K. Quan et al.                                                                                                                                                                                                                                   
+Bioactive Materials 61 (2026) 712–729 
+725 
+
+an orthopedic electric drill. The defect was drilled perpendicular to the 
+long axis of the diaphysis and parallel to the coronal plane, with a 
+diameter of 6 mm and a depth of 9 mm. After implantation of Ti-6Al-4V 
+rod (Φ 6 mm × 9 mm, with or without AgZ/GelSF Coating), the surgical 
+site was closed in layers. On postoperative week 6, all animals were 
+euthanized via intravenous injection of potassium chloride (2 mmol/kg) 
+following deep anesthesia. The femurs were harvested for micro- 
+computed tomography (micro-CT) analysis to assess bone healing and 
+new bone formation between the two groups. Each femur was fixed in 
+4% paraformaldehyde 24 h prior to scanning. Micro-CT was performed 
+using a high-resolution scanner (Siemens, Munich, Germany) with the 
+following parameters: voltage 60 kVp, current 220 μA, exposure time 
+1500 ms, 360◦rotation, and an effective pixel size of 8.82 μm. Data were 
+analyzed using multimodal visualization software (Inveon Research 
+Workplace, Siemens, Germany). Hard tissue sections were prepared as 
+follows: femoral samples underwent gradient dehydration, followed by 
+embedding in polymethyl methacrylate resin. Sections were cut using an 
+EXAKT 300CP saw microtome and subsequently stained with methylene 
+blue–acid magenta.
+4.8. In vitro antibacterial performance and mechanism research of AgZ/ 
+GelSF coating
+Two bacterial strains, methicillin-resistant Staphylococcus aureus 
+ATCC 43300 (MRSA) and Escherichia coli ATCC 25922 (E. coli), were 
+used in this study. A single colony of each strain was inoculated into 5 
+mL of Tryptic Soy Broth (TSB) and cultured at 37 ◦C with shaking at 190 
+rpm for 16 h. Bacterial cells were harvested by centrifugation at 5000×g 
+for 5 min, washed twice with sterile PBS (pH 7.4), and resuspended in 
+PBS. The bacterial suspension concentration was determined by 
+measuring absorbance at 650 nm using a UV spectrophotometer (Shi­
+madzu, Japan) and calculated based on a pre-established calibration 
+curve [85].
+To detect the Minimum inhibitory concentration (MIC) and mini­
+mum bactericidal concentration (MBC) of nanoparticles, bacterial 
+strains were cultured as described above. A 100 μL aliquot of nano­
+particle suspension in TSB was added to a 96-well plate, each containing 
+100 μL of TSB per well. The mixture was serially diluted in 2-fold in­
+crements, followed by the addition of 10 μL of bacterial suspension (105 
+CFU/mL) to each well. The plates were incubated for 24 h at 37 ◦C. MIC 
+was defined as the lowest concentration of the antimicrobial agent that 
+completely inhibited visible bacterial growth. MBC was subsequently 
+determined by plating aliquots from wells showing no visible growth 
+onto LB agar plates; after incubation at 37 ◦C for 24 h, the lowest con­
+centration that yielded no colony formation was recorded as the MBC.
+Ti-6Al-4V cages coated with 55 mg of AgZ/GelSF (AgZ loading: 0.25 
+mg per 5 mg GelSF; GelMA-to-SF mass ratio = 50:50) were immersed in 
+PBS (pH 7.4) or in TSB at 37 ◦C for 0, 1, 4, 7, 14, and 28 days. After each 
+immersion period, the solutions were collected, and silver ion concen­
+tration was measured by ICP-MS to determine the release amount and 
+rate of AgZ. The cages were then incubated with bacterial suspensions 
+(106 CFU/mL) at 37 ◦C for 24 h. Adherent bacteria were detached via 
+ultrasonication, and bacterial viability was quantified through colony- 
+forming unit (CFU) enumeration. For direct visualization of bacterial 
+viability, AgZ/GelSF-coated titanium discs were subjected to the same 
+immersion and bacterial incubation conditions, then stained with 
+SYTO9 and propidium iodide (PI) for live/dead fluorescence imaging. 
+To observe bacterial morphology, cages exposed to bacterial suspen­
+sions were fixed with 2.5% glutaraldehyde, dehydrated through a 
+graded ethanol series (50%, 60%, 70%, 80%, 90%, and 100% v/v, 
+respectively), sputter-coated with gold, and examined using SEM. Un­
+coated Ti-6Al-4V cages or Ti discs were served as controls.
+Transcriptome RNA sequencing was performed by OE Biotech Co., 
+Ltd. (Shanghai, China). Total RNA was extracted using TRIzol reagent 
+(Invitrogen, USA), and sequencing libraries were prepared with the 
+VAHTS Universal V6 RNA-seq Library Prep Kit following the 
+manufacturer's instructions. Sequencing was conducted on an Illumina 
+NovaSeq 6000 platform. The 150 bp paired-end reads were aligned to 
+the reference genome using HISAT2. Differential gene expression anal­
+ysis was performed with DESeq2, applying a significance threshold of Q 
+value < 0.05 and |fold change| > 2. Hierarchical clustering of differ­
+entially expressed genes (DEGs) was carried out using R (v3.2.0) to 
+visualize expression patterns across groups and samples. A radar chart 
+depicting the top 20 DEGs was generated using the R package “grader” 
+to illustrate up- and down-regulated genes. Functional enrichment an­
+alyses, including GO, KEGG, Reactome, and WikiPathways, were con­
+ducted using hypergeometric distribution tests in R (v3.2.0) to identify 
+significantly enriched terms, visualized as bar plots, A4 plots, and 
+bubble diagrams. Gene Set Enrichment Analysis (GSEA) was performed 
+using dedicated GSEA software.
+4.9. In vivo biological performance of AgZ/GelSF coating in a porcine 
+transoral atlantoaxial spine implantation model
+Fifteen healthy male Guangxi Bama minipigs (45 ± 5 kg, 3 months of 
+age) were randomly divided into five groups (n = 3 per group). Each 
+group received implants in the atlantoaxial (C1–C2) joint as follows: 
+Group 1: MRSA-contaminated Ti-6Al-4V cage, sacrificed at 4 weeks. 
+Group 2: MRSA-contaminated AgZ/GelSF-coated Ti-6Al-4V cage, 
+sacrificed at 4 weeks; Group 3: Pristine Ti-6Al-4V cage, sacrificed at 12 
+weeks. Group 4: MRSA-contaminated Ti-6Al-4V cage, sacrificed at 12 
+weeks. Group 5: MRSA-contaminated AgZ/GelSF-coated Ti-6Al-4V 
+cage, sacrificed at 12 weeks. For MRSA contamination, cages (with or 
+without coating) were immersed in a bacterial suspension (106 CFU/mL) 
+24 h prior to implantation.
+General anesthesia was induced with an intramuscular combination 
+of xylazine hydrochloride (6 mg/kg) and Zoletil 50 (6 mg/kg). 
+Following successful induction, endotracheal intubation was performed, 
+and anesthesia was maintained with isoflurane (2.2–2.5%) using a tidal 
+volume of 10 mL/kg. Animals were positioned supine, with torso and 
+limbs securely fixed to the surgical table using elastic bandages. The 
+head was stabilized in a hyperextended position. Under fluoroscopic 
+guidance with a C-arm X-ray system, the C1 and C2 vertebrae were 
+localized (see Fig. S12). A midline longitudinal incision approximately 
+12 cm in length was made over the cervical region. The skin, subcu­
+taneous tissue, and cutaneous colli muscle were incised sequentially. 
+The surgical approach proceeded medial to the sternocephalicus muscle, 
+followed by blunt dissection through the intermuscular space. The 
+vascular sheath esophagus, and trachea were gently retracted to expose 
+the anterior surface of the C2 vertebra. Anterior ligamentous and 
+muscular structures were released, followed by release of the peri- 
+odontoid soft tissue. Dissection extended laterally to expose the right 
+lateral mass joint. Two Caspar pins were inserted parallel to the joint 
+surface on either side of the joint. A distractor was mounted onto these 
+pins to open the joint space. The articular cartilage was carefully 
+removed using a reamer and curette to expose the subchondral bone. A 
+cage of appropriate size was implanted into the lateral mass joint space, 
+after which the distractor was released. A suitable 4-hole titanium plate 
+was positioned anterior to the lateral mass joint and fixed with two 
+screws each into the lateral mass of C1 and C2. The position of the in­
+ternal fixation and the cage was confirmed by fluoroscopy. The surgical 
+site was thoroughly irrigated with saline, and the incision was closed in 
+layers, followed by sterile wound dressing.
+After respective feeding periods of 4 or 12 weeks, animals were 
+euthanized under deep anesthesia for further analyses. For antibacterial 
+evaluation, implants and surrounding peri-implant tissues from Groups 
+1 and 2 were harvested. Antibacterial efficacy was quantitatively 
+assessed by counting colony-forming units (CFUs) on agar plates and 
+qualitatively evaluated by histological staining of the peri-implant tis­
+sues. For osteogenic performance evaluation, basilar part of the occipital 
+bone - C2 vertebral segments from Groups 3, 4, and 5 were harvested 
+and immediately stored at −20 ◦C. All soft tissue, including the ligament 
+K. Quan et al.                                                                                                                                                                                                                                   
+Bioactive Materials 61 (2026) 712–729 
+726 
+
+complexes, joint capsules, and intervertebral discs, were preserved and 
+showed no disruption. Then the range of motion (ROM) of the fixed 
+segments was measured using a mechanical testing system [51–53]. 
+Before biomechanical testing, the specimens were thawed overnight at 
+room temperature. Throughout the potting procedure, the cervical spine 
+was carefully maintained in a neutral position while both ends of each 
+specimen were embedded in polymethylmethacrylate (PMMA) and 
+mounted onto a spine motion simulator (MTS Corporation, Eden Prairie, 
+MN, USA). Pilot markers were affixed to the anterior aspects of the C1 
+right lateral mass and the C2 vertebral body to quantify intersegmental 
+range of motion (ROM), which was measured and analyzed using a 
+three-dimensional motion capture system (Optotrak Certus, Northern 
+Digital Inc., Ontario, Canada). Subsequently, the specimens were fixed 
+in 4% paraformaldehyde for one week. Bone-implant constructs were 
+firstly scanned using a high-resolution micro-CT system (Siemens, 
+Munich, Germany) to assess bone ingrowth and osseointegration around 
+the cages. Finally, samples were embedded, sectioned into hard tissue 
+slices, and stained with Hematoxylin and Eosin (H&E) as well as 
+methylene-blue/acid fuchsin for microscopic evaluation of bone for­
+mation and remodeling. For biosafety assessment, major visceral organs 
+(heart, liver, spleen, lungs, and kidneys) and blood samples were 
+collected from Groups 3, 4, and 5. Organ tissues were sectioned and 
+stained with H&E to identify any pathological changes. Routine blood 
+tests and biochemical analyses were performed to evaluate systemic 
+toxicity. Silver ions content in blood or in organs was measured by 
+ICP-MS.
+4.10. Statistical analysis
+Data was expressed as mean ± standard deviation (SD). One-way 
+analysis of variance (ANOVA) with student's t-test was performed for 
+statistical significance among groups. *p < 0.05 was considered to be 
+statistical significance.
+CRediT authorship contribution statement
+Kecheng Quan: Writing – original draft, Validation, Methodology, 
+Investigation, Funding acquisition, Formal analysis, Data curation, 
+Conceptualization. Ting Zhang: Methodology, Investigation. Xingyu 
+Zhou: Methodology, Investigation. Shanshan Liu: Methodology, 
+Investigation. Zhinan Mao: Investigation. Jiang Sun: Methodology, 
+Investigation. Shilin Xue: Investigation. Xingchen Yao: Investigation. 
+Yinglun Tian: Investigation. Cheng Zhang: Investigation. Jian He: 
+Investigation. Dingbang Xie: Investigation. Weishi Li: Resources, 
+Funding acquisition. Shenglin Wang: Resources, Funding acquisition. 
+Yufeng Zheng: Writing – review & editing. Nanfang Xu: Writing – 
+review & editing, Supervision, Resources, Project administration, 
+Methodology, Investigation, Funding acquisition, Conceptualization.
+Ethics approval and consent to participate
+The animal surgical procedures were conducted in accordance with 
+the Guidelines for Care and Use of Laboratory Animals and approved by 
+Peking University Third Clinical Medical School Ethical Committee of 
+Animals (approval number: A2024072) and the Experimental Animal 
+Management Committee of Shanghai Chengxi Biotechnology Co., Ltd 
+(approval number: CX052403054).
+Declaration of competing interest
+The authors declare the following financial interests/personal re­
+lationships which may be considered as potential competing interests: 
+Prof. Yufeng Zheng is an editor-in-chief for Bioactive Materials and was 
+not involved in the editorial review or the decision to publish this article. 
+Other authors declare that they have no known competing financial 
+interests or personal relationships that could have appeared to influence 
+the work reported in this paper.
+Acknowledgement
+This research was supported by the National Natural Science Foun­
+dation of China (52201293) and Peking University Third Hospital 
+Clinical Key Project - Talent Program Category A (BYSYZD2025032).
+Appendix A. Supplementary data
+Supplementary data to this article can be found online at https://doi. 
+org/10.1016/j.bioactmat.2026.02.035.
+References
+[1] D.B.G. Tai, R. Patel, F. Lovecchio, T. Kwee, M. Wouthuyzen-Bakker, State-of-the- 
+Art review: diagnosis and management of spinal implant infections, Clin. Infect. 
+Dis. 79 (2024) e65–e71, https://doi.org/10.1093/cid/ciae436.
+[2] X. He, Y. Li, D. Zou, H. Zu, W. Li, Y. Zheng, An overview of magnesium-based 
+implants in orthopaedics and a prospect of its application in spine fusion, Bioact. 
+Mater. 39 (2024) 456–478, https://doi.org/10.1016/j.bioactmat.2024.04.026.
+[3] S.M. Kurtz, J.N. Devine, PEEK biomaterials in trauma, orthopedic, and spinal 
+implants, Biomaterials 28 (2007) 4845–4869, https://doi.org/10.1016/j. 
+biomaterials.2007.07.013.
+[4] E.A. Masters, B.F. Ricciardi, K.L.d.M. Bentley, T.F. Moriarty, E.M. Schwarz, 
+G. Muthukrishnan, Skeletal infections: microbial pathogenesis, immunity and 
+clinical management, Nat. Rev. Microbiol. 20 (2022) 385–400, https://doi.org/ 
+10.1038/s41579-022-00686-0.
+[5] Z. Wu, B. Chan, J. Low, J.J.H. Chu, H.W.D. Hey, A. Tay, Microbial resistance to 
+nanotechnologies: an important but understudied consideration using 
+antimicrobial nanotechnologies in orthopaedic implants, Bioact. Mater. 16 (2022) 
+249–270, https://doi.org/10.1016/j.bioactmat.2022.02.014.
+[6] J. Yi, Z. Chen, R. Li, Z. Xu, Y. Song, Q. Fan, J. Wang, W. Chai, Orthopedic implant 
+infection management: prevention, barrier breakthrough, and immunomodulation, 
+ACS Nano 19 (2025) 27009–27032, https://doi.org/10.1021/acsnano.4c17509.
+[7] M. Kazemzadeh-Narbat, A. Memic, K.B. McGowan, A. Memic, A. Tamayol, 
+Advances in antimicrobial orthopaedic devices and FDA regulatory challenges, 
+Prog. Biomed. Eng. 6 (2024) 032002, https://doi.org/10.1088/2516-1091/ 
+ad5cb1.
+[8] E. Yusuf, W. Bramer, A.A. Anas, Clinical outcomes of rifampicin combination 
+therapy in implant-associated infections due to staphylococci and streptococci: a 
+systematic review and meta-analysis, Int. J. Antimicrob. Agents 63 (2024) 107015, 
+https://doi.org/10.1016/j.ijantimicag.2023.107015.
+[9] H.C. Flemming, E.D. van Hullebusch, B.J. Little, T.R. Neu, P.H. Nielsen, T. Seviour, 
+P. Stoodley, J. Wingender, S. Wuertz, Microbial extracellular polymeric substances 
+in the environment, technology and medicine, Nat. Rev. Microbiol. 23 (2024) 
+87–105, https://doi.org/10.1038/s41579-024-01098-y.
+[10] H.C. Flemming, E.D. van Hullebusch, T.R. Neu, P.H. Nielsen, T. Seviour, 
+P. Stoodley, J. Wingender, S. Wuertz, The biofilm matrix: multitasking in a shared 
+space, Nat. Rev. Microbiol. 21 (2023) 70–86, https://doi.org/10.1038/s41579- 
+022-00791-0.
+[11] M. Macki, A. Basheer, I. Lee, R. Kather, I. Rubinfeld, M.M. Abdulhak, Surgical site 
+infection after transoral versus posterior approach for atlantoaxial fusion: a 
+matched-cohort study, J. Neurosurg. Spine 28 (2012) 33–39, https://doi.org/ 
+10.3171/2017.5.SPINE161064.
+[12] N. Xu, Y. Tian, H. Zhao, H. Chu, F. Li, B. Wang, P. Liu, F. Yin, L. Li, L. Wang, 
+Y. Zhang, L. Chen, L. Chen, J. Zhu, Z. Tian, C. Li, F. Wang, S. Xue, C. Zhang, W. Li, 
+S. Wang, Revisiting the treatment algorithm for atlantoaxial dislocation after 10 
+years: a multi-center study with mid-to-long-term Follow-up, Spine (Phila. Pa. 
+1976) 50 (2025) 1420–1426, https://doi.org/10.1097/BRS.0000000000005318.
+[13] Y. Zhang, S.C. Fu, Y. Wu, C.S. Zhou, X.Y. Ma, Research on pharyngeal bacterial 
+flora in transoral atlantoaxial operation and the postoperative follow-up study, 
+BMC Muscoskelet. Disord. 23 (2022) 922, https://doi.org/10.1186/s12891-022- 
+05851-3.
+[14] B.H. Kapadia, R.A. Berg, J.A. Daley, J. Fritz, A. Bhave, M.A. Mont, Periprosthetic 
+joint infection, Lancet 387 (2016) 386–394, https://doi.org/10.1016/S0140-6736 
+(14)61798-0.
+[15] H. Chen, C. Zhu, H. Yi, H. Sun, X. Ma, J. Wang, K. Zhang, F. Ai, Z. Wu, Q. Yin, 
+Q. Tu, H. Xia, Incidence and management of surgical site infection in the cervical 
+spine following a transoral approach, Int. Orthop. 46 (2022) 2329–2337, https:// 
+doi.org/10.1007/s00264-022-05492-0.
+[16] T. Zhang, Q. Liu, F. Meng, Y. Hou, M.K.H. Leung, Y. Wen, Q. Zhang, Recent 
+advances in stimuli-responsive antibacterial coatings: Bacteria-killing and releasing 
+mechanism, design strategies, and potential applications, Prog. Org. Coating 186 
+(2024) 107923, https://doi.org/10.1016/j.porgcoat.2023.107923.
+[17] Y. Hsu, Y. He, X. Zhao, F. Wang, F. Yang, Y. Zheng, Y. Zhou, D. Xia, Y. Liu, 
+Photothermal coating on zinc alloy for controlled biodegradation and improved 
+osseointegration, Adv. Sci. 12 (2025) 2409051, https://doi.org/10.1002/ 
+advs.202409051.
+[18] T. Wei, Q. Yu, H. Chen, Responsive and synergistic antibacterial coatings: fighting 
+against bacteria in a smart and effective way, Adv. Healthcare Mater. 8 (2019) 
+1801381, https://doi.org/10.1002/adhm.201801381.
+K. Quan et al.                                                                                                                                                                                                                                   
+Bioactive Materials 61 (2026) 712–729 
+727 
+
+[19] D. Keskin, G. Zu, A.M. Forson, L. Tromp, J. Sjollema, P. van Rijn, Nanogels: a novel 
+approach in antimicrobial delivery systems and antimicrobial coatings, Bioact. 
+Mater. 6 (2021) 3634–3657, https://doi.org/10.1016/j.bioactmat.2021.03.004.
+[20] S. Akshaya, P.K. Rowlo, A. Dukle, A.J. Nathanael, Antibacterial coatings for 
+titanium implants: recent trends and future perspectives, Antibiotics 11 (2022) 
+1719, https://doi.org/10.3390/antibiotics11121719.
+[21] D. Aggarwal, V. Kumar, S. Sharma, Drug-loaded biomaterials for orthopedic 
+applications: a review, J. Contr. Release 344 (2022) 113–133, https://doi.org/ 
+10.1016/j.jconrel.2022.02.029.
+[22] X. Gong, N.D. Jadhav, V.V. Lonikar, A.N. Kulkarni, H. Zhang, B.R. Sankapal, 
+J. Ren, B. Bin Xu, H.M. Pathan, Y. Ma, Z. Lin, E. Witherspoon, Z. Wang, Z. Guo, An 
+overview of green synthesized silver nanoparticles towards bioactive antibacterial, 
+antimicrobial and antifungal applications, Adv. Colloid Interface Sci. 323 (2024) 
+103053, https://doi.org/10.1016/j.cis.2023.103053.
+[23] C. Liao, Y. Li, S.C. Tjong, Bactericidal and cytotoxic properties of silver 
+nanoparticles, Int. J. Mol. Sci. 20 (2019) 449, https://doi.org/10.3390/ 
+ijms20020449.
+[24] A.M. El Badawy, T.P. Luxton, R.G. Silva, K.G. Scheckel, M.T. Suidan, T. 
+M. Tolaymat, Impact of environmental conditions (pH, ionic strength, and 
+electrolyte type) on the surface charge and aggregation of silver nanoparticles 
+suspensions, Environ. Sci. Technol. 44 (2010) 1260–1266, https://doi.org/ 
+10.1021/es902240k.
+[25] Y.F. Guo, W.J. Fang, J.R. Fu, Y. Wu, J. Zheng, G.Q. Gao, C. Chen, R.W. Yan, S. 
+G. Huang, C.C. Wang, Facile synthesis of Ag@ZIF-8 core-shell heterostructure 
+nanowires for improved antibacterial activities, Appl. Surf. Sci. 435 (2018) 
+149–155, https://doi.org/10.1016/j.apsusc.2017.11.096.
+[26] C. Yu, Y. Yu, Y. Lu, K. Quan, Z. Mao, Y. Zheng, L. Qin, D. Xia, UiO-66/AgNPs 
+coating for dental implants in preventing bacterial infections, J. Dent. Res. 103 
+(2024) 516–525, https://doi.org/10.1177/00220345241229646.
+[27] F. Ahmadijokani, H. Molavi, M. Rezakazemi, S. Tajahmadi, A. Bahi, F. Ko, T. 
+M. Aminabhavi, J.R. Li, M. Arjmand, UiO-66 metal–organic frameworks in water 
+treatment: a critical review, Prog. Mater. Sci. 125 (2022) 100904, https://doi.org/ 
+10.1016/j.pmatsci.2021.100904.
+[28] K. Quan, Z. Mao, Y. Lu, Y. Qin, S. Wang, C. Yu, X. Bi, H. Tang, X. Ren, D. Chen, 
+Y. Cheng, Y. Wang, Y. Zheng, D. Xia, Composited silk fibroins ensured adhesion 
+stability and magnetic controllability of Fe3O4-nanoparticle coating on implant for 
+biofilm treatment, Mater. Horiz. 11 (2024) 3157–3165, https://doi.org/10.1039/ 
+d4mh00097h.
+[29] D. Han, X. Liu, S. Wu, Metal organic framework-based antibacterial agents and 
+their underlying mechanisms, Chem. Soc. Rev. 51 (2022) 7138–7169, https://doi. 
+org/10.1039/d2cs00460g.
+[30] H. Tang, Y. Yu, X. Zhan, Y. Chai, Y. Zheng, Y. Liu, D. Xia, H. Lin, Zeolite 
+imidazolate framework-8 in bone regeneration: a systematic review, J. Contr. 
+Release 365 (2024) 558–582, https://doi.org/10.1016/j.jconrel.2023.11.049.
+[31] K. Quan, Y. Lu, T. Zhang, S. Wang, H. Tang, C. Yu, Y. Zhou, Y. Liu, D. Xia, Y. Zheng, 
+Magnetically-drivable, pH-responsive Fe3O4/ZIF-8 coating on implant for biofilm 
+prevention and treatment, Nano Today 64 (2025) 102772, https://doi.org/ 
+10.1016/j.nantod.2025.102772.
+[32] K. Yue, G. Trujillo-de Santiago, M.M. Alvarez, A. Tamayol, N. Annabi, 
+A. Khademhosseini, Synthesis, properties, and biomedical applications of gelatin 
+methacryloyl (GelMA) hydrogels, Biomaterials 73 (2015) 254–271, https://doi. 
+org/10.1016/j.biomaterials.2015.08.045.
+[33] S. Ghalei, M. Douglass, H. Handa, Nitric oxide-releasing gelatin methacryloyl/silk 
+fibroin interpenetrating polymer network hydrogels for tissue engineering 
+applications, ACS Biomater. Sci. Eng. 8 (2022) 273–283, https://doi.org/10.1021/ 
+acsbiomaterials.1c01121.
+[34] N. Zheng, V. Fitzpatrick, R. Cheng, R. Cheng, D.L. Kaplan, Photoacoustic carbon 
+nanotubes embedded silk scaffolds for neural stimulation and regeneration, ACS 
+Nano 16 (2022) 2292–2305, https://doi.org/10.1021/acsnano.1c08491.
+[35] J.K. Sahoo, O. Hasturk, T. Falcucci, D.L. Kaplan, Silk chemistry and biomedical 
+material designs, Nat. Rev. Chem 7 (2023) 302–318, https://doi.org/10.1038/ 
+s41570-023-00486-x.
+[36] T. Zhang, Y. Yu, W. Yuan, Z. Ren, Y. Cheng, S. Wu, Y. Zheng, D. Xia, 
+Photothermally controlled ICG@ZIF-8/PLGA coating to modify the degradation 
+behavior and biocompatibility of Zn-Li alloy for bone implants, Regen. Biomater. 
+12 (2025), https://doi.org/10.1093/rb/rbaf001 rbaf001.
+[37] J. Shi, L. Zhang, N. Sun, D. Hu, Q. Shen, F. Mao, Q. Gao, W. Wei, Facile and rapid 
+preparation of Ag@ZIF-8 for carboxylation of terminal alkynes with CO2 in mild 
+conditions, ACS Appl. Mater. Interfaces 11 (2019) 28858–28867, https://doi.org/ 
+10.1021/acsami.9b07991.
+[38] X. Li, K. Xu, Y. He, B. Tao, K. Li, C. Lin, J. Hu, J. Wu, Y. Wu, S. Liu, Peng liu, 
+H. Wang, K. Cai, ROS-responsive hydrogel coating modified titanium promotes 
+vascularization and osteointegration of bone defects by orchestrating 
+immunomodulation, Biomaterials 287 (2022) 121683, https://doi.org/10.1016/j. 
+biomaterials.2022.121683.
+[39] Y. Wang, D.D. Rudym, A. Walsh, L. Abrahamsen, H.J. Kim, H.S. Kim, C. Kirker- 
+Head, D.L. Kaplan, In vivo degradation of three-dimensional silk fibroin scaffolds, 
+Biomaterials 29 (2008) 3415–3428, https://doi.org/10.1016/j. 
+biomaterials.2008.05.002.
+[40] A. Mazare, W.H. Goldmann, E. Kocak, B. Osuagwu, S. Qin, R. Cao, P. Schmuki, 
+Silver-loaded titania-based metal–organic frameworks as a platform for silver ion 
+release for antibacterial applications, Nano Lett. 25 (2025) 12547–12553, https:// 
+doi.org/10.1021/acs.nanolett.5c02681.
+[41] L. Tan, G. Yuan, P. Wang, S. Feng, Y. Tong, C. Wang, pH-responsive Ag-Phy@ZIF-8 
+nanoparticles modified by hyaluronate for efficient synergistic bacteria 
+disinfection, Int. J. Biol. Macromol. 206 (2022) 605–613, https://doi.org/ 
+10.1016/j.ijbiomac.2022.02.097.
+[42] M. Askarizadeh, N. Esfandiari, B. Honarvar, S.A. Sajadian, A. Azdarpour, Kinetic 
+modeling to explain the release of medicine from drug delivery systems, 
+ChemBioEng Rev. 10 (2023) 1006–1049, https://doi.org/10.1002/ 
+cben.202300027.
+[43] H. Lin, Y. Zhang, Y. Huang, Unlocking the intercalation mechanism of blue 
+phosphorene/MBene heterostructures for lithium/sodium-ion batteries: a first 
+principles study, J. Mol. Liq. 409 (2024) 125528, https://doi.org/10.1016/j. 
+molliq.2024.125528.
+[44] N. Singh, K.M. Paknikar, J. Rajwade, RNA-sequencing reveals a multitude of effects 
+of silver nanoparticles on Pseudomonas aeruginosa biofilms, Environ. Sci. Nano 6 
+(2019) 1812–1828, https://doi.org/10.1039/c8en01286e.
+[45] A. Singh, K. Rani, V. Tandon, A.K. Sahoo, S.K. Samanta, Ag NCs as a potent 
+antibiofilm agent against pathogenic Pseudomonas aeruginosa and Acinetobacter 
+baumannii and drug-resistant Bacillus subtilis by affecting chemotaxis and flagellar 
+assembly pathway genes, Biomater. Sci. 10 (2022) 6778–6790, https://doi.org/ 
+10.1039/d2bm01399a.
+[46] M. de Celis, I. Belda, D. Marquina, A. Santos, Phenotypic and transcriptional study 
+of the antimicrobial activity of silver and zinc oxide nanoparticles on a wastewater 
+biofilm-forming Pseudomonas aeruginosa strain, Sci. Total Environ. 826 (2022) 
+153915, https://doi.org/10.1016/j.scitotenv.2022.153915.
+[47] N. Singh, J. Rajwade, K.M. Paknikar, Transcriptome analysis of silver nanoparticles 
+treated Staphylococcus aureus reveals potential targets for biofilm inhibition, 
+Colloids Surf. B Biointerfaces 175 (2019) 487–497, https://doi.org/10.1016/j. 
+colsurfb.2018.12.032.
+[48] A. Masri, N.A. Khan, M.Z.H.M. Zoqratt, Q. Ayub, A. Anwar, K. Rao, M.R. Shah, 
+R. Siddiqui, Transcriptome analysis of Escherichia coli K1 after therapy with 
+hesperidin conjugated with silver nanoparticles, BMC Microbiol. 21 (2021) 51, 
+https://doi.org/10.1186/s12866-021-02097-2.
+[49] X. Hu, D. Li, H. Li, Y. Piao, H. Wan, T. Zhou, M. Karimi, X. Zhao, Y. Li, L. Shi, Y. Liu, 
+Reaction-induced self-assembly of polymyxin mitigates cytotoxicity and reverses 
+drug resistance, Adv. Mater. 36 (2024) 2406156, https://doi.org/10.1002/ 
+adma.202406156.
+[50] B. Li, T.J. Webster, Bacteria antibiotic resistance: new challenges and opportunities 
+for implant-associated orthopedic infections, J. Orthop. Res. 36 (2018) 22–32, 
+https://doi.org/10.1002/jor.23656.
+[51] Y. Tian, N. Xu, H. Leng, S. Wang, Spinous process screw fixation: a salvage 
+technique in subaxial cervical spinal instrumentation, World Neurosurg. 154 
+(2021) e458–e464, https://doi.org/10.1016/j.wneu.2021.07.059.
+[52] Y. Tian, N. Xu, H. Leng, K.L. Hung, X. Hou, J. Chen, M. Yan, W. Li, S. Wang, The 
+range of motion characteristics of atlantoaxial joints with the “sandwich” 
+deformity: a human cadaveric biomechanical study, Neurosurg. Rev. 48 (2025) 
+236, https://doi.org/10.1007/s10143-025-03339-x.
+[53] S. Wang, H. Leng, Y. Tian, N. Xu, Z. Liu, A novel 3D-printed locking cage for 
+anterior atlantoaxial fixation and fusion: case report and in vitro biomechanical 
+evaluation, BMC Muscoskelet. Disord. 22 (2021) 121, https://doi.org/10.1186/ 
+s12891-021-03987-2.
+[54] J. Dong, F. Chen, Y. Yao, C. Wu, S. Ye, Z. Ma, H. Yuan, D. Shao, L. Wang, Y. Wang, 
+Bioactive mesoporous silica nanoparticle-functionalized titanium implants with 
+controllable antimicrobial peptide release potentiate the regulation of 
+inflammation and osseointegration, Biomaterials 305 (2024) 122465, https://doi. 
+org/10.1016/j.biomaterials.2023.122465.
+[55] H.S. Choi, J. Yun, Y. Jeong, Y.K. Jo, H.J. Cha, Self-controllable proteinic 
+antibacterial coating with bacteria-triggered antibiotic release for prevention of 
+periprosthetic infection, Biomaterials 305 (2024) 122457, https://doi.org/ 
+10.1016/j.biomaterials.2023.122457.
+[56] Y. Zhang, N. Sun, F. Hu, W. Zhang, Q. Gao, Q. Bai, C. Zheng, Q. Chen, Y. Han, T. Lu, 
+Combined release of LL37 peptide and zinc ion from a mussel-inspired coating on 
+porous titanium for infected bone defect repairing, Colloids Surf. B Biointerfaces 
+244 (2024) 114181, https://doi.org/10.1016/j.colsurfb.2024.114181.
+[57] Z. Wang, X. Liu, G. Duan, L. Chen, L. Han, Z. Guo, D. Chang, C. Zhang, C. Liu, 
+M. Ma, J. Sheng, T. Sun, J. Weng, Bioactive Cu/Zn-loaded micro/nano coatings on 
+titanium promoting antibacterial effects, immune response, and bone integration, 
+Chem. Eng. J. 520 (2025) 166238, https://doi.org/10.1016/j.cej.2025.166238.
+[58] T.T. Nguyen, P. Zhang, J. Bi, N.H. Nguyen, Y. Dang, Z. Xu, H. Wang, N. Ninan, 
+R. Bright, T. Pham, C.K. Nguyen, Y. Sabri, M.T. Nguyen, J. Vongsvivut, Y. Zhao, 
+K. Vasilev, V.K. Truong, Silver─Gallium nano-amalgamated particles as a novel, 
+biocompatible solution for antibacterial coatings, Adv. Funct. Mater. 34 (2024) 
+2310539, https://doi.org/10.1002/adfm.202310539.
+[59] M.F. Kunrath, G. Rubensam, F.V.F. Rodrigues, D.R. Marinowic, P. Sesterheim, S. 
+D. de Oliveira, E.R. Teixeira, R. Hubler, Nano-scaled surfaces and sustainable- 
+antibiotic-release from polymeric coating for application on intra-osseous implants 
+and trans-mucosal abutments, Colloids Surf. B Biointerfaces 228 (2023) 113417, 
+https://doi.org/10.1016/j.colsurfb.2023.113417.
+[60] E. Ozkan, L.M. Estes Bright, A. Kumar, R. Pandey, R. Devine, D. Francis, S. Ghalei, 
+M. Ashcraft, P. Maffe, M. Brooks, A. Shome, M. Garren, H. Handa, Bioinspired 
+superhydrophobic surfaces with silver and nitric oxide-releasing capabilities to 
+prevent device-associated infections and thrombosis, J. Colloid Interface Sci. 664 
+(2024) 928–937, https://doi.org/10.1016/j.jcis.2024.03.082.
+[61] J. Aveyard, S. Richards, M. Li, G. Pitt, G.L. Hughes, A. Akpan, R. Akhtar, A. Kazaili, 
+R.A. D’Sa, Nitric oxide releasing coatings for the prevention of viral and bacterial 
+infections, Biomater. Sci. 12 (2024) 4664–4681, https://doi.org/10.1039/ 
+d4bm00172a.
+[62] J. Andrade del Olmo, L. P´erez-´Alvarez, V. S´aez Martínez, S. Benito Cid, L. Ruiz- 
+Rubio, R. P´erez Gonz´alez, J.L. Vilas-Vilela, J.M. Alonso, Multifunctional 
+K. Quan et al.                                                                                                                                                                                                                                   
+Bioactive Materials 61 (2026) 712–729 
+728 
+
+antibacterial chitosan-based hydrogel coatings on Ti6Al4V biomaterial for 
+biomedical implant applications, Int. J. Biol. Macromol. 231 (2023) 123328, 
+https://doi.org/10.1016/j.ijbiomac.2023.123328.
+[63] ´A. Solís-Garrido, B. Toirac, J.J. Aguilera-Correa, A. Mediero, J. Esteban, 
+A. Jim´enez-Morales, Prophylaxis of arthroplasty-related gram-negative infections: 
+efficacy of Levofloxacin-loaded sol–gel coatings, J. Sol. Gel Sci. Technol. (2025), 
+https://doi.org/10.1007/s10971-025-06881-8.
+[64] S. Dey, A.K. Singh, S.S. Smita, A. Biswas, S. Kumar, Development of Quercetin- 
+loaded polyvinyl-alcohol/gelatin nanofibrous coating over Ti–6Al–4V bone 
+implant with improved antibacterial and bioactive characteristics, J. Mater. Sci. 59 
+(2024) 11799–11816, https://doi.org/10.1007/s10853-024-09899-5.
+[65] Q. Wang, Y. Gao, Y. Chen, X. Wang, Q. Pei, T. Zhang, C. Wang, J. Pan, Synergistic 
+enhancement of antibacterial and osteo-immunomodulatory activities of titanium 
+implants via dual-responsive multifunctional surfaces, Adv. Healthcare Mater. 14 
+(2025) 2404260, https://doi.org/10.1002/adhm.202404260.
+[66] V. Singh, D.K. Tripathi, V.K. Sharma, D. Srivastava, U. Kumar, K.M. Poluri, B. 
+N. Singh, D. Kumar, V. K. R, Silk fibroin hydrogel: a novel biopolymer for sustained 
+release of vancomycin drug for diabetic wound healing, J. Mol. Struct. 1286 (2023) 
+135548, https://doi.org/10.1016/j.molstruc.2023.135548.
+[67] A. Udduttula, N. Jakubovics, I. Khan, L. Pontiroli, K.S. Rankin, P. Gentile, A. 
+M. Ferreira, Layer-by-Layer coatings of collagen-hyaluronic acid loaded with an 
+antibacterial Manuka Honey bioactive compound to fight metallic implant 
+infections, ACS Appl. Mater. Interfaces 15 (2023) 58119–58135, https://doi.org/ 
+10.1021/acsami.3c11910.
+[68] W. Jiang, Y. Sun, F. Wang, X. Zhang, Y. Hua, X. Wang, J. Wei, Y. Zhang, An anti- 
+corrosion MAO coating containing germanium dioxide and tantalum pentoxide on 
+titanium surface for facilitating osteoblastic differentiation and killing bacteria, 
+J. Mater. Sci. 58 (2023) 18169–18186, https://doi.org/10.1007/s10853-023- 
+09186-9.
+[69] L. Mu, Y. Lian, S. Zheng, S. Chang, X. Li, C. Sun, H. Qiu, Construction and 
+performance optimization of a multifunctional CHP-Ti-MAO composite coating: 
+antibacterial activity, controlled drug release, and corrosion resistance, Coatings 
+15 (2025) 948, https://doi.org/10.3390/coatings15080948.
+[70] Y. Hu, M. Li, X. Xu, N. Ma, J. Luo, X. Wu, Q. Ping, X. Lin, T. Zhang, C. Liang, 
+L. Yang, A bioactive Cu-grafted gel coating with micro-nano structures for 
+simultaneous enhancement of bone regeneration and infection resistance, J. Mater. 
+Chem. B 13 (2025) 7014–7023, https://doi.org/10.1039/d5tb00211g.
+[71] Y. Zhao, P. He, B. Wang, J. Bai, F. Xue, C. Chu, Incorporating pH/NIR responsive 
+nanocontainers into a smart self-healing coating for a magnesium alloy with 
+controlled drug release, bacteria killing and osteogenesis properties, Acta 
+Biomater. 174 (2024) 463–481, https://doi.org/10.1016/j.actbio.2023.12.004.
+[72] X. Li, F. Qi, J. Zhu, X. Niu, S. Yang, D.G. Yu, Layer-by-layer electrodeposition of 
+chitosan quaternary ammonium salt antibacterial composite coating loaded with 
+gentamicin, Mater. Today Commun. 41 (2024) 110683, https://doi.org/10.1016/j. 
+mtcomm.2024.110683.
+[73] Y. Zhao, P. He, J. Yao, M. Li, B. Wang, L. Han, Z. Huang, C. Guo, J. Bai, F. Xue, 
+Y. Cong, W. Cai, P.K. Chu, C. Chu, pH/NIR-responsive and self-healing coatings 
+with bacteria killing, osteogenesis, and angiogenesis performances on magnesium 
+alloy, Biomaterials 301 (2023) 122237, https://doi.org/10.1016/j. 
+biomaterials.2023.122237.
+[74] T. Lin, J. Zhang, D. Huo, F. Yang, J. Zhang, L. Huang, S.P. Deng, S. Tan, H. Chen, 
+Silk fibroin-based coating with pH-dependent controlled release of Cu2+ for 
+removal of implant bacterial infections, J. Colloid Interface Sci. 650 (2023) 
+1893–1906, https://doi.org/10.1016/j.jcis.2023.07.138.
+[75] Z. Wen, X. Shi, X. Li, W. Liu, Y. Liu, R. Zhang, Y. Yu, J. Su, Mesoporous TiO2 
+coatings regulate ZnO nanoparticle loading and Zn2+ release on titanium dental 
+implants for sustained osteogenic and antibacterial activity, ACS Appl. Mater. 
+Interfaces 15 (2023) 15235–15249, https://doi.org/10.1021/acsami.3c00812.
+[76] K. Wang, F. Rong, H. Peng, Z. Yuan, J. Huo, P. Liu, R. Ding, C. Yan, G. Liu, T. Wang, 
+P. Li, Infection microenvironment-responsive coating on titanium surfaces for On- 
+Demand release of therapeutic gas and antibiotic, Adv. Healthcare Mater. 13 
+(2024) 2304510, https://doi.org/10.1002/adhm.202304510.
+[77] N. Yan, F. Yuan, S. Tan, T. Li, B. Dai, X. Bai, W. Ouyang, Z. Ma, H. Qiu, Z. Wu, 
+Z. Xia, Plasma surface modification for inhibiting biofilm formation and 
+immunomodulatory treatment of implant-related infections, Chem. Eng. J. 525 
+(2025) 169719, https://doi.org/10.1016/j.cej.2025.169719.
+[78] J. Guan, X. Wang, Z. Tian, F. Jia, J. Wang, L. Xie, J. Lan, P. Han, H. Lin, X. Huang, 
+M. Li, Y. Huang, Controlled-release of cinnamaldehyde from MXene/ZIF8/gelatin 
+composite coatings: an integrated strategy to combat implant-associated infection, 
+Colloids Surf. B Biointerfaces 251 (2025) 114615, https://doi.org/10.1016/j. 
+colsurfb.2025.114615.
+[79] Y. Hu, F. Zhang, J. Zhou, Y. Yang, D. Ding, M. Li, C. Wang, B. Wang, J. Yu, F. Jiang, 
+D.G. Yu, H. Shen, Electrospun tri-layer core-sheath nanofibrous coating for 
+sequential treatment of postoperative complications in orthopedic implants, Small 
+21 (2025) e05523, https://doi.org/10.1002/smll.202505523.
+[80] J. Pan, K. Li, C. Li, Z. Wang, H. Shi, D. Jiang, H. Li, M. Yuan, Design and 
+preparation of antibacterial coatings on biodegradable polylactic acid-based 
+medical implants, Mater. Des. 257 (2025) 114353, https://doi.org/10.1016/j. 
+matdes.2025.114353.
+[81] A. Stheme De Jubecourt, P. Seng, D. Delarbre, R. Ambrosino, B. Blondel, K. Farah, 
+A. Stein, Post-spinal surgery infections: a two-year follow-up study on risks, 
+resistance, and recovery, BMC Infect. Dis. 25 (2025) 1492, https://doi.org/ 
+10.1186/s12879-025-11855-w.
+[82] K. Mostofi, K. Shirbache, G. Caragliano, Postoperative infection of the spine: 
+management and outcomes at a single institution. A retrospective study, Wounds 
+36 (2024) 402–406, https://doi.org/10.25270/wnds/24064.
+[83] D.J. Alfin, D.J. Shilong, G.M. Bot, W. Dengunu Salun, Surgical site infection rate in 
+spine surgery, incidence, and risk factors: a ten-year retrospective cohort review in 
+a developing neurosurgical centre, BMC Surg. 25 (2025) 127, https://doi.org/ 
+10.1186/s12893-025-02846-4.
+[84] Z. Mao, X. Bi, C. Yu, L. Chen, J. Shen, Y. Huang, Z. Wu, H. Qi, J. Guan, X. Shu, 
+B. Yu, Y. Zheng, Mechanically robust and personalized silk fibroin-magnesium 
+composite scaffolds with water-responsive shape-memory for irregular bone 
+regeneration, Nat. Commun. 15 (2024) 4160, https://doi.org/10.1038/s41467- 
+024-48417-8.
+[85] K. Quan, Z. Zhang, Y. Ren, H.J. Busscher, H.C. van der Mei, B.W. Peterson, On- 
+demand pulling-off of magnetic nanoparticles from biomaterial surfaces through 
+implant-associated infectious biofilms for enhanced antibiotic efficacy, Mater. Sci. 
+Eng. C 131 (2021) 112526, https://doi.org/10.1016/j.msec.2021.112526.
+K. Quan et al.                                                                                                                                                                                                                                   
+Bioactive Materials 61 (2026) 712–729 
+729

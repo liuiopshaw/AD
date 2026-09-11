@@ -1,0 +1,1008 @@
+Ligand engineering of Au44 nanoclusters for NIR-II
+luminescent and photoacoustic imaging-guided
+cancer photothermal therapy†
+Ge Yang,a Xueluer Mu,b Xinxin Pan,a Ying Tang,b Qiaofeng Yao,c Yaru Wang,a
+Fuyi Jiang,d Fanglin Du,a Jianping Xie,
+*ce Xianfeng Zhou
+*b and Xun Yuan
+*a
+Developing a high-performance noninvasive probe for precise cancer theranostics is very challenging but
+urgently required. Herein, a novel Au nanoclusters (NCs)-based probe was designed for cancer theranostics
+via ligand engineering by conjugating photoluminescent (PL) Au44 NCs in the second near-infrared window
+(NIR-II, 1000–1700 nm) with aromatic photoacoustic (PA)/photothermal molecules through click
+chemistry. This design bypasses the incompatibility dilemma between photoluminescence (PL) attributes
+and PA/photothermal properties because the rigidity of the PA/photothermal molecules can lead to
+aggregation-induced emission (AIE) of the Au(I)-ligand shell of the Au NCs by constraining their
+nonradiative relaxation. Beneﬁting from strong NIR-II PL with emissions at 1080 and 1240 nm, high
+photothermal
+conversion
+eﬃciency
+(65.12%),
+low
+cytotoxicity,
+appropriate
+renal
+clearance,
+and
+enhanced permeability and retention (EPR) eﬀect, the as-designed Au NC-based theranostic probe
+achieves ultradeep NIR-II PL/PA imaging-guided cancer photothermal therapy (PTT). Remarkably, 16
+days after photothermal treatment guided by NIR-II PL/PA imaging, mice were all healed without tumor
+recurrence, while the average life span of the mice in the control groups was only 17–21 days. This study
+is interesting because it provides a paradigm for designing a metal NC-based theranostics probe, and it
+may add fundamentally and methodologically to noninvasive imaging-guided disease therapy.
+Introduction
+Noninvasive yet precise theranostics for cancer (NPTC) is
+desired for both cancer patients and therapists because of its
+avoidance of physical trauma, low cost, and real-time feedback-
+mediated higher therapeutic eﬃcacy.1 However, developing
+a high-performance NPTC probe is a great challenge due to the
+following aspects: (1) neither noninvasive disease diagnosis
+with deep tissue penetration and high spatiotemporal resolu-
+tion nor tumor therapy with high tumor selectivity and few side
+eﬀects are easy tasks;2 (2) simply integrating the diagnostic
+entity and a therapeutic counterpart into one probe usually
+results in incompatibility of the constructed NPTC probe, such
+as
+the
+mutual
+energy
+competition
+between
+the
+photo-
+luminescence (PL) imaging and the photothermal therapy (PTT)
+based on the Jablonski energy spectrum theory;3 (3) the thera-
+nostic probe should also be renal clearable (i.e., a hydrodynamic
+size of #5.5 nm is the kidney ltration threshold) with benign
+biocompatibility.4 Overall, tackling any one of such issues
+presents a challenge, let alone simultaneously solving all these
+issues in designing NPTC probes, which further reects the
+diﬃculties and signicance in the construction of high-
+performance NPTC probes.
+Recently, ultrasmall Au nanoclusters (NCs) with a core size
+of #3 nm have emerged as a novel class of functional nano-
+materials in the biomedical eld due to their atomic-precision
+size,5 rich yet tailorable surface chemistry,6 and unique
+molecule-like properties, such as strong PL signal,7 chirality,8
+and highest occupied molecular orbital-lowest unoccupied
+molecular
+orbital
+(HOMO–LUMO)
+transitions.9
+Such
+intriguing physicochemical properties allow Au NCs to be
+biocompatible,10 surface engineerable,6b,11 and renal clearable
+(i.e., hydrodynamic size of #5.5 nm),4a,12 making their
+aSchool of Materials Science and Engineering, Qingdao University of Science and
+Technology, Qingdao, 266042, PR China. E-mail: yuanxun@qust.edu.cn
+bKey Lab of Biobased Polymer Materials of Shandong Provincial Education
+Department, School of Polymer Science and Engineering, Qingdao University of
+Science and Technology, Qingdao, 266042, PR China. E-mail: xianfeng@qust.edu.cn
+cJoint School of National University of Singapore and Tianjin University, International
+Campus of Tianjin University, Binhai New City, Fuzhou, 350207, PR China. E-mail:
+chexiej@nus.edu.sg
+dSchool of Environment and Material Engineering, Yantai University, Yantai, 264005,
+PR China
+eDepartment of Chemical and Biomolecular Engineering, National University of
+Singapore, 4 Engineering Drive 4, Singapore, 117585, Singapore
+† Electronic supplementary information (ESI) available: The native PAGE and ESI
+mass of Au44MBA26 NCs; synthetic route and characteristics of the alkynylated Cy7
+molecules; FTIR spectra and UV-vis absorption spectra of Au44 NCs; NIR-II PL
+emission spectra of Au44MBA26-Cy7 NCs in mixed solvents; PTT of Au44MBA26
+NCs in vitro; PA images of Au44MBA26 NCs; supplementary notes. See DOI:
+https://doi.org/10.1039/d2sc05729h
+Cite this: Chem. Sci., 2023, 14, 4308
+All publication charges for this article
+have been paid for by the Royal Society
+of Chemistry
+Received 15th October 2022
+Accepted 14th February 2023
+DOI: 10.1039/d2sc05729h
+rsc.li/chemical-science
+4308 | Chem. Sci., 2023, 14, 4308–4318
+© 2023 The Author(s). Published by the Royal Society of Chemistry
+Chemical
+Science
+EDGE ARTICLE
+Open Access Article. Published on 08 March 2023. Downloaded on 6/24/2026 3:00:25 AM. 
+This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+View Article Online
+View Journal | View Issue
+
+application possible for disease diagnosis or therapy.13 For
+example, several recently developed types of Au NCs with PL
+emission in the second near-infrared window (NIR-II, 1000–
+1700 nm) have shown overwhelming advantages in bioimaging
+in terms of deep tissue penetration (>1 cm) and high spatio-
+temporal
+resolution
+(approximately
+10
+mm,
+and
+4
+ms)
+compared with NIR-I emitting NC-based probes (650–900 nm),
+which have a limited in vivo signal-to-noise ratio.14 We thus
+hypothesize that if we can design atomically precise NIR-II
+emitting Au NCs as a molecular matrix for delicate engi-
+neering, we may develop a high-performance NPTC probe to
+achieve NIR-II PL imaging-guided tumor therapy. For proof-of-
+concept purposes, here a noninvasive PTT modality was
+chosen as the therapy function of the NPTC probe because it is
+advantageous in cancer treatment with high tumor selectivity
+and few side eﬀects.2c,15 More importantly, the photothermal
+attributes may endow the NPTC probes with an additional PA
+signal for improving diagnostic eﬃcacy due to the thermo-
+elastic expansion-induced PA emission of the treated tis-
+sues.2a,16 In addition, the NIR-II PL properties of the NPTC
+probes may in turn remedy the limitations of the poor light
+absorption of conventional PTT probes in deep tissues,
+expectedly achieving dual-mode NIR-II PL/PA imaging-guided
+cancer PTT. However, it is still a major challenge to design
+NIR-II emitting Au NCs with atomic precision. Moreover,
+several other issues may also arise, e.g., how to engineer NIR-II
+emitting Au NCs to concurrently achieve NIR-II PL/PA imaging
+with excellent PTT, can the NIR-II PL imaging proceed
+synchronously with PA imaging, how the NIR-II PL imaging
+aﬀects the PTT in vivo, and what are the theranostic eﬃcacy
+and pharmacokinetic behavior of the Au NC-based probe for
+NPTC like aer engineering.
+In this work, we report the design of a novel Au NC-based
+theranostic probe – Au44MBA26-Cy7 (here MBA denotes 4-mer-
+captobenzoic acid; Cy7 denotes heptamethine dye) for ultra-
+deep NIR-II PL and PA imaging-guided cancer PTT. The
+Au44MBA26-Cy7 probe comprises NIR-II emitting Au44MBA26
+NCs linked with aromatic Cy7 molecules through click chem-
+istry (Scheme 1), which not only enhances the NIR-II PL signal
+of the Au44 NCs by closing the nonradiative pathway of the inner
+Au NCs based on AIE,17 but also improves the photothermal
+conversion eﬃciency of the outer Cy7 shell. Such intriguing
+NIR-II
+PL/photothermal
+attributes,
+together
+with
+benign
+biocompatibility, good pharmacokinetics, eﬃcient renal clear-
+ance, and enhanced permeability and retention (EPR) eﬀect,
+make this probe capable of NIR-II PL and PA imaging-guided
+cancer therapy with high sensitivity and specicity without
+damaging major organs. To the best of our knowledge, this may
+be the rst successful Au NC probe for NPTC involving simul-
+taneous NIR-II PL/PA imaging-based diagnosis and PTT-based
+therapy, which would become a promising next-generation
+noninvasive theranostics technique for cancer.
+Scheme 1
+Schematic illustration of the synthesis of Au44MBA26-Cy7 NCs based on the click chemistry-mediated conjugation of Au44MBA26 NCs
+with Cy7 molecules, and the application of NIR-II PL and PA imaging-guided cancer PTT.
+© 2023 The Author(s). Published by the Royal Society of Chemistry
+Chem. Sci., 2023, 14, 4308–4318 | 4309
+Edge Article
+Chemical Science
+Open Access Article. Published on 08 March 2023. Downloaded on 6/24/2026 3:00:25 AM. 
+This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+View Article Online
+
+Results and discussion
+The synthesis of NIR-II emitting metal NCs with atomic preci-
+sion is a long-standing challenge in the cluster community due
+to the poor understanding of the correlation between their
+precise size/structure and PL mechanism. In this study, NIR-II
+emitting Au44MBA26 NCs were synthesized via an NaOH-
+mediated NaBH4 reduction method.6b,18 As shown in Fig. 1a,
+three step-like optical peaks at 497 nm, 590 nm and 794 nm are
+observed in the UV-vis absorption spectrum of the Au NCs,
+indicating the successful synthesis of monodisperse Au NCs.19
+While the single band in the native polyacrylamide gel electro-
+phoresis (PAGE) results clearly reveals the high monodispersity
+of the Au NCs (Fig. S1 in the ESI†), the electrospray ionization
+mass spectrometry (ESI-MS) results disclose the synthesis of
+high-quality Au44MBA26 NCs, in which two peaks at m/z =
+∼3162 and ∼4216 can be ambiguously assigned as [Au44MBA26–
+2H]4−and [Au44MBA26–H]3−species, respectively (Fig. 1b). In
+addition, the hydrodynamic diameter of the Au44 NCs was
+conrmed to be 2.73 nm (Fig. 1c), while their core sizes were all
+below 2 nm with an average size of 1.58 nm (Fig. 1d). More
+interestingly, the Au44 NCs display two PL emission peaks at
+1080 nm and 1280 nm when excited at 808 nm (Fig. 1f), mani-
+festing that the Au44 NCs are a promising PL probe for NIR-II PL
+imaging. Taking all the characterization results together, the
+Au44 NCs exhibit molecular optical absorption, atom-precision
+formula, good hydrophilicity, ultrasmall hydrodynamic size
+(<3 nm), and strong NIR-II PL intensity, making them an ideal
+probe for biomedical applications.
+Upon acquiring Au44MBA26 NCs, we introduced azide groups
+on
+the
+surface
+of
+the
+Au44
+NCs
+via
+a
+simple
+1-(3-
+dimethylaminopropyl)-3-ethylcarbodiimide
+hydrochloride
+(EDC)/N-hydroxysuccinimide (NHS) crosslinking strategy, and
+then conjugated the Au44 NCs with aromatic PA/photothermal
+alkynylated Cy7 molecules via click chemistry to obtain multi-
+functional
+Au44MBA26-Cy7
+(Scheme
+1,
+Fig.
+S2–S6
+and
+Fig. 1
+(a) UV-vis absorption spectra of pristine Au44MBA26 NCs and Au44MBA26-Cy7 NCs. (b) ESI-MS of Au44MBA26 NCs. The inset shows
+experimentally acquired (black curve) and simulated (red curve) isotope patterns of the NCs. (c) Dynamic light scattering (DLS) proﬁles, (d) and (e)
+TEM images with inserted size distribution histograms, and (f) NIR-II photoemission spectra (lexcitation = 808 nm) of pristine Au44MBA26 NCs and
+Au44MBA26-Cy7 NCs. The inset in (f) shows the photographs of pristine Au44MBA26 (upper panel) and Au44MBA26-Cy7 solutions (lower panel)
+under visible (left) and NIR light (right) illumination. (g) NIR-II imaging contrast and corresponding NIR-II images (inset; taken under 808 nm laser
+illumination; upper panel: Au44MBA26; lower panel: Au44MBA26-Cy7) of pristine Au44MBA26 NCs and Au44MBA26-Cy7 NCs at concentrations of 0,
+30, 60 and 100 mM. (h) NIR-II PL decay proﬁle and the corresponding ﬁt of pristine Au44MBA26 NCs. (i) Cyclic voltammogram of pristine
+Au44MBA26 NCs (reference potentials, HER: potential of hydrogen evolution reaction at pH = 0).
+4310 | Chem. Sci., 2023, 14, 4308–4318
+© 2023 The Author(s). Published by the Royal Society of Chemistry
+Chemical Science
+Edge Article
+Open Access Article. Published on 08 March 2023. Downloaded on 6/24/2026 3:00:25 AM. 
+This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+View Article Online
+
+Supplementary Note I in the ESI†). Aer conjugation, the as
+obtained Au44MBA26-Cy7 sample displays broad yet intensive
+optical absorption in the range of 600–1000 nm in its UV-vis
+absorption spectrum (Fig. 1a), which is dramatically diﬀerent
+from that of pristine Au44MBA26 NCs and was attributed to the
+contribution of the Cy7 molecules (Fig. S7a†). Furthermore,
+while the Cy7 modication did not change the core size of the
+Au44MBA26 NCs (Fig. 1d and e), a slight increase in the hydro-
+dynamic diameter from 2.73 nm to 3.45 nm of the modied
+Au44MBA26 NCs was observed (Fig. 1c), which ensures the good
+renal clearance of Au44MBA26-Cy7 NCs because their hydrody-
+namic diameter is still below the kidney ltration threshold
+(∼5.5 nm).4a In addition, it was conrmed that around 13 Cy7
+molecules were conjugated on each Au44MBA26 NC (Fig. S8 and
+Supplementary Note II in the ESI†), indicating the good struc-
+tural symmetry of Au44MBA26-Cy7.
+The NIR-II PL emission peaks of the Au44MBA26 NCs at
+1080 nm and 1280 nm were retained aer Cy7 modication,
+accompanied by partial enhancement in the emission intensity
+(Fig. 1f). Indeed, surface engineering has been proven to be an
+eﬃcient strategy by which to enhance the PL of metal NCs. For
+example, Pyo et al. reported that the PL of Au22GSH18 NCs (here
+GSH denotes glutathione) was enhanced by more than ve
+times in water upon surface engineering via conjugating benzyl
+chloroformate (CBz-Cl) and pyrene (Py), attributed to the ligand
+shell rigidication eﬀect as well as the promoted energy transfer
+from the ligands to the metal core.20 Inspired by this, we spec-
+ulated that the enhanced NIR-II PL of Au44MBA26-Cy7 could be
+due to the stronger absorption in the range of 600–1000 nm, the
+promoted charge transfer of the Cy7 molecules, and the
+resulting aggregation-induced emission (AIE) eﬀect. Speci-
+cally, upon conjugating the Au44MBA26 NCs with rigid Cy7
+molecules, the high p-electronic delocalization of the 2-(3-
+cyano-4,5,5-trimethylfuran-2(5H)-ylidene) malononitrile (TCF)
+group in the Cy7 molecules enhanced the charge transfer from
+the ligands to the metal core of the NCs.15a Moreover, the as-
+obtained Au44MBA26-Cy7 NCs showed remarkable AIE eﬀect
+(Fig. S9†), i.e., the Au44MBA26-Cy7 NCs displayed weak PL
+emission in N,N-dimethylformamide (DMF) with good solu-
+bility, but a more intense PL signal in mixed DMF/H2O with
+relatively poor solubility, which is due to the rigidity of the Cy7
+shell endowing the Au44MBA26-Cy7 NCs with AIE properties by
+closing the nonradiative pathways of the inner NCs.21 It should
+be emphasized that the acquisition of AIE properties by
+conjugating the Au44MBA26 NCs with rigid Cy7 molecules is the
+key to the design, which not only enhances the NIR-II PL
+intensity via AIE, but also ensures the maintenance of excellent
+PA/photothermal signals of the outer Cy7 shell (discussed later),
+bypassing the dilemma of the incompatibility between the PA/
+photothermal properties and PL attributes. Meanwhile, as
+shown in Fig. 1g, both Au44MBA26 and Au44MBA26-Cy7 show
+concentration-dependent NIR-II PL imaging contrast, allowing
+their usage in NIR-II PL imaging at an extremely low concen-
+tration (e.g., 30 mM).
+Considering that the NIR-II PL signal of the Au44MBA26-Cy7
+NCs originates from the Au44MBA26 NCs instead of the Cy7
+molecules that exhibit emission at 931 nm (Fig. S7b†), we may
+uncover the NIR-II PL mechanism of the Au44MBA26-Cy7 NCs by
+investigating Au44MBA26. On this basis, both the NIR-II PL
+lifetime and the highest unoccupied molecular orbital-lowest
+unoccupied molecular orbital (HOMO–LUMO) transition of
+the Au44MBA26 NCs were analyzed. As shown in Fig. 1h, the NIR-
+II PL decay prole of the Au44MBA26 NCs reveals that the NCs
+are composed of microsecond lifetime components (1.44 ms:
+57.17%; 14.48 ms: 42.83%). The long PL lifetime and a large
+Stokes shi(>200 nm) indicate that the NIR-II PL emission of
+the Au44MBA26 NCs most probably results from ligand-to-metal
+charge transfer or ligand-to-metal-metal charge transfer and
+subsequent radiative relaxation. In addition, we conducted
+cyclic voltammetry (CV) tests to assess the HOMO–LUMO gaps
+of the Au44MBA26 NCs that may correlate to their PL properties22
+(Fig. 1i). The results show a reduction potential of 0.29 V and
+two oxidation potentials at 0.68 V and 0.85 V (vs. the reversible
+hydrogen electrode, RHE). Of note, such reduction and oxida-
+tion peaks have been used to determine the positions of the
+LUMO and HOMO.22 On this basis, two energy transition gaps
+of the Au44MBA26 NCs were identied to be 0.97 eV (i.e., the rst
+transition) and 1.14 eV (i.e., the second transition), which are
+consistent with the NIR-II PL emissions at 1080 nm and
+1280 nm shown in Fig. 1f. However, it is still diﬃcult to estab-
+lish the precise correlation between the NIR-II PL properties
+and the structure of the Au44MBA26 NCs, although the
+Au44MBA26 NCs may share the same crystal structure as the
+reported Au44(2,4-dimethylbenzenethiol)26 NCs.23 Such correla-
+tion may be established with additional eﬀorts on theoretical
+simulations.
+The Au44MBA26-Cy7 NCs exhibit excellent photothermal
+properties. As shown in Fig. 2a, the temperature of the aqueous
+Au44MBA26-Cy7 solution (10 mM) elevates dramatically from 30 °
+C to 70 °C within 10 min of 808 nm laser irradiation, out-
+performing the photothermal eﬃcacy of pristine Au44MBA26
+NCs, which only cause a temperature increase of up to 43 °C
+under the same conditions (Fig. S10†). It should be emphasized
+that such an excellent photothermal trait of the Au44MBA26-Cy7
+NCs guarantees their high-eﬃciency killing of tumor cells, and
+could overcome the challenges caused by the high expression of
+heat shock proteins (HSPs).24 HSPs are a class of heat-stress
+proteins that are widespread, from bacteria to mammals, and
+could modulate the tumor cell response to heat-induced cyto-
+toxicity.24
+In
+addition,
+the
+temperature
+response
+of
+the
+Au44MBA26-Cy7 NCs under NIR laser irradiation exhibits good
+correlation with their concentration (Fig. 2a) and laser power
+(Fig. 2b). In order to study the photothermal stability of the
+Au44MBA26-Cy7 NCs, we carried out repeated radiation-cooling
+experiments. As shown in Fig. 2c, while both the Au44MBA26-
+Cy7 NCs and pristine Au44MBA26 NCs show good photothermal
+stability in these ve radiation-cooling cycles, the photothermal
+activity of the Au44MBA26-Cy7 NCs is much higher than that of
+pristine Au44MBA26 NCs with the same concentration. In terms
+of the photothermal conversion eﬃciency,15a,25 the Au44MBA26-
+Cy7 NCs (65.12%) also perform better than pristine Au44MBA26
+NCs (34.96%) based on the heat transfer time constant and
+maximum steady-state temperature results (Fig. 2d), which
+reveal the major role of Cy7 conjugation in enhancing the
+© 2023 The Author(s). Published by the Royal Society of Chemistry
+Chem. Sci., 2023, 14, 4308–4318 | 4311
+Edge Article
+Chemical Science
+Open Access Article. Published on 08 March 2023. Downloaded on 6/24/2026 3:00:25 AM. 
+This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+View Article Online
+
+photothermal conversion eﬃciency of the Au44MBA26-Cy7 NCs.
+Of note, the conjugation of rigid Cy7 with the Au44MBA26 NCs
+not only endows the Au44MBA26-Cy7 NCs with AIE properties to
+avoid the possible energy competition between the PL attributes
+and PA/photothermal signals, but also creates a highly localized
+concentration of Cy7 molecules that is more favorable for high
+photothermal eﬃciency than that of unconjugated analogues,
+providing a paradigm in the design of a multifunctional probe
+for NPTC.
+Naturally, we assessed the in vitro PTT eﬀect as well as
+cytotoxicity of the Au44MBA26-Cy7 NCs by conducting both live/
+dead staining and 3-[4,5-dimethylthiazole-2-yl]-2,5-diphenyl
+tetrazolium
+bromide
+(MTT)
+assays using
+HeLa
+cells
+as
+a model. As shown in Fig. 2e, the live/dead staining results
+show that the HeLa cells treated with the Au44MBA26-Cy7 NCs
+but without exposure to laser irradiation are almost all alive
+(green color), which suggests that the Au44MBA26-Cy7 NCs
+exhibit very low cytotoxicity. By contrast, upon laser irradiation
+for 6 min, the HeLa cells treated with the Au44MBA26-Cy7 NCs
+were all dead (red color, Fig. 2e), which is very diﬀerent from
+those treated with the pristine Au44MBA26 NCs, where only
+a small number of dead HeLa cells stained in red were
+observed
+(Fig.
+S11a†).
+These
+results
+indicate
+that
+the
+Au44MBA26-Cy7 NCs have excellent in vitro PTT eﬀect. In
+addition, MTT assay provides quantitative data on the PTT
+eﬀect. As shown in Fig. 2f, the Au44MBA26-Cy7 NCs display
+neglectable cytotoxicity, which is evidenced by the fact that no
+apparent reduction in the HeLa cell viability is observed even
+upon increasing their concentration to 5 mM without laser
+irradiation. In comparison, obvious necrosis of HeLa cells with
+55.2% viability could be detected for the sample treated with as
+low as 0.3 mM Au44MBA26-Cy7 NCs under 808 nm laser irradi-
+ation, and <10% HeLa cells survived when treated with $2.5
+mM of the Au44MBA26-Cy7 NCs under the same conditions,
+while the pristine Au44MBA26 NCs began to show PTT activity
+for cell killing when their concentration was higher than 10 mM
+(Fig. S11b†). Taken together, both live/dead staining and MTT
+assays clearly demonstrate that the Au44MBA26-Cy7 NCs not
+only exhibit good biocompatibility, but also show excellent in
+vitro PTT eﬀect. Besides this, we also performed confocal PL
+microscopy to uncover the uptake behavior of the HeLa cells
+for the Au44MBA26-Cy7 NCs. As shown in Fig. 2g, the HeLa cells
+show red PL in the cytoplasm aer incubation with the
+Au44MBA26-Cy7 NCs. To determine the subcellular distribu-
+tion, the lysosome-specic staining probe LysoTracker Green
+and mitochondria-specic staining probe MitoTracker Green
+were used for co-staining the Au44MBA26-Cy7 NCs. The green
+PL of LysoTracker green is strongly correlated with the red PL
+channel (Rr = 0.8), indicating that most of the Au44MBA26-Cy7
+NCs are located within the lysosome (Fig. 2g). Therefore, the
+above results manifest that the Au44MBA26-Cy7 NCs enter the
+cells through endocytosis.
+Fig. 2
+In vitro PTT of the Au44MBA26-Cy7 NCs. Photothermal heating proﬁles of the Au44MBA26-Cy7 NCs in water at (a) diﬀerent concentrations
+under laser irradiation (808 nm, 1.5 W cm−2) and (b) diﬀerent power density irradiations (here the NC concentration was ﬁxed to 5 mM). Error bars,
+mean ± SD (n = 3), *P < 0.05. (c) The cycled heating/cooling curves of pristine Au44MBA26 and Au44MBA26-Cy7 NCs in water. (d) Photothermal
+eﬃciency evaluation of the Au44MBA26 and Au44MBA26-Cy7 NCs in water after irradiation for 10 min and being cooled to room temperature. The
+photothermal eﬃciency was obtained from the linear ﬁtting of the cooling time versus the negative natural logarithm of the temperature. (e) PL
+microscope images of viable HeLa cells stained with Calcein AM (green color) and nonviable HeLa cells stained with EthD-1 (red) treated with 5
+mM Au44MBA26-Cy7 NCs in the dark (upper panel) or under laser irradiation (lower panel) for 6 min (808 nm, 1.5 W cm−2). (f) In vitro cytotoxicity
+and photothermal assays of Au44MBA26-Cy7 NCs with diﬀerent concentrations (0.009–5 mM) on HeLa cells evaluated by MTT Kit NCs in the dark
+or under laser irradiation. Error bars indicate the mean ± SD (n = 8), *P < 0.05. (g) Confocal PL images of Au44MBA26-Cy7 NCs (0.5 mM) in live
+HeLa cells co-stained with MitoTracker Green or LysoTracker Green.
+4312 | Chem. Sci., 2023, 14, 4308–4318
+© 2023 The Author(s). Published by the Royal Society of Chemistry
+Chemical Science
+Edge Article
+Open Access Article. Published on 08 March 2023. Downloaded on 6/24/2026 3:00:25 AM. 
+This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+View Article Online
+
+In addition to the remarkable in vitro photothermal prop-
+erties, the Au44MBA26-Cy7 NCs also display prominent perfor-
+mance in noninvasive in vivo NIR-II PL and PA imaging. The
+strong NIR-II PL signal of the Au44MBA26-Cy7 NCs allowed high-
+contrast, real-time NIR-II vessel imaging under 808 nm laser
+irradiation to be achieved. As shown in Fig. 3a, the hindlimb
+vessels in mice could be observed with an ultrahigh contrast in
+the NIR-II window. Specically, the vessels of the mice were
+visible at 30 s from the intravenous injection of the Au44MBA26-
+Cy7 NCs, and extremely clear at 120 s. The cross-sectional
+intensity prole of the mice's hindlimb at 300 s also revealed
+the intense NIR-II PL signal in the vessels (Fig. 3b). Taken
+together, one may conclude that the Au44MBA26-Cy7 NCs with
+ultrasmall size exhibit molecule-like pharmacokinetics, pos-
+sessing great potential in ultradeep NIR-II PL imaging for
+medical diagnosis.
+To test the possibility of NIR-II PL imaging-guided tumor
+therapy, we further established a metastatic tumor model in
+which 4T1 cells were inoculated into the right hind paw of nude
+mice, and checked the usefulness of the Au44MBA26-Cy7 NCs for
+the real-time NIR-II PL imaging of tumors. As shown, aer
+intravenously injecting Au44MBA26-Cy7 NCs into the 4T1 tumor-
+bearing mice, the NIR-II PL signal under 808 nm laser irradia-
+tion could be recognized at 20 s (Fig. 3c). Beneting from the
+Fig. 3
+In vivo NIR-II PL and PA imaging. (a) Time-course NIR-II PL images of the hindlimb vessels in mice after the intravenous injection of the
+Au44MBA26-Cy7 NCs. (b) The NIR-II PL line scan proﬁle of the hindlimb vessels in (a). (c) Time-course NIR-II PL images and (d) enlarged images of
+4T1 tumor-bearing mice after intravenous injection of the Au44MBA26-Cy7 NCs. (e) Comparison of the relative NIR-II PL intensities of the primary
+tumor and healthy tissue 8 min from NC injection. (f) PA images of pristine Au44MBA26 and Au44MBA26-Cy7 solutions with concentrations of 0–6
+mM. (g) Time-course PA images of 4T1 tumor-bearing mice after intravenous injection of the Au44MBA26-Cy7 NCs. The dashed circle indicates
+the tumor. (h) Time-related relative PA intensities of the Au44MBA26-Cy7 NCs in tumor sites based on the quantitative analysis of the circled
+tumor sites shown in (g).
+© 2023 The Author(s). Published by the Royal Society of Chemistry
+Chem. Sci., 2023, 14, 4308–4318 | 4313
+Edge Article
+Chemical Science
+Open Access Article. Published on 08 March 2023. Downloaded on 6/24/2026 3:00:25 AM. 
+This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+View Article Online
+
+continuous accumulation of the Au44MBA26-Cy7 NCs at the
+tumor site via the EPR eﬀect, the NIR-II PL intensity in the
+primary tumor tissues gradually increased within 8 min, and
+was ve times greater than that in the healthy tissue (Fig. 3c and
+d), indicating that the Au44MBA26-Cy7 NCs have tumor targeting
+ability and possess signicant advantages in NIR-II PL imaging
+for tumor diagnosis with deep-tissue penetration (Fig. 3e).
+Furthermore, the NIR-II PL signal of the Au44MBA26-Cy7 NCs in
+primary tumor tissues remained aer 4 h with a high resolution
+(Fig. 3c and d), which suggests their long-lasting imaging
+ability, supporting their application in long-period NIR-II PL
+imaging-guided tumor therapy.
+One salient feature of the Au44MBA26-Cy7 NCs is their dual-
+mode noninvasive imaging of deep tissues with mutual signal
+correction. Aside from NIR-II PL imaging, the Au44MBA26-Cy7
+NCs could simultaneously achieve in vivo PA imaging. It should
+be mentioned that the generation of the PA signal is related to
+thermal expansion. While an Au44MBA26-Cy7 NC solution with
+a low concentration of 2 mM showed strong PA signals (Fig. 3f),
+the same was not realized by the pristine Au44MBA26 NC solu-
+tion, although it generated a PA signal when the concentration
+was increased by $10 times (Fig. S12†). This preliminary result
+implies the capability of the Au44MBA26-Cy7 NCs of real-time PA
+imaging. To further check the applicability for in vivo PA
+imaging, the Au44MBA26-Cy7 NCs were injected into 4T1 tumor-
+bearing mice via the tail vein. Owing to the EPR eﬀect, the
+Au44MBA26-Cy7 NCs accumulated continuously at the tumor
+site, enabling the successful PA imaging of the tumor with
+a rapidly increasing signal intensity until a maximum was
+reached at 4 h (Fig. 3g and h), which demonstrated the excellent
+in vivo PA imaging ability of the Au44MBA26-Cy7 NCs. Based on
+the quantitative
+analysis of
+the time-related relative
+PA
+Fig. 4
+PTT in vivo. (a) Representative IR thermal images of 4T1 tumor-bearing mice injected intravenously with the Au44MBA26-Cy7 NCs,
+Au44MBA26 NCs, or saline with 10 min of laser irradiation (808 nm, 1.0 W cm−2). (b) Irradiation time-related temperature elevation curves of the
+tumor sites. Error bars indicate the mean ± SD (n = 5), *P < 0.05. (c) The tumor growth curves of 4T1 tumor-bearing mice in diﬀerent treatment
+groups. Error bars indicate the mean ± SD (n = 5), *P < 0.05. (d) The survival plot of the 4T1 tumor-bearing mice in the diﬀerent treatment groups.
+(e) Photographs of 4T1 tumor-bearing mice 0, 4, 8, 12, 16, 20, and 24 days after treatment with saline, Au44MBA26 NCs, and Au44MBA26-Cy7 NCs
+in the dark or under laser irradiation.
+4314 | Chem. Sci., 2023, 14, 4308–4318
+© 2023 The Author(s). Published by the Royal Society of Chemistry
+Chemical Science
+Edge Article
+Open Access Article. Published on 08 March 2023. Downloaded on 6/24/2026 3:00:25 AM. 
+This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+View Article Online
+
+intensities of the Au44MBA26-Cy7 NCs at the tumor sites
+(Fig. 3h), we can deduce that 4 h from NCs injection is the
+optimal time point for in vivo PTT. More importantly, the
+Au44MBA26-Cy7 NCs could simultaneously implement NIR-II PL
+and PA imaging for tumors with both deep-tissue penetration
+and high spatial resolution at 4 h from NC injection, which may
+guide cancer PTT in terms of providing precise tumor location
+and real-time feedback. It is worth noting that the PL and PA
+attributes with a competitive relationship were successfully
+integrated into one material in this study, highlighting the
+strong designability of the Au44MBA26-Cy7 NCs via ligand
+engineering.
+With the guidance of in vivo NIR-II PL and PA imaging, we
+further investigated the in vivo PTT of the Au44MBA26-Cy7 NCs
+for 4T1 tumor-bearing mice. As shown in Fig. 4a and b, the
+infrared radiation (IR) thermal mapping images of 4T1 tumor-
+bearing mice treated with the Au44MBA26-Cy7 NCs show that
+the tumor temperature increases rapidly, and reaches the
+highest temperature of 61.3 °C with 808 nm laser irradiation for
+10 min. This result is better than the treatment of the
+Au44MBA26 NCs and saline with temperature elevations of 9.5 °C
+and 6 °C, respectively. Consequently, the tumors in mice treated
+with the Au44MBA26-Cy7 NCs were successfully ablated upon
+laser irradiation, and burn scars were generated at the tumor
+site.
+Aer 16 days, 4T1 tumor-bearing mice treated with the
+Au44MBA26-Cy7 NCs were all healed without tumor recurrence
+(Fig. 4c and e). In addition, all mice in this group were alive and
+had to be euthanized (Fig. 4d). By contrast, the tumor of mice
+treated with the Au44MBA26 NCs initially showed a slight
+decrease, but then began to grow rapidly from the 4th day
+(Fig. 4c and e). A worse situation was observed in the control
+groups (i.e., tumor-bearing mice treated with only laser irradi-
+ation or Au44MBA26-Cy7 NCs) where tumors continued to grow
+rapidly (Fig. 4c and e). In comparison to the recovered health
+status of mice treated with PTT using the Au44MBA26-Cy7 NCs,
+the average life span of mice in the other four groups was only
+17–21 days (Fig. 4d). Such excellent PTT eﬃcacy of the
+Au44MBA26-Cy7 NCs is expected considering their outstanding
+photothermal eﬃciency, decent molecular pharmacokinetics,
+good tumor selectivity (due to the EPR eﬀect), and benign
+biocompatibility. On this basis, we can conclude that the
+Au44MBA26-Cy7 NCs have been demonstrated to be eﬃcient in
+NIR-II PL and PA imaging-guided cancer PTT, realizing the rst
+successful attempt in designing an Au NC-based molecular
+theranostic probe for noninvasive NIR-II PL and PA imaging-
+guided cancer PTT.
+In addition, the possible adverse eﬀects of the Au44MBA26-
+Cy7 NCs on mice were also examined. Firstly, we checked the
+body weights of mice in each group during the whole PTT
+process. The results show that no remarkable weight variation
+was observed between the diﬀerent groups of the mice (Fig. 5a),
+indicating that Au44MBA26-Cy7 NCs-directed PTT had almost no
+adverse eﬀects on the mice. In addition, aer 24 h from the
+intravenous injection of the Au44MBA26-Cy7 NCs, the mice were
+sacriced and dissected in order to evaluate the inuence of the
+Fig. 5
+(a) Body weight changes of the mice in diﬀerent treatment groups. (b) The bio-distribution of Au44MBA26-Cy7 NCs in the heart, liver,
+spleen, lung, and kidney 24 h after the intravenous injection of the Au44MBA26-Cy7 NCs. (c) H & E-stained histological sections of heart, liver,
+spleen, lung, and kidney tissues obtained from mice in the saline, and PTT groups with the Au44MBA26 and Au44MBA26-Cy7 NCs. (d) Blood test
+and liver function parameters for mice intravenously injected with saline, Au44MBA26 NCs, or Au44MBA26-Cy7 NCs.
+© 2023 The Author(s). Published by the Royal Society of Chemistry
+Chem. Sci., 2023, 14, 4308–4318 | 4315
+Edge Article
+Chemical Science
+Open Access Article. Published on 08 March 2023. Downloaded on 6/24/2026 3:00:25 AM. 
+This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+View Article Online
+
+Au44MBA26-Cy7 NCs on their major organs (i.e., heart, liver,
+spleen, lung and kidney). As shown in Fig. 5b, no NIR-II PL
+signal was perceived from the heart, spleen, and lung, while
+a moderate PL signal emanated from the kidney and a weak PL
+signal from the liver was detected. These results suggest the
+good renal clearance of the ultrasmall Au44MBA26-Cy7 NCs,
+further reecting their good biosafety in in vivo dual-mode
+imaging-guided PTT. Moreover, the haematoxylin and eosin
+(H & E) histopathological assessment of the major organs of
+mice in each group disclosed that there is no signicant
+diﬀerence in the organs aer PTT (Fig. 5c), which indicates that
+the dual-mode imaging-guided PTT with the Au44MBA26-Cy7
+NCs did not damage the major organs of the mice. Besides this,
+the blood and liver function of the tumor-bearing mice treated
+with saline, Au44MBA26 NCs, and Au44MBA26-Cy7 NCs were
+further evaluated. Routine blood tests revealed that the white
+blood cell, neutrophil and red blood cell counts were all unaf-
+fected by the PTT, corroborating the safety and low toxicity of
+the Au44MBA26-Cy7 NCs and PTT (Fig. 5d). Liver function tests
+show no signicant diﬀerences between the three mice groups,
+and all parameters, including blood glucose, albumin, alanine,
+and total bilirubin, were within the reference range, indicating
+that the treated mice exhibited basically normal liver function
+(Fig. 5d). All of these results exemplify the perfect biosafety of
+PTT using the Au44MBA26-Cy7 NCs.
+Conclusions
+In this study, we developed a novel Au NC-based theranostics
+probe for ultradeep NIR-II PL and PA imaging-guided cancer
+PTT. The key to this design is the ligand engineering of NIR-II
+emitting Au44MBA26 NCs by rigid PA/photothermal Cy7 mole-
+cules via click chemistry. This not only enhanced the NIR-II PL
+intensity of the Au44 NCs via AIE, but also elevated their photo-
+thermal eﬃciency to 65.12% by oﬀering a highly localized Cy7
+concentration on the NC surface, contradicting the Jablonski
+energy spectrum theory that strong PL signal and excellent
+photothermal properties cannot be attained simultaneously.
+Owing to the EPR eﬀect, the as-synthesized Au44MBA26 NCs-Cy7
+NCs successfully achieved in vivo NIR-II PL and PA imaging of
+tumors in real time with deep tissue penetration, high sensitivity
+and specicity, which enabled them to be capable of guiding
+cancer PTT by oﬀering accurate tumor location and real-time
+feedback. In particular, the 4T1 tumor-bearing mice could be
+healed
+without
+tumor
+recurrence
+upon
+PTT
+using
+the
+Au44MBA26-Cy7 NCs by eﬃciently ablating tumors. In addition,
+comprehensive studies revealed that the Au44MBA26-Cy7 NCs
+exhibit neglectable cytotoxicity and good biosafety in terms of
+good renal clearance, no damage to major organs, and unaf-
+fected blood and liver functions, conrming the feasible appli-
+cation of the Au44MBA26-Cy7 NCs for noninvasive NIR-II PL and
+PA imaging-guided cancer PTT. This study is interesting because
+it provides a paradigm in the design of metal NCs-based multi-
+functional biomedicine for disease theranostics. We envision
+that the Au44MBA26-Cy7 NCs may have great potential for future
+clinical translation, which may stimulate additional research
+activities in noninvasive imaging-guided disease therapy.
+Data availability
+All experimental supporting data and procedures are available
+in the ESI.†
+Author contributions
+J. P. X., X. F. Z., and X. Y. conceived and supervised the project.
+G. Y. performed the experiments, and collected and analyzed
+the data. X. L. M., X. X. P., Y. T., Q. F. Y., Y. R. W., F. Y. J., and
+F. L. D. helped with the data collection and analysis of animal
+experiments. G. Y. and X. Y. co-wrote the manuscript. All
+authors discussed the results and commented on the manu-
+script. All authors approved the nal version of the manuscript.
+Conﬂicts of interest
+There are no conicts to declare.
+Acknowledgements
+This work was supported by the National Natural Science
+Foundation of China (22071127, 22071174), the Taishan
+Scholar Foundation (tsqn201812074), the Natural Science
+Foundation of Shandong Province (ZR2019YQ07), and the
+Academic Research Grants from the Ministry of Education of
+Singapore (R-279-000-580-112 and R-279-000-538-114). This
+study was performed in strict accordance with the NIH guide-
+lines for the care and use of laboratory animals (NIH Publica-
+tion No. 85–23 Rev. 1985) and was approved by the Biomedical
+Ethics Committee of Qingdao Zhong Hao Biological Engi-
+neering Co., Ltd. (Qingdao, China).
+References
+1 (a) B. Chen, Y. Yan, Y. Yang, G. Cao, X. Wang, Y. Wang,
+F. Wan, Q. Yin, Z. Wang, Y. Li, L. Wang, B. Xu, F. You,
+Q. Zhang and Y. Wang, Nat. Nanotechnol., 2022, 17(7), 788–
+798; (b) J. Zhang, L. Ning, J. Huang, C. Zhang and K. Pu,
+Chem. Sci., 2020, 11, 618–630; (c) N. Niu, Y. Yu, Z. Zhang,
+M. Kang, L. Wang, Z. Zhao, D. Wang and B. Z. Tang, Chem.
+Sci., 2022, 13, 5929–5937; (d) H.-T. Feng, S. Zou, M. Chen,
+F. Xiong, M.-H. Lee, L. Fang and B. Z. Tang, J. Am. Chem.
+Soc., 2020, 142, 11442; (e) J. K. Tee, L. X. Yip, E. S. Tan,
+S. Santitewagun, A. Prasath, P. C. Ke, H. K. Ho and
+D. T. Leong, Chem. Soc. Rev., 2019, 48, 5381; (f) D. Y. Oh,
+S. S. Kwek, S. S. Raju, T. Li, E. McCarthy, E. Chow, D. Aran,
+A. Ilano, C.-C.
+S. Pai, C. Rancan, K. Allaire, A. Burra,
+Y. Sun, M. H. Spitzer, S. Mangul, S. Porten, M. V. Meng,
+T. W. Friedlander, C. J. Ye and L. Fong, Cell, 2020, 181, 1612.
+2 (a) L. V. Wang and S. Hu, Science, 2012, 335, 1458; (b)
+A. L. Antaris, H. Chen, K. Cheng, Y. Sun, G. Hong, C. Qu,
+S. Diao, Z. Deng, X. Hu, B. Zhang, X. Zhang, O. K. Yaghi,
+Z. R. Alamparambil, X. Hong, Z. Cheng and H. Dai, Nat.
+Mater., 2016, 15, 235; (c) Y. Liu, P. Bhattarai, Z. Dai and
+X. Chen, Chem. Soc. Rev., 2019, 48, 2053; (d) X. Li, T. Yong,
+4316 | Chem. Sci., 2023, 14, 4308–4318
+© 2023 The Author(s). Published by the Royal Society of Chemistry
+Chemical Science
+Edge Article
+Open Access Article. Published on 08 March 2023. Downloaded on 6/24/2026 3:00:25 AM. 
+This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+View Article Online
+
+Z. Wei, N. Bie, X. Zhang, G. Zhan, J. Li, J. Qin, J. Yu, B. Zhang,
+L. Gan and X. Yang, Nat. Commun., 2022, 13, 2794.
+3 J. Qi, C. Chen, X. Zhang, X. Hu, S. Ji, R. T. K. Kwok,
+J. W. Y. Lam, D. Ding and B. Z. Tang, Nat. Commun., 2018,
+9, 1848.
+4 (a) B. Du, X. Jiang, A. Das, Q. Zhou, M. Yu, R. Jin and J. Zheng,
+Nat. Nanotechnol., 2017, 12, 1096; (b) J. Huang, X. Chen,
+Y. Jiang, C. Zhang, S. He, H. Wang and K. Pu, Nat. Mater.,
+2022, 21, 598.
+5 (a) P. N. Duchesne, Z. Y. Li, C. P. Deming, V. Fung, X. Zhao,
+J. Yuan, T. Regier, A. Aldalbahi, Z. Almarhoon, S. Chen,
+D.-e. Jiang, N. Zheng and P. Zhang, Nat. Mater., 2018, 17,
+1033; (b) M. Han, M. Guo, Y. Yun, Y. Xu, H. Sheng,
+Y. Chen, Y. Du, K. Ni, Y. Zhu and M. Zhu, Adv. Funct.
+Mater., 2022, 32, 2202820; (c) X. Kang, Y. Li, M. Zhu and
+R. Jin, Chem. Soc. Rev., 2020, 49, 6443; (d) I. Chakraborty
+and T. Pradeep, Chem. Rev., 2017, 117, 8208; (e) C. Yao,
+N. Guo, S. Xi, C.-Q. Xu, W. Liu, X. Zhao, J. Li, H. Fang,
+J. Su, Z. Chen, H. Yan, Z. Qiu, P. Lyu, C. Chen, H. Xu,
+X. Peng, X. Li, B. Liu, C. Su, S. J. Pennycook, C.-J. Sun, J. Li,
+C. Zhang, Y. Du and J. Lu, Nat. Commun., 2020, 11, 4389.
+6 (a) M. R. Narouz, K. M. Osten, P. J. Unsworth, R. W. Y. Man,
+K. Salorinne, S. Takano, R. Tomihara, S. Kaappa, S. Malola,
+C.-T. Dinh, J. D. Padmos, K. Ayoo, P. J. Garrett, M. Nambo,
+J. H. Horton, E. H. Sargent, H. H¨akkinen, T. Tsukuda and
+C. M. Crudden, Nat. Chem., 2019, 11, 419; (b) X. Yuan,
+B. Zhang, Z. Luo, Q. Yao, D. T. Leong, N. Yan and J. Xie,
+Angew. Chem., Int. Ed., 2014, 53, 4623; (c) T. Kawawaki,
+Y.
+Kataoka,
+M.
+Hirata,
+Y.
+Akinaga,
+R.
+Takahata,
+K.
+Wakamatsu,
+Y.
+Fujiki,
+M.
+Kataoka,
+S.
+Kikkawa,
+A. S. Alotabi, S. Hossain, D. J. Osborn, T. Teranishi,
+G. G. Andersson, G. F. Metha, S. Yamazoe and Y. Negishi,
+Angew. Chem., Int. Ed., 2021, 60, 21340; (d) H. Shen, Q. Wu,
+S. Malola, Y.-Z. Han, Z. Xu, R. Qin, X. Tang, Y.-B. Chen,
+B. K. Teo, H. H¨akkinen and N. Zheng, J. Am. Chem. Soc.,
+2022, 144, 10844.
+7 (a) M. Zhou, T. Higaki, G. Hu, Y. Sfeir Matthew, Y. Chen,
+D.-e.
+Jiang
+and
+R.
+Jin,
+Science,
+2019,
+364,
+279;
+(b)
+M. R. Narouz, S. Takano, P. A. Lummis, T. I. Levchenko,
+A.
+Nazemi,
+S.
+Kaappa,
+S.
+Malola,
+G.
+Yousefalizadeh,
+L.
+A.
+Calhoun,
+K.
+G.
+Stamplecoskie,
+H.
+H¨akkinen,
+T. Tsukuda and C. M. Crudden, J. Am. Chem. Soc., 2019,
+141, 14997; (c) C. Zhu, J. Xin, J. Li, H. Li, X. Kang, Y. Pei
+and M. Zhu, Angew. Chem., Int. Ed., 2022, e202205947; (d)
+J.-J. Li, C.-Y. Liu, Z.-J. Guan, Z. Lei and Q.-M. Wang, Angew.
+Chem., Int. Ed., 2022, 61, e202201549.
+8 (a) X.-Q. Liang, Y.-Z. Li, Z. Wang, S.-S. Zhang, Y.-C. Liu,
+Z.-Z. Cao, L. Feng, Z.-Y. Gao, Q.-W. Xue, C.-H. Tung and
+D. Sun, Nat. Commun., 2021, 12, 4966; (b) J.-Q. Wang,
+Z.-J. Guan, W.-D. Liu, Y. Yang and Q.-M. Wang, J. Am.
+Chem.
+Soc.,
+2019,
+141,
+2384;
+(c)
+K.
+R.
+Krishnadas,
+L.
+Sementa,
+M.
+Medves,
+A.
+Fortunelli,
+M.
+Stener,
+A. Fürstenberg, G. Longhi and T. Bürgi, ACS Nano, 2020,
+14, 9687.
+9 (a) Y. Li, M. Zhou, Y. Song, T. Higaki, H. Wang and R. Jin,
+Nature, 2021, 594, 380; (b) X. Cai, W. Hu, S. Xu, D. Yang,
+M. Chen, M. Shu, R. Si, W. Ding and Y. Zhu, J. Am. Chem.
+Soc., 2020, 142, 4141; (c) H. Seong, V. Efremov, G. Park,
+H. Kim, J. S. Yoo and D. Lee, Angew. Chem., Int. Ed., 2021,
+60, 14563; (d) X. Yuan, L. L. Chng, J. Yang and J. Y. Ying,
+Adv. Mater., 2020, 32, 1906063; (e) L.-J. Liu, Z.-Y. Wang,
+Z.-Y. Wang, R. Wang, S.-Q. Zang and T. C. W. Mak, Angew.
+Chem., Int. Ed., 2022, e202205626; (f) X. Wang, L. Zhao,
+X. Li, Y. Liu, Y. Wang, Q. Yao, J. Xie, Q. Xue, Z. Yan,
+X. Yuan and W. Xing, Nat. Commun., 2022, 13, 1596.
+10 (a) M. Yu, J. Xu and J. Zheng, Angew. Chem., Int. Ed., 2019, 58,
+4112; (b) K. Zheng and J. Xie, Trends Chem., 2020, 2, 665.
+11 (a) X. Jiang, B. Du and J. Zheng, Nat. Nanotechnol., 2019, 14,
+874; (b) J. Liu, M. Yu, X. Ning, C. Zhou, S. Yang and J. Zheng,
+Angew. Chem., Int. Ed., 2013, 52, 12572; (c) C.-Y. Liu,
+S.-F.
+Yuan,
+S.
+Wang,
+Z.-J.
+Guan,
+D.-e.
+Jiang
+and
+Q.-M. Wang, Nat. Commun., 2022, 13, 2082.
+12 (a) C. N. Loynachan, A. P. Soleimany, J. S. Dudani, Y. Lin,
+A.
+Najer,
+A.
+Bekdemir,
+Q.
+Chen,
+S.
+N.
+Bhatia
+and
+M. M. Stevens, Nat. Nanotechnol., 2019, 14, 883; (b) B. Du,
+M. Yu and J. Zheng, Nat. Rev. Mater., 2018, 3, 358.
+13 (a) X. Zhang, Z. Zhang, Q. Shu, C. Xu, Q. Zheng, Z. Guo,
+C. Wang, Z. Hao, X. Liu, G. Wang, W. Yan, H. Chen and
+C. Lu, Adv. Funct. Mater., 2021, 31, 2008720; (b) K. Zheng,
+K. Li, T.-H. Chang, J. Xie and P.-Y. Chen, Adv. Funct.
+Mater.,
+2019,
+29,
+1904603;
+(c)
+Y.
+Hua,
+J.-H.
+Huang,
+Z.-H. Shao, X.-M. Luo, Z.-Y. Wang, J.-Q. Liu, X. Zhao,
+X. Chen and S.-Q. Zang, Adv. Mater., 2022, 2203734; (d)
+O.-V. Pham-Nguyen, J. Shin, Y. Park, S. Jin, S. R. Kim,
+Y. M. Jung and H. S. Yoo, Biomacromolecules, 2022, 23,
+3130; (e) S. M. van de Looij, E. R. Hebels, M. Viola,
+M. Hembury, S. Oliveira and T. Vermonden, Bioconjugate
+Chem., 2022, 33, 4.
+14 (a) H. Liu, G. Hong, Z. Luo, J. Chen, J. Chang, M. Gong,
+H. He, J. Yang, X. Yuan, L. Li, X. Mu, J. Wang, W. Mi,
+J. Luo, J. Xie and X.-D. Zhang, Adv. Mater., 2019, 31,
+1901015; (b) X. Song, W. Zhu, X. Ge, R. Li, S. Li, X. Chen,
+J. Song, J. Xie, X. Chen and H. Yang, Angew. Chem., Int. Ed.,
+2021, 60, 1306; (c) W. Wang, Y. Kong, J. Jiang, Q. Xie,
+Y. Huang, G. Li, D. Wu, H. Zheng, M. Gao, S. Xu, Y. Pan,
+W. Li, R. Ma, M. X. Wu, X. Li, H. Zuilhof, X. Cai and R. Li,
+Angew. Chem., Int. Ed., 2020, 59, 22431; (d) D. Li, Q. Liu,
+Q. Qi, H. Shi, E.-C. Hsu, W. Chen, W. Yuan, Y. Wu, S. Lin,
+Y. Zeng, Z. Xiao, L. Xu, Y. Zhang, T. Stoyanova, W. Jia and
+Z.
+Cheng,
+Small,
+2020,
+16,
+2003851;
+(e)
+Y.
+Chen,
+D. M. Montana, H. Wei, J. M. Cordero, M. Schneider, X. Le
+Gu´evel, O. Chen, O. T. Bruns and M. G. Bawendi, Nano
+Lett., 2017, 17, 6330.
+15 (a) X. Mu, Y. Lu, F. Wu, Y. Wei, H. Ma, Y. Zhao, J. Sun, S. Liu,
+X. Zhou and Z. Li, Adv. Mater., 2020, 32, 1906711; (b) J. Chen,
+M. Gong, Y. Fan, J. Feng, L. Han, H. L. Xin, M. Cao, Q. Zhang,
+D. Zhang, D. Lei and Y. Yin, ACS Nano, 2022, 16, 910; (c)
+G. Xu, C. Li, C. Chi, L. Wu, Y. Sun, J. Zhao, X.-H. Xia and
+S. Gou, Nat. Commun., 2022, 13, 3064.
+16 (a) X. Jiang, B. Du, S. Tang, J.-T. Hsieh and J. Zheng, Angew.
+Chem., Int. Ed., 2019, 58, 5994; (b) M. Y. Lucero and J. Chan,
+Nat. Chem., 2021, 13, 1248; (c) C. A. Wood, S. Han, C. S. Kim,
+Y. Wen, D. R. T. Sampaio, J. T. Harris, K. A. Homan,
+J. L. Swain, S. Y. Emelianov, A. K. Sood, J. R. Cook,
+© 2023 The Author(s). Published by the Royal Society of Chemistry
+Chem. Sci., 2023, 14, 4308–4318 | 4317
+Edge Article
+Chemical Science
+Open Access Article. Published on 08 March 2023. Downloaded on 6/24/2026 3:00:25 AM. 
+This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+View Article Online
+
+K. V. Sokolov and R. R. Bouchard, Nat. Commun., 2021, 12,
+5410.
+17 (a) M. Zhang, W. Wang, M. Mohammadniaei, T. Zheng,
+Q. Zhang, J. Ashley, S. Liu, Y. Sun and B. Z. Tang, Adv.
+Mater., 2021, 33, 2008802; (b) Z. Wu, Q. Yao, O. J. H. Chai,
+N. Ding, W. Xu, S. Zang and J. Xie, Angew. Chem., Int. Ed.,
+2020, 59, 9934; (c) D. Yan, M. Wang, Q. Wu, N. Niu, M. Li,
+R. Song, J. Rao, M. Kang, Z. Zhang, F. Zhou, D. Wang and
+B. Z. Tang, Angew. Chem., Int. Ed., 2022, e202202614; (d)
+Z. Luo, X. Yuan, Y. Yu, Q. Zhang, D. T. Leong, J. Y. Lee and
+J. Xie, J. Am. Chem. Soc., 2012, 134, 16662.
+18 X. Zhang, Z. Wang, S. Qian, N. Liu, L. Sui and X. Yuan,
+Nanoscale, 2020, 12, 6449.
+19 Q. Yao, X. Yuan, V. Fung, Y. Yu, D. T. Leong, D.-e. Jiang and
+J. Xie, Nat. Commun., 2017, 8, 927.
+20 K. Pyo, V. D. Thanthirige, S. Y. Yoon, G. Ramakrishna and
+D. Lee, Nanoscale, 2016, 8, 20008–20016.
+21 H. Deng, K. Huang, L. Xiu, W. Sun, Q. Yao, X. Fang,
+X. Huang, H. A. A. Noreldeen, H. Peng, J. Xie and W. Chen,
+Nat. Commun., 2022, 13, 3381.
+22 Y.-S. Chen and P. V. Kamat, J. Am. Chem. Soc., 2014, 136,
+6075.
+23 L. Liao, S. Zhuang, C. Yao, N. Yan, J. Chen, C. Wang, N. Xia,
+X. Liu, M.-B. Li, L. Li, X. Bao and Z. Wu, J. Am. Chem. Soc.,
+2016, 138, 10425.
+24 (a)
+C.
+Iserman,
+C.
+Desroches
+Altamirano,
+C.
+Jegers,
+U.
+Friedrich,
+T.
+Zarin,
+A.
+W.
+Fritsch,
+M.
+Mittasch,
+A. Domingues, L. Hersemann, M. Jahnel, D. Richter,
+U.-P. Guenther, M. W. Hentze, A. M. Moses, A. A. Hyman,
+G. Kramer, M. Kreysing, T. M. Franzmann and S. Alberti,
+Cell, 2020, 181, 818; (b) C. Spiess, A. Beil and M. Ehrmann,
+Cell, 1999, 97, 339.
+25 X. Cai, X. Jia, W. Gao, K. Zhang, M. Ma, S. Wang, Y. Zheng,
+J. Shi and H. Chen, Adv. Funct. Mater., 2015, 25, 2520.
+4318 | Chem. Sci., 2023, 14, 4308–4318
+© 2023 The Author(s). Published by the Royal Society of Chemistry
+Chemical Science
+Edge Article
+Open Access Article. Published on 08 March 2023. Downloaded on 6/24/2026 3:00:25 AM. 
+This article is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported Licence.
+View Article Online

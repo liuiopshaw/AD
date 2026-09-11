@@ -1,0 +1,1424 @@
+Nature Protocols | Volume 19 | December 2024 | 3470–3488
+nature protocols
+Protocol update
+https://doi.org/10.1038/s41596-024-01034-7
+ Check for updates
+3470
+Optimizing the standardized assays for 
+determining the catalytic activity and 
+kinetics of peroxidase-like nanozymes
+Jia-Jia Zheng 
+  1,2,3, Feiyan Zhu 
+  1,3, Ningning Song1, Fang Deng1, Qi Chen1, Chen Chen1, Jiuyang He 
+  1 
+, Xingfa Gao 
+  2 
+ 
+& Minmin Liang 
+  1 
+Abstract
+Nanozymes are nanomaterials with enzyme-like catalytic properties. They are 
+attractive reagents because they do not have the same limitations of natural 
+enzymes (e.g., high cost, low stability and difficult storage). To test, optimize 
+and compare nanozymes, it is important to establish fundamental principles 
+and systematic standards to fully characterize their catalytic performance. 
+Our 2018 protocol describes how to characterize the catalytic activity and 
+kinetics of peroxidase nanozymes, the most widely used type of nanozyme. 
+This approach was based on Michaelis–Menten enzyme kinetics and is 
+now updated to take into account the unique physicochemical properties 
+of nanomaterials that determine the catalytic kinetics of nanozymes. The 
+updated procedure describes how to determine the number of active sites 
+as well as other physicochemical properties such as surface area, shape 
+and size. It also outlines how to calculate the hydroxyl adsorption energy 
+from the crystal structure using the density functional theory method. 
+The calculations now incorporate these measurements and computations 
+to better characterize the catalytic kinetics of peroxidase nanozymes that 
+have different shapes, sizes and compositions. This updated protocol 
+better describes the catalytic performance of nanozymes and benefits the 
+development of nanozyme research since further nanozyme development 
+requires precise control of activity by engineering the electronic, geometric 
+structure and atomic configuration of the catalytic sites of nanozymes. 
+The characterization of the catalytic activity of peroxidase nanozymes and the 
+evaluation of their kinetics can be performed in 4 h. The procedure is suitable 
+for users with expertise in nano- and materials technology.
+This protocol is an update to: Nat. Protoc. 13, 1506–1520 (2018): https://doi.org/10.1038/s41596-018-0001-1
+Key points
+	
+• Nanozymes are nanoparticles 
+designed to have catalytic 
+properties similar to those of 
+natural enzymes. Design and 
+optimization of nanozyme 
+properties require analytical 
+methods to characterize their 
+physical properties as well 
+as their catalytic activity and 
+kinetics.
+	
+• This is an updated protocol 
+for measuring catalytic behavior 
+that incorporates data from 
+measured physical properties 
+unique to each nanoparticle 
+as well as density functional 
+theory calculations into the 
+Michaelis–Menten approach.
+Key references
+Jiang, B. et al. Nat. Protoc. 13, 
+1506–1520 (2018): https://doi.org/ 
+10.1038/s41596-018-0001-1
+Chen, Y. et al. J. Am. Chem. Soc. 
+143, 18643–18651 (2021): https://
+doi.org/10.1021/jacs.1c08581
+Shen, X. et al. ACS Catal. 10, 
+12657–12665 (2020): https://
+doi.org/10.1021/acscatal.0c03426
+1Experimental Center of Advanced Materials, School of Materials Science & Engineering, Beijing Institute 
+of Technology, Beijing, China. 2Laboratory of Theoretical and Computational Nanoscience, National Center 
+for Nanoscience and Technology of China, Beijing, China. 3These authors contributed equally: Jia-Jia Zheng, 
+Feiyan Zhu. 
+ e-mail: hejiuyang@bit.edu.cn; gaoxf@nanoctr.cn; mmliang@bit.edu.cn
+
+Nature Protocols | Volume 19 | December 2024 | 3470–3488
+3471
+Protocol update
+Introduction
+In recent decades, nanozymes have been reported as promising alternatives to natural enzymes 
+owing to their high stability, low cost and convenient storage1,2. By combining the unique 
+physicochemical properties and enzyme-like catalytic properties, artificial nanozymes have 
+been used in a wide range of applications from in vitro biological detection3,4 to in vivo disease 
+diagnosis5–7 and biomedicine development8–12. So far, there have been more than 200 research 
+institutions and groups worldwide working on nanozyme research, and hundreds of nanozymes 
+have been developed, covering thousands of nanomaterials13–17. Along with the substantial 
+advances and broader applications of nanozymes as a main surrogate of natural enzymes, the 
+fundamental principles, basic concept definitions and systematic standards should be strictly 
+established to fully characterize their catalytic performance. Especially with the emergence 
+of ‘nanozymology’18, it is urgent to develop nanozymes in unique nanozymological methods to 
+drive the scientific development of nanozyme research.
+In 2018, we reported the first protocol to characterize the catalytic activity and kinetics of 
+peroxidase nanozymes19. We showed the dependency of the reaction rate on the concentrations 
+of the substrates of peroxidase nanozymes, making it possible to detect the kinetic activities 
+of peroxidase nanozymes. However, the unique physicochemical properties of nanomaterials 
+that ultimately determine the catalytic activity and kinetics of artificial nanozymes are not 
+involved in the kinetic equation. In this protocol, we provide an improved approach that 
+better describes the kinetic activities of peroxidase nanozymes with various shapes, sizes 
+and compositions by combining both the enzyme-based Michaelis–Menten kinetics and the 
+physicochemical properties of nanozymes. The approach facilitates the appropriate evaluation 
+of catalytic performance among different nanozymes and will benefit the future development 
+of nanozymology, from basic research to practical applications.
+Overview of the procedure
+This protocol provides a step-by-step procedure to characterize the catalytic activity and 
+kinetics of peroxidase nanozymes (Fig. 1). The calculations take into account measurable 
+physicochemical properties:
+•	 The number of active sites can be determined by measuring the adsorption of CO molecules 
+on the surface of nanozymes, using the temperature-programmed CO desorption method 
+(Part 1, Steps 1–8, Table 1) (Supplementary Fig. 1).
+•	 Other physicochemical properties such as surface area, shape, and size can 
+be characterized using conventional Brunauer–Emmett–Teller (BET) and 
+transmission electron microscope (TEM) methods (Part 1, Steps 9–10).
+OxTMB
+a
+H+
+TMB
+H+
+TMB
+(4)
+(1)
+(2)
+(3)
+H2O2
+H2O
+H2O* + H2O2
+H2O + H2O2*
+O* + H2O
+H2O2*
+O* + H+ + TMB
+HO* + H+ + TMB
+HO* + OxTMB
+H2O* + OxTMB
+(1)
+Et = 4πr2σ
+Et = πd1d2σ
+b
+Et = 2(ab + ac + bc)σ
+c
+b
+a
+(2)
+(3)
+(4)
+k1
+k2
+k3
+k4
+k–1
+H2O
+OxTMB
+SH2O
+SH2O2
+SO*
+SHO*
+r
+d1
+d2
+Fig. 1 | Reaction pathways for peroxidase nanozymes of different 
+physicochemical properties. a, Elementary steps for the typical TMB oxidation 
+reaction catalyzed by peroxidase nanozyme, where H2O2 serves as the oxidant. 
+SH2O, SH2O2, SO* and SHO* represent the active sites occupied by H2O, H2O2, O radical 
+and OH radical, respectively. b, A schematic representation of nanozymes 
+with different sizes and shapes. σ represents the number of catalytic sites per 
+unit area (mol per m2). Et represents the total number of catalytic sites on the 
+surface of nanozymes (mol).
+
+Nature Protocols | Volume 19 | December 2024 | 3470–3488
+3472
+Protocol update
+The peroxidase-like catalytic activity of peroxidase nanozymes is tested by 
+monitoring the oxidation of peroxidase substrates, such as 3,3,5,5-tetramethylbenzidine 
+(TMB), 3,3′-diaminobenzidine(DAB), o-phenylenediamine (OPD) and 2, 2ʹ-azino-bis- 
+(3-ethylbenzthiazoline-6-sulfonic acid) (ABTS), in the presence of H2O2, resulting in unique 
+color reactions (Part 2, Steps 11–17 and the ‘Troubleshooting’ section) (Fig. 2a–c).
+These data are used to determine the specific activity (SA) of peroxidase nanozymes (Part 2, 
+Steps 17 and 18) (Fig. 2d) and to characterize their catalytic kinetics (Part 3, Steps 20–28) (Fig. 3) 
+using the nanozyme-catalyzed colorimetric reaction; in contrast with the 2018 protocol, these 
+kinetic equations are adjusted to incorporate the physicochemical measurements where 
+meaningful.
+Three representative peroxidase nanozymes, including Fe3O4 nanoparticles (NPs), Pt NPs 
+and Pt-atom centered single-atom nanozyme (Pt-SAzyme), are used as examples to present how 
+to perform the procedure.
+The last section of the procedure describes how computational methods performed on 
+crystal structure data can be used to access the catalytic kinetics of nanozymes, which are useful 
+for understanding the peroxidase-like catalytic activity of nanomaterials and designing better 
+peroxidase-like nanozymes (Part 4, Steps 29–35) (Fig. 4 and Table 2).
+Development of the protocol
+Nanomaterials display peroxidase-like activity by catalyzing the oxidation of peroxidase 
+substrates (e.g., TMB, DAB or OPD) with H2O2 to produce colorimetric reactions. As shown in 
+Fig. 1a, colorimetric reactions catalyzed by peroxidase nanozymes are heterogeneous reactions 
+occurring on the surface of nanomaterials. The microkinetic reaction pathway takes into 
+account the following considerations:
+1.	
+The surface of nanozymes is covered by H2O molecules before the reaction in an aqueous 
+solution.
+2.	
+H2O2 molecules are adsorbed onto the surface of nanozymes by replacing H2O molecules 
+along with the addition of H2O2. This reaction reaches equilibrium with an equilibrium 
+constant K1.
+3.	
+The adsorbed H2O2 molecules are decomposed into O radicals (O*).
+4.	
+Radicals react with H+ and TMB forming product OxTMB.
+In the steady-state approximation20,21, reactions 2–4 exhibit the rate constants of k2, k3 
+and k4, respectively. The reaction rate (v0) catalyzed by peroxidase nanozymes can be then 
+represented by equation 1.
+v0 =
+C1[H2O2][TMB][Et]
+C2[H2O2] + C3[TMB] + C4[H2O2][TMB]
+(1)
+where C1 = K1k2k3k4[H+], C2 = K1k2(k3 + k4), C3 = k3k4[H2O][H+] and C4 = K1k3k4[H+]; [H2O], [H+], [H2O2] 
+and [TMB] are concentrations of substrates H2O, H+, H2O2 and TMB, respectively; [Et] represents 
+Table 1 | General guideline for determining surface active sites
+Methods
+Advantages
+Reference
+CO adsorption measurement
+Widely used technique to characterize active sites of nanozymes
+25–27
+Each CO molecule occupies one catalytic site via chemisorption
+Measure CO adsorption amount to estimate total catalytic sites on the surface of nanozymes
+Inductively coupled plasma optical emission 
+spectrometry
+Provide quantitative information on metal active sites of nanozymes
+28
+Effective when all surface metal atoms are active and participate in the reaction
+XPS
+This technique is useful for carbon-based nanozymes to analyze the chemical state and 
+composition of the surface. This analysis can further estimate the number of catalytic sites
+29
+X-ray absorption near-edge structure/extended 
+X-ray absorption fine structure
+For single-atom nanozymes, these techniques offer insights into local atomic structure 
+and coordination environment around specific atoms. These methods help identifying and 
+quantifying single atom active sites
+29
+Mathematical counting method
+Estimate active sites based on structure, composition, and reactivity of specific sites
+30
+
+Nature Protocols | Volume 19 | December 2024 | 3470–3488
+3473
+Protocol update
+the total number of catalytic sites on the surface of the nanozymes (see Supplementary Note 1 
+for details). In an aqueous solution, the concentration of H2O ([H2O]) is almost constant during 
+the reaction. In addition, pH may influence the stability of nanozymes, but it is difficult to be 
+considered in deriving the microkinetics. Therefore, [H2O] and [H+] are taken as constants in 
+equation 1.
+Equation 1 shows the same form as that derived for an enzyme-catalyzed reaction with the 
+ping-pong mechanism, confirming that the reaction catalyzed by peroxidase nanozymes occurs 
+with the same mechanism22. Specifically, by fixing the concentration of one substrate ([H2O2] or 
+[TMB]), one can obtain the dependency of the reaction rate on the other one in the form of the 
+Michaelis–Menten equation, as represented by equations 2 and 3.
+v0 (H2O2) =
+C1[TMB][Et]
+C2+C4[TMB] [H2O2]
+C3[TMB]
+C2+C4[TMB]+ [H2O2]
+=
+vH2O2
+max [H2O2]
+KH2O2
+m
++ [H2O2]
+(2)
+v0(TMB) =
+C1[H2O2][Et]
+C3+C4[H2O2][TMB]
+C2[H2O2]
+C3+C4[H2O2]+[TMB]
+= vTMB
+max [TMB]
+KTMB
+m
++[TMB]
+(3)
+These equations show the fundamental reasons why the Michaelis–Menten equation 
+should be employed to describe the kinetics of peroxidase nanozymes for their substrates, H2O2 
+and TMB.
+Peroxidase nanozymes
+HAc–NaAc buffer, pH 3.6
+a
+b
+Pt-SAzyme
+Pt NPs
+SA = 24.7 U nmol
+–1
+SA = 1.14 U nmol
+–1
+Pt atom (nmol × 10–3)
+Pt atom (nmol × 10–3)
+SA (U/nmol)
+SA (U/nmol)
+0
+0.02
+0.04
+0.06
+0.08
+Units
+Units
+0
+0.003
+0.006
+0.009
+0.012
+0
+0.02
+0.04
+0.06
+0.08
+Units
+SA = 0.0261 U nmol
+–1
+Fe3O4 NPs
+Fe atom (nmol)
+0
+1
+2
+3
+4
+0
+3
+6
+9
+12
+0
+1
+2
+3
+SA (U/nmol)
+d
+Peroxidase-like activity
+Peroxidase-like activity
+c
+0
+10
+20
+30
+40
+50
+60
+0
+100
+200
+300
+400
+500
+600
+Time (s)
+Absorbance (652 nm)
+1
+0
+2
+3
+5
+Pt-SAzyme
+Pt NPs
+Fe3O4 NPs
+1.2
+0.6
+0.3
+0.9
+0
+Absorbance (652 nm)
+Time (s)
+4
+Pt-SAzyme
+Pt NPs
+Fe3O4 NPs
+Fig. 2 | Peroxidase-like catalytic activity characterization using this updated protocol. a, Fe3O4 NPs, Pt NPs or 
+Pt-SAzyme show the typical peroxidase-like activity by catalyzing the oxidation of peroxidase substrates (TMB, DAB and 
+OPD) to produce the unique color reactions. b, The reaction–time curves of TMB color reaction catalyzed by peroxidase 
+Fe3O4 NPs, Pt NPs or Pt-SAzyme. c, The magnified initial linear portion of the reaction–time curves. A length of 60 s was 
+chosen for the initial rate period because the R2 coefficients were close to 1 during this period after a linear-regression 
+analysis. Absorbance values are measured in arbitrary units. d, Specific activities (U/nmol active site) of the measured 
+nanozymes. n = 3 independent measurements for all bars in b–d, error bars represent mean ± s.d.).
+
+Nature Protocols | Volume 19 | December 2024 | 3470–3488
+3474
+Protocol update
+In the 2018 protocol19, the kinetic parameters (vmax and Km) for the nanozymes were 
+determined by measuring the reaction rates against the concentrations of the substrates using 
+the NP concentration as nanozyme concentration19. This approach determines the overall 
+kinetics of nanozymes without considering the influence of their physicochemical properties. 
+This is not true, and their physicochemical properties can vary greatly. This means that the 
+Michaelis–Menten equation derived originally for natural enzymes is not adequate for studying 
+nanozyme kinetics without considering their physicochemical properties.
+TMB (mM)
+V (µM/min)
+V (µM/min)
+0
+0.5
+1.0
+1.5
+2.0
+0
+5
+10
+15
+20
+0
+4
+10
+Pt-NPs
+Fe3O3-NPs
+Pt-SAzyme
+2
+6
+8
+12
+V (µM/min)
+Nanozymes
+[E/active site]
+Km
+νmax
+kcat
+kcat/Km
+(M)
+(mM)
+(M s–1)
+(s–1)
+(M–1 s–1)
+Pt-SAzyme
+8.50 × 10–10
+0.282
+2.76 × 10–7
+325
+1.15 × 106
+Pt NPs
+2.00 × 10–8
+0.847
+1.78 × 10–7
+8.90
+1.05 × 104
+Fe3O4 NPs
+1.15 × 10–7
+0.841
+1.68 × 10–7
+1.46
+1.74 × 103
+8
+TMB (mM)
+TMB (mM)
+6
+4
+2
+0
+0
+5
+10
+15
+20
+25
+20
+15
+10
+5
+0
+Fig. 3 | Catalytic kinetics characterization of the peroxidase Fe3O4 NPs, Pt NPs and Pt-SAzyme using this protocol. 
+The initial reaction velocity (v) was measured in 0.2 M NaAc/HAc buffer pH 3.6 at 37 °C. The concentration of H2O2 was 
+fixed at 1.0 M, which is excessive to ensure that the tested nanozymes in the reaction solution are saturated with H2O2 
+substrate. TMB concentrations were varied (n = 3 independent measurements, error bars represent mean ± s.d.). [E] is 
+the concentration of active sites on the tested nanozymes. The molar concentration of active sites is determined by the 
+CO adsorption method. Km is the Michaelis constant, νmax is the maximal reaction velocity and kcat is the catalytic constant, 
+where kcat=νmax/[E] and the kcat/Km value indicates the peroxidase-like catalytic efficiency of the tested nanozymes.
+Fe
+O
+Fe3O4(001)
+Fe3O4(111)A
+Fe3O4(111)B
+Fe3O4(111)B-(Fev)4
+Fe3O4(001)-(Fev)
+Fe3O4(001)-(Fev)2
+Fig. 4 | Slab models of Fe3O4 nanozymes. Two different exposed surfaces of Fe3O4 NPs were considered. For the Fe3O4 (111) 
+surface, there are two possible surface structures (Fe3O4 (111)A and Fe3O4 (111)B), with different numbers of exposed iron sites. 
+As iron vacancy may exist in the synthesized Fe3O4 NPs, surface structures with different numbers of iron vacancies were 
+also considered. The coordinates of these structures are given in Supplementary Data 1.
+
+Nature Protocols | Volume 19 | December 2024 | 3470–3488
+3475
+Protocol update
+Therefore, further efforts were made in this work to establish a connection between 
+the physicochemical properties of nanozymes and their catalytic kinetics. Taking H2O2 as 
+the substrate, for example, the initial reaction rate (v0) can be represented by equation 4, 
+and the vmax and Km for H2O2 can thus be represented by equations 5 and 6 (refs. 23,24) 
+(see Supplementary Note 2 for details).
+v0 (H2O2) = msσ A1e
+−ΔG≠
+RT
+[H2O2]
+A2e
+ΔG1
+RT + [H2O2]
+(4)
+vH2O2
+max = msσA1e
+−ΔG≠
+RT
+(5)
+KH2O2
+m
+= A2e
+ΔG1
+RT
+(6)
+where m and s are the mass and specific surface area of nanozymes, σ is the average number 
+of catalytic sites per surface area ([Et] = msσ), ΔG1 is the Gibbs free energy change for H2O2 
+adsorption on the nanozyme surface, ΔG≠ is the activation energy of the rate-determining step, 
+R and T are the ideal gas constant and temperature, A1 and A2 are quantities whose formulation 
+depends on the rate-determining step. Similarly, the Michaelis–Menten kinetics, vmax and Km for 
+TMB as the substrate can be represented by equations 7, 8 and 9.
+v0(TMB) = msσ A3e
+−ΔG≠
+RT
+[TMB]
+A4e
+ΔG1
+RT + [TMB]
+(7)
+vTMB
+max = msσA3e
+−ΔG≠
+RT
+(8)
+KTMB
+m
+= A4e
+ΔG1
+RT
+(9)
+Equations 4–9 demonstrate that the kinetic parameters of nanozymes, usually 
+experimentally determined1,16,19, are actually influenced by both their physical properties 
+(m, s and σ) and the abilities (ΔG1 and ΔG≠) to catalyze chemical reactions. Therefore, in 
+this updated protocol, not only the enzyme-based Michaelis–Menten kinetics but also the 
+physicochemical properties of nanozymes are used to characterize the catalytic kinetics of 
+peroxidase nanozymes with various shapes, sizes and compositions.
+The apparent catalytic kinetics (vmax and Km) can be characterized as previously described19. 
+However, to incorporate the effects of physicochemical properties of nanozymes on their 
+catalytic kinetics, the mass, specific surface area and the average number of catalytic sites per 
+surface area, contributing to the total number of catalytically active sites ([Et]), should also 
+be characterized. For example, the CO uptake and desorption analysis25,26 can be conducted 
+to determine the Carbon monoxide (CO) adsorption amount, which is closely related to 
+the [Et] of nanozymes. More specifically, the mass and specific surface area can be routinely 
+Table 2 | Adsorption energies of H2O2 and OH on different exposed surfaces 
+of Fe3O4 nanozymes
+Eads,H2O2 (eV)
+Eads,OH (eV)
+Fe3O4(001)
+−1.22
+−3.28
+Fe3O4(001)-(Fev)
+−0.77
+−2.41
+Fe3O4(001)-(Fev)2
+−0.93
+−1.96
+Fe3O4(111)A
+Dissociationa
+−3.78
+Fe3O4(111)B
+−1.19
+−3.42
+Fe3O4(111)B-(Fev)4
+−1.36
+−3.15
+aDissociation means that the H2O2 molecule cannot form a stable adsorption structure on Fe3O4(111)A and undergone 
+the dissociation reaction to form two adsorbed OH groups once approaching the nanozyme surface.
+
+Nature Protocols | Volume 19 | December 2024 | 3470–3488
+3476
+Protocol update
+characterized. With these physical parameters, the average number of catalytic sites per surface 
+area (σ) can be easily determined. As σ could be a constant for one nanomaterial with a specific 
+shape, a database of σ for different nanozymes can be constructed. With the database of σ, one 
+may roughly estimate [Et] of a nanozyme by its shape and size, as shown in Fig. 1b. Therefore, it 
+is anticipated that the implementation of this updated protocol will benefit the establishment 
+of structure–activity relationships in nanozymes and improve the development of nanozyme 
+research. This updated protocol is mainly applicable to all the peroxidase nanozymes with a 
+determinable number of active sites.
+Applications of the protocol
+The method presented here describes the peroxidase-like catalytic activities of nanozymes by 
+measuring the kinetics for a single site. Peroxidase-like activities have been found in hundreds 
+of nanomaterials, including metals, metal oxides and carbon.
+An important application of this updated approach is to re-evaluate nanozymes where the 
+kinetics were measured using methods that assumed that all NP catalytic sites had the same 
+properties; the results obtained using these methods may not represent their intrinsic catalytic 
+abilities as peroxidase mimics.
+Further development of nanozymes requires precise control of their activity by engineering 
+the electronic, geometric structure and atomic configuration of the active atoms; thus, 
+determining the activity of a single site becomes essential. As the methods to determine the 
+catalytic activity have been previously described19 and the measurement of the number of active 
+sites and surface areas are straightforward, this protocol will be easily and broadly applied in 
+this field. In addition, our method can be used to determine the density of catalytic sites of σ 
+on nanozymes. A database of σ for different nanomaterials can be constructed with the broad 
+application of the present method. This will simplify the procedures to determine the kinetics 
+of a single site and promote fundamental research on the structure–activity relationship in both 
+experiment and theory.
+Limitations of the protocol
+This updated standardized method has similar limitations to the previous technique19, including 
+the applicability and possible interference of NPs themselves in assessing catalytic kinetics 
+while using the nanozyme-catalyzed colorimetric reaction. First, this updated technique 
+has been specially developed for peroxidase nanozymes, and is thus not applicable to other 
+nonperoxidase nanozymes, such as oxidase nanozyme, superoxide dismutase nanozyme, 
+catalase nanozyme, hydrolase nanozyme, haloperoxidase nanozyme and many others that have 
+been reported. Instead, it is a standardized technique to characterize the catalytic kinetics of 
+a single site of peroxidase nanozymes, which can be extended to other types of nanozymes to 
+establish standardized methods. Secondly, the absorption spectrum of some NPs may overlap 
+with that of substrates. To overcome such interference of NPs in determining catalytic kinetics, 
+two methods have been suggested previously: (i) subtracting the background absorbance from 
+the NPs and (ii) using other colorimetric substrates with no overlapping absorption.
+Another possible limitation of this updated technique is the determination of the number 
+of catalytic sites, which is evaluated through the measurement of CO molecule adsorption on 
+the NPs (CO adsorption and temperature-programmed CO desorption). This standardized 
+method is not universally applicable to all nanozymes, but principally applicable to metal-based 
+nanozymes, such as metal, metal oxide and single-/dual-atom nanozymes, which have high 
+affinities to CO molecules. Alternatively, the direct temperature-programmed desorption (TPD) 
+technique can be used to determine the number of catalytic sites on carbon nanozymes with 
+low CO affinity, by decomposing the carbon nanozymes and measuring the quantity of probe 
+molecules.
+Experimental design
+Characterization of the number of active sites on nanozymes
+CO adsorption measurement is a widely used technique to characterize the number of active 
+sites of NPs, which is also applicable for nanozymes. In an ideal case, each CO molecule will 
+
+Nature Protocols | Volume 19 | December 2024 | 3470–3488
+3477
+Protocol update
+occupy one catalytic site via chemisorption. Therefore, the total number of catalytic sites 
+of nanozymes (Et) can be determined by measuring the CO adsorption amount (nCO, mol/g) 
+on the surface of nanozymes, conducted in a U-shaped quartz reactor inside a CO-TPD 
+instrument equipped with a thermal conductivity detector (TCD) and mass spectrometer25,26. 
+The synthesized nanozyme samples (100–150 mg) can be subjected to sequential cleaning 
+(thermal annealing), CO uptake (CO pulse chemisorption at −80 °C), and desorption 
+(temperature-programmed CO desorption) cycles. These three phases can be repeated 
+for each annealing temperature up to a maximum of 800 °C. CO adsorption amounts 
+(nCO, mol/g) can be determined by integral areas of TPD peak, which will steadily grow with 
+the annealing temperature and eventually become constant. The number of active sites can 
+then be obtained according to Et [site] = m × nCO [mol g−1] × NA [site mol−1], where m is the mass 
+of the nanozyme and NA represents the Avogadro’s constant. This method is adaptable to 
+metal-containing nanozymes, such as metal, metal oxide and single-/dual-atom nanozymes 
+with a high affinity to CO molecules. On the other hand, nanozymes with low affinity to CO 
+molecules, such as carbon nanomaterials cannot be measured by this method, because the 
+active sites of carbon nanozymes are usually heteroatoms or functional groups, which can 
+be decomposed into some heteroatom-containing species such as CO, CO2, CN, HCN, CS 
+and SO2 upon heating. In such cases, the aforementioned third step, namely TPD, can be 
+adapted to determine the number of active sites by integral areas TPD peaks for heteroatom-
+containing species, such as CO and CO2 (for O sites, CN and HCN for N sites, as well as CS and 
+SO2 for S sites27.
+Many other methods can be employed to determine these active sites. For example, 
+inductively coupled plasma optical emission spectrometry can provide quantitative 
+information on the metal active sites present in nanozymes when all the surface metal 
+atoms are active and participate in the reaction28. For carbon-based nanozymes, X-ray 
+photoelectron spectroscopy (XPS) can also provide information about the chemical state 
+and composition of the nanomaterial’s surface. By further analyzing the XPS spectra, the 
+number of catalytic sites can be estimated. For single-atom nanozymes, X-ray absorption 
+spectroscopy techniques, such as X-ray absorption near-edge structure or extended X-ray 
+absorption fine structure, can provide valuable information on the local atomic structure 
+and coordination environment around specific atoms. This can help in identifying and 
+quantifying single-atom active sites29. In addition, the number of active sites can also 
+be roughly estimated using a mathematical counting method based on the nanozyme’s 
+structure, composition and known reactivity of specific sites30. The choice of method usually 
+depends on the nature of the nanozymes, the accessibility of active sites and the desired 
+level of accuracy and sensitivity required for the measurement. Generally, a combination 
+of techniques is usually used to ensure a more reliable determination of the active sites on 
+nanozymes (Table 1).
+Characterization of the catalytic activity and kinetics of peroxidase nanozymes
+As recommended in our previous protocol19, the measurement of catalytic activity and kinetics 
+is performed at 37 °C, where the natural horseradish peroxidase has an optimal activity. The 
+kinetic constants can be characterized by measuring the reaction rate against the concentration 
+of the substrates according to the Michaelis–Menten equation, as shown in equations 2 and 3. 
+The steps used to perform the peroxidase nanozyme-catalyzed reactions and calculate their 
+catalytic activity are the same as those described in the 2018 protocol19.
+The reaction velocities are recorded by fixing the concentration of one substrate while 
+varying that of the other one. Then, the kinetic constants can be obtained by the fitted 
+Michaelis–Menten equation for the reaction velocity and the initial substrate concentration 
+(refer to the ‘Development of the protocol’ section). Equations 2 and 3 indicate that Km is 
+independent of the number of active sites (Et), but vmax depends on Et. We therefore define the 
+catalytic rate constant as kcat = vmax/[Et].
+The SA is thus defined as the activity units (U) per active site of nanozyme (rather than per 
+unit mass of nanozyme, as in the 2018 protocol). The catalytic efficiency per single site can then 
+be compared for different nanozymes.
+
+Nature Protocols | Volume 19 | December 2024 | 3470–3488
+3478
+Protocol update
+Computational kinetics for a single site of peroxidase nanozymes
+According to equations 4 and 7, the experimentally measured Km and vmax values of nanozymes 
+for both substrates depend on the adsorption energy of H2O2 (Eads,H2O2) and the activation energy 
+(Ea) for the elementary step (equations 18–19 and 21–22 in Supplementary Note 2), as well as the 
+unique physicochemical properties (m, s and σ) of nanozymes.
+Our previous density functional theory (DFT) studies have demonstrated that the value of 
+Ea decreases and then increases as the value of Eads,OH increases, with a minimum at an Eads,OH value 
+of –2.6 eV, indicating an inverted volcano relationship between Ea and Eads,OH (refs. 31,32). Eads,H2O2 
+and Eads,OH can thus be used to infer the kinetics for a single site of peroxidase nanozymes, which 
+can be experimentally confirmed using this updated protocol. Therefore, these calculated DFT 
+values and the intrinsic physicochemical properties of nanozymes can be used together with the 
+experimentally measured Michaelis–Menten kinetics to characterize the catalytic performance 
+of peroxidase nanozymes. The crystal structures are necessary to calculate these energy values.
+The Vienna Ab initio Simulation Package (VASP 5.4.4)33,34 can be employed to calculate Eads,OH for 
+nanozymes from their crystal structures using the following computational settings:
+(1)	 The Perdew–Burke–Ernzerhof functional35 with Grimme’s semi-empirical ‘D3BJ’ dispersion 
+correction36,37.
+(2)	 The plane wave basis sets38 with an energy cut-off of 450 eV for valence electrons.
+(3)	 The projector-augmented wave pseudopotentials39 for core electrons.
+(4)	 The convergence criteria for energy and atomic force of 10−5 eV and 0.02 eV/Å, respectively.
+(5)	 The Brillouin zone sampled via a 3 × 3 × 1 Monkhorst-Pack40 k-point mesh.
+The adsorption energy of molecular adsorbates (H2O2 and HO) can be obtained 
+using equation (10) after performing geometry optimizations using the aforementioned 
+computational settings:
+Eads,mol = Emol@surface −Esurface −Emol
+(10)
+where Emol@surface, Esurface and Emol are energies of the surface with molecular adsorbate, separated 
+surface and molecular adsorbate, respectively. A workflow to perform such calculations is 
+available at https://github.com/xingfagao/PyPOD.
+Materials
+Reagents
+▲ CAUTION  Always handle potentially harmful reagents in a fume hood while wearing 
+appropriate protective equipment (e.g., wear gloves, protective eyewear and a laboratory coat).
+•	 Acetic acid (HAc) (Adamas-beta, cat. no. 64-19-7)
+•	 NaAc (Merck, cat. no. 127-09-3)
+•	 KCl (HUSHI, cat. no. 7447-40-7)
+•	 NaCl (HUSHI, cat. no. 7647-14-5)
+•	 Na2HPO4 (HAWN, cat. no. 7558-79-4)
+•	 KH2PO4 (Aladdin, cat. no. 7778-77-0)
+•	 NaOH (Sigma-Aldrich, cat. no. S8045)
+•	 Chloroplatinic acid hexahydrate (H2PtCl6·6H2O) (Sigma-Aldrich, cat. no. 18497-13-7)
+•	 Poly (N-vinyl-2-pyrrolidone) (PVP, MW = 30,000) (Thermo Scientific, cat. no.9003-39-8)
+•	 Acetone (TGREAG, cat. no.67-64-1)
+•	 Methanol (TGREAG, cat. no. 67-56-1)
+•	 PtO2 (Macklin, cat. no. 1314-15-4)
+•	 TMB (Aladdin, cat. no. 54827-17-7) 
+▲ CAUTION  TMB is flammable and toxic by inhalation, in contact with skin and if swallowed. 
+Avoid prolonged or repeated exposure.
+
+Nature Protocols | Volume 19 | December 2024 | 3470–3488
+3479
+Protocol update
+•	 DAB (J&K Scientific, cat. no. 868272-85-9) 
+▲ CAUTION  DAB is flammable and toxic by inhalation, in contact with skin and if swallowed. 
+Avoid prolonged or repeated exposure.
+•	 OPD (J&K Scientific, cat. no. 95-54-5) 
+▲ CAUTION  OPD is toxic for inhalation, ingestion and skin contact. Avoid prolonged or 
+repeated exposure. Wash thoroughly after handling.
+•	 Hydrogen peroxide 30% (wt/vol) aqueous solution (Sinopharm chemical reagent Beijing, 
+cat. no. 7722-84-1) 
+▲ CAUTION  Hydrogen peroxide is highly irritant to eyes, skin and upon ingestion.
+•	 HNO3 (Sinopharm Chemical Reagents, cat. no. 7697-37-2) 
+▲ CAUTION  Causes severe burns. Do not inhale the vapor. Avoid contact with eyes, skin and 
+clothing. Avoid prolonged or repeated exposure.
+•	 Dimethyl sulfoxide (DMSO) (HAWN, cat. no. 67-68-5) 
+▲ CAUTION  DMSO is harmful if inhaled or absorbed through the skin. It is flammable.
+•	 HCl (TGREAG, cat. no. 7647-01-0) 
+▲ CAUTION  Causes severe burns. Do not inhale the vapor. Avoid contact with eyes, skin and 
+clothing. Avoid prolonged or repeated exposure.
+•	 Helium (He) gas (Air Liquide, 0523-He-01)
+•	 Carbon monoxide (CO) in He (1.985% (vol /vol)), (Air Liquide, L214506029) 
+▲ CAUTION  Careful handling of the gas cylinder is necessary due to the toxic and 
+potentially flammable nature of CO gas. Adhere to appropriate safety protocols while 
+working with CO gas, including proper ventilation and approved gas handling procedures.
+NPs
+•	 100 nm Fe3O4 NPs (Nanjing Nanoeast Biotech, cat. no. Mag9000)
+•	 In-house made Pt NPs, see ‘Reagent setup’
+•	 In-house made Pt single atom NPs, see ‘Reagent setup’
+Equipment
+•	 UV–visible spectrometer (Hitachi, model U-3900)
+•	 CO-TPD instrument (Micromeritics, model Autochem II 2920)
+•	 Thermostatic water bath (LICHEN, model no. HH-2)
+•	 TEM (JEOL, model JEM-1400)
+•	 Forced-air drying oven (Tianjin Taisite Instruments, model 101-2A)
+•	 Avanti J-E centrifuge (Beckman Coulter, model no. 369001)
+•	 Thermometer (Beijing Dihui Technology)
+•	 Biochemistry Cultivation Cabinet (Shanghai Bluepard Instruments)
+•	 96-well ‘U’-bottom plate (Corning, cat. no.2797)
+•	 Immunochramato Reader HR201 (Shenzhen Highcreation Technology, model HR201)
+•	 IsoFlow Dispenser (Imagene Technology)
+•	 Color reader (Shanghai Kinbio Tech., Model DT2050)
+•	 10-1,000 μL pipette tips (Thermo Fisher Scientific)
+•	 10-1,000 μL mechanical pipette (Eppendorf)
+•	 Microplate shaker (Thermo Fisher Scientific, cat. no. 88-861-023)
+•	 Software (the Vienna Ab initio Simulation Package, VASP 5.4.4; Materials Studio Visualizer; 
+Visualization for Electronic and STructural Analysis, VESTA)
+•	 Hardware (high-performance computers, Sogon, cat. no. X86-2H3)
+•	 BET surface area analyzer (Quantachrome, Model Nova 3200e)
+Reagent setup
+5% (wt/vol) BSA–PBS solution
+Dissolve 5 mg of BSA powder in 100 mL PBS. This can be stored at 4 °C for a maximum of 
+3 months.
+
+Nature Protocols | Volume 19 | December 2024 | 3470–3488
+3480
+Protocol update
+Preparation of Pt-SAzyme
+1.	
+Prepare the precursor powders by mixing 50 mg of PtO2 NPs with 1 g of aluminum alloy 
+powders using a ball milling process.
+2.	
+Add 1 g of the prepared precursor powders to 10 mL of a 4 % (wt/vol) saline solution and 
+allow it to react for 2 h with gentle stirring.
+3.	
+Centrifuge the resulting suspension at 5,000g for 10 min at 4 °C and wash them five times 
+with deionized water.
+4.	
+Collect the prepared Pt-SAzymes through freeze drying and suspend them in 1 mL of 
+5% (wt/vol) BSA–PBS solution. Store the Pt-SAzyme at 4 °C for a maximum of 3 months.
+Preparation of Pt NPs
+1.	
+Dissolve 49 mg of H2PtCl6·6H2O and 133 mg of PVP (Mw = 30,000) in 180 mL of methanol 
+in a 500 mL mouth flask and then reflux at 80 °C for 3 h.
+2.	
+After natural cooling to room temperature (20–30 °C), precipitate the Pt NPs by acetone 
+overnight.
+3.	
+Collect Pt NPs by centrifugation at 6,000g for 10 min.
+4.	
+Disperse Pt NPs in methanol to form a dispersion solution of 1 mg/mL. Store the Pt NPs 
+at 4 °C for a maximum of 3 months.
+TMB/OPD/DAB solution
+Dissolve TMB, OPD or DAB in DMSO to a concentration of 10 mg/mL.
+The prepared colorimetric solutions are light sensitive and should be handled in the dark 
+and used only on the day of preparation.
+NaAc–HAc buffer
+Prepare a reaction solution containing 0.2 M HAc and 0.2 M NaAc in 250 mL deionized water 
+and adjust the final pH to 3.6. The buffer can be stored at 4 °C for up to 3 months.
+Equipment setup
+CO-TPD instrument
+The Autochem II 2920 is used to measure the active sites of nanozymes. Pretreat the nanozyme 
+sample at 300 °C for 30 min, followed by cooling to 30 °C and purging in He gas for 30 min. 
+The furnace temperature is then cooled to −50 °C, and a gas flow of 2% (vol/vol) CO/He is 
+introduced. Record the mass spectrometry (MS) signals for m/z = 2, m/z = 28 and m/z = 44. 
+Allow the nanozyme sample to adsorb CO for ~30 min, then turn off CO and purge the samples 
+in He for ~30 min. As the temperature ramps up from −50 to 300 °C, the CO signal is measured 
+using a TCD.
+Procedure
+Part 1: characterization of active site using CO-TPD technique, surface area using 
+BET technique, and shape and size of nanozymes using TEM
+● TIMING  ~28 h
+1.	
+Load ~18 mg of the NP sample to be tested onto an appropriate sample holder.
+	
+▲ CRITICAL STEP  Ensure that the samples are thoroughly cleaned and free from any 
+contaminants before loading. Contaminants can adsorb to the surface, either competing 
+with CO or altering the surface properties of the tested samples.
+2.	
+Pretreat the sample by treating in Ar gas at 300 °C for 30 min (temperature ramping from 
+room temperature from 20 to 30 °C to 300 °C at 10 °C/min).
+3.	
+Cool down to 30 °C, purge the sample in He for 30 min, and then further cool down to −50 °C 
+for ~30 min.
+	
+▲ CRITICAL STEP  Ensuring sufficient cooling time is important to achieve accurate, 
+reliable and reproducible results. Insufficient cooling can lead to thermal fluctuations 
+
+Nature Protocols | Volume 19 | December 2024 | 3470–3488
+3481
+Protocol update
+that destabilize the baseline, making it difficult to distinguish between the background 
+signal and the actual sample peaks.
+4.	
+Change the gas flow to 1.985% (vol/vol) CO/He and start recording the MS signal of m/z = 28, 
+which represents the CO signal. Collect the data on temperature, gas flow rates and desorption 
+profiles throughout the experiment.
+5.	
+Allow the sample to adsorb CO for ~30 min. Then, switch off the supply of CO and 
+subsequently purge the sample with He gas for ~30 min.
+	
+▲ CRITICAL STEP  Dose the CO gas onto the sample surface while maintaining a constant 
+carrier gas flow. A constant flow of carrier gas ensures that the baseline thermal 
+conductivity, which is critical for comparisons, remains stable. Fluctuations in carrier gas 
+flow can lead to variations in baseline readings, which can skew the detector’s response to 
+the presence of CO gas and other components. known gas flow.
+6.	
+As the temperature ramps up from −50 to 300 °C, measure the CO signal by TCD.
+7.	
+Using the calculated CO amount in Step 4 corresponding to the peak of CO in He 
+gas, calculate the CO amount corresponding to the desorption peak area (refer to 
+Supplementary Fig. 1).
+8.	
+Calculate the number of active sites by the amount of CO desorbed according to the 
+following equation:
+Et [site] = m × nCO [mol/g −1] × NA
+where m is the mass of nanozyme, NA represents the Avogadro’s constant and nCO is the 
+desorbed amount of CO per mass of nanozyme (mol g−1).
+9.	
+Determine the surface area of the tested nanozymes using the conventional BET method. 
+To do this:
+•	 degas the sample in a flow of inert gas at a high temperature to ensure it is free of 
+adsorbed gases and moisture.
+•	 cool the sample to liquid nitrogen temperature.
+•	 introduce an inert adsorbate gas, such as nitrogen, to the sample.
+•	 incrementally increase the pressure of the gas to formulate an adsorption isotherm.
+•	 at each pressure increment, allow the system to reach equilibrium where no more gas is 
+adsorbed.
+•	 record the volume of gas adsorbed at each pressure step.
+•	 calculate the specific surface area of the sample using the volume of gas obtained from 
+the BET plot.
+10.	 Determine the shape and size of the tested nanozymes using the conventional TEM method. 
+To do this:
+•	 place a small droplet of the NP suspension on a carbon-coated copper grid and dry at 
+room temperature before imaging.
+•	 analyze the nanozyme using TEM operating at an accelerating voltage of 100–300 kV.
+•	 capture images at various magnifications to visualize the size and shape of the NPs.
+Part 2: characterization of the peroxidase-like activity of nanozymes
+● TIMING  ~2 h
+▲ CRITICAL  This section of the procedure is analogous to Steps 1–8 of the 2018 protocol. 
+The important difference relates to the equation used to determine the SA of the enzyme. 
+Here, the SA is related to the number of active sites (nmol) of nanozyme where in the previous 
+version, the divisor was the weight of the nanozyme sample.
+11.	 Dissolve six to ten different amounts of the nanozyme samples (from 0 to 20 μg) in 2 mL 
+of NaAc–HAc buffer (0.2 M, pH 3.6) in tubes.
+	
+▲ CRITICAL STEP  As the reaction activity and the amount of nanozyme have a linear 
+relationship, an appropriate nanozyme concentration range should be chosen to obtain 
+an accurate nanozyme activity curve. The nanozyme concentration should be much lower 
+(at least tenfold) than the sum of the substrate concentration and the Km to ensure the 
+validity of the Michaelis–Menten equation41,42.
+
+Nature Protocols | Volume 19 | December 2024 | 3470–3488
+3482
+Protocol update
+	
+▲ CRITICAL STEP  The peroxidase-like activity of the nanozymes is highly dependent 
+on pH. In this assay, the NaAc–HAc buffer (0.2 M, pH 3.6) is optimal for determining 
+the peroxidase-like activity of nanozymes (‘Reagent setup’).
+12.	 Add 100 μL of TMB solution to each nanozyme solution and mix by vortexing.
+	
+▲ CRITICAL STEP  The TMB colorimetric solution is light sensitive and thus should 
+be handled in the dark and used only on the day of preparation.
+	
+▲ CRITICAL STEP  The TMB concentration used for measuring the activity of nanozymes 
+should greatly exceed that of the nanozyme to ensure that the nanozymes added in the 
+reaction solution are saturated with TMB substrate. Generally, the TMB concentration 
+should be five times greater than the Michaelis constant (Km) of the measured nanozyme.
+	
+▲ CRITICAL STEP  ABTS (λmax = 420 nm) and OPD (λmax = 417 nm) colorimetric substrates can 
+be used when the tested peroxidase nanozymes severely interfere with the TMB absorption 
+spectrum.
+13.	 Incubate the reaction mixture at 37 °C in a thermostatic water bath in the dark for 1 min. 
+The water bath is connected to the UV/visible spectrometer.
+14.	 Add H2O2 to a final concentration of 1 M in the reaction solution.
+	
+▲ CRITICAL STEP  H2O2 should be used fresh to minimize H2O2 decomposition. In particular, 
+the H2O2 stock solution bottle (30% (wt/vol) aqueous solution) should not be open for more 
+than 1 month.
+	
+▲ CRITICAL STEP  The H2O2 concentration used for measuring the activity of nanozymes 
+should be excessive to ensure that the nanozymes added in the reaction solution are 
+saturated with H2O2 substrate.
+15.	 In addition to the solutions prepared in Step 14, prepare a solution without addition of H2O2. 
+This solution will serve as the background measurement for Step 17.
+16.	 Mix and incubate the reaction solution at 37 °C in the dark and measure the colorimetric 
+response by absorbance at 652 nm every 10 s for up to 800 s after H2O2 addition.
+	
+▲ CRITICAL STEP  Users can end the reaction early if the reaction plateau has been reached 
+(see Fig. 2b for examples).
+	
+▲ CRITICAL STEP  Peroxidase nanozymes show catalytic activity under a wide range of 
+temperatures (between 20 and 50 °C), whereas natural peroxidases show optimal catalytic 
+activity at 37 °C (ref. 19). To make a valid comparison between nanozymes and natural 
+peroxidases, we recommend performing all catalytic activity measurements at 37 °C.
+	
+▲ CRITICAL STEP  We recommend performing the experiment in triplicate to ensure 
+reproducibility and consistency of the results.
+	
+◆ TROUBLESHOOTING
+17.	 Plot the absorbance intensities at 652 nm against the reaction time to obtain the reaction–
+time curve (see Fig. 2b for examples).
+	
+▲ CRITICAL STEP  The resulting absorbance should be calculated by subtraction of the 
+background absorbance at 652 nm caused by the nanomaterials themselves.
+18.	 Calculate the catalytic activity (units) of the measured nanozymes using the following 
+equation:
+bnanozyme = V/ (ε × l) × (ΔA/Δt)
+where bnanozyme is the catalytic activity of the measured nanozymes and expressed in 
+unit (U). One U is defined as the amount of nanozyme that catalytically produces one μmol 
+of product per minute measured at 37 °C under the assay conditions employed. V is the 
+total volume of reaction solution (μL); ε is the molar absorption coefficient of the used 
+colorimetric substrate, which is typically maximized at 39,000 M−1 cm−1 at 652 nm for TMB 
+(the ε value of the other two commonly used substrates: OPD: ε417 nm = 16,700 M−1 cm−1, 
+ABTS: ε420 nm = 36,000 M−1 cm−1)19; l is the path length of light travel in the cuvette (cm); 
+A is the absorbance after subtracting the blank value; ΔA/Δt is the initial rate of change in 
+absorbance at 652 nm per min.
+▲ CRITICAL STEP  For a short period after the start of the reaction, generally within the 
+period of 5% change of the initial substrate concentration, the product of the nanozyme 
+
+Nature Protocols | Volume 19 | December 2024 | 3470–3488
+3483
+Protocol update
+is generated at an initial rate that is approximately linear to the reaction time (see Fig. 2c 
+for examples). Therefore, the ΔA/Δt value (i.e., the slope value in the initial rate period 
+of the reaction) is constant, and the calculated bnanozyme value from ΔA/Δt is thus a constant. 
+The length of the initial rate period is generally determined when the R2 coefficients are 
+close to 1 after a linear regression analysis.
+◆ TROUBLESHOOTING
+19.	 Calculate the SA of the tested nanozyme sample (U/nmol) by using the following formula:
+ananozyme = bnanozyme/Et
+where ananozyme is the SA defined as the activity units (U) per active site of nanozyme (U/nmol) 
+and Et is the number of active sites (nmol) of nanozyme.
+▲ CRITICAL STEP  As the peroxidase-like activity of nanozymes (bnanozyme) is linearly 
+proportional to the number of active sites, the ananozyme value will be calculated by plotting 
+the catalytic activity of bnanozyme against Et and measuring the slope of the resultant straight 
+line (see Fig. 2d for examples).
+Part 3: characterization of the catalytic kinetics for peroxidase nanozymes
+● TIMING  ~2 h
+20.	 Dissolve 10 µg of nanozyme in 2 mL Hac–NaAc buffer (0.2 M, pH 3.6).
+21.	 Add various volumes (from 0 to 100 µL) of the TMB stock solution (10 mg/mL in DMSO) to 
+the reaction mixture.
+	
+▲ CRITICAL STEP  Generally, the reaction velocities are recorded by fixing the concentration 
+of one substrate ([H2O2] or [TMB]) while varying that of the other one. The kinetic constants 
+thus can be obtained by the fitted Michaelis–Menten equation for the reaction velocity and 
+the initial substrate concentration. In the examples provided in this protocol, we record the 
+reaction velocities by fixing the concentration of H2O2 while varying TMB.
+	
+▲ CRITICAL STEP  To obtain a well-fitted Michaelis–Menten curve, this assay should be 
+performed over a suitable TMB substrate concentration range. Usually, concentrations of 
+TMB substrate range straddle the Km value and range from 0.5 × Km to 5 × Km.
+22.	 Add H2O2 to the reaction mixture to a final concentration of 1 M.
+	
+▲ CRITICAL STEP  The H2O2 concentration used for the kinetic measurement of peroxidase 
+nanozymes should be excessive to ensure that the added nanozymes in the reaction 
+solution are saturated with H2O2 substrate.
+23.	 Mix the samples, incubate the reaction mixture in a 37 °C water bath, and record the change 
+of absorbance at 652 nm every 10 s for up to 100 s (see Part 2, Steps 16–17).
+24.	 Calculate the initial rate from the ΔA/Δt value (see Part 2, Step 18).
+25.	 Plot the calculated initial rate against the TMB substrate concentrations to produce the 
+Michaelis–Menten curve (see Fig. 3 for examples).
+	
+▲ CRITICAL STEP  To obtain a well-fitted Michaelis–Menten curve, choose an appropriate 
+TMB substrate concentration range.
+	
+◆ TROUBLESHOOTING
+26.	 Calculate the kinetic constants of νmax and Km by fitting the reaction velocity values and the 
+substrate concentrations to the Michaelis–Menten equation as follows:
+ν = (νmax × [S]) / (Km + [S])
+where ν is the initial reaction velocity, νmax is the maximal reaction rate that is observed at 
+saturating TMB substrate concentrations, [S] is the concentration of TMB substrate and Km 
+is the Michaelis constant. Km reflects the affinity of the nanozyme for TMB substrate.
+▲ CRITICAL STEP  Sometimes the accurate νmax cannot be obtained due to insufficient 
+substrate being added. A double-fitting method (see ref. 43 for examples) is suggested to 
+confirm the accuracy of the obtained νmax of the tested peroxidase nanozyme.
+27.	 Calculate the catalytic constant (kcat) using the following equation:
+kcat = vmax/ [Et]
+
+Nature Protocols | Volume 19 | December 2024 | 3470–3488
+3484
+Protocol update
+where, kcat is the rate constant defining the maximum number of TMB substrates converted 
+to product per second and [Et] is the molar concentration of the active sites on a nanozyme 
+particle (M), which is determined in Step 8.
+▲ CRITICAL STEP  [Et] is determined by the unique physicochemical properties of the tested 
+nanozyme. The physicochemical characterization described in Part 1 should be performed 
+carefully.
+28.	 Repeat Steps 20–27 and obtain the catalytic kinetic constants of the nanozyme for another 
+substrate of H2O2 by fixing the concentration of TMB while varying that of H2O2.
+	
+▲ CRITICAL STEP  The concentration of TMB used should be excessive to ensure that the 
+added nanozymes in the reaction solution are saturated with TMB.
+	
+▲ CRITICAL STEP  The used range of H2O2 concentration should straddle the Km value and 
+range from 0.5 × Km to 5 × Km to obtain a well-fitted Michaelis–Menten curve.
+Part 4: computational kinetics for a single site of peroxidase nanozymes
+● TIMING  ~36 h
+29.	 Browse and download crystal structures (in cif format) of nanozymes from the materials 
+project (https://next-gen.materialsproject.org/).
+30.	 Prepare input files in text format (INCAR, POSCAR, POTCAR and KPOINTS) used by the VASP 
+program to optimize the geometry of the crystal structures. Examples of these files can be 
+found at https://github.com/xingfagao/PyPOD.
+•	 The INCAR and KPOINTS (KPOINTS_For_Bulk) files can be used directly (remember to 
+copy KPOINTS_For_Bulk to KPOINTS).
+•	 The POSCAR file can be exported from the crystal structure using the VESTA software.
+•	 POTCAR files are provided with the VASP program and are license protected (therefore 
+we have not included an example of this file). The POTCAR file used in the calculations 
+can be prepared by merging the POTCAR files for different atoms in the order they 
+appear in the POSCAR file.
+•	 Upload these files to a workstation or supercomputer and submit a job to execute the 
+VASP program.
+31.	 Create nanosurfaces (slab models) using the optimized crystal structure at all positions 
+for surface cut and select the most appropriated one. The slab models can be created 
+using the ‘Cleavage Surface’ module in the Materials Studio software and are exported 
+as ‘.cif’ files.
+	
+▲ CRITICAL STEP  There are many possible exposed surfaces of nanozymes with different 
+miller indices. It is recommended to refer to the experimental results or literature to select 
+the nanozyme with the most exposed surfaces. If such information is unknown, the most 
+stable exposed surface is recommended.
+32.	 Prepare input files (INCAR, POSCAR, POTCAR, and KPOINTS) for VASP calculations of 
+adsorbates and nanosurfaces, then perform VASP calculations.
+•	 The INCAR and POTCAR files can be the same as those used in Step 30.
+•	 The KPOINT file should be changed to the 3 × 3 × 1 Monkhorst-Pack k-point mesh 
+(the KPOINTS_For_Slab file was provided at at https://github.com/xingfagao/PyPOD 
+for reference).
+•	 The POSCAR files for slabs can be exported from the crystal structures (exported 
+cif files in Step 31) using the VESTA software. Upload these files to a workstation or 
+supercomputer and submit a job to execute the VASP program.
+◆ TROUBLESHOOTING
+33.	 Generate the adsorption structures of adsorbates (H2O2 and OH) on nanosurfaces 
+(slab models) and prepare input files for VASP calculations.
+34.	 Execute the VASP program for calculations of adsorbates–adsorbed structures in a 
+workstation or supercomputer.
+	
+▲ CRITICAL STEP  There are usually many available adsorption sites on the surfaces 
+of nanozymes. All these sites should be considered in the calculations, which are time 
+consuming. The use of a supercomputer is highly recommended.
+
+Nature Protocols | Volume 19 | December 2024 | 3470–3488
+3485
+Protocol update
+35.	 Extract the energy values for the surface with molecular adsorbate (Emol@surface), separated 
+surface (Esurface) and molecular adsorbate (Emol) to calculate the adsorption energy (Eads,mol) 
+using the following equation:
+Eads,mol = Emol@surface −Esurface −Emol
+where Emol@surface, Esurface and Emol are energies of the surface with molecular adsorbate, 
+separated surface and molecular adsorbate, respectively. A workflow to perform such 
+calculations is available at https://github.com/xingfagao/PyPOD.
+Troubleshooting
+Troubleshooting advice can be found in Table 3.
+Timing
+Part 1, Steps 1–10, characterization of active site, surface area, shape and size of nanozymes: 28 h
+Steps 1–8, measurement of active sites of nanozyme: 2 h
+Step 9, measurement of surface areas of nanozyme: 12 h
+Step 10, measurement of shape, and size of nanozyme: 14 h
+Part 2, Steps 11–19, characterization of the peroxidase-like activity of nanozymes: 2 h
+Part 3, Steps 20–28, characterization of the catalytic kinetics for peroxidase nanozymes: ~2 h
+Part 4, Steps 29–35, computational kinetics for a single site of peroxidase nanozymes: ~36 h
+Steps 29–30, calculation of bulk crystal: 1.5 h
+Steps 31–32, calculations of adsorbates and nanosurfaces: 10 h
+Steps 33–34, calculation of adsorbate-adsorbed surfaces: 24 h
+Step 35, data analysis: 30 min
+Table 3 | Troubleshooting table
+Step
+Problem
+Possible reason
+Solution
+16
+Background interference at the 
+652 nm absorption peak
+The absorption spectrum of the tested nanozyme solution 
+interferes at 652 nm
+Subtract the background absorbance or use other 
+colorimetric substrates such as DAB or OPD with no 
+overlapping absorption
+18
+The slope value in the initial 
+rate period of the reaction is not 
+constant
+Choose an inappropriate initial rate period for determining 
+the initial rate
+Determine the length of the initial rate when the R2 
+coefficients are close to 1 after a linear regression 
+analysis
+Fail to calculate the initial rate
+The substrate concentration used should greatly exceed 
+that of the nanozyme to ensure that the added nanozymes 
+in the reaction solution are saturated with substrate
+The substrate concentration (TMB or H2O2) should be 
+5 times greater than the Michaelis constant (Km) of the 
+measured nanozyme
+25
+Fail to fit the Michaelis–Menten 
+curve from the measured data
+Choose an inappropriate range of TMB substrate 
+concentrations
+A suitable TMB substrate concentration range should 
+straddle the Km value and range roughly from 0.5 × Km 
+to 5 × Km
+32
+Surface structures are severely 
+changed
+The selected surface models are unreasonable
+Change the position of the surface cut in constructing 
+surface models or discard the unreasonable structures
+Calculations fail to convergence
+The electronic structures are too complex
+Change the initial assignments of magnetic centers 
+(antiferromagnetic or ferromagnetic)
+
+Nature Protocols | Volume 19 | December 2024 | 3470–3488
+3486
+Protocol update
+Anticipated results
+In this protocol, we employed three classic peroxidase nanozymes, including Fe3O4 NPs, Pt NPs 
+and Pt-SAzyme, as representative examples to present how to determine the catalytic activity 
+and kinetics of nanozymes. Figure 2 shows an example of how to determine the peroxidase-like 
+activity of Fe3O4 NPs, Pt NPs and Pt-SAzyme using this updated protocol. As shown in Fig. 2a, 
+Fe3O4 NPs, Pt NPs or Pt-SAzyme show the typical peroxidase-like activity by catalyzing the 
+oxidation of peroxidase substrates of TMB, DAB or OPD to produce the unique color reactions. 
+Figure 2b,c shows the typical reaction-time curves of TMB color reaction catalyzed by these 
+three nanozymes, and Fig. 2d shows their typical SA (U per nmol of active sites). The number of 
+active sites (nmol) of nanozyme (Et) was measured using the carbon monoxide (CO) adsorption 
+method (Supplementary Fig. 1). Generally, each CO molecule will occupy one catalytic site 
+of nanozyme via chemisorption, and thus, the Et value can be determined by measuring the 
+amount of CO adsorption on the surface of nanozymes. Specifically, Et is determined by the 
+unique physicochemical properties of nanozymes, including their composition, defects, 
+size, shape, surface modification and atomic configuration. Figure 2d shows that the catalytic 
+activity unit is linearly proportional to the number of active sites of Et, thus yielding a unity 
+slope (i.e., SA) of 0.0261 units for Fe3O4 NPs, 1.14 units for Pt NPs and 24.7 units for Pt-SAzyme 
+per nmol of metal active sites, clearly indicating the catalytic activity of a single site of the 
+tested nanozyme that is dependently determined by the unique physicochemical properties 
+of nanozymes. For example, the catalytic activity of Pt catalytic sites was increased from 1.14 to 
+24.7 units per nmol of Pt atoms after atomization of Pt atom from Pt metal crystals into Pt single 
+atom chemically coordinated with N, P and S atoms. The results show that the SA (i.e., units per 
+nmol of active sites) determined using this updated protocol thus can truly indicate the impact 
+of the unique physicochemical properties on the catalytic activity of nanozymes.
+Figure 3 shows a typical example of determining the kinetic constants of peroxidase Fe3O4 
+NPs, Pt NPs and Pt-SAzyme using the procedures described in this protocol. The reaction 
+velocity values were recorded by fixing the concentration of H2O2 while varying that of TMB, 
+and the kinetic constants of the tested nanozymes for TMB were obtained by fitting to the 
+Michaelis–Menten equation using a nonlinear regression analysis (Fig. 2). Similarly, by fixing 
+the concentration of TMB while varying that of H2O2, dependency of reaction rate on the H2O2 
+substrate in the form of Michaelis–Menten equation can also be obtained. The results indicate 
+that even the same Pt active sites will show a considerably different catalytic kinetics along 
+with the changes in shape, size, atomic configuration and electronic structure of the central 
+Pt atoms, showing that this updated protocol can practically indicate the catalytic activity of 
+nanozymes with completely different unique physicochemical properties.
+We further demonstrate the close relationship between the catalytic kinetics of peroxidase 
+nanozymes and their binding affinities to H2O2 and hydroxyl group (OH). To obtain Eads,H2O2 
+and Eads,OH of Fe3O4 NPs, we performed DFT calculations according to Part 4 of the procedure. 
+As shown in Fig. 4, the surface structures of Fe3O4 NPs were considered in our calculations. 
+These structures have different exposed surfaces (001 and 111) and different numbers of iron 
+vacancies. The corresponding adsorption energies of H2O2 and OH on these surfaces are given 
+in Table 1. The different adsorption energies between these various nanozyme surfaces suggest 
+their distinct catalytic kinetics. Since the exposed surfaces are dependent on the morphologies 
+of nanozymes, the calculated results are consistent with the morphology-dependent catalytic 
+activity of nanozymes observed in the above experiments. In addition, the vacancies also 
+significantly influence the catalytic kinetics of the same surface. For example, on the Fe3O4(001) 
+surface, the Eads,H2O2 varies from ‒0.77 to ‒1.22 eV, indicating different Km values. Equation 6 
+shows that the Km for the H2O2 substrate decreases, indicating better catalytic kinetics, as 
+the Eads,H2O2 becomes more negative. Similarly, equation 5 demonstrates that Eads,OH affects the 
+vmax values, but its influence is not as straightforward as that of Eads,H2O2 on Km. This is because 
+the ΔG‡ of the rate-determining step does not increase or decrease linearly with the increase in 
+Eads,OH (less negative). On the other hand, the ΔG‡ initially decreases and then increases as Eads,OH 
+becomes more negative, reaching a minimum at Eads,OH of ‒2.6 eV (ref. 31). Therefore, if the tested 
+
+Nature Protocols | Volume 19 | December 2024 | 3470–3488
+3487
+Protocol update
+nanozyme has an Eads,OH value close to −2.6 eV, a large vmax value is expected. The results suggest 
+that the Fe3O4 nanozymes containing vacancies exhibit better peroxidase-like catalytic activity 
+than those with high purity. This result also explains the observed differences in peroxidase-like 
+activity of Fe3O4 NPs from various groups1,44. These computed adsorption energies thus can be 
+combined with the experimentally characterized physicochemical properties of nanozymes to 
+better describe the catalytic performance of nanozymes. More importantly, these energy values 
+can further guide the rational design of nanozymes by engineering the electronic, geometric 
+structure and atomic configuration of their catalytic sites. For example, the Fe3O4(001)-(Fev) 
+has an Eads,OH value closer to −2.6 eV than that of Fe3O4(111)B-(Fev)4 (Table 2), suggesting improved 
+peroxidase-like activity and kinetics. Thus, experimental efforts should focus on controlling 
+the morphology of Fe3O4 with a more exposed 001 surface to achieve high peroxidase-like 
+activity of Fe3O4 NPs. Such criteria have been successfully applied to understand the relative 
+peroxidase-like activity of nanomaterials and design better peroxidase-like nanozymes24,45,46.
+Data availability
+All data are available in the accompanying Supplementary Information.
+Received: 28 December 2023; Accepted: 31 May 2024;
+Published online: 15 August 2024
+References
+1.	
+Gao, L. et al. Intrinsic peroxidase-like activity of ferromagnetic nanoparticles. 
+Nat. Nanotechnol. 2, 577–583 (2007).
+2.	
+Kotov, N. A. Inorganic nanoparticles as protein mimics. Science 330, 188–189  
+(2010).
+3.	
+Xie, B. et al. Hollow and porous Fe3C-NC nanoballoons nanozymes for cancer cell 
+H2O2 detection. Sens. Actuators B Chem. 347, 130597 (2021).
+4.	
+Yuan, B., Chou, H. L. & Peng, Y. K. Disclosing the origin of transition metal oxides 
+as peroxidase (and catalase) mimetics. ACS Appl. Mater. Interfaces 14, 22728–22736 
+(2022).
+5.	
+Meng, X. et al. Bimetallic nanozyme: a credible tag for in situ-catalyzed reporter 
+deposition in the lateral flow immunoassay for ultrasensitive cancer diagnosis. 
+Nano Lett. 24, 51–60 (2024).
+6.	
+Wang, X., Chen, M. & Zhao, L. Development of a colorimetric sensing assay for ascorbic 
+acid and sarcosine utilizing the dual-class enzyme activity of Fe3O4@SiO2@NiCo2S4. 
+Chem. Eng. J. 468, 143612 (2023).
+7.	
+Zhou, X. et al. Nanozyme inhibited sensor array for biothiol detection and disease 
+discrimination based on metal ion-doped carbon dots. Anal. Chem. 95, 8906–8913 
+(2023).
+8.	
+Jiang, Y. et al. Transformable hybrid semiconducting polymer nanozyme for second 
+near-infrared photothermal ferrotherapy. Nat. Commun. 11, 1857 (2020).
+9.	
+Liu, T. et al. Ultrasmall copper-based nanoparticles for reactive oxygen species 
+scavenging and alleviation of inflammation related diseases. Nat. Commun. 11, 
+2788 (2020).
+10.	
+Cao, C. et al. Starvation, ferroptosis, and prodrug therapy synergistically enabled 
+by a cytochrome c oxidase like nanozyme. Adv. Mater. 34, 2203236 (2022).
+11.	
+Cao, F. et al. Self-adaptive single-atom catalyst boosting selective ferroptosis in tumor 
+cells. ACS Nano 16, 855–868 (2022).
+12.	
+Ding, L. et al. Living macrophage-delivered tetrapod PdH nanoenzyme for targeted 
+atherosclerosis management by ros scavenging, hydrogen anti-inflammation, and 
+autophagy activation. ACS Nano 16, 15959–15976 (2022).
+13.	
+Wei, H. & Wang, E. Nanomaterials with enzyme-like characteristics (nanozymes): next-
+generation artificial enzymes. Chem. Soc. Rev. 42, 6060–6093 (2013).
+14.	
+Wu, J. et al. Nanomaterials with enzyme-like characteristics (nanozymes): next-
+generation artificial enzymes (II). Chem. Soc. Rev. 48, 1004–1076 (2019).
+15.	
+Wang, H., Wan, K. & Shi, X. Recent advances in nanozyme research. Adv. Mater. 31, 
+e1805368 (2019).
+16.	
+Liang, M. & Yan, X. Nanozymes: from new concepts, mechanisms, and standards to 
+applications. Acc. Chem. Res. 52, 2190–2200 (2019).
+17.	
+Huang, Y., Ren, J. & Qu, X. Nanozymes: classification, catalytic mechanisms, activity 
+regulation, and applications. Chem. Rev. 119, 4357–4412 (2019).
+18.	
+Yan, X. (ed) Nanozymology: Connecting Biology and Nanotechnology Vol 1 
+(Springer Nature, 2020).
+19.	
+Jiang, B. et al. Standardized assays for determining the catalytic activity and kinetics 
+of peroxidase-like nanozymes. Nat. Protoc. 13, 1506–1520 (2018).
+20.	 Cha, S. A simple method for derivation of rate equations for enzyme-catalyzed reactions 
+under the rapid equilibrium assumption or combined assumptions of equilibrium and 
+steady state. J. Biol. Chem. 243, 820–825 (1968).
+21.	
+Fraser, S. J. The steady state and equilibrium approximations: a geometrical picture. 
+J. Chem. Phys. 88, 4732–4738 (1988).
+22.	 Rodriguez-Lopez, J. N., Gilabert, M. A., Tudela, J., Thorneley, R. N. F. & Garcia-Canovas, F. 
+Reactivity of horseradish peroxidase compound II toward substrates: kinetic evidence 
+for a two-step mechanism. Biochemistry 39, 13201–13209 (2000).
+23.	 Gao, X. J., Zhao, Y. & Gao, X. Catalytic signal transduction theory enabled virtual 
+screening of nanomaterials for medical functions. Acc. Chem. Res. 56, 2366–2377 
+(2023).
+24.	 Gao, X. J., Yan, J., Zheng, J. J., Zhong, S. & Gao, X. Clear-box machine learning for virtual 
+screening of 2D nanozymes to target tumor hydrogen peroxide. Adv. Healthc. Mater. 12, 
+e2202925 (2023).
+25.	 Hulva, J. et al. Adsorption of Co on the Fe3O4 (001) surface. J. Phys. Chem. B 122, 721–729 
+(2018).
+26.	 Luo, F. et al. Accurate evaluation of active-site density (SD) and turnover frequency 
+(TOF) of PGM-free metal–nitrogen-doped carbon (MNC) electrocatalysts using CO cryo 
+adsorption. ACS Catal. 9, 4841–4852 (2019).
+27.	
+Herold, F., Gläsel, J., Etzold, B. J. M. & Rønning, M. Can temperature-programmed 
+techniques provide the gold standard for carbon surface characterization? Chem. Mater. 
+34, 8490–8516 (2022).
+28.	 Chen, Y. et al. Thermal atomization of platinum nanoparticles into single atoms: an 
+effective strategy for engineering high-performance nanozymes. J. Am. Chem. Soc. 143, 
+18643–18651 (2021).
+29.	 Ji, S. et al. Matching the kinetics of natural enzymes with a single-atom iron nanozyme. 
+Nat. Catal. 4, 407–417 (2021).
+30.	 Zandieh, M. & Liu, J. Nanozyme catalytic turnover and self-limited reactions. ACS Nano 
+15, 15645–15655 (2021).
+31.	
+Shen, X., Wang, Z., Gao, X. & Zhao, Y. Density functional theory-based method to predict 
+the activities of nanomaterials as peroxidase mimics. ACS Catal. 10, 12657–12665 (2020).
+32.	 Shen, X., Wang, Z., Gao, X. J. & Gao, X. Reaction mechanisms and kinetics of nanozymes: 
+insights from theory and computation. Adv. Mater. 36, e2211151 (2024).
+33.	 Kresse, G. & Furthmuller, J. Efficiency of ab-initio total energy calculations for metals 
+and semiconductors using a plane-wave basis set. Comput. Mater. Sci. 6, 15–50 (1996).
+34.	 Kresse, G. & Furthmuller, J. Efficient iterative schemes for ab initio total-energy 
+calculations using a plane-wave basis set. Phys. Rev. B 54, 11169–11186 (1996).
+35.	 Perdew, J. P., Burke, K. & Ernzerhof, M. Generalized gradient approximation made simple. 
+Phys. Rev. Lett. 77, 3865–3868 (1996).
+36.	 Grimme, S., Antony, J., Ehrlich, S. & Krieg, H. A consistent and accurate ab initio 
+parametrization of density functional dispersion correction (DFT-D) for the 94 elements 
+H-Pu. J. Chem. Phys. 132, 154104 (2010).
+37.	
+Grimme, S., Ehrlich, S. & Goerigk, L. Effect of the damping function in dispersion 
+corrected density functional theory. J. Comput. Chem. 32, 1456–1465 (2011).
+
+Nature Protocols | Volume 19 | December 2024 | 3470–3488
+3488
+Protocol update
+38.	 Blochl, P. E. Projector augmented-wave method. Phys. Rev. B 50, 17953–17979 (1994).
+39.	 Kresse, G. & Joubert, D. From ultrasoft pseudopotentials to the projector augmented-
+wave method. Phys. Rev. B 59, 1758–1775 (1999).
+40.	 Monkhorst, H. J. & Pack, J. D. Special points for Brillouin-zone integrations. Phys. Rev. B 
+13, 5188–5192 (1976).
+41.	
+Kim, J. K. & Tyson, J. J. Misuse of the Michaelis–Menten rate law for protein interaction 
+networks and its remedy. PLoS Comput. Biol. 16, e1008258 (2020).
+42.	 Choi, B., Rempala, G. A. & Kim, J. K. Beyond the Michaelis–Menten equation: accurate and 
+efficient estimation of enzyme kinetic parameters. Sci. Rep. 7, 17018 (2017).
+43.	 Wang, Y., Li, T. & Wei, H. Determination of the maximum velocity of a peroxidase-like 
+nanozyme. Anal. Chem. 95, 10105–10109 (2023).
+44.	 Gumpelmayer, M. et al. Magnetite Fe3O4 has no intrinsic peroxidase activity, and 
+is probably not involved in Alzheimer’s oxidative stress. Angew. Chem. Int. Ed. 57, 
+14758–14763 (2018).
+45.	 Fan, H. et al. Surface ligand engineering ruthenium nanozyme superior to horseradish 
+peroxidase for enhanced immunoassay. Adv. Mater. 36, 2300387 (2024).
+46.	 Ma, C. B. et al. Guided synthesis of a Mo/Zn dual single-atom nanozyme with synergistic 
+effect and peroxidase-like activity. Angew. Chem. Int. Ed. 61, e202116170 (2022).
+Acknowledgements
+This work was supported by the National Key R&D Program of China (2022YFA1205801), 
+the Basic Science Center Project of the National Natural Science Foundation of China 
+(22388101), the National Natural Science Foundation of China (T2225026, 52202344, 
+82172087, 22203020, 52161135107) and the Beijing Institute of Technology Research Fund 
+Program for Young Scholars.
+Author contributions
+M.L. and X.G. conceived and designed the experiments. J.-J.Z., F. Z. and J.H. performed 
+the experiments. M.L., X.G. and J.-J.Z. wrote the paper. All authors discussed the results 
+and commented on the manuscript.
+Competing interests
+The authors declare no competing interests.
+Additional information
+Supplementary information The online version contains supplementary material available at  
+https://doi.org/10.1038/s41596-024-01034-7.
+Correspondence and requests for materials should be addressed to Jiuyang He, Xingfa Gao 
+or Minmin Liang.
+Peer review information Nature Protocols thanks Jae Kyoung, Hui Wei and Yu Zhang for their 
+contribution to the peer review of this work.
+Reprints and permissions information is available at www.nature.com/reprints.
+Springer Nature or its licensor (e.g. a society or other partner) holds exclusive rights to this 
+article under a publishing agreement with the author(s) or other rightsholder(s); author 
+self-archiving of the accepted manuscript version of this article is solely governed by the 
+terms of such publishing agreement and applicable law.
+Related links
+Key reference using this protocol
+Jiang, B. et al. Nat. Protoc. 13, 1506–1520 (2018): https://doi.org/10.1038/s41596-018-0001-1
+Chen, Y. et al. J. Am. Chem. Soc. 143, 18643–18651 (2021): https://doi.org/10.1021/jacs.1c08581
+Shen, X. et al. ACS Catal. 10, 12657–12665 (2020): https://doi.org/10.1021/acscatal.0c03426
+© Springer Nature Limited 2024

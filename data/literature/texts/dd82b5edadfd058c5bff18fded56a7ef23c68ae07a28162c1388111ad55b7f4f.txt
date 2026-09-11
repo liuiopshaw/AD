@@ -1,0 +1,1793 @@
+Advanced Functional Materials
+www.afm-journal.de
+RESEARCH ARTICLE
+PH-Responsive Cu-Fe-MOF@Ag Nanocomposite Modulates
+Antibacterial and Anti-Inflammatory Activity in Infected
+Wounds
+Zhongshang Guo1
+Ruiling Hu2
+Lingna Wang3
+Hao Han4
+Ching Yuan Hu5
+Xinli Zhou1
+Tinghui Qiang1
+Shaobo Guo2
+Long Bi3
+1Department of Osteoarticular Surgery, Hanzhong Central Hospital, Hanzhong, Shaanxi, China
+2Shaanxi Key Laboratory of Catalysis, School of Chemical and
+Environmental Science, Shaanxi University of Technology, Hanzhong, Shaanxi, China
+3Department of Orthopedics, Xijing Hospital, the Air Force Medical
+University, Xi’an, Shaanxi, China
+4Shaanxi Provincial Bioresource Key Laboratory, College of Biological Science and Engineering, Shaanxi University of
+Technology, Hanzhong, Shaanxi, China
+5Department of Human Nutrition, Food and Animal Sciences, College of Tropical Agriculture and Human Resources,
+University of Hawaii at Manoa, Honolulu, Hawaii, USA
+Correspondence: Shaobo Guo (guoshaobo@snut.edu.cn)
+Long Bi (bilong@fmmu.edu.cn)
+Received: 10 December 2025
+Revised: 30 March 2026
+Accepted: 27 April 2026
+Keywords: antibacterial and anti-inflammatory regulation | infected wound healing | macrophage polarization | pH-responsive nanocomposite | tissue
+regeneration
+ABSTRACT
+Bacterial colonization disrupts wound microenvironments, triggering oxidative stress and macrophage dysfunction that impede
+healing. Addressing the need for adaptive therapies, we developed a pH-responsive metal-organic framework (MOF) decorated
+with Ag nanoparticles (Cu-Fe-MOF@Ag) integrating 2-methylimidazole, Cu2+, and Ag nanoparticles. Here, we synthesized this
+multifunctional material that autonomously modulates antibacterial and anti-inflammatory activities in response to wound pH
+changes. Under acidic conditions, Cu-Fe-MOF@Ag achieved a 99.99% antibacterial rate against drug-resistant Escherichia coli
+(D–E. coli) at a concentration of 35 µg mL−1, and accelerated wound closure to 98% within 12 d. Its antibacterial mechanism arises
+from the synergistic effect of surface positive charge, reactive oxygen species (ROS), and released metal ions. As the pH shifts to
+alkaline, it scavenges excess reactive oxygen species, promoting macrophage polarization and tissue regeneration. In vivo, Cu-Fe-
+MOF@Ag accelerated the infected wound’s closure, reduced inflammation, and enhanced collagen deposition and angiogenesis
+without systemic toxicity. This study presents a dynamic, infection-responsive platform that synchronizes antibacterial and anti-
+inflammatory regulation, offering a promising strategy for managing chronic and infected wounds.
+1
+Introduction
+Wound healing is a highly orchestrated physiological process
+comprising four overlapping phases: hemostasis, inflammation,
+proliferation, and remodeling [1–3]. However, this process is
+highly susceptible to disruption by microbial infection. During
+the hemostatic phase, the wound environment becomes moist
+and accumulates necrotic cells, tissue debris, and blood exu-
+dates, which together provide abundant sources of carbon and
+nitrogen. This creates a favorable niche for bacterial colonization
+[4, 5]. When the invasive capacity of pathogenic microorganisms
+exceeds the host’s immune defenses, an infected wound devel-
+ops. As bacteria proliferate, they secrete metabolic byproducts
+such as lactic acid and pyruvic acid, leading to acidification of
+the wound microenvironment. This reduction in pH activates
+immune responses and triggers the recruitment of neutrophils to
+© 2026 Wiley-VCH GmbH
+Advanced Functional Materials, 2026; 0:e75725
+https://doi.org/10.1002/adfm.75725
+1 of 19
+
+the infection site to clear the pathogens [6, 7]. After bacterial elim-
+ination, the wound milieu gradually transitions from acidic to
+alkaline due to the release of inflammatory mediators and tissue
+exudates. More critically, bacterial lysis releases cellular debris,
+intracellular components, and deoxyribonucleic acid (DNA) frag-
+ments that can further amplify inflammatory signaling [8, 9],
+resulting in excessive inflammation, impaired angiogenesis, and
+delayed or even arrested wound healing [10]. In clinical practice,
+effective bacterial eradication and precise regulation of inflam-
+mation remain central challenges in managing infected wounds.
+Conventional strategies, including debridement, antibiotic ther-
+apy, antioxidant treatment, and bioengineered skin substitutes,
+provide only partial benefits [11–13].
+Nevertheless, recurrent infection after treatment remains com-
+mon. Moreover, traditional antibacterial and anti-inflammatory
+drugs lack phase-specific responsiveness and cannot adapt to the
+dynamic pH fluctuations and biochemical changes that occur
+during different healing stages (i.e., antibacterial, inflammatory,
+and proliferative phases). This limitation often leads to overmed-
+ication, reduced efficacy, or even complete loss of drug activity
+under changing microenvironmental conditions, thereby compli-
+cating clinical management. Epidemiological data indicate that
+approximately 300 000 deaths occur annually worldwide due to
+bacterial infection-related complications [14]. Therefore, there is
+an urgent need to develop next-generation antimicrobial systems
+that not only achieve potent bactericidal activity but also dynam-
+ically adapt to the evolving wound microenvironment, alleviate
+excessive inflammation, and exert stage-specific antibacterial and
+anti-inflammatory effects.
+Antibacterial metal-organic frameworks (MOFs) have attracted
+considerable attention in biomedicine owing to their large surface
+area, tunable ligand composition, and multiple antimicrobial
+mechanisms [15]. Among these, iron-based MOFs (Fe-MOFs) are
+regarded as promising candidatess for treating infected wounds
+due to their intrinsic antibacterial activity, excellent biocompati-
+bility, and ability to promote tissue regeneration [16, 17]. However,
+single-component Fe-MOFs still face several critical challenges
+in practical applications [18, 19]: First, many Fe-MOFs rely on
+exogenous hydrogen peroxide to initiate the Fenton reaction,
+which limits their catalytic efficiency in vivo. Second, bacteria can
+upregulate glutathione (GSH) expression or exploit the abundant
+GSH present at wound sites to competitively occupy Fe-MOF
+active sites and scavenge reactive oxygen species (ROS), signifi-
+cantly attenuating antibacterial efficacy and potentially inducing
+resistance. Third, the formation of bacterial biofilms creates
+dense physical barriers that severely hinder Fe-MOF penetra-
+tion and bactericidal activity. Finally, the dynamically changing
+wound microenvironment may cause structural collapse of the
+framework, potentially increasing cytotoxicity.
+To address these issues, recent studies have primarily focused
+on ligand engineering and metal co-doping strategies to enhance
+the overall performance of Fe-MOFs [20, 21]. One approach
+involves introducing imidazole-based compounds with conju-
+gated high-electron-density structures. These ligands improve Fe-
+MOF adaptability and stability under fluctuating proton concen-
+trations while endowing anti-inflammatory capability through
+scavenging excessive ROS at infected sites. In parallel, metal-
+ion doping (e.g., Cu2+, Zn2+) can further enhance antibacterial
+performance by depleting bacterial GSH and reducing the risk
+of drug-resistance [22, 23]. Moreover, the porous architecture of
+Fe-MOFs provides abundant binding sites for the incorporation
+of inorganic antimicrobial agents, thereby achieving synergistic
+eradication of multidrug-resistant bacteria.
+Among inorganic bactericides, silver nanoparticles (Ag NPs) are
+particularly attractive due to their excellent biocompatibility, high
+membrane permeability, and controlled ion-release behavior [24,
+25]. Their slow-release profile prevents Ag+ accumulation in the
+bloodstream, promotes epithelialization, and accelerates tissue
+regeneration, making them a viable alternative to antibiotics
+for treating infected wounds. Mechanistically, during the early
+inflammatory phase, when the local environment is acidic, Ag
+NPs release electrons and Ag+ ions. The strong surface plasmon
+resonance and abundant lattice defects of Ag NPs facilitate the
+reaction of released electrons with the oxygenated, proton-rich
+environment to generate ROS. The synergistic action of ROS
+and Ag+ disrupts bacterial cell walls, interferes with respiration
+and metabolism, and ultimately induces bacterial apoptosis
+[26]. Theoretically, Ag NPs can interact with organic molecules
+containing electron-donating groups, such as hydroxyl and ether
+functionalities, which may enhance their antibacterial efficacy
+while mitigating toxicity [27]. In addition, spherical Ag NPs with
+diameters below 6 nm exhibit superior antibacterial activity and
+can be excreted via renal filtration [28, 29]. However, ultra-small
+Ag NPs are prone to agglomeration into larger particles, which
+can lead to bioaccumulation and potential heavy-metal toxicity.
+Thus, the synthesis of monodisperse ultrasmall Ag NPs remains
+technically challenging [30–32]. In addition, the pH-responsive
+antibacterial mechanism of Ag NPs and the underlying pathways
+are not yet fully understood.
+Herein, we report the hydrothermal synthesis of Fe-MOF, fol-
+lowed by coordination with 2-methylimidazole and Cu2+ ions to
+obtain Cu-Fe-MOF, and subsequent adsorption of Ag nanoparti-
+cles (5 ± 0.75 nm) to construct a pH-adaptive Cu-Fe-MOF@Ag
+nanocomposite capable of intelligently modulating antibacterial
+and anti-inflammatory activities (Scheme 1A). During the early
+inflammatory stage characterized by bacterial colonization, Cu-
+Fe-MOF@Ag exhibits enhanced antibacterial potency through
+modulation of surface charge and the synergistic release of Cu2+,
+Ag+, and reactive oxygen species (∙OH, 1O2). These agents col-
+lectively disrupt bacterial membranes, interfere with respiratory
+and amino acid metabolic pathways, and achieve efficient bac-
+terial eradication in a bacteria-concentration-dependent manner
+(Scheme 1C,D). As the infection progresses to the inflammatory
+phase, the nanocomposite shifts toward an anti-inflammatory
+state, scavenging excess ROS, promoting macrophage polariza-
+tion toward a reparative phenotype, and upregulating wound-
+healing factors to accelerate tissue regeneration (Scheme 1B,E).
+Moreover, our results reveal that the antibacterial activity of Ag
+NPs exhibits distinct pH responsiveness, with H+ ions playing
+a crucial role in promoting Ag+ dissolution and superoxide
+dismutation reactions. Overall, this study introduces an innova-
+tive, pH-dynamic material design strategy that enables adaptive
+switching between antibacterial and anti-inflammatory functions
+in response to the wound microenvironment. Unlike stimulus-
+responsive materials that rely on exogenous triggers, this platform
+enables autonomous switching between antibacterial and tissue-
+repair modes by sensing the dynamic endogenous pH changes
+2 of 19
+Advanced Functional Materials, 2026
+ 16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75725 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+SCHEME 1
+Schematic diagram of the pH-responsive nanocomposite for infected wound healing. (A) Construction of Cu-Fe-MOF@Ag. (B, E)
+Tissue regeneration-promoting effects of Cu-Fe-MOF@Ag on infected wound. (C, D) pH-responsive and bacteriostatic principle of the bacteriostatic
+agent.
+Advanced Functional Materials, 2026
+3 of 19
+ 16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75725 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+within the wound microenvironment. The Cu-Fe-MOF@Ag
+nanocomposite thus holds substantial clinical promise as an
+intelligent therapeutic platform for infection-responsive wound
+healing.
+2
+Results and Discussion
+2.1
+Preparation and Characterization of
+Cu-Fe-MOF@Ag
+To
+achieve
+precise
+therapeutic
+adaptation
+across
+the
+inflammatory-to-proliferative phases of infected wound healing,
+a pH-responsive Cu-Fe-MOF@Ag nanocomposite was rationally
+designed and constructed to regulate antibacterial and anti-
+inflammatory activities in response to environmental pH. The
+design of the material was based on the dynamic transition of the
+wound microenvironment from acidic to alkaline during healing.
+To construct the nanocomposite, Fe3+ ions with high charge
+density were used as central metal nodes and coordinated with 2-
+aminoterephthalic acid to form a bidentate chelating framework.
+Next, 2-methylimidazole and Cu2+ ions were incorporated to
+create the Cu-Fe-MOF nanocarrier. Ag nanoparticles were then
+adsorbed onto the framework via coordination with amino
+groups, which served as active binding sites. This approach
+produced
+a
+stable
+Cu-Fe-MOF@Ag
+composite
+with
+both
+antibacterial and anti-inflammatory functionalities. To verify
+the structural integrity and compositional distribution of the
+nanocomposite, a series of physicochemical characterizations,
+including
+transmission
+electron
+microscope
+(TEM),
+high
+resolution transmission electron microscope (HRTEM), energy
+dispersive
+spectrometer
+(EDS),
+Fourier-transform
+infrared
+spectroscopy (FT-IR), ultraviolet–visible spectroscopy (UV–vis),
+X-ray diffraction (XRD), and X-ray photoelectron spectroscopy
+(XPS) were conducted.
+We used TEM to investigate the morphology and distribution
+of Cu-Fe-MOF@Ag. The TEM images clearly reveal that Ag
+nanoparticles with an average diameter of 5 ± 0.75 nm were
+uniformly distributed on the surface of Cu-Fe-MOF nanorods
+(Figure S1 and Figure 1A,B). In contrast, pristine Ag nanoparticles
+tended to aggregate severely (Figure 1E). The HRTEM images
+display lattice spacings of 0.209 and 0.235 nm (Figure 1C,D),
+corresponding to the (222) plane of Cu-Fe-MOF and the (111)
+plane of face-centered cubic Ag, respectively, which are consistent
+with XRD patterns (Figure S3B). Elemental mapping and EDS
+analysis confirmed the presence of Ag, C, N, O, Fe, and Cu in
+the composite (Figure 1G), with respective atomic percentages of
+0.89%, 52.30%, 0.29%, 35.90%, 10.36%, and 0.26% (Figure S2A,C).
+Inductively coupled plasma mass spectrometry (ICP-MS) analysis
+further confirmed that the mass fractions of Fe, Cu, and Ag were
+24.30%, 0.79%, and 0.98%, respectively (Figure S2B). The line-
+scan analysis revealed that Cu and Fe were uniformly distributed
+within the Cu-Fe-MOF framework (Figure 1F), whereas Ag was
+evenly dispersed over the surface of Cu-Fe-MOF. Notably, Ag was
+predominantly localized on the outer surface of the Cu-Fe-MOF
+nanorods. To further evaluate the in vitro stability of Cu-Fe-
+MOF@Ag, TEM observations revealed no obvious morphological
+changes in the material after soaking in phosphate-buffered
+saline (PBS) for 7 days, while the contents of Cu, Fe, and Ag
+decreased due to ion release into the solution (Figure S3A,C).
+These findings demonstrate that the material possesses high
+stability.
+We used UV–vis and FT-IR to determine the structure and
+the elemental composition of Cu-Fe-MOF@Ag. The character-
+istic peak at 400 nm in the UV–vis spectrum further verified
+the presence of metallic Ag NPs in the material (Figure 1I).
+Whereas the stretching vibration band at 702 cm−1 in the
+FT-IR spectrum could be attributed to the coordination inter-
+action between Ag and the N atoms of the imidazole ring
+[33] (Figure 1H). The pH-dependent surface charge behavior
+was examined via zeta potential measurements (Figure S4A,B).
+Bacterial metabolites render the local microenvironment acidic
+in the infected wounds, with pH typically ranging from 4.7
+to 6.0. Upon progression to the inflammatory phase, tissue
+exudation and the accumulation of inflammatory mediators
+shift the microenvironment toward alkalinity, raising the pH
+to 7.5–8.5. During the proliferative phase, the wound maintains
+the alkaline milieu to support fibroblast migration, collagen
+synthesis, and granulation tissue formation. Collectively, infected
+wounds exhibit an acidic microenvironment during the stage
+of bacterial colonization (≈pH 5.0), whereas the pH gradually
+increases to approximately 8.0 during the subsequent inflamma-
+tory and proliferative phases. Based on this dynamic variation,
+the present study further investigated whether Cu-Fe-MOF@Ag
+possesses the corresponding pH-responsive properties. Cu-Fe-
+MOF exhibited a positive zeta potential (+40 mV) under acidic
+conditions, while Ag sol displayed a negative potential (−38 mV).
+After electrostatic self-assembly, Cu-Fe-MOF@Ag exhibited an
+overall positive potential (+27 mV). Remarkably, as the pH
+increased from acidic to alkaline, the zeta potential shifted from
++31 to −8 mV, confirming the pronounced pH-responsive charge
+inversion that enhances colloidal stability and biocompatibility in
+physiological environments. To investigate the physicochemical
+properties of Cu-Fe-MOF@Ag and its potential application in
+infected wounds, subsequent experiments will be conducted
+under three pH conditions: pH 5, 7, and 8, to systematically
+evaluate its pH-responsive behavior as well as the variations in
+its antibacterial activity and anti-inflammatory performance. By
+simulating the transition of the wound microenvironment from
+the infection stage (acidic) to the inflammatory and proliferative
+stages (alkaline), this study aims to elucidate the functional
+adaptability of the material across different physiological phases.
+To evaluate the physical and chemical properties of Cu-Fe-
+MOF@Ag, metal-ion release profiles were evaluated under
+various pH conditions (Figure S5A–C). In acidic medium (pH =
+5), the release sequence followed Fe3+ > Ag+ > Cu2+, whereas
+under alkaline conditions, the order shifted to Fe3+ > Cu2+
+> Ag+, with all ions showing markedly reduced release rates.
+Comprehensive XPS spectra confirmed the coexistence of Fe, Cu,
+Ag, C, N, and O elements (Figure S6). High-resolution XPS further
+revealed the presence of Fe2+/Fe3+, Cu2+, and Ag+ species, as well
+as characteristic peaks corresponding to aminoterephthalate and
+imidazole frameworks (Figure 1J–N and Figure S7A).
+To investigate the relationship between ion release behavior and
+the dynamic pH changes during wound healing, we designed a
+two-stage release experiment. The material was first incubated
+in a pH = 5.0 medium for 40 h, after which the medium was
+replaced with a pH = 8.0 buffer, and release was continuously
+4 of 19
+Advanced Functional Materials, 2026
+ 16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75725 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 1
+Preparation and characterization of a bacteriostatic agent. (A) TEM images of Cu-Fe-MOF. (B) TEM images of Cu-Fe-MOF@Ag. (C)
+HRTEM images of Cu-Fe-MOF@Ag. (D) Lattice spacings of Cu-Fe-MOF@Ag. (E) TEM images of Ag NPs. (F) Line scanning of Cu-Fe-MOF@Ag. (G)
+Element distribution images and Mapping of Cu-Fe-MOF@Ag. (H) FT-IR spectra of Fe-MOF, Cu-Fe-MOF, and Cu-Fe-MOF@Ag. (I) UV–vis spectra of
+Fe-MOF, Cu-Fe-MOF, and Cu-Fe-MOF@Ag. (J) XPS spectra of Fe2p. (K) XPS spectra of Cu2p. (L) XPS spectra of Ag 3d. (M) XPS spectra of C 1s. (N)
+XPS spectra of O 1s. (O) UV–vis diffuse reflectance spectra of Cu-Fe-MOF and Cu-Fe-MOF@Ag samples produce ROS against the residual ratio peak of
+ascorbic acid.
+monitored up to 600 h. The results show that, compared to
+the acidic condition, the release of Cu2+, Fe3+, and Ag+ was
+significantly reduced in the alkaline environment, and the release
+level was comparable to that of the control group, which was
+maintained in alkaline medium throughout the experiment.
+These findings confirm that the material can continuously release
+metal ions under both acidic and alkaline conditions, whereas the
+release amount is regulated by pH. The relatively low cumulative
+release (approximately 1% of the total elemental content) may
+be attributed to the synergistic effect of coordination bonding
+and electrostatic interactions, which allows the release process to
+readily approach a quasi-equilibrium state; the further reduction
+under alkaline conditions may be associated with the formation
+of sparingly soluble metal hydroxide precipitates with OH−.
+Notably, slow ion release remained detectable even after 600 h,
+suggesting that material dissolution is governed by interfacial
+chemical reactions rather than a simple dissolution-diffusion
+mechanism. The combined effects of high lattice stability, limited
+surface-active sites, slow solid-state diffusion, and coordina-
+tion/electrostatic interactions endow this system with sustained-
+release kinetics spanning from hours to hundreds of hours.
+Therefore, Cu-Fe-MOF@Ag exhibits a low-dose, long-term metal
+ion release profile, which is well-suited to the need for continuous
+and adaptive antibacterial activity throughout the different stages
+of infected wound healing. This pH-dependent release suggests
+that Cu-Fe-MOF@Ag can release greater amounts of active
+ions in acidic environments, which is favorable for antibacterial
+activity.
+Under acidic conditions, the nitrogen atoms of imidazole undergo
+protonation, weakening their coordination with metal ions
+and promoting dissociation of the MOF structure, along with
+the release of metal ions. In contrast, in neutral or alkaline
+Advanced Functional Materials, 2026
+5 of 19
+ 16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75725 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+physiological environments, deprotonated nitrogen atoms can
+coordinate stably with metal ions, maintaining the integrity of the
+framework.
+To validate this mechanism, we conducted pH-dependent metal
+ion release experiments: Cu-Fe-MOF@Ag was incubated in
+buffer solutions at pH 5 (simulating an infection microenviron-
+ment) and pH 8 (simulating an inflammatory phase), and the
+release kinetics of Fe3+ and Cu2+ were monitored. The results
+show that the cumulative release of metal ions over 24 h was
+significantly higher at pH 5 than at pH 8, confirming that the
+material undergoes pH-triggered structural dissociation and ion
+release under acidic conditions.
+Molecular docking results elucidated the mechanism underlying
+the structural stability of Cu-Fe-MOF@Ag (Figure S7B). Calcula-
+tions indicated that Cu2+ and Fe3+ ions were stably anchored to
+the Pluronic F127 (F127) framework through coordination with
+2-methylimidazole. Fe3+, acting as a high-charge-density center,
+possesses a [Ar] 3d5 configuration that endows it with strong
+polarization capability and vacant orbital acceptor capacity, facil-
+itating coordination with atoms containing lone pair electrons.
+During the initial assembly, oxygen atoms in F127 donate lone
+pairs to the vacant orbitals of Fe3+ to form σ bonds, enhancing
+structural rigidity via chelation. Simultaneously, Cu2+ coordi-
+nates with ether oxygen atoms of F127 through its vacant orbitals,
+constructing a stable zigzag coordination motif that cooperates
+with Fe3+ to form a symmetric double-zigzag configuration. 2-
+Methylimidazole, as an extended ligand, further coordinates with
+ether oxygens, reinforcing the framework stability. Subsequently,
+Ag nanoparticles anchor via ether oxygen coordination, integrat-
+ing into the double-zigzag structure while maintaining symmetry
+with Fe3+ and Cu2+. This multilayered cooperative coordination
+confers the composite with excellent overall integrity, resulting in
+low release of Fe3+, Cu2+, and Ag+ ions.
+However, the coordination strength is pH-dependent. Under
+acidic conditions, protonation of 2-methylimidazole competes
+with metal ions for coordination sites, reducing structural stabil-
+ity. In contrast, under alkaline conditions, deprotonation of the
+F127 framework increases the electron density of oxygen atoms
+and enhances their negative charge, thereby more firmly lock-
+ing metal ions within the double-zigzag structure and forming
+coordination bonds more stable than in neutral environments.
+Consequently, ion release is significantly enhanced in acidic
+media but suppressed under basic conditions. These results
+collectively validated the successful synthesis and structural
+integrity of the Cu-Fe-MOF@Ag nanocomposite.
+2.2
+Reactive Oxygen Species (ROS) Generation
+and Mechanistic Insights
+Theoretically, ultrasmall Ag nanoparticles (Ag NPs) possess high
+surface energy due to their large specific surface area. In an acidic
+and oxygenated medium, Ag NPs readily release Ag+ ions and
+electrons, where protons (H+) act as electron acceptors to react
+with dissolved oxygen, forming hydrogen peroxide (H2O2). Subse-
+quently, this system undergoes a Fenton-like catalytic process that
+efficiently converts H2O2 into highly oxidative species, including
+hydroxyl radicals (∙OH) and singlet oxygen (1O2). Therefore,
+an acidic environment is expected to significantly enhance Ag+
+dissolution and increase ROS yield. To identify the types of ROS
+generated, ascorbic acid (AA), 3, 3, 5, 5-tetramethylbenzidine
+(TMB), and 1,3-diphenylisobenzofuran (DPBF) were employed as
+selective probes [34, 35]. Ascorbic acid exhibits a characteristic
+absorption peak at 265 nm, which diminishes upon oxidation to
+dehydroascorbic acid; thus, the decrease in absorbance directly
+reflects ROS consumption (Figure 2A). TMB is oxidized by ∙OH
+to yield blue oxidized TMB (oxTMB) with a maximum absorption
+at 652 nm (Figure 2B); upon quenching with strong acid, the
+product turns yellow and exhibits a peak at 450 nm. DPBF,
+whose furan ring reacts specifically with 1O2 to form an unstable
+endoperoxide intermediate, undergoes decomposition to 1, 2-
+dibenzoylbenzene, resulting in a gradual decrease of absorbance
+near 415 nm (Figure 2C). In addition, electron paramagnetic
+resonance (EPR) spectroscopy was performed to further confirm
+the ROS species, and comparative experiments were conducted
+under alkaline conditions to evaluate the pH dependence of ROS
+formation. As shown in Figure 1O, the degradation of ascorbic
+acid was greatly accelerated in the Cu-Fe-MOF@Ag system
+compared to Cu-Fe-MOF, indicating higher ROS production.
+To further examine the ROS-generating capability of Cu-Fe-
+MOF@Ag at different pH values, the results shown in Figure
+S8A demonstrate that the production of ∙OH and 1O2 increased
+with decreasing pH. Notably, by simulating the dynamic pH
+changes of the wound microenvironment during healing, we
+found that Cu-Fe-MOF@Ag generated ∙OH and 1O2 under the
+acidic conditions corresponding to the infection stage, while
+scavenging excessive ∙OH and 1O2 under the alkaline conditions
+corresponding to the inflammatory stage, thereby demonstrating
+its pronounced antioxidant capability. The TMB and DPBF
+colorimetric assays showed that, relative to Cu-Fe-MOF, the Cu-
+Fe-MOF@Ag system generated markedly higher levels of oxTMB
+and 1,2-dibenzoylbenzene, suggesting that the incorporation of
+Ag nanoparticles effectively enhanced the material’s catalytic
+capacity for ∙OH and 1O2 generation. Moreover, the electron para-
+magnetic resonance (EPR) spectra exhibited characteristic signals
+with intensity ratios of 1:2:2:1 and 1:1:1, respectively, further ver-
+ifying the existence of these two ROS species (Figure 2D,E). The
+scavenging experiments conducted under different pH conditions
+showed that Cu-Fe-MOF@Ag exhibited effective scavenging
+activity toward both ∙OH and
+1O2 at pH = 8. In contrast,
+at pH = 5, the radical level in the system increased, which
+was attributed to the material itself inducing the generation
+of trace amounts of ∙OH and
+1O2 under acidic conditions.
+Notably, these signals were absent under alkaline conditions,
+suggesting that such environments are unfavorable for ROS
+generation.
+To assess the composite’s capacity to deplete excessive glu-
+tathione (GSH) in wound microenvironments, 5, 5-dithiobis (2-
+nitrobenzoic acid) (DTNB) assays were performed (Figure S8B).
+The results revealed that Cu-Fe-MOF@Ag bound substantially
+more GSH compared to Cu-Fe-MOF, confirming its enhanced
+oxidative capability and potential to counteract bacterial antiox-
+idant defenses. Collectively, these findings demonstrate that the
+antibacterial activity of Ag NPs is distinctly acid-responsive, high-
+lighting their promising potential for combating drug-resistant
+bacterial infections. To further elucidate the role of protons in
+Ag-mediated ROS generation, we constructed a structural model
+6 of 19
+Advanced Functional Materials, 2026
+ 16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75725 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 2
+Material characterization and ROS generation. (A) The reaction diagram of AA, TMB, DPBF, and ROS. (B) UV–vis spectra of solutions
+containing TMB alone, TMB + H2O2 + Fe2+, TMB+ Cu-Fe-MOF, TMB+ Cu-Fe-MOF@Ag after a 30 min reaction. (C) UV–vis spectra of solutions
+containing DPBF alone, DPBF + MB, DPBF + Cu-Fe-MOF, and DPBF + Cu-Fe-MOF@Ag after a 10 min reaction. (D) Electron spin resonance signals
+of ∙OH. (E) Electron spin resonance signals of 1O2. (F) The calculation process of ∙OH generated by 3O2 and 1O2 on the surface of Ag. (G) The diagram
+of chemical bond change and total energy change after 3O2 and 1O2 adsorbed on the Ag surface.
+of Ag surfaces for density functional theory (DFT) simulations.
+The O─O bond length of molecular triplet oxygen (3O2) in the
+gas phase was calculated as 1.119 Å. Upon adsorption onto the
+Ag surface, the π electrons of O2 interact with the Ag d orbitals,
+elongating the O─O bond to 1.455 Å, weakening its bond energy
+and activating the molecule toward a more reactive state. The
+activated oxygen species subsequently gains an electron and com-
+bines with a proton to form a superoxide intermediate (*OOH),
+during which the O─O bond remains elongated at approximately
+1.455 Å (Figure 2F). Owing to the instability of the O─O bond
+Advanced Functional Materials, 2026
+7 of 19
+ 16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75725 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+within *OOH, further protonation leads to rapid bond cleavage
+and the formation of hydroxyl radicals (∙OH). The transformation
+of O─O + H+ to OOH represents the rate-determining step of the
+process, with an activation barrier of only 0.14 eV. The overall
+adsorption–dissociation process exhibits a stepwise decrease in
+free energy, indicating a thermodynamically spontaneous reac-
+tion (Figure 2G). In the case of singlet oxygen (1O2), the initial
+O─O bond length was calculated as 1.240 Å. Upon adsorption on
+the Ag surface, this bond extended to 1.505 Å, followed by proto-
+nation to 1.537 Å, which subsequently led to bond rupture and
+∙OH generation. This reaction pathway proceeds barrierlessly,
+with a monotonic energy decrease, confirming it as a spontaneous
+process. Taken together, these computational and experimental
+findings clearly demonstrate that protons play a pivotal role in
+promoting ROS generation on Ag NP surfaces. Moreover, 1O2 is
+more prone than 3O2 to transform into ∙OH, suggesting a proton-
+coupled activation mechanism as the dominant pathway in acidic
+environments.
+2.3
+Antibacterial Performance and Mechanistic
+Evaluation
+Based on the above findings, under acidic conditions, the surface
+of Cu-Fe-MOF@Ag becomes positively charged while simultane-
+ously generating multiple reactive oxygen species (∙OH, 1O2) and
+releasing metal ions. The positively charged surface and released
+metal ions interact electrostatically with negatively charged
+bacterial cell walls, altering their secondary structures and the
+activity of functional proteins. Meanwhile, ROS species further
+disrupt the phospholipid bilayer and transmembrane proteins,
+collectively inducing irreversible bacterial damage. To systemati-
+cally evaluate the antibacterial performance of Cu-Fe-MOF@Ag,
+Escherichia coli (E. coli), Staphylococcus aureus (S. aureus), and
+drug-resistant E. coli (D – E.coli) were selected as representative
+model strains. The minimum inhibitory concentration (MIC),
+agar disk diffusion assay, and bacterial colony-counting method
+were employed to assess antibacterial efficacy, and the capability
+of the composite to destroy bacterial biofilms and counteract
+antibiotic resistance was also investigated. In comparison with
+Fe-MOF, Cu-Fe-MOF, and Ag, Cu-Fe-MOF@Ag showed the low-
+est MIC value, demonstrating its superior antibacterial activity
+(Figure S9B). As shown in Figure 3A, the MIC values of Cu-
+Fe-MOF@Ag against E. coli, S. aureus, and D – E.coli were
+24.5, 26.5, and 35 µg mL−1, respectively. The MIC of Cu-Fe-
+MOF@Ag against D – E. coli was approximately three times
+lower than that of commercial tetracycline. We investigated
+the MIC of Cu-Fe-MOF@Ag under different pH conditions
+(Figure S9A). The results indicated that the MIC decreased
+as the pH was lowered. Combined with the Zeta potential
+measurements, it was evident that the surface of Cu-Fe-MOF@Ag
+became increasingly positively charged under acidic conditions,
+facilitating stronger electrostatic interactions with the negatively
+charged bacterial cell walls and thereby inducing bacterial death.
+Notably, as the bacterial density increased, metabolic byproducts
+such as CO2 and lactic acid lowered the local pH, further
+promoting electrostatic adsorption between the material and
+bacteria and consequently enhancing the antibacterial effect.
+Colony-counting assays further confirmed that Cu-Fe-MOF@Ag
+achieved >99.99% bacterial inhibition within 20 min for all three
+strains (Figure 3D,E). The inhibition zone diameter of Cu-Fe-
+MOF@Ag was 1.5 times larger than that of Ag nanoparticles and
+2 times larger than that of the mixed-ion group. Comparative
+studies using Cu-Fe-MOF, Ag nanoparticles, and mixed ion
+systems (Ag+ + Fe3+ + Cu2+) demonstrated that the superior
+antibacterial activity of Cu-Fe-MOF@Ag primarily originated
+from the synergistic effects of its positively charged surface,
+released metal ions, and generated ROS (Figure 3F,H,I).
+Under environmental stress, such as macrophage phagocytosis or
+exposure to antimicrobial agents, bacteria initiate biofilm forma-
+tion as a survival mechanism. Biofilms, composed of structured
+extracellular polymeric substances, serve as physical barriers
+that shield bacteria from external stresses. Moreover, biofilm-
+embedded bacteria can enter a metabolic dormancy state, reduc-
+ing growth and energy consumption, thereby evading immune
+clearance and antibiotic attack. To evaluate the biofilm disruption
+capacity of Cu-Fe-MOF@Ag, both crystal violet staining and
+colony-counting assays were performed. As shown in Figure 3G,
+Cu-Fe-MOF@Ag exhibited a biofilm destruction rate exceeding
+97%, far superior to Cu-Fe-MOF and Ag alone, and reduced
+99.99% of residual bacteria within the biofilm (Figure 3J,K). As
+shown in Figure S9C, compared with Fe-MOF, Cu-Fe-MOF, and
+Ag, Cu-Fe-MOF@Ag exhibited the strongest disruptive effect on
+D – E.coli biofilms and was able to eliminate the vast majority of
+the biofilm. Notably, dead bacteria were mainly distributed on the
+biofilm surface, indicating that Cu-Fe-MOF@Ag possesses strong
+biofilm penetration capability. Repetitive antibacterial cycling
+tests using D – E.coli demonstrated that after 25 consecutive cycles
+(P < 0.05), Cu-Fe-MOF@Ag maintained >70% antibacterial
+efficiency (Figure 3B,C), highlighting its remarkable stability
+and sustained antimicrobial performance. After multiple reuse
+cycles, the contents of Cu, Fe, and Ag ions in the material
+gradually decreased, resulting in a progressive reduction in their
+release concentrations and, consequently, a gradual decline in
+antibacterial activity.
+To further assess bacterial membrane damage, live/dead flu-
+orescence staining and morphological characterization were
+conducted (Green indicates live cells, whereas red indicates dead
+cells). As shown in Figure 4A and Figure S10, untreated E. coli,
+S. aureus, and D – E.coli maintained high viability (with partial
+natural cell death observed). In contrast, after treatment with
+Cu-Fe-MOF@Ag, bacterial mortality markedly increased in all
+groups (P < 0.05). Scanning electron microscopy (SEM) and TEM
+images (Figure 4B) revealed that untreated bacteria exhibited
+smooth and intact surfaces, whereas Cu-Fe-MOF@Ag treated
+cells displayed severe membrane collapse, perforations, and
+cytoplasmic leakage, confirming irreversible structural damage.
+The outer structures of the bacterial cell wall, such as teichoic
+acids and lipopolysaccharides, contain phosphate (─PO4
+3−) and
+carboxylate (─COO−) groups that become ionized under physi-
+ological pH conditions, thereby conferring a negatively charged
+surface. This surface charge state can be characterized by zeta
+potential measurements [36–38]. In the present study, the surface
+zeta potentials of untreated E. coli, S. aureus, and D – E. coli were
+-16.72, -15.26, and -17.18 mV, respectively; after treatment with Cu-
+Fe-MOF@Ag for 20 min, these values increased to -5.76, -6.32, and
+-6.22 mV (Figure 4C), respectively, indicating a marked reduction
+in surface negative charge. Because Cu-Fe-MOF@Ag itself is
+positively charged, it can bind to the bacterial surface through
+electrostatic attraction; meanwhile, the released Cu2+, Fe3+, and
+8 of 19
+Advanced Functional Materials, 2026
+ 16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75725 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 3
+Antibacterial activity of Cu-Fe-MOF@Ag. (A) The MIC of Cu-Fe-MOF@Ag against E. coli, S. aureus, and D – E.coli. (B) The drug
+resistance of bacteria treated by Cu-Fe-MOF@Ag circulation. (C) Survival rate of bacteria treated by Cu-Fe-MOF@Ag circulation. (D) The data analysis
+of Luria Bertani (LB) agar plates culture plates inoculated with the bacteria treated with Cu-Fe-MOF@Ag against E. coli, S. aureus, and D – E.coli. (E)
+Images of LB agar culture plates inoculated with the bacteria treated with Cu-Fe-MOF@Ag against E. coli, S. aureus, and D – E.coli. (F) Images of culture
+plates used to estimate the zone of inhibition of the materials against E. coli, S. aureus, and D – E.coli. (G) Optical images of crystal violet-stained biofilms
+of Cu-Fe-MOF, Ag, and Cu-Fe-MOF@Ag. (H, I) The data analysis of culture plates used to estimate the zone of inhibition of the materials against E. coli,
+S. aureus, and D – E.coli. (J) Damage rate of the cell membrane. (K) Mortality of bacteria in the membrane.
+Advanced Functional Materials, 2026
+9 of 19
+ 16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75725 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+B
+1 µm
+0.5 µm
+D -
+ilo
+c .
+E
+       s
+u
+e
+r
+u
+a .
+S
+     ilo
+c .
+E
+Control     Cu-Fe-MOF@Ag
+A
+100 µm
+Live           Dead             Merge     
+Live          Dead           Merge
+Control                                Bacteria + Cu-Fe-MOF@Ag            
+D -
+ ilo
+c .
+E
+   s
+u
+e
+r
+u
+a .
+S
+ ilo
+c .
+E
+E.coli
+S.aureus
+D - E.coli
+-30
+-25
+-20
+-15
+-10
+-5
+0
+)
+V
+e( a
+te
+Z
+  Control (0 min)
+ Control (20 min)
+ Cu-Fe-MOF@Ag  (15 min)
+300
+400
+500
+0
+2
+).
+u
+.a
+( e
+c
+n
+a
+b
+r
+o
+s
+b
+A
+Wavelength (nm)
+ E.coil
+ Cu-Fe-MOF@Ag
+300
+400
+0
+1
+2
+).
+u
+.a
+( e
+c
+n
+a
+b
+r
+o
+s
+b
+A
+Wavelength (nm)
+ S.aureus
+ Cu-Fe-MOF@Ag
+300
+400
+500
+0
+1
+2
+).
+u
+.a
+( e
+c
+n
+a
+b
+r
+o
+s
+b
+A
+Wavelength (nm)
+ D - E.coli
+ Cu-Fe-MOF@Ag
+1.92
+1.44
+1.04
+0.41
+0.51
+0.42
+K
+Ca
+Mg
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+)
+L
+m
+/g
+m
+( 
+n
+oit
+a
+rt
+n
+e
+c
+n
+o
+C
+ E.coli
+ Cu-Fe-MOF@Ag
+2.14
+1.52
+1.26
+0.58
+0.78
+0.85
+K
+Ca
+Mg
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+3.0
+ 
+n
+oit
+a
+rtr
+e
+c
+n
+o
+C
+(µ
+L
+m
+/g
+)
+ S.aureus
+ Cu-Fe-MOF@Ag
+1.87
+1.4
+1.01
+0.61
+0.78
+0.74
+K
+Ca
+Mg
+0
+1
+2
+ 
+n
+oit
+a
+rt
+n
+e
+c
+n
+o
+C
+(µ
+L
+m
+/g
+)
+ D - E. coli
+ Cu-Fe-MOF@Ag
+0
+Significant
+Up (64)
+Nosig (4479)
+Down (75)
+Log 2FC
+-Log10(Padjust)
+-10
+-5
+0
+5
+10
+100
+200
+300
+Control     Cu-Fe-MOF@Ag
+C                                D                                  E                                  F  
+G                                H                                  I                                  J  
+D - E. coli     S. aureus       E. coli
+FIGURE 4
+Antibacterial mechanism of Cu-Fe-MOF@Ag on bacteria. (A) Propidium iodide staining images post-treatment with PBS and Cu-Fe-
+MOF@Ag. (B) TEM and SEM images of the bacteria after treatment with PBS or Cu-Fe-MOF@Ag. (C) Zeta potential results of the bacterial surface of
+E. coli, S. aureus, and D – E.coli treated with Cu-Fe-MOF@Ag after 20 min. (D−F) Analysis of the DNA of E. coli, S. aureus, and D – E. coli with Cu-
+Fe-MOF@Ag. (G−I) Analysis of ion leakage after treatment of E. coli, S. aureus, and D – E. coli with Cu-Fe-MOF@Ag. (j) Volcano plot of differentially
+expressed genes (DEGs). [Correction added on June 11, 2026, after first online publication: Figure 4A, Figure 6E and Supporting Information have been
+updated in this version.]
+10 of 19
+Advanced Functional Materials, 2026
+ 16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75725 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Ag+ can further disrupt the cell wall structure via electro-
+static interactions, ultimately inducing bacterial death. The disk
+diffusion assay further confirmed its antibacterial efficacy. Collec-
+tively, these results demonstrate that Cu-Fe-MOF@Ag markedly
+interferes with the charge distribution on the bacterial surface,
+thereby affecting bacterial physiological functions. Furthermore,
+nucleic acid leakage assays revealed a substantial release of
+intracellular DNA fragments (Figure 4D–F), while intracellular
+electrolyte levels were markedly reduced (P<0.05). In addition,
+the content of metal ions was also significantly reduced (P<0.05),
+K+ concentrations decreased from 1.92, 2.14, and 1.87 µg mL−1
+to 0.41, 0.58, and 0.61 µg mL−1, Ca2+ concentrations from 1.44,
+1.52, and 1.40 µg mL−1 to 0.51, 0.78, and 0.78 µg mL−1, and
+Mg2+ concentrations from 1.04, 1.26, and 1.01 µg mL−1 to 0.42,
+0.85, and 0.74 µg mL−1 (Figure 4G–I). These results collectively
+confirm severe membrane disruption and cytoplasmic leakage,
+validating that Cu-Fe-MOF@Ag induces bacterial death through
+multi-pathway membrane destruction.
+To
+elucidate
+the
+molecular
+pathways
+underlying
+Cu-Fe-
+MOF@Ag-induced
+bacterial
+inhibition,
+transcriptomic
+sequencing was conducted on D – E.coli after treatment. Volcano
+plots (Figure 4J) revealed 75 downregulated and 64 upregulated
+differentially expressed genes (DEGs). Gene Ontology (GO)
+enrichment analysis (Figure S11) demonstrated significant
+perturbations in pyrimidine nucleotide metabolism, amino acid
+metabolism, and other core biological processes, suggesting
+disruption
+of
+fundamental
+macromolecular
+biosynthesis
+pathways. Kyoto Encyclopedia of Genes and Genomes pathway
+analysis further identified multiple enriched metabolic networks,
+including alanine, aspartate, and glutamate metabolism, valine,
+leucine, and isoleucine biosynthesis, and pyrimidine metabolism.
+These pathways are essential for nitrogen metabolism, amino
+acid synthesis, and nucleic acid production, respectively. The
+pronounced dysregulation of these metabolic routes indicates
+that Cu-Fe-MOF@Ag compromises both energy metabolism and
+macromolecule biosynthesis, thereby inhibiting bacterial growth
+and proliferation.
+2.4
+Biocompatibility and Biosafety Evaluation
+Cu-Fe-MOF@Ag gradually releases Fe3+ and Cu2+ ions in phys-
+iological media. Fe3+, as a key component of heme proteins
+and iron-sulfur clusters, participates in essential biological pro-
+cesses such as oxygen transport, energy metabolism, electron
+transfer, and DNA synthesis. Cu2+, on the other hand, promotes
+the expression of pro-angiogenic factors, thereby enhancing
+endothelial cell proliferation, migration, and neovascularization.
+As essential trace elements in the human body, both Fe and
+Cu exhibit excellent biocompatibility and act as cofactors that
+synergistically accelerate wound healing [39].
+To systematically evaluate the biocompatibility of Cu-Fe-
+MOF@Ag, in vitro cytotoxicity, expressed as the half-maximal
+inhibitory concentration (IC50), hemolysis ratio, macrophage
+co-culture effects (RAW264.7), and cell migration assays were
+conducted, followed by in vivo intramuscular injection studies
+to
+assess
+potential
+histopathological
+alterations
+in
+major
+organs. As shown in Figure 5A, the IC50 of Cu-Fe-MOF@Ag
+toward L929 fibroblasts was 289.78 µg mL−1 (P < 0.05), while
+the hemolysis rate was 3.41%, well below the 5% biosafety
+threshold (Figure 5B,C). The nanocomposite exhibited negligible
+cytotoxicity toward RAW264.7 macrophages (Figure 5E) and
+significantly enhanced cell migration, with a scratch closure
+rate exceeding 90% after 24 h (Figure 5D,F), demonstrating
+excellent biosafety and potent cell-repair capability. Moreover,
+Cu-Fe-MOF@Ag displayed enhanced ROS-scavenging efficiency
+under alkaline conditions (Figure S12), indicating superior
+antioxidant performance during the late healing phase. In
+vivo histological assessment (Figure 5G) revealed no apparent
+muscle fiber rupture, degeneration, or necrosis at the injection
+site. Hematoxylin–eosin (H&E) staining of the heart, liver,
+spleen, lungs, and kidneys was shown in Figure 5H. Compared
+with the control group, glomerular structures in the treated
+rats remained intact, with no obvious congestion or dilation
+observed. Hepatocytes exhibited normal morphology without
+apparent edema, degeneration, or necrosis. In the spleen, the
+boundary between white and red pulp was well-defined, and the
+tissue architecture was preserved. These results indicate that the
+material does not induce significant tissue toxicity at therapeutic
+concentrations and demonstrates good biocompatibility. These
+findings confirm that Cu-Fe-MOF@Ag possesses excellent tissue
+compatibility and in vivo biosafety.
+2.5
+In Vivo Evaluation of Wound Healing
+Efficacy
+A full-thickness skin defect mouse model was established to
+evaluate the therapeutic efficacy of Cu-Fe-MOF@Ag against D
+– E. coli infected wounds. Dynamic changes in blood metal ion
+concentrations were monitored to elucidate their involvement in
+the repair process. As illustrated in Figure 6A and Figure S12A,
+circular wounds (≈8 mm diameter) were created on the dorsal
+skin, and divided into four groups: uninfected control, D – E.coli
+infected control, ciprofloxacin-treated, Fe-MOF-treated, Cu-Fe-
+MOF-treated, Ag-treated, and Cu-Fe-MOF@Ag-treated groups.
+Wound healing was monitored over time, and bacterial residues
+were quantified via standard swab cultures. Healing analyses
+(Figure 6B,D,F and Figure S12B) show that uninfected wounds
+began closing on day 3, achieving 96% closure by day 12. In
+contrast, all infected wounds exhibited delayed healing. By day
+12, wound closure rates were 56% for the infection control, 76%
+for ciprofloxacin, and an impressive 98% for Cu-Fe-MOF@Ag
+(P<0.05), demonstrating superior therapeutic efficacy-surpassing
+even the uninfected group. Monitoring of wound pH dynamics
+(Figure S13) indicated a transition from acidic during hemostasis
+to alkaline in the proliferative phase, and eventual restoration to
+mild acidity upon healing. Importantly, Cu-Fe-MOF@Ag main-
+tained morphological integrity throughout the healing process
+(Figure S14), reflecting strong adaptability to the wound microen-
+vironment. Bacterial culture of regenerated tissues (Figure 6C
+and Figure S15) confirmed the complete eradication of D – E.coli
+colonies in both Cu-Fe-MOF@Ag and control wounds. During
+treatment, body weights across all groups exhibited an initial
+decline followed by recovery (Figure 6G).
+ICP-MS was employed to analyze Fe3+ and Cu2+ concentrations
+in the blood following treatment. As shown in Figure 6H,I,
+Fe3+ and Cu2+ levels in the Cu-Fe-MOF@Ag group were signifi-
+cantly higher than those in the control and ciprofloxacin groups
+Advanced Functional Materials, 2026
+11 of 19
+ 16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75725 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 5
+The biocompatibility of Cu-Fe-MOF@Ag. (A) Viability of L929 mouse fibroblast cells exposed to ciprofloxacin (CIP), Ag, Cu-Fe-MOF,
+and Cu-Fe-MOF@Ag nanoparticles. (B) hemolysis analysis. (C) Hemolysis ratio of Ag, Cu-Fe-MOF, and Cu-Fe-MOF@Ag. (D) Statistical analysis of the
+L929 mouse fibroblast cells migration ratio. (E) Co-culture effects of macrophages (RAW264.7) and Cu-Fe-MOF@Ag. (F) Scratch microscopy images of
+L929 mouse fibroblast cells treated with Cu-Fe-MOF@Ag. (G) hematoxylin-eosin (H&E) staining analysis of infected tissues harvested from the legs of
+rats after treatment with PBS and Cu-Fe-MOF@Ag for 3 d. (H) H&E staining of tissues of the heart, liver, spleen, lung, and kidney of the rats in different
+groups.
+(P < 0.05), indicating that the released ions entered systemic
+circulation and compensated for the metal depletion caused by
+immune responses during infection, thereby facilitating wound
+repair. Notably, no Ag+ was detected, likely due to its concentra-
+tion being below the instrumental detection limit. The clearance
+of excessive ROS at infected wound sites was examined using
+dihydroethidium (DHE) staining. On day 8, both the infection and
+ciprofloxacin groups displayed strong ROS fluorescence, while
+Cu-Fe-MOF@Ag treated wounds showed markedly lower ROS
+intensity-even below that of the uninfected control (Figure 6J).
+Flow cytometric analysis quantitatively confirmed that the ROS-
+scavenging efficiency of Cu-Fe-MOF@Ag in infected tissue was
+12 of 19
+Advanced Functional Materials, 2026
+ 16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75725 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+0
+2
+4
+6
+8
+10
+12
+0
+120
+140
+160
+180
+200
+t
+h
+gie
+W
+y
+d
+o
+B
+(g)
+Time (Day)
+  Control
+  D - E. coli
+  D - E. coli+CIP
+  D - E. coli+Cu-Fe-MOF@Ag
+0
+2
+4
+6
+8
+10
+12
+0.6
+0.8
+1.0
+1.2
+1.4
+Fe3+
+t
+n
+et
+n
+o
+C
+)
+%
+(
+Time (Day)
+  Control
+  D - E. coli
+  D - E. coli+ CIP
+  D - E. coli+ Cu-Fe-MOF@Ag
+0
+2
+4
+6
+8
+10
+12
+0.6
+0.8
+1.0
+1.2
+1.4
+Cu2+
+t
+n
+et
+n
+o
+C
+)
+%
+(
+Time (Day)
+  Control
+  D - E. coli
+  D - E. coli+ CIP
+  D - E. coli+ Cu-Fe-MOF@Ag
+B                                                           C              D                           E           
+F                                 G                               H                                  I
+A                         
+0 day                                        3 day                                                    12 day
+Establish
+Model
+Inoculation
+D - E. coli
+Treatment
+0 day    3 day    6 day   9 day  12 day
+CIP    D - E. coli 
+S
+B
+P
+200 µm
+ROS
+0
+100
+200
+300
+100                    104             107
+55.3
+CIP
+0
+100
+200
+300
+400
+100                   104             107
+25.8
+Cu-Fe-MOF@Ag
+0
+50
+100
+150
+100                    104             107
+83.7
+D - E. coli
+t
+n
+u
+o
+C
+/
+S
+O
+R
+0
+20
+40
+60
+80
+100
+st
+n
+u
+o
+C
+S
+O
+R
+D - E. coli
+CIP
+Cu-Fe-MOF@Ag
+J
+Cu-Fe-
+g
+A
+@
+F
+O
+M
+0
+2
+4
+6
+8
+10
+12
+0.0
+0.5
+1.0
+1.5
+g
+n
+i
+n
+ia
+m
+e
+R
+d
+n
+u
+o
+W
+)
+%
+(
+oit
+a
+R
+Time (Day)
+  Control
+  D - E.coli
+  D - E.coli +CIP
+  D - E.coli +Cu-Fe-MOF@Ag
+1
+5
+4
+3
+2
+0
+Day 0
+Day 3
+Day 6
+Day 9
+Day 12
+FIGURE 6
+Evaluation of the repair capacity of infected wound healing in mice. (A) Schematic diagram of the experimental design of Cu-Fe-
+MOF@Ag in the treatment of infected skin defects. (B) Representative images of wounds treated at 3, 6, 9, and 12 d. (C) Bacterial residue at the wound.
+(D) Schematic diagram of wound closure evolution. (E) Fluorescence intensity images of ROS eliminate. (F) Wound closure rate of different treatment
+groups. (G) Changes in body weight in different treatment groups. (H, I) Changes of Fe3+ and Cu2+ in blood after treatment with D – E.coli, CIP, and
+Cu-Fe-MOF@Ag. (J) Flow cytometry analysis of macrophages after the treatment of infected rats with D – E.coli, CIP, and Cu-Fe-MOF@Ag.
+Advanced Functional Materials, 2026
+13 of 19
+ 16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75725 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+approximately threefold higher than that of normal tissue,
+highlighting its potent anti-inflammatory activity.
+2.6
+Histological and Immunomodulatory
+Analyses
+To investigate tissue regeneration and immune modulation dur-
+ing healing, hematoxylin and eosin staining (H&E), Masson’s
+trichrome, and immunohistochemical staining were performed
+for markers including recombinant cluster of differentiation
+86 (CD86), tumor necrosis factor-α (TNF-α), interleukin 6 (IL-
+6), cluster of differentiation 206 (CD206), vascular endothelial
+growth factor (VEGF), interleukin-10 (IL-10), cluster of differ-
+entiation 31 (CD31), collagen I (COL-1), and fibronectin (FN).
+H&E staining (Figure 7A) shows that on day 3, all infected
+groups exhibited disordered tissue architecture. By day 6, Cu-Fe-
+MOF@Ag treated wounds displayed narrower scar widths and
+reduced neutrophil infiltration, and by day 12, the wound sites
+showed organized cell alignment with nearly complete epithe-
+lial regeneration. Masson staining further indicated continuous
+collagen deposition from day 3 onward, with significantly higher
+collagen content in the Cu-Fe-MOF@Ag group than in both
+the infection and ciprofloxacin groups. These results collectively
+demonstrate that Cu-Fe-MOF@Ag facilitates accelerated wound
+regeneration compared to conventional antibiotic treatment.
+To elucidate the immunomodulatory mechanism, immunoflu-
+orescence staining was performed on regenerated tissues at
+day 8. As shown in Figure 7B, pro-inflammatory markers
+(CD86, TNF-α, IL-6) were markedly suppressed in the Cu-Fe-
+MOF@Ag group compared with the infection and ciprofloxacin
+groups, whereas anti-inflammatory markers CD206 and IL-10
+were strongly upregulated. Compared with the D – E.coli and
+CIP-treated groups, the expression of the marker CD86 of classi-
+cally activated macropoages (M1 macrophages) was significantly
+decreased in the Cu-Fe-MOF@Ag group, whereas the expression
+of thmarker CD206 of alternatively activated macrophages (M2
+macrophages) was markedly increased. Flow cytometry con-
+firmed a higher M2/M1 macrophage ratio, indicating polarization
+toward the pro-regenerative M2 phenotype (Figure 7C,D). During
+the proliferative phase, key regenerative markers-VEGF, CD31,
+COL-1, and FN-were also significantly upregulated (Figure 7E) (P
+< 0.05). These findings indicate that Cu-Fe-MOF@Ag suppresses
+excessive inflammation, promotes macrophage polarization from
+M1 to M2 (Figure S16), and enhances the expression of angio-
+genic and extracellular matrix repair factors, thereby accelerating
+infected wound healing (Figure 7F). H&E staining of major
+organs (heart, liver, spleen, lungs, and kidneys) across all
+treatment groups (Figure S17) shows no detectable pathological
+abnormalities, confirming that Cu-Fe-MOF@Ag induced no sys-
+temic toxicity and exhibits excellent in vivo biosafety throughout
+the healing process.
+3
+Discussion
+Bacterial colonization initiates tissue damage and inflamma-
+tion at infected wounds, driving a pH shift from acidic to
+alkaline through immune oxidative stress and exudation, com-
+pounded by the accumulation of bacterial metabolites. This
+dynamic microenvironment undermines conventional drugs that
+lack phase-specific responsiveness, impeding precise therapy. To
+address this challenge, we developed a pH-responsive composite,
+Cu-Fe-MOF@Ag, and comprehensively evaluated its physico-
+chemical features, antibacterial activity and mechanisms, bio-
+compatibility, anti-inflammatory properties, and in vivo wound-
+healing efficacy.
+3.1
+Rational Design and pH-Adaptive Behavior
+Guided by mechanistic insights into pH responsiveness, we
+selected Fe-MOF and ultrasmall Ag nanoparticles as the core
+constituents. Fe3+ with a [Ar] 3d5 configuration provides high
+charge density and strong polarization, favoring robust coordina-
+tion with lone-pair-bearing donor atoms. In aminoterephthalate
+derivatives, deprotonated carboxylate O atoms chelate Fe3+ in a
+bidentate mode, while amine N donates a lone pair into vacant
+Fe 3d orbitals to form σ-coordination bonds [40]. Incorpora-
+tion of 2-methylimidazole-featuring dual protonation sites and
+a pKa near physiological pH-together with Cu2+ (conferring
+both reparative and antibacterial functions) yields a Cu-Fe-
+MOF carrier whose surface charge reversibly inverts with pH
+(positive in acid, negative in alkali), thereby matching the tem-
+poral pH evolution of infected wounds. Under acidic conditions,
+the positively charged surface and released metal ions electro-
+statically perturb secondary structures of cell-wall components
+and modulate functional proteins, resulting in potent, bacteria-
+density-dependent killing. Residual uncoordinated amines act
+as anchoring sites to immobilize Ag nanoparticles, producing
+the Cu-Fe-MOF@Ag antibacterial agent with programmable
+switching between antibacterial and anti-inflammatory states.
+The intelligent pH-responsive behavior of the nanocomposite
+originates from the unique protonation-deprotonation prop-
+erties of 2-methylimidazole. Owing to its dual protonation
+sites and a pKa value close to physiological pH, the ligand
+imparts excellent adaptability and stability to the Fe-MOF under
+dynamically changing microenvironments. Consequently, the
+surface chemistry and biological functionality of the material
+can dynamically adjust to environmental pH. During the early
+stage of infection dominated by bacterial colonization, the acidic
+microenvironment induces surface protonation, resulting in a
+positively charged surface. This facilitates the synergistic release
+of metal ions (Cu2+, Ag+) and reactive oxygen species (∙OH
+and 1O2), which cooperatively disrupt bacterial cell walls, impair
+respiratory chains, and interfere with amino acid metabolism,
+resulting in high antibacterial efficacy. As wound healing pro-
+gresses to the late inflammatory and proliferative phases, the
+microenvironment gradually shifts toward alkalinity, causing the
+surface charge to invert to the negative polarity. This transition
+enhances the electron cloud density of the π–π conjugated imi-
+dazole rings, boosting ROS-scavenging capacity and contributing
+to anti-inflammatory activity. The material thereby supports
+macrophage polarization and tissue regeneration.
+3.2
+Role of Ag Nanoparticles and Biosafety
+Considerations
+Building on our prior work [41–43], the antibacterial activity of
+Ag nanoparticles (Ag NPs) correlates with the generation rates
+14 of 19
+Advanced Functional Materials, 2026
+ 16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75725 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 7
+Evaluation of healing mechanisms of infected wounds. (A) hematoxylin-eosin (H&E) and Masson staining of tissues of the major
+organs of the rats in different groups. (B) CD86, TNF-α, IL-6, CD206, VEGF, and IL-10 staining images after 8 days of wound healing. (C) Flow cytometry
+analysis of CD-86. (D) Flow cytometry analysis of CD-206. (E) CD-31, COL-1, and FN staining images after 8 days of wound healing. (F) Schematic
+diagram of promoting wound healing.
+Advanced Functional Materials, 2026
+15 of 19
+ 16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75725 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+of ROS and Ag+ release. Smaller Ag NPs typically produce higher
+ROS and Ag+ fluxes. ROS oxidatively damage membrane proteins
+and peptidoglycan architectures, whereas Ag+, via electrostatic
+adsorption and coordination, irreversibly binds ─SH, ─NHx,
+and ─COOH groups in bacterial proteins/enzymes, denaturing
+structures, and abolishing function. Consistent with hare and
+soft acids and bases principles, Ag+ competitively binds bacterial
+glutathione (GSH), suppressing resistance development. Beyond
+size effects, H+ concentration critically modulates ROS and Ag+
+release. We propose that O2 adsorption on Ag surfaces gen-
+erates superoxide species; dimerization produces a tetraoxygen
+transition state that decomposes into 3O2 and 1O2. Oxygen lone
+pairs donate into Ag vacant orbitals (σ-coordination), elongating
+the O─O bond and activating O2. Subsequent proton-coupled
+electron transfer forms H2O2, which is further converted to ∙OH
+(with 1O2 as an intermediate). High [H+] thus accelerates Ag
+dissolution (Ag →Ag+) and sustains ROS pathways, whereas
+in alkaline media Ag+ tends to form passivating Ag2O on Ag
+NP surfaces, attenuating reactivity. Notably, the renal glomerular
+filtration barrier permits clearance of particles <6 nm; our
+ultrasmall Ag NPs lie below this threshold, aligning with the
+absence of overt histopathology in major organs and blood
+analyses showing effective clearance of excess Ag+ under our
+experimental conditions-supporting favorable biocompatibility.
+3.3
+Multimodal Antibacterial Mechanism
+Bacterial proliferation acidifies the milieu (e.g., lactic acid, CO2,
+pyruvate), which boosts the formation of ∙OH and 1O2. These
+ROS localize to bacterial membranes, overwhelming endogenous
+antioxidant defenses and triggering lipid peroxidation, protein
+oxidation, and DNA strand breaks. In parallel, the positively
+charged surface enhances adhesion to the negatively charged
+cell envelope, while released Cu2+/Fe3+/Ag+ coordinate with
+key enzymes (especially thiol-containing targets), thereby per-
+turbing pyrimidine nucleotide and amino-acid metabolism. Con-
+sistent with transcriptomic and pathway analyses, disruptions
+span alanine–aspartate–glutamate metabolism, branched-chain
+amino-acid biosynthesis, and pyrimidine metabolism, collec-
+tively collapsing the material and energetic bases for bacterial
+growth. These multi-target synergisms explain the superior
+activity of Cu-Fe-MOF@Ag over single-ion systems.
+Compared to our previous study, CuFe2O4/Cu@PEI/Ag exhibits
+potent antibacterial activity through the synergistic effects of
+Cu/Cu+/Cu2+, Fe2+/Fe3+, Ag/Ag+, ROS, and PEI. However, high
+levels of ROS may induce potential cytotoxicity. Ideally, antibac-
+terial materials should maintain low-dose, sustained release of
+metal ions and ROS within the infected microenvironment (e.g.,
+weakly acidic conditions), sufficient to disrupt bacterial mem-
+branes and interfere with bacterial metabolism, while preserving
+host immune cell functions. In contrast, excessive concentrations
+of Cu2+ or Ag+ ions may compromise the fibroblasts’ mito-
+chondrial membrane potential, triggering apoptosis or necrosis.
+The overproduction of ROS can inhibit keratinocyte migration
+and proliferation, hindering wound edge closure. Moreover,
+high doses of metal ions and ROS may interfere with VEGF
+signaling, suppress angiogenesis, and exacerbate local ischemia
+and hypoxia. ROS species such as ⋅OH are non-selective and,
+besides attacking bacterial membranes, can also induce lipid
+peroxidation and damage to proteins and DNA in host cells,
+potentially leading to tissue necrosis. Elevated Cu2+ or ROS
+levels may additionally disrupt transforming growth factor-β1
+signaling, impairing fibroblast-to-myofibroblast differentiation
+and thereby hindering wound contraction. In contrast, the MOF-
+Fe/Cu/Ag framework incorporates imidazole rings, enabling
+the release of trace amounts of Fe3+, Cu2+, Ag+, and ROS
+during the infection phase, effectively eradicating pathogens.
+During the inflammatory phase, the imidazole rings scavenge
+excess ROS, alleviating oxidative stress. Simultaneously, trace
+Fe3+ and Cu2+ act as endogenous supplemental elements sup-
+porting cellular functions and synergistically promoting wound
+healing.
+3.4
+Immunomodulation and Tissue Repair
+During healing, macrophages polarize between M1 (CD86, pro-
+inflammatory) and M2 (CD206, pro-reparative) phenotypes to
+orchestrate clearance and regeneration [44, 45]. In the inflamma-
+tory phase, M1 macrophages phagocytose pathogens/debris and
+release TNF-α and IL-6 to augment sterilization. During prolifera-
+tion, M1-to-M2 transition elevates IL-10 and upregulates vascular
+and matrix cues-CD31, VEGF, COL-1, and FN-to drive angio-
+genesis and tissue remodeling [46, 47]. Persistent debris/DNA
+fragments may prolong inflammation and upregulate Cu/Zn-
+superoxide dismutase (SOD), contributing to systemic ion loss
+(e.g., Cu2+, Fe3+) through sequestration and excretion, thereby
+delaying repair. The electron-rich π system of surface imidazole
+groups enhances ROS scavenging under alkaline conditions,
+mitigating oxidative stress in late stages. Concurrently, Cu2+
+promotes VEGF expression and endothelial activation, while Fe3+
+supports electron transport, DNA synthesis, and enzyme cofactor
+functions central to immune regulation (including modulation of
+IL-6 and TNF-α).
+Compared with the alkaline phosphatase-responsive antibacte-
+rial agent developed by Xia’s group, the near-infrared (NI) light-
+triggered intelligent spray system designed by Qian’s group, and
+the pH/glucose dual-responsive hydrogel dressing reported by Li
+et al., these enzyme- or light-responsive “smart” materials [48–
+50], although capable of controlled release, still rely on external
+intervention, which, to some extent, limits their efficiency in
+clinical translation. Moreover, for pH-responsive hydrogels, the
+interfacial adhesion between bilayer components and the overall
+mechanical performance still require precise optimization, while
+their response stability remains relatively limited. In contrast,
+the Cu-Fe-MOF@Ag antibacterial agent constructed in this study
+functions as an autonomously responsive, integrated platform
+that directly responds to the natural pH fluctuations within
+the wound microenvironment. During the infection stage (≈pH
+5.0), it operates in a pro-oxidative antibacterial mode, and
+subsequently, during the inflammatory stage (≈pH 8.0), it spon-
+taneously switches to an antioxidative and anti-inflammatory
+mode. This endogenously driven functional transition ensures
+stage-specific therapeutic intervention, enabling temporally coor-
+dinated antibacterial and anti-inflammatory regulation without
+the need for exogenous triggering. In addition, its degradation
+products actively participate in and accelerate the biological
+processes involved in tissue repair. Therefore, while enhancing
+autonomous antibacterial activity, this platform also distinctly
+16 of 19
+Advanced Functional Materials, 2026
+ 16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75725 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+promotes healing of infected wounds, demonstrating distinctive
+potential for clinical translation.
+From a clinical translation perspective, the Cu-Fe-MOF@Ag
+platform shows promising scalability and batch-to-batch repro-
+ducibility due to the robustness and standardizability of its
+synthetic route. The hydrothermal synthesis of the Fe-MOF
+scaffold has already been widely adopted in industrial chemical
+engineering, providing a practical basis for large-scale pro-
+duction. In addition, Cu2+ doping and Ag NP immobilization
+enable precise control over elemental stoichiometry, thereby
+contributing to ensuring consistent therapeutic performance
+across different batches. In terms of biosafety, Fe and Cu are
+essential trace elements in the human body and are generally
+associated with lower toxicological risks than non-biocompatible
+metals. The ultrasmall Ag nanoparticles (<6 nm) are favorable
+for renal clearance and may alleviate concerns regarding long-
+term systemic accumulation. Nevertheless, further establishment
+of Good Manufacturing Practice-compliant manufacturing pro-
+cesses and long-term pharmacodynamic evaluation will still
+be required to support future clinical translation and satisfy
+regulatory requirements.
+3.5
+Limitations and Outlook
+While long-term physiological toxicity and metabolism warrant
+further study, this work provides a conceptual validation that
+Cu-Fe-MOF@Ag can intelligently toggle antibacterial and anti-
+inflammatory functions in a drug-resistant infection model,
+efficiently clearing inflammatory mediators and enhancing repar-
+ative factor expression to markedly accelerate wound healing.
+Future efforts should expand pharmacokinetics/toxicokinetics,
+assess chronic exposure and immune memory effects, and explore
+scalable manufacturing and dressing integration to facilitate
+clinical translation.
+4
+Conclusion
+In summary, this study successfully developed a pH-responsive
+intelligent antibacterial agent, Cu-Fe-MOF@Ag, using Fe-MOF
+as the structural scaffold, reinforced with dimethylimidazole
+ligands, and synergistically integrated with Cu2+ and Ag. This
+smart nanocomposite can autonomously switch between antibac-
+terial and anti-inflammatory activities according to different
+stages of infected wound healing, enabling precise therapy while
+maintaining high stability throughout treatment. In vitro results
+demonstrated potent antibacterial activity, as Cu-Fe-MOF@Ag
+could be activated by H+ and exhibited concentration-dependent
+bactericidal performance, eradicating 99.99% of drug-resistant
+bacteria at only 35 µg mL−1. Its antibacterial effect arises from
+the synergistic action of surface positive charges, released metal
+ions, and ROS, which collectively disrupt the bacterial cell
+wall and membrane structure, interfere with respiratory chain
+function, amino acid metabolism, and nucleic acid stability, and
+ultimately lead to bacterial death. Moreover, Cu-Fe-MOF@Ag
+showed excellent biocompatibility, with a hemolysis rate of 3.41%,
+an IC50 value of 289.78 µg mL−1 toward L929 fibroblasts, a
+scratch closure rate of over 90% within 24 h, and no obvious
+in vivo accumulation. In vivo experiments further demonstrated
+that the material accelerated wound healing to over 98% within
+12 d by scavenging excessive ROS, suppressing the expression
+of pro-inflammatory cytokines TNF-α and IL-6, promoting the
+secretion of the anti-inflammatory cytokine IL-10, and upregu-
+lating the expression of repair-related factors, including CD31,
+VEGF, COL-1, and FN. In addition, the released Fe3+ and
+Cu2+ could replenish metal ions depleted during the immune
+response, thereby further promoting tissue regeneration. Overall,
+this study proposes an intelligent material design strategy based
+on Cu-Fe-MOF@Ag, providing a promising solution for fully
+adaptive treatment throughout the course of infected wound
+healing and demonstrating considerable potential for clinical
+translation.
+Author Contributions
+Shaobo Guo, Zhongshang Guo, and Long Bi conceived and designed
+the study, acquired funding, supervised the project, performed statistical
+analysis, and prepared figures/tables. Ruiling Hu and Shaobo Guo
+synthesized and characterized the materials. Zhongshang Guo, Lingna
+Wang, Hao Han, Xinli Zhou, and Tinghui Qiang conducted functional
+validation and biological experiments, and analyzed the data. Ching Yuan
+Hu contributed to writing – review & editing and language polishing.
+Acknowledgements
+This work was supported by the Shaanxi Province Health and Wellness
+Scientific Research Innovation Capacity Enhancement Project (Program
+No. 2024PT-16) and Hanzhong Municipal Key Scientific and Techno-
+logical Research and Development Project (Program No. SKJJKJGG02)
+provided financial support for this work.
+Conflicts of Interest
+The authors declare no conflicts of interest.
+Data Availability Statement
+No data was used for the research described in the article.
+References
+1. X. Zhang, B. Gong, F. Rao, et al., “Spatiotemporally Controlled Delivery
+of Biological Effectors from Nanofiber Scaffolds Accelerates Skin Wound
+Healing in Porcine Models,” Science Advances 11 (2025): adz5302.
+2. W. Sun, Y. Bai, X. Shao, et al., “Environmental Adaptive Nanoplatform
+for Bacteriotherapy,” Chemical Engineering Journal 524 (2025): 169148.
+3. R. Ju, Y. Li, D. Sui, and F. J. Xu, “Polyaminoglycoside Nanosys-
+tem Expressing Antimicrobial Peptides for Multistage Chronic Wound
+Management,” Journal of Controlled Release 382 (2025): 113657.
+4. L. Chen, M. Zhan, L. Zhang, et al., “Dual-Layer Microneedles for
+Immunomodulation and Infection-Responsive Therapy in Diabetic Foot
+Ulcers,” Materials Today Bio 35 (2025): 102490.
+5. Y. Song, X. Wu, B. Song, et al., “A Choline-Sensing Regulator
+Coordinates Metabolic Adaptation and Pathogenesis in Pseudomonas
+aeruginosa Pulmonary Infections,” Science Advances 11 (2025): adz1415.
+6. Y. Li, L. Hua, W. He, et al., “Microenvironment-Adaptive Metallo-
+Polymeric Nanodecoys via Subcomponent Coordination for Bacterial
+Biofilm Eradication and Immunomodulation,” Advanced Functional
+Materials 34 (2024): 2405487.
+7. Y. Li, Z. Sun, S. Chai, et al., “Tissue-Like Soft Dual-Network Hydrogel
+Patch with Instant/Tunable Adhesion and Microenvironment Modula-
+tion for Infected Wound Healing,” ACS Nano 19 (2025): 27714–27730.
+Advanced Functional Materials, 2026
+17 of 19
+ 16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75725 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+8. M. He, Z. Wang, D. Sun, Y. Deng, W. Yang, and G. Yin, “Type-
+Transformational BioHJzyme Enabled by Composition Modulation-
+Mediated Energy Band Engineering for Diabetic Infectious Wound
+Healing,” Advanced Functional Materials 35 (2025): 2421228.
+9. N. Li, X. Yan, M. Cheng, et al., “Construction of a Microenvironment-
+Responsive Antibacterial Hydrogel Packed with Immunomodulatory
+Carbonized Polymer Dots for Periodontitis Treatment from Multiple
+Perspectives,” Advanced Functional Materials 35 (2025): 2418407.
+10. R. Yuan, S. Du, S. Pan, et al., “Multifunctional Hydrogel Encapsulated
+With Baicalin for Full-layer Regeneration of Drug-Resistant Bacteria-
+infected Wounds After Radiotherapy,” Bioactive Materials 53 (2025):
+20–31.
+11. Y. Li, J. Li, Y. Zhong, et al., “pH-Responsive and Nanoenzyme-Loaded
+Artificial Nanocells Relieved Osteomyelitis Efficiently by Synergistic
+Chemodynamic and Cuproptosis Therapy,” Biomaterials 313 (2025):
+122762.
+12. W. You, F. Xiao, Z. Cai, et al., “Biofilm-Disrupting Heterojunction
+Microneedles: Dual ROS Amplification and Glucose Deprivation for
+Accelerated Diabetic Wound Healing,” Theranostics 15 (2025): 9757–9774.
+13. R. Zhang, W. Li, Z. Guo, et al., “Valence Electron Fluctuation in a High-
+Entropy Oxide Heterojunction Enables Collaborative Photodynamic and
+Mild-Thermal Therapy for Cutaneous Biofilm Infections,” ACS Nano 19
+(2025): 21348–21364.
+14. S. Y. Tong, V. G. Fowler, L. Skalla, and T. L. Holland, “Management
+of Staphylococcus aureus Bacteremia: A Review,” JAMA 334 (2025): 798–
+808.
+15. W. Dong and X. Chen, “Research Progress of Wearable Electrochem-
+ical Biosensors Based on Metal–Organic Frameworks (MOFs) for Sweat
+Detection,” Advanced Composites and Hybrid Materials 8 (2025): 310.
+16. W. Liu, Y. Fang, P. Xu, et al., “Cu-Fe Bimetallic Peroxide-Based
+Nanozyme with Microenvironment-Triggered Cascade Catalysis for Syn-
+ergistic Hydroxyl Radical, Nitric Oxide, and Oxygen Generation in
+Trimodal Wound Infection Therapy,” Materials Today Bio 32 (2025):
+101912.
+17. Z. Yu, M. Lepoitevin, and C. Serre, “Iron-MOFs for Biomedical
+Applications,” Advanced Healthcare Materials 14 (2025): 2402630.
+18. K. Mosupi, M. Masukume, G. Weng, N. M. Musyoka, and H. W.
+Langmi, “Recent Advances in Fe-Based Metal-Organic Frameworks:
+Structural Features, Synthetic Strategies and Applications,” Coordination
+Chemistry Reviews 529 (2025): 216467.
+19. W. Sun, Y. Huo, X. Feng, et al., “Recent Advances in Metal-Organic
+Frameworks (MOFs)-Based Colorimetric Sensors for Visual Detection of
+Food Freshness,” Coordination Chemistry Reviews 535 (2025): 216638.
+20. A. Pal, S. Suresh, A. Khan, et al., “Metal-Organic Frameworks as
+Thermocatalysts for Hydrogen Peroxide Generation and Environmental
+Antibacterial Applications,” Science Advances 11 (2025): ads4711.
+21. Q. Li, S. Zhang, Y. Xu, Y. Guo, and Y. Liu, “Constructing Polymetallic
+Nodes in Metal–Organic Frameworks Enhance Antibacterial of Drug-
+Resistant Bacteria,” Advanced Science 12 (2025): 2501327.
+22. Q. T. He, P. Qian, X. Y. Yang, et al., “Rational Design of Bacteria-
+Targeted and Photo-Responsive MOF Gel with Antibacterial and Anti-
+Inflammatory Function for Infected Wound Healing,” Chemical Engineer-
+ing Journal 493 (2024): 152760.
+23. Y. Yang, Y. Zhang, Y. Liu, et al., “Fabrication of Copper(II)-Doped
+Nanocarriers with Pathogen-Responsive Properties for Enhanced Fungi-
+cidal Activity,” Chemical Engineering Journal 523 (2025): 168513.
+24. M. Huang and X. Du, “Synergistic Effect of Ag Nanoparticle and
+Graphene on Improving Antimicrobial and Photothermal Conversion
+Performances of Their Polyurethane Foam Sensor,” Chemical Engineering
+Journal 507 (2025): 160836.
+25. X. Zhao, Z. Geng, W. Zhang, et al., “Silver Nanoparticles and Hout-
+tuynin Sodium-Based Fibrous Poly(L-lactide-co-glycolide)/Gelatin-Based
+Dressings for Infectious Wound Healing,” Small 21 (2025): 04383.
+26. H. Luo, H. Zhang, S. Xiong, et al., ““Three Swords in One”: Mutu-
+ally Enhanced Antibacterial Activity of QCS-Ag-Ce6 Nanocomposite
+for Wound Healing of Drug-Resistant Bacterial Infections,” Chemical
+Engineering Journal 522 (2025): 167037.
+27. P. Das, S. Ganguly, P. K. Marvi, et al., “Borophene Based 3D Extru-
+sion Printed Nanocomposite Hydrogel for Antibacterial and Controlled
+Release Application,” Advanced Functional Materials 34 (2024): 2314520.
+28. B. Du, X. Jiang, A. Das, et al., “Glomerular Barrier Behaves as an
+Atomically Precise Bandpass Filter in a Sub-Nanometre Regime,” Nature
+Nanotechnology 12 (2017): 1096–1102.
+29. C. Huang, X. Zhao, M. Su, and Z. Yin, “Construction and Evaluation of
+Novel αvβ3 Integrin Ligand-Conjugated Ultrasmall Star Polymer Micelles
+Targeted Glomerular Podocytes through GFB Permeation,” Biomaterials
+276 (2021): 121053.
+30. A. S. Wang, M. H. Liu, J. X. Wang, X. F. Zeng, and J. F. Chen,
+“High-Gravity-Assisted Efficient Synthesis of Ultrasmall and Monodis-
+persed Cu@Ag Nanoparticles for Enhanced Antibacterial Performance,”
+Chemical Engineering Journal 525 (2025): 170342.
+31. H. T. Draviana, I. Fitriannisa, M. Khafid, et al., “Size and Charge
+Effects of Metal Nanoclusters on Antibacterial Mechanisms,” Journal of
+Nanobiotechnology 21 (2023): 428.
+32. X. Li, H. Shang, Y. Xiong, Y. Luan, D. Wang, and X. Du,
+“Silver/Jellyfish-Like
+Mesoporous
+Polydopamine
+Nanomotor
+with
+Concentration-Dependent Synergistic Antibacterial Activity,” Chemical
+Engineering Journal 505 (2025): 159367.
+33. J. He, W. Qu, Y. Feng, et al., “Multiple Synergistic Antibacterial
+Melamine-Impregnated Paper Based on Nano Ag-Doped ZIF-8,” Chem-
+ical Engineering Journal 493 (2024): 152453.
+34. K. Asif, M. Adeel, M. M. Rahman, et al., “Silver Nitroprusside
+as an Efficient Chemodynamic Therapeutic Agent and a Peroxynitrite
+Nanogenerator for Targeted Cancer Therapies,” Journal of Advanced
+Research 56 (2024): 43–56.
+35. W. Zhang, J. Liu, X. Li, et al., “Precise Chemodynamic Therapy of
+Cancer by Trifunctional Bacterium-Based Nanozymes,” ACS Nano 15
+(2021): 19321–19333.
+36. X. Hu, R. Ma, P. Zhang, et al., “Biomimetic Metal–Organic Framework
+Combats Biofilm-Associated Infections via Hyperthermia-Enhanced Bac-
+terial Metabolic Interference and Autophagy-Promoted Adaptive Immu-
+nity,” Advanced Functional Materials 34 (2024): 2310509.
+37. G. Zhang, Z. Li, M. Sun, et al., “Nanostructure-Mediated Photothermal
+Effect for Reinforcing Physical Killing Activity of Nanorod Arrays,”
+Advanced Science 12 (2025): 2411997.
+38. H. Zhang, S. Venkatesan, E. Ng, and B. Nan, “Coordinated Peptidogly-
+can Synthases and Hydrolases Stabilize the Bacterial Cell Wall,” Nature
+Communications 14 (2023): 5357.
+39. Z. Pei, L. Li, N. Yang, S. Sun, N. Jiang, and L. Cheng, “Bioactive Metal-
+Based Nanomedicines for Boosting Anti-Tumor Immunity: Advance,
+Challenge, and Perspective,” Coordination Chemistry Reviews 517 (2024):
+215969.
+40. S. Zhang, Y. Zhuo, C. I. Ezugwu, C. Wang, C. Li, and S. Liu, “Synergetic
+Molecular Oxygen Activation and Catalytic Oxidation of Formalde-
+hyde over Defective MIL-88B(Fe) Nanorods at Room Temperature,”
+Environmental Science & Technology 55 (2021): 8341–8350.
+41. S. Guo, M. B. Isah, R. Hu, et al., “A Metal-Based Heterojunction
+for Controlled Release of Multiple Cations and Reactive Oxygen Species
+Inhibiting Multidrug-Resistant Bacteria In Vitro and In Vivo,” ACS
+Applied Materials & Interfaces 17 (2025): 38859–38873.
+42. J. Wang, R. Qiang, Q. Miao, et al., “Synthesis and Potent Antibacterial
+Activity of Nano-CuFe2O4/MoS2@Ag Composite under Visible Light,”
+Applied Surface Science 684 (2025): 161908.
+43. S. Guo, X. Liu, H. Chen, et al., “Antibacterial Effect of the Metal
+Nanocomposite on Escherichia coli,” Journal of Hazardous Materials 476
+(2024): 135149.
+18 of 19
+Advanced Functional Materials, 2026
+ 16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75725 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+44. Y. S. Yuan, H. Y. Li, H. Lu, et al., “Reprogramming Mitochondrial
+Metabolism to Enhance Macrophages Polarization by ROS-Responsive
+Nanoparticles for Osteoarthritis,” Biomaterials 322 (2025): 123395.
+45. A. Ramesh, A. Brouillard, S. Kumar, D. Nandi, and A. Kulkarni,
+“Dual Inhibition of CSF1R and MAPK Pathways Using Supramolecular
+Nanoparticles Enhances Macrophage Immunotherapy,” Biomaterials 227
+(2020): 119559.
+46. C. E. Witherel, K. Sao, B. K. Brisson, et al., “Regulation of Extracel-
+lular Matrix Assembly and Structure by Hybrid M1/M2 Macrophages,”
+Biomaterials 269 (2021): 120667.
+47. A. Latif, L. E. Fisher, A. A. Dundas, et al., “Microparticles Deco-
+rated with Cell-Instructive Surface Chemistries Actively Promote Wound
+Healing,” Advanced Materials 36 (2024): 2208364.
+48. P. Xia, M. Yu, M. Yu, D. Chen, and J. Yin, “Bacteria-Responsive,
+Cell-Recruitable, and Osteoinductive Nanocomposite Microcarriers for
+Intelligent Bacteriostasis and Accelerated Tissue Regeneration,” Chemi-
+cal Engineering Journal 465 (2023): 142972.
+49. B. Pan, Y. Jin, Y. Chen, et al., “NIR Light-Controlled Cascade
+Regulation of Mixed-Valence Copper (I)/(II) Nanozyme (Cu2−xSe) Spray
+for Infectious Wound Healing,” Advanced Functional Materials 36 (2025):
+07799.
+50. M. Huangfu, Y. Ren, W. Yang, Y. Liu, and X. Li, “pH-Responsive
+Bilayer Hydrogel with Synergistic Antibacterial/Anti-Inflammatory
+Effect for Infected Wound Healing,” ACS Applied Materials & Interfaces
+17 (2025): 40258–40275.
+Supporting Information
+Additional supporting information can be found online in the Supporting
+Information section.
+SupportingFile: adfm75725-sup-0001-SuppMat.docx.
+Advanced Functional Materials, 2026
+19 of 19
+ 16163028, 0, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75725 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

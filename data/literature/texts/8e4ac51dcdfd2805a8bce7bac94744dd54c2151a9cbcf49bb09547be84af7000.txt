@@ -1,0 +1,576 @@
+Contents lists available at ScienceDirect
+Biosensors and Bioelectronics
+journal homepage: www.elsevier.com/locate/bios
+Facile combination of beta-cyclodextrin host-guest recognition with
+exonuclease-assistant signal ampliﬁcation for sensitive electrochemical
+assay of ochratoxin A
+Yonghong Wanga, Ge Ningb, Yaohui Wua, Shun Wua, Baiquan Zenga, Gaoqiang Liua,⁎,
+Xiaoxiao Hec, Kemin Wangc
+a Hunan Provincial Key Laboratory for Forestry Biotechnology, College of Life Science and Technology, Central South University of Forestry and Technology, 410004,
+Changsha, China
+b International Education Institute, Hunan University of Chinese Medicine, 410208, Changsha, China
+c State Key Laboratory of Chemo/Biosensing and Chemometrics, College of Biology, College of Chemistry and Chemical Engineering, Hunan University, 410082 Changsha,
+China
+A R T I C L E I N F O
+Keywords:
+Electrochemical
+Ochratoxin A
+Host-guest recognition
+RecJf exonuclease
+Signal ampliﬁcation
+A B S T R A C T
+Smartly coupling exonuclease-induced target recycling signal ampliﬁcations with β-cyclodextrin host-guest re-
+cognition, a novel “signal-on” aptamer sensor for sensitive determination of ochratoxin A (OTA) was proposed
+for the ﬁrst time. Firstly, the formation of double-strand DNA (dsDNA) was occurred by hybridizing OTA ap-
+tamer with its complementary DNA (cDNA) and as the probe DNA the cDNA at its 3′ terminal was labeled with
+methylene blue (MB). Next, when OTA was present, the aptamer tended to form aptamer-OTA complex with
+conformation of G-quadruplex instead of aptamer-cDNA duplex, leading to thus the probe DNA separating from
+dsDNA complex. Then the RecJf exonuclease was added, demolishing partially G-quadruplex structure and re-
+leasing a certain number of OTA. Sequentially, those released OTA would continue to react with the rest of
+aptamer in dsDNA, drawn into development of a new round of G-quadruplex complex, where the target cycling
+was realized. Meanwhile, as a signal molecule, MB modiﬁed on cDNA was liberated along with the cDNA being
+digested into monoucleotides by RecJf exonuclease, capable of diﬀusing onto the electrode surface due to host-
+guest recognition with β-cyclodextrin, whereupon the signal was enriched and yielded. In this way, cycles of
+target with continuous output of signal indicators were undergone, in which the detection of target was in return
+fulﬁlled with signal ampliﬁcation owing to the joint endeavor of exonuclease and β-cyclodextrin. Under the
+optimal conditions, the raising signal maintained a linear relation with the logarithm of the target concentrations
+ranging from 10 pg/mL to 10.0 ng/mL and the detection limit reached as low as 3 pg/mL. This brand-new
+strategy was simple and low-cost but satisfactory in terms of detection limit, range and sensitivity, in all pos-
+sibility to be applied extensively for diverse targets detection by easily alternating the corresponding aptamers.
+1. Introduction
+Given its hazardous nature of carcinogenicity, nephrotoxicity and
+immunuetoxicity, ochratoxin A (OTA) is recently an interest for re-
+search pursued by diverse ﬁelds worldwide (Mayura et al., 1984; Assaf
+et al., 2004). To track its origin, as one of mycotoxins, OTA was a toxic
+secondary metabolite commonly secreted by fungi Aspergillus and Pe-
+nicillium, presenting ubiquitously in a variety of foodstuﬀs involving
+rice, peanut, wheat, maize and ultimately ﬁnding its way to the human
+body through food chain (Wang et al., 2018; Marin et al., 2013). With
+apprehension for the risks this bugbear might bring to human health,
+authorities exerted a relatively strict control over OTA. For instance,
+International Agency for Research on Cancer proclaimed its possible
+carcinogenicity towards humans; the European Commission raised the
+threshold for regulating a maximized amount of OTA as low as 5 μg/kg
+from raw cereal grains (Pfohl-Leszkowicz et al., 2007; Dall'Asta et al.,
+2010). Nevertheless, appreciable uncertainties were arisen presumably
+from robust chemical stability of OTA which enabled its survival from
+the modern food process under even severe physicochemical condi-
+tions. Worse, once ingested by human, it was metabolized quite slowly
+that could exist in the body for over one month, adversely aﬀecting
+human health for an extended period. Therefore, the surging practical
+https://doi.org/10.1016/j.bios.2018.10.007
+Received 7 August 2018; Received in revised form 22 September 2018; Accepted 3 October 2018
+⁎ Corresponding author.
+E-mail addresses: bionano@163.com (Y. Wang), gaoliuedu@163.com (G. Liu).
+Biosensors and Bioelectronics 124–125 (2019) 82–88
+Available online 11 October 2018
+0956-5663/ © 2018 Elsevier B.V. All rights reserved.
+T
+
+need for accurately monitoring the level of OTA is calling admitting of
+no delay for imperative developments in superior strategies on its assay
+with well-performed sensitivity and speciﬁcity.
+Various analytical methods were hitherto employed for OTA
+quantiﬁcation, such as mass spectrometry (De Santis et al., 2017;
+Ventura et al., 2003), high-performance liquid chromatography (Asadi,
+2018), gas chromatography (Soleas et al., 2001) enzyme-linked im-
+munosorbent assay (Garcia-Fonseca et al., 2016), capillary electro-
+phoresis (Lee et al., 2013), surface enhanced Raman scattering (Li et al.,
+2018a), electrochemiluminescence (Zhang et al., 2018; Wang et al.,
+2016a), ﬂuorescence assay (Wang et al., 2017, 2015; Ma et al., 2018)
+and colorimetric assay (Lin et al., 2018; Yu et al., 2018). Admittedly,
+these reported methods made undeniable progress otherwise compro-
+mised somewhat by unavoidable deﬁciencies of expensive equipment,
+time-consuming, unsatisfying sensitivity, and complicated process and
+demanding expert operators. To be noted however, electrochemical
+sensors became prevalent as an intriguing approach for biosensing and
+garnered considerable attention by virtue of desirable sensitivity, spe-
+ciﬁcity, rapidity and aﬀordability for instruments, operators-friendly
+process and miniaturization of the instruments (Madhurantakam et al.,
+2018; Abi et al., 2018; Li et al., 2018b; Li et al., 2018c). In particular,
+when associated with a single stranded oligonucleotide sequence-ap-
+tamer who was capable of binding with versatile targets with im-
+pressive aﬃnity and speciﬁcity, the aptasensor raised considerable
+concerns about assaying mycotoxins attributed to the exceptional
+merits of outstanding binding constants for the majority of mycotoxins
+along with dissociation constants in the scope of nanomole (Zhu et al.,
+2018; Jiang et al., 2018; Shi et al., 2018).
+Target recycling assisted by enzymes oﬀered an appealing alter-
+native for fulﬁllment of signal ampliﬁcation. As a speciﬁc biocatalyst
+enzyme, nucleases could initiate signal ampliﬁcation, in which a single
+target would result in appreciable cycles of target, eﬀectively re-
+cognizing and sensitively cleaving the phosphodiester bonds both from
+the ends and internally between nucleotides of nucleic acids (Chen
+et al., 2018; Yang et al., 2018; Cui et al., 2018). It is of superiority over
+many other ampliﬁcation strategies catalyzed by substances as nano-
+particles, graphene and quantum dot due mainly to its simpliﬁed pro-
+cess without demanding complicated preparation, thus enjoying wide
+employment in signal ampliﬁcation (Wang et al., 2016b; Jiang et al.,
+2014; Chu et al., 2016). Previously, signal ampliﬁcation strategies in
+this kind were reported utilizing exonucleases. To name a few, Zhao
+et al. established an OTA detection platform based on signal ampliﬁ-
+cation by exonuclease III and ﬂuorescence quenching by gold nano-
+particles (Zhao et al., 2018). Ni et al. developed a label-free electro-
+chemiluminescence
+aptasensor
+using
+exonuclease-assisted
+target
+recycling ampliﬁcation for the detection of OTA (Ni et al., 2018). More
+interestingly, as a speciﬁc exonuclease acting exclusively on ssDNA,
+RecJf exonuclease bore the capability of catalyzing the deoxy-nucleo-
+tide monophosphates's removal from ssDNA in the direction of 5′ →3′,
+even including those aptamers bound with target in a complex of target-
+aptamer, which turned themselves to be a favorite introduced to var-
+ious novel electrochemical aptasensors strategy.
+Inspired by as-mentioned items, in this study, using exonuclease-
+catalyzed target recycling signal ampliﬁcation and β-cyclodextrin host-
+guest recognition, an OTA aptasensor on the basis of electrochemistry
+was thus fabricated. At ﬁrst, the hybridization was done between OTA
+aptamer and its complementary DNA (probe DNA) modiﬁed with MB as
+signal indicator for formation of dsDNA. Then OTA was added binding
+with aptamer to shape OTA-aptamer complex with structure of G-
+quadruplex, which dissociated the hybridized cDNA from dsDNA si-
+multaneously. Afterwards, RecJf exonuclease was added, functioning as
+a catalyst, destroying certain amounts of OTA-aptamer complexes and
+releasing the OTA who would engage in another loop of G-quadruplex
+formation. With the same pace of above cycling, cDNA would be di-
+gested into mononucleotides by the exonuclease, releasing the signal
+molecules that were capable of diﬀusing easily onto the electrode
+surface through host-guest recognition with β-cyclodextrin, and con-
+tributing accordingly to the enrichment and production of the signal
+revealed by diﬀerential pulse voltammetry (DPV). Hence the quantiﬁ-
+cation of OTA was expected to be accomplished by recording the signal
+variances on electrode surface before and after the addition of OTA. To
+be noted, two tricks would be employed for the realization of pre-
+eminence performance by this proposed assay: for one hand, exonu-
+clease was adopted to resect both OTA-aptamer and cDNA into frag-
+ments, resulting in the former's release of OTA involved in reaction
+cycles, and the latter's continuous liberation of MB with the same pace
+of the cycle served as the signal molecules accessible to the electrode
+surface where the signal was produced and ampliﬁed. For the other
+hand, β-cyclodextrin modiﬁed on the electrode surface could facilitate
+signiﬁcantly the signal molecule enrichment via the host-guest inter-
+action. In this way, a versatile and sensitive exonuclease-activated
+target recycling electrochemical tactic was presented which was un-
+precedentedly reported integrating all these novel elements to the best
+of our knowledge, holding thus a profound potential to be extensively
+applied for the quantiﬁcation of the rest of targets after conveniently
+replacing the corresponding aptamer.
+2. Experimental section
+2.1. Reagents and materials
+The OTA (10 μg/mL in acetonitrile, analytical standard, Sigma-
+Aldrich), mercapto-β-cyclodextrin (β-CD-SH), aﬂatoxin B1 (AFB1),
+ochratoxin B (OTB), aﬂatoxin M1 (AFM1), ochratoxin C (OTC) were all
+purchased from Sigma-Aldrich (Sigma-Aldrich, China) and utilized
+without treatment. 10 × NEBuﬀer 2 (10 mM Tris-HCl, 10 mM MgCl2,
+50 mM NaCl, 1 mM DTT, pH = 7.9) and RecJf exonuclease were bought
+in New England Biolabs Ltd. (Beijing, China). The remnant reagents
+were all in analytical grade directly utilized as purchased with no
+treatments. As the solvent, the ultrapure water was exploited with
+which the solutions were prepared and diluted from the Millipore Milli-
+Q system (Millipore, Billerica, MA, 18.2 MΩ cm).
+The cDNA sequences and aptamer of OTA were all synthesized and
+puriﬁed by Shanghai Sangon Biotechnology Co. Ltd. (Shanghai, China).
+MB for the purpose of realizing the signal transmission was modiﬁed on
+3′ end of cDNA. The oligonucleotide sequences of aptamer and cDNA
+were exhibited below:
+Aptamer: 5′-GAT CGG GTG TGG GTG GCG TAA AGG GAG CAT CGG
+ACA-3′
+cDNA: 5′- TGT CCG ATG CTC CCT TTA CGC CAC CCA CAC CCG
+ATC- MB-3′
+2.2. Pretreatment of electrode
+A portable screen-printed electrode (SPE, DRP-C220AT, Metrohm
+China Limited) was utilized comprising an Ag reference electrode, a
+gold working electrode, as well as a gold counter electrode. Prior to
+treatment with pure water for about 10 min for removal of residual
+organic contaminants, for another 10 min the electrodes were foremost
+cleaned in an ultrasonicator with ethanol. Sequentially, the electrodes
+were rinsed with suﬃcient amount of pure water, blew till dried by N2.
+At room temperature every electrochemical measurement was im-
+plemented with a CHI660E electrochemical workstation (Shanghai
+Chenhua Instrument Corporation, China). It was also at room tem-
+perature to steer DPV in sensor interrogation. The potentials were with
+reference to Ag reference electrode. Each step was operated by in-
+dependent experiments repeating for no less than ﬁve times.
+2.3. RecJf exonuclease-assisted target recycling reaction
+Before usage, every oligonucleotide was heated for 5 min at 95 °C,
+Y. Wang et al.
+Biosensors and Bioelectronics 124–125 (2019) 82–88
+83
+
+cooled down to room temperature for upcoming experiments, ensuring
+the aptamer and cDNA to adjust to their inherent conformations. The
+occurrence of hybridization between the aptamer and cDNA was in
+200 μL of 1 × NEBuﬀer 2, experiencing identically the process of an-
+nealing. After above process, a range of OTA concentrations as well as
+2 μL RecJf exonuclease (1 U/μL) were dropped into the solution and
+then incubated for 90 min at 37 °C for adequate reaction. AFB1 (10 ng/
+mL), AFM1 (10 ng/mL), OTC (10 ng/mL) and OTB (10 ng/mL) were
+picked out to displace OTA in the speciﬁcity test.
+2.4. Gel electrophoresis
+Putting 0.75 g of agarose powder into TAE buﬀer (40 mM Tris-
+Acetic Acid; 2 mM EDTA), a 2% agarose gel was thus made. Heat was
+used for the dissolution of the power into the mixed solution.
+Sequentially, the gel was poured into the gel setting tray. Eventually,
+5 μL
+aptamer,
+MB-cDNA,
+dsDNA,
+dsDNA + RecJf
+exonuclease,
+aptamer + RecJf exonuclease, dsDNA + RecJf exonuclease without
+and with OTA mixed respectively with 1 μL of DNA loading dye to be
+electrophoresed for 80 min at 120 V. The results of electrophoretogram
+were observed and photographed by a Gel Doc XR System (BIO-RAD,
+USA).
+2.5. Determination of OTA
+First of all, at room temperature, 5.0 μg/mL β-CD-SH was added
+onto the electrode surface and then incubated for 120 min. Next,
+through rinsing with PBS buﬀer for 3 times, the needless β-CD-SH was
+eliminated from the electrode surface. Based on the β-CD/SPE, at last
+the above mentioned reaction solution after addition of RecJf exonu-
+clease was designated to determine target at various concentrations
+under optimal circumstance. Sequentially 10 μL reaction solutions were
+dropped onto the β-CD/SPE's surface. After capturing for 60 min, the
+electrode rinsed with PBS buﬀer before electrochemical measurements.
+2.6. Selectivity
+Employing analogs in the sensing platform, the speciﬁcity of the as-
+proposed strategy was assessed. Four diﬀerent interfering mycotoxins
+as representatives-AFM1 and AFB1, OTB, OTC were appointed respec-
+tively for examining the selectivity of the strategy at the concentration
+of 10 ng/mL, going through the same experimental process as the one
+illustrated for the OTA detection. The results were compared with the
+one using 1.0 ng/mL OTA.
+2.7. Determination of OTA in real samples
+Recovery was validated in red wine samples using OTA at various
+concentrations. The possibility and reliability towards the method
+being applied in practice were established in regard of evaluating the
+recovery rate in actual samples. At standard samples (1.0, 2.0 and
+5.0 ng/mL), the red wine samples were spiked with a range of con-
+centrations of OTA. The procedures were identical with the above one
+elaborated.
+3. Results and discussions
+3.1. Sensing principle of the aptasensor for OTA detection
+The principle of this proposed strategy was exhibited in Fig. 1:
+ﬁrstly, in homogeneous solution, the aptamer of target and its cDNA
+(probe DNA) were hybridized to develop dsDNA, whereas the MB as
+signal indicator was modiﬁed on cDNA. At this stage, very limited
+amount of dsDNA could diﬀuse onto the surface of the electrode be-
+cause of the steric-hindrance eﬀect between the dsDNA complex and
+the β-cyclodextrin modiﬁed electrode, thereby leading to limited
+variation of the DPV signal. Whereas when the target presented, the
+aptamer was inclined to stay aptamer-target complex rather than the
+aptamer-cDNA duplex because of robust aﬃnity eﬀects including the
+electrostatic, hydrogen bond, and spatial matching eﬀects, separating
+therefore the dsDNA into aptamer-target complex and the cDNA labeled
+with signal molecules. After that, RecJf exonuclease was added, capable
+of digesting both cDNA and the aptamer from 5′ termini direction.
+Attributed to the presence of RecJf exonuclease, liberated was the
+target from the aptamer-target complex, participating in a new round of
+association with aptamer in dsDNA duplex and realizing thus the target
+cycling. Simultaneously, the MB modiﬁed on cDNA was released as the
+same pace of the cDNA being hydrolyzed by exonuclease, getting an
+easier access to the electrode surface through the host-guest recognition
+with β-cyclodextrin. Hence strong DPV signal related with the OTA
+concentration could be detected based on the above principle. Several
+designing tips were expected to have promoted the performance of this
+method: (1) it adopted RecJf exonuclease, capable of selectively de-
+grading single-stranded DNA including the aptamer-target complex and
+its cDNA, thereby engining the target reaction cycles and on-going
+outputs of signal indicators in sync with the target cycling, due to which
+a stronger electrochemical readout could be fulﬁlled. (2) The host-guest
+recognition with β-cyclodextrin guided the released MB a shortcut to
+the electrode surface, enriching accordingly the signals detected. (3) As
+novel type of ssDNA recognition probes, aptamers were employed to
+ensure the speciﬁcity of detection. Hence by this cyclic reaction, a sane
+electrochemical aptasensor was developed to assay the target.
+3.2. Gel electrophoresis
+For veriﬁcation of target recycling induced by the exonuclease,
+agarose gel electrophoresis was carried out in this strategy. Agarose gel
+electrophoresis of aptamer (lane 1), cDNA (lane 2), dsDNA (OTA ap-
+tamer + cDNA, lane 3), dsDNA (OTA aptamer + cDNA) with RecJf
+exonuclease (lane 4), aptamer-OTA complex with RecJf exonuclease
+(lane 5), aptamer with OTA (lane 6), dsDNA digestion product without
+(lane 7) and with (lane 8) OTA were studied. After 90 min of exonu-
+clease incubation and subsequent 10 min of exonuclease inactivation
+(incubate at 37 °C), the exonuclease digestion products were acquired.
+As performed in Fig. 2, two obvious bands were presented respectively
+in lane 1 and lane 2, which represented the aptamer and the cDNA.
+Lane 3 displayed the dsDNA alone and lane 4 did dsDNA with RecJf
+exonuclease whose bands were both evident, manifesting that RecJf
+exonuclease could not digest dsDNA. But after RecJf exonuclease was
+added into the OTA aptamer, no band was observed in lanes 5, in-
+dicating that the oligonucleotides were degraded into fragments by
+RecJf exonuclease and then moved out of the gel. Lane 8 revealed a
+negligible-seen band, suggesting that RecJf exonuclease could make the
+oligonucleotide of OTA-aptamer digested. Overall, the results demon-
+strated that the structure of dsDNA could survive itself from being di-
+gested by RecJf exonuclease. But the ssDNA such as cDNA and aptamer
+even in aptamer-OTA complex could be degraded by RecJf exonuclease
+reﬂected by agarose gel electrophoresis, implying that the release of
+OTA involved in reaction cycles was because of the enzymolysis to-
+wards OTA-aptamer by RecJf exonuclease.
+3.3. Feasibility of the sensing strategy
+The feasibility of the RecJf exonuclease-assistant signal ampliﬁca-
+tion for sensitive electrochemical assay of OTA was investigated. Fig. 3
+displayed the DPV signal responses prior to and after the OTA addition.
+Before the participation of the target, the uncleaved aptamer-cDNA was
+maintained and the hybridization of the aptamer and the MB modiﬁed
+cDNA obstructed the reaction with RecJf exonuclease, thus generating a
+low DPV background signal (curve a). It was in a great degree because
+the MB modiﬁed on the dsDNA could hardly diﬀuse freely to the surface
+of electrode on account of steric hindrance interfered in the electrode
+Y. Wang et al.
+Biosensors and Bioelectronics 124–125 (2019) 82–88
+84
+
+and dsDNA. Also, it exhibited a weak enhancement of the DPV readout
+when OTA existed alone (curve b), principally arisen from the reason
+that OTA possessed a robust binding aﬃnity towards its aptamer which
+induced a fraction of dsDNA probes being dissociated, thus causing the
+release of the MB-cDNA diﬀusing onto the electrode surface via beta-
+cyclodextrin host-guest recognition. While in the addition of both the
+RecJf exonuclease and OTA, the signal responses got steeply increased
+(curve c) owing to the RecJf exonuclease digestion of the OTA-aptamer
+complex and cDNA modiﬁed with MB, liberating the OTA reused for the
+next reaction and resulting in a dramatically increasing number of free
+MB in the solution. Thus feasibility of the proposed strategy was de-
+monstrated substantially.
+3.4. Optimization of experimental parameters
+Experiment-concerned parameters were optimized respectively such
+as the concentration of RecJf exonuclease, variables MB-cDNA con-
+centration, digesting time, capturing time between immobilized β-CD
+and MB for the sake of giving full play to the electrochemical sensing
+superiority in determination. Firstly, the concentration of RecJf
+exonuclease was evaluated by the DPV. The oxidation peak current rose
+with increasing concentration of RecJf exonuclease. But when the RecJf
+exonuclease concentration was over 2.0 U, not a distinct peak current
+change was seen, indicating that the maximum concentration was al-
+most reached for cleavage reaction (Fig. 4A). Hence the concentration
+of RecJf exonuclease at 2.0 U was ﬁxed for the following experiments.
+To exhibit an optimal electrochemical signal, the MB-cDNA con-
+centration was investigated. The concentrations of the aptamer and MB-
+cDNA were equal and the electrodes were investigated in 0.1 M PBS
++ 0.1 M KNO3 (pH 7.4). The currents of modiﬁed electrode after
+treated with 10 μL mixture containing diﬀerent MB-cDNA concentra-
+tion were shown (see Fig. 4B), indicating that the current enhanced
+with an increase of MB-cDNA concentration but began to level oﬀafter
+the MB-cDNA concentration reached to 2 μM. This manifested that the
+MB-cDNA concentration had approached saturation. Therefore, MB-
+cDNA concentration of 2 μM was pinpointed as the optimal value.
+Since both the RecJf exonuclease and targets were added to the
+aptasensor for the recycling initiation, so the time of digesting aptamer-
+target by exonuclease was also tested because it impacted heavily on
+the sensitivity of this developed system. As displayed in Fig. 4C, the
+currents intensity increased remarkably along with the enhancement of
+Fig. 1. Sensing principle of aptamer electrochemical platform for OTA detection based on β-cyclodextrin host-guest recognition and exonuclease-assistant signal
+ampliﬁcation.
+Fig. 2. Gel electrophoresis of aptamer (lane 1), MB-cDNA (lane 2), dsDNA
+(aptamer + MB-cDNA) (lane 3), dsDNA + RecJf exonuclease digestion product
+(lane 4), aptamer-OTA + RecJf exonuclease digestion product (lane 5), ap-
+tamer with OTA (lane 6), and dsDNA + RecJf exonuclease digestion product
+without (lane 7) and with (lane 8) OTA.
+Potential / V
+-.4
+-.3
+-.2
+-.1
+0.0
+Currents / 1e-7A
+0
+1
+2
+3
+a
+b
+c
++  target
+-  target
+no signal amplification
++  target
+signal amplification
+Fig. 3. DPV curves of a) β-CD modiﬁed SPE in the absence of OTA, b) β-CD
+modiﬁed SPE after incubation with OTA in the (b) absence and (c) presence of
+RecJf exonuclease, respectively, and the electrodes were investigated in 0.1 M
+PBS buﬀer + 0.1 M KNO3 (pH 7.4).
+Y. Wang et al.
+Biosensors and Bioelectronics 124–125 (2019) 82–88
+85
+
+incubation time for the aptasensor with target and RecJf exonuclease
+from 10 min to 2 h. Actually it was turned out that the cleavage process
+was basically accomplished within 60 min since the continuously in-
+creased signal indicated that the RecJf exonuclease catalyzed target
+recycling process indeed took place and the signal reached saturation at
+60 min. But to guarantee the complete cleavage reaction, the time was
+extended to 90 min. Thus 90 min was regarded as the optimal reaction
+time for the subsequent experiment.
+As another important factor, the capture time between β-CD and MB
+was also investigated due to the close linkage between the capture ef-
+ﬁciency and the detection sensitivity. Hence the capture time was op-
+timized to ensure that the signal molecules were to a maximum extent
+brought to the electrode surface. As exhibited in Fig. 4D, the current
+signal increased from 10 min to 120 min and trended to be the top value
+at 60 min, indicating the capture process was complete. As a result,
+60 min was considered to be the optimal capture time.
+3.5. Analytical performance of the biosensor
+With the optimal preparation of the experimental condition, cou-
+pling the compelling host-guest recognition ability of β-cyclodextrin
+with the preferred exonuclease-assistant signal ampliﬁcation, the de-
+signed electrochemical biosensor was with success fabricated for the
+sensitive quantiﬁcation of OTA. Upon the addition of OTA, the MB
+current was increased and the dynamic range was observed (Fig. 5A).
+The current response increased accordingly with the enhancement of
+the OTA concentration. Meanwhile, as observed in Fig. 5B, the aptamer
+biosensor's peak current changes kept a linear dependence with the
+logarithm of the target concentrations ranging from 10 pg/mL to
+10.0 ng/mL. The equation was ΔI (1e-7A) = 1.1044 Log COTA (pg/mL) -
+1.0992 (R2 = 0.9878) and according to the formula S/N = 3, LOD was
+derived to be 3 pg/mL, where ΔI represented the value that peak cur-
+rent deducted the background signal in the presence of OTA. The sa-
+tisfying sensitivity was presumably on account of the exonuclease-as-
+sistant signal ampliﬁcation, driving great amounts of MB captured for
+electrochemical sensing. Furthermore, the other meritorious con-
+tributor went to β-cyclodextrin who not only beneﬁted the im-
+mobilization of signal probes via host-guest recognition, but also en-
+riched the signals on the electrode surface, thus promoting collectively
+the sensitive performance of biosensor. Indeed, the proposed method
+performed better with a lower LOD than others done for OTA de-
+termination (Table S1). In terms of these comparisons, the LOD of the
+approach developed hereby could rival that of novel methods or/and
+conventional instrument-used methods and immuno-used sensing sys-
+tems.
+3.6. Selectivity test
+For evaluation of the speciﬁcity of this method, the inﬂuence by
+OTA analogs including AFB1, AFM1, OTB and OTC on the currents
+intensity was assessed via determining the variations when they inter-
+fered in. As shown in Fig. 6, the target could exclusively result in a
+remarkable current increase tested by the sensing system and there
+were scarcely any changes in the currents intensity in the presence of
+other analogs even at as high as 10 times of concentration than that of
+OTA, manifesting that OTA could be distinguished by proposed sensor
+Fig. 4. Inﬂuence of the relevant experimental factors on the currents intensity of detection system. (A) RecJf exonuclease concentrations, (B) MB-cDNA con-
+centrations (C) the time of exonuclease digesting and (D) capture time between β-CD and signal molecules. The concentrations of OTA was 10 ng/mL.
+Y. Wang et al.
+Biosensors and Bioelectronics 124–125 (2019) 82–88
+86
+
+with ease in the presence of OTA analogs, which thus showed a desir-
+able selectivity for target to diﬀerentiate analogs.
+3.7. Biosensing in actual samples
+It was in red wine samples to measure the target for deep validation
+of the practical application of this constructed analytical platform. The
+recovery was acquired ranging from 95.6% to 102.7% with RSD (n = 5)
+between 4.14% and 7.21% after the samples were spiked with target at
+each level, showing a satisfactory result. In this way, the fabricated
+electrochemical biosensors might be a competitive candidate for target
+determination in actual samples with acceptable accuracy.
+4. Conclusions
+In summary, a sensitive and speciﬁc detection for target was
+achieved by proposed strategy coupled the exonuclease-assisted target
+recycling via introducing a single target to yield a mass of signals so as
+to obtaining well performed signal ampliﬁcation, with utilizing the β-
+cyclodextrin for the realization of signal molecule enrichment through
+the host- guest interaction. This assay for OTA showed a wide detection
+range, low limit, and sound accuracy, which was convenient because it
+needed neither a complex preparation nor an excessive amount of
+sample. Compared with the previous-reported methods, this approach
+was
+highly
+sensitive,
+orientated,
+easy-operated
+and
+signiﬁcantly
+eﬃcient, which held a great prospective to be miniaturization and in-
+tegration for OTA quantiﬁcation. In a broad sense, this strategy could
+be further popularized in evaluating extensive ranges of targets due to
+the ﬂexibility of replacing the corresponding aptamer, thus providing a
+versatile and universal platform for target detection in real aqueous
+biological samples with preferable selectivity and sensitivity.
+Acknowledgments
+This work was supported in part by the Hunan Provincial Natural
+Science Foundation of China (2018JJ3869), National Natural Science
+Foundation of China (21305164, 31772374), Research Foundation of
+Education Bureau of Hunan Province, China (16A227) and National
+Key R & D Programs of Intergovernmental International Science and
+Technology Cooperation (2017YFE0108100).
+Appendix A. Supporting information
+Supplementary data associated with this article can be found in the
+online version at doi:10.1016/j.bios.2018.10.007.
+References
+Abi, A., Mohammadpour, Z., Zuo, X.L., Safavi, A., 2018. Biosens. Bioelectron. 102,
+479–489.
+Asadi, M., 2018. Mycotoxin Res. 34, 15–20.
+Assaf, H., Azouri, H., Pallardy, M., 2004. Toxicol. Sci. 79, 335–344.
+Chen, X., Li, T., Tu, X., Luo, L., 2018. Sens. Actuators B: Chem. 265, 98–103.
+Chu, X.F., Dou, X.W., Liang, R.Z., Li, M.H., Kong, W.J., Yang, X.H., Luo, J.Y., Yang, M.H.,
+Zhao, M., 2016. Nanoscale 8, 4127–4133.
+Cui, L., Li, Y., Lu, M., Tang, B., Zhang, C., 2018. Biosens. Bioelectron. 99, 1–7.
+Dall'Asta, C., Galaverna, G., Bertuzzi, T., Moseriti, A., Pietri, A., Dossena, A., Marchelli, R.,
+2010. Food Chem. 120, 978–983.
+De Santis, B., Debegnach, F., Gregori, E., Russo, S., Marchegiani, F., Moracci, G., Brera, C.,
+2017. Toxins 9, 169.
+Garcia-Fonseca, S., Ballesteros-Gomez, A., Rubio, S., 2016. Anal. Chim. Acta 935,
+129–135.
+Jiang, C.M., Lan, L.Y., Yao, Y., Zhao, F.N., Ping, J.F., 2018. TrAC Trend Anal. Chem. 102,
+236–249.
+Jiang, L., Qian, J., Yang, X.W., Yan, Y.T., Liu, Q., Wang, K., Wang, K., 2014. Anal. Chim.
+Acta 806, 128–135.
+Lee, T.P., Saad, B., Salleh, B., Mat, I., 2013. Microchim. Acta 180, 1149–1156.
+Lin, C.Y., Zheng, H.X., Sun, M., Guo, Y.J., Luo, F., Guo, L.H., Qiu, B., Lin, Z.Y., Chen, G.N.,
+2018. Anal. Chim. Acta 1002, 90–96.
+Li, Y., Chen, Q., Xu, X.F., Jin, Y.P., Wang, Y., Zhang, L.Y., Yang, W.J., He, L.D., Feng, X.Y.,
+Chen, Y.Q., 2018a. Sens. Actuators B: Chem. 266, 115–123.
+Li, J.H., Jiang, J.B., Xu, Z.F., Liu, M.Q., Tang, S.P., Yang, C.M, Qian, D, 2018b.
+Electrochim. Acta. 260, 526–535.
+Li, J.H., Jiang, J.B., Xu, Z.F., Liu, M.Q., Tang, S.P., Yang, C.M., Qian, D., 2018c. Sensor
+Actuat B: Chem. 260, 529–540.
+Ma, C.B., Wu, K.F., Zhao, H., Liu, H.S., Wang, K.M., Xia, K., 2018. Microchim. Acta 185,
+Fig. 5. A) DPV of developed system in the presence of diﬀerent concentrations of OTA (10, 50, 80, 100, 500, 1000, 5000, 10000 pg/mL) in 100 mM PBS
+buﬀer + 0.1 M KNO3 solution (pH 7.4); B) Linear relationship between currents and target concentrations.
+Fig. 6. Speciﬁcity of the proposed sensor. a) AFM1, b) AFB1, c) OTC, d) OTB
+and e) OTA. The concentrations of analogs and OTA were 10 ng/mL and 1.0 ng/
+mL respectively.
+Y. Wang et al.
+Biosensors and Bioelectronics 124–125 (2019) 82–88
+87
+
+347.
+Madhurantakam, S., Babu, K.J., Rayappan, J.B.B., Krishnan, U.M., 2018. Biosens.
+Bioelectron. 116, 67–80.
+Marin, S., Ramos, A.J., Cano-Sancho, G., Sanchis, V., 2013. Food Chem. Toxicol. 60,
+218–237.
+Mayura, K., Parker, R., Berndt, W.O., Phillips, T.D., 1984. Appl. Environ. Microbiol. 48,
+1186–1188.
+Ni, J., Yang, W., Wang, Q., Luo, F., Guo, L., Qiu, B., Lin, Z., Yang, H., 2018. Biosens.
+Bioelectron. 105, 182–187.
+Pfohl-Leszkowicz, A., Manderville, R.A., 2007. Mol. Nutr. Food Res. 51, 61–99.
+Shi, L., Rong, X.J., Wang, Y., Ding, S.M., Tang, W.Y., 2018. Biosens. Bioelectron. 102,
+41–48.
+Soleas, G.J., Yan, J., Goldberg, D.M., 2001. J. Agric. Food Chem. 49, 2733–2740.
+Ventura, M., Vallejos, C., Anaya, I.A., Broto-Puig, F., Agut, M., Comellas, L., 2003. J.
+Agric. Food Chem. 51, 7564–7567.
+Wang, C., Qian, J., Wang, K., Wang, K., Liu, Q., Dong, X., Wang, C., Huang, X., 2015.
+Biosens. Bioelectron. 68, 783–790.
+Wang, Q.L., Chen, M.M., Zhang, H.Q., Wen, W., Zhang, X.H., Wang, S.F., 2016a. Sens.
+Actuators B: Chem. 222, 264–269.
+Wang, Q.L., Chen, M.M., Zhang, H.Q., Wen, W., Zhang, X.H., Wang, S.F., 2016b. Biosens.
+Bioelectron. 79, 561–567.
+Wang, S., Zhang, Y.J., Pang, G.S., Zhang, Y.W., Guo, S.J., 2017. Anal. Chem. 89,
+1704–1709.
+Wang, Y.J., Nie, J.Y., Yan, Z., Li, Z.X., Cheng, Y., Chang, W.X., 2018. Food Control. 88,
+181–189.
+Yang, S., You, M., Zhang, F., Wang, Q., He, P., 2018. Sens. Actuators B: Chem. 258,
+796–802.
+Yu, X.H., Lin, Y.H., Wang, X.S., Xu, L.J., Wang, Z.W., Fu, F.F., 2018. Microchim. Acta
+185, 5.
+Zhang, H.F., Zhuo, Z.S., Chen, L.J., Chen, C.Q., Luo, F., Chen, Y.T., Guo, L.H., Qiu, B., Lin,
+Z.Y., Chen, G.N., 2018. Electrochem. Commun. 88, 75–78.
+Zhao, Y., Liu, R., Sun, W., Lv, L., Guo, Z., 2018. Sens. Actuators B: Chem 255, 1640–1645.
+Zhu, X., Kou, F.X., Xu, H.F., Han, Y.J., Yang, G.D., Huang, X.J., Chen, W., Chi, Y.W., Lin,
+Z.Y., 2018. Sens. Actuators B: Chem. 270, 263–269.
+Y. Wang et al.
+Biosensors and Bioelectronics 124–125 (2019) 82–88
+88

@@ -1,0 +1,84 @@
+{
+  "rules": [
+    {
+      "rule_id": "CAT_001",
+      "enzyme_type": "CAT_like",
+      "conditions": {
+        "core_elements": ["Ce", "Mn", "Fe", "Co", "Cu", "Pr"],
+        "band_gap_ev": {"min": 0.5, "max": 3.5},
+        "size_nm": {"max": 100},
+        "requires_h2o2": true,
+        "produces_o2": true
+      },
+      "confidence_boosters": [
+        "Ce3+/Ce4+ redox switch",
+        "oxygen vacancy-mediated mechanism",
+        "H2O2 decomposition with O2 evolution",
+        "fluorite or perovskite structure"
+      ],
+      "reference_pmids": ["30640559", "33492964"]
+    },
+    {
+      "rule_id": "SOD_001",
+      "enzyme_type": "SOD_like",
+      "conditions": {
+        "core_elements": ["Ce", "Mn", "Cu", "Zn", "Fe", "Ni"],
+        "band_gap_ev": {"min": 0.5, "max": 4.0},
+        "size_nm": {"max": 50},
+        "requires_o2_minus": true,
+        "requires_h2o2": false
+      },
+      "confidence_boosters": [
+        "superoxide radical scavenging confirmed by EPR",
+        "Ce3+/Ce4+ or Mn2+/Mn3+ redox couple",
+        "small particle size (<10 nm) enhancing surface redox"
+      ],
+      "reference_pmids": ["29748600", "31633922"]
+    },
+    {
+      "rule_id": "NADH_001",
+      "enzyme_type": "NADH_oxidase_like",
+      "conditions": {
+        "core_elements": ["Cu", "Fe", "Mn", "Co", "Ni", "Pt", "Au"],
+        "band_gap_ev": {"min": 0.1, "max": 3.0},
+        "size_nm": {"max": 50},
+        "requires_nadh": true,
+        "produces_nad_plus": true
+      },
+      "confidence_boosters": [
+        "Cu nanocluster with ultra-small size",
+        "electron transfer capability confirmed",
+        "NADH oxidation detected by UV-Vis at 340 nm",
+        "cyclodextrin or organic ligand coating enhancing electron transfer"
+      ],
+      "reference_pmids": ["32510208", "34878893"]
+    }
+  ],
+  "element_toxicity_flags": {
+    "Cd": "high_toxicity_flag",
+    "Hg": "high_toxicity_flag",
+    "Pb": "high_toxicity_flag",
+    "As": "high_toxicity_flag",
+    "Ag": "ion_leaching_risk",
+    "Cu": "moderate_ion_leaching",
+    "Zn": "low_moderate_risk",
+    "Fe": "generally_biocompatible",
+    "Ce": "low_biosolubility",
+    "Ti": "generally_biocompatible",
+    "Au": "generally_biocompatible",
+    "Pt": "generally_biocompatible"
+  },
+  "shape_activity_relationships": {
+    "nanorod": "higher aspect ratio may enhance catalytic sites",
+    "nanosheet": "high exposed surface area favors catalysis",
+    "nanosphere": "isotropic activity, moderate surface area",
+    "nanocluster": "ultra-small size, high surface-to-volume ratio enhances activity",
+    "nanowire": "1D electron transport may enhance redox",
+    "nanocube": "defined facets may expose preferred active planes"
+  },
+  "ad_therapeutic_relevance": {
+    "CAT_like": "H2O2 clearance reduces oxidative stress in neurons, mitigates Aβ-induced toxicity",
+    "SOD_like": "O2•- scavenging protects mitochondrial function, reduces neuroinflammation",
+    "NADH_oxidase_like": "NAD+ replenishment supports sirtuin activity and neuronal survival, directly relevant to AD therapy"
+  }
+}

@@ -1,0 +1,1945 @@
+ARTICLE
+A macrophage-based screen identiﬁes antibacterial
+compounds selective for intracellular Salmonella
+Typhimurium
+Michael J. Ellis1,2, Caressa N. Tsai1,2, Jarrod W. Johnson
+1,2,3, Shawn French
+1,2, Wael Elhenawy1,2,
+Steffen Porwollik4, Helene Andrews-Polymenis5, Michael McClelland4, Jakob Magolan1,2,3,
+Brian K. Coombes1,2 & Eric D. Brown1,2
+Salmonella Typhimurium (S. Tm) establishes systemic infection in susceptible hosts by
+evading the innate immune response and replicating within host phagocytes. Here, we sought
+to identify inhibitors of intracellular S. Tm replication by conducting parallel chemical screens
+against S. Tm growing in macrophage-mimicking media and within macrophages. We identify
+several compounds that inhibit Salmonella growth in the intracellular environment and in
+acidic, ion-limited media. We report on the antimicrobial activity of the psychoactive drug
+metergoline, which is speciﬁc against intracellular S. Tm. Screening an S. Tm deletion library
+in the presence of metergoline reveals hypersensitization of outer membrane mutants
+to metergoline activity. Metergoline disrupts the proton motive force at the bacterial
+cytoplasmic membrane and extends animal survival during a systemic S. Tm infection. This
+work highlights the predictive nature of intracellular screens for in vivo efﬁcacy, and identiﬁes
+metergoline as a novel antimicrobial active against Salmonella.
+https://doi.org/10.1038/s41467-018-08190-x
+OPEN
+1 Department of Biochemistry and Biomedical Sciences, McMaster University, 1280 Main St W, Hamilton, ON L8S 4K1, Canada. 2 Michael G. DeGroote
+Institute for Infectious Disease Research, McMaster University, 1280 Main St W, Hamilton, ON L8S 4K1, Canada. 3 Department of Chemistry and Chemical
+Biology, McMaster University, 1280 Main St W, Hamilton, ON L8S 4K1, Canada. 4 Department of Microbiology and Molecular Genetics, University of
+California Irvine, Irvine, CA 92697-4025, USA. 5 Department of Microbial Pathogenesis and Immunology, Texas A&M University, 8447 Riverside Pkwy,
+Bryan, TX 77807, USA. These authors contributed equally: Michael J. Ellis, Caressa N. Tsai. Correspondence and requests for materials should be addressed
+to B.K.C. (email: coombes@mcmaster.ca) or to E.D.B. (email: ebrown@mcmaster.ca)
+NATURE COMMUNICATIONS |  (2019) 10:197 | https://doi.org/10.1038/s41467-018-08190-x | www.nature.com/naturecommunications
+1
+1234567890():,;
+
+T
+he stagnant antibiotic discovery pipeline is particularly
+concerning for intracellular infections. Bacterial pathogens
+that survive within host cells evade the antimicrobial
+activity of the immune system and can form persister cells that
+tolerate antibiotic treatment1,2. As such, intracellular infections
+are often recurrent, warranting an increase in antimicrobial
+research speciﬁc for such pathogens and an improved under-
+standing of the genetic requirements for intracellular survival.
+Intracellular bacteria occupy modiﬁed phagosomes (Salmonella,
+Mycobacterium, Francisella), inclusions (Chlamydia), lysosomes
+(Legionella, Coxiella), or the cytosol (Listeria, Shigella, Ricksettia)
+of host cells, which offer considerably different environments
+relative to standard nutrient-rich growth media3. Interestingly,
+emerging evidence suggests that pathogens such as Staphylococcus
+aureus and Streptococcus pneumoniae are also able to survive
+within host cells4,5. In these intracellular environments, genes
+that are otherwise dispensable for growth in nutrient-rich media
+often become essential, constituting a novel antimicrobial target
+space that is currently underexplored6. Genes conditionally
+essential within host cells may be overlooked in experimental
+systems that do not resemble the intracellular environment;
+indeed, recent systematic studies of the genetic requirements for
+growth in infection-relevant
+conditions revealed
+additional
+essential genes relative to those required for growth in vitro7–9.
+High-throughput screening platforms in conditions that closely
+resemble the intracellular environment have the potential to
+uncover novel antimicrobials that target conditionally essential
+genes.
+Salmonella enterica serovar Typhimurium (S. Tm) is an
+intracellular pathogen and one of the leading causes of gastro-
+enteritis worldwide10. Enteric salmonellosis is typically self-
+limiting in healthy individuals, although in the elderly and
+immunocompromised, S. Tm can invade into phagocytes for
+systemic spread through the reticuloendothelial system11. Sal-
+monella infections are commonly treated with ﬂuoroquinolones,
+cephalosporins, or macrolides12, although cephalosporins do
+not penetrate phagocytic cells13. Unfortunately, resistance to
+these antibiotic classes is increasing worldwide14,15. Of further
+concern are extensively drug-resistant S. Typhi16 and an invasive,
+multidrug-resistant variant of S. Tm that ﬁrst emerged in sub-
+Saharan Africa (ST313)17. The emergence of antibiotic resistance
+across clades of Salmonella species threatens to intensify an
+already signiﬁcant global health burden, underscoring the
+importance of novel antibiotic drug discovery.
+During infection of macrophages and neutrophils, S. Tm
+occupies a modiﬁed phagosome called the Salmonella-containing
+vacuole (SCVs). A predominantly intracellular lifestyle affords
+protection from extracellular host immune defenses, including
+bile salts, antimicrobial peptides, and serum complement11. Host
+cells also act as reservoirs for dissemination to systemic sites, and
+often provide unique metabolic environments to shelter intra-
+cellular pathogens from nutrient competition with resident bac-
+teria18.
+Several
+antimicrobial
+mechanisms
+intrinsic
+to
+the
+intracellular environment (i.e., metal depletion, vacuolar acid-
+iﬁcation, oxidative stress)19 serve as environmental signals for
+multiple two-component regulatory systems in S. Tm that detect
+and respond to immune stresses with alterations in virulence gene
+expression20.
+In line with previous work suggesting discordance between
+in vitro and in vivo drug susceptibility21, we hypothesized that
+S. Tm displays altered sensitivity to antimicrobials within mac-
+rophages. In particular, genes or processes that become essential
+within the intracellular environment may represent new drug
+targets or even sensitize S. Tm to existing or novel antibiotics. We
+therefore sought to screen an S. Tm ordered gene deletion col-
+lection22 for growth impairment in media with ion availability
+and pH resembling the intracellular vacuolar environment.
+These data and subsequent experiments with bacteria internalized
+in macrophages reveal that S. Tm is sensitized to the intracellular
+environment following genetic perturbation of metabolic and
+cell envelope biogenesis pathways. A high-throughput compound
+screen against intracellular S. Tm in macrophages identiﬁes
+several small molecules with conditional efﬁcacy only in acidic,
+ion-limited media, or macrophages, and not in nutrient-rich
+media. Interestingly, we also observe potentiation of canonically
+Gram-positive targeting antibiotics in the intracellular environ-
+ment, which we ascribe to a loss of normal outer membrane
+structure in macrophage-internalized S. Tm. We report the
+identiﬁcation of an intracellular-selective antimicrobial, meter-
+goline, which disrupts the bacterial cytoplasmic membrane
+and prolongs animal survival in a murine model of systemic
+S. Tm infection.
+Results
+Screen for S. Tm genes required for intracellular growth. In the
+systemic phase of infection, different populations of S. Tm
+encounter varying degrees of nutrient limitation and immune
+stressors, whether internalized within macrophages and neu-
+trophils, persisting extracellularly in the bloodstream, or invading
+intestinal epithelial cells. We sought to identify growth-inhibitory
+small molecules that are speciﬁc for intramacrophage S. Tm, as
+macrophages are one of the primary host cell types manipulated
+by Salmonella for replication and systemic dissemination. We
+reasoned that to be selective for intracellular bacteria, a com-
+pound should interfere with one or more biological processes that
+are required only for growth in this environment, so we aimed to
+survey the genetic requirements for intracellular S. Tm growth.
+While others have identiﬁed Salmonella genes that become
+required (i.e., conditionally essential) for growth in conditions
+mimicking those in vivo23–27; to our knowledge, there has been
+no systematic, genome-scale survey of the impact of gene deletion
+on S. Tm survival in cultured macrophages.
+The S. Tm str. 14028s genome contains ~4200 non-essential
+genes, ~3700 of which have been deleted in the ordered
+Salmonella single-gene deletion (SGD) collections22,28. Tradi-
+tional macrophage infection assays are not practical for high-
+throughput screening with this large a number of individual
+strains, so we ﬁrst aimed to identify SGD mutants with impaired
+growth in acidic, low-phosphate, low-magnesium media (LPM)
+that was established to resemble conditions in the SCV29.
+Importantly, gene expression in S. Tm grown in LPM and other
+types of acidic, ion-limited media has been shown to resemble
+that within macrophages29–31. We ﬁrst measured the growth of
+3725 SGD mutants in LPM, as a preliminary assessment of
+intracellular gene essentiality (Fig. 1a, Supplementary Data 1).
+This screen identiﬁed 125 genes important for growth in LPM,
+most of which are involved in nutrient biosynthesis and
+metabolism, as well as biological processes related to cell envelope
+homeostasis. Among others, this included amino acid (e.g., aroE,
+hisA, argH, argG, serB) and nucleotide (e.g., pyrF, pyrE, purG,
+purE, purF) biosynthesis, as well as LPS modiﬁcations and
+maintenance (e.g., rfc, pgm, rfaK, rfaH, rbK, rfaI).
+We sought to verify the intracellular sensitivity of this LPM-
+sensitive subset of SGD mutants directly within cultured
+phagocytes by monitoring replication of these 125 strains over
+7 h of growth in RAW264.7 macrophages. For reference, we
+included several mutants with known intracellular replication
+defects (Suppementary Data 2). Surprisingly, we observed
+intracellular growth defects for only 62 LPM-sensitive mutants,
+while the remaining 63 genes were dispensable for intramacroph-
+age growth (Fig. 1b, Supplementary Data 2). From this, we
+ARTICLE
+NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-018-08190-x
+2
+NATURE COMMUNICATIONS |  (2019) 10:197 | https://doi.org/10.1038/s41467-018-08190-x | www.nature.com/naturecommunications
+
+inferred that macrophages may be more permissive for bacterial
+growth relative to LPM. However, we note that our preliminary
+LPM screen expanded the target space for intracellular-selective
+antimicrobials beyond growth in conventional media (Fig. 1c).
+Identiﬁcation of chemical inhibitors of intracellular S. Tm. To
+identify putative antimicrobials effective against intracellular
+S. Tm, we conducted two parallel chemical screens with an
+annotated compound collection composed largely of previously
+0
+500
+1000
+1500
+2000
+2500
+3000
+3500
+0.001
+0.005
+0.010
+0.050
+0.100
+0.500
+1.000
+Strain number
+Normalized growth
+carB
+ilvH
+pfs
+proA purE
+pgm sucB
+galE
+pyrC
+rfc
+pyrF
+hisA
+rfbK
+purF
+purG
+argG
+aroE
+rfaK
+rfaI
+pyrE
+rfaH
+argB
+argH
+argI
+serB
+3517
+125
+62
+MHB
+LPM
+Macrophage
+b
+c
+0.0
+0.5
+1.0
+1.5
+2.0
+2.5
+ΔaroE
+Δrfc
+ΔpyrF
+Δpgm
+ΔpyrE
+ΔhisA
+ΔpurG
+ΔproA
+ΔsucB
+ΔssaR
+ΔrfaK
+ΔargH
+ΔpurE
+Δpfs
+ΔargG
+ΔrfaH
+ΔrfbK
+ΔrfaI
+ΔpyrC
+ΔgalE
+ΔargI
+ΔpurF
+ΔcarB
+ΔargB
+ΔilvH
+ΔserB
+WT
+S. Tm replication in macrophages
+Genotype
+a
+Fig. 1 Genetic requirements for S. Tm growth in host-mimicking media and macrophages. a Index plot showing normalized growth of mutant strains from
+the Salmonella single-gene deletion (SGD) collection in LPM media, sorted in order of chromosomal position of deleted genes. Values shown per strain
+represent the calculated mean growth of three replicate screens, normalized to account for plate and positional effects. Points below the red dotted line
+represent genes with growth values less than 3.5 s.d. from the mean of the dataset. Strains that exhibited low growth and were used in follow-up
+experiments are labeled. b Replication of selected mutant strains from the SGD collection in RAW264.7 macrophages over 7 h. Wildtype (WT) and ΔssaR
+strains (black bars) were used as controls for high and low replication, respectively. Bar plots depict the mean fold-change in bacterial burden between
+0 and 7 h of intracellular infection, measured from two technical replicates. c Cartoon representing the overlap between genes essential for growth in
+LPM or within RAW264.7 macrophages, and dispensable genes in S. Tm represented in the SGD
+NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-018-08190-x
+ARTICLE
+NATURE COMMUNICATIONS |  (2019) 10:197 | https://doi.org/10.1038/s41467-018-08190-x | www.nature.com/naturecommunications
+3
+
+approved drugs (Supplementary Table 1). We screened S. Tm
+grown in (i) LPM and (ii) RAW264.7 macrophages. The collec-
+tion of 1600 chemicals used in these screens includes ~250 known
+antibacterial compounds with deﬁned targets in Gram-positive
+and
+Gram-negative
+bacteria.
+Considering
+the
+discordance
+observed with the growth phenotypes in LPM and macrophages,
+for some of the SGD strains, we elected to conduct chemical
+screens in both of these conditions, to maximize our potential to
+access novel target space (Fig. 2a). To perform the intracellular
+screen, we measured luminescence from a constitutively expres-
+sed luciferase reporter in S. Tm to enable in situ estimations
+of intramacrophage bacterial viability. Luminescence correlated
+linearly with the number of viable bacteria, and the presence of
+this reporter construct did not affect bacterial replication within
+macrophages (Supplementary Fig. 1). Together, these high-
+throughput screens identiﬁed 130 compounds with growth-
+inhibitory activity (Supplementary Data 3). Notably, 63% of
+compounds active in LPM were also effective at limiting growth
+of macrophage-internalized bacteria. However, 54% of com-
+pounds active against intracellular S. Tm displayed no activity
+against S. Tm grown in LPM (Fig. 2a). The latter class of com-
+pounds might exert antibacterial activity through targeting of
+macrophage-encoded proteins or a bacterial target that is not
+required for growth in LPM.
+We next analyzed the potency of all 130 actives from our
+primary screens. Conditions included S. Tm grown in LPM,
+RAW264.7 macrophages, as well as standard nutrient-rich
+(cation-adjusted Mueller-Hinton Broth, MHB) and nutrient-
+poor (MOPS glucose minimal media) microbiological media. We
+also
+measured
+lactate
+dehydrogenase
+(LDH)
+release
+from
+uninfected macrophages as a measure of toxicity and did not
+pursue compounds with toxicity > 25% (percentage relative to
+maximum LDH release, see Materials and Methods) (Fig. 2b,
+Supplemental Data 4). Using an arbitrary cutoff for minimum
+inhibitory concentration (MIC) of 6.25 µM, we eliminated
+compounds with activity in MHB, as these were least likely to
+be intramacrophage-selective in vivo. We found that nucleoside
+analogs (e.g., doxiﬂuridine, ﬂuorouracil, azacitidine, carmofur)
+were effective against intracellular S. Tm and bacteria grown in
+LPM or MOPS minimal media, but not MHB. As genes involved
+in nucleotide biosynthesis were required for intracellular growth
+(Fig. 1, e.g., pyrC, pryE, pyrF, purE, purF, purG), these data
+suggest that our genetic and chemical screens accurately probed
+the intramacrophage
+environment encountered by S. Tm.
+Further, when considering all compounds with an MIC ≤3 µM
+against intracellular S. Tm, 64% of these compounds were
+similarly potent in LPM compared to only 50% in MHB or MOPS
+(Supplemental Data 5). We prioritized 15 of the 31 compounds
+that were exclusively active in LPM/macrophages and not MHB/
+MOPS, based on low host cell cytotoxicity, potency, chemical
+diversity, and commercial availability.
+We tested the 15 priority actives for the ability to reduce
+intracellular replication (measured by CFU enumeration) of
+S. Tm in primary bone marrow-derived macrophages isolated
+from C57BL/6 mice (Fig. 2c). Ciproﬂoxacin is an antibiotic
+routinely used in salmonellosis infection treatment and was
+therefore included as a positive control. Of the 15 compounds
+tested, 11 signiﬁcantly reduced bacterial replication within 4 h
+at a concentration of 128 µg mL−1 (P < 0.05, two-way ANOVA,
+Bonferroni multiple test correction). Excluding those with
+previously characterized antibacterial activity, 4 compounds
+reduced bacterial viability > 2-fold at a concentration of 64 µg
+mL−1 or less: bromperidol, metergoline, ciclopirox, and etho-
+propazine. The four remaining compounds had moderately
+increased activity in LPM relative to MHB (Fig. 2d), suggesting
+selectivity of these antimicrobials for an in vivo-mimicking
+environment.
+Metergoline
+was
+the
+most
+potent
+of
+these
+compounds
+and
+was
+the focus
+of
+subsequent
+studies
+of
+mechanism and in vivo efﬁcacy.
+The outer membrane antagonizes metergoline activity. The
+MIC of metergoline in primary macrophages is signiﬁcantly
+lower (~8 µg mL−1) than in LPM (128 µg mL−1) or MHB
+(>256 µg mL−1). These discrepancies led us to hypothesize that
+one or more aspects of the SCV induce metergoline hypersensi-
+tivity in S. Tm. To identify potential contributors to this condi-
+tional susceptibility, we sought to identify conditions that would
+increase metergoline activity in standard growth media (MHB).
+We therefore conducted a chemical-genetic screen of the SGD
+collection in the presence of a sub-lethal concentration of
+metergoline in MHB (100 µg mL−1) and compared the growth of
+each mutant to an untreated control (Fig. 3a and Supplementary
+Data 6). In this experiment, gene deletions that resulted in
+metergoline hypersensitivity could provide insight to bacterial
+processes that confer metergoline resistance in nutrient-rich
+growth media (MHB).
+Our chemical-genetic data revealed that genes involved in
+assembly of LPS (rfaG, rfaQ), outer membrane (OM) integrity
+(asmA, tolQ, tolR, yfgL), synthesis and turnover of cell wall
+(ldcA, prc, nlpI), or RND efﬂux pumps (tolC, acrB) are required
+for normal growth in the presence of metergoline. Indeed, we
+conﬁrmed that deletions of tolC, tolR, and rfaQ in S. Tm all
+resulted in hypersensitivity to metergoline in the intracellular
+environment (Fig. 3b). From these data we inferred that
+(i) disruption of cell envelope integrity increases metergoline
+potency, (ii) metergoline is a likely substrate of the AcrAB-TolC
+efﬂux pump, and (iii) increased OM permeability and/or
+decreased efﬂux-pump activity might occur in LPM/macrophages
+to permit metergoline activity.
+We noted in our chemical screens that several antibiotics with
+poor activity against Gram-negative bacteria (e.g., telithromycin,
+erythromycin,
+piperacillin,
+meropenem,
+rifampin,
+rifaximin,
+mupirocin, novobiocin) inhibited growth of S. Tm in LPM and/
+or macrophages. The activity of these antibiotics against Gram-
+negative bacteria is enhanced by OM permeabilization32,33.
+Considering the hypersensitivity of OM mutants to metergoline,
+we reasoned that OM-perturbing agents would synergize with
+metergoline. In line with this, we observed synergy between
+metergoline and several OM-perturbing agents, including EDTA,
+polymyxin B, and polymyxin B nonapeptide (Fig. 3c). We also
+speculated that metergoline potency in macrophages could be
+driven by the presence of bicarbonate as a buffer in tissue culture
+media, as we and others have previously reported bicarbonate-
+mediated potentiation of multiple antibiotic classes21,34. Although
+physiological concentrations of bicarbonate (25 mM) alone had
+no effect on metergoline’s activity against S. Tm grown in MHB,
+it did enhance its antibacterial activity when combined with
+polymyxin B (Fig. 3c).
+Our chemical-genetic screen data also suggested a potential
+role for efﬂux in conferring metergoline resistance in MHB.
+Indeed, we observed a ≥8-fold increase in potency of metergoline
+against a ΔtolC strain of S. Tm grown in MHB, and polymyxin B
+potentiated metergoline against an efﬂux-deﬁcient strain of S. Tm
+(Fig. 3d). However, others have shown that TolC is required,
+and therefore active, for intracellular growth of S. Tm35,36. We
+therefore reasoned that OM permeability, and not reduced efﬂux,
+contributes to metergoline activity in macrophages.
+Growth of S. Tm in LPM results in a ≥4-fold increase in
+sensitivity to metergoline compared to growth in MHB. In this
+media, S. Tm is resistant to polymyxin B; accordingly, it did not
+synergize with metergoline (Supplementary Fig. 2A). However, a
+ARTICLE
+NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-018-08190-x
+4
+NATURE COMMUNICATIONS |  (2019) 10:197 | https://doi.org/10.1038/s41467-018-08190-x | www.nature.com/naturecommunications
+
+b
+MHB
+MOPS
+LPM
+Toxicity
+Furazolidone
+Phenylephrine hydrochloride
+Lumiracoxib
+Pilocarpine nitrate
+MIC (μM)
+Physostigmine salicylate
+≤0.78
+Chloramphenicol sodium succinate
+1.56
+Cinoxacin
+3.13
+Chloramphenicol
+6.25
+Trisodium ethylenediamine tetracetate
+12.5
+Fluorouracil
+25
+Chlortetracycline hydrochloride
+50
+Rifampin
+≥100
+Ethopropazine hydrochloride
+Chlormidazole
+Bromperidol
+Carbadox
+Toxicity (%)
+Metergoline
+0
+Azacitidine
+5
+Telithromycin
+10
+Ciprofloxacin
+15
+Erythromycin
+20
+Oxybenzone
+25
+Ibandronate sodium
+Meprylcaine hydrochloride
+Tetracycline hydrochloride
+Pentetic acid
+Mafenide hydrochloride
+Pindolol
+Carmofur
+Piperacillin sodium
+Meropenem
+Doxifluridine
+Florfenicol
+Rifaximin
+Betamethasone valerate
+Artemether
+Minocycline hydrochloride
+Primidone
+Desvenlafaxine succinate
+Mupirocin
+Nicergoline
+Novobiocin sodium
+Nitroxoline
+Broxyquinoline
+Ciclopirox olamine
+Nalidixic acid
+Edetate disodium
+Clioquinol
+Chloroxine
+Ceftazidime
+Nisoldipine
+Cefditorin pivoxil
+Lobendazole
+RAW264.7
+Cytotoxicity < 25%
+Diversity, availability, selectivity
+Intracellular bacteria
+Bacteria in LPM
+Primary screen
+Potency in MHB, LPM, MOPS, macrophages
+a
+MICMHB > 6.25 μM
+MICMOPS > 6.25 μM
+1600
+130
+80
+75
+53
+38
+15
+MICany < 100 μM
+LPM
+Macrophage
+28
+55
+47
+Intracellular
+Extracellular
+c
+****
+****
+****
+****
+****
+****
+****
+****
+****
+****
+****
+****
+****
+****
+****
+**
+**
+**
+** **
+***
+*
+**
+Growth (%)
+Bromperidol
+Erythromycin
+Metergoline
+Mupirocin
+Novobiocin
+Rifampicin
+Ciclopirox
+Cinoxacin
+Clioquinol
+Furazolidone
+Ethopropazine HCl
+Mafenide HCl
+Phenylephrine HCl
+Phyostigmine
+Telithromycin
+Ciprofloxacin
+0.00
+0.25
+0.50
+0.75
+1.00
+1.25
+Relative growth
+0
+25
+50
+75
+100
+125
+0
+25
+50
+75
+100
+125
+0
+25
+50
+75
+100
+125
+0
+25
+50
+75
+100
+125
+d
+Bromperidol
+(μg mL–1)
+Metergoline
+(μg mL–1)
+Ciclopirox
+(μg mL–1)
+Ethopropazine
+HCl (μg mL–1)
+MHB
+LPM
+0.1
+1
+10
+100
+0.1
+1
+10
+100
+0.1
+1
+10
+100
+0.1
+1
+10
+100
+Fig. 2 Chemical screen identiﬁes novel compound activities against intracellular S. Tm. a Screening workﬂow to identify compounds with intracellular
+antimicrobial activity against S. Tm grown in acidic LPM media and internalized in RAW264.7 macrophages. Secondary screening pipeline is shown below
+with the number of compounds remaining at each step to the left. b Potency and toxicity analysis of all primary screen actives represented as a heat map.
+Shown are the minimum inhibitory concentrations (MIC) for all compounds against S. Tm grown in MHB, LPM, MOPS (OD600), and inside RAW264.7
+macrophages (luminescence, RLU); the ﬁnal column (toxicity) reports lactate dehydrogenase release from RAW264.7 macrophages after 2 h of exposure to
+50 μM compound. All values shown reﬂect the mean of duplicate measurements. c Intracellular S. Tm replication measured in primary bone marrow-derived
+macrophages (BMMs) isolated from C57BL/6 mice. Relative growth reﬂects replication over 4 h, normalized to bacterial growth in BMMs treated with
+DMSO. Compounds were added at 8, 64, and 128 μg mL−1, as shown in increasing concentrations for each. Bar plots depict the mean of three independent
+biological replicates, error bars indicate s.e.m. Groups were compared via two-way ANOVA with Bonferroni correction for multiple testing. *P < 0.05,
+**P < 0.01, ***P < 0.001, ****P < 0.0001. d Potency analysis of S. Tm growth inhibition for bromperidol, metergoline, ciclopirox, ethopropazine HCl
+in MHB (black) and LPM (gray). Growth is normalized to a DMSO control (set to 100%), error bars indicate s.e.m. for two biological replicates
+NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-018-08190-x
+ARTICLE
+NATURE COMMUNICATIONS |  (2019) 10:197 | https://doi.org/10.1038/s41467-018-08190-x | www.nature.com/naturecommunications
+5
+
+0
+500
+1000
+1500
+2000
+2500
+3000
+3500
+0.1
+0.2
+0.5
+1.0
+Strain number
+Interaction score
+carB
+STM14_0317
+acrB
+tolQ
+tolR
+pyrD
+ldcA
+prc
+rfbP rfbD
+asmA pta yfgL
+purG
+virK
+tolC
+nlpI
+rfaL
+rfaG
+rfaQ
+rmbA
+yifL
+a
+c
+256
+128
+64
+32
+16
+8
+4
+0
+256
+128
+64
+32
+16
+8
+4
+0
+256
+128
+32
+16
+8
+4
+64
+0
+Metergoline (μg mL–1)
+f
+**
+*
+*
+WT
+0
+****
+****
+****
+****
+8
+4
+2
+0
+0.8
+0.0
+0.1
+0.2
+0.3
+0.4
+0.7
+0.6
+0.5
+Relative growth
+ΔtolC ΔtolR ΔrfaQ
+Metergoline (μg mL–1)
+64
+32
+16
+128
+0
+0.016
+0.031
+0.063
+0.125
+0.25
+0.5
+1
+2
+4
+8
+16
+Polymyxin B (μg mL–1)
+Metergoline (μg mL–1)
+0
+0.03
+0.06
+0.13
+0.25
+EDTA (mM)
+0.5
+1
+2
+4
+8
+16
+32
+Polymyxin B (μg mL–1)
+0
+0.06
+0.13
+0.25
+0.5
+1
+2
+4
+8
+16
+32
+64
++25 mM HCO3
+–
+Metergoline (μg mL–1)
+Polymyxin B nonapeptide (μg mL–1)
+0
+0.13
+0.25
+0.5
+1
+2
+4
+8
+16
+32
+64
+128
+Polymyxin B (μg mL–1)
+0
+0.06
+0.13
+0.25
+0.5
+1
+2
+4
+8
+16
+32
+64
+MgCl2 (mM)
+0
+0.02
+0.04
+0.08
+0.16
+0.31
+0.63
+1.25
+2.5
+10
+5
+20
+n.s.
+MHB
+MHB + 10 mM EDTA
+LPM
+LPM, pH 7.0
+LPM + 10 mM PO43–
+LPM + 10 mM MgCl2
+1200
+1000
+800
+600
+400
+200
+Fluorescence (a.u.)
+b
+d
+e
+Fig. 3 Impact of OM integrity and efﬂux on metergoline activity in MHB and LPM. a Index plot showing sensitivity of SGD collection mutant strains grown
+in MHB with 100 µg mL−1 metergoline. Strains are sorted based on chromosomal position of the deleted gene. The chemical-genetic interaction score was
+calculated by dividing normalized growth of each mutant in the presence of metergoline divided by normalized growth in MHB. Red lines indicate 3 s.d.
+from the mean of the dataset and values represent the mean of duplicate screens. The deleted genes within sensitive (below red) or resistant (above red)
+mutant strains are indicated. b Intracellular S. Tm (WT str. 14028s and indicated SGD mutants) replication measured in bone marrow-derived
+macrophages isolated from C57BL/6 mice, treated with 8 µg mL−1 metergoline. Relative growth reﬂects replication over 4 h, normalized to bacterial growth
+in macrophages treated with DMSO. Bar plots depict the mean of three independent infections, error bars indicate s.e.m. SGD mutant groups were
+compared to WT S. Tm with a Kruskal–Wallis test with Dunn’s multiple test correction. *P < 0.05, **P < 0.01. c Chequerboard broth microdilution assay
+showing dose-dependent potentiation of metergoline by membrane-perturbing agents against S. Tm grown in MHB. Where indicated, sodium
+bicarbonate (HCO3−) was added to media at a ﬁnal concentration of 25 mM. d As in c but with a ΔtolC strain of S. Tm. e Chequerboard assay showing
+antagonism between Mg2+ and metergoline in LPM. In c–e, higher growth is indicated in dark blue and no detectable growth in white. Results are
+representative of at least two independent experiments. f NPN uptake assay for WT S. Tm grown in variants of LPM, MHB, or MHB with 10 mM EDTA.
+Values were normalized to account for background ﬂuorescence prior to plotting. Bar plots depict the mean of triplicate experiments, error bars indicate s.
+d. All groups were compared to MHB via one-way ANOVA with Holm–Sidak’s multiple test correction. ****P < 0.0001
+ARTICLE
+NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-018-08190-x
+6
+NATURE COMMUNICATIONS |  (2019) 10:197 | https://doi.org/10.1038/s41467-018-08190-x | www.nature.com/naturecommunications
+
+ΔphoP strain of S. Tm was sensitized to polymyxin B, and in
+this strain we observed strong synergy between polymyxin B and
+metergoline in both LPM and MHB (Supplementary Fig. 2A,
+Supplementary Fig. 2B).
+We next sought to determine the component(s) of LPM that
+contribute to increased OM permeability. In addition to lower
+pH, LPM has decreased Mg2+ and PO43−concentrations relative
+to MHB, reﬂective of the environment in the SCV. Since WT
+S. Tm was sensitized to metergoline, rifampicin, and mupirocin
+when grown in LPM, we measured the MIC of these compounds
+against bacteria grown in ion-supplemented (10 mM MgCl2
+or PO43−) or pH-adjusted (pH 7.0) media. Additionally, we
+measured the activity of vancomycin in these media because
+similar to rifampicin and mupirocin, vancomycin has low activity
+against Gram-negative bacteria due to the OM permeability
+barrier32. For all four compounds tested, addition of 10 mM
+MgCl2 to LPM suppressed activity by at least four-fold. The effect
+of increased pH or PO43−supplementation was compound-
+dependent; for metergoline, only Mg2+ supplementation sup-
+pressed activity (Supplementary Fig. 2C).
+We observed antagonism between metergoline and Mg2+ in
+LPM, which we attribute to stabilization of the OM by Mg2+ and
+a corresponding decrease in metergoline penetration (Fig. 3e).
+Accordingly, we observed > 2-fold enhancement of N-phenyl-1-
+naphthylamine (NPN) uptake for bacterial cells grown in LPM
+relative to MHB, which was abrogated by supplementation with
+10 mM MgCl2 (Fig. 3f). Measurement of NPN uptake offers a
+direct measurement of OM integrity, as an intact OM prevents
+entry of this hydrophobic ﬂuorophore into the phospholipid
+bilayer where NPN exhibits the highest ﬂuorescence37. As
+expected, EDTA signiﬁcantly increased NPN uptake of bacterial
+cells in MHB, consistent with the difference in metergoline MIC
+we observe between LPM and MHB supplemented with EDTA
+(Fig. 3c, f).
+These data suggested that the antibacterial activity of metergo-
+line was dependent on OM permeabilization and driven by Mg2+
+limitation in LPM/macrophages, leading us to hypothesize that
+the OM of S. Tm is perturbed in the intracellular environment.
+We and others have shown that OM weakening by metal
+depletion or cationic molecules results in increased surface
+roughness and the appearance of pits in the OM38–40. To study
+these features of OM disruption in intracellular S. Tm, we used
+atomic force microscopy (AFM) to measure surface roughness
+of intracellular bacteria and compared this to bacteria grown
+in MHB or LPM. Cells grown in MHB had a largely uniform cell
+surface with a maximum peak to pit roughness of 9.37 nm.
+Remarkably, we observed deep pits on the surface of cells grown
+in LPM with a maximum roughness score of 22.6 nm (Fig. 4a, b
+and Supplemental Data 7). We observed an almost 50% increase
+in surface roughness (13.7 vs 9.52 nm) for S. Tm directly isolated
+from primary bone marrow-derived macrophages (see Methods)
+relative to cells grown in MHB (Fig. 4c and Supplemental Data 7).
+–197
+–237
+–10
+–155
+–10
+–438
+–10
+219
+295
+Intracellular bacteria
+10
+10 nm
+0 nm
+157
+Height (nm)
+10
+Height (nm)
+348
+10
+10 nm
+0 nm
+10 nm
+0 nm
+0
+5
+10
+0
+400
+0
+5
+10
+a
+b
+c
+Height (nm)
+Height (nm)
+Bacteria in LPM
+Bacteria in MHB
+Height (nm)
+Height (nm)
+Height (nm)
+−10
+−5
+Height (nm)
+Distance profile (nm)
+100
+200
+300
+0
+400
+Distance profile (nm)
+100
+200
+300
+0
+400
+Distance profile (nm)
+100
+200
+300
+Height (nm)
+−5
+−10
+0
+5
+10
+Height (nm)
+−5
+−10
+Fig. 4 Atomic force microscopy (AFM) on S. Tm grown in MHB, LPM, or bone marrow-derived macrophages. Images taken at increasing resolution as well
+as a 3D surface projection are shown for bacteria grown in a MHB, b LPM, or c immediately following lysis of infected macrophages (see Methods). Two-
+dimensional surface roughness projections (far right) show the surface topology of each sample. Scale bars from left to right show the following distance:
+a 2, 0.1, 0.4 µM; b 1, 0.1, 0.4 µM; c 4, 1, 0.1, 0.4 µM
+NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-018-08190-x
+ARTICLE
+NATURE COMMUNICATIONS |  (2019) 10:197 | https://doi.org/10.1038/s41467-018-08190-x | www.nature.com/naturecommunications
+7
+
+Given that OM integrity was protective against metergoline, we
+reasoned that metergoline might be readily active against Gram-
+positive bacteria, which do not possess an OM barrier. Indeed,
+metergoline
+was ≥16-fold
+more
+potent
+against
+methicillin-
+resistant Staphylococcus aureus (MRSA) than S. Tm in MHB
+(MIC = 32 µg mL−1,
+Supplementary
+Fig.
+3A),
+but
+roughly
+equipotent against both bacteria in primary macrophages (Fig. 2c
+and Supplementary Fig. 3B). Again, these observations are
+consistent with increased permeability of the Gram-negative
+OM in the intracellular environment.
+Metergoline perturbs the bacterial cytoplasmic membrane.
+Sensitivity to metergoline could be induced in vitro through
+genetic disruption of efﬂux. We elected to use a ΔtolC strain of S.
+Tm to gain insight into metergoline’s mechanism of action. To
+identify a possible protein target for metergoline, we sought to
+isolate spontaneously resistant mutants by plating at 4x MIC on
+MHB or LPM agar, but these attempts were unsuccessful.
+Moreover, we did not detect a signiﬁcant increase in MIC during
+a 10-day serial passage experiment with MRSA or ΔtolC S. Tm
+(Supplementary Fig. 4A). We were, however, able to observe
+rapid bacteriolytic activity of metergoline against ΔtolC S. Tm
+(Fig. 5a). This led us to speculate that metergoline conditionally
+targets the bacterial cytoplasmic membrane in outer membrane-
+disrupted cells, in line with previous observations of antibiotic-
+induced bacterial lysis attributed to imbalanced proton home-
+ostasis across this membrane41,42. This hypothesis would be
+consistent with the crypic antifungal activity of metergoline that
+is related, in part, to depolarization of mitochondrial membrane
+potential43.
+In Gram-negative bacteria, the inner cytoplasmic membrane
+regulates the proton motive force (PMF) to generate energy that
+is necessary for ATP synthesis by the F1−F0 ATPase44. The PMF
+is composed of electrical potential (Δψ) and a transmembrane
+proton gradient (ΔpH), and perturbations to either component
+result in precise compensatory increases to the other45. This
+process may be targeted by membrane potential-uncoupling
+antibiotics, wherein the dissipation of either Δψ or ΔpH results
+in a collapse of the PMF34,46,47. Remarkably, we found that
+metergoline caused a rapid release of 3,3′-dipropylthiadicarbo-
+cyanine iodide (DiSC3(5)) (Fig. 5b), a ﬂuorescent probe that
+accumulates in the cytoplasmic membrane in a Δψ-dependent
+manner48. Metergoline caused a similar DiSC3(5) response to the
+ionophore valinomycin, a known dissipator of Δψ (Supplemen-
+tary Fig. 4B). In contrast, the ΔpH dissipator carbonyl cyanide
+m-chlorophenyl hydrazone (CCCP) decreases ﬂuorescence of
+DiSC3(5), due to a compensatory increase in Δψ (Supplementary
+Fig. 4C). These data suggest that metergoline treatment rapidly
+decreases electrical potential at the cytoplasmic membrane.
+In line with this, metergoline synergized with CCCP against
+WT S. Tm grown in MHB supplemented with EDTA, or LPM
+(Fig. 5c), consistent with previous observations of antibacterial
+synergy between dissipators of ΔpH and Δψ47.
+Disruption of the cytoplasmic membrane potential by metergo-
+line would be expected to perturb cellular ATP levels. Indeed,
+we found that cellular ATP levels were reduced ~10-fold after
+a 30 min exposure to 128 µg mL−1 metergoline (Fig. 5d). By
+comparison, CCCP at a concentration of 32 µg mL−1 led to a
+<2-fold-change in ATP levels in this short experiment (Supple-
+mentary Fig. 4D). Lastly, we observed a similar effect of
+128
+64
+32
+16
+8
+4
+2
+0
+Metergoline (μg mL–1)
+CCCP (μg mL–1)
+MHB +
+EDTA
+LPM
+CCCP (μg mL–1)
+0
+4
+8
+16
+32
+64 128 256
+0
+5000
+10,000
+15,000
+20,000
+Metergoline (μg mL–1)
+Fluorescence (a.u.)
+0
+2
+4
+8
+16
+32
+64 128
+0
+1 × 108
+2 × 108
+3 × 108
+Metergoline (μg mL–1)
+RLU/OD
+0
+0.125
+0.25
+0.5
+1
+2
+4
+8
+0
+0.125
+0.25
+0.5
+1
+2
+4
+8
+************
+****
+****
+****
+****
+********
+Erythromycin
+Ampicillin
+Metergoline
+Control
+Inoculum
+a
+c
+b
+d
+Fig. 5 Metergoline is bacteriolytic and perturbs the S. Tm cytoplasmic membrane. a Turbidity of cultures of S. Tm ΔtolC in MHB after growth to mid-log
+phase (left, inoculum) then 2.5 h of growth at 37 °C in the presence of metergoline (200 µg mL−1), ampicillin (16 µg mL−1), erythromycin (16 µg mL−1), or a
+DMSO control. Note that erythromycin is bacteriostatic and culture turbidity did not change relative to the inoculum; ampicillin (bactericidal) and
+metergoline both cleared culture turbidity. b DiSC3(5) assay on late-log phase S. Tm grown in MHB supplemented with 10 mM EDTA to enable DiSC3(5)
+binding to the cytoplasmic membrane. Cells were loaded with DiSC3(5) prior to a 1 min incubation with increasing concentrations of metergoline. Bar plots
+depict the mean of two biological replicates, error bars indicate s.d. All groups were compared against 0 µg mL−1 metergoline via one-way ANOVA with
+Holm–Sidak’s multiple test correction. ****P < 0.0001. c Chequerboard broth microdilution assay showing synergy between metergoline and CCCP against
+S. Tm grown in MHB with 10 mM EDTA or LPM. d S. Tm grown in MHB with 1 mM EDTA to early-log phase, then exposed to metergoline for 30 min.
+Cellular ATP levels were estimated by luciferase activity (relative light units, RLU) normalized to optical density (OD600). Bar plots depict the mean of two
+biological replicates, error bars indicate s.d. Groups were compared against 0 µg mL−1 metergoline via one-way ANOVA with Holm–Sidak’s multiple test
+correction. ****P < 0.0001
+ARTICLE
+NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-018-08190-x
+8
+NATURE COMMUNICATIONS |  (2019) 10:197 | https://doi.org/10.1038/s41467-018-08190-x | www.nature.com/naturecommunications
+
+metergoline on DiSC3(5) release in MRSA (Supplementary
+Fig. 3C), as well as synergy between CCCP and metergoline
+(Supplementary Fig. 3D).
+In vivo efﬁcacy of metergoline in a murine infection model.
+Given its selective potency in vitro, we tested the efﬁcacy of
+metergoline in a systemic murine infection model with S. Tm.
+Genetically susceptible mice (Nramp-deﬁcient C57BL/6) intra-
+peritoneally infected with S. Tm typically succumb within ~72 h.
+This route of infection recapitulates severe salmonellosis and
+bacteraemia is detectable as early as 1 h post injection49. Meter-
+goline is a naturally occurring alkaloid compound derived from
+ergot fungus, and, to our knowledge, its in vivo efﬁcacy has been
+explored solely in experiments to characterize its anxiolytic effects
+in mice as a serotonin antagonist50–52. We ﬁrst administered
+metergoline at multiple doses to uninfected animals to test for
+potential adverse effects. We observed weight loss and increased
+agitation of otherwise healthy mice following administration of
+metergoline twice daily at 10 mg kg−1, but more mild effects at 5
+mg kg−1 (average 6.5% weight loss over ~3 days). We therefore
+selected 5 mg kg−1 as our therapeutic dose for metergoline.
+We determined the efﬁcacy of metergoline as a potential
+therapeutic by testing its ability to reduce bacterial load and
+prolong survival when administered either at the time of infection
+(Fig. 6a, b) or 12 h after infection (Supplementary Fig. 5E,F).
+Metergoline treatments were administered at 5 mg kg−1, twice
+daily, until experimental endpoint was reached for both vehicle-
+treated and metergoline-treated groups. When administered at
+the time of infection, metergoline signiﬁcantly reduced bacterial
+load in all organs harvested (Fig. 6a) and signiﬁcantly extended
+animal survival time (Fig. 6b). We also observed a statistically
+signiﬁcant reduction in bacterial counts in the colon of S. Tm-
+infected mice when administering metergoline starting at 12 h
+after infection, and a reduction in counts in the spleen, liver and
+cecum, although not statistically signiﬁcant (Supplementary
+Fig. 5A). Under this treatment regimen, metergoline also
+signiﬁcantly prolonged animal survival (Supplementary Fig. 5B).
+Antibacterial
+activity
+of
+metergoline
+analogs.
+Given
+the
+potential to extend animal survival time following frequent
+administration of metergoline despite mildly adverse effects, we
+aimed to identify a chemical analog with increased potency
+against S. Tm and/or decreased toxicity against eukaryotic cells.
+We therefore pursued an in-depth structure–activity-relationship
+analysis to explore the chemical properties of the metergoline
+scaffold required for activity. We tested seventeen structurally
+related analogs for the ability to reduce growth of wildtype
+and ΔtolC S. Tm in MHB, LPM, and macrophages, as well as
+MRSA grown in MHB (Supplementary Figure 6, Supplementary
+Table 2). Four of the analogs we evaluated are FDA-approved
+therapeutics that contain the core ergot alkaloid scaffold but
+diverge structurally from metergoline in multiple regions. These
+compounds: nicergoline, pergolide, cabergoline, and methy-
+sergide, are neuroactive drugs that interact with dopamine and/or
+serotonin receptors, similar to metergoline. Of these, nicergoline
+showed modest antimicrobial efﬁcacy while the remaining three
+drugs were inactive in our assays. Thirteen additional analogs
+were synthesized from metergoline by systematic replacement of
+the benzyl carbamate moiety with other groups (Supplementary
+Figures 7-20, Supplementary Table 3; compounds S1-S11,
+MLBC-01 and MLBC-02).
+Given the mildly acidic pH of LPM and SCV, we considered
+the possibility that metergoline may be acting as a pro-drug
+by means of hydrolysis of the acid-labile carbamate moiety to
+release its corresponding amine (Supplementary Fig. 6). Evalua-
+tion of compound S1, however, showed no in vitro efﬁcacy at
+128 µg mL−1 in all but one assay (MHB supplemented with
+EDTA) and inferior intramacrophage growth inhibition relative
+to metergoline. The remaining synthetic analogs consisted of
+two alkyl carbamates, seven amide derivatives, a benzyl urea
+derivative, a sulfonamide, and an amine. Most of these analogs
+were inactive in our assays (Supplementary Table 2) but the
+α,β-unsaturated amides MLBC-01 and MLBC-02 demonstrated
+antimicrobial activity superior to metergoline (Table 1). In vitro,
+MLBC-01 was two to four times as potent as metergoline while
+the chlorophenyl derivative MLBC-02 was up to 64-fold more
+potent (against MRSA). Both compounds also inhibited intrama-
+crophage growth of S. Tm with similar potency to metergoline.
+However, compounds MLBC-01 and MLBC-02 were more
+toxic to macrophages (18.1% and 8.9% toxicity, respectively)
+relative to metergoline (2.9% toxicity) as determined by lactate
+Spleen
+Liver
+Cecum
+Colon
+100
+101
+102
+103
+104
+105
+106
+107
+108
+Organ
+CFU g–1 organ tissue
+Vehicle
+Metergoline 5 mg kg–1
+***
+**
+**
+**
+0
+1
+2
+3
+4
+5
+6
+7
+8
+0
+20
+40
+60
+80
+100
+Days post infection
+Percent survival
+Vehicle
+Metergoline (5 mg kg–1)
+P = 0.0005
+***
+a
+b
+Fig. 6 In vivo efﬁcacy of metergoline in a murine model of systemic S. Tm infection. C57BL/6 mice were infected intraperitoneally (i.p.) with ~105 CFU S.
+Tm. a Groups of mice were treated twice daily (every 12 h) with metergoline (5 mg kg−1, red bars) or DMSO (5% in DMEM, blue bars) by i.p. injection.
+Treatments were administered beginning at the time of infection. Mice were euthanized at experimental endpoint (60 h post infection). Bacterial load in
+the spleen, liver, cecum, and colon was determined by selective plating on streptomycin. Data shown are the means of three separate experiments (n = 5
+per group). Box plot whiskers show the minimum to maximum values per group, lines in box plots show the median of each group. Groups were analyzed
+with a two-way ANOVA and corrected for multiple comparisons with a Holm–Sidak test. b For survival experiments, groups of mice were treated twice
+daily (every 12 h) beginning at the time of infection with metergoline (5 mg kg−1, red) or DMSO (5% in DMEM, blue) by i.p. injection, and were
+euthanized at clinical endpoint. Survival curves shown are from three separate experiments (n = 5 per group). Groups were analyzed with a
+Gehan–Breslow–Wilcoxon test for survival curve differences. **P<0.01, ***P<0.001
+NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-018-08190-x
+ARTICLE
+NATURE COMMUNICATIONS |  (2019) 10:197 | https://doi.org/10.1038/s41467-018-08190-x | www.nature.com/naturecommunications
+9
+
+dehydrogenase release (Table 1). We are encouraged by the
+improved activity of these analogs against bacteria and further
+structural
+optimization
+of
+this
+novel
+scaffold
+is
+presently
+underway.
+Discussion
+Intracellular pathogens often occupy niches that are difﬁcult to
+recapitulate in vitro; thus, we and others have developed ﬂuor-
+escence, luminescence, and colorimetric-based screening assays
+with readouts that approximate bacterial viability when compared
+to traditional cfu counting methods36,53–56. Here we describe
+a macrophage-based chemical screen speciﬁc for intracellular
+S. Tm, leading to the discovery of metergoline as an antibacterial
+with in vivo efﬁcacy, and the unexpected identiﬁcation of outer
+membrane disruption in the intracellular environment. Further,
+we show that metergoline disrupts the proton motive force across
+the S. Tm cytoplasmic membrane, diminishes cellular ATP levels,
+reduces bacterial load in a murine model of systemic S. Tm
+infection, and signiﬁcantly prolongs survival of infected animals.
+Interestingly, we found that metergoline activity in vivo was
+particularly potent in the cecum and colon, which is perhaps
+surprising given that the spleen and liver serve as the primary
+reservoirs for intraperitoneal S. Tm infection. Because the pre-
+sence of bacteria in the intestinal tract after intraperitoneal
+infection is primarily due to transit from the hepatic biliary
+system57, we speculate that this phenotype merely reﬂects the
+lower bacterial burden in the liver, comprising a smaller reseeding
+population. Additionally, though we identify a disruption of the
+proton motive force and reduction in cellular ATP levels con-
+comitant with metergoline treatment, we note that these effects
+may be indirect consequences of bacterial cell death. Indeed,
+future work remains to completely elucidate the mechanisms
+underlying metergoline activity.
+Antimicrobials effective against intracellular pathogens are
+ideally
+multifaceted
+and
+with
+the
+following
+properties:
+(i) penetration of host cell membranes, (ii) penetration of bac-
+terial membrane(s), (iii) the ability to perturb a conditionally
+essential bacterial target required for intracellular survival, and
+(iv) bacterial target speciﬁcity to limit host cell toxicity. Primary
+chemical screens directly against bacteria internalized within host
+cells are essential to identify molecules with all of these properties;
+however, these screens are technically challenging and poorly
+suited to high-throughput applications. Here, we adopted an
+alternative approach of screening in host-mimicking media
+(LPM) to perturb conditional bacterial targets (i.e., nutrient
+biosynthesis and cell envelope homeostasis) in the intracellular
+environment. Although we acknowledge that our genetic and
+chemical screen data suggest that LPM is an imperfect mimic of
+macrophages, we were indeed able to identify intracellular-
+selective antimicrobials that are otherwise elusive using conven-
+tional screens in nutrient-rich growth media. Given that the
+intramacrophage screening platform described here is limited to
+approximately 1000 compounds per day, the alternative approach
+using unconventional growth media, such as LPM, is a preferable
+option for larger-scale chemical screening efforts.
+We showed that Mg2+ depletion increased OM permeability
+and sensitized S. Tm to metergoline. OM disruption on depletion
+of Mg2+ is thought to arise because negatively charged neigh-
+boring LPS molecules are stabilized through the binding of
+divalent cations58. The low Mg2+ concentrations in LPM/mac-
+rophages offers a compelling explanation for the intracellular
+activity of metergoline. Considered with our observation of aty-
+pical cell surface characteristics of intracellular S. Tm, we spec-
+ulate that the Gram-negative OM is disrupted in the intracellular
+environment. This is somewhat paradoxical given that the
+environmental cues in LPM/macrophages activate PhoPQ and
+PmrAB-regulated lipid A modiﬁcations (caused by, e.g., low pH,
+low Mg2+/Ca2+ and antimicrobial peptides)59, most of which are
+thought to confer resistance to cation depletion and antimicrobial
+peptide stress by altering OM charge. Nevertheless, the impact of
+these modiﬁcations on OM permeability has not been clearly
+Table 1 Structure–activity relationship analysis of metergoline and two synthetic analogs
+All numbers reﬂect the mean from two (MIC) or three (RAW264.7) experiments
+aBlue highlights in chemical compounds depict structural differences between metergoline and MLBC-01 and MLBC-02
+bWT S. Tm was grown in MHB with 10 mM EDTA
+c Intracellular activity was measured by addition of 8 µg mL−1 compound to RAW264.7 macrophages infected with WT S. Tm and is reported as fold-growth inhibition relative to a DMSO-treated control
+dToxicity was estimated by lactate dehydrogenase release from uninfected RAW264.7 cells
+ARTICLE
+NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-018-08190-x
+10
+NATURE COMMUNICATIONS |  (2019) 10:197 | https://doi.org/10.1038/s41467-018-08190-x | www.nature.com/naturecommunications
+
+tested in vivo, and further work is required to disentangle the
+relationship between lipid A modiﬁcations and resistance to
+antibiotics in the intracellular environment.
+These ﬁndings have important implications for antibiotic drug
+discovery. By convention, Gram-negative bacteria are susceptible
+only to antibiotics capable of penetrating the OM (e.g., poly-
+myxins and aminoglycosides) or to small hydrophilic antibiotics
+that can traverse the OM through porin channels58,60. Our work
+indicates that natural components of the innate immune system
+may sensitize intracellular Gram-negative bacteria to otherwise
+poorly penetrating antibacterial compounds in vivo. Moreover,
+screening for compounds that are selective for bacteria within
+macrophages can reveal those that target conditionally essential
+genes, due to the unique conditions of the intracellular environ-
+ment. Indeed, genes that are essential for growth under condi-
+tions that more closely resemble those during infection is a
+promising avenue in modern antibiotic research that has garnered
+increased attention in recent years6. For complex S. Tm infections
+that include several bacterial subpopulations with highly varied
+gene expression and virulence phenotypes, the identiﬁcation of
+novel antimicrobials with unique targets is critical. We conclude
+that intracellular-targeting chemical screening platforms have
+the potential to identify small molecules with relatively under-
+explored targets, a goal of paramount importance in the current
+antibiotic resistance era.
+Methods
+Ethics statement. All animal experiments were performed according to the
+Canadian Council on Animal Care guidelines using protocols approved by the
+Animal Review Ethics Board at McMaster University under Animal Use Protocol
+#17-03-10.
+Reagents. Screening stocks (5 mM) of the Pharmakon-1600 (MicroSource) com-
+pound library were stored at −20 oC in DMSO. With the following exceptions, all
+chemicals were purchased from Sigma-Aldrich: Ciclopirox (Santa Cruz Bio-
+technology), Pergolide (Toronto Research Chemicals), Cabergoline (Toronto
+Research Chemicals), Methysergide (Toronto Research Chemicals). Compounds
+were routinely dissolved in DMSO at a concentration of 12.8 or 25.6 mg mL−1 and
+stored at −20 °C. Synthetic analogs of metergoline are described in Supplementory
+Methods. All synthetic compounds presented in this work were characterized by
+1H and 13C NMR (Supplementary Figures 7-20 and Supplementary Table 3).
+Bacterial strains and culture conditions. All experiments with Salmonella
+enterica ssp. enterica ser. Typhimurium (S. Tm) were performed with strain SL1344
+or derivatives with the exception of the S. Tm single-gene deletion collection22,
+which was constructed in the related S. Tm str. 14028s background. For con-
+sistency, in the experiments presented in Figs. 1 and 3b, the wildtype S. Tm 14028s
+strain was used for comparison. For compound screening and secondary assays,
+S. Tm SL1344 was transformed with pGEN-lux61, and SL1344 ΔtolC was generated
+by standard methods62. Brieﬂy, the chloramphenicol resistance cassette from pKD3
+was ampliﬁed by PCR with primers Del TolC F (5′-CAATTATTTTTACAAATTG
+ATCAGCGCTAAATACTGCTTCACAACAAGGAGTAGGCTGGAGCTGC-3′)
+and Del TolC R (5′-AGACCTACAAGGGCACAGGTCTGATAAGCGCAGCGCC
+AGCGAATAACTTACATATGAATATCCTCCTTAGTTCC-3′) and the resulting
+amplicon was transformed into electro-competent S. Tm SL1344 cells harboring
+the pSim6 plasmid as previously described63,64. Successful recombinants were
+conﬁrmed by colony PCR using primers Chk TolC F (5′-CGACCATCTCCAGCA
+GCCAC-3′) and Chk TolC R (5′-GAAAAGGCGAGAATGCGGCG-3′). Experi-
+ments with Staphylococcus aureus used a Canadian isolate (CMRSA10) of
+community-acquired methicillin-resistant S. aureus USA30065.
+Overnight cultures of bacteria were inoculated with a single colony and
+routinely grown in LB media (10 g L−1 NaCl, 10 g L−1 Tryptone, 5 g L−1 yeast
+extract) supplemented with antibiotics as appropriate (streptomycin, 150 µg mL−1;
+chloramphenicol, 25 µg mL−1; kanamycin, 50 µg mL−1, ampicillin, 100 µg mL−1).
+Where indicated, bacteria were subcultured 1:100 and grown to mid-log phase in
+cation-adjusted MHB (BBLTM Mueller-Hinton II Broth—Cation Adjusted), LPM
+(5 mM KCl, 7.5 mM (NH4)2SO4, 0.5 mM K2SO4, 10 mM Glucose, 49 µM MgCl2,
+337 µM PO43−, 0.05% casamino acids, 80 mM MES, pH 5.8), or MOPS glucose
+minimal medium (Teknova) supplemented with 40 µg mL−1 histidine when
+growing S. Tm SL1344. For LPM supplementation experiments, MgCl2 or KH2PO4
+were added to a ﬁnal concentration of 10 mM and media was pH-adjusted prior to
+ﬁlter sterilizing. Bacteria were grown at 37 °C.
+Genetic screening. The Salmonella single-gene deletion (SGD) library22 was
+pinned from frozen DMSO stocks at 384-colony density onto LB agar medium
+containing 50 µg mL−1 kanamycin using a Singer RoToR HDA (Singer Instru-
+ments) and grown for 18 h at 37 °C. The SGD was then grown overnight in
+384-well clear ﬂat-bottom plates (Corning) in either MOPS glucose (Fig. 1a) or LB
+(Fig. 3a) supplemented with 50 µg mL−1 kanamycin. The Singer RoToR HDA was
+then used to inoculate assay plates (containing 50 µL per well LPM without
+casamino acids, MHB, or MHB with 100 µg mL−1 metergoline) with a starting
+inoculum of ~1.7 × 105 CFU per well. Optical density at 600 nm (OD600) was
+measured with a Tecan M1000 Inﬁnite Pro plate reader at the time of inoculation
+(T0) and after 16 h (T16) incubation at 37 °C with shaking at 220 rpm. Growth
+was calculated by subtracting the pre-reads (T16 −T0) and interquartile-mean
+normalization for plate and well effects66. The interaction score was calculated by
+dividing normalized growth in the presence of metergoline by the MHB control.
+Experiments were performed in duplicate or triplicate as noted.
+Replication of SGD mutants in macrophages. Strains from the Salmonella single-
+gene deletion library were selected based on prioritization from genetic screening
+in LPM (growth < 3.5 s.d. from mean of screening data), along with SPI-1, SPI-2,
+virulence, motility, and regulatory genes, and WT to use as controls. Strains of
+interest were grown overnight in 96-well clear ﬂat-bottom plates (Corning) in
+LB in duplicate.
+RAW264.7 macrophages were seeded into 96-well plates in DMEM + 10% FBS
+at ~105 cells per well and left to adhere for 20–24 h, incubated at 37 °C with 5%
+CO2. Overnight cultures of bacteria were diluted to obtain an MOI of ~50:1, then
+opsonized for 30 min in 20% human serum in PBS at 37 °C. Bacteria were added to
+each well, and plates were spun down at 500×g for 2 min, then incubated for 30
+min at 37 °C with 5% CO2. Media was aspirated and replaced with fresh DMEM
+containing 100 μg mL−1 gentamicin to kill extracellular bacteria for 30 min at 37 °C
+with 5% CO2. For half the plates, RAW264.7 cells were washed once with PBS,
+then scraped from the wells and lysed in PBS containing 1% (v/v) Triton-X100,
+0.1% (w/v) SDS. Bacterial colony-forming units (CFUs) from each well were
+enumerated by serially diluting in PBS and plating on LB plates (T0 counts). For the
+other half of the plates, RAW cells were washed once with PBS, then fresh DMEM
+was added and cells were incubated at 37 °C with 5% CO2. After 7 h, RAW cells
+were washed once with PBS, then scraped from the wells and lysed in PBS
+containing 1% (v/v) Triton-X100, 0.1% (w/v) SDS. Bacterial CFU from each well
+were enumerated by serially diluting in PBS and plating on LB plates (T7 counts).
+CFU were averaged (two technical replicates per assay plate) and a CFU ratio (CFU
+at T7 divided by T0) was calculated to represent fold replication over the course of
+the experiment.
+High-throughput compound screening. All chemical screening was performed at
+the Centre for Microbial Chemical Biology (McMaster University). For chemical
+screening in LPM, an overnight culture of S. Tm SL1344 was subcultured 1:100 in
+LB, grown to an OD600 of 0.5, then diluted 40-fold into LPM and grown to an
+OD600 of 0.3 before a ﬁnal 1:150 dilution into LPM. Bacterial culture (50 µL) was
+dispensed into 96-well black, clear ﬂat-bottom (Corning) plates and then 50 µL of
+each compound (diluted to 20 µM in LPM) was added for a ﬁnal concentration of
+10 µM compound and ~2 × 104 CFU per well. The OD600 was read immediately
+after compound addition (T0) and then 16 h later (T16). Plate and well effects were
+normalized by interquartile-mean based methods66 and compounds reducing
+growth more than 3σ below the mean were considered primary screen actives.
+Screening was performed in triplicate.
+For the screen against intramacrophage S. Tm, RAW264.7 macrophages were
+seeded 16 hrs prior to infection at ~2 × 105 cells per well in 96-well black, clear ﬂat-
+bottom plates (Corning) in DMEM + 10% FBS and were incubated at 37 °C with
+5% CO2. S. Tm str. SL1344 transformed with pGEN-lux was grown overnight in LB
+with 100 µg mL−1 ampicillin, diluted to obtain a multiplicity of infection (MOI) of
+100:1, then opsonized for 30 min in 20% human serum (Innovative Research) in
+PBS at 37 °C. An equal volume of bacteria (100 µL) was added to macrophages and
+plates were centrifuged at 500×g for 2 min followed by a 30 min incubation at 37 °C
+with 5% CO2. Media was then aspirated and replaced with fresh DMEM containing
+100 µg mL−1 gentamicin to eliminate extracellular bacteria, and plates were
+incubated for 30 min at 37 °C with 5% CO2. Infected cells were washed with
+PBS prior to addition of 100 µL of DMEM containing compound at 10 µM.
+Luminescence was read immediately after compound addition (T0) and plates
+were then incubated for 03 h at 37 °C with 5% CO2. Luminescence was measured
+a second time after media was replaced with fresh DMEM + 10% FBS (T3) and
+plates were incubated for a further 3 hr before luminescence was measured a ﬁnal
+time (TFinal).
+Secondary screening of compounds in macrophages. Overall, 130 priority
+compounds were selected from chemical screening in LPM and macrophages.
+Infection assays in RAW264.7 macrophages were performed as described above,
+with the following modiﬁcations: macrophages were seeded at 105 cells per well,
+macrophages were pretreated with 100 ng mL−1 LPS from Salmonella enterica
+serovar Minnesota R595 (Millipore), and an MOI of 50:1 was used. Compounds
+were serially diluted two-fold starting at 5 mM to achieve a ﬁnal concentration of
+NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-018-08190-x
+ARTICLE
+NATURE COMMUNICATIONS |  (2019) 10:197 | https://doi.org/10.1038/s41467-018-08190-x | www.nature.com/naturecommunications
+11
+
+50 μM with 1% DMSO in DMEM. Luminescence was read immediately after
+compound addition (T0), and plates were incubated for 20 h at 37 °C with 5% CO2
+before luminescence was read again (T20). Luminescence readings were averaged
+(two technical replicates per assay plate) and a luminescence ratio (luminescence at
+T20 divided by T0) was calculated to represent fold replication over the course of
+the experiment. MICs were estimated based on ability to reduce luminescence by
+at least 10-fold.
+Cytotoxicity assays. RAW264.7 macrophages were seeded into 96-well plates in
+DMEM + 10% FBS and 100 ng mL−1 LPS from Salmonella enterica serovar Min-
+nesota R595 (Millipore) and left to adhere for 20–24 h, incubated at 37 °C with 5%
+CO2. Compounds were premixed into DMEM at a ﬁnal concentration of 50 μM
+with 1% DMSO, then added to wells. After 2 h of compound treatment, the culture
+supernatant was collected for analysis of lactate dehydrogenase release. Cytotoxicity
+was quantiﬁed colorimetrically with the Pierce LDH cytotoxicity kit where LDH
+activity is measured by subtracting Absorbance at 490 nm from Absorbance at
+680 nm. Lysis control wells were treated with 10× lysis buffer for 1 h. Percent
+cytotoxicity was calculated with the formula:
+LDHCompound treated  LDHSpontaneous
+LDHMaximum  LDHSpontaneous
+´ 100%
+where LDHSpontaneous is the amount of LDH activity in the supernatant of untreated
+cells and LDHMaximum is the amount of LDH activity in the supernatant of lysis
+control wells. The LDH activity in cell-free culture medium was subtracted from
+each value prior to normalization.
+Bone marrow-derived macrophage assays. Bone marrow-derived macrophages
+(BMMs) were collected from the femur and tibia of 6–10 week old female C57BL/6
+mice (Charles River Laboratories) and differentiated in RPMI (Gibco) + 10%
+FBS + 10% L-sup (L929 ﬁbroblast conditioned medium) + 100 U
+penicillin–streptomycin for 7 days at 37 °C and 5% CO2. Differentiated BMMs
+were seeded 20–24 h prior to infection in 96-well plates at 105 cells per well in
+RPMI + 10% FBS + 100 ng mL−1 Salmonella enterica serovar Minnesota R595
+(Millipore) and incubated at 37 °C with 5% CO2. Infection assays were performed
+as described for RAW264.7 macrophages, with the following modiﬁcations:
+bacteria were not opsonized prior to infection, and an MOI of 50:1 was used.
+Compounds were added to wells as described previously (see Secondary screening
+of compounds in macrophages).
+Chequerboard analyses and compound potency analysis. A single colony of
+freshly streaked bacteria was used to inoculate LB with appropriate antibiotics (150
+µg mL−1 streptomycin for S. Tm str. SL1344 and derivatives, 25 µg mL−1 chlor-
+amphenicol for SL1344 ΔtolC or ΔphoP). Overnight cultures were diluted 100-fold
+into antibiotic-free MHB or LPM, as appropriate, and grown to mid-log phase
+(OD600 = 0.4–0.8). Subcultures were then diluted to an OD600 = 0.0001 (~1 × 105
+cfu mL−1) in assay media and 150 µL of this dilution was added to each well of the
+96-well assay plate. For chequerboard experiments, an 8 × 12 matrix of two com-
+pounds was created with two-fold serial dilutions of each compound. Metergoline,
+CCCP, nigericin, and valinomycin were dissolved in DMSO, and polymyxin B,
+polymyxin B nonapeptide, and EDTA were dissolved in water. After addition of
+bacteria, plates were incubated at 37 oC with shaking for 16 h, at which time the
+OD600 was measured. The minimum inhibitory concentrations (MIC) for various
+compounds were determined using 11 two-fold dilutions and growth was measured
+after 16 h. The MIC was the concentration that inhibited growth > 95% when
+compared to the solvent control. In all experiments, DMSO was present at a ﬁnal
+concentration < 2% (routinely 1%).
+NPN uptake assay. Uptake of the lipophilic dye N-phenyl-1-naphthylamine
+(NPN) was measured essentially as previously described37. Brieﬂy, overnight cul-
+tures of S. Tm were diluted 50-fold into LB and grown to mid-log (OD600 = 0.5),
+then diluted again 100-fold into variants of LPM, MHB, or MHB with 10 mM
+EDTA, and grown to late-exponential phase (OD600 ~1.2). Cells were harvested by
+centrifugation, washed in 5 mM HEPES, pH 7.2, then resuspended to a ﬁnal OD600
+= 1.0. The cell suspension (50 µL), 40 µM NPN (50 µL), and 5 mM HEPES, pH 7.2
+(100 µL) were mixed in black clear ﬂat-bottom 96-well plates immediately before
+measuring ﬂuorescence (excitation, 340 nm; emission 415 nm) in a Tecan M1000
+Inﬁnite Pro plate reader. Background ﬂuorescence of each preparation of cells was
+subtracted along with background ﬂuorescence of NPN in buffer.
+Atomic force microscopy (AFM). BMMs were differentiated as described above,
+and then seeded 16 h prior to infection in 6-well plates at 5 × 106 cells per well in
+RPMI + 10% FBS + 100 ng mL−1 Salmonella enterica serovar Minnesota R595
+(Millipore) and incubated at 37 °C with 5% CO2. Bacteria were added at an MOI of
+100:1 and were allowed to infect for 30 min, after which media was aspirated and
+replaced with fresh RPMI containing 100 μg mL−1 gentamicin (to kill extracellular
+bacteria) for 30 min at 37 °C with 5% CO2. Media was then aspirated and replaced
+with fresh RPMI, and macrophages were scraped into the media.
+20 µL of suspended macrophages was then transferred to a hydrophilic
+polycarbonate 0.2 μm Millipore Isopore GTTP ﬁlter (Merck Millipore), with a
+Kimwipe (Kimberly-Clark Professional) underneath to remove liquid without
+vacuum. Filters were attached to a glass slide with an adhesive and examined using
+AFM. Macrophages lysed immediately upon removal of medium, with bacterial
+cells remaining intact for surface scanning. For bacteria grown in LPM or MHB,
+cells were grown to mid-log phase (OD600 ~ 0.5), then 20 μL of the suspension was
+placed on the same ﬁlter as above. The liquid was removed with a Kimwipe, then
+20 μL of 10 mM MES pH 5.5 was overlaid, and liquid removed. Filters were
+mounted on a glass slide and examined with AFM.
+A Bruker BioScope Catalyst AFM, with a Nanoscope V controller, was used to
+scan bacterial surfaces. For each sample, a 0.65 μm thick Si3N4 triangular cantilever
+was used (Scan Asyst AIR, Bruker), with a symmetric tip and spring constant of
+~0.4 N m−1. All AFM was done at 25 °C (ambient room temperature), with a scan
+rate of 0.5 Hz and 256 samples per line resolution. Scanning was done in PeakForce
+quantitative nanomechanical mapping mode. All downstream image processing
+was done using NanoScope software (Bruker). For scans of whole cells, scans were
+ﬁt to a plane to normalize the Z-Height. For scans of bacterial surface topology,
+images were ﬂattened using a second order transformation to account for subtle
+cell curvature, and surface topography was calculated from cross sections of these
+image scans.
+DiSC3(5) assay. Subcultures of WT S. Tm or MRSA were grown to late-
+exponential phase (OD600 ~1) in MHB (MRSA) or MHB with 10 mM EDTA
+(S. Tm). Gram-negative outer membrane disruption is required for the highly
+lipophilic 3′,3-dipropylthiadicarbocyanine iodide (DiSC3(5)) to access the cyto-
+plasmic membrane67. Cells were harvested by centrifugation, washed twice in
+buffer (5 mM HEPES, pH 7.2, 20 mM glucose), and then resuspended in buffer to a
+ﬁnal OD600 = 0.085 with 1 µM DiSC3(5). For the experiment presented in Sup-
+plementary Fig. 4B 100 mM KCl was added to the cell suspension containing
+DiSC3(5). After a 20 min incubation at 37 °C, 150 µL of DiSC3(5) loaded cells
+was added to two-fold dilutions of metergoline, valinomycin, or CCCP in 96-well
+black clear-bottom plates (Corning) and ﬂuorescence (excitation = 620 nm,
+emission = 685 nm) was read 1 min later using a Tecan M1000 Inﬁnite Pro plate
+reader. The ﬂuorescence of metergoline diluted in buffer was negligible (<200 a.u.).
+The ﬂuorescence intensity was stable (<5% ﬂuctuation) for at least 15 min when
+the plate was shielded from light.
+Measurement of intracellular ATP levels. WT S. Tm was grown in MHB with
+1 mM EDTA to early-log phase (OD600 = 0.2) and then grown in the presence of
+metergoline or CCCP for 30 min in clear ﬂat-bottom 96-well plates. The OD600 was
+determined immediately before ATP levels were measured using a BacTiter-GloTM
+Microbial Cell Viability Assay (Promega), according to manufacturer instructions,
+in a white 96-well plate using an EnVision plate reader (PerkinElmer). Relative
+ATP levels were calculated by dividing relative light units (RLU) by the OD600
+(RLU/OD).
+Animal infections. Before infection, mice were relocated at random from a
+housing cage to treatment or control cages. Six- to ten-week-old female C57BL/
+6 mice (Charles River Laboratories) were infected intraperitoneally (i.p.) with ~105
+cfu S. Typhimurium SL1344 in 0.1 M Hepes (pH 8.0) with 0.9% NaCl. Metergoline
+was administered at 5 mg kg−1 via i.p. injection, solubilized in 5% DMSO in
+DMEM. 5% DMSO in DMEM was given to vehicle control groups of mice.
+Metergoline treatments were administered every 12 h for the duration of infection,
+beginning at either the time of infection or 12 h post infection, as indicated per
+experiment. Clinical endpoint was determined using body condition scoring
+analyzing weight loss, reduced motility, and hunched posture. Experimental
+endpoint was deﬁned as 60 h post infection for cfu comparison experiments; at this
+time point S. Tm-infected mice have undergone ~10–12% weight loss and display
+signs of clinical illness. At experimental endpoint, mice were euthanized, and
+the spleen, liver, cecum, and colon were aseptically collected into ice-cold PBS
+and homogenized. Bacterial load in each tissue type was enumerated from organ
+homogenates serially diluted in PBS and plated onto solid LB supplemented with
+100 μg mL−1 streptomycin.
+Serial passage in the presence of metergoline. Freshly streaked colonies of
+MRSA or ΔtolC S. Tm (three colonies for each strain) were grown overnight in
+MHB. Each culture was diluted 500-fold into MHB and 150 µL of each sample was
+added to 2-fold dilutions of metergoline in a 96-well plate. After 24 h incubation
+at 37 oC with shaking, the well with the highest concentration of metergoline and
+visible growth (deﬁned as 1/2× MIC) was diluted 500-fold into fresh MHB and
+the assay repeated.
+Statistical analysis. Data were analyzed using RStudio version 1.0.143 with R
+version 3.2.2, GraphPad Prism 6.0 software (GraphPad Inc., San Diego, CA).
+Speciﬁc statistical tests and multiple test corrections are indicated in ﬁgure legends.
+P values of <0.05 were considered signiﬁcant.
+ARTICLE
+NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-018-08190-x
+12
+NATURE COMMUNICATIONS |  (2019) 10:197 | https://doi.org/10.1038/s41467-018-08190-x | www.nature.com/naturecommunications
+
+Reporting Summary. Further information on experimental design is available in
+the Nature Research Reporting Summary linked to this Article.
+Data availability
+The source data underlying Figs. 1a, b, 2a, b, 3a, 4 are provided as Supplementary
+Data 1-7. All other data are available from the corresponding authors by request.
+Received: 24 July 2018 Accepted: 19 December 2018
+References
+1.
+Helaine, S. et al. Internalization of Salmonella by macrophages induces
+formation of nonreplicating persisters. Science 343, 204–208 (2014).
+2.
+Rycroft, J. A. et al. Activity of acetyltransferase toxins involved in Salmonella
+persister formation during macrophage infection. Nat. Commun. 9, 1993
+(2018).
+3.
+Mitchell, G. & Isberg, R. R. Innate immunity to intracellular pathogens:
+balancing microbial elimination and inﬂammation. Cell Host Microbe 22,
+166–175 (2017).
+4.
+Ercoli, G. et al. Intracellular replication of Streptococcus pneumoniae inside
+splenic macrophages serves as a reservoir for septicaemia. Nat. Microbiol. 3,
+600–610 (2018).
+5.
+Lehar, S. M. et al. Novel antibody–antibiotic conjugate eliminates intracellular
+S. aureus. Nature 527, 323–328 (2015).
+6.
+Brown, E. D. & Wright, G. D. Antibacterial drug discovery in the resistance
+era. Nature 529, 336–343 (2016).
+7.
+Nichols, R. J. et al. Phenotypic landscape of a bacterial cell. Cell 144, 143–156
+(2011).
+8.
+Ibberson, C. B. et al. Co-infecting microorganisms dramatically alter pathogen
+gene essentiality during polymicrobial infection. Nat. Microbiol. 2, 17079
+(2017).
+9.
+Turner, K. H., Wessel, A. K., Palmer, G. C., Murray, J. L. & Whiteley, M.
+Essential genome of Pseudomonas aeruginosa in cystic ﬁbrosis sputum. PNAS
+112, 4110–4115 (2015).
+10. Majowicz, S. E. et al. The global burden of nontyphoidal Salmonella
+gastroenteritis. Clin. Infect. Dis. 50, 882–889 (2010).
+11. Watson, K. G. & Holden, D. W. Dynamics of growth and dissemination of
+Salmonellain vivo. Cell Microbiol 12, 1389–1397 (2010).
+12. Phoon, Y. W., Chan, Y. Y. & Koh, T. H. Isolation of multidrug-resistant
+Salmonella in Singapore. Singamore Med J. 56, e142–e144 (2015).
+13. Hand, W. L., King-Thompson, N. L. & Steinberg, T. H. Interactions of
+antibiotics and phagocytes. J. Antimicrob. Chemother. 12, 1–11 (1983).
+14. Nair, S. et al. WGS for surveillance of antimicrobial resistance: a pilot study
+to detect the prevalence and mechanism of resistance to azithromycin in a
+UK population of non-typhoidal Salmonella. J. Antimicrob. Chemother. 71,
+3400–3408 (2016).
+15. Cuypers, W. L. et al. Fluoroquinolone resistance in Salmonella: insights
+by whole-genome sequencing. Microb. Genom. 82, 346 (2018).
+16. Klemm, E. J. et al. Emergence of an extensively drug-resistant Salmonella
+enterica serovar Typhi clone harboring a promiscuous plasmid encoding
+resistance to ﬂuoroquinolones and third-generation cephalosporins. mBio 9,
+e00105–18–10 (2018).
+17. Ashton, P. M. et al. Public health surveillance in the UK revolutionises our
+understanding of the invasive Salmonella Typhimurium epidemic in Africa.
+Genome Med. 9, 92 (2017).
+18. Bumann, D. & Schothorst, J. Intracellular Salmonella metabolism. Cell
+Microbiol. 19, e12766 (2017).
+19. Castanheira, S. & García-Del Portillo, F. Salmonella populations inside
+host cells. Front. Cell Infect. Microbiol. 7, 432 (2017).
+20. Calva, E. & Oropeza, R. Two-component signal transduction systems,
+environmental signals, and virulence. Microb. Ecol. 51, 166–176 (2006).
+21. Ersoy, S. C. et al. Correcting a fundamental ﬂaw in the paradigm for
+antimicrobial susceptibility testing. EBioMedicine 20, 173–181 (2017).
+22. Santiviago, C. A. et al. Analysis of pools of targeted Salmonella deletion
+mutants identiﬁes novel genes affecting ﬁtness during competitive infection in
+mice. PLoS Pathog. 5, e1000477–12 (2009).
+23. Lawley, T. D. et al. Genome-wide screen for Salmonella genes required for
+long-term systemic infection of the mouse. PLoS Pathog. 2, e11 (2006).
+24. Sabbagh, S. C., Lepage, C., McClelland, M. & Daigle, F. Selection of Salmonella
+enterica serovar Typhi genes involved during interaction with human
+macrophages by screening of a transposon mutant library. PLoS ONE 7,
+e36643 (2012).
+25. Wrande, M. et al. Genetic determinants of Salmonella enterica serovar
+Typhimurium proliferation in the cytosol of epithelial cells. Infect. Immun. 84,
+3517–3526 (2016).
+26. Khatiwara, A. et al. Genome scanning for conditionally essential genes in
+Salmonella enterica serotype Typhimurium. Appl. Environ. Microbiol. 78,
+3098–3107 (2012).
+27. Fowler, C. C. & Galán, J. E. Decoding a Salmonella Typhi regulatory network
+that controls typhoid toxin expression within human cells. Cell Host Microbe
+23, 65–75 (2018).
+28. Porwollik, S. et al. Deﬁned single-gene and multi-gene deletion mutant
+collections in Salmonella enterica sv Typhimurium. PLoS ONE 9,
+e99820–e99828 (2014).
+29. Coombes, B. K., Brown, N. F., Valdez, Y., Brumell, J. H. & Finlay, B. B.
+Expression and secretion of Salmonella pathogenicity island-2 virulence
+genes in response to acidiﬁcation exhibit differential requirements of a
+functional type III secretion apparatus and SsaL. J. Biol. Chem. 279,
+49804–49815 (2004).
+30. Kröger, C. et al. An infection-relevant transcriptomic compendium for
+Salmonella enterica serovar Typhimurium. Cell Host Microbe 14, 683–695
+(2013).
+31. Srikumar, S. et al. RNA-seq brings new insights to the intra-macrophage
+transcriptome of Salmonella Typhimurium. PLoS Pathog. 11, e1005262–26
+(2015).
+32. Krishnamoorthy, G. et al. Synergy between active efﬂux and outer membrane
+diffusion deﬁnes rules of antibiotic permeation into Gram-negative bacteria.
+mBio 8, e01172–17 (2017).
+33. Brennan-Krohn, T., Pironti, A. & Kirby, J. E. Synergistic activity of colistin-
+containing combinations against colistin-resistant Enterobacteriaceae.
+Antimicrob. Agents Chemother. 62, 801 (2018).
+34. Farha, M. A., French, S., Stokes, J. M. & Brown, E. D. Bicarbonate alters
+bacterial susceptibility to antibiotics by targeting the proton motive force. ACS
+Infect. Dis. 4, 382–390 (2017).
+35. Webber, M. A. et al. The global consequence of disruption of the AcrAB-TolC
+efﬂux pump in Salmonella enterica includes reduced expression of SPI-1 and
+other attributes required to infect the host. J. Bacteriol. 191, 4276–4285 (2009).
+36. Reens, A. L. et al. A cell-based infection assay identiﬁes efﬂux pump
+modulators that reduce bacterial intracellular load. PLoS Pathog. 14, e1007115
+(2018).
+37. Helander, I. M. & Sandholm, T. M. Fluorometric assessment of Gram‐
+negative bacterial permeabilization. J. Appl. Microbiol. 88, 213–219 (2000).
+38. Amro, N. A. et al. High-resolution atomic force microscopy studies of the
+Escherichia coli outer membrane: structural basis for permeability. Langmuir
+16, 2789–2796 (2000).
+39. Oh, Y. J., Plochberger, B., Rechberger, M. & Hinterdorfer, P. Characterizing
+the effect of polymyxin B antibiotics to lipopolysaccharide on Escherichia coli
+surface using atomic force microscopy. J. Mol. Recognit. 30, e2605 (2017).
+40. Stokes, J. M. et al. Pentamidine sensitizes Gram-negative pathogens to
+antibiotics and overcomes acquired colistin resistance. Nat. Microbiol. 2,
+17028–21 (2017).
+41. Bartek, I. L. et al. Antibiotic bactericidal activity is countered by maintaining
+pH homeostasis in Mycobacterium smegmatis. mSphere 1, e00176–16–18
+(2016).
+42. Lobritz, M. A. et al. Antibiotic efﬁcacy is linked to bacterial cellular
+respiration. PNAS 112, 8173–8180 (2015).
+43. Kang, K., Wong, K.-S., Fong, W.-P. & Tsang, P. W.-K. Metergoline-induced
+cell death in Candida krusei. Fungal Biol. 115, 302–309 (2011).
+44. Mitchell, P. Chemiosmotic coupling in oxidative and photosynthetic
+phosphorylation. Biochim. Biophys. Acta 41, 445–502 (2011).
+45. Bakker, E. P. & Mangerich, W. E. Interconversion of components of the
+bacterial proton motive orce by electrogenic potassium transport. J. Bacteriol.
+147, 820–826 (1981).
+46. Feng, X. et al. Antiinfectives targeting enzymes and the proton motive force.
+PNAS 112, E7073–82 (2015).
+47. Farha, M. A., Verschoor, C. P., Bowdish, D. & Brown, E. D. Collapsing the
+proton motive force to identify synergistic combinations against
+Staphylococcus aureus. Chem. Biol. 20, 1168–1178 (2013).
+48. Wu, M., Maier, E., Benz, R. & Hancock, R. E. W. Mechanism of interaction of
+different classes of cationic antimicrobial peptides with planar bilayers and
+with the cytoplasmic membrane of Escherichia coli. Biochemistry 38,
+7235–7242 (1999).
+49. Xu, H. R. & Hsu, H. S. Dissemination and proliferation of Salmonella
+Typhimurium in genetically resistant and susceptible mice. J. Med. Mibrobiol.
+36, 377–381 (1992).
+50. Sastry, B. S. R. & Phillis, J. W. Metergoline as a selective 5-hydroxytryptamine
+antagonist in the cerebral cortex. Can. J. Physiol. Pharmacol. 55, 130–133
+(1977).
+51. Hooker, J. M. et al. Evaluation of [11C]metergoline as a PET radiotracer for
+5HTR in nonhuman primates. Bioorg. Med. Chem. 18, 7739–7745 (2010).
+NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-018-08190-x
+ARTICLE
+NATURE COMMUNICATIONS |  (2019) 10:197 | https://doi.org/10.1038/s41467-018-08190-x | www.nature.com/naturecommunications
+13
+
+52. Commissaris, R. L. & Rech, R. H. Interactions of metergoline with diazepam,
+quipazine, and hallucinogenic drugs on a conﬂict behavior in the rat.
+Psychopharmacology 76, 282–285 (1982).
+53. Czyz, D. M. et al. Host-directed antimicrobial drugs with broad-spectrum
+efﬁcacy against intracellular bacterial pathogens. mBio 5, e01534–14
+(2014).
+54. Stanley, S. A. et al. Identiﬁcation of host-targeted small molecules that restrict
+intracellular Mycobacterium tuberculosis growth. PLoS Pathog. 10,
+e1003946–16 (2014).
+55. Chiu, H. C. et al. Eradication of intracellular Salmonella enterica serovar
+Typhimurium with a small-molecule, host cell-directed agent. Antimicrob.
+Agents Chemother. 53, 5236–5244 (2009).
+56. Lo, J.-H., Kulp, S. K., Chen, C.-S. & Chiu, H.-C. Sensitization of intracellular
+Salmonella enterica serovar Typhimurium to aminoglycosides in vitro and
+in vivo by a host-targeted antimicrobial agent. Antimicrob. Agents Chemother.
+58, 7375–7382 (2014).
+57. Monack, D. M., Mueller, A. & Falkow, S. Persistent bacterial infections: the
+interface of the pathogen and the host immune system. Nat. Rev. Microbiol. 2,
+747–765 (2004).
+58. Nikaido, H. Molecular basis of bacterial outer membrane permeability
+revisited. Microbiol. Mol. Biol. Rev. 67, 593–656 (2003).
+59. Needham, B. D. & Trent, M. S. Fortifying the barrier: the impact of lipid A
+remodelling on bacterial pathogenesis. Nat. Rev. Microbiol. 11, 467–481
+(2013).
+60. Delcour, A. H. Outer membrane permeability and antibiotic resistance.
+Biochim. Biophys. Acta Proteins Proteom. 1794, 808–816 (2009).
+61. Lane, M. C., Alteri, C. J., Smith, S. N. & Mobley, H. L. T. Expression of ﬂagella
+is coincident with uropathogenic Escherichia coli ascension to the upper
+urinary tract. PNAS 104, 16669–16674 (2007).
+62. Datsenko, K. A. & Wanner, B. L. One-step inactivation of chromosomal genes
+in Escherichia coli K-12 using PCR products. PNAS 97, 6640–6645
+(2000).
+63. Datta, S., Costantino, N. & Court, D. L. A set of recombineering plasmids for
+gram-negative bacteria. Gene 379, 109–115 (2006).
+64. Côté, J.-P. et al. The genome-wide interaction network of nutrient stress genes
+in Escherichia coli. mBio 7, e01714–16–11 (2016).
+65. Christianson, S., Golding, G. R. & Campbell, J. Canadian Nosocomial
+Infection Surveillance Program & Mulvey, M. R. Comparative genomics of
+Canadian epidemic lineages of methicillin-resistant Staphylococcus aureus.
+J. Clin. Microbiol. 45, 1904–1911 (2007).
+66. Mangat, C. S., Bharat, A., Gehrke, S. S. & Brown, E. D. Rank ordering plate
+data facilitates data visualization and normalization in high-throughput
+screening. J. Biomol. Screen. 19, 1314–1320 (2014).
+67. Zhang, L., Dhillon, P., Yan, H., Farmer, S. & Hancock, R. E. Interactions of
+bacterial cationic peptide antibiotics with outer and cytoplasmic membranes
+of Pseudomonas aeruginosa. Antimicrob. Agents Chemother. 44, 3317–3321
+(2000).
+Acknowledgements
+We are grateful to Susan McCusker for excellent technical assistance in high-throughput
+compound screens, and Maya Farha for useful discussions throughout this work. M.J.E.
+was supported by a post-doctoral Fellowship from the Canadian Institutes of Health
+Research (CIHR); C.N.T. was supported by a Canada Graduate Scholarship from the
+Natural Sciences and Engineering Research Council and an Ontario Graduate Scholar-
+ship. This work was supported by operating grants from CIHR to B.K.C. (388221 and
+376674) and E.D.B. (FRN-143215), the Canada Research Chairs program (to B.K.C. and
+E.D.B.), the Ontario Research Fund (RE07-048 to B.K.C., and E.D.B.), and a donation
+from the Boris Family Fund for Health Research Excellence (to B.K.C. and E.D.B.). J.W.J.
+and J.M. were supported by a startup grant from the McMaster Faculty of Health
+Sciences Dean’s Fund. M.M., S.P. and H.A.-P. were supported in part by NIH Grant
+R01AI075093, and NIAID Contract No. HHSN272200900040C.
+Author contributions
+M.J.E., C.N.T., B.K.C., and E.D.B. conceived and designed the research. J.W.J. and J.M.
+designed metergoline analogs. M.J.E. and C.N.T. performed all experiments and analyzed
+data with the following exceptions: J.W.J. synthesized and analyzed metergoline analogs,
+S.F. performed atomic force microscopy, W.E. assisted with tissue culture. S.P., H.A-P.,
+and M.M. constructed and supplied the Salmonella deletion library. J.M., B.K.C., and
+E.D.B. supervised research. M.J.E., C.N.T., B.K.C., and E.D.B. wrote the paper. All
+authors commented on the manuscript.
+Additional information
+Supplementary Information accompanies this paper at https://doi.org/10.1038/s41467-
+018-08190-x.
+Competing interests: The authors declare no competing interests.
+Reprints and permission information is available online at http://npg.nature.com/
+reprintsandpermissions/
+Journal peer review information: Nature Communications thanks the anonymous
+reviewers for their contribution to the peer review of this work. Peer reviewer reports are
+available.
+Publisher’s note: Springer Nature remains neutral with regard to jurisdictional claims in
+published maps and institutional afﬁliations.
+Open Access This article is licensed under a Creative Commons
+Attribution 4.0 International License, which permits use, sharing,
+adaptation, distribution and reproduction in any medium or format, as long as you give
+appropriate credit to the original author(s) and the source, provide a link to the Creative
+Commons license, and indicate if changes were made. The images or other third party
+material in this article are included in the article’s Creative Commons license, unless
+indicated otherwise in a credit line to the material. If material is not included in the
+article’s Creative Commons license and your intended use is not permitted by statutory
+regulation or exceeds the permitted use, you will need to obtain permission directly from
+the copyright holder. To view a copy of this license, visit http://creativecommons.org/
+licenses/by/4.0/.
+© The Author(s) 2019
+ARTICLE
+NATURE COMMUNICATIONS | https://doi.org/10.1038/s41467-018-08190-x
+14
+NATURE COMMUNICATIONS |  (2019) 10:197 | https://doi.org/10.1038/s41467-018-08190-x | www.nature.com/naturecommunications

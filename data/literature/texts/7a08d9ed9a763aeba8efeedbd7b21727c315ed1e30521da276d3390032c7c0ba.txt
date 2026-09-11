@@ -1,0 +1,971 @@
+Wu et al. J Nanobiotechnol          (2021) 19:203  
+https://doi.org/10.1186/s12951-021-00948-8
+RESEARCH
+Synthesis of iridium‑based nanocomposite 
+with catalase activity for cancer phototherapy
+Hang Wu1†, Qi Jiang2†, Keyi Luo3, Chunping Zhu2, Mengmeng Xie3, Shige Wang3, Zhewei Fei1* and 
+Jiulong Zhao2* 
+Abstract 
+The combination of photothermal therapy (PTT) and photodynamic therapy (PDT) has attracted attention due to its 
+enhanced tumor therapy effect. This study proposes a novel nanoenzyme-based theranostic nanoplatform, ­IrO2@
+MSN@PDA-BSA(Ce6), for the combined PTT and PDT of tumors. ­IrO2 was prepared by a simple hydrolysis method and 
+coated with a thin layer of mesoporous silica (MSN) to facilitate the physical adsorption of Chlorin e6 (Ce6). The PDA 
+coating and ­IrO2 NPs of the nanoplatform demonstrated an improved photothermal conversion efficiency of 29.8% 
+under NIR irradiation. Further, the Ce6 loading imparts materials with the ability to produce reactive oxygen species 
+(ROS) under 660 nm NIR laser irradiation. It was also proved that the ­IrO2 NPs could catalyze the hydrogen peroxide 
+­(H2O2) in the tumor microenvironment (TME) to generate endogenous oxygen ­(O2), thereby enhancing the efficiency 
+of PDT. The in vitro and in vivo experiments indicated that the nanocomposite was highly biocompatible and could 
+produce a satisfactory tumor therapeutic effect. Thus, the findings of the present study demonstrate the viability of 
+using theranostic nanoenzymes for translational medicine.
+Keywords:  Photothermal therapy, Photodynamic therapy, Cancer treatment, Biocompatibility, Iridium 
+nanocomposite
+© The Author(s) 2021. This article is licensed under a Creative Commons Attribution 4.0 International License, which permits use, sharing, 
+adaptation, distribution and reproduction in any medium or format, as long as you give appropriate credit to the original author(s) and 
+the source, provide a link to the Creative Commons licence, and indicate if changes were made. The images or other third party material 
+in this article are included in the article’s Creative Commons licence, unless indicated otherwise in a credit line to the material. If material 
+is not included in the article’s Creative Commons licence and your intended use is not permitted by statutory regulation or exceeds the 
+permitted use, you will need to obtain permission directly from the copyright holder. To view a copy of this licence, visit http://​creat​iveco​
+mmons.​org/​licen​ses/​by/4.​0/. The Creative Commons Public Domain Dedication waiver (http://​creat​iveco​mmons.​org/​publi​cdoma​in/​
+zero/1.​0/) applies to the data made available in this article, unless otherwise stated in a credit line to the data.
+Introduction
+Cancer is currently one of the major obstacles prevent-
+ing the reduction of the global mortality rate [1, 2]. 
+Traditional cancer treatment strategies, such as chemo-
+therapy, radiation therapy, and surgery, result in unavoid-
+able side effects, the development of drug resistance, and 
+ineligibility for surgery [3–5]. The limitations of these 
+treatments have motivated researchers to develop new 
+cancer treatments with relatively few side effects and a 
+high efficiency. Near-infrared light (NIR)-induced tumor 
+therapies, such as photothermal therapy (PTT) and pho-
+todynamic therapy (PDT), have attracted the attention of 
+many researchers because they are highly effective, non-
+invasive, spatiotemporally controllable, and lead to rela-
+tively few side effects [6, 7].
+PDT involves the absorption of photon energy by a 
+photosensitizing agent (PSA), resulting in the transfer of 
+its electrons to the oxygen molecules ­(O2) in the cancer 
+cells. This leads to the production of a type of highly toxic 
+reactive oxygen species (ROS, e.g., 1O2) that cause irrepa-
+rable damage to the cancer cells [8]. A light operative 
+dose, reasonable PSA concentration, and adequate oxy-
+gen are necessary for effective tumor ablation. In addi-
+tion, the amount of ­O2 directly affects the efficiency of 
+PDT [9]. Due to the rapid and uncontrolled proliferation 
+of tumor cells, the ­O2 levels in solid tumors are inade-
+quate, thereby reducing the therapeutic efficiency of PDT 
+[10, 11]. Thus, researchers have proposed innovative 
+Open Access
+Journal of Nanobiotechnology
+*Correspondence:  zheweifei2013@sina.cn; jlzhao9@163.com
+†Hang Wu and Qi Jiang contributed equally to this work
+1 Department of Breast Surgery, Xinhua Hospital, Shanghai 
+Jiaotong University School of Medicine, No. 1665 Kongjiang Road, 
+Shanghai 200433, People’s Republic of China
+2 Department of Gastroenterology, Changhai Hospital, Second Military 
+Medical University, No. 168 Changhai Road, Shanghai 200433, People’s 
+Republic of China
+Full list of author information is available at the end of the article
+
+Page 2 of 14
+Wu et al. J Nanobiotechnol          (2021) 19:203 
+strategies to enhance the ­O2 concentration in tumors 
+[12]. Oxygen carriers, such as perfluorocarbon (PFC) 
+nanoparticles NPs, can facilitate continuous oxygen sup-
+ply and have been used to enhance the ­O2 concentration 
+in tumors for PDT [13]. Enzyme-like substances with cat-
+alase activity have recently been used with PSA to coun-
+ter hypoxia and enable ROS generation [14]. Although 
+the ­H2O2 level in tumor microenvironment (TME) is rel-
+atively high compared to the normal tissues, the amount 
+of endogenous ­H2O2 is still insufficient to kill the cancer 
+cells due to the cancer cells characteristically have a high 
+antioxidant capacity [15]. Researchers have discovered 
+that the overexpression of ­H2O2 in TME can be utilized 
+for the catalytic generation of endogenous ­O2 and facili-
+tate tumor PDT [16, 17]. Nanoenzymes, in comparison 
+with natural catalase, have a relatively low cost, high 
+activity, and qualified thermostability [18, 19]. Therefore, 
+they can be employed to enhance the therapeutic effect 
+of PDT.
+PTT is an alternative phototherapy technique that 
+can utilize the photothermal effects of photothermal 
+transduction agents (PTAs) to raise the temperature of 
+the surrounding environment and trigger the ablation 
+and apoptosis of cancer cells [20, 21]. The application 
+of a PTA with high biocompatibility and efficient pho-
+tothermal conversion efficiency is likely to improve the 
+efficiency of photothermal therapy [22]. Several PTAs, 
+such as two-dimensional (2D) materials [23], noble metal 
+materials [24], metal chalcogenide materials [25], and 
+conjugated polymers (e.g., polydopamine (PDA) and 
+polypyrrole (PPy)), have been synthesized in recent years 
+[26, 27]. However, owing to the poor performance of a 
+single PTA, high-energy NIR laser irradiation or a rela-
+tively strong dose of PTA is required to obtain the desired 
+treatment effect [28]. In addition, it is difficult to achieve 
+satisfactory therapeutic activity by solely using PTT [29]. 
+Thus, modern studies are focusing on dual-mode therapy 
+combinations of PTT and PDT [30, 31]. The main obsta-
+cle involves building a reasonable nanoplatform to maxi-
+mize the combined effects of PTT and PDT to kill tumor 
+cells.
+The application of iridium oxide ­(IrO2) has recently 
+drawn attention due to its high biocompatibility and 
+photothermal conversion efficiency [32]. Studies have 
+discovered that ­IrO2 has catalase (CAT)-like activity 
+that enables it to catalyze ­H2O2 in the TME to generate 
+endogenous ­O2, thereby enhancing the efficiency of PDT 
+[33]. However, few studies have utilized ­IrO2 nanomate-
+rial-based nanoplatform systems for the combined PTT 
+and PDT treatment of tumors. An ­IrO2@MSN@PDA-
+BSA nanocomposite was synthesized in this study for 
+the PTT and PDT dual-mode therapeutic treatment of 
+tumors. ­IrO2 was prepared by a simple hydrolysis method 
+and coated with a thin layer of mesoporous silica (MSN) 
+to facilitate the physical adsorption of Chlorin e6 (Ce6). 
+The MSN layer can not only protect the oxidation of ­IrO2 
+but also provide abundant functional groups to support 
+the further surface modification of the nanocomposite. 
+Subsequently, PDA was coated on the surface of ­IrO2@
+MSN, followed by the grafting of bovine serum albumin 
+(BSA) on the surface of ­IrO2@MSN@PDA as a stabilizer. 
+The installation of ­IrO2@MSN@PDA-BSA (Ce6) serves 
+several purposes. The PDA coating and ­IrO2 NPs dem-
+onstrate significant photothermal conversion under NIR 
+irradiation. ­IrO2@MSN@PDA-BSA(Ce6) can produce 
+ROS to kill cancer cells under photon activation. ­IrO2 
+can also catalyze the decomposition of ­H2O2 to enhance 
+the production of ­O2 in the TME, thereby enhancing the 
+therapeutic effect of PDT. In  vitro and in  vivo experi-
+ments have proved that ­IrO2@MSN@PDA-BSA(Ce6) is 
+biocompatible and can passively target tumors through 
+the enhanced permeability and retention (EPR) effect, 
+thereby harnessing the clinical and combined effects 
+of PTT and PDT for the tumors. The design of ­IrO2@
+MSN@PDA-BSA(Ce6) provides a framework for the 
+design of multifunctional nanocomposite that can accu-
+rately treat cancer.
+Experimental section
+Preparation and characterization of ­IrO2@MSN@PDA‑BSA 
+and the loading of Ce6
+Synthesis of ­IrO2‑PVP NPs
+For the synthesis of ­IrO2-PVP nanoparticles, first, 0.05 g 
+­IrCl3 and 0.1 g PVP were dissolved in 15 mL of distilled 
+water by magnetic stirring (400 rpm) at room tempera-
+ture. Then, the solution pH was adjusted to 12 using 
+NaOH solution (2.0 M), and the mixture was allowed to 
+react at 80° C for 12 h with stirring. Finally, the mixture 
+was further separated by centrifugation (12,000  rpm, 
+5 min), and then rinsed three times with ethanol and dis-
+tilled water. The sample in this experiment was freeze-
+dried and collected for the following usages.
+Synthesis of ­IrO2@MSN NPs
+For the synthesis of ­IrO2@MSN nanoparticles, the as-
+prepared ­IrO2-PVP NPs were dissolved in 65 mL ethanol 
+upon ultrasonication for 30 min. Then, 2.8 mL ­NH3·H2O 
+(28 %) was added dropwise and the mixture was stirred 
+at room temperature for 30  min. Subsequently, 0.1 mL 
+TEOS was dissolved in 6.5 mL ethanol and added drop-
+wise to the mixture at a rate of 0.5 mL/min under vigor-
+ous stirring. After stirring at room temperature for 6 h, 
+the obtained products were centrifuged and washed 
+twice with ethanol and once with distilled water. To fur-
+ther remove the surfactant template of CTAB, the prod-
+uct was stirred with saturated ammonium nitrate ethanol 
+
+Page 3 of 14
+Wu et al. J Nanobiotechnol          (2021) 19:203 
+	
+solution for 12 h. The resulting product was centrifuged, 
+and washed it with double-distilled water extensively.
+Preparation of ­IrO2@MSN@PDA NPs
+In this step, we dissolved 0.2 g dopamine in Tris buffer 
+solution (40 mL, 0.01  M, pH = 8.5), and then mixed it 
+with the as-prepared ­IrO2@MSN NPs. After stirring it 
+at room temperature for 4  h, the color of the solution 
+changed into dark brown because of the oxidation, and 
+the formed PDA coated ­IrO2@MSN ­(IrO2@MSN@PDA) 
+NPs were collected by centrifugation (8500 rpm, 5 min). 
+The product was washed three times with ethanol and 
+water to remove any possible remnants.
+Preparation of ­IrO2@MSN@PDA‑BSANPs
+IrO2@MSN@PDA-BSA was synthesized by the amida-
+tion reaction between BSA and PDA. Specifically, the 
+as-prepared ­IrO2@MSN@PDA and 0.25  g BSA were 
+added to 15 mL phosphate buffer ­(Na2HPO4–NaH2PO4, 
+pH = 8.0) under 4 h of ultrasounding at room tempera-
+ture. Finally, the product was conventionally centrifuged 
+(13,000 rpm, 10 min) and washed it three times with dis-
+tilled water.
+Ce6 loading of ­IrO2@MSN@PDA‑BSA NPs
+For the synthesis of ­IrO2@MSN@PDA-BSA(Ce6), Ce6 
+was dissolved in DMSO at a concentration of 1000 µg/
+mL. Afterwards, the prepared Ce6 stock solution was 
+diluted into different concentrations and mixed with 
+­IrO2@MSN@PDA-BSA ­(IrO2@MSN@PDA-BSA finally 
+at 1000 µg/mL, Ce6 finally at 50, 100, and 200 µg/mL). 
+Then, the mixture was magnetically stirred overnight 
+at room temperature. Thereafter, the reaction products 
+were centrifuged at 12,000 rpm for 8 min to obtain ­IrO2@
+MSN@PDA-BSA(Ce6) NPs. The supernatant contain-
+ing excess Ce6 was carefully collected for the loading 
+amount calculation of Ce6. In brief, we used UV–vis–
+NIR spectroscopy to read the absorbance at 404 nm of 
+the supernatant to reckon the concentration of Ce6 as 
+per the absorbance-concentration standard curve. The 
+loading efficiency of Ce6 was calculated by ­Wt/W × 100 % 
+­(Wt and W stand for the weight of loading Ce6 and total 
+Ce6, respectively.), and the loading percentage of Ce6 
+was calculated by ­Wt/WS × 100 % ­(Wt and ­Ws stand 
+for the weight of loading Ce6 and the weight of ­IrO2@
+MSN@PDA-BSA, respectively.). The amount of released 
+Ce6 was measured by using a UV–vis spectrometer. 
+In detail, four groups of ­IrO2@MSN@PDA-BSA(Ce6) 
+(1 mL, Ce6 = 42.9 µg/mL) were placed in a dialysis bag 
+with a molecular weight cutoff of 14,000. Then, they were 
+dialyzed in 4 mL of PBS solution (pH = 7.4) in a con-
+stant temperature oscillator at 37 °C) for 24 h. At each 
+predetermined time point, 2 mL of buffer solution that 
+contained the released Ce6 was taken out and 2 mL of 
+the corresponding fresh buffer solution was added. The 
+concentration of the released Ce6 was determined with 
+UV–vis–NIR spectroscopy at 404 nm.
+Measurement of the dissolved oxygen content
+In this step, the catalase-like catalytic efficiency of ­IrO2@
+MSN@PDA-BSA at different temperature (37 and 80 °C) 
+was evaluated by mixing ­IrO2@MSN@PDA-BSA (finally 
+concentration at 200  µg/mL) with various concentra-
+tion of ­H2O2 (finally at 5, 10, 20 and 50 µM). After the 
+addition of ­H2O2, we used an oxygen probe (JPBJ-608 
+portable dissolved oxygen meter, Shanghai REX Instru-
+ment Factory) to monitor the dissolved oxygen content, 
+and use a digital camera to record the bubble releasing 
+of the reaction. At the same condition, the ­IrO2@MSN@
+PDA without the addition of ­H2O2 was set as a control. 
+The catalytic efficiency of ­IrO2@MSN@PDA-BSA under 
+simulated TME (pH = 6.0, the concentration of ­H2O2 was 
+about 500 µM) conditions was investigated. In details, 
+­IrO2@MSN@PDA-BSA (200 µg/mL) NPs were incubated 
+in PBS solutions at different pH values (6.0 and 7.4) con-
+taining 500 µM ­H2O2. At predetermined time points, 
+the generated dissolved ­O2 was measured by an oxygen 
+probe (JPBJ-608 portable dissolved oxygen meter, Shang-
+hai REX Instrument Factory).
+Detection of the singlet oxygen
+1,3-diphenylisobenzofuran (DPBF), a classical probe 
+for the measurement of singlet oxygen, was employed 
+for the detection of the singlet oxygen. Briefly, 2.95 mL 
+­IrO2@MSN@PDA-BSA(Ce6) in dimethyl sulfoxide was 
+mixed with 50 µL DPBF in dimethyl sulfoxide. The ter-
+minal concentration of ­IrO2@MSN@PDA-BSA(Ce6) and 
+DPBF was 20 µg/mL and 10 µM, respectively. Then, the 
+mixture was added with ­H2O2 (10 mM, 45 µL), while the 
+mixture added with ­H2O (45 µL) was set as the control 
+group. We exposed the above solutions to a 660 nm NIR 
+laser (0.3 W/cm2) in a dark environment for 20 min, and 
+used the UV–vis–NIR spectrophotometer (Lambda 25, 
+PerkinElmer, USA) to record the absorption intensity at 
+designed time intervals.
+Photothermal conversion performance
+In order to explore the photothermal conversion perfor-
+mance, the as-prepared ­IrO2@MSN@PDA-BSA(Ce6) 
+was prepared in different concentrations (0, 100, 250 and 
+500 µg/mL in saline). Then, 100 µL of the above samples 
+were added in each well of a 96-well plate and exposed 
+to the 808 nm NIR laser (1 W/cm2, 5 min). To investi-
+gate the power density-dependent thermal characteris-
+tics, ­IrO2@MSN@PDA-BSA(Ce6) with the concentration 
+of 200  µg/mL was select to be irradiated with 808 nm 
+
+Page 4 of 14
+Wu et al. J Nanobiotechnol          (2021) 19:203 
+NIR laser at different power (0.5, 0.8 and 1 W/cm2) for 
+5 min. The photothermal stability of ­IrO2@MSN@PDA-
+BSA(Ce6) was also validated via the 808 nm NIR laser 
+irradiation (1  W/cm2) for 5 on/off cycles (laser on for 
+10 min and laser off for 10 min in each cycle). We use 
+FLIR™ E60 camera (FLIR, USA) to record the tempera-
+ture increment (ΔT) of the above experiment for specific 
+analysis.
+In vitro cellular viability
+In this section, L929 cells were chosen to assess the 
+potential cellular cytotoxicity of ­IrO2@MSN@PDA-BSA 
+in vitro. On the one hand, the CCK8 kit was performed to 
+detect the cell viability after cultured with ­IrO2@MSN@
+PDA-BSA(Ce6). In brief, L929 cells were seeded into 
+96-well plate (8000 cells/well) and maintained at 37  °C 
+in a humidified atmosphere with 5% ­CO2. After 24 h, the 
+medium was replaced by various concentrations (100 µL, 
+0, 50, 100, 250 and 500 µg/mL in RMPI1640) of ­IrO2@
+MSN@PDA-BSA(Ce6). Another 24 h later, 100 µL fresh 
+RMPI1640 with 10 µL CCK8 test solution was added in 
+each tested well to replace the old solution and then incu-
+bated for another 2 h. Using a microplate reader to read 
+the absorbency of each well at 450 nm to calculate cell 
+viability. On the other hand, calcein-AM/PI Live/Dead 
+kit was used to further determine the cytocompatibility 
+of ­IrO2@MSN@PDA-BSA(Ce6). L929 cells were cul-
+tured and disposed of with the same as the CCK8 assay 
+but lastly stained with calcein-AM/PI (100 µL) based on 
+the manufacturer for 30 min at 37 °C. The counterstained 
+cellular morphology was recorded using a fluorescence 
+microscope (Olympus BX53).
+In vitro tumor therapy
+To study the cytotoxic effects of ­IrO2@MSN@PDA-
+BSA(Ce6) in vitro, HT29 cells were seeded into 96-well 
+plates at a density of 8 × ­103 cells/well and maintained in 
+a humidified cell-incubator with 5% ­CO2 at 37 °C over-
+night for cell attachment. Then, each well was filled with 
+100 µL ­IrO2@MSN@PDA-BSA(Ce6) (in DMEM, 200 µg/
+mL) and continue culturing for 12  h. Then, we divided 
+cells into four groups (n = 6). Cells in group 2 were irra-
+diated with 808 nm laser (1  W/cm2, 5  min) to assess 
+the effect of PTT. Cells in group 3 were exposed to 660 
+nm laser (0.3 W/cm2, 3 min) and cells in group 4 were 
+treated with the medium containing ­H2O2 (100 µmol/L) 
+and the pH was adjusted to 6.0 with HCl. Cells in group 
+5 were exposed to a combined NIR irradiation, including 
+808 nm (1 W/cm2) for 5 min and 660 nm (0.3 W/cm2) 
+for 3 min. Cells treated with DMEM without other inter-
+vention were set as the control (group 1). Finally, we used 
+CCK-8 and the calcein-AM/PI Live/Dead staining to 
+evaluate the relative viabilities of cells.
+In vitro hemocompatibility
+The hemocompatibility of ­IrO2@MSN@PDA-BSA(Ce6) 
+was investigated by the typical in  vitro hemolysis assay 
+as below: fresh complete blood samples (1 mL) were col-
+lected from healthy KM mice and centrifuged (3000 rpm, 
+3 min, 4 °C) to obtain the mouse red blood cells (mRBCs). 
+After that, the harvested mRBCs were washed with PBS 
+three times and reposited in PBS for further experi-
+ments. Then, the above mRBCs dispersions (0.3 mL) was 
+mixed with 1 mL of different concentrations (100, 250 
+and 500 µg/mL) of ­IrO2@MSN@PDA-BSA and cultured 
+at 37 °C. Meanwhile, mRBCs dispersions (0.3 mL) were 
+incubated with 1 mL of PBS (negative control) or 1 mL 
+of DI water (positive control). After incubating for 4 h, 
+the supernatant of the above mixture was gathered via 
+centrifugation (12,000  rpm, 5  min). Subsequently, we 
+recorded the absorbance of the supernatants at 580 nm 
+to compute the hemolysis percentage (HP) according to 
+literature.
+In vivo biocompatibility and biodistribution
+To evaluate the biocompatibility and biodistribution of 
+­IrO2@MSN@PDA-BSA(Ce6) in  vivo, the healthy KM 
+female mice (SPF grade) were randomly sent into two 
+groups (n = 24 per group).  All animal experiments were 
+conducted under the protocols approved by the Labora-
+tory Animal Center of Changhai Hospital of Second Mili-
+tary Medical University, the policies of National Ministry 
+of Hkiuealth. One group was intravenously (I.V.) injected 
+with saline as a control, another group was injected with 
+­IrO2@MSN@PDA-BSA(Ce6) solution (250 µL, 1 mg/mL 
+in PBS). The body weight of all experimental mice was 
+weighed and recorded per 2 days. Mice were heart punc-
+tured for collect blood samples after anesthesia on 1, 7, 
+28 days and then were euthanized for organs collection. 
+The blood samples were used for blood routine analysis 
+and blood biochemical index testing in virtue of a Sys-
+mex XS-800i automated hematology analyzer and a DxC 
+800 automatic biochemical analyzer. These crucial organs 
+(heart, lung, liver, kidney, and spleen) were partly sec-
+tioned and immediately dipped in 4% polyformaldehyde 
+for hematoxylin and eosin (H&E) staining. Besides, the 
+remaining part of the organs was used for quantitative 
+detection of the Silicon (Si) ion biodistribution through 
+the Agilent 700 Series ICP-OES.
+In vivo tumor therapy
+HT29 cells ­(107 cells per mouse, in 150 µL of serum-
+free DMEM) were subcutaneously implanted into the 
+right back of the Balb/c nude mice (female, 4–6 weeks 
+old). Three weeks after the cell-injection, a tumor nod-
+ule about 0.15–0.20 ­cm3 in each mouse was established. 
+Then, the tumor mice were randomly allocated to five 
+
+Page 5 of 14
+Wu et al. J Nanobiotechnol          (2021) 19:203 
+	
+groups with six mice in each group as follows: mice in 
+group 1 were I.V. injected with saline and served as the 
+control group. Mice in group 2 were given with ­IrO2@
+MSN@PDA-BSA(Ce6) solution (200 µL, 1  mg/mL in 
+PBS, I.V.) for PTT. Mice in group 3 were treated with 
+­IrO2@MSN@PDA-BSA(Ce6) solution (200 µL, 1  mg/
+mL in PBS, I.V.) for PDT. With regard to the dual-modal 
+tumor therapy, 200 µL (I.V.) and 20 µL (I.T.) ­IrO2@
+MSN@PDA-BSA(Ce6) were separately injected in group 
+4 and group 5. Twelve hours after the injection, mice in 
+group 1 and group 2 were irradiated with 808 nm NIR 
+laser (1.0 W/cm2) for 5 min, while mice in group 3 were 
+subjected to the 660 nm laser (0.3 W/cm2) for 5 min. As 
+the combined treatment group, the mice in group 4 and 
+group 5 were successively exposed to 808 nm NIR laser 
+(1.0  W/cm2) and 660 nm laser (0.3  W/cm2) for 5  min. 
+The FLIR E60 infrared camera was exploited to keep the 
+record of ΔT measurement and thermal imaging during 
+the treatments. Mice in all groups were then raised for 4 
+weeks, and we measured the tumor volume every 3 days. 
+The efficiency of in vivo tumor treatment was assessed by 
+the relative tumor volume.
+Statistical analysis
+All the data acquest from the above experiments were 
+reported as mean ± standard deviation (SD) and statis-
+tically analyzed with one-way ANOVA. P values < 0.05 
+was regard as statistically significant. Data indicated 
+with (*) deputize for p < 0.05, (**) for p < 0.01, and (***) for 
+p < 0.001.
+Results and discussions
+Synthesis and characterization of ­IrO2@MSN@PDA‑BSA
+Colloidal-stable polyvinylpyrrolidone (PVP)-decorated 
+­IrO2 NPs ­(IrO2-PVP) were prepared through facile 
+hydrolysis of ­IrCl3, the as-prepared ­IrO2-PVP nanopar-
+ticles showed a diameter of approximately (10.12 ± 2.10) 
+nm (Additional file  1: Fig. S1). Then the as-prepared 
+nanoparticles were coated with a thin layer of MSN to 
+carry Ce6 through physical adsorption. PDA was then 
+coated on the surfaces of the ­IrO2@MSN particles under 
+alkaline conditions because DA self-polymerizes to 
+form PDA. A BSA modifier was grafted onto the ­IrO2@
+MSN@PDA surface under ultrasonic conditions through 
+an amidation reaction between the –COOH group of 
+BSA and the –NH2 group of PDA in a buffered solu-
+tion of ­Na2HPO4–NaH2PO4 to achieve colloidal stability 
+(Scheme  1). The morphology of the product was ana-
+lyzed using SEM and TEM. A spherical shape with an 
+average diameter of approximately 84 ± 13 nm (Fig.  1a, 
+b) was obtained. Therefore, we can conclude that NPs 
+have a certain degree of aggregation, which is attributed 
+to the interaction between the PDA and BSA that were 
+grafted onto the NPs. The preparation of samples for 
+SEM and TEM may have resulted in NP aggregation as 
+well. The hydration kinetic diameter and Tyndall effect 
+of the ­IrO2@MSN@PDA-BSA NPs in distilled water and 
+PBS remained constant and clearly visible after 12 h of 
+storage. This indicates that the surface-modified BSA 
+endows durable colloidal stability to the ­IrO2@MSN@
+PDA-BSA NPs in different solutions. The difference in 
+size of this nanocomposite between TEM and DLS may 
+be due to the fact that the size measured by DLS is the 
+hydration kinetic diameter: the BSA leads to the forma-
+tion of a swollen structure with a high water content. The 
+absence of vascular supportive tissues in tumors results 
+in the formation of leaky vessels with pores (200 nm to 
+1.2 μm in diameter) and leads to poor lymphatic drain-
+age, which is the structural basis of the enhanced perme-
+ability and retention (EPR) effect. The EPR effect of the 
+nanomedicine with larger size was lower than the most 
+suitable size but it also can accumulate in tumor through 
+EPR effect. EDS (Additional file 1: Fig. S2) and elemen-
+tal mapping (Fig. 1d–f) confirmed the coexistence of O, 
+Si, and Ir. Nitrogen adsorption–desorption isotherms 
+were used to investigate the porous structure (Fig.  1g). 
+The results indicated that the ­IrO2@MSN@PDA-BSA 
+NPs had a high specific surface area (149.6521 m²/g) and 
+large pore volume (0.2 ­cm3/g). The average pore size was 
+5.7 nm (Fig.  1h). The XRD results of the ­IrO2@MSN@
+PDA-BSA NPs (Fig. 1i) did not contain typical diffraction 
+peaks, indicating the poor crystalline state of the NPs. 
+The chemical structure of ­IrO2@MSN@PDA-BSA NPs 
+was determined through FTIR. The absorption peak at 
+1089 ­cm− 1 represents the tensile and asymmetric vibra-
+tion of Si-O-Si (Additional file 1: Fig. S3), indicating the 
+existence of ­SiO2 in the ­IrO2@MSN@PDA-BSA NPs. 
+The vibration at 1422 ­cm− 1 is attributed to the –COOH 
+group of BSA. The vibration signals at 1640  ­cm− 1 and 
+1500 ­cm− 1 are attributed to the deformation vibrations 
+of amide I (–NH2) and amide II (–NH–) of BSA, respec-
+tively. The vibration peaks of the PDA and BSA amide 
+groups due to the stretching of the –NH– group are 
+located at 3400 ­cm− 1 and 3000 ­cm− 1, respectively. The 
+peaks corresponding to the –C=C– stretching vibration 
+of PDA is located at 1500 ­cm− 1. These results collectively 
+confirm that PDA and BSA were successfully decorated 
+onto the ­IrO2@MSN surface. The yields of ­IrO2-PVP, 
+­IrO2@MSN, ­IrO2@MSN@PDA-BSA, ­IrO2@MSN@PDA-
+BSA were 89.3%, 78.6%, 73.2 and 68.4%, respectively.
+Ce6 loading
+The conspicuous pore sizes of the ­IrO2@MSN@PDA-
+BSA NPs are likely to facilitate guest molecule loading. A 
+classical PSA named Ce6 was chosen as the model drug 
+to be physically adsorbed in the mesoporous pore of 
+
+Page 6 of 14
+Wu et al. J Nanobiotechnol          (2021) 19:203 
+MSN. It is essential to evaluate the loading performance 
+of ­IrO2@MSN@PDA-BSA because the tumor PDT is 
+dose-dependent. The UV–vis–NIR spectra of ­IrO2@
+MSN@PDA-BSA before and after the loading of Ce6 are 
+shown in Fig. 2b. The NPs carrying Ce6 have two typical 
+characteristic peaks at 404 nm and 665 nm, in compari-
+son to the spectrum of the pure ­IrO2@MSN@PDA-BSA. 
+This proves that Ce6 was successfully loaded onto ­IrO2@
+MSN@PDA-BSA. The Ce6 loading of ­IrO2@MSN@PDA-
+BSA was then optimized by varying the concentration 
+of Ce6. Ce6 concentrations of 50, 100, and 200  µg/mL 
+resulted in Ce6 loading values of approximately 76.3%, 
+61.3%, and 43.0% on ­IrO2@MSN@PDA-BSA, respec-
+tively. The Ce6 loading ratio was calculated by dividing 
+the weight of the loaded Ce6 with the weight of ­IrO2@
+MSN@PDA-BSA, which was equal to 3.8%, 6.1%, and 
+8.6% at Ce6 concentrations of 50, 100, and 200 µg/mL, 
+respectively (Fig. 2c). According to the abovementioned 
+results, a Ce6 concentration of 200 µg/mL was selected 
+for the subsequent experiments. The in vitro Ce6 release 
+behavior of ­IrO2@MSN@PDA-BSA(Ce6) was thoroughly 
+evaluated. As shown in Additional file 1: Fig.S4, the Ce6 
+release percentages were lower than 12% under the tested 
+conditions (pH = 7.4, T = 37  °C), thereby guaranteeing 
+the secure and effective use of Ce6.
+Catalytic efficiency and 1O2 generating capacity
+IrO2@MSN@PDA-BSA can improve the PDT efficiency 
+by catalyzing the decomposition of ­H2O2 to generate 
+endogenous ­O2 due to the catalase-like activity of ­IrO2. 
+The addition of ­H2O2 to the ­IrO2@MSN@PDA-BSA solu-
+tion results in the immediate generation of several ­O2 
+bubbles, as shown in Fig. 2d. This intuitively confirms the 
+catalytic ability of ­IrO2. Further, the catalytic efficiency of 
+­IrO2@MSN@PDA-BSA was concentration-dependent. 
+An increase in the ­IrO2@MSN@PDA-BSA concentration 
+led to an increase in the concentration of the dissolved 
+­O2 (Fig. 2e). In addition, we investigate the catalytic effi-
+ciency of ­IrO2@MSN@PDA-BSA under simulated TME 
+(pH = 6.0, the concentration of ­H2O2 was about 500 
+Scheme 1  The schematic synthesis procedure and therapeutic mechanism of ­IrO2@MSN@PDA-BSA(Ce6)
+
+Page 7 of 14
+Wu et al. J Nanobiotechnol          (2021) 19:203 
+	
+µM) conditions. As shown in Additional file  1: Fig. S4, 
+although the content of generated oxygen decreased with 
+the decrease of the solution pH, there was still a signifi-
+cant difference as compared to PBS with ­H2O2 at pH 6.0. 
+The ­IrO2@MSN@PDA-BSA NPs possess the required 
+thermal stability and are superior to the traditional cata-
+lase, which is vulnerable to hyperthermia (Fig. 2g). The 
+catalytic ability of ­IrO2@MSN@PDA-BSA was satisfac-
+tory at 37 °C and highly dependent on the substrate con-
+centration (Fig. 2f). The catalytic ability of ­IrO2@MSN@
+PDA-BSA remained constant even after increasing the 
+temperature to 80 °C.
+The amount of 1O2 contained in the solution was meas-
+ured through light radiation to verify whether the ­O2 
+generated by ­IrO2@MSN@PDA-BSA could be utilized 
+to enhance the tumor PDT. The irradiation of the ­IrO2@
+MSN@PDA-BSA solution led to a reduction in the light 
+absorption by the DPBF, thereby confirming the gen-
+eration of 1O2 (1O2 can oxidize the probe of DPBF and 
+catalyze its discoloring reaction). In addition, it was 
+observed that the rate of reduction in the light absorp-
+tion increased with the addition of ­H2O2 (Fig. 2 h). This 
+confirms the ability of the ­IrO2@MSN@PDA-BSA NPs 
+to enhance 1O2 generation in the presence of ­H2O2. The 
+improved 1O2 generation indicates that ­IrO2@MSN@
+PDA-BSA can be used as an intelligent nanozyme system 
+to facilitate tumor PDT in the TME.
+Photothermal conversion performance
+In addition to enhancing the tumor PDT, ­IrO2@MSN@
+PDA-BSA is a PTA that can be used in the PTT of 
+tumors. The absorbance capacity of ­IrO2@MSN@PDA-
+BSA for wavelengths ranging from 400 to 1000 nm was 
+first studied. ­IrO2@MSN@PDA-BSA demonstrated a 
+high light absorbance capacity, and the light absorbance 
+increased with increasing NP concentration in the above-
+mentioned wavelength range (Fig. 2i). The absorbed light 
+was partially transformed into heat. The photothermal 
+ability of ­IrO2@MSN@PDA-BSA was studied by vary-
+ing the NIR laser power and NP concentration. The ΔT 
+Fig. 1    Characterization of ­IrO2@MSN@PDA-BSA NPs. a SEM; b TEM; c dynamic light scattering and solution photos (left: in PBS, right: in water); d–f 
+elemental distribution mappings (d, O; e, Si; f, Ir); g nitrogen adsorption–desorption isotherm; h pore size of ­IrO2@MSN@PDA-BSA; i XRD pattern
+
+Page 8 of 14
+Wu et al. J Nanobiotechnol          (2021) 19:203 
+of ­IrO2@MSN@PDA-BSA increased with the increasing 
+concentration of the solution at a fixed power density, 
+as shown in Fig. 3a. However, the ΔT of water was neg-
+ligible. The ΔT values of the solutions at concentrations 
+of 100, 250, and 500 mg/mL were 7.0, 16.4, and 30.2 °C, 
+respectively. ­IrO2@MSN@PDA-BSA was then used 
+at a concentration of 250  mg/mL to study the impact 
+of power density on heat production. The ΔT values of 
+­IrO2@MSN@PDA-BSA were 7.7, 12.6, and 16.4  °C at 
+power densities of 0.5, 0.8, and 1.0  W/cm2 (808 nm), 
+respectively. An E60 thermal imaging camera (FLIR Sys-
+tems, Inc., USA) was used to record the concentration, 
+irradiation, and laser-power-density-dependent tempera-
+ture surges of ­IrO2@MSN@PDA-BSA (Fig. 3b, d). It was 
+confirmed that the photothermal ability of ­IrO2@MSN@
+PDA-BSA was dependent on the material concentration 
+and laser power density. The photothermal conversion 
+efficiency and heat transfer time constant (τs) were equal 
+to 29.8% and 175.7  s, both of which are comparable to 
+the values obtained for graphene and black phosphorus 
+nanosheets (Fig. 3f, g) [34, 35]. ­IrO2@MSN@PDA-BSA is 
+considered photothermally stable because its ΔT varia-
+tion during the five rounds of NIR laser irradiation sub-
+stantial (Fig. 3e).
+In vitro biocompatibility assay
+In vitro biocompatibility, including cytocompatibil-
+ity and hemocompatibility, is an essential factor in the 
+biomedical applications of nanomaterials. Therefore, 
+the cytocompatibility of ­IrO2@MSN@PDA-BSA(Ce6) 
+was assessed using a CCK-8 cell viability assay and cal-
+cein-AM/PI double staining. The cell viabilities were 
+maintained above 95% after 24 h of co-cultivation with 
+varying concentrations of ­IrO2@MSN@PDA-BSA(Ce6), 
+Fig. 2  a Standard curve of Ce6; b light absorption of ­IrO2@MSN@PDA-BSA and ­IrO2@MSN@PDA-BSA(Ce6); c Ce6 loading efficiency of ­IrO2@MSN@
+PDA-BSA (1000 µg/mL) under different Ce6 concentrations; d photographs of ­IrO2@MSN@PDA-BSA solutions before and after the addition of ­H2O2; 
+e ­O2 generation ability of ­IrO2@MSN@PDA-BSA with different concentrations; f, g ­O2 generation ability of ­IrO2@MSN@PDA-BSA solutions at f 37° C 
+and g 80° C with various concentrations of ­H2O2; h the light absorption of ­IrO2@MSN@PDA-BSA(Ce6) with or without the addition of ­H2O2; i UV–vis 
+spectra of ­IrO2@MSN@PDA-BSA NPs solutions
+
+Page 9 of 14
+Wu et al. J Nanobiotechnol          (2021) 19:203 
+	
+as shown in the CCK-8 results depicted in Fig. 4a. There 
+were no evident differences between the abovementioned 
+sample and the control group. These trends are similar to 
+the results of CCK-8 and calcein-AM/PI double staining, 
+which stained the live cells and dead cells green and red, 
+respectively (Fig.  4b–f). This indicates that there were 
+no obvious differences between the results of the experi-
+mental and control groups after culturing the samples 
+for 24 h. These results indicate that the cytocompatibil-
+ity of ­IrO2@MSN@PDA-BSA(Ce6) is satisfactory within 
+experimental dosages. The hemocompatibility of ­IrO2@
+MSN@PDA-BSA(Ce6) was evaluated using a hemolysis 
+assay. The HP of ­IrO2@MSN@PDA-BSA(Ce6) remained 
+lower than 5%, even at a high material concentration of 
+500  µg/mL. The HP values were equal to 0.4 ± 0.14%, 
+1.2 ± 0.25%, and 2.16 ± 0.3% at ­IrO2@MSN@PDA-
+BSA(Ce6) concentrations of 100, 250, and 500  µg/mL, 
+respectively (Fig. 4g). In addition, the mRBCs of the con-
+trol and experimental groups were completely separated 
+from the solution with relative ease, whereas the mRBCs 
+in the positive control were completely ruptured (Fig. 4h). 
+The hemolysis assay indicated that the NPs had a mini-
+mal impact on the structural integrity of mRBCs, thereby 
+ensuring the safety of intravenous material injections.
+In vivo biocompatibility and biodistribution
+The biocompatibility of ­IrO2@MSN@PDA-BSA(Ce6) 
+in animals was also studied. The body weights of mice 
+Fig. 3  a Photothermal curves of ­IrO2@MSN@PDA-BSA NPs solution with different concentration upon 808 nm laser irradiation (5 min, 1 W/cm2); 
+b the thermal images relevant to panel (a); c photothermal curves of ­IrO2@MSN@PDA-BSA NPs solution (250 mg/mL) under different laser power 
+density irradiation (808 nm, 5 min); d the thermal images relevant to panel (c); e temperature curve of ­IrO2@MSN@PDA-BSA solution during 5 
+irradiation and cooling cycles (0.8 W/cm2); f steady-state heating curves of ­IrO2@MSN@PDA-BSA NPs and water; g time constant for heat transfer of 
+­IrO2@MSN@PDA-BSA NPs
+
+Page 10 of 14
+Wu et al. J Nanobiotechnol          (2021) 19:203 
+were measured every 2 days after the I.V. materials injec-
+tion. The body weights of the experimental and control 
+groups did not differ significantly (p > 0.05), as shown in 
+Fig. 5a. However, the blood routine (Additional file 1: Fig. 
+S6) and serum biochemistry parameters (Fig. 5b) of the 
+mice administered with ­IrO2@MSN@PDA-BSA(Ce6) 
+were not similar to those of the control group (p > 0.05). 
+The potential toxicity of ­IrO2@MSN@PDA-BSA(Ce6) to 
+vital organs, such as the heart, liver, spleen, lungs, and 
+kidneys, was also evaluated. The H&E staining of these 
+organs demonstrated that no obvious damage was caused 
+during the preset feeding periods (1, 7, and 28 days). This 
+indicates that ­IrO2@MSN@PDA-BSA(Ce6) does not 
+cause acute or chronic organ damage. The potential met-
+abolic pathway of ­IrO2@MSN@PDA-BSA(Ce6) was then 
+investigated by conducting an in vivo biodistribution of 
+Si ions. The accumulation of Si in the liver and kidney 1 
+day after the injection was higher than that observed in 
+the other organs due to the non-specific uptake of the 
+reticuloendothelial system. The amount of Si in the major 
+organs gradually decreased with time. As a result, the 
+concentration of Si in the tested organs was lower than 
+5 µg/g 28 days after the injection.
+In vitro PTT/PDT tumor therapy
+The efficiency of the combined tumor therapy in 
+HT-29 cells and tumor-bearing nude mice was stud-
+ied to realize the desirable biocompatibility of ­IrO2@
+MSN@PDA-BSA(Ce6) in vitro and in vivo. The HT-29 
+cells cultured with ­IrO2@MSN@PDA-BSA(Ce6) in the 
+absence of light intervention did not report excessive 
+cell death. However, the survival rate of the cells after 
+being subjected to 808 nm NIR laser irradiation was 
+reduced to 48.9% (***p < 0.001, versus control, Fig. 6a) 
+due to the excellent photothermal conversion ability 
+of ­IrO2@MSN@PDA-BSA(Ce6). In comparison with 
+the control group, the viability of the HT-29 cells irra-
+diated with a 660 nm laser decreased to 65.8% (PDT 
+group, ***p < 0.001, versus control). The addition of 
+­H2O2 to the DMEM under conditions similar to those 
+Fig. 4  a L929 cells viabilities after cultured with different concentrations of ­IrO2@MSN@PDA-BSA(Ce6); b–f the photographs of Live/Dead staining 
+relevant to (a); g hemolytic assay of ­IrO2@MSN@PDA-BSA(Ce6); h the photographic images relevant to (g)
+
+Page 11 of 14
+Wu et al. J Nanobiotechnol          (2021) 19:203 
+	
+of the PDT group drastically reduced the viability of 
+the HT-29 cells to 17.6% (***p < 0.001, versus control; 
+***p < 0.001, versus PDT). The differences in the cell via-
+bility values indicate that the co-existence of ­H2O2 and 
+­IrO2@MSN@PDA-BSA(Ce6) could enhance the tumor 
+PDT effect. This is because ­IrO2 catalyzed the decom-
+position of ­H2O2 to produce endogenous oxygen, which 
+was further sensitized by the Ce6 while being irradi-
+ated by a 660 nm laser. Owing to the PTT and CAT-
+mimicking abilities of ­IrO2@MSN@PDA-BSA(Ce6), the 
+HT-29 cells were almost completely dead after being 
+irradiated by the 808 nm and 660 nm lasers successively 
+(***p < 0.001, versus control). The results of the calcein-
+AM/PI Live/Dead staining were similar to those of 
+the CCK-8 cell viability assay. The HT-29 cells in the 
+control group were stained with a strong green fluo-
+rescence, whereas most HT-29 cells treated with PTT, 
+PDT, enhanced PDT, and PDT/PTT were stained red 
+(Fig. 6b–f). This validates the in vitro therapeutic effect 
+of ­IrO2@MSN@PDA-BSA(Ce6).
+In vivo combined tumor therapy
+The in  vitro therapeutic effect investigation provides 
+preliminary confirmation that ­IrO2@MSN@PDA-
+BSA(Ce6) is suitable for multimodal tumor therapy. 
+This was verified by the tests conducted on animals. 
+The variations in the temperatures of the tumor-
+bearing nude mice that received the material injec-
+tions were measured using a thermal imaging camera. 
+The ΔT of the control group was only 4.3  °C after 
+being subjected to NIR irradiation at 808 mm (5 min), 
+whereas ΔT for the mice injected with the I.V. and 
+I.T. materials were 10.3 and 20.8 °C, respectively. The 
+variation in the temperatures of the mice injected with 
+the I.V. material also proved that ­IrO2@MSN@PDA-
+BSA(Ce6) could passively accumulate at the tumor 
+site through the EPR effect. The volume of the tumors 
+of the mice belonging to the control group increased 
+to 9.12 times their original values after 28 days of 
+feeding. However, the tumor volumes of the PTT 
+group increased to 2.56 times their original values 
+Fig. 5  a Relative body weight of KM mice treated with saline or ­IrO2@MSN@PDA-BSA(Ce6) NPs (1 mg/mL); b blood biochemistry parameters; c 
+biodistribution of Si ions in major organs of KM mice; d H&E staining of the major organs of KM mice treated with saline (control) or ­IrO2@MSN@
+PDA-BSA(Ce6) NPs
+
+Page 12 of 14
+Wu et al. J Nanobiotechnol          (2021) 19:203 
+(***p < 0.001, versus control). This indicates that PTT 
+can kill a few cancer cells while the surviving ones 
+continue to grow. Similarly, the tumor volumes of the 
+PDT group increased to approximately 3.42 times their 
+original values (***p < 0.001, versus control). There 
+was no obvious difference between the tumor volumes 
+of the PDT and PTT groups (p > 0.05). This suggests 
+that a single dose of PTT or PDT produces a certain 
+therapeutic effect. However, the tumors of the mice in 
+the combined therapy group were completely eradi-
+cated, irrespective of the material injection method 
+(Fig.  7c, d). This confirms the superior efficiency of 
+the combined tumor therapy of the ­IrO2@MSN@PDA-
+BSA(Ce6) NPs.
+Conclusions
+An ­IrO2@MSN@PDA-BSA(Ce6) nanoenzymatic com-
+posite platform for the treatment of tumors through the 
+combined effects of PTT and PDT was designed in this 
+study. The MSN coating introduced abundant pores for 
+Ce6 loading, and the conjugated BSA endowed the NPs 
+with sufficient biocompatibility in  vitro and in  vivo. 
+The loading of Ce6 facilitated the photo-triggered gen-
+eration of single oxygen, resulting in photodynamic cell 
+death. ­IrO2 functions as a CAT-mimic to catalyze the 
+decomposition of ­H2O2 in the TME to generate endog-
+enous oxygen and alleviate the hypoxia of solid tumors. 
+This enhances the PDT of Ce6 by offering local oxygen 
+and promoting the generation of 1O2. In addition, the 
+Fig. 6  a HT29 cell viability after different treatments as noted; b–f the corresponding Live/Dead stained HT29 cells morphology (b control; c PTT 
+(1 W/cm2, 5 min); d PDT (0.3 W/cm2, 3 min); e PDT + ­H2O2 (0.3 W/cm2, 3 min); f PTT + PDT (1 W/cm2, 5 min; 0.3 W/cm2, 3 min)
+
+Page 13 of 14
+Wu et al. J Nanobiotechnol          (2021) 19:203 
+	
+PDA coating and ­IrO2 NPs exhibited remarkably high 
+photothermal conversion efficiencies, resulting in the 
+ablation of solid tumors through hyperthermia. The 
+therapeutic effect of ­IrO2 @MSN@PDA-BSA(Ce6) for 
+multimodal tumor therapy was proved both in  vitro 
+and in  vivo. The results indicated that the tumors of 
+the mice in the combined therapy group could be com-
+pletely eradicated. The findings of the present study 
+highlight the feasibility of using theranostic nanoen-
+zymes for translational medicine.
+Supplementary Information
+The online version contains supplementary material available at https://​doi.​
+org/​10.​1186/​s12951-​021-​00948-8.
+Additional file 1. 1. Materials. 2. Characterization of ­IrO2@MSN@PDA-BSA 
+NPs. Fig. S1. (a) The TEM images of ­IrO2@MSN@PDA-BSA NPs; (b) the 
+corresponding size distributions of ­IrO2-PVP nanoparticles. Fig. S2. EDS 
+spectra of ­IrO2@MSN@PDA-BSA NPs. Fig. S3. FTIR spectra of PVP, PDA, 
+and ­IrO2@MSN@PDA-BSA NPs. Fig. S4. Release of Ce6 from ­IrO2@MSN@
+PDA-BSA(Ce6) NPs. Fig. S5. Variation of the dissolved oxygen (DO) content 
+at different pH values (pH 6.0 and 7.4). Fig. S6. Routine blood test of ­IrO2@
+MSN@PDA-BSA(Ce6) treated KM mice fed for different days.
+Acknowledgements
+H. W. and Q. J. contributed equally to this work. This research is financially sup-
+ported by Shanghai Sailing Program 20YF1448400, Naval Medical University 
+Sailing Program 2019-QH-16, Shanghai Changhai Hospital Youth Found.
+Authors’ contributions
+HW and QJ designed and performed the experiment, and wrote the 
+manuscript. KL, CZ, MX and SW analyzed the data. ZF and JZ supervised the 
+research. All authors read and approved the final manuscript.
+Funding
+Not applicable.
+Availability of data and materials
+All data generated or analyzed during this study are included in this manu-
+script and its additional material.
+Declarations
+Ethics approval and consent to participate
+Not applicable.
+Consent for publication
+Not applicable.
+Competing interests
+All authors declare that they have no conflict of interest or financial conflicts 
+to disclose.
+Author details
+1 Department of Breast Surgery, Xinhua Hospital, Shanghai Jiaotong University 
+School of Medicine, No. 1665 Kongjiang Road, Shanghai 200433, People’s 
+Republic of China. 2 Department of Gastroenterology, Changhai Hospital, 
+Second Military Medical University, No. 168 Changhai Road, Shanghai 200433, 
+People’s Republic of China. 3 College of Science, University of Shanghai for Sci-
+ence and Technology, No. 334 Jungong Road, Shanghai 200093, People’s 
+Republic of China. 
+Received: 29 March 2021   Accepted: 29 June 2021
+Fig. 7  a The tumor temperature under NIR laser irradiation (PTT, 1 W/cm2, 5 min; PDT, 0.3 W/cm2, 3 min); b the corresponding thermal images of 
+mice of panel (a); c relative tumor volume change curves of mice after different treatments as noted; d pictures of mice at days 0 and 28 of panel (c)
+
+Page 14 of 14
+Wu et al. J Nanobiotechnol          (2021) 19:203 
+References
+	1.	
+Siegel RL, Miller KD, Fuchs HE, Jemal A. Cancer statistics, 2021. CA Cancer 
+J Clin. 2021;71:7–33.
+	2.	
+Zeng H, Chen W, Zheng R, Zhang S, Ji JS, Zou X, Xia C, Sun K, Yang Z, 
+Li H, et al. Changing cancer survival in China during 2003-15: a pooled 
+analysis of 17 population-based cancer registries. Lancet Glob Health. 
+2018;6:e555–67.
+	3.	
+Vasan N, Baselga J, Hyman DM. A view on drug resistance in cancer. 
+Nature. 2019;575:299–309.
+	4.	
+Herrmann J. Adverse cardiac effects of cancer therapies: cardiotoxicity 
+and arrhythmia. Nat Rev Cardiol. 2020;17:474–502.
+	5.	
+Liu Y, Bhattarai P, Dai Z, Chen X. Photothermal therapy and photoacous-
+tic imaging via nanotheranostics in fighting cancer. Chem Soc Rev. 
+2019;48:2053–108.
+	6.	
+Liu S, Pan X, Liu H. Two-dimensional nanomaterials for photothermal 
+therapy. Angew Chem Int Ed Engl. 2020;59:5890–900.
+	7.	
+Monro S, Colon KL, Yin H, Roque J, Konda P, Gujar S, Thummel RP, Lilge L, 
+Cameron CG, McFarland SA. Transition metal complexes and photody-
+namic therapy from a tumor-centered approach: challenges, oppor-
+tunities, and highlights from the development of TLD1433. Chem Rev. 
+2019;119:797–828.
+	8.	
+Yang J, Hou M, Sun W, Wu Q, Xu J, Xiong L, Chai Y, Liu Y, Yu M, Wang H, 
+et al. Sequential PDT and PTT using dual-modal single-walled carbon 
+nanohorns synergistically promote systemic immune responses against 
+tumor metastasis and relapse. Adv Sci (Weinh). 2020;7:2001088.
+	9.	
+Liang R, Liu L, He H, Chen Z, Han Z, Luo Z, Wu Z, Zheng M, Ma Y, Cai 
+L. Oxygen-boosted immunogenic photodynamic therapy with gold 
+nanocages@manganese dioxide to inhibit tumor growth and metastases. 
+Biomaterials. 2018;177:149–60.
+	10.	 Liu P, Xie X, Shi X, Peng Y, Ding J, Zhou W. Oxygen-self-supplying and HIF-
+1alpha-Inhibiting core-shell nanosystem for hypoxia-resistant photody-
+namic therapy. ACS Appl Mater Interfaces. 2019;11:48261–70.
+	11.	 Luo K, Wu H, Chen Y, Li J, Zhou L, Yang F, Huang M, An X, Wang S. Prepara-
+tion of Bi-based hydrogel for multi-modal tumor therapy. Colloids Surf B 
+Biointerfaces. 2021;200:111591.
+	12.	 Pucelik B, Sulek A, Barzowska A, Dabrowski JM. Recent advances in strate-
+gies for overcoming hypoxia in photodynamic therapy of cancer. Cancer 
+Lett. 2020;492:116–35.
+	13.	 Cheng Y, Cheng H, Jiang C, Qiu X, Wang K, Huan W, Yuan A, Wu J, Hu 
+Y. Perfluorocarbon nanoparticles enhance reactive oxygen levels and 
+tumour growth inhibition in photodynamic therapy. Nat Commun. 
+2015;6:8785.
+	14.	 Chang M, Hou Z, Wang M, Wang M, Dang P, Liu J, Shu M, Ding B, Al 
+Kheraif AA, Li C, Lin J. Cu2 MoS4 /Au heterostructures with enhanced 
+catalase-like activity and photoconversion efficiency for primary/meta-
+static tumors eradication by phototherapy-induced immunotherapy. 
+Small. 2020;16:e1907146.
+	15.	 Shen J, Rees TW, Zhou Z, Yang S, Ji L, Chao H. A mitochondria-targeting 
+magnetothermogenic nanozyme for magnet-induced synergistic cancer 
+therapy. Biomaterials. 2020;251:120079.
+	16.	 Cheng X, He L, Xu J, Fang Q, Yang L, Xue Y, Wang X, Tang R. Oxygen-
+producing catalase-based prodrug nanoparticles overcoming resistance 
+in hypoxia-mediated chemo-photodynamic therapy. Acta Biomater. 
+2020;112:234–49.
+	17.	 Sahu A, Min K, Jeon J, Yang HS, Tae G. Catalytic nanographene oxide 
+with hemin for enhanced photodynamic therapy. J Control Release. 
+2020;326:442–54.
+	18.	 Wu J, Wang X, Wang Q, Lou Z, Li S, Zhu Y, Qin L, Wei H. Nanomaterials 
+with enzyme-like characteristics (nanozymes): next-generation artificial 
+enzymes (II). Chem Soc Rev. 2019;48:1004–76.
+	19.	 Jiang D, Ni D, Rosenkrans ZT, Huang P, Yan X, Cai W. Nanozyme: new 
+horizons for responsive biomedical applications. Chem Soc Rev. 
+2019;48:3683–704.
+	20.	 Hou X, Tao Y, Pang Y, Li X, Jiang G, Liu Y. Nanoparticle-based photothermal 
+and photodynamic immunotherapy for tumor treatment. Int J Cancer. 
+2018;143:3050–60.
+	21.	 Nam J, Son S, Ochyl LJ, Kuai R, Schwendeman A, Moon JJ. Chemo-
+photothermal therapy combination elicits anti-tumor immunity against 
+advanced metastatic cancer. Nat Commun. 2018;9:1074.
+	22.	 Hu K, Xie L, Zhang Y, Hanyu M, Yang Z, Nagatsu K, Suzuki H, Ouyang J, 
+Ji X, Wei J, et al. Marriage of black phosphorus and Cu(2+) as effective 
+photothermal agents for PET-guided combination cancer therapy. Nat 
+Commun. 2020;11:2778.
+	23.	 Murugan C, Sharma V, Murugan RK, Malaimegu G, Sundaramurthy A. 
+Two-dimensional cancer theranostic nanomaterials: synthesis, surface 
+functionalization and applications in photothermal therapy. J Control 
+Release. 2019;299:1–20.
+	24.	 Zhang Y, Lv F, Cheng Y, Yuan Z, Yang F, Liu C, Cao Y, Zhang K, Lu H, Zada 
+S, et al. Pd@Au bimetallic nanoplates decorated mesoporous MnO2 for 
+synergistic nucleus-targeted NIR-II photothermal and hypoxia-relieved 
+photodynamic therapy. Adv Healthc Mater. 2020;9:e1901528.
+	25.	 Chen G, Ma B, Wang Y, Xie R, Li C, Dou K, Gong S. CuS-based theranostic 
+micelles for NIR-controlled combination chemotherapy and photother-
+mal therapy and photoacoustic imaging. ACS Appl Mater Interfaces. 
+2017;9:41700–11.
+	26.	 Rong L, Zhang Y, Li WS, Su Z, Fadhil JI, Zhang C. Iron chelated melanin-
+like nanoparticles for tumor-associated macrophage repolarization and 
+cancer therapy. Biomaterials. 2019;225:119515.
+	27.	 Sun W, Du Y, Liang X, Yu C, Fang J, Lu W, Guo X, Tian J, Jin Y, Zheng J. Syn-
+ergistic triple-combination therapy with hyaluronic acid-shelled PPy/CPT 
+nanoparticles results in tumor regression and prevents tumor recurrence 
+and metastasis in 4T1 breast cancer. Biomaterials. 2019;217:119264.
+	28.	 Zhou L, Zhao J, Chen Y, Zheng Y, Li J, Zhao J, Zhang J, Liu Y, Liu X, Wang S. 
+MoS2-ALG-Fe/GOx hydrogel with Fenton catalytic activity for combined 
+cancer photothermal, starvation, and chemodynamic therapy. Colloids 
+Surf B Biointerfaces. 2020;195:111243.
+	29.	 Wan G, Chen B, Li L, Wang D, Shi S, Zhang T, Wang Y, Zhang L, Wang Y. 
+Nanoscaled red blood cells facilitate breast cancer treatment by combin-
+ing photothermal/photodynamic therapy and chemotherapy. Biomateri-
+als. 2018;155:25–40.
+	30.	 Ferroni C, Del Rio A, Martini C, Manoni E, Varchi G. Light-Induced thera-
+pies for prostate cancer treatment. Front Chem. 2019;7:719.
+	31.	 Sun W, Zhao X, Fan J, Du J, Peng X. Boron dipyrromethene nano-photo-
+sensitizers for anticancer phototherapies. Small. 2019;15:e1804927.
+	32.	 Gu W, Zhang T, Gao J, Wang Y, Li D, Zhao Z, Jiang B, Dong Z, Liu H. 
+Albumin-bioinspired iridium oxide nanoplatform with high photo-
+thermal conversion efficiency for synergistic chemo-photothermal of 
+osteosarcoma. Drug Deliv. 2019;26:918–27.
+	33.	 Zhen W, Liu Y, Lin L, Bai J, Jia X, Tian H, Jiang X. BSA-IrO2: catalase-like 
+nanoparticles with high photothermal conversion efficiency and a high 
+X-ray absorption coefficient for anti-inflammation and antitumor thera-
+nostics. Angew Chem Int Ed Engl. 2018;57:10309–13.
+	34.	 Gulzar A, Xu J, Yang D, Xu L, He F, Gai S, Yang P. Nano-graphene 
+oxide-UCNP-Ce6 covalently constructed nanocomposites for NIR-
+mediated bioimaging and PTT/PDT combinatorial therapy. Dalton Trans. 
+2018;47:3931–9.
+	35.	 Wan S, Zhang B, Li S, He B, Pu Y. Combination of PEG-decorated black 
+phosphorus nanosheets and immunoadjuvant for photoimmunotherapy 
+of melanoma. J Mater Chem B. 2020;8:2805–13.
+Publisher’s Note
+Springer Nature remains neutral with regard to jurisdictional claims in pub-
+lished maps and institutional affiliations.

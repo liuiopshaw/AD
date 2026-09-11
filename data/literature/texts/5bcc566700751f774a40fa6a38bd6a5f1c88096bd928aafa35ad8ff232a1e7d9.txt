@@ -1,0 +1,2106 @@
+Nature Reviews Materials
+nature reviews materials
+https://doi.org/10.1038/s41578-023-00537-1
+Review article
+ Check for updates
+Understanding ligand-protected 
+noble metal nanoclusters at work
+María Francisca Matus 
+  1 & Hannu Häkkinen 
+  1,2 
+Abstract
+Ligand-protected noble metal nanoclusters, commonly termed 
+‘monolayer-protected metal clusters’ (MPCs), comprise a common set 
+of structures with an inorganic core stabilized by an organic layer of 
+ligand molecules. The choice of the metals in the inorganic core defines 
+the clusters’ physical properties, such as the electronic, optical and 
+magnetic properties, whereas the organic ligand shell defines their 
+solubility and functionality with the surrounding environment. MPCs 
+are currently provoking widespread interest as tunable nanomaterials 
+because they can be engineered, in principle, with atomic precision.  
+In this Review, we discuss the unique features of MPCs that make  
+them ideal nanomaterials for applications in different fields, including 
+catalysis and biological applications such as bioimaging, sensing 
+and targeted drug delivery. We emphasize how understanding these 
+atomically precise nanomaterials requires a tight connection between 
+computational modelling and experimental characterization, which 
+opens unique possibilities for iterative functionalization and tuning  
+for applications.
+Sections
+Introduction
+Hybrid and unique molecular 
+structure
+A rare interdisciplinary 
+feedback loop
+Nanocatalysts
+Biomedical applications
+Outlook
+1Department of Physics, Nanoscience Center, University of Jyväskylä, Jyväskylä, Finland. 2Department of 
+Chemistry, Nanoscience Center, University of Jyväskylä, Jyväskylä, Finland. 
+ e-mail: hannu.j.hakkinen@jyu.fi
+
+Nature Reviews Materials
+Review article
+mixing either noble metals or transition metals with noble metals1–6. 
+The protecting ligand layer can consist of thiols, alkynyls, carbenes, 
+halides or any other species that has a high affinity to the metal core. 
+Specific to MPCs is the fact that, in most cases, they are distinct chemi-
+cal compounds with a known molecular formula and an atomically 
+precise structure as characterized by single-crystal X-ray diffraction 
+(SCXRD). They can be treated as any other molecular species with a 
+known structure and known set of chemical properties. This fact has 
+had an enormous impact in the computational investigations of MPC 
+properties, from phenomenological models explaining their relative 
+stability to detailed computations of their physical and chemical prop-
+erties; in some cases, theory has been able to independently predict 
+MPC structures that have later been experimentally observed7 (Box 3).
+The precise composition and multiple customizable properties 
+make MPCs ideal candidates for next-generation materials in diverse 
+areas of materials science. Here, it is necessary to stress an impor-
+tant aspect offered by MPCs that is impracticable for conventional 
+and polydisperse nanoparticles: the ability to implement a virtuous 
+cycle of improvement through the coalescence of computational and 
+experimental investigations. This workflow produces a large amount 
+of data that can be integrated into adequate data analysis methods 
+(such as machine learning), generating a rare and robust feedback loop 
+to develop new functional materials (Fig. 2). This feedback approach 
+can strengthen the development of MPCs as new catalysts, bioimaging 
+and/or sensing agents, and drug carriers in nanomedicine.
+This Review provides an overview of the key factors for successfully 
+developing tunable MPCs and illustrates how the atomic-level charac-
+terization enables more accurate structure–property correlations, 
+bringing the iterative loop into motion.
+Hybrid and unique molecular structure
+MPCs exhibit a discrete size and precise chemical composition that can 
+be represented by the definite formula [MnLm]q, where n and m are the 
+number of metal atoms (M) and ligands (L), respectively, and q represents 
+the net charge1,8,9. As illustrated in Fig. 3, MPCs have a hybrid structure 
+consisting of a metal core of 1–3 nm in diameter (from a few tens to a few 
+hundred metal atoms) that is stabilized by a covalently bound ligand 
+layer1,10. This well-defined molecular structure is especially important for 
+determining the exact number of functional molecules that can be con-
+jugated to the MPC surface for a given application11–13 and for pinpointing 
+how MPCs interact with their environment8. This exactness is in sharp 
+contrast to larger, colloidal metal nanoparticles, in which neither the 
+metal–ligand interface nor the structure of the ligand surface is known 
+on the molecular scale. The peculiar structure of MPCs can therefore 
+be divided into three main layers, which can be studied with unrivalled 
+precision through interdisciplinary computational–experimental 
+strategies8: the compact metal core, the metal–ligand interface 
+and the organic ligand layer (Fig. 3). In addition, an extra layer that rep-
+resents the interaction of MPCs with different external factors of any 
+surrounding environment can be defined. This outermost region thus 
+comprises mainly structural alterations of the ligand layer induced by 
+intermolecular interactions with, for example, biomolecules (nano–bio 
+interface)8,14, specific counterions (such as counterions with surfactant 
+properties)15 or different support materials (for catalytic reactions)16,17.
+Metal core
+So far, various MPC structures consisting of different noble metal cores, 
+such as gold3,18, silver19 and copper20, have been successfully revealed 
+by SCXRD, obtained in close synergy with theoretical studies based on 
+Introduction
+Ligand-protected metal nanoclusters are an exceptional class of ultra­
+small inorganic–organic nanoparticles that have provoked wide-
+spread interest owing to their molecular-like properties1, which are 
+not observed in the corresponding bulk counterparts. These metallic 
+nanostructures have potential applications as catalysts, agents for bio-
+logical imaging and sensing, and tunable nanomaterials for diagnostics 
+and therapeutics in personalized nanomedicine.
+Atomically precise nanometre-size particles that contain an inor-
+ganic core made of noble metals, stabilized by various hydrophobic 
+or hydrophilic organic ligand molecules, are commonly known as 
+‘monolayer-protected metal clusters’ (MPCs) (Box 1). Their discovery has 
+been an interesting journey spanning close to three decades (Fig. 1 and 
+Box 2). The most common core metal is gold, but in recent years silver- 
+and copper-based MPCs have appeared, together with bimetallic MPCs 
+Box 1 
+Why atomically precise MPCs?
+It is illuminating to contrast the true atom-level monodispersity of 
+monolayer-protected metal clusters (MPCs) with the concept of size 
+monodispersity used for colloidal metal nanoparticles via a simple 
+example: using the density of atoms in macroscopic gold metal 
+(59 atoms nm−3), a spherical gold nanoparticle of 5 nm diameter 
+contains about 3,860 gold atoms. If we take a random sample with 
+10% size variation (well qualified to be termed ‘monodisperse size’ 
+in colloid science), the nanoparticles will vary in the seemingly 
+tiny range of 4.5–5.5 nm, but this translates to a substantial range 
+in the quantity of atoms (about 1,000). These many atoms come 
+into play for dictating specific and commonly undesired features. 
+For instance, for applications in catalysis, inaccuracy in the surface 
+size or surface chemical structure hinders an understanding of the 
+reaction mechanisms, such as detailed reaction steps and reasons 
+for product selectivity. Likewise, for biomedical applications, 
+variations in the number of atoms strongly affect toxicity and 
+biodistribution of the nanomaterials.
+versus
+Colloidal metal nanoparticles
+Atomically precise MPCs
+
+Nature Reviews Materials
+Review article
+density functional theory (DFT) calculations21–23 (Box 3). The reported 
+structures usually have a highly symmetric core and different types of 
+unit cells, such as face-centred cubic24, body-centred cubic25, hexagonal 
+close-packed26, icosahedral27,28 and decahedral29, among others20,30. The 
+size and geometry of the metal core dictates the physical and electronic 
+properties of the MPC31, which can be tuned by the incorporation of a 
+different metal (dopant), enhancing, for example, their luminescence 
+or catalytic activity32,33.
+Metal–ligand interface
+The composition of the metal–ligand interface can be understood 
+using the ‘divide and protect’ concept (Box 3), which has enabled the 
+identification of particular central cores and their protecting units in 
+all available MPC crystal structures thus far. Although the interface 
+provides structural stability to the MPCs, it is also dynamic, resulting 
+in a duality that — although not yet fully understood — has been dem-
+onstrated to play a determinant role in isomerism and intercluster 
+reactions34. Interdisciplinary studies (combining DFT calculations or 
+reactive molecular dynamics (MD) simulations with mass spectrom-
+etry) on thiolate (SR)-protected Au and Ag MPCs such as Ag44(SR)30 
+(ref. 35) and Au25(SR)18 (refs. 36,37) have shown how a particular rearrange-
+ment of the metal–ligand interface can give rise to isomeric products in 
+the gas phase, whether or not any metal–sulfur bonds actually break. 
+Similarly, the first intercluster reaction observed between Au25(SR)18 
+and Ag44(SR)18 MPCs38 was attributed to the differing oxidation states 
+of atoms in the metal core (neutral) and metal–ligand interface (oxi-
+dized) (Box 3). These different chemical states within the same MPC 
+triggered redox processes, which, along with metallophilic and pi–pi 
+interactions between aromatic ligands, led to destabilization of the 
+protecting units and consequently their fragmentation to produce 
+the bimetallic MPCs38.
+Ligands
+The selection of surface ligand depends strongly on the application for 
+which the MPCs will be used39. Ligands influence different parameters 
+and physicochemical properties of the MPCs, such as geometry40, 
+stability41, optical absorption42, reactivity43, luminescence44 and chi-
+rality45, and at the same time determine how MPCs interact with the 
+environment. For Au MPCs, thiolates have been by far the preferred 
+ligands owing to the high affinity of the Au–S bond2, translating to 
+higher stability. Despite this strong bond, thiolate-protected Au MPCs 
+can participate in thiolate-for-thiolate ligand exchange reactions46–48 
+that tune the MPC’s surface properties (such as increasing the biocom-
+patibility, reducing the reactivity or providing amphipathic character, 
+to name a few). Furthermore, combined computational–experimental 
+work (DFT calculations and nuclear magnetic resonance (NMR) spec-
+troscopy) has made it possible to identify the exact ligand molecules 
+most susceptible to being replaced11,49,50 for site-selective modification. 
+The high strength of the metal–S bond has also been reflected in vari-
+ous thiolate-protected Ag (refs. 51–53) and a few Cu (ref. 20) MPCs and 
+benefits their use in biomedical applications, because it contributes 
+to the stability and lower reactivity of the nanoclusters. Alkynyl ligands 
+(C≡CR) and selenolates (SeR) have an affinity for Au similar to that of 
+thiolates and are thus of interest for Au and Ag MPCs54–58. Conversely, 
+ligands with weaker binding energies than thiolates, such as phos-
+phines (PR3), have attracted particular attention for developing high-
+performance heterogeneous catalysts and studying ligand elimination 
+methods59. In these systems, the catalytic activity increases with the 
+amount of ligand removed from the MPCs, so a weaker metal–ligand 
+interaction is beneficial for selective partial or full ligand elimination 
+without causing changes in size or shape of the MPC on the support.
+A rare interdisciplinary feedback loop
+The well-defined internal structure of MPCs allows unique feedback 
+between computations and experimental measurements that is 
+scarcely feasible using conventional nanomaterials with batch-to-
+batch variability and non-uniform composition (Box 1). This constant 
+feedback through interdisciplinary research is especially beneficial 
+for developing new functional nanosystems and can be turned into an 
+iterative flow with the purpose of improving the nanosystems based 
+on their intended application; that is, a feedback loop.
+The main steps making up the feedback loop are design/redesign, 
+synthesis, characterization and evaluation (Fig. 2). The cycle starts with 
+the computational design and modelling of the nanosystem using dif-
+ferent theoretical methods for structure prediction, such as DFT, MD 
+simulations or a hybrid quantum-mechanics/molecular-mechanics 
+Crystal structure of 
+Au144(SR)60 (ref.97)
+Crystal structure 
+of Au38(SR)24 (ref.216)
+Crystal structure of 
+Au25(SR)18 (ref.27,28)
+Crystal structure 
+of Au102(SR)44 (ref.29)
+Noble metal NCs as 
+probes for labelling 
+biomolecules123
+‘Brust–Shiﬀrin’ 
+method206
+First ‘magic 
+numbers’ and 
+‘giant’ water-
+soluble NCs210
+ESI-MS of 
+Au25(SR)18 and 
+other discrete 
+sizes212
+First ligand 
+exchange reaction 
+for SR-protected 
+NCs47
+Thiol-SAMs on 
+gold surfaces204,205
+Correct structure 
+prediction of 
+Au38(SR)24 (ref.23)
+Correct structure 
+prediction of 
+Au144(SR)60 (ref.96)
+First DFT models 
+of Au38(SR)24 (ref.213)
+‘Divide and 
+protect’ concept215
+Superatom 
+electronic 
+structure model86
+Correct structure 
+prediction of 
+Au25(SR)18 (ref.21)
+Experimental 
+Computational
+1980s
+1994
+1996
+1999
+2000
+2005
+2006
+2007
+2008
+2009
+2010
+2018
+Fig. 1 | Timeline of some key milestones in the field of atomically precise metal 
+nanoclusters. The key developments presented in each box are focused on 
+gold-based metal nanoclusters because they have been studied most intensively 
+and promoted the development of their silver- and copper-based counterparts. 
+Au, gold; DFT, density functional theory; ESI-MS, electrospray ionization mass 
+spectrometry; NCs, nanoclusters; SAMs, self-assembling monolayers; SR, thiolate.
+
+Nature Reviews Materials
+Review article
+approach. Then the most promising nanosystem obtained in the first 
+stage is synthesized and characterized experimentally. Simultaneously, 
+the computational and experimental data sets can be integrated into 
+efficient analytical tools (for example, those based on machine learn-
+ing) to be correctly processed and guide the decision-making process. 
+Next, the nanosystem is experimentally evaluated, and the proposed 
+model is corroborated. Suppose an undesired effect or deficient per-
+formance is observed. In that case, a refinement of the model (redesign) 
+is performed, which may consist of changes in the composition of one 
+or more structural layers with the aim of improving the nanosystem 
+efficacy in the next iteration.
+This concept emerges from the distinctive configuration of 
+MPCs; thus, it can be implemented in their different application areas. 
+For example, to develop new targeted nanosystems in the biomedical 
+field, the feedback loop is greatly beneficial for studying the many ways 
+in which biomolecules might interact with the nanosystem’s surface 
+when it enters the human body and predicting which interactions may 
+hinder targeting ability. Possible failures of the nanosystem in biologi-
+cal tests (at the in vitro, ex vivo or in vivo level) can thus be anticipated, 
+and all necessary modifications can be made to the model at early 
+stages to maintain its intended diagnostic or therapeutic features. 
+More efficient electrocatalysts can also be developed in this way. The 
+design stage of the feedback loop can apply derived methods from 
+existing algorithms for structure prediction of MPCs60 combined with 
+DFT calculations, which will then be integrated with experiments to 
+elucidate the catalytic activity and reactions involved before gener-
+ating large experimental data sets with demanding trial-and-error 
+laboratory work.
+The execution of a constant improvement cycle is enormously 
+useful for developing more precise predictive tools to guide the experi-
+mental stage, as it can illuminate how a given adjustment to a nano-
+system affects its internal structure, ligand dynamics and complex 
+interactions with the environment.
+Nanocatalysts
+Computational studies of the catalytic properties of MPCs began 
+in 2010 with a series of systematic DFT calculations to investigate 
+the di-oxygen binding and CO oxidation on phosphine- and thiolate-
+protected Au MPCs between 1.2 and 2.4 nm (ref. 61). The well-known 
+rate-limiting step in the CO oxidation reaction is the binding and 
+activation of di-oxygen (stretching the O–O bond) at the catalyst, as 
+shown in earlier computational studies on free and oxide-supported 
+Au MPCs62–66. The systematic calculations61 showed a clear size effect 
+in this rate-limiting step: only MPCs smaller than 2.2 nm were able to 
+bind O2 in an activated superoxo form (nominally O2
+− species), and the 
+CO oxidation reaction proceeded over these MPCs with low energy 
+barriers. The proposed mechanism involved partial removal of the 
+ligand shell to modify the electronic structure of the Au core, aiding 
+efficient electron transfer to the di-oxygen antibonding orbital. The 
+size effect introduced the concept that ultrasmall MPCs can be active 
+catalysts, motivating further work in the field.
+Generally, for any catalysed reaction to proceed, the catalyst has 
+to be able to bind to reactants, activate them and release the reaction 
+products. In principle, when an MPC is used as a catalyst, its catalytic 
+properties can be tuned through separate modifications of the metal 
+core, the ligand layer or the MPC–support interaction (Fig. 4). We 
+discuss examples in which computational work — explaining either a 
+concurrent or published experiment, or predicting mechanisms to be 
+investigated in future experiments — has shed light on the key factors 
+in performing these modifications.
+Effects of the metal core
+Single-site hydrogenation catalysts. Copper-hydride complexes 
+have potential as catalysts for several technologically important reac-
+tions, such as hydrogenation of carbon monoxide, hydroamination of 
+alkenes and alkynes, and chemoselective hydrogenation of unsaturated 
+ketones to unsaturated alcohols. One such well-known complex is 
+the commercially available Stryker’s reagent Cu6H6(PPh3)6 (refs. 67,68). 
+Several larger Cu MPCs with hydrides in the Cu core have also been 
+synthesized, such as alkynyl-protected Cu53H18 (ref. 69), phosphine-
+protected Cu25H22 (ref. 70), and dithiophosphate-protected Cu32H20 
+(ref. 71) and Cu20H11 (ref. 72).
+Box 2
+Brief history of noble metal 
+nanoclusters made by wet 
+chemistry
+Among the first synthesized nanoclusters having a metal nucleus 
+with metal–metal bonding were gold compounds from the late 1960s 
+and early 1970s with the general formula Au11L7X3 and [Au13L10X2]3+, 
+where L = phosphine and X = halide or SCN (ref. 82). Phosphines or 
+diphosphines were later applied as protecting ligands to yield larger 
+gold nanoclusters and intermetallic gold–silver complexes, as well 
+as ‘cluster-of-clusters’ supramolecular structures200–202, and are 
+still used today. However, the vast majority of metal nanoclusters 
+synthesized and characterized so far have been based on the high 
+affinity of thiol(ates) to gold that was first used in the early 1980s 
+(Fig. 1) to make thiol-self-assembling monolayers (thiol-SAMs) on gold 
+surfaces203–205. Crucial to this development was the demonstration 
+by Brust and co-workers in 1994 that thiolates could stabilize 1–3-nm 
+gold nanoparticles206. Their synthesis protocol is still widely used 
+with various modifications to allow synthesis in organic and aqueous 
+solvents, targeting different nanoparticle size regimes. The groups of 
+Whetten and Murray showed that the ‘Brust–Shiffrin’ synthesis does 
+indeed yield a series of distinct ‘magic’ sizes, and that the electronic 
+structure and optical properties show quantization of the electronic 
+states207–210. The term monolayer-protected cluster (MPC) was coined, 
+assuming that the particles probably had a well-defined size and 
+distinct molecular composition structure, giving the idea that there 
+exists a series of ‘magic compositions’ akin to the magic numbers 
+in gas-phase metal nanoclusters accounting for the stability178,211 
+(Box 3). Development in mass spectrometry techniques yielded the 
+first molecular formulas for thiolate-protected gold nanoclusters 
+(AunSRm) from the work of Tsukuda, Negishi and collaborators around 
+2005 (ref. 212), culminating in the first crystal structure of a fairly large 
+SR-protected gold nanocluster, Au102(p-MBA)44, by Kornberg’s group 
+in 2007 (ref. 29). After this breakthrough, the field developed at a 
+very rapid pace, and, currently, about 200 distinct compounds with 
+molecular structures are known, involving compounds with other 
+noble metals and other ligands such as carbenes and alkynyls.
+
+Nature Reviews Materials
+Review article
+The atomistic mechanisms for hydrogenation of ketones to alco-
+hols by a thiolate-protected copper-hydride nanocluster [Cu25H10(SP
+hCl2)18]3− have been deciphered in detail via a tight interplay between 
+experiment and theory73. DFT analysis of the observed crystal struc-
+ture confirmed the location and hydride (H−) form of the ten H atoms 
+inside the Cu core. Four different symmetry environments in a 3:3:3:1 
+ratio were revealed by 2H NMR data of the deuterated form of the 
+nanocluster. MD simulations, using forces calculated from the DFT, 
+demonstrated that the hydrides are essential to stabilize the observed 
+atomic structure of the Cu core. DFT calculations, which considered 
+a simplified model reaction of hydrogenating formaldehyde H2C=O 
+(the simplest relevant molecule having the C=O bond) to methanol, 
+proposed the intriguing idea that the hydrides in the Cu core par-
+ticipate in the reaction; in other words, the copper hydride serves as 
+a hydrogen source in the reaction H2 + H2C=O → H3COH, being replen-
+ished by ambient H2 during each reaction cycle. Two possible reaction 
+routes were identified, involving either one or two hydrides from the 
+core (Fig. 4a,b). Measured 2H NMR signals of the reaction product 
+indicated that it interacts with only one active hydride site (out of 10) 
+of the catalyst, and that two hydrides from the Cu core diffuse to this 
+active site to be used during the reaction cycle. This work confirmed, 
+through atom-scale information, the lattice-hydride mechanism that 
+had earlier been only proposed in electrocatalytic CO2 reduction by 
+Cu32H20 nanoclusters71.
+Doping of the metal core. It is well known that alloying, or mixing 
+another metal into the host metal, can easily modify the electronic 
+structure and thus the optical (plasmonic) and catalytic properties of 
+colloidal metal nanoparticles. MPCs offer even greater control over 
+the physicochemical properties through doping, because the fixed 
+number of core metal sites and atom geometry facilitate, in principle, 
+one-by-one changes in the metal composition and dopant atom posi-
+tion (Fig. 4a). Early DFT calculations74,75 suggested that the electronic 
+structure of Au MPCs could be modified by doping the Au core with 
+other metals, concentrating on the doped nanocluster [MAu24(SR)18]q 
+derived from the eight-electron superatom [Au25(SR)18]−. This idea was 
+systematically investigated with a large range of dopants M from ele-
+ment groups 1, 2 and 10–16, for overall nanocluster charges of −2 ≤ q ≤ 2 
+(ref. 74). The interaction energy between the dopant and the Au24 frame, 
+and the electronic HOMO–LUMO energy gap (where HOMO is highest 
+occupied molecular orbital and LUMO lowest unoccupied molecular 
+orbital), could both be tuned in a wide range, from 2.5 eV to 9 eV, and 
+Box 3
+Theoretical concepts, developments and breakthroughs
+First efforts to model the atomic structure of ligand-protected 
+metal nanoclusters in the mid-1990s (Fig. 1) considered crystalline 
+nanoparticles of gold covered by alkenethiolates, and thermodynamic 
+stability was argued based on filled atom shells in octahedral-shape 
+face-centred cubic crystallites of 140, 225, 314 and 459 gold atoms207. 
+This corresponded approximately to the observed stable sizes of 
+several synthesized alkenethiolate-gold compounds, which had 
+approximate masses determined by matrix-assisted laser desorption/
+ionization (MALDI) experiments as 27, 46, 57 and 93 kDa, respectively 
+(the size determination assumed that in the MALDI conditions the 
+ligand shell is mostly fragmented and the observed nanoparticle 
+masses are due to the gold core, for which 1 kDa corresponds to a 
+mass of approximately five gold atoms). The first density functional 
+theory (DFT) calculation on the electronic structure of the model 
+nanocluster Au38(SCH3)24 (SCH3 = methylthiolate) also considered 
+a symmetric face-centred-cubic nanocrystallite with an atomically 
+sharp gold–thiolate interface in line with the early atomistic models 
+of thiolate self-assembling monolayers on an Au(111) surface213. This 
+model was challenged by DFT simulations that showed disorder in 
+the gold core214. An important discovery from DFT simulations in 2006 
+led to the ‘divide and protect’ structural concept215. It suggested that 
+two distinct chemical states of gold atoms coexist within the same 
+cluster: in the metal core, the Au(0) state (charge-neutral) is found, 
+whereas the Au(i) state (oxidized) is present in the metal–ligand 
+interface, forming gold–thiolate ring-like structures. According to 
+this concept, the chemical composition for the model nanocluster 
+Au38(SCH3)24 could be written as Au14@[(AuSCH3)4]6 (using the notation 
+core@shell). Although this particular structure model for Au38(SCH3)24 
+turned out to be incorrect23,216, it gave a correct description of the gold 
+chemistry in these compounds, as was directly proven by the ground-
+breaking crystal structure of Au102(SR)44 (SR = p-MBA) in 2007 (ref. 29) 
+where the composition could be described as a metal core of 79  
+Au atoms protected by 19 RS–Au–SR and 2 RS–Au–RS–Au–SR units  
+(Au79@(RS–Au–SR)19(RS–Au–SR–Au–SR)2). DFT calculations, analysing 
+the electronic structure of this cluster, stressed the relevance of the  
+‘superatom model’ in which additional thermodynamic stability 
+comes from electronic ‘magic numbers’ needed to fill cluster electron 
+shells86,217. Considering the chemical composition of Au102(SR)44 and 
+a few other then-known gold nanoclusters protected by phosphines 
+(PR3) or thiolates, applying a simple electron counting formula86  
+gave the expected shell-filling numbers, such as eight electrons  
+for Au11(PR3)7Cl3 and [Au25(SR)18]− and 58 electrons for Au102(SR)44.  
+It is noteworthy that around 1976, Mingos had already predicted, by 
+extended Hückel calculations, that PR3-protected gold nanoclusters 
+with eight ‘free’ or ‘delocalized’ electrons should have additional 
+stability and thus could be synthesized218, the underlying physical 
+idea being similar to the superatom model. The superatom model was 
+quickly adopted and is still widely used. It can be modified to include 
+other noble metals, other electron-withdrawing ligands and non-
+spherical shapes of the metal core. After 2008, DFT calculations have 
+had an important role in correctly predicting the atomic structure of 
+several thiolate-protected gold nanoclusters, such as [Au25(SR)18]− 
+(refs. 21,27,28), the chiral structures of Au38(SR)24 (refs. 23,216) and Au144(SR)60 
+(refs. 96,97), as well as incoming ligand positions in ligand-exchanged 
+phosphine–carbene-protected gold nanoclusters219. Development 
+of classical force fields166,220 has been crucial to extend modelling 
+capability to molecular dynamics simulations of ligand-protected 
+metal nanoclusters in biological environments130,152,221.
+
+Nature Reviews Materials
+Review article
+from 0.8 eV to 1.5 eV, respectively. This tuning substantially affected 
+both the chemical stability and chemical reactivity of these ‘doped 
+superatoms’.
+This concept has since been applied to improve catalysts for the 
+electrocatalytic water splitting reaction 2H2O → 2H2 + O2, which con-
+sists of two half-reactions: the hydrogen evolution reaction (HER) 
+and oxygen evolution reaction (OER). MAu24(SR)18 nanoclusters 
+doped with platinum or palladium in particular76,77 are efficient HER 
+catalysts, paralleling or exceeding the performance of commercial 
+Pt HER electrocatalysts. DFT calculations have shown the important 
+role of transition metal dopants in regulating the HOMO energy level 
+of the metal core and the consequent binding energy of the hydrogen 
+to the catalyst78. Pd-doped Au MPCs also catalyse OER and oxygen 
+reduction reaction (ORR) more efficiently than the pure Au25(SR)18 
+cluster, with the metal core size and the chemical nature of the ligand 
+affecting the catalytic performance as well77. DFT studies suggest 
+mercury as the ideal dopant for ORR over MAu24(SR)18 catalyst79.
+Effects of the ligand layer
+Engineering of accessible metal sites. Conceptually, MPCs resemble 
+metalloenzymes in that they have a reactive metal cluster at the centre 
+(analogous to the metal centre in metalloenzymes) that is chemically 
+stabilized by an organic ligand layer (the protein backbone in metallo­
+enzymes). An enzyme’s functionality depends on the accessibility of 
+the reactive centre, which is regulated by dynamics and conformations 
+of the nearby residues. Owing to the shape of the protein backbone and 
+the size and charge distribution of the side chains around the enzyme’s 
+metal centre, ‘correct’ reactants are guided to the catalytic centre, 
+guaranteeing the enzyme’s high specificity in biological processes. 
+To mimic this concept, small Au nanoclusters with cores between 
+0.9 nm and 4 nm were synthesized with phosphine-functionalized 
+calix(4)arenes as bulky ligands to regulate access to the metal core80. 
+2-Naphthalenethiol (2-NT), whose fluorescence quenches upon bind-
+ing to gold, was used as a chemical probe to study the accessibility of 
+guest molecules to the core in solution. Twenty-five per cent of the Au 
+sites were accessible in the smallest 0.9 nm particle, but the accessibil-
+ity decreased greatly for larger cores. A similar relationship between 
+small core size and accessibility was found when N-heterocyclic car-
+bene (NHC)-functionalized calix(4)arenes were used as ligands81. For 
+designing nanocatalysts, these findings suggest that the accessibility 
+of reactants to the metal core can be engineered both by the size of the 
+core and by the size of the ligands.
+A 0.9-nm-diameter metal core implies about 10 Au atoms. To 
+examine why such a small cluster may have so many accessible sites, 
+a well-known Au11(PR3)7Cl3 nanocluster82 was used as a reference to 
+design a model of the experimental calixarene-protected nanocluster. 
+In the model, seven PR3 ligands were replaced by five calix(4)arenes, 
+two in a bidentate binding mode to Au and three in a monodentate 
+mode, and 2-NT molecules replaced the chlorides83. This configuration 
+yields 27% accessibility of 2-NT to Au sites, in close correspondence 
+to the experimental results80,81. DFT calculations found that, with the 
+three 2-NT molecules adsorbed, the nanocluster’s electronic structure 
+satisfies the eight-electron closed-shell rule for the MPC ‘superatom’ 
+(Box 3), but when the adsorption sites are free, the nanocluster is an 
+11-electron system — that is, it could be a potential donor of three 
+electrons to reactants. To confirm this, di-oxygen was used as a model 
+Step 3
+Elucidation and description 
+of physicochemical features
+Step 2
+Development of the
+material based on
+the conceived strategy
+for future applications
+Step 4
+Testing and validation of
+the desired properties 
+Step 1
+Computational design and
+modelling of the MPC-based
+nanosystem using
+diﬀerent theoretical methods 
+Decision
+window
+Feedback loop
+TRUE
+All data
+FALSE
+End
+Loop restart
+Loop condition
+Data analysis
+methods
+Input
+Output
+D
+e
+si
+g
+n
+/r
+e
+d
+e
+si
+g
+n
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+S
+y
+n
+t
+h
+e
+si
+s
+E
+v
+a
+l
+u
+a
+ti
+o
+n
+  
+  
+  
+ 
+  
+  
+  
+  
+  
+C
+h
+a
+r
+a
+c
+t
+e
+ri
+z
+a
+ti
+o
+n
+Fig. 2 | Feedback loop between computational and experimental studies 
+enabled by atomically precise metal nanoclusters. Conceptualization of the 
+main steps involved in the interdisciplinary feedback loop where computational 
+and experimental approaches act in complementary and synergistic ways, 
+favoured by the ultrasmall size and precise molecular composition of  
+monolayer-protected metal clusters (MPCs). The cycle starts with the design  
+and computational modelling (step 1) of the MPC-based nanosystem using 
+different methods such as density functional theory, molecular dynamics 
+or quantum mechanics/molecular mechanics simulations. Then the most 
+promising nanosystems are synthesized (step 2) and characterized (step 3)  
+experimentally, using techniques such as nuclear magnetic resonance 
+spectroscopy, mass spectrometry and electron microscopy. Next, the developed 
+MPC-based nanosystem is experimentally evaluated, and the proposed model is 
+corroborated (step 4). The data set collected throughout the loop execution can 
+be integrated into efficient analytical tools, such as machine learning algorithms, 
+to help guide the decision-making stage. The loop condition is related to the 
+agreement between computational and experimental observation according 
+to the intended application; if the predictive models or previous improvements 
+on the models are sufficient (TRUE), the loop ends, and the final product (new 
+functional nanosystem) is obtained. Otherwise, if an undesired effect or deficient 
+performance is observed after the data analysis, the nanosystem features are 
+considered insufficient (FALSE); thus, a refinement of the model at any structural 
+level (metal core, metal–ligand interface, ligand layer) is required (redesign), and 
+a new iteration initiates as many times as necessary.
+
+Nature Reviews Materials
+Review article
+of an electroaffine reactant. Three O2 molecules did indeed adsorb to 
+the accessible Au sites, and each was activated via electron transfer 
+(Fig. 4d). Hence small Au-based MPCs, protected even by bulky mol-
+ecules, can retain a proportionally large number of accessible Au sites 
+for electron-transfer reactions.
+The concept of modifying the MPC ligand layer to increase the 
+accessibility of reactants to metal sites has since been illustrated 
+further84,85. An Au-based MPC protected with phosphine and dipyri-
+dylamido (dpa) ligands, [Au23(Ph3P)10(dpa)2Cl]2+, shows an excellent 
+performance towards selective aerobic oxidation of benzyl alcohol to 
+benzaldehyde84. Thirty-five per cent of the catalytically active Au sites 
+(8 out of 23 Au atoms) are accessible, as confirmed via titration by the 
+fluorescent 2-NT molecule. The MPC is also very chemically stable, 
+attributable to the negatively charged multidentate dpa ligands and to 
+an electronically closed-shell 18-electron configuration86. Similarly, two 
+Au MPCs with a mixed layer of NHC and phenylacetylide (PA) ligands, 
+[Au16(NHC)5(PA)3Br2]3+ and [Au17(NHC)4(PA)4Br4]+ (ref. 85), are effective 
+catalysts for hydroamination of alkynes at 65 °C in air. Both of these 
+MPCs have a common 13-atom icosahedral core and feature single or 
+paired organometallic NHC–Au(i)–PA molecular species in the ligand 
+layer, which expose three or four Au sites, respectively (Fig. 4e). They 
+also have an electronically closed-shell eight-electron configuration. 
+DFT calculations suggested a reaction mechanism that involves both 
+an Au(0) atom in the metal core and an Au(i) atom in the ligand layer, 
+rendering these MPCs interesting hybrids between heterogeneous and 
+homogeneous catalysts.
+Modifying the core electronic structure by ligands. The early sug-
+gestions61 of modifying the electronic structure of the metal core for 
+catalytic reactions were finally applied87 to prepare two Ag MPCs, 
+[Ag21(L)3(L′)6]+ and [Ag21(L′)10(L″)6]+, with a similar icosahedral core 
+geometry but differing ligand layers. Here, L is a two-electron-with-
+drawing thiacalixarene, L′ is a one-electron-withdrawing phosphi-
+nate, and L″ is a one-electron-withdrawing alkynyl ligand. Applying 
+the count for the superatom electrons (Box 3), [Ag21(L)3(L′)6]+ has a 
+closed-shell eight-electron configuration (21 − (3 × 2) − 6 − 1 = 8), and 
+[Ag21(L′)10(L″)6]+ is a four-electron system (21 − 10 − 6 − 1 = 4). These 
+electronic structures were also identified by DFT visualizations of the 
+frontier orbitals. The eight-electron MPC is highly stable under ambi-
+ent light, in toluene solution at 90 °C and even in oxidative conditions. 
+The four-electron MPC, though less stable at elevated temperatures 
+and in oxidative conditions, is remarkably more active in catalysing 
+the reduction of 4-nitrophenol. DFT calculations attributed the higher 
+activity to the higher binding energy of the reactant to the open-shell 
+four-electron system. Thus, a suitable balance between MPC stability 
+and catalytic activity can be tuned by chemical variations in the ligand 
+layer, keeping the same overall atomic structure but modifying the 
+electronic structure of the metal core.
+Weak interligand interactions. In addition to creating accessible metal 
+sites for catalytic reactions at the core surface, the specific ligands used 
+can substantially affect the characteristics of the ligand layer, modify 
+the chemical stability of the MPCs and tune the MPC–environment 
+a
+b
+1–3 nm
+Environment–nano
+interface
+Metal core
+Metal–ligand interface
+Ligand layer
+Metal core
+Ligand dynamics and charge distribution
+Well-defined sites
+for functionalization
+Well-known metal–ligand interface
+ n : no. of metal atoms 
+m : no. of ligands 
+q : charge
+[MnLm]q
+Fig. 3 | Schematic representation of the layered structure of atomically precise 
+metal nanoclusters. a, A representative model of a partially ligand-exchanged 
+Au102(para-mercaptobenzoic acid)43(RGD peptide)1 nanocluster with two proteins 
+attached to its surface is depicted with the layered structure that can be studied at 
+atomistic level through combined computational–experimental investigations. 
+The three inner layers represent the well-known structure of atomically precise 
+monolayer-protected metal clusters (MPCs), consisting of a metal core, metal–
+ligand interface and ligand layer. The external layer represents the interface 
+between an MPC and its surrounding environment. b, Precise features that can be 
+studied and controlled at different levels of the MPC structure are highlighted.
+
+Nature Reviews Materials
+Review article
+interactions. Water-soluble Au MPCs synthesized with different iso-
+mers of mercaptobenzoic acid (MBA) offer an interesting example. 
+Because the MBA’s carboxylic acid group can be in an ortho (o), meta (m) 
+or para (p) position (Fig. 4c), Au25 nanoclusters protected by 18 o-, m- or 
+p-MBA molecules have been synthesized to investigate their chemical 
+stabilities88. The stability of each was studied via collision-induced dis-
+sociation in the gas phase, where the measure of the stability was taken 
+as the threshold collision energy that induced cluster fragmentation. 
+p-MBA-protected nanoclusters were the most stable, followed by 
+m-MBA- and o-MBA-protected isomers. The trend was discussed in 
+h
+a
+b
+Doping with metals (M)      :
+Symmetry B
+Symmetry A
+Cu MPCs
+Addition of H–
+Doping with hydrides (H–)    :
+CuxHy MPCs
+AuxMy MPCs
+c
+d
+e
+f
+meta position
+ortho position
+OH
+O
+HO
+O
+OH
+O
+O
+OH
+HO
+O
+para position
+OH
+O
+OH
+O
+HO
+O
+g
+Support B
+Support A
+Fragmentation
+Ligand
+migration
+Energy (eV)
+Energy (eV)
+Route 1 involves one H– from the cluster
+0.82
+0.72
+0.72
+0.85
+0.43
+Route 2 involves two H– from the cluster
+CuH10
+CuH10
+CuH10
+CH3OH
+CuH10
+HCHO
+H2
+CuH9–OCH3
+H2
+CuH9–OCH3
+CuH10
+CuH10
+HCHO
+CH3OH
+CuH10
+CuH8
+CuH8
+CuH8
+CuH9–OCH3
+Fragmentation on SiO2
+Ligand migration on CeO2
+Site 2
+Site 1
+Site 3
+Paired
+OM motif
+Paired
+OM motif
+Isolated OM motif
+OH
+O
+O
+HO
+HO
+O
+Flat
+Standing up
+Interligand H-bond
+O
+O
+H
+Metal core
+Ligand layer
+Support material
+
+Nature Reviews Materials
+Review article
+terms of the increased strain at the Au–S interface created by the 
+m-MBA and particularly o-MBA ligands, where the COOH group can 
+interact with the Au core and, if deprotonated, can increase the internal 
+Coulomb repulsion in the ligand layer and at the metal–ligand interface, 
+leading to a less stable chemical structure.
+The orientation of the COOH groups relative to each other can also 
+regulate weak interactions in a biological environment, as shown by 
+the interactions between (o/m/p)-MBA-protected Au nanoclusters and 
+biological nanopores made from α-haemolysin89. Nanopore sensing, 
+which can detect variations in the properties of passing nanoclus-
+ters at the single-molecule level, implied that interactions between 
+m-MBA ligands renders those clusters more stable than the analogous 
+p-MBA-protected nanoclusters.
+m-MBA-protected Au MPCs can also have slightly different compo-
+sitions and a lower-symmetry metal core structure than their p-MBA-
+protected counterparts90–92. Three distinct, stable m-MBA-protected 
+Au MPCs with between 68 and 144 Au atoms have been character-
+ized by low-dose electron microscopy. Exposure of these MPCs to 
+thiolated DNA oligomers and a single-chain antibody fragment with 
+surface-exposed thiol groups led to irreversible attachment of the 
+biomolecules to the cluster, as revealed by electrophoresis analysis. 
+m-MBA-protected Au MPCs thus offer an interesting system with excel-
+lent overall chemical stability but simultaneous reactivity to a few 
+thiol-containing biological molecules. These properties make these 
+MPCs useful as high-resolution markers in biological imaging93.
+To understand the basis of the reactivity of m-MBA-protected Au 
+MPCs towards biomolecules, the structure and chemical properties of 
+the ligand layer of m-MBA-protected Au68 and Au144 nanoclusters were 
+investigated in detail by both experimental (NMR, UV–vis and infrared 
+spectroscopy) and computational (DFT, MD simulations) methods94. 
+The nanocluster models were based on electron microscopy data 
+of the Au core90,92, while a heuristic algorithm was used to build the 
+ligand layer around the core60. Both Au68 and Au144 nanoclusters had a 
+low number of ligands, about 32 and 40, respectively, which for Au144 
+in particular is remarkably few when compared with the well-known 
+organo-soluble counterpart Au144L60 (L = thiolate or alkynyl)95–99. One- 
+and two-dimensional NMR spectroscopy indicated that the ligand layer 
+of both Au68 and Au144 has only C1 symmetry, unlike the C2 ligand sym-
+metry of the crystallographically known Au102(p-MBA)44 (ref. 13). MD 
+simulations showed that m-MBA ligands can have several conforma-
+tions in the ligand layer at room temperature, some of which were 
+also detected in infrared experiments. Three conformations were of 
+particular interest: a ‘flat’ conformation in which the phenyl ring has a 
+pi⋯Au interaction with the core; a ‘standing up’ conformation in which 
+the carboxylic acid OH group points towards an Au atom in the core, cre-
+ating an O=C–OH⋯Au interaction; and a conformation producing an 
+interligand hydrogen bond, O=C–OH⋯O=C–OH (Fig. 4f). These three 
+ligand conformations, not generally found in p-MBA-protected nano-
+clusters, can explain the relatively low ligand count of Au144(m-MBA)~40, 
+because they are able to protect a larger unit area of gold atoms than a 
+neatly packed p-MBA overlayer. These observations also suggest that 
+the previously reported ligand exchange reactions of m-MBA-protected 
+nanoclusters with thiol-containing biomolecules91 are in fact ligand 
+addition reactions, in which reactive Au sites become exposed to thiol 
+binding of the incoming ligand when the weaker pi⋯Au or O=C–OH⋯Au 
+interactions are momentarily broken by room-temperature ligand 
+dynamics. Interestingly, the MD simulations94 detected just a few of 
+these weak interactions per nanocluster, which would naturally explain 
+the low count of extra ligands bound in the earlier experiment91 after 
+saturation of all weakly protected Au sites by an Au–S bond. The weak 
+pi⋯Au or O=C–OH⋯Au interactions have given rise to suggestions 
+of new ‘Venus flytrap’ catalytic mechanisms in m-MBA-protected Au 
+nanoclusters, whereby ligand dynamics can open catalytically active, 
+low-coordinated Au sites for inbound reactants100,101. In Au68(m-MBA)32, 
+these low-coordinated Au sites have also been found by DFT-MD 
+simulations to catalyse preferential formation of an unsaturated 
+alcohol, 1-propenol, over the two other possible reaction products 
+(propanal and 2-propenol) in selective acrolein hydrogenation101. 
+Fig. 4 | Main strategies to enhance the catalytic properties of atomically 
+precise metal nanoclusters. a,c,g, Schematic illustrations of the three levels of a 
+monolayer-protected metal cluster (MPC) structure that can be tuned to exploit 
+their catalytic properties: metal core, ligand layer and interface with the support. 
+a, Addition of hydrides (H−) to Cu MPCs are essential to stabilize the atomic 
+structure of the metal core and are an example of single-site hydrogenation 
+catalysts (top). The fixed number of core metal sites and the fixed atom geometry 
+of MPCs allow one-by-one doping of the metal core (bottom). b, Density 
+functional theory (DFT) energy profiles of route 1 (one H− from the cluster) and 
+route 2 (two H− from the cluster) for the catalytic hydrogenation of HCHO by  
+[Cu25H10(SCHCl2)18]3–. Cu25 is depicted as thin brown sticks (ligand layer omitted for  
+clarity). Hydrides from the cluster and hydrogens from molecular H2 are shown 
+as cyan and blue spheres, respectively. Reactant molecules are shown as spheres 
+using the conventional colour code: carbon, grey; oxygen, red; hydrogen, white. 
+c, Specific ligands with different substitution pattern (ortho, meta, para) dictate 
+the chemical stability of MPCs and their interactions with the surrounding 
+environment as a consequence of the interactions formed in the ligand layer 
+and at the metal–ligand interface. d, DFT-optimized structure of Au11L5(O2)3 
+(L = calix(4)arene) complex showing the three accessible Au sites for electron-
+transfer reactions provided by the bulky ligand layer. Au11 core is depicted as 
+golden spheres. Molecular oxygen (O2) is shown as red spheres. Calix(4)arene 
+ligands are shown as thin sticks using the conventional colour code: carbon, grey; 
+oxygen, red; phosphorus, orange; hydrogen, white. e, Total structure of [Au16(NH
+C)5(PA)3Br2]3+ (NHC = N-heterocyclic carbene, PA = phenylacetylide) highlighting 
+the single or paired organometallic (OM) NHC–Au(i)–PA motifs in the ligand 
+layer. The Au13 icosahedral core is depicted as golden spheres. Au(i) atoms in the 
+organometallic motifs are highlighted as yellow spheres. NHC (sticks) and PA 
+(balls and sticks) ligands in the OM motifs are displayed with the conventional 
+colour code: carbon, grey; nitrogen, blue; hydrogen, white; bromine, cyan. 
+f, Representative ligand–metal and interligand interactions found in the 
+molecular dynamics simulations of meta-mercaptobenzoic acid (MBA)-protected 
+Au68 and Au144 nanoclusters (from left to right): syn lying flat on the core, anti close 
+to gold core, and interligand hydrogen bond. Colour code in simulated structures: 
+gold, golden; carbon, grey; oxygen, red; sulfur, yellow; hydrogen, white. g, The 
+support material in MPCs as heterogeneous catalysts plays a crucial role in 
+tuning their catalytic activity. Interaction mechanisms between the MPCs and 
+support, such as ligand migration or oxidative fragmentation, can be observed 
+depending on the acidic nature of the support. h, Structure of [Au9(PPh3)8]3+ 
+(PPh3 = triphenylphosphine) accompanied by the lowest-energy geometries 
+obtained from DFT for Au9 and PPh3 formed by ligand migration on the ceria 
+(CeO2) surface (bottom left panels) and AuPPh3 species formed by oxidative 
+fragmentation on the silica (SiO2) surface (bottom right panel). Colour code: gold, 
+golden; carbon, grey; phosphorus, orange; oxygen, red; hydrogen, white; cerium, 
+ice blue; silicon, magenta. Part b adapted from ref. 73, CC BY 4.0. Part d adapted 
+with permission from ref. 83. Copyright 2013 American Chemical Society. Part e 
+adapted with permission from ref. 85. Copyright 2022 American Chemical Society. 
+Part f adapted with permission from ref. 94. Copyright 2017 American Chemical 
+Society. Part h adapted with permission from ref. 110, Wiley-VCH.
+
+Nature Reviews Materials
+Review article
+This working concept could be further used in selective hydrogenation 
+of unsaturated hydrocarbons to industrially important chemicals.
+Effects of the support
+The above examples of MPC catalysts active in solvent phase form an 
+interesting hybrid case between homogeneous and heterogeneous 
+catalysis. However, the vast majority of MPC catalysis research is 
+conducted in truly heterogeneous systems; that is, the nanoclusters 
+are supported by (usually) oxide materials, and the reactants and 
+products are in the gas phase. Au MPCs supported by oxides are active 
+in several oxidation reactions, such as oxidation of carbon mono­
+xide17,102,103, cyclohexane104,105, aerobic alcohol106 and styrene107,108. 
+Preparation of heterogeneous MPC/oxide catalysts for the active stage 
+usually requires heat treatment, the effects of which on the atomic 
+structure of the catalyst are difficult to ascertain. Consequently, 
+it is important to investigate the interaction between an MPC and 
+its support to better understand the mechanisms underlying MPC 
+catalytic activity.
+X-ray spectroscopic studies of Au38(SR)24 on ceria (CeO2) and 
+alumina (Al2O3)109 at various temperatures showed that the MPCs 
+lose, at least partially, the SR ligand layer at elevated temperature 
+and oxidative conditions, as confirmed by the detection of sulfur-
+containing species on the oxide. This observation is crucially important 
+because the ligand’s migration to the support changes the catalyst 
+properties in at least two ways: it uncovers unprotected, reactive 
+Au atoms or surface facets for reactants to access and, at the same 
+time, modifies the local electronic structure of the oxide close to the 
+Au MPC. Ultrasmall PR3-protected Au9 nanoclusters were also inves-
+tigated on a range of supports (silica, SiO2; titania, TiO2; oxidized gra-
+phitic carbon; and ceria) having either Bronsted acid (proton donor) 
+or Lewis acid (electron acceptor) character110. X-ray spectroscopy indi-
+cated that on the Bronsted acid supports, silica and oxidized carbon, 
+the nanoclusters fragment into Au–PR3 complexes after heat treat-
+ment at 120 °C (silica) and 60 °C (carbon). However, on the reducible 
+supports (titania and ceria), the phosphine ligands ‘peel off’ from the 
+cluster and migrate to the surface at 120 °C, leaving intact Au9 nano-
+clusters behind. DFT calculations confirmed both these mechanisms 
+at respective conditions (Fig. 4g,h).
+Biomedical applications
+MPCs are advantageous for biomedical applications owing to their 
+facile synthesis, excellent biocompatibility, superior stability, efficient 
+renal clearance and special fluorescence properties8,111. Water-soluble 
+and monodisperse MPCs are produced through relatively simple and 
+direct synthetic strategies without using toxic solvents (green meth-
+ods)91,112,113. Moreover, the biocompatibility of some water-soluble MPCs 
+can be further improved by taking advantage of their facile surface 
+modification1,114. This surface versatility makes MPCs ideal materials 
+for diverse applications, such as biosensing, bioimaging and targeted 
+drug delivery (Fig. 5).
+Conjugation of small colloidal Au nanoparticles to biomolecules 
+or drugs for improving their stability, biocompatibility115 or delivery 
+efficiency116, so-called monolayer-coated Au nanoparticles117, has been 
+shown to be an effective strategy. However, although Au nanoparti-
+cles are considered promising scaffolds for drug, gene and protein 
+delivery applications118, their size and shape variability still make it 
+difficult to control their toxicity119. Fortunately, the concepts learned 
+from Au nano­particles, such as gold–thiol bonding, ligand exchange 
+reactions and ligand-dependent stability, inform the design and 
+functionalization of diverse MPCs and thus offer a controlled approach 
+for modifying the physicochemical properties of new biocompatible 
+materials.
+Despite advances made using MPCs as theranostic (diagnostic 
+and therapeutic) agents120,121, the absence of structure elucidation in 
+many studies prevents the determination of unambiguous structure–
+property relationships. Thus, here we describe representative cases in 
+which the close connection between computation and experiments 
+has enabled a comprehensive characterization of different parameters 
+of atomically precise MPCs that are usually overlooked in the design of 
+functionalized nanomaterials for bioapplications, such as control 
+of ligand density and dynamics of the ligand layer. We also discuss 
+the enormous potential offered by MPCs for understanding in more 
+detail the nano–bio interactions through interdisciplinary strategies.
+The iconic water-soluble Au102(p-MBA)44
+Among biocompatible MPCs, Au102(p-MBA)44 has become the most 
+emblematic system explored through combined computational–
+experimental studies. In 2016, a complete interpretation of 1H and 13C 
+NMR spectra was achieved through a combination of 2D NMR spec-
+troscopy, DFT calculations and MD simulations13. Each of the 44 proton 
+signals coming from the ligand layer was assigned using DFT and based 
+on the crystal structure of the nanocluster29. In addition, five ligand 
+environments were identified, representing the interactions that occur 
+in the metal–ligand interface (ligand-to-sulfur interaction), between 
+the p-MBA ligands and the metal core (ligand-to-gold interaction), 
+and between neighbouring p-MBA ligands (‘isolated’ ligand, face-to-
+face and edge-to-face aromatic interaction). MD simulations, in turn, 
+described the ligand dynamics of the nanocluster in water. Ligand 
+mobility and orientation were monitored over 30 ns and showed 
+remarkable differences with respect to the initial positions13. This study 
+was later complemented with a detailed characterization of the surface 
+charge distribution of Au102(p-MBA)44 by using acid–base and infrared 
+titration with constant pH MD simulations122. While the experimental 
+methods provided essential information about the stability and opti-
+cal properties of the nanocluster based on the protonation state of 
+the ligand layer, constant-pH MD simulations were useful to deter-
+mine the pKa of the 44 individual ligands (in the range of 5.18–7.58) 
+and identify a unique non-uniform surface charge distribution that 
+depends on ligand position. Such multidisciplinary approaches reveal 
+fine details of the internal structure and dynamics of the ligand layer 
+of these atomically precise nanomaterials, which is essential for 
+site-selective biofunctionalization strategies.
+Bioimaging and biosensing
+Labelling biomolecules. The first study showing the outstanding 
+potential of noble metal nanoclusters as stable probes for labelling bio-
+logical structures dates back to the early 1980s123. In this seminal work, a 
+phosphine-protected Au11 nanocluster was used to mark the carbohydrate 
+moieties of the glycoprotein haptoglobin, such that the haptoglobin– 
+haemoglobin complex could be visualized with high resolution via 
+scanning transmission electron microscopy123. Studies since have dem-
+onstrated that metal nanoclusters can be conjugated to almost any small 
+molecule including peptides, lipids and nucleic acids124 and, unlike col-
+loidal metal nanoparticles, exhibit high stability, excellent penetration 
+into tissues, uniform size and absence of aggregation124–126. Thus, MPCs 
+have become a promising alternative to traditional unstable and toxic 
+contrast agents for bioimaging127. Au102(p-MBA)44 has been used for 
+labelling enteroviruses through different functionalization strategies: 
+
+Nature Reviews Materials
+Review article
+for instance, hydroxylated maleimide linkers were covalently attached to 
+the cluster’s p-MBA ligands to target the cysteine residues at the capsid 
+of echovirus 1 (EV1) and Coxsackievirus B3 (CVB3)128. The MPCs made the 
+viral surfaces clearly recognizable by transmission electron microscopy 
+(TEM) while preserving the viruses’ morphology and infectivity. Simi-
+larly, Au102(p-MBA)44 MPCs functionalized with a derivative of the antiviral 
+compound pleconaril, kirtan1, could recognize the viral capsid of EV1 and 
+Coxsackievirus A9 (CVA9) by replacing the natural pocket factors in the 
+hydrophobic pockets of the viruses129. TEM images showed that kirtan1-
+functionalized MPCs bound to some of the 60 hydrophobic pockets in 
+the capsid of EV1 and CVA9 formed pentamer-like symmetries without 
+altering viral infectivity129 (Fig. 5a,d). All-atom MD simulations and non-
+equilibrium free energy calculations at the atomic level130 showed that 
+the binding affinity of the MPC–virus complex is pH-sensitive: a half-
+deprotonated p-MBA ligand layer enhances the binding affinity between 
+the MPCs and the hydrophobic pocket factors of the virus, whereas a fully 
+deprotonated state does not affect the complex binding interactions. 
+This example illustrates how interdisciplinary strategies can identify 
+specific parameters of MPCs that can be controlled to enhance desired 
+features and whose adaptation is essential for higher-level tests, such 
+as studies on the in vivo virus uncoating.
+Tracking intracellular pH changes. Hybrid nanomaterials containing 
+Au MPCs have also been designed for biosensing. For example, an opti-
+cal reversible intracellular pH sensor has been reported by covalently 
+linking through esterification a fluorescent dye molecule (azadioxatri-
+angulenium) to the surface of Au102(p-MBA)44 MPCs131. A combination 
+of different methods, such as UV–vis spectroscopy, TEM, confocal 
+microscopy and MD simulations, demonstrated that the pH-dependent 
+protonation state of the MPCs’ ligand layer regulates the fluorescence 
+intensity inside living cells. That is, when the non-fluorescent MPC–dye 
+complex (the proximity of the dye to the MPC quenches its fluorescent 
+intensity) enters the cells and is exposed to acidic conditions, the com-
+plex dissociates via hydrolysis of the ester bond, greatly changing the 
+a
+Virus
+d
+b
+e
+f
+c
+Functionalized MPCs
+for virus recognition
+Labelling biomolecules
+Tuning the photoluminescence
+by biomolecule conjugation
+Tuning the photoluminescence
+by ligand modification
+Organothiolate-
+protected MPCs
+Site-speciﬁc
+conjugation
+Capsid-
+targeting
+ligand
+Water-soluble
+ligand
+20 nm
+Wavelength (nm)
+Wavelength (nm)
+Wavelength (nm)
+Wavelength (nm)
+Ligand
+modification
+Enhanced PL by
+intermolecular
+interactions
+Glutathione
+Water
+NIR-I emission
+NIR-II emission
+Glutathione-
+protected MPCs
+Protein
+conjugation
+Protein
+Cys
+MPC
+MPC–protein
+Glutathione MPC
+Organothiolate MPC
+Absorbance (a.u.)
+Intensity (a.u.)
+800
+300
+900
+600
+150
+0
+0
+0.5
+Absorbance (a.u.)
+Rel. PL intensity (a.u.)
+1,100
+500
+1,400
+800
+2,500
+0.20
+0
+0
+Fig. 5 | Atomically precise metal nanoclusters for bioimaging and biosensing. 
+a–c, Schematic illustrations of selected strategies of surface engineering of 
+monolayer-protected metal clusters (MPCs) for potential uses in bioimaging 
+and biosensing. a, Water-soluble Au MPCs functionalized with a capsid-targeting 
+ligand are used to label specific components of the surface of enteroviruses. 
+b, Photoluminescence (PL) of organothiolate-protected Au MPCs is enhanced 
+when the ligand layer is replaced with water-soluble molecules such as glutathione 
+that rigidify the MPC surface by intermolecular interactions with the surrounding 
+environment. c, Luminescent MPCs with second near-infrared (NIR-II) emissions 
+are obtained through the conjugation of water-soluble Au MPCs with specific 
+free cysteine (Cys) residues of serum albumin protein. d, Transmission electron 
+microscopy images of kirtan1-functionalized MPC–echovirus 1 (EV1) conjugates 
+(top panels) and a model structure of EV1 with red spheres denoting the positions 
+of the hydrophobic pocket entrances (bottom panels). e, UV–vis absorption 
+(left) and PL spectra (right) of Au18(GSH)14 (GSH = glutathione) MPCs in water 
+and Au18(SC6H11)14 MPCs in toluene. Optical absorption profiles indicate that 
+both Au MPCs have a similar structural framework. GSH-protected MPCs show 
+higher (and redshifted) emission intensity than their organothiolate-protected 
+counterparts between 650 and 850 nm. f, UV–vis absorption (left) and PL 
+spectra (right) of Au25(p-MBA)18 (p-MBA = para-mercaptobenzoic acid)  
+and Au25–BSA (BSA = bovine serum albumin) MPCs in water. Similar optical 
+absorption features for both MPCs demonstrate that the structure of Au25 core 
+is not altered after the protein conjugation. PL signal is enhanced at 850 and 
+1,050 nm (excitation at 700 nm) after the conjugation of Au25 MPCs to BSA. 
+Part d reprinted with permission from ref. 129, Royal Society of Chemistry. Part e 
+reprinted with permission from ref. 134. Copyright 2018 American Chemical 
+Society. Part f adapted with permission from ref. 138, Wiley-VCH.
+
+Nature Reviews Materials
+Review article
+protonation state of the ligand layer (from fully deprotonated to par-
+tially or fully protonated) and modifying the electrostatic interaction 
+strength with the dye, leading to a recovery of the fluorescence intensity. 
+This work opens new avenues for developing highly sensitive pH sensors 
+to track intracellular processes in a wide pH range.
+Enhancing the photoluminescence. The strong photoluminescence 
+(PL) of MPCs also makes them an ideal nanomaterial for bioimaging and 
+biosensing132,133. Among thiolate ligands, glutathione (GSH) deserves 
+special recognition for its ability to enhance the PL quantum yield of 
+Au MPCs134–136. Although the crystal structures of GSH-protected Au 
+MPCs are not yet available, considerable computational efforts have 
+been devoted to predicting their geometric structure, as the particu-
+lar ligand arrangement and its pH-dependent charge distribution 
+strongly dictate PL properties132,137. In 2018, the first structure-based 
+explanation for the enhanced PL was suggested134. Using a model of 
+Au18(GSH)14 MPCs and combining synchrotron X-ray absorption spec-
+troscopy with quantum mechanics/molecular mechanics simulations, 
+it was observed that the ligand layer encapsulates the metal core via 
+intermolecular interactions. Specifically, terminal carboxylic groups 
+of the GSH ligands form hydrogen bonds with water molecules, which 
+rigidifies the MPC surface against potential structural changes. In 
+addition, Au and S atoms in the metal–ligand interface exhibit a higher 
+polarization (+0.38e and −0.38e for Au and S, respectively) compared 
+with their organothiolate counterparts (+0.35e and −0.35e), and the 
+aqueous environment induces a charge transfer from the side chains 
+of GSH ligands to the metal–ligand interface (−0.1e and −0.3e to Au and 
+S, respectively), which may explain the stronger emission properties 
+of GSH-protected than organothiolate-protected Au MPCs (Fig. 5b,e).
+PL of Au25(p-MBA)18 MPCs can be modulated through site-specific 
+conjugation with bovine serum albumin (BSA) protein, as shown by a 
+multidisciplinary study combining MS, small-angle X-ray scattering and 
+DFT calculations138. The substitution of one p-MBA ligand with a specific 
+free cysteine residue (Cys34) of BSA results in an almost fivefold increase 
+in PL quantum yield (from 0.15% to 0.7%) and a redshift in the second 
+near-infrared (NIR-II) window compared with the unmodified Au25(p-
+MBA)18 MPCs (Fig. 5c,f). Interestingly, neither the Au25 nanocluster nor 
+the protein changed greatly in structure after conjugation. Given their 
+emission between 700 and 1,300 nm and the preserved biocompat-
+ibility of the different components, the conjugates are highly suitable 
+for in vivo deep tissue imaging and photoactivation applications. The 
+observed PL enhancement in the Au25–BSA conjugates was thought to 
+involve a strong contribution of charge-transfer states in the metal–
+ligand interface and a reinforced intersystem crossing owing to BSA’s 
+rigidification of the ligand layer138, consistent with earlier observations 
+linking the ligand layer and surface interactions to fluorescence genera-
+tion of MPCs44. Although similar enhancement strategies had previously 
+used the same protein139,140 or other biomolecules (such as cyclodex-
+trin)141, the reported imprecise structures (that is, no precise molecular 
+formula) impeded the elucidation of accurate structure–fluorescence 
+relationships. Thus, reports like the one described above with a focus on 
+the specific localization of MPCs within bioconjugates are encouraging 
+and promote the rapid and reproducible development of a new class of 
+fluorophores with adjustable PL properties142.
+Drug delivery
+Nanoscale drug delivery systems have physical and chemical prop-
+erties that allow a controlled and sustained release of drugs, mak-
+ing them advantageous for treating diverse chronic and infectious 
+diseases, including cancer143. In these systems, the drug is protected 
+from premature degradation (that is, before reaching the target site) 
+and clearance via their encapsulation with synthetic or natural nano-
+materials conferring, for example, higher solubility of hydrophobic 
+drugs, increased bioavailability and, consequently, an improved phar-
+macological effect143. Despite lots of research into these systems, some 
+fundamental questions raised 15 years ago remain unanswered144,145. 
+For example, what are the physicochemical factors governing the tox-
+icity and biodistribution of nanosystems146? How do these systems 
+interact with biomolecules at the intra- and extracellular levels14,147? 
+These questions remain open, mainly owing to the use of conventional 
+nanomaterials that are not amenable to detailed atomic-level charac-
+terization and to the lack of interdisciplinary approaches to develop 
+preliminary screening tools that support the decision-making process. 
+There is an urgent need, therefore, for a shift in focus towards the use of 
+atomically precise nanomaterials like MPCs that can be designed with 
+greater control and adjusted at any stage of the experimental phase.
+Controlling the ligand density. Targeted drug delivery nanosystems 
+are among the most promising therapies148,149 because their surface 
+functionalities guide therapeutic cargo selectively to the target cell 
+and reduce the damage to healthy tissues. However, it is not enough 
+just to attach targeting molecules to the nanocarriers; the exact num-
+ber of these molecules must also be controlled to optimize delivery 
+performance150. This parameter is often overlooked in the design of 
+conventional targeted nanosystems, whose reported size is generally a 
+range from tens to hundreds of nanometres, without any details about 
+the number of surface-conjugated ligands. As an exception, colloidal 
+Au nanoparticles were conjugated with exactly one or two antibodies 
+(trastuzumab) that recognize human epidermal growth factor receptor 2 
+(HER2). The number of conjugates had contrasting effects in in vitro 
+and in vivo testing151: nanoparticles with two antibodies were moder-
+ately better at in vitro targeting than those with one antibody, whereas 
+in vivo targeting efficacy and renal clearance were clearly improved 
+for one-antibody nanoparticles compared with two-antibody nano-
+particles151. Even though the number of attached ligands was precisely 
+controlled, aggregates and polydispersity observed by TEM indicated 
+that the nanoparticles still lacked uniformity151.
+In this sense, MPCs serve as ideal platforms to control the surface 
+composition of nanosystems with higher precision and carefully 
+study the influence of ligand ratio on their therapeutic functionality — 
+while maintaining the uniformity of the portion that will act as 
+a carrier. Our group computationally designed and characterized a 
+set of Au144(p-MBA)60-based nanosystems, featuring both therapeutic 
+and targeting ligands, to be potentially used as combination therapy in 
+gastric cancer treatment152 (Fig. 6). All-atom MD simulations suggest 
+that the ratio between the therapeutic ligand (chemotherapy drugs 
+or signalling pathway inhibitors) and targeting ligand (arginine– 
+glycine–aspartic acid (RGD) peptides) has a key role in achieving an 
+optimal structural conformation of the ligand layer, which deter-
+mines the targeting ability of the nanosystem152. The interligand 
+and ligand–metal interactions observed in the 28 tested hybrid 
+nanosystems suggest that it cannot be assumed, as a general rule, 
+that attaching more targeting ligands to the nanosystem always 
+improves cancer cell targeting; targeting efficacy depends on a deli-
+cate balance between the molecular properties and the ratio of the 
+ligands present on the nanosystem surface152. Although it may not 
+be as straightforward to achieve this level of control experimentally, 
+the detailed structural information that has been collected through 
+
+Nature Reviews Materials
+Review article
+computational–experimental investigations (that is, identification 
+of ligand symmetry sites, molecular composition, titratable sites) is 
+useful for controlling ligand exchange sites11.
+Understanding the nano–bio interface. Biomolecules such as pro-
+teins153, lipids and nucleic acids154–156 influence the surface chemis-
+try of nanoscale drug delivery systems when they come into contact 
+with blood, a process known as biomolecular corona formation14. The 
+corona is highly dynamic, alters the pharmacological and toxicologi-
+cal profiles of the nanosystems, and hence modulates their potential 
+therapeutic functionalities157,158. Although this phenomenon has been 
+known for decades157, it is still hardly understood, and most studies 
+report variations at the in vitro, ex vivo and in vivo levels157,159,160 without 
+detailing how the nanosystem and corona interact with each other. 
+This uncertainty is understandable given the variety of proteins pre-
+sent in the bloodstream and the use of polydisperse, variable shape 
+and large size (hundreds of nanometres) nanomaterials, which make 
+it very difficult to standardize procedures and thus begin to com-
+prehend the molecular mechanisms underlying corona formation. 
+Therefore, the well-defined internal structure of MPCs, aiding accurate 
+computational models to support the experimental characterization, 
+may help improve understanding in the field.
+So far, owing in part to the difficulty of forming a high-quality 
+single crystal, only three water-soluble MPCs have been revealed by 
+SCXRD: Au102(p-MBA)44, Au146(p-MBA)57 (refs. 24,29) and Ag44(p-MBA)30 
+(ref. 161). However, as described above, other analytical tools, such as 
+NMR spectroscopy162 and low-dose electron microscopy90,92, have 
+also contributed substantially to their in-depth characterization, 
+combined in most cases with accurate DFT-based predictions90,96. 
+Meanwhile, the free access to crystal structures of biological macro-
+molecules deposited in robust repositories such as the Protein Data 
+Bank (PDB)163 allows several combinations of biomolecules to be gen-
+erated for corona modelling, which when combined with atomically 
+precise nanomaterials enables the design of more realistic nano–bio 
+complexes. MD-based computational studies have simulated such 
+complexes, including those of colloidal metal and polymeric nanopar-
+ticles with some of the most abundant plasma proteins164. Although 
+these approaches are helpful to complement the experimental find-
+ings of the dynamical behaviour of biomolecular coronas, most of 
+them are based on coarse-grained models in which the nanosystem is 
+represented by a standard and simplified structure, mainly to reduce 
+computational cost. However, to what extent is it appropriate to sim-
+plify the system? If the main goal is to better understand mechanisms 
+such as competitive adsorption or desorption of proteins, formation 
+of ‘soft’ and ‘hard’ coronas, or the active role of other metabolites in 
+this process165, then an all-atom description may be a better alterna-
+tive, and therefore the use of atomically precise MPCs could make a 
+difference in terms of structural accuracy of the nano–bio models 
+without duplicating the computational cost. Efficient models of MPCs 
+with corona are now possible, thanks to the availability of accurate and 
+Internalization
+Cancer cells dying
+Cell recognition
+Drug release
+Controlling the ligand ratio
+Successful recognition process for ligand ratio A
+1
+No recognition process for ligand ratio B
+2
+Ligand ratio A
+1:2 Targeting ligand: therapeutic ligand
+Ligand ratio B
+2:1 Targeting ligand: therapeutic ligand
+3
+Overexpressed receptors
+Cancer cells
+Therapeutic
+ligand
+Targeting
+ligand
+Multifunctional
+MPCs
+Hidden
+targeting
+motif
+Intermolecular
+interactions
+Exposed
+targeting
+motif
+Fig. 6 | Atomically precise metal nanoclusters for targeted drug delivery. Schematic illustration of the critical role of ligand ratio in the therapeutic functionality 
+and targeting ability of multifunctional Au monolayer-protected metal clusters (MPCs). The target cell recognition process can be hindered by the intermolecular 
+interactions formed in the MPC’s ligand layer when the proportion of therapeutic and targeting ligands is not optimal.
+
+Nature Reviews Materials
+Review article
+transferable tools for atomistic MD simulations, such as the AMBER-
+compatible force field for thiolate-protected Au MPCs developed 
+in our group166, which allows for investigation of the interactions 
+between functionalized Au MPCs and diverse biomolecules, such as 
+proteins, peptides, nucleic acids and lipids on long timescales (even 
+up to microseconds, with the computing power currently available). 
+Incorporating an all-atom description for the study of new MPCs-based 
+nanosystems promotes the development of preliminary screening 
+tools, which is difficult to achieve with purely coarse-grained models 
+or truncated systems that, although helpful, are more intended to be 
+used as supporting tools.
+From an experimental point of view, the analytical techniques used 
+to describe the essential physicochemical properties (that is, shape, 
+stability, surface charge and size distribution) of nanosystems, such as 
+SCXRD, dynamic light scattering, TEM and UV–vis spectroscopy167, are 
+often not accurate enough to characterize the nano–bio interface168. 
+Interestingly, MS is an outstanding method for accurately character-
+izing the size and ligand composition of MPCs169. MS-based proteomics 
+is commonly used to study the interaction of proteins with the surface 
+of different nanosystems170,171, but it has been a tremendous challenge 
+to extend this method to nano–bio complexes composed of ultrasmall 
+MPCs (1–3 nm diameter). Nevertheless, MS-based techniques, such as 
+MS combined with electrospray, show promise to precisely determine 
+the size, charge state and number of ligands at different stages of the 
+Au MPC synthesis172. When coupled with separation techniques such as 
+liquid chromatography or capillary electrophoresis169, they stand out 
+in identifying and quantifying components of the corona with atomic 
+precision. Coupling MS with computational modelling may elucidate, 
+for example, how exactly the biomolecular corona interferes with cell 
+recognition, and how the nanosystems induce conformational changes 
+in the biomolecules.
+Outlook
+Translational nanomedicine
+The interactions of atomically precise MPCs with biological barri-
+ers, such as nuclear and endosomal membranes, opsonins or efflux 
+pumps173, remain largely uncharacterized. Despite the extremely 
+valuable investigations into the factors influencing the stability and 
+biodistribution of MPCs174,175, some particular methods still need to be 
+examined more rigorously to move the field of atomically precise 
+biocompatible materials forward. For instance, crystallization tech-
+niques should be developed to elucidate the precise structure of new 
+reported monodisperse and water-soluble MPCs113, and more combined 
+computational–experimental strategies should be used. The incorpora-
+tion of the continuous feedback loop (Fig. 2) within the interdisciplinary 
+approaches could help to reduce the current discrepancies found at 
+different levels of experimental design in most nanoscale drug delivery 
+systems145,176. More specifically, during the first stage of computational 
+design, interaction modes between the MPCs-based drug delivery 
+systems and a certain biofluid can be understood through accurate 
+atomistic models. Next, the evaluation stage could be centred on 
+in vitro and ex vivo assays only (for example, therapeutic effect on cell 
+lines including an ex vivo biomolecular corona). The iterative loop can 
+efficiently operate at this level first. Subsequently, after obtaining a 
+successful result for in vitro and ex vivo testing, in vivo models can 
+be incorporated and execute a reinforced improvement cycle. New 
+approaches in this direction could pave the way to clinical validation 
+because more robust evidence is collected in the early stages of the 
+research process.
+Photodynamic therapy
+The ultrasmall size (<3 nm diameter) of the MPC metal core imposes a 
+quantum confinement such that the valence electrons of the metal form 
+a discrete energy spectrum, very distinct from the continuous density 
+of electron states found in large colloidal metal nanoparticles177,178. This 
+quantum confinement is critical for size-dependent photophysical 
+properties of MPCs, including their ability to generate reactive oxygen 
+species for photodynamic therapy applications179. Although MPCs 
+are experimentally known to serve either as photosensitizers or as 
+efficient carriers for photodynamic therapy agents180–184, the exact 
+MPC parameters involved in this property are still a mystery. Therefore, 
+new hybrid computational methodologies at the interface of quantum 
+mechanics methods and classical MD force fields may be useful for 
+understanding how the size, chemical composition or ligand-layer 
+charge distribution may dictate the generation mechanisms for the 
+reactive oxygen species.
+Machine learning
+In recent years, methods using artificial intelligence (AI) and machine 
+learning (ML) have made their way to material research185–188. These 
+methods can aid the analysis of large data sets of various material 
+properties, finding correlations that help to understand and design 
+new materials with tunable properties; and aid the development of 
+efficient force fields for atomic interactions that keep the accuracy 
+close to the quantum mechanical level. Although applications of AI/ML 
+methods to MPC research have been scarce as yet, successful examples 
+include deep-learning-accelerated MPC synthesis189, prediction of new 
+DNA-stabilized Ag nanoclusters with bright NIR fluorescence190, image 
+analysis to match theory and experiment for high-resolution scanning 
+tunnelling microscope images of an MPC organic surface191 and electron 
+microscopy images of MPC supercrystals192, structural predictions of 
+the metal–ligand interface60 and hydride positions inside the metal 
+core193, and developed ML force fields for accelerated simulations of 
+MPC atom dynamics194–196. In the future, ML methods could help to 
+analyse descriptors for chemical reactions at the MPC surface197 or 
+to bridge the timescale and length-scale gaps in dealing with crucial 
+interactions between MPCs and biomolecules198,199. For the latter, devel-
+opment of new hybrid simulation methodology combining ML and MD 
+force fields will be necessary.
+Published online: xx xx xxxx
+References
+1.	
+Tsukuda, T. & Häkkinen, H. (eds) Protected Metal Clusters: From Fundamentals to 
+Applications Vol. 9 (Elsevier, 2015).
+2.	
+Häkkinen, H. The gold–sulfur interface at the nanoscale. Nat. Chem. 4, 443 (2012).
+3.	
+Chakraborty, I. & Pradeep, T. Atomically precise clusters of noble metals: emerging link 
+between atoms and nanoparticles. Chem. Rev. 117, 8208–8271 (2017).
+4.	
+Nasaruddin, R. R., Chen, T., Yan, N. & Xie, J. Roles of thiolate ligands in the synthesis, 
+properties and catalytic application of gold nanoclusters. Coord. Chem. Rev. 368, 60–79 
+(2018).
+5.	
+Kang, X., Li, Y., Zhu, M. & Jin, R. Atomically precise alloy nanoclusters: syntheses, 
+structures, and properties. Chem. Soc. Rev. 49, 6443–6514 (2020).
+6.	
+Du, Y., Sheng, H., Astruc, D. & Zhu, M. Atomically precise noble metal nanoclusters as 
+efficient catalysts: a bridge between structure and properties. Chem. Rev. 120, 526–622 
+(2019).
+7.	
+Fernando, A., Weerawardene, K. L. D. M., Karimova, N. V. & Aikens, C. M. Quantum 
+mechanical studies of large metal, metal oxide, and metal chalcogenide nanoparticles 
+and clusters. Chem. Rev. 115, 6112–6216 (2015).
+8.	
+Matus, M. F. & Häkkinen, H. Atomically precise gold nanoclusters: towards an optimal 
+biocompatible system from a theoretical–experimental strategy. Small 17, 2005499 (2021).
+9.	
+Jin, R. Atomically precise metal nanoclusters: stable sizes and optical properties. 
+Nanoscale 7, 1549–1565 (2015).
+10.	
+Jin, R., Zeng, C., Zhou, M. & Chen, Y. Atomically precise colloidal metal nanoclusters and 
+nanoparticles: fundamentals and opportunities. Chem. Rev. 116, 10346–10413 (2016).
+
+Nature Reviews Materials
+Review article
+11.	
+Heinecke, C. L. et al. Structural and theoretical basis for ligand exchange on thiolate 
+monolayer protected gold nanoclusters. J. Am. Chem. Soc. 134, 13316–13322 (2012).
+12.	
+Ackerson, C. J., Jadzinsky, P. D., Jensen, G. J. & Kornberg, R. D. Rigid, specific, and discrete 
+gold nanoparticle/antibody conjugates. J. Am. Chem. Soc. 128, 2635–2640 (2006).
+13.	
+Salorinne, K. et al. Conformation and dynamics of the ligand shell of a water-soluble 
+Au102 nanoparticle. Nat. Commun. 7, 10401 (2016).
+14.	
+Pearson, R. M., Juettner, V. V. & Hong, S. Biomolecular corona on nanoparticles: a survey 
+of recent literature and its implications in targeted drug delivery. Front. Chem. 2, 108 
+(2014).
+15.	
+Cao, Y. et al. Reversible isomerization of metal nanoclusters induced by intermolecular 
+interaction. Chem 7, 2227–2244 (2021).
+16.	
+Liu, Y. et al. Golden carbon nanotube membrane for continuous flow catalysis. Ind. Eng. 
+Chem. Res. 56, 2999–3007 (2017).
+17.	
+Wu, Z. et al. Thiolate ligands as a double-edged sword for CO oxidation on CeO2 
+supported Au25(SCH2CH2Ph)18 nanoclusters. J. Am. Chem. Soc. 136, 6111–6122 (2014).
+18.	
+Ma, Z., Wang, P., Xiong, L. & Pei, Y. Thiolate‐protected gold nanoclusters: structural 
+prediction and the understandings of electronic stability from first principles 
+simulations. Wiley Interdiscip. Rev. Comput. Mol. Sci. 7, e1315 (2017).
+19.	
+Xie, Y.-P. et al. Silver nanoclusters: synthesis, structures and photoluminescence. Mater. 
+Chem. Front. 4, 2205–2222 (2020).
+20.	 Baghdasaryan, A. & Bürgi, T. Copper nanoclusters: designed synthesis, structural 
+diversity, and multiplatform applications. Nanoscale 13, 6283–6340 (2021).
+21.	
+Akola, J., Walter, M., Whetten, R. L., Häkkinen, H. & Grönbeck, H. On the structure of 
+thiolate-protected Au25. J. Am. Chem. Soc. 130, 3756–3757 (2008).
+22.	 Pei, Y., Gao, Y. & Zeng, X. C. Structural prediction of thiolate-protected Au38: a face-fused 
+bi-icosahedral Au core. J. Am. Chem. Soc. 130, 7830–7832 (2008).
+23.	 Lopez-Acevedo, O., Tsunoyama, H., Tsukuda, T., Häkkinen, H. & Aikens, C. M. Chirality and 
+electronic structure of the thiolate-protected Au38 nanocluster. J. Am. Chem. Soc. 132, 
+8210–8218 (2010).
+24.	 Vergara, S. et al. MicroED structure of Au146(p-MBA)57 at subatomic resolution reveals 
+a twinned FCC cluster. J. Phys. Chem. Lett. 8, 5523–5530 (2017).
+25.	 Liu, C. et al. Observation of body‐centered cubic gold nanocluster. Angew. Chem. 127, 
+9964–9967 (2015).
+26.	 Huang, X. et al. Synthesis of hexagonal close-packed gold nanostructures. Nat. Commun. 
+2, 292 (2011).
+27.	
+Zhu, M., Aikens, C. M., Hollander, F. J., Schatz, G. C. & Jin, R. Correlating the crystal 
+structure of a thiol-protected Au25 cluster and optical properties. J. Am. Chem. Soc. 130, 
+5883–5885 (2008).
+28.	 Heaven, M. W., Dass, A., White, P. S., Holt, K. M. & Murray, R. W. Crystal structure of the 
+gold nanoparticle [N(C8H17)4][Au25(SCH2CH2Ph)18]. J. Am. Chem. Soc. 130, 3754–3755 
+(2008).
+29.	 Jadzinsky, P. D., Calero, G., Ackerson, C. J., Bushnell, D. A. & Kornberg, R. D. Structure of 
+a thiol monolayer-protected gold nanoparticle at 1.1 Å resolution. Science 318, 430–433 
+(2007).
+30.	 Wei, X., Xu, C., Li, H., Kang, X. & Zhu, M. Fabrication of a family of atomically precise silver 
+nanoclusters via dual-level kinetic control. Chem. Sci. 13, 5531–5538 (2022).
+31.	
+Aikens, C. M. Electronic and geometric structure, optical properties, and excited state 
+behavior in atomically precise thiolate-stabilized noble metal nanoclusters. Acc. Chem. 
+Res. 51, 3065–3073 (2018).
+32.	 Chen, T. et al. Crystallization-induced emission enhancement: a novel fluorescent Au–Ag 
+bimetallic nanocluster with precise atomic structure. Sci. Adv. 3, e1700956 (2017).
+33.	 Xie, X. et al. The origin of the photoluminescence enhancement of gold‐doped silver 
+nanoclusters: the importance of relativistic effects and heteronuclear gold–silver bonds. 
+Angew. Chem. Int. Ed. 57, 9965–9969 (2018).
+34.	 Krishnadas, K. R. et al. Metal–ligand interface in the chemical reactions of ligand-
+protected noble metal clusters. Langmuir 35, 11243–11254 (2018).
+35.	 Baksi, A. et al. Isomerism in monolayer protected silver cluster ions: an ion mobility–mass 
+spectrometry approach. J. Phys. Chem. C 121, 13421–13427 (2017).
+36.	 Matus, M. F. et al. A topological isomer of the Au25(SR)18
+− nanocluster. Chem. Commun. 
+56, 8087–8090 (2020).
+37.	
+Kalenius, E. et al. Experimental confirmation of a topological isomer of the ubiquitous 
+Au25(SR)18 cluster in the gas phase. J. Am. Chem. Soc. 143, 1273–1277 (2021).
+38.	 Krishnadas, K. R. et al. Intercluster reactions between Au25(SR)18 and Ag44(SR)30. J. Am. 
+Chem. Soc. 138, 140–148 (2016).
+39.	 Zhang, B., Chen, J., Cao, Y., Chai, O. J. H. & Xie, J. Ligand design in ligand‐protected gold 
+nanoclusters. Small 17, 2004381 (2021).
+40.	 Qian, H. et al. Conversion of polydisperse Au nanoparticles into monodisperse Au25 
+nanorods and nanospheres. J. Phys. Chem. C 113, 17599–17603 (2009).
+41.	
+Yuan, X., Goswami, N., Mathews, I., Yu, Y. & Xie, J. Enhancing stability through  
+ligand-shell engineering: a case study with Au25(SR)18 nanoclusters. Nano Res. 8, 
+3488–3495 (2015).
+42.	 Song, Y. et al. Crystal structure of Au25(SePh)18 nanoclusters and insights into their 
+electronic, optical and catalytic properties. Nanoscale 6, 13977–13985 (2014).
+43.	 Wan, X.-K., Wang, J.-Q., Nan, Z.-A. & Wang, Q.-M. Ligand effects in catalysis by atomically 
+precise gold nanoclusters. Sci. Adv. 3, e1701823 (2017).
+44.	 Wu, Z. & Jin, R. On the ligand’s role in the fluorescence of gold nanoclusters. Nano Lett. 
+10, 2568–2573 (2010).
+45.	 Deng, G. et al. From symmetry breaking to unraveling the origin of the chirality of ligated 
+Au13Cu2 nanoclusters. Angew. Chem. 130, 3479–3483 (2018).
+46.	 Hostetler, M. J., Green, S. J., Stokes, J. J. & Murray, R. W. Monolayers in three dimensions: 
+synthesis and electrochemistry of ω-functionalized alkanethiolate-stabilized gold cluster 
+compounds. J. Am. Chem. Soc. 118, 4212–4213 (1996).
+47.	 Hostetler, M. J., Templeton, A. C. & Murray, R. W. Dynamics of place-exchange  
+reactions on monolayer-protected gold cluster molecules. Langmuir 15, 3782–3789 
+(1999).
+48.	 Wang, Y. & Bürgi, T. Ligand exchange reactions on thiolate-protected gold nanoclusters. 
+Nanoscale Adv. 3, 2710–2727 (2021).
+49.	 Salassa, G., Sels, A., Mancin, F. & Burgi, T. Dynamic nature of thiolate monolayer in 
+Au25(SR)18 nanoclusters. ACS Nano 11, 12609–12614 (2017).
+50.	 Suzuki, W. et al. Control over ligand-exchange positions of thiolate-protected gold 
+nanoclusters using steric repulsion of protecting ligands. J. Am. Chem. Soc. 144, 
+12310–12320 (2022).
+51.	
+Joshi, C. P., Bootharaju, M. S., Alhilaly, M. J. & Bakr, O. M. [Ag25(SR)18]−: the ‘golden’ silver 
+nanoparticle. J. Am. Chem. Soc. 137, 11578–11581 (2015).
+52.	 Harkness, K. M. et al. Ag44(SR)30
+4−: a silver–thiolate superatom complex. Nanoscale 4, 
+4269–4274 (2012).
+53.	 Baksi, A. et al. Reactivity of monolayer protected silver clusters toward excess ligand:  
+a calorimetric study. J. Phys. Chem. C 121, 26483–26492 (2017).
+54.	 Wan, X. et al. A near‐infrared‐emissive alkynyl‐protected Au24 nanocluster. Angew. Chem. 
+Int. Ed. 54, 9683–9686 (2015).
+55.	 Wan, X.-K., Tang, Q., Yuan, S.-F., Jiang, D. & Wang, Q.-M. Au19 nanocluster featuring a 
+V-shaped alkynyl–gold motif. J. Am. Chem. Soc. 137, 652–655 (2015).
+56.	 Wang, Y. et al. Atomically precise alkynyl-protected metal nanoclusters as a model 
+catalyst: observation of promoting effect of surface ligands on catalysis by metal 
+nanoparticles. J. Am. Chem. Soc. 138, 3278–3281 (2016).
+57.	
+Kurashige, W., Yamazoe, S., Kanehira, K., Tsukuda, T. & Negishi, Y. Selenolate-protected 
+Au38 nanoclusters: isolation and structural characterization. J. Phys. Chem. Lett. 4, 
+3181–3185 (2013).
+58.	 Kang, X. & Zhu, M. Metal nanoclusters stabilized by selenol ligands. Small 15, 1902703 
+(2019).
+59.	 Kawawaki, T. et al. Toward the creation of high-performance heterogeneous catalysts 
+by controlled ligand desorption from atomically precise metal nanoclusters. Nanoscale 
+Horiz. 6, 409–448 (2021).
+60.	 Malola, S. et al. A method for structure prediction of metal–ligand interfaces of hybrid 
+nanoparticles. Nat. Commun. 10, 3973 (2019).
+61.	
+Lopez-Acevedo, O., Kacprzak, K. A., Akola, J. & Häkkinen, H. Quantum size effects in 
+ambient CO oxidation catalysed by ligand-protected gold clusters. Nat. Chem. 2, 329 
+(2010).
+62.	 Sanchez, A. et al. When gold is not noble: nanoscale gold catalysts. J. Phys. Chem. A 103, 
+9573–9578 (1999).
+63.	 Häkkinen, H., Abbet, S., Sanchez, A., Heiz, U. & Landman, U. Structural, electronic, and 
+impurity‐doping effects in nanoscale chemistry: supported gold nanoclusters. Angew. 
+Chem. Int. Ed. 42, 1297–1300 (2003).
+64.	 Socaciu, L. D. et al. Catalytic CO oxidation by free Au2
+−: experiment and theory. J. Am. 
+Chem. Soc. 125, 10437–10445 (2003).
+65.	 Yoon, B., Häkkinen, H. & Landman, U. Interaction of O2 with gold clusters: molecular and 
+dissociative adsorption. J. Phys. Chem. A 107, 4066–4071 (2003).
+66.	 Yoon, B. et al. Charging effects on bonding and catalyzed oxidation of CO on Au8 clusters 
+on MgO. Sci 307, 403–407 (2005).
+67.	
+Bezman, S. A., Churchill, M. R., Osborn, J. A. & Wormald, J. Preparation and 
+crystallographic characterization of a hexameric triphenylphosphinecopper hydride 
+cluster. J. Am. Chem. Soc. 93, 2063–2065 (1971).
+68.	 Brestensky, D. M., Huseland, D. E., McGettigan, C. & Stryker, J. M. Simplified, ‘one-pot’ 
+procedure for the synthesis of [(Ph3P)CUH]6, a stable copper hydride for conjugate 
+reductions. Tetrahedron Lett. 29, 3749–3752 (1988).
+69.	 Yuan, P. et al. Ether‐soluble Cu53 nanoclusters as an effective precursor of high‐quality 
+CuI films for optoelectronic applications. Angew. Chem. 131, 845–849 (2019).
+70.	 Nguyen, T.-A. D. et al. A Cu25 nanocluster with partial Cu(0) character. J. Am. Chem. Soc. 
+137, 13319–13324 (2015).
+71.	
+Tang, Q. et al. Lattice-hydride mechanism in electrocatalytic CO2 reduction by 
+structurally precise copper-hydride nanoclusters. J. Am. Chem. Soc. 139, 9728–9736 
+(2017).
+72.	 Dhayal, R. S. et al. Diselenophosphate‐induced conversion of an achiral [Cu20H11{S2P(Oi
+Pr)2}9] into a chiral [Cu20H11{Se2P(OiPr)2}9] polyhydrido nanocluster. Angew. Chem. Int. Ed. 
+54, 13604–13608 (2015).
+73.	 Sun, C. et al. Atomically precise, thiolated copper–hydride nanoclusters as single-site 
+hydrogenation catalysts for ketones in mild conditions. ACS Nano 13, 5975–5986 (2019).
+74.	 Jiang, D. & Dai, S. From superatomic Au25(SR)18
+− to superatomic M@Au24(SR)18
+q core−shell 
+clusters. Inorg. Chem. 48, 2720–2722 (2009).
+75.	 Kacprzak, K. A., Lehtovaara, L., Akola, J., Lopez-Acevedo, O. & Häkkinen, H. A density 
+functional investigation of thiolate-protected bimetal PdAu24(SR)18
+z clusters: doping the 
+superatom complex. Phys. Chem. Chem. Phys. 11, 7123–7129 (2009).
+76.	 Kwak, K. et al. A molecule-like PtAu24(SC6H13)18 nanocluster as an electrocatalyst for 
+hydrogen production. Nat. Commun. 8, 1–8 (2017).
+77.	
+Kumar, B. et al. Gold nanoclusters as electrocatalysts: size, ligands, heteroatom doping, 
+and charge dependences. Nanoscale 12, 9969–9979 (2020).
+78.	 Hu, G., Tang, Q., Lee, D., Wu, Z. & Jiang, D. Metallic hydrogen in atomically precise gold 
+nanoclusters. Chem. Mater. 29, 4840–4847 (2017).
+
+Nature Reviews Materials
+Review article
+79.	
+Sun, F., Deng, C., Tian, S. & Tang, Q. Oxygen electrocatalysis by [Au25(SR)18]: charge, doping, 
+and ligand removal effect. ACS Catal. 11, 7957–7969 (2021).
+80.	 De Silva, N. et al. A bioinspired approach for controlling accessibility in calix[4]arene-bound 
+metal cluster catalysts. Nat. Chem. 2, 1062–1068 (2010).
+81.	
+Nigra, M. M. et al. Accessible gold clusters using calix[4]arene N-heterocyclic carbene 
+and phosphine ligands. Dalton Trans. 42, 12762–12771 (2013).
+82.	 McPartlin, M., Mason, R. & Malatesta, L. Novel cluster complexes of gold (0)–gold (I). 
+J. Chem. Soc. D 1969, 334 (1969).
+83.	 Chen, X. & Häkkinen, H. Protected but accessible: oxygen activation by a calixarene-
+stabilized undecagold cluster. J. Am. Chem. Soc. 135, 12944–12947 (2013).
+84.	 Yuan, S., Lei, Z., Guan, Z. & Wang, Q. Atomically precise preorganization of open metal 
+sites on gold nanoclusters with high catalytic performance. Angew. Chem. Int. Ed. 60, 
+5225–5229 (2021).
+85.	 Shen, H. et al. N-heterocyclic carbene-stabilized gold nanoclusters with organometallic 
+motifs for promoting catalysis. J. Am. Chem. Soc. 144, 10844–10853 (2022).
+86.	 Walter, M. et al. A unified view of ligand-protected gold clusters as superatom complexes. 
+Proc. Natl Acad. Sci. USA 105, 9157–9162 (2008).
+87.	
+Guan, Z. et al. Ligand engineering toward the trade‐off between stability and activity in 
+cluster catalysis. Angew. Chem. 134, e202116965 (2022).
+88.	 Bertorelle, F. et al. Isomeric effect of mercaptobenzoic acids on the synthesis, stability, 
+and optical properties of Au25(MBA)18 nanoclusters. ACS Omega 3, 15635–15642 (2018).
+89.	 Cox, B. D., Martin, C. R., Bertino, M. F. & Reiner, J. E. Biological nanopores elucidate the 
+differences between isomers of mercaptobenzoic-capped gold clusters. Phys. Chem. 
+Chem. Phys. 23, 7938–7947 (2021).
+90.	 Azubel, M. et al. Electron microscopy of gold nanoparticles at atomic resolution. Science 
+345, 909–912 (2014).
+91.	
+Azubel, M. & Kornberg, R. D. Synthesis of water-soluble, thiolate-protected gold 
+nanoparticles uniform in size. Nano Lett. 16, 3348–3351 (2016).
+92.	 Azubel, M., Koh, A. L., Koyasu, K., Tsukuda, T. & Kornberg, R. D. Structure determination 
+of a water-soluble 144-gold atom particle at atomic resolution by aberration-corrected 
+electron microscopy. ACS Nano 11, 11866–11871 (2017).
+93.	 Azubel, M. et al. FGF21 trafficking in intact human cells revealed by cryo-electron 
+tomography with gold nanoparticles. Elife 8, e43146 (2019).
+94.	 Tero, T.-R. et al. Dynamic stabilization of the ligand–metal interface in atomically precise 
+gold nanoclusters Au68 and Au144 protected by meta-mercaptobenzoic acid. ACS Nano 11, 
+11872–11879 (2017).
+95.	 Qian, H. & Jin, R. Controlling nanoparticles with atomic precision: the case of 
+Au144(SCH2CH2Ph)60. Nano Lett. 9, 4083–4087 (2009).
+96.	 Lopez-Acevedo, O., Akola, J., Whetten, R. L., Grönbeck, H. & Häkkinen, H. Structure and 
+bonding in the ubiquitous icosahedral metallic gold cluster Au144(SR)60. J. Phys. Chem. C. 
+113, 5035–5038 (2009).
+97.	
+Yan, N. et al. Unraveling the long-pursued Au144 structure by X-ray crystallography. 
+Sci. Adv. 4, eaat7259 (2018).
+98.	 Lei, Z., Li, J., Wan, X., Zhang, W. & Wang, Q. Isolation and total structure determination  
+of an all‐alkynyl‐protected gold nanocluster Au144. Angew. Chem. 130, 8775–8779 (2018).
+99.	 Whetten, R. L. et al. Chiral-icosahedral (I) symmetry in ubiquitous metallic cluster 
+compounds (145A, 60X): structure and bonding principles. Acc. Chem. Res. 52, 34–43 
+(2019).
+100.	 Mammen, N., Malola, S., Honkala, K. & Häkkinen, H. Dynamics of weak interactions in the 
+ligand layer of meta-mercaptobenzoic acid protected gold nanoclusters Au68(m-MBA)32 
+and Au144(m-MBA)40. Nanoscale 12, 23859–23868 (2020).
+101.	 Mammen, N., Malola, S., Honkala, K. & Häkkinen, H. Selective acrolein hydrogenation over 
+ligand-protected gold clusters: a Venus flytrap mechanism. ACS Catal. 12, 2365–2374 
+(2022).
+102.	 Ma, G. et al. Stabilizing gold clusters by heterostructured transition-metal oxide–mesoporous 
+silica supports for enhanced catalytic activities for CO oxidation. Chem. Commun. 48, 
+11413–11415 (2012).
+103.	 Li, W. et al. Mild activation of CeO2-supported gold nanoclusters and insight into the 
+catalytic behavior in CO oxidation. Nanoscale 8, 2378–2385 (2016).
+104.	 Liu, Y. M., Tsunoyama, H., Akita, T., Xie, S. H. & Tsukuda, T. Aerobic oxidation of 
+cyclohexane catalyzed by size-conrolled au clusters on hydroxyapatite: size effect in the 
+sub-2 nm regime. ACS Catal. 1, 2–6 (2011).
+105.	 Zhang, B. et al. Modulation of active sites in supported Au38(SC2H4Ph)24 cluster catalysts: 
+effect of atmosphere and support material. J. Phys. Chem. C 119, 11193–11199 (2015).
+106.	 Yoskamtorn, T. et al. Thiolate-mediated selectivity control in aerobic alcohol oxidation by 
+porous carbon-supported Au25 clusters. ACS Catal. 4, 3696–3700 (2014).
+107.	 Turner, M. et al. Selective oxidation with dioxygen by gold nanoparticle catalysts derived 
+from 55-atom clusters. Nature 454, 981–983 (2008).
+108.	 Liu, J. et al. Ligand‐stabilized and atomically precise gold nanocluster catalysis: a case 
+study for correlating fundamental electronic properties with catalysis. Chem. Eur. J. 19, 
+10201–10208 (2013).
+109.	 Zhang, B. et al. Ligand migration from cluster to support: a crucial factor for catalysis by 
+thiolate‐protected gold clusters. ChemCatChem 10, 5372–5376 (2018).
+110.	 Longo, A. et al. Towards atomically precise supported catalysts from monolayer‐
+protected clusters: the critical role of the support. Chem. Eur. J. 26, 7051–7058 (2020).
+111.	 Shang, L., Dong, S. & Nienhaus, G. U. Ultra-small fluorescent metal nanoclusters: 
+synthesis and biological applications. Nano Today 6, 401–418 (2011).
+112.	 Levi-Kalisman, Y. et al. Synthesis and characterization of Au102(p-MBA)44 nanoparticles.  
+J. Am. Chem. Soc. 133, 2976–2982 (2011).
+113.	 Sokołowska, K. et al. Towards controlled synthesis of water-soluble gold nanoclusters: 
+synthesis and analysis. J. Phys. Chem. C 123, 2602–2612 (2019).
+114.	 Auría-Soro, C. et al. Interactions of nanoparticles and biosystems: microenvironment of 
+nanoparticles and biomolecules in nanomedicine. Nanomaterials 9, 1365 (2019).
+115.	 Gupta, A. et al. Ultrastable and biofunctionalizable gold nanoparticles. ACS Appl. Mater. 
+Interfaces 8, 14096–14101 (2016).
+116.	 Hong, R. et al. Glutathione-mediated delivery and release using monolayer protected 
+nanoparticle carriers. J. Am. Chem. Soc. 128, 1078–1079 (2006).
+117.	 Rana, S., Bajaj, A., Mout, R. & Rotello, V. M. Monolayer coated gold nanoparticles for 
+delivery applications. Adv. Drug Deliv. Rev. 64, 200–216 (2012).
+118.	 Ghosh, P., Han, G., De, M., Kim, C. K. & Rotello, V. M. Gold nanoparticles in delivery 
+applications. Adv. Drug Deliv. Rev. 60, 1307–1315 (2008).
+119.	 Carnovale, C., Bryant, G., Shukla, R. & Bansal, V. Identifying trends in gold nanoparticle 
+toxicity and uptake: size, shape, capping ligand, and biological corona. ACS Omega 4, 
+242–256 (2019).
+120.	 Zheng, K. & Xie, J. Engineering ultrasmall metal nanoclusters as promising theranostic 
+agents. Trends Chem. 2, 665–679 (2020).
+121.	 Porret, E., Le Guével, X. & Coll, J.-L. Gold nanoclusters for biomedical applications: 
+toward in vivo studies. J. Mater. Chem. B 8, 2216–2232 (2020).
+122.	 Koivisto, J. et al. Acid–base properties and surface charge distribution of the water-soluble 
+Au102(pMBA)44 nanocluster. J. Phys. Chem. C 120, 10041–10050 (2016).
+123.	 Lipka, J. J., Hainfeld, J. F. & Wall, J. S. Undecagold labeling of a glycoprotein: STEM 
+visualization of an undecagoldphosphine cluster labeling the carbohydrate sites of 
+human haptoglobin–hemoglobin complex. J. Ultrastruct. Res. 84, 120–129 (1983).
+124.	 Hainfeld, J. F. & Powell, R. D. New frontiers in gold labeling. J. Histochem. Cytochem. 48, 
+471–480 (2000).
+125.	 Hainfeld, J. F. A small gold-conjugated antibody label: improved resolution for electron 
+microscopy. Science 236, 450–453 (1987).
+126.	 Hainfeld, J. F. & Furuya, F. R. A 1.4-nm gold cluster covalently attached to antibodies 
+improves immunolabeling. J. Histochem. Cytochem. 40, 177–184 (1992).
+127.	 Yang, Y., Wang, L., Wan, B. & Gu, Y. Optical active nanomaterials for bioimaging and 
+targeted therapy. Front. Bioeng. Biotechnol. 7, 320 (2019).
+128.	 Marjomäki, V. et al. Site-specific targeting of enterovirus capsid by functionalized 
+monodisperse gold nanoclusters. Proc. Natl Acad. Sci. USA 111, 1277–1281 (2014).
+129.	 Martikainen, M. et al. Hydrophobic pocket targeting probes for enteroviruses. Nanoscale 
+7, 17457–17467 (2015).
+130.	 Pohjolainen, E., Malola, S., Groenhof, G. & Häkkinen, H. Exploring strategies for 
+labeling viruses with gold nanoclusters through non-equilibrium molecular dynamics 
+simulations. Bioconjug. Chem. 28, 2327–2339 (2017).
+131.	 Hulkko, E. et al. Covalent and non-covalent coupling of a Au102 nanocluster with a 
+fluorophore: energy transfer, quenching and intracellular pH sensing. Nanoscale Adv. 3, 
+6649–6658 (2021).
+132.	 Weerawardene, K. L. D. M., Guidez, E. B. & Aikens, C. M. Photoluminescence origin of 
+Au38(SR)24 and Au22(SR)18 nanoparticles: a theoretical perspective. J. Phys. Chem. C 121, 
+15416–15423 (2017).
+133.	 Luo, Z., Zheng, K. & Xie, J. Engineering ultrasmall water-soluble gold and silver 
+nanoclusters for biomedical applications. Chem. Commun. 50, 5143–5155 (2014).
+134.	 Chevrier, D. M. et al. Molecular-scale ligand effects in small gold–thiolate nanoclusters.  
+J. Am. Chem. Soc. 140, 15430–15436 (2018).
+135.	 Pyo, K. et al. Ultrabright luminescence from gold nanoclusters: rigidifying the Au(I)–thiolate 
+shell. J. Am. Chem. Soc. 137, 8244–8250 (2015).
+136.	 Yu, Y. et al. Identification of a highly luminescent Au22(SG)18 nanocluster. J. Am. Chem. Soc. 
+136, 1246–1249 (2014).
+137.	 Pei, Y., Tang, J., Tang, X., Huang, Y. & Zeng, X. C. New structure model of Au22(SR)18: 
+bitetrahederon golden kernel enclosed by [Au6(SR)6] Au(I) complex. J. Phys. Chem. Lett. 
+6, 1390–1395 (2015).
+138.	 Bertorelle, F. et al. Tailoring the NIR‐II photoluminescence of single thiolated Au25 
+nanoclusters by selective binding to proteins. Chem. Eur. J. 28, e202200570 (2022).
+139.	 Xie, J., Zheng, Y. & Ying, J. Y. Protein-directed synthesis of highly fluorescent gold 
+nanoclusters. J. Am. Chem. Soc. 131, 888–889 (2009).
+140.	 Chevrier, D. M. et al. Structure and formation of highly luminescent protein-stabilized 
+gold clusters. Chem. Sci. 9, 2782–2790 (2018).
+141.	 Song, X. et al. A new class of NIR‐II gold nanocluster‐based protein biolabels for in vivo 
+tumor‐targeted imaging. Angew. Chem. Int. Ed. 60, 1306–1312 (2021).
+142.	 Kang, X. & Zhu, M. Tailoring the photoluminescence of atomically precise nanoclusters. 
+Chem. Soc. Rev. 48, 2422–2457 (2019).
+143.	 Patra, J. K. et al. Nano based drug delivery systems: recent developments and future 
+prospects. J. Nanobiotechnol. 16, 71 (2018).
+144.	 Peer, D. et al. Nanocarriers as an emerging platform for cancer therapy. Nat. Nanotechnol. 
+2, 751–760 (2007).
+145.	 He, H., Liu, L., Morin, E. E., Liu, M. & Schwendeman, A. Survey of clinical translation of 
+cancer nanomedicines — lessons learned from successes and failures. Acc. Chem. Res. 
+52, 2445–2461 (2019).
+146.	 Adhipandito, C. F., Cheung, S.-H., Lin, Y.-H. & Wu, S.-H. Atypical renal clearance of 
+nanoparticles larger than the kidney filtration threshold. Int. J. Mol. Sci. 22, 11182 (2021).
+147.	 Van Hong Nguyen, B.-J. L. Protein corona: a new approach for nanomedicine design.  
+Int. J. Nanomed. 12, 3137 (2017).
+148.	 Tang, L. et al. Advanced and innovative nano-systems for anticancer targeted drug 
+delivery. Pharmaceutics 13, 1151 (2021).
+
+Nature Reviews Materials
+Review article
+149.	 Singh, A. P., Biswas, A., Shukla, A. & Maiti, P. Targeted therapy in chronic diseases using 
+nanomaterial-based drug delivery vehicles. Signal. Transduct. Target. Ther. 4, 1–21 (2019).
+150.	 Alkilany, A. M. et al. Ligand density on nanoparticles: a parameter with critical impact on 
+nanomedicine. Adv. Drug Deliv. Rev. 143, 22–36 (2019).
+151.	 Colombo, M. et al. Tumour homing and therapeutic effect of colloidal nanoparticles 
+depend on the number of attached antibodies. Nat. Commun. 7, 13818 (2016).
+152.	 Matus, M. F., Malola, S. & Häkkinen, H. Ligand ratio plays a critical role in the design of optimal 
+multifunctional gold nanoclusters for targeted gastric cancer therapy. ACS Nanosci. Au 1, 
+47–60 (2021).
+153.	 Walkey, C. D. & Chan, W. C. W. Understanding and controlling the interaction of 
+nanomaterials with proteins in a physiological environment. Chem. Soc. Rev. 41, 
+2780–2799 (2012).
+154.	 Müller, J. et al. Beyond the protein corona — lipids matter for biological response of 
+nanocarriers. Acta Biomater. 71, 420–431 (2018).
+155.	 Lee, J. Y. et al. Analysis of lipid adsorption on nanoparticles by nanoflow liquid 
+chromatography–tandem mass spectrometry. Anal. Bioanal. Chem. 410, 6155–6164 
+(2018).
+156.	 Griffith, D. M., Jayaram, D. T., Spencer, D. M., Pisetsky, D. S. & Payne, C. K. DNA–nanoparticle 
+interactions: formation of a DNA corona and its effects on a protein corona. Biointerphases 
+15, 51006 (2020).
+157.	 Hadjidemetriou, M. & Kostarelos, K. Evolution of the nanoparticle corona. Nat. 
+Nanotechnol. 12, 288–290 (2017).
+158.	 Xiao, W. & Gao, H. The impact of protein corona on the behavior and targeting capability 
+of nanoparticle-based delivery system. Int. J. Pharm. 552, 328–339 (2018).
+159.	 Bai, X., Wang, J., Mu, Q. & Su, G. In vivo protein corona formation: characterizations, 
+effects on engineered nanoparticles’ biobehaviors, and applications. Front. Bioeng. 
+Biotechnol. 9, 263 (2021).
+160.	 Jain, P. et al. In-vitro in-vivo correlation (IVIVC) in nanomedicine: is protein corona the 
+missing link? Biotechnol. Adv. 35, 889–904 (2017).
+161.	 Desireddy, A. et al. Ultrastable silver nanoparticles. Nature 501, 399–402 (2013).
+162.	 Wong, O. A., Heinecke, C. L., Simone, A. R., Whetten, R. L. & Ackerson, C. J. Ligand 
+symmetry-equivalence on thiolate protected gold nanoclusters determined by NMR 
+spectroscopy. Nanoscale 4, 4099–4102 (2012).
+163.	 Berman, H. M. & Gierasch, L. M. How the protein data bank changed biology: an 
+introduction to the JBC reviews thematic series, part 1. J. Biol. Chem. 296, 100748 (2021).
+164.	 Lee, H. Molecular modeling of protein corona formation and its interactions with 
+nanoparticles and cell membranes for nanomedicine applications. Pharmaceutics 13, 
+637 (2021).
+165.	 Chetwynd, A. J. & Lynch, I. The rise of the nanomaterial metabolite corona, and 
+emergence of the complete corona. Environ. Sci. Nano 7, 1041–1060 (2020).
+166.	 Pohjolainen, E., Chen, X., Malola, S., Groenhof, G. & Häkkinen, H. A unified AMBER-
+compatible molecular mechanics force field for thiolate-protected gold nanoclusters.  
+J. Chem. Theory Comput. 12, 1342–1350 (2016).
+167.	 Manaia, E. B. et al. Physicochemical characterization of drug nanocarriers. Int. J. Nanomed. 
+12, 4991 (2017).
+168.	 Mahmoudi, M. The need for robust characterization of nanomaterials for nanomedicine 
+applications. Nat. Commun. 12, 5246 (2021).
+169.	 Comby-Zerbino, C., Dagany, X., Chirot, F., Dugourd, P. & Antoine, R. The emergence of 
+mass spectrometry for characterizing nanomaterials. Atomically precise nanoclusters 
+and beyond. Mater. Adv. 2, 4896–4913 (2021).
+170.	 Ge, C. et al. Towards understanding of nanoparticle–protein corona. Arch. Toxicol. 89, 
+519–539 (2015).
+171.	 Lai, Z. W., Yan, Y., Caruso, F. & Nice, E. C. Emerging techniques in proteomics for probing 
+nano–bio interactions. ACS Nano 6, 10438–10448 (2012).
+172.	 Soleilhac, A. et al. Size characterization of glutathione-protected gold nanoclusters in 
+the solid, liquid and gas phases. J. Phys. Chem. C 121, 27733–27740 (2017).
+173.	 Blanco, E., Shen, H. & Ferrari, M. Principles of nanoparticle design for overcoming 
+biological barriers to drug delivery. Nat. Biotechnol. 33, 941–951 (2015).
+174.	 Zeng, C., Chen, Y., Das, A. & Jin, R. Transformation chemistry of gold nanoclusters: from 
+one stable size to another. J. Phys. Chem. Lett. 6, 2976–2986 (2015).
+175.	 Du, B. et al. Glomerular barrier behaves as an atomically precise bandpass filter in a  
+sub-nanometre regime. Nat. Nanotechnol. 12, 1096 (2017).
+176.	 Hua, S., De Matos, M. B. C., Metselaar, J. M. & Storm, G. Current trends and challenges 
+in the clinical translation of nanoparticulate nanomedicines: pathways for translational 
+development and commercialization. Front. Pharmacol. 9, 790 (2018).
+177.	 Varnavski, O., Ramakrishna, G., Kim, J., Lee, D. & Goodson, T. Critical size for the observation 
+of quantum confinement in optically excited gold clusters. J. Am. Chem. Soc. 132, 16–17 
+(2010).
+178.	 Häkkinen, H. Electronic shell structures in bare and protected metal nanoclusters.  
+Adv. Phys. X 1, 467–491 (2016).
+179.	 Ho-Wu, R., Yau, S. H. & Goodson, T. I. I. I. Efficient singlet oxygen generation in metal 
+nanoclusters for two-photon photodynamic therapy applications. J. Phys. Chem. B 121, 
+10073–10080 (2017).
+180.	 Srinivasulu, Y. G., Mozhi, A., Goswami, N., Yao, Q. & Xie, J. Traceable nanocluster–prodrug 
+conjugate for chemo-photodynamic combinatorial therapy of non-small cell lung 
+cancer. ACS Appl. Bio Mater. 4, 3232–3245 (2021).
+181.	 Liu, P. et al. Concurrent photothermal therapy and photodynamic therapy for cutaneous 
+squamous cell carcinoma by gold nanoclusters under a single NIR laser irradiation.  
+J. Mater. Chem. B 7, 6924–6933 (2019).
+182.	 Yu, Y., Geng, J., Ong, E. Y. X., Chellappan, V. & Tan, Y. N. Bovine serum albulmin protein‐
+templated silver nanocluster (BSA‐Ag13): an effective singlet oxygen generator for 
+photodynamic cancer therapy. Adv. Healthc. Mater. 5, 2528–2535 (2016).
+183.	 Jiang, X., Du, B., Huang, Y., Yu, M. & Zheng, J. Cancer photothermal therapy with  
+ICG-conjugated gold nanoclusters. Bioconjug. Chem. 31, 1522–1528 (2020).
+184.	 Kawasaki, H. et al. Generation of singlet oxygen by photoexcited Au25(SR)18 clusters. 
+Chem. Mater. 26, 2777–2788 (2014).
+185.	 Moosavi, S. M., Jablonka, K. M. & Smit, B. The role of machine learning in the 
+understanding and design of materials. J. Am. Chem. Soc. 142, 20273–20287 (2020).
+186.	 Fanourgakis, G. S., Gkagkas, K., Tylianakis, E. & Froudakis, G. E. A universal machine 
+learning algorithm for large-scale screening of materials. J. Am. Chem. Soc. 142, 
+3814–3822 (2020).
+187.	 Xie, Y. et al. Machine learning assisted synthesis of metal–organic nanocapsules.  
+J. Am. Chem. Soc. 142, 1475–1481 (2019).
+188.	 Unke, O. T. et al. Machine learning force fields. Chem. Rev. 121, 10142–10186 (2021).
+189.	 Li, J. et al. Deep learning accelerated gold nanocluster synthesis. Adv. Intell. Syst. 1, 
+1900029 (2019).
+190.	 Mastracco, P., Gonzàlez-Rosell, A., Evans, J., Bogdanov, P. & Copp, S. M. Chemistry-
+informed machine learning enables discovery of DNA-stabilized silver nanoclusters  
+with near-infrared fluorescence. ACS Nano 16, 16322–16331 (2022).
+191.	 Zhou, Q. et al. Real-space imaging with pattern recognition of a ligand-protected  
+Ag374 nanocluster at sub-molecular resolution. Nat. Commun. 9, 2948 (2018).
+192.	 Yao, Q. et al. Supercrystal engineering of atomically precise gold nanoparticles 
+promoted by surface dynamics. Nat. Chem. https://doi.org/10.1038/s41557-022-01079-9 
+(2022).
+193.	 Wang, S., Liu, T. & Jiang, D. Locating hydrides in ligand-protected copper nanoclusters  
+by deep learning. ACS Appl. Mater. Interfaces 13, 53468–53474 (2021).
+194.	 Pihlajamäki, A. et al. Monte Carlo simulations of Au38(SCH3)24 nanocluster using  
+distance-based machine learning methods. J. Phys. Chem. A 124, 4827–4836 (2020).
+195.	 Pihlajamäki, A. Machine Learning Approach to Atomic Simulations of Protected Gold 
+Nanoclusters. PhD thesis, Univ. Jyväskylä http://urn.fi/URN:ISBN:978-951-39-9309-2 
+(2022).
+196.	 Pihlajamäki, A., Malola, S., Kärkkäinen, T. & Häkkinen, H. Orientation adaptive minimal 
+learning machine: application to thiolate-protected gold nanoclusters and gold-thiolate 
+rings. Preprint at https://arxiv.org/abs/2203.09788 (2022).
+197.	 Panapitiya, G. et al. Machine-learning prediction of CO adsorption in thiolated, Ag-alloyed 
+Au nanoclusters. J. Am. Chem. Soc. 140, 17508–17514 (2018).
+198.	 Cha, M. et al. Unifying structural descriptors for biological and bioinspired nanoscale 
+complexes. Nat. Comput. Sci. 2, 243–252 (2022).
+199.	 Malola, S. & Häkkinen, H. Prospects and challenges for computer simulations of 
+monolayer-protected metal clusters. Nat. Commun. 12, 2197 (2021).
+200.	Teo, B. K. & Keating, K. Novel triicosahedral structure of the largest metal alloy cluster: 
+hexachlorododecakis (triphenylphosphine)-gold-silver cluster [(Ph3P)12Au13Ag12Cl6]m+.  
+J. Am. Chem. Soc. 106, 2224–2226 (1984).
+201.	 Teo, B. K., Hong, M. C., Zhang, H. & Huang, D. B. Cluster of clusters: structure of the 37‐atom 
+cluster [(p‐Tol3P)12Au18Ag19Br11]2⊕ and a novel series of supraclusters based on vertex‐sharing 
+icosahedra. Angew. Chem. Int. Ed. Engl. 26, 897–900 (1987).
+202.	Teo, B. K. Cluster of clusters: a new series of high nuclearity Au–Ag clusters. Polyhedron 
+7, 2317–2320 (1988).
+203.	Nuzzo, R. G. & Allara, D. L. Adsorption of bifunctional organic disulfides on gold surfaces. 
+J. Am. Chem. Soc. 105, 4481–4483 (1983).
+204.	Nuzzo, R. G., Zegarski, B. R. & Dubois, L. H. Fundamental studies of the chemisorption of 
+organosulfur compounds on gold(111). Implications for molecular self-assembly on gold 
+surfaces. J. Am. Chem. Soc. 109, 733–740 (1987).
+205.	Love, J. C., Estroff, L. A., Kriebel, J. K., Nuzzo, R. G. & Whitesides, G. M. Self-assembled 
+monolayers of thiolates on metals as a form of nanotechnology. Chem. Rev. 105, 
+1103–1170 (2005).
+206.	Brust, M., Walker, M., Bethell, D., Schiffrin, D. J. & Whyman, R. Synthesis of thiol-derivatised 
+gold nanoparticles in a two-phase liquid–liquid system. J. Chem. Soc. Chem. Commun. 
+https://doi.org/10.1039/C39940000801 (1994).
+207.	 Whetten, R. L. et al. Nanocrystal gold molecules. Adv. Mater. 8, 428–433 (1996).
+208.	Hostetler, M. J. et al. Alkanethiolate gold cluster molecules with core diameters from 1.5 
+to 5.2 nm: core and monolayer properties as a function of core size. Langmuir 14, 17–30 
+(1998).
+209.	Chen, S. et al. Gold nanoelectrodes of varied size: transition to molecule-like charging. 
+Science 280, 2098–2101 (1998).
+210.	 Schaaff, T. G. & Whetten, R. L. Giant gold−glutathione cluster compounds: intense optical 
+activity in metal-based transitions. J. Phys. Chem. B 104, 2630–2641 (2000).
+211.	 De Heer, W. A. The physics of simple metal clusters: experimental aspects and simple 
+models. Rev. Mod. Phys. 65, 611 (1993).
+212.	 Negishi, Y., Nobusada, K. & Tsukuda, T. Glutathione-protected gold clusters revisited: 
+bridging the gap between gold(I)−thiolate complexes and thiolate-protected gold 
+nanocrystals. J. Am. Chem. Soc. 127, 5261–5270 (2005).
+213.	 Häkkinen, H., Barnett, R. N. & Landman, U. Electronic structure of passivated Au38(SCH3)24 
+nanocrystal. Phys. Rev. Lett. 82, 3264 (1999).
+214.	 Garzón, I. L. et al. Do thiols merely passivate gold nanoclusters? Phys. Rev. Lett. 85, 5250 
+(2000).
+215.	 Häkkinen, H., Walter, M. & Grönbeck, H. Divide and protect: capping gold nanoclusters 
+with molecular gold−thiolate rings. J. Phys. Chem. B 110, 9927–9931 (2006).
+
+Nature Reviews Materials
+Review article
+216.	 Qian, H., Eckenhoff, W. T., Zhu, Y., Pintauer, T. & Jin, R. Total structure determination of 
+thiolate-protected Au38 nanoparticles. J. Am. Chem. Soc. 132, 8280–8281 (2010).
+217.	 Jena, P. & Sun, Q. (eds) Superatoms: Principles, Synthesis and Applications (Wiley, 2021).
+218.	 Mingos, D. M. P. Molecular-orbital calculations on cluster compounds of gold. J. Chem. 
+Soc. Dalton Trans. https://doi.org/10.1039/DT9760001163 (1976).
+219.	 Narouz, M. R. et al. N-heterocyclic carbene-functionalized magic-number gold 
+nanoclusters. Nat. Chem. 11, 419–425 (2019).
+220.	Heikkilä, E. et al. Atomistic simulations of functional Au144(SR)60 gold nanoparticles in 
+aqueous environment. J. Phys. Chem. C 116, 9805–9815 (2012).
+221.	 Heikkilä, E. et al. Cationic Au nanoparticle binding with plasma membrane-like lipid 
+bilayers: potential mechanism for spontaneous permeation to cells revealed by atomistic 
+simulations. J. Phys. Chem. C 118, 11131–11141 (2014).
+Acknowledgements
+This work is supported by the Academy of Finland (grants 318905 and 319208, and H.H.’s 
+Academy Professorship).
+Author contributions
+M.F.M. and H.H. developed and discussed the framework of the article, and wrote and edited 
+the manuscript.
+Competing interests
+The authors declare no competing interests.
+Additional information
+Correspondence should be addressed to Hannu Häkkinen.
+Peer review information Nature Reviews Materials thanks Christopher Ackerson, Dongil Lee 
+and the other, anonymous, reviewer(s) for their contribution to the peer review of this work.
+Reprints and permissions information is available at www.nature.com/reprints.
+Publisher’s note Springer Nature remains neutral with regard to jurisdictional claims in 
+published maps and institutional affiliations.
+Springer Nature or its licensor (e.g. a society or other partner) holds exclusive rights to this 
+article under a publishing agreement with the author(s) or other rightsholder(s); author self-
+archiving of the accepted manuscript version of this article is solely governed by the terms of 
+such publishing agreement and applicable law.
+© Springer Nature Limited 2023

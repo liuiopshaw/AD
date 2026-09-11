@@ -1,0 +1,1458 @@
+Advanced Functional Materials
+www.afm-journal.de
+RESEARCH ARTICLE
+Ternary Synergy in an Atomically Precise Alloy Nanocluster:
+Precision Engineering of a ROS-Scavenging Nanozyme for
+Effective Psoriasis Therapy
+Zhen Jiang1
+Xingyu Zhu2
+Haiguang Zhu1
+Ze Li1
+Rui Li2
+Junlong Geng2
+Xun Yuan1
+1College of Materials Science and Engineering, Qingdao University of Science and Technology, Qingdao, P. R. China
+2School of Life Science and Medical
+Engineering, State Key Laboratory of Opto-Electronic Information Acquisition and Protection Technology, Key Laboratory of Structure and Functional
+Regulation of Hybrid Materials of Ministry of Education, Anhui University, Hefei, Anhui, P. R. China
+Correspondence: Haiguang Zhu (zhuhg@qust.edu.cn)
+Junlong Geng (gengjl@ahu.edu.cn)
+Xun Yuan (yuanxun@qust.edu.cn)
+Received: 13 January 2026
+Revised: 3 April 2026
+Accepted: 9 April 2026
+Keywords: atomic doping | ligand engineering | metal nanoclusters | psoriasis | ROS elimination
+ABSTRACT
+Psoriasis is a chronic inflammatory skin disease driven by oxidative stress, necessitating advanced antioxidant nanozymes capable
+of broad-spectrum reactive oxygen species (ROS) elimination. Here, we address this challenge through the rational design
+of a ternary synergistic nanocluster, Ag14–20Au5–11@FeTP, engineered via “atomic engineering” of an optimal AgAu alloy core
+and “molecular engineering” via Fe‑porphyrin ligand grafting. This dual-level engineering creates a metal–ligand synergistic
+interface that confers excellent multi-enzyme mimetic activity for scavenging H2O2, ∙O2
+−, and ∙OH. Coupled with enhanced skin
+penetration, the nanozyme demonstrates both therapeutic and preventive efficacy in a psoriasis mouse model, rivaling the first-
+line clinical drug betamethasone/calcipotriol, without observable systemic toxicity. Transcriptomic profiling reveals that its potent
+effect originates from a dual-pathway immunomodulation: simultaneous suppression of the pro-inflammatory IL‑23/Th17/IL‑17
+and NF‑κB axes and enhancement of the anti-inflammatory Treg/Th2 pathways. This work establishes a generalizable “precision
+synergy” paradigm for designing high-performance nanocluster-based therapeutics against oxidative stress-related inflammatory
+diseases.
+1
+Introduction
+The pursuit of effective and safe therapies for chronic inflam-
+matory diseases like psoriasis remains a formidable challenge in
+modern medicine [1, 2]. Affecting millions worldwide, psoriasis is
+driven by a self-perpetuating cycle of oxidative stress and aberrant
+immune activation, characterized by elevated levels of reactive
+oxygen species (ROS) that fuel pathogenic signaling pathways
+[3], including NF-κB, interleukin-17 (IL-17), IL-23, and T helper
+17 (Th17) cells [4, 5]. Current clinical management primarily
+includes topical treatments (e.g., corticosteroids and vitamin
+D3 analogs), phototherapy, and systemic immunosuppressants
+(e.g., methotrexate and cyclosporine) [6]. While conventional
+treatments and biologics offer symptomatic relief, they often
+fall short of addressing the root oxidative microenvironment
+and carry significant limitations, including systemic toxicity,
+high cost, and compromised long-term efficacy. This critical gap
+underscores an urgent need for innovative strategies capable of
+precisely disrupting the disease at its molecular origin.
+Nanomaterials with enzyme-mimicking (nanozyme) activities
+have
+emerged
+as
+promising
+candidates
+for
+regulating
+Zhen Jiang and Xingyu Zhu contributed equally to this article.
+© 2026 Wiley-VCH GmbH
+Advanced Functional Materials, 2026; 36:e75477
+https://doi.org/10.1002/adfm.75477
+1 of 18
+
+pathological oxidative stress [7, 8]. However, the vast majority of
+reported nanozymes lack atomic-level precision in their structure
+and composition. This fundamental ambiguity obscures clear
+structure-activity relationships and mechanistic understanding,
+thereby impeding the rational design of high-performance,
+disease-targeted antioxidant agents. The field thus stands at a
+pivotal juncture: transitioning from empirical material discovery
+to a paradigm of precision nanozyme engineering, where
+function is dictated by exact atomic composition and tailored
+surface chemistry.
+Atomically precise metal nanoclusters (NCs) present an ideal
+platform for this paradigm shift [9–15]. Their well-defined struc-
+tures offer an unprecedented opportunity to decode, at the
+atomic and molecular scale [16–22], how specific parameters—
+such as the type [23–27], number [28–31], and arrangement of
+metal atoms in the core [32–35], coupled with the chemical
+nature and spatial presentation of surface ligands [36–42]—
+collectively orchestrate catalytic performance. Yet, harnessing
+this potential to create synergistic, multi-enzyme systems for
+complex diseases requires a deliberate strategy that moves beyond
+single-component tuning.
+Herein, we demonstrate a “precision synergy” strategy by
+constructing a ternary Ag/Au/Fe nanozyme through the con-
+certed engineering of both the metallic core and the organic-
+inorganic interface. We first establish an atomically precise
+bimetallic library, Ag25−xAux (x = 1–25), identifying the optimal
+Au-doping level that maximizes intrinsic superoxide dismu-
+tase (SOD)- and catalase (CAT)-like activities. This atomically
+engineered core is then functionally augmented via molecular
+engineering, through the covalent grafting of a Fe-porphyrin
+(FeTP) complex, a proficient peroxidase mimic, onto its sur-
+face ligands (Figure 1). This rational design creates a coop-
+erative ternary (Ag/Au/Fe) catalytic center, enabling broad-
+spectrum and potent ROS elimination that significantly sur-
+passes the performance of any single-metal or binary coun-
+terparts. When applied to an imiquimod (IMQ)-induced psori-
+asis model, this precision-engineered nanozyme demonstrates
+remarkable preventive and therapeutic efficacy, rivaling that
+of a first-line clinical drug betamethasone/calcipotriol (BC). A
+comprehensive transcriptomic analysis reveals its dual-pathway
+mechanism: simultaneously suppressing the pro-inflammatory
+IL-23/Th17/IL-17 and NF-κB axes while enhancing the anti-
+inflammatory Treg/Th2 pathways. This work achieves two
+pivotal advances: (1) it presents a novel and highly effective
+nanotherapeutic agent for psoriasis, validated through deep
+mechanistic insight; and (2) it establishes a generalizable “core
+doping–ligand synergy” blueprint for the rational design of
+next-generation, multifunctional nanozymes, moving the field
+from serendipitous discovery toward true atomic-level precision
+medicine.
+2
+Results and Discussion
+2.1
+Synthesis and Characterization of Ternary
+Ag14–20Au5–11@FeTP NCs
+To precisely investigate the influence of metal composition on
+the ROS-scavenging capability of NCs, we first designed and
+synthesized a library of atomically precise, 6-mercaptohexanoic
+acid (MHA)-protected bimetallic NCs with the general formula
+Ag25−xAux (x = 1–25). This series maintains the characteristic
+M25(SR)18 structure—an M13 icosahedral core surrounded by
+six dimeric [M2(SR)3] motifs (M denotes metal, i.e., Au and
+Ag; Figure 2a)—ensuring that any variation in catalytic per-
+formance stems primarily from changes in electronic structure
+due to Au doping, rather than from gross structural differ-
+ences. Comprehensive characterization by UV-vis absorption
+spectroscopy, electrospray ionization mass spectrometry (ESI-
+MS), and transmission electron microscopy (TEM) confirmed
+the successful synthesis of ultrasmall, monodisperse NCs and
+identified five major compositional families: Ag25, Ag24Au1,
+Ag14–20Au5–11, Ag6–10Au15–19, and Ag0–2Au23–25 (Figures S1–S5, Sup-
+porting Information S1: Note I).
+Preliminary evaluation of antioxidant capacity (detailed in Sec-
+tion 2.2) identified the Ag14–20Au5–11 composition as possessing the
+most potent overall ROS-scavenging activity, prompting its selec-
+tion for further functionalization and study. The Ag14–20Au5–11
+NCs exhibited a light-brown color in solution (Figure 2b, inset)
+and displayed characteristic molecular-like UV-vis absorption
+peaks at approximately 330, 463, and 598 nm (Figure 2b).
+The peak at ∼330 nm is attributed to ligand-to-metal charge
+transfer (LMCT) within the [M2(SR)3] shell. The peaks at
+∼463 nm and ∼598 nm correspond to core-based electronic tran-
+sitions (HOMO–1→LUMO and HOMO→LUMO, respectively)
+[43]. Notably, these core-level transitions are significantly blue-
+shifted compared to those of the homometallic Ag25 NCs (485
+and 660 nm, Figure S1a), a direct spectroscopic signature of
+the electronic perturbation induced by the incorporation of Au
+atoms into the Ag13 core. The similarity of these transitions
+to those of the well-defined Ag24Au1 NC (with a central Au
+atom, Figure S2a) strongly suggests the presence of a central
+Au dopant within the M13 core of Ag14–20Au5–11 [44]. A detailed
+analysis of Au doping sites, based on tandem mass spectrometry
+(MS/MS) fragmentation patterns (Figure 2c,d), is provided in the
+Supporting Information (Supplementary Note II). This analysis
+confirms a non-random distribution of Au atoms across the
+core and shell, a key factor underlying the optimized electronic
+structure.
+To construct a ternary synergistic system, we grafted a Fe-
+porphyrin complex, 5,10,15,20-tetrakis(4-aminophenyl)porphyrin
+iron(III) chloride (FeTP), onto the surface of the Ag14–20Au5–11
+NCs
+via
+1-ethyl-3-(3-dimethylaminopropyl)carbodiimide/N-
+hydroxysuccinimide (EDC/NHS) coupling chemistry, yielding
+the composite Ag14–20Au5–11@FeTP. Successful conjugation was
+confirmed by multiple techniques. The solution color deepened
+to dark brown (Figure 2b, inset), and the UV-vis spectrum showed
+the emergence of characteristic FeTP absorptions (Figure 2b and
+Figure S6): a strong Soret band at 420 nm and weaker Q bands
+at 585 and 626 nm [45, 46]. Fourier-transform infrared (FTIR)
+spectroscopy provided direct evidence for the formation of amide
+bonds between the carboxyl groups of MHA and the amino
+groups of FeTP (Figure S7). Transmission electron microscopy
+(TEM) revealed an increase in the average particle size from
+<2 nm for the pristine NCs to 3.2 nm for Ag14–20Au5–11@FeTP
+(Figure 2e, Figure S3b), attributable to the covalent linkage of
+multiple NCs by the tetra-functional FeTP molecule, leading to
+controlled aggregation.
+2 of 18
+Advanced Functional Materials, 2026
+ 16163028, 2026, 47, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75477 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [23/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 1
+Schematic illustration of the ternary synergistic engineering of Ag14–20Au5–11@FeTP for psoriasis therapy via pro-inflammatory
+inhibition and anti-inflammatory enhancement.
+Thermogravimetric analysis (TGA) under an oxygen atmosphere
+was employed to quantify the grafting ratio (Figure 2f). The
+decrease in residual mass from 58.7% (Ag14–20Au5–11) to 50.2%
+(Ag14–20Au5–11@FeTP) corresponds to an approximate molar ratio
+of 1:2.3 (NC:FeTP), indicating that roughly 2.3 FeTP molecules are
+conjugated per NC. To probe the electronic interaction between
+the alloyed core and the grafted FeTP, we performed X-ray photo-
+electron spectroscopy (XPS). High-resolution spectra of the Ag 3d
+and Au 4f regions for both Ag14–20Au5–11 and Ag14–20Au5–11@FeTP
+showed binding energies intermediate between those of metallic
+(0) and monovalent (I) states (Figure 2g,h), consistent with the
+electron-sharing nature of the metal-thiolate interface. Critically,
+a positive shift in both Ag 3d and Au 4f binding energies was
+observed after FeTP grafting, concomitant with a negative shift in
+the Fe 2p signal compared to free FeTP (Figure S8). This reciprocal
+shift provides direct spectroscopic evidence for electron transfer
+from the Ag/Au bimetallic core to the Fe center of the surface-
+grafted porphyrin. This interfacial electronic coupling is central to
+the proposed ternary synergy, which we hypothesize will enhance
+multi-enzyme catalytic activity for ROS elimination.
+2.2
+Enzyme-Mimetic Activities and
+ROS-Scavenging Performance of Ag14–20Au5-1@FeTP
+A critical design goal for an effective anti-psoriatic nanomedicine
+is the ability to broadly neutralize the key ROS—namely, hydroxyl
+radicals (∙OH), superoxide anions (∙O2
+−), and hydrogen peroxide
+(H2O2)—that drive oxidative stress and inflammatory signaling
+in the disease microenvironment [7, 47, 48]. We therefore system-
+atically evaluated the multi-enzymatic antioxidant profile of our
+engineered NCs, beginning with an assessment of their overall
+radical-scavenging capacity (Figure 3a).
+The total antioxidant capacity, measured via the 2,2’-Azino-bis(3-
+ethylbenzothiazoline-6-sulfonic acid) (ABTS+) assay kit, revealed
+a clear composition-dependent trend across the AgxAu25−x library.
+While all bimetallic NCs reduced ABTS+ radical formation com-
+pared to the PBS control, the Ag14–20Au5–11 composition demon-
+strated the most pronounced effect, indicating the strongest
+intrinsic antioxidant activity within the series (Figure 3b).
+Quantification against a Trolox standard further confirmed that
+Ag14–20Au5–11 NCs possessed an activity 1.51 times higher than that
+of Trolox, the highest among all AgxAu25−x variants (Figure 3c,
+Figure S9). This superior performance justified its selection
+as the optimal core for subsequent functionalization. Notably,
+grafting FeTP onto this core (Ag14–20Au5–11@FeTP) led to a further
+enhancement in ABTS+ scavenging, suggesting an emergent
+synergistic effect between the alloyed core and the surface
+metalloporphyrin.
+We then deconvoluted this overall capacity into specific enzy-
+matic activities. First, the potent ⋅OH scavenging ability was
+probed by electron paramagnetic resonance (EPR) spectroscopy
+Advanced Functional Materials, 2026
+3 of 18
+ 16163028, 2026, 47, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75477 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [23/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 2
+(a) Core–shell structure of the M25(SR)18 NC, featuring an M13 core and six M2(SR)3 motifs (blue atoms: M; yellow atoms: S). (b)
+UV-vis absorption spectra of Ag14–20Au5–11 and Ag14–20Au5–11@FeTP, with inset photographs of the corresponding solutions. (c) Tandem MS spectra
+of [Ag17Au8MHA18–4H]5−(m/z = 1211.59) recorded at collision energies of 2, 4, 6, and 8 eV. (d) Fragment peaks generated from the collision-induced
+dissociation of [Ag17Au8MHA18–4H]5−at collision energy of 8 eV (grey curve: experimental data; blue curve: theoretical simulation). The numbers
+preceding each molecular formula correspond to the labeled fragment numbers in panel (c). (e) TEM image of Ag14–20Au5–11@FeTP, with the inset
+showing the corresponding particle size distribution histogram. (f) TGA curves of Ag14–20Au5–11 and Ag14–20Au5–11@FeTP. (g,h) High-resolution XPS
+spectra of (g) Ag3d and (h) Au4f regions for Ag14–20Au5–11 and Ag14–20Au5–11@FeTP.
+using 5,5-dimethyl-1-pyrroline N-oxide (DMPO) as a spin trap.
+As shown in Figure 3d, the characteristic DMPO–∙OH adduct
+signal was nearly completely quenched by both Ag14–20Au5–11
+and Ag14–20Au5–11@FeTP, outperforming other compositions like
+pure Ag25. Further quantitative analysis revealed that the Ag14–
+20Au5–11 core contributes approximately 92.1% to the overall ⋅OH
+scavenging ability of Ag14–20Au5–11@FeTP, highlighting its dom-
+inant role in this process. Therefore, density functional theory
+(DFT) calculations provided atomic-level insight: the adsorption
+energy of ⋅OH was more favorable on a representative Au site
+in the optimal Ag17Au8 NCs (–1.34 eV) than on an Ag site in
+Ag25 (–1.26 eV) (Figure 3e). This is attributed to the higher elec-
+tronegativity of Au, which enriches electron density at Au sites
+in the alloy, facilitating ⋅OH adsorption and subsequent electron-
+transfer-mediated neutralization. This inference is supported by
+electron localization function (ELF) analysis (Figure 3f,g), which
+shows relatively higher ELF values at the Au sites in Ag14–20Au5–11
+compared to the Ag sites in Ag25.
+Second, the SOD-like activity, or ∙O2
+−scavenging capacity,
+was evaluated. All AgxAu25−x NCs attenuated the DMPO–∙O2
+−
+EPR signal (Figure S10), confirming intrinsic activity. How-
+ever, quantitative analysis using a nitroblue tetrazolium (NBT)
+assay revealed an inverse trend: scavenging efficiency decreased
+4 of 18
+Advanced Functional Materials, 2026
+ 16163028, 2026, 47, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75477 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [23/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 3
+(a) Schematic illustration of Ag14–20Au5–11@FeTP eliminating ROS through ∙OH scavenging, SOD-like activity, and CAT-like activity.
+(b) UV-vis absorption spectra of ABTS+ radicals generated in the presence of different AgxAu25−x NCs. (c) Total antioxidant capacity of various AgxAu25−x
+NCs compared to natural Trolox. (d) EPR spectra of the DMPO–∙OH adduct in the presence of different AgxAu25−x NCs. (e) Free energy diagrams for
+⋅OH elimination catalyzed by Ag17Au8 and Ag25 (Insert: Optimized structures of ∙OH adsorbed on Ag17Au8 and Ag25). (f,g) The ELF images of Ag17Au8
+(f) and Ag25 (g). (h) SOD-like activity of different AgxAu25−x NCs calculated using an SOD assay kit. (i) H2O2 decomposition rates in the presence of
+different AgxAu25−x NCs. (j) Comparison of CAT-like activity among different AgxAu25−x NCs. Data are derived from three independent experiments
+and presented as mean ± SD (n = 3).
+with increasing Au content (Ag25> Ag24Au1> Ag14–20Au5–11>
+Ag6-10Au15-19> Ag0-2Au23-25) (Figure 3h). This suggests that ∙O2
+−
+elimination is governed by the global electron-donating capacity
+of the NC, which is stronger in Ag-rich NCs due to Ag’s
+lower work function and a more favorable thermodynamic
+alignment of the Ag+/Ag redox couple (+0.799 V vs. SHE) with
+the ∙O2
+−/H2O2 pair (≈+0.94 V vs. SHE). DFT calculations
+(Figure S11) further confirmed a more favorable adsorption
+energy for ∙O2
+−on the Ag site of Ag25 (ΔE = –0.71 eV)
+compared to the Au site of Ag17Au8 (ΔE = –0.66 eV). The
+SOD-like activity decreased slightly from 2.52 (pristine Ag14–
+20Au5–11) to 2.35 (Ag14–20Au5–11@FeTP). This indicates that the
+SOD-like activity is primarily derived from the Ag14–20Au5–
+11 core, and the grafting of FeTP induces a minor inhibitory
+effect (approximately 6.7% decrease), likely due to the electron
+transfer from the core to the ligand which slightly attenuates
+the electron-donating capacity essential for ∙O2
+−disproportion-
+ation.
+Advanced Functional Materials, 2026
+5 of 18
+ 16163028, 2026, 47, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75477 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [23/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+The experimental results of ⋅OH and ∙O2
+−scavenging, com-
+bined with DFT analysis, reveal a nuanced composition–activity
+relationship: moderate Au doping optimizes ⋅OH scavenging
+via localized electronic effects, while higher Ag content maxi-
+mizes ∙O2
+−elimination through superior bulk electron donation.
+The Ag14–20Au5–11 composition thus represents a strategically
+balanced platform that concurrently addresses both critical path-
+ways, which explains why Ag14–20Au5–11 NCs demonstrate the
+best overall antioxidant performance.
+Finally, we evaluated the CAT-like activity, that is, the decom-
+position of H2O2 into H2O and O2 (Figure 3a). Pristine Ag14–
+20Au5–11 NCs exhibited negligible catalytic activity toward H2O2
+decomposition. In contrast, the Ag14–20Au5–11@FeTP composite
+displayed a dramatic 44-fold enhancement in activity (Figure 3i,j),
+confirming that FeTP serves as the primary contributor to the
+CAT-like performance. Quantitative analysis based on the CAT-
+like activities of Ag14–20Au5–11@FeTP and free FeTP (Figure S12)
+revealed that FeTP accounts for approximately 73.09% of the
+total activity, unambiguously demonstrating a synergistic effect
+between the alloyed core and the surface FeTP. This synergy is
+driven by the enhanced electron transfer from the Ag/Au core to
+the Fe center, as evidenced by XPS (Figure 2g,h), which optimizes
+the redox cycling crucial for H2O2 decomposition.
+The grafting of FeTP reshapes the ROS‑scavenging profile of
+Ag14–20Au5–11 through functional redistribution. FeTP acts as a
+potent molecular catalyst that directly enhances CAT‑like and
+⋅OH‑scavenging activities, while further synergizing with the
+alloy core via electron transfer to amplify overall antioxidant
+performance. Conversely, this electron transfer mildly attenu-
+ates the electron‑donating capacity of the alloy core, to which
+SOD‑like activity is highly sensitive, resulting in a slight decrease
+in that function. This trade‑off underscores that the “ternary
+synergy” achieved is not a simple additive effect, but rather
+the outcome of precise interfacial electronic engineering that
+optimally allocates catalytic roles: the Ag/Au core specializes in
+electron donation and O2
+−⋅disproportionation, while the FeTP
+sites excel in H2O2 decomposition and ∙OH scavenging. Together,
+they enable broad‑spectrum, efficient clearance of complex ROS
+networks.
+Thus, the Ag14–20Au5–11@FeTP nanozyme integrates superior
+∙OH scavenging, considerable SOD‑like, and exceptionally
+potent CAT‑like activities into a single agent. This compre-
+hensive ROS‑elimination capacity originates from our precise
+“core‑doping–ligand‑engineering” strategy, which independently
+optimizes electronic properties at the atomic (via Au doping) and
+molecular (via FeTP grafting) levels to synergistically target differ-
+ent ROS species. This work establishes a foundational blueprint
+for the rational design of high‑performance, multifunctional
+antioxidant nanomaterials.
+2.3
+In Vitro Antioxidant and Anti-Inflammatory
+Evaluation
+To translate the promising enzymatic activities into a biologically
+relevant context, we systematically evaluated the antioxidant and
+anti-inflammatory functions of Ag14–20Au5–11@FeTP in psoriasi-
+form cell models (Figure 4a). A prerequisite for any therapeutic
+nanomaterial is biocompatibility. Cytotoxicity assays revealed
+that Ag14–20Au5–11@FeTP exhibited excellent safety profiles, main-
+taining cell viability above 80% for both human keratinocyte
+(HaCaT) and normal human epidermal keratinocyte (NHEK)
+cells after 24-hour incubation at concentrations up to 1 mM
+(Figure S13).
+We next established an inflammatory microenvironment by
+stimulating cells with the pro-psoriatic “M5” cytokine cock-
+tail (IL-22, IL-17A, IL-1α, TNF-α, and oncostatin M), which is
+known to induce ROS overproduction. Using the fluorescent
+probe 2′,7′-dichlorodihydrofluorescein (DCFH) and flow cytom-
+etry, we quantified intracellular ROS levels. As anticipated,
+M5 stimulation caused a marked increase in ROS. Treatment
+with Ag14–20Au5–11@FeTP, however, effectively mitigated this
+oxidative burst, reducing intracellular ROS by 41.6% in HaCaT
+cells and 35.7% in NHEK cells compared to the M5-only group
+(Figures 4b,c, Figures S14,S15).
+Excessive ROS drives the pathological hyperproliferation of ker-
+atinocytes and the secretion of inflammatory mediators [49]. We
+therefore investigated whether ROS reduction by our nanozyme
+could normalize these disease phenotypes. Confocal laser scan-
+ning microscopy (CLSM) and direct cell counting confirmed that
+M5 stimulation induced significant cell hyperproliferation, which
+was dramatically suppressed by Ag14–20Au5–11@FeTP treatment
+(cell counts reduced by 39.2% in HaCaT and 67.3% in NHEK cells)
+(Figure 4d, Figure S16).
+To elucidate the molecular mechanism underlying this pheno-
+typic rescue, we analyzed the expression of key pro-inflammatory
+cytokines via RT-qPCR. Consistent with the observed functional
+improvements, Ag14–20Au5–11@FeTP treatment led to a significant
+downregulation of M5-induced inflammatory gene expression
+(Figure 4e,f). In both cell types, mRNA levels of TNF-α, IL-6, IL-
+8, and IL-1β were substantially reduced, with decreases ranging
+from approximately 48% to 72%. This coordinated suppression
+of a broad inflammatory signature underscores the potent anti-
+inflammatory action of the nanozyme at the transcriptional
+level.
+Moreover, other NCs in the series also demonstrated varying
+degrees of ROS scavenging (Figure S17) and anti-inflammatory
+activities in cellular models (Figure S18), with their efficacy trends
+remaining consistent with the overall antioxidant capacities
+observed in aqueous solution. These collective cellular studies
+validate Ag14–20Au5–11@FeTP as a biocompatible and highly effec-
+tive agent capable of mitigating the core pathological features of
+psoriasis in vitro, including oxidative stress, aberrant keratinocyte
+proliferation, and pro-inflammatory signaling. Together, these
+findings establish a robust cellular foundation to support its
+further evaluation as a therapeutic candidate in vivo.
+2.4
+Enhanced Cutaneous Penetration of
+Ag14–20Au5–11@FeTP in Psoriatic Skin
+For a topical nano-formulation to be therapeutically effective
+against psoriasis, it must first overcome the skin barrier and
+adequately penetrate the diseased tissue [50]. We therefore
+evaluated the cutaneous absorption profile of Ag14–20Au5–11@FeTP
+6 of 18
+Advanced Functional Materials, 2026
+ 16163028, 2026, 47, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75477 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [23/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 4
+Schematic diagram and analytical results of in vitro cellular oxidative stress scavenging experiments for Ag14–20Au5–11@FeTP. (a)
+Schematic illustration of the experimental design. (b,c) Intracellular ROS levels assessed by flow cytometry using DCFH fluorescence intensity in (b)
+HaCaT cells and (c) NHEK cells under different treatment conditions: control, M5 (pro-inflammatory cytokine-induced), and M5+Ag14–20Au5–11@FeTP.
+(d) CLSM images of HaCaT and NHEK cells were observed under confocal laser scanning microscopy for each group. (e,f) mRNA expression levels
+of inflammatory cytokines (TNF-α, IL-6, IL-8, and IL-1β) in (e) HaCaT cells and (f) NHEK cells measured by RT-qPCR. Data are derived from three
+independent experiments and presented as mean ± SD (n = 3). Significance is denoted as: ****p < 0.0001, ***p < 0.001, **p < 0.01 versus the Control
+group.
+in vivo, comparing its uptake in healthy mice versus those
+with IMQ-induced psoriasiform dermatitis. The skin uptake rate,
+defined as the percentage of the topically applied dose retained
+in the skin tissue, served as the key metric. A significantly
+higher uptake rate was observed in psoriatic skin compared
+to healthy skin (Figure S19). This enhanced penetration can
+be directly attributed to the characteristic barrier dysfunction
+and disrupted epidermal architecture in psoriatic lesions, which
+create pathways for the permeation of nanoscale materials. The
+inflammatory microenvironment, with increased local blood flow
+and altered intercellular permeability, likely further promotes
+nanoparticle retention. Notably, Ag14–20Au5–11@FeTP displayed
+superior physiological stability in simulated serum, with its
+characteristic UV-vis absorption peaks (Figure S20a) and particle
+size (Figure S20b) remaining virtually unchanged over 48 h.
+Such structural integrity ensures the stability of Ag14–20Au5–
+11@FeTP within psoriatic skin lesions, a prerequisite for realizing
+its designed synergistic effect in psoriasis treatment.
+Advanced Functional Materials, 2026
+7 of 18
+ 16163028, 2026, 47, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75477 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [23/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+Notably, the FeTP-grafting step itself provided a major boost to
+skin penetration. The uptake rate of Ag14–20Au5–11@FeTP was
+markedly superior to that of the unmodified Ag14–20Au5–11 NCs.
+We ascribe this improvement to two complementary effects
+conferred by the FeTP ligand: (1) the moderately increased hydro-
+dynamic radius prolongs the formulation’s residence time within
+the epidermis, and (2) the lipophilic character of the porphyrin
+macrocycle enhances affinity for the lipid-rich stratum corneum,
+facilitating diffusion through the intercellular lipid matrix. Con-
+sequently, these results demonstrate that Ag14–20Au5–11@FeTP
+is not only capable of penetrating the skin but does so with
+enhanced efficiency under psoriatic conditions—a critical feature
+enabled by its rationally engineered surface chemistry. Fur-
+thermore, compared with previously reported nanozymes, the
+Ag14–20Au5–11@FeTP described in this work exhibits significant
+advantages in key parameters relevant to psoriasis treatment (as
+summarized in Table S1), including an ultrasmall size that facili-
+tates effective skin penetration, broad‑spectrum ROS‑scavenging
+capability, and excellent biocompatibility, highlighting its promis-
+ing potential for psoriasis therapy.
+2.5
+Preventive Efficacy and Immunomodulatory
+Mechanism in a Psoriasis Mouse Model
+Given the high recurrence rate of psoriasis up to 90%, effective
+prevention is a crucial therapeutic goal. We therefore first evalu-
+ated the preventive potential of Ag14–20Au5–11@FeTP in an IMQ-
+induced mouse model (Figure 5a). Mice were divided into three
+groups: Healthy, IMQ (model), and IMQ + Ag14–20Au5–11@FeTP
+(prevention). Over six days of IMQ challenge, the dorsal skin of
+model mice progressively developed hallmark psoriatic features:
+pronounced erythema, silvery scaling, and visible thickening. In
+stark contrast, mice co-treated with Ag14–20Au5–11@FeTP exhibited
+minimal symptoms, maintaining skin that was thin, smooth,
+and visually comparable to the Healthy group (Figure 5b). This
+dramatic phenotypic improvement was quantified using the Pso-
+riasis Area and Severity Index (PASI). The Ag14–20Au5–11@FeTP
+group showed significantly lower total PASI scores (Figure 5c),
+with substantial reductions in all sub-scores—erythema, scaling,
+and induration—confirming effective prevention of disease onset
+(Figure 5d–f).
+Histological analysis of skin tissues harvested on day 7 provided
+deeper insight. Compared to the thin, well-organized epidermis
+of healthy mice (∼23 µm), IMQ-treated mice exhibited severe
+psoriasiform pathology: massive epidermal hyperplasia (up to
+88.4 µm), an irregular dermal-epidermal junction, and marked
+inflammatory cell infiltration (Figure 5g, Figure S21). In contrast,
+preventive treatment with Ag14–20Au5–11@FeTP nearly normalized
+the skin architecture, reducing epidermal thickness to ∼31 µm,
+restoring a clear dermal-epidermal structure, and suppressing
+inflammatory infiltration.
+Psoriasis pathogenesis is driven by aberrant Th cell responses
+[51–53]. Immunohistochemistry (IHC) revealed that IMQ induc-
+tion led to substantial dermal infiltration of CD4+ T cells and
+upregulated expression of the Th1 cytokine IFN-γ and phos-
+phorylated NF-κB p65 (a central inflammatory transcription
+factor) (Figure 5g, Figures S22–S24). Ag14–20Au5–11@FeTP treat-
+ment effectively reversed these changes. To delineate the specific
+Th subsets involved, we analyzed chemokine receptor profiles,
+which serve as homing markers for different T-cell lineages.
+Ag14–20Au5–11@FeTP administration significantly reduced the
+expression of CCR5 (Th1-associated) and CCR6 (Th17-associated),
+while upregulating CCR3 (Th2-associated), indicating a shift in
+the immune landscape from a pro-inflammatory Th1/Th17 bias
+toward a more regulatory Th2 phenotype (Figure 5h).
+Consistent with this cellular shift, we next examined the expres-
+sion of corresponding cytokines (Figure 5i). Compared with the
+normal group, IMQ-treated mice showed pronounced upregula-
+tion of Th1-related cytokines (TNF-α and IL-1β) and Th17-related
+cytokines (IL-17 and IL-23). Ag14–20Au5–11@FeTP intervention sig-
+nificantly reversed these increases. Conversely, levels of the Th2
+anti-inflammatory cytokines IL-4 and IL-10 were elevated, con-
+firming the functional outcome of the altered T-cell landscape.
+In summary, Ag14–20Au5–11@FeTP restores immune homeostasis
+in psoriatic lesions by dually suppressing pro-inflammatory
+Th1/Th17 responses (TNF-α, IL-17, IL-23) and promoting anti-
+inflammatory Th2 responses (IL-4, IL-10), thereby alleviating
+both immune dysregulation and oxidative stress.
+2.6
+Transcriptomic Profiling Unveils a
+Dual-Pathway Mechanism of Psoriasis Prevention
+To elucidate the systemic molecular mechanisms underpinning
+the preventive efficacy of Ag14–20Au5–11@FeTP, we performed
+RNA sequencing on skin lesions from the Healthy, IMQ (model),
+and IMQ+Ag14–20Au5–11@FeTP (prevention) groups. As shown in
+Figure 6a, differential gene expression analysis identified 1423 dif-
+ferentially expressed genes (DEGs, p < 0.05, |Log2FC| ≥2) in the
+IMQ-induced psoriatic model group (Healthy vs. IMQ), compris-
+ing 868 up-regulated and 555 down-regulated genes. Following
+Ag14–20Au5–11@FeTP intervention (IMQ+Ag14–20Au5–11@FeTP vs.
+IMQ), 620 DEGs were identified, with 343 up-regulated and
+277 down-regulated genes (Figure 6b). Venn diagram analysis
+revealed 395 overlapping DEGs between the two comparisons
+(Figure 6c), and heatmap analysis showed that these shared genes
+exhibited opposite expression trends between groups (Figure 6d),
+suggesting their potential roles as key targets or essential genes in
+psoriasis pathogenesis.
+Functional enrichment analysis of the 395 shared DEGs revealed
+their primary involvement in biological processes, cellular com-
+ponents, and molecular functions (Figure 6e, Figure S25).
+The top 20 enriched Gene Ontology (GO) terms were closely
+associated with psoriatic pathology. Terms related to epider-
+mal barrier and keratinization included GO:0001533 (corni-
+fied envelope), GO:0031424 (keratinization), and GO:0018149
+(peptide cross-linking). Additionally, GO:0030216 (keratinocyte
+differentiation), GO:0009913 (epidermal cell differentiation),
+GO:0008544 (epidermis development), and GO:0030855 (epithe-
+lial cell differentiation) indicated significant alterations in cell
+differentiation-related gene networks, correlating with charac-
+teristic abnormal keratinocyte proliferation in psoriasis. Several
+inflammation-related GO terms were also identified, including
+GO:0005615 (extracellular space), GO:0010951 (negative regu-
+lation of endopeptidase activity), and GO:0052548 (regulation
+of endopeptidase activity). Notably, these keratinocyte differ-
+entiation and barrier integrity-related processes are known
+8 of 18
+Advanced Functional Materials, 2026
+ 16163028, 2026, 47, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75477 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [23/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 5
+In vivo evaluation of the preventive effect of Ag14–20Au5–11@FeTP on psoriasis. (a) Schematic diagram of the experimental timeline.
+(b) Representative photographs of dorsal skin from the Healthy control group, IMQ model group, and IMQ+Ag14–20Au5–11@FeTP intervention group
+on days 1–6. (c–f) Psoriasis severity scores for each group: (c) total PASI score, (d) erythema score, (e) scaling score, and (f) induration score. (g) H&E
+staining and IHC staining images of CD4+, IFN-γ, and NF-κB p65 in skin tissues from each group (scale bar: 150 µm). (h) Expression levels of chemokine
+receptors CCR3, CCR5, and CCR6. (i) Relative mRNA expression levels of pro-inflammatory cytokines and anti-inflammatory cytokines in skin tissues.
+Data are derived from three independent experiments and presented as mean ± SD (n = 3) Significance is denoted as: ###p < 0.001, ##p < 0.01, #p <
+0.05 versus the Healthy group; ***p < 0.001,**p < 0.01, *p < 0.05 versus the lMQ group.
+to be highly sensitive to oxidative stress, and their restora-
+tion upon Ag14–20Au5–11@FeTP treatment strongly suggests a
+causal link between ROS scavenging and epidermal homeostasis
+recovery.
+Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway
+analysis further pinpointed the involvement of critical signal-
+ing axes, most notably the IL-17 signaling pathway, alongside
+chemokine signaling, cytokine-cytokine receptor interaction, and
+the PPAR signaling pathway (Figure 6f, Figure S26). These
+pathways collectively govern the inflammatory cascade, immune
+cell recruitment, and keratinocyte dysregulation central to pso-
+riasis [54]. Of particular relevance, the IL-17 and chemokine
+signaling pathways are both amplified under oxidative stress
+conditions, and their effective downregulation by Ag14–20Au5–
+11@FeTP treatment implies that ROS scavenging acts as an
+upstream intervention that attenuates these pathogenic axes at
+their root.
+Gene Set Enrichment Analysis (GSEA) provided definitive
+directional evidence. Pathways related to immune system
+activation and keratinization were significantly upregulated in
+the IMQ model (positive enrichment score) but were effectively
+downregulated by Ag14–20Au5–11@FeTP treatment (negative
+enrichment
+score)
+(Figure
+6g–j).
+This
+confirms
+that
+the
+nanozyme exerts its effect by broadly suppressing pathogenic
+Advanced Functional Materials, 2026
+9 of 18
+ 16163028, 2026, 47, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75477 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [23/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 6
+Transcriptomic analysis of skin lesions from mice in different groups. (a) Volcano plot of DEGs for Healthy vs. IMQ groups. (b)
+Volcano plot of DEGs for IMQ+Ag14–20Au5–11@FeTP versus IMQ groups. (c) Venn diagram of DEGs from the comparisons Healthy versus IMQ and
+IMQ+Ag14–20Au5–11@FeTP versus IMQ. (d) Heatmap of the 395 target DEGs across Healthy, IMQ, and IMQ+Ag14–20Au5–11@FeTP groups. (e) GO
+enrichment analysis of 395 target DEGs. (f) Significantly enriched KEGG pathways of 395 target DEGs. (g,h) GSEA of the immune system for Healthy
+versus IMQ and IMQ+Ag14–20Au5–11@FeTP versus IMQ, respectively. (i,j) GSEA of keratinization for Healthy versus IMQ and IMQ+Ag14–20Au5–11@FeTP
+versus IMQ, respectively. (k) PPI network of target DEGs constructed using the STRING database and visualized with Cytoscape software. (l–n) Relative
+mRNA expression levels of Ccl5, Cxcr6, and Foxp3 in skin tissues from the Healthy, IMQ, and IMQ+Ag14–20Au5–11@FeTP groups. Data are derived from
+three independent experiments and presented as mean ± SD (n = 3). Significance is denoted as ##, **p < 0.01; #, *p < 0.05 versus the IMQ group; ns,
+not significant. (o) Schematic diagram illustrating the proposed preventive mechanism of Ag14–20Au5–11@FeTP against psoriasis.
+10 of 18
+Advanced Functional Materials, 2026
+ 16163028, 2026, 47, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75477 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [23/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+transcriptional programs. To identify central regulatory nodes,
+we constructed a protein-protein interaction (PPI) network
+from the target DEGs (Figure 6k). This analysis revealed three
+pivotal hub genes: Ccl5, Cxcr6, and Foxp3. Ccl5 is a potent
+chemokine driving immune cell infiltration; Cxcr6 mediates
+pathogenic T-cell retention in skin; and Foxp3 is the master
+regulator of immunosuppressive Treg function. Ag14–20Au5–
+11@FeTP treatment significantly normalized the IMQ-induced
+overexpression of Ccl5 and Cxcr6, while modulating Foxp3
+expression towards a functional equilibrium (Figure 6l–n).
+Notably, Ccl5 is upregulated by ROS-activated NF-κB signaling;
+its suppression upon Ag14–20Au5–11@FeTP treatment directly
+links antioxidant capacity to anti-inflammatory efficacy. The
+coordinated regulation of these hubs—suppressing chemokine-
+driven recruitment (Ccl5, Cxcr6) while potentially restoring
+immunoregulatory capacity (Foxp3)—offers a precise molecular
+explanation for the observed dampening of inflammation and
+tissue repair.
+Integrating these transcriptomic findings with our earlier phe-
+notypic and immunohistochemical data, we propose a cohesive
+dual-pathway mechanism for Ag14–20Au5–11@FeTP (Figure 6o):
+first, it suppresses pro-inflammatory pathways by targeting
+multiple nodes of the IL-23/Th17/IL-17 axis and related Th1
+responses, resulting in downregulation of key pro-inflammatory
+cytokines (IL-17, IL-23, TNF-α, IFN-γ), direct inhibition of
+NF-κB signaling hyperactivation, and enhancement of ROS
+clearance; second, it enhances anti-inflammatory pathways by
+promoting the Treg/Th2 axis, as evidenced by upregulated
+anti-inflammatory cytokines (IL-4, IL-10) and restored Treg
+function reflected in normalized Foxp3 expression. The fun-
+damental improvement of the immune microenvironment—
+initiated by ROS clearance and sustained by broad transcriptional
+reprogramming—liberates keratinocytes from sustained inflam-
+matory attack, halting their abnormal activation (reduced Ccl5
+expression) and reversing pathological hyperproliferation and
+aberrant differentiation. This ultimately leads to normalized
+epidermal thickness and the resolution of inflammatory infiltra-
+tion. In summary, Ag14–20Au5–11@FeTP, as a candidate strategy
+capable of multi-target and bidirectional immunomodulation,
+demonstrates high potential for the effective prevention of
+psoriasis.
+2.7
+Therapeutic Efficacy and Systemic Safety of
+Ag14–20Au5–11@FeTP in an Established Psoriasis
+Model
+Having
+established
+the
+preventive
+potential
+of
+Ag14–20Au5–11@FeTP,
+we
+next
+evaluated
+its
+therapeutic
+efficacy
+in
+a
+clinically
+relevant
+setting—treating
+already
+established psoriatic lesions. As outlined in Figure 7a, mice
+were first subjected to a 6-day IMQ induction to develop
+full-blown
+psoriasiform
+dermatitis.
+Beginning
+on
+day
+7,
+mice received topical treatment for six consecutive days
+with either Ag14–20Au5–11@FeTP or the first-line clinical drug
+betamethasone/calcipotriol (BC), serving as a positive control.
+During the treatment phase, mice receiving Ag14–20Au5–11@FeTP
+showed a steady recovery in body weight, trending towards that
+of healthy mice (Figure S27). Macroscopic assessment revealed
+a striking reversal of symptoms. While the PBS-treated disease
+group maintained severe erythema, scaling, and skin thickening
+until day 12, both Ag14–20Au5–11@FeTP and BC treatments induced
+rapid visual improvement (Figure 7b, Figure S28). Notably, by the
+end of treatment, skin in the Ag14–20Au5–11@FeTP group appeared
+as smooth as that of healthy controls, whereas mild wrinkling per-
+sisted in the BC group, suggesting a therapeutic effect comparable
+to or even surpassing the clinical standard. This was quanti-
+tatively confirmed by PASI scoring, where Ag14–20Au5–11@FeTP
+significantly reduced total scores and all sub-scores (erythema,
+scaling, induration) to levels matching the BC group (Figure 7c–f).
+Meanwhile, treatment with Ag14–20Au5–11 NCs alone also exhibited
+a certain therapeutic effect in the IMQ-induced psoriasis mouse
+model, confirming that the Ag14–20Au5–11 NCs possess intrinsic
+antioxidant and anti-inflammatory activity (Figure S29). How-
+ever, its therapeutic efficacy was markedly inferior to that of
+Ag14–20Au5–11@FeTP. This result further supports the rationality
+of our ternary design, demonstrating that the integration of the
+Ag/Au alloy core with the FeTP ligand leads to a synergistic
+enhancement in therapeutic efficacy.
+Histological
+and
+immunohistochemical
+analyses
+of
+post-
+treatment skin tissues provided mechanistic corroboration.
+H&E
+staining
+showed
+that
+both
+Ag14–20Au5–11@FeTP
+and
+BC effectively reversed the hallmark pathologies: epidermal
+hyperplasia, hyperkeratosis, and irregular dermal papillae were
+all markedly ameliorated (Figure 7g). IHC further demonstrated
+that treatment significantly reduced the dermal infiltration
+of CD4+ T cells and downregulated the expression of the key
+inflammatory mediators IFN-γ and phosphorylated NF-κB p65,
+restoring them to near-normal levels (Figure 7g–j). Analysis
+of chemokine receptor profiles confirmed that the therapeutic
+effect involved the same orchestrated dual immunomodulation
+observed in prevention (Figure S30): suppression of Th1/Th17
+axes (reduced CCR5/CCR6) and promotion of a Th2/Treg
+response (increased CCR3).
+Beyond efficacy, a critical factor for clinical translation is sys-
+temic safety. A comprehensive in vivo safety assessment was
+therefore conducted. Blood biochemical analyses confirmed that
+all routine hematological parameters and key liver function
+markers in treated mice remained within normal physiological
+ranges, with no evidence of myelosuppression or hepatotoxicity
+(Figures S31,S32). Furthermore, histopathological examination of
+major organs (heart, liver, spleen, lung, kidney) revealed intact
+tissue architecture, devoid of any signs of inflammation, necrosis,
+or fibrosis (Figure S33). Furthermore, the Ag content in the
+skin gradually decreased over time after treatment cessation.
+By Day 5 post-treatment, the residual Ag level was reduced to
+approximately 3.92% of the initial value measured on Day 1
+(Figure S34), indicating that the NCs are progressively cleared
+from the dermal layers after treatment discontinuation. This
+clearance behavior suggests that Ag14–20Au5–11@FeTP does not
+lead to long-term accumulation in the skin, thereby mitigating
+concerns related to argyria or chronic retention. Taken together,
+these results demonstrate that Ag14–20Au5–11@FeTP is not only
+a highly effective therapeutic agent capable of reversing estab-
+lished psoriatic lesions—with efficacy rivaling a first-line clinical
+drug—but also exhibits a favorable systemic safety profile at
+the therapeutic dose. This compelling combination of potent,
+mechanistically-driven efficacy and low toxicity underscores its
+Advanced Functional Materials, 2026
+11 of 18
+ 16163028, 2026, 47, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75477 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [23/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+FIGURE 7
+In vivo evaluation of the therapeutic efficacy of Ag14–20Au5–11@FeTP against psoriasis. (a) Schematic diagram of the experimental
+timeline. (b) Representative photographs of dorsal skin from the Healthy control group, IMQ group, IMQ+Ag14–20Au5–11@FeTP group, and BC group
+on days 7–12. (c–f) Psoriasis severity scores for each group: (c) total PASI score, (d) erythema score, (e) scaling score, and (f) induration score. (g) H&E
+staining and IHC staining images of CD4+, IFN-γ, and NF-κB p65 in skin tissues from each group (scale bar: 150 µm). (h–j) Quantitative analysis of
+(h) CD4+, (i) IFN-γ, and (j) NF-κB p65 positive cells in the basal epidermis of skin lesions from mice in different groups. Data are derived from three
+independent experiments and presented as mean ± SD (n = 3).
+12 of 18
+Advanced Functional Materials, 2026
+ 16163028, 2026, 47, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75477 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [23/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+strong potential as a translatable topical nanotherapeutic for
+psoriasis.
+3
+Conclusion
+In summary, this work demonstrates the rational design and
+therapeutic efficacy of Ag14–20Au5–11@FeTP, a ternary synergistic
+nanozyme engineered for psoriasis management via complemen-
+tary atomic-scale Au doping and molecular-scale Fe-porphyrin
+grafting. This “precision synergy” strategy optimizes the elec-
+tronic structure and catalytic interface, endowing the nanocluster
+with superior, broad-spectrum ROS-scavenging activity that
+mimics multiple antioxidant enzymes. The nanozyme exhibits
+excellent skin penetration and achieves both preventive and
+therapeutic outcomes in an IMQ-induced psoriasis model, with
+efficacy rivaling a first-line clinical drug. Integrated transcrip-
+tomic and mechanistic studies reveal that its therapeutic action
+stems from a dual-pathway immunomodulation: suppressing
+the pro-inflammatory IL-23/Th17/IL-17 and NF-κB axes while
+enhancing the anti-inflammatory Treg/Th2 pathways, thereby
+normalizing keratinocyte hyperproliferation and restoring skin
+barrier integrity. Importantly, Ag14–20Au5–11@FeTP shows an
+excellent safety profile with no observable systemic toxicity.
+Beyond presenting a potent and safe nanotherapeutic candi-
+date, this study establishes a generalizable design paradigm
+for developing high-performance nanozymes against oxidative
+stress-driven inflammatory diseases.
+4
+Experimental Section
+4.1
+Chemicals and Materials
+Ultrapure water (18.2 MΩ⋅cm) was used throughout the exper-
+iments. All glassware was cleaned with aqua regia prior to
+use, thoroughly rinsed with copious amounts of ethanol and
+water, and then dried in an oven. Chloroauric acid trihydrate
+(HAuCl4⋅3H2O) and silver nitrate (AgNO3) were purchased from
+Merck Reagent Co., Ltd. 6-Mercaptohexanoic acid (MHA) was
+obtained from Aladdin Reagent Co., Ltd. 5,10,15,20-Tetrakis(4-
+aminophenyl)porphyrin Iron(III) chloride (FeTP) was supplied
+by Macklin Reagent Co., Ltd. The Total Superoxide Dismutase
+(SOD) Assay Kit (NBT method) was purchased from Beyotime
+Biotechnology. The Hydroxyl Radical Scavenging Assay Kit was
+acquired from Solarbio Science & Technology Co., Ltd. ELISA
+kits were procured from Jiangsu Meike Biological Technology
+Co., Ltd. Six-week-old female Balb/c mice were purchased from
+Beijing Vital River Laboratory Animal Technology Co., Ltd. Ani-
+mals were housed under specific pathogen-free (SPF) conditions.
+All animal experiments were conducted in accordance with
+international ethical guidelines and the NIH Guide for the Care
+and Use of Laboratory Animals.
+4.2
+Instrumentation
+The spectral absorption properties of different samples were
+investigated using a Shimadzu UV-1800 spectrophotometer. The
+sizes of various samples were examined via transmission electron
+microscopy (TEM, JEOL JEM-2100 Plus). The species and struc-
+tures of the metal NCs were studied using a Bruker Impact II
+high-resolution electrospray ionization mass spectrometer (HR-
+ESI-MS). Fourier transform infrared (FTIR) spectroscopy was
+performed on a Thermo Fisher Nicolet iS10 spectrometer in
+the range of 3500–500 cm−1. X-ray photoelectron spectroscopy
+(XPS) analysis for elemental valence states was conducted on a
+Kratos AXIS SUPRA spectrometer using Al Kα radiation, with
+the spectrometer and work function calibrated against the C
+1s peak at 284.8 eV. Thermogravimetric analysis (TGA) was
+carried out on a NETZSCH TG 209 F1 instrument. Electron
+paramagnetic resonance (EPR) spectroscopy for analyzing the
+scavenging of superoxide anion (⋅O2
+−) and hydroxyl radical (⋅OH)
+was performed using an EPR200-Plus spectrometer (Bruker,
+China).
+4.3
+Synthesis of AgxAu25–x(MHA)18 NCs
+Taking Ag25(MHA)18 NCs as an example: First, 2.35 mL of
+ultrapure water was added to a 20 mL flask. Aqueous solutions
+of MHA (5 mM, 2 mL) and AgNO3 (20 mM, 0.25 mL) were
+sequentially added to the flask, resulting in the formation of
+a white precipitate of Ag(I)-MHA complexes. Subsequently, an
+aqueous NaOH solution (1 M, 0.3 mL) was added, causing
+the white precipitate to gradually dissolve. Aqueous NaBH4
+solution (112 mM, 0.1 mL) was then added dropwise. The mixture
+was transferred to an oil bath and stirred at 50◦C for 4 h.
+The Ag25(MHA)18 NCs solution was collected and purified via
+ultrafiltration using a membrane with a molecular weight cut-
+off (MWCO) of 3 kDa. The ultrafiltration purification step was
+repeated three times. When the Ag+/Au3+ molar ratios were 24/1,
+17/8, 8/17, and 1/24, the synthesized AgxAu25–x(MHA)18 NCs had
+x values of approximately 24, 14–20, 6–10, and 0–2, respectively.
+The synthesis conditions differed slightly: Ag14–20Au5–11 (MHA)18
+NCs required stirring at 50◦C for 1 h, while Ag6-10Au15-19(MHA)18
+NCs and Ag0-2Au23-25(MHA)18 NCs were synthesized by stirring
+at room temperature for 3 h. The aforementioned ultrafiltra-
+tion purification steps were repeated for all samples, followed
+by reconstitution in an appropriate volume for later use. (All
+synthesis conditions were optimized.)
+4.4
+Synthesis of Ag14–20Au5–11@FeTP
+The ultrafiltration-purified Ag14–20Au5–11 NCs (5 mM, 10 mL) were
+added to a flask. The pH of the NCs’ solution was adjusted to
+10 using HCl solution (1 M). Subsequently, 34.4 mg of EDC solid
+and 12.4 mg of NHS solid were added, and the pH was readjusted
+to 7. The mixture was stirred at room temperature for 10 min
+to activate the carboxyl groups. Then, 33 mg of FeTP dissolved
+in DMF was slowly added to the flask. The reaction proceeded
+under stirring at room temperature for 5 h. The resulting product
+solution was collected and dialyzed for 24 h using a dialysis bag
+with an MWCO of 3 kDa, followed by reconstitution for later use.
+4.5
+⋅∙OH Scavenging (EPR)
+A 10 mM H2O2 solution (5 mM) was prepared in 10 mL of
+PBS buffer (10 mM). FeSO4 solution (2.5 mM) was then added
+to catalyze the generation of ⋅OH via the Fenton reaction.
+Advanced Functional Materials, 2026
+13 of 18
+ 16163028, 2026, 47, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75477 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [23/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+5,5-Dimethyl-1-pyrroline N-oxide (DMPO) at 100 mM was used
+as a spin trap for ⋅OH. The spin adduct formed with ⋅OH displays
+a characteristic four-line signal in the EPR spectrum. The ⋅OH
+scavenging ability was verified by monitoring the change in signal
+intensity before and after adding the NCs (5 µg/mL).
+4.6
+∙O2−Scavenging (EPR)
+Ten milligrams of polypyrrole (PPy) powder was dispersed in
+1 mL of methanol. After adding 50 µL of PBS as a blank control,
+the mixture was irradiated for 30 s to generate ⋅O2
+−, followed
+by the addition of DMPO (100 mM) to trap ⋅O2
+−, yielding a
+characteristic six-line EPR signal. The ⋅O2
+−scavenging ability was
+assessed by monitoring the signal change upon addition of the
+NCs (10 µg/mL).
+4.7
+∙OH Scavenging Capacity
+(Spectrophotometric Assay)
+This assay was performed using a commercial hydroxyl radi-
+cal scavenging assay kit. ⋅OH oxidizes ABTS to green-colored
+ABTS++, which has characteristic absorption peaks at 414 nm
+or 734 nm. The absorbance of ABTS++ was measured using a
+microplate reader to determine its concentration in the system,
+thereby allowing comparison of the ⋅OH scavenging capacities of
+different NCs. Specific sampling followed the kit protocol.
+4.8
+SOD-Like Activity Assay
+∙O2
+−was generated via the reaction of xanthine and xanthine
+oxidase (XO), which reduces nitroblue tetrazolium (NBT) to
+blue formazan with strong absorption at 560 nm. Different NCs
+(10 µg/mL) were mixed with the reaction system, and the change
+in absorbance at 560 nm was monitored using a microplate reader
+to evaluate their SOD-like activity.
+4.9
+CAT-Like Activity Assay
+This assay is based on the characteristic absorption of H2O2
+at 240 nm. The decomposition rate of H2O2 was quantified by
+monitoring the absorbance change at this wavelength. A H2O2
+solution of known concentration was added to the reaction
+system along with different NCs as catalysts, and the reaction
+proceeded at room temperature. Absorbance at 240 nm was
+measured at regular time intervals. The concentration (c) of H2O2
+was calculated using the Beer-Lambert law (A = ε⋅c⋅l, where A is
+absorbance, ε is the molar attenuation coefficient, and l is the path
+length). The CAT-like activity of each NC was calculated based on
+the consumption of H2O2 per unit time.
+4.10
+Cytotoxicity Assay (MTT Assay)
+The cytotoxicity of Ag14–20Au5–11@FeTP was evaluated using
+the 3-(4,5-dimethylthiazol-2-yl)-2,5-diphenyltetrazolium bromide
+(MTT) assay on human immortalized keratinocytes (HaCaT) and
+normal human epidermal keratinocytes (NHEK). Cells in the
+exponential growth phase were seeded in 96-well plates at a
+density of 1 × 104 cells per well in 100 µL of culture medium
+and incubated for 24 h at 37◦C with 5% CO2 to allow adherence.
+The medium was then aspirated. For the experimental groups,
+the NCs were tested at final concentrations of 0.25, 0.5, 0.75,
+and 1 mM, with three replicate wells per concentration. A
+negative control group (untreated cells) and a positive control
+group (Tween-20 treated) were also included. After removing the
+medium, 100 µL of fresh medium and 10 µL of MTT solution (final
+concentration 0.5 mg/mL) were added to each well. The plate was
+incubated for 4 h at 37◦C with 5% CO2, allowing mitochondrial
+dehydrogenases to reduce MTT to purple formazan crystals. The
+medium was then aspirated, and 100 µL of dimethyl sulfoxide
+(DMSO) was added to each well to dissolve the crystals, followed
+by gentle shaking for 10 min. The absorbance of each well was
+measured at 570 nm using a microplate reader, with a reference
+wavelength of 630 nm. Cytotoxicity was calculated based on the
+results.
+4.11
+Intracellular ROS Scavenging
+To simulate psoriatic conditions, HaCaT and NHEK cells were
+used. HaCaT cells were cultured in high-glucose DMEM supple-
+mented with 10% fetal bovine serum (FBS), 100 U/mL penicillin,
+and 100 µg/mL streptomycin at 37◦C with 5% CO2. NHEK cells
+were cultured in CM8-1 medium (90% EMEM + 10% FBS). Cells
+were then co-cultured with an “M5” cytokine cocktail for 48 h
+to induce inflammation and increase intracellular ROS levels.
+The M5 cocktail consisted of IL-22, IL-17A, IL-1α, TNF-α, and
+oncostatin M, each at a final concentration of 10 ng/mL. For
+the experimental group, cells were co-treated with the NCs
+(2.5 µg/mL) for the final 24 h of the 48-h M5 stimulation period.
+A blank control (no M5 induction) and an M5-only control (no
+NCs) were included. DCFH-DA was diluted to 15 µM in serum-
+free medium. After the treatments, the cell culture medium was
+removed, and cells were gently washed twice with pre-warmed
+PBS. The DCFH-DA working solution was added to cover the
+cells, followed by incubation at 37◦C in the dark for 30 min.
+Cells were then harvested (adherent cells were trypsinized and
+centrifuged at 1200 rpm for 5 min; suspension cells were directly
+centrifuged) and resuspended in PBS. Flow cytometry was per-
+formed with excitation at 488 nm and emission at 530 nm.
+DCFH-DA, a non-fluorescent probe, crosses the cell membrane
+and is hydrolyzed by intracellular esterases to DCFH (non-
+fluorescent). DCFH is oxidized by ROS (e.g., H2O2, ⋅OH, ⋅O2
+−)
+to fluorescent DCF, whose intensity correlates with ROS levels.
+Thus, the ability of Ag14–20Au5–11@FeTP to scavenge intracellular
+ROS was quantified. At least 10,000 events were collected per
+sample, and data were analyzed using FlowJo software.
+4.12
+Confocal Laser Scanning Microscope
+(CLSM)
+The experiment included the following groups: control (no
+treatment), M5 group (cells incubated with M5 for 48 h), and
+Ag14–20Au5–11@FeTP group. The M5 cocktail (IL-22, IL-17A, IL-1α,
+TNF-α, oncostatin M; each at 2.5 µg/mL) was used to stimulate
+cells and induce inflammation for 48 h. For the Ag14–20Au5–
+11@FeTP group, 1 mM of the NCs was added at the 24-h time
+14 of 18
+Advanced Functional Materials, 2026
+ 16163028, 2026, 47, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75477 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [23/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+point of M5 stimulation, followed by continued incubation for
+24 h. Cells from different treatment groups were washed with PBS
+and then incubated with 2 µM Calcein-AM solution in the dark
+at room temperature for 30 min, followed by another PBS wash.
+Cells were analyzed using a CLSM (Leica DMi8) with excitation at
+494 nm and emission at 517 nm. Sequential confocal images were
+acquired using a 40× objective.
+4.13
+RT-qPCR
+Cells were stimulated with the M5 cocktail for 48 h to induce
+inflammation. For the M5+Ag14–20Au5–11@FeTP group, 1 mM of
+the NCs was added at the 24-h time point, followed by continued
+incubation for 24 h. Total mRNA was extracted from cells, and
+RNA concentration was quantified using a spectrophotometer.
+Reverse transcription was performed to synthesize cDNA from
+the extracted RNA. Reaction mixtures were prepared using
+cDNA, forward and reverse primers for target genes (TNF-α,
+IL-6, IL-8) and the housekeeping gene (β-actin), along with
+qPCR master mix. The qPCR cycling conditions were: initial
+denaturation at 95◦C for 10 min; 40 cycles of denaturation
+at 95◦C for 15 s, and annealing/extension at 60◦C for 1 min
+with data acquisition. (Note: For skin tissue analysis, tissue was
+homogenized in Buffer RL on ice prior to mRNA extraction).
+4.14
+Psoriasis Mouse Model Induction
+All animal experiments were conducted in strict accordance with
+the NIH Guide for the Care and Use of Laboratory Animals
+(NIH Publication No. 85-23, revised 1985) and were approved
+by the Biomedical Ethics Committees of Qingdao University
+of Science and Technology and Anhui University. Eight-Toten-
+week-old female C57BL/6 mice were used for the experiments.
+The mice were housed under standard specific pathogen-free
+(SPF) conditions at a constant temperature (22 ± 2◦C) and
+humidity (50 ± 10%) with a 12-hour light/dark cycle. Six-week-
+old female Balb/c mice were used. Psoriasis-like dermatitis was
+induced using a commercially available imiquimod (IMQ) cream.
+4.15
+Psoriasis Prevention Experiment
+On day 0, the dorsal hair of the mice was shaved. Mice were
+randomly divided into three groups: Healthy control, IMQ group,
+and Ag14–20Au5–11@FeTP group. The Healthy group received no
+treatment. The IMQ group received a daily topical application of
+62.5 mg of IMQ cream on the shaved dorsal area (3 cm × 3 cm).
+The Ag14–20Au5–11@FeTP group received the same IMQ applica-
+tion, followed by topical application of Ag14–20Au5–11@FeTP 2 h
+later for prevention. The development of psoriatic symptoms was
+observed over one week.
+4.16
+Psoriasis Treatment Experiment
+On day 0, mice were shaved and randomly divided into four
+groups: Healthy control, IMQ group, Ag14–20Au5–11@FeTP treat-
+ment group, and BC (positive control) group. Starting from day
+0, all mice except the Healthy group received a daily topical
+application of 62.5 mg of IMQ cream on the shaved dorsal area
+(3 cm × 3 cm) for six consecutive days. By day 7, successful model
+induction was confirmed by the appearance of symptoms like
+skin thickening, erythema, and scaling. Treatment commenced
+on day 7.
+4.17
+Psoriasis Assessment (PASI Scoring)
+In both prevention and treatment experiments, the therapeutic
+effect was evaluated daily by assessing the PASI and recording
+body weight. The PASI score evaluates three aspects: skin thick-
+ness, erythema size, and scaling. Each is scored from 0 to 4:0 = no
+symptoms; 0–1 = mild; 1–2 = moderate; 2–3 = severe; 3–4 = very
+severe.
+4.18
+Histological Analysis
+Skin tissues were fixed in 4% paraformaldehyde for 48 h, washed
+under running water to remove residual fixative, and dehydrated
+through a graded ethanol series (70% →80% →95% →absolute
+ethanol). Tissues were cleared in xylene and embedded in paraf-
+fin blocks for sectioning and microscopic analysis. Major organs
+(heart, liver, spleen, lung, kidney) collected post-euthanasia were
+also processed for H&E staining. For staining, sections were
+deparaffinized in xylene (I, II, III; 10 min each), rehydrated,
+stained with hematoxylin, differentiated, rinsed, counterstained
+with eosin, dehydrated, cleared in xylene, and mounted for
+examination.
+For IHC staining, three different markers (CD4, IFN-γ, NF-
+κB p65) were used. Briefly, antigen retrieval was performed by
+heating slides in a microwave at 95–100◦C for 3 min, followed
+by 20 min at lower power. After cooling, slides were washed
+in PBS for 5 min, blocked with 2.5% normal horse serum
+(Vector Laboratories) at room temperature for 2 h, and incubated
+overnight at 4◦C with primary antibodies diluted in blocking
+serum (2.5 µg/mL for CD4, IFN-γ, NF-κB p65). After PBS washes,
+slides were treated with 3% H2O2 for 10 min, washed again,
+and incubated with appropriate secondary antibodies for 30 min.
+Color development was performed using 3,3’-diaminobenzidine
+(DAB) substrate for 4 min, followed by counterstaining with
+hematoxylin for 2 min, dehydration, clearing in xylene, and
+mounting. (Note: All antibodies were used at a 1:200 dilution.)
+4.19
+Transcriptomic Analysis
+Skin samples were collected and sent to Shanghai Majorbio
+Bio-pharm Technology Co., Ltd. (Shanghai, China). Total RNA
+was extracted from tissues, and its concentration and purity
+were checked. mRNA was enriched from total RNA, fragmented,
+and reverse-transcribed into cDNA. The double-stranded cDNA
+with sticky ends was end-repaired to blunt ends, and a single
+‘A’ nucleotide was added to the 3’ ends to facilitate adapter
+ligation. After adapter ligation, the product was purified and
+size-selected. The selected fragments were PCR-amplified and
+purified to obtain the final library. Sequencing was performed
+on a NovaSeq X Plus platform. After obtaining the raw reads,
+sequences were aligned to a reference genome for subsequent
+Advanced Functional Materials, 2026
+15 of 18
+ 16163028, 2026, 47, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75477 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [23/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+bioinformatics analysis. Differentially expressed genes (DEGs)
+were identified with the thresholds of |log2FC| ≥1 and FDR ≤0.05
+(DESeq2) or FDR ≤0.001 (DEGseq). All significant DEGs were
+further subjected to Gene Ontology (GO) and Kyoto Encyclopedia
+of Genes and Genomes (KEGG) enrichment analyses.
+4.20
+ELISA for Cytokine Measurement
+ELISA kits were used to quantify the expression of cytokines
+IL-6, IL-17, TNF-α, IL-23, and IL-1β. Briefly, all reagents were
+brought to room temperature. Standard and sample wells were
+set up. Standard wells received 50 µL of different concentrations
+of standards. Sample wells first received 10 µL of test sample,
+followed by 40 µL of sample diluent (i.e., fivefold dilution). Blank
+wells received no addition. Except for blank wells, 100 µL of
+HRP-conjugated detection antibody was added to each well. The
+plate was sealed and incubated at 37◦C for 60 min. The liquid
+was discarded, and the plate was patted dry on absorbent paper.
+Wells were washed by filling with wash buffer, letting stand for
+1 min, discarding the buffer, and patting dry. This wash step was
+repeated five times. Then, 50 µL each of Substrate A and B was
+added to each well, followed by incubation at 37◦C in the dark
+for 15 min. The reaction was stopped by adding 50 µL of stop
+solution per well. Absorbance at 450 nm was measured using a
+microplate reader within 15 min. (Note: Specific details followed
+the manufacturer’s protocol of the Jiangsu Meike ELISA kits).
+4.21
+Skin Uptake Experiment
+Healthy Balb/c mice were shaved on day 0 and randomly divided
+into Healthy and IMQ groups. The IMQ group received daily
+topical application of IMQ cream on the shaved back for one
+week to establish the psoriasis model. On day 7, all mice were
+reshaved to ensure identical dorsal skin conditions. Gauze pads
+(2.5 cm × 2.5 cm) soaked with 200 µL of 500 ppm solutions of
+either Ag14–20Au5–11 NCs or Ag14–20Au5–11@FeTP were applied to
+the backs of healthy and model mice, respectively. The gauze was
+secured with medical adhesive tape and remained in place for
+24 h. After removal, the skin was gently wiped with saline-soaked
+cotton. Mice were euthanized, and skin tissue of equal size (2 cm
+× 2 cm) was collected. The tissue was digested with sufficient aqua
+regia (HCl: HNO3 = 3:1 by volume), followed by dilution with a
+matrix solution (2% HCl and 2% HNO3). An internal standard of
+10 ppb Indium (In) was added. The digestate was filtered through
+a 0.22 µm syringe filter and analyzed by inductively coupled
+plasma mass spectrometry (ICP-MS).
+4.22
+Statistical Analysis
+Prior to statistical analysis, no data transformation was applied
+and no outliers were excluded. All data were expressed as mean
+± standard deviation (SD). The sample size for each group was
+n = 3, as indicated in the corresponding figure captions. Differ-
+ences among multiple groups were analyzed using an ordinary
+one-way analysis of variance (ANOVA), while comparisons
+between two groups were performed using a two-tailed Student’s
+t-test using OriginPro 2025 Learning Edition software. A p
+value < 0.05 was considered statistically significant. Statistical
+significance was denoted as *p < 0.05, **p < 0.01, ***p < 0.001,
+and ****p < 0.0001.
+4.23
+Ethics Statement
+This study was performed in strict accordance with the NIH
+guidelines for the care and use of laboratory animals (NIH
+Publication No. 85-23 Rev. 1985) and was approved by the
+Biomedical Ethics Committee of Qingdao University of Science
+and Technology (NO. QKDLL-2025-080) and Anhui University
+Animal Care and Use Committee (IACUC(AHU)-2025-056).
+Acknowledgements
+This work is supported by the National Natural Science Foundation of
+China (22371153, 22071127, 22374001), Shandong Province Natural Sci-
+ence Foundation (ZR2024JQ002, ZR2024QE020), and College Students’
+Innovative Entrepreneurial Training Plan Program (S202410426052).
+Conflicts of Interest
+The authors declare no conflicts of interest.
+Data Availability Statement
+The data that support the findings of this study are available on request
+from the corresponding author. The data are not publicly available due to
+privacy or ethical restrictions.
+References
+1. T. Bieber, “Disease Modification in Inflammatory Skin Disorders:
+Opportunities and Challenges,” Nature Reviews Drug Discovery 22 (2023):
+662–680, https://doi.org/10.1038/s41573-023-00735-0.
+2. A. W. Armstrong, A. Blauvelt, K. Callis Duffin, et al., “Psoriasis,” Nature
+Reviews Disease Primers 11 (2025): 45, https://doi.org/10.1038/s41572-025-
+00630-5.
+3. X. Lu, L. Kuai, F. Huang, et al., “Single-atom Catalysts-based Catalytic
+ROS Clearance for Efficient Psoriasis Treatment and Relapse Prevention
+via Restoring ESR1,” Nature Communications 14 (2023): 6767, https://doi.
+org/10.1038/s41467-023-42477-y.
+4. I. B. McInnes, L. C. Coates, P. J. Mease, et al., “Sonelokimab, an
+IL-17A/IL-17F-inhibiting Nanobody for Active Psoriatic Arthritis: a Ran-
+domized, Placebo-controlled Phase 2 Trial,” Nature Medicine 31 (2025):
+4160–4171, https://doi.org/10.1038/s41591-025-03971-6.
+5. D. Wu, A. A. Hailer, S. Wang, et al., “A Single-cell Atlas of IL-
+23 Inhibition in Cutaneous Psoriasis Distinguishes Clinical Response,”
+Science immunology 9 (2024): adi2848.
+6. R. Al-Horani, T. Chui, and B. Hamad, “The Pipeline and Market
+for Psoriasis Drugs,” Nature Reviews Drug Discovery 23 (2024): 492–493,
+https://doi.org/10.1038/d41573-024-00018-2.
+7. Y. Zhang, Y. Zhang, R. Liang, J. Zou, R. Pei, and X. Chen, “Targeted
+ROS Scavenging for Disease Therapies Using Nanomaterials,” Advanced
+Materials 37 (2025): 04435, https://doi.org/10.1002/adma.202504435.
+8. Y. Wang, X. Sun, S. Wang, et al., “Nanozyme-enabled Cancer Thera-
+nostics: Bridging Enzyme Mimicry and Material Intelligence,” Materials
+Horizons 12 (2025): 8895–8919.
+9. Q. Yao, M. Zhu, Z. Yang, et al., “Molecule-Like Synthesis of Ligand-
+protected Metal Nanoclusters,” Nature Reviews Materials 10 (2024): 89–
+108, https://doi.org/10.1038/s41578-024-00741-7.
+16 of 18
+Advanced Functional Materials, 2026
+ 16163028, 2026, 47, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75477 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [23/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+10. S. Li, N. N. Li, X. Y. Dong, S. Q. Zang, and T. C. W. Mak, “Chemical
+Flexibility of Atomically Precise Metal Clusters,” Chemical Reviews 124
+(2024): 7262–7378, https://doi.org/10.1021/acs.chemrev.3c00896.
+11. X. Zou, X. Kang, and M. Zhu, “Recent Developments in the Investi-
+gation of Driving Forces for Transforming Coinage Metal Nanoclusters,”
+Chemical Society Reviews 52 (2023): 5892–5967, https://doi.org/10.1039/
+D2CS00876A.
+12. R. K. Gupta, Z. Wang, B. Mohan, C.-H. Tung, and D. Sun,
+“Advancements in Atomically Precise Nanocluster Protected by Thia-
+calix[4]Arene,” Advanced Materials 36 (2024): 2410054, https://doi.org/10.
+1002/adma.202410054.
+13. Y. Shi, Z. Wu, M. Qi, et al., “Multiscale Bioresponses of Metal
+Nanoclusters,” Advanced Materials 36 (2024): 2310529, https://doi.org/10.
+1002/adma.202310529.
+14. I. Chakraborty and T. Pradeep, “Atomically Precise Clusters of Noble
+Metals: Emerging Link between Atoms and Nanoparticles,” Chemi-
+cal Reviews 117 (2017): 8208–8271, https://doi.org/10.1021/acs.chemrev.
+6b00769.
+15. H. Wang, C.-L. Lin, E. Fan, et al., “Gram-Scale Synthesis of a
+Laccase-Like Cu36 Nanocluster with Enhanced Catalytic Activity and
+Stability,” ACS Nano 19 (2025): 25295–25303, https://doi.org/10.1021/
+acsnano.5c06249.
+16. E. L. Albright, T. I. Levchenko, V. K. Kulkarni, et al., “N -Heterocyclic
+Carbene-Stabilized Atomically Precise Metal Nanoclusters,” Journal of
+the American Chemical Society 146 (2024): 5759–5780, https://doi.org/10.
+1021/jacs.3c11031.
+17. R. K. Gupta, Z. Wang, B. Mohan, C.-H. Tung, and D. Sun, “Atomically
+Precise Coinage Metal Nanoclusters with Exposed Metal Sites: Unlocking
+Reactivity and Functionality,” Advanced Functional Materials 35 (2025):
+2507047, https://doi.org/10.1002/adfm.202507047.
+18. M. Chen, C. Guo, L. Qin, et al., “Atomically Precise Cu Nanoclusters:
+Recent Advances, Challenges, and Perspectives in Synthesis and Catalytic
+Applications,” Nano-Micro Letters 17 (2024): 83, https://doi.org/10.1007/
+s40820-024-01555-6.
+19. Q. You, H. Wang, Y. Zhao, et al., “Bottom-Up Construction of Metal–
+Organic Framework Loricae on Metal Nanoclusters with Consecutive
+Single Nonmetal Atom Tuning for Tailored Catalysis,” Journal of the
+American Chemical Society 146 (2024): 9026–9035, https://doi.org/10.1021/
+jacs.3c13635.
+20. J.-H. Huang, H. Zhang, Z.-Y. Wang, et al., “Atomic-Precise Active Site
+Surgery on Carboranylthiolate-Protected Silver Nanocluster Catalysts,”
+Journal of the American Chemical Society 147 (2025): 16593–16601, https://
+doi.org/10.1021/jacs.5c03721.
+21. S. Maity, S. Kolay, S. Chakraborty, A. Devi, and A. Patra, “A Compre-
+hensive Review of Atomically Precise Metal Nanoclusters with Emergent
+Photophysical Properties towards Diverse Applications,” Chemical Society
+Reviews 54 (2025): 1785–1844, https://doi.org/10.1039/D4CS00962B.
+22. V. Tiwari and T. Karmakar, “Modeling Catalytic Reaction on Ligand-
+protected Metal Nanoclusters,” Chemical Science 16 (2025): 12080–12086,
+https://doi.org/10.1039/D5SC00421G.
+23. H. Ma, X. Zhang, L. Liu, et al., “Bioactive NIR-II Gold Clusters for
+Three-dimensional Imaging and Acute Inflammation Inhibition,” Science
+Advances 9 (2023): adh7828, https://doi.org/10.1126/sciadv.adh7828.
+24. C. Zhu, L. Lu, F. Li, X. Kang, and M. Zhu, “Size Disproportionation
+among Nanocluster Transformations,” Chemical Science 15 (2024): 16637–
+16644, https://doi.org/10.1039/D4SC04884A.
+25. S. Biswas, Y. Shingyouchi, M. Kamiyama, et al., “Atomically Precise
+[Cu23H4(SC7H7)18 (PPh3)6] Nanocluster: Structural Integration of John-
+son Solids through a Cu(0) Center and Electrocatalytic Functionality,”
+Journal of the American Chemical Society 147 (2025): 23733–23742, https://
+doi.org/10.1021/jacs.5c05665.
+26. J. Sun, J. Liu, H.-F. Su, et al., “Eight-electron Copper-hydride
+Nanoclusters: Synthesis, Structure, Alloying Chemistry and Photolumi-
+nescence,” Chemical Science 16 (2025): 6392–6401, https://doi.org/10.1039/
+D4SC08547G.
+27. T. Xu, W.-D. Si, C. Zhang, et al., “Photoswitchable Arylazopyrazole-
+Functionalized Ag8 Nanoclusters with Light-Modulated Photolumines-
+cence,” Journal of the American Chemical Society 147 (2025): 21468–21477,
+https://doi.org/10.1021/jacs.5c01348.
+28. X. Liu, X. Zhou, X. Lei, et al., “An Unprecedented Two-Dimensional
+Pattern in Gold Nanoclusters Bred by Interlocking Au4 Blocks,” Journal
+of the American Chemical Society 147 (2025): 42758–42765.
+29. S. Gratious, B. Li, D. Mondal, et al., “Identifying the Super-
+atomic AuCu56 Nanocluster through a Ligand-exchange Coupled Metal-
+exchange Induced Transformation,” Chemical Science 16 (2025): 11849–
+11857, https://doi.org/10.1039/D5SC02515J.
+30. Z. Pang, N. Ren, Y. Wu, et al., “Tuning Ligands Ratio Allows for
+Controlling Gold Nanocluster Conformation and Activating a Nonan-
+timicrobial Thiol Fragrance for Effective Treatment of MRSA-Induced
+Keratitis,” Advanced Materials 35 (2023): 2303562, https://doi.org/10.1002/
+adma.202303562.
+31. H. Xiang, Y. Wang, X. Xu, et al., “High-Throughput Search for
+Photostrictive Materials Based on a Thermodynamic Descriptor,” Journal
+of the American Chemical Society 146 (2024): 33732–33742, https://doi.org/
+10.1021/jacs.4c11484.
+32. F. Hu, G. Yang, L.-M. Zheng, G.-J. Liang, and Q.-M. Wang, “Decipher-
+ing Icosahedra Structural Evolution with Atomically Precise Silver Nan-
+oclusters,” Science 389 (2025): 921–924, https://doi.org/10.1126/science.
+adx6639.
+33. X.-K. Wan, X.-S. Han, Z.-J. Guan, W.-Q. Shi, J.-J. Li, and Q.-M. Wang,
+“Interplay of Kernel Shape and Surface Structure for NIR Luminescence
+in Atomically Precise Gold Nanorods,” Nature Communications 15 (2024):
+7214, https://doi.org/10.1038/s41467-024-51642-w.
+34. G. Deng, S. Malola, T. Ki, et al., “Structural Isomerism in Bimetallic
+Ag20Cu12 Nanoclusters,” Journal of the American Chemical Society 146
+(2024): 26751–26758, https://doi.org/10.1021/jacs.4c06832.
+35. J. Wang, J. Cai, K.-X. Ren, et al., “Stepwise Structural Evolution toward
+Robust Carboranealkynyl-protected Copper Nanocluster Catalysts for
+Nitrate Electroreduction,” Science Advances 10 (2024): adn7556, https://
+doi.org/10.1126/sciadv.adn7556.
+36. Z. Yang, Y. Wang, R. Zhang, T. Chen, and J. Xie, “Precise Surface
+Engineering of Metal Nanoclusters: Ligand Programming for Functional-
+ity Design,” Advanced Materials 37 (2025): 08578, https://doi.org/10.1002/
+adma.202508578.
+37. M. Wen, T. Wang, N. Li, et al., “Polyphenol-Copper Derived
+Self-Cascade
+Nanozyme
+Hydrogel
+in
+Boosting
+Oxygenation
+and
+Robust
+Revascularization
+for
+Tissue
+Regeneration,”
+Advanced
+Functional Materials 34 (2024): 2403634, https://doi.org/10.1002/adfm.
+202403634.
+38. Y. Zhang, R.-F. Liu, S. Zhang, and M.-B. Li, “Functionalization of Gold-
+Pincer Nanocluster for Asymmetric Catalysis,” Journal of the American
+Chemical Society 147 (2025): 34079–34088, https://doi.org/10.1021/jacs.
+5c12393.
+39. C. Lu, C. Meng, Y. Li, et al., “A Probe for NIR-II Imaging and
+Multimodal Analysis of Early Alzheimer’s Disease by Targeting CTGF,”
+Nature Communications 15 (2024): 5000, https://doi.org/10.1038/s41467-
+024-49409-4.
+40. F. Xiao, Y. Chen, J. Qi, Q. Yao, J. Xie, and X. Jiang, “Multi-Targeted
+Peptide-Modified Gold Nanoclusters for Treating Solid Tumors in the
+Liver,” Advanced Materials 35 (2023): 2210412, https://doi.org/10.1002/
+adma.202210412.
+41. H.-H. Deng, K.-Y. Huang, Y. Zhong, et al., “Enzyme-activatable
+Charge Transfer in Gold Nanoclusters,” Chemical Science 15 (2024):
+8922–8933.
+42. B. Zhang, M. F. Matus, Q. Yao, et al., “Unraveling the Stoichiometric
+Interactions and Synergism between Ligand-Protected Gold Nanoparti-
+Advanced Functional Materials, 2026
+17 of 18
+ 16163028, 2026, 47, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75477 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [23/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+cles and Proteins,” Journal of the American Chemical Society 147 (2025):
+6404–6414, https://doi.org/10.1021/jacs.4c09879.
+43. K. Zheng and J. Xie, “Composition-Dependent Antimicrobial Ability
+of Full-Spectrum AuxAg25–x Alloy Nanoclusters,” ACS Nano 14 (2020):
+11533–11541.
+44. K. Zheng, V. Fung, X. Yuan, D. Jiang, and J. Xie, “Real Time
+Monitoring of the Dynamic Intracluster Diffusion of Single Gold Atoms
+into Silver Nanoclusters,” Journal of the American Chemical Society 141
+(2019): 18977–18983, https://doi.org/10.1021/jacs.9b05776.
+45. Y. Chen, C. Qu, X. Yang, et al., “Boosting Electrochemiluminescence
+in Ring-Contracted Porphyrins via Central-Coordination Modulation,”
+Advanced Functional Materials 35 (2025): 09033, https://doi.org/10.1002/
+adfm.202509033.
+46. G. Sivakumar, A. Babu, B. Ghanti, et al., “Dual Fluorometric
+and Colorimetric Chemosensor Based on Poly(Arylene Ether Nitrile)s
+Functionalized Zn(II)Porphyrins for Selective Detection of Cyanide,”
+Advanced Functional Materials 35 (2025): 2419620, https://doi.org/10.
+1002/adfm.202419620.
+47. Y. Li, H. Yuan, Y.-L. Cheng, et al., “Hydrogen-bonded Organic
+Framework for Regulating Pathogenic Autoantigen and Oxidative Stress
+in Psoriasis Treatment,” National Science Review 12 (2025): nwaf132,
+https://doi.org/10.1093/nsr/nwaf132.
+48. C. Wang, Q. Pan, S. Chen, et al., “Strain-Promoted mRNA Transdermal
+Delivery by Lipoic Lipid Nanoparticles for Therapeutic Skin Genome
+Editing,” Journal of the American Chemical Society 147 (2025): 34449–
+34465, https://doi.org/10.1021/jacs.5c08376.
+49. D. Bi, F. Qu, W. Xiao, et al., “Reactive Oxygen Species-Responsive
+Gel-Based Microneedle Patches for Prolonged and Intelligent Psoriasis
+Management,” ACS Nano 17 (2023): 4346–4357, https://doi.org/10.1021/
+acsnano.2c08979.
+50. R. Han, L. W. C. Ho, Q. Bai, et al., “Alkyl-Terminated Gold Nanoparti-
+cles as a Self-Therapeutic Treatment for Psoriasis,” Nano Letters 21 (2021):
+8723–8733, https://doi.org/10.1021/acs.nanolett.1c02899.
+51. Y. Sun, F. Lou, X. Cai, et al., “CCR7+ dendritic Cells Expressing
+both IL-23A and IL-12B Potentially Contribute to Psoriasis Relapse,”
+Nature Communications 16 (2025): 7581, https://doi.org/10.1038/s41467-
+025-62874-9.
+52. T. Seremet, J. Di Domizio, A. Girardin, et al., “Immune Modules
+to Guide Diagnosis and Personalized Treatment of Inflammatory Skin
+Diseases,” Nature Communications 15 (2024): 10688, https://doi.org/10.
+1038/s41467-024-54559-6.
+53. L. Yu, Y. Fu, R. Miao, et al., “Regulatory T Cells and Their Derived
+Cell Pharmaceuticals as Emerging Therapeutics against Autoimmune
+Diseases,” Advanced Functional Materials 34 (2024): 2405133, https://doi.
+org/10.1002/adfm.202405133.
+54. D. Wu, X. Shou, Y. Yu, et al., “Biologics-Loaded Photothermally
+Dissolvable Hyaluronic Acid Microneedle Patch for Psoriasis Treatment,”
+Advanced Functional Materials 32 (2022): 2205847, https://doi.org/10.
+1002/adfm.202205847.
+Supporting Information
+Additional supporting information can be found online in the Supporting
+Information section.
+SupportingFile: adfm75477-sup-0001-SuppMat.docx.
+18 of 18
+Advanced Functional Materials, 2026
+ 16163028, 2026, 47, Downloaded from https://advanced.onlinelibrary.wiley.com/doi/10.1002/adfm.75477 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [23/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

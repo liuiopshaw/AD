@@ -1,0 +1,892 @@
+Detecting Interactions between Nanomaterials
+and Cell Membranes by Synthetic Nanopores
+Binquan Luan,*,†
+Shuo Zhou,‡ Deqiang Wang,‡ and Ruhong Zhou*,†
+†Computational Biology Center, IBM Thomas J. Watson Research, Yorktown Heights, New York 10598, United States
+‡Chongqing Institute of Green and Intelligent Technology, Chinese Academy of Sciences, Chongqing 400714, China
+*
+S Supporting Information
+ABSTRACT: Engineered nanomaterials have been increasingly
+utilized in industry for various consumer products, environmental
+treatments, energy storage, and biomedical applications. Meanwhile, it
+has been established that certain nanomaterials can be toxic to
+biological cells from extensive experimental and theoretical studies.
+Despite that the exact molecular mechanisms of this nanomaterial
+toxicity are still not well understood, it is ubiquitous that their
+interactions with cell membranes, through either endocytosis or
+penetration (and thus potential lysis), act as the ﬁrst step toward the
+inﬂammation or even the death of a cell. To facilitate the study of
+nanomaterial−membrane interactions, here we demonstrate a nanopore-based single-molecule approach that can be
+applied to monitor a speciﬁc nanomaterial−membrane interaction in real time. Combined with molecular dynamics and
+experimental approaches, we show how an ionic current can be used to detect membrane damage by a graphene nanosheet
+and illustrate the underlying molecular mechanism. More generally, we expect that measured transmembrane ionic currents
+(both DC and AC) can signify many particle-induced membrane modiﬁcations, such as hole formation, particle adsorption,
+and protein insertion.
+KEYWORDS: bionano, nanotoxicity, nanopore, biosensor, membrane damage, graphene, nanomaterials
+T
+he membrane of a biological cell encloses cytoplasm,
+such as cytosol and organelles, and protects the cell
+from its extracellular environment. Functionally, the
+membrane regulates the transport of nutrients into and wastes
+out of a cell. The damage of a cell membrane can often lead to
+the leakage of intracellular substances (e.g., ions, mRNA, and
+proteins), which may trigger necrosis for cellular death. During
+bacterial infection that targets a cell membrane, protein toxins
+(also known as pore-forming-proteins, such as α-hemolysin
+from Staphylococcus aureus1) can self-assemble into a trans-
+membrane channel on the host membrane, causing cell lysis or
+leakage, which is the major mechanism for cellular damage.2
+Associated with Alzheimer’s disease (a deadly neurodegenera-
+tion disease), amyloid-β 42 peptides (Aβ42), which are
+intrinsically disordered, can surprisingly aggregate on a cell
+membrane and form pores with various sizes.3,4 Recently, the
+same concept or mechanism has been applied to the design of
+synthesized antibacterial drugs. For example, positively charged
+peptides or polymers can target the negatively charged bacterial
+membrane and eﬀectively kill bacteria by forming holes on their
+membrane.5−7
+Engineered nanomaterials have been commercially used in
+cosmetics, catalysis, microelectronics, food, and drug industries,
+due to their attractive physical and chemical properties.
+However, this is accompanied by growing concerns on
+nanomaterials’ biocompatibility (i.e., potential harmful inter-
+actions with biological systems).8,9 Some nanomaterials have
+been known to induce cytotoxicity to biological cells by
+damaging cell membranes, similar to protein toxins and
+amyloid peptides. For example, hydrophobic nanomaterials of
+particular sizes can penetrate into a cell membrane directly (a
+passive transport in contrast to endocytosis) and leave open
+pores in the bilayer.10 A poly(methacrylic acid) (PMAA)
+coated gold nanoparticle (AuNP) can promote the initial
+adsorption on a lipid membrane and later abduct a patch of
+membrane lipids leaving a large hole in the bilayer.11
+Additionally, graphene nanosheets have been shown to
+aggressively extract lipids out of a cell membrane,12,13 causing
+damage to the membrane.
+The adsorption of a nanoparticle on a supported lipid
+bilayer,14 followed by possible damage to the membrane, can be
+experimentally monitored using atomic force microscopy
+(AFM)15 or a quartz crystal microbalance with dissipation
+(QCM-D).11,16 Alternatively, pore formation as a consequence
+of interactions between nanomaterials and vesicles (with
+molecular dyes inside) can be discovered by applying
+ﬂuorescence techniques to optically measure dye leakage.17
+Received:
+October 2, 2017
+Accepted:
+November 21, 2017
+Published: November 21, 2017
+Article
+www.acsnano.org
+Cite This: ACS Nano 2017, 11, 12615−12623
+© 2017 American Chemical Society
+12615
+DOI: 10.1021/acsnano.7b07005
+ACS Nano 2017, 11, 12615−12623
+Downloaded via QINGDAO UNIV SCIENCE AND TECHNOLOGY on June 24, 2026 at 03:17:43 (UTC).
+See https://pubs.acs.org/sharingguidelines for options on how to legitimately share published articles.
+
+To facilitate and simplify experimental detection of nanoma-
+terial−membrane interactions, here, we propose a nanopore-
+based single-molecule technique that has been widely used to
+detect biomolecules (such as DNA18 and proteins19) electro-
+chemically. Similar to a black lipid membrane (BLM)14 at
+macroscale, a patch of lipid bilayer is self-assembled inside a
+nanometer-sized pore (or generally <1 μm) drilled through a
+thin (∼5 nm) solid-state (e.g., SiO2) membrane. For simplicity,
+lipids outside the pore due to lipid-spanning are not modeled.
+In a typical ﬂuidic device, such a membrane separates the cis
+and trans ﬂuidic chambers, with an external electric ﬁeld E
+applied normal to the membrane (Figure 1a). After loading the
+to-be-tested nanomaterials in the electrolyte on the cis side, it is
+expected that the potential nanomaterial−membrane inter-
+actions can be conveniently monitored by measuring the ionic
+currents through the membrane.
+To prove the principle, we carried out molecular dynamics
+(MD) simulations on the potential harmful eﬀects resulting
+from a graphene nanosheet’s interaction with the lipid bilayer
+supported by the solid-state nanopore. The MD method has
+been extensively applied in studying both biomolecules20−23
+and nanotechnologies.24−27 Previously, MD simulations have
+shown that a graphene nanosheet can spontaneously insert into
+a lipid bilayer through its sharp edges and corners,12,13
+destructively extracting lipids out of the membrane.12,28
+Recently, through both experimental and simulation ap-
+proaches, it was demonstrated that the extensive loss of lipids
+due to the extraction by a graphene nanosheet may eventually
+yield a hole in the membrane.17,29 Here, we focus on the
+dynamic graphene−membrane interactions after graphene’s
+insertion and show how the nanopore sensor can be used to
+detect the hole-formation in the membrane. Generally, this
+method can be applied to study interactions between a cell
+membrane and many other engineered nanomaterials, provid-
+ing a means for evaluating their nanotoxicity in vitro.
+RESULTS AND DISCUSSION
+The simulation system for nanopore-based assessments of
+potential nanotoxicity of nanomaterials toward a cell membrane
+is illustrated in Figure 1. Brieﬂy, to obtain the SiO2 nanopore in
+silico, atoms in the solid membrane were fully mixed at a high
+temperature before being quenched to 300 K. During the
+quenching process, atoms within 5 nm of the z axis were
+harmonically pushed out, forming a cylindrical channel. Finally,
+the system was equilibrated at 1 bar and 300 K, with the
+periodic boundary condition applied in the x- and y-directions
+only. The thickness of the equilibrated membrane is about 5
+nm.
+A patch of pre-equilibrated 1-palmitoyl-2-oleoyl-sn-glycero-3-
+phosphocholine (POPC) lipid bilayer was placed inside a 10
+nm diameter nanopore (D = 10 nm). Previous studies30 have
+shown that such membrane model can yield insightful
+understanding of the interactions between nanomaterials and
+a cell membrane. The membrane complex was further solvated
+in a 0.15 M KCl electrolyte (Figure 1a), separating the
+electrolyte into cis and trans ﬂuidic chambers. After
+minimization and equilibration, the lipid density in the POPC
+membrane is about one lipid per 67.7 Å2, which is comparable
+to that measured in experiment.31 Experimentally, the critical
+biasing voltage is 0.3 V, below which electroporation does not
+occur, for example, a typical voltage of 0.15 V used for
+monitoring the ssDNA translocation through an α-hemolysin
+channel in a supported lipid bilayer.18 In simulation, due to the
+force ﬁeld32 (describing POPC lipids), a much larger baising
+voltage (e.g., 2 V) is required for the poration.33 Here, we
+applied a biasing electric voltage of 0.5 V across the entire
+system (height ∼16 nm), ensuring that no electroporation can
+occur in our simulations.
+As shown in previous studies, a graphene nanosheet
+spontaneously enters a cell membrane through its sharp
+edges;12,13 here we focus on possible subsequent membrane
+damages after graphene’s entry into the cell membrane. Two
+docking positions of a graphene nanosheet in the membrane
+were investigated: (1) a graphene nanosheet (63.8 × 136.3 Å2)
+enters only the upper layer of the membrane (Figure 1b),
+referred to as Sim-1 hereafter; (2) the same graphene
+nanosheet penetrates the bilayer and is “symmetrically docked”
+on the membrane with equally exposed segments on both sides
+of the membrane (Figure 1c), referred to as Sim-2 hereafter. In
+both cases, the graphene nanosheet was perpendicular to the
+membrane surface, with its position ﬁxed during all simulations.
+Positions of the lipids that are in conﬂict with the graphene
+nanosheet were slightly moved or reoriented, and the top view
+of an inserted graphene nanosheet after minimization and
+equilibration is shown in Figure S1 in the Supporting
+Information.
+Due to the strong van der Waals interaction, as well as
+hydrophobic interaction (due to water), between lipids and the
+graphene nanosheet, consistent with previous studies,12,28 we
+also observed the vigorous extraction of lipids toward the
+graphene surface. In Sim-1, since the graphene nanosheet only
+partially penetrated into the membrane, the strong lipid-
+graphene interaction drove the entire membrane to bend
+toward the graphene after a few nanoseconds (Figure S2a),
+allowing the lower layer of the lipid membrane to cover the
+graphene nanosheet as well. After that, the process of lipid-
+Figure 1. Setup of molecular dynamics (MD) simulations. (a) The
+nanopore system; Si and O atoms in the solid-state nanopore are
+shown in yellow and red; the POPC lipids ﬁlling the nanopore are
+shown as van der Waals spheres; K+ and Cl−are represented as tan
+and cyan dots; water is shown transparently. (b) A graphene
+nanosheet enters halfway through the membrane (Sim-1). (c) A
+graphene nanosheet enters the membrane entirely and is “sym-
+metrically docked” on the membrane with equally exposed
+segments on both sides of the membrane (Sim-2).
+ACS Nano
+Article
+DOI: 10.1021/acsnano.7b07005
+ACS Nano 2017, 11, 12615−12623
+12616
+
+extraction toward the graphene nanosheet (exposed in the cis
+chamber) started and the number of extracted lipids increased
+with time as shown in Figure 2a. In Sim-2, because the
+graphene nanosheet was fully inserted, lipids were allowed to be
+extracted toward graphene fragments in both cis and trans
+chambers (Figure 2b, Figure S2b).
+In these proof-of-principle simulations, we modeled a small
+graphene nanosheet that can only be covered by 30 to 40 lipids.
+For example, at around 100 ns in Sim-1 (the end of the black
+line in Figure 2a), the exposed graphene nanosheet was fully
+covered by extracted lipids (see inset in Figure 2a). To model
+the toxic eﬀect by a larger nanosheet, we divided the entire
+simulation into several stages. In order to continue extracting
+lipids, at the end of each stage all extracted lipids covering the
+exposed nanosheet were removed from the simulation system.
+After proper equilibration in the NPT ensemble for 0.5 ns with
+all heavy (non-hydrogen) atoms in lipids restrained, the
+simulation resumes in the NVT ensemble in the next stage.
+We carried out four and ﬁve simulation stages in Sim-1 and
+Sim-2, respectively. Due to the removal of extracted lipids, the
+dimension (along z axis) of the simulation box were slightly
+reduced in latter stages, e.g. 16.35, 16.07, 15.90, and 15.80 nm
+in stages 1−4 in Sim-1. Thus, this simulation approach allows
+us to investigate the depenency of graphene’s size on the pore
+formation (see below).
+Overall, the rates of lipid extraction in Sim-1 and Sim-2 are
+comparable, as shown from the slopes (dN/dt) of the lines in
+Figure 2. Roughly, one lipid was extracted every 4 to 5 ns. This
+rate is comparable to the result reported under a similar
+condition in the previous study12 without applying the electric
+ﬁeld, suggesting that the applied electric ﬁeld barely aﬀected the
+lipid-extraction process. However, both systems behaved quite
+diﬀerently during the beginning stage. The fast extraction at the
+beginning of Sim-1 was facilitated by the initial bending of the
+entire membrane toward the graphene nanosheet in the cis
+chamber. Energetically, the lower lipid−lipid interaction energy
+in the bent membrane (with an increase surface area) yields the
+faster lipid-extraction process in Sim-1 in the beginning. In later
+stages, the lipid extraction in Sim-2 was slightly faster because
+lipids can be extracted from both sides of the membrane.
+Destructive and vigorous extraction of lipids from the
+membrane would inevitably damage the membrane after
+some time. Therefore, the above lipid-extraction process can
+be monitored conveniently by measuring the ionic current
+through the lipid membrane. From the trajectories of Sim-1 and
+Sim-2, we calculated the time-dependent ionic currents I=
+∑(qivi)/H, where H is the system height; qi and vi are the
+charge and the velocity of an ith ion, respectively. At the
+beginning the membrane was not damaged, so the average
+trans-membrane current was zero as shown in Figure 3.
+Even after the lipid extraction started, in the early stages, the
+membrane spanned the entire nanopore despite the loss of
+lipids. Thus, the ionic current did not increase immediately
+after the lipid-extraction process occurred. Figure 3 shows that
+in both Sim-1 and Sim-2, the average current remained at zero
+for about 160 ns, during which about 40 lipids were extracted
+onto the graphene nanosheet (Figure 2a). After this critical
+point (t ∼160 ns), currents in both simulations surged to about
+0.5 nA, indicating a signiﬁcant amount of ions permeated
+through the lipid membrane. From the trajectory analyses of
+both systems, a hole was observed in the damaged membrane,
+which increased its size over time(Figure 3c, and see movie S1
+in Supporting Information). Consistently, the hole formation in
+the damaged membrane in either Sim-1 or Sim-2 occurred after
+about the same amount of lipids (∼40) were extracted. In the
+current simulation setup, there were a total of 234 lipids in the
+membrane. Therefore, our results suggest that a hole can form
+after the membrane loses about 17% of its lipids, which also sets
+the size limit for a graphene nanosheet in order to produce a
+pore in the membrane. In a live cell, due to the diﬀusion of
+excess surrounding lipids, losing 17% of local lipids may not
+yield a pore. Actually, this result suggests that a pore might
+form only if a cell membrane uniformly loses 17% of its entire
+lipids. Previously, it was found that in order to yield a hole in
+Figure 2. Time-dependent number of POPC lipids extracted onto
+the graphene nanosheet in Sim-1 (a) and in Sim-2 (b).
+Figure 3. Ionic currents through the nanopore during the Sim-1 (a)
+and the Sim-2 (b). Gray lines, currents averaged over 1 ns intervals;
+black lines, currents averaged over 10 ns intervals. (c) Snapshots of
+the hole-formation in the lipid membrane in Sim-1.
+ACS Nano
+Article
+DOI: 10.1021/acsnano.7b07005
+ACS Nano 2017, 11, 12615−12623
+12617
+
+the membrane, a graphene nanosheet should be large enough
+or multiple small graphene nanosheets are required.29
+After the pore formation, because of the continuous lipid
+extraction (Figure 2), ionic currents increased accordingly
+(Figure 3). Thus, at this stage, the measured current is
+proportional to the rate of lipid-extraction, that is, I ≈dN/dt. In
+Sim-1, the current increased to a larger value (∼1 nA) than the
+one in Sim-2, because more lipids were extracted and thus a
+larger hole was formed in the membrane in Sim-1 at the end of
+simulation. It can be expected that, given more simulation time,
+all lipids near the graphene nanosheet could be extracted and
+the hole in the membrane could grow larger. Eventually, direct
+interactions between lipids in the membrane and the graphene
+nanosheet become impossible, which yields a saturated ionic
+current.
+To highlight the pore formation process, we calculated the
+number of water molecules that entered the membrane and
+were present in a 5-Å-thick layer near the bilayer interface, or
+the overlap region of the lipid tails in both upper and lower
+layers (e.g., 5 Å < z < 10 Å). Generally, a water molecule can
+stay near the headgroup of a lipid but can only temporally enter
+the hydrophobic lipid-tail region in the membrane. By selecting
+water molecules found deeply inside the membrane, we
+calculated the number of water molecules NW that contributed
+to the hole formation. In each simulation, NW ﬂuctuates near
+zero in the beginning, indicating that water can only temporally
+enter the already damaged membrane (due to lipid extraction).
+Similar to the onset of ionic currents, NW increased sharply
+after the critical point in each simulation. This avalanche-like
+process in membrane rupture accompanied by water inﬁltration
+is very similar to many phenomena signiﬁed with a ﬁrst-order
+phase transition.
+Noticeably, the following behaviors of NW(t) as shown in
+Figure 4a resemble those for I(t) very well (Figure 3). Due to
+the same thickness (for the calculated water slab), the
+calculated number of water molecules is proportional to the
+cross-sectional area of a hole in the lipid membrane. Given the
+water density (∼0.0334 Å−3) for the TIP3P water model,
+estimated cross-sectional areas for membrane holes at the end
+of Sim-1 and Sim-2 are 14.4 and 10.8 nm2, respectively. The
+ionic current is also proportional to the cross-sectional area of
+the hole; therefore the time-dependency of NW is similar to that
+for the ionic current I.
+Figure 4b illustrates a snapshot of the simulation system at
+the end of Sim-2, showing a water-ﬁlled hole in the lipid
+membrane, connecting both cis and trans ﬂuidic chambers. The
+hole resides at one side of the graphene nanosheet, while the
+membrane on the other side of the nanosheet was not broken
+yet. Due to water inﬁltration, lipids near the hole edge
+reoriented their head groups toward water inside the hole,
+preventing the exposure of hydrophobic lipid tails to water.
+Several ions in the emerging aqueous hole can be discerned,
+and in the externally applied electric ﬁeld they moved through
+the hole (e.g., Cl−from cis to trans chambers), contributing to
+the above-mentioned ionic current.
+As stated above, a membrane hole can form only after about
+17% of the lipids in a membrane patch were extracted onto the
+graphene nanosheet. Thus, it is interesting to know how the
+lipid bilayer structure was aﬀected before forming a hole.
+Because of the constant membrane area inside the solid-state
+nanopore, the lipid density is expected to reduce after the lipid
+extraction process started. From the simulation trajectories, we
+found that the density of the head groups of the lipids
+decreased with time but the density of the tail region remained
+nearly constant. The latter actually resulted from the enhanced
+overlap of ﬂexible lipid-tails between the upper and the lower
+layers (with reduced bilayer thickness). In Figure 5a, we show
+the time-dependent thickness of the membrane, which was
+deﬁned as the distance (projected on z axis) between the center
+of mass (COM) of the phosphorus atoms in the upper layer
+and the COM of the phosphorus atoms in the lower layer.
+During the simulation time, the membrane thickness continued
+to decrease from about 39 Å to about 31 Å on average. Near
+the time when the hole started to form in the membrane, its
+thickness was only about 33 Å. The side view of the membrane
+(see insets in Figure 5a) shows the signiﬁcant interpenetration
+of lipid tails between upper and lower layers.
+This membrane-thinning eﬀect enables more water mole-
+cules to be present at each membrane surface because of the
+lower lipid density. Additionally, water molecules can further
+diﬀuse more deeply into the hydrophobic tail region. The
+overlap region of the lipid tails was the last barrier before water
+penetrated the entire membrane. As shown in Figure 4a, water
+molecules can only temporarily stay in that region, that is, NW
+ﬂuctuates around zero, before the hole formation.
+As the lipid density decreased further, water molecules can
+ﬁnally penetrate the overlap region. Right after that, the
+membrane burst and a hole started to develop on the
+membrane. Consistent with calculated current signals (Figure
+3) or number of water molecules inside the membrane (Figure
+4a), the hole size increased very quickly (within a few
+nanoseconds), as shown in Movie S1. Thus, the initial increase
+of the hole size must result from the rearrangement of lipids
+Figure 4. Interactions between water and the POPC membrane. (a)
+Time-dependent numbers of water molecules inside the membrane
+during the Sim-1 and the Sim-2. (b) A snapshot of the damaged
+membrane with a water-ﬁlled hole. POPC lipids are in stick
+representation; atoms in the graphene nanosheet are shown as van
+der Waals spheres. Water inside the hole is shown transparently
+with green surface; K+ and Cl−are represented as tan and cyan
+balls; water and ions outside the hole are not shown for clarity.
+ACS Nano
+Article
+DOI: 10.1021/acsnano.7b07005
+ACS Nano 2017, 11, 12615−12623
+12618
+
+after the burst. To conﬁrm this, we calculated the interfacial
+interaction energy E between the lipids on both sides of the
+graphene nanosheet (see inset of Figure 5b); the graphene
+nanosheet was included into one of the two lipid groups. Both
+electrostatic (relative dielectric constant = 4) and van der Waals
+energies were computed, and the latter was found to be
+dominant. To account for the membrane thickness (h)
+variation, we deﬁne energy density γ = E/A, where the
+interfacial area A = hd, where d is the width of the graphene
+nanosheet. As shown in Figure 5b, before the membrane burst,
+γ was about −0.28 kcal/(mol/Å2) on average. After the burst, γ
+was reduced to about −0.33 kcal/(mol/Å2), indicating that the
+interaction per unit area became stronger. After the burst, the
+following increase of the hole area was accompanied by more
+intimate contacts between the lipids on the hole-forming side
+and the graphene nanosheet (see Figure 4b), which accounts
+for the stronger van der Waals attraction inside the membrane.
+It is noted that the hole was formed at around 160 ns, while the
+values of γ were saturated after 240 ns. Here, the delay (tens of
+nanoseconds) indicates the rearrangement of lipids in the
+remaining membrane after the burst.
+We further analyzed the interaction forces exerted on the
+graphene nanosheet from the membrane lipids on both sides.
+To exclude the extracted lipids and eﬀects of water on the
+membrane surface, we only included the inner 30-Å-thick
+membrane (−15 Å < z < 15 Å in Sim-2) from which forces on
+the graphene nanosheet were exerted. Because of the charge-
+neutral atoms in the graphene nanosheet, only van der Waals
+forces were calculated. Figure 6a,b shows the forces on the
+graphene nanosheet from the hole-forming side and the non-
+hole-forming side (see Figure 4b) of the membrane,
+respectively. At the beginning, forces on both sides of the
+nanosheet were negative, suggesting that the membrane was
+initially under the tension. The tensile force F is about 2 kcal/
+(mol/Å) initially. The resulting local surface tension estimated
+by F/d is about 7 dyn/cm. The surface tension of an entire
+membrane should include the lipid−lipid interaction across the
+graphene nanosheet as well and is generally about tens of dynes
+per centimeter.34 Here, we use the surface tension on the
+graphene nanosheet to elucidate the nanomechanics during the
+membrane burst.
+With more lipids extracted onto the graphene nanosheet, the
+tensile force decreased gradually. Note that if this process or
+deformation is elastic, the force is expected to increase. As
+described above, the bilayers in the membrane rearranged
+themselves by allowing the lipid-tails to overlap more to
+compensate the loss of lipids, which maintains the tensile force.
+Therefore, such deformation is plastic in nature. At the time of
+membrane burst (∼160 ns), the tensile force from the
+membrane on the hole-forming side decreased to zero. The
+remaining membrane on this side of the graphene nanosheet
+lost its internal tension. However, on the non-hole-forming
+side, there remained small tensile forces.
+After the burst of membrane, surprisingly, forces exerted
+from the hole-forming side became positive, that is, repulsive
+forces, between the graphene nanosheet and nearby membrane
+lipids. In fact, this nonintuitive result can be understood by
+considering a balancing force: the hydrophobic force that
+pushes the lipids against the graphene nanosheet. As shown in
+Figure 4b, after water’s entry into the membrane, such
+hydrophobic force between the graphene nanosheet and lipids
+occurred and was normal to the graphene surface. Water’s
+penetration into the lipid membrane was reversible before the
+loss of a signiﬁcant amount of lipids (Figure 4a). However,
+when more water molecules were temporarily present inside
+the membrane, they yielded hydrophobic force to push the
+lipids toward the graphene nanosheet, which further allowed
+more water molecules to get into the membrane. Therefore,
+this positive feedback loop eventually initiated the avalanche-
+like process: hole formation. On the non-hole-forming side of
+the graphene nanosheet, the tensile force in the membrane
+continued decreasing after the membrane burst and was about
+zero at around 240 ns. As mentioned above, this time delay is
+due to the required time (∼80 ns) for the lipids to rearrange
+Figure 5. (a) Time-dependent membrane thicknesses in Sim-2.
+Insets show snap-shots of side-views of the POPC membrane at
+diﬀerent times. (b) Time-dependent interfacial interaction energies
+during the simulation. In the insets the orange line shows where the
+interface is (the top view). In panels a and b, the graphene
+nanosheet is in gray; POPC lipids are in stick representation;
+phosphorus atoms in POPC lipids are shown as tan spheres.
+Figure 6. Normal forces on graphene exerted from POPC lipids
+from the hole-forming side (a) and the non-hole-forming side (b).
+Gray lines, data averaged over 1 ns; black lines, data averaged over
+10 ns; dashed lines, guides to the eye.
+ACS Nano
+Article
+DOI: 10.1021/acsnano.7b07005
+ACS Nano 2017, 11, 12615−12623
+12619
+
+after the membrane burst on the other side of the graphene
+nanosheet.
+Once a hole is formed in a live cell membrane, depending on
+the competition between lipid extraction and self-repairing
+(because of the diﬀusion of surrounding lipids to ﬁll the hole),
+the hole size may increase or decrease. However, due to the
+presence of transmembrane proteins in a live cell membrane,
+driven or diﬀusive motions of lipids toward the hole can be
+hindered.35 Thus, lipid extraction may dominate the self-
+repairing, which yields a hole enlargement (similar to the case
+in our simulation). Alternatively, when the cell membrane is
+interacting with multiple nanomaterials,29 it becomes more
+challenging for self-repair and easier for hole formation.
+Additionally, many nanomaterials (such as cationic quantum
+dots) other than graphene nanosheets can passively diﬀuse
+through a cell membrane; the cell membrane is only transiently
+broken and can be repaired by itself.36 Experimental studies of
+vesicle−graphene interactions also revealed a transient leakage
+of dyes inside the vesicle.17 The typical time scale for these
+transient membrane holes is around a few milliseconds,37 which
+can be adequately detected by measuring the transmembrane
+current from cis to trans chambers.18
+To further validate our simulation results, we carried out a
+series of experiments to explore the interaction between
+graphene and the lipid bilayer. Figure 7a illustrates the
+experimental setup. Brieﬂy, 5 μg/mL graphene oxide (GO)
+was added and stirred in the chamber after the formation of a
+lipid bilayer in an oriﬁce on a Teﬂon ﬁlm. Here, due to the poor
+solubility of graphene nanosheets, we used GO nanosheets in
+our experiment, which contain many unoxidized graphene (sp2)
+domains. As shown in our previous simulation and experi-
+ments,12 these large sp2 domains behave just like pristine
+graphene and agree well with the theoretical predictions using
+pure graphene. When applying a lower concentration (5 μg/
+mL) of GO, the ionic current remained at 0 pA for 20 min
+(Figure S3 in Supporting Information), suggesting a stable and
+unbroken lipid bilayer. However, after increasing the GO
+concentration to 15 μg/mL in the chamber, the ionic current
+began to ﬂuctuate signiﬁcantly around 16 min (Figure 7b),
+indicating that due to the strong interaction GO nanosheets
+started to breach the membrane. During the next 50 min, the
+ionic current quickly went up to 350 pA (Figure 7b), suggesting
+that the continuous lipid extraction had passed the critical point
+(t ≈16.6 min) and the pore formation in the lipid bilayer
+became possible. The observed concentration dependency
+conﬁrms the simulation result that the membrane has to lose a
+signiﬁcant amount of lipids before the pore formation either by
+a large graphene nanosheet or by multiple small ones. Because
+of this mechanism of pore formation, with limited GO
+nanosheets inserted in the membrane, the produced pore size
+may not be proportional to the size of entire membrane. The
+proportionality occurs only when a signiﬁcantly large amount of
+GO nanosheets are in the membrane.
+Given that the size (diameter <3 μm) of each GO nanosheet
+is much smaller than the pore size, multiple GO nanosheets can
+be present in the membrane when increasing the GO
+concentration to 15 μg/mL. Figure 7c highlights several
+representative current signals showing stepwise increases,
+each of which might signal the formation of an additional
+pore in the membrane by an inserted GO nanosheet. Similarly,
+this phenomenon occurs when recording the ionic current
+through a membrane with multiple protein channels (e.g., α-
+hemolysin) inserted one-by-one. After that, without any
+additional pore formation, the ionic current continuously and
+gradually increased to 420 pA (Figure 7b) because the size of
+each pore became larger after more lipids were extracted by GO
+nanosheets. Finally, the current became stable and saturated,
+after the GO nanosheets were fully covered with the exacted
+Figure 7. Experimental studies on interactions between GO and the lipid bilayer conﬁned in an oriﬁce. (a) Schematic illustration of the
+experimental setup (not drawn to scale). (b, c) Ionic currents in the presence of 15 μg/mL GO: (b) 400 min current recording and (c) typical
+magniﬁed trace segments. The experiment was performed at +20 mV with the lipid bilayer formed at a 156-μm-diameter oriﬁce on a Teﬂon
+ﬁlm. The electrolyte solution contains 1 M NaCl and 10 mM Tris·HCl (pH 7.5).
+ACS Nano
+Article
+DOI: 10.1021/acsnano.7b07005
+ACS Nano 2017, 11, 12615−12623
+12620
+
+lipids. In an independent experiment (see Figure S4), we
+reproduced the phenomenon of the current increase after the
+GO-membrane interaction. Overall, these experimental ob-
+servations are consistent with the simulation results above.
+It is worth emphasizing that the phenomenon of lipid
+extraction is independent of the lipid type, because the
+extraction is driven by the favorable dispersive interaction
+between lipid tails and the graphene nanosheet. For two lipid
+types, POPC (used in our simulation) and DPhPC (used in our
+experiment), the free energy change for moving a lipid from the
+membrane to the graphene surface is, respectively, −7.4 kcal/
+mol28 and −7.5 kcal/mol (see Figure S5 in Supporting
+Information). The same phenomenon was previously ob-
+served12 for other types lipids such as POPE, POPE/POPG
+(3:1), and DPPC. Because the headgroup of a lipid is not
+involved in the lipid extraction process, even charged lipids (e.g.,
+POPG) can be extracted to the graphene surface.12
+Generally, the hole formation by nanomaterials can be toxic
+(e.g., intracellular substance loss) to a biological cell, which as
+shown above can be detected by measuring the transmembrane
+ionic current. In many cases, it is possible that some
+nanomaterials (e.g., TiO2
+38) are only adsorbed on the
+membrane surface, and their entry into a cell depends on the
+following endocytosis process. Although the method proposed
+above (by measuring DC currents) cannot capture the
+adsorption of nanomaterials on the membrane, it is possible
+to apply alternating biasing voltages V(t) to measure the AC
+signals, that is, I = C dV/dt where C is the capacitance of the
+lipid membrane. Under alternating biasing voltages, each side of
+the membrane is alternatively charged by K+ and Cl−ions and
+both sides of the membrane are always oppositely charged,
+yielding a well-deﬁned capacitance. Once nanomaterials are
+adsorbed on the membrane, the ionic distribution (electric
+double layer) near the membrane will be aﬀected by the
+presence of nanomaterials, which results in a diﬀerent
+capacitance and consequently a diﬀerent AC current. Addi-
+tionally, considering that the capacitance C = ϵS/h where ϵ is
+the dielectric constant, S is the cross-sectional area of the
+membrane, and h is the membrane thickness, the membrane
+thinning eﬀect (Figure 5a) before the burst can cause an
+increase in the capacitance and the consequent AC current.
+Therefore, while not demonstrated in our simulation, we expect
+that AC signals might provide more information on particle−
+membrane interactions.
+CONCLUSION
+In summary, we have proposed a low-cost yet eﬃcient in vitro
+method to assess the nanotoxicity of nanomaterials toward the
+cell membrane. By measuring the ionic currents through a cell
+membrane supported in a solid-state nanopore, it is possible to
+detect the adverse particle−membrane interactions in real time.
+Generally, by measuring both DC and AC currents, phenomena
+such as particle adsorption, membrane thinning, and hole
+formation can be directly inferred. Here, we demonstrate that
+once a graphene nanosheet extracted about 17% of the lipids in
+the membrane and allowed water to penetrate into the
+membrane, a hole can occur on the membrane, accompanied
+by an increase in measured ion currents. We analyzed the
+energetics and nanomechanics during the membrane burst and
+the hole formation processes and revealed the important role of
+water. Other mechanisms of pore formation can be dependent
+on surface properties of a nanomaterial, such as the curvature,
+polarity, and roughness.15
+Besides detecting toxicity of a nanomaterial, it can be used to
+screen designed chemical modiﬁcations of an engineered
+nanomaterial and determine the most biocompatible one.
+Additionally, the eﬃciency of antimicrobial peptides/polymers
+can be conveniently tested and optimized toward bacterial
+membranes under certain conditions (such as the Ca2+-rich
+environment39). Broadly deﬁned, nanomaterials/nanoparticles
+are not restricted to the engineered ones but can also include
+protein toxins, bacteria, or viruses that bind the cell membrane
+as the precursor of their invasion. Therefore, the nanopore
+platform described here provides a simple yet powerful means
+to study broad particle−membrane interactions in general.
+METHODS
+Molecular Dynamics Simulations. All MD simulations were
+carried out using the software package NAMD2.9.40 The entire
+simulation system measures about 140 × 140 × 160 Å3, after
+minimization for 10 ps and equilibration for 5 ns in the NPT ensemble
+(P ≈1 bar and T ≈300 K). Subsequent production runs were carried
+out in the NVT ensemble with the electric ﬁeld turned on. We applied
+periodic boundary conditions (PBC) in all three dimensions. Long-
+range Coulomb interactions are computed using particle-mesh Ewald
+(PME) full electrostatics with the grid size set around 1 Å in each
+dimension. The van der Waals (vdW) energies between atoms were
+calculated using a smooth (10−12 Å) cutoﬀ. The temperature T was
+maintained at 300 K using the Langevin thermostat41 to all atoms in
+the SiO2 membrane. The pressure was kept constant at 1 bar using the
+Nosé−Hoover method.42 With the SETTLE algorithm43 enabled for
+all bonds, the simulation time-step was 2 fs for bonded and
+nonbonded (e.g., vdW, angle, and dihedral) interactions, and long-
+range electric interactions were calculated every 4 fs. During the
+simulation for melting and quenching the SiO2 solid, the BKS force
+ﬁeld44 was applied for the amorphous SiO2 nanopore. We used the
+TIP3P model45,46 for water and the standard ion force ﬁeld47 and silica
+force ﬁeld for the solid membrane interacting with biomolecules.48
+The force ﬁeld for the graphene nanosheet was adopted from our
+previous study;12 the CHARMM force ﬁeld32 was used for POPC
+lipids.
+Materials and Reagents. The graphene oxide (GO) was
+purchased from Chengdu Organic Chemicals Co. Ltd., Chinese
+Academy of Sciences (Chengdu, China). The size (diameter) of each
+GO nanosheet varies from 0.5 to 3 μm. The lipid, 1,2-
+diphytanoylphosphatidylcholine (DPhPC), was purchased from Avanti
+Polar Lipids (Alabaster, AL). All the other chemicals were obtained
+from Sigma-Aldrich (St. Louis, MO)).
+Bilayer Experiment and Electrical Recording. The bilayer
+experiments were performed in a planar bilayer chamber, which was
+separated into two compartments by a Teﬂon ﬁlm, and the lipid
+bilayer was formed at a 156-μm-diameter aperture of the Teﬂon ﬁlm
+using DPhPC according to the Montal−Mueller method.49 All the
+experiments were carried out in the chamber with 2 mL of buﬀer
+solutions added in each compartment containing 1 M NaCl and 10
+mM Tris-HCl (pH 7.5). The higher ion concentration than the one
+(0.15 M) used in simulation can enhance the ionic current through the
+pore50 achieving improved signal-to-noise ratios and meanwhile can
+screen charges of membrane/GO at pH 7.5. GO nanosheets were
+added to the grounded cis compartment. An Axopatch 200B ampliﬁer
+(Molecular Devices, Sunnyvale, CA) was used to record the ionic
+currents that were low-pass ﬁltered with a built-in four-pole Bessel
+ﬁlter at 2 kHz and sampled at 50 kHz by a computer equipped with a
+Digidata 1440A converter (Molecular Devices).
+ASSOCIATED CONTENT
+*
+S
+Supporting Information
+The Supporting Information is available free of charge on the
+ACS Publications website at DOI: 10.1021/acsnano.7b07005.
+ACS Nano
+Article
+DOI: 10.1021/acsnano.7b07005
+ACS Nano 2017, 11, 12615−12623
+12621
+
+Top view of graphene in the lipid membrane,
+deformation of the lipid membrane around the inserted
+graphene (side views), current traces from experiment,
+and illustration of an annihilation process of a DPhPC
+lipid in the lipid bilayer or on the graphene surface
+(PDF)
+Hole-forming process in the lipid membrane after
+excessive lipid-extraction onto the graphene nanosheet
+(Sim-1) (MPG)
+AUTHOR INFORMATION
+Corresponding Authors
+*E-mail: bluan@us.ibm.com.
+*E-mail: ruhongz@us.ibm.com.
+ORCID
+Binquan Luan: 0000-0002-9414-5379
+Ruhong Zhou: 0000-0001-8624-5591
+Notes
+The authors declare no competing ﬁnancial interest.
+ACKNOWLEDGMENTS
+The authors thank Tien Huynh for his help with proofreading
+the manuscript. We also gratefully acknowledge the ﬁnancial
+support from the IBM Bluegene Science Program (Grant
+Numbers W125859, W1464125, and W1464164).
+REFERENCES
+(1) Song, L.; Hobaugh, M. R.; Shustak, C.; Cheley, S.; Bayley, H.;
+Gouaux, J. E. Structure of Staphylococcal α-Hemolysin, a Heptameric
+Transmembrane Pore. Science 1996, 274, 1859−1865.
+(2) Dal Peraro, M.; Van Der Goot, F. G. Pore-Forming Toxins:
+Ancient, but never Really out of Fashion. Nat. Rev. Microbiol. 2016, 14,
+77−92.
+(3) Bode, D. C.; Baker, M. D.; Viles, J. H. Ion Channel Formation by
+Amyloid-β42 Oligomers but not Amyloid-β40 in Cellular Membranes.
+J. Biol. Chem. 2017, 292, 1404.
+(4) Di Scala, C.; Yahi, N.; Boutemeur, S.; Flores, A.; Rodriguez, L.;
+Chahinian, H.; Fantini, J. Common Molecular Mechanism of Amyloid
+Pore Formation by Alzheimer’s β-Amyloid Peptide and α-Synuclein.
+Sci. Rep. 2016, 6, 28781.
+(5) Brogden, K. A. Antimicrobial Peptides: Pore Formers or
+Metabolic Inhibitors in Bacteria? Nat. Rev. Microbiol. 2005, 3, 238−
+250.
+(6) Yang, L.; Gordon, V. D.; Trinkle, D. R.; Schmidt, N. W.; Davis,
+M. A.; DeVries, C.; Som, A.; Cronan, J. E.; Tew, G. N.; Wong, G. C.
+Mechanism of a Prototypical Synthetic Membrane-Active Antimicro-
+bial: Efficient Hole-Punching via Interaction with Negative Intrinsic
+Curvature Lipids. Proc. Natl. Acad. Sci. U. S. A. 2008, 105, 20595−
+20600.
+(7) Nederberg, F.; Zhang, Y.; Tan, J. P.; Xu, K.; Wang, H.; Yang, C.;
+Gao, S.; Guo, X. D.; Fukushima, K.; Li, L.; Hedrick, J.; Yang, Y.
+Biodegradable Nanostructures with Selective Lysis of Microbial
+Membranes. Nat. Chem. 2011, 3, 409−414.
+(8) Nel, A.; Xia, T.; Mädler, L.; Li, N. Toxic Potential of Materials at
+the Nanolevel. Science 2006, 311, 622−627.
+(9) Shang, L.; Nienhaus, K.; Nienhaus, G. U. Engineered Nano-
+particles Interacting with Cells: Size Matters. J. Nanobiotechnol. 2014,
+12, 5.
+(10) Guo, Y.; Terazzi, E.; Seemann, R.; Fleury, J. B.; Baulin, V. A.
+Direct Proof of Spontaneous Translocation of Lipid-Covered
+Hydrophobic Nanoparticles through a Phospholipid Bilayer. Sci. Adv.
+2016, 2, e1600261.
+(11) Bailey, C. M.; Kamaloo, E.; Waterman, K. L.; Wang, K. F.;
+Nagarajan, R.; Camesano, T. A. Size Dependence of Gold Nano-
+particle Interactions with a Supported Lipid Bilayer: A QCM-D Study.
+Biophys. Chem. 2015, 203, 51−61.
+(12) Tu, Y.; Lv, M.; Xiu, P.; Huynh, T.; Zhang, M.; Castelli, M.; Liu,
+Z.; Huang, Q.; Fan, C.; Fang, H.; Zhou, R. Destructive Extraction of
+Phospholipids from Escherichia Coli Membranes by Graphene
+Nanosheets. Nat. Nanotechnol. 2013, 8, 594−601.
+(13) Li, Y.; Yuan, H.; von dem Bussche, A.; Creighton, M.; Hurt, R.
+H.; Kane, A. B.; Gao, H. Graphene Microsheets Enter Cells through
+Spontaneous Membrane Penetration at Edge Asperities and Corner
+Sites. Proc. Natl. Acad. Sci. U. S. A. 2013, 110, 12295−12300.
+(14) Castellana, E. T.; Cremer, P. S. Solid Supported Lipid Bilayers:
+From Biophysical Studies to Sensor Design. Surf. Sci. Rep. 2006, 61,
+429−444.
+(15) Roiter, Y.; Ornatska, M.; Rammohan, A. R.; Balakrishnan, J.;
+Heine, D. R.; Minko, S. Interaction of Nanoparticles with Lipid
+Membrane. Nano Lett. 2008, 8, 941−944.
+(16) Yi, P.; Chen, K. L. Release Kinetics of Multiwalled Carbon
+Nanotubes Deposited on Silica Surfaces: Quartz Crystal Microbalance
+with Dissipation (QCM-D) Measurements and Modeling. Environ. Sci.
+Technol. 2014, 48, 4406−4413.
+(17) Liu, X.; Chen, K. L. Interactions of Graphene Oxide with Model
+Cell Membranes: Probing Nanoparticle Attachment and Lipid Bilayer
+Disruption. Langmuir 2015, 31, 12076−12086.
+(18) Branton, D.; Deamer, D.; Marziali, A.; Bayley, H.; Benner, S.;
+Butler, T.; Di Ventra, M.; Garaj, S.; Hibbs, A.; Huang, X.; Jovanovich,
+S.; Krstic, P.; Lindsay, S.; Ling, X.; Mastrangelo, C.; Meller, A.; Oliver,
+J.; Pershin, Y.; Ramsey, J.; Riehn, R.; et al. The Potential and
+Challenges of Nanopore Sequencing. Nat. Biotechnol. 2008, 26, 1146−
+1153.
+(19) Yusko, E. C.; Bruhn, B. R.; Eggenberger, O. M.; Houghtaling, J.;
+Rollings, R. C.; Walsh, N. C.; Nandivada, S.; Pindrus, M.; Hall, A. R.;
+Sept, D.; Li, J.; Kalonia, D.; Mayer, M. Real-Time Shape
+Approximation and Fingerprinting of Single Proteins Using a
+Nanopore. Nat. Nanotechnol. 2017, 12, 360−367.
+(20) Zhou, R.; Huang, X.; Margulis, C.; Berne, B. Hydrophobic
+Collapse in Multidomain Protein Folding. Science 2004, 305, 1605.
+(21) Luan, B.; Huynh, T.; Zhao, L.; Zhou, R. Potential Toxicity of
+Graphene to Cell Functions via Disrupting Protein-Protein
+Interactions. ACS Nano 2015, 9, 663−669.
+(22) Liu, P.; Huang, X.; Zhou, R.; Berne, B. Observation of a
+Dewetting Transition in the Collapse of the Melittin Tetramer. Nature
+2005, 437, 159−162.
+(23) Stirnemann, G.; Kang, S.-g.; Zhou, R.; Berne, B. J. How Force
+Unfolding Differs from Chemical Denaturation. Proc. Natl. Acad. Sci.
+U. S. A. 2014, 111, 3413−3418.
+(24) Li, J.; Gong, X.; Lu, H.; Li, D.; Fang, H.; Zhou, R. Electrostatic
+Gating of a Nanometer Water Channel. Proc. Natl. Acad. Sci. U. S. A.
+2007, 104, 3687−3692.
+(25) Luan, B.; Robbins, M. O. The Breakdown of Continuum
+Models for Mechanical Contacts. Nature 2005, 435, 929−932.
+(26) Tu, Y.; Xiu, P.; Wan, R.; Hu, J.; Zhou, R.; Fang, H. Water-
+Mediated Signal Multiplication with Y-shaped Carbon Nanotubes.
+Proc. Natl. Acad. Sci. U. S. A. 2009, 106, 18120−18124.
+(27) Luan, B.; Peng, H.; Polonsky, S.; Rossnagel, S.; Stolovitzky, G.;
+Martyna, G. Base-by-Base Ratcheting of Single Stranded DNA through
+a Solid-State Nanopore. Phys. Rev. Lett. 2010, 104, 238103.
+(28) Luan, B.; Huynh, T.; Zhou, R. Complete Wetting of Graphene
+by Biological Lipids. Nanoscale 2016, 8, 5750−5754.
+(29) Duan, G.; Zhang, Y.; Luan, B.; Weber, J. K.; Zhou, R. W.; Yang,
+Z.; Zhao, L.; Xu, J.; Luo, J.; Zhou, R. H. Graphene-Induced Pore
+Formation on Cell Membranes. Sci. Rep. 2017, 7, 42767.
+(30) Rascol, E.; Devoisselle, J.-M.; Chopineau, J. The Relevance of
+Membrane Models to Understand Nanoparticles-Cell Membrane
+Interactions. Nanoscale 2016, 8, 4780−4798.
+(31) Kučerka, N.; Tristram-Nagle, S.; Nagle, J. F. Structure of Fully
+Hydrated Fluid Phase Lipid Bilayers with Monounsaturated Chains. J.
+Membr. Biol. 2006, 208, 193−202.
+(32) Klauda, J. B.; Venable, R. M.; Freites, J. A.; O’Connor, J. W.;
+Tobias, D. J.; Mondragon-Ramirez, C.; Vorobyov, I.; MacKerell, A. D.,
+ACS Nano
+Article
+DOI: 10.1021/acsnano.7b07005
+ACS Nano 2017, 11, 12615−12623
+12622
+
+Jr; Pastor, R. W. Update of the CHARMM All-Atom Additive Force
+Field for Lipids: Validation on Six Lipid Types. J. Phys. Chem. B 2010,
+114, 7830−7843.
+(33) Tarek, M. Membrane Electroporation: a Molecular Dynamics
+Simulation. Biophys. J. 2005, 88, 4045−4053.
+(34) Gullingsrud, J.; Schulten, K. Lipid Bilayer Pressure Profiles and
+Mechanosensitive Channel Gating. Biophys. J. 2004, 86, 3496−3509.
+(35) Goose, J. E.; Sansom, M. S. Reduced Lateral Mobility of Lipids
+and Proteins in Crowded Membranes. PLoS Comput. Biol. 2013, 9,
+e1003033.
+(36) Verma, A.; Uzun, O.; Hu, Y.; Hu, Y.; Han, H.-S.; Watson, N.;
+Chen, S.; Irvine, D. J.; Stellacci, F. Surface-Structure-Regulated Cell-
+membrane Penetration by Monolayer-Protected Nanoparticles. Nat.
+Mater. 2008, 7, 588−595.
+(37) Dimova, R.; Riske, K. A.; Aranda, S.; Bezlyepkina, N.; Knorr, R.
+L.; Lipowsky, R. Giant Vesicles in Electric Fields. Soft Matter 2007, 3,
+817−827.
+(38) Andersson, P. O.; Lejon, C.; Ekstrand-Hammarström, B.; Akfur,
+C.; Ahlinder, L.; Bucht, A.; Österlund, L. Polymorph-and Size-
+Dependent Uptake and Toxicity of TiO2 Nanoparticles in Living Lung
+Epithelial Cells. Small 2011, 7, 514−523.
+(39) Luan, B.; Chen, K. L.; Zhou, R. Mechanism of Divalent-Ion-
+Induced Charge Inversion of Bacterial Membranes. J. Phys. Chem. Lett.
+2016, 7, 2434−2438.
+(40) Phillips, J. C.; Braun, R.; Wang, W.; Gumbart, J.; Tajkhorshid,
+E.; Villa, E.; Chipot, C.; Skeel, R. D.; Kale, L.; Schulten, K. Scalable
+Molecular Dynamics with NAMD. J. Comput. Chem. 2005, 26, 1781−
+1802.
+(41) Allen, M. P.; Tildesley, D. J. Computer Simulation of Liquids;
+Oxford University Press: New York, 1987.
+(42) Martyna, G. J.; Tobias, D. J.; Klein, M. L. Constant Pressure
+Molecular Dynamics Algorithms. J. Chem. Phys. 1994, 101, 4177−
+4189.
+(43) Miyamoto, S.; Kollman, P. A. SETTLE: An Analytical Version of
+the SHAKE and RATTLE Algorithm for Rigid Water Molecules. J.
+Comput. Chem. 1992, 13, 952−962.
+(44) van Beest, B.; Kramer, G.; van Santen, R. Force Fields for Silicas
+and Aluminophosphates Based on Ab Initio Calculations. Phys. Rev.
+Lett. 1990, 64, 1955−1958.
+(45) Jorgensen, W. L.; Chandrasekhar, J.; Madura, J. D.; Impey, R.
+W.; Klein, M. L. Comparison of Simple Potential Functions for
+Simulating Liquid Water. J. Chem. Phys. 1983, 79, 926−935.
+(46) Neria, E.; Fischer, S.; Karplus, M. Simulation of Activation Free
+Energies in Molecular Systems. J. Chem. Phys. 1996, 105, 1902.
+(47) Beglov, D.; Roux, B. Finite Representation of an Infinite Bulk
+System: Solvent Boundary Potential for Computer Simulations. J.
+Chem. Phys. 1994, 100, 9050−9063.
+(48) Cruz-Chu, E. R.; Aksimentiev, A.; Schulten, K. Water-Silica
+Force Field for Simulating Nanodevices. J. Phys. Chem. B 2006, 110,
+21497−21508.
+(49) Montal, M.; Mueller, P. Formation of Bimolecular Membranes
+from Lipid Monolayers and a Study of Their Electrical Properties.
+Proc. Natl. Acad. Sci. U. S. A. 1972, 69, 3561−3566.
+(50) Luan, B.; Stolovitzky, G. An Electro-Hydrodynamics-Based
+Model for the Ionic Conductivity of Solid-State Nanopores during
+DNA Translocation. Nanotechnology 2013, 24, 195702.
+ACS Nano
+Article
+DOI: 10.1021/acsnano.7b07005
+ACS Nano 2017, 11, 12615−12623
+12623

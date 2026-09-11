@@ -1,0 +1,1010 @@
+Received: 28 July 2024
+Revised: 25 August 2024
+Accepted: 6 September 2024
+DOI: 10.1002/agt2.666
+R E S E A R C H A RT I C L E
+Enhancing antibacterial photodynamic therapy with
+NIR-activated gold nanoclusters: Atomic-precision size effect on
+reducing bacterial bioﬁlm formation and virulence
+Chengyu Liu1
+Tenghui Tian2
+Yujia Shi3
+Meiqi Li3
+Le Hong2
+Jing Zhou3
+Jia Liu3
+Yuan Zhong4
+Xue Wang4
+Zhenyu Wang4
+Xue Bai4
+Lin Wang3
+Chunyan Li1
+Zhennan Wu4
+1Department of Prosthodontics, Jilin Provincial Key Laboratory of Tooth Development and Remodeling, School and Hospital of Stomatology, Jilin University, Changchun, China
+2Hospital of Afﬁliated Changchun University of Chinese Medicine, Branch of National Clinical Research Center for Chinese Medicine Cardiology, Changchun, China
+3Department of Oral Implantology, Hospital of Stomatology, Jilin Provincial Key Laboratory of Sciences and Technology for Stomatology Nanoengineering, Jilin University,
+Changchun, China
+4State Key Laboratory of Integrated Optoelectronics and College of Electronic Science and Engineering, Jilin university, Changchun, China
+Correspondence
+Xue Bai and Zhennan Wu, State Key Laboratory
+of Integrated Optoelectronics and College of
+Electronic Science and Engineering, Jilin
+University, Changchun 130012, China.
+Email: baix@jlu.edu.cn and wuzn@jlu.edu.cn
+Lin Wang, Department of Oral Implantology,
+Hospital of Stomatology, Jilin Provincial Key
+Laboratory of Sciences and Technology for
+Stomatology Nanoengineering, Jilin University,
+Changchun 130021, China.
+Email: wanglin1982@jlu.edu.cn
+Chunyan Li, Department of Prosthodontics, Jilin
+Provincial Key Laboratory of Tooth Development
+and Remodeling, School and Hospital of
+Stomatology, Jilin University, Changchun 130021,
+China.
+Email: cyli@jlu.edu.cn
+Funding information
+National Natural Science Foundation of China,
+Grant/Award Numbers: 82170998, 52250007,
+62205122, 11974142, U21A2068, T2325015,
+12174151; Key Program of Natural Science
+Foundation of Jilin Province, Grant/Award
+Numbers: 20220204128YY, 20220402005GH;
+Funding of Jilin Province Development and
+Reform Commission, Grant/Award Numbers:
+2022C044-1, 2021C035-1; Science and
+Technology Project of Jilin Province Financial
+Department, Grant/Award Number:
+JCSZ2021893-15; Key Research and
+Development Program of Science and Technology
+Development Project of Jilin Province,
+Grant/Award Numbers: 20220203145SF,
+20210203087SF; Fundamental Research Funds for
+the Central Universities; Jilin University,
+Grant/Award Numbers: 2023CX227, 2023CX228
+Abstract
+Persistent bioﬁlm infections pose a critical health threat with their relentless pres-
+ence and ampliﬁed antibiotic resistance. Traditional antibacterial photodynamic
+therapy can inhibit bacteria extracellularly but struggles to control bioﬁlm forma-
+tion and virulence. Thus, there is an urgent need to develop photosensitizers, such
+as ultra-small gold nanoclusters (AuNCs), that can penetrate bioﬁlms and internal-
+ize into bacteria. However, AuNCs still face the challenge of insufﬁcient reactive
+oxygen species (ROS) production and limited near-infrared light absorption. This
+study develops a model of indocyanine green (ICG)-sensitized AuNCs with atomic-
+precision size effect. This approach achieved near-infrared light absorption while
+inhibiting radiation transitions, thereby regulating the generation of ROS. Notably,
+different-sized AuNCs (Au10NCs, Au15NCs, Au25NCs) yielded varied ROS types,
+resulting from different energy level distributions and electron transfer rates. ICG-
+Au15NCs achieved a treatment efﬁcacy of 99.94% against Staphylococcus aureus
+infections in vitro and signiﬁcantly accelerated wound healing in vivo. Moreover,
+this study highlights the unique role of ICG-AuNCs in suppressing quorum sens-
+ing, virulence, and ABC transporters compared to their larger counterparts. This
+strategy demonstrates that atomic-precision size effect of AuNCs paves the way for
+innovative approaches in antibacterial photodynamic therapy for infection control.
+K E Y W O R D S
+antibacterial photodynamic therapy, atomic-precision size effect, gold nanoclusters, reactive oxygen
+species
+This is an open access article under the terms of the Creative Commons Attribution License, which permits use, distribution and reproduction in any medium, provided the original
+work is properly cited.
+© 2024 The Author(s). Aggregate published by SCUT, AIEI, and John Wiley & Sons Australia, Ltd.
+Aggregate. 2025;6:e666.
+wileyonlinelibrary.com/journal/agt2
+1 of 13
+https://doi.org/10.1002/agt2.666
+
+AGGREGATE
+2 of 13
+1
+INTRODUCTION
+Bacterial infections pose a signiﬁcant global public health
+challenge, with an estimated annual mortality of 700,000
+worldwide, projected to escalate to 10 million by 2050,
+alongside potential economic losses of $100 trillion.[1–3]
+A primary cause of the persistence of these infections
+is the formation of bacterial bioﬁlms. These bioﬁlms,
+comprising bacteria encased in self-produced extracellular
+polymeric substances, form a formidable physical barrier to
+antibiotics.[4] Bioﬁlms can signiﬁcantly amplify their resis-
+tance to traditional antibiotics by up to 1000-fold in compar-
+ison with planktonic bacteria.[5] Additionally, the virulence
+factors produced by bacteria can inﬂict lasting host dam-
+age, including tissue destruction, chronic inﬂammation, and
+impaired wound healing, culminating in prolonged illness
+and potentially severe long-term complications.[6] Antibac-
+terial photodynamic therapy (aPDT), which employs photo-
+sensitizers to generate reactive oxygen species (ROS) upon
+light exposure, aims to cause irreversible damage to bacte-
+rial organisms.[7] Despite its potential, current approaches
+using FDA-approved organic compounds like porphyrins
+and methylene blue, alongside novel inorganic photosensi-
+tizers, fail to effectively penetrate deep into bioﬁlms.[8–15]
+These photosensitizers generally produce ROS only extra-
+cellularly at bioﬁlms surfaces, resulting in non-selective
+oxidative damage to cell membranes, leakage of intracellular
+contents, release of virulence factors, and exacerbated host
+damage.[16,17] Moreover, these strategies are insufﬁcient in
+mitigating the host damage induced by bacterial virulence
+factors.[18,19]
+Gold nanoclusters (AuNCs), with a diameter of less than
+2 nm, represent an innovative category of atomically precise
+photosensitive materials.[20] These clusters have garnered
+signiﬁcant research interest in biological imaging, photo-
+catalysis, and antibacterial therapy, due to their unique
+properties.[21–23] Consisting of a deﬁned number of gold
+atoms and surrounded by surface ligands, their minuscule
+size enables deep penetration into bioﬁlms and facilitates bac-
+terial internalization.[24] Despite their potential, research on
+AuNCs-based aPDT faces challenges such as limited absorp-
+tion to the visible spectrum, inadequate ROS production, and
+a restricted variety of ROS types.[25,26] To overcome these
+obstacles, researchers have explored additional methods to
+augment the efﬁcacy of AuNCs-based aPDT. For instance,
+Yuan et al. developed a dual-functional photosensitizer com-
+bining photothermal and photodynamic properties through
+a coupling strategy to enhance therapeutic effectiveness.[27]
+Similarly, Jiang et al. engineered composite materials by
+integrating DNA cleaving enzymes with nanoclusters, thus
+improving antibacterial activity by facilitating dispersion
+within bioﬁlms.[28] Additionally, Xie et al. achieved a syn-
+ergistic antibacterial effect, greater than the sum of its parts,
+by combining MXenes with AuNCs.[29] Compared to the
+aforementioned combination therapies, aPDT can avoid the
+complexity and potential synergistic side effects.[12,20] How-
+ever, enhancing the inherent ROS production of AuNCs
+continues to be a formidable challenge. Additionally, the
+ability to leverage the atomic precision of AuNCs to tailor
+antibacterial targeting mechanisms remains to be elucidated.
+In response to the challenges associated with bacterial
+bioﬁlm formation highlighted in the preceding analysis,
+this study aims to develop a novel approach using nano-
+photosensitizers based on AuNCs. This approach involved
+leveraging the atomic-precision size effect and sensitiza-
+tion modiﬁcations of AuNCs. Notably, we employed the
+FDA-approved photosensitizer indocyanine green (ICG) to
+sensitize AuNCs of varying sizes, offering a promising
+solution. The covalent interactions between AuNCs and
+ICG achieved near-infrared (NIR) absorption while inhibit-
+ing radiative transitions. By adjusting the energy levels of
+AuNCs and ICG, we altered the photogenerated electron
+dynamics to achieve efﬁcient electron–hole separation and
+electron transfer, which in turn enhanced ROS production and
+diversiﬁed the types of ROS generated. More importantly,
+ICG-AuNCs could penetrate bioﬁlms and enter bacteria
+more effectively, addressing the limitations of ROSs’ range
+of action and short half-life. Additionally, transcriptomic
+sequencing analysis revealed that treatment with ICG-AuNCs
+reduced bioﬁlm formation and bacterial toxin secretion,
+thereby enhancing overall healing outcomes—an advantage
+not observed with their larger counterparts. This research
+endeavors to advance innovative therapeutic strategies for
+combating bacterial bioﬁlms and improving patient outcomes
+in the realm of antibacterial therapy (Scheme 1). Further
+exploration of modiﬁcation studies in AuNCs for aPDT
+holds promise for advancing therapeutic interventions in
+antibacterial treatments.
+2
+RESULTS AND DISCUSSION
+2.1
+Synthesis and characterization of
+ICG-AuNCs
+Three sizes of glutathione-protected AuNCs (Au10NCs,
+Au15NCs, and Au25NCs) were examined to understand the
+inﬂuence of nanoparticle size on sensitized-modiﬁed AuNCs
+in aPDT. These sizes were chosen based on their distinct char-
+acteristics as reported in prior studies. Then, the synthesis of
+ICG-conjugated AuNCs was conducted at room temperature
+in a mixed aqueous and dimethyl sulfoxide (DMSO) solution.
+Among them, ICG-Au15NCs exhibited superior antibacterial
+performance and were therefore selected for detailed investi-
+gation using a density functional theory (DFT) computational
+model, illustrated in Figure 1A. Optimal ratios of ICG to Au
+were determined through absorption spectroscopy, correlat-
+ing peak intensities with concentration variations depicted in
+Figure S1A. Consistency in the quantity of Au atoms and
+ICG across all nanoparticle sizes was maintained to ensure
+controlled experimental conditions. Ultraviolet–visible (UV–
+vis) absorption spectroscopy, detailed in Figure 1B, indicated
+a shift in the ICG absorption peak from 795 to 710 nm
+post-conjugation, aligning with established literature.[30]
+Additionally, absorption spectra of the three pure AuNCs
+are presented in Figure S1B, exhibit characteristic peaks.
+Furthermore, emission spectroscopy results (Figure 1C and
+Figure S1C–E) revealed complete quenching of ICG’s NIR
+emission and the luminescence of AuNCs upon the formation
+of ICG-AuNCs. This demonstrates strong distance-dependent
+photoinduced electron transfer.
+The Fourier Transform Infrared spectra (FTIR) of ICG-
+Au15NCs are displayed in Figure 1D. Speciﬁcally, the
+absence of an absorption band at ν(S─H) = 2523 cm−1
+ 26924560, 2025, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/agt2.666 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+3 of 13
+AGGREGATE
+S C H E M E 1
+Schematic illustration of ICG-AuNCs enhancing antibacterial photodynamic therapy through ligand modiﬁcation and atomic-precision size
+effect for efﬁcient treatment of bacterial infections.
+conﬁrms the successful formation of glutathione thiolates
+bonded to the Au core, consistent with ﬁndings reported
+by Negishi and Tsukuda.[31] The Raman spectroscopy, as
+shown in Figure S1F, conﬁrmed the formation of Au─S
+bonds in AuNCs, with bands around 210 cm−1 correspond-
+ing to Au─S─C bending modes and around 320 cm−1 to
+radial Au─S vibrations. The FTIR spectrum of ICG shows
+a peak at 1416 cm−1 corresponds to C═C vibrations within
+the benzene ring, while the characteristic peaks of ─SO3−in
+ICG are predominantly observed around 1003 cm−1. Notably,
+after the conjugation of ICG with AuNCs through amide
+bonds, the N─H stretching vibrations shifted from 3380 and
+3260 cm−1 to 3420 and 3280 cm −1, respectively. This change
+reﬂects the transition from amines to amides, where N-H
+bond frequencies increase due to the reduced hydrogen bond-
+ing strength, manifesting as shifts to higher wavenumbers.[32]
+Additionally, the enhancement of the C═O stretching vibra-
+tion peak (typically around 1630–1690 cm−1), along with
+the increased peak at 1095 cm−1, corresponds to amide
+group formations, further verifying the successful conju-
+gation between ICG and AuNCs.[33] Likewise, the FTIR
+spectrum of ICG-AuNCs with varying sizes is displayed in
+Figure S2A,B.
+Complementary to the FTIR analysis, TEM images
+provided insights into the physical characteristics of the
+synthesized ICG-Au15NCs, as shown in Figure 1E. Trans-
+mission electron microscopy (TEM) images reveal particles
+with sizes ranging between 1–2 nm, with an average diame-
+ter of 1.16 ± 0.18 nm as detailed in the ﬁgure inset. Figure
+S2C,D extends these observations to ICG-AuNCs with vari-
+ous sizes, underscoring the consistency in particle formation
+across different experimental conditions. To further elucidate
+the atomic-precision effect on the physicochemical proper-
+ties of the AuNCs, we synthesized larger gold nanoparticles
+(AuNPs) and conjugated them with ICG. The characteriza-
+tion of ICG-AuNPs was performed using UV–vis and FTIR
+spectroscopy, as shown in Figure S3.
+The investigation into the ROS production capabili-
+ties of different-sized ICG-conjugated gold nanoparticles
+revealed signiﬁcant size-dependent effects. Notably, the ICG-
+Au15NCs group exhibited a pronounced reduction in 1,3-
+diphenylisobenzofuran (DPBF) absorption after 6 min of NIR
+illumination, signaling robust ROS production (Figure 1F).
+Time-dependent absorption spectra post-808 nm NIR irra-
+diation were collected for ICG, ICG-AuNPs, and three
+different sizes of ICG-AuNCs (Figure 1G). Quantitative
+results illustrated that ICG-Au15NCs achieved a quantum
+yield of 67.41%, which is signiﬁcantly higher compared to
+ICG alone (14.03%), ICG-AuNPs (30.09%), ICG-Au10NCs
+(49.74%), and ICG-Au25NCs (43.41%). This superior per-
+formance highlights the optimal ROS-generating capability
+of the ICG-Au15NCs, likely due to the effective electronic
+interaction between ICG and the gold core at optimal
+size.
+In summary, these ﬁndings demonstrate the successful
+synthesis of ICG-AuNCs and their potential in aPDT appli-
+cations, emphasizing the importance of nanoparticle size in
+regulating ROS production efﬁciency. The differences in ROS
+generation among the materials suggest a complex interplay
+of structural and electronic factors, particularly in the types of
+ROS and photoinduced electron transfer. Research is needed
+to elucidate the physical mechanisms driving the enhanced
+ROS generation observed with ICG-AuNCs. In the following
+sections, we will discuss these issues in detail.
+ 26924560, 2025, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/agt2.666 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+AGGREGATE
+4 of 13
+F I G U R E 1
+The preparation and characterization of ICG-Au15NCs. (A) the DFT computational model of Au15NCs and ICG-Au15NCs. (B) UV–vis
+absorption spectra of ICG-Au10NCs, ICG-Au15NCs, ICG-Au25NCs, and ICG. (C) Emission spectra of ICG-Au10NCs, ICG-Au15NCs, ICG-Au25NCs, and
+ICG. (D) FTIR spectra of GSH, Au15NCs, ICG, and ICG-Au15NCs. (E) TEM images of ICG-Au15NCs, the inset embedded in the top right corner is the
+particle size distribution chart. (F) Consumption of DPBF due to reaction with ROS produced by ICG-Au15NCs (Au atoms 70 µg mL−1) under NIR laser
+irradiation (0.5 W cm−2), which absorbs characteristically at 410 nm. (G) Absorbance ratios at 410 nm for ICG, ICG-AuNPs, and ICG-Au15NCs under NIR
+irradiation (0.5 W cm−2) over a period of 1–6 min.
+2.2
+Size-dependent ROS enhancement
+performance of ICG-AuNCs
+To thoroughly explore the size-dependent ROS enhancement
+effect of ICG-AuNCs, we utilized Electron paramagnetic res-
+onance (EPR) spectroscopy to analyze the types of ROS.
+ICG, as a type II photosensitizer, generates only 1O2 under
+808 nm NIR irradiation (Figure 2A–C). The behavior of
+ICG-AuNPs mirrored that of ICG, adhering to the type II pho-
+todynamic pathway, characterized solely by energy transfer
+between the photosensitizer and O2. In stark contrast, ICG-
+AuNCs displayed enhanced production of ⋅OH and ⋅O2−via
+the type I photochemical pathway, indicating the occurrence
+of electron transfer in addition to energy transfer between the
+photosensitizer and O2. Notably, ICG-Au15NCs were found
+to signiﬁcantly generate 1O2, ⋅OH, and ⋅O2−, as evidenced
+in Figure 2A–C. Additionally, the EPR spectra of AuNCs
+with different sizes were used as control groups, as shown
+in Figure S4A–I. This conﬁrms the pronounced impact of the
+atomic-precision size effect of AuNCs on ROS production
+and highlights the critical roles of both energy and electron
+transfer mechanisms within the ICG-AuNCs system.
+As depicted in Figure 1B,C, following the formation
+of ICG-AuNCs, a noticeable blue shift in the absorption
+position occurs, and luminescence quenching is no longer
+observed. This phenomenon is generally attributed to the for-
+mation of charge transfer complexes, the utilization of excited
+state energy in electron transfer, and effective energy level
+alignment between the donor and acceptor molecules.[34–36]
+To further elucidate the direction of electron transfer, the
+energy level distribution of AuNCs was estimated using
+cyclic voltammetry, as shown in Figure 2D. Upon exci-
+tation, electrons in ICG transition from the highest occu-
+pied molecular orbital (HOMO) to the lowest unoccupied
+ 26924560, 2025, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/agt2.666 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+5 of 13
+AGGREGATE
+F I G U R E 2
+Photocatalytic ROS generation mechanism. (A–C) EPR shows the detection of ROS for ICG, as well as ICG-Au10NCs, ICG-Au15NCs, and
+ICG-Au25NCs and ICG-AuNPs: 1O2 (A), •OH (B), and •O2−(C). (D) Energy level distributions of various nanomaterials. (E) fs-TA spectra of ICG-Au15NCs,
+pump light at 808 nm. (F) Kinetic ﬁtting of different nanomaterials observed at 710 nm. (G, H) Photocurrent spectra (G) and photoresistance spectra (H) of
+various nanomaterials under 808 nm NIR irradiation. (I) Illustration of the charge-transfer photocatalytic mechanism responsible for the generation of ROS by
+ICG-AuNCs under NIR irradiation.
+molecular orbital (LUMO), achieving an energy level of
+−6.10 eV. In this scenario, the excited state electrons of
+ICG can transfer to the LUMO of Au10NCs (−6.59 eV) and
+Au15NCs (−6.46 eV), as these levels are energetically favor-
+able compared to ICG’s LUMO. Conversely, electron transfer
+to the LUMO of Au25NCs (−5.45 eV), which is higher than
+ICG’s LUMO, poses challenges due to less favorable energy
+alignment.
+To delve deeper into the photophysical processes in
+ICG-AuNCs, femtosecond transient absorption (fs-TA) spec-
+troscopy was employed. As depicted in Figure 2E and Figure
+S4J–L, ICG-AuNCs consistently demonstrate a ground-state
+bleaching (GSB) peak at 710 nm, which shifts from 725
+to 710 nm. This shift is likely indicative of charge trans-
+fer complex formation, suggesting electron transfer from the
+excited state of the donor to the acceptor.[37] Kinetic ﬁtting
+(Figure 2F) reveals that post-excitation, the GSB intensity
+of ICG-AuNCs diminishes, possibly due to the formation of
+these charge transfer complexes and enhanced energy transfer
+efﬁciency. Notably, ICG-Au15NCs exhibit the weakest GSB
+peak intensity, signifying the highest transfer efﬁciency.[38]
+A tri-exponential ﬁt of the GSB peak decay, detailed in Table
+S1, uncovers three distinct timescales: τ1, which points to
+ultrafast electron transfer; τ2, associated with relaxation and
+reorganization processes following electron transfer, and τ3,
+indicating long-lived electron–hole separation states. In ICG-
+Au15NCs, τ2 is notably short, extending only to 2.028 ps,
+which suggests a faster relaxation or reorganization process
+ 26924560, 2025, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/agt2.666 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+AGGREGATE
+6 of 13
+post-electron transfer, aligning with its pronounced ROS pro-
+duction properties (Figures 1G and 2A–C). In comparison,
+ICG-Au15NCs exhibit shorter τ1 and τ2 times relative to
+ICG-Au10NCs, indicating more efﬁcient electron transfer and
+greater ROS production. Conversely, the ICG-Au25NCs sys-
+tem displays slower electron transfer, primarily resulting in
+energy transfer and diminished ROS production.
+To conﬁrm the electron transfer efﬁciency, additional
+experiments,
+including
+photo-switching
+electrochemical
+methods (Figure 2G) and electrochemical impedance spec-
+troscopy (Figure 2H), were conducted. The results demon-
+strated that ICG-Au15NCs exhibit the highest photocurrent
+response and the lowest charge transfer resistance among
+ICG-AuNCs system. This ﬁnding explains why, despite the
+similar energy level distributions of ICG-Au10NCs and ICG-
+Au15NCs, their ROS production rates differ. The reason lies
+in the fact that ICG-Au15NCs signiﬁcantly enhance the par-
+ticipation of photo-generated electrons in ROS production
+and provide a solid foundation for efﬁcient electron trans-
+fer between the photosensitizer and O2. Consequently, this
+indicates that the electron transfer rate between ICG and
+Au15NCs is the most efﬁcient, facilitating robust production
+of ROS.
+Integrating these ﬁndings with the results from both photo-
+physical and electrochemical experiments, it becomes clear
+that Au15NCs in the conjugate system greatly enhance
+electron transfer and effectively inhibit electron–hole recom-
+bination, as demonstrated in Figure 2I. This comprehensive
+analysis elucidates the intricate electron and energy transfer
+dynamics within the ICG-AuNCs system, which are cru-
+cial for optimizing their functionality in aPDT applications.
+Understanding these kinetic parameters allows for better con-
+trol and improvement of the efﬁciency and selectivity of
+aPDT reactions, ultimately enabling more efﬁcient biological
+applications downstream.
+2.3
+Antibacterial performance of
+ICG-AuNCs in vitro
+In vitro antibacterial experiments aimed to validate the
+antibacterial efﬁcacy of ICG-AuNCs, with free ICG and
+larger-sized ICG-AuNPs serving as controls. For this pur-
+pose, Staphylococcus aureus (S. aureus, ATCC 29213) and
+Escherichia coli (E. coli, ATCC 47076), representing Gram-
+positive bacteria and Gram-negative bacteria respectively,
+were selected. The results, depicted in Figure 3A–B and
+Figure S5, showed that under NIR irradiation, treatments with
+ICG and ICG-AuNPs partially reduced the colony-forming
+units (CFUs) of both bacterial bioﬁlms, with reductions of
+less than 1-log and 2-log, respectively. In contrast, the three
+different sizes of ICG-AuNCs displayed markedly enhanced
+antibacterial efﬁciencies, showcasing a distinct atomic-
+precision size effect. Among them, ICG-Au15NCs proved to
+be the most effective, signiﬁcantly reducing bacterial bioﬁlms
+with over 3-log decreases in CFUs for both S. aureus and
+E. coli, achieving antibacterial efﬁciencies of 99.94% and
+99.90%, respectively. Meanwhile, ICG-Au10NCs and ICG-
+Au25NCs displayed efﬁciencies of 98.52% and 98.81% for S.
+aureus, and 98.01% for E. coli each, as recorded in Figure 3B
+and Figure S5. This correlates closely with the ROS quantum
+yield of ICG-AuNCs. Given that an antibacterial efﬁciency of
+less than 99.90% may not meet clinical standards due to the
+risk of rapid proliferation and potential reinfection of surviv-
+ing bacteria, ICG-Au15NCs, with their superior antibacterial
+performance, stand out as highly effective for controlling
+bacterial infections.[17,39]
+Scanning electron microscopy (SEM) was employed to
+further investigate the antibacterial process by examining
+the morphological changes in bacterial bioﬁlms. Figure 3C
+shows the morphologies of S. aureus bioﬁlms following var-
+ious treatments, while SEM images of E. coli bioﬁlms are
+presented in Figure S6. In the ICG-Au15NCs group, the
+bacteria exhibited the most signiﬁcant structural integrity dis-
+ruption, with many cells showing severe damage or complete
+dissolution. In contrast, the membrane disruption in the ICG-
+Au10NCs and ICG-Au25NCs groups was less pronounced
+(Figure S7A). This membrane disruption leads to the release
+of cellular contents, including proteins and nucleic acids.
+Detailed results for S. aureus are shown in Figure 3D and
+Figure S7B–C, and for E. coli in Figure S8A,B. Notably,
+ICG-Au15NCs exhibited the highest leakage of nucleic acids
+and proteins, likely due to the elevated levels of ROS pro-
+duced, demonstrating the profound impact of nanoparticle
+sizing on antibacterial efﬁcacy.
+The spatial interaction between nanomaterials and biosys-
+tems, particularly its impact on bacteria, is crucial for antibac-
+terial efﬁcacy.[40] Given that the lifespans of ROS range
+from nanoseconds to milliseconds, their direct impact on
+the internal environment of bacteria is inherently limited.[41]
+To better understand these interactions, TEM and TEM-
+mapping were utilized to analyze the distribution and relative
+intensity of Au of ICG-AuNCs and ICG-AuNPs, examin-
+ing their spatial interaction with bacteria. Figure 3E shows
+that ICG-AuNPs predominantly accumulate on the bacterial
+surface without penetration, whereas ICG-Au15NCs signiﬁ-
+cantly enrich Au inside bacteria cells, with a relative intensity
+four times that of ICG-AuNPs, as detailed in Figure 3F.
+Further, TEM-mapping of ICG-Au10NCs and ICG-Au25NCs
+(Figure S9) shows better intracellular Au enrichment than
+ICG-AuNPs, yet without signiﬁcant size-dependent varia-
+tions within these nanoclusters. These results underscore an
+internalization efﬁciency: ultra-small ICG-AuNCs are able to
+enter bacterial cells, unlike their larger counterparts (ICG-
+AuNPs). However, internalization efﬁciency does not vary
+signiﬁcantly with size among the nanoclusters, corroborat-
+ing previous ﬁndings.[24] This nuanced difference in the
+locations and quantities of ROS production may impact
+bacterial metabolism differently. MTT assays (Figure S10)
+reveal that S. aureus’s metabolic activity is most signiﬁcantly
+suppressed after treatment with ICG-Au15NCs. Hence, the
+atomic-precision size effect of ICG-AuNCs pertains to efﬁ-
+cient internalization, which is not inﬂuenced by size within
+the nanoclusters scale, yet varying ROS quantum yield from
+different sizes causes distinct oxidative impacts, affecting
+bacterial metabolism in diverse ways.
+Bacterial bioﬁlms complicate their removal and shield
+them from external threats.[42] To further explore nanoma-
+terial penetration into bioﬁlms, 3D reconstructions using
+ﬂuorescent dyes were performed with a confocal laser scan-
+ning microscope (CLSM). In this analysis, red ﬂuorescence
+indicates bacterial cell death, while green ﬂuorescence sig-
+niﬁes living bacterial cells. Figure 3G reveals that in the
+control group, vibrant green ﬂuorescence indicates intact
+ 26924560, 2025, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/agt2.666 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+7 of 13
+AGGREGATE
+F I G U R E 3
+The antibacterial property of ICG-AuNCs against bioﬁlms. (A, B) The images and corresponding statistical information of S. aureus. and E.
+coli bioﬁlms treated by PBS, ICG, ICG-AuNPs, and ICG-Au15NCs. (C) SEM images of S. aureus bioﬁlm. Damage and degeneration of the cell membrane are
+marked with arrows. Scale bar, 1 µm and 500 nm. (D) Protein leakage of S. aureus. (E) TEM and TEM-mapping images of S. aureus bioﬁlm and Au distribution.
+(F) Relative content of Au within bacteria under ICG-AuNPs and ICG-AuNCs treatment. (G) Representative 3D live/dead images and ﬂuorescence images of
+bioﬁlms thickness in different groups, and circles represent the live/dead ratio of the bacteria. (H) Average thickness of bioﬁlms under different treatments.
+(n = 3; *p < 0.05, **p < 0.01, ***p < 0.001; ns, not signiﬁcant).
+S. aureus bioﬁlms. Distinctly, the ICG-Au15NCs group
+exhibits intense red ﬂuorescence, signifying substantial cell
+death, with red intensity signiﬁcantly higher at approxi-
+mately 87% compared to the ICG-AuNPs and other sizes of
+ICG-AuNCs (Figure S7B). Furthermore, Figure 3H displays
+bioﬁlm thickness post-treatment. ICG-Au15NCs notably pro-
+duced thinner, more extensively permeated bioﬁlms with a
+uniform red ﬂuorescence across a mere 7.32 nm thickness.
+Conversely, ICG-AuNPs showed red ﬂuorescence only at the
+surface, while various sizes of ICG-AuNCs demonstrated
+deeper penetration, as depicted in Figure S7D. Similar char-
+acteristics were observed in the CLSM images of E. coli
+(Figure S11): their ability to deeply penetrate bioﬁlms, a
+capability not matched by the larger ICG-AuNPs, likely due
+to the AuNCs’ excellent water solubility and ultra-small size.
+In summary, the atomic-precision size effect of ICG-
+AuNCs drives their high antibacterial efﬁcacy. These nan-
+oclusters can effectively penetrate and internalize within
+bacterial bioﬁlms and cell membranes, unlike larger ICG-
+AuNPs. Additionally, the varying antibacterial strengths of
+different-sized ICG-AuNCs stem from differential ROS pro-
+duction levels induced by NIR irradiation, leading to varied
+degrees of metabolic disruption in bacteria and potentially
+triggering novel antibacterial mechanisms.
+ 26924560, 2025, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/agt2.666 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+AGGREGATE
+8 of 13
+2.4
+Antibacterial mechanism of
+ICG-AuNCs
+ICG-Au15NCs demonstrated the most potent antibacterial
+properties among three sizes of ICG-AuNCs and were there-
+fore chosen to compare antibacterial mechanisms against
+ICG-AuNPs. We performed transcriptomic analysis using
+RNA-sequencing on S. aureus ATCC 29213 bioﬁlms treated
+with both ICG-Au15NCs and ICG-AuNPs. Principal com-
+ponent analysis (PCA), illustrated in Figure S12A, revealed
+signiﬁcant differences among the control, ICG-AuNPs, and
+ICG-Au15NCs groups. After treatment, 417 genes showed
+statistically signiﬁcant changes with ICG-AuNPs, and 705
+genes with ICG-Au15NCs (Figure S12B). The Venn dia-
+gram in Figure S12C identiﬁes the intersections and unique
+segments of the differentially expressed genes (DEGs). An
+empirical Bayesian approach highlighted 272 upregulated
+and 493 downregulated genes with |log2(fold change)| ≥1
+and p-value < 0.05, as depicted in the volcano plot (Figure
+S13). A comprehensive heatmap provided in Figure S14 visu-
+alizes these genes, with those highly expressed marked in red
+and those signiﬁcantly suppressed in green.
+TEM and SEM imaging, as shown in Figures 3E and 3C
+respectively, revealed that ICG-Au15NCs induce ROS pro-
+duction within bacterial cells, contrasting with the predomi-
+nantly extracellular activity of ICG-AuNPs. Given the critical
+role of ribosomes in bacterial cells, we speciﬁcally analyzed
+the expression of ribosome-related genes. Ribosomes are fun-
+damental components of bacterial cells and key targets for
+many antibacterial mechanisms due to their essential func-
+tion in protein synthesis.[43] As depicted in Figure S15, there
+was a signiﬁcant downregulation of these genes in bacteria
+treated with ICG-Au15NCs, highlighting their intracellular
+action and inﬂuence on protein synthesis. In contrast, treat-
+ment with ICG-AuNPs did not show notable changes in these
+genes, further conﬁrming the distinct mechanisms and effects
+of the two treatments.
+Genes collaborate to drive biological functions, and Kyoto
+Encyclopedia of Genes and Genomes (KEGG) pathway anal-
+ysis is instrumental in elucidating these functions.[44] As
+shown in Figure 4A, compared to the ICG-AuNPs group,
+pathways related to quorum sensing, S. aureus infection,
+ABC transporters, and bioﬁlm formation were notably down-
+regulated in the ICG-Au15NCs treatment group. Furthermore,
+gene set enrichment analysis (GSEA) identiﬁes gene sets that
+exhibit signiﬁcant expression changes within speciﬁc biolog-
+ical pathways, independent of predeﬁned gene sets.[45] The
+GSEA results, illustrated in Figure 4B, indicate that follow-
+ing treatment with ICG-Au15NCs, compared to ICG-AuNPs,
+gene sets related to quorum sensing, S. aureus infection,
+and ABC transporters underwent signiﬁcant changes. The
+normalized enrichment scores (NES) measure the degree of
+enrichment of a speciﬁc gene set within a ranked list of genes.
+In this context, the NES values of −1.48, −1.44, and −1.26
+indicate a downregulation of gene expression across these
+three pathways. This suggests that the “atomic-precision size
+effect” of ICG-Au15NCs can effectively disrupt the forma-
+tion of bacterial bioﬁlms and further impact broader bacterial
+biological behavior.
+Bacteria communicate within bioﬁlms via quorum sens-
+ing molecules. Disruption of their synthesis, secretion, and
+reception can signiﬁcantly impact bioﬁlm development. As
+depicted in Figure 4C, the quorum sensing pathway of S.
+aureus was notably affected, with 15 of 51 genes signif-
+icantly downregulated. KEGG Orthologs analysis, shown
+in Figure S16, indicated a substantial decrease in genes
+phnA and phnB, involved in signaling molecule synthesis.[46]
+Interestingly, phnA and phnB are also crucial for bioﬁlm for-
+mation, further supporting that their downregulation could
+hinder bioﬁlm development. Furthermore, expression of
+SecY2, essential for bacterial protein secretion, was markedly
+reduced, diminishing quorum sensing capabilities, toxic-
+ity, and immunogenicity (Figure S16).[47] The reception of
+signaling molecules was also impaired, evidenced by the
+reduced expression of the Opp family (Opp/Ami, Prg Z/Opp,
+Tra C/Opp).[48] Overall, the protein–protein interaction (PPI)
+network demonstrates that treatment with ICG-Au15NCs
+inhibited the entire pathway of inter-bacterial signaling
+(Figure S17), an effect not observed with ICG-AuNPs. This
+indicates that the ICG-Au15NCs can effectively disrupt the
+formation of bacterial bioﬁlms at a molecular level.
+The S. aureus infection pathway, which outlines the bac-
+terial adhesion, invasion, toxin, in vivo and protein release
+leading to host cell damage and inﬂammation, is crucial
+for understanding pathogenicity. As shown in Figure 4D,
+the downregulation of genes within this pathway indicates
+that ICG-Au15NCs attenuate the pathogenicity of the bacte-
+ria. This pathway includes bacterial surface proteins, toxins,
+cell wall constituents, host cell receptors, and signaling
+molecules. Figure S18 identiﬁed a decrease in expression of
+the isdA and Sbi genes on the surface of S. aureus. Accord-
+ing to the PPI network depicted in Figure S17, isdA, a
+critical adhesin, binds to host proteins, facilitating adhesion
+and resistance to lactoferrin. Its reduced expression likely
+diminishes both adhesion and pathogenicity.[49] Additionally,
+genes such as sbi, aur, and scc, which encode proteins that
+disrupt host immunity, were also downregulated (Figure 4D
+and Figure S18). Intriguingly, genes associated with S. aureus
+cytolysins (Hlg/Luc, lukF-PV, hlgB, lukS-PV, hlgC) and
+superantigen enterotoxin (seu, sem, sei, sen) showed reduced
+expression, further mitigating bacterium’s capacity to induce
+pathogenic effects and inﬂammatory responses.[50] In sum-
+mary, compared to ICG-AuNPs, ICG-Au15NCs signiﬁcantly
+suppress the S. aureus infection pathway, effectively reduc-
+ing the bacterium’s virulence while enhancing host resistance
+and healing capacity.
+ABC transporters in S. aureus are pivotal for bacterial
+growth, metabolism, bioﬁlm formation, and the secretion of
+virulence factors.[51] Treatment with ICG-Au15NCs led to the
+downregulation of genes in the phn gene cluster (phnE, phnC)
+and ugpC, which are involved in metabolizing and transport
+of phosphorylated compounds in S. aureus.[52] (Figure 4E
+and Figure S19). Additionally, the expression of crucial phos-
+phate transport genes pstB, pstA, and pstC was also reduced
+(Figure 4E). GO analysis further conﬁrmed the downregu-
+lation in the biosynthesis and metabolism of extracellular
+matrix components and amino acids, including histidine,
+tryptophan, and α-amino acids (Figure S20). This suggests
+that ICG-Au15NCs may disrupt phosphate transportation and
+metabolism via ABC transporters, consequently reducing
+nutrient availability, which could inﬂuence bioﬁlm formation
+and the secretion of virulence factors. This ﬁnding provides
+ 26924560, 2025, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/agt2.666 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+9 of 13
+AGGREGATE
+F I G U R E 4
+Comprehensive evaluation of S. aureus bioﬁlms post-treatment with ICG-Au15NCs and ICG-AuNPs through RNA sequencing. (A) KEGG
+pathway enrichment analysis highlights the DEGs with red underlines denoting signiﬁcantly enriched pathways. (B) Gene set enrichment analysis (GSEA) was
+performed to assess the pathways of Quorum sensing, S. aureus infection, and ABC transporters in three groups subjected to varied treatments, the normalized
+enrichment score (NES) measures the degree of enrichment of a speciﬁc gene set within a ranked list of genes. (C) Heatmaps illustrating DEGs associated with
+pathways related to Quorum sensing. (D) Heatmaps illustrating DEGs associated with pathways related to S. aureus infection. (E) Heatmaps illustrating DEGs
+associated with pathways related to ABC transporters. (F) Molecular dynamics simulation results. The light orange structure represents ICG, green represents
+the key residues of SecY2 that interact with small molecules, yellow dashed lines represent hydrophobic interactions, blue lines represent hydrogen bonds,
+and purple lines represent salt bridges. (G) A diagrammatic representation of the speciﬁc antibacterial action of ICG-AuNCs. Data are presented as individual
+points for triplicate experiments (n = 3).
+novel insights for developing therapeutic strategies against S.
+aureus infections.
+The unique antibacterial action of ICG-Au15NCs may stem
+from their water-soluble, ultra-small size, enhancing their
+internalization into bacterial cells compared to the larger
+ICG-AuNPs. Given SecY2’s critical role in bacterial toxic-
+ity, quorum sensing, and bioﬁlm formation, further molecular
+dynamics simulations identiﬁed SecY2 as a biological binding
+site, as shown in Figure 4F. These simulations demonstrate
+that ICG-Au15NCs can tightly bind to SecY2 through hydro-
+gen bonds and salt bridges, suggesting that the ROS generated
+by ICG-Au15NCs at ultra-micro distances can directly impact
+biomolecules like SecY2 and broader bacterial biochemical
+processes. Future research will delve deeper into the direct
+interactions between AuNCs and biomolecules, potentially
+unveiling more about their mode of action.
+In summary, as illustrated in Figure 4G, ICG-Au15NCs
+offer unparalleled advantages over ICG-AuNPs in both efﬁ-
+cient antibacterial action and reducing bacterial pathogenic-
+ity. In contrast, the larger ICG-AuNPs primarily exert
+effects extracellularly, damaging the bacterial cell mem-
+brane through ROS production and inducing oxidative stress.
+Although ICG-AuNPs are capable of killing bacteria, they
+fall short in multi-level regulation of bacterial virulence,
+quorum sensing, and bioﬁlm formation. Thus, leverag-
+ing the atomic-precision size effect of AuNCs to enhance
+aPDT capabilities and reduce bacterial toxicity presents a
+compelling and effective antibacterial strategy.
+ 26924560, 2025, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/agt2.666 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+AGGREGATE
+10 of 13
+F I G U R E 5
+Efﬁcacy of ICG-AuNCs in eliminating wound infection in vitro. (A) Schematic of the in vivo antibacterial study protocol. (B) Representative
+macroscopic images of skin wounds from different treatment groups. (C) Comparative analysis of relative wound healing areas among treatment groups. (D)
+CFU statistical data of wound exudate after different treatments. (E) Raman scanning of mouse skin image. (F) Raman spectroscopy detection of wound
+skin. (G) Representative histological examinations depicted by H&E staining. (H) Representative histological images using Masson’s trichrome staining. (I)
+Representative immunoﬂuorescence images illustrating TLR2 expression post-different treatments. (J) Representative immunoﬂuorescence images illustrating
+CD31 expression post-different treatments. (n = 3; *p < 0.05, **p < 0.01; ns, not signiﬁcant).
+2.5
+Size-dependent antibacterial
+performance of ICG-AuNCs in vivo
+The efﬁcacy of ICG-AuNCs in eliminating wound infec-
+tion were further investigated in vivo using a mouse model
+of cutaneous wound healing with S. aureus-induced infec-
+tions. Figure 5A illustrates the entire process of the in vivo
+antibacterial study. Figure 5B provides in-situ images of the
+wounds on the mice’s backs, allowing for monitoring wound
+repair and comparison with the control group. Additionally,
+ 26924560, 2025, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/agt2.666 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+11 of 13
+AGGREGATE
+graphical squares simulate the dynamic changes in the wound
+area (Figure 5C). Notably, the control group exhibited the
+widest wound area, indicating a poor self-healing capabil-
+ity in wounds infected with bacteria, with 46.71% remaining
+wound area as shown in Figure S21. In stark contrast, the
+infected wounds in the ICG-Au15NCs group had nearly
+disappeared, reducing to just 7.73%.
+To quantify the S. aureus residues around the tissue,
+local tissue exudates was collected CFU analysis using S.
+aureus chromogenic plates, as shown in Figure 5D and
+Figure S22. The representative images highlight a signiﬁ-
+cant reduction in S. aureus CFU counts in the ICG-Au15NCs
+group, by approximately 2.6-logs. Furthermore, the cyto-
+toxicity of the exudates was evaluated using CCK-8 assay
+and a hemolysis test, with results presented in Figure
+S23A,B. These outcomes validate the therapeutic potential
+of ICG-Au15NCs in managing bacterial infections effec-
+tively. In vivo ﬂuorescence imaging assessed ROS levels
+at the wound site using the ROS-speciﬁc probe 2′,7′-
+dichlorodihydroﬂuorescein diacetate (DCFH-DA). Results
+showed that the ICG-Au15NCs group had lowest ROS ﬂuo-
+rescence intensity (Figure S23C,D). This suggests that ICG-
+Au15NCs effectively reduce oxidative stress from bacterial
+infection, correlating with better wound healing.
+Raman spectroscopy was employed to assess the qual-
+ity of wound healing, as depicted in Figure 5E,F. This
+analysis provided insights into the proportions of collagen
+(880–840 cm−1), elastin (1460–1435 cm−1), and keratin
+(1655.24–1657.16 cm−1) in mouse skin samples under dif-
+ferent treatments.[53] The mechanical behavior of soft tissue
+such as elasticity, largely depend on the ratio of colla-
+gen to elastin in the ﬁbers. As shown in Figure S24, the
+ICG-Au15NCs treatment group exhibited a higher collagen-
+to-elastin ratio, suggesting enhanced elasticity and superior
+skin tissue healing compared to other group. This effective
+wound healing can be attributed to the thorough eradica-
+tion of S. aureus and the reduction of its virulence by
+ICG-Au15NCs.
+Additionally, tissue samples collected from around the
+wound sites were subjected to histological analysis. It is
+well-documented that neutrophils are recruited to wound
+sites post-infection, aiding bacterial clearance but potentially
+delaying healing. As illustrated in Figure 5G and Figure
+S25A, treatment with ICG-Au15NCs signiﬁcantly reduced
+neutrophil accumulation compared to controls and other
+groups. During the proliferative phase of healing, the for-
+mation of a collagen-rich extracellular matrix, crucial for
+wound closure, marks the transition from inﬂammation to
+repair. Figures 5H and S25B demonstrate that ICG-Au15NCs
+promote orderly collagen deposition and enhanced vascular
+structure due to effective ROS generation and antibacterial
+action. Remarkably, collagen levels in the ICG-Au15NCs
+group were found to be three times higher than those in
+controls.
+To assess ICG-AuNCs’ impact on tissue inﬂammation
+and angiogenesis, TLR2 and CD31 were analyzed via
+immunoﬂuorescence. TLR2, crucial for innate immunity,
+detects pathogen markers, initiating responses that curb S.
+aureus infections by promoting bacterial clearance and mit-
+igating inﬂammation.[54] As illustrated in Figure 5I and
+Figure S25C, a signiﬁcant reduction in red ﬂuorescence of
+TLR2 is observed in the treatment group, with the ICG-
+Au15NCs group displaying the most signiﬁcant decrease in
+ﬂuorescence intensity. This suggests that the ICG-Au15NCs
+treatment effectively eradicated S. aureus, thereby reducing
+the bacteria-induced inﬂammatory response. Additionally,
+CD31, a biomarker associated with angiogenesis, is known
+to be upregulated during the early stages of blood ves-
+sel formation.[55] As shown in Figures 5J and S25D, the
+ICG-Au15NCs group exhibited the highest CD31 expres-
+sion, indicating signiﬁcant angiogenesis, which indirectly
+suggests that the infection has been controlled and the
+tissue repair is progressing well. This is likely due to ICG-
+Au15NCs’ potent antibacterial function, which in turn sig-
+niﬁcantly inhibits inﬂammatory activity and promotes wound
+healing.
+Furthermore, the biocompatibility of ICG-AuNCs was
+assessed through a 24-h CCK-8 assay (Figure S26A), which
+consistently demonstrated cell viability above 80%, afﬁrm-
+ing their suitability for biomedical applications. Hemolysis
+tests (Figure S26B) further conﬁrmed their good biocom-
+patibility. Additionally, as shown in Figure S26C, H&E
+histological analysis of major organs on day 30 showed no
+signs of inﬂammation or abnormalities following injection
+with various concentrations of ICG-AuNCs.
+Overall, the in vivo results clearly demonstrate that ICG-
+Au15NCs-mediated aPDT exhibits signiﬁcant antibacterial
+effects. ICG-Au15NCs not only effectively eliminate bacteria
+but also reduce the expression of virulence factors. This leads
+to decreased tissue inﬂammation, reduced collagen degra-
+dation, and promoting angiogenesis, ultimately facilitating
+effective healing of infected wounds.
+3
+CONCLUSION
+In this study, we successfully developed a novel multi-
+sized NIR-activated ICG-AuNCs model and validated its
+efﬁcacy in combating bioﬁlm formation and bacterial vir-
+ulence factors both in vitro and in vivo. The inﬂuence of
+atomic-precision size effect on sensitization modiﬁcations
+was initially conﬁrmed. The ICG-Au15NCs composite, with
+matched energy levels and high electron–hole separation efﬁ-
+ciency, signiﬁcantly enhanced the generation and diversity of
+ROS, which are critical for intensifying antibacterial action.
+ICG-AuNCs exhibited the ability to penetrate and internal-
+ize into bacterial bioﬁlms and cell membranes, a capability
+that larger ICG-AuNPs lack. This led to remarkable regula-
+tion of bacterial metabolism, effectively suppressing quorum
+sensing, S. aureus infection pathways, and ABC transporters
+activity, resulting in reduced bioﬁlm formation and decreased
+toxicity. Overall, the AuNCs may herald a new era for
+photosensitizers, offering innovative strategies for bioﬁlm
+clearance through their ultra-small size, addressing the issue
+from multiple dimensions. These strategies could be applied
+to other bacterial infectious diseases, potentially transforming
+approaches to microbial infection control.
+4
+EXPERIMENTAL SECTION
+For detailed information on chemicals and materials, all
+synthesis procedures, biocompatibility assessment, hemol-
+ysis assay, all antibacterial assays, transcriptomic analysis,
+ 26924560, 2025, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/agt2.666 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+AGGREGATE
+12 of 13
+nucleic acid and protein leak assays, and infection models,
+please refer to the supporting information.
+AC K N OW L E D G E M E N T S
+This work was supported by the National Natural Sci-
+ence Foundation of China (82170998, 52250007, 62205122,
+11974142, U21A2068, T2325015, and 12174151), the Key
+Program of Natural Science Foundation of Jilin Province
+(20220204128YY,
+20220402005GH),
+Funding
+of
+Jilin
+Province Development and Reform Commission (2022C044-
+1, 2021C035-1), Science and Technology Project of Jilin
+Province Financial Department (JCSZ2021893-15), Key
+Research and Development Program of Science and Technol-
+ogy Development Project of Jilin Province (20220203145SF,
+20210203087SF), the Fundamental Research Funds for the
+Central Universities, and the Funding of Jilin University
+graduate innovation research program project (2023CX227,
+2023CX228).
+C O N F L I C T O F I N T E R E S T S TAT E M E N T
+The authors declare no conﬂicts of interests.
+E T H I C S S TAT E M E N T
+All animal experiments in this study were approved by Ani-
+mal Ethics Committee of Medical Experiment Animals at
+the College of Basic Medicine, Jilin University (License
+No. 2023–269), ensuring compliance with pertinent ethical
+standards.
+DATA AVA I L A B I L I T Y S TAT E M E N T
+Data will be made available on request.
+O R C I D
+ZhennanWu
+https://orcid.org/0000-0001-5887-7129
+R E F E R E N C E S
+1. T. Mestrovic, G. R. Aguilar, L. R. Swetschinski, K. S. Ikuta, A. P. Gray,
+N. D. Weaver, C. Han, E. E. Wool, A. G. Hayoon, S. I. Hay, Lancet
+Public Health 2022, 7, e897.
+2. K. S. Ikuta, L. R. Swetschinski, G. R. Aguilar, F. Sharara, T. Mestrovic,
+A. P. Gray, N. D. Weaver, E. E. Wool, C. Han, A. G. Hayoon, Lancet
+2022, 400, 2221.
+3. R. Laxminarayan, Lancet 2022, 399, 606.
+4. A. Uberoi, A. McCready-Vangi, E. A. Grice, Nat. Rev. Microbiol. 2024,
+22, 507.
+5. C. Uruén, G. Chopo-Escuin, J. Tommassen, R. C. Mainar-Jaime, J.
+Arenas, Antibiotics 2020, 10, 3.
+6. B. P. Howden, S. G. Giulieri, T. Wong Fok Lung, S. L. Baines, L. K.
+Sharkey, J. Y. H. Lee, A. Hachani, I. R. Monk, T. P. Stinear, Nat. Rev.
+Microbiol. 2023, 21, 380.
+7. M. Kang, C. Zhou, S. Wu, B. Yu, Z. Zhang, N. Song, M. M. S. Lee, W.
+Xu, F.-J. Xu, D. Wang, L. Wang, B. Z. Tang, J. Am. Chem. Soc. 2019,
+141, 16781.
+8. A. Bekmukhametova, H. Ruprai, J. M. Hook, D. Mawad, J. Houang, A.
+Lauto, Nanoscale 2020, 12, 21034.
+9. Y. Su, J. T. Yrastorza, M. Matis, J. Cusick, S. Zhao, G. Wang, J. Xie,
+Adv. Sci. 2022, 9, 2203291.
+10. L. Cheng, B. Zhou, M. Qi, X. Sun, S. Dong, Y. Sun, B. Dong, L. Wang,
+Y. Yang, Chin. Chem. Lett. 2024, 35, 108648.
+11. X. Sun, J. Sun, Y. Sun, C. Li, J. Fang, T. Zhang, Y. Wan, L. Xu, Y. Zhou,
+L. Wang, Adv. Funct. Mater. 2021, 31, 2101040.
+12. M. Awad, N. Thomas, T. J. Barnes, C. A. Prestidge, J. Controlled
+Release 2022, 346, 300.
+13. K. P. Rumbaugh, K. Sauer, Nat. Rev. Microbiol. 2020, 18, 571.
+14. P. S. Stewart, J. W. Costerton, Lancet 2001, 358, 135.
+15. K. Sauer, P. Stoodley, D. M. Goeres, L. Hall-Stoodley, M. Burmølle, P.
+S. Stewart, T. Bjarnsholt, Nat. Rev. Microbiol. 2022, 20, 608.
+16. B. Yu, Q. Liu, J. Sun, X. Fu, Y. Zhang, X. Sun, Chem. Eng. J. 2024,
+487, 150705.
+17. S. Cheng, M. Qi, W. Li, W. Sun, M. Li, J. Lin, X. Bai, Y. Sun, B. Dong,
+L. Wang, Adv. Healthcare Mater. 2023, 12, 2202652.
+18. X. Wu, M. Qi, C. Liu, Q. Yang, S. Li, F. Shi, X. Sun, L. Wang, C. Li,
+B. Dong, Theranostics 2023, 13, 2350
+19. W. Sun, J. Sun, Q. Ding, M. Qi, J. Zhou, Y. Shi, J. Liu, M. Won, X. Sun,
+X. Bai, Angew. Chem. Int. Ed. 2024, 63, e202319690.
+20. G. Yang, Z. Wang, F. Du, F. Jiang, X. Yuan, J. Y. Ying, J. Am. Chem.
+Soc. 2023, 145, 11879.
+21. Z. Pang, N. Ren, Y. Wu, J. Qi, F. Hu, Y. Guo, Y. Xie, D. Zhou, X. Jiang,
+Adv. Mater. 2023, 35, 2303562.
+22. H. Shan, J. Shi, T. Chen, Y. Cao, Q. Yao, H. An, Z. Yang, Z. Wu, Z.
+Jiang, J. Xie, ACS Nano 2023, 17, 2368.
+23. K. Zheng, M. I. Setyawati, D. T. Leong, J. Xie, Nano Res. 2021, 14,
+1026.
+24. K. Zheng, M. I. Setyawati, D. T. Leong, J. Xie, Bioact. Mater. 2021, 6,
+941.
+25. G. B. Hwang, H. Huang, G. Wu, J. Shin, A. Kaﬁzas, K. Karu, H. D. Toit,
+A. M. Alotaibi, L. Mohammad-Hadi, E. Allan, Nat. Commun. 2020, 11,
+1207.
+26. V. Poderys, G. Jarockyte, S. Bagdonas, V. Karabanovas, R. Rotomskis,
+J. Photochem. Photobiol., B 2020, 204, 111802.
+27. G. Yang, X. Pan, W. Feng, Q. Yao, F. Jiang, F. Du, X. Zhou, J. Xie, X.
+Yuan, ACS Nano 2023, 17, 15605.
+28. Y. Xie, W. Zheng, X. Jiang, ACS Appl. Mater. Interfaces 2020, 12, 9041.
+29. K. Zheng, S. Li, L. Jing, P. Y. Chen, J. Xie, Adv. Healthcare Mater.
+2020, 9, 2001007.
+30. X. Jiang, B. Du, J. Zheng, Nat. Nanotechnol. 2019, 14, 874.
+31. Y. Negishi, K. N. Tsukuda, J. Am. Chem. Soc. 2005, 127, 5261.
+32. K. S. Maiti, Chem. Phys. 2018, 515, 509.
+33. Á. Fernández-Galiana, O. Bibikova, S. Vilms Pedersen, M. M. Stevens,
+Adv. Mater. 2023, 33, 2210807.
+34. X. Li, Q. Zhang, J. Yu, Y. Xu, R. Zhang, C. Wang, H. Zhang, S. Fabiano,
+X. Liu, J. Hou, Nat. Commun. 2022, 13, 2046.
+35. W. R. Kitzmann, K. Heinze, Angew. Chem. Int. Ed. 2023, 62,
+e202213207.
+36. N. Rehmat, A. Toffoletti, Z. Mahmood, X. Zhang, J. Zhao, A. Barbon,
+J. Mater. Chem. C 2020, 8, 4701.
+37. B. He, P. Xiao, S. Wan, J. Zhang, T. Chen, L. Zhang, J. Yu, Angew.
+Chem. Int. Ed. 2023, 62, e202313172.
+38. M. Li, Y. Zhao, J. Guo, X. Qin, Q. Zhang, C. Tian, P. Xu, Y. Li, W.
+Tian, X. Zheng, Nano-Micro Lett. 2023, 15, 119.
+39. V. Choi, J. L. Rohn, P. Stoodley, D. Carugo, E. Stride, Nat. Rev.
+Microbiol. 2023, 21, 555.
+40. Q. Yang, X. Sun, Q. Ding, M. Qi, C. Liu, T. Li, F. Shi, L. Wang, C. Li,
+J. S. Kim, Natl. Sci. Rev. 2024, 11, nwae225.
+41. Z. Che, Z. Zhou, S.-Q. Li, L. Gao, J. Xiao, N.-K. Wong, Trends Mol.
+Med. 2023, 29, 951.
+42. H. C. Flemming, J. Wingender, U. Szewzyk, P. Steinberg, S. A. Rice,
+S. Kjelleberg, Nat. Rev. Microbiol. 2016, 14, 563.
+43. K. Saito, H. Kratzat, A. Campbell, R. Buschauer, A. M. Burroughs, O.
+Berninghausen, L. Aravind, R. Green, R. Beckmann, A. R. Buskirk,
+Nature 2022, 603, 503.
+44. M. Kanehisa, M. Furumichi, M. Tanabe, Y. Sato, K. Morishima,
+Nucleic Acids Res. 2017, 45, D353.
+45. W. Luo, M. S. Friedman, K. Shedden, K. D. Hankenson, P. J. Woolf,
+BMC Bioinf. 2009, 10, 161.
+46. X. Pan, H. Liang, X. Zhao, Q. Zhang, L. Chen, Z. Yue, L. Yin, Y. Jin,
+F. Bai, Z. Cheng, Nucleic Acids Res. 2023, 51, 2691.
+47. M. J. Sibbald, T. Winter, M. M. van der Kooi-Pol, G. Buist, E.
+Tsompanidou, T. Bosma, T. Schäfer, K. Ohlsen, M. Hecker, H.
+Antelmann, J. Bacteriol. 2010, 192, 3788.
+48. X. Yang, T. Hu, J. Liang, Z. Xiong, Z. Lin, Y. Zhao, X. Zhou, Y. Gao,
+S. Sun, X. Yang, L. W. Guddat, H. Yang, Z. Rao, B. Zhang, Nat. Struct.
+Mol. Biol. 2024, 31, 1072.
+49. M. I. Goncheva, R. M. Gibson, A. C. Shouldice, J. D. Dikeakos, D. E.
+Heinrichs, iScience 2023, 26, 105975.
+50. C. S. Stach, A. Herrera, P. M. Schlievert, Immunol. Res. 2014, 59, 177.
+51. A. A. Akhtar, D. P. Turner, Microb. Pathog. 2022, 171, 105734.
+52. A. K. Turner, M. Yasir, S. Bastkowski, A. Telatin, A. J. Page, I. G.
+Charles, M. A. Webber, J. Antimicrob. Chemother. 2020, 75, 3144.
+53. P. Labroo, J. Irvin, J. Johnson, M. Sieverts, J. Miess, I. Robinson, N.
+Baetz, C. Garrett, N. Sopko, Skin Res. Technol. 2021, 27, 501.
+ 26924560, 2025, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/agt2.666 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+13 of 13
+AGGREGATE
+54. Z. Gong, J. Zhang, S. Zhang, J. Cao, Y. Fu, X. Hu, J. Zhao, B. Gu, Q.
+Li, K. Zhang, Microb. Pathog. 2022, 169, 105671.
+55. C. C. Cheng, S. J. Chang, Y. N. Chueh, T. S. Huang, P. H. Huang, S. M.
+Cheng, T. N. Tsai, J. W. Chen, H. W. Wang, BMC Genomics 2013, 14,
+182.
+S U P P O RT I N G I N F O R M AT I O N
+Additional supporting information can be found online in the
+Supporting Information section at the end of this article.
+How to cite this article: C. Liu, T. Tian, Y. Shi, M.
+Li, L. Hong, J. Zhou, J. Liu, Y. Zhong, X. Wang, Z.
+Wang, X. Bai, L. Wang, C. Li, Z. Wu, Aggregate
+2025, 6, e666. https://doi.org/10.1002/agt2.666
+ 26924560, 2025, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/agt2.666 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [22/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

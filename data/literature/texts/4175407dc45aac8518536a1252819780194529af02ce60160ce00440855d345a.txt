@@ -1,0 +1,1170 @@
+Nanosheets Hot Paper
+Photo-Controlled Gating of Selective Bacterial Membrane
+Interaction and Enhanced Antibacterial Activity for Wound Healing
+Jagabandhu Sahoo, Soumyashree Sahoo, Yogeswari Subramaniam, Preeti Bhatt,
+Subinoy Rana,* and Mrinmoy De*
+Abstract: Reversible biointerfaces are essential for on-
+demand molecular recognition to regulate stimuli-re-
+sponsive bioactivity such as specific interactions with
+cell membranes. The reversibility on a single platform
+allows the smart material to kill pathogens or attach/
+detach cells. Herein, we introduce a 2D-MoS2 function-
+alized with cationic azobenzene that interacts selectively
+with either Gram-positive or Gram-negative bacteria in
+a light-gated fashion. The trans conformation (trans-
+Azo-MoS2)
+selectively
+kills
+Gram-negative
+bacteria,
+whereas the cis form (cis-Azo-MoS2), under UV light,
+exhibits
+antibacterial
+activity
+against
+Gram-positive
+strains. The mechanistic investigation indicates that the
+cis-Azo-MoS2 exhibits higher affinity towards the mem-
+brane of Gram-positive bacteria compared to trans-
+Azo-MoS2. In case of Gram-negative bacteria, trans-
+Azo-MoS2 internalizes more efficiently than cis-Azo-
+MoS2 and generates intracellular ROS to kill the
+bacteria. While the trans-Azo-MoS2 exhibits strong
+electrostatic interactions and internalizes faster into
+Gram-negative bacterial cells, cis-Azo-MoS2 primarily
+interacts with Gram-positive bacteria through hydro-
+phobic and H-bonding interactions. The difference in
+molecular mechanism leads to photo-controlled Gram-
+selectivity and enhanced antibacterial activity. We found
+strain-specific and high bactericidal activity (minimal
+bactericidal concentration, 0.65 μg/ml) with low cytotox-
+icity, which we extended to wound healing applications.
+This methodology provides a single platform for effi-
+ciently switching
+between conformers to reversibly
+control the strain-selective bactericidal activity regulated
+by light.
+Introduction
+Dynamic control of the cell-material interface is of great
+interest for fundamental research as well as practical
+applications such as tissue engineering, drug delivery, bio-
+interfacing
+and
+cell-based
+diagnostics.[1–4]
+The
+dynamic
+control allows capture/release of cancer cells, controlled cell
+adhesion, and killing/release of bacteria using external
+stimuli.[5–7] Numerous stimuli-responsive bio-interfaces have
+been developed which are controlled by various stimuli,
+including pH,[8–10] temperature,[11–12] enzymes,[13–15] electric
+potential,[16–17] and light.[6,18–19] Among them, a light-respon-
+sive system offers the benefits of precise spatiotemporal
+control, non-invasive and convenient operation, making it
+appropriate for biomedical applications without impacting
+the normal biological processes.[20–22]
+Azobenzene provides an ideal photoswitchable candi-
+date for regulating the interaction between material and
+biointerface.[23] The reversible photoisomerization between
+cis and trans conformations can be regulated by adjusting
+the irradiation‘s wavelength.[24–25] Recently, azobenzene-
+functionalized materials have been widely utilized to con-
+struct the photo-switchable bio-interfaces[26] including rever-
+sible cell adhesion,[27] immobilization of bacteria[28] and
+proteins.[29–30]
+For
+example,
+Liu
+et al.
+reported
+self-as-
+sembled monolayers to obtain a surface with reversible
+control of cell adhesion on a molecularly well-defined
+surface.[27] Depending on the conformation of azobenzene,
+this surface can either permit or prevent cell attachment.
+The reversibility between two states can be regulated by
+different wavelengths of light. However, similar strategy
+hasn’t been employed so far to dynamically modulate the
+interaction between bacterial membrane and azobenzene
+embedded surface. Wei et al. created a biointerface that can
+kill and concurrently release dead bacteria under the
+influence of UV/Visible light.[31] Yang et. al constructed a
+hydrophilic polymeric brush with cyclodextrin (CD)-modi-
+fied antifouling polymer incorporated with azobenzene
+(Azo).[28] When exposed to UV light, the azo- based
+bactericidal polymer is released together with the dead
+bacteria.
+A growing threat to the public health is posed by
+microbial infection brought on by pathogens. For the treat-
+ment, a wide range of functionalized nanomaterial-based
+antibiotics including carbon-based materials,[32–33] zwitter-
+ionic polymers,[34–35] metals/metal oxide nanomaterials,[36–38]
+cationic polymeric nanomaterials have been developed
+recently.[39] The broad spectrum of antibacterial drugs have
+[*] J. Sahoo, S. Sahoo, Prof. M. De
+Department of Organic Chemistry, Indian Institute of Science
+Bengaluru 560012 (India)
+E-mail: md@iisc.ac.in
+Y. Subramaniam
+Department of Biochemistry, Indian Institute of Science
+Bengaluru 560012 (India)
+P. Bhatt, Dr. S. Rana
+Materials Research Centre, Indian Institute of Science
+Bengaluru 560012 (India)
+E-mail: subinoy@iisc.ac.in
+Angewandte
+Chemie
+Research Articles
+www.angewandte.org
+How to cite: Angew. Chem. Int. Ed. 2024, 63, e202314804
+doi.org/10.1002/anie.202314804
+Angew. Chem. Int. Ed. 2024, 63, e202314804 (1 of 11)
+© 2023 Wiley-VCH GmbH
+
+demonstrated remarkable effect against multi-bacterial in-
+fections, but the long term use damage the balance of
+microbial flora at the site of infection. This may lead to
+greater resistance, which would then limit their therapeutic
+efficacy.[40–41]
+Several
+cationic
+antimicrobials
+have
+been
+developed to specifically target the negative surface mem-
+brane of bacteria.[42–45] Most of the cationic antimicrobials
+have shown excellent activity against multi-drug-resistant
+strains but failed to show any selectivity. The evolution of
+drug resistance and the negative effects brought on by
+general bactericidal action can both be slowed down by the
+development of selective antimicrobials.[46–52] By manipulat-
+ing the surface charge on self-assembled monolayers of gold
+nanoparticles, Grzybowski and colleagues have achieved the
+Gram-selectivity.[53] More recently from our group, we have
+reported Gram-selective antibacterial agent by tuning the
+surface charge on 2D-MoS2.[54] The equilibrium of poly-
+valent, and non-covalent interactions with the bacterial
+membrane can be endowed with the selectivity achieved by
+surface charge regulation. But in all such reports either by
+us or other research groups created the selective antibacte-
+rial agents with selective functionalization or by stimuli-
+responsive releases. Due to irreversibility of such system, it
+is difficult to tune the bactericidal activity and eradicate the
+infections caused by mixed strains. However, the reversible
+and selective antibacterial activity has not achieved yet.
+Therefore, it is highly desirable to establish photo-switch-
+able selective bactericidal agents.
+In this work, we have developed a photoswitchable
+selective antibacterial agent based on Azo-functionalized
+2D-MoS2 with cationic headgroup. We have considered 2D-
+MoS2, as it shows inherent antibacterial property which can
+be enhanced with surface functionalization.[36–37,55–56] As
+shown in Scheme 1, the UV and visible light irradiation
+switches between the cis and trans conformation (hereafter
+known as cis-Azo-MoS2 and trans-Azo-MoS2, respectively)
+of the smartly designed ligand. Consequently, the cationic
+quaternary ammonium headgroups are exposed outward in
+case of trans-Azo-MoS2, with a buried cationic group for the
+cis
+conformer.
+While
+both
+the
+conformations
+showed
+excellent bactericidal activity (minimum bactericidal concen-
+tration, MBC, as low as 0.65 μg/mL), they exhibited differ-
+ential light-gated sensitivity against Gram-positive methicil-
+lin-resistant Staphylococcus aureus (MRSA) and Gram-
+negative Pseudomonas aeruginosa (P. aeruginosa) bacterial
+strains. Detailed analysis of the molecular mechanism of
+bactericidal activity revealed an intriguing Azo isomer-
+dependent bacterial membrane interaction, which stems
+from the inherent difference in the membrane composition
+of the bacterial strains. Compared to the monofunctional-
+ized ligands or mixed monolayer for achieving Gram-
+selectivity discussed above, this fully reversible material
+enables selectivity under different light conditions. Notably,
+the same platform can be used to eradicate both types of
+bacterial strains, including multi-drug resistant ones, by a
+“on-off” light irradiation cycle. Given the efficacy and
+biocompatibility of the stimuli-responsive antibacterial Azo-
+MoS2, we evaluated wound healing efficiency using a mouse
+model of an infected lesion with MRSA. Compared to
+trans-Azo-MoS2 and conventional antibiotic (e.g., vancomy-
+cin) treatments, our experimental findings demonstrate that
+cis-Azo-MoS2 based therapy was very effective and resulted
+faster wound healing against MRSA infection. In all, we
+demonstrate a light stimulus-responsive nanomedicine that
+features bacteria selectivity and enhanced killing efficiency,
+establishing the molecular mechanism of interactions.
+Results and Discussion
+Functionalization of exfoliated 2D-MoS2
+Single layered 2D-MoS2 was chemically exfoliated from the
+bulk MoS2 by lithium intercalation method.[57] The formation
+of single layer 2D-MoS2 was confirmed by atomic force
+microscopy
+(AFM)
+analysis
+and
+transmission
+electron
+microscope (TEM) imaging (Figure S4).
+The photo switchable thiolated azo ligand (Azo-SH) was
+designed to meet certain criteria. For instance, the ligand
+has an alkyl chain to enhance the stability of 2D-MoS2
+surface, a thiol to anchor chemically exfoliated MoS2 (ce-
+MoS2) at one end, and tetraethylene glycol (TEG) for
+biocompatibility and water solubility. Besides, the azo-
+containing head group would impart photo-switching in
+presence of light of two different wavelengths. The terminal
+end
+of
+the
+head
+group
+comprises
+of
+the
+quaternary
+ammonium group to interact effectively with the negative
+bacterial membrane (Scheme 1). The ligand was synthesized
+in good yield and details are summarized in the Supporting
+Information
+(Figure S1,
+S2,
+S3).
+Finally,
+ce-MoS2
+was
+functionalized with the photo-switchable thiol ligands using
+an established method developed in our lab.[58]
+Zeta potential measurements were used to validate
+conjugation of ce-MoS2. The efficient functionalization of
+2D-MoS2 is demonstrated by the increase in the zeta
+Scheme 1. (a) Schematic representation of selective antibacterial
+activity of photoswitchable Azo-MoS2. (b) The cationic azo ligand with
+a thiol end. (c) The photoswitching activity of azo group.
+Angewandte
+Chemie
+Research Articles
+Angew. Chem. Int. Ed. 2024, 63, e202314804 (2 of 11)
+© 2023 Wiley-VCH GmbH
+ 15213773, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.202314804 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+potential value of ce-MoS2 from   47.1 to +44.3 mV (Fig-
+ure 1a). The observed zeta potential for trans-Azo-MoS2 is
++44.3 mV,
+whereas
+the
+value
+for
+cis-Azo-MoS2
+is
++36.8 mV. The cationic head group is expected to be
+exposed in case of the trans functionalized MoS2. However,
+the ligand headgroup should be buried inside for the cis
+functionalization, leading to a larger positive surface zeta
+potential value for trans-Azo-MoS2 than cis-Azo-MoS2. The
+anchoring of ligand to ce-MoS2 was further confirmed from
+IR spectra (Figure 1b). The peaks between 2917 cm  1 and
+2849 cm  1corresponds to the asymmetric stretching vibra-
+tions of   CH3 and   CH2  which is observed after function-
+alization with 2D-MoS2. The band due to   N=N bond
+vibration of Azo ligand at 1500 cm  1 before and after
+functionalization is also significant to confirm the functional-
+ization of ligand. The C  N stretching occurs at 1230 cm  1
+after functionalization proves the conjugation of ligand.
+Photoswitching of functionalized MoS2
+The photoswitching of the ligand alone and of the ligand
+functionalized 2D-MoS2 was studied by using ultraviolet-
+visible (UV/Vis) spectrophotometry. From Figure 1c, we can
+see that the peak at 350 nm from trans disappears upon
+120 s irradiation of UV light (365 nm) which is due to the
+formation of cis conformation. After 120 s of visible light
+irradiation, the same peak reappears, confirming the cis-
+trans isomerization using UV/Vis light irradiation. Following
+functionalization of this ligand on the surface of 2D-MoS2,
+similar isomerization was observed. From Figure 1d, we can
+see that irradiation with the UV light (365 nm) led to
+disappearence of the peak corresponding to the trans-Azo-
+MoS2. The peak reappears after the irradiation with visible
+light. We have also quantified the percentage of conversion
+in response to UV light. It was calculated by considering the
+absorbance value of Azo-MoS2 before and after irradiation
+of UV light. The data shows that the solution contain total
+60% cis form after 2 min irradiation with UV light. Not only
+by
+irradiation
+with
+different
+wavelength,
+the
+cis-trans
+switching was also observed at 37°C. From the Figure S5, we
+can see that cis converts to trans with time at 37°C. For
+reference, the peak corresponds to trans and cis-Azo-MoS2
+are also given. It can be clearly observed that the cis
+conformation transforms to trans after 1 hr. Due to this
+temperature dependent switching of the Azo ligand, all the
+antibacterial activity experiments were carried out at room
+temperature (25°C). It was observed that light dependent
+switching is comparatively faster than the temperature
+dependent process. Further, we tested the stability of cis
+conformation after irradiation under UV light. The auto
+switching of cis to trans in dark was established by
+measuring UV-Vis spectra at different time intervals (Fig-
+ure 1e). The conversion was not observed upto 24 h which
+shows excellent stability of the cis conformation under the
+dark condition. Then, we performed cis-trans transition
+cycles by using UV/Vis irradiation at 365 nm (Figure 1f).
+The multiple cycle of cis-trans transition confirms the
+Figure 1. The characterization and photoswitching activity of functionalized 2D-MoS2. (a) Zeta potential measurement for chemically exfoliated (ce-
+MoS2:   47.1 mV) and cis (+36.8 mV) and trans-Azo-MoS2 (+44.3 mV). (b) Infrared (IR) spectra of (i) Azo-SH, (ii) Azo-MoS2, (iii) ce-MoS2. (c) The
+photo-switching behaviour of Azo-SH under irradiation of ultraviolet (UV 365 nm) and Visible (Vis) light. (d) The cis-trans photoswitching
+behaviour of Azo-MoS2. (e) The stability of cis-Azo-MoS2 at room temperature after UV irradiation. (f) The cycle of cis-trans switching after on-off
+UV/Vis irradiation at 365 nm.
+Angewandte
+Chemie
+Research Articles
+Angew. Chem. Int. Ed. 2024, 63, e202314804 (3 of 11)
+© 2023 Wiley-VCH GmbH
+ 15213773, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.202314804 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+stability of functionalized MoS2 after repeated exposure to
+UV/Vis light.
+Antibacterial activity of functionalized MoS2
+The antibacterial activity of functionalized 2D-MoS2 was
+assessed after estimating the photo switching behaviour of
+Azo-MoS2. We have considered two different bacterial
+strains,
+Gram-positive
+methicillin
+resistant
+MRSA
+and
+Gram-negative P. aeruginosa as two representatives of
+ESKAPE pathogens.[59] The MBC values were determined
+with different concentration of functionalized 2D-MoS2
+(Figure 2). It can be observed from Figure 2(c,d) that cis-
+Azo-MoS2 has superior bactericidal activity to trans-Azo-
+MoS2 against MRSA, with an MBC value of 0.65 μg/mL.
+With a similar MBC value (0.65 μg/mL), trans-Azo-MoS2 is
+more effective against P. aeruginosa bacteria than the cis-
+Azo-MoS2.
+We performed fluorescence microscopy and morpholog-
+ical analyses of bacteria using TEM to further support the
+aforementioned findings. By using confocal microscopy, live
+and dead bacterial cells were distinguished using fluorescent
+labelling. The propidium iodide (PI) generally stains the
+damaged cell membrane of dead bacteria while calcein-AM
+stains live cells. From the Figure 3a, MRSA that has been
+treated
+with
+cis-Azo-MoS2
+does
+not
+exhibit
+green
+fluorescence. However, in the case of trans-Azo-MoS2
+treated MRSA, the bacteria displayed both green and red
+fluorescence, indicating the presence of more living cells.
+This result is consistent with the observed antibacterial
+activity against MRSA.
+The bactericidal activity of Azo-MoS2 was also sup-
+ported by the study of treated bacteria using TEM. The
+altered membrane morphologies of the treated bacteria
+were captured. For untreated MRSA, the image in Fig-
+ure 3b(i) depicts the correct bacterial morphology and
+membrane integrity. The cis-Azo-MoS2 treated MRSA has a
+more distorted shape and compromised membrane than the
+trans-Azo-MoS2 treated bacteria, as observed in Figure 3b-
+(ii,iii). Similarly, untreated P. aeruginosa demonstrate no
+membrane damage (Figure 3b(iv)), while bacteria treated
+Figure 2. The bactericidal activity of bacteria after treated with different
+concentrations of cis and trans-Azo-MoS2. (a, c) against MRSA
+***p<0.0001 and (b,d) P. aeruginosa *p<0.01 by using colony
+forming unit (CFU) method (N=3), ns—not significant.
+Figure 3. (a) Live-dead assay for MRSA using Calcein-AM and propi-
+dium iodide (PI) after treating with 10×MBC of cis and trans-Azo-MoS2
+(Scale bar: 10 mm). The confocal imaging was performed with an
+excitation 488 nm and emission 520 nm for calcein-AM and excitation
+of 580 nm and an emission of 620 nm for PI. (b) Morphological
+analysis for MRSA bacteria using TEM of (i) Control, and after treated
+with 10×MBC (ii) cis-Azo-MoS2, (iii) trans-Azo-MoS2 and P. aeruginosa
+(iv) Control, and after treated with 10×MBC of (v) cis-Azo-MoS2, (vi)
+trans-Azo-MoS2. (Scale bar: 1 mm).
+Angewandte
+Chemie
+Research Articles
+Angew. Chem. Int. Ed. 2024, 63, e202314804 (4 of 11)
+© 2023 Wiley-VCH GmbH
+ 15213773, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.202314804 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+with cis-Azo-MoS2 do not affect their morphology (Fig-
+ure 3b(v)). However, the bacteria treated with trans-Azo-
+MoS2 exhibited substantial membrane damage and the
+leakage of internal fluids (Figure 3b(vi)). This further
+strengthens the selectivity in bactericidal activity.
+Futhermore, the bactericidal activity and selectivity was
+examined for the free ligand (Azo-SH). As shown in
+Figure S6, similar phenomena was observed where cis
+conformation showed higher bactericidal activity against
+MRSA bacteria than trans. However, the bactericidal
+concentration is comparatively high (500 μg/mL). Incorpo-
+ration of the ligand onto MoS2 significantly improved the
+MBC value to 0.65 μg/mL. In general, surface charge of
+pristine exfoliated MoS2 without any surface functionaliza-
+tion presents negatively chraged surface that interacts
+weakly with negatively charged bacterial membrane leading
+to high MBC value. However, the cationic ligand functional-
+ization helps MoS2 strongly bind the bacterial membrane
+and cause efficient antibacterial activity. This results in-
+dicates that the functionalization of photoswitching cationic
+ligand with 2D-MoS2 has synergistically enhanced antibacte-
+rial activity. In addition, we have also compared the
+bactericidal activity of cis-Azo-MoS2 against both resistant
+and non-resistant bacteria. The S. aureus (SA) bacateria as a
+representative of non-resistant bacteria and MRSA as a
+representative of resistant bacteria were tested. As shown in
+Figure S7, the bcatericidal concnetration is low for SA
+bacteria (0.1 μg/mL) compared to MRSA (0.65 μg/mL). For
+drug-resistant bacteria, the bactericidal concentration is very
+high compared to non-resistant bacteria which is obvious.
+These results indicate that the Gram-selective antibacterial
+activity is due to only ligand and the material has shown
+higher bactericidal activity against non-resistant bacteria. It
+is also known that nanomaterials have less possibility of
+developing drug resistance.[60]
+Mechanistic investigation of selective antibacterial activity
+Earlier studies reported the antibacterial activity of func-
+tionalized 2D-MoS2 mainly depends on the generation of
+oxidative stress and effect on bacterial membrane.[36] As the
+core of the 2D-MoS2 is same in both cases, the generation of
+oxidative stress is expected to be same. Therefore, mem-
+brane interaction and its impact on membrane permeability
+may be the source of any potential selectivity.
+By monitoring the uptake of propidium iodide (PI) dye,
+the outer membrane permeabilization assay was carried out
+to demonstrate the selectivity. The PI uptake increases with
+the increasing damage of bacterial membrane. Figure 4(a,b)
+shows that the cis-Azo-MoS2 damages the bacterial mem-
+brane of MRSA more than the trans-Azo-MoS2, which leads
+to more PI absorption. Trans-Azo-MoS2 resulted higher PI
+uptake in the case of P. aeruginosa than cis-Azo-MoS2,
+suggesting that trans is more effective in damaging the P.
+aeruginosa bacterial membrane than cis. This data suggests
+that the selectivity was mostly resulting from the interaction
+between the bacterial membrane and different conforma-
+tions of Azo-MoS2.
+We have also investigated the effect on the inner
+membrane of bacteria which is present only in Gram-
+negative bacteria. We used ortho-nitrophenyl-β-galactoside
+(ONPG), as an outer membrane permeable substrate, which
+cannot penetrate the inner membrane of Gram-negative
+bacteria such as P. aeruginosa. ONPG is also a chromogenic
+substrate for β-galactosidase (β-gal). The inner membrane
+disruption can leak cytoplasmic β-gal and reacts with ONPG
+to produce ortho-nitrophenol, which can be monitored by
+absorbance at 420 nm. To investigate whether cis and trans-
+Azo-MoS2 damage the permeabilization of the inner mem-
+brane of P. aeruginosa, ONPG was added to the treated
+bacterial suspension. Figure 4c shows that trans-Azo-MoS2
+is more effectively disrupts the inner membrane of P.
+Figure 4. Mechanistic investigation of selective antibacterial activity.
+Outer Membrane permeabilization assay with propidium iodide after
+treated with 10×MBC of cis and trans-Azo-MoS2 (a) MRSA, (b) P.
+aeruginosa. The fluorescence was monitored with an excitation wave-
+length of 580 nm and an emission wavelength of 620 nm. (c) Inner
+membrane permeabilization assay with ortho-nitrophenyl-β-galactoside
+(ONPG, 10 mg/mL) against P. aeruginosa after treated with 10×MBC of
+cis and trans-Azo-MoS2. The absorbance was measured at 420 nm. (d)
+Zeta potential measurement of MRSA and P. aeruginosa bacteria
+treated with cis and trans-Azo-MoS2 (10×MBC). (e) Determination of
+intracellular ROS generation using DCFDA assay. MRSA bacteria after
+treated with (i) Control, (ii) cis-Azo-MoS2, (iii) trans-Azo-MoS2. P.
+aeruginosa bacteria after treated with (iv) Control, (v) cis-Azo-MoS2, (vi)
+trans-Azo-MoS2 (10×MBC).
+Angewandte
+Chemie
+Research Articles
+Angew. Chem. Int. Ed. 2024, 63, e202314804 (5 of 11)
+© 2023 Wiley-VCH GmbH
+ 15213773, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.202314804 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+aeruginosa than cis-Azo-MoS2. This can be correlated with
+the high antibacterial activity of trans-Azo-MoS2 against P.
+aeruginosa.
+To probe
+the
+effect of different
+conformation on
+membrane depolarization, we performed the membrane
+depolarization assay by considering both MRSA and P.
+aeruginosa bacteria. The membrane depolarization was
+studied
+by
+using
+3,3’-dipropylthiadicarbocyanine
+iodide
+(DISC3(5)) fluorescent probe.[61] This cationic dye accumu-
+lates in the confined interior of the bacterial membrane, as
+the bacterial membrane is composed of negatively charged
+components such as lipids and teichoic acids. The accumu-
+lation of dye usually results self-quenching of fluorescence.
+Any material that depolarizes the surface charge of the
+membrane causing release of dye which can be estimated by
+measuring fluorescence. Figure S9(a) indicates that cis-Azo-
+MoS2 with higher hydrophobicity and less cationic charge
+exhibited high membrane depolarization against MRSA
+bacteria than trans-Azo-MoS2. In contrast, the trans-Azo-
+MoS2 with higher positive charge had shown higher mem-
+brane depolarization against P. aeruginosa than cis-Azo-
+MoS2 as shown in Figure S9(b). This result indicates that the
+different conformation of Azo-MoS2 selectively depolarizes
+the
+bacterial
+membrane
+of
+Gram-positive
+and
+Gram-
+negative bacteria.
+Furthermore, it is important to study the contribution of
+other
+factors
+such
+as
+reactive
+oxygen
+species
+(ROS)
+generation in selective antibacterial activity. Due to its
+inherent optoelectronic properties, 2D-MoS2 is well known
+for its ability to generate ROS.[62] Hence, ROS generation
+by the functionalized 2D-MoS2 was estimated by Ellman’s
+assay. The abiotic oxidative stress was quantified by using
+10×MBC concentrations of both the functionalized 2D-
+MoS2. Figure S10 shows that the two distinct conformations
+of Azo-MoS2 do not significantly differ in terms of ROS
+production,
+validating
+the
+generation
+of
+ROS
+is
+not
+impacted by the ligand conformations, rather the common
+2D-MoS2 core. This assay demonstrates that selective killing
+of Gram-positive and Gram-negative bacteria is not caused
+by extracellular ROS production rather it helps to reduce
+the concentration of dosage.
+We continued to investigate the effect of cis and trans-
+Azo-MoS2 interaction on the surfaces of Gram-positive
+(MRSA)
+and
+Gram-negative
+(P.
+aeruginosa)
+bacterial
+membrane by measuring their zeta potential. Both the
+bacterial strains feature highly negative surface charge as
+shown
+in
+Figure 4d.
+MRSA
+bound
+to
+cis-Azo-MoS2,
+changed
+the
+membrane
+potential
+from
+  31.3 mV
+to
+  12.5 mV, whereas trans-Azo-MoS2 caused the membrane
+potential reduced to   1.33 mV (Figure 4d). While trans-
+Azo-MoS2 exhibited a greater shift towards positive poten-
+tial due to the exposed cationic head group, it showed lesser
+bactericidal effect against MRSA bacteria than cis-Azo-
+MoS2. This suggests that non-covalent interactions other
+than electrostatics are responsible for high antibacterial
+activity of cis-Azo-MoS2 against MRSA. But when cis and
+trans-Azo-MoS2 were treated against P. aeruginosa bacteria,
+it was found that P. aeruginosa surface potential cannot be
+reduced by either cis or trans-Azo-MoS2 (Figure 4d). This
+data indicates that only electrostatic interaction is not
+sufficient to alter the charge on Gram-negative bacteria
+which could be due to presence of both outer and inner
+membrane. Therefore, it is necessary to find out the
+possibility of internalization of cis or trans-Azo-MoS2
+followed by intracellular ROS generation to prove the
+effectiveness of trans-Azo-MoS2 over cis-Azo-MoS2.
+We evaluated intracellular ROS generation to demon-
+strate the internalization of cis and trans-Azo-MoS2 into
+MRSA and P. aeruginosa. The level of intracellular ROS
+generation was assessed using the fluorescent probe 2’,7’-
+dichlorofluorescin diacetate (DCFDA). When exposed to
+ROS species like the hydroxyl and peroxyl radicals, the
+DCFDA internalises into cells and undergoes deacylation,
+transforming into the green fluorescent compound 2’,7’-
+dichlorofluorescein (DCF). Bacteria were imaged using
+confocal microscopy after being treated with cis- and trans-
+Azo-MoS2. Imaging showed that there was no intracellular
+ROS generation in the case of MRSA, demonstrating that
+neither of the functionalized MoS2 was internalised (Fig-
+ure 4e(iii)). However, P. aeruginosa showed substantial
+intracellular ROS generation with trans-Azo-MoS2, (Fig-
+ure 4e(vi)) but fewer cells were fluorescent with cis-Azo-
+MoS2 treatment (Figure 4e(v)). From this data, it can be
+concluded that trans-Azo-MoS2 binds with the membrane of
+Gram-negative bacteria more effectively than cis-Azo-MoS2.
+Consequently, the internalization followed by intracellular
+ROS generation is more for trans-Azo-MoS2 than the cis
+isomer. However, the intracellular ROS generation was not
+observed in Gram-positive bacteria by niether of the
+materials. This observation implies that both cis- and trans-
+Azo-MoS2 depolarize the bacterial membrane of Gram-
+positive bacteria without internalization.
+Zeta potential measurements that show that cis and
+trans-Azo-MoS2 are exclusively interacting with the surface
+membrane of MRSA and not internalising can be used to
+correlate this conclusion. In case of P. aeruginosa, cis and
+trans-Azo-MoS2 are not only interacting through electro-
+static interaction but also internalizing into cells. The above
+date from zeta potential measurement and intracellular
+ROS generation can be summarized that cis-Azo-MoS2 is
+more effective against MRSA due to targeting the mem-
+brane. However, trans-Azo-MoS2 is more effective against
+P. aeruginosa due to more internalization followed by high
+intracellular ROS generation.
+To further support the mechanism behind selective
+interaction, we formulated two different lipid vesicles to
+reliably mimic the Gram-positive and Gram-negative bacte-
+rial membranes.[63] For Gram-positive bacteria, phosphati-
+dylglycerol (PG) and lipoteichoic acid (LTA) were used
+(9:1 molar ratio) to prepare vesicles (PG-LTA) (Figure 5a).
+For Gram-negative bacteria, the vesicle was composed of
+phosphatidylglycerol (PG) and cardiolipin (CL) (PG-CL,
+9:1 in molar ratio) (Figure 5b). We assessed the binding
+thermodynamics of PG-LTA and PG-CL toward the cis and
+trans-Azo-MoS2
+using
+isothermal
+titration
+calorimetry
+(ITC). The PG-LTA and PG-CL vesicles were titrated into
+the cis and trans-Azo-MoS2 in the working buffer. Depend-
+ing on the functionalization of Azo-MoS2 material, different
+Angewandte
+Chemie
+Research Articles
+Angew. Chem. Int. Ed. 2024, 63, e202314804 (6 of 11)
+© 2023 Wiley-VCH GmbH
+ 15213773, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.202314804 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+thermodynamic binding constants were obtained (Figure 5).
+The complexation of Azo-MoS2, both cis and trans function-
+alized,
+with
+PG-LTA
+and
+PG-CL
+were found
+to be
+exothermic in nature. Fitting the heat changes for PG-LTA
+using a one-site non-competitive binding model reveals that
+cis-Azo-MoS2 binds stronger than trans-Azo-MoS2 (Fig-
+ure 5d&e). Comparatively higher heat change was observed
+when PG-CL binds to trans-Azo-MoS2 than to cis-Azo-
+MoS2 (Figure 5f&g). A one-site binding model that assumes
+equivalent and non-cooperative binding was fitted to the
+thermograms. The isothermal curve fitting study yielded
+thermodynamic data, such as binding constants (Kb) and
+enthalpy changes (ΔH), which are listed in the Table for
+each pair (Table 1). The binding was found to be primarily
+enthalpy driven.
+The overall mechanistic investigation indicates that cis-
+Azo-MoS2 has shown high bactericidal activity against
+Gram-positive bacteria than trans-Azo-MoS2. However, in
+case of Gram-negative bacteria, the trans-Azo-MoS2 was
+found to be more effective antibacterial agent than cis-Azo-
+MoS2. The possible mechanistic pathway responsible for
+such selectivity was established. The membrane depolariza-
+tion and membrane permeabilization are mainly responsible
+for high bactericidal activity of cis-Azo-MoS2 against Gram-
+positive bacteria. For Gram-negative bacteria, along with
+membrane depolarization and inner/outer membrane per-
+meabilization, trans-Azo-MoS2 has exhibited intracellular
+ROS generation (Scheme 2a).
+Therefore, we propose that the benzene ring with
+nitrogen in azo bond of cis-Azo-MoS2 interacts through
+hydrophobic and non-covalent interaction with the mem-
+brane of Gram-positive bacteria.[64–65]
+Additionally, the
+teichoic/lipoteichoic acid found in the cell walls of Gram-
+positive bacteria increases the rigidity of the wall by
+coordinating metal cations (Na+, K+ ions).[66] The effective
+coordination of these metal cations with azo nitrogen atoms
+most likely is responsible for the higher bactericidal activity
+compared to trans-Azo-MoS2. Since Gram-negative bacteria
+have additional membranes, this non-covalent interaction
+can be attenuated. Apart from that, the Gram-negative
+bacteria have higher negative surface charge potential than
+Gram-positive ones and has extra inner membrane. The
+trans-Azo-MoS2 has shown higher activity due to strong
+electrostatic
+interaction
+with
+highly
+negatively
+charged
+bacteria membrane followed by internalization compared to
+cis-Azo-MoS2 due to exposed cationic head group.
+Cellular toxicity and histological evaluation
+The toxicity assessment of functionalized 2D-MoS2 should
+be estimated prior to in vivo study. The MTT assay was used
+to conduct a dose-dependent cellular toxicity investigation
+of the effects of cis and trans-Azo-MoS2 on the HeLa cell
+line. At high concentrations, azo functionalized 2D-MoS2
+was found to be toxic to HeLa cells (Figure S11a). At 5 μg/
+Figure 5. Isothermal titration calorimetry of Azo-MoS2 with Gram-
+positive and Gram-negative bacterial membrane mimicking lipid nano-
+particles. (a, b) The schematic diagram of PG-LTA and PG-CL lipid
+nanoparticles. (c) The composition of both the lipid nanoparticles.
+Thermogram for titration of PG-LTA with (d) cis-Azo-MoS2. (e) trans-
+Azo-MoS2 and PG-CL with (f) cis-Azo-MoS2. (g) trans-Azo-MoS2.
+Table 1: The thermodynamic parameters derived for Azo-MoS2 binding with PG-CL and PG-LTA.
+Titrant
+Material
+N
+Kb(M-1)
+ΔH
+(kcal/mol)
+ΔS
+(cal/mol/deg)
+PG-LTA
+Cis-Azo-MoS2
+2.35
+6.06 × 104
+-29.32
+-76.4
+Trans-Azo-MoS2
+1.66
+4.50 × 104
+-27.59
+-71.2
+PG-CL
+Cis-Azo-MoS2
+0.136
+1.12 × 105
+-6.36
+1.78
+Trans-Azo-MoS2
+0.059
+5.09 × 105
+-9.93
+-7.19
+Angewandte
+Chemie
+Research Articles
+Angew. Chem. Int. Ed. 2024, 63, e202314804 (7 of 11)
+© 2023 Wiley-VCH GmbH
+ 15213773, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.202314804 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+mL,
+which
+is
+10
+times
+greater
+than
+the
+bactericidal
+concentration for MRSA and P. aeruginosa, we found very
+insignificant cytotoxicity. Additionally, we can see that the
+cytotoxicity of the cis and trans-Azo-MoS2 does not differ
+Scheme 2. (a) The mechanistic pathway for selective antibacterial activity of cis and trans-Azo-MoS2 against Gram- negative and Gram-positive
+bacteria. (b) The pausible mechanistic pathway for selective antibacterial activity of cis and trans-Azo-MoS2 against Gram- negative and Gram-
+positive bacteria.
+Angewandte
+Chemie
+Research Articles
+Angew. Chem. Int. Ed. 2024, 63, e202314804 (8 of 11)
+© 2023 Wiley-VCH GmbH
+ 15213773, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.202314804 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+much from one another. All these toxicity values indicate
+functionalized ce-MoS2 elicits very low mammalian cellular
+toxicity.
+This
+is
+mainly
+due
+to
+the
+zwitterionic
+lipid
+membranes of mammalian cells.[67] Similar trend has been
+observed in other antimicrobial nanomaterials. The biocom-
+patibility of Azo-MoS2 was evaluated through hemolysis and
+hematological analysis. The RBCs of a healthy donor was
+incubated with Azo-MoS2 at 37
+0C to characterize the
+hemolytic performance. It can be seen from Figure S11b
+that
+there
+is
+no
+hemolysis
+of
+RBCs
+with
+10 mg/mL
+concentration of Azo-MoS2. The absorbance of supernatant
+at 570 nm revealed that the hemolysis rate caused by Azo-
+MoS2 at 10 mg/mL is not different from the control (PBS).
+This concentration is 15 times higher than the minimum
+bactericidal concentration of Azo-MoS2, indicating good
+biocompatibility.
+In Vivo treatment of bacteria infected wounds by Azo-MoS2
+Finally, we established a bacteria infected mouse wound
+model to determine the antibacterial effect of Azo-MoS2 in
+vivo (Figure 6a). A circular wound with a diameter 8 mm
+was created on the back of balb/c mice. The wound was
+infected by adding the inoculate of MRSA bacteria. The
+wounds were treated with cis-Azo-MoS2, trans-Azo-MoS2,
+vancomycin, and PBS after being infected for 1 hour with
+MRSA. All antibacterial agents and vancomycin were used
+at 10×MBC. Vancomycin was used as the positive control
+for the treatment of wound. The wounds were monitored
+for 10 days. The images in Figure 6(b,d) demonstrate that
+after 10 days, neither vancomycin nor PBS were able to stop
+the bacteria from interfering with the wound healing
+procedure.
+However, the process of wound closure was significantly
+improved by both the cis and trans-Azo-MoS2 treatments.
+Notably, cis treated mice healed much faster than trans,
+which is similar to the in vitro observation. The comparison
+of wound area values also illustrated the same. The number
+of bacteria that survive in wound tissue was also determined
+using the colony forming unit (CFU) method in order to
+visually quantify the inhibition of wound infection. The
+result shown in Figure 6(c,e), indicates that the number of
+bacterial colonies in the wound treated with cis-Azo-MoS2
+was significantly decreased when compared to other treated
+and untreated wounds. The bacterial inhibition rate of cis-
+Azo-MoS2 and trans-Azo-MoS2 was higher than the known
+antibiotic vancomycin. The overall finding indicates that, in
+comparison to trans and positive control, cis functionaliza-
+tion has demonstrated superior antibacterial activity in both
+in vitro and in vivo system. At the same time, the in vivo
+biocompatibility of Azo-MoS2 was estimated using balb/c
+female mice as an animal model. The effect of Azo-MoS2 on
+main tissues of the mice was investigated.
+Figure S12 represents the Hematoxylin (H) and eosin
+(E) staining in which major organs such as the heart, kidney,
+lungs, liver, and spleen of the treated mice did not suffer
+damage. Further, we evaluated the in vivo toxicity of Azo-
+MoS2. PBS and Azo-MoS2 were applied on MRSA infected
+wound. On the 10th day after treatment, blood samples of
+the mice were collected for hematological analysis to
+determine the acute and chronic toxicities of Azo-MoS2. As
+shown in Figure S13, the index of white blood cells (WBCs),
+red blood cells (RBCs), hemoglobin (HGB), hematocrit
+Figure 6. (a) Schematic diagram of wound infection model establish-
+ment, administration, and wound healing. (b) Photographs of MRSA
+(OD0.1) infected wounds on days 0, 3, 5, 7 and 10 without treatment
+and after treated with 10×MBC of cis and trans-Azo-MoS2 and
+vancomycin (Van) as positive control. (Van  19.5 μg/mL, 25×MIC) (c)
+Photographs of agar plates during treatment on days 0, 5 and 10 to
+monitor the survival of bacteria on wound. (d) Measurement of wound
+size during treatment on days 0, 3, 5, 7 and 10 to compare the effective
+wound healing by cis and trans-Azo-MoS2. (e) Survival rate of MRSA in
+the infected wound tissues using colony forming unit (CFU) method.
+** denotes P<0.01 with respect to control and Van. * denotes p<0.05
+with respect to trans (f) H and E staining method: Histological
+sections are magnified at 20X; (i) Control; (ii) Van (positive control);
+(iii) cis-Azo-MoS2; (iv) trans-Azo-MoS2; CF- Collagen fiber; N-Necrosis;
+SG- Sebaceous gland; AP- Arrector pili muscle; H-Hair; HF-Hair follicle.
+Masson trichrome stain of skin tissue at 20X; (v) Control; (vi) Van
+(positive control); (vii) cis-Azo-MoS2; (viii) trans-Azo-MoS2; red line
+(epidermic), yellow arrow (regeneration of wound tissue to new healed
+tissue), pink circle (collagen bundle arrangements), small black arrow
+(regeneration of collagen fibers from fibroblast), long black arrow (hair
+follicle), orange arrow (black coloured nuclei).
+Angewandte
+Chemie
+Research Articles
+Angew. Chem. Int. Ed. 2024, 63, e202314804 (9 of 11)
+© 2023 Wiley-VCH GmbH
+ 15213773, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.202314804 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+(HCT), mean corpuscular volume (MCV), mean corpuscular
+hemoglobin (MCH), MCH concentration (MCHC), platelets
+(PLT) were all within the normal range compared with the
+control group, confirming non-damaging effect of Azo-MoS2
+on the blood cells.
+Besides, no significant inflammation in the body was
+observed upon treatment with Azo-MoS2, further suggesting
+good biocompatibility of the system. To assess the wound
+healing capability, we conducted histological analysis of
+wound tissue. The H&E staining data in Figure 6f(i–iv)
+shows PBS treated wound tissue of control mice exhbiting
+the necrotic epidermis with striking bleeding and unorgan-
+ised epidermal and dermal regions. Whereas mice treated
+with trans-Azo-MoS2 and positive control showed the
+repaired and organised epidermal and dermal layer with
+collagen fibers. Interestingly, cis-Azo-MoS2 treated mice
+showed more organised epidermis and dermis with collagen
+bundles.
+Masson trichrome is a widely used technique to visualise
+the collagen tissues. The wounded skin stained with Masson
+trichrome provides an understanding of the wound healing
+process, as it illustrates the reorganisation of collagen fibres
+in the healed skin. The organised epidermis with four
+distinct layers such as stratum-basale, spinosum, granulosum
+and corneum exhibited fine collagen fibres in the cis-Azo-
+MoS2 treated group. While coarse to fine collagen fibres
+were observed in trans-Azo-MoS2 and positive control
+group, loosely filled collagen fibres with irregular arrange-
+ment were seen in the control group. Further, the Masson
+trichrome stain of skin tissue demonstrated proper wound
+healing with the native characteristics as shown in Figure 6f-
+(v–viii). The above studies demonstrate that the Azo-MoS2
+is non-toxic at the applied dosage with no side effects to skin
+tissue and other major organs. Notably, it helps generating
+high collagen in the treated wounds, which is responsible for
+faster healing. Overall, we confirm that this stimuli-respon-
+sive material is highly effective against infected wound
+healing applications.
+Conclusion
+We have developed a 2D-MoS2 based photoswitchable
+selective antibacterial agent which is capable of selective
+bactericidal activity in response to irradiation of UV or
+visible light due to cis and trans forms of Azo-MoS2. For
+Gram-positive bacteria (MRSA), cis-Azo-MoS2 can have
+strong bactericidal activity while trans-Azo-MoS2 has shown
+effective killing against Gram-negative bacteria, P. aerugino-
+sa. This selectivity can easily be controlled by switching the
+wavelengths of light irradiation. The selectivity of trans-
+Azo-MoS2 against P. aeruginosa originated from electro-
+static interaction of the cationic group which is more
+exposed in trans conformation. On the other hand, hydro-
+phobic interaction, hydrogen bonding, and metal ion coordi-
+nation together play a key role in the selective bactericidal
+activity of cis-Azo-MoS2 against MRSA. Photoswitchable
+azobenzene-functionalized nanomaterials were applied for
+reversible cell adhesion and immobilization of bacteria but
+never explored in selective antibacterial activity. Notably,
+the low in vitro toxicity coupled with the non-hemolytic
+property of the material made it an ideal platform for wound
+healing application. Significantly, isomer-selective wound
+healing was observed along with faster healing than the
+commercially available antibiotics. Overall, this work pro-
+vides a simple and efficient photoswitchable strain-selective
+bactericidal strategy, with a huge potential of efficacy
+against other microbial strains. The present study opens a
+new strategy to unleash the potential of azobenzene-
+functionalized nanomaterials with different core materials
+for various other biological applications such as bioimaging,
+controlled drug delivery and targeted therapy.
+Acknowledgements
+The authors would like to thank SERB (CRG/2020/001197
+and CRG/2022/009021) for financial support. Jagabandhu
+Sahoo thanks IISc and CSIR for doctoral fellowship. Preeti
+Bhatt is grateful to MoE for Prime Minister Research
+Fellowship for doctoral studies.
+Conflict of Interest
+The authors declare no conflict of interest.
+Data Availability Statement
+The data that support the findings of this study are available
+in the Supporting Information of this article.
+Keywords: Antibacterial Therapy · Bio-Interface ·
+Gram-Selectivity · Photoswitching · Wound Healing
+[1] N. M. Alves, I. Pashkuleva, R. L. Reis, J. F. Mano, Small 2010,
+6, 2208–2220.
+[2] J. Brinkmann, E. Cavatorta, S. Sankaran, B. Schmidt, J.
+van Weerd, P. Jonkheijm, Chem. Soc. Rev. 2014, 43, 4449–
+4469.
+[3] X. Liu, S. Wang, Chem. Soc. Rev. 2014, 43, 2385–2401.
+[4] Q. Yu, Z. Wu, H. Chen, Acta Biomater. 2015, 16, 1–13.
+[5] F. Wang, X. Sha, R. Wu, L. Zhang, X. Song, X. Tian, G. Pan,
+L. Liu, Biomater. Sci. 2021, 9, 5785–5790.
+[6] D. Xu, J. Ricken, S. V. Wegner, Chem. Eur. J. 2020, 26, 9859–
+9863.
+[7] Y. Zhou, Y. Zheng, T. Wei, Y. Qu, Y. Wang, W. Zhan, Y.
+Zhang, G. Pan, D. Li, Q. Yu, H. Chen, ACS Appl. Mater.
+Interfaces 2020, 12, 5447–5455.
+[8] H. Liu, Y. Li, K. Sun, J. Fan, P. Zhang, J. Meng, S. Wang, L.
+Jiang, J. Am. Chem. Soc. 2013, 135, 7603–7609.
+[9] H. Liu, X. Liu, J. Meng, P. Zhang, G. Yang, B. Su, K. Sun, L.
+Chen, D. Han, S. Wang, L. Jiang, Adv. Mater. 2013, 25, 922–
+927.
+[10] K. H. Neoh, S. K. S. Cheng, H. Wu, A. Chen, Y. Sun, B. Li, A.
+Cao, R. P. S. Han, ACS Appl. Nano Mater. 2022, 5, 6911–6924.
+[11] M. Liu, X. Wan, M. Yang, Z. Wang, H. Bao, B. Dai, H. Liu, S.
+Wang, Angew. Chem. Int. Ed. 2022, 61, e202114602.
+Angewandte
+Chemie
+Research Articles
+Angew. Chem. Int. Ed. 2024, 63, e202314804 (10 of 11)
+© 2023 Wiley-VCH GmbH
+ 15213773, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.202314804 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License
+
+[12] X. Liu, L. Chen, H. Liu, G. Yang, P. Zhang, D. Han, S. Wang,
+L. Jiang, NPG Asia Mater. 2013, 5, e63.
+[13] L. Chen, X. Liu, B. Su, J. Li, L. Jiang, D. Han, S. Wang, Adv.
+Mater. 2011, 23, 4376–4380.
+[14] X. Wei, K. Chen, B. Cai, L. Rao, Z. Wang, Y. Sun, M. Yu, W.
+Liu, S. Guo, X.-Z. Zhao, ACS Appl. Mater. Interfaces 2019, 11,
+41118–41126.
+[15] Q. Zhang, W. Wang, S. Huang, S. Yu, T. Tan, J.-R. Zhang, J.-
+J. Zhu, Chem. Sci. 2020, 11, 1948–1956.
+[16] A. M. Ghafari, S. E. Domínguez, V. Järvinen, Z. Gounani, A.
+Schmit, M. Sjöqvist, C. Sahlgren, O. M. H. Salo-Ahen, C.
+Kvarnström, L. Torsi, R. Österbacka, Adv. Mater. Interfaces
+2022, 9, 2101480.
+[17] Y. Xiao, H. Zhou, N. Xuan, M. Cheng, Y. Rao, Y. Luo, B.
+Wang, R. Tang, ACS Appl. Mater. Interfaces 2014, 6, 20804–
+20811.
+[18] J. Keyvan Rad, Z. Balzade, A. R. Mahdavian, J. Photochem.
+Photobiol. C 2022, 51, 100487.
+[19] J. Zhang, S. H. D. Wong, X. Wu, H. Lei, M. Qin, P. Shi, W.
+Wang, L. Bian, Y. Cao, Adv. Mater. 2021, 33, 2105765.
+[20] J. Borges, L. C. Rodrigues, R. L. Reis, J. F. Mano, Adv. Funct.
+Mater. 2014, 24, 5624–5648.
+[21] D.-H. Qu, Q.-C. Wang, Q.-W. Zhang, X. Ma, H. Tian, Chem.
+Rev. 2015, 115, 7543–7588.
+[22] W. Szymański, J. M. Beierle, H. A. V. Kistemaker, W. A.
+Velema, B. L. Feringa, Chem. Rev. 2013, 113, 6114–6178.
+[23] Q. Bian, W. Wang, S. Wang, G. Wang, ACS Appl. Mater.
+Interfaces 2016, 8, 27360–27367.
+[24] C.
+Honnigfort,
+L.
+Topp,
+N.
+García Rey,
+A.
+Heuer,
+B.
+Braunschweig, J. Am. Chem. Soc. 2022, 144, 4026–4038.
+[25] L. Stricker, E.-C. Fritz, M. Peterlechner, N. L. Doltsinis, B. J.
+Ravoo, J. Am. Chem. Soc. 2016, 138, 4547–4554.
+[26] H. Yang, B. Yuan, X. Zhang, O. A. Scherman, Acc. Chem.
+Res. 2014, 47, 2106–2115.
+[27] D. Liu, Y. Xie, H. Shao, X. Jiang, Angew. Chem. Int. Ed. 2009,
+48, 4406–4408.
+[28] Y. Ni, D. Zhang, Y. Wang, X. He, J. He, H. Wu, J. Yuan, D.
+Sha, L. Che, J. Tan, J. Yang, ACS Appl. Mater. Interfaces 2021,
+13, 14543–14551.
+[29] Q. Shen, L. Liu, W. Zhang, Langmuir 2014, 30, 9361–9369.
+[30] P. Wan, Y. Chen, Y. Xing, L. Chi, X. Zhang, Langmuir 2010,
+26, 12515–12517.
+[31] T. Wei, W. Zhan, Q. Yu, H. Chen, ACS Appl. Mater. Interfaces
+2017, 9, 25767–25774.
+[32] C. Cheng, S. Li, A. Thomas, N. A. Kotov, R. Haag, Chem. Rev.
+2017, 117, 1826–1914.
+[33] S. Szunerits, R. Boukherroub, J. Mater. Chem. B 2016, 4, 6892–
+6912.
+[34] Y.-S. Guo, X.-D. Weng, B. Wu, Y.-F. Mi, B.-K. Zhu, Y.-L. Ji,
+Q.-F. An, C.-J. Gao, J. Membr. Sci. 2019, 583, 152–162.
+[35] G. Ye, J. Lee, F. Perreault, M. Elimelech, ACS Appl. Mater.
+Interfaces 2015, 7, 23069–23079.
+[36] S. Karunakaran, S. Pandit, B. Basu, M. De, J. Am. Chem. Soc.
+2018, 140, 12634–12644.
+[37] S. Pandit, S. Karunakaran, S. K. Boda, B. Basu, M. De, ACS
+Appl. Mater. Interfaces 2016, 8, 31567–31573.
+[38] W. Zheng, Y. Jia, Y. Zhao, J. Zhang, Y. Xie, L. Wang, X.
+Zhao, X. Liu, R. Tang, W. Chen, X. Jiang, Nano Lett. 2021, 21,
+1992–2000.
+[39] H.-L. Zhang, Y.-B. Gao, J.-G. Gai, J. Mater. Chem. A 2018, 6,
+6442–6454.
+[40] C. Korupalli, C.-C. Huang, W.-C. Lin, W.-Y. Pan, P.-Y. Lin,
+W.-L. Wan, M.-J. Li, Y. Chang, H.-W. Sung, Biomaterials 2017,
+116, 1–9.
+[41] M. A. Schumacher, P. Balani, J. Min, N. B. Chinnam, S.
+Hansen, M. Vulić, K. Lewis, R. G. Brennan, Nature 2015, 524,
+59–64.
+[42] A. Gupta, S. Mumtaz, C.-H. Li, I. Hussain, V. M. Rotello,
+Chem. Soc. Rev. 2019, 48, 415–427.
+[43] A. Mondal, M. De, ACS Appl. Nano Mater. 2021, 4, 13947–
+13954.
+[44] T. Wei, Z. Tang, Q. Yu, H. Chen, ACS Appl. Mater. Interfaces
+2017, 9, 37511–37523.
+[45] T. Wei, W. Zhan, L. Cao, C. Hu, Y. Qu, Q. Yu, H. Chen, ACS
+Appl. Mater. Interfaces 2016, 8, 30048–30057.
+[46] J.
+Borovička,
+W. J.
+Metheringham,
+L. A.
+Madden,
+C. D.
+Walton, S. D. Stoyanov, V. N. Paunov, J. Am. Chem. Soc.
+2013, 135, 5282–5285.
+[47] G. Fang, W. Li, X. Shen, J. M. Perez-Aguilar, Y. Chong, X.
+Gao, Z. Chai, C. Chen, C. Ge, R. Zhou, Nat. Commun. 2018, 9,
+129.
+[48] S. Lee, T. W. Kang, I.-J. Hwang, H.-I. Kim, S.-J. Jeon, D. Yim,
+C. Choi, W. Son, H. Kim, C.-S. Yang, H. Lee, J.-H. Kim, J.
+Am. Chem. Soc. 2021, 143, 14635–14645.
+[49] J. Ma, K. Li, S. Gu, RSC Adv. 2022, 12, 4852–4864.
+[50] J. Niu, L. Wang, T. Cui, Z. Wang, C. Zhao, J. Ren, X. Qu,
+ACS Nano 2021, 15, 15841–15849.
+[51] J. Tang, Q. Chen, L. Xu, S. Zhang, L. Feng, L. Cheng, H. Xu,
+Z. Liu, R. Peng, ACS Appl. Mater. Interfaces 2013, 5, 3867–
+3874.
+[52] C. R. Vickery, B. M. Wood, H. G. Morris, R. Losick, S.
+Walker, J. Am. Chem. Soc. 2018, 140, 876–879.
+[53] P. P.
+Pillai,
+B.
+Kowalczyk,
+K.
+Kandere-Grzybowska,
+M.
+Borkowska, B. A. Grzybowski, Angew. Chem. Int. Ed. 2016,
+55, 8610–8614.
+[54] J. Sahoo, M. De, J. Mater. Chem. B 2022, 10, 4588–4594.
+[55] X. Yang, J. Li, T. Liang, C. Ma, Y. Zhang, H. Chen, N.
+Hanagata, H. Su, M. Xu, Nanoscale 2014, 6, 10126–10133.
+[56] A. Mondal, M. De, Tungsten 2022, https://doi.org/10.1007/
+s42864-42022-00196-42869.
+[57] P. Joensen, R. F. Frindt, S. R. Morrison, Mater. Res. Bull. 1986,
+21, 457–461.
+[58] S. S. Chou, M. De, J. Kim, S. Byun, C. Dykstra, J. Yu, J.
+Huang, V. P. Dravid, J. Am. Chem. Soc. 2013, 135, 4584–4587.
+[59] H. W. Boucher, G. H. Talbot, J. S. Bradley, J. E. Edwards, D.
+Gilbert, L. B. Rice, M. Scheld, B. Spellberg, J. Bartlett, Clin.
+Infect. Dis. 2009, 48, 1–12.
+[60] H. Wang, Z. Song, S. Li, Y. Wu, H. Han, ACS Appl. Mater.
+Interfaces 2019, 11, 32659–32669.
+[61] A. P. Singh, P. Nicholls, J. Biochem. Biophys. Methods 1985,
+11, 95–108.
+[62] X. Zhu, X. Ji, N. Kong, Y. Chen, M. Mahmoudi, X. Xu, L.
+Ding, W. Tao, T. Cai, Y. Li, T. Gan, A. Barrett, Z. Bharwani,
+H. Chen, O. C. Farokhzad, ACS Nano 2018, 12, 2922–2938.
+[63] B. Bharatiya, G. Wang, S. E. Rogers, J. S. Pedersen, S. Mann,
+W. H. Briscoe, Colloids Surf. B 2021, 199, 111551.
+[64] S. Cho, Q. Wang, C. P. Swaminathan, D. Hesek, M. Lee, G.-J.
+Boons, S. Mobashery, R. A. Mariuzza, Proc. Natl. Acad. Sci.
+USA 2007, 104, 8761–8766.
+[65] R. S. Munford, Infect. Immun. 2008, 76, 454–465.
+[66] J. G. Swoboda, J. Campbell, T. C. Meredith, S. Walker,
+ChemBioChem 2010, 11, 35–45.
+[67] D. S. S. M. Uppu, M. Bhowmik, S. Samaddar, J. Halder, Chem.
+Commu. 2016, 52, 4644–4647.
+Manuscript received: October 3, 2023
+Accepted manuscript online: November 13, 2023
+Version of record online: November 29, 2023
+Angewandte
+Chemie
+Research Articles
+Angew. Chem. Int. Ed. 2024, 63, e202314804 (11 of 11)
+© 2023 Wiley-VCH GmbH
+ 15213773, 2024, 1, Downloaded from https://onlinelibrary.wiley.com/doi/10.1002/anie.202314804 by Xun Yuan - QINGDAO UNIVERSITY OF SCIENCE & TECH , Wiley Online Library on [24/06/2026]. See the Terms and Conditions (https://onlinelibrary.wiley.com/terms-and-conditions) on Wiley Online Library for rules of use; OA articles are governed by the applicable Creative Commons License

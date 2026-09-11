@@ -71,12 +71,8 @@ SFT_Generation_Package/
 README_SFT_GENERATION.md
 .venv312/
 
-# Non-core scripts and local tools (do not upload)
+# Non-core docs stay local; all scripts/ are part of the project
 docs/
-scripts/*
-!scripts/main.py
-!scripts/main_async.py
-!scripts/workflow/
 
 # Project-specific files (local only)
 CHANGELOG.md
@@ -87,3 +83,9 @@ Revision Notes.docx
 # Example files (local only)
 examples/
 PROJECT_REVIEW.md
+
+# Large local assets (never upload)
+models/
+智能体建库文献/
+src.zip
+.claude/

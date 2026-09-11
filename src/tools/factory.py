@@ -2,188 +2,154 @@
 """
 Tool Factory.
 Create and manage various database query tools.
+工具工厂模块 —— 创建并管理各种数据库查询工具。
+根据不同的业务场景（如操作指导、文献提取、材料设计、材料评估等），
+提供对应的一组工具，供各 Agent 使用。
 """
 
-# CrewAI tool wrappers
+# ---- CrewAI 工具封装层导入 ----
+# 将 Materials Project 和 PubChem 等底层 API 封装为 CrewAI 工具对象，
+# 方便 CrewAI 框架中的 Agent 直接调用。
+
+# Materials Project 数据库的 CrewAI 封装工具
 from src.tools.crewai_materials_project_tool import materials_project_tool
+# PubChem 数据库的 CrewAI 封装工具
 from src.tools.crewai_pubchem_tool import pubchem_tool
-from src.tools.crewai_name2cas_tool import CrewAIName2CASTool
-from src.tools.crewai_name2properties_tool import CrewAIName2PropertiesTool
-from src.tools.crewai_cid2properties_tool import CrewAICID2PropertiesTool
-from src.tools.crewai_formula2properties_tool import CrewAIFormula2PropertiesTool
-from src.tools.crewai_material_search_tool import CrewAIMaterialSearchTool
+# PNEC（预测无效应浓度）环境风险评估的 CrewAI 工具
 from src.tools.crewai_pnec_tool import CrewAIPNECTool
-from src.tools.crewai_material_identifier_tool import CrewAIMaterialIdentifierTool
+# 数据格式验证的 CrewAI 工具（纯本地验证，不调用外部 API）
 from src.tools.crewai_data_validator_tool import CrewAIDataValidatorTool
-from src.tools.crewai_structure_validator_tool import CrewAIStructureValidatorTool
+# MolPort 化学品供应商数据库的三个 CrewAI 工具
 from src.tools.crewai_molport_tool import (
-    molport_availability_tool,
-    molport_search_tool,
-    molport_molecule_info_tool
+    molport_availability_tool,   # 化学品商业可用性查询
+    molport_search_tool,         # 化学品搜索
+    molport_molecule_info_tool   # 分子信息查询
 )
 
 
 class ToolFactory:
-    """Tool Factory Class"""
-    
-    @staticmethod
-    def create_all_tools():
-        """
-        Create all tool instances.
-        
-        Returns:
-            list: List of all tool instances
-        """
-        tools = [
-            materials_project_tool,
-            pubchem_tool,
-            CrewAIName2CASTool(),
-            CrewAIName2PropertiesTool(),
-            CrewAICID2PropertiesTool(),
-            CrewAIFormula2PropertiesTool(),
-            CrewAIMaterialSearchTool(),
-            CrewAIPNECTool(),
-            CrewAIMaterialIdentifierTool(),
-            CrewAIDataValidatorTool(),
-            CrewAIStructureValidatorTool(),
-            molport_availability_tool,
-            molport_search_tool,
-            molport_molecule_info_tool
-        ]
-        
-        return tools
-    
+    """
+    工具工厂类 —— 根据不同的工作流阶段（Agent 的任务需求），
+    提供预设的工具集合。每个静态方法返回一组工具实例，
+    体现了 "Less is More" 的设计策略：只保留核心数据源和独立功能工具，
+    移除内部间接调用 MP/PubChem 的冗余工具。
+    """
+
     @staticmethod
     def create_operation_guidance_tools():
         """
-        Create operation guidance tool instances.
-        Used by Operation_Suggesting_agent, matches task requirements.
-        
+        创建操作指导工具集 —— 供 Operation_Suggesting_agent 使用。
+
+        根据任务需求匹配：
+        - pubchem: 化学安全数据
+        - materials_project: 材料成本数据
+        - PNEC: 环境影响数据
+
         Returns:
-            list: List of operation guidance tool instances
+            list: 操作指导工具实例列表
         """
         tools = [
-            pubchem_tool,                  # Chemical safety data (task req)
-            materials_project_tool,        # Material cost data (task req)
-            CrewAIPNECTool(),              # Environmental impact (task req)
+            pubchem_tool,                  # 化学安全数据（满足任务需求）
+            materials_project_tool,        # 材料成本数据（满足任务需求）
+            CrewAIPNECTool(),              # 环境影响评估（满足任务需求）
         ]
         return tools
-    
+
     @staticmethod
     def create_literature_extraction_tools():
         """
-        Create literature extraction tool instances.
-        Used by Extracting_agent for extracting chemical info from literature.
-        
-        Strategy (Less is More):
-        - Remove Name2Properties/MaterialSearch (calls MP internally, redundant)
-        - Keep core query + local validation
-        
+        创建文献提取工具集 —— 供 Extracting_agent 用于从文献中提取化学信息。
+
+        策略 (Less is More):
+        - 移除 Name2Properties/MaterialSearch（内部调用 MP，冗余）
+        - 保留核心查询工具 + 本地验证工具
+
         Returns:
-            list: List of literature extraction tool instances
+            list: 文献提取工具实例列表
         """
         tools = [
-            materials_project_tool,         # Material structure query
-            pubchem_tool,                   # Compound info query
-            CrewAIDataValidatorTool()       # Local data format validation (no external API)
+            materials_project_tool,         # 材料结构查询（无机材料核心搜索）
+            pubchem_tool,                   # 化合物信息查询（有机化合物核心搜索）
+            CrewAIDataValidatorTool()       # 本地数据格式验证（不调用外部 API，快速）
         ]
         return tools
-    
+
     @staticmethod
     def create_material_design_tools():
         """
-        Create material design tool instances.
-        
-        Strategy (Less is More):
-        - Keep only MP and PubChem core query tools
-        - Remove redundant tools (MaterialIdentifier/StructureValidator/MaterialSearch all call MP+PubChem)
-        
+        创建材料设计工具集。
+
+        策略 (Less is More):
+        - 只保留 MP 和 PubChem 两个核心查询工具
+        - 移除 MaterialIdentifier/StructureValidator/MaterialSearch
+          （均内部调用 MP+PubChem，高度冗余）
+
         Returns:
-            list: List of material design tool instances
+            list: 材料设计工具实例列表
         """
         tools = [
-            materials_project_tool,   # Material structure and properties
-            pubchem_tool,             # Organic compound info
+            materials_project_tool,   # 材料结构和性质查询（无机材料设计依据）
+            pubchem_tool,             # 有机化合物信息（有机组分设计依据）
         ]
         return tools
-    
-    @staticmethod
-    def create_material_assessment_tools():
-        """
-        Create material assessment tool instances.
-        
-        Strategy (Less is More):
-        - Remove MaterialIdentifier/StructureValidator (redundant)
-        - Keep core data sources + independent function tools
-        
-        Returns:
-            list: List of material assessment tool instances
-        """
-        tools = [
-            materials_project_tool,          # Material structure and properties
-            pubchem_tool,                    # Compound info
-            CrewAIPNECTool(),                # Environmental risk
-            molport_availability_tool        # Commercial availability
-        ]
-        return tools
-    
+
     @staticmethod
     def create_material_search_tools():
         """
-        Create material search tool instances (for SynthesisGuidingAgent).
-        
-        Strategy (Less is More):
-        - Remove MaterialSearch/StructureValidator (calls MP, redundant)
-        - Use core tools directly
-        
+        创建材料搜索工具集 —— 供 SynthesisGuidingAgent 合成指导 Agent 使用。
+
+        策略 (Less is More):
+        - 移除 MaterialSearch/StructureValidator（内部调用 MP，冗余）
+        - 直接使用核心工具
+
         Returns:
-            list: List of material search tool instances
+            list: 材料搜索工具实例列表
         """
         tools = [
-            materials_project_tool,             # Material structure and synthesis info
-            pubchem_tool,                       # Reagent safety data
+            materials_project_tool,             # 材料结构和合成信息
+            pubchem_tool,                       # 试剂安全数据（合成安全性参考）
         ]
         return tools
-    
+
     @staticmethod
     def create_mechanism_analysis_tools():
         """
-        Create mechanism analysis tool instances.
-        Used by MechanismMiningAgent, matches task requirements.
-        Note: Prioritize reusing upstream results.
-        
+        创建机理分析工具集 —— 供 MechanismMiningAgent 机理挖掘 Agent 使用。
+
+        注意: 优先复用上游 Agent 的分析结果，减少重复查询。
+
         Returns:
-            list: List of mechanism analysis tool instances
+            list: 机理分析工具实例列表
         """
         tools = [
-            materials_project_tool,          # Material structure and electronic structure
-            pubchem_tool,                    # Chemical reactivity
+            materials_project_tool,          # 材料结构和电子结构（用于机理解释）
+            pubchem_tool,                    # 化学反应性数据（反应用）
         ]
         return tools
-    
+
     @staticmethod
     def create_unified_assessment_tools():
         """
-        Create unified ASA assessment toolset (shared by Expert A/B/C).
-        
-        Strategy (Less is More):
-        - Remove MaterialIdentifier/StructureValidator (calls MP+PubChem, highly redundant)
-        - Keep core data sources + independent function tools
-        
-        Assessment dimension to tool mapping:
-        - Catalytic performance (50%) -> materials_project
-        - Economic feasibility (10%) -> molport
-        - Environmental friendliness (10%) -> PNEC
-        - Technical feasibility (10%) -> materials_project
-        - Structural rationality (20%) -> pubchem
-        
+        创建统一 ASA 评估工具集 —— 供 Expert A/B/C 三个专家 Agent 共用。
+
+        策略 (Less is More):
+        - 移除 MaterialIdentifier/StructureValidator（调用 MP+PubChem，高度冗余）
+        - 保留核心数据源 + 独立功能工具
+
+        评估维度与工具的映射关系：
+        - 催化性能 (50%)      → materials_project（材料结构、电子结构、稳定性）
+        - 经济可行性 (10%)    → molport（商业可用性）
+        - 环境友好性 (10%)    → PNEC（环境风险评估）
+        - 技术可行性 (10%)    → materials_project（材料结构与合成可行性）
+        - 结构合理性 (20%)    → pubchem（化学性质、毒性、结构验证）
+
         Returns:
-            list: Unified assessment tool instance list
+            list: 统一评估工具实例列表
         """
         tools = [
-            materials_project_tool,          # Material structure, electronic structure, stability
-            pubchem_tool,                    # Chemical properties, toxicity, structure validation
-            CrewAIPNECTool(),                # Environmental risk assessment (independent API)
-            molport_availability_tool,       # Commercial availability (independent API)
+            materials_project_tool,          # 材料结构、电子结构、稳定性（催化性能+技术可行性）
+            pubchem_tool,                    # 化学性质、毒性、结构验证（结构合理性）
+            CrewAIPNECTool(),                # 环境风险评估（独立 API，环境友好性）
+            molport_availability_tool,       # 商业可用性（独立 API，经济可行性）
         ]
         return tools
