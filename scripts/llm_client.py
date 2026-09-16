@@ -11,7 +11,7 @@ scripts/llm_endpoints.json:
   {
     "default": {"base_url": "http://localhost:8000/v1/chat/completions",
                 "model": "nano-bio", "api_key_env": null},
-    "epa": {"base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
+    "delivery": {"base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions",
             "model": "qwen-plus", "api_key_env": "QWEN_API_KEY"}
   }
 

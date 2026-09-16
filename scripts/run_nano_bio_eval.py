@@ -10,7 +10,7 @@ import json, time, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import llm_client
 
-AGENTS = ["apa", "epa", "bsa", "mma", "ca"]
+AGENTS = ["manufacturing", "delivery", "safety", "mechanism", "ranker"]
 MATERIALS = ["Cu_NC_CD", "Ag_NP", "ZnO_NP"]
 
 
@@ -29,7 +29,7 @@ def evaluate_material(name: str) -> dict:
 
     results = {"material": name}
 
-    # APA - Selective Antibacterial
+    # manufacturing - Selective Antibacterial
     prompt = f"""Evaluate the selective antibacterial performance of {name} against gut microbiota.
 Score on 4 dimensions (1-10 each):
 1. Potency (40%): MIC against pathogens
@@ -38,18 +38,18 @@ Score on 4 dimensions (1-10 each):
 4. Resistance Risk (10%): evidence of resistance
 
 Output as JSON with scores and brief reasoning."""
-    print(f"  APA...")
-    results["apa_response"] = query_agent("apa", prompt, 0.3)
+    print(f"  manufacturing...")
+    results["manufacturing_response"] = query_agent("manufacturing", prompt, 0.3)
 
-    # EPA - Enzyme Activity
+    # delivery - Enzyme Activity
     prompt = f"""Classify enzyme-like activity of {name}.
 Focus on: CAT-like, SOD-like, NADH oxidase-like.
-Score: activity strength (65%, NADH-like gets bonus), substrate affinity (25%), condition window (10%).
+Score: activity strength (65%), substrate affinity (25%), condition window (10%).
 Output JSON with enzyme types and confidence levels."""
-    print(f"  EPA...")
-    results["epa_response"] = query_agent("epa", prompt, 0.3)
+    print(f"  delivery...")
+    results["delivery_response"] = query_agent("delivery", prompt, 0.3)
 
-    # BSA - Biosafety
+    # safety - Biosafety
     prompt = f"""Assess biosafety of {name}.
 Score 5 dimensions (1-10):
 1. Cytotoxicity (30%): IC50
@@ -58,24 +58,24 @@ Score 5 dimensions (1-10):
 4. Environmental Risk (15%): PNEC
 5. Structural Stability (10%): ion leaching
 Output JSON with safety grade."""
-    print(f"  BSA...")
-    results["bsa_response"] = query_agent("bsa", prompt, 0.3)
+    print(f"  safety...")
+    results["safety_response"] = query_agent("safety", prompt, 0.3)
 
-    # MMA - Mechanism
+    # mechanism - Mechanism
     prompt = f"""Explain the selective antibacterial mechanism of {name}.
 Why differential activity against pathogens vs probiotics?
 Describe ROS pathway, gut-brain axis relevance for AD therapy."""
-    print(f"  MMA...")
-    results["mma_response"] = query_agent("mma", prompt, 0.3)
+    print(f"  mechanism...")
+    results["mechanism_response"] = query_agent("mechanism", prompt, 0.3)
 
     return results
 
 
 def compare_materials(results: list) -> str:
-    """Run CA agent to compare all materials."""
+    """Run ranker agent to compare all materials."""
     summary = ""
     for r in results:
-        summary += f"\n{r['material']}:\n  APA: {r['apa_response'][:200]}\n  EPA: {r['epa_response'][:200]}\n  BSA: {r['bsa_response'][:200]}\n"
+        summary += f"\n{r['material']}:\n  manufacturing: {r['manufacturing_response'][:200]}\n  delivery: {r['delivery_response'][:200]}\n  safety: {r['safety_response'][:200]}\n"
 
     prompt = f"""Compare these nanomaterials for selective antibacterial Alzheimer's therapy via gut-brain axis.
 Use consistency coefficient Cj = 1 - (1/3)*sum((Wij-Wbar)^2) / Wbar.
@@ -86,8 +86,8 @@ Evaluation data:
 {summary}
 
 Output: rankings, comparison matrix, radar data, final recommendation with AD therapeutic potential."""
-    print(f"\n  CA - Comparing all materials...")
-    return query_agent("ca", prompt, 0.1)
+    print(f"\n  ranker - Comparing all materials...")
+    return query_agent("ranker", prompt, 0.1)
 
 
 if __name__ == "__main__":
@@ -102,7 +102,7 @@ if __name__ == "__main__":
         time.sleep(0.5)
 
     print(f"\n{'='*60}")
-    print("Cross-Material Comparison (CA)")
+    print("Cross-Material Comparison (ranker)")
     print(f"{'='*60}")
     comparison = compare_materials(all_results)
 
@@ -116,10 +116,10 @@ if __name__ == "__main__":
         f.write(f"Nano-Bio Evaluator Report\n{'='*60}\n\n")
         for r in all_results:
             f.write(f"\n## {r['material']}\n")
-            f.write(f"APA: {r['apa_response']}\n")
-            f.write(f"EPA: {r['epa_response']}\n")
-            f.write(f"BSA: {r['bsa_response']}\n")
-            f.write(f"MMA: {r['mma_response']}\n")
+            f.write(f"manufacturing: {r['manufacturing_response']}\n")
+            f.write(f"delivery: {r['delivery_response']}\n")
+            f.write(f"safety: {r['safety_response']}\n")
+            f.write(f"mechanism: {r['mechanism_response']}\n")
         f.write(f"\n## Comparison\n{comparison}\n")
 
     print(f"\nReport saved to outputs/")

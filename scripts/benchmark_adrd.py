@@ -10,7 +10,7 @@ Blind protocol: the model sees only Question (+ Options); answers are never
 in the prompt. Raw outputs saved unmodified; parsing is extraction-only.
 
 Usage:
-  python scripts/benchmark_adrd.py [--agent epa] [--use-base] [--batch-size 10]
+  python scripts/benchmark_adrd.py [--agent delivery] [--use-base] [--batch-size 10]
 """
 
 import argparse
@@ -116,7 +116,7 @@ def run_split(name, items, prompt_fn, kind, answer_key, agent, batch_size):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--agent", default="epa", help="LoRA adapter to route to")
+    ap.add_argument("--agent", default="delivery", help="LoRA adapter to route to")
     ap.add_argument("--use-base", action="store_true")
     ap.add_argument("--batch-size", type=int, default=10)
     args = ap.parse_args()

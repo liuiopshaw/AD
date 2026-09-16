@@ -2,9 +2,9 @@
 """
 Mechanically extract per-material ASA subscores from raw agent part files.
 
-Reads task100_{apa,epa,bsa,mma}_<TS>_part*.txt from the run directory and
-collects the JSON subscore tail each agent appended to every material line
-(see task_100_materials.py). Extraction is purely mechanical:
+Reads task100_{manufacturing,delivery,safety,mechanism}_<TS>_part*.txt from the
+run directory and collects the JSON subscore tail each agent appended to every
+material line (see task_100_materials.py). Extraction is purely mechanical:
   - material name = first pipe-separated cell of the line (verbatim)
   - subscores      = the LAST valid JSON object on the line (json.loads)
 Extraction failures (unparsed line, missing/invalid JSON tail) are recorded
@@ -15,8 +15,14 @@ Output: subscores_<TS>.json in the run directory:
    "materials": {name: {axis: {sub: score}}},
    "missing": [{file, line, reason, ...}]}
 
-Axis mapping: apa->antibacterial, epa->enzyme_activity, bsa->biosafety,
-mma->microbiome_remodeling (scripts/asa_rubric.json axis names).
+Axis mapping: manufacturing->manufacturability, delivery->delivery_efficiency,
+safety->biosafety, mechanism->multi_target_synergy+durability
+(scripts/asa_rubric.json axis names).
+
+NOTE: agent ids were renamed 2026-09 (apa->manufacturing, epa->delivery,
+bsa->safety, mma->mechanism). Output files from older runs use the legacy
+task100_{apa,epa,bsa,mma}_ prefixes and are NOT picked up by the globs below;
+re-extracting subscores from a legacy run requires renaming those files first.
 
 Usage: python scripts/extract_subscores.py [timestamp]
 """
@@ -30,10 +36,10 @@ sys.path.insert(0, str(Path(__file__).parent))
 from output_utils import find_run_dir, OUTPUT_ROOT
 
 AGENT_AXES = {
-    "apa": ["manufacturability"],                      # manufacturing control & tunability (rubric, 评分标准/标准.md)
-    "epa": ["delivery_efficiency"],                    # target-tissue delivery efficiency
-    "bsa": ["biosafety"],                              # biological safety
-    "mma": ["multi_target_synergy", "durability"],     # multi-target synergy + effect durability
+    "manufacturing": ["manufacturability"],            # manufacturing control & tunability (rubric, 评分标准/标准.md)
+    "delivery": ["delivery_efficiency"],               # target-tissue delivery efficiency
+    "safety": ["biosafety"],                           # biological safety
+    "mechanism": ["multi_target_synergy", "durability"],  # multi-target synergy + effect durability
 }
 
 JSON_OBJ_RE = re.compile(r"\{[^{}]*\}")
@@ -93,10 +99,10 @@ def extract(ts: str) -> dict:
 def main():
     ts = sys.argv[1] if len(sys.argv) > 1 else None
     if ts is None:
-        candidates = (list(OUTPUT_ROOT.glob("task100_cda_*_part1.txt"))
-                      + list(OUTPUT_ROOT.glob("run_*/task100_cda_*_part1.txt")))
+        candidates = (list(OUTPUT_ROOT.glob("task100_designer_*_part1.txt"))
+                      + list(OUTPUT_ROOT.glob("run_*/task100_designer_*_part1.txt")))
         latest = max(candidates, key=lambda p: p.stat().st_mtime)
-        ts = re.search(r"task100_cda_(\d+)_part1", latest.name).group(1)
+        ts = re.search(r"task100_designer_(\d+)_part1", latest.name).group(1)
 
     payload = extract(ts)
     out_path = find_run_dir(ts) / f"subscores_{ts}.json"

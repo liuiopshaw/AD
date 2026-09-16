@@ -19,7 +19,7 @@ RUN_DIR = run_dir(TS)  # per-run folder: outputs/run_<TS>/
 
 # ---------------------------------------------------------------------------
 # Phase 4: --set nano|small_molecule|biologic (default nano = legacy benchmark,
-# unchanged below). small_molecule: EPA judges AD activity vs known_ad_activity
+# unchanged below). small_molecule: delivery judges AD activity vs known_ad_activity
 # -> accuracy. biologic: agent must produce a verifiable Target_UniProt ->
 # UniProt lookup pass rate. Eval sets live in scripts/eval_sets/ and are built
 # from real ChEMBL/UniProt queries (build_*_set.py, re-runnable).
@@ -47,7 +47,7 @@ def _call_agent(agent: str, prompt: str, max_tokens: int = 10240, temperature: f
 
 
 def run_small_molecule_eval():
-    """EPA judges AD activity per compound; compare with known_ad_activity."""
+    """delivery judges AD activity per compound; compare with known_ad_activity."""
     entries = json.loads((EVAL_SETS_DIR / "small_molecule_ad.json").read_text(encoding="utf-8"))
     print(f"Eval set: small_molecule ({len(entries)} compounds)")
     batch_size, results = 15, []
@@ -67,7 +67,7 @@ Output format (ONE LINE per compound, numbered):
 2. [YES/NO] - one-line reasoning
 ..."""
         print(f"Batch {bnum}: judging AD activity for {len(batch)} compounds...")
-        raw = _call_agent("epa", prompt)
+        raw = _call_agent("delivery", prompt)
         raw_file = RUN_DIR / f"smol_ad_batch{bnum}_raw_{TS}.txt"
         raw_file.write_text(raw, encoding="utf-8")
         print(f"  -> {raw_file}")
@@ -134,7 +134,7 @@ Output format (ONE LINE per biologic, numbered):
 2. [UniProt accession] - target name
 ..."""
         print(f"Batch {bnum}: resolving targets for {len(batch)} biologics...")
-        raw = _call_agent("epa", prompt)
+        raw = _call_agent("delivery", prompt)
         raw_file = RUN_DIR / f"biologic_ad_batch{bnum}_raw_{TS}.txt"
         raw_file.write_text(raw, encoding="utf-8")
         print(f"  -> {raw_file}")
@@ -301,7 +301,7 @@ print(f"  Nanocluster: {sum(1 for m in MATERIALS if m['category']=='nanocluster'
 print(f"  Nanoparticle:{sum(1 for m in MATERIALS if m['category']=='nanoparticle')}")
 print()
 
-# Build EPA prompt — send all 100 materials in one call per agent
+# Build delivery prompt — send all 100 materials in one call per agent
 BATCH_SIZE = 25  # Materials per agent call
 
 results_all = []
@@ -317,7 +317,7 @@ for i in range(0, len(MATERIALS), BATCH_SIZE):
         for j, m in enumerate(batch)
     )
 
-    # EPA: NADH oxidase-like activity classification
+    # delivery: NADH oxidase-like activity classification
     epa_prompt = f"""Analyze the following nanomaterials for NADH oxidase-like enzyme activity.
 
 For each material, answer YES or NO for NADH oxidase-like activity based on known literature and structure-activity relationships. Give a one-line reasoning.
@@ -338,7 +338,7 @@ Output format (ONE LINE per material, numbered):
 
     print(f"Batch {batch_num}: Evaluating {len(batch)} materials for NADH activity...")
 
-    epa_result = llm_client.chat("epa", epa_prompt, max_tokens=10240,
+    epa_result = llm_client.chat("delivery", epa_prompt, max_tokens=10240,
                                  temperature=0.2, timeout=900)
 
     if not epa_result.startswith("ERROR"):
@@ -348,7 +348,7 @@ Output format (ONE LINE per material, numbered):
             f.write(epa_result)
         print(f"  -> {raw_file}")
 
-        # Parse EPA results — extract YES/NO per material
+        # Parse delivery results — extract YES/NO per material
         for idx, mat in enumerate(batch):
             # Search for the matching line
             lines = epa_result.split("\n")

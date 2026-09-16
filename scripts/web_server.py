@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Web chat server — TOA orchestration entry (Kimi-style UI).
+Web chat server — coordinator orchestration entry (Kimi-style UI).
 
 Independent of llava_server.py (:8000). This service (:8001) only PROXIES the
 upstream LLM server; it never starts/stops/modifies it.
@@ -9,7 +9,7 @@ upstream LLM server; it never starts/stops/modifies it.
 - GET  /static/*             -> scripts/static/
 - GET  /api/health           -> upstream /health proxy
 - POST /api/orchestrate      -> SSE stream running the pipeline semantics
-                                TOA -> CDA(batches) -> APA -> EPA -> BSA -> MMA -> CA
+                                coordinator -> designer(batches) -> manufacturing -> delivery -> safety -> mechanism -> ranker
 - GET  /api/sessions         -> chat session list (outputs/chat/)
 - GET  /api/sessions/<id>    -> one session's history
 
@@ -48,17 +48,11 @@ GEN_TIMEOUT = 2400  # long generations, same as the pipeline
 # spurious empty outputs/run_<TS>/ folder on every web server start.
 # ---------------------------------------------------------------------------
 
-FLAGSHIP_SENTENCE = "Assign EVERY material in this batch Disease_Intervention=direct_antibacterial AND Mechanism=microbiome_remodeling"
-PROHIBITION_SENTENCE = "Do NOT assign direct_antibacterial together with microbiome_remodeling in this batch"
-
-
 def batch_focus(batch: dict) -> str:
-    """Same logic as task_100_materials.batch_focus."""
+    """Same logic as task_100_materials.batch_focus (no flagship steering)."""
     if batch.get("focus"):
         return batch["focus"]
-    desc = batch["description"].rstrip()
-    sentence = FLAGSHIP_SENTENCE if batch.get("allow_cu_flagship") else PROHIBITION_SENTENCE
-    return f"{desc}{'' if desc.endswith('.') else '.'} {sentence}"
+    return batch["description"].rstrip()
 
 
 NANO_ONLY_LINE = ("This batch uses NANO modalities only: "
@@ -68,6 +62,8 @@ NANO_ONLY_LINE = ("This batch uses NANO modalities only: "
 def cda_format_block_for(batch: dict) -> str:
     """Same logic as task_100_materials.cda_format_block_for."""
     mf = batch.get("modality_focus") or "nano_mixed"
+    if mf == "free":
+        return schema_v2.cda_format_block(None)
     if mf == "nano_mixed":
         return schema_v2.cda_format_block(None) + "\n" + NANO_ONLY_LINE
     return schema_v2.cda_format_block(mf)
@@ -85,19 +81,19 @@ def split_chunks(lines: list, k: int) -> list:
     return chunks
 
 
-# TOA prompt — identical to the TOA step of task_100_materials.py, plus the
+# coordinator prompt — identical to the coordinator step of task_100_materials.py, plus the
 # user's chat message appended as an explicit request line.
-TOA_PROMPT_TEMPLATE = """You are the Task Orchestration Agent (TOA). Route the following workflow to the available agents.
+TOA_PROMPT_TEMPLATE = """You are the Task Orchestration Agent (coordinator). Route the following workflow to the available agents.
 
 Workflow goal: Design 100 candidates spanning nanomaterials, small-molecule drugs, and biologics — with a FOCUS on Cu-based nanomaterials whose selective direct antibacterial action and gut-microbiome remodeling are priority mechanisms, alongside AD-relevant small molecules and biologics targeting amyloid/tau/neuroinflammation pathways. Validate NADH oxidase-like activity, assess antibacterial performance and biosafety, analyze mechanisms, and produce a ranked summary report.
 
 Available agents:
-- cda: Creative material design — generates candidates (nanomaterials, small molecules, biologics) with all required fields
-- apa: Manufacturability assessment — scores production controllability, scalability, and precise dose control
-- epa: Delivery & enzyme validation — validates NADH activity and scores target-tissue delivery efficiency
-- bsa: Biosafety assessment — scores overall biosafety
-- mma: Mechanism mining — explains mechanisms, scores multi-target synergy and effect durability
-- ca: Comparison & summary — ranks candidates and produces the final report
+- designer: Creative material design — generates candidates (nanomaterials, small molecules, biologics) with all required fields
+- manufacturing: Manufacturability assessment — scores production controllability, scalability, and precise dose control
+- delivery: Delivery & enzyme validation — validates NADH activity and scores target-tissue delivery efficiency
+- safety: Biosafety assessment — scores overall biosafety
+- mechanism: Mechanism mining — explains mechanisms, scores multi-target synergy and effect durability
+- ranker: Comparison & summary — ranks candidates and produces the final report
 
 Output ONLY a JSON task plan:
 {
@@ -108,21 +104,21 @@ Output ONLY a JSON task plan:
   "data_flow": "how outputs move between agents"
 }
 
-Routing rule: set "needs_pipeline": true ONLY when the user request asks to design, screen, rank, or evaluate candidate materials/drugs. For any other request (questions about the system itself, domain knowledge Q&A, explanations, casual chat), set "needs_pipeline": false and put the single best-suited agent to answer in "agents_needed" (use "ca" when unsure)."""
+Routing rule: set "needs_pipeline": true ONLY when the user request asks to design, screen, rank, or evaluate candidate materials/drugs. For any other request (questions about the system itself, domain knowledge Q&A, explanations, casual chat), set "needs_pipeline": false and put the single best-suited agent to answer in "agents_needed" (use "ranker" when unsure)."""
 
 # Direct-answer prompt for requests that do not need the screening pipeline
 # (system questions, domain Q&A, explanations, casual chat).
 DIRECT_ANSWER_TEMPLATE = """You are an expert assistant of the Nano-Bio Evaluator multi-agent system (Alzheimer's gut-brain-axis intervention discovery spanning nanomaterials, small-molecule drugs, and biologics).
 
-Answer the user's request directly and concisely, in the user's language. If the question is about the system's agents or workflow, answer accurately from this roster: TOA (task orchestration/routing), CDA (candidate design), APA (antibacterial scoring), EPA (enzyme activity), BSA (biosafety), MMA (mechanism mining), CA (comparison & summary).
+Answer the user's request directly and concisely, in the user's language. If the question is about the system's agents or workflow, answer accurately from this roster: coordinator (task orchestration/routing), designer (candidate design), manufacturing (antibacterial scoring), delivery (enzyme activity), safety (biosafety), mechanism (mechanism mining), ranker (comparison & summary).
 
 User request: {message}"""
 
-VALID_ANSWER_AGENTS = ("ca", "toa", "mma", "epa", "bsa", "apa", "cda", "ea")
+VALID_ANSWER_AGENTS = ("ranker", "coordinator", "mechanism", "delivery", "safety", "manufacturing", "designer", "extractor")
 
 
 def parse_plan(toa_raw: str) -> dict:
-    """Best-effort extraction of the TOA plan JSON; {} when unparseable
+    """Best-effort extraction of the coordinator plan JSON; {} when unparseable
     (callers then keep the default pipeline behavior)."""
     start, end = toa_raw.find("{"), toa_raw.rfind("}")
     if start < 0 or end <= start:
@@ -197,19 +193,19 @@ Report structure:
 7. Recommendations for Alzheimer's therapy via gut-brain axis
 
 Materials:
-{cda}
+{designer}
 
-EPA validation:
-{epa}
+delivery validation:
+{delivery}
 
-MMA analysis:
-{mma}"""
+mechanism analysis:
+{mechanism}"""
 
 # ---------------------------------------------------------------------------
 # App
 # ---------------------------------------------------------------------------
 
-app = FastAPI(title="Nano-Bio Evaluator — TOA Chat", version="0.1")
+app = FastAPI(title="Nano-Bio Evaluator — coordinator Chat", version="0.1")
 app.mount("/static", StaticFiles(directory=str(STATIC_DIR)), name="static")
 
 orch_lock = asyncio.Lock()
@@ -295,24 +291,24 @@ async def orchestrate_stream(message: str, session_id: str):
     try:
         cfg = load_cfg()
         async with httpx.AsyncClient() as client:
-            # ---- Step 1: TOA plan ----
+            # ---- Step 1: coordinator plan ----
             # (prompt kept verbatim from the pipeline; user request appended
             # by concatenation — the template contains literal JSON braces
             # and must NOT go through str.format)
             toa_raw = await call_agent(
-                client, "toa", TOA_PROMPT_TEMPLATE + "\n\nUser request: " + message,
-                cfg["toa"]["max_tokens"], cfg["toa"]["temperature"])
-            save_raw(out, f"task100_toa_{ts}.txt", toa_raw)
+                client, "coordinator", TOA_PROMPT_TEMPLATE + "\n\nUser request: " + message,
+                cfg["coordinator"]["max_tokens"], cfg["coordinator"]["temperature"])
+            save_raw(out, f"task100_coordinator_{ts}.txt", toa_raw)
             yield emit({"type": "plan", "content": toa_raw})
 
-            # ---- Intent routing: honor TOA's needs_pipeline decision ----
+            # ---- Intent routing: honor coordinator's needs_pipeline decision ----
             plan_obj = parse_plan(toa_raw)
             needs_pipeline = bool(plan_obj.get("needs_pipeline", True))
 
             if not needs_pipeline:
                 wanted = plan_obj.get("agents_needed") or []
                 answer_agent = next(
-                    (a for a in wanted if a in VALID_ANSWER_AGENTS), "ca")
+                    (a for a in wanted if a in VALID_ANSWER_AGENTS), "ranker")
                 yield emit({"type": "agent_start", "agent": answer_agent,
                             "batch": 1})
                 answer = await call_agent(
@@ -326,33 +322,33 @@ async def orchestrate_stream(message: str, session_id: str):
                 yield emit({"type": "done", "run_dir": run_dir_str})
                 return
 
-            # ---- Step 2: CDA batches ----
-            batches = cfg["cda"]["batches"]
+            # ---- Step 2: designer batches ----
+            batches = cfg["designer"]["batches"]
             total_batches = len(batches)
             cda_chunks = []
             for b in batches:
                 n = b["batch_id"]
-                yield emit({"type": "agent_start", "agent": "cda", "batch": n})
+                yield emit({"type": "agent_start", "agent": "designer", "batch": n})
                 chunk = await call_agent(
-                    client, "cda",
+                    client, "designer",
                     CDA_PROMPT_TEMPLATE.format(
                         count=b["count"], n=n, total_batches=total_batches,
                         focus=batch_focus(b), format_block=cda_format_block_for(b)),
-                    b["max_tokens"], cfg["cda"]["temperature"])
-                save_raw(out, f"task100_cda_{ts}_part{n}.txt", chunk)
+                    b["max_tokens"], cfg["designer"]["temperature"])
+                save_raw(out, f"task100_designer_{ts}_part{n}.txt", chunk)
                 cda_chunks.append(chunk)
-                yield emit({"type": "agent_done", "agent": "cda", "batch": n,
+                yield emit({"type": "agent_done", "agent": "designer", "batch": n,
                             "chars": len(chunk), "content": chunk})
 
             cda_raw = "\n".join(cda_chunks)
             mat_lines = [l for l in cda_raw.split("\n") if l.strip()]
 
-            # ---- Steps 3-6: APA / EPA / BSA / MMA (chunked per config) ----
+            # ---- Steps 3-6: manufacturing / delivery / safety / mechanism (chunked per config) ----
             chunked_steps = [
-                ("apa", APA_PROMPT_TEMPLATE),
-                ("epa", EPA_PROMPT_TEMPLATE),
-                ("bsa", BSA_PROMPT_TEMPLATE),
-                ("mma", MMA_PROMPT_TEMPLATE),
+                ("manufacturing", APA_PROMPT_TEMPLATE),
+                ("delivery", EPA_PROMPT_TEMPLATE),
+                ("safety", BSA_PROMPT_TEMPLATE),
+                ("mechanism", MMA_PROMPT_TEMPLATE),
             ]
             raws = {}
             for agent, template in chunked_steps:
@@ -373,17 +369,17 @@ async def orchestrate_stream(message: str, session_id: str):
                                 "content": chunk})
                 raws[agent] = "\n".join(chunks_out)
 
-            # ---- Step 7: CA summary ----
-            yield emit({"type": "agent_start", "agent": "ca", "batch": 1})
-            trunc = cfg["ca"]["input_truncation"]
+            # ---- Step 7: ranker summary ----
+            yield emit({"type": "agent_start", "agent": "ranker", "batch": 1})
+            trunc = cfg["ranker"]["input_truncation"]
             ca_raw = await call_agent(
-                client, "ca",
+                client, "ranker",
                 CA_PROMPT_TEMPLATE.format(
-                    cda=cda_raw[:trunc["cda"]],
-                    epa=raws["epa"][:trunc["epa"]],
-                    mma=raws["mma"][:trunc["mma"]]),
-                cfg["ca"]["max_tokens"], cfg["ca"]["temperature"])
-            save_raw(out, f"task100_ca_{ts}.txt", ca_raw)
+                    designer=cda_raw[:trunc["designer"]],
+                    delivery=raws["delivery"][:trunc["delivery"]],
+                    mechanism=raws["mechanism"][:trunc["mechanism"]]),
+                cfg["ranker"]["max_tokens"], cfg["ranker"]["temperature"])
+            save_raw(out, f"task100_ranker_{ts}.txt", ca_raw)
             yield emit({"type": "summary", "content": ca_raw})
 
         await finish("done", ca_raw)

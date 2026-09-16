@@ -6,10 +6,10 @@ Feeds the 100 compounds from benchmark/ADTB-100_v1.0_Alzheimer_Therapeutics_Benc
 to the Nano-Bio agent ensemble WITHOUT revealing Category / Label / any preset score
 (blind protocol). Each batch is scored by domain agents:
 
-  EPA -> Efficacy (1-10)
-  MMA -> Mechanism_score (1-10)
-  BSA -> Safety_score (1-10) + BBB_score (1-10, CNS delivery)
-  CA  -> Clinical_score (1-10) + Overall_score (1-10), given the subscores above
+  delivery -> Efficacy (1-10)
+  mechanism -> Mechanism_score (1-10)
+  safety -> Safety_score (1-10) + BBB_score (1-10, CNS delivery)
+  ranker  -> Clinical_score (1-10) + Overall_score (1-10), given the subscores above
 
 Raw agent outputs are saved unmodified (project iron rule); parsed scores go to
 adtb100_scores_<TS>.json in the same run dir. Compare against ground truth with
@@ -17,7 +17,7 @@ scripts/compare_adtb100.py.
 
 Requires llava_server.py running on localhost:8000.
 
-Usage: python scripts/benchmark_adtb100.py [--batch-size 20] [--only epa,mma,bsa,ca]
+Usage: python scripts/benchmark_adtb100.py [--batch-size 20] [--only delivery,mechanism,safety,ranker]
 """
 
 import argparse
@@ -173,7 +173,7 @@ Output format (ONE LINE per candidate, numbered, no other text):
 
 def solo_prompt(batch):
     """Condition 3/4: single consolidated scoring prompt — the dimension
-    definitions copied verbatim from the harness agent prompts (epa/mma/bsa/ca),
+    definitions copied verbatim from the harness agent prompts (delivery/mechanism/safety/ranker),
     but NO multi-agent chain: one call scores all six dimensions directly."""
     return f"""Evaluate the following Alzheimer's disease (AD) therapeutic candidates. For EACH candidate give SIX scores from 1 to 10:
 
@@ -412,11 +412,11 @@ def main():
     ap.add_argument("--use-base", action="store_true",
                     help="route all calls to the raw base model (no LoRA adapters)")
     ap.add_argument("--mode", choices=["harness", "prompt"], default="harness",
-                    help="harness = 4-agent chain (epa/mma/bsa/ca); "
+                    help="harness = 4-agent chain (delivery/mechanism/safety/ranker); "
                          "prompt = single consolidated scoring prompt, no chain")
     ap.add_argument("--rubric", action="store_true",
                     help="anchor with the rubric file 评分标准/标准.md (5-dim weighted framework); "
-                         "overall = deterministic weighted sum, CA overall kept as ca_overall")
+                         "overall = deterministic weighted sum, ranker overall kept as ca_overall")
     ap.add_argument("--gate", choices=["off", "hard", "soft"], default="off",
                     help="AD-relevance gate: off = additive (default), "
                          "hard = ×(ad/10), soft = ×(0.5+0.5·ad/10)")
@@ -491,7 +491,7 @@ def main():
         batch_sub = []
         if args.mode == "prompt" and args.rubric:
             # Rubric-anchored single prompt, no agent chain.
-            raw = call_agent("ca", r_solo_prompt(batch, rubric_text), max_tokens=8192)
+            raw = call_agent("ranker", r_solo_prompt(batch, rubric_text), max_tokens=8192)
             save_raw(f"adtb100_rsolo_batch{bnum}_raw_{TS}.txt", raw)
             parsed = parse_scores(raw, n, RUBRIC_DIM_PATTERNS)
             for k in range(n):
@@ -506,9 +506,9 @@ def main():
             continue
 
         if args.mode == "prompt":
-            # Single consolidated prompt, no agent chain. LoRA arm uses the ca
+            # Single consolidated prompt, no agent chain. LoRA arm uses the ranker
             # adapter (fusion/ranking role); --use-base routes to raw model.
-            raw = call_agent("ca", solo_prompt(batch), max_tokens=8192)
+            raw = call_agent("ranker", solo_prompt(batch), max_tokens=8192)
             save_raw(f"adtb100_solo_batch{bnum}_raw_{TS}.txt", raw)
             parsed = parse_scores(raw, n, DIM_PATTERNS)
             missing = sum(1 for s in parsed if all(v is None for v in s.values()))
@@ -520,17 +520,17 @@ def main():
             continue
 
         if args.rubric:
-            # Rubric-anchored harness: bsa(delivery+safety) / mma(synergy+duration)
-            # / epa(manufacturability, +ad_relevance when gate on) -> ca(overall).
+            # Rubric-anchored harness: safety(delivery+safety) / mechanism(synergy+duration)
+            # / delivery(manufacturability, +ad_relevance when gate on) -> ranker(overall).
             epa_dims = {"manufacturability": RUBRIC_DIM_PATTERNS["manufacturability"]}
             if GATE != "off":
                 epa_dims = {"ad_relevance": RUBRIC_DIM_PATTERNS["ad_relevance"], **epa_dims}
             for agent, pfunc, dims in [
-                ("bsa", r_bsa_prompt, {"delivery": RUBRIC_DIM_PATTERNS["delivery"],
+                ("safety", r_bsa_prompt, {"delivery": RUBRIC_DIM_PATTERNS["delivery"],
                                        "safety": RUBRIC_DIM_PATTERNS["safety"]}),
-                ("mma", r_mma_prompt, {"synergy": RUBRIC_DIM_PATTERNS["synergy"],
+                ("mechanism", r_mma_prompt, {"synergy": RUBRIC_DIM_PATTERNS["synergy"],
                                        "duration": RUBRIC_DIM_PATTERNS["duration"]}),
-                ("epa", r_epa_prompt, epa_dims),
+                ("delivery", r_epa_prompt, epa_dims),
             ]:
                 raw = call_agent(agent, pfunc(batch, rubric_text))
                 save_raw(f"adtb100_r_{agent}_batch{bnum}_raw_{TS}.txt", raw)
@@ -545,8 +545,8 @@ def main():
                     print(f"  WARNING: {agent} batch {bnum}: {missing}/{n} items unparsed")
                 time.sleep(2)
 
-            raw = call_agent("ca", r_ca_prompt(batch, batch_sub, rubric_text))
-            save_raw(f"adtb100_r_ca_batch{bnum}_raw_{TS}.txt", raw)
+            raw = call_agent("ranker", r_ca_prompt(batch, batch_sub, rubric_text))
+            save_raw(f"adtb100_r_ranker_batch{bnum}_raw_{TS}.txt", raw)
             ca_parsed = parse_scores(raw, n, {"overall": RUBRIC_DIM_PATTERNS["overall"]})
             for k in range(n):
                 all_scores[i + k].update(batch_sub[k])
@@ -556,9 +556,9 @@ def main():
             continue
 
         for agent, pfunc, dims in [
-            ("epa", epa_prompt, {"efficacy": DIM_PATTERNS["efficacy"]}),
-            ("mma", mma_prompt, {"mechanism": DIM_PATTERNS["mechanism"]}),
-            ("bsa", bsa_prompt, {"safety": DIM_PATTERNS["safety"], "bbb": DIM_PATTERNS["bbb"]}),
+            ("delivery", epa_prompt, {"efficacy": DIM_PATTERNS["efficacy"]}),
+            ("mechanism", mma_prompt, {"mechanism": DIM_PATTERNS["mechanism"]}),
+            ("safety", bsa_prompt, {"safety": DIM_PATTERNS["safety"], "bbb": DIM_PATTERNS["bbb"]}),
         ]:
             raw = call_agent(agent, pfunc(batch))
             save_raw(f"adtb100_{agent}_batch{bnum}_raw_{TS}.txt", raw)
@@ -573,8 +573,8 @@ def main():
                 print(f"  WARNING: {agent} batch {bnum}: {missing}/{n} items unparsed")
             time.sleep(2)
 
-        raw = call_agent("ca", ca_prompt(batch, batch_sub))
-        save_raw(f"adtb100_ca_batch{bnum}_raw_{TS}.txt", raw)
+        raw = call_agent("ranker", ca_prompt(batch, batch_sub))
+        save_raw(f"adtb100_ranker_batch{bnum}_raw_{TS}.txt", raw)
         ca_parsed = parse_scores(raw, n, {"clinical": DIM_PATTERNS["clinical"],
                                           "overall": DIM_PATTERNS["overall"]})
         for k in range(n):
@@ -602,8 +602,8 @@ def main():
                   "duration 10% / manufacturability 25% / safety 20%]; overall = "
                   "deterministic gated fusion, model's own overall in ca_overall)" if args.rubric else None,
         "gate": GATE if args.rubric else None,
-        "agent_chain": ["solo-prompt (ca adapter)"] if args.mode == "prompt"
-                       else ["epa", "mma", "bsa", "ca"],
+        "agent_chain": ["solo-prompt (ranker adapter)"] if args.mode == "prompt"
+                       else ["delivery", "mechanism", "safety", "ranker"],
         "timestamp": TS,
         "elapsed_s": round(time.time() - t0, 1),
         "results": [

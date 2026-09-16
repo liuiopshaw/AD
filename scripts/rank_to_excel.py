@@ -15,7 +15,7 @@ Usage: python scripts/rank_to_excel.py [timestamp|rawfile.txt] [dedup] [--rubric
 
 Phase 3: like rank_cda_outputs.py, when the run directory contains
 subscores_<TS>.json the deterministic ASA_Adj is the primary sort key and the
-CDA self-report column is shown as ASA_SelfReport; otherwise the legacy
+designer self-report column is shown as ASA_SelfReport; otherwise the legacy
 self-report ranking is used unchanged. --rubric re-scores historical
 subscores without re-running agents.
 """
@@ -73,10 +73,10 @@ def main():
     else:
         ts = arg
         if ts is None:
-            candidates = (list(OUTPUT.glob("task100_cda_*_part1.txt"))
-                          + list(OUTPUT.glob("run_*/task100_cda_*_part1.txt")))
+            candidates = (list(OUTPUT.glob("task100_designer_*_part1.txt"))
+                          + list(OUTPUT.glob("run_*/task100_designer_*_part1.txt")))
             latest = max(candidates, key=lambda p: p.stat().st_mtime)
-            ts = re.search(r"task100_cda_(\d+)_part1", latest.name).group(1)
+            ts = re.search(r"task100_designer_(\d+)_part1", latest.name).group(1)
         src_files, records, fused, bad = parse_records(ts)
 
     def asa(rec):
@@ -201,7 +201,7 @@ def main():
     rows = [
         ("Run Timestamp", ts),
         ("Source Files", ", ".join(src_files)),
-        ("ASA Ranking Mode", f"ASA_Adj deterministic computation (rubric v{rubric.get('version')})" if asa_map else "CDA self-reported ASA_Score (no subscores, fallback)"),
+        ("ASA Ranking Mode", f"ASA_Adj deterministic computation (rubric v{rubric.get('version')})" if asa_map else "designer self-reported ASA_Score (no subscores, fallback)"),
         ("DB_Formula Source", db_source or "not verified"),
         ("Total Materials", f"{len(valid)}" + (f" (deduplicated by Material_Name: {len(valid)+removed} original rows, {removed} duplicates removed)" if dedup else "")),
         ("NADH Activity YES", f"{nadh_yes} ({nadh_yes/len(valid)*100:.0f}%)" if valid else "0"),

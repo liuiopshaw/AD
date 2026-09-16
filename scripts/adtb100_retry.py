@@ -52,11 +52,11 @@ def main():
                   "Class": payload["results"][i]["Class"],
                   "Mechanism": payload["results"][i]["Mechanism"]} for i in idxs]
         if is_rubric:
-            raw = B.call_agent("ca", B.r_solo_prompt(batch, rubric_text) + REINFORCE,
+            raw = B.call_agent("ranker", B.r_solo_prompt(batch, rubric_text) + REINFORCE,
                                max_tokens=8192)
             dims = B.RUBRIC_DIM_PATTERNS
         else:
-            raw = B.call_agent("ca", B.solo_prompt(batch) + REINFORCE, max_tokens=8192)
+            raw = B.call_agent("ranker", B.solo_prompt(batch) + REINFORCE, max_tokens=8192)
             dims = B.DIM_PATTERNS
         B.save_raw(f"adtb100_solo_retry{chunk_i//20+1}_raw_{retry_ts}.txt", raw)
         parsed = B.parse_scores(raw, len(idxs), dims)

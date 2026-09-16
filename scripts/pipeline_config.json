@@ -1,75 +1,72 @@
 {
-  "version": "0.2",
+  "version": "0.3",
   "schema": "v1",
-  "notes": "Phase 4: three-modality batch matrix (nano / small_molecule / biologic), 100 candidates total. Batches with a verbatim 'focus' string use it as-is; batches with 'description' instead get the flagship/prohibition constraint sentence generated from allow_cu_flagship. Optional 'modality_focus' per batch: 'nano_mixed' | 'small_molecule' | 'biologic' | a single schema_v2.MODALITIES value | null — drives the v2 CDA format block (schema_v2.cda_format_block). Pre-Phase-4 nano-only 4-batch config preserved in pipeline_config.nano_only.json (regression baseline). | 2026-07-25: expert chunks 2->4 — v2 records are longer (~200 chars), 60-line chunks hit the prompt[:10000] truncation and long inputs push report-trained adapters into prose mode.",
-  "toa": {
+  "notes": "2026-09-16: subjective steering removed. No Cu flagship batch, no modality quotas, no Disease_Intervention/Mechanism mandates, no element preferences. 4 batches x 25 free-composition candidates; the model distributes modalities and mechanisms at its own discretion. Verifiability requirements kept (real names, no invented SMILES/UniProt). Pre-Phase-4 steered nano-only config (pipeline_config.nano_only.json) deleted — its purpose was reproducing the Cu-steered baseline, which no longer exists.",
+  "toa_goal": "Predict 100 drug candidates for Alzheimer's disease therapy, spanning nano formulations, biologics, small molecules, and other innovative approaches — freely distributed across all types with NO element or modality quotas. Classify every candidate along four dimensions: drug type, target category, action mode, and AD therapeutic mechanism. Assess delivery efficiency, multi-target synergy, effect durability, manufacturability, and biosafety; analyze mechanisms; produce a ranked summary report.",
+  "coordinator": {
     "max_tokens": 2048,
     "temperature": 0.1
   },
-  "cda": {
-    "temperature": 0.7,
+  "designer": {
+    "temperature": 0.3,
     "batches": [
       {
         "batch_id": 1,
-        "count": 20,
-        "max_tokens": 2560,
-        "allow_cu_flagship": true,
-        "modality_focus": "nano_mixed",
-        "focus": "Cu-based materials (any structural family). Assign EVERY material in this batch Disease_Intervention=direct_antibacterial AND Mechanism=microbiome_remodeling — the flagship selective-antibacterial, microbiome-remodeling Cu candidates (Cu2+/Cu+ redox cycling, pathogen-selective killing, beneficial-flora sparing, SCFA restoration)"
+        "count": 25,
+        "max_tokens": 3072,
+        "modality_focus": "free",
+        "focus": "diverse AD drug candidates across all drug types (nano_formulation, small_molecule, biologic, other) with no modality or element quota. Each candidate must be a DISTINCT base therapeutic (no size/core/form variants of one parent). Names must be real and verifiable where applicable; SMILES/UniProt only when completely certain, else NA"
       },
       {
         "batch_id": 2,
         "count": 25,
         "max_tokens": 3072,
-        "allow_cu_flagship": false,
-        "modality_focus": "nano_mixed",
-        "focus": "mixed materials across varied elements (Fe, Co, Mn, Ni, Zn, Mo, and a FEW Cu). Cu-based materials are welcome but must NOT dominate this batch. Do NOT assign direct_antibacterial together with microbiome_remodeling in this batch"
+        "modality_focus": "free",
+        "focus": "more diverse AD drug candidates with no modality or element quota — vary compositions, targets, and mechanisms; do not duplicate batch 1"
       },
       {
         "batch_id": 3,
-        "count": 35,
+        "count": 25,
         "max_tokens": 3072,
-        "allow_cu_flagship": false,
-        "modality_focus": "small_molecule",
-        "description": "small-molecule drug candidates relevant to Alzheimer's disease — prioritize marketed/clinical/literature-reported AD-related small molecules (e.g., donepezil, memantine, natural products). The compound NAME MUST be a real, verifiable compound and each candidate MUST give the UniProt accession of its primary protein target. SMILES: provide the canonical SMILES ONLY if you are completely certain of it; otherwise write NA — NEVER invent, guess, or repeat SMILES strings (a database lookup resolves SMILES from the compound name later). Mechanism assignments may include amyloid_tau_direct, neuroinflammation, microbiome_remodeling, etc."
+        "modality_focus": "free",
+        "focus": "more diverse AD drug candidates with no modality or element quota — span target categories and action modes not yet covered; do not duplicate previous batches"
       },
       {
         "batch_id": 4,
-        "count": 20,
-        "max_tokens": 3584,
-        "allow_cu_flagship": false,
-        "modality_focus": "biologic",
-        "description": "biologic candidates relevant to Alzheimer's disease as reported in literature or clinical development — monoclonal antibodies, peptides, proteins (e.g., aducanumab, lecanemab, and other investigational biologics). Each candidate MUST have the UniProt accession of its primary protein target (Target_UniProt)"
+        "count": 25,
+        "max_tokens": 3072,
+        "modality_focus": "free",
+        "focus": "final set of AD drug candidates with no modality or element quota — cover the remaining diversity of the AD drug space; do not duplicate previous batches"
       }
     ]
   },
-  "apa": {
+  "manufacturing": {
     "chunks": 4,
     "max_tokens": 6144,
-    "temperature": 0.2
+    "temperature": 0.1
   },
-  "epa": {
+  "delivery": {
     "chunks": 4,
     "max_tokens": 6144,
-    "temperature": 0.2
+    "temperature": 0.1
   },
-  "bsa": {
+  "safety": {
     "chunks": 4,
     "max_tokens": 6144,
-    "temperature": 0.2
+    "temperature": 0.1
   },
-  "mma": {
+  "mechanism": {
     "chunks": 4,
     "max_tokens": 6144,
-    "temperature": 0.3
+    "temperature": 0.1
   },
-  "ca": {
+  "ranker": {
     "max_tokens": 6144,
-    "temperature": 0.2,
+    "temperature": 0.1,
     "input_truncation": {
-      "cda": 8000,
-      "epa": 4000,
-      "mma": 4000
+      "designer": 8000,
+      "delivery": 4000,
+      "mechanism": 4000
     }
   }
 }

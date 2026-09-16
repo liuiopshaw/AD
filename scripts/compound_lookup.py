@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generalized compound lookup for CDA-designed candidates (Phase 2 Tier 1).
+Generalized compound lookup for designer-designed candidates (Phase 2 Tier 1).
 
 Generalized lookup script — routes by Modality to the corresponding database
 to verify the key identifiers of each modality in the agent output (does not
@@ -15,7 +15,7 @@ modify the raw agent output; only produces independent verification artifacts):
   corresponding known compound
 - biologic → UniProt get_entry(Target_UniProt) → validate that the accession exists
 
-Input: task100_cda_<TS>_part*.txt in the run directory (parsed with
+Input: task100_designer_<TS>_part*.txt in the run directory (parsed with
 schema_v2.normalize_record, compatible with legacy 9/10/11-column records
 and 13-column v2 records).
 Output (written to the same run directory):
@@ -55,7 +55,7 @@ def _is_filled(value) -> bool:
 # ---------------------------------------------------------------------------
 
 def load_records(input_dir: Path, ts: str):
-    """Read task100_cda_<ts>_part*.txt; v2 is parsed with normalize_record,
+    """Read task100_designer_<ts>_part*.txt; v2 is parsed with normalize_record,
     v3 (AD100) with parse_record_v3, mapping Drug_Type to the routing Modality."""
     from schema_v2 import parse_record_v3
     V3_TO_MODALITY = {"nano_formulation": "nanoparticle",
@@ -63,9 +63,9 @@ def load_records(input_dir: Path, ts: str):
                       "biologic": "biologic",
                       "composite": "nanoparticle",  # binary composite: verify as the nano phase first (formula + coating)
                       "other": "other"}
-    parts = sorted(input_dir.glob(f"task100_cda_{ts}_part*.txt"))
+    parts = sorted(input_dir.glob(f"task100_designer_{ts}_part*.txt"))
     if not parts:
-        raise SystemExit(f"No task100_cda_{ts}_part*.txt found in {input_dir}")
+        raise SystemExit(f"No task100_designer_{ts}_part*.txt found in {input_dir}")
     records = []
     for p in parts:
         for line in io.open(p, encoding="utf-8"):
@@ -237,10 +237,10 @@ def lookup_biologic(rec, raw_lines, sleep_s=1.0):
 # ---------------------------------------------------------------------------
 
 def main():
-    ap = argparse.ArgumentParser(description="Modality-routed compound lookup for CDA outputs")
+    ap = argparse.ArgumentParser(description="Modality-routed compound lookup for designer outputs")
     ap.add_argument("ts", nargs="?", default=None, help="run timestamp")
     ap.add_argument("--input-dir", default=None,
-                    help="historical run directory containing task100_cda_*_part*.txt")
+                    help="historical run directory containing task100_designer_*_part*.txt")
     args = ap.parse_args()
 
     # ---- Locate the input run directory and timestamp ----
@@ -248,17 +248,17 @@ def main():
         input_dir = Path(args.input_dir)
         if not input_dir.is_dir():
             raise SystemExit(f"--input-dir not found: {input_dir}")
-        cands = list(input_dir.glob("task100_cda_*_part1.txt"))
+        cands = list(input_dir.glob("task100_designer_*_part1.txt"))
         if not cands:
-            raise SystemExit(f"No task100_cda_*_part1.txt in {input_dir}")
-        ts = re.search(r"task100_cda_(\d+)_part1", cands[0].name).group(1)
+            raise SystemExit(f"No task100_designer_*_part1.txt in {input_dir}")
+        ts = re.search(r"task100_designer_(\d+)_part1", cands[0].name).group(1)
     else:
         ts = args.ts
         if ts is None:
-            candidates = (list(OUTPUT_ROOT.glob("task100_cda_*_part1.txt"))
-                          + list(OUTPUT_ROOT.glob("run_*/task100_cda_*_part1.txt")))
+            candidates = (list(OUTPUT_ROOT.glob("task100_designer_*_part1.txt"))
+                          + list(OUTPUT_ROOT.glob("run_*/task100_designer_*_part1.txt")))
             latest = max(candidates, key=lambda p: p.stat().st_mtime)
-            ts = re.search(r"task100_cda_(\d+)_part1", latest.name).group(1)
+            ts = re.search(r"task100_designer_(\d+)_part1", latest.name).group(1)
         input_dir = find_run_dir(ts)
 
     src_files, records = load_records(input_dir, ts)

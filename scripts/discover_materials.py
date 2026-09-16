@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Agent-driven discovery pipeline. TOA orchestrates everything.
+Agent-driven discovery pipeline. coordinator orchestrates everything.
 ALL agent outputs preserved RAW without modification.
 """
 
@@ -116,10 +116,10 @@ save_raw(f"step0_tool_data_{TIMESTAMP}.txt", api_data)
 print(f"  Total tool data: {len(api_data)} chars\n")
 
 # ============================================================
-# Step 1: TOA analyzes intent and decides task plan
+# Step 1: coordinator analyzes intent and decides task plan
 # ============================================================
 print("=" * 60)
-print("STEP 1: TOA — Analyze user intent, decide task plan")
+print("STEP 1: coordinator — Analyze user intent, decide task plan")
 print("=" * 60)
 
 user_requirement = """
@@ -131,11 +131,11 @@ NADH oxidase-like enzyme activity. Categorize by size:
 - nanoparticle (>3nm)
 
 Available data from: PubChem, PubMed, Materials Project, DrugBank APIs.
-Available agents: EA (extraction), APA (antibacterial), EPA (enzyme),
-BSA (biosafety), MMA (mechanism), CA (comparison).
+Available agents: extractor (extraction), manufacturing (antibacterial), delivery (enzyme),
+safety (biosafety), mechanism (mechanism), ranker (comparison).
 """
 
-toa_prompt = f"""You are the Task Orchestration Agent (TOA). Analyze the user's requirement and decide which agents to activate, in what order.
+toa_prompt = f"""You are the Task Orchestration Agent (coordinator). Analyze the user's requirement and decide which agents to activate, in what order.
 
 User requirement:
 {user_requirement}
@@ -147,22 +147,22 @@ API data summary (first 3000 chars):
 
 Your job: Output a JSON task plan with:
 1. intent: brief analysis of what the user wants
-2. agents_needed: list of agent names (ea, apa, epa, bsa, mma, ca) to activate, in execution order
+2. agents_needed: list of agent names (extractor, manufacturing, delivery, safety, mechanism, ranker) to activate, in execution order
 3. task_sequence: for each agent, describe what it should do
 4. data_flow: how data moves between agents
 
 Output ONLY valid JSON."""
 
-toa_raw = call_agent("toa", toa_prompt, max_tokens=2048, temperature=0.1)
-save_raw(f"toa_plan_{TIMESTAMP}.txt", toa_raw)
-print(f"  TOA plan saved ({len(toa_raw)} chars)\n")
-time.sleep(15)  # Let server fully unload TOA model before next agent
+toa_raw = call_agent("coordinator", toa_prompt, max_tokens=2048, temperature=0.1)
+save_raw(f"coordinator_plan_{TIMESTAMP}.txt", toa_raw)
+print(f"  coordinator plan saved ({len(toa_raw)} chars)\n")
+time.sleep(15)  # Let server fully unload coordinator model before next agent
 
 # ============================================================
-# Step 1.5: CDA — Design nanomaterial candidates from API data
+# Step 1.5: designer — Design nanomaterial candidates from API data
 # ============================================================
 print("=" * 60)
-print("STEP 1.5: CDA — Design nanomaterial candidates from API data")
+print("STEP 1.5: designer — Design nanomaterial candidates from API data")
 print("=" * 60)
 
 cda_prompt = f"""You are a creative nanomaterial design agent. Use the API data below to DESIGN novel nanomaterial candidates for NADH oxidase-like enzyme activity.
@@ -186,21 +186,21 @@ Material_Name | Size_nm | Core_Elements | Size_Category | NADH_Prediction | Desi
 Design at least 100 candidates."""
 
 try:
-    cda_raw = call_agent("cda", cda_prompt, max_tokens=10240, temperature=0.7)
-    save_raw(f"cda_designs_{TIMESTAMP}.txt", cda_raw)
-    print(f"  CDA done ({len(cda_raw)} chars)")
+    cda_raw = call_agent("designer", cda_prompt, max_tokens=10240, temperature=0.7)
+    save_raw(f"designer_designs_{TIMESTAMP}.txt", cda_raw)
+    print(f"  designer done ({len(cda_raw)} chars)")
     time.sleep(15)
 except Exception as e:
     cda_raw = f"ERROR: {e}"
-    save_raw(f"cda_designs_{TIMESTAMP}.txt", cda_raw)
-    print(f"  CDA FAILED: {e}")
+    save_raw(f"designer_designs_{TIMESTAMP}.txt", cda_raw)
+    print(f"  designer FAILED: {e}")
     cda_raw = ""
 
 # ============================================================
-# Step 2: EA extracts structured material list from API data
+# Step 2: extractor extracts structured material list from API data
 # ============================================================
 print("=" * 60)
-print("STEP 2: EA — Extract material list from API data (as TOA instructed)")
+print("STEP 2: extractor — Extract material list from API data (as coordinator instructed)")
 print("=" * 60)
 
 ea_prompt = f"""You are a nanomaterial knowledge extraction agent. Extract ALL nanomaterials mentioned in the following API data.
@@ -243,49 +243,49 @@ API Data:
 Output ONLY material lines. NO intro. NO summary. ONE material per line. Aim for 50+ materials."""
 
 try:
-    ea_raw = call_agent("ea", ea_prompt, max_tokens=10240, temperature=0.2)
-    save_raw(f"ea_materials_{TIMESTAMP}.txt", ea_raw)
-    print(f"  EA done ({len(ea_raw)} chars)")
+    ea_raw = call_agent("extractor", ea_prompt, max_tokens=10240, temperature=0.2)
+    save_raw(f"extractor_materials_{TIMESTAMP}.txt", ea_raw)
+    print(f"  extractor done ({len(ea_raw)} chars)")
     time.sleep(15)  # Let server fully unload before next agent
 except Exception as e:
     ea_raw = f"ERROR: {e}"
-    save_raw(f"ea_materials_{TIMESTAMP}.txt", ea_raw)
-    print(f"  EA FAILED: {e}")
+    save_raw(f"extractor_materials_{TIMESTAMP}.txt", ea_raw)
+    print(f"  extractor FAILED: {e}")
     ea_raw = ""
 
 # ============================================================
-# Step 3: EPA classifies NADH activity
+# Step 3: delivery classifies NADH activity
 # ============================================================
 print("=" * 60)
-print("STEP 3: EPA — NADH oxidase activity classification")
+print("STEP 3: delivery — NADH oxidase activity classification")
 print("=" * 60)
 
 epa_prompt = f"""Classify each material for NADH oxidase-like activity (YES/NO with reasoning).
 
 NADH indicators: Cu/Fe/Mn/Co/Ni/Pt/Au core, size <10nm, organic coating, mixed valence, band gap 0.1-3.0eV.
 
-Materials (from EA):
+Materials (from extractor):
 {ea_raw}
 
 Output ONE LINE per material:
 Name | Size | Category | NADH_YES/NO | Reasoning"""
 
 try:
-    epa_raw = call_agent("epa", epa_prompt, max_tokens=10240, temperature=0.2)
-    save_raw(f"epa_nadh_{TIMESTAMP}.txt", epa_raw)
-    print(f"  EPA done ({len(epa_raw)} chars)")
+    epa_raw = call_agent("delivery", epa_prompt, max_tokens=10240, temperature=0.2)
+    save_raw(f"delivery_nadh_{TIMESTAMP}.txt", epa_raw)
+    print(f"  delivery done ({len(epa_raw)} chars)")
     time.sleep(15)
 except Exception as e:
     epa_raw = f"ERROR: {e}"
-    save_raw(f"epa_nadh_{TIMESTAMP}.txt", epa_raw)
-    print(f"  EPA FAILED: {e}")
+    save_raw(f"delivery_nadh_{TIMESTAMP}.txt", epa_raw)
+    print(f"  delivery FAILED: {e}")
     epa_raw = ""
 
 # ============================================================
-# Step 4: CA summarizes
+# Step 4: ranker summarizes
 # ============================================================
 print("=" * 60)
-print("STEP 4: CA — Summary report")
+print("STEP 4: ranker — Summary report")
 print("=" * 60)
 
 ca_prompt = f"""Generate summary report from the NADH classification below.
@@ -300,21 +300,21 @@ Classification data:
 {epa_raw}"""
 
 try:
-    ca_raw = call_agent("ca", ca_prompt, max_tokens=4096, temperature=0.2)
-    save_raw(f"ca_summary_{TIMESTAMP}.txt", ca_raw)
-    print(f"  CA done ({len(ca_raw)} chars)")
+    ca_raw = call_agent("ranker", ca_prompt, max_tokens=4096, temperature=0.2)
+    save_raw(f"ranker_summary_{TIMESTAMP}.txt", ca_raw)
+    print(f"  ranker done ({len(ca_raw)} chars)")
 except Exception as e:
     ca_raw = f"ERROR: {e}"
-    save_raw(f"ca_summary_{TIMESTAMP}.txt", ca_raw)
-    print(f"  CA FAILED: {e}")
+    save_raw(f"ranker_summary_{TIMESTAMP}.txt", ca_raw)
+    print(f"  ranker FAILED: {e}")
 
 # ============================================================
 print(f"\n{'='*60}")
 print("COMPLETE")
 print(f"Outputs: {OUTPUT_DIR}/")
 print(f"  step0_tool_data_{TIMESTAMP}.txt  — Raw API data (PubChem/PubMed/MP/DrugBank)")
-print(f"  toa_plan_{TIMESTAMP}.txt        — TOA task plan")
-print(f"  ea_materials_{TIMESTAMP}.txt    — EA extracted material list")
-print(f"  epa_nadh_{TIMESTAMP}.txt        — EPA NADH classification")
-print(f"  ca_summary_{TIMESTAMP}.txt      — CA summary report")
+print(f"  coordinator_plan_{TIMESTAMP}.txt        — coordinator task plan")
+print(f"  extractor_materials_{TIMESTAMP}.txt    — extractor extracted material list")
+print(f"  delivery_nadh_{TIMESTAMP}.txt        — delivery NADH classification")
+print(f"  ranker_summary_{TIMESTAMP}.txt      — ranker summary report")
 print(f"\nAll agent outputs are RAW and UNMODIFIED.")

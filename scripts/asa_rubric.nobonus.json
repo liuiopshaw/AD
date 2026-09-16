@@ -3,27 +3,27 @@
   "axes": {
     "delivery_efficiency": {
       "weight": 0.3,
-      "source_agent": "epa",
+      "source_agent": "delivery",
       "subscores": {}
     },
     "multi_target_synergy": {
       "weight": 0.15,
-      "source_agent": "mma",
+      "source_agent": "mechanism",
       "subscores": {}
     },
     "durability": {
       "weight": 0.1,
-      "source_agent": "mma",
+      "source_agent": "mechanism",
       "subscores": {}
     },
     "manufacturability": {
       "weight": 0.25,
-      "source_agent": "apa",
+      "source_agent": "manufacturing",
       "subscores": {}
     },
     "biosafety": {
       "weight": 0.2,
-      "source_agent": "bsa",
+      "source_agent": "safety",
       "subscores": {}
     }
   },
@@ -43,5 +43,5 @@
     "manufacturability": "生产质控与精准调控能力(25%)",
     "biosafety": "生物安全性(20%)"
   },
-  "standard_source": "E:/Cu-agent/评分标准/标准.md (调整后的评估框架,突出纳米制剂优势)"
+  "standard_source": "E:/Cu-agent/评分标准/标准.md (中性六维评估框架,无主观加分)"
 }

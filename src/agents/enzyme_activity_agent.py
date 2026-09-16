@@ -10,7 +10,7 @@ class EnzymeActivityAgent(BaseAgent):
     """Enzyme-like activity prediction agent.
 
     Focuses on CAT-like, SOD-like, and NADH oxidase-like activities.
-    NADH oxidase-like activity receives bonus scoring for AD therapeutic relevance.
+    Scoring follows the shared rubric anchors; no subjective bonus points.
     """
 
     def __init__(self, llm):

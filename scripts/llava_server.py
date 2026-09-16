@@ -30,14 +30,14 @@ processor = None
 current_agent = None
 
 AGENTS = {
-    "ea": "Knowledge Extraction",
-    "apa": "Antibacterial Prediction",
-    "epa": "Enzyme Activity Prediction",
-    "bsa": "Biosafety Assessment",
-    "mma": "Mechanism Mining",
-    "toa": "Task Orchestration",
-    "ca": "Comparison & Ranking",
-    "cda": "Creative Designing — Generates novel nanomaterial candidates from API data",
+    "extractor": "Knowledge Extraction",
+    "manufacturing": "Antibacterial Prediction — production QC & manufacturability scoring",
+    "delivery": "Enzyme Activity Prediction — delivery efficiency scoring",
+    "safety": "Biosafety Assessment",
+    "mechanism": "Mechanism Mining — synergy + durability scoring",
+    "coordinator": "Task Orchestration",
+    "ranker": "Comparison & Ranking",
+    "designer": "Creative Designing — Generates novel nanomaterial candidates from API data",
     "base": "Raw Qwen3-VL-8B base model (NO LoRA) — control experiments",
 }
 
@@ -52,7 +52,7 @@ class ChatRequest(BaseModel):
     messages: List[ChatMessage]
     max_tokens: int = 10240
     temperature: float = 0.3
-    agent: str = "ea"
+    agent: str = "extractor"
 
 
 def cast_adapter_to_bf16():
@@ -194,7 +194,7 @@ async def lifespan(app: FastAPI):
 
     # Create PEFT wrapper with first adapter
     adapters = sorted([d for d in os.listdir(LORA_DIR) if os.path.isdir(os.path.join(LORA_DIR, d))])
-    first_adapter = adapters[0] if adapters else "ea"
+    first_adapter = adapters[0] if adapters else "extractor"
     first_path = os.path.join(LORA_DIR, first_adapter)
     peft_model = PeftModel.from_pretrained(base, first_path, adapter_name=first_adapter)
     current_agent = first_adapter  # Track it — otherwise it stays resident forever
@@ -227,7 +227,7 @@ async def list_agents():
 
 @app.post("/v1/chat/completions")
 async def chat_completions(req: ChatRequest):
-    agent = req.agent or "ea"
+    agent = req.agent or "extractor"
     if agent != "base" and not os.path.isdir(os.path.join(LORA_DIR, agent)):
         return JSONResponse(status_code=400, content={"error": f"Unknown agent: '{agent}'"})
     req.agent = agent

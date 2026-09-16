@@ -1,10 +1,10 @@
 {
   "version": "0.1",
   "axes": {
-    "antibacterial": {"weight": 0.30, "source_agent": "apa", "subscores": {"potency": 0.40, "selectivity": 0.35, "spectrum": 0.15, "resistance": 0.10}},
-    "enzyme_activity": {"weight": 0.25, "source_agent": "epa", "subscores": {"activity_strength": 0.65, "substrate_affinity": 0.25, "condition_window": 0.10}},
-    "biosafety": {"weight": 0.25, "source_agent": "bsa", "subscores": {"cytotoxicity": 0.30, "organ": 0.25, "in_vivo": 0.20, "env": 0.15, "stability": 0.10}},
-    "microbiome_remodeling": {"weight": 0.20, "source_agent": "mma", "subscores": {}}
+    "antibacterial": {"weight": 0.30, "source_agent": "manufacturing", "subscores": {"potency": 0.40, "selectivity": 0.35, "spectrum": 0.15, "resistance": 0.10}},
+    "enzyme_activity": {"weight": 0.25, "source_agent": "delivery", "subscores": {"activity_strength": 0.65, "substrate_affinity": 0.25, "condition_window": 0.10}},
+    "biosafety": {"weight": 0.25, "source_agent": "safety", "subscores": {"cytotoxicity": 0.30, "organ": 0.25, "in_vivo": 0.20, "env": 0.15, "stability": 0.10}},
+    "microbiome_remodeling": {"weight": 0.20, "source_agent": "mechanism", "subscores": {}}
   },
   "modality_adjustments": {},
   "consistency": {"method": "cj", "enabled": true, "clamp": [0, 1]}

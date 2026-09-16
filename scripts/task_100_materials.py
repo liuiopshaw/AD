@@ -8,11 +8,11 @@ Batch quotas and per-step parameters are externalized to pipeline_config.json
 (--config to override). Phase 4: the default config is the three-modality
 (nano / small_molecule / biologic) batch matrix; the pre-Phase-4 nano-only
 config is preserved as pipeline_config.nano_only.json for regression
-(batch-structure comparison only — its CDA prompt format block is now the
+(batch-structure comparison only — its designer prompt format block is now the
 v2 contract from schema_v2.cda_format_block, not the legacy v1 text).
 
-Pipeline order: TOA -> CDA -> APA -> EPA -> BSA -> MMA -> CA.
-APA/EPA/BSA/MMA append a JSON subscore tail per material line (raw output
+Pipeline order: coordinator -> designer -> manufacturing -> delivery -> safety -> mechanism -> ranker.
+manufacturing/delivery/safety/mechanism append a JSON subscore tail per material line (raw output
 preserved verbatim); scripts/extract_subscores.py mechanically collects them
 into subscores_<TS>.json for the deterministic ASA engine (asa_scoring.py).
 """
@@ -33,26 +33,18 @@ OUTPUT = run_dir(TS)  # Per-run folder: outputs/run_<TS>/ — every test run get
 
 DEFAULT_CONFIG = Path(__file__).parent / "pipeline_config.json"
 
-FLAGSHIP_SENTENCE = "Assign EVERY material in this batch Disease_Intervention=direct_antibacterial AND Mechanism=microbiome_remodeling"
-PROHIBITION_SENTENCE = "Do NOT assign direct_antibacterial together with microbiome_remodeling in this batch"
-
-
 def load_config(path: Path) -> dict:
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
 def batch_focus(batch: dict) -> str:
-    """Prompt focus text for a CDA batch.
-
-    'focus' (verbatim) wins; otherwise compose from 'description' plus the
-    constraint sentence implied by allow_cu_flagship.
-    """
+    """Prompt focus text for a designer batch: 'focus' (verbatim) wins, otherwise
+    'description'. No flagship/prohibition constraint sentences — subjective
+    steering was removed (2026-09)."""
     if batch.get("focus"):
         return batch["focus"]
-    desc = batch["description"].rstrip()
-    sentence = FLAGSHIP_SENTENCE if batch.get("allow_cu_flagship") else PROHIBITION_SENTENCE
-    return f"{desc}{'' if desc.endswith('.') else '.'} {sentence}"
+    return batch["description"].rstrip()
 
 
 NANO_ONLY_LINE = ("This batch uses NANO modalities only: "
@@ -60,15 +52,18 @@ NANO_ONLY_LINE = ("This batch uses NANO modalities only: "
 
 
 def cda_format_block_for(batch: dict) -> str:
-    """v2 CDA format block for a batch, driven by its optional
-    'modality_focus' ("nano_mixed" | a schema_v2.MODALITIES value | null;
+    """v2 designer format block for a batch, driven by its optional
+    'modality_focus' ("free" | "nano_mixed" | a schema_v2.MODALITIES value;
     missing = legacy nano-only config -> "nano_mixed").
 
+    free: mixed-modality block with NO modality constraint (model chooses).
     nano_mixed: mixed-modality block plus an explicit nano-only constraint
     line. A concrete modality: single-modality block, which constrains the
     batch on its own.
     """
     mf = batch.get("modality_focus") or "nano_mixed"
+    if mf == "free":
+        return schema_v2.cda_format_block(None)
     if mf == "nano_mixed":
         return schema_v2.cda_format_block(None) + "\n" + NANO_ONLY_LINE
     return schema_v2.cda_format_block(mf)
@@ -146,10 +141,10 @@ def build_expert_prompt(agent: str, part_text: str, is_v3: bool) -> str:
     """Single source of the four expert prompts (main flow + --experts-only).
 
     Subscore JSON tails feed the deterministic ASA engine (asa_rubric v0.3:
-    epa->delivery_efficiency, apa->accessibility, bsa->biosafety,
-    mma->multi_target_synergy+durability). is_v3 drops NADH validation from
-    the EPA prompt (NADH removed from the v3 contract, 2026-07-26)."""
-    if agent == "apa":
+    delivery->delivery_efficiency, manufacturing->accessibility, safety->biosafety,
+    mechanism->multi_target_synergy+durability). is_v3 drops NADH validation from
+    the delivery prompt (NADH removed from the v3 contract, 2026-07-26)."""
+    if agent == "manufacturing":
         return f"""Assess MANUFACTURABILITY & PRECISE CONTROL (manufacturability and precise-control capability) of each candidate below: is its preparation controllable, scalable, and precisely tunable in composition and dose?
 
 Scoring anchors (from the project scoring standard):
@@ -165,7 +160,7 @@ Candidates:
 
 Output: ONE line per candidate with the original fields UNCHANGED, then append a semicolon and a JSON object with the manufacturability score, e.g.:
 ...original line...; {{"manufacturability": 9}}"""
-    if agent == "epa":
+    if agent == "delivery":
         if is_v3:
             return f"""Score TARGET-TISSUE DELIVERY EFFICIENCY (target-tissue delivery efficiency, 1-10) for each candidate below: how efficiently the candidate reaches its intended target tissue — for gut-targeted candidates consider stability in GI tract, mucosal retention, size/ligand effects; for CNS candidates consider BBB penetration, bioavailability (10 = most efficient delivery).
 
@@ -185,7 +180,7 @@ Candidates:
 Output in the same pipe-separated format: first append a semicolon and a JSON object with the delivery score (REQUIRED on every line), then optionally a semicolon and a short validation note, e.g.:
 ...original line...; {{"delivery_efficiency": 8}}; validation note
 The JSON object is MANDATORY — every line MUST contain exactly one JSON object."""
-    if agent == "bsa":
+    if agent == "safety":
         return f"""Assess the overall BIOSAFETY (biosafety) of each candidate below: cytotoxicity, organ damage (liver/kidney/spleen/brain), in-vivo reactions (hemolysis, inflammation, immunogenicity), environmental risk, and structural stability (ion leaching for nano candidates). Combine into ONE biosafety score 1-10 (10 = safest).
 
 Candidates:
@@ -193,7 +188,7 @@ Candidates:
 
 Output: ONE line per candidate with the original fields UNCHANGED, then append a semicolon and a JSON object with the biosafety score, e.g.:
 ...original line...; {{"biosafety": 8}}"""
-    if agent == "mma":
+    if agent == "mechanism":
         return f"""For the following candidates, explain:
 1. The molecular mechanism behind the assigned AD_Mechanism and how it connects to Alzheimer's therapy
 2. Score MULTI-TARGET SYNERGY POTENTIAL (multi-target synergy potential, 1-10): capacity of the candidate to engage multiple targets/pathways synergistically (10 = strong multi-target synergy)
@@ -310,12 +305,12 @@ if __name__ == "__main__":
                         help="run the whole pipeline with the UNFINE-TUNED base model "
                              "(agent=base channel, all LoRA adapters disabled) — control experiment")
     parser.add_argument("--redo-batch", nargs=2, metavar=("TS", "BATCH_ID"), default=None,
-                        help="redo ONE CDA batch of run TS (saved as task100_cda_<TS>_redo_part<N>.txt), "
+                        help="redo ONE designer batch of run TS (saved as task100_designer_<TS>_redo_part<N>.txt), "
                              "then re-run all experts on the rebuilt list. Ranking prefers redo over the original batch.")
     parser.add_argument("--note", default="",
                         help="extra instruction appended to the redo batch focus (e.g. stronger constraints)")
     parser.add_argument("--experts-only", metavar="TS", default=None,
-                        help="re-run ONLY APA/EPA/BSA/MMA against the CDA output of run TS "
+                        help="re-run ONLY manufacturing/delivery/safety/mechanism against the designer output of run TS "
                              "(files saved as task100_<agent>_<TS>_redo_part*.txt in that run dir; "
                              "extract_subscores lets redo scores override)")
     args = parser.parse_args()
@@ -329,35 +324,35 @@ if __name__ == "__main__":
         TS = int(args.redo_batch[0])
         batch_id = int(args.redo_batch[1])
         OUTPUT = find_run_dir(str(TS))
-        batch_cfg = next(b for b in CFG["cda"]["batches"] if b["batch_id"] == batch_id)
-        total_batches = len(CFG["cda"]["batches"])
+        batch_cfg = next(b for b in CFG["designer"]["batches"] if b["batch_id"] == batch_id)
+        total_batches = len(CFG["designer"]["batches"])
         is_v3 = CFG.get("schema") == "v3"
         server_proc = start_server()
         try:
             fmt_block = schema_v2.cda_format_block_v3() if is_v3 else cda_format_block_for(batch_cfg)
-            chunk = call("cda", f"""Design {batch_cfg["count"]} candidates that have been REPORTED in peer-reviewed literature and achieve HIGH comprehensive ASA scores (combining antibacterial, enzyme-like activity, and biosafety).
+            chunk = call("designer", f"""Design {batch_cfg["count"]} candidates that have been REPORTED in peer-reviewed literature and achieve HIGH comprehensive ASA scores (combining antibacterial, enzyme-like activity, and biosafety).
 
 This is batch {batch_id} of {total_batches} — {batch_focus(batch_cfg)}{args.note}
 
-{fmt_block}""", max_tokens=batch_cfg["max_tokens"], temp=CFG["cda"]["temperature"])
-            save(f"task100_cda_{TS}_redo_part{batch_id}.txt", chunk)
-            print(f"  CDA batch {batch_id} redo done ({len(chunk)} chars)")
+{fmt_block}""", max_tokens=batch_cfg["max_tokens"], temp=CFG["designer"]["temperature"])
+            save(f"task100_designer_{TS}_redo_part{batch_id}.txt", chunk)
+            print(f"  designer batch {batch_id} redo done ({len(chunk)} chars)")
             time.sleep(3)
 
             # Rebuild the candidate list: every batch EXCEPT the old one, plus the redo
             mat_lines = []
-            for f in sorted(OUTPUT.glob(f"task100_cda_{TS}_part*.txt")):
-                if f.name == f"task100_cda_{TS}_part{batch_id}.txt":
+            for f in sorted(OUTPUT.glob(f"task100_designer_{TS}_part*.txt")):
+                if f.name == f"task100_designer_{TS}_part{batch_id}.txt":
                     continue
                 mat_lines += [l for l in f.read_text(encoding="utf-8").split("\n") if l.strip() and "|" in l]
             mat_lines += [l for l in chunk.split("\n") if l.strip() and "|" in l]
 
             redo_idx = 1
-            while list(OUTPUT.glob(f"task100_apa_{TS}_redo{'' if redo_idx == 1 else redo_idx}_part1.txt")):
+            while list(OUTPUT.glob(f"task100_manufacturing_{TS}_redo{'' if redo_idx == 1 else redo_idx}_part1.txt")):
                 redo_idx += 1
             redo_tag = "" if redo_idx == 1 else str(redo_idx)
             print(f"  rebuilt list: {len(mat_lines)} lines; experts redo (suffix redo{redo_tag})")
-            for agent in ("apa", "epa", "bsa", "mma"):
+            for agent in ("manufacturing", "delivery", "safety", "mechanism"):
                 for n, part in enumerate(split_chunks(mat_lines, CFG[agent]["chunks"]), start=1):
                     if not part:
                         continue
@@ -376,17 +371,17 @@ This is batch {batch_id} of {total_batches} — {batch_focus(batch_cfg)}{args.no
         from output_utils import find_run_dir
         TS = int(args.experts_only)
         OUTPUT = find_run_dir(args.experts_only)
-        cda_files = sorted(OUTPUT.glob(f"task100_cda_{TS}_part*.txt"))
+        cda_files = sorted(OUTPUT.glob(f"task100_designer_{TS}_part*.txt"))
         if not cda_files:
-            raise SystemExit(f"No CDA parts found for run {TS} in {OUTPUT}")
+            raise SystemExit(f"No designer parts found for run {TS} in {OUTPUT}")
         mat_lines = [l for f in cda_files for l in f.read_text(encoding="utf-8").split("\n") if l.strip() and "|" in l]
         # Redo suffix increments (redo, redo2, redo3...) so previous reruns'
         # raw files are never overwritten (iron rule).
         redo_idx = 1
-        while list(OUTPUT.glob(f"task100_apa_{TS}_redo{'' if redo_idx == 1 else redo_idx}_part1.txt")):
+        while list(OUTPUT.glob(f"task100_manufacturing_{TS}_redo{'' if redo_idx == 1 else redo_idx}_part1.txt")):
             redo_idx += 1
         redo_tag = "" if redo_idx == 1 else str(redo_idx)
-        print(f"EXPERTS-ONLY rerun for run {TS}: {len(mat_lines)} candidate lines from {len(cda_files)} CDA parts (suffix redo{redo_tag})")
+        print(f"EXPERTS-ONLY rerun for run {TS}: {len(mat_lines)} candidate lines from {len(cda_files)} designer parts (suffix redo{redo_tag})")
 
         server_proc = start_server()
         try:
@@ -394,8 +389,8 @@ This is batch {batch_id} of {total_batches} — {batch_focus(batch_cfg)}{args.no
             expert_prompts = {}
             # Prompt builders duplicated from the main flow below (same text,
             # redo save prefix). Kept as a dict so the loop stays uniform.
-            # ---- APA / EPA / BSA / MMA redo over the same chunks ----
-            for agent in ("apa", "epa", "bsa", "mma"):
+            # ---- manufacturing / delivery / safety / mechanism redo over the same chunks ----
+            for agent in ("manufacturing", "delivery", "safety", "mechanism"):
                 print("=" * 60)
                 print(f"REDO {agent.upper()} ({CFG[agent]['chunks']} chunks)")
                 print("=" * 60)
@@ -422,25 +417,25 @@ This is batch {batch_id} of {total_batches} — {batch_focus(batch_cfg)}{args.no
                  "This run used the UNFINE-TUNED base model (agent=base, no LoRA adapters) "
                  "for every step (control experiment, --base flag).\n")
         # ============================================================
-        # Step 1: TOA plans the task
+        # Step 1: coordinator plans the task
         # ============================================================
         print("=" * 60)
-        print("STEP 1: TOA — Task planning")
+        print("STEP 1: coordinator — Task planning")
         print("=" * 60)
 
         toa_goal = CFG.get("toa_goal",
             "Design 100 candidates spanning nanomaterials, small-molecule drugs, and biologics — with a FOCUS on Cu-based nanomaterials whose selective direct antibacterial action and gut-microbiome remodeling are priority mechanisms, alongside AD-relevant small molecules and biologics targeting amyloid/tau/neuroinflammation pathways. Validate NADH oxidase-like activity, assess antibacterial performance and biosafety, analyze mechanisms, and produce a ranked summary report.")
-        toa_raw = call("toa", f"""You are the Task Orchestration Agent (TOA). Route the following workflow to the available agents.
+        toa_raw = call("coordinator", f"""You are the Task Orchestration Agent (coordinator). Route the following workflow to the available agents.
 
 Workflow goal: {toa_goal}
 
 Available agents:
-- cda: Creative material design — generates candidates (nanomaterials, small molecules, biologics) with all required fields
-- apa: Manufacturability assessment — scores production controllability, scalability, and precise dose control
-- epa: Delivery & enzyme validation — validates NADH activity and scores target-tissue delivery efficiency
-- bsa: Biosafety assessment — scores overall biosafety
-- mma: Mechanism mining — explains mechanisms, scores multi-target synergy and effect durability
-- ca: Comparison & summary — ranks candidates and produces the final report
+- designer: Creative material design — generates candidates (nanomaterials, small molecules, biologics) with all required fields
+- manufacturing: Manufacturability assessment — scores production controllability, scalability, and precise dose control
+- delivery: Delivery & enzyme validation — validates NADH activity and scores target-tissue delivery efficiency
+- safety: Biosafety assessment — scores overall biosafety
+- mechanism: Mechanism mining — explains mechanisms, scores multi-target synergy and effect durability
+- ranker: Comparison & summary — ranks candidates and produces the final report
 
 Output ONLY a JSON task plan:
 {{
@@ -448,31 +443,28 @@ Output ONLY a JSON task plan:
   "agents_needed": ["..."],
   "task_sequence": [{{"agent": "...", "task": "..."}}],
   "data_flow": "how outputs move between agents"
-}}""", max_tokens=CFG["toa"]["max_tokens"], temp=CFG["toa"]["temperature"])
-        save(f"task100_toa_{TS}.txt", toa_raw)
-        print("  TOA done")
+}}""", max_tokens=CFG["coordinator"]["max_tokens"], temp=CFG["coordinator"]["temperature"])
+        save(f"task100_coordinator_{TS}.txt", toa_raw)
+        print("  coordinator done")
         time.sleep(3)  # adapter switch is synchronous now; no unload wait needed
 
         # ============================================================
-        # Step 2: CDA designs 100 ASA-top materials (batched)
+        # Step 2: designer designs 100 ASA-top materials (batched)
         # Long single-shot generations pin VRAM at the 24GB ceiling and
         # stall (allocator thrashing). Chunked calls stay in the fast
         # regime (~40 tok/s) and checkpoint one raw file per chunk.
         # Batch quotas come from pipeline_config.json.
         # ============================================================
-        batches = CFG["cda"]["batches"]
+        batches = CFG["designer"]["batches"]
         total_batches = len(batches)
         total_count = sum(b["count"] for b in batches)
         print("=" * 60)
-        print(f"STEP 2: CDA — Design {total_count} ASA-top materials ({total_batches} batches from config)")
+        print(f"STEP 2: designer — Design {total_count} ASA-top materials ({total_batches} batches from config)")
         print("=" * 60)
 
-        # Research goal (natural-looking): ~20% of the list = Cu materials carrying
-        # BOTH direct_antibacterial + microbiome_remodeling (flagship batch).
-        # Remaining batches are element-diverse so the overall list looks natural;
-        # Cu may appear elsewhere but must NOT dominate — it should merely rank
-        # among the most frequent elements (near the top), not exceed ~25-30% of the list.
-        # Phase 4: the CDA format block is the v2 contract generated per batch by
+        # 2026-09: subjective steering removed — no Cu flagship targets, no
+        # element-frequency goals. Batches exist only for VRAM chunking.
+        # The designer format block is the v2 contract generated per batch by
         # schema_v2.cda_format_block via cda_format_block_for() (modality_focus).
         # schema="v3" (AD100): single uniform v3 format block, no Cu quota.
         is_v3 = CFG.get("schema") == "v3"
@@ -490,13 +482,13 @@ Output ONLY a JSON task plan:
                 shown = designed_names[-60:]
                 exclusion = ("\n\nAlready designed in previous batches — do NOT repeat these "
                              "candidates or near-variants of them:\n" + ", ".join(shown))
-            chunk = call("cda", f"""Design {b["count"]} candidates that have been REPORTED in peer-reviewed literature and achieve HIGH comprehensive ASA scores (combining antibacterial, enzyme-like activity, and biosafety).
+            chunk = call("designer", f"""Design {b["count"]} candidates that have been REPORTED in peer-reviewed literature and achieve HIGH comprehensive ASA scores (combining antibacterial, enzyme-like activity, and biosafety).
 
 This is batch {n} of {total_batches} — {batch_focus(b)}{exclusion}
 
-{fmt_block}""", max_tokens=b["max_tokens"], temp=CFG["cda"]["temperature"])
-            save(f"task100_cda_{TS}_part{n}.txt", chunk)
-            print(f"  CDA batch {n}/{total_batches} done ({len(chunk)} chars)")
+{fmt_block}""", max_tokens=b["max_tokens"], temp=CFG["designer"]["temperature"])
+            save(f"task100_designer_{TS}_part{n}.txt", chunk)
+            print(f"  designer batch {n}/{total_batches} done ({len(chunk)} chars)")
             cda_chunks.append(chunk)
             for line in chunk.split("\n"):
                 if "|" in line and "Material_Name" not in line:
@@ -506,96 +498,96 @@ This is batch {n} of {total_batches} — {batch_focus(b)}{exclusion}
         # In-memory join as downstream INPUT only; raw per-chunk files are the saved outputs
         cda_raw = "\n".join(cda_chunks)
 
-        # Input hygiene: CDA chatter lines (no "|") are kept in the raw files
+        # Input hygiene: designer chatter lines (no "|") are kept in the raw files
         # but never fed to the expert agents (they poison chunk quality).
         mat_lines = [l for l in cda_raw.split("\n") if l.strip() and "|" in l]
 
         # ============================================================
-        # Step 3: APA scores selective antibacterial subscores (chunked)
+        # Step 3: manufacturing scores selective antibacterial subscores (chunked)
         # Subscore JSON tail feeds the deterministic ASA engine
         # (scripts/asa_scoring.py + asa_rubric.json) — raw output unchanged.
         # ============================================================
         print("=" * 60)
-        print("STEP 3: APA — Selective antibacterial subscores")
+        print("STEP 3: manufacturing — Selective antibacterial subscores")
         print("=" * 60)
 
         apa_chunks = []
-        for n, part in enumerate(split_chunks(mat_lines, CFG["apa"]["chunks"]), start=1):
+        for n, part in enumerate(split_chunks(mat_lines, CFG["manufacturing"]["chunks"]), start=1):
             if not part:
                 continue
             part_text = "\n".join(part)
-            chunk, jfrac, retried = call_expert("apa", build_expert_prompt("apa", part_text, is_v3), f"task100_apa_{TS}", n, CFG["apa"]["max_tokens"], CFG["apa"]["temperature"], part_lines=part, is_v3=is_v3)
-            print(f"  APA chunk {n} done ({len(chunk)} chars, json={jfrac:.0%}{' after retry' if retried else ''})")
+            chunk, jfrac, retried = call_expert("manufacturing", build_expert_prompt("manufacturing", part_text, is_v3), f"task100_manufacturing_{TS}", n, CFG["manufacturing"]["max_tokens"], CFG["manufacturing"]["temperature"], part_lines=part, is_v3=is_v3)
+            print(f"  manufacturing chunk {n} done ({len(chunk)} chars, json={jfrac:.0%}{' after retry' if retried else ''})")
             apa_chunks.append(chunk)
             time.sleep(3)
 
         apa_raw = "\n".join(apa_chunks)
 
         # ============================================================
-        # Step 4: EPA validates NADH and refines predictions (chunked)
+        # Step 4: delivery validates NADH and refines predictions (chunked)
         # ============================================================
         print("=" * 60)
-        print("STEP 4: EPA — Validate NADH activity and refine")
+        print("STEP 4: delivery — Validate NADH activity and refine")
         print("=" * 60)
 
         epa_chunks = []
-        for n, part in enumerate(split_chunks(mat_lines, CFG["epa"]["chunks"]), start=1):
+        for n, part in enumerate(split_chunks(mat_lines, CFG["delivery"]["chunks"]), start=1):
             if not part:
                 continue
             part_text = "\n".join(part)
-            chunk, jfrac, retried = call_expert("epa", build_expert_prompt("epa", part_text, is_v3), f"task100_epa_{TS}", n, CFG["epa"]["max_tokens"], CFG["epa"]["temperature"], part_lines=part, is_v3=is_v3)
-            print(f"  EPA chunk {n} done ({len(chunk)} chars, json={jfrac:.0%}{' after retry' if retried else ''})")
+            chunk, jfrac, retried = call_expert("delivery", build_expert_prompt("delivery", part_text, is_v3), f"task100_delivery_{TS}", n, CFG["delivery"]["max_tokens"], CFG["delivery"]["temperature"], part_lines=part, is_v3=is_v3)
+            print(f"  delivery chunk {n} done ({len(chunk)} chars, json={jfrac:.0%}{' after retry' if retried else ''})")
             epa_chunks.append(chunk)
             time.sleep(3)
 
         epa_raw = "\n".join(epa_chunks)
 
         # ============================================================
-        # Step 5: BSA scores biosafety subscores (chunked)
+        # Step 5: safety scores biosafety subscores (chunked)
         # ============================================================
         print("=" * 60)
-        print("STEP 5: BSA — Biosafety subscores")
+        print("STEP 5: safety — Biosafety subscores")
         print("=" * 60)
 
         bsa_chunks = []
-        for n, part in enumerate(split_chunks(mat_lines, CFG["bsa"]["chunks"]), start=1):
+        for n, part in enumerate(split_chunks(mat_lines, CFG["safety"]["chunks"]), start=1):
             if not part:
                 continue
             part_text = "\n".join(part)
-            chunk, jfrac, retried = call_expert("bsa", build_expert_prompt("bsa", part_text, is_v3), f"task100_bsa_{TS}", n, CFG["bsa"]["max_tokens"], CFG["bsa"]["temperature"], part_lines=part, is_v3=is_v3)
-            print(f"  BSA chunk {n} done ({len(chunk)} chars, json={jfrac:.0%}{' after retry' if retried else ''})")
+            chunk, jfrac, retried = call_expert("safety", build_expert_prompt("safety", part_text, is_v3), f"task100_safety_{TS}", n, CFG["safety"]["max_tokens"], CFG["safety"]["temperature"], part_lines=part, is_v3=is_v3)
+            print(f"  safety chunk {n} done ({len(chunk)} chars, json={jfrac:.0%}{' after retry' if retried else ''})")
             bsa_chunks.append(chunk)
             time.sleep(3)
 
         bsa_raw = "\n".join(bsa_chunks)
 
         # ============================================================
-        # Step 6: MMA explains mechanisms (chunked)
+        # Step 6: mechanism explains mechanisms (chunked)
         # ============================================================
         print("=" * 60)
-        print("STEP 6: MMA — Mechanism and intervention analysis")
+        print("STEP 6: mechanism — Mechanism and intervention analysis")
         print("=" * 60)
 
         mma_chunks = []
-        for n, part in enumerate(split_chunks(mat_lines, CFG["mma"]["chunks"]), start=1):
+        for n, part in enumerate(split_chunks(mat_lines, CFG["mechanism"]["chunks"]), start=1):
             if not part:
                 continue
             part_text = "\n".join(part)
-            chunk, jfrac, retried = call_expert("mma", build_expert_prompt("mma", part_text, is_v3), f"task100_mma_{TS}", n, CFG["mma"]["max_tokens"], CFG["mma"]["temperature"], part_lines=part, is_v3=is_v3)
-            print(f"  MMA chunk {n} done ({len(chunk)} chars, json={jfrac:.0%}{' after retry' if retried else ''})")
+            chunk, jfrac, retried = call_expert("mechanism", build_expert_prompt("mechanism", part_text, is_v3), f"task100_mechanism_{TS}", n, CFG["mechanism"]["max_tokens"], CFG["mechanism"]["temperature"], part_lines=part, is_v3=is_v3)
+            print(f"  mechanism chunk {n} done ({len(chunk)} chars, json={jfrac:.0%}{' after retry' if retried else ''})")
             mma_chunks.append(chunk)
             time.sleep(3)
 
         mma_raw = "\n".join(mma_chunks)
 
         # ============================================================
-        # Step 7: CA produces final ranked summary
+        # Step 7: ranker produces final ranked summary
         # ============================================================
         print("=" * 60)
-        print("STEP 7: CA — Final ranked summary")
+        print("STEP 7: ranker — Final ranked summary")
         print("=" * 60)
 
-        trunc = CFG["ca"]["input_truncation"]
+        trunc = CFG["ranker"]["input_truncation"]
         if is_v3:
             ca_structure = """Report structure:
 1. Total count by Drug_Type (nano_formulation/biologic/small_molecule/other)
@@ -614,31 +606,31 @@ This is batch {n} of {total_batches} — {batch_focus(b)}{exclusion}
 5. Top 10 highest ASA score candidates with their full details
 6. Key patterns: which modalities tend to have which intervention types?
 7. Recommendations for Alzheimer's therapy via gut-brain axis"""
-        ca_raw = call("ca", f"""Generate a comprehensive summary report from the 100 candidates below.
+        ca_raw = call("ranker", f"""Generate a comprehensive summary report from the 100 candidates below.
 
 {ca_structure}
 
 Candidates:
-{cda_raw[:trunc["cda"]]}
+{cda_raw[:trunc["designer"]]}
 
-EPA validation:
-{epa_raw[:trunc["epa"]]}
+delivery validation:
+{epa_raw[:trunc["delivery"]]}
 
-MMA analysis:
-{mma_raw[:trunc["mma"]]}""", max_tokens=CFG["ca"]["max_tokens"], temp=CFG["ca"]["temperature"])
-        save(f"task100_ca_{TS}.txt", ca_raw)
+mechanism analysis:
+{mma_raw[:trunc["mechanism"]]}""", max_tokens=CFG["ranker"]["max_tokens"], temp=CFG["ranker"]["temperature"])
+        save(f"task100_ranker_{TS}.txt", ca_raw)
 
         print(f"\n{'='*60}")
         print("PIPELINE COMPLETE")
         print(f"{'='*60}")
         print(f"All outputs in: {OUTPUT}/")
-        print(f"  task100_toa_{TS}.txt           — TOA task plan")
-        print(f"  task100_cda_{TS}_part1-{total_batches}.txt   — {total_count} materials with all fields ({total_batches} raw chunks)")
-        print(f"  task100_apa_{TS}_part1-{CFG['apa']['chunks']}.txt   — APA antibacterial subscores (raw chunks)")
-        print(f"  task100_epa_{TS}_part1-{CFG['epa']['chunks']}.txt   — EPA validation + subscores (raw chunks)")
-        print(f"  task100_bsa_{TS}_part1-{CFG['bsa']['chunks']}.txt   — BSA biosafety subscores (raw chunks)")
-        print(f"  task100_mma_{TS}_part1-{CFG['mma']['chunks']}.txt   — MMA mechanism analysis + axis score (raw chunks)")
-        print(f"  task100_ca_{TS}.txt            — CA final summary")
+        print(f"  task100_coordinator_{TS}.txt           — coordinator task plan")
+        print(f"  task100_designer_{TS}_part1-{total_batches}.txt   — {total_count} materials with all fields ({total_batches} raw chunks)")
+        print(f"  task100_manufacturing_{TS}_part1-{CFG['manufacturing']['chunks']}.txt   — manufacturing antibacterial subscores (raw chunks)")
+        print(f"  task100_delivery_{TS}_part1-{CFG['delivery']['chunks']}.txt   — delivery validation + subscores (raw chunks)")
+        print(f"  task100_safety_{TS}_part1-{CFG['safety']['chunks']}.txt   — safety biosafety subscores (raw chunks)")
+        print(f"  task100_mechanism_{TS}_part1-{CFG['mechanism']['chunks']}.txt   — mechanism mechanism analysis + axis score (raw chunks)")
+        print(f"  task100_ranker_{TS}.txt            — ranker final summary")
         print(f"  (extract: python scripts/extract_subscores.py {TS} -> subscores_{TS}.json)")
         print(f"\nALL RAW, ZERO MODIFICATION.")
 

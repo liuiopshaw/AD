@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Look up authoritative chemical formulas for CDA-designed materials.
+Look up authoritative chemical formulas for designer-designed materials.
 
-For each material in task100_cda_<TS>_part*.txt, queries a materials database
+For each material in task100_designer_<TS>_part*.txt, queries a materials database
 for the model-stated Chemical_Formula AND the support compound parsed from the
 material name (e.g. Pt_SA_MoO4 -> support MoO4), so the ranking can show a
 database-verified complete formula instead of the model's shorthand.
@@ -55,9 +55,9 @@ def formula_like(tok: str) -> bool:
 
 
 def load_records(ts: str):
-    parts = sorted(find_run_dir(ts).glob(f"task100_cda_{ts}_part*.txt"))
+    parts = sorted(find_run_dir(ts).glob(f"task100_designer_{ts}_part*.txt"))
     if not parts:
-        raise SystemExit(f"No task100_cda_{ts}_part*.txt found in {find_run_dir(ts)}")
+        raise SystemExit(f"No task100_designer_{ts}_part*.txt found in {find_run_dir(ts)}")
     records = []
     for p in parts:
         for line in io.open(p, encoding="utf-8"):
@@ -141,10 +141,10 @@ def make_source():
 def main():
     ts = sys.argv[1] if len(sys.argv) > 1 else None
     if ts is None:
-        candidates = (list(OUTPUT.glob("task100_cda_*_part1.txt"))
-                      + list(OUTPUT.glob("run_*/task100_cda_*_part1.txt")))
+        candidates = (list(OUTPUT.glob("task100_designer_*_part1.txt"))
+                      + list(OUTPUT.glob("run_*/task100_designer_*_part1.txt")))
         latest = max(candidates, key=lambda p: p.stat().st_mtime)
-        ts = re.search(r"task100_cda_(\d+)_part1", latest.name).group(1)
+        ts = re.search(r"task100_designer_(\d+)_part1", latest.name).group(1)
 
     src_files, records = load_records(ts)
     inorg_fn, organic_fn, source = make_source()

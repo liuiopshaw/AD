@@ -3,11 +3,11 @@
   "schema": "v3",
   "notes": "NATIVE base-model run (2026-08-02): NO steering of any kind — no flagship batch, no gut-microbiome emphasis, no Cu/quercetin direction, no mechanism/pattern bonus at ranking. Batches exist only for VRAM chunking; focuses are neutral. Keeps only the v3 output contract (4-dim classification) and anti-hallucination hygiene rules. | 2026-08-05: 纯基座零导向零配额运行;排名用 asa_rubric.nobonus.json(v0.6 轴,无加分)。",
   "toa_goal": "Predict 100 drug candidates for Alzheimer's disease therapy. Classify every candidate along four dimensions: drug type, target category, action mode, and AD therapeutic mechanism. Assess delivery efficiency, accessibility, biosafety, multi-target synergy and effect durability, analyze mechanisms, and produce a ranked summary report.",
-  "toa": {
+  "coordinator": {
     "max_tokens": 2048,
     "temperature": 0.1
   },
-  "cda": {
+  "designer": {
     "temperature": 0.3,
     "batches": [
       {
@@ -36,33 +36,33 @@
       }
     ]
   },
-  "apa": {
+  "manufacturing": {
     "chunks": 4,
     "max_tokens": 6144,
     "temperature": 0.1
   },
-  "epa": {
+  "delivery": {
     "chunks": 4,
     "max_tokens": 6144,
     "temperature": 0.1
   },
-  "bsa": {
+  "safety": {
     "chunks": 4,
     "max_tokens": 6144,
     "temperature": 0.1
   },
-  "mma": {
+  "mechanism": {
     "chunks": 4,
     "max_tokens": 6144,
     "temperature": 0.1
   },
-  "ca": {
+  "ranker": {
     "max_tokens": 6144,
     "temperature": 0.1,
     "input_truncation": {
-      "cda": 8000,
-      "epa": 4000,
-      "mma": 4000
+      "designer": 8000,
+      "delivery": 4000,
+      "mechanism": 4000
     }
   }
 }

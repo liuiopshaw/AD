@@ -1,68 +1,68 @@
 {
-  "version": "0.1",
+  "version": "0.2",
   "schema": "v3",
-  "notes": "AD100 run config. 2026-07-26 r2: batch 1 = flagship cyclodextrin-protected Cu nanocluster encapsulating quercetin, gut_microbiome_axis (user requirement: gut-microbiome modulation most frequent in top ranks, CD-Cu-cluster-quercetin leading); batch 2 gut-axis mixed modalities; batches 3-4 diverse. Temperatures lowered for reproducibility (fixed server seed CU_AGENT_SEED=42). | 2026-08-04: category independence — NO hybrid products (nano must not carry API payloads; coatings are not payloads). Flagship simplified to beta-CD-protected Cu nanocluster WITHOUT quercetin payload (user decision). | 2026-08-04 r2: base-therapeutic distinctness — no variant branches (size/core/form of one parent); flagship = β-CD-CuNC 一家,批次其余为不同母体的菌群纳米制剂. | 2026-08-04 r3: 显式模态配额 nano 50 / small_molecule 30 / biologic 20(用户定),每批强制 Drug_Type。 | 2026-08-04 r4: 新增第五类 composite(严格两组分复合);旗舰批=β-CD-CuNC担载槲皮素(纳米+小分子复合)+二元复合制剂。 | 2026-08-05: 批2-4 focus 加固 composite 判别规则+误分类反例(用户方案A)。 | 2026-08-05: composite 概念删除——复合物一律归 nano_formulation,保留两组分上限;旗舰=CuNC@β-CD-quercetin(纳米制剂)。",
+  "notes": "AD100 run config, quota-free (2026-09-16): all Drug_Type mandates, modality quotas, and flagship-product requirements removed. Candidates are freely distributed across drug types at the model's discretion (per toa_goal). Distinct-base-therapeutic and two-agent-limit constraints kept.",
   "toa_goal": "Predict 100 drug candidates for Alzheimer's disease therapy, spanning nano formulations, biologics, small molecules, and other innovative approaches — freely distributed across all types with NO element or modality quotas. Classify every candidate along four dimensions: drug type, target category, action mode, and AD therapeutic mechanism. Validate NADH oxidase-like activity, assess antibacterial performance and biosafety, analyze mechanisms, and produce a ranked summary report.",
-  "toa": {
+  "coordinator": {
     "max_tokens": 2048,
     "temperature": 0.1
   },
-  "cda": {
+  "designer": {
     "temperature": 0.3,
     "batches": [
       {
         "batch_id": 1,
         "count": 25,
         "max_tokens": 3072,
-        "focus": "gut-microbiome-modulating nano formulations, EACH a DIFFERENT base therapeutic. Assign EVERY candidate in this batch Drug_Type=nano_formulation, Target_Category=gut_targeted_regulation, Action_Mode=microbiota_ratio_modulation, AD_Mechanism=gut_microbiome_axis. Include the flagship beta-cyclodextrin-protected copper nanocluster carrying quercetin (CuNC@beta-CD-quercetin = nano_formulation; cyclodextrin is the protective coating, quercetin is its ONE payload) as ONE entry. The remaining candidates must be OTHER distinct gut-targeted nano formulations with different compositions and coatings — a payload is allowed (at most ONE per candidate), but NO size/core/form variants of one parent"
+        "focus": "diverse AD therapeutic candidates across ALL drug types (nano formulations, small molecules, biologics, and others) with NO modality quota — choose whatever types you judge most promising. Each candidate must be a DISTINCT base therapeutic (no size/core/form variants of one parent). TWO-AGENT LIMIT: a carrier may carry at most ONE payload agent; never combine 3+ agents. A nano formulation carrying one payload is still nano_formulation"
       },
       {
         "batch_id": 2,
         "count": 25,
         "max_tokens": 3072,
-        "focus": "additional nano formulations spanning gut-targeted and CNS-directed mechanisms — Assign EVERY candidate in this batch Drug_Type=nano_formulation. Each must be a DISTINCT base therapeutic: vary compositions (Fe, Zn, Ce, Mn, Ag, Au, mixed oxides), coatings, and target categories. NO size/core/form variants of one parent; at most ONE payload agent per candidate (coatings are not agents) TWO-AGENT LIMIT: a carrier may carry at most ONE payload agent; never combine 3+ agents. A nano formulation carrying one payload is still nano_formulation (no separate composite category)."
+        "focus": "additional AD therapeutic candidates across ALL drug types with NO modality quota, spanning gut-targeted and CNS-directed mechanisms. Each a DISTINCT base therapeutic: vary compositions, targets, and modalities; do not duplicate batch 1. TWO-AGENT LIMIT: a carrier may carry at most ONE payload agent; never combine 3+ agents"
       },
       {
         "batch_id": 3,
-        "count": 30,
+        "count": 25,
         "max_tokens": 3072,
-        "focus": "small-molecule AD drug candidates — Assign EVERY candidate in this batch Drug_Type=small_molecule. Marketed, clinical-stage, and literature-reported compounds with real, verifiable names; vary target categories, action modes, and AD mechanisms; each a distinct base therapeutic (no salt/ester/form variants of one API) TWO-AGENT LIMIT: a carrier may carry at most ONE payload agent; never combine 3+ agents. A nano formulation carrying one payload is still nano_formulation (no separate composite category)."
+        "focus": "further AD therapeutic candidates across ALL drug types with NO modality quota — marketed, clinical-stage, and literature-reported agents with real, verifiable names preferred where applicable; each a distinct base therapeutic (no salt/ester/form variants of one API); do not duplicate previous batches. TWO-AGENT LIMIT: a carrier may carry at most ONE payload agent; never combine 3+ agents"
       },
       {
         "batch_id": 4,
-        "count": 20,
+        "count": 25,
         "max_tokens": 3072,
-        "focus": "biologic AD candidates — Assign EVERY candidate in this batch Drug_Type=biologic. Monoclonal antibodies, peptides, protein therapeutics, and live biotherapeutics reported in literature or clinical development; each a distinct base therapeutic; Target_UniProt only if completely certain, else NA TWO-AGENT LIMIT: a carrier may carry at most ONE payload agent; never combine 3+ agents. A nano formulation carrying one payload is still nano_formulation (no separate composite category)."
+        "focus": "final set of AD therapeutic candidates across ALL drug types with NO modality quota — prioritize variety in mechanisms and modalities not yet covered; each a distinct base therapeutic; Target_UniProt only if completely certain, else NA; do not duplicate previous batches. TWO-AGENT LIMIT: a carrier may carry at most ONE payload agent; never combine 3+ agents"
       }
     ]
   },
-  "apa": {
+  "manufacturing": {
     "chunks": 4,
     "max_tokens": 6144,
     "temperature": 0.1
   },
-  "epa": {
+  "delivery": {
     "chunks": 4,
     "max_tokens": 6144,
     "temperature": 0.1
   },
-  "bsa": {
+  "safety": {
     "chunks": 4,
     "max_tokens": 6144,
     "temperature": 0.1
   },
-  "mma": {
+  "mechanism": {
     "chunks": 4,
     "max_tokens": 6144,
     "temperature": 0.1
   },
-  "ca": {
+  "ranker": {
     "max_tokens": 6144,
     "temperature": 0.1,
     "input_truncation": {
-      "cda": 8000,
-      "epa": 4000,
-      "mma": 4000
+      "designer": 8000,
+      "delivery": 4000,
+      "mechanism": 4000
     }
   }
 }

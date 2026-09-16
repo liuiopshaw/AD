@@ -16,8 +16,7 @@ class EnzymeClassifier:
     """Classify enzyme-like activity based on nanomaterial structural properties.
 
     Focus: CAT-like (catalase), SOD-like (superoxide dismutase), NADH oxidase-like.
-    NADH oxidase-like activity receives bonus scoring due to its therapeutic
-    relevance in Alzheimer's disease (NAD+ replenishment).
+    Scoring follows the rule-based conditions only; no subjective bonus points.
     """
 
     RULES_PATH = os.path.join(
@@ -77,9 +76,7 @@ class EnzymeClassifier:
             if size_nm is not None:
                 max_score += 1
                 if size_nm <= conditions.get("size_nm", {}).get("max", 999):
-                    size_bonus = 0.5 if size_nm <= 10 else 0
-                    if size_bonus:
-                        score += size_bonus
+                    score += 1
 
             # Check confidence boosters
             for booster in conditions.get("confidence_boosters", []):
@@ -87,16 +84,7 @@ class EnzymeClassifier:
                     matched_boosters.append(booster)
                     score += 0.5
 
-            # NADH-like bonus for Cu nanoclusters with cyclodextrin coating
-            if rule.get("enzyme_type") == "NADH_oxidase_like":
-                coating = material_properties.get("coating", "").lower()
-                shape_val = material_properties.get("shape", "").lower()
-                if "cyclodextrin" in coating or "cd" in coating:
-                    score += 1.0
-                if "nanocluster" in shape_val or "cluster" in shape_val:
-                    score += 0.5
-
-            # Shape bonus
+            # Shape-based activity note (no score bonus)
             if shape:
                 shape_rules = self.rules.get("shape_activity_relationships", {})
                 if shape in shape_rules:

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nano-Bio Evaluator · TOA 编排</title>
+<title>Nano-Bio Evaluator · coordinator 编排</title>
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
@@ -125,7 +125,7 @@
       <div class="wrap">
         <div id="empty-hint">
           <h1>Nano-Bio Evaluator</h1>
-          <p>TOA 编排入口 —— 输入研究需求,将依次执行 任务规划 → 创意设计 → 抗菌/酶活/安全评估 → 机理分析 → 汇总报告</p>
+          <p>coordinator 编排入口 —— 输入研究需求,将依次执行 任务规划 → 创意设计 → 抗菌/酶活/安全评估 → 机理分析 → 汇总报告</p>
         </div>
         <div id="messages"></div>
       </div>
@@ -143,8 +143,8 @@
   "use strict";
 
   var AGENT_NAMES = {
-    cda: "创意设计师", apa: "抗菌评估", epa: "酶活评估",
-    bsa: "安全评估", mma: "机理分析", ca: "汇总报告"
+    designer: "创意设计师", manufacturing: "抗菌评估", delivery: "酶活评估",
+    safety: "安全评估", mechanism: "机理分析", ranker: "汇总报告"
   };
 
   var sessionId = null;
@@ -265,12 +265,12 @@
   function createRenderer(area) {
     var agentCards = {};   // key: agent 或 agent#batch -> card
     function agentKey(agent, batch) {
-      // 批量 agent(cda)按批次建卡;分块 agent(apa/epa/bsa/mma)合并为一张卡
-      return agent === "cda" ? agent + "#" + batch : agent;
+      // 批量 agent(designer)按批次建卡;分块 agent(manufacturing/delivery/safety/mechanism)合并为一张卡
+      return agent === "designer" ? agent + "#" + batch : agent;
     }
     function agentTitle(agent, batch) {
       var name = AGENT_NAMES[agent] || agent;
-      return agent === "cda" ? name + " · 批次 " + batch : name;
+      return agent === "designer" ? name + " · 批次 " + batch : name;
     }
     function getAgentCard(agent, batch) {
       var key = agentKey(agent, batch);
