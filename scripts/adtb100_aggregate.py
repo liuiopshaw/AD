@@ -102,17 +102,17 @@ def main():
         m["run"] = f.parent.name
         groups[key].append(m)
 
-    KEYS = [("coverage", "解析覆盖率"), ("rho", "Spearman ρ"), ("concordance", "跨tier一致性"),
-            ("tier_acc", "三分类准确率"), ("p70", "Precision@70"), ("neg_rank", "阴性平均排名")]
+    KEYS = [("coverage", "parse coverage"), ("rho", "Spearman rho"), ("concordance", "cross-tier concordance"),
+            ("tier_acc", "3-tier accuracy"), ("p70", "Precision@70"), ("neg_rank", "neg-control mean rank")]
 
     L = []
     A = L.append
-    A(f"# ADTB-100 加性版重复运行聚合（gate={args.gate}）")
+    A(f"# ADTB-100 additive-mode repeated-run aggregation (gate={args.gate})")
     A("")
     for (variant, mode), runs in sorted(groups.items()):
-        A(f"## {variant} × {mode}（n={len(runs)} 轮）")
+        A(f"## {variant} × {mode}(n={len(runs)} runs)")
         A("")
-        A("| 指标 | mean ± std | min ~ max |")
+        A("| metric | mean ± std | min ~ max |")
         A("|---|---|---|")
         for k, label in KEYS:
             vals = [r[k] for r in runs if r.get(k) is not None]

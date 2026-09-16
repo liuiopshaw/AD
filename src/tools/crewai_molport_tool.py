@@ -1,164 +1,165 @@
 import json
-# 导入 CrewAI 框架的 BaseTool 基类
+# Import the BaseTool base class from the CrewAI framework
 from crewai.tools import BaseTool
-# 导入 Pydantic 的数据模型类，用于定义工具的输入参数 schema
+# Import Pydantic data model classes for defining the tool input parameter schema
 from pydantic import BaseModel, Field
-# 导入底层 MolPort 工具的单例获取函数
+# Import the singleton getter for the underlying MolPort tool
 from src.tools.molport_tool import get_molport_tool
-# 导入跨 Agent 上下文存储，用于在 Agent 之间共享查询结果
+# Import the cross-agent context store for sharing query results between agents
 from src.utils.context_store import ContextStore
 
 # ============================================================================
-# 输入参数模型定义
-# 每个 CrewAI 工具对应一个 Pydantic BaseModel，定义其接收的参数
+# Input parameter model definitions
+# Each CrewAI tool corresponds to a Pydantic BaseModel defining the parameters it accepts
 # ============================================================================
 
 class MolPortAvailabilityInput(BaseModel):
-    """MolPort 可获得性查询输入参数
+    """Input parameters for MolPort availability query
 
-    用于检查化合物是否可从 MolPort 供应商处购买。
+    Used to check whether a compound can be purchased from MolPort suppliers.
     """
-    # smiles: 化合物的 SMILES 表示，如 "CCO"（乙醇）、"c1ccccc1"（苯）
-    smiles: str = Field(description="化合物的 SMILES 字符串")
-    # similarity_threshold: 判断"可获得"的相似度标准
-    # 默认 0.95，即结构相似度 >= 95% 认为可获得
-    similarity_threshold: float = Field(default=0.95, description="相似度阈值（0-1），默认0.95")
+    # smiles: SMILES representation of the compound, e.g. "CCO" (ethanol), "c1ccccc1" (benzene)
+    smiles: str = Field(description="SMILES string of the compound")
+    # similarity_threshold: similarity criterion for judging "available"
+    # Default 0.95, i.e. structural similarity >= 95% is considered available
+    similarity_threshold: float = Field(default=0.95, description="Similarity threshold (0-1), default 0.95")
 
 class MolPortSearchInput(BaseModel):
-    """MolPort 结构搜索输入参数
+    """Input parameters for MolPort structure search
 
-    支持精确匹配、相似性搜索、子/超结构搜索等多种模式。
+    Supports multiple modes such as exact match, similarity search, and sub/superstructure search.
     """
-    smiles: str = Field(description="化合物的 SMILES 字符串")
-    # search_type: 1=子结构, 2=超结构, 3=精确, 4=相似性(默认), 5=完美, 6=精确片段
-    search_type: int = Field(default=4, description="搜索类型：1=子结构，2=超结构，3=精确，4=相似性(默认)，5=完美，6=精确片段")
-    # similarity_index: 仅对相似性搜索（类型 4）有效
-    similarity_index: float = Field(default=0.9, description="相似度阈值（0-1），默认0.9")
-    # max_results: 控制返回结果数量，避免数据过载
-    max_results: int = Field(default=100, description="最大结果数，默认100（上限10000）")
+    smiles: str = Field(description="SMILES string of the compound")
+    # search_type: 1=substructure, 2=superstructure, 3=exact, 4=similarity (default), 5=perfect, 6=exact fragment
+    search_type: int = Field(default=4, description="Search type: 1=substructure, 2=superstructure, 3=exact, 4=similarity (default), 5=perfect, 6=exact fragment")
+    # similarity_index: only effective for similarity search (type 4)
+    similarity_index: float = Field(default=0.9, description="Similarity threshold (0-1), default 0.9")
+    # max_results: controls the number of returned results to avoid data overload
+    max_results: int = Field(default=100, description="Maximum number of results, default 100 (upper limit 10000)")
 
 class MolPortMoleculeInfoInput(BaseModel):
-    """MolPort 分子信息查询输入参数
+    """Input parameters for MolPort molecule info query
 
-    通过 MolPort 内部 ID 查询分子的详细信息。
+    Queries detailed information of a molecule via its internal MolPort ID.
     """
-    # molecule_id: MolPort 的唯一分子标识符
-    molecule_id: str = Field(description="MolPort 分子ID（如 '2325020' 或 'Molport-002-325-020'）")
+    # molecule_id: MolPort's unique molecule identifier
+    molecule_id: str = Field(description="MolPort molecule ID (e.g. '2325020' or 'Molport-002-325-020')")
 
 
 # ============================================================================
-# CrewAI 工具类定义
-# 每个工具封装 MolPortTool 的一个特定功能，使其可被 CrewAI Agent 调用
+# CrewAI tool class definitions
+# Each tool wraps a specific function of MolPortTool so it can be invoked by CrewAI agents
 # ============================================================================
 
 class CrewAIMolPortAvailabilityTool(BaseTool):
-    """CrewAI 工具：检查化合物商业可获得性
+    """CrewAI tool: check compound commercial availability
 
-    该工具帮助 Agent 判断一个化合物是否可以从商业供应商处购买，
-    以及购买的条件（供应商数量、价格范围等）。
-    这对于评估材料经济可行性和前体可获得性至关重要。
+    This tool helps the agent determine whether a compound can be purchased
+    from commercial suppliers, and under what conditions (number of suppliers,
+    price range, etc.).
+    This is crucial for evaluating material economic feasibility and precursor availability.
     """
 
-    # 工具名称：CrewAI Agent 使用此名称来调用工具
-    name: str = "MolPort 化合物可获得性检查器"
-    # 工具描述：LLM 根据此描述判断何时使用此工具
-    # 描述需要清晰说明工具的用途、输入输出和行为
+    # Tool name: CrewAI agents use this name to invoke the tool
+    name: str = "MolPort Compound Availability Checker"
+    # Tool description: the LLM uses this description to decide when to use the tool
+    # The description should clearly state the tool's purpose, inputs/outputs, and behavior
     description: str = (
-        "检查化合物的商业可获得性。"
-        "通过 SMILES 字符串查询化合物是否可从供应商处购买。"
-        "返回可获得性状态、匹配的化合物ID、库存水平等信息。"
-        "用于评估材料经济可行性和前体可获得性。"
+        "Checks the commercial availability of a compound. "
+        "Queries via a SMILES string whether the compound can be purchased from suppliers. "
+        "Returns availability status, matched compound IDs, stock levels, and other information. "
+        "Used to evaluate material economic feasibility and precursor availability."
     )
-    # 指定输入参数的数据模型（BaseModel 子类）
+    # Specify the data model for input parameters (a BaseModel subclass)
     args_schema: type[BaseModel] = MolPortAvailabilityInput
 
     def __init__(self):
-        """初始化工具实例。
+        """Initialize the tool instance.
 
-        设置本地内存缓存和相关配置。
+        Sets up the local in-memory cache and related configuration.
         """
         super().__init__()
-        # _cache: 本地内存缓存字典
-        # 键为缓存键字符串，值为 (时间戳, 结果数据) 元组
+        # _cache: local in-memory cache dictionary
+        # Keys are cache key strings; values are (timestamp, result data) tuples
         self._cache = {}
-        # _ttl_seconds: 缓存有效期，3600 秒（1小时）
-        # 可获得性数据相对稳定，所以 TTL 设置较长
+        # _ttl_seconds: cache validity period, 3600 seconds (1 hour)
+        # Availability data is relatively stable, so a longer TTL is set
         self._ttl_seconds = 3600
 
     def _run(self, smiles: str, similarity_threshold: float = 0.95) -> str:
         """
-        检查化合物商业可获得性。
+        Check compound commercial availability.
 
-        缓冲策略：
-        1. 先查跨 Agent 上下文缓存（ContextStore）
-        2. 再查本地 TTL 缓存
-        3. 最后执行实际查询
+        Caching strategy:
+        1. Check the cross-agent context cache (ContextStore) first
+        2. Then check the local TTL cache
+        3. Finally execute the actual query
 
         Args:
-            smiles: 化合物 SMILES 字符串
-            similarity_threshold: 相似度阈值（0-1）
+            smiles: compound SMILES string
+            similarity_threshold: similarity threshold (0-1)
 
         Returns:
-            JSON 格式的可获得性评估结果字符串
+            Availability evaluation result as a JSON-formatted string
         """
         try:
-            # 构造缓存键：包含 smiles 和相似度阈值
-            # 不同相似度阈值会产生不同的结果，所以必须包含在键中
+            # Build the cache key: includes smiles and similarity threshold
+            # Different similarity thresholds produce different results, so it must be part of the key
             cache_key = f"molport_availability:{smiles}:{similarity_threshold}"
-            # 第一层缓存：跨 Agent 上下文存储
-            # ContextStore 允许不同 Agent 之间共享同一查询的结果
+            # First cache layer: cross-agent context store
+            # ContextStore allows different agents to share the results of the same query
             cached_ctx = ContextStore.get(cache_key)
             if cached_ctx is not None:
                 return json.dumps(cached_ctx, ensure_ascii=False, indent=2)
 
-            # 第二层缓存：本地 TTL 内存缓存
+            # Second cache layer: local TTL in-memory cache
             import time as _t
             now = _t.time()
             cached = self._cache.get(cache_key)
             if cached and now - cached[0] < self._ttl_seconds:
-                # 缓存未过期，直接返回缓存数据
+                # Cache not expired; return the cached data directly
                 return json.dumps(cached[1], ensure_ascii=False, indent=2)
 
-            # 缓存未命中：获取底层工具并执行查询
+            # Cache miss: get the underlying tool and execute the query
             tool = get_molport_tool()
             result = tool.check_compound_availability(smiles, similarity_threshold)
 
-            # 将结果同时写入两层缓存（ContextStore 仅缓存成功结果，错误结果不写入）
+            # Write the result into both cache layers (ContextStore only caches successful results; error results are not written)
             if isinstance(result, dict) and "error" not in result:
-                ContextStore.set(cache_key, result)      # 跨 Agent 缓存
-            self._cache[cache_key] = (now, result)   # 本地 TTL 缓存
+                ContextStore.set(cache_key, result)      # cross-agent cache
+            self._cache[cache_key] = (now, result)   # local TTL cache
 
-            # 返回 JSON 序列化结果
+            # Return the JSON-serialized result
             return json.dumps(result, ensure_ascii=False, indent=2)
 
         except Exception as e:
-            # 异常处理：返回包含错误信息的 JSON
-            return json.dumps({"error": f"查询错误: {str(e)}"}, ensure_ascii=False)
+            # Exception handling: return a JSON object containing the error message
+            return json.dumps({"error": f"Query error: {str(e)}"}, ensure_ascii=False)
 
 
 class CrewAIMolPortSearchTool(BaseTool):
-    """CrewAI 工具：MolPort 化学结构搜索
+    """CrewAI tool: MolPort chemical structure search
 
-    支持多种搜索模式：
-    - 精确搜索：查找结构完全相同的化合物
-    - 相似性搜索：查找结构相似的化合物（最常用，用于找替代品）
-    - 子结构搜索：查找包含指定子结构的化合物
-    - 超结构搜索：查找被指定结构包含的化合物
+    Supports multiple search modes:
+    - Exact search: find compounds with identical structures
+    - Similarity search: find structurally similar compounds (most commonly used, for finding substitutes)
+    - Substructure search: find compounds containing the specified substructure
+    - Superstructure search: find compounds contained within the specified structure
     """
 
-    name: str = "MolPort 化学结构搜索"
+    name: str = "MolPort Chemical Structure Search"
     description: str = (
-        "在 MolPort 数据库中搜索化学结构。"
-        "支持精确匹配、相似性搜索、子结构搜索等。"
-        "通过 SMILES 字符串搜索相似化合物，获取 MolPort ID 和相似度指数。"
-        "用于寻找相似的可购买化合物或验证材料设计可行性。"
+        "Searches chemical structures in the MolPort database. "
+        "Supports exact match, similarity search, substructure search, etc. "
+        "Searches for similar compounds via a SMILES string, returning MolPort IDs and similarity indices. "
+        "Used to find similar purchasable compounds or to validate material design feasibility."
     )
     args_schema: type[BaseModel] = MolPortSearchInput
 
     def __init__(self):
         super().__init__()
         self._cache = {}
-        self._ttl_seconds = 3600  # 1 小时缓存
+        self._ttl_seconds = 3600  # 1-hour cache
 
     def _run(
         self,
@@ -168,33 +169,33 @@ class CrewAIMolPortSearchTool(BaseTool):
         max_results: int = 100
     ) -> str:
         """
-        执行化学结构搜索。
+        Execute a chemical structure search.
 
         Args:
-            smiles: 化合物 SMILES 字符串
-            search_type: 搜索类型（1-6）
-            similarity_index: 相似度阈值（0-1）
-            max_results: 最大返回结果数
+            smiles: compound SMILES string
+            search_type: search type (1-6)
+            similarity_index: similarity threshold (0-1)
+            max_results: maximum number of results to return
 
         Returns:
-            JSON 格式的搜索结果字符串
+            Search results as a JSON-formatted string
         """
         try:
-            # 构建缓存键：包含所有搜索参数，因为不同参数组合产生不同结果
+            # Build the cache key: includes all search parameters, since different parameter combinations produce different results
             cache_key = f"molport_search:{search_type}:{smiles}:{similarity_index}:{max_results}"
-            # 先查跨 Agent 上下文缓存
+            # Check the cross-agent context cache first
             cached_ctx = ContextStore.get(cache_key)
             if cached_ctx is not None:
                 return json.dumps(cached_ctx, ensure_ascii=False, indent=2)
 
-            # 再查本地 TTL 缓存
+            # Then check the local TTL cache
             import time as _t
             now = _t.time()
             cached = self._cache.get(cache_key)
             if cached and now - cached[0] < self._ttl_seconds:
                 return json.dumps(cached[1], ensure_ascii=False, indent=2)
 
-            # 执行实际查询
+            # Execute the actual query
             tool = get_molport_tool()
             result = tool.search_by_smiles(
                 smiles,
@@ -203,7 +204,7 @@ class CrewAIMolPortSearchTool(BaseTool):
                 max_results=max_results
             )
 
-            # 更新两层缓存（仅缓存成功结果，错误结果不写入无 TTL 的 ContextStore）
+            # Update both cache layers (only successful results are cached; error results are not written to the TTL-less ContextStore)
             if isinstance(result, dict) and "error" not in result:
                 ContextStore.set(cache_key, result)
             self._cache[cache_key] = (now, result)
@@ -211,61 +212,61 @@ class CrewAIMolPortSearchTool(BaseTool):
             return json.dumps(result, ensure_ascii=False, indent=2)
 
         except Exception as e:
-            return json.dumps({"error": f"搜索错误: {str(e)}"}, ensure_ascii=False)
+            return json.dumps({"error": f"Search error: {str(e)}"}, ensure_ascii=False)
 
 
 class CrewAIMolPortMoleculeInfoTool(BaseTool):
-    """CrewAI 工具：获取 MolPort 分子详细信息
+    """CrewAI tool: get detailed MolPort molecule information
 
-    通过 MolPort 的分子 ID 获取完整信息，包括：
-    - 分子标识：SMILES、IUPAC 名称、分子式、分子量
-    - 商业信息：供应商列表、价格、库存、交货时间
-    - 用于评估特定化合物的商业可获得性和成本
+    Retrieves complete information via the MolPort molecule ID, including:
+    - Molecular identity: SMILES, IUPAC name, molecular formula, molecular weight
+    - Commercial information: supplier list, prices, stock, delivery time
+    - Used to evaluate the commercial availability and cost of a specific compound
     """
 
-    name: str = "MolPort 分子信息加载器"
+    name: str = "MolPort Molecule Information Loader"
     description: str = (
-        "通过 MolPort ID 获取化合物的详细信息，包括 SMILES、IUPAC 名称、分子式、"
-        "分子量、供应商信息、库存、价格、交货时间等。"
-        "用于评估特定化合物的商业可获得性和成本。"
+        "Retrieves detailed information about a compound via its MolPort ID, including SMILES, IUPAC name, molecular formula, "
+        "molecular weight, supplier information, stock, prices, delivery time, etc. "
+        "Used to evaluate the commercial availability and cost of a specific compound."
     )
     args_schema: type[BaseModel] = MolPortMoleculeInfoInput
 
     def __init__(self):
         super().__init__()
         self._cache = {}
-        self._ttl_seconds = 3600  # 1 小时缓存：分子信息相对稳定
+        self._ttl_seconds = 3600  # 1-hour cache: molecule information is relatively stable
 
     def _run(self, molecule_id: str) -> str:
         """
-        获取分子详细信息。
+        Get detailed molecule information.
 
         Args:
-            molecule_id: MolPort 分子 ID（支持两种格式）
+            molecule_id: MolPort molecule ID (both formats supported)
 
         Returns:
-            JSON 格式的分子详细信息字符串
+            Detailed molecule information as a JSON-formatted string
         """
         try:
-            # 构建缓存键：仅使用 molecule_id 作为标识
+            # Build the cache key: uses only molecule_id as the identifier
             cache_key = f"molport_molecule:{molecule_id}"
-            # 先查跨 Agent 上下文缓存
+            # Check the cross-agent context cache first
             cached_ctx = ContextStore.get(cache_key)
             if cached_ctx is not None:
                 return json.dumps(cached_ctx, ensure_ascii=False, indent=2)
 
-            # 再查本地 TTL 缓存
+            # Then check the local TTL cache
             import time as _t
             now = _t.time()
             cached = self._cache.get(cache_key)
             if cached and now - cached[0] < self._ttl_seconds:
                 return json.dumps(cached[1], ensure_ascii=False, indent=2)
 
-            # 执行查询：使用 get_availability_info 获取完整的商业信息
+            # Execute the query: use get_availability_info to get complete commercial information
             tool = get_molport_tool()
             result = tool.get_availability_info(molecule_id)
 
-            # 更新两层缓存（仅缓存成功结果，错误结果不写入无 TTL 的 ContextStore）
+            # Update both cache layers (only successful results are cached; error results are not written to the TTL-less ContextStore)
             if isinstance(result, dict) and "error" not in result:
                 ContextStore.set(cache_key, result)
             self._cache[cache_key] = (now, result)
@@ -273,17 +274,17 @@ class CrewAIMolPortMoleculeInfoTool(BaseTool):
             return json.dumps(result, ensure_ascii=False, indent=2)
 
         except Exception as e:
-            return json.dumps({"error": f"信息获取错误: {str(e)}"}, ensure_ascii=False)
+            return json.dumps({"error": f"Info retrieval error: {str(e)}"}, ensure_ascii=False)
 
 
 # ============================================================================
-# 创建全局工具实例
-# 这些实例在模块导入时创建，供 CrewAI Agent 配置使用
+# Create global tool instances
+# These instances are created at module import time for CrewAI agent configuration
 # ============================================================================
 
-# 化合物可获得性检查工具实例
+# Compound availability checker tool instance
 molport_availability_tool = CrewAIMolPortAvailabilityTool()
-# 化学结构搜索工具实例
+# Chemical structure search tool instance
 molport_search_tool = CrewAIMolPortSearchTool()
-# 分子详细信息加载工具实例
+# Molecule detailed information loader tool instance
 molport_molecule_info_tool = CrewAIMolPortMoleculeInfoTool()

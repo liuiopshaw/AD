@@ -1,152 +1,152 @@
 #!/usr/bin/env python3
-# 指定 Python 解释器，确保脚本在 Unix 环境下直接执行时使用 python3
+# Specify the Python interpreter, ensuring the script uses python3 when executed directly on Unix
 
 """
 Material Identifier Processing Tool.
 Unified handling of metal materials and organic compound identifiers (MP-ID and CAS numbers).
 """
-# 模块文档字符串：描述本工具的功能——统一处理金属材料和有机化合物的标识符（MP-ID 和 CAS 号）
+# Module docstring: describes the tool's purpose — unified handling of metal material and organic compound identifiers (MP-ID and CAS numbers)
 
 import logging
-# 导入 logging 模块，用于输出警告和错误日志
+# Import the logging module for emitting warning and error logs
 
 from typing import Dict, Any, Optional
-# 从 typing 模块导入类型注解：Dict（字典）、Any（任意类型）、Optional（可选类型）
+# Import type annotations from typing: Dict (dictionary), Any (any type), Optional (optional type)
 
 from src.tools.materials_project_tool import get_materials_project_tool
-# 导入 Materials Project 工具的单例获取函数，用于查询金属材料的 MP-ID
+# Import the singleton accessor for the Materials Project tool, used to query MP-IDs for metal materials
 
 from src.tools.pubchem_tool import get_pubchem_tool
-# 导入 PubChem 工具的单例获取函数，用于查询有机化合物的 CAS 号
+# Import the singleton accessor for the PubChem tool, used to query CAS numbers for organic compounds
 
 # Configure logging
 logging.basicConfig(level=logging.WARNING)
-# 配置日志基本设置：仅输出 WARNING 级别及以上的日志
+# Configure basic logging settings: only emit logs at WARNING level and above
 
 logger = logging.getLogger(__name__)
-# 创建以当前模块名命名的日志记录器，便于在日志中定位问题来源
+# Create a logger named after the current module, making it easier to locate the source of issues in logs
 
 class MaterialIdentifierTool:
     """Material Identifier Processing Tool - Unified handling of metal and organic material identifiers.
-    # 材料标识符处理工具 —— 统一处理金属和有机材料标识符
+    # Material identifier processing tool — unified handling of metal and organic material identifiers
 
     Supports identifier processing for multiple material types:
     1. Metal materials (get Materials Project ID)
-    # 金属材料 —— 获取 Materials Project ID (MP-ID)
+    # Metal materials — obtain the Materials Project ID (MP-ID)
     2. Organic materials (get CAS number)
-    # 有机材料 —— 获取 CAS 注册号
+    # Organic materials — obtain the CAS registry number
     3. Composite materials (identify by element composition)
-    # 复合材料 —— 通过元素组成识别
+    # Composite materials — identified by element composition
     """
 
     def __init__(self):
         """Initialize material identifier processing tool."""
-        # 初始化材料标识符处理工具实例
+        # Initialize the material identifier processing tool instance
         try:
-            # 尝试获取 Materials Project 工具实例
+            # Try to obtain the Materials Project tool instance
             self.materials_project_tool = get_materials_project_tool()
         except Exception as e:
-            # 如果 Materials Project 工具不可用（如 API 密钥未配置），记录警告并将属性设为 None
+            # If the Materials Project tool is unavailable (e.g., API key not configured), log a warning and set the attribute to None
             logger.warning(f"Materials Project tool not available: {e}")
             self.materials_project_tool = None
-        # 获取 PubChem 工具实例（通常不需要 API 密钥，所以不会失败）
+        # Obtain the PubChem tool instance (usually requires no API key, so it should not fail)
         self.pubchem_tool = get_pubchem_tool()
 
     def identify_material(self, query: str) -> Dict[str, Any]:
         """
         Identify material type and get corresponding identifier.
-        # 识别材料类型并获取对应的标识符
+        # Identify the material type and obtain the corresponding identifier
 
         Args:
             query (str): Material query string (formula, element combination, or material name)
-            # 材料查询字符串（化学式、元素组合或材料名称）
+            # Material query string (chemical formula, element combination, or material name)
 
         Returns:
             Dict[str, Any]: Dictionary containing material type and identifier information
-            # 包含材料类型和标识符信息的字典
+            # Dictionary containing the material type and identifier information
         """
         try:
-            # ==================== 初始化结果字典 ====================
-            # 构建统一的结果结构，所有字段均预设默认值
+            # ==================== Initialize the result dictionary ====================
+            # Build a unified result structure with default values preset for all fields
             result = {
                 "query": query,
-                # 原始查询字符串，便于结果追溯
+                # Original query string, kept for traceability of the result
                 "material_type": "unknown",
-                # 材料类型：metal（金属）、organic（有机）、unknown（未知）
+                # Material type: metal, organic, or unknown
                 "identifier": None,
-                # 标识符值：MP-ID 或 CAS 号
+                # Identifier value: MP-ID or CAS number
                 "identifier_type": None,
-                # 标识符类型：MP-ID 或 CAS
+                # Identifier type: MP-ID or CAS
                 "additional_info": {},
-                # 附加信息字典，存储从数据库返回的额外字段
+                # Additional info dictionary storing extra fields returned by the databases
                 "validation_status": "not_found",
-                # 验证状态：validated（已验证）、not_found（未找到）、error（错误）
+                # Validation status: validated, not_found, or error
                 "is_verified": False
-                # 是否已验证标志：True 表示已从可靠数据库获取到标识符
+                # Verification flag: True means the identifier was obtained from a reliable database
             }
 
-            # ==================== 第一步：确定材料类型 ====================
-            # 根据查询字符串的元素组成判断材料属于金属、有机还是未知类型
+            # ==================== Step 1: Determine the material type ====================
+            # Determine whether the material is metal, organic, or unknown based on the element composition of the query string
             material_type = self._determine_material_type(query)
             result["material_type"] = material_type
 
-            # ==================== 第二步：根据材料类型获取标识符 ====================
-            # --- 情况 A：金属材料 ---
+            # ==================== Step 2: Get the identifier according to the material type ====================
+            # --- Case A: metal material ---
             if material_type == "metal":
-                # 使用 Materials Project 数据库获取金属材料的 MP-ID
+                # Use the Materials Project database to obtain the MP-ID for the metal material
                 mp_result = self._get_mpid_for_metal(query)
                 if mp_result and "material_id" in mp_result:
-                    # 成功获取到 MP-ID
+                    # Successfully obtained the MP-ID
                     result["identifier"] = mp_result["material_id"]
                     result["identifier_type"] = "MP-ID"
                     result["additional_info"] = mp_result
                     result["validation_status"] = "validated"
                     result["is_verified"] = True
                 else:
-                    # 未在 Materials Project 中找到匹配材料
+                    # No matching material found in Materials Project
                     result["validation_status"] = "not_found"
                     result["is_verified"] = False
                     logger.info(f"Could not find material in Materials Project: {query}")
 
-            # --- 情况 B：有机材料 ---
+            # --- Case B: organic material ---
             elif material_type == "organic":
-                # 使用 PubChem 数据库获取有机化合物的 CAS 号
+                # Use the PubChem database to obtain the CAS number for the organic compound
                 cas_result = self._get_cas_for_organic(query)
                 if cas_result and "CASNumbers" in cas_result:
                     cas_numbers = cas_result["CASNumbers"]
                     if cas_numbers:
-                        # 成功获取到 CAS 号（使用列表中的第一个）
+                        # Successfully obtained a CAS number (use the first one in the list)
                         result["identifier"] = cas_numbers[0]
                         result["identifier_type"] = "CAS"
                         result["additional_info"] = cas_result
                         result["validation_status"] = "validated"
                         result["is_verified"] = True
                     else:
-                        # PubChem 返回了数据但没有 CAS 号
+                        # PubChem returned data but no CAS number
                         result["validation_status"] = "not_found"
                         result["is_verified"] = False
                         logger.info(f"Could not find CAS number in PubChem: {query}")
                 else:
-                    # PubChem 查询失败
+                    # PubChem query failed
                     result["validation_status"] = "not_found"
                     result["is_verified"] = False
                     logger.info(f"Could not find compound info in PubChem: {query}")
 
-            # --- 情况 C：未知类型（兜底策略） ---
+            # --- Case C: unknown type (fallback strategy) ---
             else:
-                # 类型不确定时，依次尝试金属和有机两种数据库
-                # 先尝试 Materials Project
+                # When the type is uncertain, try both the metal and organic databases in turn
+                # Try Materials Project first
                 mp_result = self._get_mpid_for_metal(query)
                 if mp_result and "material_id" in mp_result:
                     result["identifier"] = mp_result["material_id"]
                     result["identifier_type"] = "MP-ID"
                     result["additional_info"] = mp_result
                     result["material_type"] = "metal"
-                    # 回填正确的材料类型
+                    # Backfill the correct material type
                     result["validation_status"] = "validated"
                     result["is_verified"] = True
                 else:
-                    # Materials Project 无结果，再尝试 PubChem
+                    # No result from Materials Project; try PubChem next
                     cas_result = self._get_cas_for_organic(query)
                     if cas_result and "CASNumbers" in cas_result:
                         cas_numbers = cas_result["CASNumbers"]
@@ -155,7 +155,7 @@ class MaterialIdentifierTool:
                             result["identifier_type"] = "CAS"
                             result["additional_info"] = cas_result
                             result["material_type"] = "organic"
-                            # 回填正确的材料类型
+                            # Backfill the correct material type
                             result["validation_status"] = "validated"
                             result["is_verified"] = True
                         else:
@@ -163,177 +163,177 @@ class MaterialIdentifierTool:
                             result["is_verified"] = False
                             logger.info(f"Could not find CAS number in PubChem: {query}")
                     else:
-                        # 两个数据库都未找到匹配项
+                        # No match found in either database
                         result["validation_status"] = "not_found"
                         result["is_verified"] = False
                         logger.info(f"Could not find material in any database: {query}")
 
-            # ==================== 第三步：添加安全警告 ====================
-            # 如果标识符未被验证，在结果中附加警告信息，提醒不要使用未验证的数据库标识符
+            # ==================== Step 3: Add a safety warning ====================
+            # If the identifier was not verified, attach a warning to the result reminding not to use unverified database identifiers
             if not result["is_verified"]:
                 result["warning"] = f"Warning: Could not verify identifier for material '{query}'. Do not use unverified database identifiers."
 
             return result
 
         except Exception as e:
-            # 捕获所有异常，返回包含错误信息的结果字典，避免异常传播至调用方
+            # Catch all exceptions and return a result dictionary containing the error information, preventing exceptions from propagating to the caller
             logger.error(f"Error identifying material identifier: {e}")
             return {
                 "success": False,
                 "query": query,
                 "error": f"Identification failed: {str(e)}",
                 "validation_status": "error",
-                # 错误状态下验证状态标记为 error
+                # In the error state, the validation status is marked as error
                 "is_verified": False,
-                # 错误状态下自然未验证
+                # In the error state, the identifier is naturally unverified
                 "warning": f"Warning: Error occurred while verifying identifier for material '{query}'. Do not use unverified database identifiers."
             }
 
     def _determine_material_type(self, query: str) -> str:
         """
         Determine material type (metal, organic, or other).
-        # 根据查询字符串的元素组成判断材料类型
+        # Determine the material type based on the element composition of the query string
 
         Args:
             query (str): Query string
 
         Returns:
             str: Material type ("metal", "organic", "unknown")
-            # 返回 "metal"（金属）、"organic"（有机）或 "unknown"（未知）
+            # Returns "metal", "organic", or "unknown"
         """
-        # 第一步：从查询字符串中提取元素符号
+        # Step 1: Extract element symbols from the query string
         elements = self._extract_elements(query)
 
-        # 第二步：定义常见金属元素列表（包含碱金属、碱土金属、过渡金属、稀土等）
+        # Step 2: Define the list of common metal elements (including alkali metals, alkaline earth metals, transition metals, rare earths, etc.)
         metal_elements = ['Li', 'Be', 'Na', 'Mg', 'Al', 'K', 'Ca', 'Sc', 'Ti', 'V', 'Cr', 'Mn', 'Fe', 'Co', 'Ni', 'Cu', 'Zn',
                          'Ga', 'Rb', 'Sr', 'Y', 'Zr', 'Nb', 'Mo', 'Tc', 'Ru', 'Rh', 'Pd', 'Ag', 'Cd', 'In', 'Sn', 'Cs', 'Ba',
                          'La', 'Ce', 'Pr', 'Nd', 'Pm', 'Sm', 'Eu', 'Gd', 'Tb', 'Dy', 'Ho', 'Er', 'Tm', 'Yb', 'Lu', 'Hf', 'Ta',
                          'W', 'Re', 'Os', 'Ir', 'Pt', 'Au', 'Hg', 'Tl', 'Pb', 'Bi', 'Po', 'Fr', 'Ra', 'Ac', 'Th', 'Pa', 'U',
                          'Np', 'Pu', 'Am', 'Cm', 'Bk', 'Cf', 'Es', 'Fm', 'Md', 'No', 'Lr']
 
-        # 第三步：定义常见非金属元素列表（通常构成有机化合物的骨架元素）
+        # Step 3: Define the list of common non-metal elements (typically the backbone elements of organic compounds)
         non_metal_elements = ['H', 'C', 'N', 'O', 'F', 'P', 'S', 'Cl', 'Br', 'I']
 
-        # 第四步：计算查询中的金属元素和非金属元素情况
+        # Step 4: Compute the metal and non-metal element situation in the query
         has_metal = any(element in metal_elements for element in elements)
-        # 检查查询中是否包含任意金属元素
+        # Check whether the query contains any metal element
 
         non_metal_count = sum(1 for element in elements if element in non_metal_elements)
-        # 统计查询中非金属元素的数量
+        # Count the number of non-metal elements in the query
 
         total_elements = len(elements)
-        # 查询中识别到的元素总数
+        # Total number of elements identified in the query
 
-        # 第五步：判断逻辑
-        # 如果包含金属元素，优先判定为金属材料
+        # Step 5: Decision logic
+        # If a metal element is present, classify as a metal material first
         if has_metal:
             return "metal"
 
-        # 如果非金属元素占比 >= 50%，判定为有机材料
+        # If non-metal elements account for >= 50%, classify as an organic material
         if total_elements > 0 and non_metal_count / total_elements >= 0.5:
             return "organic"
 
-        # 以上条件都不满足，返回 unknown（未知类型）
+        # If none of the above conditions are met, return unknown
         return "unknown"
 
     def _extract_elements(self, query: str) -> list:
         """
         Extract element symbols from query string.
-        # 从查询字符串中提取化学元素符号
+        # Extract chemical element symbols from the query string
 
         Args:
             query (str): Query string
 
         Returns:
             list: List of element symbols
-            # 去重后的元素符号列表
+            # Deduplicated list of element symbols
         """
         import re
-        # 在方法内导入 re，仅在需要时加载，避免不必要的模块初始化
+        # Import re inside the method so it is loaded only when needed, avoiding unnecessary module initialization
 
-        # 使用正则表达式匹配大写字母 + 可选小写字母（标准元素符号格式）
+        # Use a regex to match an uppercase letter plus an optional lowercase letter (standard element symbol format)
         elements = re.findall(r'[A-Z][a-z]?', query)
 
-        # 初始化有效元素列表
+        # Initialize the list of valid elements
         valid_elements = []
 
-        # 定义常见化学元素列表（简化版，覆盖常用元素）
+        # Define the list of common chemical elements (simplified version covering commonly used elements)
         common_elements = ['H', 'He', 'Li', 'Be', 'B', 'C', 'N', 'O', 'F', 'Ne', 'Na', 'Mg', 'Al', 'Si', 'P', 'S', 'Cl', 'Ar',
                           'K', 'Ca', 'Sc', 'Ti', 'V', 'Cr', 'Mn', 'Fe', 'Co', 'Ni', 'Cu', 'Zn', 'Ga', 'Ge', 'As', 'Se', 'Br', 'Kr',
                           'Rb', 'Sr', 'Y', 'Zr', 'Nb', 'Mo', 'Tc', 'Ru', 'Rh', 'Pd', 'Ag', 'Cd', 'In', 'Sn', 'Sb', 'Te', 'I', 'Xe',
                           'Cs', 'Ba', 'La', 'Ce', 'Pr', 'Nd', 'Pm', 'Sm', 'Eu', 'Gd', 'Tb', 'Dy', 'Ho', 'Er', 'Tm', 'Yb', 'Lu',
                           'Hf', 'Ta', 'W', 'Re', 'Os', 'Ir', 'Pt', 'Au', 'Hg', 'Tl', 'Pb', 'Bi', 'Po', 'At', 'Rn']
 
-        # 过滤：仅保留在已知元素列表中的符号（排除大写字母缩写等非元素字符串）
+        # Filter: keep only symbols present in the known element list (excluding non-element strings such as uppercase abbreviations)
         for element in elements:
             if element in common_elements:
                 valid_elements.append(element)
 
-        # 通过 set 去重后返回列表
-        # 注：在某些 Python 版本中需包装为 list(set(...)) 确保返回可变列表
+        # Deduplicate via set and return as a list
+        # Note: on some Python versions it must be wrapped as list(set(...)) to ensure a mutable list is returned
         return list(set(valid_elements))
 
     def _get_mpid_for_metal(self, query: str) -> Optional[Dict[str, Any]]:
         """
         Get MP-ID for metal material.
-        # 为金属材料获取 Materials Project ID
+        # Obtain the Materials Project ID for a metal material
 
         Args:
             query (str): Query string
 
         Returns:
             Optional[Dict[str, Any]]: Materials Project data or None
-            # 材料数据字典或 None（表示未找到）
+            # Material data dictionary or None (meaning not found)
         """
-        # 如果 Materials Project 工具不可用，直接返回 None
+        # If the Materials Project tool is unavailable, return None directly
         if not self.materials_project_tool:
             return None
 
         try:
-            # ==================== 策略一：按化学式搜索 ====================
+            # ==================== Strategy 1: search by chemical formula ====================
             result = self.materials_project_tool.search_materials(
                 formula=query,
                 limit=5,
                 fields=["material_id", "formula_pretty", "chemsys"]
-                # 仅请求必要的字段以提高查询效率
+                # Request only the necessary fields to improve query efficiency
             )
             if "error" not in result and "data" in result and result["data"]:
-                # 遍历搜索结果，逐一验证
+                # Iterate over the search results and verify them one by one
                 for material in result["data"]:
                     material_formula = material.get("formula", "")
                     material_id = material.get("material_id", "")
 
-                    # 验证 MP-ID 是否在 Materials Project 数据库中真实存在
+                    # Verify that the MP-ID actually exists in the Materials Project database
                     if material_id and self.materials_project_tool.verify_material_id_exists(material_id):
-                        # 检查化学式是否与查询严格相关（防止返回不相关的材料）
+                        # Check whether the chemical formula is strictly related to the query (to prevent returning irrelevant materials)
                         if self._is_formula_strictly_related(query, material_formula):
                             logger.info(f"Found related material: {material_formula} (ID: {material_id})")
                             return material
-                            # 找到匹配材料，立即返回
+                            # Matching material found; return immediately
                         else:
                             logger.warning(f"Found material but formula mismatch: query '{query}' vs '{material_formula}'")
                     else:
                         logger.warning(f"Found invalid material ID: {material_id}")
 
-            # ==================== 策略二：按元素搜索（降级方案） ====================
-            # 如果化学式搜索未找到结果，提取查询中的元素符号重新搜索
+            # ==================== Strategy 2: search by elements (fallback) ====================
+            # If the formula search found nothing, extract element symbols from the query and search again
             elements = self._extract_elements(query)
             if elements:
                 result = self.materials_project_tool.search_materials(
                     elements=elements[:3],
-                    # 限制前 3 个元素以避免搜索范围过于宽泛
+                    # Limit to the first 3 elements to avoid an overly broad search scope
                     limit=5,
                     fields=["material_id", "formula_pretty", "chemsys"]
                 )
                 if "error" not in result and "data" in result and result["data"]:
                     for material in result["data"]:
-                        # 从化学体系字段中提取材料包含的元素
+                        # Extract the elements contained in the material from the chemical system field
                         material_elements = material.get("chemsys", "").split("-")
                         material_id = material.get("material_id", "")
 
-                        # 验证 MP-ID 是否真实存在
+                        # Verify that the MP-ID actually exists
                         if material_id and self.materials_project_tool.verify_material_id_exists(material_id):
-                            # 检查材料元素是否与查询元素严格匹配
+                            # Check whether the material elements strictly match the query elements
                             if self._are_elements_strictly_related(elements, material_elements):
                                 logger.info(f"Found material with related elements: {material.get('formula', '')} (ID: {material_id})")
                                 return material
@@ -342,18 +342,18 @@ class MaterialIdentifierTool:
                         else:
                             logger.warning(f"Found invalid material ID: {material_id}")
 
-            # 两种策略都失败时，返回 None（不生成假数据，确保数据可靠性）
+            # When both strategies fail, return None (no fabricated data, ensuring data reliability)
             logger.info(f"No matching material found in Materials Project for {query}")
             return None
         except Exception as e:
             logger.warning(f"Error getting MP-ID for metal material: {e}")
-            # 即使发生异常也返回 None，而不是虚构数据
+            # Even on exception, return None instead of fabricating data
             return None
 
     def _is_formula_strictly_related(self, query: str, formula: str) -> bool:
         """
         Strictly check if query and formula are related.
-        # 严格检查查询字符串和化学式是否相关
+        # Strictly check whether the query string and the chemical formula are related
 
         Args:
             query (str): Query string
@@ -361,25 +361,25 @@ class MaterialIdentifierTool:
 
         Returns:
             bool: Whether related
-            # True 表示相关，False 表示不相关
+            # True means related, False means not related
         """
-        # 提取查询和化学式中的元素集合
+        # Extract the element sets from the query and the formula
         query_elements = set(self._extract_elements(query))
         formula_elements = set(self._extract_elements(formula))
 
-        # 定义主要金属元素列表（用于复合物中有机配体场景的特殊处理）
-        # 例如 (FeTCPP)Co(Melm) 这类复合物需要匹配核心金属元素
+        # Define the list of main metal elements (used for special handling of organic-ligand composite scenarios)
+        # For example, composites like (FeTCPP)Co(Melm) need to match the core metal elements
         main_metal_elements = ['Fe', 'Co', 'Ni', 'Cu', 'Zn', 'Mn', 'Cr', 'V', 'Ti']
         query_metals = [e for e in query_elements if e in main_metal_elements]
         formula_metals = [e for e in formula_elements if e in main_metal_elements]
 
-        # 如果查询和化学式包含相同的主要金属元素，判定为相关
-        # 这是为了处理含复杂有机配体的金属配合物
+        # If the query and the formula contain the same main metal elements, consider them related
+        # This handles metal complexes with complex organic ligands
         if query_metals and formula_metals and set(query_metals) == set(formula_metals):
             return True
 
-        # 一般情况：检查共有元素的比例
-        # 如果至少有 50% 的查询元素出现在化学式中，判定为相关
+        # General case: check the proportion of shared elements
+        # If at least 50% of the query elements appear in the formula, consider them related
         if len(query_elements) > 0:
             common_elements = query_elements.intersection(formula_elements)
             return len(common_elements) / len(query_elements) >= 0.5
@@ -389,7 +389,7 @@ class MaterialIdentifierTool:
     def _are_elements_strictly_related(self, query_elements: list, material_elements: list) -> bool:
         """
         Strictly check if query elements and material elements are related.
-        # 严格检查查询元素和材料元素是否相关
+        # Strictly check whether the query elements and the material elements are related
 
         Args:
             query_elements (list): Query element list
@@ -397,12 +397,12 @@ class MaterialIdentifierTool:
 
         Returns:
             bool: Whether related
-            # True 表示相关，False 表示不相关
+            # True means related, False means not related
         """
         query_set = set(query_elements)
         material_set = set(material_elements)
 
-        # 检查共有元素的比例是否达到 50% 阈值
+        # Check whether the proportion of shared elements reaches the 50% threshold
         if len(query_set) > 0:
             common_elements = query_set.intersection(material_set)
             return len(common_elements) / len(query_set) >= 0.5
@@ -412,7 +412,7 @@ class MaterialIdentifierTool:
     def _is_formula_related(self, query: str, formula: str) -> bool:
         """
         Check if query and formula are related.
-        # （宽松版）检查查询和化学式是否相关——只要存在共同元素即判定相关
+        # (Lenient version) Check whether the query and the chemical formula are related — any shared element counts as related
 
         Args:
             query (str): Query string
@@ -421,17 +421,17 @@ class MaterialIdentifierTool:
         Returns:
             bool: Whether related
         """
-        # 提取查询和化学式中的元素集合
+        # Extract the element sets from the query and the formula
         query_elements = set(self._extract_elements(query))
         formula_elements = set(self._extract_elements(formula))
 
-        # 只要存在至少一个共同元素，即判定为相关（比严格版本更宽松）
+        # As long as at least one common element exists, consider them related (more lenient than the strict version)
         return len(query_elements.intersection(formula_elements)) > 0
 
     def _are_elements_related(self, query_elements: list, material_elements: list) -> bool:
         """
         Check if query elements and material elements are related.
-        # （宽松版）检查查询元素和材料元素是否相关——只要存在共同元素即判定相关
+        # (Lenient version) Check whether the query elements and the material elements are related — any shared element counts as related
 
         Args:
             query_elements (list): Query element list
@@ -443,52 +443,52 @@ class MaterialIdentifierTool:
         query_set = set(query_elements)
         material_set = set(material_elements)
 
-        # 只要存在至少一个共同元素，即判定为相关（比严格版本更宽松）
+        # As long as at least one common element exists, consider them related (more lenient than the strict version)
         return len(query_set.intersection(material_set)) > 0
 
     def _get_cas_for_organic(self, query: str) -> Optional[Dict[str, Any]]:
         """
         Get CAS number for organic material.
-        # 为有机材料获取 CAS 注册号
+        # Obtain the CAS registry number for an organic material
 
         Args:
             query (str): Query string
 
         Returns:
             Optional[Dict[str, Any]]: PubChem data (containing CAS number) or None
-            # PubChem 数据字典（包含 CAS 号）或 None
+            # PubChem data dictionary (containing the CAS number) or None
         """
         try:
-            # 通过 PubChem 工具查询化合物信息（包含 CAS 注册号）
+            # Query compound information (including the CAS registry number) via the PubChem tool
             result = self.pubchem_tool.get_compound_info_with_cas(query)
-            # 检查查询是否成功且返回了化合物数据
+            # Check whether the query succeeded and returned compound data
             if "error" not in result and "Compound" in result:
                 return result["Compound"]
-                # 返回化合物信息字典，调用方从中提取 CASNumbers 字段
+                # Return the compound info dictionary; the caller extracts the CASNumbers field from it
             return None
         except Exception as e:
             logger.warning(f"Error getting CAS number for organic material: {e}")
             return None
-            # 发生异常时返回 None，不伪造数据
+            # On exception, return None without fabricating data
 
-# ==================== 全局单例实例管理 ====================
-# 使用模块级变量实现懒加载单例模式
+# ==================== Global singleton instance management ====================
+# Use a module-level variable to implement the lazy-loading singleton pattern
 _material_identifier_tool = None
-# 初始化为 None，第一次调用 get_material_identifier_tool() 时创建实例
+# Initialized to None; the instance is created on the first call to get_material_identifier_tool()
 
 def get_material_identifier_tool() -> MaterialIdentifierTool:
     """
     Get material identifier processing tool instance.
-    # 获取材料标识符处理工具的单例实例
+    # Get the singleton instance of the material identifier processing tool
 
     Returns:
         MaterialIdentifierTool: Material identifier processing tool instance
     """
     global _material_identifier_tool
-    # 声明使用模块级全局变量
+    # Declare use of the module-level global variable
 
     if _material_identifier_tool is None:
-        # 懒加载：仅在首次调用时创建实例
+        # Lazy loading: create the instance only on the first call
         _material_identifier_tool = MaterialIdentifierTool()
     return _material_identifier_tool
-    # 返回单例实例，确保全局只有一个工具实例，节省资源
+    # Return the singleton instance, ensuring only one tool instance exists globally to save resources

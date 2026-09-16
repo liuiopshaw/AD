@@ -5,30 +5,20 @@ Uses local Qwen3-VL-8B + 7 LoRA adapters via the API server.
 Evaluates multiple nanomaterials: Cu_NC_CD, Ag_NP, ZnO_NP.
 """
 
-import httpx, json, time
+import json, time, os, sys
 
-SERVER = "http://localhost:8000/v1/chat/completions"
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import llm_client
 
 AGENTS = ["apa", "epa", "bsa", "mma", "ca"]
 MATERIALS = ["Cu_NC_CD", "Ag_NP", "ZnO_NP"]
 
 
 def query_agent(agent: str, prompt: str, temp: float = 0.3) -> str:
-    """Call the local LLM server with a specific LoRA adapter."""
-    resp = httpx.post(
-        SERVER,
-        json={
-            "model": "nano-bio",
-            "agent": agent,
-            "messages": [{"role": "user", "content": prompt}],
-            "max_tokens": 512,
-            "temperature": temp,
-        },
-        timeout=120
-    )
-    if resp.status_code == 200:
-        return resp.json()["choices"][0]["message"]["content"]
-    return f"ERROR: {resp.status_code}"
+    """Call the LLM endpoint configured for the given agent (local LoRA
+    adapter by default; cloud API if overridden in llm_endpoints.json)."""
+    return llm_client.chat(agent, prompt, max_tokens=512, temperature=temp,
+                           timeout=120, retries=1, retry_on_timeout=False)
 
 
 def evaluate_material(name: str) -> dict:

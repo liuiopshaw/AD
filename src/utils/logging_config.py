@@ -1,18 +1,19 @@
 """
-统一日志配置模块 (Unified Logging Configuration)
-为 ECOMATS 项目提供集中化的日志管理。
-通过本模块可以统一控制所有日志的输出级别、格式和目标，
-避免各模块各自配置日志导致的混乱。
+Unified Logging Configuration Module (Unified Logging Configuration)
+Provides centralized log management for the ECOMATS project.
+This module allows unified control over the output level, format, and destination
+of all logs, avoiding the chaos caused by each module configuring its own logging.
 """
 
-# 导入 Python 标准库的 logging 模块，用于日志记录
+# Import the logging module from the Python standard library for log recording
 import logging
-# 导入 sys 模块，用于访问标准输出流 (stdout)
+# Import the sys module to access the standard output stream (stdout)
 import sys
 
-# 需要抑制的 Agent 日志记录器列表
-# 这些 Agent 运行时会产生大量调试/信息日志，在正常使用中不需要显示，
-# 因此将它们集中管理以便一键静默，减少控制台输出噪音
+# List of Agent loggers to suppress
+# These Agents produce a large volume of debug/info logs at runtime, which are not
+# needed during normal use, so they are managed centrally for one-click silencing
+# to reduce console output noise
 AGENT_LOGGERS = [
     'src.agents.Creative_Designing_agent',
     'src.agents.Assessment_Screening_agent_A',
@@ -26,67 +27,73 @@ AGENT_LOGGERS = [
     'src.agents.Extracting_agent',
 ]
 
-# 需要抑制的第三方库日志记录器列表
-# 这些第三方库（如 httpx, openai 等）会产生大量底层网络请求和调试日志，
-# 默认设置为 WARNING 级别，避免干扰应用程序的主要日志输出
+# List of third-party library loggers to suppress
+# These third-party libraries (e.g., httpx, openai) generate a large number of
+# low-level network request and debug logs; they are set to WARNING level by default
+# to avoid interfering with the application's main log output
 THIRD_PARTY_LOGGERS = [
-    'httpx',          # HTTP 客户端库，每次请求都会产生大量 DEBUG 日志
-    'openai',         # OpenAI API 客户端库
-    'chromadb',       # 向量数据库客户端库
-    'urllib3',        # HTTP 连接池库，底层网络日志
+    'httpx',          # HTTP client library; every request produces a large number of DEBUG logs
+    'openai',         # OpenAI API client library
+    'chromadb',       # Vector database client library
+    'urllib3',        # HTTP connection pool library; low-level network logs
 ]
 
 
 def setup_logging(level: int = logging.WARNING, suppress_agents: bool = True):
     """
-    配置 ECOMATS 的统一日志系统。
+    Configure the unified logging system for ECOMATS.
 
-    该函数应在应用启动时尽早调用，以建立一致的日志行为。
+    This function should be called as early as possible at application startup
+    to establish consistent logging behavior.
 
     Args:
-        level: 根日志记录器的日志级别，默认为 WARNING。
-               这意味着默认情况下只有 WARNING 及以上级别（ERROR, CRITICAL）的日志才会被输出。
-        suppress_agents: 是否抑制各个 Agent 的日志输出，默认为 True。
-                        当设为 True 时，所有 Agent 日志记录器会被设置为 CRITICAL 级别（基本不输出）。
+        level: The log level of the root logger, defaulting to WARNING.
+               This means that by default only logs at WARNING level and above
+               (ERROR, CRITICAL) will be output.
+        suppress_agents: Whether to suppress the log output of each Agent, defaulting to True.
+                         When set to True, all Agent loggers are set to CRITICAL level
+                         (essentially no output).
     """
-    # 配置根日志记录器的基本设置
-    # basicConfig 是整个日志系统的入口配置，设置日志级别、输出格式和输出目标
-    # 格式说明：%(asctime)s = 时间戳, %(name)s = 日志记录器名称,
-    #           %(levelname)s = 日志级别名称, %(message)s = 日志消息
+    # Configure the basic settings of the root logger
+    # basicConfig is the entry-point configuration of the entire logging system,
+    # setting the log level, output format, and output destination
+    # Format description: %(asctime)s = timestamp, %(name)s = logger name,
+    #           %(levelname)s = log level name, %(message)s = log message
     logging.basicConfig(
-        level=level,                                          # 设定根日志记录器的级别阈值
-        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',  # 统一的日志输出格式
-        handlers=[logging.StreamHandler(sys.stdout)]           # 将日志输出到标准输出流
+        level=level,                                          # Set the level threshold of the root logger
+        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',  # Unified log output format
+        handlers=[logging.StreamHandler(sys.stdout)]           # Output logs to the standard output stream
     )
 
     if suppress_agents:
-        # 将所有 Agent 日志记录器的输出级别提升至 CRITICAL
-        # CRITICAL 是最高级别，通常情况下 Agent 不会输出 CRITICAL 日志，
-        # 因此这等同于静默了所有 Agent 的日志输出
+        # Raise the output level of all Agent loggers to CRITICAL
+        # CRITICAL is the highest level; Agents normally do not emit CRITICAL logs,
+        # so this effectively silences all Agent log output
         for logger_name in AGENT_LOGGERS:
             logging.getLogger(logger_name).setLevel(logging.CRITICAL)
 
-    # 将第三方库日志记录器的级别设为 WARNING
-    # 这样只会在第三方库出现警告或错误时才有日志输出，
-    # 而正常的请求/响应日志（DEBUG/INFO 级别）将被过滤
+    # Set the level of third-party library loggers to WARNING
+    # This way, logs are only output when a third-party library issues a warning
+    # or error, while normal request/response logs (DEBUG/INFO level) are filtered out
     for logger_name in THIRD_PARTY_LOGGERS:
         logging.getLogger(logger_name).setLevel(logging.WARNING)
 
 
 def get_logger(name: str) -> logging.Logger:
     """
-    获取一个指定名称的日志记录器实例。
+    Get a logger instance with the specified name.
 
-    这是各模块获取日志记录器的统一入口。推荐调用方式为 get_logger(__name__)，
-    这样每个模块的日志记录器名称会自动映射其模块路径。
+    This is the unified entry point for each module to obtain a logger. The recommended
+    calling convention is get_logger(__name__), so that each module's logger name
+    automatically maps to its module path.
 
     Args:
-        name: 日志记录器名称，通常传入 __name__（当前模块的完整路径名）
+        name: The logger name, usually passing __name__ (the full path name of the current module)
 
     Returns:
-        logging.Logger: 已配置的日志记录器实例。如果此前已调用 setup_logging()，
-                        则会继承根日志记录器的配置。
+        logging.Logger: A configured logger instance. If setup_logging() has been called
+                        previously, it inherits the root logger's configuration.
     """
-    # getLogger 是幂等的：相同 name 会返回同一个 Logger 实例
-    # 这样保证了同一模块内的日志设置一致性
+    # getLogger is idempotent: the same name returns the same Logger instance
+    # This ensures consistent log settings within the same module
     return logging.getLogger(name)

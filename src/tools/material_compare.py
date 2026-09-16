@@ -123,30 +123,30 @@ class MaterialCompare:
 
         best = ranked[0]
         recommendations.append(
-            f"综合最优推荐: {best['material_name']} "
-            f"(综合评分 {best.get('comprehensive_score', 0):.1f}/10)"
+            f"Best overall recommendation: {best['material_name']} "
+            f"(comprehensive score {best.get('comprehensive_score', 0):.1f}/10)"
         )
 
         # Check selectivity champion
         selectivity_best = max(ranked, key=lambda x: x.get("selectivity_ratio") or 0)
         if selectivity_best.get("selectivity_ratio"):
             recommendations.append(
-                f"选择性抗菌最优: {selectivity_best['material_name']} "
-                f"(选择性比值 {selectivity_best['selectivity_ratio']:.1f})"
+                f"Best antibacterial selectivity: {selectivity_best['material_name']} "
+                f"(selectivity ratio {selectivity_best['selectivity_ratio']:.1f})"
             )
 
         # Check enzyme activity champion
         enzyme_best = max(ranked, key=lambda x: x.get("epa_score", 0))
         recommendations.append(
-            f"类酶活性最优: {enzyme_best['material_name']} "
-            f"(酶活评分 {enzyme_best.get('epa_score', 0):.1f}/10)"
+            f"Best enzyme-like activity: {enzyme_best['material_name']} "
+            f"(enzyme activity score {enzyme_best.get('epa_score', 0):.1f}/10)"
         )
 
         # Check safety champion
         safety_best = max(ranked, key=lambda x: x.get("bsa_score", 0))
         recommendations.append(
-            f"生物安全性最优: {safety_best['material_name']} "
-            f"(安全评分 {safety_best.get('bsa_score', 0):.1f}/10)"
+            f"Best biosafety: {safety_best['material_name']} "
+            f"(safety score {safety_best.get('bsa_score', 0):.1f}/10)"
         )
 
         return recommendations

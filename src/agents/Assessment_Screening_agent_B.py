@@ -1,66 +1,68 @@
-# 导入 logging 模块，用于记录运行日志，便于调试和追踪 agent 行为
+# Import the logging module for run-time logging, facilitating debugging and agent behavior tracing
 import logging
-# 从 base_agent 模块导入 BaseAgent 基类，所有专家 agent 均继承自此基类
+# Import the BaseAgent base class from the base_agent module; all expert agents inherit from it
 from src.agents.base_agent import BaseAgent
-# 从 tools 模块导入 ToolFactory，用于统一创建和管理 agent 所使用的工具集
+# Import ToolFactory from the tools module, used to uniformly create and manage the agent's toolset
 from src.tools import ToolFactory
 
-# 配置日志的基本参数：设置日志级别为 WARNING，过滤掉 INFO/DEBUG 级别的冗余信息
-# 这样只输出警告及更高级别的日志，避免控制台输出过多不必要的内容
+# Configure basic logging parameters: set the log level to WARNING to filter out redundant INFO/DEBUG messages
+# This ensures only warnings and higher-level logs are output, avoiding excessive console noise
 logging.basicConfig(level=logging.WARNING)
-# 获取当前模块的 logger 实例，后续所有日志输出都通过此 logger 进行
+# Get the logger instance for the current module; all subsequent log output goes through this logger
 logger = logging.getLogger(__name__)
 
-# 评估筛选专家 B 类
-# 继承自 BaseAgent，专门负责从环境健康与安全（EHS）角度对材料提案进行综合评估
+# Assessment Screening Expert Agent B
+# Inherits from BaseAgent and is dedicated to comprehensively evaluating material proposals
+# from an Environmental, Health and Safety (EHS) perspective
 class AssessmentScreeningAgentB(BaseAgent):
-    """评估筛选专家 B agent
-    负责对材料提案的各个方面进行全面评估，聚焦于环境影响与人体健康风险评估
+    """Assessment Screening Expert Agent B
+    Responsible for comprehensively evaluating all aspects of material proposals,
+    focusing on environmental impact and human health risk assessment
     """
 
     def __init__(self, llm):
-        # 延迟导入 Config 配置类，避免循环导入问题，同时保证配置在需要时才加载
+        # Lazily import the Config class to avoid circular import issues, ensuring config is loaded only when needed
         from src.config.config import Config
-        # 调用基类 BaseAgent 的构造函数，传入 agent 的所有核心参数
+        # Call the BaseAgent constructor, passing all core agent parameters
         super().__init__(
             llm=llm,
-            # 角色标识：评估筛选专家 B，在多 agent 协作中用于区分不同的专家身份
+            # Role identifier: Assessment Screening Expert B, used to distinguish expert identities in multi-agent collaboration
             role="Assessment_Screening_agent_B",
-            # 目标描述：告诉 agent 它的核心任务是全面评估材料提案的各个方面
+            # Goal description: tells the agent that its core task is to comprehensively evaluate all aspects of material proposals
             goal="Comprehensively evaluate various aspects of material proposals",
-            # 指定该 agent 使用的提示词模板文件（Markdown 格式），运行时会被加载并填充参数
+            # Specifies the prompt template file (Markdown format) used by this agent; loaded and populated with parameters at runtime
             prompt_file="assessment_screening_agent_b_prompt.md",
-            # 从配置文件读取专家 B 的专用温度参数，控制 LLM 输出的随机性
+            # Reads Expert B's dedicated temperature parameter from the config file, controlling the randomness of LLM output
             temperature=Config.EXPERT_B_TEMPERATURE,
-            # 最大迭代次数设为 2：
-            # 遵循"少即是多"原则，从原来的 15 次大幅缩减，专注于核心评估逻辑
+            # Maximum iterations set to 2:
+            # Following the "less is more" principle, greatly reduced from the original 15 to focus on the core evaluation logic
             max_iter=2,
-            # 提示词参数：将 EXPERT_ID 替换为 "B"，使提示词模板中的占位符被正确填充
+            # Prompt parameters: replaces EXPERT_ID with "B" so the placeholder in the prompt template is correctly filled
             prompt_params={"EXPERT_ID": "B"}
         )
 
     def create_agent(self):
-        # LLM 的选择（EAS / 带温度标准 LLM / 默认 LLM）已统一收敛到
-        # BaseAgent._resolve_llm()，此处不再重复创建
+        # LLM selection (EAS / temperature-configured standard LLM / default LLM) has been unified in
+        # BaseAgent._resolve_llm(), so it is not re-created here
 
-        # 调用基类的 create_agent 方法，完成 agent 实例的基础创建和配置
+        # Call the base class's create_agent method to complete the basic creation and configuration of the agent instance
         agent = super().create_agent()
 
-        # 使用统一的 ASA（Assessment Screening Agent）评估工具集
-        # ASA 工具集由 A/B/C 三个专家共享，提供化学性质查询、环境评估等能力
+        # Use the unified ASA (Assessment Screening Agent) assessment toolset
+        # The ASA toolset is shared by the three experts A/B/C, providing chemical property queries, environmental assessment, etc.
         try:
-            # 动态导入工具开关检查函数，判断是否启用外部工具
+            # Dynamically import the tools toggle check function to determine whether external tools are enabled
             from src.utils.llm_config import tools_enabled
             if tools_enabled():
-                # 工具启用时：创建统一的评估工具集，包含化学品数据库查询等功能
+                # When tools are enabled: create the unified assessment toolset, including chemical database query capabilities
                 agent.tools = ToolFactory.create_unified_assessment_tools()
             else:
-                # 工具未启用时：赋予空列表，agent 仅依靠自身知识进行推理
+                # When tools are not enabled: assign an empty list; the agent relies solely on its own knowledge for reasoning
                 agent.tools = []
         except Exception:
-            # 如果 tools_enabled 检查失败（例如配置缺失），默认启用工具集
-            # 这是一种"宁可多用工具也不错失信息"的容错策略
+            # If the tools_enabled check fails (e.g., missing config), enable the toolset by default
+            # This is a fault-tolerant strategy of "rather use tools than miss information"
             agent.tools = ToolFactory.create_unified_assessment_tools()
 
-        # 返回配置完成的 agent 实例，供上层调用者使用
+        # Return the fully configured agent instance for use by the caller
         return agent

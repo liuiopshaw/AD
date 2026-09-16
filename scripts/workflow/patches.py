@@ -7,159 +7,174 @@ CrewAI 1.7.0's async memory system and the synchronous ChromaDB client.
 The patches override async methods to delegate to their synchronous counterparts.
 """
 
-# sys: 用于检测操作系统平台（Windows/Linux/macOS）
+# sys: used to detect the operating system platform (Windows/Linux/macOS)
 import sys
-# signal: 用于处理 Windows 上不支持的操作系统信号
+# signal: used to handle OS signals not supported on Windows
 import signal
 
 
 def apply_windows_patches():
     """
-    应用 Windows 平台特定的兼容性补丁
+    Apply Windows platform-specific compatibility patches
 
-    Windows 与 Unix 系统有两个关键差异：
-    1. 不支持 SIGHUP 信号——创建占位符 None 避免 AttributeError
-    2. 默认控制台编码不是 UTF-8——重新配置为 UTF-8 防止中文输出乱码
+    There are two key differences between Windows and Unix systems:
+    1. SIGHUP is not supported -- create a None placeholder to avoid AttributeError
+    2. The default console encoding is not UTF-8 -- reconfigure to UTF-8 to
+       prevent garbled Chinese output
 
-    这些补丁只在 Windows 平台生效，Linux/macOS 下直接跳过。
+    These patches only take effect on Windows; they are skipped on Linux/macOS.
     """
-    # 检查是否为 Windows 平台
+    # Check whether the platform is Windows
     if sys.platform == 'win32':
-        # SIGHUP 是 Unix 的信号（终端挂断），Windows 不支持
-        # 在 signal 模块上动态添加 SIGHUP 属性，值设为 None
-        # 这样代码中所有 signal.SIGHUP 引用都不会抛异常
+        # SIGHUP is a Unix signal (terminal hangup) and is not supported on Windows.
+        # Dynamically add a SIGHUP attribute to the signal module, set to None,
+        # so that all references to signal.SIGHUP in the code do not raise exceptions
         if not hasattr(signal, 'SIGHUP'):
             signal.SIGHUP = None
 
-        # 将标准输出和标准错误的编码改为 UTF-8
-        # Windows 终端默认使用 GBK 编码，会导致中文显示为乱码
+        # Change the encoding of stdout and stderr to UTF-8.
+        # Windows terminals default to GBK encoding, which would display
+        # Chinese as garbled characters
         try:
             sys.stdout.reconfigure(encoding='utf-8')
             sys.stderr.reconfigure(encoding='utf-8')
         except Exception:
-            # Python < 3.7 不支持 reconfigure() 方法，静默跳过
+            # Python < 3.7 does not support the reconfigure() method; skip silently
             pass
 
 
 def apply_chromadb_async_patch():
     """
-    修补 ChromaDBClient.asearch() 方法
+    Patch the ChromaDBClient.asearch() method
 
-    问题背景：
-    CrewAI 1.7.0 的异步内存系统在调用记忆搜索时使用了 async/await 模式，
-    但底层 ChromaDB 客户端只提供了同步的 search() 方法，没有 asearch()。
-    这导致在异步模式下调用记忆搜索时会抛出 AttributeError。
+    Background:
+    CrewAI 1.7.0's async memory system uses the async/await pattern when
+    invoking memory search, but the underlying ChromaDB client only provides
+    a synchronous search() method and has no asearch().
+    This causes an AttributeError when memory search is called in async mode.
 
-    解决方案：
-    创建 PatchedChromaDBClient 子类，覆写 asearch() 方法，
-    让它直接调用父类的同步 search() 方法。
-    async/await 会等待这个同步调用完成，但不影响其他异步操作。
+    Solution:
+    Create a PatchedChromaDBClient subclass that overrides asearch()
+    so that it directly calls the parent class's synchronous search() method.
+    async/await will wait for this synchronous call to complete without
+    affecting other asynchronous operations.
 
-    应用方式：
-    在模块级别替换 ChromaDBClient 类，CrewAI 后续会实例化修补后的版本。
+    How it is applied:
+    Replace the ChromaDBClient class at module level; CrewAI will later
+    instantiate the patched version.
     """
-    # 导入 CrewAI 的 ChromaDB 客户端模块
+    # Import CrewAI's ChromaDB client module
     import crewai.rag.chromadb.client as chromadb_client_module
-    # 保留原始类引用（以防后续需要）
+    # Keep a reference to the original class (in case it is needed later)
     original_ChromaDBClient = chromadb_client_module.ChromaDBClient
 
     class PatchedChromaDBClient(original_ChromaDBClient):
         """
-        修补后的 ChromaDBClient
+        Patched ChromaDBClient
 
-        唯一修改：将异步 asearch() 重定向到同步 search()。
-        **kwargs 捕获所有关键字参数并原封不动传递给同步方法。
+        The only modification: redirect the async asearch() to the synchronous
+        search(). **kwargs captures all keyword arguments and passes them
+        through unchanged to the synchronous method.
         """
         async def asearch(self, **kwargs):
             """
-            异步搜索的同步兜底实现
+            Synchronous fallback implementation of async search
 
-            将异步调用转为同步执行。在事件循环中，这个同步调用
-            会阻塞当前协程但不影响其他协程（因为它在 async def 中）。
+            Converts the async call into synchronous execution. In the event
+            loop, this synchronous call blocks the current coroutine but does
+            not affect other coroutines (because it is inside an async def).
 
             Args:
-                **kwargs: 搜索参数（query、limit、filter 等），直接透传给 search()
+                **kwargs: search parameters (query, limit, filter, etc.),
+                    passed straight through to search()
 
             Returns:
-                与 search() 相同的返回值
+                The same return value as search()
             """
             return self.search(**kwargs)
 
-    # 在模块级别替换类——CrewAI 后续会导入并使用修补后的版本
+    # Replace the class at module level -- CrewAI will later import and use
+    # the patched version
     chromadb_client_module.ChromaDBClient = PatchedChromaDBClient
 
 
 def apply_rag_storage_async_patch():
     """
-    修补 RAGStorage.asearch() 方法
+    Patch the RAGStorage.asearch() method
 
-    问题背景：
-    与 ChromaDB 类似，CrewAI 的 RAGStorage 类在异步模式下也会尝试
-    调用 asearch() 方法，但实现中没有这个方法。
+    Background:
+    Similar to ChromaDB, CrewAI's RAGStorage class also tries to call an
+    asearch() method in async mode, but the implementation does not provide
+    this method.
 
-    解决方案：
-    创建 PatchedRAGStorage 子类，覆写 asearch() 方法，
-    用相同的参数直接调用同步 search() 方法。
+    Solution:
+    Create a PatchedRAGStorage subclass that overrides asearch()
+    to directly call the synchronous search() method with the same arguments.
 
-    这个方法签名必须与 CrewAI 预期的一致：
-    - query: 搜索查询文本
-    - limit: 返回结果数量上限
-    - filter: 可选的过滤条件
-    - score_threshold: 相似度阈值
+    This method signature must match what CrewAI expects:
+    - query: search query text
+    - limit: maximum number of results to return
+    - filter: optional filter conditions
+    - score_threshold: similarity threshold
     """
-    # 导入 CrewAI 的 RAG 存储模块
+    # Import CrewAI's RAG storage module
     import crewai.memory.storage.rag_storage as rag_storage_module
-    # 保留原始类引用
+    # Keep a reference to the original class
     original_RAGStorage = rag_storage_module.RAGStorage
 
     class PatchedRAGStorage(original_RAGStorage):
         """
-        修补后的 RAGStorage
+        Patched RAGStorage
 
-        asearch() 重定向到 search()，参数完全一致。
-        这确保了 CrewAI 的异步记忆搜索能正常工作。
+        asearch() is redirected to search() with exactly the same arguments.
+        This ensures CrewAI's async memory search works correctly.
         """
         async def asearch(self, query: str, limit: int = 5, filter=None, score_threshold: float = 0.6):
             """
-            异步检索的同步兜底实现
+            Synchronous fallback implementation of async retrieval
 
-            将异步搜索委托给同步的 search() 方法，所有参数原样传递。
+            Delegates the async search to the synchronous search() method,
+            passing all arguments through unchanged.
 
             Args:
-                query: 搜索查询字符串
-                limit: 返回结果的最大数量，默认 5
-                filter: 可选的元数据过滤条件
-                score_threshold: 相似度分数阈值，默认 0.6（只返回较相似的结果）
+                query: search query string
+                limit: maximum number of results to return, default 5
+                filter: optional metadata filter conditions
+                score_threshold: similarity score threshold, default 0.6
+                    (only fairly similar results are returned)
 
             Returns:
-                与 search() 相同的返回值
+                The same return value as search()
             """
             return self.search(query, limit, filter, score_threshold)
 
-    # 在模块级别替换类
+    # Replace the class at module level
     rag_storage_module.RAGStorage = PatchedRAGStorage
 
 
 def apply_crewai_patches(verbose: bool = True):
     """
-    应用所有 CrewAI 兼容性补丁
+    Apply all CrewAI compatibility patches
 
-    这是补丁模块的统一入口函数。调用它会依次应用：
-    1. Windows 平台补丁（信号和编码）
-    2. ChromaDB 异步补丁（asearch -> search）
-    3. RAG 存储异步补丁（asearch -> search）
+    This is the unified entry point of the patch module. Calling it applies,
+    in order:
+    1. Windows platform patches (signals and encoding)
+    2. ChromaDB async patch (asearch -> search)
+    3. RAG storage async patch (asearch -> search)
 
-    必须在导入 CrewAI 核心类（Crew, Agent, Task 等）之前调用，
-    因为 ChromaDB 和 RAGStorage 的补丁需要在类被使用之前生效。
+    Must be called before importing CrewAI core classes (Crew, Agent, Task,
+    etc.), because the ChromaDB and RAGStorage patches need to take effect
+    before the classes are used.
 
     Args:
-        verbose: 是否打印补丁应用成功的确认消息，默认 True
+        verbose: whether to print a confirmation message that the patches
+            were applied successfully, default True
     """
-    # 依次应用三个补丁
+    # Apply the three patches in order
     apply_windows_patches()
     apply_chromadb_async_patch()
     apply_rag_storage_async_patch()
 
-    # 打印确认消息（仅在 verbose=True 时）
+    # Print the confirmation message (only when verbose=True)
     if verbose:
         print("✅ CrewAI async memory compatibility patch applied")

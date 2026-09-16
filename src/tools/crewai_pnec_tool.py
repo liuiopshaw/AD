@@ -1,113 +1,113 @@
 import json
-# 导入 CrewAI 框架的 BaseTool 基类，所有 CrewAI 工具都需要继承此类
+# Import the BaseTool base class from the CrewAI framework; all CrewAI tools must inherit from it
 from crewai.tools import BaseTool
-# 导入 Pydantic 的数据模型类，用于定义工具的输入参数结构
-# BaseModel 提供自动验证和类型检查，Field 用于添加参数描述和默认值
+# Import Pydantic's data model class, used to define the tool's input parameter structure
+# BaseModel provides automatic validation and type checking; Field adds parameter descriptions and default values
 from pydantic import BaseModel, Field
-# 导入底层 PNEC 查询工具的单例获取函数
+# Import the singleton getter for the underlying PNEC query tool
 from src.tools.pnec_tool import get_pnec_tool
-# 导入上下文存储，用于在 Agent 之间共享查询结果（跨 Agent 缓存）
+# Import the context store, used to share query results between Agents (cross-Agent cache)
 from src.utils.context_store import ContextStore
 
 class PNECToolInput(BaseModel):
     """PNEC Tool Input Model
 
-    定义 CrewAI PNEC 工具的输入参数模型。
-    使用 Pydantic BaseModel 可以自动获得参数验证、类型检查和默认值功能。
-    CrewAI 框架会根据此模型自动生成工具调用的参数 schema。
+    Defines the input parameter model for the CrewAI PNEC tool.
+    Using Pydantic BaseModel provides automatic parameter validation, type checking, and default values.
+    The CrewAI framework automatically generates the parameter schema for tool calls from this model.
     """
-    # query: 查询内容，可以是 CAS 号（如 "7440-02-0"）或化合物名称（如 "Nickel"）
-    query: str = Field(description="查询内容（CAS号或化合物名称）")
-    # query_type: 查询类型，默认为 "name"；设为 "cas" 时按 CAS 号查询
-    query_type: str = Field(default="name", description="查询类型（'name' 或 'cas'）")
+    # query: the query content, which can be a CAS number (e.g. "7440-02-0") or a compound name (e.g. "Nickel")
+    query: str = Field(description="Query content (CAS number or compound name)")
+    # query_type: the query type, defaults to "name"; set to "cas" to query by CAS number
+    query_type: str = Field(default="name", description="Query type ('name' or 'cas')")
 
 class CrewAIPNECTool(BaseTool):
     """CrewAI tool wrapper for PNEC data query
 
-    将底层 PNECTool 封装为 CrewAI 框架可用的工具。
-    继承 BaseTool 使其能被 CrewAI Agent 自动发现和调用。
-    内置两层缓存机制：跨 Agent 上下文缓存和本地 TTL 缓存。
+    Wraps the underlying PNECTool as a tool usable by the CrewAI framework.
+    Inheriting from BaseTool allows it to be automatically discovered and invoked by CrewAI Agents.
+    Includes a two-layer caching mechanism: a cross-Agent context cache and a local TTL cache.
     """
 
-    # 工具名称：在 CrewAI Agent 的任务描述中引用此工具时使用
+    # Tool name: used when referencing this tool in a CrewAI Agent's task description
     name: str = "PNEC Database Query"
-    # 工具描述：帮助 LLM 理解何时以及如何使用此工具
-    # 这是一个关键的提示信息，LLM 根据描述决定是否调用此工具
+    # Tool description: helps the LLM understand when and how to use this tool
+    # This is a key piece of hint information; the LLM decides whether to call this tool based on the description
     description: str = (
-        "查询预测无效应浓度（PNEC）数据，用于环境风险评估。"
-        "通过 CAS 号或化合物名称查询 PNEC 值。"
-        "当需要评估化学品环境安全性时使用此工具。"
-        "注意：仅提供真实的参考数据（如内置金属毒性文献值）；"
-        "对无真实数据的化合物会明确返回 data_available=false，不会给出估算值。"
+        "Query Predicted No-Effect Concentration (PNEC) data for environmental risk assessment. "
+        "Look up PNEC values by CAS number or compound name. "
+        "Use this tool when evaluating the environmental safety of a chemical. "
+        "Note: only real reference data is provided (such as built-in literature values for metal toxicity); "
+        "for compounds without real data, it explicitly returns data_available=false and never gives estimated values."
     )
-    # args_schema: 指定工具的输入参数结构
-    # CrewAI 使用此 schema 来验证输入并在调用 _run 前进行类型转换
+    # args_schema: specifies the tool's input parameter structure
+    # CrewAI uses this schema to validate inputs and perform type conversion before calling _run
     args_schema: type[BaseModel] = PNECToolInput
 
     def __init__(self):
-        """初始化 CrewAI PNEC 工具。
+        """Initialize the CrewAI PNEC tool.
 
-        调用父类 BaseTool 的初始化方法，
-        同时设置本地内存缓存和 TTL（生存时间）配置。
+        Calls the parent BaseTool's initialization method,
+        and sets up the local in-memory cache and TTL (time-to-live) configuration.
         """
         super().__init__()
-        # _cache: 本地内存缓存字典
-        # 键为 (查询类型, 查询内容) 元组，值为 (时间戳, 结果) 元组
+        # _cache: local in-memory cache dictionary
+        # Keys are (query type, query content) tuples; values are (timestamp, result) tuples
         self._cache = {}
-        # _ttl_seconds: 缓存的生存时间（秒）
-        # 600 秒（10分钟）后缓存数据自动失效，确保数据不会过时
+        # _ttl_seconds: cache time-to-live (seconds)
+        # Cached data automatically expires after 600 seconds (10 minutes), ensuring data does not become stale
         self._ttl_seconds = 600
 
     def _run(self, query: str, query_type: str = "name") -> str:
         """
         Execute PNEC data query.
-        执行 PNEC 数据查询。CrewAI 框架会自动调用此方法。
+        Executes the PNEC data query. The CrewAI framework calls this method automatically.
 
-        缓存策略（从快到慢）：
-        1. 先查跨 Agent 上下文缓存（ContextStore）：跨多个 Agent 共享数据
-        2. 再查本地 TTL 缓存（_cache）：避免重复请求 PubChem API
-        3. 最后才真正执行查询
+        Caching strategy (fastest to slowest):
+        1. First check the cross-Agent context cache (ContextStore): shares data across multiple Agents
+        2. Then check the local TTL cache (_cache): avoids repeated requests to the PubChem API
+        3. Only then actually execute the query
 
         Args:
-            query: 查询内容（CAS 号或化合物名称）
-            query_type: 查询类型（"name" 或 "cas"）
+            query: the query content (CAS number or compound name)
+            query_type: the query type ("name" or "cas")
 
         Returns:
-            JSON 格式的查询结果字符串
-            CrewAI 工具必须返回字符串，所以这里将字典序列化为 JSON
+            Query result string in JSON format
+            CrewAI tools must return a string, so the dictionary is serialized to JSON here
         """
         try:
-            # 构造缓存键：使用查询类型和查询内容的组合
-            # 例如 ("cas", "7440-02-0") 或 ("name", "Nickel")
+            # Build the cache key: a combination of query type and query content
+            # e.g. ("cas", "7440-02-0") or ("name", "Nickel")
             key = (query_type.lower(), query)
-            # 获取当前时间戳，用于判断本地缓存是否过期
+            # Get the current timestamp, used to determine whether the local cache has expired
             import time as _t
             now = _t.time()
 
-            # 第一层缓存：尝试从跨 Agent 上下文存储获取
-            # ContextStore 可以在不同 Agent 之间共享数据，避免重复查询
+            # First cache layer: try to get from the cross-Agent context store
+            # ContextStore can share data between different Agents, avoiding duplicate queries
             if query_type.lower() == "cas":
                 cached_ctx = ContextStore.get(f"pnec:cas:{query}")
                 if cached_ctx is not None:
-                    # 缓存命中，直接返回（不重新请求 PubChem API）
+                    # Cache hit, return directly (without re-requesting the PubChem API)
                     return json.dumps(cached_ctx, ensure_ascii=False, indent=2)
             else:
                 cached_ctx = ContextStore.get(f"pnec:name:{query}")
                 if cached_ctx is not None:
                     return json.dumps(cached_ctx, ensure_ascii=False, indent=2)
 
-            # 第二层缓存：尝试从本地 TTL 缓存获取
-            # 这里使用 time-based TTL 策略，超过 _ttl_seconds 的缓存被认为失效
+            # Second cache layer: try to get from the local TTL cache
+            # A time-based TTL strategy is used here; cache entries older than _ttl_seconds are considered expired
             cached = self._cache.get(key)
             if cached and now - cached[0] < self._ttl_seconds:
                 return json.dumps(cached[1], ensure_ascii=False, indent=2)
 
-            # 缓存未命中：获取底层工具实例并执行实际查询
+            # Cache miss: get the underlying tool instance and execute the actual query
             tool = get_pnec_tool()
 
-            # 根据查询类型调用对应的底层方法
-            # 仅将成功结果写入跨 Agent 上下文缓存（无 TTL），错误结果不缓存，
-            # 避免一次失败的查询被后续所有 Agent 永久复用
+            # Call the corresponding underlying method based on the query type
+            # Only successful results are written to the cross-Agent context cache (no TTL); error results are not cached,
+            # to prevent a single failed query from being permanently reused by all subsequent Agents
             if query_type.lower() == "cas":
                 result = tool.get_pnec_by_cas(query)
                 if isinstance(result, dict) and "error" not in result:
@@ -117,12 +117,12 @@ class CrewAIPNECTool(BaseTool):
                 if isinstance(result, dict) and "error" not in result:
                     ContextStore.set(f"pnec:name:{query}", result)
 
-            # 同时写入本地 TTL 缓存（时间戳 + 结果元组）
+            # Also write to the local TTL cache (timestamp + result tuple)
             self._cache[key] = (now, result)
-            # 将结果序列化为 JSON 字符串返回
-            # ensure_ascii=False 保留中文字符，indent=2 使输出可读
+            # Serialize the result to a JSON string for return
+            # ensure_ascii=False preserves non-ASCII characters; indent=2 makes the output readable
             return json.dumps(result, ensure_ascii=False, indent=2)
 
         except Exception as e:
-            # 异常处理：返回包含错误信息的 JSON，避免工具崩溃导致 Agent 失败
-            return json.dumps({"error": f"查询错误: {str(e)}"}, ensure_ascii=False)
+            # Exception handling: return JSON containing the error message, preventing a tool crash from failing the Agent
+            return json.dumps({"error": f"Query error: {str(e)}"}, ensure_ascii=False)

@@ -4,8 +4,9 @@ Export a ranking run to an Excel workbook (.xlsx).
 
 Reuses rank_cda_outputs.parse_records (same parsing/sorting as the MD ranking)
 plus the formula_lookup map, and writes:
-  Sheet 1 "排名": the full ranked table (same columns as ranking_<TS>.md)
-  Sheet 2 "目标指标": Cu×直接抗菌×重塑菌群 metrics + element frequencies
+  Sheet 1 "Ranking": the full ranked table (same columns as ranking_<TS>.md)
+  Sheet 2 "Target Metrics": Cu x direct-antibacterial x microbiome-remodeling
+    metrics + element frequencies
     + Phase 4 three-modality coverage (Modality/Mechanism distributions,
     SMILES/Target_UniProt non-NA counts)
   Sheet 3 "Modality_Top5": top-5 per modality by the primary sort key
@@ -124,9 +125,9 @@ def main():
 
     wb = Workbook()
 
-    # ---- Sheet 1: 排名 ----
+    # ---- Sheet 1: Ranking ----
     ws = wb.active
-    ws.title = "排名"
+    ws.title = "Ranking"
     db_pos = TABLE_FIELDS.index("Chemical_Formula") + 1  # DB_Formula after Chemical_Formula
     # Deterministic-ASA mode: rename self-report column, insert ASA_Adj before it.
     base_cols = []
@@ -165,8 +166,8 @@ def main():
     for idx, width in enumerate([6, 24, 14, 16, 24, 18, 16, 14, 14, 10, 24, 24, 12, 60], 1):
         ws.column_dimensions[get_column_letter(idx)].width = width
 
-    # ---- Sheet 2: 目标指标 ----
-    ws2 = wb.create_sheet("目标指标")
+    # ---- Sheet 2: Target Metrics ----
+    ws2 = wb.create_sheet("Target Metrics")
     cu = [r for r in valid if "Cu" in [e.strip() for e in r[ELEMENTS].split(",")]]
     da = [r for r in valid if r[INTERVENTION] == "direct_antibacterial"]
     mr = [r for r in valid if r[MECHANISM] == "microbiome_remodeling"]
@@ -198,28 +199,28 @@ def main():
     uniprot_ok = sum(1 for r in valid if r[UNIPROT].strip() not in ("", "NA"))
 
     rows = [
-        ("运行时间戳", ts),
-        ("来源文件", ", ".join(src_files)),
-        ("ASA 排名模式", f"ASA_Adj 确定性计算 (rubric v{rubric.get('version')})" if asa_map else "CDA 自报 ASA_Score(无子分,回退)"),
-        ("DB_Formula 来源", db_source or "未查证"),
-        ("材料总数", f"{len(valid)}" + (f"(已按 Material_Name 去重:原 {len(valid)+removed} 条,去除 {removed} 条重复)" if dedup else "")),
-        ("NADH 活性 YES", f"{nadh_yes} ({nadh_yes/len(valid)*100:.0f}%)" if valid else "0"),
-        ("ASA 范围", f"{asa(valid[-1])} – {asa(valid[0])}" if valid else ""),
+        ("Run Timestamp", ts),
+        ("Source Files", ", ".join(src_files)),
+        ("ASA Ranking Mode", f"ASA_Adj deterministic computation (rubric v{rubric.get('version')})" if asa_map else "CDA self-reported ASA_Score (no subscores, fallback)"),
+        ("DB_Formula Source", db_source or "not verified"),
+        ("Total Materials", f"{len(valid)}" + (f" (deduplicated by Material_Name: {len(valid)+removed} original rows, {removed} duplicates removed)" if dedup else "")),
+        ("NADH Activity YES", f"{nadh_yes} ({nadh_yes/len(valid)*100:.0f}%)" if valid else "0"),
+        ("ASA Range", f"{asa(valid[-1])} – {asa(valid[0])}" if valid else ""),
         ("", ""),
-        ("Cu 基材料", pct(cu)),
-        ("direct_antibacterial(全部)", pct(da)),
-        ("microbiome_remodeling(全部)", pct(mr)),
+        ("Cu-based materials", pct(cu)),
+        ("direct_antibacterial (all)", pct(da)),
+        ("microbiome_remodeling (all)", pct(mr)),
         ("Cu ∩ direct_antibacterial", pct(cu_da)),
         ("Cu ∩ microbiome_remodeling", pct(cu_mr)),
-        ("Cu ∩ 两者兼备", pct(cu_both)),
-        ("全榜元素频率 Top8(不含O/N/C)", ", ".join(f"{e}×{n}" for e, n in all_elem.most_common(8))),
-        ("两者兼备元素频率(不含O)", ", ".join(f"{e}×{n}" for e, n in elem_freq.most_common(6))),
-        ("Cu 为两者兼备最高频元素", "✅ 是" if cu_is_top else "❌ 否"),
+        ("Cu ∩ both", pct(cu_both)),
+        ("Element frequency Top8, full ranking (excl. O/N/C)", ", ".join(f"{e}×{n}" for e, n in all_elem.most_common(8))),
+        ("Element frequency of both-qualified candidates (excl. O)", ", ".join(f"{e}×{n}" for e, n in elem_freq.most_common(6))),
+        ("Cu is the most frequent element among both-qualified", "✅ Yes" if cu_is_top else "❌ No"),
         ("", ""),
-        ("Modality 分布", ", ".join(f"{m}×{mod_freq.get(m, 0)}" for m in schema_v2.MODALITIES)),
-        ("Mechanism 分布", ", ".join(f"{k}×{v}" for k, v in mech_freq.most_common())),
-        ("SMILES 非 NA", smiles_ok),
-        ("Target_UniProt 非 NA", uniprot_ok),
+        ("Modality Distribution", ", ".join(f"{m}×{mod_freq.get(m, 0)}" for m in schema_v2.MODALITIES)),
+        ("Mechanism Distribution", ", ".join(f"{k}×{v}" for k, v in mech_freq.most_common())),
+        ("SMILES non-NA", smiles_ok),
+        ("Target_UniProt non-NA", uniprot_ok),
     ]
     for k, v in rows:
         ws2.append([k, v])
@@ -255,7 +256,7 @@ def main():
 
     xlsx_path = map_dir / ((f"{ts}_dedup.xlsx" if dedup else f"{ts}.xlsx") if file_mode else f"ranking_{ts}.xlsx")
     wb.save(xlsx_path)
-    print(f"Wrote {xlsx_path} ({len(valid)} rows + 目标指标/Modality_Top5 sheets, {len(bad)} unparsed)")
+    print(f"Wrote {xlsx_path} ({len(valid)} rows + Target Metrics/Modality_Top5 sheets, {len(bad)} unparsed)")
 
 
 if __name__ == "__main__":

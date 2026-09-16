@@ -1,42 +1,42 @@
 #!/usr/bin/env python3
-# 指定 Python 解释器，确保脚本在 Unix 环境下直接执行时使用 python3
+# Specify the Python interpreter, ensuring the script uses python3 when executed directly in a Unix environment
 
 """
 Data Validator Tool.
 Used to validate the authenticity and validity of chemical and material data.
 """
-# 模块文档字符串：描述本工具的功能——验证化学和材料数据的真实性和有效性
+# Module docstring: describes the purpose of this tool - validating the authenticity and validity of chemical and material data
 
 import logging
-# 导入 logging 模块，用于记录验证过程中的警告信息
+# Import the logging module to record warning messages during validation
 
 import re
-# 导入 re 模块（正则表达式），用于 CAS 号和分子式的格式校验
+# Import the re module (regular expressions) for format validation of CAS numbers and molecular formulas
 
 import time
-# 导入 time 模块，用于在验证结果中添加时间戳
+# Import the time module to add timestamps to validation results
 
 from typing import Dict, Any, List, Union
-# 导入类型注解：Dict（字典）、Any（任意类型）、List（列表）、Union（联合类型）
+# Import type annotations: Dict (dictionary), Any (any type), List (list), Union (union type)
 
 # Configure logging
 logging.basicConfig(level=logging.WARNING)
-# 配置日志基本设置：仅输出 WARNING 级别及以上的日志
+# Configure basic logging settings: only output logs at WARNING level and above
 
 logger = logging.getLogger(__name__)
-# 创建以当前模块名命名的日志记录器，便于在日志中定位验证失败的原因
+# Create a logger named after the current module, making it easier to locate the cause of validation failures in logs
 
 class DataValidatorTool:
     """Data Validator Tool Class."""
-    # 数据验证工具类，提供多种化学和材料数据的格式与有效性验证方法
+    # Data validator tool class, providing format and validity validation methods for various chemical and material data
 
     def __init__(self):
         """Initialize data validator tool."""
-        # 初始化验证工具，预加载验证所需的有效值列表
+        # Initialize the validator tool, preloading the lists of valid values required for validation
 
-        # ==================== 有效化学元素符号列表 ====================
-        # 包含周期表中所有已知元素（118个元素中常用的大部分）
-        # 用于验证分子式中提取的元素符号是否为真实元素
+        # ==================== List of Valid Chemical Element Symbols ====================
+        # Contains all known elements in the periodic table (most of the commonly used ones among the 118 elements)
+        # Used to verify whether element symbols extracted from molecular formulas are real elements
         self.valid_elements = [
             'H', 'He', 'Li', 'Be', 'B', 'C', 'N', 'O', 'F', 'Ne', 'Na', 'Mg', 'Al', 'Si', 'P', 'S', 'Cl', 'Ar',
             'K', 'Ca', 'Sc', 'Ti', 'V', 'Cr', 'Mn', 'Fe', 'Co', 'Ni', 'Cu', 'Zn', 'Ga', 'Ge', 'As', 'Se', 'Br', 'Kr',
@@ -45,85 +45,85 @@ class DataValidatorTool:
             'Hf', 'Ta', 'W', 'Re', 'Os', 'Ir', 'Pt', 'Au', 'Hg', 'Tl', 'Pb', 'Bi', 'Po', 'At', 'Rn'
         ]
 
-        # ==================== 有效 GHS 危险声明代码列表 ====================
-        # GHS（全球化学品统一分类和标签制度）H 代码涵盖了物理危险、健康危险和环境危险
-        # 用于验证危险声明代码是否符合 GHS 标准
+        # ==================== List of Valid GHS Hazard Statement Codes ====================
+        # GHS (Globally Harmonized System of Classification and Labelling of Chemicals) H codes cover physical, health, and environmental hazards
+        # Used to verify whether hazard statement codes conform to the GHS standard
         self.valid_h_statements = [
             "H200", "H201", "H202", "H203", "H204", "H205",
-            # 物理危险 - 爆炸物（H200系列）
+            # Physical hazards - Explosives (H200 series)
             "H220", "H221", "H222", "H223", "H224", "H225", "H226",
-            # 物理危险 - 易燃气体/液体（H220系列）
+            # Physical hazards - Flammable gases/liquids (H220 series)
             "H228",
-            # 物理危险 - 易燃固体（H228）
+            # Physical hazards - Flammable solids (H228)
             "H240", "H241", "H242",
-            # 物理危险 - 自反应物质（H240系列）
+            # Physical hazards - Self-reactive substances (H240 series)
             "H250", "H251", "H252",
-            # 物理危险 - 自燃物质（H250系列）
+            # Physical hazards - Pyrophoric substances (H250 series)
             "H260", "H261",
-            # 物理危险 - 遇水放出易燃气体的物质（H260系列）
+            # Physical hazards - Substances which emit flammable gases in contact with water (H260 series)
             "H270", "H271", "H272",
-            # 物理危险 - 氧化性物质（H270系列）
+            # Physical hazards - Oxidizing substances (H270 series)
             "H280", "H281",
-            # 物理危险 - 高压气体（H280系列）
+            # Physical hazards - Gases under pressure (H280 series)
             "H290",
-            # 物理危险 - 金属腐蚀物（H290）
+            # Physical hazards - Corrosive to metals (H290)
             "H300", "H301", "H302", "H303", "H304", "H305",
-            # 健康危险 - 急性毒性（H300系列）
+            # Health hazards - Acute toxicity (H300 series)
             "H310", "H311", "H312", "H313",
-            # 健康危险 - 皮肤接触毒性（H310系列）
+            # Health hazards - Dermal toxicity (H310 series)
             "H314", "H315", "H316",
-            # 健康危险 - 皮肤腐蚀/刺激（H314系列）
+            # Health hazards - Skin corrosion/irritation (H314 series)
             "H317",
-            # 健康危险 - 皮肤致敏（H317）
+            # Health hazards - Skin sensitization (H317)
             "H318", "H319", "H320",
-            # 健康危险 - 眼损伤/刺激（H318系列）
+            # Health hazards - Eye damage/irritation (H318 series)
             "H330", "H331", "H332", "H333",
-            # 健康危险 - 吸入毒性（H330系列）
+            # Health hazards - Inhalation toxicity (H330 series)
             "H334", "H335", "H336",
-            # 健康危险 - 呼吸道致敏/麻醉（H334系列）
+            # Health hazards - Respiratory sensitization/narcotic effects (H334 series)
             "H340", "H341",
-            # 健康危险 - 生殖细胞致突变性（H340系列）
+            # Health hazards - Germ cell mutagenicity (H340 series)
             "H350", "H351",
-            # 健康危险 - 致癌性（H350系列）
+            # Health hazards - Carcinogenicity (H350 series)
             "H360", "H361", "H362",
-            # 健康危险 - 生殖毒性（H360系列）
+            # Health hazards - Reproductive toxicity (H360 series)
             "H370", "H371",
-            # 健康危险 - 特异性靶器官毒性-单次暴露（H370系列）
+            # Health hazards - Specific target organ toxicity - single exposure (H370 series)
             "H372", "H373",
-            # 健康危险 - 特异性靶器官毒性-重复暴露（H373系列）
+            # Health hazards - Specific target organ toxicity - repeated exposure (H373 series)
             "H400", "H401", "H402",
-            # 环境危险 - 水生毒性（H400系列）
+            # Environmental hazards - Aquatic toxicity (H400 series)
             "H410", "H411", "H412", "H413",
-            # 环境危险 - 慢性水生毒性（H410系列）
+            # Environmental hazards - Chronic aquatic toxicity (H410 series)
             "H420"
-            # 环境危险 - 臭氧层危害（H420）
+            # Environmental hazards - Hazardous to the ozone layer (H420)
         ]
 
     def validate_cid(self, cid: Any) -> Dict[str, Any]:
         """
         Validate if PubChem CID is valid.
-        # 验证 PubChem 化合物 ID (CID) 是否有效
+        # Validate whether a PubChem Compound ID (CID) is valid
 
         Args:
             cid: Compound ID
-            # 化合物 ID，可能为字符串、整数或空值
+            # Compound ID, which may be a string, integer, or null value
 
         Returns:
             Validation result dictionary
-            # 包含 valid（是否有效）、reason（原因说明）、value（验证后的值）的字典
+            # Dictionary containing valid (whether valid), reason (explanation), and value (the validated value)
         """
         try:
-            # 检查 CID 是否为空值或占位符
-            # 这些值在数据采集过程中常见，表示信息缺失而非有效的 CID
+            # Check whether the CID is null or a placeholder
+            # These values are common during data collection and indicate missing information rather than a valid CID
             if cid is None or cid == "" or cid == "N/A" or cid == "null":
                 return {
                     "valid": False,
                     "reason": "CID is empty or invalid",
                     "value": cid
                 }
-            # 尝试将 CID 转换为整数
+            # Attempt to convert the CID to an integer
             cid_int = int(cid)
-            # CID 必须是正整数（PubChem 中 CID 从 1 开始递增）
+            # The CID must be a positive integer (CIDs in PubChem increment starting from 1)
             if cid_int <= 0:
                 return {
                     "valid": False,
@@ -134,10 +134,10 @@ class DataValidatorTool:
                 "valid": True,
                 "reason": "CID is valid",
                 "value": cid_int
-                # 返回转换后的整数值，避免后续类型不一致问题
+                # Return the converted integer value to avoid subsequent type inconsistency issues
             }
         except (ValueError, TypeError):
-            # 捕获转换异常：当 cid 不是合法数字字符串时
+            # Catch conversion exceptions: when cid is not a valid numeric string
             return {
                 "valid": False,
                 "reason": "CID is not a valid number",
@@ -147,27 +147,27 @@ class DataValidatorTool:
     def validate_material_id(self, material_id: Any) -> Dict[str, Any]:
         """
         Validate if Materials Project material ID is valid.
-        # 验证 Materials Project 材料 ID (MP-ID) 是否有效
+        # Validate whether a Materials Project material ID (MP-ID) is valid
 
         Args:
             material_id: Material ID
-            # 材料 ID，可能为字符串或空值
+            # Material ID, which may be a string or null value
 
         Returns:
             Validation result dictionary
         """
         try:
-            # 检查材料 ID 是否为空值或占位符
+            # Check whether the material ID is null or a placeholder
             if material_id is None or material_id == "" or material_id == "N/A" or material_id == "null":
                 return {
                     "valid": False,
                     "reason": "Material ID is empty or invalid",
                     "value": material_id
                 }
-            # 确保是字符串类型
+            # Ensure it is a string type
             material_id_str = str(material_id)
-            # MP-ID 必须以 "mp-" 开头，且后缀长度大于 0（即总长 > 3）
-            # 例如 "mp-1234" 是有效的，"mp-" 则无效
+            # An MP-ID must start with "mp-" and have a suffix longer than 0 characters (i.e., total length > 3)
+            # For example, "mp-1234" is valid, while "mp-" is invalid
             if not material_id_str.startswith("mp-") or len(material_id_str) <= 3:
                 return {
                     "valid": False,
@@ -178,7 +178,7 @@ class DataValidatorTool:
                 "valid": True,
                 "reason": "Material ID is valid",
                 "value": material_id_str
-                # 返回标准化为字符串的值
+                # Return the value normalized to a string
             }
         except (ValueError, TypeError):
             return {
@@ -190,16 +190,16 @@ class DataValidatorTool:
     def validate_cas_number(self, cas_number: str) -> Dict[str, Any]:
         """
         Validate if CAS number format is correct.
-        # 验证 CAS 注册号格式是否正确
+        # Validate whether a CAS Registry Number format is correct
 
         Args:
             cas_number: CAS number
-            # CAS 注册号字符串
+            # CAS Registry Number string
 
         Returns:
             Validation result dictionary
         """
-        # 检查 CAS 号是否为空值或占位符
+        # Check whether the CAS number is null or a placeholder
         if not cas_number or cas_number == "N/A" or cas_number == "null":
             return {
                 "valid": False,
@@ -207,12 +207,12 @@ class DataValidatorTool:
                 "value": cas_number
             }
 
-        # ==================== CAS 号格式验证 ====================
-        # CAS 号标准格式：XXXXXXX-XX-X
-        # - 第一部分：2 到 7 位数字
-        # - 第二部分：2 位数字
-        # - 第三部分：1 位校验数字
-        # 示例：7732-18-5（水）、67-64-1（丙酮）
+        # ==================== CAS Number Format Validation ====================
+        # Standard CAS number format: XXXXXXX-XX-X
+        # - First part: 2 to 7 digits
+        # - Second part: 2 digits
+        # - Third part: 1 check digit
+        # Examples: 7732-18-5 (water), 67-64-1 (acetone)
         cas_pattern = r'^\d{2,7}-\d{2}-\d$'
         if re.match(cas_pattern, cas_number):
             return {
@@ -230,16 +230,16 @@ class DataValidatorTool:
     def validate_molecular_formula(self, formula: str) -> Dict[str, Any]:
         """
         Validate if molecular formula is valid.
-        # 验证分子式是否有效
+        # Validate whether a molecular formula is valid
 
         Args:
             formula: Molecular formula
-            # 分子式字符串
+            # Molecular formula string
 
         Returns:
             Validation result dictionary
         """
-        # 检查分子式是否为空值或占位符
+        # Check whether the molecular formula is null or a placeholder
         if not formula or formula == "N/A" or formula == "null":
             return {
                 "valid": False,
@@ -247,15 +247,15 @@ class DataValidatorTool:
                 "value": formula
             }
 
-        # ==================== 分子式格式验证 ====================
-        # 支持两种模式：
-        # 模式1：简单分子式，如 H2O、NaCl、C6H12O6
-        # 模式2：含括号的分子式，如 Ca(OH)2、Fe(CN)3
+        # ==================== Molecular Formula Format Validation ====================
+        # Two patterns are supported:
+        # Pattern 1: Simple molecular formulas, e.g., H2O, NaCl, C6H12O6
+        # Pattern 2: Molecular formulas with parentheses, e.g., Ca(OH)2, Fe(CN)3
         formula_pattern = r'^([A-Z][a-z]?[0-9]*)+([A-Z][a-z]?[0-9]*)*$|^([A-Z][a-z]?[0-9]*)*\([A-Z][a-z]?[0-9]*\)[0-9]*([A-Z][a-z]?[0-9]*)*$'
         if re.match(formula_pattern, formula):
-            # 提取分子式中所有的元素符号
+            # Extract all element symbols from the molecular formula
             elements = re.findall(r'[A-Z][a-z]?', formula)
-            # 检查是否存在无效元素（不在已知元素列表中的符号）
+            # Check for invalid elements (symbols not in the list of known elements)
             invalid_elements = [e for e in elements if e not in self.valid_elements]
             if not invalid_elements:
                 return {
@@ -279,16 +279,16 @@ class DataValidatorTool:
     def validate_h_statements(self, h_statements: List[str]) -> Dict[str, Any]:
         """
         Validate if GHS hazard statement codes are valid.
-        # 验证 GHS 危险声明代码 (H-statements) 是否有效
+        # Validate whether GHS hazard statement codes (H-statements) are valid
 
         Args:
             h_statements: List of hazard statement codes
-            # 危险声明代码列表
+            # List of hazard statement codes
 
         Returns:
             Validation result dictionary
         """
-        # 空列表视为有效（某些化学品可能没有危险声明）
+        # An empty list is considered valid (some chemicals may have no hazard statements)
         if not h_statements:
             return {
                 "valid": True,
@@ -296,7 +296,7 @@ class DataValidatorTool:
                 "value": h_statements
             }
 
-        # 筛选出不在已知有效 H 代码列表中的声明
+        # Filter out statements not present in the list of known valid H codes
         invalid_statements = [h for h in h_statements if h not in self.valid_h_statements]
         if not invalid_statements:
             return {
@@ -310,42 +310,42 @@ class DataValidatorTool:
                 "reason": f"Contains invalid hazard statement codes: {', '.join(invalid_statements)}",
                 "value": h_statements,
                 "invalid_statements": invalid_statements
-                # 额外返回无效声明列表，方便调用方定位具体问题
+                # Additionally return the list of invalid statements so the caller can locate the specific issues
             }
 
     def validate_molecular_weight(self, molecular_weight: Union[str, float]) -> Dict[str, Any]:
         """
         Validate if molecular weight is valid.
-        # 验证分子量是否有效
+        # Validate whether a molecular weight is valid
 
         Args:
             molecular_weight: Molecular weight
-            # 分子量，可能是字符串或浮点数
+            # Molecular weight, which may be a string or a float
 
         Returns:
             Validation result dictionary
         """
-        # 空值或占位符视为可接受状态（分子量信息可能尚未获取）
+        # Null values or placeholders are considered acceptable (molecular weight information may not have been retrieved yet)
         if molecular_weight == "N/A" or molecular_weight == "null" or molecular_weight is None:
             return {
                 "valid": True,
-                # 注意：空值被视为 valid=True，因为"无数据"不等同于"数据错误"
+                # Note: null values are treated as valid=True, because "no data" is not the same as "incorrect data"
                 "reason": "Molecular weight is empty (acceptable)",
                 "value": molecular_weight
             }
 
         try:
-            # 转换为浮点数进行数值范围验证
+            # Convert to a float for numeric range validation
             mw = float(molecular_weight)
-            # 分子量必须为正数
+            # The molecular weight must be positive
             if mw <= 0:
                 return {
                     "valid": False,
                     "reason": "Molecular weight must be positive",
                     "value": molecular_weight
                 }
-            # 分子量上限设为 100,000 Da（道尔顿），超过此值可能是数据错误
-            # 绝大多数小分子和材料在此范围内，高分子聚合物可能接近但一般不超
+            # The molecular weight upper limit is set to 100,000 Da (daltons); values above this may indicate a data error
+            # The vast majority of small molecules and materials fall within this range; high-molecular-weight polymers may approach but generally do not exceed it
             elif mw > 100000:
                 return {
                     "valid": False,
@@ -357,10 +357,10 @@ class DataValidatorTool:
                     "valid": True,
                     "reason": "Molecular weight is valid",
                     "value": mw
-                    # 返回转换后的浮点数值
+                    # Return the converted float value
                 }
         except (ValueError, TypeError):
-            # 捕获无法转换为数字的异常
+            # Catch exceptions where conversion to a number fails
             return {
                 "valid": False,
                 "reason": "Molecular weight is not a valid number",
@@ -370,98 +370,98 @@ class DataValidatorTool:
     def validate_chemical_data(self, data: Dict[str, Any]) -> Dict[str, Any]:
         """
         Validate the completeness and validity of chemical data.
-        # 对化学数据进行全面验证（组合验证）
+        # Perform comprehensive validation of chemical data (combined validation)
 
         Args:
             data: Chemical data dictionary
-            # 包含各化学数据字段的字典
+            # Dictionary containing the various chemical data fields
 
         Returns:
             Validation result dictionary
-            # 包含 overall_valid（整体是否有效）、各字段验证结果、时间戳和原始数据的字典
+            # Dictionary containing overall_valid (whether valid overall), per-field validation results, a timestamp, and the original data
         """
         validation_results = {}
-        # 存储各字段的独立验证结果
+        # Stores the independent validation results for each field
 
         overall_valid = True
-        # 整体有效性标志：任一字段验证失败即变为 False
+        # Overall validity flag: set to False if any field fails validation
 
-        # ==================== 逐字段验证 ====================
-        # 仅验证数据中实际存在的字段，避免对缺失字段产生误报
+        # ==================== Field-by-Field Validation ====================
+        # Only validate fields actually present in the data, avoiding false reports for missing fields
 
-        # 验证 CID（如果数据中存在该字段）
+        # Validate CID (if the field exists in the data)
         if "pubchem_cid" in data:
             cid_result = self.validate_cid(data["pubchem_cid"])
             validation_results["cid"] = cid_result
             if not cid_result["valid"]:
                 overall_valid = False
-                # 任一字段无效，整体标记为无效
+                # If any field is invalid, mark the whole as invalid
 
-        # 验证 CAS 号（如果数据中存在该字段）
+        # Validate CAS number (if the field exists in the data)
         if "cas_number" in data:
             cas_result = self.validate_cas_number(data["cas_number"])
             validation_results["cas_number"] = cas_result
             if not cas_result["valid"]:
                 overall_valid = False
 
-        # 验证分子式（如果数据中存在该字段）
+        # Validate molecular formula (if the field exists in the data)
         if "molecular_formula" in data:
             formula_result = self.validate_molecular_formula(data["molecular_formula"])
             validation_results["molecular_formula"] = formula_result
             if not formula_result["valid"]:
                 overall_valid = False
 
-        # 验证分子量（如果数据中存在该字段）
+        # Validate molecular weight (if the field exists in the data)
         if "molecular_weight" in data:
             mw_result = self.validate_molecular_weight(data["molecular_weight"])
             validation_results["molecular_weight"] = mw_result
             if not mw_result["valid"]:
                 overall_valid = False
 
-        # 验证危险声明（如果数据中存在且为列表类型）
+        # Validate hazard statements (if the field exists in the data and is a list)
         if "hazard_statements" in data and isinstance(data["hazard_statements"], list):
             h_result = self.validate_h_statements(data["hazard_statements"])
             validation_results["hazard_statements"] = h_result
             if not h_result["valid"]:
                 overall_valid = False
 
-        # 验证材料 ID（如果数据中存在该字段）
+        # Validate material ID (if the field exists in the data)
         if "material_id" in data:
             material_id_result = self.validate_material_id(data["material_id"])
             validation_results["material_id"] = material_id_result
             if not material_id_result["valid"]:
                 overall_valid = False
 
-        # 返回综合验证结果
+        # Return the combined validation result
         return {
             "valid": overall_valid,
-            # 整体有效性：所有存在字段均通过验证才为 True
+            # Overall validity: True only if all present fields pass validation
             "validation_results": validation_results,
-            # 各字段的详细验证结果字典
+            # Dictionary of detailed validation results for each field
             "timestamp": time.time(),
-            # Unix 时间戳，用于记录验证发生的时间
+            # Unix timestamp recording when the validation occurred
             "data": data
-            # 原始数据回传，便于结果追溯
+            # Original data returned for traceability of results
         }
 
-# ==================== 全局单例实例管理 ====================
-# 使用模块级变量实现懒加载单例模式
+# ==================== Global Singleton Instance Management ====================
+# Implements a lazy-loading singleton pattern using a module-level variable
 _data_validator_tool = None
-# 初始化为 None，第一次调用 get_data_validator_tool() 时创建实例
+# Initialized to None; the instance is created on the first call to get_data_validator_tool()
 
 def get_data_validator_tool() -> DataValidatorTool:
     """
     Get data validator tool instance.
-    # 获取数据验证工具的单例实例
+    # Get the singleton instance of the data validator tool
 
     Returns:
         DataValidatorTool: Data validator tool instance
     """
     global _data_validator_tool
-    # 声明使用模块级全局变量
+    # Declare use of the module-level global variable
 
     if _data_validator_tool is None:
-        # 懒加载：仅在首次调用时创建实例，保持和 material_identifier_tool 一致的模式
+        # Lazy loading: create the instance only on first call, consistent with the pattern in material_identifier_tool
         _data_validator_tool = DataValidatorTool()
     return _data_validator_tool
-    # 返回单例实例
+    # Return the singleton instance

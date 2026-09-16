@@ -1,38 +1,46 @@
 #!/usr/bin/env python3
 """
-Material Evaluation Task — 材料评估任务
-负责对设计出的材料方案进行多维度评估，分析其性能、可行性、成本等方面
+Material Evaluation Task
+Performs multi-dimensional evaluation of designed material candidates,
+analyzing their performance, feasibility, cost, and other aspects.
 """
 
-# 从基础任务模块导入基类和任务文本加载函数
+# Import the base class and the task text loader from the base task module
 from .base_task import BaseTask, load_task_text
 
 
 class EvaluationTask(BaseTask):
-    """材料评估任务类
+    """Material evaluation task class.
 
-    继承自 BaseTask，专门处理材料方案评估场景。
-    负责对上游设计任务产出的材料方案进行专业评估，
-    包括性能指标分析、可行性验证、成本估算等。
-    评估结果将作为后续验证任务的输入。
+    Inherits from BaseTask and is dedicated to material candidate
+    evaluation scenarios. It performs professional evaluation of the
+    material candidates produced by the upstream design task, including
+    performance metric analysis, feasibility verification, and cost
+    estimation. The evaluation results serve as input to subsequent
+    validation tasks.
     """
 
     def __init__(self, agent, material_info=""):
-        """初始化材料评估任务
+        """Initialize the material evaluation task.
 
-        将待评估的材料信息（material_info）注入到任务描述中，
-        使 Agent 在初始化时就能获取评估对象的上下文。
+        Injects the material information to be evaluated (material_info)
+        into the task description, so that the Agent has the context of
+        the evaluation subject at initialization time.
 
         Args:
-            agent: 材料评估 Agent，负责执行评估分析的 AI 代理
-            material_info: 待评估的材料信息文本，如果为空则仅使用模板描述
+            agent: The material evaluation Agent, the AI agent responsible
+                for performing the evaluation analysis.
+            material_info: Text describing the material to be evaluated;
+                if empty, only the template description is used.
         """
-        # 从 locales 目录加载评估任务的多语言文本配置
+        # Load the multilingual text configuration for the evaluation task
+        # from the locales directory
         task_text = load_task_text('evaluation_task')
 
-        # 调用父类构造函数
-        # 注意：如果提供了 material_info，会将其拼接到 description 的末尾
-        # 这样 Agent 在收到任务时就能直接看到待评估的具体材料信息
+        # Call the parent class constructor
+        # Note: if material_info is provided, it is appended to the end of
+        # the description, so the Agent can directly see the specific
+        # material information to be evaluated when receiving the task
         super().__init__(
             agent=agent,
             expected_output=task_text.get('expected_output', ''),
@@ -40,34 +48,38 @@ class EvaluationTask(BaseTask):
         )
 
     def create_task(self, agent, context_task=None, user_requirement=None):
-        """创建材料评估任务实例
+        """Create a material evaluation task instance.
 
-        支持注入用户需求到描述中，以及设置上下文依赖任务。
-        评估任务通常依赖于设计任务的输出，因此 context_task
-        通常设置为设计任务实例。
+        Supports injecting the user requirement into the description and
+        setting a context dependency task. The evaluation task usually
+        depends on the output of the design task, so context_task is
+        typically set to the design task instance.
 
         Args:
-            agent: 执行该任务的 Agent 实例
-            context_task: 前置任务（通常是设计任务），评估需等待其完成
-            user_requirement: 用户原始需求文本，用于在评估时对照检查
+            agent: The Agent instance that executes this task.
+            context_task: The preceding task (usually the design task);
+                evaluation must wait for it to complete.
+            user_requirement: The original user requirement text, used for
+                cross-checking during evaluation.
 
         Returns:
-            Task: 配置好的 CrewAI Task 实例
+            Task: A configured CrewAI Task instance.
         """
-        # 从 YAML 文件加载任务文本模板
+        # Load the task text template from the YAML file
         task_text = load_task_text('evaluation_task')
 
-        # 提取各文本片段，未定义时使用默认值
+        # Extract each text fragment, falling back to defaults if undefined
         description = task_text.get('description', '')
         expected_output = task_text.get('expected_output', '')
         user_req_prefix = task_text.get('user_requirement_prefix', '\n\nUser Requirement: ')
 
-        # 将用户需求追加到任务描述中
-        # 评估 Agent 需要对照原始需求来判断设计方案是否达标
+        # Append the user requirement to the task description
+        # The evaluation Agent needs to check the design candidate against
+        # the original requirement to determine whether it meets the goals
         if user_requirement:
             description += f"{user_req_prefix}{user_requirement}"
 
-        # 创建 CrewAI Task 实例
+        # Create the CrewAI Task instance
         from crewai import Task
         task = Task(
             agent=agent,
@@ -75,8 +87,9 @@ class EvaluationTask(BaseTask):
             description=description
         )
 
-        # 设置任务上下文依赖
-        # 评估任务需要先看到设计方案的输出才能进行评估
+        # Set the task context dependency
+        # The evaluation task must see the design candidate's output
+        # before it can be evaluated
         if context_task:
             if isinstance(context_task, list):
                 task.context = context_task

@@ -1,36 +1,44 @@
 #!/usr/bin/env python3
 """
-Final Validation Task — 最终验证任务
-负责整合各领域专家的评估意见，给出最终的综合验证结论和改进建议
+Final Validation Task — Final validation task
+Integrates the evaluation opinions of domain experts and produces the final
+comprehensive validation conclusion and improvement suggestions
 """
 
-# 从基础任务模块导入基类和任务文本加载函数
+# Import the base class and the task text loading function from the base task module
 from .base_task import BaseTask, load_task_text
 
 
 class FinalValidationTask(BaseTask):
-    """最终验证任务类
+    """Final validation task class
 
-    继承自 BaseTask，作为任务流水线的最后一个环节。
-    负责汇总机制分析、合成方法、操作建议等多维度评估结果，
-    进行综合判断，生成最终的验证报告和优化建议。
-    这是整个材料设计流程的质量把关环节。
+    Inherits from BaseTask and serves as the last stage of the task pipeline.
+    It aggregates multi-dimensional evaluation results such as mechanism analysis,
+    synthesis methods, and operational recommendations, makes a comprehensive
+    judgment, and generates the final validation report and optimization
+    suggestions. This is the quality-control gate of the entire material design
+    workflow.
     """
 
     def __init__(self, agent, evaluation_results=""):
-        """初始化最终验证任务
+        """Initialize the final validation task
 
         Args:
-            agent: 最终验证 Agent，负责综合判断的 AI 代理
-            evaluation_results: 各领域专家的评估结果汇总文本
-                                预留参数，当前实现中暂未直接使用
+            agent: The final validation Agent, an AI agent responsible for
+                   comprehensive judgment
+            evaluation_results: Aggregated text of evaluation results from
+                                domain experts; a reserved parameter that is
+                                not directly used in the current implementation
         """
-        # 从 locales 目录加载最终验证任务的多语言文本配置
+        # Load the multilingual text configuration for the final validation
+        # task from the locales directory
         task_text = load_task_text('final_validation_task')
 
-        # 调用父类构造函数
-        # evaluation_results 参数在当前实现中已声明但未拼接到 description 中
-        # 实际的评估结果通过 context_task 机制传递给 Agent
+        # Call the parent class constructor
+        # The evaluation_results parameter is declared in the current
+        # implementation but is not concatenated into the description
+        # The actual evaluation results are passed to the Agent via the
+        # context_task mechanism
         super().__init__(
             agent=agent,
             expected_output=task_text.get('expected_output', ''),
@@ -38,33 +46,39 @@ class FinalValidationTask(BaseTask):
         )
 
     def create_task(self, agent, context_task=None, user_requirement=None):
-        """创建最终验证任务实例
+        """Create an instance of the final validation task
 
-        接收多个上游任务的输出作为上下文，进行综合验证。
-        通常 context_task 会包含机制分析任务、合成方法任务、
-        操作建议任务的输出，验证 Agent 需要综合考虑所有维度。
+        Receives the outputs of multiple upstream tasks as context and
+        performs a comprehensive validation. Typically, context_task contains
+        the outputs of the mechanism analysis task, the synthesis method task,
+        and the operational recommendation task; the validation Agent must
+        consider all dimensions together.
 
         Args:
-            agent: 执行该任务的 Agent 实例
-            context_task: 上游各评估任务的输出列表，提供验证所需的全部信息
-            user_requirement: 用户原始需求，用于最终验证时对比检查
+            agent: The Agent instance that executes this task
+            context_task: List of outputs from upstream evaluation tasks,
+                          providing all the information needed for validation
+            user_requirement: The original user requirement, used for
+                              comparison and checking during final validation
 
         Returns:
-            Task: 配置好的 CrewAI Task 实例
+            Task: A configured CrewAI Task instance
         """
-        # 从 YAML 文件加载任务文本模板
+        # Load the task text template from the YAML file
         task_text = load_task_text('final_validation_task')
 
-        # 提取各文本片段
+        # Extract the individual text fragments
         description = task_text.get('description', '')
         expected_output = task_text.get('expected_output', '')
         user_req_prefix = task_text.get('user_requirement_prefix', '\n\nUser Requirement: ')
 
-        # 将用户需求注入描述，使验证 Agent 能对照原始需求进行最终判断
+        # Inject the user requirement into the description so that the
+        # validation Agent can make the final judgment against the original
+        # requirement
         if user_requirement:
             description += f"{user_req_prefix}{user_requirement}"
 
-        # 创建 CrewAI Task 实例
+        # Create the CrewAI Task instance
         from crewai import Task
         task = Task(
             agent=agent,
@@ -72,9 +86,11 @@ class FinalValidationTask(BaseTask):
             description=description
         )
 
-        # 设置任务上下文依赖
-        # 最终验证需要等待所有评估任务完成后才能执行
-        # context_task 通常是一个包含多个任务输出的列表
+        # Set the task context dependencies
+        # The final validation can only run after all evaluation tasks
+        # have completed
+        # context_task is typically a list containing the outputs of
+        # multiple tasks
         if context_task:
             if isinstance(context_task, list):
                 task.context = context_task

@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """
-Base Task Class — 基础任务类
+Base Task Class
 
-本模块定义了所有任务的基类以及任务文本加载工具函数。
-所有具体任务（如设计、评估、验证等）都继承自 BaseTask，
-通过统一的接口创建 CrewAI 的 Task 对象。
+This module defines the base class for all tasks and utility functions
+for loading task text. All concrete tasks (such as design, evaluation,
+validation, etc.) inherit from BaseTask and create CrewAI Task objects
+through a unified interface.
 """
 
 import os
@@ -13,117 +14,134 @@ from crewai import Task
 
 
 def get_language():
-    """获取当前语言设置
+    """Get the current language setting.
 
-    从项目配置中读取 LANGUAGE 字段，决定任务提示文本使用哪种语言。
-    如果配置不可用或读取失败，默认返回 'zh'（中文）。
+    Reads the LANGUAGE field from the project configuration to determine
+    which language the task prompt text should use. If the configuration
+    is unavailable or reading fails, defaults to 'zh' (Chinese).
 
     Returns:
-        str: 语言代码，'zh' 或 'en'
+        str: Language code, 'zh' or 'en'
     """
     try:
-        # 延迟导入，避免循环依赖 —— Config 模块可能在更上层初始化
+        # Deferred import to avoid circular dependencies — the Config module
+        # may be initialized at a higher level
         from src.config.config import Config
         return getattr(Config, 'LANGUAGE', 'zh')
     except Exception:
-        # 异常时回退到中文，保证系统不会因配置问题崩溃
+        # Fall back to Chinese on exception, ensuring the system does not
+        # crash due to configuration issues
         return 'zh'
 
 
 def is_english():
-    """检查当前是否为英文模式
+    """Check whether English mode is currently active.
 
-    对 get_language() 的便捷封装，避免在业务代码中重复写比较逻辑。
+    A convenience wrapper around get_language() that avoids repeating
+    comparison logic in business code.
 
     Returns:
-        bool: True 表示英文模式，False 表示中文模式
+        bool: True for English mode, False for Chinese mode
     """
     return get_language() == 'en'
 
 
 def load_task_text(task_name):
-    """从 YAML 文件中加载任务文本
+    """Load task text from a YAML file.
 
-    根据当前语言设置，从 locales 目录下加载对应语言的任务描述文件。
-    任务文本包括 description（任务描述）、expected_output（期望输出格式）、
-    user_requirement_prefix（用户需求前缀）等字段，用于动态构建任务提示。
+    Based on the current language setting, loads the task description file
+    for the corresponding language from the locales directory. The task text
+    includes fields such as description, expected_output, and
+    user_requirement_prefix, which are used to dynamically build task prompts.
 
-    加载优先级：
-    1. 当前语言对应的 YAML 文件
-    2. 回退到中文（zh）的 YAML 文件
-    3. 如果两者都不存在，返回空字典
+    Loading priority:
+    1. The YAML file for the current language
+    2. Fall back to the Chinese (zh) YAML file
+    3. If neither exists, return an empty dictionary
 
     Args:
-        task_name: 任务名称，如 'design_task'、'evaluation_task'
-                   应与 locales/<lang>/tasks/ 目录下的文件名（不含扩展名）对应
+        task_name: Task name, e.g. 'design_task', 'evaluation_task'.
+                   Should correspond to a filename (without extension) under
+                   the locales/<lang>/tasks/ directory
 
     Returns:
-        dict: 包含 description、expected_output、user_requirement_prefix 等字段的字典
-              如果文件不存在或解析失败，返回空字典
+        dict: A dictionary containing fields such as description,
+              expected_output, and user_requirement_prefix. Returns an empty
+              dictionary if the file does not exist or parsing fails
     """
     lang = get_language()
-    # 获取当前文件所在目录的绝对路径，用于构建 locales 目录路径
+    # Get the absolute path of the current file's directory, used to build
+    # the locales directory path
     current_dir = os.path.dirname(os.path.abspath(__file__))
 
-    # 构建当前语言对应的 YAML 文件路径
-    # 路径形如：src/locales/<lang>/tasks/<task_name>.yaml
+    # Build the YAML file path for the current language
+    # Path format: src/locales/<lang>/tasks/<task_name>.yaml
     yaml_path = os.path.join(current_dir, '..', 'locales', lang, 'tasks', f'{task_name}.yaml')
 
-    # 如果当前语言的 YAML 文件不存在，回退到中文版本
-    # 这确保了即使翻译不完整，任务也能正常运行
+    # If the YAML file for the current language does not exist, fall back
+    # to the Chinese version. This ensures tasks still work even if the
+    # translation is incomplete
     if not os.path.exists(yaml_path):
         yaml_path = os.path.join(current_dir, '..', 'locales', 'zh', 'tasks', f'{task_name}.yaml')
 
-    # 如果中文版本也不存在（理论上不应该发生），返回空字典
-    # 上层调用者需要处理空字典的情况
+    # If the Chinese version also does not exist (should not happen in
+    # theory), return an empty dictionary. Callers must handle the empty
+    # dictionary case
     if not os.path.exists(yaml_path):
         return {}
 
     try:
-        # 使用 UTF-8 编码打开文件，确保中文字符正常读取
+        # Open the file with UTF-8 encoding to ensure Chinese characters
+        # are read correctly
         with open(yaml_path, 'r', encoding='utf-8') as f:
-            # yaml.safe_load 相比 yaml.load 更安全，不会执行任意 Python 代码
+            # yaml.safe_load is safer than yaml.load — it does not execute
+            # arbitrary Python code
             return yaml.safe_load(f)
     except Exception as e:
-        # 解析失败时打印警告但不抛出异常 —— 允许系统降级运行
+        # Print a warning on parse failure instead of raising — allows the
+        # system to run in a degraded mode
         print(f"Warning: Failed to load task text from {yaml_path}: {e}")
         return {}
 
 
 class BaseTask:
-    """所有任务的基类
+    """Base class for all tasks.
 
-    封装了 CrewAI Task 的基本属性（agent、expected_output、description），
-    提供 create_task() 方法创建 CrewAI Task 实例。
-    子类可以覆盖 create_task() 以添加额外的逻辑（如上下文依赖、反馈信息等）。
+    Encapsulates the basic attributes of a CrewAI Task (agent,
+    expected_output, description) and provides a create_task() method to
+    create CrewAI Task instances. Subclasses can override create_task()
+    to add extra logic (such as context dependencies, feedback, etc.).
     """
 
     def __init__(self, agent, expected_output, description):
-        """初始化基础任务
+        """Initialize the base task.
 
-        设置任务的核心三要素：
-        - agent: 执行该任务的 AI Agent，决定了任务的执行风格和专业领域
-        - expected_output: 期望的任务输出格式和内容说明
-        - description: 详细的任务描述，引导 Agent 完成工作
+        Sets the three core elements of a task:
+        - agent: the AI Agent that executes this task, determining the
+          execution style and domain expertise
+        - expected_output: a description of the expected output format
+          and content
+        - description: a detailed task description that guides the Agent
 
         Args:
-            agent: 负责执行该任务的 CrewAI Agent 实例
-            expected_output: 期望输出格式的文本描述
-            description: 任务描述文本
+            agent: The CrewAI Agent instance responsible for this task
+            expected_output: Text describing the expected output format
+            description: Task description text
         """
         self.agent = agent
         self.expected_output = expected_output
         self.description = description
 
     def create_task(self):
-        """创建并返回 CrewAI Task 实例
+        """Create and return a CrewAI Task instance.
 
-        使用当前对象的属性构建 Task 对象。
-        CrewAI 框架会基于这个 Task 对象调度 Agent 执行任务。
-        子类通常需要覆盖此方法以支持 context_task、feedback 等高级特性。
+        Builds a Task object from the current object's attributes. The
+        CrewAI framework schedules an Agent to execute the task based on
+        this Task object. Subclasses typically override this method to
+        support advanced features such as context_task and feedback.
 
         Returns:
-            Task: CrewAI 框架的 Task 实例
+            Task: A CrewAI framework Task instance
         """
         return Task(
             agent=self.agent,

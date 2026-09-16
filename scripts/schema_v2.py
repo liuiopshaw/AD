@@ -196,10 +196,10 @@ def normalize_record(cells: "list[str]") -> "dict | None":
 
 FIELDS_V3 = [
     "Material_Name",
-    "Drug_Type",          # dim 1: 药物种类
-    "Target_Category",    # dim 2: 药物作用靶点
-    "Action_Mode",        # dim 3: 药物作用方式
-    "AD_Mechanism",       # dim 4: AD 治疗机制
+    "Drug_Type",          # dim 1: drug type
+    "Target_Category",    # dim 2: drug target category
+    "Action_Mode",        # dim 3: drug action mode
+    "AD_Mechanism",       # dim 4: AD therapeutic mechanism
     "Chemical_Formula",
     "SMILES",
     "Target_UniProt",
@@ -218,27 +218,27 @@ DRUG_TYPES = (
 )
 
 TARGET_CATEGORIES = (
-    "gut_targeted_regulation",          # 肠道靶向调控
-    "CNS_intervention_neurorepair",     # 中枢干预与神经修复
-    "signaling_pathway_modulation",     # 信号通路调控
-    "peripheral_nerve_regulation",      # 外周神经调控
-    "epigenetic_regulation",            # 表观遗传调控
+    "gut_targeted_regulation",          # gut-targeted regulation
+    "CNS_intervention_neurorepair",     # CNS intervention and neurorepair
+    "signaling_pathway_modulation",     # signaling pathway modulation
+    "peripheral_nerve_regulation",      # peripheral nerve regulation
+    "epigenetic_regulation",            # epigenetic regulation
 )
 
 ACTION_MODES = (
-    "microbiota_ratio_modulation",      # 肠道菌群比例调控
-    "immune_inflammation_modulation",   # 免疫/炎症调控
-    "probiotic_prebiotic_supplementation",  # 补充益生菌/元
-    "metabolite_modulation",            # 调节代谢产物
-    "active_substance_delivery",        # 递送活性物质
+    "microbiota_ratio_modulation",      # gut microbiota ratio modulation
+    "immune_inflammation_modulation",   # immune/inflammation modulation
+    "probiotic_prebiotic_supplementation",  # probiotic/prebiotic supplementation
+    "metabolite_modulation",            # metabolite modulation
+    "active_substance_delivery",        # active substance delivery
 )
 
 AD_MECHANISMS = (
-    "gut_microbiome_axis",              # 肠道菌群调控(肠-脑轴)
-    "amyloid_tau_targeting",            # 靶向 Aβ/Tau 病理蛋白
-    "neuroprotection",                  # 神经保护
-    "neuroinflammation_modulation",     # 神经炎症调控
-    "synaptic_function_modulation",     # 突触功能调控
+    "gut_microbiome_axis",              # gut microbiome regulation (gut-brain axis)
+    "amyloid_tau_targeting",            # targeting Aβ/Tau pathological proteins
+    "neuroprotection",                  # neuroprotection
+    "neuroinflammation_modulation",     # neuroinflammation modulation
+    "synaptic_function_modulation",     # synaptic function modulation
 )
 
 DRUG_TYPE_FIELD_GUIDE = {

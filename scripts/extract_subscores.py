@@ -30,10 +30,10 @@ sys.path.insert(0, str(Path(__file__).parent))
 from output_utils import find_run_dir, OUTPUT_ROOT
 
 AGENT_AXES = {
-    "apa": ["manufacturability"],                      # 生产质控与精准调控能力 (rubric v0.4, 评分标准/标准.md)
-    "epa": ["delivery_efficiency"],                    # 靶组织递送效率
-    "bsa": ["biosafety"],                              # 生物安全性
-    "mma": ["multi_target_synergy", "durability"],     # 多靶点协同 + 效应持久性
+    "apa": ["manufacturability"],                      # manufacturing control & tunability (rubric, 评分标准/标准.md)
+    "epa": ["delivery_efficiency"],                    # target-tissue delivery efficiency
+    "bsa": ["biosafety"],                              # biological safety
+    "mma": ["multi_target_synergy", "durability"],     # multi-target synergy + effect durability
 }
 
 JSON_OBJ_RE = re.compile(r"\{[^{}]*\}")

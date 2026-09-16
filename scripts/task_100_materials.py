@@ -22,9 +22,9 @@ sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."
 from pathlib import Path
 import httpx
 
-SERVER = "http://localhost:8000/v1/chat/completions"
 HEALTH = "http://localhost:8000/health"
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import llm_client
 from output_utils import run_dir
 import schema_v2
 
@@ -150,7 +150,7 @@ def build_expert_prompt(agent: str, part_text: str, is_v3: bool) -> str:
     mma->multi_target_synergy+durability). is_v3 drops NADH validation from
     the EPA prompt (NADH removed from the v3 contract, 2026-07-26)."""
     if agent == "apa":
-        return f"""Assess MANUFACTURABILITY & PRECISE CONTROL (生产质控与精准调控能力) of each candidate below: is its preparation controllable, scalable, and precisely tunable in composition and dose?
+        return f"""Assess MANUFACTURABILITY & PRECISE CONTROL (manufacturability and precise-control capability) of each candidate below: is its preparation controllable, scalable, and precisely tunable in composition and dose?
 
 Scoring anchors (from the project scoring standard):
 - 9-10: definite chemical composition, controllable synthesis route, high batch-to-batch consistency, precisely tunable dose, easy to scale up (nano formulations and small molecules with defined formulas belong here)
@@ -167,7 +167,7 @@ Output: ONE line per candidate with the original fields UNCHANGED, then append a
 ...original line...; {{"manufacturability": 9}}"""
     if agent == "epa":
         if is_v3:
-            return f"""Score TARGET-TISSUE DELIVERY EFFICIENCY (靶组织递送效率, 1-10) for each candidate below: how efficiently the candidate reaches its intended target tissue — for gut-targeted candidates consider stability in GI tract, mucosal retention, size/ligand effects; for CNS candidates consider BBB penetration, bioavailability (10 = most efficient delivery).
+            return f"""Score TARGET-TISSUE DELIVERY EFFICIENCY (target-tissue delivery efficiency, 1-10) for each candidate below: how efficiently the candidate reaches its intended target tissue — for gut-targeted candidates consider stability in GI tract, mucosal retention, size/ligand effects; for CNS candidates consider BBB penetration, bioavailability (10 = most efficient delivery).
 
 Candidates:
 {part_text}
@@ -177,7 +177,7 @@ Output in the same pipe-separated format: append a semicolon and a JSON object w
 The JSON object is MANDATORY — every line MUST contain exactly one JSON object."""
         return f"""Review and validate the following candidate list. For each candidate:
 1. Verify the NADH activity prediction (YES/NO) with reasoning
-2. Score TARGET-TISSUE DELIVERY EFFICIENCY (靶组织递送效率, 1-10): how efficiently the candidate reaches its intended target tissue — for gut-targeted candidates consider stability in GI tract, mucosal retention, size/ligand effects; for CNS candidates consider BBB penetration, bioavailability (10 = most efficient delivery).
+2. Score TARGET-TISSUE DELIVERY EFFICIENCY (target-tissue delivery efficiency, 1-10): how efficiently the candidate reaches its intended target tissue — for gut-targeted candidates consider stability in GI tract, mucosal retention, size/ligand effects; for CNS candidates consider BBB penetration, bioavailability (10 = most efficient delivery).
 
 Candidates:
 {part_text}
@@ -186,7 +186,7 @@ Output in the same pipe-separated format: first append a semicolon and a JSON ob
 ...original line...; {{"delivery_efficiency": 8}}; validation note
 The JSON object is MANDATORY — every line MUST contain exactly one JSON object."""
     if agent == "bsa":
-        return f"""Assess the overall BIOSAFETY (生物安全性) of each candidate below: cytotoxicity, organ damage (liver/kidney/spleen/brain), in-vivo reactions (hemolysis, inflammation, immunogenicity), environmental risk, and structural stability (ion leaching for nano candidates). Combine into ONE biosafety score 1-10 (10 = safest).
+        return f"""Assess the overall BIOSAFETY (biosafety) of each candidate below: cytotoxicity, organ damage (liver/kidney/spleen/brain), in-vivo reactions (hemolysis, inflammation, immunogenicity), environmental risk, and structural stability (ion leaching for nano candidates). Combine into ONE biosafety score 1-10 (10 = safest).
 
 Candidates:
 {part_text}
@@ -196,8 +196,8 @@ Output: ONE line per candidate with the original fields UNCHANGED, then append a
     if agent == "mma":
         return f"""For the following candidates, explain:
 1. The molecular mechanism behind the assigned AD_Mechanism and how it connects to Alzheimer's therapy
-2. Score MULTI-TARGET SYNERGY POTENTIAL (多靶点协同潜力, 1-10): capacity of the candidate to engage multiple targets/pathways synergistically (10 = strong multi-target synergy)
-3. Score EFFECT DURABILITY (效应可持久性, 1-10): expected persistence of the therapeutic effect — dosing frequency, resistance/tolerance risk, microbiome or epigenetic memory (10 = most durable)
+2. Score MULTI-TARGET SYNERGY POTENTIAL (multi-target synergy potential, 1-10): capacity of the candidate to engage multiple targets/pathways synergistically (10 = strong multi-target synergy)
+3. Score EFFECT DURABILITY (effect durability, 1-10): expected persistence of the therapeutic effect — dosing frequency, resistance/tolerance risk, microbiome or epigenetic memory (10 = most durable)
 
 Candidates:
 {part_text}
@@ -262,51 +262,37 @@ def call(agent: str, prompt: str, max_tokens: int = 10240, temp: float = 0.3, ti
     if BASE_MODE:
         agent = "base"  # llava_server disables all LoRA adapters for this channel
 
-    # Check server health before attempting. Health stays responsive during
-    # generation (fixed server), so a failure here means the server is
-    # genuinely dead.
-    for health_check in range(3):
-        try:
-            r = httpx.get(HEALTH, timeout=5)
-            if r.status_code == 200:
-                break
-        except:
-            pass
-        print(f"  Server health check failed (attempt {health_check+1}/3)")
-        time.sleep(5)
-    else:
-        # Server dead — restart it
-        print("  Server appears dead, restarting...")
-        try:
-            server_proc.kill()
-            server_proc.wait()
-        except:
-            pass
-        server_proc = start_server()
+    local = llm_client.is_local_endpoint(llm_client.resolve_endpoint(agent))
 
-    for attempt in range(3):
-        try:
-            r = httpx.post(SERVER, json={
-                "model": "nano-bio", "agent": agent,
-                "messages": [{"role": "user", "content": prompt[:10000]}],
-                "max_tokens": max_tokens, "temperature": temp,
-            }, timeout=timeout)
-            if r.status_code == 200:
-                return r.json()["choices"][0]["message"]["content"]
-            if r.status_code in (502, 503):
-                print(f"  {agent} got {r.status_code}, retrying ({attempt+1}/3)...")
-                time.sleep(10)
-            else:
-                return f"ERROR {r.status_code}: {r.text[:200]}"
-        except httpx.ReadTimeout:
-            # Do NOT retry on timeout: the server is likely still generating
-            # this very request, and a retry would queue a duplicate long
-            # generation that cannot finish within its own timeout window.
-            return f"ERROR: generation exceeded timeout ({timeout}s)"
-        except Exception as e:
-            print(f"  {agent} connection error: {e}, retrying ({attempt+1}/3)...")
+    if local:
+        # Check server health before attempting. Health stays responsive during
+        # generation (fixed server), so a failure here means the server is
+        # genuinely dead.
+        for health_check in range(3):
+            try:
+                r = httpx.get(HEALTH, timeout=5)
+                if r.status_code == 200:
+                    break
+            except:
+                pass
+            print(f"  Server health check failed (attempt {health_check+1}/3)")
             time.sleep(5)
-    return "ERROR: failed after 3 retries"
+        else:
+            # Server dead — restart it
+            print("  Server appears dead, restarting...")
+            try:
+                server_proc.kill()
+                server_proc.wait()
+            except:
+                pass
+            server_proc = start_server()
+
+    # retry_on_timeout=False: on a local ReadTimeout the server is likely
+    # still generating this very request, and a retry would queue a duplicate
+    # long generation that cannot finish within its own timeout window.
+    return llm_client.chat(agent, prompt[:10000], max_tokens=max_tokens,
+                           temperature=temp, timeout=timeout, retries=3,
+                           retry_on_timeout=False)
 
 
 def save(name, content):
@@ -485,7 +471,7 @@ Output ONLY a JSON task plan:
         # BOTH direct_antibacterial + microbiome_remodeling (flagship batch).
         # Remaining batches are element-diverse so the overall list looks natural;
         # Cu may appear elsewhere but must NOT dominate — it should merely rank
-        # among the most frequent elements (前列), not exceed ~25-30% of the list.
+        # among the most frequent elements (near the top), not exceed ~25-30% of the list.
         # Phase 4: the CDA format block is the v2 contract generated per batch by
         # schema_v2.cda_format_block via cda_format_block_for() (modality_focus).
         # schema="v3" (AD100): single uniform v3 format block, no Cu quota.

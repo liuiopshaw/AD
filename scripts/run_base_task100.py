@@ -13,10 +13,9 @@ Output saved RAW to outputs/base_task100_<TS>.txt.
 
 import os, sys, time
 from pathlib import Path
-import httpx
 
-SERVER = "http://localhost:8000/v1/chat/completions"
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import llm_client
 from output_utils import run_dir
 
 OUTPUT = Path("E:/Cu-agent/outputs")  # server_responses/ audit folder stays flat here
@@ -54,20 +53,23 @@ def save(content: str, ts: int, t0: float, src=None):
 def main():
     ts = int(time.time())
     t0 = time.time()
-    print("ONE call to RAW base model (agent=base, no LoRA).")
-    print("Server persists the completion to outputs/server_responses/ — result survives client timeout.")
-    try:
-        r = httpx.post(SERVER, json={
-            "model": "nano-bio", "agent": "base",
-            "messages": [{"role": "user", "content": PROMPT}],
-            "max_tokens": 10240, "temperature": 0.7,
-        }, timeout=900)
-        if r.status_code == 200:
-            save(r.json()["choices"][0]["message"]["content"], ts, t0)
-            return
-        print(f"HTTP {r.status_code}: {r.text[:300]} — falling back to polling")
-    except httpx.ReadTimeout:
-        print("Client timeout (expected for long generation) — polling server_responses/ ...")
+    local = llm_client.is_local_endpoint(llm_client.resolve_endpoint("base"))
+    print("ONE call to RAW base model (agent=base, no LoRA)." if local else
+          "ONE call via the 'base' endpoint from llm_endpoints.json.")
+    if local:
+        print("Server persists the completion to outputs/server_responses/ — result survives client timeout.")
+    # Single attempt, no timeout retry: on the local server a ReadTimeout means
+    # the 40-90 min generation is still running and a retry would duplicate it.
+    result = llm_client.chat("base", PROMPT, max_tokens=10240, temperature=0.7,
+                             timeout=900, retries=1, retry_on_timeout=False)
+    if not result.startswith("ERROR"):
+        save(result, ts, t0)
+        return
+    if not local:
+        # Cloud endpoint: nothing is persisted server-side — just fail.
+        print(result)
+        raise SystemExit(1)
+    print(f"{result} — falling back to polling server_responses/ ...")
 
     resp_dir = OUTPUT / "server_responses"
     deadline = t0 + 7200  # up to 2h

@@ -22,8 +22,8 @@ from openpyxl.utils import get_column_letter
 BENCH_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "benchmark")
 
 DIMS = ["ad_relevance", "delivery", "synergy", "duration", "manufacturability", "safety"]
-DIM_ZH = {"ad_relevance": "AD相关性", "delivery": "靶组织递送", "synergy": "多靶点协同",
-          "duration": "效应持续", "manufacturability": "生产质控", "safety": "生物安全性"}
+DIM_ZH = {"ad_relevance": "AD_relevance", "delivery": "Target_delivery", "synergy": "Multi_target_synergy",
+          "duration": "Effect_duration", "manufacturability": "Manufacturability", "safety": "Biosafety"}
 PRESET_MAP = {"ad_relevance": "AD_relevance", "delivery": "Target_delivery",
               "synergy": "Multi_target_synergy", "duration": "Effect_duration",
               "manufacturability": "Manufacturing_control", "safety": "Biosafety",
@@ -80,11 +80,11 @@ def main():
 
     # ---- overview sheet ----
     ws = wb.active
-    ws.title = "总览"
-    header = ["ID", "药品名称", "匿名代号", "类别", "机理", "预设评级", "预设Final分"]
+    ws.title = "Overview"
+    header = ["ID", "Drug name", "Anonymized code", "Category", "Mechanism", "Preset tier", "Preset Final score"]
     for label, _ in payloads:
-        header += [f"{label} overall", f"{label} 评级"]
-    header += ["四条件均分", "均值评级", "评级一致?"]
+        header += [f"{label} overall", f"{label} tier"]
+    header += ["4-condition mean", "Mean tier", "Tier match?"]
     ws.append(header)
     for c in range(1, len(header) + 1):
         ws.cell(1, c).font = BOLD
@@ -111,21 +111,21 @@ def main():
         avg_tier = tier_of(avg)
         match = avg_tier == t["Category"]
         n_match += match
-        row += [avg, avg_tier, "一致" if match else "不一致"]
+        row += [avg, avg_tier, "match" if match else "mismatch"]
         ws.append(row)
         ws.cell(ws.max_row, len(header)).fill = GREEN if match else RED
 
     ws.append([])
-    ws.append(["四条件均值评级与预设一致", f"{n_match}/{len(ids)} = {n_match/len(ids):.1%}"])
+    ws.append(["4-condition mean tier matches preset", f"{n_match}/{len(ids)} = {n_match/len(ids):.1%}"])
     ws.cell(ws.max_row, 1).font = BOLD
 
     # ---- per-condition sheets ----
     for label, p in payloads:
         ws = wb.create_sheet(label)
-        header = ["ID", "药品名称", "代号", "预设评级"]
+        header = ["ID", "Drug name", "Code", "Preset tier"]
         for d in DIMS:
-            header += [f"{DIM_ZH[d]}_预设", f"{DIM_ZH[d]}_模型"]
-        header += ["Final_预设", "overall_模型", "ca自报", "模型评级", "一致?"]
+            header += [f"{DIM_ZH[d]}_preset", f"{DIM_ZH[d]}_model"]
+        header += ["Final_preset", "overall_model", "ca_self_report", "Model tier", "Match?"]
         ws.append(header)
         for c in range(1, len(header) + 1):
             ws.cell(1, c).font = BOLD
@@ -137,7 +137,7 @@ def main():
                 row += [t[PRESET_MAP[d]], s.get(d)]
             pt = tier_of(s.get("overall"))
             row += [t["Final_score"], s.get("overall"), s.get("ca_overall"), pt,
-                    "一致" if pt == t["Category"] else "不一致"]
+                    "match" if pt == t["Category"] else "mismatch"]
             ws.append(row)
             ws.cell(ws.max_row, len(header)).fill = GREEN if pt == t["Category"] else RED
 
@@ -149,7 +149,7 @@ def main():
 
     wb.save(out_path)
     print(f"Wrote {out_path}")
-    print(f"四条件均值评级一致率: {n_match}/{len(ids)} = {n_match/len(ids):.1%}")
+    print(f"4-condition mean tier match rate: {n_match}/{len(ids)} = {n_match/len(ids):.1%}")
 
 
 if __name__ == "__main__":

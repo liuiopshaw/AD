@@ -2,23 +2,27 @@
 """
 Generalized compound lookup for CDA-designed candidates (Phase 2 Tier 1).
 
-泛化查证脚本 —— 按 Modality 路由到对应数据库，验证 agent 输出中各模态的
-关键标识符（不改 agent 原始输出，只生成独立的查证产物）：
+Generalized lookup script — routes by Modality to the corresponding database
+to verify the key identifiers of each modality in the agent output (does not
+modify the raw agent output; only produces independent verification artifacts):
 
-- 纳米模态 (nanocluster/nanoparticle/single_atom/dual_atom，含旧记录的
-  Material_Category 逐字迁入值) → 复用 formula_lookup.py 的候选提取与
-  查询逻辑（import candidates_for / make_source；MP+PubChem）
-- small_molecule → PubChem（名称 + SMILES）+ ChEMBL molecule_by_smiles
-  → 验证结论：SMILES 有效/无效、对应已知化合物 chembl_id
-- biologic → UniProt get_entry(Target_UniProt) → 校验 accession 存在
+- Nano modality (nanocluster/nanoparticle/single_atom/dual_atom, including
+  values relocated verbatim from legacy records' Material_Category) → reuses
+  the candidate extraction and query logic of formula_lookup.py
+  (import candidates_for / make_source; MP+PubChem)
+- small_molecule → PubChem (name + SMILES) + ChEMBL molecule_by_smiles
+  → verification conclusion: SMILES valid/invalid, chembl_id of the
+  corresponding known compound
+- biologic → UniProt get_entry(Target_UniProt) → validate that the accession exists
 
-输入：run 目录里的 task100_cda_<TS>_part*.txt（schema_v2.normalize_record
-解析，兼容 9/10/11 列旧记录与 13 列 v2 记录）。
-输出（写入同一 run 目录）：
-- compound_lookup_raw_<TS>.txt  —— 原始 API 响应落盘
-- compound_map_<TS>.json        —— {source, ts, materials: {name: {...}}}
+Input: task100_cda_<TS>_part*.txt in the run directory (parsed with
+schema_v2.normalize_record, compatible with legacy 9/10/11-column records
+and 13-column v2 records).
+Output (written to the same run directory):
+- compound_lookup_raw_<TS>.txt  — raw API responses written to disk
+- compound_map_<TS>.json        — {source, ts, materials: {name: {...}}}
 
-用法:
+Usage:
   python scripts/compound_lookup.py [timestamp]
   python scripts/compound_lookup.py --input-dir outputs/run_<TS>
 """
@@ -34,30 +38,30 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from output_utils import find_run_dir, OUTPUT_ROOT
 from schema_v2 import normalize_record
 
-# 纳米模态集合：schema_v2 的四种 + 旧记录 Material_Category 逐字迁入的同名值
+# Nano modality set: the four from schema_v2 plus same-named values migrated verbatim from legacy records' Material_Category
 NANO_MODALITIES = {"nanocluster", "nanoparticle", "single_atom", "dual_atom"}
 
-# 无效占位值（agent 对不适用字段的填充）
+# Invalid placeholder values (what agents fill in for not-applicable fields)
 NA_VALUES = {"", "NA", "N/A", "None", "none", "null", "-"}
 
 
 def _is_filled(value) -> bool:
-    """字段是否有实质内容（非 NA 占位）。"""
+    """Whether a field has substantive content (not an NA placeholder)."""
     return value is not None and str(value).strip() not in NA_VALUES
 
 
 # ---------------------------------------------------------------------------
-# 记录加载与解析
+# Record loading and parsing
 # ---------------------------------------------------------------------------
 
 def load_records(input_dir: Path, ts: str):
-    """读取 task100_cda_<ts>_part*.txt；v2 用 normalize_record 解析，
-    v3(AD100)用 parse_record_v3 并把 Drug_Type 映射为路由用 Modality。"""
+    """Read task100_cda_<ts>_part*.txt; v2 is parsed with normalize_record,
+    v3 (AD100) with parse_record_v3, mapping Drug_Type to the routing Modality."""
     from schema_v2 import parse_record_v3
     V3_TO_MODALITY = {"nano_formulation": "nanoparticle",
                       "small_molecule": "small_molecule",
                       "biologic": "biologic",
-                      "composite": "nanoparticle",  # 二元复合:先按纳米相查证(化学式+包覆)
+                      "composite": "nanoparticle",  # binary composite: verify as the nano phase first (formula + coating)
                       "other": "other"}
     parts = sorted(input_dir.glob(f"task100_cda_{ts}_part*.txt"))
     if not parts:
@@ -85,18 +89,18 @@ def load_records(input_dir: Path, ts: str):
 
 
 # ---------------------------------------------------------------------------
-# 各模态查证函数（输入 v2 record dict，输出 map entry + raw 记录列表）
+# Per-modality verification functions (input: v2 record dict; output: map entry + raw record list)
 # ---------------------------------------------------------------------------
 
 def lookup_nano(rec, inorg_fn, organic_fn, raw_lines, sleep_s=1.0):
-    """纳米模态：复用 formula_lookup.py 的 candidates_for + 查询函数。
+    """Nano modality: reuse candidates_for + query functions from formula_lookup.py.
 
-    candidates_for 期望旧式 cells 列表（[0]名称 [1]化学式 [2]配体），
-    这里从 v2 record 机械重建该三元组喂给它。
+    candidates_for expects a legacy cells list ([0] name, [1] formula, [2] ligand);
+    here we mechanically rebuild that triple from the v2 record and feed it in.
     """
-    # candidates_for 期望旧式 cells 列表（[0]名称 [1]化学式 [2]配体，且按
-    # len(cells)>=10/11 判断字段存在），这里从 v2 record 机械重建并补齐到
-    # 11 列再喂给它。
+    # candidates_for expects a legacy cells list ([0] name, [1] formula, [2] ligand, and
+    # checks field presence via len(cells)>=10/11); here we rebuild from the v2 record
+    # and pad to 11 columns before feeding it in.
     from formula_lookup import candidates_for
 
     name = rec["Material_Name"]
@@ -108,7 +112,7 @@ def lookup_nano(rec, inorg_fn, organic_fn, raw_lines, sleep_s=1.0):
     for q, role in cands:
         fn = organic_fn if role == "ligand" else inorg_fn
         res = fn(q)
-        time.sleep(sleep_s)  # 礼貌限速（工具内部另有最小间隔控制）
+        time.sleep(sleep_s)  # polite rate limiting (tools also enforce their own minimum interval)
         raw_lines.append(f"=== QUERY [{rec['Modality']}:{name}] {q} ({role}) ===\n"
                          f"{json.dumps(res.get('raw'), ensure_ascii=False)[:3000]}\n")
         if res.get("formula"):
@@ -119,7 +123,7 @@ def lookup_nano(rec, inorg_fn, organic_fn, raw_lines, sleep_s=1.0):
         print(f"    {q} ({role}) -> "
               f"{res['formula']} [{res['id']}]" if res.get("formula") else f"    {q} ({role}) -> NO MATCH")
 
-    if len(entry) > 1:  # 有任意命中
+    if len(entry) > 1:  # any hit
         parts = []
         for role in ("active_phase", "support"):
             r = entry.get(role)
@@ -131,9 +135,9 @@ def lookup_nano(rec, inorg_fn, organic_fn, raw_lines, sleep_s=1.0):
 
 
 def lookup_small_molecule(rec, pc, raw_lines, sleep_s=1.0):
-    """小分子模态：PubChem（名称 + SMILES）+ ChEMBL molecule_by_smiles。
+    """Small-molecule modality: PubChem (name + SMILES) + ChEMBL molecule_by_smiles.
 
-    产出验证结论：SMILES 有效/无效、对应已知化合物 chembl_id。
+    Produces verification conclusions: SMILES valid/invalid, chembl_id of the known compound.
     """
     from src.tools.chembl_tool import molecule_by_smiles
 
@@ -141,7 +145,7 @@ def lookup_small_molecule(rec, pc, raw_lines, sleep_s=1.0):
     smiles = (rec.get("SMILES") or "").strip()
     entry = {"modality": rec["Modality"], "smiles": smiles or None}
 
-    # ---- PubChem 按名称查证 ----
+    # ---- PubChem name lookup ----
     pubchem_name = None
     if _is_filled(name):
         info = pc.get_compound_info(name)
@@ -157,7 +161,7 @@ def lookup_small_molecule(rec, pc, raw_lines, sleep_s=1.0):
         print(f"    PubChem name '{name}' -> "
               f"{pubchem_name['id']}" if pubchem_name else f"    PubChem name '{name}' -> NO MATCH")
 
-    # ---- SMILES 双源验证：ChEMBL + PubChem ----
+    # ---- SMILES dual-source verification: ChEMBL + PubChem ----
     chembl_hit = None
     pubchem_smiles = None
     if _is_filled(smiles):
@@ -182,7 +186,7 @@ def lookup_small_molecule(rec, pc, raw_lines, sleep_s=1.0):
         except Exception as e:
             raw_lines.append(f"=== QUERY [small_molecule:{name}] PubChem smiles ERROR: {e} ===\n")
 
-    # ---- 汇总验证结论 ----
+    # ---- Aggregate verification conclusions ----
     smiles_valid = bool(chembl_hit or pubchem_smiles)
     entry["smiles_valid"] = smiles_valid
     entry["chembl"] = chembl_hit
@@ -200,7 +204,7 @@ def lookup_small_molecule(rec, pc, raw_lines, sleep_s=1.0):
 
 
 def lookup_biologic(rec, raw_lines, sleep_s=1.0):
-    """生物制剂模态：UniProt get_entry(Target_UniProt) 校验 accession。"""
+    """Biologic modality: validate the accession via UniProt get_entry(Target_UniProt)."""
     from src.tools.uniprot_tool import get_entry
 
     name = rec["Material_Name"]
@@ -229,7 +233,7 @@ def lookup_biologic(rec, raw_lines, sleep_s=1.0):
 
 
 # ---------------------------------------------------------------------------
-# 主流程
+# Main flow
 # ---------------------------------------------------------------------------
 
 def main():
@@ -239,7 +243,7 @@ def main():
                     help="historical run directory containing task100_cda_*_part*.txt")
     args = ap.parse_args()
 
-    # ---- 定位输入 run 目录与时间戳 ----
+    # ---- Locate the input run directory and timestamp ----
     if args.input_dir:
         input_dir = Path(args.input_dir)
         if not input_dir.is_dir():
@@ -261,7 +265,7 @@ def main():
     print(f"Run dir: {input_dir}")
     print(f"{len(records)} records from {src_files}")
 
-    # ---- 路由分组 ----
+    # ---- Routing groups ----
     nano_recs, sm_recs, bio_recs = [], [], []
     for rec in records:
         mod = (rec.get("Modality") or "").strip().lower()
@@ -275,7 +279,7 @@ def main():
             print(f"  [skip] unknown modality {rec.get('Modality')!r}: {rec.get('Material_Name')}")
     print(f"Routing: {len(nano_recs)} nano, {len(sm_recs)} small_molecule, {len(bio_recs)} biologic")
 
-    # ---- 准备各模态查询入口 ----
+    # ---- Prepare per-modality query entry points ----
     from formula_lookup import make_source
     inorg_fn, organic_fn, nano_source = make_source()
     from src.tools.pubchem_tool import get_pubchem_tool
@@ -291,7 +295,7 @@ def main():
     source = "+".join(source_parts) or "none"
     print(f"Sources: {source}")
 
-    # ---- 逐条查证（原始响应全部落盘）----
+    # ---- Verify one by one (all raw responses persisted to disk) ----
     raw_lines = [f"# Compound lookup raw data — source: {source}, run {ts}\n",
                  f"# files: {src_files}\n\n"]
     mapping = {}
@@ -306,7 +310,7 @@ def main():
         elif mod == "biologic":
             mapping[name] = lookup_biologic(rec, raw_lines)
 
-    # ---- 落盘：raw + map（走 run 目录约定，写回输入所在 run 目录）----
+    # ---- Persist: raw + map (follow the run-directory convention, written back into the input run's directory) ----
     raw_path = input_dir / f"compound_lookup_raw_{ts}.txt"
     with io.open(raw_path, "w", encoding="utf-8") as f:
         f.write("\n".join(raw_lines))

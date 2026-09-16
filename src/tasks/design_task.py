@@ -1,37 +1,43 @@
 #!/usr/bin/env python3
 """
-Material Design Task — 材料设计任务
-负责人工智能驱动的材料配方设计和优化，生成满足用户需求的水处理材料方案
+Material Design Task
+Handles AI-driven material formulation design and optimization,
+generating water treatment material solutions that meet user requirements.
 """
 
-# 从基础任务模块导入基类和任务文本加载函数
+# Import the base class and task text loader from the base task module
 from .base_task import BaseTask, load_task_text
 
 
 class DesignTask(BaseTask):
-    """材料设计任务类
+    """Material design task class
 
-    继承自 BaseTask，专门处理材料配方设计场景。
-    负责根据用户需求（如处理目标、水质参数等）设计最优的材料组合方案。
-    支持接收反馈进行迭代优化，以及接收上下文任务形成任务链。
+    Inherits from BaseTask and specializes in material formulation design
+    scenarios. Designs the optimal material combination based on user
+    requirements (e.g., treatment targets, water quality parameters).
+    Supports receiving feedback for iterative optimization, and receiving
+    context tasks to form a task chain.
     """
 
     def __init__(self, agent):
-        """初始化材料设计任务
+        """Initialize the material design task
 
-        在初始化时从 YAML 文件加载任务描述文本，
-        然后调用父类构造函数设置 agent、expected_output 和 description。
+        Loads the task description text from a YAML file during
+        initialization, then calls the parent constructor to set the
+        agent, expected_output, and description.
 
         Args:
-            agent: 材料设计 Agent，负责执行设计推理的 AI 代理
+            agent: The material design agent, an AI agent responsible for
+                performing the design reasoning
         """
-        # 从 locales 目录加载设计任务的多语言文本配置
-        # 包括任务描述、期望输出格式等
+        # Load the multilingual text configuration for the design task
+        # from the locales directory, including the task description,
+        # expected output format, etc.
         task_text = load_task_text('design_task')
 
-        # 调用父类构造函数初始化基础属性
-        # expected_output 和 description 从 YAML 配置中获取，
-        # 如果配置中不存在则使用空字符串作为默认值
+        # Call the parent constructor to initialize the base attributes
+        # expected_output and description are taken from the YAML config;
+        # fall back to empty strings if they are not defined there
         super().__init__(
             agent=agent,
             expected_output=task_text.get('expected_output', ''),
@@ -39,46 +45,54 @@ class DesignTask(BaseTask):
         )
 
     def create_task(self, agent, context_task=None, feedback=None, user_requirement=None):
-        """创建材料设计任务实例
+        """Create a material design task instance
 
-        与父类相比，此方法增强了以下功能：
-        1. 支持注入用户需求文本到任务描述中
-        2. 支持注入反馈信息以实现迭代优化
-        3. 支持设置上下文依赖任务（context_task），实现任务链
+        Compared with the parent class, this method adds the following
+        capabilities:
+        1. Injecting user requirement text into the task description
+        2. Injecting feedback information for iterative optimization
+        3. Setting context dependency tasks (context_task) to form a task chain
 
         Args:
-            agent: 执行该任务的 Agent 实例
-            context_task: 前置任务或任务列表，当前任务需要等待这些任务完成后才执行
-            feedback: 上一次迭代的反馈文本，用于指导重新设计
-            user_requirement: 用户的具体材料需求描述
+            agent: The Agent instance that executes this task
+            context_task: A prerequisite task or list of tasks that must
+                complete before this task runs
+            feedback: Feedback text from the previous iteration, used to
+                guide the redesign
+            user_requirement: The user's specific material requirements
 
         Returns:
-            Task: 配置好的 CrewAI Task 实例
+            Task: A configured CrewAI Task instance
         """
-        # 从 YAML 文件加载任务文本模板
-        # 每次调用都重新加载，确保获取最新的配置
+        # Load the task text templates from the YAML file
+        # Reload on every call to ensure the latest configuration is used
         task_text = load_task_text('design_task')
 
-        # 提取各文本片段，如果 YAML 中未定义则使用空字符串作为默认值
+        # Extract each text fragment; fall back to empty strings if not
+        # defined in the YAML
         description = task_text.get('description', '')
         expected_output = task_text.get('expected_output', '')
-        # 用户需求前缀：在描述中标识用户需求部分的引导文字
+        # User requirement prefix: lead-in text marking the user
+        # requirement section in the description
         user_req_prefix = task_text.get('user_requirement_prefix', '\n\nUser Requirement: ')
-        # 反馈前缀：在描述中标识反馈信息部分的引导文字
+        # Feedback prefix: lead-in text marking the feedback section in
+        # the description
         feedback_prefix = task_text.get('feedback_prefix', '\n\nFeedback:\n')
 
-        # 如果传入了用户需求，将其追加到任务描述的末尾
-        # 这样 Agent 在阅读任务描述时就能看到具体的用户需求
+        # If a user requirement was provided, append it to the end of the
+        # task description so the Agent can see the specific requirements
+        # when reading the description
         if user_requirement:
             description += f"{user_req_prefix}{user_requirement}"
 
-        # 如果传入了反馈信息，同样追加到描述末尾
-        # 反馈用于告知 Agent 上一轮设计的不足之处，引导其改进
+        # If feedback was provided, append it to the description as well
+        # The feedback tells the Agent about the shortcomings of the
+        # previous design round, guiding it to improve
         if feedback:
             description += f"{feedback_prefix}{feedback}"
 
-        # 创建 CrewAI Task 实例
-        # 使用延迟导入避免模块级别的循环依赖
+        # Create the CrewAI Task instance
+        # Use a deferred import to avoid module-level circular dependencies
         from crewai import Task
         task = Task(
             agent=agent,
@@ -86,16 +100,17 @@ class DesignTask(BaseTask):
             description=description
         )
 
-        # 设置任务上下文依赖
-        # context_task 表示当前任务需要等待这些前置任务完成后才能执行
-        # CrewAI 会根据 context 自动编排任务执行顺序
+        # Set up task context dependencies
+        # context_task means this task must wait for those prerequisite
+        # tasks to finish before it can run; CrewAI automatically
+        # orchestrates execution order based on context
         if context_task:
-            # 如果 context_task 已经是列表，直接赋值
+            # If context_task is already a list, assign it directly
             if isinstance(context_task, list):
                 task.context = context_task
             else:
-                # 如果是单个任务，包装成列表
-                # CrewAI 期望 context 属性是一个任务列表
+                # If it is a single task, wrap it in a list
+                # CrewAI expects the context attribute to be a task list
                 task.context = [context_task]
 
         return task

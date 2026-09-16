@@ -26,8 +26,8 @@ class BiosafetyAgent(BaseAgent):
         )
 
     def create_agent(self):
-        # LLM 的选择（EAS / 带温度标准 LLM / 默认 LLM）已统一收敛到
-        # BaseAgent._resolve_llm()，此处不再重复创建
+        # LLM selection (EAS / standard LLM with temperature / default LLM) is now
+        # centralized in BaseAgent._resolve_llm(); it is not recreated here
         agent = super().create_agent()
         try:
             from src.utils.llm_config import tools_enabled

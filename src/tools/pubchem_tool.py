@@ -2,86 +2,88 @@
 """
 PubChem database query tool via REST API.
 
-PubChem 数据库查询工具 —— 通过 PubChem REST API (PUG-REST) 查询化合物信息。
-支持按名称、分子式、CID、InChIKey 等多种方式检索有机化合物的物化性质。
+PubChem database query tool -- queries compound information via the PubChem REST API (PUG-REST).
+Supports retrieving physicochemical properties of organic compounds by name, molecular formula,
+CID, InChIKey, and more.
 """
 
-# ---- 标准库与第三方库导入 ----
-import requests       # HTTP 请求库，用于调用 PubChem REST API
-import logging        # 日志记录
-import time           # 时间处理，用于请求频率控制和重试间隔
-import random         # 随机数，用于重试时增加随机延迟（避免惊群效应）
-import os             # 操作系统接口，用于读取环境变量
-from typing import Dict, Any  # 类型注解
+# ---- Standard library and third-party imports ----
+import requests       # HTTP request library, used to call the PubChem REST API
+import logging        # Logging
+import time           # Time handling, used for request rate limiting and retry intervals
+import random         # Random numbers, used to add random delays on retries (avoid thundering herd)
+import os             # OS interface, used to read environment variables
+from typing import Dict, Any  # Type annotations
 
-# ---- 日志配置 ----
-# WARNING 级别：只记录警告和错误，减少正常运行时的日志噪音
+# ---- Logging configuration ----
+# WARNING level: only record warnings and errors, reducing log noise during normal operation
 logging.basicConfig(level=logging.WARNING)
 logger = logging.getLogger(__name__)
 
 class PubChemTool:
     """
-    PubChem 数据库查询工具 —— 封装 PubChem PUG-REST API 的所有查询方法。
+    PubChem database query tool -- encapsulates all query methods of the PubChem PUG-REST API.
 
-    支持查询和验证的有机材料类型：
-    1. 纯有机化合物 (Pure organic compounds)
-    2. 生物基材料 (Bio-based materials)
-    3. 碳基材料（部分）(Carbon-based materials)
-    4. 其他含有机组分的材料 (Other materials containing organic components)
+    Supported organic material types for querying and validation:
+    1. Pure organic compounds
+    2. Bio-based materials
+    3. Carbon-based materials (partially)
+    4. Other materials containing organic components
 
-    使用 PubChem REST API (PUG-REST)：
-    基础 URL: https://pubchem.ncbi.nlm.nih.gov/rest/pug
+    Uses the PubChem REST API (PUG-REST):
+    Base URL: https://pubchem.ncbi.nlm.nih.gov/rest/pug
     """
 
     def __init__(self, api_key: str = None):
         """
-        初始化 PubChem 工具。
+        Initialize the PubChem tool.
 
         Args:
-            api_key (str, optional): PubChem API 密钥。
-                                      如果提供，可提高 API 调用频率限制。
-                                      如果未提供，则从环境变量 PUBCHEM_API_KEY 读取。
+            api_key (str, optional): PubChem API key.
+                                     If provided, it can increase the API call rate limit.
+                                     If not provided, it is read from the environment variable
+                                     PUBCHEM_API_KEY.
         """
-        # PubChem PUG-REST API 的基础地址
+        # Base address of the PubChem PUG-REST API
         self.base_url = "https://pubchem.ncbi.nlm.nih.gov/rest/pug"
 
-        # API 密钥：优先参数传入，其次环境变量
+        # API key: prefer the passed-in parameter, fall back to the environment variable
         self.api_key = api_key or os.getenv('PUBCHEM_API_KEY')
 
-        # ---- HTTP 请求头 ----
-        # 设置 User-Agent 标识自己，符合 PubChem 使用规范
+        # ---- HTTP request headers ----
+        # Set a User-Agent to identify ourselves, in compliance with PubChem usage guidelines
         self.headers = {
             "User-Agent": "ECOMATS-PubChem-Tool/1.0"
         }
 
-        # 如果有 API Key，添加到请求头中（可提高请求频率上限）
+        # If an API key is available, add it to the request headers (raises the request rate limit)
         if self.api_key:
             self.headers["X-PubChem-API-Key"] = self.api_key
 
-        # ---- 请求频率控制 ----
-        # PubChem 对请求频率有限制，设置最小间隔以避免被限流/封禁
-        self.last_request_time = 0             # 上次请求的时间戳
-        self.min_request_interval = 1.0        # 最小请求间隔：1 秒（比默认更快，已有 API key 时允许）
+        # ---- Request rate limiting ----
+        # PubChem limits request rates; set a minimum interval to avoid throttling/banning
+        self.last_request_time = 0             # Timestamp of the last request
+        self.min_request_interval = 1.0        # Minimum request interval: 1 second (faster than default, allowed when an API key is present)
 
     def _make_request(self, endpoint: str, timeout: int = 10, max_retries: int = 2) -> Dict[str, Any]:
         """
-        发送 API 请求（带重试机制）—— 所有 PubChem API 调用的底层方法。
+        Send an API request (with retry mechanism) -- the underlying method for all PubChem API calls.
 
-        重试策略：
-        - 503 错误（服务器繁忙）：使用服务器返回的 Retry-After 延迟
-        - 超时：固定 2 秒后重试
-        - 其他请求异常：指数退避 + 随机 jitter 延迟
+        Retry strategy:
+        - 503 error (server busy): use the server-returned Retry-After delay
+        - Timeout: retry after a fixed 2 seconds
+        - Other request exceptions: exponential backoff + random jitter delay
 
         Args:
-            endpoint: API 端点路径（追加到 base_url 后面）
-            timeout: 请求超时时间（秒），默认 10 秒
-            max_retries: 最大重试次数，默认 2 次
+            endpoint: API endpoint path (appended after base_url)
+            timeout: Request timeout in seconds, default 10 seconds
+            max_retries: Maximum number of retries, default 2
 
         Returns:
-            Dict: API 返回的 JSON 解析字典；如果全部重试失败，返回 {"error": ...}
+            Dict: Parsed JSON dictionary returned by the API; if all retries fail, returns {"error": ...}
         """
-        # ---- 请求频率控制 ----
-        # 计算距离上次请求的时间差，不足则等待到满足最小间隔
+        # ---- Request rate limiting ----
+        # Compute the elapsed time since the last request; if insufficient, wait until the minimum interval is met
         current_time = time.time()
         time_since_last_request = current_time - self.last_request_time
         if time_since_last_request < self.min_request_interval:
@@ -89,18 +91,18 @@ class PubChemTool:
 
         for attempt in range(max_retries):
             try:
-                # 构建完整的 API URL
+                # Build the full API URL
                 url = f"{self.base_url}/{endpoint}"
                 logger.debug(f"Requesting PubChem API: {url}")
 
-                # 更新最后请求时间（在发送请求前更新）
+                # Update the last request time (before sending the request)
                 self.last_request_time = time.time()
 
-                # 发送 GET 请求
+                # Send the GET request
                 response = requests.get(url, headers=self.headers, timeout=timeout)
 
-                # ---- 503 错误特殊处理 ----
-                # PubChem 服务器繁忙时会返回 503，并包含 Retry-After 头
+                # ---- Special handling for 503 errors ----
+                # When the PubChem server is busy it returns 503 with a Retry-After header
                 if response.status_code == 503:
                     retry_after = int(response.headers.get('Retry-After', 30))
                     logger.warning(f"PubChem server is busy, will retry after {retry_after} seconds")
@@ -109,29 +111,29 @@ class PubChemTool:
                         time.sleep(retry_after)
                         continue
 
-                # 抛出 HTTP 错误异常（4xx/5xx，503 已在上面处理）
+                # Raise an exception for HTTP errors (4xx/5xx; 503 is already handled above)
                 response.raise_for_status()
-                # 返回 JSON 解析结果
+                # Return the parsed JSON result
                 return response.json()
 
             except requests.exceptions.Timeout:
-                # ---- 超时处理 ----
+                # ---- Timeout handling ----
                 logger.warning(f"PubChem API request timeout (attempt {attempt + 1}/{max_retries})")
                 if attempt < max_retries - 1:
-                    delay = 2  # 超时后等待 2 秒重试
+                    delay = 2  # Wait 2 seconds after a timeout before retrying
                     logger.info(f"Waiting {delay} seconds before retry")
                     time.sleep(delay)
                 else:
-                    # 所有重试耗尽
+                    # All retries exhausted
                     logger.error(f"PubChem API request finally timed out")
                     return {"error": f"API request timeout: Please check network connection"}
 
             except requests.exceptions.RequestException as e:
-                # ---- 其他请求异常 ----
+                # ---- Other request exceptions ----
                 logger.warning(f"PubChem API request failed (attempt {attempt + 1}/{max_retries}): {e}")
-                if attempt < max_retries - 1:  # 不是最后一次尝试
-                    # 指数退避 + 随机 jitter（1-3 秒随机延迟）
-                    # 公式: 2^attempt + random(0, 1): 1s, 2-3s, ...
+                if attempt < max_retries - 1:  # Not the last attempt
+                    # Exponential backoff + random jitter (1-3 second random delay)
+                    # Formula: 2^attempt + random(0, 1): 1s, 2-3s, ...
                     delay = (2 ** attempt) + (random.randint(0, 1000) / 1000)
                     logger.info(f"Waiting {delay:.2f} seconds before retry")
                     time.sleep(delay)
@@ -140,128 +142,133 @@ class PubChemTool:
                     return {"error": f"API request failed: {str(e)}"}
 
             except Exception as e:
-                # ---- 其他未知异常 ----
+                # ---- Other unknown exceptions ----
                 logger.error(f"Error processing response: {e}")
                 return {"error": f"Error processing response: {str(e)}"}
 
     # ============================================================================
-    #  基础查询方法 —— 按不同标识符查询化合物属性
+    #  Basic query methods -- query compound properties by different identifiers
     # ============================================================================
 
     def get_basic_properties_by_name(self, compound_name: str) -> Dict[str, Any]:
         """
-        按化合物名称查询基本物化性质。
+        Query basic physicochemical properties by compound name.
 
-        使用 PubChem API 的 compound/name/<name>/property/<properties>/JSON 端点。
+        Uses the PubChem API endpoint compound/name/<name>/property/<properties>/JSON.
 
-        获取的属性包括：分子式、分子量、IUPAC名称、SMILES、InChI/InChIKey、
-        XLogP（脂水分配系数）、氢键供体/受体数、可旋转键数、
-        TPSA（拓扑极性表面积）、复杂度等。
+        Properties retrieved include: molecular formula, molecular weight, IUPAC name,
+        SMILES, InChI/InChIKey, XLogP (octanol-water partition coefficient),
+        hydrogen bond donor/acceptor counts, rotatable bond count,
+        TPSA (topological polar surface area), complexity, etc.
 
         Args:
-            compound_name: 化合物名称（英文），如 "caffeine"、"benzene"
+            compound_name: Compound name (in English), e.g. "caffeine", "benzene"
 
         Returns:
-            Dict: 化合物基本属性信息
+            Dict: Basic compound property information
         """
-        # 构建 endpoint：一次请求获取所有关键属性
+        # Build the endpoint: fetch all key properties in a single request
         endpoint = f"compound/name/{compound_name}/property/MolecularFormula,MolecularWeight,IUPACName,CanonicalSMILES,IsomericSMILES,InChI,InChIKey,XLogP,HBondDonorCount,HBondAcceptorCount,RotatableBondCount,TPSA,Complexity/JSON"
         return self._make_request(endpoint, max_retries=3)
 
     def get_synonyms_with_cas(self, compound_name: str) -> Dict[str, Any]:
         """
-        获取化合物同义词列表（包含 CAS 号）。
+        Get the compound synonym list (including CAS numbers).
 
-        CAS 号格式为 XXXXX-XX-X，可以从同义词列表中过滤提取。
-        这是获取 CAS 号的主要方式，因为 PubChem 没有独立的 "CAS" 属性字段。
+        CAS numbers follow the format XXXXX-XX-X and can be filtered out of the synonym list.
+        This is the primary way to obtain CAS numbers, since PubChem has no dedicated
+        "CAS" property field.
 
         Args:
-            compound_name: 化合物名称
+            compound_name: Compound name
 
         Returns:
-            Dict: 包含同义词列表的响应，其中可过滤出 CAS 号
+            Dict: Response containing the synonym list, from which CAS numbers can be filtered
         """
         endpoint = f"compound/name/{compound_name}/synonyms/JSON"
         return self._make_request(endpoint, max_retries=3)
 
     def get_properties_by_cid(self, cid: int) -> Dict[str, Any]:
         """
-        按 PubChem CID（化合物唯一整数标识符）获取详细信息。
+        Get detailed information by PubChem CID (unique integer compound identifier).
 
-        当已经知道化合物的 CID 时，此方法比按名称查询更精确高效。
+        When the compound's CID is already known, this method is more precise and
+        efficient than querying by name.
 
         Args:
-            cid: PubChem 化合物 ID（正整数），如 2519（咖啡因）
+            cid: PubChem compound ID (positive integer), e.g. 2519 (caffeine)
 
         Returns:
-            Dict: 化合物详细信息
+            Dict: Detailed compound information
         """
         endpoint = f"compound/cid/{cid}/property/MolecularFormula,MolecularWeight,IUPACName,CanonicalSMILES,IsomericSMILES,InChI,InChIKey,XLogP,HBondDonorCount,HBondAcceptorCount,RotatableBondCount,TPSA,Complexity/JSON"
         return self._make_request(endpoint, max_retries=3)
 
     def search_by_molecular_formula(self, formula: str) -> Dict[str, Any]:
         """
-        按分子式搜索化合物。
+        Search compounds by molecular formula.
 
-        使用 PubChem 的 fastformula 端点，该端点专为分子式搜索优化，
-        比通用搜索更快。
+        Uses PubChem's fastformula endpoint, which is optimized for molecular formula
+        searches and is faster than a general search.
 
         Args:
-            formula: 化学分子式，如 "C8H10N4O2"（咖啡因）
+            formula: Chemical molecular formula, e.g. "C8H10N4O2" (caffeine)
 
         Returns:
-            Dict: 匹配分子式的化合物列表及属性
+            Dict: List of compounds matching the molecular formula, with properties
         """
         endpoint = f"compound/fastformula/{formula}/property/MolecularFormula,MolecularWeight,IUPACName,CanonicalSMILES,IsomericSMILES,InChI,InChIKey,XLogP,HBondDonorCount,HBondAcceptorCount,RotatableBondCount,TPSA,Complexity/JSON"
         return self._make_request(endpoint, max_retries=3)
 
     def search_by_inchikey(self, inchikey: str) -> Dict[str, Any]:
         """
-        按 InChIKey 搜索化合物。
+        Search compounds by InChIKey.
 
-        InChIKey 是化合物的标准哈希标识符（27 字符），用于唯一标识化学结构。
-        例如：RYYVLZVUVIJVGH-UHFFFAOYSA-N（咖啡因）
+        InChIKey is the standard hashed identifier of a compound (27 characters),
+        used to uniquely identify a chemical structure.
+        For example: RYYVLZVUVIJVGH-UHFFFAOYSA-N (caffeine)
 
         Args:
-            inchikey: InChIKey 标识符字符串
+            inchikey: InChIKey identifier string
 
         Returns:
-            Dict: 化合物信息
+            Dict: Compound information
         """
         endpoint = f"compound/inchikey/{inchikey}/property/MolecularFormula,MolecularWeight,IUPACName,CanonicalSMILES,IsomericSMILES,InChI,InChIKey,XLogP,HBondDonorCount,HBondAcceptorCount,RotatableBondCount,TPSA,Complexity/JSON"
         return self._make_request(endpoint, max_retries=3)
 
     # ============================================================================
-    #  智能搜索 —— 自动识别查询类型并调用对应的端点
+    #  Smart search -- automatically detect the query type and call the matching endpoint
     # ============================================================================
 
     def search_compound(self, query: str, search_type: str = "auto") -> Dict[str, Any]:
         """
-        智能化合物搜索 —— 自动判断查询类型并路由到合适的端点。
+        Smart compound search -- automatically determines the query type and routes
+        it to the appropriate endpoint.
 
-        当 search_type="auto" 时的判断逻辑：
-        1. 如果是 InChIKey 格式（27 字符，含连字符）→ 使用 inchikey 端点
-        2. 如果像分子式（含元素符号+数字） → 使用 fastformula 端点
-        3. 否则 → 使用 name 端点
+        Decision logic when search_type="auto":
+        1. If it matches the InChIKey format (27 characters, contains hyphens) -> use the inchikey endpoint
+        2. If it looks like a molecular formula (element symbols + digits) -> use the fastformula endpoint
+        3. Otherwise -> use the name endpoint
 
         Args:
-            query: 查询内容（化合物名称、分子式或 InChIKey）
-            search_type: 搜索类型（"auto": 自动, "name": 名称, "formula": 分子式, "inchikey": InChIKey）
+            query: Query content (compound name, molecular formula, or InChIKey)
+            search_type: Search type ("auto": automatic, "name": name, "formula": molecular formula, "inchikey": InChIKey)
 
         Returns:
-            Dict: 化合物查询结果
+            Dict: Compound query result
         """
         if search_type == "auto":
-            # 判断是否为 InChIKey 格式（27 个字符，至少 2 个连字符）
+            # Check whether it is in InChIKey format (27 characters, at least 2 hyphens)
             if len(query) == 27 and query.count('-') >= 2:
-                # 很可能是 InChIKey，使用 inchikey 端点查询
+                # Most likely an InChIKey; query via the inchikey endpoint
                 return self.search_by_inchikey(query)
-            # 判断是否为分子式格式（含元素符号和数字）
+            # Check whether it is in molecular formula format (element symbols and digits)
             elif self._is_molecular_formula(query):
-                # 很可能是分子式，使用 fastformula 端点查询
+                # Most likely a molecular formula; query via the fastformula endpoint
                 return self.search_by_molecular_formula(query)
             else:
-                # 默认按化合物名称查询
+                # Default to querying by compound name
                 return self.get_basic_properties_by_name(query)
         elif search_type == "name":
             return self.get_basic_properties_by_name(query)
@@ -274,78 +281,81 @@ class PubChemTool:
 
     def _is_molecular_formula(self, query: str) -> bool:
         """
-        判断查询字符串是否为分子式格式。
+        Determine whether the query string is in molecular formula format.
 
-        分子式特征：
-        - 由元素符号（大写字母开头，可跟小写字母）和数字组成
-        - 可能包含括号（如 Ca(OH)2）
-        - 例如：H2O, C6H6, C12H22O11, Ca(OH)2, NaCl
+        Characteristics of a molecular formula:
+        - Composed of element symbols (starting with an uppercase letter, optionally
+          followed by a lowercase letter) and digits
+        - May contain parentheses (e.g. Ca(OH)2)
+        - Examples: H2O, C6H6, C12H22O11, Ca(OH)2, NaCl
 
-        使用两个正则模式：
-        - 模式1：纯元素-数字序列，如 NaCl, H2O, C6H12O6
-        - 模式2：含括号的分子式，如 Ca(OH)2, Al2(SO4)3
+        Two regex patterns are used:
+        - Pattern 1: pure element-digit sequence, e.g. NaCl, H2O, C6H12O6
+        - Pattern 2: formula containing parentheses, e.g. Ca(OH)2, Al2(SO4)3
 
         Args:
-            query: 待判断的字符串
+            query: The string to check
 
         Returns:
-            bool: 是否看起来像分子式
+            bool: Whether it looks like a molecular formula
         """
         import re
-        # 模式1：纯元素符号+数字序列 —— 如 "NaCl", "H2O", "C6H12O6"
-        # 模式2：含括号的分子式 —— 如 "Ca(OH)2", "Al2(SO4)3"
-        # 每个元素符号：大写字母 [A-Z] 后跟 0-1 个小写字母 [a-z]?，再跟 0 或多个数字 [0-9]*
+        # Pattern 1: pure element symbol + digit sequence -- e.g. "NaCl", "H2O", "C6H12O6"
+        # Pattern 2: formula containing parentheses -- e.g. "Ca(OH)2", "Al2(SO4)3"
+        # Each element symbol: an uppercase letter [A-Z] followed by 0-1 lowercase letters [a-z]?,
+        # then 0 or more digits [0-9]*
         formula_pattern = r'^([A-Z][a-z]?[0-9]*)+([A-Z][a-z]?[0-9]*)*$|^([A-Z][a-z]?[0-9]*)*\([A-Z][a-z]?[0-9]*\)[0-9]*([A-Z][a-z]?[0-9]*)*$'
         return bool(re.match(formula_pattern, query))
 
     # ============================================================================
-    #  获取完整化合物信息 —— 整合多次查询结果
+    #  Get complete compound information -- integrate results from multiple queries
     # ============================================================================
 
     def get_compound_info(self, query: str) -> Dict[str, Any]:
         """
-        获取完整化合物信息 —— 先搜索获取 CID，再按 CID 获取详细属性。
+        Get complete compound information -- first search to obtain the CID, then
+        fetch detailed properties by CID.
 
-        这个方法是获取化合物完整信息的主要入口，它会：
-        1. 先用智能搜索找到化合物
-        2. 提取 CID
-        3. 再按 CID 获取完整属性列表
-        4. 对 SMILES 进行基本验证
-        5. 合并所有信息返回
+        This method is the main entry point for obtaining complete compound information. It:
+        1. First locates the compound via smart search
+        2. Extracts the CID
+        3. Fetches the full property list by CID
+        4. Performs basic validation on the SMILES
+        5. Merges all information and returns it
 
         Args:
-            query: 化合物名称、CID、分子式或 InChIKey
+            query: Compound name, CID, molecular formula, or InChIKey
 
         Returns:
-            Dict: 完整化合物信息，格式为 {"Compound": {属性字典}}
+            Dict: Complete compound information, in the format {"Compound": {property dict}}
         """
         try:
-            # 第一步：智能搜索获取基本信息和 CID
+            # Step 1: smart search to get basic information and the CID
             basic_info = self.search_compound(query)
 
-            # 如果搜索返回错误，直接返回
+            # If the search returned an error, return it directly
             if "error" in basic_info:
                 return basic_info
 
             try:
-                # 第二步：从搜索结果中提取 CID
+                # Step 2: extract the CID from the search results
                 if "PropertyTable" in basic_info and "Properties" in basic_info["PropertyTable"]:
                     properties = basic_info["PropertyTable"]["Properties"]
                     if properties and len(properties) > 0:
                         cid = properties[0].get("CID")
                         if cid:
-                            # 第三步：按 CID 获取详细属性
+                            # Step 3: fetch detailed properties by CID
                             endpoint = f"compound/cid/{cid}/property/CanonicalSMILES,IsomericSMILES,InChI,InChIKey,MolecularFormula,MolecularWeight,IUPACName,XLogP,HBondDonorCount,HBondAcceptorCount,RotatableBondCount,TPSA,Complexity/JSON"
                             details = self._make_request(endpoint, max_retries=3)
 
                             if "PropertyTable" in details and "Properties" in details["PropertyTable"]:
                                 detail_props = details["PropertyTable"]["Properties"][0]
 
-                                # ---- 提取并验证 SMILES ----
+                                # ---- Extract and validate SMILES ----
                                 canonical_smiles = detail_props.get("CanonicalSMILES", "N/A")
                                 isomeric_smiles = detail_props.get("IsomericSMILES", "N/A")
 
-                                # 对 SMILES 进行有效性检查
+                                # Perform validity checks on the SMILES
                                 if canonical_smiles != "N/A" and self._is_valid_smiles(canonical_smiles):
                                     canonical_smiles_value = canonical_smiles
                                 else:
@@ -356,8 +366,8 @@ class PubChemTool:
                                 else:
                                     isomeric_smiles_value = "N/A"
 
-                                # ---- 合并所有属性信息 ----
-                                result = properties[0].copy()  # 保留第一次查询的基础属性
+                                # ---- Merge all property information ----
+                                result = properties[0].copy()  # Keep the base properties from the first query
                                 result.update({
                                     "canonical_smiles": canonical_smiles_value,
                                     "isomeric_smiles": isomeric_smiles_value,
@@ -367,17 +377,17 @@ class PubChemTool:
                                     "molecular_weight": detail_props.get("MolecularWeight", "N/A"),
                                     "iupac_name": detail_props.get("IUPACName", "N/A"),
                                     "xlogp": detail_props.get("XLogP", "N/A"),
-                                    # XLogP：计算得到的辛醇-水分配系数，衡量亲脂性
+                                    # XLogP: computed octanol-water partition coefficient, measures lipophilicity
                                     "hydrogen_bond_donor_count": detail_props.get("HBondDonorCount", "N/A"),
-                                    # 氢键供体数：影响溶解性和药物活性
+                                    # Hydrogen bond donor count: affects solubility and drug activity
                                     "hydrogen_bond_acceptor_count": detail_props.get("HBondAcceptorCount", "N/A"),
-                                    # 氢键受体数
+                                    # Hydrogen bond acceptor count
                                     "rotatable_bond_count": detail_props.get("RotatableBondCount", "N/A"),
-                                    # 可旋转键数：衡量分子柔韧性
+                                    # Rotatable bond count: measures molecular flexibility
                                     "tpsa": detail_props.get("TPSA", "N/A"),
-                                    # TPSA: 拓扑极性表面积，预测细胞膜渗透性
+                                    # TPSA: topological polar surface area, predicts cell membrane permeability
                                     "complexity": detail_props.get("Complexity", "N/A")
-                                    # 复杂度：分子结构复杂度评分
+                                    # Complexity: molecular structural complexity score
                                 })
                                 return {"Compound": result}
                             else:
@@ -387,7 +397,7 @@ class PubChemTool:
                     else:
                         return {"error": "Compound property information not found"}
                 else:
-                    # 属性表中无数据，返回基础信息
+                    # No data in the property table; return the basic information
                     return basic_info
 
             except Exception as e:
@@ -400,34 +410,36 @@ class PubChemTool:
 
     def _is_valid_smiles(self, smiles: str) -> bool:
         """
-        简单验证 SMILES 字符串的有效性。
+        Simply validate the validity of a SMILES string.
 
-        SMILES (Simplified Molecular Input Line Entry System) 是用 ASCII 字符串
-        表示化学结构的规范。该方法做基本检查，不依赖第三方化学库。
+        SMILES (Simplified Molecular Input Line Entry System) is a specification for
+        representing chemical structures as ASCII strings. This method performs basic
+        checks without relying on third-party chemistry libraries.
 
-        验证规则：
-        1. 不包含明显的无效值（N/A、None、null 等占位符）
-        2. 至少包含一个字母（合法 SMILES 必然含元素符号）
-        3. 至少包含一个常见化学元素符号（C, H, O, N 等）
+        Validation rules:
+        1. Must not contain obviously invalid values (placeholders such as N/A, None, null)
+        2. Must contain at least one letter (a valid SMILES necessarily contains element symbols)
+        3. Must contain at least one common chemical element symbol (C, H, O, N, etc.)
 
         Args:
-            smiles: 待验证的 SMILES 字符串
+            smiles: The SMILES string to validate
 
         Returns:
-            bool: 是否通过基本验证
+            bool: Whether it passes basic validation
         """
-        # 规则1：排除明显的无效占位值（精确匹配，不做子串匹配）
-        # 注意：SMILES 中的 "#" 是合法字符（表示三键，如 C#N），不能据此判无效；
-        # 空串用显式判断，因为 "" in smiles 对任何字符串都恒为 True
+        # Rule 1: exclude obviously invalid placeholder values (exact match, no substring matching)
+        # Note: "#" is a legal character in SMILES (denotes a triple bond, e.g. C#N), so it cannot
+        # be treated as invalid; an empty string is checked explicitly because "" in smiles is
+        # always True for any string
         invalid_placeholders = {"N/A", "None", "null", "NULL"}
         if not smiles or smiles.strip() in invalid_placeholders:
             return False
 
-        # 规则2：必须至少包含一个字母字符
+        # Rule 2: must contain at least one letter character
         if not any(c.isalpha() for c in smiles):
             return False
 
-        # 规则3：至少包含一个常见的化学元素符号
+        # Rule 3: must contain at least one common chemical element symbol
         common_elements = ['C', 'H', 'O', 'N', 'P', 'S', 'F', 'Cl', 'Br', 'I', 'B', 'Si']
         if not any(element in smiles for element in common_elements):
             return False
@@ -436,60 +448,60 @@ class PubChemTool:
 
     def validate_cid(self, cid: Any) -> bool:
         """
-        验证 CID 格式是否有效（仅格式校验，不调用 API）。
+        Validate whether a CID format is valid (format check only, no API call).
 
-        有效的 CID 必须是可以转换为正整数（> 0）的值。
-        PubChem CID 是对每个化合物的唯一整数标识。
+        A valid CID must be a value convertible to a positive integer (> 0).
+        A PubChem CID is a unique integer identifier for each compound.
 
         Args:
-            cid: 待验证的 CID 值
+            cid: The CID value to validate
 
         Returns:
-            bool: 格式是否有效
+            bool: Whether the format is valid
         """
         try:
-            # 排除空值和占位符
+            # Exclude empty values and placeholders
             if cid is None or cid == "" or cid == "N/A":
                 return False
-            # CID 必须是正整数
+            # CID must be a positive integer
             cid_int = int(cid)
             return cid_int > 0
         except (ValueError, TypeError):
             return False
 
     # ============================================================================
-    #  已验证的化合物信息 —— 含数据校验和验证标记
+    #  Validated compound information -- with data checks and validation flags
     # ============================================================================
 
     def get_validated_compound_info(self, query: str) -> Dict[str, Any]:
         """
-        获取经过验证的化合物信息。
+        Get validated compound information.
 
-        与 get_compound_info 相比，增加了：
-        1. CID 格式有效性校验（正整数检查）
-        2. 分子量合理性校验（必须为正数）
-        3. 添加 validated=True 标记和 validation_time 时间戳
+        Compared to get_compound_info, this adds:
+        1. CID format validity check (positive integer check)
+        2. Molecular weight sanity check (must be positive)
+        3. Adds a validated=True flag and a validation_time timestamp
 
         Args:
-            query: 查询内容
+            query: Query content
 
         Returns:
-            Dict: 经过验证的化合物信息，失败时包含错误信息
+            Dict: Validated compound information; contains error information on failure
         """
         try:
-            # 先获取化合物完整信息
+            # First get the complete compound information
             compound_info = self.get_compound_info(query)
 
-            # 如果底层查询已出错，直接返回
+            # If the underlying query already failed, return it directly
             if "error" in compound_info:
                 return compound_info
 
-            # ---- 执行验证 ----
+            # ---- Perform validation ----
             if "Compound" in compound_info:
                 compound = compound_info["Compound"]
                 cid = compound.get("CID")
 
-                # 验证1：CID 格式
+                # Validation 1: CID format
                 if not self.validate_cid(cid):
                     return {
                         "success": False,
@@ -497,10 +509,10 @@ class PubChemTool:
                         "error": f"Invalid CID: {cid}"
                     }
 
-                # 验证2：分子量必须是正数
+                # Validation 2: molecular weight must be positive
                 molecular_weight = compound.get("MolecularWeight")
                 if molecular_weight == "N/A" or molecular_weight is None:
-                    # 分子量缺失是可以接受的（部分化合物可能没有此数据）
+                    # A missing molecular weight is acceptable (some compounds may not have this data)
                     pass
                 else:
                     try:
@@ -512,12 +524,12 @@ class PubChemTool:
                                 "error": f"Invalid molecular weight: {molecular_weight}"
                             }
                     except (ValueError, TypeError):
-                        # 分子量不是数字格式，但可能是特殊值，暂时放过
+                        # Molecular weight is not numeric, but it may be a special value; let it pass for now
                         pass
 
-                # ---- 添加验证标记 ----
-                compound_info["validated"] = True                # 标记已通过验证
-                compound_info["validation_time"] = time.time()   # 记录验证时间戳
+                # ---- Add validation flags ----
+                compound_info["validated"] = True                # Mark as validated
+                compound_info["validation_time"] = time.time()   # Record the validation timestamp
 
             return compound_info
 
@@ -530,54 +542,55 @@ class PubChemTool:
             }
 
     # ============================================================================
-    #  含 CAS 号的完整化合物信息
+    #  Complete compound information including CAS numbers
     # ============================================================================
 
     def get_compound_info_with_cas(self, query: str) -> Dict[str, Any]:
         """
-        获取包含 CAS 号的完整化合物信息。
+        Get complete compound information including CAS numbers.
 
-        CAS (Chemical Abstracts Service) 号是化学物质的权威标识符。
-        PubChem 没有独立的 CAS 字段，CAS 号藏于同义词列表中（格式: XXXXX-XX-X）。
-        此方法先查基本属性获取 CID，再查同义词过滤出 CAS 号。
+        A CAS (Chemical Abstracts Service) number is an authoritative identifier for
+        chemical substances. PubChem has no dedicated CAS field; CAS numbers are hidden
+        in the synonym list (format: XXXXX-XX-X). This method first queries the basic
+        properties to obtain the CID, then queries the synonyms and filters out CAS numbers.
 
         Args:
-            query: 化合物名称或分子式
+            query: Compound name or molecular formula
 
         Returns:
-            Dict: 包含 CASNumbers 数组的化合物信息
+            Dict: Compound information containing a CASNumbers array
         """
-        # 第一步：获取基本属性信息
+        # Step 1: get basic property information
         basic_info = self.search_compound(query)
 
         if "error" in basic_info:
             return basic_info
 
         try:
-            # 第二步：从属性表中提取 CID
+            # Step 2: extract the CID from the property table
             if "PropertyTable" in basic_info and "Properties" in basic_info["PropertyTable"]:
                 properties = basic_info["PropertyTable"]["Properties"]
                 if properties and len(properties) > 0:
                     cid = properties[0].get("CID")
                     if cid:
-                        # 第三步：获取同义词列表（包含 CAS 号）
+                        # Step 3: get the synonym list (which contains CAS numbers)
                         synonyms_data = self.get_synonyms_with_cas(query)
                         cas_numbers = []
 
-                        # 解析同义词响应，提取 CAS 号
+                        # Parse the synonym response and extract CAS numbers
                         if "InformationList" in synonyms_data and "Information" in synonyms_data["InformationList"]:
                             info_list = synonyms_data["InformationList"]["Information"]
                             if info_list and len(info_list) > 0:
                                 synonyms = info_list[0].get("Synonym", [])
-                                # 过滤出符合 CAS 格式的同义词（XXXXX-XX-X）
+                                # Filter out synonyms matching the CAS format (XXXXX-XX-X)
                                 cas_numbers = [syn for syn in synonyms if self._is_cas_number(syn)]
 
-                        # 第四步：合并 CAS 号到结果中
+                        # Step 4: merge the CAS numbers into the result
                         result = properties[0].copy()
                         result["CASNumbers"] = cas_numbers
                         return {"Compound": result}
 
-            # 无 CAS 信息时返回基础信息
+            # Return the basic information when no CAS information is available
             return basic_info
 
         except Exception as e:
@@ -586,43 +599,43 @@ class PubChemTool:
 
     def _is_cas_number(self, text: str) -> bool:
         """
-        判断文本是否为 CAS 号格式。
+        Determine whether the text is in CAS number format.
 
-        CAS 号由连字符分为三部分：XXXXX-XX-X
-        - 第一部分：2-7 位数字
-        - 第二部分：2 位数字
-        - 第三部分：1 位校验数字
+        A CAS number is divided by hyphens into three parts: XXXXX-XX-X
+        - Part 1: 2-7 digits
+        - Part 2: 2 digits
+        - Part 3: 1 check digit
 
-        例如：58-08-2（咖啡因）、7732-18-5（水）
+        Examples: 58-08-2 (caffeine), 7732-18-5 (water)
 
         Args:
-            text: 待判断的文本
+            text: The text to check
 
         Returns:
-            bool: 是否匹配 CAS 号格式
+            bool: Whether it matches the CAS number format
         """
         import re
-        # CAS 正则：2-7位数字 - 2位数字 - 1位数字
+        # CAS regex: 2-7 digits - 2 digits - 1 digit
         cas_pattern = r'^\d{2,7}-\d{2}-\d$'
         return bool(re.match(cas_pattern, text))
 
 # ============================================================================
-#  全局单例管理
+#  Global singleton management
 # ============================================================================
 
-# 全局 PubChemTool 实例，初始为 None
+# Global PubChemTool instance, initially None
 pubchem_tool = None
 
 def get_pubchem_tool(api_key: str = None) -> PubChemTool:
     """
-    获取 PubChem 工具单例实例。
-    采用惰性初始化模式：首次调用时创建，后续调用返回同一实例。
+    Get the PubChem tool singleton instance.
+    Uses lazy initialization: created on first call, the same instance returned on subsequent calls.
 
     Args:
-        api_key (str, optional): PubChem API 密钥（仅首次创建时使用）
+        api_key (str, optional): PubChem API key (used only on first creation)
 
     Returns:
-        PubChemTool: 工具实例
+        PubChemTool: The tool instance
     """
     global pubchem_tool
     if pubchem_tool is None:

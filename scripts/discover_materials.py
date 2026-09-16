@@ -11,13 +11,11 @@ from pathlib import Path
 from dotenv import load_dotenv
 load_dotenv(Path(__file__).parent.parent / ".env")
 
-import httpx
-
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("discover")
 
-SERVER = "http://localhost:8000/v1/chat/completions"
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import llm_client
 from output_utils import run_dir
 
 TIMESTAMP = int(time.time())
@@ -25,31 +23,9 @@ OUTPUT_DIR = run_dir(TIMESTAMP)  # per-run folder: outputs/run_<TS>/
 
 
 def call_agent(agent: str, prompt: str, max_tokens: int = 10240, temperature: float = 0.2, retries: int = 3) -> str:
-    # Wait for server to be ready (previous model fully unloaded)
-    for attempt in range(retries):
-        try:
-            r = httpx.post(SERVER, json={
-                "model": "nano-bio", "agent": agent,
-                "messages": [{"role": "user", "content": prompt[:10000]}],
-                "max_tokens": max_tokens, "temperature": temperature,
-            }, timeout=1800)
-
-            if r.status_code == 200:
-                return r.json()["choices"][0]["message"]["content"]
-            elif r.status_code in (502, 503):
-                # Server still unloading previous model, wait and retry
-                logger.warning(f"  {agent} got {r.status_code}, retrying in 10s... (attempt {attempt+1}/{retries})")
-                time.sleep(10)
-            else:
-                return f"ERROR {r.status_code}: {r.text[:300]}"
-        except httpx.ReadTimeout:
-            logger.warning(f"  {agent} timeout, retrying... (attempt {attempt+1}/{retries})")
-            time.sleep(5)
-        except Exception as e:
-            logger.warning(f"  {agent} connection error: {e}, retrying... (attempt {attempt+1}/{retries})")
-            time.sleep(5)
-
-    return f"ERROR: failed after {retries} retries"
+    # Retry policy (502/503 wait, ReadTimeout retry) lives in llm_client.
+    return llm_client.chat(agent, prompt[:10000], max_tokens=max_tokens,
+                           temperature=temperature, timeout=1800, retries=retries)
 
 
 def save_raw(filename: str, content: str):

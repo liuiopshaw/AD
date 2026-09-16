@@ -2,60 +2,65 @@
 """
 Open Targets Platform query tool via GraphQL API.
 
-Open Targets 数据库查询工具 —— 通过 Open Targets Platform GraphQL API 查询
-靶点-疾病关联、靶点可成药性 (tractability) 与已知药物证据。免 API key。
+Open Targets database query tool -- queries target-disease associations,
+target tractability, and known drug evidence via the Open Targets Platform
+GraphQL API. No API key required.
 
 Endpoint: https://api.platform.opentargets.org/api/v4/graphql
 
-所有公开函数遵循统一契约：未命中/网络失败返回 None 或 []，不向调用方抛异常。
-风格对齐 src/tools/pubchem_tool.py（同步 requests + 礼貌限速 + 重试）。
+All public functions follow a unified contract: return None or [] on
+miss/network failure, never raise exceptions to the caller.
+Style aligned with src/tools/pubchem_tool.py (synchronous requests +
+polite rate limiting + retries).
 """
 
-# ---- 标准库与第三方库导入 ----
-import requests       # HTTP 请求库，用于调用 Open Targets GraphQL API
-import logging        # 日志记录
-import time           # 时间处理，用于请求频率控制和重试间隔
-import random         # 随机数，用于重试时增加随机延迟（避免惊群效应）
-from typing import Any, Dict, List, Optional  # 类型注解
+# ---- Standard library and third-party imports ----
+import requests       # HTTP library, used to call the Open Targets GraphQL API
+import logging        # Logging
+import time           # Time handling, for request rate limiting and retry intervals
+import random         # Random numbers, for adding jitter to retry delays (avoids thundering herd)
+from typing import Any, Dict, List, Optional  # Type annotations
 
-# ---- 日志配置 ----
-# WARNING 级别：只记录警告和错误，减少正常运行时的日志噪音
+# ---- Logging configuration ----
+# WARNING level: only log warnings and errors, reducing log noise during normal operation
 logging.basicConfig(level=logging.WARNING)
 logger = logging.getLogger(__name__)
 
-# ---- API 常量 ----
+# ---- API constants ----
 GRAPHQL_URL = "https://api.platform.opentargets.org/api/v4/graphql"
 HEADERS = {
     "User-Agent": "ECOMATS-OpenTargets-Tool/1.0",
     "Content-Type": "application/json",
 }
 
-# ---- 请求频率控制 ----
-# 免 key 公共 API，礼貌限速：每次请求最小间隔 0.4 秒（>= 0.3s 要求）
+# ---- Request rate limiting ----
+# Key-free public API; polite rate limit: minimum 0.4 s between requests (>= 0.3 s required)
 _last_request_time = 0.0
 _MIN_REQUEST_INTERVAL = 0.4
-_MAX_RETRIES = 3  # 1 次首发 + 2 次重试，之后返回 None
+_MAX_RETRIES = 3  # 1 initial attempt + 2 retries, then return None
 
 
 def _graphql(query: str, variables: Optional[Dict[str, Any]] = None,
              timeout: int = 20) -> Optional[Dict[str, Any]]:
     """
-    发送 GraphQL 查询（带限速与重试）—— 所有 Open Targets 调用的底层方法。
+    Send a GraphQL query (with rate limiting and retries) -- the low-level
+    method for all Open Targets calls.
 
-    重试策略：网络异常/5xx 时指数退避 + 随机 jitter，最多重试 2 次。
+    Retry policy: exponential backoff + random jitter on network errors/5xx,
+    up to 2 retries.
 
     Args:
-        query: GraphQL 查询字符串
-        variables: 查询变量字典
-        timeout: 请求超时时间（秒），默认 20 秒
+        query: GraphQL query string
+        variables: query variables dict
+        timeout: request timeout in seconds, default 20
 
     Returns:
-        Dict: GraphQL 响应的 "data" 字段；失败或含 errors 时返回 None
+        Dict: the "data" field of the GraphQL response; None on failure or errors
     """
     global _last_request_time
 
-    # ---- 请求频率控制 ----
-    # 计算距离上次请求的时间差，不足则等待到满足最小间隔
+    # ---- Request rate limiting ----
+    # Compute time elapsed since the last request; wait if below the minimum interval
     elapsed = time.time() - _last_request_time
     if elapsed < _MIN_REQUEST_INTERVAL:
         time.sleep(_MIN_REQUEST_INTERVAL - elapsed)
@@ -68,7 +73,7 @@ def _graphql(query: str, variables: Optional[Dict[str, Any]] = None,
             response = requests.post(GRAPHQL_URL, json=payload,
                                      headers=HEADERS, timeout=timeout)
 
-            # ---- 5xx 错误：服务器繁忙，重试 ----
+            # ---- 5xx errors: server busy, retry ----
             if response.status_code >= 500:
                 logger.warning(f"Open Targets server error {response.status_code} "
                                f"(attempt {attempt + 1}/{_MAX_RETRIES})")
@@ -81,7 +86,8 @@ def _graphql(query: str, variables: Optional[Dict[str, Any]] = None,
             response.raise_for_status()
             body = response.json()
 
-            # GraphQL 层面错误（查询语法、字段不存在等）不重试，直接失败
+            # GraphQL-level errors (query syntax, nonexistent fields, etc.)
+            # are not retried; fail immediately
             if body.get("errors"):
                 logger.warning(f"Open Targets GraphQL errors: {body['errors']}")
                 return None
@@ -103,16 +109,16 @@ def _graphql(query: str, variables: Optional[Dict[str, Any]] = None,
 
 def _search_entity(name: str, entity: str) -> Optional[Dict[str, str]]:
     """
-    按名称搜索实体（disease 或 target），返回第一个命中的 {id, name}。
+    Search an entity (disease or target) by name; return the first hit as {id, name}.
 
-    使用 Open Targets 的 search 查询，entityNames 限定实体类别。
+    Uses the Open Targets search query with entityNames to restrict the entity type.
 
     Args:
-        name: 实体名称（如 "Alzheimer disease"、"APOE"）
-        entity: 实体类别（"disease" 或 "target"）
+        name: entity name (e.g. "Alzheimer disease", "APOE")
+        entity: entity type ("disease" or "target")
 
     Returns:
-        Dict: {"id": ..., "name": ...}；未命中返回 None
+        Dict: {"id": ..., "name": ...}; None if no hit
     """
     query = """
     query searchEntity($q: String!, $entity: String!) {
@@ -123,7 +129,7 @@ def _search_entity(name: str, entity: str) -> Optional[Dict[str, str]]:
     """
     data = _graphql(query, {"q": name, "entity": entity})
     hits = ((data or {}).get("search") or {}).get("hits") or []
-    # 优先完全匹配（大小写不敏感），否则取第一个命中
+    # Prefer exact match (case-insensitive); otherwise take the first hit
     for h in hits:
         if (h.get("name") or "").lower() == name.lower():
             return {"id": h.get("id"), "name": h.get("name")}
@@ -134,13 +140,14 @@ def _search_entity(name: str, entity: str) -> Optional[Dict[str, str]]:
 
 def get_disease_id(name: str) -> Optional[str]:
     """
-    按疾病名称查询 Open Targets 疾病 ID（如 "Alzheimer disease" -> EFO id）。
+    Look up the Open Targets disease ID by disease name
+    (e.g. "Alzheimer disease" -> EFO id).
 
     Args:
-        name: 疾病英文名称
+        name: English disease name
 
     Returns:
-        str: 疾病 ID（如 "EFO_0000249"）；未命中返回 None
+        str: disease ID (e.g. "EFO_0000249"); None if no hit
     """
     if not name or not name.strip():
         return None
@@ -149,7 +156,8 @@ def get_disease_id(name: str) -> Optional[str]:
 
 
 def _get_target_ensembl_id(symbol: str) -> Optional[str]:
-    """按基因符号搜索靶点，返回 Ensembl gene ID（如 APOE -> ENSG00000130203）。"""
+    """Search a target by gene symbol; return the Ensembl gene ID
+    (e.g. APOE -> ENSG00000130203)."""
     hit = _search_entity(symbol.strip(), "target")
     return hit["id"] if hit else None
 
@@ -157,18 +165,19 @@ def _get_target_ensembl_id(symbol: str) -> Optional[str]:
 def target_disease_association(target_symbol: str,
                                disease_name: str = "Alzheimer disease") -> Optional[Dict[str, Any]]:
     """
-    查询靶点-疾病关联评分。
+    Query the target-disease association score.
 
-    先解析疾病 ID，再在该疾病的关联靶点列表中按基因符号过滤
-    （BFilter 文本过滤 + approvedSymbol 精确比对）。
+    First resolves the disease ID, then filters the disease's associated
+    targets list by gene symbol (BFilter text filter + exact approvedSymbol
+    comparison).
 
     Args:
-        target_symbol: 基因符号（如 "APOE"）
-        disease_name: 疾病英文名称，默认 "Alzheimer disease"
+        target_symbol: gene symbol (e.g. "APOE")
+        disease_name: English disease name, default "Alzheimer disease"
 
     Returns:
         Dict: {"target", "disease", "disease_id", "score", "datatype_scores"}
-              datatype_scores 为 {datatype_id: score} 字典；未命中返回 None
+              datatype_scores is a {datatype_id: score} dict; None if no hit
     """
     if not target_symbol or not target_symbol.strip():
         return None
@@ -218,17 +227,18 @@ def target_disease_association(target_symbol: str,
 
 def target_tractability(target_symbol: str) -> Optional[List[Dict[str, Any]]]:
     """
-    查询靶点可成药性（tractability）评估。
+    Query the target tractability assessment.
 
-    先按基因符号解析 Ensembl ID，再取 target.tractability
-    （各 modality 下 label/value 的评估条目列表）。
+    First resolves the Ensembl ID by gene symbol, then fetches
+    target.tractability (a list of label/value assessment entries per
+    modality).
 
     Args:
-        target_symbol: 基因符号（如 "APOE"）
+        target_symbol: gene symbol (e.g. "APOE")
 
     Returns:
-        List: [{"modality": ..., "label": ..., "value": bool}, ...]；
-              未命中返回 None
+        List: [{"modality": ..., "label": ..., "value": bool}, ...];
+              None if no hit
     """
     if not target_symbol or not target_symbol.strip():
         return None
@@ -256,21 +266,22 @@ def target_tractability(target_symbol: str) -> Optional[List[Dict[str, Any]]]:
 def known_drugs(target_symbol: str,
                 disease_name: str = "Alzheimer disease") -> Optional[List[Dict[str, Any]]]:
     """
-    查询某疾病下针对指定靶点的已知药物证据。
+    Query known drug evidence targeting a given target for a disease.
 
-    注意：Open Targets 现行 API（2025 重写版）已移除旧 `knownDrugs` 字段。
-    这里改查疾病的 drugAndClinicalCandidates（全量行），再按药物作用机制
-    （mechanismsOfAction.targets.approvedSymbol）在客户端过滤出作用于
-    指定靶点的药物。
+    Note: the current Open Targets API (2025 rewrite) removed the legacy
+    `knownDrugs` field. Here we instead query the disease's
+    drugAndClinicalCandidates (all rows), then filter client-side by drug
+    mechanism of action (mechanismsOfAction.targets.approvedSymbol) to keep
+    only drugs acting on the specified target.
 
     Args:
-        target_symbol: 基因符号（如 "ACHE"）
-        disease_name: 疾病英文名称，默认 "Alzheimer disease"
+        target_symbol: gene symbol (e.g. "ACHE")
+        disease_name: English disease name, default "Alzheimer disease"
 
     Returns:
         List: [{"drug", "drug_id", "drug_type", "max_clinical_stage",
-                "mechanism_of_action"}, ...]；疾病未找到返回 None，
-              疾病存在但该靶点无药物证据返回 []
+                "mechanism_of_action"}, ...]; None if the disease is not
+              found; [] if the disease exists but the target has no drug evidence
     """
     if not target_symbol or not target_symbol.strip():
         return None
@@ -312,7 +323,7 @@ def known_drugs(target_symbol: str,
     out = []
     for row in rows:
         drug = row.get("drug") or {}
-        # ---- 按作用机制中的靶点符号过滤 ----
+        # ---- Filter by target symbol in the mechanism of action ----
         moa_hit = None
         for moa in ((drug.get("mechanismsOfAction") or {}).get("rows") or []):
             for t in moa.get("targets") or []:
@@ -334,7 +345,7 @@ def known_drugs(target_symbol: str,
 
 
 if __name__ == "__main__":
-    # ---- 冒烟测试：真实网络查询 Alzheimer disease 相关数据 ----
+    # ---- Smoke test: live network queries for Alzheimer disease data ----
     print("== get_disease_id('Alzheimer disease') ==")
     efo = get_disease_id("Alzheimer disease")
     print(efo)
@@ -349,7 +360,7 @@ if __name__ == "__main__":
     tract = target_tractability("APOE")
     print((tract or [])[:5])
 
-    print("\n== known_drugs('ACHE') — Alzheimer 临床药物 ==")
+    print("\n== known_drugs('ACHE') -- Alzheimer clinical drugs ==")
     drugs = known_drugs("ACHE")
     print(drugs)
     assert drugs is not None, "known_drugs query failed"

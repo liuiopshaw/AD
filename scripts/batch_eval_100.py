@@ -8,15 +8,14 @@ benchmark below, unchanged). small_molecule/biologic use the eval sets in
 scripts/eval_sets/ (built from real ChEMBL/UniProt queries).
 """
 
-import httpx, json, time, os, sys
+import json, time, os, sys
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import llm_client
 from output_utils import run_dir
 
 TS = int(time.time())
 RUN_DIR = run_dir(TS)  # per-run folder: outputs/run_<TS>/
-
-SERVER = "http://localhost:8000/v1/chat/completions"
 
 # ---------------------------------------------------------------------------
 # Phase 4: --set nano|small_molecule|biologic (default nano = legacy benchmark,
@@ -43,13 +42,8 @@ EVAL_SET = _parse_args().set
 
 def _call_agent(agent: str, prompt: str, max_tokens: int = 10240, temperature: float = 0.2,
                 timeout: int = 900) -> str:
-    r = httpx.post(SERVER, json={
-        "model": "nano-bio", "agent": agent,
-        "messages": [{"role": "user", "content": prompt}],
-        "max_tokens": max_tokens, "temperature": temperature,
-    }, timeout=timeout)
-    r.raise_for_status()
-    return r.json()["choices"][0]["message"]["content"]
+    return llm_client.chat(agent, prompt, max_tokens=max_tokens,
+                           temperature=temperature, timeout=timeout)
 
 
 def run_small_molecule_eval():
@@ -118,7 +112,7 @@ Output format (ONE LINE per compound, numbered):
 
 def run_biologic_eval():
     """Agent must name the primary target's UniProt accession per biologic;
-    each returned accession is verified against UniProtKB (查证通过率)."""
+    each returned accession is verified against UniProtKB (verification pass rate)."""
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "src" / "tools"))
     import uniprot_tool
 
@@ -174,7 +168,7 @@ Output format (ONE LINE per biologic, numbered):
     out_file = RUN_DIR / f"biologic_ad_eval_{TS}.json"
     out_file.write_text(json.dumps(summary, ensure_ascii=False, indent=2), encoding="utf-8")
     rate = summary["verification_pass_rate"]
-    print(f"\nUniProt 查证通过率: {len(verified)}/{len(returned)} "
+    print(f"\nUniProt verification pass rate: {len(verified)}/{len(returned)} "
           f"({rate:.2%})" if rate is not None else "\nNo accessions returned")
     print(f"-> {out_file}")
 
@@ -344,61 +338,47 @@ Output format (ONE LINE per material, numbered):
 
     print(f"Batch {batch_num}: Evaluating {len(batch)} materials for NADH activity...")
 
-    try:
-        r = httpx.post(SERVER, json={
-            "model": "nano-bio",
-            "agent": "epa",
-            "messages": [{"role": "user", "content": epa_prompt}],
-            "max_tokens": 10240,
-            "temperature": 0.2
-        }, timeout=900)
+    epa_result = llm_client.chat("epa", epa_prompt, max_tokens=10240,
+                                 temperature=0.2, timeout=900)
 
-        if r.status_code == 200:
-            data = r.json()
-            epa_result = data["choices"][0]["message"]["content"]
+    if not epa_result.startswith("ERROR"):
+        # Preserve RAW agent output (project rule: outputs must be saved unmodified)
+        raw_file = RUN_DIR / f"nadh_100_batch{batch_num}_raw_{TS}.txt"
+        with open(raw_file, "w", encoding="utf-8") as f:
+            f.write(epa_result)
+        print(f"  -> {raw_file}")
 
-            # Preserve RAW agent output (project rule: outputs must be saved unmodified)
-            raw_file = RUN_DIR / f"nadh_100_batch{batch_num}_raw_{TS}.txt"
-            with open(raw_file, "w", encoding="utf-8") as f:
-                f.write(epa_result)
-            print(f"  -> {raw_file}")
+        # Parse EPA results — extract YES/NO per material
+        for idx, mat in enumerate(batch):
+            # Search for the matching line
+            lines = epa_result.split("\n")
+            nadh = "UNKNOWN"
+            reasoning = ""
+            for line in lines:
+                line_clean = line.strip()
+                # Match numbered results
+                if line_clean.startswith(f"{idx+1}.") or line_clean.startswith(f"{idx+1})"):
+                    if "YES" in line_clean[:20]:
+                        nadh = "YES"
+                        reasoning = line_clean.split("-", 1)[-1].strip() if "-" in line_clean else line_clean[20:]
+                    elif "NO" in line_clean[:20]:
+                        nadh = "NO"
+                        reasoning = line_clean.split("-", 1)[-1].strip() if "-" in line_clean else line_clean[20:]
+                    break
 
-            # Parse EPA results — extract YES/NO per material
-            for idx, mat in enumerate(batch):
-                # Search for the matching line
-                lines = epa_result.split("\n")
-                nadh = "UNKNOWN"
-                reasoning = ""
-                for line in lines:
-                    line_clean = line.strip()
-                    # Match numbered results
-                    if line_clean.startswith(f"{idx+1}.") or line_clean.startswith(f"{idx+1})"):
-                        if "YES" in line_clean[:20]:
-                            nadh = "YES"
-                            reasoning = line_clean.split("-", 1)[-1].strip() if "-" in line_clean else line_clean[20:]
-                        elif "NO" in line_clean[:20]:
-                            nadh = "NO"
-                            reasoning = line_clean.split("-", 1)[-1].strip() if "-" in line_clean else line_clean[20:]
-                        break
+            results_all.append({
+                "name": mat["name"],
+                "size_nm": mat["size"],
+                "size_category": mat["category"],
+                "nadh_oxidase_like": nadh,
+                "reasoning": reasoning[:200]
+            })
 
-                results_all.append({
-                    "name": mat["name"],
-                    "size_nm": mat["size"],
-                    "size_category": mat["category"],
-                    "nadh_oxidase_like": nadh,
-                    "reasoning": reasoning[:200]
-                })
-
-            print(f"  Done. {len(batch)} materials processed.")
-        else:
-            print(f"  Error: HTTP {r.status_code}")
-            for m in batch:
-                results_all.append({**m, "nadh_oxidase_like": "ERROR", "reasoning": f"HTTP {r.status_code}"})
-
-    except Exception as e:
-        print(f"  Failed: {e}")
+        print(f"  Done. {len(batch)} materials processed.")
+    else:
+        print(f"  Error: {epa_result}")
         for m in batch:
-            results_all.append({**m, "nadh_oxidase_like": "ERROR", "reasoning": str(e)})
+            results_all.append({**m, "nadh_oxidase_like": "ERROR", "reasoning": epa_result})
 
     time.sleep(1)  # Brief pause between batches
 

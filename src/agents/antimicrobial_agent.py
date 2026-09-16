@@ -31,8 +31,8 @@ class AntimicrobialAgent(BaseAgent):
         )
 
     def create_agent(self):
-        # LLM 的选择（EAS / 带温度标准 LLM / 默认 LLM）已统一收敛到
-        # BaseAgent._resolve_llm()，此处不再重复创建
+        # LLM selection (EAS / standard LLM with temperature / default LLM)
+        # is centralized in BaseAgent._resolve_llm(); not recreated here
         agent = super().create_agent()
 
         try:

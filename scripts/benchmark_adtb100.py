@@ -27,12 +27,9 @@ import re
 import sys
 import time
 
-import httpx
-
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import llm_client
 from output_utils import run_dir
-
-SERVER = "http://localhost:8000/v1/chat/completions"
 BENCHMARK = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..",
                          "benchmark", "ADTB-100_v1.0_Alzheimer_Therapeutics_Benchmark.json")
 
@@ -72,24 +69,8 @@ AGENT_OVERRIDE = None  # "base" = raw Qwen3-VL-8B without any LoRA adapter
 def call_agent(agent: str, prompt: str, max_tokens: int = 6144, temperature: float = 0.1,
                retries: int = 3, timeout: int = 1800) -> str:
     agent = AGENT_OVERRIDE or agent
-    for attempt in range(retries):
-        try:
-            r = httpx.post(SERVER, json={
-                "model": "nano-bio", "agent": agent,
-                "messages": [{"role": "user", "content": prompt}],
-                "max_tokens": max_tokens, "temperature": temperature,
-            }, timeout=timeout)
-            if r.status_code == 200:
-                return r.json()["choices"][0]["message"]["content"]
-            if r.status_code in (502, 503):
-                print(f"  {agent} got {r.status_code}, retrying in 10s ({attempt+1}/{retries})")
-                time.sleep(10)
-            else:
-                return f"ERROR {r.status_code}: {r.text[:300]}"
-        except (httpx.ReadTimeout, httpx.ConnectError) as e:
-            print(f"  {agent} {type(e).__name__}, retrying ({attempt+1}/{retries})")
-            time.sleep(5)
-    return f"ERROR: failed after {retries} retries"
+    return llm_client.chat(agent, prompt, max_tokens=max_tokens,
+                           temperature=temperature, timeout=timeout, retries=retries)
 
 
 def save_raw(filename: str, content: str):
@@ -214,7 +195,7 @@ Output format (ONE LINE per candidate, numbered, no other text):
 
 
 # ---------------------------------------------------------------------------
-# Rubric mode — anchors from 评分标准/标准.md (5-dim weighted framework)
+# Rubric mode — anchors from the rubric file (5-dim weighted framework)
 # injected VERBATIM. Deterministic overall = weighted sum (rubric weights),
 # mechanical, never modifies agent output.
 # ---------------------------------------------------------------------------
@@ -243,67 +224,68 @@ def load_rubric():
 
 
 def r_bsa_prompt(batch, rubric):
-    return f"""你是 AD 治疗剂评估专家。严格按以下评分标准（逐字引用，必须遵守其锚点）：
+    return f"""You are an AD therapeutic evaluation expert. Strictly follow the scoring rubric below (quoted verbatim; you must adhere to its anchors):
 
 {rubric}
 
-请评估以下候选治疗剂的两个维度（各 1-10 分）：
-- delivery: 维度一「靶组织递送效率」
-- safety: 维度五「生物安全性」
+Evaluate the following therapeutic candidates on TWO dimensions (each 1-10):
+- delivery: Dimension 1 "Target tissue delivery efficiency"
+- safety: Dimension 5 "Biological safety"
 
-候选（每行一个）：
+Candidates (one per line):
 {drug_lines(batch)}
 
-输出格式（每行一个，编号，不要其他文字）：
-1. <name> | delivery: <1-10> | safety: <1-10> | <一句理由>
+Output format (ONE LINE per candidate, numbered, no other text):
+1. <name> | delivery: <1-10> | safety: <1-10> | <one-line reasoning>
 2. ..."""
 
 
 def r_mma_prompt(batch, rubric):
-    return f"""你是 AD 治疗机制分析专家。严格按以下评分标准（逐字引用，必须遵守其锚点）：
+    return f"""You are an AD therapeutic mechanism analysis expert. Strictly follow the scoring rubric below (quoted verbatim; you must adhere to its anchors):
 
 {rubric}
 
-请评估以下候选治疗剂的两个维度（各 1-10 分）：
-- synergy: 维度二「多靶点协同潜力」
-- duration: 维度三「效应持续时间」
+Evaluate the following therapeutic candidates on TWO dimensions (each 1-10):
+- synergy: Dimension 2 "Multi-target synergy potential"
+- duration: Dimension 3 "Effect duration"
 
-候选（每行一个）：
+Candidates (one per line):
 {drug_lines(batch)}
 
-输出格式（每行一个，编号，不要其他文字）：
-1. <name> | synergy: <1-10> | duration: <1-10> | <一句理由>
+Output format (ONE LINE per candidate, numbered, no other text):
+1. <name> | synergy: <1-10> | duration: <1-10> | <one-line reasoning>
 2. ..."""
 
 
-GATE = "off"  # off = additive (锚定加性版), hard = ×(ad/10), soft = ×(0.5+0.5·ad/10)
+GATE = "off"  # off = additive (anchored additive), hard = x(ad/10), soft = x(0.5+0.5*ad/10)
 
 GATE_FORMULA = {
-    "off": "五维加权（递送30%、多靶点15%、持续时间10%、生产质控25%、安全性20%）",
-    "hard": "五维加权（递送30%、多靶点15%、持续时间10%、生产质控25%、安全性20%）再乘以门控（AD相关性÷10）",
-    "soft": "五维加权（递送30%、多靶点15%、持续时间10%、生产质控25%、安全性20%）再乘以软门控（0.5 + 0.5×AD相关性÷10）",
+    "off": "the weighted sum of the five dimensions (delivery 30%, synergy 15%, duration 10%, manufacturability 25%, safety 20%)",
+    "hard": "the weighted sum of the five dimensions (delivery 30%, synergy 15%, duration 10%, manufacturability 25%, safety 20%) multiplied by the gate (AD_relevance / 10)",
+    "soft": "the weighted sum of the five dimensions (delivery 30%, synergy 15%, duration 10%, manufacturability 25%, safety 20%) multiplied by the soft gate (0.5 + 0.5 * AD_relevance / 10)",
 }
 
 
 def r_epa_prompt(batch, rubric):
     if GATE == "off":
-        dims_txt = "请评估以下候选治疗剂的一个维度（1-10 分）：\n- manufacturability: 维度四「生产质控与精准调控能力」"
-        fmt = "1. <name> | manufacturability: <1-10> | <一句理由>"
+        dims_txt = ('Evaluate the following therapeutic candidates on ONE dimension (1-10):\n'
+                    '- manufacturability: Dimension 4 "Manufacturing control and precise tunability"')
+        fmt = "1. <name> | manufacturability: <1-10> | <one-line reasoning>"
     else:
-        dims_txt = ("请评估以下候选治疗剂的两个维度（各 1-10 分）：\n"
-                    "- ad_relevance: 维度零「AD 相关性」（门控维度）\n"
-                    "- manufacturability: 维度四「生产质控与精准调控能力」")
-        fmt = "1. <name> | ad_relevance: <1-10> | manufacturability: <1-10> | <一句理由>"
-    return f"""你是 AD 治疗剂评估专家。严格按以下评分标准（逐字引用，必须遵守其锚点）：
+        dims_txt = ('Evaluate the following therapeutic candidates on TWO dimensions (each 1-10):\n'
+                    '- ad_relevance: Dimension 0 "AD relevance" (gating dimension)\n'
+                    '- manufacturability: Dimension 4 "Manufacturing control and precise tunability"')
+        fmt = "1. <name> | ad_relevance: <1-10> | manufacturability: <1-10> | <one-line reasoning>"
+    return f"""You are an AD therapeutic evaluation expert. Strictly follow the scoring rubric below (quoted verbatim; you must adhere to its anchors):
 
 {rubric}
 
 {dims_txt}
 
-候选（每行一个）：
+Candidates (one per line):
 {drug_lines(batch)}
 
-输出格式（每行一个，编号，不要其他文字）：
+Output format (ONE LINE per candidate, numbered, no other text):
 {fmt}
 2. ..."""
 
@@ -322,50 +304,50 @@ def r_ca_prompt(batch, subscores, rubric):
         if GATE != "off":
             line += f" | ad_relevance: {fmt(s.get('ad_relevance'))}"
         lines.append(line)
-    return f"""你是 Comparison & Ranking agent。评分标准（逐字引用，必须遵守其锚点与权重）：
+    return f"""You are the Comparison & Ranking agent. Scoring rubric (quoted verbatim; you must adhere to its anchors and weights):
 
 {rubric}
 
-以下是 AD 候选治疗剂及三个领域专家给出的子分（1-10，NA=缺失，缺失维度由你自行判断）：
+Below are AD therapeutic candidates with subscores from three domain expert agents (1-10 each, NA = missing; judge missing dimensions yourself):
 
 {chr(10).join(lines)}
 
-对每个候选给出 overall 综合分（1-10），须与标准中的综合分公式一致：{GATE_FORMULA[GATE]}。一句理由。
+For EACH candidate give an overall score (1-10) consistent with the rubric's overall formula: {GATE_FORMULA[GATE]}. One-line reasoning.
 
-输出格式（每行一个，编号，不要其他文字）：
-1. <name> | overall: <1-10> | <一句理由>
+Output format (ONE LINE per candidate, numbered, no other text):
+1. <name> | overall: <1-10> | <one-line reasoning>
 2. ..."""
 
 
 def r_solo_prompt(batch, rubric):
     if GATE == "off":
-        dims_txt = """对每个候选治疗剂给出 SIX 个分数（各 1-10）：
-- delivery: 维度一「靶组织递送效率」
-- synergy: 维度二「多靶点协同潜力」
-- duration: 维度三「效应持续时间」
-- manufacturability: 维度四「生产质控与精准调控能力」
-- safety: 维度五「生物安全性」"""
-        fmt = "1. <name> | delivery: <1-10> | synergy: <1-10> | duration: <1-10> | manufacturability: <1-10> | safety: <1-10> | overall: <1-10> | <一句理由>"
+        dims_txt = """For EACH therapeutic candidate give SIX scores (each 1-10):
+- delivery: Dimension 1 "Target tissue delivery efficiency"
+- synergy: Dimension 2 "Multi-target synergy potential"
+- duration: Dimension 3 "Effect duration"
+- manufacturability: Dimension 4 "Manufacturing control and precise tunability"
+- safety: Dimension 5 "Biological safety\""""
+        fmt = "1. <name> | delivery: <1-10> | synergy: <1-10> | duration: <1-10> | manufacturability: <1-10> | safety: <1-10> | overall: <1-10> | <one-line reasoning>"
     else:
-        dims_txt = """对每个候选治疗剂给出 SEVEN 个分数（各 1-10）：
-- ad_relevance: 维度零「AD 相关性」（门控维度）
-- delivery: 维度一「靶组织递送效率」
-- synergy: 维度二「多靶点协同潜力」
-- duration: 维度三「效应持续时间」
-- manufacturability: 维度四「生产质控与精准调控能力」
-- safety: 维度五「生物安全性」"""
-        fmt = "1. <name> | ad_relevance: <1-10> | delivery: <1-10> | synergy: <1-10> | duration: <1-10> | manufacturability: <1-10> | safety: <1-10> | overall: <1-10> | <一句理由>"
-    return f"""你是 AD 治疗剂评估专家。严格按以下评分标准（逐字引用，必须遵守其锚点）：
+        dims_txt = """For EACH therapeutic candidate give SEVEN scores (each 1-10):
+- ad_relevance: Dimension 0 "AD relevance" (gating dimension)
+- delivery: Dimension 1 "Target tissue delivery efficiency"
+- synergy: Dimension 2 "Multi-target synergy potential"
+- duration: Dimension 3 "Effect duration"
+- manufacturability: Dimension 4 "Manufacturing control and precise tunability"
+- safety: Dimension 5 "Biological safety\""""
+        fmt = "1. <name> | ad_relevance: <1-10> | delivery: <1-10> | synergy: <1-10> | duration: <1-10> | manufacturability: <1-10> | safety: <1-10> | overall: <1-10> | <one-line reasoning>"
+    return f"""You are an AD therapeutic evaluation expert. Strictly follow the scoring rubric below (quoted verbatim; you must adhere to its anchors):
 
 {rubric}
 
 {dims_txt}
-- overall: 综合分，与标准中的综合分公式一致：{GATE_FORMULA[GATE]}
+- overall: overall score, consistent with the rubric's overall formula: {GATE_FORMULA[GATE]}
 
-候选（每行一个）：
+Candidates (one per line):
 {drug_lines(batch)}
 
-输出格式（每行一个，编号，不要其他文字）：
+Output format (ONE LINE per candidate, numbered, no other text):
 {fmt}
 2. ..."""
 
@@ -433,7 +415,7 @@ def main():
                     help="harness = 4-agent chain (epa/mma/bsa/ca); "
                          "prompt = single consolidated scoring prompt, no chain")
     ap.add_argument("--rubric", action="store_true",
-                    help="anchor with 评分标准/标准.md (5-dim weighted framework); "
+                    help="anchor with the rubric file 评分标准/标准.md (5-dim weighted framework); "
                          "overall = deterministic weighted sum, CA overall kept as ca_overall")
     ap.add_argument("--gate", choices=["off", "hard", "soft"], default="off",
                     help="AD-relevance gate: off = additive (default), "
@@ -456,7 +438,7 @@ def main():
     rubric_text = load_rubric() if args.rubric else None
     if args.anonymize and rubric_text:
         # The rubric's anchor examples name real drugs (e.g. Donepezil in the
-        # 维度零 section) — scrub any line mentioning a benchmark compound, or
+        # Dimension-0 section) — scrub any line mentioning a benchmark compound, or
         # anonymization is defeated.
         import re as _re
         names = [r["Compound"] for r in load_records(args.benchmark)["_norm_records"]]
@@ -616,7 +598,7 @@ def main():
         "model_variant": "base (Qwen3-VL-8B, NO LoRA)" if variant == "base"
                          else "lora (per-agent adapters, lora_enhanced)",
         "mode": args.mode,
-        "rubric": "评分标准/标准.md (AD相关性门控 × [delivery 30% / synergy 15% / "
+        "rubric": "评分标准/标准.md (AD-relevance gate x [delivery 30% / synergy 15% / "
                   "duration 10% / manufacturability 25% / safety 20%]; overall = "
                   "deterministic gated fusion, model's own overall in ca_overall)" if args.rubric else None,
         "gate": GATE if args.rubric else None,

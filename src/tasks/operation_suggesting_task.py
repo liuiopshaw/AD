@@ -1,38 +1,46 @@
 #!/usr/bin/env python3
 """
-Operation Suggesting Task — 操作建议任务
-负责为材料的合成、生产和应用提供详细的操作指南和工艺参数建议
+Operation Suggesting Task
+Provides detailed operational guidelines and process parameter suggestions
+for the synthesis, production, and application of materials.
 """
 
-# 从基础任务模块导入基类和任务文本加载函数
+# Import the base class and task text loading function from the base task module
 from .base_task import BaseTask, load_task_text
 
 
 class OperationSuggestingTask(BaseTask):
-    """操作建议任务类
+    """Task class for operation suggestions.
 
-    继承自 BaseTask，专注于生成实操层面的指导建议。
-    基于上游的机理分析、合成方法等结果，提供面向操作人员的具体指南，
-    包括关键工艺参数控制范围、安全注意事项、常见问题处理方案、
-    设备操作要点、质量控制检测频率等实践性内容。
-    目的是将理论方案转化为可执行的操作为止。
+    Inherits from BaseTask and focuses on generating hands-on guidance.
+    Based on upstream results such as mechanism analysis and synthesis
+    methods, it provides concrete guidelines for operators, including
+    control ranges for key process parameters, safety precautions,
+    troubleshooting plans for common issues, equipment operation points,
+    and quality-control inspection frequency.
+    The goal is to turn theoretical plans into executable operations.
     """
 
     def __init__(self, agent, material_info=""):
-        """初始化操作建议任务
+        """Initialize the operation suggesting task.
 
         Args:
-            agent: 操作建议 Agent，负责生成实操指导的 AI 代理
-            material_info: 材料相关的上下文信息文本
-                           注意：当前实现中 material_info 未被拼接到 description 中
-                           实际材料信息通过 context_task 机制传递给 Agent
+            agent: The operation suggestion Agent, an AI agent responsible
+                   for generating hands-on guidance.
+            material_info: Contextual information text about the material.
+                           Note: in the current implementation, material_info
+                           is not concatenated into the description; the actual
+                           material information is passed to the Agent via the
+                           context_task mechanism.
         """
-        # 从 locales 目录加载操作建议任务的多语言文本配置
+        # Load the multilingual text configuration for the operation
+        # suggesting task from the locales directory
         task_text = load_task_text('operation_suggesting_task')
 
-        # 调用父类构造函数
-        # material_info 参数在当前实现中保留但未使用
-        # 描述仅使用 YAML 模板内容，具体信息通过上下文任务传递
+        # Call the parent class constructor
+        # The material_info parameter is retained but unused in the current implementation
+        # The description uses only the YAML template content; specific
+        # information is passed through context tasks
         super().__init__(
             agent=agent,
             expected_output=task_text.get('expected_output', ''),
@@ -40,34 +48,38 @@ class OperationSuggestingTask(BaseTask):
         )
 
     def create_task(self, agent, context_task=None, user_requirement=None):
-        """创建操作建议任务实例
+        """Create an operation suggesting task instance.
 
-        操作建议任务是流水线的最末端环节之一，
-        需要综合考虑前述所有分析结果（机理、合成方法等），
-        才能给出完整、准确的操作指导。
+        The operation suggesting task is one of the final stages of the
+        pipeline. It must take into account all preceding analysis results
+        (mechanism, synthesis methods, etc.) in order to provide complete
+        and accurate operational guidance.
 
         Args:
-            agent: 执行该任务的 Agent 实例
-            context_task: 上游任务列表，通常包括机理分析和合成方法等任务的输出
-            user_requirement: 用户原始需求，用于生成贴合实际场景的操作建议
+            agent: The Agent instance that executes this task.
+            context_task: List of upstream tasks, typically including the
+                outputs of mechanism analysis and synthesis method tasks.
+            user_requirement: The user's original requirement, used to
+                generate operation suggestions tailored to the actual scenario.
 
         Returns:
-            Task: 配置好的 CrewAI Task 实例
+            Task: A configured CrewAI Task instance.
         """
-        # 从 YAML 文件加载任务文本模板
+        # Load the task text template from the YAML file
         task_text = load_task_text('operation_suggesting_task')
 
-        # 提取各文本片段
+        # Extract the individual text fragments
         description = task_text.get('description', '')
         expected_output = task_text.get('expected_output', '')
         user_req_prefix = task_text.get('user_requirement_prefix', '\n\nUser Requirement: ')
 
-        # 将用户需求追加到描述中
-        # 操作建议需要针对具体的用户场景定制（如处理规模、场地条件等）
+        # Append the user requirement to the description
+        # Operation suggestions need to be tailored to the specific user
+        # scenario (e.g., processing scale, site conditions, etc.)
         if user_requirement:
             description += f"{user_req_prefix}{user_requirement}"
 
-        # 创建 CrewAI Task 实例
+        # Create the CrewAI Task instance
         from crewai import Task
         task = Task(
             agent=agent,
@@ -75,8 +87,10 @@ class OperationSuggestingTask(BaseTask):
             description=description
         )
 
-        # 设置任务上下文依赖
-        # 操作建议需要综合多方信息，context_task 通常包含多个上游任务的输出
+        # Set up task context dependencies
+        # Operation suggestions need to integrate multiple sources of
+        # information; context_task usually contains outputs of several
+        # upstream tasks
         if context_task:
             if isinstance(context_task, list):
                 task.context = context_task

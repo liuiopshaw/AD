@@ -1,154 +1,155 @@
 #!/usr/bin/env python3
-# 指定使用 Python 3 解释器运行此脚本
+# Specify that this script should be run with the Python 3 interpreter
 
 """
 Formula to Properties Query Tool.
 Query key physicochemical properties by material formula.
 
-通过化学式查询材料物化属性的工具。
-用户输入化学分子式（如 "TiO2"、"LiFePO4" 等），
-工具通过 Materials Project 数据库搜索并返回对应的物理化学属性。
+Tool for querying material physicochemical properties by chemical formula.
+The user inputs a chemical formula (e.g. "TiO2", "LiFePO4"),
+and the tool searches the Materials Project database and returns the
+corresponding physicochemical properties.
 """
 
 import json
-# 导入 json 模块，用于将查询结果序列化为 JSON 格式字符串返回
+# Import the json module to serialize query results into JSON format strings
 
 import logging
-# 导入 logging 模块，用于记录运行时的错误信息
+# Import the logging module to record runtime error information
 
 from crewai.tools import BaseTool
-# 从 crewai.tools 导入 BaseTool 基类，用于构建符合 CrewAI 框架标准的工具
+# Import the BaseTool base class from crewai.tools to build tools conforming to the CrewAI framework standard
 
 from pydantic import BaseModel, Field
-# 从 pydantic 导入 BaseModel 和 Field，用于定义工具的输入参数模型
+# Import BaseModel and Field from pydantic to define the tool's input parameter model
 
 from src.tools.materials_project_tool import get_materials_project_tool
-# 导入 Materials Project 工具的单例获取函数，用于访问 Materials Project API
+# Import the singleton getter of the Materials Project tool to access the Materials Project API
 
 logging.basicConfig(level=logging.WARNING)
-# 配置日志级别为 WARNING，仅输出警告及以上级别的信息，避免日志冗余
+# Set the log level to WARNING so only warnings and above are emitted, avoiding log noise
 
 logger = logging.getLogger(__name__)
-# 获取当前模块的 logger 实例，日志中带模块名前缀，便于追踪问题来源
+# Get the logger instance for the current module; log entries carry the module name prefix for easier issue tracing
 
 class Formula2PropertiesInput(BaseModel):
     """Formula to Properties Query Tool Input Model
-    化学式到属性查询工具的输入参数模型。定义工具接收的必填参数。"""
+    Input parameter model for the formula-to-properties query tool. Defines the required parameters the tool accepts."""
 
     formula: str = Field(..., description="Chemical formula")
-    # 化学式字段，类型为字符串
-    # "..."（Ellipsis）表示该字段为必填项，调用时必须提供
-    # description 为 LLM 提供参数说明
+    # Formula field, of type string
+    # "..." (Ellipsis) marks the field as required; it must be provided on every call
+    # description provides the parameter explanation for the LLM
 
 class Formula2PropertiesTool(BaseTool):
     """Formula to Properties Query Tool
-    化学式到属性查询工具类。继承自 CrewAI 的 BaseTool，
-    实现通过化学式在 Materials Project 中搜索材料并返回详细属性。"""
+    Tool class for querying properties by chemical formula. Inherits from CrewAI's BaseTool
+    and implements searching materials in the Materials Project by formula and returning detailed properties."""
 
     name: str = "Formula to Properties Query Tool"
-    # 工具的标识名称，CrewAI 框架通过此名称引用工具
+    # The tool's identifier name, used by the CrewAI framework to reference the tool
 
     description: str = (
         "Query key physicochemical properties by material formula. "
         "Input formula, returns material property information."
     )
-    # 工具功能描述，告知 LLM 工具的作用和使用场景
+    # Tool capability description, telling the LLM what the tool does and when to use it
 
     args_schema: type[BaseModel] = Formula2PropertiesInput
-    # 指定输入模型为 Formula2PropertiesInput，CrewAI 据此验证输入参数
+    # Specifies Formula2PropertiesInput as the input model; CrewAI validates input parameters against it
 
     def _run(self, formula: str) -> str:
         """
         Query material properties by formula.
-        通过化学式查询材料的物化属性。这是工具的执行入口方法。
+        Query a material's physicochemical properties by chemical formula. This is the tool's execution entry method.
 
-        流程：
-        1. 搜索 Materials Project 数据库
-        2. 取最佳匹配的材料 ID
-        3. 用材料 ID 获取详细属性
-        4. 返回格式化的 JSON 结果
+        Workflow:
+        1. Search the Materials Project database
+        2. Take the best-matching material ID
+        3. Use the material ID to fetch detailed properties
+        4. Return the formatted JSON result
 
         Args:
-            formula: Chemical formula 化学分子式（如 H2O、NaCl、TiO2）
+            formula: Chemical formula (e.g. H2O, NaCl, TiO2)
 
         Returns:
-            JSON formatted material property info  JSON 格式的材料属性信息
+            JSON formatted material property info
         """
         try:
             mp_tool = get_materials_project_tool()
-            # 获取 Materials Project 工具的单例实例，复用已有的 API 连接
+            # Get the singleton instance of the Materials Project tool, reusing the existing API connection
 
             search_result = mp_tool.search_materials(formula=formula, limit=5, fields=["material_id", "formula_pretty"])
-            # 用化学式在 Materials Project 数据库中搜索匹配材料
-            # limit=5 限制返回最多 5 条结果，fields 指定只取必要字段以减少数据传输量
-            # formula_pretty 是格式化后的化学式（含上下标），material_id 是唯一标识
+            # Search the Materials Project database for materials matching the formula
+            # limit=5 caps the results at 5 entries; fields restricts the response to the necessary fields to reduce data transfer
+            # formula_pretty is the formatted formula (with sub/superscripts); material_id is the unique identifier
 
             if "error" in search_result:
                 return json.dumps({"error": search_result["error"]}, ensure_ascii=False)
-                # 如果搜索 API 返回错误，直接将错误信息包装为 JSON 返回
+                # If the search API returns an error, wrap the error message as JSON and return it directly
 
             if not search_result.get("data"):
                 return json.dumps({"error": f"No material found with formula {formula}"}, ensure_ascii=False)
-                # 如果搜索结果为空（data 字段不存在或为空），说明数据库中无该化学式的记录
+                # If the search result is empty (the data field is missing or empty), the database has no record for this formula
 
             first_material = search_result["data"][0]
-            # 取搜索结果中第一条（最相关）的材料记录
+            # Take the first (most relevant) material record from the search results
 
             material_id = first_material.get("material_id")
-            # 提取 Materials Project 中的材料唯一 ID
+            # Extract the unique material ID in the Materials Project
 
             if not material_id or material_id == "N/A":
                 return json.dumps({"error": f"No valid material ID found for formula {formula}"}, ensure_ascii=False)
-                # 如果材料 ID 无效或缺失，无法进行后续详细查询，返回错误
+                # If the material ID is invalid or missing, the detailed query cannot proceed; return an error
 
             detail_result = mp_tool.get_material_by_id(material_id)
-            # 使用获取到的材料 ID 请求该材料的完整详细信息
+            # Use the obtained material ID to request the material's full detailed information
 
             if "error" in detail_result:
                 return json.dumps({"error": detail_result["error"]}, ensure_ascii=False)
-                # 如果详细查询失败，返回错误信息
+                # If the detailed query fails, return the error message
 
             properties = {
                 "formula": detail_result.get("formula", formula),
-                # 材料的化学式，优先使用 API 返回的格式化公式，若不存在则回退到用户输入的公式
+                # The material's chemical formula; prefer the formatted formula returned by the API, falling back to the user input if absent
 
                 "material_id": detail_result.get("material_id", "N/A"),
-                # Materials Project 中该材料的唯一标识 ID
+                # The material's unique identifier ID in the Materials Project
 
                 "chemsys": detail_result.get("chemsys", "N/A"),
-                # 化学体系标识，表示材料由哪些元素组成（如 "Li-Fe-P-O"）
+                # Chemical system identifier, indicating which elements the material consists of (e.g. "Li-Fe-P-O")
 
                 "volume": detail_result.get("volume", "N/A"),
-                # 晶胞体积，单位为 Angstrom^3（立方埃），反映晶体结构的基本尺寸
+                # Unit cell volume in Angstrom^3 (cubic angstroms), reflecting the basic size of the crystal structure
 
                 "density": detail_result.get("density", "N/A"),
-                # 理论密度，单位为 g/cm^3，由晶胞质量和体积计算得出
+                # Theoretical density in g/cm^3, calculated from the unit cell mass and volume
 
                 "nsites": detail_result.get("nsites", "N/A"),
-                # 晶胞中的原子位点数，即单胞内独立原子位置的总数
+                # Number of atomic sites in the unit cell, i.e. the total count of independent atomic positions within the cell
 
                 "crystal_system": detail_result.get("crystal_system", "N/A")
-                # 晶系类型，如 cubic（立方）、hexagonal（六方）、tetragonal（四方）等
+                # Crystal system type, e.g. cubic, hexagonal, tetragonal, etc.
             }
 
             return json.dumps(properties, ensure_ascii=False, indent=2)
-            # 将属性字典序列化为格式化的 JSON 字符串
-            # ensure_ascii=False 保证中文字符不转义
-            # indent=2 使输出具有缩进层次，便于阅读
+            # Serialize the properties dictionary into a formatted JSON string
+            # ensure_ascii=False keeps non-ASCII characters unescaped
+            # indent=2 gives the output an indented hierarchy for readability
 
         except Exception as e:
             logger.error(f"Error querying properties for formula {formula}: {e}")
-            # 记录异常详情到日志，包含触发异常的化学式和错误堆栈
+            # Log the exception details, including the formula that triggered it and the error stack
 
             return json.dumps({"error": f"Query error for formula {formula}: {str(e)}"}, ensure_ascii=False)
-            # 将异常信息包装为 JSON 格式的错误响应返回，确保接口始终返回合法的 JSON
+            # Wrap the exception as a JSON-formatted error response, ensuring the interface always returns valid JSON
 
-# 在模块层面创建工具的单例实例
-# 模块首次被导入时即创建，后续导入共享同一个实例
+# Create the tool's singleton instance at module level
+# Created when the module is first imported; subsequent imports share the same instance
 formula2properties_tool = Formula2PropertiesTool()
 
 def get_formula2properties_tool():
     """Get formula to properties query tool instance
-    获取化学式到属性查询工具的单例实例。
-    提供统一的外部访问接口，返回模块级别的单例工具对象。"""
+    Get the singleton instance of the formula-to-properties query tool.
+    Provides a unified external access interface returning the module-level singleton tool object."""
     return formula2properties_tool

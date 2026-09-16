@@ -139,7 +139,7 @@ This is batch {n} of {total_batches} — {focus}
 
 {format_block}"""
 
-APA_PROMPT_TEMPLATE = """Assess MANUFACTURABILITY & PRECISE CONTROL (生产质控与精准调控能力) of each candidate below: is its preparation controllable, scalable, and precisely tunable in composition and dose?
+APA_PROMPT_TEMPLATE = """Assess MANUFACTURABILITY & PRECISE CONTROL (manufacturability and precise-control capability) of each candidate below: is its preparation controllable, scalable, and precisely tunable in composition and dose?
 
 Scoring anchors (from the project scoring standard):
 - 9-10: definite chemical composition, controllable synthesis route, high batch-to-batch consistency, precisely tunable dose, easy to scale up (nano formulations and small molecules with defined formulas belong here)
@@ -157,7 +157,7 @@ Output: ONE line per candidate with the original fields UNCHANGED, then append a
 
 EPA_PROMPT_TEMPLATE = """Review and validate the following candidate list. For each candidate:
 1. Verify the NADH activity prediction (YES/NO) with reasoning
-2. Score TARGET-TISSUE DELIVERY EFFICIENCY (靶组织递送效率, 1-10): how efficiently the candidate reaches its intended target tissue — for gut-targeted candidates consider stability in GI tract, mucosal retention, size/ligand effects; for CNS candidates consider BBB penetration, bioavailability (10 = most efficient delivery).
+2. Score TARGET-TISSUE DELIVERY EFFICIENCY (target-tissue delivery efficiency, 1-10): how efficiently the candidate reaches its intended target tissue — for gut-targeted candidates consider stability in GI tract, mucosal retention, size/ligand effects; for CNS candidates consider BBB penetration, bioavailability (10 = most efficient delivery).
 
 Candidates:
 {part_text}
@@ -166,7 +166,7 @@ Output in the same pipe-separated format: first append a semicolon and a JSON ob
 ...original line...; {{"delivery_efficiency": 8}}; validation note
 The JSON object is MANDATORY — every line MUST contain exactly one JSON object."""
 
-BSA_PROMPT_TEMPLATE = """Assess the overall BIOSAFETY (生物安全性) of each candidate below: cytotoxicity, organ damage (liver/kidney/spleen/brain), in-vivo reactions (hemolysis, inflammation, immunogenicity), environmental risk, and structural stability (ion leaching for nano candidates). Combine into ONE biosafety score 1-10 (10 = safest).
+BSA_PROMPT_TEMPLATE = """Assess the overall BIOSAFETY (biosafety) of each candidate below: cytotoxicity, organ damage (liver/kidney/spleen/brain), in-vivo reactions (hemolysis, inflammation, immunogenicity), environmental risk, and structural stability (ion leaching for nano candidates). Combine into ONE biosafety score 1-10 (10 = safest).
 
 Candidates:
 {part_text}
@@ -176,8 +176,8 @@ Output: ONE line per candidate with the original fields UNCHANGED, then append a
 
 MMA_PROMPT_TEMPLATE = """For the following candidates, explain:
 1. The molecular mechanism behind the assigned AD_Mechanism and how it connects to Alzheimer's therapy
-2. Score MULTI-TARGET SYNERGY POTENTIAL (多靶点协同潜力, 1-10): capacity of the candidate to engage multiple targets/pathways synergistically (10 = strong multi-target synergy)
-3. Score EFFECT DURABILITY (效应可持久性, 1-10): expected persistence of the therapeutic effect — dosing frequency, resistance/tolerance risk, microbiome or epigenetic memory (10 = most durable)
+2. Score MULTI-TARGET SYNERGY POTENTIAL (multi-target synergy potential, 1-10): capacity of the candidate to engage multiple targets/pathways synergistically (10 = strong multi-target synergy)
+3. Score EFFECT DURABILITY (effect durability, 1-10): expected persistence of the therapeutic effect — dosing frequency, resistance/tolerance risk, microbiome or epigenetic memory (10 = most durable)
 
 Candidates:
 {part_text}
@@ -425,7 +425,7 @@ async def api_orchestrate(payload: dict):
     if orch_lock.locked():
         async def busy():
             yield sse({"type": "error",
-                       "message": "已有编排任务进行中，请等待其完成后再发起新请求。"})
+                       "message": "An orchestration task is already in progress; please wait for it to finish before submitting a new request."})
         return StreamingResponse(busy(), media_type="text/event-stream",
                                  headers={"X-Session-Id": session_id})
 
@@ -454,7 +454,7 @@ async def api_sessions():
                 "session_id": s.get("session_id", p.stem),
                 "created": s.get("created"),
                 "run_dir": s.get("run_dir"),
-                "title": (first_user["content"][:40] if first_user else "(空会话)"),
+                "title": (first_user["content"][:40] if first_user else "(empty session)"),
                 "message_count": len(s.get("messages", [])),
             })
         except Exception:

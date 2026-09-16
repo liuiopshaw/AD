@@ -1,81 +1,85 @@
 # =============================================================================
-# 日志模块：记录程序运行信息，便于调试和追踪问题
+# Logging module: records runtime information for debugging and issue tracking
 # =============================================================================
 import logging
 from src.agents.base_agent import BaseAgent
 from src.tools import ToolFactory
 
-# 配置日志格式和级别：WARNING 及以上的日志才会输出，避免过多的 INFO/DEBUG 信息干扰
-# 注意：basicConfig 只在首次调用时生效，多次调用不影响已有配置
+# Configure log format and level: only WARNING and above are emitted, avoiding
+# interference from excessive INFO/DEBUG messages
+# Note: basicConfig only takes effect on the first call; subsequent calls do not
+# affect the existing configuration
 logging.basicConfig(level=logging.WARNING)
-logger = logging.getLogger(__name__)  # 获取当前模块的日志记录器，便于定位日志来源
+logger = logging.getLogger(__name__)  # Get the logger for the current module, making it easy to locate log sources
 
 
 class SynthesisGuidingAgent(BaseAgent):
-    """合成引导智能体
+    """Synthesis Guiding Agent
 
-    该智能体专门负责设计材料的合成方法和工艺流程。
-    继承自 BaseAgent，通过化学数据库工具扩展了功能，
-    能够查询物质特性、合成路线等专业数据。
+    This agent is dedicated to designing material synthesis methods and process flows.
+    It inherits from BaseAgent and extends its capabilities with chemistry database tools,
+    enabling it to query substance properties, synthesis routes, and other specialized data.
 
-    在多智能体协作流程中，该智能体接收上游的材料设计结果，
-    输出可行的合成方案供下游操作建议智能体使用。
+    In the multi-agent collaboration workflow, this agent receives material design results
+    from upstream agents and outputs feasible synthesis plans for the downstream
+    operation-guidance agent to use.
     """
 
     def __init__(self, llm):
-        """初始化合成引导智能体。
+        """Initialize the Synthesis Guiding Agent.
 
-        设置智能体的角色定位、目标任务、提示词模板和行为参数。
-        使用 Config 中预定义的温度参数来控制输出的创造性和一致性。
+        Sets up the agent's role definition, goal, prompt template, and behavior parameters.
+        Uses the temperature parameter predefined in Config to control the creativity
+        and consistency of the output.
 
         Args:
-            llm: 语言模型实例，作为智能体的推理引擎
+            llm: Language model instance serving as the agent's reasoning engine
         """
-        # 延迟导入 Config，避免循环依赖问题
-        # Config 中包含了各个智能体专用的温度等参数配置
+        # Lazily import Config to avoid circular dependency issues
+        # Config contains temperature and other parameter settings specific to each agent
         from src.config.config import Config
         super().__init__(
             llm,
-            "Synthesis_Guiding_agent",  # 角色名：合成方法专家，用于日志和标识
-            "Design material synthesis methods and process flows",  # 目标描述：指导 LLM 的任务方向
-            "synthesis_guiding_agent_prompt.md",  # 提示词模板文件：包含该角色的详细系统提示
-            temperature=Config.SYNTHESIS_EXPERT_TEMPERATURE,  # 温度参数：从配置文件读取，控制 LLM 输出的随机性
-            max_iter=2  # 最大迭代次数：设置为 2（原始值为 8），遵循 "少即是多" 原则
-                        # 减少迭代次数意味着：复用上游设计结果，专注于合成路线规划，避免过度重复推理
+            "Synthesis_Guiding_agent",  # Role name: synthesis methods expert, used for logging and identification
+            "Design material synthesis methods and process flows",  # Goal description: guides the LLM's task direction
+            "synthesis_guiding_agent_prompt.md",  # Prompt template file: contains the detailed system prompt for this role
+            temperature=Config.SYNTHESIS_EXPERT_TEMPERATURE,  # Temperature parameter: read from the config file, controls the randomness of LLM output
+            max_iter=2  # Maximum iterations: set to 2 (original value was 8), following the "less is more" principle
+                        # Fewer iterations means: reuse upstream design results, focus on synthesis route planning, and avoid excessive repeated reasoning
         )
 
     def create_agent(self):
-        """创建并配置智能体实例。
+        """Create and configure the agent instance.
 
-        该方法的执行流程：
-        1. 优先尝试创建 EAS（弹性算法服务）LLM 实例，因为 EAS 提供更高的性能和稳定性
-        2. 如果 EAS 不可用，则使用初始化时传入的默认 LLM，保证系统在降级情况下仍可运行
-        3. 根据端点是否支持工具调用来决定是否加载化学数据库查询工具
+        The execution flow of this method:
+        1. Preferentially attempt to create an EAS (Elastic Algorithm Service) LLM instance, since EAS provides higher performance and stability
+        2. If EAS is unavailable, fall back to the default LLM passed in during initialization, ensuring the system still runs in degraded mode
+        3. Decide whether to load the chemistry database query tools based on whether the endpoint supports tool calling
 
         Returns:
-            配置完成的智能体实例，已挂载所需工具
+            The fully configured agent instance with the required tools attached
         """
-        # ---- 第一阶段：LLM 选择已统一收敛到 BaseAgent._resolve_llm() ----
-        # EAS / 带温度标准 LLM / 默认 LLM 的决策在父类中完成，此处不再重复创建
+        # ---- Phase 1: LLM selection has been consolidated into BaseAgent._resolve_llm() ----
+        # The decision among EAS / temperature-configured standard LLM / default LLM is made in the parent class; it is not recreated here
 
-        # ---- 第二阶段：调用父类创建基础智能体 ----
-        # 父类的 create_agent 方法负责加载提示词、设置 LangChain agent 框架
+        # ---- Phase 2: Call the parent class to create the base agent ----
+        # The parent class's create_agent method is responsible for loading the prompt and setting up the LangChain agent framework
         agent = super().create_agent()
 
-        # ---- 第三阶段：挂载化学数据库查询工具 ----
-        # 工具集提供材料搜索功能（如物质性质查询、合成路线检索等）
-        # 注意：DashScope 兼容端点可能不支持原生工具调用（function calling）
-        # 因此需要先检查 tools_enabled 的开关状态
+        # ---- Phase 3: Attach the chemistry database query tools ----
+        # The tool set provides material search capabilities (e.g., substance property queries, synthesis route retrieval)
+        # Note: DashScope-compatible endpoints may not support native tool calling (function calling)
+        # Therefore, the tools_enabled switch must be checked first
         try:
             from src.utils.llm_config import tools_enabled
             if tools_enabled():
-                # 端点支持工具调用：加载材料搜索工具集
+                # The endpoint supports tool calling: load the material search tool set
                 agent.tools = ToolFactory.create_material_search_tools()
             else:
-                # 端点不支持工具调用：清空工具列表，避免运行时错误
+                # The endpoint does not support tool calling: clear the tool list to avoid runtime errors
                 agent.tools = []
         except Exception:
-            # 如果 tools_enabled 导入或调用失败（例如配置缺失），默认启用工具
-            # 这是一个保守的容错策略：宁可多加载工具，也不让智能体缺少功能
+            # If importing or calling tools_enabled fails (e.g., missing configuration), enable tools by default
+            # This is a conservative fault-tolerance strategy: it is better to load extra tools than to leave the agent lacking functionality
             agent.tools = ToolFactory.create_material_search_tools()
         return agent

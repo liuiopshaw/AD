@@ -1,84 +1,84 @@
-# 导入 logging 模块，用于记录代理运行时的日志信息
+# Import the logging module for recording runtime log information of the agent
 import logging
-# 导入 BaseAgent 基类，AssessmentScreeningAgentA 继承自它，复用通用代理创建逻辑
+# Import the BaseAgent base class; AssessmentScreeningAgentA inherits from it to reuse common agent creation logic
 from src.agents.base_agent import BaseAgent
-# 导入 ToolFactory 工具工厂类，用于创建评估筛选所需的工具集
+# Import the ToolFactory class, used to create the toolset required for assessment and screening
 from src.tools import ToolFactory
 
-# 配置 logging 模块的全局日志级别为 WARNING，
-# 只输出警告和错误级别的日志，避免 INFO/DEBUG 信息刷屏
+# Configure the global logging level of the logging module to WARNING,
+# so that only warning- and error-level logs are output, avoiding INFO/DEBUG message flooding
 logging.basicConfig(level=logging.WARNING)
-# 获取当前模块的 logger 实例，日志输出会带上模块名，便于追踪来源
+# Get the logger instance for the current module; log output carries the module name for easy source tracing
 logger = logging.getLogger(__name__)
 
-# 评估筛选专家 A 类
-# 专家 A 是多专家评估体系中的一个独立评估者，
-# 与专家 B、专家 C 并行工作，从不同维度对材料方案进行评估
+# Assessment Screening Expert Agent A
+# Expert A is an independent evaluator in the multi-expert assessment system,
+# working in parallel with Experts B and C to evaluate material proposals from different dimensions
 class AssessmentScreeningAgentA(BaseAgent):
-    """评估筛选代理 A（Assessment Screening Agent A）
-       负责从特定角度对材料设计方案进行全面评估：
-       - 与其他评估专家（B、C）并行工作
-       - 使用统一的评估工具集
-       - 通过 prompt_params 中的 EXPERT_ID 区分不同专家的评估视角"""
+    """Assessment Screening Agent A
+       Responsible for comprehensively evaluating material design proposals from a specific perspective:
+       - Works in parallel with other assessment experts (B, C)
+       - Uses a unified assessment toolset
+       - Distinguished from other experts' assessment perspectives via EXPERT_ID in prompt_params"""
 
     def __init__(self, llm):
-        """初始化评估筛选代理 A
+        """Initialize Assessment Screening Agent A
 
         Args:
-            llm: 语言模型实例，由外部传入（通常来自 Crew 配置或主程序）
+            llm: Language model instance, passed in externally (usually from Crew configuration or the main program)
         """
-        # 延迟导入 Config 类，避免模块加载时的循环导入问题
+        # Lazily import the Config class to avoid circular import issues at module load time
         from src.config.config import Config
-        # 调用父类 BaseAgent 的构造函数，传入评估代理 A 的专有配置
+        # Call the constructor of the parent class BaseAgent, passing in the configuration specific to Assessment Agent A
         super().__init__(
-            llm,  # 语言模型实例
-            "Assessment_Screening_agent_A",  # 代理角色名：评估专家 A
+            llm,  # Language model instance
+            "Assessment_Screening_agent_A",  # Agent role name: Assessment Expert A
             "Comprehensively evaluate various aspects of material proposals",
-            # 指定评估代理 A 专用的提示词模板文件
+            # Specify the prompt template file dedicated to Assessment Agent A
             "assessment_screening_agent_a_prompt.md",
-            # 从 Config 读取专家 A 专用的温度参数
-            # 较低的评估温度有助于获得更一致、更理性的评估结果
+            # Read the temperature parameter dedicated to Expert A from Config
+            # A lower assessment temperature helps obtain more consistent and rational evaluation results
             temperature=Config.EXPERT_A_TEMPERATURE,
-            # max_iter=2：性能优化，从原始的 15 次迭代大幅缩减到 2 次
-            # 设计原则：Less is More — 聚焦核心评估逻辑，避免不必要的重复推理
+            # max_iter=2: performance optimization, drastically reduced from the original 15 iterations to 2
+            # Design principle: Less is More — focus on core evaluation logic and avoid unnecessary repeated reasoning
             max_iter=2,
-            # prompt_params 参数化替换：
-            # 将提示词模板中的 {EXPERT_ID} 占位符替换为 "A"
-            # 这样多个专家（A/B/C）可以共享同一套提示词模板，
-            # 仅通过不同的 EXPERT_ID 来区分各自的评估焦点
+            # Parameterized substitution via prompt_params:
+            # Replace the {EXPERT_ID} placeholder in the prompt template with "A"
+            # This allows multiple experts (A/B/C) to share the same prompt template,
+            # distinguishing their respective evaluation focuses only through different EXPERT_ID values
             prompt_params={"EXPERT_ID": "A"}
         )
 
     def create_agent(self):
-        """创建并返回配置好的评估专家 A 的 Agent 实例
+        """Create and return the configured Agent instance for Assessment Expert A
 
-        此方法覆盖父类的 create_agent，添加了：
-        1. EAS（Elastic Algorithm Service）LLM 的创建尝试
-        2. 统一评估工具集的附加
+        This method overrides the parent class's create_agent, adding:
+        1. A creation attempt for the EAS (Elastic Algorithm Service) LLM
+        2. Attachment of the unified assessment toolset
 
         Returns:
-            Agent: 配置完成的评估专家 A 的 Agent 实例
+            Agent: The configured Agent instance for Assessment Expert A
         """
-        # LLM 的选择（EAS / 带温度标准 LLM / 默认 LLM）已统一收敛到
-        # BaseAgent._resolve_llm()，此处不再重复创建
+        # LLM selection (EAS / standard LLM with temperature / default LLM) has been
+        # unified into BaseAgent._resolve_llm(); it is not created again here
 
-        # 调用父类 BaseAgent 的 create_agent() 创建基础 Agent 实例
-        # 父类方法会处理 backstory 加载、参数替换（EXPERT_ID=A）、
-        # 以及 Memory-first 指导文本的追加
+        # Call the parent class BaseAgent's create_agent() to create the base Agent instance
+        # The parent method handles backstory loading, parameter substitution (EXPERT_ID=A),
+        # and appending of Memory-first guidance text
         agent = super().create_agent()
-        # 附加工具集：使用统一的 ASA 评估工具集（专家 A/B/C 共享）
-        # 统一工具集确保了不同专家的工具能力一致，评估结果的可比性更强
+        # Attach the toolset: use the unified ASA assessment toolset (shared by Experts A/B/C)
+        # The unified toolset ensures consistent tool capabilities across experts, making evaluation results more comparable
         try:
             from src.utils.llm_config import tools_enabled
             if tools_enabled():
-                # 工具启用时：创建统一评估工具集
+                # When tools are enabled: create the unified assessment toolset
                 agent.tools = ToolFactory.create_unified_assessment_tools()
             else:
-                # 工具禁用时：设置为空列表
-                # 代理将完全依赖 LLM 知识和 backstory 中的评估标准进行判断
+                # When tools are disabled: set to an empty list
+                # The agent will rely entirely on LLM knowledge and the evaluation criteria in the backstory
                 agent.tools = []
         except Exception:
-            # 异常时默认启用工具（保守策略，优先保证功能完整）
+            # On exception, enable tools by default (conservative strategy, prioritizing functional completeness)
             agent.tools = ToolFactory.create_unified_assessment_tools()
 
         return agent

@@ -36,7 +36,7 @@ PRESET_DIMS = {"efficacy": "Efficacy", "mechanism": "Mechanism_score", "bbb": "B
                "safety": "Safety_score", "clinical": "Clinical_score", "overall": "Overall_score"}
 TIERS = ["High-quality", "Intermediate", "Negative control"]
 
-# Rubric-mode payloads (评分标准/标准.md, 5 weighted dims). Only dims with a
+# Rubric-mode payloads (the rubric file, 5 weighted dims). Only dims with a
 # meaningful benchmark counterpart get a Spearman; others are reported NA.
 RUBRIC_DIMS = ["ad_relevance", "delivery", "synergy", "duration", "manufacturability",
                "safety", "ca_overall", "overall"]
@@ -131,20 +131,20 @@ def main():
 
     L = []
     A = L.append
-    A(f"# ADTB-100 盲评对比报告（run {payload['timestamp']}）")
+    A(f"# ADTB-100 Blind-Evaluation Comparison Report (run {payload['timestamp']})")
     A("")
-    A(f"- 协议: {payload['protocol']}")
-    A(f"- 模型: {payload.get('model_variant', 'lora (per-agent adapters)')}")
-    A(f"- 模式: {payload.get('mode', 'harness')}（{' → '.join(payload['agent_chain'])}）")
+    A(f"- Protocol: {payload['protocol']}")
+    A(f"- Model: {payload.get('model_variant', 'lora (per-agent adapters)')}")
+    A(f"- Mode: {payload.get('mode', 'harness')} ({' → '.join(payload['agent_chain'])})")
     if is_rubric:
-        A(f"- 锚定: {payload['rubric']}")
-        A(f"- 门控: {payload.get('gate', 'off')}")
+        A(f"- Anchoring: {payload['rubric']}")
+        A(f"- Gating: {payload.get('gate', 'off')}")
     if payload.get("retry_note"):
-        A(f"- 补跑: {payload['retry_note']}")
+        A(f"- Retry: {payload['retry_note']}")
     if payload.get("skipped_placeholders"):
-        A(f"- 注: benchmark 中 {payload['skipped_placeholders']} 条匿名占位记录（无名称/类别/机理）"
-          f"无法盲评，已跳过，仅评测 {len(rows)} 条实名记录")
-    A(f"- 样本: {len(rows)}；overall 成功解析 {len(scored)}，缺失 {len(missing)}")
+        A(f"- Note: {payload['skipped_placeholders']} anonymous placeholder records in the benchmark (no name/category/mechanism) "
+          f"cannot be blind-evaluated and were skipped; only {len(rows)} named records were evaluated")
+    A(f"- Samples: {len(rows)}; overall parsed successfully for {len(scored)}, missing for {len(missing)}")
     A("")
 
     tier_preset_means = {t: sum(tier_vals[t]) / len(tier_vals[t]) for t in tiers}
@@ -152,10 +152,10 @@ def main():
 
     # 1. per-tier stats
     preset_str = " / ".join(f"{t}={tier_preset_means[t]:.2f}" for t in tiers)
-    A(f"## 1. 各 tier 的 agent 评分分布（预设 {preset_str}）")
+    A(f"## 1. Agent score distribution per tier (preset {preset_str})")
     A("")
     header_tiers = " | ".join(f"{t} (n={tier_counts[t]})" for t in tiers)
-    A(f"| 维度 | {header_tiers} | 单调递减? |")
+    A(f"| Dimension | {header_tiers} | Monotonically decreasing? |")
     A("|---|---|---|---|")
     tier_means = {}
     for d in dims:
@@ -174,16 +174,16 @@ def main():
     A("")
 
     # 2. Spearman per dimension
-    A("## 2. Spearman 秩相关（agent 维度分 vs 预设对应分，带并列修正）")
+    A("## 2. Spearman rank correlation (agent dimension scores vs preset counterparts, tie-corrected)")
     A("")
     if is_rubric and not is_v3:
-        A("> rubric 维度与 benchmark 维度不对应，仅 ad_relevance↔Efficacy、delivery↔BBB_score、"
-          "safety↔Safety_score、overall↔Overall_score 有可比性，其余维度标 NA。")
+        A("> rubric dimensions do not map to benchmark dimensions; only ad_relevance↔Efficacy, delivery↔BBB_score, "
+          "safety↔Safety_score, and overall↔Overall_score are comparable; other dimensions are marked NA.")
         A("")
     if is_v3 and is_rubric:
-        A("> v3 benchmark 维度与 rubric 一一对应，overall↔Final_score（硬门控公式）。")
+        A("> v3 benchmark dimensions correspond one-to-one with the rubric; overall↔Final_score (hard-gated formula).")
         A("")
-    A("| 维度 | rho |")
+    A("| Dimension | rho |")
     A("|---|---|")
     rho = {}
     for d in dims:
@@ -213,10 +213,10 @@ def main():
                     ok += 0.5
     concordance = ok / pairs if pairs else None
     pair_str = " + ".join(f"{ta[:4]}-{tb[:4]} {c}" for (ta, tb), c in sorted(pair_detail.items()))
-    A("## 3. 跨 tier 成对一致性（overall）")
+    A("## 3. Cross-tier pairwise concordance (overall)")
     A("")
-    A(f"- 跨 tier 有序对总数: {pairs}（{pair_str}）")
-    A(f"- agent 排序一致: {ok:.0f}（并列计 0.5）→ **concordance = {concordance:.3f}**")
+    A(f"- Total cross-tier ordered pairs: {pairs} ({pair_str})")
+    A(f"- correctly ordered by agent: {ok:.0f} (ties count 0.5) -> **concordance = {concordance:.3f}**")
     A("")
 
     # 4. tier classification with thresholds = midpoints of preset tier means
@@ -234,13 +234,13 @@ def main():
         conf[(r["tier"], tier_of(r["agent"]["overall"]))] += 1
     correct = sum(conf[(t, t)] for t in tiers)
     thr_str = ", ".join(f"≥{t:.2f}→{tiers[i]}" for i, t in enumerate(thr))
-    A(f"## 4. 三分类（阈值为预设 tier 均分中点: {thr_str}，其余→{tiers[-1]}）")
+    A(f"## 4. 3-tier classification (thresholds = midpoints of preset tier means: {thr_str}, else -> {tiers[-1]})")
     A("")
-    A(f"| 预设 \\ 判定 | {' | '.join(t for t in tiers)} |")
+    A(f"| preset \\ predicted | {' | '.join(t for t in tiers)} |")
     A("|---|---|---|---|")
     for t in tiers:
         A(f"| {t} | {' | '.join(str(conf[(t, tt)]) for tt in tiers)} |")
-    A(f"| **准确率** | | | **{correct}/{len(scored)} = {correct/len(scored):.1%}** |")
+    A(f"| **accuracy** | | | **{correct}/{len(scored)} = {correct/len(scored):.1%}** |")
     A("")
 
     # 5. precision@k (k = number of positives among evaluated)
@@ -248,23 +248,23 @@ def main():
     k_pos = sum(1 for r in rows if r["label"] == "positive")
     topk = ranked[:k_pos]
     pk = sum(1 for r in topk if r["label"] == "positive") / len(topk) if topk else None
-    A(f"## 5. Precision@{k_pos}（被评样本中预设 positive 共 {k_pos} 个）")
+    A(f"## 5. Precision@{k_pos} ({k_pos} preset positives among evaluated)")
     A("")
-    A(f"- agent top-{k_pos} 中真 positive: {sum(1 for r in topk if r['label']=='positive')}/{k_pos} → **{pk:.1%}**")
+    A(f"- true positives in agent top-{k_pos}: {sum(1 for r in topk if r['label']=='positive')}/{k_pos} -> **{pk:.1%}**")
     A("")
 
     # 6. negative control mean rank (last tier)
     neg_tier = tiers[-1]
     neg_ranks = [i + 1 for i, r in enumerate(ranked) if r["tier"] == neg_tier]
-    A("## 6. 阴性对照的排名位置（1 = 最好）")
+    A("## 6. Negative-control rank positions (1 = best)")
     A("")
     n_neg = tier_counts[neg_tier]
-    A(f"- {n_neg} 个阴性对照平均排名: **{sum(neg_ranks)/len(neg_ranks):.1f}** / {len(ranked)}"
-      f"（理想 ≈ {len(ranked) - (n_neg - 1) / 2:.1f}）；中位 {sorted(neg_ranks)[len(neg_ranks)//2]}")
+    A(f"- mean rank of {n_neg} negative controls: **{sum(neg_ranks)/len(neg_ranks):.1f}** / {len(ranked)}"
+      f" (ideal ~= {len(ranked) - (n_neg - 1) / 2:.1f}); median {sorted(neg_ranks)[len(neg_ranks)//2]}")
     A("")
 
     if missing:
-        A("## 附：未解析 overall 的条目")
+        A("## Appendix: items with unparsed overall")
         A("")
         for r in missing:
             A(f"- {r['ID']} {r['Compound']}")

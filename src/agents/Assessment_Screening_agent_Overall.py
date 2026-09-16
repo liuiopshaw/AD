@@ -1,67 +1,72 @@
-# 导入 logging 模块，用于记录运行日志，便于调试和追踪 agent 行为
+# Import the logging module for recording runtime logs, making it easier to debug and trace agent behavior
 import logging
-# 从当前包（agents）的 base_agent 模块导入 BaseAgent 基类
-# 使用相对导入（.），表明 base_agent 与当前文件在同一目录下
+# Import the BaseAgent base class from the base_agent module of the current package (agents)
+# Use a relative import (.), indicating that base_agent is in the same directory as this file
 from .base_agent import BaseAgent
-# 从 tools 模块导入 ToolFactory，用于统一创建和管理 agent 所使用的工具集
+# Import ToolFactory from the tools module, used to uniformly create and manage the tool set used by the agent
 from src.tools import ToolFactory
 
-# 配置日志的基本参数：设置日志级别为 WARNING，过滤掉 INFO/DEBUG 级别的冗余信息
-# 这样只输出警告及更高级别的日志，避免控制台输出过多不必要的内容
+# Configure basic logging parameters: set the log level to WARNING, filtering out redundant INFO/DEBUG messages
+# This way only warnings and higher-level logs are output, avoiding excessive unnecessary console output
 logging.basicConfig(level=logging.WARNING)
-# 获取当前模块的 logger 实例，后续所有日志输出都通过此 logger 进行
+# Get the logger instance for the current module; all subsequent log output goes through this logger
 logger = logging.getLogger(__name__)
 
-# 综合评估筛选专家类（最终汇总专家）
-# 继承自 BaseAgent，不直接评估材料，而是汇总三个专家（A/B/C）的评估结果
-# 进行加权计算和一致性分析，生成最终的综合评估报告
+# Comprehensive assessment and screening expert class (final aggregation expert)
+# Inherits from BaseAgent; it does not evaluate materials directly, but aggregates the evaluation results
+# of the three experts (A/B/C), performs weighted calculations and consistency analysis, and generates
+# the final comprehensive evaluation report
 class AssessmentScreeningAgentOverall(BaseAgent):
-    """综合评估筛选专家 agent
-    负责汇总各专家的评估结果，进行加权计算，并生成最终的材料评估报告和改进建议
+    """Comprehensive assessment and screening expert agent
+    Responsible for aggregating the evaluation results of each expert, performing weighted calculations,
+    and generating the final material evaluation report and improvement suggestions
     """
 
     def __init__(self, llm):
-        # 延迟导入 Config 配置类，避免在模块加载阶段出现循环导入问题
+        # Lazily import the Config configuration class to avoid circular import issues at module load time
         from src.config.config import Config
-        # 调用基类 BaseAgent 的构造函数，传入 agent 的所有核心参数
+        # Call the constructor of the base class BaseAgent, passing in all core parameters of the agent
         super().__init__(
             llm=llm,
-            # 角色标识：综合评估筛选专家（最终验证专家）
-            # 这是多 agent 协作流程中的最后一个环节，负责整合所有专家的意见
+            # Role identifier: comprehensive assessment and screening expert (final validation expert)
+            # This is the last step in the multi-agent collaboration workflow, responsible for integrating all experts' opinions
             role="Assessment_Screening_agent_Overall",
-            # 目标描述：明确告诉 agent 它的任务是汇总各专家结果、加权计算并生成最终报告
-            # 同时还需要提供改进建议，使输出不仅包含评估结论，还包含可操作的指导
+            # Goal description: clearly tells the agent that its task is to aggregate expert results, perform weighted
+            # calculations, and generate the final report; it must also provide improvement suggestions so that the
+            # output contains not only evaluation conclusions but also actionable guidance
             goal="Synthesize evaluation results from various experts, perform weighted calculations, and generate final material evaluation report, while providing improvement suggestions",
-            # 指定该 agent 使用的提示词模板文件（Markdown 格式）
+            # Specify the prompt template file (Markdown format) used by this agent
             prompt_file="assessment_screening_agent_overall_prompt.md",
-            # 从配置文件读取最终验证专家的专用温度参数，控制 LLM 输出的随机性
+            # Read the dedicated temperature parameter for the final validation expert from the config file,
+            # controlling the randomness of LLM output
             temperature=Config.FINAL_VALIDATOR_TEMPERATURE,
-            # 最大迭代次数设为 1：
-            # 遵循"少即是多"原则，从原来的 8 次缩减为 1 次
-            # 因为该 agent 只负责汇总已有结果，不需要迭代推理
+            # Maximum number of iterations set to 1:
+            # Following the "less is more" principle, reduced from the original 8 iterations to 1,
+            # because this agent only aggregates existing results and does not need iterative reasoning
             max_iter=1
         )
 
     def create_agent(self):
-        # LLM 的选择（EAS / 带温度标准 LLM / 默认 LLM）已统一收敛到
-        # BaseAgent._resolve_llm()，此处不再重复创建
+        # LLM selection (EAS / standard LLM with temperature / default LLM) has been unified into
+        # BaseAgent._resolve_llm(); it is no longer created repeatedly here
 
-        # 调用基类的 create_agent 方法，完成 agent 实例的基础创建和配置
+        # Call the base class's create_agent method to complete the basic creation and configuration of the agent instance
         agent = super().create_agent()
 
-        # ASA 最终验证专家特殊处理：
-        # 该 agent 不需要任何外部工具，它的唯一职责是汇总 ASA A/B/C 三个专家的输出结果
-        # 进行加权计算、一致性分析和最终报告生成
-        # 因此将工具列表设置为空，避免不必要的工具调用干扰汇总逻辑
+        # Special handling for the ASA final validation expert:
+        # This agent does not need any external tools; its sole responsibility is to aggregate the output
+        # of the three ASA experts A/B/C, perform weighted calculations and consistency analysis,
+        # and generate the final report
+        # Therefore the tool list is set to empty, avoiding unnecessary tool calls interfering with the aggregation logic
         agent.tools = []
 
-        # 增强提示词，明确说明其聚合角色：
-        # 在已有的 backstory（背景故事）之后追加一段说明，让 LLM 清楚知道：
-        # 1. 它的核心职责是收集 AssessmentScreeningAgentA、B、C 的评估结果
-        # 2. 需要执行加权计算和一致性分析
-        # 3. 不需要重新评估材料本身，只负责综合已有意见
-        # 这样做可以防止 LLM 重复评估，避免信息冗余和资源浪费
+        # Enhance the prompt to clearly state its aggregation role:
+        # Append an explanation after the existing backstory so the LLM clearly knows that:
+        # 1. Its core responsibility is to collect the evaluation results of AssessmentScreeningAgentA, B, and C
+        # 2. It needs to perform weighted calculations and consistency analysis
+        # 3. It does not need to re-evaluate the material itself, only synthesize existing opinions
+        # This prevents the LLM from re-evaluating, avoiding information redundancy and resource waste
         agent.backstory += "\n\nYour core responsibility is to collect evaluation results from three experts (AssessmentScreeningAgentA, B, C), perform weighted calculations and consistency analysis, and generate the final report. You do not need to re-evaluate the material itself, but synthesize existing opinions."
 
-        # 返回配置完成的综合评估 agent 实例，供上层调用者使用
+        # Return the fully configured comprehensive assessment agent instance for use by upstream callers
         return agent

@@ -24,13 +24,13 @@ MIX_CONFIG = Path(__file__).with_name("data_mix_config.json")
 
 # Topic → Agent mapping (all 16 topic dirs covered; duplicates below)
 TOPIC_AGENTS = {
-    "1 阿尔兹海默症": ["mma", "ea"],            # 基础信息(医学相关)
-    "2 阿尔兹海默症的治疗": ["bsa", "mma", "ca"],  # 治疗(含小分子/生物制剂)
+    "1 阿尔兹海默症": ["mma", "ea"],            # basic info (medicine-related)
+    "2 阿尔兹海默症的治疗": ["bsa", "mma", "ca"],  # treatment (incl. small molecules/biologics)
     "3 肠道菌群": ["apa", "mma", "ea"],
     "4 纳米材料的纳米医学应用": ["ea", "epa", "bsa", "ca"],
     "5 纳米材料抗菌": ["apa", "ea"],
     "6 金属纳米团簇的合成策略": ["ea", "epa"],
-    "7 注射治疗方式": ["bsa"],                   # 给药途径 → 生物安全
+    "7 注射治疗方式": ["bsa"],                   # administration route → biosafety
     "8环糊精": ["ea", "mma"],
     "9团簇结构": ["ea", "epa"],
     "10 选择性抗菌": ["apa", "mma"],
