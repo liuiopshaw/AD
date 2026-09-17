@@ -143,7 +143,7 @@ def build_expert_prompt(agent: str, part_text: str, is_v3: bool) -> str:
     Subscore JSON tails feed the deterministic ASA engine (asa_rubric v0.3:
     delivery->delivery_efficiency, manufacturing->accessibility, safety->biosafety,
     mechanism->multi_target_synergy+durability). is_v3 drops NADH validation from
-    the delivery prompt (NADH removed from the v3 contract, 2026-07-26)."""
+    the delivery prompt (NADH removed from the v3 contract,)."""
     if agent == "manufacturing":
         return f"""Assess MANUFACTURABILITY & PRECISE CONTROL (manufacturability and precise-control capability) of each candidate below: is its preparation controllable, scalable, and precisely tunable in composition and dose?
 

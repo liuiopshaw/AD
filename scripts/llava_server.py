@@ -32,7 +32,7 @@ current_agent = None
 AGENTS = {
     "extractor": "Knowledge Extraction",
     "manufacturing": "Antibacterial Prediction — production QC & manufacturability scoring",
-    "delivery": "Enzyme Activity Prediction — delivery efficiency scoring",
+    "delivery": "Target-Tissue Delivery Efficiency Scoring",
     "safety": "Biosafety Assessment",
     "mechanism": "Mechanism Mining — synergy + durability scoring",
     "coordinator": "Task Orchestration",
@@ -129,7 +129,7 @@ def _generate(req: ChatRequest) -> dict:
     else:
         gen_kwargs.update(do_sample=False)
 
-    # Reproducibility (user requirement 2026-07-26): deterministic seed PER
+    # Reproducibility (user requirement): deterministic seed PER
     # PROMPT — base seed + crc32(prompt). Identical prompts still reproduce
     # byte-identical outputs, but different prompts (e.g. CDA batches 1-4
     # sharing a long common prefix) get decorrelated sampling trajectories.

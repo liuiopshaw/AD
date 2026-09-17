@@ -20,7 +20,7 @@ class BiosafetyAgent(BaseAgent):
             goal="Assess nanomaterial biosafety including cytotoxicity, major organ damage "
                  "(liver, kidney, spleen, brain), in-vivo toxicity, environmental risk, "
                  "and structural stability under physiological conditions.",
-            prompt_file="biosafety_agent_prompt.md",
+            prompt_file="safety_prompt.md",
             temperature=Config.BSA_TEMPERATURE,
             max_iter=1
         )

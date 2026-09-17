@@ -36,7 +36,7 @@ ASA = "ASA_Score(1-10)"
 ASA_SCORE_COL = ASA  # column renamed to ASA_SelfReport in ASA_Adj mode
 
 # ---------------------------------------------------------------------------
-# Family collapsing (requested by the user on 2026-08-04): variant branches
+# Family collapsing (requested by the user): variant branches
 # of the same base therapeutic (size/core-type/dosage-form suffixes, e.g.
 # CuNC@beta-CD_2nm_Cu vs CuNC@beta-CD_1nm_Cu2O) are folded into one family;
 # the ranking shows only the highest-scoring representative entry, with all
@@ -69,7 +69,7 @@ def group_families(ranked: list, key_fn) -> list:
     return groups
 
 
-# Suspected hybrid-product detection (classification independence, 2026-08-04):
+# Suspected hybrid-product detection (classification independence,):
 # nano formulation name contains small-molecule API payload words
 HYBRID_API_RE = re.compile(
     r"quercetin|curcumin|resveratrol|EGCG|epicatechin|kaempferol|luteolin|ferulic|"
@@ -177,7 +177,7 @@ def main():
     A(f"- Total candidates: **{len(ranked)}** ({len(unparsed)} lines unparsed; plus {prose} designer prose-noise lines, not counted)")
     A(f"- Unique candidates (deduplicated by Material_Name): **{len({r.get(NAME, '') for r in ranked})}** —— duplicate rows are kept and shown verbatim, not deleted")
     A(f"- **Base therapeutics (after family collapsing): {len(families)}** ({len(ranked)} original rows; variant branches folded)")
-    # Two-agent limit check (2026-08-05): composites are always classified as
+    # Two-agent limit check : composites are always classified as
     # nano_formulation, but a candidate name containing >=2 distinct API words
     # = a ternary-or-higher combination (carrier + dual payload), a violation.
     def _api_hits(n):

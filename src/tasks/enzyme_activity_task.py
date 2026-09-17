@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Enzyme activity evaluation task for EPA agent."""
+"""Delivery-efficiency evaluation task for the delivery scoring agent."""
 
 from .base_task import BaseTask, load_task_text
 from crewai import Task

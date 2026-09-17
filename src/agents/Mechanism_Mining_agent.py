@@ -38,7 +38,7 @@ class MechanismMiningAgent(BaseAgent):
             goal="Mine reaction mechanisms and kinetic characteristics of pollutant degradation",
             # Specify the prompt template file (Markdown format) used by this agent;
             # it is loaded and populated with parameters at runtime
-            prompt_file="mechanism_mining_agent_prompt.md",
+            prompt_file="mechanism_prompt.md",
             # Read the mechanism expert's dedicated temperature parameter from the config file;
             # usually set to a low value to ensure rigor and consistency of mechanism analysis
             temperature=Config.MECHANISM_EXPERT_TEMPERATURE,

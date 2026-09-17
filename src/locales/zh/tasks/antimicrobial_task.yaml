@@ -1,15 +1,17 @@
 description: |
-  评估纳米材料对肠道菌群的选择性抗菌性能。
+  评估 AD 治疗剂的生产质控与精准调控能力（manufacturability）。
 
-  请按以下四个维度给出 1-10 分评分并说明理由：
-  1. 杀菌效力（40%）
-  2. 杀菌-益生选择性（35%）——核心维度
-  3. 抗菌谱广度（15%）
-  4. 耐药性风险（10%）
+  请按以下五个维度给出 1-10 分评分并说明理由：
+  1. 化学组成明确性（25%）
+  2. 合成/制备路线可控性（25%）
+  3. 批次间一致性（20%）
+  4. 剂量精准调控能力（15%）
+  5. 规模化与可及性（15%）
 
-  输出 JSON 格式，包含各维度评分、选择性比值、体内外数据标注。
+  不因剂型类别预设分数高低；证据不足时明确说明，不得编造工艺数据。
+  输出 JSON 格式，包含各维度评分与 manufacturability 综合评分。
 expected_output: |
-  JSON 格式的选择性抗菌评估报告，包含 potence_score、selectivity_score、
-  spectrum_score、resistance_score、selectivity_ratio、in_vitro_verified、
-  in_vivo_verified 字段。
-user_requirement_prefix: "需要评估选择性抗菌性能的材料与菌种信息："
+  JSON 格式的生产质控评估报告，包含 composition_score、process_control_score、
+  batch_consistency_score、dose_tunability_score、scalability_score、
+  manufacturability_score 字段及评分理由。
+user_requirement_prefix: "需要评估生产质控与精准调控能力的治疗剂信息："

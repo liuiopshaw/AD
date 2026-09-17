@@ -56,7 +56,7 @@ class TaskOrganizingAgent(BaseAgent):
             role="Task_Organizing_agent",  # Agent role: task organizer
             goal="Organize and coordinate the work of various expert agents to ensure tasks are completed according to plan",
             # Specify the prompt template file used by this agent
-            prompt_file="task_organizing_agent_prompt.md"
+            prompt_file="coordinator_prompt.md"
         )
         # Agent registry: a dictionary where the key is the agent type name (str)
         # and the value is the corresponding Agent instance or list of Agent instances
@@ -67,7 +67,7 @@ class TaskOrganizingAgent(BaseAgent):
         """Create and return the CrewAI Agent instance of the task organizing agent
 
         Unlike the base class create_agent, this method overrides the parent implementation:
-        - Uses the task_organizing_agent_prompt specified in the constructor as the backstory
+        - Uses the coordinator_prompt specified in the constructor as the backstory
         - allow_delegation=True allows this agent to delegate subtasks to other expert agents
         - This agent is the coordination center of the entire system and must have task delegation enabled
 
@@ -77,7 +77,7 @@ class TaskOrganizingAgent(BaseAgent):
         return Agent(
             role="Task_Organizing_agent",
             goal="Organize and coordinate experts' work to ensure efficient task completion",
-            # Load the prompt template specified in the constructor (task_organizing_agent_prompt.md, available in both zh/en)
+            # Load the prompt template specified in the constructor (coordinator_prompt.md, available in both zh/en)
             backstory=load_prompt(self.prompt_file),
             verbose=False,           # Disable verbose output
             allow_delegation=True,   # Critical: the coordinator must allow delegation to dispatch subtasks to expert agents

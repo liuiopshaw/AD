@@ -8,7 +8,7 @@ A multi-agent system for Alzheimer's disease (AD) therapeutic candidate design a
 
 ## Features
 
-- 🤖 **Specialized agents** — task orchestration (TOA), creative design (CDA), antibacterial (APA), enzyme activity (EPA), biosafety (BSA), mechanism mining (MMA), comparison/ranking (CA), knowledge extraction (EA)
+- 🤖 **Specialized agents** — task orchestration (coordinator), creative design (designer), manufacturability scoring (manufacturing), delivery-efficiency scoring (delivery), biosafety (safety), mechanism mining (mechanism), comparison/ranking (ranker), knowledge extraction (extractor)
 - 🔬 **Per-agent LoRA adapters** — one base model loaded once; adapters switched per request by `scripts/llava_server.py` (FastAPI, OpenAI-compatible)
 - ☁️ **Per-agent cloud LLM routing** — any agent can be rerouted to a cloud OpenAI-compatible API (DashScope / OpenAI / DeepSeek ...) via `scripts/llm_endpoints.json`, no code changes
 - 📊 **Blind benchmark suite** — ADTB-100 / AD-TxBench-100 (drug scoring) and ADRD-Bench (caregiving QA), with harness-vs-prompt and LoRA-vs-base 2×2 protocols, rubric anchoring, AD-relevance gating, anonymization, and deterministic scoring

@@ -7,7 +7,7 @@ Candidate_NNN back to real drug names via each payload's deanonymize map, and
 puts preset scores/tier side by side with model scores/tier.
 
 Usage: python scripts/export_anon_xlsx.py TS1 TS2 TS3 TS4 [out.xlsx]
-       (default: the four anonymized runs of 2026-08-31)
+       (default: the four anonymized runs of)
 """
 
 import json
@@ -29,12 +29,8 @@ PRESET_MAP = {"ad_relevance": "AD_relevance", "delivery": "Target_delivery",
               "manufacturability": "Manufacturing_control", "safety": "Biosafety",
               "overall": "Final_score"}
 
-DEFAULT_RUNS = [
-    ("1788680577", "LoRA+harness"),
-    ("1788681422", "base+harness"),
-    ("1788682318", "LoRA+prompt"),
-    ("1788682741", "base+prompt"),
-]
+DEFAULT_RUNS = []  # no hardcoded run timestamps; pass them as CLI args
+# (usage: export_anon_xlsx.py TS1 LoRA+harness TS2 base+harness TS3 LoRA+prompt TS4 base+prompt [out.xlsx])
 
 GREEN = PatternFill("solid", fgColor="C6EFCE")
 RED = PatternFill("solid", fgColor="FFC7CE")
@@ -52,6 +48,9 @@ def load_run(ts):
 def main():
     args = sys.argv[1:]
     runs = [(t, l) for t, l in zip(args[::2], args[1::2])] if len(args) >= 8 else DEFAULT_RUNS
+    if not runs:
+        raise SystemExit("No runs given. Usage: export_anon_xlsx.py TS1 LoRA+harness TS2 base+harness "
+                         "TS3 LoRA+prompt TS4 base+prompt [out.xlsx]")
     out_path = args[-1] if args and args[-1].endswith(".xlsx") else \
         "E:/Cu-agent/outputs/adtb100_anonymized_2x2.xlsx"
 

@@ -34,7 +34,7 @@ class CreativeDesigningAgent(BaseAgent):
             role="Creative_Designing_agent",  # Agent role name: material design expert
             goal="Design and optimize water treatment material solutions, strictly following material type classification and structural description specifications",
             # Specify the prompt template file dedicated to the design agent
-            prompt_file="creative_designing_agent_prompt.md",
+            prompt_file="designer_prompt.md",
             # Read the temperature parameter dedicated to material design from Config;
             # a higher temperature can increase the diversity/creativity of design solutions
             temperature=Config.MATERIAL_DESIGNER_TEMPERATURE,

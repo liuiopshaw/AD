@@ -25,7 +25,7 @@ class AntimicrobialAgent(BaseAgent):
                  "strong inhibition against gut pathogens with minimal impact on probiotics. "
                  "Support in vitro and in vivo selectivity assessment for Alzheimer's "
                  "treatment via gut microbiota modulation.",
-            prompt_file="antimicrobial_agent_prompt.md",
+            prompt_file="manufacturing_prompt.md",
             temperature=Config.APA_TEMPERATURE,
             max_iter=1
         )

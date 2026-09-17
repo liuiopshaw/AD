@@ -190,7 +190,7 @@ def normalize_record(cells: "list[str]") -> "dict | None":
 
 
 # ---------------------------------------------------------------------------
-# Schema v3 — AD100 run contract (2026-07-25, user-specified 4-dimension
+# Schema v3 — AD100 run contract (, user-specified 4-dimension
 # classification; single-choice per dimension; English enums; NO Cu quota)
 # ---------------------------------------------------------------------------
 
@@ -288,7 +288,7 @@ def parse_record_v3(cells: "list[str]") -> "dict | None":
 
     Accepted shapes (discriminated from other schemas by cells[1] being a
     DRUG_TYPES value — v2 has Modality there, a disjoint enum):
-      13 cells = current v3 (no NADH; user requirement 2026-07-26)
+      13 cells = current v3 (no NADH; user requirement)
       14 cells = legacy v3 run with NADH_Activity — NADH cell dropped
       12 cells = ligand folded into Material_Name, Ligand field dropped
     Empty fields are never invented.

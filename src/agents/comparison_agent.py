@@ -24,7 +24,7 @@ class ComparisonAgent(BaseAgent):
             goal="Aggregate multi-dimensional evaluation scores, fuse with consistency "
                  "coefficient Cj, generate cross-material comparison matrix, radar chart "
                  "data, rankings, and AD therapeutic potential recommendations.",
-            prompt_file="comparison_agent_prompt.md",
+            prompt_file="ranker_prompt.md",
             temperature=Config.CA_TEMPERATURE,
             max_iter=1
         )

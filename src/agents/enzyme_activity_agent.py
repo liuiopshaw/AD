@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Enzyme Activity Prediction Agent (EPA) — CAT-like, SOD-like, NADH oxidase-like evaluation."""
+"""Delivery Efficiency Scoring Agent (formerly EPA) — target-tissue delivery evaluation."""
 
 from .base_agent import BaseAgent
 from src.tools import ToolFactory
@@ -7,22 +7,24 @@ from src.tools.enzyme_classifier import EnzymeClassifier
 
 
 class EnzymeActivityAgent(BaseAgent):
-    """Enzyme-like activity prediction agent.
+    """Target-tissue delivery efficiency scoring agent.
 
-    Focuses on CAT-like, SOD-like, and NADH oxidase-like activities.
-    Scoring follows the shared rubric anchors; no subjective bonus points.
+    Assesses whether an AD therapeutic effectively reaches its site of action
+    (barrier penetration & bioavailability, targeting & designability, exposure
+    durability). Scoring follows the shared rubric anchors; no subjective bonus
+    points. (Role renamed from enzyme-activity prediction; class name kept for
+    backward compatibility.)
     """
 
     def __init__(self, llm):
         from src.config.config import Config
         super().__init__(
             llm=llm,
-            role="enzyme_activity_prediction_agent",
-            goal="Classify enzyme-like catalytic activity (CAT-like, SOD-like, NADH oxidase-like) "
-                 "of nanomaterials with activity strength levels and substrate affinity assessment. "
-                 "NADH oxidase-like activity receives priority due to NAD+ replenishment value "
-                 "for Alzheimer's therapy.",
-            prompt_file="enzyme_activity_agent_prompt.md",
+            role="delivery_efficiency_scoring_agent",
+            goal="Score target-tissue delivery efficiency (delivery_efficiency) of AD therapeutics: "
+                 "barrier penetration & bioavailability, targeting & designability, and exposure "
+                 "durability, following the shared rubric anchors.",
+            prompt_file="delivery_prompt.md",
             temperature=Config.EPA_TEMPERATURE,
             max_iter=1
         )

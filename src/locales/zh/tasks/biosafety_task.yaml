@@ -1,13 +1,14 @@
 description: |
-  评估纳米材料的生物安全性，五维度评分：
+  评估 AD 治疗剂的生物安全性，五维度评分：
   1. 细胞毒性（30%）
   2. 主要器官损伤（25%）——肝脏、肾脏、脾脏、脑组织
-  3. 体内毒性（20%）
-  4. 环境风险（15%）
-  5. 结构稳定性（10%）
+  3. 体内毒性（20%）——含免疫原性与 ARIA 类反应
+  4. 长期与特殊人群风险（15%）——老年患者耐受性、药物相互作用
+  5. 环境风险（10%）
 
   输出 JSON 格式安全评估报告。
 expected_output: |
   JSON 格式的生物安全性评估报告，包含 cytotoxicity_score、organ_damage_score、
-  in_vivo_score、environmental_score、stability_score、safety_grade 字段。
-user_requirement_prefix: "需要评估生物安全性的纳米材料信息："
+  in_vivo_score、long_term_score、environmental_score、biosafety_score、
+  safety_grade 字段。
+user_requirement_prefix: "需要评估生物安全性的治疗剂信息："
